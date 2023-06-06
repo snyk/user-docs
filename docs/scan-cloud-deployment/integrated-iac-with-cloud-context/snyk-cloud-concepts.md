@@ -1,25 +1,25 @@
 # Key concepts
 
 {% hint style="info" %}
-Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC that - together with Snyk Cloud - secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Please reach out to your account team if you would like access.
+Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC with cloud context that secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
 {% endhint %}
 
 Snyk Integrated IaC and Cloud have a number of unique concepts, separate from Snyk core concepts such as [Projects](../../manage-issues/introduction-to-snyk-projects/#project) and [Targets](../../manage-issues/introduction-to-snyk-projects/#target).
 
 ## Environments
 
-A Snyk **Environment** is an organizing concept that equates to:
+A Snyk **Environment** is an organizing concept that equates to the following:
 
-* For integrated IaC environments: a SCM repository, CLI test report, or Terraform Cloud run task report
+* For integrated IaC environments: an SCM repository, CLI test report, or Terraform Cloud run task report
 * For deployed Cloud environments: an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../manage-issues/introduction-to-snyk-projects/#project), an environment contains scannable entities known as [resources](snyk-cloud-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
+Unlike a Snyk [Project](../../manage-issues/introduction-to-snyk-projects/#project), an Environment contains scannable entities known as [resources](snyk-cloud-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes Environments and their resources different from Projects.
 
-A Snyk Environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
+A Snyk Environment also includes integration settings for a cloud provider. For example, each Environment can represent an integration with a different AWS account.
 
-Use the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) Snyk API endpoint to retrieve a list of all environments and optionally filter by attribute, such as name and scan status.
+Use the [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) Snyk REST API endpoint to retrieve a list of all Environments and optionally filter by attribute, such as name and scan status.
 
-Currently supported cloud providers:
+The following cloud providers: are supported
 
 * [Amazon Web Services](https://aws.amazon.com/)
 * [Microsoft Azure](https://azure.microsoft.com/en-us/)
@@ -27,13 +27,13 @@ Currently supported cloud providers:
 
 ## Resources
 
-A **resource** is a cloud infrastructure entity such as an AWS S3 bucket, Identity & Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
+A **resource** is a cloud infrastructure entity such as an AWS S3 bucket, Identity and Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
 
-On each scan, Snyk records the configuration attributes of each resource in an environment.
+On each scan, Snyk records the configuration attributes of each resource in an Environment.
 
-You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/resources) Snyk API endpoint to retrieve a list of all resources for an organization and optionally filter by an attribute such as environment ID, resource ID, or resource type.
+You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2023-05-29%7Ebeta#get-/orgs/-org\_id-/cloud/resources) Snyk REST API endpoint to retrieve a list of all resources for an Organization and optionally filter by an attribute such as environment ID, resource ID, or resource type.
 
-For a list of supported resource types for Cloud environments, see the following:
+For a list of supported resource types for cloud environments, see the following:
 
 * [Supported AWS resources](supported-resources-for-snyk-cloud/supported-aws-resources-for-snyk-cloud.md)
 * [Supported Azure resources](supported-resources-for-snyk-cloud/supported-azure-resources-for-snyk-cloud.md)
@@ -43,7 +43,7 @@ For a list of supported resource types for Cloud environments, see the following
 
 A security **rule** checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems. Snyk has a set of [predefined rules](https://snyk.io/security-rules/cloud) that can be applied to integrated IaC and cloud environments.
 
-An example rule is “S3 bucket does not have all block public access options enabled.” Snyk can scan the configuration of an AWS S3 bucket to see if it fails the rule, and so is vulnerable to a data breach.
+An example rule is “S3 bucket does not have all block public access options enabled.” Snyk can scan the configuration of an AWS S3 bucket to see if it fails the rule and so is vulnerable to a data breach.
 
 ## Issues
 
@@ -51,17 +51,17 @@ An **issue** represents a misconfiguration that can lead to a security problem. 
 
 After Snyk creates an issue, Snyk keeps it open until the misconfiguration is fixed, at which point the issue is closed.
 
-You can view your Organization's issues in the Snyk Web UI. See [View cloud issues in the Snyk Web UI](snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md).
+You can view your Organization's issues in the Snyk Web UI. See [View cloud and Integrated IaC issues in the Snyk Web UI](snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md).
 
 ## Compliance standard <a href="#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e" id="docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e"></a>
 
-A **compliance standard** is a framework that establishes guidelines and controls for organizations to secure their IT systems and infrastructure. Compliance standards are “versioned,” with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report).
+A **compliance standard** is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are “versioned,” with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report).
 
-See [supported compliance standards](cloud-compliance.md#supported-compliance-standards).
+For more information, see [supported compliance standards](cloud-compliance.md#supported-compliance-standards).
 
 ## Compliance control <a href="#docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b" id="docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b"></a>
 
-A c**ompliance control** is a specific recommendation or guideline from a compliance standard that prescribes how an organization should secure systems or infrastructure. Example: control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’”. To be compliant with this control, an organization would enable the “block public access” settings for all of their S3 buckets.
+A c**ompliance control** is a specific recommendation or guideline from a compliance standard that prescribes how an Organization should secure systems or infrastructure. Example: control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’”. To be compliant with this control, an Organization would enable the “block public access” settings for all of their S3 buckets.
 
 ## Compliance mapping
 
@@ -71,4 +71,4 @@ For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensur
 
 ## Resource mapping
 
-A resource mapping represents a connection from a Cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture) command is executed locally or in a CI pipeline. Mapping artifacts include details, such as resource IDs, that Snyk utilizes to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created/updated, or when Cloud environments are created/updated, which in turn creates/updates/deletes resource mappings for a Snyk Organization. See [Fix Cloud issues in IaC](integrated-infrastructure-as-code/fix-cloud-issues-in-iac.md).
+A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details, such as resource IDs, that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when Cloud Environments are created and updated, which in turn creates or updates or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](integrated-infrastructure-as-code/fix-cloud-issues-in-iac.md).
