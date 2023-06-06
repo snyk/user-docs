@@ -27,7 +27,7 @@ The current workaround is to add versions to all PackageReferences.
 Once Snyk has built the tree, Snyk uses its [vulnerability database](https://security.snyk.io) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
-In order to scan your dependencies, you must ensure you have first installed the relevant package manager and that your project contains the supported manifest files.
+To scan your dependencies, you must first install the relevant package manager and ensure that your project contains the supported manifest files.
 {% endhint %}
 
 The way Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your Project:
@@ -69,7 +69,7 @@ While you should also be able to run `snyk test` without previously installing d
 
 #### **CLI options for use with Nuget**
 
-For information about the `snyk test` options available for use with Nuget, see [Options for Nuget projects in the Test help](https://docs.snyk.io/snyk-cli/commands/test#options-for-nuget-projects). For the available `snyk monitor` options, see [Options for Nuget projects in the Monitor help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-nuget-projects).
+For information about the `snyk test` options available for use with NuGet, see [Options for NuGet projects in the Test help](../../../snyk-cli/commands/test.md#options-for-nuget-projects). For the available `snyk monitor` options, see [Options for NuGet projects in the Monitor help](../../../snyk-cli/commands/monitor.md#options-for-nuget-projects).
 
 ### Paket: Dependencies managed by Paket
 
@@ -177,6 +177,6 @@ If you believe you have found false positives because when the application runs 
 
 ## Not supported in Snyk for .NET
 
-* [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) and [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) are not currently supported.
+* [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) and [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) are not currently supported via the SCM integration. You can scan private dependencies using central package management using the Snyk CLI. You have to do `dotnet restore` and then run `snyk` with `-all-projects`, as each sub folder will contain their own `project.assets.json` file.
 * `<ProjectReference>`elements are not currently supported.
 * Private dependency scanning is not supported for the SCM integration. You can scan private dependencies using the Snyk CLI.
