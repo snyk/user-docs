@@ -38,8 +38,7 @@ exclude:
 
 * The path in the rule should be relative to the `.snyk` file location.
 * All rules must have a preceding dash to be valid: - \<Exclusion\_rule>
-* Any rule beginning with an asterisk must be wrapped in quotes. For example:\
-  `- ”*/src”`
+* For rules beginning with special characters and patterns (such as an asterisk character `*)`, you must wrap them in double quotes (`" "`). This ensures they are treated as a single entity, avoiding potential misinterpretation or unintended behavior. For example, `"*/src"`
 * Indentations –
   * When using the syntax in the `.snyk` YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
   * Do NOT use tabs for indentation. Use only spaces for indentation.
