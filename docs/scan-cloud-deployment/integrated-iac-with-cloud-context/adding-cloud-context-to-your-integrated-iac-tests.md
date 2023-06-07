@@ -39,16 +39,16 @@ Test Summary
   Total issues: 10 [ 0 critical, 2 high, 3 medium, 5 low ]
 ```
 
-The output summary lists the number of suppressed issues, for example, `Cloud context - suppressed issues: 5`. These suppressed issues are not included in the total issue count. For example: `Total issues: 10 [ 0 critical, 2 high, 3 medium, 5 low ]`.
+The output summary lists the number of suppressed issues, for example, `Cloud context - suppressed issues: 5`. These suppressed issues are not included in the total issue count, for example, `Total issues: 10 [ 0 critical, 2 high, 3 medium, 5 low ]`.
 
 Currently, Terraform for Amazon Web Services (AWS) is supported.
 
 There are two ways that Snyk IaC can apply cloud context and suppress issues in your IaC test results:
 
-* [Bringing context from Snyk Cloud](adding-cloud-context-to-your-integrated-iac-tests.md#bringing-context-from-a-snyk-cloud-scan)
+* [Bringing context from Snyk](adding-cloud-context-to-your-integrated-iac-tests.md#bringing-context-from-a-snyk-cloud-scan)
 * [Bringing context from local enumeration](adding-cloud-context-to-your-integrated-iac-tests.md#bringing-context-from-a-live-scan)
 
-## Bringing context from Snyk Cloud <a href="#bringing-context-from-a-snyk-cloud-scan" id="bringing-context-from-a-snyk-cloud-scan"></a>
+## Bringing context from Snyk <a href="#bringing-context-from-a-snyk-cloud-scan" id="bringing-context-from-a-snyk-cloud-scan"></a>
 
 If you have a [Snyk cloud environment](key-concepts.md#environments), you can leverage what Snyk already knows about your cloud provider account to apply cloud context and reduce false positives in your IaC tests.
 
