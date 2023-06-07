@@ -41,7 +41,7 @@ For each issue, details about the vulnerability are displayed including its [pri
 
 Click **More about this issue** to view detailed information about the vulnerability from [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/), which provides a deeper insight into the issue, including its CVSS score:
 
-<figure><img src="../../.gitbook/assets/image15 (1).png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image15.png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
 
 ### View fixes
 

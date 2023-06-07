@@ -18,7 +18,7 @@ You can **define the target organization** in the Snyk CLI, by either URL orgslu
 * You can define the target organization using its URL slug (orgslugname), as displayed in the address bar of the browser in the Snyk UI.
 * Alternatively you can define the target organization using its `ORG_ID` in the organization's settings page.
 
-<figure><img src="../../../.gitbook/assets/image1 (1).png" alt="Organization ID"><figcaption><p>Organization ID</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1.png" alt="Organization ID"><figcaption><p>Organization ID</p></figcaption></figure>
 
 For more information see see [How to select the organization to use in the CLI.](../../../snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli.md)
 

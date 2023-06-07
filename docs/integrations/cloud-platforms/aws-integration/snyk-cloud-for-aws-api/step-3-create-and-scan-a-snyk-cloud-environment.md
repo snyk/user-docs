@@ -98,7 +98,7 @@ curl -X GET \
 
 If the `data.attributes.status` field in the JSON output is set to `success`, Snyk has finished scanning your environment.
 
-To re-scan an environment, see [Scan a Cloud Environment](../../../../scan-cloud-deployment/integrated-iac-with-cloud-context/scan-a-snyk-cloud-environment.md).
+To re-scan an environment, see [Scan a Cloud Environment](../../../../scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-environments/scan-a-snyk-cloud-environment.md).
 
 ## What's next?
 

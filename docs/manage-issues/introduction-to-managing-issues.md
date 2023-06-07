@@ -8,7 +8,7 @@ The [Snyk Priority Score](issue-management/priority-score.md) prioritizes issues
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Priority Score"><figcaption><p>Snyk Priority Score</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Snyk Priority Score"><figcaption><p>Snyk Priority Score</p></figcaption></figure>
 
 </div>
 
@@ -34,7 +34,7 @@ These attributes can then be linked to Snyk [policies](policies/), to assign a p
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Ignore an issue"><figcaption><p>Ignore an issue</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Ignore an issue"><figcaption><p>Ignore an issue</p></figcaption></figure>
 
 </div>
 
@@ -48,7 +48,7 @@ Define actions for specific types of issues encountered, using our customizable 
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (2).png" alt="Security policies"><figcaption><p>Security policies</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Security policies"><figcaption><p>Security policies</p></figcaption></figure>
 
 </div>
 

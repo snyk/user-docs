@@ -8,9 +8,9 @@ Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC that secure
 {% endhint %}
 
 * Scan [IaC](snyk-infrastructure-as-code/) and [cloud](integrated-iac-with-cloud-context/) resources for misconfigurations using a comprehensive set of security rules.
-* [Fix Cloud issues](integrated-iac-with-cloud-context/integrated-infrastructure-as-code/fix-cloud-issues-in-integrated-iac.md) directly in the IaC source code that was used to deploy the misconfigured Cloud resources, by linking a Cloud issue to the underlying IaC template via a SCM source code link.
+* [Fix Cloud issues](integrated-iac-with-cloud-context/fix-cloud-issues-in-integrated-iac.md) directly in the IaC source code that was used to deploy the misconfigured Cloud resources, by linking a Cloud issue to the underlying IaC template via a SCM source code link.
 * Receive [fix advice](snyk-infrastructure-as-code/getting-started-snyk-iac.md) so you can make changes directly to code, before applications reach production.
-* Suppress false positives in IaC tests by applying [context from deployed infrastructure](integrated-iac-with-cloud-context/integrated-infrastructure-as-code/adding-cloud-context-to-your-integrated-iac-tests.md).
+* Suppress false positives in IaC tests by applying [context from deployed infrastructure](integrated-iac-with-cloud-context/adding-cloud-context-to-your-integrated-iac-tests.md).
 * [Detect drift](snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.
 * Inspect every [cloud resource's configuration](integrated-iac-with-cloud-context/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md) at a given moment in time, and see the attributes that caused an issue.
 * [Filter issues](integrated-iac-with-cloud-context/snyk-cloud-issues/) to target the most mission-critical resources.
