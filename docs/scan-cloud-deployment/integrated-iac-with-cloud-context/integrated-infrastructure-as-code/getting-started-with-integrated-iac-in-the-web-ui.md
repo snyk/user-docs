@@ -45,7 +45,7 @@ On the [Projects](../../../manage-issues/introduction-to-snyk-projects/) page, n
 
 ## Stage 3: View Integrated IaC issues in the Cloud Issues UI
 
-Clicking on the **Infrastructure as Code Issues** link opens a filtered view of the Cloud Issues UI, to include only issues from the corresponding Integrated IaC [Environment](../snyk-cloud-concepts.md#environments) that aligns with your Project.
+Clicking on the **Infrastructure as Code Issues** link opens a filtered view of the Cloud Issues UI, to include only issues from the corresponding Integrated IaC [environment](../snyk-cloud-concepts.md#environments) that aligns with your Project.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-07 at 4.04.13 PM.png" alt="Cloud Issues UI, filtered to the specific environment for your SCM Git repository"><figcaption><p>Cloud Issues UI, filtered to the specific environment for your SCM Git repository</p></figcaption></figure>
 
