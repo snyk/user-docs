@@ -84,7 +84,7 @@ After repositories are imported, a confirmation appears in green at the top of t
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (22) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (2) (1) (1) (1) (1) (1) (1).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
 
 </div>
 

@@ -10,4 +10,4 @@ In order to disable Infrastructure as Code (IaC) scans for an organization, firs
 
 Then, you can use the toggle of the "Detect configuration files" tile to turn IaC scans on or off, as shown in the screenshot below.
 
-![](<../../.gitbook/assets/image (486).png>)
+![](<../../.gitbook/assets/image (66) (4).png>)
