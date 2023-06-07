@@ -1,6 +1,6 @@
 # View resources
 
-You view all attributes for Integrated IaC and Cloud resources in an Organization to inventory all of your resources across cloud provider accounts, or see the recorded state of any resource during the most recent scan.
+You can view all attributes for Integrated IaC and cloud resources in an Organization. This allows you to inventory all of your resources across cloud provider accounts, or see the recorded state of any resource during the most recent scan.
 
 ## View all resources
 
@@ -97,7 +97,7 @@ Below are some key attributes from the API response:
 | `data.attributes.native_id`      | Cloud provider's unique identifier for the resource; for AWS, the Amazon Resource Name (ARN) |
 | `data.attributes.state`          | Resource attributes at the time of the most recent scan                                      |
 
-### Filter resource list
+## Filter resource list
 
 Query parameters allow you to filter the list of resources.
 

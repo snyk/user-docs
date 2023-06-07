@@ -23,7 +23,7 @@ Issues have the following components:
 * **Rule:** The rule that is used to test the resource, such as "S3 bucket is publicly readable"
 
 {% hint style="info" %}
-See [Snyk Cloud concepts](../snyk-cloud-concepts.md) for more details.
+See [Snyk Cloud concepts](../key-concepts.md) for more details.
 {% endhint %}
 
 The first time a misconfiguration is detected, Snyk opens an issue for that rule and resource. The issue remains open across scans as long as the misconfiguration is present.

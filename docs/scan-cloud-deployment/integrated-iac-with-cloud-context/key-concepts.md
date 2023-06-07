@@ -1,10 +1,11 @@
-# Key concepts
+# Key concepts in Integrated IaC with cloud context
 
 {% hint style="info" %}
-Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC, with cloud context that secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
+**Feature availability**\
+Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
 {% endhint %}
 
-Snyk Integrated IaC and Cloud have a number of unique concepts, separate from Snyk core concepts such as [Projects](../../manage-issues/introduction-to-snyk-projects/#project) and [Targets](../../manage-issues/introduction-to-snyk-projects/#target).
+Snyk Integrated IaC and cloud context have a number of unique concepts, different from Snyk core concepts such as [Projects](../../manage-issues/introduction-to-snyk-projects/#project) and [Targets](../../manage-issues/introduction-to-snyk-projects/#target).
 
 ## Environments
 
@@ -13,7 +14,7 @@ A Snyk **environment** is an organizing concept that equates to the following:
 * For integrated IaC environments: an SCM repository, CLI test report, or Terraform Cloud run task report
 * For deployed cloud environments: an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../manage-issues/introduction-to-snyk-projects/#project), an environment contains scannable entities known as [resources](snyk-cloud-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
+Unlike a Snyk [Project](../../manage-issues/introduction-to-snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
 
 A Snyk environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 
@@ -27,7 +28,7 @@ The following cloud providers: are supported
 
 ## Resources
 
-A **resource** is a cloud infrastructure entity such as an AWS S3 bucket, Identity and Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
+A **resource** is a cloud infrastructure entity such as an AWS S3 bucket; Identity and Access Management (IAM) role; or Virtual Private Cloud (VPC) flow log.
 
 On each scan, Snyk records the configuration attributes of each resource in an environment.
 
@@ -38,6 +39,10 @@ For a list of supported resource types for cloud environments, see the following
 * [Supported AWS resources](supported-resources-for-snyk-cloud-context/supported-aws-resources-for-snyk-cloud-context.md)
 * [Supported Azure resources](supported-resources-for-snyk-cloud-context/supported-azure-resources-for-snyk-cloud-context.md)
 * [Supported Google resources](supported-resources-for-snyk-cloud-context/supported-google-resources-for-snyk-cloud-context.md)
+
+## Resource mapping
+
+A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details like resource IDs that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when cloud environments are created and updated, which in turn creates, updates, or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](fix-cloud-issues-in-integrated-iac.md).
 
 ## Rules
 
@@ -61,14 +66,11 @@ For more information, see [supported compliance standards](cloud-compliance.md#s
 
 ## Compliance control <a href="#docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b" id="docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b"></a>
 
-A c**ompliance control** is a specific recommendation or guideline from a compliance standard that prescribes how an Organization should secure systems or infrastructure. Example: control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’”. To be compliant with this control, an Organization would enable the “block public access” settings for all of their S3 buckets.
+A **compliance control** is a specific recommendation or guideline from a compliance standard that prescribes how an Organization should secure systems or infrastructure. Example: control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’”. To be compliant with this control, an Organization would enable the “block public access” settings for all of their S3 buckets.
 
 ## Compliance mapping
 
-Snyk “maps” security [rules](snyk-cloud-concepts.md#rules) to compliance controls, which means each rule is associated with one or more controls, and each control is associated with one or more rules.
+Snyk “maps” security [rules](key-concepts.md#rules) to compliance controls, which means each rule is associated with one or more controls and each control is associated with one or more rules.
 
-For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’” and it maps to the security rule[ SNYK-CC-00195](https://snyk.io/security-rules/cloud/SNYK-CC-00195/s3-bucket-does-not-have-all-block-public-access-options-enabled/), which is “S3 bucket does not have all block public access options enabled.”
+For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings’” and it maps to the security rule[ SNYK-CC-00195](https://snyk.io/security-rules/cloud/SNYK-CC-00195/s3-bucket-does-not-have-all-block-public-access-options-enabled/), which is “S3 bucket does not have all block public access options enabled.”
 
-## Resource mapping
-
-A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details, such as resource IDs, that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when cloud environments are created and updated, which in turn creates or updates or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](fix-cloud-issues-in-integrated-iac.md).

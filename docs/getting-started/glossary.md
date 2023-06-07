@@ -324,7 +324,7 @@ A Snyk product. Enables developers to find and fix cloud infrastructure misconfi
 
 ### Snyk Cloud Environment
 
-An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-concepts.md).
+An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../scan-cloud-deployment/integrated-iac-with-cloud-context/key-concepts.md).
 
 ### Snyk Code
 
