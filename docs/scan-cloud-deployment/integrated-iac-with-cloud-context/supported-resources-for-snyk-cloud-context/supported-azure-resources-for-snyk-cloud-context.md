@@ -1,10 +1,10 @@
-# Supported Azure resources for Snyk Cloud
+# Supported Azure resources for Snyk cloud context
 
 {% hint style="info" %}
-For information about billable resources, see [Billable resources for Snyk Cloud](https://docs.snyk.io/scan-cloud-deployment/snyk-cloud/billable-resources-for-snyk-cloud).
+For information about billable resources, see [Billable resources](https://docs.snyk.io/scan-cloud-deployment/snyk-cloud/billable-resources-for-snyk-cloud).
 {% endhint %}
 
-Snyk Cloud scans the following Azure resource types:
+Snyk cloud context works with the following Azure resource types:
 
 * azurerm\_advanced\_threat\_protection
 * azurerm\_api\_management

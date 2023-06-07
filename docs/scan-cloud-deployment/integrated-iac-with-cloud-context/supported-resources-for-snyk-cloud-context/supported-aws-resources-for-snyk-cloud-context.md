@@ -1,10 +1,10 @@
-# Supported AWS resources for Snyk Cloud
+# Supported AWS resources for Snyk cloud context
 
 {% hint style="info" %}
-For information about billable resources, see [Billable resources for Snyk Cloud](../billable-resources-for-snyk-cloud.md).
+For information about billable resources, see [Billable resources. ](../billable-resources-for-snyk-cloud.md)
 {% endhint %}
 
-Snyk Cloud scans the following Amazon Web Services resource types:
+Snyk cloud context works with the following Amazon Web Services resource types:
 
 * aws\_accessanalyzer\_analyzer
 * aws\_account\_alternate\_contact
