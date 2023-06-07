@@ -64,7 +64,7 @@ Select the permissions from the list at the bottom and click **Update Role Permi
 
 When the process of updating a role completes, a confirmation message appears.
 
-<figure><img src="../../.gitbook/assets/image (272).png" alt="Role update confirmation message"><figcaption><p>Role update confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (196).png" alt="Role update confirmation message"><figcaption><p>Role update confirmation message</p></figcaption></figure>
 
 ### Duplicate a Role
 
@@ -74,7 +74,7 @@ To copy a role, use the **Duplicate** button next to each role in the Member Rol
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.09.png" alt="Member Roles List with Duplicate button for each role"><figcaption><p>Member Roles List with Duplicate button for each role</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40 (1).png" alt="Role details page with Duplicate button"><figcaption><p>Role details page with Duplicate button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40.png" alt="Role details page with Duplicate button"><figcaption><p>Role details page with Duplicate button</p></figcaption></figure>
 
 Enter a unique name and description and click the **Duplicate Role** button. A Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
@@ -104,14 +104,14 @@ In the Web UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, you can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
 
 \
 You can invite new members to the Organization by assigning them a specified role.
 
 Click the **Add members** button > **Invite new members**.
 
-<figure><img src="../../.gitbook/assets/image (531).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (76).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
 
 Click the **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 

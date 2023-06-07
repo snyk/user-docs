@@ -114,7 +114,7 @@ The Snyk [PR Checks](../../scan-application-code/run-pr-checks/) feature allows 
 
 This example shows how Snyk PR checks appear on the GitHub pull request page.
 
-<figure><img src="../../.gitbook/assets/pr_testing-14july2022 (1).png" alt="Snyk pull request checks on GitHub pull request page"><figcaption><p>Snyk pull request checks on GitHub pull request page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Snyk pull request checks on GitHub pull request page"><figcaption><p>Snyk pull request checks on GitHub pull request page</p></figcaption></figure>
 
 You can review and adjust the pull request test settings using the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
@@ -211,7 +211,7 @@ You can then choose to assign PRs to the last user to change the manifest file o
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (7) (2) (1).png" alt="Auto-assign PRs in private repos"><figcaption><p>Auto-assign PRs in private repos</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt="Auto-assign PRs in private repos"><figcaption><p>Auto-assign PRs in private repos</p></figcaption></figure>
 
 </div>
 
@@ -220,7 +220,7 @@ You can then choose to assign PRs to the last user to change the manifest file o
 To configure the Auto-assign settings for a specific Project from an imported private repository, follow these steps:
 
 1. In the **Projects** tab for your Organization, select and expand the relevant private repository, select a Target, and click the **Settings** cog.\
-   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12).png" alt="Settings cog for target settings" data-size="original">\
+   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (4).png" alt="Settings cog for target settings" data-size="original">\
    The Project page opens.
 2. On the Project page, apply unique settings for that specific Project.\
    Select the **Settings** tab in the upper right and the **Github integration** \_\_ option in the left sidebar.
@@ -286,16 +286,16 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="No vulnerabilities" data-size="line">
-* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (2).png" alt="Number of vulnerabilities" data-size="line">
-* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Unknown vulnerabilities" data-size="line">
+* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1).png" alt="No vulnerabilities" data-size="line">
+* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Number of vulnerabilities" data-size="line">
+* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Unknown vulnerabilities" data-size="line">
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Flat rectangle badge" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Flat rectangle badge" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
 
 ### **npm badges**
 

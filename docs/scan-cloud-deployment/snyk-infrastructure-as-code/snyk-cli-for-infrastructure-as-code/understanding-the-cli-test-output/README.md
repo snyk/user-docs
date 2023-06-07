@@ -25,7 +25,7 @@ In addition, to use the new IaC CLI output results, enable the option in the **S
 By default, the CLI runs tests under your **Preferred Organization**, as defined in your **Account settings**. You can change your **Preferred Organization** or set another Organization for the CLI tests.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (2).png" alt="Select the Organization for snyk iac test"><figcaption><p>Select the Organization for snyk iac test</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (5).png" alt="Select the Organization for snyk iac test"><figcaption><p>Select the Organization for snyk iac test</p></figcaption></figure>
 
 2\. When the required Organization is open, select **Org Settings**:
 

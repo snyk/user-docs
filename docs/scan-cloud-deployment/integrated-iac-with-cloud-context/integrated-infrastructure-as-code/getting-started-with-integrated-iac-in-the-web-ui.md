@@ -11,7 +11,7 @@ This feature is in **closed beta**, and requires allowing Snyk to clone an entir
 
 Use [Snyk Integrated Infrastructure as Code](broken-reference) to inspect, find, and fix issues in cloud configuration files for Terraform and AWS CloudFormation and Azure Resource Manager (ARM) in your Git repositories, with support for Kubernetes coming soon.
 
-You can test your IaC files in Git repositories found via SCM integrations with [Integrated IaC](broken-reference), much like you would with the current [IaC](../snyk-infrastructure-as-code/). There are some differences, which are summarized in the following table.
+You can test your IaC files in Git repositories found via SCM integrations with [Integrated IaC](broken-reference), much like you would with the current [IaC](../../snyk-infrastructure-as-code/). There are some differences, which are summarized in the following table.
 
 <table data-header-hidden><thead><tr><th width="271"></th><th width="261.3333333333333"></th><th></th></tr></thead><tbody><tr><td></td><td><strong>Current IaC support</strong></td><td><strong>Integrated IaC support</strong></td></tr><tr><td><strong>Terraform (single file)</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Terraform (modules)</strong></td><td>No</td><td>Yes</td></tr><tr><td><strong>Terraform (variables)</strong></td><td>No</td><td>Yes</td></tr><tr><td><strong>CloudFormation</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Azure Resource Manager</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Kubernetes manifests</strong></td><td>Yes</td><td>Coming soon</td></tr><tr><td><strong>Helm charts</strong></td><td>Yes</td><td>Coming soon</td></tr></tbody></table>
 
@@ -19,9 +19,9 @@ You can test your IaC files in Git repositories found via SCM integrations with 
 
 To start using Integrated IaC, you need the following:
 
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up. See [Create a SnykCaccount](../../getting-started/quickstart/create-a-snyk-account/) for details.
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up. See [Create a SnykCaccount](../../../getting-started/quickstart/create-a-snyk-account/) for details.
 * An existing Terraform, CloudFormation, or Azure Resource Manager environment to work in.
-* Integration with your Git repository as for other Snyk products; see [Git repository (SCM) integrations](../../integrations/git-repository-scm-integrations/) for more details.
+* Integration with your Git repository as for other Snyk products; see [Git repository (SCM) integrations](../../../integrations/git-repository-scm-integrations/) for more details.
 
 ## Stage 1: Import projects
 
@@ -29,7 +29,7 @@ To start using Integrated IaC, you need the following:
 If you want to add a new Integrated IaC Project from an SCM repository that you have already imported, you must re-import the repository. This will not affect any of your existing Projects
 {% endhint %}
 
-Import [Projects](../../manage-issues/introduction-to-snyk-projects/) to test with Snyk by choosing repositories for Snyk to test and monitor.
+Import [Projects](../../../manage-issues/introduction-to-snyk-projects/) to test with Snyk by choosing repositories for Snyk to test and monitor.
 
 1. Select **Projects** from the Snyk Web UI.
 2. In the **Add projects** drop-down menu, select the tool to add the Project from, for example, GitHub.
@@ -39,15 +39,15 @@ Import [Projects](../../manage-issues/introduction-to-snyk-projects/) to test wi
 
 ## Stage 2: View Integrated IaC Projects
 
-On the [Projects](../../manage-issues/introduction-to-snyk-projects/) page, navigate to the appropriate target (Git repository) that contains IaC files for Snyk to test. You will see a single "Infrastructure as Code issues" Project. Snyk Integrated IaC generates only one Project per repository, unlike the current [IaC](../snyk-infrastructure-as-code/), which generates one Project per IaC file.
+On the [Projects](../../../manage-issues/introduction-to-snyk-projects/) page, navigate to the appropriate target (Git repository) that contains IaC files for Snyk to test. You will see a single "Infrastructure as Code issues" Project. Snyk Integrated IaC generates only one Project per repository, unlike the current [IaC](../../snyk-infrastructure-as-code/), which generates one Project per IaC file.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 3.57.30 PM.png" alt="Integrated IaC project for your SCM Git repository"><figcaption><p>Integrated IaC project for your SCM Git repository</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-07 at 3.57.30 PM.png" alt="Integrated IaC project for your SCM Git repository"><figcaption><p>Integrated IaC project for your SCM Git repository</p></figcaption></figure>
 
 ## Stage 3: View Integrated IaC issues in the Cloud Issues UI
 
-Clicking on the **Infrastructure as Code Issues** link opens a filtered view of the Cloud Issues UI, to include only issues from the corresponding Integrated IaC [environment](snyk-cloud-concepts.md#environments) that aligns with your Project.
+Clicking on the **Infrastructure as Code Issues** link opens a filtered view of the Cloud Issues UI, to include only issues from the corresponding Integrated IaC [environment](../snyk-cloud-concepts.md#environments) that aligns with your Project.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 4.04.13 PM.png" alt="Cloud Issues UI, filtered to the specific environment for your SCM Git repository"><figcaption><p>Cloud Issues UI, filtered to the specific environment for your SCM Git repository</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-07 at 4.04.13 PM.png" alt="Cloud Issues UI, filtered to the specific environment for your SCM Git repository"><figcaption><p>Cloud Issues UI, filtered to the specific environment for your SCM Git repository</p></figcaption></figure>
 
 Expanding the grouped issue and selecting a given issue open san Issue Card, that includes information on:
 
@@ -56,4 +56,4 @@ Expanding the grouped issue and selecting a given issue open san Issue Card, tha
 * The **rule** that failed - including a link to Snyk's [security rules](https://snyk.io/security-rules/cloud/) documentation for additional information, such as specific remediation steps.
 * Why your developer should fix this particular misconfiguration.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 4.09.40 PM.png" alt="Integrated IaC issue card"><figcaption><p>Integrated IaC issue card</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-07 at 4.09.40 PM.png" alt="Integrated IaC issue card"><figcaption><p>Integrated IaC issue card</p></figcaption></figure>

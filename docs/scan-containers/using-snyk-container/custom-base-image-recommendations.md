@@ -40,7 +40,7 @@ This step is done by the team that is responsible for creating and maintaining c
 4. Mark the project as a custom base image.
    1.  Go to the **Settings** page for the Project.
 
-       <figure><img src="../../.gitbook/assets/image (179) (1).png" alt="Navigate to Settings page for the project"><figcaption><p>Navigate to Settings page for the project</p></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (188) (1) (1) (1) (1) (1) (1).png" alt="Navigate to Settings page for the project"><figcaption><p>Navigate to Settings page for the project</p></figcaption></figure>
    2. Under **Custom Base Image Recommendation**, select **Treat as custom base image**.
    3. Click **Update image status**.
 5. Mark whether the image should be eligible for recommendations.

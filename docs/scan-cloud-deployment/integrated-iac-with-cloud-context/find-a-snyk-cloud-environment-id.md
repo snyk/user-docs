@@ -15,10 +15,10 @@ To find an environment ID using the [Web UI](https://app.snyk.io/):
 2. In the **Actions** column, select the `...` icon for the desired environment.
 3.  Select **Update**.
 
-    <figure><img src="../../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Update an environment from the Cloud environments page in Settings"><figcaption><p>Update an environment from the Cloud environments page in Settings</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Update an environment from the Cloud environments page in Settings"><figcaption><p>Update an environment from the Cloud environments page in Settings</p></figcaption></figure>
 4.  In the **Environment ID** section, select **Copy** to copy the environment ID.
 
-    <figure><img src="../../../.gitbook/assets/snyk-cloud-copy-env-id-ui.png" alt="Copy the Snyk Cloud Environment ID"><figcaption><p>Copy the Snyk Cloud Environment ID</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/snyk-cloud-copy-env-id-ui.png" alt="Copy the Snyk Cloud Environment ID"><figcaption><p>Copy the Snyk Cloud Environment ID</p></figcaption></figure>
 
 ## API
 

@@ -17,7 +17,7 @@ Integrated Infrastructure as Code (IaC) helps developers to write secure infrast
 
 * Improved accuracy of issue detection with line numbers in the CLI.
 * Support for HashiCorp Terraform modules and variables for SCM repositories and the CLI.
-* Powerful code-to-cloud capabilities, including the ability to [fix cloud issues in IaC](fix-cloud-issues-in-integrated-iac.md) and run IaC tests in the CLI with cloud context to reduce noise.
+* Powerful code-to-cloud capabilities, including the ability to [fix cloud issues in IaC](integrated-infrastructure-as-code/fix-cloud-issues-in-integrated-iac.md) and run IaC tests in the CLI with cloud context to reduce noise.
 
 ## Features of Integrated IaC
 
@@ -55,4 +55,4 @@ Integrated IaC records the configuration attributes of every resource it scans f
 
 ## Connect Cloud back to IaC
 
-Snyk cloud context and integrated IaC enable you to [fix Cloud issues directly in the IaC source code](fix-cloud-issues-in-integrated-iac.md) that was used to deploy the misconfigured Cloud resources, by linking a Cloud issue to the underlying IaC template via an SCM source code link.
+Snyk cloud context and integrated IaC enable you to [fix Cloud issues directly in the IaC source code](integrated-infrastructure-as-code/fix-cloud-issues-in-integrated-iac.md) that was used to deploy the misconfigured Cloud resources, by linking a Cloud issue to the underlying IaC template via an SCM source code link.
