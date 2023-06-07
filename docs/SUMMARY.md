@@ -472,7 +472,7 @@
       * [Getting started with Integrated IaC in the Web UI](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/getting-started-with-integrated-iac-in-the-web-ui.md)
       * [Test your Integrated IaC files with Snyk CLI](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/test-your-integrated-iac-files-with-snyk-cli.md)
       * [Fix cloud issues in Integrated IaC](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/fix-cloud-issues-in-integrated-iac.md)
-      * [Adding cloud context to your IaC tests (Integrated IaC)](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/adding-cloud-context-to-your-iac-test.md)
+      * [Adding cloud context to your Integrated IaC tests](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/adding-cloud-context-to-your-integrated-iac-tests.md)
     * [Cloud and Integrated IaC Issues](scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/README.md)
       * [View Cloud and Integrated IaC issues in the Snyk Web UI](scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md)
       * [Ignoring Cloud and Integrated IaC issues](scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/ignoring-cloud-issues.md)
