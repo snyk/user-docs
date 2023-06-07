@@ -5,6 +5,8 @@
 Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
 {% endhint %}
 
+## Overview of Integrated IaC
+
 Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC that has cloud context to secure cloud configurations across the entire SDLC, from code to deployed AWS, Azure, and Google Cloud environments. Integrated IaC has the Snyk cloud context interfaces, workflows, policy engine, and data model.
 
 Snyk cloud context helps users find, prioritize, and fix cloud misconfigurations by providing for scanning and testing deployed cloud resources with a library of predefined security rules. Scanning generates a record of issues that can be filtered and triaged.
