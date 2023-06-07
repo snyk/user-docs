@@ -52,16 +52,16 @@ Read more about the relevant API calls:
 
 For each issue, Snyk processes and weighs several factors in a proprietary algorithm, to produce the score for that issue. These factors include:
 
-* \*\*\*\*[**Severity levels**](severity-levels.md): calculated using CVSS framework v3.1 scores for that issue.
+* [**Severity levels**](severity-levels.md): calculated using CVSS framework v3.1 scores for that issue.
 * [**Exploit Maturity**](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): determined by Snyk’s industry-leading security team using manual and automated methods to track which vulnerabilities are exploitable, and to what extent.
-* \*\*\*\*[**Reachability**](reachable-vulnerabilities.md): by looking at the code paths called within a project, Snyk identifies which vulnerabilities are reachable from the code.
-* \*\*\*\*[**Fixability**](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): without a safer version to upgrade to, or a Snyk patch available, developers must either fix the code themselves or use an alternative package. So vulnerabilities with fixes are given higher priorities.
-* **Time**: new vulnerabilities are likely to be an increased risk, so increasing priority score.
-* \*\*\*\*[**Social Trends**](prioritize-by-social-trends.md): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
+* [**Reachability**](reachable-vulnerabilities.md): by looking at the code paths called within a Project, Snyk identifies which vulnerabilities are reachable from the code.
+* [**Fixability**](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): without a safer version to upgrade to, or a Snyk patch available, developers must either fix the code themselves or use an alternative package. So vulnerabilities with fixes are given higher priorities.
+* **Time**: new vulnerabilities are likely to be an increased risk, so increasing the priority score.
+* [**Social Trends**](prioritize-by-social-trends.md): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
 * **Malicious Packages**: Snyk will prioritize vulnerabilities originating from malicious packages.
 
 {% hint style="info" %}
-Snyk continually refines our prioritization algorithm to include new factors, and updates weighting of factors, to always provide the most accurate and up-to-date representation of priority given the latest information.
+Snyk continually refines our prioritization algorithm to include new factors, and updates the weighting of factors, to always provide the most accurate and up-to-date representation of priority given the latest information.
 {% endhint %}
 
 ### Priority calculation for Kubernetes

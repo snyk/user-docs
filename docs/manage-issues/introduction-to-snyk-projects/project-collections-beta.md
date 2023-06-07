@@ -12,7 +12,7 @@ You must also have [Next Gen Reporting](../reporting/) enabled to use the Projec
 
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/project-collection-toggle (1).png" alt="Enabling Project Collection beta "><figcaption><p>Enabling Project Collection beta </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-collection-toggle.png" alt="Enabling Project Collection beta "><figcaption><p>Enabling Project Collection beta </p></figcaption></figure>
 
 **Project collections** help you collect and organize your Projects so you can easily view and perform actions on them. A Project collection can consist of multiple Project types from different Targets.
 
@@ -37,7 +37,7 @@ In addition, more filter options are available when you apply **Group by none**.
 1. On the right-hand side of the Project listing page beneath the **View Import Log** button, select **Group by none** from the drop-down list.
 2. Click the drop-down next to the **FILTERS** drop-down, and click **Create new view**. If you already have filters selected, you can click **Save Changes** next to the drop-down and follow the next step.
 
-<figure><img src="../../.gitbook/assets/image (481).png" alt="Create a new project view"><figcaption><p>Create a new Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (2).png" alt="Create a new project view"><figcaption><p>Create a new Project view</p></figcaption></figure>
 
 3. Enter a name for your Project view in the available field, then click **Create view.**
 
@@ -47,7 +47,7 @@ Your new view is created and is automatically selected. You can click the icon n
 
 4. In the **FILTERS** drop-down, select the criteria to use to organize your view.
 
-<figure><img src="../../.gitbook/assets/image (2) (3).png" alt="Select the filters that will be applied in your Project view"><figcaption><p>Select the filters that will be applied in your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (1).png" alt="Select the filters that will be applied in your Project view"><figcaption><p>Select the filters that will be applied in your Project view</p></figcaption></figure>
 
 5. After you have applied all of the filters that you want, click **Save changes** next to the drop-down. Your Project view will be updated.
 6. If you want to configure a Project view, you can select different filters and click **Save changes** again. You can also discard any changes to a Project view before you save them to return it to its most recent saved state.
@@ -56,7 +56,7 @@ Your new view is created and is automatically selected. You can click the icon n
 
 1. From the Project views drop-down, select the Project view that you would like to share with another member of your Organization.
 
-<figure><img src="../../.gitbook/assets/image (3) (6).png" alt="Select the Project view that you want to share"><figcaption><p>Select the Project view that you want to share</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (5) (1).png" alt="Select the Project view that you want to share"><figcaption><p>Select the Project view that you want to share</p></figcaption></figure>
 
 2. Once the Project view has loaded on the screen, copy the URL of the page. This URL can be shared with anyone in your Organization.
 
@@ -75,7 +75,7 @@ The name of the view will not appear in the Project views drop-down, and other u
 
 The **Reports** page loads and shows a report of the Projects in your Project view.
 
-<figure><img src="../../.gitbook/assets/image (6) (5).png" alt="A report is generated automatically with the filters selected in your Project view"><figcaption><p>A report is generated automatically with the filters selected in your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt="A report is generated automatically with the filters selected in your Project view"><figcaption><p>A report is generated automatically with the filters selected in your Project view</p></figcaption></figure>
 
 {% hint style="info" %}
 The scan results you see on the Project listing page will be reflected in the reporting page roughly one (1) hour after the scan is complete.
