@@ -8,16 +8,16 @@ Snyk Integrated IaC and Cloud have a number of unique concepts, separate from Sn
 
 ## Environments
 
-A Snyk **Environment** is an organizing concept that equates to the following:
+A Snyk **environment** is an organizing concept that equates to the following:
 
 * For integrated IaC environments: an SCM repository, CLI test report, or Terraform Cloud run task report
 * For deployed Cloud environments: an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../manage-issues/introduction-to-snyk-projects/#project), an Environment contains scannable entities known as [resources](snyk-cloud-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes Environments and their resources different from Projects.
+Unlike a Snyk [Project](../../manage-issues/introduction-to-snyk-projects/#project), an environment contains scannable entities known as [resources](snyk-cloud-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
 
-A Snyk Environment also includes integration settings for a cloud provider. For example, each Environment can represent an integration with a different AWS account.
+A Snyk environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 
-Use the [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) Snyk REST API endpoint to retrieve a list of all Environments and optionally filter by attribute, such as name and scan status.
+Use the [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) Snyk REST API endpoint to retrieve a list of all environments and optionally filter by attribute, such as name and scan status.
 
 The following cloud providers: are supported
 
@@ -29,7 +29,7 @@ The following cloud providers: are supported
 
 A **resource** is a cloud infrastructure entity such as an AWS S3 bucket, Identity and Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
 
-On each scan, Snyk records the configuration attributes of each resource in an Environment.
+On each scan, Snyk records the configuration attributes of each resource in an environment.
 
 You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2023-05-29%7Ebeta#get-/orgs/-org\_id-/cloud/resources) Snyk REST API endpoint to retrieve a list of all resources for an Organization and optionally filter by an attribute such as environment ID, resource ID, or resource type.
 
@@ -71,4 +71,4 @@ For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensur
 
 ## Resource mapping
 
-A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details, such as resource IDs, that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when Cloud Environments are created and updated, which in turn creates or updates or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](integrated-infrastructure-as-code/fix-cloud-issues-in-iac.md).
+A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details, such as resource IDs, that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when cloud environments are created and updated, which in turn creates or updates or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](integrated-infrastructure-as-code/fix-cloud-issues-in-iac.md).
