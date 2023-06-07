@@ -88,7 +88,7 @@ The `data.attributes.status` field in the JSON output is set to `in_progress.` T
 
 To check if your scan is finished, see [Check to see if the scan is finished](https://docs.snyk.io/integrations/cloud-platforms/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-to-see-if-the-scan-is-finished).
 
-To manually re-scan an environment, see [Scan a Cloud Environment](../../../../scan-cloud-deployment/integrated-iac-with-cloud-context/scan-a-snyk-cloud-environment.md).
+To manually re-scan an environment, see [Scan a Cloud Environment](../../../../scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-environments/scan-a-snyk-cloud-environment.md).
 
 ## What's next?
 

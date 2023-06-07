@@ -1,8 +1,8 @@
 # Update a Cloud environment
 
-You can update the following attributes for a [Cloud environment](snyk-cloud-concepts.md#environments):
+You can update the following attributes for a [Cloud environment](../snyk-cloud-concepts.md#environments):
 
-* **AWS:** Environment name and IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](../../integrations/cloud-platforms/aws-integration/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
+* **AWS:** Environment name and IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](../../../integrations/cloud-platforms/aws-integration/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
 * **Google:** Environment name and service account email address. The new service account email must be associated with the same project ID as the old one.
 * **Azure:** Environment name and application ID. The new application ID must be associated with the same subscription and tenant as the old one.
 
@@ -21,16 +21,16 @@ To update an environment using the [Snyk Web UI](https://app.snyk.io):
 2. In the **Actions** column, select the `...` icon for the environment you want to update.
 3.  Select **Update**.
 
-    <figure><img src="../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Select the ... icon to update an environment."><figcaption><p>Select the ... icon to update an environment.</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Select the ... icon to update an environment."><figcaption><p>Select the ... icon to update an environment.</p></figcaption></figure>
 4.  In the **General** section, enter the updated environment name and/or credentials.
 
     <div>
 
-    <figure><img src="../../.gitbook/assets/snyk-cloud-update-aws-env-ui.png" alt="Example of updating an AWS environment."><figcaption><p>Example of updating an AWS environment.</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/snyk-cloud-update-aws-env-ui.png" alt="Example of updating an AWS environment."><figcaption><p>Example of updating an AWS environment.</p></figcaption></figure>
 
      
 
-    <figure><img src="../../.gitbook/assets/snyk-cloud-update-google-env.png" alt="Example of updating a Google environment."><figcaption><p>Example of updating a Google environment.</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/snyk-cloud-update-google-env.png" alt="Example of updating a Google environment."><figcaption><p>Example of updating a Google environment.</p></figcaption></figure>
 
     </div>
 5. Select **Save changes**.

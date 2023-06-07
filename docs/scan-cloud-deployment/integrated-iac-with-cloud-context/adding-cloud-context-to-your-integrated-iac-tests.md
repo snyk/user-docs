@@ -1,12 +1,12 @@
 # Adding cloud context to your Integrated IaC tests
 
 {% hint style="info" %}
-The cloud context feature is available for [Integrated IaC](./) only, and supports AWS.
+The cloud context feature is available for [Integrated IaC](broken-reference) only, and supports AWS.
 {% endhint %}
 
 ## What is cloud context?
 
-Snyk IaC's cloud context feature uses information from deployed cloud infrastructure, either via [Integrated IaC with cloud context ](../)or through local enumeration, to suppress certain issues from your IaC tests.
+Snyk IaC's cloud context feature uses information from deployed cloud infrastructure, either via [Integrated IaC with cloud context ](./)or through local enumeration, to suppress certain issues from your IaC tests.
 
 For example, suppose your Terraform configuration declares an Amazon Web Services (AWS) S3 bucket that does not have a public access block, but you have an account-level public access block. Snyk applies the cloud context from your AWS account to suppress false positive issues stating your bucket is not secured by a public access block.
 
@@ -50,9 +50,9 @@ There are two ways that Snyk IaC can apply cloud context and suppress issues in 
 
 ## Bringing context from Snyk Cloud <a href="#bringing-context-from-a-snyk-cloud-scan" id="bringing-context-from-a-snyk-cloud-scan"></a>
 
-If you have a [Snyk cloud environment](../snyk-cloud-concepts.md#environments), you can leverage what Snyk already knows about your cloud provider account to apply cloud context and reduce false positives in your IaC tests.
+If you have a [Snyk cloud environment](snyk-cloud-concepts.md#environments), you can leverage what Snyk already knows about your cloud provider account to apply cloud context and reduce false positives in your IaC tests.
 
-Use the `--snyk-cloud-environment=<ENVIRONMENT_ID>` option with [`snyk iac test`](../../../snyk-cli/commands/iac-test.md) to tell Snyk which cloud environment to use as context for your IaC test.
+Use the `--snyk-cloud-environment=<ENVIRONMENT_ID>` option with [`snyk iac test`](../../snyk-cli/commands/iac-test.md) to tell Snyk which cloud environment to use as context for your IaC test.
 
 For example, the following command tests the IaC in the present working directory and applies cloud context from the results of the latest scan for the Snyk cloud environment `93786877-c9f8-0000-1234-abcd1234efgh`:
 
@@ -60,15 +60,15 @@ For example, the following command tests the IaC in the present working director
 snyk iac test --snyk-cloud-environment=93786877-c9f8-0000-1234-abcd1234efgh
 ```
 
-To find your environment ID, see [Find an environment ID](../find-a-snyk-cloud-environment-id.md).
+To find your environment ID, see [Find an environment ID](snyk-environments/find-a-snyk-cloud-environment-id.md).
 
-See the [Integrated IaC with cloud context](../) documentation for information about creating a Snyk cloud environment.
+See the [Integrated IaC with cloud context](./) documentation for information about creating a Snyk cloud environment.
 
 ## Bringing context from local enumeration <a href="#bringing-context-from-a-live-scan" id="bringing-context-from-a-live-scan"></a>
 
-You can use the `--cloud-context=<PROVIDER>` option with the [`snyk iac test`](../../../snyk-cli/commands/iac-test.md) command to apply cloud context to an IaC test without referencing a Snyk cloud environment. Snyk does this by authenticating with your cloud provider locally and scanning the associated cloud provider account.
+You can use the `--cloud-context=<PROVIDER>` option with the [`snyk iac test`](../../snyk-cli/commands/iac-test.md) command to apply cloud context to an IaC test without referencing a Snyk cloud environment. Snyk does this by authenticating with your cloud provider locally and scanning the associated cloud provider account.
 
-The process for authenticating with a cloud provider account is the same as for the [`snyk iac describe`](../../../snyk-cli/commands/iac-describe.md) command. See **Step 1** of [Get started with Snyk IaC Describe](../../snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/get-started-with-snyk-iac-describe-on-aws.md) on AWS for details.
+The process for authenticating with a cloud provider account is the same as for the [`snyk iac describe`](../../snyk-cli/commands/iac-describe.md) command. See **Step 1** of [Get started with Snyk IaC Describe](../snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/get-started-with-snyk-iac-describe-on-aws.md) on AWS for details.
 
 For example, the following command tests the IaC in the present working directory and executes a scan of the authenticated AWS account, then applies the cloud context to suppress issues:
 
