@@ -6,7 +6,7 @@ Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC that - toge
 {% endhint %}
 
 {% hint style="info" %}
-The [“Fix Cloud issues in IaC”](../integrated-infrastructure-as-code/fix-cloud-issues-in-iac.md) feature is now available for users who use Terraform and AWS.
+The [“Fix Cloud issues in IaC”](../integrated-infrastructure-as-code/fix-cloud-issues-in-integrated-iac.md) feature is now available for users who use Terraform and AWS.
 {% endhint %}
 
 When Snyk scans an integrated IaC or Cloud environment, it tests infrastructure configurations in the associated cloud provider against a comprehensive set of security rules. These rules identify misconfigurations that can lead to security problems. For example, Snyk can scan the configuration of an Amazon Web Services (AWS) S3 bucket to see if it is publicly readable, and so vulnerable to a data breach.
