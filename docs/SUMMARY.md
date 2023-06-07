@@ -470,7 +470,7 @@
     * [Key concepts](scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-concepts.md)
     * [Integrated Infrastructure as Code](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/README.md)
       * [Getting started with Integrated IaC in the Web UI](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/getting-started-with-integrated-iac-in-the-web-ui.md)
-      * [Test your IaC files with Snyk CLI (Integrated IaC)](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/test-your-iac-files-with-snyk-cli-integrated-iac.md)
+      * [Test your Integrated IaC files with Snyk CLI](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/test-your-integrated-iac-files-with-snyk-cli.md)
       * [Fix Cloud issues in IaC (integrated IaC)](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/fix-cloud-issues-in-iac.md)
       * [Adding cloud context to your IaC tests (Integrated IaC)](scan-cloud-deployment/integrated-iac-with-cloud-context/integrated-infrastructure-as-code/adding-cloud-context-to-your-iac-test.md)
     * [Cloud and Integrated IaC Issues](scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/README.md)
