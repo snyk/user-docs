@@ -441,7 +441,7 @@
       * [Working with Kubernetes configuration file test results](scan-cloud-configurations/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/working-with-kubernetes-configuration-file-test-results.md)
     * [Scan ARM configuration files](scan-cloud-configurations/snyk-infrastructure-as-code/scan-arm-configuration-files.md)
     * [Scan Serverless files](scan-cloud-configurations/snyk-infrastructure-as-code/scan-serverless-files.md)
-    * [Jira Integration](scan-cloud-configurations/snyk-infrastructure-as-code/jira-integration.md)
+    * [Jira integration for IaC](scan-cloud-configurations/snyk-infrastructure-as-code/jira-integration-for-iac.md)
     * [View Infrastructure as Code issue reports](scan-cloud-configurations/snyk-infrastructure-as-code/view-infrastructure-as-code-issue-reports.md)
     * [Build your own custom rules](scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/README.md)
       * [Install the SDK](scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/install-the-sdk.md)
