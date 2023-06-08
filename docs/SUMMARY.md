@@ -493,7 +493,7 @@
       * [Supported AWS resources for Snyk cloud context](scan-cloud-configurations/integrated-iac-with-cloud-context/supported-resources-for-snyk-cloud-context/supported-aws-resources-for-snyk-cloud-context.md)
       * [Supported Azure resources for Snyk cloud context](scan-cloud-configurations/integrated-iac-with-cloud-context/supported-resources-for-snyk-cloud-context/supported-azure-resources-for-snyk-cloud-context.md)
       * [Supported Google resources for Snyk cloud context](scan-cloud-configurations/integrated-iac-with-cloud-context/supported-resources-for-snyk-cloud-context/supported-google-resources-for-snyk-cloud-context.md)
-    * [Managing Cloud and Integrated IaC rules](scan-cloud-configurations/integrated-iac-with-cloud-context/managing-snyk-cloud-rules.md)
+    * [Managing cloud and Integrated IaC rules](scan-cloud-configurations/integrated-iac-with-cloud-context/managing-cloud-and-integrated-iac-rules.md)
     * [Cloud and Integrated IaC Issues](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-cloud-issues/README.md)
       * [View Cloud and Integrated IaC issues in the Snyk Web UI](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md)
       * [Ignoring Cloud and Integrated IaC issues](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-cloud-issues/ignoring-cloud-issues.md)
