@@ -2,10 +2,10 @@
 
 ## Overview of compliance reporting
 
-[Integrated IaC with cloud context](./) supports [compliance reporting](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report) and [cloud issue](snyk-cloud-issues/) triage for compliance standards and controls that are relevant for cloud services. With this information, developers can fix issues to bring cloud environments into compliance, and auditors can see appropriate evidence.
+[Integrated IaC with cloud context](./) supports [compliance reporting](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report) and [cloud issue](cloud-and-integrated-iac-issues/) triage for compliance standards and controls that are relevant for cloud services. With this information, developers can fix issues to bring cloud environments into compliance, and auditors can see appropriate evidence.
 
 * To learn how to view the compliance report, see [Cloud Compliance Issues Report](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report).
-* To learn how to triage cloud issues by filtering them according to compliance standards and controls, see [Filter issues](snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md#filter-issues).
+* To learn how to triage cloud issues by filtering them according to compliance standards and controls, see [Filter issues](cloud-and-integrated-iac-issues/view-cloud-issues-in-the-snyk-web-ui.md#filter-issues).
 
 See [Key concepts](key-concepts.md) for definitions of compliance standards and controls, security rules, and more.
 

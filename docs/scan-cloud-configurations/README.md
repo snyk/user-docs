@@ -12,8 +12,8 @@ Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC that secure
 * Receive [fix advice](snyk-infrastructure-as-code/getting-started-snyk-iac.md) so you can make changes directly to code, before applications reach production.
 * Suppress false positives in IaC tests by applying [context from deployed infrastructure](integrated-iac-with-cloud-context/adding-cloud-context-to-your-integrated-iac-tests.md).
 * [Detect drift](snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.
-* Inspect every [cloud resource's configuration](integrated-iac-with-cloud-context/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md) at a given moment in time, and see the attributes that caused an issue.
-* [Filter issues](integrated-iac-with-cloud-context/snyk-cloud-issues/) to target the most mission-critical resources.
+* Inspect every [cloud resource's configuration](integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/view-cloud-issues-in-the-snyk-web-ui.md) at a given moment in time, and see the attributes that caused an issue.
+* [Filter issues](integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/) to target the most mission-critical resources.
 * Review a [report of issues](../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report) for an entire organization, organized by compliance standard.
 
 For a list of supported IaC environments and cloud providers, see [Supported providers - IaC and Cloud](supported-iac-and-cloud-providers.md).

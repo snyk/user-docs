@@ -37,7 +37,7 @@ Integrated IaC with Snyk cloud context enables you to [fix Cloud issues directly
 
 ### New Issues UI
 
-Integrated IaC focuses on providing visibility into an Organization's issues across all its configuration templates. As a result, traditional Projects are currently not supported in Integrated IaC. Instead, [issues](snyk-cloud-issues/) are on the new [Cloud tab](snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md), which provides a snapshot of the resources that are misconfigured.
+Integrated IaC focuses on providing visibility into an Organization's issues across all its configuration templates. As a result, traditional Projects are currently not supported in Integrated IaC. Instead, [issues](cloud-and-integrated-iac-issues/) are on the new [Cloud tab](cloud-and-integrated-iac-issues/view-cloud-issues-in-the-snyk-web-ui.md), which provides a snapshot of the resources that are misconfigured.
 
 Resource configuration snapshots record the configuration attributes of every resource it scans for a user's configuration file, in contrast to the current IaC Projects view. This lets users review a resource’s configuration at a given moment in time and see the attributes that have caused a specific issue.
 

@@ -56,7 +56,7 @@ An **issue** represents a misconfiguration that can lead to a security problem. 
 
 After Snyk creates an issue, Snyk keeps it open until the misconfiguration is fixed, at which point the issue is closed.
 
-You can view your Organization's issues in the Snyk Web UI. See [View cloud and Integrated IaC issues in the Snyk Web UI](snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md).
+You can view your Organization's issues in the Snyk Web UI. See [View cloud and Integrated IaC issues in the Snyk Web UI](cloud-and-integrated-iac-issues/view-cloud-issues-in-the-snyk-web-ui.md).
 
 ## Compliance standard <a href="#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e" id="docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e"></a>
 

@@ -1,19 +1,19 @@
-# Cloud and Integrated IaC Issues
+# Cloud and Integrated IaC issues
 
 {% hint style="info" %}
 **Feature availability**\
-Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC that - together with Snyk Cloud - secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Please reach out to your account team if you would like access.
+Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
 {% endhint %}
 
 {% hint style="info" %}
-The [“Fix Cloud issues in IaC”](../fix-cloud-issues-in-integrated-iac.md) feature is now available for users who use Terraform and AWS.
+The [Fix Cloud issues in IaC](../fix-cloud-issues-in-integrated-iac.md) feature is now available for users who use Terraform and AWS.
 {% endhint %}
 
-When Snyk scans an integrated IaC or Cloud environment, it tests infrastructure configurations in the associated cloud provider against a comprehensive set of security rules. These rules identify misconfigurations that can lead to security problems. For example, Snyk can scan the configuration of an Amazon Web Services (AWS) S3 bucket to see if it is publicly readable, and so vulnerable to a data breach.
+When Snyk scans an integrated IaC or cloud environment, it tests infrastructure configurations in the associated cloud provider against a comprehensive set of security rules. These rules identify misconfigurations that can lead to security problems. For example, Snyk can scan the configuration of an Amazon Web Services (AWS) S3 bucket to see if it is publicly readable, and so vulnerable to a data breach.
 
 Any IaC or cloud misconfiguration Snyk finds is reported as an issue. The [cloud issues page](view-cloud-issues-in-the-snyk-web-ui.md) in the Snyk Web UI provides details about each issue, including status, severity, impact, associated resources, and other information.
 
-<figure><img src="../../../.gitbook/assets/snyk-cloud-issues-page-3.png" alt="Snyk Cloud issues page in the Web UI"><figcaption><p>Snyk Cloud issues page in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-cloud-issues-page-3.png" alt="Cloud issues page in the Web UI"><figcaption><p>Cloud issues page in the Web UI</p></figcaption></figure>
 
 ## Understanding issues
 
@@ -23,7 +23,7 @@ Issues have the following components:
 * **Rule:** The rule that is used to test the resource, such as "S3 bucket is publicly readable"
 
 {% hint style="info" %}
-See [Snyk Cloud concepts](../key-concepts.md) for more details.
+See [Key concepts](../key-concepts.md) for more details.
 {% endhint %}
 
 The first time a misconfiguration is detected, Snyk opens an issue for that rule and resource. The issue remains open across scans as long as the misconfiguration is present.
@@ -34,19 +34,19 @@ In a later scan, if the misconfiguration is resolved, Snyk closes the issue.
 
 If your environment contains an AWS S3 bucket named `prod-backups-bucket` that is publicly readable, the issue lifecycle could look as follows:
 
-**First scan:**
+### **First scan**
 
 1. During an environment scan, Snyk tests `prod-backups-bucket` against the rule "S3 bucket is publicly readable."
 2. Snyk opens an issue.
 
-**Second scan:**
+### **Second scan**
 
 1. You do not fix the bucket.
 2. On the next scan, Snyk tests `prod-backups-bucket` against the rule again.
 3. The issue stays open, with the same unique identifier.
 
-**Third scan:**
+### **Third scan**
 
 1. In AWS, you configure `prod-backups-bucket` to be private.
 2. On the next scan, Snyk tests `prod-backups-bucket` against the rule again.
-3. Snyk closes the issue because the bucket is not publicly readable, and no longer fails the rule.
+3. Snyk closes the issue because the bucket is not publicly readable and no longer fails the rule.
