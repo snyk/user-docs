@@ -475,7 +475,7 @@
       * [Filter results](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/filter-results.md)
       * [Ignore resources](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources.md)
       * [IAC sources usage](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage.md)
-    * [Disable IaC Scans per organization](scan-cloud-configurations/snyk-infrastructure-as-code/disable-iac-scans.md)
+    * [Disable IaC scans per Organization](scan-cloud-configurations/snyk-infrastructure-as-code/disable-iac-scans.md)
   * [Integrated IaC with cloud context](scan-cloud-configurations/integrated-iac-with-cloud-context/README.md)
     * [Key concepts in Integrated IaC with cloud context](scan-cloud-configurations/integrated-iac-with-cloud-context/key-concepts.md)
     * [Getting started with Integrated IaC in the Web UI](scan-cloud-configurations/integrated-iac-with-cloud-context/getting-started-with-integrated-iac-in-the-web-ui.md)

@@ -1,13 +1,11 @@
-# Disable IaC Scans per organization
+# Disable IaC scans per Organization
 
 {% hint style="info" %}
-Disabling IaC scans is only possible at the organization level. To disable scans for a group, disable scans for each organization in the group.
+Disabling IaC scans is only possible at the Organization level. To disable scans for a Group, disable scans for each Organization in the Group.
 {% endhint %}
 
-There might be reasons that you want to disable IaC projects from getting scanned, either when you import projects, or during recurring tests.
+There might be reasons that you want to disable scans for IaC Projects, either when you import Projects or during recurring tests.
 
-In order to disable Infrastructure as Code (IaC) scans for an organization, first navigate to the Infrastructure As Code section [in the Settings page](https://app.snyk.io/manage/cloud-config).
+To disable Infrastructure as Code (IaC) scans for an Organization, navigate to the Infrastructure As Code section o[n the Settings page](https://app.snyk.io/manage/cloud-config) and use the toggle for **Detect configuration files** to turn IaC scans on or off, as shown in the following screenshot:
 
-Then, you can use the toggle of the "Detect configuration files" tile to turn IaC scans on or off, as shown in the screenshot below.
-
-![](<../../.gitbook/assets/image (207) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (207) (1) (1).png" alt="Disable Detect configuration files"><figcaption><p>Disable Detect configuration files</p></figcaption></figure>
