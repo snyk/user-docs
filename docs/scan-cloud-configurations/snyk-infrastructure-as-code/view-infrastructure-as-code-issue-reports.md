@@ -1,47 +1,47 @@
 # View Infrastructure as Code issue reports
 
-Use [Snyk reports](https://docs.snyk.io/reports/reports) to view issues in your IaC configuration files.
+Use [Snyk reports](../../manage-issues/reporting/legacy-reports/) to view issues in your IaC configuration files.
 
 {% hint style="info" %}
 **Feature availability**\
 This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-### Summary Page
+## Summary page
 
-Infrastructure as Code configuration issues appear in the summary statistics and graphs by default, showing all of the open issues across your projects and issue types:
+Infrastructure as Code configuration issues appear in the summary statistics and graphs by default, showing all of the open issues across your Projects and issue types:
 
-![](../../.gitbook/assets/image4.png)
+<figure><img src="../../.gitbook/assets/image4.png" alt="Reports summary page"><figcaption><p>Reports summary page</p></figcaption></figure>
 
 To view IaC issues only, select **Configuration** from the **Summary filters** drop down:
 
 ![](../../.gitbook/assets/screenshot\_2021-02-17\_at\_14.22.50.png)
 
-For more details on the summary tab, see [Summary tab](https://docs.snyk.io/reports-1/reports/summary-tab) documentation.
+For more details on the summary tab, see the [Reports Summary tab](../../manage-issues/reporting/legacy-reports/summary-tab.md) documentation.
 
-### Issues page
+## Issues page
 
-Select the **Issues** page to see detailed information on open issues across all of your projects.
+Select the **Issues** page to see detailed information on open issues across all of your Projects.
 
-To view IaC issues only, select **Configuration** in the **Issue filters** drop down.
+To view IaC issues only, select **Configuration** from the **Issue filters** drop-down.
 
-![](<../../.gitbook/assets/image3 (1).png>)
+<figure><img src="../../.gitbook/assets/image3 (1).png" alt="IaC issues page"><figcaption><p>IaC issues page</p></figcaption></figure>
 
-This shows the title of each issue and type, and the severity.
+This shows the title of each issue, the type, and the severity.
 
-You can also view the issues ungrouped; this shows more information about the project file that the issue is found in, and details on when it was first introduced:
+You can also view the issues ungrouped; this shows more information about the Project file where the issue is found, and details on when it was first introduced:
 
 ![](<../../.gitbook/assets/image2-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
 
-For more details on the issues tab, see [Issues tab](https://docs.snyk.io/reports-1/reports/issues-tab) documentation.
+For more details on the issues tab, see [Issues tab](../../manage-issues/reporting/legacy-reports/issues-tab.md) documentation.
 
 ### Export data
 
-Issues can be exported as a CSV file in the same format as your vulnerabilities, using the **Export** button.
+Use the Export button to export issues as a CSV file in the same format as your vulnerabilities.
 
 ### API access
 
-You can access the full list of issues via the API using the [latest issues endpoint](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1).
+You can access the full list of issues via the API using the API v1 [latest issues endpoint](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1).
 
 To retrieve only your Infrastructure as Code issues, submit a body payload:
 
@@ -57,7 +57,7 @@ To retrieve only your Infrastructure as Code issues, submit a body payload:
 ```
 
 {% hint style="info" %}
-You can obtain your **public-org-id** from the Snyk UI **Settings** page when you view your target organization.
+You can obtain your **public-org-id** from the Snyk UI **Settings** page when you view your target Organization.
 {% endhint %}
 
-For the full list of parameters, see the [API Documentation](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1).
+For the full list of parameters, see the [Latest issues API documentation](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1).
