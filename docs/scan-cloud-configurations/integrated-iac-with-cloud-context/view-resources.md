@@ -1,10 +1,10 @@
 # View resources
 
-You can view all attributes for Integrated IaC and cloud resources in an Organization. This allows you to inventory all of your resources across cloud provider accounts, or see the recorded state of any resource during the most recent scan.
+You can view all attributes for Integrated IaC and cloud resources in an Organization. This allows you to inventory all of your resources across cloud provider accounts or see the recorded state of any resource during the most recent scan.
 
 ## View all resources
 
-To list all resources in an organization, send a request to the [`/cloud/resources`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/resources) endpoint in the below format:
+To list all resources in an Organization, send a request to the [`/cloud/resources`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/resources) endpoint in the following format:
 
 ```
 curl -X GET \
@@ -14,7 +14,7 @@ curl -X GET \
 
 ## Understand the API response
 
-Snyk returns a JSON document containing information about all resources in the Organization. For example:
+Snyk returns a JSON document containing information about all resources in the Organization, for example:
 
 ```json
 {
@@ -86,7 +86,7 @@ Snyk returns a JSON document containing information about all resources in the O
 }
 ```
 
-Below are some key attributes from the API response:
+The following table lists some key attributes from the API response:
 
 | Attribute                        | Definition                                                                                   |
 | -------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -125,11 +125,11 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-For a list of supported parameters, see the [API documentation](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/resources).
+For a list of supported parameters, see the [List resources API documentation](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/resources).
 
 ## View details for a single resource
 
-To view details for a single resource through the Snyk API, send a request in the below format. You can get the resource ID using the method shown in [View all cloud resources](view-snyk-cloud-resources.md#view-all-cloud-resources).
+To view details for a single resource through the Snyk API, send a request in the following format.&#x20;
 
 ```
 curl -X GET \
@@ -137,4 +137,4 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-Snyk returns a JSON document containing information about the selected resource. The information is the same as shown in [Understand the API response](view-snyk-cloud-resources.md#understand-the-api-response).
+Snyk returns a JSON document containing information about the selected resource. The information is the same as shown in [Understand the API response](view-resources.md#understand-the-api-response).
