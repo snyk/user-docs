@@ -495,7 +495,7 @@
       * [Supported Google resources for Snyk cloud context](scan-cloud-configurations/integrated-iac-with-cloud-context/supported-resources-for-snyk-cloud-context/supported-google-resources-for-snyk-cloud-context.md)
     * [Managing cloud and Integrated IaC rules](scan-cloud-configurations/integrated-iac-with-cloud-context/managing-cloud-and-integrated-iac-rules.md)
     * [Cloud and Integrated IaC issues](scan-cloud-configurations/integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/README.md)
-      * [View Cloud and Integrated IaC issues in the Snyk Web UI](scan-cloud-configurations/integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/view-cloud-issues-in-the-snyk-web-ui.md)
+      * [View cloud and Integrated IaC issues in the Snyk Web UI](scan-cloud-configurations/integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md)
       * [Ignoring Cloud and Integrated IaC issues](scan-cloud-configurations/integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/ignoring-cloud-issues.md)
     * [View compliance reporting](scan-cloud-configurations/integrated-iac-with-cloud-context/view-compliance-reporting.md)
   * [Billable resources for Snyk Cloud](scan-cloud-configurations/billable-resources-for-snyk-cloud.md)

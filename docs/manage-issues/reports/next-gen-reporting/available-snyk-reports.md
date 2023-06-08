@@ -44,6 +44,6 @@ The Cloud Compliance Issues report shows[ cloud and integrated IaC issues](../..
 
 You can view a report for a single version of a compliance standard at a time (for example, CIS AWS Foundations Benchmark v1.4.0) by selecting the desired standard from the drop-down menu. Each report includes a list of compliance controls organized by control category, with corresponding issue counts.
 
-Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/view-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
+Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
 Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.

@@ -11,7 +11,7 @@ The [Fix Cloud issues in IaC](../fix-cloud-issues-in-integrated-iac.md) feature 
 
 When Snyk scans an integrated IaC or cloud environment, it tests infrastructure configurations in the associated cloud provider against a comprehensive set of security rules. These rules identify misconfigurations that can lead to security problems. For example, Snyk can scan the configuration of an Amazon Web Services (AWS) S3 bucket to see if it is publicly readable, and so vulnerable to a data breach.
 
-Any IaC or cloud misconfiguration Snyk finds is reported as an issue. The [cloud issues page](view-cloud-issues-in-the-snyk-web-ui.md) in the Snyk Web UI provides details about each issue, including status, severity, impact, associated resources, and other information.
+Any IaC or cloud misconfiguration Snyk finds is reported as an issue. The [cloud issues page](view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md) in the Snyk Web UI provides details about each issue, including status, severity, impact, associated resources, and other information.
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-issues-page-3.png" alt="Cloud issues page in the Web UI"><figcaption><p>Cloud issues page in the Web UI</p></figcaption></figure>
 
