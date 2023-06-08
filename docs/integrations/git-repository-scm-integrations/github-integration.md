@@ -256,6 +256,10 @@ In addition, you must confirm that Snyk is not enabled on any existing **Branch 
 1. From the main page of your GitHub repository, go to **Settings > Branches > Branch protection rules.**
 2. Ensure there are no **Status checks found in the last week for this repository.**
 
+{% hint style="info" %}
+A disconnected GitHub integration will still appear as configured in the Integrations menu of the Snyk UI. However, clicking on the integration settings will show that it is not connected. In this case, the "configured" integration can safely be ignored.&#x20;
+{% endhint %}
+
 ## GitHub badges
 
 After you are vulnerability-free, you can put a badge on your README page to let the world know that your package has no known security holes. This shows your users that you care about security and tells them that they should care too.
