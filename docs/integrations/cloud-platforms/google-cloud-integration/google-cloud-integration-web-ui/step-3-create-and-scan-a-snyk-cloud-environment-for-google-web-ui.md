@@ -22,5 +22,5 @@ It can take Google 60 seconds or more to create your service account. If you try
 
 You can now do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

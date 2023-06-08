@@ -8,5 +8,5 @@ The steps follow to onboard an Azure subscription to Snyk via the API:
 
 When you have completed the steps, you will be able to do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

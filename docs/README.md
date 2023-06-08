@@ -16,8 +16,8 @@ See [Snyk user hub](https://snyk.io/user-hub/) to access all Snyk knowledge reso
 
 #### Scan code with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-| <p><a href="scan-application-code/">Scan application code</a><br>Secure your codebase: scan native code and  open-source libraries</p> | <p><a href="scan-cloud-deployment/">Scan cloud deployments</a><strong></strong><br><strong></strong>Secure cloud infrastructure before and after it is deployed</p> | <p>​<a href="scan-containers/">Scan containers</a> <strong></strong> <br>Find and fix vulnerabilities in container images and Kubernetes workloads</p> |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <p><a href="scan-application-code/">Scan application code</a><br>Secure your codebase: scan native code and open-source libraries</p> | <p><a href="scan-cloud-configurations/">Scan cloud deployments</a><br>Secure cloud infrastructure before and after it is deployed</p> | <p>​<a href="scan-containers/">Scan containers</a><br>Find and fix vulnerabilities in container images and Kubernetes workloads</p> |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 
 #### Manage your Snyk system
 
@@ -26,9 +26,9 @@ See [Snyk user hub](https://snyk.io/user-hub/) to access all Snyk knowledge reso
 
 #### More learning resources <a href="#use-other-resources" id="use-other-resources"></a>
 
-| <p><a href="https://training.snyk.io/">Snyk training</a><br>Courses to help you use Snyk functions</p> | <p>​<a href="https://support.snyk.io/hc/en-us">Snyk support</a> <br>Access Support tickets and knowledgebase</p>        | <p><a href="https://learn.snyk.io/">Snyk Learn</a>​<br>Security training and by developers, for developers</p> |
-| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| ​[Snyk product updates](https://updates.snyk.io/) See the latest Snyk product information              | <p>​<a href="https://security.snyk.io/">Snyk vulnerability DB</a>  <br>Our database for open source vulnerabilities</p> | <p>​<a href="https://snyk.io/advisor/">Snyk Advisor</a> <br>Find the best package for your next project</p>    |
+| <p><a href="https://training.snyk.io/">Snyk training</a><br>Courses to help you use Snyk functions</p> | <p>​<a href="https://support.snyk.io/hc/en-us">Snyk support</a><br>Access Support tickets and knowledgebase</p>       | <p><a href="https://learn.snyk.io/">Snyk Learn</a>​<br>Security training and by developers, for developers</p> |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| ​[Snyk product updates](https://updates.snyk.io/) See the latest Snyk product information              | <p>​<a href="https://security.snyk.io/">Snyk vulnerability DB</a><br>Our database for open source vulnerabilities</p> | <p>​<a href="https://snyk.io/advisor/">Snyk Advisor</a><br>Find the best package for your next project</p>     |
 
 {% hint style="success" %}
 [Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)

@@ -320,11 +320,11 @@ A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerab
 
 ### Snyk Cloud
 
-A Snyk product. Enables developers to find and fix cloud infrastructure misconfigurations. See [Snyk Cloud](../scan-cloud-deployment/integrated-iac-with-cloud-context/).
+A Snyk product. Enables developers to find and fix cloud infrastructure misconfigurations. See [Snyk Cloud](../scan-cloud-configurations/integrated-iac-with-cloud-context/).
 
 ### Snyk Cloud Environment
 
-An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../scan-cloud-deployment/integrated-iac-with-cloud-context/key-concepts.md).
+An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../scan-cloud-configurations/integrated-iac-with-cloud-context/key-concepts.md).
 
 ### Snyk Code
 
@@ -336,7 +336,7 @@ A Snyk product. Enables developers to find and fix vulnerabilities in container 
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-cloud-deployment/snyk-infrastructure-as-code/).
+A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/).
 
 ### Snyk Open Source
 

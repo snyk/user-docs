@@ -26,7 +26,7 @@ Snyk free plan provides limited free tests per month. For unlimited tests, consi
 
 #### Create or log into your account
 
-You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-a-snyk-account/) to try out a project. If your organization is already using Snyk, you may be able to log in via single sign-on to be provisioned with a Snyk account (see [Logging in to an existing account](../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md)).
+You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](quickstart/create-a-snyk-account/) to try out a project. If your organization is already using Snyk, you may be able to log in via single sign-on to be provisioned with a Snyk account (see [Logging in to an existing account](quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md)).
 
 #### Test a project in your local development environment
 
@@ -72,7 +72,7 @@ A scan with [**Snyk code test** ](../scan-application-code/snyk-code/cli-for-sny
 
 A scan with [**Snyk container test**](../scan-containers/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image for one that is more secure.
 
-A scan with [**Snyk iac test**](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) returns advice on how to resolve discovered issues in your Infrastructure as Code files.
+A scan with [**Snyk iac test**](../scan-cloud-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) returns advice on how to resolve discovered issues in your Infrastructure as Code files.
 
 ### What’s next?
 
