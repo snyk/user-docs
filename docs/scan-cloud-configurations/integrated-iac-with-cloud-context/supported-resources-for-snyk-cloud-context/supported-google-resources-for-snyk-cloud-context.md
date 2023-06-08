@@ -1,9 +1,5 @@
 # Supported Google resources for Snyk cloud context
 
-{% hint style="info" %}
-For information about billable resources, see [Billable resources](../../billable-resources-for-snyk-cloud.md).
-{% endhint %}
-
 Snyk cloud context works with the following Google Cloud resource types:
 
 * google\_bigquery\_data\_transfer\_config
