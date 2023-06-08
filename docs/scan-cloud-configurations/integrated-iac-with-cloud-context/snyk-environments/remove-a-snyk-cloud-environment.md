@@ -4,7 +4,7 @@ When you remove an environment, Snyk removes all associated scans, issues, and r
 
 ## Web UI
 
-In the Snyk Web UI, you can remove an environment by navigating to your Organization's **Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](view-snyk-cloud-environments.md#remove-an-environment).
+In the Snyk Web UI, you can remove an environment by navigating to your Organization's **Settings (cog icon) > Cloud environments**. See [Remove an Integrated IaC or cloud environment](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/4837/scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/view-environments#remove-an-integrated-iac-or-cloud-environment).
 
 ## API
 
