@@ -1,14 +1,14 @@
 # Remove an environment
 
-When you remove an environment, Snyk removes all associated scans, issues, and records of resources. For Cloud environments, your actual resources in the cloud provider are not affected.
+When you remove an environment, Snyk removes all associated scans, issues, and records of resources. For cloud environments, your actual resources in the cloud provider are not affected.
 
 ## Web UI
 
-In the Snyk Web UI, you can remove an environment by navigating to your Organization's **Settings (cog icon) > Cloud environments**. See [Remove an Integrated IaC or cloud environment](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/4837/scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/view-environments#remove-an-integrated-iac-or-cloud-environment).
+In the Snyk Web UI, you can remove an environment by navigating to your Organization **Settings (cog icon) > Cloud environments**. See [Remove an Integrated IaC or cloud environment](view-add-and-remove-environments.md#remove-an-integrated-iac-or-cloud-environment).
 
 ## API
 
-To remove an environment using the Snyk API, send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#delete-/orgs/-org\_id-/cloud/environments/-environment\_id-) endpoint in the below format. You can find the environment ID using the method shown in [Find the environment ID](scan-a-cloud-environment.md#find-the-environment-id).
+To remove an environment using the Snyk API, send a request to the [Delete environment](https://apidocs.snyk.io/#delete-/orgs/-org\_id-/cloud/environments/-environment\_id-) endpoint in the following format. You can find the environment ID using the method shown on the page [Find an environment ID](find-an-environment-id.md).
 
 ```
 curl -X DELETE \
@@ -20,10 +20,10 @@ There is no output if the command is successful.
 
 ## Remove the Snyk AWS IAM role
 
-Removing an environment does not remove the Snyk Identity & Access Management (IAM) role. To fully remove Snyk's access to your Amazon Web Services (AWS) account, delete the IAM role using the same infrastructure as code tool that created it:
+Removing an environment does not remove the Snyk Identity and Access Management (IAM) role. To fully remove Snyk's access to your Amazon Web Services (AWS) account, delete the IAM role using the same infrastructure as code tool that created it:
 
 * **Terraform:** delete the role using the [terraform destroy](https://www.terraform.io/cli/commands/destroy) command.
-* **CloudFormation:** delete the CloudFormation stack using the [AWS Management Console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) or the AWS CLI's [delete-stack command](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/delete-stack.html).
+* **CloudFormation:** delete the CloudFormation stack using the [AWS Management Console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) or the AWS CLI [delete-stack command](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/delete-stack.html).
 
 ## Remove the Google service account
 
