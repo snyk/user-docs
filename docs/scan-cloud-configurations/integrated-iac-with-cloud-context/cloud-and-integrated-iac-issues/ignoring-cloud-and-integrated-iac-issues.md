@@ -1,4 +1,4 @@
-# Ignoring Cloud and Integrated IaC issues
+# Ignoring cloud and Integrated IaC issues
 
 {% hint style="info" %}
 **Feature availability**\
@@ -21,21 +21,21 @@ To ignore an issue via the Snyk Web UI:
 
 1. Navigate to your Organization's Cloud tab.
 2. Select the issue you want to ignore.
-3.  In the side panel, select the **Ignore** button.\
+3.  Select the **Ignore** button.\
 
 
-    <figure><img src="../../../.gitbook/assets/snyk-cloud-ignore-button.png" alt="The Ignore button in a Cloud issue in the Snyk Web UI"><figcaption><p>The Ignore button in a Cloud issue in the Snyk Web UI</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/snyk-cloud-ignore-button.png" alt="The Ignore button in a cloud issue in the Snyk Web UI"><figcaption><p>The Ignore button in a coud issue in the Snyk Web UI</p></figcaption></figure>
 4. Add a comment about why this issue is ignored.
-5.  Set how long the issue should be ignored from the **Ignore for** drop-down menu. You can permanently ignore an issue by selecting **Does not expire**, or you can ignore the issue for 14, 30, 60, or 90 days, or a custom time period.\
+5.  From the **Ignore for** drop-down menu, set how long the issue should be ignored. You can permanently ignore an issue by selecting **Does not expire**, or you can ignore the issue for 14, 30, 60, or 90 days, or a custom time period.\
 
 
-    <figure><img src="../../../.gitbook/assets/snyk-cloud-ignore-settings.png" alt="Setting ignore details for a Cloud issue in the Snyk Web UI"><figcaption><p>Setting ignore details for a Cloud issue in the Snyk Web UI</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/snyk-cloud-ignore-settings.png" alt="Setting ignore details for a cloud issue in the Snyk Web UI"><figcaption><p>Setting ignore details for a cloud issue in the Snyk Web UI</p></figcaption></figure>
 6. Select **Confirm**.\
    The message "Issue successfully ignored and will be applied on next scan" appears.
 7. To apply the ignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md). Or, you can wait for the ignore to be applied on the next scheduled scan.
 8. Refresh the page in your browser to see the "Ignored" message in the side panel.
 
-<figure><img src="../../../.gitbook/assets/snyk-cloud-ignored-issue-example.png" alt="An example of an ignored Cloud issue in the Snyk Web UI"><figcaption><p>An example of an ignored Cloud issue in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-cloud-ignored-issue-example.png" alt="An example of an ignored cloud issue in the Snyk Web UI"><figcaption><p>An example of an ignored cloud issue in the Snyk Web UI</p></figcaption></figure>
 
 You can see the following details for the ignore by selecting **See details** in the side panel:
 
@@ -43,7 +43,7 @@ You can see the following details for the ignore by selecting **See details** in
 * Expiration
 * Reason
 
-<img src="../../../.gitbook/assets/snyk-cloud-ignore-details.png" alt="Example details of an ignored Cloud issue" data-size="original">
+<img src="../../../.gitbook/assets/snyk-cloud-ignore-details.png" alt="Ignore details display" data-size="original">
 
 After an issue is ignored, you can **unignore** it or **edit** the ignore.
 
@@ -52,7 +52,7 @@ After an issue is ignored, you can **unignore** it or **edit** the ignore.
 To unignore an issue via the Snyk Web UI:
 
 1. Select the ignored issue from your Organization's Cloud tab.
-2. In the side panel, select the **Unignore** button.
+2. Select the **Unignore** button.
 3. The message "Issue successfully unignored and will be applied on next scan" appears.
 4. To apply the unignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md). Or, you can wait for the unignore to be applied on the next scheduled scan.
 5. Refresh the page in your browser to see that the "Ignored" message in the side panel is gone.
@@ -63,7 +63,7 @@ To edit an ignore via the Snyk Web UI:
 
 1. Select the ignored issue from your Organization's Cloud tab.
 2. In the side panel, select the **Edit ignore** button.
-3. Edit the comment and/or the ignore expiration date.
+3. Edit the comment, the ignore expiration date, or both.
 4. Select **Confirm**.\
    The message "Ignore successfully edited and will be applied on next scan" appears.
 5. To apply the edited ignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md). Or, you can wait for the edited ignore to be applied on the next scheduled scan.
