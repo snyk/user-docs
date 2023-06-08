@@ -6,7 +6,7 @@ Snyk then scans your Project, testing for vulnerabilities, and imports a snapsho
 
 If the tag for an image changes and the original tag is used for a different image, Snyk continues to scan the image associated with the original tag, meaning Snyk scans the new image on recurring tests. If you want to continue testing an image with a different tag, import the relevant tag.
 
-On the **Projects** page, if the Project is imported from a registry integration, it is marked with the relevant registry icon; if ithe Project is imported from the CLI, it is marked with a CLI icon.
+On the **Projects** page, if the Project is imported from a registry integration, it is marked with the relevant registry icon; if the Project is imported from the CLI, it is marked with a CLI icon.
 
 You can filter for all container Projects, as shown in the following example:
 
@@ -38,7 +38,7 @@ The following information is displayed:
   * a summary of the vulnerability severities accordingly.
 * Filters are available. When you view a container Project, you can filter by the filters available for all supported Project types, and these filters:
   * A specific binary or OS packages for binaries and packages containing issues
-  * Dockerfile instructions: If you attach your Dockerfile, then you can filter to view issues associated only with the base image, or o view Dockerfile-related advice (user instruction), or both
+  * Dockerfile instructions: If you attach your Dockerfile, you can filter to view issues associated only with the base image, or view Dockerfile-related advice (user instruction), or both
 
 <figure><img src="../../.gitbook/assets/image (165) (1) (3) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Filters for binaries and images"><figcaption><p>Filters for binaries and images</p></figcaption></figure>
 
