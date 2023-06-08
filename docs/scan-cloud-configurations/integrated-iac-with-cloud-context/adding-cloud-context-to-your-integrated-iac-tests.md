@@ -60,7 +60,7 @@ For example, the following command tests the IaC in the present working director
 snyk iac test --snyk-cloud-environment=93786877-c9f8-0000-1234-abcd1234efgh
 ```
 
-To find your environment ID, see [Find an environment ID](snyk-environments/find-a-snyk-cloud-environment-id.md).
+To find your environment ID, see [Find an environment ID](snyk-environments/find-an-environment-id.md).
 
 See the [Integrated IaC with cloud context](./) documentation for information about creating a Snyk cloud environment.
 

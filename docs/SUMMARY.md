@@ -484,7 +484,7 @@
     * [Fix cloud issues in Integrated IaC](scan-cloud-configurations/integrated-iac-with-cloud-context/fix-cloud-issues-in-integrated-iac.md)
     * [Snyk environments](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/README.md)
       * [View, add, and remove environments](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/view-add-and-remove-environments.md)
-      * [Find an environment ID](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/find-a-snyk-cloud-environment-id.md)
+      * [Find an environment ID](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/find-an-environment-id.md)
       * [Scan a Cloud environment](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/scan-a-snyk-cloud-environment.md)
       * [Update a Cloud environment](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/update-a-snyk-cloud-environment.md)
       * [Remove an environment](scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-environments/remove-a-snyk-cloud-environment.md)

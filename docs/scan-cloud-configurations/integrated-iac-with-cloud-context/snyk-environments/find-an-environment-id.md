@@ -4,25 +4,25 @@ Certain actions, such as updating or deleting an environment using the Snyk API,
 
 To find the ID of an environment, you can use the following methods:
 
-* [Web UI](find-a-snyk-cloud-environment-id.md#web-ui)
-* [API](find-a-snyk-cloud-environment-id.md#api)
+* [Web UI](find-an-environment-id.md#web-ui)
+* [API](find-an-environment-id.md#api)
 
 ## Web UI
 
 To find an environment ID using the [Web UI](https://app.snyk.io/):
 
-1. Navigate to your Organization's **Settings > Cloud environments**.
+1. Navigate to your Organization **Settings > Cloud environments**.
 2. In the **Actions** column, select the `...` icon for the desired environment.
 3.  Select **Update**.
 
     <figure><img src="../../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Update an environment from the Cloud environments page in Settings"><figcaption><p>Update an environment from the Cloud environments page in Settings</p></figcaption></figure>
 4.  In the **Environment ID** section, select **Copy** to copy the environment ID.
 
-    <figure><img src="../../../.gitbook/assets/snyk-cloud-copy-env-id-ui.png" alt="Copy the Snyk Cloud Environment ID"><figcaption><p>Copy the Snyk Cloud Environment ID</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/snyk-cloud-copy-env-id-ui.png" alt="Copy the Environment ID"><figcaption><p>Copy the Environment ID</p></figcaption></figure>
 
 ## API
 
-To find an environment ID using the API, send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) endpoint in the below format:
+To find an environment ID using the API, send a request to the [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) endpoint in the following format:
 
 ```
 curl -X GET \
@@ -30,7 +30,7 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-In the output, look for the `data.id` property of the desired environment. In the shortened example below, the ID is `3b7ccff9-8900-4e54-0000-1234abcd1234`:
+In the output, look for the `data.id` property of the desired environment. In the shortened example that follows, the ID is `3b7ccff9-8900-4e54-0000-1234abcd1234`:
 
 ```
 {
@@ -44,7 +44,7 @@ In the output, look for the `data.id` property of the desired environment. In th
 }
 ```
 
-### Filtering environments
+## Filtering environments
 
 You can filter the list of environments using query parameters to make it easier to find a particular environment. For example, you can add `kind=google` to the API request to return only Google Cloud environments:
 
