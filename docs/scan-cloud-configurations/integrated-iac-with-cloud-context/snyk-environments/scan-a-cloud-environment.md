@@ -1,10 +1,10 @@
-# Scan a Cloud environment
+# Scan a cloud environment
 
-Snyk automatically runs a scan when a [Cloud environment](../key-concepts.md#environments) is created. After that, Snyk scans the environment once every 24 hours. You can also manually trigger a new scan at any time by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans).
+Snyk automatically runs a scan when a [cloud environment](../key-concepts.md#environments) is created. After that, Snyk scans the environment once every 24 hours. You can also manually trigger a new scan at any time by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans).
 
 ## Using `jq`
 
-If you have [jq](https://stedolan.github.io/jq/download/) installed, you can execute a single command to retrieve the first environment ID from the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21\~beta#get-/orgs/-org\_id-/cloud/environments) and then manually scan the environment:
+If you have [jq](https://stedolan.github.io/jq/download/) installed, you can execute a single command to retrieve the first environment ID from the [Snyk API Create scan](https://apidocs.snyk.io/#post-/orgs/-org\_id-/cloud/scans) endpoint to trigger the scan manually and then manually scan the environment:
 
 <pre><code>SNYK_ORG_ID="YOUR-ORGANIZATION-ID" &#x26;&#x26; \
 SNYK_API_TOKEN="YOUR-API-TOKEN" &#x26;&#x26; \
@@ -29,15 +29,15 @@ curl -X POST \
 }"
 </code></pre>
 
-Because `jq -r '.data[0].id` returns the ID of the **first** environment shown in the Snyk API ["list environments"](https://apidocs.snyk.io/?version=2022-12-21\~beta#get-/orgs/-org\_id-/cloud/environments) output, this technique is especially useful if your Organization has a single environment. You can also change the `0` to another number to scan a different environment; for example, `jq -r '.data[1].id` will return the ID of the **second** environment in the output.
+Because `jq -r '.data[0].id` returns the ID of the **first** environment shown in the Snyk API [List environments](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) output, this technique is especially useful if your Organization has a single environment. You can also change the `0` to another number to scan a different environment; for example, `jq -r '.data[1].id` will return the ID of the **second** environment in the output.
 
 ## Without `jq`
 
-If you don't have [jq](https://stedolan.github.io/jq/download/) installed, you can send a request to the Snyk API to return all your environment IDs, look for the ID of the environment you want to scan, and send another request to manually trigger the scan.
+If you so not have [jq](https://stedolan.github.io/jq/download/) installed, you can send a request to the Snyk API to return all your environment IDs, look for the ID of the environment you want to scan, and send another request to manually trigger the scan.
 
 ### Find the environment ID
 
-First, find the ID of the Cloud environment you want to scan. Send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) endpoint in the below format:
+First, find the ID of the Cloud environment you want to scan. Send a request to the [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) endpoint in the following format:
 
 ```
 curl -X GET \
@@ -45,7 +45,7 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-In the output, look for the `data.id` property. In the shortened example below, the ID is `3b7ccff9-8900-4e54-0000-1234abcd1234`:
+In the output, look for the `data.id` property. In the shortened example that follows, the ID is `3b7ccff9-8900-4e54-0000-1234abcd1234`:
 
 ```json
 {
@@ -61,7 +61,7 @@ In the output, look for the `data.id` property. In the shortened example below, 
 
 ### Trigger the scan
 
-To manually trigger a scan, send a request to the [`/cloud/scans`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans) endpoint in the below format:
+To manually trigger a scan, send a request to the [`/cloud/scans`](https://apidocs.snyk.io/#post-/orgs/-org\_id-/cloud/scans) endpoint in the following format:
 
 ```
 curl -X POST \
@@ -82,11 +82,11 @@ curl -X POST \
 }'
 ```
 
-Note: The example above uses [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
+Note: This example uses [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
 
 ## Understand the API response
 
-Snyk returns a JSON document containing details about the new scan. For example:
+Snyk returns a JSON document containing details about the new scan, for example:
 
 ```json
 {
@@ -128,14 +128,14 @@ Snyk returns a JSON document containing details about the new scan. For example:
 }
 ```
 
-Below are some key attributes from the API response:
+The following are some key attributes from the API response:
 
 * `data.id`: Scan ID
 * `data.attributes.status`: Scan status
 
 ## Check scan status
 
-To check a scan's status, retrieve the details of the environment being scanned. Send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) endpoint in the below format:
+To check the status of a scan, retrieve the details of the environment being scanned. Send a request to the [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) endpoint in the following format:
 
 ```
 curl -X GET \
@@ -143,7 +143,7 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-Snyk returns a JSON document containing environment details. Look for the `data.attributes.status` value to find the scan status. In the shortened example below, the status is `success`:
+Snyk returns a JSON document containing environment details. Look for the `data.attributes.status` value to find the scan status. In the shortened example that follows, the status is `success`:
 
 ```json
 {
@@ -163,16 +163,16 @@ Snyk returns a JSON document containing environment details. Look for the `data.
 }
 ```
 
-Scan status values:
+Scan status values are as follows:
 
 * `queued`: Scan is about to start
 * `in_progress`: Scan is in progress
 * `success`: Scan is completed
 * `error`: Scan errored; wait a moment and try scanning again
 
-## View all scans for an organization
+## View all scans for an Organization
 
-To view all scans for an organization, send an [API request](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/scans) in the below format:
+To view all scans for an Organization, send an API request to the [List scans](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/scans) endpoint in the following format:
 
 ```
 curl -X GET \
@@ -180,7 +180,7 @@ curl -X GET \
 -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-Snyk returns a JSON document containing details about all scans. For example:
+Snyk returns a JSON document containing details about all scans, for example:
 
 ```json
 {
