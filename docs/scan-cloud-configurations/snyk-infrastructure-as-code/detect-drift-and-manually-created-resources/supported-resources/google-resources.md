@@ -2,7 +2,7 @@
 
 Snyk IaC drift scanning supports the following resources for Google:
 
-| \*\*\*\*                                  | **Deep mode available** |
+| **Resource**                              | **Deep mode available** |
 | ----------------------------------------- | ----------------------- |
 | google\_storage\_bucket                   | ✅                       |
 | google\_storage\_bucket\_iam\_binding     | ✅                       |

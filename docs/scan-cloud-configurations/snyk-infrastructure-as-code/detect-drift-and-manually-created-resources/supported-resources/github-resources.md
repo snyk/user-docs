@@ -2,7 +2,7 @@
 
 Snyk IaC drift scanning supports the following resources for GitHub:
 
-| \*\*\*\*                   | **Deep mode available** |
+| **Resource**               | **Deep mode available** |
 | -------------------------- | ----------------------- |
 | github\_repository         | ✅                       |
 | github\_team               | ✅                       |

@@ -2,7 +2,7 @@
 
 Snyk IaC drift scanning supports the following resources for Azure:
 
-| \*\*\*\*                             | **Deep mode available** |
+| **Resource**                         | **Deep mode available** |
 | ------------------------------------ | ----------------------- |
 | azurerm\_storage\_account            | ❌                       |
 | azurerm\_storage\_container          | ❌                       |

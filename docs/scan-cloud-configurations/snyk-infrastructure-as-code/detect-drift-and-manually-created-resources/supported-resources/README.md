@@ -1,6 +1,6 @@
 # Supported resources
 
-Snyk IaC drift scanning supports the following resources for a given cloud provider:
+Snyk IaC drift scanning supports the resources listed on each page for these cloud providers:
 
 * [AWS](aws-resources.md)
 * [Azure](azure-resources.md)
