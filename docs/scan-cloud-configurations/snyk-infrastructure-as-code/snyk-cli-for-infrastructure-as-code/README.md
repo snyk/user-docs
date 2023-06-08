@@ -7,7 +7,7 @@ To use the CLI, you must first [install](../../../snyk-cli/install-the-snyk-cli/
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 
 * [Test your configuration files](test-your-iac-files/)
-* [Share CLI results with the Snyk Web UI](../share-cli-results-with-the-snyk-web-ui.md)
+* [Share CLI results with the Snyk Web UI](share-cli-results-with-the-snyk-web-ui.md)
 * [IaC ignores using the `.snyk` policy file](iac-ignores-using-the-.snyk-policy-file.md)
 * [Understanding the IaC CLI test results](understanding-the-cli-test-output/) (has information about reports)
 * [IaC exclusions using the command line](iac-exclusions-using-the-command-line.md)

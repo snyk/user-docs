@@ -68,7 +68,7 @@ See the [Integrated IaC with cloud context](./) documentation for information ab
 
 You can use the `--cloud-context=<PROVIDER>` option with the [`snyk iac test`](../../snyk-cli/commands/iac-test.md) command to apply cloud context to an IaC test without referencing a Snyk cloud environment. Snyk does this by authenticating with your cloud provider locally and scanning the associated cloud provider account.
 
-The process for authenticating with a cloud provider account is the same as for the [`snyk iac describe`](../../snyk-cli/commands/iac-describe.md) command. See **Step 1** of [Get started with Snyk IaC Describe](../../scan-cloud-deployment/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/get-started-with-snyk-iac-describe-on-aws.md) on AWS for details.
+The process for authenticating with a cloud provider account is the same as for the [`snyk iac describe`](../../snyk-cli/commands/iac-describe.md) command. See **Step 1** of [Get started with Snyk IaC Describe](../snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/get-started-with-snyk-iac-describe-on-aws.md) on AWS for details.
 
 For example, the following command tests the IaC in the present working directory and executes a scan of the authenticated AWS account, then applies the cloud context to suppress issues:
 

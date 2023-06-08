@@ -14,4 +14,4 @@ For additional information, see the following pages:
 * [Use Snyk Open Source from the CLI](../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/)
 * [Using Snyk Code via the CLI](../scan-application-code/snyk-code/cli-for-snyk-code/)
 * [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-security/)
-* [Snyk CLI for Infrastructure as Code](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)
+* [Snyk CLI for Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)

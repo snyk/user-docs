@@ -94,5 +94,5 @@ To manually re-scan an environment, see [Scan a Cloud Environment](../../../../s
 
 You can now do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-configurations/integrated-iac-with-cloud-context/snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.
