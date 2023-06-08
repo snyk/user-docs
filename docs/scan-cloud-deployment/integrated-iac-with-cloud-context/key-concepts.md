@@ -62,7 +62,7 @@ You can view your Organization's issues in the Snyk Web UI. See [View cloud and 
 
 A **compliance standard** is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are “versioned,” with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report).
 
-For more information, see [supported compliance standards](cloud-compliance.md#supported-compliance-standards).
+For more information, see [supported compliance standards](view-compliance-reporting.md#supported-compliance-standards).
 
 ## Compliance control <a href="#docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b" id="docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b"></a>
 

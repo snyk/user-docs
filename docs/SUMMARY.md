@@ -497,7 +497,7 @@
     * [Cloud and Integrated IaC Issues](scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/README.md)
       * [View Cloud and Integrated IaC issues in the Snyk Web UI](scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md)
       * [Ignoring Cloud and Integrated IaC issues](scan-cloud-deployment/integrated-iac-with-cloud-context/snyk-cloud-issues/ignoring-cloud-issues.md)
-    * [View compliance reporting](scan-cloud-deployment/integrated-iac-with-cloud-context/cloud-compliance.md)
+    * [View compliance reporting](scan-cloud-deployment/integrated-iac-with-cloud-context/view-compliance-reporting.md)
   * [Billable resources for Snyk Cloud](scan-cloud-deployment/billable-resources-for-snyk-cloud.md)
 * [Manage issues](manage-issues/README.md)
   * [Introduction to managing issues](manage-issues/introduction-to-managing-issues.md)
