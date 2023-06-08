@@ -4,11 +4,11 @@
 The fix cloud issues in IaC feature is available for [Integrated IaC](broken-reference) only, and supports AWS.
 {% endhint %}
 
-The fix cloud issues in IaC feature enables users to fix cloud issues directly in the IaC source code that was used to deploy the misconfigured cloud resources, by linking a cloud issue to the underlying IaC template via an SCM source code link.
+The fix cloud issues in IaC feature enables users to fix cloud issues directly in the IaC source code used to deploy the misconfigured cloud resources, by linking a cloud issue to the underlying IaC template via an SCM source code link.
 
-Many Snyk customers use IaC to deploy and manage cloud resources. However, organizations may still deploy misconfigured IaC templates, which results in misconfigured Cloud resources and therefore cloud context issues. This can be due to a number of factors, such as pipelines that are not configured to block deployments even if cloud misconfigurations are found.
+Many Snyk customers use IaC to deploy and manage cloud resources. However, organizations may still deploy misconfigured IaC templates, which results in misconfigured cloud resources and therefore cloud context issues. This can be due to a number of factors, such as pipelines that are not configured to block deployments even if cloud misconfigurations are found.
 
-To remediate these cloud issues today, security teams must determine manually which teams own the resources that were incorrectly deployed, and then developers must manually find the appropriate IaC templates that were used. This can be a very time-consuming process.
+To remediate these cloud issues, security teams must determine manually which teams own the resources that were incorrectly deployed, and then developers must manually find the appropriate IaC templates that were used. This can be a very time-consuming process.
 
 This feature eliminates these manual steps and provides the user with a link to the underlying IaC template that needs to be fixed.
 
@@ -18,14 +18,14 @@ Snyk delivers this capability by “mapping” cloud resources to the source IaC
 
 Snyk accesses Terraform state files via the CLI, which should be integrated into your deployment pipeline. Snyk does NOT send the `.tfstate` file to the Snyk Platform, given the potential for sensitive information. Instead, Snyk obtains the minimum amount of data necessary for resource mapping, such as resource IDs, and includes this information in a [mapping artifact](key-concepts.md#resource-mapping) that is sent to the Snyk Platform. All other configuration data is not included in the mapping artifact.
 
-Snyk generates [resource mappings](key-concepts.md#resource-mapping) from cloud resources to IaC source templates by analyzing mapping artifacts, coud resources, and IaC resources when cloud environments are scanned.
+Snyk generates [resource mappings](key-concepts.md#resource-mapping) from cloud resources to IaC source templates by analyzing mapping artifacts, cloud resources, and IaC resources when cloud environments are scanned.
 
 ## Prerequisites for fix cloud issues in IaC <a href="#docs-internal-guid-1c18d3e8-7fff-6839-26b4-06682c96a199" id="docs-internal-guid-1c18d3e8-7fff-6839-26b4-06682c96a199"></a>
 
 You must have the following:
 
 * Access to a Snyk [service account](../../enterprise-setup/service-accounts.md) and API token
-* Access to a Snyk Organization with [integrated IaC](broken-reference) and cloud context
+* Access to a Snyk Organization with [Integrated](./) IaC and cloud context
 * Cloud resources deployed to AWS with Terraform via CI/CD
 * Terraform version 0.11 or later
 
