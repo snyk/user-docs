@@ -1,6 +1,6 @@
 # Configure GitHub provider
 
-## Authentication
+## Authentication for GitHub provider
 
 To use `iac describe`, set up credentials to make authenticated requests to GitHub. Snyk retrieves configuration information from [environment variables](https://registry.terraform.io/providers/integrations/github/latest/docs#argument-reference).
 

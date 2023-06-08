@@ -1,6 +1,6 @@
 # Configure Google provider
 
-## Authentication
+## Authentication for Google provider
 
 To use `iac describe`, set up credentials to make authenticated requests to your GCP project.
 

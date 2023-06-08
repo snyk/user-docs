@@ -1,6 +1,6 @@
 # Configure AWS provider
 
-## Authentication
+## Authentication for AWS provider
 
 To use `iac describe`, set up credentials to make authenticated requests to AWS. As you do for the AWS CLI, use [credentials and configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) settings declared as user environment variables or in local AWS configuration files.
 
@@ -184,7 +184,7 @@ Deploy this CloudFormation template to create the limited permission role that y
 
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home?#/stacks/quickcreate?stackName=driftctl-stack\&templateURL=https://driftctl-cfn-templates.s3.eu-west-3.amazonaws.com/driftctl-role.yml)
 
-Once the stack is deployed, attach the following policy to your IAM user. This allows the user to assume only the role specified. For more information about granting a user access to assume a role, see the [AWS Identity and Access Management User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_use\_permissions-to-switch.html).
+When the stack is deployed, attach the following policy to your IAM user. This allows the user to assume only the role specified. For more information about granting a user access to assume a role, see the [AWS Identity and Access Management User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_use\_permissions-to-switch.html).
 
 ```
 {
