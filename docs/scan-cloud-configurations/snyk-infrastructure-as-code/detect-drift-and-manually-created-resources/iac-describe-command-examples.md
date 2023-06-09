@@ -89,7 +89,7 @@ snyk iac describe --all --from="tfstate+tfcloud://$WORKSPACE_ID" --tfc-token="$T
 
 ## Use `--service` to specify multiple services to inspect
 
-Include AWS S3 and AWS EC2 resources in report:
+Include AWS S3 and AWS EC2 resources in the report:
 
 ```
 snyk iac describe --all --service="aws_s3,aws_ec2"
@@ -99,7 +99,7 @@ snyk iac describe --all --service="aws_s3,aws_ec2"
 
 **Note:** When using strict mode with an AWS account, you may experience unnecessary noise from resources that do not belong to you.
 
-This can happen if you have an organization account in which you, by default, have a service-linked role associated to your the account; for example, `AWSServiceRoleForOrganizations`.
+This can happen if you have an Organization account in which you, by default, have a service-linked role associated with your account; for example, `AWSServiceRoleForOrganizations`.
 
 Example to enable strict mode:
 
