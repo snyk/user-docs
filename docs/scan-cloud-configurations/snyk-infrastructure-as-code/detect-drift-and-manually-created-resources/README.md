@@ -8,5 +8,5 @@ The information in this group of pages supports using the `snyk iac describe` co
 * [IaC describe command examples](iac-describe-command-examples.md)
 * [Detecting and reporting infrastructure drift](detect-and-report-infrastructure-drift.md)
 * [Filtering results](filter-rules.md)
-* [Ignoring resources](ignore-resources.md)
+* [Ignoring resources](ignore-resources-for-drift.md)
 * [IAC sources and their use](iac-sources-usage.md)

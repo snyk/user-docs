@@ -1,17 +1,17 @@
-# Ignore resources
+# Ignore resources for drift
 
-The `.snyk` policy file can be used to exclude resources from being considered IaC drift by `snyk iac describe`. See [the `.snyk` policy file doc](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) for more general information.
+The `.snyk` policy file can be used to exclude resources from being considered IaC drift by `snyk iac describe`. See [the `.snyk` policy file doc](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) for general information.
 
-If you need only to exclude a set of resources, use `.snyk`. If you have more complex requirements, consider using filter rules. For more information see [Filter results](filter-rules.md).
+If you need to exclude only a set of resources, use `.snyk`. If you have more complex requirements, consider using filter rules. For more information see [Filter rules](filter-rules.md).
 
 Create the `.snyk` file in the directory where you launch the `snyk iac describe` command, typically the root of your IaC repo.
 
 Each line must be structured as follows:
 
 * `resource_type.resource_id`, where `resource_id` is a wildcard to exclude all resources of a given type
-* `resource_type.resource_id.path.to.field_name`, where `resource_id` is a wildcard to ignore a drift on given field for a given type and `path` can also contain wildcards.
+* `resource_type.resource_id.path.to.field_name`, where `resource_id` is a wildcard to ignore a drift on a given field for a given type and `path,` can also contain wildcards.
 
-## Examples
+## Examples of IaC ignores
 
 Ignore a single IAM user (_aws\_iam\_user_) named "_tfc-demo_".
 
@@ -37,7 +37,7 @@ exclude:
 ```
 {% endcode %}
 
-The `.snyk` policy file also supports negation of rules. This allows you to ignore everything except certain types. In this example, only S3 buckets will **not** be ignored:
+The `.snyk` policy file also supports the negation of rules. This allows you to ignore everything except certain types. In this example, only S3 buckets will **not** be ignored:
 
 {% code title=".snyk" %}
 ```yaml
@@ -50,7 +50,7 @@ exclude:
 ```
 {% endcode %}
 
-Ignore a specific IAM Policy Attachment (_AWSServiceRoleForRDS_) using its ARN (_arn:aws:iam::aws:policy/aws-service-role/AmazonRDSServiceRolePolicy_).
+Ignore a specific IAM Policy Attachment (AWSServiceRoleForRDS) using its ARN (arn:aws:iam::aws:policy/aws-service-role/AmazonRDSServiceRolePolicy).
 
 {% code title=".snyk" %}
 ```yaml
@@ -62,7 +62,7 @@ exclude:
 ```
 {% endcode %}
 
-Ignore S3 bucket called my-bucket and so on as shown.
+Ignore the S3 bucket called my-bucket and so on, as shown.
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
@@ -89,11 +89,11 @@ You can use the means to ignore resources explained on this page in combination 
 
 ## Automatically generate drift exclusion rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#automatically-generate-a-driftignore-file) <a href="#automatically-generate-a-driftignore-file" id="automatically-generate-a-driftignore-file"></a>
 
-For details, see `snyk iac update-exclude-policy --help.`
+For details, run`snyk iac update-exclude-policy --help.`
 
-This command helps to generate a `.snyk` policy file, adding all the detected drifts to it, in order to ignore them all.
+This command helps to generate a `.snyk` policy file, adding all the detected drifts to it in order to ignore them all.
 
-For example, to ignore all the unmanaged resources at once:
+For example, to ignore all the unmanaged resources at once, run the following command:
 
 ```
 $ snyk iac describe --json --only-unmanaged | snyk iac update-exclude-policy

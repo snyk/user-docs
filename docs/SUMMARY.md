@@ -473,7 +473,7 @@
       * [Detect and report infrastructure drift](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/detect-and-report-infrastructure-drift.md)
       * [IaC describe command examples](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-describe-command-examples.md)
       * [Filter rules](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/filter-rules.md)
-      * [Ignore resources](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources.md)
+      * [Ignore resources for drift](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources-for-drift.md)
       * [IAC sources usage](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage.md)
     * [Disable IaC scans per Organization](scan-cloud-configurations/snyk-infrastructure-as-code/disable-iac-scans.md)
   * [Integrated IaC with cloud context](scan-cloud-configurations/integrated-iac-with-cloud-context/README.md)
