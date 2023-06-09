@@ -22,11 +22,25 @@ If your Jira instance is private, use [the Snyk Broker deployment method](../../
 
 ## **How to set up your Jira integration**
 
-The Jira account credentials are configured in the Snyk Web UI: **Organization Settings > Integrations** page.
-
 It is best practice to set up a new user in Jira for this integration, instead of using the credentials of an existing account.
 
 Cloud-hosted Jira implementations require a username and API token authentication. Jira API tokens are generated in [Atlassian API tokens](https://id.atlassian.com/manage/api-tokens). Self-hosted implementations can also authenticate with a username and password.
+
+Enter the Jira account credentials in the Snyk Web UI: **Organization Settings > Integrations** page: Base URL, Username/email, and API token.
+
+<figure><img src="../../.gitbook/assets/JiraSettings_nonBroker.png" alt="Jira settings"><figcaption><p>Jira settings</p></figcaption></figure>
+
+After the details have been entered into the integration, press **Save and continue**.&#x20;
+
+{% hint style="info" %}
+If the connection is not successful, check that the Base URL starts with exactly `https://` It must not have capitals or be http.
+{% endhint %}
+
+If the connection is successful, you will see the connection details in orange at the top of the page, with options for configuring the default Project and issue type, as well as any fields to ignore.&#x20;
+
+The default Project and issue type must be configured.&#x20;
+
+<figure><img src="../../.gitbook/assets/JiraSettings.png" alt=""><figcaption><p>A successful connection</p></figcaption></figure>
 
 ## **Create a Jira issue**
 
