@@ -1,10 +1,8 @@
-# Next Gen Reporting
-
-**Note:** This new page group will supersede Snyk reports, Reports overview, General actions, Summary tab, and Issues tab. Navigation for the Dependencies tab and Licenses tab is moving to the left navigation.
+# Reporting
 
 {% hint style="info" %}
-Snyk reporting is available to all customers on Enterprise plans.\
-To get access to the **Next Gen Reporting** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview).
+**Feature availability**\
+Snyk reporting is available to all customers on Enterprise plans.
 {% endhint %}
 
 Snyk reports provide the visibility and analytics needed to drive data-based conversations between development and security.

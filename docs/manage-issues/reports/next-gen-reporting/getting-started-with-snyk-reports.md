@@ -1,6 +1,6 @@
 # Getting started with Snyk Reports
 
-Reports are available on the **Reports** tab in the Snyk navigation. To get access to **Next Gen Reporting,** a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview).
+Reports are available on the **Reports** tab in the Snyk navigation.
 
 You can navigate to different reports from the dropdown in the upper left. The report currently selected is displayed.
 
