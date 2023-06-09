@@ -6,7 +6,7 @@
 You can find a full example of this guide in [this OPA Playground](https://play.openpolicyagent.org/p/SCYndBjWxh) and the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository.
 {% endhint %}
 
-Let’s assume we have generated a new rule `CUSTOM-RULE-1` using the SDK (i.e. `snyk-iac-rules template --rule CUSTOM-RULE-1`) and have a very simple fixture file containing a Terraform resource:
+Assume you have generated a new rule, `CUSTOM-RULE-1` using the SDK , that is, `snyk-iac-rules template --rule CUSTOM-RULE-1` and have a very simple fixture file containing a Terraform resource:
 
 {% code title="rules/CUSTOM-RULE-1/fixtures/denied.tf" %}
 ```
@@ -19,11 +19,11 @@ resource "aws_redshift_cluster" "denied" {
 ```
 {% endcode %}
 
-Now, we want to modify the generated Rego to enforce resources tagged with an owner:
+Now, modify the generated Rego to enforce resources tagged with an owner:
 
-1. Create a variable `[name]` to to enumerate across all of the `aws_redshift_cluster` resources. This variable can be named anything you like (e.g. `i`, `j`, `name`, etc.).
+1. Create a variable `[name]` to enumerate across all of the `aws_redshift_cluster` resources. This variable can be named anything you like, for example, `i`, `j`, `name`, and so on.
 2. Store this into the resource variable by assigning the value to it with a walrus operator `:=`; e.g. `resource := input.resource.aws_redshift_cluster[name]`
-3. Check if the owner tag exists for each resource; to do that, check if the path `resource.tags.owner` is defined. If it is undefined, it will evaluate to undefined. So, use the `NOT` keyword in front of it, which will evaluate to `TRUE`; e.g.`not resource.tags.owner`
+3. Check whether the owner tag exists for each resource; to do that, check if the path `resource.tags.owner` is defined. If it is undefined, it will evaluate as undefined. So, use the `NOT` keyword in front of it, which will evaluate to `TRUE`; for example,`not resource.tags.owner`
 
 The modified Rego is:
 
@@ -54,10 +54,10 @@ To understand how the Rego code evaluates the Terraform file provided earlier, h
 {% endhint %}
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
+Snyk recommends always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
-The test for this rule verifies that the Rego rule is able to identify that the fixture at the beginning of this guide is invalid:
+The test for this rule verifies that the Rego rule can identify that the fixture at the beginning of this guide is invalid:
 
 {% code title="rules/CUSTOM-RULE-1/main_test.rego" %}
 ```
@@ -87,13 +87,13 @@ test_CUSTOM_RULE_1 {
 
 ## Example with logical AND
 
-Let’s try and extend the example above and update the rule to allow all cases that suffice two conditions:
+Try and extend the preceding example  and update the rule to allow all cases that satisfy two conditions:
 
 1. A resource has an “owner” tag\
    **AND**
 2. A resource has a “description” tag
 
-To test this new condition, we generate a new rule `CUSTOM-RULE-2` using the `template` command and write the following fixture file:
+To test this new condition, generate a new rule `CUSTOM-RULE-2` using the `template` command and write the following fixture file:
 
 {% code title="rules/CUSTOM-RULE-2/fixtures/denied.tf" %}
 ```
@@ -143,7 +143,7 @@ deny[msg] {
 {% endcode %}
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
+Snyk recommends always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
 The test for this rule will look the same as the one for `CUSTOM-RULE-1`, but the name of the test and the first two arguments passed to the `testing.evaluate_test_cases` function will differ:
@@ -174,14 +174,14 @@ test_CUSTOM_RULE_2 {
 
 ## Example with logical OR
 
-We can also rewrite the rule above by combining the `NOT` operator with the OR functionality.
+You can also rewrite the rule above by combining the `NOT` operator with the OR functionality.
 
-Let’s update the example in a new rule `CUSTOM-RULE-3`, to deny all cases that fail **either** of the two conditions; we want to deny all `aws_redshift_cluster` resources that are missing either:
+Update the example in a new rule `CUSTOM-RULE-3`, to deny all cases that fail **either** of the two conditions, to deny all `aws_redshift_cluster` resources that are missing either:
 
 1. an “owner” tag , OR
 2. A “description” tag
 
-For this, we will use two new fixture files, one for each case:
+For this, use two new fixture files, one for each case:
 
 {% code title="rules/CUSTOM-RULE-3/fixtures/denied1.tf" %}
 ```
@@ -207,9 +207,9 @@ resource "aws_redshift_cluster" "denied2" {
 ```
 {% endcode %}
 
-To express logical OR in Rego, we can define multiple rules or functions with the same name. This is also described in the OPA documentation for[ Logical OR](https://www.openpolicyagent.org/docs/latest/#logical-or).
+To express logical OR in Rego, define multiple rules or functions with the same name. This is also described in the OPA documentation for[ Logical OR](https://www.openpolicyagent.org/docs/latest/#logical-or).
 
-First, we will add a function that will implement the `NOT` for each tag. Then, we will call this function with the resource:
+First, add a function that will implement the `NOT` for each tag. Then, call this function with the resource:
 
 {% code title="rules/CUSTOM-RULE-3/main.rego" %}
 ```
@@ -243,7 +243,7 @@ deny[msg] {
 This will successfully return all the rules that deny.
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by [updating and running the unit tests](./#test-a-custom-rule).
+Snyk recommends always validating that your rule is correct by [updating and running the unit tests](./#test-a-custom-rule).
 {% endhint %}
 
 The test for this rule will now contain multiple test cases, to show that the logical OR works as expected:
@@ -277,7 +277,7 @@ test_CUSTOM_RULE_3 {
 
 ## Example with strings
 
-Let’s extend this further and add a third condition. Deny all resources that are missing either:
+Extend this further and add a third condition. Deny all resources that are missing any of the following:
 
 1. An “owner” tag , OR
 2. A “description” tag, OR
@@ -317,25 +317,25 @@ deny[msg] {
 {% endcode %}
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
+Snyk recommends always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
 The test for this rule will look very similar to the ones from previous example and will also require its own fixture file.
 
 ## Example with XOR
 
-Now let’s say that we want to add more complexity and check the following:
+Now assume you want to add more complexity and check the following:
 
-* If the tag type is a “user”, then we want the tag “email” to exist as well.
-* If not (assume the other type is a “service”), we want it to have a serviceDescription.
-* These two will be mutually exclusive; if the first condition applies, the second one shouldn’t, and vice versa.
+* If the tag type is a “user”, then the tag “email” exists as well.
+* If not, assuming the other type is a “service”, we want it has a serviceDescription.
+* These two will be mutually exclusive; if the first condition applies, the second one does not, and vice versa.
 
 | Type    | Email | ServiceDescription |
 | ------- | ----- | ------------------ |
 | User    | YES   | NO                 |
 | Service | NO    | YES                |
 
-To do this, we are going to refactor our code to use a checkTags helper function. This can check if there are any tags, but also check for the two conditions above with an OR.
+To do this, refactor your code to use a checkTags helper function. This can check whether there are any tags, but also check for the two conditions above with an OR.
 
 {% code title="rules/CUSTOM-RULE-5/main.rego" %}
 ```
@@ -373,7 +373,7 @@ deny[msg] {
 ```
 {% endcode %}
 
-To convert this to an XOR we can use an `else` rule:
+To convert this to an XOR you can use an `else` rule:
 
 {% code title="rules/CUSTOM-RULE-5/main.rego" %}
 ```
@@ -424,17 +424,17 @@ deny[msg] {
 ```
 {% endcode %}
 
-If you want to try it out yourselves, we have provided the same example in an [OPA Playground](https://play.openpolicyagent.org/p/1xcdj9kJRw).
+If you want to try it out yourselves, use the same example in this [OPA Playground](https://play.openpolicyagent.org/p/1xcdj9kJRw).
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by[ updating and running the unit tests](testing-a-rule.md).
+Snyk recommends always validating that your rule is correct by[ updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
-The test for this rule will look very similar to the ones from previous example and will also require its own fixture file.
+The test for this rule will look very similar to the ones from the previous example and will also require its own fixture file.
 
 ## Examples with grouped resources
 
-We can also iterate over many resources by adding them to an array of resources.
+You can also iterate over many resources by adding them to an array of resources.
 
 ```
 "resources": [
@@ -448,9 +448,9 @@ We can also iterate over many resources by adding them to an array of resources.
 
 One way to leverage this is to implement denylist rules.
 
-For example, we may want to ensure that if someone defines a Kubernetes ConfigMap, then they cannot use it to store sensitive information such as passwords, secret keys, and access tokens.
+For example, you may want to ensure that if someone defines a Kubernetes ConfigMap, then they cannot use it to store sensitive information such as passwords, secret keys, and access tokens.
 
-We can do that and expand what we define as "sensitive information" over time by defining a group of sensitive tokens inside a denylist:
+You can do that and expand what is defined as "sensitive information" over time by defining a group of sensitive tokens inside a denylist:
 
 ```
 package rules

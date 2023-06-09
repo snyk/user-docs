@@ -7,21 +7,21 @@ snyk-iac-rules push -r docker.io/example/test bundle.tar.gz
 ```
 
 {% hint style="info" %}
-Make sure to log into your container registry first. For example, using Docker run `docker login` before running the `snyk-iac-rules push` command
+Make sure to log into your container registry first, for example, by using Docker run `docker login` before running the `snyk-iac-rules push` command.
 {% endhint %}
 
-We use the OCI registries that support the [OCI artifact specification](https://github.com/opencontainers/artifacts) and leverage [ORAS](https://github.com/deislabs/oras) to achieve that. Currently supported registries include
+Snyk uses the OCI registries that support the [OCI artifact specification](https://github.com/opencontainers/artifacts) and leverage [ORAS](https://github.com/deislabs/oras) to achieve that. Currently supported registries include
 
 * [Google Container Registry](https://cloud.google.com/container-registry)
 * [DockerHub](https://hub.docker.com)
 * [Elastic Container Registry](https://aws.amazon.com/ecr/)
 * [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
-* [JFrog Artifactory ](https://www.jfrog.com/confluence/display/JFROG/Docker+Registry)(note: OCI Artifacts are supported from Artifactory v7.11.1 and above)
+* [JFrog Artifactory ](https://www.jfrog.com/confluence/display/JFROG/Docker+Registry)Note: OCI Artifacts are supported for Artifactory v7.11.1 and above.
 * [Harbor](https://goharbor.io)
 * [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 
 {% hint style="warning" %}
-Snyk does not support insecure registries. The only protocol we support is HTTPS.
+Snyk does not support insecure registries. The only protocol Snyk supports is HTTPS.
 {% endhint %}
 
 After you have run the command, your custom rules bundle will be pushed to your OCI registry using the `latest` tag.
