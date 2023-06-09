@@ -2,7 +2,7 @@
 
 The `.snyk` policy file can be used to exclude resources from being considered IaC drift by `snyk iac describe`. See [the `.snyk` policy file doc](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) for more general information.
 
-If you need only to exclude a set of resources, use `.snyk`. If you have more complex requirements, consider using filter rules. For more information see [Filter results](filter-results.md).
+If you need only to exclude a set of resources, use `.snyk`. If you have more complex requirements, consider using filter rules. For more information see [Filter results](filter-rules.md).
 
 Create the `.snyk` file in the directory where you launch the `snyk iac describe` command, typically the root of your IaC repo.
 

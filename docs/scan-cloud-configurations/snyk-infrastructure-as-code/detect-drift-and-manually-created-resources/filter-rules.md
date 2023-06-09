@@ -1,4 +1,4 @@
-# Filter results
+# Filter rules
 
 You can use filter rules both to **describe** resources and to **ignore** resources. You can use both inclusion and exclusion logic.
 
@@ -8,11 +8,11 @@ Filters are applied on a normalized `struct` that contains the following fields:
 
 * **Type**: Type of the resource, for example, `aws_s3_bucket`
 * **Id**: Id of the resource, for example, `my-bucket-name`
-* **Attr**: Every resource attribute (See this [terraform attributes reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3\_bucket#attributes-reference) for a full list of supported attributes of a bucket.)
+* **Attr**: Every resource attribute. See this [terraform attributes reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3\_bucket#attributes-reference) for a full list of supported attributes of a bucket.
 
 **Note: If you want to filter on `Attr`, enable deep mode** in order to have access to the details of a resource.
 
-**​Examples**
+**​Examples of filter rules**
 
 ```
 # Will include only S3 bucket in the search
