@@ -253,6 +253,10 @@ Revoking this access effectively disconnects Snyk’s access to that GitHub acco
 
 In addition, you must confirm that Snyk is not enabled on any existing **Branch protection rules.**
 
+{% hint style="info" %}
+Note that branch protection is active only after a PR has been raised.
+{% endhint %}
+
 1. From the main page of your GitHub repository, go to **Settings > Branches > Branch protection rules.**
 2. Ensure there are no **Status checks found in the last week for this repository.**
 
