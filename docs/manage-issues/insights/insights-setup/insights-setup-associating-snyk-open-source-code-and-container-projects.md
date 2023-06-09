@@ -13,7 +13,7 @@ The container image is the build artifact that is deployed and running on your K
 
 Snyk can map your application from its source code to its deployed state.
 
-<figure><img src="../../../.gitbook/assets/Associating Snyk OS, Code and Container projects.png" alt="Mapping your application"><figcaption><p>Mapping your application</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Associating Snyk OS, Code and Container projects (1).png" alt="Mapping your application"><figcaption><p>Mapping your application</p></figcaption></figure>
 
 ## Use Project Tags to link Projects
 
@@ -37,7 +37,7 @@ See the examples below.&#x20;
 
 In this example, there is a single repository containing your package.json which is built into an image called image-A.
 
-<figure><img src="../../../.gitbook/assets/Example - Single repo Single image.png" alt="Example: single repo to single image"><figcaption><p>Example: single repo to single image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Example - Single repo Single image (1).png" alt="Example: single repo to single image"><figcaption><p>Example: single repo to single image</p></figcaption></figure>
 
 To map these associations, you would have the following tags setup:
 
