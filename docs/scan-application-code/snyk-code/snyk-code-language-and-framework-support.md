@@ -24,11 +24,15 @@ Snyk Code currently supports the following programming languages:
 * **Go**
 * **Java**
 * **JavaScript**
-* **PHP**
+* **PHP (currently does not support interfile)**
 * **Python**
 * **Ruby**
 * **TypeScript**
 * **Apex**
+* **Scala (Beta)**
+* **Swift (Beta)**
+* **Kotlin (Beta)**
+* **VB.NET (Beta)**
 
 {% hint style="info" %}
 Beta support exists for Kotlin, Scala and Swift. Contact Snyk for more details or with your further needs.
