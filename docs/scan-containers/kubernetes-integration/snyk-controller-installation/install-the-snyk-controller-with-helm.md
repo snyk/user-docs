@@ -36,7 +36,7 @@ Create a Kubernetes secret called `snyk-monitor`containing the Snyk **Integratio
 
 ```
 kubectl create secret generic snyk-monitor -n snyk-monitor \
-        --from-literal=dockercfg.json={} \
+        --from-file=./dockercfg.json \
         --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234 \
         --from-literal=serviceAccountApiToken=bdca4123-dbca-4343-bbaa-1313cbad4231
 ```
