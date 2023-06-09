@@ -57,6 +57,6 @@ Use the output of the `describe` command and extract its results to [update the 
 
 **Ignore a specific resource**
 
-To ignore a specific resource, you must exclude it manually by editing the `.snyk` file and adding the resource details to the `exclude` list. For more information, see [Ignore resources](ignore-resources-for-drift.md).
+To ignore a specific resource, you must exclude it manually by editing the `.snyk` file and adding the resource details to the `exclude` list. For more information, see [Ignore resources](ignore-resources.md).
 
 You are now ready to add `snyk iac describe` as a recurring cronjob to get alerts when a new resource is created or modified outside of your IaC deployment.

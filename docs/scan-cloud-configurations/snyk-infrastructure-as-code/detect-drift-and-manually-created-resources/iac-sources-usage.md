@@ -2,7 +2,7 @@
 
 ## **Supported IaC sources**
 
-At this time, the `snyk iac describe` command supports reading Terraform states, as follows:
+At this time, the `snyk iac describe` command supports reading Terraform states as follows:
 
 * Local: `--from="tfstate://terraform.tfstate"`
 * S3: `--from="tfstate+s3://my-bucket/path/to/state.tfstate"`
@@ -42,7 +42,7 @@ The `snyk iac describe` command needs read-only access. The following policy ens
 
 ## **HTTP + GitLab**
 
-The HTTP backend supports the GitLab managed Terraform state using the GitLab API.
+The HTTP backend supports the GitLab-managed Terraform state using the GitLab API.
 
 You need a GitLab repository that contains a Terraform state and an access token with the `read_api` scope.
 
@@ -55,7 +55,7 @@ snyk iac describe \
 --headers "Authorization=Bearer ${GITLAB_TOKEN}"
 ```
 
-For more information about the GitLab managed Terraform State see [GitLab-managed Terraform state](https://docs.gitlab.com/ee/user/infrastructure/terraform\_state.html) on the GitLab documentation website.
+For more information about the GitLab-managed Terraform State, see [GitLab-managed Terraform state](https://docs.gitlab.com/ee/user/infrastructure/terraform\_state.html) on the GitLab documentation website.
 
 ## **Azure Blob Storage**
 
@@ -67,6 +67,6 @@ $ export AZURE_STORAGE_KEY=...
 $ snyk iac describe --from="tfstate+azurerm://my-container/terraform.tfstate"
 ```
 
-You can find these values in your Azure console as shown in the following screenshot:
+You can find these values in your Azure console, as shown in the following screenshot:
 
-![Azure storage access keys](https://docs.driftctl.com/assets/images/azure\_storage\_account\_keys-ccb38d8792616d4376050fc6b715a6ef.png)
+<figure><img src="https://docs.driftctl.com/assets/images/azure_storage_account_keys-ccb38d8792616d4376050fc6b715a6ef.png" alt="Azure storage environment variables"><figcaption><p>Azure storage environment variables</p></figcaption></figure>
