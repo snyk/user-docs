@@ -457,7 +457,7 @@
         * [Using a local custom rules bundle](scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/use-iac-custom-rules-with-cli/using-a-local-custom-rules-bundle.md)
         * [Using a remote custom rules bundle](scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/use-iac-custom-rules-with-cli/using-a-remote-custom-rules-bundle.md)
       * [Integrating IaC custom rules within a pipeline](scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/integrating-iac-custom-rules-within-a-pipeline.md)
-      * [SDK Reference](scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
+      * [SDK reference](scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
     * [Detect drift and manually created resources](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/README.md)
       * [Get started with Snyk IaC Describe on AWS](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/get-started-with-snyk-iac-describe-on-aws.md)
       * [Configure cloud providers](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/README.md)
