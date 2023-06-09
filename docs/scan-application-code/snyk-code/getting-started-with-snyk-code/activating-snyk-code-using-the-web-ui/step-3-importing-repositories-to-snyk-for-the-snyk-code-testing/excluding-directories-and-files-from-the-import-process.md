@@ -107,4 +107,4 @@ Now we want to exclude the **app.js** and **db.js** files from the Snyk Code ana
 
 The **app.js** and **db.js** files are excluded from the retest, and therefore are not tested by Snyk Code. For this reason, they do not appear in the Code Analysis results, and now only 5 vulnerability issues are detected:
 
-<figure><img src="../../../../../.gitbook/assets/image (545) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (273) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

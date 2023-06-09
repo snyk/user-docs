@@ -10,7 +10,7 @@ The `snyk sbom` feature requires an internet connection.
 
 ## Usage
 
-`$ snyk sbom --format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json> [--file=<FILE>] [--unmanaged] [--org=<ORG_ID>] [--all-projects] [--name=<NAME>] [--version=<VERSION>] [--exclude=<NAME>[,<NAME>...]] [--detection-depth=<DEPTH>] [--prune-repeated-subdependencies|-p] [<TARGET_DIRECTORY>] [--json-file-output=<OUTPUT_FILE_PATH>]`
+`$ snyk sbom --format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json> [--file=<FILE>] [--unmanaged] [--org=<ORG_ID>] [--dev] [--all-projects] [--name=<NAME>] [--version=<VERSION>] [--exclude=<NAME>[,<NAME>...]] [--detection-depth=<DEPTH>] [--prune-repeated-subdependencies|-p] [--json-file-output=<OUTPUT_FILE_PATH>] [<TARGET_DIRECTORY>]`
 
 ## Description
 
@@ -29,7 +29,7 @@ Possible exit codes and their meaning:
 
 ## Debug
 
-Use the `-d` option to output the debug logs.
+Use the `-d` or `--debug` option to output the debug logs.
 
 ## Options
 
@@ -68,6 +68,12 @@ By default, the `sbom` command detects a supported manifest file in the current 
 ### `[--unmanaged]`
 
 Generate an SBOM for unmanaged software projects.
+
+### `[--dev]`
+
+Include development-only dependencies. Applicable only for some package managers, for example, `devDependencies` in npm or `:development` dependencies in Gemfile.
+
+Default: false, scan only production dependencies.
 
 ### `[--all-projects]`
 

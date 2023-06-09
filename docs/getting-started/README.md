@@ -18,8 +18,8 @@ If you are on an [Enterprise plan](../more-info/plans.md), see [Enterprise setup
 
 ### Tutorials
 
-* [Getting started with Snyk: Free/Team plan](../guides/getting-started-with-snyk-free-team-plan.md)
-* [Preparing for implementation: Free/Team plan](../guides/preparing-for-implementation-free-team-plan.md)
+* [Getting started with Snyk: Free/Team plan](getting-started-with-snyk-free-team-plan.md)
+* [Preparing for implementation: Free/Team plan](preparing-for-implementation-free-team-plan.md)
 * [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/)
 
 Also see:

@@ -1,15 +1,15 @@
 # Scan cloud configurations
 
-With Snyk, you can secure cloud infrastructure configurations before and after it is deployed. [Snyk Infrastructure as Code (IaC)](../scan-cloud-deployment/snyk-infrastructure-as-code/) enables you to develop secure cloud infrastructure, and [Snyk Cloud](integrated-iac-with-cloud-context/) helps you keep your cloud environment secure.
+With Snyk, you can secure cloud infrastructure configurations before and after it is deployed. [Snyk Infrastructure as Code (IaC)](snyk-infrastructure-as-code/) enables you to develop secure cloud infrastructure, and [Snyk Cloud](integrated-iac-with-cloud-context/) helps you keep your cloud environment secure.
 
 {% hint style="info" %}
 **Feature availability**\
 Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC that secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in closed beta. Please reach out to your account team with any questions.
 {% endhint %}
 
-* Scan [IaC](../scan-cloud-deployment/snyk-infrastructure-as-code/) and [cloud](integrated-iac-with-cloud-context/) resources for misconfigurations using a comprehensive set of security rules.
+* Scan [IaC](snyk-infrastructure-as-code/) and [cloud](integrated-iac-with-cloud-context/) resources for misconfigurations using a comprehensive set of security rules.
 * [Fix Cloud issues](integrated-iac-with-cloud-context/fix-cloud-issues-in-integrated-iac.md) directly in the IaC source code that was used to deploy the misconfigured Cloud resources, by linking a Cloud issue to the underlying IaC template via a SCM source code link.
-* Receive [fix advice](../scan-cloud-deployment/snyk-infrastructure-as-code/getting-started-snyk-iac.md) so you can make changes directly to code, before applications reach production.
+* Receive [fix advice](snyk-infrastructure-as-code/getting-started-snyk-iac.md) so you can make changes directly to code, before applications reach production.
 * Suppress false positives in IaC tests by applying [context from deployed infrastructure](integrated-iac-with-cloud-context/adding-cloud-context-to-your-integrated-iac-tests.md).
 * [Detect drift](snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.
 * Inspect every [cloud resource's configuration](integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md) at a given moment in time, and see the attributes that caused an issue.
