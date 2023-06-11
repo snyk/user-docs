@@ -62,6 +62,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 ### [Debian](https://www.debian.org/)
 
 * Unstable
+* Debian 13
 * Debian 12
 * Debian 11
 * Debian 10
