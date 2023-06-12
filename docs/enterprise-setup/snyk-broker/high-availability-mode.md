@@ -17,7 +17,7 @@ BROKER_HA_MODE_ENABLED=true
 BROKER_DISPATCHER_BASE_URL=https://api.snyk.io
 ```
 
-**Helm chart deployments** can set these values by enabling the mode using set arguments.
+**Helm chart deployments** can set these values by enabling the mode using set arguments. Helm chart version 1.7.0 or later is required.
 
 ```
 --set highAvailabilityMode.enabled=true
