@@ -54,3 +54,4 @@ When you set up Snyk Broker using Helm, you can set advanced parameters as expla
 * [Deploying multiple Brokers in the same namespace](advanced-setup-for-helm-chart-installation/deploying-multiple-brokers-in-the-same-namespace.md)
 * [Custom additional options for Broker Helm Chart installation](advanced-setup-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation.md)
 * [Broker rules for Snyk Code](advanced-setup-for-helm-chart-installation/broker-rules-for-snyk-code.md)
+* [High Availability Mode](../high-availability-mode.md)

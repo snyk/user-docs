@@ -45,6 +45,7 @@ When you install using Docker, follow these instructions to configure Broker as 
 * [Custom approved-listing filter with Docker](advanced-configuration-for-snyk-broker-docker-installation/custom-approved-listing-filter-with-docker.md)
 * [Mounting secrets with Docker](advanced-configuration-for-snyk-broker-docker-installation/mounting-secrets-with-docker.md)
 * [Snyk Code - Clone capability with Broker for Docker](advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
+* [High Availability Mode](../high-availability-mode.md)
 
 ## Common questions about Snyk Broker
 

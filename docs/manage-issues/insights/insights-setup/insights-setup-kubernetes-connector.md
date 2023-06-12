@@ -33,7 +33,7 @@ Follow the steps in this documentation to [create a new role](../../../snyk-admi
 
 This example illustrates creating a new role called **Kubernetes connector for Insights.**
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for Insights role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for Insights role</p></figcaption></figure>
 
 ### Step 3: Assign permissions to this role
 
@@ -41,7 +41,7 @@ Navigate to the newly created role and [select edit](../../../snyk-admin/manage-
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
 
 ### Step 4: Create a service account and assign it to a role
 

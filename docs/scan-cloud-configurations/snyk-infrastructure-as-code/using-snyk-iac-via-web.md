@@ -5,7 +5,7 @@ You can use Snyk IaC with the [Snyk Web UI](../../getting-started/quickstart/cre
 1. In your **Projects** listing, select the Project to open.
 2. Examine the information and issue cards for that Project:
 
-<figure><img src="../../.gitbook/assets/image (165) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (2).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
 The information available shows [Snyk Project ](../../manage-issues/introduction-to-snyk-projects/)information including:
 
@@ -44,9 +44,9 @@ Click **Ignore** to ignore this vulnerability. For details, see [Ignore Issues](
 
 Terraform Cloud and Helm do not show a code snippet, only the card details. There is no **Full details** button to show the preview of the full code.
 
-<figure><img src="../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
 
 ### Examples without the line with the vulnerable path
 
