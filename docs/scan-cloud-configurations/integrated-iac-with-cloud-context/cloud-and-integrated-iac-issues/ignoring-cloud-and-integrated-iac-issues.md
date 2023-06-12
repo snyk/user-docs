@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-The ignores feature is currently in **closed beta**. Contact your Snyk account team if you are interested in participating. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
+The ignores feature is currently in **open beta**. Contact your Snyk account team if you are interested in participating. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
 You can ignore a Cloud or Integrated IaC [issue](./) from the Snyk Web UI.
@@ -31,8 +31,11 @@ To ignore an issue via the Snyk Web UI:
 
     <figure><img src="../../../.gitbook/assets/snyk-cloud-ignore-settings.png" alt="Setting ignore details for a cloud issue in the Snyk Web UI"><figcaption><p>Setting ignore details for a cloud issue in the Snyk Web UI</p></figcaption></figure>
 6. Select **Confirm**.\
-   The message "Issue successfully ignored and will be applied on next scan" appears.
-7. To apply the ignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md). Or, you can wait for the ignore to be applied on the next scheduled scan.
+   The message "Issue successfully ignored and will be applied on next scan" appears.\
+   In addition, the pending ignore state is displayed in the issue panel.\
+   ![Pending ignore state displayed in issue panel](<../../../.gitbook/assets/image (2).png>)
+7. To apply the ignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md).\
+   You also can wait for the ignore to be applied on the next scheduled scan.
 8. Refresh the page in your browser to see the "Ignored" message in the side panel.
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-ignored-issue-example.png" alt="An example of an ignored cloud issue in the Snyk Web UI"><figcaption><p>An example of an ignored cloud issue in the Snyk Web UI</p></figcaption></figure>
@@ -53,8 +56,11 @@ To unignore an issue via the Snyk Web UI:
 
 1. Select the ignored issue from your Organization's Cloud tab.
 2. Select the **Unignore** button.
-3. The message "Issue successfully unignored and will be applied on next scan" appears.
-4. To apply the unignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md). Or, you can wait for the unignore to be applied on the next scheduled scan.
+3. The message "Issue successfully unignored and will be applied on next scan" appears.\
+   In addition, the unignore pending state is shown in the issue panel: The ignore applied to this issue has been deleted and will be removed on the next scan.\
+   ![Unignore pending state in the issue panel](<../../../.gitbook/assets/image (3).png>)
+4. To apply the unignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md).\
+   You also can wait for the unignore to be applied on the next scheduled scan.
 5. Refresh the page in your browser to see that the "Ignored" message in the side panel is gone.
 
 ## Editing an ignore
@@ -66,5 +72,6 @@ To edit an ignore via the Snyk Web UI:
 3. Edit the comment, the ignore expiration date, or both.
 4. Select **Confirm**.\
    The message "Ignore successfully edited and will be applied on next scan" appears.
-5. To apply the edited ignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md). Or, you can wait for the edited ignore to be applied on the next scheduled scan.
+5. To apply the edited ignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md).\
+   You can also wait for the edited ignore to be applied on the next scheduled scan.
 6. After the environment is scanned, refresh the page in your browser to see the edited ignore details.
