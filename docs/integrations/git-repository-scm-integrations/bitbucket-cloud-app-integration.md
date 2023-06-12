@@ -41,7 +41,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
     * Read and modify your repositories and their pull requests
     * Read and modify your repositories' webhooks
 
-    <figure><img src="../../.gitbook/assets/image (108) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Allow access for Snyk to Bitbucket Cloud" width="563"><figcaption><p>Allow access for Snyk to Bitbucket Cloud</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (103) (1) (1) (1) (1) (4).png" alt="Allow access for Snyk to Bitbucket Cloud" width="563"><figcaption><p>Allow access for Snyk to Bitbucket Cloud</p></figcaption></figure>
 3.  Grant access to your Snyk Organization when you're prompted.
 
     <figure><img src="../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt="Allow Bitbucket Cloud access to your Snyk Organization" width="365"><figcaption><p>Allow Bitbucket Cloud access to your Snyk Organization<br></p></figcaption></figure>
@@ -78,7 +78,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022 (1).png" alt="Snyk Projects page"><figcaption><p>Snyk Projects page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022.png" alt="Snyk Projects page"><figcaption><p>Snyk Projects page</p></figcaption></figure>
 
 ## Bitbucket integration features
 
@@ -94,7 +94,7 @@ Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-r
 
 The example that follows shows a Project-level security report.
 
-<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) with fixes for your repositories.
 

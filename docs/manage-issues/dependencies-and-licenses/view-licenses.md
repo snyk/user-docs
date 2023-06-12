@@ -20,7 +20,7 @@ These controls appear at the top of the window:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 15.50.22 (1).png" alt="Licenses tab actions"><figcaption><p>Licenses tab actions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 15.50.22.png" alt="Licenses tab actions"><figcaption><p>Licenses tab actions</p></figcaption></figure>
 
 </div>
 

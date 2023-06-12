@@ -28,7 +28,7 @@ If you select **GitHub**, fill in the details as prompted.
 
 Finally, you can [Import a Project](import-a-project.md) to scan:
 
-<figure><img src="../../.gitbook/assets/image (248) (1).png" alt="Add your first project"><figcaption><p>Add your first project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (160) (1) (1) (1) (1) (1) (1) (1).png" alt="Add your first project"><figcaption><p>Add your first project</p></figcaption></figure>
 
 Alternatively, if you want to scan your code without authenticating to your source code repository, you can select the CLI integration. This allows you to run scans from your local machine and upload results to your Organization in Snyk.
 

@@ -45,11 +45,11 @@ Consider the following scenario where hardcoded credentials are fixed using Deep
 
 Snyk highlights hardcoded credentials as a vulnerability by adding a **Fix this issue** element in the IDE.
 
-<figure><img src="../../.gitbook/assets/fix_suggestions_discovery (1).png" alt="Discovering a vulnerability in the code."><figcaption><p>Discovering a vulnerability in the code</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/fix_suggestions_discovery.png" alt="Discovering a vulnerability in the code."><figcaption><p>Discovering a vulnerability in the code</p></figcaption></figure>
 
 The issue is fixed by replacing the credentials with environment variables.
 
-<figure><img src="../../.gitbook/assets/fix_suggestions_fix_applied (1).png" alt="Fix applied with Snyk Code Fix."><figcaption><p>Fix applied with DeepCode AI Fix </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/fix_suggestions_fix_applied.png" alt="Fix applied with Snyk Code Fix."><figcaption><p>Fix applied with DeepCode AI Fix </p></figcaption></figure>
 
 You can follow through the entire sequence in this short (12-second) video.
 

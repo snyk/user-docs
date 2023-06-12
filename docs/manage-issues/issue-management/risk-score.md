@@ -10,7 +10,7 @@ The Snyk Risk Score is a single value assigned to an issue, applied by automatic
 
 Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example Project scores distributions:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
 {% hint style="info" %}
 As part of the closed beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](priority-score.md) for how to interact with it in the UI, API, and Reports.&#x20;
@@ -22,7 +22,7 @@ The Priority Score will be replaced with the Risk Score upon retest of Projects.
 
 ## About the Risk Score Model&#x20;
 
-<figure><img src="../../.gitbook/assets/matrix (2).png" alt=""><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/matrix (1) (1).png" alt=""><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
 
 The model that powers the Risk Score applies automatic risk analysis for each security issue based on the potential impact and likelihood of exploitability.
 
