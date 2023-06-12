@@ -33,7 +33,7 @@ Follow the steps in this documentation to [create a new role](../../../snyk-admi
 
 This example illustrates creating a new role called **Kubernetes connector for Insights.**
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for Insights role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for Insights role</p></figcaption></figure>
 
 ### Step 3: Assign permissions to this role
 

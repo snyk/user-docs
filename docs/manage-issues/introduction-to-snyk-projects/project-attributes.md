@@ -6,7 +6,7 @@ Project attributes are static and non-configurable fields that allow you to add 
 
 On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](project-tags.md) and filtering attributes at the Project level.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1) (1) (1) (1) (1) (1) (3).png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 
 The available Project attributes are summarized in the following table.
 
@@ -22,7 +22,11 @@ You can apply attributes to Projects and remove attributes using the Snyk API v1
 You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and -`-project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-reference.md) for the commands that support these options.
 {% endhint %}
 
-### **Apply attribute value to Project**
+{% hint style="warning" %}
+Organization admins can add an attribute to a Project. However, only Group admins can modify Project attributes in cases where attributes match a policy, because policies can only be managed by Group admins.
+{% endhint %}
+
+## **Apply attribute value to Project**
 
 1. On the Project detail page, click the **+** icon below the attribute for which you want to apply a value to the Project.
 2. Select a value from the list.
@@ -33,7 +37,7 @@ After you have selected a value for the attribute, it appears on the Project det
 
 <figure><img src="../../.gitbook/assets/gs2.png" alt="Project detail page showing attribute values applied"><figcaption><p>Project detail page showing attribute values applied</p></figcaption></figure>
 
-### **Remove attribute value**
+## **Remove attribute value**
 
 1. Select the attribute with an applied value that you want to remove from the Project.
 2. Click the **x** icon for the value you want to remove.
@@ -44,7 +48,7 @@ The attribute value is removed from the Project.
 
 <figure><img src="../../.gitbook/assets/gs4.png" alt="Project detail showing only Mobile attribute value"><figcaption><p>Project detail showing only Mobile attribute value</p></figcaption></figure>
 
-### **Filter by attribute values on the Projects listing page**
+## **Filter by attribute values on the Projects listing page**
 
 On the left of the **Projects** listing page, when Projects are grouped by none (ungrouped), select the values for the attributes that you want to filter Projects by.
 
