@@ -1,0 +1,2 @@
+# Scan CloudFormation files
+
