@@ -29,7 +29,7 @@ Low Severity Issues: 1
 
   [Low] API Gateway access logging disabled
   Info:    Amazon Api Gateway access logging is not enabled. Audit records may not be available during investigation
-  Rule:    https://snyk.io/security-rules/SNYK-CC-TF-138
+  Rule:    https://security.snyk.io/rules/cloud/SNYK-CC-TF-118
   Path:    resource > aws_api_gateway_stage[denied] > access_log_settings
   File:    aws_api_gateway_stage_logging.tf
   Resolve: Set `access_log_settings` attribute
