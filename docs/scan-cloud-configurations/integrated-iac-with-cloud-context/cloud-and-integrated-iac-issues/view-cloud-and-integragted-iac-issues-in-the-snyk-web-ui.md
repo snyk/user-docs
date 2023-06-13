@@ -104,7 +104,7 @@ The cloud issue summary panel displays the **Overview** by default, which contai
   * Title
   * Category
   * Severity
-  * ID, with a link to [fix advice](https://snyk.io/security-rules/cloud)
+  * ID, with a link to fix advice
   * Rule description (**Why to fix it** section)
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-issue-panel-overview-2.png" alt="Issue summary panel, Overview tab"><figcaption><p>Issue summary panel, Overview tab</p></figcaption></figure>

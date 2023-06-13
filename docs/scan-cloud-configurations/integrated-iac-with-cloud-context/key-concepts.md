@@ -46,7 +46,7 @@ A resource mapping represents a connection from a cloud resource to an IaC resou
 
 ## Rules
 
-A security **rule** checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems. Snyk has a set of [predefined rules](https://snyk.io/security-rules/cloud) that can be applied to integrated IaC and cloud environments.
+A security **rule** checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems. Snyk has a set of [predefined security rules](https://security.snyk.io/rules/cloud/) that can be applied to integrated IaC and cloud environments.
 
 An example rule is “S3 bucket does not have all block public access options enabled.” Snyk can scan the configuration of an AWS S3 bucket to see if it fails the rule and so is vulnerable to a data breach.
 
@@ -72,5 +72,5 @@ A **compliance control** is a specific recommendation or guideline from a compli
 
 Snyk “maps” security [rules](key-concepts.md#rules) to compliance controls, which means each rule is associated with one or more controls and each control is associated with one or more rules.
 
-For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings’” and it maps to the security rule[ SNYK-CC-00195](https://snyk.io/security-rules/cloud/SNYK-CC-00195/s3-bucket-does-not-have-all-block-public-access-options-enabled/), which is “S3 bucket does not have all block public access options enabled.”
+For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings’” and it maps to the security rule [SNYK-CC-00195](https://security.snyk.io/rules/cloud/SNYK-CC-00195), which is “S3 bucket does not have all block public access options enabled.”
 

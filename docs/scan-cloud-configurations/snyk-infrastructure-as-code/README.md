@@ -19,6 +19,6 @@ To integrate security checks for misconfigurations into your development lifecyc
 
 ## Snyk IaC security rules
 
-Snyk IaC has a comprehensive set of [predefined security rules](https://snyk.io/security-rules) based on industry benchmarks, cloud provider best practices, and threat model research from Snyk’s security intelligence team.
+Snyk IaC has a comprehensive set of predefined [security rules](https://security.snyk.io/rules/cloud/) based on industry benchmarks, cloud provider best practices, and threat model research from Snyk’s security intelligence team.
 
 You can also [build your own custom rules](custom-rules/), leveraging Open Policy Agent (OPA).

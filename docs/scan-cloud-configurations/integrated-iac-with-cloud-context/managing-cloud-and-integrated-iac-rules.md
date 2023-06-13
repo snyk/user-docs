@@ -6,9 +6,9 @@ The name of the rule settings page differs based on the products enabled for you
 
 If [Snyk Integrated IaC](./) is enabled for your Organization, you can view a list of all Snyk Cloud and IaC rules on the Organization **Settings > Snyk Cloud & IaC** page.
 
-Each rule links to detailed fix advice on the [Cloud Security Rules](https://snyk.io/security-rules/cloud) site.
+Each rule links to detailed fix advice on the [Cloud Security Rules](https://security.snyk.io/rules/cloud/) site.
 
-A rule has a **Cloud** tag if it applies to Snyk cloud context and an **IaC** tag if it applies to Snyk IaC. Most rules apply to both. Exceptions include cloud-only rules that check for missing resources, such as [SNYK-CC-00168](https://snyk.io/security-rules/cloud/SNYK-CC-00168/cloudwatch-log-metric-filter-and-alarm-should-be-set-for-config-configuration-changes/), "CloudWatch log metric filter and alarm should be set for Config configuration changes."
+A rule has a **Cloud** tag if it applies to Snyk cloud context and an **IaC** tag if it applies to Snyk IaC. Most rules apply to both. Exceptions include cloud-only rules that check for missing resources, such as [SNYK-CC-00168](https://security.snyk.io/rules/cloud/SNYK-CC-00168), "CloudWatch log metric filter and alarm should be set for Config configuration changes."
 
 <figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-settings-page (1).png" alt="The Snyk Cloud and IaC settings page"><figcaption><p>The Snyk Cloud and IaC settings page</p></figcaption></figure>
 

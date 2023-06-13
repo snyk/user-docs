@@ -23,8 +23,8 @@ Each issue card shows specific details about that issue:
 Details on the issue card include:
 
 * The severity level, for example, **H** for high, and the name of the issue, for example, **Non-encrypted S3 Bucket**
-* The **ID** of the security rule, for example, **SNYK-CC-TF-4**\
-  Click the link to view more information in the [Snyk Security Rules](https://snyk.io/security-rules).
+* The **ID** of the security rule, for example, [SNYK-CC-00172](https://security.snyk.io/rules/cloud/SNYK-CC-00172).\
+  Click the link to view more information on the [Snyk Security Rules](https://security.snyk.io/rules/cloud/).
 * A **snippet** of your code showing the exact area that is vulnerable
 * The exact **path** of the issue
 * More details, such as:

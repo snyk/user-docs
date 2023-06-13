@@ -53,7 +53,7 @@ Expanding the grouped issue and selecting a given issue opens an Issue Card, tha
 
 * The **resource** - including the location, cloud platform (such as aws) with a link to the SCM file in question for faster fixes, as well as the input type (such as `tf_hcl` for Terraform HCL).
 * The **environment** - providing details on the Integrated IaC environment that corresponds to your Git repository.
-* The **rule** that failed - including a link to Snyk's [security rules](https://snyk.io/security-rules/cloud/) documentation for additional information, such as specific remediation steps.
+* The **rule** that failed - including a link to Snyk's [security rules](https://security.snyk.io/rules/cloud/) documentation for additional information, such as specific remediation steps.
 * Why your developer should fix this particular misconfiguration.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 4.09.40 PM.png" alt="Integrated IaC issue card"><figcaption><p>Integrated IaC issue card</p></figcaption></figure>

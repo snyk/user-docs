@@ -17,7 +17,7 @@ Once your integration is set up, Snyk scans Terraform plans for each run trigger
 Snyk Terraform Cloud integration provides the following levels of customization:
 
 * Severity Threshold: Set the minimum level of severity for failure. This can be set on the integration page in Snyk.
-* Custom Severities: Set custom severities for issues which overwrite the defaults (for example, [SNYK-CC-TF-63](https://snyk.io/security-rules/SNYK-CC-TF-63)).
+* Custom Severities: Set custom severities for issues that overwrite the defaults (for example, [SNYK-CC-00172](https://security.snyk.io/rules/cloud/SNYK-CC-00172)).
 * Enforcement Level: Determine whether a failure blocks the apply or not. This setting is controlled via Terraform Cloud. For example, the `Advisory` level does not block the apply even if Snyk finds issues within the minimum severity threshold.
 
 ## Notes and limitations
