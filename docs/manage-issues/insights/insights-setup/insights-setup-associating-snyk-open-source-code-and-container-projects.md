@@ -1,29 +1,27 @@
-# Insights setup: Associating Snyk Open Source, Code & Container Projects
+# Insights setup: Associating Snyk Open Source, Code, and Container Projects
 
-After you’ve set up Insights, we can then set up the required linking for the chosen application.&#x20;
+After you have set up Insights, Snyk can set up the required linking for the chosen application.&#x20;
 
-### Overview
+To prioritize your Snyk Code and Snyk Open Source vulnerabilities, Snyk needs to understand the relationships between those imported Snyk Projects and the Container Project. Snyk uses the relationships between these Projects as a proxy to understand the composition of the container image.&#x20;
 
-To prioritize your Snyk Code and Snyk Open Source vulnerabilities, we need to understand the relationships between those imported Snyk Projects and the Container Project. We use the relationships between these Projects as a proxy to understand the composition of the container image.&#x20;
+The container image is the build artifact that is deployed and running on your Kubernetes cluster, so Snyk can map your application from its source code to its deployed state by understanding the following:
 
-The container image is the build artifact that is deployed and running on your Kubernetes cluster, so by understanding:
-
-* The link between the Source Code, Open Source Dependencies and the **image**.
+* The link between the Source Code and Open Source Dependencies and the **image**.
 * What **images** are deployed to Kubernetes and how they are configured.
 
-Snyk can map your application from its source code to its deployed state.
+
 
 <figure><img src="../../../.gitbook/assets/Associating Snyk OS, Code and Container projects.png" alt="Mapping your application"><figcaption><p>Mapping your application</p></figcaption></figure>
 
-## Use Project Tags to link Projects
+## Use Project tags to link Projects
 
 Add Snyk [Project tags](../../introduction-to-snyk-projects/project-tags.md) to all the Projects used by your application, to link these Projects together and allow Insights to represent the whole of the application that you are testing.&#x20;
 
 To associate two Projects together, add the exact same tag to both Projects. For example, add the same tag to your Snyk Open Source Projects and Snyk Container Project if they are related to each other.&#x20;
 
-See the examples below.&#x20;
+See the examples at the end of this section.&#x20;
 
-### Requirements
+## Requirements for Project tags
 
 * The same tag must be applied to the container image and Code or Open Source Projects
 * The tag must follow the specified format
@@ -31,27 +29,27 @@ See the examples below.&#x20;
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-06-06 at 23.29.29.png" alt="Project tags"><figcaption><p>Project tags</p></figcaption></figure>
 
-## Examples
+## Examples of Project tags
 
-### **Single repo to single image**
+### **Single repo to a single image**
 
 In this example, there is a single repository containing your package.json which is built into an image called image-A.
 
 <figure><img src="../../../.gitbook/assets/Example - Single repo Single image.png" alt="Example: single repo to single image"><figcaption><p>Example: single repo to single image</p></figcaption></figure>
 
-To map these associations, you would have the following tags setup:
+To map these associations, you would have the following tags set up:
 
 <table><thead><tr><th width="165">Location</th><th width="161">Asset</th><th width="213">Snyk Project Location</th><th width="238">Tag(s)</th><th>Notes</th></tr></thead><tbody><tr><td>github.com/my-team/front-end</td><td><code>package.json</code></td><td><p>Snyk Org: my-team</p><p><br>Project name: package.json</p></td><td><code>component=pkg:github/my-team/front-end@main</code></td><td>The same tag is applied to both sides</td></tr><tr><td><br></td><td>Built container image called <code>image-A</code></td><td><p>Snyk Org: my-team<br></p><p>Project name: image-A</p></td><td><code>component=pkg:github/my-team/front-end@main</code></td><td></td></tr></tbody></table>
 
-### **Multiple Repos to single image**
+### **Multiple Repos to a single image**
 
 <figure><img src="../../../.gitbook/assets/Example - Multiple repos Single image.png" alt="Example: multiple repos to single image"><figcaption><p>Example: multiple repos to single image</p></figcaption></figure>
 
 For this scenario, there are two contributing repositories.
 
-There is a front end repository containing the package.json scanned by Snyk Open Source and a back end repository containing go code scanned by Snyk Code.&#x20;
+There is a front-end repository containing the package.json scanned by Snyk Open Source and a back-end repository containing go code scanned by Snyk Code.&#x20;
 
-In order to map these associations you would have the following tags setup:\
+To map these associations, you would have the following tags set up:\
 
 
 | Location                     | Asset                                  | Snyk Project Location                                                | Tag(s)                                                                                                                               | Notes                                                                                                                                                         |
@@ -66,7 +64,7 @@ In order to map these associations you would have the following tags setup:\
 
 In this example, the application team is using a monorepo approach. The contents of the repository are built into different container images as they may be run separately.&#x20;
 
-Here we need to further differentiate the tags by scoping them even more accurately.&#x20;
+Here we need to further differentiate the tags by scoping them more accurately.&#x20;
 
 | Location                   | Asset                                                 | Snyk Project Location                                                          | Tag(s)                                                |                                                               |
 | -------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------------------- |
@@ -75,38 +73,38 @@ Here we need to further differentiate the tags by scoping them even more accurat
 
 
 
-| Location                    | Asset                                                | Snyk Project Location                                                         | Tag(s)                                               | Notes                                                        |
-| --------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
-| github.com/insights/service | `Go source code`                                     | <p>Snyk Org: my-team</p><p><br></p><p>Project name: Code</p>                  | `component=pkg:github/my-team/service/back-end@main` | The tag is further scoped by specifying /back-end at the end |
-| <p><br></p>                 | Built container image called `my-app-backend:latest` | <p>Snyk Org: my-team</p><p><br></p><p>Project name: my-app-backend:latest</p> | `component=pkg:github/my-team/service/back-end@main` |                                                              |
+| Location                   | Asset                                                | Snyk Project Location                                                         | Tag(s)                                               | Notes                                                        |
+| -------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
+| github.com/my-team/service | `Go source code`                                     | <p>Snyk Org: my-team</p><p><br></p><p>Project name: Code</p>                  | `component=pkg:github/my-team/service/back-end@main` | The tag is further scoped by specifying /back-end at the end |
+| <p><br></p>                | Built container image called `my-app-backend:latest` | <p>Snyk Org: my-team</p><p><br></p><p>Project name: my-app-backend:latest</p> | `component=pkg:github/my-team/service/back-end@main` |                                                              |
 
-### Tags Application
+## Tags application
 
 Project Tags can be applied as follows:
 
 <table><thead><tr><th width="185.33333333333331">Product</th><th width="197">Method</th><th>Project Source</th></tr></thead><tbody><tr><td>Snyk Code</td><td><ul><li>API</li></ul></td><td><p>For projects created by </p><ul><li>Git Import</li></ul></td></tr><tr><td>Snyk Open Source</td><td><ul><li>API</li><li>UI</li><li>CLI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li><li>CLI Monitor</li></ul></td></tr><tr><td>Snyk Container</td><td><ul><li>API</li><li>UI</li><li>CLI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li><li>CLI Monitor</li><li>Container Registry Integration</li></ul></td></tr></tbody></table>
 
 {% hint style="info" %}
-Snyk’s recommendation is to apply the tags through the API, because through this method the process can be automated.
+Snyk recommends applying the tags through the API because the process can be automated with this method.
 {% endhint %}
 
-### UI Example
+## UI example for Project tags
 
-<div align="left">
+<div align="center">
 
-<figure><img src="../../../.gitbook/assets/image9.png" alt="Project tags: UI example"><figcaption><p>Project tags: UI example</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uiExample.png" alt="UI example for Project tags"><figcaption><p>Project tags: UI example</p></figcaption></figure>
 
 </div>
 
-#### CLI Example
+### CLI Example
 
-**snyk monitor --project-tags=component=pkg:github/my-team/back-end@main**
+`snyk monitor --project-tags=component=pkg:github/my-team/back-end@main`
 
-#### API Example
+### API Example
 
 See the [Project Update documentation](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/update-a-project).
 
-For example:
+Example:
 
 ```
  "tags": [
@@ -118,5 +116,5 @@ For example:
 ```
 
 {% hint style="warning" %}
-To make sure you have set up your Kubernetes connector properly, navigate to the **Data** tab on the **Insights** page and check the **Image composition** section to view the data that Insights has access to.
+To ensure you have set up your Kubernetes connector properly, navigate to the **Data** tab on the **Insights** page and check the **Image composition** section to view the data  Insights has access to.
 {% endhint %}

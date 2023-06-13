@@ -542,7 +542,7 @@
       * [Insights setup: User Permissions](manage-issues/insights/insights-setup/insights-setup-user-permissions.md)
       * [Insights setup: Kubernetes connector](manage-issues/insights/insights-setup/insights-setup-kubernetes-connector.md)
       * [Insights setup: Image scanning](manage-issues/insights/insights-setup/insights-setup-image-scanning.md)
-      * [Insights setup: Associating Snyk Open Source, Code & Container Projects](manage-issues/insights/insights-setup/insights-setup-associating-snyk-open-source-code-and-container-projects.md)
+      * [Insights setup: Associating Snyk Open Source, Code, and Container Projects](manage-issues/insights/insights-setup/insights-setup-associating-snyk-open-source-code-and-container-projects.md)
   * [Reporting](manage-issues/reporting/README.md)
     * [Getting started with Snyk Reports](manage-issues/reports/next-gen-reporting/getting-started-with-snyk-reports.md)
     * [Available Snyk Reports](manage-issues/reports/next-gen-reporting/available-snyk-reports.md)

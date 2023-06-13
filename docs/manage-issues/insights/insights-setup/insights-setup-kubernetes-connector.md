@@ -71,9 +71,9 @@ To make sure you have set up your Kubernetes connector properly, navigate to the
 
 ## FAQ
 
-#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/) **(also called Snyk Controller) and the Kubernetes connector for Insights?**
+#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector for Insights?**
 
-The Kubernetes monitor extracts images from a Kubernetes cluster’s workloads and scans them for vulnerabilities. The Kubernetes connector for Insights extracts workload configurations from a Kubernetes cluster.
+The Kubernetes **monitor** extracts images from a Kubernetes cluster’s workloads and scans them for vulnerabilities. The Kubernetes **connector** for Insights extracts workload configurations from a Kubernetes cluster.
 
 #### **For Insights to work, do I need both or only the Kubernetes connector for Insights?**
 

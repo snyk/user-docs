@@ -33,7 +33,7 @@ We recommend picking one application to start with, and then expanding from ther
 ## Process overview
 
 1. [User Permissions](insights-setup-user-permissions.md): Granting users the Group Viewer role
-2. [Kubernetes Connector](insights-setup-kubernetes-connector.md): Create the required Organization, roles, permissions, and deploy the agent
+2. [Kubernetes Connector](insights-setup-kubernetes-connector.md): Create the required Organization, roles, permissions, and deploy the agent. _Note: this Kubernetes Connector is separate from the Kubernetes Integration (snyk-monitor)_
 3. [Image scanning](broken-reference): Scan your images properly so Insights has access to the right data
 4. [Associating Snyk Open Source, Code & Container Projects](insights-setup-associating-snyk-open-source-code-and-container-projects.md): set up the required linking for the application you want to use Insights on.
 
