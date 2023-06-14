@@ -9,10 +9,6 @@ Snyk provides actionable fix advice for vulnerabilities in your open source libr
 * [Automatic pull / merge requests (PRs / MRs)](./#automatic-pull-merge-requests).
 * [Manual pull / merge requests](./#manual-pull-merge-requests-for-a-project-code).
 
-{% hint style="info" %}
-See[ Language support for Fix Pull Request and Merge Requests](broken-reference).
-{% endhint %}
-
 ## **Automatic pull / merge requests**
 
 For projects imported via an SCM (Source Code Manager), Snyk offers the following types of automated pull / merge requests:
