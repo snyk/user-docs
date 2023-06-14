@@ -32,3 +32,7 @@ You can test your Code Projects using Snyk CLI with regular commands and options
 IDE integrations with Snyk support custom rules as long as you have the [.snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.&#x20;
 
 :link: [Using Snyk Code via the IDE](../using-snyk-code-via-ide.md)
+
+## What's next?
+
+To learn from an end-to-end example, see the following Snyk Training course: [Snyk Code Custom Rules](https://training.snyk.io/learn/course/snyk-code-custom-rules/main/snyk-code-custom-rules).
