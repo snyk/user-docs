@@ -7,6 +7,7 @@
 * A Snyk account
 * Self-enabled Broker integration using the Snyk API, or enabled by contacting [Snyk Support](https://support.snyk.io/hc/en-us)
 * A unique UUID token called Broker token. See [Generate credentials in the target application for Snyk Broker](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker)
+* An SCM token or password. See the [integrations documentation](../../integrations/) for each SCM for information on how to obtain the token.
 * Docker configured to pull images from Docker Hub
 
 {% hint style="warning" %}
