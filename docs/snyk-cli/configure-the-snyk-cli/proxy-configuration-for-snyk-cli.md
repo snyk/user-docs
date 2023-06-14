@@ -1,9 +1,5 @@
 # Proxy configuration for Snyk CLI
 
-{% hint style="info" %}
-Proxy authentication for Snyk CLI is currently available on Windows only. Support for other operating systems will be available later.
-{% endhint %}
-
 ## General proxy configuration
 
 When you use the Snyk CLI behind a proxy, you must provide the proxy configuration by using the following environment variables:
@@ -22,7 +18,7 @@ For more information, see [Configure the Snyk CLI to connect to the Snyk API](co
 
 By default Snyk CLI tries to detect and apply proxy authentication.
 
-If the proxy server requests proxy authentication (as indicated by a `PROXY-AUTHENTICATE` response header) and both server and CLI support the same authentication mechanism, the CLI authenticates as the user who is currently logged in to the operating system (SSO).
+If the proxy server requests proxy authentication (as indicated by a `PROXY-AUTHENTICATE` response header), and both server and CLI support the same authentication mechanism, the CLI authenticates as the user who is currently logged in to the operating system (SSO).
 
 This is supported for the following authentication mechanism:
 
@@ -32,9 +28,25 @@ This is supported for the following authentication mechanism:
 
 ## Configuration on Windows operating systems
 
-On Windows operating systems (OS), Kerberos and NTLM authentication mechanisms are provided by the OS itself and available for all domain users.
+On Windows operating systems (OS), the Kerberos and NTLM authentication mechanisms are provided by the OS itself and available for all domain users.
 
 Snyk CLI does not require any specific configuration.
+
+## Configuration on non-Windows operating systems (Linux, macOS)
+
+On non-Windows operating systems, Snyk CLI also supports SSO but, in addition, must be configured with the following environment variables.
+
+```bash
+KRB5_CONFIG # default "/etc/krb5.conf"
+KRB5CCNAME # default "FILE:/tmp/krb5cc_<UserUID>"
+```
+
+The use of these variables follows the MIT Kerberos implementation:
+
+* [KRB5\_CONFIG](https://web.mit.edu/kerberos/krb5-devel/doc/admin/conf\_files/krb5\_conf.html) - Kerberos configuration file
+* [KRB5CCNAME](https://web.mit.edu/kerberos/krb5-1.12/doc/basic/ccache\_def.html) - Kerberos credential cache
+  * Currently, the only supported credential cache type (`ccache` types) is **FILE.**
+  * It is important to note that the cache file cannot be updated by the CLI. This means that the cache file must be updated externally, for example, by running [kinit](https://web.mit.edu/kerberos/krb5-1.12/doc/user/user\_commands/kinit.html).,
 
 ## Disable proxy authentication
 
