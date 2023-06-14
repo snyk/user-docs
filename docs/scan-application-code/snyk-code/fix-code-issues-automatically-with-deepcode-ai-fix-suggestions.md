@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 DeepCode AI Fix Suggestions is in [Open Beta](../../more-info/snyk-feature-release-process.md) and fully supports Javascript frameworks.
 
-:link: See [Enable DeepCode AI Fix Suggestions](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#enable-snyk-code-fix-suggestions).
+:link:  [Enable DeepCode AI Fix Suggestions](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#enable-snyk-code-fix-suggestions)
 {% endhint %}
 
 Fix the source code's security issues and quality flaws through an automated flow. DeepCode AI Fix Suggestions calculates the most suitable solution for your issues and applies it automatically.
@@ -69,4 +69,4 @@ The data collection process is thorough and includes the following:
 
 The training data is ensured to be of the highest quality to optimize the performance of the LLM.
 
-:link:See [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md).
+:link: [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md)
