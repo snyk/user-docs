@@ -149,7 +149,7 @@ Snyk can build a dependency tree with or without a lockfile
   * Broad support across programming languages and package managers
   * Ignore capabilities
 
-Also see [Snyk for npm](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-javascript/snyk-for-npm.md).
+Also see [Snyk for npm](broken-reference).
 
 #### Yarn
 
@@ -185,7 +185,7 @@ Control behavior when the lockfile and package file are in sync, can be done usi
 * WebUI for Git Scans:
   * **Settings > Language > Javascript**
 
-Also see [Snyk for Yarn](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-javascript/snyk-for-yarn.md).
+Also see [Snyk for Yarn](broken-reference).
 
 ### Snyk integrations common usage patterns
 

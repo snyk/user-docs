@@ -33,7 +33,7 @@ You can also send notifications for an Organization to a designated [Slack chann
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48) (2).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
 
 </div>
 
@@ -51,7 +51,7 @@ To navigate to the Group level notification settings:
 2. Select the Settings icon.
 3. Select **Notifications**.
 
-<figure><img src="../.gitbook/assets/image (155) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Set Group-level notifications"><figcaption><p>Set Group-level notifications</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (349) (1).png" alt="Set Group-level notifications"><figcaption><p>Set Group-level notifications</p></figcaption></figure>
 
 #### Issue alert emails
 

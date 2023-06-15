@@ -12,7 +12,7 @@ Different methods result in different Project groupings in the Project tab.
 
 Snyk groups images and the applications found in the image. However, Snyk CLI does not use image tags for grouping, so Snyk **will not do sub-grouping** for the different image tags. Thus images from the same repo with different image tags are all grouped.
 
-<figure><img src="../../.gitbook/assets/image (152).png" alt="Images with different image tags in one group"><figcaption><p>Images with different image tags in one group</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt="Images with different image tags in one group"><figcaption><p>Images with different image tags in one group</p></figcaption></figure>
 
 ## Container Registry Integration
 

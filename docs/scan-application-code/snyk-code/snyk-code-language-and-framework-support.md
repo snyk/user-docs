@@ -62,14 +62,7 @@ Most framework are supported "out of the box" as Snyk Code only need to be able 
 
 ### JavaScript frameworks
 
-{% hint style="info" %}
-These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
-{% endhint %}
-
-* **React**: Open-source, front end, JavaScript library for building user interfaces or UI components for websites and mobile applications.
-* **Vue.js**: Open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.
-* **Express**: Back-end web application framework for Node.js, released as free and open-source software. It has been called the de facto standard server framework for Node.js.
-* **jQuery:** A fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, ...
+:link:[JavaScript frameworks supporting code analysis](../supported-languages-and-frameworks/javascript.md#code-analysis)
 
 ### Java frameworks
 
