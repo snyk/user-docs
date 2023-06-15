@@ -116,5 +116,5 @@ Example:
 ```
 
 {% hint style="warning" %}
-To ensure you have set up your Kubernetes connector properly, navigate to the **Data** tab on the **Insights** page and check the **Image composition** section to view the data  Insights has access to.
+To ensure you have set up your Kubernetes connector properly, navigate to the **Set up Insights** tab on the **Insights** page and check the **Image composition** section to view the data Insights has access to.
 {% endhint %}

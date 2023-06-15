@@ -31,5 +31,5 @@ For details, see [Kubernetes integration](../../../scan-containers/kubernetes-in
 The names of the container images will match, as the deployed image is scanned by Snyk and created as a Project.
 
 {% hint style="warning" %}
-To ensure you have set up your Kubernetes connector properly, navigate to the **Data** tab on the **Insights** page and check the **Image coverage** section to view the data that Insights has access to.
+To ensure you have set up your Kubernetes connector properly, navigate to the **Set up Insights** tab on the **Insights** page and check the **Image coverage** section to view the data that Insights has access to.
 {% endhint %}
