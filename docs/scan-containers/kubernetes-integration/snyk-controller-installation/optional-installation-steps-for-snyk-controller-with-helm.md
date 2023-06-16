@@ -94,7 +94,7 @@ For example, you can run the following command on installation to provision and 
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-              --namespace snyk-monitor \
+             --namespace snyk-monitor \
              --set pvc.enabled=true \
              --set pvc.create=true \
              --set pvc.name="snyk-monitor-pvc"

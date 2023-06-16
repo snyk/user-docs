@@ -254,12 +254,16 @@ If you are having any trouble testing your Gradle Projects with Snyk, collect th
 
 After you select a Project for import, Snyk builds the dependency tree based on the `pom.xml` file.
 
+{% hint style="info" %}
+Only production dependencies in the `compile` and `runtime` scopes are included.
+{% endhint %}
+
 ## Git services for Gradle Projects
 
 After you select a Project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
 
 {% hint style="info" %}
-Only dependencies in the following configurations are included - `api`, `compile`, `classpath`, `implementation`, `runtime`, `runtimeOnly`.
+Only production dependencies in the `api`, `compile`, `classpath`, `implementation`, `runtime` and `runtimeOnly` configurations are included.
 {% endhint %}
 
 If a lockfile is present, Snyk uses the lockfile to more accurately resolve the final version of dependencies used in the Project.

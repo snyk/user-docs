@@ -8,6 +8,10 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 * In certain situations, your excluded files may not be excluded if there is an invalid`.snyk` file. In these situations, the scan continues without the`.snyk` file.
 {% endhint %}
 
+{% hint style="info" %}
+Consider excluding directories and files only if you do not publish or compile them into production. If a trace goes through an excluded file or directory with existing vulnerabilities, Snyk might miss potential issues.
+{% endhint %}
+
 You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../cli-for-snyk-code/testing-your-source-code-via-the-cli.md), by creating the `.snyk` file in your tested repository.
 
 ## **The Exclusion Syntax of the .snyk File**
@@ -26,8 +30,8 @@ exclude:
 </strong>            - source/directory_name
         # Exclude any file with a specific extension in the specific directory. For example, - tests/.js
 <strong>            - directory_name/.ext
-</strong>        # Exclude files with a specific ending in any directory. For example, - “/.spec.js”
-            - "/.ending.ext"
+</strong>        # Exclude files with a specific ending in any directory. For example, - “*.spec.js”
+            - "*.ending.ext"
         # Exclude files in directories that have the same name with a different ending, like “test” and “tests”. The last character before the question mark is optional. For example, - tests?/
             - directory_name?/
         # Exclude all files and directories in a specific directory. For example, - tests/
@@ -39,6 +43,9 @@ exclude:
 * The path in the rule should be relative to the `.snyk` file location.
 * All rules must have a preceding dash to be valid: - \<Exclusion\_rule>
 * For rules beginning with special characters and patterns (such as an asterisk character `*)`, you must wrap them in double quotes (`" "`). This ensures they are treated as a single entity, avoiding potential misinterpretation or unintended behavior. For example, `"*/src"`
+
+
+
 * Indentations –
   * When using the syntax in the `.snyk` YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
   * Do NOT use tabs for indentation. Use only spaces for indentation.

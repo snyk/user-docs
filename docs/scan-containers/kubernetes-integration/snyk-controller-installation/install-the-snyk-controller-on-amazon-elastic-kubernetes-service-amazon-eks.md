@@ -10,25 +10,9 @@ These installation steps **work best** for EKS and ECR with the same AWS account
 
 Installing the Snyk Controller enables you to import and test your running EKS workloads and identify vulnerabilities in their associated images and configurations that might make those workloads less secure. After the workload is imported, Snyk continues to monitor the workload, identifying additional security issues as new images are deployed and the workload configuration changes.
 
-Follow these instructions to **configure Snyk Controller to pull and scan private images from ECR**.
+This page provides instructions for configuring Snyk Controller to pull and scan private images from ECR.
 
-## Updating from V1 to V2 (existing installations only)
-
-If you are an existing customer and are updating your Snyk Controller to V2:
-
-* Create a service account token as described on the [prerequisites page](prerequisites-for-snyk-controller.md). This token will be stored in the `snyk-monitor` secret.
-* Delete your existing `snyk-monitor` secret:
-
-```shell
-kubectl delete secret snyk-monitor -n snyk-monitor
-```
-
-* Follow the instructions in the [Installation steps](install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md#installation-steps) section. To get the latest Helm chart version, make sure you run the following command:
-
-<pre><code><strong>helm repo add snyk-charts https://snyk.github.io/kubernetes-monitor --force-update
-</strong></code></pre>
-
-## Installation steps for Amazon EKS
+Follow these steps to install Amazon EKS.
 
 1\. Access your Kubernetes environment and run the following command in order to add the Snyk Charts repository to Helm:
 
