@@ -27,13 +27,17 @@ The process to connect Snyk with your GitHub Enterprise repositories includes th
    \- admin:repo\_hooks (read & write)\
    \
    If you are using fine-grained personal access tokens, the following scope is required:\
-   \- Account permissions: None\
-   \- Admin: Read-only \
+   \
+   Repository Permissions\
+   \- Administration: Read-only \
    \- Commit Status: Read and write \
    \- Contents: Read and write \
    \- Metadata: Read-only \
    \- Pull requests: Read and write \
    \- Webhooks: Read and write \
+   \
+   Organization Permissions\
+   \- Members: Read-only\
    \
    See the [GitHub Enterprise documentation](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token) for details.
 3. **Authorize** your personal access token and Enable SSO:
