@@ -141,9 +141,16 @@ When running Jenkins, use the additional argument:
 
 ### IDEs URLs
 
-Snyk IDE extensions have similar modifiable options to the CLI and need to be configured to use the appropriate endpoint. In the extensions settings for Snyk in your IDE, set the **Custom Endpoint** parameter to the appropriate value:
+Snyk IDE extensions have similar modifiable options to the CLI and need to be configured to use the appropriate endpoint. In the extensions settings for Snyk in your IDE, set the **Custom Endpoint** parameter to the appropriate value for EU and AU as follows.
 
-#### **EU**
+{% hint style="warning" %}
+Ensure you are using the latest version of IDE plugins. The following specifies the minimum version required:\
+VSCode - 1.2.18\
+Visual Studio - 1.1.21\
+IntelliJ - 2.4.32
+{% endhint %}
+
+#### EU
 
 `https://app.eu.snyk.io/api`
 
@@ -152,12 +159,6 @@ Snyk IDE extensions have similar modifiable options to the CLI and need to be co
 `https://app.au.snyk.io/api`
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-04-20 at 3.25.46 PM.png" alt="Configuring the AU endpoint in Visual Studio Code"><figcaption><p>Configuring the AU endpoint in Visual Studio Code</p></figcaption></figure>
-
-For Snyk Code, ensure the latest version of IDE plugins are in use. The following specifies the minimum version required:
-
-VSCode - 1.2.18\
-Visual Studio - 1.1.21\
-IntelliJ - 2.4.32
 
 ### Broker URLs
 
