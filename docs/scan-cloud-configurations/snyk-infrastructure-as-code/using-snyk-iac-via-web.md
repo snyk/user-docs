@@ -5,7 +5,7 @@ You can use Snyk IaC with the [Snyk Web UI](../../getting-started/quickstart/cre
 1. In your **Projects** listing, select the Project to open.
 2. Examine the information and issue cards for that Project:
 
-<figure><img src="../../.gitbook/assets/image (385).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
 The information available shows [Snyk Project ](../../manage-issues/introduction-to-snyk-projects/)information including:
 
@@ -52,6 +52,6 @@ Terraform Cloud and Helm do not show a code snippet, only the card details. Ther
 
 If Snyk can not identify the exact line of the vulnerable path in the file, Snyk does not show a code snippet, only an info message and the card details. If possible, Snyk shows the **Full details** button so you can see a preview of the full code.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07 (1).png" alt="Card detils with info message"><figcaption><p>Card detils with info message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png" alt="Card detils with info message"><figcaption><p>Card detils with info message</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17.png" alt="Full details display"><figcaption><p>Full details display</p></figcaption></figure>

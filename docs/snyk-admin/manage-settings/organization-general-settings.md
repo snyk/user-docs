@@ -42,7 +42,7 @@ Use these functions to define Organization-wide ignore settings.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (7) (4).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
 
 </div>
 
