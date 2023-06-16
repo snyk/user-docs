@@ -35,7 +35,7 @@ Snyk Code currently supports the following programming languages:
 * **VB.NET (Beta)**
 
 {% hint style="info" %}
-Beta support exists for Kotlin, Scala and Swift. Contact Snyk for more details or with your further needs.
+Beta support exists for Kotlin, Scala, Swift and VB.NET. Contact Snyk for more details or with your further needs.
 {% endhint %}
 
 ## Language type and framework support
@@ -52,7 +52,11 @@ For a full list of Vulnerability Types/Security Rules that are applied to each s
 
 The following are the supported extensions:
 
-* ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, CS, php, xml, jsp, jspx, cls, c, cc, cpp, cxx, h, hpp, hxx
+* apex, trigger, ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, CS, php, xml, jsp, jspx, cls, c, cc, cpp, cxx, h, hpp, hxx
+
+If enabled via the Beta program, the following extensions may be scanned as well:
+
+* kt, scala, swift, vb
 
 ### Framework support
 
