@@ -41,7 +41,7 @@ To remove pending invites:
 1. On the **Members** page, below the search bar, click **Revoke pending invites** (see image below). Note: Link appears when there is at least one pending invite.
 2. In the **Pending invites in \_your organization's name**\_ modal that appears, click the ![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to a user's name to cancel their invite.
 
-![Revoke pending invites](<../../.gitbook/assets/revoke-pending-invites-example (1).png>)
+![Revoke pending invites](../../.gitbook/assets/revoke-pending-invites-example.png)
 
 ### Change member roles
 
@@ -53,7 +53,7 @@ To change the role of a member, click on the member's **Role** entry, and use th
 For Enterprise plan customers who created custom member roles, Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error, while trying to update the role of a member, invite a new member or add an existing member with a role that has more privileges than the logged in user.
 {% endhint %}
 
-![](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
+![](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png>)
 
 ### Delete members
 

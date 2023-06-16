@@ -15,7 +15,7 @@ In the Snyk Web UI, go to the Terraform Cloud integration settings page for your
 
 Now navigate to [Terraform Cloud](https://app.terraform.io) in the organization global settings:
 
-![Terraform Cloud Settings](<../../../.gitbook/assets/image (126) (1) (2).png>)
+![Terraform Cloud Settings](<../../../.gitbook/assets/image (192).png>)
 
 1. Go to the run tasks settings for your TFC organization:\
    `https://app.terraform.io/app/{YOUR_TFC_ORG}/settings/tasks`

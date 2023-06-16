@@ -113,10 +113,6 @@ To test your project for vulnerabilities, run:
 $ snyk test --unmanaged
 ```
 
-{% hint style="warning" %}
-If you scan a Linux project on Windows, make sure the repository is cloned with Linux line endings. See the [Known issues](snyk-for-c-c++.md#known-issues-with-snyk-for-c-c++) section for details.
-{% endhint %}
-
 ### Displaying dependencies
 
 To display dependencies, use the `--print-deps` option:

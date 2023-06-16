@@ -10,7 +10,7 @@ Snyk supports the following languages&#x20;
 * [Elixir](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
 * [Go](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang.md)
 * [Java and Kotlin](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md)
-* [JavaScript](javascript.md)
+* [JavaScript](javascript/)
 * [PHP](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
 * [Python](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)&#x20;
 * [Ruby](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)

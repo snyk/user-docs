@@ -20,7 +20,7 @@ To set the integration up, you must generate a Slack webhook. You can do this ei
 
 Once you have generated your Slack Webhook URL, go to your **Manage Organization** settings and enter the URL.
 
-<figure><img src="../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
 
 {% hint style="danger" %}
 Currently, only webhooks created with Slack Apps are supported; webhooks created with Slack Workflows are not currently supported.
