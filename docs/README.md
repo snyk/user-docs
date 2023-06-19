@@ -6,8 +6,8 @@ See [Snyk user hub](https://snyk.io/user-hub/) to access all Snyk knowledge reso
 
 #### Get started with Snyk
 
-| <p>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</p> | <p><a href="guides/">Guides</a><br>Read step-by-step rollout guidance</p> |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| <p>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</p> |
+| ------------------------------------------------------------------------------------------------ |
 
 #### Connect with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
