@@ -16,7 +16,7 @@ To know when your last 24-hour window was kicked off, check the project page for
 
 Pull requests for new vulnerabilities are enabled by default for new integrations.
 
-See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for full details of supported integrations.
+See the [Git repository SCM integrations](../../../integrations/git-repository-scm-integrations/) pages for details of supported integrations.
 
 ## Enable or disable pull requests for an integration
 
