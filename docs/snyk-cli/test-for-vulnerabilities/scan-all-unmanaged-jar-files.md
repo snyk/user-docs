@@ -6,6 +6,14 @@ The CLI identifies the package name, version, and vulnerabilities only if the pa
 
 ## Scanning all JAR files in a single folder and scanning each JAR file individually
 
+{% hint style="warning" %}
+**Deprecated method**
+
+Starting with Snyk CLI 1.1176.0, you can scan all subfolders natively using the `--scan-all-unmanaged`option.
+
+:link: [Snyk CLI Test options](../commands/test.md#scan-all-unmanaged)
+{% endhint %}
+
 Use the `snyk test --scan-all-unmanaged` CLI command to scan all JAR files in a single folder.
 
 You can also scan each JAR file individually using the `snyk test --scan-unmanaged --file=/path/to/file` command.
