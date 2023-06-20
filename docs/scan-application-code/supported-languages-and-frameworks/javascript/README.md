@@ -11,7 +11,6 @@ You might encounter false positives or false negatives for partially supported f
 Snyk Code fully supports the following frameworks:
 
 * **React**
-* **Angular**
 * **Vue.js**
 * **Express**
 * **jQuery**
