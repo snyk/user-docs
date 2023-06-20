@@ -1,6 +1,21 @@
 # Available Snyk Reports
 
-## Issues Detail Report
+Reports available include:
+
+* [Issues Detail report](available-snyk-reports.md#issues-detail-report)
+* [Issues Summary report](available-snyk-reports.md#issues-summary-report)
+* [Vulnerabilities Detail report](available-snyk-reports.md#vulnerabilities-detail-report)
+* [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
+
+Select **Change Report** to change the report displayed:
+
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/select-report.png" alt="Select Change Report to display different reports" width="563"><figcaption><p>Select Change Report to display different reports</p></figcaption></figure>
+
+</div>
+
+## Issues Detail report
 
 The Issues Detail report displays all known issues in all of your Projects that are being monitored by Snyk. The report gives details about each issue and which of your Projects are affected, and provides links to fix information.
 
@@ -12,9 +27,17 @@ Quick aggregations are available by categories including **Severity**, **Product
 
 Individual issues are then displayed in a table. You can modify columns as needed.
 
-## Issues Summary Report
+## Issues Summary report
 
-The Issues Summary report highlights the value that Snyk is providing by enabling both identification of issues and resolution of issues. The report provides a glimpse into how well teams are optimizing use of the Snyk platform for their workflow, and provides a means to measure and improve security.
+The Issues Summary report highlights the value that Snyk is providing by enabling both identification of issues and resolution of issues.&#x20;
+
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/issues-summary-report.png" alt="Issues Summary report"><figcaption><p>Issues Summary report</p></figcaption></figure>
+
+</div>
+
+The report provides a glimpse into how well teams are optimizing use of the Snyk platform for their workflow, and provides a means to measure and improve security.
 
 This report enables you to easily understand the current state and trends of the highest security risk items. This report also provides a quick view into where risk is coming from and where remediation efforts are most and least effective.
 
@@ -26,18 +49,28 @@ Scroll down for additional charts that show trend information in greater detail.
 
 Key metrics are then broken down to point out information at the Organization or Project level. You can drill down to see what new and resolved issues were introduced during the date range selected.
 
-## Vulnerabilities Detail Report
+## Vulnerabilities Detail report
 
-The Vulnerabilities Detail report is similar to the Issues Detail report, but shows issues grouped by Snyk Problem ID ([see Snyk Vulnerability DB](https://security.snyk.io/vuln)). You can easily see how many instances of a vulnerability exist and how many projects are affected. Use this report to understand which vulnerabilities are most prevalent for both resolution and prevention use cases.
+The Vulnerabilities Detail report is similar to the Issues Detail report, but shows issues grouped by Snyk Problem ID ([see Snyk Vulnerability DB](https://security.snyk.io/vuln)).&#x20;
 
-## Dependencies and Licenses tabs relocated
+<div align="left">
 
-For customers who opted into Next Gen Reporting, the Dependencies and Licenses views remain available but in a new location in the Snyk App, in the Snyk navigation menu under **Dependencies**.
+<figure><img src="../../../.gitbook/assets/vuln-details-report.png" alt="Vulnerability Details report"><figcaption><p>Vulnerability Details report</p></figcaption></figure>
 
-## Cloud Compliance Issues Report
+</div>
+
+You can easily see how many instances of a vulnerability exist and how many projects are affected. Use this report to understand which vulnerabilities are most prevalent for both resolution and prevention use cases.
 
 {% hint style="info" %}
-All users with access to Next Gen Reporting will see the Cloud Compliance Issues report. If [Snyk Cloud](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/) or [Snyk Integrated IaC](broken-reference) or both are not enabled, or if they are enabled but no [environments](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/key-concepts.md#environments) have issues, you will see the following message: “Snyk doesn’t detect any issues in your Organization that map to supported compliance standards. This is a capability for Snyk Cloud and Snyk IaC (integrated) customers. Please reach out to your account team if you are interested.”
+#### Dependencies and Licenses information
+
+To view Dependencies and Licenses information, select the **Dependencies** menu option. See [Dependencies and licenses](../../dependencies-and-licenses/) for details.
+{% endhint %}
+
+## Cloud Compliance Issues report
+
+{% hint style="info" %}
+This report is only available if you have [Snyk Cloud](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/) or [Snyk Integrated IaC](broken-reference) enabled.
 {% endhint %}
 
 The Cloud Compliance Issues report shows[ cloud and integrated IaC issues](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/key-concepts.md#issues) for an entire Organization, organized by [compliance standard](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/key-concepts.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
