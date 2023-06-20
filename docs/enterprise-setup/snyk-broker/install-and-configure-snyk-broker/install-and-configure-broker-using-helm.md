@@ -55,3 +55,4 @@ When you set up Snyk Broker using Helm, you can set advanced parameters as expla
 * [Custom additional options for Broker Helm Chart installation](advanced-configuration-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation.md)
 * [Broker rules for Snyk Code](advanced-configuration-for-helm-chart-installation/broker-rules-for-snyk-code.md)
 * [High Availability Mode](../high-availability-mode.md)
+* [Large Manifest files rule addition](advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup.md)
