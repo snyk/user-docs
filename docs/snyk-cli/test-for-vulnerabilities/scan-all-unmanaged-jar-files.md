@@ -1,6 +1,6 @@
 # Scan all unmanaged JAR files
 
-The Snyk CLI can scan unmanaged JAR files in [Java applications](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md) to identify which open source package they contain.
+The Snyk CLI can scan unmanaged JAR files in [Java applications](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md) to identify which opensource package they contain.
 
 The CLI identifies the package name, version, and vulnerabilities only if the package is available in Maven Central, and the JAR file hash matches the hash in Maven Central.
 
@@ -11,7 +11,7 @@ The CLI identifies the package name, version, and vulnerabilities only if the pa
 
 Starting with Snyk CLI 1.1176.0, you can scan all subfolders natively using the `--scan-all-unmanaged`option.
 
-:link: [Snyk CLI Test options](../commands/test.md#scan-all-unmanaged)
+For more information, see the [Snyk CLI Test options](../commands/test.md#scan-all-unmanaged).
 {% endhint %}
 
 Use the `snyk test --scan-all-unmanaged` CLI command to scan all JAR files in a single folder.
@@ -109,6 +109,6 @@ SET REMOTE_REPO_URL=%2
 for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remote-repo-url=%REMOTE_REPO_URL% --file=%%f --project-name=%%f
 ```
 
-Here is example in the Snyk UI of using these scripts with `REMOTE_REPO_URL` set to "econnect".
+Here is an example in the Snyk UI of the result of using these scripts with `REMOTE_REPO_URL` set to "econnect".
 
 <figure><img src="../../.gitbook/assets/untitled (1).png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>

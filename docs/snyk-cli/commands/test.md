@@ -229,7 +229,7 @@ Snyk reports test results per pom.xml file.
 
 ### `--scan-unmanaged`
 
-To monitor individual JAR, WAR, and AAR files, you need to use the following:&#x20;
+To test individual JAR, WAR, and AAR files, you need to use the following:&#x20;
 
 ```
 --scan-unmanaged --file=<JAR_FILE_NAME>
@@ -243,7 +243,7 @@ Auto-detect Maven, JAR, WAR, and AAR files recursively from the current folder.&
 --scan-all-unmanaged 
 ```
 
-Note: Custom-built JAR files, even with open source dependencies, are not supported.
+**Note**: Custom-built JAR files, even with open source dependencies, are not supported.
 
 ## Options for Gradle projects
 
