@@ -1,36 +1,34 @@
 # Scan all unmanaged JAR files
 
-The Snyk CLI can scan unmanaged JAR files in [Java applications](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md) to identify which opensource package they contain.
+The Snyk CLI can scan unmanaged JAR files in [Java applications](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md) to identify which open-source package they contain.
 
 The CLI identifies the package name, version, and vulnerabilities only if the package is available in Maven Central, and the JAR file hash matches the hash in Maven Central.
 
+**Prerequisite:** You must install a [supported version](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md#supported-versions) of Maven to scan unmanaged JAR files.
+
 ## Scanning all JAR files in a single folder and scanning each JAR file individually
 
-{% hint style="warning" %}
-**Deprecated method**
+To scan each JAR file individually, use the following command:
 
-Starting with Snyk CLI 1.1176.0, you can scan all subfolders natively using the `--scan-all-unmanaged`option.
+`snyk test --scan-unmanaged --file=/path/to/file`
 
-For more information, see the [Snyk CLI Test options](../commands/test.md#scan-all-unmanaged).
-{% endhint %}
-
-Use the `snyk test --scan-all-unmanaged` CLI command to scan all JAR files in a single folder.
-
-You can also scan each JAR file individually using the `snyk test --scan-unmanaged --file=/path/to/file` command.
-
-Testing each JAR file individually shows the name of the JAR file that was scanned on the Snyk web UI. Using --`scan-all-unmanaged` shows the package name instead of the file name.
+When you test each JAR file individually, the name of the JAR file that was scanned appears on the Snyk web UI.
 
 **WAR file support**: You can scan individual WAR files that are published in Maven Central. To scan open-source dependency JARs directly, you must extract (unzip) all other WAR files or JAR files containing other JARs.
 
-**Prerequisite:** You must install a [supported version](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md#supported-versions) of Maven to scan unmanaged JAR files.
-
 ## Recursively scanning all subfolders
+
+{% hint style="warning" %}
+**The method described here is deprecated.**
+
+Beginning with Snyk CLI 1.1176.0, by default you can scan all subfolders using the `--scan-all-unmanaged`option. When you scan using --`scan-all-unmanaged`, the package name appears rather than the file name.
+{% endhint %}
 
 Java apps often have JAR files in a number of different folders within an application.
 
-Below is a Linux/Mac Bash script that recurses through all subfolders starting with the current folder and tests each JAR file found.
+The following is a  Linux/Mac Bash script used with CLI versions before Snyk CLI 1.1176.0 that recurses through all subfolders starting with the current folder and tests each JAR file found.
 
-Setting a value for the `REMOTE_REPO_URL` variable is important; it is used to combine all scan results under a single Snyk project in the UI using the `--remote-repo-url` parameter.
+Setting a value for the `REMOTE_REPO_URL` variable is important; it is used to combine all scan results under a single Snyk Project in the UI using the `--remote-repo-url` parameter.
 
 ```
 #!/bin/bash
@@ -97,7 +95,7 @@ echo ""
 printf $undetected_jars
 ```
 
-Here is a Windows batch script for scanning JARs in all subfolders, run from a `scanjar.bat` file.
+The following is a Windows batch script for scanning JARs in all subfolders, run from a `scanjar.bat` file.
 
 To use this script, you must have installed the Snyk CLI.
 
@@ -109,6 +107,6 @@ SET REMOTE_REPO_URL=%2
 for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remote-repo-url=%REMOTE_REPO_URL% --file=%%f --project-name=%%f
 ```
 
-Here is an example in the Snyk UI of the result of using these scripts with `REMOTE_REPO_URL` set to "econnect".
+An example follows of the result shown in the Snyk UI after you use these scripts with `REMOTE_REPO_URL` set to "econnect".
 
 <figure><img src="../../.gitbook/assets/untitled (1).png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>
