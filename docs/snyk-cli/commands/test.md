@@ -229,7 +229,7 @@ Snyk reports test results per pom.xml file.
 
 ### `--scan-unmanaged`
 
-To test individual JAR, WAR, and AAR files, you need to use the following:&#x20;
+To test individual JAR, WAR, and AAR files, use the following:&#x20;
 
 ```
 --scan-unmanaged --file=<JAR_FILE_NAME>
