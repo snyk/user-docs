@@ -1,6 +1,6 @@
 # Test your IaC files
 
-With Snyk Infrastructure as Code, you can test your configuration files with the CLI. This page provides detailed information on how to use certain options for the `snyk iac test command`.  For information about all of the options see the `snyk. iac test` command [help](../../../../snyk-cli/commands/iac-test.md). For details about testing the various configuration files, see the following pages:
+With Snyk Infrastructure as Code, you can test your configuration files with the CLI. This page provides detailed information on how to use certain options for the `snyk iac test command`.  For information about all of the options see the `snyk iac test` command [help](../../../../snyk-cli/commands/iac-test.md). For details about testing the various configuration files, see the following pages:
 
 * [Test your Terraform files with Snyk CLI](test-your-terraform-files-with-snyk-cli.md)
 * [Test your CloudFormation files with Snyk CLI](test-your-cloudformation-files-with-snyk-cli.md)
