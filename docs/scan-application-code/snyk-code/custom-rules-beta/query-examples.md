@@ -4,9 +4,13 @@ Use the Snyk Code custom rules to create queries with [suggestive AI support](ho
 
 Consider the following query examples and rules to use with Snyk Code custom rules.
 
-## Simple Syntactical Query
+## Simple syntactical query
 
-Copy the following source code snippet in the snippet window and select C# as a language (Note: It is only a snippet and not a full program, it won’t compile):
+Copy the following source code snippet in the snippet window and select C# as a language
+
+{% hint style="info" %}
+It is only a snippet and not a full program. It won’t compile.
+{% endhint %}
 
 <pre class="language-csharp"><code class="lang-csharp"><strong>// Read request body
 </strong>string body;
@@ -21,23 +25,33 @@ form.Email = "nobody@notrealdomain.co.uk";
 using var cmd = new NpgsqlCommand(sql, conn);
 </code></pre>
 
-Enter the following queries in the query window and press Run Query to see the results.
+### Running the query
 
-<figure><img src="../../../.gitbook/assets/SnykCodeCustomQueryCSharpExample.png" alt=""><figcaption></figcaption></figure>
+Enter the following queries in the query window and press **Run Query** to see the results.
 
-1. Simply select _body_ by using the query: `“body”` \
-   **Note:** It does not select the Body with a capital B. The querying language is case-sensitive.
-2. We want to add Body to the finds, so the query becomes `Or<”body”,”Body”>`.
-3. We can achieve the same outcome using a regex `~"body|Body"` or `~"[Bb]ody"`
-4. Now, let’s do something more complex regex and query: \
-   ``~"[a-z0-9!#$%&'*+/=?^_{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@``(?:\[a-z0-9]\(?:\[a-z0-9-]\*\[a-z0-9])?.)+\[a-z0-9]\(?:\[a-z0-9-]\*\[a-z0-9])`?"`\
+1. Select **body** by using the query: `“body”`&#x20;
+
+{% hint style="info" %}
+&#x20;It does not select the Body with a capital B. The querying language is case-sensitive.
+{% endhint %}
+
+2. Add `Body` to the findings so the query becomes `Or<”body”,”Body”>`.
+3. You can achieve the same outcome using a regex `~"body|Body"` or `~"[Bb]ody"`
+4. Let’s do something more complex regex and query: \
+   ``~"[a-z0-9!#$%&'*+/=?^_{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"``\
    It matches the hardcoded email address.
-5. **Homework:** Run the following query over your own code `~"([a-zA-Z0-9+/]{40})"` If you find something, check it out first, as you might leak your AWS secrets.
-6. If we are interested in a certain type of object, we can use templates. For example, the query `CallExpression<"Format">` matches on a function call or `Literal<"nobody@notrealdomain.co.uk">` matches the string with the email address.
+
+<figure><img src="../../../.gitbook/assets/simple syntactical query.png" alt="Syntactical query example"><figcaption><p>Syntactical query example</p></figcaption></figure>
+
+### Try it yourself
+
+Run the following query over your own code `~"([a-zA-Z0-9+/]{40})"` If you find something, check it out first, as you might leak your AWS secrets.
+
+If you are interested in a certain type of object, you can use [templates](templates-and-predicates/). For example, the query `CallExpression<"Format">` matches a function call or `Literal<"nobody@notrealdomain.co.uk">` matches the string with the email address.
 
 ## A data flow or taint analysis
 
-For this example, we use the following JavaScript code snippet. Copy it in the snippet window and select JavaScript:
+For this example, a JavaScript code snippet is used. You can copy it in the snippet window and select **JavaScript**.
 
 ```javascript
 const express = require('express');
@@ -93,12 +107,19 @@ connectDb(client).then(() => {
 
 ```
 
-1. Snyk Code knows a list of possible sources of external data in the predicate `PRED:AnySource`. The following query shows you that `app.post()` is identified. Now query `PRED:SqliSinks` shows you that `query()` is part of that list of SQL injection sinks. The query engine comes with many different predicates for various source, sink and sanitizer types. Check the list of predicates to see them all.
-2. Now let use check if we have data flowing into a SQL injection sink. `DataFlowsInto<PRED:SqliSink>` shows you that in our program data from the `req` parameter actually flows into `query()` taking several turns.
-3. Obviously, we want to limit the interesting data flow only to the data originating from possible sources. So change the query to `DataFlowsInto<PRED:SqliSink> DataFlowsFrom<PRED:AnySource>`
-4. Ok, we could now ask if the data flow is also going through a sanitizer but for this case we have a specialized template. Change the query to ​​`Taint<PRED:AnySource, PRED:SqliSanitizer, PRED:SqliSink>`
+Snyk Code knows a list of possible sources of external data in the predicate `PRED:AnySource`. The following query shows you that `app.post()` is identified.&#x20;
 
-Note: There is nothing language specific in the query. It would work on similar code in other languages.
+Query `PRED:SqliSinks` shows you that `query()` is part of that list of SQL injection sinks. The query engine comes with many different predicates for various source, sink, and sanitizer types. Check the list of predicates to see them all.
+
+To check if the data flows into a SQL injection sink, use the following: `DataFlowsInto<PRED:SqliSink>`. It shows you that in our program, data from the `req` parameter flow into `query()` taking several turns.
+
+To limit the interesting data flow to the data originating from possible sources, change the query to `DataFlowsInto<PRED:SqliSink> DataFlowsFrom<PRED:AnySource>`
+
+If the data flow is also going through a sanitizer, you can use a specialized template. Change the query to ​​`Taint<PRED:AnySource, PRED:SqliSanitizer, PRED:SqliSink>`
+
+{% hint style="info" %}
+There is nothing language specific in the query. It would work on similar code in other languages.
+{% endhint %}
 
 ## **Net new data flow rule**
 

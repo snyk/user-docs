@@ -1,6 +1,6 @@
-# List of built-in Predicates and Templates
+# Predefined predicates and templates
 
-## List of built-in predicates
+## Predicates
 
 ### Any
 
@@ -130,7 +130,7 @@ Matches on XSS sanitizers.
 
 Matches on XSS sinks.
 
-## List of built-in templates
+## Templates
 
 ### And
 
@@ -402,7 +402,7 @@ List of template parameters:
 
 ### Taint
 
-Template for taint vulnerability, for Custom Rules app, can be used with anything (not just sources/sinks).
+Identifies all data flows originating from specified sources and flowing to the vulnerable method (sink) without passing through the specified sanitizers.
 
 List of template parameters:
 

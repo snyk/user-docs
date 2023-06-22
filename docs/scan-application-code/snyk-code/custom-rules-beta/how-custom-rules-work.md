@@ -12,6 +12,8 @@ The goal is to create useful queries that will surface valuable and actionable r
 
 The templates are abstract pre-built constructs created to provide a quicker and easier way to build queries.
 
+:link: [Detailed explanation of templates](the-query-language.md#template)
+
 <figure><img src="../../../.gitbook/assets/query templates.png" alt="Overview of Query Templates."><figcaption><p>Query Templates</p></figcaption></figure>
 
 ### Query predicates
@@ -19,6 +21,8 @@ The templates are abstract pre-built constructs created to provide a quicker and
 The predicate is a symbolic representation of a relationship between objects or properties that evaluates true or false. Snyk provides an exhaustive list of predefined predicates.&#x20;
 
 For example, all cross-site scripting (XSS) sinks as `PRED:XssSink`. You can extend these or define your own.&#x20;
+
+:link: [Detailed explanation of predicates](the-query-language.md#predicate-pred)
 
 <figure><img src="../../../.gitbook/assets/query predicates.png" alt="Overview of Query Predicates."><figcaption><p>Query Predicates</p></figcaption></figure>
 
