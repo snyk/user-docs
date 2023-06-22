@@ -252,10 +252,92 @@ If you are having any trouble testing your Gradle Projects with Snyk, collect th
 
 ## Git services for Maven Projects
 
-After you select a Project for import, Snyk builds the dependency tree based on the `pom.xml` file.
+Snyk creates a Project per `pom.xml` file when it scans Maven applications. The Project includes all direct and indirect dependencies, associated with that file.
 
 {% hint style="info" %}
-Only production dependencies in the `compile` and `runtime` scopes are included.
+The Project includes only the production dependencies in the`compile` and`runtime` scopes.
+{% endhint %}
+
+### Maven Bill of Materials (BOM) POMs
+
+Maven supports ["bill of materials" (BOM) POM files](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#bill-of-materials-bom-poms) to group dependency versions known to work together.
+
+A BOM file includes:
+
+* a `pom` packaging type: `<packaging>pom</packaging>`.
+* a `dependencyManagement` section.
+
+Third-party Projects can provide BOM files to make dependency management easier. Here are some common examples:
+
+* [spring-data-bom](https://github.com/spring-projects/spring-data-bom) - The Spring team provides a BOM for their Spring Data Project.
+* [jackson-bom](https://github.com/FasterXML/jackson-bom) - The Jackson Project provides a BOM for Jackson dependencies.
+
+Here is an example of a BOM file:
+
+{% code title="Example 1 - BOM file" %}
+```xml
+<project ...>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>snyk</groupId>
+    <artifactId>snyk-bom</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>Snyk Bill Of Materials</name>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.12</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
+```
+{% endcode %}
+
+This BOM can be imported into a Project POM as a parent. The `log4j` version is not specified as it inherits it from the BOM:
+
+{% code title="Example 2 - Project POM" %}
+```xml
+<project ...>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>snyk</groupId>
+        <artifactId>snyk-bom</artifactId>
+        <version>1.0</version>
+    </parent>
+    
+    <groupId>snyk</groupId>
+    <artifactId>snyk-project</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Snyk Project</name>
+    
+    <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+    </dependency>
+</project>
+```
+{% endcode %}
+
+#### How Snyk handles BOMs
+
+When you scan the BOM files with Snyk, the `dependencyManagement` block content is not considered a dependency of that file. These rules are solving the dependencies of the POMs Project, not the actual dependencies of the BOM.&#x20;
+
+You can run `mvn dependency:tree` in the previous BOM example to check that the content is not listed as a BOM dependency.&#x20;
+
+Snyk applies the BOM `dependencyManagement` rules to any Projects that import it as a parent, producing dependencies with the versions specified in the BOM.
+
+Let's see how Snyk analyzes and treats each of the previous example files.
+
+* BOM file - Snyk doesn't create a Snyk Project for this file because it has no dependencies of its own.
+* Project POM - Snyk creates a Project with a single dependency of `log4j,` with `v1.2.12.` Snyk applies the rules from the parent BOM to identify the correct version for `log4j`.
+
+{% hint style="info" %}
+If a BOM has its own dependencies, then Snyk creates a Project for those as well.&#x20;
 {% endhint %}
 
 ## Git services for Gradle Projects
