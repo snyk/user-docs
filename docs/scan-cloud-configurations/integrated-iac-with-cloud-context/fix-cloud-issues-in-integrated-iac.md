@@ -153,7 +153,11 @@ When a mapping artifact is created or updated, Snyk executes a mapping run by an
 
 Wait a few minutes so that Snyk can finish the cloud environment scan, complete the mapping run, and update resource mappings.
 
-For supported resource types, relevant cloud Issues should now include mapped IaC resources within the **IaC** tab. Each IaC resource includes information on the resource name, IaC template location, and where available, a link to the SCM tool.
+Navigate to the [cloud issues UI](cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), and set the h**as\_iac\_mappings** filter to `true`, either in the search bar or by selecting the appropriate filter. This will display cloud issues with resources that are mapped to IaC resources, for supported resource types.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-20 at 8.26.36 PM.png" alt="Use the has_iac_mappings filter"><figcaption><p>Use the <strong>has_iac_mappings</strong> filter</p></figcaption></figure>
+
+Relevant cloud Issues should now include mapped IaC resources within the **IaC** tab. Each IaC resource includes information on the resource name, IaC template location, and where available, a link to the SCM tool.
 
 <figure><img src="../../.gitbook/assets/snyk-cloud-mapped-iac-resources.png" alt="The IaC tab in a Cloud issue shows mapped IaC resource information."><figcaption><p>The IaC tab in a cloud issue shows mapped IaC resource information.</p></figcaption></figure>
 
