@@ -182,6 +182,20 @@ For Broker deployed by Helm chart, follow [https://github.com/snyk/snyk-broker-h
 
 `--set brokerServerUrl=https://broker.au.snyk.io`
 
+### Broker with high availability (HA) mode URLs.
+
+Follow the [High availability mode](../enterprise-setup/snyk-broker/high-availability-mode.md) instructions BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
+
+#### **EU**
+
+`-e BROKER_DISPATCHER_BASE_URL=https://api.eu.snyk.io`
+
+#### **AU**
+
+`-e BROKER_DISPATCHER_BASE_URL=https://api.au.snyk.io`
+
+For Broker deployed by Helm chart, edit the values.yaml file to include the relevant details in brokerDispatcherUrl.
+
 ### Broker with Code Agent URLs
 
 Follow the [Snyk Broker - Code Agent](https://docs.snyk.io/integrations/snyk-broker/snyk-broker-code-agent) instructions BUT add an extra environment variable in the Code Agent container:
