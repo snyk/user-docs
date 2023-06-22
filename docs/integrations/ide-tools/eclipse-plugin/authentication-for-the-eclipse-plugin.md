@@ -8,13 +8,13 @@ Once the CLI is downloaded you will be redirected to the browser to authenticate
 
 ![Notification, browser window opening for authentication](<../../../.gitbook/assets/Screenshot 2022-05-13 at 11.29.37.png>)
 
-* Once you are redirected to the browser for authentication, click **Authenticate**.
+* When you are redirected to the browser for authentication, click **Authenticate**.
 
-![Authenticate](<../../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.02.png>)
+<figure><img src="../../../.gitbook/assets/authenticate-23-06.png" alt="Authenticate"><figcaption><p>Authenticate</p></figcaption></figure>
 
-* You should see a successful message saying you've been authenticated.
+* You should see a confirmation message that authentication is complete and you can now use Snyk.
 
-![Confirmation of authentication](<../../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.30.png>)
+<figure><img src="../../../.gitbook/assets/authentication-complete-23-06.png" alt="Authenticated"><figcaption><p>Authenticated</p></figcaption></figure>
 
 * Going back to the IDE, you should see a confirmation that the IDE has been successfully connected and the API token has been securely stored (lower right).
 

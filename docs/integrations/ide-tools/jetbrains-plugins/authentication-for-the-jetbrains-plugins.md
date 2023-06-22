@@ -12,11 +12,11 @@ Click **Test code now**. The plugin relies on the Snyk CLI, which authenticates 
 
 Click **Authenticate** when prompted by Snyk.
 
-![Prompt to authenticate](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.04.29-pm.png)
+<figure><img src="../../../.gitbook/assets/authenticate-23-06.png" alt="Authenticate"><figcaption><p>Authenticate</p></figcaption></figure>
 
 When authentication is complete, a confirmation message appears.
 
-![Authenticated confirmation message](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.05.55-pm.png)
+<figure><img src="../../../.gitbook/assets/authentication-complete-23-06.png" alt="Authenticated"><figcaption><p>Authenticated</p></figcaption></figure>
 
 The IDE reads and saves the authentication on your local machine.
 
