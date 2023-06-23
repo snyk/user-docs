@@ -1,21 +1,21 @@
 # Snyk for Java and Kotlin
 
-ProjectSnyk offers security scanning to test your Projects for vulnerabilities, both from the [Snyk CLI ](../../../snyk-cli/)and the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) using different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your Projects for vulnerabilities, both from the [Snyk CLI ](../../../snyk-cli/)and the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md), using different [Snyk Integrations](../../../integrations/).
 
 ## Features of Snyk for Java and Kotlin
 
-The following tables provide an outline of the general features Snyk offers by language. In addition to these features, Snyk offers additional functionality related to the specific integration configurations.
+The following tables outline the general features Snyk offers by language. In addition to these features, Snyk offers additional functionality related to the specific integration configurations.
 
 {% hint style="info" %}
-Some features might not be available, depending on your pricing plan. See [pricing plans](https://snyk.io/plans/) for more details.
+Some features might not be available, depending on your pricing plan. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
 {% hint style="info" %}
-Gradle Projects imported via Git are tested by parsing `build.gradle` files. As the only truly reliable way to resolve Gradle dependencies is to execute the tool itself, this method can sometimes provide incomplete results.
+Gradle Projects imported via Git are tested by parsing `build.gradle` files. You can resolve Gradle dependencies only by executing the tool itself, but even this method can sometimes provide incomplete results.
 
-If possible, enable [lockfiles](snyk-for-java-and-kotlin.md#git-services-for-gradle-projects) in your Gradle Project to improve the accuracy for Git imports.
+If possible, enable [lockfiles](snyk-for-java-and-kotlin.md#git-services-for-gradle-projects) in your Gradle Project to improve the accuracy of Git imports.
 
-However, for the most accurate results, Snyk recommends using the [Snyk CLI](../../../snyk-cli/) to test Gradle Projects.
+Snyk recommends using the Snyk CLI to test Gradle Projects for the most accurate results.
 {% endhint %}
 
 {% tabs %}
@@ -38,7 +38,7 @@ However, for the most accurate results, Snyk recommends using the [Snyk CLI](../
 {% endtab %}
 {% endtabs %}
 
-## Supported versions
+## Supported versions of Maven and Gradle
 
 ### Maven versions supported
 
@@ -50,7 +50,9 @@ However, for the most accurate results, Snyk recommends using the [Snyk CLI](../
 {% hint style="info" %}
 Gradle 8 is not yet supported in the CLI.&#x20;
 
-However, if your app does not use Gradle 8 specific features, it is generally possible to install Gradle 7 instead before running Snyk CLI scans
+If your app does not use Gradle 8 specific features, it is generally possible to install Gradle 7 instead before running Snyk CLI scans
+
+
 {% endhint %}
 
 * CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
@@ -116,18 +118,18 @@ Define the system property like this:
 snyk test -- -Dpkg_version=1.4
 ```
 
-## CLI help for Maven Projects: Aggregate Projects
+## CLI help for Maven Projects
 
-A Maven aggregate Project is one that uses modules and inheritance.
+A **Maven aggregate Project** is one that uses modules and inheritance.
 
-When scanning these types of Projects, Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.
+When scanning these types of Projects, Snyk performs a compile to ensure all modules are fixable by the Maven reactor.
 
-*   To scan aggregate Projects, use the `--maven-aggregate-project` option:
+*   To **scan aggregate Projects**, use the `--maven-aggregate-project` option:
 
     ```
     snyk test --maven-aggregate-project
     ```
-*   To scan non-aggregate Projects, use `--all-projects` option:
+*   To **scan non-aggregate Projects**, use the `--all-projects` option:
 
     ```
     snyk test --all-projects
@@ -135,7 +137,7 @@ When scanning these types of Projects, Snyk performs a compile to ensure all mod
 
 The same options can be used with `snyk monitor`.
 
-Make sure to execute the options in the same directory as the root pom.xml file.
+Be sure to execute the options in the same directory as the root pom.xml file.
 
 {% hint style="info" %}
 Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
@@ -228,17 +230,23 @@ By default, Snyk passes `gradle build --no-daemon` in the background when runnin
 
 ### Lockfiles
 
-If your Gradle Project makes use of a single **gradle.lockfile** or multiple **\*.lockfile** per configuration and you are having the following issue
+If your Gradle Project makes use of a single `gradle.lockfile` or multiple `*.lockfile` per configuration, you may see the following issue:
 
-**Gradle Error (short): > Could not resolve all dependencies for configuration ':compileOnly'. > Locking strict mode: Configuration ':compileOnly' is locked but does not have lock state.**
+{% code overflow="wrap" %}
+```
+Gradle Error (short): > Could not resolve all dependencies for configuration ':compileOnly'. > Locking strict mode: Configuration ':compileOnly' is locked but does not have lock state.
+```
+{% endcode %}
 
-Note that that **compileOnly configuration** **has been deprecated,** and even if your Project successfully generates a lockfile, it will not contain the \`compileOnly\` state because this configuration cannot be resolved. Only resolvable configurations compute a dependency graph. In order to solve this issue, Snyk suggests you **update your build.gradle containing dependencyLocking logic with the following instruction:**
+The **compileOnly configuration** **has been deprecated,** and even if your Project successfully generates a lockfile, the `compileOnly` state is not included because this configuration cannot be resolved.&#x20;
+
+Only resolvable configurations compute a dependency graph. To solve this issue, Snyk suggests you update your `build.gradle` containing `dependencyLocking` logic with the following instruction**:**
 
 ```
 compileOnly {resolutionStrategy.deactivateDependencyLocking() }
 ```
 
-This will **ignore compileOnly** and save only the necessary information to analyze your Project of Projects.
+This ignores the compileOnly and saves only the necessary information to analyze your Project.
 
 ### Support for Gradle with Snyk
 
@@ -252,15 +260,37 @@ If you are having any trouble testing your Gradle Projects with Snyk, collect th
 
 ## Git services for Maven Projects
 
-Snyk creates a Project per `pom.xml` file when it scans Maven applications. The Project includes all direct and indirect dependencies, associated with that file.
+Snyk creates a Project per `pom.xml` file when it scans Maven applications. The Project includes all direct and indirect dependencies associated with that file.
 
 {% hint style="info" %}
 The Project includes only the production dependencies in the`compile` and`runtime` scopes.
 {% endhint %}
 
-### Maven Bill of Materials (BOM) POMs
+## Git services for Gradle Projects
 
-Maven supports ["bill of materials" (BOM) POM files](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#bill-of-materials-bom-poms) to group dependency versions known to work together.
+After you select a Project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
+
+{% hint style="info" %}
+Only production dependencies in the `api`, `compile`, `classpath`, `implementation`, `runtime` and `runtimeOnly` configurations are included.
+{% endhint %}
+
+If a lockfile is present, Snyk uses the lockfile to more accurately resolve the final version of dependencies used in the Project.
+
+Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds. For more information, see the [Gradle docs on dependency locking](https://docs.gradle.org/current/userguide/dependency\_locking.html).
+
+{% hint style="warning" %}
+**Kotlin**: `build.gradle.kts` files are not currently supported in Git.
+{% endhint %}
+
+## Git settings for Java
+
+From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrations/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
+
+## Maven Bill of Materials (BOM)
+
+Maven supports [bill of materials (BOM) POM files](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#bill-of-materials-bom-poms) to centralize dependency versions known to work together.
+
+### Contents and use of BOM files
 
 A BOM file includes:
 
@@ -291,13 +321,24 @@ Here is an example of a BOM file:
                 <artifactId>log4j</artifactId>
                 <version>1.2.12</version>
             </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.1.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
 ```
 {% endcode %}
 
-This BOM can be imported into a Project POM as a parent. The `log4j` version is not specified as it inherits it from the BOM:
+The `dependencyManagement` section contains dependency elements. Each dependency is a lookup reference for Maven to determine the version to select for transitive (and direct) dependencies.
+
+Defining a dependency in the `dependencyManagement` section does not add it to the dependency tree of the Project. It is used only for lookup reference.
+
+You can run `mvn dependency:tree` on the previous BOM example to show that Maven does not treat the contents as dependencieasks of the file itself.
+
+This BOM can be imported into a Project POM as a parent. The `log4j` version does not need to be specified; it inherits it from the BOM:
 
 {% code title="Example 2 - Project POM" %}
 ```xml
@@ -323,43 +364,21 @@ This BOM can be imported into a Project POM as a parent. The `log4j` version is 
 ```
 {% endcode %}
 
-#### How Snyk handles BOMs
+### How Snyk handles BOMs
 
-When you scan the BOM files with Snyk, the `dependencyManagement` block content is not considered a dependency of that file. These rules are solving the dependencies of the POMs Project, not the actual dependencies of the BOM.&#x20;
+Snyk applies the versions in the BOM `dependencyManagement` lookup to any dependencies declared in Project POMs that import it as a `parent`.
 
-You can run `mvn dependency:tree` in the previous BOM example to check that the content is not listed as a BOM dependency.&#x20;
+When Snyk scans the BOM files, the `dependencyManagement` contents are not considered dependencies of that file. These are only lookups.
 
-Snyk applies the BOM `dependencyManagement` rules to any Projects that import it as a parent, producing dependencies with the versions specified in the BOM.
+The following explains how Snyk analyzes and treats each of the previous example files.
 
-Let's see how Snyk analyzes and treats each of the previous example files.
-
-* BOM file - Snyk doesn't create a Snyk Project for this file because it has no dependencies of its own.
-* Project POM - Snyk creates a Project with a single dependency of `log4j,` with `v1.2.12.` Snyk applies the rules from the parent BOM to identify the correct version for `log4j`.
+* BOM file - Snyk does not create a Snyk Project for this file because it has no dependencies.
+* Project POM - Snyk creates a Project with a single dependency of `log4j,` with `v1.2.12.` Snyk applies the rules from the parent BOM to identify the correct version for `log4j`. The dependency `commons-logging` is not included, as it is not directly declared in the Project POM.
 
 {% hint style="info" %}
-If a BOM has its own dependencies, then Snyk creates a Project for those as well.&#x20;
+If a BOM has direct dependencies outside`dependencyManagement`, then Snyk creates a Project for it.&#x20;
 {% endhint %}
-
-## Git services for Gradle Projects
-
-After you select a Project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
-
-{% hint style="info" %}
-Only production dependencies in the `api`, `compile`, `classpath`, `implementation`, `runtime` and `runtimeOnly` configurations are included.
-{% endhint %}
-
-If a lockfile is present, Snyk uses the lockfile to more accurately resolve the final version of dependencies used in the Project.
-
-Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds. For more information, see the [Gradle docs on dependency locking](https://docs.gradle.org/current/userguide/dependency\_locking.html).
-
-{% hint style="warning" %}
-**Kotlin**: `build.gradle.kts` files are not currently supported in Git.
-{% endhint %}
-
-## Git settings for Java
-
-From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrations/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
 
 ## Additional Snyk support for Java
 
-In addition to the CLI and Snyk UI features, you can also check your Java Projects using [Maven integration](../../../integrations/ci-cd-integrations/maven-plugin-integration.md).
+In addition to the CLI and Snyk UI features, you can check your Java Projects using [Maven integration](../../../integrations/ci-cd-integrations/maven-plugin-integration.md).
