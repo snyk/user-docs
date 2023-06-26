@@ -209,7 +209,7 @@ The dependency service could not process the files.
 
 #### Source is not supported
 
-The source used is not suppoted by fetcher. The supported sources are: github, bitbucket, gitlab.
+The source used is not supported by fetcher. The supported sources are: github, bitbucket, gitlab.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -944,4 +944,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-06-26T11:11:08.063Z
+--- Generated at 2023-06-26T14:30:05.817Z
