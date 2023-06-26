@@ -205,6 +205,42 @@ The dependency service could not process the files.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-0008](#snyk-os-0008)
+
+#### Source is not supported
+
+The source used is not suppoted by fetcher. The supported sources are: github, bitbucket, gitlab.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0009](#snyk-os-0009)
+
+#### Cannot get file from source
+
+Could not get the file from the source URL.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-0010](#snyk-os-0010)
+
+#### No released version for versions range
+
+There was no version released for the specified versions range.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0011](#snyk-os-0011)
+
+#### Timeout when processing the dependency tree
+
+There was an timeout when processing the dependecy tree.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
 
 #### Unsupported manifest file type for remediation
@@ -277,6 +313,123 @@ If Snyk cannot process your code successfully, insert the Snyk CLI as part of yo
 - [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
 - [https://github.com/snyk/snyk-go-plugin](https://github.com/snyk/snyk-go-plugin)
 - [https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go](https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go)
+
+### [SNYK-OS-MAVEN-0001](#snyk-os-maven-0001)
+
+#### Missing property
+
+The required property is missing from the pom object.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0002](#snyk-os-maven-0002)
+
+#### Unable to resolve value for property
+
+The targeted property could not be resolved with a valid value.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0003](#snyk-os-maven-0003)
+
+#### Unable to resolve version for property
+
+The targeted property could not be resolved with a valid version.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0004](#snyk-os-maven-0004)
+
+#### Cyclic property detected in POM file
+
+There is circular dependency among properties in the Maven project's configuration file (POM), preventing proper resolution and causing an error.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0005](#snyk-os-maven-0005)
+
+#### Error parsing the XML file
+
+There is an error parsing the XML file. This could be referring to either pom.xml or maven-metadata.xml.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-MAVEN-0006](#snyk-os-maven-0006)
+
+#### Invalid coordinates provided
+
+The coordinates provided for a project were invalid.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0007](#snyk-os-maven-0007)
+
+#### Skipping group
+
+Skipping a specific groupId starting due to remapped coordinates.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0008](#snyk-os-maven-0008)
+
+#### Pom file not found
+
+The pom file was not found in Maven repository.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0009](#snyk-os-maven-0009)
+
+#### Missing project from POM
+
+A project element is missing from POM.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0010](#snyk-os-maven-0010)
+
+#### Cannot resolve the target POM from the input XML
+
+Cannot resolve the targeted POM from the input XML.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0011](#snyk-os-maven-0011)
+
+#### Cannot resolve the target POM from the repository
+
+Cannot resolve the targeted POM from the repository.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-OS-MAVEN-0012](#snyk-os-maven-0012)
+
+#### Cannot get the build file repository
+
+Cannot get the build file repository.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-OS-MAVEN-0013](#snyk-os-maven-0013)
+
+#### Unable to create hosted git info
+
+Cannot create source URL.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
 
 ---
 # Builds
@@ -791,4 +944,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-06-21T09:58:06.867Z
+--- Generated at 2023-06-26T11:11:08.063Z
