@@ -62,11 +62,13 @@ This plugin is separate from the A[rtifactory Registry for Maven](../package-rep
 
 ## How the Artifactory plugin works
 
-Whenever a download is requested from Artifactory whether from a package manager or a URL, Snyk automatically scans the artifact for vulnerabilities and license issues.
+Whenever a download is requested from an Artifactory **remote repository**, whether from a package manager or a URL, Snyk automatically scans the artifact for vulnerabilities and license issues.
 
-To view details about download status, open the **System Logs**.
+The plugin only works with remote repositories. **It does not scan locally stored artifacts**, but instead queries the Snyk API with the meta-information about the artifacts. Therefore, only published artifacts of the proxied remote repository can be examined by the Snyk Artifactory plugin.
 
-If a scan finds issues, based on your configuration, the download request can be blocked with a HTTP status code "403 Forbidden".
+To view details about the download status, open the **System Logs**.
+
+If a scan finds issues, based on your configuration, the download request can be blocked with an HTTP status code "403 Forbidden".
 
 You can find the results of a scan under the artifact properties where you can decide to ignore the issues and allow downloads. To find the artifact, use the Artifactory Search Bar or navigate the tree view.
 
