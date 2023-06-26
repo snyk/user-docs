@@ -34,9 +34,8 @@ To generate a PR / MR directly from your Project using the Snyk UI:
 <figure><img src="../../../.gitbook/assets/image18.png" alt="Open Fix PR to fix Open Source Project vulnerabilities"><figcaption><p>Open Fix PR to fix Open Source Project vulnerabilities</p></figcaption></figure>
 
 {% hint style="warning" %}
-When a PR already exists for a specific change, Snyk does not open a new entry due to the used naming convention.&#x20;
-
-If you duplicate an open PR, an error is displayed. Before opening a Fix PR, use the **View PR** option to check if the branch already exists. If a Fix PR was previously opened, re-open it instead of creating a new one.&#x20;
+PRs use a branch naming convention based on the issues that they fix. When a PR already exists for a specific change, Snyk doesn't create a new one, even if that original PR is closed.\
+If you try to create a Fix PR which duplicates an existing one, an error may be displayed. If this happens, check if the branch already exists and re-open it.
 {% endhint %}
 
 ## Snyk SCM webhooks
