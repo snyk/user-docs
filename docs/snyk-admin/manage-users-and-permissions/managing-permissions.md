@@ -32,7 +32,9 @@ The **Group Member** role allows the member to view team members. For additional
 | -------------------------------------------------------------------------------------------------- | ----------- | ------------ | --------- | ---------------- |
 | Add/delete projects                                                                                | x           |              | x         | x                |
 | Update project with new snapshot                                                                   | x           |              | x         | x                |
-| Open fix PR's                                                                                      | x           |              | x         | x                |
+| View Project collections                                                                           | x           | x            | x         |                  |
+| Create and configure Project collections                                                           | x           |              | x         |                  |
+| Open fix PRs                                                                                       | x           |              | x         | x                |
 | Delete snapshot from project history                                                               | x           |              | x         | x                |
 | Edit [Project attributes](../../manage-issues/introduction-to-snyk-projects/project-attributes.md) | x           |              | x         |                  |
 | View team members                                                                                  | x           | x            | x         | x                |

@@ -185,6 +185,7 @@ Permissions:
 * `View Project`
 * `View Project History`
 * `View Project Ignores`
+* `View Project Collections`
 * `View Targets`
 * `View Users`
 
