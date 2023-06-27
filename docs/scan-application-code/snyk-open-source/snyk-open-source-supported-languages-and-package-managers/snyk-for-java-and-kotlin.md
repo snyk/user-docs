@@ -332,7 +332,7 @@ Here is an example of a BOM file:
 ```
 {% endcode %}
 
-The `dependencyManagement` section contains dependency elements. These dependency elements are a lookup reference for Maven to determine the appropriate version for transitive (and direct) dependencies.
+The `dependencyManagement` section contains dependency elements. Each dependency is a lookup reference for Maven to determine the version to select for transitive (and direct) dependencies.
 
 Defining a dependency in the `dependencyManagement` section does not add it to the dependency tree of the Project. It is used only for lookup reference.
 
