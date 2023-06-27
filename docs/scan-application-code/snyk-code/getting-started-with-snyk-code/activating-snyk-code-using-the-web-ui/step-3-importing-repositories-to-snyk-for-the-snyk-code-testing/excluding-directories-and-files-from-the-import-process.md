@@ -37,7 +37,7 @@ exclude:
 </strong></code></pre>
 
 {% hint style="info" %}
-You can `global` or `code.` Either will exclude the specified directories and files from Snyk code tests. `code` applies only to Snyk Code analysis.`global` currently applies only to analysis using Snyk Code but may apply to other products in the future.
+You can use `global` or `code.` Either will exclude the specified directories and files from Snyk code tests. `code` applies only to Snyk Code analysis.`global` currently applies only to analysis using Snyk Code but may apply to other products in the future.
 {% endhint %}
 
 ### **Considerations**
