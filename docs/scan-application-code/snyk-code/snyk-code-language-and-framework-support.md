@@ -142,3 +142,11 @@ Snyk Code automatically excludes the following files from analysis:
 ### Filename length limitation
 
 The analysis is available only for files with names shorter or equal to 255 characters. You receive an error if the filename exceeds this limit. To make sure that all files are being analyzed, consider shortening long filenames.
+
+### Code Quality
+
+{% hint style="info" %}
+**Feature availability**
+
+Code Quality is an experimental feature. If you would like to use it, contact your Snyk team.
+{% endhint %}
