@@ -332,11 +332,11 @@ Here is an example of a BOM file:
 ```
 {% endcode %}
 
-The `dependencyManagement` section contains dependency elements. Each dependency is a lookup reference for Maven to determine the version to select for transitive (and direct) dependencies.
+The `dependencyManagement` section contains dependency elements. These dependency elements are a lookup reference for Maven to determine the appropriate version for transitive (and direct) dependencies.
 
 Defining a dependency in the `dependencyManagement` section does not add it to the dependency tree of the Project. It is used only for lookup reference.
 
-You can run `mvn dependency:tree` on the previous BOM example to show that Maven does not treat the contents as dependencieasks of the file itself.
+You can run `mvn dependency:tree` on the previous BOM example to show that Maven does not treat the contents as dependencies of the file itself.
 
 This BOM can be imported into a Project POM as a parent. The `log4j` version does not need to be specified; it inherits it from the BOM:
 
