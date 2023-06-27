@@ -31,7 +31,7 @@ Snyk Code integrates with the following SCMs:
 
 ### Supported languages
 
-Snyk Code supports a wide range of languages - see [Snyk Code - Supported languages and frameworks](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support).
+Snyk Code supports a wide range of languages - see [Snyk Code - Supported languages and frameworks](../../snyk-code-language-and-framework-support.md).
 
 ### PR checks
 
@@ -39,18 +39,12 @@ Snyk Code analysis can be applied to every Pull Request you are creating in your
 
 ## CLI and CI/CD integrations
 
-### Test code in CI/CD using Snyk CLI
-
-The [Snyk Command Line Interface (CLI) for Snyk Code](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code) helps you find and fix security flaws in your code on your local machine or in the CI/CD process.
+[Using the CLI ](../../cli-for-snyk-code/)helps you find and fix security flaws in your code on your local machine or in the CI/CD process.
 
 ## APIs and extensibility
 
-### Public APIs
-
-You can query Code Projects and issues from our [v3 APIs](https://apidocs.snyk.io/?version=2021-11-03%7Eexperimental#overview).
+You can query Code Projects and issues using the [Snyk REST API](https://apidocs.snyk.io/#overview).
 
 ## Other integrations
 
-### Jira integration
-
-You can connect Snyk Code with your [Jira instance](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira), allowing developers to easily export data to Jira issues.
+You can connect Snyk Code with your J[ira instance](../../../../integrations/notifications-ticketing-system-integrations/jira.md), allowing developers to easily export data to Jira issues.
