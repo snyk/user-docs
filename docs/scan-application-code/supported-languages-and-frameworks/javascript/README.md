@@ -23,11 +23,11 @@ Snyk Open Source provides full support for both npm and Yarn, as outlined below.
 
 The following table shows the npm lockfile versions and Snyk features availability matrix.
 
-| Lockfile version | CLI support | Git support                  | License scanning | Fix PRs |
-| ---------------- | ----------- | ---------------------------- | ---------------- | ------- |
-| Lockfile v1      | ✔︎          | ✔︎                           | ✔︎               | ✔︎      |
-| Lockfile v2      | ✔︎          | ✔︎                           | ✔︎               | ✔︎      |
-| Lockfile v3      | ✔︎          | [Beta](./#lockfile-versions) | ✔︎               |         |
+| Lockfile version | CLI support | Git support | License scanning | Fix PRs |
+| ---------------- | ----------- | ----------- | ---------------- | ------- |
+| Lockfile v1      | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
+| Lockfile v2      | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
+| Lockfile v3      | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
 
 **Peer dependencies**
 
@@ -50,10 +50,6 @@ The only case in which an npm v7+ project ignores peer dependencies is if they a
 In npm v6 and below, peer dependencies are not scanned by default, as the package manager does not install them by default. To scan peer dependencies, make sure they are installed, and then run the CLI with the `--peer-dependencies` option.
 
 **Lockfile versions**
-
-{% hint style="info" %}
-**Lockfile v3** support for Git is currently in beta. To participate in the beta, [contact us](mailto:support@snyk.io).
-{% endhint %}
 
 Snyk uses the `package-lock.json` lockfile when present to generate a dependency tree for your project. These lockfiles come in different versions.
 
@@ -254,12 +250,22 @@ Configure language settings for your open source and licensing at the Organizati
 
 <figure><img src="../../../.gitbook/assets/language_settings.png" alt="JavaScript language settings for open source and licensing."><figcaption><p>JavaScript language settings for open source and licensing</p></figcaption></figure>
 
-#### Fix PRs for zero-installs users
+#### Fix PRs and npm save-prefix
 
-In Yarn v2, the [zero-installs](https://yarnpkg.com/features/zero-installs) feature was released, which allowed Yarn developers to work on a Project without having to run `yarn` to install dependencies on their machine. It achieved this by installing all the dependencies of a Project inside of the `.yarn/cache` directory and asking users to commit this to their version control system - allowing the next developer to pull any new dependencies directly from the repo.
+When creating a fix for vulnerabilities using npm v7+ projects, Snyk will use the default npm `save-prefix` rather than inferring it from your Project.
+
+This means if you have dependencies using a range format other than the caret range (`^`), you may see additional changes to the `version` fields in the `package-lock.json` file.&#x20;
+
+These changes should not affect day-to-day functionality, as the ranges will be read from the `package.json`.
+
+#### Fix PRs for Yarn zero-installs users
+
+In Yarn v2, the [zero-installs](https://yarnpkg.com/features/zero-installs) feature was released, which allowed Yarn developers to work on a Project without having to run `yarn` to install dependencies on their machine.&#x20;
+
+Zero-installs achieved this by installing all the dependencies of a Project inside of the `.yarn/cache` directory and asking users to commit this to their version control system , allowing the next developer to pull any new dependencies directly from the repo.
 
 {% hint style="info" %}
-If you are using the **zero-installs** feature, any Snyk Fix PRs do not update the **.yarn/cache** directory. You must run `yarn` to update this directory.
+If you use the **zero-installs** feature, Snyk Fix PRs do not update the **.yarn/cache** directory. You must run `yarn` to update this directory.
 {% endhint %}
 
 #### What's next?

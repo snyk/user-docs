@@ -24,7 +24,14 @@ Project collections are static collections of Projects which can be built using 
 Project collections live on the Organization level, which means they are available for all members of the Organization to view and work within.
 
 {% hint style="info" %}
-Project views can be created by any user in an Organization, while Project collections can be created by users with admin roles and custom roles with the appropriate permissions. For more information, see [Manage permissions](https://docs.snyk.io/snyk-admin/manage-users-and-permissions/managing-permissions).
+Project views can be created by any user in an Organization, while Project collections can be created by users with admin roles and custom roles with the appropriate permissions. The permissions that a custom role requires to be able to use collections are:
+
+* Read
+* Create
+* Delete&#x20;
+* Edit
+
+For more information, see [Manage permissions](https://docs.snyk.io/snyk-admin/manage-users-and-permissions/managing-permissions).
 {% endhint %}
 
 In the Snyk Web UI and API, you can:&#x20;
