@@ -144,8 +144,8 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 #### For more information
 
 * Package registry integrations: [Nexus Repository Manager setup](../integrations/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../integrations/package-repository-integrations/artifactory-repository-setup/)
-* [Artifactory Registry for Maven](../integrations/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md)
-* [Nexus Registry for Maven](../integrations/package-repository-integrations/nexus-repo-manager-setup/artifactory-registry-for-maven-1.md)
+* [Artifactory Registry for Maven](../integrations/private-registry-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md)
+* [Nexus Registry for Maven](../integrations/private-registry-integrations/artifactory-registry-for-maven-1.md)
 * Nexus Container Registry: [Container security with Nexus integration](../scan-containers/image-scanning-library/nexus-image-scanning/container-security-with-nexus-integration.md)
 * Gatekeeper plugins: [Artifactory Gatekeeper plugin](../integrations/gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md) and [Nexus Repository Manager Gatekeeper plugin](../integrations/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
 

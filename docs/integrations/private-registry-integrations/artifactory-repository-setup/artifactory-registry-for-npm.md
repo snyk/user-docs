@@ -20,7 +20,7 @@ Note that this guide is relevant for Snyk UI integrations only. The CLI already 
 ## JavaScript language settings
 
 1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> **> Languages > JavaScript** and either the npm or Yarn settings depending on your project types
-2. If you have not previously connected to Artifactory you will be asked to configure an integration first; see [Artifactory Registry setup](./).
+2. If you have not previously connected to Artifactory you will be asked to configure an integration first; see [Artifactory Registry setup](../../package-repository-integrations/artifactory-repository-setup/).
 3. Select **Add registry configuration**.
    1. Select **Artifactory** as the Package source.
    2. If you want to configure this registry as **default registry url**, leave **scope** blank.

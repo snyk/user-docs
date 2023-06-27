@@ -25,7 +25,7 @@ Select the **Issues** page to see detailed information on open issues across all
 
 To view IaC issues only, select **Configuration** from the **Issue filters** drop-down.
 
-<figure><img src="../../.gitbook/assets/image3.png" alt="IaC issues page"><figcaption><p>IaC issues page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image3 (2).png" alt="IaC issues page"><figcaption><p>IaC issues page</p></figcaption></figure>
 
 This shows the title of each issue, the type, and the severity.
 

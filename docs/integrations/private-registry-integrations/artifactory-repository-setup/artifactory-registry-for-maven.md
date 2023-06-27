@@ -13,7 +13,7 @@ Maven Projects can be configured to mirror all requests through a custom package
 
 ## **Setup custom Maven package registries**
 
-If authentication is required to access your custom registry, you must configure the Artifactory package repository integration; see [Artifactory Registry setup](./).
+If authentication is required to access your custom registry, you must configure the Artifactory package repository integration; see [Artifactory Registry setup](../../package-repository-integrations/artifactory-repository-setup/).
 
 Once the integration is set up, you can configure Maven settings by navigating to settings ![Settings](../../../.gitbook/assets/cog\_icon.png) **> Languages > Java**.
 

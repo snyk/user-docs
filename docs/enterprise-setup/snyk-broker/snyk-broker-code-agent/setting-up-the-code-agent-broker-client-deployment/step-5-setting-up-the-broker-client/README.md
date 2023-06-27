@@ -18,4 +18,4 @@ You can [run the Broker Client WITHOUT a display of the code snippets in the Sny
 
 Alternatively you can [run the Broker Client WITH a display of the code snippets in the Snyk Code results on the Web UI](step-5.2b-running-the-broker-client-with-the-code-snippets-display.md):
 
-<figure><img src="../../../../../.gitbook/assets/Broker - Results - with code snippets (1).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
