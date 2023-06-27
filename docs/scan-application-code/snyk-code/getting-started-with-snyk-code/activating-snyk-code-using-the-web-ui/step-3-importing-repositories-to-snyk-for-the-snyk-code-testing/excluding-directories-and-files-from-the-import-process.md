@@ -21,8 +21,6 @@ You can also use the instructions in this section to exclude directories and fil
 <pre class="language-yaml"><code class="lang-yaml"># Snyk (https://snyk.io) policy file
 
 exclude:
-# Use either “global” or “code”. “global” currently applies only to the Snyk Code product, and it will exclude the specified directories and files from these tests; “code” applies only to the Snyk Code analysis.
-
     global:
 <strong>        # Exclude a single file. For example, - test.spec.js
 </strong>            - file_name.ext
@@ -38,14 +36,15 @@ exclude:
 <strong>            - directory_name/**
 </strong></code></pre>
 
-#### **Considerations**
+{% hint style="info" %}
+You can `global` or `code.` Either will exclude the specified directories and files from Snyk code tests. `code` applies only to Snyk Code analysis.`global` currently applies only to analysis using Snyk Code but may apply to other products in the future.
+{% endhint %}
+
+### **Considerations**
 
 * The path in the rule should be relative to the `.snyk` file location.
 * All rules must have a preceding dash to be valid: - \<Exclusion\_rule>
 * For rules beginning with special characters and patterns (such as an asterisk character `*)`, you must wrap them in double quotes (`" "`). This ensures they are treated as a single entity, avoiding potential misinterpretation or unintended behavior. For example, `"*/src"`
-
-
-
 * Indentations –
   * When using the syntax in the `.snyk` YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
   * Do NOT use tabs for indentation. Use only spaces for indentation.
