@@ -54,7 +54,7 @@ To disable notifications for all the users in an Org ahead of your import, desel
 
 Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (4) (1) (1) (1) (1) (1) (1) (1).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (110).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
 
 * Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as Projects.
 * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
@@ -63,7 +63,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
   After a Project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (223) (2).png" alt="Check next to name of repo" data-size="line">
+To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (103).png" alt="Check next to name of repo" data-size="line">
 {% endhint %}
 
 See [Import a Project](../../../getting-started/quickstart/import-a-project.md) for more details.
@@ -88,7 +88,7 @@ Click the **Details** link to display the status of the Snyk check. The status o
   * Snyk could not read the manifest file
   * Snyk could not find the manifest file
 
-<figure><img src="../../../.gitbook/assets/security-check.png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/security-check (1).png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
 
 ### **Manage PR Check settings**
 
@@ -134,7 +134,7 @@ To configure the PR test settings for specific Projects, select the relevant Org
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
 
 </div>
 

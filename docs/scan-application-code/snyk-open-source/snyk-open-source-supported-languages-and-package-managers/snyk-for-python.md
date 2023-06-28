@@ -161,7 +161,7 @@ To define the Python version for all Projects in an Organization:
 3. Select **Edit settings** for **Python**.
 4. Select **Python 2** or **Python 3** to use when testing projects for this organization.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-03 at 15.32.06.png" alt=""><figcaption><p>Python version settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-03 at 15.32.06 (1).png" alt=""><figcaption><p>Python version settings</p></figcaption></figure>
 
 Snyk recommends you create different Organizations to work with different Python versions.
 

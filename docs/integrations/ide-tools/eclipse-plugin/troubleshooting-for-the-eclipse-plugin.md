@@ -18,6 +18,6 @@ The Snyk Eclipse plugin relies on the Eclipse LSP4e project. This project has de
 
 Before you install the Snyk plugin, add the Eclipse LSP4e update site [https://download.eclipse.org/lsp4e/releases/0.20.6/](https://download.eclipse.org/lsp4e/releases/0.20.6/) to your Eclipse installation:
 
-<figure><img src="../../../.gitbook/assets/image (424) (1).png" alt="Adding the Eclipse LSP4e update site"><figcaption><p>Adding the Eclipse LSP4e update site</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (424).png" alt="Adding the Eclipse LSP4e update site"><figcaption><p>Adding the Eclipse LSP4e update site</p></figcaption></figure>
 
 Then try or retry installation of the plugin, for example, through the Snyk Marketplace client, as described on the [Eclipse plugin ](./)main page.

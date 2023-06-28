@@ -2,7 +2,7 @@
 
 You can set the following configuration options in the Snyk preferences.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (2) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption><p>The Snyk preference page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (314).png" alt=""><figcaption><p>The Snyk preference page</p></figcaption></figure>
 
 * `Snyk API Token`: Set the authentication token from Snyk.
 * `Path`: Specify your additions to the path to find needed third party tools such as Gradle or Maven.

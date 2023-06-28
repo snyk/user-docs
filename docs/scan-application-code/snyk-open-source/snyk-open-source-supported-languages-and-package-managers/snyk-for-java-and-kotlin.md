@@ -284,7 +284,7 @@ Gradle lockfiles are an opt-in feature that, among other benefits, enable reprod
 
 ## Git settings for Java
 
-From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrations/private-registry-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
+From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrations/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
 
 ## Maven Bill of Materials (BOM)
 

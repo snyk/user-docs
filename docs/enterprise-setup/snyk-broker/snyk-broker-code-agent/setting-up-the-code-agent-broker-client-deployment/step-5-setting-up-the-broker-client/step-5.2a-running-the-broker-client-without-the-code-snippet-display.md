@@ -60,7 +60,7 @@ When the Broker Client setup is completed successfully, the following message ap
 
 `{ ..., "msg":"successfully established a websocket connection to the broker server", ... }`
 
-<figure><img src="../../../../../.gitbook/assets/Broker Client - Setup success message.png" alt="Confirmation message for Broker Client setup"><figcaption><p>Confirmation message for Broker Client setup</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker Client - Setup success message (1).png" alt="Confirmation message for Broker Client setup"><figcaption><p>Confirmation message for Broker Client setup</p></figcaption></figure>
 
 **To verify the setup and details of the Broker Client container**, run:
 

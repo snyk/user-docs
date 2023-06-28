@@ -27,7 +27,7 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
 
 You can now also filter to view only those Projects:
 
-<figure><img src="../../../.gitbook/assets/uuid-ce306bb8-1d6d-c895-bdb5-3a7cd551977b-en (1) (1) (1) (1) (1) (1) (1) (1) (8).png" alt="Docker Hub projects"><figcaption><p>Docker Hub projects</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-ce306bb8-1d6d-c895-bdb5-3a7cd551977b-en-1- (1) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7).png" alt="Docker Hub projects"><figcaption><p>Docker Hub projects</p></figcaption></figure>
 
 When repositories and images are imported, a confirmation appears in green at the top of the screen. Docker Hub files are indicated with a unique icon ![Docker Hub](../../../.gitbook/assets/docker-hub-logo.png) .
 
