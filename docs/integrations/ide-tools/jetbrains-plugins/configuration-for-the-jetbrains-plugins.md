@@ -19,7 +19,7 @@ You can set the following configurations for the plugin, using **Preferences →
 * **Snyk Infrastructure as Code issues**: use to analyze the project for insecure configurations in Terraform and Kubernetes code; enabled by default.
 * **Snyk Container vulnerabilities**: use to analyze the project for container vulnerabilities in container images and Kubernetes applications; enabled by default.
 * **Snyk Code Security issues**: use to analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
-* **Snyk Code Quality issues**: use to analyze the project for quality issues in your application code using Snyk Code; disabled by default.
+* **Snyk Code Quality issues**: applies to Snyk Code only; disabled by default.
 * **Snyk Advisor issues**: health status (maintenance, community, popularity, and security) of your open source packages. Advisor scores are shown only for packages with an advisor score of less than 70.
 * **Automatically manage needed binaries** and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
   * When **Automatically manage needed binaries** is checked, the plugin will automatically download and keep the CLI updated.

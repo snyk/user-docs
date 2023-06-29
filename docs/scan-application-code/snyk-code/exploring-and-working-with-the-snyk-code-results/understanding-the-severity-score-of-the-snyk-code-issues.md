@@ -45,5 +45,5 @@ The severity of CWEs may change depending on the environment.
 
 ### CWE-601: Open Redirect
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt="Severity score for an open redirect."><figcaption><p>Severity score for an open redirect</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Severity score for an open redirect."><figcaption><p>Severity score for an open redirect</p></figcaption></figure>
 
