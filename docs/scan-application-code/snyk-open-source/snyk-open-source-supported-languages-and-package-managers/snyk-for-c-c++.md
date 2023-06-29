@@ -11,7 +11,7 @@ Some features may not be available, depending on your plan. See [pricing plans](
 
 | Package managers / Features | CLI support | Git support | License scanning | Fix PRs |
 | --------------------------- | ----------- | ----------- | ---------------- | ------- |
-| C/C++                       | ✔︎          |             |                  |         |
+| C/C++                       | ✔︎          |             |  ✔︎                |         |
 
 ## How Snyk for C/C++ works
 
