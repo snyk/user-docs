@@ -230,7 +230,7 @@ To configure the Auto-assign settings for a specific Project from an imported pr
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (2) (6).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure>
 
 </div>
 
