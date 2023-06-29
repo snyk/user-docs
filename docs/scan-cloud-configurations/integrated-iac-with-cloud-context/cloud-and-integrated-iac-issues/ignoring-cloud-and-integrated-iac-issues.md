@@ -33,7 +33,7 @@ To ignore an issue via the Snyk Web UI:
 6. Select **Confirm**.\
    The message "Issue successfully ignored and will be applied on next scan" appears.\
    In addition, the pending ignore state is displayed in the issue panel.\
-   ![Pending ignore state displayed in issue panel](<../../../.gitbook/assets/image (4).png>)
+   ![Pending ignore state displayed in issue panel](<../../../.gitbook/assets/image (5).png>)
 7. To apply the ignore immediately, [re-scan the environment](../snyk-environments/scan-a-cloud-environment.md).\
    You also can wait for the ignore to be applied on the next scheduled scan.
 8. Refresh the page in your browser to see the "Ignored" message in the side panel.
