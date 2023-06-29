@@ -86,3 +86,11 @@ If you want to use Insights, you must install the Kubernetes connector for Insig
 #### **What workload configuration the Kubernetes connector for Insights is collecting?**
 
 [Here](https://github.com/snyk/kubernetes-scanner/blob/main/helm/kubernetes-scanner/values.yaml) is the list of data Snyk is collecting.
+
+**What happens to my data if I delete the Kubernetes connector?**
+
+If you choose to delete the Kubernetes connector, your data and risk factors will still be available for 48 hours.
+
+**What happens to my data if the Kubernetes connector stops working?**
+
+If, for any reason, the Kubernetes connector stops working, your data and risk factors will still be available for 48 hours.
