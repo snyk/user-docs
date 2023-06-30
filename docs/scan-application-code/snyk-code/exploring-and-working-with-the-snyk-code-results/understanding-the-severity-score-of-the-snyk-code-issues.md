@@ -41,7 +41,7 @@ The severity of CWEs may change depending on the environment.
 
 ### CWE-22: Path Traversal
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="Severity score for a path traversal."><figcaption><p>Severity score for a path traversal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt="Severity score for a path traversal."><figcaption><p>Severity score for a path traversal</p></figcaption></figure>
 
 ### CWE-601: Open Redirect
 

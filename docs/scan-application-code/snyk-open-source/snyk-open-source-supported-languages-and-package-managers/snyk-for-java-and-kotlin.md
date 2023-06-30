@@ -376,7 +376,7 @@ The following explains how Snyk analyzes and treats each of the previous example
 * Project POM - Snyk creates a Project with a single dependency of `log4j,` with `v1.2.12.` Snyk applies the rules from the parent BOM to identify the correct version for `log4j`. The dependency `commons-logging` is not included, as it is not directly declared in the Project POM.
 
 {% hint style="info" %}
-If a BOM has direct dependencies outside`dependencyManagement`, then Snyk creates a Project for it.&#x20;
+If a BOM has direct dependencies outside`dependencyManagement`, then Snyk creates a Project for that BOM.&#x20;
 {% endhint %}
 
 ## Additional Snyk support for Java
