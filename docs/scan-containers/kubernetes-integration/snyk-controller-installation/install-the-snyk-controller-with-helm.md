@@ -13,12 +13,12 @@ These installation pages cover:
 
 ## Steps to install the Snyk Controller with Helm
 
-Access your Kubernetes environment and run the following command to add the Snyk Charts repository to Helm:
+1. Access your Kubernetes environment and run the following command to add the Snyk Charts repository to Helm:
 
 <pre><code><strong>helm repo add snyk-charts https://snyk.github.io/kubernetes-monitor --force-update
 </strong></code></pre>
 
-After the repository is added, create a unique namespace for the Snyk controller:
+2. After the repository is added, create a unique namespace for the Snyk controller:
 
 ```
 kubectl create namespace snyk-monitor
@@ -67,27 +67,51 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 ```
 
 {% hint style="info" %}
-* Replace the name **Production cluster** with a name based on the cluster you are monitoring. You can use this label to find workloads in Snyk later.
+* Replace "**Production cluster"** with a name based on the cluster you are monitoring. You can use this label to find workloads in Snyk later.
 * Note that **`/`** in cluster name is **disallowed**. Any **`/`** in cluster names will be removed.
-* To avoid renaming the cluster on every update, you can use the existing option from Helm **--reuse-values**. This means when upgrading, Helm will reuse the values from the last release and merge in any overrides from the command line via **--set** and **-f**
+* To avoid renaming the cluster on every update, you can use the existing option from Helm **--reuse-values**. When upgrading, Helm will reuse the values from the last release and merge in any overrides from the command line via **--set** and **-f**
+{% endhint %}
+
+### Integrating AKS with ACR using Managed Identities
+
+1. When you are using AKS with user-managed identities to authorise access to ACR, and there are multiple identities that assign the `AcrPull` role to the VM scale set, you must also specify the Client ID of the desired user-managed identity to be used. This value must be set as an override, in `.Values.azureEnvVars`:
+
+```yaml
+azureEnvVars:
+  - name: AZURE_CLIENT_ID
+    value: "abcd1234-abcd-1234-abcd-1234abcd1234"
+```
+
+2. With the YAML above saved in `override.yaml`, run the following:
+
+```bash
+helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+  --namespace snyk-monitor \
+  -f override.yaml
+```
+
+By default, this value is set to an empty string, and it will not be used as such.
+
+{% hint style="info" %}
+When using the system-managed identity with the `AcrPull` role assigned, setting this variable is not necessary.&#x20;
 {% endhint %}
 
 ## Optional installation steps
 
-For any additional, optional Snyk Controller steps that fit your environment, refer to [Optional installation steps for Snyk Controller with Helm](optional-installation-steps-for-snyk-controller-with-helm.md)[.](optional-installation-steps-for-snyk-controller-with-helm.md)
+To add any additional, optional Snyk Controller steps that fit your environment, refer to [Optional installation steps for Snyk Controller with Helm](optional-installation-steps-for-snyk-controller-with-helm.md)[.](optional-installation-steps-for-snyk-controller-with-helm.md)
 
 ## Updating an existing installation
 
 If you are an existing customer and are updating your Snyk Controller:
 
-* Create a service account token as described on the [prerequisites page](prerequisites-for-snyk-controller.md). This token will be stored in the `snyk-monitor` secret.
-* Delete your existing `snyk-monitor` secret:
+1. Create a service account token as described on the [prerequisites page](prerequisites-for-snyk-controller.md). This token will be stored in the `snyk-monitor` secret.
+2. Delete your existing `snyk-monitor` secret:
 
 ```shell
 kubectl delete secret snyk-monitor -n snyk-monitor
 ```
 
-* Follow the instructions in the [Installation steps](install-the-snyk-controller-with-helm.md#installation-steps) section. To get the latest Helm chart version, make sure you run the following command:
+3. Follow the instructions in the [Installation steps](install-the-snyk-controller-with-helm.md#installation-steps) section. To get the latest Helm chart version, make sure you run the following command:
 
 <pre><code><strong>helm repo add snyk-charts https://snyk.github.io/kubernetes-monitor --force-update
 </strong></code></pre>

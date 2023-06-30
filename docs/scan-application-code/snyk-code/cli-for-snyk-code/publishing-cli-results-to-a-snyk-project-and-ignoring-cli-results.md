@@ -33,7 +33,7 @@ If a CLI-based Snyk Code Project does not yet exist for the value provided in th
 
 You can ignore issues from CLI results in the Web UI by using the ignore button:
 
-<figure><img src="../../../.gitbook/assets/image (1) (6) (2).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
 
 Issues that are ignored in the Web UI are ignored in CLI tests when you use the following command:
 
