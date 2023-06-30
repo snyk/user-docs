@@ -20,7 +20,7 @@ If you are behind a proxy, configure the proxy settings using VS Code proxy sett
 
 ## Visual Studio Code extension configuration
 
-After the extension is installed, you can set the following configurations for the extension:
+After the extension is installed, you can set the following configuration options for the extension. Note: Be sure to review the **Advanced** setting **Organization**.&#x20;
 
 * **Features**
   * **Code Security**: configure if code security analysis should run over your code.
