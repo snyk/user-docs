@@ -45,10 +45,10 @@ Before going through the migration process, you should note that the following P
 
 The migration process includes the following steps:
 
-1. [Deleting the existing Projects](migrate-a-bitbucket-cloud-legacy-integration.md#1.-delete-existing-projects) that are connected to the Bitbucket Cloud PAT (Legacy) integration in Snyk.
-2. [Disconnecting the Legacy integration in Snyk](migrate-a-bitbucket-cloud-legacy-integration.md#2.-disconnect-the-legacy-integration).
-3. [Removing the first-party extension](migrate-a-bitbucket-cloud-legacy-integration.md#3.-remove-the-snyk-tab-for-the-legacy-integration-in-bitbucket-cloud-optional) for the Legacy integration in Bitbucket (optional)
-4. [Connecting the Bitbucket Cloud App ](migrate-a-bitbucket-cloud-legacy-integration.md#set-up-the-new-bitbucket-cloud-app-integration.)and importing Projectspersist.
+1. [Deleting the existing Projects](migrate-a-bitbucket-cloud-personal-access-token.md#1.-delete-existing-projects) that are connected to the Bitbucket Cloud PAT (Legacy) integration in Snyk.
+2. [Disconnecting the Legacy integration in Snyk](migrate-a-bitbucket-cloud-personal-access-token.md#2.-disconnect-the-legacy-integration).
+3. [Removing the first-party extension](migrate-a-bitbucket-cloud-personal-access-token.md#3.-remove-the-snyk-tab-for-the-legacy-integration-in-bitbucket-cloud-optional) for the Legacy integration in Bitbucket (optional)
+4. [Connecting the Bitbucket Cloud App ](migrate-a-bitbucket-cloud-personal-access-token.md#set-up-the-new-bitbucket-cloud-app-integration.)and importing Projects.
 
 #### 1. Delete existing Projects
 

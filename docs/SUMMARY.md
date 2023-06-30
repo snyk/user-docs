@@ -148,7 +148,7 @@
     * [GitHub Enterprise integration](integrations/git-repository-scm-integrations/github-enterprise-integration.md)
     * [GitHub Read-only Projects](integrations/git-repository-scm-integrations/github-read-only-projects.md)
     * [Bitbucket Cloud Legacy integration](integrations/git-repository-scm-integrations/bitbucket-cloud-legacy-integration.md)
-    * [Migrate a Bitbucket Cloud Personal Access Token](integrations/git-repository-scm-integrations/migrate-a-bitbucket-cloud-legacy-integration.md)
+    * [Migrate a Bitbucket Cloud Personal Access Token](integrations/git-repository-scm-integrations/migrate-a-bitbucket-cloud-personal-access-token.md)
     * [Bitbucket Cloud App integration](integrations/git-repository-scm-integrations/bitbucket-cloud-app-integration.md)
     * [Bitbucket Data Center/Server integration](integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md)
     * [GitLab integration](integrations/git-repository-scm-integrations/gitlab-integration.md)
