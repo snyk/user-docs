@@ -12,13 +12,15 @@ The Snyk Controller will not be able to access these registries if the credentia
 
 Create a file named `dockercfg.json`. Store your credentials in this file.
 
-{% hint style="info" %}
-Where your cluster runs and where your registries run determine the combination of entries in your dockercfg.json. The file can contain credentials for multiple registries
+{% hint style="warning" %}
+Where your cluster runs and where your registries run determine the combination of entries in your dockercfg.json. The file can contain credentials for multiple registries.
 {% endhint %}
 
 {% hint style="warning" %}
 Pay careful attention to formatting and whitespace in the dockercfg.json file. Malformed files will result in authentication failures.
 {% endhint %}
+
+Make sure the config file is named `dockercfg.json`. The `snyk-monitor` expects that specific naming.
 
 If credentials already reside in `$HOME/.docker/config.json`, you can copy this information to the `dockercfg.json` file.
 

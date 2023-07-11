@@ -45,7 +45,7 @@ To create a new tag for a Snyk Project:
 
 1.  On the Project details page, under **TAGS** click **Add a key/value...**\\
 
-    ***
+
 
     <figure><img src="../../.gitbook/assets/projects-tags_20sept2022.png" alt="Choose option to create a Project tag"><figcaption><p>Choose option to create a Project tag</p></figcaption></figure>
 2. Add the new key and click **Enter**.
