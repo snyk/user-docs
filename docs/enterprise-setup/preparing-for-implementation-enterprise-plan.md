@@ -7,7 +7,7 @@ Please read the [Getting started with Snyk: Enterprise plan](getting-started-wit
 In this guide, we’ll look at a few planning steps and walk through some initial configuration options that you should complete before inviting more teams and scanning additional applications.
 
 {% hint style="info" %}
-If you have been using Snyk on the Free/Team Plan and are looking for guidance on upgrading to the Enterprise plan, read the [Upgrading to Enterprise Plan](upgrading-to-enterprise-plan.md) guide.
+If you have been using Snyk on the Free/Team Plan and are looking for guidance on upgrading to the Enterprise plan, read the [Upgrading to Enterprise Plan](upgrading-to-the-enterprise-plan.md) guide.
 {% endhint %}
 
 ### Topics to consider

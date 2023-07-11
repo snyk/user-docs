@@ -572,7 +572,7 @@
     * [View licenses](manage-issues/dependencies-and-licenses/view-licenses.md)
 * [Enterprise setup](enterprise-setup/README.md)
   * [Getting started with the Snyk Enterprise plan](enterprise-setup/getting-started-with-the-snyk-enterprise-plan.md)
-  * [Upgrading to Enterprise plan](enterprise-setup/upgrading-to-enterprise-plan.md)
+  * [Upgrading to the Enterprise plan](enterprise-setup/upgrading-to-the-enterprise-plan.md)
   * [Preparing for implementation: Enterprise plan](enterprise-setup/preparing-for-implementation-enterprise-plan.md)
   * [Manage authentication](enterprise-setup/manage-authentication/README.md)
     * [Authentication for third-party tools](enterprise-setup/manage-authentication/authentication-for-third-party-tools.md)
