@@ -8,14 +8,14 @@ To authenticate follow these steps:
 
 1.  Once the extension is installed, click on the Snyk Icon in the left navigation bar:
 
-    <img src="../../../.gitbook/assets/image (130) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7).png" alt="" data-size="original">
+    <img src="../../../.gitbook/assets/image (130) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7) (4).png" alt="" data-size="original">
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and asks you to authenticate your machine against the Snyk web application:
 
-    <img src="../../../.gitbook/assets/image (147) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
+    <img src="../../../.gitbook/assets/image (147) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 3. Click **Authenticate**.
 4.  After successful authentication, view the confirmation message. If you need to authenticate using your API token, see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-the-cli-with-your-account.md).
 
-    <img src="../../../.gitbook/assets/image (154) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+    <img src="../../../.gitbook/assets/image (154) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" data-size="original">
 5. Close the browser window and return to VS Code. VS Code is now reading and saving the authentication on your local machine.
 
 ## Switching accounts
@@ -29,7 +29,7 @@ To re-authenticate with a different account, follow these steps:
 
 Or you run `Snyk: Set Token` command and set your [token](../../../snyk-api-info/authentication-for-api.md) in the text field manually.
 
-![Set token manually](<../../../.gitbook/assets/image (80) (1).png>)
+![Set token manually](<../../../.gitbook/assets/image (80) (1) (1).png>)
 
 ## Requirements for Linux and Unix
 

@@ -253,7 +253,7 @@
       * [Snyk for Elixir](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
       * [Snyk for Go](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang.md)
       * [Snyk for Java and Kotlin](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md)
-      * [Snyk for JavaScript](scan-application-code/supported-languages-and-frameworks/javascript/README.md)
+      *
       * [Snyk for PHP](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
       * [Snyk for Python](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)
       * [Snyk for Ruby](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
@@ -571,7 +571,7 @@
     * [View dependencies](manage-issues/dependencies-and-licenses/view-dependencies.md)
     * [View licenses](manage-issues/dependencies-and-licenses/view-licenses.md)
 * [Enterprise setup](enterprise-setup/README.md)
-  * [Getting started with Snyk: Enterprise plan](enterprise-setup/getting-started-with-snyk-enterprise-plan.md)
+  * [Getting started with the Snyk Enterprise plan](enterprise-setup/getting-started-with-the-snyk-enterprise-plan.md)
   * [Upgrading to Enterprise plan](enterprise-setup/upgrading-to-enterprise-plan.md)
   * [Preparing for implementation: Enterprise plan](enterprise-setup/preparing-for-implementation-enterprise-plan.md)
   * [Manage authentication](enterprise-setup/manage-authentication/README.md)

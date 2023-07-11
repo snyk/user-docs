@@ -20,7 +20,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
     <figure><img src="../../../.gitbook/assets/4 (3).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
 5.  Choose **Create your own application**.
 
-    <figure><img src="../../../.gitbook/assets/5 (5).png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/5 (5) (1).png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
 6.  Name the application appropriately, for example, **Snyk-SSO**, making sure that **Integrate any other application you don't find in the gallery (Non-gallery)** is selected and then click **Create**.
 
     <figure><img src="../../../.gitbook/assets/6 (1).png" alt="Application name and integration"><figcaption><p>Application name and integration</p></figcaption></figure>
@@ -29,7 +29,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
     <figure><img src="../../../.gitbook/assets/7 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Set up single sign-on, Get started"><figcaption><p>Set up single sign-on, Get started</p></figcaption></figure>
 8.  Select **SAML** as the SSO method.
 
-    <figure><img src="../../../.gitbook/assets/8 (1).png" alt="Select SAML"><figcaption><p>Select SAML</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/8 (1) (1).png" alt="Select SAML"><figcaption><p>Select SAML</p></figcaption></figure>
 9.  Click **Edit** under **Basic SAML configuration**.
 
     <figure><img src="../../../.gitbook/assets/9 (4).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>

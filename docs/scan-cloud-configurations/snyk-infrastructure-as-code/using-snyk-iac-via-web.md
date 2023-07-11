@@ -44,9 +44,9 @@ Click **Ignore** to ignore this vulnerability. For details, see [Ignore Issues](
 
 Terraform Cloud and Helm do not show a code snippet, only the card details. There is no **Full details** button to show the preview of the full code.
 
-<figure><img src="../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (2).png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
 
 ### Examples without the line with the vulnerable path
 
@@ -54,4 +54,4 @@ If Snyk can not identify the exact line of the vulnerable path in the file, Snyk
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07 (1).png" alt="Card detils with info message"><figcaption><p>Card detils with info message</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17.png" alt="Full details display"><figcaption><p>Full details display</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17 (1).png" alt="Full details display"><figcaption><p>Full details display</p></figcaption></figure>

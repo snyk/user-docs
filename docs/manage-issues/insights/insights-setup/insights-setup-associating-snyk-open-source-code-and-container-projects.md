@@ -35,7 +35,7 @@ See the examples at the end of this section.&#x20;
 
 In this example, there is a single repository containing your package.json which is built into an image called image-A.
 
-<figure><img src="../../../.gitbook/assets/Example - Single repo Single image.png" alt="Example: single repo to single image"><figcaption><p>Example: single repo to single image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Example - Single repo Single image (1).png" alt="Example: single repo to single image"><figcaption><p>Example: single repo to single image</p></figcaption></figure>
 
 To map these associations, you would have the following tags set up:
 

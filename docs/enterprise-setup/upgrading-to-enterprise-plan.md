@@ -4,7 +4,7 @@ Read this guide if you are currently using Snyk on either the Free or Team plan,
 
 For full information about how to implement Snyk on the Enterprise plan, read:
 
-* [Getting started with Snyk: Enterprise plan](getting-started-with-snyk-enterprise-plan.md)
+* [Getting started with Snyk: Enterprise plan](getting-started-with-the-snyk-enterprise-plan.md)
 * [Preparing for Implementation: Enterprise Plan](preparing-for-implementation-enterprise-plan.md)
 
 #### Enterprise features overview

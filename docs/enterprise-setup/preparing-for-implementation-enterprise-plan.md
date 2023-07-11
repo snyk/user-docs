@@ -1,7 +1,7 @@
 # Preparing for implementation: Enterprise plan
 
 {% hint style="info" %}
-Please read the [Getting started with Snyk: Enterprise plan](getting-started-with-snyk-enterprise-plan.md) guide before you read this guide.
+Please read the [Getting started with Snyk: Enterprise plan](getting-started-with-the-snyk-enterprise-plan.md) guide before you read this guide.
 {% endhint %}
 
 In this guide, we’ll look at a few planning steps and walk through some initial configuration options that you should complete before inviting more teams and scanning additional applications.
