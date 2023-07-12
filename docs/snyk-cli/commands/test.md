@@ -67,7 +67,8 @@ Example: `$ snyk test --all-projects --exclude=dir1,file2`
 
 This will exclude any directories and files named `dir1` and `file2` when scanning for project manifest files such as: `./dir1`, `./src/dir1`, `./file2`, `./src/file2` and so on.
 
-**Note**: `--exclude=dir1` will find both  `./dir1`, and `./src/dir1`. However, `exclude=./src/dir1` is not found because it is a path.
+**Note**: `--exclude=dir1` will find both  `./dir1`, and `./src/dir1`.\
+However, `--exclude=./src/dir1` will result in an error because it includes a path.
 
 **Note**: this option is not supported for Gradle sub-projects.
 
