@@ -23,9 +23,9 @@ See the examples at the end of this section.&#x20;
 
 ## Requirements for Project tags
 
-* The same tag must be applied to the container image and Code or Open Source Projects
-* The tag must follow the specified format
-* The Projects do not have to be in the same Snyk Organization to be mapped but MUST be in the same Snyk Group
+* The same tag must be applied to the container image and Code or Open Source Projects,
+* The tag must follow the specified format,
+* The Projects do not have to be in the same Snyk Organization to be mapped but MUST be in the same Snyk Group,
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-06-06 at 23.29.29.png" alt="Project tags"><figcaption><p>Project tags</p></figcaption></figure>
 
@@ -41,7 +41,7 @@ To map these associations, you would have the following tags set up:
 
 <table><thead><tr><th width="165">Location</th><th width="161">Asset</th><th width="213">Snyk Project Location</th><th width="238">Tag(s)</th><th>Notes</th></tr></thead><tbody><tr><td>github.com/my-team/front-end</td><td><code>package.json</code></td><td><p>Snyk Org: my-team</p><p><br>Project name: package.json</p></td><td><code>component=pkg:github/my-team/front-end@main</code></td><td>The same tag is applied to both sides</td></tr><tr><td><br></td><td>Built container image called <code>image-A</code></td><td><p>Snyk Org: my-team<br></p><p>Project name: image-A</p></td><td><code>component=pkg:github/my-team/front-end@main</code></td><td></td></tr></tbody></table>
 
-### **Multiple Repos to a single image**
+### **Multiple repos to a single image**
 
 <figure><img src="../../../.gitbook/assets/Example - Multiple repos Single image.png" alt="Example: multiple repos to single image"><figcaption><p>Example: multiple repos to single image</p></figcaption></figure>
 
@@ -85,14 +85,14 @@ Project Tags can be applied as follows:
 <table><thead><tr><th width="185.33333333333331">Product</th><th width="197">Method</th><th>Project Source</th></tr></thead><tbody><tr><td>Snyk Code</td><td><ul><li>API</li></ul></td><td><p>For projects created by </p><ul><li>Git Import</li></ul></td></tr><tr><td>Snyk Open Source</td><td><ul><li>API</li><li>UI</li><li>CLI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li><li>CLI Monitor</li></ul></td></tr><tr><td>Snyk Container</td><td><ul><li>API</li><li>UI</li><li>CLI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li><li>CLI Monitor</li><li>Container Registry Integration</li></ul></td></tr></tbody></table>
 
 {% hint style="info" %}
-Snyk recommends applying the tags through the API because the process can be automated with this method.
+Snyk recommends applying the tags through the API because the process can be automated using the API.
 {% endhint %}
 
 ## UI example for Project tags
 
 <div align="center">
 
-<figure><img src="../../../.gitbook/assets/uiExample.png" alt="UI example for Project tags"><figcaption><p>Project tags: UI example</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uiExample.png" alt="UI example for Project tags"><figcaption><p>UI example for Project tags</p></figcaption></figure>
 
 </div>
 
@@ -116,5 +116,5 @@ Example:
 ```
 
 {% hint style="warning" %}
-To ensure you have set up your Kubernetes connector properly, navigate to the **Set up Insights** tab on the **Insights** page and check the **Image composition** section to view the data Insights has access to.
+To ensure you have set up your Kubernetes Connector properly, navigate to the **Set up Insights** tab on the **Insights** page and check the **Image composition** section to view the data Insights has access to.
 {% endhint %}
