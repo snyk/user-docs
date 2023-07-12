@@ -20,7 +20,7 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
     <figure><img src="../../../.gitbook/assets/2.png" alt="Add new custom SAML app"><figcaption><p>Add new custom SAML app</p></figcaption></figure>
 3.  Name your application appropriately and click **Continue**.
 
-    <figure><img src="../../../.gitbook/assets/3 (4) (1).png" alt="Name the SAML app"><figcaption><p>Name the SAML app</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/3 (4).png" alt="Name the SAML app"><figcaption><p>Name the SAML app</p></figcaption></figure>
 4.  Download the certificate and open it in your preferred text editor.
 
     <figure><img src="../../../.gitbook/assets/4 (3) (1).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
@@ -47,4 +47,4 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
 11. Finalize the setup by going back to the Snyk portal and decide how new users should be processed when signing in. Choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
 12. Then add the previously created **email** app attribute to both **Email** and **Username** and save the configuration. If you wish to populate the full name you may configure a custom attribute in Google Workspace.
 
-    <figure><img src="../../../.gitbook/assets/11 (1).png" alt="Tie together attributes from Google to Snyk"><figcaption><p>Tie together attributes from Google to Snyk</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/11.png" alt="Tie together attributes from Google to Snyk"><figcaption><p>Tie together attributes from Google to Snyk</p></figcaption></figure>

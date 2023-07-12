@@ -14,7 +14,7 @@ The templates are abstract pre-built constructs created to provide a quicker and
 
 :link: [Detailed explanation of templates](the-query-language.md#template)
 
-<figure><img src="../../../.gitbook/assets/query templates (1).png" alt="Overview of Query Templates."><figcaption><p>Query Templates</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/query templates.png" alt="Overview of Query Templates."><figcaption><p>Query Templates</p></figcaption></figure>
 
 ### Query predicates
 

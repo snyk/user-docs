@@ -18,7 +18,7 @@ IDE example:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (13) (2) (1).png" alt="License issues in an IDE"><figcaption><p>License issues in an IDE</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt="License issues in an IDE"><figcaption><p>License issues in an IDE</p></figcaption></figure>
 
 </div>
 

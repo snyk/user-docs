@@ -47,7 +47,7 @@ An issue ignored within an Open Source or Code Project in the Snyk web UI will b
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
 
-<figure><img src="../../.gitbook/assets/image (14) (2) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (2).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
 For more information, see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
 

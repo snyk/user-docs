@@ -1,0 +1,5 @@
+# How Insights works
+
+Insights relies on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with specific [risk factors](risk-factors/).
+
+Insights looks at your images, Kubernetes resources, and packages to understand how they all interact with each other.

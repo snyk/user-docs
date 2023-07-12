@@ -16,7 +16,7 @@ Severity levels indicate the assessed level of risk, as one of **C**ritical / **
 | --------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | <img src="../../.gitbook/assets/image (515).png" alt="" data-size="line">                                 | **Critical** | This may allow attackers to access sensitive data and run code on your application                                                         |
 | <img src="../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original"> | **High**     | This may allow attackers to access sensitive data in your application                                                                      |
-| ![](<../../.gitbook/assets/image (187) (2).png>)                                                          | **Medium**   | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
+| ![](<../../.gitbook/assets/image (187).png>)                                                              | **Medium**   | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
 | ![](<../../.gitbook/assets/image (497).png>)                                                              | **Low**      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
 
 {% hint style="info" %}
@@ -35,7 +35,7 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the **Pending tasks** section of the Dashboard:
 
-<img src="../../.gitbook/assets/image (44) (2).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (44).png" alt="" data-size="original">
 
 Associated with your [Snyk Projects](../introduction-to-snyk-projects/):
 

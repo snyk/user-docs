@@ -2,7 +2,7 @@
 
 To view and manage general settings for your Group, navigate to **Settings > GROUP SETTINGS > General:**
 
-<figure><img src="../../.gitbook/assets/image (10) (4).png" alt=""><figcaption><p>Group general settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Group general settings</p></figcaption></figure>
 
 * [Group name](group-general-settings.md#group-name)
 * [Group ID](group-general-settings.md#group-id)
