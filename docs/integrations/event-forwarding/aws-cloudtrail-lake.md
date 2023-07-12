@@ -39,7 +39,7 @@ To get started setting up a CloudTrail Lake integration, whether for a group or 
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/aws-ctl-1 (2).png" alt="Choose Snyk Add integration for Snyk"><figcaption><p>Choose Snyk Add integration for Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-1.png" alt="Choose Snyk Add integration for Snyk"><figcaption><p>Choose Snyk Add integration for Snyk</p></figcaption></figure>
 
 </div>
 
@@ -51,7 +51,7 @@ If you are creating this integration for a single Snyk organization, you will us
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/aws-ctl-2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3).png" alt="Organization ID on Snyk settings page"><figcaption><p>Organization ID on Snyk settings page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Organization ID on Snyk settings page"><figcaption><p>Organization ID on Snyk settings page</p></figcaption></figure>
 
 </div>
 
@@ -77,7 +77,7 @@ To do this, go to [the Snyk integrations page](https://app.snyk.io/integrations)
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/aws-ctl-3 (2) (1).png" alt="CloudTrail Lake tile on Snyk integrations page" width="563"><figcaption><p>CloudTrail Lake tile on Snyk integrations page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-3 (2).png" alt="CloudTrail Lake tile on Snyk integrations page" width="563"><figcaption><p>CloudTrail Lake tile on Snyk integrations page</p></figcaption></figure>
 
 </div>
 
@@ -85,7 +85,7 @@ Enter a **name** for this integration, your **AWS Account ID**, and the **Channe
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/aws-ctl-4 (1).png" alt="Integration name, AWS Account ID, Channel ARN" width="563"><figcaption><p>Integration name, AWS Account ID, Channel ARN</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-4.png" alt="Integration name, AWS Account ID, Channel ARN" width="563"><figcaption><p>Integration name, AWS Account ID, Channel ARN</p></figcaption></figure>
 
 </div>
 
@@ -138,7 +138,7 @@ Go to the [AWS CloudTrail Lake settings](https://app.snyk.io/manage/integrations
 
 Select **Remove integration** and confirm that you want to remove the integration.
 
-<figure><img src="../../.gitbook/assets/aws-ctl-6 (2) (1).png" alt="Remove integration button"><figcaption><p>Remove integration button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-6 (2).png" alt="Remove integration button"><figcaption><p>Remove integration button</p></figcaption></figure>
 
 This action removes Snyk’s configuration for this integration, which will **prevent any further audit logs from being sent to AWS CloudTrail Lake**. This does not remove the Snyk integration in AWS CloudTrail Lake. To do this, go to AWS CloudTrail Lake and delete the Snyk integration from the **Integration** list.
 
