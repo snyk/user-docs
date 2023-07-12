@@ -9,6 +9,10 @@ On this page you will find information about how to create and use Project colle
 * [Perform actions on Projects within a collection](project-collections.md#perform-actions-on-projects-within-a-collection)
 * [View your Project collections on the collection listing page](project-collections.md#view-your-project-collections-on-the-collection-listing-page)
 
+{% hint style="info" %}
+If you move a Project between Organizations, the Project will also be removed from any Project collections it is part of.
+{% endhint %}
+
 ## Select all filtered Projects that are visible to create a Project collection
 
 1.  On your Projects page, select the **All Projects** dropdown, and click **Create collection.**

@@ -54,7 +54,7 @@ To disable notifications for all the users in an Org ahead of your import, desel
 
 Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.
 
-<figure><img src="../../../.gitbook/assets/image (110).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (110) (1).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
 
 * Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as Projects.
 * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
@@ -134,7 +134,7 @@ To configure the PR test settings for specific Projects, select the relevant Org
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
 
 </div>
 

@@ -29,7 +29,7 @@ To re-authenticate with a different account, follow these steps:
 
 Or you run `Snyk: Set Token` command and set your [token](../../../snyk-api-info/authentication-for-api.md) in the text field manually.
 
-![Set token manually](<../../../.gitbook/assets/image (80) (1).png>)
+![Set token manually](<../../../.gitbook/assets/image (80) (1) (1).png>)
 
 ## Requirements for Linux and Unix
 

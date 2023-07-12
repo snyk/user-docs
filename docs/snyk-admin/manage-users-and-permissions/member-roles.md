@@ -50,7 +50,7 @@ If you specify Move project permissions for the role, you must include Add proje
 
 When the process of creating a role completes, a confirmation message appears.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (4).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
 
 ### Edit a Role
 
@@ -78,7 +78,7 @@ To copy a role, use the **Duplicate** button next to each role in the Member Rol
 
 Enter a unique name and description and click the **Duplicate Role** button. A Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-<figure><img src="../../.gitbook/assets/image (102).png" alt="Enter new role details"><figcaption><p>Enter new role details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (102) (1).png" alt="Enter new role details"><figcaption><p>Enter new role details</p></figcaption></figure>
 
 ### Delete a Role
 
