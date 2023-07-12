@@ -50,9 +50,9 @@ The following are the **prerequisites** for configuring App roles:
 9.  Select **Edit** next to **Attributes and Claims.**
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 3.19.31 PM.png" alt="Edit attributes and claims"><figcaption><p>Edit attributes and claims</p></figcaption></figure>
-10. Select **Add new claim**, \*\*\*\* add the following details, and **Save.**\
+10. Select **Add new claim** add the following details, and **Save.**\
     **Name**: roles\
     **Source**: Attribute\
-    **Source attribute**: user.assignedroles\\
+    **Source attribute**: user.assignedroles
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 2.55.05 PM.png" alt="Custom claim"><figcaption><p>Custom claim</p></figcaption></figure>
