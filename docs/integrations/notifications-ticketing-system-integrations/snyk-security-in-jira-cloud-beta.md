@@ -6,6 +6,10 @@ description: Enabling developers to see and triage security issues from Jira
 
 Snyk Security in Jira Cloud helps developers identify, prioritize and triage security vulnerabilities related to their code repositories directly from the Jira interface.
 
+### How Snyk Security in Jira Cloud works?
+
+The Snyk Security in Jira Cloud integration mirrors the information in the Snyk platform to Jira, such as scan results. You can view them in your native environment and create Jira issues as needed.
+
 {% hint style="info" %}
 **Feature availability**
 
