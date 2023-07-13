@@ -31,4 +31,4 @@ The following table lists code analysis errors and how to address them.
 | Upstream rate limit triggered while analyzing code. | The Git server rate limit has been reached and the repository cannot be read.                                                    | Wait a few minutes, then t[ry again](pr-checks-results.md#optional-re-run-pr-checks-results).    |
 | No valid credentials to perform code analysis.      | The personal access token or Oauth is not recognized or the user access is not provisioned.                                      | Revise your configuration on the Git repository side.                                            |
 
-[^1]: [andrei.onciu](http://localhost:5000/u/Ge4Ptulj2Hb65sgVH1Uanpl5nZv2 "mention") the link here is not&#x20;
+[^1]: [andrei.onciu](http://127.0.0.1:5000/u/Ge4Ptulj2Hb65sgVH1Uanpl5nZv2 "mention") the link here is not&#x20;

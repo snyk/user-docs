@@ -8,7 +8,7 @@ If you have not done so already, you should [create an account](quickstart/creat
 
 You can use the Snyk Web UI to run a full set of Snyk functions from your browser.
 
-<figure><img src="../.gitbook/assets/Dashboard-intro.png" alt="Introducing the Snyk Web UI"><figcaption><p>Introducing the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-07-13 at 11.06.29 AM.png" alt="Introducing the Snyk Web UI"><figcaption><p>Introducing the Snyk Web UI</p></figcaption></figure>
 
 {% hint style="info" %}
 You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../integrations/ide-tools/), and using the [Snyk API](../snyk-api-info/).
@@ -31,9 +31,9 @@ You can connect your code repositories, then use Snyk to scan and secure your ap
 
 When you log in to an existing account, the Web UI opens to the Dashboard, allowing you to view your pending tasks and vulnerable projects, invite team members, and add new Projects.
 
-<figure><img src="../.gitbook/assets/web_ui-landing_02oct2022.png" alt="Snyk dashboard for an Enterprise account"><figcaption><p>Snyk dashboard for an Enterprise account</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-07-13 at 11.09.02 AM.png" alt="Snyk dashboard for an Enterprise account"><figcaption><p>Snyk dashboard for an Enterprise account</p></figcaption></figure>
 
-In the above example, the Snyk dashboard for an Enterprise account shows pending tasks, vulnerable projects, and current security and license issues.
+In the above example, the Snyk dashboard for an Enterprise account shows pending tasks and vulnerable projects.
 
 #### Pending tasks
 
