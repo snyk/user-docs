@@ -10,6 +10,7 @@ To check for open source and licensing issues and code security, make sure that 
 
 * Group Admin role to get access to all integration settings (see [Member roles](../../snyk-admin/manage-users-and-permissions/member-roles.md)).
 * [Set up a Git repository integration](../../integrations/git-repository-scm-integrations/) (see the Snyk Training course: [Source code manager configuration](https://training.snyk.io/learn/course/source-code-manager-configurations)).
+  * PR Checks rely on webhooks from the SCM. Integration scope must include the ability to create webhooks.
 * [Import a Project](../../getting-started/quickstart/import-a-project.md) to have a working Git repository.
 * For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you.&#x20;
 

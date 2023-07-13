@@ -24,10 +24,11 @@ The following diagram explains how Snyk Checks PRs in your development workflow.
 **Step-by-step process**
 
 1. A developer creates a pull request (PR) in an SCM integrated with Snyk.
-2. Snyk automatically scans the code changes in the PR for issues.
-3. Snyk leaves security reviews and notes on the PR.
-4. The developer can view the PR Checks results and fix identified issues before merging the code.
-5. The PR Checks results appear as **Passed** or **Failed** directly in the SCM, preventing PRs from being merged with security issues.
+2. A webhook is triggered from the SCM to Snyk
+3. Snyk automatically scans the code changes in the PR for issues.
+4. Snyk leaves security reviews and notes on the PR.
+5. The developer can view the PR Checks results and fix identified issues before merging the code.
+6. The PR Checks results appear as **Passed** or **Failed** directly in the SCM, preventing PRs from being merged with security issues.
 
 ## What's next?
 
