@@ -6,7 +6,7 @@ Understand, plan and roll out your Enterprise-level Snyk solution.
 
 * [Getting started with Snyk: Enterprise plan](getting-started-with-the-snyk-enterprise-plan.md)
 * [Upgrading to Enterprise plan](upgrading-to-the-enterprise-plan.md)
-* [Preparing for implementation: Enterprise plan](preparing-for-implementation-enterprise-plan.md)
+* [Preparing for implementation: Enterprise plan](preparing-for-implementation-of-the-enterprise-plan.md)
 
 ### Authenticate and connect
 

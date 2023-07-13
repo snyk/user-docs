@@ -584,7 +584,7 @@
 * [Enterprise setup](enterprise-setup/README.md)
   * [Getting started with the Snyk Enterprise plan](enterprise-setup/getting-started-with-the-snyk-enterprise-plan.md)
   * [Upgrading to the Enterprise plan](enterprise-setup/upgrading-to-the-enterprise-plan.md)
-  * [Preparing for implementation: Enterprise plan](enterprise-setup/preparing-for-implementation-enterprise-plan.md)
+  * [Preparing for implementation of the Enterprise plan](enterprise-setup/preparing-for-implementation-of-the-enterprise-plan.md)
   * [Manage authentication](enterprise-setup/manage-authentication/README.md)
     * [Authentication for third-party tools](enterprise-setup/manage-authentication/authentication-for-third-party-tools.md)
   * [Set up Single Sign-On (SSO) for authentication](enterprise-setup/set-up-single-sign-on-sso-for-authentication/README.md)

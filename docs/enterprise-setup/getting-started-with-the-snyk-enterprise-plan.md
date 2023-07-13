@@ -1,6 +1,6 @@
 # Getting started with the Snyk Enterprise plan
 
-This page looks at how you can get several team members involved in trying Snyk to get feedback and buy-in.
+This page looks at how you can get several members of your team involved in trying Snyk to get feedback and buy-in.
 
 {% hint style="info" %}
 If you have been using Snyk on the Free or Team Plan and are looking for guidance on upgrading to the Enterprise plan, see [Upgrading to the Enterprise Plan](upgrading-to-the-enterprise-plan.md).
@@ -43,7 +43,7 @@ Add a Snyk Project to connect a Git repository integration. This video demonstra
 Adding projects video
 {% endembed %}
 
-See [Preparing for implementation of the Enterprise plan](preparing-for-implementation-enterprise-plan.md) for more information on configuring the Git repository integration for your Organization.
+See [Preparing for implementation of the Enterprise plan](preparing-for-implementation-of-the-enterprise-plan.md) for more information on configuring the Git repository integration for your Organization.
 
 ## **Configure initial Snyk integration settings**
 
@@ -60,7 +60,7 @@ The settings for each Snyk Project are inherited from the Snyk Organization inte
    4. **Automatic dependency upgrade pull requests**
 
 {% hint style="info" %}
-Snyk recommends defining standards for these options as well as notification defaults before you add more than a few Projects. When your teams are ready for a broader implementation, Snyk recommends defining standards for these options according to your security maturity. Review [Preparing for implementation of the Enterprise plan](preparing-for-implementation-enterprise-plan.md) for more information
+Snyk recommends defining standards for these options as well as notification defaults before you add more than a few Projects. When your teams are ready for a broader implementation, Snyk recommends defining standards for these options according to your security maturity. Review [Preparing for implementation of the Enterprise plan](preparing-for-implementation-of-the-enterprise-plan.md) for more information
 {% endhint %}
 
 ## **Review the Snyk scan result**
@@ -115,5 +115,5 @@ A scan with [**Snyk iac test**](../scan-cloud-configurations/snyk-infrastructure
 
 * If you want developers to try Snyk in their local environment using the IDE or CLI, review the [Getting started guide for individuals and small teams](../getting-started/getting-started-with-snyk-free-team-plan.md).
 * To get specific recommendations for your tech stack, visit the guide specific to your language.
-* When you are ready to plan a Snyk rollout to more teams, review [Preparing for implementation of the Enterprise plan](preparing-for-implementation-enterprise-plan.md) for more information.
+* When you are ready to plan a Snyk rollout to more teams, review [Preparing for implementation of the Enterprise plan](preparing-for-implementation-of-the-enterprise-plan.md) for more information.
 * See the [Launch Snyk to your teams](https://training.snyk.io/courses/launch-snyk-to-your-teams) training course for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.

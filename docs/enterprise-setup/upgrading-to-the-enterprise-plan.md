@@ -5,7 +5,7 @@ The purpose of this page is to help you if you are currently using Snyk on eithe
 For information about how to implement Snyk on the Enterprise plan, see:
 
 * [Getting started with the Snyk Enterprise plan](getting-started-with-the-snyk-enterprise-plan.md)
-* [Preparing for Implementation: Enterprise Plan](preparing-for-implementation-enterprise-plan.md)
+* [Preparing for Implementation: Enterprise Plan](preparing-for-implementation-of-the-enterprise-plan.md)
 
 ## Overview of features of the Snyk Enterprise plan
 
@@ -128,7 +128,7 @@ If you plan to run SAST scans with Snyk Code, check that Snyk Code is enabled wi
 Users can authenticate with their Snyk accounts in several ways, such as with a GitHub or Google account. However, now that you have Enterprise access, you may want to set up Single Sign-On (SSO) via your existing identity provider to streamline sign-ins and provisioning of new users.
 
 {% hint style="info" %}
-If you are using SSO, after you set it up, you'll need to remove any duplicate users from social login accounts (users who have logged in with other methods than SSO).
+If you are using SSO, after you set it up, you must remove any duplicate users from social login accounts. These are users who have logged in with other methods than SSO.
 {% endhint %}
 
 See [Setting up Single Sign-On (SSO) for authentication](set-up-single-sign-on-sso-for-authentication/) for more details on steps for using your identity provider to authenticate and provision Snyk to your teams.
