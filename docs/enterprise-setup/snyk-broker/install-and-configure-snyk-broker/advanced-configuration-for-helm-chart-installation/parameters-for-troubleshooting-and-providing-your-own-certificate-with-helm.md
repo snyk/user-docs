@@ -18,4 +18,3 @@ If you would like your Brroker to run as an HTTPS server, you can pass the files
 --set httpsCert=<CERT_NAME> --set httpsKey=<CERT_KEY>
 ```
 
-## P
