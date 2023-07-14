@@ -1,7 +1,7 @@
 # Insights
 
 {% hint style="info" %}
-Insights is currently in Open Beta. If you would like to participate, contact Snyk. See [Feature release process](../../more-info/snyk-feature-release-process.md) for more details.
+Insights is currently in Open Beta for Enterprise customers only. If you would like to participate, contact Snyk to add Insights to your plan. See [Feature release process](../../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
 Insights is a platform capability providing advanced application intelligence to help you better identify and prioritize your Code, Open Source, and Container issues based on the risk they pose to your application.
