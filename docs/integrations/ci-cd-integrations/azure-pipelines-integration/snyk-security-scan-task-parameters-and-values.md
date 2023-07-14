@@ -115,3 +115,12 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Type:** string
 
 **Description:** Additional Snyk CLI arguments to be passed in. See [CLI commands and options summary](https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference) for details. Add `--all-projects` as good practice (for example, for .NET), if no project has been found.
+
+## **Field:** Trust unknown Certificate Authorities (advanced)
+
+**Parameter:** ignoreUnknownCA\
+**Required:** No\
+**Default:** false\
+**Type:** boolean
+
+**Description:** Use to ignore unknown or self-signed certificates during certificate validation, so self-signed certificates are automatically trusted.
