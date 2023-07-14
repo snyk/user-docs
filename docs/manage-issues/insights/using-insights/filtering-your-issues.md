@@ -6,7 +6,7 @@ Insights operates at a Group level and offers you a holistic view of all the iss
 
 ## Funnel View
 
-The visual representation of your application’s issues and risk factors is called the funnel view. It provides you with the possibility of filtering the list of issues by the ones that have specific risk factors present or a combination of them.
+The visual representation of your application’s issues and risk factors is called the funnel view. It provides you with the possibility of filtering the list of issues by the ones that have specific risk factors present or a combination of them. Os condition, Deployed, and Public facing risk factors are clickable filters.
 
 ## Table view filters
 
@@ -20,5 +20,9 @@ By using the filters above the table view, you can filter your issues by the fol
 * **Snyk Product** - view only issues scanned by specific Snyk products
 
 You can also dd a variety of filters that you consider relevant for any particular scenario.
+
+Note that in an initial triage, you want to look at OS condition, Deployed, and Public facing, and choose BOTH critical and high severity. Snyk Open source finds critical vulnerabilities, while Snyk Code finds vulnerabilties up to high severity only. When you filter on the most concerning issues, filter for both critical and high severity.
+
+When you want to split out Open Source and Snyk Code issues, use a product filter.
 
 ![Add filter](<../../../.gitbook/assets/Screenshot 2023-07-12 at 02.07.21.png>)\
