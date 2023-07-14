@@ -12,7 +12,7 @@ To provide your own certificate (signed by your own CA), you can pass the file n
 --set caCert=<CERT_NAME)>
 ```
 
-If you would like your Brroker to run as an HTTPS server, you can pass the files to the `httpsCert` and `httpsKey` parameters. The files must reside within the Helm chart directory.
+If you want your Broker to run as an HTTPS server, you can pass the files to the `httpsCert` and `httpsKey` parameters. The files must reside within the Helm chart directory.
 
 ```
 --set httpsCert=<CERT_NAME> --set httpsKey=<CERT_KEY>
