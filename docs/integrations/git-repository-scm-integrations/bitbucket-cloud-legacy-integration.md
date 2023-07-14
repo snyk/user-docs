@@ -1,17 +1,13 @@
-# Bitbucket Cloud Legacy integration
+# Bitbucket Cloud integration
 
 {% hint style="info" %}
 **Feature availability**\
 This feature is available for all plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
-Support for the Bitbucket Cloud Legacy (Personal Access Token (PAT)) integration will continue for Snyk users who configured it prior to mid-October 2022.
-
-If you are new to Snyk, the Legacy integration tile may not be available on the Integrations page.
-
 Snyk recommends installing or [migrating](migrate-a-bitbucket-cloud-personal-access-token.md) to the [Bitbucket Cloud Application](bitbucket-cloud-app-integration.md) for smoother integration and to ensure long-term support.
 {% endhint %}
 
-The Snyk Bitbucket Cloud Legacy (PAT) integration lets you:
+The Snyk Bitbucket Cloud (PAT) integration lets you:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your open-source components
