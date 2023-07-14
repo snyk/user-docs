@@ -18,9 +18,9 @@ There is no definitive timeline for moving from one stage to another; this varie
 
 ### Open Beta
 
-| Description                                                       | Available to                 | Access                                                        | Docs         |
-| ----------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------- | ------------ |
-| Feature is tested and ready for use, but not available by default | All users on an opt-in basis | Opt-in: on request via Snyk account team, or via Snyk Preview | Public docs. |
+| Description                                                       | Available to                                                        | Access                                                        | Docs         |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------- | ------------ |
+| Feature is tested and ready for use, but not available by default | All users on [app.snyk.io](http://app.snyk.io/), on an opt-in basis | Opt-in: on request via Snyk account team, or via Snyk Preview | Public docs. |
 
 ### Limited Availability
 
