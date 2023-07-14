@@ -22,6 +22,8 @@ Snyk CLI scanning **supports many languages and tools.** For detailed informatio
 * [Snyk Container scanning](https://docs.snyk.io/scan-containers), including Docker scanning
 * [Snyk Infrastructure as Code](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code) scanning, including Terraform and Kubernetes (K8s) Projects
 
+This page explains how to install, authenticate, and start scanning using the CLI. Snyk also has an onboarding wizard to guide you through these steps. For a demonstration, view [Starting with Snyk: an overview of the CLI onboarding flow](https://www.youtube.com/watch?v=adj3VF82-v8).
+
 ## Install the Snyk CLI and authenticate your machine
 
 To use the CLI, you must install it and authenticate your machine. See [Install the Snyk CLI](install-the-snyk-cli/) and the [Auth](commands/auth.md) command help. You can refer to the [release notes](https://github.com/snyk/cli/releases) for a summary of changes in each release. Before scanning your code, review the [Code execution warning for Snyk CLI](code-execution-warning-for-snyk-cli.md).
