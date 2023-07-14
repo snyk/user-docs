@@ -6,17 +6,17 @@ To get value from Insights, you **must choose** an application where you are usi
 
 Snyk Insights operates by providing you with three risk factors for your vulnerabilities:&#x20;
 
-* **OS Condition**: Does this vulnerability apply to my operating system?
+* **OS condition**: Does this vulnerability apply to my operating system?
 * **Deployed**: Is my code and container image deployed anywhere?
-* **Public Facing**: Does my container have any internet exposure?
+* **Public acing**: Does my container have any internet exposure?
 
 To get data about these three risk factors, you must meet the following criteria:
 
-* **\[OS Condition]** Source code and dependencies are being built into a container image and scanned with Snyk Container. This is the minimum requirement to get value from Insights.
+* **OS condition:** Source code and dependencies are being built into a container image and scanned with Snyk Container. This is the minimum requirement to get value from Insights.
 
 <figure><img src="../../../.gitbook/assets/Example OS condition.png" alt="Source code and dependencies built into a container image"><figcaption><p>Source code and dependencies built into a container image</p></figcaption></figure>
 
-* **\[Deployed and Public Facing]** This container image is deployed onto a Kubernetes cluster, where you can deploy the [Kubernetes Connector](insights-setup-kubernetes-connector.md).
+* **Deployed and Public facing:** This container image is deployed onto a Kubernetes cluster, where you can deploy the [Kubernetes Connector](insights-setup-kubernetes-connector.md).
 
 By ensuring these two requirements are satisfied, you get data for all three risk factors for the code in your scanned image
 

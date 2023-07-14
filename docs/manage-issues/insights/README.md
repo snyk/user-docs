@@ -17,7 +17,7 @@ Insights works as illustrated in this example:
 
 * Snyk Open Source has identified a high-severity Remote Code Exploit (RCE).&#x20;
 * That RCE is built into a container image, which is deployed onto a production Kubernetes cluster, and the running container is configured to have access to the internet.&#x20;
-* The combination of an RCE in a running image with internet access enables Snyk to determine that this particular vulnerability poses more risk to your application.
+* The combination of an RCE in a running image with internet access enables Snyk to determine that this particular vulnerability poses more risk to your application than an RCE that is not deployed.
 
 The documentation on these pages explains more about how Insights works, how to set Insights up, and how to use it. For more information about how to use Insights, see the video [Using Insights (Snyk)](https://www.youtube.com/watch?v=dVlamm9gIGI\&t=8s).&#x20;
 
