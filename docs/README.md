@@ -1,11 +1,5 @@
 # User Docs
 
-{% hint style="success" %}
-See [Snyk user hub](https://snyk.io/user-hub/) to access all Snyk knowledge resources.
-{% endhint %}
-
-#### Get started with Snyk
-
 | <p>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</p> |
 | ------------------------------------------------------------------------------------------------ |
 

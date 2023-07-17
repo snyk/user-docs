@@ -1,23 +1,29 @@
 # Risk Score
 
+
+
 {% hint style="info" %}
-Risk Score is currently in Closed Beta for Snyk Open Source. If you are interested in replacing the Priority Score with the Risk Score, please contact your Snyk account team. See [Snyk feature release process](../../more-info/snyk-feature-release-process.md) for more details.
+Risk Score is currently in Closed Beta for Snyk Open Source and Snyk Container. If you are interested in replacing the Priority Score with the Risk Score, please get in touch with your Snyk account team. See the [Snyk feature release process](../../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
 ## Overview
 
-The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for each security issue and based on the potential impact and likelihood of exploitability. Ranging from 0-1000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
+The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for each security issue and based on the potential impact and likelihood of exploitability. From 0 to 1000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
 
 Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example Project scores distributions:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
 {% hint style="info" %}
-As part of the closed beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](priority-score.md) for how to interact with it in the UI, API, and Reports.&#x20;
+As part of the closed beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where it is now introduced when enabled.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
-The Priority Score will be replaced with the Risk Score upon retest of Projects.&#x20;
+The Priority Score will be replaced with the Risk Score upon retesting Snyk Open Source and Snyk Container Projects.&#x20;
+{% endhint %}
+
+{% hint style="warning" %}
+Note that in the API, the relevant fields are still named with `priority.`When enabled as part of the beta, the scores and factors populated in these fields are based on the Risk Score model.&#x20;
 {% endhint %}
 
 ## About the Risk Score Model&#x20;
@@ -27,13 +33,13 @@ The Priority Score will be replaced with the Risk Score upon retest of Projects.
 The model that powers the Risk Score applies automatic risk analysis for each security issue based on the potential impact and likelihood of exploitability.
 
 {% hint style="info" %}
-The Risk Model is the result of extensive research conducted by the Snyk Security data science team and experienced security researchers. It draws upon years of expertise in developing the Snyk Vulnerability DB.
+The Risk Model results from extensive research conducted by the Snyk Security Data Science team and experienced security researchers. It draws upon years of expertise in developing the [Snyk Vulnerability Database](https://security.snyk.io/).
 {% endhint %}
 
 ### Impact subscore
 
-* Objective impact factors are the CVSS impact metrics (Availability, Confidentiality, Integrity, and Scope) and are calculated based on the CVSS impact subscore.
-* Coming soon - Business criticality Project attribute ([learn more](https://docs.snyk.io/manage-issues/introduction-to-snyk-projects/project-attributes#available-attributes-and-their-values)) will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore.
+* Objective impact factors are the CVSS impact metrics (Availability, Confidentiality, Integrity, and Scope) calculated based on the CVSS impact subscore.
+* Coming soon - Business criticality Project attribute ([learn more](https://docs.snyk.io/manage-issues/introduction-to-snyk-projects/project-attributes#available-attributes-and-their-values)) will be considered a contextual impact factor, increasing or decreasing the impact subscore.
 
 ### Likelihood subscore&#x20;
 
@@ -45,7 +51,7 @@ The Risk Model is the result of extensive research conducted by the Snyk Securit
   * Social Trends
   * Malicious Package
   * Coming soon -  Disputed vulnerability and Package popularity&#x20;
-* Contextual likelihood factors then ncrease or decrease the likelihood subscore: &#x20;
+* Contextual likelihood factors then increase or decrease the likelihood subscore: &#x20;
   * Reachability (Java only, JavaScript coming soon)&#x20;
   * Transitive depth&#x20;
   * Coming soon - Insights such as public exposure and vulnerability condition applicability&#x20;
@@ -54,7 +60,7 @@ The Risk Model is the result of extensive research conducted by the Snyk Securit
 Impact and Likelihood scores are then multiplied into a final Risk Score.&#x20;
 
 {% hint style="info" %}
-"Fixability" is no longer considered as part of the Score Calculation, as the effort needed to mitigate a security issue does not affect the Risk it imposes. To focus on actionable issues first, use Fixability filters and then use the Risk Score to start with the riskiest issues.&#x20;
+"Fixability" is no longer considered part of the Score Calculation, as the effort needed to mitigate a security issue does not affect the Risk it imposes. To focus on actionable issues, use Fixability filters and then the Risk Score to start with the riskiest issues.&#x20;
 {% endhint %}
 
 ## Risk factors drill down
@@ -75,7 +81,7 @@ Represents the impact on customer’s data integrity, based on CVSS definition.
 
 #### Availability
 
-Represents the impact of customer’s application availability, based on CVSS definition.
+Represents the impact of customer’s application availability based on CVSS definition.
 
 **Possible input values:** _None, Low, High_
 
@@ -110,7 +116,7 @@ _Low -_ Impact subscore will decrease significantly
 
 #### EPSS score&#x20;
 
-Exploit Prediction Scoring System, predicting whether a CVE would be exploited in the wild, based on an elaborated model created and owned by the FIRST Organization. \
+Exploit Prediction Scoring System (EPSS), predicting whether a CVE would be exploited in the wild, based on an elaborated model created and owned by the FIRST Organization. \
 The probability is the direct output of the EPSS model, and conveys an overall sense of the threat of exploitation in the wild. This data is updated daily, relying on the latest available EPSS model version. Check out the EPSS [documentation](https://www.first.org/epss/articles/prob\_percentile\_bins) for more details.
 
 **Possible input values:** _EPSS score \[0.00-1.00]_
@@ -280,7 +286,7 @@ Snyk static code analysis determines whether the vulnerable method is being call
 {% hint style="info" %}
 **How would this affect the score?**&#x20;
 
-_Reachable_ - Likelihood subscore will increase, Transitive Depth will not be taken into account.&#x20;
+_Reachable_ - Likelihood subscore will increase, and Transitive Depth will not be considered.&#x20;
 
 _Not reachable_ - Likelihood subscore will not change
 
@@ -336,8 +342,6 @@ _Undefined_ - Likelihood subscore will not change
 {% hint style="warning" %}
 All factor names and their effect on the score are subject to change during the beta period
 {% endhint %}
-
-
 
 \
 \
