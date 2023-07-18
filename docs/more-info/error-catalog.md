@@ -241,6 +241,24 @@ There was an timeout when processing the dependecy tree.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-0012](#snyk-os-0012)
+
+#### Received more manifests than expected
+
+Too many manifest files were provided in the request body.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0013](#snyk-os-0013)
+
+#### Failed to apply dependency updates
+
+An error occured while updating dependencies.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
 
 #### Unsupported manifest file type for remediation
@@ -430,6 +448,17 @@ Cannot create source URL.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
+
+### [SNYK-OS-PIP-0001](#snyk-os-pip-0001)
+
+#### Unsupported manifest file type for remediation
+
+The provided requirements file is not supported by Snyk for Python.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python#git-services-for-pip-projects](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python#git-services-for-pip-projects)
 
 ---
 # Builds
@@ -944,4 +973,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-07-14T09:54:01.929Z
+--- Generated at 2023-07-18T06:35:52.953Z
