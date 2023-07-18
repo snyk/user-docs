@@ -378,7 +378,7 @@
     * [Advanced Snyk Container CLI usage](scan-containers/snyk-cli-for-container-security/advanced-snyk-container-cli-usage.md)
   * [Scan your Dockerfile](scan-containers/scan-your-dockerfile/README.md)
     * [Prerequisites for Dockerfile analysis](scan-containers/scan-your-dockerfile/prerequisites-for-dockerfile-analysis.md)
-    * [Supported repos for Dockerfile analysis](scan-containers/scan-your-dockerfile/supported-repos-for-dockerfile-analysis.md)
+    * [Supported SCMs for Dockerfile analysis](scan-containers/scan-your-dockerfile/supported-scms-for-dockerfile-analysis.md)
     * [Adding your Dockerfile and testing your base image](scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md)
     * [Detect vulnerable base images from Dockerfile](scan-containers/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
     * [Automatically link between Dockerfile and images using labels](scan-containers/scan-your-dockerfile/automatically-link-between-dockerfile-and-images-using-labels.md)

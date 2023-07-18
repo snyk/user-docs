@@ -3,7 +3,7 @@
 This section provides information about Dockerfile analysis and scanning base images from Dockerfile:
 
 * [Prerequisites for Dockerfile analysis](prerequisites-for-dockerfile-analysis.md)
-* [Supported repos for Dockerfile analysis](supported-repos-for-dockerfile-analysis.md)
+* [Supported repos for Dockerfile analysis](supported-scms-for-dockerfile-analysis.md)
 * [Adding your Dockerfile and testing your base image](adding-your-dockerfile-and-testing-your-base-image.md)
 * [Detect vulnerable base images from Dockerfile](detect-vulnerable-bases-images-from-dockerfile.md)
 * [Automatically link between Dockerfile and images using labels](automatically-link-between-dockerfile-and-images-using-labels.md)

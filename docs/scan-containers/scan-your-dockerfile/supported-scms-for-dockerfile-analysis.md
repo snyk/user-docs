@@ -1,4 +1,4 @@
-# Supported repos for Dockerfile analysis
+# Supported SCMs for Dockerfile analysis
 
 Snyk supports Dockerfile analysis for the following services:
 
@@ -6,4 +6,6 @@ Snyk supports Dockerfile analysis for the following services:
 * GitHub Enterprise
 * GitLab
 * Bitbucket Cloud
+* Bitbucket Cloud App
 * Bitbucket Server
+* Azure Repos
