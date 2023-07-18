@@ -44,7 +44,7 @@ A Snyk Project is an item scanned by Snyk; for example, a manifest file listing 
 
 For example:
 
-<figure><img src="../../.gitbook/assets/image (187) (2).png" alt="List of scanned Projects"><figcaption><p>List of scanned Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (187) (2) (1).png" alt="List of scanned Projects"><figcaption><p>List of scanned Projects</p></figcaption></figure>
 
 ### Understand Project information
 
@@ -71,7 +71,7 @@ Other files and types can be displayed; see [View project information](https://d
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1) (1).png>)) to define how that Project is scanned:
 
 <figure><img src="../../.gitbook/assets/image (379) (1).png" alt="Click cog icon to edit settings"><figcaption><p>Click cog icon to edit Project settings</p></figcaption></figure>
 

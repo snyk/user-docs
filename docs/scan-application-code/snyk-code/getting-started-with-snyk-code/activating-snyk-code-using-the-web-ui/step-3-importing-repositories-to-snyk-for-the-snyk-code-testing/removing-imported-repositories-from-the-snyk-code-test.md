@@ -87,4 +87,4 @@ The **Code analysis** Project you selected is either deactivated or deleted acco
 * **Code analysis deletion** - re-import the repository to Snyk, and then refresh the **Projects** page to view the re-import results.
 * **Code analysis deactivation** – re-activate the **Code analysis** Project via the **Settings** page of the Project. After you deactivate a Project, the **Deactivate project** button changes to **Activate project**, and a new **Activate** button appears at the top of the page. Click one of these buttons to re-activate the Project:
 
-<figure><img src="../../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (20) (2).png" alt=""><figcaption></figcaption></figure>

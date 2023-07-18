@@ -10,4 +10,4 @@ In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integrat
 Currently the hover information is limited to JavaEditor and GenericEditor, the latter being the default editor for plugins like Wild Web Developer.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Snyk IaC findings displayed in Eclipse</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (4).png" alt=""><figcaption><p>Snyk IaC findings displayed in Eclipse</p></figcaption></figure>

@@ -17,7 +17,7 @@ If your Snyk Account currently does not include any repositories, you need to im
 
 **Note**: You can click the **Show all repositories** link to display all the repositories in your integrated SCM.
 
-<figure><img src="../../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Click **Import and scan**.
 

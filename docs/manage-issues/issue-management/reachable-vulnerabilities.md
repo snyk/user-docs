@@ -87,9 +87,9 @@ After import or testing of a Project via Snyk UI, the Project is monitored by Sn
 3. **Call path** - Allows you to see the path from your code to the vulnerable function to validate the result.
 4. **Priority score** - Allows you to see reachable vulnerabilities first, as Snyk will increase the priority score for reachable vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt="Reachability call path"><figcaption><p>Reachability call oath</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (1).png" alt="Reachability call path"><figcaption><p>Reachability call oath</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (126) (1).png" alt="Priority Score"><figcaption><p>Priority score</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (126) (1) (2).png" alt="Priority Score"><figcaption><p>Priority score</p></figcaption></figure>
 
 ## Reachability status in reports
 
@@ -97,4 +97,4 @@ You can filter by reachability status to quickly show the reachable issues.&#x20
 
 Reachability is an input into the priority score. If an issue is found to be reachable, it can increase the score.
 
-<figure><img src="../../.gitbook/assets/image (85).png" alt="Issue Filters"><figcaption><p>Issue Filters</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (85) (1).png" alt="Issue Filters"><figcaption><p>Issue Filters</p></figcaption></figure>

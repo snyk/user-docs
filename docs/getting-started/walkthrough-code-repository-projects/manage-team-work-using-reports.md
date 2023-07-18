@@ -44,7 +44,7 @@ If you simply see more vulnerabilities in your codebase over time, this may not 
 
 For example, the total number of vulnerabilities is likely to rise when you add more Projects. The graph may display that linkage - when you see jumps in the total numbers of vulnerabilities, you may see corresponding jumps in the total numbers of Projects:
 
-<figure><img src="../../.gitbook/assets/image (258).png" alt="More Projects, more issues"><figcaption><p>More Projects, more issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (258) (2).png" alt="More Projects, more issues"><figcaption><p>More Projects, more issues</p></figcaption></figure>
 
 #### Security metric: ratio of vulnerabilities to Projects
 

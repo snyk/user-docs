@@ -23,7 +23,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
     <figure><img src="../../../.gitbook/assets/5 (5).png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
 6.  Name the application appropriately, for example, **Snyk-SSO**, making sure that **Integrate any other application you don't find in the gallery (Non-gallery)** is selected and then click **Create**.
 
-    <figure><img src="../../../.gitbook/assets/6 (1).png" alt="Application name and integration"><figcaption><p>Application name and integration</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/6 (1) (1).png" alt="Application name and integration"><figcaption><p>Application name and integration</p></figcaption></figure>
 7.  For the new app, select **Set up single sign on** and **Get started**.
 
     <figure><img src="../../../.gitbook/assets/7 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Set up single sign-on, Get started"><figcaption><p>Set up single sign-on, Get started</p></figcaption></figure>
@@ -53,7 +53,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
 
     <figure><img src="../../../.gitbook/assets/claim1.png" alt="Azure claim settings"><figcaption><p>Azure claim settings</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image2 (1).png" alt="Profile attributes section"><figcaption><p>Profile attributes section</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image2 (1) (1).png" alt="Profile attributes section"><figcaption><p>Profile attributes section</p></figcaption></figure>
 
 If you wish to add signature verification of the incoming Snyk request:
 
