@@ -20,6 +20,7 @@ curl -X POST \
     "type": "environments",
     "attributes": {
       "options": {
+        "identity_provider": "YOUR-IDENTITY-PPROVIDER-URL"
         "service_account_email": "YOUR-SERVICE-ACCOUNT-EMAIL",
         "project_id": "YOUR-PROJECT-ID"
       },
