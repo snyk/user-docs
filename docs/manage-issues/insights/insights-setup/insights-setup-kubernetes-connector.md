@@ -41,7 +41,7 @@ Navigate to the newly created role and [select edit](../../../snyk-admin/manage-
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
 
 ### Step 4: Create a service account and assign it to a role
 
@@ -55,7 +55,7 @@ Navigate to that **Snyk Organization -> Settings -> Service Account.**
 
 Create a new service account with your chosen name, and from the drop-down, select the role you created in the previous step.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt="Select the Insights k8s Agent role"><figcaption><p>Select the Insights k8s Agent role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt="Select the Insights k8s Agent role"><figcaption><p>Select the Insights k8s Agent role</p></figcaption></figure>
 
 After the service account is created, you will be shown the API token. Copy this down and store it somewhere safe; you’ll need this to configure the agent in the Helm chart.
 

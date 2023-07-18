@@ -12,7 +12,7 @@ Setting these variables only in a shell environment (for example, using `~/.bash
 * On `Windows`, you can set the variables using the GUI or on the command line using the `setx` tool.
 * On `macOS`, the process `launchd` must know the environment variables to launch the IDE from Finder directly. You can set environment variables for applications launched using Finder by using the `launchctl setenv` command, for example, on start-up or through a script you launch at user login.\
   **Note:** The provision of environment variables to the macOS UI can change between operating system releases, so it may be easier to create a small shell script that launches the IDE to leverage the shell environment that can be defined via `~/.bashrc`.
-* On `Linux`, updating the file /etc/environment can propagate the environment variables to the windows manager and UI.
+* On `Linux`, updating the file /etc/environment can propagate the environment variables to the Windows manager and UI.
 
 ## Proxy
 
@@ -33,11 +33,15 @@ After the extension is installed, you can set the following configuration option
 * **Scanning Mode:** run Snyk scans automatically in the background (Code and IaC)
 * **Advanced**
   * **Auto Scan Open Source Security**: run Snyk Open Source analysis in automatic mode.
-  * **Additional Parameters**: set additional snyk test [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for the Open Source scanning. For **unmanaged** [**C/C++ scanning**](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-c-c++.md), use the CLI option `--unmanaged` to find vulnerabilities in open source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
-  * **Organization**: specify an organization to run tests for that organization. Snyk recommends using `ORG_ID`. If you specify an organization slug name, the value of organization setting `snyk.advanced.organization` must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
-  * **Custom endpoint**: specify the custom Snyk API endpoint for your organization. Use this field for the custom endpoint for Single Tenant setups as well instead of https://app.snyk.io.
+  * **Additional Parameters**: set additional snyk test [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for the Open Source scanning. For **unmanaged** [**C/C++ scanning**](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-c-c++.md), use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
+  * **Organization**: specify an Organization to run tests for that Organization. Snyk recommends using `ORG_ID`. If you specify an Organization slug name, the value of the Organization setting `snyk.advanced.organization` must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If not specified, the preferred Organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
+  * **Custom endpoint**: specify the custom Snyk API endpoint for your Organization. Use this field for the custom endpoint for Single Tenant setups instead of https://app.snyk.io.
+  *   **Proxy Strict SSL:** check to specify that the proxy server certificate should be verified against the list of supplied CAs specific to Snyk Code.\
+      &#x20;&#x20;
+
+      <figure><img src="../../../.gitbook/assets/image (1).png" alt="roxy strict SSL option"><figcaption><p>Proxy strict SSL option</p></figcaption></figure>
   * **Automatic Dependency Management** and **Cli Path**: uncheck to opt out of downloading the CLI through the plugin and thus use your own installation of the CLI. Snyk recommends always using the most recent version of the CLI.
     * When **Automatic Dependency Management** is checked, the plugin will automatically download and keep the CLI updated.
-    *   When **Automatic Dependency Management** \_\_ is checked \_\_ and **Cli Path** contains a path, the plugin uses the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
+    *   When **Automatic Dependency Management** \_\_ is checked \_\_ and **Cli Path** contains a path, the plugin uses the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules), and you need to obtain the CLI through other means.
 
         <figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 14.08.05.png" alt="Automatic Dependency Management and CLI Path"><figcaption><p>Automatic Dependency Management and CLI Path</p></figcaption></figure>

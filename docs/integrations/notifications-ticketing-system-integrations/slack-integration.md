@@ -14,13 +14,13 @@ A newly disclosed vulnerability affects you:
 
 A new upgrade or patch is available for a vulnerability that you previously ignored or patched:
 
-<figure><img src="../../.gitbook/assets/image (22) (1) (2).png" alt="New upgrade available"><figcaption><p>New upgrade available</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt="New upgrade available"><figcaption><p>New upgrade available</p></figcaption></figure>
 
 To set the integration up, you must generate a Slack webhook. You can do this either via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
 
 Once you have generated your Slack Webhook URL, go to your **Manage Organization** settings and enter the URL.
 
-<figure><img src="../../.gitbook/assets/image (24) (1) (1).png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
 
 {% hint style="danger" %}
 Currently, only webhooks created with Slack Apps are supported; webhooks created with Slack Workflows are not currently supported.

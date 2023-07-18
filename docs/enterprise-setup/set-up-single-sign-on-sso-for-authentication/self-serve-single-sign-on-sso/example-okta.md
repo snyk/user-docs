@@ -20,7 +20,7 @@ This example shows setting up an Okta SAML application and connecting this to Sn
     <figure><img src="../../../.gitbook/assets/2 (2).png" alt="Okta SAML application creation"><figcaption><p>Okta SAML application creation</p></figcaption></figure>
 5.  Add the Entity ID and the sign on URL you copied from Snyk to the appropriate fields.
 
-    <figure><img src="../../../.gitbook/assets/3 (4).png" alt="Add SSO details in Okta"><figcaption><p>Add SSO details in Okta</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/3.png" alt="Add SSO details in Okta"><figcaption><p>Add SSO details in Okta</p></figcaption></figure>
 6.  Scroll down to **Attribute Statements** and add three attributes named with values as follows:
 
     * **Name**: email, **Value**: user.email

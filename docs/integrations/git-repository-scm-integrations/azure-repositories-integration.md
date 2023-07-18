@@ -84,7 +84,7 @@ After repositories are imported, a confirmation appears in green at the top of t
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (45) (2).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
 
 </div>
 
@@ -117,7 +117,7 @@ To enable integration between Azure Repository and Snyk:
 1. Log in to [your Snyk account](https://app.snyk.io) and go to **Integrations**.
 2. In the **Azure Repos** tile, click the settings icon to open **Organization Settings > Integrations >Azure Repos> Account credentials**.\
    <img src="../../.gitbook/assets/integrations -azure_repo_tile-11aug2022.png" alt="Azure Repos integration tile" data-size="original">
-3.  Set the Azure DevOps Organization that you want to integrate with by entering the slug for your Organization (![https://dev.azure.com/your-azure-devops-org with your-azure-devops-org highlighted](<../../.gitbook/assets/image (304) (1).png>)) and the PAT that you generated.
+3.  Set the Azure DevOps Organization that you want to integrate with by entering the slug for your Organization (![https://dev.azure.com/your-azure-devops-org with your-azure-devops-org highlighted](<../../.gitbook/assets/image (304).png>)) and the PAT that you generated.
 
     Enterprise customers can also provide a custom URL for an Azure Repos Server private instance that is publicly reachable.
 4. Click **Save**.\

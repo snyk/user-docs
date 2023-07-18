@@ -179,7 +179,7 @@ To use this feature, follow these steps:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt="Set an account to open Snyk PRs" width="563"><figcaption><p>Set an account to open Snyk PRs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="Set an account to open Snyk PRs" width="563"><figcaption><p>Set an account to open Snyk PRs</p></figcaption></figure>
 
 </div>
 
@@ -230,7 +230,7 @@ To configure the Auto-assign settings for a specific Project from an imported pr
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (2) (3).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (6).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure>
 
 </div>
 
@@ -294,7 +294,7 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (200) (1).png" alt="No vulnerabilities" data-size="line">
+* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (200).png" alt="No vulnerabilities" data-size="line">
 * A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (143) (1) (1) (1) (1) (1) (1) (2).png" alt="Number of vulnerabilities" data-size="line">
 * A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (279).png" alt="Unknown vulnerabilities" data-size="line">
 
@@ -303,7 +303,7 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
 * Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Flat rectangle badge" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (200) (1).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (200).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
 
 ### **npm badges**
 
