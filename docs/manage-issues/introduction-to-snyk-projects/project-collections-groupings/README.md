@@ -15,6 +15,14 @@ In the Snyk Web UI, you can:
 * Share a Project view with another member of your Organization
 * View reports on your Project views
 
+{% hint style="info" %}
+Any Organization-level role can create and share Project views.
+
+**Note:** You can create and configure a Project view only when you apply the **Group by none** grouping in the Project listing page.
+
+In addition, more filter options are available when you apply **Group by none**.
+{% endhint %}
+
 For details, see the [Project views](project-views.md) page.
 
 **Project collections** help you collect and organize your Projects so you can easily view and perform actions on them.
@@ -41,11 +49,3 @@ In the Snyk Web UI and API, you can:&#x20;
 * Perform bulk actions such as deleting, deactivating, and activating Projects in a collection. **Note:** Performing bulk actions is not exclusive to collections, and can be done on Projects in the Project listing page.
 
 For details, see the [Project collections](./) page.
-
-{% hint style="info" %}
-Any Organization-level role can create and share Project views.
-
-**Note:** You can create and configure a Project collection only when you apply the **Group by none** grouping in the Project listing page.
-
-In addition, more filter options are available when you apply **Group by none**.
-{% endhint %}
