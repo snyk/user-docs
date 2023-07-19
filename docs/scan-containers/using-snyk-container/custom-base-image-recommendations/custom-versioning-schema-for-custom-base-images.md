@@ -4,7 +4,7 @@ The Custom Versioning Schema (CVS) is a way for Snyk to understand your companyâ
 
 ## Prerequisites for Snyk CVS
 
-CVS is part of the Snyk Container **Custom Base Images** feature. For more information, see [Custom Base Image recommendations](custom-base-image-recommendations.md).
+CVS is part of the Snyk Container **Custom Base Images** feature. For more information, see [Custom Base Image recommendations](./).
 
 {% hint style="info" %}
 The Custom Versioning Schema is available only through the [Snyk REST API.](https://apidocs.snyk.io/a?#get-/custom\_base\_images)
@@ -12,7 +12,7 @@ The Custom Versioning Schema is available only through the [Snyk REST API.](http
 
 ## What is a versioning schema?
 
-A versioning schema is a system for identifying and organizing different versions of a Project. It is used to track changes and updates to the Project over time, and to help users identify which version they are using.
+A versioning schema is a system for identifying and organizing different versions of a Project. It is used to track changes and updates to the Project over time and to help users identify which version they are using.
 
 A versioning schema typically consists of a series of numbers or labels that are incremented to reflect the progression of versions.
 
@@ -87,7 +87,7 @@ The following ensures that you will receive only recommendations for the flavor 
 <pre class="language-regex"><code class="lang-regex">(?&#x3C;C0>\d+)\.(?&#x3C;C1>\d+)_V(?&#x3C;C2>\d+)<a data-footnote-ref href="#user-content-fn-4">\-(?&#x3C;M0>.*)</a>
 </code></pre>
 
-This includes a new group **M0**. "**M**" stands for "**match**." Snyk will use this group to filter out possible image recommendations where the match group's value isn't equal.
+This includes a new group **M0**. "**M**" stands for "**match**." Snyk will use this group to filter out possible image recommendations where the match group's value is not equal.
 
 {% hint style="info" %}
 The number following the "M" differentiates the multiple categories that your tag might have. In this case, there is only one category of things to match against, so there is only one match group.
@@ -187,7 +187,7 @@ When there is an inconsistent number of **compare** groups, Snyk will filter out
 
 Since `1.3` and `1.3.5` have the same issue as `1.2` and `1.2.4`, the recommendation will be either `1.3` or `1.3.5`. At this point, the specific version that will be recommended depends on undefined internal factors. However, we are looking to improve this logic.
 
-## Technical details
+## Technical details of the custom versioning schema
 
 ### Regular expression syntax flavor
 
@@ -235,7 +235,7 @@ This error can happen if an expression that does not conform to ECMAScript synta
 
 An example is using Pythonâ€™s named capture group syntax `(?P<C0>.*)`.
 
-#### How to fix i
+#### How to fix it
 
 See [Regular expression syntax flavor](custom-versioning-schema-for-custom-base-images.md#regular-expression-syntax-flavor) for information on the regex syntax.
 
