@@ -259,6 +259,132 @@ An error occured while updating dependencies.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-0014](#snyk-os-0014)
+
+#### Unknown blob encoding on Github
+
+Unknown blob encoding on Github.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0015](#snyk-os-0015)
+
+#### No result from forked process
+
+No result from forked process.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-0016](#snyk-os-0016)
+
+#### Child Process Execution Error
+
+The child process encountered an error during execution.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-0017](#snyk-os-0017)
+
+#### No valid package upgrades
+
+The system attempted to find valid upgrades for the packages specified in the lock file, but none were available.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0018](#snyk-os-0018)
+
+#### No dependency updates
+
+There are no available updates for the dependencies.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0019](#snyk-os-0019)
+
+#### Missing required request header
+
+The server encountered a request that is missing a mandatory request header.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0020](#snyk-os-0020)
+
+#### Could not parse JSON file
+
+An error occurred while attempting to parse a JSON file.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0021](#snyk-os-0021)
+
+#### Could not Base64 encode
+
+An error occurred while attempting to perform Base64 encoding.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0022](#snyk-os-0022)
+
+#### Could not Base64 decode
+
+An error occurred while attempting to perform Base64 decoding.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-0023](#snyk-os-0023)
+
+#### Missing supported file
+
+Could not find supported file.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-OS-0024](#snyk-os-0024)
+
+#### Missing environment variable
+
+The server encountered a critical operation that requires a specific environment variable, but the variable is not set or is not accessible within the current environment.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-0025](#snyk-os-0025)
+
+#### No output from isolated builds
+
+The response from isolated builds had no output.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-0026](#snyk-os-0026)
+
+#### Failed to relock
+
+An error occurred while attempting to relock.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-0027](#snyk-os-0027)
+
+#### Invalid configuration
+
+The configuration parameter does not meet the expected data type. Please ensure the provided value is of the correct data type.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
 
 #### Unsupported manifest file type for remediation
@@ -447,6 +573,51 @@ Cannot get the build file repository.
 Cannot create source URL.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-NODEJS-0001](#snyk-os-nodejs-0001)
+
+#### No repository found for A NPM package
+
+No repository found for the NPM package.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0002](#snyk-os-nodejs-0002)
+
+#### Could not parse NPM registry URL
+
+Could not parse NPM registry URL.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0003](#snyk-os-nodejs-0003)
+
+#### Could not find broker resolved URL
+
+Could not find broker resolved URL.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0004](#snyk-os-nodejs-0004)
+
+#### Unable to replace broker URL
+
+Unable to replace all broker urls in lock file.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0005](#snyk-os-nodejs-0005)
+
+#### Bad NPM version
+
+The NPM version is not supported.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
 ### [SNYK-OS-PIP-0001](#snyk-os-pip-0001)
@@ -973,4 +1144,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-07-18T06:35:52.953Z
+--- Generated at 2023-07-19T13:59:32.844Z
