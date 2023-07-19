@@ -7,10 +7,10 @@ Follow these steps configure an integration for OIDC Okta.
 1.  In Okta, select **Applications -> Applications -> Create App Integration** then choose **OICD OpenID Connect** and **Web Application.**
 
     <figure><img src="../../../.gitbook/assets/1 (8).png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
-2.  In the next step add an **App integration name** for your OIDC application, check the **Implicit** **Grant Type** and add the **Sign-in redirect URI** relevant to your [Snyk platform deployment](../set-up-snyk-single-sign-on-sso.md). Remove the placeholder **Sign-out redirect URI** and choose your assignment access control before clicking **Save.**
+2.  In the next step add an **App integration name** for your OIDC application, check the **Implicit** **Grant Type** and add the **Sign-in redirect URI** relevant to your [Snyk platform deployment](../../using-single-sign-on-sso-for-authentication/set-up-snyk-single-sign-on-sso.md). Remove the placeholder **Sign-out redirect URI** and choose your assignment access control before clicking **Save.**
 
     <figure><img src="../../../.gitbook/assets/2 (1) (1).png" alt="Provide details for new web app integration"><figcaption><p>Provide details for new web app integration</p></figcaption></figure>
-3. On the application page that opens after saving, copy the details as per [OIDC information to provide to Snyk](../set-up-snyk-single-sign-on-sso.md#oidc-information-to-provide-to-snyk) [following details](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk) and provide to your Snyk contact:
+3. On the application page that opens after saving, copy the details as per [OIDC information to provide to Snyk](../../using-single-sign-on-sso-for-authentication/set-up-snyk-single-sign-on-sso.md#oidc-information-to-provide-to-snyk) [following details](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk) and provide to your Snyk contact:
    * Client ID
    * If you are not using Implicit Grant type, the client secret
 4. Also share with Snyk the Issuer URL/domain. This is typically the URL you find in your browser address bar without "-admin", for example, https://customer.example.okta.com. It can also be found under the **Sign-On** tab of your application by editing the **OpenID Connect ID Token** from **Dynamic** Issuer to **Okta URL**.
@@ -41,7 +41,7 @@ Custom mapping for an OIDC application in Okta is easily managed through custom 
 2.  Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk OIDC app,. Then click on the **pencil** next to the displayed Snyk OIDC app.
 
     <figure><img src="../../../.gitbook/assets/5 (4).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
-3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](./#example-roles-array-mapping). Example, `snyk-org-role`.
+3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](../../using-single-sign-on-sso-for-authentication/custom-mapping-option/#example-roles-array-mapping). Example, `snyk-org-role`.
 
     <figure><img src="../../../.gitbook/assets/6 (5).png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>
 4. Repeat the preceding steps for all your applicable Okta groups to assign the org name and role combination to each user within each configured group.

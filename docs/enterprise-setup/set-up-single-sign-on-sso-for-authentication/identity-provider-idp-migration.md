@@ -4,7 +4,7 @@ When migrating from a legacy IdP to a new IdP, you must submit new IdP metadata 
 
 To migrate identity providers:
 
-1. Download the correct Worksheet from the [SSO resources](set-up-snyk-single-sign-on-sso.md#resources).
+1. Download the correct Worksheet from the [SSO resources](../using-single-sign-on-sso-for-authentication/set-up-snyk-single-sign-on-sso.md#resources).
 2. Fill out Worksheet with the IdP metadata information.
 3. Submit the Worksheet; [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to raise a Support ticket.
 

@@ -17,7 +17,7 @@ See also [Member Roles](../../../snyk-admin/manage-users-and-permissions/member-
 
 ## Roles array mapping with Snyk
 
-In the IdP, you must first pass a custom mapping called `roles` as a string array. Refer to [Example: Setting up custom mapping for Okta](example-setting-up-custom-mapping-for-okta.md). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.
+In the IdP, you must first pass a custom mapping called `roles` as a string array. Refer to [Example: Setting up custom mapping for Okta](../../set-up-single-sign-on-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-okta.md). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.
 
 To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to one of the following patterns:
 
