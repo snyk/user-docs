@@ -1,16 +1,16 @@
 # Authentication for third-party tools
 
-When you work with Snyk from within any third-party tool, Snyk first requires authentication in order to initiate its processes.
+When you work with Snyk from within any third-party tool, Snyk requires authentication in order to initiate its processes.
 
-Snyk offers API tokens to enable integrations with third-party developer tools through authentication using your personal account or, in lieu of personal credentials, using a service account.
+Snyk offers API tokens to enable integrations with third-party developer tools. You can authenticate through your personal account using your personal token or through a service account using the token associated with that account. When you authenticate through a service account, you do not use any personal token.
 
 {% hint style="info" %}
-For authentication purposes, the identity providers **do not require access to your repositories**, only your email address.
+For authentication purposes, the third-party identity providers **do not require access to your repositories**, only your email address.
 {% endhint %}
 
 ## Supported identity providers
 
-With Snyk, you can use one of the following identity providers for authentication:
+You can use one of the following identity providers for authentication with Snyk::
 
 * GitHub
 * Bitbucket
@@ -20,11 +20,15 @@ With Snyk, you can use one of the following identity providers for authenticatio
 * Single Sign-On (SSO): available with Enterprise plans.\
   See [Setting up Single Sign-On (SSO) for authentication](using-single-sign-on-sso-for-authentication/).
 
+{% hint style="info" %}
+For additional instructions, see the integrations pages for [Git repositories (SCMs)](../integrations/git-repository-scm-integrations/).
+{% endhint %}
+
 {% hint style="warning" %}
 Logging in with a different provider from the one you registered with when you first created your Snyk account will create a separate new Snyk account.
 {% endhint %}
 
-## **How to authenticate for a third-party tool**
+## **How to authenticate for a third-party tool using your personal token**
 
 1. Visit [your Snyk account](https://app.snyk.io/account).
 2. Navigate to **General Account Settings** and copy your token.
@@ -32,7 +36,3 @@ Logging in with a different provider from the one you registered with when you f
 4. In the third-party interface, configure your integration by pasting your Snyk token when prompted.
 
 <figure><img src="../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="API token screen; revoke; regenerate; click to show"><figcaption><p>API token screen; revoke; regenerate; click to show</p></figcaption></figure>
-
-{% hint style="info" %}
-For additional instructions, see the integrations pages for [Git repositories (SCMs)](../integrations/git-repository-scm-integrations/).
-{% endhint %}
