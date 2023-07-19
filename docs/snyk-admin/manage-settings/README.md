@@ -13,7 +13,7 @@ At the Group level, select **Settings** to view admin settings:
 </div>
 
 * [General](group-general-settings.md)
-* [SSO](../../enterprise-setup/set-up-single-sign-on-sso-for-authentication/)
+* [SSO](../../enterprise-setup/using-single-sign-on-sso-for-authentication/)
 * [Member Roles](../manage-users-and-permissions/member-roles.md)
 * [Service Accounts](../../enterprise-setup/service-accounts.md)
 * [Notifications](../manage-notifications.md)

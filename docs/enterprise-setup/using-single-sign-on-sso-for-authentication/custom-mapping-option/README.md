@@ -121,7 +121,7 @@ The system also supports comma-separated lists of roles instead of an array.
 ```
 {% endhint %}
 
-### Example roles array mapping
+## Example roles array mapping
 
 The following example shows how to assign roles to Snyk users under the mapping convention.
 

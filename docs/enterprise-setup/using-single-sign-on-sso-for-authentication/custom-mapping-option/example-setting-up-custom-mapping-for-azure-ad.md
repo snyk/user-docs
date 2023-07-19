@@ -10,13 +10,13 @@ See the [Azure AD Enterprise Application example](../self-serve-single-sign-on-s
 Any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact, as self-serve SSO does not accommodate custom mapping.
 {% endhint %}
 
-## Configure App roles
-
-The following are the **prerequisites** for configuring App roles:
+The following are the **prerequisites** for **configuring App roles**:
 
 * Snyk support must configure your Snyk SSO as Microsoft Azure AD (WAAD or SAML).
 * If you select SAML, there is a requirement to add a custom claim; the step to do that is in these instructions.
 * You must have an existing Azure Enterprise application and app registration connected to that SSO configuration.
+
+The **steps** in **configuring App role**s follow.
 
 1.  In your App registration menu, select the name of your Enterprise Application.
 

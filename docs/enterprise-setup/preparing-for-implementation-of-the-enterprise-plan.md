@@ -81,7 +81,7 @@ You may want to set up SSO using your existing identity provider to streamline s
 
 If you use SSO, after you set it up, you must remove any social login accounts from Snyk so that all user access to your Group is controlled through SSO.
 
-See [Set up Single Sign-on (SSO) for authentication](set-up-single-sign-on-sso-for-authentication/) for more details.
+See [Set up Single Sign-on (SSO) for authentication](using-single-sign-on-sso-for-authentication/) for more details.
 
 ## Define license and security policies
 

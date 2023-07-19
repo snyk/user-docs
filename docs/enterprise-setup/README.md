@@ -10,7 +10,7 @@ Understand, plan and roll out your Enterprise-level Snyk solution.
 
 ### Authenticate and connect
 
-* [Manage authentication](manage-authentication/)
-* [Set up SSO](set-up-single-sign-on-sso-for-authentication/)
+* [Manage authentication](broken-reference)
+* [Set up SSO](using-single-sign-on-sso-for-authentication/)
 * [Snyk Broker](snyk-broker/)
 * [Service accounts](service-accounts.md)

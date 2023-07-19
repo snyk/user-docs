@@ -1,10 +1,6 @@
 # Example: Google Workspace
 
-## Introduction
-
 This example shows setting up an Google Workspace SAML application and connecting it to Snyk to facilitate SSO.
-
-### Process
 
 {% hint style="info" %}
 For details in addition to the information provided on this page, see the [Google documentation](https://support.google.com/a/answer/6087519).

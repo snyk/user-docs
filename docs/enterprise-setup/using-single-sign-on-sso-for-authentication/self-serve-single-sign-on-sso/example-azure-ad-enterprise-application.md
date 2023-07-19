@@ -1,12 +1,8 @@
 # Example: Azure AD Enterprise Application
 
-## Introduction
+This example shows setting up an Azure AD Enterprise Application and connecting this to Snyk to facilitate SSO. To configure your Azure Enterprise Application to use SSO with Snyk, first obtain an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
 
-This example shows setting up an Azure AD Enterprise Application and connecting this to Snyk to facilitate SSO. To configure your Azure Enterprise Application to use SSO with Snyk, you first need an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
-
-### Process
-
-1.  From the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
+1.  From the dropdown at the top left select **GROUP OVERVIEW** and then the **cog** icon (top right corner) to get to your group settings.
 
     <figure><img src="../../../.gitbook/assets/5 (3).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.

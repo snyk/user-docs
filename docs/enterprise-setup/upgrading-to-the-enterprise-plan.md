@@ -12,7 +12,7 @@ For information about how to implement Snyk on the Enterprise plan, see:
 Snyk Enterprise features include:
 
 * [Snyk Groups with multiple Snyk Organizations](../snyk-admin/manage-groups-and-organizations/introduction-to-groups.md)
-* [Single Sign-On](set-up-single-sign-on-sso-for-authentication/)
+* [Single Sign-On](using-single-sign-on-sso-for-authentication/)
 * [Service accounts](service-accounts.md)
 * [Snyk API](../snyk-api-info/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
@@ -131,7 +131,7 @@ Users can authenticate with their Snyk accounts in several ways, such as with a 
 If you are using SSO, after you set it up, you must remove any duplicate users from social login accounts. These are users who have logged in with other methods than SSO.
 {% endhint %}
 
-See [Setting up Single Sign-On (SSO) for authentication](set-up-single-sign-on-sso-for-authentication/) for more details on steps for using your identity provider to authenticate and provision Snyk to your teams.
+See [Setting up Single Sign-On (SSO) for authentication](using-single-sign-on-sso-for-authentication/) for more details on steps for using your identity provider to authenticate and provision Snyk to your teams.
 
 See the [SSO, authentication, and user provisions](https://training.snyk.io/courses/sso) training course.
 

@@ -17,7 +17,7 @@ See the [Snyk deployment recommendations](introduction-to-git-repository-integra
 
 ## How can I use Snyk Pull Requests (PRs) for my Git repositories?
 
-For details see the following pages:
+For details, see the following pages:
 
 * [Opening fix and upgrade PRs from a fixed GitHub account](introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
 * [PR Checks](../../scan-application-code/run-pr-checks/)

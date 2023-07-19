@@ -8,7 +8,7 @@ The provisioned users will not need to accept invites; when they first log into 
 
 * The user being provisioned must not already exist in our system.
 * Inviting user must call the API with their personal token.
-* The Snyk Group to which orgs belong should have [Single Sign On (SSO) configured](../../enterprise-setup/set-up-single-sign-on-sso-for-authentication/).
+* The Snyk Group to which orgs belong should have [Single Sign On (SSO) configured](../../enterprise-setup/using-single-sign-on-sso-for-authentication/).
 * Both inviting user and provisioned user must log in via SSO.
 * The API does not support service accounts to be used as the inviting user or provisioned user.
 *   The inviting user should have the permission `Provision Users` to invoke these calls. All Group and Org Admins by default have this permission.\\
