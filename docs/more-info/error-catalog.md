@@ -595,9 +595,9 @@ Could not parse NPM registry URL.
 
 ### [SNYK-OS-NODEJS-0003](#snyk-os-nodejs-0003)
 
-#### Could not find broker resolved URL
+#### Could not find a broker resolved URL
 
-Could not find broker resolved URL.
+Could not find a broker resolved URL.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1144,4 +1144,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-07-20T06:25:43.301Z
+--- Generated at 2023-07-20T08:22:01.693Z
