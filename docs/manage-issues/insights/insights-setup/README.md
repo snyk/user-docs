@@ -8,7 +8,7 @@ Snyk Insights operates by providing you with three risk factors for your vulnera
 
 * **OS condition**: Does this vulnerability apply to my operating system?
 * **Deployed**: Is my code and container image deployed anywhere?
-* **Public acing**: Does my container have any internet exposure?
+* **Public facing**: Does my container have any internet exposure?
 
 To get data about these three risk factors, you must meet the following criteria:
 
