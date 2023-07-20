@@ -100,7 +100,7 @@ Go Modules Projects that depend on modules from private Git repositories are sup
 
 Imports for Projects with private modules from repositories in other Git organizations will fail.&#x20;
 
-Private module support in different SCMs varies depending on whether [full source code analysis](snyk-for-golang.md#full-source-code-analysis) is enabled or disabled.
+Private module support in different SCMs varies depending on whether [full source code analysis](snyk-for-golang.md#enable-full-source-code-analysis) is enabled or disabled.
 
 | Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
