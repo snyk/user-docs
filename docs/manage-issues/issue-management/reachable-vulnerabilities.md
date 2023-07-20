@@ -1,6 +1,6 @@
 # Reachable vulnerabilities
 
-the A reachable vulnerability has a path from your code to the vulnerable function in a dependency.
+A reachable vulnerability has a path from your code to the vulnerable function in a dependency.
 
 Scanning for reachable vulnerabilities is a way to prioritize vulnerabilities. By analyzing how your code uses open-source dependencies, and also how the open-source dependencies interact with each other, Snyk can provide powerful insight into which vulnerabilities are reachable:
 
