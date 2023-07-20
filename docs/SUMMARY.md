@@ -360,7 +360,7 @@
     * [PR Checks results](scan-application-code/run-pr-checks/pr-checks-results.md)
     * [Troubleshooting PR Checks](scan-application-code/run-pr-checks/troubleshooting.md)
 * [Scan containers](scan-containers/README.md)
-  * [Getting started with Snyk Container](scan-containers/getting-started-snyk-container.md)
+  * [Getting started with Snyk Container](scan-containers/getting-started-with-snyk-container.md)
   * [How Snyk Container works](scan-containers/how-snyk-container-works/README.md)
     * [Snyk Container - Supported operating system distributions](scan-containers/how-snyk-container-works/supported-operating-system-distributions.md)
     * [Application vulnerability in Snyk Container and Snyk Open Source](scan-containers/how-snyk-container-works/application-vulnerability-in-snyk-container-and-snyk-open-source.md)

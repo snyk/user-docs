@@ -65,7 +65,7 @@ If you use an integration that saves a snapshot of the installed software on Sny
 {% hint style="info" %}
 Note that recurring scans do not detect updates to the dependencies of your applications. The recurring scans test for new vulnerabilities using a snapshot of your application dependencies at the time the application was imported.\
 \
-To detect changes in your application, such as updated dependencies, re-import your container image in Snyk. See [Getting started with Snyk Container](../getting-started-snyk-container.md) for an example of how to import your image.
+To detect changes in your application, such as updated dependencies, re-import your container image in Snyk. See [Getting started with Snyk Container](../getting-started-with-snyk-container.md) for an example of how to import your image.
 {% endhint %}
 
 ## More about container security

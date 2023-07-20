@@ -80,5 +80,5 @@ $ snyk iac capture /path/to/state.tfstate
 ### Capture from states pulled with Terraform in the standard input
 
 ```
-$ terraform pull | snyk iac capture --stdin
+$ terraform state pull | snyk iac capture --stdin
 ```
