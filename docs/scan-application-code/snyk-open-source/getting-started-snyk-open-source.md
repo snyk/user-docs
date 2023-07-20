@@ -5,7 +5,7 @@ Use Snyk Open Source to scan and fix vulnerabilities in your application's Open 
 {% hint style="info" %}
 This process describes getting started using the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) with a Git-based source repository.
 
-* You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations). See [Integrations](https://docs.snyk.io/integrations).
+* You can also use an [IDE tool](../../integrations/ide-tools/) or a [CI/CD integration](../../integrations/ci-cd-integrations/). See [Integrations](../../integrations/).
 * You can also [use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli/).
 {% endhint %}
 
@@ -35,7 +35,7 @@ See [View Project information](../../manage-issues/introduction-to-snyk-projects
 
 ### Fix vulnerabilities
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests (see [What languages do we support Fix Pull Request or Merge Requests](broken-reference)).
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests (see [What languages do we support](snyk-open-source-supported-languages-and-package-managers/), [Fix Pull Request or Merge Requests](open-source-basics/)).
 
 Navigate to the **Issues** view for a project:
 
