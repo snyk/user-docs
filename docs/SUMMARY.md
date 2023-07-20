@@ -227,7 +227,7 @@
     * [AWS Security Hub](integrations/event-forwarding/aws-security-hub.md)
   * [Notification and ticketing systems](integrations/notifications-ticketing-system-integrations/README.md)
     * [Jira integration](integrations/notifications-ticketing-system-integrations/jira.md)
-    * [Snyk Security in Jira Cloud (beta)](integrations/notifications-ticketing-system-integrations/snyk-security-in-jira-cloud-beta.md)
+    * [Snyk Security in Jira Cloud](integrations/notifications-ticketing-system-integrations/snyk-security-in-jira-cloud-beta.md)
     * [Slack app](integrations/notifications-ticketing-system-integrations/slack-app.md)
     * [Slack integration](integrations/notifications-ticketing-system-integrations/slack-integration.md)
   * [Vulnerability management tools](integrations/vulnerability-management-tools/README.md)
