@@ -109,7 +109,7 @@ Private module support in different SCMs varies depending on whether [full sourc
 #### **Snyk Broker**
 
 {% hint style="warning" %}
-Snyk Broker is currently only supported when [full source code analysis](snyk-for-golang.md#full-source-code-analysis) is disabled
+Snyk Broker is currently only supported when [full source code analysis](snyk-for-golang.md#enable-full-source-code-analysis) is disabled
 {% endhint %}
 
 Go Modules Projects imported via new [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) clients should work as expected.
