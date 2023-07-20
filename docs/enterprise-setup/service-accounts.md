@@ -7,9 +7,11 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 You can set up a **service account** to be used for continuous integration (CI) and other automation purposes without using a Snyk user’s token.
 
-Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools and when working with the Snyk [CLI](../snyk-cli/) and [API](../snyk-api-info/).
+Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials.
 
-You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use Group-level tokens to access Group API endpoints, Organization API endpoints, and the CLI for all Organizations in the Group.
+Use this token to provide credentials to authenticate with your Snyk account when you are setting up integration with your development tools and when you are working with the Snyk [CLI](../snyk-cli/) and [API](../snyk-api-info/). Snyk needs authentication in order to initiate Snyk processes.
+
+You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use Group-level tokens to use Group API endpoints, Organization API endpoints, and the CLI for all Organizations in the Group.
 
 {% hint style="info" %}
 Each service account has a unique name to make it easier to recognize. This name cannot be reused.
@@ -23,11 +25,11 @@ By using a service account token, you can:
 * Ensure seamless integrations, for example, when employees change roles or close their Snyk accounts.
 
 {% hint style="info" %}
-Roles are only for service accounts on the Group level and are only for paid accounts.
+Group roles are only for service accounts on the Group level and are only for paid accounts.
 {% endhint %}
 
 {% hint style="info" %}
-Service accounts can be used for GitHub Enterprise integrations. If your team needs to set up a service account in GitHub, the service account must be set up as a GitHub Enterprise integration. GHE is only available through Snyk Enterprise accounts.
+Service accounts can be used for GitHub Enterprise integrations. If your team needs to set up a service account in GitHub, the service account must be set up as a GitHub Enterprise integration. GHE is available only with Snyk Enterprise accounts.
 {% endhint %}
 
 ## Set up a Group or Organization level service account
@@ -73,7 +75,7 @@ For Group service accounts, choose from the following list of roles to configure
 * **Group Admin** enables full administrator access.
 * **Group Member** associates a service account with a group but does not grant any specific access.
 
-For **Organization service accounts**, choose from the standard roles, Org Admin or Org Collaborator, or a custom role if you have any set up. See [Managing permissions](../snyk-admin/manage-users-and-permissions/managing-permissions.md) for the scope of the Org Admin and Org Collaborator roles.
+For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Managing permissions](../snyk-admin/manage-users-and-permissions/managing-permissions.md) for the scope of the Org Admin and Org Collaborator roles.
 
 ### Create the service account
 
@@ -81,7 +83,7 @@ Click **Create**.
 
 The token is generated and displayed.
 
-Make sure you copy this token, as you will not see it again. You can click **Close and Hide** once you have copied the token; whether you do or not, when you navigate away from this page, the token will no longer be visible. This is a security standard to keep your tokens safe.
+Make sure you copy this token, as you will not see it again. You can click **Close and Hide** once you have copied the token; whether you do or not, when you navigate away from this page, the token will no longer be visible. This is a standard security practice to keep your tokens safe.
 
 #### How the token is associated with a Group and Organizations
 
