@@ -5,7 +5,7 @@ Snyk helps you to fix vulnerabilities, by upgrading the direct dependencies to a
 You can:
 
 * [View scan results on the Snyk Web UI](fix-your-vulnerabilities.md#view-scan-results-on-the-snyk-web-ui)
-* [View scan results using Snyk CLI](fix-your-vulnerabilities.md#view-scan-results-using-snyk-cli)
+* [View scan results using Snyk CLI](fix-your-vulnerabilities.md#fixing-vulnerabilities-based-on-scan-results-using-snyk-cli)
 * [Apply fixes](fix-your-vulnerabilities.md#apply-fixes)
 
 ## View scan results on the Snyk Web UI
