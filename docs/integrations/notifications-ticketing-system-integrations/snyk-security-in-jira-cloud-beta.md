@@ -6,7 +6,7 @@ description: Enabling developers to see and triage security issues from Jira
 
 Snyk Security in Jira Cloud helps developers identify, prioritize and triage security vulnerabilities related to their code repositories directly from the Jira interface.
 
-### How Snyk Security in Jira Cloud works?
+## How Snyk Security in Jira Cloud works
 
 The Snyk Security in Jira Cloud integration mirrors the information in the Snyk platform to Jira, such as scan results. You can view these Snyk results directly in your native Jira environment and create Jira issues for them as needed.
 
@@ -32,6 +32,7 @@ To install [**Snyk Security in Jira Cloud**](https://marketplace.atlassian.com/a
 
 * To install and configure Jira apps, you need to be an administrator in the site-admins, administrators, or jira-administrators groups. Contact your IT team to support your effort in installing the Snyk Security app.&#x20;
 * To connect the Jira app to Snyk, you need to be a [Snyk Organization administrator](../../snyk-admin/introduction-to-snyk-administration.md#member-user-types).
+* Security in Jira Cloud turned on by toggling "Security" on under "Project Settings" > "Features" under Jira
 
 ### Permission scopes in Jira required for the integration
 
