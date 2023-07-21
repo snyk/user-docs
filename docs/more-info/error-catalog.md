@@ -877,9 +877,9 @@ Unable to find the coordinates for the provided SHA1.
 # [PURL Vulnerabilities](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access#about-the-snyk-vulnerability-database)
 ### [SNYK-OSSI-1040](#snyk-ossi-1040)
 
-#### Your organisation is not authorised to perform this action
+#### Your Organisation is not authorized to perform this action
 
-You likely don’t have access to the Beta. To get access, you can request access to the Beta through your account manager or team.
+You likely don’t have access to the features in Beta. To get access, you can request access to features in Beta through your account manager or team.
 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
@@ -888,16 +888,16 @@ You likely don’t have access to the Beta. To get access, you can request acces
 
 #### Authorization request failure
 
-Unexpected error when authenticating. Please try again, and if you continue to experience issues please contact support.
+Unexpected error when authenticating. Try again, and if the error still occurs, contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
 ### [SNYK-OSSI-2010](#snyk-ossi-2010)
 
-#### Invalid PURL has been provided
+#### Invalid purl
 
-Please make sure that the purl you’ve provided is valid. Please see the Package URL specification link for further information.
+Make sure that the purl is valid. See the Package URL specification link for further information.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -906,9 +906,9 @@ Please make sure that the purl you’ve provided is valid. Please see the Packag
 
 ### [SNYK-OSSI-2011](#snyk-ossi-2011)
 
-#### Ensure you specify a namespace in the purl and then try again
+#### Namespace not specified
 
-You have requested a package type which requires a namespace (eg. maven group id). Please supply the namespace in order to retrieve the package correctly.
+You have requested a package type that requires a namespace (e.g. maven group id). Provide the namespace to retrieve the package.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -917,9 +917,9 @@ You have requested a package type which requires a namespace (eg. maven group id
 
 ### [SNYK-OSSI-2020](#snyk-ossi-2020)
 
-#### Ecosystem is not supported
+#### Unsupported ecosystem
 
-Ensure that the package type is a supported type.
+The package type is not supported. Check the List issues for a package in Snyk API.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -928,16 +928,16 @@ Ensure that the package type is a supported type.
 
 #### Purl components required
 
-Currently we require a list of components of the package url specification. The purl supplied by the user did not specify all the components which we currently require.
+A list of components of the purl spec is required. The purl did not specify all the required components.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
 ### [SNYK-OSSI-2022](#snyk-ossi-2022)
 
-#### You have submitted a purl with components which are not supported
+#### Unsupported purl components
 
-Please remove the component which is not supported, and try to make the request again. The endpoint only accepts particular components.
+Remove the unsupported component and retry the request.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -946,16 +946,16 @@ Please remove the component which is not supported, and try to make the request 
 
 #### Requested package not found
 
-The package you’ve specified in the purl can not be found in our vulnerability database. Please check that the package name, ecosystem and version are correct and then try again.
+The package you specified in the purl cannot be found in the vulnerability database. Check the package name, ecosystem, and version, then try again.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 
 ### [SNYK-OSSI-2031](#snyk-ossi-2031)
 
-#### Vulnerability service is currently not available
+#### Vulnerability service not available
 
-This issue is unexpected, and the service should recover quickly. If not, please contact support.
+This issue is unexpected, and the service will recover shortly. If the error still occurs, contact support.
 
 **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
 
@@ -980,9 +980,9 @@ An unexpected error occurred with the vulnerability service. Please try again, a
 
 ### [SNYK-OSSI-2040](#snyk-ossi-2040)
 
-#### An error was experienced by the service when processing the request
+#### Request not processed due to unexpected error
 
-This issue is unexpected, and the service should recover quickly. If not, please contact support.
+This issue is unexpected, and the service will recover shortly. If the error still occurs, contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -991,16 +991,16 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 #### Invalid pagination parameters
 
-Please ensure the supplied pagination limit is > 1 and <= 1000, and that the offset is >= 0.
+The pagination limit is > 1 and ≤ 1000, and the offset is ≥0.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
 ### [SNYK-OSSI-2042](#snyk-ossi-2042)
 
-#### Purls provided exceeds limit
+#### purls exceed limit
 
-The number of purls sent in the request exceeds the limit set by the service.
+The number of purls sent in the request exceeds the limit of 1000 set by the service.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -1009,7 +1009,7 @@ The number of purls sent in the request exceeds the limit set by the service.
 
 #### Number of issues exceeds limit
 
-The number of issues found for the provided purls exceeds the limit defined by the API. You may attempt to resolve this by reducing the number of purls you send in a single request.
+The number of issues found for the provided purls exceeds the limit defined by the API. Reduce the number of purls sent in a single request.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -1022,12 +1022,14 @@ The given Package URL does not have a required distro qualifier.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
+**Help Links:**
+- [https://docs.snyk.io/scan-containers/how-snyk-container-works/supported-operating-system-distributions#debian](https://docs.snyk.io/scan-containers/how-snyk-container-works/supported-operating-system-distributions#debian)
 
 ### [SNYK-OSSI-2045](#snyk-ossi-2045)
 
 #### Unsupported Debian distro
 
-This Debian distro is not currently supported.
+This Debian distro is currently not supported.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -1043,7 +1045,7 @@ The given Package URL does not have a required namespace.
 
 ### [SNYK-OSSI-2047](#snyk-ossi-2047)
 
-#### Vendor not supported
+#### Unsupported vendor
 
 The given Package URL does not contain a supported vendor.
 
@@ -1144,4 +1146,4 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-07-21T06:50:00.375Z
+--- Generated at 2023-07-21T10:29:27.019Z
