@@ -68,7 +68,7 @@ By default, dependencies for Go Modules Projects imported via Git are resolved a
 
 This means you may see more dependencies and issues reported, including potential false positives, than for Projects tested in the CLI.
 
-To avoid this issue and achieve more accurate scans, enable [full source code analysis](snyk-for-golang.md#enable-full-source-code-analysis).
+To avoid this issue and achieve more accurate scans, enable [full source code analysis](snyk-for-go.md#enable-full-source-code-analysis).
 {% endhint %}
 
 If full source code analysis is enabled, Snyk uses the `go list -json -deps ./...` command to build the dependency tree. Otherwise, it uses `go mod graph` .
@@ -100,7 +100,7 @@ Go Modules Projects that depend on modules from private Git repositories are sup
 
 Imports for Projects with private modules from repositories in other Git organizations will fail.&#x20;
 
-Private module support in different SCMs varies depending on whether [full source code analysis](snyk-for-golang.md#enable-full-source-code-analysis) is enabled or disabled.
+Private module support in different SCMs varies depending on whether [full source code analysis](snyk-for-go.md#enable-full-source-code-analysis) is enabled or disabled.
 
 | Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
@@ -109,7 +109,7 @@ Private module support in different SCMs varies depending on whether [full sourc
 #### **Snyk Broker**
 
 {% hint style="warning" %}
-Snyk Broker is currently only supported when [full source code analysis](snyk-for-golang.md#enable-full-source-code-analysis) is disabled
+Snyk Broker is currently only supported when [full source code analysis](snyk-for-go.md#enable-full-source-code-analysis) is disabled
 {% endhint %}
 
 Go Modules Projects imported via new [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) clients should work as expected.

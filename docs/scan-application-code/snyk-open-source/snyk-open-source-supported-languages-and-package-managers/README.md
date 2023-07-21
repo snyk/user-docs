@@ -12,7 +12,7 @@ For environments supported with other Snyk products, see: [Snyk Code - Supported
 | [Bazel](snyk-for-bazel.md)                                                                   | [API Test Dep Graph endpoint](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph) |
 | [C / C++](snyk-for-c-c++.md)                                                                 | N/A                                                                                                 |
 | [Elixir](snyk-for-elixir.md)                                                                 | hex                                                                                                 |
-| [Go](snyk-for-golang.md)                                                                     | Go Modules, dep, govendor                                                                           |
+| [Go](snyk-for-go.md)                                                                         | Go Modules, dep, govendor                                                                           |
 | [Java and Kotlin](snyk-for-java-and-kotlin.md)                                               | Gradle, Maven                                                                                       |
 | [JavaScript](../../supported-languages-and-frameworks/javascript/#open-source-and-licensing) | npm, yarn                                                                                           |
 | [PHP](snyk-for-php.md)                                                                       | Composer                                                                                            |
