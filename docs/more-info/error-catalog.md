@@ -852,7 +852,7 @@ The upstream service is unavailable.
 # [Open Source Unmanaged](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files)
 ### [SNYK-OSJVM-001](#snyk-osjvm-001)
 
-#### Maven Search Service Unavailable
+#### Maven search service unavailable
 
 The upstream Maven search service is not available.
 
@@ -864,7 +864,7 @@ The upstream Maven search service is not available.
 
 ### [SNYK-OSJVM-002](#snyk-osjvm-002)
 
-#### SHA1 Not Found
+#### SHA1 not found
 
 Unable to find the coordinates for the provided SHA1.
 
@@ -1144,4 +1144,4 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-07-21T06:39:03.877Z
+--- Generated at 2023-07-21T06:50:00.375Z
