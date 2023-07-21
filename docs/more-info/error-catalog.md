@@ -1103,7 +1103,7 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 #### Invalid request
 
-Please check the body of your request and try again.
+Check the body of your request and try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -1112,7 +1112,7 @@ Please check the body of your request and try again.
 
 #### Unable to return valid API response
 
-This should resolve, however please contact support if you continue to experience issues.
+This issue is unexpected, and the service will recover shortly. If the error still occurs, contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -1121,7 +1121,7 @@ This should resolve, however please contact support if you continue to experienc
 
 #### Failed to process data
 
-This should resolve, however please contact support if you continue to experience issues.
+This issue is unexpected, and the service will recover shortly. If the error still occurs, contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -1130,7 +1130,7 @@ This should resolve, however please contact support if you continue to experienc
 
 #### Failed to store snapshot data
 
-Please check your inputs and try again. If you continue to experience issues please contact support.
+Check inputs and then try again. If the error still occurs, contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -1139,9 +1139,9 @@ Please check your inputs and try again. If you continue to experience issues ple
 
 #### Internal server error
 
-This issue is unexpected, and the service should recover quickly. If not, please contact support.
+This issue is unexpected, and the service will recover shortly. If the error still occurs, contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-07-20T08:22:01.693Z
+--- Generated at 2023-07-21T06:39:03.877Z
