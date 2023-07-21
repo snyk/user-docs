@@ -1,7 +1,3 @@
----
-description: Enabling developers to see and triage security issues from Jira
----
-
 # Snyk Security in Jira Cloud
 
 
@@ -9,7 +5,7 @@ description: Enabling developers to see and triage security issues from Jira
 {% hint style="info" %}
 **Feature availability**
 
-Snyk Security in Jira Cloud is in Closed Beta. The feature is available for all Snyk and Jira plans, including Free versions. This page has instructions for activating the feature; see the prerequisites.
+Snyk Security in Jira Cloud is available for all Snyk and Jira plans, including Free versions. This page has instructions for activating the feature; see the prerequisites.
 
 Snyk Security in Jira Cloud is available for Jira Cloud only. Jira Server and Jira Data Center are not supported.
 {% endhint %}
