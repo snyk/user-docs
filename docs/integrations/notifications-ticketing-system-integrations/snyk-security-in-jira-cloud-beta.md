@@ -9,8 +9,7 @@ description: Enabling developers to see and triage security issues from Jira
 {% hint style="info" %}
 **Feature availability**
 
-Snyk Security in Jira Cloud is in closed Beta. The feature is available for all Snyk and Jira plans, including Free versions. This page has instructions for activating the feature; See the prerequisites.\
-
+Snyk Security in Jira Cloud is in Closed Beta. The feature is available for all Snyk and Jira plans, including Free versions. This page has instructions for activating the feature; see the prerequisites.
 
 Snyk Security in Jira Cloud is available for Jira Cloud only. Jira Server and Jira Data Center are not supported.
 {% endhint %}
@@ -21,11 +20,11 @@ The Snyk Security in Jira Cloud integration mirrors the information in the Snyk 
 
 ## Prerequisites for installation of Snyk Security in Jira Cloud
 
-To install and configure Jira apps, you must be an administrator in the site-admins, administrators, or jira-administrators groups. Contact your IT team to support your effort in installing this app, Snyk Security for Jira Cloud.
+To install and configure Jira apps, you must be an administrator in the site-admins, administrators, or jira-administrators groups. Contact your IT team to support your effort in installing this app, Snyk Security in Jira Cloud.
 
 To connect the Jira app to Snyk, you must be a [Snyk Organization administrator](../../snyk-admin/introduction-to-snyk-administration.md#member-user-types).
 
-Turn on Security in Jira Cloud by toggling **Security** on under **Project Settings > Features > Jira**.
+Activate Security in Jira Cloud by toggling **Security** under **Project Settings > Features > Jira**.
 
 Ensure you have the following permission scopes in Jira, which are required for the integration to operate.
 
@@ -44,7 +43,7 @@ Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketpl
 ## Configure the Snyk Security in Jira Cloud app
 
 1. Go to **Apps** > **Manage apps.**
-2. In the menu on the left-hand side, select **Snyk Security in Jira**.
+2. In the left menu, select **Snyk Security in Jira**.
 3. [Log in to your Snyk account](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md), or [sign up for a new Snyk account](../../getting-started/quickstart/create-a-snyk-account/).
 4. Select **Grant access** to allow Snyk to read your Jira Software account information.
 5. Select the specific Snyk Organizations to connect to your Jira site, and select **Grant app access**.
@@ -54,21 +53,21 @@ Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketpl
 When you have completed these steps, you can start triaging security issues in Jira.
 
 {% hint style="info" %}
-Typically research and development engineering managers do his task because they own the Jira projects and know their team's code repositories
+Typically research and development engineering managers do his task because they own the Jira projects and know their team's code repositories.
 {% endhint %}
 
 1. In Jira, go to **Project settings** > **Toolchain** and find Snyk in the list of tools.\
    See [What is the project toolchain in Jira Software?](https://support.atlassian.com/jira-software-cloud/docs/what-is-the-project-toolchain-in-jira/)
 2. Select the Add connection button :heavy\_plus\_sign: for Snyk.
-3. Choose the container (code repository from the list and select **Add container**.
+3. Choose the container code repository from the list and select **Add container**.
 
-Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-beta.md#create-a-jira-issue-out-of-a-vulnerability) from them or [linking them to existing Jira issues](snyk-security-in-jira-cloud-beta.md#link-an-existing-jira-issue-to-a-vulnerability).
+Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-beta.md#create-a-jira-issue-from-a-vulnerability) from those vulnerabilities or [linking them to existing Jira issues](snyk-security-in-jira-cloud-beta.md#link-an-existing-jira-issue-to-a-vulnerability).
 
 ## Manage security vulnerabilities in Jira
 
-After installing and configuring the app, you can view vulnerabilities on the security tab on the Jira project page.
+After installing and configuring the Snyk Security in Jira Cloud app, you can view vulnerabilities on the security tab on the Jira project page.
 
-<figure><img src="../../.gitbook/assets/security tab.png" alt="Snyk Security for Jira Cloud tab."><figcaption><p>Snyk Security for Jira Cloud tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/security tab.png" alt="Snyk Security in Jira Cloud tab."><figcaption><p>Snyk Security in Jira Cloud tab</p></figcaption></figure>
 
 To find vulnerabilities, go to the **Vulnerabilities** section. Snyk shows the severity, status, and identifiers. Click the title to get the details in Snyk Web UI.
 
@@ -92,9 +91,9 @@ To add a Jira issue, go to the Snyk Security tab, find a vulnerability, and then
 
 ### Link an existing Jira issue to a vulnerability
 
-If the vulnerability already has a Jira issue, you can link the existing Jira issue by clicking the horizontal ellipsis icon and selecting **Link issue.**
+If the vulnerability already has a Jira issue, you can link the vulnerability to the existing Jira issue by clicking the horizontal ellipsis icon and selecting **Link issue.**
 
-## Uninstall Snyk Security
+## Uninstall Snyk Security in Jira
 
 {% hint style="danger" %}
 Uninstalling **Snyk Security in Jira will disconnect Snyk vulnerabilities from their associated Jira issues**.\
