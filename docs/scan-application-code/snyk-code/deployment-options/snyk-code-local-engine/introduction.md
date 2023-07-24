@@ -17,6 +17,7 @@ The core requirements to deploy the Snyk Code Local Engine are:
 * **Kubernetes** – version 1.19.0 - 1.27.0:
   * _Recommended:_ a dedicated Kubernetes cluster
   * Outbound HTTPS connections supporting WebSockets from the cluster to \*.snyk.io
+    * This connection is needed for all flows (CLI, IDE, SCM and PR Checks)
   * Kubernetes – one of the following:
     * Managed public cloud Kubernetes service - EKS, AKS, GKE\
       \- or -
