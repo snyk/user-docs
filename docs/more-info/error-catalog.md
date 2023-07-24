@@ -6,57 +6,63 @@ The error codes in the table below describe the codes that you may encounter whi
 # [Snyk](https://docs.snyk.io/introducing-snyk)
 ### [SNYK-0001](#snyk-0001)
 
-#### Too many requests
+#### Service temporarily throttled
 
-The service has received too many requests and will be throttled.
+The request rate limit has been exceeded. Wait a few minutes, then try again.
 
 **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
 
 ### [SNYK-0002](#snyk-0002)
 
-#### Not implemented
+#### Server error response
 
-The server either does not recognize the request method, or it lacks the ability to fulfil the request.
+The server doesn’t recognize the request method, or it cannot fulfill it. Review the request and try again.
 
 **HTTP Status:** [501](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501)
 
+**Help Links:**
+- [https://docs.snyk.io/snyk-api-info](https://docs.snyk.io/snyk-api-info)
 
 ### [SNYK-0003](#snyk-0003)
 
-#### Bad request
+#### Client request cannot be processed
 
-The server cannot or will not process the request due to an apparent client error (e.g. malformed request syntax, size too large, invalid request message framing, or deceptive request routing).
+The server cannot process the request due to a client error, such as malformed request syntax, size too large, invalid request message framing, or deceptive request routing. Review the request and try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
 ### [SNYK-0004](#snyk-0004)
 
-#### Timeout error
+#### Server communication error
 
-The server did not receive a timely response from the upstream server.
+The server timed out during the request. Check Snyk status, then try again.
 
 **HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
 
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
 
 ### [SNYK-0005](#snyk-0005)
 
-#### Unauthorised error
+#### Authentication error
 
-Authentication failed or has not been provided.
+Authentication credentials not recognized, or user access is not provisioned. Revise credentials and try again, or request access from your Snyk administrator.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 
 ### [SNYK-9999](#snyk-9999)
 
-#### Server error
+#### Request not fulfilled due to server error 
 
-An unexpected server error was encountered.
+The server cannot process the request due to an unexpected error. Check Snyk status, then try again.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
 
 ---
 # OpenAPI
@@ -1036,4 +1042,4 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-07-24T12:10:37.704Z
+--- Generated at 2023-07-24T12:18:17.726Z
