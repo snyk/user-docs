@@ -1,8 +1,8 @@
 # How Snyk handles your data
 
-Snyk is a developer security platform and thus Snyk places the utmost importance on data security. **Fully understanding your privacy and security needs, Snyk provides this document with the goal of providing you with transparency as to how and what data is accessed, transferred, and stored by Snyk.**
+Snyk is a developer security platform, and thus Snyk places the utmost importance on data security. **Fully understanding your privacy and security needs, Snyk provides this document with the goal of providing you with transparency as to how and what data is accessed, transferred, and stored by Snyk.**
 
-The data handled by Snyk varies depending on the product you are using, how you are integrating with Snyk, and your Snyk deployment. Because Snyk is subject to fast moving changes, the types of data accessed and stored might change with the introduction of a new capability or changes to an existing capability.
+The data handled by Snyk varies depending on the product you are using, how you are integrating with Snyk and your Snyk deployment. Because Snyk is subject to fast-moving changes, the types of data accessed and stored might change with the introduction of a new capability or changes to an existing capability.
 
 ## Flexible deployment options
 
@@ -12,13 +12,13 @@ Snyk’s cloud-first deployment options offer ease of use and scalability while 
 
 * **Multi-Tenant SaaS**: The simplest, most common, and most cost-effective way to use Snyk’s developer security platform
 * **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform on AWS
-* **Snyk Broker**: A client service that is installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi or single tenant) and your on-premise codebase. Snyk Broker securely handles inbound and outbound connections, encrypting data during transit, and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
+* **Snyk Broker**: A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi or single tenant) and your on-premise codebase. Snyk Broker securely handles inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
 
 **Be sure to reach out to your Snyk contact for more details on how these different options can be leveraged to meet your needs.**
 
 ## Customer data flows across Snyk
 
-Snyk provides a wide range of development tools and integration points, requiring different types of data, and involving different data interactions. The sections that follow provide an overview of both the common types of data Snyk accesses and stores and product and integration-specific types. The information is reviewed at a minimum of twice per year or when a significant change occurs within the product operations.
+Snyk provides a wide range of development tools and integration points, requiring different types of data and involving different data interactions. The sections that follow provide an overview of both the common types of data Snyk accesses and stores and product and integration-specific types. The information is reviewed at least twice per year or when a significant change occurs within the product operations.
 
 ## Common data types
 
@@ -26,7 +26,7 @@ Snyk provides a wide range of development tools and integration points, requirin
 * **Vulnerability source** - Snyk stores information on where the vulnerability was identified. Examples: source code repository or registry, file name and location, dependency tree, vulnerability path.
 * **Integration-related data** - Snyk stores information required to set up an integration with Snyk. Examples: tokens and configurations.
 * **User data** - Snyk stores user information required to access and use the platform. Examples: user name, IDs (for example, GitHub user ID), email address, IP address.
-* **User list** - For purposes of an accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored. Upon request, an unhashed version of user emails is produced.
+* **User list** - For purposes of accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored. Upon request, an unhashed version of user emails is produced.
 * **Billing data** - Snyk stores information required for billing your Snyk account.
 * **User behavior analytics** - Snyk stores various types of information pertaining to usage patterns. Examples: platform navigation, executed CLI commands.
 
@@ -42,18 +42,18 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 
 * Snyk accesses manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
 * By default, Snyk does not access your source code with this exception: for CLI scans using the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and store the file signatures and file names.
-* For SCA Scans Snyk does not access your source code.
+* For SCA Scans, Snyk does not access your source code.
 * Snyk accesses and stores the names and version numbers of your dependencies.
 * Snyk stores the names of associated licenses, including copyright and attribution information.
 * Snyk accesses and stores repository-specific information.
-* Snyk accesses and stores Git provider push and pull specific information. Examples: contributor name, filenames, timestamps.
+* Snyk accesses and stores Git provider push and pull-specific information. Examples: contributor name, filenames, timestamps.
 
 **Optional ADD-ONS (opt-in)**
 
 Your account is subject to contract terms which might restrict your ability to enable these features. By enabling these features, you agree on behalf of your company to changes to your contract terms to allow these features, and you will be responsible for the use of these features based on your own circumstances.
 
-* For Go Modules full source code analysis feature - Snyk will access and store the contents of your git repository to facilitate the building of an accurate dependency graph. After our analysis is complete, your code is deleted from the Snyk system.
-* For Reachable Vulnerabilities feature - Snyk will access and store the contents of your git repository to facilitate the building of a call graph. Once the analysis completes, your code is deleted from the Snyk system. Only the call graph and function names are maintained.
+* For Go Modules full source code analysis feature - Snyk will access and store the contents of your git repository to facilitate the building of an accurate dependency graph. After the Snyk analysis is complete, your code is deleted from the Snyk system.
+* For the Reachable Vulnerabilities feature - Snyk will access and store the contents of your git repository to facilitate the building of a call graph. When the analysis completes, your code is deleted from the Snyk system. Only the call graph and function names are maintained.
 {% endtab %}
 
 {% tab title="Snyk Code" %}
@@ -61,7 +61,7 @@ Your account is subject to contract terms which might restrict your ability to e
 
 ![Snyk Code](../.gitbook/assets/SnykCode.svg)
 
-* Snyk accesses your repository code for a one-time analysis, caching it for a period of up to 12 hours. After this period, only the location (file path, line, and column) of the issues found, the issue id, and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
+* Snyk accesses your repository code for a one-time analysis, caching it for up to 12 hours. After this period, only the location (file path, line, and column) of the issues found, the issue id, and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
 * Results are stored in a database and used for analytic and monitoring purposes by Snyk.
 * When you are viewing Snyk Code issue details on the Snyk Web UI, note that the associated files are loaded and cached for up to 12 hours.
 * Snyk Code does not use any customer code (1) for engine training purposes or (2) to extract examples to show possible fixes.
@@ -109,7 +109,7 @@ Your account is subject to contract terms which might restrict your ability to e
 {% endtab %}
 {% endtabs %}
 
-### Snyk certifications
+## Snyk certifications
 
 <figure><img src="../.gitbook/assets/Soc2.png" alt="Soc 2 Type 2 AICPA Soc"><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
 
