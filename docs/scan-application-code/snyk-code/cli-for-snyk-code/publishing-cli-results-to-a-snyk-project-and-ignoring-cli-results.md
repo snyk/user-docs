@@ -65,7 +65,7 @@ The following command will create or upload an existing Project named \<PROJECT-
 snyk code test --report --project-name="<PROJECT-NAME>" --target-name="<TARGET-NAME>" --target-reference="$(git branch --show-current)"
 ```
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ## **Test and publish CLI results to an existing Snyk Code SCM Project**
 
@@ -95,7 +95,7 @@ Snyk Code CLI supports publishing the results to an existing Snyk Code SCM Proje
 
 You can ignore issues from CLI results in the Web UI both for [Publishing CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publishing-cli-results-to-a-snyk-code-cli-project) and [Test and publish CLI results to an existing Snyk Code SCM Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#test-and-publish-cli-results-to-an-existing-snyk-code-scm-project), using the ignore button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (7).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (7) (1).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
 
 Issues that are ignored in the Web UI are ignored in CLI tests when you use the following command:&#x20;
 
