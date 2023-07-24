@@ -28,7 +28,7 @@ Snyk provides a wide range of development tools and integration points, requirin
 * **User data** - Snyk stores user information required to access and use the platform. Examples: user name, IDs (for example, GitHub user ID), email address, IP address.
 * **User list** - For purposes of accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored. Upon request, an unhashed version of user emails is produced.
 * **Billing data** - Snyk stores information required for billing your Snyk account.
-* **User behavior analytics** - Snyk stores various types of information pertaining to usage patterns. Examples: platform navigation, executed CLI commands.
+* **User behavior analytics** - Snyk stores various types of information pertaining to usage patterns. Examples: platform navigation and executed CLI commands.
 
 ## Product-specific data types
 
@@ -36,7 +36,7 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 
 {% tabs %}
 {% tab title="Snyk Open Source" %}
-**Snyk Open Source**
+### **Snyk Open Source**
 
 ![Snyk Open Source](../.gitbook/assets/SnykOSS.svg)
 
@@ -57,7 +57,7 @@ Your account is subject to contract terms which might restrict your ability to e
 {% endtab %}
 
 {% tab title="Snyk Code" %}
-**Snyk Code**
+### **Snyk Code**
 
 ![Snyk Code](../.gitbook/assets/SnykCode.svg)
 
@@ -66,13 +66,13 @@ Your account is subject to contract terms which might restrict your ability to e
 * When you are viewing Snyk Code issue details on the Snyk Web UI, note that the associated files are loaded and cached for up to 12 hours.
 * Snyk Code does not use any customer code (1) for engine training purposes or (2) to extract examples to show possible fixes.
 * The AI model for Snyk Code Fix Suggestions is trained on public repositories with permissive licenses, where any data from repositories with changing licenses are immediately removed. Static analysis, automated assessment, and partial human labeling are used during the data collection.
-* The scan results do not contain original source code but rather pointers to positions (for example, files, line, and column numbers), plus identification meta-information so that results are displayed using the correct version of the source code.
+* The scan results do not contain original source code but rather pointers to positions (for example, files, line, and column numbers), plus identification meta-information so that results are displayed using the correct source code version.
 * Snyk stores repository-specific information. Examples: Name of the Git repository and file names.
 * The server infrastructure ensures separation between customers by using authentication and authorization. Snyk Code uses software controls to ensure customer data segregation. All communication is encrypted using high-grade industry-standard protocols.
 {% endtab %}
 
 {% tab title="Snyk Container" %}
-**Snyk Container**
+### **Snyk Container**
 
 ![Snyk Container](<../.gitbook/assets/image (201) (1).png>)
 
@@ -80,11 +80,11 @@ Your account is subject to contract terms which might restrict your ability to e
 * Snyk accesses and stores information pertaining to the parent image - name, version, tag.
 * Snyk accesses and stores RUN instructions from Dockerfile.
 * Kubernetes configurations - Snyk accesses workload security settings (for example, ‘run as root’). This is only accessed if you use Snyk’s Kubernetes integration.
-* Container registry integrations - Snyk accesses and then stores a short term copy of the container image (unless a broker is used). This copy is removed from the Snyk network after analysis.
+* Container registry integrations - Snyk accesses and then stores a short-term copy of the container image (unless a broker is used). This copy is removed from the Snyk network after analysis.
 {% endtab %}
 
 {% tab title="Snyk IaC" %}
-**Snyk Infrastructure as Code**
+### **Snyk Infrastructure as Code**
 
 ![Snyk Infrastructure as Code](../.gitbook/assets/SnykIaC.svg)
 
@@ -92,20 +92,16 @@ Your account is subject to contract terms which might restrict your ability to e
 * SCM tests require access to your infrastructure as code files. Snyk stores them for the duration of the analysis and subsequently deletes them from the Snyk system. Snyk retains parsed resource configurations to provide context for issues and resources.
 * Terraform Cloud and Terraform Enterprise tests analyze plan files. Snyk removes secrets and sensitive values and retains resource configurations to provide context for issues and resources.
 * For drift detection via `snyk iac describe`, Snyk relies on the principle of least privilege and requires only read-only access to [AWS](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-aws-provider.md#least-privileged-policy), [Azure](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-azure-provider.md#least-privileged-policy), [Google](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-google-provider.md#least-privileged-policy), or [GitHub](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-github-provider.md#least-privileged-policy). Provider credentials are not sent to or stored by Snyk.
-* Snyk relies on local read-only Terraform State file access, and extracts and sends relevant resource configuration data to the platform.
-{% endtab %}
+* Snyk relies on local read-only Terraform State file access and extracts and sends relevant resource configuration data to the platform.
 
-{% tab title="Snyk Cloud" %}
-**Snyk Cloud**
-
-<figure><img src="../.gitbook/assets/SnykCloud.svg" alt="Snyk Cloud"><figcaption></figcaption></figure>
+### Integrated IaC with cloud context
 
 * Snyk Cloud scans cloud platform APIs to gather information on configured infrastructure deployed in AWS Accounts and Google Cloud Subscriptions.
 * To perform scans, Snyk relies on the principle of least privilege, leveraging different authentication mechanisms which are supported by each Cloud platform.
   * For Amazon Web Services (AWS), a read-only AWS IAM role must be provisioned in your AWS Account(s) to provide secure access to required AWS APIs.
   * For Google Cloud, a read-only Google Cloud Service Account must be provisioned to enable secure access to required Google Cloud APIs.
 * During scans, Snyk gathers and stores a resource configuration state to perform analysis, and stores the results of that analysis, including the details of misconfigurations which result in issues.
-* Snyk Cloud retains resource configuration states found in scans to provide context for Issues and resources, but does not store secrets or sensitive values.
+* Snyk Cloud retains resource configuration states found in scans to provide context for Issues and resources but does not store secrets or sensitive values.
 {% endtab %}
 {% endtabs %}
 
