@@ -10,7 +10,7 @@ Each rule links to detailed fix advice on the [Cloud Security Rules](https://sec
 
 A rule has a **Cloud** tag if it applies to Snyk cloud context and an **IaC** tag if it applies to Snyk IaC. Most rules apply to both. Exceptions include cloud-only rules that check for missing resources, such as [SNYK-CC-00168](https://security.snyk.io/rules/cloud/SNYK-CC-00168), "CloudWatch log metric filter and alarm should be set for Config configuration changes."
 
-<figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-settings-page.png" alt="The Snyk Cloud and IaC settings page"><figcaption><p>The Snyk Cloud and IaC settings page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-settings-page (1).png" alt="The Snyk Cloud and IaC settings page"><figcaption><p>The Snyk Cloud and IaC settings page</p></figcaption></figure>
 
 ## Set custom severity level
 

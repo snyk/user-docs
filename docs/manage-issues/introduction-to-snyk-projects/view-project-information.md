@@ -8,7 +8,7 @@ To view your application vulnerabilities and licensing issues, go to [your Proje
 
 Click on the Project entry to view detailed information for that Project:
 
-<figure><img src="../../.gitbook/assets/project-header.png" alt="Detailed information for the Package.json Project"><figcaption><p>Detailed information for the <strong>Package.json</strong> Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-header (1).png" alt="Detailed information for the Package.json Project"><figcaption><p>Detailed information for the <strong>Package.json</strong> Project</p></figcaption></figure>
 
 The following information is available:
 

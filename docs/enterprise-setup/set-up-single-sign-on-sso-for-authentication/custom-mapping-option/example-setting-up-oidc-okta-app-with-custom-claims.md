@@ -6,7 +6,7 @@ Follow these steps configure an integration for OIDC Okta.
 
 1.  In Okta, select **Applications -> Applications -> Create App Integration** then choose **OICD OpenID Connect** and **Web Application.**
 
-    <figure><img src="../../../.gitbook/assets/1 (8).png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/1 (4).png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
 2.  In the next step add an **App integration name** for your OIDC application, check the **Implicit** **Grant Type** and add the **Sign-in redirect URI** relevant to your [Snyk platform deployment](../../using-single-sign-on-sso-for-authentication/set-up-snyk-single-sign-on-sso.md). Remove the placeholder **Sign-out redirect URI** and choose your assignment access control before clicking **Save.**
 
     <figure><img src="../../../.gitbook/assets/2 (1) (1).png" alt="Provide details for new web app integration"><figcaption><p>Provide details for new web app integration</p></figcaption></figure>
@@ -40,10 +40,10 @@ Custom mapping for an OIDC application in Okta is easily managed through custom 
 1. On the main page of Okta select **Directory -> Groups**.
 2.  Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk OIDC app,. Then click on the **pencil** next to the displayed Snyk OIDC app.
 
-    <figure><img src="../../../.gitbook/assets/5 (4).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/5 (1) (1) (1) (1) (1) (1).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
 3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](../../using-single-sign-on-sso-for-authentication/custom-mapping-option/#example-roles-array-mapping). Example, `snyk-org-role`.
 
-    <figure><img src="../../../.gitbook/assets/6 (5).png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/6 (1).png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>
 4. Repeat the preceding steps for all your applicable Okta groups to assign the org name and role combination to each user within each configured group.
 
 ###

@@ -25,11 +25,11 @@ To re-authenticate with a different account, follow these steps:
 1. Run the provided `Snyk: Log Out` command.
 2. When you have logged out, click **Connect VS Code with Snyk** to authenticate with a different account.
 
-![Snyk: Log Out](../../../.gitbook/assets/logging-out-command.png)
+![Snyk: Log Out](<../../../.gitbook/assets/logging-out-command (1).png>)
 
 Or you run `Snyk: Set Token` command and set your [token](../../../snyk-api-info/authentication-for-api.md) in the text field manually.
 
-![Set token manually](<../../../.gitbook/assets/image (80) (1).png>)
+![Set token manually](<../../../.gitbook/assets/image (224) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Requirements for Linux and Unix
 

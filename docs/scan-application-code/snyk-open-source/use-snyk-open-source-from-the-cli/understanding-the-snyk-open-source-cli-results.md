@@ -8,7 +8,7 @@ After you run the `snyk test` command in the CLI, the results of the Snyk Open S
 
 The summary of the test findings at the top shows the following:
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt="Snyk Open Source CLI dependencies tested, issues and vulnerabilities found."><figcaption><p>Snyk Open Source CLI dependencies tested, issues and vulnerabilities found</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (463).png" alt="Snyk Open Source CLI dependencies tested, issues and vulnerabilities found."><figcaption><p>Snyk Open Source CLI dependencies tested, issues and vulnerabilities found</p></figcaption></figure>
 
 * The number of direct and transitive dependencies scanned
 * Total number of issues found across one or more paths
