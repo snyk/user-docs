@@ -66,7 +66,7 @@ Developers can now use the security feature to view recent vulnerabilities found
 
 After installing and configuring the Snyk Security in Jira Cloud app, you can view vulnerabilities on the security tab on the Jira project page.
 
-<figure><img src="../../.gitbook/assets/security tab.png" alt="Snyk Security in Jira Cloud tab."><figcaption><p>Snyk Security in Jira Cloud tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Secuirity-Jira-Cloud-tab.png" alt="Snyk Security in Jira Cloud tab."><figcaption><p>Snyk Security in Jira Cloud tab</p></figcaption></figure>
 
 To find vulnerabilities, go to the **Vulnerabilities** section. Snyk shows the severity, status, and identifiers. Click the title to see the details in Snyk Web UI.
 
@@ -86,7 +86,7 @@ Snyk provides vulnerability information to Jira, enabling users to have comprehe
 
 To add a Jira issue, go to the Snyk Security tab, find a vulnerability, and then click **Create issue**.
 
-<figure><img src="../../.gitbook/assets/create issue.png" alt="Jira issue created from a vulnerability found by Snyk"><figcaption><p>Jira issue created from a vulnerability found by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Security-Jira-Cloud-create-issue.png" alt="Jira issue created from a vulnerability found by Snyk"><figcaption><p>Jira issue created from a vulnerability found by Snyk</p></figcaption></figure>
 
 ### Link an existing Jira issue to a vulnerability
 
