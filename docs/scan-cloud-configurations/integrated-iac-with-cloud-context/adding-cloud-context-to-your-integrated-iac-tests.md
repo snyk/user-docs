@@ -43,10 +43,7 @@ The output summary lists the number of suppressed issues, for example, `Cloud co
 
 Currently, Terraform for Amazon Web Services (AWS) is supported.
 
-There are two ways that Snyk IaC can apply cloud context and suppress issues in your IaC test results:
-
-* [Bringing context from Snyk](adding-cloud-context-to-your-integrated-iac-tests.md#bringing-context-from-a-snyk-cloud-scan)
-* [Bringing context from local enumeration](adding-cloud-context-to-your-integrated-iac-tests.md#bringing-context-from-a-live-scan)
+Snyk IaC can apply cloud context and suppress issues in your IaC test results by [Bringing context from Snyk](adding-cloud-context-to-your-integrated-iac-tests.md#bringing-context-from-a-snyk-cloud-scan).
 
 ## Bringing context from Snyk <a href="#bringing-context-from-a-snyk-cloud-scan" id="bringing-context-from-a-snyk-cloud-scan"></a>
 
@@ -63,15 +60,3 @@ snyk iac test --snyk-cloud-environment=93786877-c9f8-0000-1234-abcd1234efgh
 To find your environment ID, see [Find an environment ID](snyk-environments/find-an-environment-id.md).
 
 See the [Integrated IaC with cloud context](./) documentation for information about creating a Snyk cloud environment.
-
-## Bringing context from local enumeration <a href="#bringing-context-from-a-live-scan" id="bringing-context-from-a-live-scan"></a>
-
-You can use the `--cloud-context=<PROVIDER>` option with the [`snyk iac test`](../../snyk-cli/commands/iac-test.md) command to apply cloud context to an IaC test without referencing a Snyk cloud environment. Snyk does this by authenticating with your cloud provider locally and scanning the associated cloud provider account.
-
-The process for authenticating with a cloud provider account is the same as for the [`snyk iac describe`](../../snyk-cli/commands/iac-describe.md) command. See **Step 1** of [Get started with Snyk IaC Describe](../snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/get-started-with-snyk-iac-describe-on-aws.md) on AWS for details.
-
-For example, the following command tests the IaC in the present working directory and executes a scan of the authenticated AWS account, then applies the cloud context to suppress issues:
-
-```
-snyk iac test --cloud-context=aws
-```
