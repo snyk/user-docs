@@ -39,7 +39,7 @@ However**,** there is a **minimum** **requirement** for the core engine. **Each 
 
 The rest of the capabilities have different requirements, **including** **the minimum single-node requirements** for the core engine mentioned above.
 
-The **minimum total required resources** for each flavor of the Snyk Code Local Engineare identified in the list that follows. Actual memory and storage consumption depend on the usage and the size of repositories scanned. The minimum total required resources can then be divided into multiple nodes.
+The **minimum total required resources** for each flavor of the Snyk Code Local Engine are identified in the list that follows. Actual memory and storage consumption depend on the usage and the size of repositories scanned. The minimum total required resources can then be divided into multiple nodes.
 
 * Local Engine CLI/IDE only:
   * 165GB RAM
