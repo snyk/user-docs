@@ -1,6 +1,6 @@
 # Install the Snyk extension for your Azure pipelines
 
-To start using the Snyk task as part of your pipeline build, nstall the extension into your Azure DevOps instance for your Organization from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Snyk.snyk-security-scan).
+To start using the Snyk task as part of your pipeline build, from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Snyk.snyk-security-scan), install the extension into your Azure DevOps instance for your Organization.
 
 ## **Prerequisites for installing Snyk extension for Azure pipelines**
 
@@ -13,7 +13,7 @@ To start using the Snyk task as part of your pipeline build, nstall the extensio
 2. Token:
    1. For **free plans**, go to your **General Account Settings** and find, copy, and save your personal API authentication token on the side.
    2. For **paid plans**, navigate to the Organization where you want to integrate; then go to **Settings** to create a new service account token. Copy and save it on the side.
-3. Access your Azure DevOps account and navigate tthe o **Extensions -> Browse marketplace.**
+3. Access your Azure DevOps account and navigate to the **Extensions -> Browse marketplace.**
 4. Search for the **Snyk Security Scan** extension and click **Get it free**.
 5. Create a new **Service Connection** in your Project via **Project Settings** —> **Pipelines** —> **Service Connections**
 6. Select the **Snyk Authentication** service connection:
