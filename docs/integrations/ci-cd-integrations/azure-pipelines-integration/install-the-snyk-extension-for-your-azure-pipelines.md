@@ -15,7 +15,7 @@ To start using the Snyk task as part of your pipeline build, from the [Visual St
    2. For **paid plans**, navigate to the Organization where you want to integrate; then go to **Settings** to create a new service account token. Copy and save it on the side.
 3. Access your Azure DevOps account and navigate to the **Extensions -> Browse marketplace.**
 4. Search for the **Snyk Security Scan** extension and click **Get it free**.
-5. Create a new **Service Connection** in your Project via **Project Settings** —> **Pipelines** —> **Service Connections**
+5. Create a new **Service Connection** in your Project via **Project Settings** —> **Pipelines** —> **Service Connections**.
 6. Select the **Snyk Authentication** service connection:
    1. In the Snyk Authentication service connection form, enter the **Snyk API Token**.
    2. Click **Save**, ensuring the new service connection appears in your list of service connections.
