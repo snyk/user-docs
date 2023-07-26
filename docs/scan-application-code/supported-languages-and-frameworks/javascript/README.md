@@ -31,9 +31,9 @@ The following table shows the npm lockfile versions and Snyk features availabili
 
 **Peer dependencies**
 
-In npm v7 and above, the behavior of **peer dependencies** changes if they are being installed by default. To match this in npm v7+ projects, Snyk assumes peer dependencies are installed and scans them by default.
+In npm v7 and above, the behavior of **peer dependencies** changes if they are being installed by default. To match this in npm v7+ Projects, Snyk assumes peer dependencies are installed and scans them by default.
 
-The only case in which an npm v7+ project ignores peer dependencies is if they are explicitly marked as optional in the `peerDependenciesMeta` object in the `package.json` as shown here for `cache-manager`:
+The only case in which an npm v7+ Project ignores peer dependencies is if they are explicitly marked as optional in the `peerDependenciesMeta` object in the `package.json` as shown here for `cache-manager`:
 
 ```json
 {
@@ -51,7 +51,7 @@ In npm v6 and below, peer dependencies are not scanned by default, as the packag
 
 **Lockfile versions**
 
-Snyk uses the `package-lock.json` lockfile when present to generate a dependency tree for your project. These lockfiles come in different versions.
+Snyk uses the `package-lock.json` lockfile when present to generate a dependency tree for your Project. These lockfiles come in different versions.
 
 Lockfile v1 was used in npm v5 and v6. Two new formats were introduced in npm v7 - lockfile v2 and lockfile v3 (see [lockfileVersion](https://docs.npmjs.com/cli/v9/configuring-npm/package-lock-json#lockfileversion)).
 
@@ -218,7 +218,7 @@ snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
 
 ### Snyk Web UI (Git repository integration)
 
-You can import JavaScript repositories from any of the Git services (Source Control Managers) Snyk supports (see [Git repositories](../../../integrations/git-repository-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
+You can import JavaScript repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../../integrations/git-repository-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
 :link: [How Snyk works for open source and licensing](../introduction-to-snyk-supported-languages-and-frameworks.md#how-snyk-works-for-open-source-and-licensing)
 
@@ -252,7 +252,7 @@ Configure language settings for your open source and licensing at the Organizati
 
 #### Fix PRs and npm save-prefix
 
-When creating a fix for vulnerabilities using npm v7+ projects, Snyk will use the default npm `save-prefix` rather than inferring it from your Project.
+When creating a fix for vulnerabilities using npm v7+ Projects, Snyk will use the default npm `save-prefix` rather than inferring it from your Project.
 
 This means if you have dependencies using a range format other than the caret range (`^`), you may see additional changes to the `version` fields in the `package-lock.json` file.&#x20;
 
