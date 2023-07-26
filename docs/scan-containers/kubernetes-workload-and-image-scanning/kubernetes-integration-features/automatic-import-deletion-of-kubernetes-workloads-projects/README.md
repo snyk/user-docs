@@ -13,7 +13,7 @@ With the same integration id, you can import **many** clusters to **one** Snyk o
 
 The auto-import/delete also allows you to import from **one** cluster to multiple Snyk organizations, read [Advance use of automatic import/deletion](https://docs.snyk.io/products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-features/automatic-import-deletion-of-kubernetes-workloads-projects/advanced-use-of-automatic-import-deletion#using-more-than-one-org).
 
-It is important to note that 1 Snyk organization has a limit of 25,000 projects, please consult your SCM for more information.
+It is important to note that 1 Snyk organization has a limit of 25,000 projects. For more information, consult your Snyk admin.
 {% endhint %}
 
 ## **Prerequisites**
