@@ -4,7 +4,7 @@
 
 ### Review newly introduced issues in build and review time
 
-You can use Snyk Code in your IDE or in your SCM (using the [Automatic PR Checks](broken-reference) feature) to identify issues as they are introduced into your code. Snyk Code does not require compilation, and it analyzes the source code itself, so you can see the results immediately as you write new code.
+You can use Snyk Code in your IDE or in your SCM (using the [Automatic PR Checks](introducing-snyk-code/broken-reference/) feature) to identify issues as they are introduced into your code. Snyk Code does not require compilation, and it analyzes the source code itself, so you can see the results immediately as you write new code.
 
 ### Understand how problems flow across your applications
 

@@ -32,7 +32,7 @@ Use the **ignore** button to suppress specific warnings and ignore suggested fix
 
 After you click **ignore**, you are prompted to provide more details:
 
-![](../../../../.gitbook/assets/snykcode-ignore-pic2.png)
+![](../../../.gitbook/assets/snykcode-ignore-pic2.png)
 
 * Select whether this is to be marked **not vulnerable**, **ignore temporarily** (to suppress the message for now), or **ignore permanently** (to not fix ever)
 * Add any notes to yourself or your colleagues in the comment box; Snyk recommends writing a quick explanation for your decision.
@@ -51,7 +51,7 @@ See [Ignoring issues in Snyk Code](https://docs.snyk.io/fixing-and-prioritizing-
 #### Excluding files
 
 1. Checks and reads for DeepCode/Snyk ignore specific files `.gitignore` `.dcignore` (if they exist)
-2. Using the information obtained in step 1, we are filtering to get only [the following source code files](../../../../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md#supported-extensions):
+2. Using the information obtained in step 1, we are filtering to get only [the following source code files](../snyk-code-language-and-framework-support.md#supported-extensions):
    * We are accessing only the files in the project directory
    * We do not go above the current project directory
 3. Files which size is less than 4 MB found in step 2 are bundled and sent to Snyk
