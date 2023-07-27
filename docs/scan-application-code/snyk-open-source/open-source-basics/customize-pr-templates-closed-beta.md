@@ -16,7 +16,13 @@ You may have your own standards and practices for submitting pull requests. For 
 
 ## Using the Customize PRs feature
 
-When enabling the Customize Snyk PR feature, you will need to add a custom template file to your repository. This allows you to configure the title, description, commit message, and branch name. Going forward, this will apply to all Projects associated with that repository.
+When enabling the Customize Snyk PR feature, you will need to add a custom template file to your repository.&#x20;
+
+{% hint style="warning" %}
+If you want multiple repositories to use a custom template, make sure to add the customized yaml template file to each of these repositories.
+{% endhint %}
+
+This allows you to configure the title, description, commit message, and branch name. Going forward, this will apply to all Projects associated with that repository.
 
 {% hint style="warning" %}
 We are initially looking for feedback on the variables and templating system, once we have validated our approach we will look into building more robust authoring workflows via our API and UI interfaces.
@@ -64,7 +70,7 @@ Snyk will use the default content if any of the customizable properties are miss
 
 ### File locations
 
-To enable Snyk to access your customized template, you need to add a file called `snyk_pull_request_template.yaml` to your Project. The storage method varies based on the type of integration.
+To enable Snyk to access your customized template, you need to add a file called `snyk_pull_request_template.yaml` to your Project(repository). The storage method varies based on the type of integration.
 
 * Github - `./github/snyk_pull_request_template.yaml`
 * GitLab  - `./gitlab/snyk_pull_request_template.yaml`
@@ -77,7 +83,7 @@ You can use the following variables in your template.
 
 ### <mark style="color:purple;">`jira_ids: string[]`</mark>
 
-A list of Jira tickets associated with the issues contained within the pull request. Make sure that the Snyk Jira integration is enabled on your Project and that you have linked Snyk issues to JIRA tickets.
+A list of Jira tickets associated with the issues contained within the pull request. Make sure that the Snyk Jira integration is enabled on your Project(repository) and that you have linked Snyk issues to JIRA tickets.
 
 To automatically link Jira to the relevant pull requests, include a list of associated Jira tickets in the commit message.&#x20;
 
@@ -115,7 +121,7 @@ description: |
 To find more details, see the Snyk project https://app.snyk.io/org/my-org/project/xx-xxx-xx-xx
 ```
 
-In this outcome, `my-org` is your Snyk Organisation name and `xx-xxx-xx-xx-xxxx` is the public ID of your Project.&#x20;
+In this outcome, `my-org` is your Snyk Organisation name and `xx-xxx-xx-xx-xxxx` is the public ID of your Project(repository).&#x20;
 
 ### <mark style="color:purple;">`snyk_project_name: string`</mark>
 
@@ -155,7 +161,7 @@ Fix applied by my-org
 
 This is the name of the package being fixed or upgraded. In cases where more than one package is changed this variable will default to the first one.
 
-Follow the below example to display in the branch name the number of issues in your Project.&#x20;
+Follow the below example to display in the branch name the number of issues in your Project(repository).&#x20;
 
 #### Input
 
@@ -208,7 +214,7 @@ Fix is applied by moving to 0.5.2
 
 ### <mark style="color:purple;">`issue_count: number`</mark>
 
-This is the number of issues in your Project that are covered by the PR.&#x20;
+This is the number of issues in your Project(repository) that are covered by the PR.&#x20;
 
 #### Input
 
@@ -225,7 +231,7 @@ fix/98-issues-4e25b18624124a1b6f4dd00e3caa4f6c
 
 ### <mark style="color:purple;">`is_fix_pr: boolean`</mark>
 
-This checks if the pull request is a fix PR, for example, opened to fix new vulnerabilities introduced to the Project in the latest scan.
+This checks if the pull request is a fix PR, for example, opened to fix new vulnerabilities introduced to the Project(repository) in the latest scan.
 
 #### Input
 
@@ -243,7 +249,7 @@ Is this a fix pr? true
 
 ### <mark style="color:purple;">`is_backlog_pr: boolean`</mark>
 
-This checks if the pull request is a backlog PR, for example, opened to fix known vulnerabilities already in the Project.
+This checks if the pull request is a backlog PR, for example, opened to fix known vulnerabilities already in the Project(repository).
 
 #### Input
 
@@ -277,7 +283,7 @@ Is this an upgrade pr? false
 
 ### <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
 
-This is the prType of your Project. You can use it to display the PR type from the pull request description.
+This is the prType of your Project(repository). You can use it to display the PR type from the pull request description.
 
 #### Input
 
@@ -349,7 +355,7 @@ description: |
 
 You can validate the correctness of your template by:
 
-1. Adding the template file to your Project.&#x20;
+1. Adding the template file to your Project(repository).&#x20;
 2. Opening a PR and verifying that your customized inputs are being used.&#x20;
 
 {% hint style="info" %}
