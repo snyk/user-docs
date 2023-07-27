@@ -275,6 +275,7 @@
       * [Automated pull request creation for new fixes](scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md)
       * [Configure Automatic fix PRs](scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md)
       * [Upgrading dependencies with automatic PRs](scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
+      * [Customize PR Templates (Closed Beta)](scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta.md)
     * [Licenses](scan-application-code/snyk-open-source/licenses/README.md)
       * [Getting Started with Snyk License Compliance Management](scan-application-code/snyk-open-source/licenses/getting-started-snyk-licensing-compliance.md)
   * [Snyk Code](scan-application-code/snyk-code/README.md)
