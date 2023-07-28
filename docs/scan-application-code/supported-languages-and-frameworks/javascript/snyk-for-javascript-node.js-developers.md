@@ -228,7 +228,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 #### Codebase
 
-* Framework support - see [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-language-and-framework-support.md).
+* Framework support - see [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-supported-languages-and-frameworks.md).
 * Use the `snyk code test` command from the root of the Project to perform source code analysis.
 
 #### Containers

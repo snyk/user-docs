@@ -9,7 +9,7 @@ Before you start using the Snyk CLI for testing your source code with Snyk Code,
 * A Snyk Account.\
   **Note**: For more information on creating a Snyk Account, see [Setting Up your Snyk Account](https://docs.snyk.io/tutorials/getting-started/snyk-integrations/snyk-account).
 * Repositories with code in a supported language and framework.\
-  **Note**: For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-language-and-framework-support.md).
+  **Note**: For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-supported-languages-and-frameworks.md).
 * [The **Snyk Code** option enabled in your Snyk Org Setting](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-1-enabling-the-snyk-code-option)
 * An installed and authenticated Snyk CLI.\
   **Notes**:

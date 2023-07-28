@@ -20,7 +20,7 @@ PR Checks for Snyk Code is in Closed Beta and only available for Enterprise plan
 
 ## Programming language support
 
-PR Checks also support all programming languages supported by the Snyk Code and Open Source engines (see programming language support for [Snyk Code](../snyk-code/snyk-code-language-and-framework-support.md) and [Open Source](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)).
+PR Checks also support all programming languages supported by the Snyk Code and Open Source engines (see programming language support for [Snyk Code](../snyk-code/snyk-code-supported-languages-and-frameworks.md) and [Open Source](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)).
 
 ## How the configuration works
 
