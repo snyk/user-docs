@@ -1,7 +1,7 @@
 # Snyk Code - Supported languages and frameworks
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md), and [Supported IaC and cloud providers](../../scan-cloud-configurations/supported-iac-and-cloud-providers.md).
+For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../../../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md), and [Supported IaC and cloud providers](../../../scan-cloud-configurations/supported-iac-and-cloud-providers.md).
 {% endhint %}
 
 ## Language support with Snyk Code AI Engine
@@ -46,7 +46,7 @@ Snyk Code can work with a variety of relevant language types:
 * Optionally strong typed languages such as TypeScript.
 * Strong typed languages such as Java.
 
-For a full list of vulnerability types and security rules that are applied to each supported language by Snyk Code, see [Security rules used by Snyk Code](security-rules-used-by-snyk-code/).
+For a full list of vulnerability types and security rules that are applied to each supported language by Snyk Code, see [Security rules used by Snyk Code](../security-rules-used-by-snyk-code/).
 
 ### Supported extensions
 
@@ -66,7 +66,7 @@ Most frameworks are supported "out of the box" because Snyk Code must only be ab
 
 ### JavaScript frameworks
 
-See [Code analysis](../supported-languages-and-frameworks/javascript/#code-analysis) on the JavaScript page.
+See [Code analysis](../../supported-languages-and-frameworks/javascript/#code-analysis) on the JavaScript page.
 
 ### Java frameworks
 

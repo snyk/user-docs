@@ -203,7 +203,7 @@ Use the **--help** option in the CLI or [docs](https://docs.snyk.io/snyk-cli/cli
 
 #### Testing your own code:
 
-* Framework support - see [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-supported-languages-and-frameworks.md)
+* Framework support - see [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-ai-engine-web-ui-supported-integrations-languages-frameworks/snyk-code-supported-languages-and-frameworks.md)
 * Use the **snyk code test** command from the root of the project to perform source code analysis.
 
 #### Testing open source dependencies

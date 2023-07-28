@@ -34,4 +34,4 @@ See [Ignoring issues not prioritized for your project](https://docs.snyk.io/fixi
 
 See [Ignoring issues in Snyk Code](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/ignore-issues#Ignore-Snyk-Code) for specific details of how Snyk Code processes the ignore function.
 
-**Excluding files:** Check for DeepCode/Snyk ignore files `.gitignore` `.dcignore` and read them if they exist. Using the information in these files, Snyk filters to identify only the files with [the supported extensions](../snyk-code-supported-languages-and-frameworks.md#supported-extensions) in the Project directory and not above the current Project directory. Snyk Code bundles these files that are smaller than 4 MB and sends them to Snyk.
+**Excluding files:** Check for DeepCode/Snyk ignore files `.gitignore` `.dcignore` and read them if they exist. Using the information in these files, Snyk filters to identify only the files with [the supported extensions](snyk-code-supported-languages-and-frameworks.md#supported-extensions) in the Project directory and not above the current Project directory. Snyk Code bundles these files that are smaller than 4 MB and sends them to Snyk.

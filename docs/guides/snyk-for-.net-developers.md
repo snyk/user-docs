@@ -103,7 +103,7 @@ Snyk provides flexible capabilities, including:
 
 Snyk Code can analyze your C# code using IDE, CLI, and Git integration.&#x20;
 
-* Framework support - see [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-supported-languages-and-frameworks.md).
+* Framework support - see [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-ai-engine-web-ui-supported-integrations-languages-frameworks/snyk-code-supported-languages-and-frameworks.md).
 
 ### Nuget
 
