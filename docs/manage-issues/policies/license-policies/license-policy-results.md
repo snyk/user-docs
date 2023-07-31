@@ -26,6 +26,6 @@ PR Checks example:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (4) (4) (1).png" alt="License issues in PR Checks"><figcaption><p>License issues in PR Checks</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (8).png" alt="License issues in PR Checks"><figcaption><p>License issues in PR Checks</p></figcaption></figure>
 
 </div>

@@ -78,7 +78,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022 (1).png" alt="Snyk Projects page"><figcaption><p>Snyk Projects page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022.png" alt="Snyk Projects page"><figcaption><p>Snyk Projects page</p></figcaption></figure>
 
 ## Bitbucket integration features
 

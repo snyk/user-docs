@@ -1,17 +1,19 @@
 # GitLab integration
 
-The Snyk GitLab integration supports GitLab versions 9.5 and above (API v4).
+## Prerequisites
+
+* GitLab versions 9.5 and above (API v4).
+* Publicly reachable GitLab instance.
+* To integrate from within a private network, [Snyk Broker](../../enterprise-setup/snyk-broker/) is required.
 
 {% hint style="info" %}
 **Feature availability**\
 Scanning of self-managed and self-hosted source code on GitLab Enterprise is available with the Snyk Enterprise plan. For details, see[ the Snyk plans and pricing page](https://snyk.io/plans).
-
-This integration works only with GitLab instances that are publicly reachable and not on a private network. [Snyk Broker](../../enterprise-setup/snyk-broker/) is required to integrate from within a private network.
 {% endhint %}
 
-## Snyk GitLab integration features
+## Integration features
 
-The GitLab integration allows you to:
+The Snyk GitLab integration allows you to:
 
 1. See Snyk tests in your pull requests that check for vulnerabilities.
 2. Get email alerts and a Snyk pull request with fixes when new vulnerabilities that affect your repo are disclosed.

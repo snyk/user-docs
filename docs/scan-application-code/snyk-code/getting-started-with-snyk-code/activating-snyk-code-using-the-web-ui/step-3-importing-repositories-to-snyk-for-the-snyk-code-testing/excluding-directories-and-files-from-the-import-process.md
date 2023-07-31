@@ -87,7 +87,7 @@ exclude:
 * If the repository was already imported to Snyk – retest the repository as follows:
   * On the **Projects** page, click the **Code analysis** Project of the repository. Then, on the **Code Analysis** page, click the **Retest now** option below the header:
 
-<figure><img src="../../../../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 * If the repository was not imported yet to Snyk – [import the repository](importing-additional-repositories-to-snyk.md).
 
@@ -113,4 +113,4 @@ Now we want to exclude the **app.js** and **db.js** files from the Snyk Code ana
 
 The **app.js** and **db.js** files are excluded from the retest, and therefore are not tested by Snyk Code. For this reason, they do not appear in the Code Analysis results, and now only 5 vulnerability issues are detected:
 
-<figure><img src="../../../../../.gitbook/assets/image (545) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (545).png" alt=""><figcaption></figcaption></figure>

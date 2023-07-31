@@ -58,11 +58,11 @@ Depending on your selected action, one of the following occurs:
 
 6\. If you selected to delete Projects, a confirmation message appears, asking you to confirm the deletion. Click **OK** to delete the Projects:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Org Settings - Usage - Delete Projects - Confirmation message.png>)
+![](<../../../../../.gitbook/assets/Snyk Code - Org Settings - Usage - Delete Projects - Confirmation message (1).png>)
 
 7\. To remove from Snyk the Target folder of the repository whose Projects you deleted, return to the **Projects** page. Then, open the Target folder, and click the **Delete** button on the right corner:
 
-<figure><img src="../../../../../.gitbook/assets/image (176) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (437).png" alt=""><figcaption></figcaption></figure>
 
 The entire repository is now deleted from your Snyk Account.
 
@@ -74,7 +74,7 @@ To stop Snyk Code from testing an imported repository, you can either deactivate
 
 1\. On the **Projects** page, locate the repository you want Snyk Code to stop testing. In its Target folder, locate the **Code analysis** Project, and click the **Settings** button on the right side of its row:
 
-<figure><img src="../../../../../.gitbook/assets/image (404) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
 
 2\. On the **Settings** page of the **Code analysis** Project, click either the **Deactivate project** or **Delete project** button according to your needs:
 
@@ -87,4 +87,4 @@ The **Code analysis** Project you selected is either deactivated or deleted acco
 * **Code analysis deletion** - re-import the repository to Snyk, and then refresh the **Projects** page to view the re-import results.
 * **Code analysis deactivation** – re-activate the **Code analysis** Project via the **Settings** page of the Project. After you deactivate a Project, the **Deactivate project** button changes to **Activate project**, and a new **Activate** button appears at the top of the page. Click one of these buttons to re-activate the Project:
 
-<figure><img src="../../../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>

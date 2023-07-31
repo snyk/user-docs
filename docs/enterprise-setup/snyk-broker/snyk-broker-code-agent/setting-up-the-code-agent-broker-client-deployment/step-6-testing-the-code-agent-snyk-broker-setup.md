@@ -30,7 +30,7 @@ The details of the issue appear, and depending on the way you set up the Broker 
 
 Snyk Code results with code snippets:
 
-<figure><img src="../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Broker - Results - with code snippets (1).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
 
 Snyk Code results without code snippets:
 

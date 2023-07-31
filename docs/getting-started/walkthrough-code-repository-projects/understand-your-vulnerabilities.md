@@ -11,13 +11,13 @@ You have [viewed and understood scanned Projects](view-your-first-snyk-projects.
 
 First, open a target to see your Snyk Projects:
 
-<figure><img src="../../.gitbook/assets/image (354).png" alt="View imported Projects"><figcaption><p>View imported Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43).png" alt="View imported Projects"><figcaption><p>View imported Projects</p></figcaption></figure>
 
 Next, select a Project in that list, to see details of the vulnerabilities found in that Project.
 
 For example, for a **Code analysis** project scanned by Snyk Code:
 
-<figure><img src="../../.gitbook/assets/image (149) (1) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (75) (2).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
 
 See [View project information](../../manage-issues/introduction-to-snyk-projects/view-project-information.md) for more details.
 
@@ -25,7 +25,7 @@ See [View project information](../../manage-issues/introduction-to-snyk-projects
 
 Now, look at the vulnerability information for each Snyk Project, provided in Issue Cards:
 
-<figure><img src="../../.gitbook/assets/image (101).png" alt="Vulnerability details Issue Card"><figcaption><p>Vulnerability details Issue Card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt="Vulnerability details Issue Card"><figcaption><p>Vulnerability details Issue Card</p></figcaption></figure>
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 
@@ -42,7 +42,7 @@ Snyk provides detailed resources for more information about vulnerabilities, acc
 
 For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
 
-<figure><img src="../../.gitbook/assets/image (174) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Access Snyk Vulnerability Database"><figcaption><p>Access Snyk Vulnerability Database</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (327).png" alt="Access Snyk Vulnerability Database"><figcaption><p>Access Snyk Vulnerability Database</p></figcaption></figure>
 
 For this example, click on the Snyk vulnerability Identifier to see how Hibernate core and its libraries are vulnerable to SQL injection:
 
@@ -56,7 +56,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 Click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-<figure><img src="../../.gitbook/assets/image (119).png" alt="Access Snyk Learn from a vulnerability card"><figcaption><p>Access Snyk Learn from a vulnerability card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (126).png" alt="Access Snyk Learn from a vulnerability card"><figcaption><p>Access Snyk Learn from a vulnerability card</p></figcaption></figure>
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 
@@ -86,11 +86,11 @@ See [Fix your first vulnerability](fix-your-first-vulnerability.md) for more det
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **Dependencies** tab of the project view:
 
-<figure><img src="../../.gitbook/assets/image (119) (1) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (321) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
 
-Click the file tree icon (![](<../../.gitbook/assets/image (201) (1) (1) (1) (1) (1) (1).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (11) (1).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
-<figure><img src="../../.gitbook/assets/image23 (1).png" alt="Dependency tree details"><figcaption><p>Dependency tree details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image23.png" alt="Dependency tree details"><figcaption><p>Dependency tree details</p></figcaption></figure>
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 
