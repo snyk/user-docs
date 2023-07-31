@@ -1,6 +1,12 @@
 # Publishing Snyk Code CLI results to a Snyk Project and ignoring CLI results (beta)
 
-Snyk Code CLI supports publishing the results to a Snyk Project in the Web UI and respecting issues that were ignored in a Snyk Project in the Web UI so you can filter them from the analysis results.
+The following Snyk CLI commands let you upload test results to the Snyk Web UI>
+
+`snyk code test --report --project-name`: Creates a CLI Project.
+
+`snyk code test --report --project-id --commit-id`: Use an existing SCM Project.
+
+After you ignore an issue in the Web UI for those Projects, when you run these commands again, the CLI command will ignore these issues ignored in the Web UI.
 
 ## Before you begin
 
@@ -89,7 +95,7 @@ Snyk Code CLI supports publishing the results to an existing Snyk Code SCM Proje
 
 ### Command to publish to a specific Project
 
-A Project ID can be retrieved from the Snyk WebUI: https://app.snyk.io/org/org\_name/project/PROJECT\_UUID
+You will find the Project ID in the URL of the Project in the Snyk WebUI: https://app.snyk.io/org/org\_name/project/PROJECT\_UUID
 
 ```
 snyk code test --report --project-id="<PROJECT_UUID>" --commit-id="<COMMIT_ID>"
@@ -102,7 +108,7 @@ You can ignore issues from CLI results in the Web UI both for [Publishing CLI re
 <figure><img src="../../../.gitbook/assets/image (1) (7).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
 
 {% hint style="info" %}
-&#x20;[snyk-to-html](https://github.com/snyk/snyk-to-html) currently does not honor the ignored issues. It does not show ignored results when using snyk-to-html.
+&#x20;[snyk-to-html](https://github.com/snyk/snyk-to-html) currently does not honor the ignored issues. Anything that is ignored in the Web UI is NOT ignored in the report that `snyk-to-html` generates.
 {% endhint %}
 
 Issues that are ignored in the Web UI are ignored in CLI tests when you use the following command:&#x20;
