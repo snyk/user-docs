@@ -253,7 +253,6 @@
       * [Snyk for Elixir](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
       * [Snyk for Go](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
       * [Snyk for Java and Kotlin](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md)
-      *
       * [Snyk for PHP](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
       * [Snyk for Python](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)
       * [Snyk for Ruby](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
