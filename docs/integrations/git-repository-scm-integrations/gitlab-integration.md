@@ -40,9 +40,7 @@ The Snyk GitLab integration allows you to:
 
 ## Required permissions and roles
 
-The following explains the permissions needed for integration with GitLab.
-
-Follow these steps to integrate with GitLab as a Snyk admin user or as a member of the Organization.
+The following explains the permissions needed to integrate with GitLab as a Snyk admin user or as a member of the Organization.
 
 ### User with Personal Access Token
 
@@ -64,7 +62,7 @@ The **api** scope with a **Maintainer** role enables the following:
 * Continuous write access to enable the Snyk Organization users to manually trigger the creation of fix pull requests
 * Continuous read access, enabling Snyk to monitor your Projects and enabling you and the other members of the Organization to manually re-trigger tests.
 
-When the first user in a Snyk Organization (a Snyk admin account user) sets up an integration with a GitLab personal access token or group access token, the token is authenticated with GitLab, enabling access by Snyk to the repositories in that account. After thatto trigger the creation of fix pull requests manually, all users in that Snyk Organization can add and work with any related Projects, while the merge requests themselves will appear in GitLab as having been opened by the original GitLab user, the Snyk admin who set up the configuration.
+When the first user in a Snyk Organization (a Snyk admin account user) sets up an integration with a GitLab personal access token or group access token, the token is authenticated with GitLab, enabling access by Snyk to the repositories in that account. To trigger the creation of fix pull requests manually, all users in that Snyk Organization can add and work with any related Projects, while the merge requests themselves will appear in GitLab as having been opened by the original GitLab user, the Snyk admin who set up the configuration.
 
 ## **Fix vulnerabilities with Snyk merge requests in GitLab**
 

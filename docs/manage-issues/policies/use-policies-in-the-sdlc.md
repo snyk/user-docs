@@ -21,7 +21,7 @@ Your company’s legal team requires strict license compliance controls for busi
 
 First, add the `Critical`, `Production`, and `Frontend` attributes to the Snyk Projects you want this policy to apply to:
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt="Add relevant attributes to a Project"><figcaption><p>Add relevant attributes to a Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt="Add relevant attributes to a Project"><figcaption><p>Add relevant attributes to a Project</p></figcaption></figure>
 
 Next, create a new license policy with those attributes:
 
@@ -62,7 +62,7 @@ See [PR Checks](../../scan-application-code/run-pr-checks/) for details of Snyk�
 
 This example shows a pull request to add the `fullpage.js` package to a JavaScript application. Although this change passes the security policy check (the latest version of the package has no known vulnerability), it fails the license policy check (because of the GPLv3 license included which violates the company’s license policy).
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="PR Check fail on license compliance"><figcaption><p>PR Check fail on license compliance</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (3).png" alt="PR Check fail on license compliance"><figcaption><p>PR Check fail on license compliance</p></figcaption></figure>
 
 ## Apply policies in CI/CD
 
