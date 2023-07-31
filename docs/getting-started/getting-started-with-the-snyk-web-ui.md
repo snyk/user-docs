@@ -90,7 +90,7 @@ Select **Integrations** from the navigation on the dashboard to open the [Integr
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Learn about the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-<figure><img src="../.gitbook/assets/image (282).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (123) (1) (2).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
 
 ### Manage Organization or Group members
 

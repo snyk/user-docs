@@ -55,7 +55,7 @@ Navigate to that **Snyk Organization -> Settings -> Service Account.**
 
 Create a new service account with your chosen name, and from the drop-down, select the role you created in the previous step.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt="Select the Insights k8s Agent role"><figcaption><p>Select the Insights k8s Agent role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (2).png" alt="Select the Insights k8s Agent role"><figcaption><p>Select the Insights k8s Agent role</p></figcaption></figure>
 
 After the service account is created, you will be shown the API token. Copy this down and store it somewhere safe; you’ll need this to configure the agent in the Helm chart.
 

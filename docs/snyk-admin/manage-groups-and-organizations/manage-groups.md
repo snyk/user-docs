@@ -4,7 +4,7 @@ You can use Group-level options to view reports across all of your Group’s Org
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14.png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1).png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
 
 </div>
 

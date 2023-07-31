@@ -6,7 +6,7 @@ When setting an Organization for the CLI tests, you can use either the Organizat
 
 1\. On the Snyk Web UI, open the Organization whose details you want to find:
 
-![](<../../../../.gitbook/assets/snyk-org-switcher (1).png>)
+![](../../../../.gitbook/assets/snyk-org-switcher.png)
 
 2\. Once the selected Organization is open, click the **Org Settings** button <img src="../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png" alt="" data-size="line"> on the top menu:
 

@@ -11,7 +11,9 @@
 Scanning of self-managed and self-hosted source code on GitLab Enterprise is available with the Snyk Enterprise plan. For details, see[ the Snyk plans and pricing page](https://snyk.io/plans).
 {% endhint %}
 
-## Integration features
+## Snyk GitLab integration features
+
+***
 
 The Snyk GitLab integration allows you to:
 
@@ -21,18 +23,16 @@ The Snyk GitLab integration allows you to:
 4. Trigger a Snyk pull request on snyk.io with fixes from the test report page or the Project page for your repo.
 
 {% hint style="info" %}
-**GitLab webhooks** send out an event to Snyk when merge requests occur. This event starts a series of other events such as pulling Project files, running the test process, and posting the results to GitLab, all of which take place on the Snyk side.
+**GitLab webhooks** send out an event to Snyk when merge requests occur. This starts a series of other events, such as pulling Project files, running the test process, and posting the results to GitLab, all of which occur on the Snyk side.
 {% endhint %}
 
-## Set up GitLab integration
-
-Follow these steps to set up GitLab integration.
+## How to set up the GitLab integration
 
 1. Generate a Personal Access Token in your GitLab instance. Find this option in your user account settings area in the **Access Tokens** section. Alternatively, you can use a [Group Access Token](https://docs.gitlab.com/ee/user/group/settings/group\_access\_tokens.html) to grant access to all Projects within a GitLab group or subgroup without contributing to GitLab's licensed user count.
 2. Go to the Snyk [integrations](https://app.snyk.io/integrations) page and click **Connect to GitLab**.
 3. In your GitLab integrations settings, in **General** > **Account settings**, enter your account credentials and the token you generated.
 
-<div align="left">
+<div align="center">
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.06.01.png" alt="GitLab account settings, enter Personal Access Token" width="563"><figcaption><p>GitLab account settings, enter Personal Access Token</p></figcaption></figure>
 
@@ -89,10 +89,10 @@ Whenever a vulnerability is disclosed that affects a Project you are watching, S
 
 When no upgrade is available, you can ignore or patch the vulnerability; patching is available only for Node.js Projects. When a fix option has become available, for example, an upgrade for a vulnerability you previously ignored, Snyk notifies you about this via email and also generates a merge request with the new fix.
 
-## Disable the GitLab integration
+## How to disable the GitLab integration
 
 {% hint style="warning" %}
-Disabling a GitLab integration effectively removes all Snyk integrations and webhooks along with the Snyk credentials and deactivates the GitLab Projects in the Snyk Web UI.
+Disabling a GitLab integration effectively removes all Snyk integrations and webhooks, along with the Snyk credentials, and deactivates the GitLab Projects in the Snyk Web UI.
 {% endhint %}
 
 The Project will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on your pull requests. Again, the webhook that enables the integration for this repo will be removed.
