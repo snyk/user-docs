@@ -4,6 +4,10 @@
 
 Enabling custom rules is only available for Enterprise plans. You can [enable Snyk Code custom rules in Snyk Preview](../../../snyk-admin/manage-settings/snyk-preview.md#enable-or-disable-a-feature).
 
+{% hint style="warning" %}
+Custom rules beta is not currently compatible with [SCM integrations via Broker](../../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker).
+{% endhint %}
+
 ## Getting started with custom rules across environments
 
 You can run custom rules as part of any scan run by Snyk Code, and it is available across the following environments:

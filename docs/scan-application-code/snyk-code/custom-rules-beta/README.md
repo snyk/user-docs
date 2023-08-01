@@ -10,6 +10,10 @@ You can save successful queries and implement them in your regular static analys
 Snyk Code custom rules is in [Open Beta](../../../more-info/snyk-feature-release-process.md#open-beta) and only available for Enterprise plans through Snyk Preview (see [Enable custom rules](getting-started-with-custom-rules.md)).
 {% endhint %}
 
+{% hint style="warning" %}
+Custom rules beta is not currently compatible with [SCM integrations via Broker](../../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker).
+{% endhint %}
+
 ## When to use custom rules
 
 Currently, you can create net new rules not currently supported by Snyk's coverage.

@@ -179,7 +179,7 @@ To use this feature, follow these steps:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (3) (1).png" alt="Set an account to open Snyk PRs" width="563"><figcaption><p>Set an account to open Snyk PRs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (3).png" alt="Set an account to open Snyk PRs" width="563"><figcaption><p>Set an account to open Snyk PRs</p></figcaption></figure>
 
 </div>
 
@@ -230,7 +230,7 @@ To configure the Auto-assign settings for a specific Project from an imported pr
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (5) (2).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure>
 
 </div>
 
