@@ -64,8 +64,8 @@ commitMessage: "snyk: this is a security pull request"
 * `branch`- customize the PR branch name
 * `description` - customize the PR description&#x20;
 
-{% hint style="info" %}
-Snyk will use the default content if any of the customizable properties are missing.
+{% hint style="warning" %}
+All customizable properties must have a value in your template. If any of these are missing from your customized template, Snyk will fail to open a PR. Snyk is working to remove this limitation.
 {% endhint %}
 
 ### File locations
