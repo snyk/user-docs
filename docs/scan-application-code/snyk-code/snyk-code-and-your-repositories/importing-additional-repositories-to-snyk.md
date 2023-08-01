@@ -12,7 +12,7 @@ If the **Snyk Code** feature was previously disabled, and you want to apply the 
 
 2\. On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to import:
 
-![](<../../../../../.gitbook/assets/image (363) (1) (1).png>)
+![](<../../../.gitbook/assets/image (363) (1) (1).png>)
 
 The **Personal and Organization repositories** page appears, displaying the repositories available to you in the selected SCM.
 
@@ -20,16 +20,16 @@ The **Personal and Organization repositories** page appears, displaying the repo
 
 **Notes**:
 
-* The repositories you previously imported are indicated with a check mark ![](<../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Check Mark.png>).
+* The repositories you previously imported are indicated with a check mark ![](<../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Check Mark.png>).
 * To import all the repositories of a specific SCM account, select the account checkbox.
 * The **Settings** options on this page are NOT applicable to Snyk Code, and you can only import entire repositories. However, you can [exclude directories and files from the import process using the .snyk file](excluding-directories-and-files-from-the-import-process.md).
 
-![](<../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Entire Repositories.png>)
+![](<../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Entire Repositories.png>)
 
 4\. After you selected the required repositories, click the **Add selected repositories button** to import the repositories into your Snyk Account:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Re-import - Add selected repositories button.png>)
+![](<../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Re-import - Add selected repositories button.png>)
 
 The selected repositories are imported to Snyk Code, and a progress bar appears on the **Projects** page. When the import is completed, a confirmation message appears on the **Projects** page, informing you of the success of the import. Your imported repositories appear as Target folders, each containing the **Code analysis** Project that includes the findings of the Snyk Code test:
 
-<figure><img src="../../../../../.gitbook/assets/image (453) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (453) (1).png" alt=""><figcaption></figcaption></figure>

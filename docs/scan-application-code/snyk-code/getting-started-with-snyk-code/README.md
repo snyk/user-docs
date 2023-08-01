@@ -1,59 +1,56 @@
 # Getting started with Snyk Code
 
-This section describes how to get started with Snyk Code using the Snyk Web UI Environment.
+You can use Snyk Code in the [Snyk Web UI ](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md)(including [PR Checks](../../run-pr-checks/)), with [IDEs](../../../integrations/ide-tools/), and through the [Snyk CLI](../../../snyk-cli/) and [Snyk API](../../../snyk-api-info/).
 
-You can work with Snyk Code using the following Snyk Environments:
+If you are using Snyk Code in your IDE or through the Snyk CLI with or without the Snyk API, ensure you have the [prerequisites](./#prerequisites-for-using-snyk-code) and then [enable the **Snyk Code** option](enabling-the-snyk-code-option-in-an-organization.md) in the Snyk Web UI. You can then use Snyk Code to test your code.
 
-* [Snyk Web UI ](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md)(including [PR Checks](broken-reference/))
-* [Snyk for IDEs](../../../integrations/ide-tools/)
-* [Snyk CLI](../../../snyk-cli/)
-* [Snyk API](../../../snyk-api-info/)
+If you are using Snyk Code with the API but not the CLI, you must also [integrate your SCM via the Web UI](integrating-your-source-control-system-with-your-snyk-account.md).
 
-The prerequisites for using Snyk Code are the same for all Snyk Environments:
+If you are using Snyk Code in the Web UI, after ensuring you have the [prerequisites](./#prerequisites-for-using-snyk-code), follow the steps in [How to activate Snyk Code](./#how-to-activate-snyk-code).
 
-* If you are using the Snyk Web UI, follow the step-by-step instructions in this section to activate and use Snyk Code.
-* If you are using the Snyk IDE, CLI, or API Environments, use the Snyk Web UI to [enable the **Snyk Code** option](activating-snyk-code-using-the-web-ui/step-1-enabling-the-snyk-code-option.md). Then, continue to test your code with Snyk Code in your selected Environment.
+## **Prerequisites for using Snyk Code**
 
-### **What is required for getting started with Snyk Code?**
+To start using Snyk Code, you must have the following:
 
-To get started with Snyk Code, all you need is a Snyk Account, a supported SCM, and source code that is written in one of the supported platforms and languages.
+* A Snyk account\
+  For more information on creating a Snyk Account, see [Create a Snyk account](../../../getting-started/quickstart/create-a-snyk-account/).
+* A supported Source Code Management (SCM) system that is integrated with your Snyk account\
+  Snyk Code supports the following SCMs: GitHub, GitHub Enterprise, GitLab Cloud, Bitbucket Cloud, Bitbucket Server, and Azure Repos.\
+  For more information on integrating your SCM with your Snyk account, see [Snyk Code - Supported integrations](../snyk-code-ai-engine-web-ui-supported-integrations-languages-frameworks/snyk-code-supported-integrations.md).
+* Repositories with code in a supported language and platform\
+  Snyk Code creates an abstract syntax tree without compiling the code. This requires code to be valid and syntactically correct, including package import statements for components stored in other files or folders.\
+  For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-ai-engine-web-ui-supported-integrations-languages-frameworks/snyk-code-supported-languages-and-frameworks.md).
 
-{% hint style="info" %}
-For more information, see [Prerequisites for Snyk Code](prerequisites-for-snyk-code.md)
-{% endhint %}
+## **How to activate Snyk Code**
 
-Snyk Code creates an abstract syntax tree without compiling the code. This requires code to be valid and syntactically correct, including package import statements for components stored in other files or folders.
+To activate Snyk Code for use in the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) follow these steps:
 
-### **What is the activation process of Snyk Code?**
+1. [Enable the Snyk Code option in your Snyk Organization settings](enabling-the-snyk-code-option-in-an-organization.md).\
+   If you are using Snyk Code in your IDE or through the Snyk CLI with or without the Snyk API, this is the only step you need to do.
+2. [Integrate your Source Control Management system with your Snyk account](integrating-your-source-control-system-with-your-snyk-account.md).\
+   If you are using Snyk Code with the API but not the CLI, you must also do this step.
+3. [Import repositories from your SCM to test with Snyk Code](importing-repositories-for-snyk-code-testing.md).
 
-First, you need to enable the **Snyk Code** option in your Snyk Org Settings via the Web UI. If you intend on using the IDE, CLI, or API Environments, this is the only step you need to do in order to start working with Snyk Code.
+After you activate Snyk Code and import repositories to Snyk for testing, you can view and work with the Snyk Code test results, which include vulnerabilities and fixes, as described on the page [Exploring and working with the Snyk Code results](../exploring-and-working-with-the-snyk-code-results/)_._
 
-{% hint style="info" %}
-If you are working with the API Environment WITHOUT the CLI, you also need to [integrate your SCM via the Web UI](activating-snyk-code-using-the-web-ui/step-2-integrating-your-source-control-system-with-snyk-code.md)
-{% endhint %}
+## **Viewing the Snyk Code results**
 
-When working with the Snyk Web UI, the next step in the activation process is integrating your Snyk Account with the SCM that contains the repositories you want to test. Then, you can import to your Snyk Account the required repositories, and Snyk Code will automatically analyze them and present to you its analysis results.
+During the process of importing your selected repositories, Snyk Code automatically analyzes your imported code to find potential vulnerabilities. All the vulnerability findings that Snyk Code detects in the code of one imported repository are aggregated in one Snyk Project, called Code analysis:
 
-{% hint style="info" %}
-For more information, see [Activating Snyk Code using the Web UI](activating-snyk-code-using-the-web-ui/).
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/SnykCode1.png" alt="ode analysis Project"><figcaption><p>Code analysis Project</p></figcaption></figure>
 
-### **Where are the Snyk Code Results?**
-
-During the import process of your selected repositories, Snyk Code automatically analyzes your imported code in search of potential vulnerabilities. All the vulnerability findings that Snyk Code detects in the code of one imported repository, are aggregated in one Snyk Project, called **Code analysis**:
-
-<figure><img src="../../../.gitbook/assets/SnykCode1.png" alt=""><figcaption></figcaption></figure>
-
-**Note**: Unlike other Snyk products, which create a separate Snyk Project for each imported file, Snyk Code creates one Snyk Project for all the imported files of one repository. This way, all the vulnerabilities that were detected in the repository code are aggregated in one Project, and the Snyk Code results can present the data flow of a vulnerability across multiple files.
+Unlike other Snyk products, which create a separate Snyk Project for each imported file, Snyk Code creates one Snyk Project for all the imported files of one repository. All the vulnerabilities detected in the code in the repository are aggregated in one Project, and the Snyk Code results can present the data flow of a vulnerability across multiple files.
 
 To view all the security vulnerabilities that Snyk Code detected in your imported code, click the **Code analysis** Project, and explore the details of each vulnerability:
 
-<figure><img src="../../../.gitbook/assets/SnykCode2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SnykCode2.png" alt="Vulnerabilties in the Code Analysis Project"><figcaption><p>Vulnerabilties in the Code Analysis Project</p></figcaption></figure>
 
-If your Snyk Account is already integrated with your SCM, and it already contains imported repositories, Snyk Code may be already active and running in your Org Settings. In this case, you can check if your existing repositories are already being tested by Snyk Code, by searching for the **Code analysis** Project in your Target folders. If a **Code analysis** Project exists in your imported repositories, you can skip this _Getting Started_ section and move to the [Exploring and working with the Snyk Code results](../exploring-and-working-with-the-snyk-code-results/) section. However, you may want to learn more about the following topics:
+If your Snyk Account is already integrated with your SCM and contains imported repositories, Snyk Code may already be active in your Organization settings and running. In this case, you can check to see if your existing repositories are already being tested by Snyk Code by searching for the **Code analysis** Project in your Target folders. If a **Code analysis** Project exists in your imported repositories, you can proceed to the page [Exploring and working with the Snyk Code results](../exploring-and-working-with-the-snyk-code-results/).
 
-* [Importing additional repositories to Snyk](activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/importing-additional-repositories-to-snyk.md).
-* [Excluding directories and files from the import process](activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process.md).
-* [Removing imported repositories from the Snyk Code test](activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/removing-imported-repositories-from-the-snyk-code-test.md).
+You may find this information about repositories and Snyk Code useful as you begin to work with Snyk Code results:
+
+* [Importing additional repositories to Snyk](../snyk-code-and-your-repositories/importing-additional-repositories-to-snyk.md)
+* [Excluding directories and files from the import process](../snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md)
+* [Removing imported repositories from the Snyk Code test](../snyk-code-and-your-repositories/removing-imported-repositories-from-the-snyk-code-test.md)
 
 ##
