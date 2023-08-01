@@ -1042,4 +1042,70 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-07-31T17:00:02.105Z
+---
+# Fix
+### [SNYK-PR-TEMPLATE-0001](#snyk-pr-template-0001)
+
+#### Failed to get pull request attributes
+
+Snyk could not get the custom pull request template attributes, using the given variables and the fetched pr template.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+### [SNYK-PR-TEMPLATE-0002](#snyk-pr-template-0002)
+
+#### Not found
+
+Could not find pull request template.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-PR-TEMPLATE-0003](#snyk-pr-template-0003)
+
+#### Failed to compile pull request template
+
+Could not compile your customize pull request template, using Handlebars compilation and Snyk variables in place.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+### [SNYK-PR-TEMPLATE-0004](#snyk-pr-template-0004)
+
+#### Failed to parse pull request attributes
+
+Snyk could not parse the custom pull request template, using the given variables and assigning them to the fetched pr template.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+### [SNYK-PR-TEMPLATE-0005](#snyk-pr-template-0005)
+
+#### Failed to load YAML file after substituting Snyk variables
+
+Could not load YAML file after substituting Snyk variables into the custom PR template.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+### [SNYK-PR-TEMPLATE-0006](#snyk-pr-template-0006)
+
+#### Failed to generate hash for custom PR template
+
+Snyk could not generate hash using the customer PR files and projects vulnIds.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+--- Generated at 2023-08-01T10:50:28.568Z
