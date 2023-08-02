@@ -13,7 +13,7 @@ Some features might not be available, depending on your pricing plan. See [prici
 | Package managers / Features | CLI support | Git support | License scanning | Fix PRs |
 | --------------------------- | ----------- | ----------- | ---------------- | ------- |
 | Cocoapods                   | ✔︎          | ✔︎          | ✔︎               |         |
-| Swift Package Manager       | ✔︎          |             | ✔︎               |         |
+| Swift Package Manager       | ✔︎          |             |                  |         |
 
 ## Snyk CLI for Swift and Objective-C Projects (CI/CD)
 
