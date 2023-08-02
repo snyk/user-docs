@@ -1,13 +1,5 @@
 # Publishing Snyk Code CLI results to a Snyk Project and ignoring CLI results (beta)
 
-The following Snyk CLI commands let you upload test results to the Snyk Web UI>
-
-`snyk code test --report --project-name`: Creates a CLI Project.
-
-`snyk code test --report --project-id --commit-id`: Use an existing SCM Project.
-
-After you ignore an issue in the Web UI for those Projects, when you run these commands again, the CLI command will ignore these issues ignored in the Web UI.
-
 ## Before you begin
 
 The two sections support different use cases:
