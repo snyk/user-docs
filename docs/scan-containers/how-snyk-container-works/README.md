@@ -60,12 +60,14 @@ Some software components from upstream providers are not installed using a packa
 
 New vulnerabilities are disclosed continuously. Snyk can alert you to new vulnerabilities in your image as they are announced, even when your image software installed has not changed.
 
-If you use an integration that saves a snapshot of the installed software on Snyk’s service and the image has not changed, Snyk Container automatically rescans without accessing the image, alerting you to new vulnerabilities. However, if the image has changed, Snyk will access and pull it before rescanning it.
+If you use an integration that saves a snapshot of the installed software on Snyk’s service and the image has not changed, Snyk Container automatically rescans without accessing the image, alerting you to new vulnerabilities.
+
+If the image has changed, you must reimport your image, so that Snyk can access the updated image and its metadata before rescanning it.&#x20;
 
 {% hint style="info" %}
-Note that recurring scans do not detect updates to the dependencies of your applications. The recurring scans test for new vulnerabilities using a snapshot of your application dependencies at the time the application was imported.\
+Recurring scans do not detect updates to the dependencies of your applications. The recurring scans test for new vulnerabilities using a snapshot of your application dependencies at the time the application was imported.\
 \
-To detect changes in your application, such as updated dependencies, re-import your container image in Snyk. See [Getting started with Snyk Container](../getting-started-with-snyk-container.md) for an example of how to import your image.
+To detect changes in your application, such as updated dependencies, you must re-import your container image in Snyk. To see an example of how to import your image, see [Getting started with Snyk Container](../getting-started-with-snyk-container.md).
 {% endhint %}
 
 ## More about container security
