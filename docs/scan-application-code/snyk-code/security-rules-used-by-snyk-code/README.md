@@ -1,19 +1,19 @@
-# Security Rules used by Snyk Code
+# Security rules used by Snyk Code
 
 {% hint style="info" %}
-**Important!** Snyk Security Rules list is updated continuously. This list is constantly growing, and the rules within it may change, in order to provide you with the best protection and security solutions for your code.
+Snyk Code rules are updated continuously. The list expands continually, and the rules may change to provide the best protection and security solutions for your code.
 {% endhint %}
 
-The following table lists the security rules that are used by Snyk Code when scanning your source code for vulnerabilities:
+The following table lists the security rules that are used by Snyk Code when scanning your source code for vulnerabilities.
 
-**Notes**:
+The column headings are defined as follows:
 
-* **No. & Rule Name** column - \_\_ contains consecutive numbers for each rule, and the Snyk name of the rule.
-* **CWE(s)** column - the [CWE numbers](https://cwe.mitre.org/) covered by this rule.
-* **OWASP Top 10/SANS 25** column - indicates if and to which [OWASP Top 10 items](https://owasp.org/Top10/) (2021 edition) the rule belongs, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
-* **Supported Languages** column - lists the programming languages to which this specific rule applies. Note that there might be two rules with the same name that apply to different languages.
+* **No. and Rule Name**:  Consecutive numbers for each rule and the Snyk name of the rule.
+* **CWE(s):** The [CWE numbers](https://cwe.mitre.org/) that are covered by this rule.
+* **OWASP Top 10/SANS 25**: Which [OWASP Top 10 items](https://owasp.org/Top10/) (2021 edition) the rule belongs to, if any, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
+* **Supported Languages**: The programming languages to which this specific rule applies. Note that there might be two rules with the same name that apply to different languages.
 
-| No. & Rule Name                                                                         | CWE(s)                                                                                                       | OWASP Top 10/SANS 25                                                              | Supported Languages                 |
+| No. and Rule Name                                                                       | CWE(s)                                                                                                       | OWASP Top 10/SANS 25                                                              | Supported Languages                 |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- | ----------------------------------- |
 | **(1) Use of Hardcoded Credentials**                                                    | (798) Use of Hard-coded Credentials                                                                          | OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures | PHP                                 |
 |                                                                                         | (259) Use of Hard-coded Password                                                                             | SANS/CWE Top 25                                                                   | Ruby                                |
