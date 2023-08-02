@@ -4,7 +4,7 @@ After you enable the **Snyk Code** option and integrate your Snyk account with y
 
 Depending on your existing Snyk Account state and your needs, do one of the following:
 
-* If you already have repositories in your Snyk Account and do not want to import additional ones but want to test your existing repositories with Snyk Code, you must [re-import these repositories](../snyk-code-and-your-repositories/re-importing-existing-repositories-for-the-snyk-code-test.md).
+* If you already have repositories in your Snyk Account and do not want to import additional ones but want to test your existing repositories with Snyk Code, you must [re-import these repositories](../snyk-code-and-your-repositories/re-importing-existing-repositories-for-snyk-code-testing.md).
 * If you do not have any repositories in your Snyk account, [import your first repository to Snyk](../snyk-code-and-your-repositories/importing-your-first-repository-to-snyk.md)**.**
 * If you already have repositories in your Snyk account and want to import more for Snyk Code testing, [import additional repositories to Snyk](../snyk-code-and-your-repositories/importing-additional-repositories-to-snyk.md).
 

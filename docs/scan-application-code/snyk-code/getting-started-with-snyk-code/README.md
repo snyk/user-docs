@@ -51,6 +51,6 @@ You may find this information about repositories and Snyk Code useful as you beg
 
 * [Importing additional repositories to Snyk](../snyk-code-and-your-repositories/importing-additional-repositories-to-snyk.md)
 * [Excluding directories and files from the import process](../snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md)
-* [Removing imported repositories from the Snyk Code test](../snyk-code-and-your-repositories/removing-imported-repositories-from-the-snyk-code-test.md)
+* [Removing imported repositories from the Snyk Code test](../snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md)
 
 ##

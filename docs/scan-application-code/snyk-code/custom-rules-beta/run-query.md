@@ -3,7 +3,7 @@
 ## Conditions
 
 * If you re-imported Projects in Snyk, you need to **Select new repo** in **Custom rules** or wait for the next automated scan cycle.\
-  :link: [Re-importing existing repositories for the Snyk Code test](../snyk-code-and-your-repositories/re-importing-existing-repositories-for-the-snyk-code-test.md)&#x20;
+  :link: [Re-importing existing repositories for the Snyk Code test](../snyk-code-and-your-repositories/re-importing-existing-repositories-for-snyk-code-testing.md)&#x20;
 * The query language is case-sensitive.
 
 ## Run a query on a repository
