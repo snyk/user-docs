@@ -81,7 +81,9 @@ You need only the Kubernetes connector for Insights installed in your Kubernetes
 
 #### **If I’m a customer and already use the existing agent, do I also need to install the Kubernetes connector for Insights?**
 
-If you want to use Insights, you must install the Kubernetes connector for Insights into your Kubernetes clusters.
+If you want Insights to be able to compute both the Deployed and Public Facing risk factors, you must install the Kubernetes connector into your Kubernetes clusters.
+
+If you have only the existing agent installed, Insights is able to compute only the Deployed risk factor.
 
 #### **What workload configuration the Kubernetes connector for Insights is collecting?**
 
