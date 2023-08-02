@@ -135,7 +135,7 @@ Organizations to which you belong have default settings for how Snyk sends email
 
 To override these settings, change your notification preferences:
 
-1. Select the dropdown next to your name in the top right corner of the Snyk Web UI.
+1. Select the dropdown next to your name.
 2. Select **Notification preferences**.
 
 The Account Settings page allows you to change the types of notifications for each Organization to which you belong. You can also customize the notifications for individual Projects.
