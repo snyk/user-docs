@@ -1,4 +1,4 @@
-# Best Practices
+# Best practices for Snyk Code custom rules
 
 ## **Naming custom rules**
 
@@ -10,7 +10,7 @@ Custom queries and rules are code, meaning you can copy-paste, export, or import
 
 ## **Test your query before making it a rule**
 
-A query works at a point in time whenever you execute it, whereas a rule needs to work for all future. To ensure future-proof rules, testing it against foreign code like open source Projects is a good idea. This hardens the query toward different coding styles or libraries used. This could be useful if your business acquired another one and you must merge the codebases.
+A query works at a point in time whenever you execute it, whereas a rule needs to work for all future cases. To ensure future-proof rules, testing them against foreign code like open source Projects is a good idea. This hardens the query toward different coding styles or libraries used. This could be useful if your business acquired another one and you must merge the codebases.
 
 ## **Sometimes the full qualified name of objects is hidden in syntactical sugar**
 

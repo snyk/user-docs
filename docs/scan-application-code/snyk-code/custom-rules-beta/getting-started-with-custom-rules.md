@@ -1,22 +1,28 @@
 # Getting started with custom rules
 
-## Enable Snyk Code custom rules in Snyk Preview
 
-Enabling custom rules is only available for Enterprise plans. You can [enable Snyk Code custom rules in Snyk Preview](../../../snyk-admin/manage-settings/snyk-preview.md#enable-or-disable-a-feature).
+
+{% hint style="info" %}
+**Feature availability**\
+The Snyk Code custom rules feature is in [Open Beta](../../../more-info/snyk-feature-release-process.md#open-beta) and available only for Enterprise plans through Snyk Preview.&#x20;
+{% endhint %}
 
 {% hint style="warning" %}
 Custom rules beta is not currently compatible with [SCM integrations via Broker](../../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker).
 {% endhint %}
 
-## Getting started with custom rules across environments
-
-You can run custom rules as part of any scan run by Snyk Code, and it is available across the following environments:
+You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:
 
 * [Snyk Web UI](../../../getting-started/getting-started-with-the-snyk-web-ui.md)
 * [Snyk CLI](../cli-for-snyk-code/)
 * [IDE](../using-snyk-code-via-ide.md)
 
-### Snyk Web UI
+{% hint style="info" %}
+**Prerequisite**\
+Before using the feature, you must [enable Snyk Code custom rules in Snyk Preview](../../../snyk-admin/manage-settings/snyk-preview.md#enable-or-disable-a-feature).
+{% endhint %}
+
+## Using custom rules in the Snyk Web UI
 
 You can create and test queries in a local environment, completely separate from your current Snyk scans. Perform one of the following actions in Snyk Web UI:
 
@@ -25,18 +31,18 @@ You can create and test queries in a local environment, completely separate from
 * [Analyze query results](run-query.md#analyze-query-results)
 * [Save custom rules](create-custom-rules.md)
 
-### Snyk CLI
+## Using custom rules in the Snyk CLI
 
-You can test your Code Projects using Snyk CLI with regular commands and options as long as you have the [.snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.
+You can test your Code Projects using the Snyk CLI with regular commands and options as long as you have the [.snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.
 
-:link: [Using Snyk Code via the CLI](../cli-for-snyk-code/)
+For more information, see [Using Snyk Code via the CLI](../cli-for-snyk-code/).
 
-### IDE
+## Using custom rules in the IDE
 
 IDE integrations with Snyk support custom rules as long as you have the [.snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.&#x20;
 
-:link: [Using Snyk Code via the IDE](../using-snyk-code-via-ide.md)
+For more information, see [Using Snyk Code via the IDE](../using-snyk-code-via-ide.md).
 
-## What's next?
+## Additional resource
 
-To learn from an end-to-end example, see the following Snyk Training course: [Snyk Code Custom Rules](https://training.snyk.io/learn/course/snyk-code-custom-rules/main/snyk-code-custom-rules).
+To learn from an end-to-end example, see the Snyk Training course [Snyk Code Custom Rules](https://training.snyk.io/learn/course/snyk-code-custom-rules/main/snyk-code-custom-rules).
