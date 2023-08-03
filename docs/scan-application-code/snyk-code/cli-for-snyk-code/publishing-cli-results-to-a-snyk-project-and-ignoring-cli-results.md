@@ -76,7 +76,7 @@ Minimum supported CLI version: 1.1194.0
 
 Snyk Code CLI supports publishing the results to an existing Snyk Code SCM Project in the Web UI and respecting issues ignored in a Snyk Project in the Web UI so you can filter them from the analysis results. This will provide [Snyk Code Data flow](https://docs.snyk.io/scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue/exploring-the-data-flow-page) for the CLI results snapshot.
 
-### Considerations in publishing SLI results
+### Considerations in publishing CLI results
 
 * An [SCM Integration](../../../integrations/git-repository-scm-integrations/) is required, as the CLI results are appended there. &#x20;
 * The Project ID is required.
