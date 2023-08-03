@@ -117,7 +117,7 @@ You can pass the following parameters to your`snykSecurity` step.
 
 **`snykInstallation` (required)**
 
-Snyk Installation Name, as configured in step 2. Configure a Snyk tnstallation.
+Snyk Installation Name, as configured in step 2. Configure a Snyk installation.
 
 **`snykTokenId` (optional, default: \_none**\_**)**
 
@@ -151,7 +151,7 @@ The path to the manifest file to be used by Snyk. See `--file` in the [CLI comma
 
 **`severity` (optional, default: \_automatic**\_**)**
 
-The minimum severity to detect. Can be one of the following: `low`, `medium`, `high` , `critical`. See `--severity-threshold` in the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior.
+The minimum severity to detect. Can be one of the following: `low`, `medium`, `high`, `critical`. See `--severity-threshold` in the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior.
 
 **`additionalArguments` (optional, default: \_none**\_**)**
 
