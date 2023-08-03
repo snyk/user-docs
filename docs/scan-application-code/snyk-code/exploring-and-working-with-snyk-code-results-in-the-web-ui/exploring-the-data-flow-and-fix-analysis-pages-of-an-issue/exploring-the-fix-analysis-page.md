@@ -2,25 +2,25 @@
 
 The **Fix analysis** page is designed to help you fix the vulnerability issue that was discovered in your code. This page provides additional details about the Vulnerability Type that was discovered, best practices for preventing this issue, if available, and code examples of fixes from the global open source community:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - 2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - 2.png" alt=""><figcaption></figcaption></figure>
 
 The **Fix analysis** page enables you to perform the following:
 
 * **Learn more about the discovered issue and ways to prevent it** - use the information on the **Details** pane on the left:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Details pane.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Details pane.png" alt=""><figcaption></figcaption></figure>
 
 * **Examine fix examples from the global open source community** - review and browse through the code samples on the **Example fixes** pane on the right:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Examples pane.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Examples pane.png" alt=""><figcaption></figcaption></figure>
 
 You can open the code of the fix examples, by clicking the file link above the example:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Examples pane - link to code.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Examples pane - link to code.png" alt=""><figcaption></figcaption></figure>
 
 The code diff of the fix example appears in the integrated SCM, showing you how this vulnerability was fixed:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Examples pane - link - code.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Examples pane - link - code.png" alt=""><figcaption></figcaption></figure>
 
 * **Share your feedback** - send Snyk Code your feedback about the discovered issue using the **Share Feedback** button.\
   **Note**: For more information, see [Sharing your feedback with Snyk Code](https://docs.snyk.io/products/snyk-code/exploring-and-working-with-the-snyk-code-results/sharing-your-feedback-with-snyk-code).

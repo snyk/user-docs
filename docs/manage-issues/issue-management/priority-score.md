@@ -81,4 +81,4 @@ A number of specific factors contribute to priority calculation for Snyk Code, i
 * **Hot files**: if the vuln is in the source file, or inside a code flow
 * **Fixability**: If we have fix examples available for this issue
 
-See [Understanding the Priority Score of the Snyk Code issues](../../scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/understanding-the-priority-score-of-the-snyk-code-issues.md) for more details.
+See [Understanding the Priority Score of the Snyk Code issues](../../scan-application-code/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/understanding-the-priority-score-of-the-snyk-code-issues.md) for more details.

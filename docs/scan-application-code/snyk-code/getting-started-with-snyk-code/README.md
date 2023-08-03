@@ -31,7 +31,7 @@ To activate Snyk Code for use in the [Snyk Web UI](../../../getting-started/quic
    If you are using Snyk Code with the API but not the CLI, you must also do this step.
 3. [Import repositories from your SCM to test with Snyk Code](importing-repositories-for-snyk-code-testing.md).
 
-After you activate Snyk Code and import repositories to Snyk for testing, you can view and work with the Snyk Code test results, which include vulnerabilities and fixes, as described on the page [Exploring and working with the Snyk Code results](../exploring-and-working-with-the-snyk-code-results/)_._
+After you activate Snyk Code and import repositories to Snyk for testing, you can view and work with the Snyk Code test results, which include vulnerabilities and fixes, as described on the page [Exploring and working with the Snyk Code results](../exploring-and-working-with-snyk-code-results-in-the-web-ui/)_._
 
 ## **Viewing the Snyk Code results**
 
@@ -45,7 +45,7 @@ To view all the security vulnerabilities that Snyk Code detected in your importe
 
 <figure><img src="../../../.gitbook/assets/SnykCode2.png" alt="Vulnerabilties in the Code Analysis Project"><figcaption><p>Vulnerabilties in the Code Analysis Project</p></figcaption></figure>
 
-If your Snyk Account is already integrated with your SCM and contains imported repositories, Snyk Code may already be active in your Organization settings and running. In this case, you can check to see if your existing repositories are already being tested by Snyk Code by searching for the **Code analysis** Project in your Target folders. If a **Code analysis** Project exists in your imported repositories, you can proceed to the page [Exploring and working with the Snyk Code results](../exploring-and-working-with-the-snyk-code-results/).
+If your Snyk Account is already integrated with your SCM and contains imported repositories, Snyk Code may already be active in your Organization settings and running. In this case, you can check to see if your existing repositories are already being tested by Snyk Code by searching for the **Code analysis** Project in your Target folders. If a **Code analysis** Project exists in your imported repositories, you can proceed to the page [Exploring and working with the Snyk Code results](../exploring-and-working-with-snyk-code-results-in-the-web-ui/).
 
 You may find this information about repositories and Snyk Code useful as you begin to work with Snyk Code results:
 
