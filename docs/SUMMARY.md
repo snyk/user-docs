@@ -243,7 +243,7 @@
 * [Scan application code](scan-application-code/README.md)
   * [Supported languages and frameworks](scan-application-code/supported-languages-and-frameworks/README.md)
     * [Introduction to Snyk supported languages and frameworks](scan-application-code/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md)
-    * [Supported languages, frameworks and feature availability overview](scan-application-code/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md)
+    * [Supported languages, frameworks, and feature availability overview](scan-application-code/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md)
     * [JavaScript](scan-application-code/supported-languages-and-frameworks/javascript/README.md)
       * [Best practices for JavaScript and Node.js](scan-application-code/supported-languages-and-frameworks/javascript/snyk-for-javascript-node.js-developers.md)
   * [Snyk Open Source](scan-application-code/snyk-open-source/README.md)
