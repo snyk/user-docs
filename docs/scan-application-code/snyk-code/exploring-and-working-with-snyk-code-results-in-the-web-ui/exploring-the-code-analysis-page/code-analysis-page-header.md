@@ -32,7 +32,7 @@ The page shows the name of the branch of the analyzed repository, in this exampl
 <figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Header - Project Tabs.png" alt="Project tabs"><figcaption><p>Project tabs</p></figcaption></figure>
 
 * **Overview** – the default Project page that displays the most recent vulnerability results.
-* **History** – a page that displays the previous snapshots and results of past tests. For more information, see [Exploring the history of the Snyk Code results](../exploring-the-history-of-the-snyk-code-results.md).
+* **History** – a page that displays the previous snapshots and results of past tests. For more information, see [Exploring the history of the Snyk Code results](../../exploring-and-working-with-the-snyk-code-results/exploring-the-history-of-the-snyk-code-results.md).
 * **Settings** – a page that enables you to perform the following:
   * Set the frequency of recurring tests.
   * Find the unique Project ID.

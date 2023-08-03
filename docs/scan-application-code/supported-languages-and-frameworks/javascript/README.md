@@ -8,12 +8,13 @@ You might encounter false positives or false negatives for partially supported f
 
 ### Code analysis
 
-Snyk Code fully supports the following frameworks:
+Snyk Code supports the following frameworks:
 
 * **React**
 * **Vue.js**
 * **Express**
 * **jQuery**
+* **Angular (partial support)**
 
 ### Open source and licensing
 
