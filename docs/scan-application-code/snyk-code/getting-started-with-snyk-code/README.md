@@ -16,10 +16,10 @@ To start using Snyk Code, you must have the following:
   For more information on creating a Snyk Account, see [Create a Snyk account](../../../getting-started/quickstart/create-a-snyk-account/).
 * A supported Source Code Management (SCM) system that is integrated with your Snyk account\
   Snyk Code supports the following SCMs: GitHub, GitHub Enterprise, GitLab Cloud, Bitbucket Cloud, Bitbucket Server, and Azure Repos.\
-  For more information on integrating your SCM with your Snyk account, see [Snyk Code - Supported integrations](../snyk-code-ai-engine-web-ui-supported-integrations-languages-frameworks/snyk-code-supported-integrations.md).
+  For more information on integrating your SCM with your Snyk account, see [Snyk Code - Supported integrations](../snyk-code-key-features/snyk-code-supported-integrations.md).
 * Repositories with code in a supported language and platform\
   Snyk Code creates an abstract syntax tree without compiling the code. This requires code to be valid and syntactically correct, including package import statements for components stored in other files or folders.\
-  For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-ai-engine-web-ui-supported-integrations-languages-frameworks/snyk-code-supported-languages-and-frameworks.md).
+  For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-language-and-framework-support.md).
 
 ## **How to activate Snyk Code**
 

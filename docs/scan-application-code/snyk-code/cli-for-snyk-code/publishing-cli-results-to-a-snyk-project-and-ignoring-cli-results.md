@@ -111,7 +111,7 @@ snyk code test --report --project-name="PROJECT_NAME"
 
 Ignores that have been applied to the Project with a `PROJECT_NAME` suppress the issue the next time that the CLI runs for the same `PROJECT_NAME`.
 
-To ignore the CLI issues appended in the SCM Project, you can use the following command:
+To ignore the CLI issues appended in the SCM Project, you can use the following command :
 
 ```
 snyk code test --report --project-id="<PROJECT_UUID>" --commit-id="<COMMIT_ID>"

@@ -1,9 +1,7 @@
-# Customize PR Templates (Closed Beta)
-
-
+# Customize PR templates (Closed Beta)
 
 {% hint style="warning" %}
-This feature is currently in closed beta. The functionality is very likely to evolve as we take on feedback and there will be breaking changes. Please speak to your account manager about gaining access to this feature.
+This feature is currently in closed beta. The functionality is likely to evolve based on feedback, and there will be breaking changes. Contact your account manager to get access to this feature.
 {% endhint %}
 
 ## Understanding Customized PRs
@@ -14,34 +12,37 @@ Snyk has default templates for the title, description, commit message, and branc
 
 You may have your own standards and practices for submitting pull requests. For instance, if a pull request comes from Snyk, you may require that the title begins with `SNYK:`. This page outlines the areas of pull requests that you can customize and provides instructions on how to do so.
 
-## Using the Customize PRs feature
+On the [Supported languages, frameworks, and feature availability overview](../../supported-languages-and-frameworks/) page, you can find all the languages for which the Fix PR's functionality is supported.
 
-When enabling the Customize Snyk PR feature, you will need to add a custom template file to your repository.&#x20;
+## Using the Customize PR feature
+
+Here are the steps that you need to follow to enable the Customize Snyk PR feature:
+
+1. Enable the Fix PR feature. Configuration details are available on the [Configure Automatic fix PRs](fix-pull-requests-for-known-vulnerabilities-backlog.md) page.
+2. Add a custom template file to your repository.
+3. Configure the title, description, commit message, and branch name. Going forward, this will apply to all Projects associated with that repository.
+4. If you want to use **multiple repositories for a custom template**, **add the customized YAML template file to each of these repositories.**
 
 {% hint style="warning" %}
-If you want multiple repositories to use a custom template, make sure to add the customized yaml template file to each of these repositories.
-{% endhint %}
-
-This allows you to configure the title, description, commit message, and branch name. Going forward, this will apply to all Projects associated with that repository.
-
-{% hint style="warning" %}
-We are initially looking for feedback on the variables and templating system, once we have validated our approach we will look into building more robust authoring workflows via our API and UI interfaces.
+Snyk is initially looking for feedback on the variables and templating system. Once the approach is validated, Snyk will look into building more robust authoring workflows via the API and UI interfaces.
 {% endhint %}
 
 ## Creating the PR template
 
-* Create the YAML template in an [appropriate location ](customize-pr-templates-closed-beta.md#file-locations)and use the [handlebars](https://handlebarsjs.com) syntax for templating.
-* The YAML file can define several string properties, including:
-  * `title`
-  * `branchName`
-  * `commitMessage`
-  * `description`
+Create the YAML template in an [appropriate location ](customize-pr-templates-closed-beta.md#file-locations)and use the [handlebars](https://handlebarsjs.com) syntax for templating.
+
+The YAML file can define several string properties, including:
+
+* `title`
+* `branchName`
+* `commitMessage`
+* `description`
 
 {% hint style="info" %}
-When the Customize Snyk PRs feature is enabled, all PRs from Snyk adopt this format, effectively switching off Snyk’s default template. Only strings are acceptable values. Lists or numbers are not allowed.
+When the Customize Snyk PRs feature is enabled, all PRs from Snyk adopt this format, effectively switching off Snyk’s default template. The only acceptable values are strings. Lists or numbers are not allowed.
 {% endhint %}
 
-* You can use YAML multiline operators. You can create a detailed description that spans several lines by following this format:&#x20;
+You can use YAML multiline operators. You can create a detailed description that spans several lines by following this format:&#x20;
 
 ```yaml
 description: |
@@ -70,12 +71,12 @@ All customizable properties must have a value in your template. If any of these 
 
 ### File locations
 
-To enable Snyk to access your customized template, you need to add a file called `snyk_pull_request_template.yaml` to your Project(repository). The storage method varies based on the type of integration.
+To enable Snyk to access your customized template, add a file called `snyk_pull_request_template.yaml` to your Project(repository)[^1]. The storage method varies based on the type of integration.
 
-* Github - `./github/snyk_pull_request_template.yaml`
-* GitLab  - `./gitlab/snyk_pull_request_template.yaml`
-* Azure  - `./.azuredevops/snyk_pull_request_template.yaml`
-* Other (like BitBucket)  - `./.config/snyk_pull_request_template.yaml`
+* Github - `/.github/snyk_pull_request_template.yaml`
+* GitLab  - `/.gitlab/snyk_pull_request_template.yaml`
+* Azure  - `/.azuredevops/snyk_pull_request_template.yaml`
+* Other (like BitBucket)  - `/.config/snyk_pull_request_template.yaml`
 
 ## Variables list and description
 
@@ -83,7 +84,7 @@ You can use the following variables in your template.
 
 ### <mark style="color:purple;">`jira_ids: string[]`</mark>
 
-A list of Jira tickets associated with the issues contained within the pull request. Make sure that the Snyk Jira integration is enabled on your Project(repository) and that you have linked Snyk issues to JIRA tickets.
+A list of Jira tickets associated with the issues contained within the pull request. [Make sure ](#user-content-fn-2)[^2]that the Snyk Jira integration is enabled on your Project(repository)[^3] and that you have linked Snyk issues to JIRA tickets.
 
 To automatically link Jira to the relevant pull requests, include a list of associated Jira tickets in the commit message.&#x20;
 
@@ -100,7 +101,7 @@ commitMessage: |
 This pull request is from Snyk and relates to JIRA-1,JIRA-2,JIRA-3
 ```
 
-This outcome indicates that the suggested solution successfully resolved three problems, and it also includes links to every Jira ticket.
+This outcome indicates that the suggested solution successfully resolved three problems. It also includes links to every Jira ticket.
 
 ### <mark style="color:purple;">`snyk_project_url: string`</mark>
 
@@ -159,7 +160,7 @@ Fix applied by my-org
 
 ### <mark style="color:purple;">`package_name: string`</mark>
 
-This is the name of the package being fixed or upgraded. In cases where more than one package is changed this variable will default to the first one.
+This is the name of the package being fixed or upgraded. When more than one package is changed this variable will default to the first one.
 
 Follow the below example to display in the branch name the number of issues in your Project(repository).&#x20;
 
@@ -311,22 +312,22 @@ Ensure that the template is written in valid handlebars syntax. Any syntax error
 Review the variables used in the template and ensure they match the supported variables provided in the [Variables list](customize-pr-templates-closed-beta.md#variables-list-and-description). If a variable is misspelled or not recognized, it may result in unexpected output or fallback to default values.&#x20;
 
 {% hint style="info" %}
-As the feature progresses, we will provide more comprehensive error reporting and validation of the template.
+As the feature progresses, Snyk will provide more comprehensive error reporting and validation of the template.
 {% endhint %}
 
 ## Limitations
 
 #### Branch names&#x20;
 
-Although you can still customize your branch name, to avoid any potential issues, we automatically append a hash to the end of the branch name you choose. This hash is derived from the PR contents and prevents opening duplicate branches, as well as naming conflicts with existing or future branches.
+Although you can still customize your branch name, to avoid any potential issues, Snyk automatically appends a hash to the end of the branch name you choose. This hash derives from the PR contents and prevents opening duplicate branches, as well as naming conflicts with existing or future branches.
 
 #### Jira
 
-You can add Jira tickets to your PR, but we are limited to those created via Snyk workflows (either UI or API).
+You can add Jira tickets to your PR, but Snyk is limited to those created via Snyk workflows (either UI or API).
 
 #### Fail to open PR
 
-Currently, we do not surface errors when we fail to open a PR, this will be resolved in an upcoming update.
+Currently, Snyk does not surface errors when a PR cannot be opened. This will be resolved in an upcoming update.
 
 #### No line between variables
 
@@ -359,7 +360,17 @@ You can validate the correctness of your template by:
 2. Opening a PR and verifying that your customized inputs are being used.&#x20;
 
 {% hint style="info" %}
-The Customize PRs feature is in closed beta. We welcome any feedback you have to improve its functionality.
+The Customize PRs feature is in closed beta. Any feedback on improving the functionality is welcome.
 {% endhint %}
 
 \
+
+
+[^1]: 
+
+[^2]: Ensure
+
+
+
+[^3]: space missing?
+

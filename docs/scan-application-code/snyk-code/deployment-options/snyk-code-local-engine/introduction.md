@@ -48,12 +48,12 @@ The **minimum total required resources** for each flavor of the Snyk Code Local 
 * Local Engine SCM Only:
   * 170GB RAM
   * 65 Core CPU
-  * 100GB Ephemeral Storage
+  * 65GB Ephemeral Storage
 * Local Engine SCM + PR Check:
   * 200GB RAM
   * 90 Core CPU
-  * 200GB Ephemeral Storage
+  * 160GB Ephemeral Storage
 * Local Engine Full deployment (all features)
   * 220GB RAM
   * 100 Core CPU
-  * 200GB Ephemeral Storage
+  * 160GB Ephemeral Storage

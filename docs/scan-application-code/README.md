@@ -23,4 +23,4 @@ Scan and automatically address potential vulnerabilities when you review pull re
 ## Language and framework support
 
 * [Supported languages and package managers in Snyk Open Source](snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
-* [Supported languages and frameworks in Snyk Code](snyk-code/snyk-code-ai-engine-web-ui-supported-integrations-languages-frameworks/snyk-code-supported-languages-and-frameworks.md)
+* [Supported languages and frameworks in Snyk Code](snyk-code/snyk-code-language-and-framework-support.md)

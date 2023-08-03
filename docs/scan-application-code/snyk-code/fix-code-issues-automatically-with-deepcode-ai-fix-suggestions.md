@@ -32,7 +32,7 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Language support
 
-Fix Suggestions supports only [Javascript](snyk-code-ai-engine-web-ui-supported-integrations-languages-frameworks/snyk-code-supported-languages-and-frameworks.md#javascript-frameworks).
+Fix Suggestions supports only [Javascript](snyk-code-language-and-framework-support.md#javascript-frameworks).
 
 ## Enable DeepCode AI Fix Suggestions
 
