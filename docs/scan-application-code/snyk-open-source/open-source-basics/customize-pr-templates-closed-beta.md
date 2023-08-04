@@ -29,7 +29,7 @@ Snyk is initially looking for feedback on the variables and templating system. O
 
 ## Creating the PR template
 
-Create the YAML template in an [appropriate location ](customize-pr-templates-closed-beta.md#file-locations)and use the [handlebars](https://handlebarsjs.com) syntax for templating.
+Create the YAML template in an [appropriate location ](customize-pr-templates-closed-beta.md#file-locations)and use the [mustache](https://mustache.github.io) syntax for templating.
 
 The YAML file can define several string properties, including:
 
@@ -305,7 +305,7 @@ If you encounter an error, double-check your template and apply the below instru
 
 ### Check template syntax
 
-Ensure that the template is written in valid handlebars syntax. Any syntax errors can lead to unexpected behavior. Double-check the syntax and make any necessary changes. &#x20;
+Ensure that the template is written in valid mustache syntax. Any syntax errors can lead to unexpected behavior. Double-check the syntax and make any necessary changes. &#x20;
 
 ### Verify variable names
 
