@@ -1,10 +1,14 @@
 # Introduction to Snyk Code Local Engine
 
+{% hint style="info" %}
+Snyk Code Local Engine is currently in Private Beta. If you would like to set it up in your Organization, contact your Snyk account team.
+{% endhint %}
+
 Snyk Code Local Engine is a fully contained version of the Snyk Code Engine that allows users to avoid uploading their code to the internet.
 
 This high-level architecture diagram shows the different components and their interactions.
 
-<figure><img src="../../../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png" alt="Snyk Code Local Engine high-level architecture"><figcaption><p>Snyk Code Local Engine high-level architecture</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png" alt="Snyk Code Local Engine high-level architecture"><figcaption><p>Snyk Code Local Engine high-level architecture</p></figcaption></figure>
 
 {% hint style="info" %}
 When you use the Local Engine, only the scan is performed locally. Your scan results are uploaded to Snyk so that you can view them in the Snyk Web UI.
