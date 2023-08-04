@@ -20,7 +20,7 @@ To see the full list of options in the CLI, run the `snyk test --help`, `snyk mo
 
 ## **Exit Codes**
 
-The `snyk test` command is synchronous; it ends with an exit code. Your build system can use exit codes to either pass or fail the build based on the test results. See the  [help docs](../../../snyk-cli/commands/) for the command you are using to find the meaning of the exit codes.
+The `snyk test` command is synchronous; it ends with an exit code. Your build system can use exit codes to either pass or fail the build based on the test results. See the [help docs](../../../snyk-cli/commands/) for the command you are using to find the meaning of the exit codes.
 
 The `snyk monitor` command posts a snapshot of the dependency tree for your project to your Snyk account and monitors that snapshot for vulnerabilities. It is an asynchronous command that does not end with an exit code based on the vulnerability status. For `snyk monitor`, exit codes signify success or failure in creating the snapshot to monitor.
 

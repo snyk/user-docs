@@ -1,4 +1,4 @@
-# Terraform Cloud integration for IaC
+# Terraform Cloud for IaC
 
 {% hint style="info" %}
 This feature is available for all Snyk plans.

@@ -1,4 +1,4 @@
-# Bitbucket Pipelines integration
+# Bitbucket Pipelines
 
 Snyk integrates with Bitbucket Pipelines using a **Snyk pipe**, seamlessly scanning your application dependencies and Docker images for security vulnerabilities as part of the continuous integration/continuous delivery (CI/CD) workflow.
 

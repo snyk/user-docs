@@ -4,7 +4,7 @@ Snyk Code Local Engine is a fully contained version of the Snyk Code Engine that
 
 This high-level architecture diagram shows the different components and their interactions.
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png" alt="Snyk Code Local Engine high-level architecture"><figcaption><p>Snyk Code Local Engine high-level architecture</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png" alt="Snyk Code Local Engine high-level architecture"><figcaption><p>Snyk Code Local Engine high-level architecture</p></figcaption></figure>
 
 {% hint style="info" %}
 When you use the Local Engine, only the scan is performed locally. Your scan results are uploaded to Snyk so that you can view them in the Snyk Web UI.

@@ -1,4 +1,4 @@
-# AWS CodePipeline integration
+# AWS CodePipeline
 
 Snyk integrates seamlessly with AWS CodePipeline to scan your application for open source security vulnerabilities and help you deliver secure applications with continuous delivery service. This integration allows CodePipeline users to make security an automated part of their build, test, and deploy phases.
 

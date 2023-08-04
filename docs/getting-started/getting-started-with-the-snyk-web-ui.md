@@ -6,7 +6,7 @@ If you have not done so already, you should [create an account](quickstart/creat
 
 ## Introduction
 
-You can use the Snyk Web UI to run a full set of Snyk functions from your browser.
+You can use the Snyk Web UI to run a full set of Snyk functions from your browser (see [supported browsers](../more-info/supported-browsers.md)).
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-07-13 at 11.06.29 AM.png" alt="Introducing the Snyk Web UI"><figcaption><p>Introducing the Snyk Web UI</p></figcaption></figure>
 

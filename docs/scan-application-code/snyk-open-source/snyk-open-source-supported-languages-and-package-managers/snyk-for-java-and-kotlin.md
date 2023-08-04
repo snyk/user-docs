@@ -381,4 +381,4 @@ If a BOM has direct dependencies outside`dependencyManagement`, then Snyk create
 
 ## Additional Snyk support for Java
 
-In addition to the CLI and Snyk UI features, you can check your Java Projects using [Maven integration](../../../integrations/snyk-ci-cd-integrations/maven-plugin-integration.md).
+In addition to the CLI and Snyk UI features, you can check your Java Projects using [Maven integration](../../../integrations/ci-cd-integrations/maven-plugin-integration.md).

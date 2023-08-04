@@ -101,5 +101,5 @@ To get help, run `snyk iac test --help` or see the [`snyk iac test`](../../snyk-
 
 ## Get started with Terraform Cloud
 
-To use Integrated IaC with Terraform Cloud, see [Terraform Cloud for IaC](../../integrations/snyk-ci-cd-integrations/integrating-snyk-with-terraform-cloud/).
+To use Integrated IaC with Terraform Cloud, see [Terraform Cloud for IaC](../../integrations/ci-cd-integrations/integrating-snyk-with-terraform-cloud/).
 

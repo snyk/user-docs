@@ -1,4 +1,4 @@
-# CircleCI integration
+# CircleCI
 
 Snyk integrates with [CircleCI](https://circleci.com) using a **Snyk Orb**, seamlessly scanning your application dependencies and Docker images for open source security vulnerabilities as part of the continuous integration/continuous delivery (CI/CD) workflow.
 

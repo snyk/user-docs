@@ -1,4 +1,4 @@
-# Azure Pipelines integration
+# Azure Pipelines
 
 Snyk enables security across the Microsoft Azure ecosystem including Azure Pipelines by automatically finding and fixing application and container vulnerabilities.
 
@@ -19,4 +19,3 @@ For setup and use details, see the following pages:
 * [Simple example of a Snyk task to test an application](simple-example-of-a-snyk-task-to-test-an-application.md)
 * [Example of a Snyk task for a container image pipeline](example-of-a-snyk-task-for-a-container-image-pipeline.md)
 * [Simple example of a Snyk task to test a container image](simple-example-of-a-snyk-task-to-test-a-container-image.md)
-

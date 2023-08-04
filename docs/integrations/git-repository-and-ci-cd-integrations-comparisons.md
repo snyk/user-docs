@@ -44,4 +44,4 @@ Use CI/CD integrations to accomplish the following:
 * Strong gatekeeper.
 * Best practice for container and Infrastructure as Code scans. For IaC, get more accurate results by scanning a Terraform plan file rather than the untemplated IaC declarations.
 
-For more details, see [Snyk CI/CD Integration deployment and strategies](snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/).
+For more details, see [Snyk CI/CD Integration deployment and strategies](ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/).

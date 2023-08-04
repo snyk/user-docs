@@ -70,7 +70,7 @@ Snyk allows you to [run PR Checks](../scan-application-code/run-pr-checks/) to v
 These functions can be used for:
 
 * Your code with Snyk Code
-* [Azure Pipeline Integration](../integrations/snyk-ci-cd-integrations/azure-pipelines-integration/)
+* [Azure Pipeline Integration](../integrations/ci-cd-integrations/azure-pipelines-integration/)
 * Open Source with Snyk Open Source (for NuGet)
   * Check for known vulnerabilities
     * Create Fix Pull Requests to fix known vulnerabilities

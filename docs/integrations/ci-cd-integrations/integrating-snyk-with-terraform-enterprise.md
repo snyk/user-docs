@@ -1,4 +1,4 @@
-# Terraform Enterprise integration for IaC
+# Terraform Enterprise for IaC
 
 {% hint style="info" %}
 This feature is available for all Snyk plans.

@@ -21,7 +21,7 @@
 
 * **Optional**
 * The ID of the Snyk organization to which this project should be associated when imported to the UI.
-* Copy the Organization ID from the Snyk UI in the Settings area.&#x20;
+* Copy the Organization ID from the Snyk UI in the Settings area.
 
 #### Project name:
 
@@ -37,15 +37,15 @@
 
 #### Snyk API token:
 
-* From the Settings area in the Snyk UI, copy the Org or Personal API token or create a service account. Use the token to authenticate your Snyk account when connecting to TeamCity.   :
+* From the Settings area in the Snyk UI, copy the Org or Personal API token or create a service account. Use the token to authenticate your Snyk account when connecting to TeamCity. :
 
 #### Snyk version:
 
-* **Default**: the most recent version&#x20;
-* Select the plugin version to be used in your build if you would like an older Snyk CLI version to support the plugin.&#x20;
+* **Default**: the most recent version
+* Select the plugin version to be used in your build if you would like an older Snyk CLI version to support the plugin.
 * Snyk recommends configuring automatic upgrades and using the most recent version.
 
 #### Use custom build tool path:
 
-* Specify which **tool instance** in your local environment Snyk is to use for this build.&#x20;
+* Specify which **tool instance** in your local environment Snyk is to use for this build.
 * Without a specified tool, Snyk auto-detects the tool and locates it in your environment based on the project type.
