@@ -1,6 +1,6 @@
 # Understanding the Severity Score of Snyk Code Issues
 
-Snyk Code currently reports issues by severity levels: High, Medium, and Low.
+Snyk Code reports issues by severity levels: High, Medium, and Low. Snyk Code currently does not use the **Critical** severity level.
 
 At the High level, Snyk determines severity based on the following factors:
 

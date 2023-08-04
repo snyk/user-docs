@@ -7,7 +7,7 @@ The Filter pane on the **Code Analysis** page enables you to filter the discover
 * **SEVERITY LEVEL** - display only issues with a certain severity level.\
   **Note**: Snyk Code uses the **High**, **Medium**, and **Low** severity levels.
 * **PRIORITY SCORE** - display only issues in a certain priority score range.\
-  **Note**: For more information, see [Understanding the Priority Score of the Snyk Code issues](../understanding-the-priority-score-of-the-snyk-code-issues.md).
+  **Note**: For more information, see [Understanding the Priority Score of the Snyk Code issues](../understanding-priority-score-of-the-snyk-code-issues.md).
 * **STATUS** - display either **Open** issues or issues that were **Ignored**.
 * **LANGUAGES** - display only issues that were discovered in code files that were written in a specific language.\
   Only programming languages discovered in the analyzed repository are displayed in the Filter pane.
