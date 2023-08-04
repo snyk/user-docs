@@ -29,7 +29,7 @@ The general info about the test results includes the following details:
 ![](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Test summary - 2.png>)
 
 * Test success: Whether the test was completed or not.
-* **Organization:** The Snyk ID or internal name of the organization under which the test run. For more information, see [Before you start – Set the organization for the CLI tests](before-you-start-set-the-organization-for-the-cli-tests/).
+* **Organization:** The Snyk ID or internal name of the organization under which the test run. For more information, see [Before you start – Set the organization for the CLI tests](set-the-snyk-organization-for-the-cli-tests/).
 * **Test type:** The type of test command that generated the results. For Snyk Code, it is always “**Static code analysis**”.
 * **Project path:** The path of the tested repository.
 

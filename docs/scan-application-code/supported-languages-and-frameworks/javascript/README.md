@@ -130,7 +130,7 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 * [Create a Snyk account](../../../getting-started/quickstart/create-a-snyk-account/)
 * [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-* [Set the default Organization for all Snyk tests](../../snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
+* [Set the default Organization for all Snyk tests](../../snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
 
 #### Code analysis
 
