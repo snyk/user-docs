@@ -328,7 +328,7 @@
         * [Exploring the Data flow page](scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue/exploring-the-data-flow-page.md)
         * [Exploring the Fix analysis page](scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue/exploring-the-fix-analysis-page.md)
       * [Understanding the Priority Score of the Snyk Code issues](scan-application-code/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/understanding-the-priority-score-of-the-snyk-code-issues.md)
-      * [Understanding the Severity Score of the Snyk Code Issues](scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/understanding-the-severity-score-of-the-snyk-code-issues.md)
+      * [Understanding the Severity Score of Snyk Code Issues](scan-application-code/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/understanding-the-severity-score-of-snyk-code-issues.md)
       * [Exploring the History of the Snyk Code Results](scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-history-of-the-snyk-code-results.md)
       * [Sharing your feedback with Snyk Code](scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/sharing-your-feedback-with-snyk-code.md)
     * [Using Snyk Code from CI/CD pipeline](scan-application-code/snyk-code/using-snyk-code-from-ci-cd-pipeline.md)
