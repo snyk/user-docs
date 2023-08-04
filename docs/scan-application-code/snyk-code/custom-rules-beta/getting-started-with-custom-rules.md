@@ -15,7 +15,7 @@ You can run custom rules as part of any scan run by Snyk Code, and the feature i
 
 * [Snyk Web UI](../../../getting-started/getting-started-with-the-snyk-web-ui.md)
 * [Snyk CLI](../cli-for-snyk-code/)
-* [IDE](../using-snyk-code-via-ide.md)
+* [IDE](../using-snyk-code-in-an-ide.md)
 
 {% hint style="info" %}
 **Prerequisite**\
@@ -41,7 +41,7 @@ For more information, see [Using Snyk Code via the CLI](../cli-for-snyk-code/).
 
 IDE integrations with Snyk support custom rules as long as you have the [.snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.&#x20;
 
-For more information, see [Using Snyk Code via the IDE](../using-snyk-code-via-ide.md).
+For more information, see [Using Snyk Code via the IDE](../using-snyk-code-in-an-ide.md).
 
 ## Additional resource
 
