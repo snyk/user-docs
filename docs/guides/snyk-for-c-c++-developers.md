@@ -78,7 +78,7 @@ For the Git integration, Open Source for C/C++ is only supported via CLI for aut
 
 #### With CI/CD integrations&#x20;
 
-Snyk can passively monitor using **snyk monitor**, and provide a QA gate by failing build checks during testing for policy violations using **snyk test** command. See [Snyk test and snyk monitor in CI/CD integration](../integrations/ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+Snyk can passively monitor using **snyk monitor**, and provide a QA gate by failing build checks during testing for policy violations using **snyk test** command. See [Snyk test and snyk monitor in CI/CD integration](../integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 
 Snyk provides flexible capabilities, including:
 

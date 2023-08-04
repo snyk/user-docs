@@ -4,7 +4,7 @@
 
 ## The focus of this guide
 
-This guide focuses on scanning your application code, which is a package manager and language-specific, [Snyk Container](../../../integrations/ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-container-specific-ci-cd-strategies.md) and [Snyk Infrastructure as Code (IaC)](../../../scan-cloud-configurations/snyk-infrastructure-as-code/) also support your container and infrastructure as code needs.&#x20;
+This guide focuses on scanning your application code, which is a package manager and language-specific, [Snyk Container](../../../integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-container-specific-ci-cd-strategies.md) and [Snyk Infrastructure as Code (IaC)](../../../scan-cloud-configurations/snyk-infrastructure-as-code/) also support your container and infrastructure as code needs.&#x20;
 
 Use this guide to understand the best way to apply Snyk in your workflow and to be aware of key considerations for your chosen technology stack.
 

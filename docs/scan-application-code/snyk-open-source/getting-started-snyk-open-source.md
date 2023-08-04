@@ -5,7 +5,7 @@ Use Snyk Open Source to scan and fix vulnerabilities in your application's Open 
 {% hint style="info" %}
 This process describes getting started using the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) with a Git-based source repository.
 
-* You can also use an [IDE tool](../../integrations/ide-tools/) or a [CI/CD integration](../../integrations/ci-cd-integrations/). See [Integrations](../../integrations/).
+* You can also use an [IDE tool](../../integrations/ide-tools/) or a [CI/CD integration](../../integrations/snyk-ci-cd-integrations/). See [Integrations](../../integrations/).
 * You can also [use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli/).
 {% endhint %}
 

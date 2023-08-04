@@ -139,7 +139,7 @@ See the [SSO, authentication, and user provisions](https://training.snyk.io/cour
 
 [Service accounts](service-accounts.md) allow you to better scale and automate.
 
-* If you use CI/CD, either by using a [CI/CD integration](../integrations/ci-cd-integrations/) or the [Snyk CLI](../snyk-cli/), Snyk recommends that you use a service account.
+* If you use CI/CD, either by using a [CI/CD integration](../integrations/snyk-ci-cd-integrations/) or the [Snyk CLI](../snyk-cli/), Snyk recommends that you use a service account.
 * If you use an IDE plugin or the CLI to test in your local environment, Snyk recommends that you use personal access tokens.
 
 ## Consider setting up security policies

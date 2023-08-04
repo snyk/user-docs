@@ -24,7 +24,7 @@ A system that takes the source code and builds the deployable application (such 
 
 ### CI / CD
 
-Continuous integration (CI), continuous delivery (CD) and continuous deployment (CD) together comprise an SDLC model, guiding developers to automate development and delivery of small, frequent changes. This ensures all team members have access to the latest code base and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../integrations/ci-cd-integrations/) for details of Snyk CI/CD integrations.
+Continuous integration (CI), continuous delivery (CD) and continuous deployment (CD) together comprise an SDLC model, guiding developers to automate development and delivery of small, frequent changes. This ensures all team members have access to the latest code base and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../integrations/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
 
 ### CLI
 
