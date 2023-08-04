@@ -281,7 +281,7 @@
       * [Getting Started with Snyk License Compliance Management](scan-application-code/snyk-open-source/licenses/getting-started-snyk-licensing-compliance.md)
   * [Snyk Code](scan-application-code/snyk-code/README.md)
     * [Snyk Code benefits and capabilities](scan-application-code/snyk-code/snyk-code-benefits-and-capabilities.md)
-    * [Snyk Code key features](scan-application-code/snyk-code/snyk-code-key-features/README.md)
+    * [Snyk Code key features: AI Engine, Web UI, supported integrations](scan-application-code/snyk-code/snyk-code-key-features/README.md)
       * [Snyk Code AI Engine](scan-application-code/snyk-code/snyk-code-key-features/snyk-code-ai-engine.md)
       * [Snyk Code Web UI](scan-application-code/snyk-code/snyk-code-key-features/snyk-code-web-ui.md)
       * [Snyk Code - Supported integrations](scan-application-code/snyk-code/snyk-code-key-features/snyk-code-supported-integrations.md)
