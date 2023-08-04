@@ -12,7 +12,7 @@ Fix the source code's security issues and quality flaws through an automated flo
 
 Fix Suggestions combines the power of a thorough program analysis engine with the abilities of an in-house deep learning-based large language model. This merger allows for compiling large amounts of unstructured language information from [open source code](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#what-data-does-snyk-code-fix-suggestions-collect).
 
-Two key features set Fix Suggestions apart. Firstly, it has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. Secondly, the [Snyk Code engine](introduction/) rigorously checks the network's suggestions, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
+Two key features set Fix Suggestions apart. Firstly, it has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. Secondly, the [Snyk Code engine](snyk-code-local-engine/) rigorously checks the network's suggestions, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
 
 ## What issues can you fix automatically
 
