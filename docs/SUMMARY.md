@@ -330,7 +330,7 @@
       * [Understanding the Priority Score of Snyk Code issues](scan-application-code/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/understanding-the-priority-score-of-snyk-code-issues.md)
       * [Understanding the Severity Score of Snyk Code Issues](scan-application-code/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/understanding-the-severity-score-of-snyk-code-issues.md)
       * [Exploring the history of Snyk Code results](scan-application-code/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-history-of-snyk-code-results.md)
-      * [Sharing your feedback with Snyk Code](scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/sharing-your-feedback-with-snyk-code.md)
+      * [Sharing your feedback on Snyk Code](scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/sharing-your-feedback-with-snyk-code.md)
     * [Using Snyk Code from CI/CD pipeline](scan-application-code/snyk-code/using-snyk-code-from-ci-cd-pipeline.md)
     * [Using Snyk Code via the CLI](scan-application-code/snyk-code/cli-for-snyk-code/README.md)
       * [Before you start – Set the Organization for the CLI tests](scan-application-code/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/README.md)
