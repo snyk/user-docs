@@ -1,10 +1,8 @@
 # Displaying only discovered issues above a specific severity level
 
-You can filter the test results that are shown in the CLI terminal, and display only issues with a specific severity level and higher.
+You can filter the test results that are shown in the CLI terminal and display only issues with a specific severity level and higher.
 
-**To display only issues above a specific severity level:**
-
-* In the terminal, enter:
+To display only issues above a specific severity level, enter the following:
 
 ```
 snyk code test <path/to/folder> --severity-threshold=<low|medium|high|critical>
@@ -12,18 +10,16 @@ snyk code test <path/to/folder> --severity-threshold=<low|medium|high|critical>
 
 The results will include only issues with the specified severity level and issues with a higher severity level.
 
-For example:
+For example, in the `snyk-goof-master` folder, eight issues were found, four with a High severity level and four with Medium:
 
-In the **snyk-goof-master** folder, 8 issues were found - 4 with a High severity level and 4 with Medium:
+<figure><img src="../../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - before - 2.png" alt="CLI test results for Snyk Code with High and Medium severity"><figcaption><p>CLI test results for Snyk Code with High and Medium severity</p></figcaption></figure>
 
-![](<../../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - before - 2.png>)
-
-To display only issues with a High severity level and above, we enter:
+To display only issues with a High severity level and above, enter the following:
 
 ```
 snyk code test /Users/username/Documents/Repositories/snyk-goof-master --severity-threshold=high
 ```
 
-The results show only 4 issues, all with a High severity level. Issues with a lower severity level are not displayed:
+The results show four issues, all with a High severity level. Issues with a lower severity level are not displayed:
 
-![](<../../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - after - 2.png>)
+![CLI test results for Snyk Code with High severity](<../../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - after - 2.png>)

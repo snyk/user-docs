@@ -144,7 +144,7 @@ To customize test options, run other commands, exclude directories and files, an
 
 * [Snyk CLI commands](../../../snyk-cli/commands/#available-commands)
 * [Exclude directories and files from the Snyk tests](../../snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../../snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-a-json-or-sarif-format-in-the-terminal.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
 * [Exporting the test results to a JSON or SARIF file](../../snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md)
 
 #### Open source and licensing
