@@ -336,7 +336,7 @@
         * [Setting the default Organization for all CLI tests](scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md)
         * [Finding the Snyk ID and internal name of an Organization](scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/finding-the-snyk-id-and-internal-name-of-an-organization.md)
         * [Setting an Organization for a specific CLI test](scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-an-organization-for-a-specific-cli-test.md)
-      * [Testing your source code via the CLI](scan-application-code/snyk-code/cli-for-snyk-code/testing-your-source-code-via-the-cli.md)
+      * [Testing your source code using the CLI](scan-application-code/snyk-code/cli-for-snyk-code/testing-your-source-code-using-the-cli.md)
       * [Publishing Snyk Code CLI results to a Snyk Project and ignoring CLI results (beta)](scan-application-code/snyk-code/cli-for-snyk-code/publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md)
       * [Excluding directories and files from the Snyk Code CLI test](scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
       * [Understanding the Snyk Code CLI results](scan-application-code/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)

@@ -18,7 +18,7 @@ Before using the Snyk CLI for testing your source code with Snyk Code, verify yo
 ## Using the Snyk CLI for Snyk Code tests
 
 To test your repository code using the Snyk CLI, use the [`snyk code test`](../../../snyk-cli/commands/code-test.md) command.\
-For more information, see [Testing your source code via the CLI](testing-your-source-code-via-the-cli.md).
+For more information, see [Testing your source code via the CLI](testing-your-source-code-using-the-cli.md).
 
 Before running Snyk Code tests with the CLI, you may want to do the following:
 
