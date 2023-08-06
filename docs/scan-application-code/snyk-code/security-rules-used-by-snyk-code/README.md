@@ -4,13 +4,785 @@
 Snyk Code rules are updated continuously. The list expands continually, and the rules may change to provide the best protection and security solutions for your code.
 {% endhint %}
 
-The following table lists the security rules that are used by Snyk Code when scanning your source code for vulnerabilities.
+This page lists the security rules used by Snyk Code when scanning your source code for vulnerabilities.
 
-The column headings are defined as follows:
+Each rule includes the following information.
 
-* **No. and Rule Name**:  Consecutive numbers for each rule and the Snyk name of the rule.
+* **Number and Rule Name**: Consecutive number for each rule and the Snyk name of the rule.
 * **CWE(s):** The [CWE numbers](https://cwe.mitre.org/) that are covered by this rule.
-* **OWASP Top 10/SANS 25**: Which [OWASP Top 10 items](https://owasp.org/Top10/) (2021 edition) the rule belongs to, if any, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
+* **OWASP Top 10/SANS 25**: The [OWASP Top 10 ](https://owasp.org/Top10/)(2021 edition) category to which the rule belongs to, if any, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
 * **Supported Languages**: The programming languages to which this specific rule applies. Note that there might be two rules with the same name that apply to different languages.
 
-<table><thead><tr><th>No. and Rule Name</th><th width="150">CWE(s)</th><th>OWASP Top 10/SANS 25</th><th>Supported Languages</th></tr></thead><tbody><tr><td><strong>(1) Use of Hardcoded Credentials</strong></td><td>(798) Use of Hard-coded Credentials</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>PHP</td></tr><tr><td></td><td>(259) Use of Hard-coded Password</td><td>SANS/CWE Top 25</td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Python</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(2) Use of Password Hash With Insufficient Computational Effort</strong></td><td>(916) Use of Password Hash With Insufficient Computational Effort</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>Python</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(3) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute</strong></td><td>(614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Python</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(4) Hardcoded Secret</strong></td><td>(547) Use of Hard-coded, Security-relevant Constants</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Python</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(5) Insecure Data Transmission</strong></td><td>(319) Cleartext Transmission of Sensitive Information</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(6) Command Injection</strong></td><td>(78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Python</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td><p>JavaScript,</p><p>TypeScript</p></td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(7) Cross-site Scripting (XSS)</strong></td><td>(79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Python</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(8) Server-Side Request Forgery (SSRF)</strong></td><td>(918) Server-Side Request Forgery (SSRF)</td><td>OWASP Top Ten 2021 Category A10:2021 - Server-Side Request Forgery (SSRF)</td><td>Python</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(9) Open Redirect</strong></td><td>(601) URL Redirection to Untrusted Site ('Open Redirect')</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>Python</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(10) Regular expression injection</strong></td><td>(400) Uncontrolled Resource Consumption</td><td></td><td>Java</td></tr><tr><td></td><td>(730)</td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(11) XML Injection</strong></td><td>(611) Improper Restriction of XML External Entity Reference</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(12) SQL Injection</strong></td><td>(89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Python</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(13) Log Forging</strong></td><td>(117) Improper Output Neutralization for Logs</td><td>OWASP Top Ten 2021 Category A09:2021 - Security Logging and Monitoring Failures</td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(14) Use of Hardcoded Cryptographic Key</strong></td><td>(321) Use of Hard-coded Cryptographic Key</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>Python</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(15) XML External Entity (XXE) Injection</strong></td><td>(611) Improper Restriction of XML External Entity Reference</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(16) Inadequate Encryption Strength</strong></td><td>(326) Inadequate Encryption Strength</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(17) Use of Insufficiently Random Values</strong></td><td>(330) Use of Insufficiently Random Values</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(18) Sensitive Cookie Without 'HttpOnly' Flag</strong></td><td>(1004) Sensitive Cookie Without 'HttpOnly' Flag</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>Python</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(19) Request Validation Disabled</strong></td><td>(554) ASP.NET Misconfiguration: Not Using Input Validation Framework</td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(20) IgnoreAntiforgeryToken in Use</strong></td><td>(352) Cross-Site Request Forgery (CSRF)</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(21) Debug Features Enabled</strong></td><td>(215) Insertion of Sensitive Information Into Debugging Code</td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(22) Deserialization of Untrusted Data</strong></td><td>(502) Deserialization of Untrusted Data</td><td>OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures</td><td>Python</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(23) ASP SSL Disabled</strong></td><td>(319) Cleartext Transmission of Sensitive Information</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(24) Code Injection</strong></td><td>(94) Improper Control of Generation of Code ('Code Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Python</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(25) Information Exposure</strong></td><td>(200) Exposure of Sensitive Information to an Unauthorized Actor</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>PHP</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(26) Exposure of Private Personal Information to an Unauthorized Actor</strong></td><td>(359) Exposure of Private Personal Information to an Unauthorized Actor</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(27) Cleartext Storage of Sensitive Information in a Cookie</strong></td><td>(315) Cleartext Storage of Sensitive Information in a Cookie</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>Java</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(28) LDAP Injection</strong></td><td>(90) Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Java</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(29) Path Traversal</strong></td><td>(23) Relative Path Traversal</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>Python</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(30) XPath Injection</strong></td><td>(643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Python</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Go</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(31) Arbitrary File Write via Archive Extraction (Zip Slip)</strong></td><td>(22) Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>PHP</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>C# &#x26; ASP.NET</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(32) Improper Certificate Validation</strong></td><td>(295) Improper Certificate Validation</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>Go</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(33) Insecure TLS Configuration</strong></td><td>(327) Use of a Broken or Risky Cryptographic Algorithm</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>Go</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(34) Clear Text Logging</strong></td><td>(200) Exposure of Sensitive Information to an Unauthorized Actor</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>Go</td></tr><tr><td></td><td>(312) Cleartext Storage of Sensitive Information</td><td>OWASP Top Ten 2021 Category A04:2021 - Insecure Design</td><td></td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(35) Generation of Error Message Containing Sensitive Information</strong></td><td>(209) Generation of Error Message Containing Sensitive Information</td><td>OWASP Top Ten 2021 Category A04:2021 - Insecure Design</td><td>Go</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(36) Improper Authentication</strong></td><td>(287) Improper Authentication</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>Java</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(37) Use of a Broken or Risky Cryptographic Algorithm</strong></td><td>(327) Use of a Broken or Risky Cryptographic Algorithm</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>Java</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(38) Use of Potentially Dangerous Function</strong></td><td>(676) Use of Potentially Dangerous Function</td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(39) Use of Hardcoded, Security-relevant Constants</strong></td><td>(547) Use of Hard-coded, Security-relevant Constants</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(40) JWT Signature Verification Bypass</strong></td><td>(347) Improper Verification of Cryptographic Signature</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(41) Cleartext Transmission of Sensitive Information</strong></td><td>(319) Cleartext Transmission of Sensitive Information</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>Java</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(42) Improper Validation of Certificate with Host Mismatch</strong></td><td>(297) Improper Validation of Certificate with Host Mismatch</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(43) Insufficient Session Expiration</strong></td><td>(613) Insufficient Session Expiration</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(44) Origin Validation Error</strong></td><td>(942) Permissive Cross-domain Policy with Untrusted Domains</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>Python</td></tr><tr><td></td><td>(346) Origin Validation Error</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>Java</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(45) Cross-Site Request Forgery (CSRF)</strong></td><td>(352) Cross-Site Request Forgery (CSRF)</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>Python</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(46) Disabled Neutralization of CRLF Sequences in HTTP Headers</strong></td><td>(113) Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(47) JavaScript Enabled</strong></td><td>(79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Java</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(48) File Access Enabled</strong></td><td>(200) Exposure of Sensitive Information to an Unauthorized Actor</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>Java</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(49) Android Fragment Injection</strong></td><td>(470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(50) Spring Cross-Site Request Forgery (CSRF)</strong></td><td>(352) Cross-Site Request Forgery (CSRF)</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>Java</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(51) Struts Development Mode Enabled</strong></td><td>(489) Active Debug Code</td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(52) Android Debug Mode Enabled</strong></td><td>(489) Active Debug Code</td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(53) Process Control</strong></td><td>(114) Process Control</td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(54) Use of Externally-Controlled Format String</strong></td><td>(134) Use of Externally-Controlled Format String</td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(55) External Control of System or Configuration Setting</strong></td><td>(15) External Control of System or Configuration Setting</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(56) Server Information Exposure</strong></td><td>(209) Generation of Error Message Containing Sensitive Information</td><td>OWASP Top Ten 2021 Category A04:2021 - Insecure Design</td><td>Python</td></tr><tr><td></td><td></td><td></td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(57) Improper Neutralization of CRLF Sequences in HTTP Headers</strong></td><td>(113) Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(58) Trust Boundary Violation</strong></td><td>(501) Trust Boundary Violation</td><td>OWASP Top Ten 2021 Category A04:2021 - Insecure Design</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(59) Android Intent Forwarding</strong></td><td>(940) Improper Verification of Source of a Communication Channel</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(60) Unauthorized File Access</strong></td><td>(79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Java</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(61) Code Execution via Third Party Package Context</strong></td><td>(94) Improper Control of Generation of Code ('Code Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(62) Android Uri Permission Manipulation</strong></td><td>(266) Incorrect Privilege Assignment</td><td>OWASP Top Ten 2021 Category A04:2021 - Insecure Design</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(63) Java Naming and Directory Interface (JNDI) Injection</strong></td><td>(74) Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(64) Code Execution via Third Party Package Installation</strong></td><td>(940) Improper Verification of Source of a Communication Channel</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>Java</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(65) Observable Timing Discrepancy (Timing Attack)</strong></td><td>(208) Observable Timing Discrepancy</td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(66) Buffer Over-read</strong></td><td>(126) Buffer Over-read</td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(67) Improper Restriction of Rendered UI Layers or Frames</strong></td><td>(1021) Improper Restriction of Rendered UI Layers or Frames</td><td>OWASP Top Ten 2021 Category A04:2021 - Insecure Design</td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(68) Unchecked Input for Loop Condition</strong></td><td>(400) Uncontrolled Resource Consumption</td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td>(606) Unchecked Input for Loop Condition</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(69) Improper Input Validation</strong></td><td>(20) Improper Input Validation</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(70) Allocation of Resources Without Limits or Throttling</strong></td><td>(770) Allocation of Resources Without Limits or Throttling</td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(71) Permissive Cross-domain Policy</strong></td><td>(942) Permissive Cross-domain Policy with Untrusted Domains</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(72) Denial of Service (DoS) through Nested GraphQL Queries</strong></td><td>(400) Uncontrolled Resource Consumption</td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(73) Introspection Enabled</strong></td><td>(200) Exposure of Sensitive Information to an Unauthorized Actor</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(74) Weak Password Recovery Mechanism for Forgotten Password</strong></td><td>(640) Weak Password Recovery Mechanism for Forgotten Password</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(75) Prototype Pollution</strong></td><td>(1321) Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')</td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(76) Regular Expression Denial of Service (ReDoS)</strong></td><td>(400) Uncontrolled Resource Consumption</td><td></td><td>PHP</td></tr><tr><td></td><td></td><td></td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Python</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(77) Improper Neutralization of Directives in Statically Saved Code</strong></td><td>(96) Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td>Python</td></tr><tr><td></td><td></td><td></td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(78) GraphQL Injection</strong></td><td>(89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(79) NoSQL Injection</strong></td><td>(89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td>Apex</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(80) XML internal entity expansion</strong></td><td>(776) Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')</td><td>OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration</td><td>JavaScript,<br>TypeScript</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(81) Inadequate Padding for Public Key Encryption</strong></td><td>(326) Inadequate Encryption Strength</td><td>OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(82) File Inclusion</strong></td><td>(98) Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>PHP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(83) Broken User Authentication</strong></td><td>(287) Improper Authentication</td><td>OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures</td><td>Python</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(84) Insecure File Permissions</strong></td><td>(732) Incorrect Permission Assignment for Critical Resource</td><td>SANS/CWE Top 25</td><td>Python</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(85) Improper Handling of Insufficient Permissions or Privileges</strong></td><td>(280) Improper Handling of Insufficient Permissions or Privileges</td><td>OWASP Top Ten 2021 Category A04:2021 - Insecure Design</td><td>Python</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(86) Arbitrary File Write via Archive Extraction (Tar Slip)</strong></td><td>(22) Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</td><td>OWASP Top Ten 2021 Category A01:2021 - Broken Access Control</td><td>Python</td></tr><tr><td></td><td></td><td>SANS/CWE Top 25</td><td></td></tr><tr><td><strong>(87) Improperly Controlled Modification of Dynamically-Determined Object Attributes</strong></td><td>(915) Improperly Controlled Modification of Dynamically-Determined Object Attributes</td><td>OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures</td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td><strong>(88) Unsafe Reflection</strong></td><td>(470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')</td><td>OWASP Top Ten 2021 Category A03:2021 - Injection</td><td>Ruby</td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
+## Rule (1) Use of Hardcoded Credentials
+
+**CWE** (798) Use of Hard-coded Credentials
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** PHP
+
+**CWE** (259) Use of Hard-coded Password
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** Ruby, Go, Java, JavaScript, TypeScript, Python, C# & Asp.NET, Apex
+
+## Rule (2) Use of Password Hash With Insufficient Computational Effort
+
+**CWE** (916) Use of Password Hash With Insufficient Computational Effort
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** Python, JavaScript, TypeScript, C# & ASP.NET. Java, Go, PHP, Apex
+
+## Rule (3) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+
+**CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** PHP, JavaScript, TypeScript, Ruby, C# & ASP,NET, Java, Python
+
+## Rule (4) Hardcoded Secret
+
+**CWE** (547) Use of Hard-coded, Security-relevant Constants
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** JavaScript, TypeScript, C# & ASP.NET, Java, Go, PHP, Python, Ruby, Apex
+
+## Rule (5) Insecure Data Transmission
+
+**CWE** (319) Cleartext Transmission of Sensitive Information
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** Ruby, C# & ASP.NET
+
+## Rule (6) Command Injection
+
+**CWE** (78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Python
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** Python, JavaScript, TypeScript, Ruby, C# & ASP.NET, Java, Go, PHP, Apex
+
+## Rule (7) Cross-site Scripting (XSS)
+
+**CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Python
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** JavaScript, TypeScript, Ruby, C# & ASP.NET, Java, Go, PHP. Apex
+
+## Rule (8) Server-Side Request Forgery (SSRF)
+
+**CWE** (918) Server-Side Request Forgery (SSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A10:2021 - Server-Side Request Forgery (SSRF)
+
+**Supported languages:** Python
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** JavaScript, TypeScript, C# & ASP.NET, Java, Go, PHP, Apex
+
+## Rule (9) Open Redirect
+
+**CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** Python, JavaScript, TypeScript, Ruby, C# & ASP.NET, Java, Go, PHP, Apex
+
+## Rule (10) Regular expression injection
+
+**CWE** (400) Uncontrolled Resource Consumption
+
+**Supported languages:** Java
+
+**CWE** (730)
+
+**Supported languages:** C# & ASP.NET, Apex
+
+## Rule (11) XML Injection
+
+**CWE** (611) Improper Restriction of XML External Entity Reference
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** C# & ASP.NET
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** Apex
+
+## Rule (12) SQL Injection
+
+**CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Python
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** JavaScript, TypeScript, Ruby, C# & ASP.NET, Java, Go, PHP, Apex
+
+## Rule (13) Log Forging
+
+**CWE** (117) Improper Output Neutralization for Logs
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A09:2021 - Security Logging and Monitoring Failures
+
+**Supported languages:** C# & ASP.NET
+
+## Rule (14) Use of Hardcoded Cryptographic Key
+
+**CWE** (321) Use of Hard-coded Cryptographic Key
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** Python, Ruby, Apex
+
+## Rule (15) XML External Entity (XXE) Injection
+
+**CWE** (611) Improper Restriction of XML External Entity Reference
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** JavaScript, TypeScript
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25Ruby,&#x20;
+
+**Supported languages:** Ruby, C# & ASP.NET, Java, PHP
+
+## Rule (16) Inadequate Encryption Strength
+
+**CWE** (326) Inadequate Encryption Strength
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** C# & ASP.NET, Java, Go, PHP
+
+## Rule (17) Use of Insufficiently Random Values
+
+**CWE** (330) Use of Insufficiently Random Values
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** PHP, Java, C# & ASP.NET, Go, JavaScript, TypeScript, Ruby
+
+## Rule (18) Sensitive Cookie Without 'HttpOnly' Flag
+
+**CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** Python, Java, C# & ASP.NET, Go, JavaScript, TypeScript, PHP, Ruby
+
+## Rule (19) Request Validation Disabled
+
+**CWE** (554) ASP.NET Misconfiguration: Not Using Input Validation Framework
+
+**Supported languages:** C# & ASP.NET
+
+## Rule (20) IgnoreAntiforgeryToken in Use
+
+**CWE** (352) Cross-Site Request Forgery (CSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** C# & ASP.NET
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (21) Debug Features Enabled
+
+**CWE** (215) Insertion of Sensitive Information Into Debugging Code
+
+**Supported languages:** C# & ASP.NET
+
+## Rule (22) Deserialization of Untrusted Data
+
+**CWE** (502) Deserialization of Untrusted Data
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
+
+**Supported languages:** Python
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** JavaScript, TypeScript, Ruby, C# & ASP.NET, Java, PHP
+
+## Rule (23) ASP SSL Disabled
+
+**CWE** (319) Cleartext Transmission of Sensitive Information
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** C# & ASP.NET
+
+## Rule (24) Code Injection
+
+**CWE** (94) Improper Control of Generation of Code ('Code Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Python, JavaScript, TypeScript, Ruby, C# & ASP.NET, Java, PHP
+
+## Rule (25) Information Exposure
+
+**CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** PHP
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** PHP, JavaScript, TypeScript, Ruby, C# & ASP.NET, Java
+
+## Rule (26) Exposure of Private Personal Information to an Unauthorized Actor
+
+**CWE** (359) Exposure of Private Personal Information to an Unauthorized Actor
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** C# & ASP.NET
+
+## Rule (27) Cleartext Storage of Sensitive Information in a Cookie
+
+**CWE** (315) Cleartext Storage of Sensitive Information in a Cookie
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** Java, C# & ASP.NET
+
+## Rule (28) LDAP Injection
+
+**CWE** (90) Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Java, C# & ASP.NET
+
+## Rule (29) Path Traversal
+
+**CWE** (23) Relative Path Traversal
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** Python, JavaScript, TypeScript, Ruby, C# & ASP.NET, Java, Go, PHP
+
+## Rule (30) XPath Injection
+
+**CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Python, JavaScript, TypeScript, Ruby, C# & ASP.NET, Java, Go, PHP
+
+## Rule **(31) Arbitrary File Write via Archive Extraction (Zip Slip)**
+
+**CWE** (22) Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** PHP
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** JavaScript, TypeScript, C# & ASP.NET
+
+## Rule (32) Improper Certificate Validation
+
+**CWE** (295) Improper Certificate Validation
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** Go, Java, Ruby
+
+## Rule (33) Insecure TLS Configuration
+
+**CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** Go
+
+## Rule (34) Clear Text Logging
+
+**CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** Go
+
+**CWE** (312) Cleartext Storage of Sensitive Information
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule **(35) Generation of Error Message Containing Sensitive Information**
+
+**CWE** (209) Generation of Error Message Containing Sensitive Information
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+**Supported languages:** Go
+
+## Rule (36) Improper Authentication
+
+**CWE** (287) Improper Authentication
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** Java
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (37) Use of a Broken or Risky Cryptographic Algorithm
+
+**CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** Java, JavaScript, TypeScript
+
+## Rule **(38) Use of Potentially Dangerous Function**
+
+**CWE** (676) Use of Potentially Dangerous Function
+
+**Supported languages:** Java
+
+## Rule (39) Use of Hardcoded, Security-relevant Constants
+
+**CWE** (547) Use of Hard-coded, Security-relevant Constants
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** Java
+
+## Rule (40) JWT Signature Verification Bypass
+
+**CWE** (347) Improper Verification of Cryptographic Signature
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** Java
+
+## Rule (41) Cleartext Transmission of Sensitive Information
+
+**CWE** (319) **Cleartext Transmission of Sensitive Information**
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** Java, JavaScript, TypeScript
+
+## Rule (42) Improper Validation of Certificate with Host Mismatch
+
+**CWE** (297) Improper Validation of Certificate with Host Mismatch
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** Java
+
+## Rule (43) Insufficient Session Expiration
+
+**CWE** (613) Insufficient Session Expiration
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** Java
+
+## Rule (44) Origin Validation Error
+
+**CWE** (942) Permissive Cross-domain Policy with Untrusted Domains
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** Python
+
+**CWE** (346) Origin Validation Error
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** Java, JavaScript, TypeScript, PHP
+
+## Rule (45) Cross-Site Request Forgery (CSRF)
+
+**CWE** (352) Cross-Site Request Forgery (CSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** Python
+
+**OWASP Top 10/SANS 25:**  SANS/CWE Top 25
+
+**Supported languages:** Ruby, Java, JavaScript, TypeScript, PHP
+
+## Rule (46) Disabled Neutralization of CRLF Sequences in HTTP Headers
+
+**CWE** (113) Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Java
+
+## Rule (47) JavaScript Enabled
+
+**CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Java
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (48) File Access Enabled
+
+**CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** Java
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (49) Android Fragment Injection
+
+**CWE** (470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Java
+
+## Rule (50) Spring Cross-Site Request Forgery (CSRF)
+
+**CWE** (352) Cross-Site Request Forgery (CSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** Java
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (51) Struts Development Mode Enabled
+
+**CWE** (489) Active Debug Code
+
+**Supported languages:** Java
+
+## Rule (52) Android Debug Mode Enabled
+
+**CWE** (489) Active Debug Code
+
+**Supported languages:** Java
+
+## Rule **(53) Process Control**
+
+**CWE** (114) Process Control
+
+**Supported languages:** Java
+
+## Rule (54) Use of Externally-Controlled Format String
+
+**CWE** (134) Use of Externally-Controlled Format String
+
+**Supported languages:** Java, JavaScript, TypeScript
+
+## Rule (55) External Control of System or Configuration Setting
+
+**CWE** (15) External Control of System or Configuration Setting
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** Java
+
+## Rule **(56) Server Information Exposure**
+
+**CWE** (209) Generation of Error Message Containing Sensitive Information
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+**Supported languages:** Python, Java
+
+## Rule **(57) Improper Neutralization of CRLF Sequences in HTTP Headers**
+
+**CWE** (113) Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Java
+
+## Rule (58) Trust Boundary Violation
+
+**CWE** (501) Trust Boundary Violation
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+**Supported languages:** Java
+
+## Rule (59) Android Intent Forwarding
+
+**CWE** (940) Improper Verification of Source of a Communication Channel
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** Java
+
+## Rule (60) Unauthorized File Access
+
+**CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Java
+
+**OWASP Top 10/SANS 25:**  SANS/CWE Top 25
+
+## Rule (61) Code Execution via Third Party Package Context
+
+**CWE** (94) Improper Control of Generation of Code ('Code Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Java
+
+## Rule (62) Android Uri Permission Manipulation
+
+**CWE** (266) Incorrect Privilege Assignment
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+**Supported languages:** Java
+
+## Rule (63) Java Naming and Directory Interface (JNDI) Injection
+
+**CWE** (74) Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Java
+
+## Rule (64) Code Execution via Third Party Package Installation
+
+**CWE** (940) Improper Verification of Source of a Communication Channel
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** Java
+
+## Rule (65) Observable Timing Discrepancy (Timing Attack)
+
+**CWE** (208) Observable Timing Discrepancy
+
+**Supported languages:** JavaScript, TypeScript
+
+## Rule (66) Buffer Over-read
+
+**CWE** (126) Buffer Over-read
+
+**Supported languages:** JavaScript, TypeScript
+
+## Rule (67) Improper Restriction of Rendered UI Layers or Frames
+
+**CWE** (1021) Improper Restriction of Rendered UI Layers or Frames
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+**Supported languages:** PHP, JavaScript, TypeScript
+
+## Rule (68) Unchecked Input for Loop Condition
+
+**CWE** (400) Uncontrolled Resource Consumption
+
+**OWASP Top 10/SANS 25:**&#x20;
+
+**Supported languages:** JavaScript, TypeScript
+
+**CWE** (606) Unchecked Input for Loop Condition
+
+## Rule (69) Improper Input Validation
+
+**CWE** (20) Improper Input Validation
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** JavaScript, TypeScript
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** Ruby
+
+## Rule (70) Allocation of Resources Without Limits or Throttling
+
+**CWE** (770) Allocation of Resources Without Limits or Throttling
+
+**OWASP Top 10/SANS 25:**&#x20;
+
+**Supported languages:** PHP, JavaScript, TypeScript
+
+## Rule (71) Permissive Cross-domain Policy
+
+**CWE** (942) Permissive Cross-domain Policy with Untrusted Domains
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:**  JavaScript, TypeScript
+
+## Rule (72) Denial of Service (DoS) through Nested GraphQL Queries
+
+**CWE** (400) Uncontrolled Resource Consumption
+
+**Supported languages:** JavaScript, TypeScript
+
+## Rule (73) Introspection Enabled
+
+**CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** JavaScript, TypeScript
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (74) Weak Password Recovery Mechanism for Forgotten Password
+
+**CWE** (640) Weak Password Recovery Mechanism for Forgotten Password
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** PHP, JavaScript, TypeScript
+
+## Rule (75) Prototype Pollution
+
+**CWE** (1321) Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')
+
+**Supported languages:** JavaScript, TypeScript
+
+## Rule (76) Regular Expression Denial of Service (ReDoS)
+
+**CWE** (400) Uncontrolled Resource Consumption
+
+**OWASP Top 10/SANS 25:**&#x20;
+
+**Supported languages:** PHP. JavaScript, TypeScript, Python, Ruby
+
+## Rule (77) Improper Neutralization of Directives in Statically Saved Code
+
+**CWE** (96) Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** JavaScript, TypeScript, Python, Ruby
+
+## Rule (78) GraphQL Injection
+
+**CWE**  (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** JavaScript, TypeScript
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** Apex
+
+## Rule (79) NoSQL Injection
+
+**CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** JavaScript, TypeScript
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** Apex
+
+## Rule (80) XML internal entity expansion
+
+**CWE**  (776) Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Supported languages:** JavaScript, TypeScript
+
+## Rule (81) Inadequate Padding for Public Key Encryption
+
+**CWE** (326) Inadequate Encryption Strength
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Supported languages:** PHP
+
+## Rule (82) File Inclusion
+
+**CWE**  (98) Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** PHP
+
+## Rule (83) Broken User Authentication
+
+**CWE** (287) Improper Authentication
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**Supported languages:** Python
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25&#x20;
+
+## Rule (84) Insecure File Permissions
+
+**CWE** (732) Incorrect Permission Assignment for Critical Resource
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Supported languages:** Python
+
+## Rule (85) Improper Handling of Insufficient Permissions or Privileges
+
+**CWE** (280) Improper Handling of Insufficient Permissions or Privileges
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+**Supported languages:** Python
+
+## Rule (86) Arbitrary File Write via Archive Extraction (Tar Slip)
+
+**CWE** (22) Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Supported languages:** Python
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (87) Improperly Controlled Modification of Dynamically-Determined Object Attributes
+
+**CWE** (915) Improperly Controlled Modification of Dynamically-Determined Object Attributes
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
+
+**Supported languages:** Ruby
+
+## Rule (88) Unsafe Reflection
+
+**CWE** (470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Supported languages:** Ruby

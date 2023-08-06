@@ -299,7 +299,7 @@
       * [Re-importing existing repositories for Snyk Code testing](scan-application-code/snyk-code/snyk-code-and-your-repositories/re-importing-existing-repositories-for-snyk-code-testing.md)
       * [Excluding directories and files from the import process](scan-application-code/snyk-code/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md)
       * [Removing imported repositories from Snyk Code testing](scan-application-code/snyk-code/snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md)
-    * [Security Rules used by Snyk Code](scan-application-code/snyk-code/security-rules-used-by-snyk-code/README.md)
+    * [Security rules used by Snyk Code](scan-application-code/snyk-code/security-rules-used-by-snyk-code/README.md)
       * [Go rules](scan-application-code/snyk-code/security-rules-used-by-snyk-code/go-rules.md)
       * [Java rules](scan-application-code/snyk-code/security-rules-used-by-snyk-code/java-rules.md)
       * [JavaScript and TypeScript rules](scan-application-code/snyk-code/security-rules-used-by-snyk-code/javascript-and-typescript-rules.md)
