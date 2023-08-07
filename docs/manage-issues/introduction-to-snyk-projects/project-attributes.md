@@ -6,20 +6,24 @@ Project attributes are static and non-configurable fields that allow you to add 
 
 On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](project-tags.md) and filtering attributes at the Project level.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1) (1) (1) (1) (1) (1) (3).png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (3).png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 
 The available Project attributes are summarized in the following table.
 
-| Attribute            | Attribute options                                                                                                                                           |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business criticality | <ul><li>Critical</li><li>High</li><li>Medium</li><li>Low</li></ul>                                                                                          |
-| Environment          | <ul><li>Frontend</li><li>Backend</li><li>Internal</li><li>External</li><li>Mobile</li><li>SaaS</li><li>On-Prem</li><li>Hosted</li><li>Distributed</li></ul> |
-| Lifecycle stage      | <ul><li>Production</li><li>Development</li><li>Sandbox</li></ul>                                                                                            |
+| Attribute              | Attribute options                                                                                                                                           |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business criticality\* | <ul><li>Critical</li><li>High</li><li>Medium</li><li>Low</li></ul>                                                                                          |
+| Environment            | <ul><li>Frontend</li><li>Backend</li><li>Internal</li><li>External</li><li>Mobile</li><li>SaaS</li><li>On-Prem</li><li>Hosted</li><li>Distributed</li></ul> |
+| Lifecycle stage        | <ul><li>Production</li><li>Development</li><li>Sandbox</li></ul>                                                                                            |
 
 {% hint style="info" %}
 You can apply attributes to Projects and remove attributes using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes).
 
 You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and -`-project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-reference.md) for the commands that support these options.
+{% endhint %}
+
+{% hint style="info" %}
+\*When Risk Score is enabled, the Bussiness Criticality attribute will automatically affect the score according to the highest attribute level. Learn more in the [Risk Score](../issue-management/risk-score.md#business-criticality) docs. &#x20;
 {% endhint %}
 
 {% hint style="warning" %}

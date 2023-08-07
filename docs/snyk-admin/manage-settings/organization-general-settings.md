@@ -34,7 +34,7 @@ Changing this Organization display name does not change the URL displayed in the
 
 ### Organization ID
 
-This ID uniquely identifies this Organization; required if you use the [Snyk API](../../snyk-api-info/). These Organization identification details are generated automatically by Snyk for each Organization when it is created&#x20;
+This ID uniquely identifies this Organization; required if you use the [Snyk API](../../snyk-api/). These Organization identification details are generated automatically by Snyk for each Organization when it is created&#x20;
 
 ### Ignores
 
@@ -42,7 +42,7 @@ Use these functions to define Organization-wide ignore settings.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (1) (2) (3).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (4).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
 
 </div>
 
@@ -54,7 +54,7 @@ If enabled, users without access to this Snyk Organization can request access.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (2).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
 
 </div>
 

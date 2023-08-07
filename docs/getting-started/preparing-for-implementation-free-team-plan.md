@@ -50,7 +50,7 @@ The option to use single sign-on (SSO) via your existing identity provider to si
 
 Snyk Projects are the components Snyk tests, along with the related configuration and metadata. Each target you want to scan (repos, container images, Dockerfiles, configuration files, source code) may include more than one Project. See [Introduction to Snyk Projects](../scan-application-code/snyk-code/snyk-code-local-engine.md) for more details.
 
-There are different ways to scan applications in Snyk, including from a [Git repository integration](walkthrough-code-repository-projects/), using the [Snyk CLI](../snyk-cli/), or the [Snyk API](../snyk-api-info/).
+There are different ways to scan applications in Snyk, including from a [Git repository integration](walkthrough-code-repository-projects/), using the [Snyk CLI](../snyk-cli/), or the [Snyk API](../snyk-api/).
 
 Before you start scanning more applications, make sure your Organization in Snyk is configured appropriately.
 

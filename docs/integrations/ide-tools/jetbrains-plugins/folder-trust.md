@@ -4,7 +4,7 @@ As part of examining the codebase for vulnerabilities, Snyk may automatically ex
 
 To safeguard against using the extension on untrusted projects, the Snyk extension asks for project trust before allowing you to run any scans against your code. When in doubt, do not proceed with a scan.
 
-<figure><img src="../../../.gitbook/assets/modal-dialog copy.png" alt="Snyk extension prompt to trust a project"><figcaption><p>Snyk extension prompt to trust a project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/modal-dialog copy (1).png" alt="Snyk extension prompt to trust a project"><figcaption><p>Snyk extension prompt to trust a project</p></figcaption></figure>
 
 Once a single project trust is granted, Snyk will not ask for trust on the opened project folder and its subfolders again. To revoke an existing folder trust, manually edit the `TRUSTED_PATHS` option in the `snyk.settings.xml` located in the [JetBrains IDE configuration options directory](https://www.jetbrains.com/help/idea/directories-used-by-the-ide-to-store-settings-caches-plugins-and-logs.html#config-directory).
 

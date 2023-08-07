@@ -1,6 +1,6 @@
 # Getting started with Snyk Code
 
-You can use Snyk Code in the [Snyk Web UI ](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md)(including [PR Checks](../../run-pr-checks/)), with [IDEs](../../../integrations/ide-tools/), and through the [Snyk CLI](../../../snyk-cli/) and [Snyk API](../../../snyk-api-info/).
+You can use Snyk Code in the [Snyk Web UI ](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md)(including [PR Checks](../../run-pr-checks/)), with [IDEs](../../../integrations/ide-tools/), and through the [Snyk CLI](../../../snyk-cli/) and [Snyk API](../../../snyk-api/).
 
 If you are using Snyk Code in your IDE or through the Snyk CLI with or without the Snyk API, ensure you have the [prerequisites](./#prerequisites-for-using-snyk-code) and then [enable the **Snyk Code** option](enabling-the-snyk-code-option-in-an-organization.md) in the Snyk Web UI. You can then use Snyk Code to test your code.
 

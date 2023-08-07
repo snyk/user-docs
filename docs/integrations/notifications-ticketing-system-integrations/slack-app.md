@@ -13,7 +13,7 @@ Vulnerabilities detected on initial import of projects are not sent to Slack imm
 
 ## Overview of the Snyk app for Slack
 
-The Snyk app for Slack lets you receive new issue notifications from your Snyk Projects in your Slack workspace. It is based on [Snyk Apps](../../snyk-api-info/snyk-apps/) that give you the benefit of more granular scopes and more ability to configure notifications at the Organization and Project level.
+The Snyk app for Slack lets you receive new issue notifications from your Snyk Projects in your Slack workspace. It is based on [Snyk Apps](../../snyk-api/snyk-apps/) that give you the benefit of more granular scopes and more ability to configure notifications at the Organization and Project level.
 
 To enable the Snyk app for Slack, you must do the following:
 

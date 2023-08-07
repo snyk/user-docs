@@ -71,7 +71,7 @@ To set up and configure the plugin and start scanning and managing your organiza
 
 ![Results of a scan](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
 
-![Attributes showing results of a scan](<../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Attributes showing results of a scan](<../../.gitbook/assets/image (33).png>)
 
 By reviewing the results, you can evaluate the issues found in your artifact and determine a course of action.
 

@@ -9,7 +9,7 @@ You can set up a **service account** to be used for continuous integration (CI) 
 
 Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials.
 
-Use this token to provide credentials to authenticate with your Snyk account when you are setting up integration with your development tools and when you are working with the Snyk [CLI](../snyk-cli/) and [API](../snyk-api-info/). Snyk needs authentication in order to initiate Snyk processes.
+Use this token to provide credentials to authenticate with your Snyk account when you are setting up integration with your development tools and when you are working with the Snyk [CLI](../snyk-cli/) and [API](../snyk-api/). Snyk needs authentication in order to initiate Snyk processes.
 
 You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use Group-level tokens to use Group API endpoints, Organization API endpoints, and the CLI for all Organizations in the Group.
 
@@ -71,7 +71,7 @@ From the **Role** dropdown list, select an appropriate role.
 
 For Group service accounts, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 
-* **Group Viewer** enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](../snyk-api-info/using-snyk-api/api-token-permissions-users-can-control.md).
+* **Group Viewer** enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](../snyk-api/using-snyk-api/api-token-permissions-users-can-control.md).
 * **Group Admin** enables full administrator access.
 * **Group Member** associates a service account with a group but does not grant any specific access.
 

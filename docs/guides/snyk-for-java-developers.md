@@ -119,7 +119,7 @@ Snyk provides flexible capabilities, including:
 * Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
 * Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
 * The Snyk CLI can be used in most CI/CD systems (see [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
-  * Fail the build based on criteria using options or the [snyk-filter](../snyk-api-info/other-tools/tool-snyk-filter.md) tool
+  * Fail the build based on criteria using options or the [snyk-filter](../snyk-api/other-tools/tool-snyk-filter.md) tool
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
 * With Partner Platforms: Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk.
   * Note for Java: using the Git integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe is suggested
@@ -249,7 +249,7 @@ See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-
 For Snyk Open Source, the **snyk \[product] monitor** command is used to push results from the CLI back to Snyk for reporting in the Snyk UI. Don’t forget to use **--org=** to indicate what Organization to place the monitored results in or retrieve test settings from during the test.
 
 {% hint style="info" %}
-Snyk Enterprise plan customers can access the [Snyk API](../snyk-api-info/) for reporting and extracting data.
+Snyk Enterprise plan customers can access the [Snyk API](../snyk-api/) for reporting and extracting data.
 {% endhint %}
 
 #### Proxies

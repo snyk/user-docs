@@ -1,6 +1,6 @@
 # Visual Studio Code extension authentication
 
-To scan your projects you must authenticate with Snyk. The extension uses your Snyk API [token](../../../snyk-api-info/authentication-for-api.md) for authentication. To store the token securely, Snyk uses [Secret Storage API](https://code.visualstudio.com/api/references/vscode-api#SecretStorage), which uses the system's keychain to manage the token.
+To scan your projects you must authenticate with Snyk. The extension uses your Snyk API [token](../../../snyk-api/authentication-for-api.md) for authentication. To store the token securely, Snyk uses [Secret Storage API](https://code.visualstudio.com/api/references/vscode-api#SecretStorage), which uses the system's keychain to manage the token.
 
 ## Logging in
 
@@ -25,11 +25,11 @@ To re-authenticate with a different account, follow these steps:
 1. Run the provided `Snyk: Log Out` command.
 2. When you have logged out, click **Connect VS Code with Snyk** to authenticate with a different account.
 
-![Snyk: Log Out](<../../../.gitbook/assets/logging-out-command (1).png>)
+![Snyk: Log Out](../../../.gitbook/assets/logging-out-command.png)
 
-Or you run `Snyk: Set Token` command and set your [token](../../../snyk-api-info/authentication-for-api.md) in the text field manually.
+Or you run `Snyk: Set Token` command and set your [token](../../../snyk-api/authentication-for-api.md) in the text field manually.
 
-![Set token manually](<../../../.gitbook/assets/image (224) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Set token manually](<../../../.gitbook/assets/image (80) (1).png>)
 
 ## Requirements for Linux and Unix
 

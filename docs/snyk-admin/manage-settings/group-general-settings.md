@@ -2,7 +2,7 @@
 
 To view and manage general settings for your Group, navigate to **Settings > GROUP SETTINGS > General:**
 
-<figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption><p>Group general settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Group general settings</p></figcaption></figure>
 
 * [Group name](group-general-settings.md#group-name)
 * [Group ID](group-general-settings.md#group-id)
@@ -16,7 +16,7 @@ The name of the group as displayed in the Snyk Web UI.
 
 ### Group ID
 
-The unique ID for this group, this is required if you use the [Snyk API](../../snyk-api-info/).
+The unique ID for this group, this is required if you use the [Snyk API](../../snyk-api/).
 
 ### Session expiration
 
