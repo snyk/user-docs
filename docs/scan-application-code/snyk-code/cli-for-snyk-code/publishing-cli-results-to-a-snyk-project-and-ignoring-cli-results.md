@@ -45,7 +45,7 @@ snyk code test --report --project-name="<PROJECT_NAME>"
 
 Running the `snyk code test` command with the `--report` option as shown returns the results to the terminal window, along with a URL to the Snyk Code Project where the results have been published. Refer to the following screenshot.
 
-<figure><img src="../../../.gitbook/assets/image (2) (7).png" alt="Snyk code test results with --report option"><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (6).png" alt="Snyk code test results with --report option"><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
 
 If a Snyk Code Project created using the CLI does not yet exist for the value provided in the `--project-name` option, the Snyk CLI creates a new Project. If a Project created using the CLI exists, a new snapshot is created under the same Project.
 
@@ -93,7 +93,7 @@ snyk code test --report --project-id="<PROJECT_UUID>" --commit-id="<COMMIT_ID>"
 
 You can use the Ignore button to ignore issues from CLI results in the Web UI both to [publish CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project) and to [test and publish CLI results to an existing Snyk Code SCM Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#test-and-publish-cli-results-to-an-existing-snyk-code-scm-project).
 
-<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (7) (1).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
 
 {% hint style="info" %}
 &#x20;[snyk-to-html](https://github.com/snyk/snyk-to-html) currently does not honor the ignored issues. Anything that is ignored in the Web UI is NOT ignored in the report that `snyk-to-html` generates.

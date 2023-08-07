@@ -18,7 +18,7 @@ When you are satisfied with the settings and integrations for an Organization, y
 
 1\. On the Snyk Web UI, open the Organizations drop-down list from the top menu, and click the **Create new Organization** option:
 
-<figure><img src="../../.gitbook/assets/snyk-org-switcher (1).png" alt="Create an Organization"><figcaption><p>Create an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-org-switcher.png" alt="Create an Organization"><figcaption><p>Create an Organization</p></figcaption></figure>
 
 2\. On the page to **create a new Organization**, enter a name for the new Organization. Consider using a structured naming convention to identify your Organizations.
 
@@ -56,7 +56,7 @@ Organization Admins can delete Organizations when there are no Groups involved .
 
 4\. In the Confirmation dialog box, enter the name of the Organization you want to delete to confirm its deletion. Then click **OK**:
 
-<figure><img src="../../.gitbook/assets/Org Settings - Delete organization - Confirmation (1).png" alt="Confirm delete Organization"><figcaption><p>Confirm delete Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Org Settings - Delete organization - Confirmation.png" alt="Confirm delete Organization"><figcaption><p>Confirm delete Organization</p></figcaption></figure>
 
 The selected Organization is deleted from your Snyk Account.
 
@@ -81,7 +81,7 @@ If you have several Organizations, one of these Organizations is set by default 
 The Organization drop-down list displays your existing Organzations.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (148).png" alt="Change preferred Organization"><figcaption><p>Change preferred Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt="Change preferred Organization"><figcaption><p>Change preferred Organization</p></figcaption></figure>
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 

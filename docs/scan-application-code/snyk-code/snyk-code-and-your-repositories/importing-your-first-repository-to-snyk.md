@@ -18,13 +18,13 @@ If your **Project** tab already contains Projects, follow the instructions on on
 You can click the **Show all repositories** link to display all the repositories in your integrated SCM.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (61).png" alt="Select repositories and click Import and scan"><figcaption><p>Select repositories and click Import and scan</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (4) (1).png" alt="Select repositories and click Import and scan"><figcaption><p>Select repositories and click Import and scan</p></figcaption></figure>
 
 4\. Click **Import and scan**.
 
 The selected repositories are imported to Snyk Code, and a progress bar appears:
 
-<figure><img src="../../../.gitbook/assets/image (335).png" alt="Import progress bar"><figcaption><p>Import progress bar</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (3) (1) (1).png" alt="Import progress bar"><figcaption><p>Import progress bar</p></figcaption></figure>
 
 When the import is completed, a confirmation message appears on the Projects page. Your imported repositories appear as Target folders, each containing the Code analysis Project that includes the findings of the Snyk Code test:
 

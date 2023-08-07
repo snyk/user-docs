@@ -6,7 +6,7 @@ Dependency reports show details about the packages included in your Projects, su
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2) (2).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure>
 
 </div>
 

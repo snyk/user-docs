@@ -1,1465 +1,1062 @@
 {
   "public": [
     {
-      "//": "used for pushing up webhooks from gitlab",
+      "//": "used for pushing up webhooks from bitbucket-server",
       "method": "POST",
-      "path": "/webhook/gitlab/:webhookId"
+      "path": "/webhook/bitbucket-server/:webhookId"
     }
   ],
   "private": [
     {
-      "//": "identify user",
-      "method": "GET",
-      "path": "/api/v4/user",
-      "origin": "https://${GITLAB}"
-    },
-    {
       "//": "list the user's projects",
       "method": "GET",
-      "path": "/api/v4/projects",
-      "origin": "https://${GITLAB}"
+      "path": "/projects",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "list the user's projects",
+      "//": "list the project's repos",
       "method": "GET",
-      "path": "/api/v3/projects",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:projectKey/repos",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "list the user's visible projects",
+      "//": "list the user's repos",
       "method": "GET",
-      "path": "/api/v3/projects/visible",
-      "origin": "https://${GITLAB}"
+      "path": "/repos",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "get a user's project",
+      "//": "fetch a given repo",
       "method": "GET",
-      "path": "/api/v3/projects/:project",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "get a user's project",
+      "//": "read all file names to find manifests",
       "method": "GET",
-      "path": "/api/v4/projects/:project",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to search all manifest files",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/tree",
-      "origin": "https://${GITLAB}"
-    },
-
-    {
-      "//": "used to determine the full dependency tree",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/package.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to determine the full dependency tree",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackage.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to determine the full dependency tree",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/package-lock.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to determine the full dependency tree",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackage-lock.json",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/files/:searchPath?",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Gemfile.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/package.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FGemfile.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fpackage.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Gemfile",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/package-lock.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FGemfile",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fpackage-lock.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/pom.xml",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/Gemfile.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpom.xml",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2FGemfile.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/*req*.txt",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/Gemfile",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2F*req*.txt",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2FGemfile",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/requirements/*.txt",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/pom.xml",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Frequirements%2F*.txt",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fpom.xml",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/yarn.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/*req*.txt",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fyarn.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2F*req*.txt",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/build.gradle",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/requirements/*.txt",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fbuild.gradle",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Frequirements%2F*.txt",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/gradle.properties",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/yarn.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgradle.properties",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fyarn.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Directory.Build.targets",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/build.gradle",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FDirectory.Build.targets",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fbuild.gradle",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Directory.Build.props",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/gradle.lockfile",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FDirectory.Build.props",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fgradle.lockfile",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Packages.props",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/gradle.properties",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FPackages.props",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fgradle.properties",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/build.sbt",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/Packages.props",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fbuild.sbt",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2FPackages.props",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/packages.config",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/Directory.Build.props",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackages.config",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2FDirectory.Build.props",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/*.csproj",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/Directory.Build.targets",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.csproj",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2FDirectory.Build.targets",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/*.vbproj",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/build.sbt",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.vbproj",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fbuild.sbt",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/*.fsproj",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/packages.config",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.fsproj",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fpackages.config",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/project.json",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/*.csproj",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fproject.json",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2F*.csproj",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Gopkg.toml",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/*.vbproj",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FGopkg.toml",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2F*.vbproj",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Gopkg.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/*.fsproj",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FGopkg.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2F*.fsproj",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/vendor.json",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/project.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fvendor.json",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fproject.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/composer.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/Gopkg.toml",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fcomposer.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2FGopkg.toml",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/composer.json",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/Gopkg.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fcomposer.json",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2FGopkg.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/project.assets.json",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/vendor.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fproject.assets.json",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fvendor.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Podfile",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/composer.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FPodfile",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fcomposer.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Podfile.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/composer.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FPodfile.lock",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fcomposer.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/go.mod",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/project.assets.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgo.mod",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2Fproject.assets.json",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/go.sum",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/Podfile",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgo.sum",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2FPodfile",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*/Podfile.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*%2FPodfile.lock",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*/go.mod",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*%2Fgo.mod",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*/go.sum",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*%2Fgo.sum",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to scan Dockerfile",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/Dockerfile",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/*Dockerfile*",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to scan Dockerfile",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2FDockerfile",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2F*Dockerfile*",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to scan Terraform",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*/*.tf",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to scan Terraform",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*%2F*.tf",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to scan Kubernetes Config",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*/*.yaml",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to scan Kubernetes Config",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*%2F*.yaml",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to scan Kubernetes Config",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*/*.yml",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to scan Kubernetes Config",
+      "method": "GET",
+      "path": "/projects/:project/repos/:repo/browse*%2F*.yml",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to check if there's any ignore rules or existing patches",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/.snyk",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*/.snyk",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to check if there's any ignore rules or existing patches",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2F.snyk",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:project/repos/:repo/browse*%2F.snyk",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to determine the full dependency tree for v3 protocol",
+      "//": "get list of API capabilities",
       "method": "GET",
-      "path": "/api/v3/projects/:project/repository/files",
-      "origin": "https://${GITLAB}",
-      "valid": [
-        {
-          "queryParam": "file_path",
-          "values": [
-            "**/package.json",
-            "**%2Fpackage.json",
-            "**/yarn.lock",
-            "**%2Fyarn.lock",
-            "**/package-lock.json",
-            "**%2Fpackage-lock.json",
-            "**/Gemfile",
-            "**%2FGemfile",
-            "**/Gemfile.lock",
-            "**%2FGemfile.lock",
-            "**/pom.xml",
-            "**%2Fpom.xml",
-            "**/*req*.txt",
-            "**%2F*req*.txt",
-            "**/requirements/*.txt",
-            "**%2Frequirements%2F*.txt",
-            "**/build.gradle",
-            "**%2Fbuild.gradle",
-            "**/build.sbt",
-            "**%2Fbuild.sbt",
-            "**/.snyk",
-            "**%2F.snyk",
-            "**/packages.config",
-            "**%2Fpackages.config",
-            "**/*.csproj",
-            "**%2F*.csproj",
-            "**/*.vbproj",
-            "**%2F*.vbproj",
-            "**/*.fsproj",
-            "**%2F*.fsproj",
-            "**/project.json",
-            "**%2Fproject.json",
-            "**/Gopkg.toml",
-            "**%2FGopkg.toml",
-            "**/Gopkg.lock",
-            "**%2FGopkg.lock",
-            "**/vendor.json",
-            "**%2Fvendor.json",
-            "**/composer.lock",
-            "**%2Fcomposer.lock",
-            "**/composer.json",
-            "**%2Fcomposer.json",
-            "**/project.assets.json",
-            "**%2Fproject.assets.json",
-            "**/Podfile",
-            "**%2FPodfile",
-            "**/Podfile.lock",
-            "**%2FPodfile.lock",
-            "**/go.mod",
-            "**%2Fgo.mod",
-            "**/go.sum",
-            "**%2Fgo.sum"
-          ]
-        }
-      ]
+      "path": "/rest/capabilities",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
-
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/package.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackage.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/package-lock.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackage-lock.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Gemfile.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FGemfile.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Gemfile",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FGemfile",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/pom.xml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpom.xml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/*req*.txt",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2F*req*.txt",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/yarn.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fyarn.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/build.gradle",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fbuild.gradle",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/gradle.properties",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgradle.properties",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Directory.Build.targets",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FDirectory.Build.targets",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Directory.Build.props",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FDirectory.Build.props",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Packages.props",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FPackages.props",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/build.sbt",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fbuild.sbt",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/packages.config",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackages.config",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/*.csproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.csproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/*.vbproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.vbproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/*.fsproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.fsproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/project.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fproject.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Gopkg.toml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FGopkg.toml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Gopkg.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FGopkg.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/vendor.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fvendor.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/composer.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fcomposer.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/composer.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fcomposer.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/project.assets.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fproject.assets.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Podfile",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FPodfile",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/Podfile.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2FPodfile.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create Dockerfile",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/*Dockerfile*",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create Dockerfile",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2F*Dockerfile*",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/go.mod",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgo.mod",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/go.sum",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgo.sum",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create ignore rules or patches",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*/.snyk",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create ignore rules or patches",
-      "method": "POST",
-      "path": "/api/v4/projects/:project/repository/files*%2F.snyk",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to create manifest file for v3 protocol",
-      "method": "POST",
-      "path": "/api/v3/projects/:project/repository/files",
-      "origin": "https://${GITLAB}",
-      "valid": [
-        {
-          "queryParam": "file_path",
-          "values": [
-            "**/package.json",
-            "**%2Fpackage.json",
-            "**/yarn.lock",
-            "**%2Fyarn.lock",
-            "**/package-lock.json",
-            "**%2Fpackage-lock.json",
-            "**/Gemfile",
-            "**%2FGemfile",
-            "**/Gemfile.lock",
-            "**%2FGemfile.lock",
-            "**/pom.xml",
-            "**%2Fpom.xml",
-            "**/*req*.txt",
-            "**%2F*req*.txt",
-            "**/build.gradle",
-            "**%2Fbuild.gradle",
-            "**/build.sbt",
-            "**%2Fbuild.sbt",
-            "**/.snyk",
-            "**%2F.snyk",
-            "**/packages.config",
-            "**%2Fpackages.config",
-            "**/*.csproj",
-            "**%2F*.csproj",
-            "**/*.vbproj",
-            "**%2F*.vbproj",
-            "**/*.fsproj",
-            "**%2F*.fsproj",
-            "**/project.json",
-            "**%2Fproject.json",
-            "**/Gopkg.toml",
-            "**%2FGopkg.toml",
-            "**/Gopkg.lock",
-            "**%2FGopkg.lock",
-            "**/vendor.json",
-            "**%2Fvendor.json",
-            "**/composer.lock",
-            "**%2Fcomposer.lock",
-            "**/composer.json",
-            "**%2Fcomposer.json",
-            "**/project.assets.json",
-            "**%2Fproject.assets.json",
-            "**/Podfile",
-            "**%2FPodfile",
-            "**/Podfile.lock",
-            "**%2FPodfile.lock",
-            "**/go.mod",
-            "**%2Fgo.mod",
-            "**/go.sum",
-            "**%2Fgo.sum"
-          ]
-        }
-      ]
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/package.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackage.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/package-lock.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackage-lock.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Gemfile.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FGemfile.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Gemfile",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FGemfile",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/pom.xml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpom.xml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/*req*.txt",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2F*req*.txt",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/yarn.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fyarn.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/build.gradle",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fbuild.gradle",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/gradle.properties",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgradle.properties",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Directory.Build.targets",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FDirectory.Build.targets",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Directory.Build.props",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update Dockerfile",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/*Dockerfile*",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update Dockerfile",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2F*Dockerfile*",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FDirectory.Build.props",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Packages.props",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FPackages.props",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/build.sbt",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fbuild.sbt",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/packages.config",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fpackages.config",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/*.csproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.csproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/*.vbproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.vbproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/*.fsproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.fsproj",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/project.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fproject.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Gopkg.toml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FGopkg.toml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Gopkg.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FGopkg.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/vendor.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fvendor.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/composer.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fcomposer.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/composer.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fcomposer.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/project.assets.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fproject.assets.json",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Podfile",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FPodfile",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/Podfile.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2FPodfile.lock",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/go.mod",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgo.mod",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/go.sum",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2Fgo.sum",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update ignore rules or existing patches",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*/.snyk",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update ignore rules or existing patches",
-      "method": "PUT",
-      "path": "/api/v4/projects/:project/repository/files*%2F.snyk",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to update manifest file for v3 protocol",
-      "method": "PUT",
-      "path": "/api/v3/projects/:project/repository/files",
-      "origin": "https://${GITLAB}",
-      "valid": [
-        {
-          "queryParam": "file_path",
-          "values": [
-            "**/package.json",
-            "**%2Fpackage.json",
-            "**/yarn.lock",
-            "**%2Fyarn.lock",
-            "**/package-lock.json",
-            "**%2Fpackage-lock.json",
-            "**/Gemfile",
-            "**%2FGemfile",
-            "**/Gemfile.lock",
-            "**%2FGemfile.lock",
-            "**/pom.xml",
-            "**%2Fpom.xml",
-            "**/*req*.txt",
-            "**%2F*req*.txt",
-            "**/build.gradle",
-            "**%2Fbuild.gradle",
-            "**/build.sbt",
-            "**%2Fbuild.sbt",
-            "**/.snyk",
-            "**%2F.snyk",
-            "**/packages.config",
-            "**%2Fpackages.config",
-            "**/*.csproj",
-            "**%2F*.csproj",
-            "**/*.vbproj",
-            "**%2F*.vbproj",
-            "**/*.fsproj",
-            "**%2F*.fsproj",
-            "**/project.json",
-            "**%2Fproject.json",
-            "**/Gopkg.toml",
-            "**%2FGopkg.toml",
-            "**/Gopkg.lock",
-            "**%2FGopkg.lock",
-            "**/vendor.json",
-            "**%2Fvendor.json",
-            "**/composer.lock",
-            "**%2Fcomposer.lock",
-            "**/composer.json",
-            "**%2Fcomposer.json",
-            "**/project.assets.json",
-            "**%2Fproject.assets.json",
-            "**/Podfile",
-            "**%2FPodfile",
-            "**/Podfile.lock",
-            "**%2FPodfile.lock",
-            "**/go.mod",
-            "**%2Fgo.mod",
-            "**/go.sum",
-            "**%2Fgo.sum"
-          ]
-        }
-      ]
-    },
-
     {
       "//": "allow webhooks to be added, to allow commits to be checked by Snyk. Rules for what is sent to Snyk are controlled in the `public` accept filters",
       "method": "POST",
-      "path": "/api/v4/projects/:project/hooks",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/webhooks",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "allow webhooks to be deleted, used to cleanup when a user deactivates or deletes a project",
       "method": "DELETE",
-      "path": "/api/v4/projects/:project/hooks/:id",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/webhooks/:webhookId",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
       "//": "used to create commit status messages",
       "method": "POST",
-      "path": "/api/v4/projects/:project/statuses/:sha",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/build-status/1.0/commits/:sha",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to create branch for fix merge request",
+      "//": "used to create a new branch for fix PRs",
       "method": "POST",
-      "path": "/api/v4/projects/:project/repository/branches",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/branches",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to create merge request for fix merge request",
+      "//": "used to create or update a file for fix PRs",
+      "method": "PUT",
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/browse/*",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
+    },
+    {
+      "//": "used to create a pull request for fix PRs",
       "method": "POST",
-      "path": "/api/v4/projects/:project/merge_requests",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/pull-requests",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to fetch fix merge request information",
+      "//": "used to query for open pull requests by branch",
       "method": "GET",
-      "path": "/api/v4/projects/:project/merge_requests",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/pull-requests",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "list the user's groups",
+      "//": "used to check for a repo's default branch",
       "method": "GET",
-      "path": "/api/v4/groups",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/branches/default",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "list of projects in a group",
+      "//": "get a specific commit identified by the commit hash or name of a branch",
       "method": "GET",
-      "path": "/api/v4/groups/:id/projects",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/api/1.0/projects/:project/repos/:repo/commits/:sha",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "get current user. so we'll be able to fetch it's projects",
-      "method": "GET",
-      "path": "/api/v4/user",
-      "origin": "https://${GITLAB}"
+      "//": "used to create a Code Insights report",
+      "method": "PUT",
+      "path": "/rest/insights/:apiVersion/projects/:project/repos/:repo/commits/:sha/reports/:report",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "get user's projects",
-      "method": "GET",
-      "path": "/api/v4/users/:user/projects",
-      "origin": "https://${GITLAB}"
+      "//": "used to remove a Code Insights report",
+      "method": "DELETE",
+      "path": "/rest/insights/:apiVersion/projects/:project/repos/:repo/commits/:sha/reports/:report",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "get all users. so we'll be able to fetch projects that admin can access",
-      "method": "GET",
-      "path": "/api/v4/users",
-      "origin": "https://${GITLAB}"
+      "//": "used to add Code Insights annotations to a report",
+      "method": "POST",
+      "path": "/rest/insights/:apiVersion/projects/:project/repos/:repo/commits/:sha/reports/:report/annotations",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to get repo's contributors list",
+      "//": "get list of API capabilities for Code Insights",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/commits",
-      "origin": "https://${GITLAB}"
+      "path": "/rest/insights/:apiVersion/capabilities",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "get a specific commit identified by the commit hash or name of a branch or tag.",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/commits/:sha",
-      "origin": "https://${GITLAB}"
+      "//": "used to remove Code Insights annotations for a report",
+      "method": "DELETE",
+      "path": "/rest/insights/:apiVersion/projects/:project/repos/:repo/commits/:sha/reports/:report/annotations",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to determine Terraform issues",
+      "//": "used to get current user. so we'll be able to fetch current user's repos, that are not part of any project. we're using atlassian's SDK api. Because atlassian's BB server rest api currently doesn't support such functionality",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/*.tf",
-      "origin": "https://${GITLAB}"
+      "path": "/plugins/servlet/applinks/whoami",
+      "origin": "https://${BITBUCKET}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to determine Terraform issues",
+      "//": "used to get the current user's project-like structure. So we'll be able to bind all user's private repos (that are not included in different project)",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.tf",
-      "origin": "https://${GITLAB}"
+      "path": "/projects/:projectKey",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to determine Kubernetes Config issues",
+      "//": "used to check if the user has admin or higher permissions",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/*.yaml",
-      "origin": "https://${GITLAB}"
+      "path": "/admin/permissions/users",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to determine Kubernetes Config issues",
+      "//": "used to get all the users. it's called only for admin permissioned user. to retrieve all the repos they can access",
       "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.yaml",
-      "origin": "https://${GITLAB}"
+      "path": "/users",
+      "origin": "https://${BITBUCKET_API}",
+      "auth": {
+        "scheme": "basic",
+        "username": "${BITBUCKET_USERNAME}",
+        "password": "${BITBUCKET_PASSWORD}"
+      }
     },
     {
-      "//": "used to determine Kubernetes Config issues",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*/*.yml",
-      "origin": "https://${GITLAB}"
-    },
-    {
-      "//": "used to determine Kubernetes Config issues",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files*%2F*.yml",
-      "origin": "https://${GITLAB}"
+      "//": "needed to load code snippets",
+        "method": "GET",
+        "path": "/projects/:project/repos/:repo/browse*/:file",
+        "origin": "https://${BITBUCKET_API}",
+        "auth": {
+          "scheme": "basic",
+          "username": "${BITBUCKET_USERNAME}",
+          "password": "${BITBUCKET_PASSWORD}"
+        }
     },
     {
       "//": "used to redirect requests to snyk git client",
       "method": "any",
       "path": "/snykgit/*",
       "origin": "${GIT_CLIENT_URL}"
-    },
-    {
-      "//": "needed to load code snippets",
-      "method": "GET",
-      "path": "/api/v4/projects/:project/repository/files/:path",
-      "origin": "https://${GITLAB}"
     }
   ]
 }

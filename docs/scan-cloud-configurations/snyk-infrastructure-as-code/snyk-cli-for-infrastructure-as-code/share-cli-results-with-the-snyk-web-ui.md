@@ -43,11 +43,11 @@ This sends a snapshot of your current configuration issues to your Snyk dashboar
 
 Log in to the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) and go to your Organization's Project page to see the specific snapshot of your scanned Project.
 
-<figure><img src="../../../.gitbook/assets/image (407).png" alt="Newly scanned Project listed on the Projects page"><figcaption><p>Newly scanned Project listed on the Projects page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (349) (1) (1) (1) (1) (1).png" alt="Newly scanned Project listed on the Projects page"><figcaption><p>Newly scanned Project listed on the Projects page</p></figcaption></figure>
 
 You can also open the Project itself and see the Project details:
 
-<figure><img src="../../../.gitbook/assets/image (395).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
 
 ## **Ignores**
 

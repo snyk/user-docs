@@ -15,3 +15,7 @@ The main Container integrations are:
 * CI: can act as a gate, for example, by breaking the build on new high-severity vulnerabilities.
 * Container registries: Use to test a large number of images, or if you cannot modify lots of CI pipelines.
 * Kubernetes: Use the same way as container registries, but Kubernetes provides more context about the running workload Snyk can use to prioritize vulnerabilities or group Projects. For details, see [Kubernetes integration overview.](../kubernetes-workload-and-image-scanning/kubernetes-integration-overview/)
+
+{% hint style="info" %}
+For cloud-hosted container registries, Snyk does not import and scan images that are larger than 2GB in size. To scan images that exceed this size, use the [Snyk CLI](../snyk-cli-for-container-security/).
+{% endhint %}

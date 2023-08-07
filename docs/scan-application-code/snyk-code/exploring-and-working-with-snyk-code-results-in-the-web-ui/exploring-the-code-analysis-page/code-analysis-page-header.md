@@ -15,7 +15,7 @@ The repository details include the following:
 
 The repository name in the header is a link to the repository in the integrated SCM:
 
-<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Header - repository name link.png" alt="Click the repository name"><figcaption><p>Click the repository name</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Header - repository name link (1).png" alt="Click the repository name"><figcaption><p>Click the repository name</p></figcaption></figure>
 
 By clicking the repository name on the Header, you can open the repository in the SCM directly from Snyk:
 

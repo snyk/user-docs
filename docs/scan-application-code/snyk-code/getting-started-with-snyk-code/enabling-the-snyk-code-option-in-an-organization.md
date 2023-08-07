@@ -18,7 +18,7 @@ Follow these steps to enable Snyk Code:
 2. In the Snyk Web UI, select the <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png" alt="Settings icon" data-size="line"> **Settings > Snyk Code** option.
 3. In the **Enable Snyk Code** section, change the setting to **Enabled**:
 
-<figure><img src="../../../.gitbook/assets/image (240).png" alt="Enable Snyk Code setting"><figcaption><p>Enable Snyk Code setting</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (358).png" alt="Enable Snyk Code setting"><figcaption><p>Enable Snyk Code setting</p></figcaption></figure>
 
 4\. Click **Save changes**.\
 \
