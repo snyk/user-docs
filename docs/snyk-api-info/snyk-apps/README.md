@@ -14,7 +14,7 @@ See the [Snyk Apps blog post](https://snyk.io/blog/snyk-apps-beta-build-custom-a
 
 This document describes how to create a new Snyk App in the language of your choice, and can be used along with the [API documentation](https://apidocs.snyk.io/https://apidocs.snyk.io/) (experimental) and [Snyk OAuth2 API documentation](https://snykoauth2.docs.apiary.io/).
 
-Snyk Apps are based on the [Snyk API](../), so that your integrations are inherently stable and secure.
+Snyk Apps are based on the [Snyk API](../../snyk-api/), so that your integrations are inherently stable and secure.
 
 ## Integrating Apps with Snyk
 

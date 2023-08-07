@@ -87,7 +87,7 @@ Snyk can passively monitor, and/or provide a QA gate by failing build checks dur
 Snyk provides flexible capabilities, including:
 
 * CLI can be utilized in most CI/CD systems ([examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
-  * Fail the build based on criteria using options or the [snyk-filter](../snyk-api/other-tools/tool-snyk-filter.md) tool
+  * Fail the build based on criteria using options or the [snyk-filter](../snyk-api-info/other-tools/tool-snyk-filter.md) tool
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
 * Partner Platforms - Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk or use the CLI.
 * Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
@@ -191,7 +191,7 @@ See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-
 
 * See [snyk-to-html](../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to help generate reports locally or at build time
 * See --json and --sarif options for generating output that can be programmatically accessed
-* See [snyk-filter](../snyk-api/other-tools/tool-snyk-filter.md) for advanced filtering options and [other tools](../snyk-api/other-tools/)&#x20;
+* See [snyk-filter](../snyk-api-info/other-tools/tool-snyk-filter.md) for advanced filtering options and [other tools](../snyk-api-info/other-tools/)&#x20;
 
 #### Reporting
 
