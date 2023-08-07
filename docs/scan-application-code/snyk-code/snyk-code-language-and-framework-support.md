@@ -26,7 +26,7 @@ Snyk Code currently supports the following programming languages:
 * **JavaScript**
 * **PHP (currently does not support interfile)**
 * **Python**
-* **Ruby**
+* **Ruby (currently does not support interfile)**
 * **TypeScript**
 * **Apex**
 * **Scala (Beta)**
