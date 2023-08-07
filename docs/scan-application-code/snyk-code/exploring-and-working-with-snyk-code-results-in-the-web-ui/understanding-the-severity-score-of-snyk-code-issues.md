@@ -30,7 +30,7 @@ The severity of CWEs may change depending on the environment.
 
 ## Example: CWE-22: Path Traversal
 
-For CEW-22 Path Traversal, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is High severity. Otherwise, it is Medium severity.
+For CEW-22 Path Traversal, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is High severity. Otherwise, it is Low severity.
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt="Decision flow chart for Priority Score CWE-22 Path Traversal"><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
 
