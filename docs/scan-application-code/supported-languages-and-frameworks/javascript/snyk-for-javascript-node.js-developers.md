@@ -88,7 +88,7 @@ Snyk provides the following capabilities:
 * Dedicated plugins for Jenkins, Circle CI, and other CI/CD tools (see relevant marketplaces).
 * Github Actions.
 * The Snyk CLI can be used in most CI/CD tools (see [Snyk CI/CD integration examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)).
-  * Fail the build based on criteria using options or the [snyk-filter tool](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
+  * Fail the build based on criteria using options or the [snyk-filter tool](../../../snyk-api/other-tools/tool-snyk-filter.md).
   * [Containerized](https://hub.docker.com/r/snyk/snyk) versions of the CLI are available.
 * Partner Platforms such as Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk.
 
@@ -245,7 +245,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 * To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
-* For advanced filtering options, see[ snyk-filter](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
+* For advanced filtering options, see[ snyk-filter](../../../snyk-api/other-tools/tool-snyk-filter.md).
 
 ## Reporting
 

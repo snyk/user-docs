@@ -8,7 +8,7 @@ These linked images are identified in the **LINKED IMAGES** section of the detai
 
 <figure><img src="../../.gitbook/assets/mceclip3.png" alt="Project showing linked images"><figcaption><p>Project showing linked images</p></figcaption></figure>
 
-Using container registry integration, you can get automatic links between imported images to existing Dockerfile Projects. To do this, check whether the OCI label in the image matches the path of a Dockerfits in the Organization in Snyk.
+Using container registry integration, you can get automatic links between imported images to existing Dockerfile Projects. To do this, check whether the OCI label in the image matches the path of a Dockerfile in the Organization in Snyk.
 
 ## How linked images work
 

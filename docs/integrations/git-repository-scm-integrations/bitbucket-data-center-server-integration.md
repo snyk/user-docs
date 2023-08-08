@@ -86,7 +86,7 @@ The example that follows shows a Snyk pull request build check on the Bitbucket 
 
 To review and adjust the pull request tests settings:
 
-1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server** and click **Edit Settings**.
+1. In Snyk, navigate to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server** and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options.
 
 <div align="left">
@@ -127,3 +127,9 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.23.45.png" alt="Disconnect your integration" width="563"><figcaption><p>Disconnect your integration</p></figcaption></figure>
 
 </div>
+
+## Migration from Bitbucket Server to Bitbucket Data Center
+
+Usually migrating from Bitbucket Server to Bitbucket Data Center requires no further action. The Snyk integration should keep working as Bitbucket Server and Bitbucket Data Center APIs are identical.
+
+Action is required only when the new Bitbucket Data Center instance URL differs from the Bitbucket Server instance URL. In this case, you must reconnect the integration from the Bitbucket Server-Bitbucket Data Center integration page in Snyk.io.

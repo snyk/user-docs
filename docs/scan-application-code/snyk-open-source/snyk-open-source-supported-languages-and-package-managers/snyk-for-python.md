@@ -105,7 +105,7 @@ If you have placed your files in a requirements folder, for example, if you have
 
 If you are using a package manager that creates different manifest file formats from `requirements.txt`, then either convert or import, depending on the package manager/supported files, the manifest file to the `requirements.txt` format.
 
-Example:
+Here's an example of how dephell is used to convert from Conda’s `environments.yml` to a `requirements.txt`.
 
 ```
 dephell deps convert --from=conda --to=requirements.txt

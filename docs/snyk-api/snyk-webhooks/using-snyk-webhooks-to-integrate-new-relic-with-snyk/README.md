@@ -18,6 +18,6 @@ New Relic also provides a dedicated Vulnerability Management section for all of 
 To set up the integration between Snyk and New Relic, follow the steps on these pages. There are two ways to achieve this:
 
 1. Through New Relic's native security ingest processor: follow the guide on [New Relic docs](https://docs.newrelic.com/docs/vulnerability-management/integrations/snyk/) to get started
-2. Through an Azure Function App that acts as a proxy: begin with [Create an Azure Function App](../using-snyk-webhooks-to-integrate-new-relic-with-snyk-through-an-azure-function-app/create-an-azure-function-app.md).
+2. Through an Azure Function App that acts as a proxy: begin with [Create an Azure Function App](create-an-azure-function-app.md).
 
 If you have **problems** setting up or using the Snyk Webhook, **contact** your Solutions Engineer or Technical Success Manager for help.
