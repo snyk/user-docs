@@ -3,7 +3,7 @@
 * [User Docs](README.md)
 * [Getting started](getting-started/README.md)
   * [Introducing Snyk](getting-started/introducing-snyk.md)
-  * [Exploring the Snyk Web UI](getting-started/getting-started-with-the-snyk-web-ui.md)
+  * [Exploring the Snyk Web UI](getting-started/exploring-the-snyk-web-ui.md)
   * [Quickstart](getting-started/quickstart/README.md)
     * [Create a Snyk account](getting-started/quickstart/create-a-snyk-account/README.md)
       * [Logging in to an existing account](getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md)

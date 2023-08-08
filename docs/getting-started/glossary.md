@@ -114,7 +114,7 @@ A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, 
 
 ### Fix PR
 
-A pull request with an automatic fix for vulnerabilities found that Snyk can offer the user.
+A pull request with an automatic fix for vulnerabilities found that Snyk can offer the user. See [Configure Automatic fix PRs](../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md).
 
 ## G
 
@@ -242,6 +242,10 @@ A storage area that contains all elements necessary for the distribution of an a
 
 A cloud infrastructure entity such as an AWS S3 bucket, Identity & Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
 
+### Risk score
+
+A value assigned to an issue, ranging from 0 to 1,000, to represent the risk imposed on your environment. See [Risk Score](glossary.md#risk-score).&#x20;
+
 ### Rule
 
 A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems.
@@ -262,7 +266,7 @@ Software Bill Of Materials. A list of components in a piece of software.
 
 ### SCA
 
-Software Composition Analysis. Technology used to identify open-source and third-party components in use in an application, including their known security vulnerabilities, and typically adversarial license restrictions.
+Software Composition Analysis. A technology that is used to identify open-source and third-party components in use in an application, including their known security vulnerabilities, and typically adversarial license restrictions.
 
 {% hint style="info" %}
 Not to be confused with static code analysis (a method of debugging by examining source code before a program is run).
@@ -308,7 +312,7 @@ A Snyk tool that enables developers to programmatically integrate with Snyk. See
 
 ### Snyk Apps
 
-Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. For more information see [Snyk Apps](../snyk-api-info/snyk-apps/).
+Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. See [Snyk Apps](../snyk-api-info/snyk-apps/).
 
 ### Snyk Broker
 
@@ -317,14 +321,6 @@ A client/server system that serves as an agent / proxy, allowing Snyk to scan pr
 ### Snyk CLI
 
 A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI](../snyk-cli/).
-
-### Snyk Cloud
-
-A Snyk product. Enables developers to find and fix cloud infrastructure misconfigurations. See [Snyk Cloud](../scan-cloud-configurations/integrated-iac-with-cloud-context/).
-
-### Snyk Cloud Environment
-
-An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../scan-cloud-configurations/integrated-iac-with-cloud-context/key-concepts.md).
 
 ### Snyk Code
 
@@ -353,7 +349,7 @@ Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabiliti
 
 ### Snyk Web UI
 
-The environment allowing users to access Snyk functions on the web.
+The browser-based environment allowing users to access Snyk functions. See [Exploring the Snyk Web UI](exploring-the-snyk-web-ui.md).
 
 ### Social Trends
 
@@ -361,7 +357,7 @@ Snyk shows a Trending banner on issues that are being actively discussed on Twit
 
 ### SPDX
 
-Software Package Data Exchange. A file format used to document information on the software licenses under which a piece of computer software is distributed.
+Software Package Data Exchange. A file format used to document information on the software licenses under which a piece of computer software is distributed. See [SPDX](https://spdx.dev/).
 
 ## T
 

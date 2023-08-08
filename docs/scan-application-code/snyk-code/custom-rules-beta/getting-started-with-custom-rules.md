@@ -13,7 +13,7 @@ Custom rules beta is not currently compatible with [SCM integrations via Broker]
 
 You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:
 
-* [Snyk Web UI](../../../getting-started/getting-started-with-the-snyk-web-ui.md)
+* [Snyk Web UI](../../../getting-started/exploring-the-snyk-web-ui.md)
 * [Snyk CLI](../cli-for-snyk-code/)
 * [IDE](../using-snyk-code-in-an-ide.md)
 

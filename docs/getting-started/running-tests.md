@@ -28,7 +28,7 @@ See [Getting started with the CLI](../snyk-cli/getting-started-with-the-cli.md) 
 
 A test is run when you import a Snyk Project (see [Import a Project](quickstart/import-a-project.md)) or click the **Retest now** button on a Project in the Overview tab. During retests, Snyk fetches the assets that need to be scanned for Snyk to find any new issues.
 
-See [Exploring the Snyk Web UI](getting-started-with-the-snyk-web-ui.md) for details.
+See [Exploring the Snyk Web UI](exploring-the-snyk-web-ui.md) for details.
 
 ### Run tests manually with the API
 

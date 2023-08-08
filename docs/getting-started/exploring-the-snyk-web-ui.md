@@ -18,14 +18,14 @@ You can connect your code repositories, then use Snyk to scan and secure your ap
 
 ### Web UI functions
 
-* [Explore the dashboard](getting-started-with-the-snyk-web-ui.md#dashboard)
-* [Investigate reports](getting-started-with-the-snyk-web-ui.md#reports)
-* [Manage Projects](getting-started-with-the-snyk-web-ui.md#manage-your-projects)
-* [Manage integrations](getting-started-with-the-snyk-web-ui.md#manage-your-integrations)
-* [Manage Group or Organization members](getting-started-with-the-snyk-web-ui.md#manage-organization-or-group-members)
-* [View Snyk updates](getting-started-with-the-snyk-web-ui.md#view-product-updates)
-* [Get help](getting-started-with-the-snyk-web-ui.md#view-helpful-resources)
-* [Manage my user account](getting-started-with-the-snyk-web-ui.md#manage-account-preferences-and-settings)
+* [Explore the dashboard](exploring-the-snyk-web-ui.md#dashboard)
+* [Investigate reports](exploring-the-snyk-web-ui.md#reports)
+* [Manage Projects](exploring-the-snyk-web-ui.md#manage-your-projects)
+* [Manage integrations](exploring-the-snyk-web-ui.md#manage-your-integrations)
+* [Manage Group or Organization members](exploring-the-snyk-web-ui.md#manage-organization-or-group-members)
+* [View Snyk updates](exploring-the-snyk-web-ui.md#view-product-updates)
+* [Get help](exploring-the-snyk-web-ui.md#view-helpful-resources)
+* [Manage my user account](exploring-the-snyk-web-ui.md#manage-account-preferences-and-settings)
 
 ### Explore the Dashboard
 

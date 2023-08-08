@@ -9,7 +9,7 @@ If you are on an [Enterprise plan](../more-info/plans.md), see [Enterprise setup
 ### About Snyk
 
 * [Introducing Snyk](introducing-snyk.md)
-* [Snyk Web UI](getting-started-with-the-snyk-web-ui.md)
+* [Snyk Web UI](exploring-the-snyk-web-ui.md)
 
 ### Using Snyk
 
