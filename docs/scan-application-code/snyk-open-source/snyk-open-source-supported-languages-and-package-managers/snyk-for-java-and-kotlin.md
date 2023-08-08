@@ -82,7 +82,7 @@ This section describes the unique CLI commands available when working with Java-
 For information about the `snyk test` and `snyk monitor` options available for use with Maven and Gradle, see the following pages:
 
 * [Options for Maven Projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-maven-projects) in the Test help
-* [Options for Gradle ProjectsProjects ](https://docs.snyk.io/snyk-cli/commands/test#options-for-gradle-projects)in the Test help
+* [Options for Gradle Projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-gradle-projects) in the Test help
 * [Options for Maven Projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-maven-projects) in the Monitor help
 * [Options for Gradle Projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-gradle-projects) in the Monitor help
 * [Options for build tools](https://docs.snyk.io/snyk-cli/commands/test#options-for-build-tools) in the Test help
