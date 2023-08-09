@@ -1,11 +1,11 @@
-# Ignoring cloud and Integrated IaC issues
+# Ignoring cloud and IaC+ issues
 
 {% hint style="info" %}
 **Feature availability**\
 The ignores feature is currently in **open beta**. Contact your Snyk account team if you are interested in participating. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
-You can ignore a Cloud or Integrated IaC [issue](./) from the Snyk Web UI.
+You can ignore a Cloud or IaC+ [issue](./) from the Snyk Web UI.
 
 Ignoring an issue can be useful if the rule that generated the issue is irrelevant for a resource or if you want to defer fixing the issue to a later date.
 

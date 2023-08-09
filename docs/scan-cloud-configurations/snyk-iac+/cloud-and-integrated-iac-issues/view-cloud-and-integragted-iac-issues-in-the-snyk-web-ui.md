@@ -1,6 +1,6 @@
-# View cloud and Integrated IaC issues in the Snyk Web UI
+# View cloud and  IaC+ issues in the Snyk Web UI
 
-You can view cloud and Integrated IaC issues for an Organization through the Snyk Web UI.
+You can view cloud and IaC+ issues for an Organization through the Snyk Web UI.
 
 To view your cloud issues in the Snyk Web UI, navigate to the Organization, and on the menu, select **Cloud.**
 

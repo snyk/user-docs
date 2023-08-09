@@ -1,7 +1,7 @@
 # Fix cloud issues in IaC+
 
 {% hint style="info" %}
-The fix cloud issues in IaC feature is available for [Integrated IaC](broken-reference) only, and supports AWS.
+The fix cloud issues in IaC feature is available for [IaC+](./) only and supports AWS.
 {% endhint %}
 
 The fix cloud issues in IaC feature enables users to fix cloud issues directly in the IaC source code used to deploy the misconfigured cloud resources, by linking a cloud issue to the underlying IaC template via an SCM source code link.
@@ -25,7 +25,7 @@ Snyk generates [resource mappings](key-concepts-in-iac+.md#resource-mapping) fro
 You must have the following:
 
 * Access to a Snyk [service account](../../enterprise-setup/service-accounts.md) and API token
-* Access to a Snyk Organization with [Integrated](./) IaC and cloud context
+* Access to a Snyk Organization with IaC+
 * Cloud resources deployed to AWS with Terraform via CI/CD
 * Terraform version 0.11 or later
 
@@ -33,7 +33,7 @@ You must have the following:
 
 ### Step 1: Onboard IaC and cloud environments to Snyk
 
-[Onboard Integrated IaC](getting-started-with-iac+-in-the-web-ui.md) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant AWS environments via [AWS Integration](../../integrations/cloud-platforms/aws-integration/).
+[Onboard IaC+](getting-started-with-iac+-in-the-web-ui.md) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant AWS environments via [AWS Integration](../../integrations/cloud-platforms/aws-integration/).
 
 `snyk iac test` must be run from the root folder of the cloned Git repository, not a subdirectory. If you are using GitLab or Azure DevOps, add a `target-reference` option so Snyk can generate an SCM link, as in the following CLI command:
 

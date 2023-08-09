@@ -1,10 +1,10 @@
-# Managing cloud and Integrated IaC rules
+# Managing cloud and IaC+ rules
 
 {% hint style="info" %}
 The name of the rule settings page differs based on the products enabled for your Organization.
 {% endhint %}
 
-If [Snyk Integrated IaC](./) is enabled for your Organization, you can view a list of all Snyk Cloud and IaC rules on the Organization **Settings > Snyk Cloud & IaC** page.
+If [Snyk IaC+](./) is enabled for your Organization, you can view a list of all Snyk Cloud and IaC rules on the Organization **Settings > Snyk Cloud & IaC** page.
 
 Each rule links to detailed fix advice on the [Cloud Security Rules](https://security.snyk.io/rules/cloud/) site.
 
@@ -26,10 +26,10 @@ Changes take effect for an environment after its next scan.
 
 To reset all custom severities, select **Reset Custom Settings**.
 
-## Filter rules by cloud or Integrated IaC area
+## Filter rules by cloud or IaC+ area
 
 {% hint style="info" %}
-This section applies to Organizations with both cloud and Integrated IaC enabled, or Integrated IaC only.
+This section applies to Organizations with both cloud and IaC+ enabled, or IIaC+ only.
 {% endhint %}
 
 By default, all rules are shown. Under the **Product Area** section, you can uncheck the Cloud box to hide Cloud-only rules, or the IaC box to hide IaC-only rules.

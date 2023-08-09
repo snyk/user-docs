@@ -485,7 +485,7 @@
   * [Snyk IaC+](scan-cloud-configurations/snyk-iac+/README.md)
     * [Key concepts in IaC+](scan-cloud-configurations/snyk-iac+/key-concepts-in-iac+.md)
     * [Getting started with IaC+ in the Web UI](scan-cloud-configurations/snyk-iac+/getting-started-with-iac+-in-the-web-ui.md)
-    * [Test your Integrated IaC+ with the Snyk CLI](scan-cloud-configurations/snyk-iac+/test-your-integrated-iac+-with-the-snyk-cli.md)
+    * [Test your IaC+ files with the Snyk CLI](scan-cloud-configurations/snyk-iac+/test-your-iac+-files-with-the-snyk-cli.md)
     * [Adding cloud context to your IaC+ tests](scan-cloud-configurations/snyk-iac+/adding-cloud-context-to-your-iac+-tests.md)
     * [Fix cloud issues in IaC+](scan-cloud-configurations/snyk-iac+/fix-cloud-issues-in-integrated-iac.md)
     * [Snyk environments](scan-cloud-configurations/snyk-iac+/snyk-environments/README.md)

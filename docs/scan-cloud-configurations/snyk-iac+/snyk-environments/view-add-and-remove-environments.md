@@ -13,7 +13,7 @@ The cloud environments table displays the following information for each environ
 
 ## Add a cloud environment
 
-To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../../integrations/cloud-platforms/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../../integrations/cloud-platforms/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../../integrations/cloud-platforms/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment. This is not supported for Integrated IaC environment kinds.
+To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../../integrations/cloud-platforms/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../../integrations/cloud-platforms/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../../integrations/cloud-platforms/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment. This is not supported for IaC+ environment kinds.
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt="Add an environment in the Snyk Web UI"><figcaption><p>Add an environment in the Snyk Web UI</p></figcaption></figure>
 
@@ -23,9 +23,9 @@ You can also add an environment using the Snyk API:
 * [Google Cloud Integration: API](../../../integrations/cloud-platforms/google-cloud-integration/google-cloud-integration-api/)
 * [Azure Integration: API](../../../integrations/cloud-platforms/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/)
 
-## Remove an Integrated IaC or cloud environment
+## Remove an IaC+ or cloud environment
 
-To remove an Integrated IaC or cloud environment:
+To remove an IaC+ or cloud environment:
 
 1. In the **Actions** column, select the `...` icon for the environment you want to remove.
 2. Select **Remove**.

@@ -1,6 +1,6 @@
 # View resources
 
-You can view all attributes for Integrated IaC and cloud resources in an Organization. This allows you to inventory all of your resources across cloud provider accounts or see the recorded state of any resource during the most recent scan.
+You can view all attributes for IaC+ and cloud resources in an Organization. This allows you to inventory all of your resources across cloud provider accounts or see the recorded state of any resource during the most recent scan.
 
 ## View all resources
 
