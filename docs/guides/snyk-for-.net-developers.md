@@ -30,7 +30,7 @@ Note that there is a monthly limit to the number of tests performed if a particu
   * Scan for issues with container images if you are building containers
 * [Snyk Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/)
   * Scan for configuration issues when you deploy your applications using Azure Resource Manager, Kubernetes deployment files, Terraform, or AWS Cloudformation templates.
-* [Integrated IaC with cloud context](../scan-cloud-configurations/integrated-iac-with-cloud-context/): Security from code to cloud and back
+* [Integrated IaC with cloud context](../scan-cloud-configurations/snyk-iac+/): Security from code to cloud and back
   * Scan for runtime misconfiguration issues in your cloud and containers, detect infrastructure drift, and fix issues at their source.
 
 {% hint style="info" %}

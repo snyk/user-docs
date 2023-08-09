@@ -39,7 +39,7 @@ At the Organization level, select **Settings** to manage settings:
 * [Languages](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
 * [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
-* [Snyk Cloud](../../scan-cloud-configurations/integrated-iac-with-cloud-context/)
+* [Snyk Cloud](../../scan-cloud-configurations/snyk-iac+/)
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
 * [Notifications](../manage-notifications.md)
 * [Snyk Preview](snyk-preview.md)

@@ -73,10 +73,10 @@ To view Dependencies and Licenses information, select the **Dependencies** menu 
 This report is available only if you have [Snyk Integrated IaC with cloud context](broken-reference) or the legacy Snyk Cloud enabled.
 {% endhint %}
 
-The Cloud Compliance Issues report shows[ cloud and integrated IaC issues](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/key-concepts.md#issues) for an entire Organization, organized by [compliance standard](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/key-concepts.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
+The Cloud Compliance Issues report shows[ cloud and integrated IaC issues](../../../scan-cloud-configurations/snyk-iac+/key-concepts-in-iac+.md#issues) for an entire Organization, organized by [compliance standard](../../../scan-cloud-configurations/snyk-iac+/key-concepts-in-iac+.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
 
 You can view a report for a single version of a compliance standard at a time, for example, CIS AWS Foundations Benchmark v1.4.0, by selecting the desired standard from the drop-down menu. Each report includes a list of compliance controls organized by control category, with corresponding issue counts.
 
-Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
+Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../../scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
 Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.

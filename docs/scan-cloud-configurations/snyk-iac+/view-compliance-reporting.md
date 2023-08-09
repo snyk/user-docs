@@ -7,7 +7,7 @@
 * To learn how to view the compliance report, see [Cloud Compliance Issues Report](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report).
 * To learn how to triage cloud issues by filtering them according to compliance standards and controls, see [Filter issues](cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md#filter-issues).
 
-See [Key concepts](key-concepts.md) for definitions of compliance standards and controls, security rules, and more.
+See [Key concepts](key-concepts-in-iac+.md) for definitions of compliance standards and controls, security rules, and more.
 
 ## Supported compliance standards
 

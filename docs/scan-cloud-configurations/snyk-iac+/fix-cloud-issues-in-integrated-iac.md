@@ -1,4 +1,4 @@
-# Fix cloud issues in Integrated IaC
+# Fix cloud issues in IaC+
 
 {% hint style="info" %}
 The fix cloud issues in IaC feature is available for [Integrated IaC](broken-reference) only, and supports AWS.
@@ -16,9 +16,9 @@ This feature eliminates these manual steps and provides the user with a link to 
 
 Snyk delivers this capability by “mapping” cloud resources to the source IaC templates where possible. Snyk does this by leveraging information contained in Terraform state files, such as resource IDs, which enable Snyk to map Cloud resources to Terraform state, and Terraform state to IaC source code.
 
-Snyk accesses Terraform state files via the CLI, which should be integrated into your deployment pipeline. Snyk does NOT send the `.tfstate` file to the Snyk Platform, given the potential for sensitive information. Instead, Snyk obtains the minimum amount of data necessary for resource mapping, such as resource IDs, and includes this information in a [mapping artifact](key-concepts.md#resource-mapping) that is sent to the Snyk Platform. All other configuration data is not included in the mapping artifact.
+Snyk accesses Terraform state files via the CLI, which should be integrated into your deployment pipeline. Snyk does NOT send the `.tfstate` file to the Snyk Platform, given the potential for sensitive information. Instead, Snyk obtains the minimum amount of data necessary for resource mapping, such as resource IDs, and includes this information in a [mapping artifact](key-concepts-in-iac+.md#resource-mapping) that is sent to the Snyk Platform. All other configuration data is not included in the mapping artifact.
 
-Snyk generates [resource mappings](key-concepts.md#resource-mapping) from cloud resources to IaC source templates by analyzing mapping artifacts, cloud resources, and IaC resources when cloud environments are scanned.
+Snyk generates [resource mappings](key-concepts-in-iac+.md#resource-mapping) from cloud resources to IaC source templates by analyzing mapping artifacts, cloud resources, and IaC resources when cloud environments are scanned.
 
 ## Prerequisites for fix cloud issues in IaC <a href="#docs-internal-guid-1c18d3e8-7fff-6839-26b4-06682c96a199" id="docs-internal-guid-1c18d3e8-7fff-6839-26b4-06682c96a199"></a>
 
@@ -33,7 +33,7 @@ You must have the following:
 
 ### Step 1: Onboard IaC and cloud environments to Snyk
 
-[Onboard Integrated IaC](getting-started-with-integrated-iac-in-the-web-ui.md) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant AWS environments via [AWS Integration](../../integrations/cloud-platforms/aws-integration/).
+[Onboard Integrated IaC](getting-started-with-iac+-in-the-web-ui.md) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant AWS environments via [AWS Integration](../../integrations/cloud-platforms/aws-integration/).
 
 `snyk iac test` must be run from the root folder of the cloned Git repository, not a subdirectory. If you are using GitLab or Azure DevOps, add a `target-reference` option so Snyk can generate an SCM link, as in the following CLI command:
 
@@ -145,7 +145,7 @@ workflows:
 
 ### Step 3: Run the pipeline <a href="#docs-internal-guid-a2671bcf-7fff-a65d-b991-ff8b7f32cc9e" id="docs-internal-guid-a2671bcf-7fff-a65d-b991-ff8b7f32cc9e"></a>
 
-By running your CI/CD pipeline to pull Terraform state and run [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture), Snyk generates a [mapping artifact](key-concepts.md#resource-mapping) with a minimal amount of information from the Terraform state file and sends it to Snyk.
+By running your CI/CD pipeline to pull Terraform state and run [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture), Snyk generates a [mapping artifact](key-concepts-in-iac+.md#resource-mapping) with a minimal amount of information from the Terraform state file and sends it to Snyk.
 
 When a mapping artifact is created or updated, Snyk executes a mapping run by analyzing IaC resources, cloud resources, and mapping artifacts across a Snyk Organization, and generates resource mappings that include connections between cloud and IaC resources.
 

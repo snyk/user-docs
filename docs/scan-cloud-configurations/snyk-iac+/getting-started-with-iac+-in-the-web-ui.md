@@ -1,7 +1,7 @@
-# Getting started with Integrated IaC in the Web UI
+# Getting started with IaC+ in the Web UI
 
 {% hint style="info" %}
-This page describes a process using the Snyk Web UI. For details on using Integrated IaC with the Snyk CLI, see [Test your Integrated IaC files with Snyk CLI](test-your-integrated-iac-files-with-snyk-cli.md).
+This page describes a process using the Snyk Web UI. For details on using Integrated IaC with the Snyk CLI, see [Test your Integrated IaC files with Snyk CLI](test-your-integrated-iac+-with-the-snyk-cli.md).
 {% endhint %}
 
 {% hint style="warning" %}
@@ -45,7 +45,7 @@ On the [Projects](../../manage-issues/introduction-to-snyk-projects/) page, navi
 
 ## Stage 3: View Integrated IaC issues in the Cloud Issues UI
 
-Clicking on the **Infrastructure as Code Issues** link opens a filtered view of the Cloud Issues UI, to include only issues from the corresponding Integrated IaC [environment](key-concepts.md#environments) that aligns with your Project.
+Clicking on the **Infrastructure as Code Issues** link opens a filtered view of the Cloud Issues UI, to include only issues from the corresponding Integrated IaC [environment](key-concepts-in-iac+.md#environments) that aligns with your Project.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 4.04.13 PM.png" alt="Cloud Issues UI, filtered to the specific environment for your SCM Git repository"><figcaption><p>Cloud Issues UI, filtered to the specific environment for your SCM Git repository</p></figcaption></figure>
 

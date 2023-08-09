@@ -1,20 +1,20 @@
-# Key concepts in Integrated IaC with cloud context
+# Key concepts in IaC+
 
 {% hint style="info" %}
 **Feature availability**\
-Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
+IaC+ is currently in **closed beta**. Reach out to your account team if you would like access.
 {% endhint %}
 
-Snyk Integrated IaC and cloud context have a number of unique concepts, different from Snyk core concepts such as [Projects](../../manage-issues/introduction-to-snyk-projects/#project) and [Targets](../../manage-issues/introduction-to-snyk-projects/#target).
+IaC+ has a number of unique concepts, different from Snyk core concepts such as [Projects](../../manage-issues/introduction-to-snyk-projects/#project) and [Targets](../../manage-issues/introduction-to-snyk-projects/#target).
 
 ## Environments
 
 A Snyk **environment** is an organizing concept that equates to the following:
 
-* For integrated IaC environments: an SCM repository, CLI test report, or Terraform Cloud run task report
+* For IaC+ environments: an SCM repository, CLI test report, or Terraform Cloud run task report
 * For deployed cloud environments: an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../manage-issues/introduction-to-snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
+Unlike a Snyk [Project](../../manage-issues/introduction-to-snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-in-iac+.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
 
 A Snyk environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 
@@ -46,9 +46,9 @@ A resource mapping represents a connection from a cloud resource to an IaC resou
 
 ## Rules
 
-A security **rule** checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems. Snyk has a set of [predefined security rules](https://security.snyk.io/rules/cloud/) that can be applied to integrated IaC and cloud environments.
+A security **rule** checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems. Snyk has a set of [predefined security rules](https://security.snyk.io/rules/cloud/) that can be applied to IaC+ environments.
 
-An example rule is “S3 bucket does not have all block public access options enabled.” Snyk can scan the configuration of an AWS S3 bucket to see if it fails the rule and so is vulnerable to a data breach.
+An example rule is _S3 bucket does not have all block public access options enabled_. Snyk can scan the configuration of an AWS S3 bucket to see if it fails the rule and so is vulnerable to a data breach.
 
 ## Issues
 
@@ -56,11 +56,11 @@ An **issue** represents a misconfiguration that can lead to a security problem. 
 
 After Snyk creates an issue, Snyk keeps it open until the misconfiguration is fixed, at which point the issue is closed.
 
-You can view your Organization's issues in the Snyk Web UI. See [View cloud and Integrated IaC issues in the Snyk Web UI](cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md).
+You can view your Organization's issues in the Snyk Web UI. See [View IaC+ issues in the Snyk Web UI](cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md).
 
 ## Compliance standard <a href="#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e" id="docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e"></a>
 
-A **compliance standard** is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are “versioned,” with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report).
+A **compliance standard** is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are versioned, with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report).
 
 For more information, see [supported compliance standards](view-compliance-reporting.md#supported-compliance-standards).
 
@@ -70,7 +70,7 @@ A **compliance control** is a specific recommendation or guideline from a compli
 
 ## Compliance mapping
 
-Snyk “maps” security [rules](key-concepts.md#rules) to compliance controls, which means each rule is associated with one or more controls and each control is associated with one or more rules.
+Snyk “maps” security [rules](key-concepts-in-iac+.md#rules) to compliance controls, which means each rule is associated with one or more controls and each control is associated with one or more rules.
 
 For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings’” and it maps to the security rule [SNYK-CC-00195](https://security.snyk.io/rules/cloud/SNYK-CC-00195), which is “S3 bucket does not have all block public access options enabled.”
 
