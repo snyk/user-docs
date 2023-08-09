@@ -31,5 +31,5 @@ ECR files are indicated with a unique icon ![ECR](../../../.gitbook/assets/uuid-
 Amazon ECR integration works like other Snyk integrations. To continue to monitor, fix, and manage your Projects, see the relevant pages in the Snyk user documentation.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../using-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../use-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}

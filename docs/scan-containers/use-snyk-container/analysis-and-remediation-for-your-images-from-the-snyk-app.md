@@ -47,5 +47,5 @@ If there is only one category of issues in your container, for example, Node bin
 If there is no Dockerfile attached for additional advice, the Dockerfile instruction filter does not appear
 {% endhint %}
 
-* .The Issues tab provides a list of vulnerabilities, including origins, paths, and an overview of the vulnerabilities
+* The Issues tab provides a list of vulnerabilities, including origins, paths, and an overview of the vulnerabilities
 * The Dependencies tab provides a tree view of the package hierarchy inside the image.

@@ -36,4 +36,4 @@ Click on an entry to see details of vulnerabilities found:
 2. Rebuild your image
 3. Snyk will automatically retest your new image after it is pushed.
 
-See [Analysis and fixes for your images from the Snyk Web UI](using-snyk-container/analysis-and-remediation-for-your-images-from-the-snyk-app.md) for more details.
+See [Analysis and fixes for your images from the Snyk Web UI](use-snyk-container/analysis-and-remediation-for-your-images-from-the-snyk-app.md) for more details.

@@ -117,7 +117,7 @@ If you are working with a large number of Projects, you should use the API to re
 
 Access to the [Snyk API](../snyk-api/) allows you to scale and automate different processes, including importing Projects. You will want to use this strategy if you have a large number of Projects that need to be moved to your new Snyk Organizations.
 
-You can use the [Snyk API import tool](../snyk-api/other-tools/tool-snyk-api-import/) to import Projects into Snyk at a controlled pace using available Snyk APIs.
+You can use the [Snyk API import tool](../snyk-api-info/other-tools/tool-snyk-api-import/) to import Projects into Snyk at a controlled pace using available Snyk APIs.
 
 {% hint style="info" %}
 If you plan to run SAST scans with Snyk Code, check that Snyk Code is enabled within the related Snyk Organization settings before importing Snyk Code Projects.
