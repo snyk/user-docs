@@ -1,7 +1,7 @@
 # Fix code issues automatically with DeepCode AI Fix Suggestions
 
 {% hint style="warning" %}
-DeepCode AI Fix Suggestions is in [Open Beta](../../more-info/snyk-feature-release-process.md) and fully supports Javascript frameworks.
+DeepCode AI Fix Suggestions is in [Open Beta](../../more-info/snyk-feature-release-process.md) and fully supports Javascript/Typscript frameworks.
 
 To enable the feature, see [Enable DeepCode AI Fix Suggestions](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#enable-deepcode-ai-fix-suggestions)
 {% endhint %}
@@ -32,7 +32,7 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Fix Suggestions language support
 
-Fix Suggestions supports only [Javascript](snyk-code-language-and-framework-support.md#javascript-frameworks).
+Fix Suggestions supports only [Javascript](snyk-code-language-and-framework-support.md#javascript-frameworks) and Typescript.
 
 ## Enable DeepCode AI Fix Suggestions
 
