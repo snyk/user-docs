@@ -6,7 +6,7 @@ For environments supported with other Snyk products, see: [Snyk Open Source - su
 
 ## Language support with Snyk Code AI Engine
 
-Snyk Code is based on a deep-code, semantic-code Analysis Engine, which uses AI to continuously learn from billions of lines of code, and 100s of millions of code fixes, in the global development community. The Snyk Code AI Engine continuously evolves the human-guided reinforced learning cycle lead by Snyk's security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.
+Snyk Code is based on a deep-code, semantic-code Analysis Engine, which uses AI to continuously learn from billions of lines of code, and 100s of millions of code fixes, in the global development community. The Snyk Code AI Engine continuously evolves the human-guided reinforced learning cycle led by Snyk security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.
 
 When files are provided for analysis, the engine determines which file to feed into which parser, in a language-independent common intermediate format. This format preserves and exposes characteristics of the scanned source code.
 
@@ -66,7 +66,7 @@ Most framework are supported "out of the box" as Snyk Code only need to be able 
 
 ### JavaScript frameworks
 
-:link:[JavaScript frameworks supporting code analysis](../supported-languages-and-frameworks/javascript/#code-analysis)
+For information about JavaScript frameworks that support code analysis, see the [code analysis information on the JavaScript page.](../supported-languages-and-frameworks/javascript/#code-analysis)
 
 ### Java frameworks
 
@@ -148,5 +148,5 @@ The analysis is available only for files with names shorter or equal to 255 char
 {% hint style="info" %}
 **Feature availability**
 
-Code Quality is an experimental feature. If you would like to use it, contact your Snyk team.
+Code Quality is an experimental feature. If you are interested in using the feature, contact your Snyk team.
 {% endhint %}
