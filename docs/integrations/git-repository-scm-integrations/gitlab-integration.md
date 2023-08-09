@@ -17,10 +17,10 @@ Scanning of self-managed and self-hosted source code on GitLab Enterprise is ava
 
 The Snyk GitLab integration allows you to:
 
-1. See Snyk tests in your pull requests that check for vulnerabilities.
-2. Get email alerts and a Snyk pull request with fixes when new vulnerabilities that affect your repo are disclosed.
-3. Get email alerts and a Snyk pull request if a new upgrade or patch is available for a vulnerability that affects you.
-4. Trigger a Snyk pull request on snyk.io with fixes from the test report page or the Project page for your repo.
+1. Check for **vulnerabilities** in your pull requests.&#x20;
+2. Receive **email alerts** when new vulnerabilities that affect your repo arise and fixes for those vulnerabilities are shown.
+3. Receive **email alerts** and a **resulting pull request** if a new upgrade or patch is available for a vulnerability.
+4. From the **Report** page or the **Project** page on the Snyk Web UI, trigger a Snyk pull request for fixes listed
 
 {% hint style="info" %}
 **GitLab webhooks** send out an event to Snyk when merge requests occur. This starts a series of other events, such as pulling Project files, running the test process, and posting the results to GitLab, all of which occur on the Snyk side.
