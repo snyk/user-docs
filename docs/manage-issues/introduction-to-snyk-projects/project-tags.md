@@ -5,11 +5,11 @@
 Project tags are available for Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
-## Introducing tags
+## Project tags use and conditions
 
-A project tag allows you to add additional custom metadata to Snyk Projects.
+A Project tag allows you to add custom metadata to Snyk Projects.
 
-#### Using tags in the Web UI
+### Using tags in the Web UI
 
 In the Snyk Web UI, you can:
 
@@ -21,33 +21,33 @@ In the Snyk Web UI, you can:
 Group and Organization admins can perform all these actions. Collaborators can perform the actions if they are in an Organization which is part of the Group.
 {% endhint %}
 
-#### Other ways of using tags
+### Adding and removing tags
 
-You can also add and remove tags using:
+You can add and remove tags using the API and the CLI:&#x20;
 
 * [Snyk API Project tags endpoints](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project)
 * The Snyk CLI option `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-reference.md). for the commands that support this option.
 
-#### Tag conditions
+### Tag conditions
 
 The following conditions apply to Project tags:
 
-* Keys are limited to 30 characters
+* Keys are limited to 30 characters.
 * Values are limited to 256 characters.
 * Keys allow only alphanumerics and the following characters **`-`**, **`_`**
 * Values allow these characters plus **`/`**, **`:`**, **`?`**, **`#`**, **`@`**, **`&`**, **`+`**, **`=`**, **`%`**, **`~`**
-* You can create 1000 unique key and value combinations per group, and apply 10 unique tags per Project.
+* You can create 1,000 unique key and value combinations per group, and apply ten unique tags per Project.
 * Reusing a key and value combination does not add to the count.
 
-### **Create tags**
+## **Create tags**
 
 To create a new tag for a Snyk Project:
 
 1.  On the Project details page, under **TAGS** click **Add a key/value...**\\
 
+    ***
 
-
-    <figure><img src="../../.gitbook/assets/projects-tags_20sept2022.png" alt="Choose option to create a Project tag"><figcaption><p>Choose option to create a Project tag</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/projects-tags_20sept2022.png" alt="Choose the option to create a Project tag"><figcaption><p>Choose the option to create a Project tag</p></figcaption></figure>
 2. Add the new key and click **Enter**.
 3. Add a new value and click **Enter**.
 
@@ -59,7 +59,7 @@ You can apply multiple Project tag values to the same Project tag key.
 
 <figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_18.04.30.png" alt="Multiple Project tag values applied to the same key"><figcaption><p>Multiple Project tag values applied to the same key</p></figcaption></figure>
 
-### **Apply and remove tags**
+## **Apply and remove tags**
 
 If a tag exists in your Group, you can apply it to any Snyk Project.
 
@@ -71,7 +71,7 @@ If a tag exists in your Group, you can apply it to any Snyk Project.
 
 <figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png" alt="Select a key value for a tag"><figcaption><p>Select a key value for a tag</p></figcaption></figure>
 
-### Filter Projects listing by tags
+## Filter Projects listing by tags
 
 When **Group by none** (ungrouped) is applied to the Projects listing page, you can filter the list by tags using the option in the menu.
 
