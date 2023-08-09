@@ -33,7 +33,7 @@ You must have the following:
 
 ### Step 1: Onboard IaC and cloud environments to Snyk
 
-[Onboard IaC+](getting-started-with-iac+-in-the-web-ui.md) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant AWS environments via [AWS Integration](../../integrations/cloud-platforms/aws-integration/).
+[Onboard IaC+](getting-started-with-iac+-in-the-web-ui.md) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant AWS environments via [AWS Integration](../../integrations/cloud-platforms-integrations/aws-integration/).
 
 `snyk iac test` must be run from the root folder of the cloned Git repository, not a subdirectory. If you are using GitLab or Azure DevOps, add a `target-reference` option so Snyk can generate an SCM link, as in the following CLI command:
 

@@ -1,7 +1,7 @@
-# Cloud platforms
+# Cloud platforms integrations
 
 {% hint style="info" %}
-These integrations are available for Integrated IaC with cloud context. See [Scan cloud configurations](../../scan-cloud-configurations/) for details.
+These integrations are available for IaC+. See [Scan cloud configurations](../../scan-cloud-configurations/) for details.
 {% endhint %}
 
 The following pages provide information and instructions for cloud platforms integrations:

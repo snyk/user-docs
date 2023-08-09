@@ -2,7 +2,7 @@
 
 You can update the following attributes for a [cloud environment](../key-concepts-in-iac+.md#environments):
 
-* **AWS:** Environment name and IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](../../../integrations/cloud-platforms/aws-integration/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
+* **AWS:** Environment name and IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](../../../integrations/cloud-platforms-integrations/aws-integration/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
 * **Google:** Environment name and service account email address. The new service account email must be associated with the same Project ID as the old one.
 * **Azure:** Environment name and application ID. The new application ID must be associated with the same subscription and tenant as the old one.
 
