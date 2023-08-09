@@ -94,7 +94,7 @@ Your account is subject to contract terms which might restrict your ability to e
 * For drift detection via `snyk iac describe`, Snyk relies on the principle of least privilege and requires only read-only access to [AWS](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-aws-provider.md#least-privileged-policy), [Azure](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-azure-provider.md#least-privileged-policy), [Google](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-google-provider.md#least-privileged-policy), or [GitHub](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-github-provider.md#least-privileged-policy). Provider credentials are not sent to or stored by Snyk.
 * Snyk relies on local read-only Terraform State file access and extracts and sends relevant resource configuration data to the platform.
 
-### Integrated IaC with cloud context
+### IaC+
 
 * Snyk Cloud scans cloud platform APIs to gather information on configured infrastructure deployed in AWS Accounts and Google Cloud Subscriptions.
 * To perform scans, Snyk relies on the principle of least privilege, leveraging different authentication mechanisms which are supported by each Cloud platform.
