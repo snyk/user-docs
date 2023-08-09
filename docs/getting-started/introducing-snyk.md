@@ -16,7 +16,7 @@ A good security process secures each of these components where they are built an
 
 * **Secure your code**: use [Snyk Open Source](../scan-application-code/snyk-open-source/) to fix vulnerabilities in your open source dependencies and [Snyk Code](../scan-application-code/snyk-code/) to fix vulnerabilities in your source code.
 * **Secure your containers**: use [Snyk Container](../scan-containers/) to fix vulnerabilities in container images and Kubernetes applications.
-* **Secure your deployment**: and [Snyk Infrastructure as Code (IaC)](../scan-cloud-configurations/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [Integrated IaC with cloud context](../scan-cloud-configurations/snyk-iac+/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud projects.
+* **Secure your deployment**: and [Snyk Infrastructure as Code (IaC)](../scan-cloud-configurations/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [IaC+](../scan-cloud-configurations/snyk-iac+/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud projects.
 
 ## Choose how to run Snyk
 
@@ -41,7 +41,7 @@ Snyk tech stacks supported depend on the Snyk product you use:
 * **Snyk Code**: see [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md)
 * **Snyk Container**: see [Supported operating system distributions](../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md)
 * **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-cloud-configurations/supported-iac-and-cloud-providers.md)
-* **Integrated IaC with cloud context:** see [Supported IaC and cloud providers](../scan-cloud-configurations/supported-iac-and-cloud-providers.md)
+* **IaC+:** see [Supported IaC and cloud providers](../scan-cloud-configurations/supported-iac-and-cloud-providers.md)
 
 ## What can Snyk integrate with?
 
