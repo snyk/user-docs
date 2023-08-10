@@ -32,6 +32,10 @@ Then run the commands for each SCM, registry, or Jira as explained in the user d
 * [Nexus 2](nexus-repository-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus2`
 * [Jira](jira-install-and-configure-broker/jira-install-and-configure-using-helm.md) `scmType`: `jira`
 
+{% hint style="info" %}
+`scmType` designates the system type.
+{% endhint %}
+
 Running the commands for each SCM, registry, or Jira creates a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter. See also Deploying multiple Brokers in the same namespace.
 
 Additional commands are available to Install the Snyk Broker Code Agent and Container Registry Agent.
