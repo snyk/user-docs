@@ -33,7 +33,7 @@ Then run the commands for each SCM, registry, or Jira as explained in the user d
 * [Jira](jira-install-and-configure-broker/jira-install-and-configure-using-helm.md) `scmType`: `jira`
 
 {% hint style="info" %}
-`scmType` designates the system type.
+`scmType` designates the system type. For JFrog and Nexus, this is an artifact repository, For Jira, it is a ticket management system,
 {% endhint %}
 
 Running the commands for each SCM, registry, or Jira creates a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter. See also Deploying multiple Brokers in the same namespace.
