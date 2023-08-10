@@ -254,7 +254,7 @@
       * [Snyk for Elixir](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
       * [Snyk for Go](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
       * [Snyk for Java and Kotlin](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md)
-      * [Snyk for JavaScript](scan-application-code/supported-languages-and-frameworks/javascript/README.md)
+      *
       * [Snyk for PHP](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
       * [Snyk for Python](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)
       * [Snyk for Ruby](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
@@ -509,7 +509,7 @@
       * [Explore example Custom Rules](scan-cloud-configurations/snyk-iac+/build-your-own-iac+-to-cloud-custom-rules/explore-example-custom-rules.md)
     * [Managing cloud and IaC+ rules](scan-cloud-configurations/snyk-iac+/managing-cloud-and-iac+-rules.md)
     * [Cloud and IaC+ issues](scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/README.md)
-      * [View cloud and  IaC+ issues in the Snyk Web UI](scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md)
+      * [View cloud and IaC+ issues in the Snyk Web UI](scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md)
       * [Ignoring cloud and IaC+ issues](scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/ignoring-cloud-and-integrated-iac-issues.md)
     * [View compliance reporting](scan-cloud-configurations/snyk-iac+/view-compliance-reporting.md)
     * [View resources](scan-cloud-configurations/snyk-iac+/view-resources.md)
