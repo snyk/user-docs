@@ -12,26 +12,20 @@ Snyk GitHub Enterprise integration lets you:
 * Provide automated fixes and upgrades.
 
 {% hint style="info" %}
-Snyk recommends GitHub Enterprise integration for Enterprise customers, as it allows the use of a single Organization-wide Personal Access Token (PAT) rather than a user account-based PAT. See [Using GItHub or GItHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
+Snyk recommends GitHub Enterprise integration for Enterprise customers, as it allows the use of a single organization-wide Personal Access Token (PAT) rather than a user account-based PAT. See [Using GItHub or GItHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
-## Prerequisites for GitHub Enterprise integration
-
-* A dedicated GitHub Enterprise [service account](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) with write level or higher permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for further details.
-* A GitLab Enterprise-level account. This allows the use of a single Organization-wide Personal Access Token (PAT) rather than a user account-based PAT. See [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
-* A publicly accessible GitHub Enterprise Group or Project.
-
-## Set up a GitHub Enterprise integration
+## How to set up a GitHub Enterprise integration
 
 Follow these steps to connect Snyk with your GitHub Enterprise repositories:
 
-1. If you have not already done so, create a dedicated service account in GitHub Enterprise with _**write**_ level or higher permissions for the repos you want to monitor with Snyk permissions.\
-   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required permissions scope for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
+1. If you have not already done so, create a dedicated GitHub Enterprise service account with write-level or higher permissions for the repos to monitor.\
+   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required permissions scope for the GitHub Enterprise integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
 2. Generate a personal access token for the GitHub Enterprise service account with these permissions:
    * `repo (all)`
    * `admin:read:org`
    * `admin:repo_hooks` (read and write)
-3. If you are using fine-grained personal access tokens, the following scope is required. For details, see [GitHub Enterprise documentation](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token).
+3. If you are using fine-grained personal access tokens, the following scope is required. For details, see the [GitHub Enterprise documentation](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token).
    * Repository permissions
      * Administration: Read-only&#x20;
      * Commit Status: Read and write&#x20;
@@ -39,7 +33,7 @@ Follow these steps to connect Snyk with your GitHub Enterprise repositories:
      * Metadata: Read-only&#x20;
      * Pull requests: Read and write&#x20;
      * Webhooks: Read and write
-   * Organization permissions: Members: Read-only
+   * Organization permissions - Members: Read-only
 4. Authorize your personal access token and enable SSO:
    1. In Snyk, navigate to the **Integrations** page and click the **GitHub Enterprise** card.
    2. Enter your GitHub Enterprise URL and the personal access token (PAT) for the GitHub Enterprise service account you created, and **Save** your changes.\
@@ -88,7 +82,7 @@ To review and update the automatic fix pull request settings:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.41.56.png" alt="Automatic pull requests settings"><figcaption><p>Automatic pull requests settings</p></figcaption></figure>
 
-### **Test new pulls**
+### **Test new pull requests**
 
 The [PR Checks](../../scan-application-code/run-pr-checks/) feature enables Snyk to test any newly-created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub Enterprise. This allows you to see, directly from GitHub Enterprise, whether the pull request introduces new security issues.
 
