@@ -7,7 +7,7 @@ For [Snyk Container](../../scan-containers/), these options also work, but after
 
 For [Snyk Infrastructure as Code](../../scan-cloud-configurations/snyk-infrastructure-as-code/), see [IaC ignores using the snyk policy file](../../scan-cloud-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
 
-For [Snyk Code](../../scan-application-code/snyk-code/), see [Excluding directories and files from the Snyk Code CLI test](../../scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md).
+For [Snyk Code](../../scan-application-code/snyk-code/), see [Excluding directories and files from the Snyk Code CLI test](../../scan-application-code/snyk-code/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md).
 {% endhint %}
 
 Sometimes, Snyk alerts you to a vulnerability that has no update or Snyk patch available, or that you do not believe to be currently exploitable in your application. When this happens you may want to tell Snyk to ignore the vulnerability for a certain period of time.

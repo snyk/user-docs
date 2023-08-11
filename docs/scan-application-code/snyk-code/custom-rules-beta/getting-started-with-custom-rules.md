@@ -14,7 +14,7 @@ Custom rules beta is not currently compatible with [SCM integrations via Broker]
 You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:
 
 * [Snyk Web UI](../../../getting-started/exploring-the-snyk-web-ui.md)
-* [Snyk CLI](../cli-for-snyk-code/)
+* [Snyk CLI](../using-snyk-code-from-the-cli/)
 * [IDE](../using-snyk-code-in-an-ide.md)
 
 {% hint style="info" %}
@@ -35,7 +35,7 @@ You can create and test queries in a local environment, completely separate from
 
 You can test your Code Projects using the Snyk CLI with regular commands and options as long as you have the [.snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.
 
-For more information, see [Using Snyk Code via the CLI](../cli-for-snyk-code/).
+For more information, see [Using Snyk Code via the CLI](../using-snyk-code-from-the-cli/).
 
 ## Using custom rules in the IDE
 

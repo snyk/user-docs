@@ -68,7 +68,7 @@ A scan with [**Snyk test**](../scan-application-code/snyk-open-source/use-snyk-o
 Snyk test video
 {% endembed %}
 
-A scan with [**Snyk code test** ](../scan-application-code/snyk-code/cli-for-snyk-code/)runs a Static Code Analysis test on the code in that project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
+A scan with [**Snyk code test** ](../scan-application-code/snyk-code/using-snyk-code-from-the-cli/)runs a Static Code Analysis test on the code in that project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
 
 A scan with [**Snyk container test**](../scan-containers/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image for one that is more secure.
 

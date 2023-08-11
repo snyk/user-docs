@@ -189,7 +189,7 @@ See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-
 
 #### Helpful options and plugins
 
-* See [snyk-to-html](../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to help generate reports locally or at build time
+* See [snyk-to-html](../scan-application-code/snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to help generate reports locally or at build time
 * See --json and --sarif options for generating output that can be programmatically accessed
 * See [snyk-filter](../snyk-api-info/other-tools/tool-snyk-filter.md) for advanced filtering options and [other tools](../snyk-api-info/other-tools/)&#x20;
 
