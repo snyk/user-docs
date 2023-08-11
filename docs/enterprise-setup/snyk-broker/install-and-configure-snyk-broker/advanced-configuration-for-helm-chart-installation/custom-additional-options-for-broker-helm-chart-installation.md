@@ -1,6 +1,6 @@
 # Custom additional options for Broker Helm Chart installation
 
-If you need to inject additional option(s) via environment variables, use the override.yaml value file to add any additional environment variable(s) you may need.
+If you need to inject additional option(s) using environment variables, use the `override.yaml` value file to add any additional environment variable(s) you may need.
 
 Adding the `--values override.yaml` will load those values into your deployment. For example:
 
@@ -29,6 +29,8 @@ helm install snyk-broker-chart . \
              -n snyk-broker --create-namespace
 ```
 
-**Extra resources**\
-Additional Kubernetes resources can be added to the chart by adding them to the values file. Be careful to use the right syntax and validate the rendered `yaml` using `helm template` command.\
-Thanks to https://github.com/apat292 for the contribution.
+You can add custom Kubernetes resources and objects to the chart by adding them to the values file.
+
+Various combinations of Kubernetes options and objects are available at various levels of the specifications hierarchy, deployment, container, and pod-specific. These are listed in the [default `values.yaml` ](https://github.com/snyk/snyk-broker-helm/blob/a805f97235ba6b004df7a38c93ee94e399b699b7/charts/snyk-broker/values.yaml#L403)file as `extraObjects`, `extraVolumes`, `extraVolumeMounts`, and `extraPodSpecs`.
+
+Be careful to use the right syntax and validate the rendered `yaml` using `helm template` command.
