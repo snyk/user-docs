@@ -19,7 +19,7 @@ To enable the Snyk app for Slack, you must do the following:
 
 1. Authorize the Snyk app for Slack with Snyk to get new issues data that can be forwarded to your Slack workspace.
 2. Authorize the Snyk app for Slack with your Slack workspace to allow us to send notifications to your channels in the workspace.
-3. Configure the default notification settings for all Projects in your Organization and add any Project-level notification overrides if you would like
+3. Configure the default notification settings for all Projects in your Organization and add any [Project-level notification overrides](slack-app.md#managing-project-level-notification-overrides) if you would like.
 
 ## Configure the Snyk app for Slack
 
@@ -51,3 +51,47 @@ After you have done this, the channel is displayed on the Settings page for the 
 To remove the Snyk app for Slack, navigate to the settings page, locate **Remove Slack Snyk app** at the bottom of the page, and click the **Disconnect Slack** button:
 
 <figure><img src="../../.gitbook/assets/slack-app5.png" alt="Remove Slack App integration"><figcaption><p>Remove Slack App integration</p></figcaption></figure>
+
+## Managing Project-level notification overrides
+
+To override Slack notification settings on a per-Project level, a set of [Snyk REST API](https://apidocs.snyk.io/) endpoints are available.
+
+Before attempting to use these endpoints, ensure that you have retrieved your authentication token and Organization ID (`org_id`) as outlined in the steps of the [Getting started using Snyk REST API](https://docs.snyk.io/snyk-api/getting-started-using-snyk-rest-api) guide.
+
+### Prerequisites
+
+#### Finding the Slack App Bot ID
+
+To interact with the Project level notification override endpoints, a `bot_id` is necessary. You can obtain it with a request to the app bots endpoint:
+
+* GET [/orgs/{org\_id}/app\_bots](https://apidocs.snyk.io/?version=2023-08-04#get-/orgs/-org\_id-/app\_bots)
+
+{% hint style="info" %}
+Make sure to apply the `expand=app` query string on your request. This enables you to find the Bot with a related Snyk App named **Slack App**.
+{% endhint %}
+
+#### Finding your Project ID
+
+To target the desired Project, you will need its `project_id`. This can be obtained with a request to the Project's endpoint:
+
+* GET [/orgs/{org\_id}/projects](https://apidocs.snyk.io/?version=2023-08-04#get-/orgs/-org\_id-/projects)
+
+### Managing Slack notifications per Project
+
+Now that you have retrieved the `org_id`, `bot_id`, and `project_id` values respectively, you can leverage the following create, read, update, and delete operations via the API.
+
+#### List all  Slack notification overrides for Projects
+
+* GET [/orgs/{org\_id}/slack\_app/{bot\_id}/projects](https://apidocs.snyk.io/?version=2023-08-04#get-/orgs/-org\_id-/slack\_app/-bot\_id-/projects)
+
+#### Create a Slack notification override for a Project
+
+* POST [/orgs/{org\_id}/slack\_app/{bot\_id}/projects/{project\_id}](https://apidocs.snyk.io/?version=2023-08-04#post-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+
+#### Update a Slack notification override for a Project
+
+* PATCH [/orgs/{org\_id}/slack\_app/{bot\_id}/projects/{project\_id}](https://apidocs.snyk.io/?version=2023-08-04#patch-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+
+#### Delete a Slack notification override for a Project
+
+* DELETE [/orgs/{org\_id}/slack\_app/{bot\_id}/projects/{project\_id}](https://apidocs.snyk.io/?version=2023-08-04#delete-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
