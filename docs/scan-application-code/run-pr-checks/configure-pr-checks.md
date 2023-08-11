@@ -18,9 +18,15 @@ To check for open source and licensing issues and code security, make sure that 
 PR Checks for Snyk Code is in Closed Beta and only available for Enterprise plans.
 {% endhint %}
 
-## Programming language support
+## Feature availability
 
-PR Checks also support all programming languages supported by the Snyk Code and Open Source engines (see programming language support for [Snyk Code](../snyk-code/snyk-code-language-and-framework-support.md) and [Open Source](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)).
+You can analyze the changed code with PR Checks as follows:
+
+* (Beta) Snyk Code: Source code changes result in a vulnerability that exceeds a specified threshold. A full scan of the repository is done to understand if there are new vulnerabilities.&#x20;
+* Snyk Open Source: Snyk analyzes dependency manifest or supported files for known security vulnerabilities that meet a threshold, such as exceeding severity, or checks if a fix is available.&#x20;
+* Open Source license check: Snyk validates package licenses against the configured policy for license policy violations.
+
+PR Checks also support all programming languages and frameworks supported by the Snyk Code and Open Source engines (see programming language support for [Snyk Code](../snyk-code/snyk-code-language-and-framework-support.md) and [Open Source](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)).
 
 ## How the configuration works
 

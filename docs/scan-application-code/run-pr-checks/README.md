@@ -4,12 +4,12 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 
 ## Why use PR Checks
 
-| Benefits                                      | Details                                                                                                                                                                    |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Automatically scanned pull request            | Scan code changes in real-time as soon as a pull request is submitted, to catch potential issues before they go into production.                                           |
-| Results displayed in your source code manager | Make use of security reviews and notes left by Snyk on your pull requests.                                                                                                 |
-| Code change testing for security issues       | Test changes to your codebase for any security issues, ensuring that your code stays secure over time.                                                                     |
-| Branch testing                                | Test branches before and after implementing changes to fail only if the new branch has introduced issues. Prevention of merging pull requests with failed security issues. |
+| Benefits                                      | Details                                                                                                                                                                                                                                             |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Automatically scanned pull request            | Scan code changes in real-time as soon as a pull request is submitted, to catch potential issues before they go into production.                                                                                                                    |
+| Results displayed in your source code manager | Make use of security reviews and notes left by Snyk on your pull requests.                                                                                                                                                                          |
+| Code change testing for security issues       | Test changes to your codebase for any security issues, ensuring that your code stays secure over time.                                                                                                                                              |
+| Branch testing                                | <p>Test branches before and after implementing changes to fail only if the new branch has introduced issues. Prevention of merging pull requests with failed security issues. <br>Snyk monitors all pull requests made to the monitored branch.</p> |
 
 ## What to test for
 
