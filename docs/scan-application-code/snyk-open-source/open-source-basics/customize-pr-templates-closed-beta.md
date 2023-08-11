@@ -4,7 +4,7 @@
 This feature is currently in closed beta. The functionality is likely to evolve based on feedback, and there will be breaking changes. Contact your account manager to get access to this feature.
 {% endhint %}
 
-## Understanding Customized PRs
+## Understand Customized PRs
 
 When you fix or upgrade Snyk Open Source and Container Projects imported using the [SCM integrations](../../../integrations/git-repository-scm-integrations/), Snyk raises pull requests (PRs) against your repository.&#x20;
 
@@ -14,7 +14,7 @@ You may have your own standards and practices for submitting pull requests. For 
 
 On the [Supported languages, frameworks, and feature availability overview](../../supported-languages-and-frameworks/) page, you can find all the languages for which the Fix PR's functionality is supported.
 
-## Using the Customize PR feature
+## Use the Customize PR feature
 
 Here are the steps that you need to follow to enable the Customize Snyk PR feature:
 
@@ -27,7 +27,7 @@ Here are the steps that you need to follow to enable the Customize Snyk PR featu
 Snyk is initially looking for feedback on the variables and templating system. Once the approach is validated, Snyk will look into building more robust authoring workflows via the API and UI interfaces.
 {% endhint %}
 
-## Creating the PR template
+## Create the PR template
 
 Create the YAML template in an [appropriate location ](customize-pr-templates-closed-beta.md#file-locations)and use the [mustache](https://mustache.github.io) syntax for templating.
 
@@ -452,20 +452,23 @@ It is possible that a new line is not added between variables when two lines sta
 
 The following template example shows how to use the variables inside a PR template.
 
-```yaml
-title: This PR fixes {{ issue_count }} issues
+<pre class="language-yaml"><code class="lang-yaml">title: This PR fixes {{ issue_count }} issues
 branchName: fix/{{ issue_count }}-issues
 commitMessage: "fix: {{ issue_count }} Snyk issues"
 description: |
-  Fixes {{ issue_count }} issues
-  
+  {{ #is_upgrade_pr }}
+  This PR has been opened to make sure our repositories are kept up-to-date.
+  It updates {{ package_name }} from version {{ package_from }} to version {{ package_to }}.
+  Review relevant docs for possible breaking changes.
+<strong>  {{ /is_upgrade_pr }}
+</strong>  
   **Tickets**
-  {{ #each jira_ids }}
-  - Fixes {{ self }}
-  {{ /each }}
+  {{ #jira_ids }}
+  - Fixes {{ . }}
+  {{ /jira_ids }}
   
   To find more details, see the Snyk project [{{ snyk_project_name }}]({{ snyk_project_url }})
-```
+</code></pre>
 
 ### Validating the template
 
