@@ -1,15 +1,15 @@
 # Bitbucket Data Center/Server integration
 
-The Snyk Bitbucket Data Center/Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open-source components, and use automated fixing. This integration supports Bitbucket Data Center/Server versions 4.0 and above.
-
 {% hint style="info" %}
 **Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
+The Snyk Bitbucket Data Center/Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open-source components, and use automated fixing. This integration supports Bitbucket Data Center/Server versions 4.0 and above.
+
 For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](https://snyk.io/blog/snyk-bitbucket-best-practices-cheat-sheet/) on the Snyk blog.
 
-## Setting up a Bitbucket DC/Server Integration
+## How to set up a Bitbucket DC/Server Integration
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up a dedicated service account in Bitbucket DC/Server with admin permissions.\
    Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.\
@@ -20,7 +20,7 @@ For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](h
    Snyk connects to your Bitbucket DC/Server instance.\
    When the connection succeeds, a confirmation message appears on your integrations screen.
 
-## Importing Projects
+## How to import Projects
 
 To select the repositories for Snyk to monitor:
 
@@ -59,7 +59,7 @@ The example that follows shows a fix Pull Request opened by Snyk.
 
 To review and adjust the automatic fix pull request settings:
 
-1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server**, and click **Edit Settings**.
+1. In Snyk, navigate to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix PRs** section and configure the relevant options.
 
 <div align="left">
@@ -108,7 +108,7 @@ For Snyk to perform the required operations on monitored repositories, such as r
 | Opening fix and upgrade pull requests                   | Used to create fix PRs in monitored repositories.                                                                                                                                                                                                     | **Write** or above                         |
 | Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | **Admin**                                  |
 
-## **Disabling the Bitbucket Data Center/Server integration**
+## **How to disable the Bitbucket Data Center/Server integration**
 
 {% hint style="warning" %}
 When you disconnect Snyk from your repository projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
