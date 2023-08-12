@@ -111,7 +111,7 @@ For Snyk to perform the required operations on monitored repositories, such as r
 ## **Disabling the Bitbucket Data Center/Server integration**
 
 {% hint style="warning" %}
-ProjectsWhen you disconnect Snyk from your repository projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
+When you disconnect Snyk from your repository projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
 If you choose to re-enable this integration later, you must re-enter your credentials and activate your projects.
 {% endhint %}
 
