@@ -59,6 +59,10 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * CentOS Linux 9
 * CentOS Linux 8
 
+### [Chainguard](https://www.chainguard.dev/)
+
+* Any - Coming soon
+
 ### [Debian](https://www.debian.org/)
 
 * Unstable - Sid
@@ -118,4 +122,8 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Ubuntu 13.10 - Saucy Salamander&#x20;
 * Ubuntu 13.04 - Raring Ringtail&#x20;
 * Ubuntu 12.10 - Quantal Quetzal
+
+### [Wolfi](https://github.com/wolfi-dev)
+
+* Any - Coming soon
 
