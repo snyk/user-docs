@@ -66,7 +66,7 @@ commitMessage: "snyk: this is a security pull request"
 * `description` - customize the PR description&#x20;
 
 {% hint style="info" %}
-If any of the customizable properties are missing from your template, Snyk reverts to the default values when opening a pull request.&#x20;
+If any of the customizable properties are missing from your template, Snyk reverts to the default values for these properties when opening a pull request.&#x20;
 {% endhint %}
 
 ### File locations
