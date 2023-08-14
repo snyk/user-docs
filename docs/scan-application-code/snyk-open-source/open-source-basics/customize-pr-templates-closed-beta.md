@@ -24,7 +24,7 @@ Here are the steps that you need to follow to enable the Customize Snyk PR featu
 4. If you want to use **multiple repositories for a custom template**, **add the customized YAML template file to each of these repositories.**
 
 {% hint style="warning" %}
-Snyk is initially looking for feedback on the variables and templating system. Once the approach is validated, Snyk will look into building more robust authoring workflows via the API and UI interfaces.
+Snyk is initially looking for feedback on the variables and templating system. Once the approach is validated, Snyk will look into building more robust authoring workflows using the API and UI interfaces.
 {% endhint %}
 
 ## Create the PR template
@@ -65,8 +65,8 @@ commitMessage: "snyk: this is a security pull request"
 * `branch`- customize the PR branch name
 * `description` - customize the PR description&#x20;
 
-{% hint style="warning" %}
-All customizable properties must have a value in your template. If any of these are missing from your customized template, Snyk will fail to open a PR. Snyk is working to remove this limitation.
+{% hint style="info" %}
+If any of the customizable properties are missing from your template, Snyk reverts to the default values when opening a pull request.&#x20;
 {% endhint %}
 
 ### File locations
