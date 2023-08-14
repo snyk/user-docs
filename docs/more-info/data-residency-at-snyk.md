@@ -39,7 +39,7 @@ Single-tenant deployments may support more regions than the ones listed here, su
 
 ## Regional and global data
 
-Snyk leverages a number of sub-processors to provide you with a high-quality service. Thus not all data types can be stored within your region of choice. The list of sub-processors is available [on the Snyk website](https://snyk.io/policies/sub-processors/).
+Snyk leverages a number of sub-processors to provide you with a high-quality service. Thus not all data types can be stored within your region of choice. The list of sub-processors is available [on the Snyk website](https://snyk.io/policies/subprocessors/).
 
 See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-specific examples of how this data is handled.
 

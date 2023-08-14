@@ -118,6 +118,6 @@ Snyk is certified to ISO 27001:2013 with the additional objective controls of IS
 For additional information, see the following pages on the Snyk website:
 
 * [Privacy](https://snyk.io/policies/privacy/)
-* [Snyk Sub-processing](https://snyk.io/policies/sub-processors/)
+* [Snyk Sub-processing](https://snyk.io/policies/subprocessors/)
 * [Data Processing Addendum](https://snyk.io/policies/dpa/)
 * [Tracking and analytics](https://snyk.io/policies/tracking-and-analytics/)
