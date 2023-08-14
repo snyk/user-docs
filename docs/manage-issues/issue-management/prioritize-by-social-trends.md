@@ -1,9 +1,5 @@
 # Vulnerabilities with Social Trends
 
-{% hint style="warning" %}
-Snyk Social Trends is temporarily unavailable due to the removal of APIs by Twitter.
-{% endhint %}
-
 Snyk Social Trends shows a **Trending** banner on issues that are being actively discussed on Twitter.
 
 Social Trends are calculated into the priority score by default. You can look at the top tweets mentioning this vulnerability by clicking on **View Tweets**.
