@@ -1,19 +1,19 @@
 # GitLab integration
 
+{% hint style="info" %}
+**Feature availability**\
+Scanning of self-managed and self-hosted source code on GitLab Enterprise is available with the Snyk Enterprise plan. For details, see[ the Snyk plans and pricing page](https://snyk.io/plans).
+{% endhint %}
+
 ## Prerequisites
 
 * GitLab versions 9.5 and above (API v4).
 * Publicly reachable GitLab instance.
 * To integrate from within a private network, [Snyk Broker](../../enterprise-setup/snyk-broker/) is required.
 
-{% hint style="info" %}
-**Feature availability**\
-Scanning of self-managed and self-hosted source code on GitLab Enterprise is available with the Snyk Enterprise plan. For details, see[ the Snyk plans and pricing page](https://snyk.io/plans).
-{% endhint %}
+***
 
 ## Snyk GitLab integration features
-
-***
 
 The Snyk GitLab integration allows you to:
 
