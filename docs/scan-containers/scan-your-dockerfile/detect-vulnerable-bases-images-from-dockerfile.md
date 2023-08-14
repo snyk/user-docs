@@ -16,4 +16,4 @@ You can also link from a Dockerfile to all container images built from it. This 
 
 <figure><img src="../../.gitbook/assets/mceclip3.png" alt="Dockerfile Project showing linked images"><figcaption><p>Dockerfile Project showing linked images</p></figcaption></figure>
 
-See [Base image detection](../using-snyk-container/base-image-detection.md) for more details about detecting vulnerable base images and fix recommendations.
+See [Base image detection](../use-snyk-container/base-image-detection.md) for more details about detecting vulnerable base images and fix recommendations.

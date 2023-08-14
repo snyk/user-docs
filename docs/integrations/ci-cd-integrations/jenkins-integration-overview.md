@@ -1,8 +1,12 @@
 # Jenkins Plugin
 
-Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](https://docs.snyk.io/snyk-cli/cli-reference), to test and monitor projects for vulnerabilities in your pipelines.
+Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](https://docs.snyk.io/snyk-cli/cli-reference), to test and monitor Projects for vulnerabilities in your pipelines.
 
-For complete information, [see the Snyk Jenkins Plugin repository](https://github.com/jenkinsci/snyk-security-scanner-plugin).
+{% hint style="warning" %}
+The Snyk Jenkins plugin supports Snyk Open Source. If you plan to include Snyk Code, Snyk Container, and Snyk IaC scans in your pipeline, use the generic [Snyk CLI](../../snyk-cli/).
+{% endhint %}
+
+For more information, [see the Snyk Jenkins Plugin repository](https://github.com/jenkinsci/snyk-security-scanner-plugin).
 
 Follow the steps in each section of this document to use the Snyk Jenkins plugin:
 
