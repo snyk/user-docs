@@ -13,8 +13,8 @@ For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](h
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up a dedicated service account in Bitbucket DC/Server with admin permissions.\
    Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.\
-   Make sure the newly-created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
-2. In Snyk, go to the **Integrations** page and click on the **Bitbucket Server** card.
+   Ensure the newly-created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
+2. In Snyk, navigate to the **Integrations** page and click on the **Bitbucket Server** card.
 3. Enter your Bitbucket DC/Server URL and the username and password for the service account you created. Alternatively, you can create a [personal access token](https://confluence.atlassian.com/bitbucketserver075/personal-access-tokens-1018784848.html) and use it instead of a password.
 4. **Save** your changes.\
    Snyk connects to your Bitbucket DC/Server instance.\
@@ -29,7 +29,7 @@ To select the repositories for Snyk to monitor:
 
 After you add them, Snyk scans the selected repositories for dependency files in the entire directory tree, (that is, `package.json`, `pom.xml`, and so on) and imports them to Snyk as projects.\
 \
-The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
+The imported Projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
 ![](../../.gitbook/assets/bitbucketserver\_add-repos\_18july2022.png)
 
@@ -43,9 +43,9 @@ After the integration is in place, you can use capabilities such as:
 
 ### **Project-level security reports**
 
-Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
+Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository with the required upgrades or patches.
 
-The example that follows showsa project-level security report.
+The example that follows shows a project-level security report.
 
 <figure><img src="../../.gitbook/assets/project_lvl_security_rpt-18july2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
@@ -97,7 +97,7 @@ To review and adjust the pull request tests settings:
 
 ## Required permissions scope for the Bitbucket DC/Server integration
 
-Snyk performs all the operations in Bitbucket DC/Server on behalf of the integrated service account.
+Snyk performs all the Bitbucket DC/Server operations on behalf of the integrated service account.
 
 For Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs, the integrated Bitbucket DC/Server service account needs **Admin** permissions on the imported repositories.
 
@@ -108,18 +108,18 @@ For Snyk to perform the required operations on monitored repositories, such as r
 | Opening fix and upgrade pull requests                   | Used to create fix PRs in monitored repositories.                                                                                                                                                                                                     | **Write** or above                         |
 | Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | **Admin**                                  |
 
-## **How to disable the Bitbucket Data Center/Server integration**
+## **How to disconnect the Bitbucket Data Center/Server integration**
 
 {% hint style="warning" %}
-When you disconnect Snyk from your repository projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
-If you choose to re-enable this integration later, you must re-enter your credentials and activate your projects.
+When you disconnect Snyk from your repository Projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
+To re-enable this integration later, you must re-enter your credentials and activate your Projects.
 {% endhint %}
 
 To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations**, follow these steps:
 
 1. In your list of integrations, select the Bitbucket integration you want to deactivate and click **Edit settings** to open a page with the current status of your integration.\
    \
-   The page includes sections that are specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
+   The page includes sections specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
 2. Scroll to the relevant section and click **Remove Bitbucket Server.**
 
 <div align="left">
@@ -130,6 +130,6 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
 
 ## Migration from Bitbucket Server to Bitbucket Data Center
 
-Usually migrating from Bitbucket Server to Bitbucket Data Center requires no further action. The Snyk integration should keep working as Bitbucket Server and Bitbucket Data Center APIs are identical.
+Usually, migrating from Bitbucket Server to Bitbucket Data Center requires no further action. The Snyk integration should keep working as Bitbucket Server and Bitbucket Data Center APIs are identical.
 
-Action is required only when the new Bitbucket Data Center instance URL differs from the Bitbucket Server instance URL. In this case, you must reconnect the integration from the Bitbucket Server-Bitbucket Data Center integration page in Snyk.io.
+Action is required only when the new Bitbucket Data Center instance URL differs from the Bitbucket Server instance URL. In this case, you must reconnect the integration from the Bitbucket Server-Bitbucket Data Center integration page in Snyk.io. To reconnect, follow the steps in [How to set up a Bitbucket DC/Server Integration](bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration).
