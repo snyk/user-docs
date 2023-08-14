@@ -12,7 +12,7 @@ There are two ways to group your Projects: **Project views** and **Project colle
 In the Snyk Web UI, you can:
 
 * Create and configure a dynamic Project view that is based on filters
-* Share a Project view with another member of your Organization
+* Share links to views of the Project listing page that you use with another member of your Organization
 * View reports on your Project views
 
 {% hint style="info" %}
@@ -21,6 +21,8 @@ Any Organization-level role can create and share Project views.
 **Note:** You can create and configure a Project view only when you apply the **Group by none** grouping in the Project listing page.
 
 In addition, more filter options are available when you apply **Group by none**.
+
+Views are visible to and can be edited by anyone in your Organization.
 {% endhint %}
 
 For details, see the [Project views](project-views.md) page.
