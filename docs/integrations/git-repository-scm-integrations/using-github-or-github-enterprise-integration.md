@@ -7,7 +7,7 @@ GitHub Enterprise integration is available to Snyk Enterprise plan customers. If
 
 Snyk has an integration for GitHub and a GitHub Enterprise integration for Snyk Enterprise plan customers. When you navigate to the Integrations page in your Snyk account, you see these integrations represented by two tiles, **GitHub Configured**, and **GitHub Enterprise**.
 
-The GitHub Enterprise integration is the Snyk integration for Snyk Enterprise plan customers. You can use this integration whether or not you have a GitHub Enterprise (GHE) license or subscription.&#x20;
+The GitHub Enterprise integration is the Snyk integration for Snyk Enterprise plan customers. You can use this integration whether or not you have a GitHub Enterprise (GHE) license or subscription.  If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration.
 
 If you are a Snyk Enterprise plan customer, Snyk recommends that you click the **GitHub Enterprise** tile and set up that integration. The GitHub Enterprise integration allows you to use a single GitHub service account personal access token (PAT) across your Snyk Organization rather than depending on a PAT for an individual user account.
 

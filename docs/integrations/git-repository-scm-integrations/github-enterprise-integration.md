@@ -6,7 +6,7 @@ GitHub Enterprise integration is available to Snyk Enterprise plan customers. If
 {% endhint %}
 
 {% hint style="info" %}
-If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. See [Using GItHub or GItHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
+If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GItHub or GItHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
 Snyk GitHub Enterprise integration lets you:
