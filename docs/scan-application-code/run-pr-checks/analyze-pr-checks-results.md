@@ -1,8 +1,8 @@
-# PR Checks results
+# Analyze PR Checks results
 
-## Results
+## PR Checks results
 
-After you [submit a pull request to fix vulnerabilities](../snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) the PR Checks detect issues with a severity level that meets or exceeds your configured threshold and provides a report. Examine the report status and result to decide on the pull request.
+After you [submit a pull request to fix vulnerabilities](../snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md), PR Checks detects issues with a severity level that meets or exceeds your configured threshold and provides a report. Examine the report status and result to decide whether to merge the pull request.
 
 You can change the default severity threshold either at the [Integration level](configure-pr-checks.md#configure-pr-checks-at-the-integration-level), or at the [Project level](configure-pr-checks.md#configure-pr-checks-at-the-project-level).
 
@@ -10,28 +10,28 @@ You can change the default severity threshold either at the [Integration level](
 
 Check the status of the PR Checks results in the integrated SCM to identify security issues that need to be addressed before merging a pull request.
 
-The following statuses can appear on your Snyk PR checks in the integrated SCM:
+The following status indicators can appear for your Snyk PR checks in the integrated SCM:
 
 <table><thead><tr><th width="212">Result status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Success/Passed</strong></td><td>No issues were discovered and the manifest file was not changed.</td></tr><tr><td><strong>Pending</strong></td><td>The PR Checks are still running.</td></tr><tr><td><strong>Failed/Issues found</strong></td><td>Security issues were identified in the pull request. In this scenario, you need to manually set the result status to <strong>Passed</strong>.</td></tr><tr><td><strong>Error</strong></td><td>Out-of-sync package.json and package.lock files, failure to find or to read the manifest file.</td></tr><tr><td><strong>Canceled</strong></td><td>The test limit has been reached.</td></tr></tbody></table>
 
 {% hint style="info" %}
-For false positive or false negative results, see [Troubleshooting](troubleshooting.md).
+For false positive or false negative results, see [TroubleshootinG PR Che](troubleshooting.md)cks.
 {% endhint %}
 
 ## **Example: fix dependency issues with PR Checks**
 
-Consider the following end-to-end scenario, including specific actions such as triggering a Fix PR and marking a **Failed** result as **Passed**. You can take these actions in relation to the info provided by the PR Checks information. The steps of this scenario are taken using a [GitHub integration](../../integrations/git-repository-scm-integrations/github-integration.md) and outlined as follows:
+Consider the following end-to-end scenario, including specific actions such as triggering a Fix PR and marking a **Failed** result as **Passed**. You can take these actions in relation to the information provided by the PR Checks. This example shows taking the steps for a  [GitHub integration](../../integrations/git-repository-scm-integrations/github-integration.md) as follows:
 
-1. [Trigger a fix for an individual dependency issue](pr-checks-results.md#trigger-a-fix-for-an-individual-dependency-issue) to find and address vulnerabilities.
-2. [Open a Fix PR](pr-checks-results.md#open-a-fix-pr) to open a pull request in GitHub.
-3. [Analyze PR Checks results and set status](pr-checks-results.md#analyze-pr-checks-result-and-set-status) to merge the pull request.
+1. [Trigger a fix for an individual dependency issue](analyze-pr-checks-results.md#trigger-a-fix-for-an-individual-dependency-issue) to find and address vulnerabilities.
+2. [Open a Fix PR](analyze-pr-checks-results.md#open-a-fix-pr) to open a pull request in GitHub.
+3. [Analyze PR Checks results and set status](analyze-pr-checks-results.md#analyze-pr-checks-result-and-set-status) to merge the pull request.
 
 ### Trigger a fix for an individual dependency issue
 
-1. Log in to Snyk Web UI.
-2. Go to **Projects**.
+1. Log in to the Snyk Web UI.
+2. Navigate to **Projects**.
 3. Expand the target containing your Project.
-4. Click a Project name to open it and select **package.json** to check for open source and licensing issues.
+4. Click a Project name to open it and select **package.json** to check for open-source and licensing issues.
 5. In the **Issues** tab, find an individual issue card and select **Fix this vulnerability**. For this example, an Uninitialized Memory Exposure is selected.
 
 <figure><img src="../../.gitbook/assets/fix_individual_vulnerability.png" alt="Fixing individual issue in dependencies project."><figcaption><p>Fixing an individual issue in the dependencies project</p></figcaption></figure>
@@ -50,17 +50,17 @@ Confirm your selected issue and click **Open a Fix PR** to open a pull request i
 2. Find the conversation card showing the PR Checks results. For this example, the result is set to **Failed** and is manually changed to **Passed**.&#x20;
 
 {% hint style="info" %}
-Issues that have previously been ignored via the Snyk Web UI in the associated open source and licensing or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../manage-issues/issue-management/ignore-issues.md) across feature branch PRs.
+Issues that have previously been ignored via the Snyk Web UI in the associated OPen Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../manage-issues/issue-management/ignore-issues.md) across feature branch PRs.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/PR_checks_in_GitHub_integration.png" alt="PR Checks card in the Conversations tab, GitHub."><figcaption><p>PR Checks information on GitHub</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/PR_checks_in_GitHub_integration.png" alt="PR Checks card in the Conversations tab, GitHub."><figcaption><p>PR Checks card in the Conversations tab, GitHub</p></figcaption></figure>
 
 3. Click **Details** to open the list of files that have been checked for this issue.
 4. (Optional) Click **View test page** to examine the issue details.\
    \
    You can get a complete picture of the vulnerability by clicking **Show more detail**, with technical security information and remediation options.\
    \
-   To get back to the main issue page, click **Project**.
+   To return to the main issue page, click **Project**.
 
 <figure><img src="../../.gitbook/assets/result_page_PR_Checks.png" alt="Overview of PR Checks result."><figcaption><p>Overview of PR Checks result</p></figcaption></figure>
 
@@ -80,6 +80,6 @@ The issue is marked as **Passed** and shows up as **Skipped** in the PR Checks c
 
 To re-run PR Checks results, close and re-open the pull request in your connected Git repository (for example, GitHub).
 
-### What's next?
+### More resources for PR Checks
 
 To learn from an end-to-end example in Bitbucket, see the following Snyk Training course: [Use Snyk to block builds in Bitbucket](https://training.snyk.io/courses/default-snyk-test-bb).

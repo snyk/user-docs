@@ -358,7 +358,7 @@
   * [PR Checks](scan-application-code/run-pr-checks/README.md)
     * [Introduction to automated security scans with PR Checks](scan-application-code/run-pr-checks/introduction-to-automated-security-scans-with-pr-checks.md)
     * [Configure PR Checks](scan-application-code/run-pr-checks/configure-pr-checks.md)
-    * [PR Checks results](scan-application-code/run-pr-checks/pr-checks-results.md)
+    * [Analyze PR Checks results](scan-application-code/run-pr-checks/analyze-pr-checks-results.md)
     * [Troubleshooting PR Checks](scan-application-code/run-pr-checks/troubleshooting.md)
 * [Scan containers](scan-containers/README.md)
   * [Getting started with Snyk Container](scan-containers/getting-started-with-snyk-container.md)
