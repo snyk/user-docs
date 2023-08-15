@@ -21,27 +21,21 @@ In the IdP, you must first pass a custom mapping called `roles` as a string arra
 
 To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to one of the following patterns:
 
-**Prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process.
-
-{% hint style="warning" %}
-The prefix must always be **snyk** and fully in lowercase.
-{% endhint %}
-
-1\. {prefix}-groupadmin
+1\. snyk-groupadmin
 
 * This role mapping assigns users with the Group Admin and Org Admin roles.
 * **groupadmin** configures all users with this role as a Group Admin and Org Admin for all Group(s) that the user is assigned to and all Orgs that fall under the Group(s).
 
-2\. {prefix}-groupviewer
+2\. snyk-groupviewer
 
 * This role mapping assigns users with the Group Viewer role and grants read-only access to the Group, reports and all organisations associated with the Group.
 
-3\. {prefix}-{groupID}
+3\. snyk-{groupID}
 
 * This role mapping assigns users with the Org Collaborator roles for all Organizations underneath the specified Group(s).
 * **groupID** is the ID string for a group in Snyk. This can be found in the snyk URL at the Group level: https://app.snyk.io/group/\<Group ID> or Group dropdown -> <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> -> General -> Group ID.
 
-4\. {prefix}-{orgslug}-{role}
+4\. snyk-{orgslug}-{role}
 
 * This role mapping assigns users with the specified role of Collaborator or Admin or Custom Role for the Snyk Organization specified in **orgslug**.
 * **orgslug** is the unique identifier of the Organization name in Snyk.
@@ -63,7 +57,7 @@ To assign users with Group Admin role, use the following format:
 ```
 {
     "roles": [
-        "{prefix}-groupadmin"
+        "snyk-groupadmin"
     ]
 }
 ```
@@ -73,7 +67,7 @@ To assign users with Group Viewer roles, use the following format:
 ```
 {
     "roles": [
-        "{prefix}-groupviewer"
+        "snyk-groupviewer"
     ]
 }
 ```
@@ -83,7 +77,7 @@ To assign users with Org Collaborator roles, use the following format:
 ```
 {
     "roles": [
-        "{prefix}-{groupID}"
+        "snyk-{groupID}"
     ]
 }
 ```
@@ -93,8 +87,8 @@ To assign users as Org Admin or Org Collaborator, use the following format for t
 ```
 {
     "roles": [
-        "{prefix}-{orgslug}-admin",
-        "{prefix}-{orgslug2}-collaborator"
+        "snyk-{orgslug}-admin",
+        "snyk-{orgslug2}-collaborator"
     ]
 }
 ```
@@ -104,9 +98,9 @@ To assign users a custom role, use the following format for the roles array. You
 ```
 {
     "roles": [
-        "{prefix}-{orgslug}-admin",
-        "{prefix}-{orgslug2}-collaborator",
-        "{prefix}-{orgslug3}-developer_readonly"
+        "snyk-{orgslug}-admin",
+        "snyk-{orgslug2}-collaborator",
+        "snyk-{orgslug3}-developer_readonly"
     ]
 }
 ```
@@ -116,7 +110,7 @@ The system also supports comma-separated lists of roles instead of an array.
 
 ```
 {
-  "roles": "{prefix}-{orgslug}-admin,{prefix}-{orgslug2}-collaborator"
+  "roles": "snyk-{orgslug}-admin,snyk-{orgslug2}-collaborator"
 }
 ```
 {% endhint %}
@@ -133,7 +127,7 @@ The following example shows how to assign roles to Snyk users under the mapping 
   * Security needs access to the ABC group as Group Admin and all three organizations as Org Admin.
   * The Product team needs access to the ABC group and all three organizations as Org Collaborator,
 
-For the Business Development Team, Snyk uses the {prefix}-{orgslug}-{role} mapping:
+For the Business Development Team, Snyk uses the snyk-{orgslug}-{role} mapping:
 
 ```
 {
@@ -143,7 +137,7 @@ For the Business Development Team, Snyk uses the {prefix}-{orgslug}-{role} mappi
 }
 ```
 
-For the Engineering Team, Snyk uses the {prefix}-{orgslug}-{role} mapping:
+For the Engineering Team, Snyk uses the snyk-{orgslug}-{role} mapping:
 
 ```
 {
@@ -155,7 +149,7 @@ For the Engineering Team, Snyk uses the {prefix}-{orgslug}-{role} mapping:
 }
 ```
 
-For the Security Team, Snyk uses the {prefix}-groupadmin mapping:
+For the Security Team, Snyk uses the snyk-groupadmin mapping:
 
 ```
 {
@@ -165,7 +159,7 @@ For the Security Team, Snyk uses the {prefix}-groupadmin mapping:
 }
 ```
 
-For the Product Team, Snyk uses the {prefix}-{groupID} mapping, where the value of groupID must be inserted;
+For the Product Team, Snyk uses the snyk-{groupID} mapping, where the value of groupID must be inserted;
 
 ```
 {

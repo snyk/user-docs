@@ -60,7 +60,7 @@ When your Snyk Groups and users have been set up, follow these steps:
 ### Assign the second attribute to your users
 
 1. On the main page of Okta select **Directory -> People.**
-2. Select a **User,** navigate to the **Applications** tab\*\*,\*\* and click on the **pencil** next to the application.
+2. Select a **User,** navigate to the **Applications** tab, and click on the **pencil** next to the application.
 3. Select the right user type in group (user role): **Collaborator**, **Admin**, or **Group Admin**.
 
 ### Construct a value expression that concatenates these two attributes into string values in a roles array to be sent to Snyk
@@ -75,7 +75,7 @@ When your Snyk Groups and users have been set up, follow these steps:
 The following explains the roles expression:
 
 * If the role is groupadmin, the expression ignores everything else and passes `snyk-groupadmin`.
-* If the role \*\* **\_**is\*\* **not**\_ groupadmin, then for each Snyk Org name listed across all groups the expression automatically concatenates the prefix “`snyk-`” with the Snyk Org name _**and**_ appends `user_role` at the end of each org name. An example result follows.
+* If the role is not groupadmin, then for each Snyk Org name listed across all groups the expression automatically concatenates the prefix “`snyk-`” with the Snyk Org name and appends `user_role` at the end of each org name. An example result follows.
 
 Example roles are:`[ "snyk-groupadmin", "snyk-org1-admin", "snyk-org2-admin" ]`
 
@@ -90,7 +90,7 @@ In this configuration:
 The steps follow.
 
 {% hint style="info" %}
-Note: The Snyk SSO application **must** be assigned at the group level, not the user level.
+Note: The Snyk SSO application must be assigned at the group level, not the user level.
 
 When you look at a user's Application assignment it should look similar to the image that follows, with set by **Snyk-Roles group** following **Add Another** grayed out.
 {% endhint %}
