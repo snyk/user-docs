@@ -1,7 +1,12 @@
-# Customize PR templates (Closed Beta)
+# Customize PR templates (closed beta)
+
+{% hint style="info" %}
+**Feature availability**\
+This feature is currently in closed beta. The functionality is likely to evolve based on feedback, and there will be breaking changes. Contact your account manager to get access to this feature.&#x20;
+{% endhint %}
 
 {% hint style="warning" %}
-This feature is currently in closed beta. The functionality is likely to evolve based on feedback, and there will be breaking changes. Contact your account manager to get access to this feature.
+After your account manager has turned on the feature flag, you will be able to activate this feature in the snyk preview settings.&#x20;
 {% endhint %}
 
 ## Understand Customized PRs
@@ -24,7 +29,7 @@ Here are the steps that you need to follow to enable the Customize Snyk PR featu
 4. If you want to use **multiple repositories for a custom template**, **add the customized YAML template file to each of these repositories.**
 
 {% hint style="warning" %}
-Snyk is initially looking for feedback on the variables and templating system. Once the approach is validated, Snyk will look into building more robust authoring workflows using the API and UI interfaces.
+Snyk is initially looking for feedback on the variables and templating system. After the approach is validated, Snyk will look into building more robust authoring workflows using the API and UI interfaces.
 {% endhint %}
 
 ## Create the PR template
