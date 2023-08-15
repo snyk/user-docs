@@ -26,7 +26,7 @@ See [Set up an integration](../../getting-started/quickstart/set-up-an-integrati
 
 ## Snyk GitHub integration settings
 
-To see all settings for your GitHub integration, go to the Snyk GitHub Integration settings page, then go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings**, and then select **GitHub** in the **INTEGRATIONS** section:
+To see all settings for your GitHub integration, go to the Snyk GitHub Integration settings page, then go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings**, and select **GitHub** in the **Integrations** section:
 
 <figure><img src="../../.gitbook/assets/Github-integrations-intro.png" alt="GitHub integration settings"><figcaption><p>GitHub integration settings</p></figcaption></figure>
 
@@ -46,7 +46,7 @@ You can then scroll down to the section required, and set the options accordingl
   * [Detect Dockerfiles](../../scan-containers/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
   * [Update Dockerfile base images](../../scan-containers/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
 
-## Snyk GitHub integration settings
+## General Snyk GitHub integration settings
 
 Select **General** to view general settings:
 
