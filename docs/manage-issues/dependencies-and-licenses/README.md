@@ -18,4 +18,4 @@ For both dependencies and licenses, you can filter by Project or other filter cr
 </div>
 
 * Select the **Projects** drop-down to select specific Projects.
-* Select the **Filters** drop-down to filter by [Severity level](../issue-management/severity-levels.md) or by Project type.
+* Select the **Filters** drop-down to filter by [Severity level](../prioritizing-and-managing-issues/severity-levels.md) or by Project type.

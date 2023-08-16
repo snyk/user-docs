@@ -24,7 +24,7 @@ Snyk provides features to fix issues identified during scanning. See [Fix your v
 
 ### View issue details
 
-Click on an issue to view details, including its [priority score](../issue-management/priority-score.md).
+Click on an issue to view details, including its [priority score](../prioritizing-and-managing-issues/priority-score.md).
 
 <div align="left">
 

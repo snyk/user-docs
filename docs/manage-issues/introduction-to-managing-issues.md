@@ -4,7 +4,7 @@ Snyk's priority scoring, reporting, and policy features help you prioritize and 
 
 ## Use priority scoring
 
-The [Snyk Priority Score](issue-management/priority-score.md) prioritizes issues based on a number of industry-standard criteria:
+The [Snyk Priority Score](prioritizing-and-managing-issues/priority-score.md) prioritizes issues based on a number of industry-standard criteria:
 
 <div align="left">
 
@@ -30,7 +30,7 @@ These attributes can then be linked to Snyk [policies](policies/), to assign a p
 
 ### Use ignores
 
-[Snyk ignore functions](issue-management/ignore-issues.md) allow you to declutter results that are not important:
+[Snyk ignore functions](prioritizing-and-managing-issues/ignore-issues.md) allow you to declutter results that are not important:
 
 <div align="left">
 
@@ -40,7 +40,7 @@ These attributes can then be linked to Snyk [policies](policies/), to assign a p
 
 ### Assess reachability <a href="#h.ts3kx23p4m7p" id="h.ts3kx23p4m7p"></a>
 
-Snyk’s [reachable vulnerability](issue-management/reachable-vulnerabilities.md) scanning allows you to gauge risk by identifying whether a vulnerable function is being called by your application.
+Snyk’s [reachable vulnerability](prioritizing-and-managing-issues/reachable-vulnerabilities.md) scanning allows you to gauge risk by identifying whether a vulnerable function is being called by your application.
 
 ## Set security policies
 

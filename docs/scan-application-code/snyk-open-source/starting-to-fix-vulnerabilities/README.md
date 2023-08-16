@@ -16,5 +16,5 @@ To apply these fixes, you can use different methods, ranging from manually apply
 See [Fix your vulnerabilities](fix-your-vulnerabilities.md) for more details.
 
 {% hint style="info" %}
-See [Prioritizing and managing issues](../../../manage-issues/issue-management/) to understand how to decide on which issues to fix.
+See [Prioritizing and managing issues](../../../manage-issues/prioritizing-and-managing-issues/) to understand how to decide on which issues to fix.
 {% endhint %}
