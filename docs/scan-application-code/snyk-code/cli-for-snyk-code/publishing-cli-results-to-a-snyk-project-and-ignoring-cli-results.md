@@ -2,7 +2,7 @@
 
 Using Snyk Code, you can publish results to a Snyk Project with or without using an integration. The sections of this page explain how:
 
-* [Publishi CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project) created using the CLI
+* [Publish CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project) created using the CLI
   * Run Snyk Code in the CI/CD and append results to Snyk Projects for reports.&#x20;
   * Issues that are ignored in the WebUI Project will apply to the CLI scans.&#x20;
   * This does not require an [SCM Integration](../../../integrations/git-repository-scm-integrations/).&#x20;
@@ -41,7 +41,7 @@ snyk code test --report --project-name="<PROJECT_NAME>"
 
 * PROJECT\_NAME must be in double quotation marks. Single quotes or missing quotes will result in an error.
 * The Project name must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
-* There is a temporary limit of 3MB for the resulting payload, meaning that for large Projects with many issues, the process will not complete.
+* There is a temporary limit of 3MB for the resulting payload. If the SARIF output is larger than 3MB, the process will not complete.
 
 Running the `snyk code test` command with the `--report` option as shown returns the results to the terminal window, along with a URL to the Snyk Code Project where the results have been published. Refer to the following screenshot.
 
