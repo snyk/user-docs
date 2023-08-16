@@ -29,7 +29,7 @@ To start using Integrated IaC, you need the following:
 If you want to add a new Integrated IaC Project from an SCM repository that you have already imported, you must re-import the repository. This will not affect any of your existing Projects
 {% endhint %}
 
-Import [Projects](../../manage-issues/introduction-to-snyk-projects/) to test with Snyk by choosing repositories for Snyk to test and monitor.
+Import [Projects](../../manage-issues/snyk-projects/) to test with Snyk by choosing repositories for Snyk to test and monitor.
 
 1. Select **Projects** from the Snyk Web UI.
 2. In the **Add projects** drop-down menu, select the SCM to add the Project from, for example, GitHub.
@@ -39,7 +39,7 @@ Import [Projects](../../manage-issues/introduction-to-snyk-projects/) to test wi
 
 ## Stage 2: View Integrated IaC Projects
 
-On the [Projects](../../manage-issues/introduction-to-snyk-projects/) page, navigate to the appropriate target (Git repository) that contains IaC files for Snyk to test. You will see a single **Infrastructure as Code issues** Project. Snyk Integrated IaC generates only one Project per repository, unlike the current [IaC](../snyk-infrastructure-as-code/), which generates one Project per IaC file.
+On the [Projects](../../manage-issues/snyk-projects/) page, navigate to the appropriate target (Git repository) that contains IaC files for Snyk to test. You will see a single **Infrastructure as Code issues** Project. Snyk Integrated IaC generates only one Project per repository, unlike the current [IaC](../snyk-infrastructure-as-code/), which generates one Project per IaC file.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 3.57.30 PM.png" alt="Integrated IaC project for your SCM Git repository"><figcaption><p>Integrated IaC project for your SCM Git repository</p></figcaption></figure>
 

@@ -99,7 +99,7 @@ See [Security policies](../manage-issues/policies/security-policies/) for more d
 
 Snyk Projects are the components that Snyk tests, along with the related configuration and metadata. Each target you want to scan: repos, container images, Dockerfiles, configuration files, source code, may include more than one Project.
 
-See the [introduction to Snyk Projects](../manage-issues/introduction-to-snyk-projects/) for more details. Before you add Projects to Snyk, you wlll define a Project import strategy.
+See the [introduction to Snyk Projects](../manage-issues/snyk-projects/) for more details. Before you add Projects to Snyk, you wlll define a Project import strategy.
 
 There are different ways to add Projects in Snyk, including using an integration, the Snyk CLI, or the Snyk API.
 

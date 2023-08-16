@@ -7,7 +7,7 @@ You can use Snyk IaC with the [Snyk Web UI](../../getting-started/quickstart/cre
 
 <figure><img src="../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
-The information available shows [Snyk Project ](../../manage-issues/introduction-to-snyk-projects/)information including:
+The information available shows [Snyk Project ](../../manage-issues/snyk-projects/)information including:
 
 * Snapshot information showing when the Project was last tested
 * **Overview**, **History,** and **Settings** information.\

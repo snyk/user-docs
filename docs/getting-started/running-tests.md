@@ -43,7 +43,7 @@ See the [API documentation](https://snyk.docs.apiary.io/#reference/test) for det
 After you [import a Project](quickstart/import-a-project.md), Snyk automatically runs periodic scans on that Project, to see if your code is affected by newly disclosed vulnerabilities.
 
 {% hint style="info" %}
-The default test frequency and available test frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information, see [Usage page details](../snyk-admin/manage-settings/usage-settings.md) (Set test frequency). You can also set test frequency in the Project **Settings** (see [View project settings](../manage-issues/introduction-to-snyk-projects/view-project-settings.md)) or use theSnyk REST API: [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
+The default test frequency and available test frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information, see [Usage page details](../snyk-admin/manage-settings/usage-settings.md) (Set test frequency). You can also set test frequency in the Project **Settings** (see [View project settings](../manage-issues/snyk-projects/view-project-settings.md)) or use theSnyk REST API: [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
 {% endhint %}
 
 ### Run tests automatically with snyk monitor

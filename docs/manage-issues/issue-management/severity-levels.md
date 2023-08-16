@@ -37,7 +37,7 @@ For example, in the **Pending tasks** section of the Dashboard:
 
 <img src="../../.gitbook/assets/image (158) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
-Associated with your [Snyk Projects](../introduction-to-snyk-projects/):
+Associated with your [Snyk Projects](../snyk-projects/):
 
 <figure><img src="../../.gitbook/assets/image (43) (2).png" alt="Severity levels in Projects"><figcaption><p>Severity levels in Projects</p></figcaption></figure>
 

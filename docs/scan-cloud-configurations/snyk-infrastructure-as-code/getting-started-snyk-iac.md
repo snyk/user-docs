@@ -26,7 +26,7 @@ ARM configuration files can only be scanned via the Snyk CLI. See [Scan ARM conf
 
 ## Stage 1: Import Projects
 
-Import [Projects](../../manage-issues/introduction-to-snyk-projects/) to test with Snyk by choosing repositories for Snyk to test and monitor.
+Import [Projects](../../manage-issues/snyk-projects/) to test with Snyk by choosing repositories for Snyk to test and monitor.
 
 1. Select **Projects** from the Snyk Web UI.
 2. In the **Add projects** drop-down menu, select the tool to add the Project from, for example, GitHub.
@@ -44,8 +44,8 @@ For Snyk Infrastructure as Code Projects, the recurring test interval is one wee
 
 View results for configuration files in imported Projects by selecting **Projects** from the menu on the left.
 
-* If **Group by targets** is selected: A list of [Targets](../../manage-issues/introduction-to-snyk-projects/#target) is displayed. Select a Target to expand its list of Projects.
-* If **Group by none** is selected: A list of all [Projects](../../manage-issues/introduction-to-snyk-projects/#project) is displayed.
+* If **Group by targets** is selected: A list of [Targets](../../manage-issues/snyk-projects/#target) is displayed. Select a Target to expand its list of Projects.
+* If **Group by none** is selected: A list of all [Projects](../../manage-issues/snyk-projects/#project) is displayed.
 
 Each Project entry shows information for a scanned configuration file, including the number of critical, high, medium, and low-severity issues found, for example:
 

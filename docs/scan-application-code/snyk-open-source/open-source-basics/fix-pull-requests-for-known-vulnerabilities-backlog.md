@@ -58,7 +58,7 @@ Enabling Automatic fix PRs can result in larger version jumps.
 
 You can configure Automatic fix PR to work only for specific Projects rather than inheriting the settings from the global integration. In this example, GitHub integration is used.
 
-1. Go to **Projects**, then expand the [target](../../../manage-issues/introduction-to-snyk-projects/#target) containing your open source Project.
+1. Go to **Projects**, then expand the [target](../../../manage-issues/snyk-projects/#target) containing your open source Project.
 2. Go to **Settings >** **GitHub integration.**
 3. Under the **Automatic fix pull requests** section:
    * Select **Customize for only this project**

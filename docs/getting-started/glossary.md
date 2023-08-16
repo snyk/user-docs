@@ -96,7 +96,7 @@ A text file format used to build container images using Docker. The Dockerfile c
 
 ### Environment
 
-Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../manage-issues/introduction-to-snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
+Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../manage-issues/snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
 
 ### Exploit
 
@@ -184,7 +184,7 @@ An Organization in Snyk is a way to collect and organize your Projects. Members 
 
 ### Origin
 
-The identifier for the ecosystem that a Target exists in. Snyk can scan projects from multiple integrations, including CLI, API, GitHub, Kubernetes and others. See [Snyk Projects](../manage-issues/introduction-to-snyk-projects/).
+The identifier for the ecosystem that a Target exists in. Snyk can scan projects from multiple integrations, including CLI, API, GitHub, Kubernetes and others. See [Snyk Projects](../manage-issues/snyk-projects/).
 
 ## P
 
@@ -222,7 +222,7 @@ Snyk scores issues (vulnerabilities and licenses), to help prioritize treatment 
 
 ### Project
 
-An external item that Snyk scans ([Target](glossary.md#target)), with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Snyk Projects](../manage-issues/introduction-to-snyk-projects/).
+An external item that Snyk scans ([Target](glossary.md#target)), with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Snyk Projects](../manage-issues/snyk-projects/).
 
 ## R
 
