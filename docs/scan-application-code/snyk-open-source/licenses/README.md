@@ -13,7 +13,7 @@ Every time you test your code in the [Snyk Web UI](../../../getting-started/expl
 
 To enable customers to get started with license compliance faster, we created an out-of-the-box default policy. The default policy is a baseline that tries to answer the requirements of multiple types of applications (SaaS, distributed, etc.), and may be used as a starting point to calibrate additional license policies. The default policy does not endorse or criticize any license.
 
-By [default](../../../manage-issues/policies/introduction-to-policies.md) we determine the severity of licenses in the following way:
+By [default](../../../manage-issues/policies/shared-policies-overview.md) we determine the severity of licenses in the following way:
 
 * High severity - licenses that definitely present issues for commercial software.
 * Medium severity - licenses that have clauses that may be of concern and should be reviewed.

@@ -10,7 +10,7 @@ From the **Group** level, you can filter to view data for multiple Organizations
 
 You can also use the **Organization Filters** to save and store pre-filtered reports for selected groups of organizations. For more information about this, see our [Snyk groups overview](broken-reference).
 
-Additionally, at the Organization level see [General actions](general-actions.md) to filter for:
+Additionally, at the Organization level see [General actions](legacy-reports-general-actions.md) to filter for:
 
 * project names
 * project types
@@ -19,10 +19,10 @@ Additionally, at the Organization level see [General actions](general-actions.md
 
 The legacy **Reports tabs** are as follows:
 
-* [Summary](summary-tab.md)—the main dashboard displays a birds-eye view of all of your issues (vulnerabilities and licenses), across all of your projects.
-* [Issues](issues-tab.md)—all issues (vulnerabilities and licenses) across all of your projects, including their severity, any available fixes, and more.
+* [Summary](legacy-reports-summary-tab.md)—the main dashboard displays a birds-eye view of all of your issues (vulnerabilities and licenses), across all of your projects.
+* [Issues](legacy-reports-issues-tab.md)—all issues (vulnerabilities and licenses) across all of your projects, including their severity, any available fixes, and more.
 * [Dependencies](dependencies-tab.md)—the package dependencies in your project and their health status.
-* [Licenses](licenses-tab.md)—the licenses in all of your projects and their status.
+* [Licenses](legacy-reports-licenses-tab.md)—the licenses in all of your projects and their status.
 
 Report data can also be generated and retrieved with our APIs. For more information about this, see our [API documentation](https://snyk.docs.apiary.io/#introduction).
 

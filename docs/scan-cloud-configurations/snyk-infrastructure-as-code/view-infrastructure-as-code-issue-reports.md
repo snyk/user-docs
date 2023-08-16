@@ -17,7 +17,7 @@ To view IaC issues only, select **Configuration** from the **Summary filters** d
 
 ![](../../.gitbook/assets/screenshot\_2021-02-17\_at\_14.22.50.png)
 
-For more details on the summary tab, see the [Reports Summary tab](../../manage-issues/reporting/legacy-reports/summary-tab.md) documentation.
+For more details on the summary tab, see the [Reports Summary tab](../../manage-issues/reporting/legacy-reports/legacy-reports-summary-tab.md) documentation.
 
 ## Issues page
 
@@ -33,7 +33,7 @@ You can also view the issues ungrouped; this shows more information about the Pr
 
 ![](<../../.gitbook/assets/image2-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>)
 
-For more details on the issues tab, see [Issues tab](../../manage-issues/reporting/legacy-reports/issues-tab.md) documentation.
+For more details on the issues tab, see [Issues tab](../../manage-issues/reporting/legacy-reports/legacy-reports-issues-tab.md) documentation.
 
 ### Export data
 

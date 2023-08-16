@@ -7,7 +7,7 @@
    **Note**: Policies in the same category cannot have the same name. Policies **cannot** be saved without a policy name applied.
 3. Select whether you’d like to apply your policy to organizations or to Project attributes.
 4. Select the desired [Organizations](apply-a-policy-to-organizations.md) or [attributes](apply-a-policy-to-projects.md)
-5. Add rules to the policy. [Click here for information on adding license rules](license-policies/create-a-license-policy-and-rules.md) or [click here for information on adding security rules](security-policies/create-a-security-policy-and-rules.md)
+5. Add rules to the policy. [Click here for information on adding license rules](license-policies/create-a-license-policy-and-rules.md) or [click here for information on adding security rules](security-policies/how-to-create-a-security-policy-and-set-rules.md)
 6. Click **Submit** to create and save that policy.
 
 <div align="left">
