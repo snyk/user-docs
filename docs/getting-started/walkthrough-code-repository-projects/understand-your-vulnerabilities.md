@@ -25,7 +25,7 @@ See [View project information](../../manage-issues/snyk-projects/view-project-in
 
 Now, look at the vulnerability information for each Snyk Project, provided in Issue Cards:
 
-<figure><img src="../../.gitbook/assets/image (101) (2).png" alt="Vulnerability details Issue Card"><figcaption><p>Vulnerability details Issue Card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (101).png" alt="Vulnerability details Issue Card"><figcaption><p>Vulnerability details Issue Card</p></figcaption></figure>
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 
@@ -56,7 +56,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 Click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-<figure><img src="../../.gitbook/assets/image (119) (1).png" alt="Access Snyk Learn from a vulnerability card"><figcaption><p>Access Snyk Learn from a vulnerability card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (119).png" alt="Access Snyk Learn from a vulnerability card"><figcaption><p>Access Snyk Learn from a vulnerability card</p></figcaption></figure>
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 
@@ -66,7 +66,7 @@ Some cards may not have Snyk Learn lessons available - if so, no links are prese
 
 ### Understand the Snyk Priority Score
 
-The [Snyk Priority Score](../../manage-issues/issue-management/priority-score.md), ranging from 0 - 1,000, is our evaluation of the seriousness of the vulnerability. The Snyk Priority Score includes [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System) information, plus other factors such as attack complexity and known exploits. For example, this **Hibernate** vulnerability has no known exploit allowing attackers to take advantage of that vulnerability.
+The [Snyk Priority Score](../../manage-issues/prioritizing-issues/priority-score.md), ranging from 0 - 1,000, is our evaluation of the seriousness of the vulnerability. The Snyk Priority Score includes [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System) information, plus other factors such as attack complexity and known exploits. For example, this **Hibernate** vulnerability has no known exploit allowing attackers to take advantage of that vulnerability.
 
 Other factors also affect the score. For example, SQL injections are easy to run (you just need a web browser and submit a form), so increasing the score, but it takes more work to understand and exploit the results for that attack, so decreasing the score.
 

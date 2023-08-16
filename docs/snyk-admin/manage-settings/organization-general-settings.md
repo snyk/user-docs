@@ -46,7 +46,7 @@ Use these functions to define Organization-wide ignore settings.
 
 </div>
 
-See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/issue-management/ignore-issues.md#configure-ignore-settings) documentation for more details.
+See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/prioritizing-issues/ignore-issues.md#configure-ignore-settings) documentation for more details.
 
 ### Requesting Access
 
@@ -54,7 +54,7 @@ If enabled, users without access to this Snyk Organization can request access.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
 
 </div>
 

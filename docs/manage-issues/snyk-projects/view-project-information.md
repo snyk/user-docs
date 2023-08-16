@@ -34,4 +34,4 @@ The summary information shows:
 * Project import information:
   * **Imported by**: The user who imported the project.
   * **Project owner**: Click **Add a project owner** to add an owner for this project, from a list of everyone who has access to that project (everyone who is a member of that Organization). This information can also be viewed in the [Projects endpoint](https://snyk.docs.apiary.io/#reference/projects), in the API.
-* Predefined [Project attributes](project-attributes.md) and any additional [Project tag](project-tags.md) metadata.
+* Predefined [Project attributes](../introduction-to-snyk-projects/project-attributes.md) and any additional [Project tag](project-tags.md) metadata.

@@ -60,7 +60,7 @@ Snyk scans different parts of this lifecycle, with different icons and entries s
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="../../.gitbook/assets/image (297) (1).png" alt="" data-size="line">                   | Your own code analysis results, scanned by[ Snyk Code](../../scan-application-code/snyk-code/).                                                                                                                              |
 | <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line"> | Your open source libraries, scanned by [Snyk Open Source](../../scan-application-code/snyk-open-source/), displaying each detected manifest, such as **pom.xml**, **package.json**, and other manifests for these libraries. |
-| <img src="../../.gitbook/assets/image (307) (1).png" alt="" data-size="line">                   | Container results, scanned by [Snyk Container](../../scan-containers/), for items built into a container, such as a Docker file.                                                                                             |
+| <img src="../../.gitbook/assets/image (307).png" alt="" data-size="line">                       | Container results, scanned by [Snyk Container](../../scan-containers/), for items built into a container, such as a Docker file.                                                                                             |
 | <img src="../../.gitbook/assets/image (206) (1).png" alt="" data-size="original">               | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../scan-cloud-configurations/snyk-infrastructure-as-code/).                                                    |
 
 {% hint style="info" %}
@@ -71,7 +71,7 @@ Other files and types can be displayed; see [View project information](https://d
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (144) (1).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (144).png>)) to define how that Project is scanned:
 
 <figure><img src="../../.gitbook/assets/image (208) (1) (1) (1) (1) (1) (1) (1).png" alt="Click cog icon to edit settings"><figcaption><p>Click cog icon to edit Project settings</p></figcaption></figure>
 

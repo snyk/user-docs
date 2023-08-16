@@ -4,7 +4,7 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 
 ## Scanning projects
 
-* [The **.snyk** file](the-.snyk-file.md)
+* [The **.snyk** file](../../manage-issues/policies/the-.snyk-file.md)
 * [A **.snyk** policy file in a different directory from the manifest file](using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md)
 * [Failing **builds** in Snyk CLI](advanced-failing-of-builds-in-snyk-cli.md)
 * [**Ignore** vulnerabilties using Snyk CLI](ignore-vulnerabilities-using-snyk-cli.md)

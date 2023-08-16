@@ -1,11 +1,19 @@
 # Policies
 
-Snyk Policies define how Snyk behaves when encountering types of issues.&#x20;
-
 {% hint style="info" %}
 **Feature availability**\
 This feature is available to Enterprise customers. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
+
+Snyk policies define how Snyk behaves when encountering types of issues. You can define actions for specific types of issues encountered using customizable [Snyk policies](./).
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Snyk Polidy manager"><figcaption><p>Snyk Polidy manager</p></figcaption></figure>
+
+</div>
+
+This documentation helps you to learn about and use Snyk policies.
 
 ### Understand policies
 
@@ -23,7 +31,4 @@ This feature is available to Enterprise customers. See [pricing plans](https://s
 
 * [Apply policies to Projects](apply-a-policy-to-projects.md)
 * [Apply policies to Organizations](apply-a-policy-to-organizations.md)
-
-{% hint style="info" %}
-Also see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
-{% endhint %}
+* [The .snyk file](the-.snyk-file.md)

@@ -56,7 +56,7 @@ Snyk shows license issues in both your direct and transitive dependencies, in th
 
 ![Dependencies overview within a dependency project](<../../../.gitbook/assets/Screenshot 2023-05-15 at 13.14.32.png>)
 
-Click the tree icon (![](<../../../.gitbook/assets/image (1) (4) (1).png>)) to view a full dependency tree. This shows the dependency that introduced the license issue:
+Click the tree icon (![](<../../../.gitbook/assets/image (1) (4).png>)) to view a full dependency tree. This shows the dependency that introduced the license issue:
 
 <div align="left">
 
@@ -76,4 +76,4 @@ You can now take action to resolve the license issues identified during the scan
 
 The actions you take depend on the license conditions and on your policies. For example, if a license violation is surfaced, this issue can be mitigated by either approaching your legal team or by replacing the dependency which added the violation.
 
-Alternatively, you may want to ignore the issue. See [ignore issues](../../../manage-issues/issue-management/ignore-issues.md) for details.
+Alternatively, you may want to ignore the issue. See [ignore issues](../../../manage-issues/prioritizing-issues/ignore-issues.md) for details.
