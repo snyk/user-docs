@@ -23,7 +23,7 @@ Card details include [Header section](issue-card-information.md#header-section) 
 
 <figure><img src="../../.gitbook/assets/issue-card-header_8dec2022.png" alt="npmconf issue card header"><figcaption><p>npmconf issue card header</p></figcaption></figure>
 
-* [Severity level](../issue-management/severity-levels.md): for example, **H** (High) or **C** (Critical)
+* [Severity level](../prioritizing-issues/severity-levels.md): for example, **H** (High) or **C** (Critical)
 * **Issue name**: for example, **Uninitialized Memory Exposure**, with a link that can be copied
 * **Score**: [Priority score](../prioritizing-issues/priority-score.md): 0 - 1,000
 * **Type**: VULNERABILITY or LICENSE ISSUE
@@ -37,7 +37,7 @@ Card details include [Header section](issue-card-information.md#header-section) 
 * **Fixed in:** The file the vulnerability is fixed in
 * [Exploit maturity](../prioritizing-issues/view-exploits.md): for example, **Mature** or **Proof Of Concept**
 * Reachability: for example, **Reachable**. For information and an example, see [Reachable vulnerabilities](../prioritizing-issues/reachable-vulnerabilities.md)
-* **Social Trends**: Snyk shows a [Trending](../issue-management/prioritize-by-social-trends.md) banner for issues that are being actively discussed on Twitter.
+* **Social Trends**: Snyk shows a [Trending](../prioritizing-issues/prioritize-by-social-trends.md) banner for issues that are being actively discussed on Twitter.
 
 ### Detailed information in the issue card
 

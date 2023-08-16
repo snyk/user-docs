@@ -31,4 +31,4 @@ This documentation helps you to learn about and use Snyk policies.
 
 * [Apply policies to Projects](apply-a-policy-to-projects.md)
 * [Apply policies to Organizations](apply-a-policy-to-organizations.md)
-* [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md)
+* [The .snyk file](the-.snyk-file.md)

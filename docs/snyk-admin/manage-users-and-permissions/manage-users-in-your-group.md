@@ -27,7 +27,7 @@ In the Group members page, you can find all the members associated with your Gro
 
 There are two standard roles available under group level - **Group Member** and **Group Admin**. Group Admins have all permissions at Snyk; see [Managing permissions](managing-permissions.md). However, being a Group Member does not directly grant the user any rights. They need to be added as org members or promoted as Group Admins.
 
-<figure><img src="../../.gitbook/assets/image (250).png" alt="View Group members"><figcaption><p>View Group members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (250) (1).png" alt="View Group members"><figcaption><p>View Group members</p></figcaption></figure>
 
 ### View individual members
 

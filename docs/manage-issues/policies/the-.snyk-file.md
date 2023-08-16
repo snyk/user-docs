@@ -1,6 +1,6 @@
 # The .snyk file
 
-The `.snyk` file is a [policy](../../manage-issues/policies/) file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins.
+The `.snyk` file is a [policy](./) file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins.
 
 The file can be generated in a number of ways and can be used in a number of different scenarios. The `.snyk` file is generally located at the root of your project.
 

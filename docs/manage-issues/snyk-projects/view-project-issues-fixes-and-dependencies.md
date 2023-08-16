@@ -16,7 +16,7 @@ The Project details page displays Issue cards on the **Issues** tab. The informa
 
 Use the filters in the panel to the left to narrow the search for issues. Select the checkboxes to filter issues by **Issue type**, **Severity**, **Exploit Maturity**, **Fixability**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed; the default is 0 to 1000.
 
-Issue details are shown on Issue cards in the main area, sorted by priority score. See [Issue card information](../introduction-to-snyk-projects/issue-card-information.md) for more details.
+Issue details are shown on Issue cards in the main area, sorted by priority score. See [Issue card information](issue-card-information.md) for more details.
 
 #### Fix issues
 

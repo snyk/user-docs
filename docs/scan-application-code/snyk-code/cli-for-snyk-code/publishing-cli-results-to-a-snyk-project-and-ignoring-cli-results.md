@@ -61,7 +61,7 @@ The following command will create or upload an existing Project named \<PROJECT-
 snyk code test --report --project-name="<PROJECT-NAME>" --target-name="<TARGET-NAME>" --target-reference="$(git branch --show-current)"
 ```
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="Code analysis Projects grouped by branch"><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (6).png" alt="Code analysis Projects grouped by branch"><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
 
 ## **Test and publish CLI results to an existing Snyk Code SCM Project**
 
