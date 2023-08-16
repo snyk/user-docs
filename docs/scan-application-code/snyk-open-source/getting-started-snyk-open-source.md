@@ -31,7 +31,7 @@ Click an entry to open the issues view for that entry, including the module wher
 
 <figure><img src="../../.gitbook/assets/project-details.png" alt="Open source project overview in Snyk Web UI."><figcaption><p>Open source project overview</p></figcaption></figure>
 
-See [View Project information](../../manage-issues/snyk-projects/view-project-information.md) for more details.
+See [View Project information](../../manage-issues/introduction-to-snyk-projects/view-project-information.md) for more details.
 
 ### Fix vulnerabilities
 

@@ -286,7 +286,7 @@ A set of criteria for evaluating open source vulnerabilities. Security policies 
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/prioritizing-issues/severity-levels.md).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/issue-management/severity-levels.md).
 
 ### Snapshot
 
@@ -294,7 +294,7 @@ An individual report within a project’s test history. Includes a tree of depen
 
 ### `.snyk` policy
 
-A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../manage-issues/policies/the-.snyk-file.md).
+A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 
 ### Snyk
 
@@ -353,7 +353,7 @@ The browser-based environment allowing users to access Snyk functions. See [Expl
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed on Twitter. See  [Vulnerabilities with Social Trends](../manage-issues/prioritizing-issues/prioritize-by-social-trends.md).
+Snyk shows a Trending banner on issues that are being actively discussed on Twitter. See  [Vulnerabilities with Social Trends](../manage-issues/issue-management/prioritize-by-social-trends.md).
 
 ### SPDX
 

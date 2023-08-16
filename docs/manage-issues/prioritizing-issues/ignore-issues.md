@@ -114,7 +114,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../policies/the-.snyk-file.md) including the section about [.snyk files in monorepos](../policies/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).
+For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) including the section about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).
 {% endhint %}
 
 ### Ignoring issues with policy actions
@@ -149,7 +149,7 @@ For more information, see [Exploring the vulnerability issues discovered by Snyk
 
 ## Snyk IaC: ignoring issues
 
-When scanning your IaC configuration files using `snyk iac test` you can ignore issues that are not relevant to you by using [The .snyk file](../policies/the-.snyk-file.md).
+When scanning your IaC configuration files using `snyk iac test` you can ignore issues that are not relevant to you by using [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 

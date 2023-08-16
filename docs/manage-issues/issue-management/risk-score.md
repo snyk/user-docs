@@ -13,7 +13,7 @@ Since real risk is scarce, you should expect a significant drift in the distribu
 <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
 {% hint style="info" %}
-As part of the Open Beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where it is now introduced when enabled. Risk Score is not available via the CLI.&#x20;
+As part of the Open Beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](../prioritizing-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where it is now introduced when enabled. Risk Score is not available via the CLI.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -330,7 +330,7 @@ _Great transitive depth -_ Likelihood subscore will decrease significantly (comi
 
 #### Reachability&#x20;
 
-Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. [Learn more](reachable-vulnerabilities.md).
+Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. [Learn more](../prioritizing-issues/reachable-vulnerabilities.md).
 
 **Possible input values:** _Reachable, No path found_\
 When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.

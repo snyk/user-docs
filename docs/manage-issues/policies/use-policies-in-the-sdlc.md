@@ -5,7 +5,7 @@ You can apply policies across all stages of the SDLC, from the developer’s loc
 These multiple security and compliance controls ensure issues are flagged as early as possible in the development process when it is less costly and time-consuming to fix.
 
 {% hint style="info" %}
-Additionally, the **.snyk** file is a policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](the-.snyk-file.md) for details
+Additionally, the **.snyk** file is a policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) for details
 {% endhint %}
 
 ## Apply policies to Projects or Organizations

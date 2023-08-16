@@ -25,7 +25,7 @@ You can also apply and remove attributes using Snyk CLI options, `--project-busi
 {% endhint %}
 
 {% hint style="info" %}
-\*When Risk Score is enabled, the Bussiness Criticality attribute will automatically affect the score according to the highest attribute level. Learn more in the [Risk Score](../prioritizing-issues/risk-score.md#business-criticality) docs. &#x20;
+\*When Risk Score is enabled, the Bussiness Criticality attribute will automatically affect the score according to the highest attribute level. Learn more in the [Risk Score](../issue-management/risk-score.md#business-criticality) docs. &#x20;
 {% endhint %}
 
 {% hint style="warning" %}

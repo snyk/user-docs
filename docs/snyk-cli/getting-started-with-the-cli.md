@@ -32,7 +32,7 @@ To use the CLI, you must install it and authenticate your machine. See [Install 
 
 You can use the CLI in your IDE or CI/CD environment. For details, see [Install as part of a Snyk integration](https://docs.snyk.io/snyk-cli/install-the-snyk-cli#install-as-a-part-of-a-snyk-integration).
 
-You can authorize Snyk CLI in your CI/CD programatically:
+You can authorize Snyk CLI in your CI/CD programmatically:
 
 * Using a SNYK\_TOKEN envvar (preferred)\
   `SNYK_TOKEN=<SNYK_API_TOKEN> snyk test`
@@ -42,9 +42,9 @@ You can authorize Snyk CLI in your CI/CD programatically:
 
 ## Test your installation
 
-After authenticating, you can **test your installation**. For a quick test, run `snyk --hel`p.
+After authenticating, you can **test your installation**. For a quick test, run `snyk --help`.
 
-.Alternatively, you can perform a **quick test** on a public npm package, for example `snyk test ionic`.
+Alternatively, you can perform a **quick test** on a public npm package, for example `snyk test ionic`.
 
 Look at the `test` command **report** in your terminal. The report shows the vulnerabilities Snyk found in the package. For each issue found, Snyk reports the severity of the issue, provides a link to a detailed description, reports the path through which the vulnerable module got into your system, and provides guidance on how to fix the problem.
 
@@ -100,7 +100,7 @@ If you run out of tests on an open-source Project, follow these steps:
 
 * Run `snyk monitor`.
 * Open the Snyk UI and navigate to the **settings** of the Project.
-* Enter the URL of your open-source repository in **Git remote URI**.
+* Enter the URL of your open-source repository in **Git remote URL**.
 
 ## Additional information about the Snyk CLI
 

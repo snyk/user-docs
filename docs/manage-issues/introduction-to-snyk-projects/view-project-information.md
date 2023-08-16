@@ -15,9 +15,9 @@ The following information is available:
 * **Header**: shows [project summary information](view-project-information.md#project-summary-information).
 * **Issue cards**: show summaries of issues found. See [Issue card information](issue-card-information.md).
 * **Views** (links at top right):
-  * **Overview**: shows [Project issues, fixes, and dependencies](view-project-issues-fixes-and-dependencies.md).
-  * **History**: shows historical snapshots of recent tests. See [View Project history](view-project-history.md).
-  * **Settings**: shows [Project settings](view-project-settings.md).
+  * **Overview**: shows [Project issues, fixes, and dependencies](../snyk-projects/view-project-issues-fixes-and-dependencies.md).
+  * **History**: shows historical snapshots of recent tests. See [View Project history](../snyk-projects/view-project-history.md).
+  * **Settings**: shows [Project settings](../snyk-projects/view-project-settings.md).
 
 ### Project summary information
 
@@ -34,4 +34,4 @@ The summary information shows:
 * Project import information:
   * **Imported by**: The user who imported the project.
   * **Project owner**: Click **Add a project owner** to add an owner for this project, from a list of everyone who has access to that project (everyone who is a member of that Organization). This information can also be viewed in the [Projects endpoint](https://snyk.docs.apiary.io/#reference/projects), in the API.
-* Predefined [Project attributes](../introduction-to-snyk-projects/project-attributes.md) and any additional [Project tag](project-tags.md) metadata.
+* Predefined [Project attributes](project-attributes.md) and any additional [Project tag](../snyk-projects/project-tags.md) metadata.

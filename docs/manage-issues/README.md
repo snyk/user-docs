@@ -8,9 +8,9 @@ The documentation in this section explains the features available to help you pr
 
 Key features that help you prioritize issues are as follows:
 
-* [Severity levels](prioritizing-issues/severity-levels.md)
+* [Severity levels](issue-management/severity-levels.md)
 * [Priority Score](prioritizing-issues/priority-score.md)
-* [Risk Score](prioritizing-issues/risk-score.md)
+* [Risk Score](issue-management/risk-score.md)
 * [Ignoring issues](prioritizing-issues/ignore-issues.md)
 
 For details and more features, see [Prioritizing issues](prioritizing-issues/).
@@ -19,9 +19,9 @@ For details and more features, see [Prioritizing issues](prioritizing-issues/).
 
 [Snyk Projects](snyk-projects/) features help you take action on issues as follows:
 
-* [View Project information](snyk-projects/view-project-information.md).
+* [View Project information](introduction-to-snyk-projects/view-project-information.md).
 * Apply and remove [Project attributes ](introduction-to-snyk-projects/project-attributes.md)and [Project tags](snyk-projects/project-tags.md) to characterize Projects.
-* Look at [Project collections groupings](snyk-projects/project-collections-groupings/).
+* Look at [Project collections groupings](introduction-to-snyk-projects/project-collections-groupings/).
 * [View Project issues, fixes, and dependencies](snyk-projects/view-project-issues-fixes-and-dependencies.md).
 * [View Project settings](snyk-projects/view-project-settings.md).
 
