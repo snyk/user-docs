@@ -2,7 +2,7 @@
 
 Group administrators can define security policies, providing an automated way to identify certain issues or types of issues, and apply actions like changing the severity or ignoring the issue based on your conditions.
 
-You can [create a security policy and set rules](how-to-create-a-security-policy-and-set-rules.md) by clicking **Policies** in the Group Overview page:
+You can [create a security policy and set rules](create-a-security-policy-and-rules.md) by clicking **Policies** in the Group Overview page:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-30 at 10.05.27.png" alt=""><figcaption></figcaption></figure>
 

@@ -9,7 +9,7 @@ This feature is available to Enterprise customers. See [pricing plans](https://s
 
 ### Understand policies
 
-* [Introduction to policies](shared-policies-overview.md)
+* [Introduction to policies](introduction-to-policies.md)
 * [Use policies in the SDLC](use-policies-in-the-sdlc.md)
 * [View policies](view-policies.md)
 
