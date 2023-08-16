@@ -93,7 +93,7 @@ Reviewing infrastructure issues video
 
 Some package managers **rely on context from the local environment**. With these package managers, **scanning in the local environment or as part of the CI/CD pipeline gives the most accurate results**.
 
-To start using the Snyk CLI or a CI/CD plugin, [install the Snyk CLI](../snyk-cli/install-the-snyk-cli/). After you have installed it, you must [authenticate your machine to associate the CLI with your Snyk account](../snyk-cli/authenticate-the-cli-with-your-account.md), as demonstrated in this video.
+To start using the Snyk CLI or a CI/CD plugin, [install the Snyk CLI](../snyk-cli/install-or-update-the-snyk-cli/). After you have installed it, you must [authenticate your machine to associate the CLI with your Snyk account](../snyk-cli/authenticate-the-cli-with-your-account.md), as demonstrated in this video.
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/ava7rrg7al" %}
 Authenticate CLI video

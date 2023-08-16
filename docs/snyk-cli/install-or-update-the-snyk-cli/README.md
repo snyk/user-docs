@@ -80,7 +80,7 @@ Then follow these **steps to install with npm or Yarn**:
 
 If you are using Yarn, **install** by running `yarn global add snyk`.
 
-For additional information see [Installing Snyk CLI as a binary via npm](../installing-snyk-cli-as-a-binary-via-npm.md).
+For additional information see [Installing Snyk CLI as a binary via npm](installing-snyk-cli-as-a-binary-via-npm.md).
 
 ## Snyk CLI in a Docker image
 

@@ -31,7 +31,7 @@ In order to build the dependency tree Snyk analyzes the `composer.json` and `com
 
 * Ensure you have installed the relevant package manager before you begin using the Snyk CLI.
 * Ensure you have included the relevant manifest files supported by Snyk before testing.
-* [Install](../../../snyk-cli/install-the-snyk-cli/) and authenticate the Snyk CLI to start analyzing Projects from your local environment.
+* [Install](../../../snyk-cli/install-or-update-the-snyk-cli/) and authenticate the Snyk CLI to start analyzing Projects from your local environment.
 
 ### **CLI options for use with PHP**
 

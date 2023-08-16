@@ -25,7 +25,7 @@ After Snyk has built the tree, Snyk uses the vulnerability database to find vuln
 
 * Ensure you have installed the relevant package manager before using the Snyk CLI.
 * Ensure you have included the relevant manifest files supported by Snyk before testing.
-* [Install](../../../snyk-cli/install-the-snyk-cli/) and authenticate the Snyk CLI to analyze projects from your local environment. For more information about Snyk CLI see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
+* [Install](../../../snyk-cli/install-or-update-the-snyk-cli/) and authenticate the Snyk CLI to analyze projects from your local environment. For more information about Snyk CLI see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
 
 ### Swift Package Manager and Snyk CLI
 

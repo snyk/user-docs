@@ -38,5 +38,5 @@ If you add Projects through GitHub integration, these Projects are added to the 
 
 The default `<ORG_ID>` is the currently preferred Organization in your [Account settings](https://app.snyk.io/account).
 
-See [How to select the organization to use in the CLI](../../snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli.md) for more details.
+See [How to select the organization to use in the CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md) for more details.
 

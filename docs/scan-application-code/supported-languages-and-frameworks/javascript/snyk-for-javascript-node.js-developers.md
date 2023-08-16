@@ -212,7 +212,7 @@ With large organizations using hundreds of applications, a slower approach is re
 
 Use the `--help` option in the CLI for details of Snyk CLI commands.
 
-:link: [CLI commands and options summary](../../../snyk-cli/cli-reference.md)
+:link: [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md)
 
 #### Open Source libraries
 

@@ -52,7 +52,7 @@ Snyk native plugins are available for most common CI/CD tools. Using these plugi
 
 ### **Deploy Snyk CLI using the npm method**
 
-Follow steps similar to those for [installing the CLI](../../../snyk-cli/install-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so you can easily troubleshoot and configure.
+Follow steps similar to those for [installing the CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so you can easily troubleshoot and configure.
 
 ### **Deploy Snyk CLI binary version**
 

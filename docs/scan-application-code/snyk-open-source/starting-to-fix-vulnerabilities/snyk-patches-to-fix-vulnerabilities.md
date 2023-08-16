@@ -4,7 +4,7 @@
 
 Sometimes there is no direct upgrade that can address the vulnerability, or an upgrade is not possible due to functional reasons (for example, it’s a major breaking change).
 
-For such cases, Snyk can help you [protect your code with patches](../../../snyk-cli/test-for-vulnerabilities/protect-your-code-with-patches.md). This option will make minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when you use [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
+For such cases, Snyk can help you [protect your code with patches](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-protect-package.md). This option will make minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when you use [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
 
 {% hint style="warning" %}
 Patching is currently supported for **Node.js** Projects only.
@@ -44,7 +44,7 @@ For unmaintained packages, we will create a patch and open a pull request to the
 
 ## How do patches work when using the Snyk CLI?
 
-For information about patching using the CLI see [Fix vulnerabilities using the Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/fix-vulnerabilities-using-the-snyk-cli.md).
+For information about patching using the CLI see [Fix vulnerabilities using the Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/fix-vulnerabilities-using-the-snyk-cli.md).
 
 ## How do patches work when using source code integrations?
 

@@ -22,7 +22,7 @@ snyk code test --json > <path/to/new_file>
 snyk code test --json-file-output=<path/to/new_file>
 ```
 
-The `snyk code test --json-file-output=<path/to/new_file>` command is available in Snyk CLI v. 1.910.0 and higher. To update your Snyk CLI version, see [Install or update the Snyk CLI](../../../../snyk-cli/install-the-snyk-cli/).
+The `snyk code test --json-file-output=<path/to/new_file>` command is available in Snyk CLI v. 1.910.0 and higher. To update your Snyk CLI version, see [Install or update the Snyk CLI](../../../../snyk-cli/install-or-update-the-snyk-cli/).
 
 ## Exporting the test results to a JSON file
 

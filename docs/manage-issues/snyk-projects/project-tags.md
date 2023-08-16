@@ -20,7 +20,7 @@ You can perform some of these actions and additional actions in the Snyk API v1:
 * [List all tags in a Group](https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group)
 * [Delete a tag from a Group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group)
 
-You can set values for a tag applied to a Project and clear the Project tags using the Snyk CLI option `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-reference.md). for the commands that support this option.
+You can set values for a tag applied to a Project and clear the Project tags using the Snyk CLI option `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md). for the commands that support this option.
 
 ## Tag conditions
 

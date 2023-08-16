@@ -45,7 +45,7 @@ You can also find additional advice and details further down on the Project deta
 
 ## Fixing vulnerabilities based on scan results using Snyk CLI
 
-For information about using the CLI in fixing vulnerabilities, see [Fix vulnerabilities using the Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/fix-vulnerabilities-using-the-snyk-cli.md).
+For information about using the CLI in fixing vulnerabilities, see [Fix vulnerabilities using the Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/fix-vulnerabilities-using-the-snyk-cli.md).
 
 ## Apply fixes
 

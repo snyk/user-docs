@@ -15,7 +15,7 @@ Tests may be limited on your account; see [What counts as a test?](https://suppo
 
 ### Run tests manually with the CLI
 
-You can use the following commands to run tests with the Snyk [CLI](../snyk-cli/cli-reference.md):
+You can use the following commands to run tests with the Snyk [CLI](../snyk-cli/cli-commands-and-options-summary.md):
 
 * Scan open-source code with `snyk test`.
 * Scan application code with `snyk code test`.
@@ -54,7 +54,7 @@ Use the `snyk monitor` CLI command to create a snapshot of a project on the Snyk
 Projects are tested at the test frequency you select in your settings; the default is daily. After using `snyk monitor`, you will have recurring tests.  Recurring tests are scheduled retests that run on monitored projects.
 {% endhint %}
 
-See [Monitor your projects at regular intervals](../snyk-cli/test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md) for details.
+See [Monitor your projects at regular intervals](../snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md) for details.
 
 ### Run tests automatically using PR Checks
 

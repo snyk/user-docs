@@ -56,7 +56,7 @@ Review code issues video
 
 Some package managers rely on context from the local environment, so testing in the local environment or as part of the CI/CD pipeline provides the most accurate results.
 
-You need to [install the Snyk CLI](../snyk-cli/install-the-snyk-cli/). Once installed, you need to authenticate it to your Snyk account, demonstrated in this video.
+You need to [install the Snyk CLI](../snyk-cli/install-or-update-the-snyk-cli/). Once installed, you need to authenticate it to your Snyk account, demonstrated in this video.
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/ava7rrg7al" %}
 Authenticate CLI video

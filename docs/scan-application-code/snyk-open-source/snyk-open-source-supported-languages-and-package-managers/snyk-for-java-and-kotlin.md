@@ -92,7 +92,7 @@ For information about the `snyk test` and `snyk monitor` options available for u
 
 ### Scan unmanaged JAR files&#x20;
 
-If you are not using Maven or Gradle but have JAR files, you can identify the open-source packages these JAR files relate to using Snyk CLI.  For more information, see [Scan all unmanaged JAR files](../../../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md).
+If you are not using Maven or Gradle but have JAR files, you can identify the open-source packages these JAR files relate to using Snyk CLI.  For more information, see [Scan all unmanaged JAR files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/scan-all-unmanaged-jar-files.md).
 
 ### **Examples of how you can use Maven arguments with the Snyk CLI**
 

@@ -26,7 +26,7 @@ DEBUG=* snyk test
 
 ### Step 3: Use the CLI instead of the plugin
 
-Try to replace the native plugin with the CLI by installing the CLI. See [Install the Snyk CLI ](../../../snyk-cli/install-the-snyk-cli/)for instructions.
+Try to replace the native plugin with the CLI by installing the CLI. See [Install the Snyk CLI ](../../../snyk-cli/install-or-update-the-snyk-cli/)for instructions.
 
 ## **Useful resources for CI/CD**
 

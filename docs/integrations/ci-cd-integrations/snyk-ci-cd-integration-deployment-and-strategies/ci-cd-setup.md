@@ -20,7 +20,7 @@ You can **define the target organization** in the Snyk CLI, by either URL orgslu
 
 <figure><img src="../../../.gitbook/assets/image1.png" alt="Organization ID"><figcaption><p>Organization ID</p></figcaption></figure>
 
-For more information see see [How to select the organization to use in the CLI.](../../../snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli.md)
+For more information see see [How to select the organization to use in the CLI.](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md)
 
 ### Snyk authentication token
 

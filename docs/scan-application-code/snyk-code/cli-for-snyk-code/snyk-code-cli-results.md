@@ -45,5 +45,5 @@ The summary of the test findings includes the following details:
 {% hint style="info" %}
 The `snyk code test` command has exit codes. See the help for [definitions of these codes](../../../snyk-cli/commands/code-test.md#exit-codes). To see the exit code, run `snyk code test -d`.
 
-For a summary of exit codes for all CLI commands, see the [CLI commands and options summary](../../../snyk-cli/cli-reference.md).
+For a summary of exit codes for all CLI commands, see the [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md).
 {% endhint %}

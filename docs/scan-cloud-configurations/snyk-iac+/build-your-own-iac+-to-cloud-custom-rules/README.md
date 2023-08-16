@@ -8,7 +8,7 @@ Custom rules are available to organizations with Enterprise plans enabled with I
 ## Prerequisites for IaC to cloud custom roles
 
 Install the following in your PATH: Snyk CLI >= 1.1168.0\
-For details, see [Install or update the Snyk CLI](../../../snyk-cli/install-the-snyk-cli/).
+For details, see [Install or update the Snyk CLI](../../../snyk-cli/install-or-update-the-snyk-cli/).
 
 Configure the CLI appropriately and set your default Organization:\
 `snyk config set org=<org id>`

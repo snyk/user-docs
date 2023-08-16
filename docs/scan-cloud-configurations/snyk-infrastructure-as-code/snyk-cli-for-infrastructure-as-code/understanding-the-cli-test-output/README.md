@@ -15,7 +15,7 @@ To use the new IaC CLI output results, install the latest Snyk CLI version or up
 npm install snyk -g 
 ```
 
-For information about other methods for installing and updating the CLI, see [Install or update the Snyk CLI](../../../../snyk-cli/install-the-snyk-cli/).
+For information about other methods for installing and updating the CLI, see [Install or update the Snyk CLI](../../../../snyk-cli/install-or-update-the-snyk-cli/).
 
 In addition, to use the new IaC CLI output results, enable the option in the **Snyk Preview** page as follows:
 

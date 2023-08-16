@@ -17,7 +17,7 @@ You can also test a public npm package or Github project via the Test page on [s
 See also
 
 * [Getting started with the CLI](../getting-started-with-the-cli.md)
-* [CLI reference](../cli-reference.md)
+* [CLI reference](../cli-commands-and-options-summary.md)
 * [Use Snyk Open Source from the CLI](../../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/)
 * [Set severity thresholds for CLI tests](set-severity-thresholds-for-cli-tests.md)
 * [Test public npm packages before use](test-public-npm-packages-before-use.md)

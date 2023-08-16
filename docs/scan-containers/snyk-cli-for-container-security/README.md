@@ -2,7 +2,7 @@
 
 The Snyk Container command line interface ([CLI](../../snyk-cli/)) helps you find and fix vulnerabilities in container images on your local machine.
 
-To use the CLI, you must first [install](../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](../../snyk-cli/commands/auth.md).
+To use the CLI, you must first [install](../../snyk-cli/install-or-update-the-snyk-cli/) it and then [authenticate](../../snyk-cli/commands/auth.md).
 
 ## Testing an image
 

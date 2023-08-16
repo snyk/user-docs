@@ -61,7 +61,7 @@ You can suppress issues through the CLI by using the `snyk ignore` command, for 
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-For more information, see the [`ignore`](../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
+For more information, see the [`ignore`](../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-snyk-cli.md).
 
 When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given if one was provided. For example:
 
@@ -114,7 +114,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) including the section about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).
+For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) including the section about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
 {% endhint %}
 
 ### Ignoring issues with policy actions
