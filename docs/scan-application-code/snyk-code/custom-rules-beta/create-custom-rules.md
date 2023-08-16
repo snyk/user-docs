@@ -18,7 +18,7 @@ You can save custom rules from useful queries and add metadata. The metadata is 
 4. (Optional) [Run a query on a repository](run-query.md#run-query-on-a-repository) or a [code snippet](run-query.md#run-query-on-a-code-snippet).
 5. Configure the metadata:
    * **Name**: This is shown whenever the query finds a result.
-   * **Severity**: Set the severity of the result based on [Snyk security levels](../../../manage-issues/prioritizing-and-managing-issues/severity-levels.md#introduction-to-snyk-severity-levels). Snyk Code uses only three severity levels: `Low`, `Medium` and `High.`
+   * **Severity**: Set the severity of the result based on [Snyk security levels](../../../manage-issues/issue-management/severity-levels.md#introduction-to-snyk-severity-levels). Snyk Code uses only three severity levels: `Low`, `Medium` and `High.`
    * **Description**: Add a description of the result and why it has surfaced.
    * **CWE**: Link relevant CWEs.
    * **Fix Analysis**: Describe how the developers should address the vulnerability. You could structure the fix as general guidance or based on your Organization's best practices.

@@ -4,9 +4,9 @@
 
 The following Project information is available on the Snyk Web UI:
 
-* [Issues](view-project-issues-remediations-and-dependencies.md#view-issues): the number of vulnerabilities and license issues
-* [Fixes](view-project-issues-remediations-and-dependencies.md#view-fixes): fix advice
-* [Dependencies](view-project-issues-remediations-and-dependencies.md#view-dependencies): the total number of direct and transitive (nested) dependencies
+* [Issues](view-project-issues-fixes-and-dependencies.md#view-issues): the number of vulnerabilities and license issues
+* [Fixes](view-project-issues-fixes-and-dependencies.md#view-fixes): fix advice
+* [Dependencies](view-project-issues-fixes-and-dependencies.md#view-dependencies): the total number of direct and transitive (nested) dependencies
 
 ### View issues
 
@@ -24,7 +24,7 @@ Snyk provides features to fix issues identified during scanning. See [Fix your v
 
 ### View issue details
 
-Click on an issue to view details, including its [priority score](../prioritizing-and-managing-issues/priority-score.md).
+Click on an issue to view details, including its [priority score](../issue-management/priority-score.md).
 
 <div align="left">
 
@@ -32,7 +32,7 @@ Click on an issue to view details, including its [priority score](../prioritizin
 
 </div>
 
-* Click **Show more detail** to [view detailed information](view-project-issues-remediations-and-dependencies.md#introduction).
+* Click **Show more detail** to [view detailed information](view-project-issues-fixes-and-dependencies.md#introduction).
 * Click **Learn about this type of vulnerability** to access [Snyk Learn](../../more-info/snyk-learn.md) training information.
 
 #### View detailed information

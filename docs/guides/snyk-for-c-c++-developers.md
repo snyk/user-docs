@@ -227,7 +227,7 @@ Startups, small teams, individuals, and open-source maintainers can typically on
 
 With large businesses, and potentially hundreds of applications, a slower approach is recommended to get developer buy-in/adoption and to ensure a positive experience. Passive monitoring can be performed to start, with perhaps one or two key projects having gating enabled early on to familiarize everyone with the process. Gating using blocking builds on a wider scope typically starts after the first 30 days.
 
-If you onboard a large number of legacy applications, we suggest you use [priority score](../manage-issues/prioritizing-and-managing-issues/priority-score.md) (typically 700 as a starting place) or criteria such as “known exploit” or “fix available”, to define a starting point to quickly engage developers to start fixing vulnerabilities on key applications.
+If you onboard a large number of legacy applications, we suggest you use [priority score](../manage-issues/issue-management/priority-score.md) (typically 700 as a starting place) or criteria such as “known exploit” or “fix available”, to define a starting point to quickly engage developers to start fixing vulnerabilities on key applications.
 
 ## How to fix issues using Snyk
 

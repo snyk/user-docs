@@ -1,6 +1,6 @@
 # Snyk Priority Score and Kubernetes
 
-All issues in Snyk have a [Priority Score](../../../manage-issues/prioritizing-and-managing-issues/priority-score.md). This helps determine the relative importance of vulnerabilities, taking into account both the severity of the issue and various other contextual factors. As well as the factors discussed in the main Priority Score documentation, images imported from the Kubernetes integration have a number of additional contributing factors.
+All issues in Snyk have a [Priority Score](../../../manage-issues/issue-management/priority-score.md). This helps determine the relative importance of vulnerabilities, taking into account both the severity of the issue and various other contextual factors. As well as the factors discussed in the main Priority Score documentation, images imported from the Kubernetes integration have a number of additional contributing factors.
 
 ![](../../../.gitbook/assets/screenshot\_2020-06-23\_at\_09.09.52.png)
 

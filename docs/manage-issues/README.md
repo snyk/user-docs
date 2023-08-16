@@ -5,13 +5,13 @@ Security issues encountered by Snyk scans can include vulnerabilities, license p
 ### Key concepts
 
 * [Snyk Projects](snyk-projects/)
-* [Priority Score](prioritizing-and-managing-issues/priority-score.md)
-* [Severity level](prioritizing-and-managing-issues/severity-levels.md)
-* [Ignores](prioritizing-and-managing-issues/ignore-issues.md)
+* [Priority Score](issue-management/priority-score.md)
+* [Severity level](issue-management/severity-levels.md)
+* [Ignores](issue-management/ignore-issues.md)
 
 ### Issue management
 
-* [Prioritize and manage issues](prioritizing-and-managing-issues/)
+* [Prioritize and manage issues](issue-management/)
 * [Set Project information](snyk-projects/)
 * [Define policies](policies/)
 * [View reports](reporting/legacy-reports/)

@@ -15,7 +15,7 @@ The following information is available:
 * **Header**: shows [project summary information](view-project-information.md#project-summary-information).
 * **Issue cards**: show summaries of issues found. See [Issue card information](issue-card-information.md).
 * **Views** (links at top right):
-  * **Overview**: shows [Project issues, fixes, and dependencies](view-project-issues-remediations-and-dependencies.md).
+  * **Overview**: shows [Project issues, fixes, and dependencies](view-project-issues-fixes-and-dependencies.md).
   * **History**: shows historical snapshots of recent tests. See [View Project history](view-project-history.md).
   * **Settings**: shows [Project settings](view-project-settings.md).
 

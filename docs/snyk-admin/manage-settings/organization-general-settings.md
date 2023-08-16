@@ -46,7 +46,7 @@ Use these functions to define Organization-wide ignore settings.
 
 </div>
 
-See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/prioritizing-and-managing-issues/ignore-issues.md#configure-ignore-settings) documentation for more details.
+See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/issue-management/ignore-issues.md#configure-ignore-settings) documentation for more details.
 
 ### Requesting Access
 
