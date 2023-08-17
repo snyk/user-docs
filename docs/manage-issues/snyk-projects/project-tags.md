@@ -11,7 +11,7 @@ Group and Organization admins can perform the actions explained on this page. Co
 
 The Project tags feature allows you to add custom metadata to Snyk Projects. You can create and delete tags, apply tags to and remove tags from Projects, and filter Projects using tags.
 
-You can perform most of these actions in the Snyk Web UI as shown on this page.
+You can perform most of these actions in the Snyk Web UI, as shown on this page.
 
 You can perform some of these actions and additional actions in the Snyk API v1:
 
@@ -30,14 +30,14 @@ The following conditions apply to Project tags:
 * Values are limited to 256 characters.
 * Keys allow only alphanumerics and the following characters **`-`**, **`_`**
 * Values allow these characters plus **`/`**, **`:`**, **`?`**, **`#`**, **`@`**, **`&`**, **`+`**, **`=`**, **`%`**, **`~`**
-* You can create 1,000 unique key and value combinations per Snyk Group, and apply ten unique tags per Project.
+* You can create 1,000 unique key and value combinations per Snyk Group and apply ten unique tags per Project.
 * Reusing a key and value combination does not add to the count.
 
 ## **How to create and delete tags**
 
 To create a new tag for a Snyk Project:
 
-1.  On the Project details page, under **TAGS** click **Add a key/value...**\\
+1.  On the Project details page, under **TAGS,** click **Add a key/value...**\\
 
     ***
 
@@ -60,7 +60,7 @@ To delete a Project tag from the Group, you must use the Snyk API v1. There are 
 * [List all tags in a Group](https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group)
 * [Delete a tag from a Group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group)
 
-The [Delete a tag from a Group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group) endpoint has the option in the Body to specify `"force": false` or `"force": true`_. F_or `"force": true`, the tag will be removed from any Projects to which it is applied and it will then be deleted, For `"force": false` error 403 “the tag has entities” occures if the tag is still applied to any Projects; otherwise tag deletion should succeed.&#x20;
+,The [Delete a tag from a Group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group) endpoint has the option in the Body to specify `"force": false` or `"force": true`_._ For `"force": true`, the tag will be removed from any Projects to which it is applied, and it will then be deleted. For `"force": false` the error is 403 “the tag has entities”. The error occurs if the tag is still applied to any Projects; otherwise, tag deletion should succeed.&#x20;
 
 ## **How to apply and remove tags**
 
