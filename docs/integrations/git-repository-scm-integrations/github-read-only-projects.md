@@ -16,7 +16,7 @@ Unlike Projects imported through the Snyk GitHub integration, Projects that are 
 * Use [automated dependency upgrade PRs](../../scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md) to keep dependencies up to date, avoid new vulnerabilities, and simplify fixing those that are found.
 * Use manual Fix PRs generated through Snyk to address specific issues chosen by the user.
 
-## Monitoring a public repository
+## How to monitor a public GitHub repository
 
 You can import a read-only Project using the **Add project** **> Monitor public GitHub repos** menu in the **Dashboard** and **Projects** tabs, or by going to [Monitor public GitHub repositories](https://app.snyk.io/add/github-readonly).
 
