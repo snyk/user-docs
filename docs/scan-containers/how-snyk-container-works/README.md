@@ -2,22 +2,22 @@
 
 ## Snyk tests container images
 
-Container images comprise a layered file system and associated metadata, as defined by the [Open Container Initiative](https://opencontainers.org) (OCI) specifications.
+As defined by the [Open Container Initiative](https://opencontainers.org) (OCI) specifications, container images comprise a layered file system and associated metadata.&#x20;
 
 Container images often include several layers containing third-party software from:
 
 * Operating system distributions, such as Debian, Ubuntu, or CentOS
-* Application package managers, such as npm, pip, and RubyGems
+* Application package managers, such as npm, pip, and RubyGems.
 
 ## What Snyk Container detects
 
 When Snyk Container tests an image using any of the available integrations, Snyk first finds the software installed in the image, including:
 
 * dpkg, rpm, and apk operating systems packages
-* Popular unmanaged software, that is, installed outside a package manager
-* Application packages based on the presence of a manifest file
+* Popular unmanaged software (installed outside a package manager)
+* Application packages that are based on the presence of a manifest file.
 
-The container does not need to be run as Snyk reads the information from the file system; therefore, no container or foreign code must be run to scan successfully.
+Because Snyk reads the information from the file system, the container does not need to be run. This means that for a successful scan, no container or foreign code must be run.
 
 After Snyk has the list of installed software, Snyk looks that up against the Snyk Vulnerability Database, which combines public sources with proprietary research.
 
@@ -27,7 +27,7 @@ Snyk supports testing OCI compliant and Docker v2 complaint images but does not 
 
 ## Operating systems supported by Snyk Container
 
-Snyk detects vulnerabilities in images based on the following:
+Snyk detects vulnerabilities in images based on the following operating systems:
 
 * AlmaLinux
 * Alpine Linux
@@ -41,10 +41,10 @@ Snyk detects vulnerabilities in images based on the following:
 * Ubuntu
 
 {% hint style="info" %}
-Snyk also supports images using packages from those distributions, but without the associated package manager, such as Distroless images.
+Snyk also supports images using packages from these distributions, but without the associated package manager, such as Distroless images.
 {% endhint %}
 
-See the [supported operating system distributions ](supported-operating-system-distributions.md)page for specific version support and  [Snyk updates](https://updates.snyk.io) for the latest updates.
+For specific version support, see [supported operating system distributions](supported-operating-system-distributions.md). For the latest updates, see [Snyk updates](https://updates.snyk.io).
 
 ## Official container advisory sources
 
@@ -59,7 +59,7 @@ Some software components from upstream providers are not installed using a packa
 
 ## Recurring scans with Snyk Container
 
-New vulnerabilities are disclosed continuously. Snyk can alert you to new vulnerabilities in your image as they are announced, even when your image software installed has not changed.
+Snyk continuously discloses new vulnerabilities. Snyk can alert you to new vulnerabilities in your image as they are announced, even when your image software installed has not changed.
 
 If you use an integration that saves a snapshot of the installed software on Snyk’s service and the image has not changed, Snyk Container automatically rescans without accessing the image, alerting you to new vulnerabilities.
 
@@ -71,6 +71,4 @@ Recurring scans do not detect updates to the dependencies of your applications. 
 To detect changes in your application, such as updated dependencies, you must re-import your container image in Snyk. To see an example of how to import your image, see [Getting started with Snyk Container](../getting-started-with-snyk-container.md).
 {% endhint %}
 
-## More about container security
-
-Learn more about [container security](https://snyk.io/learn/container-security/).
+To learn more about container security, see [container security](https://snyk.io/learn/container-security/).
