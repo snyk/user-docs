@@ -13,7 +13,7 @@ The Snyk Bitbucket Cloud (PAT) integration lets you:
 * Detect vulnerabilities in your open-source components
 * Provide automated fixes and upgrades
 
-## Setting up a Bitbucket Cloud Integration
+## How to set up the Snyk Bitbucket Cloud Integration
 
 {% hint style="info" %}
 Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the App Password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/).
@@ -39,7 +39,7 @@ Admin permissions are required; however, Snyk's access is ultimately limited by 
    \
    <img src="../../.gitbook/assets/settings (1).png" alt="Bitbucket Cloud settings successfully updated." data-size="original">
 
-## Adding Bitbucket repositories to Snyk
+## How to add Bitbucket repositories to Snyk
 
 After you connect Snyk to your Bitbucket Cloud account, you can select repositories for Snyk to monitor.
 
@@ -130,14 +130,14 @@ For Snyk to perform the required operations on monitored repositories, such as r
 | Opening fix and upgrade pull requests                   | Used to create fix PRs in monitored repositories.                                                                                                                                                                                                      | **Write** or above           |
 | Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated, triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | **Admin**                    |
 
-## Disabling the Bitbucket Cloud integration
+## How to disconnect Snyk from Bitbucket Cloud
 
 {% hint style="warning" %}
 When you disconnect Snyk from your repository Projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
 If you choose to re-enable this integration, you must re-enter your credentials and activate your Projects.
 {% endhint %}
 
-To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings)> **Integrations:**
+To disconnect this integration, in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings)> **Integrations:**
 
 1. In your list of integrations, select the Bitbucket integration you want to deactivate and click **Edit settings** to open a page with the current status of your integration.\
    \
