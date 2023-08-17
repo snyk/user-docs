@@ -2,7 +2,7 @@
 
 Snyk scans find security issues, including vulnerabilities, license problems, and misconfigurations. Snyk has several features to help you prioritize issues. Based on your priorities, you can start [fixing vulnerabilities](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/). As you fix issues, you can address them using additional Snyk features.
 
-The documentation in this section explains the features available to help you prioritize and manage issues.
+The documentation in this section explains the features available to help you prioritize and take action on issues.
 
 ## Prioritize issues
 
