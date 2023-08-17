@@ -522,7 +522,7 @@
       * [Project views](manage-issues/snyk-projects/project-collections-groupings/project-views.md)
       * [Project collections](manage-issues/snyk-projects/project-collections-groupings/project-collections.md)
     * [View Project issues, fixes, and dependencies](manage-issues/snyk-projects/view-project-issues-fixes-and-dependencies.md)
-    * [View Project settings](manage-issues/snyk-projects/view-project-settings.md)
+    * [View and edit Project settings](manage-issues/snyk-projects/view-and-edit-project-settings.md)
     * [View Project history](manage-issues/snyk-projects/view-project-history.md)
     * [Issue card information](manage-issues/snyk-projects/issue-card-information.md)
     * [Maximum number of Projects in an Organization](manage-issues/snyk-projects/maximum-number-of-projects-in-an-organsation.md)

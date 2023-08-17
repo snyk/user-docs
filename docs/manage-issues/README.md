@@ -23,7 +23,7 @@ For details and more features, see [Prioritizing issues](prioritizing-issues/).
 * Apply and remove [Project attributes ](introduction-to-snyk-projects/project-attributes.md)and [Project tags](snyk-projects/project-tags.md) to characterize Projects.
 * Look at [Project collections groupings](snyk-projects/project-collections-groupings/).
 * [View Project issues, fixes, and dependencies](snyk-projects/view-project-issues-fixes-and-dependencies.md).
-* [View Project settings](snyk-projects/view-project-settings.md).
+* [View Project settings](snyk-projects/view-and-edit-project-settings.md).
 
 For details and more features, see [Snyk Projects](snyk-projects/).
 

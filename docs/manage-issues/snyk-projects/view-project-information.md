@@ -17,7 +17,7 @@ The following information is available:
 * **Views** (links at top right):
   * **Overview**: shows [Project issues, fixes, and dependencies](view-project-issues-fixes-and-dependencies.md).
   * **History**: shows historical snapshots of recent tests. See [View Project history](view-project-history.md).
-  * **Settings**: shows [Project settings](view-project-settings.md).
+  * **Settings**: shows [Project settings](view-and-edit-project-settings.md).
 
 ## Project summary information
 
