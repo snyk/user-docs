@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Project tags are available for Enterprise plans. See the [plans and pricing page](https://snyk.io/plans/) for details.
+Project tags are available for Snyk Enterprise plan customers. See the [plans and pricing page](https://snyk.io/plans/) for details.
 {% endhint %}
 
 {% hint style="info" %}
