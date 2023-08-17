@@ -1,11 +1,9 @@
 # Prioritizing issues
 
-Snyk provides guidance and tools to help you decide which issues to fix for your Projects and the order in which to fix the issues.
+Snyk has several features that help you determine which issues are the most important for you to fix and the sequence in which to fix the issues.
 
-You can start [Evaluating and prioritizing vulnerabilities](view-exploits.md) using guidance from the [Snyk Priority Score](priority-score.md) for each issue.
+[View exploits ](view-exploits.md)to start evaluating and prioritizing vulnerabilities using guidance from the [Snyk Priority Score](priority-score.md) for each issue.
 
-You can also decide to [ignore issues](ignore-issues.md) and [triage issues](triaging-issues.md), to help your issue management strategy.
+You can also [ignore issues](ignore-issues.md) and [triage issues](triaging-issues.md) to establish your issue management strategy.
 
-{% hint style="info" %}
-See [Starting to fix vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/) for the details of how to apply fixes.
-{% endhint %}
+Based on your priorities, you can start [fixing vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/).
