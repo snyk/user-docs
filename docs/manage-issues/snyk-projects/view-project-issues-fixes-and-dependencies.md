@@ -1,28 +1,26 @@
 # View Project issues, fixes, and dependencies
 
-## Introduction
-
 The following Project information is available on the Snyk Web UI:
 
-* [Issues](view-project-issues-fixes-and-dependencies.md#view-issues): the number of vulnerabilities and license issues
+* [Issues](view-project-issues-fixes-and-dependencies.md#view-issues): the number of vulnerabilities and Open Source license issues
 * [Fixes](view-project-issues-fixes-and-dependencies.md#view-fixes): fix advice
-* [Dependencies](view-project-issues-fixes-and-dependencies.md#view-dependencies): the total number of direct and transitive (nested) dependencies
+* [Dependencies](view-project-issues-fixes-and-dependencies.md#view-dependencies): for Open Source, the total number of direct and transitive (nested) dependencies
 
-### View issues
+## View issues
 
-The Project details page displays Issue cards on the **Issues** tab. The information provided includes vulnerabilities and license issues (for Open Source Projects).
+The Project details page displays Issue cards on the **Issues** tab. The information provided includes vulnerabilities and Open Source license issues.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.49.30.png" alt="Project details Issues tab and filters"><figcaption><p>Project details Issues tab and filters</p></figcaption></figure>
 
-Use the filters in the panel to the left to narrow the search for issues. Select the checkboxes to filter issues by **Issue type**, **Severity**, **Exploit Maturity**, **Fixability**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed; the default is 0 to 1000.
+Use the filters in the panel to the left to narrow the search for issues. Select the checkboxes to filter issues by **Issue type**, **Severity**, **Fixability**, **Exploit Maturity**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed; the default is 0 to 1000.
 
 Issue details are shown on Issue cards in the main area, sorted by priority score. See [Issue card information](issue-card-information.md) for more details.
 
-#### Fix issues
-
+{% hint style="info" %}
 Snyk provides features to fix issues identified during scanning. See [Fix your vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for more details.
+{% endhint %}
 
-### View issue details
+## View issue details
 
 Click on an issue to view details, including its [priority score](../prioritizing-issues/priority-score.md).
 
@@ -32,36 +30,32 @@ Click on an issue to view details, including its [priority score](../prioritizin
 
 </div>
 
-* Click **Show more detail** to [view detailed information](view-project-issues-fixes-and-dependencies.md#introduction).
-* Click **Learn about this type of vulnerability** to access [Snyk Learn](../../more-info/snyk-learn.md) training information.
-
-#### View detailed information
-
-Click **Show more detail** to view detailed information about the vulnerability from [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/):
+* Click **Learn about this type of vulnerability** for [Snyk Learn](../../more-info/snyk-learn.md) training.
+* Click **Show more detail** to view detailed information about the vulnerability from the [Snyk Vulnerability database](https://snyk.io/product/vulnerability-database/):
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.47.54.png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.47.54.png" alt="More information from Snyk Vulnerability Database"><figcaption><p>More information from the Snyk Vulnerability Database</p></figcaption></figure>
 
 </div>
 
-### View fixes
+## View fixes
 
-Snyk's knowledge of the transitive dependencies in your Project make it possible for Snyk to offer fix advice, in the **Fixes** tab:
+Snyk knowledge of the transitive dependencies in your Project makes it possible for Snyk to provide fix advice on the **Fixes** tab:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Issue details Fixes tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Project details Fixes tab</p></figcaption></figure>
 
 </div>
 
 See [Fix your vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
-### View dependencies
+## View dependencies in Snyk Open Source
 
-Snyk uses the package manager for your application to build the dependency tree and display it in the **Dependencies** tab of the Project issues detail page. This tab shows which components introduce a vulnerability, which indicates how the dependency was introduced to the application.
+Snyk uses the package manager for your application to build the dependency tree and display it in the **Dependencies** tab of the Project issues detail page for Open Source. This tab shows which components introduce a vulnerability, indicating how the dependency was introduced to the application.
 
-For example.
+An example follows:
 
 <div align="left">
 
