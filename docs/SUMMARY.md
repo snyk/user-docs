@@ -533,7 +533,7 @@
     * [View exploits](manage-issues/priorities-for-fixing-issues/view-exploits.md)
     * [Triage for issues](manage-issues/priorities-for-fixing-issues/triage-for-issues.md)
     * [Reachable vulnerabilities](manage-issues/priorities-for-fixing-issues/reachable-vulnerabilities.md)
-    * [Vulnerabilities with Social Trends](manage-issues/priorities-for-fixing-issues/prioritize-by-social-trends.md)
+    * [Vulnerabilities with Social Trends](manage-issues/priorities-for-fixing-issues/vulnerabilities-with-social-trends.md)
   * [Policies](manage-issues/policies/README.md)
     * [Introduction to policies](manage-issues/policies/shared-policies-overview.md)
     * [Use policies in the SDLC](manage-issues/policies/use-policies-in-the-sdlc.md)

@@ -353,7 +353,7 @@ The browser-based environment allowing users to access Snyk functions. See [Expl
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed on Twitter. See  [Vulnerabilities with Social Trends](../manage-issues/priorities-for-fixing-issues/prioritize-by-social-trends.md).
+Snyk shows a Trending banner on issues that are being actively discussed on Twitter. See  [Vulnerabilities with Social Trends](../manage-issues/priorities-for-fixing-issues/vulnerabilities-with-social-trends.md).
 
 ### SPDX
 
