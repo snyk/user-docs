@@ -31,6 +31,7 @@ The core requirements to deploy the Snyk Code Local Engine are:
     * From your Kubernetes cluster to your Git and CI/CD tooling
     * From users running Snyk CLI to the Kubernetes cluster
 * Helm version 3.8.0 or newer
+* Environment with x86 CPUs
 
 ## Resource requirements for Snyk Code Local Engine
 
@@ -46,24 +47,9 @@ The rest of the capabilities have different requirements, **i**ncluding the mini
 
 The minimum required resources for each flavor of the Snyk Code Local Engine are identified in the following list. Actual memory and storage consumption depend on the usage and the size of repositories scanned. The minimum total required resources can then be divided into multiple nodes.
 
-* Local Engine CLI/IDE only
-  * 165GB RAM
-  * 60 Core CPU
-  * 55GB Ephemeral Storage
-* Local Engine SCM Only
-  * 170GB RAM
-  * 65 Core CPU
-  * 65GB Ephemeral Storage
-* Local Engine SCM and PR Check
-  * 200GB RAM
-  * 90 Core CPU
-  * 160GB Ephemeral Storage
-* Local Engine Full deployment (all features)
-  * 220GB RAM
-  * 100 Core CPU
-  * 160GB Ephemeral Storage
+<table><thead><tr><th width="236">Deployment Options</th><th width="263.3333333333333">Resources Required</th><th>Use cases</th></tr></thead><tbody><tr><td>CLI/IDE Only</td><td><ul><li>165GB RAM</li><li>60 Core CPU</li><li>55GB Ephemeral Storage</li></ul></td><td><ul><li>Run the SCLE in the pipeline </li><li>Developers using it on their IDE</li></ul></td></tr><tr><td>SCM Only</td><td><ul><li>170GB RAM</li><li>65 Core CPU</li><li>65GB Ephemeral Storage</li></ul></td><td><ul><li>Import repositories for monitoring purposes</li></ul></td></tr><tr><td>SCM and PR Checks Only</td><td><ul><li>200GB RAM</li><li>90 Core CPU</li><li>160GB Ephemeral Storage</li></ul></td><td><ul><li>Import repositories for monitoring purposes</li><li>Scan every PR for new vulnerabilities</li></ul></td></tr><tr><td>Full deployment (all features)</td><td><ul><li>220GB RAM</li><li>100 Core CPU</li><li>160GB Ephemeral Storage</li></ul></td><td><ul><li>All of the above</li></ul></td></tr></tbody></table>
 
-Using the CLI and IDEs with the Snyk Code Local Engine
+## Using the CLI and IDEs with the Snyk Code Local Engine
 
 To use the Snyk CLI and IDEs with Snyk Code Local Engine, provide your Snyk account team with your Snyk Code Local Engine URL, the URL of the Snyk Code Local Engine running on your premises.\
 \
