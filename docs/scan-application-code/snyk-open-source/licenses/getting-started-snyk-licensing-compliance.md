@@ -76,4 +76,4 @@ You can now take action to resolve the license issues identified during the scan
 
 The actions you take depend on the license conditions and on your policies. For example, if a license violation is surfaced, this issue can be mitigated by either approaching your legal team or by replacing the dependency which added the violation.
 
-Alternatively, you may want to ignore the issue. See [ignore issues](../../../manage-issues/prioritizing-issues/ignore-issues.md) for details.
+Alternatively, you may want to ignore the issue. See [ignore issues](../../../manage-issues/priorities-for-fixing-issues/ignore-issues.md) for details.
