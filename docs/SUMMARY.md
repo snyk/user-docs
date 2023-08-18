@@ -531,7 +531,7 @@
     * [Risk Score](manage-issues/priorities-for-fixing-issues/risk-score.md)
     * [Ignore issues](manage-issues/priorities-for-fixing-issues/ignore-issues.md)
     * [View exploits](manage-issues/priorities-for-fixing-issues/view-exploits.md)
-    * [Triaging issues](manage-issues/priorities-for-fixing-issues/triaging-issues.md)
+    * [Triage for issues](manage-issues/priorities-for-fixing-issues/triage-for-issues.md)
     * [Reachable vulnerabilities](manage-issues/priorities-for-fixing-issues/reachable-vulnerabilities.md)
     * [Vulnerabilities with Social Trends](manage-issues/priorities-for-fixing-issues/prioritize-by-social-trends.md)
   * [Policies](manage-issues/policies/README.md)
