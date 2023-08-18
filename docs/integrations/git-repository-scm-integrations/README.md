@@ -9,7 +9,7 @@ Snyk can integrate with the following Source Control Managers (SCMs) to help you
 * [Bitbucket Cloud App](bitbucket-cloud-app-integration.md)
 * [Bitbucket Data Center/Server](bitbucket-data-center-server-integration.md)
 * [GitLab](gitlab-integration.md)
-* [Azure Repos](azure-repositories-integration.md)
+* [Azure Repos](azure-repositories-tfs-integration.md)
 
 ## Are there any tips for integrating my Git repo with Snyk?
 

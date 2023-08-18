@@ -152,7 +152,7 @@
     * [Bitbucket Cloud App integration](integrations/git-repository-scm-integrations/bitbucket-cloud-app-integration.md)
     * [Bitbucket Data Center/Server integration](integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md)
     * [GitLab integration](integrations/git-repository-scm-integrations/gitlab-integration.md)
-    * [Azure Repositories integration](integrations/git-repository-scm-integrations/azure-repositories-integration.md)
+    * [Azure Repositories (TFS) integration](integrations/git-repository-scm-integrations/azure-repositories-tfs-integration.md)
   * [Gatekeeper plugins](integrations/gatekeeper-plugins/README.md)
     * [Artifactory Gatekeeper plugin](integrations/gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md)
     * [Nexus Repository Manager Gatekeeper plugin](integrations/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
