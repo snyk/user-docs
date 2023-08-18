@@ -512,7 +512,6 @@
       * [Ignoring cloud and IaC+ issues](scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/ignoring-cloud-and-integrated-iac-issues.md)
     * [View compliance reporting](scan-cloud-configurations/snyk-iac+/view-compliance-reporting.md)
     * [View resources](scan-cloud-configurations/snyk-iac+/view-resources.md)
-  * [Billable resources for Snyk Cloud](scan-cloud-configurations/billable-resources-for-snyk-cloud.md)
 * [Manage issues](manage-issues/README.md)
   * [Snyk Projects](manage-issues/snyk-projects/README.md)
     * [View Project information](manage-issues/snyk-projects/view-project-information.md)
