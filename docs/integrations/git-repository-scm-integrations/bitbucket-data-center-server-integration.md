@@ -20,16 +20,16 @@ For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](h
    Snyk connects to your Bitbucket DC/Server instance.\
    When the connection succeeds, a confirmation message appears on your integrations screen.
 
-## How to import Projects
+## How to import Bitbucket Server repositories
 
 To select the repositories for Snyk to monitor:
 
 1. Click **Add your Bitbucket Server repositories to Snyk** to start importing repositories to Snyk.
 2. When prompted, select the repositories to import to Snyk and click **Add selected repositories**.
 
-After you add them, Snyk scans the selected repositories for dependency files in the entire directory tree, (that is, `package.json`, `pom.xml`, and so on) and imports them to Snyk as projects.\
+After they are added, Snyk scans the selected repositories for dependency files in the entire directory tree, (that is, `package.json`, `pom.xml`, and so on) and imports them to Snyk as projects.\
 \
-The imported Projects appear in your **Projects** page and are continuously checked for vulnerabilities.
+The imported projects appear on your Snyk **Projects** page and are continuously checked for vulnerabilities.
 
 ![](../../.gitbook/assets/bitbucketserver\_add-repos\_18july2022.png)
 
@@ -45,21 +45,21 @@ After the integration is in place, you can use capabilities such as:
 
 Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository with the required upgrades or patches.
 
-The example that follows shows a project-level security report.
+The example that follows shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/project_lvl_security_rpt-18july2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
-### **Project monitoring and automatic fix Pull Requests**
+### **Project monitoring and automatic fix pull requests**
 
-Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening automated Snyk Pull Requests with fixes for your repositories.
+Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening automated Snyk pull requests with fixes for your repositories.
 
-The example that follows shows a fix Pull Request opened by Snyk.
+The example that follows shows a fix pull request opened by Snyk.
 
 <figure><img src="../../.gitbook/assets/666.png" alt="Pull request opened by Snyk"><figcaption><p>Pull request opened by Snyk</p></figcaption></figure>
 
 To review and adjust the automatic fix pull request settings:
 
-1. In Snyk, navigate to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server**, and click **Edit Settings**.
+1. In Snyk, navigate to **Organization settings** > **Integrations** > **Source control** > **Bitbucket Server**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix PRs** section and configure the relevant options.
 
 <div align="left">
@@ -86,8 +86,8 @@ The example that follows shows a Snyk pull request build check on the Bitbucket 
 
 To review and adjust the pull request tests settings:
 
-1. In Snyk, navigate to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server** and click **Edit Settings**.
-2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options.
+1. In Snyk, navigate to **Organization settings** > **Integrations** > **Source control** > **Bitbucket Server** and click **Edit Settings**.
+2. Scroll to **Default Snyk test for pull requests** > **Open Source Security & Licenses**, and configure the relevant options.
 
 <div align="left">
 
@@ -111,11 +111,11 @@ For Snyk to perform the required operations on monitored repositories, such as r
 ## **How to disconnect the Bitbucket Data Center/Server integration**
 
 {% hint style="warning" %}
-When you disconnect Snyk from your repository Projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
+When you disconnect Snyk from your Bitbucket repository projects, your credentials are removed from Snyk, and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
 To re-enable this integration later, you must re-enter your credentials and activate your Projects.
 {% endhint %}
 
-To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations**, follow these steps:
+To disable this integration, in **Organization settings** > **Integrations**, follow these steps:
 
 1. In your list of integrations, select the Bitbucket integration you want to deactivate and click **Edit settings** to open a page with the current status of your integration.\
    \
