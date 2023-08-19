@@ -1,13 +1,8 @@
 # Dependencies and licenses
 
-View dependencies and license information for all Projects in your Group or Organization, using the **Dependencies** option in your Group or Organization menu:
+You can [view dependencies](view-dependencies.md) and [license information](view-licenses.md) for all Projects in your Group or Organization, using the **Dependencies** option in your Group or Organization menu:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 12.45.48.png" alt="Dependencies for your Organization"><figcaption><p>Dependencies for your Organization</p></figcaption></figure>
-
-* [View dependencies](view-dependencies.md)
-* [View licenses](view-licenses.md)
-
-### Select Projects and filters
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 12.45.48.png" alt="Dependencies tab for an Organization"><figcaption><p>Dependencies tab for an Organization</p></figcaption></figure>
 
 For both dependencies and licenses, you can filter by Project or other filter criteria:
 
@@ -17,5 +12,5 @@ For both dependencies and licenses, you can filter by Project or other filter cr
 
 </div>
 
-* Select the **Projects** drop-down to select specific Projects.
-* Select the **Filters** drop-down to filter by [Severity level](../priorities-for-fixing-issues/severity-levels.md) or by Project type.
+* From the **Projects** drop-down, select specific Projects.
+* From the **Filters** drop-down, check the applicable boxes to filter by [Severity level](../priorities-for-fixing-issues/severity-levels.md) or Project type.
