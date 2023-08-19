@@ -15,7 +15,7 @@ IaC+ has additional improvements to help developers write secure infrastructure 
 
 * Line numbers in the CLI for better accuracy in detection issues.
 * Support for HashiCorp Terraform modules and variables for SCM repositories and the CLI.
-* Powerful code-to-cloud capabilities, including the ability to [fix cloud issues in IaC+](fix-cloud-issues-in-integrated-iac.md) and run IaC tests in the CLI with cloud context to reduce noise.
+* Powerful code-to-cloud capabilities, including the ability to [fix cloud issues in IaC](fix-cloud-issues-in-integrated-iac.md) and run IaC tests in the CLI with cloud context to reduce noise.
 
 ## Features of IaC+
 

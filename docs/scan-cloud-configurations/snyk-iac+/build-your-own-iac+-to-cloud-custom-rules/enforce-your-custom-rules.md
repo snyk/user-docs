@@ -10,5 +10,5 @@ This command enables you to enforce your Custom Rules for your Organization as a
 
 For more information, see the following pages:
 
-* [Test your IaC+ files with the Snyk CLI](../test-your-iac+-files-with-the-snyk-cli.md)
+* [Test your IaC+ files with the Snyk CLI](../test-your-iac-files-with-the-snyk-cli.md)
 * [Snyk Policy Engine repository](https://github.com/snyk/policy-engine)

@@ -1,7 +1,7 @@
 # Getting started with IaC+ in the Web UI
 
 {% hint style="info" %}
-This page describes a process using the Snyk Web UI. For details on using Integrated IaC with the Snyk CLI, see [Test your Integrated IaC files with Snyk CLI](test-your-iac+-files-with-the-snyk-cli.md).
+This page describes a process using the Snyk Web UI. For details on using Integrated IaC with the Snyk CLI, see [Test your Integrated IaC files with Snyk CLI](test-your-iac-files-with-the-snyk-cli.md).
 {% endhint %}
 
 {% hint style="warning" %}
