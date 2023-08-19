@@ -1,4 +1,4 @@
-# Build your own IaC+ to cloud custom rules
+# Build your own IaC to cloud custom rules
 
 {% hint style="info" %}
 **Feature availability**\
@@ -30,7 +30,7 @@ Complementing Snyk’s predefined rules, IaC to Cloud Custom Rules enables you t
 
 The following are the steps in using Cloud Custom Rules:
 
-1. [Create a Custom Rules Project](../../integrated-iac-with-cloud-context/build-your-own-iac-to-cloud-custom-rules/create-a-custom-rules-project.md)
+1. [Create a Custom Rules Project](create-a-custom-rules-project.md)
 2. [Create a Custom Rule](create-a-custom-rule.md)
 3. [(Recommended) Write a Custom Rule Spec (Unit Test)](recommended-write-a-custom-rule-spec-unit-test.md)
 4. [(Recommended) Test your Custom Rule](recommended-test-your-custom-rule.md)
