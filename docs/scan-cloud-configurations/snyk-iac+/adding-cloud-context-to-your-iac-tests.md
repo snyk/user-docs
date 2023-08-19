@@ -1,4 +1,4 @@
-# Adding cloud context to your IaC+ tests
+# Adding cloud context to your IaC tests
 
 {% hint style="info" %}
 The cloud context feature is available for [IaC+](./) only and supports AWS.
@@ -6,7 +6,7 @@ The cloud context feature is available for [IaC+](./) only and supports AWS.
 
 ## What is cloud context?
 
-Snyk IaC's cloud context feature uses information from deployed cloud infrastructure, either via [IaC+ ](./)or through local enumeration, to suppress certain issues from your IaC tests.
+The Snyk IaC cloud context feature uses information from deployed cloud infrastructure, either through [IaC+ ](./)or local enumeration, to suppress certain issues from your IaC tests.
 
 For example, suppose your Terraform configuration declares an Amazon Web Services (AWS) S3 bucket that does not have a public access block, but you have an account-level public access block. Snyk applies the cloud context from your AWS account to suppress false positive issues stating your bucket is not secured by a public access block.
 
@@ -43,7 +43,7 @@ The output summary lists the number of suppressed issues, for example, `Cloud co
 
 Currently, Terraform for Amazon Web Services (AWS) is supported.
 
-Snyk IaC can apply cloud context and suppress issues in your IaC test results by [Bringing context from Snyk](adding-cloud-context-to-your-iac+-tests.md#bringing-context-from-a-snyk-cloud-scan).
+Snyk IaC can apply cloud context and suppress issues in your IaC test results by [Bringing context from Snyk](adding-cloud-context-to-your-iac-tests.md#bringing-context-from-a-snyk-cloud-scan).
 
 ## Bringing context from Snyk <a href="#bringing-context-from-a-snyk-cloud-scan" id="bringing-context-from-a-snyk-cloud-scan"></a>
 
