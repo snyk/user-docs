@@ -7,7 +7,7 @@ IaC+ is currently in **closed beta**. Reach out to your account team if you woul
 
 ## Overview of IaC+
 
-Iac+ is a new version of Snyk IaC that has cloud context to secure cloud configurations across the entire SDLC, from code to deployed AWS, Azure, and Google Cloud environments. IaC+ has the Snyk cloud context interfaces, workflows, policy engine, and data model.
+IaC+ is a new version of Snyk IaC that has cloud context to secure cloud configurations across the entire SDLC, from code to deployed AWS, Azure, and Google Cloud environments. IaC+ has the Snyk cloud context interfaces, workflows, policy engine, and data model.
 
 Snyk cloud context helps users find, prioritize, and fix cloud misconfigurations by providing for scanning and testing deployed cloud resources with a library of predefined security rules. Scanning generates a record of issues that can be filtered and triaged.
 
@@ -21,7 +21,7 @@ IaC+ has additional improvements to help developers write secure infrastructure 
 
 ### Developer-first security for cloud configurations
 
-With Iac+, Snyk extends its focus on developer security to enable developers to build and deploy secure cloud configurations from IaC+ in the IDE through to production. Snyk has the same interfaces across the UI and API for cloud configurations in code and in deployed environments.
+With IaC+, Snyk extends its focus on developer security to enable developers to build and deploy secure cloud configurations from IaC+ in the IDE through to production. Snyk has the same interfaces across the UI and API for cloud configurations in code and in deployed environments.
 
 ### Security and compliance posture for security teams
 
