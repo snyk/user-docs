@@ -3,32 +3,38 @@
 {% hint style="info" %}
 **Feature availability**\
 This feature is available to Enterprise customers. See [pricing plans](https://snyk.io/plans/) for more details.
+
+Snyk policies apply only to Snyk Open Source scans.
 {% endhint %}
 
-Snyk policies define how Snyk behaves when encountering types of issues. You can define actions for specific types of issues encountered using customizable [Snyk policies](./).
+Snyk policies contain rules to define how Snyk behaves when encountering specific types of issues. With policies, you can identify types of issues based on conditions, such as `no exploit available`, and then apply actions to these issues, such as changing the severity. Thus by using customizable Snyk policies, you can define actions for specific types of issues encountered in scanning.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Snyk Polidy manager"><figcaption><p>Snyk Polidy manager</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Snyk Policy manager"><figcaption><p>Snyk Policy manager</p></figcaption></figure>
 
 </div>
 
-This documentation helps you to learn about and use Snyk policies.
+Using the Snyk Policy Manager, you can [view](view-policies.md), [create, and edit](create-and-edit-policies.md) policies. Policies are stored in t[he `.snyk` file](the-.snyk-file.md).
 
-### Understand policies
+## Benefits of Snyk policies
 
-* [Introduction to policies](shared-policies-overview.md)
-* [Use policies in the SDLC](use-policies-in-the-sdlc.md)
-* [View policies](view-policies.md)
+Policies give you a quick and automated way to identify and triage issues that are irrelevant to or unimportant in your application development. This reduces the noise level, saving valuable development time and allowing developers to take more responsibility for and ownership of security.
 
-### Manage policies
+Policies help prioritize issues to address and can ensure vulnerable or non-compliant components do not escape notice. Policies are part of the governance framework of your company.
 
-* [Create and edit policies](create-and-edit-policies.md)
-* [Manage security policies](security-policies/)
-* [Manage license policies](license-policies/)
+For more information, see [Use policies in the SDLC](use-policies-in-the-sdlc.md).
 
-### Apply policies
+## Categories of policies
 
-* [Apply policies to Projects](apply-a-policy-to-projects.md)
-* [Apply policies to Organizations](apply-a-policy-to-organizations.md)
-* [The .snyk file](the-.snyk-file.md)
+Snyk has security and license policies.
+
+* [Security policies](security-policies/) define Snyk behavior in treating vulnerabilities, for example, according to severity levels or ignored issues.
+* [License policies](license-policies/) define Snyk behavior in treating license issues, such as allowing or disallowing packages with certain license types and avoiding the use of packages containing incompatible licenses.
+
+## Apply **policies to  Projects or Organizations**
+
+Different applications may need different policies applied. Mission-critical applications are likely to need more control than internal applications in a sandbox environment. You can establish the needed control by applying policies to:
+
+* [Projects](apply-a-policy-to-projects.md), using Project tags and attributes.
+* [Organizations](apply-a-policy-to-organizations.md) in a Snyk Group.
