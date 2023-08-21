@@ -10,7 +10,7 @@ This command tests your built project and third-party applications, and it is co
 Read more about the Log4Shell vulnerability in the Snyk [VulnDB entry](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720).
 {% endhint %}
 
-To test Java projects using their package manager manifest files, see [Snyk for Java (Gradle, Maven](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md). To learn more about the `snyk test --scan-all-unmanaged`, see the [Maven options section of the CLI reference](https://docs.snyk.io/snyk-cli/cli-reference#options-for-maven-projects).
+To test Java projects using their package manager manifest files, see [Snyk for Java (Gradle, Maven](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md). To learn more about the `snyk test --scan-all-unmanaged`, see the [Maven options section of the CLI reference](https://docs.snyk.io/snyk-cli/cli-reference#options-for-maven-projects).
 
 ## Usage
 

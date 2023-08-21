@@ -93,7 +93,7 @@ The following capabilities are available for all Snyk users:
 
 **With Git integrations**
 
-Snyk allows you to [run PR Checks](../scan-application-code/run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
+Snyk allows you to [run PR Checks](../scan-applications/run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
 
 These results are viewable on the Snyk projects screen, for:
 
@@ -203,7 +203,7 @@ Use the **--help** option in the CLI or [docs](https://docs.snyk.io/snyk-cli/cli
 
 #### Testing your own code:
 
-* Framework support - see [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md)
+* Framework support - see [Snyk Code - Supported languages and frameworks](../scan-applications/snyk-code/snyk-code-language-and-framework-support.md)
 * Use the **snyk code test** command from the root of the project to perform source code analysis.
 
 #### Testing open source dependencies
@@ -223,8 +223,8 @@ Use the **--help** option in the CLI or [docs](https://docs.snyk.io/snyk-cli/cli
     * To scan all projects at once (recommended), use the **--all-sub-projects** option:\
       (that is, **snyk test --all-sub-projects**). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
     * To scan a specific project (for example, myapp), use **--sub-project=** (that is, **snyk test --sub-project=myapp**)
-  * To test specific configurations, see detailed examples here [Snyk for Java and Kotlin](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md#configurations-for-gradle-project)
-  * Android Build variants, see [Snyk for Java and Kotlin](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md#configurations-for-gradle-project)
+  * To test specific configurations, see detailed examples here [Snyk for Java and Kotlin](../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md#configurations-for-gradle-project)
+  * Android Build variants, see [Snyk for Java and Kotlin](../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md#configurations-for-gradle-project)
   * Unmanaged Jars - see [Scan all unmanaged JAR files](../snyk-cli/scan-and-maintain-projects-using-the-cli/scan-all-unmanaged-jar-files.md).
     * Use **--scan-all-unmanaged --all-projects** to recursively find all jars under the present working directory.
 

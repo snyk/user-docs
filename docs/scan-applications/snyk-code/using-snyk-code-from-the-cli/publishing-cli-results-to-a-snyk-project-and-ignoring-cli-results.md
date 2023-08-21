@@ -72,7 +72,7 @@ Publishing and ignoring CLI issues in SCM Projects is in [Closed Beta](../../../
 The minimum supported CLI version is 1.1194.0.
 {% endhint %}
 
-Using Snyk Code via the CLI supports publishing test results to an existing Snyk Code SCM Project in the Web UI and respecting issues ignored in a Snyk Project in the Web UI so you can filter them from the analysis results. This provides [Snyk Code Data flow](../exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue/exploring-the-data-flow-page.md) for the CLI results snapshot.
+Using Snyk Code via the CLI supports publishing test results to an existing Snyk Code SCM Project in the Web UI and respecting issues ignored in a Snyk Project in the Web UI so you can filter them from the analysis results. This provides [Snyk Code Data flow](../exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue/exploring-the-data-flow-page.md) for the CLI results snapshot.
 
 Be sure you have the prerequisites and publish the results as you intend:
 

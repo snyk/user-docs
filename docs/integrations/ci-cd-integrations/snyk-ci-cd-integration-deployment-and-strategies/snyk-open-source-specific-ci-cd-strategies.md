@@ -61,6 +61,6 @@ Some customers have complex projects, with multiple languages, package managers,
 * For most **Gradle projects**, using `--all-projects` works, as it invokes gradle-specific options behind the scenes in the form of: `snyk test --file=build.gradle --all-sub-projects` when it finds the build file as part of the `--all-projects` search.
 * **Gradle** may require additional configuration parameters. If so, target the other artifacts using `--file=` for each manifest of the other languages and package managers. You must then use `--all-sub-projects` and potentially `--configuration-matching` to scan a complex Gradle project.
 
-See [Snyk for Java and Kotlin](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md) for more information.
+See [Snyk for Java and Kotlin](../../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md) for more information.
 
 ##

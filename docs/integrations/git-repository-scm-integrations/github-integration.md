@@ -36,12 +36,12 @@ You can then scroll down to the section required, and set the options accordingl
 * Pull requests:
   * [Open Snyk automatic PRs from a fixed GitHub account](github-integration.md#setting-an-account-to-open-snyk-prs)
   * [Automatic fix PRs](github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-  * [Automatic dependency upgrade PRs](../../scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
+  * [Automatic dependency upgrade PRs](../../scan-applications/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
   * [Pull request assignees](github-integration.md#pr-assignment)
-  * [Snyk vulnerability patches](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
-* Pull request status checks ([PR Checks](../../scan-application-code/run-pr-checks/))
-  * [Open Source security and licenses](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
-  * [Code analysis](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
+  * [Snyk vulnerability patches](../../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
+* Pull request status checks ([PR Checks](../../scan-applications/run-pr-checks/))
+  * [Open Source security and licenses](../../scan-applications/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
+  * [Code analysis](../../scan-applications/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
 * Dockerfiles
   * [Detect Dockerfiles](../../scan-containers/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
   * [Update Dockerfile base images](../../scan-containers/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
@@ -110,7 +110,7 @@ All the commits in Snyk's pull requests are done by `snyk-bot@snyk.io` (a verifi
 
 ### **Pull request status checks**
 
-The Snyk [PR Checks](../../scan-application-code/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
+The Snyk [PR Checks](../../scan-applications/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
 
 This example shows how Snyk PR checks appear on the GitHub pull request page.
 
@@ -331,7 +331,7 @@ Badges currently work only for public npm packages and GitHub repositories and f
 
 ### **Badges for custom manifest file locations**
 
-By default, the badge will test against the first [valid manifest file](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) it detects in the root of your Project.
+By default, the badge will test against the first [valid manifest file](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) it detects in the root of your Project.
 
 If your manifest file is in a different location from the root of the repository, or if you have multiple manifest files for which you would like to show a badge, you can pass a target file query string parameter to direct the badge to test against another supported manifest file.
 

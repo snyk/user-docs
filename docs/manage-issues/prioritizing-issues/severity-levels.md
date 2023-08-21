@@ -5,7 +5,7 @@ Use severity levels to help you with [vulnerability assessment](https://snyk.io/
 <img src="../../.gitbook/assets/Screenshot 2022-08-16 at 09.52.22.png" alt="Issues at each level of severity, C, H, M, and L" data-size="original">
 
 {% hint style="info" %}
-Severity levels also apply to license issues. See [Licenses](../../scan-application-code/snyk-open-source/licenses/).
+Severity levels also apply to license issues. See [Licenses](../../scan-applications/snyk-open-source/licenses/).
 {% endhint %}
 
 The severity levels are defined in the following table.

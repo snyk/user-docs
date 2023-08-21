@@ -44,7 +44,7 @@ This is checked by default if there is currently no fix available for the issue.
 {% hint style="info" %}
 An issue is ignored until either of these conditions occurs: the ignore period expires, or the vulnerability becomes fixable.
 
-An issue ignored in an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any subsequent [PR checks](../../scan-application-code/run-pr-checks/) across all branches of the Project.
+An issue ignored in an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any subsequent [PR checks](../../scan-applications/run-pr-checks/) across all branches of the Project.
 {% endhint %}
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit the ignore or unignore the issue.
@@ -121,7 +121,7 @@ For more information, see [Security policies](../policies/security-policies/).
 
 ## Ignore issues in Snyk Code
 
-For [Snyk Code](../../scan-application-code/snyk-code/), the ignore functionality may capture a wider range of issues than other products.
+For [Snyk Code](../../scan-applications/snyk-code/), the ignore functionality may capture a wider range of issues than other products.
 
 Static code analysis by Snyk Code transforms the input code into an intermediate representation, which captures the flow of code but abstracts away some details.
 
@@ -143,7 +143,7 @@ var generalLogFileName = req.query.file || 'standard_log.log';
 var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data) {...
 ```
 
-For more information, see [Exploring the vulnerability issues discovered by Snyk Code](../../scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/).
+For more information, see [Exploring the vulnerability issues discovered by Snyk Code](../../scan-applications/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-vulnerability-issues-discovered-by-snyk-code.md).
 
 ## Ignore issues in Snyk IaC
 

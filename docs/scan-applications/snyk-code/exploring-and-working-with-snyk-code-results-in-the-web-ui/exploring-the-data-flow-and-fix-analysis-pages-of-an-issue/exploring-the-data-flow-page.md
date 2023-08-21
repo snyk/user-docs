@@ -10,7 +10,7 @@ The sink is the operation in the code where the problem is executed by the appli
 
 For example, in the following **Path Traversal** issue, the developer has not sanitized the input. This allows an attacker to perform a pass traversal attack to access any file in the file system, including sensitive data such as password files:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Data flow page - Example.png" alt="Path Traversal issue"><figcaption><p>Path Traversal issue</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Data flow page - Example.png" alt="Path Traversal issue"><figcaption><p>Path Traversal issue</p></figcaption></figure>
 
 Every issue discovered by Snyk Code has a data flow. If an issue has only one step, for example, in the case of hardcoded secrets, the source of the issue will be displayed on the **Data flow** page.
 
@@ -19,7 +19,7 @@ The **Data flow** page enables you to do the following:
 * [View the taint flow of an issue in your code from source to sink](exploring-the-data-flow-page.md#viewing-the-taint-flow-of-an-issue-in-your-code).
 * [Open the tainted source code in the integrated SCM](exploring-the-data-flow-page.md#opening-the-tainted-source-code-in-the-integrated-scm).
 * Share your feedback with Snyk about the discovered issue using the **Share Feedback** button.\
-  For more information, see [Sharing your feedback with Snyk Code](../../sharing-your-feedback-with-snyk-code.md).
+  For more information, see [Sharing your feedback with Snyk Code](../sharing-your-feedback-with-snyk-code.md).
 * Ignore the open vulnerability issue using the **Ignore** button.\
   For more information, see [Ignore issues](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues).
 
@@ -29,14 +29,14 @@ The **Data flow** page shows the taint flow of an issue in your code from source
 
 To view the exact code lines of the taint flow, select the required step on the left pane. The corresponding code snippet will appear in the right pane:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Data flow page - Example - Selecting step.png" alt="Code lines of the taint flow"><figcaption><p>Code lines of the taint flow</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Data flow page - Example - Selecting step.png" alt="Code lines of the taint flow"><figcaption><p>Code lines of the taint flow</p></figcaption></figure>
 
 ## **Opening the tainted source code in the integrated SCM**
 
 To open the displayed source code on the SCM, click the file name above the right pane:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Data flow page - Source code link.png" alt="Filename above the rigth pane"><figcaption><p>Filename above the rigth pane</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Data flow page - Source code link.png" alt="Filename above the rigth pane"><figcaption><p>Filename above the rigth pane</p></figcaption></figure>
 
 The source code appears in the integrated SCM, showing you exactly where to fix the vulnerability. Here, you can make the required fix to address the vulnerability in your code:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Results - Issues - Data flow page - Source code - in SCM.png" alt="HIghlight showoing shere to fix the vulnerability"><figcaption><p>HIghlight showoing shere to fix the vulnerability</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Data flow page - Source code - in SCM.png" alt="HIghlight showoing shere to fix the vulnerability"><figcaption><p>HIghlight showoing shere to fix the vulnerability</p></figcaption></figure>
