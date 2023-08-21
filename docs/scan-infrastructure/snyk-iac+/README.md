@@ -37,7 +37,7 @@ IaC+ enables you to [fix Cloud issues directly in the IaC source code](fix-cloud
 
 ### New Issues UI
 
-IaC+ focuses on providing visibility into issues of a Snyk Organization across all its configuration templates. As a result, traditional Projects are currently not supported in IaC+. Instead, [issues](../../scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/) are on the new [Cloud tab](../../scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), which provides a snapshot of the resources that are misconfigured.
+IaC+ focuses on providing visibility into issues of a Snyk Organization across all its configuration templates. As a result, traditional Projects are currently not supported in IaC+. Instead, [issues](cloud-and-integrated-iac-issues/) are on the new [Cloud tab](cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), which provides a snapshot of the resources that are misconfigured.
 
 Resource configuration snapshots record the configuration attributes of every resource scanned for a user's configuration file, in contrast to the current IaC Projects view. This lets users review a resource configuration at a given moment in time and see the attributes that have caused a specific issue.
 

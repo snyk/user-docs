@@ -8,7 +8,7 @@ With Snyk Infrastructure as Code, you can test your configuration files directly
 
 * [Test your configuration files](test-your-iac-files/)
 * [Share CLI results with the Snyk Web UI](share-cli-results-with-the-snyk-web-ui.md)
-* [IaC ignores using the `.snyk` policy file](../../../scan-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md)
+* [IaC ignores using the `.snyk` policy file](iac-ignores-using-the-.snyk-policy-file.md)
 * [Understanding the IaC CLI test results](understanding-the-cli-test-output/) (has information about reports)
 * [IaC exclusions using the command line](iac-exclusions-using-the-command-line.md)
 * [Test your Terraform files with Snyk CLI](test-your-iac-files/test-your-terraform-files-with-snyk-cli.md)

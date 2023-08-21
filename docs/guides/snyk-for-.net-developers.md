@@ -28,9 +28,9 @@ Note that there is a monthly limit to the number of tests performed if a particu
   * License Compliance (paid plans) (Nuget)
 * [Snyk Container](../scan-containers/)
   * Scan for issues with container images if you are building containers
-* [Snyk Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/)
+* [Snyk Infrastructure as Code](../scan-infrastructure/snyk-infrastructure-as-code/)
   * Scan for configuration issues when you deploy your applications using Azure Resource Manager, Kubernetes deployment files, Terraform, or AWS Cloudformation templates.
-* [Integrated IaC with cloud context](../scan-configurations/snyk-iac+/): Security from code to cloud and back
+* [Integrated IaC with cloud context](../scan-infrastructure/snyk-iac+/): Security from code to cloud and back
   * Scan for runtime misconfiguration issues in your cloud and containers, detect infrastructure drift, and fix issues at their source.
 
 {% hint style="info" %}
@@ -183,7 +183,7 @@ See [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-
 
 #### Infrastructure as code
 
-See [Supported Providers](../scan-configurations/supported-iac-and-cloud-providers.md).
+See [Supported Providers](../scan-infrastructure/supported-iac-and-cloud-providers.md).
 
 See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/) for more details.
 

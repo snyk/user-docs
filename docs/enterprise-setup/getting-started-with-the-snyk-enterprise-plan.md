@@ -109,7 +109,7 @@ A scan with [**Snyk code test** ](../scan-application-code/snyk-code/using-snyk-
 
 A scan with [**Snyk container test**](../scan-containers/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image to one that is more secure.
 
-A scan with [**Snyk iac test**](../scan-cloud-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) returns advice on how to resolve discovered issues in your Infrastructure as Code files.
+A scan with [**Snyk iac test**](../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) returns advice on how to resolve discovered issues in your Infrastructure as Code files.
 
 ## Next steps in implementing the Snyk Enterprise plan
 

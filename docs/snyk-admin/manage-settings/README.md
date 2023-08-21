@@ -21,7 +21,7 @@ At the Group level, select **Settings** to view admin settings:
 * [Your Plan and Billing](your-plan-and-billing.md)
 * [Plans and Pricing](plans-and-pricing.md)
 * [Snyk Preview](snyk-preview.md)
-* [Infrastructure as Code](../../scan-cloud-configurations/snyk-infrastructure-as-code/)
+* [Infrastructure as Code](../../scan-infrastructure/snyk-infrastructure-as-code/)
 
 ## Organization settings
 
@@ -39,7 +39,7 @@ At the Organization level, select **Settings** to manage settings:
 * [Languages](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
 * [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
-* [Snyk Cloud](../../scan-configurations/snyk-iac+/)
+* [Snyk Cloud](../../scan-infrastructure/snyk-iac+/)
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
 * [Notifications](../manage-notifications.md)
 * [Snyk Preview](snyk-preview.md)

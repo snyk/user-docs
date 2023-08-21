@@ -42,7 +42,7 @@ For a list of supported resource types for cloud environments, see the following
 
 ## Resource mapping
 
-A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details like resource IDs that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when cloud environments are created and updated, which in turn creates, updates, or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](../../scan-configurations/snyk-iac+/fix-cloud-issues-in-integrated-iac.md).
+A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details like resource IDs that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when cloud environments are created and updated, which in turn creates, updates, or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](fix-cloud-issues-in-integrated-iac.md).
 
 ## Rules
 

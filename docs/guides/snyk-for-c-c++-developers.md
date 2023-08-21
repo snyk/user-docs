@@ -4,7 +4,7 @@
 
 Use this guide to understand the best way to apply Snyk in your workflow and to be aware of key considerations for your chosen technology stack.&#x20;
 
-This guide focuses on scanning your application code, which is specific to your open source usage and programming language. [Snyk Container](../scan-containers/) and [Snyk Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/) (IaC) also support your container and Infrastructure as Code needs.&#x20;
+This guide focuses on scanning your application code, which is specific to your open source usage and programming language. [Snyk Container](../scan-containers/) and [Snyk Infrastructure as Code](../scan-infrastructure/snyk-infrastructure-as-code/) (IaC) also support your container and Infrastructure as Code needs.&#x20;
 
 {% hint style="info" %}
 [Snyk Code](../scan-application-code/snyk-code/) for C/C++ is currently in Beta, it can be enabled using **Settings > Snyk Preview.**
@@ -32,9 +32,9 @@ Note that there is a monthly limit to the number of tests performed if a particu
   * License Compliance (paid plans)&#x20;
 * [Snyk Container](../scan-containers/)
   * Scan for issues with container images if you are building containers
-* [Snyk Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/)
+* [Snyk Infrastructure as Code](../scan-infrastructure/snyk-infrastructure-as-code/)
   * Scan for configuration issues when you deploy your applications using AWS Cloudformation templates, Kubernetes deployment files, Terraform, or Azure Resource Manager.
-* [Snyk Cloud](../scan-configurations/snyk-iac+/): Security from code to cloud and back
+* [Snyk Cloud](../scan-infrastructure/snyk-iac+/): Security from code to cloud and back
   * Scan for runtime misconfiguration issues in your cloud and containers, detect infrastructure drift, and fix issues at their source.
 
 {% hint style="info" %}

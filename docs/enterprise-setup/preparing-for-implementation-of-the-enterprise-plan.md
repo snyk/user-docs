@@ -188,7 +188,7 @@ Snyk Infrastructure as Code enables your developers to scan their configuration 
 
 If you imported Projects prior to enabling, you must re-import them.
 
-For more information, see [Snyk Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/).
+For more information, see [Snyk Infrastructure as Code](../scan-infrastructure/snyk-infrastructure-as-code/).
 
 ### Configure notifications
 
