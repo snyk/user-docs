@@ -270,7 +270,7 @@
       * [Snyk patches to fix vulnerabilities](scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
       * [Snyk Vulnerability Database](scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md)
       * [Vulnerability fix types](scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md)
-      * [Differences in Open Source vulnerability counts across environments](snyk-cli/test-for-vulnerabilities/differences-in-vulnerability-counts-across-environments.md)
+      * [Differences in Open Source vulnerability counts across environments](scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
       * [Troubleshooting Open Source vulnerability fixing](scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/troubleshooting-open-source-vulnerability-fixing.md)
     * [Automatic and manual PRs with Snyk Open Source](scan-application-code/snyk-open-source/open-source-basics/README.md)
       * [Automated pull request creation for new fixes](scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md)
