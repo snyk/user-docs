@@ -65,7 +65,7 @@ To provide this feature, Snyk creates a temporary copy of your Git repository co
 For more information, see [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md).
 {% endhint %}
 
-1. Set up your [GitHub integration](../../integrations/git-repository-scm-integrations/github-integration.md).
+1. Set up your [GitHub integration](../../integrations/git-repository-scm-integrations/snyk-github-integration.md).
 2. Enable Reachable Vulnerabilities analysis:
    * In the **Organization** settings, go to the **Languages** section.
    * Go to the **Reachable vulnerabilities analysis** section.
@@ -84,9 +84,9 @@ After import or testing of a Project via Snyk UI, the Project is monitored by Sn
 3. **Call path** - Allows you to see the path from your code to the vulnerable function to validate the result.
 4. **Priority score** - Allows you to see reachable vulnerabilities first, as Snyk will increase the priority score for reachable vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/image (124) (1) (1) (1) (2) (1) (1) (1) (2).png" alt="Reachability call path"><figcaption><p>Reachability call oath</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (124) (1) (1) (1) (2) (1) (1) (1) (2) (2).png" alt="Reachability call path"><figcaption><p>Reachability call oath</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (126) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Priority Score"><figcaption><p>Priority score</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (126) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Priority Score"><figcaption><p>Priority score</p></figcaption></figure>
 
 ## Reachability status in reports
 

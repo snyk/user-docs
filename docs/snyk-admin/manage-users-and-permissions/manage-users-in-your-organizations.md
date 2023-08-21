@@ -53,7 +53,7 @@ To change the role of a member, click on the member's **Role** entry, and use th
 For Enterprise plan customers who created custom member roles, Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error, while trying to update the role of a member, invite a new member or add an existing member with a role that has more privileges than the logged in user.
 {% endhint %}
 
-![](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
+![](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png>)
 
 ### Delete members
 
