@@ -4,7 +4,7 @@
 You must be a Group administrator to access policies for that Group.
 {% endhint %}
 
-Select the **Policies** menu option to see the policies in your Group, arranged by category ([License policies](license-policies/) and [Security policies](security-policies/)).
+Select the **Policies** menu option to see the policies in your Group, arranged by category, [License policies](license-policies/) and [Security policies](security-policies/).
 
 <div align="left">
 
@@ -12,26 +12,26 @@ Select the **Policies** menu option to see the policies in your Group, arranged 
 
 </div>
 
-Expand a category to see policies in that category:
+Expand a category to see a list of the policies in that category:
 
-<figure><img src="../../.gitbook/assets/snyk-policy-manager.png" alt="Policy manager screen"><figcaption><p>Policy manager screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-policy-manager.png" alt="License policies list expanded"><figcaption><p>License policies list expanded</p></figcaption></figure>
 
 {% hint style="info" %}
 This list includes the [default policy](view-policies.md#default-policies), which is automatically created for new groups for each policy category and cannot be removed.
 {% endhint %}
 
-### Policy manager details
+### Policy details
 
-The Policy manager screen appears similar to the following:
+When you expand a category, the screen shows the policies assigned to **Project attributes** and applied to **Organizations**. You can click to **Learn which policies take precedence** in each category. You can also **search** for a particular policy.
 
 <figure><img src="../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png" alt="Policy manager screen details"><figcaption><p>Policy manager screen details</p></figcaption></figure>
 
 ## Default policies
 
-Each policy category has its own default policy. Default policies can only be applied to Organizations, not Projects.
+Each policy category has a default policy. Default policies can be applied only to Organizations, not Projects.
 
-When you create a new Organization, it will automatically be added to the default policy unless you have selected to copy an existing Organization's settings. Organizations can be moved to a different policy if desired.
+When you create a new Organization, it will automatically be added to the default policy unless you have copied the settings of an existing Organization. You can move an Organization to a different policy if desired.
 
 The default policy cannot be deleted; however, the default policy name, description, and rules can be edited to match your preferences. A default policy can also contain no rules if you'd prefer.
 
-See [Assign a policy to Organizations](apply-a-policy-to-organizations.md) for more details.
+See [Assign a policy to Organizations](apply-a-policy-to-organizations.md) for details.
