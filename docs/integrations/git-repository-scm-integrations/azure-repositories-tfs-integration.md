@@ -63,7 +63,7 @@ To enable integration between Azure Repository and Snyk:
    *   **Set your organization**: Enter the slug for your Organization only. \
        For example, enter `your-azure-devops-org`
 
-       <figure><img src="../../.gitbook/assets/image (345).png" alt="If the Organization prompt appears, enter only the &#x27;org slug&#x27; found in your azure URL"><figcaption><p>If the Organization prompt appears, enter only the 'org slug' found in your azure URL</p></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (345) (1).png" alt="If the Organization prompt appears, enter only the &#x27;org slug&#x27; found in your azure URL"><figcaption><p>If the Organization prompt appears, enter only the 'org slug' found in your azure URL</p></figcaption></figure>
    *   **Set your host**: enter the entire url. \
        For example, enter `https://dev.azure.com/your-azure-devops-org` \
        Alternatively, you may enter a custom url that is publicly reachable
@@ -81,7 +81,7 @@ If the connection to Azure fails, a notification appears under the **Azure Repos
 
 ## Add Projects to Snyk for Azure Repos
 
-Snyk tests and monitors Azure Repos by evaluating root folders and custom file locations for the [languages that Snyk supports](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
+Snyk tests and monitors Azure Repos by evaluating root folders and custom file locations for the [languages that Snyk supports](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
 
 To add a default Project:
 

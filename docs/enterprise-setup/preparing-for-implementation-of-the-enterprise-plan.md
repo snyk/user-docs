@@ -89,7 +89,7 @@ The Policy manager allows you to define license and security policies at the Gro
 
 License policies define how your Organizations identify license compliance issues in your Open Source packages and change the severity of issues associated with use of those licenses.
 
-See [Getting Started with Snyk License Compliance Management](../scan-applications/snyk-open-source/licenses/getting-started-snyk-licensing-compliance.md) for more details.
+See [Getting Started with Snyk License Compliance Management](../scan-application-code/snyk-open-source/licenses/getting-started-snyk-licensing-compliance.md) for more details.
 
 Security policies define the way your Organizations handle specific issues or exploit maturity levels. A policy can programmatically increase an issue’s severity rating, decrease the severity rating, or ignore the issue.
 
@@ -175,7 +175,7 @@ When you create a new Organization, Snyk Code (SAST) scanning is disabled by def
 
 If you imported Projects prior to enabling, you must re-import them.
 
-See [Getting started with Snyk Code](../scan-applications/snyk-code/getting-started-with-snyk-code/) for more details.
+See [Getting started with Snyk Code](../scan-application-code/snyk-code/getting-started-with-snyk-code/) for more details.
 
 ### Enable Infrastructure as Code
 

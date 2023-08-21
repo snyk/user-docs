@@ -1,11 +1,11 @@
 # GitLab integration
 
 {% hint style="info" %}
-**Feature availability**\
+&#x20;**Feature availability**\
 The Snyk GitLab integration is available for [Snyk Enterprise plan](https://snyk.io/plans/) customers. [Snyk Broker](../../enterprise-setup/snyk-broker/) is required if you integrate from a private network.
 {% endhint %}
 
-## Prerequisites for GitLab integration
+## Prerequisites for Snyk GitLab integration
 
 * GitLab versions 9.5 and above (API v4).
 * A public or private GitLab Group or Project.
@@ -38,19 +38,19 @@ To trigger the creation of fix pull requests manually, all users in a Snyk Organ
 
 ### Add a GitLab Personal Access Token in GitLab
 
-1.  Generate a GitLab Personal Access Token in your GitLab instance.\
-    Select your profile icon, then **Edit Profile > Access Tokens**.\
+1.  Generate a GitLab Personal Access Token in a GitLab instance.\
+    Select the profile icon, then **Edit Profile > Access Tokens**.\
     Set the token name, for example, Snyk, and select the **api** scope.\
     Alternatively, use a [Group Access Token](https://docs.gitlab.com/ee/user/group/settings/group\_access\_tokens.html) to grant access to all GitLab projects in a GitLab group or subgroup without contributing to GitLab's licensed user count.\
 
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-31-25.png" alt=""><figcaption><p>Create a GitLab Personal Access Token with the api scope.</p></figcaption></figure>
-2.  Navigate to the Snyk [**Integrations**](https://app.snyk.io/integrations) page, select the GitLab integration tile, and enter the URL of your GitLab instance and the token you generated.\
+2.  Navigate to the Snyk [**Integrations**](https://app.snyk.io/integrations) page, select the GitLab integration tile, and enter the URL of the GitLab instance and the token you generated.\
 
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Add the URL of your GitLab instance and the generated Personal access token.</p></figcaption></figure>
 3. Click **Save**.
-4.  When the tile on the **Integrations** page indicates the integration is **Configured**, click the tile and select the GitLab projects you want to test or select **Add projects** from your **Snyk** **Dashboard**.\
+4.  When the tile on the **Integrations** page indicates the integration is **Configured**, click the tile and select the GitLab projects to test or select **Add projects** from the **Snyk** **Dashboard**.\
 
 
     <div align="left">
@@ -71,16 +71,16 @@ Selecting the **api** scope with a Maintainer role allows:
 
 #### Create a GitLab Group Access Token
 
-1. Locate your GitLab Group and select **Settings > Access Tokens**.
+1. Locate the GitLab Group and select **Settings > Access Tokens**.
 2. Enter a descriptive token name such as "Snyk token", select the **Maintainer** role, and check the **api** scope**.**
 
 <figure><img src="../../.gitbook/assets/gitlab_group_token.png" alt="Generate GitLab group access token"><figcaption><p>Generate a GitLab group access token</p></figcaption></figure>
 
 #### Add a GitLab Group Access Token to Snyk
 
-1. Copy the token you generated from GitLab.
+1. Copy the token generated from GitLab.
 2. Navigate to the Snyk GitLab integration page by selecting the tile.
-3.  Paste your GitLab Group Access Token into the Snyk application field, the same way you would add a GitLab Personal Access Token.\
+3.  Paste the GitLab Group Access Token into the Snyk application field, the same way you would add a GitLab Personal Access Token.\
 
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Enter your GitLab Group Access Token into the Snyk application Personal access token field.</p></figcaption></figure>
@@ -106,14 +106,29 @@ Whenever a vulnerability is disclosed that affects a Project you are watching, S
 
 ### Get a Snyk merge request when new upgrades or patches are available
 
-When no upgrade is available, you can ignore or patch the vulnerability; patching is available only for Node.js Projects. When a fix option has become available, for example, an upgrade for a vulnerability you previously ignored, Snyk notifies you about this via email and also generates a merge request with the new fix.
+When no upgrade is available, you can ignore or patch the vulnerability; patching is available only for Node.js Projects. When a fix option has become available, such as an upgrade for a vulnerability you previously ignored, Snyk notifies you by email and generates a merge request with the new fix.
 
-## How to disable the GitLab integration
+## How to disconnect the Snyk GitLab integration
 
 {% hint style="warning" %}
-Disabling a GitLab integration effectively removes all Snyk integrations and webhooks, along with the Snyk credentials, and deactivates the GitLab Projects in the Snyk Web UI.
+Disconnecting the Snyk GitLab integration removes all Snyk webhooks, along with the Snyk credentials, and deactivates the GitLab Projects in the Snyk Web UI.
+
+The Projects will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on your pull requests.
 {% endhint %}
 
-The Project will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on your pull requests. Again, the webhook that enables the integration for this repo will be removed.
+1.  Navigate to the Snyk GitLab integration **Settings**.\
 
-You can restart watching at any time; however, re-initiating GitLab Projects for monitoring requires setting up the integration again.
+
+    <figure><img src="../../.gitbook/assets/2023-08-15_16-32-13.png" alt="Navigate to the Snyk GitLab integration Settings" width="375"><figcaption><p>Navigate to the Snyk GitLab integration Settings</p></figcaption></figure>
+2.  At the bottom of the page, select **Remove GitLab**.\
+
+
+    <figure><img src="../../.gitbook/assets/2023-08-15_15-43-00.png" alt="Remove GitLab from your configured Snyk integrations" width="563"><figcaption><p>Remove GitLab from your configured Snyk integrations</p></figcaption></figure>
+3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.\
+
+
+    <figure><img src="../../.gitbook/assets/2023-08-15_16-36-28.png" alt="Confirm diconnecting from GitLab" width="375"><figcaption><p>Confirm diconnecting from GitLab</p></figcaption></figure>
+
+After GitLab is disconnected, Snyk Projects imported from GitLab will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests. The webhook that enables the integration for this repository will be removed.
+
+You can re-connect at any time; however, re-initiating GitLab projects for monitoring requires setting up the integration again.

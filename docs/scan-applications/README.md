@@ -1,4 +1,4 @@
-# Scan application code
+# Scan applications
 
 ## Introduction
 
@@ -22,5 +22,5 @@ Scan and automatically address potential vulnerabilities when you review pull re
 
 ## Language and framework support
 
-* [Supported languages and package managers in Snyk Open Source](snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
-* [Supported languages and frameworks in Snyk Code](snyk-code/snyk-code-language-and-framework-support.md)
+* [Supported languages and package managers in Snyk Open Source](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
+* [Supported languages and frameworks in Snyk Code](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md)

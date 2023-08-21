@@ -7,7 +7,7 @@ Use this guide to understand the best way to apply Snyk in your workflow and to 
 This guide focuses on scanning your application code, which is specific to your open source usage and programming language. [Snyk Container](../scan-containers/) and [Snyk Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/) (IaC) also support your container and Infrastructure as Code needs.&#x20;
 
 {% hint style="info" %}
-[Snyk Code](../scan-applications/snyk-code/) for C/C++ is currently in Beta, it can be enabled using **Settings > Snyk Preview.**
+[Snyk Code](../scan-application-code/snyk-code/) for C/C++ is currently in Beta, it can be enabled using **Settings > Snyk Preview.**
 {% endhint %}
 
 ### Developer-first approach
@@ -26,8 +26,8 @@ Note that there is a monthly limit to the number of tests performed if a particu
 
 #### Snyk products
 
-* [Snyk Code](../scan-applications/snyk-code/): scan your own code for security vulnerabilities using source code analysis.
-* [Snyk Open Source](../scan-applications/snyk-open-source/)\*
+* [Snyk Code](../scan-application-code/snyk-code/): scan your own code for security vulnerabilities using source code analysis.
+* [Snyk Open Source](../scan-application-code/snyk-open-source/)\*
   * Open Source vulnerability testing and monitoring (All plans)
   * License Compliance (paid plans)&#x20;
 * [Snyk Container](../scan-containers/)
@@ -70,7 +70,7 @@ The following is available for all Snyk users.
 **With Git integrations**
 
 * Snyk can monitor for vulnerabilities in source code directly via Git integration.
-  * Pull request checks ([PR Checks](../scan-applications/run-pr-checks/)) for Snyk Code is currently in Closed Beta.
+  * Pull request checks ([PR Checks](../scan-application-code/run-pr-checks/)) for Snyk Code is currently in Closed Beta.
 
 {% hint style="info" %}
 For the Git integration, Open Source for C/C++ is only supported via CLI for automation purposes, as dependencies are typically managed outside of Git in the C/C++ ecosystem.&#x20;
@@ -153,11 +153,11 @@ snyk code test
 If you precompile components, the source code should still be present to get the best resuts and coverage.
 {% endhint %}
 
-For reporting, you can generate reports using the [snyk-to-html](../scan-applications/snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](../scan-applications/snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md).
+For reporting, you can generate reports using the [snyk-to-html](../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md).
 
 #### **With Snyk Open Source**
 
-For C/C++ open source, use the **--unmanaged** option to analyze license compliance issues and known security issues associated with open source. See [Snyk for C/C++ (Open Source) ](../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-c-c++.md)for details.
+For C/C++ open source, use the **--unmanaged** option to analyze license compliance issues and known security issues associated with open source. See [Snyk for C/C++ (Open Source) ](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-c-c++.md)for details.
 
 * To test, make sure the open-source source code is present, it may be placed in a vendored folder. This should not be an issue.
 * If you precompile open source, the open source code must still be present.
@@ -172,7 +172,7 @@ Similarly, for monitoring and sharing reporting:
 snyk monitor --unmanaged --org=<org-id>
 ```
 
-Where **org-id** is found under your org settings in the Snyk web interface. Although the Organization id is not required, it's strongly suggested. Similar to Snyk Code, you can generate reports using the [snyk-to-html](../scan-applications/snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to generate reporting artifacts.&#x20;
+Where **org-id** is found under your org settings in the Snyk web interface. Although the Organization id is not required, it's strongly suggested. Similar to Snyk Code, you can generate reports using the [snyk-to-html](../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to generate reporting artifacts.&#x20;
 
 * For individual or personal scans, use the CLI or IDE and use the **snyk monitor --unmanaged** command to upload results, but we recommend you send these results to your personal folder and disable the scheduled scanning in the Project settings to ensure an individual scan does not cause noise. This will provide license/policy information in a viewable state.
 * For automated scans, such as CI/CD, use **snyk monitor --unmanaged** and send results to the organization of your choice. This will provide license/policy information in a viewable state.
@@ -217,7 +217,7 @@ Sometimes customers develop advanced dependency management strategies and may no
 
 #### Helpful Options/Plugins
 
-* See [snyk-to-html](../scan-applications/snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to help generate reports locally or at build time
+* See [snyk-to-html](../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to help generate reports locally or at build time
 * See **--json** and **--sarif** options for generating output that can be programmatically accessed
 * See [snyk-filter](../snyk-api-info/other-tools/tool-snyk-filter.md) for advanced filtering options and [other tools](../snyk-api-info/other-tools/)&#x20;
 

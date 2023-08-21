@@ -22,8 +22,8 @@ Note that there is a monthly limit to the number of tests performed if a particu
 
 **Snyk products**
 
-* [Snyk Code](../scan-applications/snyk-code/): scan your own code for security vulnerabilities using source code analysis.
-* [Snyk Open Source](../scan-applications/snyk-open-source/)\*
+* [Snyk Code](../scan-application-code/snyk-code/): scan your own code for security vulnerabilities using source code analysis.
+* [Snyk Open Source](../scan-application-code/snyk-open-source/)\*
   * Open Source vulnerability testing and monitoring (All plans)
   * License Compliance (paid plans) (Nuget)
 * [Snyk Container](../scan-containers/)
@@ -65,7 +65,7 @@ The following are available for all Snyk users.
 
 #### With Git integrations
 
-Snyk allows you to [run PR Checks](../scan-applications/run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
+Snyk allows you to [run PR Checks](../scan-application-code/run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
 
 These functions can be used for:
 
@@ -103,7 +103,7 @@ Snyk provides flexible capabilities, including:
 
 Snyk Code can analyze your C# code using IDE, CLI, and Git integration.&#x20;
 
-* Framework support - see [Snyk Code - Supported languages and frameworks](../scan-applications/snyk-code/snyk-code-language-and-framework-support.md).
+* Framework support - see [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md).
 
 ### Nuget
 
@@ -142,7 +142,7 @@ Runtime dependencies (provided by the runtime environment also known as "meta-pa
 * Snyk can analyze dependencies managed by Paket via the CLI.&#x20;
   * paket.dependencies and paket.lock must be present.
   * package.json is also supported but not recommended by Microsoft.
-* For more information on Paket support, see [Snyk for .net](../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net.md).
+* For more information on Paket support, see [Snyk for .net](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net.md).
 
 ### Other
 
@@ -152,7 +152,7 @@ Sometimes customers develop advanced dependency management strategies and may no
 
 ### Build-time versus runtime dependencies
 
-See [Snyk for .NET](../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net.md) for more information
+See [Snyk for .NET](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net.md) for more information
 
 ### Not Supported in .NET
 
@@ -189,7 +189,7 @@ See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-
 
 #### Helpful options and plugins
 
-* See [snyk-to-html](../scan-applications/snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to help generate reports locally or at build time
+* See [snyk-to-html](../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to help generate reports locally or at build time
 * See --json and --sarif options for generating output that can be programmatically accessed
 * See [snyk-filter](../snyk-api-info/other-tools/tool-snyk-filter.md) for advanced filtering options and [other tools](../snyk-api-info/other-tools/)&#x20;
 
@@ -247,7 +247,7 @@ Snyk suggests enabling automated PRs on a key Project to start before enabling g
 The following is a collection of articles from the Snyk Security team and Developer Relations that relate to this ecosystem.&#x20;
 
 * [Snyk Blog](https://snyk.io/blog/)
-* [Snyk for .Net](../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net.md)
+* [Snyk for .Net](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net.md)
 * [Best Practices for Containerizing .NET applications](https://snyk.io/blog/best-practices-for-containerizing-net-applications/)
 
 [^1]: 

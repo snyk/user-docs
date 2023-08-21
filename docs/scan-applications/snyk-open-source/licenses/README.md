@@ -7,7 +7,7 @@
 Licenses are available for all paid plans. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
-Every time you test your code in the [Snyk Web UI](../../../getting-started/exploring-the-snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or using [PR Checks](../../run-pr-checks/), your repositories are scanned not only for vulnerabilities but also for license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and then checks for license issues against Snyk known licenses.
+Every time you test your code in the [Snyk Web UI](../../../getting-started/exploring-the-snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or using [PR Checks](../../../scan-application-code/run-pr-checks/), your repositories are scanned not only for vulnerabilities but also for license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and then checks for license issues against Snyk known licenses.
 
 ### Default license policy
 
@@ -32,7 +32,7 @@ If you notice a license with the wrong license type assigned to it, you can cont
 
 To facilitate the onboarding of your developers, Snyk recommends that your teams check these defaults, update severities, and add instructions according to license type based on the policies outlined specifically by your Legal teams.&#x20;
 
-After the license policy is updated, when Snyk detects a license violation, it is displayed for all users in the Organization in the test results on the [Snyk Web UI](../../../getting-started/exploring-the-snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or [PR Checks](../../run-pr-checks/). in the same way as a security vulnerability, and including the severity and instructions you configured.
+After the license policy is updated, when Snyk detects a license violation, it is displayed for all users in the Organization in the test results on the [Snyk Web UI](../../../getting-started/exploring-the-snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or [PR Checks](../../../scan-application-code/run-pr-checks/). in the same way as a security vulnerability, and including the severity and instructions you configured.
 
 An example follows:
 
