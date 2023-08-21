@@ -5,6 +5,7 @@ Understand the supported languages and frameworks to secure your software based 
 Snyk supports the following languages&#x20;
 
 * [.NET](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net.md)
+* Apex
 * [Bazel](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)
 * [C/C++](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-c-c++.md)
 * [Elixir](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
