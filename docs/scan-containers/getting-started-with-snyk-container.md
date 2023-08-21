@@ -32,7 +32,7 @@ Click on a Project entry to see details of the vulnerabilities found, including 
 
 To fix vulnerabilities:
 
-1. Click **Open a fix PR** to open a PR based on Snyk recommendations (insert screenshot)
+1. Open a PR based on Snyk recommendation by clicking **Open a fix PR**.
 2. Upgrade or rebuild your image.
 
 After it is pushed, Snyk automatically rescans your new image.&#x20;
