@@ -1,40 +1,40 @@
 # Apply a policy to Projects
 
-After applying [Project attributes](../introduction-to-snyk-projects/project-attributes.md) to your Projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes assigned to the policy.
+After you apply [Project attributes](../introduction-to-snyk-projects/project-attributes.md) to your Projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes assigned to the policy.
 
 {% hint style="info" %}
 Policies assigned to Project attributes always take precedence over policies assigned to Organizations.
 {% endhint %}
 
-A policy can be applied to one or multiple Project attributes; but a set of attributes can only be assigned to one policy. For example, if there is already a policy applied to `Critical`**,** `Production`,`Frontend`, you cannot create another policy that matches _only_ these exact attributes.
+A policy can be applied to one or multiple Project attributes, but a set of attributes can only be assigned to one policy. For example, if there is already a policy applied to `Critical`**,** `Production`,`Frontend`, you cannot create another policy that matches _only_ these exact attributes.
 
 {% hint style="info" %}
-Policies assigned to project attributes apply when running **snyk monitor** in the CLI, assuming it runs on a CLI project with project attributes applied. Project attribute policies do not apply to **snyk test**
+Policies assigned to Project attributes apply when you run `snyk monito`**r** in the CLI, assuming it runs on a CLI Project with Project attributes applied. Project attribute policies do not apply to `snyk test`.
 {% endhint %}
 
-## Add / remove an attribute to a policy
+## Apply a policy to Project attributes and remove attributes
 
-To add an attribute, click on the desired attribute checkbox(es) from the attribute selector panel.
+To apply a policy to an attribute, in the attribute selector panel, check the box for the attribute you want to add to the policy,
 
-To remove an attribute from a policy, uncheck the desired attribute checkbox(es) from the attribute selector panel.
+To remove an attribute from a policy, uncheck the box next to the attribute you want to remove.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_1.20.42_pm.png" alt="Add a policy attribute"><figcaption><p>Add a policy attribute</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_1.20.42_pm.png" alt="Add attributes to policies"><figcaption><p>Add attributes to policies</p></figcaption></figure>
 
 </div>
 
 {% hint style="info" %}
-You can create and save a policy where no attributes are selected, for example, if you have not yet decided which attributes should be associated with that policy. This policy does not apply to projects where all attributes are left blank.
+You can create and save a policy where no attributes are selected, for example, if you have not yet decided which attributes should be associated with a policy. This policy does not apply to Projects where all attributes are left blank.
 {% endhint %}
 
-## Matching projects and policies
+## Associating Projects with policies
 
-To be associated with a policy, a Project must have all the attributes listed on the policy (the Pincluderoject could also have more attributes that are not listed on the policy).
+To be associated with a policy, a Project must have all the attributes listed on the policy. The Project could also have more attributes that are not listed on the policy.
 
-For example, if you have a policy assigned to `Critical`, `External`, and `Frontend`, this policy applies to projects which include those same attributes, but not to a project with the attributes `Critical` and `External`.
+For example, if you have a policy applied to `Critical`, `External`, and `Frontend`, this policy applies to Projects which include those same attributes, but not to a Project with the attributes `Critical` and `External` only.
 
-Here is our sample policy:
+An example policy follows. It is applied to `Critical` **Business Criticality** and to `Frontend` and `External` **Environment**.
 
 <div align="left">
 
@@ -42,7 +42,7 @@ Here is our sample policy:
 
 </div>
 
-Here is a Project that will inherit the policy:
+The following Project will inherit the policy. The Project has the attributes `Frontend`, `External`, and `Critical`.
 
 <div align="left">
 
@@ -50,7 +50,7 @@ Here is a Project that will inherit the policy:
 
 </div>
 
-Here is a project that will not inherit the policy:
+The following Project will not inherit the policy, because the Project lacks the `Frontend` environment attribute.
 
 <div align="left">
 
@@ -60,9 +60,9 @@ Here is a project that will not inherit the policy:
 
 ## Applying multiple policies to a Project
 
-Multiple policies can apply to a Project. For example, if you have a policy assigned to `Critical` and `External` and another policy assigned to `Critical` and `Production`. If you then have a Project with attributes `Critical`, `External` and `Production`, it could have either of these policies applying.
+Multiple policies can apply to a Project. For example, you may have a policy applied to the attributes `Critical` and `External` and another policy applied to the attributes `Critical` and `Production`. If you have a Project with the attributes `Critical`, `External` and `Production`, either of these policies apply.
 
-If multiple policies can be applied to a project, the order of the policies on the policy manager page determines precedence. The policy closest to the top of the list takes precedence over other applicable policies below it. To change the order of policies, either drag and drop the policies into the right order, or use the **...** button on the right hand side to move the policy up or down in the list.
+When multiple policies are applied to a Project, the order of the policies on the policy manager page determines precedence. The policy closest to the top of the list takes precedence over other applicable policies below it. To change the order of policies, either drag and drop the policies into the correct order or use the three dots on the right-hand side to move the policy up or down in the list.
 
 <div align="left">
 
