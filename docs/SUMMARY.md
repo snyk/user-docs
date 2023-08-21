@@ -536,7 +536,7 @@
     * [Vulnerabilities with Social Trends](manage-issues/priorities-for-fixing-issues/vulnerabilities-with-social-trends.md)
   * [Policies](manage-issues/policies/README.md)
     * [View policies](manage-issues/policies/view-policies.md)
-    * [Create and edit policies](manage-issues/policies/create-and-edit-policies.md)
+    * [Create and modify policies](manage-issues/policies/create-and-modify-policies.md)
     * [The .snyk file](manage-issues/policies/the-.snyk-file.md)
     * [Apply a policy to Projects](manage-issues/policies/apply-a-policy-to-projects.md)
     * [Apply a policy to Organizations](manage-issues/policies/apply-a-policy-to-organizations.md)
