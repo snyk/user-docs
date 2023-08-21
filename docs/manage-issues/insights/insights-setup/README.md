@@ -39,7 +39,7 @@ The major steps in setting up Insights are as follows:
 2. Create the required Organization, roles, and permissions, and deploy the agent. See [Insights setup: Kubernetes Connector](insights-setup-kubernetes-connector.md).\
    &#x20;Note: The Kubernetes Connector is different from the Kubernetes Controller, Snyk-Monitor.
 3. Scan your images properly so Insights has access to the right data. See [Insights setup: Image scanning](insights-setup-image-scanning.md).
-4. Set up the required linking for the application on which you want to use Insights. See Insights setup: Associating Snyk Open Source, Code, and Container Projects.
+4. Set up the required linking for the application on which you want to use Insights. See [Insights setup: Associating Snyk Open Source, Code, and Container Projects](insights-setup-associating-snyk-open-source-code-and-container-projects.md).
 
 
 
