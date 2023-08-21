@@ -17,7 +17,7 @@ The fix strategy feature for getting dependency-oriented fixes is in [beta](../.
 The following rules are applied to automatic PR creation for vulnerabilities:
 
 * If a scan is manually run (you clicked **Retest now** for the Project), the 24-hour window is marked as having been run and no automatic PR is created until the next automated scan runs.
-* One pull request is created per Project ([priority score](../../../manage-issues/priorities-for-fixing-issues/priority-score.md) of **700 and above only**).
+* One pull request is created per Project ([priority score](../../../manage-issues/prioritizing-issues/priority-score.md) of **700 and above only**).
 * Pull requests are created based on the **Test & Automated Pull Request Frequency** settings. To update the **Test & Automated Pull Request Frequency**, go to **Projects**, select your open source and licensing Project, then go to **Settings** (see screenshot below).
 
 <figure><img src="../../../.gitbook/assets/Project testing and PR Checks frequency.png" alt="Project testing and PR Checks frequency."><figcaption><p>Project testing and PR Checks frequency</p></figcaption></figure>

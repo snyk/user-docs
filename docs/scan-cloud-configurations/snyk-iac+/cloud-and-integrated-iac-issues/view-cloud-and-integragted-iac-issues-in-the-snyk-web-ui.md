@@ -1,4 +1,4 @@
-# View cloud and  IaC+ issues in the Snyk Web UI
+# View cloud and IaC+ issues in the Snyk Web UI
 
 You can view cloud and IaC+ issues for an Organization through the Snyk Web UI.
 

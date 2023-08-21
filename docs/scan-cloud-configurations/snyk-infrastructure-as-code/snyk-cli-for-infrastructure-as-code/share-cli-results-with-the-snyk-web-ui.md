@@ -51,7 +51,7 @@ You can also open the Project itself and see the Project details:
 
 ## **Ignores**
 
-You can ignore issues using the Snyk Web UI or by creating a `.snyk` policy file along with your Project when scanning. For more information, see [Iac Ignores using the .snyk policy file](iac-ignores-using-the-.snyk-policy-file.md).
+You can ignore issues using the Snyk Web UI or by creating a `.snyk` policy file along with your Project when scanning. For more information, see [Iac Ignores using the .snyk policy file](../../../scan-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
 
 {% hint style="info" %}
 Issues that are ignored by using the `.snyk` policy file can not be unignored in the Snyk web UI.

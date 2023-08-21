@@ -226,7 +226,7 @@ _Required_ - Likelihood subscore will decrease&#x20;
 
 #### Social Trends&#x20;
 
-Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation ([learn more](vulnerabilities-with-social-trends.md)).&#x20;
+Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation ([learn more](../priorities-for-fixing-issues/vulnerabilities-with-social-trends.md)).&#x20;
 
 **Possible input values:**  _Trending, Not trending_
 

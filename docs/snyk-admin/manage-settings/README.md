@@ -21,7 +21,7 @@ At the Group level, select **Settings** to view admin settings:
 * [Your Plan and Billing](your-plan-and-billing.md)
 * [Plans and Pricing](plans-and-pricing.md)
 * [Snyk Preview](snyk-preview.md)
-* [Infrastructure as Code](../../scan-configurations/snyk-infrastructure-as-code/)
+* [Infrastructure as Code](../../scan-cloud-configurations/snyk-infrastructure-as-code/)
 
 ## Organization settings
 

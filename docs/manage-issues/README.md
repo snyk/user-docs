@@ -8,9 +8,9 @@ The documentation in this section explains the features available to help you pr
 
 Key features that help you prioritize issues are as follows:
 
-* [Severity levels](priorities-for-fixing-issues/severity-levels.md)
-* [Priority Score](priorities-for-fixing-issues/priority-score.md)
-* [Risk Score](priorities-for-fixing-issues/risk-score.md)
+* [Severity levels](prioritizing-issues/severity-levels.md)
+* [Priority Score](prioritizing-issues/priority-score.md)
+* [Risk Score](prioritizing-issues/risk-score.md)
 * [Ignoring issues](priorities-for-fixing-issues/ignore-issues.md)
 
 For details and more features, see [Prioritizing issues](priorities-for-fixing-issues/).

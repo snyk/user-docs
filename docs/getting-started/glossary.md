@@ -218,7 +218,7 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 
 ### Priority Score
 
-Snyk scores issues (vulnerabilities and licenses), to help prioritize treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](../manage-issues/priorities-for-fixing-issues/priority-score.md).
+Snyk scores issues (vulnerabilities and licenses), to help prioritize treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](../manage-issues/prioritizing-issues/priority-score.md).
 
 ### Project
 
@@ -228,7 +228,7 @@ An external item that Snyk scans ([Target](glossary.md#target)), with configurat
 
 ### Reachability
 
-Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-issues/priorities-for-fixing-issues/reachable-vulnerabilities.md).
+Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-issues/prioritizing-issues/reachable-vulnerabilities.md).
 
 ### Registry
 
@@ -286,7 +286,7 @@ A set of criteria for evaluating open source vulnerabilities. Security policies 
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/priorities-for-fixing-issues/severity-levels.md).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/prioritizing-issues/severity-levels.md).
 
 ### Snapshot
 
@@ -332,7 +332,7 @@ A Snyk product. Enables developers to find and fix vulnerabilities in container 
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-configurations/snyk-infrastructure-as-code/).
+A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/).
 
 ### Snyk Open Source
 

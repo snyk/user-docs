@@ -49,7 +49,7 @@ For each issue, Snyk processes and weighs several factors in a proprietary algor
 * [Reachability](reachable-vulnerabilities.md) (extent to which vulnerabilities are reachable from the code): determined by looking at the code paths called within a Project.
 * [Fixability](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): defined as having a safer version to upgrade to or a Snyk patch available. For vulnerabilities with neither, developers must either fix the code themselves or use an alternative package. Thus vulnerabilities with fixes are given a higher Priority Score.
 * Time: considered based on how new the vulnerability is. New vulnerabilities are likely to be an increased risk, and so they increase the Priority Score.
-* [Social Trends](vulnerabilities-with-social-trends.md): calculated by Snyk based on mentions of known vulnerabilities in Twitter to express the trend of tweets and reactions.
+* [Social Trends](../priorities-for-fixing-issues/vulnerabilities-with-social-trends.md): calculated by Snyk based on mentions of known vulnerabilities in Twitter to express the trend of tweets and reactions.
 * Malicious packages: assessed to determine if a vulnerability originated from a malicious package. Vulnerabilities originating from malicious packages have higher Priority Scores.
 
 {% hint style="info" %}

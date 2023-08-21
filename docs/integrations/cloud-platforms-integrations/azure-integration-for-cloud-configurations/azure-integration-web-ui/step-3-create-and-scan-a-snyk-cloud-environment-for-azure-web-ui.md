@@ -15,5 +15,5 @@ The steps follow to create and scan a Cloud Environment for Azure using the Web 
 
 You can now do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-configurations/snyk-iac+/cloud-and-integrated-iac-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/).
 * Prioritize your vulnerabilities with cloud context.
