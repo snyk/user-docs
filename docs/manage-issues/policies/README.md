@@ -36,5 +36,5 @@ Snyk has security and license policies.
 
 Different applications may need different policies applied. Mission-critical applications are likely to need more control than internal applications in a sandbox environment. You can establish the needed control by applying policies to:
 
-* [Projects](apply-a-policy-to-projects.md), using Project tags and attributes.
-* [Organizations](apply-a-policy-to-organizations.md) in a Snyk Group.
+* [Projects](assign-a-policy-to-projects.md), using Project tags and attributes.
+* [Organizations](assign-a-policy-to-an-organization.md) in a Snyk Group.

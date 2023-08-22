@@ -12,8 +12,8 @@ Additionally, the **.snyk** file is a policy file that Snyk uses to define certa
 
 For both [security policies](security-policies/) and [license policies](license-policies/), you can&#x20;
 
-* [Apply a policy to Projects](apply-a-policy-to-projects.md)
-* [Apply a policy to Organizations](apply-a-policy-to-organizations.md)
+* [Apply a policy to Projects](assign-a-policy-to-projects.md)
+* [Apply a policy to Organizations](assign-a-policy-to-an-organization.md)
 
 ### Example: apply a license policy to Projects
 
