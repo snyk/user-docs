@@ -33,12 +33,14 @@ Snyk detects vulnerabilities in images based on the following operating systems:
 * Alpine Linux
 * Amazon Linux
 * CentOS Linux & CentOS Stream
+* Chainguard
 * Debian
 * Oracle Linux
 * Red Hat Enterprise Linux (RHEL), including Universal Base Image (UBI)
 * Rocky Linux
 * SUSE Linux Enterprise Server (SLES)
 * Ubuntu
+* Wolfi
 
 {% hint style="info" %}
 Snyk also supports images using packages from these distributions, but without the associated package manager, such as Distroless images.
