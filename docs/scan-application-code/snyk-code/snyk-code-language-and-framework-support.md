@@ -1,7 +1,7 @@
 # Snyk Code - Supported languages and frameworks
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md), and [Snyk IaC and Cloud - Supported providers](../../scan-infrastructure/supported-iac-and-cloud-providers.md).
+For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../../scan-applications/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md), and [Snyk IaC and Cloud - Supported providers](../../scan-infrastructure/supported-iac-and-cloud-providers.md).
 {% endhint %}
 
 ## Language support with Snyk Code AI Engine

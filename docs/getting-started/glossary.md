@@ -328,7 +328,7 @@ A Snyk product. A SAST product enabling developers to find and fix vulnerabiliti
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Scan containers](../scan-containers/).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Scan containers](../scan-applications/snyk-container/).
 
 ### Snyk Infrastructure as Code
 

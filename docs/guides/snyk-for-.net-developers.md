@@ -26,7 +26,7 @@ Note that there is a monthly limit to the number of tests performed if a particu
 * [Snyk Open Source](../scan-application-code/snyk-open-source/)\*
   * Open Source vulnerability testing and monitoring (All plans)
   * License Compliance (paid plans) (Nuget)
-* [Snyk Container](../scan-containers/)
+* [Snyk Container](../scan-applications/snyk-container/)
   * Scan for issues with container images if you are building containers
 * [Snyk Infrastructure as Code](../scan-infrastructure/snyk-infrastructure-as-code/)
   * Scan for configuration issues when you deploy your applications using Azure Resource Manager, Kubernetes deployment files, Terraform, or AWS Cloudformation templates.
@@ -177,9 +177,9 @@ For open source analysis in the CLI, first install the dependencies. After insta
 
 #### **Containers**
 
-See [Supported Operating System Distributions](../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md).
+See [Supported Operating System Distributions](../scan-applications/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
 
-See [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-security/) for more details.
+See [Snyk CLI for container security](../scan-applications/snyk-container/snyk-cli-for-container-security/) for more details.
 
 #### Infrastructure as code
 
