@@ -9,7 +9,7 @@ Policies assigned to Project attributes always take precedence over policies ass
 A policy can be applied to one or multiple Project attributes, but a set of attributes can only be assigned to one policy. For example, if there is already a policy applied to `Critical`**,** `Production`,`Frontend`, you cannot create another policy that matches _only_ these exact attributes.
 
 {% hint style="info" %}
-Policies assigned to Project attributes apply when you run `snyk monito`**r** in the CLI, assuming it runs on a CLI Project with Project attributes applied. Project attribute policies do not apply to `snyk test`.
+Policies assigned to Project attributes apply when you run `snyk monitor` in the CLI, assuming it runs on a CLI Project with Project attributes applied. Project attribute policies do not apply to `snyk test`.
 {% endhint %}
 
 ## Apply a policy to Project attributes and remove attributes

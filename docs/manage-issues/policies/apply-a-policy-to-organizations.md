@@ -1,57 +1,55 @@
 # Apply a policy to Organizations
 
-A policy can be applied to multiple Organizations; however, an Organization can only be assigned to one policy. Organizations cannot be added to or removed from the default policy directly from the default policy modal.
+You can apply a policy to multiple Organizations. However, you can assign an Organization to only one policy. You cannot add an Organization to or remove an Organization from the default policy directly from the default policy dialog.
 
 {% hint style="info" %}
-Policies assigned to Organizations also apply when running **snyk test** or **snyk monitor** CLI commands.
+Policies assigned to Organizations apply when your run the `snyk test` or `snyk monitor` CLI commands.
 {% endhint %}
 
-## To add an Organization to a policy
+## Apply an Organization to a policy
 
-Click on the associated check box from the Organization selector panel.
+To apply an Organization to a policy, in the Organization selector panel, check the box for the Organization you want to add.
 
-If this Organization is already assigned to another policy, you will be able to see which policy it is applied to from this selector and the pill next to the organization name will be grey
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/mceclip3-2-.png" alt="Grey pill - Organization already assigned to another policy"><figcaption><p>Grey pill - Organization already assigned to another policy</p></figcaption></figure>
-
-</div>
-
-If an Organization is assigned to the policy you are currently viewing, that policy name will appear in a yellow pill next to the Organization name
+If this Organization is already applied to another policy, you can see that policy from the selector, and the indicator next to the Organization name will be gray.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/mceclip2-6-.png" alt="Yellow pill - Organization already assigned to this policy"><figcaption><p>Yellow pill - Organization already assigned to this policy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip3-2-.png" alt="Gray indicator - Organization already applied to another policy"><figcaption><p>Gray indicator - Organization already applied to another policy</p></figcaption></figure>
 
 </div>
 
-If you are moving an Organization from one policy to another, 2 pills will appear to show which policy is currently applied (yellow) and which policy you will be applying (grey)
+If an Organization is applied to the policy you are currently viewing, the name of the policy is displayed in a yellow indicator next to the Organization name.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/mceclip1-16-.png" alt="Grey and Yellow pill - Organization already assigned and will move policy"><figcaption><p>Grey and Yellow pill - Organization already assigned and will move policy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip2-6-.png" alt="Yellow indicator - Organization already assigned to this policy"><figcaption><p>Yellow indicator - Organization already assigned to this policy</p></figcaption></figure>
 
 </div>
 
-## To remove an Organization from a policy
-
-Uncheck the desired Organization check box from the organization selector panel.
+If you are moving an Organization from one policy to another, two indicators appear to show where the Organization is currently applied, yellow, and the policy where you will be applying the Organization, gray.
 
 <div align="left">
 
-<img src="../../.gitbook/assets/untitled-2-.png" alt="Remove an Organization from a policy">
+<figure><img src="../../.gitbook/assets/mceclip1-16-.png" alt="Gray and Yellow indicators - Policies where the Organization is applied and will be applied"><figcaption><p>Gray and Yellow indicators - Policies where the Organization is applied and will be applied</p></figcaption></figure>
 
 </div>
 
-The unchecked Organization will now revert back to the default policy.
+## Remove an Organization from a policy
+
+To remove an Organization from a policy, uncheck the box next to the Organization you want to remove.
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/untitled-2-.png" alt="Remove an Organization from a policy"><figcaption><p>Remove an Organization from a policy</p></figcaption></figure>
+
+</div>
+
+The unchecked Organization will now revert to the default policy.
 
 ## Add an Organization to the default policy
 
-1. Remove the Organization from the policy it is currently assigned to
-2. The Organization will automatically move to the default policy
+Remove the Organization from the policy it is currently applied to. The Organization will automatically move to the default policy.
 
 ## Remove an Organization from the default policy
 
-1. Assign the relevant Organization to a new policy
-2. The Organization will automatically disassociate from the default policy and move to the newly selected policy
+Apply the Organization to a new policy. The Organization will automatically be removed from the default policy and move to the newly selected policy.
