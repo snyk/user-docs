@@ -28,4 +28,4 @@ Scan and automatically address potential vulnerabilities when you review pull re
 
 * [Supported languages and package managers in Snyk Open Source](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
 * [Supported languages and frameworks in Snyk Code](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md)
-* [Supported operating system distributions in Snyk Container](snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
+* [Supported operating system distributions in Snyk Container](../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md)

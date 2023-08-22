@@ -25,7 +25,7 @@ Follow these instructions to set up Harbor integration in Snyk and start managin
 3. In the **Container registry name** fill in the full URL to the registry you want to integrate with.
 4. To finish, select **Save**.
 
-If you are using a self-hosted Harbor registry, contact Snyk to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-applications/snyk-container/integrate-self-hosted-container-registries.md).
+If you are using a self-hosted Harbor registry, contact Snyk to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-containers/integrate-self-hosted-container-registries.md).
 
 <figure><img src="../../.gitbook/assets/mceclip2-1-.png" alt="Harbor Account credentials and Container registry name"><figcaption><p>Harbor Account credentials and Container registry name</p></figcaption></figure>
 
@@ -64,13 +64,13 @@ Follow these instructions to add images from Harbor to Snyk.
 7. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed Projects page.
    2. An **import log** becomes available; you can reach it from the top of the Projects list.
-   3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-applications/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 Harbor imports are indicated with a unique icon. You can also filter to view only the Harbor Projects:
 
 <figure><img src="../../.gitbook/assets/mceclip1-9-.png" alt="Harbor Projects in Projects listing"><figcaption><p>Harbor Projects in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
-For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../scan-applications/snyk-container/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md).
+For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../scan-containers/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md).
 {% endhint %}
 

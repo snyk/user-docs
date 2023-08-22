@@ -23,7 +23,7 @@ This page explains how to set up GitHub Container registry integration in Snyk a
 
 <figure><img src="../../.gitbook/assets/mceclip1-4-.png" alt="GitHub Container registry Account credentials"><figcaption><p>GitHub Container registry Account credentials</p></figcaption></figure>
 
-If you are using a self-hosted GitHub Container registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-applications/snyk-container/integrate-self-hosted-container-registries.md).
+If you are using a self-hosted GitHub Container registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-containers/integrate-self-hosted-container-registries.md).
 
 Snyk tests the connection values, and the page reloads, now displaying GitHub Container registry integration information. The **Add your GitHub container registry images to Snyk** button becomes available.
 
@@ -59,12 +59,12 @@ Follow these steps to add images from the GitHub container registry to Snyk.
 7. When the import ends:
    * You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    * An **import log** becomes available; you can reach it at the top of the Projects list.
-   * To enrich the data and get recommendations regarding your base image, you can connect your Dockerfile to the image Project under **Settings**. For more information, see [Adding your Dockerfile and testing your base image](../../scan-applications/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   * To enrich the data and get recommendations regarding your base image, you can connect your Dockerfile to the image Project under **Settings**. For more information, see [Adding your Dockerfile and testing your base image](../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 GitHub container registry imports are designated with a unique icon. You can filter the integration in the **Projects** view to see GitHub container registry Projects only:
 
 <figure><img src="../../.gitbook/assets/mceclip1-5-.png" alt="GitHub Project in Projects listing"><figcaption><p>GitHub Project in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
-For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../scan-applications/snyk-container/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md).
+For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../scan-containers/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md).
 {% endhint %}
