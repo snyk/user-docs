@@ -6,7 +6,7 @@ You can [create a security policy and set rules](how-to-create-a-security-policy
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-30 at 10.05.27.png" alt=""><figcaption></figcaption></figure>
 
-You can [apply a policy to Projects](../assign-a-policy-to-projects.md), or [apply a policy to Organizations](../assign-a-policy-to-an-organization.md).
+You can [apply a policy to Projects](../assign-policies-to-projects.md), or [apply a policy to Organizations](../assign-a-policy-to-an-organization.md).
 
 More information:
 

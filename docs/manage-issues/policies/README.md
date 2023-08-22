@@ -32,9 +32,9 @@ Snyk has security and license policies.
 * [Security policies](security-policies/) define Snyk behavior in treating vulnerabilities, for example, according to severity levels or ignored issues.
 * [License policies](license-policies/) define Snyk behavior in treating license issues, such as allowing or disallowing packages with certain license types and avoiding the use of packages containing incompatible licenses.
 
-## Apply **policies to  Projects or Organizations**
+## Assign **policies to  Projects or Organizations**
 
-Different applications may need different policies applied. Mission-critical applications are likely to need more control than internal applications in a sandbox environment. You can establish the needed control by applying policies to:
+Different applications may need to be scanned according to different policies. Mission-critical applications are likely to need more control than internal applications in a sandbox environment. You can establish the needed control by assigning policies to:
 
-* [Projects](assign-a-policy-to-projects.md), using Project tags and attributes.
-* [Organizations](assign-a-policy-to-an-organization.md) in a Snyk Group.
+* [Projects](assign-policies-to-projects.md), after applying attributes to Projects and policies to attributes
+* [Organizations](assign-a-policy-to-an-organization.md) in a Snyk Group

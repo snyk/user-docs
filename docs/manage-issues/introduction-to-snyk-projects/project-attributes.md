@@ -2,7 +2,7 @@
 
 Project attributes are static and non-configurable fields that allow you to apply attribute values to a Project by selecting from a predefined list of values. After you have applied attributes, you can remove them from a Project as needed.
 
-Use attributes to group, prioritize, and filter Projects. Use attributes such as lifecycle stage, business criticality, and environment to prioritize issues at a granular level. By linking attributes to Snyk [policies](../policies/), you can assign a policy to Projects containing those attributes.
+Use attributes to group, prioritize, and filter Projects. Use attributes such as lifecycle stage, business criticality, and environment to prioritize issues at a granular level. After you apply attributes to Snyk [policies](../policies/), you can assign policies to Projects that have those attributes applied.
 
 ## **Available attributes and their values**
 
@@ -12,20 +12,16 @@ On the **Projects** listing, use **Group by none** (ungrouped) for optimal Proje
 
 The available Project attributes are summarized in the following table.
 
-| Attribute              | Attribute options                                                                                                                                           |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business criticality\* | <ul><li>Critical</li><li>High</li><li>Medium</li><li>Low</li></ul>                                                                                          |
-| Environment            | <ul><li>Frontend</li><li>Backend</li><li>Internal</li><li>External</li><li>Mobile</li><li>SaaS</li><li>On-Prem</li><li>Hosted</li><li>Distributed</li></ul> |
-| Lifecycle stage        | <ul><li>Production</li><li>Development</li><li>Sandbox</li></ul>                                                                                            |
+| Attribute                                                                                                                                                                                                                                                                                       | Attribute options                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>Business criticality<br>Note that When Risk Score is enabled, the Bussiness Criticality attribute automatically affects the score according to the highest attribute level. Learn more in the <a href="../prioritizing-issues/risk-score.md#business-criticality">Risk Score</a> docs.  </p> | <ul><li>Critical</li><li>High</li><li>Medium</li><li>Low</li></ul>                                                                                          |
+| Environment                                                                                                                                                                                                                                                                                     | <ul><li>Frontend</li><li>Backend</li><li>Internal</li><li>External</li><li>Mobile</li><li>SaaS</li><li>On-Prem</li><li>Hosted</li><li>Distributed</li></ul> |
+| Lifecycle stage                                                                                                                                                                                                                                                                                 | <ul><li>Production</li><li>Development</li><li>Sandbox</li></ul>                                                                                            |
 
 {% hint style="info" %}
 You can apply attributes to Projects and remove attributes using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes).
 
 You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and -`-project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) for the commands that support these options.
-{% endhint %}
-
-{% hint style="info" %}
-\*When Risk Score is enabled, the Bussiness Criticality attribute will automatically affect the score according to the highest attribute level. Learn more in the [Risk Score](../prioritizing-issues/risk-score.md#business-criticality) docs. &#x20;
 {% endhint %}
 
 {% hint style="warning" %}
