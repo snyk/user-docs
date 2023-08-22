@@ -1,7 +1,5 @@
 # Scan applications
 
-## Introduction
-
 Scan and secure your codebase with Static Application Security Testing (SAST) and Software Composition Analysis (SCA) capabilities available with Snyk.
 
 ## Snyk Open Source
@@ -16,11 +14,18 @@ Scan your codebase for known vulnerabilities and get remediation guidance either
 
 :link: [Explore how Snyk Code identifies and addresses security issues](https://snyk.io/blog/advanced-technologies-behind-snyk-code/) (Snyk blog).
 
+## Snyk Container
+
+Find and automatically fix container and workload vulnerabilities.
+
+See [Snyk Container](snyk-container/) docs for more details.
+
 ## Run pull request checks
 
 Scan and automatically address potential vulnerabilities when you review pull requests, to prevent security issues in production.
 
-## Language and framework support
+## Environment support
 
 * [Supported languages and package managers in Snyk Open Source](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
 * [Supported languages and frameworks in Snyk Code](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md)
+* [Supported operating system distributions in Snyk Container](snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
