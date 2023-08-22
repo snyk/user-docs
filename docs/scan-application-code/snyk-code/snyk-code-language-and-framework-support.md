@@ -131,6 +131,23 @@ These are some of the explicitly supported frameworks for PHP; those are in addi
 * **Symfony**: Backend framework used to build complex applications.
 * **Laravel**: Backend framework used to build modern web applications.
 
+### Apex
+
+`.trigger` files are supported.
+
+### Swift frameworks (beta)
+
+The following frameworks are supported:
+
+* Alamofire
+* Pathos
+* sqlite3
+* CryptoKit
+
+### Kotlin (beta)
+
+Android is partially supported.
+
 ### File size limit for Snyk Code analysis
 
 Snyk Code automatically excludes the following files from analysis:

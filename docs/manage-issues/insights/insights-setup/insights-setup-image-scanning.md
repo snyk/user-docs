@@ -12,7 +12,7 @@ Snyk recommends that you scan each image using at least one of the Snyk Containe
 
 ## Snyk Container scanning with the CLI
 
-For details, see [Snyk CLI for container security](../../../scan-containers/snyk-cli-for-container-security/).
+For details, see [Snyk CLI for container security](../../../scan-applications/snyk-container/snyk-cli-for-container-security/).
 
 To ensure the image names match, specify the full name of the image as referenced in your Kubernetes deployment.&#x20;
 
@@ -26,7 +26,7 @@ The names will match if you are importing images to Snyk from the same container
 
 ## Snyk Container scanning with Kubernetes integration
 
-For details, see [Kubernetes integration](../../../scan-containers/kubernetes-integration/).
+For details, see [Kubernetes integration](../../../scan-applications/snyk-container/kubernetes-integration/).
 
 The names of the container images will match because the deployed image is scanned by Snyk and created as a Project.
 
