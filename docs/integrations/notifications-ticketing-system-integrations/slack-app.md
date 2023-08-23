@@ -1,11 +1,12 @@
 # Slack app
 
-The new Snyk app for Slack is built as an official [Slack App](https://api.slack.com/start/overview#apps), unlike the [Slack integration](slack-integration.md), which uses Slack’s [Incoming Webhooks](https://api.slack.com/legacy/custom-integrations/messaging/webhooks); this is considered outdated.
+The Snyk app for Slack is built as an official [Slack App](https://api.slack.com/start/overview#apps), unlike the [Slack integration](slack-integration.md), which uses Slack’s [Incoming Webhooks](https://api.slack.com/legacy/custom-integrations/messaging/webhooks); this is considered outdated.
 
-When the Snyk app for Slack is released, Snyk encourages all customers using the current Slack integration to adopt the Snyk app for Slack and get the following benefits and more:
+Snyk encourages all customers using the Slack integration to adopt the Snyk app for Slack and get the following benefits and more:
 
 * Improved support for Snyk products: Open Source, Code, Container, and IaC
 * Support for filtering on severity levels
+* Support for overriding notifications at a Project level
 
 {% hint style="info" %}
 Vulnerabilities detected on initial import of Projects are not sent to Slack immediately.
@@ -13,13 +14,21 @@ Vulnerabilities detected on initial import of Projects are not sent to Slack imm
 
 ## Overview of the Snyk app for Slack
 
-The Snyk app for Slack lets you receive new issue notifications from your Snyk Projects in your Slack workspace. It is based on [Snyk Apps](../../snyk-api-info/snyk-apps/) that give you the benefit of more granular scopes and more ability to configure notifications at the Organization and Project level.
+The Snyk app for Slack highlights vulnerability information found across your software Projects and presents actionable context within your Slack workspace channels. Your teams get the issue notifications that matter the most, and can act on them immediately, without leaving Slack. This has the advantage of:
+
+* Enhancing collaboration to quickly discuss and resolve vulnerabilities
+* Maintaining awareness of relevant and emerging vulnerabilities
+* Minimizing disruptions with issue notification thresholds
+
+The Snyk app for Slack is based on [Snyk Apps](../../snyk-api-info/snyk-apps/), providing you with the benefit of more granular scopes and more ability to configure issue notifications at the Organization and Project levels.
+
+## Steps to enable the Snyk app for Slack
 
 To enable the Snyk app for Slack, you must do the following:
 
-1. Authorize the Snyk app for Slack with Snyk to get new issues data that can be forwarded to your Slack workspace.
-2. Authorize the Snyk app for Slack with your Slack workspace to allow Snyk to send notifications to your channels in the workspace.
-3. Configure the default notification settings for all Projects in your Organization and add [Project-level notification overrides](slack-app.md#managing-project-level-notification-overrides) if you would like.
+1. Authorize the app with Snyk to get new issues data that can be forwarded to your Slack workspace.
+2. Authorize the app with your Slack workspace to allow Snyk to send notifications to your channels in the workspace.
+3. Configure the default notification settings in Snyk for all Projects in your Organization and add [Project-level notification overrides](slack-app.md#managing-project-level-notification-overrides) if you would like.
 
 ## Configure the Snyk app for Slack
 
@@ -35,7 +44,11 @@ After Snyk has been authorized, you will be asked to authorize Slack to connect 
 
 <figure><img src="../../.gitbook/assets/slack-app3.png" alt="Authorize SLack to connect to Snyk"><figcaption><p>Authorize Slack to connect to Snyk</p></figcaption></figure>
 
-After this step is complete, you can configure the integration to choose which Slack channel the Organization notifications are sent to and also filter by severity level:
+{% hint style="info" %}
+If multiple Slack workspaces are available, a drop-down will be visible at the top right of the page. Select the desired Slack workspace.
+{% endhint %}
+
+After this step is complete, you can configure the integration to choose which Slack channel the Organization's issue notifications are sent to and also filter by severity level:
 
 <figure><img src="../../.gitbook/assets/slack-app4.png" alt="Choose Slack channel and severity level for the notifications from the Organization"><figcaption><p>Choose Slack channel and severity level for the notifications from the Organization</p></figcaption></figure>
 
@@ -45,6 +58,12 @@ To add the Snyk for Slack app to a private channel, you must first add the app m
 In the Private channel, select **Channel settings - Integrations**, and then **Add an app**. Search for **Snyk for Slack** and select **add**. \
 After you have done this, the channel is displayed on the **Settings** page for the integration.
 {% endhint %}
+
+## Issue notifications
+
+Once the Slack app has been configured as indicated above, new issue notifications will be forwarded to the selected Slack channel according to the desired severity level threshold.
+
+<figure><img src="../../.gitbook/assets/image (113).png" alt="Example of a new critical vulnerability notification received in Slack"><figcaption><p>Example of a new critical vulnerability notification received in Slack</p></figcaption></figure>
 
 ## Remove the Snyk app for Slack
 
