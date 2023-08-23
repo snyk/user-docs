@@ -37,7 +37,9 @@ If the user is a **Group Member**, you can see their role for each of the orgs t
 
 <figure><img src="../../.gitbook/assets/image (19) (2) (1).png" alt="View member roles"><figcaption><p>View member roles</p></figcaption></figure>
 
-For a **Group Admin**, they are by default added as Org Admin across all Organizations in your Group. You cannot change a group admin's role for a specific org, or delete them from one or more orgs. However, you can remove a group admin from the group using the **Remove from group** option.
+Group Admin roles have access to all Organizations in that Group, with the same access level as an Organization Admin role in these Organizations.&#x20;
+
+You cannot change a Group admin's role for a specific Organization, or delete them from one or more Organizations. However, you can remove a Group admin from the Group using the **Remove from group** option
 
 ### Filter and sort views
 
