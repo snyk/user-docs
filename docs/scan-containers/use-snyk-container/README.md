@@ -1,6 +1,6 @@
 # Use Snyk Container
 
-The following pages help with using Snyk Container.
+To use Snyk Container, see:
 
 * [Base image detection](base-image-detection.md)
 * [Image layer information](image-layer-information.md)
@@ -10,4 +10,4 @@ The following pages help with using Snyk Container.
 * [Custom Versioning Schema for Custom Base Images](custom-base-image-recommendations/custom-versioning-schema-for-custom-base-images.md)
 * [Container Project grouping in Project tab](container-project-grouping-in-project-tab.md)
 
-For additional information and details, see [How Snyk Container works](../how-snyk-container-works/).
+For more information, see [How Snyk Container works](../how-snyk-container-works/).
