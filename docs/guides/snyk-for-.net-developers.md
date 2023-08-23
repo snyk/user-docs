@@ -179,7 +179,7 @@ For open source analysis in the CLI, first install the dependencies. After insta
 
 See [Supported Operating System Distributions](../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md).
 
-See [Snyk CLI for container security](../scan-applications/snyk-container/snyk-cli-for-container-security/) for more details.
+See [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-security/) for more details.
 
 #### Infrastructure as code
 
