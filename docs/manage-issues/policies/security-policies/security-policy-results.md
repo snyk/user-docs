@@ -1,16 +1,14 @@
 # Security policy results
 
-A newly assigned policy, or changes to a policy, apply when the Project is re-scanned. This is what Project collaborators see when an action is applied to a vulnerability:
+A newly-assigned policy, or changes to a policy, apply when the Project is re-scanned. This is what Project collaborators see when an action is applied to a vulnerability:
 
-<table data-header-hidden><thead><tr><th width="246"></th><th></th></tr></thead><tbody><tr><td><strong>Action</strong></td><td><strong>What Project collaborators see</strong></td></tr><tr><td>Change severity to…</td><td>The new severity, as well as the originally assigned severity</td></tr><tr><td>Ignore current and future instances</td><td>An ignored issue will look the same as a manual ignore, but it will be labelled “ignored by security policy”</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="246"></th><th></th></tr></thead><tbody><tr><td><strong>Action</strong></td><td><strong>What Project collaborators see</strong></td></tr><tr><td>Change severity to…</td><td>The new severity, as well as the originally assigned severity</td></tr><tr><td>Ignore current and future instances</td><td>An ignored issue looking like a manual ignore but labeled <strong>ignored by Security Policy</strong>.</td></tr></tbody></table>
 
-## **Examples**
-
-For an issue in a project page that’s been ignored by a security policy:
+Examples follow for an issue on a Project page that has been ignored by a security policy:
 
 <figure><img src="../../../.gitbook/assets/screenshot_2021-07-28_at_12.50.46.png" alt="Issue ignored by security policy"><figcaption><p>Issue ignored by security policy</p></figcaption></figure>
 
-**Custom and original severity in the CLI**
+## **Custom and original severity in the CLI**
 
 <div align="left">
 
@@ -18,7 +16,7 @@ For an issue in a project page that’s been ignored by a security policy:
 
 </div>
 
-**Custom and original severity in Project Page UI**
+## **Custom and original severity in Project Page UI**
 
 <div align="left">
 
@@ -26,7 +24,7 @@ For an issue in a project page that’s been ignored by a security policy:
 
 </div>
 
-**Custom and original severity in Open Fix PR UI**
+## **Custom and original severity in Open Fix PR UI**
 
 <div align="left">
 
@@ -34,7 +32,7 @@ For an issue in a project page that’s been ignored by a security policy:
 
 </div>
 
-**Custom and original severity in Reports**
+## **Custom and original severity in Reports**
 
 <div align="left">
 
