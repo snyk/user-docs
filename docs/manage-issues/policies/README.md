@@ -17,7 +17,7 @@ Snyk policies contain rules to define how Snyk behaves when encountering specifi
 
 Using the Snyk Policy Manager, you can [view](view-policies.md), [create, and edit](create-and-modify-policies.md) policies.
 
-The `.snyk file` stores policies.
+The `.snyk` file is a policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](the-.snyk-file.md) for details
 
 ## Benefits of Snyk policies
 
