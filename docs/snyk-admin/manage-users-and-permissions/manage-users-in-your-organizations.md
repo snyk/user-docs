@@ -16,7 +16,11 @@ Relevant permissions are required to perform all these tasks; see [Managing perm
 
 To add new users to your organization, click **Add members**:
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-02-24 at 12.51.45 PM.png" alt="Add members to your Organization"><figcaption><p>Add members to your Organization</p></figcaption></figure>
+
+</div>
 
 From here:
 
@@ -38,16 +42,18 @@ Inviting members to an Organization
 
 To remove pending invites:
 
-1. On the **Members** page, below the search bar, click **Revoke pending invites** (see image below). Note: Link appears when there is at least one pending invite.
-2. In the **Pending invites in \_your organization's name**\_ modal that appears, click the ![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to a user's name to cancel their invite.
+1.  On the **Members** page, below the search bar, click **Revoke pending invites** (see image below). Note: Link appears when there is at least one pending invite.\
+    \
 
-![Revoke pending invites](<../../.gitbook/assets/revoke-pending-invites-example (1).png>)
+
+    <figure><img src="../../.gitbook/assets/Revoke.png" alt=""><figcaption></figcaption></figure>
+2. In the **Pending invites in \_your organization's name**\_ modal that appears, click the ![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to a user's name to cancel their invite.
 
 ### Change member roles
 
 To change the role of a member, click on the member's **Role** entry, and use the drop-down to select the new role:
 
-![](<../../.gitbook/assets/Member roles.png>)
+<figure><img src="../../.gitbook/assets/Change-role.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 For Enterprise plan customers who created custom member roles, Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error, while trying to update the role of a member, invite a new member or add an existing member with a role that has more privileges than the logged in user.
@@ -68,7 +74,11 @@ To delete a member from the organization:
 
 Click the filter icon (<img src="../../.gitbook/assets/Screenshot 2022-03-11 at 08.47.59.png" alt="" data-size="line">) to expand the filter sidebar, then filter members displayed by role or authentication method:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-03-11 at 08.51.43.png" alt="Filter members by role or by authentication method"><figcaption><p>Filter members by role or by authentication method</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-23 at 10.11.33.png" alt="Filter members by role or by authentication method" width="186"><figcaption><p>Filter members by role or by authentication method</p></figcaption></figure>
+
+</div>
 
 #### Sort views
 
