@@ -1,24 +1,24 @@
-# Apply a policy to Organizations
+# Assign a policy to an Organization
 
-You can apply a policy to multiple Organizations. However, you can assign an Organization to only one policy. You cannot add an Organization to or remove an Organization from the default policy directly from the default policy dialog.
+When you create a policy, you can apply it to one Organization. You cannot directly apply an Organization to or remove an Organization from the default policy using the Policy Manager.
 
 {% hint style="info" %}
-Policies assigned to Organizations apply when your run the `snyk test` or `snyk monitor` CLI commands.
+Policies applied to Organizations are in effect when you run the `snyk test` or `snyk monitor` CLI commands.
 {% endhint %}
 
-## Apply an Organization to a policy
+## Apply a policy to an Organization
 
-To apply an Organization to a policy, in the Organization selector panel, check the box for the Organization you want to add.
+To apply a policy to an Organization, in the Organization selector panel, check the box for the Organization to which you want to apply the policy.
 
-If this Organization is already applied to another policy, you can see that policy from the selector, and the indicator next to the Organization name will be gray.
+If an Organization has another policy applied, you can see that policy from the selector, and the policy indicator next to the Organization name will be gray.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/mceclip3-2-.png" alt="Gray indicator - Organization already applied to another policy"><figcaption><p>Gray indicator - Organization already applied to another policy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip3-2-.png" alt=".Gray indicator - Organization has another policy applied"><figcaption><p>Gray indicator - Organization has another policy applied</p></figcaption></figure>
 
 </div>
 
-If an Organization is applied to the policy you are currently viewing, the name of the policy is displayed in a yellow indicator next to the Organization name.
+If the Organization already has the policy applied, the name of the policy is displayed in a yellow indicator next to the Organization name.
 
 <div align="left">
 
@@ -26,17 +26,17 @@ If an Organization is applied to the policy you are currently viewing, the name 
 
 </div>
 
-If you are moving an Organization from one policy to another, two indicators appear to show where the Organization is currently applied, yellow, and the policy where you will be applying the Organization, gray.
+If you are applying a different policy to an Organization, in order to move that Organization from one policy to another, two indicators appear next to the Organization name in the selector. One shows, in yellow, the policy that is currently applied. The other shows the policy you will be applying to the Organization in gray.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/mceclip1-16-.png" alt="Gray and Yellow indicators - Policies where the Organization is applied and will be applied"><figcaption><p>Gray and Yellow indicators - Policies where the Organization is applied and will be applied</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip1-16-.png" alt="Gray and Yellow indicators - Policies applied to the Organization and to be applied"><figcaption><p>Gray and Yellow indicators - Policies applied to the Organizaiton and to be applied</p></figcaption></figure>
 
 </div>
 
-## Remove an Organization from a policy
+## Remove a policy from an Organization
 
-To remove an Organization from a policy, uncheck the box next to the Organization you want to remove.
+To remove a policy from an Organization, uncheck the box next to the Organization you want to remove from the policy that you are viewing.
 
 <div align="left">
 
@@ -44,12 +44,12 @@ To remove an Organization from a policy, uncheck the box next to the Organizatio
 
 </div>
 
-The unchecked Organization will now revert to the default policy.
+The unchecked Organization will now automatically revert to the default policy.
 
-## Add an Organization to the default policy
+## Apply the default policy to an Organization
 
-Remove the Organization from the policy it is currently applied to. The Organization will automatically move to the default policy.
+Remove the policy currently applied to the Organization. The Organization will automatically revert to the default policy.
 
-## Remove an Organization from the default policy
+## Remove the default policy from an Organization
 
-Apply the Organization to a new policy. The Organization will automatically be removed from the default policy and move to the newly selected policy.
+Apply a new policy to the Organization. The Organization will automatically be removed from the default policy and the new policy will be applied.
