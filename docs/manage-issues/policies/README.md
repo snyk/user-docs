@@ -15,7 +15,9 @@ Snyk policies contain rules to define how Snyk behaves when encountering specifi
 
 </div>
 
-Using the Snyk Policy Manager, you can [view](view-policies.md), [create, and edit](create-and-modify-policies.md) policies. Policies are stored in t[he `.snyk` file](the-.snyk-file.md).
+Using the Snyk Policy Manager, you can [view](view-policies.md), [create, and edit](create-and-modify-policies.md) policies.
+
+The `.snyk file` stores policies.
 
 ## Benefits of Snyk policies
 
