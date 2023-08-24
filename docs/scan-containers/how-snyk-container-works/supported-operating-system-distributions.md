@@ -63,7 +63,7 @@ Snyk Container supports the following operating system distributions:
 
 ### [Chainguard](https://www.chainguard.dev/)
 
-* Any (latest tags)
+* Any
 
 ### [Debian](https://www.debian.org/)
 
@@ -127,5 +127,5 @@ Snyk Container supports the following operating system distributions:
 
 ### [Wolfi](https://github.com/wolfi-dev)
 
-* Any (latest tags)
+* Any&#x20;
 
