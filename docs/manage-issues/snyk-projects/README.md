@@ -48,7 +48,7 @@ Possible Origin values are:
 * api
 * artifactory-cr
 * aws-config
-* aws-lamba
+* aws-lambda
 * azure-functions
 * azure-repos
 * bitbucket-cloud
