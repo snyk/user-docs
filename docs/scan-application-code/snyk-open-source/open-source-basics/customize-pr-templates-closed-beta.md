@@ -89,7 +89,6 @@ If you use the [Snyk broker](../../../enterprise-setup/snyk-broker/) you need to
 
 Under the list of `private` rules add the following input. More information can be found on the [Configure Broker to be used for GitHub Enterprise](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/github-enterprise-install-and-configure-broker/setup-broker-with-github-enterprise.md#configure-broker-to-be-used-for-github-enterprise) page.
 
-````
 ```json
 {
   "//": "used to get custom pull request template",
@@ -104,13 +103,11 @@ Under the list of `private` rules add the following input. More information can 
   "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
 }
 ```
-````
 
 #### Azure repos
 
 Under the list of `private` rules, add the following two elements to the existing `valid.values` array for file content. More information can be found on the [Configure Broker to be used with Azure Repos](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/azure-repos-install-and-configure-broker/setup-broker-with-azure-repos.md#configure-broker-to-be-used-with-azure-repos) page.
 
-````
 ```json
 {
   "//": "get file content. restrict by file types",
@@ -123,15 +120,13 @@ Under the list of `private` rules, add the following two elements to the existin
       "values": [
         "**/.azuredevops/snyk_pull_request_template.yaml",
         "**%2F.azuredevops%2Fsnyk_pull_request_template.yaml",
-        ...
+}
 ```
-````
 
 #### BitBucket Server
 
 Under the list of `private` rules add the following input. More information can be found on the [Bitbucket Server/Data Center - environment variables for Snyk Broker](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker.md) page.
 
-````
 ```json
 {
   "//": "used to get custom pull request template",
@@ -156,13 +151,11 @@ Under the list of `private` rules add the following input. More information can 
   }
 }
 ```
-````
 
 #### GitLab
 
 Under the list of `private` rules add the following input. More information can be found on the [GitLab - environment variables for Snyk Broker](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/gitlab-install-and-configure-broker/gitlab-environment-variables-for-snyk-broker.md) page.
 
-````
 ```json
 {
   "//": "used to get custom pull request template",
@@ -177,11 +170,9 @@ Under the list of `private` rules add the following input. More information can 
   "origin": "https://${GITLAB}"
 }
 ```
-````
 
 If you use GitLab v3, add the following two elements to the existing `valid.values` array for file content:
 
-````
 ```json
 {
   "//": "used to determine the full dependency tree for v3 protocol",
@@ -194,9 +185,8 @@ If you use GitLab v3, add the following two elements to the existing `valid.valu
       "values": [
         "**/.config/snyk_pull_request_template.yaml",
         "**%2F.config%2Fsnyk_pull_request_template.yaml",
-        ...
+}
 ```
-````
 
 ## Variables list and description
 
