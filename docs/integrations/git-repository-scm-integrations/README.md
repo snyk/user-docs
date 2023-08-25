@@ -9,13 +9,13 @@ Snyk can integrate with the following Source Control Managers (SCMs) to help you
 * [Bitbucket Cloud App](snyk-bitbucket-cloud-app-integration.md)
 * [Bitbucket Data Center/Server](snyk-bitbucket-data-center-server-integration.md)
 * [GitLab](snyk-gitlab-integration.md)
-* [Azure Repos](snyk-azure-repositories-tfs-integration.md)
+* [Azure (TFS) Repos](snyk-azure-repositories-tfs-integration.md)
 
-## Are there any tips for integrating my Git repo with Snyk?
+## Tips for integrating Git repositories with Snyk
 
 See the [Snyk deployment recommendations](introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md) for integrating your SCM with Snyk and [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md).
 
-## How can I use Snyk Pull Requests (PRs) for my Git repositories?
+## How to use Snyk Pull Requests (PRs) with Git repositories
 
 For details, see the following pages:
 
