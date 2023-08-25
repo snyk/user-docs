@@ -66,11 +66,11 @@ Most framework are supported "out of the box" as Snyk Code only need to be able 
 
 ### JavaScript frameworks
 
-:link:[JavaScript frameworks supporting code analysis](../supported-languages-and-frameworks/javascript/#code-analysis)
+:link:[JavaScript frameworks supporting code analysis](../supported-languages-and-frameworks/javascript.md#code-analysis)
 
 ### Java frameworks
 
-:link:[Java frameworks supporting code analysis](../supported-languages-and-frameworks/java-and-kotlin/#code-analysis)
+:link:[Java frameworks supporting code analysis](../supported-languages-and-frameworks/java-and-kotlin.md#code-analysis)
 
 ### Python frameworks
 

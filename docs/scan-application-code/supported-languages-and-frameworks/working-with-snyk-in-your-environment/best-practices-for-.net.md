@@ -12,7 +12,7 @@ For framework support, see [Snyk Code - Supported languages and frameworks](../.
 
 * **Target Frameworks**: Snyk identifies the target frameworks and presents results against each identified version using the git integration.
 * **Development dependencies**: Snyk generally does not scan developer dependencies, as they are not usually pushed to production and are seen as "noise." \
-  Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](./#git-settings-for-.net)). \
+  Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](../.net.md#git-settings-for-.net)). \
   Snyk scans and fixes the build and `development Dependency` sections of your [`*.proj`](#user-content-fn-1)[^1], `packages.config` and `project.json` files
 * **Lock files**: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
 * **PackageReference:** Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
