@@ -65,7 +65,7 @@ If you cannot see the **Code Analysis** section, ensure that your user has the O
 * [ ] **Only fail for high or critical severity issues**: Select additional failure conditions based on the severity threshold.
 * [ ] **Only fail when the issues found have a fix available**: Set this condition on or more if the issues found have a dependency or package with a version in which the issue is fixed.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13 (1) (1).png" alt="Pull request check settings to analyze open-source and licensing issues." width="563"><figcaption><p>PR check settings to analyze open-source and licensing issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13 (1).png" alt="Pull request check settings to analyze open-source and licensing issues." width="563"><figcaption><p>PR check settings to analyze open-source and licensing issues</p></figcaption></figure>
 
 4. Either click **Save** to save the changes, select the Save dropdown and click **Apply changes to all overridden Projects** to extend the current configuration to Projects with custom settings. For more information, see [Configure PR Checks at the Project level](configure-pr-checks.md#configure-pr-checks-at-the-project-level)).
 

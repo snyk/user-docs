@@ -33,7 +33,7 @@ Follow the steps in this documentation to [create a new role](../../../snyk-admi
 
 This example illustrates creating a new role called **Kubernetes connector for Insights.**
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for Insights role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for Insights role</p></figcaption></figure>
 
 ### Step 3: Assign permissions to this role
 
@@ -55,7 +55,7 @@ Navigate to that **Snyk Organization -> Settings -> Service Account.**
 
 Create a new service account with your chosen name, and from the drop-down, select the role you created in the previous step.
 
-<figure><img src="../../../.gitbook/assets/image (11) (2) (1).png" alt="Select the Insights k8s Agent role"><figcaption><p>Select the Insights k8s Agent role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt="Select the Insights k8s Agent role"><figcaption><p>Select the Insights k8s Agent role</p></figcaption></figure>
 
 After the service account is created, you will be shown the API token. Copy this down and store it somewhere safe; you’ll need this to configure the agent in the Helm chart.
 
@@ -71,7 +71,7 @@ To ensure you have set up your Kubernetes connector properly, navigate to the **
 
 ## FAQ
 
-#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector for Insights?**
+#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-application-code/snyk-container/kubernetes-integration/kubernetes-integration-overview/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector for Insights?**
 
 The Kubernetes **monitor** extracts images from a Kubernetes cluster’s workloads and scans them for vulnerabilities. The Kubernetes **connector** for Insights extracts workload configurations from a Kubernetes cluster.
 

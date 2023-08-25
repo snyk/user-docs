@@ -10,8 +10,8 @@
 
 #### Scan using Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-| <p><a href="scan-applications/">Scan applications</a><br>Secure your application: scan native code, open-source libraries, and containers</p> | <p><a href="scan-infrastructure/">Scan infrastructure</a><br>Secure your infrastructure, before and after it is deployed</p> |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| <p><a href="scan-application-code/">Scan applications</a><br>Secure your application: scan native code, open-source libraries, and containers</p> | <p><a href="scan-infrastructure/">Scan infrastructure</a><br>Secure your infrastructure, before and after it is deployed</p> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 
 #### Manage your Snyk system
 

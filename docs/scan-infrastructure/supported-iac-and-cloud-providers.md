@@ -1,7 +1,7 @@
 # Supported IaC and cloud providers
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md), and [Snyk Container - Supported operating system distributions](../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md).
+For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md), and [Snyk Container - Supported operating system distributions](../scan-application-code/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
 {% endhint %}
 
 Snyk Infrastructure as Code (IaC) supports the following environments and configuration files:

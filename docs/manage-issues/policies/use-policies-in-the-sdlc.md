@@ -19,7 +19,7 @@ The legal team in your company requires strict license compliance controls for b
 
 To meet this requirement, first add the `Critical`, `Production`, and `Frontend` attributes to the Snyk Projects you want this policy to apply to:
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt="Add relevant attributes to a Project from the Issues tab"><figcaption><p>Add relevant attributes to a Project from the Issues tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt="Add relevant attributes to a Project from the Issues tab"><figcaption><p>Add relevant attributes to a Project from the Issues tab</p></figcaption></figure>
 
 Next, create a new license policy and apply the policy to those attributes:
 
@@ -40,7 +40,7 @@ Using a process similar to the one in the previous example, you can define a sec
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (14) (3).png" alt="Snyk security policy - specify vulnerabilities to ignore"><figcaption><p>Snyk security policy - specify vulnerabilities to ignore</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt="Snyk security policy - specify vulnerabilities to ignore"><figcaption><p>Snyk security policy - specify vulnerabilities to ignore</p></figcaption></figure>
 
 </div>
 
@@ -70,4 +70,4 @@ An example follows of a workflow high-severity vulnerability
 
 This example shows a GitHub Action build workflow failing because of a high-severity vulnerability identified by Snyk testing:
 
-<figure><img src="../../.gitbook/assets/image (6) (4).png" alt="CI/CD check fails on security policy breach"><figcaption><p>CI/CD check fails on security policy breach</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (3).png" alt="CI/CD check fails on security policy breach"><figcaption><p>CI/CD check fails on security policy breach</p></figcaption></figure>

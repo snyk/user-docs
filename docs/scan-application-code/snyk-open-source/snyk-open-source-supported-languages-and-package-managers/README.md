@@ -3,12 +3,12 @@
 Snyk Open Source supports the following programming languages, build tools, and package managers.
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see: [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-language-and-framework-support.md), [Snyk Container - Supported operating system distributions](../../../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md), and [Snyk IaC and Cloud - Supported providers](../../../scan-infrastructure/supported-iac-and-cloud-providers.md).
+For environments supported with other Snyk products, see: [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-language-and-framework-support.md), [Snyk Container - Supported operating system distributions](../../snyk-container/how-snyk-container-works/supported-operating-system-distributions.md), and [Snyk IaC and Cloud - Supported providers](../../../scan-infrastructure/supported-iac-and-cloud-providers.md).
 {% endhint %}
 
 | **Language**                                                                                 | **Package manager / build tool**                                                                    |
 | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [.NET](snyk-for-.net.md) (C#, F#, Visual Basic)                                              | Nuget, Paket                                                                                        |
+| [.NET](broken-reference) (C#, F#, Visual Basic)                                              | Nuget, Paket                                                                                        |
 | [Bazel](snyk-for-bazel.md)                                                                   | [API Test Dep Graph endpoint](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph) |
 | [C / C++](snyk-for-c-c++.md)                                                                 | N/A                                                                                                 |
 | [Elixir](snyk-for-elixir.md)                                                                 | hex                                                                                                 |
