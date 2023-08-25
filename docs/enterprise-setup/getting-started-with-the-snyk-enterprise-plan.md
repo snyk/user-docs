@@ -11,7 +11,7 @@ Snyk has a number of tools and processes that help secure your entire software d
 For users who are evaluating Snyk or planning an enterprise deployment, and for most programming languages, Snyk recommends integrating with a Git repository to get started.
 
 {% hint style="info" %}
-The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. Visit the [guide](../guides/) specific to your language for more details.
+The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. Visit the [guide](broken-reference) specific to your language for more details.
 {% endhint %}
 
 To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see the [Ways to integrate Snyk at your company](https://training.snyk.io/courses/ways-to-use-snyk) course.
@@ -107,7 +107,7 @@ Snyk test video
 
 A scan with [**Snyk code test** ](../scan-application-code/snyk-code/using-snyk-code-from-the-cli/)runs a Static Code Analysis test on the code in that Project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
 
-A scan with [**Snyk container test**](../scan-containers/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image to one that is more secure.
+A scan with [**Snyk container test**](../scan-application-code/snyk-container/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image to one that is more secure.
 
 A scan with [**Snyk iac test**](../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) returns advice on how to resolve discovered issues in your Infrastructure as Code files.
 

@@ -98,7 +98,7 @@ See [Configure PR Checks at the Integration level](../../../scan-application-cod
 
 {% hint style="info" %}
 Use Snyk License policies to ensure that your Snyk PRs are free of licensing issues.\
-See [Licenses](../../../scan-applications/snyk-open-source/licenses/) for more information.
+See [Licenses](../../../scan-application-code/snyk-open-source/licenses/) for more information.
 {% endhint %}
 
 ### **Initial step: get visibility and set fail conditions**

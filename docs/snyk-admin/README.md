@@ -17,5 +17,5 @@ See [Enterprise setup](../enterprise-setup/) for larger-scale Snyk setup.
 * [Manage settings](manage-settings/)
 
 {% hint style="info" %}
-See our [Guides](../guides/) for more step-by-step instructions and good practices.
+See our [Guides](broken-reference) for more step-by-step instructions and good practices.
 {% endhint %}

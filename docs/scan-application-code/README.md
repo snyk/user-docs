@@ -18,7 +18,7 @@ Scan your codebase for known vulnerabilities and get remediation guidance either
 
 Find and automatically fix container and workload vulnerabilities.
 
-See [Snyk Container](../scan-applications/snyk-container/) docs for more details.
+See [Snyk Container](snyk-container/) docs for more details.
 
 ## Run pull request checks
 
@@ -28,4 +28,4 @@ Scan and automatically address potential vulnerabilities when you review pull re
 
 * [Supported languages and package managers in Snyk Open Source](snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
 * [Supported languages and frameworks in Snyk Code](snyk-code/snyk-code-supported-languages-and-frameworks.md)
-* [Supported operating system distributions in Snyk Container](../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md)
+* [Supported operating system distributions in Snyk Container](snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)

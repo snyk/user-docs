@@ -160,7 +160,7 @@ Integrate your Organization with a Slack channel to notify your teams of issues.
 
 ### Define language settings
 
-Based on the nuances of the tech stack you are using, you will want to set your language preferences. For more detail on the nuances of using Snyk in specific circumstances, see the [Guide ](../guides/)specific to your language.
+Based on the nuances of the tech stack you are using, you will want to set your language preferences. For more detail on the nuances of using Snyk in specific circumstances, see the [Guide ](broken-reference)specific to your language.
 
 ### Integrate private registries
 
