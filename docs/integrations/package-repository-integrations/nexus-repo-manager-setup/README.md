@@ -7,7 +7,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 {% hint style="info" %}
 **Supported Projects**\
-The Nexus Repository Manager integration currently supports [Node.js](../../../scan-application-code/supported-languages-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md) projects. Gradle projects are not currently supported.
+The Nexus Repository Manager integration currently supports [Node.js](../../../scan-application-code/supported-languages-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](broken-reference) projects. Gradle projects are not currently supported.
 {% endhint %}
 
 Connecting Nexus Repository Manager enables Snyk to resolve all direct and transitive dependencies of packages hosted on the Nexus registry and calculate a more complete, accurate dependency graph and related vulnerabilities.

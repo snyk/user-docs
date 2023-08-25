@@ -12,7 +12,7 @@ Fix the security issues and quality flaws in the source code through an automate
 
 Fix Suggestions combines the power of a thorough program analysis engine with the abilities of an in-house deep learning-based large language model. This combination allows for compiling large amounts of unstructured language information [from open-source code](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#what-data-does-deepcode-ai-fix-suggestions-collect).
 
-Key features set Fix Suggestions apart. It has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. The [Snyk Code engine](snyk-code-local-engine.md) rigorously checks the suggestions from the neural network, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
+Key features set Fix Suggestions apart. It has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. The [Snyk Code engine](../../scan-applications/snyk-code/snyk-code-local-engine.md) rigorously checks the suggestions from the neural network, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
 
 ## What issues can you fix automatically?
 
@@ -32,7 +32,7 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Fix Suggestions language support
 
-Fix Suggestions supports only [Javascript](snyk-code-language-and-framework-support.md#javascript-frameworks) and Typescript.
+Fix Suggestions supports only [Javascript](snyk-code-supported-languages-and-frameworks.md#javascript-frameworks) and Typescript.
 
 ## Enable DeepCode AI Fix Suggestions
 

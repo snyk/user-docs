@@ -27,7 +27,7 @@ For example, although the Snyk solution does support code using reflection, it i
 
 ## Supported languages and integrations for reachable vulnerabilities
 
-Reachable vulnerabilities analysis is available for **Java** (Maven and Gradle) with [supported versions](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md) using the **GitHub** integration.
+Reachable vulnerabilities analysis is available for **Java** (Maven and Gradle) with [supported versions](broken-reference) using the **GitHub** integration.
 
 The public beta version supports **Bitbucket Cloud** and **Bitbucket Server**, **Gitlab**, and **Azure Repos**, including brokered connections.
 

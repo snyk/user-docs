@@ -19,7 +19,7 @@ The legal team in your company requires strict license compliance controls for b
 
 To meet this requirement, first add the `Critical`, `Production`, and `Frontend` attributes to the Snyk Projects you want this policy to apply to:
 
-<figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt="Add relevant attributes to a Project from the Issues tab"><figcaption><p>Add relevant attributes to a Project from the Issues tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3).png" alt="Add relevant attributes to a Project from the Issues tab"><figcaption><p>Add relevant attributes to a Project from the Issues tab</p></figcaption></figure>
 
 Next, create a new license policy and apply the policy to those attributes:
 
@@ -60,7 +60,7 @@ An example follows of a PR check on a JavaScript package license.
 
 This example shows a pull request to add the `fullpage.js` package to a JavaScript application. Although this change passes the security policy check, because the latest version of the package has no known vulnerability, it fails the license policy check because the GPLv3 license is included in violation of the license policy of the company.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
 
 ## Apply policies in CI/CD
 
@@ -70,4 +70,4 @@ An example follows of a workflow high-severity vulnerability
 
 This example shows a GitHub Action build workflow failing because of a high-severity vulnerability identified by Snyk testing:
 
-<figure><img src="../../.gitbook/assets/image (6) (3).png" alt="CI/CD check fails on security policy breach"><figcaption><p>CI/CD check fails on security policy breach</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt="CI/CD check fails on security policy breach"><figcaption><p>CI/CD check fails on security policy breach</p></figcaption></figure>

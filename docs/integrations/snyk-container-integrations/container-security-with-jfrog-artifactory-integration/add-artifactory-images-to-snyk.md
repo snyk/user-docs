@@ -26,7 +26,7 @@ Snyk tests and monitors your Artifactory container images by evaluating the tags
 
     A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
 * When the import ends, a notification of success or failure appears at the top of the page. Click Refresh to view the Projects page with the newly imported images. Images are grouped by repository and are each linked individually to a detailed Projects page.
-* You can now connect your Git repo to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-application-code/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+* You can now connect your Git repo to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 Images are indicated with a unique icon ![Artifactory](<../../../.gitbook/assets/image (5) (2).png>).  You can filter to view only the Artifactory Projects:
 
@@ -35,5 +35,5 @@ Images are indicated with a unique icon ![Artifactory](<../../../.gitbook/assets
 Artifactory integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk user documentation.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-application-code/snyk-container/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-containers/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}

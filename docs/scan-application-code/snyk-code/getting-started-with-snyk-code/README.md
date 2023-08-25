@@ -19,7 +19,7 @@ To start using Snyk Code, you must have the following:
   For more information on integrating your SCM with your Snyk account, see [Snyk Code - Supported integrations](../snyk-code-key-features/snyk-code-supported-integrations.md).
 * Repositories with code in a supported language and platform\
   Snyk Code creates an abstract syntax tree without compiling the code. This requires code to be valid and syntactically correct, including package import statements for components stored in other files or folders.\
-  For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-language-and-framework-support.md).
+  For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-supported-languages-and-frameworks.md).
 
 ## **How to activate Snyk Code**
 
