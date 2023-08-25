@@ -128,12 +128,7 @@ These are some of the explicitly supported frameworks for PHP; those are in addi
 
 ### Swift frameworks (beta)
 
-The following frameworks are supported:
-
-* Alamofire
-* Pathos
-* sqlite3
-* CryptoKit
+For information about Swift frameworks that support code analysis, see the [code analysis information on the Swift and Objective-C page.](../supported-languages-and-frameworks/swift-and-objective-c.md)
 
 ### Kotlin (beta)
 

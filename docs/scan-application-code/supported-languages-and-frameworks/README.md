@@ -16,7 +16,7 @@ Snyk supports the following languages&#x20;
 * [Python](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)&#x20;
 * [Ruby](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
 * [Scala](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-scala.md)
-* [Swift and Objective-C](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-swift-and-objective-c-cocoapods.md)
+* [Swift and Objective-C](broken-reference)
 
 
 
