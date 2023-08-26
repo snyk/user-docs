@@ -8,7 +8,7 @@
 
 The `snyk config` command manages your local Snyk CLI config file, a JSON file located at `$XDG_CONFIG_HOME` or `~/.config` followed by `configstore/snyk.json`
 
-Example:  `~/.config/configstore/snyk.json`
+Example: `~/.config/configstore/snyk.json`
 
 This command does not manage the `.snyk` file that is part of your project. See the [`snyk policy`](policy.md) and [`snyk ignore`](ignore.md) commands.
 
@@ -47,6 +47,10 @@ Define the API endpoint to use.
 ### `disable-analytics`
 
 Turn off analytics reporting.
+
+### `org`
+
+Specify the `<ORG_ID>` to run Snyk commands tied to a specific organization.&#x20;
 
 ### `oci-registry-url`
 
