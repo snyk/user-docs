@@ -1,54 +1,269 @@
 # Python rules
 
-| No. and Rule Name                                                       | CWE(s)                                                                                          | OWASP Top 10/SANS 25                                                              |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **(1) Use of Hardcoded Credentials**                                    | (798) Use of Hard-coded Credentials                                                             | OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures |
-|                                                                         | (259) Use of Hard-coded Password                                                                | SANS/CWE Top 25                                                                   |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(2) Use of Password Hash With Insufficient Computational Effort**     | (916) Use of Password Hash With Insufficient Computational Effort                               | OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures                     |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(3) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute**    | (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute                              | OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration                  |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(4) Hardcoded Secret**                                                | (547) Use of Hard-coded, Security-relevant Constants                                            | OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration                  |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(5) Command Injection**                                               | (78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') | OWASP Top Ten 2021 Category A03:2021 - Injection                                  |
-|                                                                         |                                                                                                 | SANS/CWE Top 25                                                                   |
-| **(6) Cross-site Scripting (XSS)**                                      | (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')       | OWASP Top Ten 2021 Category A03:2021 - Injection                                  |
-|                                                                         |                                                                                                 | SANS/CWE Top 25                                                                   |
-| **(7) Server-Side Request Forgery (SSRF)**                              | (918) Server-Side Request Forgery (SSRF)                                                        | OWASP Top Ten 2021 Category A10:2021 - Server-Side Request Forgery (SSRF)         |
-|                                                                         |                                                                                                 | SANS/CWE Top 25                                                                   |
-| **(8) Open Redirect**                                                   | (601) URL Redirection to Untrusted Site ('Open Redirect')                                       | OWASP Top Ten 2021 Category A01:2021 - Broken Access Control                      |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(9) SQL Injection**                                                   | (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')       | OWASP Top Ten 2021 Category A03:2021 - Injection                                  |
-|                                                                         |                                                                                                 | SANS/CWE Top 25                                                                   |
-| **(10) Use of Hardcoded Cryptographic Key**                             | (321) Use of Hard-coded Cryptographic Key                                                       | OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures                     |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(11) Sensitive Cookie Without 'HttpOnly' Flag**                       | (1004) Sensitive Cookie Without 'HttpOnly' Flag                                                 | OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration                  |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(12) Deserialization of Untrusted Data**                              | (502) Deserialization of Untrusted Data                                                         | OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures       |
-|                                                                         |                                                                                                 | SANS/CWE Top 25                                                                   |
-| **(13) Code Injection**                                                 | (94) Improper Control of Generation of Code ('Code Injection')                                  | OWASP Top Ten 2021 Category A03:2021 - Injection                                  |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(14) Path Traversal**                                                 | (23) Relative Path Traversal                                                                    | OWASP Top Ten 2021 Category A01:2021 - Broken Access Control                      |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(15) XPath Injection**                                                | (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')              | OWASP Top Ten 2021 Category A03:2021 - Injection                                  |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(16) Origin Validation Error**                                        | (942) Permissive Cross-domain Policy with Untrusted Domains                                     | OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration                  |
-|                                                                         | (346) Origin Validation Error                                                                   | OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(17) Cross-Site Request Forgery (CSRF)**                              | (352) Cross-Site Request Forgery (CSRF)                                                         | OWASP Top Ten 2021 Category A01:2021 - Broken Access Control                      |
-|                                                                         |                                                                                                 | SANS/CWE Top 25                                                                   |
-| **(18) Server Information Exposure**                                    | (209) Generation of Error Message Containing Sensitive Information                              | OWASP Top Ten 2021 Category A04:2021 - Insecure Design                            |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(19) Regular Expression Denial of Service (ReDoS)**                   | (400) Uncontrolled Resource Consumption                                                         |                                                                                   |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(20) Improper Neutralization of Directives in Statically Saved Code** | (96) Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')   | OWASP Top Ten 2021 Category A03:2021 - Injection                                  |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(21) Broken User Authentication**                                     | (287) Improper Authentication                                                                   | OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures |
-|                                                                         |                                                                                                 | SANS/CWE Top 25                                                                   |
-| **(22) Insecure File Permissions**                                      | (732) Incorrect Permission Assignment for Critical Resource                                     | SANS/CWE Top 25                                                                   |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(23) Improper Handling of Insufficient Permissions or Privileges**    | (280) Improper Handling of Insufficient Permissions or Privileges                               | OWASP Top Ten 2021 Category A04:2021 - Insecure Design                            |
-|                                                                         |                                                                                                 |                                                                                   |
-| **(24) Arbitrary File Write via Archive Extraction (Tar Slip)**         | (22) Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')             | OWASP Top Ten 2021 Category A01:2021 - Broken Access Control                      |
-|                                                                         |                                                                                                 | SANS/CWE Top 25                                                                   |
+## Rule (1) Incomplete URL sanitization
+
+**CWE** (20) Improper Input Validation
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (2) Arbitrary File Write via Archive Extraction (Tar Slip)
+
+**CWE** (22) Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (3) Path Traversal
+
+**CWE** (23) Relative Path Traversal
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+## Rule (4) Command Injection
+
+**CWE** (78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (5) Cross-site Scripting (XSS)
+
+**CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (6) Jinja auto-escape is set to false.
+
+**CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (7) NoSQL Injection
+
+**CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (8) SQL Injection
+
+**CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (9) Code Injection
+
+**CWE** (94) Improper Control of Generation of Code ('Code Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+## Rule (10) Improper Neutralization of Directives in Statically Saved Code
+
+**CWE** (96) Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+## Rule (11) Server Information Exposure
+
+**CWE** (209) Generation of Error Message Containing Sensitive Information
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+## Rule (12) Use of Hardcoded Credentials
+
+**CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (13) Improper Handling of Insufficient Permissions or Privileges
+
+**CWE** (280) Improper Handling of Insufficient Permissions or Privileges
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+## Rule (14) Binding to all network interfaces may open service to unintended traffic
+
+**CWE** (284) Improper Access Control
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+## Rule (15) Broken User Authentication
+
+**CWE** (287) Improper Authentication
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (16) Improper Certificate Validation
+
+**CWE** (295) Improper Certificate Validation
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+## Rule (17) Cryptographic Issues
+
+**CWE** (310) Cryptographic Issues
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (18) Authentication over HTTP
+
+**CWE** (319) Cleartext Transmission of Sensitive Information
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (19) Use of Hardcoded Cryptographic Key
+
+**CWE** (321) Use of Hard-coded Cryptographic Key
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (20) Inadequate Encryption Strength
+
+**CWE** (326) Inadequate Encryption Strength
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (21) Use of a Broken or Risky Cryptographic Algorithm
+
+**CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (22) Missing protocol in ssl.wrap\_socket
+
+**CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (23) Use of Hardcoded Cryptographic Initialization Value
+
+**CWE** (329) Generation of Predictable IV with CBC Mode
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (24) Origin Validation Error
+
+**CWE** (346, 942) Origin Validation Error, Permissive Cross-domain Policy with Untrusted Domains
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+## Rule (25) Cross-Site Request Forgery (CSRF)
+
+**CWE** (352) Cross-Site Request Forgery (CSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (26) Insecure Temporary File
+
+**CWE** (377) Insecure Temporary File
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+## Rule (27) Regular Expression Denial of Service (ReDoS)
+
+**CWE** (400) Uncontrolled Resource Consumption
+
+## Rule (28) Insecure default value
+
+**CWE** (453) Insecure Default Variable Initialization
+
+## Rule (29) Debug Mode Enabled
+
+**CWE** (489) Active Debug Code
+
+## Rule (30) Deserialization of Untrusted Data
+
+**CWE** (502) Deserialization of Untrusted Data
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (31) Hardcoded Secret
+
+**CWE** (547) Use of Hard-coded, Security-relevant Constants
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+## Rule (32) Open Redirect
+
+**CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+## Rule (33) Insecure Xml Parser
+
+**CWE** (611) Improper Restriction of XML External Entity Reference
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (34) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+
+**CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+## Rule (35) XPath Injection
+
+**CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+## Rule (36) Insecure File Permissions
+
+**CWE** (732) Incorrect Permission Assignment for Critical Resource
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (37) Selection of Less-Secure Algorithm During Negotiation (SSL instead of TLS)
+
+**CWE** (757) Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (38) Use of Password Hash With Insufficient Computational Effort
+
+**CWE** (916) Use of Password Hash With Insufficient Computational Effort
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (39) Server-Side Request Forgery (SSRF)
+
+**CWE** (918) Server-Side Request Forgery (SSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A10:2021 - Server-Side Request Forgery (SSRF)
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (40) Sensitive Cookie Without 'HttpOnly' Flag
+
+**CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+## Rule (41) Python 2 source code
+
+**CWE** (1104) Use of Unmaintained Third Party Components
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A06:2021 - Vulnerable and Outdated Components
