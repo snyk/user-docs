@@ -15,12 +15,12 @@ The following status indicators can appear for your Snyk PR checks in the integr
 <table><thead><tr><th width="212">Result status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Success/Passed</strong></td><td>No issues were discovered and the manifest file was not changed.</td></tr><tr><td><strong>Pending</strong></td><td>The PR Checks are still running.</td></tr><tr><td><strong>Failed/Issues found</strong></td><td>Security issues were identified in the pull request. In this scenario, you need to manually set the result status to <strong>Passed</strong>.</td></tr><tr><td><strong>Error</strong></td><td>Out-of-sync package.json and package.lock files, failure to find or to read the manifest file.</td></tr><tr><td><strong>Canceled</strong></td><td>The test limit has been reached.</td></tr></tbody></table>
 
 {% hint style="info" %}
-For false positive or false negative results, see [TroubleshootinG PR Che](troubleshooting.md)cks.
+For false positive or false negative results, see [Troubleshooting PR Checks](troubleshooting.md).
 {% endhint %}
 
 ## **Example: fix dependency issues with PR Checks**
 
-Consider the following end-to-end scenario, including specific actions such as triggering a Fix PR and marking a **Failed** result as **Passed**. You can take these actions in relation to the information provided by the PR Checks. This example shows taking the steps for a  [GitHub integration](../../integrations/git-repository-scm-integrations/snyk-github-integration.md) as follows:
+Consider the following end-to-end scenario, including specific actions such as triggering a Fix PR and marking a **Failed** result as **Passed**. You can take these actions in relation to the information provided by the PR Checks. This example shows taking the steps for a [GitHub integration](../../integrations/git-repository-scm-integrations/snyk-github-integration.md) as follows:
 
 1. [Trigger a fix for an individual dependency issue](analyze-pr-checks-results.md#trigger-a-fix-for-an-individual-dependency-issue) to find and address vulnerabilities.
 2. [Open a Fix PR](analyze-pr-checks-results.md#open-a-fix-pr) to open a pull request in GitHub.
@@ -50,7 +50,7 @@ Confirm your selected issue and click **Open a Fix PR** to open a pull request i
 2. Find the conversation card showing the PR Checks results. For this example, the result is set to **Failed** and is manually changed to **Passed**.&#x20;
 
 {% hint style="info" %}
-Issues that have previously been ignored via the Snyk Web UI in the associated OPen Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../manage-issues/priorities-for-fixing-issues/ignore-issues.md) across feature branch PRs.
+Issues that have previously been ignored via the Snyk Web UI in the associated Open Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../manage-issues/priorities-for-fixing-issues/ignore-issues.md) across feature branch PRs.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/PR_checks_in_GitHub_integration.png" alt="PR Checks card in the Conversations tab, GitHub."><figcaption><p>PR Checks card in the Conversations tab, GitHub</p></figcaption></figure>
