@@ -256,18 +256,18 @@
     * [Swift and Objective-C](scan-application-code/supported-languages-and-frameworks/swift-and-objective-c.md)
   * [Snyk Open Source](scan-application-code/snyk-open-source/README.md)
     * [Snyk Open Source - supported languages and package managers](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/README.md)
-      * [Snyk for .NET](scan-application-code/supported-languages-and-frameworks/.net.md)
+      *
       * [Snyk for Bazel](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)
-      * [Snyk for C++](scan-application-code/supported-languages-and-frameworks/c-c++.md)
+      *
       * [Snyk for Elixir](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
       * [Snyk for Go](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
-      * [Snyk for Java and Kotlin](scan-application-code/supported-languages-and-frameworks/java-and-kotlin.md)
-      * [Snyk for JavaScript](scan-application-code/supported-languages-and-frameworks/javascript.md)
+      *
+      *
       * [Snyk for PHP](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
       * [Snyk for Python](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)
       * [Snyk for Ruby](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
       * [Snyk for Scala](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-scala.md)
-      * [Snyk for Swift and Objective-C](scan-application-code/supported-languages-and-frameworks/swift-and-objective-c.md)
+      *
     * [Getting started with Snyk Open Source](scan-application-code/snyk-open-source/getting-started-snyk-open-source.md)
     * [Use Snyk Open Source from the CLI](scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/README.md)
       * [Use options to customize the snyk test command](scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/use-options-to-customize-the-snyk-test-command.md)
