@@ -849,9 +849,9 @@ Remove the unsupported component and retry the request.
 
 ### [SNYK-OSSI-2023](#snyk-ossi-2023)
 
-#### Unsupported Go version format
+#### Go version format not supported
 
-Go pseudo versions are not supported.
+Go pseudo version not supported.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -1126,4 +1126,4 @@ Snyk could not generate hash using the customer PR files and projects vulnIds.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-08-28T17:33:38.551Z
+--- Generated at 2023-08-29T08:26:29.087Z
