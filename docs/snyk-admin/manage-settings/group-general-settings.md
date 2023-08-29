@@ -2,7 +2,7 @@
 
 To view and manage general settings for your Group, navigate to **Settings > GROUP SETTINGS > General:**
 
-<figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption><p>Group general settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3) (1) (1).png" alt=""><figcaption><p>Group general settings</p></figcaption></figure>
 
 * [Group name](group-general-settings.md#group-name)
 * [Group ID](group-general-settings.md#group-id)
@@ -35,7 +35,7 @@ See **Settings** in the [Organization access requests](../manage-users-and-permi
 Set the default test frequency for any new Projects created in this Group.
 
 {% hint style="warning" %}
-Changing this setting will not affect the default test frequency of [Snyk Infrastructure as Code](../../scan-infrastructure/snyk-infrastructure-as-code/) or [Snyk Code](../../scan-application-code/snyk-code/) Projects. The default for both of these is weekly.
+Changing this setting will not affect the default test frequency of [Snyk Infrastructure as Code](../../scan-infrastructure/snyk-infrastructure-as-code/) or [Snyk Code](../../scan-applications/snyk-code/) Projects. The default for both of these is weekly.
 {% endhint %}
 
 

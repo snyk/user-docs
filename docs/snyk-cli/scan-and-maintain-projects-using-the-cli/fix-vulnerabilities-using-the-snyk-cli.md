@@ -1,8 +1,8 @@
 # Fix vulnerabilities using the Snyk CLI
 
-The Snyk CLI provides support for fixing vulnerabilities found by using the `snyk test` command. For information about fixes in the Web UI, see [Fix your vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md). For general information about patches, see [Snyk patches to fix vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md).
+The Snyk CLI provides support for fixing vulnerabilities found by using the `snyk test` command. For information about fixes in the Web UI, see [Fix your vulnerabilities](../../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md). For general information about patches, see [Snyk patches to fix vulnerabilities](../../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md).
 
-If you are using `snyk container test`, see [Understanding Snyk Container CLI results](../../scan-application-code/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md) for information about resolving vulnerabilities found in a scan. If you are using `snyk code test`, see [Understanding the Snyk Code CLI results](../../scan-application-code/snyk-code/using-snyk-code-from-the-cli/snyk-code-cli-results.md). If you are using `snyk iac test`, see [Understanding the IaC CLI test results](../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/).
+If you are using `snyk container test`, see [Understanding Snyk Container CLI results](../../scan-applications/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md) for information about resolving vulnerabilities found in a scan. If you are using `snyk code test`, see [Understanding the Snyk Code CLI results](../../scan-applications/snyk-code/using-snyk-code-from-the-cli/snyk-code-cli-results.md). If you are using `snyk iac test`, see [Understanding the IaC CLI test results](../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/).
 
 ## Upgrade and patch results from the CLI
 
@@ -13,7 +13,7 @@ From the CLI, for each list (upgrade and patch), results are displayed in groups
 
 Upgrade and patch results appear similar to the following:
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upgrade results in the CLI"><figcaption><p>Upgrade results in the CLI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upgrade results in the CLI"><figcaption><p>Upgrade results in the CLI</p></figcaption></figure>
 
 Patch recommendations appear similar to the following:
 

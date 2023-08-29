@@ -39,9 +39,9 @@ After the extension is installed, you can set the following configuration option
   *   **Proxy Strict SSL:** check to specify that the proxy server certificate should be verified against the list of supplied CAs specific to Snyk Code.\
       &#x20;&#x20;
 
-      <figure><img src="../../../.gitbook/assets/image (1) (2).png" alt="roxy strict SSL option"><figcaption><p>Proxy strict SSL option</p></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt="roxy strict SSL option"><figcaption><p>Proxy strict SSL option</p></figcaption></figure>
   * **Automatic Dependency Management** and **Cli Path**: uncheck to opt out of downloading the CLI through the plugin and thus use your own installation of the CLI. Snyk recommends always using the most recent version of the CLI.
     * When **Automatic Dependency Management** is checked, the plugin will automatically download and keep the CLI updated.
     *   When **Automatic Dependency Management** \_\_ is checked \_\_ and **Cli Path** contains a path, the plugin uses the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules), and you need to obtain the CLI through other means.
 
-        <figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 14.08.05.png" alt="Automatic Dependency Management and CLI Path"><figcaption><p>Automatic Dependency Management and CLI Path</p></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 14.08.05 (1).png" alt="Automatic Dependency Management and CLI Path"><figcaption><p>Automatic Dependency Management and CLI Path</p></figcaption></figure>

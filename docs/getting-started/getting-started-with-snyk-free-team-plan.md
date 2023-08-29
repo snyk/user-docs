@@ -62,15 +62,15 @@ You need to [install the Snyk CLI](../snyk-cli/install-or-update-the-snyk-cli/).
 Authenticate CLI video
 {% endembed %}
 
-A scan with [**Snyk test**](../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/) surfaces information about open source package issues, including fix advice, demonstrated in this video.
+A scan with [**Snyk test**](../scan-applications/snyk-open-source/use-snyk-open-source-from-the-cli/) surfaces information about open source package issues, including fix advice, demonstrated in this video.
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/b8vrvtmnbu" %}
 Snyk test video
 {% endembed %}
 
-A scan with [**Snyk code test** ](../scan-application-code/snyk-code/using-snyk-code-from-the-cli/)runs a Static Code Analysis test on the code in that project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
+A scan with [**Snyk code test** ](../scan-applications/snyk-code/using-snyk-code-from-the-cli/)runs a Static Code Analysis test on the code in that project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
 
-A scan with [**Snyk container test**](../scan-application-code/snyk-container/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image for one that is more secure.
+A scan with [**Snyk container test**](../scan-applications/snyk-container/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image for one that is more secure.
 
 A scan with [**Snyk iac test**](../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) returns advice on how to resolve discovered issues in your Infrastructure as Code files.
 
