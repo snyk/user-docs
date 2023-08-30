@@ -4,7 +4,7 @@
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Snyk Code**                                                                                                                                                                                    | Scan your code for security vulnerabilities using source code analysis.                                                                                                                                                                                                                                                                                                                         |
 | <p><strong>Snyk Open Source</strong><br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> Some capabilities may be limited for some languages and package managers.</p> | <p></p><ul><li>Open Source vulnerability testing and monitoring (All plans).</li></ul><ul><li>Open Source dependency upgrade version bumping (All plans).</li></ul><ul><li>License Compliance (paid plans).</li></ul>                                                                                                                                                                           |
-| **Snyk Infrastructure as Code**                                                                                                                                                                  | <p>Scan for configuration issues when you deploy your new applications using Kubernetes deployment files, Terraform, or Cloudformation templates. <br><span data-gb-custom-inline data-tag="emoji" data-code="1f517">🔗</span> <a href="../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/">Snyk CLI for Infrastructure as Code</a></p>              |
+| **Snyk Infrastructure as Code**                                                                                                                                                                  | <p>Scan for configuration issues when you deploy your new applications using Kubernetes deployment files, Terraform, or Cloudformation templates. <br><span data-gb-custom-inline data-tag="emoji" data-code="1f517">🔗</span> <a href="../../../scan-infrastructure/snyk-cli-for-infrastructure-as-code/">Snyk CLI for Infrastructure as Code</a></p>                                          |
 | **Snyk Container**                                                                                                                                                                               | Scan for issues with container images if you are building containers.                                                                                                                                                                                                                                                                                                                           |
 | **Snyk Integrated IaC with cloud context**                                                                                                                                                       | <p></p><ul><li>Security from code to cloud and back.</li></ul><ul><li>Scan for runtime misconfiguration issues in your cloud and containers, detect infrastructure drift, and fix issues at their source.</li></ul><p><span data-gb-custom-inline data-tag="emoji" data-code="1f517">🔗</span> <a href="../../../scan-infrastructure/snyk-iac+/">Snyk Integrated IaC with cloud context</a></p> |
 
@@ -67,7 +67,7 @@ As a user of npm, you may ask, “Why Snyk?” when npm-audit is at hand anytime
 * Broad support across programming languages and package managers.
 * Ignore capabilities.
 
-:link: [Snyk for npm](../../../scan-application-code/supported-languages-and-frameworks/javascript.md#npm)
+:link: [Snyk for npm](../javascript.md#npm)
 
 ### Yarn
 
@@ -77,7 +77,7 @@ Requires yarn.lock and package.json
 * If a lock file is not present in CLI, the `node_modules` folder will be used to construct the dependency tree.
 * `nohoist` is not supported for Yarn Workspaces..
 
-:link: [Snyk for Yarn](../../../scan-application-code/supported-languages-and-frameworks/javascript.md#yarn)
+:link: [Snyk for Yarn](../javascript.md#yarn)
 
 ### Lerna/PNPM
 
@@ -142,7 +142,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 * Snyk will automatically look for application (open source) vulnerabilities as part of a container scan. Consider having Snyk integrated via CLI earlier in the pipeline and utilize this for an additional signal of and insight into what is in production.
 * If you ship your Node.JS application in a container, be aware that you might also be bundling insecure packages (Linux, open source), alongside your application in addition to what is brought in by the container base image. The Snyk Container CLI can help you identify a base image that minimizes the attack surface of your application.
-* For more information on how you can filter to the layer you wish to work on,such as identifying a secure base image to build off of, the layers you are responsible for, or application (OS) vulnerabilities, see [Snyk CLI for container security](../../../scan-application-code/snyk-container/snyk-cli-for-container-security/)
+* For more information on how you can filter to the layer you wish to work on,such as identifying a secure base image to build off of, the layers you are responsible for, or application (OS) vulnerabilities, see [Snyk CLI for container security](../../snyk-container/snyk-cli-for-container-security/)
 
 #### Infrastructure as code
 
@@ -150,7 +150,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 ### **Options and plugins**
 
-* To help generate reports locally or at build time, see the [snyk-to-html plugin](../../../scan-application-code/snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
+* To help generate reports locally or at build time, see the [snyk-to-html plugin](../../snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 * For advanced filtering options, see[ snyk-filter](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
 

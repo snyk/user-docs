@@ -110,7 +110,7 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md).
+A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md).
 
 ### Fix PR
 
@@ -214,7 +214,7 @@ Pull Request. Allows a user to exchange changes made to source code and collabor
 
 ### PR Checks
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [PR Checks](../scan-application-code/run-pr-checks/).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [PR Checks](../scan-applications/run-pr-checks/).
 
 ### Priority Score
 
@@ -324,11 +324,11 @@ A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerab
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../scan-application-code/snyk-code/).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../scan-applications/snyk-code/).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Scan containers](../scan-application-code/snyk-container/).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Scan containers](../scan-applications/snyk-container/).
 
 ### Snyk Infrastructure as Code
 
@@ -336,7 +336,7 @@ A Snyk product. Enables developers to find and fix vulnerabilities in your Kuber
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source](../scan-application-code/snyk-open-source/).
+A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source](../scan-applications/snyk-open-source/).
 
 ### Snyk plugin
 
@@ -375,7 +375,7 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 
 ### Vulnerability
 
-A security vulnerability, identified by Snyk. See [Starting to fix vulnerabilities](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/).
+A security vulnerability, identified by Snyk. See [Starting to fix vulnerabilities](../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/).
 
 ## W
 

@@ -13,10 +13,10 @@ This shows the number of issues found, grouped by severity level (**C**ritical, 
 
 The scan results and available actions depend on the type of Project you scan:
 
-* Open-source libraries: see [Snyk Open Source](../../scan-application-code/snyk-open-source/getting-started-snyk-open-source.md).
-* Application code: see [Snyk Code](../../scan-application-code/snyk-code/getting-started-with-snyk-code/).
-* Container images: see [Snyk Container](../../scan-application-code/snyk-container/getting-started-with-snyk-container.md).
-* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files: see [Snyk IaC](../../scan-infrastructure/snyk-infrastructure-as-code/getting-started-snyk-iac.md).
+* Open-source libraries: see [Snyk Open Source](../../scan-applications/snyk-open-source/getting-started-snyk-open-source.md).
+* Application code: see [Snyk Code](../../scan-applications/snyk-code/getting-started-with-snyk-code/).
+* Container images: see [Snyk Container](../../scan-applications/snyk-container/getting-started-with-snyk-container.md).
+* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files: see [Snyk IaC](../../scan-infrastructure/getting-started-with-snyk-iac/).
 * Cloud misconfigurations: see [Snyk Cloud](../../scan-infrastructure/snyk-iac+/).
 
 **What's next?**
