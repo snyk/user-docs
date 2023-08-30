@@ -14,7 +14,7 @@ A newly disclosed vulnerability affects you:
 
 A new upgrade or patch is available for a vulnerability that you previously ignored or patched:
 
-<figure><img src="../../.gitbook/assets/image (22) (1).png" alt="New upgrade available"><figcaption><p>New upgrade available</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1) (1).png" alt="New upgrade available"><figcaption><p>New upgrade available</p></figcaption></figure>
 
 To set the integration up, you must generate a Slack webhook. You can do this either via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
 
