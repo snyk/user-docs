@@ -740,6 +740,7 @@
     * [Your Plan and Billing](snyk-admin/manage-settings/your-plan-and-billing.md)
     * [Plans and Pricing](snyk-admin/manage-settings/plans-and-pricing.md)
     * [Snyk Preview](snyk-admin/manage-settings/snyk-preview.md)
+  * [Manage your AppSec program with Enterprise Analytics](snyk-admin/manage-your-appsec-program-with-enterprise-analytics.md)
 * [Snyk CLI](snyk-cli/README.md)
   * [Getting started with the CLI](snyk-cli/getting-started-with-the-cli.md)
   * [Code execution warning for Snyk CLI](snyk-cli/code-execution-warning-for-snyk-cli.md)
