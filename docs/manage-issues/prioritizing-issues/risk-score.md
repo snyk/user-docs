@@ -24,11 +24,15 @@ The Priority Score will be replaced with the Risk Score when Snyk Open Source an
 Note that in the API, the relevant fields are still named with `priority.`When enabled as part of the beta, the scores and factors populated in these fields are based on the Risk Score model.&#x20;
 {% endhint %}
 
-## Explore the Risk Score reasoning&#x20;
+## Explore the Risk Score by issue&#x20;
 
-When looking at Issue card information, click on the Risk Score to see the subscore and Risk Factors contributing to the score.
+When you are looking at Issue card information, hover on the Risk Score to see the subscore and Risk Factors contributing to the score.
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt="Impacvt, Likelihood, and Risk Factors"><figcaption><p>Impacvt, Likelihood, and Risk Factors</p></figcaption></figure>
+<div data-full-width="false">
+
+<figure><img src="../../.gitbook/assets/image (118).png" alt=".Impact, Likelihood and Risk Factors as part of the Risk Score tooltip" width="563"><figcaption><p>Impact, Likelihood and Risk Factors as part of the Risk Score tooltip</p></figcaption></figure>
+
+</div>
 
 ## About the Risk Score Model&#x20;
 

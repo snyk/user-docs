@@ -87,7 +87,7 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/)
 2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-3. [Set the default Organization for all Snyk tests](../snyk-code/using-snyk-code-from-the-cli/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
+3. [Set the default Organization for all Snyk tests](../../scan-applications/snyk-code/using-snyk-code-from-the-cli/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
 4. Install the relevant package manager before you use the Snyk CLI.
 5. Include the relevant manifest files supported by Snyk before testing.
 
@@ -102,9 +102,9 @@ snyk code test
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
 * [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../snyk-code/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
-* [Exporting the test results to a JSON or SARIF file](../snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md)
+* [Exclude directories and files from the Snyk tests](../../scan-applications/snyk-code/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../scan-applications/snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
+* [Exporting the test results to a JSON or SARIF file](../../scan-applications/snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md)
 
 #### Open source and licensing
 
@@ -236,7 +236,7 @@ If you are having any trouble testing your Gradle Projects with Snyk, collect th
 
 You can import Java repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../integrations/git-repository-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
-:link: [How Snyk works for open source and licensing](introduction-to-snyk-supported-languages-and-frameworks.md#how-snyk-works-for-open-source-and-licensing)
+:link: [How Snyk works for open source and licensing](../../scan-applications/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md#how-snyk-works-for-open-source-and-licensing)
 
 #### Import Project
 
@@ -285,7 +285,7 @@ The following capabilities are available for all Snyk users:
 
 **With Git integrations**
 
-Snyk allows you to [run PR Checks](../run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
+Snyk allows you to [run PR Checks](../../scan-applications/run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
 
 These results are viewable on the Snyk projects screen, for:
 
@@ -336,7 +336,7 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 #### What's next?
 
 * [Open a Fix PR](java-and-kotlin.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../scan-applications/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 
@@ -346,7 +346,7 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 
 ## Secure your codebase and dependencies
 
-To apply best practices for Java environments, see [Deployment and rollout recommendations](working-with-snyk-in-your-environment/snyk-for-java-developers.md#deployment-and-rollout-recommendations) and [Language-specific and package manager-specific notes](working-with-snyk-in-your-environment/snyk-for-java-developers.md#language-specific-and-package-manager-specific-notes).
+To apply best practices for Java environments, see [Deployment and rollout recommendations](../../scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-java-developers.md#deployment-and-rollout-recommendations) and [Language-specific and package manager-specific notes](../../scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-java-developers.md#language-specific-and-package-manager-specific-notes).
 
 ## Troubleshooting
 

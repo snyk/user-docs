@@ -282,7 +282,7 @@ If you use the **zero-installs** feature, Snyk Fix PRs do not update the **.yarn
 
 ## Secure your codebase and dependencies
 
-To apply best practices for Javascript and Node.js environments, see [Deployment and rollout recommendations](../../scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#deployment-and-rollout-recommendations) and [Language-specific and package manager-specific notes](../../scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#language-specific-and-package-manager-specific-notes).
+To apply best practices for Javascript and Node.js environments, see [Deployment and rollout recommendations](working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#deployment-and-rollout-recommendations) and [Language-specific and package manager-specific notes](working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#language-specific-and-package-manager-specific-notes).
 
 ## Troubleshooting
 

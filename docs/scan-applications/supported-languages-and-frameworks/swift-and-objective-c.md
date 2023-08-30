@@ -70,7 +70,7 @@ After Snyk has built the tree, Snyk uses the vulnerability database to find vuln
 
 ## Secure your codebase and dependencies
 
-To apply best practices for X language and X environments, see [Deployment and rollout recommendations](../../scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#deployment-and-rollout-recommendations) and [Language-specific and package manager-specific notes](../../scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#language-specific-and-package-manager-specific-notes).
+To apply best practices for X language and X environments, see [Deployment and rollout recommendations](working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#deployment-and-rollout-recommendations) and [Language-specific and package manager-specific notes](working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#language-specific-and-package-manager-specific-notes).
 
 ## Troubleshooting
 

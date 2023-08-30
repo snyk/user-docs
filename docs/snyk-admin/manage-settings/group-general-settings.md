@@ -35,7 +35,7 @@ See **Settings** in the [Organization access requests](../manage-users-and-permi
 Set the default test frequency for any new Projects created in this Group.
 
 {% hint style="warning" %}
-Changing this setting will not affect the default test frequency of [Snyk Infrastructure as Code](../../scan-infrastructure/snyk-infrastructure-as-code/) or [Snyk Code](../../scan-application-code/snyk-code/) Projects. The default for both of these is weekly.
+Changing this setting will not affect the default test frequency of [Snyk Infrastructure as Code](../../scan-infrastructure/snyk-infrastructure-as-code/) or [Snyk Code](../../scan-applications/snyk-code/) Projects. The default for both of these is weekly.
 {% endhint %}
 
 
