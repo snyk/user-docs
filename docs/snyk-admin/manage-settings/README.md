@@ -36,7 +36,7 @@ At the Organization level, select **Settings** to manage settings:
 * [General](organization-general-settings.md)
 * [Service Accounts](../../enterprise-setup/service-accounts.md)
 * [Integrations](https://docs.snyk.io/integrations)
-* [Languages](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
+* [Languages](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
 * [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
 * [Snyk Cloud](../../scan-infrastructure/snyk-iac+/)

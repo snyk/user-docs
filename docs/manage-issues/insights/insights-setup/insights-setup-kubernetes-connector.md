@@ -41,7 +41,7 @@ Navigate to the newly created role and [select edit](../../../snyk-admin/manage-
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
 
 ### Step 4: Create a service account and assign it to a role
 
@@ -71,7 +71,7 @@ To ensure you have set up your Kubernetes connector properly, navigate to the **
 
 ## FAQ
 
-#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-applications/snyk-container/kubernetes-integration/kubernetes-integration-overview/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector for Insights?**
+#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-application-code/snyk-container/kubernetes-integration/kubernetes-integration-overview/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector for Insights?**
 
 The Kubernetes **monitor** extracts images from a Kubernetes cluster’s workloads and scans them for vulnerabilities. The Kubernetes **connector** for Insights extracts workload configurations from a Kubernetes cluster.
 

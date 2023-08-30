@@ -53,7 +53,7 @@ Snyk starts scanning the selected repositories for dependency files, such as `pa
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16) (26).jpeg" alt="Imported Projects on the Projects page in Snyk"><figcaption><p>Imported Projects on the Projects page in Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16).jpeg" alt="Imported Projects on the Projects page in Snyk"><figcaption><p>Imported Projects on the Projects page in Snyk</p></figcaption></figure>
 
 ## Uses of Snyk GitHub Enterprise integration
 
@@ -73,7 +73,7 @@ Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabi
 
 The example that follows shows a fix pull request opened by Snyk.
 
-<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1) (1).png" alt="Fix pull request created by Snyk"><figcaption><p>Fix pull request created by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1).png" alt="Fix pull request created by Snyk"><figcaption><p>Fix pull request created by Snyk</p></figcaption></figure>
 
 To review and update the automatic fix pull request settings:
 
@@ -84,7 +84,7 @@ To review and update the automatic fix pull request settings:
 
 ### **Test new pull requests**
 
-The [PR Checks](../../scan-applications/run-pr-checks/) feature enables Snyk to test any newly-created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub. This allows you to see, directly from GitHub, whether the pull request introduces new security issues.
+The [PR Checks](../../scan-application-code/run-pr-checks/) feature enables Snyk to test any newly-created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub. This allows you to see, directly from GitHub, whether the pull request introduces new security issues.
 
 The following example shows how Snyk pull request checks appear on the pull requests page in GitHub.
 
@@ -92,7 +92,7 @@ The following example shows how Snyk pull request checks appear on the pull requ
 
 To review and adjust the pull request tests settings: In Snyk, navigate to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** > **Integrations > Source control > GitHub Enterprise**, and select **Edit Settings**.
 
-1. Scroll to **Snyk PR status checks**; see [Configure PR Checks](../../scan-applications/run-pr-checks/configure-pr-checks.md) for details.
+1. Scroll to **Snyk PR status checks**; see [Configure PR Checks](../../scan-application-code/run-pr-checks/configure-pr-checks.md) for details.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.43.34.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 

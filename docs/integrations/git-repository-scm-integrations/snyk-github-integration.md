@@ -36,15 +36,15 @@ You can then scroll down to the section required, and set the options accordingl
 * Pull requests:
   * [Open Snyk automatic PRs from a fixed GitHub account](snyk-github-integration.md#setting-an-account-to-open-snyk-prs)
   * [Automatic fix PRs](snyk-github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-  * [Automatic dependency upgrade PRs](../../scan-applications/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
+  * [Automatic dependency upgrade PRs](../../scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
   * [Pull request assignees](snyk-github-integration.md#pr-assignment)
-  * [Snyk vulnerability patches](../../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
-* Pull request status checks ([PR Checks](../../scan-applications/run-pr-checks/))
-  * [Open Source security and licenses](../../scan-applications/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
-  * [Code analysis](../../scan-applications/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
+  * [Snyk vulnerability patches](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
+* Pull request status checks ([PR Checks](../../scan-application-code/run-pr-checks/))
+  * [Open Source security and licenses](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
+  * [Code analysis](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
 * Dockerfiles
-  * [Detect Dockerfiles](../../scan-applications/snyk-container/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
-  * [Update Dockerfile base images](../../scan-applications/snyk-container/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
+  * [Detect Dockerfiles](../../scan-application-code/snyk-container/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
+  * [Update Dockerfile base images](../../scan-application-code/snyk-container/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
 
 ## General Snyk GitHub integration settings
 
@@ -87,7 +87,7 @@ Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabi
 
 The example that follows shows a fix pull request opened by Snyk.
 
-<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1) (1).png" alt="Fix pull request opened by Snyk"><figcaption><p>Fix pull request opened by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1).png" alt="Fix pull request opened by Snyk"><figcaption><p>Fix pull request opened by Snyk</p></figcaption></figure>
 
 To review and adjust the automatic fix pull request settings in the Snyk GitHub Integration settings page, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
@@ -110,7 +110,7 @@ All the commits in Snyk's pull requests are done by `snyk-bot@snyk.io` (a verifi
 
 ### **Pull request status checks**
 
-The Snyk [PR Checks](../../scan-applications/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
+The Snyk [PR Checks](../../scan-application-code/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
 
 This example shows how Snyk PR checks appear on the GitHub pull request page.
 
@@ -220,7 +220,7 @@ You can then choose to assign PRs to the last user to change the manifest file o
 To configure the Auto-assign settings for a specific Project from an imported private repository, follow these steps:
 
 1. In the **Projects** tab for your Organization, select and expand the relevant private repository, select a Target, and click the **Settings** cog.\
-   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (2).png" alt="Settings cog for target settings" data-size="original">\
+   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (9).png" alt="Settings cog for target settings" data-size="original">\
    The Project page opens.
 2. On the Project page, apply unique settings for that specific Project.\
    Select the **Settings** tab in the upper right and the **Github integration** \_\_ option in the left sidebar.
@@ -295,14 +295,14 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 #### Badge results
 
 * A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="No vulnerabilities" data-size="line">
-* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (143) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Number of vulnerabilities" data-size="line">
-* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1) (2).png" alt="Unknown vulnerabilities" data-size="line">
+* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (143) (1) (1) (1) (1) (1) (1) (2).png" alt="Number of vulnerabilities" data-size="line">
+* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt="Unknown vulnerabilities" data-size="line">
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Flat rectangle badge" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Flat rectangle badge" data-size="line">
 * "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
 
 ### **npm badges**
@@ -331,7 +331,7 @@ Badges currently work only for public npm packages and GitHub repositories and f
 
 ### **Badges for custom manifest file locations**
 
-By default, the badge will test against the first [valid manifest file](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) it detects in the root of your Project.
+By default, the badge will test against the first [valid manifest file](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) it detects in the root of your Project.
 
 If your manifest file is in a different location from the root of the repository, or if you have multiple manifest files for which you would like to show a badge, you can pass a target file query string parameter to direct the badge to test against another supported manifest file.
 

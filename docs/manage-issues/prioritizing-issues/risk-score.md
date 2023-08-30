@@ -30,7 +30,7 @@ When you are looking at Issue card information, hover on the Risk Score to see t
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (118).png" alt=".Impact, Likelihood and Risk Factors as part of the Risk Score tooltip" width="563"><figcaption><p>Impact, Likelihood and Risk Factors as part of the Risk Score tooltip</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (118) (2).png" alt=".Impact, Likelihood and Risk Factors as part of the Risk Score tooltip" width="563"><figcaption><p>Impact, Likelihood and Risk Factors as part of the Risk Score tooltip</p></figcaption></figure>
 
 </div>
 

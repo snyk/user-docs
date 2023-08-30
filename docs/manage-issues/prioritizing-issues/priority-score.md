@@ -16,7 +16,7 @@ There are no settings related to the Priority Score; they are read-only and cann
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Snyk Priority Score in a Project view"><figcaption><p>Snyk Priority Score in a Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Priority Score in a Project view"><figcaption><p>Snyk Priority Score in a Project view</p></figcaption></figure>
 
 </div>
 
@@ -47,7 +47,7 @@ For each issue, Snyk processes and weighs several factors in a proprietary algor
 * [Severity levels](severity-levels.md): calculated using CVSS framework v3.1 scores for an issue.
 * [Exploit maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): determined by the industry-leading Snyk security team using manual and automated methods to track which vulnerabilities are exploitable and to what extent.
 * [Reachability](reachable-vulnerabilities.md) (extent to which vulnerabilities are reachable from the code): determined by looking at the code paths called within a Project.
-* [Fixability](../../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): defined as having a safer version to upgrade to or a Snyk patch available. For vulnerabilities with neither, developers must either fix the code themselves or use an alternative package. Thus vulnerabilities with fixes are given a higher Priority Score.
+* [Fixability](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): defined as having a safer version to upgrade to or a Snyk patch available. For vulnerabilities with neither, developers must either fix the code themselves or use an alternative package. Thus vulnerabilities with fixes are given a higher Priority Score.
 * Time: considered based on how new the vulnerability is. New vulnerabilities are likely to be an increased risk, and so they increase the Priority Score.
 * [Social Trends](../priorities-for-fixing-issues/vulnerabilities-with-social-trends.md): calculated by Snyk based on mentions of known vulnerabilities in Twitter to express the trend of tweets and reactions.
 * Malicious packages: assessed to determine if a vulnerability originated from a malicious package. Vulnerabilities originating from malicious packages have higher Priority Scores.
@@ -60,7 +60,7 @@ Snyk continually refines its prioritization algorithm to include new factors, an
 
 Kubernetes container images imported from the Kubernetes integration have a number of additional contributing factors for priority score calculation.
 
-See [Snyk Priority Score and Kubernetes](../../scan-applications/snyk-container/kubernetes-integration/kubernetes-integration-ui-explained/snyk-priority-score-and-kubernetes.md) for more details.
+See [Snyk Priority Score and Kubernetes](../../scan-application-code/snyk-container/kubernetes-integration/kubernetes-integration-ui-explained/snyk-priority-score-and-kubernetes.md) for more details.
 
 ### Priority calculation for Snyk Code
 
@@ -73,4 +73,4 @@ A number of specific factors contribute to priority calculation for Snyk Code, i
 * Rule tags: decrease priority if beta tags are found
 * Hot files: if the vulnerability is in the source file, or inside a code flow
 
-See [Understanding the Priority Score of the Snyk Code issues](../../scan-applications/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/understanding-the-priority-score-of-snyk-code-issues.md) for details.
+See [Understanding the Priority Score of the Snyk Code issues](../../scan-application-code/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/understanding-the-priority-score-of-snyk-code-issues.md) for details.
