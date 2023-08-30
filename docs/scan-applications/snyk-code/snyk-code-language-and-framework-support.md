@@ -1,7 +1,7 @@
 # Snyk Code - Supported languages and frameworks
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../snyk-container/how-snyk-container-works/supported-operating-system-distributions.md), and [Snyk IaC and Cloud - Supported providers](../../scan-infrastructure/supported-iac-and-cloud-providers.md).
+For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../../scan-application-code/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md), and [Snyk IaC and Cloud - Supported providers](../../scan-infrastructure/supported-iac-and-cloud-providers.md).
 {% endhint %}
 
 ## Language support with Snyk Code AI Engine
@@ -66,11 +66,11 @@ Most framework are supported "out of the box" as Snyk Code only need to be able 
 
 ### JavaScript frameworks
 
-:link:[JavaScript frameworks supporting code analysis](../supported-languages-and-frameworks/javascript.md#code-analysis)
+:link:[JavaScript frameworks supporting code analysis](../../scan-application-code/supported-languages-and-frameworks/javascript.md#code-analysis)
 
 ### Java frameworks
 
-:link:[Java frameworks supporting code analysis](../supported-languages-and-frameworks/java-and-kotlin.md#code-analysis)
+:link:[Java frameworks supporting code analysis](../../scan-application-code/supported-languages-and-frameworks/java-and-kotlin.md#code-analysis)
 
 ### Python frameworks
 
@@ -128,7 +128,7 @@ These are some of the explicitly supported frameworks for PHP; those are in addi
 
 ### Swift frameworks (beta)
 
-For information about Swift frameworks that support code analysis, see the [code analysis information on the Swift and Objective-C page.](../supported-languages-and-frameworks/swift-and-objective-c.md)
+For information about Swift frameworks that support code analysis, see the [code analysis information on the Swift and Objective-C page.](../../scan-application-code/supported-languages-and-frameworks/swift-and-objective-c.md)
 
 ### Kotlin (beta)
 

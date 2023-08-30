@@ -28,7 +28,7 @@ Note that in the API, the relevant fields are still named with `priority.`When e
 
 When looking at Issue card information, click on the Risk Score to see the subscore and Risk Factors contributing to the score.
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt="Impacvt, Likelihood, and Risk Factors"><figcaption><p>Impacvt, Likelihood, and Risk Factors</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (327).png" alt="Impacvt, Likelihood, and Risk Factors"><figcaption><p>Impacvt, Likelihood, and Risk Factors</p></figcaption></figure>
 
 ## About the Risk Score Model&#x20;
 
