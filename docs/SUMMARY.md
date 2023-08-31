@@ -374,7 +374,7 @@
     * [Use Snyk Container](scan-containers/use-snyk-container/README.md)
       * [Base image detection](scan-containers/use-snyk-container/base-image-detection.md)
       * [Image layer information](scan-containers/use-snyk-container/image-layer-information.md)
-      * [Detecting application vulnerabilities in container images](scan-containers/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md)
+      * [Detect application vulnerabilities in container images](scan-applications/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md)
       * [Analysis and fixes for your images from the Snyk Web UI](scan-containers/use-snyk-container/analysis-and-remediation-for-your-images-from-the-snyk-app.md)
       * [Custom Base Image Recommendations](scan-containers/use-snyk-container/custom-base-image-recommendations/README.md)
         * [Case study for Custom Base Image Recommendations](scan-containers/use-snyk-container/custom-base-image-recommendations/case-study-for-custom-base-image-recommendations.md)

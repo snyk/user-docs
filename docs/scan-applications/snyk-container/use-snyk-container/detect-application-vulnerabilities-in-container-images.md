@@ -1,4 +1,4 @@
-# Detecting application vulnerabilities in container images
+# Detect application vulnerabilities in container images
 
 {% hint style="info" %}
 For Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java.
@@ -31,7 +31,7 @@ To enable the application vulnerability scan from container registries:
 1. Navigate to your container registry integration settings.
 2. Enable **Detect application vulnerabilities** and save the changes.
 
-<figure><img src="../../.gitbook/assets/enable_detect_app_vuln (1).png" alt=""><figcaption><p>Enable Detect application vulnerabilties</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/enable_detect_app_vuln (1).png" alt=""><figcaption><p>Enable Detect application vulnerabilties</p></figcaption></figure>
 
 When you are scanning an image using a container registry or Kubernetes integration, the scan also uses the `--app-vulns` flag by default. You can opt out of the flag in the container registry only. To do this, disable the **Detect application vulnerabilities** feature.
 
@@ -66,7 +66,7 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-<figure><img src="../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (31).png" alt="Images listed in Projects view"><figcaption><p>Images listed in Projects view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (31).png" alt="Images listed in Projects view"><figcaption><p>Images listed in Projects view</p></figcaption></figure>
 
 ## Automated scanning
 
@@ -74,7 +74,7 @@ Depending on your Project settings, Snyk scans the image regularly. Based on you
 
 You can set the scan frequency for each Project. The default is daily testing. To update the scan frequency, navigate to the **Settings** tab on the Project page and select the frequency from the dropdown. The options are never, **daily**, or **weekly**.
 
-<figure><img src="../../.gitbook/assets/scan_frequency.png" alt=""><figcaption><p>Update scan frequency</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/scan_frequency.png" alt=""><figcaption><p>Update scan frequency</p></figcaption></figure>
 
 ## **Supported container registries**
 
@@ -109,5 +109,5 @@ The supported languages work with the following integrations:
 
 For more information, see:
 
-* [Application vulnerability in Snyk Container and Snyk Open Source](../../scan-application-code/snyk-container/how-snyk-container-works/application-vulnerability-in-snyk-container-and-snyk-open-source.md)
-* [Understanding the severity levels of detected Linux vulnerabilities](../how-snyk-container-works/understanding-linux-vulnerability-severity.md)
+* [Application vulnerability in Snyk Container and Snyk Open Source](../../../scan-application-code/snyk-container/how-snyk-container-works/application-vulnerability-in-snyk-container-and-snyk-open-source.md)
+* [Understanding the severity levels of detected Linux vulnerabilities](../../../scan-containers/how-snyk-container-works/understanding-linux-vulnerability-severity.md)

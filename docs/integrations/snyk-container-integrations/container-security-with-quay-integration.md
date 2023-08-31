@@ -63,5 +63,5 @@ Quay imports are designated with a unique icon, and you can filter the integrati
 <figure><img src="../../.gitbook/assets/mceclip1-11-.png" alt="Quay Project in Projects listing"><figcaption><p>Quay Project in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
-For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../scan-containers/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../scan-applications/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}
