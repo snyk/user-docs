@@ -213,8 +213,6 @@ This is an alias for `--project-tags`
 
 ## Options for Maven projects
 
-For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
-
 **Note**: The `--dev` option can be used with Maven projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
 
 ### `--maven-aggregate-project`
@@ -246,8 +244,6 @@ Auto-detect Maven, JAR, WAR, and AAR files recursively from the current folder.&
 **Note**: Custom-built JAR files, even with open-source dependencies, are not supported.
 
 ## Options for Gradle projects
-
-For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 

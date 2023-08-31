@@ -220,8 +220,6 @@ To fail on any vulnerability (the default behavior), do not use the `--fail-on` 
 
 ## Options for Maven projects
 
-For more information see [CLI help for Maven Projects: Aggregate projects](https://docs.snyk.io/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven#cli-help-for-maven-projects-aggregate-projects)
-
 **Note**: The `--dev` option can be used with Maven projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
 
 ### `--maven-aggregate-project`
@@ -251,8 +249,6 @@ Auto-detect Maven, JAR, WAR, and AAR files recursively from the current folder.&
 ## Options for Gradle projects
 
 **Note:** If you see the invalid string length error, refer to [Invalid string length error when scanning projects](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/invalid-string-length-error-when-scanning-projects)
-
-For more information see [CLI help for Gradle projects](https://docs.snyk.io/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven#cli-help-for-gradle-projects)
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
