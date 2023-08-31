@@ -5,7 +5,7 @@
 Some functions, such as Groups, re only available on some [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
-## Accounts, Groups, Organizations, and Projects
+## Accounts, Groups, and Organizations
 
 Snyk has a hierarchy that controls access to scanning and other Snyk features.
 
