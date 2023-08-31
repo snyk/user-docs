@@ -18,7 +18,7 @@ The Snyk Security in Jira Cloud integration mirrors your Snyk scan results from 
 
 Snyk Security in Jira Cloud is a Jira app.
 
-To install and configure Jira app, you must be a Jira Cloud administrator in the site-admins, administrators, or jira-administrators group. Contact your IT team to support your effort in installing the Snyk Security in Jira Cloud app.
+To install and configure the Jira app, you must be a Jira Cloud administrator in the site-admins, administrators, or jira-administrators group. Contact your IT team to support your effort in installing the Snyk Security in Jira Cloud app.
 
 To connect the Jira app to Snyk, you must be a [Snyk Organization administrator](../../snyk-admin/introduction-to-snyk-administration.md#member-user-types).
 
@@ -32,7 +32,7 @@ Ensure you have the following permission scopes in Jira, which are required for 
 
 Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketplace.atlassian.com/apps/1230482/snyk-security-in-jira-cloud) from the Atlassian Marketplace.
 
-1. In Jira, go to **Apps** > **Find new apps.**
+1. In Jira, navigate to **Apps** > **Find new apps.**
 2. Search for **Snyk Security in Jira Cloud**.
 3. Click the app and then select **Get it now.**
 4. Review the information about the app, and select **Get it now**.
@@ -54,9 +54,9 @@ When you have completed the following steps to connect Snyk to Jira, you can sta
 Typically research and development engineering managers do his task because they own the Jira projects and know their team's code repositories.
 {% endhint %}
 
-1. In Jira, go to **Project settings** > **Toolchain** and find Snyk in the list of tools.\
+1. In Jira, navigate to **Project settings** > **Toolchain** and find Snyk in the list of tools.\
    See [What is the project toolchain in Jira Software?](https://support.atlassian.com/jira-software-cloud/docs/what-is-the-project-toolchain-in-jira/)
-2. Select the Add connection button :heavy\_plus\_sign: for Snyk.
+2. Select the **Add connection** plus sign button for Snyk.
 3. Choose the container code repository from the list and select **Add container**. This is a Snyk Target.\
    You can connect more than one code repository to Jira.
 
@@ -68,7 +68,7 @@ After installing and configuring the Snyk Security in Jira Cloud app, you can vi
 
 <figure><img src="../../.gitbook/assets/Secuirity-Jira-Cloud-tab.png" alt="Snyk Security in Jira Cloud tab."><figcaption><p>Snyk Security in Jira Cloud tab</p></figcaption></figure>
 
-To find vulnerabilities, go to the **Vulnerabilities** section. Snyk shows the severity, status, and identifiers. Click the title to see the details in Snyk Web UI.
+To find vulnerabilities, navigate to the **Vulnerabilities** section. Snyk shows the severity, status, and identifiers. Click the title to see the details in Snyk Web UI.
 
 ### Search, filter, and sort vulnerabilities
 
@@ -84,7 +84,7 @@ When triaging issues, you can add a Jira issue to the sprint or backlog to ensur
 
 Snyk provides vulnerability information to Jira, enabling users to have comprehensive data for resolving issues.
 
-To add a Jira issue, go to the Snyk Security tab, find a vulnerability, and then click **Create issue**.
+To add a Jira issue, navigate to the Snyk Security tab, find a vulnerability, and click **Create issue**.
 
 <figure><img src="../../.gitbook/assets/Security-Jira-Cloud-create-issue.png" alt="Jira issue created from a vulnerability found by Snyk"><figcaption><p>Jira issue created from a vulnerability found by Snyk</p></figcaption></figure>
 
@@ -92,18 +92,18 @@ To add a Jira issue, go to the Snyk Security tab, find a vulnerability, and then
 
 If the vulnerability already has a Jira issue, you can link the vulnerability to the existing Jira issue by clicking the three dots in the Actions column and selecting **Link issue.**
 
-## Uninstall Snyk Security in Jira
+## Uninstall Snyk Security in Jira Cloud
 
 {% hint style="danger" %}
-Uninstalling **Snyk Security in Jira will disconnect Snyk vulnerabilities from their associated Jira issues**.\
+Uninstalling Snyk Security in Jira Cloud will disconnect Snyk vulnerabilities from their associated Jira issues.\
 \
 To uninstall a Jira app, you must be an administrator in the site-admins, administrators, or jira-administrators groups.
 {% endhint %}
 
-1. In Jira, go to **Apps** in the main menu and then select **Manage your apps.**
+1. In Jira, navigate to **Apps** in the main menu and select **Manage your apps.**
 2. Select **Snyk Security in Jira.**
 3. Click the **Uninstall** button.
 
-## Known issues
+## Known issues with Snyk Security in Jira Cloud
 
-Snyk sends all your security issues to Jira. However, Jira currently shows only up to 1,000 vulnerabilities on the Security tab UI. This is due to a Security Tab issue that is known and being addressed by the owner, Atlassian. Atlassian plans to resolve this issue by the end of Q3 2023.
+Snyk sends all your security issues to Jira. However, Jira currently shows only up to 1,000 vulnerabilities on the Security tab UI across all your Snyk Projects. This is due to a Security Tab issue that is known and being addressed by the owner, Atlassian. Atlassian plans to resolve this issue by the end of Q3 2023.
