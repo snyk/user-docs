@@ -10,7 +10,7 @@ Data for all Snyk Groups and Organizations that a user has access to will be dis
 {% endhint %}
 
 {% hint style="info" %}
-Data is refreshed in Enterprise Analytics daily approximately between 13:00 and 14:00 UTC. Data is refreshed in Enterprise Analytics daily approximately between 13:00 and 14:00 UTC.
+Data is refreshed in Enterprise Analytics daily approximately between 13:00 and 14:00 UTC.
 {% endhint %}
 
 Enterprise Analytics provides executives as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
