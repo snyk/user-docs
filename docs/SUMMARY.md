@@ -747,7 +747,7 @@
   * [Code execution warning for Snyk CLI](snyk-cli/code-execution-warning-for-snyk-cli.md)
   * [Scan and maintain projects using the CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/README.md)
     * [A .snyk policy file in a different directory from the manifest file](snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
-    * [Failing of builds in Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/advanced-failing-of-builds-in-snyk-cli.md)
+    * [Failing of builds in Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md)
     * [Automatic fixing with snyk fix](snyk-cli/scan-and-maintain-projects-using-the-cli/automatic-remediation-with-snyk-fix.md)
     * [Ignore vulnerabilities using Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-snyk-cli.md)
     * [Invalid string length error when scanning projects](snyk-cli/scan-and-maintain-projects-using-the-cli/invalid-string-length-error-when-scanning-projects.md)

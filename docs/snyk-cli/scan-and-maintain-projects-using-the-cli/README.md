@@ -6,7 +6,7 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 
 * [The **.snyk** file](../../manage-issues/policies/the-.snyk-file.md)
 * [A **.snyk** policy file in a different directory from the manifest file](a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
-* [Failing **builds** in Snyk CLI](advanced-failing-of-builds-in-snyk-cli.md)
+* [Failing **builds** in Snyk CLI](failing-of-builds-in-snyk-cli.md)
 * [**Ignore** vulnerabilties using Snyk CLI](ignore-vulnerabilities-using-snyk-cli.md)
 * [**Invalid string length** error when scanning projects](invalid-string-length-error-when-scanning-projects.md)
 * [Scan all unmanaged **JAR files**](../test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
