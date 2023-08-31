@@ -20,7 +20,7 @@ Integration with Quay is available for all Snyk users.
 
 <figure><img src="../../.gitbook/assets/mceclip1-10-.png" alt="Configure Quay integration"><figcaption><p>Configure Quay integration</p></figcaption></figure>
 
-If you are using a self-hosted Quay registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-containers/integrate-self-hosted-container-registries.md).
+If you are using a self-hosted Quay registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-applications/snyk-container/integrate-self-hosted-container-registries.md).
 
 {% hint style="info" %}
 [Quay.io](http://quay.io) [deprecated](https://access.redhat.com/articles/5925591) use of Quay login in June 2021. The credentials can no longer be Quay username and password, but must be Quay robot account credentials (username and token) that have at least 'read' permissions to the desired repository.
@@ -56,7 +56,7 @@ To add images from Quay to Snyk:
 7. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page; Images are grouped by repository and linked individually to a detailed **Project** page.\
       An **import log** becomes available; you can reach it at the top of the Projects list.
-   2. To enrich the data and get recommendations regarding your base image, from the **Settings** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   2. To enrich the data and get recommendations regarding your base image, from the **Settings** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-applications/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 Quay imports are designated with a unique icon, and you can filter the integration in the **Projects** view to see Quay Projects only as shown:
 
