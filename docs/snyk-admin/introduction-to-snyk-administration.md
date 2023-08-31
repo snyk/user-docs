@@ -2,18 +2,20 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Some functions (such as Groups) are only available on some [pricing plans](https://snyk.io/plans/).
+Some functions, such as Groups, re only available on some [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
-## Groups, Organizations, and Projects
+## Accounts, Groups, Organizations, and Projects
 
-Snyk has a hierarchy that allows you to control access to features such as scans:
+Snyk has a hierarchy that controls access to scanning and other Snyk features.
 
-* **Group:** the highest level; for example, the entire company.
-* **Organization:** the second level of grouping; for example, your team.
-* **Projects:** the lowest level for individual Projects; for example, a container image.&#x20;
+* **Account:** Users must log in to their Snyk account to scan and to view or modify any settings and scan output.
+* **Group:** Customers have at least one Snyk Group. The Group may correspond to the entire company. Large companies may have multiple Groups, corresponding to divisions, departments, or other parts of the company.
+* **Organization:** Snyk Groups encompass one or more Snyk Organizations. An Organization may correspond to a team or types of Projects where multiple teams are involved.
 
-See [Manage Groups and Organizations](manage-groups-and-organizations/) for details.
+Within an Organization, after you have scanned code, you will find one or more Snyk **Targets**. Each represents a repository imported into Snyk for scanning and re-testing. Targets contain one or more Snyk **Projects**. Each corresponds to the files scanned by Snyk.
+
+Snyk administrators set up Groups and Organizations. See [Manage Groups and Organizations](manage-groups-and-organizations/) for details.
 
 ## Member (user) types
 
