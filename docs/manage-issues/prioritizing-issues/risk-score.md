@@ -67,7 +67,7 @@ The Risk Model results from extensive research conducted by the Snyk Security Da
   * Coming soon - Insights such as `Deployed` , `OS condition` and `Public Facing`
 
 {% hint style="info" %}
-Fixability s no longer considered part of the Score Calculation, as the effort needed to mitigate a security issue does not affect the Risk it imposes. To focus on actionable issues, use Fixability filters and then the Risk Score to start with the riskiest issues.&#x20;
+Fixability is no longer considered part of the Score Calculation, as the effort needed to mitigate a security issue does not affect the risk it imposes. To focus on actionable issues, use Fixability filters and use the Risk Score to start with the riskiest issues.&#x20;
 {% endhint %}
 
 ## Risk factors drill down
