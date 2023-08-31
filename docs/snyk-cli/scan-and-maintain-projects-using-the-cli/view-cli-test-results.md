@@ -11,6 +11,6 @@ Depending on the language of the project you have tested you may also see fix ad
 For more information see:\
 [Snyk CLI](../)\
 [Getting started with the CLI](../getting-started-with-the-cli.md)\
-[Snyk Code CLI results](../../scan-applications/snyk-code/using-snyk-code-from-the-cli/snyk-code-cli-results.md)\
-[Understanding Snyk Container CLI test results](../../scan-applications/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md)\
-[Understanding the IaC CLI test output](../../scan-infrastructure/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/)
+[Snyk Code CLI results](../../scan-application-code/snyk-code/using-snyk-code-from-the-cli/snyk-code-cli-results.md)\
+[Understanding Snyk Container CLI test results](../../scan-application-code/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md)\
+[Understanding the IaC CLI test output](../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/)

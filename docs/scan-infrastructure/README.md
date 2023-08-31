@@ -12,9 +12,9 @@ With Snyk, you can secure cloud infrastructure configurations before and after d
 * [Fix Cloud issues](snyk-iac+/fix-cloud-issues-in-integrated-iac.md) directly in the IaC source code that was used to deploy the misconfigured cloud resources by linking a cloud issue to the underlying IaC template with an SCM source code link.
 * Receive [fix advice](getting-started-with-snyk-iac/) so you can make changes directly to code, before applications reach production.
 * Suppress false positives in IaC tests by applying [context from deployed infrastructure](snyk-iac+/add-cloud-context-to-your-iac-tests.md).
-* [Detect drift](snyk-iac+/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.
-* Inspect the configuration of every [cloud resource](key-concepts-in-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md) at a given moment in time and see the attributes that caused an issue.
-* [Filter issues](key-concepts-in-iac+/cloud-and-integrated-iac-issues/) to target the most mission-critical resources.
+* [Detect drift](snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.
+* Inspect the configuration of every [cloud resource](snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md) at a given moment in time and see the attributes that caused an issue.
+* [Filter issues](snyk-iac+/cloud-and-integrated-iac-issues/) to target the most mission-critical resources.
 * Review a [report of issues](../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report) for an entire Organization, organized by compliance standard.
 
-For a list of supported IaC environments and cloud providers. See [Supported IaC and cloud providers](snyk-infrastructure-as-code/supported-iac-and-cloud-providers.md).
+For a list of supported IaC environments and cloud providers. See [Supported IaC and cloud providers](supported-iac-and-cloud-providers.md).

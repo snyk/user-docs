@@ -98,11 +98,11 @@ curl -X GET \
 
 If the `data.attributes.status` field in the JSON output is set to `success`, Snyk has finished scanning your environment.
 
-To re-scan an environment, see [Scan a Cloud Environment](../../../../scan-infrastructure/key-concepts-in-iac+/snyk-environments/scan-a-cloud-environment.md).
+To re-scan an environment, see [Scan a Cloud Environment](../../../../scan-infrastructure/snyk-iac+/snyk-environments/scan-a-cloud-environment.md).
 
 ## What's next?
 
 You can now do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-infrastructure/key-concepts-in-iac+/cloud-and-integrated-iac-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-infrastructure/snyk-iac+/cloud-and-integrated-iac-issues/).
 * Prioritize your vulnerabilities with cloud context.

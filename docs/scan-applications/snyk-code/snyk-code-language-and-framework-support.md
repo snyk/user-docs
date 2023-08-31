@@ -1,7 +1,7 @@
 # Snyk Code - Supported languages and frameworks
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../snyk-container/how-snyk-container-works/supported-operating-system-distributions.md), and [Snyk IaC and Cloud - Supported providers](../../scan-infrastructure/snyk-infrastructure-as-code/supported-iac-and-cloud-providers.md).
+For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../../scan-application-code/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md), and [Snyk IaC and Cloud - Supported providers](../../scan-infrastructure/supported-iac-and-cloud-providers.md).
 {% endhint %}
 
 ## Language support with Snyk Code AI Engine
@@ -20,7 +20,7 @@ This technology allows Snyk Code to:
 Snyk Code currently supports the following programming languages:
 
 * **C#**
-* **C/C++ (Beta)**
+* **C/C++ (Open Beta)**
 * **Go**
 * **Java**
 * **JavaScript**
@@ -29,10 +29,10 @@ Snyk Code currently supports the following programming languages:
 * **Ruby (currently does not support interfile)**
 * **TypeScript**
 * **Apex**
-* **Scala (Beta)**
-* **Swift (Beta)**
-* **Kotlin (Beta)**
-* **VB.NET (Beta)**
+* **Scala (Open Beta)**
+* **Swift (Open Beta)**
+* **Kotlin (Open Beta)**
+* **VB.NET (Open Beta)**
 
 {% hint style="info" %}
 Beta support exists for Kotlin, Scala, Swift and VB.NET. Contact Snyk for more details or with your further needs.
@@ -66,7 +66,7 @@ Most framework are supported "out of the box" as Snyk Code only need to be able 
 
 ### JavaScript frameworks
 
-:link:[JavaScript frameworks supporting code analysis](../supported-languages-and-frameworks/javascript.md#code-analysis)
+:link:[JavaScript frameworks supporting code analysis](../../scan-application-code/supported-languages-and-frameworks/javascript.md#code-analysis)
 
 ### Java frameworks
 
@@ -126,13 +126,21 @@ These are some of the explicitly supported frameworks for PHP; those are in addi
 
 `.trigger` files are supported.
 
-### Swift frameworks (beta)
+### Kotlin (Open Beta)
 
-For information about Swift frameworks that support code analysis, see the [code analysis information on the Swift and Objective-C page.](../supported-languages-and-frameworks/swift-and-objective-c.md)
+For information about Swift frameworks that support code analysis, see the [code analysis information on the Java and Kotlin page](../../scan-application-code/supported-languages-and-frameworks/java-and-kotlin.md#code-analysis).
 
-### Kotlin (beta)
+### Scala frameworks (Open Beta)
 
-Android is partially supported.
+Snyk Code for Scala is currently in Open Beta, and you can [enable it through Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
+
+### Swift frameworks (Open Beta)
+
+For information about Swift frameworks that support code analysis, see the [code analysis information on the Swift and Objective-C page.](../../scan-application-code/supported-languages-and-frameworks/swift-and-objective-c.md)
+
+### VB.NET frameworks (Open Beta)
+
+Snyk Code for VB.NET is currently in Open Beta, and you can [enable it through Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
 
 ### File size limit for Snyk Code analysis
 

@@ -8,4 +8,4 @@ Using Snyk IaC, you can:
 * [Scan ARM configuration files](scan-arm-configuration-files.md)
 * [Scan Serverless files](scan-serverless-files.md)
 
-This section also has a list of [supported IaC and cloud providers](supported-iac-and-cloud-providers.md) and instructions for [disabling IaC scans per Organization](disable-iac-scans.md).
+This section also has a list of [supported IaC and cloud providers](../supported-iac-and-cloud-providers.md) and instructions for [disabling IaC scans per Organization](disable-iac-scans.md).
