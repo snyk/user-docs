@@ -86,7 +86,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 :link: [Supported Operating System Distributions](../../snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
 
-:link: [Snyk CLI for container security](../../snyk-container/snyk-cli-for-container-security/)&#x20;
+:link: [Snyk CLI for container security](../../../scan-containers/snyk-cli-for-container-security/)&#x20;
 
 #### Infrastructure as Code
 
@@ -94,7 +94,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Helpful Options/Plugins**
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 * For advanced filtering options, see[ snyk-filter](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
 

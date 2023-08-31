@@ -18,7 +18,7 @@ Scan your codebase for known vulnerabilities and get remediation guidance either
 
 Find and automatically fix container and workload vulnerabilities.
 
-See [Snyk Container](../scan-application-code/snyk-container/) docs for more details.
+See [Snyk Container](snyk-container/) docs for more details.
 
 ## Run pull request checks
 

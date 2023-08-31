@@ -23,7 +23,7 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
 5. When the import ends, a notification of success or failure appears at the top of the page.\
    Click **Refresh** to view the Projects page with the newly imported images.\
    Images are grouped by repository and are each linked individually to a detailed Projects page.
-6. You can now connect your Git repository to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-application-code/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+6. You can now connect your Git repository to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 You can now also filter to view only those Projects:
 
@@ -34,5 +34,5 @@ When repositories and images are imported, a confirmation appears in green at th
 Docker Hub integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk documentation.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-application-code/snyk-container/use-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../use-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}

@@ -43,8 +43,8 @@ You can then scroll down to the section required, and set the options accordingl
   * [Open Source security and licenses](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
   * [Code analysis](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
 * Dockerfiles
-  * [Detect Dockerfiles](../../scan-application-code/snyk-container/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
-  * [Update Dockerfile base images](../../scan-application-code/snyk-container/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
+  * [Detect Dockerfiles](../../scan-containers/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
+  * [Update Dockerfile base images](../../scan-containers/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
 
 ## General Snyk GitHub integration settings
 
