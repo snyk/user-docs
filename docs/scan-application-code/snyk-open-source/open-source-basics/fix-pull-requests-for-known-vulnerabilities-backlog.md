@@ -1,7 +1,8 @@
 # Configure Automatic fix PRs
 
 {% hint style="info" %}
-This feature is supported in GitHub, GitHub Enterprise, and Bitbucket Cloud integrations.
+Snyk supports backlog issues for GitHub, GitHub Enterprise, and Bitbucket Cloud integrations.\
+The Automatic fix PRs feature is supported for the following integrations: BitBucket Server, BitBucket Cloud, BitBucket Connect, GitHub, GitHub Enterprise, GitLab, and Azure.&#x20;
 
 
 
