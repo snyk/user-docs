@@ -11,6 +11,7 @@
     * [Import a Project](getting-started/quickstart/import-a-project.md)
     * [View Snyk scan results](getting-started/quickstart/view-snyk-scan-results.md)
   * [Running tests](getting-started/running-tests.md)
+  * [What counts as a test?](getting-started/what-counts-as-a-test.md)
   * [Getting started with Snyk: Free / Team plan](getting-started/getting-started-with-snyk-free-team-plan.md)
   * [Preparing for implementation: Free / Team plan](getting-started/preparing-for-implementation-free-team-plan.md)
   * [Walkthrough: Code Repository Projects](getting-started/walkthrough-code-repository-projects/README.md)

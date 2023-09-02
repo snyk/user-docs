@@ -1,14 +1,12 @@
 # Running tests
 
-## Introduction to running Snyk tests
-
 You can use Snyk to test your code in different ways:
 
 * [Run tests manually](running-tests.md#run-tests-manually): by using the Snyk CLI, the Snyk Web UI, and the Snyk API
 * [Run tests automatically](running-tests.md#run-tests-automatically): after Project import or using the `snyk monitor` CLI command or using PR Checks to scan new PRs
 
 {% hint style="info" %}
-Tests may be limited on your account; see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for more information.
+Tests may be limited on your account; see [What counts as a test?](what-counts-as-a-test.md) for more information.
 {% endhint %}
 
 ## Run tests manually
