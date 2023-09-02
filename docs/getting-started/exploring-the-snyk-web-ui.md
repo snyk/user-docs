@@ -4,9 +4,9 @@
 If you have not done so already, you should [create an account](quickstart/create-a-snyk-account/).
 {% endhint %}
 
-## Introduction
+## Introduction to the Snyk Web UI and supported browsers
 
-You can use the Snyk Web UI to run a full set of Snyk functions from your browser (see [supported browsers](../more-info/supported-browsers.md)).
+You can use the Snyk Web UI to run a full set of Snyk functions from your browser. See [supported browsers](../more-info/supported-browsers.md) for details.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-07-13 at 11.06.29 AM.png" alt="Introducing the Snyk Web UI"><figcaption><p>Introducing the Snyk Web UI</p></figcaption></figure>
 
@@ -14,11 +14,11 @@ You can use the Snyk Web UI to run a full set of Snyk functions from your browse
 You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../integrations/ide-tools/), and using the [Snyk API](../snyk-api/).
 {% endhint %}
 
-You can connect your code repositories, then use Snyk to scan and secure your application code, open-source libraries, container registries, and configuration files.
+You can connect your code repositories, and then use Snyk to scan and secure your application code, open-source libraries, container registries, and configuration files.
 
-### Web UI functions
+## Web UI functions
 
-* [Explore the dashboard](exploring-the-snyk-web-ui.md#dashboard)
+* [Explore the Dashboard](exploring-the-snyk-web-ui.md#dashboard)
 * [Investigate reports](exploring-the-snyk-web-ui.md#reports)
 * [Manage Projects](exploring-the-snyk-web-ui.md#manage-your-projects)
 * [Manage integrations](exploring-the-snyk-web-ui.md#manage-your-integrations)
