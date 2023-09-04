@@ -88,7 +88,7 @@ To enable Snyk to access your customized template, add a file called `snyk_pull_
 * Github - `/.github/snyk_pull_request_template.yaml`
 * GitLab  - `/.gitlab/snyk_pull_request_template.yaml`
 * Azure  - `/.azuredevops/snyk_pull_request_template.yaml`
-* Other (like BitBucket or GitLab)  - `/.config/snyk_pull_request_template.yaml`
+* Other (like BitBucket)  - `/.config/snyk_pull_request_template.yaml`
 
 If you use the [Snyk broker](../../../enterprise-setup/snyk-broker/) you need to allow access to these file locations in the `accept.json` [configuration of your broker client](../../../enterprise-setup/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.2b-running-the-broker-client-with-the-code-snippets-display.md). The following describes the additional rules that should be added for each git integration.
 
