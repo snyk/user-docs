@@ -33,7 +33,7 @@ Follow the steps in each section of this document to use the Snyk Jenkins plugin
 
 The plugin can download the latest version of Snyk's binaries and keep them up-to-date for you.
 
-<figure><img src="../../.gitbook/assets/snyk_config_auto-update_v2 (1).png" alt="Snyk Jenkins plugin automatic installation"><figcaption><p>Snyk Jenkins plugin automatic installation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk_config_auto-update_v2.png" alt="Snyk Jenkins plugin automatic installation"><figcaption><p>Snyk Jenkins plugin automatic installation</p></figcaption></figure>
 
 ### Manual installations
 

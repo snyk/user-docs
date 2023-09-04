@@ -2,7 +2,7 @@
 
 When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant to you by using the [`.snyk` policy file](../../../manage-issues/policies/the-.snyk-file.md). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files.
 
-This file can be created with the `snyk ignore` command. For details see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-snyk-cli.md).
+This file can be created with the `snyk ignore` command. For details see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md).
 
 ## Ignore paths
 
@@ -73,7 +73,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-snyk-cli.md).
+For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md).
 
 ## Ignore instances of a vulnerability
 
@@ -107,7 +107,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-snyk-cli.md).
+For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md).
 
 ## Policy flags and policy file notes
 

@@ -743,7 +743,7 @@
     * [A .snyk policy file in a different directory from the manifest file](snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
     * [Failing of builds in Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md)
     * [Automatic fixing with snyk fix](snyk-cli/scan-and-maintain-projects-using-the-cli/automatic-remediation-with-snyk-fix.md)
-    * [Ignore vulnerabilities using Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-snyk-cli.md)
+    * [Ignore vulnerabilities using the Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
     * [Invalid string length error when scanning projects](snyk-cli/scan-and-maintain-projects-using-the-cli/invalid-string-length-error-when-scanning-projects.md)
     * [Scan all unmanaged JAR files](snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
     * [Log4shell command use](snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-use-the-log4shell-command.md)
