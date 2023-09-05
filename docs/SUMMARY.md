@@ -819,6 +819,7 @@
     * [Solutions for specific use cases](snyk-api-info/using-snyk-api/solutions-for-specific-use-cases.md)
     * [Find the differences between versions in the Snyk REST API](snyk-api-info/using-snyk-api/find-the-differences-between-versions-in-the-snyk-rest-api.md)
   * [REST API endpoint: Get a project’s SBOM document](snyk-api-info/get-a-projects-sbom-document-endpoint.md)
+  * [REST API endpoints: Test an SBOM document for vulnerabilities](snyk-api/rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md)
   * [REST API endpoint: List issues for a package](snyk-api-info/list-issues-for-a-package-endpoint.md)
   * [Authentication for API](snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)

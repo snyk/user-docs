@@ -47,11 +47,11 @@ The following are **error states** that you may receive when using the API. If y
 
 **401 Unauthorized**
 
-The authentication method (API token, Bearer token) was invalid. Check that you are setting the Authorization header correctly.
+The authentication method, API token for Bearer token, was invalid. Check that you set the Authorization header correctly.
 
 **403 Forbidden**
 
-You do not have the permissions to make the request. This can happen if you are not part of the requested organization, your organization is not entitled to use the Snyk API, or you do not have sufficient read access to the requested project.
+You do not have the permissions required to make the request. This can happen if you are not part of the requested Organization, your Organization is not entitled to use the Snyk API, or you do not have sufficient read access to the requested Project.
 
 **429 Too Many Requests**
 
