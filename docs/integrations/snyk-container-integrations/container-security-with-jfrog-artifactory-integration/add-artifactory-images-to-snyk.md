@@ -16,7 +16,7 @@ Snyk tests and monitors your Artifactory container images by evaluating the tags
 
 * The view **Which images do you want to test?** opens, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
-<figure><img src="../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en (1) (1) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (10).png" alt="All available images for the registry to which you connected"><figcaption><p>All available images for the registry to which you connected</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en (1) (1) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (22).png" alt="All available images for the registry to which you connected"><figcaption><p>All available images for the registry to which you connected</p></figcaption></figure>
 
 * Select single or multiple images using any or all of the following methods:
   * Type the name of a single image for import in the Image Name field (at number 1, the image name field, in the image above),
@@ -28,7 +28,7 @@ Snyk tests and monitors your Artifactory container images by evaluating the tags
 * When the import ends, a notification of success or failure appears at the top of the page. Click Refresh to view the Projects page with the newly imported images. Images are grouped by repository and are each linked individually to a detailed Projects page.
 * You can now connect your Git repo to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-applications/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
-Images are indicated with a unique icon ![Artifactory](<../../../.gitbook/assets/image (5) (2) (2).png>).  You can filter to view only the Artifactory Projects:
+Images are indicated with a unique icon ![Artifactory](<../../../.gitbook/assets/image (5) (2).png>).  You can filter to view only the Artifactory Projects:
 
 <figure><img src="../../../.gitbook/assets/uuid-5c95894c-97d8-a6a9-0969-7c5fee541211-en.png" alt="List of Artifactory Projects"><figcaption><p>List of Artifactory Projects</p></figcaption></figure>
 

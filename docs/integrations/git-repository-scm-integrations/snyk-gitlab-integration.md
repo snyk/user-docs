@@ -69,7 +69,7 @@ Generating a GitLab Group Access Token has a different methodology, explained [b
 
 Selecting the **api** scope with a Maintainer role allows:
 
-* Snyk to authenticate user accounts and create webhooks, enabling automation of  fix pull requests and Snyk tests on your pull requests.
+* Snyk to authenticate user accounts and create webhooks, enabling automation of fix pull requests and Snyk tests on your pull requests.
 * Continuous write access, enabling Snyk Organization users to trigger the creation of fix pull requests manually.
 * Continuous read access, enabling Snyk to monitor your Projects and enabling you and other members of the Organization to manually re-trigger tests.
 
@@ -89,28 +89,38 @@ Selecting the **api** scope with a Maintainer role allows:
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Enter your GitLab Group Access Token into the Snyk application Personal access token field.</p></figcaption></figure>
 
-## **Fix vulnerabilities with Snyk merge requests in GitLab**
+## **Snyk GitLab integration features explained**
 
-When viewing a Snyk test report for a Project that you own or when looking at a Project that you are watching with Snyk, you see two options for fixing a vulnerability:
+### **Fix vulnerabilities with Snyk merge requests**
 
-* **Open a fix Merge Request:** generate a Snyk merge request with the minimal changes needed to fix the vulnerabilities affecting the Project.
-* **Fix this vulnerability:** generate a Snyk merge request that fixes only this vulnerability.
+When viewing a Snyk test report for a Snyk Project that you own or when looking at a GitLab project that you are watching with Snyk, you see two options for fixing a vulnerability:
 
-You can review the vulnerabilities that will be fixed, change your selection, and choose to ignore any vulnerabilities that cannot be fixed now before opening the merge request on the **Open a fix Merge Request** page.
+* **Fix these vulnerabilities:** generate a Snyk merge request with the minimal changes needed to fix all the Snyk Project's detected vulnerabilities.&#x20;
+* **Fix this vulnerability:** generate a Snyk merge request on an individual issue that fixes the vulnerability.
 
-<figure><img src="../../.gitbook/assets/uuid-8d2ef9cb-cd32-bf48-a827-32bb358a10ab-en.png" alt="Open a fix Merge Request"><figcaption><p>Open a fix Merge Request</p></figcaption></figure>
+You can review the vulnerabilities that will be fixed, change your selection with the checkboxes, and choose to ignore any vulnerabilities that cannot be fixed now before opening the merge request on the **Open a Fix Merge Request** page.
 
-When you open a merge request via snyk.io, Snyk notifies you. An example follows:
+<div align="center">
 
-<figure><img src="../../.gitbook/assets/uuid-5e9a4b58-4d87-06fb-0479-a308515d4b12-en.png" alt="Notification of merge request"><figcaption><p>Notification of merge request</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-08-07_11-42-16.png" alt="Open a Fix Merge Request for an individual vulnerability" width="375"><figcaption><p>Open a Fix Merge Request for an individual vulnerability</p></figcaption></figure>
 
-### Get a Snyk merge request for newly disclosed vulnerabilities that affect you
+</div>
 
-Whenever a vulnerability is disclosed that affects a Project you are watching, Snyk will email you about it and generate a Snyk merge request that addresses the vulnerabilities. You will receive a merge request similar to the preceding example.
+{% hint style="info" %}
+**GitLab webhooks** send out an event to Snyk when merge requests occur. This starts a series of other events, such as pulling GitLab project files, running the test process, and posting the results to GitLab, all of which occur on the Snyk side.
+{% endhint %}
 
-### Get a Snyk merge request when new upgrades or patches are available
+### Receive email alerts for new vulnerabilities
 
-When no upgrade is available, you can ignore or patch the vulnerability; patching is available only for Node.js Projects. When a fix option has become available, such as an upgrade for a vulnerability you previously ignored, Snyk notifies you by email and generates a merge request with the new fix.
+When a new vulnerability is detected on a Snyk Project you are watching, Snyk will send you an email with a generated Snyk merge request to address the vulnerability.
+
+### Receive email alerts for new upgrades or patches
+
+You may find yourself in a situation where no upgrade is found for a vulnerability, and only a patch is available. When a fix does become available, Snyk notifies you by email and generates a merge request containing the new fix.
+
+{% hint style="warning" %}
+Patching is only available on Node.js Projects.
+{% endhint %}
 
 ## How to disconnect the Snyk GitLab integration
 
