@@ -30,9 +30,13 @@ To set up the GitLab integration with Snyk, create a GitLab access token and ent
 Typically, the first user in a Snyk Organization, a Snyk admin account user who is also a GitLab Owner or Maintainer, sets up an integration with a **GitLab Personal Access Token** or **Group Access Token.** This token is then authenticated with GitLab, enabling access by Snyk to the repositories in that GitLab account.
 
 * A **GitLab Personal Access Token** is used to perform actions on and manage personal GitLab projects individually. These differ from Group Access Tokens as they are attached to a user rather than a GitLab group.
-* A **GitLab Group Access Token,** most commonly used for the Snyk GitLab integration, is used to perform actions for and manage, more than one GitLab project within a GitLab group.
+* A **GitLab Group Access Token,** most commonly used for the Snyk GitLab integration, is used to perform actions for and manage more than one GitLab project within a GitLab group.
 
 To trigger the creation of fix pull requests manually, all users in a Snyk Organization can add and work with any related Snyk Projects, while the merge requests themselves will appear in GitLab as having been opened by the Snyk admin who set up the configuration.
+
+{% hint style="warning" %}
+GitLab Group Access Tokens can only be created using a GitLab Premium or Ultimate [account tier](https://about.gitlab.com/pricing/).
+{% endhint %}
 
 ## How to set up the Snyk GitLab integration
 
@@ -71,8 +75,8 @@ Selecting the **api** scope with a Maintainer role allows:
 
 #### Create a GitLab Group Access Token
 
-1. Locate the GitLab Group and select **Settings > Access Tokens**.
-2. Enter a descriptive token name such as "Snyk token", select the **Maintainer** role, and check the **api** scope**.**
+1. Locate the GitLab Group and select **Settings** > **Access Tokens**.
+2. Enter a descriptive token name such as "SnykToken", select the **Maintainer** role, and check the **api** scope**.**
 
 <figure><img src="../../.gitbook/assets/gitlab_group_token.png" alt="Generate GitLab group access token"><figcaption><p>Generate a GitLab group access token</p></figcaption></figure>
 

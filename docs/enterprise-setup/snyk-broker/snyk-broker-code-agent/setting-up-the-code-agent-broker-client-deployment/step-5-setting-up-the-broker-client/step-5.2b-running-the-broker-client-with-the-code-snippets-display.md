@@ -8,7 +8,7 @@ When such additional parameters are required, they are indicated in this section
 
 The following explains how to set up the Broker Client in a way that displays code snippets of the Snyk Code results on the Web UI:
 
-<figure><img src="../../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
 
 To set up the Broker Client without the code snippets, see [Step 5.2a – Running the Broker Client without the code snippet display](step-5.2a-running-the-broker-client-without-the-code-snippet-display.md).
 

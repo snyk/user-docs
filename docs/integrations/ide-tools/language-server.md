@@ -197,7 +197,7 @@ An initial set of trusted folders can be provided by setting `trustedFolders` to
 
 After opening a supported file, the Language Server should be started by Sublime Text and findings will be highlighted.
 
-![Snyk Open Source findings displayed in Sublime Text](<../../.gitbook/assets/image (166) (1) (1) (1) (1) (1) (1) (2) (3).png>)
+![Snyk Open Source findings displayed in Sublime Text](<../../.gitbook/assets/image (166) (1) (1) (1) (1) (1) (1) (2).png>)
 
 ![Snyk Code findings displayed in Sublime Text](<../../.gitbook/assets/image (466) (1).png>)
 
@@ -313,7 +313,7 @@ else
 end
 ```
 
-![Snyk Code findings displayed in Neovim](<../../.gitbook/assets/image (219) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Snyk Code findings displayed in Neovim](<../../.gitbook/assets/image (219) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Support for Snyk Language Server
 
