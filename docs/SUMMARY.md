@@ -254,7 +254,7 @@
       * [Snyk for Elixir](scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
       * [Snyk for Go](scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
       * [Snyk for PHP](scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
-      * [Snyk for Python](scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)
+      * [Snyk for Python](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)
       * [Snyk for Ruby](scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
       * [Snyk for Scala](scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-scala.md)
     * [Getting started with Snyk Open Source](scan-applications/snyk-open-source/getting-started-snyk-open-source.md)
