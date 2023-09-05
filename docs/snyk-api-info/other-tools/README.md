@@ -33,7 +33,6 @@ For additional Snyk Tools, **refer to the repos** for usage instructions:
 * [snyk-user-sync-tool](https://github.com/snyk-tech-services/snyk-user-sync-tool): Add, remove, and sync user memberships.
 * [snyk-licenses-texts](https://github.com/snyk-tech-services/snyk-licenses-texts): Provides Organization level licenses used, copyrights, and dependencies data.
 * [snyk-request-manager](https://github.com/snyk-tech-services/snyk-request-manager): Rate controlled and retry enabled request manager to interact with Snyk APIs.
-* [snyk2spdx](https://github.com/snyk-tech-services/snyk2spdx): Convert the Snyk CLI output to SPDX format.
 * [snyk-repo-issue-tracker](https://github.com/snyk-tech-services/snyk-repo-issue-tracker): A python script / module that allows for generating a changeset of issues between runs against the Snyk project issues API.
 *   [snyk-repo-diff:](https://github.com/snyk-tech-services/snyk-repo-diff) Helps answer which repositories aren't monitored by Snyk.
 
