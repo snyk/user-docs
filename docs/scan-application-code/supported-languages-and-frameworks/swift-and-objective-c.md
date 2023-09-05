@@ -74,10 +74,6 @@ After Snyk has built the tree, Snyk uses the vulnerability database to find vuln
 
 :link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 
-## Secure your codebase and dependencies
-
-To apply best practices for X language and X environments, see [Deployment and rollout recommendations](../../scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#deployment-and-rollout-recommendations) and [Language-specific and package manager-specific notes](../../scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md#language-specific-and-package-manager-specific-notes).
-
 ## Troubleshooting
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
