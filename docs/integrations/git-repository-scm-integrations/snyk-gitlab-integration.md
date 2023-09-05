@@ -19,10 +19,6 @@ The Snyk GitLab integration allows you to:
 3. Receive email alerts containing a new pull request if a new upgrade or patch is available for a vulnerability.
 4. From the **Report** page or the **Project** page on the Snyk Web UI, trigger a Snyk pull request for the fixes listed.
 
-{% hint style="info" %}
-**GitLab webhooks** send out an event to Snyk when merge requests occur. This starts a series of other events, such as pulling Project files, running the test process, and posting the results to GitLab, all of which occur on the Snyk side.
-{% endhint %}
-
 ## GitLab access tokens
 
 To set up the GitLab integration with Snyk, create a GitLab access token and enter this into the Snyk application.&#x20;
@@ -141,8 +137,18 @@ The Projects will be set to inactive, and you will no longer get alerts, pull re
 3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.\
 
 
-    <figure><img src="../../.gitbook/assets/2023-08-15_16-36-28.png" alt="Confirm diconnecting from GitLab" width="375"><figcaption><p>Confirm diconnecting from GitLab</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2023-08-15_16-36-28.png" alt="Confirm diconnecting from GitLab" width="375"><figcaption><p>Confirm disconnecting from GitLab</p></figcaption></figure>
 
 After GitLab is disconnected, Snyk Projects imported from GitLab will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests. The webhook that enables the integration for this repository will be removed.
 
-You can re-connect at any time; however, re-initiating GitLab projects for monitoring requires setting up the integration again.
+You can re-connect anytime; however, re-initiating GitLab projects for monitoring requires setting up the integration again.
+
+## Snyk GitLab Troubleshooting
+
+### 'Could not connect to GitLab' error message
+
+When adding your environment URL and access token to set up the integration, the following message may appear:
+
+<figure><img src="../../.gitbook/assets/2023-09-05_15-25-06.png" alt="Could not connect to GitLab integration error message" width="563"><figcaption><p>Could not connect to GitLab integration error message</p></figcaption></figure>
+
+This is always a permissions issue unless [Snyk Broker](https://support.snyk.io/hc/en-us/articles/360005105598-Gitlab-Broker-is-not-working) is involved. In the PAT settings in GitLab, ensure that you have selected the api scope and the Maintainer role.
