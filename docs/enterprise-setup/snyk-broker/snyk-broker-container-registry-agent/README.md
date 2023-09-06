@@ -102,7 +102,8 @@ For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **
 * `CR_PASSWORD` - The password for authenticating to the container registry api.
 * `CR_TOKEN` - Authentication token for DigitalOcean container registry.
 * `PORT` - The local port at which the Broker client accepts connections. Default is 7341.
-* Optional - `BROKER_CLIENT_VALIDATION_URL` -Used to configure /systemcheck for the container registry agent. For details, see [Configuring and using systemcheck](./#configuring-and-using-systemcheck) on this page.
+* Optional - `BROKER_CLIENT_VALIDATION_URL` - URL to configure /systemcheck for the container registry agent. For details, see [Configuring and using systemcheck](./#configuring-and-using-systemcheck) on this page.
+* Optional - `SNYK_MAX_IMAGE_SIZE_IN_BYTES` - The maximum size of an image that can be scanned (default value: `2147483648`)
 
 Run the Broker Client container with the relevant configuration:
 
