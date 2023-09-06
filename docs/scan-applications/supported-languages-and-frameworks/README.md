@@ -6,13 +6,13 @@ Snyk supports the following languages&#x20;
 
 * [.NET](broken-reference)
 * Apex
-* [Bazel](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)
+* [Bazel](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)
 * [C/C++](broken-reference)
-* [Elixir](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
-* [Go](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
+* [Elixir](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
+* [Go](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
 * [Java and Kotlin](broken-reference)
 * [JavaScript](javascript.md)
-* [PHP](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
+* [PHP](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
 * [Python](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)&#x20;
 * [Ruby](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
 * [Scala](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-scala.md)

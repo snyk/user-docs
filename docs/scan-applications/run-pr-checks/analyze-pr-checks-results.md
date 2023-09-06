@@ -2,9 +2,9 @@
 
 ## PR Checks results
 
-After you [submit a pull request to fix vulnerabilities](../snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md), PR Checks detects issues with a severity level that meets or exceeds your configured threshold and provides a report. Examine the report status and result to decide whether to merge the pull request.
+After you [submit a pull request to fix vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md), PR Checks detects issues with a severity level that meets or exceeds your configured threshold and provides a report. Examine the report status and result to decide whether to merge the pull request.
 
-You can change the default severity threshold either at the [Integration level](configure-pr-checks.md#configure-pr-checks-at-the-integration-level), or at the [Project level](configure-pr-checks.md#configure-pr-checks-at-the-project-level).
+You can change the default severity threshold either at the [Integration level](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level), or at the [Project level](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-project-level).
 
 ## Result status
 
@@ -15,7 +15,7 @@ The following status indicators can appear for your Snyk PR checks in the integr
 <table><thead><tr><th width="212">Result status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Success/Passed</strong></td><td>No issues were discovered and the manifest file was not changed.</td></tr><tr><td><strong>Pending</strong></td><td>The PR Checks are still running.</td></tr><tr><td><strong>Failed/Issues found</strong></td><td>Security issues were identified in the pull request. In this scenario, you need to manually set the result status to <strong>Passed</strong>.</td></tr><tr><td><strong>Error</strong></td><td>Out-of-sync package.json and package.lock files, failure to find or to read the manifest file.</td></tr><tr><td><strong>Canceled</strong></td><td>The test limit has been reached.</td></tr></tbody></table>
 
 {% hint style="info" %}
-For false positive or false negative results, see [Troubleshooting PR Checks](troubleshooting.md).
+For false positive or false negative results, see [Troubleshooting PR Checks](../../scan-application-code/run-pr-checks/troubleshooting.md).
 {% endhint %}
 
 ## **Example: fix dependency issues with PR Checks**

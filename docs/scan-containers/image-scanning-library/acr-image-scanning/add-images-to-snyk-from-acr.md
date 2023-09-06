@@ -30,7 +30,7 @@ The view **Which images do you want to test?** opens, displaying all of the avai
 3. When the import ends, a notification of success or failure appears at the top of the page. Click **Refresh** to view the **Projects** page with the newly imported images.\
    Images are grouped by repository and linked individually to a detailed Projects page.
 4. You can now connect your Git repository to this Project in order to use your Dockerfile for enriched fix advice.\
-   For more information, see [Adding your Dockerfile and testing your base image](../../../scan-applications/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   For more information, see [Adding your Dockerfile and testing your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 ACR files are indicated with a unique icon ![ACR](../../../.gitbook/assets/uuid-5d10608d-d674-d4ee-d6c2-6faadd6fc8ea-en.png) . You can filter to view only those Projects:
 

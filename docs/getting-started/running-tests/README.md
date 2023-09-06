@@ -58,4 +58,4 @@ The default scan frequency and available frequencies vary depending on the type 
 
 Snyk can scan every new Pull Request (PR) submitted on your monitored repositories to help prevent new vulnerabilities from being added to your codebase.
 
-See [Run PR Checks](../../scan-applications/run-pr-checks/) for details.
+See [Run PR Checks](../../scan-application-code/run-pr-checks/) for details.

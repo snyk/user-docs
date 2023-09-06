@@ -1,13 +1,13 @@
-# Ignore vulnerabilities using Snyk CLI
+# Ignore vulnerabilities using the Snyk CLI
 
 {% hint style="info" %}
-For [Snyk Open Source](../../scan-applications/snyk-open-source/), these options work by default.
+For [Snyk Open Source](../../scan-application-code/snyk-open-source/), these options work by default.
 
 For [Snyk Container](../../scan-applications/snyk-container/), these options also work, but after registering an ignore, when you call `snyk test` or `snyk monitor`, you must use the `--policy-path=` option, for example: `snyk container test node --policy-path=.snyk.`
 
 For [Snyk Infrastructure as Code](../../scan-infrastructure/snyk-infrastructure-as-code/), see [IaC ignores using the snyk policy file](../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
 
-For [Snyk Code](../../scan-applications/snyk-code/), see [Excluding directories and files from the Snyk Code CLI test](../../scan-applications/snyk-code/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md).
+For [Snyk Code](../../scan-application-code/snyk-code/), see [Excluding directories and files from the Snyk Code CLI test](../../scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md).
 {% endhint %}
 
 Sometimes, Snyk alerts you to a vulnerability that has no update or Snyk patch available, or that you do not believe to be currently exploitable in your application. When this happens you may want to tell Snyk to ignore the vulnerability for a certain period of time.

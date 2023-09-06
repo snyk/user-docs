@@ -26,7 +26,7 @@ This page explains how to set up Nexus Container Registry integration in Snyk an
 
 ![Nexus Container Registry Account credentials](../../../.gitbook/assets/mceclip1-20-.png)
 
-If you are using a self-hosted Nexus registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../scan-applications/snyk-container/integrate-self-hosted-container-registries.md).
+If you are using a self-hosted Nexus registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../integrate-self-hosted-container-registries.md).
 
 Snyk tests the connection values, and the page reloads, now displaying Nexus integration information. The **Add your Nexus images to Snyk** button becomes available.
 
@@ -59,7 +59,7 @@ Follow these steps to add images from Nexus to Snyk.
 6. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    2. An **import log** becomes available; you can reach it at the top of the Projects list.
-   3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-applications/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 Nexus imports are indicated with a unique icon, and you can also filter to view only Nexus Projects:
 
