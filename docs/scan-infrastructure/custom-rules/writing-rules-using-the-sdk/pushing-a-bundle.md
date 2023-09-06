@@ -32,4 +32,4 @@ You can also provide your own tag if you want to version the bundle:
 snyk-iac-rules push -r docker.io/example/test:v0.0.1 bundle.tar.gz
 ```
 
-You can now [run snyk iac test with your newly built custom bundle.](../use-iac-custom-rules-with-cli/)
+You can now [run snyk iac test with your newly built custom bundle.](../../snyk-infrastructure-as-code/custom-rules/use-iac-custom-rules-with-cli/)

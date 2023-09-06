@@ -18,7 +18,7 @@ Using this SDK, you can add your own custom rules to Snyk IaC to run alongside t
 This section provides initial instructions to help you use the Snyk Infrastructure as Code (IaC) SDK:
 
 * [Install the SDK](install-the-sdk.md)
-* [Getting started with the SDK](getting-started-with-the-sdk/)
+* [Getting started with the SDK](../../custom-rules/writing-rules-using-the-sdk/)
 * [Use IaC custom rules with the Snyk CLI](use-iac-custom-rules-with-cli/)
 * [Integrating custom rules within a pipeline](integrating-iac-custom-rules-within-a-pipeline.md)
 * [SDK reference](sdk-reference.md)

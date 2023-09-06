@@ -1,7 +1,7 @@
 # Use IaC custom rules with CLI
 
 {% hint style="info" %}
-Ensure you have followed the steps in [Getting Started with the SDK](../getting-started-with-the-sdk/) to learn how to generate a bundle of your rules.
+Ensure you have followed the steps in [Getting Started with the SDK](../../../custom-rules/writing-rules-using-the-sdk/) to learn how to generate a bundle of your rules.
 {% endhint %}
 
 With Snyk IaC, you can test your configuration files with the CLI using your custom rules.

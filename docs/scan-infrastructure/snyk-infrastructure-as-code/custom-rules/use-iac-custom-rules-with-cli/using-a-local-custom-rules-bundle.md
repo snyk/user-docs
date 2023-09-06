@@ -26,7 +26,7 @@ Some possible problems include:
 We were unable to extract the rules provided at: ./invalid/location/bundle.tar.gz
 ```
 
-* Providing a corrupted or invalid bundle. Ensure you have generated your bundle by following the instructions in [Getting Started with the SDK](../getting-started-with-the-sdk/). The error is
+* Providing a corrupted or invalid bundle. Ensure you have generated your bundle by following the instructions in [Getting Started with the SDK](../../../custom-rules/writing-rules-using-the-sdk/). The error is
 
 ```
 We were unable run the test. Please run the command again with the `-d` flag and contact support@snyk.io with the contents of the output.

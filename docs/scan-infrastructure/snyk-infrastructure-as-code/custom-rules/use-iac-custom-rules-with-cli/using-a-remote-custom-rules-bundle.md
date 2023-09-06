@@ -1,6 +1,6 @@
 # Using a remote custom rules bundle
 
-After you generate your custom rules bundle, you can distribute it to one of the supported OCI registries by following the steps in [Pushing a bundle](../getting-started-with-the-sdk/pushing-a-bundle.md).
+After you generate your custom rules bundle, you can distribute it to one of the supported OCI registries by following the steps in [Pushing a bundle](../../../custom-rules/writing-rules-using-the-sdk/pushing-a-bundle.md).
 
 After successfully pushing your custom rules bundle, you can enforce the use of the bundle using any of the following:
 
