@@ -35,7 +35,7 @@ Snyk Code currently supports the following programming languages:
 * **VB.NET (Open Beta)**
 
 {% hint style="info" %}
-Beta support exists for Kotlin, Scala, Swift and VB.NET. Contact Snyk for more details or with your further needs.
+Beta support exists for Kotlin and VB.NET. Contact Snyk for more details or with your additional needs.
 {% endhint %}
 
 ## Language type and framework support

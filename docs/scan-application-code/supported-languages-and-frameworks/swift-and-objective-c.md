@@ -15,12 +15,6 @@ Snyk Code supports the following frameworks:
 * sqlite3
 * CryptoKit
 
-{% hint style="info" %}
-**Snyk Code for Swift**
-
-Snyk Code for Swift is currently in Open Beta, and you can [enable it through Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
-{% endhint %}
-
 ### Open source and licensing
 
 Snyk Open Source supports the following frameworks:
