@@ -1,4 +1,4 @@
-# Getting started with Snyk Reports
+# Introducing Snyk Reports
 
 Reports are available on the **Reports** tab in the Snyk navigation.
 
@@ -18,7 +18,7 @@ Every time a filter value is applied, the app.snyk.io URL is updated to persist 
 
 Within a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `critical` or `high`.
 
-<figure><img src="../../../.gitbook/assets/issue-severity-reporting-beta.png" alt="Issue severity selected"><figcaption><p>Issue severity selected</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/issue-severity-reporting-beta.png" alt="Issue severity selected"><figcaption><p>Issue severity selected</p></figcaption></figure>
 
 Filters are separated by an AND operator. For example, if you select the `Critical` value for the `Issue Severity` filter and the `Resolved` value for the `Issue Status` filter, Snyk displays issues that are both `critical` severity and `resolved`.
 
@@ -34,7 +34,7 @@ Exporting a PDF allows sharing a report with a user who will not or should not a
 
 The following is an example of a PDF export.
 
-{% file src="../../../.gitbook/assets/issues-level_01_26_2023.pdf" %}
+{% file src="../../.gitbook/assets/issues-level_01_26_2023.pdf" %}
 
 In tabular data on reports, only the first 50 results are shown in the PDF export. Links are provided in the PDF export to view the report in the browser.
 

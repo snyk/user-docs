@@ -573,7 +573,7 @@
       * [Evidence graph](manage-issues/insights/using-insights/evidence-graph.md)
       * [Exporting and customizing Insights data](manage-issues/insights/using-insights/exporting-and-customizing-insights-data.md)
   * [Reporting](manage-issues/reporting/README.md)
-    * [Getting started with Snyk Reports](manage-issues/reports/next-gen-reporting/getting-started-with-snyk-reports.md)
+    * [Introducing Snyk Reports](manage-risk/reporting/introducing-snyk-reports.md)
     * [Available Snyk Reports](manage-issues/reports/next-gen-reporting/available-snyk-reports.md)
     * [Troubleshooting Snyk Reports](manage-issues/reporting/troubleshooting-snyk-reports.md)
     * [Legacy reports](manage-issues/reporting/legacy-reports/README.md)
