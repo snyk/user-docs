@@ -28,7 +28,7 @@ You must use the Snyk CLI to scan ARM configuration files. See [Scan ARM configu
 
 ## Import IaC Projects
 
-You will start by importing [Projects](../../manage-risk/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
+You will start by importing [Projects](../../manage-issues/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
 
 1. Log in to Snyk and on your dashboard, select **Projects** from the navigation.
 2. On the Projects page, from the **Add projects** dropdown, select the SCM where the  repositories and projects are that you want to scan, for example, select GitHub.
@@ -47,8 +47,8 @@ After you have imported an IaC Project, Snyk re-tests your Project once a week b
 
 On the Projects page, you can view the results for configuration files in the imported Projects.
 
-* If **Group by targets** is selected, a list of [Targets](../../manage-risk/snyk-projects/#target) is displayed. These are the repositories with the Projects you imported. Select a Target to expand its list of Projects.
-* If **Group by none** is selected: A list of all [Projects](../../manage-risk/snyk-projects/#project) is displayed.
+* If **Group by targets** is selected, a list of [Targets](../../manage-issues/snyk-projects/#target) is displayed. These are the repositories with the Projects you imported. Select a Target to expand its list of Projects.
+* If **Group by none** is selected: A list of all [Projects](../../manage-issues/snyk-projects/#project) is displayed.
 
 In your **Projects** listing, select the Project to open to display detailed information about that Project.
 
@@ -84,7 +84,7 @@ Click **Full details** to see a preview of the full code:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.20.png" alt="Preview of the full code"><figcaption><p>Preview of the full code</p></figcaption></figure>
 
-Click **Ignore** to ignore this vulnerability. For details, see [Ignore Issues](../../manage-risk/priorities-for-fixing-issues/ignore-issues.md).
+Click **Ignore** to ignore this vulnerability. For details, see [Ignore Issues](../../manage-issues/priorities-for-fixing-issues/ignore-issues.md).
 
 ## Fix configuration files in IaC
 

@@ -96,11 +96,11 @@ A text file format used to build container images using Docker. The Dockerfile c
 
 ### Environment
 
-Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../manage-risk/snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
+Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../manage-issues/introduction-to-snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
 
 ### Exploit
 
-A demonstration of how a vulnerability can be taken advantage of. When an exploit is widely published, it is commonly referred to as an exploit "in the wild". See [View exploits](../manage-risk/priorities-for-fixing-issues/view-exploits.md).
+A demonstration of how a vulnerability can be taken advantage of. When an exploit is widely published, it is commonly referred to as an exploit "in the wild". See [View exploits](../manage-issues/priorities-for-fixing-issues/view-exploits.md).
 
 ### Exploit Maturity
 
@@ -160,7 +160,7 @@ A specific type of a package.
 
 ### License policy
 
-A set of criteria for evaluating open source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../manage-risk/policies/license-policies/).
+A set of criteria for evaluating open source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../manage-issues/policies/license-policies/).
 
 ## M
 
@@ -184,7 +184,7 @@ An Organization in Snyk is a way to collect and organize your Projects. Members 
 
 ### Origin
 
-The identifier for the ecosystem that a Target exists in. Snyk can scan projects from multiple integrations, including CLI, API, GitHub, Kubernetes and others. See [Snyk Projects](../manage-risk/snyk-projects/).
+The identifier for the ecosystem that a Target exists in. Snyk can scan projects from multiple integrations, including CLI, API, GitHub, Kubernetes and others. See [Snyk Projects](../manage-issues/snyk-projects/).
 
 ## P
 
@@ -218,17 +218,17 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 
 ### Priority Score
 
-Snyk scores issues (vulnerabilities and licenses), to help prioritize treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](../manage-risk/priorities-for-fixing-issues/priority-score.md).
+Snyk scores issues (vulnerabilities and licenses), to help prioritize treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](../manage-issues/prioritizing-issues/priority-score.md).
 
 ### Project
 
-An external item that Snyk scans ([Target](glossary.md#target)), with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Snyk Projects](../manage-risk/snyk-projects/).
+An external item that Snyk scans ([Target](glossary.md#target)), with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Snyk Projects](../manage-issues/snyk-projects/).
 
 ## R
 
 ### Reachability
 
-Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-risk/priorities-for-fixing-issues/reachable-vulnerabilities.md).
+Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-issues/prioritizing-issues/reachable-vulnerabilities.md).
 
 ### Registry
 
@@ -282,11 +282,11 @@ Software Development Life Cycle. A process followed by a development team, descr
 
 ### Security policy
 
-A set of criteria for evaluating open source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../manage-risk/policies/security-policies/).
+A set of criteria for evaluating open source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../manage-issues/policies/security-policies/).
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-risk/priorities-for-fixing-issues/severity-levels.md).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/prioritizing-issues/severity-levels.md).
 
 ### Snapshot
 
@@ -294,7 +294,7 @@ An individual report within a project’s test history. Includes a tree of depen
 
 ### `.snyk` policy
 
-A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../manage-risk/policies/the-.snyk-file.md).
+A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../manage-issues/policies/the-.snyk-file.md).
 
 ### Snyk
 
@@ -353,7 +353,7 @@ The browser-based environment allowing users to access Snyk functions. See [Expl
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed on Twitter. See  [Vulnerabilities with Social Trends](../manage-risk/priorities-for-fixing-issues/vulnerabilities-with-social-trends.md).
+Snyk shows a Trending banner on issues that are being actively discussed on Twitter. See  [Vulnerabilities with Social Trends](../manage-issues/priorities-for-fixing-issues/vulnerabilities-with-social-trends.md).
 
 ### SPDX
 

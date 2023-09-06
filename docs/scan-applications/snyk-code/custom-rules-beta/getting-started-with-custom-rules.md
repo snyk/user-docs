@@ -33,13 +33,13 @@ You can create and test queries in a local environment, completely separate from
 
 ## Using custom rules in the Snyk CLI
 
-You can test your Code Projects using the Snyk CLI with regular commands and options as long as you have the [.snyk file](../../../manage-risk/policies/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.
+You can test your Code Projects using the Snyk CLI with regular commands and options as long as you have the [.snyk file](../../../manage-issues/policies/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.
 
 For more information, see [Using Snyk Code via the CLI](../using-snyk-code-from-the-cli/).
 
 ## Using custom rules in the IDE
 
-IDE integrations with Snyk support custom rules as long as you have the [.snyk file](../../../manage-risk/policies/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.&#x20;
+IDE integrations with Snyk support custom rules as long as you have the [.snyk file](../../../manage-issues/policies/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.&#x20;
 
 For more information, see [Using Snyk Code via the IDE](../using-snyk-code-in-an-ide.md).
 

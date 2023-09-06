@@ -1,6 +1,6 @@
 # Introduction to Organizations
 
-[Organizations](whats-a-snyk-organization.md) represent business areas such as teams, products, or environments. An Organization contains [Snyk Projects](../../manage-risk/snyk-projects/). Organization team members can access these Projects to scan the applications they work on.
+[Organizations](whats-a-snyk-organization.md) represent business areas such as teams, products, or environments. An Organization contains [Snyk Projects](../../manage-issues/snyk-projects/). Organization team members can access these Projects to scan the applications they work on.
 
 The settings and policies of an Organization also influence scan results, depending on which Organization is used when adding a Project.
 

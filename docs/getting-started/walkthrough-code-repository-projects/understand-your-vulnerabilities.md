@@ -19,7 +19,7 @@ For example, for a **Code analysis** project scanned by Snyk Code:
 
 <figure><img src="../../.gitbook/assets/image (149) (1) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
 
-See [View project information](../../manage-risk/snyk-projects/view-project-information.md) for more details.
+See [View project information](../../manage-issues/snyk-projects/view-project-information.md) for more details.
 
 ### View Issue Cards
 
@@ -29,7 +29,7 @@ Now, look at the vulnerability information for each Snyk Project, provided in Is
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 
-For details, see [Issue card information](../../manage-risk/snyk-projects/issue-card-information.md).
+For details, see [Issue card information](../../manage-issues/snyk-projects/issue-card-information.md).
 
 ### Access more vulnerability information
 
@@ -66,7 +66,7 @@ Some cards may not have Snyk Learn lessons available - if so, no links are prese
 
 ### Understand the Snyk Priority Score
 
-The [Snyk Priority Score](../../manage-risk/priorities-for-fixing-issues/priority-score.md), ranging from 0 - 1,000, is our evaluation of the seriousness of the vulnerability. The Snyk Priority Score includes [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System) information, plus other factors such as attack complexity and known exploits. For example, this **Hibernate** vulnerability has no known exploit allowing attackers to take advantage of that vulnerability.
+The [Snyk Priority Score](../../manage-issues/prioritizing-issues/priority-score.md), ranging from 0 - 1,000, is our evaluation of the seriousness of the vulnerability. The Snyk Priority Score includes [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System) information, plus other factors such as attack complexity and known exploits. For example, this **Hibernate** vulnerability has no known exploit allowing attackers to take advantage of that vulnerability.
 
 Other factors also affect the score. For example, SQL injections are easy to run (you just need a web browser and submit a form), so increasing the score, but it takes more work to understand and exploit the results for that attack, so decreasing the score.
 

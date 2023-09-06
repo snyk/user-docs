@@ -1,4 +1,4 @@
-# Triaging issues
+# Triage for issues
 
 Vulnerabilities that are not exploitable are unlikely to pose a security threat to your application and can therefore be de-prioritized for fixing.
 

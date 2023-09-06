@@ -149,13 +149,22 @@ To display dependencies, use the `--print-deps` option:
 ```bash
 $ snyk test --unmanaged --print-deps
 
+Testing /Users/user/src/foo...
+
+
 Dependencies:
 
-  cpython|https://github.com/python/cpython/archive/v3.7.2.zip@3.7.2
+  https://curl.se|curl@7.29.0
+  purl: pkg:generic/curl@7.29.0?download_url=https:%2F%2Fcurl.se%2Fdownload%2Farcheology%2Fcurl-7.29.0.tar.gz
   confidence: 1.000
-  
-  zip|http://ftp.debian.org/debian/pool/main/z/zip/zip_3.0.orig.tar.gz@3.0
-  confidence: 0.993
+
+  https://github.com|nih-at/libzip@1.8.0
+  purl: pkg:generic/libzip@1.8.0?download_url=https:%2F%2Fgithub.com%2Fnih-at%2Flibzip%2Farchive%2Fv1.8.0.tar.gz
+  confidence: 1.000
+
+  https://github.com|madler/zlib@1.2.11
+  purl: pkg:generic/zlib@1.2.11?download_url=https:%2F%2Fzlib.net%2Ffossils%2Fzlib-1.2.11.tar.gz
+  confidence: 1.000
 ```
 
 To learn what files contributed to each dependency being identified, use the `--print-dep-paths` option:
@@ -163,15 +172,37 @@ To learn what files contributed to each dependency being identified, use the `--
 ```bash
 $ snyk test --unmanaged --print-dep-paths
 
+Testing /Users/user/src/foo...
+
+
 Dependencies:
 
-  curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0
+  https://curl.se|curl@7.29.0
+  purl: pkg:generic/curl@7.29.0?download_url=https:%2F%2Fcurl.se%2Fdownload%2Farcheology%2Fcurl-7.29.0.tar.gz
   confidence: 1.000
   matching files:
-    - c-example/deps/curl-7.58.0/CHANGES
-    - c-example/deps/curl-7.58.0/CMake/CMakeConfigurableFile.in
-    - c-example/deps/curl-7.58.0/CMake/CurlSymbolHiding.cmake
-    ... and 2857 more files
+    - curl-7.29.0/Android.mk
+    - curl-7.29.0/CHANGES
+    - curl-7.29.0/CMake/CMakeConfigurableFile.in
+    ... and 1766 more files
+
+  https://github.com|nih-at/libzip@1.8.0
+  purl: pkg:generic/libzip@1.8.0?download_url=https:%2F%2Fgithub.com%2Fnih-at%2Flibzip%2Farchive%2Fv1.8.0.tar.gz
+  confidence: 1.000
+  matching files:
+    - libzip-1.8.0/API-CHANGES.md
+    - libzip-1.8.0/AUTHORS
+    - libzip-1.8.0/CMakeLists.txt
+    ... and 780 more files
+
+  https://github.com|madler/zlib@1.2.11
+  purl: pkg:generic/zlib@1.2.11?download_url=https:%2F%2Fzlib.net%2Ffossils%2Fzlib-1.2.11.tar.gz
+  confidence: 1.000
+  matching files:
+    - zlib-1.2.11/CMakeLists.txt
+    - zlib-1.2.11/ChangeLog
+    - zlib-1.2.11/FAQ
+    ... and 249 more files
 ```
 
 **Understanding the confidence level**
@@ -268,7 +299,16 @@ $ snyk test --unmanaged --json
       }
     },
     "fileSignaturesDetails": {
-      "curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0": {
+      "https://curl.se|curl@7.58.0": {
+        "artifact": "curl",
+        "version": "7.58.0",
+        "author": "curl",
+        "path": "curl-7.58.0",
+        "id": "59d80da8ba341aaff828662700000000",
+        "url": "https://curl.se/download/curl-7.58.0.tar.gz",
+        "purl": "pkg:generic/curl@7.58.0?download_url=https:%2F%2Fcurl.se%2Fdownload%2Fcurl-7.58.0.tar.gz",
+        "score": 1,
+        "confidence": 1,
         "filePaths": [
           "deps/curl-7.58.0/CHANGES",
           "c-example/deps/curl-7.58.0/CMake/CMakeConfigurableFile.in",

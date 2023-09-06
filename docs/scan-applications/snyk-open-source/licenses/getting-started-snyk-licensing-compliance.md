@@ -32,7 +32,7 @@ To open your Snyk Group default license policy, select the **Policies** menu opt
 
 Each policy contains rules, detailing which licenses are acceptable and which are forbidden for use, together with a severity level that indicates how severe the license violation is. For example, severity levels for internal-only license issues may be less severe than for those released externally.
 
-You can create and edit multiple license policies for Organizations. See [Create a license policy and rules](../../../manage-risk/policies/license-policies/create-a-license-policy-and-rules.md) for details.
+You can create and edit multiple license policies for Organizations. See [Create a license policy and rules](../../../manage-issues/policies/license-policies/create-a-license-policy-and-rules.md) for details.
 
 ## Stage 2: View issues
 
@@ -68,7 +68,7 @@ Click the tree icon (![](<../../../.gitbook/assets/image (1) (4).png>)) to view 
 
 You can view and share detailed lists of licenses being used by all Projects in your Organization, and see a report that lists all the Open Source components and licenses along with copyright information.
 
-See [Dependencies and licenses](../../../manage-risk/dependencies-and-licenses/) for more details.
+See [Dependencies and licenses](../../../manage-issues/dependencies-and-licenses/) for more details.
 
 ## **Stage 3: Process issues**
 
@@ -76,4 +76,4 @@ You can now take action to resolve the license issues identified during the scan
 
 The actions you take depend on the license conditions and on your policies. For example, if a license violation is surfaced, this issue can be mitigated by either approaching your legal team or by replacing the dependency which added the violation.
 
-Alternatively, you may want to ignore the issue. See [ignore issues](../../../manage-risk/priorities-for-fixing-issues/ignore-issues.md) for details.
+Alternatively, you may want to ignore the issue. See [ignore issues](../../../manage-issues/priorities-for-fixing-issues/ignore-issues.md) for details.

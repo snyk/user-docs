@@ -18,7 +18,7 @@ By default, Snyk determines the severity of license issue in the following way:
 * High severity - licenses that definitely present issues for commercial software.
 * Medium severity - licenses with clauses that may be of concern and should be reviewed.
 
-For more information, see [License policies](../../../manage-risk/policies/license-policies/).
+For more information, see [License policies](../../../manage-issues/policies/license-policies/).
 
 ### Manage license policies
 
@@ -44,7 +44,7 @@ An example follows:
 
 ## **An inventory of your licenses**
 
-You can view an inventory of all of your licenses across all your Projects. Snyk also lists packages that have dual licenses and multiple licenses. See [View licenses](../../../manage-risk/dependencies-and-licenses/view-licenses.md) for more information.
+You can view an inventory of all of your licenses across all your Projects. Snyk also lists packages that have dual licenses and multiple licenses. See [View licenses](../../../manage-issues/dependencies-and-licenses/view-licenses.md) for more information.
 
 ## **Supported package managers**
 

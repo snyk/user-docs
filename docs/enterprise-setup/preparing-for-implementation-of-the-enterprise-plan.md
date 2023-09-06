@@ -93,13 +93,13 @@ See [Getting Started with Snyk License Compliance Management](../scan-applicatio
 
 Security policies define the way your Organizations handle specific issues or exploit maturity levels. A policy can programmatically increase an issue’s severity rating, decrease the severity rating, or ignore the issue.
 
-See [Security policies](../manage-risk/policies/security-policies/) for more details.
+See [Security policies](../manage-issues/policies/security-policies/) for more details.
 
 ## How you will scan your applications
 
 Snyk Projects are the components that Snyk tests, along with the related configuration and metadata. Each target you want to scan: repos, container images, Dockerfiles, configuration files, source code, may include more than one Project.
 
-See the [introduction to Snyk Projects](../manage-risk/snyk-projects/) for more details. Before you add Projects to Snyk, you wlll define a Project import strategy.
+See the [introduction to Snyk Projects](../manage-issues/snyk-projects/) for more details. Before you add Projects to Snyk, you wlll define a Project import strategy.
 
 There are different ways to add Projects in Snyk, including using an integration, the Snyk CLI, or the Snyk API.
 
