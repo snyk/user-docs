@@ -6,16 +6,16 @@ This feature is available to customers on [Snyk Enterprise](../enterprise-setup/
 {% endhint %}
 
 {% hint style="warning" %}
-The API endpoint Test an SBOM document for vulnerabilities is available on an open beta basis. Some of the functionality may change.
+This API endpoint, Test an SBOM document for vulnerabilities, is available on an open beta basis. Some of the functionality may change.
 {% endhint %}
 
-Snyk offers a set of endpoints for testing a software bill of materials document. Use these endpoints to expand your understanding of the vulnerabilities impacting the packages within an SBOM.
+Snyk offers a set of endpoints for testing a software bill of materials document. Use these endpoints to expand your understanding of the vulnerabilities impacting the packages in an SBOM.
 
 {% hint style="info" %}
 SBOM documents in [CycloneDX](https://cyclonedx.org/) 1.4 JSON formats are supported.
 {% endhint %}
 
-The Test an SBOM document for vulnerabilities endpoint is asynchronous. Follow these steps to create an SBOM test run:
+This endpoint, Test an SBOM document for vulnerabilities, is asynchronous. Follow these steps to create an SBOM test run:
 
 1. Create the test by sending an SBOM to Snyk.
 2. [Check the status of the test](rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md#check-the-status-of-the-test-optional).
@@ -109,7 +109,7 @@ The following response code indicates success.
 
 The SBOM test run was successfully created. The response body contains the job ID of the test run.
 
-The following are error states that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+The following are error states that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solutions Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 **400 Bad Request**
 

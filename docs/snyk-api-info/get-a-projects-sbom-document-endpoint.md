@@ -17,7 +17,7 @@ SBOM documents can be generated in [CycloneDX](https://cyclonedx.org/) v1.4 (JSO
    If you need help in finding these values, see [Group and Organization navigation](../snyk-admin/manage-groups-and-organizations/group-and-organization-navigation.md), [View project settings](../manage-issues/snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](authentication-for-api.md).
 2. Determine the format you want for the SBOM you will generate.\
    Available options are CycloneDX 1.4 JSON (`cyclonedx1.4+json`), CycloneDX 1.4 XML (`cyclonedx1.4+xml`) or SPDX v2.3 JSON (`spdx2.3+json`).
-3. Using any HTTP client (for example, Postman, curl) make a request to the endpoint.\
+3. Using any HTTP client, for example, Postman or `curl`, make a request to the endpoint.\
    Note that the `format` parameter must be URL-encoded.\
    Example: To retrieve a CycloneDX 1.4 JSON document, set `format=cyclonedx1.4%2Bjson` on the query.
 
@@ -31,7 +31,7 @@ $ curl --get \
 
 ## Custom CycloneDX properties
 
-A Snyk project’s SBOM document will include some Snyk-specific meta data about the SBOM document. This is included in the `metadata` section of the document when exported as CycloneDX.
+A Snyk project’s SBOM document will include some Snyk-specific metadata about the SBOM document. This is included in the `metadata` section of the document when exported as CycloneDX.
 
 <table><thead><tr><th width="225">Property Name</th><th>Description</th></tr></thead><tbody><tr><td><code>snyk:org_id</code></td><td>The organization ID (UUID) to which the project belongs</td></tr><tr><td><code>snyk:project_id</code></td><td>The project’s ID (UUID)</td></tr></tbody></table>
 
