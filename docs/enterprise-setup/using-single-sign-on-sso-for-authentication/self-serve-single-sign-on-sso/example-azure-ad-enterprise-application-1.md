@@ -25,7 +25,10 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 7.  Scroll further down and copy the **Single Signon Service** details.
 
     <figure><img src="../../../.gitbook/assets/5 (2).png" alt="Copy the Single Signon Service details"><figcaption><p>Copy the Single Signon Service details</p></figcaption></figure>
-8. Return to the the Snyk portal and to step 2 where you first paste the single sign on URL copied into the **Sign in URL** field.&#x20;
+8.  Return to the the Snyk portal and paste the single sign-in URL copied at step 2 into the **Sign in URL** field. \
+
+
+    <figure><img src="../../../.gitbook/assets/single-sign-on-URL-field.png" alt="Paste Sign in URL"><figcaption><p>Paste Sign in URL</p></figcaption></figure>
 9.  Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection.\
     Finally, click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.&#x20;
 
@@ -33,21 +36,22 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 10. In Ping Identity, select **Attribute mappings** and click the pencil to edit.
 
     <figure><img src="../../../.gitbook/assets/6 (3).png" alt="Edit attribue mappings"><figcaption><p>Edit attribue mappings</p></figcaption></figure>
-11. Add the following attributes:
+11. Click the cog icon and add the following attributes:
 
     **email**: Email Address\
     **username**: Username\
-    **name**: user.name.given + ' ' + user.name.family; click the cog icon to enter an advanced description.&#x20;
+    **name**: the expression `user.name.given + ' ' + user.name.famil`y; click the cog icon to enter an advanced description.&#x20;
 
     <figure><img src="../../../.gitbook/assets/7 (2).png" alt="Add attribute mappings"><figcaption><p>Add attribute mappings</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/8 (2).png" alt="Add an advanced expression for name"><figcaption><p>Add an advanced expression for name</p></figcaption></figure>
-12. In the Snyk portal, decide how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.\
-    Finally, change the **profile attributes** to the attribute names you entered in Ping Identity then click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).\
+    <figure><img src="../../../.gitbook/assets/8 (2).png" alt="Add an advanced expression for the name attribute"><figcaption><p>Add an advanced expression for the name attribute</p></figcaption></figure>
+12. In the Snyk portal, decide how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
+13. Change the **profile attributes** to the attribute names you entered in Ping Identity then click **Save changes.**\
 
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2023-09-05 at 11.07.37 AM.png" alt="Update attributes in Snyk"><figcaption><p>Update attributes in Snyk</p></figcaption></figure>
-13. As a final step, enable the application and assign it to users.
+    <figure><img src="../../../.gitbook/assets/Screenshot 2023-09-05 at 11.07.37 AM.png" alt="Step 3 Snyk SSO settings"><figcaption><p>Step 3 Snyk SSO settings</p></figcaption></figure>
+14. Verify you can log in, either with the direct URL at the top of **Step 3 Snyk SSO settings** (not shown in the image) or by going to the [generic SSO login](https://app.snyk.io/login/sso).
+15. As a final step, enable the application and assign it to users.
 
     <figure><img src="../../../.gitbook/assets/10 (1).png" alt="Enable and assign the application to users"><figcaption><p>Enable and assign the application to users</p></figcaption></figure>
 
