@@ -43,7 +43,7 @@ Custom mapping for an OIDC application in Okta is easily managed through custom 
     <figure><img src="../../../.gitbook/assets/5 (1) (1) (1) (1) (1) (1).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
 3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](../../using-single-sign-on-sso-for-authentication/custom-mapping-option/#example-roles-array-mapping). Example, `snyk-org-role`.
 
-    <figure><img src="../../../.gitbook/assets/6 (1).png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/6 (1) (1).png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>
 4. Repeat the preceding steps for all your applicable Okta groups to assign the org name and role combination to each user within each configured group.
 
 ###

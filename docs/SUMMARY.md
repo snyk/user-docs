@@ -597,6 +597,7 @@
     * [Self-Serve Single Sign-On (SSO)](enterprise-setup/using-single-sign-on-sso-for-authentication/self-serve-single-sign-on-sso/README.md)
       * [Example: Okta SAML Application](enterprise-setup/using-single-sign-on-sso-for-authentication/self-serve-single-sign-on-sso/example-okta.md)
       * [Example: Azure AD Enterprise Application](enterprise-setup/using-single-sign-on-sso-for-authentication/self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md)
+      * [Example: Ping Identity](enterprise-setup/using-single-sign-on-sso-for-authentication/self-serve-single-sign-on-sso/example-azure-ad-enterprise-application-1.md)
       * [Example: Google Workspace](enterprise-setup/using-single-sign-on-sso-for-authentication/self-serve-single-sign-on-sso/example-google-workspace.md)
       * [Example: OneLogin SAML Application](enterprise-setup/using-single-sign-on-sso-for-authentication/self-serve-single-sign-on-sso/example-onelogin-saml-application.md)
     * [Custom Mapping Option](enterprise-setup/using-single-sign-on-sso-for-authentication/custom-mapping-option/README.md)
