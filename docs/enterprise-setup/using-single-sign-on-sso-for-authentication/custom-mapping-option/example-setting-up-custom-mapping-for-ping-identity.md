@@ -1,6 +1,6 @@
 # Example: Setting up custom mapping for Ping Identity
 
-The following information shows how to configure the custom mapping of roles for Ping Identity using the [Custom Mapping Option](./).
+This page explains how to configure the custom mapping of roles for Ping Identity using the [Custom Mapping Option](./).
 
 {% hint style="info" %}
 This guide assumes your Ping Identity application is configured and functional.
