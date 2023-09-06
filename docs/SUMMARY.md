@@ -602,6 +602,7 @@
     * [Custom Mapping Option](enterprise-setup/using-single-sign-on-sso-for-authentication/custom-mapping-option/README.md)
       * [Example: Setting up custom mapping for Okta](enterprise-setup/set-up-single-sign-on-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-okta.md)
       * [Example: Setting up custom mapping for Azure AD](enterprise-setup/using-single-sign-on-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-azure-ad.md)
+      * [Example: Setting up custom mapping for Ping Identity](enterprise-setup/using-single-sign-on-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-ping-identity.md)
       * [Example: Setting up custom mapping for Google Workspace](enterprise-setup/set-up-single-sign-on-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-google-workspace.md)
       * [Example: Setting up custom mapping for an Okta OIDC app](enterprise-setup/set-up-single-sign-on-sso-for-authentication/custom-mapping-option/example-setting-up-oidc-okta-app-with-custom-claims.md)
       * [Example: Setting up custom mapping for OneLogin](enterprise-setup/using-single-sign-on-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-onelogin.md)
