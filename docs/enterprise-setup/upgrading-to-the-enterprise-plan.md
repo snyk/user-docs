@@ -152,7 +152,7 @@ For more information, see [Security policies](../manage-issues/policies/security
 
 Snyk Reports offer data and analytics across all of your Projects, displaying historical and aggregated data about Projects, issues, dependencies, and licenses.
 
-See [Getting started with Snyk Reports](../manage-risk/reporting/introducing-snyk-reports.md).
+See [Getting started with Snyk Reports](../manage-issues/reports/next-gen-reporting/getting-started-with-snyk-reports.md).
 
 ## Consider using GitHub Enterprise integration
 

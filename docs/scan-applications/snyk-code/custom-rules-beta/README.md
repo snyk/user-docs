@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-The Snyk Code custom rules feature is in [Open Beta](../../../more-info/snyk-feature-release-process.md#open-beta) and available only for Enterprise plans through Snyk Preview. See [Enable custom rules](getting-started-with-custom-rules.md).
+The Snyk Code custom rules feature is in [Open Beta](../../../more-info/snyk-feature-release-process.md#open-beta) and available only for Enterprise plans through Snyk Preview. See [Enable custom rules](introducing-custom-rules.md).
 {% endhint %}
 
 {% hint style="warning" %}
