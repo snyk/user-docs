@@ -37,15 +37,15 @@ The core requirements to deploy the Snyk Code Local Engine are:
 
 The Snyk Code Local Engine is modular and can be customized to run specific integrations or everything at once. It can also scale as you prefer, with one or multiple nodes.
 
-However**,** there is a minimum requirement for the core engine. Each of the Kubernetes nodes will require at least the following free resources to run it:
+Each of the Kubernetes nodes will require at least the following **free** resources to run:
 
 * 55 GB RAM
 * 14 Core CPU
 * 20GB Ephemeral Storage
 
-The rest of the capabilities have different requirements, **i**ncluding the minimum single-node requirements for the core engine.
+The size of the minimum node will depend on what your environment requires, but these are the minimum free resources required.&#x20;
 
-The minimum required resources for each flavor of the Snyk Code Local Engine are identified in the following list. Actual memory and storage consumption depend on the usage and the size of repositories scanned. The minimum total required resources can then be divided into multiple nodes.
+The minimum required resources for each flavor of the Snyk Code Local Engine as a single node are identified in the following list. Actual memory and storage consumption depend on the usage and the size of repositories scanned. The minimum total required resources can then be divided into multiple nodes.
 
 <table><thead><tr><th width="236">Deployment Options</th><th width="263.3333333333333">Resources Required</th><th>Use cases</th></tr></thead><tbody><tr><td>CLI/IDE Only</td><td><ul><li>165GB RAM</li><li>60 Core CPU</li><li>55GB Ephemeral Storage</li></ul></td><td><ul><li>Run the SCLE in the pipeline </li><li>Developers using it on their IDE</li></ul></td></tr><tr><td>SCM Only</td><td><ul><li>170GB RAM</li><li>65 Core CPU</li><li>65GB Ephemeral Storage</li></ul></td><td><ul><li>Import repositories for monitoring purposes</li></ul></td></tr><tr><td>SCM and PR Checks Only</td><td><ul><li>200GB RAM</li><li>90 Core CPU</li><li>160GB Ephemeral Storage</li></ul></td><td><ul><li>Import repositories for monitoring purposes</li><li>Scan every PR for new vulnerabilities</li></ul></td></tr><tr><td>Full deployment (all features)</td><td><ul><li>220GB RAM</li><li>100 Core CPU</li><li>160GB Ephemeral Storage</li></ul></td><td><ul><li>All of the above</li></ul></td></tr></tbody></table>
 
