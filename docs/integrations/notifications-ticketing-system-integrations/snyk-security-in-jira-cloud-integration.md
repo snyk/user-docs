@@ -22,7 +22,11 @@ To install and configure the Jira app, you must be a Jira Cloud administrator in
 
 To connect the Jira app to Snyk, you must be a [Snyk Organization administrator](../../snyk-admin/introduction-to-snyk-administration.md#member-user-types).
 
-Activate Security in Jira Cloud in Jira by navigating to **Project Settings > Features > Development > Security** and toggling **Security** ON.
+To activate Security in Jira Cloud in Jira, navigate to **Project Settings > Features > Development > Security** and toggle **Security** **ON**.&#x20;
+
+{% hint style="warning" %}
+Ensure that the project is _**not**_ of type **Classic**. If you are unable to find **Features** in your project settings, this may be because the project type is **Classic**. In this case, the  project must be rebuilt or migrated to a newer version.
+{% endhint %}
 
 Ensure you have the following permission scopes in Jira, which are required for the integration to operate.
 
