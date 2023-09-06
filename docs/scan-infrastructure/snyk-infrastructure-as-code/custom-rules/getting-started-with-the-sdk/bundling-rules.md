@@ -30,4 +30,4 @@ The output will be all the files included in the bundle:
 /.manifest
 ```
 
-You can now [run snyk iac test with your newly built custom bundle.](../../snyk-infrastructure-as-code/custom-rules/use-iac-custom-rules-with-cli/)
+You can now [run snyk iac test with your newly built custom bundle.](../use-iac-custom-rules-with-cli/)

@@ -16,7 +16,7 @@ There are no settings related to the Priority Score; they are read-only and cann
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Priority Score in a Project view"><figcaption><p>Snyk Priority Score in a Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Snyk Priority Score in a Project view"><figcaption><p>Snyk Priority Score in a Project view</p></figcaption></figure>
 
 </div>
 

@@ -25,11 +25,11 @@ In addition, to use the new IaC CLI output results, enable the option in the **S
 By default, the CLI runs tests under your **Preferred Organization**, as defined in your **Account settings**. You can change your **Preferred Organization** or set another Organization for the CLI tests.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (3).png" alt="Select the Organization for snyk iac test"><figcaption><p>Select the Organization for snyk iac test</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (1).png" alt="Select the Organization for snyk iac test"><figcaption><p>Select the Organization for snyk iac test</p></figcaption></figure>
 
 2\. When the required Organization is open, select **Org Settings**:
 
-<figure><img src="../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (11).png" alt="Select Org Settings"><figcaption><p>Select Org Settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (12).png" alt="Select Org Settings"><figcaption><p>Select Org Settings</p></figcaption></figure>
 
 3\. On the **Org** **Settings** page, select **Snyk Preview** and navigate to the section **Additional CLI result information for Infrastructure as Code**:
 

@@ -33,7 +33,7 @@ Your Snyk controller will now collect data from Sysdig every 4 hours. 🎊
 
 Snyk uses packages executed at runtime to enrich the priority score of vulnerabilities detected by Snyk. This allows to better prioritize which vulnerabilities to fix first. The priority score will then be available both on the Project page and in the [Snyk public API](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues).
 
-![The "Executed" badge appearing on packages executed at runtime.](<../../../../.gitbook/assets/image (113) (1) (2) (1) (1) (2) (1) (1).png>)
+![The "Executed" badge appearing on packages executed at runtime.](<../../../../.gitbook/assets/image (113) (1) (2) (1) (1) (2) (1) (1) (1).png>)
 
 In order to see which packages have been executed at runtime, you would need to wait for the next daily test, or import the workload manually into Snyk. After enabling the Sysdig integration, allow **4 hours** before manually importing the workload due to the following timing considerations:
 

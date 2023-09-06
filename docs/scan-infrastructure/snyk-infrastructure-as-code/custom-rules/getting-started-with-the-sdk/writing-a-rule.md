@@ -23,7 +23,7 @@ There are two options to get started:
     snyk-iac-rules template --rule <RULE-NAME> --format <hcl2|json|yaml|tf-plan>
     ```
 
-    This generates the scaffolding for the rule, including fixture files based on the provided configuration format. For more details, read the [documentation about the template command](../../snyk-infrastructure-as-code/custom-rules/sdk-reference.md#template-options).
+    This generates the scaffolding for the rule, including fixture files based on the provided configuration format. For more details, read the [documentation about the template command](../sdk-reference.md#template-options).
 2. Create a Rego policy from scratch and match the expected file and folder structure on your own:\
    `rules`\
    `└── my_rule`\
