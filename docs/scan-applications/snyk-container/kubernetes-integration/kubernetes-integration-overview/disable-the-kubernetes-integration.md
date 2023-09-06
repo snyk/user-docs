@@ -12,4 +12,4 @@ With that, you can delete the release.
 
 With the controller removed, within the Integration Settings in Snyk you can hit the Disconnect button which will invalidate the credentials used to import and synchronize new workloads.
 
-![](<../../../../.gitbook/assets/image (1) (1) (2) (3).png>)
+![](<../../../../.gitbook/assets/image (1) (1) (2).png>)

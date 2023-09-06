@@ -2,11 +2,15 @@
 
 The **Dependencies** tab acts as a Bill Of Materials (BOM) for all dependencies in all Projects in the selected Organization. This allows you to quickly and easily identify which Projects have a specific version of a dependency.
 
+{% hint style="warning" %}
+When you import or re-test a Project, changes will be reflected on the **Dependencies** tab after a ten-second delay.
+{% endhint %}
+
 Dependency reports show details about the packages included in your Projects, including their full names, the version of the package currently used, the Projects in which they are used, and a summary of the issues they contain:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (2) (2) (2).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure>
 
 </div>
 

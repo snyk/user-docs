@@ -15,4 +15,4 @@ Follow these steps:
     A confirmation message that the details were saved also appears in green at the top of the screen.\
     In addition, if the connection to Azure failed, a notification appears under the **Connected to ACR section**.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="ACR account credentials"><figcaption><p>ACR account credentials</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="ACR account credentials"><figcaption><p>ACR account credentials</p></figcaption></figure>

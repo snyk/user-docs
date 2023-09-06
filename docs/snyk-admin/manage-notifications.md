@@ -33,7 +33,7 @@ You can also send notifications for an Organization to a designated [Slack chann
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
 
 </div>
 

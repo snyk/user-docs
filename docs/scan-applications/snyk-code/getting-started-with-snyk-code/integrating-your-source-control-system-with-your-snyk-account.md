@@ -26,7 +26,7 @@ The **Source control** integrations display only SCMs that are supported by Snyk
 If you already have an integrated SCM, it is indicated as **Configured**. If you want to use this SCM, you can continue with[ Importing repositories to Snyk for the Snyk Code testing](importing-repositories-for-snyk-code-testing.md).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (106) (1) (1).png" alt=""><figcaption><p>Source control integrations showoing GitLab being selected</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (106) (1).png" alt=""><figcaption><p>Source control integrations showoing GitLab being selected</p></figcaption></figure>
 
 3\. On the **Account credentials** page, enter your account credentials and save your details.
 
