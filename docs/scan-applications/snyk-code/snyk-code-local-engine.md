@@ -37,7 +37,7 @@ The core requirements to deploy the Snyk Code Local Engine are:
 
 The Snyk Code Local Engine is modular and can be customized to run specific integrations or everything at once. It can also scale as you prefer, with one or multiple nodes.
 
-Each of the Kubernetes nodes will require at least the following **free** resources to run:
+Each of the Kubernetes nodes will require at least the following **free** resources to run it:
 
 * 55 GB RAM
 * 14 Core CPU
