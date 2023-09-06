@@ -26,7 +26,7 @@ This endpoint, Test an SBOM document for vulnerabilities, is asynchronous. Follo
 ### Create a test by sending an SBOM to Snyk&#x20;
 
 1. Log in to the Snyk Web UI and retrieve your Organization ID (UUID format), Project ID (UUID), and API key.\
-   If you need help in finding these values, see [Group and Organization navigation](../snyk-admin/manage-groups-and-organizations/group-and-organization-navigation.md), [View project settings](../manage-issues/snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../snyk-api-info/authentication-for-api.md).
+   If you need help in finding these values, see [Group and Organization navigation](../snyk-admin/manage-groups-and-organizations/group-and-organization-navigation.md), [View project settings](../manage-risk/snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../snyk-api-info/authentication-for-api.md).
 2. Use any HTTP client, for example, `curl` or Postman, to make a request to the endpoint.&#x20;
 
 {% hint style="info" %}

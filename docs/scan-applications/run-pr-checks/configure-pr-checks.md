@@ -73,7 +73,7 @@ If you cannot see the **Code Analysis** section, ensure that your user has the O
 
 You can configure PR Checks to work only for specific Projects:
 
-1. Navigate to **Projects** and expand the [target](../../manage-issues/snyk-projects/#target) containing your Project.
+1. Navigate to **Projects** and expand the [target](../../manage-risk/snyk-projects/#target) containing your Project.
 2. Click a Project name to open it. Based on the Project type, you can choose the following:
 
 * **package.json** to check for open-source and licensing issues.

@@ -75,7 +75,7 @@ After you have connected GitHub to Snyk, you can use:
 Reports are available with Enterprise plans. See the [plans and pricing](https://snyk.io/plans/) page for details.
 {% endhint %}
 
-Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them right away by opening a fix pull request directly in your repository, with the required upgrades or patches.
+Snyk produces advanced [security reports](../../manage-risk/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them right away by opening a fix pull request directly in your repository, with the required upgrades or patches.
 
 This example shows a Project-level security report.
 

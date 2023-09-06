@@ -1,6 +1,6 @@
-# Manage issues
+# Manage risk
 
-Snyk scans find security issues, including vulnerabilities, license problems, and misconfigurations. Snyk has several features to help you prioritize issues. Based on your priorities, you can start [fixing vulnerabilities](../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/). As you fix issues, you can address them using additional Snyk features.
+Snyk scans find security issues, including vulnerabilities, license problems, and misconfigurations. Snyk has several features to help you manage risk. Based on your priorities, you can start [fixing vulnerabilities](../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/). As you fix issues, you can address them using additional Snyk features.
 
 The documentation in this section explains the features available to help you prioritize and take action on issues.
 
@@ -8,9 +8,9 @@ The documentation in this section explains the features available to help you pr
 
 Snyk has key features that help you prioritize issues as follows:
 
-* [Severity levels](prioritizing-issues/severity-levels.md)
-* [Priority Score](prioritizing-issues/priority-score.md)
-* [Risk Score](prioritizing-issues/risk-score.md)
+* [Severity levels](priorities-for-fixing-issues/severity-levels.md)
+* [Priority Score](priorities-for-fixing-issues/priority-score.md)
+* [Risk Score](priorities-for-fixing-issues/risk-score.md)
 * [Ignoring issues](priorities-for-fixing-issues/ignore-issues.md)
 
 For details and more features, see [Priorities for fixing issues](priorities-for-fixing-issues/).
@@ -20,7 +20,7 @@ For details and more features, see [Priorities for fixing issues](priorities-for
 Snyk has many features to help you take action on issues, as follows:
 
 * [View Project information](snyk-projects/view-project-information.md).
-* Apply and remove [Project attributes ](introduction-to-snyk-projects/project-attributes.md)and [Project tags](snyk-projects/project-tags.md) to characterize Projects.
+* Apply and remove [Project attributes ](snyk-projects/project-attributes.md)and [Project tags](snyk-projects/project-tags.md) to characterize Projects.
 * Look at [Project collections groupings](snyk-projects/project-collections-groupings/).
 * [View Project issues, fixes, and dependencies](snyk-projects/view-project-issues-fixes-and-dependencies.md).
 * [View Project settings](snyk-projects/view-and-edit-project-settings.md).

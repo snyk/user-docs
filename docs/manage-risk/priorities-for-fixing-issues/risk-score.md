@@ -47,7 +47,7 @@ The Risk Model results from extensive research conducted by the Snyk Security Da
 ### Impact subscore
 
 * Objective impact factors are the CVSS impact metrics (Availability, Confidentiality, Integrity, and Scope) and are calculated based on the CVSS impact subscore. For Container issues, Provider Urgency is also taken into account.&#x20;
-* The business criticality Project attribute ([learn more](../introduction-to-snyk-projects/project-attributes.md)) will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore.
+* The business criticality Project attribute ([learn more](../snyk-projects/project-attributes.md)) will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore.
 
 ### Likelihood subscore&#x20;
 
@@ -230,7 +230,7 @@ _Required_ - Likelihood subscore will decrease&#x20;
 
 #### Social Trends&#x20;
 
-Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation ([learn more](../priorities-for-fixing-issues/vulnerabilities-with-social-trends.md)).&#x20;
+Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation ([learn more](vulnerabilities-with-social-trends.md)).&#x20;
 
 **Possible input values:**  _Trending, Not trending_
 

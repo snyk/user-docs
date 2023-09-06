@@ -5,7 +5,7 @@
 IaC+ is currently in **closed beta**. Reach out to your account team if you would like access.
 {% endhint %}
 
-IaC+ has a number of unique concepts, different from Snyk core concepts such as [Projects](../../manage-issues/snyk-projects/#project) and [Targets](../../manage-issues/snyk-projects/#target).
+IaC+ has a number of unique concepts, different from Snyk core concepts such as [Projects](../../manage-risk/snyk-projects/#project) and [Targets](../../manage-risk/snyk-projects/#target).
 
 ## Environments
 
@@ -14,7 +14,7 @@ A Snyk **environment** is an organizing concept that equates to the following:
 * For IaC+ environments: an SCM repository, CLI test report, or Terraform Cloud run task report
 * For deployed cloud environments: an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../manage-issues/snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-in-iac+.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
+Unlike a Snyk [Project](../../manage-risk/snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-in-iac+.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
 
 A Snyk environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 
@@ -60,7 +60,7 @@ You can view your Organization's issues in the Snyk Web UI. See [View IaC+ issue
 
 ## Compliance standard <a href="#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e" id="docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e"></a>
 
-A **compliance standard** is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are versioned, with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/reports/next-gen-reporting/available-snyk-reports.md#cloud-compliance-issues-report).
+A **compliance standard** is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are versioned, with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-risk/reporting/available-snyk-reports.md#cloud-compliance-issues-report).
 
 For more information, see [supported compliance standards](view-compliance-reporting.md#supported-compliance-standards).
 

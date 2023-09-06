@@ -48,7 +48,7 @@ Currently, Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket
 
 #### Add project
 
-Use the **Add project** link on the dashboard to add [Snyk Projects](../manage-issues/snyk-projects/). Select how to add the Project from the dropdown.
+Use the **Add project** link on the dashboard to add [Snyk Projects](../manage-risk/snyk-projects/). Select how to add the Project from the dropdown.
 
 Use the links for Projects on the dashboard to explore and manage the metadata, retest, and fix options for the Targetfiles in your Projects. Each link opens a Project details page where you can view the Project **Overview**, or switch to the **History** and **Settings** tabs.
 
@@ -59,7 +59,7 @@ Use the links for Projects on the dashboard to explore and manage the metadata, 
 
 ### **View reports**
 
-You can view [reports](../manage-issues/reporting/legacy-reports/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues.
+You can view [reports](../manage-risk/reporting/legacy-reports/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues.
 
 {% hint style="info" %}
 **Feature availability**\

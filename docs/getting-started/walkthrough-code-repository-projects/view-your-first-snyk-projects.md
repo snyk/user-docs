@@ -39,7 +39,7 @@ When you open an entry, you see the different Snyk Projects scanned in that entr
 
 {% hint style="info" %}
 **Reminder: what is a Project?**\
-A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open-source libraries as dependencies. See [Snyk Projects](../../manage-issues/snyk-projects/).
+A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open-source libraries as dependencies. See [Snyk Projects](../../manage-risk/snyk-projects/).
 {% endhint %}
 
 For example:

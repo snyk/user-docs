@@ -11,7 +11,7 @@ Select **Change Report** to change the report displayed:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/select-report.png" alt="Select Change Report to display different reports" width="563"><figcaption><p>Select Change Report to display different reports</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/select-report.png" alt="Select Change Report to display different reports" width="563"><figcaption><p>Select Change Report to display different reports</p></figcaption></figure>
 
 </div>
 
@@ -23,7 +23,7 @@ The Issues Detail report displays the number of issues as well as the number of 
 
 Quick aggregations are available by categories including **Severity**, **Product Name**, and **Issue Type**:
 
-<figure><img src="../../../.gitbook/assets/reporting-beta-quick-aggregation-issues-detail-report.png" alt="Quick aggregation for Issues Detail report"><figcaption><p>Quick aggregation for Issues Detail Report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/reporting-beta-quick-aggregation-issues-detail-report.png" alt="Quick aggregation for Issues Detail report"><figcaption><p>Quick aggregation for Issues Detail Report</p></figcaption></figure>
 
 Individual issues are displayed in a table according to the selected category. You can modify columns as needed.
 
@@ -33,7 +33,7 @@ The Issues Summary report highlights the value that Snyk is providing by enablin
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/issues-summary-report.png" alt="Issues Summary report"><figcaption><p>Issues Summary report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/issues-summary-report.png" alt="Issues Summary report"><figcaption><p>Issues Summary report</p></figcaption></figure>
 
 </div>
 
@@ -55,7 +55,7 @@ The Vulnerabilities Detail report is similar to the Issues Detail report, but sh
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/vuln-details-report.png" alt="Vulnerability Details report"><figcaption><p>Vulnerability Details report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vuln-details-report.png" alt="Vulnerability Details report"><figcaption><p>Vulnerability Details report</p></figcaption></figure>
 
 </div>
 
@@ -64,19 +64,19 @@ You can easily see how many instances of a vulnerability exist and how many Proj
 {% hint style="info" %}
 #### Dependencies and Licenses information
 
-To view Dependencies and Licenses information, select the **Dependencies** menu option. See [Dependencies and licenses](../../dependencies-and-licenses/) for details.
+To view Dependencies and Licenses information, select the **Dependencies** menu option. See [Dependencies and licenses](../dependencies-and-licenses/) for details.
 {% endhint %}
 
 ## Cloud Compliance Issues report
 
 {% hint style="info" %}
-This report is available only if you have [Snyk IaC+](../../../scan-infrastructure/snyk-iac+/) or the legacy Snyk Cloud enabled.
+This report is available only if you have [Snyk IaC+](../../scan-infrastructure/snyk-iac+/) or the legacy Snyk Cloud enabled.
 {% endhint %}
 
-The Cloud Compliance Issues report shows cloud and IaC+ issues for an entire Organization, organized by [compliance standard](../../../scan-infrastructure/snyk-iac+/key-concepts-in-iac+.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
+The Cloud Compliance Issues report shows cloud and IaC+ issues for an entire Organization, organized by [compliance standard](../../scan-infrastructure/snyk-iac+/key-concepts-in-iac+.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
 
 You can view a report for a single version of a compliance standard at a time, for example, CIS AWS Foundations Benchmark v1.4.0, by selecting the desired standard from the drop-down menu. Each report includes a list of compliance controls organized by control category, with corresponding issue counts.
 
-Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../../scan-infrastructure/snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
+Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../scan-infrastructure/snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
 Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.
