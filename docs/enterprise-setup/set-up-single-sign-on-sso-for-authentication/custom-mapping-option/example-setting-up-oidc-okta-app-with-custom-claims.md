@@ -9,7 +9,7 @@ Follow these steps configure an integration for OIDC Okta.
     <figure><img src="../../../.gitbook/assets/1 (4).png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
 2.  In the next step add an **App integration name** for your OIDC application, check the **Implicit** **Grant Type** and add the **Sign-in redirect URI** relevant to your [Snyk platform deployment](../../using-single-sign-on-sso-for-authentication/set-up-snyk-single-sign-on-sso.md). Remove the placeholder **Sign-out redirect URI** and choose your assignment access control before clicking **Save.**
 
-    <figure><img src="../../../.gitbook/assets/2 (1) (1) (1).png" alt="Provide details for new web app integration"><figcaption><p>Provide details for new web app integration</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/2 (1) (2).png" alt="Provide details for new web app integration"><figcaption><p>Provide details for new web app integration</p></figcaption></figure>
 3. On the application page that opens after saving, copy the details as per [OIDC information to provide to Snyk](../../using-single-sign-on-sso-for-authentication/set-up-snyk-single-sign-on-sso.md#oidc-information-to-provide-to-snyk) [following details](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk) and provide to your Snyk contact:
    * Client ID
    * If you are not using Implicit Grant type, the client secret

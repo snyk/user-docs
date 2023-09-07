@@ -67,7 +67,7 @@ As a user of npm, you may ask, “Why Snyk?” when npm-audit is at hand anytime
 * Broad support across programming languages and package managers.
 * Ignore capabilities.
 
-:link: [Snyk for npm](../javascript.md#npm)
+:link: [Snyk for npm](./#npm)
 
 ### Yarn
 
@@ -77,7 +77,7 @@ Requires yarn.lock and package.json
 * If a lock file is not present in CLI, the `node_modules` folder will be used to construct the dependency tree.
 * `nohoist` is not supported for Yarn Workspaces..
 
-:link: [Snyk for Yarn](../javascript.md#yarn)
+:link: [Snyk for Yarn](./#yarn)
 
 ### Lerna/PNPM
 

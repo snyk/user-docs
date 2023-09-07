@@ -35,7 +35,7 @@ Scans are powered by an open source database, periodically updated with the late
 To navigate through the vulnerabilities for C/C++, use the [Snyk Vuln DB](https://security.snyk.io).
 {% endhint %}
 
-When you run the [`snyk test --unmanaged`](../../snyk-cli/commands/test.md#unmanaged) command, Snyk does the following:
+When you run the [`snyk test --unmanaged`](../../../snyk-cli/commands/test.md#unmanaged) command, Snyk does the following:
 
 1. Converts all files from your current folder into a list of hashes.
 2. Sends hashes to the Snyk scan server to compute the dependencies list.
@@ -113,9 +113,9 @@ Example:\
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/)
-2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-3. [Set the default Organization for all Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
+1. [Create a Snyk account](../../../getting-started/quickstart/create-a-snyk-account/)
+2. [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
+3. [Set the default Organization for all Snyk tests](../../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
 
 #### Code analysis
 
@@ -127,10 +127,10 @@ snyk code test
 
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
-* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
-* [Exporting the test results to a JSON or SARIF file](../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md)
+* [Snyk CLI commands](../../../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../../../scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
+* [Exporting the test results to a JSON or SARIF file](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md)
 
 #### Open source and licensing
 
@@ -352,7 +352,7 @@ This creates a snapshot of dependencies and vulnerabilities and imports them int
 
 Importing a Project with unmanaged dependencies creates a new Project:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt=""><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt=""><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
 
 {% hint style="info" %}
 Snyk Web UI supports only code analysis, using Snyk Code.
@@ -368,11 +368,11 @@ No additional options are required. The Snyk plugin has views within the IDE for
 
 Under **Additional Parameters** in the IDE settings, enter the **--unmanaged** option to scan for C/C++ open source dependencies.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 12.18.01.png" alt=""><figcaption><p>Scan for dependencies</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-08-04 at 12.18.01.png" alt=""><figcaption><p>Scan for dependencies</p></figcaption></figure>
 
-## Secure your codebase and dependencies
+## Best practices
 
-To apply best practices for C/C++ environments, see [Deployment and rollout recommendations](broken-reference) and [Language/Open Source specific facts for using Snyk](broken-reference).
+To apply best practices for C/C++ environments, see [Deployment and rollout recommendations](best-practices-for-c-c++.md) and [Language/Open Source specific facts for using Snyk](broken-reference).
 
 ## Troubleshooting
 
