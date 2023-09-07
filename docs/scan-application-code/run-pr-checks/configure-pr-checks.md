@@ -63,7 +63,9 @@ If you cannot see the **Code Analysis** section, ensure that your user has the O
   * [ ] **Only fail when the PR is adding a dependency with issues**: Set this condition to fail PR when there is at least one dependency with security issues.
   * [ ] **Fail if the repo has any issues**: Set this condition to fail a PR for any security issues found in the Git repository.
 * [ ] **Only fail for high or critical severity issues**: Select additional failure conditions based on the severity threshold.
-* [ ] **Only fail when the issues found have a fix available**: Set this condition on or more if the issues found have a dependency or package with a version in which the issue is fixed.
+* [ ] **Only fail when the issues found have a fix available**: Set this condition on for the PR check to fail when the PR introduces new vulnerabilities that are fixable by Snyk. PR checks don't fail on newly introduced vulnerabilities if Snyk is unable to fix them.&#x20;
+
+When switched on, this will cause the PR check to fail when the PR introduces new vulnerabilities that are fixable by Snyk. PR checks will not fail on newly introduced vulnerabilities if Snyk is unable to fix them.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13 (1) (1).png" alt="Pull request check settings to analyze open-source and licensing issues." width="563"><figcaption><p>PR check settings to analyze open-source and licensing issues</p></figcaption></figure>
 
