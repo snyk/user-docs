@@ -30,7 +30,7 @@ Snyk Code currently supports the following programming languages:
 * **TypeScript**
 * **Apex**
 * **Scala (Open Beta)**
-* **Swift (Open Beta)**
+* **Swift**&#x20;
 * **Kotlin (Open Beta)**
 * **VB.NET (Open Beta)**
 
@@ -66,11 +66,11 @@ Most framework are supported "out of the box" as Snyk Code only need to be able 
 
 ### JavaScript frameworks
 
-:link:[JavaScript frameworks supporting code analysis](../supported-languages-and-frameworks/javascript/#code-analysis)
+:link:[JavaScript frameworks supporting code analysis](../supported-languages-and-frameworks/javascript.md#code-analysis)
 
 ### Java frameworks
 
-:link:[Java frameworks supporting code analysis](../supported-languages-and-frameworks/java-and-kotlin/#code-analysis)
+:link:[Java frameworks supporting code analysis](../supported-languages-and-frameworks/java-and-kotlin.md#code-analysis)
 
 ### Python frameworks
 
@@ -128,13 +128,13 @@ These are some of the explicitly supported frameworks for PHP; those are in addi
 
 ### Kotlin (Open Beta)
 
-For information about Swift frameworks that support code analysis, see the [code analysis information on the Java and Kotlin page](../supported-languages-and-frameworks/java-and-kotlin/#code-analysis).
+For information about Swift frameworks that support code analysis, see the [code analysis information on the Java and Kotlin page](../supported-languages-and-frameworks/java-and-kotlin.md#code-analysis).
 
 ### Scala frameworks (Open Beta)
 
 Snyk Code for Scala is currently in Open Beta, and you can [enable it through Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
 
-### Swift frameworks (Open Beta)
+### Swift frameworks&#x20;
 
 For information about Swift frameworks that support code analysis, see the [code analysis information on the Swift and Objective-C page.](../supported-languages-and-frameworks/swift-and-objective-c.md)
 

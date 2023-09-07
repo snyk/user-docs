@@ -7,11 +7,11 @@ Snyk supports the following languages&#x20;
 * [.NET](.net.md)
 * Apex
 * [Bazel](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)
-* [C/C++](c-c++/)
+* [C/C++](c-c++.md)
 * [Elixir](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
 * [Go](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
-* [Java and Kotlin](java-and-kotlin/)
-* [JavaScript](javascript/)
+* [Java and Kotlin](java-and-kotlin.md)
+* [JavaScript](javascript.md)
 * [PHP](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-php.md)
 * [Python](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)&#x20;
 * [Ruby](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
