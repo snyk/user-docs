@@ -38,7 +38,7 @@ You can then scroll down to the section required, and set the options accordingl
   * [Automatic fix PRs](snyk-github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
   * [Automatic dependency upgrade PRs](../../scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
   * [Pull request assignees](snyk-github-integration.md#pr-assignment)
-  * [Snyk vulnerability patches](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
+  * [Snyk vulnerability patches](../../scan-applications/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
 * Pull request status checks ([PR Checks](../../scan-application-code/run-pr-checks/))
   * [Open Source security and licenses](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
   * [Code analysis](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)

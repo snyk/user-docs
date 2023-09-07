@@ -10,7 +10,7 @@ Snyk Open Source allows you to find and fix vulnerabilities in the open source l
 
 Snyk Open Source is available in many common languages and platforms. See [Supported languages and package managers](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
 
-You can use Snyk Open Source in the Snyk Web UI, with the Snyk CLI, in your IDE, or with an API. See [Getting started with Snyk Open Source](../../scan-applications/snyk-open-source/start-using-snyk-open-source.md)
+You can use Snyk Open Source in the Snyk Web UI, with the Snyk CLI, in your IDE, or with an API. See [Getting started with Snyk Open Source](getting-started-snyk-open-source.md)
 
 ## Find and fix vulnerabilities
 

@@ -18,7 +18,7 @@ Patches are applicable in the following scenarios:
 
 Patches are available via the source code integrations and [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
 
-## Getting started with Snyk Open Source: the process for creating patches
+## Process for creating patches
 
 Patches are created and maintained by Snyk. If the package owner has made code changes to fix the issues, our patch is based on this official fix, and we remove any cosmetic or unrelated changes. If a package owner has not addressed the vulnerability yet, we write a patch from scratch.
 

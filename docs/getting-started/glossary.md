@@ -110,7 +110,7 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md).
+A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-applications/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md).
 
 ### Fix PR
 
@@ -375,7 +375,7 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 
 ### Vulnerability
 
-A security vulnerability, identified by Snyk. See [Starting to fix vulnerabilities](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/).
+A security vulnerability, identified by Snyk. See [Starting to fix vulnerabilities](../scan-applications/snyk-open-source/manage-vulnerabilities/).
 
 ## W
 

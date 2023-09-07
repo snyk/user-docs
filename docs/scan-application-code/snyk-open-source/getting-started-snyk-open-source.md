@@ -1,12 +1,12 @@
 # Start using Snyk Open Source
 
-Use Snyk Open Source to scan and fix vulnerabilities in the Open Source libraries used in your application for a [supported language and package manager](../supported-languages-and-frameworks/), such as Java. For more information, see [Supported languages and frameworks](../supported-languages-and-frameworks/).
+Use Snyk Open Source to scan and fix vulnerabilities in the Open Source libraries used in your application for a [supported language and package manager](../../scan-applications/supported-languages-and-frameworks/), such as Java. For more information, see [Supported languages and frameworks](../../scan-applications/supported-languages-and-frameworks/).
 
 {% hint style="info" %}
 This shows how to start using Snyk Open Source on the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) with a Git-based source repository.
 
 * You can also use an [IDE tool](../../integrations/ide-tools/) or a [CI/CD integration](../../integrations/snyk-ci-cd-integrations/). For more information, see  [Integrations](../../integrations/).
-* You can also [use Snyk Open Source from the CLI](../../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/).
+* You can also [use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli/).
 {% endhint %}
 
 ## **Prerequisites for Snyk Open Source**
@@ -35,7 +35,7 @@ See [View Project information](../../manage-issues/snyk-projects/view-project-in
 
 ## Fix vulnerabilities
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../scan-application-code/snyk-open-source/open-source-basics/).
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](open-source-basics/).
 
 Navigate to the **Issues** card for a Project:
 
@@ -52,4 +52,4 @@ To fix vulnerabilities:
 
 <figure><img src="../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png" alt=".Files changed tab in GitHub after triggering Fix PR for an open source project"><figcaption><p>Files changed tab in GitHub after triggering Fix PR for an open source project</p></figcaption></figure>
 
-See [Fix your vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for more details.
+See [Fix your vulnerabilities](../../scan-applications/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for more details.
