@@ -370,7 +370,7 @@
       * [Image layer information](scan-containers/use-snyk-container/image-layer-information.md)
       * [Detect application vulnerabilities in container images](scan-applications/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md)
       * [Analysis and fixes for your images from the Snyk Web UI](scan-containers/use-snyk-container/analysis-and-remediation-for-your-images-from-the-snyk-app.md)
-      * [Custom Base Image Recommendations](scan-containers/use-snyk-container/custom-base-image-recommendations/README.md)
+      * [Custom Base Image Recommendations](scan-applications/snyk-container/use-snyk-container/custom-base-image-recommendations/README.md)
         * [Case study for Custom Base Image Recommendations](scan-containers/use-snyk-container/custom-base-image-recommendations/case-study-for-custom-base-image-recommendations.md)
         * [Versioning Schema options](scan-containers/use-snyk-container/custom-base-image-recommendations/versioning-schema-options.md)
         * [Custom Versioning Schema for Custom Base Images](scan-containers/use-snyk-container/custom-base-image-recommendations/custom-versioning-schema-for-custom-base-images.md)
