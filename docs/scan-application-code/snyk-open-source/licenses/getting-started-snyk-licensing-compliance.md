@@ -14,7 +14,7 @@ The Snyk Default License Policy defines how Snyk identifies potential license is
 Ensure you have:
 
 * A Snyk [paid plan](https://snyk.io/plans/).
-* Integrated and imported your Projects, as described for [Snyk Open Source](../getting-started-snyk-open-source.md).
+* Integrated and imported your Projects, as described for [Snyk Open Source](../../../scan-applications/snyk-open-source/start-using-snyk-open-source.md).
 
 ## **Stage 1: Define policies**
 

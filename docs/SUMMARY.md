@@ -257,7 +257,7 @@
       * [Snyk for Python](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)
       * [Snyk for Ruby](scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
       * [Snyk for Scala](scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-scala.md)
-    * [Getting started with Snyk Open Source](scan-application-code/snyk-open-source/getting-started-snyk-open-source.md)
+    * [Start using Snyk Open Source](scan-applications/snyk-open-source/start-using-snyk-open-source.md)
     * [Use Snyk Open Source from the CLI](scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/README.md)
       * [Use options to customize the snyk test command](scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/use-options-to-customize-the-snyk-test-command.md)
       * [Review the Snyk Open Source CLI results](scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/review-the-snyk-open-source-cli-results.md)
