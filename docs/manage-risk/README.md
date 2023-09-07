@@ -2,7 +2,7 @@
 
 Snyk has several features to help you manage application security risk.
 
-[Risk Score](risk-score.md), now in Open Beta, is designed to help you prioritize your approach to security issues by providing you with an accurate and holistic understanding of the risk posed by a given security issue. Snyk [Insights](../manage-issues/insights/) provides advanced application intelligence to help you identify and prioritize issues based on the risk they pose to your application.
+[Risk Score](../manage-issues/prioritizing-issues/risk-score.md), now in Open Beta, is designed to help you prioritize your approach to security issues by providing you with an accurate and holistic understanding of the risk posed by a given security issue. Snyk [Insights](../manage-issues/insights/) provides advanced application intelligence to help you identify and prioritize issues based on the risk they pose to your application.
 
 Scanning with Snyk finds security issues, including vulnerabilities, license problems, and misconfigurations. You can view the [Dependencies and licenses](../manage-issues/dependencies-and-licenses/) associated with your Projects.
 

@@ -531,7 +531,7 @@
     * [View Project history](manage-issues/snyk-projects/view-project-history.md)
     * [Issue card information](manage-issues/snyk-projects/issue-card-information.md)
     * [Maximum number of Projects in an Organization](manage-issues/snyk-projects/maximum-number-of-projects-in-an-organsation.md)
-  * [Risk Score](manage-risk/risk-score.md)
+  * [Risk Score](manage-issues/prioritizing-issues/risk-score.md)
   * [Find and manage priority issues](manage-issues/priorities-for-fixing-issues/README.md)
     * [Severity levels](manage-issues/prioritizing-issues/severity-levels.md)
     * [Ignore issues](manage-issues/priorities-for-fixing-issues/ignore-issues.md)
