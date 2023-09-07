@@ -1,23 +1,20 @@
 # Manage risk
 
-Snyk scans find security issues, including vulnerabilities, license problems, and misconfigurations. Snyk has several features to help you manage risk. Based on your priorities, you can start [fixing vulnerabilities](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/). As you fix issues, you can address them using additional Snyk features.
+Snyk has several features to help you manage application security risk.
 
-The documentation in this section explains the features available to help you prioritize and take action on issues.
+[Risk Score](risk-score.md), now in Open Beta, is designed to help you prioritize your approach to security issues by providing you with an accurate and holistic understanding of the risk posed by a given security issue. Snyk [Insights](../manage-issues/insights/) provides advanced application intelligence to help you identify and prioritize issues based on the risk they pose to your application.
 
-## Prioritize issues
+Scanning with Snyk finds security issues, including vulnerabilities, license problems, and misconfigurations. You can view the [Dependencies and licenses](../manage-issues/dependencies-and-licenses/) associated with your Projects.
 
-Snyk has key features that help you prioritize issues as follows:
+Each issue is assigned a [Priority Score](../manage-issues/prioritizing-issues/priority-score.md).&#x20;
 
-* [Severity levels](../manage-issues/prioritizing-issues/severity-levels.md)
-* [Priority Score](../manage-issues/prioritizing-issues/priority-score.md)
-* [Risk Score](../manage-issues/prioritizing-issues/risk-score.md)
-* [Ignoring issues](../manage-issues/priorities-for-fixing-issues/ignore-issues.md)
+&#x20;[Severity levels](../manage-issues/prioritizing-issues/severity-levels.md) and [Ignoring issues](../manage-issues/priorities-for-fixing-issues/ignore-issues.md) help you refine scans to find and report issues you need to fix. After you have found issues, you can use several features of Snyk to help you prioritize fixing issues. For details, see [Find and manage priority issues](../manage-issues/priorities-for-fixing-issues/).
 
-For details and more features, see [Priorities for fixing issues](../manage-issues/priorities-for-fixing-issues/).
+Snyk [Policies](../manage-issues/policies/) help you define actions to take to address issues.
 
-## Take action on issues
+Use Snyk [Reporting](../manage-issues/reporting/) to track issues and their resolution.
 
-Snyk has many features to help you take action on issues, as follows:
+Issues are reported for Snyk Projects, which have many features that help you focus on priority issues:
 
 * [View Project information](../manage-issues/snyk-projects/view-project-information.md).
 * Apply and remove [Project attributes ](../manage-issues/introduction-to-snyk-projects/project-attributes.md)and [Project tags](../manage-issues/snyk-projects/project-tags.md) to characterize Projects.
@@ -25,12 +22,5 @@ Snyk has many features to help you take action on issues, as follows:
 * [View Project issues, fixes, and dependencies](../manage-issues/snyk-projects/view-project-issues-fixes-and-dependencies.md).
 * [View Project settings](../manage-issues/snyk-projects/view-and-edit-project-settings.md).
 
-For details and more features, see [Snyk Projects](../manage-issues/snyk-projects/).
-
-You can also use these features of Snyk to help you take action on issues:
-
-* View the [Dependencies and licenses](../manage-issues/dependencies-and-licenses/) associated with your Projects.
-* Define actions to take to address issues using Snyk [Policies](../manage-issues/policies/).
-* Track issues and their resolution using Snyk [Reporting](../manage-issues/reporting/).
-* Get advanced application intelligence through Snyk [Insights](../manage-issues/insights/) to help you identify and prioritize issues based on the risk they pose to your application.
+For details, see [Snyk Projects](../manage-issues/snyk-projects/).
 

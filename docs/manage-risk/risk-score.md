@@ -3,17 +3,17 @@
 
 
 {% hint style="info" %}
-Risk Score is currently in Open Beta for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score. See [Snyk feature release process](../../more-info/snyk-feature-release-process.md) for more details.
+Risk Score is currently in Open Beta for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score. See [Snyk feature release process](../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
 The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for each security issue and based on the potential impact and likelihood of exploitability. Ranging from 0 to 1000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
 
 Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example Project scores distributions:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
 {% hint style="info" %}
-As part of the Open Beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where it is now introduced when enabled. Risk Score is not available via the CLI.&#x20;
+As part of the Open Beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](../manage-issues/prioritizing-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where it is now introduced when enabled. Risk Score is not available via the CLI.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -30,13 +30,13 @@ When you are looking at Issue card information, hover on the Risk Score to see t
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (118) (2).png" alt=".Impact, Likelihood and Risk Factors as part of the Risk Score tooltip" width="563"><figcaption><p>Impact, Likelihood and Risk Factors as part of the Risk Score tooltip</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (118) (2).png" alt=".Impact, Likelihood and Risk Factors as part of the Risk Score tooltip" width="563"><figcaption><p>Impact, Likelihood and Risk Factors as part of the Risk Score tooltip</p></figcaption></figure>
 
 </div>
 
 ## About the Risk Score Model&#x20;
 
-<figure><img src="../../.gitbook/assets/matrix (2).png" alt="he Snyk Risk Score Model"><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/matrix (2).png" alt="he Snyk Risk Score Model"><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
 
 The model that powers the Risk Score applies automatic risk analysis for each security issue based on the potential impact and likelihood of exploitability.
 
@@ -47,7 +47,7 @@ The Risk Model results from extensive research conducted by the Snyk Security Da
 ### Impact subscore
 
 * Objective impact factors are the CVSS impact metrics (Availability, Confidentiality, Integrity, and Scope) and are calculated based on the CVSS impact subscore. For Container issues, Provider Urgency is also taken into account.&#x20;
-* The business criticality Project attribute ([learn more](../introduction-to-snyk-projects/project-attributes.md)) will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore.
+* The business criticality Project attribute ([learn more](../manage-issues/introduction-to-snyk-projects/project-attributes.md)) will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore.
 
 ### Likelihood subscore&#x20;
 
@@ -230,7 +230,7 @@ _Required_ - Likelihood subscore will decrease&#x20;
 
 #### Social Trends&#x20;
 
-Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation ([learn more](../priorities-for-fixing-issues/vulnerabilities-with-social-trends.md)).&#x20;
+Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation ([learn more](../manage-issues/priorities-for-fixing-issues/vulnerabilities-with-social-trends.md)).&#x20;
 
 **Possible input values:**  _Trending, Not trending_
 
@@ -334,7 +334,7 @@ _Great transitive depth -_ Likelihood subscore will decrease significantly (comi
 
 #### Reachability&#x20;
 
-Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. [Learn more](reachable-vulnerabilities.md).
+Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. [Learn more](../manage-issues/prioritizing-issues/reachable-vulnerabilities.md).
 
 **Possible input values:** _Reachable, No path found_\
 When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.
