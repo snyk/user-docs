@@ -1,4 +1,4 @@
-# Getting started with Snyk IaC
+# Start using Snyk IaC
 
 {% hint style="info" %}
 The information on this page applies to the original IaC and to IaC+, with some exceptions. If you are using the original IaC, follow the steps on this page. If you are using IaC+, see [Getting started with IaC+](getting-started-with-iac+.md).

@@ -37,7 +37,7 @@ In order to build the dependency tree Snyk analyzes the `composer.json` and `com
 
 There are no unique options for use when running Snyk for PHP.
 
-For more information about Snyk CLI see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
+For more information about Snyk CLI see [Getting started with the CLI](../../../snyk-cli/start-using-the-snyk-cli.md).
 
 ## Git services for PHP Projects
 

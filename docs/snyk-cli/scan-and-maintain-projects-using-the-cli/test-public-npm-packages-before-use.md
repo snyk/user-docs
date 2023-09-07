@@ -6,4 +6,4 @@ You can use `snyk test` to **scrutinize a public package before installing it**,
 
 You can also provide a specific version or range using `snyk test module[@semver-range]`.
 
-See also [Getting started with the CLI](../getting-started-with-the-cli.md).
+See also [Getting started with the CLI](../start-using-the-snyk-cli.md).

@@ -20,7 +20,7 @@ You can use the following Snyk [CLI](../../snyk-cli/cli-commands-and-options-sum
 * Scan container images with `snyk container test`.
 * Scan Infrastructure as Code (IaC) files with `snyk iac test`.
 
-See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-cli.md) for details.
+See [Getting started with the CLI](../../snyk-cli/start-using-the-snyk-cli.md) for details.
 
 ### Using the Snyk Web UI
 
