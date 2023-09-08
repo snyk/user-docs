@@ -6,7 +6,7 @@ The `dockercfg.json` file is necessary to allow the monitor to look up images in
 
 The Snyk Controller will not be able to access these registries if the credentials are only stored in `$HOME/.docker/config.json`
 
-**The steps to authenticate for private container registries follow.**
+This page explains the steps to authenticate for private container registries.
 
 ## Configure the dockercfg.json file
 
@@ -26,11 +26,13 @@ If the `auth` entry is empty in your `$HOME/.docker/config.json`, you can run th
 echo -n 'username:password' | base64
 ```
 
-## Examples of dockercfg.json file
+## Examples of the dockercfg.json file
 
-If your cluster does not run on **GKE**, or it runs on **GKE** and pulls images from **other private registries**, your`dockercfg.json` file should look like this:
+### Example for private registries other than Nexus
 
-```
+If your cluster does not run on `GKE`, or it runs on `GKE` and pulls images from other private registries, your`dockercfg.json` file should look like this:
+
+```json
 {  
   "auths": {
     "gcr.io": {
@@ -44,9 +46,25 @@ If your cluster does not run on **GKE**, or it runs on **GKE** and pulls images 
 }
 ```
 
-If you are using **Artifactory Container Registry to host multiple private repositories,** your `dockercfg.json` file should look like this:
+### Example for Nexus Repository
 
+If you are using Nexus Repository**,** your `dockercfg.json` file should look like this:
+
+```json
+{
+  "auths": {
+    "<registry>": {
+        "auth": "BASE64-ENCODED-AUTH-DETAILS"
+    },
+  }
+}
 ```
+
+### Example for Artifactory Container Registry
+
+If you are using Artifactory Container Registry to host multiple private repositories**,** your `dockercfg.json` file should look like this:
+
+```json
 {
   "auths": {
     "<registry1>": {
@@ -59,9 +77,11 @@ If you are using **Artifactory Container Registry to host multiple private repos
 }
 ```
 
-If your cluster runs on **GKE** and you are using **GCR**, your`dockercfg.json` file should look like this:
+### Example for GKE using GCR
 
-```
+If your cluster runs on `GKE` and you are using `GCR`, your`dockercfg.json` file should look like this:
+
+```json
 {
   "credHelpers": {
     "us.gcr.io": "gcloud",
@@ -74,17 +94,19 @@ If your cluster runs on **GKE** and you are using **GCR**, your`dockercfg.json` 
 }
 ```
 
-If your cluster runs on **EKS** and you are using **ECR**, add the following:
+### Example for EKS using ECR
 
-```
+If your cluster runs on `EKS` and you are using `ECR`, add the following:
+
+```json
 {
   "credsStore": "ecr-login"
 }
 ```
 
-To use this credential helper for a specific **ECR** registry, create a credHelpers section with the URI of your ECR registry:
+To use this credential helper for a specific `ECR` registry, create a credHelpers section with the URI of your ECR registry:
 
-```
+```json
 {
   "credHelpers": {
     "public.ecr.aws": "ecr-login",
@@ -93,9 +115,11 @@ To use this credential helper for a specific **ECR** registry, create a credHelp
 }
 ```
 
-If your cluster runs on **AKS** and you're using **ACR**, add the following:
+### Example for AKS using ACR
 
-```
+If your cluster runs on `AKS` and you're using `ACR`, add the following:
+
+```json
 {
   "credHelpers": { 
     "myregistry.azurecr.io": "acr-env"
@@ -104,14 +128,14 @@ If your cluster runs on **AKS** and you're using **ACR**, add the following:
 ```
 
 {% hint style="info" %}
-Additionally, for clusters running on AKS and using ACR, see [Azure AD Workload Identity service account](https://azure.github.io/azure-workload-identity/docs/topics/service-account-labels-and-annotations.html#service-account).
+In addition, for clusters running on AKS and using ACR, see [Azure AD Workload Identity service account](https://azure.github.io/azure-workload-identity/docs/topics/service-account-labels-and-annotations.html#service-account).
 
-You may need to configure labels and annotations on the snyk-monitor ServiceAccount
+You may need to configure labels and annotations on the `snyk-monito`r ServiceAccount
 {% endhint %}
 
 You can configure different credential helpers for different registries.&#x20;
 
-## Create the secret
+## Create the Kubernetes secret
 
 Create the secret in Kubernetes by running the following command:
 
