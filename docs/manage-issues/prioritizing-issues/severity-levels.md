@@ -31,7 +31,7 @@ For example, the severity levels appear in the **Pending tasks** section of the 
 
 <img src="../../.gitbook/assets/image (158) (1) (1) (1) (1) (1) (1) (1).png" alt="Severity levels with Pending tasks" data-size="original">
 
-Severity levels are displayed in association with your [Snyk Projects](../snyk-projects/):
+Severity levels are displayed in association with your [Snyk Projects](../../snyk-admin/snyk-projects/):
 
 <figure><img src="../../.gitbook/assets/image (43) (2).png" alt="Severity levels assoicated with Projects"><figcaption><p>Severity levels associated with Projects</p></figcaption></figure>
 

@@ -5,17 +5,17 @@
 Some functions, such as Groups, re only available on some [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
-## Accounts, Groups, and Organizations
+## Accounts, Groups, Organizations, Targets, and Projects
 
 Snyk has a hierarchy that controls access to scanning and other Snyk features.
 
-* **Account:** Users must log in to their Snyk account to scan and to view or modify any settings and scan output.
-* **Group:** Customers have at least one Snyk Group. The Group may correspond to the entire company. Large companies may have multiple Groups, corresponding to divisions, departments, or other parts of the company.
-* **Organization:** Snyk Groups encompass one or more Snyk Organizations. An Organization may correspond to a team or types of Projects where multiple teams are involved.
+* **Account:** Users must log in to their Snyk account to scan and view or modify any settings and scan output.
+* [**Groups**](manage-groups-and-organizations/introduction-to-groups.md)**:** Customers have at least one Snyk Group. The Group may correspond to the entire company. Large companies may have multiple Groups, corresponding to divisions, departments, or other parts of the company. Groups can contain multiple Organizations.
+* [**Organizations**](manage-groups-and-organizations/whats-a-snyk-organization.md)**:** Snyk Groups encompass one or more Snyk Organizations. Organizations represent specific business areas such as teams. Organizations can contain multiple Projects.
+* **Targets**. Each represents a repository imported into Snyk for scanning and re-testing.
+* [**Projects**](snyk-projects/)**:** established based on the items that Snyk scans for issues, such as manifest files, and shows the results of scans. You can configure your Projects to define how to scan for issues in that Project. See the [Quickstart](../getting-started/quickstart/) for the basic steps.
 
-Within an Organization, after you have scanned code, you will find one or more Snyk **Targets**. Each represents a repository imported into Snyk for scanning and re-testing. Targets contain one or more Snyk **Projects**. Each corresponds to the files scanned by Snyk.
-
-Snyk administrators set up Groups and Organizations. See [Manage Groups and Organizations](manage-groups-and-organizations/) for details.
+Snyk administrators set up Groups and Organizations. See [Manage Groups and Organizations](manage-groups-and-organizations/) for details. Targets and Projects are created when Snyk users import development projects into Snyk for scanning.
 
 ## Member (user) types
 
