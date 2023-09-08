@@ -2,7 +2,7 @@
 
 The Snyk REST API endpoint [List issues for a package](https://apidocs.snyk.io/?version=2023-03-08#get-/orgs/-org\_id-/packages/-purl-/issues) can fetch all direct vulnerabilities for a package. Direct (non-transitive) vulnerabilities for a package are requested by passing the package's `purl`, a reliable identifier and locator of software packages defined in the [purl (Package URL) specification](https://github.com/package-url/purl-spec). Snyk returns a list of vulnerabilities from the Snyk Vulnerabilities Database (Vuln DB).​
 
-The current release supports the following Package URL types: `maven`, `npm`, `cocoapods`, `composer`, `gem`, `nuget`, `pypi`, `hex`, `swift`, `cargo`, `generic`, `apk`, `deb` and `rpm.` If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+The current release supports the following Package URL types: `maven`, `npm`, `cocoapods`, `composer`, `gem`, `golang`, `nuget`, `pypi`, `hex`, `swift`, `cargo`, `generic`, `apk`, `deb` and `rpm.` If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 The API is useful when you have a list of packages and want to retrieve a list of vulnerabilities for a package version.
 
