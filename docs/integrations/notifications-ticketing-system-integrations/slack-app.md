@@ -75,7 +75,7 @@ To remove the Snyk app for Slack, navigate to the settings page, locate **Remove
 
 To override Slack notification settings on a per-Project level, a set of [Snyk REST API](https://apidocs.snyk.io/) endpoints are available.
 
-Before attempting to use these endpoints, ensure that you have retrieved your authentication token and Organization ID (`org_id`) as outlined in the steps of the [Getting started using Snyk REST API ](../../snyk-api-info/getting-started-using-snyk-rest-api.md)guide.
+Before attempting to use these endpoints, ensure that you have retrieved your authentication token and Organization ID (`org_id`) as outlined in the steps of the [Getting started using Snyk REST API ](../../snyk-api/try-a-simple-call-to-the-snyk-rest-api.md)guide.
 
 ### P**rerequisites** for managing Project-level notification overrides
 
