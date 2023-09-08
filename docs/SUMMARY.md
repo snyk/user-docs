@@ -418,7 +418,7 @@
 * [Scan infrastructure](scan-infrastructure/README.md)
   * [Start using Snyk IaC](scan-infrastructure/getting-started-with-snyk-iac/README.md)
     * [Snyk IaC examples](scan-infrastructure/getting-started-with-snyk-iac/snyk-iac-examples.md)
-    * [Start using IaC+](scan-infrastructure/getting-started-with-snyk-iac/getting-started-with-iac+.md)
+    * [Introduction to IaC+](scan-infrastructure/start-using-snyk-iac/introduction-to-iac+.md)
   * [Key concepts in IaC+](scan-infrastructure/snyk-iac+/key-concepts-in-iac+.md)
     * [Snyk environments](scan-infrastructure/snyk-iac+/snyk-environments/README.md)
       * [View, add, and remove environments](scan-infrastructure/snyk-iac+/snyk-environments/view-add-and-remove-environments.md)
