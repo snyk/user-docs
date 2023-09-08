@@ -1,8 +1,8 @@
-# Getting started with IaC+
+# Start using IaC+
 
 {% hint style="warning" %}
-,to **Feature availability**\
-IaC+ is in closed beta and requires that you allow Snyk to clone an entire Git repository, for security analysis. To use IaC+, you must choose to use the feature in writing by email or a Slack message to your account team.
+**Feature availability**\
+IaC+ is in Closed Beta and requires that you allow Snyk to clone an entire Git repository, for security analysis. To use IaC+, you must choose to use the feature in writing by email or a Slack message to your account team.
 {% endhint %}
 
 {% hint style="info" %}
