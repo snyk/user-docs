@@ -29,7 +29,7 @@ Snyk Code currently supports the following programming languages:
 * **Ruby (currently does not support interfile)**
 * **TypeScript**
 * **Apex**
-* **Scala (Open Beta)**
+* **Scala**
 * **Swift**&#x20;
 * **Kotlin (Open Beta)**
 * **VB.NET (Open Beta)**
@@ -130,9 +130,15 @@ These are some of the explicitly supported frameworks for PHP; those are in addi
 
 For information about Swift frameworks that support code analysis, see the [code analysis information on the Java and Kotlin page](../supported-languages-and-frameworks/java-and-kotlin.md#code-analysis).
 
-### Scala frameworks (Open Beta)
+### Scala frameworks
 
-Snyk Code for Scala is currently in Open Beta, and you can [enable it through Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
+{% hint style="info" %}
+These are some of the explicitly supported frameworks for PHP; those are in addition to the general support for many frameworks.
+{% endhint %}
+
+* Play
+* Akka
+* HTTP4S
 
 ### Swift frameworks&#x20;
 
