@@ -131,7 +131,11 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 ### Pipenv and Git repositories
 
 {% hint style="warning" %}
-Pipenv is momentarily available as an open beta feature, meaning that some of its functionalities might be subject to change.
+Pipenv is available as an open beta feature, meaning that some of its functionalities might be subject to change.
+{% endhint %}
+
+{% hint style="warning" %}
+Private PyPI mirrors are not supported. `Pipfiles` specifying a private mirror as their only source will not be imported.
 {% endhint %}
 
 To scan Pipenv Projects, Snyk analyzes your `Pipfile` and `Pipfile.lock` files using native `pipenv` tooling in an isolated Linux environment.
@@ -212,7 +216,7 @@ In this example, Snyk runs the scan using its currently supported version of Pyt
 #### Pipenv and Python versions
 
 {% hint style="warning" %}
-Pipenv is momentarily available as an open   feature, meaning that some of its functionalities might be subject to change.
+Pipenv is available as an open feature, meaning that some of its functionalities might be subject to change.
 {% endhint %}
 
 {% hint style="info" %}
