@@ -1,6 +1,6 @@
 # View Project information
 
-You can view Project information on your Projects pages. For example, to view your OPen Source vulnerabilities and licensing issues, navigate to [your Projects listing](https://app.snyk.io/projects), and open a Target to see the list the Projects:
+You can view Project information on your Projects pages. For example, to view your Open Source vulnerabilities and licensing issues, navigate to [your Projects listing](https://app.snyk.io/projects), and open a Target to see the list of Projects:
 
 <figure><img src="../../.gitbook/assets/Project-list.png" alt="Projects listed in the Target snyk-goof"><figcaption><p>Projects listed in the Target <code>snyk-goof</code></p></figcaption></figure>
 

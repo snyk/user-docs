@@ -1,6 +1,6 @@
 # Snyk Projects
 
-Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters that are visible (checkboxes on the left) depend on the grouping option you choose (pulldown on the right).
+Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters that are visible (checkboxes appear on the left when you click the **Filters** button) depend on the **Group by** option you choose from the pulldown on the right.
 
 {% hint style="info" %}
 After filters have been applied to the Project listing page, you can bookmark the URL and share it with other users in the Organization. This allows all users to see the same view of the page.
@@ -18,11 +18,11 @@ After filters have been applied to the Project listing page, you can bookmark th
 
 ## Target
 
-Projects are held in a Target. A Target represents an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resource external to Snyk. Snyk crates a Target when you request to import a Project or scan using the CLI. If the import fails or finds nothing the Target will be empty..
+Projects are held in a Target. A Target represents an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resource external to Snyk. Snyk crates a Target when you request to import a Project or scan using the CLI. If the import fails or finds nothing, the Target will be empty.
 
 When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the Snyk REST API endpoint [Get targets by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/targets).
 
-Click the **three dots** at the far right of each Target on the list to see the **available actions**; these include **deleting** a target.
+Click the **dots** at the far right of each Target on the list to see the **available actions**; these include **deleting** a target.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 08.59.20.png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
 
