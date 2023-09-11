@@ -24,7 +24,7 @@ There are several places on the Web UI where you can share your feedback. From a
 * **Select from dropdown** – select from the dropdown list the type of feedback you want to share.
 * **Message** – enter your feedback.
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - Results - Share Feddback - dialog box.png" alt="Share feedback dialog box"><figcaption><p>Share feedback dialog box</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code - Results - Share Feddback - dialog box (1).png" alt="Share feedback dialog box"><figcaption><p>Share feedback dialog box</p></figcaption></figure>
 
 3\. After you select and enter all the required information, click the **Send feedback** button.
 

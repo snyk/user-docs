@@ -85,7 +85,7 @@ If any of the customizable properties are missing from your template, Snyk rever
 
 To enable Snyk to access your customized template, add a file called `snyk_pull_request_template.yaml` to your Project(repository)[^1]. The storage method varies based on the type of integration.
 
-* Github - `/.github/snyk_pull_request_template.yaml`
+* Github/ Github Enterprise - `/.github/snyk_pull_request_template.yaml`
 * GitLab  - `/.gitlab/snyk_pull_request_template.yaml`
 * Azure  - `/.azuredevops/snyk_pull_request_template.yaml`
 * Other (like BitBucket)  - `/.config/snyk_pull_request_template.yaml`

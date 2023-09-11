@@ -39,6 +39,6 @@ The feature is available for all Snyk users. It is on by default for all users w
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt="Enable auto-update PRs for base images" width="563"><figcaption><p>Enable auto-update PRs for base images</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (85).png" alt="Enable auto-update PRs for base images" width="563"><figcaption><p>Enable auto-update PRs for base images</p></figcaption></figure>
 
 </div>
