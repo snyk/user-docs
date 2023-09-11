@@ -8,9 +8,11 @@ Scanning with Snyk finds security issues, including vulnerabilities, license pro
 
 Each issue is assigned a [Priority Score](../manage-issues/prioritizing-issues/priority-score.md).&#x20;
 
-&#x20;[Severity levels](../manage-issues/prioritizing-issues/severity-levels.md) and [Ignoring issues](../manage-issues/priorities-for-fixing-issues/ignore-issues.md) help you refine scans to find and report issues you need to fix. After you have found issues, you can use several features of Snyk to help you prioritize fixing issues. For details, see [Find and manage priority issues](../manage-issues/priorities-for-fixing-issues/).
-
 Snyk [Policies](../manage-issues/policies/) help you define actions to take to address issues.
+
+Enterprise Analytics provides a view into the performance of the Application Security (AppSec) program of a company. Metrics are reported for the pillars: Exposure, Manage, Prevention, and Coverage. The breakdown of open issues over time is shown in these categories: Baseline, Preventable, Non-preventable, and Other new. Customers can find the most serious problems that they must resolve, address those, and look for opportunities to proactively improve in each pillar.
+
+&#x20;[Severity levels](../manage-issues/prioritizing-issues/severity-levels.md) and [Ignoring issues](../manage-issues/priorities-for-fixing-issues/ignore-issues.md) help you refine scans to find and report issues you need to fix. After you have found issues, you can use several features of Snyk to help you prioritize fixing issues. For details, see [Find and manage priority issues](../manage-issues/priorities-for-fixing-issues/).
 
 Use Snyk [Reporting](../manage-issues/reporting/) to track issues and their resolution.
 

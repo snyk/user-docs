@@ -1,7 +1,7 @@
 # Manage your AppSec program with Enterprise Analytics
 
 {% hint style="info" %}
-All**Feature availability**\
+**Feature availability**\
 Enterprise Analytics is available to Snyk Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
 Enterprise Analytics is in Closed Beta. For access, contact your Snyk Account team or Snyk support. During Closed Beta, access at the user level is available. When tenant membership is available, access to Enterprise Analytics will be managed at scale more easily.
@@ -23,7 +23,7 @@ The following is an example of the Enterprise Analytics dashboard showing AppSec
 
 The AppSec performance dashboard uses the AppSec performance framework to show your performance for each pillar.
 
-Many AppSec teams begin by trying to understand the most serious problems that must be resolved and reacting accordingly. As teams mature, they look for opportunities to proactively manage their programs in each pillar: Exposure, Manage, Prevention, and Coverage.
+Many AppSec teams begin by trying to understand the most serious problems that must be resolved and reacting accordingly. As teams mature, they look for opportunities to proactively improve their programs in each pillar: Exposure, Manage, Prevention, and Coverage.
 
 ### Exposure
 
