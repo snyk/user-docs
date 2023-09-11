@@ -2,7 +2,7 @@
 
 To learn more about Snyk Code, visit the [product web page](https://snyk.io/product/snyk-code/) and consult the following resources:
 
-* [Snyk Cdde videos](snyk-code-additional-resources.md#snyk-code-videos)
+* [Snyk Code videos](snyk-code-additional-resources.md#snyk-code-videos)
 * [External reviewers - videos](snyk-code-additional-resources.md#external-reviewers-videos)
 * [Selected blogs](snyk-code-additional-resources.md#selected-blogs)
 
