@@ -30,11 +30,11 @@ You can filter issues by Priority Score range in the left sidebar.
 
 ## View Priority Score in Reports
 
-The **Issues** tab in the reports includes the Priority Score as its own sortable column. By default, the table is sorted by the scor to show you the most pressing issues first.
+The **Issues** tab in the reports includes the Priority Score as its own sortable column. By default, the table is sorted by the score to show you the most pressing issues first.
 
 Issues can also be filtered by the score.
 
-<figure><img src="../../.gitbook/assets/screen_shot_2021-07-14_at_1.43.32_pm.png" alt="Filter issues by score"><figcaption><p>Filter issues by score</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/filter issues by score.png" alt="Filter issues by score"><figcaption><p>Filter issues by score</p></figcaption></figure>
 
 ## View Priority Score in the Snyk API
 
