@@ -1,7 +1,7 @@
 # Manage your AppSec program with Enterprise Analytics
 
 {% hint style="info" %}
-**Feature availability**\
+All**Feature availability**\
 Enterprise Analytics is available to Snyk Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
 Enterprise Analytics is in Closed Beta. For access, contact your Snyk Account team or Snyk support. During Closed Beta, access at the user level is available. When tenant membership is available, access to Enterprise Analytics will be managed at scale more easily.
@@ -31,7 +31,7 @@ The Exposure pillar represents a view of the risk to the assets that make up you
 
 ### Manage
 
-The Manage pillar represents a view of how your business is managing issues that impact monitored assets that make up your applications. Rather than looking at existing risk, this provides a look at the patterns of behavior of teams in addressing the resolution or acceptance of, or deferral of action on risk that manifests itself in monitored assets.
+The Manage pillar represents a view of how your business is managing issues that impact monitored assets that make up your applications. Rather than looking at existing risk, this provides a look at the patterns of behavior of teams in addressing the resolution or acceptance of, or deferral of, action on risk that manifests itself in monitored assets.
 
 ### Prevention
 
@@ -45,11 +45,11 @@ The Coverage pillar represents a view of how completely the assets that make up 
 
 When you are assessing exposure to risk only, you need not be concerned with how an issue was introduced into the product. When examining an issue or performing an audit, you must be aware that if an issue can be exploited, it may be exploited.
 
-However, when you are evaluating the performance of an AppSec program, you must understand how an issue was introduced, so you can stay ahead of attacks and be prepared for the next audit or attack defense.
+However, when you are evaluating the performance of an AppSec program, you must understand how an issue was introduced so you can stay ahead of attacks and be prepared for the next audit or attack defense.
 
 Issues are categorized as follows.
 
-### Baseline Issues
+### Baseline issues
 
 This includes issues identified during the first day a Project began to be monitored. Baseline issues represent new visibility into the risk that existed when Snyk monitoring began.
 
@@ -65,9 +65,9 @@ Any issues identified in a Project after the first day of monitoring are conside
 
 Preventable issues could have been identified and remediated earlier in the SDLC if developers had taken greater advantage of available shift-left tooling and processes.
 
-Issues can be prevented by developers taking advantage of Snyk Learn, leveraging the IDE plug-ins, activating PR checks, running `snyk test` locally in the CLI, breaking the build, or any other available actions for catching issues pre-production. If Snyk knows about an issue, a test can catch it. Other actions to stop preventable issues from getting into production environments include increasing the threshold for what breaks a build from critical to critical and high severity issues, or more strictly refraining from approving PRs that fail a Snyk test.
+Issues can be prevented by developers' taking advantage of Snyk Learn, leveraging the IDE plug-ins, activating PR checks, running `snyk test` locally in the CLI, breaking the build, or taking any other available actions for catching issues pre-production. If Snyk knows about an issue, a test can catch it. Other actions to stop preventable issues from getting into production environments include increasing the threshold for what breaks a build from `critical` to `critical` and `high` severity issues, or more strictly refraining from approving PRs that fail a Snyk test.
 
-Issues are categorized as Preventable if the problem was known to Snyk at least seven days in advance of the detection of the issue. While it is possible that introducing an issue could have been prevented within the seven-day interval, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
+Issues are categorized as Preventable if the problem was known to Snyk at least seven days before the detection of the issue. While it is possible that introducing an issue could have been prevented within the seven-day interval, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
 
 {% hint style="info" %}
 The following example is also a preventable issue.
@@ -79,17 +79,17 @@ A developer adds a vulnerable version of a package as part of development. Despi
 
 Non-preventable issues are the result of an external factor, such as a new vulnerability being published or a new security rule being created, in contrast to developers not shifting left.
 
-There may be a repository that has not been modified in months or years, but because of a newly published vulnerability, such as [log4j](https://snyk.io/blog/log4j-vulnerability-software-supply-chain-security-log4shell/), the asset is now vulnerable. With newly published critical or high-severity open-source vulnerabilities, there may be attention from senior leadership, partners, and customers, requiring the ability to quickly identify issues in this category and measure their trends.
+There may be a repository that has not been modified in months or years, but because of a newly published vulnerability, such as [log4j](https://snyk.io/blog/log4j-vulnerability-software-supply-chain-security-log4shell/), the asset is now vulnerable. With newly published critical or high-severity open-source vulnerabilities, there may be attention from senior leadership, partners, and customers, requiring the ability to identify issues in this category and measure their trends quickly.
 
 Issues are categorized as Non-preventable if the issue is detected within seven days of becoming known to Snyk. This could include a new vulnerability in a dependency already in use or a vulnerability disclosed in the same time frame as the dependency was introduced to the Project. While it is possible that introducing an issue could have been prevented within the seven-day period, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
 
-<figure><img src="https://lh6.googleusercontent.com/ykfbiHzdDVB2X3va4iSzYpSfZ6Ca5yBmeplYMz95wj2Gq6i-xcW4ZZdVOX6Vsl3B1bOaL-gbpTHyksYMjeeAaCHbjAz2QNx3vJ_6h3Oz5ykjqXg2oRWbA5_U-DyoOjGSjSInP_XJv6hIyLsKxmjjFUo" alt="Example of dates issues became known and were detected categorized as Non-preventable and preventable"><figcaption><p>Example of dates issues became known and were detected categorized as Non-preventable and preventable</p></figcaption></figure>
+<figure><img src="https://lh6.googleusercontent.com/ykfbiHzdDVB2X3va4iSzYpSfZ6Ca5yBmeplYMz95wj2Gq6i-xcW4ZZdVOX6Vsl3B1bOaL-gbpTHyksYMjeeAaCHbjAz2QNx3vJ_6h3Oz5ykjqXg2oRWbA5_U-DyoOjGSjSInP_XJv6hIyLsKxmjjFUo" alt="Example of dates an issue was identified, categorized as Non-preventable and Preventable"><figcaption><p>Example of dates an issue was identified, categorized as Non-preventable and Preventable</p></figcaption></figure>
 
 ### Other new issues
 
-Not all issues can be easily categorized as Preventable or Non-Preventable within Snyk today. The key inputs to this determination are the dates the issue and problem were identified. If either is in question, the issue will be categorized as “Other new.”&#x20;
+Not all issues can be easily categorized as Preventable or Non-preventable within Snyk today. The key inputs to this determination are the dates the issue and problem were identified. If either is in question, the issue will be categorized as **Other new**.
 
-Currently, all Snyk Code and Snyk IaC issues will be labeled as `Other new`. Open Source license issues will also be categorized as `Other new`.
+Currently, all Snyk Code and Snyk IaC issues will be labeled as **Other new**. Open Source license issues will also be categorized as **Other new**.
 
 ## Enterprise Analytics metrics and filters
 
