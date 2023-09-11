@@ -48,7 +48,7 @@ Use these details to set up the connection with your Identity provider (IdP):
 | ACS URL (Snyk AU Tenant Customers)             | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml](https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml)-**{group-name-normalized}**  |
 | Signing certificate                            | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                                    |
 | Signing certificate (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection)                                                    |
-| Signing certificate (Snyk AU Tenant Customers) | [https://snyk-mt-eu-prod-1.au.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.au.auth0.com/pem?cert=connection)                                                    |
+| Signing certificate (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection)](https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection\))                                                 |
 
 {% hint style="info" %}
 Replace **{group-name-normalized}** with the name of your Snyk Group. If your Group name includes spaces, replace them with an underscore. For example, if your Group name is `Your Company Group`, then the **{group-name-normalized}** value is **your\_company\_group**.

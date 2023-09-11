@@ -14,7 +14,7 @@ You can filter for all container Projects, as shown in the following example:
 
 When you open any container Project, the resulting analysis and fix advice appears in the Snyk Web UI:
 
-<figure><img src="../../.gitbook/assets/image (315) (1) (1).png" alt="Analysis and fix advice for a Project"><figcaption><p>Analysis and fix advice for a Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (315) (1).png" alt="Analysis and fix advice for a Project"><figcaption><p>Analysis and fix advice for a Project</p></figcaption></figure>
 
 The following information is displayed:
 
@@ -25,7 +25,7 @@ The following information is displayed:
   * Total dependencies with known vulnerabilities and the total number of vulnerabilities
 * Fix advice: If you included your Dockerfile for monitoring, a,navailable actionable fix advice is displayed. To view all advice, click the **Show more upgrade types** link. The advice offered depends on available fixes, as illustrated in the following image:
 
-<figure><img src="../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
 
 * Upgrade suggestions can include the following:
   * Minor upgrades: the safest and best minor upgrade available
@@ -40,7 +40,7 @@ The following information is displayed:
   * A specific binary or OS packages for binaries and packages containing issues
   * Dockerfile instructions: If you attach your Dockerfile, you can filter to view issues associated only with the base image, or view Dockerfile-related advice (user instruction), or both
 
-<figure><img src="../../.gitbook/assets/image (195) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Filters for binaries and images"><figcaption><p>Filters for binaries and images</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (195) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Filters for binaries and images"><figcaption><p>Filters for binaries and images</p></figcaption></figure>
 
 {% hint style="info" %}
 If there is only one category of issues in your container, for example, Node binary vulnerabilities or OS packages, this filter does not appear.\

@@ -21,7 +21,7 @@ The following rules are applied to automatic PR creation for vulnerabilities:
 * One pull request is created per Project ([priority score](../../../manage-issues/prioritizing-issues/priority-score.md) of **700 and above only**).
 * Pull requests are created based on the **Test & Automated Pull Request Frequency** settings. To update the **Test & Automated Pull Request Frequency**, go to **Projects**, select your open source and licensing Project, then go to **Settings** (see screenshot below).
 
-<figure><img src="../../../.gitbook/assets/Project testing and PR Checks frequency (1).png" alt="Project testing and PR Checks frequency."><figcaption><p>Project testing and PR Checks frequency</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Project testing and PR Checks frequency.png" alt="Project testing and PR Checks frequency."><figcaption><p>Project testing and PR Checks frequency</p></figcaption></figure>
 
 To know when your last 24-hour window was kicked off, check the Project page for **Snapshot taken by recurring test**.&#x20;
 
