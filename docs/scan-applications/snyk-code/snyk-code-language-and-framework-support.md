@@ -35,7 +35,7 @@ Snyk Code currently supports the following programming languages:
 * **VB.NET (Open Beta)**
 
 {% hint style="info" %}
-Beta support exists for Kotlin and VB.NET. Contact Snyk for more details or with your additional needs.
+Beta support exists for Kotlin, VB.NET, and C/C++. Contact Snyk for more details or with your additional needs.
 {% endhint %}
 
 ## Language type and framework support
@@ -52,11 +52,11 @@ For a full list of Vulnerability Types/Security Rules that are applied to each s
 
 The following are the supported extensions:
 
-* apex, trigger, ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, CS, php, xml, jsp, jspx, cls, c, cc, cpp, cxx, h, hpp, hxx
+* apex, trigger, ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, scala, swift, py, go, ASPX, CS, php, xml, jsp, jspx, cls, c, cc, cpp, cxx, h, hpp, hxx
 
 If enabled via the Beta program, the following extensions may be scanned as well:
 
-* kt, scala, swift, vb
+* kt, vb
 
 ### Framework support
 
@@ -128,12 +128,12 @@ These are some of the explicitly supported frameworks for PHP; those are in addi
 
 ### Kotlin (Open Beta)
 
-For information about Swift frameworks that support code analysis, see the [code analysis information on the Java and Kotlin page](../supported-languages-and-frameworks/java-and-kotlin.md#code-analysis).
+For information about Kotlin frameworks that support code analysis, see the [code analysis information on the Java and Kotlin page](../supported-languages-and-frameworks/java-and-kotlin.md#code-analysis).
 
 ### Scala frameworks
 
 {% hint style="info" %}
-These are some of the explicitly supported frameworks for PHP; those are in addition to the general support for many frameworks.
+These are some of the explicitly supported frameworks for Scala; those are in addition to the general support for many frameworks.
 {% endhint %}
 
 * Play
