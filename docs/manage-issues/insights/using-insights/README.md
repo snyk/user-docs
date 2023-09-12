@@ -1,8 +1,8 @@
 # Using Insights
 
-The following pages help with using Insights.
+The following pages provide information and instructions to help with using Insights.
 
-* [Filtering your issues](filtering-your-issues.md)
-* [Understanding your issues](understanding-your-issues.md)
+* [Filtering your issues](../../../manage-risk/insights/using-insights/filter-your-issues.md)
+* [Understanding your issues](../../../manage-risk/insights/using-insights/understand-your-issues.md)
 * [Evidence graph](evidence-graph.md)
-* [Exporting and customizing Insights data](exporting-and-customizing-insights-data.md)
+* [Exporting and customizing Insights data](../../../manage-risk/insights/using-insights/export-and-customize-insights-data.md)
