@@ -86,17 +86,17 @@ For additional information see [Installing Snyk CLI as a binary via npm](install
 
 Snyk CLI can also be run from a Docker image. Snyk offers multiple Docker images under [snyk/snyk on Docker Hub](https://hub.docker.com/r/snyk/snyk). See [snyk/snyk-images on GitHub](https://github.com/snyk/snyk-images) for details.
 
-These images wrap the Snyk CLI and depending on the Tag come with relevant tooling for different projects. An example follows for scanning a Gradle project with `snyk/snyk-cli`:
+These images wrap the Snyk CLI and depending on the Tag come with relevant tooling for different projects. An example follows for scanning a Gradle project with `snyk/snyk`:
 
 ```bash
 docker run -it \
     -e "SNYK_TOKEN=<TOKEN>" \
     -v "<PROJECT_DIRECTORY>:/project" \
     -v "/home/user/.gradle:/home/node/.gradle" \
-  snyk/snyk-cli:gradle-5.4 test --org=my-org-name
+  snyk/snyk:gradle:6.4 test --org=my-org-name
 ```
 
-This is an example for scanning a Maven project with `/snyk/snyk-cli`:
+This is an example for scanning a Maven project with `snyk/snyk`:
 
 ```
 docker run --rm -r \
