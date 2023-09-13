@@ -12,37 +12,40 @@ The following video provides an introduction to the `.snyk` file.
 
 ## Capabilities and behaviors of the `.snyk` file
 
-The `.snyk` policy file in a Project is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands, the `@snyk/protect` [package](https://github.com/snyk/snyk/tree/master/packages/snyk-protect) (replaced the `snyk protect` command), and any tests done through the API or Snyk Web UI. For IaC ignore rules, see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
+The `.snyk` policy file in a Project is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands and for any tests done through the API or Snyk Web UI. and to apply the `@snyk/protect` [package](https://github.com/snyk/snyk/tree/master/packages/snyk-protect) that replaced the `snyk protect` command.
+
+The `.snyk` file can also be used to exclude directories and files from repositories that are imported for Snyk Code testing. The `exclude from import` option is supported only in Snyk Code, and only for imports that are performed using the Snyk Web UI and CLI. For details, see [Excluding directories and files from the import process](../../scan-application-code/snyk-code/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md).
+
+For IaC ignore rules, see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
+
+The following explains how the `.snyk` file works.
 
 * The `.snyk` file defines **Snyk patches** to be applied at build time, to resolve vulnerabilities that cannot be fixed with upgrades.
 * The `.snyk` file defines **Ignores**.
-  * Snyk checks the Snyk database and the `.snyk` policy file for ignore rules when scanning through an SCM integration, the Snyk CLI, and a CI/CD integration.
-  * The `.snyk` policy file is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands, as well as any tests through the API or Snyk Web UI.
-* If **admin users only** is enabled (by using **Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the Project. If there is a `.snyk` file in the Project, `snyk test` uses that file as the ignore mechanism, instead of the ignores set from the web UI.
-* Developers can ignore issues by using the .snyk policy file when running `snyk monitor`.
+* Snyk checks the Snyk database and the `.snyk` policy file for ignore rules when scanning through an SCM integration, the Snyk CLI, and a CI/CD integration.
+* If **Admin users only** is enabled (by using **Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the Project. For details, see the section [How to override the ignore rules in the database](the-.snyk-file.md#how-to-override-the-ignore-rules-in-the-database) on this page.
+* If there is a `.snyk` file in the Project, `snyk test` uses that file as the ignore mechanism, instead of the ignores set from the Web UI.
 * When the `.snyk` file is included in an SCM Project, Snyk considers both the database ignores and the `.snyk` ignores.
+* Developers can ignore issues by using the .snyk policy file when running `snyk monitor`.
 * The `.snyk` file defines certain analysis configuration items such as `language settings:` for the Python version.
   * For SCM scans, for example, GitHub, the Snyk Web UI limits users to setting Python versions at the Organization level.
-  * When you include the `.snyk` file in your code repository and the `language settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans .
+  * When you include the `.snyk` file in your code repository and the `language settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans.
   * You may need to re-import the Project if the `.snyk` file was not present at the initial import of the Project into Snyk.
-* The `.snyk` file can also be used to exclude directories and files from repositories that are imported for Snyk Code testing. The `exclude from import` option is supported only in Snyk Code, and only for imports that are performed using the Snyk Web UI and CLI. For details see [Excluding directories and files from the import process](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process).
 
 ## How to create the `.snyk` file
+
+{% hint style="info" %}
+The `.snyk` file should be versioned in the code repository, the same as other applications and build resources.
+{% endhint %}
 
 You can create the `.snyk` file in a number of ways:
 
 * **Snyk vulnerability fix pull request (PR)** - When you select the **fix a vulnerability** button on a Git code repository scan, and a Snyk patch is available and an upgrade is not possible, a `.snyk` file is added to the pull request. Creating Snyk patches is supported for npm and Yarn only.
 * **Snyk CLI** - When you use the `snyk ignore` command, Snyk creates a `.snyk` file.
-* **Manual creation** - If you want to ignore by path, you must edit the `.snyk` file manually. You can create a new `.snyk` file and populate it with the code that follows., where the version is the current version of the snyk-policy package; you can find this at [https://www.npmjs.com/package/snyk-policy](https://www.npmjs.com/package/snyk-policy).
-
-```
- # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
- version: v1.25.0
-```
-
-{% hint style="info" %}
-The `.snyk` file should be versioned in the code repository, the same as other applications and build resources.
-{% endhint %}
+* **Manual creation** - If you want to ignore by path, you must edit the `.snyk` file manually. You can create a new `.snyk` file and populate it with the code that follows:\
+  &#x20;`# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
+  `version: v1.25.0`\
+  The `version` is the current version of the snyk-policy package found at [https://www.npmjs.com/package/snyk-policy](https://www.npmjs.com/package/snyk-policy).
 
 ## Syntax of the `.snyk` file
 
@@ -73,6 +76,26 @@ The `patch`: is in the form of:
   - path to library using > seperator > to > another > path:
     patched: 'datetime string'
 ```
+
+## How to override the ignore rules in the database
+
+You can use a `.snyk` file to override the ignore rules in the database if **Admin users only** is enabled for the Organization.
+
+When Admin users only is enabled, if there is a `.snyk` file in the Project, the`snyk test` CLI command uses that file as the ignore mechanism, instead of the ignores set in the Web UI. This means that if you have a `.snyk` file in the Project and you are using the `snyk test` command through the CLI, Snyk overrides all settings made in the Snyk Web UI.
+
+You can choose who can ignore an issue or edit the ignore settings for an issue by using the Snyk Web UI or the API.
+
+Follow these steps to set the ignore preferences for use by the Snyk Web UI and API:
+
+1. Log in to your [Snyk account](../../getting-started/quickstart/create-a-snyk-account/).
+2. Select **Settings**, then **General**.
+3. Select an option as follows:
+   * **Admin users only** - only admins can customize the ignore settings.
+   * **All users in any environment** - all users can customize the ignore settings.
+
+{% hint style="info" %}
+Snyk does not process the ignores from changes added in a newer commit or in the same PR. Only ignores from the same PR are applied.
+{% endhint %}
 
 ## Monorepos and complex Project considerations
 
