@@ -95,7 +95,7 @@ To add a default Project:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png" alt="Import Projects"><figcaption><p>Import Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png" alt="Import Projects"><figcaption><p>Import Projects</p></figcaption></figure>
 
 </div>
 

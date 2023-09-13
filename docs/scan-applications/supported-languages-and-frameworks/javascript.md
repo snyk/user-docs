@@ -10,11 +10,11 @@ You might encounter false positives or false negatives for partially supported f
 
 Snyk Code supports the following frameworks:
 
-* **React**
-* **Vue.js**
-* **Express**
-* **jQuery**
-* **Angular (partial support)**
+* React
+* Vue.js
+* Express
+* jQuery
+* Angular (partial support)
 
 ### Open source and licensing
 

@@ -29,7 +29,7 @@ Currently supported CDNs are:
 * yastatic.net
 * ajax.aspnetcdn.com
 
-<figure><img src="../../../../.gitbook/assets/oss-editor-html (1) (1).png" alt="Vulnerability from a CDN"><figcaption><p>Vulnerability from a CDN</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/oss-editor-html (1).png" alt="Vulnerability from a CDN"><figcaption><p>Vulnerability from a CDN</p></figcaption></figure>
 
 You can navigate to the most severe vulnerability by triggering the provided code actions. This opens a vulnerability window to show more details:
 

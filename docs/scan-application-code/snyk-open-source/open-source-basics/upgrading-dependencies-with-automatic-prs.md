@@ -81,7 +81,7 @@ The Settings on the Project level override the Settings on the organization leve
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-27 at 12.55.40.png" alt=""><figcaption></figcaption></figure>
 4. In the **Project** **Settings** page, choose the relevant integration tab from the left submenu.\
-   <img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="original">Project
+   <img src="../../../.gitbook/assets/image (79).png" alt="" data-size="original">Project
 5. In the **Integration** page, scroll to the **Automatic dependency upgrade pull requests** section and choose one of the following:
    * **Inherit from Integration settings** – apply the Integration Settings of the Organization to the selected Project.
 

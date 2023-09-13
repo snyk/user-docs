@@ -107,11 +107,7 @@ The framework support is always determined by the file extensions known to the e
 
 ### Ruby frameworks
 
-{% hint style="info" %}
-These are some of the explicitly supported frameworks for Ruby; those are in addition to the general support for many frameworks.
-{% endhint %}
-
-* **Ruby On Rails**: Server side web application framework.
+:link: [Ruby frameworks supporting code analysis](../supported-languages-and-frameworks/ruby.md)
 
 ### PHP frameworks
 
