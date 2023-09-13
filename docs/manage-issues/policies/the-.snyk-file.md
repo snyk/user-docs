@@ -81,11 +81,13 @@ The `patch`: is in the form of:
 
 You can use a `.snyk` file to override the ignore rules in the database if **Admin users only** is enabled for the Organization.
 
-When Admin users only is enabled, if there is a `.snyk` file in the Project, the`snyk test` CLI command uses that file as the ignore mechanism, instead of the ignores set in the Web UI. This means that if you have a `.snyk` file in the Project and you are using the `snyk test` command through the CLI, Snyk overrides all settings made in the Snyk Web UI.
+If there is a `.snyk` file in the Project, the`snyk test` CLI command uses that file as the ignore mechanism, instead of the ignores set in the Web UI. This means that if you have a `.snyk` file in the Project and you are using the `snyk test` command through the CLI, Snyk overrides all settings made in the Snyk Web UI.
 
-You can choose who can ignore an issue or edit the ignore settings for an issue by using the Snyk Web UI or the API.
+However, when the `.snyk` file is included in an SCM Project, Snyk considers both the database ignores and the `.snyk` ignores.
 
-Follow these steps to set the ignore preferences for use by the Snyk Web UI and API:
+If **Admin users only** is enabled, the ignore rules in the database are used, unless there is a `.snyk` file in the Project. Thus to override the ignore rules set in the Web UI, you must specify that Admin users only can ignore an issue or edit the ignore settings for an issue.
+
+Follow these steps to set these ignore preferences for use by the Snyk Web UI and API:
 
 1. Log in to your [Snyk account](../../getting-started/quickstart/create-a-snyk-account/).
 2. Select **Settings**, then **General**.
