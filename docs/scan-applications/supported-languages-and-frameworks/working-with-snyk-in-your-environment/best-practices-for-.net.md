@@ -12,7 +12,7 @@ For framework support, see [Snyk Code - Supported languages and frameworks](../.
 
 * **Target Frameworks**: Snyk identifies the target frameworks and presents results against each identified version using the git integration.
 * **Development dependencies**: Snyk generally does not scan developer dependencies, as they are not usually pushed to production and are seen as "noise." \
-  Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](../.net.md#git-settings-for-.net)). \
+  Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](../../../scan-application-code/supported-languages-and-frameworks/.net.md#git-settings-for-.net)). \
   Snyk scans and fixes the build and `development Dependency` sections of your [`*.proj`](#user-content-fn-1)[^1], `packages.config` and `project.json` files
 * **Lock files**: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
 * **PackageReference:** Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
@@ -86,7 +86,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 :link: [Supported Operating System Distributions](../../snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
 
-:link: [Snyk CLI for container security](../../../scan-containers/snyk-cli-for-container-security/)&#x20;
+:link: [Snyk CLI for container security](../../snyk-container/snyk-cli-for-container-security/)&#x20;
 
 #### Infrastructure as Code
 
@@ -94,7 +94,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Helpful Options/Plugins**
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 * For advanced filtering options, see[ snyk-filter](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
 

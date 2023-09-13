@@ -2,7 +2,7 @@
 
 ## PR Checks results
 
-After you [submit a pull request to fix vulnerabilities](../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md), PR Checks detects issues with a severity level that meets or exceeds your configured threshold and provides a report. Examine the report status and result to decide whether to merge the pull request.
+After you [submit a pull request to fix vulnerabilities](../snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md), PR Checks detects issues with a severity level that meets or exceeds your configured threshold and provides a report. Examine the report status and result to decide whether to merge the pull request.
 
 You can change the default severity threshold either at the [Integration level](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level), or at the [Project level](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-project-level).
 
@@ -15,7 +15,7 @@ The following status indicators can appear for your Snyk PR checks in the integr
 <table><thead><tr><th width="212">Result status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Success/Passed</strong></td><td>No issues were discovered and the manifest file was not changed.</td></tr><tr><td><strong>Pending</strong></td><td>The PR Checks are still running.</td></tr><tr><td><strong>Failed/Issues found</strong></td><td>Security issues were identified in the pull request. In this scenario, you need to manually set the result status to <strong>Passed</strong>.</td></tr><tr><td><strong>Error</strong></td><td>Out-of-sync package.json and package.lock files, failure to find or to read the manifest file.</td></tr><tr><td><strong>Canceled</strong></td><td>The test limit has been reached.</td></tr></tbody></table>
 
 {% hint style="info" %}
-For false positive or false negative results, see [Troubleshooting PR Checks](../../scan-application-code/run-pr-checks/troubleshooting.md).
+For false positive or false negative results, see [Troubleshooting PR Checks](troubleshooting.md).
 {% endhint %}
 
 ## **Example: fix dependency issues with PR Checks**
@@ -50,7 +50,7 @@ Confirm your selected issue and click **Open a Fix PR** to open a pull request i
 2. Find the conversation card showing the PR Checks results. For this example, the result is set to **Failed** and is manually changed to **Passed**.&#x20;
 
 {% hint style="info" %}
-Issues that have previously been ignored via the Snyk Web UI in the associated Open Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../manage-issues/priorities-for-fixing-issues/ignore-issues.md) across feature branch PRs.
+Issues that have previously been ignored via the Snyk Web UI in the associated Open Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../manage-risk/priorities-for-fixing-issues/ignore-issues.md) across feature branch PRs.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/PR_checks_in_GitHub_integration.png" alt="PR Checks card in the Conversations tab, GitHub."><figcaption><p>PR Checks card in the Conversations tab, GitHub</p></figcaption></figure>

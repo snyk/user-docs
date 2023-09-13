@@ -3,7 +3,7 @@
 Snyk Container helps you find and fix vulnerabilities in container images, based on container registry scans.
 
 {% hint style="info" %}
-The process described on this page uses the Snyk Web UI. For information on how to use Snyk Container using the Snyk Command Line Interface (Snyk CLI), see [Snyk CLI for container security](snyk-cli-for-container-security/).
+The process described on this page uses the Snyk Web UI. For information on how to use Snyk Container using the Snyk Command Line Interface (Snyk CLI), see [Snyk CLI for container security](../scan-applications/snyk-container/snyk-cli-for-container-security/).
 {% endhint %}
 
 ## **Prerequisites for Snyk Container**
@@ -37,4 +37,4 @@ To fix vulnerabilities:
 
 After it is pushed, Snyk automatically rescans your new image.&#x20;
 
-For more details on how to fix vulnerabilities, see [Analysis and fixes for your images from the Snyk Web UI](use-snyk-container/analysis-and-remediation-for-your-images-from-the-snyk-app.md).
+For more details on how to fix vulnerabilities, see [Analysis and fixes for your images from the Snyk Web UI](../scan-applications/snyk-container/use-snyk-container/analysis-and-remediation-for-your-images-from-the-snyk-app.md).

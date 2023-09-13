@@ -43,7 +43,7 @@ After the integration is in place, you can use capabilities such as:
 
 ### **Project-level security reports**
 
-Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository with the required upgrades or patches.
+Snyk produces advanced [security reports](../../manage-risk/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository with the required upgrades or patches.
 
 The example that follows shows a Project-level security report.
 
@@ -73,7 +73,7 @@ Snyk pull requests are automatically assigned to the default reviewer set in you
 
 Unlike manual pull requests opened from the Bitbucket interface, for the Snyk Bitbucket Cloud integration, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
-For more information, see [Automated pull request creation for new fixes](../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md).
+For more information, see [Automated pull request creation for new fixes](../../scan-applications/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md).
 {% endhint %}
 
 ### **Pull request tests**

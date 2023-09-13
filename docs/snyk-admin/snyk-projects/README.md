@@ -28,7 +28,7 @@ Click the **dots** at the far right of each Target on the list to see the **avai
 
 Each Snyk Project is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the Origin.
 
-The grouping option controls whether the filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](project-tags.md) and [filtering attributes at the Project level](project-attributes.md) to the individual Projects.
+The grouping option controls whether the filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](../../manage-risk/snyk-projects/project-tags.md) and [filtering attributes at the Project level](../../manage-risk/snyk-projects/project-attributes.md) to the individual Projects.
 
 Snyk provides both pagination to improve the page loading time for Projects page requests and filtering, which is particularly helpful if you have hundreds of thousands of Projects to scan.
 
@@ -80,7 +80,7 @@ A Snyk Project defines the items, such as manifest files, that Snyk scans for a 
 
 Projects appear in the **Projects** listing. You can also find Projects using the Snyk REST API endpoint [Get projects by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/projects).
 
-Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](project-attributes.md).
+Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](../../manage-risk/snyk-projects/project-attributes.md).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1) (1) (1) (1) (1) (1).png" alt="Filtering attributes applied at the Project level"><figcaption><p>Filtering attributes applied at the Project level</p></figcaption></figure>
 
@@ -89,7 +89,7 @@ Use **Group by none** (ungrouped) for better Project visibility and to apply [fi
 The Targetfile is the specific item to scan in a Target, such as a `pom.xml` file in a GitHub repo.
 
 {% hint style="info" %}
-[Snyk Code](../../scan-application-code/snyk-code/) scans do not use Targetfiles.
+[Snyk Code](../../scan-applications/snyk-code/) scans do not use Targetfiles.
 {% endhint %}
 
 ## Type

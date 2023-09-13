@@ -18,6 +18,6 @@ See also
 
 * [Getting started with the CLI](../start-using-the-snyk-cli.md)
 * [CLI reference](../cli-commands-and-options-summary.md)
-* [Use Snyk Open Source from the CLI](../../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/)
+* [Use Snyk Open Source from the CLI](../../scan-applications/snyk-open-source/use-snyk-open-source-from-the-cli/)
 * [Set severity thresholds for CLI tests](set-severity-thresholds-for-cli-tests.md)
 * [Test public npm packages before use](test-public-npm-packages-before-use.md)

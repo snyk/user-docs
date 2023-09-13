@@ -22,7 +22,7 @@ Snyk tests and monitors your Amazon ECR container images by evaluating the tags 
 6. When the import ends, a notification of success or failure appears at the top of the page. Click Refresh to view the **Projects** page with the newly imported images.\
    Images are grouped by repository and are each linked individually to a detailed Projects page.
 7. You can now connect your Git repo to this Project in order to use your Dockerfile for enriched fix advice.\
-   For more information, see [Adding your Dockerfile and testing your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   For more information, see [Adding your Dockerfile and testing your base image](../../../scan-applications/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 ECR files are indicated with a unique icon ![ECR](../../../.gitbook/assets/uuid-31aa2b29-8686-5389-b5fc-1d3bd1176f9c-en.png). You can filter to view only those Projects:
 

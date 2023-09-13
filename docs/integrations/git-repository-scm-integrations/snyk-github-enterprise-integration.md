@@ -84,7 +84,7 @@ To review and update the automatic fix pull request settings:
 
 ### **Test new pull requests**
 
-The [PR Checks](../../scan-application-code/run-pr-checks/) feature enables Snyk to test any newly-created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub. This allows you to see, directly from GitHub, whether the pull request introduces new security issues.
+The [PR Checks](../../scan-applications/run-pr-checks/) feature enables Snyk to test any newly-created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub. This allows you to see, directly from GitHub, whether the pull request introduces new security issues.
 
 The following example shows how Snyk pull request checks appear on the pull requests page in GitHub.
 

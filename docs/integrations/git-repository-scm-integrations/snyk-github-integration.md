@@ -39,12 +39,12 @@ You can then scroll down to the section required, and set the options accordingl
   * [Automatic dependency upgrade PRs](../../scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
   * [Pull request assignees](snyk-github-integration.md#pr-assignment)
   * [Snyk vulnerability patches](../../scan-applications/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
-* Pull request status checks ([PR Checks](../../scan-application-code/run-pr-checks/))
+* Pull request status checks ([PR Checks](../../scan-applications/run-pr-checks/))
   * [Open Source security and licenses](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
   * [Code analysis](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
 * Dockerfiles
-  * [Detect Dockerfiles](../../scan-containers/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
-  * [Update Dockerfile base images](../../scan-containers/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
+  * [Detect Dockerfiles](../../scan-applications/snyk-container/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
+  * [Update Dockerfile base images](../../scan-applications/snyk-container/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
 
 ## General Snyk GitHub integration settings
 
@@ -75,7 +75,7 @@ After you have connected GitHub to Snyk, you can use:
 Reports are available with Enterprise plans. See the [plans and pricing](https://snyk.io/plans/) page for details.
 {% endhint %}
 
-Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them right away by opening a fix pull request directly in your repository, with the required upgrades or patches.
+Snyk produces advanced [security reports](../../manage-risk/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them right away by opening a fix pull request directly in your repository, with the required upgrades or patches.
 
 This example shows a Project-level security report.
 
@@ -110,7 +110,7 @@ All the commits in Snyk's pull requests are done by `snyk-bot@snyk.io` (a verifi
 
 ### **Pull request status checks**
 
-The Snyk [PR Checks](../../scan-application-code/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
+The Snyk [PR Checks](../../scan-applications/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
 
 This example shows how Snyk PR checks appear on the GitHub pull request page.
 

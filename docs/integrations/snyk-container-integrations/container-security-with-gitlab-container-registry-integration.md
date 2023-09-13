@@ -24,7 +24,7 @@ This page explains how to set up GitLab Container Registry integration in Snyk a
 
 <figure><img src="../../.gitbook/assets/mceclip1-6-.png" alt="GitLab Container Registry Account credentials"><figcaption><p>GitLab Container Registry Account credentials</p></figcaption></figure>
 
-If you are using a self-hosted GitLab Container Registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-containers/integrate-self-hosted-container-registries.md).
+If you are using a self-hosted GitLab Container Registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-applications/snyk-container/integrate-self-hosted-container-registries.md).
 
 Snyk tests the connection values, and the page reloads, now displaying GitLab Container Registry integration information. The **Add your GitLab container registry images to Snyk** button becomes available.&#x20;
 
@@ -58,7 +58,7 @@ The steps follow for adding images from GitLab Container Registry to Snyk.
 7. When the import ends:
    * You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    * An **import log** becomes available; you can reach it at the top of the Projects list.
-   * To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see[ Adding your Dockerfile and testing your base image.](../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md)
+   * To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see[ Adding your Dockerfile and testing your base image.](../../scan-applications/snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md)
 
 GitLab Container Registry imports are designated with a unique icon. You can filter the integration in the **Projects** view to see GitLab Container Registry Projects only.
 

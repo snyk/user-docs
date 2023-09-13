@@ -57,7 +57,7 @@ The following capabilities are available for all Snyk users.
 * Snyk [IDE Plugins](../../../integrations/ide-tools/) for VS Code, IntelliJ, and others: Test your open source packages and first-party code as you develop. Test infrastructure as code (IaC) Kubernetes deployment files you create.
 * [Snyk CLI](../../../snyk-cli/): A terminal program that allows you to test locally on your machine. Useful in testing containers and more complex IaC files that are templated with variables, such as Terraform plan files, as well as scanning open source and your code.
 
-Snyk allows you to [run PR Checks](../../../scan-application-code/run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis and show results.
+Snyk allows you to [run PR Checks](../../run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis and show results.
 
 These functions can be used for:
 

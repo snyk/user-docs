@@ -7,7 +7,7 @@
 You have seen how to view your Snyk Projects, understand Snyk scan results, fix vulnerabilities, and integrate fix work into your development workflow.
 {% endhint %}
 
-This section describes how to monitor fix work, using [Snyk Reports](../../manage-issues/reporting/legacy-reports/).
+This section describes how to monitor fix work, using [Snyk Reports](../../manage-risk/reporting/legacy-reports/).
 
 ### View reports
 
@@ -88,7 +88,7 @@ For example, if your Organization represents your development team, and you want
 Remember, a Snyk Project represents a single scan item, such as a manifest file. So your application may contain hundreds of Snyk Projects to scan.
 {% endhint %}
 
-For Open Source vulnerabilities, we also have tagging, which lets you add your own tags, including custom values for metadata. See [Project tags](../../snyk-admin/snyk-projects/project-tags.md) and [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md).
+For Open Source vulnerabilities, we also have tagging, which lets you add your own tags, including custom values for metadata. See [Project tags](../../manage-risk/snyk-projects/project-tags.md) and [Project attributes](../../manage-risk/snyk-projects/project-attributes.md).
 
 #### Dashboard results and report results
 
@@ -120,7 +120,7 @@ You cannot currently export charts and data in the reports summary page.
 
 #### More information
 
-See [Reports](../../manage-issues/reporting/legacy-reports/) for more details.
+See [Reports](../../manage-risk/reporting/legacy-reports/) for more details.
 
 ### What's next?
 

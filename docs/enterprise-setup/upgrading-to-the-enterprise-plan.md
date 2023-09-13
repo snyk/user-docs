@@ -16,8 +16,8 @@ Snyk Enterprise features include:
 * [Service accounts](service-accounts.md)
 * [Snyk API](../snyk-api/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/snyk-github-enterprise-integration.md)
-* [Reports](../manage-issues/reporting/legacy-reports/)
-* [Security policy management](../manage-issues/policies/security-policies/)
+* [Reports](../manage-risk/reporting/legacy-reports/)
+* [Security policy management](../manage-risk/policies/security-policies/)
 * [Snyk Broker](snyk-broker/)
 
 ## Checklist for upgrading to the Snyk Enterprise plan
@@ -146,7 +146,7 @@ See the [SSO, authentication, and user provisions](https://training.snyk.io/cour
 
 Security policies allow you to customize the prioritization of speciFor more details, see issues from the default and create rules. This is particularly helpful for changing the severities of issues that are not relevant to a specific Project or environment.
 
-For more information, see [Security policies](../manage-issues/policies/security-policies/).
+For more information, see [Security policies](../manage-risk/policies/security-policies/).
 
 ## Use Snyk Reports
 

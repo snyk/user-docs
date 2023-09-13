@@ -3,7 +3,7 @@
 Snyk integrates with [Google Artifact Registry (GAR)](https://cloud.google.com/artifact-registry) so you can monitor your containers for vulnerabilities and fix them as you work. Snyk tests the container images you have imported on a regular cadence.
 
 {% hint style="info" %}
-For more details about how Snyk scans containers, see [How Snyk Container works](../../scan-containers/how-snyk-container-works/).
+For more details about how Snyk scans containers, see [How Snyk Container works](../../scan-applications/snyk-container/how-snyk-container-works/).
 
 For additional information, see [What is container security?](https://snyk.io/learn/container-security/) on Snyk Learn.
 {% endhint %}
