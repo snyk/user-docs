@@ -31,7 +31,7 @@ If you want to add a new IaC+ Project from a Git repository that you have alread
 
 You will start by importing [Projects](../../snyk-admin/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
 
-1. Log in to Snyki, and on your dashboard, select **Projects** from the navigation.
+1. Log in to Snyk and on your dashboard, select **Projects** from the navigation.
 2. On the Projects page, from the **Add projects** dropdown, select the SCM from which to add the Projects; for example, select GitHub.
 3. From the list of **Personal and Organization repositories**, select the Git repositories you want to use.
 4. Click **Add selected repositories** to add the selected repositories to Snyk.\
