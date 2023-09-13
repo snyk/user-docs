@@ -3,10 +3,10 @@
 {% hint style="info" %}
 **Feature availability**
 
-The environment variable to enable Git clone capabilities is currently in closed beta. However, it is the preferred way to run Snyk Code analysis through the Broker and is fully capable. Contact your Snyk account management team to find out more.&#x20;
+The environment variable to enable Git clone capabilities is in Closed Beta. However, it is the preferred way to run Snyk Code analysis through the Broker and is fully capable. Contact your Snyk account management team to find out more.&#x20;
 {% endhint %}
 
-Brokered Snyk Code enables the Broker to accept code files and broker the scans between the SCM and Snyk.
+Brokered Snyk Code enables the Broker to accept code files, and the Broker then scans between the SCM system and Snyk.
 
 By default, the Git clone capabilities required by Snyk Code are disabled.
 
@@ -27,9 +27,9 @@ docker run --restart=always \
        snyk/broker:github-com
 ```
 
-This adds the necessary `accept` rules for your choice of Git server.&#x20;
+This adds the necessary `accept` rules for your Git server.&#x20;
 
-After this is done, you can follow the Broker instructions for your SCM of choice. They can be found in [Install and configure Snyk Broker](../)
+After this is done, you can follow the Broker instructions for your SCM system. For details, see [Install and configure Snyk Broker](../)
 
 ## Custom accept configuration
 
