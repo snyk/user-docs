@@ -106,7 +106,7 @@ Use the `--help` option in the CLI for details of Snyk CLI commands.
 
 Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. We recommend you integrate via CLI or Registry earlier in the pipeline and use this as an additional signal/insight into what is in production.
 
-See [Snyk CLI for container security](../../snyk-container/snyk-cli-for-container-security/) for more details.
+See [Snyk CLI for container security](../../../scan-containers/snyk-cli-for-container-security/) for more details.
 
 #### Infrastructure as code
 
@@ -118,7 +118,7 @@ See [Snyk CLI for container security](../../snyk-container/snyk-cli-for-containe
 
 ### Options and plugins
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 * For advanced filtering options, see[ snyk-filter](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
 

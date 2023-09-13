@@ -32,7 +32,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Single Sign-On (SSO)**](../enterprise-setup/using-single-sign-on-sso-for-authentication/)**:** Not available.
 * [**Service Accounts**](../enterprise-setup/service-accounts.md)**:** Not available.
 * [**Group / Multiple Orgs**](../snyk-admin/manage-groups-and-organizations/)**:** Limited to one Group and one Org
-* [**Custom Project Tags**](../manage-risk/snyk-projects/project-tags.md)**:** Not available.
+* [**Custom Project Tags**](../snyk-admin/snyk-projects/project-tags.md)**:** Not available.
 * [**Custom User Roles**](../snyk-admin/manage-users-and-permissions/member-roles.md): Not available.
 * [**Audit Logging**](../snyk-admin/manage-users-and-permissions/audit-logs.md): Not available.
 * [**Local Code Engine**](broken-reference): Not available.

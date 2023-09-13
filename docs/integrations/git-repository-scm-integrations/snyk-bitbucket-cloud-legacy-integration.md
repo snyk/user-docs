@@ -22,7 +22,7 @@ Admin permissions are required; however, Snyk's access is ultimately limited by 
 1. To give Snyk access to your Bitbucket account, set up a dedicated service account in Bitbucket with admin permissions. See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about adding users to a workspace.\
    The newly created user must have **Admin** permissions to all the repositories you need to monitor with Snyk.
 2. In Snyk, go to the **Integrations** page, open the **Bitbucket Cloud** card, and configure the **Account credentials**.
-3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../.gitbook/assets/image (365) (1) (1) (1) (1) (1) (1).png" alt="Create an app password" data-size="line"> (**Create an App password**) to jump to your Bitbucket Cloud account.
+3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../.gitbook/assets/image (365) (1) (1) (1) (1) (1) (1) (2).png" alt="Create an app password" data-size="line"> (**Create an App password**) to jump to your Bitbucket Cloud account.
 4.  Follow the Bitbucket procedure to set up an account with the following permissions:
 
     * **Account: Email & Read**
@@ -50,7 +50,7 @@ After you add the selected repositories, Snyk scans them for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/444 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12).png" alt="The Imported projects on your Projects page"><figcaption><p>The Imported projects on your <strong>Projects</strong> page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/444 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12) (2).png" alt="The Imported projects on your Projects page"><figcaption><p>The Imported projects on your <strong>Projects</strong> page</p></figcaption></figure>
 
 ## Bitbucket integration features
 
@@ -70,7 +70,7 @@ The example that follows shows a Project-level security report.
 
 ### Project monitoring and automatic fix Pull Requests
 
-Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../scan-applications/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) with fixes for your repositories.
+Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) with fixes for your repositories.
 
 The example that follows shows a fix Pull Request opened by Snyk.
 
@@ -86,7 +86,7 @@ To review and adjust the automatic fix pull request settings:
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
-For more information, see [Snyk automated pull requests](../../scan-applications/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md).
+For more information, see [Snyk automated pull requests](../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md).
 {% endhint %}
 
 ### Pull request tests

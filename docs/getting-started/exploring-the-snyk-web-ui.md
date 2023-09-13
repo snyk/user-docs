@@ -44,7 +44,7 @@ The **Pending tasks** section shows the next chores to be handled for the Projec
 
 Currently, Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud only, and only for the top-most vulnerable projects. If you use another SCM, **Pending tasks** shows only PRs that can be raised, and not PRs that have already been raised.
 
-<figure><img src="../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Pending tasks and Vulnerable Projects listed on the Dashboard"><figcaption><p>Pending tasks and Vulnerable Projects listed on the Dashboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Pending tasks and Vulnerable Projects listed on the Dashboard"><figcaption><p>Pending tasks and Vulnerable Projects listed on the Dashboard</p></figcaption></figure>
 
 #### Add project
 
@@ -55,11 +55,11 @@ Use the links for Projects on the dashboard to explore and manage the metadata, 
 * For Projects with the **Fix vulnerabilities** link, use the link to view Project details with an option to **Open a Fix PR.** Use this option to open a fix PR to implement the upgrades and patches in GitHub that address the issues.
 * For Projects with a **View PR** link, use the link to open and view the Snyk-generated PR fixes in GitHub.
 
-<figure><img src="../.gitbook/assets/demo-project-details-options (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).gif" alt="Demo, add project and Project details tabs"><figcaption><p>Demo, add project and Project details tabs</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/demo-project-details-options (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (9).gif" alt="Demo, add project and Project details tabs"><figcaption><p>Demo, add project and Project details tabs</p></figcaption></figure>
 
 ### **View reports**
 
-You can view [reports](../manage-risk/reporting/legacy-reports/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues.
+You can view [reports](../manage-issues/reporting/legacy-reports/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues.
 
 {% hint style="info" %}
 **Feature availability**\
@@ -90,7 +90,7 @@ Select **Integrations** from the navigation on the dashboard to open the [Integr
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Learn about the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-<figure><img src="../.gitbook/assets/image (123) (1) (2).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (123) (1) (2) (1).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
 
 ### Manage Organization or Group members
 

@@ -13,11 +13,11 @@ Click on a Project entry to view detailed information for that Project:
 The following information is available:
 
 * **Header**: shows Project[ summary information](view-project-information.md#project-summary-information).
-* **Issue cards**: show summaries of issues found. See [Issue card information](../../manage-risk/snyk-projects/issue-card-information.md).
+* **Issue cards**: show summaries of issues found. See [Issue card information](issue-card-information.md).
 * **Views** (links at top right):
-  * **Overview**: shows [Project issues, fixes, and dependencies](../../manage-risk/snyk-projects/view-project-issues-fixes-and-dependencies.md).
-  * **History**: shows historical snapshots of recent tests. See [View Project history](../../manage-risk/snyk-projects/view-project-history.md).
-  * **Settings**: shows [Project settings](../../manage-risk/snyk-projects/view-and-edit-project-settings.md).
+  * **Overview**: shows [Project issues, fixes, and dependencies](view-project-issues-fixes-and-dependencies.md).
+  * **History**: shows historical snapshots of recent tests. See [View Project history](view-project-history.md).
+  * **Settings**: shows [Project settings](view-and-edit-project-settings.md).
 
 ## Project summary information
 
@@ -34,4 +34,4 @@ The summary information shows:
 * Project import information:
   * **Imported by**: The user who imported the project.
   * **Project owner**: Click **Add a project owner** to add an owner for this Project from a list of everyone who has access to the Project, that is, everyone who is a member of the Organization. This information can also be viewed through the [List all Projects](https://apidocs.snyk.io/#get-/orgs/-org\_id-/projects) endpoint in the Snyk API.
-* Predefined [Project attributes](../../manage-risk/snyk-projects/project-attributes.md) and any additional [Project tag](../../manage-risk/snyk-projects/project-tags.md) metadata.
+* Predefined [Project attributes](project-attributes.md) and any additional [Project tag](project-tags.md) metadata.

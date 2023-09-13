@@ -4,13 +4,13 @@ This example shows setting up an Okta SAML application and connecting this to Sn
 
 1.  From the drop-down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
-    <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (1).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
     <figure><img src="../../../.gitbook/assets/2 (1) (1) (1) (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
 3.  Navigate to [Okta](https://www.okta.com/se/login/), open the application menu, and click on **Create App Integration.**
 
-    <figure><img src="../../../.gitbook/assets/1 (5).png" alt="Okta Applications main page"><figcaption><p>Okta Applications main page</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/1 (5) (1).png" alt="Okta Applications main page"><figcaption><p>Okta Applications main page</p></figcaption></figure>
 4.  Choose **SAML 2.0** and name your application appropriately; click **Next**.
 
     <figure><img src="../../../.gitbook/assets/2 (3).png" alt="Okta SAML application creation"><figcaption><p>Okta SAML application creation</p></figcaption></figure>
@@ -32,7 +32,7 @@ This example shows setting up an Okta SAML application and connecting this to Sn
     <figure><img src="../../../.gitbook/assets/7 (1) (2).png" alt="Assign the SSO application"><figcaption><p>Assign the SSO application</p></figcaption></figure>
 9.  Go back to the Snyk portal, scroll to step 2, and enter the details from step 7, including the domain(s) you wish to use over the SSO connection, and click **Create Auth0 connection.**
 
-    <figure><img src="../../../.gitbook/assets/8 (3) (1).png" alt="Snyk SSO step 2"><figcaption><p>Snyk SSO step 2</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/8 (3).png" alt="Snyk SSO step 2"><figcaption><p>Snyk SSO step 2</p></figcaption></figure>
 10. Scroll to step 3 and determine how new users should be treated when signing in. Choose the option you would like to use: **Group member, Org collaborator** or **Org admin**. Finally, enter the **profile attributes** as you configured them in Okta, click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).
 
     <figure><img src="../../../.gitbook/assets/9 (1) (1) (1) (1) (1).png" alt="Profile attributes"><figcaption><p>Profile attributes</p></figcaption></figure>

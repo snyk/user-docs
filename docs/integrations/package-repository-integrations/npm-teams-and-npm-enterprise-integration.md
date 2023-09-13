@@ -31,7 +31,7 @@ This guide is relevant for Snyk Web UI integrations only. The Snyk CLI already s
 4. When you have added all the registries and scopes you want, click **Update settings**.
 5. to test the integration, open a Pull/Merge Request on a Project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated.
 
-<figure><img src="../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Test of npm integration"><figcaption><p>Test of npm integration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Test of npm integration"><figcaption><p>Test of npm integration</p></figcaption></figure>
 
 ## npm Teams and npm Enterprise registry settings
 
@@ -42,4 +42,4 @@ You can configure token-based authentication for npm Teams and npm Enterprise in
 3. Enter **Public URL** and **Token** values.
 4. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="npm credentials screen"><figcaption><p>npm credentials screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="npm credentials screen"><figcaption><p>npm credentials screen</p></figcaption></figure>

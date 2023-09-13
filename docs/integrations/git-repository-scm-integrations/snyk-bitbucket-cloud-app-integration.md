@@ -41,7 +41,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
     * Read and modify your repositories and their pull requests
     * Read and modify your repositories' webhooks
 
-    <figure><img src="../../.gitbook/assets/image (108) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Allow access for Snyk to Bitbucket Cloud" width="563"><figcaption><p>Allow access for Snyk to Bitbucket Cloud</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (108) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (4).png" alt="Allow access for Snyk to Bitbucket Cloud" width="563"><figcaption><p>Allow access for Snyk to Bitbucket Cloud</p></figcaption></figure>
 3.  Grant access to your Snyk Organization when you're prompted.
 
     <figure><img src="../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt="Allow Bitbucket Cloud access to your Snyk Organization" width="365"><figcaption><p>Allow Bitbucket Cloud access to your Snyk Organization<br></p></figcaption></figure>
@@ -90,13 +90,13 @@ After the integration is in place, you can use capabilities such as:
 
 ### Project-level security reports
 
-Snyk produces advanced [security reports](../../manage-risk/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
+Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
 The example that follows shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
-Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../scan-applications/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) with fixes for your repositories.
+Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) with fixes for your repositories.
 
 The example that follows shows a fix pull request opened by Snyk.
 
@@ -116,7 +116,7 @@ To review and adjust the automatic fix pull request settings:
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
-For more information, see [Automated pull request creation for new fixes](../../scan-applications/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md).
+For more information, see [Automated pull request creation for new fixes](../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md).
 {% endhint %}
 
 ### Pull request tests
@@ -139,7 +139,7 @@ When you install the Snyk Bitbucket Cloud App integration in your Bitbucket work
 <figure><img src="../../.gitbook/assets/bbcloud-app_snyk-security_6oct2022.png" alt="Snyk Security tab in Bitbucket Cloud"><figcaption><p>Snyk Security tab in Bitbucket Cloud</p></figcaption></figure>
 
 {% hint style="warning" %}
-The first-party interface currently supports only the [Snyk Open Source](../../scan-applications/snyk-open-source/) and [Snyk Container](../../scan-applications/snyk-container/) products. Issues from other Snyk products do not show up on this page.
+The first-party interface currently supports only the [Snyk Open Source](../../scan-application-code/snyk-open-source/) and [Snyk Container](../../scan-applications/snyk-container/) products. Issues from other Snyk products do not show up on this page.
 {% endhint %}
 
 You can **associate a first-party interface with a different Snyk account or Organization**.

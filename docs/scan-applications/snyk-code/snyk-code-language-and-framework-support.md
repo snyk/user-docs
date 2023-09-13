@@ -132,6 +132,8 @@ For information about Kotlin frameworks that support code analysis, see the [cod
 
 ### Scala frameworks
 
+:link: [Scala frameworks supporting code analysis](../supported-languages-and-frameworks/scala.md)
+
 {% hint style="info" %}
 These are some of the explicitly supported frameworks for Scala; those are in addition to the general support for many frameworks.
 {% endhint %}

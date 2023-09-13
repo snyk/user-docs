@@ -63,7 +63,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
   After a Project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (223) (2).png" alt="Check next to name of repo" data-size="line">
+To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (223) (2) (2).png" alt="Check next to name of repo" data-size="line">
 {% endhint %}
 
 See [Import a Project](../../../getting-started/quickstart/import-a-project.md) for more details.
@@ -88,11 +88,11 @@ Click the **Details** link to display the status of the Snyk check. The status o
   * Snyk could not read the manifest file
   * Snyk could not find the manifest file
 
-<figure><img src="../../../.gitbook/assets/security-check.png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/security-check (1).png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
 
 ### **Manage PR Check settings**
 
-An administrator can manage Snyk [PR Checks](../../../scan-applications/run-pr-checks/) settings for each SCM integration at the Organization level and then apply these settings, either to all the Projects for that integration or to selected specific Projects. You can configure whether this feature is on (enabled by default) and set fail conditions to define when Snyk should fail your PR checks.
+An administrator can manage Snyk [PR Checks](../../../scan-application-code/run-pr-checks/) settings for each SCM integration at the Organization level and then apply these settings, either to all the Projects for that integration or to selected specific Projects. You can configure whether this feature is on (enabled by default) and set fail conditions to define when Snyk should fail your PR checks.
 
 See [Configure PR Checks at the Integration level](../../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level) and [Configure PR Checks at the Project level](../../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-project-level) for details of this process.&#x20;
 
@@ -119,7 +119,7 @@ After you have embedded Snyk into your software development life cycle (SDLC), a
 * **High priority Projects (PCI/GDPR compliance)**: fail the PR for any issue.
 
 {% hint style="info" %}
-To align vulnerability severity with your internal policy, use security policies to change the severity of issues and attach them to relevant Project attributes. See [Security policies](../../../manage-risk/policies/security-policies/) for more details.
+To align vulnerability severity with your internal policy, use security policies to change the severity of issues and attach them to relevant Project attributes. See [Security policies](../../../manage-issues/policies/security-policies/) for more details.
 {% endhint %}
 
 ## Stage 5: Automatic Fix PRs
@@ -144,19 +144,19 @@ Ask your developers to consider the merge advice label that appears on the auto 
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (17).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (17) (20).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
 
 </div>
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (13).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (13) (18).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
 
 </div>
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (29).png" alt="Merge advice label - not enough data yet" width="312"><figcaption><p>Merge advice label - not enough data yet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (29) (15).png" alt="Merge advice label - not enough data yet" width="312"><figcaption><p>Merge advice label - not enough data yet</p></figcaption></figure>
 
 </div>
 
@@ -196,7 +196,7 @@ To set PR Settings on the Project level and override the PR settings configured 
 1. Open the Organization for which you would like to enable automatic upgrade PRs and go to the **Projects** tab.
 2.  Select and expand the relevant Project, select the relevant Target, and using the cog icon, open the **Settings**:
 
-    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (9).png" alt="Cog icon for Project settings" data-size="original">
+    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (2).png" alt="Cog icon for Project settings" data-size="original">
 3. In the Settings area, in the left panel menu, click the Integration settings to apply unique settings for that specific Project.
 4. In settings that load, scroll to the **Automatic dependency upgrade pull requests** and click **Disabled**.
 5. In the options that appear:

@@ -4,7 +4,7 @@ You can use Group-level options to view reports across all of your Group’s Org
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1).png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1) (1).png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
 
 </div>
 
@@ -26,7 +26,7 @@ Select reports to view the vulnerability status of all of a Group’s Organizati
 
 </div>
 
-See [Reports](../../manage-risk/reporting/legacy-reports/) for more details.
+See [Reports](../../manage-issues/reporting/legacy-reports/) for more details.
 
 ## Dependencies
 
@@ -38,7 +38,7 @@ Select **Dependencies** to view your Group's dependencies and license issues:
 
 </div>
 
-See [Dependencies and licenses](../../manage-risk/dependencies-and-licenses/) for more details.
+See [Dependencies and licenses](../../manage-issues/dependencies-and-licenses/) for more details.
 
 ## Policies
 
@@ -50,7 +50,7 @@ Select **Policies** to view the license and security policies for your Group:
 
 </div>
 
-See [Policies](../../manage-risk/policies/) for details.
+See [Policies](../../manage-issues/policies/) for details.
 
 ## Members
 
