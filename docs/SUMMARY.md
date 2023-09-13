@@ -525,6 +525,7 @@
     * [Ignore issues](manage-issues/priorities-for-fixing-issues/ignore-issues.md)
     * [Priority Score](manage-issues/prioritizing-issues/priority-score.md)
     * [View exploits](manage-issues/priorities-for-fixing-issues/view-exploits.md)
+    * [Malicious packages](manage-risk/priorities-for-fixing-issues/malicious-packages.md)
     * [Triage for issues](manage-issues/priorities-for-fixing-issues/triage-for-issues.md)
     * [Reachable vulnerabilities](manage-issues/prioritizing-issues/reachable-vulnerabilities.md)
     * [Vulnerabilities with Social Trends](manage-issues/priorities-for-fixing-issues/vulnerabilities-with-social-trends.md)
