@@ -1,6 +1,8 @@
-# Detect application vulnerabilities in container images
+# Detect vulnerabilities in container images
 
 {% hint style="info" %}
+**Feature availability**
+
 For Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java.
 
 For the CLI and Kubernetes, the feature is supported for Node, PHP, Python, Go binaries, and Java.
@@ -14,17 +16,17 @@ After you integrate with a container registry and import your Projects, Snyk sca
 For application Projects created from images that are imported from container registry integrations, the applications are not re-imported during recurring scans or manual rescans.
 
 Instead, the application dependencies that are found during the initial image import are scanned for new vulnerabilities.
+{% endhint %}
 
-This means that if new dependencies are introduced in an application within an image, they will not be detected by recurring scans or manual rescans.
+If new dependencies are introduced in an application within an image, they will not be detected by recurring scans or manual rescans.
 
 To detect new or updated applications within images from container registries, you must re-import the image to Snyk.
 
 For applications found in images imported from the Kubernetes integration, existing applications will be re-imported, but new apps added to the image will not be imported during recurring scans.
 
 To detect new applications within images from Kubernetes, you must re-import the image to Snyk.
-{% endhint %}
 
-## Enable application vulnerabilities scan from container registries
+## Enable container registries vulnerability scan
 
 To enable the application vulnerability scan from container registries:
 
@@ -41,7 +43,7 @@ When you are scanning an image using a container registry or Kubernetes integrat
 * For Go binaries, Snyk supports any type of Go binary built with Go module support.
 {% endhint %}
 
-## Using Snyk Container CLI to detect vulnerabilities
+## Snyk Container CLI options to detect vulnerabilities
 
 ### App vulns option
 
@@ -68,7 +70,7 @@ With this feature enabled, you can also see nested manifest files detected in th
 
 <figure><img src="../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (31).png" alt="Images listed in Projects view"><figcaption><p>Images listed in Projects view</p></figcaption></figure>
 
-## Automated scanning
+## Set up automated scanning
 
 Depending on your Project settings, Snyk scans the image regularly. Based on your configuration, Snyk updates you through email or Slack whenever new vulnerabilities are identified in both the operating system and application dependencies.
 
@@ -104,10 +106,3 @@ The supported languages work with the following integrations:
 | Python       | Yes                    | Yes     | Yes            |
 | Go Binaries  | Yes                    | Yes     | Yes            |
 | Java         | Yes                    | Yes     | Yes            |
-
-## Additional information about application vulnerabilities
-
-For more information, see:
-
-* [Application vulnerability in Snyk Container and Snyk Open Source](../../../scan-application-code/snyk-container/how-snyk-container-works/application-vulnerability-in-snyk-container-and-snyk-open-source.md)
-* [Understanding the severity levels of detected Linux vulnerabilities](../how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md)

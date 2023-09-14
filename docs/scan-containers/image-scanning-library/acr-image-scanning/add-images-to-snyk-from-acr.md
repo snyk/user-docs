@@ -39,5 +39,5 @@ ACR files are indicated with a unique icon ![ACR](../../../.gitbook/assets/uuid-
 ACR integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk user documentation.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-applications/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md)for more information.&#x20;
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-applications/snyk-container/use-snyk-container/detect-vulnerabilities-in-container-images.md)for more information.&#x20;
 {% endhint %}
