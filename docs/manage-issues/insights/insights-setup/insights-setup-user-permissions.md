@@ -1,6 +1,6 @@
 # Insights setup: User permissions
 
-Currently, Insights is available at the Group level, so [grant relevant users the Group viewer role](../../../snyk-admin/manage-permissions-and-roles/member-roles.md#edit-a-role). This is the minimum required permission, but Group Admins also can view Insights.
+Currently, Insights is available at the Group level, so [grant relevant users the Group viewer role](../../../snyk-admin/manage-users-and-permissions/member-roles.md#edit-a-role). This is the minimum required permission, but Group Admins also can view Insights.
 
 After users have the right permission, they will see a new **Insights** option in the left navigation at the Group level.
 

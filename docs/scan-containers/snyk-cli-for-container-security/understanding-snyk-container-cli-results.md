@@ -8,16 +8,16 @@ When Snyk Container detects vulnerabilities, they are presented in the output:
 
 Each vulnerability is shown with the following information:
 
-| **Field**              | **Description**                                                                                                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Severity**           | The importance of the specific vulnerability. See [Snyk Container severity](../how-snyk-container-works/understanding-linux-vulnerability-severity.md) for more information. |
-| **A clear heading**    | Summary of the vulnerability and the affected package                                                                                                                        |
-| **Description**        | A brief description of the type of issue or Common Vulnerabilities and Exposure (CVE) reference if a CVE exists                                                              |
-| **Info**               | A link to more details about the vulnerability, including links to upstream sources and global vulnerabilities databases                                                     |
-| **Introduced through** | The top-level package names affected by the vulnerability                                                                                                                    |
-| **From**               | How the affected packages came to be in the image                                                                                                                            |
-| **Introduced by**      | Whether the vulnerability is in the base image or which line in the Dockerfile introduced the vulnerability                                                                  |
-| **Fixed in**           | If available, the version of the package which has a fix for the vulnerability                                                                                               |
+| **Field**              | **Description**                                                                                                                                                                                                         |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Severity**           | The importance of the specific vulnerability. See [Snyk Container severity](../../scan-applications/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md) for more information. |
+| **A clear heading**    | Summary of the vulnerability and the affected package                                                                                                                                                                   |
+| **Description**        | A brief description of the type of issue or Common Vulnerabilities and Exposure (CVE) reference if a CVE exists                                                                                                         |
+| **Info**               | A link to more details about the vulnerability, including links to upstream sources and global vulnerabilities databases                                                                                                |
+| **Introduced through** | The top-level package names affected by the vulnerability                                                                                                                                                               |
+| **From**               | How the affected packages came to be in the image                                                                                                                                                                       |
+| **Introduced by**      | Whether the vulnerability is in the base image or which line in the Dockerfile introduced the vulnerability                                                                                                             |
+| **Fixed in**           | If available, the version of the package which has a fix for the vulnerability                                                                                                                                          |
 
 Vulnerabilities appear in reverse severity order to limit scrolling to see the most important issues.
 

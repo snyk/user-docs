@@ -1,6 +1,6 @@
-# Understanding the severity levels of detected Linux vulnerabilities
+# Severity levels of detected Linux vulnerabilities
 
-When determining the [severity level](../../manage-issues/prioritizing-issues/severity-levels.md) of a Linux vulnerability (Low, Medium, High, Critical), Snyk Container considers multiple factors:
+When determining the [severity level](../../../manage-issues/prioritizing-issues/severity-levels.md) of a Linux vulnerability (Low, Medium, High, Critical), Snyk Container considers multiple factors:
 
 * Snyk’s internal analysis
 * An assessment of the severity provided by the Linux distribution maintainer’s security team
@@ -16,7 +16,7 @@ Relative importance asserts a common severity for a vulnerability and shows the 
 
 For each issue, information appears on the Project page, under **Security information**.
 
-<figure><img src="../../.gitbook/assets/security_info.png" alt=""><figcaption><p>Security information for a vulnerability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/security_info.png" alt=""><figcaption><p>Security information for a vulnerability</p></figcaption></figure>
 
 Snyk supports relative Importance in Ubuntu, Debian, Red Hat Enterprise Linux (RHEL), CentOS, Amazon Linux, Oracle Linux, and SUSE Linux Enterprise Server (SLES).
 

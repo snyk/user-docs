@@ -1,6 +1,6 @@
 # How Snyk Container works
 
-## Snyk tests container images
+## Container image scans
 
 As defined by the [Open Container Initiative](https://opencontainers.org) (OCI) specifications, container images comprise a layered file system and associated metadata.&#x20;
 
@@ -48,7 +48,7 @@ Snyk also supports images using packages from these distributions, but without t
 
 For specific version support, see [supported operating system distributions](../../scan-applications/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md). For the latest updates, see [Snyk updates](https://updates.snyk.io).
 
-## Official container advisory sources
+## Official advisory resources used by Snyk Container
 
 Snyk works directly with the security teams of the supported Linux distributions to provide the most accurate and reliable information on the affected packages (including fix availability). The specific package versions listed are those distributed by the official container source and may differ from the upstream package versions.
 
@@ -59,7 +59,7 @@ Some software components from upstream providers are not installed using a packa
 * Node.js
 * OpenJDK 8 binaries
 
-## Recurring scans with Snyk Container
+## Recurring container image scans
 
 Snyk continuously discloses new vulnerabilities. Snyk can alert you to new vulnerabilities in your image as they are announced, even when your image software installed has not changed.
 

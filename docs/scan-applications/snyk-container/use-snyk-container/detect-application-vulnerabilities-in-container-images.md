@@ -110,4 +110,4 @@ The supported languages work with the following integrations:
 For more information, see:
 
 * [Application vulnerability in Snyk Container and Snyk Open Source](../../../scan-application-code/snyk-container/how-snyk-container-works/application-vulnerability-in-snyk-container-and-snyk-open-source.md)
-* [Understanding the severity levels of detected Linux vulnerabilities](../../../scan-containers/how-snyk-container-works/understanding-linux-vulnerability-severity.md)
+* [Understanding the severity levels of detected Linux vulnerabilities](../how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md)
