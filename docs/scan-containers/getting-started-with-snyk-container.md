@@ -37,4 +37,4 @@ To fix vulnerabilities:
 
 After it is pushed, Snyk automatically rescans your new image.&#x20;
 
-For more details on how to fix vulnerabilities, see [Analysis and fixes for your images from the Snyk Web UI](use-snyk-container/analysis-and-remediation-for-your-images-from-the-snyk-app.md).
+For more details on how to fix vulnerabilities, see [Analysis and fixes for your images from the Snyk Web UI](../scan-applications/snyk-container/use-snyk-container/analyze-and-fix-container-images.md).

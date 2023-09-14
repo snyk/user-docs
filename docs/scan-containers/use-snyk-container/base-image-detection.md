@@ -35,4 +35,4 @@ You can see the base image vulnerabilities in your Project among the vulnerabili
 
 You can also filter only the base image vulnerabilities using the **Base image** option under the **Image Layer** filter. For more details, see [image layer information](image-layer-information.md).
 
-For more details, see [Analysis and fixes for your images from the Snyk Web UI](analysis-and-remediation-for-your-images-from-the-snyk-app.md).
+For more details, see [Analysis and fixes for your images from the Snyk Web UI](../../scan-applications/snyk-container/use-snyk-container/analyze-and-fix-container-images.md).
