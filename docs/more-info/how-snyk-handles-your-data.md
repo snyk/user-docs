@@ -11,8 +11,8 @@ Snyk leverages the latest software development practices and technologies to pro
 Snyk’s cloud-first deployment options offer ease of use and scalability while also providing the required level of data protection with multi- and single-tenancy options supported in the US, EU, and AUS. Additional regions will be supported in the future.
 
 * **Multi-Tenant SaaS**: The simplest, most common, and most cost-effective way to use Snyk’s developer security platform
-* **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform on AWS
-* **Snyk Broker**: A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi or single tenant) and your on-premise codebase. Snyk Broker securely handles inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
+* **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform on AWS. For details, see [Snyk Deployment Options](https://snyk.io/platform/deployment-options/).
+* **Snyk Broker**: A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](../enterprise-setup/snyk-broker/) securely handles inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
 
 **Be sure to reach out to your Snyk contact for more details on how these different options can be leveraged to meet your needs.**
 
