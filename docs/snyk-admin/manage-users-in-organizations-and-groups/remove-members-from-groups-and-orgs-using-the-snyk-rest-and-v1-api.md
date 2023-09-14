@@ -1,8 +1,8 @@
-# Remove members from Groups and Orgs via API
+# Remove members from Groups and Orgs using the Snyk REST and v1 API
 
-To remove members from Groups and Organizations programmatically, you can use the Snyk API v1 and the Snyk REST API as explained in the steps that follow.
+To remove members from Groups and Organizations programmatically, you can use the Snyk API v1 and the Snyk REST API, as explained in the steps that follow.
 
-**Note:** The following API calls cannot be issued to remove Service Accounts and the API calls are for human user accounts only.
+You cannot use the following API calls to remove Service Accounts. The API calls are for use to remove human user accounts only.
 
 ## Remove Organization memberships
 
@@ -20,11 +20,11 @@ This call returns an array of all non-admin members of the Organization. Save th
 
 **API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization)
 
-For each user, call the endpoint to remove that member from the Organization using the user id you collected previously.
+For each user, call the endpoint to remove that member from the Organization using the user id you saved previously.
 
-For a successful request the response is `200 OK`.
+For a successful request, the response is `200 OK`.
 
-Your can verify the removal of membership on the Org members page.
+Look at the Organization members page to verify that the member has been removed.
 
 {% hint style="info" %}
 When a member is removed from an Organization, if the Organization is a part of a Group, the user continues to exist in the Group as a Group Member. To completely remove the user from the Group, follow the steps in the next section.
@@ -60,29 +60,29 @@ This call returns an array of all members of the Group. Save the `id` of each us
 
 **API documentation**: [https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#patch-/groups/-group\_id-/users/-id-](https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#patch-/groups/-group\_id-/users/-id-)
 
-For each user, call the endpoint to remove that member from the Group using the user id you collected previously.
+For each user, call the endpoint to remove that member from the Group using the user id you saved previously.
 
-For a successful request the response is `200 OK`.
+For a successful request, the response is `200 OK`.
 
-Your can verify the removal of membership on the Group members page.
+Look at the Group members page to verify the user has been removed.
 
 {% hint style="info" %}
-When a member is removed from a Group, the user still continues to exist in Snyk. To completely delete all data associated with the user, follow the step in the next section.
+When a member is removed from a Group, the user continues to exist in Snyk. To completely delete all data associated with the user, follow the step in the next section.
 {% endhint %}
 
-## Delete Group Members
+## Delete Group members
 
-When an SSO connection is associated with only one Group, the following call can completely delete a Group Member from the System. This delete action also complies with the GDPR (General Data Protection Regulation) requirements.
+When an SSO connection is associated with only one Group, the following call can completely delete a Group member from the system. This delete action also complies with the GDPR (General Data Protection Regulation) requirements.
 
 **Request**: DELETE `https://api.snyk.io/rest/groups/{group_id}/sso_connections/{sso_id}/users/{user_id}?version=2023-01-30~beta`
 
 **API documentation**: [https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-](https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
 
-You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** >**Settings** >**SSO** >**Step 3**. Alternatively reach out to your Account team for assistance.
+You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** >**Settings** >**SSO** >**Step 3**. If you need help, reach out to your Account team.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 10.27.19.png" alt="Self Serve SSO screen, Step 3, sso_id highlighted"><figcaption><p>Self Serve SSO screen, Step 3, sso_id highlighted</p></figcaption></figure>
 
-For a successful request the response is `200 OK`.
+For a successful request, the response is `200 OK`.
 
-Your can verify the deletion by using the following request;\
+Use the following request to verify the member has been deleted.\
 `GET https://api.snyk.io/api/v1/user/userId`

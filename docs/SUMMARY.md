@@ -722,7 +722,7 @@
     * [Manage users in Organizations](snyk-admin/manage-users-in-organizations-and-groups/manage-users-in-organizations.md)
     * [Manage users in a Group](snyk-admin/manage-users-in-organizations-and-groups/manage-users-in-a-group.md)
     * [Provision users to Orgs using the Snyk API v1](snyk-admin/manage-users-in-organizations-and-groups/provision-users-to-orgs-using-the-snyk-api-v1.md)
-    * [Remove members from Groups and Orgs using the Snyk API v1](snyk-admin/manage-users-in-organizations-and-groups/remove-members-from-groups-and-orgs-using-the-snyk-api-v1.md)
+    * [Remove members from Groups and Orgs using the Snyk REST and v1 API](snyk-admin/manage-users-in-organizations-and-groups/remove-members-from-groups-and-orgs-using-the-snyk-rest-and-v1-api.md)
     * [Use Organization access requests](snyk-admin/manage-users-in-organizations-and-groups/use-organization-access-requests.md)
     * [Configure session length for a Snyk Group](snyk-admin/manage-users-in-organizations-and-groups/configure-session-length-for-a-snyk-group.md)
     * [Retrieve audit logs of user-initiated activity by API for an Org or Group](snyk-admin/manage-users-in-organizations-and-groups/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
