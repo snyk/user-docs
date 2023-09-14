@@ -60,7 +60,7 @@ Select **Members** to view members (users) in that Group.
 Group members are not members of your Organizations (who are managed within the Organization’s settings area), but are members who can access all Organizations in that Group.
 {% endhint %}
 
-See [Manage users in your Group](../manage-users-and-permissions/manage-users-in-your-group.md) for details.
+See [Manage users in your Group](../manage-users-in-organizations-and-groups/manage-users-in-a-group.md) for details.
 
 ### Settings
 

@@ -54,7 +54,7 @@ Provision user to specified org with a role. When a user first logs into Snyk, t
 `}`
 
 {% hint style="info" %}
-Enterprise plan users can define their own customized [member role](member-roles.md) and can use `rolePublicId` for assignment.\
+Enterprise plan users can define their own customized [member role](../manage-permissions-and-roles/member-roles.md) and can use `rolePublicId` for assignment.\
 \
 You can use either `role` or `rolePublicId` but not both in the same call.
 {% endhint %}

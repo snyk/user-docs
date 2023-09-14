@@ -1,15 +1,15 @@
-# Manage users in your Organizations
+# Manage users in Organizations
 
 To add and remove members, and change their roles, select the **Members** menu option and the function you need to use:
 
-* [Add members](manage-users-in-your-organizations.md#add-members)
-* [Revoke pending invites](manage-users-in-your-organizations.md#revoke-pending-invites)
-* [Change member roles](manage-users-in-your-organizations.md#change-member-roles)
-* [Delete members](manage-users-in-your-organizations.md#delete-members)
-* [Filter and sort views](manage-users-in-your-organizations.md#filter-and-sort-views)
+* [Add members](manage-users-in-organizations.md#add-members)
+* [Revoke pending invites](manage-users-in-organizations.md#revoke-pending-invites)
+* [Change member roles](manage-users-in-organizations.md#change-member-roles)
+* [Delete members](manage-users-in-organizations.md#delete-members)
+* [Filter and sort views](manage-users-in-organizations.md#filter-and-sort-views)
 
 {% hint style="info" %}
-You must have the permissions required to perform these tasks. For details, see [Manage permissions](managing-permissions.md).
+You must have the permissions required to perform these tasks. For details, see [Manage permissions](../manage-permissions-and-roles/managing-permissions.md).
 {% endhint %}
 
 ## Add members
@@ -28,7 +28,7 @@ You can do the following on the **Add members** screen:
 * Select **Add existing members** to add existing members of your Group to the Organization. Select the members when prompted and click **Invite members.**
 * For Free plan users only:\
   Select **Invite by link** to send a link; click **Copy link** and send the link yourself.
-* Use the **New members join as** dropdown to define the default role of a member when joining, such as **Org admin**. For details, see [Manage permissions](managing-permissions.md).
+* Use the **New members join as** dropdown to define the default role of a member when joining, such as **Org admin**. For details, see [Manage permissions](../manage-permissions-and-roles/managing-permissions.md).
 
 To see a demonstration of adding members, play this two-minute video:
 

@@ -6,7 +6,7 @@ We can now see your scan results.
 
 {% hint style="info" %}
 **Reminder: where am I?**\
-In the Snyk Web UI, you see information specific for your **Organization** (such as your team), which is under a **Group** (such as your company). This allows your company to organize and collect data for the work your teams are doing. See [Managing users & permissions](../../snyk-admin/manage-users-and-permissions/).
+In the Snyk Web UI, you see information specific for your **Organization** (such as your team), which is under a **Group** (such as your company). This allows your company to organize and collect data for the work your teams are doing. See [Managing users & permissions](../../snyk-admin/manage-users-in-organizations-and-groups/).
 {% endhint %}
 
 ### View imports

@@ -2,7 +2,7 @@
 
 Snyk administration encompasses the following functions:
 
-* [Manage users and permissions](manage-users-and-permissions/)
+* [Manage users and permissions](manage-users-in-organizations-and-groups/)
 * [Manage Groups and Organizations](manage-groups-and-organizations/)
 * [Manage notifications](manage-notifications.md)
 * [Manage settings](manage-settings/)

@@ -1,4 +1,4 @@
-# Manage users in your Group
+# Manage users in a Group
 
 {% hint style="info" %}
 **Feature availability**\
@@ -9,23 +9,23 @@ Select the Group and **Members** top-level menu option to manage your group memb
 
 <figure><img src="../../.gitbook/assets/snyk-group-member.png" alt="Manage Group members"><figcaption><p>Manage Group members</p></figcaption></figure>
 
-As a Group Admin (see [Managing permissions](managing-permissions.md)), you can:
+As a Group Admin (see [Managing permissions](../manage-permissions-and-roles/managing-permissions.md)), you can:
 
-* [View group and org members](manage-users-in-your-group.md#view-group-and-org-members)
-* [View individual members](manage-users-in-your-group.md#view-individual-members)
-* [Filter and sort views](manage-users-in-your-group.md#filter-and-sort-views)
-* [Delete members](manage-users-in-your-group.md#delete-members)
-* [Promote group member to a group admin](manage-users-in-your-group.md#promote-group-member-to-a-group-admin)
+* [View group and org members](manage-users-in-a-group.md#view-group-and-org-members)
+* [View individual members](manage-users-in-a-group.md#view-individual-members)
+* [Filter and sort views](manage-users-in-a-group.md#filter-and-sort-views)
+* [Delete members](manage-users-in-a-group.md#delete-members)
+* [Promote group member to a group admin](manage-users-in-a-group.md#promote-group-member-to-a-group-admin)
 
 {% hint style="warning" %}
-You cannot add external users directly to Groups; you must first add them to an Organization, then to a Group. See [Manage users in your Organizations](manage-users-in-your-organizations.md) for details.
+You cannot add external users directly to Groups; you must first add them to an Organization, then to a Group. See [Manage users in your Organizations](manage-users-in-organizations.md) for details.
 {% endhint %}
 
 ### View group and org members
 
 In the Group members page, you can find all the members associated with your Group, their respective roles and authentication type, and the number of Organizations they are members of.
 
-There are two standard roles available under group level - **Group Member** and **Group Admin**. Group Admins have all permissions at Snyk; see [Managing permissions](managing-permissions.md). However, being a Group Member does not directly grant the user any rights. They need to be added as org members or promoted as Group Admins.
+There are two standard roles available under group level - **Group Member** and **Group Admin**. Group Admins have all permissions at Snyk; see [Managing permissions](../manage-permissions-and-roles/managing-permissions.md). However, being a Group Member does not directly grant the user any rights. They need to be added as org members or promoted as Group Admins.
 
 <figure><img src="../../.gitbook/assets/image (250).png" alt="View Group members"><figcaption><p>View Group members</p></figcaption></figure>
 
@@ -71,5 +71,5 @@ You can promote a Group Member to a Group Admin by selecting the role dropdown n
 <figure><img src="../../.gitbook/assets/Screenshot 2022-08-09 at 12.40.00.png" alt="Promote to Group Admin"><figcaption><p>Promote to Group Admin</p></figcaption></figure>
 
 {% hint style="warning" %}
-If the user is not already a part of your group, you must first add that user as a member of at least one Organization; see [Add Members](manage-users-in-your-organizations.md#add-members). The user then appears here with the role as Group Member, so you can then promote the user to Group Admin.
+If the user is not already a part of your group, you must first add that user as a member of at least one Organization; see [Add Members](manage-users-in-organizations.md#add-members). The user then appears here with the role as Group Member, so you can then promote the user to Group Admin.
 {% endhint %}

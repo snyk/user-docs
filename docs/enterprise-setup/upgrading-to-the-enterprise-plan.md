@@ -44,12 +44,12 @@ A notable difference between the Free/Team plan and the Enterprise plan is havin
 ### Set your Snyk Group settings
 
 {% hint style="warning" %}
-Only [Group Administrators](../snyk-admin/manage-users-and-permissions/managing-permissions.md) can edit Snyk Group settings.
+Only [Group Administrators](../snyk-admin/manage-permissions-and-roles/managing-permissions.md) can edit Snyk Group settings.
 {% endhint %}
 
 Confirm your Snyk Group name. It should reflect your company name. If it needs to be updated, go to **Group Settings > General**.
 
-Set [session expiration](../snyk-admin/manage-users-and-permissions/session-length.md) within the Group. This will be the default for all Snyk Organizations within the Group.
+Set [session expiration](../snyk-admin/manage-users-in-organizations-and-groups/configure-session-length-for-a-snyk-group.md) within the Group. This will be the default for all Snyk Organizations within the Group.
 
 ### Structure your account with multiple Snyk Organizations
 

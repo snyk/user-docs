@@ -14,7 +14,7 @@ At the Group level, select **Settings** to view admin settings:
 
 * [General](group-general-settings.md)
 * [SSO](../../enterprise-setup/using-single-sign-on-sso-for-authentication/)
-* [Member Roles](../manage-users-and-permissions/member-roles.md)
+* [Member Roles](../manage-permissions-and-roles/member-roles.md)
 * [Service Accounts](../../enterprise-setup/service-accounts.md)
 * [Notifications](../manage-notifications.md)
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)

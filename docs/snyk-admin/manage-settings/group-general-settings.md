@@ -20,7 +20,7 @@ The unique ID for this group, this is required if you use the [Snyk API](../../s
 
 ### Session expiration
 
-By default, users are logged out of Snyk after 24 hours of inactivity. You can change the session expiration time for your group here. See [Session length](../manage-users-and-permissions/session-length.md) for more details.
+By default, users are logged out of Snyk after 24 hours of inactivity. You can change the session expiration time for your group here. See [Session length](../manage-users-in-organizations-and-groups/configure-session-length-for-a-snyk-group.md) for more details.
 
 ### Requesting access
 
@@ -28,7 +28,7 @@ If enabled, users without access to a Snyk Organization can request access. This
 
 The value set is used as the default for any new Organizations, but does not override the **Requesting access** setting for existing [Snyk Organization general settings](organization-general-settings.md#requesting-access).&#x20;
 
-See **Settings** in the [Organization access requests](../manage-users-and-permissions/organization-access-requests.md#settings) documentation for more details_._
+See **Settings** in the [Organization access requests](../manage-users-in-organizations-and-groups/use-organization-access-requests.md#settings) documentation for more details_._
 
 ### Project test frequency
 
