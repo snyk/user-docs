@@ -1,4 +1,4 @@
-# Member Roles
+# Manage Member Roles
 
 {% hint style="info" %}
 **Feature availability**\
@@ -7,16 +7,16 @@ This feature is available for Enterprise customers. See [pricing plans](https://
 
 Snyk pre-defined roles, such as Group Admin, cannot be changed. The Member Roles feature provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce customized access by assigning a set of permissions to a role that will be granted to users.
 
-You can [manage roles](member-roles.md#manage-roles), [assign roles](member-roles.md#assign-roles) to users or to service accounts, and [use roles with SSO](member-roles.md#use-roles-in-custom-sso).
+You can [manage roles](manage-member-roles.md#manage-roles), [assign roles](manage-member-roles.md#assign-roles) to users or to service accounts, and [use roles with SSO](manage-member-roles.md#use-roles-in-custom-sso).
 
 ## Manage roles
 
 The Member Roles feature allows Group Admins to:
 
-* [Create a Role](member-roles.md#create-a-role)
-* [Edit a Role](member-roles.md#edit-a-role)
-* [Duplicate a Role](member-roles.md#duplicate-a-role)
-* [Delete a Role](member-roles.md#delete-a-role)
+* [Create a Role](manage-member-roles.md#create-a-role)
+* [Edit a Role](manage-member-roles.md#edit-a-role)
+* [Duplicate a Role](manage-member-roles.md#duplicate-a-role)
+* [Delete a Role](manage-member-roles.md#delete-a-role)
 
 You can manage custom roles, granting your users exactly the permissions they need to do their jobs across the Snyk platform. Thus you can ensure the right people have the right access to the right resources at the right time, thus maximizing transparency, and reducing organizational risk.
 
