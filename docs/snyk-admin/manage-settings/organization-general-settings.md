@@ -58,7 +58,7 @@ If enabled, users without access to this Snyk Organization can request access.
 
 </div>
 
-See **Settings** in the [Organization access requests](../manage-users-in-organizations-and-groups/use-organization-access-requests.md#settings) documentation for more details_._
+See **Settings** in the [Organization access requests](../manage-users-in-organizations-and-groups/request-access-to-an-organization.md#settings) documentation for more details_._
 
 ### Leave Organization
 
