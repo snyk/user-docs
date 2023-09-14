@@ -1,6 +1,6 @@
 # Use Snyk Container from the Web UI
 
-To use Snyk Container, see:
+To use Snyk Container from the Web UI, see:
 
 * [Detect the container base image](detect-the-container-base-image.md)
 * [Detect vulnerabilities in container images](detect-vulnerabilities-in-container-images.md)
