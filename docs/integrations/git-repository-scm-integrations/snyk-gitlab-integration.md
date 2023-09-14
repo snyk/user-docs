@@ -15,9 +15,9 @@ The Snyk GitLab integration is available for [Snyk Enterprise plan](https://snyk
 The Snyk GitLab integration allows you to:
 
 1. Check for vulnerabilities in your pull requests.&#x20;
-2. Receive email alerts when new vulnerabilities that affect your repository arise and fixes for those vulnerabilities are shown.
-3. Receive email alerts containing a new pull request if a new upgrade or patch is available for a vulnerability.
-4. From the **Report** page or the **Project** page on the Snyk Web UI, trigger a Snyk pull request for the fixes listed.
+2. From the **Report** page or the **Project** page on the Snyk Web UI, [trigger a Snyk pull request](snyk-gitlab-integration.md#fix-vulnerabilities-with-snyk-merge-requests) for the fixes listed.
+3. Receive [email alerts](snyk-gitlab-integration.md#receive-email-alerts-for-new-vulnerabilities) when new vulnerabilities that affect your repository arise and fixes for those vulnerabilities are shown.
+4. Receive [email alerts](snyk-gitlab-integration.md#receive-email-alerts-for-new-upgrades-or-patches) containing a new pull request if a new upgrade or patch is available for a vulnerability.
 
 ## GitLab access tokens
 
@@ -61,18 +61,18 @@ GitLab Group Access Tokens can only be created using a GitLab Premium or Ultimat
 
 ### Add a GitLab Group Access Token
 
-Generating a GitLab Group Access Token has a different methodology, explained [below](snyk-gitlab-integration.md#create-a-group-access-token), which requires selecting the Maintainer role for access.
+Generating a GitLab Group Access Token requires selecting the Maintainer role for access.
 
-Selecting the **api** scope with a Maintainer role allows:
+Selecting the **api** scope with a **Maintainer** role allows Snyk to authenticate user accounts and create webhooks, enabling the following:
 
-* Snyk to authenticate user accounts and create webhooks, enabling automation of fix pull requests and Snyk tests on your pull requests.
-* Continuous write access, enabling Snyk Organization users to trigger the creation of fix pull requests manually.
-* Continuous read access, enabling Snyk to monitor your Projects and enabling you and other members of the Organization to manually re-trigger tests.
+* Automation of fix pull requests and Snyk tests on your pull requests.
+* Manual creation of fix pull requests.
+* Manual creation of re-trigger tests.
 
 #### Create a GitLab Group Access Token
 
 1. Locate the GitLab Group and select **Settings** > **Access Tokens**.
-2. Enter a descriptive token name such as "SnykToken", select the **Maintainer** role, and check the **api** scope**.**
+2. Enter a descriptive token name such as `SnykToken`, select the **Maintainer** role, and check the **api** scope**.**
 
 <figure><img src="../../.gitbook/assets/gitlab_group_token.png" alt="Generate GitLab group access token"><figcaption><p>Generate a GitLab group access token</p></figcaption></figure>
 
@@ -85,11 +85,11 @@ Selecting the **api** scope with a Maintainer role allows:
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Enter your GitLab Group Access Token into the Snyk application Personal access token field.</p></figcaption></figure>
 
-## **Snyk GitLab integration features explained**
+## **Snyk GitLab integration features**
 
 ### **Fix vulnerabilities with Snyk merge requests**
 
-When viewing a Snyk test report for a Snyk Project that you own or when looking at a GitLab project that you are watching with Snyk, you see two options for fixing a vulnerability:
+When viewing a Snyk test report for a Snyk Project that you own or when looking at a GitLab Project that you are watching with Snyk, you see two options for fixing a vulnerability:
 
 * **Fix these vulnerabilities:** generate a Snyk merge request with the minimal changes needed to fix all the Snyk Project's detected vulnerabilities.&#x20;
 * **Fix this vulnerability:** generate a Snyk merge request on an individual issue that fixes the vulnerability.
@@ -145,10 +145,10 @@ You can re-connect anytime; however, re-initiating GitLab projects for monitorin
 
 ## Snyk GitLab Troubleshooting
 
-### 'Could not connect to GitLab' error message
+### Error message: Could not connect to GitLab
 
-When adding your environment URL and access token to set up the integration, the following message may appear:
+When you are adding the environment URL and access token to set up the integration, the following message may appear:
 
 <figure><img src="../../.gitbook/assets/2023-09-05_15-25-06.png" alt="Could not connect to GitLab integration error message" width="563"><figcaption><p>Could not connect to GitLab integration error message</p></figcaption></figure>
 
-This is always a permissions issue unless [Snyk Broker](https://support.snyk.io/hc/en-us/articles/360005105598-Gitlab-Broker-is-not-working) is involved. In the PAT settings in GitLab, ensure that you have selected the api scope and the Maintainer role.
+This is a permissions issue unless [Snyk Broker](https://support.snyk.io/hc/en-us/articles/360005105598-Gitlab-Broker-is-not-working) is involved. In the PAT settings in GitLab, ensure you have selected the api scope and the **Maintainer** role.
