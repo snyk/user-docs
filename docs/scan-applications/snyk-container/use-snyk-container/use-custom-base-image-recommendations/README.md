@@ -1,4 +1,4 @@
-# Custom Base Image Recommendations
+# Use Custom Base Image Recommendations
 
 {% hint style="info" %}
 **Feature availability**
@@ -30,7 +30,7 @@ Custom base image recommendation supports Automatic fix PRs. If you are not usin
 
 In order for Snyk to identify whether a Project is using a custom base image, the same custom base image must be imported and marked as such in the Project settings.
 
-## **How to enable CBIR**
+## **Enable CBIR**
 
 The following steps describe how to configure custom base images. You can also do this through the [Snyk API](https://apidocs.snyk.io/#tag--Custom-Base-Images) (the recommended method).
 
@@ -94,9 +94,16 @@ Choose the Dockerfile repository and add the path to your Dockerfile. Click **Up
 
 #### See Custom Base Image Recommendations
 
-Next, navigate to the Project page to see the recommendations for the image.
+Next, navigate to the **Project** page to see the recommendations for the image.
 
 <figure><img src="https://lh5.googleusercontent.com/G--7GkeQ6i0bwTWE1tdC_Gg5d727JdQQfclEQ1n2opt5vtRDjT2FBChFpSZBD9V1TleoLigSzhtEERg4tfVI6yIua5Q5nGeNycmR93BYCG1DsiREvhNWKtFdZ4imJZvC1ypmDKOI" alt="Custom Base Image Recommendations example"><figcaption><p>Example of Custom Base Image Recommendations</p></figcaption></figure>
+
+## Case study for Custom Base Image Recommendations
+
+You can use Custom Base Image Recommendations feature in the following scenario:
+
+1. Your company's platform team, which is responsible for creating and maintaining custom base images for the Organization, scans and marks images in Snyk as custom base images.
+2. Your company's application teams get recommendations for upgrading to a newer internal version by using pre-built custom base images and adding more layers on top of the pre-built images for the team's applications.
 
 ## Known limitations of CBIR
 
