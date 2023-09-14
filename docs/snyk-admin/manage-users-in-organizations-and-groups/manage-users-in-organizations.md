@@ -1,12 +1,12 @@
 # Manage users in Organizations
 
-To add and remove members, and change their roles, select the **Members** menu option and the function you need to use:
+In the **Organization** where you want to manage users, select the **Members** menu option. You can do the following:
 
 * [Add members](manage-users-in-organizations.md#add-members)
 * [Revoke pending invites](manage-users-in-organizations.md#revoke-pending-invites)
 * [Change member roles](manage-users-in-organizations.md#change-member-roles)
 * [Delete members](manage-users-in-organizations.md#delete-members)
-* [Filter and sort views](manage-users-in-organizations.md#filter-and-sort-views)
+* [Filter and sort views](manage-users-in-organizations.md#filter-and-sort-views-of-organization-members)
 
 {% hint style="info" %}
 You must have the permissions required to perform these tasks. For details, see [Manage permissions](../manage-permissions-and-roles/managing-permissions.md).
@@ -30,7 +30,7 @@ You can do the following on the **Add members** screen:
   Select **Invite by link** to send a link; click **Copy link** and send the link yourself.
 * Use the **New members join as** dropdown to define the default role of a member when joining, such as **Org admin**. For details, see [Manage permissions](../manage-permissions-and-roles/managing-permissions.md).
 
-To see a demonstration of adding members, play this two-minute video:
+To see a demonstration of adding members, play this video:
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/qqmkcaequj" %}
 Inviting members to an Organization
@@ -59,14 +59,14 @@ For Enterprise plan customers who create custom member roles, Snyk prevents user
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png" alt="Cannot assign higher privilege role error message"><figcaption><p><strong>Cannot assign higher privilege role error message</strong></p></figcaption></figure>
 
-## Delete members
+## Delete Organization members
 
 Follow these steps to delete a member from the Organization:
 
 1. Click the trash icon next to the user.
 2. Click **Delete member from** _**your organization’s name**_ when prompted.
 
-## Filter and sort views of members in Organizations
+## Filter and sort views of Organization members
 
 ### Filter views
 

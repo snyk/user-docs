@@ -2,26 +2,26 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Groups are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+Groups are available with the Snyk Enterprise plan. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Select the Group and **Members** top-level menu option to manage your group members:
+Select the **Group** where you want to manage users and the **Members** menu option to manage your Group members:
 
-<figure><img src="../../.gitbook/assets/snyk-group-member.png" alt="Manage Group members"><figcaption><p>Manage Group members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-group-member.png" alt="Manage Group members interface"><figcaption><p>Manage Group members interface</p></figcaption></figure>
 
-As a Group Admin (see [Managing permissions](../manage-permissions-and-roles/managing-permissions.md)), you can:
+As a Group Admin you can do the following:
 
-* [View group and org members](manage-users-in-a-group.md#view-group-and-org-members)
+* [View Group and Organization members](manage-users-in-a-group.md#view-group-and-organization-members)
 * [View individual members](manage-users-in-a-group.md#view-individual-members)
-* [Filter and sort views](manage-users-in-a-group.md#filter-and-sort-views)
-* [Delete members](manage-users-in-a-group.md#delete-members)
-* [Promote group member to a group admin](manage-users-in-a-group.md#promote-group-member-to-a-group-admin)
+* [Promote a Group member to a Group admin](manage-users-in-a-group.md#promote-a-group-member-to-a-group-admin)
+* [Delete Group members](manage-users-in-a-group.md#delete-group-members)
+* [Filter and sort views](manage-users-in-a-group.md#filter-and-sort-views-of-group-members)
 
 {% hint style="warning" %}
 You cannot add external users directly to Groups; you must first add them to an Organization, then to a Group. See [Manage users in your Organizations](manage-users-in-organizations.md) for details.
 {% endhint %}
 
-### View group and org members
+## View Group and Organization members
 
 In the Group members page, you can find all the members associated with your Group, their respective roles and authentication type, and the number of Organizations they are members of.
 
@@ -29,7 +29,7 @@ There are two standard roles available under group level - **Group Member** and 
 
 <figure><img src="../../.gitbook/assets/image (250).png" alt="View Group members"><figcaption><p>View Group members</p></figcaption></figure>
 
-### View individual members
+## View individual members
 
 Click on each member to view more details about their memberships.
 
@@ -41,30 +41,7 @@ Group Admin roles have access to all Organizations in that Group, with the same 
 
 You cannot change a Group admin's role for a specific Organization, or delete them from one or more Organizations. However, you can remove a Group admin from the Group using the **Remove from group** option
 
-### Filter and sort views
-
-#### Filter views
-
-Click the filter icon (<img src="../../.gitbook/assets/Screenshot 2022-03-11 at 08.47.59.png" alt="" data-size="line">) to expand the filter sidebar, to filter members displayed, by role or authentication method:
-
-<figure><img src="../../.gitbook/assets/Screenshot 2022-04-26 at 06.33.04.png" alt="Filter views"><figcaption><p>Filter views</p></figcaption></figure>
-
-#### Sort views
-
-You can sort by Name, Authentication method, Role, and Date joined.
-
-You can sort user views by clicking on the column heading:
-
-<figure><img src="../../.gitbook/assets/Screenshot 2022-03-11 at 09.01.07.png" alt="Sort views"><figcaption><p>Sort views</p></figcaption></figure>
-
-### Delete members
-
-To delete a member from the group:
-
-1. Click the ![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to the user.
-2. Click **Delete member from** _**your group's name**_ when prompted.
-
-### Promote Group Member to a Group Admin
+## Promote a Group Member to a Group Admin
 
 You can promote a Group Member to a Group Admin by selecting the role dropdown next to them and choosing the Group Admin role.
 
@@ -73,3 +50,30 @@ You can promote a Group Member to a Group Admin by selecting the role dropdown n
 {% hint style="warning" %}
 If the user is not already a part of your group, you must first add that user as a member of at least one Organization; see [Add Members](manage-users-in-organizations.md#add-members). The user then appears here with the role as Group Member, so you can then promote the user to Group Admin.
 {% endhint %}
+
+## Delete Group members
+
+To delete a member from the group:
+
+1. Click the trash icon next to the user.
+2. Click **Delete member** from the Group you are managing.
+
+## Filter and sort views of Group members
+
+### Filter views
+
+Click the filter icon (<img src="../../.gitbook/assets/Screenshot 2022-03-11 at 08.47.59.png" alt="" data-size="line">) to expand the filter sidebar, to filter members displayed, by role or authentication method:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-04-26 at 06.33.04.png" alt="Filter views"><figcaption><p>Filter views</p></figcaption></figure>
+
+### Sort views
+
+You can sort by Name, Authentication method, Role, and Date joined.
+
+You can sort user views by clicking on the column heading:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-03-11 at 09.01.07.png" alt="Sort views"><figcaption><p>Sort views</p></figcaption></figure>
+
+##
+
+##

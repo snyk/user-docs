@@ -1,10 +1,10 @@
-# Custom Versioning Schema for Custom Base Images
+# Custom Versioning Schema for custom base images
 
 The Custom Versioning Schema (CVS) is a way for Snyk to understand your company’s container image tag versioning scheme, enabling Snyk to give more accurate base image upgrade recommendations.
 
 ## Prerequisites for Snyk CVS
 
-CVS is part of the Snyk Container **Custom Base Images** feature. For more information, see [Custom Base Image recommendations](./).
+CVS is part of the Snyk Container **Custom Base Images** feature. For more information, see [Custom Base Image recommendations](../../use-snyk-container/use-custom-base-image-recommendations/).
 
 {% hint style="info" %}
 The Custom Versioning Schema is available only through the [Snyk REST API.](https://apidocs.snyk.io/a?#get-/custom\_base\_images)
