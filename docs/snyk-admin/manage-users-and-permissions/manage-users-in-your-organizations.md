@@ -1,6 +1,6 @@
-# Manage users in your organizations
+# Manage users in your Organizations
 
-Select the **Members** top-level menu option to manage your organization's members:
+To add and remove members, and change their roles, select the **Members** menu option and the function you need to use:
 
 * [Add members](manage-users-in-your-organizations.md#add-members)
 * [Revoke pending invites](manage-users-in-your-organizations.md#revoke-pending-invites)
@@ -9,12 +9,12 @@ Select the **Members** top-level menu option to manage your organization's membe
 * [Filter and sort views](manage-users-in-your-organizations.md#filter-and-sort-views)
 
 {% hint style="info" %}
-Relevant permissions are required to perform all these tasks; see [Managing permissions](managing-permissions.md).
+You must have the permissions required to perform these tasks. For details, see [Manage permissions](managing-permissions.md).
 {% endhint %}
 
-### Add members
+## Add members
 
-To add new users to your organization, click **Add members**:
+To add new users to your Organization, click **Add members**:
 
 <div align="left">
 
@@ -22,57 +22,55 @@ To add new users to your organization, click **Add members**:
 
 </div>
 
-From here:
+You can do the following on the **Add members** screen:
 
-* Select **Invite new members** to send an email invitation to a new user. Enter the email addresses of users to invite (separated by commas), then click **Send invite**.
-* Select **Add existing members** to add existing members of your group to this organization. Select the members when prompted, then click **Invite members.**
-* (For Free plan users only) Select **Invite by link** to send a link; click **Copy link,** then send the link yourself.
+* Select **Invite new members** to send an email invitation to a new user. Enter the email addresses of users to invite, separated by commas, and click **Send invite**.
+* Select **Add existing members** to add existing members of your Group to the Organization. Select the members when prompted and click **Invite members.**
+* For Free plan users only:\
+  Select **Invite by link** to send a link; click **Copy link** and send the link yourself.
+* Use the **New members join as** dropdown to define the default role of a member when joining, such as **Org admin**. For details, see [Manage permissions](managing-permissions.md).
 
-Use the **New members join as** drop-down to define the default joining role for the new member (such as **Org admin**). see [Managing permissions](managing-permissions.md).
-
-#### Video tutorial
-
-To see a demonstration of adding members, play this 2-minute video:
+To see a demonstration of adding members, play this two-minute video:
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/qqmkcaequj" %}
 Inviting members to an Organization
 {% endembed %}
 
-### Revoke pending invites
+## Revoke pending invites
 
-To remove pending invites:
+Follow these steps to cancel pending invites:
 
-1.  On the **Members** page, below the search bar, click **Revoke pending invites** (see image below). Note: Link appears when there is at least one pending invite.\
+1.  On the **Members** page, click the **Revoke pending invites link**, which appears when there is at least one pending invite.\
     \
 
 
-    <figure><img src="../../.gitbook/assets/Revoke.png" alt=""><figcaption></figcaption></figure>
-2. In the **Pending invites in \_your organization's name**\_ modal that appears, click the ![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to a user's name to cancel their invite.
+    <figure><img src="../../.gitbook/assets/Revoke.png" alt="Revoke pending invites"><figcaption><p>Revoke pending invites</p></figcaption></figure>
+2. In the **Pending invites in \_your organization's name**\_ modal that appears, click the trash icon next to the name of the user to cancel the invite.
 
-### Change member roles
+## Change member roles
 
-To change the role of a member, click on the member's **Role** entry, and use the drop-down to select the new role:
+To change the role of a member, click on the **Role** entry for the member and use the dropdown to select the new role:
 
-<figure><img src="../../.gitbook/assets/Change-role.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Change-role.png" alt="Selec new role"><figcaption><p>Selec new role</p></figcaption></figure>
 
 {% hint style="warning" %}
-For Enterprise plan customers who created custom member roles, Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error, while trying to update the role of a member, invite a new member or add an existing member with a role that has more privileges than the logged in user.
+For Enterprise plan customers who create custom member roles, Snyk prevents users from assigning roles to other users who have more privileges. If you try to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than you have, you will see the error **Cannot assign higher privilege role**.
 {% endhint %}
 
-![](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png" alt="Cannot assign higher privilege role error message"><figcaption><p><strong>Cannot assign higher privilege role error message</strong></p></figcaption></figure>
 
-### Delete members
+## Delete members
 
-To delete a member from the organization:
+Follow these steps to delete a member from the Organization:
 
-1. Click the ![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to the user.
+1. Click the trash icon next to the user.
 2. Click **Delete member from** _**your organization’s name**_ when prompted.
 
-### Filter and sort views
+## Filter and sort views of members in Organizations
 
-#### Filter views
+### Filter views
 
-Click the filter icon (<img src="../../.gitbook/assets/Screenshot 2022-03-11 at 08.47.59.png" alt="" data-size="line">) to expand the filter sidebar, then filter members displayed by role or authentication method:
+Click the filter icon to expand the filter sidebar and then choose to filter the members displayed by role or authentication method:
 
 <div align="left">
 
@@ -80,10 +78,10 @@ Click the filter icon (<img src="../../.gitbook/assets/Screenshot 2022-03-11 at 
 
 </div>
 
-#### Sort views
+### Sort views
 
-You can sort user views by clicking on the column heading:
+Click on the column heading to sort user views:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-03-11 at 09.01.07.png" alt="Sort user views"><figcaption><p>Sort user views</p></figcaption></figure>
 
-You can sort by Name, Authentication method, Role, and Date Joined.
+You can sort by name, authentication method, role, and date joined.
