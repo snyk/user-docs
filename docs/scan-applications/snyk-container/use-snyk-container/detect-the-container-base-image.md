@@ -1,14 +1,14 @@
-# Base image detection
+# Detect the container base image
 
 Detecting vulnerable base images allows you to identify the source of your vulnerabilities and fix them by updating the base image according to recommendations.
 
 You can detect your base image after you configure a [container integration](https://docs.snyk.io/snyk-container) (such as the CLI or a container registry integration).
 
 {% hint style="info" %}
-For a list of supported container registries, see [Snyk Container - integrations.](../snyk-container-integrations/)
+For a list of supported container registries, see [Snyk Container - integrations.](../../../scan-containers/snyk-container-integrations/)
 {% endhint %}
 
-## Identification methods
+## How Snyk Container identifies base images
 
 To identify vulnerable base images, you can use one of the following methods:
 
@@ -23,7 +23,13 @@ For either method, a Project in the Snyk UI is created.
 Snyk currently only supports a subset of official Docker images. To see the list of Snyk supported images, go to [Snyk](https://snyk.io/docker-images/).
 {% endhint %}
 
-## Base image recommendations
+## Image layer
+
+When you scan a Docker image in Snyk, you can see the instruction in the image layer that introduces the vulnerability. You don't need to perform any action at this point.
+
+<figure><img src="../../../.gitbook/assets/screenshot_2021-02-12_at_15.55.03.png" alt="Image layer information for Docker images"><figcaption><p>Image layer information for Docker images</p></figcaption></figure>
+
+## Snyk Container recommendations for upgrading base images
 
 If the base image is a Snyk-supported image, the results include recommendations for upgrades to resolve some of the discovered vulnerabilities.
 
@@ -31,8 +37,8 @@ This allows you to see vulnerability counts in minor and major upgrades and in a
 
 You can see the base image vulnerabilities in your Project among the vulnerabilities added by your instructions, sorted by their priority score.
 
-<figure><img src="../../.gitbook/assets/base-image2.png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/base-image2.png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
 
-You can also filter only the base image vulnerabilities using the **Base image** option under the **Image Layer** filter. For more details, see [image layer information](image-layer-information.md).
+You can also filter only the base image vulnerabilities using the **Base image** option under the **Image Layer** filter. For more details, see [image layer information](broken-reference).
 
-For more details, see [Analysis and fixes for your images from the Snyk Web UI](../../scan-applications/snyk-container/use-snyk-container/analyze-and-fix-container-images.md).
+For more details, see [Analysis and fixes for your images from the Snyk Web UI](analyze-and-fix-container-images.md).
