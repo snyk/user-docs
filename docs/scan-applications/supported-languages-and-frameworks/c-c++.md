@@ -6,14 +6,6 @@
 You might encounter false positives or false negatives for partially supported frameworks and package managers.
 {% endhint %}
 
-### Code analysis
-
-Snyk Code supports the following frameworks:
-
-* .NET 6.0 (LTS)
-* ASP.NET (version 6.x)
-* .NET Core
-
 ### Open source and licensing
 
 #### Open source policy
