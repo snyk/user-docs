@@ -6,7 +6,7 @@ IaC+ is in Closed Beta and requires that you allow Snyk to clone an entire Git r
 {% endhint %}
 
 {% hint style="info" %}
-This page explains using IaC+ in the Snyk Web UI. For information about using IaC+ the Snyk CLI, see [Test your Integrated IaC files with Snyk CLI](../snyk-iac+/test-your-iac-files-with-the-snyk-cli.md).
+This page explains using IaC+ in the Snyk Web UI. For information about using IaC+ the Snyk CLI, see [Test your IaC files with Snyk CLI](../snyk-iac+/test-your-iac-files-with-the-snyk-cli.md).
 {% endhint %}
 
 Use IaC+ to find, view, and fix issues in cloud configuration files for Terraform, Kubernetes (except Helm, coming soon), AWS CloudFormation, and Azure Resource Manager (ARM) in your Git repositories.
@@ -37,13 +37,13 @@ You will start by importing [Projects](../../snyk-admin/snyk-projects/) you want
 4. Click **Add selected repositories** to add the selected repositories to Snyk.\
    The import completes and the Projects page displays the Snyk Projects that have been added.
 
-## View Integrated IaC Projects
+## View IaC+ Projects
 
 On the [Projects](../../snyk-admin/snyk-projects/) page, ensure **Group by targets** is selected and navigate to the Target (Git repository) that contains the files for IaC+ to test.
 
 You will see a single **Infrastructure as Code issues** Project. IaC+ generates only one Project in each repository, unlike the original IaC, which generates one Project for each configuration file.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 3.57.30 PM.png" alt="Integrated IaC Project in your SCM Git repository"><figcaption><p>Integrated IaC Project in your SCM Git repository</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 3.57.30 PM.png" alt="IaC+ Project in your SCM repository"><figcaption><p>IaC+ Project in your SCM repository</p></figcaption></figure>
 
 ## View cloud configuration file issues in IaC+
 
