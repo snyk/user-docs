@@ -1,8 +1,14 @@
 # REST API endpoint: List issues for a package
 
-The Snyk REST API endpoint [List issues for a package](https://apidocs.snyk.io/?version=2023-03-08#get-/orgs/-org\_id-/packages/-purl-/issues) can fetch all direct vulnerabilities for a package. Direct (non-transitive) vulnerabilities for a package are requested by passing the package's `purl`, a reliable identifier and locator of software packages defined in the [purl (Package URL) specification](https://github.com/package-url/purl-spec). Snyk returns a list of vulnerabilities from the Snyk Vulnerabilities Database (Vuln DB).​
+The Snyk REST API endpoint [List issues for a package](https://apidocs.snyk.io/?version=2023-03-08#get-/orgs/-org\_id-/packages/-purl-/issues) can be used to get all direct (non-transitive) vulnerabilities for a package using its `purl`, which is a uniform way of identifying software packages across ecosystems as defined in the [package URL specification](https://github.com/package-url/purl-spec).
 
-The current release supports the following Package URL types: `maven`, `npm`, `cocoapods`, `composer`, `gem`, `golang`, `nuget`, `pypi`, `hex`, `swift`, `cargo`, `generic`, `apk`, `deb` and `rpm.` If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+When you pass a `purl` to the endpoint, Snyk will find any known vulnerabilities for that package and return them as part of the response body.
+
+The current release supports the following `purl` types: `maven`, `npm`, `cocoapods`, `composer`, `gem`, `golang`, `nuget`, `pypi`, `hex`, `swift`, `cargo`, `generic`, `apk`, `deb` and `rpm.` If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+
+{% hint style="info" %}
+For `golang`, Snyk supports `purl` for both modules and packages. Snyk supports only semantic versions and does not support pseudo-versions.&#x20;
+{% endhint %}
 
 The API is useful when you have a list of packages and want to retrieve a list of vulnerabilities for a package version.
 
@@ -29,7 +35,7 @@ An example using a valid url-encoded purl follows:
 $ http \
   "https://api.snyk.io/rest/orgs/{org_id}/packages/pkg%3Amaven%2fcom.fasterxml.woodstox%2fwoodstox-core%405.0.0/issues" \
   "Authorization: token $API_TOKEN" \
-  version==2022-04-04~experimental
+  version==2023-09-12
 ```
 
 For operating system packages, a vendor must be specified in the namespace portion and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.&#x20;
@@ -40,7 +46,7 @@ An example using a valid url-encoded operating system purl follows:
 $ http \
   "https://api.snyk.io/rest/orgs/{org_id}/packages/pkg%3Adeb%2Fdebian%2Fcurl%3Fdistro%3Dbullseye/issues" \
   "Authorization: token $API_TOKEN" \
-  version==2022-04-04~experimental
+  version==2023-09-12
 ```
 
 The Snyk REST API supports pagination. This has a default page limit of **1000**, with a default offset of **0.** Current, next, and previous pages are returned as links in the response. The following  parameters can be supplied as query parameters: `offset`, `limit`.
@@ -51,7 +57,7 @@ An example paginated request follows:
 $ http \
   "https://api.snyk.io/rest/orgs/{org_id}/packages/pkg%3Amaven%2fcom.fasterxml.woodstox%2fwoodstox-core%405.0.0/issues" \
   "Authorization: token $API_TOKEN" \
-  version==2022-04-04~experimental \
+  version==2023-09-12 \
   limit==100 \
   offset==0
 ```
@@ -90,7 +96,7 @@ The response is continuous, divided here to allow for explanations.
     "id": "SNYK-JAVA-COMFASTERXMLWOODSTOX-3091135",
     "type": "issue",
     ```
-*   General metadata about the vulnerability including title, timestamps relevant to the vulnerability such as publication and disclosure time, and description\
+*   General metadata about the vulnerability, including title, timestamps relevant to the vulnerability such as publication and disclosure time, and description\
 
 
     ```json
@@ -200,31 +206,31 @@ The following are **error states** which you may receive when using the API. If 
 
 **Invalid PURL**\
 400\
-Make sure that the purl specification you provided is a valid purl. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
+Ensure that the purl specification you provided is a valid purl. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
 
 **Unsupported Ecosystem**\
 400\
-Ensure that the package type is one of the following: npm, Maven, Cocoapods, Composer, Gem, Nuget, Pypi, Hex, Cargo, apk, deb, rpm
+Ensure that the package type is one of the following: npm, Maven, Golang, Cocoapods, Composer, Gem, Nuget, Pypi, Hex, Cargo, apk, deb, rpm.
 
 **Package requested without namespace**\
 400\
-Ensure you specify a namespace in the package URL and then try again. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
+Ensure you specify a namespace in the package URL and then try again. For more information,, see the [Package URL specification](https://github.com/package-url/purl-spec).
 
 **Purl component not supported**\
 400\
-Remove the component which is not supported and try to make the request again. The endpoint only accepts particular components. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
+Remove the component that is not supported and try to make the request again. The endpoint only accepts particular components. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
 
 **Your organization is not authorized to perform this action.**\
 403\
-To get access contact your Solution Engineer or Technical Success Manager, or the administrator for your team.
+To get access, contact your Solutions Engineer or echnical Success Manager, or the administrator for your team.
 
 **Package not found**\
 404\
-The package you entered in the purl specification can not be found in the Snyk Vulnerability Database. Check that the package name, ecosystem, and version are correct and then try again.
+The package you entered in the purl specification can not be found in the Snyk Vulnerability Database. Check that the package name, ecosystem, and version are correct, and try again.
 
 **Rate limit exceeded**\
 429\
-180 requests per minute per user are permitted on this API endpoint per. If you exceed this volume you will receive a 429 error response code.
+180 requests per minute per user are permitted on this API endpoint. If you exceed this volume, you will receive a 429 error response code.
 
 **Invalid pagination parameters**\
 400\
