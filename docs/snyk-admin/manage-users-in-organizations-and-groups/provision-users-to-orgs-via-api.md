@@ -1,29 +1,30 @@
 # Provision users to Orgs via API
 
-These API endpoints allow you to organise and grant permissions to your SSO users, before the users log into the Snyk platform.
+The [Provision user endpoints](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) in the Snyk API v1 allow you to organize and grant permissions to your single sign-on users before the users log in to the Snyk platform.
 
-The provisioned users will not need to accept invites; when they first log into Snyk, they will automatically have all permissions ready for them. This provides an alternative to add users to orgs at scale ahead of the first login.
+Provisioned users do not need to accept invites. When provisioned users first log in to Snyk, they will have all their permissions. You can use the [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) endpoint to add users to Organizations at scale before their first login.
 
-### Pre-requisites
+## Pre-requisites for provisioning users via API
 
-* The user being provisioned must not already exist in our system.
-* Inviting user must call the API with their personal token.
-* The Snyk Group to which orgs belong should have [Single Sign On (SSO) configured](../../enterprise-setup/using-single-sign-on-sso-for-authentication/).
-* Both inviting user and provisioned user must log in via SSO.
-* The API does not support service accounts to be used as the inviting user or provisioned user.
-*   The inviting user should have the permission `Provision Users` to invoke these calls. All Group and Org Admins by default have this permission.\\
+{% hint style="warning" %}
+The API does not support using service accounts as the inviting user or provisioned user.
+{% endhint %}
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2022-09-09 at 09.57.17.png" alt="Enable Provision Users permission"><figcaption><p>Enable Provision Users permission</p></figcaption></figure>
+* The user being provisioned must not already exist in the Snyk system.
+* The inviting user must call the API using a personal token.
+* The Snyk Group to which the Organizations belong should have [Single Sign On (SSO) configured](../../enterprise-setup/using-single-sign-on-sso-for-authentication/).
+* Both the inviting user and the provisioned user must log in using SSO.
+* The inviting user should have the permission `Provision Users` to invoke these calls. All Group and Org Admins by default have this permission.
 
-### Working with provision user API
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-09 at 09.57.17.png" alt="Enable Provision Users permission"><figcaption><p>Enable Provision Users permission</p></figcaption></figure>
 
-{% embed url="https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization" %}
-Click to access API Documentation
-{% endembed %}
+## How to use the Provision user API
 
-#### 1. Provision a user to the organization
+The following explains how to use the Provision user endpoints. For more information, see the [API documentation](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization).
 
-Provision user to specified org with a role. When a user first logs into Snyk, they will automatically be assigned with the permissions as defined in the role.
+### Provision a user to the Organization
+
+You provision a user to the specified Organization with a role. When a user first logs into Snyk, the user is automatically assigned the permissions as defined in the role.
 
 **`POST`** `https://api.snyk.io/api/v1/org/orgId/provision`
 
@@ -54,14 +55,14 @@ Provision user to specified org with a role. When a user first logs into Snyk, t
 `}`
 
 {% hint style="info" %}
-Enterprise plan users can define their own customized [member role](../manage-permissions-and-roles/member-roles.md) and can use `rolePublicId` for assignment.\
+Enterprise plan users can define their own customized [member roles](../manage-permissions-and-roles/member-roles.md) and can use `rolePublicId` for assignment.\
 \
 You can use either `role` or `rolePublicId` but not both in the same call.
 {% endhint %}
 
-#### 2. List pending user provisions
+### List pending user provisions
 
-The following endpoint will return pending provisioned users in their response.
+The List pending user permissions endpoint returns pending provisioned users in the response.
 
 **`GET`** `https://api.snyk.io/api/v1/org/orgId/provision`
 
@@ -87,9 +88,9 @@ The following endpoint will return pending provisioned users in their response.
 
 `]`
 
-#### 3. Delete pending user provision
+### Delete pending user provision
 
-Remove pending provision request.
+Use the Delete pending use providion endpoint to remove a pending provision request.
 
 **`DELETE`** `https://api.snyk.io/api/v1/org/orgId/provision`
 
