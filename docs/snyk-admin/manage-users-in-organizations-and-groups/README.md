@@ -4,5 +4,5 @@ Snyk has features to [manage users in Organizations](manage-users-in-organizatio
 
 You can [use Organization access requests](requests-for-access-to-an-organization.md) to add users and [configure session length for a Snyk Group](configure-session-length-for-a-snyk-group.md).
 
-When you want to analyze unexpected activity and triage the issues to address, you can [retrieve audit logs of user-initiated activity](retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md) by Organization or Group through the Snyk API v1.
+When you want to find out when a new user was added or analyze unexpected activity, you can [retrieve audit logs of user-initiated activity](retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md) by Organization or Group through the Snyk REST API.
 
