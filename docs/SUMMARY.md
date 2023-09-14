@@ -371,7 +371,7 @@
       * [Analyze and fix container images](scan-applications/snyk-container/use-snyk-container/analyze-and-fix-container-images.md)
       * [Custom Base Image Recommendations](scan-applications/snyk-container/use-snyk-container/custom-base-image-recommendations/README.md)
         * [Case study for Custom Base Image Recommendations](scan-containers/use-snyk-container/custom-base-image-recommendations/case-study-for-custom-base-image-recommendations.md)
-        * [Versioning Schema options](scan-containers/use-snyk-container/custom-base-image-recommendations/versioning-schema-options.md)
+        * [Versioning schema for custom base images](scan-applications/snyk-container/use-snyk-container/custom-base-image-recommendations/versioning-schema-for-custom-base-images.md)
         * [Custom Versioning Schema for Custom Base Images](scan-containers/use-snyk-container/custom-base-image-recommendations/custom-versioning-schema-for-custom-base-images.md)
       * [Container Project grouping in Project tab](scan-containers/use-snyk-container/container-project-grouping-in-project-tab.md)
     * [Snyk CLI for container security](scan-containers/snyk-cli-for-container-security/README.md)
