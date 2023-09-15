@@ -24,15 +24,17 @@ Use this guide to apply Snyk effectively in your technology stack.
 
 ## Package Registry Integrations (Artifactory/Nexus)
 
-Artifactory and Nexus Package Registry integrations are available to Snyk Enterprise plan users.
+Artifactory, Nexus, npm Teams and npm Enterprise Package Registry integrations are available to Snyk Enterprise plan users.
 
-Snyk Open Source integrates with Artifactory and Nexus as local gatekeepers and interacts with the registry for security testing. Snyk uses this integration for fixes and also locks the Lockfile.
+Snyk Open Source Gatekeeper plugins integrate with Artifactory and Nexus to block builds from downloading packages with vulnerability and license issues.
 
-If your Projects reference private dependencies in Artifactory or Nexus but you are not a Snyk Enterprise user, you can use the Snyk CLI in a properly configured local environment (such as your build pipeline) so these dependencies can be resolved and included in the test.
+Snyk Open Source can also integrate with Artifactory, Nexus, npm Teams and npm Enterprise to assist in security testing of your applications. Snyk uses this integration for dependency resolution, fix calculation, and re-locking lock files.
+
+If your Projects reference private dependencies in these repositories but you are not a Snyk Enterprise user, you can use the Snyk CLI in a properly configured local environment (such as your build pipeline) so these dependencies can be resolved and included in the test.
 
 For more information, see the following:
 
-* Package registry integrations: [Artifactory Registry setup](../../../integrations/package-repository-integrations/artifactory-repository-setup/) and [Nexus Repository Manager setup](../../../integrations/package-repository-integrations/nexus-repo-manager-setup/).
+* Package registry integrations: [npm Teams and npm Enterprise](../../../integrations/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md), [Artifactory Registry setup](../../../integrations/package-repository-integrations/artifactory-repository-setup/) and [Nexus Repository Manager setup](../../../integrations/package-repository-integrations/nexus-repo-manager-setup/).
 * Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../integrations/gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md) and [Nexus Repository Manager Gatekeeper plugin](../../../integrations/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
 
 ## Language and package manager considerations
