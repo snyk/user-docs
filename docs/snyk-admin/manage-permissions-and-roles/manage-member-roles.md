@@ -27,7 +27,7 @@ Click the **Create role** button. Basic details about the role appear in the top
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 15.29.53.png" alt="Basic information about the new role"><figcaption><p>Basic information about the new role</p></figcaption></figure>
 
-The bottom section lists all the permissions available at the Organization level that you can use to define the role. For more information about these permissions, see [Manage permissions](managing-permissions.md).
+The bottom section lists all the permissions available at the Organization level that you can use to define the role. For more information about these permissions, see [Permissions associated with each pre-defined role](permissions-associated-with-each-pre-defined-role.md).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 17.07.18.png" alt="Organization level permissions"><figcaption><p>Organization level permissions</p></figcaption></figure>
 
@@ -116,7 +116,7 @@ Snyk prevents users from assigning roles to others that have more privileges tha
 
 ### Assign roles to service accounts
 
-Users who have permission to create an Organization-level or Group-level service account can set up new service accounts for their Organization and assign a role. For details about permission to create service accounts, see the [service account information on the Manage permissions page](managing-permissions.md#service-account-management-permissions).
+Users who have permission to create an Organization-level or Group-level service account can set up new service accounts for their Organization and assign a role. For details about permission to create service accounts, see the [service account information on the Manage permissions page](permissions-associated-with-each-pre-defined-role.md#service-account-management-permissions).
 
 Select an Organization and navigate to **Settings** > **Service Accounts**. Provide a name, choose a role from the dropdown, and click **Create**.
 
@@ -222,6 +222,12 @@ Permissions:
 * `Add Project`
 * `Test Project`
 * `View Preview Features`
+
+## Permissions (role) required to edit Project attributes from the Snyk CLI
+
+The Organization Collaborator role lacks permission to edit Project attributes, including using the CLI [`snyk monitor`](../../snyk-cli/commands/monitor.md) command with arguments such as `--project-environment`. Attempting to use these arguments without the proper permission causes the `snyk monitor` command to fail.
+
+Users or service accounts requiring the ability to edit Project attributes must be an Organization Admin or have a custom role with the `org.project.attributes.edit` permission assigned. A user who does not have this permission must remove any arguments that edit the Project attributes to use the `snyk monitor` command.
 
 ## Things to remember in working with Member Roles
 

@@ -44,7 +44,7 @@ A notable difference between the Free/Team plan and the Enterprise plan is havin
 ### Set your Snyk Group settings
 
 {% hint style="warning" %}
-Only [Group Administrators](../snyk-admin/manage-permissions-and-roles/managing-permissions.md) can edit Snyk Group settings.
+Only [Group Administrators](../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md) can edit Snyk Group settings.
 {% endhint %}
 
 Confirm your Snyk Group name. It should reflect your company name. If it needs to be updated, go to **Group Settings > General**.

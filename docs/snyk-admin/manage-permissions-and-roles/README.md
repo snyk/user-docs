@@ -8,6 +8,6 @@ Enterprise plans have administrators, viewers, collaborators, and custom roles.\
 See [Plans and pricing](https://snyk.io/plans/) for details.
 {% endhint %}
 
-Snyk Enterprise plan customers can [manage permissions](managing-permissions.md). Permissions are granted to users according to their [role](manage-member-roles.md).
+Snyk Enterprise plan customers can [manage permissions](permissions-associated-with-each-pre-defined-role.md). Permissions are granted to users according to their [role](manage-member-roles.md).
 
 You can [manage member roles](manage-member-roles.md) in the Snyk Web UI and [update member roles using the Snyk API v1](../manage-users-and-permissions/update-member-roles-via-api.md).
