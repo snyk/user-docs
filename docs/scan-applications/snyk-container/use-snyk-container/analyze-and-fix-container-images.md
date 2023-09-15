@@ -2,9 +2,31 @@
 
 You can import container Projects into Snyk using the CLI command `snyk monitor`. Alternatively, you can import Projects directly from a supported container registry using the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md).
 
-Snyk then scans your Project, testing for vulnerabilities, and imports a snapshot of your Project. Based on your configuration, daily or weekly, Snyk regularly scans the image snapshot dependencies, which in turn refers to its tag. Based on your configuration, Snyk sends you an update by email or Slack when any new vulnerabilities are identified.
+Snyk then scans your Project for vulnerabilities and imports a snapshot of your Project. Based on your configuration, daily or weekly, Snyk regularly scans the image snapshot dependencies, which in turn refers to its tag. Based on your configuration, Snyk sends you an update by email or Slack when any new vulnerabilities are identified.
 
 If the tag for an image changes and the original tag is used for a different image, Snyk continues to scan the image associated with the original tag, meaning Snyk scans the new image on recurring tests. If you want to continue testing an image with a different tag, import the relevant tag.
+
+## Grouping of Container Projects
+
+Depending on how you import images (Snyk Container CLI, Container Registry integration, or Kubernetes integration), Projects are grouped differently in the **Projects** tab.&#x20;
+
+### Project grouping when importing images with Snyk CLI
+
+Snyk groups images and the applications found in the image. However, Snyk CLI does not use image tags for grouping, so Snyk does not do sub-grouping for the different image tags. Thus images from the same repository with different image tags are all grouped.
+
+<figure><img src="../../../.gitbook/assets/image (152).png" alt="Images with different image tags in one group"><figcaption><p>Images with different image tags grouped in one group</p></figcaption></figure>
+
+### Project grouping when importing images with Container Registry integration
+
+If you import images with container registry integration, in the **Projects** tab, Snyk performs sub-grouping per image tag for each image name.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 15.13.18.png" alt="Images with different image tags in sub-groups"><figcaption><p>Images with different image tags gropued in sub-groups</p></figcaption></figure>
+
+### Project grouping when importing images with the Kubernetes integration
+
+If you import images into Snyk with the Kubernetes integration, the top clickable item is the workload in the cluster. The grouping is based on the image in the workload without sub-grouping per image tag.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-22 at 19.37.56.png" alt="Grouping of images from Kubernetes integration"><figcaption><p>Grouping of images imported with the Kubernetes integration</p></figcaption></figure>
 
 ## View image vulnerabilities
 
