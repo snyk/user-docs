@@ -8,6 +8,5 @@ To use Snyk Container from the Web UI, see:
 * [Use Custom Base Image recommendations](../use-snyk-container/use-custom-base-image-recommendations/)
 * [Versioning Schema for custom base images](../use-snyk-container/custom-base-image-recommendations/versioning-schema-for-custom-base-images.md)
 * [Custom Versioning Schema for custom base images](../../../scan-containers/use-snyk-container/custom-base-image-recommendations/custom-versioning-schema-for-custom-base-images.md)
-* [Container Projects grouping](../../../scan-containers/use-snyk-container/container-project-grouping-in-project-tab.md)
 
 For more information, see [How Snyk Container works](../../../scan-containers/how-snyk-container-works/).
