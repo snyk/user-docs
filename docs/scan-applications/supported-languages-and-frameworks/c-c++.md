@@ -6,6 +6,14 @@
 You might encounter false positives or false negatives for partially supported frameworks and package managers.
 {% endhint %}
 
+### Code analysis
+
+Snyk Code supports the following frameworks:
+
+* C++
+* POSIX
+* [Win32](https://win32-framework.sourceforge.net/)
+
 ### Open source and licensing
 
 #### Open source policy
