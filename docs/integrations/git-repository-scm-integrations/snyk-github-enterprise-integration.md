@@ -28,7 +28,7 @@ Follow these steps to connect Snyk with your GitHub repositories:
 2. Generate a personal access token for the GitHub service account with these permissions:
    * `repo (all)`
    * `admin:read:org`
-   * `admin:repo_hooks` (read and write)
+   * `admin:repo_hook` (read and write)
 3. If you are using fine-grained personal access tokens, the following scope is required. For details, see the [GitHub Enterprise documentation](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token).
    * Repository permissions
      * Administration: `Read-only`&#x20;
@@ -107,4 +107,4 @@ All the operations, whether triggered manually or automatically, are performed f
 | Automatic fix and upgrade pull requests                 | Used to create fix or upgrade PRs in the monitored repos.                                                                                                                                                                                                       | `repo (all)`                       |
 | Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated.                                                                                                                                                              | `repo (all)`                       |
 | Importing new Projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup).                                                                                                                                              | `admin:read:org, repo (all)`       |
-| Snyk tests on pull requests : **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests, that is, when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | `admin:repo_hooks (read & write)`  |
+| Snyk tests on pull requests : **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests, that is, when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | `admin:repo_hook (read & write)`   |
