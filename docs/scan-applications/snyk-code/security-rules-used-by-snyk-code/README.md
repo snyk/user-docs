@@ -17,7 +17,7 @@ Each rule includes the following information.
 
 **CWE** (15) External Control of System or Configuration Setting
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
@@ -99,7 +99,7 @@ Each rule includes the following information.
 
 **CWE** (23) Relative Path Traversal
 
-**Supported languages:** C++ - Beta, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** C++ - Beta, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
@@ -107,7 +107,7 @@ Each rule includes the following information.
 
 **CWE** (74) Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -115,7 +115,7 @@ Each rule includes the following information.
 
 **CWE** (78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
 
-**Supported languages:** Apex, C++ - Beta, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** Apex, C++ - Beta, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -125,7 +125,7 @@ Each rule includes the following information.
 
 **CWE** (78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -145,7 +145,7 @@ Each rule includes the following information.
 
 **CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 
-**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -235,7 +235,7 @@ Each rule includes the following information.
 
 **CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 
-**Supported languages:** C++ - Beta, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** C++ - Beta, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -265,7 +265,7 @@ Each rule includes the following information.
 
 **CWE** (90) Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')
 
-**Supported languages:** C++ - Beta, C# & ASP.NET, Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** C++ - Beta, C# & ASP.NET, Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -273,7 +273,7 @@ Each rule includes the following information.
 
 **CWE** (94) Improper Control of Generation of Code ('Code Injection')
 
-**Supported languages:** C# & ASP.NET, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** C# & ASP.NET, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala , Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -313,7 +313,7 @@ Each rule includes the following information.
 
 **CWE** (113) Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -321,7 +321,7 @@ Each rule includes the following information.
 
 **CWE** (113) Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -329,7 +329,7 @@ Each rule includes the following information.
 
 **CWE** (114) Process Control
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 ## Rule (36) Log Forging
 
@@ -377,7 +377,7 @@ Each rule includes the following information.
 
 **CWE** (134) Use of Externally-Controlled Format String
 
-**Supported languages:** C++ - Beta, Java, JavaScript, TypeScript, Kotlin - Beta, Scala - Beta
+**Supported languages:** C++ - Beta, Java, JavaScript, TypeScript, Kotlin - Beta, Scala
 
 ## Rule (43) Memory Allocation Of String Length
 
@@ -389,7 +389,7 @@ Each rule includes the following information.
 
 **CWE** (200, 312) Exposure of Sensitive Information to an Unauthorized Actor, Cleartext Storage of Sensitive Information
 
-**Supported languages:** Go, Swift - Beta
+**Supported languages:** Go, Swift
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
@@ -413,7 +413,7 @@ Each rule includes the following information.
 
 **CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
 
-**Supported languages:** C# & ASP.NET, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Ruby, Scala - Beta, Swift - Beta
+**Supported languages:** C# & ASP.NET, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Ruby, Scala, Swift
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
@@ -443,7 +443,7 @@ Each rule includes the following information.
 
 **CWE** (208) Observable Timing Discrepancy
 
-**Supported languages:** Java, JavaScript, TypeScript, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, JavaScript, TypeScript, Kotlin - Beta, Scala
 
 ## Rule (50) Generation of Error Message Containing Sensitive Information
 
@@ -457,7 +457,7 @@ Each rule includes the following information.
 
 **CWE** (209) Generation of Error Message Containing Sensitive Information
 
-**Supported languages:** Java, Kotlin - Beta, Python, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Python, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
@@ -471,7 +471,7 @@ Each rule includes the following information.
 
 **CWE** (256) Plaintext Storage of a Password
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
@@ -479,7 +479,7 @@ Each rule includes the following information.
 
 **CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
 
-**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta, XML
+**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta, XML
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
@@ -563,7 +563,7 @@ Each rule includes the following information.
 
 **CWE** (287) Improper Authentication
 
-**Supported languages:** Swift - Beta
+**Supported languages:** Swift
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
@@ -573,7 +573,7 @@ Each rule includes the following information.
 
 **CWE** (287) Improper Authentication
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
@@ -583,7 +583,7 @@ Each rule includes the following information.
 
 **CWE** (295) Improper Certificate Validation
 
-**Supported languages:** Go, Java, Kotlin - Beta, Python, Ruby, Scala - Beta, Swift - Beta
+**Supported languages:** Go, Java, Kotlin - Beta, Python, Ruby, Scala, Swift
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
@@ -591,7 +591,7 @@ Each rule includes the following information.
 
 **CWE** (297) Improper Validation of Certificate with Host Mismatch
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
@@ -599,7 +599,7 @@ Each rule includes the following information.
 
 **CWE** (310) Cryptographic Issues
 
-**Supported languages:** C++ - Beta, Java, JavaScript, TypeScript, Kotlin - Beta, Python, Scala - Beta
+**Supported languages:** C++ - Beta, Java, JavaScript, TypeScript, Kotlin - Beta, Python, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
@@ -617,7 +617,7 @@ Each rule includes the following information.
 
 **CWE** (311) Missing Encryption of Sensitive Data
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
@@ -625,7 +625,7 @@ Each rule includes the following information.
 
 **CWE** (315) Cleartext Storage of Sensitive Information in a Cookie
 
-**Supported languages:** C# & ASP.NET, Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** C# & ASP.NET, Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
@@ -649,7 +649,7 @@ Each rule includes the following information.
 
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
-**Supported languages:** Java, JavaScript, TypeScript, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, JavaScript, TypeScript, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
@@ -681,7 +681,7 @@ Each rule includes the following information.
 
 **CWE** (326) Inadequate Encryption Strength
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
@@ -689,7 +689,7 @@ Each rule includes the following information.
 
 **CWE** (326) Inadequate Encryption Strength
 
-**Supported languages:** C# & ASP.NET, Go, Java, Kotlin - Beta, PHP, Python, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** C# & ASP.NET, Go, Java, Kotlin - Beta, PHP, Python, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
@@ -697,7 +697,7 @@ Each rule includes the following information.
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
-**Supported languages:** C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
@@ -729,7 +729,7 @@ Each rule includes the following information.
 
 **CWE** (330) Use of Insufficiently Random Values
 
-**Supported languages:** C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
@@ -737,7 +737,7 @@ Each rule includes the following information.
 
 **CWE** (346, 942) Origin Validation Error, Permissive Cross-domain Policy with Untrusted Domains
 
-**Supported languages:** Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Scala - Beta
+**Supported languages:** Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
@@ -789,7 +789,7 @@ Each rule includes the following information.
 
 **CWE** (352) Cross-Site Request Forgery (CSRF)
 
-**Supported languages:** Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Scala - Beta
+**Supported languages:** Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
@@ -843,7 +843,7 @@ Each rule includes the following information.
 
 **CWE** (400, 730) Uncontrolled Resource Consumption, OWASP Top Ten 2004 Category A9 - Denial of Service
 
-**Supported languages:** Apex, C# & ASP.NET, Java, Kotlin - Beta, Scala - Beta, Visual Basic - Beta
+**Supported languages:** Apex, C# & ASP.NET, Java, Kotlin - Beta, Scala, Visual Basic - Beta
 
 ## Rule (99) Regular Expression Denial of Service (ReDoS)
 
@@ -923,7 +923,7 @@ Each rule includes the following information.
 
 **CWE** (501) Trust Boundary Violation
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
@@ -931,7 +931,7 @@ Each rule includes the following information.
 
 **CWE** (502) Deserialization of Untrusted Data
 
-**Supported languages:** C# & ASP.NET, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Visual Basic - Beta
+**Supported languages:** C# & ASP.NET, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
 
@@ -941,7 +941,7 @@ Each rule includes the following information.
 
 **CWE** (502) Deserialization of Untrusted Data
 
-**Supported languages:** Swift - Beta
+**Supported languages:** Swift
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
 
@@ -967,7 +967,7 @@ Each rule includes the following information.
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
-**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
@@ -975,7 +975,7 @@ Each rule includes the following information.
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
@@ -989,7 +989,7 @@ Each rule includes the following information.
 
 **CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
 
-**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Visual Basic - Beta
+**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
@@ -1007,7 +1007,7 @@ Each rule includes the following information.
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
-**Supported languages:** C++ - Beta, C# & ASP.NET, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** C++ - Beta, C# & ASP.NET, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
@@ -1037,7 +1037,7 @@ Each rule includes the following information.
 
 **CWE** (613) Insufficient Session Expiration
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
@@ -1045,7 +1045,7 @@ Each rule includes the following information.
 
 **CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
-**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
@@ -1069,7 +1069,7 @@ Each rule includes the following information.
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
 
-**Supported languages:** C++ - Beta, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Visual Basic - Beta
+**Supported languages:** C++ - Beta, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
@@ -1077,13 +1077,13 @@ Each rule includes the following information.
 
 **CWE** (676) Use of Potentially Dangerous Function
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 ## Rule (129) Android World Writeable/Readable File Permission Found
 
 **CWE** (732) Incorrect Permission Assignment for Critical Resource
 
-**Supported languages:** Java, Kotlin - Beta, Scala - Beta
+**Supported languages:** Java, Kotlin - Beta, Scala
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
@@ -1135,7 +1135,7 @@ Each rule includes the following information.
 
 **CWE** (822) Untrusted Pointer Dereference
 
-**Supported languages:** Swift - Beta
+**Supported languages:** Swift
 
 ## Rule (137) Unrestricted Android Broadcast
 
@@ -1165,7 +1165,7 @@ Each rule includes the following information.
 
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
-**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
@@ -1173,7 +1173,7 @@ Each rule includes the following information.
 
 **CWE** (918) Server-Side Request Forgery (SSRF)
 
-**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Scala - Beta, Swift - Beta, Visual Basic - Beta
+**Supported languages:** Apex, C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Scala, Swift, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A10:2021 - Server-Side Request Forgery (SSRF)
 
@@ -1183,7 +1183,7 @@ Each rule includes the following information.
 
 **CWE** (922) Insecure Storage of Sensitive Information
 
-**Supported languages:** Swift - Beta
+**Supported languages:** Swift
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
@@ -1215,7 +1215,7 @@ Each rule includes the following information.
 
 **CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
 
-**Supported languages:** C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala - Beta, Visual Basic - Beta
+**Supported languages:** C# & ASP.NET, Go, Java, JavaScript, TypeScript, Kotlin - Beta, PHP, Python, Ruby, Scala, Visual Basic - Beta
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
