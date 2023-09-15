@@ -27,7 +27,7 @@ Alternatively, use the [Update a member's role in the Organization API call](htt
 If the user is not already a part of your Group, you must first add that user as a member of at least one Organization; see [Add members](../manage-users-in-organizations-and-groups/manage-users-in-organizations.md#add-members). The user then appears on the **Group > Members** page with the role **Group Member**, allowing you to change the role to Group Admin or Group Viewer.
 {% endhint %}
 
-## Permissions associated with each role
+## Permissions associated with each pre-defined role
 
 The following list identifies the available permissions, what is allowed for each permission, and the roles that have each permission.
 
