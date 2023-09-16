@@ -29,7 +29,7 @@ To start using IaC+ you must have the following:
 If you want to add a new IaC+ Project from a Git repository that you have already imported, you must re-import the repository. This will not affect any of your existing Projects.
 {% endhint %}
 
-You will start by importing [Projects](../../snyk-admin/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
+You will start by importing [Projects](../../snyk-admin/introduction-to-snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
 
 1. Log in to Snyk and on your dashboard, select **Projects** from the navigation.
 2. On the Projects page, from the **Add projects** dropdown, select the SCM from which to add the Projects; for example, select GitHub.
@@ -39,7 +39,7 @@ You will start by importing [Projects](../../snyk-admin/snyk-projects/) you want
 
 ## View IaC+ Projects
 
-On the [Projects](../../snyk-admin/snyk-projects/) page, ensure **Group by targets** is selected and navigate to the Target (Git repository) that contains the files for IaC+ to test.
+On the [Projects](../../snyk-admin/introduction-to-snyk-projects/) page, ensure **Group by targets** is selected and navigate to the Target (Git repository) that contains the files for IaC+ to test.
 
 You will see a single **Infrastructure as Code issues** Project. IaC+ generates only one Project in each repository, unlike the original IaC, which generates one Project for each configuration file.
 
@@ -47,7 +47,7 @@ You will see a single **Infrastructure as Code issues** Project. IaC+ generates 
 
 ## View cloud configuration file issues in IaC+
 
-Click on the **Infrastructure as Code Issues** Project link to open a view of the IaC+ **Issues** UI, filtered to include only issues from the IaC+ [environment](../snyk-iac+/key-concepts-in-iac+.md#environments) that corresponds to your Project.
+Click on the **Infrastructure as Code Issues** Project link to open a view of the IaC+ **Issues** UI, filtered to include only issues from the IaC+ [environment](../../scan-cloud-configurations/snyk-iac+/key-concepts-in-iac+.md#environments) that corresponds to your Project.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 4.04.13 PM.png" alt=".IaC+ Issues UI, filtered to show issues from the environment for your repository"><figcaption><p>IaC+ Issues UI, filtered to show issues from the environment for your repository</p></figcaption></figure>
 

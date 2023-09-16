@@ -2,7 +2,7 @@
 
 The following pages provide information and instructions to help with using Insights.
 
-* [Filtering your issues](../../../manage-risk/insights/using-insights/filter-your-issues.md)
-* [Understanding your issues](../../../manage-risk/insights/using-insights/understand-your-issues.md)
+* [Filtering your issues](filter-your-issues.md)
+* [Understanding your issues](understand-your-issues.md)
 * [Evidence graph](evidence-graph.md)
-* [Exporting and customizing Insights data](../../../manage-risk/insights/using-insights/export-and-customize-insights-data.md)
+* [Exporting and customizing Insights data](export-and-customize-insights-data.md)

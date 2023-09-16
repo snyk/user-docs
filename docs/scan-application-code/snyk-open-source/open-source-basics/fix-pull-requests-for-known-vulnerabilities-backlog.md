@@ -18,7 +18,7 @@ The fix strategy feature for getting dependency-oriented fixes is in [beta](../.
 The following rules are applied to automatic PR creation for vulnerabilities:
 
 * If a scan is manually run (you clicked **Retest now** for the Project), the 24-hour window is marked as having been run and no automatic PR is created until the next automated scan runs.
-* One pull request is created per Project ([priority score](../../../manage-issues/prioritizing-issues/priority-score.md) of **700 and above only**).
+* One pull request is created per Project ([priority score](../../../manage-issues/priorities-for-fixing-issues/priority-score.md) of **700 and above only**).
 * Pull requests are created based on the **Test & Automated Pull Request Frequency** settings. To update the **Test & Automated Pull Request Frequency**, go to **Projects**, select your open source and licensing Project, then go to **Settings** (see screenshot below).
 
 <figure><img src="../../../.gitbook/assets/Project testing and PR Checks frequency.png" alt="Project testing and PR Checks frequency."><figcaption><p>Project testing and PR Checks frequency</p></figcaption></figure>
@@ -59,7 +59,7 @@ Enabling Automatic fix PRs can result in larger version jumps.
 
 You can configure Automatic fix PR to work only for specific Projects rather than inheriting the settings from the global integration. In this example, GitHub integration is used.
 
-1. Go to **Projects**, then expand the [target](../../../snyk-admin/snyk-projects/#target) containing your open source Project.
+1. Go to **Projects**, then expand the [target](../../../snyk-admin/introduction-to-snyk-projects/#target) containing your open source Project.
 2. Go to **Settings >** **GitHub integration.**
 3. Under the **Automatic fix pull requests** section:
    * Select **Customize for only this project**

@@ -23,7 +23,7 @@ Both methods create the same infrastructure, so pick the method you are most com
 You can now proceed to [Step 2: Create the Azure AD app registration](step-2-create-the-azure-ad-app-registration.md).
 
 {% hint style="info" %}
-You can also add a Cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments](../../../../scan-infrastructure/snyk-iac+/snyk-environments/view-add-and-remove-environments.md).
+You can also add a Cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments](../../../../scan-cloud-configurations/snyk-iac+/snyk-environments/view-add-and-remove-environments.md).
 {% endhint %}
 
 ## What's next?

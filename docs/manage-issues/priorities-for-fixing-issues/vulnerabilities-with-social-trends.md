@@ -12,5 +12,5 @@ Synk determines that a vulnerability is trending and displays the Trending banne
 * The **Trending** notification remains live until several days after the trend dissipates.
 
 {% hint style="info" %}
-See [Priority Score](../prioritizing-issues/priority-score.md) for more information on how vulnerabilities are prioritized by Snyk.
+See [Priority Score](priority-score.md) for more information on how vulnerabilities are prioritized by Snyk.
 {% endhint %}

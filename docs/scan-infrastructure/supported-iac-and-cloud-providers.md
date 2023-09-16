@@ -6,10 +6,10 @@ For environments supported with other Snyk products, see: [Snyk Open Source - su
 
 Snyk Infrastructure as Code (IaC) supports the following environments and configuration files:
 
-* [HashiCorp Terraform](snyk-infrastructure-as-code/scan-terraform-files/)
-* [AWS CloudFormation](snyk-infrastructure-as-code/scan-cloudformation-files/)
-* [Kubernetes](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/)
-* [Azure Resource Manager](snyk-infrastructure-as-code/scan-arm-configuration-files.md)
+* [HashiCorp Terraform](../scan-cloud-configurations/snyk-infrastructure-as-code/scan-terraform-files/)
+* [AWS CloudFormation](../scan-cloud-configurations/snyk-infrastructure-as-code/scan-cloudformation-files/)
+* [Kubernetes](../scan-cloud-configurations/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/)
+* [Azure Resource Manager](../scan-cloud-configurations/snyk-infrastructure-as-code/scan-arm-configuration-files.md)
 
 Snyk cloud context supports the following providers:
 

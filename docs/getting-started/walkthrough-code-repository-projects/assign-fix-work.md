@@ -64,7 +64,7 @@ You may want to create a Jira issue even if Snyk knows how to fix the change, an
 #### More information
 
 * See [Jira issues](https://training.snyk.io/learn/video/jira-issue) training for more details.
-* See [Manage issues](../../manage-risk/) docs for more general details.
+* See [Manage issues](../../manage-issues/) docs for more general details.
 
 ### What's next?
 

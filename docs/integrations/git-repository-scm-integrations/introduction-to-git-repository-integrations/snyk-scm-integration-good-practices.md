@@ -88,7 +88,7 @@ Click the **Details** link to display the status of the Snyk check. The status o
   * Snyk could not read the manifest file
   * Snyk could not find the manifest file
 
-<figure><img src="../../../.gitbook/assets/security-check (1).png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/security-check.png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
 
 ### **Manage PR Check settings**
 

@@ -96,7 +96,7 @@ A text file format used to build container images using Docker. The Dockerfile c
 
 ### Environment
 
-Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../snyk-admin/snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
+Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../snyk-admin/introduction-to-snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
 
 ### Exploit
 
@@ -110,7 +110,7 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-applications/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md).
+A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md).
 
 ### Fix PR
 
@@ -150,7 +150,7 @@ Third-party products, applications and platforms that Snyk works with, for examp
 
 ### Issue
 
-A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Manage issues](../manage-risk/).
+A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Manage issues](../manage-issues/).
 
 ## L
 
@@ -184,7 +184,7 @@ An Organization in Snyk is a way to collect and organize your Projects. Members 
 
 ### Origin
 
-The identifier for the ecosystem that a Target exists in. Snyk can scan projects from multiple integrations, including CLI, API, GitHub, Kubernetes and others. See [Snyk Projects](../snyk-admin/snyk-projects/).
+The identifier for the ecosystem that a Target exists in. Snyk can scan projects from multiple integrations, including CLI, API, GitHub, Kubernetes and others. See [Snyk Projects](../snyk-admin/introduction-to-snyk-projects/).
 
 ## P
 
@@ -218,17 +218,17 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 
 ### Priority Score
 
-Snyk scores issues (vulnerabilities and licenses), to help prioritize treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](../manage-issues/prioritizing-issues/priority-score.md).
+Snyk scores issues (vulnerabilities and licenses), to help prioritize treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](../manage-issues/priorities-for-fixing-issues/priority-score.md).
 
 ### Project
 
-An external item that Snyk scans ([Target](glossary.md#target)), with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Snyk Projects](../snyk-admin/snyk-projects/).
+An external item that Snyk scans ([Target](glossary.md#target)), with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Snyk Projects](../snyk-admin/introduction-to-snyk-projects/).
 
 ## R
 
 ### Reachability
 
-Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-issues/prioritizing-issues/reachable-vulnerabilities.md).
+Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-issues/priorities-for-fixing-issues/reachable-vulnerabilities.md).
 
 ### Registry
 
@@ -286,7 +286,7 @@ A set of criteria for evaluating open source vulnerabilities. Security policies 
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/prioritizing-issues/severity-levels.md).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/priorities-for-fixing-issues/severity-levels.md).
 
 ### Snapshot
 

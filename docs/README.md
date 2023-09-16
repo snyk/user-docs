@@ -15,8 +15,8 @@
 
 #### Manage your Snyk system
 
-| <p><a href="manage-risk/">Manage issues</a><br>Prioritize and report on Snyk scan results</p> | <p><a href="snyk-admin/">Snyk Admin</a><br>Configure and manage your Snyk system</p> | <p><a href="snyk-api/">Snyk API</a><br>Customize Snyk functions with the Snyk API</p> |
-| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| <p><a href="manage-issues/">Manage issues</a><br>Prioritize and report on Snyk scan results</p> | <p><a href="snyk-admin/">Snyk Admin</a><br>Configure and manage your Snyk system</p> | <p><a href="snyk-api/">Snyk API</a><br>Customize Snyk functions with the Snyk API</p> |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
 
 #### More learning resources <a href="#use-other-resources" id="use-other-resources"></a>
 

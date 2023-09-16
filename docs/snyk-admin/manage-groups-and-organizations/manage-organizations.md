@@ -18,7 +18,7 @@ When you are satisfied with the settings and integrations for an Organization, y
 
 1\. On the Snyk Web UI, open the Organizations drop-down list from the top menu, and click the **Create new Organization** option:
 
-<figure><img src="../../.gitbook/assets/snyk-org-switcher (1).png" alt="Create an Organization"><figcaption><p>Create an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-org-switcher.png" alt="Create an Organization"><figcaption><p>Create an Organization</p></figcaption></figure>
 
 2\. On the page to **create a new Organization**, enter a name for the new Organization. Consider using a structured naming convention to identify your Organizations.
 
