@@ -66,6 +66,10 @@ Typically research and development engineering managers do his task because they
 
 Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-integration.md#create-a-jira-issue-from-a-vulnerability) from those vulnerabilities or [linking them to existing Jira issues](snyk-security-in-jira-cloud-integration.md#link-an-existing-jira-issue-to-a-vulnerability).
 
+{% hint style="info" %}
+Only security vulnerabilities will be shown on the Jira Security tab.
+{% endhint %}
+
 ## Manage security vulnerabilities in Jira
 
 After installing and configuring the Snyk Security in Jira Cloud app, you can view vulnerabilities on the security tab on the Jira project page.
