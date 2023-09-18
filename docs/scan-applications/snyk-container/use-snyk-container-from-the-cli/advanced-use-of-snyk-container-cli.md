@@ -66,4 +66,4 @@ snyk container --help
 ## More information about Snyk Container CLI
 
 * [Snyk CLI for container security](./)
-* [Understanding Snyk Container CLI results](understanding-snyk-container-cli-results.md)
+* [Understanding Snyk Container CLI results](understand-snyk-container-cli-results.md)

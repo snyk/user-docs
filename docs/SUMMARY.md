@@ -379,7 +379,7 @@
         * [Custom Versioning Schema for custom base images](scan-containers/use-snyk-container/custom-base-image-recommendations/custom-versioning-schema-for-custom-base-images.md)
     * [Use Snyk Container from the CLI](scan-applications/snyk-container/use-snyk-container-from-the-cli/README.md)
       * [Scan and monitor images](scan-applications/snyk-container/use-snyk-container-from-the-cli/scan-and-monitor-images.md)
-      * [Understanding Snyk Container CLI results](scan-applications/snyk-container/use-snyk-container-from-the-cli/understanding-snyk-container-cli-results.md)
+      * [Understand Snyk Container CLI results](scan-applications/snyk-container/use-snyk-container-from-the-cli/understand-snyk-container-cli-results.md)
       * [Advanced use of Snyk Container CLI](scan-applications/snyk-container/use-snyk-container-from-the-cli/advanced-use-of-snyk-container-cli.md)
     * [Scan your Dockerfile](scan-containers/scan-your-dockerfile/README.md)
       * [Prerequisites for Dockerfile analysis](scan-containers/scan-your-dockerfile/prerequisites-for-dockerfile-analysis.md)
