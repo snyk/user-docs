@@ -16,15 +16,13 @@ Policies applied to Project attributes affect the CLI command `snyk monitor`, as
 
 To apply a policy to an attribute, in the attribute selector panel, check the box for the attribute to which you want to apply the policy.
 
-To remove a policy from an attribute, uncheck the box next to the attribute from which want to remove the policy.
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_1.20.42_pm.png" alt="Add attributes to policies"><figcaption><p>Add attributes to policies</p></figcaption></figure>
-
-</div>
+You can also search for tags that have already been created in Projects in your Group. You can select more than one tag for the policy.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-07-28 at 17.28.18.png" alt="Attribute selector panel"><figcaption><p>Attribute selector panel</p></figcaption></figure>
+
+To remove a policy from an attribute, uncheck the box next to the attribute from which you want to remove the policy.
+
+To remove a tag, click the **x** next to the tag.
 
 {% hint style="info" %}
 You can create and save a policy where no attributes are selected, for example, if you have not yet decided the attributes to which the policy should be applied. A policy cannot apply to Projects if all attributes are left blank.
@@ -32,15 +30,21 @@ You can create and save a policy where no attributes are selected, for example, 
 
 ## Assign Projects to policies
 
-To have a policy assigned, a Project must have all the attributes listed on the policy, that is, to which the policy is applied. The Project can also have attributes that are not listed on the policy.
+To have a policy assigned, a Project must have all the attributes listed on the policy applied to the Project. The Project can also have attributes that are not listed on the policy.
+
+If multiple tags are added to a policy, the Project needs to match with only one of the Project tags. However, if other attributes are also listed on the policy, the Project would need to have all the attributes and at least one of the listed tags.
 
 For example, if you have a policy applied to `Critical`, `External`, and `Frontend`, this policy is assigned to Projects that have the same attributes, but not to a Project with the attributes `Critical` and `External` only.
 
-An example policy follows. It is applied to an attribute in the **Business Criticality** section, `Critical`, and to attributes in the **Environment** section,  `Frontend` and `External`.
+An example policy follows. It is applied to an attribute in the **Business Criticality** section, `Critical`, and to attributes in the **Environment** section,  `Frontend` and `External`. The policy also has two Project tags. The first tag has the key `PCI`, with the value of `Compliant`. The second tag has the key `owner`, with the value of `fred`.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-07-28 at 17.44.45.png" alt="Sample policy"><figcaption><p>Sample policy</p></figcaption></figure>
+<div align="center" data-full-width="true">
 
-The following Project has the attributes `Frontend`, `External`, and `Critical`. Thus the Project will inherit the policy, that is, the policy is assigned to this Project.
+<figure><img src="../../.gitbook/assets/sample-policy.png" alt="Sample policy"><figcaption><p>Sample policy</p></figcaption></figure>
+
+</div>
+
+The following Project has the attributes `Frontend`, `External`, and `Critical`, and has at least one matching tag, `PCI:Compliant`. Thus the Project will inherit the policy, that is, the policy is assigned to this Project.
 
 <div align="left">
 
