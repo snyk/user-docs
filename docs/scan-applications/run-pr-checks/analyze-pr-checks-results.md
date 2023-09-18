@@ -2,7 +2,7 @@
 
 ## PR Checks results
 
-After you [submit a pull request to fix vulnerabilities](../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md), PR Checks detects issues with a severity level that meets or exceeds your configured threshold and provides a report. Examine the report status and result to decide whether to merge the pull request.
+After you [submit a pull request to fix vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md), PR Checks detects issues with a severity level that meets or exceeds your configured threshold and provides a report. Examine the report status and result to decide whether to merge the pull request.
 
 You can change the default severity threshold either at the [Integration level](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level), or at the [Project level](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-project-level).
 

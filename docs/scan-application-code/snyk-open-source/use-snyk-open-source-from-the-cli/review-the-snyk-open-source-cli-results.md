@@ -2,7 +2,7 @@
 
 After you run the `snyk test` command in the CLI, the Snyk Open Source test results are displayed. The report of results includes a summary of the test findings, a list of vulnerability issues detected, and descriptive information about the Snyk Project tested.
 
-<figure><img src="../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Snyk Open Source CLI test results."><figcaption><p>Snyk Open Source CLI test results</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2) (2).png" alt="Snyk Open Source CLI test results."><figcaption><p>Snyk Open Source CLI test results</p></figcaption></figure>
 
 ## Summary of test findings
 
@@ -24,7 +24,7 @@ These are issues that can be fixed by upgrading a direct dependencies version. T
 
 * Which dependency to upgrade to resolve the issue
 * The issue type
-* The [severity rating](../../../manage-issues/priorities-for-fixing-issues/severity-levels.md) for the issue
+* The [severity rating](../../../manage-issues/prioritizing-issues/severity-levels.md) for the issue
 * A link to the related issue in the [Snyk Vulnerability Database](https://security.snyk.io/)
 * The dependency through which this vulnerability is introduced and its path
 

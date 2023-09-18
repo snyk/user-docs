@@ -40,7 +40,7 @@ Using a process similar to the one in the previous example, you can define a sec
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt="Snyk security policy - specify vulnerabilities to ignore"><figcaption><p>Snyk security policy - specify vulnerabilities to ignore</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (95).png" alt="Snyk security policy - specify vulnerabilities to ignore"><figcaption><p>Snyk security policy - specify vulnerabilities to ignore</p></figcaption></figure>
 
 </div>
 
@@ -60,7 +60,7 @@ An example follows of a PR check on a JavaScript package license.
 
 This example shows a pull request to add the `fullpage.js` package to a JavaScript application. Although this change passes the security policy check, because the latest version of the package has no known vulnerability, it fails the license policy check because the GPLv3 license is included in violation of the license policy of the company.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (99).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
 
 ## Apply policies in CI/CD
 
@@ -70,4 +70,4 @@ An example follows of a workflow high-severity vulnerability
 
 This example shows a GitHub Action build workflow failing because of a high-severity vulnerability identified by Snyk testing:
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="CI/CD check fails on security policy breach"><figcaption><p>CI/CD check fails on security policy breach</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (93).png" alt="CI/CD check fails on security policy breach"><figcaption><p>CI/CD check fails on security policy breach</p></figcaption></figure>

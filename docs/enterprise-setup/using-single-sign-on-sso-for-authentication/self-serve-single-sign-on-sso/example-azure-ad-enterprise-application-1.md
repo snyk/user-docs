@@ -15,10 +15,10 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
     <figure><img src="../../../.gitbook/assets/1 (2) (1).png" alt="Create a new application"><figcaption><p>Create a new Application</p></figcaption></figure>
 4.  Name your application appropriately, select **SAML Application**, and click **Configure.**
 
-    <figure><img src="../../../.gitbook/assets/2.png" alt="Configure as SAML Application" width="563"><figcaption><p>Configure as SAML Application</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/2 (2).png" alt="Configure as SAML Application" width="563"><figcaption><p>Configure as SAML Application</p></figcaption></figure>
 5.  Enter the details you copied from Snyk, the **ACS URL** and **Entity ID,** and select **Save**.
 
-    <figure><img src="../../../.gitbook/assets/3 (1).png" alt="Add Snyk configuration details" width="563"><figcaption><p>Add Snyk configuration details</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/3.png" alt="Add Snyk configuration details" width="563"><figcaption><p>Add Snyk configuration details</p></figcaption></figure>
 6.  Select **Configuration** and download the signing certificate in PEM format.
 
     <figure><img src="../../../.gitbook/assets/4 (1) (1).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
@@ -53,5 +53,5 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 14. Verify you can log in, either with the direct URL at the top of **Step 3 Snyk SSO settings** (not shown in the image) or by going to the [generic SSO login](https://app.snyk.io/login/sso).
 15. As a final step, enable the application and assign it to users.
 
-    <figure><img src="../../../.gitbook/assets/10 (1) (2).png" alt="Enable and assign the application to users"><figcaption><p>Enable and assign the application to users</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/10 (1) (1).png" alt="Enable and assign the application to users"><figcaption><p>Enable and assign the application to users</p></figcaption></figure>
 

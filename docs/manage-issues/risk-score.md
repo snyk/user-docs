@@ -8,7 +8,7 @@ The Snyk Risk Score is a single value assigned to an issue, applied by automatic
 
 Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example of Project score distributions:&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
 {% hint style="info" %}
 As part of the Open Beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](priorities-for-fixing-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled. Risk Score is not available in the CLI.&#x20;
@@ -317,7 +317,7 @@ _Great transitive depth -_ Likelihood subscore will decrease significantly (comi
 
 #### Reachability&#x20;
 
-Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. For more information, see [Reachable vulnerabilities](priorities-for-fixing-issues/reachable-vulnerabilities.md).\
+Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. For more information, see [Reachable vulnerabilities](prioritizing-issues/reachable-vulnerabilities.md).\
 **Possible input values:** `Reachable`, `No path found`\
 When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.
 

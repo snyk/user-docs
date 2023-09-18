@@ -22,7 +22,7 @@ For container scans from a registry or your Kubernetes cluster, Snyk counts the 
 
 Snyk periodically checks whether your code is affected by newly disclosed vulnerabilities.
 
-The frequency is set to a default for each product. For information about changing the frequency, see [Usage settings](../../snyk-admin/manage-settings/usage-settings.md) and [View and edit Project settings](../../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md).
+The frequency is set to a default for each product. For information about changing the frequency, see [Usage settings](../../snyk-admin/manage-settings/usage-settings.md) and [View and edit Project settings](../../manage-issues/snyk-projects/view-and-edit-project-settings.md).
 
 ## Counting CLI scans
 

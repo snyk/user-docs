@@ -84,7 +84,7 @@ Tested arm-file.tf for known issues, found 1 issues
 Your test results are available at: https://snyk.io/org/my.org/cloud/issues?environment_name=my.org
 ```
 
-Follow the link in the CLI output to see your issues in the Snyk Web UI. To learn more about the cloud issues view, see [View Cloud and IaC+ issues in the Snyk Web UI](../../scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md).
+Follow the link in the CLI output to see your issues in the Snyk Web UI. To learn more about the cloud issues view, see [View Cloud and IaC+ issues in the Snyk Web UI](cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md).
 
 ## Stage 3: Fix IaC issues
 
