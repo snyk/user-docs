@@ -1,4 +1,4 @@
-# Advanced Snyk Container CLI usage
+# Advanced use of Snyk Container CLI
 
 ## Scanning archives
 
@@ -57,7 +57,7 @@ CLI options that are used frequently include the following:
 * `--nested-jars-depth`
 * `--fail-on` (Available with container test only)
 
-For details and more options, see the [Snyk CLI containe](../../snyk-cli/commands/container.md)r help or display the help by running:
+For details and more options, see the [Snyk CLI containe](../../../snyk-cli/commands/container.md)r help or display the help by running:
 
 ```
 snyk container --help
