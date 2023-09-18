@@ -1,10 +1,23 @@
 # Scan your Dockerfile
 
-This section provides information about Dockerfile analysis and scanning base images from Dockerfile:
+Snyk Container allows you to analyze your Dockerfile and scan base images from the Dockerfile.
 
-* [Prerequisites for Dockerfile analysis](prerequisites-for-dockerfile-analysis.md)
-* [Supported repos for Dockerfile analysis](supported-scms-for-dockerfile-analysis.md)
-* [Adding your Dockerfile and testing your base image](adding-your-dockerfile-and-testing-your-base-image.md)
-* [Detect vulnerable base images from Dockerfile](detect-vulnerable-bases-images-from-dockerfile.md)
-* [Automatically link between Dockerfile and images using labels](automatically-link-between-dockerfile-and-images-using-labels.md)
-* [Open pull requests to fix vulnerable base images in your Dockerfile](open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
+## Prerequisites for Dockerfile analysis
+
+Before using Dockerfile analysis, ensure that:
+
+* The account you integrate Snyk with contains the relevant Dockerfile repository.
+* You configure the integration for the Git repository that contains your Dockerfile. For more information, see [Supported SCMs for Dockerfile analysis](broken-reference).
+* You have already imported the relevant container Project for monitoring.
+
+## Supported SCMs for Dockerfile analysis
+
+Snyk supports Dockerfile analysis for the following services:
+
+* GitHub
+* GitHub Enterprise
+* GitLab
+* Bitbucket Cloud
+* Bitbucket Cloud App
+* Bitbucket Server
+* Azure Repos
