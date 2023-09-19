@@ -44,7 +44,7 @@ You can then scroll down to the section required, and set the options accordingl
   * [Code analysis](../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
 * Dockerfiles
   * [Detect Dockerfiles](broken-reference)
-  * [Update Dockerfile base images](../../scan-containers/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
+  * [Update Dockerfile base images](../../scan-applications/snyk-container/scan-your-dockerfile/fix-vulnerable-base-images-in-your-dockerfile.md)
 
 ## General Snyk GitHub integration settings
 

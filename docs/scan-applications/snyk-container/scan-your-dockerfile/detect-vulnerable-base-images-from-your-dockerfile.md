@@ -50,10 +50,4 @@ After you [integrate your Git repository with Snyk](../../../integrations/git-re
 
 <figure><img src="../../../.gitbook/assets/dockerfiles_projects.png" alt=""><figcaption><p>Dockerfiles displayed in the Project list</p></figcaption></figure>
 
-## Linking from a Dockerfile to its container images
-
-You can also link from a Dockerfile to all container images built from it. This linking can be used to understand the security impact on your running applications and to understand which images can be better secured or need to be rebuilt when you are taking action and updating the Dockerfile base image.
-
-<figure><img src="../../../.gitbook/assets/mceclip3.png" alt="Dockerfile Project showing linked images"><figcaption><p>Dockerfile Project showing linked images</p></figcaption></figure>
-
-See [Base image detection](../use-snyk-container/detect-the-container-base-image.md) for more details about detecting vulnerable base images and fix recommendations.
+For details about detecting vulnerable base images in containers and fix recommendations, see [Detect the container base image](../use-snyk-container/detect-the-container-base-image.md).
