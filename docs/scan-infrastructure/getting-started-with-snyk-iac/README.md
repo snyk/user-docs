@@ -4,9 +4,9 @@
 The information on this page applies to the original IaC and to IaC+, with some exceptions. If you are using the original IaC, follow the steps on this page. If you are using IaC+, see [Getting started with IaC+](../start-using-snyk-iac/introduction-to-iac+.md).
 {% endhint %}
 
-You can use Snyk IaC (Infrastructure as Code) in the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/).
+You can use Snyk IaC (Infrastructure as Code) in the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../../scan-cloud-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/).
 
-On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](../snyk-infrastructure-as-code/scan-terraform-files/), [AWS CloudFormation](../snyk-infrastructure-as-code/scan-cloudformation-files/), [Kubernetes](../snyk-infrastructure-as-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](../snyk-infrastructure-as-code/scan-arm-configuration-files.md). These steps are specific to the original IaC. See also [Getting started with IaC+](../start-using-snyk-iac/introduction-to-iac+.md).
+On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-terraform-files/), [AWS CloudFormation](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-cloudformation-files/), [Kubernetes](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-arm-configuration-files.md). These steps are specific to the original IaC. See also [Getting started with IaC+](../start-using-snyk-iac/introduction-to-iac+.md).
 
 ## **Prerequisites for Snyk IaC**
 
@@ -23,7 +23,7 @@ For more information about IaC and supported environments, see the following pag
 * [Configure your integration to find security issues in your Kubernetes configuration files](../snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files.md)
 
 {% hint style="info" %}
-You must use the Snyk CLI to scan ARM configuration files. See [Scan ARM configuration files](../snyk-infrastructure-as-code/scan-arm-configuration-files.md).
+You must use the Snyk CLI to scan ARM configuration files. See [Scan ARM configuration files](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-arm-configuration-files.md).
 {% endhint %}
 
 ## Import IaC Projects

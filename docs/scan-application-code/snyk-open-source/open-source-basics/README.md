@@ -10,7 +10,7 @@ Snyk provides actionable fix advice for vulnerabilities in your Open Source libr
 * [Manual pull / merge requests](./#manual-pull-merge-requests-for-project-code).
 
 {% hint style="info" %}
-See [Language support for Fix Pull Request and Merge Requests](../../../scan-applications/snyk-open-source/manage-vulnerabilities/troubleshooting-open-source-vulnerability-fixing.md#languages-supporting-fix-pull-requests-or-merge-requests).
+See [Language support for Fix Pull Request and Merge Requests](../starting-to-fix-vulnerabilities/troubleshooting-open-source-vulnerability-fixing.md#languages-supporting-fix-pull-requests-or-merge-requests).
 {% endhint %}
 
 ## **Automatic pull / merge requests**

@@ -17,4 +17,4 @@ For both dependencies and licenses, you can filter by Project or other filter cr
 </div>
 
 * From the **Projects** drop-down, select specific Projects.
-* From the **Filters** drop-down, check the applicable boxes to filter by [Severity level](../prioritizing-issues/severity-levels.md) or Project type.
+* From the **Filters** drop-down, check the applicable boxes to filter by [Severity level](../priorities-for-fixing-issues/severity-levels.md) or Project type.
