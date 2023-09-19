@@ -19,14 +19,14 @@ Each vulnerability contains the following information:
 | **Introduced by**      | Whether the vulnerability is in the base image or which line in the Dockerfile introduced the vulnerability.                                                                                                                                       |
 | **Fixed in**           | If available, the version of the package that has a fix for the vulnerability.                                                                                                                                                                     |
 
-To see the most important issues and to limit scrolling, vulnerabilities appear in reverse order of severity.
+Vulnerabilities appear in reverse order of severity so that you can see the most important issues first, with limited scrolling required.
 
 Snyk also reports the total dependencies scanned for known vulnerabilities and the total number of vulnerabilities.
 
 <figure><img src="../../.gitbook/assets/clisummary.png" alt="Total dependencies tested and issues fount"><figcaption><p>Example of total dependencies scanned and the issues found</p></figcaption></figure>
 
 {% hint style="info" %}
-Snyk groups together vulnerabilities that are found in multiple packages. This helps you focus on the number of vulnerabilities rather than just the instances.
+Snyk groups together vulnerabilities that are found in multiple packages. This helps you focus on the number of vulnerabilities rather than the instances only.
 {% endhint %}
 
 ## Base image recommendations
