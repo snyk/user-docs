@@ -95,10 +95,6 @@ Follow these steps to set these ignore preferences for use by the Snyk Web UI an
    * **Admin users only** - only admins can customize the ignore settings.
    * **All users in any environment** - all users can customize the ignore settings.
 
-{% hint style="info" %}
-Snyk does not process the ignores from changes added in a newer commit or in the same PR. Only ignores from the same PR are applied.
-{% endhint %}
-
 ## Monorepos and complex Project considerations
 
 The Snyk CLI expects the `.snyk` file to apply to the manifest being analyzed. In the case of a complex Project or monorepo, there may be many manifests in subfolders, and you may wish to use a centralized ignore policy. The `.snyk` file is expected to be the root of your Project, with your manifest file. If the `.snyk` file is not in the root of your Project, you must specify the path explicitly using the `--policy-path`, for example, in the case of a centralized policy.
