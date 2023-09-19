@@ -282,7 +282,7 @@ If you use the **zero-installs** feature, Snyk Fix PRs do not update the **.yarn
 
 ## Best practices
 
-To apply best practices for Javascript environments, see [Best practices for Javascript](working-with-snyk-in-your-environment/snyk-for-java-developers.md).
+To apply best practices for Javascript environments, see [Best practices for Javascript](working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md).
 
 ## Troubleshooting
 
