@@ -20,7 +20,7 @@ You can use the following Snyk [CLI](../../snyk-cli/cli-commands-and-options-sum
 * Scan container images with `snyk container test`.
 * Scan Infrastructure as Code (IaC) files with `snyk iac test`.
 
-See [Getting started with the CLI](../../snyk-cli/start-using-the-snyk-cli.md) for details.
+See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md) for details.
 
 ### Using the Snyk Web UI
 
@@ -51,7 +51,7 @@ See [Monitor your projects at regular intervals](../../snyk-cli/scan-and-maintai
 After you [import a Project](../quickstart/import-a-project.md), Snyk automatically runs periodic scans on that Project, to see if your code is affected by newly disclosed vulnerabilities.
 
 {% hint style="info" %}
-The default scan frequency and available frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information, see [Usage page details](../../snyk-admin/manage-settings/usage-settings.md). You can also set frequency in the Project **Settings** (see [View project settings](../../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md)) or use the Snyk REST API: see [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
+The default scan frequency and available frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information, see [Usage page details](../../snyk-admin/manage-settings/usage-settings.md). You can also set frequency in the Project **Settings** (see [View project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md)) or use the Snyk REST API: see [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
 {% endhint %}
 
 ### Using PR Checks

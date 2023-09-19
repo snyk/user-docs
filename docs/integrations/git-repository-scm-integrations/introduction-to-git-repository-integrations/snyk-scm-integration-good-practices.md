@@ -88,7 +88,7 @@ Click the **Details** link to display the status of the Snyk check. The status o
   * Snyk could not read the manifest file
   * Snyk could not find the manifest file
 
-<figure><img src="../../../.gitbook/assets/security-check.png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/security-check (1).png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
 
 ### **Manage PR Check settings**
 
@@ -134,7 +134,7 @@ To configure the PR test settings for specific Projects, select the relevant Org
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
 
 </div>
 

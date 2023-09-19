@@ -94,7 +94,7 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 #### Prerequisites
 
 1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/)
-2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/start-using-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
+2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 3. [Set the default Organization for all Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
 4. Install the relevant package manager before you use the Snyk CLI.
 5. Include the relevant manifest files supported by Snyk before testing.
@@ -137,7 +137,7 @@ This section describes the unique CLI commands available when working with Java-
 
 * Install the relevant package manager before you use the Snyk CLI.
 * Include the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing Projects from your local environment. See [Getting started with the CLI](../../snyk-cli/start-using-the-snyk-cli.md).
+* Install and authenticate the Snyk CLI to start analyzing Projects from your local environment. See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md).
 
 #### Snyk CLI options for Maven and Gradle
 

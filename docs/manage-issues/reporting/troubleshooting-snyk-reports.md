@@ -34,7 +34,7 @@ Data is available in reporting approximately one hour after a scan occurs.
 
 After a Project rescan, issues that are ignored are reflected in reporting and the rest of the Snyk platform, including APIs. &#x20;
 
-Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. For information about Project test frequency, see [Project Settings](../../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md).
+Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. For information about Project test frequency, see [Project Settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md).
 
 ## Known limitations
 

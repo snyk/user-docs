@@ -55,7 +55,7 @@ The way Snyk analyzes and builds the dependencies tree varies depending on the l
 #### Prerequisites
 
 1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/).
-2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/start-using-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
+2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
 3. [Set the default Organization for all Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis).
 4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
 5. Ensure you have included the relevant manifest files supported by Snyk before testing.
@@ -81,7 +81,7 @@ To build the dependency tree, Snyk analyzes the `composer.json` and `composer.lo
 
 There are no unique options for use when running Snyk for PHP.
 
-For more information about Snyk CLI see [Getting started with the CLI](../../snyk-cli/start-using-the-snyk-cli.md).
+For more information about Snyk CLI see [Getting started with the CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md).
 
 ### Snyk Web UI (Git repository integration)
 

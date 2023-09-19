@@ -54,7 +54,7 @@ If enabled, users without access to this Snyk Organization can request access.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
 
 </div>
 

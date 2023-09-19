@@ -29,7 +29,7 @@ https://api.snyk.io/rest/orgs/<REPLACE_WITH_YOUR_ORGID>/apps?version=2022-03-11~
 
 ## Create using Snyk CLI
 
-The [Snyk CLI](../../../snyk-cli/) can be used to create the Snyk App. If you do not already have the Snyk CLI installed on your machine, you can install it by following the steps in [Getting started with the CLI](../../../snyk-cli/start-using-the-snyk-cli.md). See [Create a Snyk App using the CLI](../create-a-snyk-app-using-the-snyk-cli.md) for details.
+The [Snyk CLI](../../../snyk-cli/) can be used to create the Snyk App. If you do not already have the Snyk CLI installed on your machine, you can install it by following the steps in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-snyk-cli.md). See [Create a Snyk App using the CLI](../create-a-snyk-app-using-the-snyk-cli.md) for details.
 
 {% hint style="warning" %}
 All `apps` commands are only accessible behind the `--experimental` flag and the behavior can change at any time without prior notice. You are advised to use all the commands with caution.
