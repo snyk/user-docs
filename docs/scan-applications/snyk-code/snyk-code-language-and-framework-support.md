@@ -46,7 +46,7 @@ Snyk Code can work with a variety of relevant language types:
 * Optionally strong typed languages such as TypeScript.
 * Strong typed languages such as Java.
 
-For a full list of Vulnerability Types/Security Rules that are applied to each supported language by Snyk Code, see [Security Rules used by Snyk Code](../../scan-application-code/snyk-code/broken-reference/).
+For a full list of Vulnerability Types/Security Rules that are applied to each supported language by Snyk Code, see [Security Rules used by Snyk Code](security-rules-used-by-snyk-code/).
 
 ### Supported Extensions
 
