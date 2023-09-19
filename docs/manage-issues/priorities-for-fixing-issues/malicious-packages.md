@@ -24,7 +24,7 @@ This process is continually improved, adding new tools and sources to identify p
 
 Usually, open-source vulnerabilities are assigned a CVE ID, for example, [CVE-2021-44228](https://security.snyk.io/vuln/?search=CVE-2021-44228). The CVE ID helps security vendors like Snyk identify, define, and catalog publicly disclosed vulnerabilities. In almost all cases, malicious packages are not assigned a CVE ID. The absence of this identifier makes sharing new threats in the security community difficult. Snyk uses the name of the package, the package registry, for example, npm, and the affected version range to publicly catalog and share the malicious packages.&#x20;
 
-### Malicious packages - CWE - 506&#x20;
+### Malicious packages - CWE-506&#x20;
 
 All malicious packages in the [Snyk Vulnerability Database](https://security.snyk.io/) are labeled with [CWE-506 - Embedded Malicious Code](https://cwe.mitre.org/data/definitions/506.html).
 
@@ -38,7 +38,7 @@ Malicious packages can allow attackers to run remote code on the target machine.
 
 Malicious packages may be publicly available in the wild for only a few minutes until identified and taken down, and in other cases, they can be part of sophisticated company-specific targeted supply chain infection campaigns and stay under the radar for months or years.&#x20;
 
-While research and defense capabilities improve, attackers use novel techniques and technologies to overcome their findings. Thus users may see that a Snyk advisory has been published only recently, while the malicious package was initially in the wild for a long time.&#x20;
+While research and defense capabilities improve, attackers use novel techniques and technologies to overcome their findings. Thus, users may see that a Snyk advisory has been published only recently, while the malicious package was initially in the wild for a long time.&#x20;
 
 ## Types of malicious packages
 
@@ -52,7 +52,7 @@ Bad actors publish malicious packages to a registry, hoping to trick users into 
 
 Dependency confusion is a tactic used by attackers who upload malicious packages with private package names to public package registries. The result of this is confusion of automatic processes that import packages, for example, IDE and CIs, so these processes download the public package instead of the intended private one.
 
-For example, ACME Corporation developed an internal UI package, named it `acme-ui`, and hosted it in a private package registry.&#x20;
+For example, ACME Corporation developed an internal UI package and named it `acme-ui`, and hosted it in a private package registry.&#x20;
 
 Malicious Bob published a malicious package with the same name to npm. Developer Alice at ACME did not configure the environment to pull packages from the private registry. While installing packages, the developer mistakenly downloaded the `acme-ui` package from the public registry instead of the private one, allowing Malicious Bob to run code on the developer's machine, a successful instance of dependency confusion.&#x20;
 
@@ -90,6 +90,36 @@ The package was available publicly in npm, possibly only briefly, before being r
 
 In these cases, it is important to be extra cautious about where the package was downloaded. Ignoring the issue altogether may result in a future problem in case a malicious actor republishes the package to npm.
 
+## Verifying the npm registry source
+
+To check if you are using a public registry or a private one, you can use the following options:
+
+### Run CLI commands
+
+Run the following command:  `npm config get registry`
+
+If the result is `registry.npmjs.org`, you are using a public registry.
+
+### Check package-lock.json file:
+
+The `package-lock.json` file contains detailed information about the packages and their sources in your project. You can open this file and inspect the "`resolved`" field for each dependency to see where it is fetched from. Packages from the public npm registry will have URLs starting with https://registry.npmjs.org/.
+
+### Check .npmrc file:
+
+The `.npmrc` file in your project's root directory can specify the registry where npm should fetch packages. Check if your `.npmrc` file is configured to use your private npm registry. Here's an example of what the file might look like if you're using a private registry:
+
+`registry=https://your-private-registry-url/`&#x20;
+
+If you don't have an `.npmrc` file or it doesn't specify a registry, npm will use the default public registry (https://registry.npmjs.org/).
+
+### Using private packages with npm
+
+Npm allows users to host their private packages on the npm registry.
+
+If your company is using this [service](https://docs.npmjs.com/about-private-packages), then the public registry will be https://registry.npmjs.org.&#x20;
+
+In this case, you will need to verify that the packages used are private, by logging in to the npm website.&#x20;
+
 ## Remediation of malicious package findings
 
 If you find that a malicious package has been running in your environment, you should remove it from the local drive, both node\_modules and cache, and remove it from the proxy cache and database if it exists, and from the package-lock file. For npm, this is `package-lock.json`.
@@ -98,6 +128,6 @@ If you find that a malicious package has been running in your environment, you s
 
 **Dependency confusion:** If you imported the public package, either by accident or by default in the CI, before it was placed in "security holding," be sure to remove it. Ensure your development environment and the CI pipeline are configured to use the private registry and install the same-name internal package instead.&#x20;
 
-**Dependency hijacking** and **Compromised account**: A new safe version will usually be released after the malicious package has been identified. To resolve the issue for this kind of attack, update the package to a new version.
+**Dependency hijacking** and **Compromised account**: A new safe version will usually be released after the malicious package has been identified. To resolve the issue of this kind of attack, update the package to a new version.
 
 In addition, consider your environment to be infected, and ensure you run your internal security drills. It is recommended that you verify there are no vestiges or remainders of the malicious code, even after you have removed the malicious package.
