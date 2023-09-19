@@ -4,6 +4,8 @@ Malicious packages are a popular and growing method of carrying out software sup
 
 {% hint style="warning" %}
 Currently, Snyk does not consider the provenance or origin of a scanned package. In some cases, Snyk may detect false positives when the ecosystem, name, and version of a scanned package match a malicious public package.
+
+[Learn more](malicious-packages.md#verifying-the-provenance-of-packages) how to verify the source of the package.
 {% endhint %}
 
 ## Introduction to malicious packages
@@ -71,6 +73,8 @@ Today, Snyk Open Source and Snyk Container scanners cannot distinguish between i
 A Snyk alert does not imply that the organizations associated with the packages published the malware; rather, the alert is a warning that such an attack has targeted the organizations.
 
 An internal package may be flagged as malicious. If this happens, it means that a package with a similar name was published on a public registry, most likely with malicious code. This publication was intended to make developers in your company import the malicious public package, either by automatic or manual processes, instead of importing the legitimate private package.
+
+[Learn more](malicious-packages.md#verifying-the-npm-registry-source) how to check the registry source of an npm package.
 
 ## Understanding malicious packages in npm
 
