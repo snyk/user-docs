@@ -58,7 +58,7 @@ The steps follow to add images from DigitalOcean to Snyk.
 6. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    2. An **import log** becomes available; you can reach it at the top of the Projects list.
-   3. To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   3. To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-applications/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 DigitalOcean imports are indicated with a unique icon. You can filter the integration in the **Projects** view to see DigitalOcean Projects only:
 

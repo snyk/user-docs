@@ -59,7 +59,7 @@ Follow these steps to add images from Nexus to Snyk.
 6. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    2. An **import log** becomes available; you can reach it at the top of the Projects list.
-   3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-applications/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 Nexus imports are indicated with a unique icon, and you can also filter to view only Nexus Projects:
 

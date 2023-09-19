@@ -58,7 +58,7 @@ The steps follow for adding images from GitLab Container Registry to Snyk.
 7. When the import ends:
    * You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    * An **import log** becomes available; you can reach it at the top of the Projects list.
-   * To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see[ Adding your Dockerfile and testing your base image.](../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md)
+   * To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see[ Adding your Dockerfile and testing your base image.](../../scan-applications/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md)
 
 GitLab Container Registry imports are designated with a unique icon. You can filter the integration in the **Projects** view to see GitLab Container Registry Projects only.
 
