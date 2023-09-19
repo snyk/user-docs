@@ -52,4 +52,4 @@ To fix vulnerabilities:
 
 <figure><img src="../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png" alt=".Files changed tab in GitHub after triggering Fix PR for an open source project"><figcaption><p>Files changed tab in GitHub after triggering Fix PR for an open source project</p></figcaption></figure>
 
-See [Fix your vulnerabilities](starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for more details.
+See [Fix your vulnerabilities](../../scan-applications/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for more details.

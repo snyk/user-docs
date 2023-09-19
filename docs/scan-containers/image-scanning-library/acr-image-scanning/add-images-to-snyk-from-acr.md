@@ -18,7 +18,7 @@ Snyk tests and monitors Microsoft Azure Container Registry (ACR) container image
 
 The view **Which images do you want to test?** opens, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
-![All available images for the registry to which you connected](<../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en (1) (1) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (22).png>)
+![All available images for the registry to which you connected](<../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en (1) (1) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (10).png>)
 
 1. Select single or multiple images using any or all of the following methods:
    1. Type the name of a single image for import in the **Image Name** field (at number 1, the Image Name field in the image above),
@@ -34,7 +34,7 @@ The view **Which images do you want to test?** opens, displaying all of the avai
 
 ACR files are indicated with a unique icon ![ACR](../../../.gitbook/assets/uuid-5d10608d-d674-d4ee-d6c2-6faadd6fc8ea-en.png) . You can filter to view only those Projects:
 
-![List of ACR projects](<../../../.gitbook/assets/image (4) (3) (3) (3) (3) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png>)
+![List of ACR projects](<../../../.gitbook/assets/image (4) (3) (3) (3) (3) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (6).png>)
 
 ACR integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk user documentation.
 

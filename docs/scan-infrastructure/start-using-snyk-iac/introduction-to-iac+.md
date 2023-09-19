@@ -47,7 +47,7 @@ You will see a single **Infrastructure as Code issues** Project. IaC+ generates 
 
 ## View cloud configuration file issues in IaC+
 
-Click on the **Infrastructure as Code Issues** Project link to open a view of the IaC+ **Issues** UI, filtered to include only issues from the IaC+ [environment](../snyk-iac+/key-concepts-in-iac+.md#environments) that corresponds to your Project.
+Click on the **Infrastructure as Code Issues** Project link to open a view of the IaC+ **Issues** UI, filtered to include only issues from the IaC+ [environment](../../scan-cloud-configurations/snyk-iac+/key-concepts-in-iac+.md#environments) that corresponds to your Project.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 4.04.13 PM.png" alt=".IaC+ Issues UI, filtered to show issues from the environment for your repository"><figcaption><p>IaC+ Issues UI, filtered to show issues from the environment for your repository</p></figcaption></figure>
 

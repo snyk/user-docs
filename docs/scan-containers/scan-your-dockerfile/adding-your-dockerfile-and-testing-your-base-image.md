@@ -25,7 +25,7 @@ You can add a single Dockerfile to each image that you have imported. Follow the
 5. Enter the relative path in the **Path to your Dockerfile** field in the following format: /path/dockerfile.
 6. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (45) (1) (1).png" alt="Enter the path to your Dockerfile"><figcaption><p>Enter the path to your Dockerfile</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1).png" alt="Enter the path to your Dockerfile"><figcaption><p>Enter the path to your Dockerfile</p></figcaption></figure>
 
 Snyk tests the Project again, this time producing any relevant base image fix advice shown on the **Recommendations for base image upgrade** screen:
 

@@ -11,7 +11,7 @@ Snyk policies contain rules to define how Snyk behaves when encountering specifi
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2) (3).png" alt="Snyk Policy manager"><figcaption><p>Snyk Policy manager</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Snyk Policy manager"><figcaption><p>Snyk Policy manager</p></figcaption></figure>
 
 </div>
 

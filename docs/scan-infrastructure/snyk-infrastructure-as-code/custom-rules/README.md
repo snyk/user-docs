@@ -15,19 +15,19 @@ These rules are intended to meet most of your needs on your first scan, but you 
 
 ## Creating additional Snyk IaC Custom Rules
 
-The IaC SDK helps security teams define their own rules, to be run by the [Snyk CLI](../snyk-cli-for-infrastructure-as-code/), providing feedback to developers.
+The IaC SDK helps security teams define their own rules, to be run by the [Snyk CLI](../../../scan-cloud-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/), providing feedback to developers.
 
 Using this SDK, you can add your own custom rules to Snyk IaC to run alongside the standard provided rules, giving comprehensive security feedback to your development teams in one place.
 
 This section provides initial instructions to help you use the Snyk Infrastructure as Code (IaC) SDK:
 
-* [Install the SDK](install-the-sdk.md)
+* [Install the SDK](../../../scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/install-the-sdk.md)
 * [Getting started with the SDK](../../custom-rules/writing-rules-using-the-sdk/)
-* [Use IaC custom rules with the Snyk CLI](use-iac-custom-rules-with-cli/)
-* [Integrating custom rules within a pipeline](integrating-iac-custom-rules-within-a-pipeline.md)
-* [SDK reference](sdk-reference.md)
+* [Use IaC custom rules with the Snyk CLI](../../../scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/use-iac-custom-rules-with-cli/)
+* [Integrating custom rules within a pipeline](../../../scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/integrating-iac-custom-rules-within-a-pipeline.md)
+* [SDK reference](../../../scan-cloud-configurations/snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
 
-<figure><img src="../../../.gitbook/assets/image (159) (1) (1) (2).png" alt="End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI"><figcaption><p>End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (159) (1) (1).png" alt="End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI"><figcaption><p>End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI</p></figcaption></figure>
 
 ## Snyk platform policies and Snyk IaC custom rules
 

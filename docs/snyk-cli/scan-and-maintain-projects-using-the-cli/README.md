@@ -16,7 +16,7 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 * [**Test public npm packages** before use](test-public-npm-packages-before-use.md)
 * [**Test public repositories** before use](test-public-repositories-before-use.md)
 * [CLI **test results**](view-cli-test-results.md)
-* [Differences in **vulnerability counts** across environments](../../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
+* [Differences in **vulnerability counts** across environments](../../scan-applications/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
 
 ## Monitoring projects
 

@@ -1,7 +1,7 @@
 # Automatic and manual PRs with Snyk Open Source
 
 {% hint style="info" %}
-See [Fix your vulnerabilities](../starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for more details of general fix functions.
+See [Fix your vulnerabilities](../../../scan-applications/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for more details of general fix functions.
 {% endhint %}
 
 Snyk provides actionable fix advice for vulnerabilities in your Open Source libraries, using:
