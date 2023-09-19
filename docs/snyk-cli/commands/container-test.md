@@ -100,6 +100,8 @@ Fail only when there are vulnerabilities that can be fixed.
 
 To fail on any Snyk discoverable vulnerability (the default behavior), do not use the `--fail-on` option. If vulnerabilities do not have a Snyk-computer fix and this option is being used, tests pass.
 
+**Note**: If you test code constrained by metadata that Snyk cannot respect with `snyk test`, Snyk will not propose a fix, in order to avoid breaking your code. You may be able to identify and apply a fix manually.
+
 ### `--app-vulns`
 
 Allow detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.

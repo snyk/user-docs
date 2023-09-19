@@ -216,6 +216,8 @@ Fail only when there are vulnerabilities that can be fixed. Use one of the value
 
 To fail on any Snyk-discoverable vulnerability (the default behavior), do not use the `--fail-on` option. If vulnerabilities do not have a Snyk-computer fix and this option is being used, tests pass.
 
+**Note**: If you test code constrained by metadata that Snyk cannot respect with `snyk test`, Snyk will not propose a fix, in order to avoid breaking your code. You may be able to identify and apply a fix manually.
+
 ## Options for Maven projects
 
 **Note**: The `--dev` option can be used with Maven projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
