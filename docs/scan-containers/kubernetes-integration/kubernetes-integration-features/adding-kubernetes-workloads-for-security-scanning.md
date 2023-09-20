@@ -12,7 +12,7 @@ You can also import **one** cluster to **multiple** Snyk Organizations in manual
 
 You must have an account with Snyk and be onboarded to your Organization by an administrator.
 
-In addition, the integration must be configured between Snyk and your Kubernetes environment per Organization. To verify the integration is configured, ensure you have an [**Integration ID**](../../kubernetes-workload-and-image-scanning/kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)**.**
+In addition, the integration must be configured between Snyk and your Kubernetes environment per Organization. To verify the integration is configured, ensure you have an [**Integration ID**](../../../scan-applications/snyk-container/kubernetes-integration/overview-of-the-kubernetes-integration/viewing-your-kubernetes-integration-settings.md)**.**
 
 1. Deploy Snyk Controller in your Kubernetes cluster.
 2. Deploy Kubernetes workloads that you want to be imported into the Kubernetes cluster
