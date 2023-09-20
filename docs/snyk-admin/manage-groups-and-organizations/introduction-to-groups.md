@@ -21,4 +21,4 @@ As part of your onboarding, Snyk will set you up with a Group for your company. 
 
 If you think your company will need multiple Groups, submit a request to [Snyk Support](https://snyk.zendesk.com/agent/dashboard).
 
-See [Structure your account for high application performance](structure-your-account-for-high-application-performance.md) for details concerning multiple Groups.
+See [Structure your account for high application performance](structure-your-hierarchy-for-high-application-performance.md) for details concerning multiple Groups.
