@@ -4,19 +4,19 @@ Understand the supported languages and frameworks to secure your software based 
 
 Snyk supports the following languages&#x20;
 
-* [.NET](broken-reference)
+* [.NET](.net.md)
 * Apex
 * [Bazel](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)
-* [C/C++](broken-reference)
+* [C/C++](c-c++.md)
 * [Elixir](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
 * [Go](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
-* [Java and Kotlin](broken-reference)
+* [Java and Kotlin](java-and-kotlin.md)
 * [JavaScript](javascript.md)
 * [PHP](php.md)
 * [Python](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)&#x20;
-* [Ruby](broken-reference)
-* [Scala](broken-reference)
-* [Swift and Objective-C](broken-reference)
+* [Ruby](ruby.md)
+* [Scala](scala.md)
+* [Swift and Objective-C](swift-and-objective-c.md)
 
 
 
