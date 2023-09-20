@@ -45,7 +45,7 @@ Packages from the [Go standard library](https://pkg.go.dev/std) are not supporte
 Packages under `golang.org/x/` which are [part of the Go Project](https://pkg.go.dev/golang.org/x) but outside the main Go tree _are_ supported.
 {% endhint %}
 
-To build the dependency tree, Snyk uses the `go list -json -deps ./...` command.
+To build the dependency tree, Snyk uses the `go list -json -deps ./...` command, and uses the dependencies found in `Imports` . `TestImports` and `XTestImports` are not supported.
 
 When you test Go Modules Projects using the CLI, Snyk does not require their dependencies to be installed, but you must have a `go.mod` file at the root of your Project. `go list` uses this and your Project source code to build a complete dependency tree.
 
@@ -71,7 +71,7 @@ This means you may see more dependencies and issues reported, including potentia
 To avoid this issue and achieve more accurate scans, enable [full source code analysis](snyk-for-go.md#enable-full-source-code-analysis).
 {% endhint %}
 
-If full source code analysis is enabled, Snyk uses the `go list -json -deps ./...` command to build the dependency tree. Otherwise, it uses `go mod graph` .
+If full source code analysis is enabled, Snyk uses the `go list -json -deps ./...` command to build the dependency tree the same way the CLI test does. Otherwise, it uses `go mod graph` .
 
 #### Enable full source code analysis
 
