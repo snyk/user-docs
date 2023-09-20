@@ -35,10 +35,10 @@ If an image and its corresponding Project are removed, and you reimport the same
 Based on the process exemplified in this diagram:
 
 1. The customer's Snyk Organization is enabled for the Kubernetes integration.
-2. The Customer installs Snyk Controller into their Kubernetes cluster.
-3. Snyk Controller reads image information and pulls images from container registries.
-4. Snyk Controller scans the images.
-5. Snyk Controller sends scan results to the Snyk Platform to analyze issues.
+2. The Customer installs the Snyk Controller into their Kubernetes cluster.
+3. The Snyk Controller reads image information and pulls images from container registries.
+4. The Snyk Controller scans the images.
+5. The Snyk Controller sends scan results to the Snyk Platform to analyze issues.
 6. The customer views the vulnerability issues on the Snyk Platform.
 
 ## **Terms and conditions**
