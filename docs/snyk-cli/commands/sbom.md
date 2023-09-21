@@ -4,7 +4,7 @@
 
 **Feature availability:** This feature currently in Open Beta and is available to customers on Snyk Enterprise plans.
 
-**Note:** In order to run the SBOM generation feature, you must use a minimum of CLI version 1.1221.0.
+**Note:** In order to run the SBOM generation feature, you must use a minimum of CLI version 1.1226.0.
 
 The `snyk container sbom` feature requires an internet connection.
 
