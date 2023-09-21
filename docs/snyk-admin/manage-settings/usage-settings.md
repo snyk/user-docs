@@ -1,6 +1,6 @@
 # Usage settings
 
-Select **Settings** > **Usage** to view Snyk usage details in your Group or Organization, including:
+In your Group or Organization, elect **Settings** > **Usage** to view Snyk usage details for your Group or Organization, including the following
 
 * [Test usage](usage-settings.md#test-usage): the number of tests used
 * [Contributing developers](usage-settings.md#contributing-developers): the number of developers contributing to Projects
@@ -17,7 +17,7 @@ The **Test Usage** section shows how many tests you are using over the current b
 </div>
 
 {% hint style="info" %}
-Test limits vary for Snyk products and plans. See the [plans page](https://snyk.io/plans/) for details.
+Test limits vary for Snyk products and plans. See the [Pans and pricing page](https://snyk.io/plans/) for details.
 {% endhint %}
 
 {% hint style="info" %}
@@ -27,20 +27,20 @@ See [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925
 ## Contributing developers
 
 {% hint style="info" %}
-The integrations for which Snyk has developer counts are GitHub, GitHub Enterprise, GitLab and the Snyk CLI.
+Snyk has developer counts are for the GitHub, GitHub Enterprise, and GitLab integrations and for the Snyk CLI.
 {% endhint %}
 
 Snyk defines contributing developers as developers having made a commit to a private repo monitored by Snyk in the last 90 days.
 
-The **Contributing developers for Git and CLI integrations** section shows contributing developer counts, both at the org level and the group level.
+The **Contributing developers for Git and CLI integrations** section shows contributing developer counts, both at the Organization level and the Group level.
 
 The counts indicate the number of contributing developers to the default branch of the private repos connected with the integration.
 
-Snyk does not count contributions to public (open source) repos currently as the pricing model is based on the number of contributing developers to private repositories.
+Snyk does not count contributions to public (open-source) repos because the pricing model is based on the number of contributing developers to private repositories.
 
-For example:
+An example of the count of contributing developers follows:
 
-<figure><img src="../../.gitbook/assets/image__10_.png" alt="Contributing developers counts"><figcaption><p>Contributing developers counts</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image__10_.png" alt="Contributing developers count"><figcaption><p>Contributing developers count</p></figcaption></figure>
 
 * **Total unique contributors across all integrations:** the number of contributors across all the integrations in your Snyk account. Contributing developers are only counted once, even if they have contributed to multiple integrations or multiple repositories.
 * **Breakdown by integration**: the number of contributors, Organizations, and repos in that integration.
@@ -51,9 +51,9 @@ Each contributor is **counted by** the **author** email field, which is set with
 
 The **Projects** section shows test usage settings for your Projects:
 
-### Bulk actions
+### Bulk actions settings
 
-For **Bulk actions**, select relevant Projects, then for the selected Projects, select **Delete**, **Activate** or **Deactivate**:
+For **Bulk actions**, select the relevant Projects; then, for the selected Projects, select **Delete**, **Activate,** or **Deactivate**:
 
 <div align="left">
 
@@ -61,11 +61,11 @@ For **Bulk actions**, select relevant Projects, then for the selected Projects, 
 
 </div>
 
-### Set test frequency
+### Test frequency settings
 
 You can set the frequency of testing for each Project.&#x20;
 
-For each entry, you can select the frequency of testing for that Project (never, daily, or weekly) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
+For each entry, you can select the frequency of testing for that Project (`never`, `daily`, or `weekly`) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
 
 <div align="left">
 
