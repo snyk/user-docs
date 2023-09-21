@@ -731,8 +731,6 @@
     * [Group general settings](snyk-admin/manage-settings/group-general-settings.md)
     * [Organization general settings](snyk-admin/manage-settings/organization-general-settings.md)
     * [Usage settings](snyk-admin/manage-settings/usage-settings.md)
-    * [Your Plan and Billing](snyk-admin/manage-settings/your-plan-and-billing.md)
-    * [Plans and Pricing](snyk-admin/manage-settings/plans-and-pricing.md)
     * [Snyk Preview](snyk-admin/manage-settings/snyk-preview.md)
 * [Snyk CLI](snyk-cli/README.md)
   * [Getting started with the Snyk CLI](snyk-cli/getting-started-with-the-snyk-cli.md)
