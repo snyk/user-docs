@@ -7,7 +7,7 @@
 You have seen how to view your Snyk Projects, understand Snyk scan results, fix vulnerabilities, and integrate fix work into your development workflow.
 {% endhint %}
 
-This section describes how to monitor fix work, using [Snyk Reports](../../manage-issues/reporting/legacy-reports/).
+This section describes how to monitor fix work, using [Snyk Reports](../../manage-risk/reporting/legacy-reports/).
 
 ### View reports
 
@@ -120,7 +120,7 @@ You cannot currently export charts and data in the reports summary page.
 
 #### More information
 
-See [Reports](../../manage-issues/reporting/legacy-reports/) for more details.
+See [Reports](../../manage-risk/reporting/legacy-reports/) for more details.
 
 ### What's next?
 

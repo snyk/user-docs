@@ -15,6 +15,6 @@ With Snyk, you can secure cloud infrastructure configurations before and after d
 * [Detect drift](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.
 * Inspect the configuration of every [cloud resource](../scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md) at a given moment in time and see the attributes that caused an issue.
 * [Filter issues](../scan-cloud-configurations/snyk-iac+/cloud-and-integrated-iac-issues/) to target the most mission-critical resources.
-* Review a [report of issues](../manage-issues/reporting/available-snyk-reports.md#cloud-compliance-issues-report) for an entire Organization, organized by compliance standard.
+* Review a [report of issues](../manage-risk/reporting/available-snyk-reports.md#cloud-compliance-issues-report) for an entire Organization, organized by compliance standard.
 
 For a list of supported IaC environments and cloud providers. See [Supported IaC and cloud providers](supported-iac-and-cloud-providers.md).

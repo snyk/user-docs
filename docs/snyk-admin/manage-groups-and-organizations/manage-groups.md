@@ -18,7 +18,7 @@ Select **Reports** to view the vulnerability status of the Organizations in your
 
 </div>
 
-See [Reporting](../../manage-issues/reporting/) for more details.
+See [Reporting](../../manage-risk/reporting/) for more details.
 
 ## Group dependencies
 
@@ -30,7 +30,7 @@ Select **Dependencies** to view the dependencies and license issues for your Gro
 
 </div>
 
-See [Dependencies and licenses](../../manage-issues/dependencies-and-licenses/) for more details.
+See [Dependencies and licenses](../../manage-risk/dependencies-and-licenses/) for more details.
 
 ## Group policies
 
@@ -42,7 +42,7 @@ Select **Policies** to view the license and security policies for your Group:
 
 </div>
 
-See [Policies](../../manage-issues/policies/) for details.
+See [Policies](../../manage-risk/policies/) for details.
 
 ## Group settings
 
