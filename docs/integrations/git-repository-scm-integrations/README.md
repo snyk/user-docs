@@ -3,7 +3,7 @@
 Snyk can integrate with the following Source Control Managers (SCMs) to help you track, monitor, and fix the issues and vulnerabilities in your code:
 
 * [GitHub](snyk-github-integration.md)
-* [GitHub Enterprise](snyk-github-enterprise-integration.md)
+* [GitHub Enterprise](github-enterprise-integration.md)
 * [GitHub Read-only Projects](snyk-github-read-only-projects.md)
 * [Bitbucket Cloud Personal Access Token (Legacy)](snyk-bitbucket-cloud-legacy-integration.md)
 * [Bitbucket Cloud App](snyk-bitbucket-cloud-app-integration.md)

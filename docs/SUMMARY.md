@@ -146,7 +146,7 @@
       * [Opening fix and upgrade pull requests from a fixed GitHub account](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
       * [Disable a Git integration](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/disable-a-git-integration.md)
     * [Snyk GitHub integration](integrations/git-repository-scm-integrations/snyk-github-integration.md)
-    * [Snyk GitHub Enterprise integration](integrations/git-repository-scm-integrations/snyk-github-enterprise-integration.md)
+    * [Snyk GitHub Enterprise integration](integrations/git-repository-scm-integrations/github-enterprise-integration.md)
     * [Snyk GitHub Read-only Projects](integrations/git-repository-scm-integrations/snyk-github-read-only-projects.md)
     * [Snyk Bitbucket Cloud integration](integrations/git-repository-scm-integrations/snyk-bitbucket-cloud-legacy-integration.md)
     * [Migrate a Bitbucket Cloud Personal Access Token](integrations/git-repository-scm-integrations/migrate-a-bitbucket-cloud-personal-access-token.md)

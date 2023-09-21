@@ -35,7 +35,7 @@ GCR files are indicated with a unique icon. You can now filter to view only thos
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-31 at 18.10.17 (1).png" alt="GCR added to integrations filters"><figcaption><p>GCR added to integrations filters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-31 at 18.10.17.png" alt="GCR added to integrations filters"><figcaption><p>GCR added to integrations filters</p></figcaption></figure>
 
 </div>
 

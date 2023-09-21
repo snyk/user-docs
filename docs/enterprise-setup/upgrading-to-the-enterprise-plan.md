@@ -15,7 +15,7 @@ Snyk Enterprise features include:
 * [Single Sign-On](using-single-sign-on-sso-for-authentication/)
 * [Service accounts](service-accounts.md)
 * [Snyk API](../snyk-api/)
-* [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/snyk-github-enterprise-integration.md)
+* [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
 * [Reports](../manage-issues/reporting/legacy-reports/)
 * [Security policy management](../manage-issues/policies/security-policies/)
 * [Snyk Broker](snyk-broker/)

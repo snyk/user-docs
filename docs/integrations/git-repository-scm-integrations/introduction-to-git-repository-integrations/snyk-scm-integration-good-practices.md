@@ -134,7 +134,7 @@ To configure the PR test settings for specific Projects, select the relevant Org
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
 
 </div>
 

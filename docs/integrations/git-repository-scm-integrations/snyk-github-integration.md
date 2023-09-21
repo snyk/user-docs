@@ -7,7 +7,7 @@ The Snyk GitHub integration lets you:
 * Provide automated fixes and upgrades
 
 {% hint style="info" %}
-Enterprise plan customers should consider using [GitHub Enterprise integration](snyk-github-enterprise-integration.md). See [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md).
+Enterprise plan customers should consider using [GitHub Enterprise integration](github-enterprise-integration.md). See [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md).
 {% endhint %}
 
 ## Snyk GitHub integration: per user, not per Organization
@@ -16,7 +16,7 @@ GitHub integration is set up for your own user account, not for a Snyk Organizat
 
 Thus **when you import a Snyk Project using your GitHub integration with the Snyk PR functionality enabled, Snyk PRs are created for that Project.** However, **if another user imports Projects with their GitHub integration after disabling the Snyk PR functionality, Snyk PRs are not created for the Projects they import**.
 
-You **cannot use a GitHub integration to import public and private Projects via the Snyk API** with a Snyk [Service Account](../../enterprise-setup/service-accounts.md), as the GitHub integration is associated with _your_ user account, not with the Snyk Organization. To import public and private Projects usng the API with a Snyk Service Account, use the [GitHub Enterprise integration](snyk-github-enterprise-integration.md).
+You **cannot use a GitHub integration to import public and private Projects via the Snyk API** with a Snyk [Service Account](../../enterprise-setup/service-accounts.md), as the GitHub integration is associated with _your_ user account, not with the Snyk Organization. To import public and private Projects usng the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
 
 ## How to connect GitHub to Snyk
 
@@ -296,7 +296,7 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 * A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="No vulnerabilities" data-size="line">
 * A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (143) (1) (1) (1) (1) (1) (1) (2).png" alt="Number of vulnerabilities" data-size="line">
-* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt="Unknown vulnerabilities" data-size="line">
+* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt="Unknown vulnerabilities" data-size="line">
 
 #### **Badge styles**
 
