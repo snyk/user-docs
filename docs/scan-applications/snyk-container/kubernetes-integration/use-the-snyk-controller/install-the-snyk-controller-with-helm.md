@@ -1,7 +1,7 @@
 # Install the Snyk controller with Helm (Azure and Google Cloud Platform)
 
 {% hint style="danger" %}
-Before following this installation page, review the [prerequisites page](prerequisites-for-snyk-controller.md).
+Before following this installation page, review the [prerequisites page](prerequisites-for-installing-the-snyk-controller.md).
 {% endhint %}
 
 To get vulnerability details about your Kubernetes workloads, a Snyk admin must first install the Snyk Controller onto your cluster. The Snyk Controller is published in [Helm Hub](https://hub.helm.sh/charts/snyk/snyk-monitor).
@@ -104,7 +104,7 @@ To add any additional, optional Snyk Controller steps that fit your environment,
 
 If you are an existing customer and are updating your Snyk Controller:
 
-1. Create a service account token as described on the [prerequisites page](prerequisites-for-snyk-controller.md). This token will be stored in the `snyk-monitor` secret.
+1. Create a service account token as described on the [prerequisites page](prerequisites-for-installing-the-snyk-controller.md). This token will be stored in the `snyk-monitor` secret.
 2. Delete your existing `snyk-monitor` secret:
 
 ```shell
