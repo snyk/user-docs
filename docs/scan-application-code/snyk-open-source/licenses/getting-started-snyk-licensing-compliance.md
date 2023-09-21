@@ -56,7 +56,7 @@ Snyk shows license issues in both your direct and transitive dependencies, in th
 
 ![Dependencies overview within a dependency project](<../../../.gitbook/assets/Screenshot 2023-05-15 at 13.14.32.png>)
 
-Click the tree icon (![](<../../../.gitbook/assets/image (1) (4).png>)) to view a full dependency tree. This shows the dependency that introduced the license issue:
+Click the tree icon (![](<../../../.gitbook/assets/image (1) (4) (1).png>)) to view a full dependency tree. This shows the dependency that introduced the license issue:
 
 <div align="left">
 

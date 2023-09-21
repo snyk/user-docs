@@ -21,7 +21,7 @@ Run queries against a repository from your Snyk Project list. The list contains 
 5. (Optional) If a repository is already selected, click **Select new repo** to run the query.
 6.  Write your query in the **Code query** panel with [suggestive AI support](how-custom-rules-work.md#suggestive-ai-support).&#x20;
 
-    <figure><img src="../../../.gitbook/assets/writing_query.gif" alt="Writing a query"><figcaption><p>Writing a query</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/writing_query (2).gif" alt="Writing a query"><figcaption><p>Writing a query</p></figcaption></figure>
 7. **Run query**.
 8. [Analyze the query results](run-query.md#analyze-query-results).
 9. (Optional) [Save the custom rule you created](run-query.md#save-custom-rule).

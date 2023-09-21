@@ -6,7 +6,7 @@ Snyk shows your preferred Organization by default when you log into the Snyk Web
 
 If your company has multiple Groups, you must be aware of the Group you are viewing. Each Group contains different Organizations and has different settings.
 
-To navigate to a different Group, click the Group switcher (![Switcher](<../../.gitbook/assets/image (4) (3).png>) icon) and select a Group:
+To navigate to a different Group, click the Group switcher (![Switcher](<../../.gitbook/assets/image (4) (3) (1).png>) icon) and select a Group:
 
 <div align="left">
 
