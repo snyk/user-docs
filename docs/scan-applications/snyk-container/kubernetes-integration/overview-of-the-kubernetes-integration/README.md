@@ -11,11 +11,11 @@ Snyk is able to integrate with Kubernetes, enabling you to import and scan your 
 
 The Kubernetes integration follows the below process:&#x20;
 
-1. Your administrator installs a controller on your cluster, authenticating the integration with a unique integration ID and a service account token with the needed permissions generated from the Snyk account. For more information, including the permissions needed, see [Prerequisites for Snyk Controller](../use-the-snyk-controller/prerequisites-for-installing-the-snyk-controller.md).
+1. Your administrator installs a controller on your cluster, authenticating the integration with a unique integration ID and a service account token with the needed permissions generated from the Snyk account. For more information, including the permissions needed, see [Prerequisites for Snyk Controller](broken-reference).
 2. You install the controller with one of the options:
-   * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](../use-the-snyk-controller/install-the-snyk-controller-with-helm.md)
-   * [Install the Snyk controller with OpenShift and OperatorHub](../use-the-snyk-controller/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
-   * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../use-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
+   * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](../install-the-snyk-controller/install-the-snyk-controller-with-helm.md)
+   * [Install the Snyk controller with OpenShift and OperatorHub](../install-the-snyk-controller/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
+   * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../install-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
 3. The controller communicates with the Kubernetes API to determine which workloads are running on the cluster (for example the Deployment, ReplicationController, CronJob, and so on), find their associated images, and scan them for vulnerabilities directly on the cluster.
 4. On the Snyk side, collaborators select which workloads to import, or which workloads can be imported automatically using annotations. See [Adding Kubernetes workloads for security scanning](../../../../scan-containers/kubernetes-integration/kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md).
 5. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image as well as a summary of the configuration issues that have been identified with the workload.

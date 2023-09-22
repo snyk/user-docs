@@ -1,4 +1,6 @@
-# Prerequisites for installing the Snyk Controller
+# Install the Snyk Controller
+
+## Prerequisites to installing the Snyk Controller
 
 {% hint style="info" %}
 **Feature availability**\

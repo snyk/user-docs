@@ -1,7 +1,7 @@
 # Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)
 
 {% hint style="danger" %}
-Before following the steps on this page, review the [prerequisites page](prerequisites-for-installing-the-snyk-controller.md).
+Before following the steps on this page, review the [prerequisites page](broken-reference).
 {% endhint %}
 
 {% hint style="info" %}
