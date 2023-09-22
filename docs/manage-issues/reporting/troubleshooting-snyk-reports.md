@@ -28,7 +28,7 @@ Historical data for Snyk Code issue reports entered General Availability (GA) in
 
 ## Data freshness
 
-Data is available in reporting approximately one hour after a scan occurs.
+Data is available in reporting approximately one hour after a scan occurs. Data refreshes hourly and should therefore always be updated within two hours. Note the exception for ignores that follows.
 
 ## Ignores in reporting
 
