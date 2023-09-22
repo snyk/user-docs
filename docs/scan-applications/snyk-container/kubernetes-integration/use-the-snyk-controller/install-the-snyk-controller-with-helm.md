@@ -1,7 +1,7 @@
 # Install the Snyk controller with Helm (Azure and Google Cloud Platform)
 
 {% hint style="info" %}
-Ensure you have reviewed the prerequisites for installing the Snyk Controller.
+Ensure you have reviewed the [prerequisites for installing the Snyk Controller](./#prerequisites-for-installing-the-snyk-controller).
 {% endhint %}
 
 To receive vulnerability details about your Kubernetes workloads, a Snyk admin must first install the Snyk Controller onto your cluster. The Snyk Controller is published in [Helm Hub](https://hub.helm.sh/charts/snyk/snyk-monitor).
