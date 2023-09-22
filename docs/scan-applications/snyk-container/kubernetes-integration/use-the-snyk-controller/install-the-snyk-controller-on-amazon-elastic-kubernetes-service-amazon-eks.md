@@ -38,7 +38,7 @@ Use a unique namespace to isolate the controller resources easily. This is gener
 }
 ```
 
-For additional setup for Private Registries,to see [Private Container Registry authentication](../../../../scan-containers/kubernetes-integration/snyk-controller-installation/private-container-registry-authentication.md).
+For additional setup for Private Registries,to see [Private Container Registry authentication](private-container-registry-authentication.md).
 
 4\. Create a secret with your **Integration ID**, **Service Account Token** and **dockercfg.json** file added:
 

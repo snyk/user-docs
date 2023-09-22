@@ -1,10 +1,10 @@
-# Optional installation steps for Snyk Controller with Helm
+# Optional installation steps for the Snyk Controller with Helm
 
-The installation steps to use depend on how you want to configure Snyk Controller to fit your environment. Follow the applicable steps from the list that follows.
+The installation steps depend on how you want to configure the Snyk Controller to fit your environment. Follow the applicable steps that match your situation.
 
 ## **Use a registry with a self-signed or additional certificate**
 
-If your registry is using self-signed or other additional certificates, you must make those available to Snyk monitor. First place the `.crt`, `.cert`, and `.key` files in a directory and create a ConfigMap:
+If your registry is using self-signed or other additional certificates, you must make them available to Snyk monitor. To do this, first place the `.crt`, `.cert`, and `.key` files in a directory and create a ConfigMap:
 
 ```
 kubectl create configmap snyk-monitor-certs \
@@ -21,7 +21,7 @@ location = "internal-registry-for-example.net/bar"
 insecure = true
 ```
 
-See the [GitHub container image documentation](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md) for information on the format and more examples. After you create the file, you can use it to create the following ConfigMap:
+For information on the format and more examples, see the [GitHub container image documentation](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md). After you create the file, you can use it to create the following ConfigMap:
 
 ```
 kubectl create configmap snyk-monitor-registries-conf \
@@ -31,13 +31,13 @@ kubectl create configmap snyk-monitor-registries-conf \
 
 ## **Use a proxy for outbound connection to Snyk**
 
-If you are using a proxy for the outbound connection to Snyk, you must configure the integration to use that proxy. To configure the proxy set the following values provided in the Helm Chart:
+If you are using a proxy for the outbound connection to Snyk, you must configure the integration to use that proxy. To configure the proxy, set the following values provided in the Helm Chart:
 
 * `http_proxy`
 * `https_proxy`
 * `no_proxy`
 
-Example:
+For example:
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
@@ -46,11 +46,13 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
              --set https_proxy=http://192.168.99.100:8080
 ```
 
-Note that the integration does not support CIDR address ranges or wildcards in the `no_proxy` value. Only exact matches are supported.
+{% hint style="info" %}
+The integration does not support CIDR address ranges or wildcards in the `no_proxy` value. Only exact matches are supported.
+{% endhint %}
 
 ## **Change the logging verbosity**
 
-If you would like to change the logging verbosity, you can do so as follows. Valid levels are `INFO`, `WARN,` `ERROR` and `DEBUG`. Snyk defaults to `INFO`.
+You can change the logging verbosity. Valid levels are `INFO`, `WARN,` `ERROR` and `DEBUG`. Snyk defaults to `INFO`. To change the logging verbosity, use the following command:
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
@@ -61,7 +63,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 
 ## **Enable a Pod Security Policy**
 
-By default, the controller will run without a [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/). However, this can be enabled by passing a setting:
+By default, the controller runs without a [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/). You can enable it by passing a setting:
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
@@ -70,7 +72,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
              --set psp.enabled=true
 ```
 
-You can reuse an existing Pod Security Policy by specifying the name. If you do not specify a name, a new policy will be created automatically.
+You can reuse an existing Pod Security Policy by specifying the name. If you do not specify a name, a new policy is created automatically.
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
@@ -80,16 +82,19 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
              --set psp.name=something
 ```
 
-## **Configure Snyk Controller with PersistentVolumeClaim (PVC)**
+## **Configure the Snyk Controller with PersistentVolumeClaim (PVC)**
 
-You can configure the Snyk controller to use a **PersistentVolumeClaim** (PVC) instead of the default emptyDir storage medium for temporarily pulling images.
+You can configure the Snyk Controller to use a PersistentVolumeClaim (PVC) instead of the default emptyDir storage medium to temporarily pull images.
 
-To create the PVC, you can use the Helm template provided by the Snyk chart or an already provisioned PVC. Use the following flags to control the PVC:\
-`pvc.enabled` - instructs the Helm Chart to use a PVC instead of an emptyDir\
-`pvc.create` - whether to create the PVC - this is useful when provisioning for the first time\
-`pvc.storageClassName` - controls the StorageClass of the PVC\
-`pvc.name` - the name of the PVC to use in Kubernetes\
-\
+To create the PVC, you can use the Helm template provided by the Snyk chart or an already provisioned PVC.
+
+To control the PVC, use the following flags:
+
+* `pvc.enabled` - instructs the Helm Chart to use a PVC instead of an emptyDir.
+* `pvc.create` - creates the PVC. This is useful when provisioning for the first time.
+* `pvc.storageClassName` - controls the StorageClass of the PVC.
+* `pvc.name` - the name of the PVC to use with Kubernetes.
+
 For example, you can run the following command on installation to provision and create the PVC:
 
 ```
@@ -100,7 +105,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
              --set pvc.name="snyk-monitor-pvc"
 ```
 
-On subsequent upgrades, you can drop the `pvc.create` flag because the PVC already exists:
+On subsequent upgrades, you can remove the `pvc.create` flag because the PVC already exists:
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \             
@@ -109,11 +114,11 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
              --set pvc.name="snyk-monitor-pvc"
 ```
 
-## **Configure Snyk Controller to exclude specific namespaces**
+## **Configure the Snyk Controller to exclude specific namespaces**
 
-By default, Snyk ignores scanning certain namespaces believed to be internal to Kubernetes (see the full list on [GitHub: snyk/kubernetes-monitor-chart, Configuring excluded namespaces](https://github.com/snyk/kubernetes-monitor/tree/master/snyk-monitor#configuring-excluded-namespaces).\
+By default, Snyk ignores scanning certain namespaces believed to be internal to Kubernetes. For the full list, see [Configuring excluded namespaces](https://github.com/snyk/kubernetes-monitor/tree/master/snyk-monitor#configuring-excluded-namespaces).\
 \
-You can change the default; Snyk allows configuring the excluded namespaces.
+You can change the default, as Snyk allows you to configure the excluded namespaces.
 
 When you add your own list of namespaces to exclude with the `excludedNamespaces` setting, Snyk overrides the default settings and uses the list of namespaces you provide.
 
