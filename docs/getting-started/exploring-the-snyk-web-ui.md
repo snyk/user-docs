@@ -59,7 +59,7 @@ Use the links for Projects on the dashboard to explore and manage the metadata, 
 
 ### **View reports**
 
-You can view [reports](../manage-risk/reporting/legacy-reports/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues.
+You can view [reports](../manage-issues/reporting/legacy-reports/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues.
 
 {% hint style="info" %}
 **Feature availability**\

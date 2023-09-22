@@ -1,6 +1,6 @@
 # Ignore resources for drift
 
-The `.snyk` policy file can be used to exclude resources from being considered IaC drift by `snyk iac describe`. See [the `.snyk` policy file doc](../../../manage-risk/policies/the-.snyk-file.md) for general information.
+The `.snyk` policy file can be used to exclude resources from being considered IaC drift by `snyk iac describe`. See [the `.snyk` policy file doc](../../../manage-issues/policies/the-.snyk-file.md) for general information.
 
 If you need to exclude only a set of resources, use `.snyk`. If you have more complex requirements, consider using filter rules. For more information see [Filter rules](filter-rules.md).
 

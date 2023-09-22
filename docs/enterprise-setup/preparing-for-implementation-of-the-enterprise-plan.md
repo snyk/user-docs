@@ -93,7 +93,7 @@ See [Getting Started with Snyk License Compliance Management](../scan-applicatio
 
 Security policies define the way your Organizations handle specific issues or exploit maturity levels. A policy can programmatically increase an issue’s severity rating, decrease the severity rating, or ignore the issue.
 
-See [Security policies](../manage-risk/policies/security-policies/) for more details.
+See [Security policies](../manage-issues/policies/security-policies/) for more details.
 
 ## How you will scan your applications
 
