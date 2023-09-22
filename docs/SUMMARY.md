@@ -394,7 +394,7 @@
         * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](scan-applications/snyk-container/kubernetes-integration/use-the-snyk-controller/install-the-snyk-controller-with-helm.md)
         * [Optional installation steps for the Snyk Controller with Helm](scan-applications/snyk-container/kubernetes-integration/use-the-snyk-controller/optional-installation-steps-for-snyk-controller-with-helm.md)
         * [Authenticate to private container registries](scan-applications/snyk-container/kubernetes-integration/use-the-snyk-controller/authenticate-to-private-container-registries.md)
-        * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](scan-applications/snyk-container/kubernetes-integration/use-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
+        * [Install the Snyk Controller on Amazon Elastic Kubernetes Service (Amazon EKS)](scan-applications/snyk-container/kubernetes-integration/use-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
         * [Install the Snyk controller with OpenShift 4 and OperatorHub](scan-applications/snyk-container/kubernetes-integration/use-the-snyk-controller/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
       * [Kubernetes integration features](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-features/README.md)
         * [Manually import Kubernetes workload project](scan-containers/kubernetes-integration/kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md)
