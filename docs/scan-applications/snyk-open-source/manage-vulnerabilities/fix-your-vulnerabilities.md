@@ -36,7 +36,7 @@ The summary area groups advice per package, and is displayed based on the best a
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png" alt="Upgrade issues tabs"><figcaption><p>Upgrade issues tabs</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00.png" alt="Patchable issues tabs"><figcaption><p>Patchable issues tabs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png" alt="Patchable issues tabs"><figcaption><p>Patchable issues tabs</p></figcaption></figure>
 
 You can also find additional advice and details further down on the Project details page:
 

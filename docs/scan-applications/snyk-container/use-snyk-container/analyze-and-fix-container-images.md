@@ -14,7 +14,7 @@ Depending on how you import images (Snyk Container CLI, Container Registry integ
 
 Snyk groups images and the applications found in the image. However, Snyk CLI does not use image tags for grouping, so Snyk does not do sub-grouping for the different image tags. Thus images from the same repository with different image tags are all grouped.
 
-<figure><img src="../../../.gitbook/assets/image (152).png" alt="Images with different image tags in one group"><figcaption><p>Images with different image tags grouped in one group</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (152) (1).png" alt="Images with different image tags in one group"><figcaption><p>Images with different image tags grouped in one group</p></figcaption></figure>
 
 ### Project grouping when importing images with Container Registry integration
 
@@ -38,7 +38,7 @@ You can filter for all container Projects, as shown in the following example:
 
 When you open any container Project, the resulting analysis and fix advice appear in the Snyk Web UI:
 
-<figure><img src="../../../.gitbook/assets/image (315) (1).png" alt="Analysis and fix advice for a Project"><figcaption><p>Analysis and fix advice for a Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (315) (1) (1).png" alt="Analysis and fix advice for a Project"><figcaption><p>Analysis and fix advice for a Project</p></figcaption></figure>
 
 The following information is displayed:
 
@@ -56,7 +56,7 @@ You can use filters. When viewing a container Project, you can use the filters a
 * **OS BINARIES** - to see a specific binary or OS packages for binaries and packages containing issues
 * **IMAGE LAYER** - to see Dockerfile instructions. If you attach your Dockerfile, you can filter to view issues associated only with the base image view Dockerfile-related advice (user instruction), or both.
 
-<figure><img src="../../../.gitbook/assets/image (195) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Filters for binaries and images"><figcaption><p>Filters for binaries and images</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (195) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Filters for binaries and images"><figcaption><p>Filters for binaries and images</p></figcaption></figure>
 
 {% hint style="info" %}
 If there is only one category of issues in your container, for example, Node binary vulnerabilities or OS packages, this filter does not appear.\
@@ -80,4 +80,4 @@ Recommendations for upgrading the base image include:
 * the number of vulnerabilities existent in the recommended upgrade
 * a summary of the vulnerability severities accordingly.
 
-<figure><img src="../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>

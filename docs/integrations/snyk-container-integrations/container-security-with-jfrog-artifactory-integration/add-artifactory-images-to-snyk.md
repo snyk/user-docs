@@ -16,7 +16,7 @@ Snyk tests and monitors your Artifactory container images by evaluating the tags
 
 * The view **Which images do you want to test?** opens, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
-<figure><img src="../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en (1) (1) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (10).png" alt="All available images for the registry to which you connected"><figcaption><p>All available images for the registry to which you connected</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en (1) (1) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (22).png" alt="All available images for the registry to which you connected"><figcaption><p>All available images for the registry to which you connected</p></figcaption></figure>
 
 * Select single or multiple images using any or all of the following methods:
   * Type the name of a single image for import in the Image Name field (at number 1, the image name field, in the image above),
