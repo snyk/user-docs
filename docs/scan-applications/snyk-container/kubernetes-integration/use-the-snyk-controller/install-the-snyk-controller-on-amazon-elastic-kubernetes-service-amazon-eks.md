@@ -38,7 +38,7 @@ Use a unique namespace to isolate the controller resources easily. This is gener
 }
 ```
 
-For additional setup for Private Registries,to see [Private Container Registry authentication](authenticate-to-a-private-container-registry.md).
+For additional setup for Private Registries,to see [Private Container Registry authentication](authenticate-to-private-container-registries.md).
 
 4\. Create a secret with your **Integration ID**, **Service Account Token** and **dockercfg.json** file added:
 
