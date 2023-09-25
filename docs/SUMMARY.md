@@ -553,7 +553,7 @@
     * [License policies](manage-issues/policies/license-policies/README.md)
       * [Create a license policy and rules](manage-issues/policies/license-policies/create-a-license-policy-and-rules.md)
       * [License policy results](manage-issues/policies/license-policies/license-policy-results.md)
-  * [Manage your AppSec program with Enterprise Analytics](manage-issues/manage-your-appsec-program-with-enterprise-analytics.md)
+  * [Enterprise Analytics](manage-risk/enterprise-analytics.md)
   * [Reporting](manage-issues/reporting/README.md)
     * [Introducing Snyk Reports](manage-issues/reporting/getting-started-with-snyk-reports.md)
     * [Available Snyk Reports](manage-issues/reporting/available-snyk-reports.md)
