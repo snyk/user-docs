@@ -1,6 +1,6 @@
-# Snyk IaC examples
+# Manage current IaC issues
 
-The pages shows examples of results displayed for the original IaC.
+The pages shows examples of results displayed for current IaC.
 
 ## Terraform Cloud and Helm examples
 

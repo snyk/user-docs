@@ -1,10 +1,10 @@
-# Manage cloud and IaC+ rules
+# Manage IaC+ and cloud rules
 
 {% hint style="info" %}
 The name of the rule settings page differs based on the products enabled for your Organization.
 {% endhint %}
 
-If [Snyk IaC+](./) is enabled for your Organization, you can view a list of all Snyk Cloud and IaC rules on the Organization **Settings > Snyk Cloud & IaC** page.
+If [Snyk IaC+](../snyk-iac+/) is enabled for your Organization, you can view a list of all Snyk Cloud and IaC rules on the Organization **Settings > Snyk Cloud & IaC** page.
 
 Each rule links to detailed fix advice on the [Cloud Security Rules](https://security.snyk.io/rules/cloud/) site.
 

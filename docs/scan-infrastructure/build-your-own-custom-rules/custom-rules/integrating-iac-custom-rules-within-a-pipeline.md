@@ -10,7 +10,7 @@ This example shows how a security team can:
 * Use GitHub Actions to add different development-time steps to their pipelines
 * Configure a different GitHub repository to run a GitHub Action pipeline that uses the custom rules to gate changes.
 
-Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository for the example; this repo contains all the custom rules written while [getting started with the SDK](../../../scan-infrastructure/custom-rules/writing-rules-using-the-sdk/).
+Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository for the example; this repo contains all the custom rules written while [getting started with the SDK](writing-rules-using-the-sdk/).
 
 **Aims:** Configure our pipeline to:
 
@@ -21,7 +21,7 @@ Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-e
 
 ## Adding PR checks using GitHub Action
 
-An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where there is an attempt to add a new rule called `my_rule.` This is the same rule shown for [learning how to write a rule](getting-started-with-the-sdk/writing-a-rule.md).
+An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where there is an attempt to add a new rule called `my_rule.` This is the same rule shown for [learning how to write a rule](writing-rules-using-the-sdk/writing-a-rule.md).
 
 To verify that this rule works as expected, unit tests were implemented. To run the unit tests as part of PR checks, a GitHub Action was configured previously under `.github/workflows` called `test.yml`:
 
@@ -146,7 +146,7 @@ jobs:
 It looks like the previous workflow, but there are a few things to note about this one:
 
 * It was configured to run only on `main` branches, so that it runs when PRs are merged.
-* A step was added to authenticate with Docker Hub, our chosen OCI registry. For a list of supported registries, read about [pushing bundles](getting-started-with-the-sdk/pushing-a-bundle.md). Use the [docker/login-action](https://github.com/docker/login-action) GitHub Action to do that and be sure to configure the GitHub secrets under `Settings` -> `Secrets`.
+* A step was added to authenticate with Docker Hub, our chosen OCI registry. For a list of supported registries, read about [pushing bundles](writing-rules-using-the-sdk/pushing-a-bundle.md). Use the [docker/login-action](https://github.com/docker/login-action) GitHub Action to do that and be sure to configure the GitHub secrets under `Settings` -> `Secrets`.
 * A step was added to run `snyk-iac-rules build` followed by `snyk-iac-rules push`, which will publish the generated custom rules bundle to an OCI registry.
 
 ## Versioning rules

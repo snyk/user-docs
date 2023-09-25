@@ -1,4 +1,8 @@
-# Terraform variables support
+# Terraform variables support (current IaC)
+
+{% hint style="info" %}
+This page applies to current IaC only.
+{% endhint %}
 
 Support for Terraform (TF) variables is currently available only in the CLI. Snyk currently supports:
 

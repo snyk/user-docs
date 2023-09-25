@@ -1,4 +1,4 @@
-# Build your own IaC to cloud custom rules
+# IaC+ and cloud custom rules
 
 {% hint style="info" %}
 **Feature availability**\
@@ -30,10 +30,10 @@ Complementing Snyk’s predefined rules, IaC to Cloud Custom Rules enables you t
 
 The following are the steps in using Cloud Custom Rules:
 
-1. [Create a Custom Rules Project](../../../scan-cloud-configurations/integrated-iac-with-cloud-context/build-your-own-iac-to-cloud-custom-rules/create-a-custom-rules-project.md)
-2. [Create a Custom Rule](../../../scan-cloud-configurations/snyk-iac+/build-your-own-iac+-to-cloud-custom-rules/create-a-custom-rule.md)
-3. [(Recommended) Write a Custom Rule Spec (Unit Test)](../../../scan-cloud-configurations/snyk-iac+/build-your-own-iac+-to-cloud-custom-rules/recommended-write-a-custom-rule-spec-unit-test.md)
-4. [(Recommended) Test your Custom Rule](../../../scan-cloud-configurations/snyk-iac+/build-your-own-iac+-to-cloud-custom-rules/recommended-test-your-custom-rule.md)
-5. [Build, bundle, and upload your Custom Rules](../../../scan-cloud-configurations/snyk-iac+/build-your-own-iac+-to-cloud-custom-rules/build-bundle-and-upload-your-custom-rules.md)
-6. [Enforce your Custom Rules](../../../scan-cloud-configurations/snyk-iac+/build-your-own-iac+-to-cloud-custom-rules/enforce-your-custom-rules.md)
-7. [Explore example Custom Rules](../../../scan-cloud-configurations/snyk-iac+/build-your-own-iac+-to-cloud-custom-rules/explore-example-custom-rules.md)
+1. [Create a Custom Rules Project](create-a-custom-rules-project.md)
+2. [Create a Custom Rule](create-a-custom-rule.md)
+3. [(Recommended) Write a Custom Rule Spec (Unit Test)](recommended-write-a-custom-rule-spec-unit-test.md)
+4. [(Recommended) Test your Custom Rule](recommended-test-your-custom-rule.md)
+5. [Build, bundle, and upload your Custom Rules](build-bundle-and-upload-your-custom-rules.md)
+6. [Enforce your Custom Rules](enforce-your-custom-rules.md)
+7. [Explore example Custom Rules](explore-example-custom-rules.md)

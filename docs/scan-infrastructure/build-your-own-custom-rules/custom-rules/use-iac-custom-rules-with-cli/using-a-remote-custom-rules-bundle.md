@@ -1,6 +1,6 @@
 # Using a remote custom rules bundle
 
-After you generate your custom rules bundle, you can distribute it to one of the supported OCI registries by following the steps in [Pushing a bundle](../getting-started-with-the-sdk/pushing-a-bundle.md).
+After you generate your custom rules bundle, you can distribute it to one of the supported OCI registries by following the steps in [Pushing a bundle](../writing-rules-using-the-sdk/pushing-a-bundle.md).
 
 After successfully pushing your custom rules bundle, you can enforce the use of the bundle using any of the following:
 
@@ -26,7 +26,7 @@ After you have completed this configuration, you can run a Snyk IaC scan. The CL
 snyk iac test <file>
 ```
 
-The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](../../snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/).
+The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](../../../../scan-cloud-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/).
 
 {% hint style="warning" %}
 Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the Snyk API. Alternatively, clear any previously-stored settings using `snyk config unset`.

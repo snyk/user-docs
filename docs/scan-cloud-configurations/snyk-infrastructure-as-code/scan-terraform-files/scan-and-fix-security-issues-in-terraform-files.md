@@ -1,12 +1,16 @@
-# Scan and fix security issues in Terraform files
+# Scan and fix security issues in Terraform files (current IaC)
+
+{% hint style="info" %}
+This page applies to current IaC only.
+{% endhint %}
 
 Snyk scans your Terraform code for misconfigurations and security issues as well. After scanning configuration files, Snyk reports on any misconfigurations based on the settings your administrator implemented, and makes recommendations for fixing accordingly.
 
-## Prerequisites for scanning and fixing issues in Terraform files
+## Prerequisites for scanning and fixing issues in Terraform files in SCM repositories
 
 * An administrator should integrate your Organization with your preferred Git repository and enable detection of configuration files as described on [Configure your integration to find security issues in your Terraform files](../../../scan-infrastructure/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
 * You must have a Snyk account, and your Terraform files should be in `.tf` format.
-* We currently detect AWS, Azure, and GCP-related security issues.
+* We currently detect AWS, Azure, and Google Cloud-related security issues.
 
 ## Scan and fix your Terraform configuration files
 

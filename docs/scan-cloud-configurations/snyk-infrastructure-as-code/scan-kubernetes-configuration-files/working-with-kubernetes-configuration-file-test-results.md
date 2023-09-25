@@ -1,4 +1,8 @@
-# Working with Kubernetes configuration file test results
+# Working with Kubernetes configuration file test results (current IaC)
+
+{% hint style="info" %}
+This page applies to current IaC only.
+{% endhint %}
 
 After you have imported your configuration file, Snyk continuously monitors the repository for any related changes, re-testing your file at regular intervals based on the configurations in your settings. Recommendations are based on the relevant settings that your administrator configures and manages. See [Configure integration to find security issues in Kubernetes configuration files](../../../scan-infrastructure/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files.md).
 

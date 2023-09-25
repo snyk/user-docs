@@ -15,7 +15,7 @@ The steps follow to **download the IaC template**.
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-onboard-aws-ui-download-buttons.png" alt="The Add AWS Environment modal"><figcaption><p>The Add AWS Environment modal</p></figcaption></figure>
 
 {% hint style="info" %}
-You can also add a Cloud Environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments](../../../../scan-cloud-configurations/snyk-iac+/snyk-environments/view-add-and-remove-environments.md#add-an-environment).
+You can also add a Cloud Environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments](../../../../scan-infrastructure/introduction-to-iac+/snyk-environments/view-add-and-remove-environments.md#add-an-environment).
 {% endhint %}
 
 You can now proceed to [Step 2: Create the Snyk IAM role (Web UI)](step-2-create-the-snyk-iam-role.md).

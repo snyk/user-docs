@@ -1,6 +1,6 @@
 # View, add, and remove environments
 
-To view all [Snyk cloud context](../../../scan-infrastructure/snyk-iac+/) environments in an Organization, navigate to your Organization **Settings (cog icon) > Cloud environments**.
+To view all Snyk environments in an Organization, navigate to your Organization **Settings (cog icon) > Cloud environments**.
 
 The cloud environments table displays the following information for each environment:
 

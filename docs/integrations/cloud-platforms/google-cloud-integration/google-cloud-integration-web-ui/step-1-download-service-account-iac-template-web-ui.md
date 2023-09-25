@@ -17,5 +17,5 @@ You will use this IaC template to provision the role in [Step 2: Create the Goog
 You can now proceed to [Step 2: Create the Google service account.](../../../cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-web-ui/step-2-create-the-google-service-account-api.md)
 
 {% hint style="info" %}
-You can also add a cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments, Add a Cloud environment](../../../../scan-cloud-configurations/snyk-iac+/snyk-environments/view-add-and-remove-environments.md#add-an-environment).
+You can also add a cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments, Add a Cloud environment](../../../../scan-infrastructure/introduction-to-iac+/snyk-environments/view-add-and-remove-environments.md#add-an-environment).
 {% endhint %}
