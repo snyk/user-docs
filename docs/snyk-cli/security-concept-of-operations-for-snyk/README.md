@@ -7,3 +7,5 @@ These pages provide a description of the [Snyk CLI](../getting-started-with-the-
 * [Access requirements](access-requirements.md)
 * [Securing data at rest](securing-data-at-rest.md)
 * [Using FIPS-validated cryptography](using-fips-validated-cryptography.md)
+
+For more information, see [Snyk for government](https://snyk.io/government-security-solution/).
