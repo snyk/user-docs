@@ -33,4 +33,4 @@ To remove an IaC+ or cloud environment:
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-remove-env-ui.png" alt="Remove an environment in the Snyk Web UI"><figcaption><p>Remove an environment in the Snyk Web UI</p></figcaption></figure>
 
-You can also remove an environment using the [Snyk API](remove-a-snyk-cloud-environment.md#api).
+You can also remove an environment using the [Snyk API](../../../scan-cloud-configurations/snyk-iac+/snyk-environments/remove-a-snyk-cloud-environment.md#api).

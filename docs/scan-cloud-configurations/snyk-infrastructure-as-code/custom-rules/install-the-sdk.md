@@ -8,7 +8,7 @@
 * [​Install the SDK with the Windows Scoop package manager](install-the-sdk.md#install-the-sdk-with-the-windows-scoop-package-manager)
 * [Install the SDK with Docker](install-the-sdk.md#install-the-sdk-with-docker)
 
-After installation, you can get started writing rules with the [Getting started](writing-rules-using-the-sdk/) guide.
+After installation, you can get started writing rules with the [Getting started](../../../scan-infrastructure/custom-rules/writing-rules-using-the-sdk/) guide.
 
 ## Install the SDK with npm
 
@@ -124,5 +124,5 @@ docker run --rm -v $(pwd):/app snyk/snyk-iac-rules template -r {rule_name}
 
 ## More information about the SDK
 
-* [​Getting started with the SDK​](writing-rules-using-the-sdk/)
+* [​Getting started with the SDK​](../../../scan-infrastructure/custom-rules/writing-rules-using-the-sdk/)
 * ​[SDK reference​](sdk-reference.md)
