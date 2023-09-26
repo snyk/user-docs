@@ -1,7 +1,5 @@
 # Snyk Open Source
 
-## Introduction
-
 Developers everywhere use open source code because it enables fast development. The vast majority of the code making up modern applications is open source code. But this growing reliance exposes organizations to security vulnerabilities and license issues.
 
 Sometimes these issues are rooted deep in the code. Open source packages often reference other packages, and it is in these indirect dependencies that many vulnerabilities are found. Developers may not even realize which packages are being called.
