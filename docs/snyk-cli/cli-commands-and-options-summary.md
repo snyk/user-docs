@@ -24,11 +24,11 @@ Authenticate Snyk CLI with a Snyk account.
 
 ### [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test)
 
-Test a project for open source vulnerabilities and license issues.
+Test a project for open-source vulnerabilities and license issues.
 
 ### [`snyk monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-Snapshot and continuously monitor a project for open source vulnerabilities and license issues.
+Snapshot and continuously monitor a project for open-source vulnerabilities and license issues.
 
 ### [`snyk container`](https://docs.snyk.io/snyk-cli/commands/container)
 
@@ -41,6 +41,10 @@ Capture the container image layers and dependencies and monitor for vulnerabilit
 ### [snyk container test](https://docs.snyk.io/snyk-cli/commands/container-test)
 
 Test container images for any known vulnerabilities.
+
+### [`snyk container sbom`](https://docs.snyk.io/snyk-cli/commands/container-sbom)
+
+Generate an SBOM for a container image.
 
 ### [snyk iac](https://docs.snyk.io/snyk-cli/commands/iac)
 
@@ -149,6 +153,7 @@ Additional CLI commands have exit codes as listed in the following help docs:
 * [`snyk iac update-exclude-policy` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy#exit-codes)
 * [`snyk log4shell` exit codes](https://docs.snyk.io/snyk-cli/commands/log4shell#exit-codes)
 * [`snyk sbom` exit codes](https://docs.snyk.io/snyk-cli/commands/sbom#exit-codes)
+* [`snyk container sbom` exit codes](https://docs.snyk.io/snyk-cli/commands/container-sbom#exit-codes)
 
 ## Options for multiple commands
 
@@ -170,7 +175,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--dev`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](commands/sbom.md)
 
-`--org=<ORG_ID>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test), [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [container monitor](https://docs.snyk.io/snyk-cli/commands/container-monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe), [`iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+`--org=<ORG_ID>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test), [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [container monitor](https://docs.snyk.io/snyk-cli/commands/container-monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe), [`iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom), [`container sbom`](https://docs.snyk.io/snyk-cli/commands/container-sbom)
 
 `--file=<FILE>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
@@ -222,7 +227,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--app-vulns`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container`monitor](https://docs.snyk.io/snyk-cli/commands/container-monitor)
 
-`--exclude-app-vulns`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
+`--exclude-app-vulns`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor), [`container sbom`](https://docs.snyk.io/snyk-cli/commands/container-sbom)
 
 `--nested-jars-depth`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
 
@@ -314,9 +319,9 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--path=<PATH_TO_RESOURCE>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
-## `snyk sbom` command options
+## `snyk sbom` and `snyk container sbom` command options
 
-`--format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json>`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+`--format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json>`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom), s[nyk container sbom](https://docs.snyk.io/snyk-cli/commands/container-sbom)
 
 `[--file=] or [--f=]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
@@ -325,6 +330,8 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `[--version=<VERSION>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 `[<TARGET_DIRECTORY>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+
+`<IMAGE>`: [`snyk container sbom`](https://docs.snyk.io/snyk-cli/commands/container-sbom)
 
 ## Option for Maven projects
 
