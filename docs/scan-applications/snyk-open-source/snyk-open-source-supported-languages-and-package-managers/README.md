@@ -8,7 +8,7 @@ For environments supported with other Snyk products, see: [Snyk Code - Supported
 
 | **Language**                                                                                                                           | **Package manager / build tool**                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [.NET](../../supported-languages-and-frameworks/.net.md#open-source-and-licensing) (C#, F#, Visual Basic)                              | Nuget, Paket                                                                                        |
+| [.NET](../../supported-languages-and-frameworks/.net/#open-source-and-licensing) (C#, F#, Visual Basic)                                | Nuget, Paket                                                                                        |
 | [Bazel](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)   | [API Test Dep Graph endpoint](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph) |
 | [C / C++](../../supported-languages-and-frameworks/c-c++.md#open-source-and-licensing)                                                 | N/A                                                                                                 |
 | [Elixir](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md) | hex                                                                                                 |
