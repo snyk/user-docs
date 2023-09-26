@@ -12,7 +12,7 @@ If your workload persists in Snyk after it was deleted from your cluster, please
 
 Using the same integration ID, you can import multiple clusters to one Snyk Organization by giving clusters a unique cluster name during installation.
 
-The automatic import and delete feature also allows you to import from one cluster to multiple Snyk organizations. For more information, see [Advanced use of the automatic import and delete feature](./#advanced-use-of-the-automatic-import-and-delete-feature).
+The automatic import and delete feature also allows you to import from one cluster to multiple Snyk organizations. For more information, see [Advanced use of the automatic import and delete feature](automatically-import-and-delete-kubernetes-workload-projects.md#advanced-use-of-the-automatic-import-and-delete-feature).
 
 One Snyk Organization has a limit of 25,000 Projects. For more information, consult your Snyk admin.
 
@@ -20,7 +20,7 @@ One Snyk Organization has a limit of 25,000 Projects. For more information, cons
 
 You must first have an account with Snyk and be onboarded to your Organization by an administrator.
 
-In addition, you must configure the integration between Snyk and your Kubernetes environment per Organization. To ensure the integration is configured, ensure you have an Integration ID. For more information, see [Enable the Kubernetes integration](../../kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md).
+In addition, you must configure the integration between Snyk and your Kubernetes environment per Organization. To ensure the integration is configured, ensure you have an Integration ID. For more information, see [Enable the Kubernetes integration](../../../scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md).
 
 You can configure the Snyk Controller to automatically import and update scanned workloads directly in Snyk to scan and monitor for vulnerabilities. You can also automatically delete imported Projects once workloads are deleted from the cluster.
 
@@ -38,7 +38,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 `policyOrgs` is a list of Organization public IDs. You can add more than one Organization to use the auto-import and auto-delete capabilities. Your public ID is available on your Organization's settings page.
 
 {% hint style="info" %}
-Only Snyk Organizations that share the same Kubernetes integration ID can provision the Snyk Controller to do so. For more information on how to share the same integration ID, see [Clone an integration across your Snyk Organizations](../../../../enterprise-setup/snyk-broker/clone-an-integration-across-your-snyk-organizations.md).
+Only Snyk Organizations that share the same Kubernetes integration ID can provision the Snyk Controller to do so. For more information on how to share the same integration ID, see [Clone an integration across your Snyk Organizations](../../../enterprise-setup/snyk-broker/clone-an-integration-across-your-snyk-organizations.md).
 {% endhint %}
 
 ## Advanced use of the automatic import and delete feature
