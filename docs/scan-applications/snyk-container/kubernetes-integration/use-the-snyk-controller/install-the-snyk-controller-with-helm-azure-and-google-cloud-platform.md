@@ -1,4 +1,4 @@
-# Install the Snyk controller with Helm (Azure and Google Cloud Platform)
+# Install the Snyk Controller with Helm (Azure and Google Cloud Platform)
 
 {% hint style="info" %}
 Ensure you have reviewed the [prerequisites for installing the Snyk Controller](./#prerequisites-for-installing-the-snyk-controller).
@@ -115,7 +115,7 @@ If you are an existing customer and are updating your Snyk Controller:
 kubectl delete secret snyk-monitor -n snyk-monitor
 ```
 
-3. Follow the [mandatory installation steps](install-the-snyk-controller-with-helm.md#mandatory-installation-steps-for-the-snyk-controller-with-helm). To get the latest Helm chart version, run the following command:
+3. Follow the [mandatory installation steps](install-the-snyk-controller-with-helm-azure-and-google-cloud-platform.md#mandatory-installation-steps-for-the-snyk-controller-with-helm). To get the latest Helm chart version, run the following command:
 
 <pre><code><strong>helm repo add snyk-charts https://snyk.github.io/kubernetes-monitor --force-update
 </strong></code></pre>

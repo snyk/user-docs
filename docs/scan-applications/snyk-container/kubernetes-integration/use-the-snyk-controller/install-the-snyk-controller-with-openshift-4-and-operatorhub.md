@@ -1,5 +1,5 @@
-# Install the Snyk controller with OpenShift 4 and OperatorHub
+# Install the Snyk Controller with OpenShift 4 and OperatorHub
 
-Snyk Controller V2 is currently not available in the OpenShift Marketplace nor available as a community version.
+The Snyk Controller V2 is currently not available in the OpenShift Marketplace nor available as a community version.
 
-Snyk Controller V2 can still be installed in OpenShift using the [Helm install instructions](install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md).
+You can still install Snyk Controller V2 in OpenShift using the Helm install instructions. See [Install the Snyk Controller with Helm (Azure and Google Cloud Platform)](install-the-snyk-controller-with-helm-azure-and-google-cloud-platform.md).
