@@ -75,7 +75,7 @@ For reporting, you can generate reports using the [snyk-to-html](../../../scan-a
 
 #### **Open Source libraries**
 
-For C/C++ open source, use the **--unmanaged** option to analyze license compliance issues and known security issues associated with open source. See [Snyk for C/C++ (Open Source) ](broken-reference)for details.
+For C/C++ open source, use the **--unmanaged** option to analyze license compliance issues and known security issues associated with open source. See [Snyk for C/C++](../c-c++.md) for details.
 
 * To test, make sure the open source source code is present, and it may be placed in a vendor folder.&#x20;
 * If you precompile open source, the open source code must still be present. For Snyk to make an accurate comparison with its existing knowledge base, the open source code must remain present.
