@@ -17,7 +17,7 @@ The Kubernetes integration follows the below process:&#x20;
    * [Install the Snyk controller with OpenShift and OperatorHub](../use-the-snyk-controller/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
    * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../use-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
 3. The controller communicates with the Kubernetes API to determine which workloads are running on the cluster (for example the Deployment, ReplicationController, CronJob, and so on), find their associated images, and scan them for vulnerabilities directly on the cluster.
-4. On the Snyk side, collaborators select which workloads to import, or which workloads can be imported automatically using annotations. See [Adding Kubernetes workloads for security scanning](../../../../scan-containers/kubernetes-integration/kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md).
+4. On the Snyk side, collaborators select which workloads to import, or which workloads can be imported automatically using annotations. See [Adding Kubernetes workloads for security scanning](../manually-import-kubernetes-workload-projects.md).
 5. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image as well as a summary of the configuration issues that have been identified with the workload.
 6. Snyk continuously monitors your imported workloads and reports new vulnerabilities it identifies whenever they affect your Projects.
 7. Based on your configurations, if vulnerabilities are found, Snyk notifies you through email or Slack so that you can take immediate action.
