@@ -400,7 +400,7 @@
         * [Install the Snyk Controller with OpenShift 4 and OperatorHub](scan-applications/snyk-container/kubernetes-integration/use-the-snyk-controller/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
       * [Manually import Kubernetes workload projects](scan-applications/snyk-container/kubernetes-integration/manually-import-kubernetes-workload-projects.md)
       * [Automatically import and delete Kubernetes workload projects](scan-applications/snyk-container/kubernetes-integration/automatically-import-and-delete-kubernetes-workload-projects.md)
-      * [Snyk Sysdig integration](scan-applications/snyk-container/kubernetes-integration/snyk-sysdig-integration.md)
+      * [Integrate with Sysdig](scan-applications/snyk-container/kubernetes-integration/integrate-with-sysdig.md)
       * [Kubernetes integration UI explained](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/README.md)
         * [Viewing project details and test results](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/viewing-project-details-and-test-results.md)
         * [Snyk Priority Score and Kubernetes](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/snyk-priority-score-and-kubernetes.md)
