@@ -44,7 +44,7 @@ These commands find and report security issues in Infrastructure as Code files; 
 
 The `snyk code test` command finds security issues using Static Code Analysis.
 
-### [`snyk sbom`](sbom.md)
+### [`snyk sbom`](<sbom (1).md>)
 
 Produce an SBOM for a local software project in an ecosystem supported by Snyk.
 

@@ -74,12 +74,7 @@ Most framework are supported "out of the box" as Snyk Code only need to be able 
 
 ### Python frameworks
 
-{% hint style="info" %}
-These are some of the explicitly supported frameworks for Python; those are in addition to the general support for many frameworks.
-{% endhint %}
-
-* [Django](https://www.djangoproject.com): a framework for full-stack web application development and server development.
-* [Flask](https://palletsprojects.com/p/flask/) a lightweight [WSGI](https://wsgi.readthedocs.io) web application framework
+:link: [Python frameworks supporting code analysis](../supported-languages-and-frameworks/python.md#code-analysis)
 
 ### C and C++ frameworks
 

@@ -1,12 +1,27 @@
-# Snyk for Python
+# Python
 
-{% hint style="success" %}
-Snyk provides security scanning on Projects for vulnerabilities both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
+## Supported frameworks and package managers
+
+{% hint style="warning" %}
+You might encounter false positives or false negatives for partially supported frameworks and package managers.
 {% endhint %}
 
-This page describes how to use Snyk to scan Python Projects.
+### Code analysis
 
-## Features of Snyk for Python
+Snyk Code supports the following frameworks:
+
+* Django
+* Flask
+* Jinja2
+* PyYAML
+* Requests
+* urllib3
+
+### Open source and licensing
+
+{% hint style="info" %}
+Features may not be available, depending on your plan. See the [Plans and pricing ](https://snyk.io/plans/) page for more details.
+{% endhint %}
 
 | Package managers / Features                  | CLI support | Git support    | License scanning | Fix PRs |
 | -------------------------------------------- | ----------- | -------------- | ---------------- | ------- |
@@ -15,35 +30,53 @@ This page describes how to use Snyk to scan Python Projects.
 | [Pipenv](https://pipenv.pypa.io/en/latest/)  | ✔︎          | ✔︎ (Open beta) | ✔︎               |         |
 | setup.py                                     | ✔︎          |                | ✔︎               |         |
 
-{% hint style="info" %}
-**Feature availability**\
-Features may not be available, depending on your plan. See the [Plans and pricing ](https://snyk.io/plans/) page for more details.
-{% endhint %}
-
-## How Snyk for Python works
-
-Snyk builds a dependency tree, and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the dependencies in the tree.
+Snyk builds a dependency tree and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the dependencies in the tree.
 
 How Snyk analyzes and builds the tree varies depending on the language and package manager for the Project and the location of your Project.
-
-## Snyk CLI for Python Projects
-
-When you use the CLI, how Snyk analyzes and builds the tree varies depending on the language and package manager for the Project.
 
 {% hint style="info" %}
 To scan your Projects, you must first install the relevant package manager and ensure that your Project contains the supported manifest files.
 {% endhint %}
 
-### Snyk CLI options for Python
+## Getting started with Snyk for Python across environments
+
+### Snyk CLI&#x20;
+
+#### Prerequisites
+
+1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/).
+2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
+3. [Set the default Organization for all Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis).
+4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
+5. Ensure you have included the relevant manifest files supported by Snyk before testing.
+
+#### Code analysis
+
+To start testing your code using Snyk Code open your repository in a terminal and run the following  command:
+
+```javascript
+snyk code test
+```
+
+To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
+
+* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
+* [Exporting the test results to a JSON or SARIF file](../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md)
+
+#### Open source and licensing
+
+#### Snyk CLI options for Python
 
 For information about the `snyk test` options available for use with Python, see [Options for Python Projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects) in the `test` command help.&#x20;
 
 For the available `snyk monitor` options, see [Options for Python Projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects) in the `monitor` command help.
 
-### Pip and Snyk CLI
+#### Pip and Snyk CLI
 
 {% hint style="info" %}
-Run `pip install` before scanning with the CLI,`for` example:
+Run `pip install` before scanning with the CLI,`for` for example:
 
 ```
 pip install -r requirements.txt
@@ -52,7 +85,7 @@ pip install -r requirements.txt
 
 Pip `requirements.txt` files specify only top-level dependencies, not nested or transitive ones. Therefore, the full Pip Project must be installed to ensure the CLI can build a complete dependency tree.
 
-### Poetry and Snyk CLI
+#### Poetry and Snyk CLI
 
 To build the dependency tree for a Poetry application, Snyk uses `pyproject.toml` and `poetry.lock` files. Both files must be present for Snyk to scan Poetry dependencies and identify issues.
 
@@ -64,33 +97,51 @@ If no `poetry.lock` file is present; you should run `poetry lock` to generate on
 Snyk does not currently support PEP 621.
 {% endhint %}
 
-### Pipenv and Snyk CLI
+#### Pipenv and Snyk CLI
 
-To build the dependency tree for a Pipenv application, Snyk uses `Pipfile` and `Pipfile.lock` files. Both files must be present for Snyk to scan Poetry dependencies and identify issues.
+To build the dependency tree for a Pipenv application, Snyk uses `Pipfile` and `Pipfile.lock` files. Both files must be present for Snyk to scan Pipenv dependencies and identify issues.
 
 {% hint style="info" %}
-Run `pip install` before scanning with the CLI
+Run `pip install` before scanning with the CLI.
 {% endhint %}
 
 Run `pipenv install` to ensure the CLI can build an up-to-date, accurate dependency tree using `pipenv graph`.
 
-### setup.py and Snyk CLI
+#### setup.py and Snyk CLI
 
 To build the dependency tree, Snyk analyzes the `setup.py` file, and detects packages listed in the `install_requires` key.
 
 This file will not be discovered automatically by the CLI. It must be specified manually using the  `--file` option, for example:
 
-```
+```python
 snyk test --file=setup.py
 ```
 
 You can also convert `setup.py` to `requirements.txt` by installing the packages into a virtual environment and then running `pip freeze`.
 
-## Git services for Python Projects
+### Python version support
 
-To scan your Projects, you must ensure your repository contains the supported manifest files.
+Some Python Projects may have dependencies that are valid with certain versions of Python only.&#x20;
 
-### Pip and Git repositories
+Therefore, the version of Python used when scanning can affect the dependency tree Snyk generates.
+
+You can specify the version of Python that Snyk uses to scan dependencies in both the CLI and Git integration.
+
+#### Setting the Python version in the CLI
+
+Add the following option to `snyk test` or `snyk monitor` with the value of the Python binary:
+
+```python
+--command=python3
+```
+
+For details, see the [Test command help](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects) and the [Monitor command help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects).
+
+### Snyk Web UI (Git repository integration)
+
+To scan your Projects, you must ensure your repository contains the supported manifest files
+
+#### Pip and Git repositories
 
 {% hint style="warning" %}
 URLs in `requirements.txt` files are not supported, as this poses a security risk.\
@@ -105,13 +156,13 @@ Snyk also looks for files using the `**/requirements/*.txt` pattern. This can he
 
 If you are using a package manager that creates different manifest file formats from `requirements.txt`, then you may be able to convert or export the manifest file to the `requirements.txt` format.
 
-An example follows of how `dephell` is used to convert from  Conda `environments.yml` to a `requirements.txt`.
+An example follows of how `dephell` is used to convert from Conda `environments.yml` to a `requirements.txt`.
 
 ```python
 dephell deps convert --from=conda --to=requirements.txt
 ```
 
-### Poetry and Git repositories
+#### Poetry and Git repositories
 
 To scan Poetry Projects, Snyk inspects your `pyproject.toml` and `poetry.lock` files.
 
@@ -126,11 +177,11 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Poetry dev dependencies** option under the **Poetry dev dependencies** settings.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-03 at 16.00.22.png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (145).png" alt=""><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
-### Pipenv and Git repositories
+#### Pipenv and Git repositories
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Pipenv is available as an open beta feature, meaning that some of its functionalities might be subject to change.
 {% endhint %}
 
@@ -155,9 +206,9 @@ Pipenv dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Pipenv dev dependencies** option under the **Pipenv** settings.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-08-25 at 15.40.53.png" alt="Pipenv dev dependency settings"><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (146).png" alt=""><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>
 
-## Python version support
+### Python version support
 
 Some Python Projects may have dependencies that are valid with certain versions of Python only.&#x20;
 
@@ -165,29 +216,19 @@ Therefore, the version of Python used when scanning can affect the dependency tr
 
 You can specify the version of Python that Snyk uses to scan dependencies in both the CLI and Git integration.
 
-### Setting the Python version in the CLI
-
-Add the following option to `snyk test` or `snyk monitor` with the value of the Python binary:
-
-```
---command=python3
-```
-
-For details, see the [Test command help](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects) and the [Monitor command help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects).
-
-### Setting the Python version in Git Projects
+#### Setting the Python version in Git Projects
 
 #### Pip and Python versions
 
 {% hint style="info" %}
 When you are scanning Pip Projects imported from Git, Snyk uses Python 2 or 3.&#x20;
 
-Currently supported versions are `2.7.16` and `3.7.4`.
+Currently supported versions are `2.7.16` and `3.7.4`
 {% endhint %}
 
 By default, Snyk tests Pip Projects using Python 3.
 
-To define which Python Major version Snyk uses to test your Git-imported Pip Projects, use either Organization settings or a [`.snyk` policy file](../../../manage-issues/policies/the-.snyk-file.md).
+To define which Python Major version Snyk uses to test your Git-imported Pip Projects, use either Organization settings or a [`.snyk` policy file](../../manage-issues/policies/the-.snyk-file.md).
 
 To define the Python version for all Projects in an Organization:
 
@@ -196,7 +237,7 @@ To define the Python version for all Projects in an Organization:
 3. Select **Edit settings** for **Python**.
 4. From the **Python version** dropdown, select the **Python 2** or **Python 3** version to use when testing Projects for this Organization.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-08-25 at 16.07.26.png" alt="Pip Python version settings"><figcaption><p>Pip Python version settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption><p>Pip Python version settings</p></figcaption></figure>
 
 Snyk recommends you create different Organizations to work with different Python versions.
 
@@ -244,7 +285,7 @@ There is no need to inform Snyk about Python versions for Poetry Projects.
 
 Poetry files contain sufficient information to build a full dependency tree without running native tooling.
 
-## Scanning Python Projects in IDEs
+### Snyk integrations&#x20;
 
 If you are using any of the supported IDEs to write Python, there are some configurations you must add to scan Python manifest files properly.
 
@@ -253,3 +294,7 @@ If you are using a virtual environment, you must add the `PYTHON_PATH` to the **
 However, if you have manifest files in other directories within the root of the Project, Snyk cannot identify them. For Snyk to find them, you must use the `--all-projects` option. Snyk then recursively searches each Project directory to find all the manifest files.
 
 If those directories each require a different virtual environment to run, the Snyk scan will not be successful because it will use one virtual environment to search for installed dependencies. In this case, it is best to use the CLI or the Git integration to get vulnerability information on all the dependencies listed in each Project directory.
+
+## Troubleshooting
+
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;

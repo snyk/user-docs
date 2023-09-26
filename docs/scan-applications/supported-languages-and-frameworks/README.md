@@ -13,7 +13,7 @@ Snyk supports the following languages&#x20;
 * [Java and Kotlin](java-and-kotlin.md)
 * [JavaScript](javascript.md)
 * [PHP](php.md)
-* [Python](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python.md)&#x20;
+* [Python](python.md)&#x20;
 * [Ruby](ruby.md)
 * [Scala](scala.md)
 * [Swift and Objective-C](swift-and-objective-c.md)

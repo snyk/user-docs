@@ -30,7 +30,7 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
     <figure><img src="../../../.gitbook/assets/6 (2) (1) (1) (1) (1).png" alt="Enter details from Google Workspace"><figcaption><p>Enter details from Google Workspace</p></figcaption></figure>
 7.  Scroll up to step 1 and copy the **Entity ID** and **ACS URL**.
 
-    <figure><img src="../../../.gitbook/assets/7.png" alt="Copy details from Snyk"><figcaption><p>Copy details from Snyk</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/7 (1) (1).png" alt="Copy details from Snyk"><figcaption><p>Copy details from Snyk</p></figcaption></figure>
 8.  Go back to the Google admin portal , click **Continue,** and paste those two values into their respective fields. Then tick **Signed response**.
 
     <figure><img src="../../../.gitbook/assets/8 (2) (1).png" alt="Enter details from Snyk in Google"><figcaption><p>Enter details from Snyk in Google</p></figcaption></figure>
