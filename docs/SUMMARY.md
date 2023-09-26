@@ -779,7 +779,7 @@
     * [Log4shell](snyk-cli/commands/log4shell.md)
     * [Monitor](snyk-cli/commands/monitor.md)
     * [Policy](snyk-cli/commands/policy.md)
-    * [SBOM](<snyk-cli/commands/sbom (1).md>)
+    * [SBOM](<snyk-cli/commands/sbom.md>)
     * [Test](snyk-cli/commands/test.md)
   * [Install or update the Snyk CLI](snyk-cli/install-or-update-the-snyk-cli/README.md)
     * [Verifying CLI standalone binaries](snyk-cli/install-or-update-the-snyk-cli/verifying-cli-standalone-binaries.md)
