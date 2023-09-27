@@ -3,22 +3,22 @@
 
 
 {% hint style="warning" %}
-This feature is deprecated and Snyk no longer maintains it, for auto import/deletion of Kubernetes workload please follow instruction [here](automatically-import-and-delete-kubernetes-workload-projects.md)
+This feature is deprecated, and Snyk no longer maintains it. For more information on workload auto-import and auto-delete, see [Automatically import and delete Kubernetes workload projects](automatically-import-and-delete-kubernetes-workload-projects.md).
 {% endhint %}
 
-Once an administrator for your Snyk account has installed the Snyk controller on your Kubernetes cluster, add workloads for testing. Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk
+After a Snyk administrator has installed the Snyk Controller on your Kubernetes cluster, you can add workloads for scanning. Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk.
 
-## Automatically add, update and remove workloads
+## Automatically add, update, and remove workloads
 
-Once you’ve configured the integration between Snyk and your cluster, you can annotate your workloads in order to have them automatically added as projects for testing in Snyk.
+After you have configured the integration between Snyk and your cluster, you can annotate your workloads in order to have them automatically added to Snyk as Projects to scan.
 
 {% hint style="info" %}
-The annotated import happens when the **image** itself changes (rescans the workload due to image change) or when the **workload details** change (which creates a new revision of the workload). Changing the annotation for the workload will not cause a workload change.
+The annotated import occurs when the image itself changes (the workload is rescanned due to image change) or when the workload details change (which creates a new revision of the workload). Changing the annotation for the workload does not cause a workload change.
 
-If the workload is only annotated after it has been scanned by `snyk monitor the` annotation will not be recognized until a significant change takes place that causes a full rescan. Terminating the `snyk monitor` pod is one way to force a rescan.
+If the workload is only annotated after it has been scanned by `snyk-monitor ,`the annotation is not recognized until a significant change takes place that causes a full rescan. One way to force a rescan is to terminate the `snyk-monitor` pod.
 {% endhint %}
 
-Annotate any of the following workload types:
+You can annotate any of the following workload types:
 
 * Deployments
 * ReplicaSets
@@ -29,32 +29,35 @@ Annotate any of the following workload types:
 * ReplicationControllers
 * Pods
 
-**The steps follow:**
+To do this:
 
-1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **General**.
-3. Copy the **Organization ID** value.
-4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1`, entering the Organization ID as the value in a comma-separated list.
+1. In Snyk, navigate to the relevant Group and Organization that you want to manage.
+2. Navigate to **Settings** > **General**.
+3. Copy the **Organization ID**.
+4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1`, and add the Organization ID as the value in a comma-separated list.
 
-You can also annotate a single workload to be added to multiple organizations.
+You can also annotate a single workload to be added to multiple Organizations. To do this:
 
-1.  The Snyk controller automatically picks up on the changes to your workload and ensures that the workload is automatically imported to Snyk as a Snyk project.
+1. The Snyk Controller automatically picks up on the changes to your workload and ensures that the workload is automatically imported to Snyk as a Snyk Project.
 
-    Example: Deployment YAML file annotated to be automatically imported into an organization
+For example:
 
-    ```
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: my-app-deployment
-      annotations:
-        orgs.k8s.snyk.io/v1: cacb791e-07cc-4b10-b4be-64de19f532f1
+Deployment YAML file annotated to be automatically imported into an Organization:
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+  annotations:
+    orgs.k8s.snyk.io/v1: cacb791e-07cc-4b10-b4be-64de19f532f1
+spec:
+  template:
     spec:
-      template:
-        spec:
-          containers:
-          …
-    ```
+      containers:
+      …
+```
 
-    To annotate for multiple organizations use a comma-separated list.
-2. Once imported, the project remains in your Snyk organization even if you remove the annotation. To remove the project from Snyk, you should delete the annotation and delete it from the Snyk UI or [with the API](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project).
+To annotate for multiple Organizations, use a comma-separated list.
+
+2. Once imported, the Project remains in your Snyk Organization even if you remove the annotation. To remove the Project from Snyk, you must delete the annotation and delete the Project from the Snyk UI or [with the API](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project).
