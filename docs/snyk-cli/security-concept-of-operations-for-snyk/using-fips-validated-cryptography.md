@@ -40,7 +40,7 @@ On Windows, Snyk supports FIPS-validated cryptography through the Windows CNG AP
 
 To enable FIPS on Windows, [use the Windows FIPS policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#step-3-enable-the-fips-security-policy).
 
-For testing, FIPS can be enabled using the following registry key   `HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\FipsAlgorithmPolicy` by setting the value of `Enabled` to 1.
+For testing, FIPS can be enabled using the following registry key   `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy` by setting the value of `Enabled` to 1.
 
 #### Download FIPS-enabled binaries
 

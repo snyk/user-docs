@@ -21,7 +21,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
     <figure><img src="../../../.gitbook/assets/3.png" alt="Add Snyk configuration details" width="563"><figcaption><p>Add Snyk configuration details</p></figcaption></figure>
 6.  Select **Configuration** and download the signing certificate in PEM format.
 
-    <figure><img src="../../../.gitbook/assets/4 (1).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/4 (1) (2).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
 7.  Scroll further down and copy the **Single Signon Service** details.
 
     <figure><img src="../../../.gitbook/assets/5 (2).png" alt="Copy the Single Signon Service details"><figcaption><p>Copy the Single Signon Service details</p></figcaption></figure>
@@ -42,9 +42,9 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
     **username**: Username\
     **name**: the expression `user.name.given + ' ' + user.name.famil`y; click the cog icon to enter an advanced description.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/7 (2).png" alt="Add attribute mappings"><figcaption><p>Add attribute mappings</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/7 (2) (1).png" alt="Add attribute mappings"><figcaption><p>Add attribute mappings</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/8 (2).png" alt="Add an advanced expression for the name attribute"><figcaption><p>Add an advanced expression for the name attribute</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/8 (2) (2).png" alt="Add an advanced expression for the name attribute"><figcaption><p>Add an advanced expression for the name attribute</p></figcaption></figure>
 12. In the Snyk portal, decide how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
 13. Change the **profile attributes** to the attribute names you entered in Ping Identity then click **Save changes.**\
 
