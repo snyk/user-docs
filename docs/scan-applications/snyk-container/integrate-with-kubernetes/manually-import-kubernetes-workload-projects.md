@@ -10,7 +10,7 @@ One Snyk Organization has a limit of 25,000 Projects. For more information, cont
 
 You must first have an account with Snyk and be onboarded to your Organization by an administrator.
 
-In addition, you must configure the integration between Snyk and your Kubernetes environment per Organization. To ensure the integration is configured, ensure you have an Integration ID. For more information, see [Enable the Kubernetes integration](../../../scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md).
+In addition, you must configure the integration between Snyk and your Kubernetes environment per Organization. To ensure the integration is configured, ensure you have an Integration ID. For more information, see [Enable the Kubernetes integration](overview-of-the-kubernetes-integration/viewing-your-kubernetes-integration-settings.md).
 
 Next:
 

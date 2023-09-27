@@ -9,7 +9,7 @@ After you install the Snyk Controller in your Kubernetes cluster, it pulls image
    * Workload metadata (Kubernetes configuration):
      * Labels, annotations
      * PodSpec
-   * Policy for the workloads, specifically the policy for [automatically importing and deleting Kubernetes workload projects](../../../scan-applications/snyk-container/kubernetes-integration/automatically-import-and-delete-kubernetes-workload-projects.md)
+   * Policy for the workloads, specifically the policy for [automatically importing and deleting Kubernetes workload projects](../automatically-import-and-delete-kubernetes-workload-projects.md)
    * Image scan results and image metadata:
      * List of OS packages
      * Application dependencies

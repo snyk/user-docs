@@ -26,7 +26,7 @@ The names will match if you are importing images to Snyk from the same container
 
 ## Snyk Container scanning with Kubernetes integration
 
-For details, see [Kubernetes integration](../../../scan-containers/kubernetes-integration/).
+For details, see [Kubernetes integration](../../../scan-applications/snyk-container/integrate-with-kubernetes/).
 
 The names of the container images will match because the deployed image is scanned by Snyk and created as a Project.
 
