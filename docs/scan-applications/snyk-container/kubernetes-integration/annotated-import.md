@@ -1,7 +1,9 @@
 # Annotated import
 
+
+
 {% hint style="warning" %}
-This feature is deprecated and we are not maintaining it anymore, for auto import/deletion of Kubernetes workload please follow instruction [here](automatically-import-and-delete-kubernetes-workload-projects.md)
+This feature is deprecated and Snyk no longer maintains it, for auto import/deletion of Kubernetes workload please follow instruction [here](automatically-import-and-delete-kubernetes-workload-projects.md)
 {% endhint %}
 
 Once an administrator for your Snyk account has installed the Snyk controller on your Kubernetes cluster, add workloads for testing. Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk
