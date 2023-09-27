@@ -31,7 +31,7 @@ There are two standard roles available at the Group level, **Group Member** and 
 Group Admins have all Snyk permissions; see [Managing permissions](../manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md). However, being a Group Member does not directly grant the user any rights. To have rights, users must be added as Organization members or promoted to Group Admin.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (250).png" alt="View Group members"><figcaption><p>View Group members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (250) (1).png" alt="View Group members"><figcaption><p>View Group members</p></figcaption></figure>
 
 ## View individual members
 
@@ -41,7 +41,7 @@ If the user is a **Group Member**, you can see the user's role in each Organizat
 
 A Group Member can have different roles in different Organizations. You can filter by role. You can also remove a user from a Group or Organization by using the available delete buttons.
 
-<figure><img src="../../.gitbook/assets/image (19) (2).png" alt="Group member details"><figcaption><p>Group member details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (2) (1).png" alt="Group member details"><figcaption><p>Group member details</p></figcaption></figure>
 
 Members with the Group Admin role have access to all Organizations in that Group, with the same access level as the Organization Admin role in these Organizations. You cannot change the role of a Group admin in a specific Organization, or delete a Group admin from one or more Organizations. However, you can remove a Group admin from the Group using the **Remove from group** option
 

@@ -13,7 +13,7 @@ You can authenticate:
 * Through your browser, by running `snyk auth` from the CLI. See the [Auth command help](commands/auth.md). This method is the default and recommended.
 * Using your API token. See the summary of steps that follows and  [Obtaining your Snyk API token](../enterprise-setup/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token.md) for in-depth instructions that apply to all applications and tools.
 * Using the `SNYK_TOKEN` environment variable. See [Configure the Snyk CLI](configure-the-snyk-cli/). Use `SNYK_TOKEN` in a CI/CD environment.
-* Using a service account token, for Enterprise customers and specifically for CI/CD use cases. See [Service accounts](../enterprise-setup/service-accounts.md) for details.
+* Using a service account token, for Enterprise customers and specifically for CI/CD use cases. See [Service accounts](../enterprise-setup/service-accounts/) for details.
 
 The following summarizes the steps to authenticate using your API token:
 

@@ -53,7 +53,7 @@ To unignore an issue via the Snyk Web UI:
 2. Select the **Unignore** button.
 3. The message "Issue successfully unignored and will be applied on next scan" appears.\
    In addition, the unignore pending state is shown in the issue panel: The ignore applied to this issue has been deleted and will be removed on the next scan.\
-   ![Unignore pending state in the issue panel](<../../../.gitbook/assets/image (122).png>)
+   ![Unignore pending state in the issue panel](<../../../.gitbook/assets/image (170).png>)
 4. To apply the unignore immediately, [re-scan the environment](../../../scan-cloud-configurations/snyk-iac+/snyk-environments/scan-a-cloud-environment.md).\
    You also can wait for the unignore to be applied on the next scheduled scan.
 5. Refresh the page in your browser to see that the "Ignored" message in the side panel is gone.

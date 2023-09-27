@@ -18,7 +18,7 @@ The Kubernetes connector for Insights is the agent deployed in your Kubernetes c
 Before you can deploy the Kubernetes connector for Insights in your Kubernetes clusters, be sure you have the following:
 
 * **Snyk Organization**: You need a Snyk Organization to which the Kubernetes information collected will be sent to be stored. This could be a new Organization, it does not have to be the same one containing the Snyk Projects you wish to use with Insights, but it must be in the same Snyk Group.&#x20;
-* **Snyk service account:** You need to create a service account specifically to be used with the Kubernetes connector for Insights. For instructions on creating a service account, see [Service accounts](../../../enterprise-setup/service-accounts.md).&#x20;
+* **Snyk service account:** You need to create a service account specifically to be used with the Kubernetes connector for Insights. For instructions on creating a service account, see [Service accounts](../../../enterprise-setup/service-accounts/).&#x20;
   * For the roles and permissions, Snyk recommends creating a new specific role for this service account and taking a least privilege approach, granting that role the sole permission required to **Publish Kubernetes Resources**.
 
 ### Step 1: Create a Snyk Organization
@@ -41,11 +41,11 @@ Navigate to the newly created role and [select edit](../../../snyk-admin/manage-
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
 
 ### Step 4: Create a service account and assign it to a role
 
-Next, you need to create a new [service account](../../../enterprise-setup/service-accounts.md) for this integration.
+Next, you need to create a new [service account](../../../enterprise-setup/service-accounts/) for this integration.
 
 {% hint style="info" %}
 Snyk recommends creating this service account for the Snyk Organization used or created for the Kubernetes agent.&#x20;

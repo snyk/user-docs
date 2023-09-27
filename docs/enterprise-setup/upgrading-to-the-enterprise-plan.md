@@ -13,7 +13,7 @@ Snyk Enterprise features include:
 
 * [Snyk Groups with multiple Snyk Organizations](../snyk-admin/manage-groups-and-organizations/introduction-to-groups.md)
 * [Single Sign-On](using-single-sign-on-sso-for-authentication/)
-* [Service accounts](service-accounts.md)
+* [Service accounts](service-accounts/)
 * [Snyk API](../snyk-api/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
 * [Reports](../manage-issues/reporting/legacy-reports/)
@@ -137,7 +137,7 @@ See the [SSO, authentication, and user provisions](https://training.snyk.io/cour
 
 ## Implement Service accounts
 
-[Service accounts](service-accounts.md) allow you to better scale and automate.
+[Service accounts](service-accounts/) allow you to better scale and automate.
 
 * If you use CI/CD, either by using a [CI/CD integration](../integrations/snyk-ci-cd-integrations/) or the [Snyk CLI](../snyk-cli/), Snyk recommends that you use a service account.
 * If you use an IDE plugin or the CLI to test in your local environment, Snyk recommends that you use personal access tokens.

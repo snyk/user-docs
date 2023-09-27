@@ -13,4 +13,4 @@ These pages are provided to help you understand, plan, and roll out your Enterpr
 * [Authenticate for third-party tools](authentication-for-third-party-tools.md)
 * [Set up SSO](using-single-sign-on-sso-for-authentication/)
 * [Snyk Broker](snyk-broker/)
-* [Service accounts](service-accounts.md)
+* [Service accounts](service-accounts/)

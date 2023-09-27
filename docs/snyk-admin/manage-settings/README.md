@@ -17,7 +17,7 @@ From the Group settings menu, select **Settings** and then select one of the Gro
 * **General**: See [Group general settings](group-general-settings.md) for details.
 * &#x20;**SSO**: See [Self-Serve Single Sign-On (SSO)](../../enterprise-setup/using-single-sign-on-sso-for-authentication/self-serve-single-sign-on-sso/) for details.
 * **Member Roles**: See [Manage Member Roles](../manage-permissions-and-roles/manage-member-roles.md) for details.
-* **Service Accounts**: See [Service accounts](../../enterprise-setup/service-accounts.md) for details.
+* **Service Accounts**: See [Service accounts](../../enterprise-setup/service-accounts/) for details.
 * **Notifications**: See [Manage notifications](../manage-notifications.md) for details.
 * **Usage**: See [Usage setting](usage-settings.md)s for details.
 * **Your Plan and Billing**: Billing is through a contract and cannot be changed by using this option. Contact your sales representative or [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you have billing-related requests or issues.
@@ -38,7 +38,7 @@ At the Organization level, select **Settings** to manage Organization settings:
 From the Organization setting menu, select **Settings** and then select one of the Organization settings options:
 
 * **General**: See [Organization general settings](organization-general-settings.md) for details.
-* **Service Accounts**: See [Service accounts](../../enterprise-setup/service-accounts.md) for details.
+* **Service Accounts**: See [Service accounts](../../enterprise-setup/service-accounts/) for details.
 * **Integrations**: Set up integrations and see a list of those configured for your Organization; click the name of the configured integration to see the details. See [Integrate with Snyk](https://docs.snyk.io/integrations) for information about available Snyk integrations.
 * &#x20;**Languages**: Enable Reachable vulnerabilities analysis and edit language settings; see [Snyk Open Source - supported languages and package managers](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) for details.
 * **Snyk Code**: Enable Snyk Code; see the [Snyk Code](../../scan-application-code/snyk-code/) documentation for details.

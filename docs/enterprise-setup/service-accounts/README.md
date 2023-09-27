@@ -9,7 +9,7 @@ You can set up a **service account** to be used for continuous integration (CI) 
 
 Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials.
 
-Use this token to provide credentials to authenticate with your Snyk account when you are setting up integration with your development tools and when you are working with the Snyk [CLI](../snyk-cli/) and [API](../snyk-api/). Snyk needs authentication in order to initiate Snyk processes.
+Use this token to provide credentials to authenticate with your Snyk account when you are setting up integration with your development tools and when you are working with the Snyk [CLI](../../snyk-cli/) and [API](../../snyk-api/). Snyk needs authentication in order to initiate Snyk processes.
 
 You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use Group-level tokens to use Group API endpoints, Organization API endpoints, and the CLI for all Organizations in the Group.
 
@@ -55,31 +55,31 @@ This process describes all options. Repeat the steps to create multiple tokens f
 
 Note that while creating a **Group service account**, you can choose a Group level role.
 
-<figure><img src="../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
-In contrast, while creating an **Organization service account,** you can choose Org level roles, including custom [member roles](../snyk-admin/manage-permissions-and-roles/manage-member-roles.md) that you have set up for your Organizations.
+In contrast, while creating an **Organization service account,** you can choose Org level roles, including custom [member roles](../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md) that you have set up for your Organizations.
 
-<figure><img src="../.gitbook/assets/Screenshot 2022-07-06 at 12.06.35.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-07-06 at 12.06.35.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 
 #### Enter a service account name
 
 In the **Service Account** name field, enter a unique name for this token. Remember, this name can be used only once for tokens in the same area, either an **Organization** or a **Group**.
 
-<figure><img src="../.gitbook/assets/uuid-01c4cc98-23c9-3cb1-4972-1aa4f83ad98e-en.png" alt="Service account name and role"><figcaption><p>Service account name and role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-01c4cc98-23c9-3cb1-4972-1aa4f83ad98e-en.png" alt="Service account name and role"><figcaption><p>Service account name and role</p></figcaption></figure>
 
 #### Select a role
 
 From the **Role** dropdown list, select an appropriate role.
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt="Roles"><figcaption><p>Roles</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (4).png" alt="Roles"><figcaption><p>Roles</p></figcaption></figure>
 
 For Group service accounts, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 
-* **Group Viewer** enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](../snyk-api-info/using-snyk-api/api-token-permissions-users-can-control.md).
+* **Group Viewer** enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](../../snyk-api-info/using-snyk-api/api-token-permissions-users-can-control.md).
 * **Group Admin** enables full administrator access.
 * **Group Member** associates a service account with a group but does not grant any specific access.
 
-For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Managing permissions](../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md) for the scope of the Org Admin and Org Collaborator roles.
+For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Managing permissions](../../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md) for the scope of the Org Admin and Org Collaborator roles.
 
 ### Create the service account
 
@@ -93,15 +93,15 @@ Make sure you copy this token, as you will not see it again. You can click **Clo
 
 The new token is also added to your **Existing service accounts** list, like the list in this example:
 
-<figure><img src="../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14) (15).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
 
 In addition, if you created the token for the entire Group with a **Group Admin** role, the token also appears in the **Existing service accounts** list for each of its Organizations, though it can only be edited at the **Group** level.
 
-<figure><img src="../.gitbook/assets/uuid-1110723e-74e7-3090-3e69-da65f93acfcc-en.png" alt="Existing accounts for an organization"><figcaption><p>Existing accounts for an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-1110723e-74e7-3090-3e69-da65f93acfcc-en.png" alt="Existing accounts for an organization"><figcaption><p>Existing accounts for an Organization</p></figcaption></figure>
 
 If you created the token from an Organization that is part of a Group, the token now also appears in the **Existing service account** list on the Group level. From that list, the Group Admin can also change the token name or delete it.
 
-<figure><img src="../.gitbook/assets/uuid-50563edb-6a75-9f37-2040-cd814fdf9ead-en.png" alt="Group service accounts with Organization accounts listed"><figcaption><p>Group service accounts with Organization accounts listed</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-50563edb-6a75-9f37-2040-cd814fdf9ead-en.png" alt="Group service accounts with Organization accounts listed"><figcaption><p>Group service accounts with Organization accounts listed</p></figcaption></figure>
 
 ## Update the name for a service account token
 
@@ -110,7 +110,7 @@ Click any of the links to update the name for a service account token:
 * For **Group-level tokens**, from the **Group** level only
 * For **Organization-level tokens**, from the relevant **Organization** and also from the **Group** level:
 
-<figure><img src="../.gitbook/assets/uuid-b34e3d10-bb0c-b608-bc08-12f2bf0a4fc0-en.png" alt="Update a service account name"><figcaption><p>Update a service account name</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-b34e3d10-bb0c-b608-bc08-12f2bf0a4fc0-en.png" alt="Update a service account name"><figcaption><p>Update a service account name</p></figcaption></figure>
 
 ## Edit and delete a service account
 
@@ -133,8 +133,10 @@ Deleting a service account is the same as revoking the API token.
 * Click on **Settings** > **Service accounts**.
 * Scroll to find the list of existing service accounts:
 
-<figure><img src="../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14) (15).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
 
 * From the list of existing tokens:
   * Click the token name to navigate to **change the token name** and click **Save**.
   * Click **Delete** to **delete a token and invalidate it immediately**. When prompted, click **OK**. Remember that you cannot re-generate the same token.
+
+##

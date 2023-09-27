@@ -1,4 +1,4 @@
-# View Infrastructure as Code issue reports
+# View Snyk IaC issue reports
 
 Use [Snyk reports](../manage-issues/reporting/legacy-reports/) to view issues in your IaC configuration files.
 
@@ -31,7 +31,7 @@ This shows the title of each issue, the type, and the severity.
 
 You can also view the issues ungrouped; this shows more information about the Project file where the issue is found, and details on when it was first introduced:
 
-![](<../.gitbook/assets/image2-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>)
+![](<../.gitbook/assets/image2-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5) (7).png>)
 
 For more details on the issues tab, see [Issues tab](../manage-issues/reporting/legacy-reports/legacy-reports-issues-tab.md) documentation.
 

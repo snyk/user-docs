@@ -24,7 +24,7 @@ Snyk generates [resource mappings](../introduction-to-iac+/key-concepts-in-iac+.
 
 You must have the following:
 
-* Access to a Snyk [service account](../../enterprise-setup/service-accounts.md) and API token
+* Access to a Snyk [service account](../../enterprise-setup/service-accounts/) and API token
 * Access to a Snyk Organization with IaC+
 * Cloud resources deployed to AWS with Terraform via CI/CD
 * Terraform version 0.11 or later
