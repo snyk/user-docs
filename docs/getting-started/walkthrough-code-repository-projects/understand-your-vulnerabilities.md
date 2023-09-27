@@ -56,7 +56,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 Click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt="Access Snyk Learn from a vulnerability card"><figcaption><p>Access Snyk Learn from a vulnerability card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (88).png" alt="Access Snyk Learn from a vulnerability card"><figcaption><p>Access Snyk Learn from a vulnerability card</p></figcaption></figure>
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 

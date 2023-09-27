@@ -225,51 +225,153 @@ Matches on entities that happen on the same object as its parameter.
 
 Template parameter: ObjectAction The action that happens on the object.
 
+### HasAnnotation
+
+Matches on entities which are decorated with a specific annotation.
+
+Template parameter: Value
+
+<details>
+
+<summary>Example</summary>
+
+```java
+package snippets.java.docs;
+
+public class HasAnnotationDemo {
+    public void oldMethod(@Deprecated String parameter1, String parameter2) {
+
+    }
+}
+```
+
+To capture `parameter1`, use the following query:
+
+```
+HasAnnotation<"java.lang.Deprecated">
+```
+
+</details>
+
+<details>
+
+<summary>Example (named parameters)</summary>
+
+```java
+package snippets.java.docs;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.FIELD, ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@interface Sensitive {
+    String reason();
+}
+
+
+public class HasAnnotationWithArgsDemo {
+    private String email = "support@snyk.io";
+
+    @Sensitive(reason = "PII")
+    public String getEmail() {
+        return email;
+    }
+}
+```
+
+To capture the `getEmail` method, use the following query:
+
+```
+HasAnnotation<And<"Sensitive", HasNamedArg<"reason", "PII">>>
+```
+
+</details>
+
+{% hint style="warning" %}
+`HasAnnotation` can not be used within `Taint` workflows yet.
+{% endhint %}
+
+### HasAnyArg
+
+Matches on entities that take an argument at _any_ index with the provided value.
+
+Template parameter: Value
+
+<details>
+
+<summary>Example</summary>
+
+```java
+package snippets.java.docs;
+
+public class VarArgsDemo {
+    public void method(String... args) {}
+
+    public static void main(String[] args) {
+        VarArgsDemo check = new VarArgsDemo();
+        check.method("sample1", "sample2", "sample3");
+        check.method("sample0", "sample1", "sample2", "sample3");
+        check.method("sample2", "sample3", "sample1");
+    }
+}
+```
+
+To match all 3 method calls which receive `tainted` values, use the following query:
+
+```
+HasAnyArg<"tainted">
+```
+
+</details>
+
 ### HasArg0
 
-Matches on entities that take an argument in the 0th index, that is, receiver object for method calls, with the provided value.
+Matches on entities that take an argument at the 0th index, that is, receiver object for method calls, with the provided value.
 
 Template parameter: Value
 
 ### HasArg1
 
-Matches on entities that take an argument in the first index with the provided value.
+Matches on entities that take an argument at the first index with the provided value.
 
 Template parameter: Value
 
 ### HasArg2
 
-Matches on entities that take an argument in the second index with the provided value.
+Matches on entities that take an argument at the second index with the provided value.
 
 Template parameter: Value
 
 ### HasArg3
 
-Matches on entities that take an argument in the third index with the provided value.
+Matches on entities that take an argument at the third index with the provided value.
 
 Template parameter: Value
 
 ### HasArg4
 
-Matches on entities that take an argument in the fourth index with the provided value.
+Matches on entities that take an argument at the fourth index with the provided value.
 
 Template parameter: Value
 
 ### HasArg5
 
-Matches on entities that take an argument in the fifth index with the provided value.
+Matches on entities that take an argument at the fifth index with the provided value.
 
 Template parameter: Value
 
 ### HasArg6
 
-Matches on entities that take an argument in the sixth index with the provided value.
+Matches on entities that take an argument at the sixth index with the provided value.
 
 Template parameter: Value
 
 ### HasArg7
 
-Matches on entities that take an argument in the seventh index with the provided value.
+Matches on entities that take an argument at the seventh index with the provided value.
 
 Template parameter: Value
 
