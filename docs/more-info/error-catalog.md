@@ -458,11 +458,11 @@ Verify your authentication configuration with your Git cloud provider and try ag
 
 #### Your project repository is missing required files
 
-Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the Project. If the operation fails, creating a full dependency graph cannot continue.  
+Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.  
 
-This error usually means that you need some cleanup, such as `go mod tidy`) or your Project deployment process contains a code generation step such as `protobuf` or something similar that is not currently supported by Snyk. 
+This error means that you need some cleanup, such as `go mod tidy`) or your project deployment process contains a code generation step such as `protobuf` or similar that is not currently supported by Snyk. 
 
-To verify if this is the case, clone your Project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. 
+To verify if this is the case, clone your project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. 
 
 If Snyk cannot process your code successfully, insert the Snyk CLI as part of your deployment pipeline.
 
@@ -472,6 +472,27 @@ If Snyk cannot process your code successfully, insert the Snyk CLI as part of yo
 - [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
 - [https://github.com/snyk/snyk-go-plugin](https://github.com/snyk/snyk-go-plugin)
 - [https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go](https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go)
+
+### [SNYK-OS-GO-0005](#snyk-os-go-0005)
+
+#### Your project repository has inconsistent vendoring information
+
+Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.  
+
+This error means that there is inconsistency between your `vendor/modules.txt` file and your `go.mod` file. To remediate, you need to:
+
+* `go mod vendor`
+* `go mod tidy`
+
+Next, commit those changes to your repo. Snyk does not manipulate with your code on our end by design, which is why this is not done automatically.
+
+To verify if this is the case, clone your project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. 
+Then try and run the above mentioned commands and see if your SCM system reports changes in files.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://go.dev/ref/mod#go-mod-vendor](https://go.dev/ref/mod#go-mod-vendor)
 
 ### [SNYK-OS-MAVEN-0001](#snyk-os-maven-0001)
 
@@ -1126,4 +1147,4 @@ Snyk could not generate hash using the customer PR files and projects vulnIds.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-09-25T14:18:16.935Z
+--- Generated at 2023-09-27T09:11:55.106Z
