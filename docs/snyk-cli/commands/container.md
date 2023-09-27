@@ -12,4 +12,4 @@ The `snyk container` commands are listed here with the help options:
 
 * [`container test`](container-test.md), `container test --help`: tests for any known vulnerabilities
 * [`container monitor`](container-monitor.md), `container monitor --help`: captures the container image layers and dependencies and monitors for vulnerabilities on [snyk.io](https://snyk.io)
-* [container sbom](container-sbom.md). container sbom --help: generates an SBOM for a container image
+* [`container sbom`](container-sbom.md), `container sbom --help`: generates an SBOM for a container image
