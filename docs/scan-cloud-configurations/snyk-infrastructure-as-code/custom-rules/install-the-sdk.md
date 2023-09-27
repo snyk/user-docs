@@ -8,7 +8,11 @@
 * [​Install the SDK with the Windows Scoop package manager](install-the-sdk.md#install-the-sdk-with-the-windows-scoop-package-manager)
 * [Install the SDK with Docker](install-the-sdk.md#install-the-sdk-with-docker)
 
-After installation, you can get started writing rules with the [Getting started](../../../scan-infrastructure/custom-rules/writing-rules-using-the-sdk/) guide.
+After installation, you can get started writing rules. For details, see [Writing rules using the SDK](../../../scan-infrastructure/custom-rules/writing-rules-using-the-sdk/).
+
+{% hint style="warning" %}
+After installation, Apple M1 users might encounter the error `Architecture not supported: ${process.arch}`. To resolve this, first install the Rosetta 2 software by running `softwareupdate --install-rosetta`.
+{% endhint %}
 
 ## Install the SDK with npm
 
