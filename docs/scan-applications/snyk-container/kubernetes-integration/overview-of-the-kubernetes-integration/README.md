@@ -48,3 +48,8 @@ The Snyk Container Kubernetes integration uses Red Hat UBI (Universal Base Image
 Before downloading or using this application, you must agree to the Red Hat subscription agreement located on the [Red Hat website](https://www.redhat.com/en/about/agreements). If you do not agree with these terms, do not download or use the application.
 
 If you have an existing Red Hat Enterprise Agreement (or other negotiated agreement with Red Hat) with terms that govern subscription services associated with Containers, then your existing agreement will control.
+
+## Kubernetes integration troubleshooting
+
+For troubleshooting information on the Kubernetes integration or the Snyk Controller, as well as for common onboarding errors, see the [Kubernetes integration troubleshooting](https://support.snyk.io/hc/en-us/articles/10342802571805-Kubernetes-Integration-troubleshooting) support page.
+
