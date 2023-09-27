@@ -406,7 +406,7 @@
       * [Navigate the Kubernetes integration UI](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/README.md)
         * [View Project details and scan results](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/viewing-project-details-and-test-results.md)
         * [Kubernetes and the Snyk Priority Score](scan-applications/snyk-container/integrate-with-kubernetes/navigate-the-kubernetes-integration-ui/kubernetes-and-the-snyk-priority-score.md)
-    * [Snyk Container for self-hosted container registries (with Broker)](scan-containers/integrate-self-hosted-container-registries.md)
+    * [Integrate with self-hosted container registries (Broker)](scan-applications/snyk-container/integrate-with-self-hosted-container-registries-broker.md)
 * [Scan infrastructure](scan-infrastructure/README.md)
   * [Supported IaC languages and cloud providers](scan-infrastructure/supported-iac-and-cloud-providers/README.md)
     * [Supported resources for cloud scans in Snyk IaC](scan-infrastructure/supported-iac-and-cloud-providers/supported-resources-for-cloud-context-in-snyk-iac/README.md)
