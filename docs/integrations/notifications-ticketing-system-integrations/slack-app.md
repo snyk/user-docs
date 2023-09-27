@@ -9,12 +9,14 @@ Snyk encourages all customers using the Slack integration to adopt the Snyk app 
 * Support for overriding notifications at a Project level
 
 {% hint style="info" %}
-Vulnerabilities detected on initial import of Projects are not sent to Slack immediately.
+Vulnerabilities detected on initial import of Projects are not sent to Slack. Only newly disclosed vulnerabilities from imported Projects are sent to Slack.&#x20;
 {% endhint %}
 
 ## Overview of the Snyk app for Slack
 
-The Snyk app for Slack highlights vulnerability information found across your software Projects and presents actionable context within your Slack workspace channels. Your teams get the issue notifications that matter the most, and can act on them immediately, without leaving Slack. This has the advantage of:
+The Snyk app for Slack highlights vulnerability information across your software Projects and presents actionable context within your Slack workspace channels. Your teams get the issue notifications that matter the most and can act on them without leaving Slack.
+
+This has the advantage of:
 
 * Enhancing collaboration to quickly discuss and resolve vulnerabilities
 * Maintaining awareness of relevant and emerging vulnerabilities
@@ -61,9 +63,10 @@ After you have done this, the channel is displayed on the **Settings** page for 
 
 ## Issue notifications
 
-Once the Slack app has been configured as indicated above, new issue notifications will be forwarded to the selected Slack channel according to the desired severity level threshold.
+After the Slack app has been configured, new issue notifications will be forwarded to the selected Slack channel according to the desired severity level threshold. \
+New issue notifications may take up to an hour to start propagating to your Slack workspace once configured.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (145) (1).png" alt="Example of a new critical vulnerability notification received in Slack"><figcaption><p>Example of a new critical vulnerability notification received in Slack</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (145).png" alt="Example of a new critical vulnerability notification received in Slack"><figcaption><p>Example of a new critical vulnerability notification received in Slack</p></figcaption></figure>
 
 ## Remove the Snyk app for Slack
 
