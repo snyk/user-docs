@@ -112,6 +112,3 @@ To uninstall a Jira app, you must be an administrator in the site-admins, admini
 2. Select **Snyk Security in Jira.**
 3. Click the **Uninstall** button.
 
-## Known issues with Snyk Security in Jira Cloud
-
-Snyk sends all your security issues to Jira. However, each Jira project currently shows only up to 1,000 vulnerabilities on the Security tab UI across all your Snyk Projects added to Jira. This is due to a Security Tab issue that is known and being addressed by the owner, Atlassian. Atlassian plans to resolve this issue by the end of Q3 2023.
