@@ -41,7 +41,7 @@ Navigate to the newly created role and [select edit](../../../snyk-admin/manage-
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
 
 ### Step 4: Create a service account and assign it to a role
 
