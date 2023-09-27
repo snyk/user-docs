@@ -20,7 +20,7 @@ One Snyk Organization has a limit of 25,000 Projects. For more information, cons
 
 You must first have an account with Snyk and be onboarded to your Organization by an administrator.
 
-In addition, you must configure the integration between Snyk and your Kubernetes environment per Organization. To ensure the integration is configured, ensure you have an Integration ID. For more information, see [Enable the Kubernetes integration](overview-of-the-kubernetes-integration/viewing-your-kubernetes-integration-settings.md).
+In addition, you must configure the integration between Snyk and your Kubernetes environment per Organization. To ensure the integration is configured, ensure you have an Integration ID. For more information, see [Enable the Kubernetes integration](../../../scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md).
 
 You can configure the Snyk Controller to automatically import and update scanned workloads directly in Snyk to scan and monitor for vulnerabilities. You can also automatically delete imported Projects once workloads are deleted from the cluster.
 

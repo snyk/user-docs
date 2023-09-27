@@ -1,2 +1,0 @@
-# Kubernetes integration UI explained
-
