@@ -1,4 +1,4 @@
-# Automatically import and delete Kubernetes workload projects
+# Automatically import and delete Kubernetes workload Projects
 
 {% hint style="info" %}
 **Feature availability**
@@ -14,7 +14,7 @@ Using the same integration ID, you can import multiple clusters to one Snyk Orga
 
 The automatic import and delete feature also allows you to import from one cluster to multiple Snyk organizations. For more information, see [Advanced use of the automatic import and delete feature](automatically-import-and-delete-kubernetes-workload-projects.md#advanced-use-of-the-automatic-import-and-delete-feature).
 
-One Snyk Organization has a limit of 25,000 Projects. For more information, consult your Snyk admin.
+One Snyk Organization has a limit of 25,000 Projects. For more information, consult Snyk admin.
 
 ## **Prerequisites for automatic import and delete**
 

@@ -1,4 +1,4 @@
-# Manually import Kubernetes workload projects
+# Manually import Kubernetes workload Projects
 
 Using the same integration ID, you can import multiple clusters to one Snyk Organization by giving clusters a unique cluster name during installation.
 
@@ -6,7 +6,7 @@ You can also import one cluster to multiple Snyk Organizations in manual import 
 
 One Snyk Organization has a limit of 25,000 Projects. For more information, contact your Snyk admin.
 
-## **Prerequisites for manually importing Kubernetes workload projects**
+## **Prerequisites for manually importing Kubernetes workload Projects**
 
 You must first have an account with Snyk and be onboarded to your Organization by an administrator.
 
@@ -19,7 +19,7 @@ Next:
 
 ## Manually add Kubernetes workloads
 
-In the Snyk Web UI, navigate to the **Projects** page, and click **Add projects** at the top of the page. From the list of projects, select **Kubernetes**.
+In the Snyk Web UI, navigate to the **Projects** page, and click **Add projects** at the top of the page. From the list of Projects, select **Kubernetes**.
 
 On the import screen that appears, all namespaces from the Kubernetes environment are displayed on the left, and the relevant namespace workloads are displayed on the right.
 
@@ -33,11 +33,11 @@ You can configure the list by adding the following code to Helm when you are set
       --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
 ```
 
-Select one or multiple namespaces from the left side of the screen and for each namespace, select one or multiple workloads to import from the right side of the screen.
+Select one or multiple namespaces from the left side of the screen, and for each namespace, select one or multiple workloads to import from the right side of the screen.
 
 <figure><img src="../../../.gitbook/assets/uuid-27db0a60-f18d-5ab0-9215-5a81e467f013-en.gif" alt="Kubernetes workloads import screen, select namespace(s)"><figcaption><p>Select namespaces from the Kubernetes workloads import screen</p></figcaption></figure>
 
-,Next, click **Add selected workloads** from the top right of the screen. When the import completes, the **Projects** page loads and all the workloads that you have imported appear, with a unique Kubernetes icon.
+Next, click **Add selected workloads** from the top right of the screen. When the import completes, the **Projects** page loads, and all the workloads that you have imported appear with a unique Kubernetes icon.
 
 Each item is named according to its Kubernetes metadata:
 
