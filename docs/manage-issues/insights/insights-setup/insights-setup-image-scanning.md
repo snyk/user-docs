@@ -12,24 +12,26 @@ Snyk recommends that you scan each image using at least one of the Snyk Containe
 
 ## Snyk Container scanning with the CLI
 
-For details, see [Snyk CLI for container security](../../../scan-applications/snyk-container/use-snyk-container-from-the-cli/).
-
 To ensure the image names match, specify the full name of the image as referenced in your Kubernetes deployment.&#x20;
 
-For example: **$ snyk container monitor gcr.io/my-company/my-image:latest**
+Example:
+
+`snyk container monitor gcr.io/my-company/my-image:latest`
+
+For details, see [Snyk CLI for container security](../../../scan-applications/snyk-container/use-snyk-container-from-the-cli/).
 
 ## Snyk Container registry scanning
 
-For details, see [Snyk Container - Integrations](../../../scan-containers/snyk-container-integrations/).
-
 The names will match if you are importing images to Snyk from the same container registry that you are referencing in your Kubernetes deployments.
 
-## Snyk Container scanning with Kubernetes integration
+For details, see [Snyk Container - Integrations](../../../scan-containers/snyk-container-integrations/).
 
-For details, see [Kubernetes integration](../../../scan-containers/kubernetes-integration/).
+## Snyk Container scanning with Kubernetes integration
 
 The names of the container images will match because the deployed image is scanned by Snyk and created as a Project.
 
 {% hint style="warning" %}
 To ensure you have set up your Kubernetes Connector properly, navigate to the **Set up Insights** tab on the **Insights** page and check the **Image coverage** section to view the data Insights has access to.
 {% endhint %}
+
+For details, see [Kubernetes integration](../../../scan-containers/kubernetes-integration/).

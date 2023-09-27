@@ -40,6 +40,8 @@ The major steps in setting up Insights are as follows:
    &#x20;Note: The Kubernetes Connector is different from the Kubernetes Controller, Snyk-Monitor.
 3. Scan your images properly so Insights has access to the right data. See [Insights setup: Image scanning](insights-setup-image-scanning.md).
 4. Set up the required linking for the application on which you want to use Insights. See [Insights setup: Associating Snyk Open Source, Code, and Container Projects](insights-setup-associating-snyk-open-source-code-and-container-projects.md).
+5. To ensure you have set up Insights properly, navigate to the **Set up Insights** tab on the **Insights** page and view the data Insights has access to.\
+   You can also filter relevant sections by Organization for a granular view of your progress.
 
 
 
