@@ -477,7 +477,7 @@ If Snyk cannot process your code successfully, insert the Snyk CLI as part of yo
 
 #### Your project repository has inconsistent vendoring information
 
-Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.  
+Generating the dependency graph requires Snyk to run `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.  
 
 This error means that there is inconsistency between your `vendor/modules.txt` file and your `go.mod` file. To remediate, you need to:
 
@@ -1147,4 +1147,4 @@ Snyk could not generate hash using the customer PR files and projects vulnIds.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-09-27T09:11:55.106Z
+--- Generated at 2023-09-27T09:16:53.458Z
