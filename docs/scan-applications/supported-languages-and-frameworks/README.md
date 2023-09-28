@@ -17,6 +17,8 @@ Snyk supports the following languages&#x20;
 * [Ruby](ruby.md)
 * [Scala](scala.md)
 * [Swift and Objective-C](swift-and-objective-c.md)
+* [TypeScript](typescript.md)
+* [VB.NET](vb.net.md)
 
 
 
