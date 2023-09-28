@@ -1,9 +1,13 @@
 # Snyk Container
 
+{% hint style="info" %}
+To start scanning your container images, see [Scan container images](../start-scanning/scan-container-images.md).
+{% endhint %}
+
 Containers provide a standard packaging format for applications, but container images can be opaque. This can lead to problems when identifying the software and the vulnerabilities they contain.
 
 {% hint style="info" %}
-To learn more about container security, see [container security](https://snyk.io/learn/container-security/).
+To learn more about container security, see [container security](https://snyk.io/learn/container-security/).&#x20;
 {% endhint %}
 
 ## Snyk Container functions
