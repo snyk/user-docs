@@ -353,11 +353,13 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--file=.sln`: [test](https://docs.snyk.io/snyk-cli/commands/test)
 
-\-`-file=packages.config`: [test](https://docs.snyk.io/snyk-cli/commands/test)
+`--file=<filename>.sln`: [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
-`--assets-project-name`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+\-`-file=packages.config`: [test](https://docs.snyk.io/snyk-cli/commands/test), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
-`--packages-folder`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--assets-project-name`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+
+`--packages-folder`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 `--project-name-prefix=<PREFIX_STRING>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
@@ -365,13 +367,13 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## Options for npm projects
 
-`--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [sbom](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 ## Options for Yarn projects
 
-`--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
-`--yarn-workspaces`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--yarn-workspaces`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 ## Options for CocoaPods projects
 
@@ -379,13 +381,17 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## Options for Python projects
 
-`--command=<COMMAND>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--command=<COMMAND>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
-`--skip-unresolved=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--skip-unresolved=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+
+`--File=<filename>:` [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+
+`--pakage-manager=<package manager>`: [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 ## Options for Go projects
 
-Currently the following options are not supported:
+The following options are not supported:
 
 `--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test)
 
@@ -403,7 +409,7 @@ Currently the following options are not supported:
 
 `--target-reference=<TARGET_REFERENCE>`: [`test`](commands/test.md), [monitor](commands/monitor.md)
 
-`--max-depth`: [`test`](commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--max-depth`: [`test`](commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 `--print-dep-paths:` [`test`](commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
