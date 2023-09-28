@@ -1,12 +1,8 @@
-# Typescript
+# TypeScript
 
 {% hint style="info" %}
 Snyk for Typescript is supported only for Snyk Code.
 {% endhint %}
-
-### Code analysis <a href="#code-analysis" id="code-analysis"></a>
-
-**TBD**&#x20;
 
 ### Getting started with Snyk for TypeScript across environments <a href="#getting-started-with-snyk-for-apex-across-environments" id="getting-started-with-snyk-for-apex-across-environments"></a>
 
@@ -20,7 +16,11 @@ Snyk for Typescript is supported only for Snyk Code.
 
 **Code analysis**
 
-To start testing your code using Snyk Code open your repository in a terminal and run the following command:snyk code testTo customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
+To start testing your code using Snyk Code, open your repository in a terminal and run the following command:
+
+`snyk code test`
+
+To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
 * ​[Snyk CLI commands](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/5641/snyk-cli/commands#available-commands)​
 * ​[Exclude directories and files from the Snyk tests](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/5641/scan-applications/snyk-code/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test)​
@@ -34,9 +34,9 @@ To start testing your code using Snyk Code open your repository in a terminal an
 
 #### Snyk integrations  <a href="#snyk-integrations" id="snyk-integrations"></a>
 
-​🔗For integrated development environments, see [Use Snyk in your IDE](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/5641/integrations/ide-tools).​
+​:link: For integrated development environments, see [Use Snyk in your IDE](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/5641/integrations/ide-tools).​
 
-:link:If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/5641/integrations/snyk-ci-cd-integrations) and [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/5641/snyk-api)).
+:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/5641/integrations/snyk-ci-cd-integrations) and [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/5641/snyk-api)).
 
 ### Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 

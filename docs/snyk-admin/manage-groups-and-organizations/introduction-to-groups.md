@@ -11,7 +11,7 @@ You can use Group options to view reports across all of the Organizations in you
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1) (1).png" alt="Snyk Group options"><figcaption><p>Snyk Group options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1).png" alt="Snyk Group options"><figcaption><p>Snyk Group options</p></figcaption></figure>
 
 </div>
 
