@@ -32,7 +32,7 @@ An example follows of a Snyk notification for new issues and remediations in Pro
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Example of a Snyk notification"><figcaption><p>Example of a Snyk notification</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Example of a Snyk notification"><figcaption><p>Example of a Snyk notification</p></figcaption></figure>
 
 </div>
 

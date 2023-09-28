@@ -52,11 +52,11 @@ You can configure remote custom rules bundles on the Organization level by navig
 You can configure remote custom rules bundles on the Group level by navigating to `Settings` > `Infrastructure as Code.`
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (2).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (2) (3).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
 
 * Enable remote bundles configuration using the **Enable rules** toggle. Doing so loads the form to specify the Registry URL and tag as shown in this example:
 
-<figure><img src="../../../../.gitbook/assets/image (102) (2).png" alt="Specify Registry URL and tag form"><figcaption><p>Specify Registry URL and tag form</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (102) (2) (1).png" alt="Specify Registry URL and tag form"><figcaption><p>Specify Registry URL and tag form</p></figcaption></figure>
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules and click **Save changes** to save.
 
@@ -78,7 +78,7 @@ To override the Group configurations, go to the Organization's `Rules` section i
 
 * Update the configurations to those customized for your Organization and click **Save changes**.
 
-<figure><img src="../../../../.gitbook/assets/image (196) (1).png" alt="Organization rules configuration updated"><figcaption><p>Organization rules configuration updated</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (196) (1) (2).png" alt="Organization rules configuration updated"><figcaption><p>Organization rules configuration updated</p></figcaption></figure>
 
 * Now, configurations on the Group level will not override these customized settings for your Organization.
 
