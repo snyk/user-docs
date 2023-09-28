@@ -6,7 +6,7 @@ Follow these steps to find an Organization ID and internal name:
 
 1\. On the Snyk Web UI, open the Organization whose details you want to find:
 
-<figure><img src="../../../../.gitbook/assets/snyk-org-switcher.png" alt="Open an Organization to find its details"><figcaption><p>Open an Organization to find its details</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-org-switcher (1).png" alt="Open an Organization to find its details"><figcaption><p>Open an Organization to find its details</p></figcaption></figure>
 
 2\. Once the selected Organization is open, click the **Org Settings.**
 

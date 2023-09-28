@@ -4,7 +4,7 @@ You can use Group-level options to view [reports](manage-groups.md#group-reports
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1).png" alt="Group-level options"><figcaption><p>Group-level options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1) (1).png" alt="Group-level options"><figcaption><p>Group-level options</p></figcaption></figure>
 
 </div>
 

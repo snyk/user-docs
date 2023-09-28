@@ -49,19 +49,22 @@ Running the `snyk code test` command with the `--report` option as shown returns
 
 If a Snyk Code Project created using the CLI does not yet exist for the value provided in the `--project-name` option, the Snyk CLI creates a new Project. If a Project created using the CLI exists, a new snapshot is created under the same Project.
 
-The following command will create or upload an existing Project named \<PROJECT-NAME> under a target named \<TARGET-NAME>
+The following command will create or upload an existing Project named \<PROJECT\_NAME> under a target named \<TARGET\_NAME>
+
+* Both PROJECT\_NAME and TARGET\_NAME must be in double quotation marks. Single quotes or missing quotes will result in an error.
+* The project name and target name must each contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
 
 ```
-snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET-NAME>"
+snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_NAME>"
 ```
 
 The following command will create or upload an existing Project named \<PROJECT-NAME> under a target named \<TARGET-NAME> and grouped by the "$(git branch --show-current)" branch name.
 
 ```
-snyk code test --report --project-name="<PROJECT-NAME>" --target-name="<TARGET-NAME>" --target-reference="$(git branch --show-current)"
+snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_NAME>" --target-reference="$(git branch --show-current)"
 ```
 
-<figure><img src="../../../.gitbook/assets/image (54).png" alt="Code analysis Projects grouped by branch"><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (4).png" alt="Code analysis Projects grouped by branch"><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
 
 ## **Test and publish CLI results to an existing Snyk Code SCM Project**
 

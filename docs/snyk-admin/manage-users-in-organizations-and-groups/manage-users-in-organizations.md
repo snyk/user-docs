@@ -57,7 +57,7 @@ To change the role of a member, click on the **Role** entry for the member and u
 For Enterprise plan customers who create custom member roles, Snyk prevents users from assigning roles to other users who have more privileges. If you try to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than you have, you will see the error **Cannot assign higher privilege role**.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png" alt="Cannot assign higher privilege role error message"><figcaption><p><strong>Cannot assign higher privilege role error message</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png" alt="Cannot assign higher privilege role error message"><figcaption><p><strong>Cannot assign higher privilege role error message</strong></p></figcaption></figure>
 
 ## Delete Organization members
 
