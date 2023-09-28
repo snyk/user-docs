@@ -1,11 +1,11 @@
 # Open-source license compliance
 
-## Overview of licenses&#x20;
-
 {% hint style="info" %}
 **Feature availability**\
-Licenses are available for all paid plans. See [pricing plans](https://snyk.io/plans/) for details.
+Licenses are available for all paid plans. For details, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
+
+## Overview of licenses&#x20;
 
 Every time you test your code in the [Snyk Web UI](../../../getting-started/exploring-the-snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or using [PR Checks](../../../scan-application-code/run-pr-checks/), your repositories are scanned not only for vulnerabilities but also for license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and then checks for license issues against Snyk known licenses.
 
@@ -36,7 +36,7 @@ An example follows:
 
 ### View and manage license policies
 
-You can view an inventory of all of your licenses across all your Projects. Snyk also lists packages that have dual licenses and multiple licenses. See [View licenses](../../../manage-issues/dependencies-and-licenses/view-licenses.md) for more information.
+You can view an inventory of all of your licenses across all your Projects. Snyk also lists packages that have dual licenses and multiple licenses. For more information, see [View licenses](../../../manage-issues/dependencies-and-licenses/view-licenses.md).
 
 Different customers may have different needs and tolerance for different license types. We encourage you to ensure you have made the needed changes or created new policies that fit the specific requirements of your company.
 
@@ -59,7 +59,7 @@ Snyk does not support scanning for license issues for package versions that incl
 * Composer
 * Cocoapods
 
-## **Supported unmanaged Ecosystems**
+## **Supported unmanaged ecosystems**
 
 {% hint style="warning" %}
 Snyk does not support scanning for license issues for package versions that include a git commit hash.

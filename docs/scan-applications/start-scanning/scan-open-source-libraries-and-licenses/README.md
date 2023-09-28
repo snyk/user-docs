@@ -14,17 +14,17 @@ Before scanning your open-source libraries with Snyk Open Source, ensure you hav
 
 ## View vulnerabilities in your open-source libraries
 
-You can view vulnerability results for imported Projects. The **Projects** page appears by default after import, showing vulnerability information for the Snyk Projects you have imported, grouped into Targets, that is, the repositories you have scanned.
+You can view vulnerability results for imported Projects. The **Projects** page appears by default after import, showing vulnerability information for the Snyk Projects you have imported, grouped into **Targets**, that is, the repositories you have scanned.
 
-You can expand a Target to see vulnerability information for Projects, including the number of issues found, grouped by severity level:
+You can expand a **Target** to see vulnerability information for Projects, including the number of issues found, grouped by severity level:
 
 <figure><img src="../../../.gitbook/assets/Getting started with open source.png" alt="Projects page"><figcaption><p>Projects page</p></figcaption></figure>
 
-Click a Project to open the issues page for that Project where you will see the issue cards, showing the module where each issue was introduced, how to fix it, and more details about the vulnerability itself.
+Click a Project to open the issues page for that Project, where you will see the issue cards, showing the module where each issue was introduced, how to fix it, and more details about the vulnerability itself.
 
 <figure><img src="../../../.gitbook/assets/project-details.png" alt="Open Source Project issues page"><figcaption><p>Open Source Project issues page</p></figcaption></figure>
 
-See [View Project information](../../../snyk-admin/introduction-to-snyk-projects/view-project-information.md) for more details.
+For more details, see [View Project information](../../../snyk-admin/introduction-to-snyk-projects/view-project-information.md).
 
 ## Fix vulnerabilities in your open-source libraries
 
@@ -45,4 +45,4 @@ To fix vulnerabilities:
 
 <figure><img src="../../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png" alt=".Files changed tab in GitHub after triggering Fix PR for an open source project"><figcaption><p>Files changed tab in GitHub after triggering Fix PR for an open source project</p></figcaption></figure>
 
-See [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for more details.
+For more details, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md).
