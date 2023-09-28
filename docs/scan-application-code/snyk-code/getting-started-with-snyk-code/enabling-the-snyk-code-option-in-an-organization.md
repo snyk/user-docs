@@ -15,7 +15,7 @@ Snyk Code is enabled by default in GitHub integration but disabled in other SCM 
 Follow these steps to enable Snyk Code:
 
 1. If you are logged out of your Snyk Account, go to [Snyk.io](http://snyk.io) and log into your Snyk Account by clicking the **Log in** button.
-2. In the Snyk Web UI, select the <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6) (3).png" alt="Settings icon" data-size="line"> **Settings > Snyk Code** option.
+2. In the Snyk Web UI, select the <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png" alt="Settings icon" data-size="line"> **Settings > Snyk Code** option.
 3. In the **Enable Snyk Code** section, change the setting to **Enabled**:
 
 <figure><img src="../../../.gitbook/assets/image (358).png" alt="Enable Snyk Code setting"><figcaption><p>Enable Snyk Code setting</p></figcaption></figure>

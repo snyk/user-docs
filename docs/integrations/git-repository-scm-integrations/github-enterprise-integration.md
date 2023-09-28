@@ -70,7 +70,7 @@ Snyk starts scanning the selected repositories for dependency files, such as `pa
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16) (26).jpeg" alt="Imported Projects on the Projects page in Snyk"><figcaption><p>Imported Projects on the Projects page in Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16).jpeg" alt="Imported Projects on the Projects page in Snyk"><figcaption><p>Imported Projects on the Projects page in Snyk</p></figcaption></figure>
 
 ## Uses of the Snyk GitHub Enterprise integration
 
@@ -88,7 +88,7 @@ Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabi
 
 The example that follows shows a fix pull request opened by Snyk.
 
-<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1) (1).png" alt="Fix pull request created by Snyk"><figcaption><p>Fix pull request created by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1).png" alt="Fix pull request created by Snyk"><figcaption><p>Fix pull request created by Snyk</p></figcaption></figure>
 
 To review and update the automatic fix pull request settings:
 

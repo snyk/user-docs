@@ -66,7 +66,7 @@ After you have done this, the channel is displayed on the **Settings** page for 
 After the Slack app has been configured, new issue notifications will be forwarded to the selected Slack channel according to the desired severity level threshold. \
 New issue notifications may take up to an hour to start propagating to your Slack workspace once configured.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (113).png" alt="Example of a new critical vulnerability notification received in Slack"><figcaption><p>Example of a new critical vulnerability notification received in Slack</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (145).png" alt="Example of a new critical vulnerability notification received in Slack"><figcaption><p>Example of a new critical vulnerability notification received in Slack</p></figcaption></figure>
 
 ## Remove the Snyk app for Slack
 
