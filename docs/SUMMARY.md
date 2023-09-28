@@ -254,6 +254,7 @@
     * [Scala](scan-applications/supported-languages-and-frameworks/scala.md)
     * [Swift and Objective-C](scan-applications/supported-languages-and-frameworks/swift-and-objective-c.md)
     * [TypeScript](scan-applications/supported-languages-and-frameworks/typescript.md)
+    * [VB.NET](scan-applications/supported-languages-and-frameworks/vb.net.md)
     * [Working with Snyk in your environment](scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/README.md)
   * [PR Checks](scan-application-code/run-pr-checks/README.md)
     * [Introduction to automated security scans with PR Checks](scan-application-code/run-pr-checks/introduction-to-automated-security-scans-with-pr-checks.md)

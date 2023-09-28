@@ -177,7 +177,7 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Poetry dev dependencies** option under the **Poetry dev dependencies** settings.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (145) (1).png" alt=""><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (145).png" alt=""><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
 #### Pipenv and Git repositories
 
