@@ -46,7 +46,7 @@ You will start by importing SCM repositories as [Projects](../../snyk-admin/intr
 
 On the [Projects](../../snyk-admin/introduction-to-snyk-projects/) page, ensure **Group by targets** is selected and navigate to the Target (Git repository) that contains the files for IaC+ to test.
 
-You will see a single **Infrastructure as Code issues** Project. IaC+ generates only one Project in each repository, unlike the original IaC, which generates one Project for each configuration file.
+You will see a single **Infrastructure as Code issues** Project. IaC+ generates only one Project in each repository, unlike current IaC, which generates one Project for each configuration file.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-07 at 3.57.30 PM.png" alt="IaC+ Project in your SCM repository"><figcaption><p>IaC+ Project in your SCM repository</p></figcaption></figure>
 

@@ -29,7 +29,7 @@ To reset all custom severities, select **Reset Custom Settings**.
 ## Filter rules by cloud or IaC+ area
 
 {% hint style="info" %}
-This section applies to Organizations with both cloud and IaC+ enabled, or IIaC+ only.
+This section applies to Organizations with both cloud and IaC+ enabled, or IaC+ only.
 {% endhint %}
 
 By default, all rules are shown. Under the **Product Area** section, you can uncheck the Cloud box to hide Cloud-only rules, or the IaC box to hide IaC-only rules.
