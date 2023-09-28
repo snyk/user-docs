@@ -247,6 +247,7 @@
     * [Go](scan-applications/supported-languages-and-frameworks/go.md)
     * [Java and Kotlin](scan-applications/supported-languages-and-frameworks/java-and-kotlin.md)
       * [Best practices for Java and Kotlin](scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-java-developers.md)
+      * [FAQ about Java](scan-applications/supported-languages-and-frameworks/java-and-kotlin/faq-about-java.md)
     * [JavaScript](scan-applications/supported-languages-and-frameworks/javascript.md)
       * [Best practices for JavaScript and Node.js](scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-javascript-node.js-developers.md)
     * [PHP](scan-applications/supported-languages-and-frameworks/php.md)
