@@ -1,6 +1,38 @@
 # Introduction to Snyk supported languages and frameworks
 
-## How Snyk works for code analysis
+## Snyk Code
+
+### Supported Extensions
+
+Snyk Code supports the following extensions:
+
+* `apex, trigger, ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, scala, swift, py, go, ASPX, CS, php, xml, jsp, jspx, cls, c, cc, cpp, cxx, h, hpp, hxx`
+
+The following extensions are in [Beta](../../more-info/snyk-feature-release-process.md):
+
+* `kt, vb`
+
+### File size limit for Snyk Code analysis
+
+Snyk Code automatically excludes the following files from analysis:
+
+* On the Web UI - files that are larger than 1MB.
+* On the CLI and IDE - files that are larger than 1MB.
+* Minified JS files with 3 or fewer lines.
+
+### Filename length limitation
+
+The analysis is available only for files with names shorter or equal to 255 characters. You receive an error if the filename exceeds this limit. To make sure that all files are being analyzed, consider shortening long filenames.
+
+### Framework support
+
+To support a specific framework, Snyk Code must both support the relevant language and be trained on Projects using the framework. The found patterns are then annotated by the security team and extended by curated content.
+
+Most framework are supported out of the box, as Snyk Code only need to parse the code to analyze it. In some cases, they might require specific rules, or it might require specific program analysis engine updates, or both.&#x20;
+
+If you notice any gaps in a specific framework support, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
+
+### How Snyk works for code analysis&#x20;
 
 Snyk scans your codebase following this sequence
 
@@ -10,7 +42,17 @@ Snyk scans your codebase following this sequence
 
 :link: See [Snyk Code AI Engine](../../scan-application-code/snyk-code/snyk-code-key-features/snyk-code-ai-engine.md).
 
-## How Snyk works for open source and licensing
+### Code Quality
+
+{% hint style="info" %}
+**Feature availability**
+
+Code Quality is an experimental feature. If you are interested in using the feature, contact your Snyk team.
+{% endhint %}
+
+## Snyk Open Source
+
+### How Snyk works for open source and licensing
 
 Snyk builds a dependency graph and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any packages anywhere in that tree.
 
