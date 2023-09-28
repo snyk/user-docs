@@ -238,6 +238,7 @@
   * [Supported languages and frameworks](scan-applications/supported-languages-and-frameworks/README.md)
     * [Introduction to Snyk supported languages and frameworks](scan-applications/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md)
     * [Supported languages, frameworks, and feature availability overview](scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md)
+    * [Apex](scan-applications/supported-languages-and-frameworks/apex.md)
     * [.NET](scan-applications/supported-languages-and-frameworks/.net/README.md)
       * [Best practices for .NET](scan-applications/supported-languages-and-frameworks/.net/help-.net.md)
       * [Troubleshooting .NET](scan-applications/supported-languages-and-frameworks/.net/troubleshooting-.net.md)
