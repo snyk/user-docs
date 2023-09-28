@@ -244,6 +244,7 @@
       * [Troubleshooting .NET](scan-applications/supported-languages-and-frameworks/.net/troubleshooting-.net.md)
     * [C/C++](scan-applications/supported-languages-and-frameworks/c-c++.md)
       * [Best practices for C/C++](scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/best-practices-for-c-c++.md)
+      * [Troubleshooting C/C++](scan-applications/supported-languages-and-frameworks/c-c++/help-c-c++.md)
     * [Go](scan-applications/supported-languages-and-frameworks/go.md)
     * [Java and Kotlin](scan-applications/supported-languages-and-frameworks/java-and-kotlin.md)
       * [Best practices for Java and Kotlin](scan-applications/supported-languages-and-frameworks/working-with-snyk-in-your-environment/snyk-for-java-developers.md)
