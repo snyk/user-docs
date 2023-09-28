@@ -414,6 +414,32 @@ The provided manifest file defines a `<TargetFramework>` or `<TargetFrameworks>`
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-DOTNET-0003](#snyk-os-dotnet-0003)
+
+#### Your C# code is missing a static Main function
+
+This error occurs when no static Main method with a correct signature is found in the code that produces an executable file. 
+It also occurs if the entry point function, `Main`, is defined with the wrong case, such as lower-case main.
+
+In order to fix this issue, ensure that your program has a .cs file that contains a main function, such as
+```c#
+namespace Example
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("hello world");
+        }
+    }
+}
+```
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://learn.microsoft.com/en-us/dotnet/csharp/misc/cs5001](https://learn.microsoft.com/en-us/dotnet/csharp/misc/cs5001)
+
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 
 #### Failed to access private module
@@ -1147,4 +1173,4 @@ Snyk could not generate hash using the customer PR files and projects vulnIds.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-09-27T09:16:53.458Z
+--- Generated at 2023-09-28T08:19:09.161Z
