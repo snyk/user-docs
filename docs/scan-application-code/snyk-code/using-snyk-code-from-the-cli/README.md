@@ -10,7 +10,7 @@ Before using the Snyk CLI for testing your source code with Snyk Code, verify yo
   For more information, see [Create a Snyk account](../../../getting-started/quickstart/create-a-snyk-account/).
 * Repositories with code in a supported language and framework.\
   For more information, see [Snyk Code - Supported languages and frameworks](../../../scan-applications/snyk-code/snyk-code-language-and-framework-support.md).
-* The **Snyk Code** option [enabled in your Snyk Org settings](../getting-started-with-snyk-code/enabling-the-snyk-code-option-in-an-organization.md).
+* The **Snyk Code** option [enabled in your Snyk Org settings](../../../scan-applications/start-scanning/scan-code/getting-started-with-snyk-code/enabling-the-snyk-code-option-in-an-organization.md).
 * The Snyk CLI installed and authenticated.
   * For instructions, see [Install or update the Snyk CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) and [Authenticate the Snyk CLI](../../../snyk-cli/authenticate-the-cli-with-your-account.md).
   * The minimum Snyk CLI version for Snyk Code, version 1.716.0. Snyk recommends using the latest version of the CLI.

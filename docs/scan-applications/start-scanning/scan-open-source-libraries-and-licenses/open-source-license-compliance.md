@@ -1,6 +1,6 @@
-# Licenses
+# Open-source license compliance
 
-## Licenses overview
+## Overview of licenses&#x20;
 
 {% hint style="info" %}
 **Feature availability**\
@@ -20,15 +20,7 @@ By default, Snyk determines the severity of license issue in the following way:
 
 For more information, see [License policies](../../../manage-issues/policies/license-policies/).
 
-### Manage license policies
-
-Different customers may have different needs and tolerance for different license types. We encourage you to ensure you have made the needed changes or created new policies that fit the specific requirements of your company.
-
-New licenses added by Snyk will inherit the **Unknown** license type severity. In cases where this severity was not set to **None**, newly-added licenses will appear in the licenses compliance results.
-
-If you notice a license with the wrong license type assigned to it, you can contact Snyk support. Snyk will investigate the request and update the license type if needed.
-
-### Using licenses
+### How Snyk uses licenses
 
 To facilitate the onboarding of your developers, Snyk recommends that your teams check these defaults, update severities, and add instructions according to license type based on the policies outlined specifically by your Legal teams.&#x20;
 
@@ -42,9 +34,15 @@ An example follows:
 
 </div>
 
-## **An inventory of your licenses**
+### View and manage license policies
 
 You can view an inventory of all of your licenses across all your Projects. Snyk also lists packages that have dual licenses and multiple licenses. See [View licenses](../../../manage-issues/dependencies-and-licenses/view-licenses.md) for more information.
+
+Different customers may have different needs and tolerance for different license types. We encourage you to ensure you have made the needed changes or created new policies that fit the specific requirements of your company.
+
+New licenses added by Snyk will inherit the **Unknown** license type severity. In cases where this severity was not set to **None**, newly-added licenses will appear in the licenses compliance results.
+
+If you notice a license with the wrong license type assigned to it, you can contact Snyk support. Snyk will investigate the request and update the license type if needed.
 
 ## **Supported package managers**
 
