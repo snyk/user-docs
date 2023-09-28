@@ -175,7 +175,7 @@ When you create a new Organization, Snyk Code (SAST) scanning is disabled by def
 
 If you imported Projects prior to enabling, you must re-import them.
 
-See [Getting started with Snyk Code](../scan-application-code/snyk-code/getting-started-with-snyk-code/) for more details.
+See [Getting started with Snyk Code](../scan-applications/start-scanning/scan-code/activate-snyk-code-using-the-web-ui.md) for more details.
 
 ### Enable Infrastructure as Code
 

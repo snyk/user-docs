@@ -1,4 +1,4 @@
-# Enabling the Snyk Code option in an Organization
+# Enable the Snyk Code option
 
 To start working with Snyk Code via the Web UI, CLI, IDE, or API, the **Snyk Code** option must be enabled in your Snyk Organization settings.
 

@@ -1,7 +1,7 @@
-# Integrating your Source Control System with your Snyk account
+# Integrate your Source Control System with your Snyk account
 
 {% hint style="info" %}
-If your SCM is already integrated with your Snyk Account, and you do not want to add additional SCMs, you can skip this step and move to [Importing repositories for Snyk Code testing](importing-repositories-for-snyk-code-testing.md).
+If your SCM is already integrated with your Snyk Account, and you do not want to add additional SCMs, you can skip this step and move to [Importing repositories for Snyk Code testing](import-repositories-to-scan-with-snyk-code.md).
 {% endhint %}
 
 After you enable Snyk Code in your Snyk Organization settings, to work in the Web UI or with the API but not the CLI, you must integrate your account with the Source Control Management system that contains the repositories you want to test.
@@ -23,7 +23,7 @@ Follow these steps to integrate your SCM with your Snyk account
 The **Source control** integrations display only SCMs that are supported by Snyk Code.
 
 {% hint style="info" %}
-If you already have an integrated SCM, it is indicated as **Configured**. If you want to use this SCM, you can continue with[ Importing repositories to Snyk for the Snyk Code testing](importing-repositories-for-snyk-code-testing.md).
+If you already have an integrated SCM, it is indicated as **Configured**. If you want to use this SCM, you can continue with[ Importing repositories to Snyk for the Snyk Code testing](import-repositories-to-scan-with-snyk-code.md).
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (106) (1).png" alt=""><figcaption><p>Source control integrations showoing GitLab being selected</p></figcaption></figure>
