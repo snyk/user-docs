@@ -8,7 +8,7 @@ The cloud context feature is available for [IaC+](./) only and supports AWS.
 
 The Snyk IaC cloud context feature uses information from deployed cloud infrastructure through [IaC+](./) to suppress certain issues from your IaC tests.
 
-For example, suppose your Terraform configuration declares an Amazon Web Services (AWS) S3 bucket that does not have a public access block, but you have an account-level public access block. Snyk applies the cloud context from your AWS account to suppress false positive issues stating your bucket is not secured by a public access block.
+For example, suppose your Terraform configuration declares an Amazon S3 bucket that does not have a public access block, but you have an account-level public access block. Snyk applies the cloud context from your AWS account to suppress false positive issues stating your bucket is not secured by a public access block.
 
 Example results without cloud context:
 
