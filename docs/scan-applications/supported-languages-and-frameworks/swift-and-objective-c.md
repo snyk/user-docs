@@ -6,9 +6,9 @@
 You might encounter false positives or false negatives for partially supported frameworks and package managers.
 {% endhint %}
 
-### Code analysis
+### Code analysis for Swift
 
-Snyk Code supports the following frameworks:
+Snyk Code for Swift supports the following frameworks:
 
 * Alamofire
 * Pathos&#x20;
