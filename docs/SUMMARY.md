@@ -407,7 +407,7 @@
         * [View Project details and scan results](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/viewing-project-details-and-test-results.md)
         * [Kubernetes and the Snyk Priority Score](scan-applications/snyk-container/integrate-with-kubernetes/navigate-the-kubernetes-integration-ui/kubernetes-and-the-snyk-priority-score.md)
     * [Integrate with self-hosted container registries (Broker)](scan-applications/snyk-container/integrate-with-self-hosted-container-registries-broker.md)
-  * [PR Checks](scan-application-code/run-pr-checks/README.md)
+  * [Run PR Checks](scan-application-code/run-pr-checks/README.md)
     * [Introduction to automated security scans with PR Checks](scan-application-code/run-pr-checks/introduction-to-automated-security-scans-with-pr-checks.md)
     * [Configure PR Checks](scan-application-code/run-pr-checks/configure-pr-checks.md)
     * [Analyze PR Checks results](scan-applications/run-pr-checks/analyze-pr-checks-results.md)
