@@ -6,10 +6,10 @@ Snyk supports the following languages&#x20;
 
 * [.NET](.net/)
 * [Apex](apex.md)
-* [Bazel](broken-reference)
+* [Bazel](bazel.md)
 * [C/C++](c-c++.md)
-* [Elixir](broken-reference)
-* [Go](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
+* [Elixir](elixir.md)
+* [Go](go.md)
 * [Java and Kotlin](java-and-kotlin.md)
 * [JavaScript](javascript.md)
 * [PHP](php.md)
