@@ -760,7 +760,6 @@
     * [Severity thresholds for CLI tests](snyk-cli/scan-and-maintain-projects-using-the-cli/set-severity-thresholds-for-cli-tests.md)
     * [@snyk/protect package](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-protect-package.md)
     * [Test public npm packages before use](snyk-cli/scan-and-maintain-projects-using-the-cli/test-public-npm-packages-before-use.md)
-    * [Test public repositories before use](snyk-cli/scan-and-maintain-projects-using-the-cli/test-public-repositories-before-use.md)
     * [CLI test results](snyk-cli/scan-and-maintain-projects-using-the-cli/view-cli-test-results.md)
     * [Fix vulnerabilities using the Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/fix-vulnerabilities-using-the-snyk-cli.md)
   * [CLI commands and options summary](snyk-cli/cli-commands-and-options-summary.md)
