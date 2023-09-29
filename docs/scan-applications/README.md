@@ -26,6 +26,6 @@ Scan and automatically address potential vulnerabilities when you review pull re
 
 ## Environment support
 
-* [Supported languages and package managers in Snyk Open Source](snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
+* [Supported languages and package managers in Snyk Open Source](snyk-open-source/snyk-open-source-supported-languages-and-package-managers.md)
 * [Supported languages and frameworks in Snyk Code](snyk-code/snyk-code-language-and-framework-support.md)
 * [Supported operating system distributions in Snyk Container](snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
