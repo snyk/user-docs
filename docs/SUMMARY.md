@@ -312,7 +312,7 @@
       * [Go rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/go-rules.md)
       * [Java rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/java-rules.md)
       * [JavaScript and TypeScript rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/javascript-and-typescript-rules.md)
-      * [Kotlin (Beta) rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/kotlin-beta-rules.md)
+      * [Kotlin rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/kotlin-beta-rules.md)
       * [PHP rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/php-rules.md)
       * [Python rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/python-rules.md)
       * [Ruby rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/ruby-rules.md)

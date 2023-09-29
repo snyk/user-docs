@@ -1,11 +1,5 @@
 # VB.NET
 
-{% hint style="info" %}
-Snyk for VB.NET is supported only for Snyk Code and is currently in [Open Beta](../../more-info/snyk-feature-release-process.md#open-beta).&#x20;
-
-You can [enable it through Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
-{% endhint %}
-
 ### Code analysis <a href="#code-analysis" id="code-analysis"></a>
 
 `.aspx` files are not supported.

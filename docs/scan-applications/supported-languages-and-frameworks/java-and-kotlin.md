@@ -22,8 +22,6 @@ Snyk Code supports the following frameworks:
 {% hint style="info" %}
 **Snyk Code for Kotlin**
 
-Snyk Code for Kotlin is currently in Open Beta, and you can [enable it through Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
-
 Android is partially supported.
 {% endhint %}
 
