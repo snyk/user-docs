@@ -6,7 +6,7 @@ Snyk supports the following languages&#x20;
 
 * [.NET](.net/)
 * [Apex](apex.md)
-* [Bazel](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)
+* [Bazel](broken-reference)
 * [C/C++](c-c++.md)
 * [Elixir](broken-reference)
 * [Go](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-go.md)
