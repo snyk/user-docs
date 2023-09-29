@@ -149,11 +149,11 @@ By running your CI/CD pipeline to pull Terraform state and run [snyk iac capture
 
 When a mapping artifact is created or updated, Snyk executes a mapping run by analyzing IaC resources, cloud resources, and mapping artifacts across a Snyk Organization, and generates resource mappings that include connections between cloud and IaC resources.
 
-### Step 4: Wait a few minutes, and check the cloud issues UI <a href="#docs-internal-guid-c33c6869-7fff-eb8c-a85d-9060c4575809" id="docs-internal-guid-c33c6869-7fff-eb8c-a85d-9060c4575809"></a>
+### Step 4: Wait a few minutes, and check the cloud issues page <a href="#docs-internal-guid-c33c6869-7fff-eb8c-a85d-9060c4575809" id="docs-internal-guid-c33c6869-7fff-eb8c-a85d-9060c4575809"></a>
 
 Wait a few minutes so that Snyk can finish the cloud environment scan, complete the mapping run, and update resource mappings.
 
-Navigate to the [cloud issues UI](../introduction-to-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), and set the h**as\_iac\_mappings** filter to `true`, either in the search bar or by selecting the appropriate filter. This will display cloud issues with resources that are mapped to IaC resources, for supported resource types.
+Navigate to the [cloud issues page](../introduction-to-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), and set the h**as\_iac\_mappings** filter to `true`, either in the search bar or by selecting the appropriate filter. This will display cloud issues with resources that are mapped to IaC resources, for supported resource types.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-20 at 8.26.36 PM.png" alt="Use the has_iac_mappings filter"><figcaption><p>Use the <strong>has_iac_mappings</strong> filter</p></figcaption></figure>
 

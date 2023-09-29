@@ -1,6 +1,6 @@
 # Key concepts for IaC+ and cloud
 
-IaC+ and cloud scans have a number of unique concepts, different from Snyk core concepts such as [Projects](../../snyk-admin/introduction-to-snyk-projects/#project) and [Targets](../../snyk-admin/introduction-to-snyk-projects/#target).
+IaC+ and cloud scans have a number of unique concepts that are different from Snyk core concepts, such as [Environments](key-concepts-in-iac+.md#environments) and [Resources](key-concepts-in-iac+.md#resources).
 
 ## Environments
 
