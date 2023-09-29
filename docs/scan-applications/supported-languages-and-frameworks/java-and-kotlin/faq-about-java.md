@@ -80,6 +80,8 @@ This BOM can be imported into a Project POM as a parent. The `log4j` version doe
 
 ## How Snyk handles BOMs
 
+### Dependency resolution
+
 Snyk applies the versions in the BOM `dependencyManagement` lookup to any dependencies declared in Project POMs that import it as a `parent`.
 
 When Snyk scans the BOM files, the `dependencyManagement` contents are not considered dependencies of that file. These are only lookups.
@@ -92,6 +94,14 @@ The following explains how Snyk analyzes and treats each of the previous example
 {% hint style="info" %}
 If a BOM has direct dependencies outside`dependencyManagement`, then Snyk creates a Project for that BOM.&#x20;
 {% endhint %}
+
+### Fix PRs
+
+Snyk offers fix advice, including recommendations for upgrading vulnerable packages with the Fix PR feature.&#x20;
+
+Fix PRs can only be created for dependencies whose versions are managed in the POM file where the issue is reported.
+
+If the version or dependency is managed in a parent BOM, then even though Snyk sees that it could fix the vulnerable path by changing the version,  it cannot apply the fix.
 
 ## Troubleshooting
 
