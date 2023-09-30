@@ -1,4 +1,4 @@
-# Swift (Beta) rules
+# Visual Basic rules
 
 ## Rule (1) Path Traversal
 
@@ -30,29 +30,21 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (5) Code Injection
+## Rule (5) XML Injection
+
+**CWE** (91) XML Injection (aka Blind XPath Injection)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+## Rule (6) Code Injection
 
 **CWE** (94) Improper Control of Generation of Code ('Code Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (6) Clear Text Logging
+## Rule (7) Debug Features Enabled
 
-**CWE** (200, 312) Exposure of Sensitive Information to an Unauthorized Actor, Cleartext Storage of Sensitive Information
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (7) Information Exposure
-
-**CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+**CWE** (215) Insertion of Sensitive Information Into Debugging Code
 
 ## Rule (8) Use of Hardcoded Credentials
 
@@ -62,39 +54,29 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (9) Device Authentication Bypass
-
-**CWE** (287) Improper Authentication
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (10) Improper Certificate Validation
-
-**CWE** (295) Improper Certificate Validation
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-## Rule (11) Inadequate Encryption Strength
+## Rule (9) Inadequate Encryption Strength
 
 **CWE** (326) Inadequate Encryption Strength
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (12) Use of a Broken or Risky Cryptographic Algorithm
+## Rule (10) Use of a Broken or Risky Cryptographic Algorithm
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (13) Use of Insufficiently Random Values
+## Rule (11) Use of Insufficiently Random Values
 
 **CWE** (330) Use of Insufficiently Random Values
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (14) Insecure Deserialization
+## Rule (12) Regular expression injection
+
+**CWE** (400, 730) Uncontrolled Resource Consumption, OWASP Top Ten 2004 Category A9 - Denial of Service
+
+## Rule (13) Deserialization of Untrusted Data
 
 **CWE** (502) Deserialization of Untrusted Data
 
@@ -102,13 +84,23 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (15) Hardcoded Secret
+## Rule (14) Hardcoded Secret
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (16) XML External Entity (XXE) Injection
+## Rule (15) Request Validation Disabled
+
+**CWE** (554) ASP.NET Misconfiguration: Not Using Input Validation Framework
+
+## Rule (16) Open Redirect
+
+**CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+## Rule (17) XML External Entity (XXE) Injection
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -116,23 +108,25 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (17) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+## Rule (18) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (18) Memory Corruption
+## Rule (19) XPath Injection
 
-**CWE** (822) Untrusted Pointer Dereference
+**CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
 
-## Rule (19) Use of Password Hash With Insufficient Computational Effort
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+## Rule (20) Use of Password Hash With Insufficient Computational Effort
 
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (20) Server-Side Request Forgery (SSRF)
+## Rule (21) Server-Side Request Forgery (SSRF)
 
 **CWE** (918) Server-Side Request Forgery (SSRF)
 
@@ -140,8 +134,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (21) Insecure Data Storage
+## Rule (22) Sensitive Cookie Without 'HttpOnly' Flag
 
-**CWE** (922) Insecure Storage of Sensitive Information
+**CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
 
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration

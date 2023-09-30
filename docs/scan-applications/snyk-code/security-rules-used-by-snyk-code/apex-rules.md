@@ -48,7 +48,13 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (7) Clear Text Sensitive Storage
+## Rule (7) XML Injection
+
+**CWE** (91) XML Injection (aka Blind XPath Injection)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+## Rule (8) Clear Text Sensitive Storage
 
 **CWE** (200, 312) Exposure of Sensitive Information to an Unauthorized Actor, Cleartext Storage of Sensitive Information
 
@@ -58,7 +64,7 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (8) Use of Hardcoded Credentials
+## Rule (9) Use of Hardcoded Credentials
 
 **CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
 
@@ -66,47 +72,39 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (9) Access Violation
+## Rule (10) Access Violation
 
 **CWE** (284, 285) Improper Access Control, Improper Authorization
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (10) Improper Access Control: Email Content Injection
+## Rule (11) Improper Access Control: Email Content Injection
 
 **CWE** (284) Improper Access Control
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (11) Insecure Data Transmission
+## Rule (12) Insecure Data Transmission
 
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (12) Regular expression injection
+## Rule (13) Regular expression injection
 
 **CWE** (400, 730) Uncontrolled Resource Consumption, OWASP Top Ten 2004 Category A9 - Denial of Service
 
-## Rule (13) Hardcoded Secret
+## Rule (14) Hardcoded Secret
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (14) Open Redirect
+## Rule (15) Open Redirect
 
 **CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-## Rule (15) XML Injection
-
-**CWE** (611) Improper Restriction of XML External Entity Reference
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
 ## Rule (16) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 

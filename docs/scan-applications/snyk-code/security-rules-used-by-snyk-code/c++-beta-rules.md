@@ -64,37 +64,43 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (12) Cryptographic Issues
+## Rule (12) Use of Hardcoded Cryptographic Key
 
-**CWE** (310) Cryptographic Issues
+**CWE** (321) Use of Hard-coded Cryptographic Key
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (13) Division By Zero
+## Rule (13) Inadequate Encryption Strength
+
+**CWE** (326) Inadequate Encryption Strength
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (14) Division By Zero
 
 **CWE** (369) Divide By Zero
 
-## Rule (14) Missing Release of Memory after Effective Lifetime
+## Rule (15) Missing Release of Memory after Effective Lifetime
 
 **CWE** (401) Missing Release of Memory after Effective Lifetime
 
-## Rule (15) Double Free
+## Rule (16) Double Free
 
 **CWE** (415) Double Free
 
-## Rule (16) Use After Free
+## Rule (17) Use After Free
 
 **CWE** (416) Use After Free
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (17) Dereference of a NULL Pointer
+## Rule (18) Dereference of a NULL Pointer
 
 **CWE** (476) NULL Pointer Dereference
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (18) XML External Entity (XXE) Injection
+## Rule (19) XML External Entity (XXE) Injection
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -102,24 +108,32 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (19) XPath Injection
+## Rule (20) XPath Injection
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (20) Missing Release of File Descriptor or Handle after Effective Lifetime
+## Rule (21) Missing Release of File Descriptor or Handle after Effective Lifetime
 
 **CWE** (775) Missing Release of File Descriptor or Handle after Effective Lifetime
 
-## Rule (21) Use of Expired File Descriptor
+## Rule (22) Use of Expired File Descriptor
 
 **CWE** (910) Use of Expired File Descriptor
 
-## Rule (22) User Controlled Pointer
+## Rule (23) Server-Side Request Forgery (SSRF)
+
+**CWE** (918) Server-Side Request Forgery (SSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A10:2021 - Server-Side Request Forgery (SSRF)
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (24) User Controlled Pointer
 
 **CWE** (1285) Improper Validation of Specified Index, Position, or Offset in Input
 
-## Rule (23) An optimizing compiler may remove memset non-zero leaving data in memory
+## Rule (25) An optimizing compiler may remove memset non-zero leaving data in memory
 
 **CWE** (1330) Remanent Data Readable after Memory Erase

@@ -80,7 +80,7 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (12) NoSQL Injection
+## Rule (12) SQL Injection
 
 **CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 
@@ -88,35 +88,27 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (13) SQL Injection
-
-**CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (14) Code Injection
+## Rule (13) Code Injection
 
 **CWE** (94) Improper Control of Generation of Code ('Code Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (15) Improper Neutralization of Directives in Statically Saved Code
+## Rule (14) Improper Neutralization of Directives in Statically Saved Code
 
 **CWE** (96) Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (16) Buffer Over-read
+## Rule (15) Buffer Over-read
 
 **CWE** (126) Buffer Over-read
 
-## Rule (17) Use of Externally-Controlled Format String
+## Rule (16) Use of Externally-Controlled Format String
 
 **CWE** (134) Use of Externally-Controlled Format String
 
-## Rule (18) Clear Text Sensitive Storage
+## Rule (17) Clear Text Sensitive Storage
 
 **CWE** (200, 312) Exposure of Sensitive Information to an Unauthorized Actor, Cleartext Storage of Sensitive Information
 
@@ -126,7 +118,7 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (19) Information Exposure
+## Rule (18) Information Exposure
 
 **CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
 
@@ -134,7 +126,7 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (20) Introspection Enabled
+## Rule (19) Introspection Enabled
 
 **CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
 
@@ -142,11 +134,11 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (21) Observable Timing Discrepancy (Timing Attack)
+## Rule (20) Observable Timing Discrepancy (Timing Attack)
 
 **CWE** (208) Observable Timing Discrepancy
 
-## Rule (22) Use of Hardcoded Credentials
+## Rule (21) Use of Hardcoded Credentials
 
 **CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
 
@@ -154,37 +146,37 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (23) Cryptographic Issues
+## Rule (22) Cryptographic Issues
 
 **CWE** (310) Cryptographic Issues
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (24) Cleartext Transmission of Sensitive Information
+## Rule (23) Cleartext Transmission of Sensitive Information
 
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (25) Use of a Broken or Risky Cryptographic Algorithm
+## Rule (24) Use of a Broken or Risky Cryptographic Algorithm
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (26) Insecure TLS Configuration
+## Rule (25) Insecure TLS Configuration
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (27) Use of Insufficiently Random Values
+## Rule (26) Use of Insufficiently Random Values
 
 **CWE** (330) Use of Insufficiently Random Values
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (28) Origin Validation Error
+## Rule (27) Origin Validation Error
 
 **CWE** (346, 942) Origin Validation Error, Permissive Cross-domain Policy with Untrusted Domains
 
@@ -192,25 +184,25 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (29) Insecure JWT Verification Method
+## Rule (28) Insecure JWT Verification Method
 
 **CWE** (347) Improper Verification of Cryptographic Signature
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (30) JWT Signature Verification Method Disabled
+## Rule (29) JWT Signature Verification Method Disabled
 
 **CWE** (347) Improper Verification of Cryptographic Signature
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (31) JWT 'none' Algorithm Supported
+## Rule (30) JWT 'none' Algorithm Supported
 
 **CWE** (347) Improper Verification of Cryptographic Signature
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (32) Cross-Site Request Forgery (CSRF)
+## Rule (31) Cross-Site Request Forgery (CSRF)
 
 **CWE** (352) Cross-Site Request Forgery (CSRF)
 
@@ -218,19 +210,19 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (33) Denial of Service (DoS) through Nested GraphQL Queries
+## Rule (32) Denial of Service (DoS) through Nested GraphQL Queries
 
 **CWE** (400) Uncontrolled Resource Consumption
 
-## Rule (34) Unchecked Input for Loop Condition
+## Rule (33) Unchecked Input for Loop Condition
 
 **CWE** (400, 606) Uncontrolled Resource Consumption, Unchecked Input for Loop Condition
 
-## Rule (35) Regular Expression Denial of Service (ReDoS)
+## Rule (34) Regular Expression Denial of Service (ReDoS)
 
 **CWE** (400) Uncontrolled Resource Consumption
 
-## Rule (36) Deserialization of Untrusted Data
+## Rule (35) Deserialization of Untrusted Data
 
 **CWE** (502) Deserialization of Untrusted Data
 
@@ -238,19 +230,19 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (37) Hardcoded Secret
+## Rule (36) Hardcoded Secret
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (38) Open Redirect
+## Rule (37) Open Redirect
 
 **CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (39) XML External Entity (XXE) Injection
+## Rule (38) XML External Entity (XXE) Injection
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -258,41 +250,41 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (40) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+## Rule (39) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (41) Weak Password Recovery Mechanism for Forgotten Password
+## Rule (40) Weak Password Recovery Mechanism for Forgotten Password
 
 **CWE** (640) Weak Password Recovery Mechanism for Forgotten Password
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (42) XPath Injection
+## Rule (41) XPath Injection
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (43) Allocation of Resources Without Limits or Throttling
+## Rule (42) Allocation of Resources Without Limits or Throttling
 
 **CWE** (770) Allocation of Resources Without Limits or Throttling
 
-## Rule (44) XML internal entity expansion
+## Rule (43) XML internal entity expansion
 
 **CWE** (776) Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (45) Use of Password Hash With Insufficient Computational Effort
+## Rule (44) Use of Password Hash With Insufficient Computational Effort
 
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (46) Server-Side Request Forgery (SSRF)
+## Rule (45) Server-Side Request Forgery (SSRF)
 
 **CWE** (918) Server-Side Request Forgery (SSRF)
 
@@ -300,11 +292,15 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (47) Permissive Cross-domain Policy
+## Rule (46) Permissive Cross-domain Policy
 
 **CWE** (942) Permissive Cross-domain Policy with Untrusted Domains
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+## Rule (47) NoSQL Injection
+
+**CWE** (943) Improper Neutralization of Special Elements in Data Query Logic
 
 ## Rule (48) Sensitive Cookie Without 'HttpOnly' Flag
 
