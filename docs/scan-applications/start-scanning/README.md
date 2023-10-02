@@ -13,3 +13,4 @@ Additionally:
 * [Activate Snyk Code](broken-reference) - to scan your application code&#x20;
 * [Set up integration with a supported container registry](../../getting-started/quickstart/set-up-an-integration.md) - to scan container images.
 
+For general information about Snyk scans, see [Running scans](../../getting-started/running-scans/).&#x20;
