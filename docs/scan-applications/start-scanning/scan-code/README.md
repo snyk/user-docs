@@ -2,7 +2,7 @@
 
 You can scan your code using Snyk Code:
 
-* In the Snyk Web UI (including [PR checks](../../../scan-application-code/run-pr-checks/))
+* In the [Snyk Web UI](../../../getting-started/exploring-the-snyk-web-ui.md) (including [PR checks](../../../scan-application-code/run-pr-checks/))
 * With your [IDE](../../../integrations/ide-tools/)
 * Through the [Snyk CLI](../../../snyk-cli/)
 * Through [Snyk API](../../../snyk-api/)
