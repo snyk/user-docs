@@ -82,17 +82,17 @@ You can set the scan frequency for each Project. The default is daily testing. T
 
 The following container registries are supported:&#x20;
 
-* [Docker Hub](https://docs.snyk.io/snyk-container/image-scanning-library/docker-hub-image-scanning)
-* [GCR](https://docs.snyk.io/snyk-container/image-scanning-library/gcr-image-scanning)
-* [ACR](https://docs.snyk.io/snyk-container/image-scanning-library/acr-image-scanning)
-* [Amazon ECR](https://docs.snyk.io/snyk-container/image-scanning-library/ecr-image-scanning)
-* [JFrog Artifactory](https://docs.snyk.io/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning)
-* [Harbor](https://docs.snyk.io/products/snyk-container/image-scanning-library/harbor-image-scanning)
-* [Quay](https://docs.snyk.io/products/snyk-container/image-scanning-library/quay-image-scanning)
-* [GitHub](https://docs.snyk.io/products/snyk-container/image-scanning-library/github-container-registry-image-scanning)
-* [Nexus](https://docs.snyk.io/products/snyk-container/image-scanning-library/nexus-image-scanningexsd)
-* [DigitalOcean](https://docs.snyk.io/products/snyk-container/image-scanning-library/digitalocean-image-scanning)
-* [GitLab](https://docs.snyk.io/products/snyk-container/image-scanning-library/gitlab-container-registry-image-scanning)
+* Docker Hub
+* GCR
+* ACR
+* Amazon ECR
+* JFrog Artifactory
+* Harbor
+* Quay
+* GitHub
+* Nexus
+* DigitalOcean
+* GitLab
 
 ## **Supported integrations**
 
