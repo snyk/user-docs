@@ -1173,4 +1173,13 @@ Snyk could not generate hash using the customer PR files and projects vulnIds.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-09-28T08:19:09.161Z
+### [SNYK-PULL-REQUEST-SERVICE-0001](#snyk-pull-request-service-0001)
+
+#### Failed to save pull request template
+
+Snyk could not save pull request template.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+--- Generated at 2023-10-02T15:04:29.431Z
