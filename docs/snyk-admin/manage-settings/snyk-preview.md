@@ -26,8 +26,12 @@ Additionally, some features can only be made available at the Group level - thes
 
 ## Git repository cloning
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Git repository cloning is in open beta for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
+{% endhint %}
+
+{% hint style="info" %}
+This feature is being rolled out incrementally and is scheduled to land in your Snyk Organization in the coming days. Read the accompanying [announcement](https://updates.snyk.io/open-beta-availability-of-git-repository-cloning-275373) for details.
 {% endhint %}
 
 If enabled, Git repository cloning allows Snyk to provide additional functionality, as well as improved reliability and accuracy when performing scans by ingesting clones of your source code repositories.
