@@ -373,7 +373,7 @@
       * [Severity levels of detected Linux vulnerabilities](scan-applications/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md)
     * [Use Snyk Container from the Web UI](scan-applications/snyk-container/use-snyk-container-from-the-web-ui/README.md)
       * [Detect the container base image](scan-applications/snyk-container/use-snyk-container/detect-the-container-base-image.md)
-      * [Detect vulnerabilities in container images](scan-applications/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md)
+      * [Detect application vulnerabilities in container images](scan-applications/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md)
       * [Analyze and fix container images](scan-applications/snyk-container/use-snyk-container/analyze-and-fix-container-images.md)
       * [Use Custom Base Image Recommendations](scan-applications/snyk-container/use-snyk-container/use-custom-base-image-recommendations/README.md)
         * [Versioning schema for custom base images](scan-applications/snyk-container/use-snyk-container/custom-base-image-recommendations/versioning-schema-for-custom-base-images.md)

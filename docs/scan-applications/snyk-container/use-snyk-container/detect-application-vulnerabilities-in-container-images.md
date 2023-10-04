@@ -1,4 +1,4 @@
-# Detect vulnerabilities in container images
+# Detect application vulnerabilities in container images
 
 {% hint style="info" %}
 **Feature availability**
@@ -57,7 +57,7 @@ For Java applications, when `--app-vulns` is enabled, you can also use the `--ne
 
 To opt out of any scans you feel are unnecessary, use `--nested-jar-depth=0` .
 
-## View vulnerabilities and licensing issues
+## View application vulnerabilities and licensing issues
 
 When the **Detect application vulnerabilities** feature is enabled, it allows you to see:
 
