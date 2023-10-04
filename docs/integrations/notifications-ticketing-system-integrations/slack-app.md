@@ -1,12 +1,16 @@
 # Slack app
 
-The Snyk app for Slack is built as an official [Slack App](https://api.slack.com/start/overview#apps), unlike the [Slack integration](slack-integration.md), which uses Slack’s [Incoming Webhooks](https://api.slack.com/legacy/custom-integrations/messaging/webhooks); this is considered outdated.
+The Snyk app for Slack is built as an official [Slack App](https://api.slack.com/start/overview#apps).
 
-Snyk encourages all customers using the Slack integration to adopt the Snyk app for Slack and get the following benefits and more:
+{% hint style="warning" %}
+Snyk recommends that all customers use the Snyk Slack app, as the [Slack integration](slack-integration.md) is outdated.
+{% endhint %}
+
+The Slack app provides the following benefits and more:
 
 * Improved support for Snyk products: Open Source, Code, Container, and IaC
 * Support for filtering on severity levels
-* Support for overriding notifications at a Project level
+* Support for overriding notifications at the Project level
 
 {% hint style="info" %}
 Vulnerabilities detected on initial import of Projects are not sent to Slack. Only newly disclosed vulnerabilities from imported Projects are sent to Slack.&#x20;

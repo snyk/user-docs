@@ -1,5 +1,9 @@
 # Slack integration
 
+{% hint style="warning" %}
+Snyk recommends that all customers use the [Slack App](slack-app.md), as the Slack integration is outdated.
+{% endhint %}
+
 You can set up Slack to receive Snyk’s alerts about new vulnerabilities that affect your Projects and new upgrades or patches that have become available.
 
 {% hint style="info" %}
