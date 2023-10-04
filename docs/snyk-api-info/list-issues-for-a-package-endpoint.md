@@ -4,7 +4,11 @@ The Snyk REST API endpoint [List issues for a package](https://apidocs.snyk.io/?
 
 When you pass a `purl` to the endpoint, Snyk will find any known vulnerabilities for that package and return them as part of the response body.
 
-The current release supports the following `purl` types: `maven`, `npm`, `cocoapods`, `composer`, `gem`, `golang`, `nuget`, `pypi`, `hex`, `swift`, `cargo`, `generic`, `apk`, `deb` and `rpm.` If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+#### Supported purl types
+
+The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `swift` and `maven`.
+
+If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 {% hint style="info" %}
 For `golang`, Snyk supports `purl` for both modules and packages. Snyk supports only semantic versions and does not support pseudo-versions.&#x20;
@@ -206,11 +210,11 @@ The following are **error states** which you may receive when using the API. If 
 
 **Invalid PURL**\
 400\
-Ensure that the purl specification you provided is a valid purl. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
+Ensure that the purl specification you provided is a valid purl. For more information, see the [Package URL specification](https://github.com/package-url/purl-spec).
 
 **Unsupported Ecosystem**\
 400\
-Ensure that the package type is one of the following: npm, Maven, Golang, Cocoapods, Composer, Gem, Nuget, Pypi, Hex, Cargo, apk, deb, rpm.
+Ensure that the package type is one of the [supported purl types](list-issues-for-a-package-endpoint.md#supported-purl-types).
 
 **Package requested without namespace**\
 400\
@@ -218,11 +222,11 @@ Ensure you specify a namespace in the package URL and then try again. For more i
 
 **Purl component not supported**\
 400\
-Remove the component that is not supported and try to make the request again. The endpoint only accepts particular components. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
+Remove the component that is not supported and try to make the request again. The endpoint only accepts particular components. For more information, see the [Package URL specification](https://github.com/package-url/purl-spec).
 
 **Your organization is not authorized to perform this action.**\
 403\
-To get access, contact your Solutions Engineer or echnical Success Manager, or the administrator for your team.
+To get access, contact your Solutions Engineer or Technical Success Manager, or the administrator for your team.
 
 **Package not found**\
 404\
