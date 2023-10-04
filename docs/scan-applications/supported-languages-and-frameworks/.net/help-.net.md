@@ -53,7 +53,7 @@ Use this guide to apply Snyk effectively in your technology stack.
 
 Snyk Code can analyze your C# code using IDE, CLI, and Git integration.&#x20;
 
-For framework support, see [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-language-and-framework-support.md).
+For framework support, see [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-language-and-frameworks-support.md).
 
 ## Nuget
 

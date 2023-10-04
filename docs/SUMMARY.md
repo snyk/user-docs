@@ -296,7 +296,7 @@
       * [Snyk Code AI Engine](scan-application-code/snyk-code/snyk-code-key-features/snyk-code-ai-engine.md)
       * [Snyk Code Web UI](scan-application-code/snyk-code/snyk-code-key-features/snyk-code-web-ui.md)
       * [Snyk Code - Supported integrations](scan-application-code/snyk-code/snyk-code-key-features/snyk-code-supported-integrations.md)
-    * [Snyk Code - Supported languages and frameworks](scan-applications/snyk-code/snyk-code-language-and-framework-support.md)
+    * [Snyk Code - Supported languages and frameworks](scan-applications/snyk-code/snyk-code-language-and-frameworks-support.md)
     * [Snyk Code and your repositories](scan-application-code/snyk-code/snyk-code-and-your-repositories/README.md)
       * [Understanding the import process on the Web UI](scan-application-code/snyk-code/snyk-code-and-your-repositories/understanding-the-import-process-on-the-web-ui.md)
       * [Importing your first repository to Snyk](scan-application-code/snyk-code/snyk-code-and-your-repositories/importing-your-first-repository-to-snyk.md)
