@@ -127,9 +127,7 @@ Therefore, the version of Python used when scanning can affect the dependency tr
 
 You can specify the version of Python that Snyk uses to scan dependencies in both the CLI and Git integration.
 
-#### Setting the Python version in the CLI
-
-Add the following option to `snyk test` or `snyk monitor` with the value of the Python binary:
+To set the Python version in the CLI, add the following option to `snyk test` or `snyk monitor` with the value of the Python binary:
 
 ```python
 --command=python3
@@ -223,7 +221,7 @@ You can specify the version of Python that Snyk uses to scan dependencies in bot
 {% hint style="info" %}
 When you are scanning Pip Projects imported from Git, Snyk uses Python 2 or 3.&#x20;
 
-Currently supported versions are `2.7.16` and `3.7.4`
+Currently the default supported versions are `2.7.16` and `3.7.4.` By enabling the `pythonNewVersions` feature flag, you can also scan Projects using Python 3.8, 3.9, 3.10 or 3.11.
 {% endhint %}
 
 By default, Snyk tests Pip Projects using Python 3.
