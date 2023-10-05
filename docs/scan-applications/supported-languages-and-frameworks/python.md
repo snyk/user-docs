@@ -221,7 +221,7 @@ You can specify the version of Python that Snyk uses to scan dependencies in bot
 {% hint style="info" %}
 When you are scanning Pip Projects imported from Git, Snyk uses Python 2 or 3.&#x20;
 
-Currently the default supported versions are `2.7.16` and `3.7.4.` By enabling the `pythonNewVersions` feature flag, you can also scan Projects using Python 3.8, 3.9, 3.10 or 3.11.
+Currently the default supported versions are `2.7.16` and `3.7.4.`
 {% endhint %}
 
 By default, Snyk tests Pip Projects using Python 3.
