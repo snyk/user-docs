@@ -1194,13 +1194,37 @@ Snyk could not generate hash using the customer PR files and projects vulnIds.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
-### [SNYK-PULL-REQUEST-SERVICE-0001](#snyk-pull-request-service-0001)
+### [SNYK-PR-TEMPLATE-0007](#snyk-pr-template-0007)
 
-#### Failed to save pull request template
+#### Unable to create pull request template
 
-Snyk could not save pull request template.
+Snyk could not create pull request template.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-10-03T11:33:20.134Z
+### [SNYK-PR-TEMPLATE-0008](#snyk-pr-template-0008)
+
+#### Unable to get pull request template
+
+Snyk could not get pull request template.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+### [SNYK-PR-TEMPLATE-0009](#snyk-pr-template-0009)
+
+#### Unable to delete pull request template
+
+Snyk could not delete pull request template.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+--- Generated at 2023-10-05T08:31:53.940Z
