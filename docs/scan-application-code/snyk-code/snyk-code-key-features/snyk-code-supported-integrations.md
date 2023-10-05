@@ -3,7 +3,7 @@
 Snyk supports the integrations identified on this page.
 
 {% hint style="info" %}
-Snyk Code supports a wide range of languages. For details see [Snyk Code - Supported languages and frameworks](../../../scan-applications/snyk-code/snyk-code-language-and-framework-support.md).
+Snyk Code supports a wide range of languages. For details see [Snyk Code - Supported languages and frameworks](broken-reference).
 {% endhint %}
 
 ## **IDE integrations**

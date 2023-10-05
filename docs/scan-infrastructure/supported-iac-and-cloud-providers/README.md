@@ -1,7 +1,7 @@
 # Supported IaC languages and cloud providers
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers.md), [Snyk Code - Supported languages and frameworks](../../scan-applications/snyk-code/snyk-code-language-and-framework-support.md), and [Snyk Container - Supported operating system distributions](../../scan-applications/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
+For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers.md), [Snyk Code - Supported languages and frameworks](broken-reference), and [Snyk Container - Supported operating system distributions](../../scan-applications/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
 {% endhint %}
 
 Use Snyk IaC to find, view, and fix issues in infrastructure configuration files for Terraform, Kubernetes Manifests, AWS CloudFormation, Azure Resource Manager (ARM), and Helm Charts.
