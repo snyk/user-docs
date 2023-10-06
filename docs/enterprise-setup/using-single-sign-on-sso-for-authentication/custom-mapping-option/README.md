@@ -41,7 +41,7 @@ To configure this option, send the `roles` array within the SAML attributes or O
 * **orgslug** is the unique identifier of the Organization name in Snyk.
   * How to find the **orgslug**: https://app.snyk.io/org/{orgslug} OR by using the Snyk [API List all organizations in a group endpoint.](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
   * **Note**: The **orgslug** is the name of the Organization in most cases; however, there may be exceptions.
-  * Note: **orgslug** can be a value of up to 60 characters and must be fully lowercase.
+  * Note: **orgslug** can be a value of up to 60 characters.
 * **role**:
   * If you are using standard roles, **{role}** should be either **collaborator** or **admin.**
   * Custom Role can also be used for **{role}** and should use the normalized name. See [Roles in SSO](../../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md#roles-in-custom-sso) for more details.
