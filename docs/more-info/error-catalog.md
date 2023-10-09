@@ -1227,4 +1227,13 @@ Snyk could not delete pull request template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-10-05T08:31:53.940Z
+### [SNYK-PR-TEMPLATE-0010](#snyk-pr-template-0010)
+
+#### Invalid payload
+
+The pull request template payload is invalid.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+--- Generated at 2023-10-09T10:04:30.461Z
