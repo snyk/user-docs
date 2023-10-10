@@ -209,7 +209,7 @@ In order to use the endpoint, provide the following environment variable to the 
 When you call the `/systemcheck` endpoint of the Broker Client, it uses the `BROKER_CLIENT_VALIDATION_URL` to make a request to the `/systemcheck` endpoint Container Registry Agent, with the credentials provided to the Broker Client. The Container Registry Agent then makes a request to the container registry to validate connectivity.
 
 {% hint style="info" %}
-The `/systemcheck` endpoint is **not mandatory** for the brokered integration to function. For more information see Systemcheck on the [Monitoring](broken-reference) page.
+The `/systemcheck` endpoint is **not mandatory** for the brokered integration to function. For more information see [Systemcheck documentation](../troubleshooting-broker.md#monitoring-systemcheck).
 {% endhint %}
 
 ## **Debugging methods for Container Registry Agent**
