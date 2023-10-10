@@ -1,5 +1,23 @@
 # Amazon EventBridge
 
+{% hint style="warning" %}
+**Transition to Snyk Apps**
+
+Snyk is currently transitioning event forwarding integrations to use the Snyk Apps platform. This change will enable new features and enhanced security across current and future Cloud Events integrations.&#x20;
+
+
+
+During the transition, existing integrations will continue to function normally and customers will have the opportunity to authorize the integrations to ensure they continue working once they become Snyk Apps. You can complete authorization for existing integrations by following these steps:
+
+1. Go to the **Settings** page for your organization
+2. Go to the settings section for the integration you want to authorize (e.g. Amazon EventBridge, AWS CloudTrail Lake, AWS Security Hub)
+3. Click the **Authorize app** button and complete the App authorization flow
+
+
+
+At the end of the transition window, **integrations which have not been authorized will no longer be able to forward events and will cease functioning.**
+{% endhint %}
+
 The [Amazon EventBridge](https://aws.amazon.com/eventbridge/) integration sends Snyk platform events to EventBridge, allowing you to integrate Snyk events into your existing AWS environments. The integration can be configured to send two different types of events:
 
 * **Snyk issue events** - these events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
@@ -23,6 +41,14 @@ Enter a **name** for this integration, along with the **AWS Account ID** and **A
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-dialog.png" alt="Enter integration details"><figcaption><p>Enter integration details</p></figcaption></figure>
 
 When the form is completed, click **Add integration**. After this step is done, you must complete the integration set up in the Amazon EventBridge console.
+
+### Snyk App Authorization
+
+If this is the first time you have set up an Amazon EventBridge integration for your organization, you will be prompted to complete the Snyk App authorization flow.&#x20;
+
+<figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-auth.png" alt="" width="375"><figcaption></figcaption></figure>
+
+After completing the authorization flow you will be redirected to the settings page for the integration.&#x20;
 
 ## Configure the integration in Amazon EventBridge
 

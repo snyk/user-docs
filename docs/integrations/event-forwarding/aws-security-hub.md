@@ -1,5 +1,23 @@
 # AWS Security Hub
 
+{% hint style="warning" %}
+**Transition to Snyk Apps**
+
+Snyk is currently transitioning event forwarding integrations to use the Snyk Apps platform. This change will enable new features and enhanced security across current and future Cloud Events integrations.&#x20;
+
+
+
+During the transition, existing integrations will continue to function normally and customers will have the opportunity to authorize the integrations to ensure they continue working once they become Snyk Apps. You can complete authorization for existing integrations by following these steps:
+
+1. Go to the **Settings** page for your organization
+2. Go to the settings section for the integration you want to authorize (e.g. Amazon EventBridge, AWS CloudTrail Lake, AWS Security Hub)
+3. Click the **Authorize app** button and complete the App authorization flow
+
+
+
+At the end of the transition window, **integrations which have not been authorized will no longer be able to forward events and will cease functioning.**
+{% endhint %}
+
 The [AWS Security Hub](https://aws.amazon.com/security-hub/) integration sends Snyk issues to Security Hub, allowing you to centralize your security reporting, build custom alerting, and trigger automation. Once configured, the integration will automatically upload Snyk issues to Security Hub as security findings. When issues are updated or new remediations become available, the corresponding Security Hub findings will automatically be updated.
 
 There are two steps required to configure the integration:
@@ -30,6 +48,14 @@ After this step is complete, Snyk will begin sending new issue events to Securit
 {% hint style="info" %}
 Issues on existing Projects will not be sent to Security Hub unless those issues are updated. To backfill issues from existing projects, you can delete and re-import them.
 {% endhint %}
+
+### Snyk App Authorization
+
+If this is the first time you have set up an AWS Security Hub integration for your organization, you will be prompted to complete the Snyk App authorization flow.
+
+<figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-auth.png" alt="" width="375"><figcaption></figcaption></figure>
+
+After completing the authorization flow you will be redirected to the settings page for the integration.&#x20;
 
 ## Managing and deleting a Security Hub integration
 
