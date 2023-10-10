@@ -105,68 +105,62 @@ Your account is subject to contract terms which might restrict your ability to e
 {% endtab %}
 {% endtabs %}
 
-## Snyk integrations
-
-### Git repository cloning
+## Snyk integrations: Git repository cloning
 
 {% hint style="info" %}
 This feature is in open beta for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
 {% endhint %}
 
-{% hint style="info" %}
-This feature is being rolled out incrementally and is scheduled to land in your Snyk Organization in the coming days. Read the accompanying [announcement](https://updates.snyk.io/open-beta-availability-of-git-repository-cloning-275373) for details.
-{% endhint %}
-
 Full Git repository cloning allows Snyk to provide more reliable and accurate results when scanning your source code through the [SCM integrations](https://docs.snyk.io/integrations/git-repository-scm-integrations), helping you develop fast and stay secure.
 
-#### How Git cloning supports more reliable results
+### How Git cloning supports more reliable results
 
-Traditionally, Snyk has accessed repository contents using SCM APIs, which impose primary and secondary rate limits, and content limits. For example, the GitHub.com APIs are rate-limited only to allow a certain number of requests per hour, and there is a limit on the number of tree entries that can be retrieved from the Git database.
+Traditionally, Snyk has accessed repository contents using SCM APIs, which impose primary and secondary rate limits, and content limits. For example, the GitHub.com APIs are rate-limited to allow only a certain number of requests per hour, and there is a limit on the number of tree entries that can be retrieved from the Git database.
 
-When retrieving repository contents over these APIs, these limitations inhibit Snyk’s ability to provide a complete analysis in a number of ways, especially across a very large number of repositories, or for repositories containing more than 100,000 files, sometimes referred to as “monorepos.”
+When repository contents are retrieved over these APIs, these limitations inhibit Snyk’s providing a complete analysis in a number of ways, especially across a very large number of repositories, or for repositories containing more than 100,000 files, sometimes referred to as monorepos.
 
-By cloning, these limitations are removed.
+Through cloning, these limitations are removed.
 
-#### How Git cloning supports more accurate results
+### How Git cloning supports more accurate results
 
-The accuracy of results is improved in a number of ways through cloning. Since Snyk is able to access a complete view of a source code repository at a specific commit SHA, including repositories containing more than 100,000 files, the analysis is also more complete.
+The accuracy of results is improved in a number of ways through cloning. Since Snyk can access a complete view of a source code repository at a specific commit SHA, including repositories containing more than 100,000 files, the analysis is also more complete through cloning.
 
-#### Snyk data ingestion
+### Snyk data ingestion
 
 When Git repository cloning is enabled, Snyk will ingest, through configured SCM integrations, a temporary snapshot of repository contents at a given commit and all commit metadata (including the commit message, authors, and timestamp).
 
-#### How Snyk processes this data
+### How Snyk processes this data
 
 Snyk uses cloud products from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to process and store the data in a cache.
 
 Data is cached for 24 hours “per commit”, meaning that for every commit pushed to a repository that Snyk is tracking, the contents of that commit will be held in a cache for up to 24 hours. Multiple commits within a single 24-hour period will result in multiple caches with their own 24-hour lifecycle. At the end of each 24-hour lifecycle, the cache is automatically deleted according to cloud provider policies.
 
-#### Safeguards Snyk puts in place to ensure data is secure
+### Safeguards Snyk puts in place to ensure data is secure
 
 * Snyk will perform a clone only when an SCM integration flow requires it, for example, PR check, import, and test.
 * Communication between the cloning service and cache is encrypted with TLS 1.2.
-* Cloned assets are deleted from the filesystem immediately after populating the cache.
+* Cloned assets are deleted from the file system immediately after populating the cache.
 * The cache for a clone is deleted after a maximum of 24 hours.
-* All data is handled by Snyk in accordance with the SOC 2 standard. For more details see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
-* Your data is only analyzed for the purposes of improving code security and code quality and in accordance with your Data Processing Addendum.
+* All data is handled by Snyk in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
+* Your data is analyzed only for the purposes of improving code security and code quality and in accordance with your Data Processing Addendum.
 
-#### Git repository cloning protocols
+### Git repository cloning protocols
 
 Repositories are cloned using HTTPS. SSH-based clones are currently unavailable.
 
-#### Flows used in Git repository cloning
+### Flows used in Git repository cloning
 
-[PR checks](https://docs.snyk.io/scan-application-code/run-pr-checks), [import](https://docs.snyk.io/getting-started/quickstart/import-a-project), and [recurring tests](https://docs.snyk.io/getting-started/running-tests#run-tests-automatically-with-the-snyk-web-ui) will all make use of Git repository cloning for all Projects imported using an SCM integration.
+[PR checks](../scan-application-code/run-pr-checks/), [import](../getting-started/quickstart/import-a-project.md), and r[ecurring tests](../getting-started/running-scans/) will all make use of Git repository cloning for all Projects imported using an SCM integration.
 
-#### Snyk Broker interactions
+### Snyk Broker interactions
 
 Brokered connections are supported when Git operations are allowed through Broker.
 
 {% hint style="warning" %}
-This will override restrictions from `accept.json`. You can read [Clone capability with Broker for Docker](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker) for more information.
+This will override restrictions from `accept.json`. For more information, see [Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md).
 {% endhint %}
 
-#### Git cloning applicable contract terms
+### Git cloning applicable contract terms
 
 By enabling this feature, you agree that your Git repository is a Protected Asset as defined in the contract between your company and Snyk.
 

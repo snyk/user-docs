@@ -37,5 +37,5 @@ Git cloning can be enabled through **Snyk Preview** in the **General** Organizat
 <figure><img src="https://lh4.googleusercontent.com/NeiM1iGKaUMiHC-qr8n3SjlNRCr8j33XO3M5PtAdMUJaIap6RNv1UwmpiVv1siDWRnE61v490VoLTP1uXL0gUVHQDLh7FK29vGQLSvCMhlmd2NZJnbWFt3xIOxzHO7Nw7SAQDGiMwLotub8y5HU2-vbyEiY9GzA4DXwRh3xXiib7z99lqHEDDShD9jQMfWjn" alt=".Enable full Git repository cloning from the Snyk settings"><figcaption><p>Enable full Git repository cloning from the Snyk settings</p></figcaption></figure>
 
 {% hint style="info" %}
-[Learn more](../../more-info/how-snyk-handles-your-data.md#git-repository-cloning) about how Snyk performs Git repository cloning, [applicable contract terms](../../more-info/how-snyk-handles-your-data.md#git-cloning-applicable-contract-terms), and the safeguards in place to keep your data safe.
+For more information bout how Snyk performs Git repository cloning, applicable contract terms, and safeguards in place to keep your data safe, see the [Git repository cloning section](../../more-info/how-snyk-handles-your-data.md#snyk-integrations-git-repository-cloning) on the page "How Snyk handles your data."
 {% endhint %}
