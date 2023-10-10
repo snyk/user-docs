@@ -99,13 +99,13 @@ To start using the Snyk CLI or a CI/CD plugin, [install the Snyk CLI](../snyk-cl
 Authenticate CLI video
 {% endembed %}
 
-A scan with [**Snyk test**](../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/) provides information about open-source package issues, including fix advice, as demonstrated in this video.
+A scan with [**Snyk test**](../scan-applications/snyk-open-source/use-snyk-open-source-from-the-cli/) provides information about open-source package issues, including fix advice, as demonstrated in this video.
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/b8vrvtmnbu" %}
 Snyk test video
 {% endembed %}
 
-A scan with [**Snyk code test** ](../scan-application-code/snyk-code/using-snyk-code-from-the-cli/)runs a Static Code Analysis test on the code in that Project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
+A scan with [**Snyk code test** ](../scan-applications/snyk-code/using-snyk-code-from-the-cli/)runs a Static Code Analysis test on the code in that Project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
 
 A scan with [**Snyk container test**](../scan-applications/snyk-container/use-snyk-container-from-the-cli/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image to one that is more secure.
 

@@ -1,4 +1,4 @@
-# Snyk CLI for Infrastructure as Code
+# Snyk CLI for IaC
 
 ## Overview
 
@@ -7,22 +7,22 @@ To use the CLI, you must first [install](../../../snyk-cli/install-or-update-the
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 
 * [Test your configuration files](test-your-iac-files/)
-* [Share CLI results with the Snyk Web UI](share-cli-results-with-the-snyk-web-ui.md)
+* [Share CLI results with the Snyk Web UI](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui.md)
 * [IaC ignores using the `.snyk` policy file](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md)
-* [Understanding the IaC CLI test results](understanding-the-cli-test-output/) (has information about reports)
-* [IaC exclusions using the command line](iac-exclusions-using-the-command-line.md)
-* [Test your Terraform files with Snyk CLI](test-your-iac-files/test-your-terraform-files-with-snyk-cli.md)
-* [Test your CloudFormation files with Snyk CLI](test-your-iac-files/test-your-cloudformation-files-with-snyk-cli.md)
-* [Test your AWS CDK files with Snyk CLI](test-your-iac-files/test-your-aws-cdk-files-with-snyk-cli.md)
-* [Test your Kubernetes files with Snyk CLI](test-your-iac-files/test-your-kubernetes-files-with-snyk-cli.md)
-* [Test your ARM files with Snyk CLI](test-your-iac-files/test-your-arm-files-with-snyk-cli.md)
-* [Test your Serverless files with Snyk CLI](test-your-iac-files/test-your-serverless-files-with-snyk-cli.md)
+* [Understanding the IaC CLI test results](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/) (has information about reports)
+* [IaC exclusions using the command line](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-exclusions-using-the-command-line.md)
+* [Test your Terraform files with Snyk CLI](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-terraform-files-with-snyk-cli.md)
+* [Test your CloudFormation files with Snyk CLI](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-cloudformation-files-with-snyk-cli.md)
+* [Test your AWS CDK files with Snyk CLI](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-aws-cdk-files-with-snyk-cli.md)
+* [Test your Kubernetes files with Snyk CLI](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-kubernetes-files-with-snyk-cli.md)
+* [Test your ARM files with Snyk CLI](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-arm-files-with-snyk-cli.md)
+* [Test your Serverless files with Snyk CLI](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-serverless-files-with-snyk-cli.md)
 
 You can also test the following types of files:
 
-* [Kustomize files](test-your-iac-files/test-your-kustomize-files-with-snyk-cli.md)
-* [Helm charts](test-your-iac-files/test-your-helm-charts-with-snyk-cli.md)
-* [Serverless files](test-your-iac-files/test-your-serverless-files-with-snyk-cli.md)
+* [Kustomize files](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-kustomize-files-with-snyk-cli.md)
+* [Helm charts](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-helm-charts-with-snyk-cli.md)
+* [Serverless files](../../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-iac-files/test-your-serverless-files-with-snyk-cli.md)
 
 ## Regularly testing IaC files
 

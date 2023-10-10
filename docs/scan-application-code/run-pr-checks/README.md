@@ -30,10 +30,10 @@ PR checks proceed as follows:
 5. The developer can view the PR Checks results and fix identified issues before merging the code.
 6. The PR Checks results appear as **Passed** or **Failed** directly in the SCM, preventing PRs from being merged with security issues.
 
-For more information on how PR Checks work, see [Introduction to automated security scans with PR Checks](introduction-to-automated-security-scans-with-pr-checks.md).
+For more information on how PR Checks work, see [Introduction to automated security scans with PR Checks](../../scan-applications/run-pr-checks/introduction-to-automated-security-scans-with-pr-checks.md).
 
 For more information on working with PR Checks, see the following pages:
 
 * [Configure PR Checks](configure-pr-checks.md)
 * [Analyze PR Checks results](../../scan-applications/run-pr-checks/analyze-pr-checks-results.md)
-* [Troubleshooting](troubleshooting.md)
+* [Troubleshooting](../../scan-applications/run-pr-checks/troubleshooting.md)

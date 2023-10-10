@@ -118,7 +118,7 @@ See [Snyk CLI for container security](../../snyk-container/use-snyk-container-fr
 
 ### Options and plugins
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 * For advanced filtering options, see[ snyk-filter](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
 

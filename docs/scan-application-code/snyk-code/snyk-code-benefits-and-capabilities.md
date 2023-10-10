@@ -1,12 +1,12 @@
 # Snyk Code benefits and capabilities
 
-Snyk Code supports your development work, allowing you to I[dentify and fix issues as they emerge](snyk-code-benefits-and-capabilities.md#identify-and-fix-issues-as-they-emerge), [reduce security debt over time](snyk-code-benefits-and-capabilities.md#reduce-security-debt-over-time), and [scale and govern security processes](snyk-code-benefits-and-capabilities.md#scale-and-govern-security-processes).
+Snyk Code supports your development work, allowing you to I[dentify and fix issues as they emerge](snyk-code-benefits-and-capabilities.md#identify-and-fix-issues-as-they-emerge), [reduce security debt over time](snyk-code-benefits-and-capabilities.md#reduce-security-debt-over-time), and [scale and govern security processes](snyk-code-benefits-and-capabilities.md#scale-and-govern-security-processes).&#x20;
 
 ## Identify and fix issues as they emerge
 
 ### Review newly introduced issues in build and review time
 
-You can use Snyk Code in your IDE or your SCM (using the [automatic PR checks](../run-pr-checks/introduction-to-automated-security-scans-with-pr-checks.md) feature) to identify issues as they are introduced into your code. Snyk Code does not require compilation and analyzes the source code itself, so you can see the results immediately as you write new code.
+You can use Snyk Code in your IDE or your SCM (using the [automatic PR checks](../../scan-applications/run-pr-checks/introduction-to-automated-security-scans-with-pr-checks.md) feature) to identify issues as they are introduced into your code. Snyk Code does not require compilation and analyzes the source code itself, so you can see the results immediately as you write new code.
 
 ### Understand how problems flow across your applications
 

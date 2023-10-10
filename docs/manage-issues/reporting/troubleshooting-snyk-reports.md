@@ -34,7 +34,7 @@ Data is available in reporting approximately one hour after a scan occurs. Data 
 
 After a Project rescan, issues that are ignored are reflected in reporting and the rest of the Snyk platform, including APIs. &#x20;
 
-Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. For information about Project test frequency, see [Project Settings](../../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md).
+Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. For information about Project test frequency, see [Project Settings](../snyk-projects/view-and-edit-project-settings.md).
 
 ## Known limitations
 
@@ -42,7 +42,7 @@ Tables in PDF exports are limited to 50 results. A link is available at the bott
 
 Session data is shared between browser tabs. Snyk recommends you have reporting tabs for one Group or one Organization open in the browser at any one time because having tabs open for different Groups or Organizations can result in unexpected behavior.
 
-Customers may experience an error if hundreds of filter values are applied on a page. This is the result of the [stateful URLs for filtered views](getting-started-with-snyk-reports.md#stateful-urls-for-filtered-views) capability and a URL length limit. If you experience an error with many filter values applied, consider alternate filter mechanisms such as [Project collections](../../snyk-admin/introduction-to-snyk-projects/project-collections-groupings/project-collections.md).
+Customers may experience an error if hundreds of filter values are applied on a page. This is the result of the [stateful URLs for filtered views](getting-started-with-snyk-reports.md#stateful-urls-for-filtered-views) capability and a URL length limit. If you experience an error with many filter values applied, consider alternate filter mechanisms such as [Project collections](../snyk-projects/project-collections-groupings/project-collections.md).
 
 ## Filtered views
 

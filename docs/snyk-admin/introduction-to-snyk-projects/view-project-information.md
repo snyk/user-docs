@@ -13,11 +13,11 @@ Click on a Project entry to view detailed information for that Project:
 The following information is available:
 
 * **Header**: shows Project[ summary information](view-project-information.md#project-summary-information).
-* **Issue cards**: show summaries of issues found. See [Issue card information](issue-card-information.md).
+* **Issue cards**: show summaries of issues found. See [Issue card information](../../manage-issues/snyk-projects/issue-card-information.md).
 * **Views** (links at top right):
-  * **Overview**: shows [Project issues, fixes, and dependencies](view-project-issues-fixes-and-dependencies.md).
-  * **History**: shows historical snapshots of recent tests. See [View Project history](view-project-history.md).
-  * **Settings**: shows [Project settings](view-and-edit-project-settings.md).
+  * **Overview**: shows [Project issues, fixes, and dependencies](../../manage-issues/snyk-projects/view-project-issues-fixes-and-dependencies.md).
+  * **History**: shows historical snapshots of recent tests. See [View Project history](../../manage-issues/snyk-projects/view-project-history.md).
+  * **Settings**: shows [Project settings](../../manage-issues/snyk-projects/view-and-edit-project-settings.md).
 
 ## Project summary information
 

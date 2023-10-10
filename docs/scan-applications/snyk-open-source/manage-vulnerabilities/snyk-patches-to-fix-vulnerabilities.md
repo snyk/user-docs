@@ -24,7 +24,7 @@ Patches are created and maintained by Snyk. If the package owner has made code c
 
 Before releasing it, we verify the patch, backport it to older versions, and test that the patch hasn’t broken functionality.
 
-The patches are a part of [Snyk’s open source vulnerability database](../../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md), so you can check them out before applying them.
+The patches are a part of [Snyk’s open source vulnerability database](../starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md), so you can check them out before applying them.
 
 ## How and when are Snyk patches created?
 

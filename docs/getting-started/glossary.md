@@ -110,7 +110,7 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md).
+A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md).
 
 ### Fix PR
 
@@ -228,7 +228,7 @@ An external item that Snyk scans ([Target](glossary.md#target)), with configurat
 
 ### Reachability
 
-Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-issues/priorities-for-fixing-issues/reachable-vulnerabilities.md).
+Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-issues/prioritizing-issues/reachable-vulnerabilities.md).
 
 ### Registry
 
@@ -286,7 +286,7 @@ A set of criteria for evaluating open source vulnerabilities. Security policies 
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/priorities-for-fixing-issues/severity-levels.md).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../manage-issues/prioritizing-issues/severity-levels.md).
 
 ### Snapshot
 

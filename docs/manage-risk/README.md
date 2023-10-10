@@ -12,7 +12,7 @@ Snyk [Policies](../manage-issues/policies/) help you define actions to take to a
 
 Enterprise Analytics provides a view into the performance of the Application Security (AppSec) program of a company. Metrics are reported for the pillars: Exposure, Manage, Prevention, and Coverage. The breakdown of open issues over time is shown in these categories: Baseline, Preventable, Non-preventable, and Other new. Customers can find the most serious problems that they must resolve, address those, and look for opportunities to proactively improve in each pillar.
 
-&#x20;[Severity levels](../manage-issues/priorities-for-fixing-issues/severity-levels.md) and [Ignoring issues](../manage-issues/priorities-for-fixing-issues/ignore-issues.md) help you refine scans to find and report issues you need to fix. After you have found issues, you can use several features of Snyk to help you prioritize fixing issues. For details, see [Find and manage priority issues](../manage-issues/priorities-for-fixing-issues/).
+&#x20;[Severity levels](../manage-issues/prioritizing-issues/severity-levels.md) and [Ignoring issues](../manage-issues/priorities-for-fixing-issues/ignore-issues.md) help you refine scans to find and report issues you need to fix. After you have found issues, you can use several features of Snyk to help you prioritize fixing issues. For details, see [Find and manage priority issues](../manage-issues/priorities-for-fixing-issues/).
 
 Use Snyk [Reporting](../manage-issues/reporting/) to track issues and their resolution.
 
@@ -20,9 +20,9 @@ Issues are reported for Snyk Projects, which have many features that help you fo
 
 * [View Project information](../snyk-admin/introduction-to-snyk-projects/view-project-information.md).
 * Apply and remove [Project attributes ](../snyk-admin/introduction-to-snyk-projects/project-attributes.md)and [Project tags](../snyk-admin/introduction-to-snyk-projects/project-tags.md) to characterize Projects.
-* Look at [Project collections groupings](../snyk-admin/introduction-to-snyk-projects/project-collections-groupings/).
-* [View Project issues, fixes, and dependencies](../snyk-admin/introduction-to-snyk-projects/view-project-issues-fixes-and-dependencies.md).
-* [View Project settings](../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md).
+* Look at [Project collections groupings](../manage-issues/snyk-projects/project-collections-groupings/).
+* [View Project issues, fixes, and dependencies](../manage-issues/snyk-projects/view-project-issues-fixes-and-dependencies.md).
+* [View Project settings](../manage-issues/snyk-projects/view-and-edit-project-settings.md).
 
 For details, see [Snyk Projects](../snyk-admin/introduction-to-snyk-projects/).
 

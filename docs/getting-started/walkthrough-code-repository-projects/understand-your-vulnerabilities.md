@@ -29,18 +29,18 @@ Now, look at the vulnerability information for each Snyk Project, provided in Is
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 
-For details, see [Issue card information](../../snyk-admin/introduction-to-snyk-projects/issue-card-information.md).
+For details, see [Issue card information](../../manage-issues/snyk-projects/issue-card-information.md).
 
 ### Access more vulnerability information
 
 Snyk provides detailed resources for more information about vulnerabilities, accessible directly from the card:
 
-* [**Snyk Vulnerability Database**](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md): access details on a specific vulnerability.
+* [**Snyk Vulnerability Database**](../../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md): access details on a specific vulnerability.
 * [**Snyk Learn**](../../more-info/snyk-learn.md): access general information about that type of vulnerability.
 
 #### Access Snyk Vulnerability Database
 
-For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
+For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
 
 <figure><img src="../../.gitbook/assets/image (174) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Access Snyk Vulnerability Database"><figcaption><p>Access Snyk Vulnerability Database</p></figcaption></figure>
 
