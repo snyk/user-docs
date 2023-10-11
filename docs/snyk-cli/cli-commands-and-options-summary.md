@@ -325,7 +325,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `[--file=] or [--f=]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
-`[--name=<NAME>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbomhttps://docs.snyk.io/snyk-cli/commands/sbom)
+`[--name=<NAME>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 `[--version=<VERSION>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
