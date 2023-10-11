@@ -281,7 +281,7 @@
       * [Fix your vulnerabilities](scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md)
       * [Upgrade package versions to fix vulnerabilities](scan-applications/snyk-open-source/manage-vulnerabilities/upgrade-package-versions-to-fix-vulnerabilities.md)
       * [Snyk patches to fix vulnerabilities](scan-applications/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
-      * [Snyk Vulnerability Database](scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md)
+      * [Snyk Vulnerability Database](scan-applications/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)
       * [Vulnerability fix types](scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md)
       * [Differences in Open Source vulnerability counts across environments](scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
       * [Troubleshooting Open Source vulnerability fixing](scan-applications/snyk-open-source/starting-to-fix-vulnerabilities/troubleshooting-open-source-vulnerability-fixing.md)
