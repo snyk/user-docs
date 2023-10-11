@@ -541,6 +541,17 @@ Then try and run the above mentioned commands and see if your SCM system reports
 **Help Links:**
 - [https://go.dev/ref/mod#go-mod-vendor](https://go.dev/ref/mod#go-mod-vendor)
 
+### [SNYK-OS-GO-0006](#snyk-os-go-0006)
+
+#### Unsupported external file generation
+
+Snyk currently does not support external file generation in your project. This limitation is due to Snyk's lack of visibility into the third-party generator tools you may be using and the specific commands required to generate these files.
+
+Snyk can only work with the files available in your repository and does not have insight into the generation process for external files.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-MAVEN-0001](#snyk-os-maven-0001)
 
 #### Missing property
@@ -1236,4 +1247,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-09T10:04:30.461Z
+--- Generated at 2023-10-11T13:42:07.602Z
