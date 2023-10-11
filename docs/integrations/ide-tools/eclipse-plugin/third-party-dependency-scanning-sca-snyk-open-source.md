@@ -1,4 +1,4 @@
-# Third party dependency scanning (SCA, Snyk Open Source)
+# Third-party dependency scanning (SCA, Snyk Open Source)
 
 In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integration with the native flows of Eclipse, inline highlights, problems integrations, and information about the issue on hover. The following shows all of these for a security vulnerability found in a third party dependency:
 
@@ -7,14 +7,10 @@ In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integrat
 3. You can see the gutter icons on the left, as well as the file map highlights (with colors matching the priorities) on the right.
 
 {% hint style="info" %}
-Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer.
+The hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (267) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-Third party dependency scanning results are **also available in the already existing Snyk Results panel**:
-
-![Third party dependency scanning results, results panel](<../../../.gitbook/assets/Screenshot 2022-05-13 at 12.13.37.png>)
 
 ## **Context menu**
 

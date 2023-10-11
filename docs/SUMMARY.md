@@ -33,7 +33,7 @@
       * [Use the Snyk plugin to secure your Eclipse projects](integrations/ide-tools/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects.md)
       * [SAST scanning results (SAST, Snyk Code)](integrations/ide-tools/eclipse-plugin/sast-scanning-results-sast-snyk-code.md)
       * [Misconfiguration scanning results (Snyk Infrastructure as Code)](integrations/ide-tools/eclipse-plugin/misconfiguration-scanning-results-snyk-infrastructure-as-code.md)
-      * [Third party dependency scanning (SCA, Snyk Open Source)](integrations/ide-tools/eclipse-plugin/third-party-dependency-scanning-sca-snyk-open-source.md)
+      * [Third-party dependency scanning (SCA, Snyk Open Source)](integrations/ide-tools/eclipse-plugin/third-party-dependency-scanning-sca-snyk-open-source.md)
       * [Troubleshooting for the Eclipse plugin](integrations/ide-tools/eclipse-plugin/troubleshooting-for-the-eclipse-plugin.md)
     * [JetBrains plugins](integrations/ide-tools/jetbrains-plugins/README.md)
       * [Configuration, environment variables, and proxy for the JetBrains plugins](integrations/ide-tools/jetbrains-plugins/configuration-for-the-jetbrains-plugins.md)
