@@ -12,8 +12,10 @@ This API endpoint, Test an SBOM document for vulnerabilities, is available on an
 Snyk offers a set of endpoints for testing a software bill of materials document. Use these endpoints to expand your understanding of the vulnerabilities impacting the packages in an SBOM.
 
 {% hint style="info" %}
-SBOM documents in [CycloneDX](https://cyclonedx.org/) 1.4 JSON formats are supported.
+SBOM documents in [CycloneDX](https://cyclonedx.org/) 1.4 JSON format are supported.
 {% endhint %}
+
+Snyk will identify components within the SBOM by their PackageURL (purl). If a component does not have a purl, or the purl type is not supported, vulnerability analysis will be skipped. Supported purl types are: `cargo`, `cocoapods`, `gem`, `golang`, `hex`, `maven`, `npm`, `nuget`, `pypi`, `swift`, and `generic` for unmanaged C/C++ dependencies.
 
 This endpoint, Test an SBOM document for vulnerabilities, is asynchronous. Follow these steps to create an SBOM test run:
 
