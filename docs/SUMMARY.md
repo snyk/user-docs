@@ -793,7 +793,7 @@
     * [Install or upgrade to version of Node required for Snyk CLI](snyk-cli/install-or-update-the-snyk-cli/install-or-upgrade-to-version-of-node-required-for-snyk-cli.md)
     * [Most recent version of the CLI that supports Node.js 4](snyk-cli/install-or-update-the-snyk-cli/most-recent-version-of-the-cli-that-supports-node.js-4.md)
     * [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](snyk-cli/install-or-update-the-snyk-cli/prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md)
-    * [Prerequisite for CLI on an Apple M1 machine](snyk-cli/install-or-update-the-snyk-cli/prerequisite-for-cli-on-an-apple-m1-machine.md)
+    * [Using CLI releases before version 1.1230.0 on an Apple M1 machine](snyk-cli/install-or-update-the-snyk-cli/using-cli-releases-before-version-1.1230.0-on-an-apple-m1-machine.md)
   * [Authenticate the CLI with your account](snyk-cli/authenticate-the-cli-with-your-account.md)
   * [Configure the Snyk CLI](snyk-cli/configure-the-snyk-cli/README.md)
     * [Environment variables for Snyk CLI](snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli.md)
