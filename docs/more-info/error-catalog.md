@@ -153,7 +153,7 @@ The language or package manager is not supported.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 **Help Links:**
-- [https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
 
 ### [SNYK-OS-0002](#snyk-os-0002)
 
@@ -400,10 +400,10 @@ The provided manifest file is not supported by Snyk for .NET.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net#git-services-for-.net-projects](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net#git-services-for-.net-projects)
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net#dependencies-managed-by-packagereference](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net#dependencies-managed-by-packagereference)
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net#dependencies-managed-by-packages.config](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net#dependencies-managed-by-packages.config)
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net#paket-dependencies-managed-by-paket](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net#paket-dependencies-managed-by-paket)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#snyk-web-ui-git-repository-integration](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#snyk-web-ui-git-repository-integration)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#dependencies-managed-by-packagereference](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#dependencies-managed-by-packagereference)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#dependencies-managed-by-packages.config](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#dependencies-managed-by-packages.config)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#cli-options-for-use-with-other-dependencies](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#cli-options-for-use-with-other-dependencies)
 
 ### [SNYK-OS-DOTNET-0002](#snyk-os-dotnet-0002)
 
@@ -470,8 +470,8 @@ Snyk could not access the private modules within your go.mod files.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-snyk-cli](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-snyk-cli)
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-git](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-git)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-snyk-cli](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-snyk-cli)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-git](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-git)
 
 ### [SNYK-OS-GO-0002](#snyk-os-go-0002)
 
@@ -482,8 +482,8 @@ A go.mod file was not found in the current directory or any parent directory.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-snyk-cli](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-snyk-cli)
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-git](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-git)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-snyk-cli](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-snyk-cli)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-git](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-git)
 
 ### [SNYK-OS-GO-0003](#snyk-os-go-0003)
 
@@ -723,7 +723,7 @@ The provided requirements file is not supported by Snyk for Python.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python#git-services-for-pip-projects](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-python#git-services-for-pip-projects)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python#pip-and-git-repositories](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python#pip-and-git-repositories)
 
 ---
 # Builds
@@ -1247,4 +1247,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-11T13:42:07.602Z
+--- Generated at 2023-10-13T06:52:34.918Z
