@@ -10,7 +10,7 @@ Results appear in context, in line with code in your IDE.
 
 This single plugin provides a Java vulnerability scanner, a custom code vulnerability scanner, and an open-source security scanner.
 
-In using the Visual Studio Code extension, you have the advantage of relying on the [Snyk Vulnerability Database](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access). You also have available the [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine).
+In using the Visual Studio Code extension, you have the advantage of relying on the [Snyk Vulnerability Database](https://security.snyk.io/). You also have available the [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine).
 
 Snyk scans for the following types of issues:
 
@@ -19,21 +19,16 @@ Snyk scans for the following types of issues:
 * [**Code Security** ](https://snyk.io/product/snyk-code/)- security vulnerabilities in your own code. See also the [Snyk Code](../../../scan-application-code/snyk-code/) docs.
 * [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [IaC](https://docs.snyk.io/products/snyk-infrastructure-as-code) and [Snyk Cloud](https://docs.snyk.io/products/snyk-cloud) docs.
 
-This page explains the installation of the Visual Studio Code extension. **After you complete the steps on this page**, you will continue by following the instructions in the other Visual studio Code extension docs:
-
-* [Visual Studio Code extension configuration](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code/visual-studio-code-extension-configuration)
-* [Visual Studio Code extension authentication](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code/visual-studio-code-extension-authentication)
-* [Create a .dcignore file](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code/create-a-.dcignore-file)
-* [Run an analysis with Visual Studio Code extension](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code/run-an-analysis-with-visual-studio-code-extension)
-* [View analysis results from Visual Studio Code extension](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code/view-analysis-results-from-visual-studio-code-extension)
-* [Troubleshooting for Visual Studio Code extension](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code/troubleshooting-for-visual-studio-code-extension)
+This page explains the installation of the Visual Studio Code extension. **After you complete the steps on this page**, continue by following the instructions in the other Visual studio Code extension docs, starting with [Visual Studio Code extension configuration](visual-studio-code-extension-configuration.md).
 
 ## Supported languages, package managers, and frameworks
 
 Supported languages and frameworks include C#, JavaScript, TypeScript, Java, Go, Ruby, Python, Ruby, PHP, Scala, Swift, Objective-C, Kubernetes, Terraform, CloudFormation, Azure Resource Manager (ARM)
 
-* For Snyk Open Source, the VS Code extension supports all the languages and package managers supported by Snyk Open Source and the CLI. See the full [list in the docs](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
-* For Snyk Code, the VS Code extension supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine).
+* For Snyk Open Source, the VS Code extension supports all the languages and package managers supported by Snyk Open Source and the CLI.
+* For Snyk Code, the VS Code extension supports all the languages and frameworks supported by Snyk Code.
+
+See [Supported languages and frameworks](../../../scan-applications/supported-languages-and-frameworks/) for more details.
 
 ## Supported operating systems and architecture
 
