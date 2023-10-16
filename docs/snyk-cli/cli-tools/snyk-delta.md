@@ -1,4 +1,4 @@
-# Tool: snyk-delta
+# snyk-delta
 
 This tool provides the means to get the delta between two Snyk snapshots. This is especially useful when you are running CLI-based scans, such as in your local environment, git hooks, and so on.
 
@@ -60,7 +60,7 @@ const result = await getDelta(jsonResultsFromSnykTest);
 **Result** is a number:
 
 * 0: no new issue
-* 1: new issue(s) or when using strictMode and the unmonitored project has issues (see more details in [StrictMode](tool-snyk-delta.md#strictmode))
+* 1: new issue(s) or when using strictMode and the unmonitored project has issues (see more details in [StrictMode](snyk-delta.md#strictmode))
 * 2: for errors like invalid auth
 
 Actual issue(s) details will be listed on stdout.

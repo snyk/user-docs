@@ -1,4 +1,4 @@
-# Tool: snyk-filter
+# snyk-filter
 
 The `snyk-filter` tool provides **custom filtering for Snyk CLI output**. `snyk-filter` takes the JSON-formatted output from the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference), for example, `snyk test --json` and applies custom filtering of the results, as well as options to fail your build.
 
@@ -26,7 +26,7 @@ sudo npm install -g
 
 ## Usage
 
-1. Implement your custom jq filters in a .snyk-filter/snyk.yml file relative to your current working directory where you are running `snyk test`. See [sample-filters](https://github.com/snyk-tech-services/snyk-filter/tree/develop/sample-filters) and tweak things from there; use [JQPlay](https://jqplay.org/)
+1. Implement your custom `jq` filters in a .snyk-filter/snyk.yml file relative to your current working directory where you are running `snyk test`. See [sample-filters](https://github.com/snyk-tech-services/snyk-filter/tree/develop/sample-filters) and tweak things from there; use [JQPlay](https://jqplay.org/)
 2. Then pipe your `snyk test --json` output into `snyk-filter` or use the `-i` argument to input a JSON file. Use the `-f` argument to point to the yml file containing your custom filters if you are not using the default location (.snyk-filter/snyk.yml).
 3. The return code from `snyk-filter` is 0 for pass (no issues) and 1 for fail (issues found).
 
