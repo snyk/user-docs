@@ -154,7 +154,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 * To help generate reports locally or at build time, see the [snyk-to-html plugin](../../../snyk-cli/cli-tools/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
-* For advanced filtering options, see[ snyk-filter](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
+* For advanced filtering options, see[ snyk-filter](../../../snyk-cli/cli-tools/tool-snyk-filter.md).
 
 ## Additional security topics that Impact Node.Js and JavaScript developers
 
