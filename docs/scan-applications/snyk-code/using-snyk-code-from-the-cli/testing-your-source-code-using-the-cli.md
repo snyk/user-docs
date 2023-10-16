@@ -59,5 +59,5 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof
   * [Displaying only discovered issues above a specific severity level](working-with-the-snyk-code-cli-results/displaying-only-discovered-issues-above-a-specific-severity-level.md).
   * [Outputting the test results to JSON or SARIF format in the terminal.](working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
   * [Exporting the test results to a JSON or SARIF file](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md).
-  * [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../../../snyk-cli/cli-tools/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
+  * [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../../../snyk-cli/cli-tools/snyk-to-html/).
 
