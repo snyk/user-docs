@@ -297,8 +297,7 @@ Snyk could not access the private modules within your go.mod files.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-snyk-cli](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-snyk-cli)
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-git](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-git)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go)
 
 ### [SNYK-OS-GO-0002](#snyk-os-go-0002)
 
@@ -309,8 +308,7 @@ A go.mod file was not found in the current directory or any parent directory.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-snyk-cli](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-snyk-cli)
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-git](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go#go-modules-and-git)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go)
 
 ### [SNYK-OS-GO-0003](#snyk-os-go-0003)
 
@@ -1220,4 +1218,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-16T12:13:04.610Z
+--- Generated at 2023-10-16T12:42:02.820Z
