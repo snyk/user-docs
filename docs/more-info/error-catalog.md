@@ -227,10 +227,7 @@ The provided manifest file is not supported by Snyk for .NET.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#snyk-web-ui-git-repository-integration](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#snyk-web-ui-git-repository-integration)
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#dependencies-managed-by-packagereference](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#dependencies-managed-by-packagereference)
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#dependencies-managed-by-packages.config](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#dependencies-managed-by-packages.config)
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#cli-options-for-use-with-other-dependencies](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net#cli-options-for-use-with-other-dependencies)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net)
 
 ### [SNYK-OS-DOTNET-0002](#snyk-os-dotnet-0002)
 
@@ -665,7 +662,7 @@ The provided requirements file is not supported by Snyk for Python.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python#pip-and-git-repositories](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python#pip-and-git-repositories)
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python)
 
 ### [SNYK-OS-PIP-0002](#snyk-os-pip-0002)
 
@@ -1218,4 +1215,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-16T12:42:02.820Z
+--- Generated at 2023-10-16T15:58:01.768Z
