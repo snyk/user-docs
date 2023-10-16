@@ -32,7 +32,7 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Fix Suggestions language support
 
-Fix Suggestions supports only [Javascript](snyk-code-language-and-frameworks-support.md#javascript-frameworks) and Typescript.
+Fix Suggestions supports only [Javascript](broken-reference) and Typescript.
 
 ## Enable DeepCode AI Fix Suggestions
 

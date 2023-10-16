@@ -44,9 +44,9 @@ When `snyk test` runs, it tries to autodetect your Project type by looking for a
 
 The way Snyk analyzes the file and builds the tree varies depending on the following:
 
-* The [language and package manager](../snyk-open-source-supported-languages-and-package-managers.md) you use, as determined by the manifest file type
+* The [language and package manager](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md) you use, as determined by the manifest file type
 * The method of scanning, using the [Snyk CLI](../../../snyk-cli/), or importing a Project using a [Git repository integration](../../../integrations/git-repository-scm-integrations/)
 
-For tips on running `snyk test` with commonly used options, see [Use options to customize the snyk test command](use-options-to-customize-the-snyk-test-command.md). For more information about supported languages, see [Open Source language and package manager support](../snyk-open-source-supported-languages-and-package-managers.md).
+For tips on running `snyk test` with commonly used options, see [Use options to customize the snyk test command](use-options-to-customize-the-snyk-test-command.md). For more information about supported languages, see [Open Source language and package manager support](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
 
-See [Open Source language and package manager support](../snyk-open-source-supported-languages-and-package-managers.md) for more information concerning supported languages.
+See [Open Source language and package manager support](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md) for more information concerning supported languages.

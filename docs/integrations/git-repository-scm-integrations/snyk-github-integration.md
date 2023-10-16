@@ -331,7 +331,7 @@ Badges currently work only for public npm packages and GitHub repositories and f
 
 ### **Badges for custom manifest file locations**
 
-By default, the badge will test against the first [valid manifest file](../../scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers.md) it detects in the root of your Project.
+By default, the badge will test against the first [valid manifest file](broken-reference) it detects in the root of your Project.
 
 If your manifest file is in a different location from the root of the repository, or if you have multiple manifest files for which you would like to show a badge, you can pass a target file query string parameter to direct the badge to test against another supported manifest file.
 
