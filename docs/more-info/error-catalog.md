@@ -146,17 +146,6 @@ The media format of the request is not supported.
 # [Open Source Languages & Package Managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
 ### [SNYK-OS-0001](#snyk-os-0001)
 
-#### Unsupported Ecosystem
-
-The language or package manager is not supported.
-
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Help Links:**
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
-
-### [SNYK-OS-0002](#snyk-os-0002)
-
 #### Unable to parse manifest file
 
 The provided manifest file could not be parsed as it has invalid syntax or does not match the expected schema. Review the manifest file, then try again.
@@ -164,16 +153,7 @@ The provided manifest file could not be parsed as it has invalid syntax or does 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
-### [SNYK-OS-0003](#snyk-os-0003)
-
-#### Lock file out of sync with manifest file
-
-Some of the dependencies that are expected to be in the lock file are missing, usually indicating that the lock file is out of sync with the provided manifest file. Re-sync the lock file, then try again.
-
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-
-### [SNYK-OS-0004](#snyk-os-0004)
+### [SNYK-OS-0002](#snyk-os-0002)
 
 #### Unable to parse lock file
 
@@ -182,7 +162,7 @@ The provided lock file could not be parsed as it has invalid syntax or does not 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
-### [SNYK-OS-0005](#snyk-os-0005)
+### [SNYK-OS-0003](#snyk-os-0003)
 
 #### Unknown dependency version
 
@@ -193,124 +173,7 @@ Dependency version could not be resolved.
 **Help Links:**
 - [https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies](https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies)
 
-### [SNYK-OS-0006](#snyk-os-0006)
-
-#### Payload missing required elements
-
-The server could not process the request.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0007](#snyk-os-0007)
-
-#### Files cannot be processed
-
-The dependency service could not process the files.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0008](#snyk-os-0008)
-
-#### Source is not supported
-
-The source used is not supported by fetcher. The supported sources are: github, bitbucket, gitlab.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0009](#snyk-os-0009)
-
-#### Cannot get file from source
-
-Could not get the file from the source URL.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-
-### [SNYK-OS-0010](#snyk-os-0010)
-
-#### No released version for versions range
-
-There was no version released for the specified versions range.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0011](#snyk-os-0011)
-
-#### Timeout when processing the dependency tree
-
-There was an timeout when processing the dependecy tree.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0012](#snyk-os-0012)
-
-#### Received more manifests than expected
-
-Too many manifest files were provided in the request body.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0013](#snyk-os-0013)
-
-#### Failed to apply dependency updates
-
-An error occured while updating dependencies.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0014](#snyk-os-0014)
-
-#### Unknown blob encoding on Github
-
-Unknown blob encoding on Github.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0015](#snyk-os-0015)
-
-#### No result from forked process
-
-No result from forked process.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-
-### [SNYK-OS-0016](#snyk-os-0016)
-
-#### Child Process Execution Error
-
-The child process encountered an error during execution.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-
-### [SNYK-OS-0017](#snyk-os-0017)
-
-#### No valid package upgrades
-
-The system attempted to find valid upgrades for the packages specified in the lock file, but none were available.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0018](#snyk-os-0018)
-
-#### No dependency updates
-
-There are no available updates for the dependencies.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0019](#snyk-os-0019)
+### [SNYK-OS-0004](#snyk-os-0004)
 
 #### Missing required request header
 
@@ -319,43 +182,34 @@ The server encountered a request that is missing a mandatory request header.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
-### [SNYK-OS-0020](#snyk-os-0020)
+### [SNYK-OS-0005](#snyk-os-0005)
 
-#### Could not parse JSON file
+#### Payload missing required elements
 
-An error occurred while attempting to parse a JSON file.
-
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-
-### [SNYK-OS-0021](#snyk-os-0021)
-
-#### Could not Base64 encode
-
-An error occurred while attempting to perform Base64 encoding.
+The server could not process the request.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
-### [SNYK-OS-0022](#snyk-os-0022)
+### [SNYK-OS-0006](#snyk-os-0006)
 
-#### Could not Base64 decode
+#### Files cannot be processed
 
-An error occurred while attempting to perform Base64 decoding.
+The dependency service could not process the files.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
-### [SNYK-OS-0023](#snyk-os-0023)
+### [SNYK-OS-0007](#snyk-os-0007)
 
-#### Missing supported file
+#### Cannot get file from source
 
-Could not find supported file.
+Could not get the file from the source URL.
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
-### [SNYK-OS-0024](#snyk-os-0024)
+### [SNYK-OS-0008](#snyk-os-0008)
 
 #### Missing environment variable
 
@@ -364,32 +218,16 @@ The server encountered a critical operation that requires a specific environment
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
-### [SNYK-OS-0025](#snyk-os-0025)
+### [SNYK-OS-8003](#snyk-os-8003)
 
-#### No output from isolated builds
+#### Unsupported Ecosystem
 
-The response from isolated builds had no output.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-
-### [SNYK-OS-0026](#snyk-os-0026)
-
-#### Failed to relock
-
-An error occurred while attempting to relock.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-
-### [SNYK-OS-0027](#snyk-os-0027)
-
-#### Invalid configuration
-
-The configuration parameter does not meet the expected data type. Please ensure the provided value is of the correct data type.
+The language or package manager is not supported.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
+**Help Links:**
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
 
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
 
@@ -669,6 +507,33 @@ Cannot create source URL.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
+### [SNYK-OS-MAVEN-0014](#snyk-os-maven-0014)
+
+#### No released version for versions range
+
+There was no version released for the specified versions range.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0015](#snyk-os-maven-0015)
+
+#### Source is not supported
+
+The source used is not supported by fetcher. The supported sources are: github, bitbucket, gitlab.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-MAVEN-0016](#snyk-os-maven-0016)
+
+#### Timeout when processing the dependency tree
+
+There was an timeout when processing the dependecy tree.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-NODEJS-0001](#snyk-os-nodejs-0001)
 
 #### No repository found for A NPM package
@@ -714,6 +579,96 @@ The NPM version is not supported.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-NODEJS-0006](#snyk-os-nodejs-0006)
+
+#### Unknown blob encoding on Github
+
+Unknown blob encoding on Github.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0007](#snyk-os-nodejs-0007)
+
+#### No result from forked process
+
+No result from forked process.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-NODEJS-0008](#snyk-os-nodejs-0008)
+
+#### Child Process Execution Error
+
+The child process encountered an error during execution.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-NODEJS-0009](#snyk-os-nodejs-0009)
+
+#### No valid package upgrades
+
+The system attempted to find valid upgrades for the packages specified in the lock file, but none were available.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0010](#snyk-os-nodejs-0010)
+
+#### No dependency updates
+
+There are no available updates for the dependencies.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0011](#snyk-os-nodejs-0011)
+
+#### Could not parse JSON file
+
+An error occurred while attempting to parse a JSON file.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0012](#snyk-os-nodejs-0012)
+
+#### Could not Base64 encode
+
+An error occurred while attempting to perform Base64 encoding.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0013](#snyk-os-nodejs-0013)
+
+#### Could not Base64 decode
+
+An error occurred while attempting to perform Base64 decoding.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-NODEJS-0014](#snyk-os-nodejs-0014)
+
+#### Missing supported file
+
+Could not find supported file.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-OS-NODEJS-0015](#snyk-os-nodejs-0015)
+
+#### Invalid configuration
+
+The configuration parameter does not meet the expected data type. Please ensure the provided value is of the correct data type.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
 ### [SNYK-OS-PIP-0001](#snyk-os-pip-0001)
 
 #### Unsupported manifest file type for remediation
@@ -724,6 +679,24 @@ The provided requirements file is not supported by Snyk for Python.
 
 **Help Links:**
 - [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python#pip-and-git-repositories](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python#pip-and-git-repositories)
+
+### [SNYK-OS-PIP-0002](#snyk-os-pip-0002)
+
+#### Received more manifests than expected
+
+Too many manifest files were provided in the request body.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-PIP-0003](#snyk-os-pip-0003)
+
+#### Failed to apply dependency updates
+
+An error occured while updating dependencies.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
 
 ---
 # Builds
@@ -1247,4 +1220,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-13T06:52:34.918Z
+--- Generated at 2023-10-16T11:02:19.686Z
