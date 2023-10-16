@@ -218,17 +218,6 @@ The server encountered a critical operation that requires a specific environment
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
-### [SNYK-OS-8003](#snyk-os-8003)
-
-#### Unsupported Ecosystem
-
-The language or package manager is not supported.
-
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Help Links:**
-- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
-
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
 
 #### Unsupported manifest file type for remediation
@@ -719,6 +708,17 @@ The build environment for the provided context could not be found. Please ensure
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
+
+### [SNYK-OS-8003](#snyk-os-8003)
+
+#### Unsupported Ecosystem
+
+The language or package manager is not supported.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
 
 ---
 # SbomExport
@@ -1220,4 +1220,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-16T11:02:19.686Z
+--- Generated at 2023-10-16T11:53:35.241Z
