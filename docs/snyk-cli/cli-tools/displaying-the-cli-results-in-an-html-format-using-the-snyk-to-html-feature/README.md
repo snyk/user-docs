@@ -6,11 +6,11 @@ For example:
 
 When using Snyk Code via the CLI for testing a certain repository, the vulnerability findings are displayed in the terminal in the following way:
 
-![](<../../../../.gitbook/assets/Snyk-to-HTML - Results in the CLI Terminal - 2.png>)
+![](<../../../.gitbook/assets/Snyk-to-HTML - Results in the CLI Terminal - 2.png>)
 
 When converting the CLI textual findings into HTML using the Snyk-to-HTML feature, the following **HTML Report** is generated:
 
-![](<../../../../.gitbook/assets/Snyk-to-HTML - HTML Report - 2.png>)
+![](<../../../.gitbook/assets/Snyk-to-HTML - HTML Report - 2.png>)
 
 The Snyk-to-HTML feature uses the Snyk-to-HTML tool, which you need to download and install before running the snyk-to-html command. Then, you should test your source code with Snyk Code via the CLI, and export the results to a JSON or SARIF file. The snyk-to-html command takes the information on the test results from the JSON/SARIF file, and convert it to an HTML file that can be displayed in a browser.
 

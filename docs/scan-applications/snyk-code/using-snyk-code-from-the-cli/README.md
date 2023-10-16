@@ -32,4 +32,4 @@ After running a Snyk Code test, you can do the following:
 * [Filter the CLI results, and display only issues with a specific severity level and higher](working-with-the-snyk-code-cli-results/displaying-only-discovered-issues-above-a-specific-severity-level.md).
 * [Output the CLI results to a JSON or SARIF format in the terminal](working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md).
 * [Export the CLI results to a JSON or SARIF format file](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md).
-* [Display the CLI results in an HTML format using the Snyk-to-HTML feature](displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
+* [Display the CLI results in an HTML format using the Snyk-to-HTML feature](../../../snyk-cli/cli-tools/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).

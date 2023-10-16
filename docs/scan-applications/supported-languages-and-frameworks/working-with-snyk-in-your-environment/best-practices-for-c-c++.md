@@ -71,7 +71,7 @@ snyk code test
 If you precompile components, the source code should still be present to get the best results and coverage.
 {% endhint %}
 
-For reporting, you can generate reports using the [snyk-to-html](../../snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md).
+For reporting, you can generate reports using the [snyk-to-html](../../../snyk-cli/cli-tools/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md).
 
 #### **Open Source libraries**
 
@@ -90,7 +90,7 @@ Similarly, for monitoring and sharing reporting:
 snyk monitor --unmanaged --org=<org-id>
 ```
 
-Where **org-id** is found under your Organization settings in the Snyk web interface, although the Organization id is not required, it's strongly suggested. Like Snyk Code, you can generate reports using the [snyk-to-html](../../snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to generate reporting artifacts.&#x20;
+Where **org-id** is found under your Organization settings in the Snyk web interface, although the Organization id is not required, it's strongly suggested. Like Snyk Code, you can generate reports using the [snyk-to-html](../../../snyk-cli/cli-tools/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/) plugin to generate reporting artifacts.&#x20;
 
 * For individual or personal scans, use the CLI or IDE and use the **snyk monitor --unmanaged** command to upload results, but the recommendation is you send these results to your personal folder and disable the scheduled scanning in the Project settings to ensure an individual scan does not cause noise. This provides license/policy information in a viewable state.
 * For automated scans, such as CI/CD, use **snyk monitor --unmanaged** and send results to the Organization of your choice. This provides license/policy information in a viewable state.
@@ -135,6 +135,6 @@ If you develop advanced dependency management strategies, you might not use the 
 
 ### **Options and plugins**
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-code/using-snyk-code-from-the-cli/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../snyk-cli/cli-tools/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 * For advanced filtering options, see[ snyk-filter](../../../snyk-api-info/other-tools/tool-snyk-filter.md).
