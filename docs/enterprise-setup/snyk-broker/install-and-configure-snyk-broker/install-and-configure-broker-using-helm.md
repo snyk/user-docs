@@ -32,11 +32,13 @@ Then run the commands for each SCM, registry, or Jira as explained in the user d
 * [Nexus 2](nexus-repository-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus2`
 * [Jira](jira-install-and-configure-broker/jira-install-and-configure-using-helm.md) `scmType`: `jira`
 
-{% hint style="info" %}
+**`NOTE`**\
 `scmType` designates the system type. For JFrog and Nexus, this is an artifact repository, For Jira, it is a ticket management system,
-{% endhint %}
 
 Running the commands for each SCM, registry, or Jira creates a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter. See also Deploying multiple Brokers in the same namespace.
+
+**NOTE**\
+Beginning with version 2.0.0, all created objects have a suffix based on the release name, allowing for multiple brokers in the same namespace. For backward compatibility, 2.1.0 introduces a disableSuffixes flag to revert to the 1.x.x behavior by adding `--set disableSuffixes=true`
 
 Additional commands are available to Install the Snyk Broker Code Agent and Container Registry Agent.
 
