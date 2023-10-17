@@ -11,19 +11,13 @@ This single plugin provides a Java vulnerability scanner, a custom code vulnerab
 Snyk scans for the following types of issues:
 
 * [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both direct and indirect (transitive) open-source dependencies pulled into the Snyk Project.\
-  See also the [Open Source docs](https://docs.snyk.io/products/snyk-open-source).
+  See also the [Snyk Open Source](../../../scan-application-code/snyk-open-source/) docs.
 * [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities. See also the Snyk Code docs.\
-  See also the [Snyk Code docs](https://docs.snyk.io/products/snyk-code).
+  See also the [Snyk Code](../../../scan-application-code/snyk-code/) docs.
 
-In using the Visual Studio Code extension, you have the advantage of relying on the [Snyk Vulnerability Database](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access). You also have available the [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine).
+In using the Visual Studio Code extension, you have the advantage of relying on the [Snyk Vulnerability Database](https://security.snyk.io/). You also have available the [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine).
 
-This page explains installation of the Visual Studio extension. **After you complete the steps on this page**, you will continue by following the instructions in the other Visual studio extension docs:
-
-* [Visual Studio extension configuration](https://docs.snyk.io/ide-tools/visual-studio-extension/visual-studio-extension-configuration)
-* [Visual Studio extension authentication](https://docs.snyk.io/ide-tools/visual-studio-extension/visual-studio-extension-authentication)
-* [Run an analysis with Visual Studio extension](https://docs.snyk.io/ide-tools/visual-studio-extension/run-an-analysis-with-visual-studio-extension)
-* [View analysis results from Visual Studio extension](https://docs.snyk.io/ide-tools/visual-studio-extension/view-analysis-results-from-visual-studio-extension)
-* [Troubleshooting and known issues with Visual Studio extension](https://docs.snyk.io/ide-tools/visual-studio-extension/troubleshooting-and-known-issues-with-visual-studio-extension)
+This page explains installation of the Visual Studio extension. **After you complete the steps on this page**, you will continue by following the instructions in the other Visual studio extension docs, starting with [Visual Studio extension configuration](visual-studio-extension-configuration.md).
 
 The following are also available:
 

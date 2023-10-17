@@ -272,7 +272,6 @@
       * [Import repositories to scan with Snyk Code](scan-applications/start-scanning/scan-code/import-repositories-to-scan-with-snyk-code.md)
     * [Scan container images](scan-applications/start-scanning/scan-container-images.md)
   * [Snyk Open Source](scan-application-code/snyk-open-source/README.md)
-    *
     * [Use Snyk Open Source from the CLI](scan-applications/snyk-open-source/use-snyk-open-source-from-the-cli/README.md)
       * [Use options to customize the snyk test command](scan-applications/snyk-open-source/use-snyk-open-source-from-the-cli/use-options-to-customize-the-snyk-test-command.md)
       * [Review the Snyk Open Source CLI results](scan-applications/snyk-open-source/use-snyk-open-source-from-the-cli/review-the-snyk-open-source-cli-results.md)
@@ -296,7 +295,6 @@
       * [Snyk Code AI Engine](scan-application-code/snyk-code/snyk-code-key-features/snyk-code-ai-engine.md)
       * [Snyk Code Web UI](scan-applications/snyk-code/snyk-code-key-features/snyk-code-web-ui.md)
       * [Snyk Code - Supported integrations](scan-applications/snyk-code/snyk-code-key-features/snyk-code-supported-integrations.md)
-    *
     * [Snyk Code and your repositories](scan-applications/snyk-code/snyk-code-and-your-repositories/README.md)
       * [Understanding the import process on the Web UI](scan-applications/snyk-code/snyk-code-and-your-repositories/understanding-the-import-process-on-the-web-ui.md)
       * [Importing your first repository to Snyk](scan-applications/snyk-code/snyk-code-and-your-repositories/importing-your-first-repository-to-snyk.md)
