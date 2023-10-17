@@ -7,13 +7,13 @@ Use the the `snyk-to-html` plugin when you want to do either of the following:
 
 The CLI provides a direct or automated way to fail the build and, by default, provides only summary information unless you use the `--json` or `--sarif` format to direct the output to a file. Those formats are not human-readable.
 
-For a full report that you can read, convert the `--json` output to HTML by using the s`nyk-to-html` plugin and read the HTML report in a browser.
+For a full report that you can read, convert the `--json` output to HTML by using the s`nyk-to-html` plugin and view the HTML report in a browser.
 
 For example, when you run the `snyk code test` command, summary results are displayed that do not include the data flow and fix analysis information you can see in the Web UI for each discovered issue:
 
 ![](<../../../.gitbook/assets/Snyk-to-HTML - Results in the CLI Terminal - 2.png>)
 
-When you use `snyk-to-html` to generate a readable report, the HTML looks like this:
+When you use `snyk-to-html` to convert test results to an HTML file, you can view the vulnerability findings with their data flow and fix analysis information as an HTML report in a browser:
 
 ![](<../../../.gitbook/assets/Snyk-to-HTML - HTML Report - 2.png>)
 
