@@ -33,7 +33,7 @@ You can also use these direct links to download the executables:
 * **Alpine**: [https://static.snyk.io/cli/latest/snyk-alpine](https://static.snyk.io/cli/latest/snyk-alpine)
 
 {% hint style="info" %}
-To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine, (darwin/arm64), see [Using CLI releases before version 1.1230.0 on an Apple M1 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-machine.md).
+To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine, (darwin/arm64), see [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-machine.md).
 
 To use the CLI with Alpine Linux, see [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md).
 
@@ -54,7 +54,7 @@ brew install snyk
 ```
 
 {% hint style="warning" %}
-For Apple M1 (darwin/arm64), see: [Using CLI releases before version 1.1230.0 on an Apple M1 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-machine.md).
+For Apple M1 or M2 (darwin/arm64), see: [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-machine.md).
 {% endhint %}
 
 ## Install with Scoop (Windows)
