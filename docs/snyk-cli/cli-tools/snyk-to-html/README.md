@@ -19,6 +19,6 @@ When you use `snyk-to-html` to convert test results to an HTML file, you can vie
 
 The steps to use `snyk-to-htm`l are as follows:
 
-* [Download and install ](installing-the-snyk-to-html-tool.md)the `snyk-to-html` plugin.
+* [Download and install ](install-snyk-to-html.md)the `snyk-to-html` plugin.
 * [Run the `snyk-to-htm`l command ](running-the-snyk-to-html-command.md)to export the test results to a JSON or SARIF file and convert the information in the JSON or SARIF file to an HTML file, either as a readable build artifact or a file you can open and read in a browser.
 * [View the HTML report in a browser](viewing-the-html-results.md).

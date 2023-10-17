@@ -797,7 +797,7 @@
     * [snyk-delta](snyk-cli/cli-tools/snyk-delta.md)
     * [snyk-filter](snyk-cli/cli-tools/snyk-filter.md)
     * [snyk-to-html](snyk-cli/cli-tools/snyk-to-html/README.md)
-      * [Installing the Snyk-to-Html tool](snyk-cli/cli-tools/snyk-to-html/installing-the-snyk-to-html-tool.md)
+      * [Install snyk-to-html](snyk-cli/cli-tools/snyk-to-html/install-snyk-to-html.md)
       * [Running the snyk-to-html command](snyk-cli/cli-tools/snyk-to-html/running-the-snyk-to-html-command.md)
       * [Viewing the HTML results](snyk-cli/cli-tools/snyk-to-html/viewing-the-html-results.md)
 * [Snyk API](snyk-api/README.md)
