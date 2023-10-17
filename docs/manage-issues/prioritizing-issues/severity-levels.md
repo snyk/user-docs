@@ -72,3 +72,18 @@ There are multiple CVSS Scores for the same vulnerability for several reasons:
 * Having some differences in CVSS vectors is normal and expected. The likelihood of certain attack vectors will involve discrepancies and judgments made about them that make sense for the application and use cases of open source software users.
 * The severity of a vulnerability is influenced by a variety of factors, including whether it comes from a "red team" angle or a "blue team" angle. To arrive at an objective and actionable rating, Snyk analysts examine the full range of data, from vendors to reporters to attackers.
 * There are times when a vendor discovers additional information about a vulnerability that can affect its severity. Users can find all the relevant information used to determine the severity that Snyk curated in the description and references of the advisory.
+
+### Severity levels and CCSS
+
+The Common Configuration Scoring System (CCSS), developed by the National Institute of Standards and Technology (NIST) and derived from CVSS, measures the severity of software security configuration issues.
+
+Snyk uses the [CCSS](https://www.nist.gov/publications/common-configuration-scoring-system-ccss-metrics-software-security-configuration) to designate the characteristics and severity of IaC+ vulnerabilities and misconfigurations.
+
+| **Level** | **CCSS score** |
+| --------- | -------------- |
+| Critical  | 9.0 - 10.0     |
+| High      | 7.0 - 8.9      |
+| Medium    | 4.0 - 6.9      |
+| Low       | 0.0 - 3.9      |
+
+The severity level and score are determined based on the CCSS Base Score calculations using the Base Metrics.
