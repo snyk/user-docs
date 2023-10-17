@@ -37,7 +37,7 @@ The filenames for the other `snyk test` commands are `results-opensource`, `resu
 
 If you want to customize the command, use the [command options](run-the-snyk-to-html-command.md#snyk-to-html-command-options).
 
-An HTML file with one of these names is created in your repository folder, allowing you to [view your test results in HTML format](viewing-the-html-results.md).
+An HTML file with one of these names is created in your repository folder, allowing you to [view your test results in HTML format](view-test-results-in-html-format.md).
 
 ## Convert a JSON or SARIF file to HTML to view in a browser
 

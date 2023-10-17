@@ -799,7 +799,7 @@
     * [snyk-to-html](snyk-cli/cli-tools/snyk-to-html/README.md)
       * [Install snyk-to-html](snyk-cli/cli-tools/snyk-to-html/install-snyk-to-html.md)
       * [Run the snyk-to-html command](snyk-cli/cli-tools/snyk-to-html/run-the-snyk-to-html-command.md)
-      * [Viewing the HTML results](snyk-cli/cli-tools/snyk-to-html/viewing-the-html-results.md)
+      * [View test results in HTML format](snyk-cli/cli-tools/snyk-to-html/view-test-results-in-html-format.md)
 * [Snyk API](snyk-api/README.md)
   * [Snyk REST API overview](snyk-api/snyk-rest-api-overview.md)
   * [Try a simple call to the Snyk REST API](snyk-api/try-a-simple-call-to-the-snyk-rest-api.md)
