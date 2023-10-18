@@ -35,6 +35,23 @@ If necessary, go to the Advanced Configuration section of [Install and configure
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Jira integration.
 
+## Jira PAT authentication for SSO-enabled JIRA
+
+When SSO is enabled, JIRA usually prohibits the use of a username and password and requires the use of a personal access token (PAT).
+
+When SSO is enabled, you must use a specific Jira version that will instead use the authorization header with the bearer token. To use this version, provide the following configuration:
+
+```
+docker run --restart=always \
+           -p 8000:8000 \
+           -e BROKER_TOKEN=secret-broker-token \
+           -e JIRA_PAT=<your_pat_token> \
+           -e JIRA_HOSTNAME=your.jira.domain.com \
+           -e BROKER_CLIENT_URL=http://my.broker.client:8000 \
+           -e PORT=8000 \
+       snyk/broker:jira-bearer-auth
+```
+
 ## Start the Broker Client container and verify the connection with Jira
 
 &#x20;Paste the Broker Client configuration to start the Broker Client container.
