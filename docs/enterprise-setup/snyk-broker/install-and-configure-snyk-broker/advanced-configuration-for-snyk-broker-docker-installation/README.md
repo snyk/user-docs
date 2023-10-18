@@ -12,3 +12,4 @@ When you install using Docker, follow these instructions to configure Broker as 
 * [Custom approved-listing filter with Docker](custom-approved-listing-filter-with-docker.md)
 * [Mounting secrets with Docker](mounting-secrets-with-docker.md)
 * [Snyk Code - Clone capability with Broker for Docker](snyk-code-clone-capability-with-broker-for-docker.md)
+* [Insecure Downstream Mode](insecure-downstream-mode.md)
