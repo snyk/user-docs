@@ -13,7 +13,7 @@ With Snyk Infrastructure as Code (IaC), you can secure cloud infrastructure conf
 With both versions of Snyk IaC, you can:
 
 * Write secure configurations for [HashiCorp Terraform](../scan-cloud-configurations/snyk-infrastructure-as-code/scan-terraform-files/), [AWS CloudFormation](../scan-cloud-configurations/snyk-infrastructure-as-code/scan-cloudformation-files/), [Kubernetes](../scan-cloud-configurations/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/), and [Azure Resource Manager (ARM)](../scan-cloud-configurations/snyk-infrastructure-as-code/scan-arm-configuration-files.md) - for IDE, SCM, CLI, and Terraform Cloud/Enterprise workflows.
-* View issues and receive [fix advice](getting-started-with-snyk-iac/) so you can make changes directly to code, before applications reach production.
+* View issues and receive [fix advice](getting-started-with-current-iac/) so you can make changes directly to code, before applications reach production.
 * [Detect drift](../scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.
 * **Onboard, scan, and test deployed cloud environments** for misconfigurations for AWS, Azure, and Google Cloud environments.
 

@@ -52,7 +52,7 @@ On the Projects page, you can view the results for configuration files in the im
 
 In your **Projects** listing, select the Project to open to display detailed information about that Project.
 
-<figure><img src="../../.gitbook/assets/snyk-iac-getting-started-list-of-projects.png" alt="A list of Snyk IaC Projects"><figcaption><p>List os Snyk Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-iac-getting-started-list-of-projects.png" alt="A list of Snyk IaC Projects"><figcaption><p>List of Snyk Projects</p></figcaption></figure>
 
 Each Project detail page has a **snapshot** showing when the Project was last tested, the name of the user who imported the Project, and, on the **Issues** tab, the number of critical, high, medium, and low-severity issues found and issue cards for each scanned configuration file. You can also select the **Overview**, **History,** and **Settings** options. Choose **History** to see previous snapshots of the Project.
 
