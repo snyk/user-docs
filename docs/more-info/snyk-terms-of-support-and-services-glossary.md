@@ -2,16 +2,7 @@
 
 ## Summary of offerings
 
-| Offering                                                                           | Standard Support                                                                                                                                        | Premium Care                                                                                                              |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Digital Learning Resources                                                         | ✔                                                                                                                                                       | ✔                                                                                                                         |
-| Access to an online customer community                                             | ✔                                                                                                                                                       | ✔                                                                                                                         |
-| Support Term                                                                       | <ul><li><strong>Enterprise Plan</strong>: 24x5</li><li><strong>Free/Team Plan</strong> (see Note 2): Next Business Day (local business hours)</li></ul> | 24x7                                                                                                                      |
-| Prioritized Initial Response & Support ticket routing                              | <p>See <a href="snyk-terms-of-support-and-services-glossary.md#initial-response-time-details">Initial Response details</a><br>(see Note 1)</p>          | See [Initial Response details](snyk-terms-of-support-and-services-glossary.md#initial-response-time-details) (see Note 1) |
-| Guided Implementation and Product training, including SSO & Broker                 | <p><em>add-on</em><br><em>(see Note 3)</em></p>                                                                                                         | ✔                                                                                                                         |
-| Named Technical Success Manager (TSM)                                              | ❌                                                                                                                                                       | ✔                                                                                                                         |
-| Dedicated Private Slack Channel                                                    | ❌                                                                                                                                                       | ✔                                                                                                                         |
-| Ongoing Technical Advisory, Adoption and Developer Education Support (see details) | ❌                                                                                                                                                       | ✔                                                                                                                         |
+<table><thead><tr><th>Offering</th><th width="194">Standard Support</th><th>Premium Care</th><th>Platinum Premium Care</th></tr></thead><tbody><tr><td>Digital Learning Resources</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Access to an online customer community</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Support Term</td><td><ul><li><strong>Enterprise Plan</strong>: 24x5</li><li><strong>Free/Team Plan</strong> (see Note 2): Next Business Day (local business hours)</li></ul></td><td>24x7</td><td>24x7</td></tr><tr><td>Prioritized Initial Response &#x26; Support ticket routing</td><td>See <a href="snyk-terms-of-support-and-services-glossary.md#initial-response-time-details">Initial Response details</a><br>(see Note 1)</td><td>See <a href="snyk-terms-of-support-and-services-glossary.md#initial-response-time-details">Initial Response details</a> (see Note 1)</td><td>See <a href="snyk-terms-of-support-and-services-glossary.md#initial-response-time-details">Initial Response details</a> (see Note 1)</td></tr><tr><td>Priority Support activity and SLA adherence 1st Priority routing for support issues 1st Priority path for Escalation</td><td>❌</td><td>❌</td><td>See <a href="snyk-terms-of-support-and-services-glossary.md#initial-response-time-details">Initial Response details</a> (see Note 4)</td></tr><tr><td>Guided Implementation and Product training, including SSO &#x26; Broker</td><td><em>add-on</em><br><em>(see Note 3)</em></td><td>✔</td><td>✔</td></tr><tr><td>Named Technical Success Manager (TSM)</td><td>❌</td><td>✔</td><td>✔</td></tr><tr><td>Aligned Technical Support Engineer</td><td>❌</td><td>❌</td><td>✔</td></tr><tr><td>Dedicated Private Slack Channel</td><td>❌</td><td>✔</td><td>✔</td></tr><tr><td>Ongoing Technical Advisory, Adoption and Developer Education Support (see details)</td><td>❌</td><td>✔</td><td>✔</td></tr></tbody></table>
 
 {% hint style="info" %}
 **Notes**\
@@ -20,6 +11,8 @@
 2/ Existing Business plan customers.
 
 3/ Paid Implementation services (Snyk Accelerate) are available as a la carte packages for Standard Support customers.
+
+4/ All relevant support tickets will be routed to the aligned Technical Support Engineer, in case of absence of the TSE, the tickets will be routed to an alternate tier 2 Technical Support Engineer.
 {% endhint %}
 
 ## Initial response and severity definitions
@@ -35,12 +28,7 @@ Severity levels are defined as follows:
 
 Responses for severity levels are as follows:
 
-| Level     | Contact Method                                                           | Standard Support                                                                                                                                      | Premium Care                 |
-| --------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| 1: Urgent | <p>Phone Call</p><p>(Team/Free: Email or web portal)<br>(See Note 1)</p> | <ul><li><strong>Team / Free Plan</strong> (see Note 2) - Next Business Day</li><li><strong>Enterprise Plan</strong>: 2 hr initial response </li></ul> | 1 hour initial response      |
-| 2: High   | <p><br><br><br><br>Email or Web Portal</p>                               | <ul><li><strong>Team / Free Plan</strong> (see Note 2) - Next Business Day</li><li><strong>Enterprise Plan</strong>: 4 hr initial response </li></ul> | 2 hours initial response     |
-| 3: Normal | Email or Web Portal                                                      | <ul><li><strong>Team / Free Plan</strong> (see Note 2) - Next Business Day</li><li><strong>Enterprise Plan</strong>: 12 hr initial response</li></ul> | 8 hours initial response     |
-| 4: Low    | Email or Web Portal                                                      | <ul><li><strong>Team / Free Plan</strong> (see Note 2) - Next Business Day</li><li><strong>Enterprise Plan</strong>: 24 hr initial response</li></ul> | 12 hours to initial response |
+<table><thead><tr><th>Level</th><th>Contact Method</th><th>Standard Support</th><th width="154">Premium Care</th><th>Platinum Care</th></tr></thead><tbody><tr><td>1: Urgent</td><td><p>Phone Call</p><p>(Team/Free: Email or web portal)<br>(See Note 1)</p></td><td><ul><li><strong>Team / Free Plan</strong> (see Note 2) - Next Business Day</li><li><strong>Enterprise Plan</strong>: 2 hr initial response </li></ul></td><td>1 hour initial response</td><td>1 hour initial response (see Note 3)</td></tr><tr><td>2: High</td><td><br><br><br><br>Email or Web Portal</td><td><ul><li><strong>Team / Free Plan</strong> (see Note 2) - Next Business Day</li><li><strong>Enterprise Plan</strong>: 4 hr initial response </li></ul></td><td>2 hours initial response</td><td>2 hours initial response (see Note 3)</td></tr><tr><td>3: Normal</td><td>Email or Web Portal</td><td><ul><li><strong>Team / Free Plan</strong> (see Note 2) - Next Business Day</li><li><strong>Enterprise Plan</strong>: 12 hr initial response</li></ul></td><td>8 hours initial response</td><td>8 hours initial response (see Note 3)</td></tr><tr><td>4: Low</td><td>Email or Web Portal</td><td><ul><li><strong>Team / Free Plan</strong> (see Note 2) - Next Business Day</li><li><strong>Enterprise Plan</strong>: 24 hr initial response</li></ul></td><td>12 hours to initial response</td><td>12 hours initial response (see Note 3)</td></tr></tbody></table>
 
 
 
@@ -49,6 +37,10 @@ Responses for severity levels are as follows:
 1/ Team/Free Plan: Contact Method for severity levels is Email or Web Portal.
 
 2/ Existing Business plan customers.
+
+3/ 1st Priority Routing for support issues
+
+4/ 24x7 support will be supported in English unless during business hours.
 {% endhint %}
 
 ## Detailed Definitions
@@ -73,6 +65,10 @@ Self-serve resources designed to help you quickly and successfully derive value 
 1/ Existing Business plan customers
 {% endhint %}
 
+### **Technical Support As Part Of Platinum Care Offering**
+
+Platinum add-on providing extended, in-depth, and skilled expertise to help you maximize your investment with Snyk, by aligning to your account a Technical Support Engineer that will have the relevant level of depth into your environment, deployment and use cases, that will help to expedite resolution time and offering best practices
+
 ### Premium Care Overview
 
 Premium add-on providing extended, in-depth, and skilled expertise to help you maximize your investment with Snyk.
@@ -80,11 +76,49 @@ Premium add-on providing extended, in-depth, and skilled expertise to help you m
 | Premium Care Offering                                                         | Description                                                                                                                                                                                                                                                              |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <ul><li>24x7 Support</li></ul>                                                | Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent customer issues outside of 24x5, Snyk provides a 24 hour support telephone number. This is served by a telephone answering service which triggers our on-call engineers. |
-| <ul><li>Prioritized Support ticket routing</li></ul>                          | Tickets raised on Premium Care are automatically routed to Snyk support engineers and prioritized ahead of non premium ticket traffic.                                                                                                                                   |
+| <ul><li>Prioritized Support ticket routing</li></ul>                          | Tickets raised on Platinum Care are automatically routed to Snyk support engineers and prioritized ahead of non premium ticket traffic.                                                                                                                                  |
 | <ul><li>Enhanced Support response time</li></ul>                              | Faster first response and ticket updates. See [initial response and severity definitions](snyk-terms-of-support-and-services-glossary.md#initial-response-and-severity-definitions) table for premium support.                                                           |
 | <ul><li>Private slack channel</li></ul>                                       | <p>Direct engagement over Slack with your Technical Account team to encourage collaboration</p><p><br></p>                                                                                                                                                               |
-| <ul><li>Technical Success Manager</li></ul>                                   | <p>Named Technical resource assigned to your account to support your Snyk implementation as it grows and evolves.</p><p><br><br></p>                                                                                                                                     |
+| <ul><li>Technical Success Manager</li></ul>                                   | Named Technical resource assigned to your account to support your Snyk implementation as it grows and evolves.                                                                                                                                                           |
+| Aligned Technical Support Engineer                                            | Named Technical Support Engineer to be assigned to your account, has familiarity with the customer environment and deployment, helps with solving support tickets, be a point of escalation.                                                                             |
 | See description of additional services included with the Premium Care below\* |                                                                                                                                                                                                                                                                          |
+
+{% hint style="info" %}
+**Notes**
+
+1/ TSM services will be performed by Snyk’s staff, specific resources to be determined by Snyk and may be changed periodically at Snyk’s sole discretion.
+
+2/ All TSM services will be performed remotely. Any onsite time requires Snyk's prior
+
+approval and may be subject to additional T\&E fees.
+
+3/ TSM services will be delivered during Snyk's normal business hours Monday through Friday. The time zone for TSM service delivery will be determined based on the location of Customer’s headquarters, unless otherwise previously agreed upon between Customer and Snyk.
+
+4/ Any unused hours expire at the end of a week and do not roll over. Any unused sessions. Expire at the end of the 12-month term and do not roll over.
+
+5/ The minimum term for this service is 12 months and is purchased in 12-month
+
+increments unless otherwise agreed to by Snyk.
+{% endhint %}
+
+### **Platinum Care Services**
+
+Maximize the value out of Snyk products by leveraging assigned expert and proactive technical resources. The services below will be delivered by your assigned Technical Success Manager (TSM), Solutions Architecture(SA), Technical Support Engineer(TSE) and more technical resources and product leadership:
+
+* Solutions Architecture:  Snyk product expert will design the customer’s deployment and change management process. We enable Snyk’s worldwide growth by accelerating the adoption of Snyk’s solutions by addressing customers’ problems, partnering with internal teams, and deep subject matter expertise. The SA thinks strategically about how to solve customers’ business problems and then dives deep to create technical solutions based on a deep discovery of the customer’s current development environment and processes\*.
+* Success Planning: Snyk will work with Customer to understand and document the specific goals they are looking to achieve through their deployment of Snyk throughout their organization. In addition, Snyk will recommend the optimal workflow and points of integration to help the Customer best achieve their stated goals.
+* Onboarding Guidance: Snyk will conduct a guided technical set up for SSO and Broker features, perform a guided implementation of one or multiple Developer workflows and additional guided implementations based on the product package selected for the subscription term.
+* Complete DevSecOps Capability assessment: Snyk will facilitate a live workshop to assess the customer’s organization along Snyk’s DevSecOps Capability framework. As part of this assessment, we will establish a baseline maturity state and will help Customer set goals for how they can improve both their overall DevSecOps capabilities as well as how they can specifically leverage Snyk to shift left in their own DevSecOps process.
+* Enablement Support: Snyk resources will lead the customer through Admin UI training, and multiple Developer trainings as required throughout the duration of the engagement
+* Regular Business and Deployment Optimization Reviews - Snyk will provide quarterly business reviews back to demonstrate progress achieved against the success criteria established during implementation. In addition, Snyk will provide semi-annual deployment optimization reviews to help ensure the customer is leveraging the latest Snyk functionality and that the deployment has been optimized for any changes in the customer’s tech stack or use case.&#x20;
+* Weekly Deployment Stand-Up and Project Status Calls - during critical periods of implementation or developer roll-out, Snyk will conduct weekly stand-ups and help provide general project management tracking throughout the Snyk implementation project.
+* Technical Advocacy -  The Snyk TSM will help advocate internally for specific product needs and help connect customers with relevant experts within Snyk to assist with specific challenges. The Snyk TSM will also help the customer champion any open support or product tickets to help provide one voice from SnykSecurity Awareness and Education Training - The Snyk team will offer periodic developer education sessions, including our “Stranger Danger” Live Hacking Session, Intro to Security Champions program, How to Bug Bash with Snyk and others
+* Technical Advisory - Access to advanced technical experts with industry and domain expertise who can help solve complex use cases
+* Content Creation - Support the development of custom content for developer training and enablement, Snyk usage policies, internal wikis
+* Developer/Admin training on Snyk platform in order to maximize Snyk value,by educating developers an admins on Snyk platform and having refreshers to increase Snyk value by utilizing new features and capabilities.
+* Onsite visits (twice per year) - Where requested, the TSM will make up to 2 onsite visits to provide customer workshops, trainings or to conduct business reviews (Travel expenses passed through at cost)
+
+\*The Solution Architecture item will be delivered as part of the onboarding period and will be initiated in the first 90 days. The Solution Architect will deliver discovery sessions and will conduct an architecture doc with recommendations on Snyk deployment and change management. Any additional work out of the Premium Care scope will be charged separately. &#x20;
 
 ### **Premium Care Services**
 
