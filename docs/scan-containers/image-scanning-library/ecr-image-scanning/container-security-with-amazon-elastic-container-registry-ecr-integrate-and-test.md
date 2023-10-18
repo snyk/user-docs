@@ -4,7 +4,7 @@ Snyk integrates with Amazon Elastic Container Registry (ECR) to enable you to im
 
 Refer to the following pages for details:
 
-* [Enable permissions to access Amazon Elastic Container Registry (ECR) for the first time](enable-permissions-to-access-amazon-elastic-container-registry-ecr-for-the-first-time.md)
+* [Enable permissions to access Amazon Elastic Container Registry (ECR) for the first time](../../../integrations/snyk-container-integrations/container-security-with-amazon-elastic-container-registry-ecr-integrate-and-test/enable-snyk-permissions-to-access-amazon-elastic-container-registry-ecr-for-the-first-time.md)
 * [Add additional Organizations to your AWS IAM role for Snyk authentication](add-additional-organizations-to-your-aws-iam-role-for-snyk-authentication.md)
 * [Configure integration for Amazon Elastic Container Registry (ECR)](configure-integration-for-amazon-elastic-container-registry-ecr.md)
 * [Amazon Elastic Container Registry (ECR) - configure your integration with Snyk](amazon-elastic-container-registry-ecr-configure-your-integration-with-snyk.md)

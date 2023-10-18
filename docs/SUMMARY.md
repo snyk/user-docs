@@ -176,7 +176,7 @@
       * [Configure integration for GCR](integrations/snyk-container-integrations/container-security-with-gcr-integration/configure-integration-for-gcr.md)
       * [Add images to Snyk from GCR](integrations/snyk-container-integrations/container-security-with-gcr-integration/add-images-to-snyk-from-acr.md)
     * [Container security with Amazon Elastic Container Registry (ECR): integrate and test](scan-containers/image-scanning-library/ecr-image-scanning/container-security-with-amazon-elastic-container-registry-ecr-integrate-and-test.md)
-      * [Enable permissions to access Amazon Elastic Container Registry (ECR) for the first time](scan-containers/image-scanning-library/ecr-image-scanning/enable-permissions-to-access-amazon-elastic-container-registry-ecr-for-the-first-time.md)
+      * [Enable Snyk permissions to access Amazon Elastic Container Registry (ECR) for the first time](integrations/snyk-container-integrations/container-security-with-amazon-elastic-container-registry-ecr-integrate-and-test/enable-snyk-permissions-to-access-amazon-elastic-container-registry-ecr-for-the-first-time.md)
       * [Add additional organizations to your AWS IAM role for Snyk authentication](scan-containers/image-scanning-library/ecr-image-scanning/add-additional-organizations-to-your-aws-iam-role-for-snyk-authentication.md)
       * [Configure integration for Amazon Elastic Container Registry (ECR)](scan-containers/image-scanning-library/ecr-image-scanning/configure-integration-for-amazon-elastic-container-registry-ecr.md)
       * [Amazon Elastic Container Registry (ECR) - configure your integration with Snyk](scan-containers/image-scanning-library/ecr-image-scanning/amazon-elastic-container-registry-ecr-configure-your-integration-with-snyk.md)
