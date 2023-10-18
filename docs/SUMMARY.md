@@ -412,7 +412,7 @@
       * [Supported Azure resources for cloud context](scan-infrastructure/snyk-iac+/supported-resources-for-cloud-context-in-snyk-iac/supported-azure-resources-for-snyk-cloud-context.md)
       * [Supported Google resources for cloud context](scan-infrastructure/snyk-iac+/supported-resources-for-cloud-context-in-snyk-iac/supported-google-resources-for-snyk-cloud-context.md)
   * [Getting started with current IaC](scan-infrastructure/getting-started-with-current-iac/README.md)
-    * [Manage current IaC issues](scan-infrastructure/getting-started-with-current-iac/snyk-iac-examples.md)
+    * [Manage current IaC issues](scan-infrastructure/getting-started-with-snyk-iac/snyk-iac-examples.md)
   * [Getting started with IaC+ and cloud scans](scan-infrastructure/introduction-to-iac+/README.md)
     * [Key concepts for IaC+ and cloud](scan-infrastructure/introduction-to-iac+/key-concepts-in-iac+.md)
     * [Manage IaC+ and cloud issues](scan-infrastructure/introduction-to-iac+/cloud-and-integrated-iac-issues/README.md)
