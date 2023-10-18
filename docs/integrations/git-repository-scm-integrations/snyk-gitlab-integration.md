@@ -26,7 +26,7 @@ To set up the GitLab integration with Snyk, create a GitLab access token and ent
 Typically, the first user in a Snyk Organization, a [Snyk admin](../../snyk-admin/introduction-to-snyk-administration.md#member-user-types) and GitLab Owner or Maintainer, sets up an integration with a **GitLab Personal Access Token** or **Group Access Token.** This token is then authenticated with GitLab, enabling access by Snyk to the repositories in that GitLab account.
 
 * A **GitLab Personal Access Token** is used to perform actions on and manage personal GitLab projects individually. These differ from Group Access Tokens as they are attached to a user rather than a GitLab group.
-* A **GitLab Group Access Token,** most commonly used for the Snyk GitLab integration, is used to perform actions for and manage more than one GitLab project within a GitLab group.
+* A **GitLab Group Access Token** is used to perform actions for and manage more than one GitLab project within a GitLab group. The Group Access Token also grants access to all GitLab projects in a GitLab group or subgroup without contributing to GitLab's licensed user count.
 
 To trigger the creation of fix pull requests manually, all users in a Snyk Organization can add and work with any related Snyk Projects, while the merge requests themselves will appear in GitLab as having been opened by the Snyk admin who set up the configuration.
 
@@ -41,7 +41,6 @@ GitLab Group Access Tokens can only be created using a GitLab Premium or Ultimat
 1.  Generate a GitLab Personal Access Token in a GitLab instance.\
     Select the profile icon, then **Edit Profile > Access Tokens**.\
     Set the token name, for example, Snyk, and select the **api** scope.\
-    Alternatively, use a [Group Access Token](https://docs.gitlab.com/ee/user/group/settings/group\_access\_tokens.html) to grant access to all GitLab projects in a GitLab group or subgroup without contributing to GitLab's licensed user count.\
 
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-31-25.png" alt=""><figcaption><p>Create a GitLab Personal Access Token with the api scope.</p></figcaption></figure>
@@ -80,7 +79,7 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 
 1. Copy the token generated from GitLab.
 2. Navigate to the Snyk GitLab integration page by selecting the tile.
-3.  Paste the GitLab Group Access Token into the Snyk application field, the same way you would add a GitLab Personal Access Token.\
+3.  Paste the GitLab Group Access Token into the Snyk application field the same way you would add a GitLab Personal Access Token.\
 
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Enter your GitLab Group Access Token into the Snyk application Personal access token field.</p></figcaption></figure>
