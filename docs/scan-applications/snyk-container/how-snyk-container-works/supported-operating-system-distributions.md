@@ -3,8 +3,8 @@
 {% hint style="info" %}
 For information on the environments supported with other Snyk products, see:
 
-* [Snyk Open Source - supported languages and package managers](broken-reference)
-* [Snyk Code - Supported languages and frameworks](broken-reference)
+* [Snyk Open Source - supported languages and package managers](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md#open-source-and-licensing-snyk-open-source)
+* [Snyk Code - Supported languages and frameworks](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md#code-analysis-snyk-code)
 * [Snyk IaC and Cloud - Supported providers](../../../scan-infrastructure/supported-iac-and-cloud-providers/)
 {% endhint %}
 
