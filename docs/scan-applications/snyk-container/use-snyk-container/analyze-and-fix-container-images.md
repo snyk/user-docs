@@ -1,6 +1,6 @@
 # Analyze and fix container images
 
-You can import container Projects into Snyk using the CLI command `snyk monitor`. Alternatively, you can import Projects directly from a supported container registry using the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md).
+You can import container Projects into Snyk using the CLI command `snyk monitor`. Alternatively, you can import Projects directly from a supported container registry using the Snyk Web UI.
 
 Snyk then scans your Project for vulnerabilities and imports a snapshot of your Project. Based on your configuration, daily or weekly, Snyk regularly scans the image snapshot dependencies, which in turn refers to its tag. Based on your configuration, Snyk sends you an update by email or Slack when any new vulnerabilities are identified.
 
@@ -8,7 +8,7 @@ If the tag for an image changes and the original tag is used for a different ima
 
 ## Grouping of Container Projects
 
-Depending on how you import images (Snyk Container CLI, Container Registry integration, or Kubernetes integration), Projects are grouped differently in the **Projects** tab.&#x20;
+Depending on how you import images (Snyk CLI, container registry integration, or Kubernetes integration), Projects are grouped differently in the **Projects** tab.&#x20;
 
 ### Project grouping when importing images with Snyk CLI
 
@@ -16,58 +16,60 @@ Snyk groups images and the applications found in the image. However, Snyk CLI do
 
 <figure><img src="../../../.gitbook/assets/image (152) (1).png" alt="Images with different image tags in one group"><figcaption><p>Images with different image tags grouped in one group</p></figcaption></figure>
 
-### Project grouping when importing images with Container Registry integration
+### Project grouping when importing images with container registry integration
 
-If you import images with container registry integration, in the **Projects** tab, Snyk performs sub-grouping per image tag for each image name.
+If you import images into Snyk with container registry integration, in the **Projects** list Snyk performs sub-grouping per image tag for each image name.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 15.13.18.png" alt="Images with different image tags in sub-groups"><figcaption><p>Images with different image tags gropued in sub-groups</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 15.13.18.png" alt="Images with different image tags in sub-groups"><figcaption><p>Images with different image tags grouped in sub-groups</p></figcaption></figure>
 
 ### Project grouping when importing images with the Kubernetes integration
 
-If you import images into Snyk with the Kubernetes integration, the top clickable item is the workload in the cluster. The grouping is based on the image in the workload without sub-grouping per image tag.
+If you import images into Snyk using the Kubernetes integration, the top clickable item represents the workload in the cluster. Snyk performs grouping based on the image in the workload, without sub-grouping per image tag.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-22 at 19.37.56.png" alt="Grouping of images from Kubernetes integration"><figcaption><p>Grouping of images imported with the Kubernetes integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-22 at 19.37.56.png" alt="Grouping of images from Kubernetes integration"><figcaption><p>Grouping based on the image in the workload</p></figcaption></figure>
 
 ## View image vulnerabilities
 
-On the **Projects** page, if the Project is imported from a registry integration, it is marked with the relevant registry icon; if the Project is imported from the CLI, it is marked with a CLI icon.
+If the Project is imported from a registry integration, on the **Projects** page, it is marked with the relevant registry icon. If the Project is imported from the CLI, it is marked with a CLI icon.
 
 You can filter for all container Projects, as shown in the following example:
 
-<figure><img src="../../../.gitbook/assets/Analysis of container.png" alt="Snyk Projects list with filters"><figcaption><p>Snyk Projects list with filters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Analysis of container.png" alt="Snyk Projects list with filters"><figcaption><p>Filtering Snyk Projects</p></figcaption></figure>
 
-When you open any container Project, the resulting analysis and fix advice appear in the Snyk Web UI:
+When you open a container Project, the analysis and fix advice appear for that Project:
 
-<figure><img src="../../../.gitbook/assets/image (315) (1) (1).png" alt="Analysis and fix advice for a Project"><figcaption><p>Analysis and fix advice for a Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (315) (1) (1).png" alt="Analysis and fix advice for a Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
 
 The following information is displayed:
 
-* Project summary: general project details, including these unique details:
-  * Image ID - derived from the container image digest
-  * Image tag
-  * Base Image
+* Project summary: general Project details, including unique details:
+  * **Image ID** - derived from the container image digest
+  * **Image tag**
+  * **Base Image**
   * Total dependencies with known vulnerabilities and the total number of vulnerabilities
-* Fix advice: If you included your Dockerfile for monitoring, available actionable fix advice is displayed. To view all advice, click the **Show more upgrade types** link.&#x20;
+* Fix advice: If you included your Dockerfile for monitoring, available and actionable fix advice is displayed. To view all fix advice, click **Show more upgrade types**.&#x20;
 
-The **Issues** tab provides a list of vulnerabilities, including origins, paths, and an overview of the vulnerabilities.
+The **Issues** tab provides a list of vulnerabilities, including origins and paths, as well as an overview of the vulnerabilities.
 
-You can use filters. When viewing a container Project, you can use the filters available for all supported Project types, as well as the following filters:
+In the issues list, you can use the filters available for all supported Project types, as well as the following filters:
 
-* **OS BINARIES** - to see a specific binary or OS packages for binaries and packages containing issues
-* **IMAGE LAYER** - to see Dockerfile instructions. If you attach your Dockerfile, you can filter to view issues associated only with the base image view Dockerfile-related advice (user instruction), or both.
+* **OS BINARIES** - to see specific binary or OS packages for binaries and packages containing issues.
+* **IMAGE LAYER** - to see Dockerfile instructions. If you attach a Dockerfile, you can filter to view issues associated only with the base image, view Dockerfile-related advice (user instruction), or both.
 
-<figure><img src="../../../.gitbook/assets/image (195) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Filters for binaries and images"><figcaption><p>Filters for binaries and images</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (195) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Filters for binaries and images"><figcaption><p>Filters for OS binaries and image layers</p></figcaption></figure>
 
 {% hint style="info" %}
-If there is only one category of issues in your container, for example, Node binary vulnerabilities or OS packages, this filter does not appear.\
-If there is no Dockerfile attached for additional advice, the Dockerfile instruction filter does not appear.
+The **OS BINARIES** filter does not appear if there is only one category of issues in your container, for example, Node binary vulnerabilities or OS packages.\
+
+
+The **IMAGE LAYER** filter does not appear if there is no Dockerfile attached.&#x20;
 {% endhint %}
 
 The **Dependencies** tab provides a tree view of the package hierarchy inside the image.
 
 ## Fix image vulnerabilities
 
-Recommendations for upgrading the base image refer to:
+The Snyk recommendations for upgrading the base image refer to:
 
 * **Minor upgrades**: the safest and best minor upgrade available
 * **Major upgrades**: an option for a major upgrade that will reduce more vulnerabilities but with greater risk
@@ -76,8 +78,8 @@ Recommendations for upgrading the base image refer to:
 
 Recommendations for upgrading the base image include:
 
-* the name of the recommended base image version
-* the number of vulnerabilities existent in the recommended upgrade
-* a summary of the vulnerability severities accordingly.
+* The name of the recommended base image version
+* The number of vulnerabilities that exist in the recommended upgrade
+* A summary of the vulnerability severities.
 
 <figure><img src="../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
