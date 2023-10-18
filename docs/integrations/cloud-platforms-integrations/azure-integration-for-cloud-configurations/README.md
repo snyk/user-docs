@@ -1,9 +1,5 @@
 # Azure integration for cloud configurations
 
-{% hint style="info" %}
-Azure support is currently in Open Beta. If you want to use Snyk to scan your Azure subscription, contact your Snyk account team. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
-{% endhint %}
-
 Snyk integrates with your [Microsoft Azure](https://azure.microsoft.com/en-us/) subscription to find issues in your cloud configurations and generate cloud context to help you prioritize your vulnerabilities.
 
 You can onboard an Azure subscription to Snyk using the following methods:
