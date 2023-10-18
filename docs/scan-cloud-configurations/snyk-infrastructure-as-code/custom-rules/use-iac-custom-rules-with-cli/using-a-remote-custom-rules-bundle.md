@@ -202,7 +202,7 @@ Similarly to the Settings page, the [**Group IaC Settings API**](https://apidocs
   }
 ```
 
-* To revert back to the Oroup settings, call the API by providing the following request body:
+* To revert back to the Group settings, call the API by providing the following request body:
 
 ```
 {
