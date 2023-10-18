@@ -21,7 +21,7 @@ Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-e
 
 ## Adding PR checks using GitHub Action
 
-An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where there is an attempt to add a new rule called `my_rule.` This is the same rule shown for [learning how to write a rule](getting-started-with-the-sdk/writing-a-rule.md).
+An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where there is an attempt to add a new rule called `my_rule`. This is the same rule shown for [learning how to write a rule](getting-started-with-the-sdk/writing-a-rule.md).
 
 To verify that this rule works as expected, unit tests were implemented. To run the unit tests as part of PR checks, a GitHub Action was configured previously under `.github/workflows` called `test.yml`:
 
