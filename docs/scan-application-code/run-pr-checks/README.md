@@ -36,4 +36,4 @@ For more information on working with PR Checks, see the following pages:
 
 * [Configure PR Checks](configure-pr-checks.md)
 * [Analyze PR Checks results](../../scan-applications/run-pr-checks/analyze-pr-checks-results.md)
-* [Troubleshooting](../../scan-applications/run-pr-checks/troubleshooting.md)
+* [Troubleshooting](troubleshooting.md)

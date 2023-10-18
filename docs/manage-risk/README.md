@@ -20,9 +20,9 @@ Issues are reported for Snyk Projects, which have many features that help you fo
 
 * [View Project information](../snyk-admin/introduction-to-snyk-projects/view-project-information.md).
 * Apply and remove [Project attributes ](../snyk-admin/introduction-to-snyk-projects/project-attributes.md)and [Project tags](../snyk-admin/introduction-to-snyk-projects/project-tags.md) to characterize Projects.
-* Look at [Project collections groupings](../manage-issues/snyk-projects/project-collections-groupings/).
-* [View Project issues, fixes, and dependencies](../manage-issues/snyk-projects/view-project-issues-fixes-and-dependencies.md).
-* [View Project settings](../manage-issues/snyk-projects/view-and-edit-project-settings.md).
+* Look at [Project collections groupings](../snyk-admin/introduction-to-snyk-projects/project-collections-groupings/).
+* [View Project issues, fixes, and dependencies](../snyk-admin/introduction-to-snyk-projects/view-project-issues-fixes-and-dependencies.md).
+* [View Project settings](../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md).
 
 For details, see [Snyk Projects](../snyk-admin/introduction-to-snyk-projects/).
 

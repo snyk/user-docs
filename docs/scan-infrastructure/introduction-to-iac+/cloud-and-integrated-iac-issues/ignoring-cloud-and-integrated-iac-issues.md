@@ -29,7 +29,7 @@ To ignore an issue via the Snyk Web UI:
    The message "Issue successfully ignored and will be applied on next scan" appears.\
    In addition, the pending ignore state is displayed in the issue panel.\
    ![Pending ignore state displayed in issue panel](<../../../.gitbook/assets/image (4) (6).png>)
-7. To apply the ignore immediately, [re-scan the environment](../../snyk-iac+/snyk-environments/scan-a-cloud-environment.md).\
+7. To apply the ignore immediately, [re-scan the environment](../../../scan-cloud-configurations/snyk-iac+/snyk-environments/scan-a-cloud-environment.md).\
    You also can wait for the ignore to be applied on the next scheduled scan.
 8. Refresh the page in your browser to see the "Ignored" message in the side panel.
 
@@ -54,7 +54,7 @@ To unignore an issue via the Snyk Web UI:
 3. The message "Issue successfully unignored and will be applied on next scan" appears.\
    In addition, the unignore pending state is shown in the issue panel: The ignore applied to this issue has been deleted and will be removed on the next scan.\
    ![Unignore pending state in the issue panel](<../../../.gitbook/assets/image (1) (1) (1).png>)
-4. To apply the unignore immediately, [re-scan the environment](../../snyk-iac+/snyk-environments/scan-a-cloud-environment.md).\
+4. To apply the unignore immediately, [re-scan the environment](../../../scan-cloud-configurations/snyk-iac+/snyk-environments/scan-a-cloud-environment.md).\
    You also can wait for the unignore to be applied on the next scheduled scan.
 5. Refresh the page in your browser to see that the "Ignored" message in the side panel is gone.
 
@@ -67,6 +67,6 @@ To edit an ignore via the Snyk Web UI:
 3. Edit the comment, the ignore expiration date, or both.
 4. Select **Confirm**.\
    The message "Ignore successfully edited and will be applied on next scan" appears.
-5. To apply the edited ignore immediately, [re-scan the environment](../../snyk-iac+/snyk-environments/scan-a-cloud-environment.md).\
+5. To apply the edited ignore immediately, [re-scan the environment](../../../scan-cloud-configurations/snyk-iac+/snyk-environments/scan-a-cloud-environment.md).\
    You can also wait for the edited ignore to be applied on the next scheduled scan.
 6. After the environment is scanned, refresh the page in your browser to see the edited ignore details.

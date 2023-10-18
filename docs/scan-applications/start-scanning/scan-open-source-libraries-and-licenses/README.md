@@ -28,7 +28,7 @@ For more details, see [View Project information](../../../snyk-admin/introductio
 
 ## Fix vulnerabilities in your open-source libraries
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../snyk-open-source/open-source-basics/).
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../../scan-application-code/snyk-open-source/open-source-basics/).
 
 Navigate to the **Issues** card for a Project:
 
@@ -45,4 +45,4 @@ To fix vulnerabilities:
 
 <figure><img src="../../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png" alt=".Files changed tab in GitHub after triggering Fix PR for an open source project"><figcaption><p>Files changed tab in GitHub after triggering Fix PR for an open source project</p></figcaption></figure>
 
-For more details, see [Fix your vulnerabilities](../../snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md).
+For more details, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md).

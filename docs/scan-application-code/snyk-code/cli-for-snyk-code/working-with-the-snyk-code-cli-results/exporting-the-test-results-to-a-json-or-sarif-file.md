@@ -2,7 +2,7 @@
 
 You can export the `snyk code test` results to a JSON or SARIF format file. When you export the results, you must provide a name for the new file.
 
-You can also [output the test results to JSON or SARIF format in the terminal](../../../../scan-applications/snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md).
+You can also [output the test results to JSON or SARIF format in the terminal](outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md).
 
 The severity levels of the issues discovered by running `snyk code test` are displayed differently in JSON and SARIF files.  For more information, see [Understanding the severity levels in the JSON and SARIF files](exporting-the-test-results-to-a-json-or-sarif-file.md#understanding-the-severity-levels-in-the-json-and-sarif-files).
 

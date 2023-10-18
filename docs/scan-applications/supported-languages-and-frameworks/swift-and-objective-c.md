@@ -29,7 +29,7 @@ Snyk Open Source supports the following frameworks:
 
 1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/)
 2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-3. [Set the default Organization for all Snyk tests](../snyk-code/using-snyk-code-from-the-cli/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
+3. [Set the default Organization for all Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
 
 #### Code analysis
 
@@ -42,8 +42,8 @@ snyk code test
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
 * [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../snyk-code/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
+* [Exclude directories and files from the Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
 * [Exporting the test results to a JSON or SARIF file](../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md)
 
 #### Open source and licensing

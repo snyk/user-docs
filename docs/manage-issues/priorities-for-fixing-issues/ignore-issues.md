@@ -151,7 +151,7 @@ When scanning your IaC configuration files using `snyk iac test`, you can ignore
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 
-For more information, see [IaC ignores using the .snyk policy file](../../scan-infrastructure/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
+For more information, see [IaC ignores using the .snyk policy file](../../scan-infrastructure/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md).
 
 ## Configure ignore settings
 

@@ -12,7 +12,7 @@ Cloud scans for AWS, Azure, and Google Cloud are generally available to Snyk IaC
 {% endhint %}
 
 {% hint style="info" %}
-This page explains using IaC+ and cloud scans in the Snyk Web UI. For information about using IaC+ with the Snyk CLI, see [Test your IaC files with Snyk CLI](../snyk-iac+/test-your-iac-files-with-the-snyk-cli.md).
+This page explains using IaC+ and cloud scans in the Snyk Web UI. For information about using IaC+ with the Snyk CLI, see [Test your IaC files with Snyk CLI](broken-reference).
 {% endhint %}
 
 Use IaC+ to find, view, and fix issues in cloud configuration files for Terraform, Kubernetes (except Helm, coming soon), AWS CloudFormation, and Azure Resource Manager (ARM) in your Git repositories.

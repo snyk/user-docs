@@ -129,4 +129,4 @@ docker run --rm -v $(pwd):/app snyk/snyk-iac-rules template -r {rule_name}
 ## More information about the SDK
 
 * [​Getting started with the SDK​](../../../scan-infrastructure/custom-rules/writing-rules-using-the-sdk/)
-* ​[SDK reference​](../../../scan-infrastructure/snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
+* ​[SDK reference​](sdk-reference.md)

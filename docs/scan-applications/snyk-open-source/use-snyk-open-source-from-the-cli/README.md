@@ -11,7 +11,7 @@ To test your Project for known vulnerabilities:
 * Navigate to the folder containing your Project (`cd ~/projects/myproj/`)
 * Run `$ snyk test`.
 
-The `snyk test` command identifies all the local dependencies and queries the Snyk service for known vulnerabilities. `snyk test` displays the issues found along with additional information. For information about the snyk test results, see [Review the Snyk Open Source CLI results](review-the-snyk-open-source-cli-results.md).
+The `snyk test` command identifies all the local dependencies and queries the Snyk service for known vulnerabilities. `snyk test` displays the issues found along with additional information. For information about the snyk test results, see [Review the Snyk Open Source CLI results](../../../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/review-the-snyk-open-source-cli-results.md).
 
 {% hint style="info" %}
 For Node.js, Ruby, and Java Projects, `snyk test` also suggests fix steps.
@@ -47,6 +47,6 @@ The way Snyk analyzes the file and builds the tree varies depending on the follo
 * The [language and package manager](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md) you use, as determined by the manifest file type
 * The method of scanning, using the [Snyk CLI](../../../snyk-cli/), or importing a Project using a [Git repository integration](../../../integrations/git-repository-scm-integrations/)
 
-For tips on running `snyk test` with commonly used options, see [Use options to customize the snyk test command](use-options-to-customize-the-snyk-test-command.md). For more information about supported languages, see [Open Source language and package manager support](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
+For tips on running `snyk test` with commonly used options, see [Use options to customize the snyk test command](../../../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/use-options-to-customize-the-snyk-test-command.md). For more information about supported languages, see [Open Source language and package manager support](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
 
 See [Open Source language and package manager support](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md) for more information concerning supported languages.
