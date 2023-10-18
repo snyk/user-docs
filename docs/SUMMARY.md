@@ -485,7 +485,7 @@
       * [Explore example Custom Rules](scan-cloud-configurations/snyk-iac+/build-your-own-iac+-to-cloud-custom-rules/explore-example-custom-rules.md)
   * [IaC+ code to cloud capabilities](scan-infrastructure/snyk-iac+/README.md)
     * [Add cloud context to your IaC tests](scan-infrastructure/snyk-iac+/add-cloud-context-to-your-iac-tests.md)
-    * [Fix cloud issues in IaC](scan-infrastructure/snyk-iac+/fix-cloud-issues-in-integrated-iac.md)
+    * [Fix cloud issues in IaC](scan-infrastructure/snyk-iac+/fix-cloud-issues-in-iac.md)
     * [Detect drift and manually created resources](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/README.md)
       * [Get started with Snyk IaC Describe on AWS](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/get-started-with-snyk-iac-describe-on-aws.md)
       * [Configure cloud providers](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/README.md)

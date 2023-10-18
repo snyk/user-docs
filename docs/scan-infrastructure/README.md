@@ -28,7 +28,7 @@ IaC+ is built on a new engine and ruleset that also powers Snyk IaC’s cloud sc
 
 IaC+ also adds support for “code to cloud” use cases that work with Snyk IaC’s ability to onboard, scan, and test deployed cloud environments:
 
-* [Fix Cloud issues](snyk-iac+/fix-cloud-issues-in-integrated-iac.md) directly in the IaC source code that was used to deploy the misconfigured cloud resources by linking a cloud issue to the underlying IaC template with an SCM source code link.
+* [Fix Cloud issues](snyk-iac+/fix-cloud-issues-in-iac.md) directly in the IaC source code that was used to deploy the misconfigured cloud resources by linking a cloud issue to the underlying IaC template with an SCM source code link.
 * Suppress false positives in IaC tests by applying [context from deployed infrastructure](snyk-iac+/add-cloud-context-to-your-iac-tests.md).
 * For Terraform - the same custom rule applies across the entire SDLC for all workflows (IaC to cloud).
 * View an inventory of IaC and cloud resources generated from your IaC files via the [resources API](https://apidocs.snyk.io/?version=2023-09-20%7Ebeta#get-/orgs/-org\_id-/cloud/resources).

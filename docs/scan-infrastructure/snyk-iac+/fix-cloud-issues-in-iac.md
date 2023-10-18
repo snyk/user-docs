@@ -52,8 +52,8 @@ Configure a CI/CD script to:
 
 Snyk offers sample CI/CD scripts for your reference in the sections that follow.
 
-* [GitHub Actions](fix-cloud-issues-in-integrated-iac.md#github-actions-example)
-* [CircleCI](fix-cloud-issues-in-integrated-iac.md#circleci-example)
+* [GitHub Actions](fix-cloud-issues-in-iac.md#github-actions-example)
+* [CircleCI](fix-cloud-issues-in-iac.md#circleci-example)
 
 #### GitHub Actions example
 
@@ -153,7 +153,7 @@ When a mapping artifact is created or updated, Snyk executes a mapping run by an
 
 Wait a few minutes so that Snyk can finish the cloud environment scan, complete the mapping run, and update resource mappings.
 
-Navigate to the [cloud issues page](../introduction-to-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), and set the h**as\_iac\_mappings** filter to `true`, either in the search bar or by selecting the appropriate filter. This will display cloud issues with resources that are mapped to IaC resources, for supported resource types.
+Navigate to the [cloud issues page](../introduction-to-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md), and set the **has\_iac\_mappings** filter to `true`, either in the search bar or by selecting the appropriate filter. This will display cloud issues with resources that are mapped to IaC resources, for supported resource types.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-20 at 8.26.36 PM.png" alt="Use the has_iac_mappings filter"><figcaption><p>Use the <strong>has_iac_mappings</strong> filter</p></figcaption></figure>
 
