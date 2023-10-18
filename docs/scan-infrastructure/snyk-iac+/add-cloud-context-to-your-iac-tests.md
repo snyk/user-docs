@@ -47,7 +47,7 @@ Snyk IaC can apply cloud context and suppress issues in your IaC test results by
 
 ## Bringing context from Snyk <a href="#bringing-context-from-a-snyk-cloud-scan" id="bringing-context-from-a-snyk-cloud-scan"></a>
 
-If you have a [Snyk cloud environment](../introduction-to-iac+/key-concepts-for-iac+-and-cloud.md#environments), you can leverage what Snyk already knows about your cloud provider account to apply cloud context and reduce false positives in your IaC tests.
+If you have a [Snyk cloud environment](../introduction-to-iac+/key-concepts-in-iac+.md#environments), you can leverage what Snyk already knows about your cloud provider account to apply cloud context and reduce false positives in your IaC tests.
 
 Use the `--snyk-cloud-environment=<ENVIRONMENT_ID>` option with [`snyk iac test`](../../snyk-cli/commands/iac-test.md) to tell Snyk which cloud environment to use as context for your IaC test.
 

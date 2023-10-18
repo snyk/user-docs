@@ -1,6 +1,6 @@
 # Key concepts for IaC+ and cloud
 
-IaC+ and cloud scans have a number of unique concepts that are different from Snyk core concepts, such as [Environments](key-concepts-for-iac+-and-cloud.md#environments) and [Resources](key-concepts-for-iac+-and-cloud.md#resources).
+IaC+ and cloud scans have a number of unique concepts that are different from Snyk core concepts, such as [Environments](key-concepts-in-iac+.md#environments) and [Resources](key-concepts-in-iac+.md#resources).
 
 ## Environments
 
@@ -9,7 +9,7 @@ A Snyk **environment** is an organizing concept that equates to the following:
 * For IaC+ environments: an SCM repository, CLI test report, or Terraform Cloud/Enterprise run task report
 * For cloud environments: an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../snyk-admin/introduction-to-snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-for-iac+-and-cloud.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
+Unlike a Snyk [Project](../../snyk-admin/introduction-to-snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-in-iac+.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
 
 A Snyk environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 
@@ -65,7 +65,7 @@ A **compliance control** is a specific recommendation or guideline from a compli
 
 ## Compliance mapping
 
-Snyk “maps” security [rules](key-concepts-for-iac+-and-cloud.md#rules) to compliance controls, which means each rule is associated with one or more controls and each control is associated with one or more rules.
+Snyk “maps” security [rules](key-concepts-in-iac+.md#rules) to compliance controls, which means each rule is associated with one or more controls and each control is associated with one or more rules.
 
 For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings’” and it maps to the security rule [SNYK-CC-00195](https://security.snyk.io/rules/cloud/SNYK-CC-00195), which is “S3 bucket does not have all block public access options enabled.”
 
