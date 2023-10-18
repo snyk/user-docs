@@ -39,7 +39,7 @@ When `snyk test` runs, it tries to autodetect your Project type by looking for a
 * go.mod
 
 {% hint style="info" %}
-&#x20;To analyze multiple manifest files, see [Scan multiple manifest files](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/5224/scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/use-options-to-customize-the-snyk-test-command#scan-multiple-manifest-files).
+&#x20;To analyze multiple manifest files, see [Scan multiple manifest files](../../../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/use-options-to-customize-the-snyk-test-command.md#scan-multiple-manifest-files).
 {% endhint %}
 
 The way Snyk analyzes the file and builds the tree varies depending on the following:
