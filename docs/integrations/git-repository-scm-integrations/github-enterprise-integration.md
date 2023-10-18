@@ -46,6 +46,10 @@ If you are using fine-grained personal access tokens, the following repository p
 * `Pull requests: Read and write`
 * `Webhooks: Read and write`
 
+#### Why does Snyk require fine-grained access tokens to have `pull request: read/write` and `content: read/write` permissions? Does this mean Snyk can write code to our repos?
+
+Snyk uses PRs to tell GitHub Enterprise that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` permission. A separate call is then made to create the fix PR, which requires the `pull request: write` permission. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
+
 {% hint style="warning" %}
 The Members Read Only Organization permission is required if you are using fine-grained personal access tokens.
 {% endhint %}
