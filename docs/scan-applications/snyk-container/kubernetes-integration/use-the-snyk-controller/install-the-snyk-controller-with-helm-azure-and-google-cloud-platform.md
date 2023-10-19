@@ -108,7 +108,7 @@ When using the system-managed identity with the `AcrPull` role assigned, setting
 
 If you are an existing customer and are updating your Snyk Controller:
 
-1. Create a service account token. For more information, see [Prerequisites for installing the Snyk Controller](broken-reference). This token is stored in the `snyk-monitor` secret.
+1. Create a service account token. For more information, see [Prerequisites for installing the Snyk Controller](./#prerequisites-for-installing-the-snyk-controller). This token is stored in the `snyk-monitor` secret.
 2. Delete your existing `snyk-monitor` secret:
 
 ```shell

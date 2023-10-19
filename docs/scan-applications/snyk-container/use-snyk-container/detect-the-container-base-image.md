@@ -39,6 +39,6 @@ You can see the base image vulnerabilities in your Project among the vulnerabili
 
 <figure><img src="../../../.gitbook/assets/base-image2.png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
 
-You can also filter only the base image vulnerabilities using the **Base image** option under the **Image Layer** filter. For more details, see [image layer information](broken-reference).
+You can also filter only the base image vulnerabilities using the **Base image** option under the **Image Layer** filter.
 
-For more details, see [Analysis and fixes for your images from the Snyk Web UI](analyze-and-fix-container-images.md).
+For more details, see [Analyze and fix container images](analyze-and-fix-container-images.md).

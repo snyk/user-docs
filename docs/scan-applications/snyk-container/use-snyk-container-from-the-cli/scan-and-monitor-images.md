@@ -39,7 +39,7 @@ Snyk Container also allows you to monitor images. This provides the following ad
 * Snyk interactively filters the results and explores the list of vulnerabilities in your web browser.
 * You can share results on Snyk with other members of your team.
 
-For more information, see [The importance of Container Monitoring](https://snyk.io/learn/container-security/container-monitoring/).
+To learn more about container security, see [The importance of Container Monitoring](https://snyk.io/learn/container-security/container-monitoring/).
 
 You can also access aggregate reports of vulnerabilities across all of your Projects.
 

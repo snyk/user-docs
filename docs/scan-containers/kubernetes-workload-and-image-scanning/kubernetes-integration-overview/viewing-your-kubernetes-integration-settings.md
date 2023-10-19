@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available in Enterprise plans. For more details, see [pricing plans](https://snyk.io/plans/).
+This feature is available with Enterprise plans. For more details, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 ## Set up the Kubernetes integration for your Organization
@@ -12,7 +12,7 @@ To integrate your Snyk Organization with Kubernetes:
 1. On the main page of the Snyk Web UI, navigate to **Integrations**.
 2. Select **Container orchestrators** and then select **Kubernetes.**
 3. Click **Connect**. On the page that appears, you can find the **Integration ID** which is created for the Kubernetes integration. The **Integration ID** is required during the Snyk Controller installation.
-4. Create a [Group or Organization service account token](../../../enterprise-setup/service-accounts/). This service account token is required during the Snyk Controller installation. For more information including the permissions required, see [Prerequisites for the Snyk Controller](broken-reference).
+4. Create a [Group or Organization service account token](../../../enterprise-setup/service-accounts/). This service account token is required during the Snyk Controller installation. For more information, including the permissions required, see [Prerequisites for installing the Snyk Controller](../../../scan-applications/snyk-container/kubernetes-integration/use-the-snyk-controller/#prerequisites-for-installing-the-snyk-controller).
 
 ## View and manage your Organization integration settings
 

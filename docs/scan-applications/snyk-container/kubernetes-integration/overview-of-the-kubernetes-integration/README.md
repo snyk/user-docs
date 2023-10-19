@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available in Enterprise plans. For more details, see [pricing plans](https://snyk.io/plans/).
+This feature is available with Enterprise plans. For more details, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk is able to integrate with Kubernetes, enabling you to import and scan your running workloads. This helps you identify vulnerabilities in their associated images and configurations that can make those workloads less secure. After workloads are imported, Snyk continues to monitor them and to identify additional security issues as new images are deployed and the workload configuration changes.
@@ -17,7 +17,7 @@ The Kubernetes integration follows the below process:&#x20;
    * [Install the Snyk Controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../use-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
    * [Install the Snyk Controller with OpenShift and OperatorHub](../use-the-snyk-controller/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
 3. The Controller communicates with the Kubernetes API to determine which workloads are running on the cluster (for example, the Deployment, ReplicationController, CronJob, and so on), find their associated images, and scan them for vulnerabilities directly on the cluster.
-4. On the Snyk side, collaborators select which workloads to import or which workloads can be imported automatically using annotations. See [Adding Kubernetes workloads for security scanning](../manually-import-kubernetes-workload-projects.md).
+4. On the Snyk side, collaborators select which workloads to import or which workloads can be imported automatically using annotations. See [Automatically import and delete Kubernetes workload Projects](../automatically-import-and-delete-kubernetes-workload-projects.md).
 5. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image as well as a summary of the configuration issues that have been identified with the workload.
 6. Snyk continuously monitors your imported workloads and reports new vulnerabilities it identifies whenever they affect your Projects.
 7. Based on your configurations, if vulnerabilities are found, Snyk notifies you through email or Slack so that you can take immediate action.

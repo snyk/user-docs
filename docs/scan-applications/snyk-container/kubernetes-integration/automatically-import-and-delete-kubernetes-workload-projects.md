@@ -68,7 +68,7 @@ Both `package snyk` and the `workload_events` key are required by the Snyk Contr
 ### Use more than one Organization
 
 {% hint style="info" %}
-This feature is only available if you are on an Enterprise Plan. For details, see [pricing plans](https://snyk.io/plans/?\_gl=1\*myjr92\*\_ga\*MTYzMjUyMDYwNC4xNjg4OTkzNjQ2\*\_ga\_X9SH3KP7B4\*MTY5NTYzNDE0NC4xNDAuMS4xNjk1NjQxNTIyLjAuMC4w).
+This feature is only available with an Enterprise Plan. For details, see [pricing plans](https://snyk.io/plans/?\_gl=1\*myjr92\*\_ga\*MTYzMjUyMDYwNC4xNjg4OTkzNjQ2\*\_ga\_X9SH3KP7B4\*MTY5NTYzNDE0NC4xNDAuMS4xNjk1NjQxNTIyLjAuMC4w).
 {% endhint %}
 
 `Orgs` is a list of Organization public IDs. You can add more than one Organization to use the auto-import and auto-delete capabilities. Your public ID is available on your Organization's settings page.

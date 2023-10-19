@@ -70,7 +70,7 @@ If the image has changed, you must reimport your image, so that Snyk can access 
 {% hint style="info" %}
 Recurring scans do not detect updates to the dependencies of your applications. The recurring scans test for new vulnerabilities using a snapshot of your application dependencies at the time the application was imported.\
 \
-To detect changes in your application, such as updated dependencies, you must re-import your container image in Snyk. To see an example of how to import your image, see [Getting started with Snyk Container](../../scan-applications/start-scanning/scan-container-images.md).
+To detect changes in your application, such as updated dependencies, you must re-import your container image in Snyk.
 {% endhint %}
 
 To learn more about container security, see [container security](https://snyk.io/learn/container-security/).
