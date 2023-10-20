@@ -21,11 +21,15 @@ The steps to import a Project are as follows:
 
 * Select **Projects** > **Add Project,** and select where to import the Project from, for example, select GitHub to import from your GitHub repository, or select **CLI** to use the [Snyk CLI](../../snyk-cli/) locally:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-07-26 at 10.06.54.png" alt="Add Project choices"><figcaption><p>Add Project choices</p></figcaption></figure>
+<div align="left">
 
-* Select the repositories to use, then choose **Add selected repositories** to import the selected repositories into your project:
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-20 at 15.23.55.png" alt="Add Project choices"><figcaption><p>Add Project choices</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4) (5) (1) (1).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
+</div>
+
+* Select the repositories to use, then click **Add selected repositories** to import the selected repositories into your Project:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-20 at 15.20.49.png" alt="Select GitHub repositories to import"><figcaption><p>Select GitHub repositories to import</p></figcaption></figure>
 
 {% hint style="info" %}
 Projects you select to import are shown with a ![Check mark in check box](<../../.gitbook/assets/image (7) (2).png>).\
