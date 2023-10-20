@@ -498,7 +498,6 @@
         * [Azure resources](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/supported-resources/azure-resources.md)
         * [GitHub resources](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/supported-resources/github-resources.md)
         * [Google resources](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/supported-resources/google-resources.md)
-      * [Detect and report infrastructure drift](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/detect-and-report-infrastructure-drift.md)
       * [IaC describe command examples](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-describe-command-examples.md)
       * [Filter rules](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/filter-rules.md)
       * [Ignore resources for drift](scan-cloud-configurations/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources.md)

@@ -96,5 +96,5 @@ This command helps to generate a `.snyk` policy file, adding all the detected dr
 For example, to ignore all the unmanaged resources at once, run the following command:
 
 ```
-$ snyk iac describe --json --only-unmanaged | snyk iac update-exclude-policy
+$ snyk iac describe --json | snyk iac update-exclude-policy
 ```

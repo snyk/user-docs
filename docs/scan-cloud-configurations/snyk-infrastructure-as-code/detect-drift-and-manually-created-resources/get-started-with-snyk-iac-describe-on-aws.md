@@ -2,20 +2,17 @@
 
 ## **Step 1: Configure AWS authentication for your environment**
 
-The [`snyk iac describe`](../../../snyk-cli/commands/iac-describe.md) command requires authentication to your cloud provider in order to run properly. It requires only the lowest read-only access rights possible. You can use use the built-in AWS "ReadOnlyAccess" IAM policy for that IAM user as a good default to get started.
+The [`snyk iac describe`](../../../snyk-cli/commands/iac-describe.md) command requires authentication to your cloud provider in order to run properly. It requires only the lowest read-only access rights possible. You can use use the built-in AWS `ReadOnlyAccess` IAM policy for an IAM user as a the default to get started.
 
-`snyk iac describe` can reuse standard authentication methods for AWS, like the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` [environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list). When those are set, the Snyk CLI will automatically pick them up to authenticate on AWS.
+`snyk iac describe` can reuse standard authentication methods for AWS, such as the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` [environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list). When those are set, the Snyk CLI will automatically pick them up to authenticate on AWS.
 
-Another option is to configure the [AWS profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) in `~/.aws/credentials` and use the `AWS_PROFILE` environment variable.
+Alternatively, you can configure the [AWS profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) in `~/.aws/credentials` and use the `AWS_PROFILE` environment variable.
 
-## **Step 2: Use `describe` command to report drift**
+## **Step 2: Use the `describe` command to report drift**
 
-### **Drift resource types**
+### **Unmanaged resources**
 
-Snyk IaC can report two types of drifted resources: managed and unmanaged.
-
-* **Unmanaged resources** - resources that are present on your cloud provider but not on your Terraform state. You probably want to import those resources into Terraform, or delete them from your IaaS account.
-* **Managed resources** - identified resources from your infrastructure that are listed both in your Terraform state and on your cloud provider.
+Snyk IaC can report drift of unmanaged resources, that is, resources present on your cloud provider but not on your Terraform state. You probably will want to import those resources into Terraform or delete them from your IaaS account.
 
 ### Select Terraform state files
 
@@ -23,9 +20,9 @@ To understand the drift that happens in your cloud environment, compare the stat
 
 The state file can be located locally or in an S3 bucket. Terraform Cloud is also available, but out of scope for this getting started document.
 
-The `--from` option helps Snyk to determine the path of the `.tfstate` file.
+The `--from` option helps Snyk determine the path of the `.tfstate` file.
 
-For a single local Terraform state file use the command:
+For a single local Terraform state file, use the command:
 
 `$ snyk iac describe --from="tfstate://path/to/terraform.tfstate" --only-unmanaged`
 
@@ -59,4 +56,4 @@ Use the output of the `describe` command and extract its results to [update the 
 
 To ignore a specific resource, you must exclude it manually by editing the `.snyk` file and adding the resource details to the `exclude` list. For more information, see [Ignore resources](ignore-resources.md).
 
-You are now ready to add `snyk iac describe` as a recurring cronjob to get alerts when a new resource is created or modified outside of your IaC deployment.
+You are now ready to add `snyk iac describe` as a recurring cronjob to get alerts when a new resource is created outside of your IaC deployment.
