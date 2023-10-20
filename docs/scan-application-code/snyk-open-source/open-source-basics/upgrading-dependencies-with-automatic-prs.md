@@ -6,13 +6,13 @@ After importing the chosen Git repositories to Snyk, Snyk continuously monitors 
 
 Snyk currently supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven-Central repositories via the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, and Bitbucket Cloud.
 
-You can also use this feature with the Snyk Broker. To use this feature, Snyk Broker must be upgraded to a minimum of v. 1.4.55.0 or later. For more information, see [Upgrade your Snyk Broker client](upgrade-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option).
+You can also use this feature with the Snyk Broker. To use this feature, Snyk Broker must be upgraded to a minimum of v. 1.4.55.0 or later. For more information, see [Upgrade your Snyk Broker client](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option).
 
 <figure><img src="../../../.gitbook/assets/Upgrade Broker.png" alt="Snyk Bot conversation card in GitHub."><figcaption><p>Snyk Bot conversation card in GitHub</p></figcaption></figure>
 
 ## Automatic dependency (upgrade) PRs
 
-1. The **Automatic dependency upgrade pull requests** option is enabled (in [the Integration Settings at the Organization level](upgrade-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or in [the Project Settings](../../../enterprise-setup/snyk-broker/upgrade-the-snyk-broker-client.md#upgrade-your-snyk-broker-client)).
+1. The **Automatic dependency upgrade pull requests** option is enabled (in [the Integration Settings at the Organization level](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or in [the Project Settings](../../../enterprise-setup/snyk-broker/upgrade-the-snyk-broker-client.md#upgrade-your-snyk-broker-client)).
 2. When you import repos to Snyk, Snyk scans the repos and provides you with the scan results. Snyk then continues to monitor your Open Source Projects, scanning them on a regular basis.
 3. Per scan, when new versions for your dependencies are identified, Snyk does the following:
    * Snyk creates automatic upgrade PRs.

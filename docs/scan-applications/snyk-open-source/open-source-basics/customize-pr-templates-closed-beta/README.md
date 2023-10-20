@@ -33,7 +33,7 @@ Here are the steps that you need to follow to enable the Configure Snyk Pull Req
 
 1. Log in to your Snyk Web UI account.
 2. Select **Settings**, then **Snyk Preview**.
-3. Enable the **Configure Snyk Pull Requests** feature. You can enable this feature at the Group level. See [Configure Automatic fix PRs](../configure-automatic-fix-prs.md) for more configuration details.
+3. Enable the **Configure Snyk Pull Requests** feature. You can enable this feature at the Group level. See [Configure Automatic fix PRs](../../../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md) for more configuration details.
 
 <figure><img src="../../../../.gitbook/assets/Enable config pull request.png" alt=""><figcaption><p>Enable the Configure Snyk Pull Requests feature</p></figcaption></figure>
 
