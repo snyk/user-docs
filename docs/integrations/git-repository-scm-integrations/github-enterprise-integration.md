@@ -23,7 +23,7 @@ If your repositories are not internet-accessible, you must use [Snyk Broker](../
 
 Follow these steps to connect Snyk with your GitHub repositories:
 
-1. Create a dedicated service account in GitHub Enterprise with write level or higher permissions for the repos you want to monitor with Snyk permissions.\
+1. Create a dedicated service account in GitHub Enterprise with a write level or higher scope for the repos you want to monitor with Snyk permissions.\
    See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required permissions scope for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
 2. [Generate a personal access token](github-enterprise-integration.md#generate-a-personal-access-token) for that account.
 3. [Authorize your personal access token and enable SSO](github-enterprise-integration.md#authorize-your-personal-access-token-and-enable-sso).
@@ -31,13 +31,13 @@ Follow these steps to connect Snyk with your GitHub repositories:
 
 ### How to generate a Personal Access Token
 
-Generate a personal access token for the account with the following permissions:
+Generate a classic personal access token for the account with the following access scopes:
 
 * `repo (all)`
 * `admin:read: org`
 * `admin:repo_hooks (read & write)`
 
-If you are using fine-grained personal access tokens, the following repository permissions are required:
+If you are using fine-grained personal access tokens, the following repository access scopes are required:
 
 * `Administration: Read-only`
 * `Commit Status: Read and write`
@@ -46,18 +46,22 @@ If you are using fine-grained personal access tokens, the following repository p
 * `Pull requests: Read and write`
 * `Webhooks: Read and write`
 
-#### Why does Snyk require fine-grained access tokens to have `pull request: read/write` and `content: read/write` permissions? Does this mean Snyk can write code to our repos?
+{% hint style="info" %}
+Personal access token creation in GitHub Enterprise is done under **User settings** > **Developer settings**.
+{% endhint %}
 
-Snyk uses PRs to tell GitHub Enterprise that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` permission. A separate call is then made to create the fix PR, which requires the `pull request: write` permission. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
+#### Why does Snyk require fine-grained access tokens to have `pull request: read/write` and `content: read/write` scopes? Does this mean Snyk can write code to our repos?
+
+Snyk uses PRs to tell GitHub Enterprise that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
 
 {% hint style="warning" %}
-The Members Read Only Organization permission is required if you are using fine-grained personal access tokens.
+The Members Read Only Organization scope is required if you use fine-grained personal access tokens.
 {% endhint %}
 
 ### **How to authorize** your Personal Access Token and enable SSO:
 
 1. In Snyk, navigate to the **Integrations** page and click the **GitHub Enterprise** card.
-2. Enter your GitHub Enterprise URL and the personal access token (PAT) for the service account you created, and **Save** your changes. When Snyk has successfully connected to the GitHub instance, the list of available repositories is displayed.
+2. Enter your GitHub Enterprise URL and the personal access token (PAT) for the service account you created, and **Save** your changes. When Snyk successfully connects to the GitHub instance, the list of available repositories displays.
 3. If your GitHub Enterprise organization enforces SAML/SSO, select **Configure SSO** next to the PAT in GitHub after the PAT has been created.\
    Occasionally, SSO is enforced in your GitHub Enterprise organizations after a PAT and Integration are configured. If this happens, any Projects that have already been imported show in Snyk, but retests, PR Checks, and so on, will not be performed. If this happens, check the **Configure SSO** settings to ensure the GitHub Enterprise Organization is **Authorized**.\
    On occasion, an Organization shows as **Authorized**, but the retests and PR checks do not work. If this happens, de-authorizing the Organization and then re-authorizing it may help.
