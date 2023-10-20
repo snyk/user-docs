@@ -1,42 +1,42 @@
 # Automated pull request creation for new fixes
 
-The following rules are applied to automatic PR creation for vulnerabilities:
+The following rules are applied to the creation of automatic PRs for vulnerabilities:
 
-* Pull requests are created based on the **Test & Automated Pull Request Frequency** (see screenshot below) setting
-* If a scan is manually run (you clicked **Retest now** for the project), the 24-hour window is marked as having been run and no automatic PR is created until the next automated scan runs
-* One pull request is created per project
-* If **either** the vulnerability itself is new and has a fix available **or** if the fix is new and is not ignored
-* For known vulnerabilities see [Automated pull request for known vulnerabilities (backlog)](fix-pull-requests-for-known-vulnerabilities-backlog.md)
+* Pull requests are created based on the **Test & Automated Pull Request Frequency** notification setting.
+* If you select **Retest now** for the Project, a scan runs manually. The 24-hour window is marked as having had the scan run. and no automatic PR is created until the next automated scan runs.
+* One pull request is created per Project.
+* If **either** the vulnerability is new and has a fix available **or** the fix is new and is not ignored, a Fix PR can be created.
+* For known vulnerabilities, see [Configure Automatic fix PRs](fix-pull-requests-for-known-vulnerabilities-backlog.md).
 
-![](../../../.gitbook/assets/os1.png)
+<figure><img src="../../../.gitbook/assets/os1.png" alt="Test &#x26; Automated Pull Request Frequency setting"><figcaption><p>Test &#x26; Automated Pull Request Frequency setting</p></figcaption></figure>
 
-To know when your last 24-hour window was kicked off, check the project page for **Snapshot taken by recurring test**--also check your email for **\[snyk] Vulnerability alert** for specific scan results:
+To determine when your last 24-hour window began, check the Project issue card for **Snapshot taken by recurring test** and check your email for **\[snyk] Vulnerability alert** for specific scan results:
 
-![](../../../.gitbook/assets/os2.png)
+<figure><img src="../../../.gitbook/assets/os2.png" alt="Snapshot taken bu recurring test 16 hours ago"><figcaption><p>Snapshot taken bu recurring test 16 hours ago</p></figcaption></figure>
 
 Pull requests for new vulnerabilities are enabled by default for new integrations.
 
-See the [Git repository SCM integrations](../../../integrations/git-repository-scm-integrations/) pages for details of supported integrations.
+See the [Git repository SCM integrations](../../../integrations/git-repository-scm-integrations/) pages for details about supported integrations.
 
 ## Enable or disable pull requests for an integration
 
-Enable at the global integration level:
+Follow these steps to enable pull requests at the global integration level:
 
 1. Navigate to settings ![](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.
-2. Select an SCM integration (for example, GitHub).
-3. Enable **New vulnerabilities**
+2. Select an SCM integration, for example, GitHub.
+3. Enable **New vulnerabilities** and **Save.**
 
-**Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.
+**Apply changes to all overridden projects** will update all of the individual Project settings for **Automatic fix PRs**. If a Project previously had its own settings for automatic fix full requests, clicking the button will override the Project setting with the global setting.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt="Configure Automatic fix PRs"><figcaption><p>Configure Automatic fix PRs</p></figcaption></figure>
 
-## Enable or disable pull requests for a single project
+## Enable or disable pull requests for a single Project
 
-Enabling/disabling at a project level will override this single project rather than inheriting it from the global integration setting.
+Enabling or disabling at a Project level will override the pull request setting for this single Project, so it will not inherit from the global integration setting.
 
-1. Under **Projects** select a project and select **Settings** (top right-hand corner).
-2. Select **GitHub integration**.
-3. Under the **Automatic fix pull requests** section:
+1. Under **Projects,** select a Project and select **Settings**.
+2. Select an SCM integration, for example, GitHub.
+3. In the **Automatic fix pull requests** section:
    * Select **Customize for only this project**
    * Enable **New vulnerabilities**
    * Select **Save changes**
