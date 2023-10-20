@@ -4,7 +4,7 @@
 This page applies to current IaC only.
 {% endhint %}
 
-In addition to scanning Kubernetes configuration files for misconfigurations and security issues, Snyk has support for templating Helm charts and scanning the resultant manifests. This templating functionality is only available when you import repositories via the Snyk UI. See the following sections for prerequisites and guidance on how to scan templated Helm charts using the Snyk CLI. After Helm charts are scanned, Snyk creates Projects for each template and dependency template, generates reports on any misconfigurations, and makes recommendations for fixing them.
+In addition to scanning Kubernetes configuration files for misconfigurations and security issues, Snyk has support for templating Helm charts and scanning the resultant manifests. This templating functionality is only available when you import repositories using the Snyk UI. See the following sections for prerequisites and guidance on how to scan templated Helm charts using the Snyk CLI. After Helm charts are scanned, Snyk creates Projects for each template and dependency template, generates reports on any misconfigurations, and makes recommendations for fixing them.
 
 ## Prerequisites for scanning and fixing issues in Helm Charts
 
@@ -41,7 +41,7 @@ helm template . --output-dir out
 snyk iac test out/
 ```
 
-You can pass standard Helm values flags, for example, `--se`t and  or both) to `helm template` in order to test a non-default configuration.
+You can pass standard Helm values flags (for example, `--set`, `--value`, or both) to `helm template` in order to test a non-default configuration.
 
 You can script this process and run it in a CLI pipeline or helm-template files into a repository that can be imported into Snyk as Projects.
 
