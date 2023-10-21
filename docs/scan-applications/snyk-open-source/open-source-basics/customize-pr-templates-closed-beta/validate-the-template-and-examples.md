@@ -1,6 +1,6 @@
 # Validate the template and examples
 
-## Example
+## Example of a Custom PR template
 
 The following template example shows how to use the variables inside a PR template.
 
@@ -22,7 +22,7 @@ description: |
   To find more details, see the Snyk project [{{ snyk_project_name }}]({{ snyk_project_url }})
 </code></pre>
 
-## Validate the template
+## Validate the Custom PR template
 
 You can validate the correctness of your template by following these steps:
 
