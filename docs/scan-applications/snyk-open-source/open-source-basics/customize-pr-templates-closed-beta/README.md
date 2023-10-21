@@ -91,7 +91,7 @@ If any customizable properties are missing from your template, Snyk reverts to t
 ## Use the Custom PR template
 
 {% hint style="info" %}
-Ensure that your account manager has turned on the feature fla and you enabled the feature in the Snyk Preview settings.&#x20;
+Ensure that your account manager has turned on the feature flag and you have enabled the feature in the Snyk Preview settings.&#x20;
 {% endhint %}
 
 You can choose to customize the PR template using an API request or by manually uploading the customized PR template as a YAML file to your Snyk Project.

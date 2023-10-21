@@ -1,12 +1,12 @@
 # Upgrade dependencies with automatic PRs
 
-After importing the chosen Git repositories to Snyk, Snyk continuously monitors these repositories by scanning them for vulnerability, license, and dependency health issues. In addition to providing fix advice, Snyk also creates pull requests (PRs) on your behalf (configured by you).
+After you import Git repositories, Snyk continuously monitors these repositories by scanning them for vulnerability, license, and dependency health issues. In addition to providing fix advice, Snyk creates pull requests (PRs) according to your configuration settings.
 
 ## Supported languages and SCMs
 
-Snyk currently supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven-Central repositories via the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, and Bitbucket Cloud.
+Snyk supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven-Central repositories with the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, and Bitbucket Cloud.
 
-You can also use this feature with the Snyk Broker. To use this feature, Snyk Broker must be upgraded to a minimum of v. 1.4.55.0 or later. For more information, see [Upgrade your Snyk Broker client](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option).
+You can also use this feature with Snyk Broker. To use this feature, you must upgrade Snyk Broker to v. 1.4.55.0 or later. For more information, see Upgrade your Snyk Broker client.
 
 <figure><img src="../../../.gitbook/assets/Upgrade Broker.png" alt="Snyk Bot conversation card in GitHub."><figcaption><p>Snyk Bot conversation card in GitHub</p></figcaption></figure>
 
