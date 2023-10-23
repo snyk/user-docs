@@ -91,7 +91,7 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/)
+1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account.md)
 2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 3. [Set the default Organization for all Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
 4. Install the relevant package manager before you use the Snyk CLI.

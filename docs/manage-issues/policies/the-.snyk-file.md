@@ -89,7 +89,7 @@ If **Admin users only** is enabled, the ignore rules in the database are used, u
 
 Follow these steps to set these ignore preferences for use by the Snyk Web UI and API:
 
-1. Log in to your [Snyk account](../../getting-started/quickstart/create-a-snyk-account/).
+1. Log in to your [Snyk account](../../getting-started/quickstart/create-a-snyk-account.md).
 2. Select **Settings**, then **General**.
 3. Select an option as follows:
    * **Admin users only** - only admins can customize the ignore settings.

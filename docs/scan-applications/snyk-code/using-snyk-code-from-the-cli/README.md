@@ -7,7 +7,7 @@ The [Snyk Command Line Interface](../../../snyk-cli/) (CLI) enables you to bring
 Before using the Snyk CLI for testing your source code with Snyk Code, verify you have the following prerequisites:
 
 * A Snyk account.\
-  For more information, see [Create a Snyk account](../../../getting-started/quickstart/create-a-snyk-account/).
+  For more information, see [Create a Snyk account](../../../getting-started/quickstart/create-a-snyk-account.md).
 * Repositories with code in a supported language and framework.\
   For more information, see [Snyk Code - Supported languages and frameworks](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
 * The **Snyk Code** option [enabled in your Snyk Org settings](../../start-scanning/scan-code/enable-the-snyk-code-option.md).

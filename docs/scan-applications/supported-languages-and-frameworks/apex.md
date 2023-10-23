@@ -16,7 +16,7 @@ Interfile is currently not supported. The data flow is monitored within a single
 
 #### Prerequisites
 
-* [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/)
+* [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account.md)
 * [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 * [Set the default Organization for all Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md) (code analysis)
 

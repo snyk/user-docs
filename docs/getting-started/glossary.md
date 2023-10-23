@@ -33,11 +33,11 @@ Command Line Interface. See [Snyk CLI](glossary.md#snyk-cli).
 ### Cloud Native Application Security
 
 Implementing security throughout the CI/CD pipeline, automating security embedding in microservices and maximizing repetition to reduce the introduction of vulnerabilities. Snyk provides a comprehensive [CNAS platform](https://snyk.io/product/cloud-native-application-security/).\
-See our article about [Cloud native security guide for building secure applications](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/).
+See the article about [Cloud native security guide for building secure applications](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/).
 
 ### Container
 
-Containers allow you to package applications and their dependencies together, to be deployed as a single runnable unit. A container is an abstraction provided by the operating system kernel, that allows a process to be isolated from other processes running on the system. Also see [Snyk Container.](glossary.md#snyk-container)
+Containers allow you to package applications and their dependencies together, to be deployed as a single runnable unit. A container is an abstraction provided by the operating system kernel, that allows a process to be isolated from other processes running on the system. See also [Snyk Container.](glossary.md#snyk-container)
 
 ### Container engine
 
@@ -67,7 +67,7 @@ Common Weakness Enumeration, an online glossary that categorizes software and ha
 
 ### DAST
 
-Dynamic Application Security Testing. An application that you can point at a site or service; it then typically profiles the site or service, then examines the output and behaviour to uncover security vulnerabilities. Also see [SAST](glossary.md#sast).
+Dynamic Application Security Testing. An application that you can point at a site or service; it then typically profiles the site or service, then examines the output and behaviour to uncover security vulnerabilities. See also [SAST](glossary.md#sast).
 
 ### Dependency
 
@@ -78,7 +78,7 @@ When your application uses another package, this other package becomes a depende
 
 ### Dependency tree
 
-(Also known as Dependency path) A hierarchical graph showing the dependencies of a software application. This includes both direct and indirect dependencies, and so may be many levels deep.
+Also known as Dependency path. A hierarchical graph showing the dependencies of a software application. This includes both direct and indirect dependencies, and so may be many levels deep.
 
 ### DevOps
 

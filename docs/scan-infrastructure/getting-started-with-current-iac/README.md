@@ -4,7 +4,7 @@
 The information on this page applies to current IaC. If you are using IaC+, see [Getting started with IaC+](../introduction-to-iac+/).
 {% endhint %}
 
-You can use Snyk IaC (Infrastructure as Code) in the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../snyk-cli-for-iac/).
+You can use Snyk IaC (Infrastructure as Code) in the [Snyk Web UI](broken-reference) to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../snyk-cli-for-iac/).
 
 On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-terraform-files/), [AWS CloudFormation](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-cloudformation-files/), [Kubernetes](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](../../scan-cloud-configurations/snyk-infrastructure-as-code/scan-arm-configuration-files.md). These steps are specific to the current IaC. See also [Getting started with IaC+](../introduction-to-iac+/).
 
@@ -12,7 +12,7 @@ On this page, you will find steps to find, view, and fix issues in configuration
 
 Before using Snyk IaC, be sure you have the prerequisites as follows:
 
-* A Snyk account. For details, see [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account/).
+* A Snyk account. For details, see [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account.md).
 * An existing Terraform, CloudFormation, Kubernetes, or ARM environment to work in.
 * A Git repository you have integrated with Snyk in the same way as for other Snyk products. For details, see [Git repository (SCM)](../../integrations/git-repository-scm-integrations/).
 

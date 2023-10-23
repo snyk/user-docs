@@ -26,7 +26,7 @@ Snyk provides limited free tests per month for each type of scan, Snyk Open Sour
 
 ## Create or log into your Snyk account
 
-You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-a-snyk-account/) to try out a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Logging in to an existing account](../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md).
+You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-a-snyk-account.md) to try out a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Logging in to an existing account](broken-reference).
 
 ## **Enable Snyk Code**
 
