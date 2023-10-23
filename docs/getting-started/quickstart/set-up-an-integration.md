@@ -5,7 +5,7 @@
 You have [created a Snyk account](create-a-snyk-account.md). You now need to tell Snyk where to scan.
 {% endhint %}
 
-You must give Snyk access to your environment, to allow Snyk to scan that environment. The type of integration you need depends on what systems you use, and what you want to scan. See [Integrate with Snyk](../../integrations/) for a full list of integrations available.
+You must give Snyk access to your environment, to allow Snyk to scan that environment. The type of integration you need depends on what systems you use, and what you want to scan. See [Integrate with Snyk](../../integrations/) for information about aviaable integrators.
 
 You can set up this integration:
 
@@ -14,31 +14,31 @@ You can set up this integration:
 
 ## Guided process (after signup)
 
-Immediately after you [Create a Snyk account](create-a-snyk-account.md), you will see some optional getting started walkthrough prompts. You can choose to provide some information to help Snyk guide your experience, and then follow the prompts to integrate your code repository for a seamless experience.
+Immediately after you [Create a Snyk account](create-a-snyk-account.md), you will see optional getting started walkthrough prompts. You can choose to provide some information to help Snyk guide your experience, and then follow the prompts to integrate your code repository for a seamless experience.
 
-An **example** follows.
+An example follows.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 9.36.53 AM.png" alt="Choose integration method"><figcaption><p>Choose integration method</p></figcaption></figure>
 
-If you select **GitHub**, fill in the details as prompted.
+Fill in the details for the integration you select. If you select **GitHub**, fill in the details as shown.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 9.37.34 AM.png" alt="Set access permissions"><figcaption><p>Set access permissions</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 9.39.45 AM.png" alt="Configure automation settings &#x26; authenticate"><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
 
-Finally, you can [Import a Project](import-a-project.md) to scan:
+To finish, [Import a Project](import-a-project.md) to scan:
 
 <figure><img src="../../.gitbook/assets/image (248) (1).png" alt="Add your first project"><figcaption><p>Add your first project</p></figcaption></figure>
 
 Alternatively, if you want to scan your code without authenticating to your source code repository, you can select the CLI integration. This allows you to run scans from your local machine and upload results to your Organization in Snyk.
 
-Though GitHub, Bitbucket Cloud, and CLI are shown with dedicated tiles, many other integrations are available through the **View all integrations** link.
+Though GitHub, Bitbucket Cloud, and the CLI are shown with dedicated tiles, many other integrations are available through the **View all integrations** link.
 
 ## Manual process (any time)
 
 You can add an integration to Snyk manually at any point. For more information, see [Integrate with Snyk](../../integrations/).
 
-**Example: Git repository integration**
+An example follows showing a Git repository integration
 
 To scan code from a Git-based source code repository, you must integrate Snyk with a [Git repository integration](../../integrations/git-repository-scm-integrations/). Snyk has pre-built integrations for GitHub, GitHub Enterprise, Bitbucket Cloud, and other repositories.
 
@@ -58,7 +58,8 @@ To connect Snyk with your GitHub repositories:
 
 1. Choose whether to give Snyk access to both public and private repositories or only to public repositories.\
    The GitHub authorization screen opens.
-2. In the GitHub authorization screen, click **Authorize Snyk** to provide Snyk with access to your repositories - enter your account credentials and save your details when prompted.
+2. In the GitHub authorization screen, click **Authorize Snyk** to provide Snyk with access to your repositories.
+3. Enter your account credentials and save your details when prompted.
 
 See [Git repository integrations (SCMs)](../../integrations/git-repository-scm-integrations/) for more information.
 
