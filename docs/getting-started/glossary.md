@@ -170,7 +170,7 @@ A file containing metadata about other files in a package.
 
 ### Monitor
 
-A run of the **snyk monitor** command that tests the project and uploads results to Snyk. See [Monitor](../snyk-cli/commands/monitor.md).
+A run of the `snyk monitor` command that tests the Project and uploads results to Snyk. See the CLI help for [Monitor](../snyk-cli/commands/monitor.md).
 
 ## O
 

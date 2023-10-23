@@ -6,12 +6,13 @@ Follow these steps to add a Snyk pipe:
 2. Use the Bitbucket pipeline editor to update the `.yml` file configuration, select the correct language, and use the Bitbucket Pipes build directory when adding the Snyk pipe.
 3. Paste the Snyk pipe into the Bitbucket editor interface after all build steps. Build steps are commands such as these: `npm install / composer install / bundle install / dotnet restore / docker build`
 4. Ensure you paste the pipe **before** a deployment step, such as `npm publish` or `docker push`.
-5. Configure the **LANGUAGE**, choose whether to fail the pipeline on vulnerabilities found with **DONT\_BREAK\_BUILD** (you can also use **SEVERITY\_THRESHOLD**), and consider enabling **MONITOR** . For more information see [Snyk pipe parameters and values](snyk-pipe-parameters-and-values-bitbucket-cloud.md).
-6. Once Snyk is included in your pipeline commands, it looks for the manifest files in that repository (`package.json`, `package-lock.json`) and performs the scan.
+5. Configure the mandatory variables **SNYK\_TOKEN** and **LANGUAGE.**
+6. (Optional) Choose whether to fail the pipeline on vulnerabilities found with **DONT\_BREAK\_BUILD** and **SEVERITY\_THRESHOLD** if it is used, and consider enabling **MONITOR** . For more information, see [Snyk pipe parameters and values](snyk-pipe-parameters-and-values-bitbucket-cloud.md).
+7. After Snyk is included in your pipeline commands, it looks for the manifest files in that repository, for example,`package.json`, `package-lock.json` , and performs the scan.
 
 Results appear in the Bitbucket Pipelines output interface, similar to the following:
 
-![Bitbucket Pipelines output interface](../../../.gitbook/assets/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
+![Bitbucket Pipelines output interface - here the pipeline fails due to Snyk finding vulnerabilities](<../../../.gitbook/assets/Screenshot 2023-10-03 at 13.08.45.png>)
 
 {% hint style="info" %}
 **Note:** If the build fails, even if **MONITOR** is set to **True**, Snyk does not continue to the monitor stage because no projects are deployed until the build succeeds. To enable monitoring on Snyk.io of projects with vulnerabilities, set **DONT\_BREAK\_BUILD** to **True**. You can use **SEVERITY\_THRESHOLD** to tell the pipe the severity threshold for failing the pipe at the scanning stage. For more information see [Snyk pipe parameters and values](snyk-pipe-parameters-and-values-bitbucket-cloud.md).

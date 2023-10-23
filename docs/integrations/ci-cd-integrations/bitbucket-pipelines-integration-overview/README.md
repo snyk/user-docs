@@ -26,5 +26,5 @@ For setup and use details, see the following pages:
 * [Configure your Bitbucket Pipelines integration](configure-your-bitbucket-pipelines-integration.md)
 * [How to add a Snyk pipe](how-to-add-a-snyk-pipe.md)
 * [Snyk pipe parameters and values (Bitbucket Cloud)](snyk-pipe-parameters-and-values-bitbucket-cloud.md)
-* [Example of a Snyk pipe for Docker](example-of-a-snyk-pipe-for-docker.md)
-* [Example of a Snyk pipe for npm](example-of-a-snyk-pipe-for-npm.md)
+* [Example of a Snyk pipe for Docker](broken-reference)
+* [Example of a Snyk pipe for npm](broken-reference)
