@@ -8,10 +8,6 @@ You might encounter false positives or false negatives for partially supported f
 
 ### Code analysis
 
-{% hint style="info" %}
-Snyk Code for Scala is currently in Open Beta, and you can [enable it through Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
-{% endhint %}
-
 Snyk Code supports the following frameworks:
 
 * Play Framework
