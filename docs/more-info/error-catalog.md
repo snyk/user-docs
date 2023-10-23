@@ -17,7 +17,7 @@ The request rate limit has been exceeded. Wait a few minutes, then try again.
 
 #### Server error response
 
-The server doesn’t recognize the request method, or it cannot fulfill it. Review the request and try again.
+The server doesn't recognize the request method, or it cannot fulfill it. Review the request and try again.
 
 **HTTP Status:** [501](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501)
 
@@ -81,7 +81,7 @@ The server cannot process the request due to invalid or corrupt data. Review the
 
 #### Forbidden
 
-Access to the requested resource is forbidden.
+Access to the requested resource is forbidden. Review the request, then try again.
 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
@@ -99,7 +99,7 @@ The server cannot provide a response that matches the provided accept headers. R
 
 #### Not found
 
-The server cannot find the requested resource.
+The server cannot find the requested resource. Review the request, then try again.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
@@ -117,7 +117,7 @@ The target endpoint does not support your request method. Review the request, th
 
 #### Request entity too large
 
-The request entity exceeds server limitations.
+The request entity exceeds server limitations. Reduce the size of the request entity, then try again.
 
 **HTTP Status:** [413](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
 
@@ -126,18 +126,18 @@ The request entity exceeds server limitations.
 
 #### Unauthorized
 
-The request lacks authentication credentials for the requested resource.
+The request lacks authentication credentials for the requested resource. Ensure you are sending valid credentials, then try again.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 **Help Links:**
-- [https://docs.snyk.io/snyk-api-info/authentication-for-api ](https://docs.snyk.io/snyk-api-info/authentication-for-api )
+- [https://docs.snyk.io/snyk-api-info/authentication-for-api](https://docs.snyk.io/snyk-api-info/authentication-for-api)
 
 ### [SNYK-OPENAPI-0008](#snyk-openapi-0008)
 
 #### Unsupported media type
 
-The media format of the request is not supported.
+The media format of the request is not supported. Change media format, then try again.
 
 **HTTP Status:** [415](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)
 
@@ -398,7 +398,7 @@ The targeted property could not be resolved with a valid value.
 
 The targeted property could not be resolved with a valid version.
 
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
 ### [SNYK-OS-MAVEN-0004](#snyk-os-maven-0004)
@@ -416,7 +416,7 @@ There is circular dependency among properties in the Maven project's configurati
 
 There is an error parsing the XML file. This could be referring to either pom.xml or maven-metadata.xml.
 
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
 ### [SNYK-OS-MAVEN-0006](#snyk-os-maven-0006)
@@ -513,7 +513,7 @@ The source used is not supported by fetcher. The supported sources are: github, 
 
 #### Timeout when processing the dependency tree
 
-There was an timeout when processing the dependecy tree.
+There was an timeout when processing the dependency tree.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -677,7 +677,7 @@ Too many manifest files were provided in the request body.
 
 #### Failed to apply dependency updates
 
-An error occured while updating dependencies.
+An error occurred while updating dependencies.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -708,7 +708,7 @@ The build environment for the provided context could not be found. Please ensure
 
 #### Unsupported Ecosystem
 
-The language or package manager is not supported.
+The language or package manager is not supported. Please refer to the supported package managers in the links.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -795,9 +795,9 @@ The body of the request is empty. Review the request, then try again.
 
 #### Invalid dependency graph
 
-The request cannot be processed due to an internal error. Review the request, then try again.
+The supplied dependency graph was not valid. Review the request, then try again.
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
 ---
@@ -818,7 +818,7 @@ The upstream Maven search service is not available.
 
 #### SHA1 not found
 
-Unable to find the coordinates for the provided SHA1.
+Unable to find the coordinates for the provided SHA1. Please verify the data you are sending and try again.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
@@ -880,7 +880,7 @@ The package type is not supported. Check the List issues for a package in Snyk A
 
 #### Purl components required
 
-A list of components of the purl spec is required. The purl did not specify all the required components.
+A list of components of the purl spec is required. The purl did not specify all the required components. Please add the missing components to the purl and try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -1008,7 +1008,7 @@ The given Package URL does not have a required namespace.
 
 #### Unsupported vendor
 
-The given Package URL does not contain a supported vendor.
+The given Package URL does not contain a supported vendor. Please use one of the listed vendors and try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -1215,4 +1215,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-17T13:01:26.876Z
+--- Generated at 2023-10-23T09:26:50.642Z
