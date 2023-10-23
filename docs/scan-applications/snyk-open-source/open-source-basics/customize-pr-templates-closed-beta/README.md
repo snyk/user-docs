@@ -69,7 +69,7 @@ description: |
 
 ```
 
-:link:The pipe operator preserves new line characters. Use greater than, `>` , to join all the lines by a space with a new line on the end. To use a colon, you can either use multiline operators, `|` or `>`, or enclose the line in double quotes:
+The pipe operator preserves new line characters. Use greater than, `>` , to join all the lines by a space with a new line on the end. To use a colon, you can either use multiline operators, `|` or `>`, or enclose the line in double quotes:
 
 ```yaml
 commitMessage: "snyk: this is a security pull request"
