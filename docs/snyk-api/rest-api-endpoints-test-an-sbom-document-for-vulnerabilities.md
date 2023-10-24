@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available to customers on [Snyk Enterprise](../enterprise-setup/getting-started-with-the-snyk-enterprise-plan.md) plans.
+This feature is available to customers on [Snyk Enterprise](broken-reference) plans.
 {% endhint %}
 
 {% hint style="warning" %}

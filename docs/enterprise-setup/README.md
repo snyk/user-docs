@@ -1,12 +1,10 @@
 # Enterprise setup
 
-These pages are provided to help you understand, plan, and roll out your Enterprise-level Snyk solution.
+The Enterprise Setup guide will focus on open-source and code analysis, helping to understand, plan, and roll out your Enterprise Snyk solution. Updates for container and infrastructure as code will come in planned near-term updates.
 
 ## Guides for key activities
 
-* [Getting started with the Snyk: Enterprise plan](getting-started-with-the-snyk-enterprise-plan.md)
-* [Upgrading to the Enterprise plan](upgrading-to-the-enterprise-plan.md)
-* [Preparing for implementation: Enterprise plan](preparing-for-implementation-of-the-enterprise-plan.md)
+* [Enterprise Setup Guide](./)
 
 ## How to authenticate and connect
 

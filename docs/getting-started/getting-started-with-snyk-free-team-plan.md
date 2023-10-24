@@ -78,4 +78,4 @@ A scan with [**Snyk iac test**](../scan-infrastructure/snyk-cli-for-iac/) return
 
 * When you are ready to start scanning more applications, read the [Preparing for implementation guide: Free / Team plan](preparing-for-implementation-free-team-plan.md).
 * To get specific recommendations for your tech stack, read the guide specific to your language.
-* If you decide you want to expand Snyk usage throughout your business, and involve more teams in Snyk, read the [Getting started with Snyk: Enterprise plan](../enterprise-setup/getting-started-with-the-snyk-enterprise-plan.md).
+* If you decide you want to expand Snyk usage throughout your business, and involve more teams in Snyk, read the [Getting started with Snyk: Enterprise plan](broken-reference).
