@@ -682,6 +682,15 @@ An error occurred while updating dependencies.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-PIP-0004](#snyk-os-pip-0004)
+
+#### No matching distribution found for one or more of the packages
+
+One or more of the packages require a different Python version.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001)
@@ -1215,4 +1224,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-23T13:30:53.607Z
+--- Generated at 2023-10-24T08:00:51.471Z
