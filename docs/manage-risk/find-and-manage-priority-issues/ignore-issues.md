@@ -110,14 +110,14 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../policies/the-.snyk-file.md) including the section about [.snyk files in monorepos](../policies/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
+For more information, see [The .snyk file](../../manage-issues/policies/the-.snyk-file.md) including the section about [.snyk files in monorepos](../../manage-issues/policies/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
 {% endhint %}
 
 ### Use policy actions to ignore issues
 
-You can set [Security policy](../policies/security-policies/)[Security policy actions](../policies/security-policies/security-policy-actions.md) to ignore all vulnerabilities that match the conditions specified in a policy rule.
+You can set [Security policy](../../manage-issues/policies/security-policies/)[Security policy actions](../../manage-issues/policies/security-policies/security-policy-actions.md) to ignore all vulnerabilities that match the conditions specified in a policy rule.
 
-For more information, see [Security policies](../policies/security-policies/).
+For more information, see [Security policies](../../manage-issues/policies/security-policies/).
 
 ## Ignore issues in Snyk Code
 
@@ -147,7 +147,7 @@ For more information, see [Exploring the vulnerability issues discovered by Snyk
 
 ## Ignore issues in Snyk IaC
 
-When scanning your IaC configuration files using `snyk iac test`, you can ignore issues that are not relevant to you by using [The .snyk file](../policies/the-.snyk-file.md).
+When scanning your IaC configuration files using `snyk iac test`, you can ignore issues that are not relevant to you by using [The .snyk file](../../manage-issues/policies/the-.snyk-file.md).
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 
@@ -169,4 +169,4 @@ Suppressing vulnerabilities carries a level of risk, so you can make this functi
 
 If you have access to the Snyk Reports feature, you can see an overview of how many issues in the Projects in your Organization are ignored, with an option to filter the issues so you can drill down into each one. If the issue was ignored in the Snyk Web UI, Snyk includes a credit so you can see who initiated it.
 
-For more information, see [Legacy reports](../reporting/legacy-reports/).
+For more information, see [Legacy reports](../../manage-issues/reporting/legacy-reports/).

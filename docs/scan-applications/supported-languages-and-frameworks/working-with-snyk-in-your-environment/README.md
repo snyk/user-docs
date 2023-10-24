@@ -107,7 +107,7 @@ With large organizations using hundreds of applications, a slower approach is re
 1. Typically, large organizations start with daily monitoring of applications via Git integration, only initially turning on PR checks for a few key applications.
 2. As developers become familiar with Snyk's capabilities, you can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
 3. Some customers use CI/CD to passively monitor and then turn on gating by using the `snyk [product] test` commands.
-4. If you onboard a large number of legacy applications, you can use [Priority Score](../../../manage-issues/priorities-for-fixing-issues/priority-score.md) (typically 700 as a starting place) or criteria like “Known exploit” or “Fix available” to define a starting point to engage developers to start fixing vulnerabilities on key applications.
+4. If you onboard a large number of legacy applications, you can use [Priority Score](../../../manage-risk/find-and-manage-priority-issues/priority-score.md) (typically 700 as a starting place) or criteria like “Known exploit” or “Fix available” to define a starting point to engage developers to start fixing vulnerabilities on key applications.
 
 ## Reporting
 

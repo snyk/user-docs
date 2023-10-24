@@ -6,13 +6,13 @@ Snyk has several features to help you manage application security risk.
 
 Scanning with Snyk finds security issues, including vulnerabilities, license problems, and misconfigurations. You can view the [Dependencies and licenses](../manage-issues/dependencies-and-licenses/) associated with your Projects.
 
-Each issue is assigned a [Priority Score](../manage-issues/priorities-for-fixing-issues/priority-score.md).&#x20;
+Each issue is assigned a [Priority Score](find-and-manage-priority-issues/priority-score.md).&#x20;
 
 Snyk [Policies](../manage-issues/policies/) help you define actions to take to address issues.
 
 Enterprise Analytics provides a view into the performance of the Application Security (AppSec) program of a company. Metrics are reported for the pillars: Exposure, Manage, Prevention, and Coverage. The breakdown of open issues over time is shown in these categories: Baseline, Preventable, Non-preventable, and Other new. Customers can find the most serious problems that they must resolve, address those, and look for opportunities to proactively improve in each pillar.
 
-&#x20;[Severity levels](../manage-issues/prioritizing-issues/severity-levels.md) and [Ignoring issues](../manage-issues/priorities-for-fixing-issues/ignore-issues.md) help you refine scans to find and report issues you need to fix. After you have found issues, you can use several features of Snyk to help you prioritize fixing issues. For details, see [Find and manage priority issues](../manage-issues/priorities-for-fixing-issues/).
+&#x20;[Severity levels](find-and-manage-priority-issues/severity-levels.md) and [Ignoring issues](find-and-manage-priority-issues/ignore-issues.md) help you refine scans to find and report issues you need to fix. After you have found issues, you can use several features of Snyk to help you prioritize fixing issues. For details, see [Find and manage priority issues](find-and-manage-priority-issues/).
 
 Use Snyk [Reporting](../manage-issues/reporting/) to track issues and their resolution.
 

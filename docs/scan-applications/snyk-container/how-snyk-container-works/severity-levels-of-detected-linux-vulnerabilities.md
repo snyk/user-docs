@@ -1,6 +1,6 @@
 # Severity levels of detected Linux vulnerabilities
 
-When determining the [severity level](../../../manage-issues/prioritizing-issues/severity-levels.md) of a Linux vulnerability (Low, Medium, High, Critical), Snyk Container considers multiple factors:
+When determining the [severity level](../../../manage-risk/find-and-manage-priority-issues/severity-levels.md) of a Linux vulnerability (Low, Medium, High, Critical), Snyk Container considers multiple factors:
 
 * Snyk’s internal analysis
 * An assessment of the severity provided by the Linux distribution maintainer’s security team
