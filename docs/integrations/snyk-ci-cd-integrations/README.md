@@ -14,3 +14,7 @@ For detailed information, refer to the pages for the integration you are using:
 * [TeamCity integration](../ci-cd-integrations/teamcity-integration-overview/)
 * [Terraform Cloud integration for IaC](../ci-cd-integrations/integrating-snyk-with-terraform-cloud/)
 * [Terraform Enterprise integration for IaC](../ci-cd-integrations/integrating-snyk-with-terraform-enterprise.md)
+
+For integration with GitLab pipelines integration, see this [pipeline configuration](https://github.com/snyk-labs/snyk-cicd-integration-examples/blob/master/GitLabCICD/gitlab-npm.yml).
+
+For additional examples of binary and npm integrations for CI/CD, see [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).
