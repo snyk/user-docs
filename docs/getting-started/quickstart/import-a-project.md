@@ -25,7 +25,8 @@ The steps to import a Project are as follows:
 
 </div>
 
-* Select the repositories to use; then click **Add selected repositories** to import the selected repositories into your Project:
+* Select the repositories to use; then click **Add selected repositories** to import the selected repositories into your Project.\
+  You can choose optional Settings for the Project you are importing: **Add custom file location** and **Exclude folders**, supported only for Snyk Open Source and Snyk Container. For details, see [Adding custom file locations and excluding folders](https://docs.snyk.io/integrations/git-repository-scm-integrations/snyk-azure-repositories-tfs-integration#adding-custom-file-locations-and-excluding-folders) in the documentation for Azure repositories integrations,
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-10-20 at 15.20.49.png" alt="Select GitHub repositories to import"><figcaption><p>Select GitHub repositories to import</p></figcaption></figure>
 
