@@ -65,6 +65,10 @@ In the Private channel, select **Channel settings - Integrations**, and then **A
 After you have done this, the channel is displayed on the **Settings** page for the integration.
 {% endhint %}
 
+{% hint style="warning" %}
+If you are a Slack Admin, you can manually add the Snyk for Slack app to a private channel. To do this, type **@Snyk for Slack** in the chosen channel to summon the setup bot.
+{% endhint %}
+
 ## Issue notifications
 
 After the Slack app has been configured, new issue notifications will be forwarded to the selected Slack channel according to the desired severity level threshold. \
