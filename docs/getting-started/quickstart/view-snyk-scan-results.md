@@ -9,7 +9,7 @@ You can now view the results of your scan on the Projects listing page and selec
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 15.24.15.png" alt="Projects listing page showing a new scan"><figcaption><p>Projects listing page showing a new scan</p></figcaption></figure>
 
-This shows the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). See [Severity levels](../../manage-risk/find-and-manage-priority-issues/severity-levels.md) for more details.
+This shows the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). See [Severity levels](../../manage-issues/prioritizing-issues/severity-levels.md) for more details.
 
 The scan results and available actions depend on the type of Project you scan:
 

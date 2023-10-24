@@ -1,6 +1,6 @@
 # Ignore issues
 
-You can ignore a vulnerability or license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores, you can display results only for issues you need to fix. For details, see [How to set ignores](ignore-issues.md#how-to-set-ignores).
+,You can ignore a vulnerability or license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores, you can display results only for issues you need to fix. For details, see [How to set ignores](ignore-issues.md#how-to-set-ignores).
 
 <div align="left">
 
@@ -61,7 +61,7 @@ You can suppress issues through the CLI by using the `snyk ignore` command, for 
 
 For more information, see the [`ignore`](../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md).
 
-When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given if one was provided. For example:
+When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given if one was provided. An example follows for an open-source vulnerability.
 
 ```
 'npm:moment:20170905':
@@ -69,6 +69,8 @@ When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path
 reason: The reason given
 expires: '2017-12-29T16:10:16.946Z'
 ```
+
+For more information, see [Use the .snyk file to ignore issues](ignore-issues.md#use-the-.snyk-file-to-ignore-issues).
 
 ### Scan from the CLI or CI/CD, ignore in the Web UI
 
@@ -110,7 +112,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../../manage-issues/policies/the-.snyk-file.md) including the section about [.snyk files in monorepos](../../manage-issues/policies/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
+For more information, see [The .snyk file](../../manage-issues/policies/the-.snyk-file.md), including the section about [.snyk files in monorepos](../../manage-issues/policies/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
 {% endhint %}
 
 ### Use policy actions to ignore issues
