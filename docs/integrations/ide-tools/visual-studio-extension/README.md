@@ -11,13 +11,13 @@ This single plugin provides a Java vulnerability scanner, a custom code vulnerab
 Snyk scans for the following types of issues:
 
 * [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both direct and indirect (transitive) open-source dependencies pulled into the Snyk Project.\
-  See also the [Snyk Open Source](../../../scan-application-code/snyk-open-source/) docs.
+  See also the [Snyk Open Source docs](https://docs.snyk.io/scan-applications/snyk-open-source).
 * [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities. See also the Snyk Code docs.\
-  See also the [Snyk Code](../../../scan-application-code/snyk-code/) docs.
+  See also the [Snyk Code docs](https://docs.snyk.io/scan-applications/snyk-code)_**.**_
 
 In using the Visual Studio Code extension, you have the advantage of relying on the [Snyk Vulnerability Database](https://security.snyk.io/). You also have available the [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine).
 
-This page explains installation of the Visual Studio extension. **After you complete the steps on this page**, you will continue by following the instructions in the other Visual studio extension docs, starting with [Visual Studio extension configuration](visual-studio-extension-configuration.md).
+This page explains installation of the Visual Studio extension. **After you complete the steps on this page**, you will continue by following the instructions in the other Visual studio extension docs, starting with _**Visual Studio extension configuration**_.
 
 The following are also available:
 
@@ -34,8 +34,8 @@ Supported versions of Visual Studio are 2015, 2017, 2019, and 2022 (version 17.0
 
 Supported languages and frameworks include C#, JavaScript, TypeScript, Java, Go , Ruby, Python, PHP, Scala, Swift, Objective-C, unmanaged C/C++ and .NET.
 
-* For Snyk Open Source: the Visual Studio extension supports all the languages and package managers supported by Snyk Open Source and the CLI. See the full list [in the docs](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
-* For Snyk Code: the Visual Studio extension supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine).
+* For Snyk Open Source: the Visual Studio extension supports all the languages and package managers supported by Snyk Open Source and the CLI. See the full list on the page [Supported languages, frameworks, and feature availability overview, in the Open Source section](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source).
+* For Snyk Code: the Visual Studio extension supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code).
 
 ## Supported operating systems and architecture
 
