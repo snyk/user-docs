@@ -1,6 +1,6 @@
 # Supported languages and frameworks
 
-Understand the supported languages and frameworks to secure your software based on your environment.&#x20;
+The documentation on these pages provides information to help you use Snyk to secure your software in each of the supported languages and frameworks&#x20;
 
 Snyk supports the following languages&#x20;
 

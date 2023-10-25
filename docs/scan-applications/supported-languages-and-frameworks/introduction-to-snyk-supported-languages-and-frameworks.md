@@ -1,4 +1,4 @@
-# Introduction to Snyk supported languages and frameworks
+# Introduction to Snyk-supported languages and frameworks
 
 ## Snyk Code
 
@@ -28,7 +28,7 @@ The analysis is available only for files with names shorter or equal to 255 char
 
 To support a specific framework, Snyk Code must both support the relevant language and be trained on Projects using the framework. The found patterns are then annotated by the security team and extended by curated content.
 
-Most framework are supported out of the box, as Snyk Code only need to parse the code to analyze it. In some cases, they might require specific rules, or it might require specific program analysis engine updates, or both.&#x20;
+Most framework are supported out of the box, as Snyk Code only need to parse the code to analyze it. In some cases, they might require specific rules, or it might require specific program analysis engine updates or both.&#x20;
 
 If you notice any gaps in a specific framework support, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
 
@@ -41,6 +41,10 @@ Snyk scans your codebase following this sequence
 3. If a match is found, Snyk looks for a vulnerability in the event graph, identifying where problems might be hiding in the code.&#x20;
 
 :link: See [Snyk Code AI Engine](../../scan-application-code/snyk-code/snyk-code-key-features/snyk-code-ai-engine.md).
+
+### More information about language support for Snyk Code
+
+For more information, see [Supported languages, frameworks, and feature availability overview, Snyk Code section](supported-languages-frameworks-and-feature-availability-overview.md#open-source-and-licensing-snyk-open-source).
 
 ### Code Quality
 
@@ -57,5 +61,9 @@ Code Quality is an experimental feature. If you are interested in using the feat
 Snyk builds a dependency graph and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any packages anywhere in that tree.
 
 The way Snyk analyzes and builds the graph varies depending on the language and package manager of the Project, as well as the location of your Project.
+
+### More information about language support for Snyk Open Source
+
+For more information, see [Supported languages, frameworks, and feature availability overview, Open Source section](supported-languages-frameworks-and-feature-availability-overview.md#open-source-and-licensing-snyk-open-source).
 
 \
