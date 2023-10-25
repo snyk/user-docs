@@ -8,7 +8,7 @@ Snyk Code Local Engine is a fully contained version of the Snyk Code Engine that
 
 This high-level architecture diagram shows the components and their interactions. Snyk scans a request for a Git repository through the Snyk Code Local Engine, which returns the results to Snyk.
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png" alt="Snyk Code Local Engine high-level architecture"><figcaption><p>Snyk Code Local Engine high-level architecture</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png" alt="Snyk Code Local Engine high-level architecture"><figcaption><p>Snyk Code Local Engine high-level architecture</p></figcaption></figure>
 
 {% hint style="info" %}
 When you use the Local Engine, only the scan is performed locally. Your scan results are uploaded to Snyk so you can view them on the Snyk Web UI.
@@ -55,7 +55,7 @@ To use the Snyk CLI and IDEs with Snyk Code Local Engine, provide your Snyk acco
 \
 After your CSM has configured the URL for your Organization, you can view it from **Settings** --> **Snyk Code:**
 
-<figure><img src="../../.gitbook/assets/Snyk Code Local Engine settings showing Local Engine URL (1) (1).png" alt="Snyk Code Local Engine settings Local Engine URL"><figcaption><p>Snyk Code Local Engine settings Local Engine URL</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code Local Engine settings showing Local Engine URL (1) (1).png" alt="Snyk Code Local Engine settings Local Engine URL"><figcaption><p>Snyk Code Local Engine settings Local Engine URL</p></figcaption></figure>
 
 ## Configure and deploy the Local Engine
 
