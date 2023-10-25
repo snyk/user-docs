@@ -307,7 +307,7 @@
       * [Re-importing existing repositories for Snyk Code testing](scan-application-code/snyk-code/snyk-code-and-your-repositories/re-importing-existing-repositories-for-snyk-code-testing.md)
       * [Excluding directories and files from the import process](scan-application-code/snyk-code/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md)
       * [Removing imported repositories from Snyk Code testing](scan-application-code/snyk-code/snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md)
-    * [Security rules used by Snyk Code](scan-applications/snyk-code/security-rules-used-by-snyk-code/README.md)
+    * [Snyk Code security rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/README.md)
       * [Apex rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/apex-rules.md)
       * [C++ (Beta) rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/c++-beta-rules.md)
       * [C# and ASP.NET rules](scan-applications/snyk-code/security-rules-used-by-snyk-code/c-and-asp.net-rules.md)
