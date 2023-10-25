@@ -1,4 +1,4 @@
-# Understanding the Severity Score of Snyk Code Issues
+# Severity score
 
 Snyk Code reports issues by severity levels: High, Medium, and Low. Snyk Code currently does not use the **Critical** severity level.
 
@@ -32,11 +32,11 @@ The severity of CWEs may change depending on the environment.
 
 For CEW-22 Path Traversal, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is High severity. Otherwise, it is Low severity.
 
-<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt="Decision flow chart for Priority Score CWE-22 Path Traversal"><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (2).png" alt="Decision flow chart for Priority Score CWE-22 Path Traversal"><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
 
 ## Example: CWE-601: Open Redirect
 
 For CEW-2601 Open Redirect, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is Medium severity.
 
-<figure><img src="../../../.gitbook/assets/image (5) (8).png" alt="Decision flow chart for Priority Score CWE-601 Oen Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Oen Redirect</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (8).png" alt="Decision flow chart for Priority Score CWE-601 Oen Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Oen Redirect</p></figcaption></figure>
 

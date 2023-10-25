@@ -1,4 +1,4 @@
-# Exploring the history of Snyk Code results
+# Code Analysis results history
 
 You can view the results of previous Snyk Code tests performed on an imported repository. The result history can include the following Snyk Code tests:
 
@@ -9,6 +9,8 @@ You can view the results of previous Snyk Code tests performed on an imported re
 The result history is shown on the **History** page of the **Code Analysis** Project. This page displays the snapshots taken when a test was performed.
 
 Only two unique snapshots can be shown on the **History** page. A unique snapshot is made when the repository or its vulnerability results have changed since the last test, and the snapshot taken for the new test reflects these changes and is different from the previous one. If the repository or its results have not changed since the last test, the new snapshot will be identical to the previous snapshot, and it will be shown as an additional test on the **History** page. Therefore, you may have multiple past tests displayed on the **History** page, but at most only two of them will show different results.
+
+## View Code Analysis history
 
 Follow these steps to view the result history for a repository:
 

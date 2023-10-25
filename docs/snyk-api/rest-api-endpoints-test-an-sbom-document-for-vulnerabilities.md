@@ -4,10 +4,10 @@
 **Feature availability**\
 The Snyk API is available to customers on Snyk Enterprise plans. See [Plans and pricing ](https://snyk.io/plans/)for details.
 
-This API endpoint, Test an SBOM document for vulnerabilities, is available on an open beta basis. Some of the functionality may change.
+The [API endpoints to test an SBOM document for vulnerabilities](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) are in Open Beta. Some of the functionality may change.
 {% endhint %}
 
-Snyk offers a [set of endpoints](https://apidocs.snyk.io/#tag--SBOM) for testing a software bill of materials document. Use these endpoints to expand your understanding of the vulnerabilities impacting the packages in an SBOM.
+Snyk offers a [set of endpoints](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) for testing a software bill of materials document. Use these endpoints to expand your understanding of the vulnerabilities impacting the packages in an SBOM.
 
 {% hint style="info" %}
 Supported SBOM formats are [CycloneDX](https://cyclonedx.org/) 1.4 JSON and [SPDX](https://spdx.dev/) 2.3 JSON.
@@ -15,7 +15,7 @@ Supported SBOM formats are [CycloneDX](https://cyclonedx.org/) 1.4 JSON and [SPD
 
 Snyk identifies components within the SBOM by their PackageURL (purl). If a component does not have a purl, or the purl type is not supported, Snyk skips vulnerability analysis for that component. Supported purl types are: `cargo`, `cocoapods`, `gem`, `golang`, `hex`, `maven`, `npm`, `nuget`, `pypi`, `swift`, and `generic` for unmanaged C/C++ dependencies.
 
-This endpoint, Test an SBOM document for vulnerabilities, is asynchronous. Follow these steps to create an SBOM test run:
+The endpoint to test an SBOM document for vulnerabilities is asynchronous. Follow these steps to [create an SBOM test run](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) and view the results.
 
 1. [Create the test by sending an SBOM to Snyk.](rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md#create-a-test-by-sending-an-sbom-to-snyk)
 2. [Check the status of the test](rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md#check-the-status-of-the-test-optional).
@@ -27,10 +27,10 @@ This endpoint, Test an SBOM document for vulnerabilities, is asynchronous. Follo
 
 1. Log in to the Snyk Web UI and retrieve your Organization ID (UUID format), Project ID (UUID), and API key.\
    If you need help in finding these values, see [Group and Organization navigation](../snyk-admin/manage-groups-and-organizations/switch-between-groups-and-organizations.md), [View Project settings](../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../snyk-api-info/authentication-for-api.md).
-2. Use any HTTP client, for example, `curl` or Postman, to make a request to the endpoint.&#x20;
+2. Use any HTTP client, for example, `curl` or Postman, to make a request to the endpoint [Create an SBOM test run](https://apidocs.snyk.io/?version=2023-10-24%7Ebeta#post-/orgs/-org\_id-/sbom\_tests).&#x20;
 
 {% hint style="info" %}
-The SBOM document is included as part of the request body as a JSON object. This creates a test run for your SBOM document.
+The SBOM document is included as part of the request body as a JSON object. This call creates a test run for your SBOM document.
 {% endhint %}
 
 {% code title="HTTP request" %}
@@ -81,7 +81,7 @@ curl --request POST \
 
 ### Check the status of the test (optional)
 
-1. Using the job ID returned from the initial request, make a request to the endpoint below.&#x20;
+1. Using the job ID returned from the initial request, make a request to the endpoint to get the [SBOM test run status](https://apidocs.snyk.io/?version=2023-10-24%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-).&#x20;
 2. Note that the request returns the status of your test, which can either be `processing` or `finished`.
 
 ```bash
@@ -92,8 +92,8 @@ curl --request POST \
 
 ### View results of the test
 
-1. When the status of the test returned is`finished`, make a request to the results endpoint.&#x20;
-2. The request returns summary-level information about the SBOM that was tested, as well as the detailed results.
+1. When the status of the test returned is`finished`, make a request to the [results endpoint](https://apidocs.snyk.io/?version=2023-10-24%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results).&#x20;
+2. View the information that the request returns: summary-level information about the SBOM that was tested, as well as the detailed results.
 
 ```bash
 curl --get \
