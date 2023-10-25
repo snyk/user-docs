@@ -44,7 +44,7 @@ Snyk scans your codebase following this sequence
 
 ### More information about language support for Snyk Code
 
-For more information, see [Supported languages, frameworks, and feature availability overview, Snyk Code section](supported-languages-frameworks-and-feature-availability-overview.md#open-source-and-licensing-snyk-open-source).
+For more information, see [Supported languages, frameworks, and feature availability overview, Snyk Code section](supported-languages-frameworks-and-feature-availability-overview.md#code-analysis-snyk-code).
 
 ### Code Quality
 

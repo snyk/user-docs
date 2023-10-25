@@ -43,8 +43,8 @@ After you complete the installation steps on this page and the [configuration](h
 
 ## Supported languages, package managers, and frameworks
 
-* For Snyk Open Source, the JetBrains plugin supports the languages and package managers supported by Snyk Open Source and the CLI. See [Open Source - Supported languages and package managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
-* For Snyk Code, the JetBrains plugin supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine).
+* For Snyk Open Source, the JetBrains plugin supports the languages and package managers supported by Snyk Open Source and the CLI. For more information, see [Supported languages, frameworks, and feature availability overview, Open Source section](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source).
+* For Snyk Code, the JetBrains plugin supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine). For more information, see [Supported languages, frameworks, and feature availability overview, Snyk Code section](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code).
 * For Snyk Container: the JetBrains plugin supports all the [operating system distributions supported by Snyk Container](https://docs.snyk.io/products/snyk-container/snyk-container-security-basics/supported-operating-system-distributions).
 * For Snyk IaC, the JetBrains plugin supports the following IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager.
 
