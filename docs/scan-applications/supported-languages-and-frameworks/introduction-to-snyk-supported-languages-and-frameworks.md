@@ -4,13 +4,165 @@
 
 ### Supported Extensions
 
-Snyk Code supports the following extensions:
+<details>
 
-* `apex, trigger, ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, scala, swift, py, go, ASPX, CS, php, xml, jsp, jspx, cls, c, cc, cpp, cxx, h, hpp, hxx`
+<summary>Snyk Code supports the following extensions</summary>
 
-The following extensions are in [Beta](../../more-info/snyk-feature-release-process.md):
+* apex
 
-* `kt, vb`
+<!---->
+
+* ASPX
+
+<!---->
+
+* c
+
+<!---->
+
+* cc
+
+<!---->
+
+* cjs
+
+<!---->
+
+* cls
+
+<!---->
+
+* cpp
+
+<!---->
+
+* CS
+
+<!---->
+
+* ejs
+
+<!---->
+
+* erb
+
+<!---->
+
+* es
+
+<!---->
+
+* es6
+
+<!---->
+
+* go
+
+<!---->
+
+* h
+
+<!---->
+
+* haml
+
+<!---->
+
+* hpp
+
+<!---->
+
+* htm
+
+<!---->
+
+* html
+
+<!---->
+
+* hxx
+
+<!---->
+
+* java
+
+<!---->
+
+* js
+
+<!---->
+
+* jspx
+
+<!---->
+
+* jsx
+
+<!---->
+
+* jsp
+
+<!---->
+
+* kt
+
+<!---->
+
+* mjs
+
+<!---->
+
+* php
+
+<!---->
+
+* py
+
+<!---->
+
+* rb
+
+<!---->
+
+* rhtml
+
+<!---->
+
+* scala
+
+<!---->
+
+* slim
+
+<!---->
+
+* swift
+
+<!---->
+
+* ts
+
+<!---->
+
+* tsx
+
+<!---->
+
+* trigger
+
+<!---->
+
+* vb
+
+<!---->
+
+* vue
+
+<!---->
+
+* xml
+
+</details>
 
 ### File size limit for Snyk Code analysis
 
