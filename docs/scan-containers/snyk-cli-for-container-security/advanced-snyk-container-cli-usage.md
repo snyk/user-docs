@@ -11,6 +11,10 @@ snyk container test docker-archive:archive.tar
 snyk container test oci-archive:archive.tar
 ```
 
+{% hint style="info" %}
+For`crane`, Snyk supports only the formats `--format=oci` and`--format=legacy`.
+{% endhint %}
+
 ## Test multi-platform images
 
 Some repositories represent multi-manifests, pointing to several different images depending on the operating system and the architecture required. To explicitly scan an image for a specific platform, you can use the Snyk CLI `container test` command.
