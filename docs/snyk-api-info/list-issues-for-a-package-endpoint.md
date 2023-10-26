@@ -4,7 +4,7 @@ The Snyk REST API endpoint [List issues for a package](https://apidocs.snyk.io/?
 
 When you pass a `purl` to the endpoint, Snyk will find any known vulnerabilities for that package and return them as part of the response body.
 
-#### Supported purl types
+## Supported purl types
 
 The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `swift` and `maven`.
 
@@ -42,7 +42,7 @@ $ http \
   version==2023-09-12
 ```
 
-For operating system packages, a vendor must be specified in the namespace portion and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.&#x20;
+For operating system packages, a vendor must be specified in the namespace portion, and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.&#x20;
 
 An example using a valid url-encoded operating system purl follows:
 
