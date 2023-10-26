@@ -2,9 +2,11 @@
 
 You can import container Projects into Snyk using the CLI command `snyk monitor`. Alternatively, you can import Projects directly from a supported container registry using the Snyk Web UI.
 
-Snyk then scans your Project for vulnerabilities and imports a snapshot of your Project. Based on your configuration, daily or weekly, Snyk regularly scans the image snapshot dependencies, which in turn refers to its tag. Based on your configuration, Snyk sends you an update by email or Slack when any new vulnerabilities are identified.
+Snyk imports a snapshot of your container image and then scans the snapshot for vulnerabilities. Based on your configuration, daily or weekly, Snyk regularly scans the dependencies snapshotted in that original import, which in turn refers to its tag. Based on your configuration, Snyk sends you an update by email or Slack when any new vulnerabilities are identified.
 
-If the tag for an image changes and the original tag is used for a different image, Snyk continues to scan the image associated with the original tag, meaning Snyk scans the new image on recurring tests. If you want to continue testing an image with a different tag, import the relevant tag.
+If the tag for an image changes and the original tag is used for a different image, upon rescanning (daily or weekly), Snyk detects changes to the Linux package dependencies and creates a new snapshot of that Project, but it does not detect changes in the application dependencies and thus does not update the snapshot for application vulnerabilities.
+
+This means that if you frequently reuse a tag to refer to a different image, you must reimport the other image so that Snyk can update the application dependencies.&#x20;
 
 ## Grouping of Container Projects
 
