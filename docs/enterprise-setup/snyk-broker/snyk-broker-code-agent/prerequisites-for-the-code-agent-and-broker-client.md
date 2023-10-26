@@ -8,7 +8,7 @@ To use the Broker Client – Code Agent deployment method, the Broker Client and
 * Your Technical Success Manager (TSM)
 * [Snyk Support](https://support.snyk.io/hc/en-us)
 
-The maximum file size you can import via the Snyk Broker – Code Agent deployment method is the same as via the CLI - 1MB. For more information , see the [File size limit for Snyk Code analysis](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#file-size-limit-for-snyk-code-analysis).
+The maximum file size you can import via the Snyk Broker – Code Agent deployment method is the same as via the CLI - 1MB. For more information, see the [File size limit for Snyk Code analysis](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks#file-size-limit-for-snyk-code-analysis).
 
 The machine that hosts the Broker Client and the Code agent must have the ability to run a Docker Container, for example, by using a Docker Desktop or Kubernetes.
 
