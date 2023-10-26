@@ -93,6 +93,16 @@ EU and AU datacenter Snyk accounts are available only with the purchase of an [E
 Using Snyk.io or app.snyk.io will not redirect you to these URLs.
 {% endhint %}
 
+### Support Portal Tickets
+
+#### **EU**
+
+[EU Tenant Support Portal](https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw)
+
+#### **AU**
+
+[AU Tenant Support Portal](https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ)
+
 ### API URLs
 
 Follow the docs as usual, but base URLs are:
