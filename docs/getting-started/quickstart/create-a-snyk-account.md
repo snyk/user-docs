@@ -9,7 +9,7 @@ If you already have a Snyk account, see [Log in to an existing account](create-a
 ## Create a Snyk account
 
 {% hint style="info" %}
-You can create a ree account or sign up for a Snyk pricing plan; see [Snyk Pricing Plans](../../more-info/plans.md) for details.
+You can create a free account or sign up for a Snyk pricing plan; see [Snyk Pricing Plans](../../more-info/plans.md) for details.
 {% endhint %}
 
 Follow these steps to create a Snyk account:
