@@ -22,7 +22,7 @@ If you have used **Attributes** or **Tags** to add metadata to your Projects, th
 
 After you have your reduced set of Projects to prioritize, you may want to split these between different development teams. For example, you may have one Development team fixing issues with your open-source and first-party code, and a separate DevOps team responsible for Containers and base image vulnerabilities.
 
-## Prioritization Method
+## Prioritization method
 
 Filters are available to help prioritize what issues need to be fixed more urgently. The following search criteria are most commonly used when building a prioritization plan and can be used iteratively or in combination as you analyze results.&#x20;
 
@@ -59,7 +59,7 @@ Developer-led implementation, with instruction from executives to minimize licen
 3. Shift focus to Code Analysis Projects (using Snyk Code), starting with High severity issues.
 4. Scan the Containers and IaC files they are using to run their applications/environments.
 
-### Example: DevSecOps-led priorities
+**Example: DevSecOps-led priorities**
 
 DevSecOps-led implementation, focusing on securing your custom images and environment:
 
@@ -74,8 +74,6 @@ DevSecOps-led implementation, focusing on securing your custom images and enviro
 
 As you operationalize security testing in your development process, another option for your fix strategy is to have campaigns to eliminate vulnerability types, for example, SQL injection. Using CWE filters can be very useful in reporting to identify and log issues.
 
-\
-Update your timeline
---------------------
+## Update your timeline
 
 Once you have created your fix strategy, update the timeline for Phase 7.

@@ -2,7 +2,7 @@
 
 After you gain visibility on your business-wide security issues, you can now start to implement a prevention/gating system, to stop new vulnerabilities being added to your applications.
 
-### Common prevention methods
+## Common prevention methods
 
 The two common areas that allow you to ‘prevent new issues’ are&#x20;
 
@@ -24,12 +24,12 @@ This eases developers into the process, as they only take responsibility for vul
 * [Run PR Checks](../../../scan-application-code/run-pr-checks/): these have the option to block new issues.&#x20;
 * [Snyk Delta](../../../snyk-cli/cli-tools/snyk-delta.md) can assist with differences in results at the CLI level.
 
-#### Communicate exception processes
+### Communicate exception processes
 
 It is important to ensure the teams know the exception processes, and how to address if a PR is blocked or a build fails.&#x20;
 
 For example:
 
 * Let the team know who has the authority to override a PR check if a pass is mandatory
-* If a build fails, can issue be ignored and the test rerun? Who can run it? Or can a script be run allowing that step to pass? Who can make that determination?
+* If a build fails, can the issue be ignored and the test rerun? Who can run it? Or can a script be run allowing that step to pass? Who can make that determination?
 

@@ -15,13 +15,13 @@
 
 Before starting rollout, here are some initial questions you can ask, to assist in planning - this is an alternative way of deciding your rollout planning process.
 
-#### Who's involved?
+### Who's involved?
 
 * Who will manage and oversee the project?
 * Who will champion Snyk?
 * Who will be the Group Administrator?
 
-#### What are your goals?
+### What are your goals?
 
 * Why did you choose Snyk?&#x20;
 * Why are you implementing it now?
@@ -35,7 +35,7 @@ How will you provision users, and integrate Snyk with your platforms?
 * Will access be restricted to certain projects?
 * Who can grant Snyk access to platforms like SSO and Git Repositories?
 
-#### How will you structure your account?
+### How will you structure your account?
 
 * How will you group projects?
   * By developer teams?&#x20;
@@ -44,7 +44,7 @@ How will you provision users, and integrate Snyk with your platforms?
 * If by developer teams, are there some teams that would need access to the same projects? If yes, think about a different structure to avoid confusion.
 * How many [Snyk Organizations](../../../snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md) do you need?&#x20;
 
-#### How will you measure success?&#x20;
+### How will you measure success?&#x20;
 
 * What KPIs will be tracked?
 * How will you know you’re making progress?

@@ -1,10 +1,10 @@
-# Notifying the Team
+# Notifying the team
 
 ## Set email notifications
 
 Snyk can automatically notify you when new issues are found in imported Projects. By default, email notifications are sent for any newly found vulnerabilities, but can customize these; for example, to only send messages for new High/Critical severity issues.&#x20;
 
-#### Weekly updates
+### Weekly updates
 
 Snyk sends you a weekly update summarizing your security status across all of your Organizations.&#x20;
 
@@ -32,7 +32,7 @@ See [Manage notifications](../../../snyk-admin/manage-notifications.md) for more
 
 Introducing Snyk to your developers is the first step in building awareness of Snyk functions, and how they can get the most out of Snyk. Typically we recommend disabling many of the more potentially intrusive features (for example, automatically raising PRs) until your teams are comfortable with Snyk use and results.
 
-### Introducing Snyk to your Developers
+## Introducing Snyk to your Developers
 
 This is your chance to get developers excited about better ways to introduce security into their work. If Snyk can make their lives easier, they’ll be more likely to get on board.
 

@@ -6,7 +6,7 @@ Whether you want to create a single Organization or build a template to create m
 For importing Projects, see the [Import Projects](../../phase-3-gain-visibility/import-projects.md) and [Rollout](../../phase-5-initial-rollout-to-team/) discussions
 {% endhint %}
 
-### Create your Organization Structure using a template
+## Create your Organization Structure using a template
 
 When you create a new Organization, you can select an existing Organization to use as the model for settings and integrations. To streamline creating your Organizations, we recommend configuring a template Organization, before creating your full Organization structure.
 
@@ -17,11 +17,9 @@ There is no specific ‘template’ functionality in Snyk. Our recommended proce
 When you then create more Organizations, you can use the option to clone settings from an existing Organization, using **Template** as the basis.
 {% endhint %}
 
-#### Templating using API tools
+**Templating using API tools**
 
 Templating functionality is also available if you are using creating your Organizations using the API, whether you are using the [snyk-api-import](../../../../snyk-api-info/other-tools/tool-snyk-api-import/) tool to mirror Organization from an existing source (such as GitHub Organizations), or using the [API endpoints](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) by providing a sourceOrgId.
-
-
 
 Configure template Organization settings
 
@@ -53,8 +51,6 @@ The following table illustrates what is copied from the "template Organization" 
 
 <table><thead><tr><th width="466">All integrations and their settings will be copied across</th><th>The following will not be copied</th></tr></thead><tbody><tr><td>Source control integrations</td><td>Snyk Service accounts</td></tr><tr><td>Container registry integrations</td><td>Members</td></tr><tr><td>Container orchestrators integrations (Kubernetes)</td><td>Projects</td></tr><tr><td>PaaS and Serverless integrations</td><td>Notification preferences</td></tr><tr><td>Notificiation integrations (Slack/Jira)</td><td></td></tr><tr><td>Policies</td><td></td></tr><tr><td>Ignore settings</td><td></td></tr><tr><td>Language settings</td><td></td></tr><tr><td>Infrastructure as code (IaC) settings</td><td></td></tr><tr><td>Snyk Code settings</td><td></td></tr></tbody></table>
 
-###
-
-### Duplicate template organization
+## Duplicate template organization
 
 After the Organization is created and configured, use it as a template when creating new Organizations, to build out the remaining structure.

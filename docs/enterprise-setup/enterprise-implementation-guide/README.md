@@ -1,13 +1,13 @@
 # Enterprise implementation guide
 
-Each business and environment is different. With that in mind, this guide aims to help an enterprise business to implement Snyk. We provide recommendations to implement a large-scale rollout, focussing on the stages needed to help get towards an ideal rollout.
+Each business and environment is different. With that in mind, this guide aims to help an enterprise business to implement Snyk. We provide recommendations to implement a large-scale rollout, focusing on the stages needed to help get towards an ideal rollout.
 
 We start with the awareness that most businesses:
 
 * Have a backlog of issues in their existing software.
 * Are continuously creating new software, and need to secure new code.&#x20;
 
-#### Typical timelines
+**Typical timelines**
 
 If your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using the Git integration and [API Import Tool](../../snyk-api-info/other-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-applications/start-scanning/) sections for details of this type of process
 

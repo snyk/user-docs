@@ -52,7 +52,7 @@ docker run --restart=always \
 
 If you are using a custom `accept` file from a separate folder, with the `ACCEPT` environment variable, you cannot use the `ACCEPT_CODE` mechanism.
 
-You can find the relevant `accept.json` for each of the Git integrations in [Adding custom allowlist for Docker installation](adding-custom-allowlist-for-docker-installation.md).
+You can find the relevant `accept.json` for each of the Git integrations in [Adding custom allowlist for Docker installation](broken-reference).
 
 If you want to customize the `accept.json`, add this snippet to your custom `accept.json`
 

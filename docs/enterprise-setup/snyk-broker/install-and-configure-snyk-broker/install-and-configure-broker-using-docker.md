@@ -41,7 +41,7 @@ When you install using Docker, follow these instructions to configure Broker as 
 * [Backend requests with an internal certificate for Docker](advanced-configuration-for-snyk-broker-docker-installation/backend-requests-with-an-internal-certificate-for-docker.md)
 * [Proxy support with Docker](advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md)
 * [Disable certificate verification with Docker](advanced-configuration-for-snyk-broker-docker-installation/disable-certificate-verification-with-docker.md)
-* [Adding custom allowlist for Docker installation](advanced-configuration-for-snyk-broker-docker-installation/adding-custom-allowlist-for-docker-installation.md)
+* [Adding custom allowlist for Docker installation](broken-reference)
 * [Custom approved-listing filter with Docker](advanced-configuration-for-snyk-broker-docker-installation/custom-approved-listing-filter-with-docker.md)
 * [Mounting secrets with Docker](advanced-configuration-for-snyk-broker-docker-installation/mounting-secrets-with-docker.md)
 * [Snyk Code - Clone capability with Broker for Docker](advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)

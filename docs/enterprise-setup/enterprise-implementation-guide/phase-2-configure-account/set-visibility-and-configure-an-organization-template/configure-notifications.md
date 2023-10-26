@@ -10,7 +10,7 @@ Snyk sends teams different types of alerts based on Group and Organization setti
 We strongly recommend disabling notifications for the Group and the first Organization by default, before you create additional Organizations and start scanning applications.
 {% endhint %}
 
-### Setting default Organization notifications
+## Setting default Organization notifications
 
 If you want alerts to be sent by default for Projects imported into the Organization, you can have Snyk send notifications for either vulnerabilities or license issues or for both. You can also limit the notifications to only High and Critical severity issues.&#x20;
 
@@ -20,7 +20,7 @@ The following video demonstrates how to set notification defaults for Organizati
 Organization notification video
 {% endembed %}
 
-### Setting default individual notifications
+## Setting default individual notifications
 
 Encourage individuals to set up their own notification preferences, if they want to customize how they receive alerts for specific Projects.
 

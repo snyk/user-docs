@@ -38,4 +38,4 @@ To only allow the SHA Media Type accept header for requests to the GitHub Commit
 }
 ```
 
-For examples of custom approved-listing filters for each SCM see [Snyk Broker integration setups](broken-reference) and [Adding custom accept.json for Docker installation](adding-custom-allowlist-for-docker-installation.md).
+For examples of custom approved-listing filters for each SCM see [Snyk Broker integration setups](broken-reference) and [Adding custom accept.json for Docker installation](broken-reference).

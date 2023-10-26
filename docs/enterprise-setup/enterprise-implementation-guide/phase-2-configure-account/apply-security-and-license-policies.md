@@ -4,7 +4,7 @@ Snyk Policies define how Snyk behaves when identifying issues. Policies give you
 
 See [Policies](../../../manage-issues/policies/) for more details.
 
-### Security policies
+## Security policies
 
 Group administrators can define security policies, providing an automated way to identify certain issues or types of issues, and apply actions like changing the severity or ignoring the issue based on your conditions.&#x20;
 
@@ -13,7 +13,7 @@ Group administrators can define security policies, providing an automated way to
 
 See [Security policies](../../../manage-issues/policies/security-policies/) for more details.
 
-### License policies
+## License policies
 
 Group administrators can set license policies to define Snyk behavior for treating license issues. For example, you can allow or disallow packages with certain license types, to avoid using packages containing incompatible licenses.
 

@@ -2,8 +2,6 @@
 
 Configuring SSO may be done while onboarding projects, creating organization structure, or even while configuring integrations. Disable Notifications for the organizations if your intent is to add users prior to onboarding your projects into Snyk.&#x20;
 
-### Configure Single Sign On (SSO)
-
 Setting up [Single Sign On with Snyk](../../using-single-sign-on-sso-for-authentication/) gives your users a consistent way of logging in to your application, whilst increasing your ability to control who has access to your organizations.
 
 In most cases, we recommend using the [Self-Serve option](../../using-single-sign-on-sso-for-authentication/self-serve-single-sign-on-sso/) that allows you to configure a SAML connection to your identity provider. This allows you to configure the email domains that are valid, and also the default permissions that new users will have in your organizations.

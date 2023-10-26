@@ -30,6 +30,6 @@ It is common to have a phased rollout of these features. Using PR checks as an e
 
 This phased rollout helps to decrease friction between your security and development teams.
 
-### Also see
+## Also see
 
 Here is a link to a webinar that covers PR checks in more detail, and includes an example of how you can gradually introduce this feature: [Dev-First Prevention Strategies Using PR Checks](https://www.youtube.com/watch?v=6x33EJW\_d\_E)

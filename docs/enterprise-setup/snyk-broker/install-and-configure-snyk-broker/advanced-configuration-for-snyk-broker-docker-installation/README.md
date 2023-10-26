@@ -8,7 +8,7 @@ When you install using Docker, follow these instructions to configure Broker as 
 * [Backend requests with an internal certificate for Docker](backend-requests-with-an-internal-certificate-for-docker.md)
 * [Proxy support with Docker](proxy-support-with-docker.md)
 * [Disable certificate verification with Docker](disable-certificate-verification-with-docker.md)
-* [Adding custom allowlist for Docker installation](adding-custom-allowlist-for-docker-installation.md)
+* [Adding custom allowlist for Docker installation](broken-reference)
 * [Custom approved-listing filter with Docker](custom-approved-listing-filter-with-docker.md)
 * [Mounting secrets with Docker](mounting-secrets-with-docker.md)
 * [Snyk Code - Clone capability with Broker for Docker](snyk-code-clone-capability-with-broker-for-docker.md)

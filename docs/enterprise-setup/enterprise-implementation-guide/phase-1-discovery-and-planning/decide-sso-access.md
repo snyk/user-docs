@@ -1,6 +1,6 @@
 # Decide SSO access
 
-### Deciding Single Sign-On (SSO) Settings
+## Deciding Single Sign-On (SSO) Settings
 
 For more information on SSO, see [Using Single Sign-On (SSO) for authentication](../../using-single-sign-on-sso-for-authentication/)&#x20;
 
@@ -9,7 +9,7 @@ While it's common for the initial pilot/trial team to use personal authenticatio
 * Creating appropriate SSO accounts created and promoted to Administrator
 * Removing the personal profiles from Snyk before rolling it out to a wider group.
 
-### SSO Provisioning Options
+## SSO Provisioning Options
 
 When setting up access for new users in your company, there are several approaches to consider that determine the user experience and access. In this step you need to consider Open To All or Require an Invite, and if Custom Mapping is desired.
 

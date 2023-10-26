@@ -22,7 +22,7 @@ Snyk uses a hierarchical approach to managing assets, access, and rollup reporti
 
 For more details, see [Manage Groups and Organizations](../../../snyk-admin/manage-groups-and-organizations/).
 
-### Decide the structure
+## Decide the structure
 
 Deciding your structure is one of the earliest decisions you must make. When determining your account structure, structure Snyk Organizations to match your business needs.
 
@@ -42,6 +42,6 @@ If you intend to use the [api-import-tool](../../../snyk-api-info/other-tools/to
 
 By exploring these options and grasping your company's requirements, you can establish an account structure that enhances collaboration and efficiency.
 
-### Also see
+## Also see
 
 See [Managing Organizations](../../../snyk-admin/manage-groups-and-organizations/manage-organizations.md) for more details.&#x20;

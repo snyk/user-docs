@@ -35,7 +35,7 @@ Connect your repositories for automatic scanning.
 * Alternatively, use the [Snyk API](../../../snyk-api/) to import your Projects. This leverages an existing source control integration and can be used to automate processes.
 * The  [snyk-api-import](../../../snyk-api-info/other-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enteprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
 
-### [Snyk CLI](../../../snyk-cli/)
+## [Snyk CLI](../../../snyk-cli/)
 
 The CLI allows granular scanning of individual Projects.&#x20;
 
@@ -64,7 +64,7 @@ How to use:
 Demonstrations of various pipeline integrations can be found on [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples)
 {% endhint %}
 
-### [Snyk API](../../../snyk-api/) (Advanced usecase)
+## [Snyk API](../../../snyk-api/) (Advanced use case)
 
 1. Generate API token under Settings->Service Accounts
 2. Call API in pipelines

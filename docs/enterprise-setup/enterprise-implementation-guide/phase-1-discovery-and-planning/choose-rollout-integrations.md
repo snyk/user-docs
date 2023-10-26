@@ -1,6 +1,6 @@
 # Choose rollout integrations
 
-### **SDLC Integration points**
+## **SDLC Integration points**
 
 Snyk offers many integrations that seamlessly integrate into every stage of SDLC.&#x20;
 

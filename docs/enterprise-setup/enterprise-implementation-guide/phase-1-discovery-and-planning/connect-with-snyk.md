@@ -1,12 +1,12 @@
 # Connect with Snyk
 
-### Connect with the account manager
+## Connect with the account manager
 
 Before implementing Snyk, please contact your Snyk account manager to confirm you have the appropriate license for your use case. They can advise on the best license type and access level based on your business needs.
 
 The proper license setup ensures you can fully use Snyk capabilities without limitations. It also guarantees you remain compliant with our terms of use.
 
-### License questions
+## License questions
 
 Your account manager is your go-to resource for any account-related questions or updates. Reach out to them directly regarding:
 
