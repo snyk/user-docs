@@ -8,6 +8,8 @@
 
 The `snyk monitor` command creates a project in your Snyk account to be continuously monitored for open source vulnerabilities and license issues. After running this command, log in to the Snyk website and view your projects to see the monitor.
 
+If you make changes to the project, you must run the `monitor` command again.
+
 For Snyk Container see [`snyk container` help](https://docs.snyk.io/snyk-cli/commands/container)
 
 The `monitor` command is not supported for Snyk Code.
@@ -19,7 +21,7 @@ For Snyk Infrastructure as Code follow the instructions in "Regularly testing Ia
 Possible exit codes and their meaning:
 
 **0**: success, snapshot created\
-**2**: failure, try to re-run command\
+**2**: failure, try to re-run the command. Use `-d` to output the debug logs.\
 **3**: failure, no supported projects detected
 
 ## Configure the Snyk CLI

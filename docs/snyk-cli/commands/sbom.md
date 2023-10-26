@@ -25,7 +25,7 @@ An SBOM can be generated for all supported Open Source package managers as well 
 Possible exit codes and their meaning:
 
 **0**: success (process completed), SBOM created successfully\
-**2**: failure, try to re-run command
+**2**: failure, try to re-run the command. Use `-d` to output the debug logs.
 
 ## Debug
 
