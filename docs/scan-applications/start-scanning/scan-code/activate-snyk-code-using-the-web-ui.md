@@ -12,7 +12,7 @@ If you are using Snyk Code in your IDE or through the Snyk CLI with or without t
 If you are using Snyk Code with the API, but not the CLI, this step is mandatory.
 {% endhint %}
 
-3. [Import repositories from the SCM to test with Snyk Code.](import-repositories-to-scan-with-snyk-code.md)
+3. [Import repositories from the SCM to test with Snyk Code.](../snyk-code-and-your-repositories/)
 
 After you activate Snyk Code and import repositories to Snyk for testing, you can view and work with the Snyk Code test results, which include vulnerabilities and fixes. See [Exploring and working with the Snyk Code results](../../../scan-application-code/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/).
 
@@ -32,8 +32,8 @@ If your Snyk Account is already integrated with your SCM and contains imported r
 
 You may find this information about repositories and Snyk Code useful as you begin to work with Snyk Code results:
 
-* [Importing additional repositories to Snyk](../../../scan-application-code/snyk-code/snyk-code-and-your-repositories/importing-additional-repositories-to-snyk.md)
-* [Excluding directories and files from the import process](../../../scan-application-code/snyk-code/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md)
-* [Removing imported repositories from the Snyk Code test](../../../scan-application-code/snyk-code/snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md)
+* [Importing additional repositories to Snyk](broken-reference)
+* [Excluding directories and files from the import process](../snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md)
+* [Removing imported repositories from the Snyk Code test](../snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md)
 
 ##

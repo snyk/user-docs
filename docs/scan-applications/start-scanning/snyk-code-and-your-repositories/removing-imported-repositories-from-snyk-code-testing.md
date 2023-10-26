@@ -1,6 +1,6 @@
-# Removing imported repositories from Snyk Code testing
+# Remove imported repository
 
-If you do not want Snyk Code to continue testing one or more of your imported repositories, you can do one of the following:
+If you do not want Snyk to continue testing one or more of your imported repositories, you can do one of the following:
 
 * Remove the entire repository from your Snyk Account in one of the following ways:
   * Deactivate the repository.
@@ -18,9 +18,9 @@ If you remove the entire repository from your Account, your repository will no l
 If you remove only the **Code analysis** Project, other Snyk products that are enabled in your account will continue to analyze the imported repository.
 {% endhint %}
 
-## **Exploring the methods of removing repositories**
+## **Remove imported repository methods**
 
-To select the right method for you for removing repositories from Snyk Code testing, consider what will happen in each of the following actions:
+To select the right method for you for removing repositories from Snyk testing, consider what will happen in each of the following actions:
 
 * Deactivating an imported repository will:
   * Remove the webhook from Snyk to the SCM repository.
@@ -37,7 +37,7 @@ Deleting a Snyk Project or an imported repository will not have any effect on yo
 If you want to remove specific directories or files from the Snyk Code test, use [the exclude option in the `.snyk` file](excluding-directories-and-files-from-the-import-process.md).
 {% endhint %}
 
-## **Deactivating and deleting imported repositories**
+## **Deactivate and delete imported repositories**
 
 To deactivate or delete an imported repository, you must select all the Projects in the repository, and then use a bulk action to either deactivate or delete all the Projects at once. If you want to entirely delete a repository from your Snyk account, after you delete its Projects, you must also delete its Target folder.
 
@@ -78,7 +78,7 @@ Depending on your selected action, one of the following occurs:
 
 The entire repository is now deleted from your Snyk account.
 
-## **Deactivating and deleting the Snyk Code Project**
+## **Deactivate and delete a Snyk Code Project**
 
 To stop Snyk Code from testing an imported repository, you can either deactivate or delete the **Code analysis** Project in the repository. The **Code analysis** Project will no longer be active in the repository and Snyk Code will stop testing the repository, but other Snyk products will continue to scan the repository files.
 

@@ -14,7 +14,7 @@ The following video provides an introduction to the `.snyk` file.
 
 The `.snyk` policy file in a Project is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands and for any tests done through the API or Snyk Web UI. and to apply the `@snyk/protect` [package](https://github.com/snyk/snyk/tree/master/packages/snyk-protect) that replaced the `snyk protect` command.
 
-The `.snyk` file can also be used to exclude directories and files from repositories that are imported for Snyk Code testing. The `exclude from import` option is supported only in Snyk Code, and only for imports that are performed using the Snyk Web UI and CLI. For details, see [Excluding directories and files from the import process](../../scan-application-code/snyk-code/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md).
+The `.snyk` file can also be used to exclude directories and files from repositories that are imported for Snyk Code testing. The `exclude from import` option is supported only in Snyk Code, and only for imports that are performed using the Snyk Web UI and CLI. For details, see [Excluding directories and files from the import process](../../scan-applications/start-scanning/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md).
 
 For IaC ignore rules, see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
 

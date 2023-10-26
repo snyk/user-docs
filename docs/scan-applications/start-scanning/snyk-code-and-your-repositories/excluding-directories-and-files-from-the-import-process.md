@@ -1,4 +1,4 @@
-# Excluding directories and files from the import process
+# Exclude directories and files from the import process
 
 When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the `.snyk` file. The `.snyk` file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The `.snyk` file should be created in the repository you intend to import.
 
@@ -12,7 +12,7 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 Consider excluding directories and files only if you do not publish or compile them into production. If a trace goes through an excluded file or directory with existing vulnerabilities, Snyk might miss potential issues.
 {% endhint %}
 
-You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../cli-for-snyk-code/testing-your-source-code-using-the-cli.md), by creating the `.snyk` file in your tested repository.
+You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../scan-application-code/snyk-code/cli-for-snyk-code/testing-your-source-code-using-the-cli.md), by creating the `.snyk` file in your tested repository.
 
 ## **Exclusion syntax of the .snyk file**
 
@@ -55,7 +55,7 @@ You can use `global` or `code.` Either will exclude the specified directories an
   * GNU Org - [Shell Pattern Matching](https://www.gnu.org/software/findutils/manual/html\_node/find\_html/Shell-Pattern-Matching.html)
   * Docstore - [Pattern Matching Quick Reference with Examples](https://docstore.mik.ua/orelly/unix/upt/ch26\_10.htm)
 
-## **Using the `.snyk` file to exclude directories and files from import**
+## **Use the `.snyk` file to exclude directories and files from import**
 
 Follow these steps to exclude directories and files from the import process using the .`snyk` file:
 
@@ -90,7 +90,7 @@ exclude:
 
 <figure><img src="../../../.gitbook/assets/image (459).png" alt="Retest now option"><figcaption><p>Retest now option</p></figcaption></figure>
 
-* If the repository was not imported yet to Snyk, [import the repository](importing-additional-repositories-to-snyk.md).
+* If the repository was not imported yet to Snyk, [import the repository](./#import-repository-to-snyk).
 
 Your repository is imported to Snyk, without the directories and/or files you selected to exclude.
 
