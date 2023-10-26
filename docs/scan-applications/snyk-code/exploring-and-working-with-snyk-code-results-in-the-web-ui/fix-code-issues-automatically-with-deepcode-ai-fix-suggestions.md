@@ -1,7 +1,7 @@
-# Fix code issues automatically with DeepCode AI Fix Suggestions
+# Fix code issues automatically
 
 {% hint style="warning" %}
-DeepCode AI Fix Suggestions is in [Open Beta](../../more-info/snyk-feature-release-process.md) and fully supports Javascript/Typescript frameworks.
+DeepCode AI Fix Suggestions is in [Open Beta](../../../more-info/snyk-feature-release-process.md) and fully supports Javascript/Typescript frameworks.
 
 To enable the feature, see [Enable DeepCode AI Fix Suggestions](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#enable-deepcode-ai-fix-suggestions)
 {% endhint %}
@@ -12,7 +12,7 @@ Fix the security issues and quality flaws in the source code through an automate
 
 Fix Suggestions combines the power of a thorough program analysis engine with the abilities of an in-house deep learning-based large language model. This combination allows for compiling large amounts of unstructured language information [from open-source code](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#what-data-does-deepcode-ai-fix-suggestions-collect).
 
-Key features set Fix Suggestions apart. It has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. The [Snyk Code engine](../../scan-applications/snyk-code/snyk-code-local-engine.md) rigorously checks the suggestions from the neural network, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
+Key features set Fix Suggestions apart. It has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. The [Snyk Code engine](../snyk-code-local-engine.md) rigorously checks the suggestions from the neural network, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
 
 ## What issues can you fix automatically?
 
@@ -28,7 +28,7 @@ A representation of information flow involved in fixing one issue is presented i
 
 * Snyk Security Code, Open Source Dependencies, IaC Configurations IDE plugin. Available for IDE plugins that use Language Server, such as [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview) and [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations).
 * Available in the USA Multi-Tenant region. \
-  To learn where Snyk offers data residency, see [What regions are available?](../../more-info/data-residency-at-snyk.md#what-regions-are-available)
+  To learn where Snyk offers data residency, see [What regions are available?](../../../more-info/data-residency-at-snyk.md#what-regions-are-available)
 
 ## Fix Suggestions language support
 
@@ -38,7 +38,7 @@ Fix Suggestions supports only [Javascript](broken-reference) and Typescript.
 
 Enable DeepCode AI Fix Suggestions for your Organization in Snyk Web UI by navigating to **Settings** > **Snyk Preview**.
 
-<figure><img src="../../.gitbook/assets/enable_fix_suggestions_snyk_preview.png" alt="DeepCodeAI Fix Suggestions settings in Snyk Preview"><figcaption><p>DeepCodeAI Fix Suggestions settings in Snyk Preview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/enable_fix_suggestions_snyk_preview.png" alt="DeepCodeAI Fix Suggestions settings in Snyk Preview"><figcaption><p>DeepCodeAI Fix Suggestions settings in Snyk Preview</p></figcaption></figure>
 
 {% hint style="info" %}
 **Prerequisites for enabling Fix Suggestions**
@@ -54,15 +54,15 @@ Consider the following scenario where hardcoded credentials are fixed using Deep
 
 Snyk highlights hardcoded credentials as a vulnerability by adding a **Fix this issue** element in the IDE.
 
-<figure><img src="../../.gitbook/assets/fix_suggestions_discovery (1).png" alt="Discovering a vulnerability in the code"><figcaption><p>Discovering a vulnerability in the code</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fix_suggestions_discovery (1).png" alt="Discovering a vulnerability in the code"><figcaption><p>Discovering a vulnerability in the code</p></figcaption></figure>
 
 The issue is fixed by replacing the credentials with environment variables.
 
-<figure><img src="../../.gitbook/assets/fix_suggestions_fix_applied (1).png" alt="Fix applied with DeepCode AI Fix "><figcaption><p>Fix applied with DeepCode AI Fix </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fix_suggestions_fix_applied (1).png" alt="Fix applied with DeepCode AI Fix "><figcaption><p>Fix applied with DeepCode AI Fix </p></figcaption></figure>
 
 You can follow the entire sequence in this short (12-second) video.
 
-<figure><img src="../../.gitbook/assets/fix_hardcoded_secret.gif" alt="Fix hardcoded credentials with DeepCode AI Fix"><figcaption><p>Fix hardcoded credentials with DeepCode AI Fix</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fix_hardcoded_secret.gif" alt="Fix hardcoded credentials with DeepCode AI Fix"><figcaption><p>Fix hardcoded credentials with DeepCode AI Fix</p></figcaption></figure>
 
 ## What data does DeepCode AI Fix Suggestions collect?
 
@@ -76,4 +76,4 @@ The data collection process is thorough and includes the following:
 
 The training data is ensured to be of the highest quality to optimize the performance of the LLM.
 
-For more information, see [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md).
+For more information, see [How Snyk handles your data](../../../more-info/how-snyk-handles-your-data.md).
