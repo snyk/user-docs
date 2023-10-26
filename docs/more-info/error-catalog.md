@@ -686,7 +686,9 @@ An error occurred while updating dependencies.
 
 #### No matching distribution found for one or more of the packages
 
-One or more of the packages require a different Python version.
+At least one of the packages requires a Python version that doesn't match the one used in the project scan.
+Make sure to select a suitable Python version from the organization Python language settings.
+Alternatively, add a `.snyk` file for Python version selection override.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1224,4 +1226,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-24T08:00:51.471Z
+--- Generated at 2023-10-26T06:07:16.506Z
