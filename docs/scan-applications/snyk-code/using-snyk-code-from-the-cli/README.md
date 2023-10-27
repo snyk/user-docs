@@ -1,4 +1,4 @@
-# Using Snyk Code from the CLI
+# Analyze code with Snyk Code CLI
 
 The [Snyk Command Line Interface](../../../snyk-cli/) (CLI) enables you to bring the functionality of Snyk Code into your development workflow. Using the Snyk CLI, you can run Snyk Code tests locally or incorporate them into your CI/CD pipeline to scan your source code for security vulnerabilities.
 
@@ -23,13 +23,13 @@ For more information, see [Testing your source code via the CLI](../../../scan-a
 Before running Snyk Code tests with the CLI, you may want to do the following:
 
 * [Update your Snyk CLI version](../../../snyk-cli/install-or-update-the-snyk-cli/).
-* [Set the Organization for the CLI tests](../../../scan-application-code/snyk-code/cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests/).
+* [Set the Organization for the CLI tests](set-the-snyk-organization-for-the-cli-tests.md).
 * [Exclude directories and files from the Snyk Code test](../../../scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md).
 
 After running a Snyk Code test, you can do the following:
 
-* [Explore the Snyk Code CLI results](../../../scan-application-code/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md).
-* [Filter the CLI results, and display only issues with a specific severity level and higher](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/displaying-only-discovered-issues-above-a-specific-severity-level.md).
-* [Output the CLI results to a JSON or SARIF format in the terminal](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md).
-* [Export the CLI results to a JSON or SARIF format file](../../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md).
+* [Explore the Snyk Code CLI results](broken-reference).
+* [Filter the CLI results, and display only issues with a specific severity level and higher](broken-reference).
+* [Output the CLI results to a JSON or SARIF format in the terminal](broken-reference).
+* [Export the CLI results to a JSON or SARIF format file](broken-reference).
 * [Display the CLI results in an HTML format using the Snyk-to-HTML feature](../../../snyk-cli/cli-tools/snyk-to-html/).

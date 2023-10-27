@@ -63,7 +63,7 @@ For more information, see the following pages:
 After you finish running a Snyk CLI scan, the results are displayed in the terminal. The following pages explain the results for Snyk Open Source, Snyk Code, and Snyk Container scans:
 
 * [Review the Snyk Open Source CLI results](../../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/review-the-snyk-open-source-cli-results.md)
-* [Working with the Snyk Code CLI results](../../scan-application-code/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/)
+* [Working with the Snyk Code CLI results](../snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results.md)
 * [Understand Snyk Container CLI results](../../scan-containers/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md)
 
 ## Scan using the Web UI

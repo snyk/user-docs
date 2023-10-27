@@ -1,4 +1,4 @@
-# Publishing Snyk Code CLI results to a Snyk Project and ignoring CLI results (beta)
+# Publish Snyk Code CLI results
 
 Using Snyk Code, you can publish results to a Snyk Project with or without using an integration. The sections of this page explain how:
 
@@ -84,7 +84,7 @@ Be sure you have the prerequisites and publish the results as you intend:
   * Find the Project ID in the URL of the Project in the Snyk Web UI: https://app.snyk.io/org/org\_name/project/PROJECT\_UUID
   * Or use the GET Projects method through the [Snyk API.](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org\_id-/projects)&#x20;
 * The CLI results are pushed to the SCM Project that is monitoring your **default branch**. Consider using the command on your default branch.
-* In the SCM integration, three snapshots are stored at a time. To save scan results, consider outputting a static [JSON or SARIF file](working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md) for future reference.
+* In the SCM integration, three snapshots are stored at a time. To save scan results, consider outputting a static [JSON or SARIF file](broken-reference) for future reference.
 
 Use the following command to publish to a specific Project:
 

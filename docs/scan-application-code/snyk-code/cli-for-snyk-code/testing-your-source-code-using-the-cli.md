@@ -1,4 +1,4 @@
-# Testing your source code using the CLI
+# Scan source code with Snyk Code CLI
 
 Snyk Code enables you to test the source code of your repositories using the Snyk CLI.
 
@@ -24,7 +24,7 @@ snyk code test
 
 No additional options are required for using the `snyk code test` command to test a repository from its root folder.
 
-Snyk Code tests the current folder and displays the [test results](snyk-code-cli-results.md) in the terminal.
+Snyk Code tests the current folder and displays the [test results](broken-reference) in the terminal.
 
 For example, to test the `snyk-goof` repository from its root folder, first change the directory to the root folder of the repository. Then enter:
 
@@ -54,10 +54,6 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof
 
 <figure><img src="../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2 (1).png" alt="Example of Snyk Code CLI test results"><figcaption><p>Example of Snyk Code CLI test results</p></figcaption></figure>
 
-* To explore the test results, see [Understanding the Snyk Code CLI results](snyk-code-cli-results.md).
-* To work with the test results, see:
-  * [Displaying only discovered issues above a specific severity level](working-with-the-snyk-code-cli-results/displaying-only-discovered-issues-above-a-specific-severity-level.md).
-  * [Outputting the test results to JSON or SARIF format in the terminal.](working-with-the-snyk-code-cli-results/outputting-the-test-results-to-json-or-sarif-format-in-the-terminal.md)
-  * [Exporting the test results to a JSON or SARIF file](working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file.md).
-  * [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../../../snyk-cli/cli-tools/snyk-to-html/).
+* To explore the test results, see [View Snyk Code CLI results](../../../scan-applications/snyk-code/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results.md).
+* To work with the test results, see [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../../../snyk-cli/cli-tools/snyk-to-html/).
 
