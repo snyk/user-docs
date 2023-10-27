@@ -11,7 +11,7 @@ This documentation provides guidance and information for using the Snyk CLI to b
 
 For additional information, see the following pages:
 
-* [Use Snyk Open Source from the CLI](../scan-applications/snyk-open-source/use-snyk-open-source-from-the-cli/)
-* [Using Snyk Code via the CLI](../scan-applications/snyk-code/using-snyk-code-from-the-cli/)
-* [Snyk CLI for container security](../scan-applications/snyk-container/use-snyk-container-from-the-cli/)
+* [Use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli/)
+* [Using Snyk Code via the CLI](using-snyk-code-from-the-cli/)
+* [Snyk CLI for container security](use-snyk-container-from-the-cli/)
 * [Snyk CLI for Infrastructure as Code](../scan-infrastructure/snyk-cli-for-iac/)

@@ -7,13 +7,13 @@ The Snyk CLI enables you to perform the following actions on the results of the 
 * [Output test results](working-with-the-snyk-code-cli-results.md#output-test-results): Output the `snyk code test` results to a JSON or SARIF format in the terminal instead of displaying the results in the standard CLI format.
 * [Export test results](working-with-the-snyk-code-cli-results.md#export-test-results): Export the CLI Code results to a JSON or SARIF format file.
 
-You can also [display the CLI results in HTML format using the Snyk-to-HTML feature](../../../snyk-cli/cli-tools/snyk-to-html/).
+You can also [display the CLI results in HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html/).
 
 ## Analyze Snyk Code CLI results
 
 After you run the `snyk code test` command in the CLI, the results of the test are displayed:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results Details - 2.png" alt="Snyk Code test restuls from the CLI"><figcaption><p>Snyk Code test restuls from the CLI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results Details - 2.png" alt="Snyk Code test restuls from the CLI"><figcaption><p>Snyk Code test restuls from the CLI</p></figcaption></figure>
 
 Note that if you ignored issues on the Snyk Web UI, these issues would still appear in the CLI results. Each section on this page explains one section of the results displayed.
 
@@ -23,7 +23,7 @@ The list of issues discovered in the Snyk Code test is organized by the severity
 
 For each detected issue, the following information is provided:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Issue summary - 2.png" alt="CLI test information for each Snyk Code issue"><figcaption><p>CLI test information for each Snyk Code issue</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Issue summary - 2.png" alt="CLI test information for each Snyk Code issue"><figcaption><p>CLI test information for each Snyk Code issue</p></figcaption></figure>
 
 * Header: The severity level and vulnerability type of the issue.
 * Path: The file name and the line in the file where the issue was found. These location details refer to the Sink of the issue, meaning where the vulnerability may be executed in the tested repository.
@@ -31,13 +31,13 @@ For each detected issue, the following information is provided:
 
 The message that appears in the `Info` section is the same as the one in the **Data flow** section on the Web UI:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Issue summary - In the UI - 2.png" alt="CLI test Info for Snyk Code issue in the Data flow section"><figcaption><p>CLI test Info for Snyk Code issue in the Data flow section</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Issue summary - In the UI - 2.png" alt="CLI test Info for Snyk Code issue in the Data flow section"><figcaption><p>CLI test Info for Snyk Code issue in the Data flow section</p></figcaption></figure>
 
 ### General information about the test results
 
 The general information about the test results includes the following details:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Test summary - 2.png" alt="Details in general information about the CLI test results"><figcaption><p>Detals in general information about the CLI test results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Test summary - 2.png" alt="Details in general information about the CLI test results"><figcaption><p>Detals in general information about the CLI test results</p></figcaption></figure>
 
 * Test success: Whether the test was completed or not.
 * Organization: The Snyk ID or internal name of the Organization under which the test run. For more information, see [Set the Snyk Organization for the CLI tests](set-the-snyk-organization-for-the-cli-tests.md).
@@ -48,15 +48,15 @@ The general information about the test results includes the following details:
 
 The summary of the test findings includes the following details:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Summary - 2.png" alt="Summary ot CLI test findings for Snyk Code issues"><figcaption><p>Summary ot CLI test findings for Snyk Code issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Summary - 2.png" alt="Summary ot CLI test findings for Snyk Code issues"><figcaption><p>Summary ot CLI test findings for Snyk Code issues</p></figcaption></figure>
 
 * The number of vulnerability issues that Snyk Code discovered in the tested repository.
 * The number of discovered issues at each severity level.
 
 {% hint style="info" %}
-The `snyk code test` command has exit codes. See the help for [definitions of these codes](../../../snyk-cli/commands/code-test.md#exit-codes). To see the exit code, run `snyk code test -d`.
+The `snyk code test` command has exit codes. See the help for [definitions of these codes](../commands/code-test.md#exit-codes). To see the exit code, run `snyk code test -d`.
 
-For a summary of exit codes for all CLI commands, see the [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md).
+For a summary of exit codes for all CLI commands, see the [CLI commands and options summary](../cli-commands-and-options-summary.md).
 {% endhint %}
 
 ## Filter results by severity level
@@ -73,7 +73,7 @@ The results will include only issues with the specified severity level and issue
 
 For example, in the `snyk-goof-master` folder, eight issues were found, four with a High severity level and four with Medium:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - before - 2.png" alt="CLI test results for Snyk Code with High and Medium severity"><figcaption><p>CLI test results for Snyk Code with High and Medium severity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - before - 2.png" alt="CLI test results for Snyk Code with High and Medium severity"><figcaption><p>CLI test results for Snyk Code with High and Medium severity</p></figcaption></figure>
 
 To display only issues with a High severity level and above, enter the following:
 
@@ -83,7 +83,7 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof-master --severit
 
 The results show four issues, all with a High severity level. Issues with a lower severity level are not displayed:
 
-![CLI test results for Snyk Code with High severity](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - after - 2.png>)
+![CLI test results for Snyk Code with High severity](<../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - after - 2.png>)
 
 ## Severity levels in JSON and SARIF files
 
@@ -95,7 +95,7 @@ The severity levels of the issues discovered by running `snyk code test` are dis
 
 An example follows:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - JSON and SARIF - Severity Level Results.png" alt="Low severity level in JSON or SARIF file"><figcaption><p>Low severity level in JSON or SARIF file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk Code - CLI - JSON and SARIF - Severity Level Results.png" alt="Low severity level in JSON or SARIF file"><figcaption><p>Low severity level in JSON or SARIF file</p></figcaption></figure>
 
 ## Output test results
 
@@ -117,7 +117,7 @@ The designation Critical is not used in Snyk Code.
 
 An example of medium level severity follows:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - JSON and SARIF - Severity Level Results - in the Terminal.png" alt="Medium severity in JSON or SARIF output"><figcaption><p>Medium severity in JSON or SARIF output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk Code - CLI - JSON and SARIF - Severity Level Results - in the Terminal.png" alt="Medium severity in JSON or SARIF output"><figcaption><p>Medium severity in JSON or SARIF output</p></figcaption></figure>
 
 ### Output test results in JSON format
 
@@ -137,7 +137,7 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof-master --json
 
 The test results appear in the terminal in JSON format:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - JSON output in the terminal.png" alt="snyk code test results in JSON format"><figcaption><p><code>snyk code test</code> results in JSON format</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk Code - CLI - results - JSON output in the terminal.png" alt="snyk code test results in JSON format"><figcaption><p><code>snyk code test</code> results in JSON format</p></figcaption></figure>
 
 ### Output test results in SARIF format
 
@@ -157,7 +157,7 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof-master --sarif
 
 The test results appear in the terminal in SARIF format:
 
-![ code test results in SARIF format](<../../../.gitbook/assets/snyk Code - CLI - results - SARIF output in the terminal.png>)
+![ code test results in SARIF format](<../../.gitbook/assets/snyk Code - CLI - results - SARIF output in the terminal.png>)
 
 ## Export test results
 
@@ -183,7 +183,7 @@ snyk code test --json > <path/to/new_file>
 snyk code test --json-file-output=<path/to/new_file>
 ```
 
-The `snyk code test --json-file-output=<path/to/new_file>` command is available in Snyk CLI v. 1.910.0 and higher. To update your Snyk CLI version, see [Install or update the Snyk CLI](../../../snyk-cli/install-or-update-the-snyk-cli/).
+The `snyk code test --json-file-output=<path/to/new_file>` command is available in Snyk CLI v. 1.910.0 and higher. To update your Snyk CLI version, see [Install or update the Snyk CLI](../install-or-update-the-snyk-cli/).
 
 ### Export test results to a JSON file
 
@@ -209,11 +209,11 @@ snyk code test --json-file-output=json
 
 In the terminal, the Code test results appear in the standard format:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - 2 .png" alt="snyk code test results in the terminal"><figcaption><p><code>snyk code tes</code>t results in the terminal</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - 2 .png" alt="snyk code test results in the terminal"><figcaption><p><code>snyk code tes</code>t results in the terminal</p></figcaption></figure>
 
 In the repository folder, a JSON file is created:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - JSON file.png" alt="JSON file in repository"><figcaption><p>JSON file in repository</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - JSON file.png" alt="JSON file in repository"><figcaption><p>JSON file in repository</p></figcaption></figure>
 
 ### Export test results to a SARIF file
 
@@ -239,10 +239,10 @@ snyk code test --sarif-file-output=sarif
 
 In the terminal, the test results appear in the standard format:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results - 2.png" alt="snyk code test results in the terminal"><figcaption><p><code>snyk code tes</code>t results in the terminal</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results - 2.png" alt="snyk code test results in the terminal"><figcaption><p><code>snyk code tes</code>t results in the terminal</p></figcaption></figure>
 
 In the repository folder, a SARIF file is created:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results - SARIF file.png" alt="SARIF file in repository"><figcaption><p>SARIF file in repository</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results - SARIF file.png" alt="SARIF file in repository"><figcaption><p>SARIF file in repository</p></figcaption></figure>
 
 ###

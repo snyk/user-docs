@@ -49,7 +49,7 @@ snyk code test
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
 * [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../scan-application-code/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
+* [Exclude directories and files from the Snyk tests](../../snyk-cli/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
 * [Explore test results in a JSON or SARIF format in the terminal](broken-reference)
 * [Exporting the test results to a JSON or SARIF file](broken-reference)
 

@@ -133,7 +133,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 :link: [Supported Operating System Distributions](../../snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
 
-:link: [Snyk CLI for container security](../../snyk-container/use-snyk-container-from-the-cli/)&#x20;
+:link: [Snyk CLI for container security](../../../snyk-cli/use-snyk-container-from-the-cli/)&#x20;
 
 ### Infrastructure as Code
 
