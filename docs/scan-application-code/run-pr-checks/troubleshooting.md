@@ -23,12 +23,26 @@ If you come across false positive or false negative results, you can take action
 
 The following table lists code analysis errors and how to address them.
 
-| Error                                               | Description                                                                                                                      | Action                                                                                                                                      |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Failed to start code analysis.                      | <p>Error causes:</p><ul><li>The PR Checks cannot be created in the database.</li><li>The commit status cannot be sent.</li></ul> | Wait a few minutes, then t[ry again](../../scan-applications/run-pr-checks/analyze-pr-checks-results.md#optional-re-run-pr-checks-results). |
-| Could not complete the PR analysis.                 | The PR Checks result has an unexpected status.                                                                                   | Close and re-open the pull request again in your connected Git repository (for example, GitHub).                                            |
-| Failed to analyze code.                             | <p>Error causes:</p><ul><li>The analysis cannot be completed.</li><li>The commit status cannot be sent.</li></ul>                | Wait a few minutes, then t[ry again](../../scan-applications/run-pr-checks/analyze-pr-checks-results.md#optional-re-run-pr-checks-results). |
-| Upstream rate limit triggered while analyzing code. | The Git server rate limit has been reached and the repository cannot be read.                                                    | Wait a few minutes, then t[ry again](../../scan-applications/run-pr-checks/analyze-pr-checks-results.md#optional-re-run-pr-checks-results). |
-| No valid credentials to perform code analysis.      | The personal access token or OAuth is not recognized or the user access is not provisioned.                                      | Revise your configuration on the Git repository side.                                                                                       |
+| Error                                               | Description                                                                                                                      | Action                                                                                                                                            |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Failed to start code analysis.                      | <p>Error causes:</p><ul><li>The PR Checks cannot be created in the database.</li><li>The commit status cannot be sent.</li></ul> | Wait a few minutes, then [try again](troubleshooting.md#re-run-pr-checks-results).                                                                |
+| Could not complete the PR analysis.                 | The PR Checks result has an unexpected status.                                                                                   | Wait a few minutes, then [try again](troubleshooting.md#re-run-pr-checks-results) or [mark as successful](troubleshooting.md#mark-as-successful). |
+| Failed to analyze code.                             | <p>Error causes:</p><ul><li>The analysis cannot be completed.</li><li>The commit status cannot be sent.</li></ul>                | Wait a few minutes, then [try again](troubleshooting.md#re-run-pr-checks-results) or [mark as successful](troubleshooting.md#mark-as-successful). |
+| Upstream rate limit triggered while analyzing code. | The Git server rate limit has been reached and the repository cannot be read.                                                    | Wait a few minutes, then [try again](troubleshooting.md#re-run-pr-checks-results) or [mark as successful](troubleshooting.md#mark-as-successful). |
+| No valid credentials to perform code analysis.      | The personal access token or OAuth is not recognized or the user access is not provisioned.                                      | Revise your configuration on the Git repository side for any credential issues.                                                                   |
+
+## What to do if there are errors
+
+### Re-run PR Checks results
+
+To re-run PR Checks results:
+
+* Create an empty commit for example with `git commit –allow-empty`&#x20;
+* Create a new commit with a fix or additional capability
+* Close and re-open the pull request in your connected Git repository (for example, GitHub).
+
+### Mark as successful
+
+Provide specific users or roles with the capability to pass the PR Check when errors happen. This can be done through the Snyk link in the PR Check and Marking as successful.&#x20;
 
 [^1]: [andrei.onciu](http://127.0.0.1:5000/u/Ge4Ptulj2Hb65sgVH1Uanpl5nZv2 "mention") the link here is not&#x20;

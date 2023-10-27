@@ -78,7 +78,11 @@ For more information, see [Automated pull request creation for new fixes](../../
 
 ### **Pull request tests**
 
-Snyk tests any newly-created pull request in your repositories for security vulnerabilities and sends a build check to Bitbucket DC/Server. You can see directly from Bitbucket DC/Server whether or not the pull request introduces new security issues.
+{% hint style="warning" %}
+Snyk Code PR Checks are only available for Bitbucket DC/Server versions 7.0 and above
+{% endhint %}
+
+Snyk tests any newly created pull request in your repositories for security vulnerabilities and sends a build check to Bitbucket DC/Server. You can see directly from Bitbucket DC/Server whether or not the pull request introduces new security issues.
 
 The example that follows shows a Snyk pull request build check on the Bitbucket DC/Server **Pull Request** page.
 

@@ -11,6 +11,10 @@ You need Docker or a way to run Docker Linux containers. Some Docker deployments
 
 ## Configure Broker to be used with Bitbucket
 
+{% hint style="warning" %}
+Snyk Code PR Checks are available only for Bitbucket DC/Server versions 7.0 and above
+{% endhint %}
+
 The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment.
 
 To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:bitbucket-server`. Refer to [BitBucket Server/Data Center - environment variables](bitbucket-server-data-center-environment-variables-for-snyk-broker.md) for Snyk Broker for definitions of the environment variables.
