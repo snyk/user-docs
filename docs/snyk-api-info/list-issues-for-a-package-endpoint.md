@@ -10,10 +10,6 @@ The current release supports the following `purl` types: `apk`, `cargo`, `cocoap
 
 If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
-{% hint style="info" %}
-For `golang`, Snyk supports `purl` for both modules and packages. Snyk supports only semantic versions and does not support pseudo-versions.&#x20;
-{% endhint %}
-
 The API is useful when you have a list of packages and want to retrieve a list of vulnerabilities for a package version.
 
 {% hint style="info" %}
