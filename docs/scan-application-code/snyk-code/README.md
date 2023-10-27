@@ -1,10 +1,10 @@
 # Snyk Code
 
 {% hint style="info" %}
-To start scanning your code, see [Scan code](../../scan-applications/start-scanning/scan-code/).
+To start scanning your code, see [Scan code](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/scan-code/).&#x20;
 {% endhint %}
 
-Snyk is dedicated to the premise that security must be implemented developer-first to meet the speed and scale needs of software-driven businesses.
+Snyk is dedicated to the premise that security must be implemented developer-first to meet the speed and scale needs of software-driven businesses.&#x20;
 
 The problem with traditional SAST products is they do not work for developers. They are too slow, with scans that can take several hours, and they historically have had poor accuracy and returned too many false positives. This created hours of wasted time as false alarms were chased down. These problems eroded the developer's trust in the tool, and these products required security expertise to make their output actionable, so developers could remediate the issues they found. Snyk changed all of this.
 

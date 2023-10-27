@@ -5,7 +5,7 @@ You can deploy Snyk Code in several ways:
 ## Full SaaS solution&#x20;
 
 Get the most out of Snyk Code with a native SCM integration, easy onboarding, and continuous updates.\
-See [Getting started with Snyk Code](../../scan-applications/start-scanning/scan-code/activate-snyk-code-using-the-web-ui.md).
+See [Getting started with Snyk Code](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/scan-code/activate-snyk-code-using-the-web-ui.md).
 
 ## SaaS with a self-hosted Git server (requires Snyk Broker)
 
