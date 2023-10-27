@@ -27,6 +27,7 @@ The following explains how the `.snyk` file works.
 * If there is a `.snyk` file in the Project, `snyk test` uses that file as the ignore mechanism, instead of the ignores set from the Web UI.
 * When the `.snyk` file is included in an SCM Project, Snyk considers both the database ignores and the `.snyk` ignores.
 * Developers can ignore issues by using the .snyk policy file when running `snyk monitor`.
+* You can use the `.snyk` file to specify the files or directories to exclude from the Snyk Code scan that will generate the Code Analysis Project.
 * The `.snyk` file defines certain analysis configuration items such as `language settings:` for the Python version.
   * For SCM scans, for example, GitHub, the Snyk Web UI limits users to setting Python versions at the Organization level.
   * When you include the `.snyk` file in your code repository and the `language settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans.
