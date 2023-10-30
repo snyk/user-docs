@@ -1126,7 +1126,7 @@ Snyk could not get the custom pull request template attributes, using the given 
 
 #### Not found
 
-Could not find pull request template.
+Could not find pull request template. The file might be missing or wrong file name was provided.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
@@ -1135,7 +1135,7 @@ Could not find pull request template.
 
 #### Failed to compile pull request template
 
-Could not compile your customize pull request template, using Handlebars compilation and Snyk variables in place.
+Could not compile your customize pull request template. Please check for syntax errors using the Snyk variables inside the template.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -1159,7 +1159,7 @@ Snyk could not parse the custom pull request template, using the given variables
 
 Could not load YAML file after substituting Snyk variables into the custom PR template.
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
@@ -1214,7 +1214,18 @@ Snyk could not delete pull request template.
 
 The pull request template payload is invalid.
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
---- Generated at 2023-10-30T14:31:27.134Z
+### [SNYK-PR-TEMPLATE-0011](#snyk-pr-template-0011)
+
+#### Failed to load JSON file after substituting Snyk variables
+
+Could not load JSON file after substituting Snyk variables into the custom PR template.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+--- Generated at 2023-10-30T15:16:27.553Z
