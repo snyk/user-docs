@@ -7,7 +7,6 @@ You must include an `accept.json` file for this deployment. Copy the new accept.
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=container-registry-agent \
-             --set brokerClientUrl=http://container-registry-agent-broker-service:8000 \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
              --set crType=<ENTER_CR_TYPE> \
              --set crBase=<ENTER_CR_BASE_URL> \
@@ -41,7 +40,6 @@ Elastic Container Registry and Digital Ocean Container Registry require specific
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=container-registry-agent \
-             --set brokerClientUrl=http://container-registry-agent-broker-service:8000 \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
              --set crType=ecr \
              --set crRoleArn=<ENTER_CR_ROLE_ARN> \
@@ -58,7 +56,6 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=container-registry-agent \
-             --set brokerClientUrl=http://container-registry-agent-broker-service:8000 \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
              --set crType=digitalocean-cr \
              --set crBase=<ENTER_CR_BASE_URL> \
