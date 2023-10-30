@@ -108,7 +108,7 @@ snyk code test
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
 * [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../snyk-cli/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
+* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
 * [Explore test results in a JSON or SARIF format in the terminal ](broken-reference)
 * [Exporting the test results to a JSON or SARIF file](broken-reference)
 
@@ -421,7 +421,7 @@ Snyk provides flexible capabilities, including:
 * Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
 * Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
 * The Snyk CLI can be used in most CI/CD systems (see [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
-  * Fail the build based on criteria using options or the [snyk-filter](../../snyk-cli/cli-tools/snyk-filter.md) tool
+  * Fail the build based on criteria using options or the [snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) tool
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
 * With Partner Platforms: Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk.
   * Note for Java: using the Git integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe is suggested.

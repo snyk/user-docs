@@ -4,13 +4,13 @@ If you have several Organizations in your Snyk account, before you test your cod
 
 You can find your available CLI test count on the Organization **Settings** page -> **Usage** tab -> **Test Usage** section -> **Snyk Code** field:
 
-<figure><img src="../../.gitbook/assets/snyk-code-usage.png" alt="Snyk Code allowed test usage"><figcaption><p>Snyk Code allowed test usage</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-code-usage.png" alt="Snyk Code allowed test usage"><figcaption><p>Snyk Code allowed test usage</p></figcaption></figure>
 
 By default, the CLI runs tests under your **Preferred Organization**, as defined in your **Account settings:**
 
-<figure><img src="../../.gitbook/assets/snyk-pref-org.png" alt="Preferred Organization in Snyk Account settings"><figcaption><p>Preferred Organization in Snyk Account settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-pref-org.png" alt="Preferred Organization in Snyk Account settings"><figcaption><p>Preferred Organization in Snyk Account settings</p></figcaption></figure>
 
-You can [change your **Preferred Organization**](../../snyk-admin/manage-groups-and-organizations/manage-organizations.md) or set another Organization for the CLI tests via the CLI.
+You can [change your **Preferred Organization**](../../../snyk-admin/manage-groups-and-organizations/manage-organizations.md) or set another Organization for the CLI tests via the CLI.
 
 When setting an Organization for the CLI tests, you have two options:
 
@@ -25,7 +25,7 @@ Follow these steps to find an Organization ID and internal name:
 
 1\. On the Snyk Web UI, open the Organization whose details you want to find:
 
-<figure><img src="../../.gitbook/assets/snyk-org-switcher (1).png" alt="Open an Organization to find its details"><figcaption><p>Open an Organization to find its details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-org-switcher (1).png" alt="Open an Organization to find its details"><figcaption><p>Open an Organization to find its details</p></figcaption></figure>
 
 2\. Once the selected Organization is open, click the **Org Settings.**
 
@@ -37,11 +37,11 @@ Follow these steps to find an Organization ID and internal name:
   * When using the internal name for setting the Organization for the CLI tests, copy the name from the **Settings** page. The internal name is always written in lowercase letters.
 * **ID:** appears in the **Organization ID** section. You can use the **Copy** button to copy the ID to the CLI.
 
-<figure><img src="../../.gitbook/assets/snyk-org-info.png" alt="Organization name and ID"><figcaption><p>Organization name and ID</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-org-info.png" alt="Organization name and ID"><figcaption><p>Organization name and ID</p></figcaption></figure>
 
 ## Set the default Organization globally for CLI tests&#x20;
 
-You can set a default Organization globally for all CLI tests via the CLI. This default Organization will override the Organization set as the [preferred Organization](../../snyk-admin/manage-groups-and-organizations/manage-organizations.md). When entering this command, you can use either the [ID or internal name](set-the-snyk-organization-for-the-cli-tests.md#find-snyk-id-and-internal-name-of-an-organization) of the new default Organization.
+You can set a default Organization globally for all CLI tests via the CLI. This default Organization will override the Organization set as the [preferred Organization](../../../snyk-admin/manage-groups-and-organizations/manage-organizations.md). When entering this command, you can use either the [ID or internal name](set-the-snyk-organization-for-the-cli-tests.md#find-snyk-id-and-internal-name-of-an-organization) of the new default Organization.
 
 Regardless of the Organization you set as a global default, you can [run specific CLI tests under a different Organization](set-the-snyk-organization-for-the-cli-tests.md#set-an-organization-locally-for-a-specific-cli-test).
 
@@ -65,11 +65,11 @@ For example, to set the Snyk Demo Org as the default Organization for the CLI te
 snyk config set org=a7708807-3881-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-<figure><img src="../../.gitbook/assets/Snyk Code - CLI - Org - Setting global default.png" alt="Command to set Organization and confirmation"><figcaption><p>Command to set Organization and confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - Org - Setting global default.png" alt="Command to set Organization and confirmation"><figcaption><p>Command to set Organization and confirmation</p></figcaption></figure>
 
 From now on, all the CLI tests will run by default under the Snyk Demo Org Organization, and the Snyk Demo Org ID will appear in the test results:
 
-<figure><img src="../../.gitbook/assets/Snyk Code - CLI - Organization - Global Settings - Results - 2.png" alt="Snyk Demo Org ID in test results"><figcaption><p>Snyk Demo Org ID in test results</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - Organization - Global Settings - Results - 2.png" alt="Snyk Demo Org ID in test results"><figcaption><p>Snyk Demo Org ID in test results</p></figcaption></figure>
 
 ## Set an Organization locally for a specific CLI test
 
@@ -89,4 +89,4 @@ snyk code test --org=snyk-xxxx-xxx
 
 The internal name of the Snyk Test Org Organization appears in the results of this test:
 
-![Organization internal name in test results](<../../.gitbook/assets/Snyk Code - CLI - Organization - Specific test Settings - Results - 2.png>)
+![Organization internal name in test results](<../../../.gitbook/assets/Snyk Code - CLI - Organization - Specific test Settings - Results - 2.png>)

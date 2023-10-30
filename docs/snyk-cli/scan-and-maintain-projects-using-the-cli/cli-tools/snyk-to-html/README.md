@@ -11,11 +11,11 @@ For a full report that you can read, convert the `--json` output to HTML by usin
 
 For example, when you run the `snyk code test` command, summary results are displayed that do not include the data flow and fix analysis information you can see in the Web UI for each discovered issue:
 
-![](<../../../.gitbook/assets/Snyk-to-HTML - Results in the CLI Terminal - 2.png>)
+![](<../../../../.gitbook/assets/Snyk-to-HTML - Results in the CLI Terminal - 2.png>)
 
 When you use `snyk-to-html` to convert test results to an HTML file, you can view the vulnerability findings with their data flow and fix analysis information as an HTML report in a browser:
 
-![](<../../../.gitbook/assets/Snyk-to-HTML - HTML Report - 2.png>)
+![](<../../../../.gitbook/assets/Snyk-to-HTML - HTML Report - 2.png>)
 
 The steps to use `snyk-to-htm`l are as follows:
 

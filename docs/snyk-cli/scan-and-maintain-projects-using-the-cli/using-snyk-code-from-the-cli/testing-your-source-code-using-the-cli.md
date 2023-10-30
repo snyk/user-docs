@@ -12,7 +12,7 @@ When you test a folder, all its sub-folders and files are also tested.
 To exclude certain directories or files from the Snyk Code CLI test, you can use the following means:
 
 * The  `snyk ignore --file-path` command. See [Excluding directories and files from the Snyk Code test](excluding-directories-and-files-from-the-snyk-code-cli-test.md).
-* Manually creating a `.snyk` file in the tested folder. See [Excluding directories and files from the import process](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md).
+* Manually creating a `.snyk` file in the tested folder. See [Excluding directories and files from the import process](../../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md).
 
 ## **Testing a repository from its root folder**
 
@@ -34,7 +34,7 @@ snyk code test
 
 Snyk Code tests the `snyk-goof` repository, and displays the vulnerability issues that were discovered:
 
-<figure><img src="../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (5).png" alt="Example of Snyk Code CLI test results"><figcaption><p>Example of Snyk Code CLI test results</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (5).png" alt="Example of Snyk Code CLI test results"><figcaption><p>Example of Snyk Code CLI test results</p></figcaption></figure>
 
 ## **Testing a repository from a different location**
 
@@ -52,7 +52,7 @@ For example, to test the **snyk-goof** repository from another directory, enter:
 snyk code test /Users/username/Documents/Repositories/snyk-goof
 ```
 
-<figure><img src="../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2 (1).png" alt="Example of Snyk Code CLI test results"><figcaption><p>Example of Snyk Code CLI test results</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2 (1).png" alt="Example of Snyk Code CLI test results"><figcaption><p>Example of Snyk Code CLI test results</p></figcaption></figure>
 
 * To explore the test results, see [View Snyk Code CLI results](working-with-the-snyk-code-cli-results.md).
 * To work with the test results, see [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html/).

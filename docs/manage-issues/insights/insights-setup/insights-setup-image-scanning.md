@@ -18,7 +18,7 @@ Example:
 
 `snyk container monitor gcr.io/my-company/my-image:latest`
 
-For details, see [Snyk CLI for container security](../../../scan-applications/snyk-container/use-snyk-container-from-the-cli/).
+For details, see [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-container-from-the-cli/).
 
 ## Snyk Container registry scanning
 

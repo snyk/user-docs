@@ -133,7 +133,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 :link: [Supported Operating System Distributions](../../snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
 
-:link: [Snyk CLI for container security](../../snyk-container/use-snyk-container-from-the-cli/)&#x20;
+:link: [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-container-from-the-cli/)&#x20;
 
 ### Infrastructure as Code
 
@@ -141,9 +141,9 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Helpful Options/Plugins**
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../snyk-cli/cli-tools/snyk-to-html/).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html/).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
-* For advanced filtering options, see[ snyk-filter](../../../snyk-cli/cli-tools/snyk-filter.md).
+* For advanced filtering options, see[ snyk-filter](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
 
 Additional security topics for .Net developers
 
