@@ -61,13 +61,13 @@ The Members Read Only Organization scope is required if you use fine-grained per
 ### **How to authorize** your Personal Access Token and enable SSO:
 
 1. In Snyk, navigate to the **Integrations** page and click the **GitHub Enterprise** card.
-2. Enter your GitHub Enterprise URL and the personal access token (PAT) for the service account you created, and **Save** your changes. When Snyk successfully connects to the GitHub instance, the list of available repositories displays.
+2. Enter your GitHub Enterprise URL and the personal access token (PAT) for the service account you created, and **Save** your changes. After Snyk has successfully connected to the GitHub instance, the list of available repositories displays for your selection.
 3. If your GitHub Enterprise organization enforces SAML/SSO, select **Configure SSO** next to the PAT in GitHub after the PAT has been created.\
-   Occasionally, SSO is enforced in your GitHub Enterprise organizations after a PAT and Integration are configured. If this happens, any Projects that have already been imported show in Snyk, but retests, PR Checks, and so on, will not be performed. If this happens, check the **Configure SSO** settings to ensure the GitHub Enterprise Organization is **Authorized**.\
-   On occasion, an Organization shows as **Authorized**, but the retests and PR checks do not work. If this happens, de-authorizing the Organization and then re-authorizing it may help.
+   Occasionally, SSO is enforced in your GitHub Enterprise organizations after a PAT and Integration are configured. If this happens, any Projects that have already been imported show in Snyk, but retests, PR Checks, and so on, will not be performed. To fix this, check the **Configure SSO** settings to ensure the GitHub Enterprise organization is **Authorized**.\
+   If the organization is showing as **Authorized**, but the issue still persists, try de-authorizing the organization and then re-authorizing.
 
 {% hint style="info" %}
-To use the integration with GitHub Enterprise Cloud, add the URL 'https://api.github.com'. To integrate with a self-hosted GitHub Enterprise, add the URL 'https://your.github-enterprise.host' in step two of PAT authorization.
+To use the integration with GitHub Enterprise Cloud, add the URL 'https://api.github.com.' To integrate with a self-hosted GitHub Enterprise, add the URL 'https://your.github-enterprise.host' in step two of PAT authorization.
 {% endhint %}
 
 ### How to import GitHub repositories
@@ -78,7 +78,7 @@ Snyk starts scanning the selected repositories for dependency files, such as `pa
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16) (26).jpeg" alt="Imported Projects on the Projects page in Snyk"><figcaption><p>Imported Projects on the Projects page in Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16) (26).jpeg" alt="Importing selected repositories to Snyk"><figcaption><p>Importing selected repositories to Snyk</p></figcaption></figure>
 
 ## Uses of the Snyk GitHub Enterprise integration
 
