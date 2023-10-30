@@ -1,10 +1,10 @@
 # Use Snyk Open Source from the CLI: example
 
-This example shows how Snyk can integrate into your GitHub-based workflow, using the [Snyk CLI](../).
+This example shows how Snyk can integrate into your GitHub-based workflow, using the [Snyk CLI](../../../snyk-cli/).
 
 ### Step 1: Set up environment
 
-1.  Open up [Snyk CLI](../), and run a git clone command on the **goof** repository.
+1.  Open up [Snyk CLI](../../../snyk-cli/), and run a git clone command on the **goof** repository.
 
     ```
        git clone https://github.com/snyk/goof.git
@@ -20,7 +20,7 @@ This example shows how Snyk can integrate into your GitHub-based workflow, using
 
 Review the **package.json** manifest file in your cloned goof application, to see multiple direct dependencies listed:
 
-<figure><img src="../../.gitbook/assets/dependencies.png" alt="List of dependencies in the package.json file."><figcaption><p>List of dependencies in the package.json file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dependencies.png" alt="List of dependencies in the package.json file."><figcaption><p>List of dependencies in the package.json file</p></figcaption></figure>
 
 {% hint style="info" %}
 These direct dependencies can also have additional transitive dependencies; libraries that they depend on.
@@ -79,13 +79,13 @@ GitHub has received your changes on your **add\_vulns** branch.
 
 * In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:
 
-<figure><img src="../../.gitbook/assets/click-compare.png" alt="Pull request information in GitHub."><figcaption><p>Pull request information</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/click-compare.png" alt="Pull request information in GitHub."><figcaption><p>Pull request information</p></figcaption></figure>
 
 ### Step 4: Snyk runs PR Checks
 
 Snyk can auto-scan your pull request (PR) for vulnerabilities and license issues in the merge process:
 
-<figure><img src="../../.gitbook/assets/snyk_vuln_lic_check (1).png" alt="Snyk pull request checks in GitHub."><figcaption><p>Snyk pull request checks in GitHub</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk_vuln_lic_check (1).png" alt="Snyk pull request checks in GitHub."><figcaption><p>Snyk pull request checks in GitHub</p></figcaption></figure>
 
 As the PR workflow is completed, Snyk validated the vulnerability and license policy set for the project. Based on the policy, the checks either passed or failed; this is shown in GitHub.
 

@@ -61,7 +61,7 @@ This command:
 3. Sends the bill of materials to the Snyk service.
 4. Returns a link to the Snyk service, where you can see the results.
 
-<figure><img src="../../.gitbook/assets/monitor.png" alt="Recommendatios for upgrading the base image"><figcaption><p>Recommendatios for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/monitor.png" alt="Recommendatios for upgrading the base image"><figcaption><p>Recommendatios for upgrading the base image</p></figcaption></figure>
 
 {% hint style="info" %}
 It is common to use both `test` and `monitor` commands with Snyk Container. You can use the `test` command for quick checks. You can use the `monitor` command for ongoing assurance and to easily share results.
