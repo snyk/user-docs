@@ -1,7 +1,5 @@
 # Manage team work using Reports
 
-## Introduction
-
 {% hint style="info" %}
 **Recap**\
 You have seen how to view your Snyk Projects, understand Snyk scan results, fix vulnerabilities, and integrate fix work into your development workflow.
@@ -9,7 +7,7 @@ You have seen how to view your Snyk Projects, understand Snyk scan results, fix 
 
 This section describes how to monitor fix work, using [Snyk Reports](../../manage-issues/reporting/legacy-reports/).
 
-### View reports
+## View reports
 
 {% hint style="info" %}
 **Feature availability**\
@@ -24,13 +22,13 @@ Click **Reports** to access the vulnerability information for all Snyk Projects 
 By default, results are shown for the last 90 days: use the **Show report for:** list in the top right to change the duration.
 {% endhint %}
 
-### Reports Security issues
+## Report Security issues
 
 The **Security Issues** section shows the number of vulnerabilities, their type, and how many of them Snyk identifies as automatically fixable with an upgrade PR (see [Fix your first vulnerability](fix-your-first-vulnerability.md)).
 
 <figure><img src="../../.gitbook/assets/image (302) (1) (1).png" alt="Security issues in Reports"><figcaption><p>Security issues in Reports</p></figcaption></figure>
 
-### Show issues over time
+## Show issues over time
 
 The **Issues over time** graph shows the history of vulnerabilities in your Organization:
 
@@ -38,7 +36,7 @@ The **Issues over time** graph shows the history of vulnerabilities in your Orga
 
 This shows the number of overall vulnerabilities, and the number of Projects being scanned (the dotted line in the graph).
 
-#### Why do numbers increase?
+### Why do numbers increase?
 
 If you simply see more vulnerabilities in your codebase over time, this may not accurately reflect your team's work to improve security.
 
@@ -46,13 +44,13 @@ For example, the total number of vulnerabilities is likely to rise when you add 
 
 <figure><img src="../../.gitbook/assets/image (116) (1) (1).png" alt="More Projects, more issues"><figcaption><p>More Projects, more issues</p></figcaption></figure>
 
-#### Security metric: ratio of vulnerabilities to Projects
+### Security metric: ratio of vulnerabilities to Projects
 
 Instead of measuring the total numbers of issues, one useful overall security metric is to compare the number of vulnerabilities with the number of Projects being scanned, and use this ratio as a measure of overall security.
 
 For example, if you double the number of Projects you scan, but only add 10% to the total number of vulnerabilities, your general security is likely to improve. Alternatively, if you see an increase in the number of vulnerabilities, but no increase in the number of Projects being scanned (perhaps because a new vulnerability is discovered in an existing open-source library), then your security is likely to be getting worse.
 
-### Viewing snapshot summary
+## View snapshot summary
 
 You can hover over a date to see the summary of “to this date” information at that point:
 
@@ -60,7 +58,7 @@ You can hover over a date to see the summary of “to this date” information a
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 
-### View activity
+## View activity
 
 The **Activity** section shows the activity over the report period:
 
@@ -75,7 +73,7 @@ For the reporting period (90 days by default), this activity shows:
 * **Tests preventing issues**: occasions when the team attempted to merge code changes, but Snyk scans informed the team that these changes would have created new issues, so helping prevent new security issues.
 * **Ignored issues**: a team member decided to ignore that issue.
 
-### Filter search results
+## Filter search results
 
 If you have many Projects to manage and organize in your Organization, you can use filters to focus on specific Projects or specific types of vulnerability:
 
@@ -90,7 +88,7 @@ Remember, a Snyk Project represents a single scan item, such as a manifest file.
 
 For Open Source vulnerabilities, we also have tagging, which lets you add your own tags, including custom values for metadata. See [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../snyk-admin/introduction-to-snyk-projects/project-attributes.md).
 
-#### Dashboard results and report results
+## Dashboard results and report results
 
 Filtering results in Reports means that your Dashboard view may show different numbers to your Reports screen.
 
@@ -104,7 +102,7 @@ This is because, when Snyk scans the Dockerfile, there will be vulnerabilities i
 To see a report across all your Organizations, navigate to the Snyk Group level and look at reports there.
 {% endhint %}
 
-### Reports: Issues
+## Reports: Issues
 
 Click the **Issues** tab to see a full list of all issues for your Organization:
 
@@ -118,11 +116,11 @@ Click **Export** to export or print these results.
 You cannot currently export charts and data in the reports summary page.
 {% endhint %}
 
-#### More information
+## More information
 
 See [Reports](../../manage-issues/reporting/legacy-reports/) for more details.
 
-### What's next?
+## What's next?
 
 This concludes this walkthrough.
 

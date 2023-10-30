@@ -16,7 +16,7 @@ If you have a Dockerfile in your source code repository, the default settings wi
 
 Terraform and Kubernetes configuration files scanned from source code repositories are counted as Snyk IaC scans.
 
-For container scans from a registry or your Kubernetes cluster, Snyk counts the initial scan and subsequent recurring scans. By default, these are run once per day.
+For container scans from a registry or your Kubernetes cluster, Snyk counts the initial scan and subsequent recurring scans. By default, recurring scans run once a day.
 
 ## Counting recurring scans
 
@@ -36,7 +36,7 @@ For Snyk IaC, the command is `snyk iac test`. Since this can scan multiple Proje
 
 ## Counting app-based scans
 
-A scan is run when you add a new Project or click the re-test button. This is in addition to any automated recurring scans which are run.
+A scan runs when you add a new Project or click the re-test button. This is in addition to any automated scans that run.
 
 ## Counting API scans
 

@@ -1,7 +1,5 @@
 # Assign fix work
 
-## Introduction
-
 {% hint style="info" %}
 **Recap**\
 You have understood and fixed a vulnerability.
@@ -12,13 +10,13 @@ This section describes how this fix process works throughout your team for your 
 * [Decide what to fix first](assign-fix-work.md#decide-what-to-fix-first): determine your team fix priorities.
 * [Decide your fix workflow](assign-fix-work.md#example-workflow-team-lead-driven-using-jira): for example, using a Jira-driven process.
 
-### Decide what to fix first
+## Decide what to fix first
 
 Your fix priority depends on your workflows and business processes. Different teams approach fixes in different ways, depending on the tools they use, their own workflow maturity, and competing work priorities.
 
 Typically, smaller teams have less process, and Enterprise-level teams are more formal. For example, individual developers in your teams may decide which issues to fix on a case-by-case basis, or it may be a more controlled process, with team leads assigning fix work as part of a Sprint planning process
 
-#### Example triage process
+### Example triage process
 
 For example, your team could follow a triage-based process for each issue, driven largely by the severity of the issue:
 
@@ -45,7 +43,7 @@ As part of this Sprint planning, the team leader can:
 
 Snyk [Jira integration](../../integrations/notifications-ticketing-system-integrations/jira.md) allows you to run this process from the Snyk Web UI.
 
-#### Assign a Jira issue
+### Assign a Jira issue
 
 Navigate to the issue you have decided to fix, then click **Create a Jira issue**:
 
@@ -61,11 +59,11 @@ You can assign this task to a developer in the team, following your team’s nor
 You may want to create a Jira issue even if Snyk knows how to fix the change, and even if it’s a very minor upgrade; assigning issues allows your team to manage, justify and track code changes.
 {% endhint %}
 
-#### More information
+## More information
 
 * See [Jira issues](https://training.snyk.io/learn/video/jira-issue) training for more details.
 * See [Manage issues](../../manage-risk/) docs for more general details.
 
-### What's next?
+## What's next?
 
 Now, you can look at [using Snyk Reports to manage team work](manage-team-work-using-reports.md).
