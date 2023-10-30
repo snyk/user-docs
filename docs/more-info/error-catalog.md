@@ -905,15 +905,6 @@ Remove the unsupported component and retry the request.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
-### [SNYK-OSSI-2023](#snyk-ossi-2023)
-
-#### Go version format not supported
-
-Go pseudo version not supported.
-
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-
 ### [SNYK-OSSI-2030](#snyk-ossi-2030)
 
 #### Requested package not found
@@ -1226,4 +1217,4 @@ The pull request template payload is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
---- Generated at 2023-10-30T10:12:43.475Z
+--- Generated at 2023-10-30T14:31:27.134Z
