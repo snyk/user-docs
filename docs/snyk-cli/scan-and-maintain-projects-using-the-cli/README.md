@@ -1,8 +1,13 @@
-# Scan and maintain projects using the CLI
+# Scan and maintain Projects using the CLI
 
-This group of pages provides detailed "how-to" information for the Snyk CLI. The navigation is alphabetical by keyword. The same list of pages follows in the categories Scanning projects, Monitoring projects, and Maintaining projects.
+This group of pages provides detailed "how-to" information for the Snyk CLI.
 
-## Scanning projects
+* The [CLI tools](cli-tools/) provide ways to perform tasks that cannot be done using CLI commands and options.
+* [Use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli/), [Analyze code with the Snyk Code CLI](using-snyk-code-from-the-cli/), and [Use Snyk Container from the CLI ](use-snyk-container-from-the-cli/)explain how to perform basic operations with Snyk Open Source, Snyk Code, and Snyk Container using the CLI.
+
+The remaining pages address [Scanning Projects](./#scanning-projects), [Monitoring Projects](./#monitoring-projects), and [Maintaining Projects](./#maintaining-projects). The pages are arranged in alphabetical order by keyword.
+
+## Scanning Projects
 
 * [The **.snyk** file](../../manage-issues/policies/the-.snyk-file.md)
 * [A **.snyk** policy file in a different directory from the manifest file](a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
@@ -17,12 +22,12 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 * [CLI **test results**](view-cli-test-results.md)
 * [Differences in **vulnerability counts** across environments](../../scan-applications/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
 
-## Monitoring projects
+## Monitoring Projects
 
 * [**Monitor** your projects at regular intervals](monitor-your-projects-at-regular-intervals.md)
 * [Group **projects** for monitoring](group-projects-by-branch-or-version-for-monitoring.md)
 
-## Maintaining projects
+## Maintaining Projects
 
 * [Automatic **fixing** with Snyk Fix](automatic-remediation-with-snyk-fix.md)
 * [**Log4shell** command use](how-to-use-the-log4shell-command.md)
