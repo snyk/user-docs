@@ -6,6 +6,10 @@
 
 If you import Projects through a source control integration, then Snyk Open Source PR Checks is a good place to start introducing gating.&#x20;
 
+{% hint style="info" %}
+It's recommended to announce the changes prior to rolling out the changes. See [Announcement Templates](example-message-templates.md) for examples on how to message your developers.
+{% endhint %}
+
 ### Implementing PR Checks
 
 There are a number of different features available that can be used to help you gradually introduce the feature to avoid friction with your development teams:
