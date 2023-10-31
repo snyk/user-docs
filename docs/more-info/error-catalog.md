@@ -65,6 +65,37 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 - [https://status.snyk.io/](https://status.snyk.io/)
 
 ---
+# Code
+### [SNYK-CODE-0001](#snyk-code-0001)
+
+#### Analysis file count limit exceeded
+
+This error occurs when the analysis target has a supported file count which exceeds current system limits.
+
+To reduce the file count, use a `.snyk` file to ignore specified directories or files. Alternatively, use the Snyk CLI to analyze individual subdirectories separately.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code)
+- [https://docs.snyk.io/scan-applications/start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process](https://docs.snyk.io/scan-applications/start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process)
+- [https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli](https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli)
+
+### [SNYK-CODE-0002](#snyk-code-0002)
+
+#### Analysis result size limit exceeded
+
+This error occurs when the analysis target generates a result with a byte size that exceeds current system limits.
+
+To reduce the file count, use a `.snyk` file to ignore specified directories or files. Alternatively, use the Snyk CLI to analyze individual subdirectories separately.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-applications/start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process](https://docs.snyk.io/scan-applications/start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process)
+- [https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli](https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli)
+
+---
 # OpenAPI
 ### [SNYK-OPENAPI-0001](#snyk-openapi-0001)
 
@@ -1228,4 +1259,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-10-30T15:16:27.553Z
+--- Generated at 2023-10-31T13:58:12.056Z
