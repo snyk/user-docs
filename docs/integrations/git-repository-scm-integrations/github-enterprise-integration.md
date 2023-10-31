@@ -11,9 +11,9 @@ If you are a Snyk Enterprise plan customer, Snyk recommends that you use the Git
 
 The Snyk GitHub Enterprise integration lets you:
 
-* Continuously perform security scanning across all integrated repositories.
-* Detect vulnerabilities in your Open Source components.
-* Provide automated fixes and upgrades.
+* Perform [periodic security scans](github-enterprise-integration.md#obtain-project-level-security-reports) across all integrated repositories.
+* [Detect vulnerabilities](github-enterprise-integration.md#monitor-projects-and-generate-automatic-fix-pull-requests) in your Open Source components.
+* Provide [automated fixes](github-enterprise-integration.md#test-new-pull-requests) and upgrades through status checks in GitHub.
 
 ## How to set up the Snyk GitHub Enterprise integration
 
