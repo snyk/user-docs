@@ -66,4 +66,4 @@ You may want to create a Jira issue even if Snyk knows how to fix the change, an
 
 ## What's next?
 
-Now, you can look at [using Snyk Reports to manage team work](manage-team-work-using-reports.md).
+Now, you can look at [using Snyk Reports to manage team work](use-reports-in-managing-risk.md).

@@ -20,7 +20,7 @@
     * [Fix your first vulnerability](getting-started/walkthrough-code-repository-projects/fix-your-first-vulnerability.md)
     * [Fix your first vulnerability - deeper dive](getting-started/walkthrough-code-repository-projects/fix-your-first-vulnerability-deeper-dive.md)
     * [Assign fix work](getting-started/walkthrough-code-repository-projects/assign-fix-work.md)
-    * [Manage team work using Reports](getting-started/walkthrough-code-repository-projects/manage-team-work-using-reports.md)
+    * [Use Reports in managing risk](getting-started/walkthrough-code-repository-projects/use-reports-in-managing-risk.md)
   * [Glossary](getting-started/glossary.md)
 * [Integrate with Snyk](integrations/README.md)
   * [Use Snyk in your IDE](integrations/ide-tools/README.md)
