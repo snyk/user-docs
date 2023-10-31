@@ -16,7 +16,7 @@ You have several decisions to make before you implement Snyk.
 
 After you make these decisions and configure your Snyk Organization, you can [invite members](preparing-for-implementation-free-and-team-plans.md#invite-members).
 
-### Where to implement Snyk in your SDLC
+## Where to implement Snyk in your SDLC
 
 As you prepare for your team to start adopting Snyk as part of a secure development workflow, decide where to use Snyk in your SDLC, and what you want to scan, for example, application code, open-source library dependencies, container registries,  and so on.
 
