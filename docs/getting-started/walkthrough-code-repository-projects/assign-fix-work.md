@@ -35,10 +35,10 @@ Let’s assume that your development team assigns fix work based on Sprints, and
 
 As part of this Sprint planning, the team leader can:
 
-* Review the vulnerabilities in a project
-* Decide which vulnerabilities to fix
+* Review the vulnerabilities in a project.
+* Decide which vulnerabilities to fix.
 * Create a Jira issue for each vulnerability.
-* Assign these Jira issues as task to developers to fix these vulnerabilities,
+* Assign these Jira issues as task to developers to fix these vulnerabilities.
 * Track progress on these tasks during the Sprint.
 
 Snyk [Jira integration](../../integrations/notifications-ticketing-system-integrations/jira.md) allows you to run this process from the Snyk Web UI.
