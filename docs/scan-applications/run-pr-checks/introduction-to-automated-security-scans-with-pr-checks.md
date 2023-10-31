@@ -12,4 +12,4 @@ For developers, change-related flaws are relevant and easy to fix, and fixing ch
 
 ## **Testing “before” and “after”**
 
-The Snyk PR Checks feature runs live tests of the “before and after” branch with the PR and fails only if the new branch has more issues. This allows you to address problems that have been introduced since the last scan, for example, new vulnerabilities introduced externally; Snyk PR Checks identifies problems only with your specific code change.
+The Snyk PR Checks feature runs live tests of the “before and after” branch with the PR and fails only if the new branch has more issues. This allows you to address problems that have been introduced since the last scan, for example, new vulnerabilities introduced externally. Snyk PR Checks are triggered by a change in your code, and find issues across the entire repository. Thus,  a PR check finds issues in your code as well as other issues introduced since the last Snyk scan.
