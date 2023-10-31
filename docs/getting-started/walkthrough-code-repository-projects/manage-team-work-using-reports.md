@@ -16,7 +16,7 @@ Reports are available with Enterprise plans. See [pricing plans](https://snyk.io
 
 Click **Reports** to access the vulnerability information for all Snyk Projects in your Organization:
 
-<figure><img src="../../.gitbook/assets/reports_02oct2022.png" alt="An overview of Snyk Project vulnerabilities in Reports"><figcaption><p>An overview of Snyk Project vulnerabilities in Reports</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-10-31_11-00-19.png" alt="An overview of Snyk Project vulnerabilities in Reports"><figcaption><p>An overview of Snyk Project vulnerabilities in Reports</p></figcaption></figure>
 
 {% hint style="info" %}
 By default, results are shown for the last 90 days: use the **Show report for:** list in the top right to change the duration.
@@ -24,9 +24,9 @@ By default, results are shown for the last 90 days: use the **Show report for:**
 
 ## Report Security issues
 
-The **Security Issues** section shows the number of vulnerabilities, their type, and how many of them Snyk identifies as automatically fixable with an upgrade PR (see [Fix your first vulnerability](fix-your-first-vulnerability.md)).
+The **Issues** section shows the number of vulnerabilities, their type, and how many of them Snyk identifies as automatically fixable with an upgrade PR (see [Fix your first vulnerability](fix-your-first-vulnerability.md)).
 
-<figure><img src="../../.gitbook/assets/image (302) (1) (1).png" alt="Security issues in Reports"><figcaption><p>Security issues in Reports</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-10-31_11-04-25.png" alt="Issues in the Report page, as categorized by severity"><figcaption><p>Issues in the Report page, as categorized by severity</p></figcaption></figure>
 
 ## Show issues over time
 
