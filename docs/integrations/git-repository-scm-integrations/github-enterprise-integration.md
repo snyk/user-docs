@@ -24,7 +24,8 @@ If your repositories are not internet-accessible, you must use [Snyk Broker](../
 Follow these steps to connect Snyk with your GitHub repositories:
 
 1. Create a dedicated service account in GitHub Enterprise with a write level or higher scope for the repos you want to monitor with Snyk permissions.\
-   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required access scopes for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
+   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required access scopes for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.\
+   Note that to create webhooks, which is required for PR checks, the repo permission for the account must be `Admin`. GitHub custom roles are not supported.&#x20;
 2. [Generate a personal access token](github-enterprise-integration.md#generate-a-personal-access-token) for that account.
 3. [Authorize your personal access token and enable SSO](github-enterprise-integration.md#authorize-your-personal-access-token-and-enable-sso).
 4. [Import your GitHub repositories](github-enterprise-integration.md#how-to-import-github-repositories)
@@ -47,18 +48,24 @@ If you are using fine-grained personal access tokens, the following repository a
 * `Webhooks: Read and write`
 
 {% hint style="info" %}
-Personal access token creation in GitHub Enterprise is done under **User settings** > **Developer settings**.
+Create a personal access token in GitHub Enterprise under **User settings** > **Developer settings**.
 {% endhint %}
 
-#### Why does Snyk require fine-grained access tokens to have `pull request: read/write` and `content: read/write` scopes? Does this mean Snyk can write code to our repos?
+{% hint style="warning" %}
+The Snyk GitHub integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub (see [required access scopes](github-enterprise-integration.md#required-access-scopes-for-snyk-github-enterprise-integration)) and the access defined for the PAT on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
+{% endhint %}
+
+{% hint style="info" %}
+**Why does Snyk require fine-grained access tokens to have `pull request: read/write` and `content: read/write` scopes? Does this mean Snyk can write code to our repos?**
 
 Snyk uses PRs to tell GitHub Enterprise that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
+{% endhint %}
 
 {% hint style="warning" %}
 The Members Read Only Organization scope is required if you use fine-grained personal access tokens.
 {% endhint %}
 
-### **How to authorize** your Personal Access Token and enable SSO:
+### **How to authorize** your Personal Access Token and enable SSO
 
 1. In Snyk, navigate to the **Integrations** page and click the **GitHub Enterprise** card.
 2. Enter your GitHub Enterprise URL and the personal access token (PAT) for the service account you created, and **Save** your changes. After Snyk has successfully connected to the GitHub instance, the list of available repositories displays for your selection.
@@ -67,7 +74,7 @@ The Members Read Only Organization scope is required if you use fine-grained per
    If the organization is showing as **Authorized**, but the issue still persists, try de-authorizing the organization and then re-authorizing.
 
 {% hint style="info" %}
-To use the integration with GitHub Enterprise Cloud, add the URL 'https://api.github.com.' To integrate with a self-hosted GitHub Enterprise, add the URL 'https://your.github-enterprise.host' in step two of PAT authorization.
+To use the integration with GitHub Enterprise Cloud, add the URL `https://api.github.com.`To integrate with a self-hosted GitHub Enterprise, add the URL `https://your.github-enterprise.host` in step two of PAT authorization.
 {% endhint %}
 
 ### How to import GitHub repositories
@@ -113,7 +120,7 @@ The following example shows how Snyk pull request checks appear on the pull requ
 
 <figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
 
-To review and adjust the pull request tests settings: In Snyk, navigate to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** > **Integrations > Source control > GitHub Enterprise**, and select **Edit Settings**.
+To review and adjust the pull request tests settings: In Snyk, navigate to Organization **Settings** > **Integrations > Source control > GitHub Enterprise**, and select **Edit Settings**.
 
 1. Scroll to **Snyk PR status checks**; see [Configure PR Checks](../../scan-application-code/run-pr-checks/configure-pr-checks.md) for details.
 
@@ -121,13 +128,13 @@ To review and adjust the pull request tests settings: In Snyk, navigate to <img 
 
 ## Required access scopes for Snyk GitHub Enterprise integration
 
-All the operations, whether triggered manually or automatically, are performed for a GitHub service account that has its token configured on the integrations settings page. This shows the required access scopes for the configured token:
+All the operations, whether triggered manually or automatically, are performed for a GitHub service account that has its token configured on the integrations settings page. This shows the required access scopes for the configured token. GitHub custom roles are not supported :
 
-| **Action**                                              | **Purpose**                                                                                                                                                                                                                                                     | **Required scope in GitHub**      |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| Daily/weekly tests                                      | Used to read manifest files in private repos.                                                                                                                                                                                                                   | `repo (all)`                      |
-| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repos.                                                                                                                                                                                                                  | `repo (all)`                      |
-| Automatic fix and upgrade pull requests                 | Used to create fix or upgrade PRs in the monitored repos.                                                                                                                                                                                                       | `repo (all)`                      |
-| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated.                                                                                                                                                              | `repo (all)`                      |
-| Importing new Projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup).                                                                                                                                              | `admin:read:org, repo (all)`      |
-| Snyk tests on pull requests : **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests, that is, when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | `admin:repo_hooks (read & write)` |
+| **Action**                                              | **Purpose**                                                                                                                                                                                                                                                     | **Required scope in GitHub**                                                                                                                                                |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Daily/weekly tests                                      | Used to read manifest files in private repos.                                                                                                                                                                                                                   | `repo (all)`                                                                                                                                                                |
+| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repos.                                                                                                                                                                                                                  | `repo (all)`                                                                                                                                                                |
+| Automatic fix and upgrade pull requests                 | Used to create fix or upgrade PRs in the monitored repos.                                                                                                                                                                                                       | `repo (all)`                                                                                                                                                                |
+| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated.                                                                                                                                                              | `repo (all)`                                                                                                                                                                |
+| Importing new Projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup).                                                                                                                                              | `admin:read:org, repo (all)`                                                                                                                                                |
+| Snyk tests on pull requests : **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests, that is, when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | <p><code>admin:repo_hooks (read &#x26; write)</code><br>Github custom roles are not supported. The repo scope must be <code>Admin</code> to allow creation of webhooks.</p> |
