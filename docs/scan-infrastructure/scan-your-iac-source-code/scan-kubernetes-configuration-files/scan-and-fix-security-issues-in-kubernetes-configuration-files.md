@@ -8,7 +8,7 @@ Snyk Infrastructure as Code scans your manifest files for security vulnerabiliti
 
 ## Prerequisites for scanning and fixing issues in Kubernetes files
 
-* An administrator should [integrate your Organization ](../../../scan-infrastructure/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)with your preferred Git repository and enable the detection of configuration files.
+* An administrator should [integrate your Organization ](../scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)with your preferred Git repository and enable the detection of configuration files.
 * You must have a Snyk account, and your configuration files should be in either JSON or YAML format.
 
 Snyk Infrastructure as Code supports:

@@ -42,7 +42,7 @@ From the Organization setting menu, select **Settings** and then select one of t
 * **Integrations**: Set up integrations and see a list of those configured for your Organization; click the name of the configured integration to see the details. See [Integrate with Snyk](https://docs.snyk.io/integrations) for information about available Snyk integrations.
 * &#x20;**Languages**: Enable Reachable vulnerabilities analysis and edit language settings; see [Snyk Open Source - supported languages and package managers](../../scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md) for details.
 * **Snyk Code**: Enable Snyk Code; see the [Snyk Code](../../scan-application-code/snyk-code/) documentation for details.
-* **Snyk Iac:** Enable Snyk Iac, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](../../scan-infrastructure/snyk-infrastructure-as-code/)documentation for details.
+* **Snyk Iac:** Enable Snyk Iac, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](../../scan-infrastructure/scan-your-iac-source-code/)documentation for details.
 * **Usage**: See the [Usage settings](usage-settings.md) page for details.
 * **Notifications**: See the [Manage notifications](../manage-notifications.md) page for details.
 * **Snyk Preview**: See the [Snyk Preview page](snyk-preview.md) for details.
