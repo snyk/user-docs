@@ -8,7 +8,7 @@ In addition to scanning Kubernetes configuration files for misconfigurations and
 
 ## Prerequisites for scanning and fixing issues in Helm Charts
 
-* An administrator must connect your Organization with your preferred Git repository and enable the detection of configuration files as [explained for Terraform files](../scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md#configure-snyk-to-scan-your-terraform-configuration-files).
+* An administrator must connect your Organization with your preferred Git repository and enable the detection of configuration files as [explained for Terraform files](../scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-files-current-iac.md#configure-snyk-to-scan-your-terraform-configuration-files).
 * The repository should follow the [standard Chart directory structure](https://helm.sh/docs/topics/charts/#the-chart-file-structure). However the `charts/` sub-directory is not supported.
 * Snyk currently supports only templating Helm charts using the default values file, `values.yaml`.
   * If you want to scan particular configurations of Helm values, the supported workflow is to template the chart outside of Snyk and scan the manifests as regular Kubernetes files.

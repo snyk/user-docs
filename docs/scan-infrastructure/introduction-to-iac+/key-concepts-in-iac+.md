@@ -37,7 +37,7 @@ For a list of supported resource types for cloud environments, see the following
 
 ## Resource mapping
 
-A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details like resource IDs that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when cloud environments are created and updated, which in turn creates, updates, or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](../snyk-iac+/fix-cloud-issues-in-iac.md).
+A resource mapping represents a connection from a cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [`snyk iac capture`](../../snyk-cli/commands/iac-capture.md) command is executed locally or in a CI pipeline. Mapping artifacts include details like resource IDs that Snyk uses to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created and updated, or when cloud environments are created and updated, which in turn creates, updates, or deletes resource mappings for a Snyk Organization. For more information, see [Fix Cloud issues in IaC](../iac+-code-to-cloud-capabilities/fix-cloud-issues-in-iac.md).
 
 ## Rules
 
@@ -57,7 +57,7 @@ You can view your Organization's issues in the Snyk Web UI. See [View IaC+ issue
 
 A **compliance standard** is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are versioned, with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/reporting/available-snyk-reports.md#cloud-compliance-issues-report).
 
-For more information, see [supported compliance standards](../../scan-cloud-configurations/snyk-iac+/view-compliance-reporting.md#supported-compliance-standards).
+For more information, see [supported compliance standards](../view-iac+-and-cloud-compliance-reporting.md#supported-compliance-standards).
 
 ## Compliance control <a href="#docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b" id="docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b"></a>
 

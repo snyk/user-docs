@@ -115,7 +115,7 @@ test_NEW_RULE {
 ## Example of a rule
 
 {% hint style="info" %}
-For more examples, see[ Custom Rules Examples](examples.md).
+For more examples, see[ Custom Rules Examples](examples-of-custom-rules.md).
 {% endhint %}
 
 For this example, the templated rule was modified to assign a `msg` when a resource does not have an `owner` tag:

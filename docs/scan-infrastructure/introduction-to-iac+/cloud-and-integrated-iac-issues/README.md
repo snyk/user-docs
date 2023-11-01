@@ -1,7 +1,7 @@
 # Manage IaC+ and cloud issues
 
 {% hint style="info" %}
-The [Fix Cloud issues in IaC](../../snyk-iac+/fix-cloud-issues-in-iac.md) feature is now available for users who use Terraform and AWS.
+The [Fix Cloud issues in IaC](../../iac+-code-to-cloud-capabilities/fix-cloud-issues-in-iac.md) feature is now available for users who use Terraform and AWS.
 {% endhint %}
 
 When Snyk scans an IaC+ or cloud environment, it tests infrastructure configurations against a comprehensive set of security rules. These rules identify misconfigurations that can lead to security problems. For example, Snyk can scan the configuration of an Amazon Web Services (AWS) S3 bucket to see if it is publicly readable, and so vulnerable to a data breach.

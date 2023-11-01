@@ -70,7 +70,7 @@ To view Dependencies and Licenses information, select the **Dependencies** menu 
 ## Cloud Compliance Issues report
 
 {% hint style="info" %}
-This report is available only if you have [Snyk IaC+](../../scan-infrastructure/snyk-iac+/) or the legacy Snyk Cloud enabled.
+This report is available only if you have [Snyk IaC+](../../scan-infrastructure/iac+-code-to-cloud-capabilities/) or the legacy Snyk Cloud enabled.
 {% endhint %}
 
 The Cloud Compliance Issues report shows cloud and IaC+ issues for an entire Organization, organized by [compliance standard](../../scan-infrastructure/introduction-to-iac+/key-concepts-in-iac+.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).

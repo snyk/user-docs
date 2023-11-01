@@ -18,9 +18,9 @@ Before using Snyk IaC, be sure you have the prerequisites as follows:
 
 For more information about IaC and supported environments, see the following pages:
 
-* [Configure your integration to find security issues in your Terraform files](scan-your-iac-source-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
-* [Configure your integration to find security issues in your CloudFormation files](scan-your-iac-source-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files.md)
-* [Configure your integration to find security issues in your Kubernetes configuration files](scan-your-iac-source-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files.md)
+* [Configure your integration to find security issues in your Terraform files](scan-your-iac-source-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-files-current-iac.md)
+* [Configure your integration to find security issues in your CloudFormation files](scan-your-iac-source-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files-current-iac.md)
+* [Configure your integration to find security issues in your Kubernetes configuration files](scan-your-iac-source-code/scan-kubernetes-configuration-files/configure-integration-to-find-security-issues-in-kubernetes-configuration-files-current-iac.md)
 
 {% hint style="info" %}
 You must use the Snyk CLI to scan ARM configuration files. See [Scan ARM configuration files](scan-your-iac-source-code/scan-arm-configuration-files.md).
