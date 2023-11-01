@@ -31,9 +31,9 @@ You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2023-05-29
 
 For a list of supported resource types for cloud environments, see the following:
 
-* [Supported AWS resources](../snyk-iac+/supported-resources-for-cloud-context-in-snyk-iac/supported-aws-resources-for-cloud-context.md)
-* [Supported Azure resources](../snyk-iac+/supported-resources-for-cloud-context-in-snyk-iac/supported-azure-resources-for-snyk-cloud-context.md)
-* [Supported Google resources](../snyk-iac+/supported-resources-for-cloud-context-in-snyk-iac/supported-google-resources-for-snyk-cloud-context.md)
+* [Supported AWS resources](../supported-iac-languages-cloud-providers-and-cloud-resources/supported-aws-resources-for-cloud-context.md)
+* [Supported Azure resources](../supported-iac-languages-cloud-providers-and-cloud-resources/supported-azure-resources-for-cloud-context.md)
+* [Supported Google resources](../supported-iac-languages-cloud-providers-and-cloud-resources/supported-google-resources-for-cloud-context.md)
 
 ## Resource mapping
 

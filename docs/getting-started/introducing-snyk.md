@@ -39,7 +39,7 @@ The Snyk tech stacks that are supported depend on the Snyk product you use:
 
 * **Snyk Open Source** and **Snyk Code**: see [Supported languages and frameworks](../scan-applications/supported-languages-and-frameworks/).
 * **Snyk Container**: see [Supported operating system distributions](../scan-applications/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
-* **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-infrastructure/supported-iac-and-cloud-providers/).
+* **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-infrastructure/supported-iac-languages-cloud-providers-and-cloud-resources/).
 
 ## What can Snyk integrate with?
 
