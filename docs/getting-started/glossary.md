@@ -332,7 +332,7 @@ A Snyk product. Enables developers to find and fix vulnerabilities in container 
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-infrastructure/scan-your-iac-source-code/).
+A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-applications/scan-infrastructure/scan-your-iac-source-code/).
 
 ### Snyk Open Source
 

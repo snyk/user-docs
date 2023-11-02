@@ -47,7 +47,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 <figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Snyk Vulnerability Database example entry"><figcaption><p>Snyk Vulnerability Database example entry</p></figcaption></figure>
 
 {% hint style="info" %}
-[Snyk Code](../../scan-application-code/snyk-code/) and [Snyk IaC](../../scan-infrastructure/scan-your-iac-source-code/) issue cards have separate information sets for these areas.
+[Snyk Code](../../scan-application-code/snyk-code/) and [Snyk IaC](../../scan-applications/scan-infrastructure/scan-your-iac-source-code/) issue cards have separate information sets for these areas.
 {% endhint %}
 
 ### Access Snyk Learn
