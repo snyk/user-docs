@@ -1,31 +1,40 @@
 # Scan using Snyk
 
-Scan and secure your codebase with Static Application Security Testing (SAST) and Software Composition Analysis (SCA) capabilities available with Snyk.
+You can use Snyk to scan and secure your codebase and cloud infrastructure configurations, taking advantage of the Snyk capabilities in Static Application Security Testing (SAST), Software Composition Analysis (SCA), and  Infrastructure as Code analysis.
 
 ## Snyk Open Source
 
 Find and fix known vulnerabilities and licensing issues in your open-source dependencies.
 
-:link: [Get insights into the open source security](https://snyk.io/series/open-source-security/) (Developer security knowledge series).
+For more information, see [Snyk Open Source ](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md)and [Open Source Security Explained](https://snyk.io/series/open-source-security/) on the Security series hub.
 
 ## Snyk Code
 
 Scan your codebase for known vulnerabilities and get remediation guidance either inline in your IDE or by importing your code repository to Snyk Web UI.
 
-:link: [Explore how Snyk Code identifies and addresses security issues](https://snyk.io/blog/advanced-technologies-behind-snyk-code/) (Snyk blog).
+For more information, see [Snyk Code](./#snyk-code) and [Exploring the advanced technologies behind Snyk Code ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)on the Snyk blog.
 
 ## Snyk Container
 
 Find and automatically fix container and workload vulnerabilities.
 
-See [Snyk Container](snyk-container/) docs for more details.
+For more information, see [Snyk Container](snyk-container/).
+
+## Snyk IaC
+
+Secure cloud infrastructure configurations before and after deployment.
+
+For more information, see [Scan infrastructure](scan-infrastructure/).
+
+## Working with Snyk in your environment
+
+Implement a workflow to secure your code and infrastructure in your environment using the scanning methods provided by Snyk products.
+
+For more information, see [Working with Snyk in your environment](../getting-started/working-with-snyk-in-your-environment.md) and [Supported languages and frameworks](supported-languages-and-frameworks/).
 
 ## Run pull request checks
 
 Scan and automatically address potential vulnerabilities when you review pull requests, to prevent security issues in production.
 
-## Environment support
+For details, see [Run PR checks](run-pr-checks/).
 
-* [Supported languages and package managers in Snyk Open Source](broken-reference)
-* [Supported languages and frameworks in Snyk Code](broken-reference)
-* [Supported operating system distributions in Snyk Container](snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
