@@ -1,11 +1,11 @@
 # Understand your vulnerabilities
 
-## **See vulnerability details**
-
 {% hint style="info" %}
 **Recap**\
 You have [viewed and understood scanned Projects](view-your-first-snyk-projects.md); now you can look at the details of vulnerabilities in that Project.
 {% endhint %}
+
+## **See vulnerability details**
 
 First, open a target to see your Snyk Projects:
 
@@ -92,8 +92,6 @@ Click the file tree icon (![](<../../.gitbook/assets/image (201) (1) (1) (1) (1)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 
-## What's next?
-
 Now you understand your vulnerability information, you can decide how to fix it.
 
-See [Fix your first vulnerability](fix-your-first-vulnerability.md).
+Continue with [Fix your first vulnerability](fix-your-first-vulnerability.md).

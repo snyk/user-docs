@@ -199,6 +199,22 @@ API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-p
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 
+### Move projects from one organisation to another
+
+Scenario: [Move projects between organisations](https://github.com/snyk-playground/cx-tools/blob/main/scripts/move-projects.md) (complete procedure)
+
+{% hint style="info" %}
+API token used must have Group Admin access. \
+If moving between orgs in different groups, a personal API token with Group Admin in both groups must be used - Service Accounts are not able to move projects between orgs in different groups.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+Historical data for reporting will be lost.
+{% endhint %}
+
+**Endpoints used:**\
+API v1 [Move Projects](https://snyk.docs.apiary.io/#reference/projects/move-project/move-project-to-a-different-organization)
+
 ### More uses of API v1 Projects
 
 SEE also:\

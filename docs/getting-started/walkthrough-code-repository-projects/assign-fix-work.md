@@ -38,7 +38,7 @@ As part of this Sprint planning, the team leader can:
 * Review the vulnerabilities in a project.
 * Decide which vulnerabilities to fix.
 * Create a Jira issue for each vulnerability.
-* Assign these Jira issues as task to developers to fix these vulnerabilities.
+* Assign these Jira issues as tasks to developers to fix these vulnerabilities.
 * Track progress on these tasks during the Sprint.
 
 Snyk [Jira integration](../../integrations/notifications-ticketing-system-integrations/jira.md) allows you to run this process from the Snyk Web UI.
@@ -56,14 +56,11 @@ You can then define the Jira task details for this fix:
 You can assign this task to a developer in the team, following your team’s normal Sprint processes.
 
 {% hint style="info" %}
-You may want to create a Jira issue even if Snyk knows how to fix the change, and even if it’s a very minor upgrade; assigning issues allows your team to manage, justify and track code changes.
+You may want to create a Jira issue even if Snyk knows how to fix the change, and even if it is a very minor upgrade; assigning issues allows your team to manage, justify and track code changes.
 {% endhint %}
 
-## More information
+## More information and next step
 
-* See [Jira issues](https://training.snyk.io/learn/video/jira-issue) training for more details.
-* See [Manage issues](../../manage-risk/) docs for more general details.
+For information about tracking the work, see the [Jira issues](https://training.snyk.io/learn/video/jira-issue) training video. For information about the overall management of issues, see [Manage risk](../../manage-risk/) in the documentation.
 
-## What's next?
-
-Now, you can look at [using Snyk Reports to manage team work](use-reports-in-managing-risk.md).
+Next, look at [using Snyk Reports to manage the work of your team](use-reports-in-managing-risk.md).

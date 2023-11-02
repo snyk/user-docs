@@ -1,23 +1,20 @@
 # View your first Snyk Projects
 
-## **S**ee what Snyk scanned
-
-You can now see your scan results.
+After you have imported one or more Projects, you can see the results of your scans.
 
 {% hint style="info" %}
-**Reminder: where am I?**\
-In the Snyk Web UI, you see information specific to your **Organization**, such as your team), which is under a **Group**, such as your company. This allows your company to organize and collect data for the work your teams are doing. See [Manage users in an Organization](../../snyk-admin/manage-users-in-organizations-and-groups/manage-users-in-organizations.md).
+In the Snyk Web UI, you see information specific to your Organization, such as your team), which is under a Group, such as your company. This allows your company to organize and collect data for the work your teams are doing. For more information, see  [Manage users in an Organization](../../snyk-admin/manage-users-in-organizations-and-groups/manage-users-in-organizations.md).
 {% endhint %}
 
 ## View imports
 
-In the Snyk Web UI, navigate to your **Projects** page and examine your imported repositories or Targets if importing non-code information. An example follows.
+In the Snyk Web UI, navigate to your **Projects** page and examine your imported repositories or Targets if you are importing non-code information. An example follows.
 
 <figure><img src="../../.gitbook/assets/Target-list.png" alt="List of imported Targets"><figcaption><p>List of imported Targets</p></figcaption></figure>
 
 For each entry, the icon shows the number of Snyk Projects in each entry, plus the Git-based repository the Projects are imported from.
 
-### Private versus public repositories: the lock symbol
+## Private versus public repositories: the lock symbol
 
 When [setting up your GitHub integration](../../integrations/git-repository-scm-integrations/snyk-github-integration.md), you can choose whether Snyk has access to public and private repositories or public repositories only:
 
@@ -87,10 +84,8 @@ The scan shows all the vulnerabilities in all aspects of your application. Of co
 
 If your Snyk Open Source scan shows no vulnerabilities in your open-source libraries, that is great, but there may still be a lot of issues identified by other scans, such as of your container. Even if the developers in your team did not create or manage these issues, you should know about them.
 
-## More information
+## More information and next step
 
 Refer to the Snyk Training course, [Introduction to the Snyk UI](https://training.snyk.io/courses/introduction-to-the-snyk-ui), to learn more about reviewing results from open-source, code, container, and infrastructure file scans.&#x20;
-
-## What's next?
 
 Now you understand the results you are seeing, you must [understand the vulnerabilities](understand-your-vulnerabilities.md) themselves.
