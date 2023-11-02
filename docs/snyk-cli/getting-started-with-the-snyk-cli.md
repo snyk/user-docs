@@ -52,7 +52,7 @@ Look at the `test` command **report** in your terminal. The report shows the vul
 
 **Note:** Before using the Snyk CLI to test your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Which Projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)
 
-In addition, depending on the language of your open-source Project, you may need to **set up your language environment** before using the Snyk CLI. For details, refer to [Open Source language and package manager support](../scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
+In addition, depending on the language of your open-source Project, you may need to **set up your language environment** before using the Snyk CLI. For details, refer to [Open Source language and package manager support](../scan-with-snyk/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
 
 After you have installed the CLI and authenticated your machine, to **scan an open-source Project**, use `cd /my/project/` to change the current directory to`a`folder containing a supported package manifest file, such as `package.json`, `pom.xml`, or `composer.lock`. Then run `snyk test`. All vulnerabilities identified are listed, including their path and fix guidance.
 

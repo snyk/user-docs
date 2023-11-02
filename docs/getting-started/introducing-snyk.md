@@ -14,9 +14,9 @@ A good security process secures each of these components where they are built an
 
 ## Use Snyk in your workflow
 
-* **Secure your code**: use [Snyk Open Source](../scan-application-code/snyk-open-source/) to fix vulnerabilities in your open source dependencies and [Snyk Code](../scan-application-code/snyk-code/) to fix vulnerabilities in your source code.
-* **Secure your containers**: use [Snyk Container](../scan-applications/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications.
-* **Secure your deployment**: use [Snyk Infrastructure as Code (IaC)](../scan-applications/scan-infrastructure/scan-your-iac-source-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [IaC+](../scan-applications/scan-infrastructure/iac+-code-to-cloud-capabilities/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud projects.
+* **Secure your code**: use [Snyk Open Source](../scan-with-snyk/snyk-open-source/) to fix vulnerabilities in your open source dependencies and [Snyk Code](../scan-with-snyk/snyk-code/) to fix vulnerabilities in your source code.
+* **Secure your containers**: use [Snyk Container](../scan-with-snyk/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications.
+* **Secure your deployment**: use [Snyk Infrastructure as Code (IaC)](../scan-with-snyk/scan-infrastructure/scan-your-iac-source-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [IaC+](../scan-with-snyk/scan-infrastructure/iac+-code-to-cloud-capabilities/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud projects.
 
 ## Choose how to run Snyk
 
@@ -37,9 +37,9 @@ Running Snyk from the command line.
 
 The Snyk tech stacks that are supported depend on the Snyk product you use:
 
-* **Snyk Open Source** and **Snyk Code**: see [Supported languages and frameworks](../scan-applications/supported-languages-and-frameworks/).
-* **Snyk Container**: see [Supported operating system distributions](../scan-applications/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
-* **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-applications/scan-infrastructure/supported-iac-languages-cloud-providers-and-cloud-resources/).
+* **Snyk Open Source** and **Snyk Code**: see [Supported languages and frameworks](../scan-with-snyk/supported-languages-and-frameworks/).
+* **Snyk Container**: see [Supported operating system distributions](../scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
+* **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-with-snyk/scan-infrastructure/supported-iac-languages-cloud-providers-and-cloud-resources/).
 
 ## What can Snyk integrate with?
 

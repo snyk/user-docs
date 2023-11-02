@@ -103,7 +103,7 @@ The objective impact subscore is calculated based on the CVSS impact subscore. F
 
 #### Provider urgency (Snyk Container)&#x20;
 
-Urgency rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../scan-applications/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.\
+Urgency rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.\
 **Possible input values:** `Critical`, `High`, `Medium`, and `Low`_._ When neither CVSS nor Importance Rating is provided, Provider Urgency is set to `Low` by default.
 
 {% hint style="info" %}
@@ -285,7 +285,7 @@ _`False`_ - Likelihood subscore will not change
 
 #### Provider urgency (Snyk Container)&#x20;
 
-Importance rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../scan-applications/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.\
+Importance rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.\
 **Possible input values:** `Critical`, `High`, `Medium`, and `Low`_._ When neither CVSS nor Importance rating is provided, provider urgency is set to `Low` by default.
 
 {% hint style="info" %}

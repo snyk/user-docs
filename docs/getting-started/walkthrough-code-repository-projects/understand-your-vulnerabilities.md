@@ -33,12 +33,12 @@ For details, see [Issue card information](../../snyk-admin/introduction-to-snyk-
 
 Snyk provides detailed resources for more information about vulnerabilities, accessible directly from the card:
 
-* [**Snyk Vulnerability Database**](../../scan-applications/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md): access details on a specific vulnerability.
+* [**Snyk Vulnerability Database**](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md): access details on a specific vulnerability.
 * [**Snyk Learn**](../../more-info/snyk-learn.md): access general information about that type of vulnerability.
 
 ### Access Snyk Vulnerability Database
 
-For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../scan-applications/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
+For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
 
 <figure><img src="../../.gitbook/assets/image (174) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Access Snyk Vulnerability Database"><figcaption><p>Access Snyk Vulnerability Database</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 <figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Snyk Vulnerability Database example entry"><figcaption><p>Snyk Vulnerability Database example entry</p></figcaption></figure>
 
 {% hint style="info" %}
-[Snyk Code](../../scan-application-code/snyk-code/) and [Snyk IaC](../../scan-applications/scan-infrastructure/scan-your-iac-source-code/) issue cards have separate information sets for these areas.
+[Snyk Code](../../scan-with-snyk/snyk-code/) and [Snyk IaC](../../scan-with-snyk/scan-infrastructure/scan-your-iac-source-code/) issue cards have separate information sets for these areas.
 {% endhint %}
 
 ### Access Snyk Learn

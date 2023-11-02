@@ -44,7 +44,7 @@ This is checked by default if there is currently no fix available for the issue.
 {% hint style="info" %}
 An issue is ignored until either of these conditions occurs: the ignore period expires, or the vulnerability becomes fixable.
 
-An issue ignored in an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any subsequent [PR checks](../../scan-application-code/run-pr-checks/) across all branches of the Project.
+An issue ignored in an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any subsequent [PR checks](../../scan-with-snyk/run-pr-checks/) across all branches of the Project.
 {% endhint %}
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit the ignore or unignore the issue.
@@ -123,7 +123,7 @@ For more information, see [Security policies](../../manage-issues/policies/secur
 
 ## Ignore issues in Snyk Code
 
-For [Snyk Code](../../scan-application-code/snyk-code/), the ignore functionality may capture a wider range of issues than other products.
+For [Snyk Code](../../scan-with-snyk/snyk-code/), the ignore functionality may capture a wider range of issues than other products.
 
 Static code analysis by Snyk Code transforms the input code into an intermediate representation, which captures the flow of code but abstracts away some details.
 
@@ -145,7 +145,7 @@ var generalLogFileName = req.query.file || 'standard_log.log';
 var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data) {...
 ```
 
-For more information, see [Exploring the vulnerability issues discovered by Snyk Code](../../scan-applications/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-vulnerability-issues-discovered-by-snyk-code.md).
+For more information, see [Exploring the vulnerability issues discovered by Snyk Code](../../scan-with-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-vulnerability-issues-discovered-by-snyk-code.md).
 
 ## Ignore issues in Snyk IaC
 
@@ -153,7 +153,7 @@ When scanning your IaC configuration files using `snyk iac test`, you can ignore
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 
-For more information, see [IaC ignores using the .snyk policy file](../../scan-applications/scan-infrastructure/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md).
+For more information, see [IaC ignores using the .snyk policy file](../../scan-with-snyk/scan-infrastructure/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md).
 
 ## Configure ignore settings
 

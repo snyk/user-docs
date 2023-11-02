@@ -70,7 +70,7 @@ A scan with [**Snyk code test** ](../snyk-cli/scan-and-maintain-projects-using-t
 
 A scan with [**Snyk container test**](../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-container-from-the-cli/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image to one that is more secure.
 
-A scan with [**Snyk iac test**](../scan-applications/scan-infrastructure/snyk-cli-for-iac/) returns advice on how to resolve discovered issues in your infrastructure as code files.
+A scan with [**Snyk iac test**](../scan-with-snyk/scan-infrastructure/snyk-cli-for-iac/) returns advice on how to resolve discovered issues in your infrastructure as code files.
 
 ## What’s next?
 

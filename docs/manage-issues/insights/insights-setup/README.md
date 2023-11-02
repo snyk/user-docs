@@ -2,7 +2,7 @@
 
 ## Prerequisites for Insights
 
-To get value from Insights, you **must choose** an application where you are using [Snyk Container](../../../scan-applications/snyk-container/) to scan the images. You can get additional value by also scanning your open-source dependencies with [Snyk Open Source](../../../scan-application-code/snyk-open-source/) and your source code with [Snyk Code](../../../scan-application-code/snyk-code/).
+To get value from Insights, you **must choose** an application where you are using [Snyk Container](../../../scan-with-snyk/snyk-container/) to scan the images. You can get additional value by also scanning your open-source dependencies with [Snyk Open Source](../../../scan-with-snyk/snyk-open-source/) and your source code with [Snyk Code](../../../scan-with-snyk/snyk-code/).
 
 Snyk Insights operates by providing you with three risk factors for your vulnerabilities:&#x20;
 

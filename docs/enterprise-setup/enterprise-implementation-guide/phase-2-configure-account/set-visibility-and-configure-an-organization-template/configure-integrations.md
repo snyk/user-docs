@@ -42,7 +42,7 @@ Importing Projects through a Git repository integration can be done manually thr
 For Snyk Enterprise customers, it's strongly suggested to use the **GitHub Enterprise integration card** on the Integrations screen. You do not need to be a GitHub Enterprise customer to use this option, however by using this option, it allows a Personal Access Token (PAT) to be used, whereas OAUTH, provided via the GitHub Integration card, provides an inconsistent experience in terms of access in the interface.
 {% endhint %}
 
-If you import your Project from a Git repository, you can also configure Snyk [PR Checks](../../../../scan-application-code/run-pr-checks/) and auto-fix PRs. These can prevent new security issues from entering your codebase by automatically scanning code changes in real-time whenever you submit a PR in your Git repository.
+If you import your Project from a Git repository, you can also configure Snyk [PR Checks](../../../../scan-with-snyk/run-pr-checks/) and auto-fix PRs. These can prevent new security issues from entering your codebase by automatically scanning code changes in real-time whenever you submit a PR in your Git repository.
 
 * Allows scanning and visibility earlier in the software development lifecycle by checking all submitted PRs for security issues.
 

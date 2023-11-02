@@ -23,7 +23,7 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
 5. When the import ends, a notification of success or failure appears at the top of the **Projects** page.\
    Click **Refresh** to view the **Projects** page with the newly imported images.\
    Images are grouped by repository and are each linked individually to a detailed **Projects** page.
-6. You can now connect your Git repository to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Detect vulnerable base images from your Dockerfile](../../../scan-applications/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
+6. You can now connect your Git repository to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Detect vulnerable base images from your Dockerfile](../../../scan-with-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 You can now also filter to view only Docker Hub Projects:
 
@@ -34,5 +34,5 @@ When repositories and images are imported, a confirmation appears in green at th
 Docker Hub integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk documentation.
 
 {% hint style="info" %}
-For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-applications/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md)for more information.
+For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}
