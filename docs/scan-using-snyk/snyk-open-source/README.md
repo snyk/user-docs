@@ -1,7 +1,7 @@
 # Snyk Open Source
 
 {% hint style="info" %}
-To start scanning, see [Scan open-source libraries and licenses](../start-scanning-using-the-cli-web-ui-or-api/scan-open-source-libraries-and-licenses/).
+To start scanning, see [Scan open-source libraries and licenses](scan-open-source-libraries-and-licenses/).
 {% endhint %}
 
 Developers everywhere use open-source code because it enables fast development. The vast majority of the code making up modern applications is open-source code. This growing reliance exposes organizations to security vulnerabilities and license issues.
@@ -20,6 +20,6 @@ Snyk Open Source also helps prioritize and report on the vulnerabilities discove
 
 ## Find and fix license issues
 
-Snyk Open Source can also scan your Projects for license compliance, checking against licenses known to Snyk. For more information, see [Open-source license compliance](../start-scanning-using-the-cli-web-ui-or-api/scan-open-source-libraries-and-licenses/open-source-license-compliance.md).
+Snyk Open Source can also scan your Projects for license compliance, checking against licenses known to Snyk. For more information, see [Open-source license compliance](scan-open-source-libraries-and-licenses/open-source-license-compliance.md).
 
 You can also use license policies to define how your company deals with license issues. For more information, see [License policies](../../manage-issues/policies/license-policies/).

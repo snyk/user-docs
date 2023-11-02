@@ -24,7 +24,7 @@ By default we determine the severity of licenses in the following way:
 
 Configure policies to match your requirements.
 
-See [Getting Started with Snyk License Compliance Management](../../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md) for more details.
+See [Getting Started with Snyk License Compliance Management](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md) for more details.
 
 
 

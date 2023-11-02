@@ -1,7 +1,7 @@
 # User Docs
 
-| <p>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</p> | <p><a href="scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/">Start scanning</a><br>Start scanning your applications</p> |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <p>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</p> | <p><a href="scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api.md">Start scanning</a><br>Start scanning your applications</p> |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
 
 #### Connect with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 

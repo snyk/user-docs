@@ -1,7 +1,7 @@
 # Snyk Container
 
 {% hint style="info" %}
-To start scanning your container images, see [Scan container images](../start-scanning-using-the-cli-web-ui-or-api/scan-container-images.md).
+To start scanning your container images, see [Scan container images](scan-container-images.md).
 {% endhint %}
 
 Containers provide a standard packaging format for applications, but container images can be opaque. This can lead to problems when identifying the software and the vulnerabilities they contain.

@@ -1,7 +1,7 @@
 # Snyk Code
 
 {% hint style="info" %}
-To start scanning your code, see [Scan code](scan-code/).&#x20;
+To start scanning your code, see [Scan code](../start-scanning-using-the-cli-web-ui-or-api/scan-code/).&#x20;
 {% endhint %}
 
 Snyk is dedicated to the premise that security must be implemented developer-first to meet the speed and scale needs of software-driven businesses.&#x20;
