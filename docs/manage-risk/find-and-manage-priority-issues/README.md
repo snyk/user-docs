@@ -6,4 +6,4 @@ Snyk has several features that help you determine which issues are the most impo
 
 You can also [ignore issues](ignore-issues.md) and [triage issues](../../manage-issues/priorities-for-fixing-issues/triage-for-issues.md) to establish your issue management strategy.
 
-Based on your priorities, you can start [fixing vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/).
+Based on your priorities, you can start [fixing vulnerabilities](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/).

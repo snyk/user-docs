@@ -9,7 +9,7 @@ We start with the awareness that most businesses:
 
 **Typical timelines**
 
-If your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using the Git integration and [API Import Tool](../../snyk-api-info/other-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api/) sections for details of this type of process
+If your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using the Git integration and [API Import Tool](../../snyk-api-info/other-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/) sections for details of this type of process
 
 However, for larger, more process-oriented enterprises, this process may take weeks or months, and it requires more detailed planning to succeed.&#x20;
 

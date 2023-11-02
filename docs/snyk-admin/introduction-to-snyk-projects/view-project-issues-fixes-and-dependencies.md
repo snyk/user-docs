@@ -17,7 +17,7 @@ Use the filters in the panel to the left to narrow the search for issues. Select
 Issue details are shown on Issue cards in the main area, sorted by priority score. See [Issue card information](issue-card-information.md) for more details.
 
 {% hint style="info" %}
-Snyk provides features to fix issues identified during scanning. See [Fix your vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for more details.
+Snyk provides features to fix issues identified during scanning. See [Fix your vulnerabilities](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for more details.
 {% endhint %}
 
 ## View issue details
@@ -49,7 +49,7 @@ Snyk knowledge of the transitive dependencies in your Project makes it possible 
 
 </div>
 
-See [Fix your vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for details.
+See [Fix your vulnerabilities](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
 ## View dependencies in Snyk Open Source
 

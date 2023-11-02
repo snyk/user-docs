@@ -29,7 +29,7 @@ Continue by following these steps:
 
     A status bar appears at the top of the page as the images are imported; you can continue working while the images are being imported.
 3. When the import ends, a notification of success or failure appears at the top of the page. Click **Refresh** to view the **Projects** page with the newly imported images. Images are grouped by repository and are each linked individually to a detailed Projects page.
-4. You can now connect your Git repo to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-with-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
+4. You can now connect your Git repo to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-using-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 GCR files are indicated with a unique icon. You can now filter to view only those Projects:
 
@@ -44,5 +44,5 @@ GCR files are indicated with a unique icon. You can now filter to view only thos
 GCR integration works similarly to other Snyk integrations. To continue to monitor, fix, and manage your Projects, see the relevant pages in the Snyk docs.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. See [Detecting application vulnerabilities in container images ](../../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. See [Detecting application vulnerabilities in container images ](../../../scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}

@@ -20,7 +20,7 @@ The remaining pages address [Scanning Projects](./#scanning-projects), [Monitori
 * [**Severity thresholds** for CLI tests](set-severity-thresholds-for-cli-tests.md)
 * [**Test public npm packages** before use](test-public-npm-packages-before-use.md)
 * [CLI **test results**](view-cli-test-results.md)
-* [Differences in **vulnerability counts** across environments](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
+* [Differences in **vulnerability counts** across environments](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
 
 ## Monitoring Projects
 

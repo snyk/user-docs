@@ -80,7 +80,7 @@ See also [Integrate with Snyk](../integrations/) for more details.
 
 As part of Team and Enterprise plans, Snyk can identify license compliance issues in your Open Source packages. The default license policy specifies the severity associated with the use of different licenses, along with an option to provide license instructions if Snyk finds these licenses in your Projects. You can customize the default license policy for your needs.
 
-See also [Snyk License Compliance Management](../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md) for more details.
+See also [Snyk License Compliance Management](../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md) for more details.
 
 ### Enable Snyk Code
 
@@ -94,7 +94,7 @@ Navigate to **Settings > Snyk Code**. Select Enabled and Save changes.
 If you have imported Projects prior to enabling Snyk Code, you must re-import them.
 {% endhint %}
 
-See [Activate Snyk Code using the Web UI](../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-code/activate-snyk-code-using-the-web-ui.md) for more details.
+See [Activate Snyk Code using the Web UI](../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-code/activate-snyk-code-using-the-web-ui.md) for more details.
 
 ### Configure notifications
 

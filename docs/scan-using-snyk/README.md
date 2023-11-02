@@ -1,10 +1,10 @@
-# Scan applications
+# Scan using Snyk
 
 Scan and secure your codebase with Static Application Security Testing (SAST) and Software Composition Analysis (SCA) capabilities available with Snyk.
 
 ## Snyk Open Source
 
-Find and fix known vulnerabilities and licensing issues in your open source dependencies.
+Find and fix known vulnerabilities and licensing issues in your open-source dependencies.
 
 :link: [Get insights into the open source security](https://snyk.io/series/open-source-security/) (Developer security knowledge series).
 

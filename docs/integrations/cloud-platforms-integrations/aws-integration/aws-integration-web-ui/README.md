@@ -10,5 +10,5 @@ The steps follow to onboard an AWS account via the Web UI:
 
 When you have completed the steps, you will be able to do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-with-snyk/scan-infrastructure/introduction-to-iac+/cloud-and-integrated-iac-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/cloud-and-integrated-iac-issues/).
 * Prioritize your vulnerabilities with cloud context.

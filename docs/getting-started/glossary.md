@@ -110,11 +110,11 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md).
+A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-using-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md).
 
 ### Fix PR
 
-A pull request with an automatic fix for vulnerabilities found that Snyk can offer the user. See [Configure Automatic fix PRs](../scan-with-snyk/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md).
+A pull request with an automatic fix for vulnerabilities found that Snyk can offer the user. See [Configure Automatic fix PRs](../scan-using-snyk/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md).
 
 ## G
 
@@ -214,7 +214,7 @@ Pull Request. Allows a user to exchange changes made to source code and collabor
 
 ### PR Checks
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [PR Checks](../scan-with-snyk/run-pr-checks/).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [PR Checks](../scan-using-snyk/run-pr-checks/).
 
 ### Priority Score
 
@@ -324,19 +324,19 @@ A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerab
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../scan-with-snyk/snyk-code/).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../scan-using-snyk/snyk-code/).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Scan containers](../scan-with-snyk/snyk-container/).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Scan containers](../scan-using-snyk/snyk-container/).
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-with-snyk/scan-infrastructure/scan-your-iac-source-code/).
+A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/).
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source](../scan-with-snyk/snyk-open-source/).
+A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source](../scan-using-snyk/snyk-open-source/).
 
 ### Snyk plugin
 
@@ -375,7 +375,7 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 
 ### Vulnerability
 
-A security vulnerability, identified by Snyk. See [Starting to fix vulnerabilities](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/).
+A security vulnerability, identified by Snyk. See [Starting to fix vulnerabilities](../scan-using-snyk/snyk-open-source/manage-vulnerabilities/).
 
 ## W
 

@@ -1,7 +1,7 @@
 # User Docs
 
-| <p>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</p> | <p><a href="scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api/">Start scanning</a><br>Start scanning your applications</p> |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| <p>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</p> | <p><a href="scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/">Start scanning</a><br>Start scanning your applications</p> |
+| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 
 #### Connect with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
@@ -10,8 +10,8 @@
 
 #### Scan using Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-| <p><a href="scan-with-snyk/">Scan applications</a><br>Secure your application: scan native code, open-source libraries, and containers</p> | <p><a href="scan-with-snyk/scan-infrastructure/">Scan infrastructure</a><br>Secure your infrastructure, before and after it is deployed</p> |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><a href="scan-using-snyk/">Scan applications</a><br>Secure your application: scan native code, open-source libraries, and containers</p> | <p><a href="scan-using-snyk/scan-infrastructure/">Scan infrastructure</a><br>Secure your infrastructure, before and after it is deployed</p> |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 
 #### Manage your Snyk system
 

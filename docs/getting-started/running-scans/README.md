@@ -5,7 +5,7 @@ You can use Snyk to scan your code:
 * [Manually](./#run-tests-manually): using the Snyk CLI, the Snyk Web UI, and the Snyk API.
 * [Automatically](./#run-tests-automatically): after Project import or using the `snyk monitor` CLI command or using PR Checks to scan new PRs.
 
-To start using Snyk scanning capabilities for open-source libraries, container images, and application code, see [Start scanning](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api/).
+To start using Snyk scanning capabilities for open-source libraries, container images, and application code, see [Start scanning](../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/).
 
 {% hint style="info" %}
 Scans may be limited on your account, depending on your[ Pricing Plan](../../more-info/plans.md). See [What counts as a scan?](../running-tests/what-counts-as-a-test.md) for more information.
@@ -60,4 +60,4 @@ The default scan frequency and available frequencies vary depending on the type 
 
 Snyk can scan every new Pull Request (PR) submitted on your monitored repositories to help prevent new vulnerabilities from being added to your codebase.
 
-See [Run PR Checks](../../scan-with-snyk/run-pr-checks/) for details.
+See [Run PR Checks](../../scan-using-snyk/run-pr-checks/) for details.

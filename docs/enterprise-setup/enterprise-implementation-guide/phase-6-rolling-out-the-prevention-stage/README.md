@@ -21,7 +21,7 @@ If you are not already blocking vulnerabilities, start by blocking the differenc
 
 This eases developers into the process, as they only take responsibility for vulnerabilities directly related to their changes.&#x20;
 
-* [Run PR Checks](../../../scan-with-snyk/run-pr-checks/): these have the option to block new issues.&#x20;
+* [Run PR Checks](../../../scan-using-snyk/run-pr-checks/): these have the option to block new issues.&#x20;
 * [Snyk Delta](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) can assist with differences in results at the CLI level.
 
 ### Communicate exception processes
