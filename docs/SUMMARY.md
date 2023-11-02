@@ -775,7 +775,7 @@
     * [Scan all unmanaged JAR files](snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
     * [Log4shell command use](snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-use-the-log4shell-command.md)
     * [Monitor your projects at regular intervals](snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md)
-    * [How to select the organization to use in the CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md)
+    * [How to select the Organization to use in the CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md)
     * [Group projects by branch or version for monitoring](snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
     * [Setup.py file failing to scan or finding zero dependencies](snyk-cli/scan-and-maintain-projects-using-the-cli/setup.py-file-failing-to-scan-or-finding-zero-dependencies.md)
     * [Severity thresholds for CLI tests](snyk-cli/scan-and-maintain-projects-using-the-cli/set-severity-thresholds-for-cli-tests.md)
