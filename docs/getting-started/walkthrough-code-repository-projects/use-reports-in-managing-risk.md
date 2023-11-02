@@ -12,7 +12,7 @@ Reports are available with Enterprise plans. See [pricing plans](https://snyk.io
 
 Snyk reports provide the visibility and analytics needed to drive data-based conversations between development and security.
 
-On the sidebar menu, select **Reports** to open reporting. For instructions on using the interface and interpreting the output, see [Reporting](../../manage-issues/reporting/).
+On the sidebar menu, select **Reports** to open reporting. For instructions on using the interface and interpreting the output, see [Reporting](../../manage-issues/reporting/). For a demonstration, see the [Reporting video](https://training.snyk.io/learn/course/using-snyk-reports/main/using-snyk-reports) provided by Snyk Training.
 
 <figure><img src="../../.gitbook/assets/2023-10-31_11-00-19.png" alt="An overview of Snyk Project vulnerabilities in Reports"><figcaption><p>An overview of Snyk Project vulnerabilities in Reports</p></figcaption></figure>
 

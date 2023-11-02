@@ -28,7 +28,7 @@ See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-snyk-
 
 A scan runs when you import a Snyk Project (see [Import a Project](../quickstart/import-a-project.md)) or click the **Retest now** button on a Project.
 
-See [Exploring the Snyk Web UI](../exploring-the-snyk-web-ui.md) for details.
+See [Exploring the Snyk Web UI](../explore-snyk-through-the-web-ui.md) for details.
 
 ### Using the API
 

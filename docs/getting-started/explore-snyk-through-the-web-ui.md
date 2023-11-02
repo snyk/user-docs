@@ -1,4 +1,4 @@
-# Exploring the Snyk Web UI
+# Explore Snyk through the Web UI
 
 {% hint style="success" %}
 If you have not done so already, you should [create an account](quickstart/create-a-snyk-account.md).
@@ -20,15 +20,15 @@ You can connect your code repositories, and then use Snyk to scan and secure you
 
 This page explains the following functions of Snyk available through the Web UI:
 
-* [Explore the Dashboard](exploring-the-snyk-web-ui.md#dashboard)
-* [View reports](exploring-the-snyk-web-ui.md#view-reports)
-* [Manage your Projects](exploring-the-snyk-web-ui.md#manage-your-projects)
-* [Manage your integrations](exploring-the-snyk-web-ui.md#manage-your-integrations)
-* [Manage Organization or Group members](exploring-the-snyk-web-ui.md#manage-organization-or-group-members)
-* [Snyk Organization and Group settings](exploring-the-snyk-web-ui.md#snyk-organization-or-group-settings)
-* [View Snyk updates](exploring-the-snyk-web-ui.md#view-snyk-updates)
-* [View helpful resources](exploring-the-snyk-web-ui.md#view-helpful-resources)
-* [Manage account preferences and settings](exploring-the-snyk-web-ui.md#manage-account-preferences-and-settings)
+* [Explore the Dashboard](explore-snyk-through-the-web-ui.md#dashboard)
+* [View reports](explore-snyk-through-the-web-ui.md#view-reports)
+* [Manage your Projects](explore-snyk-through-the-web-ui.md#manage-your-projects)
+* [Manage your integrations](explore-snyk-through-the-web-ui.md#manage-your-integrations)
+* [Manage Organization or Group members](explore-snyk-through-the-web-ui.md#manage-organization-or-group-members)
+* [Snyk Organization and Group settings](explore-snyk-through-the-web-ui.md#snyk-organization-or-group-settings)
+* [View Snyk updates](explore-snyk-through-the-web-ui.md#view-snyk-updates)
+* [View helpful resources](explore-snyk-through-the-web-ui.md#view-helpful-resources)
+* [Manage account preferences and settings](explore-snyk-through-the-web-ui.md#manage-account-preferences-and-settings)
 
 ### Explore the Dashboard
 

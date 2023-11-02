@@ -349,7 +349,7 @@ Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabiliti
 
 ### Snyk Web UI
 
-The browser-based environment allowing users to access Snyk functions. See [Exploring the Snyk Web UI](exploring-the-snyk-web-ui.md).
+The browser-based environment allowing users to access Snyk functions. See [Exploring the Snyk Web UI](explore-snyk-through-the-web-ui.md).
 
 ### Social Trends
 
