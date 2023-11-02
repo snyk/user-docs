@@ -174,7 +174,7 @@ The media format of the request is not supported. Change media format, then try 
 
 
 ---
-# [Open Source Languages & Package Managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
+# [Open Source Languages & Package Managers](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
 ### [SNYK-OS-0001](#snyk-os-0001)
 
 #### Unable to parse manifest file
@@ -868,7 +868,7 @@ Unable to find the coordinates for the provided SHA1. Please verify the data you
 - [https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files)
 
 ---
-# [PURL Vulnerabilities](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access#about-the-snyk-vulnerability-database)
+# [PURL Vulnerabilities](https://docs.snyk.io/scan-applications/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database#about-the-vulnerability-database)
 ### [SNYK-OSSI-1040](#snyk-ossi-1040)
 
 #### Your Organisation is not authorized to perform this action
@@ -1259,4 +1259,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-10-31T15:04:54.119Z
+--- Generated at 2023-11-02T18:36:13.294Z
