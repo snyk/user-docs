@@ -24,7 +24,7 @@ The Snyk free plan provides limited free tests per month. For unlimited tests, c
 
 ### Create or log into your account
 
-You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](quickstart/create-a-snyk-account.md) to try out a Project. If your Organization is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For more information, see [Create or log in to a Snyk account](quickstart/create-a-snyk-account.md).
+You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](quickstart/create-or-log-in-to-a-snyk-account.md) to try out a Project. If your Organization is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For more information, see [Create or log in to a Snyk account](quickstart/create-or-log-in-to-a-snyk-account.md).
 
 ### Test a Project in your local development environment
 

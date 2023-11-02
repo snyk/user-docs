@@ -4,7 +4,7 @@
 
 This quickstart helps you with these basic tasks in the Snyk application:
 
-1. [Create a Snyk account](create-a-snyk-account.md).
+1. [Create a Snyk account](create-or-log-in-to-a-snyk-account.md).
 2. [Set up a Snyk integration](set-up-an-integration.md): to give Snyk access to your code for scanning.
 3. [Import a Project](import-a-project.md) (or run a scan locally) to scan and identify issues.
 4. [Review the results](view-snyk-scan-results.md) and take action based on the details of the issues found.

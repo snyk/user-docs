@@ -3,7 +3,7 @@
 You need a Snyk account to use Snyk functions.
 
 {% hint style="info" %}
-If you already have a Snyk account, see [Log in to an existing account](create-a-snyk-account.md#log-in-to-an-existing-account).
+If you already have a Snyk account, see [Log in to an existing account](create-or-log-in-to-a-snyk-account.md#log-in-to-an-existing-account).
 {% endhint %}
 
 ## Create a Snyk account

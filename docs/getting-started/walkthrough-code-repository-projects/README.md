@@ -10,7 +10,7 @@ For general guidance about rolling out your Snyk solution to your teams, see [Pr
 
 ## Prerequisites for completing this walkthrough
 
-This walkthrough assumes that you have followed the initial setup steps as described in the [Quickstart](../quickstart/) documentation: first, [create a Snyk account](../quickstart/create-a-snyk-account.md), then [set up an integration](../quickstart/set-up-an-integration.md) with a Git repo, and then [import a Project](../quickstart/import-a-project.md) containing items for scanning.
+This walkthrough assumes that you have followed the initial setup steps as described in the [Quickstart](../quickstart/) documentation: first, [create a Snyk account](../quickstart/create-or-log-in-to-a-snyk-account.md), then [set up an integration](../quickstart/set-up-an-integration.md) with a Git repo, and then [import a Project](../quickstart/import-a-project.md) containing items for scanning.
 
 ## First step: view your Projects
 

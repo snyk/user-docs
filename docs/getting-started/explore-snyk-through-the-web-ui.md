@@ -1,7 +1,7 @@
 # Explore Snyk through the Web UI
 
 {% hint style="success" %}
-If you have not done so already, you should [create an account](quickstart/create-a-snyk-account.md).
+If you have not done so already, you should [create an account](quickstart/create-or-log-in-to-a-snyk-account.md).
 {% endhint %}
 
 ## Introduction to the Snyk Web UI and supported browsers

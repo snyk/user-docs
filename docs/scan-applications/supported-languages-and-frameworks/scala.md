@@ -34,7 +34,7 @@ Snyk scans Scala projects by running `sbt` plugins or examining your `build.sbt`
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../getting-started/quickstart/create-a-snyk-account.md)
+1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
 2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 3. [Set the default Organization for all Snyk tests](broken-reference) (code analysis)
 
