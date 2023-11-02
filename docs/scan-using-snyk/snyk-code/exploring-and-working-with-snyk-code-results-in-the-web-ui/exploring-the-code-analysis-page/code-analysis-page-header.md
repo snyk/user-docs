@@ -17,7 +17,7 @@ You can perform a test on demand by clicking the **Retest now** option.
 
 * **Retest now** – this option enables you to perform a manual test of the repository on demand to get its most up-to-date vulnerability results. When you click the **Retest now** option, Snyk Code takes a snapshot of the repository, analyzes its source code files, and displays the new results on the **Code Analysis** page.
 
-You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. For more information, see [Excluding directories and files from the import process](../../../start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md).
+You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. For more information, see [Excluding directories and files from the import process](../../snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md).
 
 Take into consideration that Snyk counts a manual test as a new test. For more information, see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-)
 
@@ -76,8 +76,8 @@ The page shows the name of the branch of the analyzed repository, in this exampl
 * **Settings** – a page that enables you to perform the following:
   * Set the frequency of recurring tests.
   * Find the unique Project ID.
-  * [Deactivate the Project](../../../start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md#deactivating-and-deleting-imported-repositories).
-  * [Delete the Project](../../../start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md#deactivating-and-deleting-the-snyk-code-project).
+  * [Deactivate the Project](../../snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md#deactivating-and-deleting-imported-repositories).
+  * [Delete the Project](../../snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md#deactivating-and-deleting-the-snyk-code-project).
 
 <figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Header - Project Settings page.png" alt="Code Analysis settings"><figcaption><p>Code Analysis settings</p></figcaption></figure>
 

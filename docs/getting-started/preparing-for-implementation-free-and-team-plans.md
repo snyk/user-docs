@@ -94,7 +94,7 @@ Navigate to **Settings > Snyk Code**. Select Enabled and Save changes.
 If you have imported Projects prior to enabling Snyk Code, you must re-import them.
 {% endhint %}
 
-See [Activate Snyk Code using the Web UI](../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-code/activate-snyk-code-using-the-web-ui.md) for more details.
+See [Activate Snyk Code using the Web UI](../scan-using-snyk/snyk-code/scan-code/activate-snyk-code-using-the-web-ui.md) for more details.
 
 ### Configure notifications
 

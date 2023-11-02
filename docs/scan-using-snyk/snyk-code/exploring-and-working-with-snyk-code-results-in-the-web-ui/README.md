@@ -25,7 +25,7 @@ For Snyk Code, you can choose the following filter criteria on the filter pane:
 * **SHOW**:
   * **With issues** and **Without issues** - Projects with or without issues that were discovered by Snyk.
   * **Active and Inactive** - Projects that are either in an **Active** or **Inactive** status in Snyk. Inactive Projects are Projects that were deactivated on the Web UI.\
-    For more information, see [Removing imported repositories from Snyk Code testing](../../start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md).
+    For more information, see [Removing imported repositories from Snyk Code testing](../snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md).
 * **INTEGRATIONS**: the integrated SCMs that store repositories that were imported to Snyk.
 
 The other options in the filter pane are currently not applicable to Snyk Code.
