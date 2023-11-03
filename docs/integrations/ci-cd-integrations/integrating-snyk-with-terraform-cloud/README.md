@@ -16,7 +16,7 @@ Note that Terraform Cloud run tasks are available in the Terraform Cloud Team & 
 
 ## **Snyk integration with Terraform Cloud overview**
 
-Terraform Cloud has a Run Tasks feature available to customers with Run Task entitlement on their Terraform plan. This entitlement is an optional add-on to the Team plan and above. A “run” in TFC represents a unit of execution in TFC that eventually generates a Terraform plan to be reviewed, approved, and applied. .
+Terraform Cloud has a Run Tasks feature available to customers with Run Task entitlement on their Terraform plan. This entitlement is an optional add-on to the Team plan and above. A “run” in TFC represents a unit of execution in TFC that eventually generates a Terraform plan to be reviewed, approved, and applied.
 
 The Run Tasks feature allows external integrations to connect to “run” events and interact with them, providing a status to determine if this run should pass or fail.
 
