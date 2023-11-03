@@ -1157,10 +1157,12 @@ Snyk could not get the custom pull request template attributes, using the given 
 
 #### Not found
 
-Could not find pull request template. The file might be missing or wrong file name was provided.
+We could not find your pull request template, have you created one yet? Please check the attached link for instructions on how to setup your pull request template.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0003](#snyk-pr-template-0003)
 
@@ -1259,4 +1261,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-11-03T10:50:43.545Z
+--- Generated at 2023-11-03T15:50:13.054Z
