@@ -1,7 +1,7 @@
 # Snyk Broker - commit signing
 
 {% hint style="info" %}
-Snyk Broker commit signing is in [Closed Beta](../../more-info/snyk-feature-release-process.md#closed-beta) and is available only by invitation from Snyk. If you would like an invitation, contact your Snyk representative or team.
+Snyk Broker commit signing is in [Open Beta](../../more-info/snyk-feature-release-process.md#open-beta). If you are interested in using this feature, contact your Snyk representative or team.
 {% endhint %}
 
 As of version v4.151.0, the Snyk Broker Client supports commit signing for GitHub integration. With a brokered setup, you can sign GitHub commits for fix PRs with your GPG key and a dedicated user you have configured.
