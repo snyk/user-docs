@@ -14,7 +14,7 @@ With Snyk Infrastructure as Code, you can test your configuration files directly
 * [Share CLI results with the Snyk Web UI](share-cli-results-with-the-snyk-web-ui.md)
 * [IaC ignores using the `.snyk` policy file](iac-ignores-using-the-.snyk-policy-file.md)
 * [IaC exclusions using the command line](iac-exclusions-using-the-command-line.md)
-* [Understanding the IaC CLI test results](understanding-the-iac-cli-test-results/) (has information about reports)
+* [Understanding the IaC CLI test results](understand-the-iac-cli-test-results/) (has information about reports)
 
 ## Regularly testing IaC files
 

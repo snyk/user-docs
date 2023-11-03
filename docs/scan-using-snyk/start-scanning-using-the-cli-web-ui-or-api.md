@@ -57,6 +57,7 @@ For more information, see the following pages:
 * [Use Snyk Open Source from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-open-source-from-the-cli/)
 * [Use Snyk Code from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/)
 * [Use Snyk Container from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-container-from-the-cli/)
+* [Snyk CLI for IaC](scan-infrastructure/snyk-cli-for-iac/)
 
 ### Scan results
 
@@ -68,7 +69,7 @@ After you finish running a Snyk CLI scan, the results are displayed in the termi
 
 ## Scan using the Web UI
 
-Using a Snyk integration, you can scan your Projects from the Web UI by using the PR checks feature. Use the information from the [Configure PR Checks](run-pr-checks/configure-pr-checks.md) page to enable this functionality. See [Run an analysis with Visual Studio Code extension](../integrations/ide-tools/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension.md) for an example. For more information, see [Use Snyk in your IDE](../integrations/ide-tools/) and [Snyk CI/CD integrations](../integrations/snyk-ci-cd-integrations/).
+Using a Snyk integration, you can scan your Projects from the Web UI> Running PR Checks also scans your code. See [Configure PR Checks](run-pr-checks/configure-pr-checks.md) to learn how to enable this functionality. See [Run an analysis with Visual Studio Code extension](../integrations/ide-tools/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension.md) for an example of scanning using an integration.. For more information, see [Use Snyk in your IDE](../integrations/ide-tools/) and [Snyk CI/CD integrations](../integrations/snyk-ci-cd-integrations/).
 
 ## Scan using the API
 
