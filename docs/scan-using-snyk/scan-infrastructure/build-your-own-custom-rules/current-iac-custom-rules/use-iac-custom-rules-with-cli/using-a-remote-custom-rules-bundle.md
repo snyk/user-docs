@@ -26,7 +26,7 @@ After you have completed this configuration, you can run a Snyk IaC scan. The CL
 snyk iac test <file>
 ```
 
-The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](../../../snyk-cli-for-iac/understand-the-iac-cli-test-results/).
+The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](../../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results/).
 
 {% hint style="warning" %}
 Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the Snyk API. Alternatively, clear any previously-stored settings using `snyk config unset`.

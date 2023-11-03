@@ -5,7 +5,7 @@ For [Snyk Open Source](../../scan-using-snyk/snyk-open-source/), these options w
 
 For [Snyk Container](../../scan-using-snyk/snyk-container/), these options also work, but after registering an ignore, when you call `snyk test` or `snyk monitor`, you must use the `--policy-path=` option, for example: `snyk container test node --policy-path=.snyk.`
 
-For [Snyk Infrastructure as Code](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/), see [IaC ignores using the snyk policy file](../../scan-using-snyk/scan-infrastructure/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md).
+For [Snyk Infrastructure as Code](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/), see [IaC ignores using the snyk policy file](snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md).
 
 For [Snyk Code](../../scan-using-snyk/snyk-code/), see [Excluding directories and files from the Snyk Code CLI test](using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md).
 {% endhint %}

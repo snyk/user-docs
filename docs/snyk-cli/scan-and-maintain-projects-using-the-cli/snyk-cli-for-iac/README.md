@@ -1,12 +1,12 @@
 # Snyk CLI for IaC
 
 {% hint style="info" %}
-To use the [IaC+](../introduction-to-iac+/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
+To use the [IaC+](../../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
 {% endhint %}
 
 ## Overview
 
-To use the CLI, you must first [install](../../../snyk-cli/install-or-update-the-snyk-cli/) it and then [authenticate](../../../snyk-cli/commands/auth.md).
+To use the CLI, you must first [install](../../install-or-update-the-snyk-cli/) it and then [authenticate](../../commands/auth.md).
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 
@@ -26,6 +26,6 @@ Alternatively, you can add an [SCM integration](../../../integrations/git-reposi
 
 ## Using Snyk behind a proxy
 
-If you are using a proxy, see [Proxy configuration for Snyk CLI](../../../snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md).
+If you are using a proxy, see [Proxy configuration for Snyk CLI](../../configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md).
 
 For IaC scans specifically, you must also whitelist the \*.snyk.io address, as explained[ ](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)on the page [How can we whitelist Snyk IP addresses?](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)

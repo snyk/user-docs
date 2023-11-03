@@ -5,12 +5,12 @@ Beginning with CLI version 1.594.0, all configuration files are processed locall
 {% endhint %}
 
 {% hint style="info" %}
-To use the [IaC+](../../introduction-to-iac+/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
+To use the [IaC+](../../../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
 {% endhint %}
 
 ## Overview
 
-With Snyk Infrastructure as Code, you can test your configuration files with the CLI. This page provides detailed information on how to use certain options for the `snyk iac test` command.  For information about all of the options see the `snyk iac test` command [help](../../../../snyk-cli/commands/iac-test.md). For details about testing the various configuration files, see the following pages:
+With Snyk Infrastructure as Code, you can test your configuration files with the CLI. This page provides detailed information on how to use certain options for the `snyk iac test` command.  For information about all of the options see the `snyk iac test` command [help](../../../commands/iac-test.md). For details about testing the various configuration files, see the following pages:
 
 * [Terraform files](terraform-files.md)
 * [CloudFormation files](cloudformation-files.md)

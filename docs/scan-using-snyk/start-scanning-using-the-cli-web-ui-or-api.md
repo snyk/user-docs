@@ -57,7 +57,7 @@ For more information, see the following pages:
 * [Use Snyk Open Source from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-open-source-from-the-cli/)
 * [Use Snyk Code from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/)
 * [Use Snyk Container from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-container-from-the-cli/)
-* [Snyk CLI for IaC](scan-infrastructure/snyk-cli-for-iac/)
+* [Snyk CLI for IaC](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)
 
 ### Scan results
 
