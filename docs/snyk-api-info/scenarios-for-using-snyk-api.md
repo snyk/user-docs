@@ -175,7 +175,7 @@ API v1 Projects (Ignored issues) [Retrieve ignore](https://snyk.docs.apiary.io/r
 Scenario: [Tag projects in Snyk](https://github.com/snyk-playground/cx-tools/blob/main/scripts/tag-snyk-projects.md) (complete procedure)
 
 **Endpoints used:**\
-API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
+API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects) now REST API [List all Projects for an Org with the given Org ID](https://apidocs.snyk.io/?version=2023-06-19#get-/orgs/-org\_id-/projects)
 
 ### Import fresh Container images
 
