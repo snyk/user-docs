@@ -1,7 +1,5 @@
 # Working with Snyk in your environment
 
-
-
 {% hint style="info" %}
 **Feature availability**\
 Some features mentioned on this may not be available depending on your Snyk plan or product. Each Snyk product provides key capabilities for the ecosystems you are working in.&#x20;
@@ -18,20 +16,20 @@ The Snyk developer-first approach allows you to:
 * Add and test packages before writing the code that interfaces with each package.
 * &#x20;After writing a major section of code, scan it to find issues before continuing work.
 
-As you start planning and designing, and your code progresses through your development process to production, Snyk provides different capabilities at each stage to help you find and fix security issues. Work with Snyk begins with importing one or more Projects and scanning for issues.
+Using  Snyk begins with importing one or more Projects and scanning for issues.
 
 ## Snyk methods of scanning
 
-Snyk offers products that implement methods of scanning specific to Project types.
+Snyk supports scanning methods that correspond to Snyk products.
 
-| Project type and product                                                                                                                                                                         | Description                                                                                                                                                                                                           |
+| Scanning methods                                                                                                                                                                                 | Description                                                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p><strong>Snyk Open Source</strong><br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> Some capabilities may be limited for some languages and package managers.</p> | <p></p><ul><li>Open Source vulnerability testing and monitoring (All plans).</li></ul><ul><li>Open Source dependency upgrade version bumping (All plans).</li></ul><ul><li>License Compliance (paid plans).</li></ul> |
 | **Snyk Code**                                                                                                                                                                                    | Scan your code for security vulnerabilities using source code analysis.                                                                                                                                               |
 | **Snyk Container**                                                                                                                                                                               | Scan for issues with container images.                                                                                                                                                                                |
 | **Snyk Infrastructure as Code**                                                                                                                                                                  | Secure cloud infrastructure configurations before and after deployment.                                                                                                                                               |
 
-
+As you start planning and designing your applications, and your code progresses through your development process to production, Snyk provides different capabilities at each stage to help you find and fix security issues.&#x20;
 
 ## Plan and design your code
 
