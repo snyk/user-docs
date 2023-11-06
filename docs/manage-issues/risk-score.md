@@ -1,7 +1,7 @@
 # Risk Score
 
 {% hint style="info" %}
-.Risk Score is currently in Open Beta for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score. See [Snyk feature release process](../more-info/snyk-feature-release-process.md) for more details.
+Risk Score is currently in Open Beta for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score. See [Snyk feature release process](../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
 The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for each security issue. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
@@ -78,27 +78,27 @@ Fixability is no longer considered part of the Score Calculation, as the effort 
 
 #### Confidentiality
 
-Represents the impact on customer’s data confidentiality, based on CVSS definition.\
+Represents the impact on customer’s data confidentiality, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-1-Confidentiality-C).\
 **Possible input values:** `None`, `Low`, `High`
 
 #### Integrity
 
-Represents the impact on customer’s data integrity, based on CVSS definition.\
+Represents the impact on customer’s data integrity, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-2-Integrity-I).\
 **Possible input values:** `None`, `Low`, `High`
 
 #### Availability
 
-Represents the impact of customer’s application availability based on CVSS definition.\
+Represents the impact of customer’s application availability based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-3-Availability-A).\
 **Possible input values:** `None`, `Low`, `High`
 
 #### Scope
 
-Indicates whether the vulnerability can affect components outside of the target’s security scope, based on CVSS definition.\
+Indicates whether the vulnerability can affect components outside of the target’s security scope, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-2-Scope-S).\
 **Possible input values:** `Unchanged`, `Changed`.&#x20;
 
 {% hint style="info" %}
 **How would these affect the score?** \
-The objective impact subscore is calculated based on the CVSS impact subscore. For more information, see these references on CVSS [impact definitions](https://www.first.org/cvss/v3.1/specification-document#2-3-Impact-Metrics) and [subscore equations](https://www.first.org/cvss/v3.1/specification-document#7-1-Base-Metrics-Equations).
+The objective impact subscore is calculated based on the CVSS impact subscore. For more information, see the references on CVSS definitions above and the [subscore equations](https://www.first.org/cvss/v3.1/specification-document#7-1-Base-Metrics-Equations).
 {% endhint %}
 
 #### Provider urgency (Snyk Container)&#x20;
@@ -167,7 +167,7 @@ The likelihood subscore will increase significantly according to the EPSS score
 
 #### Attack vector&#x20;
 
-Represents the context by which vulnerability exploitation is possible, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-Exploitability-Metrics).\
+Represents the context by which vulnerability exploitation is possible, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-1-Attack-Vector-AV).\
 **Possible input values:** `Network, Adjacent, Local, Physical`
 
 {% hint style="info" %}
@@ -180,7 +180,7 @@ _`Adjacent, Local, Physical`_ - Likelihood subscore will decrease according to t
 
 #### Attack complexity&#x20;
 
-Represents the level of complexity defined by the conditions that must exist to exploit the vulnerability, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-Exploitability-Metrics).\
+Represents the level of complexity defined by the conditions that must exist to exploit the vulnerability, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-2-Attack-Complexity-AC).\
 **Possible input values:** `Low`, `High`
 
 {% hint style="info" %}
@@ -193,28 +193,28 @@ Represents the level of complexity defined by the conditions that must exist to 
 
 #### Privileges required&#x20;
 
-Represents the level of privileges an attacker must possess before successfully exploiting the vulnerability, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-Exploitability-Metrics).\
+Represents the level of privileges an attacker must possess before successfully exploiting the vulnerability, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-3-Privileges-Required-PR).\
 **Possible input values:** `None`, `Low`, `High`
 
 {% hint style="info" %}
 **How would this affect the score?**&#x20;
 
-_`None`_ - Likelihood subscore will increase&#x20;
+_`None`_- Likelihood subscore will increase&#x20;
 
-`Low, High` - Likelihood subscore will decrease according to the level of privileges required&#x20;
+`Low, High`- Likelihood subscore will decrease according to the level of privileges required&#x20;
 {% endhint %}
 
 #### User interaction&#x20;
 
-Represents the need for action from a user as part of the exploitation process, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-Exploitability-Metrics).\
+Represents the need for action from a user as part of the exploitation process, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-4-User-Interaction-UI).\
 **Possible input values:** `None`, `Required`&#x20;
 
 {% hint style="info" %}
 **How would this affect the score?**&#x20;
 
-`None` -  Likelihood subscore will increase&#x20;
+`None`-  Likelihood subscore will increase&#x20;
 
-`Required` - Likelihood subscore will decrease&#x20;
+`Required`- Likelihood subscore will decrease&#x20;
 {% endhint %}
 
 #### Social trends&#x20;
