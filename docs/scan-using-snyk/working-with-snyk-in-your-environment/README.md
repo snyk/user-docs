@@ -20,9 +20,9 @@ Using  Snyk begins with importing one or more Projects and scanning for issues.
 
 ## Snyk methods of scanning
 
-Snyk supports scanning methods that correspond to Snyk products.
+Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do with a view to finding and fixing vulnerabilities early in the Software Development Life Cycle.
 
-[Snyk Open Source](../snyk-open-source/) provides vulnerability testing and monitoring for your Projects. Open-source dependence upgrade and version bumping information and license compliance information are provided on all Snyk plans. Some capabilities may be limited for some languages and package managers.
+[Snyk Open Source](../snyk-open-source/) provides vulnerability testing and monitoring for your Projects. Open-source dependence upgrade and version bumping information, as well as license compliance information, are provided on all Snyk plans. Some capabilities may be limited for some [languages and package managers](../supported-languages-and-frameworks/).
 
 [Snyk Code](../snyk-code/) scans your code for security vulnerabilities using source code analysis.
 
@@ -31,6 +31,14 @@ Snyk supports scanning methods that correspond to Snyk products.
 [Snyk Infrastructure as Code ](../scan-infrastructure/)scans for issues in your cloud infrastructure configurations before and after deployment.
 
 For more information, see [Running scans](running-scans.md) and [What counts as a scan?](what-counts-as-a-test.md)
+
+Snyk Open Source and Snyk Code allow you to [run PR Checks](../run-pr-checks/) to validate changes submitted to code and open-source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis and show results. You can use PR checks for the following:
+
+* Code analysis with Snyk Code
+* Check for Open source and licensing with Snyk Open Source
+  * Check for known vulnerabilities and create Fix Pull Requests (npm/Yarn 1,2,3)
+  * Check for license compliance (Snyk Open Source)
+  * Address dependency upgrades by positioning updates to address technical debt (Snyk Open Source)
 
 As you start planning and designing your applications, and your code progresses through your development process to production, Snyk provides different capabilities at each stage to help you find and fix security issues.&#x20;
 
@@ -42,78 +50,39 @@ The following resources are available for all users:
 * [Snyk Learn](https://learn.snyk.io/): Assists you in learning to code securely.
 * [Snyk Training](https://training.snyk.io/): Provides training on how to use Snyk.
 
-## Write your code
+## Write and deploy your code
 
-The following capabilities are available for all Snyk users.
+The following capabilities are available for all Snyk users except as noted in the documentation for each capability.
 
-* Snyk [IDE Plugins](../../integrations/ide-tools/) for VS Code, IntelliJ, and others: Test your open-source packages and first-party code as you develop. Test infrastructure as code (IaC) Kubernetes deployment files you create.
-* [Snyk CLI](../../snyk-cli/): A terminal program that allows you to test locally on your machine. Useful in testing containers and more complex IaC files that are templated with variables, such as Terraform plan files, as well as scanning open source and your code.
+* Using [Snyk IDE Plugins](../../integrations/ide-tools/) you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
+* Using the [Snyk CLI](../../snyk-cli/) you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
+* Using [Git integrations](../../integrations/git-repository-scm-integrations/) you can improve security in your Git repositories for both your code and deployed applications.
+* Using CI/CD plugins and integrations you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
+  * There are options for passive monitoring and establishing a quality assurance gate by failing build checks based on tests for violations of policies.
+  * Most CI/CD integrations use the Snyk CLI, allowing you to fail the build based on criteria specified in options or using the [snyk-filter tool](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
+  * Snyk CI/CD integrations include Snyk plugins for Jenkins, Circle CI, and other tools as well as Partner Platforms, including Azure, Bitbucket, and AWS, that offer builit-in pipes or components for using Snyk.
+  * [Github Actions](../../integrations/ci-cd-integrations/github-actions-integration/) provide additional means for securing your code in your deployment pipeline. For details and an example, see [Building a secure CI/CD pipeline with GitHub Actions for your Java Application](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/).
 
-Snyk allows you to [run PR Checks](../run-pr-checks/) to validate submitted changes to code and open-source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis and show results.
+## Monitor your code in production
 
-These functions can be used for:
+Before integrating your code into production, using the [snyk monitor](../../snyk-cli/commands/monitor.md) or [snyk container monitor](../../snyk-cli/commands/container-monitor.md) CLI command allows you to take a snapshot and monitor for vulnerabilities to avoid pushing them into production.
 
-* Code analysis with Snyk Code
-* Open source and licensing with Snyk Open Source
-  * Check for known vulnerabilities and create Fix Pull Requests (npm/Yarn 1,2,3)
-  * Check for license compliance checks (Snyk Open Source)
-  * Dependency upgrade - positioning updates to address technical debt (Snyk Open Source)
+You can use the `snyk monitor` or [snyk container monitor](../../snyk-cli/commands/container-monitor.md) CLI command and monitor capabilities to identify issues introduced into open-source and container Projects. During implementation, monitoring helps you to gain recognition of vulnerabilities in your Projects. See [Deployment and rollout recommendations](./#deployment-and-rollout-recommendations) for details.
 
-Additionally, with Git Integration, you can also monitor the following on a daily basis:
+You can use the `snyk monitor` or `snyk container monitor` command to push results from the CLI to the Snyk Web UI, where you can view the information to help in fixing issues. Use the  `--org=` option to indicate the Organization that contains the Project, so you will use the test settings you intend and push the results to the correct Project.
 
-* Infrastructure as code (IaC) with Snyk Infrastructure as Code
-
-## **Integrate with Snyk using your CD/CD**
-
-Snyk can passively monitor and/or provide a QA gate by failing build checks during testing for policy violations.
-
-Snyk provides the following capabilities:
-
-* Dedicated plugins for Jenkins, Circle CI, and other CI/CD tools (see relevant marketplaces).
-* [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/).
-* The Snyk CLI can be used in most CI/CD tools (see [Snyk CI/CD integration examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)).
-  * Fail the build based on criteria using options or the [snyk-filter tool](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
-  * [Containerized](https://hub.docker.com/r/snyk/snyk) versions of the CLI are available.
-* Partner Platforms such as Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk.
-
-## Monitor code in production
-
-* Snyk can monitor container images and their open source/Linux-based packages being used in production via Kubernetes integration to notify customers of known vulnerabilities for applications in production.\
-  :information\_source: **Snyk Enterprise plan only**\
-
-* Where a production integration does not exist, use the [snyk monitor](../../snyk-cli/commands/monitor.md) CLI command to take a snapshot and monitor what is being pushed to production.\
-  :information\_source: **All Snyk plans**
-
-Monitor with Snyk to gain recognition of vulnerabilities in your Projects.
-
-You can place Snyk on your public repositories and have a badge indicating your package's security status.&#x20;
-
-:link: [Instant security information with the Snyk security badge](https://snyk.io/blog/instant-security-information-with-the-snyk-security-badge/)
+Snyk Enterprise plan customers can monitor container images and their open-source and Linux-based packages being used in production through Kubernetes integration to receive notifications of known vulnerabilities for applications in production.
 
 ## Deployment and rollout recommendations
 
-Startups, small teams, individuals, open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow.
+Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow.
 
-With large organizations using hundreds of applications, a slower approach is recommended to get developer buy-in/adoption and to ensure a positive rollout experience.
+With large organizations using hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience.
 
-1. Typically, large organizations start with daily monitoring of applications via Git integration, only initially turning on PR checks for a few key applications.
-2. As developers become familiar with Snyk's capabilities, you can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
-3. Some customers use CI/CD to passively monitor and then turn on gating by using the `snyk [product] test` commands.
-4. If you onboard a large number of legacy applications, you can use [Priority Score](../../manage-issues/priorities-for-fixing-issues/priority-score.md) (typically 700 as a starting place) or criteria like “Known exploit” or “Fix available” to define a starting point to engage developers to start fixing vulnerabilities on key applications.
-
-## Reporting
-
-You can use the `snyk [product] monitor` command to push results from the CLI back to Snyk for reporting in the Snyk UI. Don’t forget to use `--org=` to indicate what Organization to place the monitored results in or retrieve test settings from during the test.
-
-See the [`snyk monitor`](../../snyk-cli/cli-commands-and-options-summary.md#snyk-monitor) and the [monitor](../../snyk-cli/commands/monitor.md) pages for more details about how to use the command.
-
-{% hint style="info" %}
-Snyk Enterprise plan customers can access the [Snyk API](../../snyk-api/) for reporting and extracting data.
-{% endhint %}
-
-## Proxies
-
-See the [CLI proxy guide](../../snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md) page for more details about the proxy configuration for Snyk CLI.&#x20;
+1. Typically, large organizations start with daily monitoring of applications using Git integration, only, initially turning on PR checks for a few key applications.
+2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
+3. Some customers use CI/CD to passively monitor and then turn on gating by using the Snyk CLI `test` command for each product.
+4. If you import a large number of legacy applications, you can use [Priority Score](../../manage-issues/priorities-for-fixing-issues/priority-score.md) (typically 700 as a starting place) or criteria like “Known exploit” or “Fix available” to define a starting point to engage developers to start fixing vulnerabilities for key applications.
 
 ## How to fix issues using Snyk
 
@@ -143,5 +112,5 @@ Snyk offers capabilities in this ecosystem to help address issues, both reactive
    * You can enable dependency upgrade-related pull requests created when new versions of a package are available. This helps with technical debt by providing PR nudges to update dependencies.
 
 {% hint style="info" %}
-We suggest enabling automated PRs on a key project to start before enabling globally to familiarize development on how to interact with Snyk and security issues.
+Snyk suggests enabling automated PRs on a key project to start before enabling globally to familiarize development on how to interact with Snyk and security issues.
 {% endhint %}
