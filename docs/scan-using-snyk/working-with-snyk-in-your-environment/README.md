@@ -73,17 +73,6 @@ You can use the `snyk monitor` or `snyk container monitor` command to push resul
 
 Snyk Enterprise plan customers can monitor container images and their open-source and Linux-based packages being used in production through Kubernetes integration to receive notifications of known vulnerabilities for applications in production.
 
-## Deployment and rollout recommendations
-
-Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow.
-
-With large organizations using hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience.
-
-1. Typically, large organizations start with daily monitoring of applications using Git integration, only, initially turning on PR checks for a few key applications.
-2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
-3. Some customers use CI/CD to passively monitor and then turn on gating by using the Snyk CLI `test` command for each product.
-4. If you import a large number of legacy applications, you can use [Priority Score](../../manage-issues/priorities-for-fixing-issues/priority-score.md) (typically 700 as a starting place) or criteria like “Known exploit” or “Fix available” to define a starting point to engage developers to start fixing vulnerabilities for key applications.
-
 ## How to fix issues using Snyk
 
 If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes the most important.
@@ -114,3 +103,14 @@ Snyk offers capabilities in this ecosystem to help address issues, both reactive
 {% hint style="info" %}
 Snyk suggests enabling automated PRs on a key project to start before enabling globally to familiarize development on how to interact with Snyk and security issues.
 {% endhint %}
+
+## Deployment and rollout recommendations
+
+Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow.
+
+With large organizations using hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience.
+
+1. Typically, large organizations start with daily monitoring of applications using Git integration, only, initially turning on PR checks for a few key applications.
+2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
+3. Some customers use CI/CD to passively monitor and then turn on gating by using the Snyk CLI `test` command for each product.
+4. If you import a large number of legacy applications, you can use [Priority Score](../../manage-issues/priorities-for-fixing-issues/priority-score.md) (typically 700 as a starting place) or criteria like “Known exploit” or “Fix available” to define a starting point to engage developers to start fixing vulnerabilities for key applications.
