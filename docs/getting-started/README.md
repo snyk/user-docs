@@ -14,7 +14,7 @@ If you are on an [Enterprise plan](../more-info/plans.md), see [Enterprise setup
 ## Using Snyk
 
 * [Quickstart](quickstart/)
-* [Running scans](running-scans/)
+* [Running scans](../scan-using-snyk/working-with-snyk-in-your-environment/running-scans.md)
 
 ## Tutorials
 

@@ -1,14 +1,16 @@
 # Detect application vulnerabilities in container images
 
 {% hint style="info" %}
-**Feature availability**
+**Feature availability and scope**
 
-For Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java.
+For Container Registry integration, this feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java.
 
-For the CLI and Kubernetes, the feature is supported for Node, PHP, Python, Go binaries, and Java.
+For the CLI and Kubernetes, this feature is supported for Node, PHP, Python, Go binaries, and Java.
+
+Detecting application vulnerabilities is intended for scanning third-party images. This feature was not designed for detecting issues in code developed in-house, where the user has access to the source code and can shift left and detect Issues earlier in the SDLC by using Snyk Code and Snyk Open Source
 {% endhint %}
 
-Snyk is able to detect in one scan the vulnerabilities in your application dependencies from container images, as well as from the operating system.
+Snyk can detect in one scan the vulnerabilities in your application dependencies from container images, as well as from the operating system.
 
 After you integrate with a container registry and import your Projects, Snyk scans your image for vulnerabilities.
 

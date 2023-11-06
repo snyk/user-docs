@@ -150,7 +150,7 @@ Repositories are cloned using HTTPS. SSH-based clones are currently unavailable.
 
 ### Flows used in Git repository cloning
 
-[PR checks](../scan-using-snyk/run-pr-checks/), [import](../getting-started/quickstart/import-a-project.md), and r[ecurring tests](../getting-started/running-scans/) will all make use of Git repository cloning for all Projects imported using an SCM integration.
+[PR checks](../scan-using-snyk/run-pr-checks/), [import](../getting-started/quickstart/import-a-project.md), and r[ecurring tests](../scan-using-snyk/working-with-snyk-in-your-environment/running-scans.md) will all make use of Git repository cloning for all Projects imported using an SCM integration.
 
 ### Snyk Broker interactions
 

@@ -13,7 +13,7 @@ In addition, if you are using Snyk Code or scanning container images, complete t
 * [Activate Snyk Code](start-scanning-using-the-cli-web-ui-or-api/scan-code/activate-snyk-code-using-the-web-ui.md) to scan your application code.
 * [Set up integration with a supported container registry](../getting-started/quickstart/set-up-an-integration.md) to scan container images.
 
-For general information about Snyk scans, see [Running scans](../getting-started/running-scans/).&#x20;
+For general information about Snyk scans, see [Running scans](working-with-snyk-in-your-environment/running-scans.md).&#x20;
 
 ## Overview of ways to scan your Projects
 

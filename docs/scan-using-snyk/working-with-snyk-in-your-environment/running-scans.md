@@ -2,13 +2,13 @@
 
 You can use Snyk to scan your code:
 
-* [Manually](./#run-tests-manually): using the Snyk CLI, the Snyk Web UI, and the Snyk API.
-* [Automatically](./#run-tests-automatically): after Project import or using the `snyk monitor` CLI command or using PR Checks to scan new PRs.
+* [Manually](running-scans.md#run-tests-manually): using the Snyk CLI, the Snyk Web UI, and the Snyk API.
+* [Automatically](running-scans.md#run-tests-automatically): after Project import or using the `snyk monitor` CLI command or using PR Checks to scan new PRs.
 
-To start using Snyk scanning capabilities for open-source libraries, container images, and application code, see [Start scanning](../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api.md).
+To start using Snyk scanning capabilities for open-source libraries, container images, and application code, see [Start scanning](../start-scanning-using-the-cli-web-ui-or-api.md).
 
 {% hint style="info" %}
-Scans may be limited on your account, depending on your[ Pricing Plan](../../more-info/plans.md). See [What counts as a scan?](../running-tests/what-counts-as-a-test.md) for more information.
+Scans may be limited on your account, depending on your[ Pricing Plan](../../more-info/plans.md). See [What counts as a scan?](what-counts-as-a-test.md) for more information.
 {% endhint %}
 
 ## Scan manually
@@ -26,9 +26,9 @@ See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-snyk-
 
 ### Using the Snyk Web UI
 
-A scan runs when you import a Snyk Project (see [Import a Project](../quickstart/import-a-project.md)) or click the **Retest now** button on a Project.
+A scan runs when you import a Snyk Project (see [Import a Project](../../getting-started/quickstart/import-a-project.md)) or click the **Retest now** button on a Project.
 
-See [Exploring the Snyk Web UI](../explore-snyk-through-the-web-ui.md) for details.
+See [Exploring the Snyk Web UI](../../getting-started/explore-snyk-through-the-web-ui.md) for details.
 
 ### Using the API
 
@@ -50,7 +50,7 @@ See [Monitor your projects at regular intervals](../../snyk-cli/scan-and-maintai
 
 ### Using the Snyk Web UI
 
-After you [import a Project](../quickstart/import-a-project.md), Snyk automatically runs periodic scans on that Project, to see if your code is affected by newly disclosed vulnerabilities.
+After you [import a Project](../../getting-started/quickstart/import-a-project.md), Snyk automatically runs periodic scans on that Project, to see if your code is affected by newly disclosed vulnerabilities.
 
 {% hint style="info" %}
 The default scan frequency and available frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information, see [Usage page details](../../snyk-admin/manage-settings/usage-settings.md). You can also set frequency in the Project **Settings** (see [View project settings](../../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md)) or use the Snyk REST API: see [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
@@ -60,4 +60,4 @@ The default scan frequency and available frequencies vary depending on the type 
 
 Snyk can scan every new Pull Request (PR) submitted on your monitored repositories to help prevent new vulnerabilities from being added to your codebase.
 
-See [Run PR Checks](../../scan-using-snyk/run-pr-checks/) for details.
+See [Run PR Checks](../run-pr-checks/) for details.
