@@ -6,6 +6,8 @@ Snyk is a platform allowing you to scan, prioritize, and fix security vulnerabil
 
 ## The Snyk developer-first approach
 
+This approach focuses on building a secure application rather than overhead-intensive work, such as putting in hard QA gates. Snyk provides visibility in a developer’s workflow and provides actionable insights. The benefit is engaging developers in security practices as part of their development work.
+
 Developers now assemble applications with a combination of proprietary and open-source code, run that code in containers, and then deploy with infrastructure as code configurations using technologies like Kubernetes and Terraform.
 
 A good security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work with developers using the methods each prefers, while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.

@@ -235,6 +235,7 @@
     * [Atlassian Compass integration](integrations/vulnerability-management-tools/atlassian-compass-integration.md)
     * [OpsLevel integration](integrations/vulnerability-management-tools/opslevel.md)
     * [ServiceNow AVR integration](integrations/vulnerability-management-tools/servicenow-avr.md)
+    * [ServiceNow SBOM Integration](integrations/vulnerability-management-tools/servicenow-sbom-integration.md)
 * [Scan using Snyk](scan-using-snyk/README.md)
   * [Working with Snyk in your environment](getting-started/working-with-snyk-in-your-environment.md)
   * [Supported languages and frameworks](scan-using-snyk/supported-languages-and-frameworks/README.md)

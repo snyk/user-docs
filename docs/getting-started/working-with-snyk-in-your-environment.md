@@ -1,26 +1,26 @@
 # Working with Snyk in your environment
 
-## Developer-first approach
 
-Snyk takes a developer-first approach to secure your application. This approach focuses less on overhead-heavy work, such as putting in hard QA gates, and more on building a secure application, providing visibility in a developer’s workflow, and providing actionable insights. This approach's benefits are engaging developers in security practices as part of their development without seeing security as a costly overhead.
-
-{% hint style="success" %}
-**Securing your code and open-source dependencies with Snyk**
-
-* Consider using Snyk to focus on earlier enablement, not later enforcement.&#x20;
-* Do not wait until you commit the code to find an issue requiring changes. Snyk provides tools that allow you to test while working on a Project to minimize rework.
-* Add and test a package before writing the code that interfaces with it. Similarly, after writing major code sections, test it before moving on.
-{% endhint %}
-
-## Snyk overview
-
-Some features mentioned in this document may not be available depending on your Snyk plan or product. Each Snyk product provides key capabilities for the ecosystems you are working in.&#x20;
 
 {% hint style="info" %}
+**Feature availability**\
+Some features mentioned on this may not be available depending on your Snyk plan or product. Each Snyk product provides key capabilities for the ecosystems you are working in.&#x20;
+
 There is a monthly limit to the number of tests performed if a particular product is not purchased. See the [Pricing plans](https://snyk.io/plans) page for more details.
 {% endhint %}
 
-### Snyk methods of scanning
+Snyk takes a developer-first approach to secure your development work, integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. For details, see [Introducing Snyk](introducing-snyk.md).
+
+The Snyk developer-first approach allows you to:
+
+* Use Snyk to focus on earlier enablement, not later enforcement.&#x20;
+* Run scans while working on a Project to minimize rework by finding issues that require changes before you commit the code.
+* Add and test packages before writing the code that interfaces with each package.
+* &#x20;After writing a major section of code, scan it to find issues before continuing work.
+
+As you start planning and designing, and your code progresses through your development process to production, Snyk provides different capabilities at each stage to help you find and fix security issues. Work with Snyk begins with importing one or more Projects and scanning for issues.
+
+## Snyk methods of scanning
 
 Snyk offers products that implement methods of scanning specific to Project types.
 
@@ -31,11 +31,9 @@ Snyk offers products that implement methods of scanning specific to Project type
 | **Snyk Container**                                                                                                                                                                               | Scan for issues with container images.                                                                                                                                                                                |
 | **Snyk Infrastructure as Code**                                                                                                                                                                  | Secure cloud infrastructure configurations before and after deployment.                                                                                                                                               |
 
-### Features to enhance your workflow
 
-As you start planning and your code progresses through the pipeline, Snyk can provide different capabilities at each stage to help you find and fix security issues.
 
-### Designing and planning
+## Plan and design your code
 
 The following public resources are available for all users:
 
@@ -43,7 +41,7 @@ The following public resources are available for all users:
 * [Snyk Learn](https://learn.snyk.io/): Assists you in learning to code securely.
 * [Snyk Training](https://training.snyk.io/): Provides training on how to use Snyk.
 
-### Coding
+## Write your code
 
 The following capabilities are available for all Snyk users.
 
@@ -64,7 +62,7 @@ Additionally, with Git Integration, you can also monitor the following on a dail
 
 * Infrastructure as code (IaC) with Snyk Infrastructure as Code
 
-#### **With CI/CD integrations**
+## **Integrate with Snyk using your CD/CD**
 
 Snyk can passively monitor and/or provide a QA gate by failing build checks during testing for policy violations.
 
@@ -77,7 +75,7 @@ Snyk provides the following capabilities:
   * [Containerized](https://hub.docker.com/r/snyk/snyk) versions of the CLI are available.
 * Partner Platforms such as Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk.
 
-### Production Monitoring
+## Monitor code in production
 
 * Snyk can monitor container images and their open source/Linux-based packages being used in production via Kubernetes integration to notify customers of known vulnerabilities for applications in production.\
   :information\_source: **Snyk Enterprise plan only**\
@@ -85,7 +83,7 @@ Snyk provides the following capabilities:
 * Where a production integration does not exist, use the [snyk monitor](../snyk-cli/commands/monitor.md) CLI command to take a snapshot and monitor what is being pushed to production.\
   :information\_source: **All Snyk plans**
 
-### Gain recognition
+Monitor with Snyk to gain recognition of vulnerabilities in your Projects.
 
 You can place Snyk on your public repositories and have a badge indicating your package's security status.&#x20;
 
