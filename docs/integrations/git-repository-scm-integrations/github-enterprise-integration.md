@@ -9,6 +9,18 @@ GitHub Enterprise integration is available to Snyk Enterprise plan customers. If
 If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
+## Prerequisites for Snyk GitHub Enterprise integration
+
+* Internet-accessible repositories.\
+  If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-setup/snyk-broker/). This requires creating a startup script. For the script and instructions, see [GitHub Enterprise - install and configure using Docker](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/github-enterprise-install-and-configure-broker/setup-broker-with-github-enterprise.md).
+* A public or private GitHub project.
+
+{% hint style="info" %}
+You do not need to be on a GitHub Enterprise level plan to use the Snyk GitHub Enterprise integration.
+{% endhint %}
+
+## Snyk GitHub Enterprise integration features
+
 The Snyk GitHub Enterprise integration lets you:
 
 * Perform [periodic security scans](github-enterprise-integration.md#obtain-project-level-security-reports) across all integrated repositories.
@@ -16,10 +28,6 @@ The Snyk GitHub Enterprise integration lets you:
 * Provide [automated fixes](github-enterprise-integration.md#test-new-pull-requests) and upgrades through status checks in GitHub.
 
 ## How to set up the Snyk GitHub Enterprise integration
-
-{% hint style="info" %}
-If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-setup/snyk-broker/). This requires creating a startup script. For the script and instructions, see [GitHub Enterprise - install and configure using Docker](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/github-enterprise-install-and-configure-broker/setup-broker-with-github-enterprise.md).
-{% endhint %}
 
 Follow these steps to connect Snyk with your GitHub repositories:
 
