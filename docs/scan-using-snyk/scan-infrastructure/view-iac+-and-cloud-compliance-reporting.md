@@ -2,12 +2,12 @@
 
 ## Overview of compliance reporting
 
-Snyk IaC supports [compliance reporting](../../manage-issues/reporting/available-snyk-reports.md#cloud-compliance-issues-report) and [cloud issue](introduction-to-iac+/cloud-and-integrated-iac-issues/) triage for compliance standards and controls that are relevant for cloud services. With this information, developers can fix issues to bring cloud environments into compliance, and auditors can see appropriate evidence.
+Snyk IaC supports [compliance reporting](../../manage-issues/reporting/available-snyk-reports.md#cloud-compliance-issues-report) and [cloud issue](getting-started-with-iac+-and-cloud-scans/cloud-and-integrated-iac-issues/) triage for compliance standards and controls that are relevant for cloud services. With this information, developers can fix issues to bring cloud environments into compliance, and auditors can see appropriate evidence.
 
 * To learn how to view the compliance report, see [Cloud Compliance Issues Report](../../manage-issues/reporting/available-snyk-reports.md#cloud-compliance-issues-report).
-* To learn how to triage cloud issues by filtering them according to compliance standards and controls, see [Filter issues](introduction-to-iac+/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md#filter-issues).
+* To learn how to triage cloud issues by filtering them according to compliance standards and controls, see [Filter issues](getting-started-with-iac+-and-cloud-scans/cloud-and-integrated-iac-issues/view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md#filter-issues).
 
-See [Key concepts](introduction-to-iac+/key-concepts-in-iac+.md) for definitions of compliance standards and controls, security rules, and more.
+See [Key concepts](getting-started-with-iac+-and-cloud-scans/key-concepts-in-iac+.md) for definitions of compliance standards and controls, security rules, and more.
 
 ## Supported compliance standards
 

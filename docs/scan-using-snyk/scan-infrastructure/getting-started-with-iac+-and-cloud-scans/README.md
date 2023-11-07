@@ -54,6 +54,10 @@ You will see a single **Infrastructure as Code issues** Project. IaC+ generates 
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-07 at 3.57.30 PM.png" alt="IaC+ Project in your SCM repository"><figcaption><p>IaC+ Project in your SCM repository</p></figcaption></figure>
 
+## Configure recurring scans (daily, weekly, or never)
+
+By default, IaC+ SCM Projects are scheduled for weekly scans. On an IaC+ SCM Project Settings page, you can configure an IaC+ SCM Project to have recurring scans be daily, weekly, or never.
+
 ## Import cloud environments
 
 Navigate to your **Organization** **Settings (cog icon) > Cloud environments**.

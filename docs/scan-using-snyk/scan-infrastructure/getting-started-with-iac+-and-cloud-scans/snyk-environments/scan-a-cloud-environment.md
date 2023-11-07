@@ -1,6 +1,6 @@
 # Scan a cloud environment
 
-Snyk automatically runs a scan when a [cloud environment](../../../scan-infrastructure/introduction-to-iac+/key-concepts-in-iac+.md#environments) is created. After that, Snyk scans the environment once every 24 hours. You can also manually trigger a new scan at any time by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans).
+Snyk automatically runs a scan when a [cloud environment](../key-concepts-in-iac+.md#environments) is created. After that, Snyk scans the environment once every 24 hours. You can also manually trigger a new scan at any time by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans).
 
 ## Using `jq`
 

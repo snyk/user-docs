@@ -24,6 +24,7 @@ IaC+ is built on a new engine and ruleset that also powers Snyk IaC’s cloud sc
 * Utilizes an expanded security ruleset that is mapped to more than a dozen compliance standards (CIS Benchmarks, PCI, SOC 2, and more).
 * Supports custom rules with Rego that are managed in the Snyk platform, and work consistently across all IaC workflows.
 * Introduces projects (for SCM) that capture issues for an entire repository, instead of only for a single IaC file - in alignment with Snyk Code.
+* Supports recurring (daily or weekly) scans for IaC+ SCM projects.
 * Utilizes a new organization-wide Cloud Issues page for IaC+ and cloud issues that enables users to group issues by rule or resource, filter and inspect the configuration of relevant resources for a given issue, and take action on issues.
 
 IaC+ also adds support for “code to cloud” use cases that work with Snyk IaC’s ability to onboard, scan, and test deployed cloud environments:
