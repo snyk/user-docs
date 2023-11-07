@@ -20,6 +20,8 @@ The identity is based on `--project-name` or `--target-name`.
 
 This page also explains how to [ignore CLI results](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#ignore-cli-results).
 
+See the CLI help for more information about `snyk code test`, such as [exit codes](../../commands/code-test.md#exit-codes) and [available options](../../commands/code-test.md#options).
+
 ## **Publish CLI results to a Snyk Code Project**
 
 {% hint style="info" %}
