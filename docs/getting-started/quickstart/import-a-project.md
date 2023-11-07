@@ -42,7 +42,7 @@ Forked repositories are marked with a ![Fork symbol](<../../.gitbook/assets/Scre
 In **Settings**, optionally choose to:
 
 * **Add custom file location** to add any additional dependencies from custom paths.
-* **Exclude folders** to list up to ten folders to exclude from scanning during the import, for example, to shorten scanning time.
+* **Exclude folders** to list up to ten folders to exclude from scanning during the import, for example, to shorten scanning time. Each folder name must not exceed 100 characters. This feature is supported for Snyk Open Source and Snyk Container.
 
 ## Import progress
 
