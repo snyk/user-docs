@@ -15,7 +15,7 @@ You can [create](manage-member-roles.md#create-a-role), [edit](manage-member-rol
 
 ### Create a Role
 
-**Group Admins** can select their Gorup and find this option in **Settings > Member Roles**.
+**Group Admins** can select their Group and find this option in **Settings > Member Roles**.
 
 You will find the default roles, **Org Admin** and **Org Collaborator**. When you click each of these roles, you can view the associated permissions, but you cannot modify the default roles.
 
