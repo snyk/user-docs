@@ -128,7 +128,7 @@ Select your **name** in the navigation on the Dashboard and then **Account setti
 
 You have access to the following information and options in the Account Settings:
 
-* View and manage your API token or the Auth Token for free accounts. See [Obtaining your Snyk API token](../enterprise-setup/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token.md) for instructions that apply to all applications and tools.
+* View and manage your API token or the Auth Token for free accounts. See [Obtaining your Snyk API token](obtaining-your-snyk-api-token.md) for instructions that apply to all applications and tools.
 * View the list of your **Authorized Applications**.
 * Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../snyk-admin/manage-groups-and-organizations/manage-organizations.md#set-your-preferred-organization).
 * **Delete** your account.

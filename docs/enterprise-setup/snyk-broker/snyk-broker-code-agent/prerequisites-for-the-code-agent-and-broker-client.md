@@ -31,7 +31,7 @@ The minimal requirements for running the **Code Agent** component are:
   * SCM connection - HTTPS communication to the SCM that stores the repositories you want to analyze. Support for HTTP-only SCM-deployments can be resolved by deploying a reverse proxy between the Code Agent and the SCM.
   * Snyk Code AI Engine connection - outbound communication to the Code Analysis Engine at [https://deeproxy.snyk.io/](https://deeproxy.snyk.io/).
 * Internet bandwidth and connection - the upload speed of the source code to the Broker Server will be affected by a low bandwidth and a slow Internet connection.
-* **Snyk API token** - your Snyk API token is required to authenticate the Code Agent component with your Snyk Account. For more information see [Obtaining your Snyk API token](setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token.md).
+* **Snyk API token** - your Snyk API token is required to authenticate the Code Agent component with your Snyk Account. For more information see [Obtaining your Snyk API token](../../../getting-started/obtaining-your-snyk-api-token.md).
 
 {% hint style="info" %}
 Currently you cannot deploy the Code Agent as a part of a Broker redundancy solution.

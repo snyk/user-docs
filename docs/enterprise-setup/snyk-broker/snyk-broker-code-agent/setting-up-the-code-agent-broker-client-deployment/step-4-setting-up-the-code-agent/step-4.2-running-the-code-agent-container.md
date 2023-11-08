@@ -23,7 +23,7 @@ where:
 * `-p <host_machine_port_no._mapped to>:<Code_Agent_container_port_no.>` is the mapping of a physical open port in the host machine to a port in the Code Agent container. These port numbers on the host machine and container do not have to be the same. Example: `3001:3000`.\
   The port number of the host machine must be unique.
 * `-e PORT` is the port of the Code Agent container, where it accepts external connections. The default is `3000`. This port number must be the same as the `<Code_Agent_container_port_ no.>` in the `-p` parameter above.
-* `-e SNYK_TOKEN` is your [Snyk API token](../step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token.md) as appears in your **Account Settings** page on the Snyk Web UI.
+* `-e SNYK_TOKEN` is your [Snyk API token](../../../../../getting-started/obtaining-your-snyk-api-token.md) as appears in your **Account Settings** page on the Snyk Web UI.
 * `--network` is the name of the [Docker bridge network](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-3-creating-a-network-for-the-broker-client-and-code-agent-communication) that was previously created, for example, `mySnykBrokerNetwork`.
 * `snyk/code-agent:<image_tag>` is the Docker image of the Code Agent container. Specify a tag if not using `latest`.
 
