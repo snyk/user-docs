@@ -1,6 +1,6 @@
 # Ignore issues
 
-,You can ignore a vulnerability or license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores, you can display results only for issues you need to fix. For details, see [How to set ignores](ignore-issues.md#how-to-set-ignores).
+You can ignore a vulnerability or license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores you can display results only for issues you need to fix. For details, see [How to set ignores](ignore-issues.md#how-to-set-ignores).
 
 <div align="left">
 
@@ -10,7 +10,7 @@
 
 ## Decisions to ignore issues
 
-Optimally you will fix or patch vulnerabilities or remove the vulnerable dependency. However, you may want to suppress an issue for any of the following reasons:
+Optimally, it allows you will fix or patch vulnerabilities or remove the vulnerable dependency. However, you may want to suppress an issue for any of the following reasons:
 
 * There is no fix.
 * The issue is not relevant to the Project. One example is a distributed denial-of-service (DDoS) attack for an internal service.
@@ -131,7 +131,7 @@ Snyk Code uses this intermediate representation to recognize the same issue even
 
 Thus when you ignore an issue, Snyk Code can also ignore that issue if it occurs in multiple places in your code, even with minor code changes. This avoids generating multiple duplicate reports for pieces of code with the same ignored issue.
 
-As an example, the following two code snippets, despite textual differences, denounce the same issue, as the developer only renamed the variables:
+As an example, the following two code snippets, denote the same issue, as the developer only renamed the variables:
 
 ```
 var fs = require('fs');
