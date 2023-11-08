@@ -1,14 +1,14 @@
 # Fix cloud issues in IaC
 
 {% hint style="info" %}
-The fix cloud issues in IaC feature is available for [IaC+](./) only and supports AWS.
+The fix cloud issues in IaC feature is available for [IaC+](./) only and supports AWS, Azure, and Google Cloud.
 {% endhint %}
 
 The fix cloud issues in IaC feature enables users to fix cloud issues directly in the IaC source code used to deploy the misconfigured cloud resources, by linking a cloud issue to the underlying IaC template via an SCM source code link.
 
 Many Snyk customers use IaC to deploy and manage cloud resources. However, organizations may still deploy misconfigured IaC templates, which results in misconfigured cloud resources and therefore cloud context issues. This can be due to a number of factors, such as pipelines that are not configured to block deployments even if cloud misconfigurations are found.
 
-To remediate these cloud issues, security teams must determine manually which teams own the resources that were incorrectly deployed, and then developers must manually find the appropriate IaC templates that were used. This can be a very time-consuming process.
+To remediate these cloud issues, security teams have determined manually which teams own the resources that were incorrectly deployed, and then developers manually found the appropriate IaC templates that were used. This can be a very time-consuming process.
 
 This feature eliminates these manual steps and provides the user with a link to the underlying IaC template that needs to be fixed.
 
@@ -26,14 +26,14 @@ You must have the following:
 
 * Access to a Snyk [service account](../../../enterprise-setup/service-accounts/) and API token
 * Access to a Snyk Organization with IaC+
-* Cloud resources deployed to AWS with Terraform via CI/CD
+* Cloud resources deployed to AWS, Azure, and/or Google Cloud with Terraform via CI/CD
 * Terraform version 0.11 or later
 
 ## Steps in fixing cloud issues in IaC
 
 ### Step 1: Onboard IaC and cloud environments to Snyk
 
-[Onboard IaC+](../getting-started-with-iac+-and-cloud-scans/) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant AWS environments via [AWS Integration](../../../integrations/cloud-platforms-integrations/aws-integration/).
+[Onboard IaC+](../getting-started-with-iac+-and-cloud-scans/) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant cloud environments via [AWS Integration](../../../integrations/cloud-platforms-integrations/aws-integration/), [Azure Integration](../../../integrations/cloud-platforms-integrations/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/), or [Google Cloud Integration](../../../integrations/cloud-platforms-integrations/google-cloud-integration/).
 
 `snyk iac test` must be run from the root folder of the cloned Git repository, not a subdirectory. If you are using GitLab or Azure DevOps, add a `target-reference` option so Snyk can generate an SCM link, as in the following CLI command:
 
@@ -41,7 +41,7 @@ You must have the following:
 snyk iac test --report --target-reference=$(git branch --show-current)
 ```
 
-These AWS environments should include resources deployed with Terraform via your CI/CD tool.
+These cloud environments: AWS, Azure, or Google Cloud, should include resources deployed with Terraform via your CI/CD tool.
 
 ### Step 2: Configure CI/CD pipeline script <a href="#docs-internal-guid-d24f5230-7fff-18a1-9bd7-807654e06d0c" id="docs-internal-guid-d24f5230-7fff-18a1-9bd7-807654e06d0c"></a>
 
@@ -163,6 +163,10 @@ Relevant cloud Issues should now include mapped IaC resources within the **IaC**
 
 ## Supported resource types
 
+The following is a list of resource types that have been verified to be supported.
+
+### AWS
+
 * aws\_api\_gateway\_deployment
 * aws\_api\_gateway\_resource
 * aws\_api\_gateway\_rest\_api
@@ -211,3 +215,54 @@ Relevant cloud Issues should now include mapped IaC resources within the **IaC**
 * aws\_security\_group\_rule
 * aws\_sns\_topic
 * aws\_subnet aws\_vpc
+
+### Azure
+
+* azurerm\_resource\_group
+* azurerm\_storage\_account
+* azurerm\_sql\_active\_directory\_administrator
+* azurerm\_network\_interface
+* azurerm\_subnet
+* azurerm\_virtual\_machine\_extension
+* azurerm\_virtual\_network
+* azurerm\_managed\_disk
+* azurerm\_subscription\_policy\_assignment
+* azurerm\_storage\_data\_lake\_gen2\_filesystem
+* azurerm\_synapse\_firewall\_rule
+* azurerm\_synapse\_workspace
+* azurerm\_storage\_account\_network\_rules
+* azurerm\_service\_fabric\_cluster
+* azurerm\_security\_center\_auto\_provisioning
+* azurerm\_security\_center\_contact
+* azurerm\_search\_service
+* azurerm\_network\_security\_group
+* azurerm\_network\_security\_rule
+* azurerm\_key\_vault
+* azurerm\_mssql\_server\_security\_alert\_policy
+* azurerm\_mariadb\_server
+* azurerm\_postgresql\_firewall\_rule
+* azurerm\_postgresql\_server
+* azurerm\_mysql\_firewall\_rule
+* azurerm\_mysql\_server
+* azurerm\_linux\_virtual\_machine
+* azurerm\_windows\_virtual\_machine
+* azurerm\_mssql\_server
+* azurerm\_mssql\_server\_extended\_auditing\_policy
+
+### Google Cloud
+
+* google\_logging\_project\_sink
+* google\_storage\_bucket
+* google\_bigquery\_dataset
+* google\_dns\_managed\_zone
+* google\_compute\_instance\_template
+* google\_compute\_instance
+* google\_service\_account
+* google\_compute\_network
+* google\_compute\_subnetwork
+* google\_compute\_ssl\_policy
+* google\_compute\_project\_metadata
+* google\_compute\_firewall
+* google\_compute\_disk
+* google\_kms\_crypto\_key
+* google\_sql\_user
