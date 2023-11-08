@@ -126,13 +126,11 @@ Select **Help** in the navigation on the Dashboard and then select an option to 
 
 Select your **name** in the navigation on the Dashboard and then **Account settings** to open your [account settings](https://app.snyk.io/account) page, where you can view and configure your user account settings and your notification and sharing preferences.
 
-You have access to the following information and options in the in the Account Settings:
+You have access to the following information and options in the Account Settings:
 
 * View and manage your API token or the Auth Token for free accounts. See [Obtaining your Snyk API token](../enterprise-setup/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token.md) for instructions that apply to all applications and tools.
 * View the list of your **Authorized Applications**.
 * Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../snyk-admin/manage-groups-and-organizations/manage-organizations.md#set-your-preferred-organization).
 * **Delete** your account.
 * Manage your Account Settings for email **Notifications** (link in the left navigation), including Issue email alerts, Weekly report emails, and Usage alerts, as well as email notifications when reports are available and preferences for sales and marketing communications. See the [Manage notifications](../snyk-admin/manage-notifications.md) page for details about the email notifications as well as how to set personal preferences for notifications.
-* Get a referral link to **Share with a Friend**. The link is in the left navigation of your Account Settings
-
-<figure><img src="../.gitbook/assets/user-account_settings.gif" alt="Account settings screens"><figcaption><p>Account settings screens</p></figcaption></figure>
+* Get a referral link to **Share with a Friend**. The link is in the left navigation of your Account Settings.
