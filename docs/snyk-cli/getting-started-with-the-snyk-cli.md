@@ -11,7 +11,7 @@
 
 [Learn more about what Snyk can do and sign up for a free account](https://snyk.io/).
 
-The **Snyk CLI brings the functionality of Snyk into your development workflow**. You can run the CLI locally or in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.
+The **Snyk CLI brings the functionality of Snyk into your development workflow**. You can run the CLI locally from the command line or in an IDE. You can also run the CLI in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.
 
 <figure><img src="../.gitbook/assets/snyk-cli-screenshot.png" alt="Snyk CLI test command output example"><figcaption><p>Snyk CLI test command output</p></figcaption></figure>
 
