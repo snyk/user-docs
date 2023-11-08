@@ -6,11 +6,15 @@
 
 ## Description
 
-The `snyk monitor` command creates a project in your Snyk account to be continuously monitored for open source vulnerabilities and license issues. After running this command, log in to the Snyk website and view your projects to see the monitor.
+The `snyk monitor` command creates a project in your Snyk account to be continuously monitored for open-source vulnerabilities and license issues.
+
+Use the `monitor` command to monitor projects in SCM repositories integrated with Snyk. If you are working with the CLI, an IDE, or a CI/CD, choose a test frequency in your Settings, for example, to test daily. A PR check will also do a test.
+
+After running the `snyk monitor` command, log in to the Snyk website and view your projects to see the monitor.
 
 If you make changes to the project, you must run the `monitor` command again.
 
-For Snyk Container see [`snyk container` help](https://docs.snyk.io/snyk-cli/commands/container)
+For Snyk Container, see [`snyk container` help](https://docs.snyk.io/snyk-cli/commands/container)
 
 The `monitor` command is not supported for Snyk Code.
 
