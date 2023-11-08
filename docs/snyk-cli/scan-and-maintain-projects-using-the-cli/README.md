@@ -3,7 +3,7 @@
 This group of pages provides detailed "how-to" information for the Snyk CLI.
 
 * The [CLI tools](cli-tools/) provide ways to perform tasks that cannot be done using CLI commands and options.
-* [Use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli/), [Analyze code with the Snyk Code CLI](using-snyk-code-from-the-cli/), and [Use Snyk Container from the CLI ](use-snyk-container-from-the-cli/)explain how to perform basic operations with Snyk Open Source, Snyk Code, and Snyk Container using the CLI.
+* [Use Snyk Open Source from the CLI](snyk-cli-for-open-source/), [Analyze code with the Snyk Code CLI](snyk-cli-for-snyk-code/), and [Use Snyk Container from the CLI ](snyk-cli-for-snyk-container/)explain how to perform basic operations with Snyk Open Source, Snyk Code, and Snyk Container using the CLI.
 
 The remaining pages address [Scanning Projects](./#scanning-projects), [Monitoring Projects](./#monitoring-projects), and [Maintaining Projects](./#maintaining-projects). The pages are arranged in alphabetical order by keyword.
 

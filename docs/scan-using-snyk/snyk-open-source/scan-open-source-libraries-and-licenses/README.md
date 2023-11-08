@@ -5,7 +5,7 @@ You can scan your open-source libraries using Snyk Open Source:&#x20;
 * In the [Snyk Web UI](../../../getting-started/explore-snyk-through-the-web-ui.md)
 * With your [IDE](https://docs.snyk.io/integrations/ide-tools)
 * With a [CI/CD integration](../../../integrations/snyk-ci-cd-integrations/)
-* Through the [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-open-source-from-the-cli/)
+* Through the [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
 * Through [Snyk API](../../../snyk-api/)
 
 ## Prerequisites for using Snyk Open Source in the Web UI
@@ -28,7 +28,7 @@ For more details, see [View Project information](../../../snyk-admin/introductio
 
 ## Fix vulnerabilities in your open-source libraries
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../snyk-open-source/open-source-basics/).
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../open-source-basics/).
 
 Navigate to the **Issues** card for a Project:
 
@@ -45,4 +45,4 @@ To fix vulnerabilities:
 
 <figure><img src="../../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png" alt=".Files changed tab in GitHub after triggering Fix PR for an open source project"><figcaption><p>Files changed tab in GitHub after triggering Fix PR for an open source project</p></figcaption></figure>
 
-For more details, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md).
+For more details, see [Fix your vulnerabilities](../manage-vulnerabilities/fix-your-vulnerabilities.md).

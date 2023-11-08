@@ -144,7 +144,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 * Snyk will automatically look for application (open source) vulnerabilities as part of a container scan. Consider having Snyk integrated via CLI earlier in the pipeline and utilize this for an additional signal of and insight into what is in production.
 * If you ship your Node.JS application in a container, be aware that you might also be bundling insecure packages (Linux, open source), alongside your application in addition to what is brought in by the container base image. The Snyk Container CLI can help you identify a base image that minimizes the attack surface of your application.
-* For more information on how you can filter to the layer you wish to work on,such as identifying a secure base image to build off of, the layers you are responsible for, or application (OS) vulnerabilities, see [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/use-snyk-container-from-the-cli/)
+* For more information on how you can filter to the layer you wish to work on,such as identifying a secure base image to build off of, the layers you are responsible for, or application (OS) vulnerabilities, see [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
 
 #### Infrastructure as code
 
