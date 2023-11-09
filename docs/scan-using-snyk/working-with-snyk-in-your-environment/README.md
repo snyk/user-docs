@@ -75,17 +75,7 @@ Snyk Enterprise plan customers can monitor container images and their open-sourc
 
 ## How to fix issues using Snyk
 
-If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important.
-
-### What to fix - prioritization factors
-
-Some tools use only the single factor of severity to prioritize issues, but this can still result in thousands of results, with no clear starting point to fix these issues.
-
-Snyk provides more factors to help you prioritize issues, such as having a known exploit, it is fixable, or social trending. This can be done both at the Project level when looking at a specific Project, or Enterprise customers can prioritize across all Projects.
-
-To see prioritization in action, see the [Prioritize issues in the Snyk Web UI training course](https://training.snyk.io/learn/video/prioritize-ui).
-
-### How to fix - addressing issues
+If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For information on how to prioritize issues, see [Find and manage priority issues](../../manage-risk/find-and-manage-priority-issues/).
 
 Snyk offers capabilities in this ecosystem to help address issues, both reactively and proactively:
 
