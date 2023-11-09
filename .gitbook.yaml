@@ -68,4 +68,5 @@ redirects:
   products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code: scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/README.md
   scan-applications/snyk-code/snyk-code-language-and-framework-support: scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md
   scan-applications/snyk-open-source/snyk-open-source-supported-languages-and-package-managers: scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md
+  products/snyk-code/security-rules-used-by-snyk-code: /scan-using-snyk/snyk-code/snyk-code-security-rules.md 
   testing: scan-infrastructure/snyk-iac+/fix-cloud-issues-in-integrated-iac.md
