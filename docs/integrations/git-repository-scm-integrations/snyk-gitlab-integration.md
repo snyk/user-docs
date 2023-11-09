@@ -84,7 +84,7 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Enter your GitLab Group Access Token into the Snyk application Personal access token field.</p></figcaption></figure>
 
-## **Snyk GitLab integration features**
+## **Uses of the Snyk GitLab integration**
 
 ### **Fix vulnerabilities with Snyk merge requests**
 
