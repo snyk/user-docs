@@ -7,12 +7,12 @@ Some features mentioned on this page may not be available depending on your Snyk
 There is a monthly limit to the number of tests performed if a particular product is not purchased. See the [Pricing plans](https://snyk.io/plans) page for more details.
 {% endhint %}
 
-Snyk takes a developer-first approach to securing your development work, by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. For details, see [Introducing Snyk](../../getting-started/introducing-snyk.md).
+Snyk takes a developer-first approach to securing your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. For details, see [Introducing Snyk](../../getting-started/introducing-snyk.md).
 
 The Snyk developer-first approach allows you to:
 
 * Use Snyk to focus on early enablement, not later enforcement.&#x20;
-* Run scans while you are working on a Project, to minimize rework by finding issues that require changes before you commit the code.
+* Run scans while you are working on a Project to minimize rework by finding issues that require changes before you commit the code.
 * Add and test packages before writing the code that interfaces with each package.
 * &#x20;After writing a major section of code, scan it to find issues before continuing work.
 
@@ -54,14 +54,14 @@ The following resources are available for all users:
 
 The following capabilities are available for all Snyk users except as noted in the documentation for each capability.
 
-* Using the [Snyk CLI](../../snyk-cli/) you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
-* Using [Snyk IDE Plugins](../../integrations/ide-tools/) you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
-* Using [Git integrations](../../integrations/git-repository-scm-integrations/) you can improve security in your Git repositories for both your code and deployed applications.
-* Using CI/CD plugins and integrations you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
+* Using the [Snyk CLI](../../snyk-cli/), you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
+* Using [Snyk IDE Plugins](../../integrations/ide-tools/), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
+* Using [Git integrations](../../integrations/git-repository-scm-integrations/), you can improve security in your Git repositories for both your code and deployed applications.
+* Using CI/CD plugins and integrations, you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
   * There are options for passive monitoring and establishing a quality assurance gate by failing build checks based on tests for violations of policies.
   * Most CI/CD integrations use the Snyk CLI, allowing you to fail the build based on criteria specified in options or using the [snyk-filter tool](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
-  * Snyk CI/CD integrations include Snyk plugins for Jenkins, Circle CI, and other tools as well as Partner Platforms, including Azure, Bitbucket, and AWS, that offer builit-in pipes or components for using Snyk.
-  * [Github Actions](../../integrations/ci-cd-integrations/github-actions-integration/) provide additional means for securing your code in your deployment pipeline. For details and an example, see [Building a secure CI/CD pipeline with GitHub Actions for your Java Application](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/).
+  * Snyk CI/CD integrations include Snyk plugins for Jenkins, Circle CI, and other tools, as well as Partner Platforms, including Azure, Bitbucket, and AWS, that offer built-in pipes or components for using Snyk.
+  * GitHub[ Actions](../../integrations/ci-cd-integrations/github-actions-integration/) provide additional means for securing your code in your deployment pipeline. For details and an example, see [Building a secure CI/CD pipeline with GitHub Actions for your Java Application](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/).
 
 ## Monitor your code in production
 
@@ -77,28 +77,24 @@ Snyk Enterprise plan customers can monitor container images and their open-sourc
 
 If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For information on how to prioritize issues, see [Find and manage priority issues](../../manage-risk/find-and-manage-priority-issues/).
 
-Snyk offers capabilities in this ecosystem to help address issues, both reactively and proactively:
+Snyk offers capabilities to address issues both reactively and proactively:
 
-1. **Being proactive**\
-   Use [Snyk Advisor](https://snyk.io/advisor) to identify better packages to begin designing.\
-   Use the CLI and IDE plugins to test while developing.\
-   Add a package, make sure it’s installed, and scan for security before writing your code.
-2. **Remediation advice**\
-   Snyk supplies this across integrations on the results screens that calculate the top-level package requiring an update in the package manifest or how to update the line of code to make it secure.
-3. **Automation**
-   * You can enable automatic fix pull requests created when a new vulnerability is detected with a fix available.
-   * When first importing a Project into Snyk, it may already have vulnerabilities. Instead of overwhelming you with fixes, Snyk will present the highest priority known vulnerability for you to fix first. After fixing, the next highest priority known vulnerability is presented. In this way, you can catch up and fix existing issues. You can speed this process up by fixing all vulnerabilities in a single dependency at a time by enabling **Clear backlog faster** [Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
-   * You can enable dependency upgrade-related pull requests created when new versions of a package are available. This helps with technical debt by providing PR nudges to update dependencies.
-
-{% hint style="info" %}
-Snyk suggests enabling automated PRs on a key project to start before enabling globally to familiarize development on how to interact with Snyk and security issues.
-{% endhint %}
+* **Being proactive**
+  * Use [Snyk Advisor](https://snyk.io/advisor) to identify better packages to begin designing.
+  * Use the CLI and IDE plugins to test while developing.
+  * Add a package, ensure it is installed, and scan for security before writing your code.
+* **Remediation advice**\
+  Snyk provides this advice across integrations, calculating the top-level package requiring an update in the package manifest or how to update the line of code to make it secure and displaying the advice on results screens.
+* **Automation**
+  * You can enable creating automatic fix pull requests when a new vulnerability is detected with a fix available. Snyk suggests enabling automated PRs initially on a key Project you enable globally, to familiarize development with how to interact with Snyk and security issues.
+  * When you first import a Project into Snyk, it may already have vulnerabilities. Instead of overwhelming you with fixes, Snyk presents the highest priority known vulnerability for you to fix first. After you fix that vulnerability, Snyk presents the next highest priority known vulnerability. In this way, you can catch up on and fix existing issues. You can speed this process up by fixing all vulnerabilities in a single dependency at one time by enabling **Clear vulnerability backlog faster** in [Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
+  * You can enable dependency upgrade-related pull requests created when new versions of a package are available. This helps with technical debt by providing PR nudges to update dependencies.
 
 ## Deployment and rollout recommendations
 
-Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow.
+Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow. For more information, see G[etting started with Snyk Free and Team plans](../../getting-started/getting-started-with-snyk-free-and-team-plans.md) and [Preparing for implementation with Free and Team plans](../../getting-started/preparing-for-implementation-free-and-team-plans.md).
 
-With large organizations using hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience.
+With large organizations using hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For details, see the [Enterprise implementation guide](../../enterprise-setup/enterprise-implementation-guide/).
 
 1. Typically, large organizations start with daily monitoring of applications using Git integration, only, initially turning on PR checks for a few key applications.
 2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
