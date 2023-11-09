@@ -18,7 +18,7 @@
     * [Use Reports in managing risk](getting-started/walkthrough-code-repository-projects/use-reports-in-managing-risk.md)
   * [Getting started with Snyk: Free and Team plans](getting-started/getting-started-with-snyk-free-and-team-plans.md)
   * [Preparing for implementation: Free and Team plans](getting-started/preparing-for-implementation-free-and-team-plans.md)
-  * [How to obtain and use your Snyk API token](getting-started/obtaining-your-snyk-api-token.md)
+  * [How to obtain and authenticate with your Snyk API token](getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md)
   * [Glossary](getting-started/glossary.md)
 * [Integrate with Snyk](integrations/README.md)
   * [Use Snyk in your IDE](integrations/ide-tools/README.md)

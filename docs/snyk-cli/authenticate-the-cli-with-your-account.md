@@ -36,4 +36,4 @@ You can specify either your personal API token or a service token, available for
 
 ![Snyk Account Settings, API Token](../.gitbook/assets/API-token-CLI-auth-details-22-01.png)
 
-For more details, see [How to obtain and use your Snyk API token](../getting-started/obtaining-your-snyk-api-token.md) for instructions that apply to all applications and tools.
+For more details, see [How to obtain and use your Snyk API token](../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md) for instructions that apply to all applications and tools.
