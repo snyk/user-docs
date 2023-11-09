@@ -268,13 +268,19 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (43) Trust Boundary Violation
+## Rule (43) Unsafe Reflection
+
+**CWE** (470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+## Rule (44) Trust Boundary Violation
 
 **CWE** (501) Trust Boundary Violation
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (44) Deserialization of Untrusted Data
+## Rule (45) Deserialization of Untrusted Data
 
 **CWE** (502) Deserialization of Untrusted Data
 
@@ -282,31 +288,31 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (45) Privacy Leak
+## Rule (46) Privacy Leak
 
 **CWE** (532) Insertion of Sensitive Information into Log File
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A09:2021 - Security Logging and Monitoring Failures
 
-## Rule (46) Hardcoded Secret
+## Rule (47) Hardcoded Secret
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (47) Use of Hardcoded, Security-relevant Constants
+## Rule (48) Use of Hardcoded, Security-relevant Constants
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (48) Open Redirect
+## Rule (49) Open Redirect
 
 **CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (49) XML External Entity (XXE) Injection
+## Rule (50) XML External Entity (XXE) Injection
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -314,41 +320,41 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (50) Insufficient Session Expiration
+## Rule (51) Insufficient Session Expiration
 
 **CWE** (613) Insufficient Session Expiration
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (51) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+## Rule (52) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (52) XPath Injection
+## Rule (53) XPath Injection
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (53) Use of Potentially Dangerous Function
+## Rule (54) Use of Potentially Dangerous Function
 
 **CWE** (676) Use of Potentially Dangerous Function
 
-## Rule (54) Android World Writeable/Readable File Permission Found
+## Rule (55) Android World Writeable/Readable File Permission Found
 
 **CWE** (732) Incorrect Permission Assignment for Critical Resource
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (55) Incorrect Permission Assignment
+## Rule (56) Incorrect Permission Assignment
 
 **CWE** (732) Incorrect Permission Assignment for Critical Resource
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (56) Unrestricted Android Broadcast
+## Rule (57) Unrestricted Android Broadcast
 
 **CWE** (862) Missing Authorization
 
@@ -356,13 +362,13 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (57) Use of Password Hash With Insufficient Computational Effort
+## Rule (58) Use of Password Hash With Insufficient Computational Effort
 
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (58) Server-Side Request Forgery (SSRF)
+## Rule (59) Server-Side Request Forgery (SSRF)
 
 **CWE** (918) Server-Side Request Forgery (SSRF)
 
@@ -370,23 +376,23 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (59) Android Intent Forwarding
+## Rule (60) Android Intent Forwarding
 
 **CWE** (940) Improper Verification of Source of a Communication Channel
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (60) Code Execution via Third Party Package Installation
+## Rule (61) Code Execution via Third Party Package Installation
 
 **CWE** (940) Improper Verification of Source of a Communication Channel
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (61) NoSQL Injection
+## Rule (62) NoSQL Injection
 
 **CWE** (943) Improper Neutralization of Special Elements in Data Query Logic
 
-## Rule (62) Sensitive Cookie Without 'HttpOnly' Flag
+## Rule (63) Sensitive Cookie Without 'HttpOnly' Flag
 
 **CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
 

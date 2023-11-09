@@ -56,7 +56,17 @@
 
 **CWE** (170) Improper Null Termination
 
-## Rule (11) Anonymous LDAP binding allows a client to connect without logging in
+## Rule (11) Improper Null Termination
+
+**CWE** (170) Improper Null Termination
+
+## Rule (12) Integer Overflow
+
+**CWE** (190) Integer Overflow or Wraparound
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (13) Anonymous LDAP binding allows a client to connect without logging in
 
 **CWE** (287) Improper Authentication
 
@@ -64,43 +74,43 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (12) Use of Hardcoded Cryptographic Key
+## Rule (14) Use of Hardcoded Cryptographic Key
 
 **CWE** (321) Use of Hard-coded Cryptographic Key
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (13) Inadequate Encryption Strength
+## Rule (15) Inadequate Encryption Strength
 
 **CWE** (326) Inadequate Encryption Strength
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (14) Division By Zero
+## Rule (16) Division By Zero
 
 **CWE** (369) Divide By Zero
 
-## Rule (15) Missing Release of Memory after Effective Lifetime
+## Rule (17) Missing Release of Memory after Effective Lifetime
 
 **CWE** (401) Missing Release of Memory after Effective Lifetime
 
-## Rule (16) Double Free
+## Rule (18) Double Free
 
 **CWE** (415) Double Free
 
-## Rule (17) Use After Free
+## Rule (19) Use After Free
 
 **CWE** (416) Use After Free
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (18) Dereference of a NULL Pointer
+## Rule (20) Dereference of a NULL Pointer
 
 **CWE** (476) NULL Pointer Dereference
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (19) XML External Entity (XXE) Injection
+## Rule (21) XML External Entity (XXE) Injection
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -108,21 +118,27 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (20) XPath Injection
+## Rule (22) XPath Injection
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (21) Missing Release of File Descriptor or Handle after Effective Lifetime
+## Rule (23) Missing Release of File Descriptor or Handle after Effective Lifetime
 
 **CWE** (775) Missing Release of File Descriptor or Handle after Effective Lifetime
 
-## Rule (22) Use of Expired File Descriptor
+## Rule (24) Use of Expired File Descriptor
 
 **CWE** (910) Use of Expired File Descriptor
 
-## Rule (23) Server-Side Request Forgery (SSRF)
+## Rule (25) Use of Password Hash With Insufficient Computational Effort
+
+**CWE** (916) Use of Password Hash With Insufficient Computational Effort
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+## Rule (26) Server-Side Request Forgery (SSRF)
 
 **CWE** (918) Server-Side Request Forgery (SSRF)
 
@@ -130,10 +146,10 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (24) User Controlled Pointer
+## Rule (27) User Controlled Pointer
 
 **CWE** (1285) Improper Validation of Specified Index, Position, or Offset in Input
 
-## Rule (25) An optimizing compiler may remove memset non-zero leaving data in memory
+## Rule (28) An optimizing compiler may remove memset non-zero leaving data in memory
 
 **CWE** (1330) Remanent Data Readable after Memory Erase

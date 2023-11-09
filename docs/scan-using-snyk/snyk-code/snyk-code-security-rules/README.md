@@ -5,7 +5,7 @@ Snyk Code rules are updated continuously. The list expands continually, and the 
 {% endhint %}
 
 {% hint style="warning" %}
-If you have followed a link for code quality from an IDE, see the l[anguage documentation for that information](../../supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md#code-quality).
+If you have followed a link for code quality from an IDE, see the language documentation for that information.
 {% endhint %}
 
 This page lists the security rules used by Snyk Code when scanning your source code for vulnerabilities.
@@ -387,7 +387,21 @@ Each rule includes the following information.
 
 **Supported languages:** C++ (Beta)
 
-## Rule (44) Clear Text Logging
+## Rule (44) Improper Null Termination
+
+**CWE** (170) Improper Null Termination
+
+**Supported languages:** C++ (Beta)
+
+## Rule (45) Integer Overflow
+
+**CWE** (190) Integer Overflow or Wraparound
+
+**Supported languages:** C++ (Beta)
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (46) Clear Text Logging
 
 **CWE** (200, 312) Exposure of Sensitive Information to an Unauthorized Actor, Cleartext Storage of Sensitive Information
 
@@ -399,7 +413,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (45) Clear Text Sensitive Storage
+## Rule (47) Clear Text Sensitive Storage
 
 **CWE** (200, 312) Exposure of Sensitive Information to an Unauthorized Actor, Cleartext Storage of Sensitive Information
 
@@ -411,7 +425,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (46) Information Exposure
+## Rule (48) Information Exposure
 
 **CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
 
@@ -421,7 +435,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (47) File Access Enabled
+## Rule (49) File Access Enabled
 
 **CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
 
@@ -431,7 +445,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (48) Introspection Enabled
+## Rule (50) Introspection Enabled
 
 **CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
 
@@ -441,13 +455,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (49) Observable Timing Discrepancy (Timing Attack)
+## Rule (51) Observable Timing Discrepancy (Timing Attack)
 
 **CWE** (208) Observable Timing Discrepancy
 
 **Supported languages:** Java, JavaScript and TypeScript, Kotlin, Scala
 
-## Rule (50) Generation of Error Message Containing Sensitive Information
+## Rule (52) Generation of Error Message Containing Sensitive Information
 
 **CWE** (209) Generation of Error Message Containing Sensitive Information
 
@@ -455,7 +469,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (51) Server Information Exposure
+## Rule (53) Server Information Exposure
 
 **CWE** (209) Generation of Error Message Containing Sensitive Information
 
@@ -463,13 +477,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (52) Debug Features Enabled
+## Rule (54) Debug Features Enabled
 
 **CWE** (215) Insertion of Sensitive Information Into Debugging Code
 
 **Supported languages:** C# and ASP.NET, Visual Basic, XML
 
-## Rule (53) Unprotected Storage of Credentials
+## Rule (55) Unprotected Storage of Credentials
 
 **CWE** (256) Plaintext Storage of a Password
 
@@ -477,7 +491,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (54) Use of Hardcoded Credentials
+## Rule (56) Use of Hardcoded Credentials
 
 **CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
 
@@ -487,13 +501,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (55) Use of Sticky broadcasts
+## Rule (57) Use of Sticky broadcasts
 
 **CWE** (265) Privilege Issues
 
 **Supported languages:** Java, Kotlin
 
-## Rule (56) Android Uri Permission Manipulation
+## Rule (58) Android Uri Permission Manipulation
 
 **CWE** (266) Incorrect Privilege Assignment
 
@@ -501,7 +515,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (57) Improper Handling of Insufficient Permissions or Privileges
+## Rule (59) Improper Handling of Insufficient Permissions or Privileges
 
 **CWE** (280) Improper Handling of Insufficient Permissions or Privileges
 
@@ -509,7 +523,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (58) Access Violation
+## Rule (60) Access Violation
 
 **CWE** (284, 285) Improper Access Control, Improper Authorization
 
@@ -517,7 +531,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (59) Binding to all network interfaces may open service to unintended traffic
+## Rule (61) Binding to all network interfaces may open service to unintended traffic
 
 **CWE** (284) Improper Access Control
 
@@ -525,7 +539,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (60) Improper Access Control: Email Content Injection
+## Rule (62) Improper Access Control: Email Content Injection
 
 **CWE** (284) Improper Access Control
 
@@ -533,7 +547,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (61) Session Manipulation
+## Rule (63) Session Manipulation
 
 **CWE** (285) Improper Authorization
 
@@ -541,7 +555,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (62) Anonymous LDAP binding allows a client to connect without logging in
+## Rule (64) Anonymous LDAP binding allows a client to connect without logging in
 
 **CWE** (287) Improper Authentication
 
@@ -551,7 +565,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (63) Broken User Authentication
+## Rule (65) Broken User Authentication
 
 **CWE** (287) Improper Authentication
 
@@ -561,7 +575,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (64) Device Authentication Bypass
+## Rule (66) Device Authentication Bypass
 
 **CWE** (287) Improper Authentication
 
@@ -571,7 +585,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (65) Improper Authentication
+## Rule (67) Improper Authentication
 
 **CWE** (287) Improper Authentication
 
@@ -581,7 +595,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (66) Improper Certificate Validation
+## Rule (68) Improper Certificate Validation
 
 **CWE** (295) Improper Certificate Validation
 
@@ -589,7 +603,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (67) Improper Validation of Certificate with Host Mismatch
+## Rule (69) Improper Validation of Certificate with Host Mismatch
 
 **CWE** (297) Improper Validation of Certificate with Host Mismatch
 
@@ -597,7 +611,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (68) Cryptographic Issues
+## Rule (70) Cryptographic Issues
 
 **CWE** (310) Cryptographic Issues
 
@@ -605,7 +619,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (69) Selection of Less-Secure Algorithm During Negotiation (Force SSL)
+## Rule (71) Selection of Less-Secure Algorithm During Negotiation (Force SSL)
 
 **CWE** (311, 757) Missing Encryption of Sensitive Data, Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')
 
@@ -615,7 +629,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (70) The cipher text is equal to the provided input plain text
+## Rule (72) The cipher text is equal to the provided input plain text
 
 **CWE** (311) Missing Encryption of Sensitive Data
 
@@ -623,7 +637,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (71) Cleartext Storage of Sensitive Information in a Cookie
+## Rule (73) Cleartext Storage of Sensitive Information in a Cookie
 
 **CWE** (315) Cleartext Storage of Sensitive Information in a Cookie
 
@@ -631,7 +645,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (72) ASP SSL Disabled
+## Rule (74) ASP SSL Disabled
 
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
@@ -639,7 +653,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (73) Authentication over HTTP
+## Rule (75) Authentication over HTTP
 
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
@@ -647,7 +661,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (74) Cleartext Transmission of Sensitive Information
+## Rule (76) Cleartext Transmission of Sensitive Information
 
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
@@ -655,7 +669,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (75) Insecure Data Transmission
+## Rule (77) Insecure Data Transmission
 
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
@@ -663,7 +677,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (76) Use of Hardcoded Cryptographic Key
+## Rule (78) Use of Hardcoded Cryptographic Key
 
 **CWE** (321) Use of Hard-coded Cryptographic Key
 
@@ -671,7 +685,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (77) Inadequate Padding for Public Key Encryption
+## Rule (79) Inadequate Padding for Public Key Encryption
 
 **CWE** (326) Inadequate Encryption Strength
 
@@ -679,7 +693,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (78) Inadequate Padding for AES encryption
+## Rule (80) Inadequate Padding for AES encryption
 
 **CWE** (326) Inadequate Encryption Strength
 
@@ -687,7 +701,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (79) Inadequate Encryption Strength
+## Rule (81) Inadequate Encryption Strength
 
 **CWE** (326) Inadequate Encryption Strength
 
@@ -695,7 +709,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (80) Use of a Broken or Risky Cryptographic Algorithm
+## Rule (82) Use of a Broken or Risky Cryptographic Algorithm
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
@@ -703,7 +717,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (81) Insecure TLS Configuration
+## Rule (83) Insecure TLS Configuration
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
@@ -711,7 +725,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (82) Weak Cryptographic Primitive
+## Rule (84) Weak Cryptographic Primitive
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
@@ -719,7 +733,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (83) Missing protocol in ssl.wrap\_socket
+## Rule (85) Missing protocol in ssl.wrap\_socket
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
@@ -727,7 +741,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (84) Use of Hardcoded Cryptographic Initialization Value
+## Rule (86) Use of Hardcoded Cryptographic Initialization Value
 
 **CWE** (329) Generation of Predictable IV with CBC Mode
 
@@ -735,7 +749,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (85) Use of Insufficiently Random Values
+## Rule (87) Use of Insufficiently Random Values
 
 **CWE** (330) Use of Insufficiently Random Values
 
@@ -743,7 +757,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (86) Origin Validation Error
+## Rule (88) Origin Validation Error
 
 **CWE** (346, 942) Origin Validation Error, Permissive Cross-domain Policy with Untrusted Domains
 
@@ -753,7 +767,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (87) Insecure JWT Verification Method
+## Rule (89) Insecure JWT Verification Method
 
 **CWE** (347) Improper Verification of Cryptographic Signature
 
@@ -761,7 +775,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (88) JWT Signature Verification Method Disabled
+## Rule (90) JWT Signature Verification Method Disabled
 
 **CWE** (347) Improper Verification of Cryptographic Signature
 
@@ -769,7 +783,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (89) JWT 'none' Algorithm Supported
+## Rule (91) JWT 'none' Algorithm Supported
 
 **CWE** (347) Improper Verification of Cryptographic Signature
 
@@ -777,7 +791,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (90) JWT Signature Verification Bypass
+## Rule (92) JWT Signature Verification Bypass
 
 **CWE** (347) Improper Verification of Cryptographic Signature
 
@@ -785,7 +799,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (91) Anti-forgery token validation disabled
+## Rule (93) Anti-forgery token validation disabled
 
 **CWE** (352) Cross-Site Request Forgery (CSRF)
 
@@ -795,7 +809,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (92) Cross-Site Request Forgery (CSRF)
+## Rule (94) Cross-Site Request Forgery (CSRF)
 
 **CWE** (352) Cross-Site Request Forgery (CSRF)
 
@@ -805,7 +819,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (93) Spring Cross-Site Request Forgery (CSRF)
+## Rule (95) Spring Cross-Site Request Forgery (CSRF)
 
 **CWE** (352) Cross-Site Request Forgery (CSRF)
 
@@ -815,7 +829,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (94) Exposure of Private Personal Information to an Unauthorized Actor
+## Rule (96) Exposure of Private Personal Information to an Unauthorized Actor
 
 **CWE** (359) Exposure of Private Personal Information to an Unauthorized Actor
 
@@ -823,13 +837,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (95) Division By Zero
+## Rule (97) Division By Zero
 
 **CWE** (369) Divide By Zero
 
 **Supported languages:** C++ (Beta)
 
-## Rule (96) Insecure Temporary File
+## Rule (98) Insecure Temporary File
 
 **CWE** (377) Insecure Temporary File
 
@@ -837,43 +851,43 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (97) Denial of Service (DoS) through Nested GraphQL Queries
+## Rule (99) Denial of Service (DoS) through Nested GraphQL Queries
 
 **CWE** (400) Uncontrolled Resource Consumption
 
 **Supported languages:** JavaScript and TypeScript
 
-## Rule (98) Unchecked Input for Loop Condition
+## Rule (100) Unchecked Input for Loop Condition
 
 **CWE** (400, 606) Uncontrolled Resource Consumption, Unchecked Input for Loop Condition
 
 **Supported languages:** JavaScript and TypeScript
 
-## Rule (99) Regular expression injection
+## Rule (101) Regular expression injection
 
 **CWE** (400, 730) Uncontrolled Resource Consumption, OWASP Top Ten 2004 Category A9 - Denial of Service
 
 **Supported languages:** Apex, C# and ASP.NET, Java, Kotlin, Scala, Visual Basic
 
-## Rule (100) Regular Expression Denial of Service (ReDoS)
+## Rule (102) Regular Expression Denial of Service (ReDoS)
 
 **CWE** (400) Uncontrolled Resource Consumption
 
 **Supported languages:** JavaScript and TypeScript, PHP, Python, Ruby
 
-## Rule (101) Missing Release of Memory after Effective Lifetime
+## Rule (103) Missing Release of Memory after Effective Lifetime
 
 **CWE** (401) Missing Release of Memory after Effective Lifetime
 
 **Supported languages:** C++ (Beta)
 
-## Rule (102) Double Free
+## Rule (104) Double Free
 
 **CWE** (415) Double Free
 
 **Supported languages:** C++ (Beta)
 
-## Rule (103) Use After Free
+## Rule (105) Use After Free
 
 **CWE** (416) Use After Free
 
@@ -881,13 +895,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (104) Insecure default value
+## Rule (106) Insecure default value
 
 **CWE** (453) Insecure Default Variable Initialization
 
 **Supported languages:** Python
 
-## Rule (105) Android Fragment Injection
+## Rule (107) Android Fragment Injection
 
 **CWE** (470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
 
@@ -895,15 +909,15 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (106) Unsafe Reflection
+## Rule (108) Unsafe Reflection
 
 **CWE** (470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
 
-**Supported languages:** Ruby
+**Supported languages:** Java, Ruby
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (107) Dereference of a NULL Pointer
+## Rule (109) Dereference of a NULL Pointer
 
 **CWE** (476) NULL Pointer Dereference
 
@@ -911,25 +925,25 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (108) Android Debug Mode Enabled
+## Rule (110) Android Debug Mode Enabled
 
 **CWE** (489) Active Debug Code
 
 **Supported languages:** XML
 
-## Rule (109) Debug Mode Enabled
+## Rule (111) Debug Mode Enabled
 
 **CWE** (489) Active Debug Code
 
 **Supported languages:** Python
 
-## Rule (110) Struts Development Mode Enabled
+## Rule (112) Struts Development Mode Enabled
 
 **CWE** (489) Active Debug Code
 
 **Supported languages:** XML
 
-## Rule (111) Trust Boundary Violation
+## Rule (113) Trust Boundary Violation
 
 **CWE** (501) Trust Boundary Violation
 
@@ -937,7 +951,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (112) Deserialization of Untrusted Data
+## Rule (114) Deserialization of Untrusted Data
 
 **CWE** (502) Deserialization of Untrusted Data
 
@@ -947,7 +961,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (113) Insecure Deserialization
+## Rule (115) Insecure Deserialization
 
 **CWE** (502) Deserialization of Untrusted Data
 
@@ -957,7 +971,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (114) No Weak Password Requirements
+## Rule (116) No Weak Password Requirements
 
 **CWE** (521) Weak Password Requirements
 
@@ -965,7 +979,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (115) Privacy Leak
+## Rule (117) Privacy Leak
 
 **CWE** (532) Insertion of Sensitive Information into Log File
 
@@ -973,7 +987,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A09:2021 - Security Logging and Monitoring Failures
 
-## Rule (116) Hardcoded Secret
+## Rule (118) Hardcoded Secret
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
@@ -981,7 +995,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (117) Use of Hardcoded, Security-relevant Constants
+## Rule (119) Use of Hardcoded, Security-relevant Constants
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
@@ -989,13 +1003,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (118) Request Validation Disabled
+## Rule (120) Request Validation Disabled
 
 **CWE** (554) ASP.NET Misconfiguration: Not Using Input Validation Framework
 
 **Supported languages:** C# and ASP.NET, Visual Basic, XML
 
-## Rule (119) Open Redirect
+## Rule (121) Open Redirect
 
 **CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
 
@@ -1003,7 +1017,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (120) Insecure Xml Parser
+## Rule (122) Insecure Xml Parser
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -1013,7 +1027,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (121) XML External Entity (XXE) Injection
+## Rule (123) XML External Entity (XXE) Injection
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -1023,7 +1037,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (122) XAML Injection
+## Rule (124) XAML Injection
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -1033,7 +1047,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (123) Insufficient Session Expiration
+## Rule (125) Insufficient Session Expiration
 
 **CWE** (613) Insufficient Session Expiration
 
@@ -1041,7 +1055,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (124) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+## Rule (126) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
@@ -1049,7 +1063,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (125) Unverified Password Change
+## Rule (127) Unverified Password Change
 
 **CWE** (620) Unverified Password Change
 
@@ -1057,7 +1071,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (126) Weak Password Recovery Mechanism for Forgotten Password
+## Rule (128) Weak Password Recovery Mechanism for Forgotten Password
 
 **CWE** (640) Weak Password Recovery Mechanism for Forgotten Password
 
@@ -1065,7 +1079,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (127) XPath Injection
+## Rule (129) XPath Injection
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
 
@@ -1073,7 +1087,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (128) SQL SELECT statement without WHERE clause
+## Rule (130) SQL SELECT statement without WHERE clause
 
 **CWE** (668) Exposure of Resource to Wrong Sphere
 
@@ -1081,13 +1095,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (129) Use of Potentially Dangerous Function
+## Rule (131) Use of Potentially Dangerous Function
 
 **CWE** (676) Use of Potentially Dangerous Function
 
 **Supported languages:** Java, Kotlin, Scala
 
-## Rule (130) Android World Writeable/Readable File Permission Found
+## Rule (132) Android World Writeable/Readable File Permission Found
 
 **CWE** (732) Incorrect Permission Assignment for Critical Resource
 
@@ -1095,7 +1109,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (131) Insecure File Permissions
+## Rule (133) Insecure File Permissions
 
 **CWE** (732) Incorrect Permission Assignment for Critical Resource
 
@@ -1103,7 +1117,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (132) Incorrect Permission Assignment
+## Rule (134) Incorrect Permission Assignment
 
 **CWE** (732) Incorrect Permission Assignment for Critical Resource
 
@@ -1111,7 +1125,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (133) Selection of Less-Secure Algorithm During Negotiation (SSL instead of TLS)
+## Rule (135) Selection of Less-Secure Algorithm During Negotiation (SSL instead of TLS)
 
 **CWE** (757) Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')
 
@@ -1119,19 +1133,19 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (134) Allocation of Resources Without Limits or Throttling
+## Rule (136) Allocation of Resources Without Limits or Throttling
 
 **CWE** (770) Allocation of Resources Without Limits or Throttling
 
 **Supported languages:** JavaScript and TypeScript, PHP
 
-## Rule (135) Missing Release of File Descriptor or Handle after Effective Lifetime
+## Rule (137) Missing Release of File Descriptor or Handle after Effective Lifetime
 
 **CWE** (775) Missing Release of File Descriptor or Handle after Effective Lifetime
 
 **Supported languages:** C++ (Beta)
 
-## Rule (136) XML internal entity expansion
+## Rule (138) XML internal entity expansion
 
 **CWE** (776) Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')
 
@@ -1139,13 +1153,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (137) Memory Corruption
+## Rule (139) Memory Corruption
 
 **CWE** (822) Untrusted Pointer Dereference
 
 **Supported languages:** Swift
 
-## Rule (138) Unrestricted Android Broadcast
+## Rule (140) Unrestricted Android Broadcast
 
 **CWE** (862) Missing Authorization
 
@@ -1155,13 +1169,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (139) Use of Expired File Descriptor
+## Rule (141) Use of Expired File Descriptor
 
 **CWE** (910) Use of Expired File Descriptor
 
 **Supported languages:** C++ (Beta)
 
-## Rule (140) Improperly Controlled Modification of Dynamically-Determined Object Attributes
+## Rule (142) Improperly Controlled Modification of Dynamically-Determined Object Attributes
 
 **CWE** (915) Improperly Controlled Modification of Dynamically-Determined Object Attributes
 
@@ -1169,15 +1183,15 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
 
-## Rule (141) Use of Password Hash With Insufficient Computational Effort
+## Rule (143) Use of Password Hash With Insufficient Computational Effort
 
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
-**Supported languages:** Apex, C# and ASP.NET, Go, Java, JavaScript and TypeScript, Kotlin, PHP, Python, Ruby, Scala, Swift, Visual Basic
+**Supported languages:** Apex, C++ (Beta), C# and ASP.NET, Go, Java, JavaScript and TypeScript, Kotlin, PHP, Python, Ruby, Scala, Swift, Visual Basic
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (142) Server-Side Request Forgery (SSRF)
+## Rule (144) Server-Side Request Forgery (SSRF)
 
 **CWE** (918) Server-Side Request Forgery (SSRF)
 
@@ -1187,7 +1201,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (143) Insecure Data Storage
+## Rule (145) Insecure Data Storage
 
 **CWE** (922) Insecure Storage of Sensitive Information
 
@@ -1195,7 +1209,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (144) Android Intent Forwarding
+## Rule (146) Android Intent Forwarding
 
 **CWE** (940) Improper Verification of Source of a Communication Channel
 
@@ -1203,7 +1217,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (145) Code Execution via Third Party Package Installation
+## Rule (147) Code Execution via Third Party Package Installation
 
 **CWE** (940) Improper Verification of Source of a Communication Channel
 
@@ -1211,7 +1225,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
-## Rule (146) Permissive Cross-domain Policy
+## Rule (148) Permissive Cross-domain Policy
 
 **CWE** (942) Permissive Cross-domain Policy with Untrusted Domains
 
@@ -1219,13 +1233,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (147) NoSQL Injection
+## Rule (149) NoSQL Injection
 
 **CWE** (943) Improper Neutralization of Special Elements in Data Query Logic
 
 **Supported languages:** Java, JavaScript and TypeScript, Python
 
-## Rule (148) Sensitive Cookie Without 'HttpOnly' Flag
+## Rule (150) Sensitive Cookie Without 'HttpOnly' Flag
 
 **CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
 
@@ -1233,13 +1247,13 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (149) Bad Coding Practices
+## Rule (151) Bad Coding Practices
 
 **CWE** (1006) Bad Coding Practices
 
 **Supported languages:** JavaScript and TypeScript
 
-## Rule (150) Improper Restriction of Rendered UI Layers or Frames
+## Rule (152) Improper Restriction of Rendered UI Layers or Frames
 
 **CWE** (1021) Improper Restriction of Rendered UI Layers or Frames
 
@@ -1247,7 +1261,7 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (151) Python 2 source code
+## Rule (153) Python 2 source code
 
 **CWE** (1104) Use of Unmaintained Third Party Components
 
@@ -1255,31 +1269,31 @@ Each rule includes the following information.
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A06:2021 - Vulnerable and Outdated Components
 
-## Rule (152) User Controlled Pointer
+## Rule (154) User Controlled Pointer
 
 **CWE** (1285) Improper Validation of Specified Index, Position, or Offset in Input
 
 **Supported languages:** C++ (Beta)
 
-## Rule (153) Incorrect regular expression for validating values
+## Rule (155) Incorrect regular expression for validating values
 
 **CWE** (1286) Improper Validation of Syntactic Correctness of Input
 
 **Supported languages:** Ruby
 
-## Rule (154) Improper Type Validation
+## Rule (156) Improper Type Validation
 
 **CWE** (1287) Improper Validation of Specified Type of Input
 
 **Supported languages:** JavaScript and TypeScript
 
-## Rule (155) Prototype Pollution
+## Rule (157) Prototype Pollution
 
 **CWE** (1321) Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')
 
 **Supported languages:** JavaScript and TypeScript
 
-## Rule (156) An optimizing compiler may remove memset non-zero leaving data in memory
+## Rule (158) An optimizing compiler may remove memset non-zero leaving data in memory
 
 **CWE** (1330) Remanent Data Readable after Memory Erase
 
