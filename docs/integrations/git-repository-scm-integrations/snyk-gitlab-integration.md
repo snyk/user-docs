@@ -8,7 +8,7 @@ The Snyk GitLab integration is available for [Snyk Enterprise plan](https://snyk
 ## Prerequisites for Snyk GitLab integration
 
 * GitLab versions 9.5 and above (API v4).
-* A public or private GitLab Group or Project.
+* A public or private GitLab group or project.
 
 ## Snyk GitLab integration features
 
