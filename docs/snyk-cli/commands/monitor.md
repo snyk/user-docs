@@ -8,7 +8,9 @@
 
 The `snyk monitor` command creates a project in your Snyk account to be continuously monitored for open-source vulnerabilities and license issues.
 
-Use the `monitor` command to monitor projects in SCM repositories integrated with Snyk. If you are working with the CLI, an IDE, or a CI/CD, choose a test frequency in your Settings, for example, to test daily. A PR check will also do a test.
+Use the `monitor` command command before integrating a project into production, to take a snapshot of the project that will be monitored to avoid pushing vulnerabilities into production. Choose a test frequency in your Settings, for example, to test daily. A PR check will also do a test.
+
+if you want to change the frequency from the default, which is daily.
 
 After running the `snyk monitor` command, log in to the Snyk website and view your projects to see the monitor.
 

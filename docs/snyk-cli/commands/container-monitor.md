@@ -8,7 +8,7 @@
 
 The `snyk container monitor` command captures the container image layers and dependencies in a project and monitors that snapshot for vulnerabilities on [snyk.io](https://snyk.io)
 
-Use the `container monitor` command to monitor projects in SCM repositories integrated with Snyk. If you are working with the CLI, an IDE, or a CI/CD, choose a test frequency in your Settings if you want to change the frequency from the default, which is daily. A PR check will also do a test.
+Use the `container monitor` command before integrating a project into production, to take a snapshot of the project that will be monitored to avoid pushing vulnerabilities into production. Choose a test frequency in your Settings if you want to change the frequency from the default, which is daily.
 
 If you make changes to the project, you must run the `container monitor` command again.
 

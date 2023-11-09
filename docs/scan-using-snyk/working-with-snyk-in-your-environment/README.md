@@ -2,27 +2,27 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Some features mentioned on this may not be available depending on your Snyk plan or product. Each Snyk product provides key capabilities for the ecosystems you are working in.&#x20;
+Some features mentioned on this page may not be available depending on your Snyk plan or product. Each Snyk product provides key capabilities for the ecosystems you are working in.&#x20;
 
 There is a monthly limit to the number of tests performed if a particular product is not purchased. See the [Pricing plans](https://snyk.io/plans) page for more details.
 {% endhint %}
 
-Snyk takes a developer-first approach to secure your development work, integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. For details, see [Introducing Snyk](../../getting-started/introducing-snyk.md).
+Snyk takes a developer-first approach to securing your development work, by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. For details, see [Introducing Snyk](../../getting-started/introducing-snyk.md).
 
 The Snyk developer-first approach allows you to:
 
-* Use Snyk to focus on earlier enablement, not later enforcement.&#x20;
-* Run scans while working on a Project to minimize rework by finding issues that require changes before you commit the code.
+* Use Snyk to focus on early enablement, not later enforcement.&#x20;
+* Run scans while you are working on a Project, to minimize rework by finding issues that require changes before you commit the code.
 * Add and test packages before writing the code that interfaces with each package.
 * &#x20;After writing a major section of code, scan it to find issues before continuing work.
 
-Using  Snyk begins with importing one or more Projects and scanning for issues.
+Using Snyk begins with importing one or more Projects and scanning for issues.
 
 ## Snyk methods of scanning
 
-Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do with a view to finding and fixing vulnerabilities early in the Software Development Life Cycle.
+Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, with a view to finding and fixing vulnerabilities early in the Software Development Life Cycle.
 
-[Snyk Open Source](../snyk-open-source/) provides vulnerability testing and monitoring for your Projects. Open-source dependence upgrade and version bumping information, as well as license compliance information, are provided on all Snyk plans. Some capabilities may be limited for some [languages and package managers](../supported-languages-and-frameworks/).
+[Snyk Open Source](../snyk-open-source/) provides vulnerability testing and monitoring for your Projects. Open-source dependency upgrade and version bumping information, as well as license compliance information, are provided on all Snyk plans. Some capabilities may be limited for some [languages and package managers](../supported-languages-and-frameworks/).
 
 [Snyk Code](../snyk-code/) scans your code for security vulnerabilities using source code analysis.
 
@@ -54,8 +54,8 @@ The following resources are available for all users:
 
 The following capabilities are available for all Snyk users except as noted in the documentation for each capability.
 
-* Using [Snyk IDE Plugins](../../integrations/ide-tools/) you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
 * Using the [Snyk CLI](../../snyk-cli/) you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
+* Using [Snyk IDE Plugins](../../integrations/ide-tools/) you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
 * Using [Git integrations](../../integrations/git-repository-scm-integrations/) you can improve security in your Git repositories for both your code and deployed applications.
 * Using CI/CD plugins and integrations you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
   * There are options for passive monitoring and establishing a quality assurance gate by failing build checks based on tests for violations of policies.
@@ -65,21 +65,21 @@ The following capabilities are available for all Snyk users except as noted in t
 
 ## Monitor your code in production
 
-Before integrating your code into production, using the [snyk monitor](../../snyk-cli/commands/monitor.md) or [snyk container monitor](../../snyk-cli/commands/container-monitor.md) CLI command allows you to take a snapshot and monitor for vulnerabilities to avoid pushing them into production.
+Before integrating your code into production, use the [`snyk monitor`](../../snyk-cli/commands/monitor.md) or [`snyk container monitor`](../../snyk-cli/commands/container-monitor.md) CLI command to take a snapshot and monitor for vulnerabilities to avoid pushing them into production.
 
-You can use the `snyk monitor` or [snyk container monitor](../../snyk-cli/commands/container-monitor.md) CLI command and monitor capabilities to identify issues introduced into open-source and container Projects. During implementation, monitoring helps you to gain recognition of vulnerabilities in your Projects. See [Deployment and rollout recommendations](./#deployment-and-rollout-recommendations) for details.
+You can use the `snyk monitor` or `snyk container monitor` capabilities to identify issues introduced into open-source and container Projects. During implementation, monitoring helps you to gain recognition of vulnerabilities in your Projects. See [Deployment and rollout recommendations](./#deployment-and-rollout-recommendations) for details.
 
-You can use the `snyk monitor` or `snyk container monitor` command to push results from the CLI to the Snyk Web UI, where you can view the information to help in fixing issues. Use the  `--org=` option to indicate the Organization that contains the Project, so you will use the test settings you intend and push the results to the correct Project.
+Using the `snyk monitor` or `snyk container monitor` command allows you to push results from the CLI to the Snyk Web UI, where you can view the information to help in fixing issues. Use the  `--org=` option to indicate the Organization that contains the Project, so you will use the test settings you intend and push the results to the correct Project.
 
 Snyk Enterprise plan customers can monitor container images and their open-source and Linux-based packages being used in production through Kubernetes integration to receive notifications of known vulnerabilities for applications in production.
 
 ## How to fix issues using Snyk
 
-If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes the most important.
+If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important.
 
 ### What to fix - prioritization factors
 
-Some tools only use the single factor of severity to prioritize issues, but this can still result in thousands of results, with no clear starting point to fix these issues.
+Some tools use only the single factor of severity to prioritize issues, but this can still result in thousands of results, with no clear starting point to fix these issues.
 
 Snyk provides more factors to help you prioritize issues, such as having a known exploit, it is fixable, or social trending. This can be done both at the Project level when looking at a specific Project, or Enterprise customers can prioritize across all Projects.
 
