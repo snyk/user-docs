@@ -340,7 +340,6 @@
         * [Fix analysis](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/exploring-the-fix-analysis-page.md)
         * [Priority score](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/understanding-the-priority-score-of-snyk-code-issues.md)
         * [Severity score](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/understanding-the-severity-score-of-snyk-code-issues.md)
-      * [Exploring the vulnerability issues discovered by Snyk Code](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-vulnerability-issues-discovered-by-snyk-code.md)
       * [Fix code vulnerabilities automatically](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md)
       * [Code Analysis results history](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-history-of-snyk-code-results.md)
     * [Use Snyk Code in the CI/CD pipeline](scan-using-snyk/snyk-code/using-snyk-code-from-a-ci-cd-pipeline.md)

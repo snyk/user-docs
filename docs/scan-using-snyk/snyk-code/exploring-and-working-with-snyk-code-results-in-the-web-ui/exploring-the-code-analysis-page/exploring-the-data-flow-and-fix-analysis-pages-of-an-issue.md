@@ -18,8 +18,6 @@ The **Data flow** page enables you to do the following:
 
 * [View the taint flow of an issue in your code from source to sink](exploring-the-data-flow-and-fix-analysis-pages-of-an-issue.md#viewing-the-taint-flow-of-an-issue-in-your-code).
 * [Open the tainted source code in the integrated SCM](exploring-the-data-flow-and-fix-analysis-pages-of-an-issue.md#opening-the-tainted-source-code-in-the-integrated-scm).
-* Share your feedback with Snyk about the discovered issue using the **Share Feedback** button.\
-  For more information, see [Sharing your feedback with Snyk Code](broken-reference).
 * Ignore the open vulnerability issue using the **Ignore** button.\
   For more information, see [Ignore issues](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues).
 

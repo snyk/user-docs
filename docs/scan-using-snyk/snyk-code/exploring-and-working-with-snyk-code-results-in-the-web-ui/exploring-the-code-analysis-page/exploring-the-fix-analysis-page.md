@@ -22,7 +22,5 @@ The code diff of the fix example appears in the integrated SCM, showing you how 
 
 <figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - Examples pane - link - code.png" alt="Code diff of the fix example"><figcaption><p>Code diff of the fix example</p></figcaption></figure>
 
-* **Share your feedback** - send Snyk Code your feedback about the discovered issue using the **Share Feedback** button.\
-  For more information, see [Sharing your feedback with Snyk Code](broken-reference).
-* **Ignore the issue** - ignore the open vulnerability issue using the **Ignore** button.\
-  For more information, see I[gnore issues](../../../../manage-risk/find-and-manage-priority-issues/ignore-issues.md).
+**Ignore the issue** - ignore the open vulnerability issue using the **Ignore** button.\
+For more information, see I[gnore issues](../../../../manage-risk/find-and-manage-priority-issues/ignore-issues.md).
