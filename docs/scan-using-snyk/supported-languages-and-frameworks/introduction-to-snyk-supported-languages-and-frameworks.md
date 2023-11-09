@@ -2,11 +2,11 @@
 
 ## Snyk Code
 
-### Supported Extensions
+### Supported file extensions
 
 <details>
 
-<summary>Snyk Code supports the following extensions</summary>
+<summary>Snyk Code supports the following file extensions</summary>
 
 * apex
 

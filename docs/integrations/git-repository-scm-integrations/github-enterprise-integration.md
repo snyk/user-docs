@@ -1,12 +1,12 @@
 # Snyk GitHub Enterprise integration
 
+{% hint style="warning" %}
+If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
+{% endhint %}
+
 {% hint style="info" %}
 **Feature availability**\
 GitHub Enterprise integration is available to Snyk Enterprise plan customers. If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. See the [Plans and pricing](https://snyk.io/plans/) page for details.
-{% endhint %}
-
-{% hint style="warning" %}
-If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
 ## Prerequisites for Snyk GitHub Enterprise integration
@@ -85,6 +85,10 @@ The Members Read Only Organization scope is required if you use fine-grained per
 To use the integration with GitHub Enterprise Cloud, add the URL `https://api.github.com.`To integrate with a self-hosted GitHub Enterprise, add the URL `https://your.github-enterprise.host` in step two of PAT authorization.
 {% endhint %}
 
+{% hint style="warning" %}
+If the PAT token changes or expires in GitHub, the integration with Snyk will not function. To resolve this, update the token in the Snyk **GitHub Enterprise Integration settings.**
+{% endhint %}
+
 ### How to import GitHub repositories
 
 Select the repositories you want to import to Snyk and click **Add selected repositories**.
@@ -128,11 +132,34 @@ The following example shows how Snyk pull request checks appear on the pull requ
 
 <figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
 
-To review and adjust the pull request tests settings: In Snyk, navigate to Organization **Settings** > **Integrations > Source control > GitHub Enterprise**, and select **Edit Settings**.
+To review and adjust the pull request test settings: In Snyk, navigate to Organization **Settings** > **Integrations** > **Source control** > **GitHub Enterprise**, and select **Edit Settings**.
 
 1. Scroll to **Snyk PR status checks**; see [Configure PR Checks](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md) for details.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.43.34.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
+
+## How to disconnect the Snyk GitHub Enterprise integration
+
+{% hint style="warning" %}
+Disconnecting the Snyk GitHub Enterprise integration halts all scans for imported repositories, PR checks cannot be executed, and Projects are deactivated in the Snyk Web UI.
+{% endhint %}
+
+1.  Navigate to the Snyk GitHub Enterprise integration **Settings**.\
+
+
+    <figure><img src="../../.gitbook/assets/2023-11-09_17-29-41.png" alt="Navigate to the Snyk GitHub Enterprise settings" width="373"><figcaption><p>Navigate to the Snyk GitHub Enterprise settings</p></figcaption></figure>
+2.  At the bottom of the page, select **Remove GitHub Enterprise.**\
+
+
+    <figure><img src="../../.gitbook/assets/2023-11-09_15-57-57.png" alt="Remove GitHub Enterprise from your configured Snyk integrations" width="563"><figcaption><p>Remove GitHub Enterprise from your configured Snyk integrations</p></figcaption></figure>
+3.  A confirmation screen opens. To proceed, select **Disconnect GitHub Enterprise**. \
+
+
+    <figure><img src="../../.gitbook/assets/2023-11-09_17-38-28.png" alt="Confirm disconnecting from GitHub Enterprise" width="375"><figcaption><p>Confirm disconnecting from GitHub Enterprise</p></figcaption></figure>
+
+After GitHub Enterprise is disconnected, imported Snyk Projects will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests.
+
+You can re-connect anytime; however, re-initiating GitHub Enterprise projects for monitoring requires setting up the integration again.
 
 ## Required access scopes for Snyk GitHub Enterprise integration
 
