@@ -8,13 +8,27 @@ Free and Team users have access to personal tokens only. Personal tokens are rec
 Snyk recommends that Enterprise customers use a service token to authenticate with a CI/CD. Avoid using a service token with an IDE.
 {% endhint %}
 
+## Methods of authenticating with Snyk
+
 You can authenticate by using the CLI `snyk auth` command to launch the authentication dialog in your browser.  See the [Auth command help](commands/auth.md). This method is the default and recommended.
 
-You can also authenticate by using the `SNYK_TOKEN` environment variable. For details, see [Configure the Snyk CLI](configure-the-snyk-cli/). Use `SNYK_TOKEN` in a CI/CD environment.
+You can also authenticate by using the `SNYK_TOKEN` environment variable. For details, see [Configure the Snyk CLI](configure-the-snyk-cli/).
+
+Use `SNYK_TOKEN` in a CI/CD environment.
+
+{% hint style="info" %}
+You can authenticate Snyk CLI in your CI/CD programmatically as follows:
+
+* Use a SNYK\_TOKEN envvar (preferred)\
+  `SNYK_TOKEN=<SNYK_API_TOKEN> snyk test`
+* Or use a Snyk `auth` command\
+  `snyk auth <SNYK_API_TOKEN>`\
+  `snyk test`
+{% endhint %}
 
 You can specify either your personal API token or a service token, available for Enterprise customers only. See [Service accounts](../enterprise-setup/service-accounts/) for information on using service tokens.
 
-Follow these steps to authenticate using your API token:
+## Steps to authenticate using your API token
 
 1. Go to [your Snyk account](https://app.snyk.io/account), **Account Settings > API Token** section.
 2. In the **KEY** field, choose **click to show**; then select and copy your API token. A screenshot follows.
@@ -22,4 +36,4 @@ Follow these steps to authenticate using your API token:
 
 ![Snyk Account Settings, API Token](../.gitbook/assets/API-token-CLI-auth-details-22-01.png)
 
-For more details, see [Obtaining your Snyk API token](../getting-started/obtaining-your-snyk-api-token.md) for instructions that apply to all applications and tools.
+For more details, see [How to obtain and use your Snyk API token](../getting-started/obtaining-your-snyk-api-token.md) for instructions that apply to all applications and tools.
