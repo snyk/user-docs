@@ -1,4 +1,4 @@
-# Use Snyk Open Source from the CLI
+# Snyk CLI for Open Source
 
 Snyk Open Source scans your manifest files. Based on the scan, Snyk creates a hierarchical tree of the structure represented in the manifest file: both its direct and indirect (transitive) dependencies and the points at which the different packages are introduced.
 
@@ -45,7 +45,7 @@ When `snyk test` runs, it tries to autodetect your Project type by looking for a
 The way Snyk analyzes the file and builds the tree varies depending on the following:
 
 * The [language and package manager](../../../scan-using-snyk/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md) you use, as determined by the manifest file type
-* The method of scanning, using the [Snyk CLI](../../), or importing a Project using a [Git repository integration](../../../integrations/git-repository-scm-integrations/)
+* The method of scanning, using the [Snyk CLI](../../), or importing a Project using a [Git repository integration](../../../integrate-with-snyk/git-repository-scm-integrations/)
 
 For tips on running `snyk test` with commonly used options, see [Use options to customize the snyk test command](use-options-to-customize-the-snyk-test-command.md). For more information about supported languages, see [Open Source language and package manager support](../../../scan-using-snyk/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
 

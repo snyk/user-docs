@@ -7,7 +7,7 @@
 * A Snyk account
 * Self-enabled Broker integration using the Snyk API, or enabled by contacting [Snyk Support](https://support.snyk.io/hc/en-us)
 * A unique UUID token called Broker token. See [Generate credentials in the target application for Snyk Broker](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker)
-* An SCM token or password. See the [integrations documentation](../../integrations/) for each SCM for information on how to obtain the token.
+* An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token.
 * Docker configured to pull images from Docker Hub
 
 {% hint style="warning" %}
@@ -69,7 +69,7 @@ For code repository (SCM) integrations, a Broker token can be generated via API 
 1. Go to the Snyk API v1 documentation and follow the example under "Set up a broker for an existing integration" within the [Integrations API](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 2. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration. by selecting **Settings** > **Integrations** for that specific integration update to see the Broker token.
 
-For [Artifactory Repository](../../integrations/package-repository-integrations/artifactory-repository-setup/) and [Nexus Repository Manager](../../integrations/package-repository-integrations/nexus-repo-manager-setup/) brokered instances or [Jira](install-and-configure-snyk-broker/jira-install-and-configure-broker/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+For [Artifactory Repository](../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/) and [Nexus Repository Manager](../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/) brokered instances or [Jira](install-and-configure-snyk-broker/jira-install-and-configure-broker/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 
 1. Select **Settings** > **Integrations** for that specific integration to generate the Broker token.
 2. Once the Broker token is generated, under the integration, the notification from this screen correctly displays “Could not connect to…”, as you have not yet installed and configured the client.

@@ -4,7 +4,7 @@
 
 Compatibility in the BitBucket Pipeline integration is limited to environments supported by the Docker container the integration runs in. Before v1.0.0, this was limited to environments supported by the Snyk CLI Docker Images.
 
-With the release of v1.0.0, users can define custom images. If the list of environments provided by the [LANGUAGE](../../ci-cd-integrations/bitbucket-pipelines-integration-overview/snyk-pipe-parameters-and-values-bitbucket-cloud.md#snyk-pipe-variables) variable does not support your particular build environment, you can define your own build environment in the form of a custom Docker image.
+With the release of v1.0.0, users can define custom images. If the list of environments provided by the [LANGUAGE](snyk-pipe-parameters-and-values-bitbucket-cloud.md#snyk-pipe-variables) variable does not support your particular build environment, you can define your own build environment in the form of a custom Docker image.
 
 Using custom images allows you to:
 
@@ -17,7 +17,7 @@ Using custom images allows you to:
 
 In order for your custom image to be supported, it must:
 
-* Meet the [Prerequisites for Bitbucket Pipelines integration](../../ci-cd-integrations/bitbucket-pipelines-integration-overview/prerequisites-for-bitbucket-pipelines-integration.md)
+* Meet the [Prerequisites for Bitbucket Pipelines integration](prerequisites-for-bitbucket-pipelines-integration.md)
 * Use an environment [supported](../../../snyk-cli/install-or-update-the-snyk-cli/) by the Snyk CLI
 * Use a language and framework [supported](../../../scan-using-snyk/supported-languages-and-frameworks/) by Snyk
 * Have Snyk CLI installed on the image - see [Install or update the Snyk CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) for steps to install the CLI

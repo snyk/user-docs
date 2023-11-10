@@ -13,7 +13,7 @@ Snyk can integrate with the following Source Control Managers (SCMs) to help you
 
 ## Tips for integrating Git repositories with Snyk
 
-See the [Snyk deployment recommendations](introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md) for integrating your SCM with Snyk and [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md).
+See the [Snyk deployment recommendations](introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md) for integrating your SCM with Snyk and [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md).
 
 ## How to use Snyk Pull Requests (PRs) with Git repositories
 

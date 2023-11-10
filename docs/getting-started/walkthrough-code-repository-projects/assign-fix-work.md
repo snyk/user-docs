@@ -41,7 +41,7 @@ As part of this Sprint planning, the team leader can:
 * Assign these Jira issues as tasks to developers to fix these vulnerabilities.
 * Track progress on these tasks during the Sprint.
 
-Snyk [Jira integration](../../integrations/notifications-ticketing-system-integrations/jira.md) allows you to run this process from the Snyk Web UI.
+Snyk [Jira integration](../../integrate-with-snyk/notifications-ticketing-system-integrations/jira.md) allows you to run this process from the Snyk Web UI.
 
 ### Assign a Jira issue
 

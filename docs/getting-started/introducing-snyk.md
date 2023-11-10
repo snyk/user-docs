@@ -26,7 +26,7 @@ You can run Snyk in the following ways:
 
 * [**Web**](explore-snyk-through-the-web-ui.md): the Snyk Web UI ([app.snyk.io](https://app.snyk.io)) provides a browser-based experience with functions such as configuration settings, filtering and fixing discovered issues, and reports.
 * [**CLI**](../snyk-cli/): the Snyk Command Line Interface enables you to run vulnerability scans on your local machine and integrate Snyk into your pipeline.
-* [**IDEs**](../integrations/ide-tools/): the Snyk IDE integrations enable you to embed Snyk in your development environment.
+* [**IDEs**](../integrate-with-snyk/ide-tools/): the Snyk IDE integrations enable you to embed Snyk in your development environment.
 * [**API**](../snyk-api/): the Snyk API enables you to integrate with Snyk programmatically, tuning Snyk security automation to your specific workflows.
 
 This video shows using the CLI to scan for vulnerabilities.
@@ -47,7 +47,7 @@ The Snyk tech stacks that are supported depend on the Snyk product you use:
 
 Snyk integrations for your software development process allow you to integrate Snyk into your development and security processes, including source control, IDE, CI/CD, and many others.
 
-See [Integrate with Snyk](../integrations/) for details.
+See [Integrate with Snyk](../integrate-with-snyk/) for details.
 
 ## **What does Snyk cost?**
 

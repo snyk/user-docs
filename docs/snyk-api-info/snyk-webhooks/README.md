@@ -26,7 +26,7 @@ Get real-time security alerts aggregated across various sources into a single pl
 
 #### Vulnerability Management and Aggregation
 
-Browse the various [Snyk Partner integrations](../../integrations/vulnerability-management-tools/) for a comprehensive list of solutions.
+Browse the various [Snyk Partner integrations](../../integrate-with-snyk/vulnerability-management-tools/) for a comprehensive list of solutions.
 
 ### Webhook headers
 

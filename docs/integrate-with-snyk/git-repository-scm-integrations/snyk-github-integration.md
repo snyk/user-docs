@@ -7,7 +7,7 @@ The Snyk GitHub integration lets you:
 * Provide automated fixes and upgrades
 
 {% hint style="info" %}
-Enterprise plan customers should consider using [GitHub Enterprise integration](github-enterprise-integration.md). See [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md).
+Enterprise plan customers should consider using [GitHub Enterprise integration](github-enterprise-integration.md). See [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md).
 {% endhint %}
 
 ## Snyk GitHub integration: per user, not per Organization

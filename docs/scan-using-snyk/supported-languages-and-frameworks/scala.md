@@ -80,7 +80,7 @@ For more details on installing `sbt-dependency-graph` for use with the Snyk CLI,
 
 ### Snyk Web UI (Git repository integration)
 
-Scala `sbt` Projects can be imported from any of the Git repositories that Snyk [supports](../../integrations/git-repository-scm-integrations/).
+Scala `sbt` Projects can be imported from any of the Git repositories that Snyk [supports](../../integrate-with-snyk/git-repository-scm-integrations/).
 
 To test your Scala Projects using `sbt` as a package manager, Snyk analyzes your `build.sbt` file.\
 To ensure that this works properly, you must have this file in your repository before importing your projects.
@@ -104,9 +104,9 @@ For more details, see [Scanning a remote repository using the Snyk Web UI.](http
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../integrations/ide-tools/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/ide-tools/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
+:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 
 ## Troubleshooting
 

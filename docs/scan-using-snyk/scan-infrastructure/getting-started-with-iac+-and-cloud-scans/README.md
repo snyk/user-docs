@@ -26,7 +26,7 @@ To start using IaC+ you must have the following:
 * A Snyk account. For details, see [Create a Snyk account](../../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
 * Belong to an organization that has Snyk IaC on the enterprise plan.
 * An existing Terraform, CloudFormation, or Azure Resource Manager environment to work in, or deployed AWS, Azure, or Google Cloud account to onboard.
-* Integration with your Git repository as for other Snyk products. For details, see [Git repositories (SCMs)](../../../integrations/git-repository-scm-integrations/).
+* Integration with your Git repository as for other Snyk products. For details, see [Git repositories (SCMs)](../../../integrate-with-snyk/git-repository-scm-integrations/).
 
 ## Import IaC+ SCM repositories
 
@@ -66,15 +66,15 @@ The cloud environments table displays the following information for each environ
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-environments-page.png" alt="The Snyk environments page in the Snyk Web UI"><figcaption><p>The Snyk environments page in the Snyk Web UI</p></figcaption></figure>
 
-To import a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../../integrations/cloud-platforms-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../../integrations/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../../integrations/cloud-platforms-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment. This is not supported for IaC+ environment kinds.
+To import a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../../integrate-with-snyk/cloud-platforms-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../../integrate-with-snyk/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../../integrate-with-snyk/cloud-platforms-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment. This is not supported for IaC+ environment kinds.
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt="Add an environment in the Snyk Web UI"><figcaption><p>Add an environment in the Snyk Web UI</p></figcaption></figure>
 
 You can also import an environment using the Snyk API:
 
-* [AWS Integration: API](../../../integrations/cloud-platforms-integrations/aws-integration/snyk-cloud-for-aws-api/)
-* [Google Cloud Integration: API](../../../integrations/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-api/)
-* [Azure Integration: API](../../../integrations/cloud-platforms-integrations/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/)
+* [AWS Integration: API](../../../integrate-with-snyk/cloud-platforms-integrations/aws-integration/snyk-cloud-for-aws-api/)
+* [Google Cloud Integration: API](../../../integrate-with-snyk/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-api/)
+* [Azure Integration: API](../../../integrate-with-snyk/cloud-platforms-integrations/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/)
 
 ## View IaC+ and cloud issues
 

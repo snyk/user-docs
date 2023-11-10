@@ -30,7 +30,7 @@ Advantages:
 * Onboarding of repositories can be configured via UI or [API/API Import Tool](https://docs.snyk.io/snyk-api-info/other-tools/tool-snyk-api-import)
 * Supports Cloud and Private Code Repositories on the Snyk Enterprise plan
 
-See [Git repositories (SCMs)](../../../integrations/git-repository-scm-integrations/) for more details.
+See [Git repositories (SCMs)](../../../integrate-with-snyk/git-repository-scm-integrations/) for more details.
 
 If you have an on-premise git repository, you will need to consider deploying a [Snyk Broker](https://docs.snyk.io/snyk-admin/snyk-broker) for Snyk to communicate with your repositories.
 
@@ -53,13 +53,13 @@ Advantages:
 * Full control over testing (which tests to run, where in the builld script)
 * Can automate via CI/CD
 
-See [Snyk CI/CD integrations](../../../integrations/snyk-ci-cd-integrations/) for more details.
+See [Snyk CI/CD integrations](../../../integrate-with-snyk/snyk-ci-cd-integrations/) for more details.
 
 ### IDE Integrations
 
 Integrated Development Environment (IDE) integrations like Visual Studio Code, IntelliJ IDEA, and Eclipse allow developers to access Snyk's security features directly within their coding environment. This enables real-time scanning and issue remediation as developers write code.&#x20;
 
-See [Use Snyk in your IDE](../../../integrations/ide-tools/) for more details.
+See [Use Snyk in your IDE](../../../integrate-with-snyk/ide-tools/) for more details.
 
 ## Considerations for import strategies&#x20;
 
@@ -75,7 +75,7 @@ For complex environments, modules, and highly templated implementations, utilizi
 
 ### CR (Container Registries)
 
-Snyk also integrates with various [Container Registries](../../../scan-containers/snyk-container-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
+Snyk also integrates with various [Container Registries](../../../integrate-with-snyk/snyk-container-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
 
 ### Kubernetes
 

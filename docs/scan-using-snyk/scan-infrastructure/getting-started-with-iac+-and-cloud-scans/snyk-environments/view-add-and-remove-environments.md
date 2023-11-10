@@ -13,15 +13,15 @@ The cloud environments table displays the following information for each environ
 
 ## Add a cloud environment
 
-To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../../../integrations/cloud-platforms-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../../../integrations/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../../../integrations/cloud-platforms-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment. This is not supported for IaC+ environment kinds.
+To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../../../integrate-with-snyk/cloud-platforms-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../../../integrate-with-snyk/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../../../integrate-with-snyk/cloud-platforms-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment. This is not supported for IaC+ environment kinds.
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt="Add an environment in the Snyk Web UI"><figcaption><p>Add an environment in the Snyk Web UI</p></figcaption></figure>
 
 You can also add an environment using the Snyk API:
 
-* [AWS Integration: API](../../../../integrations/cloud-platforms-integrations/aws-integration/snyk-cloud-for-aws-api/)
-* [Google Cloud Integration: API](../../../../integrations/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-api/)
-* [Azure Integration: API](../../../../integrations/cloud-platforms-integrations/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/)
+* [AWS Integration: API](../../../../integrate-with-snyk/cloud-platforms-integrations/aws-integration/snyk-cloud-for-aws-api/)
+* [Google Cloud Integration: API](../../../../integrate-with-snyk/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-api/)
+* [Azure Integration: API](../../../../integrate-with-snyk/cloud-platforms-integrations/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/)
 
 ## Remove an IaC+ or cloud environment
 

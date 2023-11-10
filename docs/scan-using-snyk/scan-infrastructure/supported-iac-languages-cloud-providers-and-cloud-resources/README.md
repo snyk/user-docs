@@ -16,9 +16,9 @@ Language support for Current IaC vs. IaC+ is documented below:
 
 Snyk IaC supports scanning the following cloud providers:
 
-* [Amazon Web Services](../../../integrations/cloud-platforms-integrations/aws-integration/)
-* [Azure](../../../integrations/cloud-platforms-integrations/azure-integration-for-cloud-configurations/)
-* [Google Cloud](../../../integrations/cloud-platforms-integrations/google-cloud-integration/)
+* [Amazon Web Services](../../../integrate-with-snyk/cloud-platforms-integrations/aws-integration/)
+* [Azure](../../../integrate-with-snyk/cloud-platforms-integrations/azure-integration-for-cloud-configurations/)
+* [Google Cloud](../../../integrate-with-snyk/cloud-platforms-integrations/google-cloud-integration/)
 
 ## Supported resources for cloud scans
 

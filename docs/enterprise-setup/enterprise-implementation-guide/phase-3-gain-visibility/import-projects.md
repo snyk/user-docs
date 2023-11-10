@@ -7,7 +7,7 @@ Depending on the integrations you have configured, and the language / package ma
 
 The best import route varies based on the languages and package managers in your tech stack.&#x20;
 
-Here are some key points to determine the best starting point. See [this article](../../../integrations/git-repository-and-ci-cd-integrations-comparisons.md) for more details.
+Here are some key points to determine the best starting point. See [this article](../../../integrate-with-snyk/git-repository-and-ci-cd-integrations-comparisons.md) for more details.
 
 ## Getting started with Snyk
 
@@ -17,7 +17,7 @@ See the [Getting started](../../../getting-started/) and [Start scanning](../../
 
 Snyk offers various integration methods to meet your needs:
 
-### [Git Integration](../../../integrations/git-repository-scm-integrations/)
+### [Git Integration](../../../integrate-with-snyk/git-repository-scm-integrations/)
 
 Connect your repositories for automatic scanning.
 

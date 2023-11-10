@@ -9,4 +9,4 @@ When you set up your CI/CD integration, note the following:
 * You can [export the CLI output](broken-reference) to JSON or SARIF standard formats.
 * You can generate more visual results using the [Snyk-to-HTML](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html/) tool.
 
-To integrate Snyk Code into your CI/CD pipeline, see [Snyk CI/CD integrations](../../integrations/snyk-ci-cd-integrations/).
+To integrate Snyk Code into your CI/CD pipeline, see [Snyk CI/CD integrations](../../integrate-with-snyk/snyk-ci-cd-integrations/).

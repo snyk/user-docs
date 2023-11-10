@@ -55,13 +55,13 @@ The following resources are available for all users:
 The following capabilities are available for all Snyk users except as noted in the documentation for each capability.
 
 * Using the [Snyk CLI](../../snyk-cli/), you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
-* Using [Snyk IDE Plugins](../../integrations/ide-tools/), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
-* Using [Git integrations](../../integrations/git-repository-scm-integrations/), you can improve security in your Git repositories for both your code and deployed applications.
+* Using [Snyk IDE Plugins](../../integrate-with-snyk/ide-tools/), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
+* Using [Git integrations](../../integrate-with-snyk/git-repository-scm-integrations/), you can improve security in your Git repositories for both your code and deployed applications.
 * Using CI/CD plugins and integrations, you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
   * There are options for passive monitoring and establishing a quality assurance gate by failing build checks based on tests for violations of policies.
   * Most CI/CD integrations use the Snyk CLI, allowing you to fail the build based on criteria specified in options or using the [snyk-filter tool](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
   * Snyk CI/CD integrations include Snyk plugins for Jenkins, Circle CI, and other tools, as well as Partner Platforms, including Azure, Bitbucket, and AWS, that offer built-in pipes or components for using Snyk.
-  * GitHub[ Actions](../../integrations/ci-cd-integrations/github-actions-integration/) provide additional means for securing your code in your deployment pipeline. For details and an example, see [Building a secure CI/CD pipeline with GitHub Actions for your Java Application](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/).
+  * GitHub[ Actions](../../integrate-with-snyk/snyk-ci-cd-integrations/github-actions-integration/) provide additional means for securing your code in your deployment pipeline. For details and an example, see [Building a secure CI/CD pipeline with GitHub Actions for your Java Application](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/).
 
 ## Monitor your code in production
 
@@ -94,7 +94,7 @@ Snyk offers capabilities to address issues both reactively and proactively:
 
 Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow. For more information, see G[etting started with Snyk Free and Team plans](../../getting-started/getting-started-with-snyk-free-and-team-plans.md) and [Preparing for implementation with Free and Team plans](../../getting-started/preparing-for-implementation-free-and-team-plans.md).
 
-With large organizations using hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For details, see the [Enterprise implementation guide](../../enterprise-setup/enterprise-implementation-guide/).
+With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For details, see the [Enterprise implementation guide](../../enterprise-setup/enterprise-implementation-guide/).
 
 1. Typically, large organizations start with daily monitoring of applications using Git integration, only, initially turning on PR checks for a few key applications.
 2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.

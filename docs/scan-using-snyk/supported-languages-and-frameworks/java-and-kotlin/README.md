@@ -350,13 +350,13 @@ The following table includes the Git services available for Maven and Gradle Pro
 
 #### Git settings for Java
 
-From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrations/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
+From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
 
 The following table includes the Git services available for Maven and Gradle Projects.&#x20;
 
 ### Snyk Web UI (Git repository integration)
 
-You can import Java repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../../integrations/git-repository-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
+You can import Java repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../../integrate-with-snyk/git-repository-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
 :link: [How Snyk works for open source and licensing](../introduction-to-snyk-supported-languages-and-frameworks.md#how-snyk-works-for-open-source-and-licensing)
 
@@ -437,7 +437,7 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 
 * Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.
 * Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
-* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../../integrations/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../../../integrations/package-repository-integrations/artifactory-repository-setup/)
+* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/)
 
 {% hint style="info" %}
 If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis is best performed using CLI as the build system will retrieve the dependencies and be present locally.
@@ -450,9 +450,9 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../../integrations/ide-tools/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../../../integrate-with-snyk/ide-tools/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../../integrations/snyk-ci-cd-integrations/) and [Snyk API](../../../snyk-api/)).
+:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../../snyk-api/)).
 
 ## Help
 

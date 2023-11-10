@@ -21,7 +21,7 @@ You can use one of the following identity providers for authentication with Snyk
   See [Setting up Single Sign-On (SSO) for authentication](using-single-sign-on-sso-for-authentication/).
 
 {% hint style="info" %}
-For additional instructions, see the integrations pages for [Git repositories (SCMs)](../integrations/git-repository-scm-integrations/).
+For additional instructions, see the integrations pages for [Git repositories (SCMs)](../integrate-with-snyk/git-repository-scm-integrations/).
 {% endhint %}
 
 {% hint style="warning" %}

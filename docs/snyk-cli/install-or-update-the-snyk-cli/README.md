@@ -110,7 +110,7 @@ snyk/snyk:maven snyk monitor \
 
 ## Install as a part of a Snyk integration
 
-Snyk also offers many [integrations](../../integrations/) into developer tooling. These integrations install and manage the Snyk CLI for you. Integrations include the following:
+Snyk also offers many [integrations](../../integrate-with-snyk/) into developer tooling. These integrations install and manage the Snyk CLI for you. Integrations include the following:
 
 * [Snyk Jenkins plugin](https://github.com/jenkinsci/snyk-security-scanner-plugin)
 * [CircleCI Orb](https://github.com/snyk/snyk-orb)
@@ -121,4 +121,4 @@ Snyk also offers many [integrations](../../integrations/) into developer tooling
 * [Eclipse IDE Extension](https://github.com/snyk/snyk-eclipse-plugin)
 * [Maven plugin](https://github.com/snyk/snyk-maven-plugin)
 
-See the [integrations](../../integrations/) docs for detailed information about the integrations and how to install.\
+See the [integrations](../../integrate-with-snyk/) docs for detailed information about the integrations and how to install.\

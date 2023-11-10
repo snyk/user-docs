@@ -5,12 +5,12 @@ Using Snyk Code, you can publish results to a Snyk Project with or without using
 * [Publish CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project) created using the CLI
   * Run Snyk Code in the CI/CD and append results to Snyk Projects for reports.&#x20;
   * Issues that are ignored in the WebUI Project will apply to the CLI scans.&#x20;
-  * This does not require an [SCM Integration](../../../integrations/git-repository-scm-integrations/).&#x20;
+  * This does not require an [SCM Integration](../../../integrate-with-snyk/git-repository-scm-integrations/).&#x20;
 * [Test and publish CLI results to an existing Snyk Code SCM Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#test-and-publish-cli-results-to-an-existing-snyk-code-scm-project)
   * Run Snyk Code in the CI/CD, and push the results to an existing SCM Code Analysis Project to get Code Snippets.&#x20;
   * Issues that are ignored in the WebUI Project will apply to the CLI scans.&#x20;
   * The command will scan the specific code in the repository, not locally, as you do when you publish Snyk CLI results to a Code Project.&#x20;
-  * The results are appended to the existing SCM Project, which requires an [SCM Integration](../../../integrations/git-repository-scm-integrations/).
+  * The results are appended to the existing SCM Project, which requires an [SCM Integration](../../../integrate-with-snyk/git-repository-scm-integrations/).
 
 If a CLI-based Snyk Code Project does not yet exist for the value provided in the `--project-name` option, Snyk creates a new CLI-based Project.&#x20;
 
@@ -81,7 +81,7 @@ Using Snyk Code via the CLI supports publishing test results to an existing Snyk
 
 Be sure you have the prerequisites and publish the results as you intend:
 
-* An [SCM Integration](../../../integrations/git-repository-scm-integrations/) is required, as the CLI results are appended there. &#x20;
+* An [SCM Integration](../../../integrate-with-snyk/git-repository-scm-integrations/) is required, as the CLI results are appended there. &#x20;
 * The Project ID is required. You can find it as follows:
   * Find the Project ID in the URL of the Project in the Snyk Web UI: https://app.snyk.io/org/org\_name/project/PROJECT\_UUID
   * Or use the GET Projects method through the [Snyk API.](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org\_id-/projects)&#x20;

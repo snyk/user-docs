@@ -8,7 +8,7 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 
 * Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.
 * Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
-* Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../../integrations/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../../../integrations/package-repository-integrations/artifactory-repository-setup/)
+* Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/)
 
 {% hint style="info" %}
 If you are not a Snyk Enterprise user using Artifactory or Nexus, analysis is best performed via CLI, as the build system will retrieve the dependencies and be present locally.
@@ -16,11 +16,11 @@ If you are not a Snyk Enterprise user using Artifactory or Nexus, analysis is be
 
 For more information on package registry integrations, including Maven, see the following:
 
-* Package registry integrations: [Nexus Repository Manager setup](../../../integrations/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../../../integrations/package-repository-integrations/artifactory-repository-setup/)
-* [Artifactory Registry for Maven](../../../integrations/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md)
-* [Nexus Registry for Maven](../../../integrations/package-repository-integrations/nexus-repo-manager-setup/nexus-repository-manager-for-maven.md)
-* Nexus Container Registry: [Container security with Nexus integration](../../../scan-containers/image-scanning-library/nexus-image-scanning/container-security-with-nexus-integration.md)
-* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../integrations/gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md) and [Nexus Repository Manager Gatekeeper plugin](../../../integrations/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
+* Package registry integrations: [Nexus Repository Manager setup](../../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/)
+* [Artifactory Registry for Maven](../../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md)
+* [Nexus Registry for Maven](../../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/nexus-repository-manager-for-maven.md)
+* Nexus Container Registry: [Container security with Nexus integration](../../../integrate-with-snyk/snyk-container-integrations/container-security-with-nexus-integration.md)
+* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../integrate-with-snyk/gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md) and [Nexus Repository Manager Gatekeeper plugin](../../../integrate-with-snyk/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
 
 ## Language and package manager considerations
 
@@ -75,11 +75,11 @@ Typically you can instrument testing as part of a build system or adopt a lockfi
 
 * It is quite common for large organizations to monitor applications via Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
 * As developers become familiar with Snyk capabilities, they widen the scope of applications with PR checks for gating.
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../integrations/ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../integrate-with-snyk/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 
 ### Gradle Projects without a lock file
 
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../integrations/ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../integrate-with-snyk/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 * Gating and failing the build typically will be turned on one Project to start so that everyone can become familiar with the process and use passive monitoring for the remainder of the portfolio.
 
 ## Snyk CLI Tips and Tricks

@@ -74,7 +74,7 @@ Choose the settings under **Default Snyk test for pull requests**:
 
 See the[ Source Code Manager Configurations](https://training.snyk.io/courses/source-code-manager-configurations?query=Source%20code) training course for details on how to match these integration settings with your security maturity phase.
 
-See also [Integrate with Snyk](../integrations/) for more details.
+See also [Integrate with Snyk](../integrate-with-snyk/) for more details.
 
 ### Define your default license policy
 
@@ -132,7 +132,7 @@ Based on the nuances of the tech stack you are using, you will want to set your 
 
 Integrate your Organization with Jira to assist with logging tickets and addressing backlogged security issues.
 
-See also [Jira integration](../integrations/notifications-ticketing-system-integrations/jira.md).
+See also [Jira integration](../integrate-with-snyk/notifications-ticketing-system-integrations/jira.md).
 
 ## Invite members
 

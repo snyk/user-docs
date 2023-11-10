@@ -11,7 +11,7 @@ Then you can import the required repositories to your Snyk account, and Snyk Cod
 {% hint style="info" %}
 Snyk Code temporarily clones your repositories for code analysis. This requires appropriate permissions and HTTPS access to your SCM.
 
-For more information on how data is stored in Snyk, see [How Snyk handles your data](../../../more-info/how-snyk-handles-your-data.md). For more details about integrations, see [Integrate with Snyk](../../../integrations/).
+For more information on how data is stored in Snyk, see [How Snyk handles your data](../../../more-info/how-snyk-handles-your-data.md). For more details about integrations, see [Integrate with Snyk](../../../integrate-with-snyk/).
 {% endhint %}
 
 To integrate your SCM with your Snyk account:
@@ -36,6 +36,6 @@ The **Source control** integrations display only SCMs that are supported by Snyk
 
 This grants Snyk access permissions for the integrated SCM.
 
-For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../../integrations/git-repository-scm-integrations/).
+For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../../integrate-with-snyk/git-repository-scm-integrations/).
 
 After you have integrated the SCM with your Snyk account, you can import the repositories you want to scan using Snyk Code.
