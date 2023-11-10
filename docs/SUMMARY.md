@@ -143,7 +143,6 @@
       * [Snyk Git repositories: deployment recommendations](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md)
       * [View and understand Snyk upgrade pull requests](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/view-and-understand-snyk-upgrade-pull-requests.md)
       * [Opening fix and upgrade pull requests from a fixed GitHub account](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
-      * [Disable a Git integration](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/disable-a-git-integration.md)
     * [Snyk GitHub Enterprise integration](integrations/git-repository-scm-integrations/github-enterprise-integration.md)
     * [Snyk GitHub integration](integrations/git-repository-scm-integrations/snyk-github-integration.md)
     * [Snyk GitHub Read-only Projects](integrations/git-repository-scm-integrations/snyk-github-read-only-projects.md)
