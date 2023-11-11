@@ -1261,4 +1261,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-11-03T15:50:13.054Z
+--- Generated at 2023-11-11T18:40:39.103Z
