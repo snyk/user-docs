@@ -6,6 +6,8 @@ To associate the Snyk CLI for use with your Snyk account, you must first authent
 Free and Team users have access to personal tokens only. Personal tokens are recommended for use with IDEs and the local CLI.&#x20;
 
 Snyk recommends that Enterprise customers use a service token to authenticate with a CI/CD. Avoid using a service token with an IDE.
+
+For details, see [How to obtain and authenticate with your Snyk API token](../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
 {% endhint %}
 
 ## Methods of authenticating with Snyk
