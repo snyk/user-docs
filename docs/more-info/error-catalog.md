@@ -396,14 +396,14 @@ Then try and run the above mentioned commands and see if your SCM system reports
 
 ### [SNYK-OS-GO-0007](#snyk-os-go-0007)
 
-#### Authorization problem with private dependencies
+#### Unable to access private dependencies
 
-The Go tool encountered a `DepsError` while trying to download a private dependency. Private repositories that are not accessible to the public internet, and this not available on the official Go proxy mirror, are cloned with a version control system and built on-demand. 
+The Go tool encountered a `DepsError` while trying to download a private dependency. Private repositories that are not accessible to the public internet and are not available on the official Go proxy mirror are cloned with a version control system and built on demand. 
 This requires the VCS to have the correct access rights to that repository.
 
-Snyk supports private repositories hosted on the same organization and the project being scanned for vulnerabilities. The authentication Snyk uses, is the same as the one you have used with your Snyk integration to the same repository. 
+Snyk supports private repositories that are hosted in the same Organization and on the same Project that is scanned for vulnerabilities. The authentication to the private repository is the same as the authentication used to integrate that repository with Snyk. 
 
-If those credentials are not allowed to access the private dependency being requested, this error is thrown.
+This error appears when the authorization credentials do not allow access to the requested private dependency. 
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1266,4 +1266,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-11-13T08:38:08.794Z
+--- Generated at 2023-11-13T14:47:58.765Z
