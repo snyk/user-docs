@@ -10,7 +10,7 @@ After the CLI is installed, you are prompted to authenticate and connect the Jet
 
 Click **Test code now**. The plugin relies on the Snyk CLI, which authenticates your machine against the Snyk Web UI.
 
-Click **Authenticate** when prompted by Snyk.
+Click **Authenticate** when prompted by Snyk. If you must enter your token, use your personal token. For more information, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
 
 <figure><img src="../../../.gitbook/assets/authenticate-23-06.png" alt="Authenticate"><figcaption><p>Authenticate</p></figcaption></figure>
 

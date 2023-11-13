@@ -8,7 +8,7 @@ You can also authenticate using Options. Open Visual Studio **Options** and go t
 
 ![Options and settings button](../../../.gitbook/assets/readme\_image\_2\_5.png)
 
-If the automated method does not work, you can trigger authentication by pressing the **Authenticate** button or entering the user API [token](../../../snyk-api-info/authentication-for-api.md) manually. You can also submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
+If the automated method does not work, you can trigger authentication by pressing the **Authenticate** button or entering the user API [token](../../../snyk-api-info/authentication-for-api.md) manually. If you must enter your token, use your personal token. For more information, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md). You can also submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
 
 ![Token field and Authenticate button](../../../.gitbook/assets/readme\_image\_2\_6.png)
 

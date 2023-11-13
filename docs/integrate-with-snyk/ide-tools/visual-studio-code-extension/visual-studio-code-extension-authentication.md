@@ -13,7 +13,7 @@ To authenticate follow these steps:
 
     <img src="../../../.gitbook/assets/image (147) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
 3. Click **Authenticate**.
-4.  After successful authentication, view the confirmation message. If you need to authenticate using your API token, see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-the-cli-with-your-account.md).
+4.  After successful authentication, view the confirmation message. If you need to authenticate using your API token, [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md). Be sure to use your personal token.
 
     <img src="../../../.gitbook/assets/image (154) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="" data-size="original">
 5. Close the browser window and return to VS Code. VS Code is now reading and saving the authentication on your local machine.

@@ -214,3 +214,4 @@ All plugin parameters from v1 should be moved to the `<args>` object, to keep th
 
 For a list of supported arguments, see Configuration.
 
+***

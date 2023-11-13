@@ -8,7 +8,8 @@ Once the CLI is downloaded you will be redirected to the browser to authenticate
 
 ![Notification, browser window opening for authentication](<../../../.gitbook/assets/Screenshot 2022-05-13 at 11.29.37.png>)
 
-* When you are redirected to the browser for authentication, click **Authenticate**.
+* When you are redirected to the browser for authentication, click **Authenticate**.\
+  If you must enter your token, use your personal token. For more information, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
 
 <figure><img src="../../../.gitbook/assets/authenticate-23-06.png" alt="Authenticate"><figcaption><p>Authenticate</p></figcaption></figure>
 
