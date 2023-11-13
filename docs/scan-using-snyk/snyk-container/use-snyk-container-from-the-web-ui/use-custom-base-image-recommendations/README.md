@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-This feature is currently in Beta. If you are interested in participating, contact your Snyk account team.
+This feature is currently in Open Beta and is available for the Snyk Enterprise plan.
 {% endhint %}
 
 ## **Overview of Custom Base Image Recommendations (CBIR)**
