@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. For more details, see [pricing plans](https://snyk.io/plans/).
+This feature is available with the Enterprise plan. For details, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 ## Set up the Kubernetes integration for your Organization

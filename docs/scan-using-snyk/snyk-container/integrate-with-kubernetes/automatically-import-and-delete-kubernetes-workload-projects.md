@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-This feature is still in beta. Auto import and deletion are not guaranteed and can depend on the network.
+This feature is still in Beta. Auto import and deletion are not guaranteed and can depend on the network.
 
 If you don't find your workload in Snyk, please import the workload manually.
 

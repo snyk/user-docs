@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. For more details, see [pricing plans](https://snyk.io/plans/).
+This feature is available with the Enterprise plan. For details, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk is able to integrate with Kubernetes, enabling you to import and scan your running workloads. This helps you identify vulnerabilities in their associated images and configurations that can make those workloads less secure. After workloads are imported, Snyk continues to monitor them and to identify additional security issues as new images are deployed and the workload configuration changes.

@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. For details, see [pricing plans](https://snyk.io/plans/).
+This feature is available with the Enterprise plan. For details, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk can integrate with self-hosted private container registries that do not have internet access and can help you to better secure container images in those registries.
