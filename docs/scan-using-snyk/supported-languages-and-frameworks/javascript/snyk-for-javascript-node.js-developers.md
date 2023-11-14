@@ -35,7 +35,7 @@ If your Projects reference private dependencies in these repositories but you ar
 For more information, see the following:
 
 * Package registry integrations: [npm Teams and npm Enterprise](../../../integrate-with-snyk/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md), [Artifactory Registry setup](../../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/) and [Nexus Repository Manager setup](../../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/).
-* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../integrate-with-snyk/gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md) and [Nexus Repository Manager Gatekeeper plugin](../../../integrate-with-snyk/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
+* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../integrate-with-snyk/gatekeeper-plugins/artifactory-gatekeeper-plugin.md) and [Nexus Repository Manager Gatekeeper plugin](../../../integrate-with-snyk/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
 
 ## Language and package manager considerations
 
