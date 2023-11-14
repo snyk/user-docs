@@ -15,7 +15,7 @@ If you move a Project between Organizations, the Project will also be removed fr
 
 ## Select all filtered Projects that are visible to create a Project collection
 
-1.  On your Projects page, select the **Collections** tab, and click **Create collection.**
+1.  On your Projects page, select the **Collections** tab, and click the  **Create collection** button at the end of the search field.
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 11.55.20.png" alt="Enter the Collections listing page"><figcaption><p>Enter the Collections listing page</p></figcaption></figure>
 2.  Enter a name for your collection in the **Name** field, then click **Create collection**.&#x20;
