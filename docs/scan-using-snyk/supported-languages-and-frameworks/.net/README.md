@@ -10,9 +10,9 @@ You might encounter false positives or false negatives for partially supported f
 
 Snyk Code supports the following frameworks:
 
-* NET Framework
-* ASP.NET (version 6.x)
-* .NET Core:
+* .NET Framework 4.6-4.8.x
+* ASP.NET 6.x
+* .NET 6
 
 ### Open source and licensing
 
