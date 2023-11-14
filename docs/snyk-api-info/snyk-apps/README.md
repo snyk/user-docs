@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Snyk Apps are in beta and only an App’s developer (Snyk Organization) can install the Snyk App they created. Snyk wants to learn more about what the community needs before launching the Snyk App marketplace.
+Only an App’s developer (Snyk Organization) can install the Snyk App they created. Snyk wants to learn more about what the community needs before launching the Snyk App marketplace.
 {% endhint %}
 
 Snyk Apps are integrations that extend the functionality of the Snyk platform, allowing you to create a Snyk experience to suit your specific needs. For example, a Snyk App might automate Snyk’s [application security testing](https://snyk.io/learn/application-security/testing/) as part of a build tool. Another Snyk App might stream Snyk’s security testing results into an incident management tool.
