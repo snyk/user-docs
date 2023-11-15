@@ -1,12 +1,12 @@
 # Getting started with current IaC
 
 {% hint style="info" %}
-The information on this page applies to current IaC. If you are using IaC+, see [Getting started with IaC+](getting-started-with-iac+-and-cloud-scans/).
+The information on this page applies to current IaC. If you are using IaC+, see [Getting started with IaC+](../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/).
 {% endhint %}
 
 You can use Snyk IaC (Infrastructure as Code) in the [Snyk Web UI](broken-reference) to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/).
 
-On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md). These steps are specific to the current IaC. See also [Getting started with IaC+](getting-started-with-iac+-and-cloud-scans/).
+On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/scan-arm-configuration-files.md). These steps are specific to the current IaC. See also [Getting started with IaC+](../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/).
 
 ## **Prerequisites for Snyk IaC**
 
@@ -18,12 +18,12 @@ Before using Snyk IaC, be sure you have the prerequisites as follows:
 
 For more information about IaC and supported environments, see the following pages:
 
-* [Configure your integration to find security issues in your Terraform files](scan-your-iac-source-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-files-current-iac.md)
-* [Configure your integration to find security issues in your CloudFormation files](scan-your-iac-source-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files-current-iac.md)
-* [Configure your integration to find security issues in your Kubernetes configuration files](scan-your-iac-source-code/scan-kubernetes-configuration-files/configure-integration-to-find-security-issues-in-kubernetes-configuration-files-current-iac.md)
+* [Configure your integration to find security issues in your Terraform files](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-files-current-iac.md)
+* [Configure your integration to find security issues in your CloudFormation files](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files-current-iac.md)
+* [Configure your integration to find security issues in your Kubernetes configuration files](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/scan-kubernetes-configuration-files/configure-integration-to-find-security-issues-in-kubernetes-configuration-files-current-iac.md)
 
 {% hint style="info" %}
-You must use the Snyk CLI to scan ARM configuration files. See [Scan ARM configuration files](scan-your-iac-source-code/scan-arm-configuration-files.md).
+You must use the Snyk CLI to scan ARM configuration files. See [Scan ARM configuration files](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/scan-arm-configuration-files.md).
 {% endhint %}
 
 ## Import IaC Projects

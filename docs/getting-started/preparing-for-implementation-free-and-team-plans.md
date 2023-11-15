@@ -1,7 +1,7 @@
 # Preparing for implementation: Free and Team plans
 
 {% hint style="info" %}
-See [Getting started with Snyk: Free and Team plans](getting-started-with-snyk-free-and-team-plans.md) before you read this guide.
+See [Getting started with Snyk: Free and Team plans](getting-started-with-snyk-free-team-plan.md) before you read this guide.
 {% endhint %}
 
 These pages explain a few planning steps to follow before you implement Snyk beyond your local Project.

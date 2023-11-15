@@ -55,7 +55,7 @@ Each Snyk product has specific commands and options. Ensure you are using the co
 For more information, see the following pages:
 
 * [Use Snyk Open Source from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
-* [Use Snyk Code from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
+* [Use Snyk Code from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/)
 * [Use Snyk Container from the CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
 * [Snyk CLI for IaC](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)
 
@@ -64,7 +64,7 @@ For more information, see the following pages:
 After you finish running a Snyk CLI scan, the results are displayed in the terminal. The following pages explain the results for Snyk Open Source, Snyk Code, and Snyk Container scans:
 
 * [Review the Snyk Open Source CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/review-the-snyk-open-source-cli-results.md)
-* [Working with the Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/working-with-the-snyk-code-cli-results.md)
+* [Working with the Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/working-with-the-snyk-code-cli-results.md)
 * [Understand Snyk Container CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/understanding-snyk-container-cli-results.md)
 
 ## Scan using the Web UI

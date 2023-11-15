@@ -4,7 +4,7 @@ Before you can create a Cloud Environment, you must download an infrastructure a
 
 The template also enables a set of [Google service APIs](https://cloud.google.com/service-usage/docs/enabled-service) for your Google Cloud Project. This ensures that Snyk can use the necessary APIs to scan your Project's resources.
 
-You will use this IaC template to provision the role in [Step 2: Create the Google service account](../../../cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-web-ui/step-2-create-the-google-service-account-api.md).
+You will use this IaC template to provision the role in [Step 2: Create the Google service account](step-2-create-the-google-service-account-api.md).
 
 ## Download the IaC template
 
@@ -14,8 +14,8 @@ You will use this IaC template to provision the role in [Step 2: Create the Goog
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2023-07-18 um 12.16.54 (1) (1).png" alt="The Snyk Cloud Add Google Cloud Environment modal"><figcaption><p>The Add Google Cloud Environment modal</p></figcaption></figure>
 
-You can now proceed to [Step 2: Create the Google service account.](../../../cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-web-ui/step-2-create-the-google-service-account-api.md)
+You can now proceed to [Step 2: Create the Google service account.](step-2-create-the-google-service-account-api.md)
 
 {% hint style="info" %}
-You can also add a cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments, Add a Cloud environment](../../../../scan-using-snyk/scan-infrastructure/getting-started-with-iac+-and-cloud-scans/snyk-environments/view-add-and-remove-environments.md#add-an-environment).
+You can also add a cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments, Add a Cloud environment](../../../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/snyk-environments/view-add-and-remove-environments.md#add-an-environment).
 {% endhint %}

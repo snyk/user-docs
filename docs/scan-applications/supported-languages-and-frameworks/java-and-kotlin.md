@@ -36,7 +36,7 @@ Some features might not be available, depending on your pricing plan. See [prici
 {% hint style="info" %}
 Gradle Projects imported via Git are tested by parsing `build.gradle` files. You can resolve Gradle dependencies only by executing the tool itself, but even this method can sometimes provide incomplete results.
 
-If possible, enable [lockfiles](./#git-services-for-gradle-projects) in your Gradle Project to improve the accuracy of Git imports.
+If possible, enable [lockfiles](java-and-kotlin.md#git-services-for-gradle-projects) in your Gradle Project to improve the accuracy of Git imports.
 
 Snyk recommends using the Snyk CLI to test Gradle Projects for the most accurate results.
 {% endhint %}
@@ -91,8 +91,8 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
-2. [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
+1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 3. [Set the default Organization for all Snyk tests](broken-reference) (code analysis)
 4. Install the relevant package manager before you use the Snyk CLI.
 5. Include the relevant manifest files supported by Snyk before testing.
@@ -107,14 +107,14 @@ snyk code test
 
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
-* [Snyk CLI commands](../../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
+* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
 * [Explore test results in a JSON or SARIF format in the terminal ](broken-reference)
 * [Exporting the test results to a JSON or SARIF file](broken-reference)
 
 #### Open source and licensing
 
-The following table lists the steps to start scanning your dependencies. It covers basic commands, such as `snyk test` and `snyk monitor`. To check the full list, see [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md).&#x20;
+The following table lists the steps to start scanning your dependencies. It covers basic commands, such as `snyk test` and `snyk monitor`. To check the full list, see [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).&#x20;
 
 {% hint style="info" %}
 To scan your dependencies, ensure you install the relevant package manager and that your Project contains the supported manifest files.
@@ -135,7 +135,7 @@ This section describes the unique CLI commands available when working with Java-
 
 * Install the relevant package manager before you use the Snyk CLI.
 * Include the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing Projects from your local environment. See [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-snyk-cli.md).
+* Install and authenticate the Snyk CLI to start analyzing Projects from your local environment. See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md).
 
 #### Snyk CLI options for Maven and Gradle
 
@@ -146,7 +146,7 @@ For information about the `snyk test` and `snyk monitor` options available for u
 | Maven               | <p><code>--maven-aggregate-project</code><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="https://docs.snyk.io/snyk-cli/commands/test#options-for-maven-projects">Options for Maven Projects</a> page for more details.<br><br>Example for aggregate projects:<br><code>snyk test --maven-aggregate-project</code><br><br>Example for non-aggregate projects: <code>snyk test --all-projects</code><br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> Be sure to execute the options in the same directory as the root pom.xml file. </p>                                                                                                                                                                                                                                                                                                                                                                                                     | <p><code>--maven-aggregate-project</code><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="https://docs.snyk.io/snyk-cli/commands/monitor#options-for-maven-projects">Options for Maven Projects</a> page for more details.<br><br>Example for aggregate projects:<br><code>snyk monitor --maven-aggregate-project</code><br><br>Example for non-aggregate projects: <code>snyk monitor --all-projects</code><br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> Be sure to execute the options in the same directory as the root pom.xml file. </p>                                                                                                                                                                                                                                                                                                                                                                                  |
 | Gradle              | <p><code>--sub-project=&#x3C;NAME></code>, <code>--gradle-sub-project=&#x3C;NAME></code> - Test a specific Gradle sub-project.</p><p></p><p><code>--all-sub-projects</code> - Test all Gradle sub-projects.</p><p></p><p><code>--all-projects</code> - Test all Gradle projects.</p><p></p><p><code>--configuration-matching=&#x3C;CONFIGURATION_REGEX></code> - Resolve dependencies using only configuration(s) that match the specified Java regular expression.</p><p></p><p>-<code>-configuration-attributes=&#x3C;ATTRIBUTE>[,&#x3C;ATTRIBUTE>]...</code>- Select certain values of configuration attributes to install and resolve dependencies.</p><p></p><p><code>--init-script=&#x3C;FILE></code> - Used for projects with a Gradle initialization script.</p><p></p><p><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="https://docs.snyk.io/snyk-cli/commands/test#options-for-gradle-projects">Options for Gradle Projects </a>page for more details.</p><p></p> | <p><code>--sub-project=&#x3C;NAME></code>, <code>--gradle-sub-project=&#x3C;NAME></code> - Monitor a specific Gradle sub-project.</p><p></p><p><code>--all-sub-projects</code> - Monitor all Gradle sub-projects.</p><p></p><p><code>--all-projects</code> - Monitor all Gradle projects.</p><p></p><p><code>--configuration-matching=&#x3C;CONFIGURATION_REGEX></code> - Resolve dependencies using only configuration(s) that match the specified Java regular expression.</p><p></p><p><code>--configuration-attributes=[,]...</code> - Select certain values of configuration attributes to install dependencies and perform dependency resolution.</p><p></p><p><code>--init-script=&#x3C;FILE></code> - Used for projects with a Gradle initialization script.<br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="https://docs.snyk.io/snyk-cli/commands/monitor#options-for-gradle-projects">Options for Gradle Projects</a> page for more details.</p> |
 | Build tools         | <p><code>snyk test -- [&#x3C;context-specific_options>]</code><br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="https://docs.snyk.io/snyk-cli/commands/test#options-for-build-tools">Options for build tools</a> page for more details.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | <p><code>snyk monitor -- [&#x3C;context-specific_options>]</code><br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="https://docs.snyk.io/snyk-cli/commands/monitor#options-for-build-tools">Options for build tools</a> page for more details.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Unmanaged JAR files | <p><code>--scan-unmanaged</code> - Test unmanager files <br></p><p><code>--scan-unmanaged --file=&#x3C;JAR_FILE_NAME></code> - Test individual JAR, WAR, and AAR files<br></p><p><code>--scan-all-unmanaged</code> - Auto-detect Maven, JAR, WAR, and AAR files recursively from the current folder.<br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="../../../snyk-cli/commands/test.md#scan-all-unmanaged">Options for unmanaged JAR files</a> page for more details. </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | <p><code>--sub-project=&#x3C;NAME></code>, <code>--gradle-sub-project=&#x3C;NAME></code> - Monitor a specific Gradle sub-project.</p><p></p><p><code>--all-sub-projects</code> - Monitor all Gradle sub-projects.</p><p></p><p><code>--all-projects</code> - Monitor all Gradle projects.</p><p></p><p><code>--configuration-matching=&#x3C;CONFIGURATION_REGEX></code> - Resolve dependencies using only configuration(s) that match the specified Java regular expression.</p><p></p><p><code>--init-script=&#x3C;FILE></code> - Used for projects with a Gradle initialization script.<br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="../../../snyk-cli/commands/monitor.md#scan-all-unmanaged">Options for unmanaged JAR files</a> page for more details.</p>                                                                                                                                                                                          |
+| Unmanaged JAR files | <p><code>--scan-unmanaged</code> - Test unmanager files <br></p><p><code>--scan-unmanaged --file=&#x3C;JAR_FILE_NAME></code> - Test individual JAR, WAR, and AAR files<br></p><p><code>--scan-all-unmanaged</code> - Auto-detect Maven, JAR, WAR, and AAR files recursively from the current folder.<br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="../../snyk-cli/commands/test.md#scan-all-unmanaged">Options for unmanaged JAR files</a> page for more details. </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | <p><code>--sub-project=&#x3C;NAME></code>, <code>--gradle-sub-project=&#x3C;NAME></code> - Monitor a specific Gradle sub-project.</p><p></p><p><code>--all-sub-projects</code> - Monitor all Gradle sub-projects.</p><p></p><p><code>--all-projects</code> - Monitor all Gradle projects.</p><p></p><p><code>--configuration-matching=&#x3C;CONFIGURATION_REGEX></code> - Resolve dependencies using only configuration(s) that match the specified Java regular expression.</p><p></p><p><code>--init-script=&#x3C;FILE></code> - Used for projects with a Gradle initialization script.<br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ</span> See the <a href="../../snyk-cli/commands/monitor.md#scan-all-unmanaged">Options for unmanaged JAR files</a> page for more details.</p>                                                                                                                                                                                             |
 
 {% hint style="info" %}
 Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
@@ -350,15 +350,15 @@ The following table includes the Git services available for Maven and Gradle Pro
 
 #### Git settings for Java
 
-From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
+From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
 
 The following table includes the Git services available for Maven and Gradle Projects.&#x20;
 
 ### Snyk Web UI (Git repository integration)
 
-You can import Java repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../../integrate-with-snyk/git-repository-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
+You can import Java repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../integrate-with-snyk/git-repository-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
-:link: [How Snyk works for open source and licensing](../introduction-to-snyk-supported-languages-and-frameworks.md#how-snyk-works-for-open-source-and-licensing)
+:link: [How Snyk works for open source and licensing](../../scan-using-snyk/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md#how-snyk-works-for-open-source-and-licensing)
 
 #### Import Project
 
@@ -370,7 +370,7 @@ To import Projects from a Git repository integration:
    \
    If you have an integrated Git repository (GitHub) it shows up as an option to choose from.
 
-:link: [Import a Project](../../../getting-started/quickstart/import-a-project.md)
+:link: [Import a Project](../../getting-started/quickstart/import-a-project.md)
 
 #### Configure language settings for open source&#x20;
 
@@ -395,7 +395,7 @@ The following capabilities are available for all Snyk users:
 
 **With Git integrations**
 
-Snyk allows you to [run PR Checks](../../run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
+Snyk allows you to [run PR Checks](../../scan-using-snyk/run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
 
 These results are viewable on the Snyk projects screen, for:
 
@@ -421,7 +421,7 @@ Snyk provides flexible capabilities, including:
 * Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
 * Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
 * The Snyk CLI can be used in most CI/CD systems (see [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
-  * Fail the build based on criteria using options or the [snyk-filter](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) tool
+  * Fail the build based on criteria using options or the [snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) tool
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
 * With Partner Platforms: Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk.
   * Note for Java: using the Git integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe is suggested.
@@ -429,7 +429,7 @@ Snyk provides flexible capabilities, including:
 #### Production monitoring
 
 * (Snyk Enterprise plan only) Snyk can monitor container images and their open source or Linux based packages being used in production using Kubernetes integration, to notify customers of known vulnerabilities for applications in production.
-* (All plans) Where a production integration does not exist, use the [snyk monitor](../../../snyk-cli/commands/monitor.md) CLI command to take a snapshot and monitor what is being pushed to production.
+* (All plans) Where a production integration does not exist, use the [snyk monitor](../../snyk-cli/commands/monitor.md) CLI command to take a snapshot and monitor what is being pushed to production.
 
 #### Package Registry Integrations (Artifactory/Nexus) - Maven
 
@@ -437,7 +437,7 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 
 * Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.
 * Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
-* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/)
+* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/) and [Artifactory Registry setup](../../integrate-with-snyk/package-repository-integrations/artifactory-repository-setup/)
 
 {% hint style="info" %}
 If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis is best performed using CLI as the build system will retrieve the dependencies and be present locally.
@@ -445,15 +445,15 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 
 #### What's next?
 
-* [Open a Fix PR](./#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../run-pr-checks/configure-pr-checks.md)
+* [Open a Fix PR](java-and-kotlin.md#open-a-fix-pr)&#x20;
+* [Configure PR Checks](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../../integrate-with-snyk/ide-tools/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/ide-tools/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../../snyk-api/)).
+:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 
 ## Help
 
-:link: See [best practices](snyk-for-java-developers.md) and [FAQ about Java](faq-about-java.md).
+:link: See [best practices](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/snyk-for-java-developers.md) and [FAQ about Java](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/faq-about-java.md).

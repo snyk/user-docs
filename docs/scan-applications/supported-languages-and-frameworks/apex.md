@@ -31,14 +31,14 @@ snyk code test
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
 * [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
+* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
 * [Explore test results in a JSON or SARIF format in the terminal ](broken-reference)
 * [Exporting the test results to a JSON or SARIF file](broken-reference)
 
 #### What's next?
 
 * [Open a Fix PR](apex.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

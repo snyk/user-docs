@@ -8,5 +8,5 @@ The steps follow to onboard a Google Cloud Project to Snyk via the Web UI:
 
 When you have completed the steps, you wlll be able to do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-using-snyk/scan-infrastructure/getting-started-with-iac+-and-cloud-scans/cloud-and-integrated-iac-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/cloud-and-integrated-iac-issues/).
 * Prioritize your vulnerabilities with cloud context.

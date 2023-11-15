@@ -4,7 +4,7 @@
 **Feature availability**\
 This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.\
 For the availability of this feature for Snyk Infrastructure as Code, see [Jira Integration for IaC](../../scan-using-snyk/scan-infrastructure/snyk-iac-integrations/jira-integration-for-iac.md).\
-[Snyk Security in Jira Cloud](snyk-security-in-jira-cloud-integration.md) is now available.
+[Snyk Security in Jira Cloud](../../integrations/notifications-ticketing-system-integrations/snyk-security-in-jira-cloud-integration.md) is now available.
 {% endhint %}
 
 ## **Set up your Jira integration**

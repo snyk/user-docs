@@ -18,7 +18,7 @@ If you are on an [Enterprise plan](../more-info/plans.md), see [Enterprise setup
 
 ## Tutorials
 
-* [Getting started with Snyk: Free/Team plan](getting-started-with-snyk-free-and-team-plans.md)
+* [Getting started with Snyk: Free/Team plan](getting-started-with-snyk-free-team-plan.md)
 * [Preparing for implementation: Free/Team plan](preparing-for-implementation-free-and-team-plans.md)
 * [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/)
 
