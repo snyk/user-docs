@@ -2,7 +2,7 @@
 
 The `.snyk` file is a YAML [policy](./) file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins.
 
-The file can be generated in a number of ways and can be used in a number of different scenarios. The `.snyk` file is generally located at the root of your Project.
+The file can be generated in a number of ways and can be used in a number of different scenarios. The `.snyk` file is generally located at the root of your Project, however for SCM imports, the `.snyk` file must be in the same directory as any manifest file to which it relates. See [Monorepos and complex Project considerations](the-.snyk-file.md#monorepos-and-complex-project-considerations).&#x20;
 
 This page provides detailed information about the contents and use of the `.snyk` file, as well as about creating the file.
 
