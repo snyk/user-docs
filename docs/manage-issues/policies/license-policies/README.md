@@ -15,3 +15,5 @@ The default policy does not endorse or criticize any license and should not be t
 {% endhint %}
 
 Any new Organizatione created in your Group are automatically added to the default policy. When an Organization is created, it can be moved to a different policy.
+
+For more information, see [Open Source Licenses: Types and Comparison](https://snyk.io/learn/open-source-licenses/).
