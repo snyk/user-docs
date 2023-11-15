@@ -1,6 +1,11 @@
 # Setup steps for AWS CodePipeline
 
-You can initiate Snyk AWS CodePipeline integration directly from the AWS CodePipeline console.\
+You can initiate Snyk AWS CodePipeline integration directly from the AWS CodePipeline console.
+
+{% hint style="info" %}
+Snyk integration with CodePipeline requires a UI based authentication step as part of the setup. This is not compatible with automation with non-interactive setup methods such as CloudFormation or Terraform.
+{% endhint %}
+
 Follow these steps to add Snyk to a new or existing pipeline:
 
 ## Step 1: Add stage
@@ -23,7 +28,7 @@ Click **Connect with Snyk** to begin the connection process.
 
 ## Step 3: Connect to Snyk
 
-Select how you would like to authenticate with Snyk to give AWS CodePipeline permission to begin scanning your open source code.
+Select how you would like to authenticate with Snyk to give AWS CodePipeline permission to begin scanning your open-source code.
 
 ![Snyk log-in screen](../../../.gitbook/assets/snyk-cp-int-config.png)
 
@@ -43,7 +48,7 @@ The following options are available for configuration:
     * **When test passes**: The project snapshot is created only when the test is successful.
     * **Never monitor**: The project snapshot is never created.
 
-    Unless the **Never monitor** option is selected, the **Project to monitor** field is mandatory. This is to prevent any unintentional project overrides due to naming conflicts. The report is created associated with the selected **Snyk organization**.
+    Unless the **Never monitor** option is selected, the **Project to monitor** field is mandatory. This is to prevent any unintentional project overrides due to naming conflicts. The report is created and associated with the selected **Snyk organization**.
 * **Project to monitor**: Specify the project group name for your projects. This is the same as using the [remote-repo-url](https://support.snyk.io/hc/en-us/articles/360000910677-Snyk-CLI-monitored-projects-are-created-with-IDs-in-the-project-name) option in the CLI. The field does not allow any spaces in the names. This field is mandatory except when the **Never monitor** option has been selected.
 * **Auto-detect all projects in the working directory**: Check this checkbox to auto-detect all projects in the AWS CodePipeline. If this option is not selected the plugin tests the first project it finds because it is using the `--all-projects` option to detect all projects.
 * **Advanced options** (all of them are optional):

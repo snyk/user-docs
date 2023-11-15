@@ -14,3 +14,7 @@ For setup and use details, see the following pages:
 * [Setup steps for AWS CodePipeline](setup-steps-for-aws-codepipeline.md)
 * [View AWS CodePipeline scan results](view-aws-codepipeline-scan-results.md)
 * [AWS CodePipeline test report results](aws-codepipeline-test-report-details.md)
+
+{% hint style="info" %}
+Snyk integration with AWS CodePipeline requires a UI-based authentication step as part of the setup. This is not compatible with automation done by non-interactive setup methods such as CloudFormation or Terraform.
+{% endhint %}
