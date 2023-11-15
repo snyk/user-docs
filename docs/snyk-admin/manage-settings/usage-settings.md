@@ -4,7 +4,7 @@ In your Group or Organization, elect **Settings** > **Usage** to view Snyk usage
 
 * [Test usage](usage-settings.md#test-usage): the number of tests used
 * [Contributing developers](usage-settings.md#contributing-developers): the number of developers contributing to Projects
-* [Projects](usage-settings.md#projects): Project test usage settings (can be viewed and modified)
+* [Projects](usage-settings.md#projects): Project test usage settings (can be viewed and modified). See [Test frequency settings](../introduction-to-snyk-projects/#test-frequency-settings) in the Projects documentation.
 
 ## Test usage
 
