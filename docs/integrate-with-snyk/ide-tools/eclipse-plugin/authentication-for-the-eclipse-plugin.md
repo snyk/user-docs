@@ -1,39 +1,39 @@
 # Authentication for the Eclipse plugin
 
-Once the CLI is downloaded you will be redirected to the browser to authenticate and then connect the IDE with your account.
+After the CLI is downloaded, you are redirected to the browser to authenticate and then connect the IDE with your account.
 
 ## Steps in authentication
 
-* You get a notification that a browser window will open (lower right).
+You get a notification that a browser window will open (lower right).
 
-![Notification, browser window opening for authentication](<../../../.gitbook/assets/Screenshot 2022-05-13 at 11.29.37.png>)
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-13 at 11.29.37.png" alt="Notification browser window will open for authentication"><figcaption><p>Notification, browser window opening for authentication</p></figcaption></figure>
 
-* When you are redirected to the browser for authentication, click **Authenticate**.\
-  If you must enter your token, use your personal token. For more information, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+* When you are redirected to the browser for authentication, click **Authenticate**.
+
+When you are redirected to the browser for authentication, click **Authenticate**.
 
 <figure><img src="../../../.gitbook/assets/authenticate-23-06.png" alt="Authenticate"><figcaption><p>Authenticate</p></figcaption></figure>
 
-* You should see a confirmation message that authentication is complete and you can now use Snyk.
+You should see a confirmation message that authentication is complete and you can now use Snyk.
 
 <figure><img src="../../../.gitbook/assets/authentication-complete-23-06.png" alt="Authenticated"><figcaption><p>Authenticated</p></figcaption></figure>
 
-* Going back to the IDE, you should see a confirmation that the IDE has been successfully connected and the API token has been securely stored (lower right).
+Return to the IDE. You should see a confirmation that the IDE has been successfully connected and the API token has been securely stored (lower right).
 
-![Confirmation of connection](<../../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.54.png>)
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.54.png" alt="Confirmation of connection"><figcaption><p>Confirmation of connection</p></figcaption></figure>
 
 To verify that the Eclipse plugin is ready to start scanning, be sure the Snyk preferences show the following after the downloads and the authentication are done:
 
-* Language server path that the Eclipse plugin will use
 * Snyk CLI path that the Eclipse plugin will use
 * Snyk API token, securely stored through the Eclipse's secure storage mechanism
 
-![Snyk preferences](<../../../.gitbook/assets/image (132) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png>)
+<figure><img src="../../../.gitbook/assets/image.png" alt="CLI path and API token in preferences"><figcaption><p>CLI path and API toekn in preferences</p></figcaption></figure>
 
 ## Configure the API token manually
 
 You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set.
 
-![Configure token](<../../../.gitbook/assets/image (127).png>)
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Set the API token"><figcaption><p>Set the API token</p></figcaption></figure>
 
 ## Next steps
 
