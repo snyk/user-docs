@@ -47,39 +47,4 @@ An example of the count of contributing developers follows:
 
 Each contributor is **counted by** the **author** email field, which is set within the local Git configuration in the developer’s machine.
 
-## Projects
-
-The **Projects** section shows test usage settings for your Projects:
-
-### Bulk actions settings
-
-For **Bulk actions**, select the relevant Projects; then, for the selected Projects, select **Delete**, **Activate,** or **Deactivate**:
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/usage-projects-bulk-actions.png" alt="Bulk actions on Projects" width="563"><figcaption><p>Bulk actions on Projects</p></figcaption></figure>
-
-</div>
-
-### Test frequency settings
-
-You can set the frequency of testing for each Project.&#x20;
-
-For each entry, you can select the frequency of testing for that Project (`never`, `daily`, or `weekly`) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/usage-projects-single.png" alt="Select test frequency"><figcaption><p>Select test frequency</p></figcaption></figure>
-
-</div>
-
-{% hint style="info" %}
-The default test frequency and limitations are as follows:
-
-* Open Source: The default is daily.
-* Code analysis Projects: The default is weekly; daily is not available. To test your code daily, submit a request to [Snyk Support.](https://support.snyk.io/hc/en-us/requests)
-* Container: The default is daily.
-* IaC: The default is weekly.
-{% endhint %}
-
-Click **Deactivate** to never test, and also remove webhooks and stop showing the Project’s results in reporting.
+###

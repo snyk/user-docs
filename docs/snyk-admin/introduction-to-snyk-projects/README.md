@@ -95,3 +95,34 @@ The Targetfile is the specific item to scan in a Target, such as a `pom.xml` fil
 ## Type
 
 The Type is the scanning method to use for a particular Project, such as Static Application Security Testing ([SAST](https://snyk.io/learn/application-security/sast-vs-dast/)) for scanning using Snyk Code, or Maven for a Maven project using Snyk Open Source. This is part of the configuration for scanning.
+
+## Project actions in the Project Listing Page
+
+### Delete, Activate, or Deactivate
+
+To perform an action at bulk on your Projects, first select the Projects and then choose to **Delete**, **Activate,** or **Deactivate** the Projects.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.37.png" alt=""><figcaption><p>Deleting Projects in bulk</p></figcaption></figure>
+
+### Test frequency settings
+
+You can set the frequency of testing for each Project.&#x20;
+
+For each entry, you can select the frequency of testing for that Project (`never`, `daily`, or `weekly`) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.46.png" alt="Select test frequency"><figcaption><p>Select test frequency</p></figcaption></figure>
+
+</div>
+
+{% hint style="info" %}
+The default test frequency and limitations are as follows:
+
+* Open Source: The default is daily.
+* Code analysis Projects: The default is weekly; daily is not available. To test your code daily, submit a request to [Snyk Support.](https://support.snyk.io/hc/en-us/requests)
+* Container: The default is daily.
+* IaC: The default is weekly.
+{% endhint %}
+
+Click **Deactivate** to never test, and also remove webhooks and stop showing the Project’s results in reporting.
