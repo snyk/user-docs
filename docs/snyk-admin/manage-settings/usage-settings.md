@@ -1,10 +1,11 @@
 # Usage settings
 
-In your Group or Organization, elect **Settings** > **Usage** to view Snyk usage details for your Group or Organization, including the following
+In your Goupr or Organization, select **Settings** > **Usage** to view Snyk usage details for your Group or Organization:
 
 * [Test usage](usage-settings.md#test-usage): the number of tests used
 * [Contributing developers](usage-settings.md#contributing-developers): the number of developers contributing to Projects
-* [Projects](usage-settings.md#projects): Project test usage settings (can be viewed and modified). See [Test frequency settings](../introduction-to-snyk-projects/#test-frequency-settings) in the Projects documentation.
+
+You can also select **Bulk actions** to apply to selected Projects. For details and for information about test frequency settings, see [Project actions](../introduction-to-snyk-projects/#project-actions-on-the-project-listing-page) on the Project Listings page.
 
 ## Test usage
 

@@ -96,7 +96,7 @@ The Targetfile is the specific item to scan in a Target, such as a `pom.xml` fil
 
 The Type is the scanning method to use for a particular Project, such as Static Application Security Testing ([SAST](https://snyk.io/learn/application-security/sast-vs-dast/)) for scanning using Snyk Code, or Maven for a Maven project using Snyk Open Source. This is part of the configuration for scanning.
 
-## Project actions in the Project Listing Page
+## Project actions on the Project Listing Page
 
 ### Delete, Activate, or Deactivate
 
