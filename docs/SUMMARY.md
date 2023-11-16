@@ -238,7 +238,7 @@
 * [Scan using Snyk](scan-using-snyk/README.md)
   * [Working with Snyk in your environment](scan-using-snyk/working-with-snyk-in-your-environment/README.md)
     * [Running scans](scan-using-snyk/working-with-snyk-in-your-environment/running-scans.md)
-    * [What counts as a scan?](scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test.md)
+    * [What counts as a test?](scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test.md)
   * [Supported languages and frameworks](scan-using-snyk/supported-languages-and-frameworks/README.md)
     * [Introduction to Snyk-supported languages and frameworks](scan-using-snyk/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md)
     * [Supported languages, frameworks, and feature availability overview](scan-using-snyk/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md)
