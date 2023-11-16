@@ -276,7 +276,7 @@ If you use the **zero-installs** feature, Snyk Fix PRs do not update the **.yarn
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/ide-tools/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/use-snyk-in-your-ide/).
 
 :link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 

@@ -55,7 +55,7 @@ The following resources are available for all users:
 The following capabilities are available for all Snyk users except as noted in the documentation for each capability.
 
 * Using the [Snyk CLI](../../snyk-cli/), you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
-* Using [Snyk IDE Plugins](../../integrate-with-snyk/ide-tools/), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
+* Using [Snyk IDE Plugins](../../integrate-with-snyk/use-snyk-in-your-ide/), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
 * Using [Git integrations](../../integrate-with-snyk/git-repository-scm-integrations/), you can improve security in your Git repositories for both your code and deployed applications.
 * Using CI/CD plugins and integrations, you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
   * There are options for passive monitoring and establishing a quality assurance gate by failing build checks based on tests for violations of policies.

@@ -123,7 +123,7 @@ Snyk for Ruby is not available at the moment for Snyk Web UI. You can use it wit
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/ide-tools/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/use-snyk-in-your-ide/).
 
 :link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 

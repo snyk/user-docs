@@ -8,9 +8,9 @@ Snyk Code supports a wide range of languages. For details see [Snyk Code - Suppo
 
 ## **IDE integrations**
 
-* [JetBrains plugins](../../../integrate-with-snyk/ide-tools/jetbrains-plugins/)
-* [Visual Studio Code extension](../../../integrate-with-snyk/ide-tools/visual-studio-code-extension/)
-* [Visual Studio extension](../../../integrate-with-snyk/ide-tools/visual-studio-extension/)
+* [JetBrains plugins](../../../integrate-with-snyk/use-snyk-in-your-ide/jetbrains-plugins/)
+* [Visual Studio Code extension](../../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/)
+* [Visual Studio extension](../../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-extension/)
 
 ## SCM integrations
 
