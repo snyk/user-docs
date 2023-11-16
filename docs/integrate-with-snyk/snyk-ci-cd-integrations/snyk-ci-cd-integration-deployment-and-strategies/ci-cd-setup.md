@@ -24,7 +24,11 @@ For more information, see [How to select the Organization to use in the CLI.](..
 
 ### Snyk authentication token
 
-To run `snyk test`, you need an authentication token with access to the target Organization. While you can use any valid authentication token, using a service account is recommended. For more details, see the [`snyk auth` command help](../../../snyk-cli/commands/auth.md) and [Service accounts](../../../enterprise-setup/service-accounts/).
+To run `snyk test`, you must authenticate using a token with access to the target Organization. For more information, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+
+Snyk Free and Team plan users must use their **personal Snyk API token**. See [API token configuration](ci-cd-setup.md#api-token-configuration) on this page for information on how to do this.
+
+Enterprise users should use a **service account** for any type of automation, including CI/CD setup. For more information, see [Service accounts](../../../enterprise-setup/service-accounts/).
 
 ## Setting up Snyk to run in a pipeline
 
@@ -53,7 +57,7 @@ If you monitor a Project with Snyk, you will be notified if the dependencies in 
 
 ### API token configuration
 
-Ensure you do not check your API token into source control, to avoid exposing it to others. Instead, use CI environment variables to configure your token.
+Ensure you do not check your personal Snyk API token into source control, to avoid exposing it to others. Instead, use CI environment variables to configure your token.
 
 See guidance for how to do this in the following documentation:
 
