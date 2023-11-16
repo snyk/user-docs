@@ -7,6 +7,10 @@ Get an overview of supported languages and package managers across Snyk environm
 The following table lists the programming languages, fully supported package managers, and features for Snyk Open Source.
 
 {% hint style="info" %}
+Before scanning your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Which Projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)
+{% endhint %}
+
+{% hint style="info" %}
 The tables below are scrollable right and left. Ensure you check all available columns.
 {% endhint %}
 
