@@ -232,6 +232,7 @@
   * [Vulnerability management tools](integrate-with-snyk/vulnerability-management-tools/README.md)
     * [Atlassian Compass integration](integrate-with-snyk/vulnerability-management-tools/atlassian-compass-integration.md)
     * [OpsLevel integration](integrate-with-snyk/vulnerability-management-tools/opslevel.md)
+    * [Phoenix Security integration](integrate-with-snyk/vulnerability-management-tools/phoenix-security-integration.md)
     * [ServiceNow AVR integration](integrate-with-snyk/vulnerability-management-tools/servicenow-avr.md)
     * [ServiceNow SBOM Integration](integrate-with-snyk/vulnerability-management-tools/servicenow-sbom-integration.md)
 * [Scan using Snyk](scan-using-snyk/README.md)
