@@ -96,7 +96,9 @@ Startups, small teams, individuals, and open-source maintainers typically onboar
 
 With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For details, see the [Enterprise implementation guide](../../enterprise-setup/enterprise-implementation-guide/).
 
-1. Typically, large organizations start with daily monitoring of applications using Git integration, only, initially turning on PR checks for a few key applications.
+1. Typically, large organizations start with daily monitoring of applications using Git integration, initially turning on PR checks for a few key applications **at most**. You may use CI/CD scans on key applications for some ecosystems to get a granular view of the exact versions being deployed at that point in time.
 2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
 3. Some customers use CI/CD to passively monitor and then turn on gating by using the Snyk CLI `test` command for each product.
-4. If you import a large number of legacy applications, you can use [Priority Score](../../manage-issues/priorities-for-fixing-issues/priority-score.md) (typically 700 as a starting place) or criteria like “Known exploit” or “Fix available” to define a starting point to engage developers to start fixing vulnerabilities for key applications.
+4. If you import a large number of legacy applications, you can use [Priority Score](../../manage-issues/priorities-for-fixing-issues/priority-score.md) (typically 700 as a starting place). If you would like to have more control over the criteria, you can do the following:
+   * Focus on `Critical` to start for open source, and `High` for first-party code.
+   * For open source, try additional criteria like `Known exploit` or `Fix available` to define a starting point for engaging developers in starting to fix vulnerabilities for key applications.
