@@ -24,7 +24,7 @@ Example CURL request to create a Snyk App:
 curl -X POST -H "Content-Type: application/vnd.api+json" \                                 
 -H "Authorization: token <REPLACE_WITH_API_TOKEN>" \
 -d '{"name": "My Awesome Snyk App", "redirect_uris": ["https://example.com/callback"], "scopes": ["org.read"]}' \
-https://api.snyk.io/rest/orgs/<REPLACE_WITH_YOUR_ORGID>/apps?version=2022-03-11~experimental
+https://api.snyk.io/rest/orgs/<REPLACE_WITH_YOUR_ORGID>/apps?version=2023-11-06
 ```
 
 ## Create using Snyk CLI
