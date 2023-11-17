@@ -1,5 +1,9 @@
 # Troubleshooting PR Checks
 
+{% hint style="info" %}
+If you use `###` in the description of the PR , it will be blocked and the PR check will not take place
+{% endhint %}
+
 ## General troubleshooting for PR Checks
 
 The following table lists general issues with PR Checks and how to address them.
