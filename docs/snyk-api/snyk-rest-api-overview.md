@@ -18,7 +18,7 @@ The base URL for all Snyk REST API endpoints is [https://api.snyk.io/rest/](http
 
 This API is only available over HTTPS. Accessing over HTTP will yield a 404 for all requests.
 
-## Authentication
+## About authentication
 
 To use this API, you must get your API token from Snyk. You can find your token in your General Account Settings on [https://snyk.io/account/](https://snyk.io/account/) after you register with Snyk and log in. See [Authentication for API](https://docs.snyk.io/snyk-api-info/authentication-for-api).
 
