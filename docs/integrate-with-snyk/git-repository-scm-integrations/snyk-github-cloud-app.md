@@ -18,7 +18,14 @@ This feature is not yet supported for Snyk Broker.
 * GitHub Admin permissions for the selected repository. If the Snyk GitHub Cloud App is installed in a repository that requires organization permissions, you must be a GitHub organization owner.
 * A public or private GitHub repository.
 
+## Known limitations of the GitHub Cloud App
+
+* Only one-to-one mapping between Snyk Organizations and GitHub organizations is supported.
+* The GitHub Cloud App is only available in prod16.
+
 ## GitHub Cloud App benefits
+
+The Snyk GitHub Cloud App improves upon many features as compared to the current GitHub integration, including role-based, granular access control, increased API rate limits, and the creation of an entry point for expanded and enhanced developer experiences.
 
 * **RBAC (Role-Based Access Control) Compliance**: With the GitHub Cloud App, the access control mechanism is decoupled from individual user accounts. Instead, it is associated with the app entity itself. This separation allows for better management and enforcement of RBAC policies, as access control is handled at the application level rather than being tied to individual user accounts.
 * **Granular access control**: The GitHub Cloud App allows for fine-grained control over access permissions at the repository level.&#x20;
@@ -50,11 +57,6 @@ This feature is not yet supported for Snyk Broker.
 {% hint style="warning" %}
 The GitHub Cloud App will lose access to Snyk if it is uninstalled from the GitHub organization or if the repositories to which the app instance has access are edited.
 {% endhint %}
-
-## Known limitations of the Snyk GitHub Cloud App
-
-* Only one-to-one mapping between Snyk Organizations and GitHub organizations is supported.
-* The GitHub Cloud App is only available in prod16.
 
 ## Feedback on the Snyk GitHub Cloud App
 
