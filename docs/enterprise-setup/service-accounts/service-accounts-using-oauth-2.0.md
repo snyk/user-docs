@@ -22,9 +22,11 @@ Never share the `client_secret` publicly, as this is used to authenticate your s
 
 ### Retrieve an OAuth 2.0 access token
 
-After the service account is created, you can retrieve an `access_token` through the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh) using the `client_secret`. An `access_token` can be used as a Snyk API key would be used.
+After the service account is created, you can retrieve an `access_token` through the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh) using the `client_secret`. The body format and `Content-Type` header must be form-urlencoded.
 
-The `access_token` has a short time-to-live and must be refreshed once it expires. There are many OAuth 2.0 libraries available that will greatly simplify this process.
+You can use an`access_token` the same way as you would use a Snyk API key, but with the `Authorization: bearer $access_token` header (see the Snyk [REST API documentation](https://apidocs.snyk.io/)) or the `SNYK_OAUTH_TOKEN` environment variable with the Snyk CLI.
+
+The `access_token` has a short time to live and must be refreshed once it expires. There are many OAuth 2.0 libraries available that greatly simplify this process.
 
 ## OAuth 2.0 with Private Key JWT &#x20;
 
