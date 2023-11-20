@@ -55,6 +55,8 @@ If you are using fine-grained personal access tokens, the following repository a
 * `Pull requests: Read and write`
 * `Webhooks: Read and write`
 
+For fine-grained personal access tokens, an additional `Members access: Read-only` organization access scope is required.
+
 {% hint style="info" %}
 Create a personal access token in GitHub Enterprise under **User settings** > **Developer settings**.
 {% endhint %}
@@ -67,10 +69,6 @@ The Snyk GitHub integration is bound to a single user, preferably a GitHub servi
 **Why does Snyk require fine-grained access tokens to have `pull request: read/write` and `content: read/write` scopes? Does this mean Snyk can write code to our repos?**
 
 Snyk uses PRs to tell GitHub Enterprise that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
-{% endhint %}
-
-{% hint style="warning" %}
-The Members Read Only Organization scope is required if you use fine-grained personal access tokens.
 {% endhint %}
 
 ### **How to authorize** your Personal Access Token and enable SSO
