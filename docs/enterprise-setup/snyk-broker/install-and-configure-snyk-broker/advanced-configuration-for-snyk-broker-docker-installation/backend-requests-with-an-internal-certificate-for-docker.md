@@ -13,10 +13,15 @@ docker run --restart=always \
            -e BITBUCKET=your.bitbucket-server.domain.com \
            -e BITBUCKET_API=your.bitbucket-server.domain.com/rest/api/1.0 \
            -e PORT=8000 \
-           -e CA_CERT=/private/ca.cert.pem \
+           -e NODE_EXTRA_CA_CERTS=/private/ca.cert.pem \
            -v /local/path/to/private:/private \
        snyk/broker:bitbucket-server
 ```
+
+{% hint style="warning" %}
+**Recent change**\
+The custom CA cert instruction changed recently. `CA_CERT` is no longer in use and must be replaced by `NODE_EXTRA_CA_CERTS`.
+{% endhint %}
 
 Note that this completely replaces the default CA Certificate List for any requests made to your backend system, so this must be the complete chain required by the certificate used by the backend system.
 
