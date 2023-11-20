@@ -394,6 +394,17 @@ Then try and run the above mentioned commands and see if your SCM system reports
 **Help Links:**
 - [https://go.dev/ref/mod#go-mod-vendor](https://go.dev/ref/mod#go-mod-vendor)
 
+### [SNYK-OS-GO-0006](#snyk-os-go-0006)
+
+#### Unsupported external file generation
+
+Snyk currently does not support external file generation in your project. This limitation is due to Snyk's lack of visibility into the third-party generator tools you may be using and the specific commands required to generate these files.
+
+Snyk can only work with the files available in your repository and does not have insight into the generation process for external files.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-GO-0007](#snyk-os-go-0007)
 
 #### Unable to access private dependencies
@@ -1287,4 +1298,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-11-20T11:29:47.049Z
+--- Generated at 2023-11-20T19:56:59.830Z
