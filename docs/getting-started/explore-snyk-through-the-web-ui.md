@@ -16,8 +16,6 @@ You can also use Snyk functions from the [Snyk CLI](../snyk-cli/), from [within 
 
 You can connect your code repositories, and then use Snyk to scan and secure your application code, open-source libraries, container registries, and configuration files.
 
-## Web UI functions
-
 This page explains the following functions of Snyk available through the Web UI:
 
 * [Explore the Dashboard](explore-snyk-through-the-web-ui.md#dashboard)
@@ -30,7 +28,7 @@ This page explains the following functions of Snyk available through the Web UI:
 * [View helpful resources](explore-snyk-through-the-web-ui.md#view-helpful-resources)
 * [Manage account preferences and settings](explore-snyk-through-the-web-ui.md#manage-account-preferences-and-settings)
 
-### Explore the Dashboard
+## Explore the Dashboard
 
 When you log in to an existing account, the Web UI opens to the Dashboard, where you can view your pending tasks and vulnerable Projects, invite team members, and add new Projects.
 
@@ -38,7 +36,7 @@ In the example that follows, the Snyk Dashboard for an Enterprise account shows 
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-07-13 at 11.09.02 AM.png" alt="Snyk dashboard for an Enterprise account"><figcaption><p>Snyk Dashboard for an Enterprise account</p></figcaption></figure>
 
-#### Pending tasks
+### Pending tasks
 
 The **Pending tasks** section shows the next chores to be handled for the Projects in a Snyk Organization. This information includes:
 
@@ -49,7 +47,7 @@ Currently, Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket
 
 <figure><img src="../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Pending tasks and Vulnerable Projects listed on the Dashboard"><figcaption><p>Pending tasks and Vulnerable Projects listed on the Dashboard</p></figcaption></figure>
 
-#### Add project
+### Add project
 
 Use the **Add project** link on the Dashboard to add [Snyk Projects](../snyk-admin/introduction-to-snyk-projects/). Select how to add the Project from the dropdown.
 
@@ -60,20 +58,16 @@ Use the links for Projects on the Dashboard to explore and manage the metadata, 
 
 <figure><img src="../.gitbook/assets/demo-project-details-options (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (9).gif" alt="Demo, add project and Project details tabs"><figcaption><p>Demo, add project and Project details tabs</p></figcaption></figure>
 
-### **View reports**
+## **View reports**
 
-You can view [reports](../manage-issues/reporting/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues.
+You can view [reports](../manage-issues/reporting/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues. You will find detailed definitions for information in the reports in the tooltips in the Reporting user interface.
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available for Enterprise plans.
+Reporting is available for Enterprise plans.
 {% endhint %}
 
-The following example illustrates [Legacy reports](../manage-issues/reporting/legacy-reports/).
-
-<figure><img src="../.gitbook/assets/reports.gif" alt="Demo of viewing reports, filters, and summary filters"><figcaption><p>Demo of viewing reports, filters, and summary filters</p></figcaption></figure>
-
-### **Manage your** **Projects**
+## **Manage your** **Projects**
 
 Select the **Projects** link in the navigation on the Dashboard to open the **Projects** listing page, where you can:
 
@@ -87,7 +81,7 @@ Select the **Projects** link in the navigation on the Dashboard to open the **Pr
 
 <figure><img src="../.gitbook/assets/Project listing add projects.gif" alt="Options on the Projects listing page"><figcaption><p>Options on the Projects listing page</p></figcaption></figure>
 
-### **Manage your** **Integrations**
+## **Manage your** **Integrations**
 
 Select **Integrations** from the navigation on the Dashboard to open the [Integrations](../integrate-with-snyk/) page, where you can do the following:
 
@@ -98,7 +92,7 @@ Select **Integrations** from the navigation on the Dashboard to open the [Integr
 
 <figure><img src="../.gitbook/assets/image (123) (1) (2) (1).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
 
-### Manage Organization or Group members
+## Manage Organization or Group members
 
 Select **Members** from the navigation on the Dashboard to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/manage-users-in-organizations-and-groups/manage-users-in-organizations.md) or [Group](../snyk-admin/manage-users-in-organizations-and-groups/manage-users-in-a-group.md).
 
@@ -106,7 +100,7 @@ Select **Members** from the navigation on the Dashboard to view and manage users
 You must be assigned the [required Admin roles and permissions](../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md) to make changes on the **Members** tab.
 {% endhint %}
 
-### Snyk Organization or Group Settings
+## Snyk Organization or Group Settings
 
 Use the **Settings** option to view and manage your Organization (team) or Group (company-wide) settings.
 
@@ -114,15 +108,15 @@ Use the **Settings** option to view and manage your Organization (team) or Group
 
 See [Manage settings](../snyk-admin/manage-settings/) for more details.
 
-### View Snyk updates
+## View Snyk updates
 
 Select **Help** in the navigation on the Dashboard and then select **Product updates** to visit [snyk.io updates](https://updates.snyk.io/).
 
-### View helpful resources
+## View helpful resources
 
 Select **Help** in the navigation on the Dashboard and then select an option to view resources with information about Snyk.
 
-### Manage account preferences and settings
+## Manage account preferences and settings
 
 Select your **name** in the navigation on the Dashboard and then **Account settings** to open your [account settings](https://app.snyk.io/account) page, where you can view and configure your user account settings and your notification and sharing preferences.
 
