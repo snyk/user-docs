@@ -71,9 +71,7 @@ See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-spec
 
 ## Regional multi and single-tenant hosting notes
 
-Snyk offers almost all the same features, support, and performance in the regional multi and single-tenant regions as in the US region.
-
-Snyk Cloud is not yet available. For an up-to-date overview of feature parity across regions, reach out to your account team.
+Snyk offers almost all the same features, support, and performance in the regional multi and single-tenant regions as in the US region. For an up-to-date overview of feature parity across regions, reach out to your account team.
 
 ### EU and AU datacenter account creation
 
