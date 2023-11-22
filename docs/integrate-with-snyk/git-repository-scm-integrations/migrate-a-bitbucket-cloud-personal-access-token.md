@@ -35,7 +35,7 @@ However, there is a first-party interface _extension_ app that serves as an exte
 To migrate to the new app integration, you must remove all the previously imported Projects from Snyk, delete the legacy PAT integration and its Projects, set up the new app integration, and reimport your Projects to Snyk from the new integration.
 
 {% hint style="info" %}
-Before going through the migration process, you should note that the following Project-level information would not persist:
+Before going through the migration process, you should note that the following Project-level information will not persist:
 
 * Historic Project-related data, including trend numbers for fixing vulnerabilities
 * Project-related metadata: ignores and tags
@@ -52,9 +52,11 @@ The migration process includes the following steps:
 
 #### 1. Delete existing Projects
 
-Delete all the existing Projects in Snyk that were previously imported from the Legacy integration. To use the bulk delete action for your Projects, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Usage** and scroll to the **Projects** section.
+Delete all the existing Projects in Snyk that were previously imported from the Legacy integration. To use the bulk delete action on the Projects page, change the grouping filter to **Group by none**. You can now select multiple Projects in the list individually or by selecting the checkbox at the top to **Select all visible projects**. To delete a Project, select the trash icon, **Delete selected projects**.
 
-<figure><img src="../../.gitbook/assets/migrate_bulk actions_bbc-11oct2022.png" alt="Delete existing projects from the Snyk Bitbucket Cloud PAT (Legacy) integration"><figcaption><p>Delete existing projects from the Snyk Bitbucket Cloud PAT (Legacy) integration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-11-20_14-29-35.png" alt="Change the Projects filter to Group by none"><figcaption><p>Change the Projects filter to <strong>Group by none</strong></p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/2023-11-20_14-41-16.png" alt="Bulk delete the selected Projects" width="375"><figcaption><p>Bulk delete the selected Projects</p></figcaption></figure>
 
 #### 2. Disconnect the Legacy integration
 

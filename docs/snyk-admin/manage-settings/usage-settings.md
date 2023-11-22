@@ -5,7 +5,9 @@ In your Group or Organization, select **Settings** > **Usage** to view Snyk usag
 * [Test usage](usage-settings.md#test-usage): the number of tests used
 * [Contributing developers](usage-settings.md#contributing-developers): the number of developers contributing to Projects
 
-You can also select **Bulk actions** to apply to selected Projects. For details and for information about test frequency settings, see [Project actions](../introduction-to-snyk-projects/#project-actions-on-the-project-listing-page) on the Project Listings page.
+{% hint style="info" %}
+For more information about test frequency settings, see [Project actions](../introduction-to-snyk-projects/#project-actions-on-the-project-listing-page) on the Project Listings page, where bulk actions are also explained.
+{% endhint %}
 
 ## Test usage
 
