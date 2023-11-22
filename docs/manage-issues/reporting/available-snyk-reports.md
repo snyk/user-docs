@@ -27,6 +27,8 @@ Quick aggregations are available by categories including **Severity**, **Product
 
 Individual issues are displayed in a table according to the selected category. You can modify columns as needed.
 
+For a table of only the unique vulnerabilities, use Change Report to switch to the Vulnerabilities Detail report.
+
 ## Issues Summary report
 
 The Issues Summary report highlights the value that Snyk is providing by enabling both the identification and resolution of issues.&#x20;
@@ -60,6 +62,8 @@ The Vulnerabilities Detail report is similar to the Issues Detail report, but sh
 </div>
 
 You can easily see how many instances of a vulnerability exist and how many Projects are affected. Use this report to understand which vulnerabilities are most prevalent for both resolution and prevention use cases.
+
+For a table of Total Issues, use Change Reports to switch to the Issues Detail report.
 
 {% hint style="info" %}
 #### Dependencies and Licenses information
