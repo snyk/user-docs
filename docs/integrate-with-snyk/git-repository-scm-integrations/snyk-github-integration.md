@@ -1,26 +1,40 @@
 # Snyk GitHub integration
 
-The Snyk GitHub integration lets you:
+{% hint style="warning" %}
+If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
+{% endhint %}
+
+{% hint style="info" %}
+**Feature availability**
+
+The Snyk GitHub integration is available for all Snyk customers regardless of plan level. See the [Plans and Pricing page](https://snyk.io/plans/) for more details.
+
+You cannot use the Snyk GitHub integration with a Snyk [Service Account](../../enterprise-setup/service-accounts/), as the GitHub integration is associated with _your_ user account, not with the Snyk Organization. To import public and private Projects using the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
+{% endhint %}
+
+## Prerequisites for Snyk GitHub integration
+
+* Internet-accessible repositories.\
+  If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-setup/snyk-broker/).
+* A public or private GitHub project.
+
+## Snyk GitHub integration features
+
+The Snyk GitHub integration allows you to:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your open-source components
 * Provide automated fixes and upgrades
 
-{% hint style="info" %}
-If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
-{% endhint %}
+## Per user, not per Organization
 
-## Snyk GitHub integration: per user, not per Organization
+The GitHub integration is set up for your user account, not for a Snyk Organization. GitHub integration settings apply to all Organizations associated with your user account but do not automatically apply to other user accounts in an Organization.
 
-The GitHub integration is set up for your own user account, not for a Snyk Organization. GitHub integration settings apply to all Organizations associated with your user account but do not automatically apply to other user accounts in an Organization.
+When you import a Snyk Project using your GitHub integration with the Snyk PR functionality enabled, Snyk PRs are created for that Project. However, if another user imports Projects with their GitHub integration after disabling the Snyk PR functionality, Snyk PRs are not created for the Projects they import.
 
-Thus when you import a Snyk Project using your GitHub integration with the Snyk PR functionality enabled, Snyk PRs are created for that Project. However, if another user imports Projects with their GitHub integration after disabling the Snyk PR functionality, Snyk PRs are not created for the Projects they import.
+## How to set up the Snyk GitHub integration
 
-You **cannot use a GitHub integration to import public and private Projects via the Snyk API** with a Snyk [Service Account](../../enterprise-setup/service-accounts/), as the GitHub integration is associated with _your_ user account, not with the Snyk Organization. To import public and private Projects usng the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
-
-## How to connect GitHub to Snyk
-
-To connect your GitHub repositories to Snyk for scanning, you need to set up the integration, then import Projects.&#x20;
+To connect your GitHub repositories to Snyk for scanning, you need to set up the integration and then import Projects.&#x20;
 
 See [Set up an integration](../../getting-started/quickstart/set-up-an-integration.md) and [Import a Project](../../getting-started/quickstart/import-a-project.md) for details of this process.
 
@@ -137,11 +151,11 @@ The table that follows provides a summary of the required access scopes for GitH
 | Importing new projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup).                                                                                                                                    | _admin:read:org, repo (all)_       |
 | Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | _admin:repo\_hooks (read & write)_ |
 
-In non-brokered GitHub integrations, **operations that are triggered via the Snyk Web UI**, for example, opening a Fix PR or re-testing a Project, are performed on behalf of the acting user.&#x20;
+In non-brokered GitHub integrations, operations that are triggered via the Snyk Web UI, for example, opening a Fix PR or re-testing a Project, are performed on behalf of the acting user.&#x20;
 
 Therefore, a user who wants to perform this operation on GitHub via the Snyk UI must connect their GitHub account to Snyk with the required permission scope for the repositories where they want to perform these operations. See the [Required permissions scope for repositories](snyk-github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) section for details.
 
-Operations that are **not triggered via the Snyk Web UI**, such as daily and weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
+Operations that are not triggered via the Snyk Web UI, such as daily and weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
 
 For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
 
