@@ -1275,6 +1275,41 @@ To resolve this, you might need to figure out all the merge conflicts on your SC
 **Help Links:**
 - [https://support.snyk.io/hc/en-us/articles/360005281098](https://support.snyk.io/hc/en-us/articles/360005281098)
 
+### [SNYK-PR-CHECK-0009](#snyk-pr-check-0009)
+
+#### Failed to detect issues
+
+Snyk is always trying to check for new issues and vulnerabilities to keep you safe. We do so by testing on your code on webhook Pull Request events and Push events.
+
+Occasionally you might see a "Failed to detect issues" commit status which may block your PR. This means that we tried to run a test against your changes but unfortunately something went wrong / we encountered an internal problem. If this happens to you try recreating the pull request and if it still occurs reach out and let us know which user, organization and project and commit sha you experienced the issue with on support@snyk.io
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://support.snyk.io/hc/en-us/articles/360000920678-Failed-to-detect-issues](https://support.snyk.io/hc/en-us/articles/360000920678-Failed-to-detect-issues)
+
+### [SNYK-PR-CHECK-0010](#snyk-pr-check-0010)
+
+#### No valid credentials to process PR check
+
+Snyk uses credentials configured on your integration to test your code and to update your PR Check.
+
+If this error occurs, please ensure your integration and credentials are correctly set up, by following the instructions for your SCM here: https://docs.snyk.io/integrate-with-snyk/git-repository-scm-integrations
+
+**HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+
+### [SNYK-PR-CHECK-0011](#snyk-pr-check-0011)
+
+#### Failed to generate a commit status
+
+Snyk is always trying to check for new issues and vulnerabilities to keep you safe. We do so by testing on your code on webhook Pull Request events and Push events.
+
+Occasionally you might see a "Failed to generate a commit status" which may block your PR. This means that we tried to run a test against your changes but unfortunately something went wrong / we encountered an internal problem. If this happens to you try recreating the pull request and if it still occurs reach out and let us know which user, organization and project and commit sha you experienced the issue with on support@snyk.io
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
 ---
 # Fix
 ### [SNYK-PR-TEMPLATE-0001](#snyk-pr-template-0001)
@@ -1396,4 +1431,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-11-21T14:53:12.344Z
+--- Generated at 2023-11-24T12:17:10.508Z
