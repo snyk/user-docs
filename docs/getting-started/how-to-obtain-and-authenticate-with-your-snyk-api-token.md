@@ -18,6 +18,10 @@ Enterprise users have access to a personal token under their profile and to serv
 
 For more information on the personal Snyk API token, see the following pages: [Authenticate the CLI with your account](../snyk-cli/authenticate-the-cli-with-your-account.md) and [Authentication for API](../snyk-api-info/authentication-for-api.md).
 
+{% hint style="info" %}
+If you are using Snyk on the EU and AU tenants,  you must set your endpoints accordingly before authenticating. For more information, see [Regional hosting and data residency](../more-info/data-residency-at-snyk.md).
+{% endhint %}
+
 Follow these steps to obtain your personal Snyk API token:
 
 1. Log in to Snyk and navigate to your **Account settings**
