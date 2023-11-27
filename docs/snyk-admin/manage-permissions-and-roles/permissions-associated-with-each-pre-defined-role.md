@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Enterprise plans have pre-defined Snyk roles: administrators, viewers, and collaborators, as well as custom roles. Roles are defined by permissions. Manging permissions is available on Snyk Enterprise plans. See [Plans and pricing](https://snyk.io/plans/) for details.
+Enterprise plans have pre-defined Snyk roles: administrators, viewers, and collaborators, as well as custom roles. Roles are defined by permissions. Managing permissions is available on Snyk Enterprise plans. See [Plans and pricing](https://snyk.io/plans/) for details.
 {% endhint %}
 
 The following list identifies the available permissions, what is allowed for each permission, and the pre-defined Snyk roles that have each permission.
