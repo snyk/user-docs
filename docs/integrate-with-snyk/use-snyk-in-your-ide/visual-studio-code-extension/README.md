@@ -10,7 +10,7 @@ Results appear in context, in line with the code in your IDE.
 
 This single plugin provides a Java vulnerability scanner, a custom code vulnerability scanner, and an open-source security scanner.
 
-In using the Visual Studio Code extension, you have the advantage of relying on the [Snyk Vulnerability Database](https://security.snyk.io/). You also have available the [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine).
+In using the Visual Studio Code extension, you have the advantage of relying on the [Snyk Vulnerability Database](https://security.snyk.io/). You also have available the [Snyk Code AI Engine](https://docs.snyk.io/scan-using-snyk/snyk-code/snyk-code-key-features/snyk-code-ai-engine).
 
 Snyk scans for the following types of issues:
 
@@ -53,8 +53,8 @@ Follow these steps to install:
 * Open the settings or preferences in your IDE.
 * Navigate to the [Snyk Extension on the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and click **Install**.\
   For more information, see the [installation instructions](https://code.visualstudio.com/docs/editor/extension-marketplace#\_install-an-extension).
-* Configure the Snyk CLI (downloaded when the extension in installed); see [Visual Studio extension configuration](https://docs.snyk.io/integrations/ide-tools/visual-studio-extension/visual-studio-extension-configuration).
-* Authenticate with Snyk; see [Visual Studio extension authentication](https://docs.snyk.io/ide-tools/visual-studio-extension/visual-studio-extension-authentication). For additional information, including how to authenticate using your API token, see [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account).
+* Configure the Snyk CLI (downloaded when the extension in installed); see [Visual Studio Code extension configuration](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/visual-studio-code-extension-configuration).
+* Authenticate with Snyk; see [Visual Studio Code extension authentication](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/visual-studio-code-extension-authentication). For additional information, including how to authenticate using your API token, see [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account).
 * Navigate back to the IDE; the first scan starts automatically.
 
 ## Support
