@@ -42,7 +42,7 @@ You can use the Snyk Visual Studio Code extension in the following environments:
 
 * Linux: AMD64 and ARM64
 * Windows: 386 and AMD64
-* MacOS: AMD64 and ARM64
+* macOS: AMD64 and ARM64
 
 ## Install the extension
 
