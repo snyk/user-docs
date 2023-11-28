@@ -1,15 +1,9 @@
 # Snyk GitHub integration
 
-{% hint style="warning" %}
-If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
-{% endhint %}
-
 {% hint style="info" %}
 **Feature availability**
 
 The Snyk GitHub integration is available for all Snyk customers regardless of plan level. See the [Plans and Pricing page](https://snyk.io/plans/) for more details.
-
-You cannot use the Snyk GitHub integration with a Snyk [Service Account](../../enterprise-setup/service-accounts/), as the GitHub integration is associated with _your_ user account, not with the Snyk Organization. To import public and private Projects using the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
 {% endhint %}
 
 ## Prerequisites for Snyk GitHub integration
@@ -17,6 +11,11 @@ You cannot use the Snyk GitHub integration with a Snyk [Service Account](../../e
 * Internet-accessible repositories.\
   If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-setup/snyk-broker/).
 * A public or private GitHub project.
+
+## Known limitations of the Snyk GitHub integration
+
+You cannot use the Snyk GitHub integration with a Snyk [Service Account](../../enterprise-setup/service-accounts/), as the GitHub integration is associated with your user account, not with the Snyk Organization. \
+Use the [GitHub Enterprise integration](github-enterprise-integration.md) to import public and private Projects using the API with a Snyk Service Account.
 
 ## Snyk GitHub integration features
 
