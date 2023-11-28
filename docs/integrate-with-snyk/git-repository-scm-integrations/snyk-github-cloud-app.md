@@ -36,21 +36,20 @@ The Snyk GitHub Cloud App improves upon many features as compared to the current
 
 ## How to set up the Snyk GitHub Cloud App
 
-1\. Log in to your Snyk account and navigate to the Integrations section in the Snyk Organization where you would like to set up the GitHub Cloud App.
+1. Log in to your Snyk account and navigate to the Integrations section in the Snyk Organization where you would like to set up the GitHub Cloud App.
+2.  Select the **GitHub Cloud App** tile.\
 
-2\. Select the **GitHub Cloud App** tile.
 
-<figure><img src="https://lh7-us.googleusercontent.com/m12lwj7xUyWR503N6na6WZGYY6KPw2HXw_Cnyz3p0V9n0Rlnt-xhxF5hKLuuPlybZ0YalSB0NFlJ6-NjCmMeILRQOT-Ih5bB3mzxd3qtZfKrM2jhc5QVguqOeACVCbD3CL1v-3_3TYzfxiNfBI9YBSQ" alt="Selection of the GitHub Cloud App tile"><figcaption><p>Selection of the GitHub Cloud App tile</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2023-11-28_09-42-28 (1).png" alt=""><figcaption><p>Selection of the GitHub Cloud App tile</p></figcaption></figure>
+3.  In the confirmation modal, select **Configure GitHub Cloud App.**\
 
-3\. In the confirmation modal, select **Configure GitHub Cloud App**
 
-<figure><img src="https://lh7-us.googleusercontent.com/6LsLwmnrYlFjttX4cm1_rpa6xNpM8qIWjGTQTlZ3-tLyiJzhSaTsRmwUhlYAymlS5DmE8vc3tndVk_K26VwPhMq9y9SPsIl2xV2yfZRttC1_bVa2yPph8dpr8EZn9bLmqZQjo2S8Nu8__QoU0Kv99WE" alt="Configuration notice for the GitHub Cloud App" width="375"><figcaption><p>Configuration notice for the GitHub Cloud App</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2023-11-28_09-44-21.png" alt="" width="375"><figcaption><p>Configuration notice for the GitHub Cloud App</p></figcaption></figure>
+4.  You are taken to GitHub, where you can select the organization where you wish to install the app.\
 
-4\. You are taken to GitHub, where you can select the organization where you wish to install the app.
 
-<figure><img src="https://lh7-us.googleusercontent.com/QWhLns9jPaDgb41zG-eoPUOSkTCmWenC9jwJ4suAs_LeMidcRJRheuAFmotWC_hb7Vjcq_lTTtgqkK2q41x4GUzSnvjoWKRvzxmXfKN_Zt0EhovXESkcSDfy-cv_-vShyzL7C4GF6fuUxOHTo2FXyCw" alt="Selection of the GitHub Organization to install the app into" width="375"><figcaption><p>Selection of the GitHub Organization to install the app into</p></figcaption></figure>
-
-5\. The next screen asks if you wish to install the app in all of the repositories belonging to the selected GitHub organization, or if you want to install the app in a select number of repositories belonging to a GitHub organization.&#x20;
+    <figure><img src="../../.gitbook/assets/2023-11-28_09-45-45.png" alt="" width="375"><figcaption><p>Selection of the GitHub Organization to install the app into</p></figcaption></figure>
+5. The next screen asks if you wish to install the app in all of the repositories belonging to the selected GitHub organization, or if you want to install the app in a select number of repositories belonging to a GitHub organization.&#x20;
 
 <figure><img src="https://lh7-us.googleusercontent.com/izrSkGKUWpJYqBk4yOi4psfRqmNLJiH1LCun3RLwdIfdEUx8wmU5LomzYzvHCGf5Ak5WVAatbOYhDd489QCmSjJv58lYnizUnfH6HiMiI7xi5o0VfLHyDzCIMO5MdqNXxlOPgTR4pIWD6fhHrPEpC8o" alt="Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into" width="375"><figcaption><p>Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
 
