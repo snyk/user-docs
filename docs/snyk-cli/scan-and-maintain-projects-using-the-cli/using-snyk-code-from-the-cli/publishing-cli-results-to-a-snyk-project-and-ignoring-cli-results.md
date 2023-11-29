@@ -31,7 +31,7 @@ Publishing and ignoring CLI results is in [Closed Beta](../../../more-info/snyk-
 The minimum supported CLI version is v1.1194.0.
 {% endhint %}
 
-Using Snyk Code via the CLI supports publishing test results to a Snyk Project in the Web UI and respecting issues that were ignored in a Snyk Project in the Web UI so you can filter them from the analysis results.
+Using Snyk Code through the CLI supports publishing test results to a Snyk Project in the Web UI and respecting issues that were ignored in a Snyk Project in the Web UI so you can filter them from the analysis results.
 
 This allows you to use Snyk Code as a blocking CI/CD gate to test and block builds at the main branch level and then have developers review the results in the Web UI, fix any newly introduced vulnerabilities, or ignore irrelevant ones.
 
@@ -43,7 +43,7 @@ snyk code test --report --project-name="<PROJECT_NAME>"
 
 * PROJECT\_NAME must be in double quotation marks. Single quotes or missing quotes will result in an error.
 * The Project name must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
-* There is a temporary limit of 3MB for the resulting payload. If the SARIF output is larger than 3MB, the process will not complete.
+* There is a temporary limit of 6MB for the resulting payload. If the SARIF output is larger than 6MB, the process will not complete.
 
 Running the `snyk code test` command with the `--report` option as shown returns the results to the terminal window, along with a URL to the Snyk Code Project where the results have been published. Refer to the following screenshot.
 
@@ -67,6 +67,20 @@ snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_N
 ```
 
 <figure><img src="../../../.gitbook/assets/image (4) (4).png" alt="Code analysis Projects grouped by branch"><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
+
+### **Troubleshooting**
+
+#### **There was a problem running Code analysis. The findings for this project may exceed the allowed size limit.**
+
+If you encounter this error after running the Code Analysis, it indicates that the contents of the scanned Project exceed the 6MB limit. To resolve:
+
+To complete the scan, consider the following troubleshooting steps:
+
+* Partition the Project repository by scanning sub-directories instead of the whole repository. For example:
+  * Create two Projects for your frontend and backend directories, and scan them separately.
+  * Create and scan Projects for each MicroService.
+* Exclude unnecessary files from the scanning process using the [.snyk exclude option](../../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md#exclusion-syntax-of-the-.snyk-file). For example, you can exclude test files from the scan.
+* Set a severity threshold using the [`--severity-threshold=high`](../failing-of-builds-in-snyk-cli.md#combining-security-policies-with-severity-threshold). You can focus on more critical issues and gain visibility into urgent matters.
 
 ## **Test and publish CLI results to an existing Snyk Code SCM Project**
 
@@ -116,5 +130,4 @@ To ignore the CLI issues appended in the SCM Project, you can use the following 
 
 ```
 snyk code test --report --project-id="<PROJECT_UUID>" --commit-id="<COMMIT_ID>"
-
 ```
