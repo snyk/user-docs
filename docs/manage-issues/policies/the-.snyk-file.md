@@ -153,6 +153,8 @@ language-settings:
 When you include the `.snyk` file in your code repository and the `language-settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans.
 {% endhint %}
 
+See the [Python version](../../scan-applications/supported-languages-and-frameworks/python.md#python-version-support) documentation for more information about the Python version support.
+
 ### Set vulnerability ignore rules
 
 Ignore a specific vulnerability for a given path:
