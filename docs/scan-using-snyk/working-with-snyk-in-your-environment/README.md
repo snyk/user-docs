@@ -22,7 +22,7 @@ Using Snyk begins with importing one or more Projects and scanning for issues.
 
 Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, with a view to finding and fixing vulnerabilities early in the Software Development Life Cycle.
 
-[Snyk Open Source](../snyk-open-source/) provides vulnerability testing and monitoring for your Projects. Open-source dependency upgrade and version bumping information, as well as license compliance information, are provided on all Snyk plans. Some capabilities may be limited for some [languages and package managers](../supported-languages-and-frameworks/).
+[Snyk Open Source](../snyk-open-source/) provides vulnerability testing and monitoring for your Projects. Open-source dependency upgrade and version bumping information, as well as license compliance information, are provided on all Snyk plans. Some capabilities may be limited for some [languages and package managers](../../scan-applications/supported-languages-and-frameworks/).
 
 [Snyk Code](../snyk-code/) scans your code for security vulnerabilities using source code analysis.
 

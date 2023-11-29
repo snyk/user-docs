@@ -5,7 +5,7 @@ You can use Snyk to scan your code:
 * [Manually](running-scans.md#run-tests-manually): using the Snyk CLI, the Snyk Web UI, and the Snyk API.
 * [Automatically](running-scans.md#run-tests-automatically): after Project import or using the `snyk monitor` CLI command or using PR Checks to scan new PRs.
 
-To start using Snyk scanning capabilities for open-source libraries, container images, and application code, see [Start scanning](../start-scanning-using-the-cli-web-ui-or-api.md).
+To start using Snyk scanning capabilities for open-source libraries, container images, and application code, see [Start scanning](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/).
 
 {% hint style="info" %}
 Scans may be limited on your account, depending on your[ Pricing Plan](../../more-info/plans.md). See [What counts as a scan?](what-counts-as-a-test.md) for more information.

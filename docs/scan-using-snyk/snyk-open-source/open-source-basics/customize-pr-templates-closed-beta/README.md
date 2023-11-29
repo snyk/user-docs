@@ -22,7 +22,7 @@ Snyk has default templates for the title, description, commit message, and branc
 
 You may have your own standards and practices for submitting pull requests. For instance, if a pull request comes from Snyk, you may require the title to begin with `SNYK:`. This page identifies the areas of pull requests that you can customize and provides instructions on how to do so.
 
-On the [supported languages, frameworks, and feature availability overview](../../../supported-languages-and-frameworks/) page, you can find all the languages for which the Fix PR functionality is supported.
+On the [supported languages, frameworks, and feature availability overview](../../../../scan-applications/supported-languages-and-frameworks/) page, you can find all the languages for which the Fix PR functionality is supported.
 
 {% hint style="warning" %}
 Snyk is looking initially for feedback on the variables and templating system. After the approach is validated, Snyk will look into building more robust authoring workflows using the API and UI interfaces.

@@ -48,4 +48,4 @@ See [Ignoring issues in Snyk Code](https://docs.snyk.io/fixing-and-prioritizing-
 
 ## **Excluding files**
 
-Check for DeepCode/Snyk ignore files `.gitignore` `.dcignore` and read them if they exist. Using the information in these files, Snyk filters to identify only the files with [the supported extensions](../../supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md) in the Project directory and not above the current Project directory. Snyk Code bundles these files that are smaller than 4 MB and sends them to Snyk.
+Check for DeepCode/Snyk ignore files `.gitignore` `.dcignore` and read them if they exist. Using the information in these files, Snyk filters to identify only the files with [the supported extensions](../../../scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md) in the Project directory and not above the current Project directory. Snyk Code bundles these files that are smaller than 4 MB and sends them to Snyk.

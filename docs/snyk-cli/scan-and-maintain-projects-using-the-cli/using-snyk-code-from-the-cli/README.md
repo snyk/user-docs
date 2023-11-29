@@ -9,7 +9,7 @@ Before using the Snyk CLI for testing your source code with Snyk Code, verify yo
 * A Snyk account.\
   For more information, see [Create a Snyk account](../../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
 * Repositories with code in a supported language and framework.\
-  For more information, see [Snyk Code - Supported languages and frameworks](../../../scan-using-snyk/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
+  For more information, see [Snyk Code - Supported languages and frameworks](../../../scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md).
 * The **Snyk Code** option [enabled in your Snyk Org settings](../../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-code/enable-the-snyk-code-option.md).
 * The Snyk CLI installed and authenticated.
   * For instructions, see [Install or update the Snyk CLI](../../install-or-update-the-snyk-cli/) and [Authenticate the Snyk CLI](../../authenticate-the-cli-with-your-account.md).
