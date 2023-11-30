@@ -9,8 +9,3 @@ After users have the right permission, they will see a new **Insights** option i
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-06-06 at 14.18.09.png" alt="Insights menu option" width="225"><figcaption><p>Insights menu option</p></figcaption></figure>
 
 </div>
-
-{% hint style="warning" %}
-Insights is not currently available at the Snyk Organization level.
-{% endhint %}
-
