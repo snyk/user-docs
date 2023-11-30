@@ -164,7 +164,7 @@
       * [Nexus Repository Manager for Maven](integrate-with-snyk/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
       * [Nexus Repository Manager for npm](integrate-with-snyk/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-npm.md)
     * [npm Teams and npm Enterprise integration](integrate-with-snyk/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md)
-    * [Private gem sources for Ruby configuration](integrate-with-snyk/package-repository-integrations/private-gem-sources-for-ruby.md)
+    * [Private gem sources for Ruby configuration](integrate-with-snyk/package-repository-integrations/private-gem-sources-for-ruby-configuration.md)
   * [Snyk Container - Integrations](integrate-with-snyk/snyk-container-integrations/README.md)
     * [Container security with Docker Hub integration](integrate-with-snyk/snyk-container-integrations/container-security-with-docker-hub-integration/README.md)
       * [Configure integration for Docker Hub](integrate-with-snyk/snyk-container-integrations/container-security-with-docker-hub-integration/configure-integration-for-docker-hub.md)
