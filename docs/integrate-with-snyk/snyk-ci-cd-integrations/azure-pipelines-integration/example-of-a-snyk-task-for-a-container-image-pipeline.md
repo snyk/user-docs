@@ -4,7 +4,7 @@ The following is an example of the Snyk Security Scan task within the script for
 
 When populated with the most common settings, the configuration panel in Azure looks much like the following:
 
-![Snyk Security Scan configuration panel](../../../.gitbook/assets/mceclip2-5-.png)
+<figure><img src="../../../.gitbook/assets/mceclip2-5-.png" alt="Snyk Security Scan configuration panel"><figcaption><p>Snyk Security Scan configuration panel</p></figcaption></figure>
 
 The following shows the same configuration once you have added it to your pipeline.
 

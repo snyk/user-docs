@@ -5,7 +5,7 @@ When you [decide to use a CI/CD Integration,](../git-repository-and-ci-cd-integr
 For detailed information, refer to the pages for the integration you are using:
 
 * [AWS CodePipeline integration](aws-codepipeline-integration-by-adding-a-snyk-scan-stage/)
-* [Azure Pipelines integration](azure-pipelines-integration-using-the-snyk-security-scan-task/)
+* [Azure Pipelines integration](azure-pipelines-integration/)
 * [Bitbucket Pipelines integration](bitbucket-pipelines-integration-using-a-snyk-pipe/)
 * [CircleCI integration](circleci-integration-using-a-snyk-orb.md)
 * [GitHub Actions integration](github-actions-for-snyk-setup-and-checking-for-vulnerabilities/)

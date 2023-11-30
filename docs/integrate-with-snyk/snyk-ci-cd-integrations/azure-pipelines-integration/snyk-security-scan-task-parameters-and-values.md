@@ -9,11 +9,11 @@ The following describes the Snyk task configuration fields from the configuratio
 **Default:** none\
 **Type:** String / Azure Service Connection Endpoint of type SnykAuth / Snyk Authentication
 
-**Description:** The Azure DevOps service connection endpoint where your Snyk API token is defined. Your admin defines this within your Azure DevOps project settings, assigning it with a unique string in order to differentiate between different connections.
+**Description:** The Azure DevOps service connection endpoint where your Snyk API token is defined. Your admin defines this within your Azure DevOps project settings, assigning it using a unique string in order to differentiate between different connections.
 
 The configuration panel displays all available Snyk service connections from a dropdown list like the following:
 
-![Snyk service connections](<../../../.gitbook/assets/image (1) (1) (3) (1) (4) (5).png>)
+<figure><img src="../../../.gitbook/assets/image (1) (1) (3) (1) (4) (5).png" alt="Snyk service connections"><figcaption><p>Snyk service connections</p></figcaption></figure>
 
 If multiple Snyk service connections are available from the dropdown list, ask your administrator which to use for the pipeline you are working with.
 
@@ -21,8 +21,8 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Parameter:** testType\
 **Required:** Yes\
-**Default:** "application"\
-**Type:** string: "app" or "container"
+**Default:** application\
+**Type:** string: "app" or "container" or "code"
 
 **Description:** Determines which dynamic fields to display as described on the rest of this page.
 
@@ -46,7 +46,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 ## **Field:** Custom path to manifest file to test
 
-**Parameter:** target file\
+**Parameter:** targetFile\
 **Required:** No\
 **Default:** none\
 **Type:** string
@@ -58,9 +58,18 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Parameter:** severityThreshold\
 **Required:** No\
 **Default:** "low"\
-**Type:** string: "low" or "medium" or "high"
+**Type:** string: "low" or "medium" or "high" or "critical"
 
 **Description:** The severity threshold to use when testing. By default, issues of all severity types are found. If not configured, the default severity is set to **low**.
+
+## **Field: Code testing severity threshold**
+
+**Parameter:** codeSeverityThreshold\
+**Required:** No\
+**Default:** "low"\
+**Type:** string: "low" or "medium" or "high"
+
+**Description:** The Code severity threshold to use when testing. By default, issues of all severity types are found. If not configured, the default severity is set to `low`.
 
 ## **Field: When to run Snyk Monitor**
 
@@ -69,7 +78,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** "always"\
 **Type:** string: string: "always", "onIssuesFound", or "never"
 
-**Description:** When to run **snyk monitor** to capture the dependency tree of the application or container image and monitor it within Snyk.
+**Description:** When to run snyk monitor to capture the dependency tree of the application or container image and monitor it within Snyk.
 
 ## **Field:** Fail build if Snyk finds issues
 
@@ -87,7 +96,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** none\
 **Type:** string
 
-**Description:** A custom name for the Snyk project to be created on snyk.io.
+**Description:** A custom name for the Snyk Project to be created on snyk.io.
 
 ## **Field:** Organization name (or ID) in Snyk
 
@@ -96,7 +105,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** none\
 **Type:** string
 
-**Description:** Name of the Snyk organization under which this project should be tested and monitored.
+**Description:** Name of the Snyk Organization under which this Project should be tested and monitored.
 
 ## **Field:** Test (Working) Directory
 
@@ -114,7 +123,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** none\
 **Type:** string
 
-**Description:** Additional Snyk CLI arguments to be passed in. See [CLI commands and options summary](https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference) for details. Add `--all-projects` as good practice (for example, for .NET), if no project has been found.
+**Description:** Additional Snyk CLI arguments to be passed in. See the [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md) for details. Add `--all-projects` as good practice (for example, for .NET), if no project has been found.
 
 ## **Field:** Trust unknown Certificate Authorities (advanced)
 
