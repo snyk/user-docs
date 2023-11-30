@@ -28,7 +28,7 @@ Snyk scans the Google Cloud Project specified by the `project_id` [variable](htt
 default = "your-project-id"
 ```
 
-* **Set the `project_id` variable when you apply the Terraform.** In the following section, [Apply  Terraform](step-2-create-the-google-service-account-api.md#apply-terraform), you will apply Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your Project ID:
+* **Set the `project_id` variable when you apply the Terraform.** In the following section, [Apply  Terraform](step-2-create-the-google-service-account-web-ui.md#apply-terraform), you will apply Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your Project ID:
 
 ```
 terraform apply -var="project_id=your-project-id"
@@ -73,4 +73,4 @@ Copy the service account email for use in the next step.
 
 ## What's next?
 
-The next step is to create and scan the Cloud Environment. See [Step 3: Create and scan a Cloud Environment for Google (Web UI)](step-3-create-and-scan-a-snyk-cloud-environment-for-google-web-ui.md).
+The next step is to create and scan the Cloud Environment. See [Step 3: Create and scan a Cloud Environment for Google (Web UI)](step-3-create-and-scan-a-cloud-environment-for-google-web-ui.md).

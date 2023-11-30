@@ -9,7 +9,7 @@ To create and scan a Cloud Environment, you must provide the role’s Amazon Res
 
 ## Find the role ARN
 
-The role ARN should follow this format unless you [changed the name of the role](../snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md#optional-change-iam-role-name) in the Terraform or CloudFormation template:
+The role ARN should follow this format unless you [changed the name of the role](../aws-integration-api/step-1-download-iam-role-iac-template.md#optional-change-iam-role-name) in the Terraform or CloudFormation template:
 
 ```
 arn:aws:iam::YOUR-ACCOUNT-ID:role/snyk-cloud-role

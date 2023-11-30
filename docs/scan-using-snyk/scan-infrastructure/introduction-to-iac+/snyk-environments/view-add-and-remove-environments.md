@@ -19,7 +19,7 @@ To add a cloud environment, select the **Add environment** drop-down and select 
 
 You can also add an environment using the Snyk API:
 
-* [AWS Integration: API](../../../../integrate-with-snyk/cloud-platforms-integrations/aws-integration/snyk-cloud-for-aws-api/)
+* [AWS Integration: API](../../../../integrate-with-snyk/cloud-platforms-integrations/aws-integration/aws-integration-api/)
 * [Google Cloud Integration: API](../../../../integrate-with-snyk/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-api/)
 * [Azure Integration: API](../../../../integrate-with-snyk/cloud-platforms-integrations/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/)
 
