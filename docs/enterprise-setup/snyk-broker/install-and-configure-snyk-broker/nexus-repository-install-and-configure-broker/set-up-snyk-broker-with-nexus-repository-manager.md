@@ -16,7 +16,7 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 {% endhint %}
 
 {% hint style="info" %}
-For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../../integrate-with-snyk/package-repository-integrations/nexus-repo-manager-setup/).
+For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../../integrate-with-snyk/package-repository-integrations/nexus-repository-manager-connection-setup/).
 {% endhint %}
 
 {% hint style="info" %}
