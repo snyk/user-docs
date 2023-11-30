@@ -132,7 +132,7 @@ Based on the nuances of the tech stack you are using, you will want to set your 
 
 Integrate your Organization with Jira to assist with logging tickets and addressing backlogged security issues.
 
-See also [Jira integration](../integrate-with-snyk/notifications-ticketing-system-integrations/jira.md).
+See also [Jira integration](../integrate-with-snyk/notification-and-ticketing-systems-integraitons/jira-integration.md).
 
 ## Invite members
 

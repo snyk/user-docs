@@ -7,7 +7,7 @@ Snyk notifies you automatically when new issues are found in the Projects you ar
 Snyk can send notifications in the following ways:
 
 * By email, if you have not disabled [email notifications in your account settings](https://app.snyk.io/account/notifications).
-* By Slack, if you have set up [Slack integration](../integrate-with-snyk/notifications-ticketing-system-integrations/slack-integration.md).
+* By Slack, if you have set up [Slack integration](../integrate-with-snyk/notification-and-ticketing-systems-integraitons/slack-integration.md).
 
 Snyk also sends you a weekly update summarizing the security status across all of your Organizations.
 
@@ -40,7 +40,7 @@ An example follows of a Snyk notification for new issues and remediations in Pro
 
 Snyk provides controls to manage your own notifications. Administrators can manage the notification defaults for others in the [Group](manage-notifications.md#define-group-notification-defaults) or [Organization](manage-notifications.md#define-organization-notification-defaults).
 
-You can also send notifications for an Organization to a designated Slack channel. For details, see  [Slack integration](../integrate-with-snyk/notifications-ticketing-system-integrations/slack-integration.md).
+You can also send notifications for an Organization to a designated Slack channel. For details, see  [Slack integration](../integrate-with-snyk/notification-and-ticketing-systems-integraitons/slack-integration.md).
 
 ### Define Group notification defaults
 
