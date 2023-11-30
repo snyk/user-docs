@@ -6,7 +6,7 @@ If you are on the Free Snyk plan, you may run unlimited tests for public reposit
 
 ## Counting Git repository integration scans
 
-These Snyk features for [Git Repositories (SCM)](../../integrate-with-snyk/git-repository-scm-integrations/) integrations run scans automatically by default:
+These Snyk features for [Git Repositories (SCM)](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) integrations run scans automatically by default:
 
 * Daily recurring tests
 * An automatic scan, which runs if the dependencies change on your default branch.

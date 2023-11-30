@@ -15,7 +15,7 @@ The Snyk GitHub integration is available for all Snyk customers regardless of pl
 ## Known limitations of the Snyk GitHub integration
 
 You cannot use the Snyk GitHub integration with a Snyk [Service Account](../../enterprise-setup/service-accounts/), as the GitHub integration is associated with your user account, not with the Snyk Organization. \
-Use the [GitHub Enterprise integration](github-enterprise-integration.md) to import public and private Projects using the API with a Snyk Service Account.
+Use the [GitHub Enterprise integration](snyk-github-enterprise-integration.md) to import public and private Projects using the API with a Snyk Service Account.
 
 ## Snyk GitHub integration features
 
@@ -159,7 +159,7 @@ Operations that are not triggered via the Snyk Web UI, such as daily and weekly 
 For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
 
 {% hint style="info" %}
-A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
+A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](introduction-to-git-repositories-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
 
 Note that Snyk will continue to use a random Snyk Organization member's GitHub account to perform all the other operations. Therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
 {% endhint %}

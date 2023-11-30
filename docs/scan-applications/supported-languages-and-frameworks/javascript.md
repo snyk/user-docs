@@ -219,7 +219,7 @@ snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
 
 ### Snyk Web UI (Git repository integration)
 
-You can import JavaScript repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../integrate-with-snyk/git-repository-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
+You can import JavaScript repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
 :link: [How Snyk works for open source and licensing](../../scan-using-snyk/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md#how-snyk-works-for-open-source-and-licensing)
 

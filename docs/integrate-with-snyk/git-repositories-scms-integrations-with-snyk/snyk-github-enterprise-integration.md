@@ -1,7 +1,7 @@
 # Snyk GitHub Enterprise integration
 
 {% hint style="warning" %}
-If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
+If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](introduction-to-git-repositories-integrations/using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
 {% hint style="info" %}
@@ -23,20 +23,20 @@ You do not need to be on a GitHub Enterprise level plan to use the Snyk GitHub E
 
 The Snyk GitHub Enterprise integration lets you:
 
-* Perform [periodic security scans](github-enterprise-integration.md#obtain-project-level-security-reports) across all integrated repositories.
-* [Detect vulnerabilities](github-enterprise-integration.md#monitor-projects-and-generate-automatic-fix-pull-requests) in your Open Source components.
-* Provide [automated fixes](github-enterprise-integration.md#test-new-pull-requests) and upgrades through status checks in GitHub.
+* Perform [periodic security scans](snyk-github-enterprise-integration.md#obtain-project-level-security-reports) across all integrated repositories.
+* [Detect vulnerabilities](snyk-github-enterprise-integration.md#monitor-projects-and-generate-automatic-fix-pull-requests) in your Open Source components.
+* Provide [automated fixes](snyk-github-enterprise-integration.md#test-new-pull-requests) and upgrades through status checks in GitHub.
 
 ## How to set up the Snyk GitHub Enterprise integration
 
 Follow these steps to connect Snyk with your GitHub repositories:
 
 1. Create a dedicated service account in GitHub Enterprise with a write level or higher scope for the repos you want to monitor with Snyk permissions.\
-   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required access scopes for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.\
+   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required access scopes for the GitHub integration](snyk-github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.\
    Note that to create webhooks, which is required for PR checks, the repo permission for the account must be `Admin`. GitHub custom roles are not supported.&#x20;
-2. [Generate a personal access token](github-enterprise-integration.md#generate-a-personal-access-token) for that account.
-3. [Authorize your personal access token and enable SSO](github-enterprise-integration.md#authorize-your-personal-access-token-and-enable-sso).
-4. [Import your GitHub repositories](github-enterprise-integration.md#how-to-import-github-repositories)
+2. [Generate a personal access token](snyk-github-enterprise-integration.md#generate-a-personal-access-token) for that account.
+3. [Authorize your personal access token and enable SSO](snyk-github-enterprise-integration.md#authorize-your-personal-access-token-and-enable-sso).
+4. [Import your GitHub repositories](snyk-github-enterprise-integration.md#how-to-import-github-repositories)
 
 ### How to generate a Personal Access Token
 
@@ -62,7 +62,7 @@ Create a personal access token in GitHub Enterprise under **User settings** > **
 {% endhint %}
 
 {% hint style="warning" %}
-The Snyk GitHub integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub (see [required access scopes](github-enterprise-integration.md#required-access-scopes-for-snyk-github-enterprise-integration)) and the access defined for the PAT on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
+The Snyk GitHub integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub (see [required access scopes](snyk-github-enterprise-integration.md#required-access-scopes-for-snyk-github-enterprise-integration)) and the access defined for the PAT on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
 {% endhint %}
 
 {% hint style="info" %}

@@ -5,8 +5,8 @@
 
 #### Connect with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-| <p><a href="integrate-with-snyk/git-repository-scm-integrations/">Git repositories</a><br>Connect your code repos to Snyk</p> | <p><a href="integrate-with-snyk/use-snyk-in-your-ide/">IDEs</a><br>Integrate Snyk fully into your dev environment</p> | <p><a href="integrate-with-snyk/snyk-ci-cd-integrations/">CI/CD</a><br>Add Snyk to your CI/CD build pipeline</p> |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| <p><a href="integrate-with-snyk/git-repositories-scms-integrations-with-snyk/">Git repositories</a><br>Connect your code repos to Snyk</p> | <p><a href="integrate-with-snyk/use-snyk-in-your-ide/">IDEs</a><br>Integrate Snyk fully into your dev environment</p> | <p><a href="integrate-with-snyk/snyk-ci-cd-integrations/">CI/CD</a><br>Add Snyk to your CI/CD build pipeline</p> |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 
 #### Scan using Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 

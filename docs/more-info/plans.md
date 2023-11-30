@@ -37,7 +37,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Audit Logging**](../snyk-admin/manage-users-in-organizations-and-groups/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md): Not available.
 * [**Local Code Engine**](broken-reference): Not available.
 * [**Broker**](../enterprise-setup/snyk-broker/): Not available.
-* [**Self-hosted Git**](../integrate-with-snyk/git-repository-scm-integrations/github-enterprise-integration.md): Not available.
+* [**Self-hosted Git**](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md): Not available.
 * [**Private Registry Integrations**](../integrate-with-snyk/package-repository-integrations/): Not available.
 
 {% hint style="info" %}

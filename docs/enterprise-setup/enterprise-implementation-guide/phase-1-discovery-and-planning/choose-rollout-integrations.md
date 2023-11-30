@@ -30,7 +30,7 @@ Advantages:
 * Onboarding of repositories can be configured via UI or [API/API Import Tool](https://docs.snyk.io/snyk-api-info/other-tools/tool-snyk-api-import)
 * Supports Cloud and Private Code Repositories on the Snyk Enterprise plan
 
-See [Git repositories (SCMs)](../../../integrate-with-snyk/git-repository-scm-integrations/) for more details.
+See [Git repositories (SCMs)](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) for more details.
 
 If you have an on-premise git repository, you will need to consider deploying a [Snyk Broker](https://docs.snyk.io/snyk-admin/snyk-broker) for Snyk to communicate with your repositories.
 

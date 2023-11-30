@@ -85,7 +85,7 @@ Select the **Projects** link in the navigation on the Dashboard to open the **Pr
 
 Select **Integrations** from the navigation on the Dashboard to open the [Integrations](../integrate-with-snyk/) page, where you can do the following:
 
-* Set up and view the [SCM integrations](../integrate-with-snyk/git-repository-scm-integrations/) that can connect to Snyk for vulnerability monitoring.
+* Set up and view the [SCM integrations](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) that can connect to Snyk for vulnerability monitoring.
 * Set up [Cloud platforms](../integrate-with-snyk/cloud-platforms-integrations/) and [Container integrations](../integrate-with-snyk/snyk-container-integrations/).
 * Set up [CI/CD integrations](../integrate-with-snyk/snyk-ci-cd-integrations/), [IDE plugins](../integrate-with-snyk/use-snyk-in-your-ide/), and [Gatekeeper plugins](../integrate-with-snyk/gatekeeper-plugins/).
 * Set up [Notifications](../integrate-with-snyk/notifications-ticketing-system-integrations/) and [Cloud events](../integrate-with-snyk/event-forwarding/) integrations.

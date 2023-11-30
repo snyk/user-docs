@@ -56,9 +56,9 @@ The imported projects appear on your **Projects** page and are continuously chec
 
 After the integration is in place, you will be able to use capabilities such as:
 
-* [Project-level security reports](snyk-bitbucket-cloud-legacy-integration.md#project-level-security-reports)
-* [Project monitoring and automatic fix pull requests](snyk-bitbucket-cloud-legacy-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-* [Pull request testing](snyk-bitbucket-cloud-legacy-integration.md#pull-request-tests)
+* [Project-level security reports](snyk-bitbucket-cloud-integration.md#project-level-security-reports)
+* [Project monitoring and automatic fix pull requests](snyk-bitbucket-cloud-integration.md#project-monitoring-and-automatic-fix-pull-requests)
+* [Pull request testing](snyk-bitbucket-cloud-integration.md#pull-request-tests)
 
 ### Project-level security reports
 

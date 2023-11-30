@@ -16,7 +16,7 @@ Customize your PR template automatically by making an API request; see [Create a
 
 ## Understand Customized PRs
 
-When you fix or upgrade Snyk Open Source and Container Projects imported using the [SCM integrations](../../../../integrate-with-snyk/git-repository-scm-integrations/), Snyk raises pull requests (PRs) against your repository.&#x20;
+When you fix or upgrade Snyk Open Source and Container Projects imported using the [SCM integrations](../../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/), Snyk raises pull requests (PRs) against your repository.&#x20;
 
 Snyk has default templates for the title, description, commit message, and branch name. These indicate what packages are being changed, which issues are being fixed, and many other details.
 

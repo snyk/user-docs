@@ -1,4 +1,4 @@
-# Terraform Enterprise for IaC
+# Terraform Enterprise integration for Snyk IaC
 
 {% hint style="info" %}
 This feature is available for all Snyk plans.
@@ -10,11 +10,11 @@ This feature is available for all Snyk plans.
 
 ## **Snyk integration with Terraform Enterprise overview**
 
-Snyk integration with Terraform Enterprise works exactly the same way as Snyk integration for Terraform Cloud. See the [Snyk integration for Terraform Cloud](integrating-snyk-with-terraform-cloud/) page for details about how to set up the integration.
+Snyk integration with Terraform Enterprise works exactly the same way as Snyk integration for Terraform Cloud. See the [Snyk integration for Terraform Cloud](terraform-cloud-integration-for-snyk-iac-using-run-tasks/) page for details about how to set up the integration.
 
-## Notes
+## Network requirements for Terraform Enterprise integration
 
-Snyk integration for Terraform Enterprise relies on having network connectivity between your Terraform Enterprise instance and the Snyk platform. If you have tried to set up integration as explained on [Snyk integration for Terraform Cloud](integrating-snyk-with-terraform-cloud/) and have been unable to get the integration to work, the following steps can help you identify the problem:
+Snyk integration for Terraform Enterprise relies on having network connectivity between your Terraform Enterprise instance and the Snyk platform. If you have tried to set up integration as explained on [Snyk integration for Terraform Cloud](terraform-cloud-integration-for-snyk-iac-using-run-tasks/) and have been unable to get the integration to work, the following steps can help you identify the problem:
 
 * To check whether a connection from your Terraform Enterprise instance to Snyk API can be established:
   * Log on to your Terraform Enterprise server.

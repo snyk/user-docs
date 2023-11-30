@@ -65,7 +65,7 @@ To provide this feature, Snyk creates a temporary copy of your Git repository co
 For more information, see [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md).
 {% endhint %}
 
-1. Set up your [GitHub integration](../../integrate-with-snyk/git-repository-scm-integrations/snyk-github-integration.md).
+1. Set up your [GitHub integration](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-integration.md).
 2. Enable Reachable Vulnerabilities analysis:
    * In the **Organization** settings, go to the **Languages** section.
    * Go to the **Reachable vulnerabilities analysis** section.

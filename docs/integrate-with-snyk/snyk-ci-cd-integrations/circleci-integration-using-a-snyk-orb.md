@@ -1,4 +1,4 @@
-# CircleCI
+# CircleCI integration using a Snyk Orb
 
 Snyk integrates with [CircleCI](https://circleci.com) using a **Snyk Orb**, seamlessly scanning your application dependencies and Docker images for open source security vulnerabilities as part of the continuous integration/continuous delivery (CI/CD) workflow.
 
@@ -6,7 +6,7 @@ CircleCI enables users to easily create CI/CD workflows using a group of ready-t
 
 With the Snyk Orb, you can quickly add Snyk scanning to your CI/CD in order to test and monitor for open source vulnerabilities, based on your configurations. Results are then displayed from the CircleCI output view and can also be monitored on [Snyk.io](http://app.snyk.io).
 
-## Getting started
+## Implement the Snyk Orb
 
 Refer to the following information about the Snyk Orb to get started with CircleCI, from implementation to a green build with Snyk.
 

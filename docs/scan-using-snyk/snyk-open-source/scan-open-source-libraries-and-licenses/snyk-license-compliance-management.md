@@ -36,7 +36,7 @@ You can create and edit multiple license policies for Organizations. For details
 
 ## View compliance issues
 
-Snyk’s [Git-based integrations ](../../../integrate-with-snyk/git-repository-scm-integrations/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
+Snyk’s [Git-based integrations ](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
 
 <div align="left">
 

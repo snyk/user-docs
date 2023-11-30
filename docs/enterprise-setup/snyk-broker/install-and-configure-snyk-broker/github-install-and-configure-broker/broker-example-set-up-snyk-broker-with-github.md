@@ -6,7 +6,7 @@ Follow the instructions on this page to set up GitHub with Snyk Broker. This int
 **Prerequisites**\
 Ask your Snyk account team to provide you with a Broker token.
 
-You must configure a GitHub service account token with the [required permissions](../../../../integrate-with-snyk/git-repository-scm-integrations/snyk-github-integration.md#required-permissions-scope-for-the-github-integration). All the operations, both those that are triggered via the Snyk Web UI and the automatic operations, are performed for a GitHub service account that has its token configured with the Broker.
+You must configure a GitHub service account token with the [required permissions](../../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-integration.md#required-permissions-scope-for-the-github-integration). All the operations, both those that are triggered via the Snyk Web UI and the automatic operations, are performed for a GitHub service account that has its token configured with the Broker.
 
 You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 {% endhint %}

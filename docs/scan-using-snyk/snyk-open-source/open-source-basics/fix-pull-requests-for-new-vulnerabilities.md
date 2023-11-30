@@ -16,7 +16,7 @@ To determine when your last 24-hour window began, check the Project issue card f
 
 Pull requests for new vulnerabilities are enabled by default for new integrations.
 
-See the [Git repository SCM integrations](../../../integrate-with-snyk/git-repository-scm-integrations/) pages for details about supported integrations.
+See the [Git repository SCM integrations](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) pages for details about supported integrations.
 
 ## Enable or disable pull requests for an integration
 

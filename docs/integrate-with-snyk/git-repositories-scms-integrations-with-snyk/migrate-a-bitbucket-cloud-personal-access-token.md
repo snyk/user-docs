@@ -4,7 +4,7 @@
 Snyk recommends using the Bitbucket Cloud App integration for smoother integration.
 {% endhint %}
 
-This topic describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](snyk-bitbucket-cloud-legacy-integration.md), displayed in Snyk as **Bitbucket Cloud (Legacy)**, to the [**Bitbucket Cloud App**](snyk-bitbucket-cloud-app-integration.md) integration.
+This topic describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](snyk-bitbucket-cloud-integration.md), displayed in Snyk as **Bitbucket Cloud (Legacy)**, to the [**Bitbucket Cloud App**](snyk-bitbucket-cloud-app-integration.md) integration.
 
 ## Deciding which Bitbucket Cloud integration to use
 

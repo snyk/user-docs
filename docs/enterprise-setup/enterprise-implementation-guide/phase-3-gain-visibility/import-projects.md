@@ -17,7 +17,7 @@ See the [Getting started](../../../getting-started/) and [Start scanning](../../
 
 Snyk offers various integration methods to meet your needs:
 
-### [Git Integration](../../../integrate-with-snyk/git-repository-scm-integrations/)
+### [Git Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/)
 
 Connect your repositories for automatic scanning.
 

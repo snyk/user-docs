@@ -4,16 +4,16 @@ When you [decide to use a CI/CD Integration,](../git-repository-and-ci-cd-integr
 
 For detailed information, refer to the pages for the integration you are using:
 
-* [AWS CodePipeline integration](aws-codepipeline-integration/)
-* [Azure Pipelines integration](azure-pipelines-integration/)
-* [Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/)
-* [CircleCI integration](circleci-integration-overview.md)
-* [GitHub Actions integration](github-actions-integration/)
-* [Jenkins integration](jenkins-integration-overview.md)
-* [Maven integration](maven-plugin-integration.md)
-* [TeamCity integration](teamcity-integration-overview/)
-* [Terraform Cloud integration for IaC](integrating-snyk-with-terraform-cloud/)
-* [Terraform Enterprise integration for IaC](integrating-snyk-with-terraform-enterprise.md)
+* [AWS CodePipeline integration](aws-codepipeline-integration-by-adding-a-snyk-scan-stage/)
+* [Azure Pipelines integration](azure-pipelines-integration-using-the-snyk-security-scan-task/)
+* [Bitbucket Pipelines integration](bitbucket-pipelines-integration-using-a-snyk-pipe/)
+* [CircleCI integration](circleci-integration-using-a-snyk-orb.md)
+* [GitHub Actions integration](github-actions-for-snyk-setup-and-checking-for-vulnerabilities/)
+* [Jenkins integration](jenkins-plugin-integration-with-snyk.md)
+* [Maven integration](maven-plugin-integration-with-snyk.md)
+* [TeamCity integration](teamcity-jetbrains-integration-using-the-snyk-security-plugin/)
+* [Terraform Cloud integration for IaC](terraform-cloud-integration-for-snyk-iac-using-run-tasks/)
+* [Terraform Enterprise integration for IaC](terraform-enterprise-integration-for-snyk-iac.md)
 
 For integration with GitLab pipelines integration, see this [pipeline configuration](https://github.com/snyk-labs/snyk-cicd-integration-examples/blob/master/GitLabCICD/gitlab-npm.yml).
 

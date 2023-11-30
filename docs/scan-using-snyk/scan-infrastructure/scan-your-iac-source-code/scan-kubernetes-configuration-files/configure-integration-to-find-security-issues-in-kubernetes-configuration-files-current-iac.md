@@ -16,7 +16,7 @@ Snyk currently scans your Kubernetes configuration files in JSON and YAML format
 
 * Administrator access for the Organization
 * Git repository access and authorization\
-  For details, see [Git repository (SCM) integrations](../../../../integrate-with-snyk/git-repository-scm-integrations/).
+  For details, see [Git repository (SCM) integrations](../../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
 
 ### **Configure Snyk to scan Kubernetes configuration files**
 
