@@ -1,10 +1,10 @@
-# Maven
+# Maven plugin integration with Snyk
 
 Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin) based on the [Snyk CLI](https://docs.snyk.io/snyk-cli/cli-reference). This plugin allows you to scan and monitor your Maven dependencies for vulnerabilities.
 
 See all releases on the [Maven Central Repository](https://search.maven.org/artifact/io.snyk/snyk-maven-plugin),
 
-## Installation
+## Installation of Maven plugin
 
 1. Get your [Snyk API token](https://docs.snyk.io/snyk-api-info/authentication-for-api).
 2. Add the Snyk Maven Plugin to your `pom.xml` and configure it as needed.
@@ -16,7 +16,7 @@ See all releases on the [Maven Central Repository](https://search.maven.org/arti
     <plugin>
       <groupId>io.snyk</groupId>
       <artifactId>snyk-maven-plugin</artifactId>
-      <version>2.0.0</version>
+      <version>2.2.0</version>
       <inherited>false</inherited>
       <executions>
         <execution>
@@ -84,7 +84,7 @@ Default Phase: `install`
 
 Takes a snapshot of your Project's dependency tree and monitors it on [snyk.io](https://snyk.io). You'll be alerted when new relevant vulnerabilities, updates, or patches are disclosed.
 
-## Configuration
+## Configuration for Maven plugin
 
 You can configure the following parameters inside the `<configuration>` section. All parameters are optional.
 
@@ -110,7 +110,7 @@ When running `mvn`, you can also use `-Dsnyk.skip` to enable this behavior.
 
 Default: `true`
 
-When set to `true` then, should the Snyk CLI tool indicate that action is required to remedy a security issue, the Maven build will be considered failed. When set to `false` the build will continue even if action is required.
+When set to `true`, should the Snyk CLI tool indicate that action is required to remedy a security issue, the Maven build will be considered failed. When set to `false` the build will continue even if action is required.
 
 ### `args` \[array\<string>]
 
@@ -133,7 +133,7 @@ For a list of supported CLI options, see [Snyk CLI commands and options summary]
 
 Lets you configure the Snyk CLI used by this plugin.
 
-By default, the CLI isautomatically downloaded and updated for you.
+By default, the CLI is automatically downloaded and updated for you.
 
 See the CLI configuration section that follows.
 
