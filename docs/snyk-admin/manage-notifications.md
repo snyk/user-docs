@@ -40,6 +40,10 @@ An example follows of a Snyk notification for new issues and remediations in Pro
 
 Snyk provides controls to manage your own notifications. Administrators can manage the notification defaults for others in the [Group](manage-notifications.md#define-group-notification-defaults) or [Organization](manage-notifications.md#define-organization-notification-defaults).
 
+{% hint style="info" %}
+Weekly notification emails are sent only to Org members, so Group Admins must add themselves as an Org member for Organizations where they need to receive the emails.
+{% endhint %}
+
 You can also send notifications for an Organization to a designated Slack channel. For details, see  [Slack integration](../integrate-with-snyk/notification-and-ticketing-systems-integraitons/slack-integration.md).
 
 ### Define Group notification defaults
