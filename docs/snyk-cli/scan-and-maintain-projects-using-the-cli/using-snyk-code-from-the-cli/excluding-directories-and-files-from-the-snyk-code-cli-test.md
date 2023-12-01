@@ -54,7 +54,7 @@ snyk ignore --file-path=app.js && snyk ignore --file-path=db.js
 
 3\. When you enter the command `snyk ignore`, the `.snyk` file is created automatically in the `snyk-goof-master` folder:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - snyk code test - Exclusion - Example - .snyk file.png" alt=",snyk file lised in the folder"><figcaption><p><code>,snyk</code> file lised in the folder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk Code - CLI - snyk code test - Exclusion - Example - .snyk file.png" alt=".snyk file listed in the folder"><figcaption><p><code>.snyk</code> file listed in the folder</p></figcaption></figure>
 
 This `.snyk` file contains the files  specified for exclusion:
 
