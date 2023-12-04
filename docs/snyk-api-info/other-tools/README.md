@@ -30,7 +30,7 @@ Refer to the repositories for instructions on how to use the following additiona
 * [snyk-api-ts-client](https://github.com/snyk-tech-services/snyk-api-ts-client): Snyk API Typescript client.
 * [snyk-transitive-ignore](https://github.com/snyk-tech-services/snyk-transitive-ignore): Generate the Snyk ignore policy dynamically based on a provided list of packages.
 * [snyk-user-sync-tool](https://github.com/snyk-tech-services/snyk-user-sync-tool): Add, remove, and sync user memberships.
-* [snyk-licenses-texts](https://github.com/snyk-tech-services/snyk-licenses-texts): Provides Organization-level licenses used, copyrights, and dependencies data.
+* [snyk-licenses-texts](https://github.com/snyk-tech-services/snyk-licenses-texts): Provides Organization-level licenses used, copyrights (until January 8, 2024), and dependencies data.
 * [snyk-request-manager](https://github.com/snyk-tech-services/snyk-request-manager): Rate-controlled and retry-enabled request manager to interact with Snyk APIs.
 * [snyk-repo-issue-tracker](https://github.com/snyk-tech-services/snyk-repo-issue-tracker): A python script/module that allows for generating a changeset of issues between runs against the Snyk Project issues API.
 *   [snyk-repo-diff:](https://github.com/snyk-tech-services/snyk-repo-diff) Helps determine which repositories are not monitored by Snyk.
