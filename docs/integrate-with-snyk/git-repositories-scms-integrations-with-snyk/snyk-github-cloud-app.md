@@ -20,8 +20,7 @@ This feature is not yet supported for Snyk Broker.
 
 ## Known limitations of the GitHub Cloud App
 
-* Only one-to-one mapping between Snyk Organizations and GitHub organizations is supported.
-* The GitHub Cloud App is only available in prod16.
+Only one-to-one mapping between Snyk Organizations and GitHub organizations is supported.
 
 ## GitHub Cloud App benefits
 
