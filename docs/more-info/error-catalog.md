@@ -329,6 +329,54 @@ If this step is successful locally, it is possible that Snyk is running another 
 - [https://learn.microsoft.com/en-us/dotnet/core/tools/global-json](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json)
 - [https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L67](https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L67)
 
+### [SNYK-OS-DOTNET-0006](#snyk-os-dotnet-0006)
+
+#### Missing MSBuild Condition Construct in project file
+
+The `dotnet` tool was unable to locate the `.targets`, `.csproj` or `.props` file responsible for one or more MSBuild conditions in your project file.
+
+The tool encountered an error like 
+```
+/path/to/file/project.csproj(33,13): error MSB4100: Expected "$(SomeCondition)" to evaluate to a boolean instead of "", in condition "!$(SomeCondition)".
+```
+
+This means the condition definition is missing in the project file that is currently being restored and in any project linked to it from there.      
+
+Snyk can scan only the project files accessible in the current repository or the private dependencies available to Snyk.
+
+For example, if your code has the following structure:
+
+```title=project.targets
+<Project>
+  <PropertyGroup>
+    <SomeCondition Condition="'$(SomeCondition)' == ''">false</SomeCondition>
+  </PropertyGroup>
+</Project>
+```
+
+And
+
+```title=project.csproj
+<Project Sdk='Microsoft.NET.Sdk'>
+  <Import Project='..\external-libraries\some-library\project.targets' />
+  <PropertyGroup>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup Condition='!$(SomeCondition)'>
+    <PackageReference Include='Newtonsoft.Json' Version='13.0.3' />
+  </ItemGroup>
+</Project>
+```
+
+And `external-libraries` is not a part of your repository currently being scanned, Snyk is not able to find it.
+
+This error occurs when your code depends on external libraries that are added to or generated from your source code using external tools unknown to Snyk or as part of a build step in your build or a deployment pipeline.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditional-constructs](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditional-constructs)
+
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 
 #### Failed to access private module
@@ -1444,4 +1492,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-11-29T22:34:40.183Z
+--- Generated at 2023-12-04T11:21:49.046Z
