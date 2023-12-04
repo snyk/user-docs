@@ -482,6 +482,28 @@ This error appears when the authorization credentials do not allow access to the
 **Help Links:**
 - [https://go.dev/ref/mod#vcs](https://go.dev/ref/mod#vcs)
 
+### [SNYK-OS-GO-0008](#snyk-os-go-0008)
+
+#### Unable to fetch private dependencies
+
+The Go tool encountered a permissions error while fetching one of the private dependencies. Ensure that the integration token you used to sign in to Snyk is properly configured so that Snyk can access the private dependencies.
+
+The Snyk Go integration only supports private dependencies that are used inside the same Organization as the Project you are scanning.
+
+This error appears when Snyk is unable to properly access the authorization credentials for the requested private dependency. 
+
+**HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+
+### [SNYK-OS-GO-0009](#snyk-os-go-0009)
+
+#### Toolchain not available
+
+Could not download Go toolchain.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
 ### [SNYK-OS-MAVEN-0001](#snyk-os-maven-0001)
 
 #### Missing property
@@ -1492,4 +1514,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-12-04T11:21:49.046Z
+--- Generated at 2023-12-04T13:26:44.263Z
