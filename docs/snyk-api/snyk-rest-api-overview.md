@@ -79,10 +79,10 @@ HTTP/1.1 400 Bad Request
 Snyk REST API has per-endpoint version contracts. Each endpoint can have its own release and support lifecycle, independent of any other endpoint in Snyk REST API. In its most explicit form, the endpoint version number includes a date and stability tree, for example:
 
 ```
-2022-01-01~beta
+2023-11-27~beta
 ```
 
-This version number indicates that the requested endpoint should be at stability level `2022-01-01` or older `beta`. The possible stability levels are:
+This version number indicates that the requested endpoint should be at stability level 2023-11-27 or older `beta`. The possible stability levels are:
 
 * `ga` - Generally Available, the default. Snyk will support these for at least six months after the next GA release.
 * `beta` - Beta. Snyk will support these for at least three months after the next beta or GA release.
@@ -91,10 +91,10 @@ This version number indicates that the requested endpoint should be at stability
 Note: In the default case of Generally Available, there is no stability level specified in the version number itself (that is, only the date is present), for example:
 
 ```
-2022-01-01
+2023-11-27
 ```
 
-This means the requested endpoint should be `2022-01-01` or older on the Generally Available stability tree.
+This means the requested endpoint should be 2023-11-27 or older on the Generally Available stability tree.
 
 Granular version controls enable Snyk to introduce progressive enhancements. These may require small or minor backwards-incompatible changes. However, using granular version controls means Snyk can deliver rapid enhancements more quickly, while supporting existing endpoints for a guaranteed period of time.
 
@@ -117,8 +117,8 @@ Whenever you receive an API response, it will contain appropriate links in the b
     },
     "data": [ ... ],
     "links": {
-        "prev": "/orgs/123-abc-def-456/projects?version=2022-01-01~beta&limit=10&ending_before=v1.eyJpZCI6Mz1zODQyMH0%3D"
-        "next": "/orgs/123-abc-def-456/projects?version=2022-01-01~beta&limit=10&starting_after=v1.eyJpZCI6Mz1zODQyMH0%3D"
+        "prev": "/orgs/123-abc-def-456/projects?version=2023-11-27~beta&limit=10&ending_before=v1.eyJpZCI6Mz1zODQyMH0%3D"
+        "next": "/orgs/123-abc-def-456/projects?version=2023-11-27~beta&limit=10&starting_after=v1.eyJpZCI6Mz1zODQyMH0%3D"
     }
 }
 ```
