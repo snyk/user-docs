@@ -53,8 +53,10 @@ Developer dependencies (`scope=test`) are ignored as they are not pushed to prod
 
 The following manifest files are supported:
 
-* build.gradle (Groovy DSL)
-* build.gradle.kts (Kotlin DSL)
+* build.gradle (Groovy DSL) for SCM only
+* build.gradle.kts (Kotlin DSL) for both SCM and CLI
+
+See the [Java and Kotlin](../../../scan-applications/supported-languages-and-frameworks/java-and-kotlin.md#open-source-and-licensing) page for more details about the supported features.
 
 ### **Other**
 
