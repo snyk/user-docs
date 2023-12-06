@@ -6,14 +6,6 @@ Use this guide to apply Snyk effectively in your technology stack.
 
 ### Code analysis
 
-{% hint style="info" %}
-**Snyk Code for C/C++ is currently in Beta**
-
-The initial Beta release focuses mostly on desktop and server applications that run on the terminal on Linux. &#x20;
-
-You can enable it in Snyk Web UI in **Settings** > **Snyk Preview.**
-{% endhint %}
-
 * Snyk does not compile or require a build to perform analysis.
 * Snyk Code analyzes source code directly.
 * If you precompile components, make the source available during the scan.

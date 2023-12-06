@@ -314,7 +314,7 @@
       * [Import repositories to scan with Snyk Code](scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-code/import-repositories-to-scan-with-snyk-code.md)
     * [Snyk Code security rules](scan-using-snyk/snyk-code/snyk-code-security-rules/README.md)
       * [Apex rules](scan-using-snyk/snyk-code/snyk-code-security-rules/apex-rules.md)
-      * [C++ (Beta) rules](scan-using-snyk/snyk-code/snyk-code-security-rules/c++-beta-rules.md)
+      * [C++ rules](scan-using-snyk/snyk-code/snyk-code-security-rules/c++-beta-rules.md)
       * [C# and ASP.NET rules](scan-using-snyk/snyk-code/snyk-code-security-rules/c-and-asp.net-rules.md)
       * [Go rules](scan-using-snyk/snyk-code/snyk-code-security-rules/go-rules.md)
       * [Java rules](scan-using-snyk/snyk-code/snyk-code-security-rules/java-rules.md)

@@ -8,11 +8,14 @@ You might encounter false positives or false negatives for partially supported f
 
 ### Code analysis
 
-Snyk Code supports the following frameworks:
+Snyk Code supports the following:
 
-* C++
-* POSIX
-* [Win32](https://win32-framework.sourceforge.net/)
+* Operating systems
+  * Linux
+  * Windows (limited)
+* Embedded systems: Linux
+* GUI Framework&#x20;
+* Libraries: POSIX, C++ Standard Library, Boost, QT
 
 ### Open source and licensing
 
