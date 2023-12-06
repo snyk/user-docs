@@ -26,4 +26,4 @@ The sign-on process includes these steps:
 
 ## Additional resource for SSO
 
-Training: [SSO, authentication and user provisioning](https://training.snyk.io/courses/sso)
+Training: [SSO, authentication and user provisioning](https://learn.dev.snyk.io/lesson/sso-authentication-provisioning/)

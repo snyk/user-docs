@@ -14,7 +14,7 @@ You can also [ignore issues](ignore-issues.md) and [triage issues](../../manage-
 
 Based on your priorities, you can start [fixing vulnerabilities](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/).
 
-See the [Prioritize issues in the Snyk Web UI training course](https://training.snyk.io/learn/video/prioritize-ui) to learn about prioritization in action.
+See [Prioritize issues in the Snyk Web UI](https://learn.snyk.io/lesson/prioritize-issues-snyk) to learn about prioritization in action.
 
 
 

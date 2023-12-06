@@ -22,7 +22,7 @@ As you prepare for your team to start adopting Snyk as part of a secure developm
 
 You will want to roll Snyk out in phases depending on how far you and your team have progressed with developer security: awareness, visibility, preventing issues, fixing the backlog, and optimizing.
 
-See the [Ways to integrate Snyk at your company](https://training.snyk.io/courses/ways-to-use-snyk) course in Snyk Training for more details.
+See the [Ways to integrate Snyk at your company](https://learn.dev.snyk.io/lesson/integrate-snyk-at-your-company/) course for more details.
 
 ## How to structure your Snyk account
 
@@ -72,7 +72,7 @@ Choose the settings under **Default Snyk test for pull requests**:
 * Pull request assignees for private repos
 * Auto-detect Dockerfiles
 
-See the[ Source Code Manager Configurations](https://training.snyk.io/courses/source-code-manager-configurations?query=Source%20code) training course for details on how to match these integration settings with your security maturity phase.
+See the [Source Code Manager Configurations](https://learn.dev.snyk.io/lesson/configure-snyk-scm/) course for details on how to match these integration settings with your security maturity phase.
 
 See also [Integrate with Snyk](../integrate-with-snyk/) for more details.
 

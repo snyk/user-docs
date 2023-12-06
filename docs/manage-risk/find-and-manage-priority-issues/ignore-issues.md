@@ -51,7 +51,7 @@ When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and 
 
 <figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
-For more information, see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
+For more information, see the training: [Ignoring issues](https://learn.snyk.io/lesson/ignoring-issues/).
 
 ### Ignore issues in the CLI
 

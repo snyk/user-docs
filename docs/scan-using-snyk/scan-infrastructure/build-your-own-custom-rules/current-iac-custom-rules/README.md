@@ -11,7 +11,7 @@ These rules are intended to meet most of your needs on your first scan, but you 
 
 #### Training - custom rules
 
-[See here](https://training.snyk.io/courses/creating-iac-custom-rules) for interactive training on IaC custom rules.
+[See Snyk Learn](https://learn.snyk.io/lesson/iac-custom-rules/) for interactive training on IaC custom rules.
 
 ## Creating additional Snyk IaC Custom Rules
 

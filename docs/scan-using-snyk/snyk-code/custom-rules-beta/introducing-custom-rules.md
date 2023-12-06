@@ -43,4 +43,4 @@ For more information, see [Using Snyk Code via the IDE](../using-snyk-code-in-an
 
 ## Additional resource
 
-To learn from an end-to-end example, see the Snyk Training course [Snyk Code Custom Rules](https://training.snyk.io/learn/course/snyk-code-custom-rules/main/snyk-code-custom-rules).
+To learn from an end-to-end example, see the Snyk Learn course [Snyk Code Custom Rules](https://learn.snyk.io/lesson/custom-rules-for-snyk-code/).

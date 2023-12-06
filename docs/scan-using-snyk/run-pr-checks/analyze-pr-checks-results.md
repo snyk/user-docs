@@ -82,4 +82,4 @@ The issue is marked as **Passed** and shows up as **Skipped** in the PR Checks c
 
 ## More resources for PR Checks
 
-To learn from an end-to-end example in Bitbucket, see the following Snyk Training course: [Use Snyk to block builds in Bitbucket](https://training.snyk.io/courses/default-snyk-test-bb).
+To learn from an end-to-end example in Bitbucket, see the following Snyk Learn course: [Use Snyk to block builds in Bitbucket](https://learn.snyk.io/lesson/snyk-with-bitbucket/).

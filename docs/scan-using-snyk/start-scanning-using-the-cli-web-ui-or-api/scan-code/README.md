@@ -3,7 +3,7 @@
 You can scan your code using Snyk Code:
 
 * In the [Snyk Web UI](../../../getting-started/explore-snyk-through-the-web-ui.md) (including [PR checks](../../run-pr-checks/))
-* With your [IDE](../../../integrate-with-snyk/use-snyk-in-your-ide/)
+* With your [IDE](../../../integrate-with-snyk/ide-tools/)
 * Through the [Snyk CLI](../../../snyk-cli/)
 * Through [Snyk API](../../../snyk-api/)
 

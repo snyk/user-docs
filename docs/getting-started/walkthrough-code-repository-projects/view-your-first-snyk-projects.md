@@ -86,6 +86,6 @@ If your Snyk Open Source scan shows no vulnerabilities in your open-source libra
 
 ## More information and next step
 
-Refer to the Snyk Training course, [Introduction to the Snyk UI](https://training.snyk.io/courses/introduction-to-the-snyk-ui), to learn more about reviewing results from open-source, code, container, and infrastructure file scans.&#x20;
+Refer to the course [Introduction to the Snyk UI](https://learn.dev.snyk.io/lesson/intro-to-snyk-ui/) to learn more about reviewing results from open-source, code, container, and infrastructure file scans.&#x20;
 
 Now you understand the results you are seeing, you must [understand the vulnerabilities](understand-your-vulnerabilities.md) themselves.

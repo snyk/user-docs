@@ -10,8 +10,6 @@ You get a notification that a browser window will open (lower right).
 
 * When you are redirected to the browser for authentication, click **Authenticate**.
 
-When you are redirected to the browser for authentication, click **Authenticate**.
-
 <figure><img src="../../../.gitbook/assets/authenticate-23-06.png" alt="Authenticate"><figcaption><p>Authenticate</p></figcaption></figure>
 
 You should see a confirmation message that authentication is complete and you can now use Snyk.

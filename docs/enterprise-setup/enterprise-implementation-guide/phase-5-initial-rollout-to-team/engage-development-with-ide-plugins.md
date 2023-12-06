@@ -2,7 +2,7 @@
 
 ## Introduce Snyk IDE plugins to your developers
 
-Encouraging your developers to install a [Snyk IDE plugin](../../../integrate-with-snyk/use-snyk-in-your-ide/) is a key step to improving developer adoption and achieving “shift left”, where developers are more empowered and responsible to fix issues before they are committed to pull requests or added to builds.
+Encouraging your developers to install a [Snyk IDE plugin](../../../integrate-with-snyk/ide-tools/) is a key step to improving developer adoption and achieving “shift left”, where developers are more empowered and responsible to fix issues before they are committed to pull requests or added to builds.
 
 Snyk IDE plugins help developers to find and fix security vulnerabilities and issues. This allows individual developers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
 
@@ -19,12 +19,12 @@ Here is a link to a webinar that covers IDE usage in more detail, including a de
 
 The following Snyk plugins and extensions are available:
 
-* [Eclipse plugin](../../../integrate-with-snyk/use-snyk-in-your-ide/eclipse-plugin/)
-* [JetBrains plugins](../../../integrate-with-snyk/use-snyk-in-your-ide/jetbrains-plugins/)
-* [Visual Studio extension](../../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-extension/)
-* [Visual Studio Code extension](../../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/)
+* [Eclipse plugin](../../../integrate-with-snyk/ide-tools/eclipse-plugin/)
+* [JetBrains plugins](../../../integrate-with-snyk/ide-tools/jetbrains-plugins/)
+* [Visual Studio extension](../../../integrate-with-snyk/ide-tools/visual-studio-extension/)
+* [Visual Studio Code extension](../../../integrate-with-snyk/ide-tools/visual-studio-code-extension/)
 
-For further guidance, please review this training session: [Introduction to using Snyk in an IDE](https://training.snyk.io/courses/introduction-to-using-snyk-in-an-ide)
+For further guidance, please review this training session: [Introduction to using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/)
 
 {% hint style="info" %}
 &#x20;If your Snyk application is hosted on our EU or AU data center, then you must specify this in your [IDE plugin settings](https://docs.snyk.io/more-info/data-residency-at-snyk#ides-urls) with the URL relevant to your region.\

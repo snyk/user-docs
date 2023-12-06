@@ -61,6 +61,6 @@ You may want to create a Jira issue even if Snyk knows how to fix the change, an
 
 ## More information and next step
 
-For information about tracking the work, see the [Jira issues](https://training.snyk.io/learn/video/jira-issue) training video. For information about the overall management of issues, see [Manage risk](../../manage-risk/) in the documentation.
+For information about tracking the work, see the [Jira issues](https://learn.snyk.io/lesson/jira-issue/) video. For information about the overall management of issues, see [Manage risk](../../manage-risk/) in the documentation.
 
 Next, look at [using Snyk Reports to manage the work of your team](use-reports-in-managing-risk.md).

@@ -81,19 +81,19 @@ The platform is an easy way for teams to get an introduction to Snyk tools and u
 
 ### Implementation course catalog
 
-Learn about key decisions and tasks for Snyk implementation in this [set of resources](https://training.snyk.io/pages/implement). You'll find information to help decision makers and teams decide where to implement Snyk and the best practices for rolling out Snyk across a business or enterprise. You'll learn different ways to structure your account and how to set up single sign-on (SSO) for authentication and user provisioning.
+Learn about key decisions and tasks for Snyk implementation in this [set of resources](https://learn.snyk.io/catalog/product-training/?type=product-training\&format=learning\_path). You'll find information to help decision-makers and teams decide where to implement Snyk and the best practices for rolling out Snyk across a business or enterprise. You'll learn different ways to structure your account and how to set up single sign-on (SSO) for authentication and user provisioning.
 
 ### Configuring and managing Snyk course catalog
 
-Learn about setting up, configuring, and managing an Organization in Snyk. You'll find [topics](https://training.snyk.io/pages/org-admins) to get you off to the right start, including setting the defaults for your Organization's notifications and alerts. You'll also learn different ways to configure various automations that Snyk offers to optimize your application security.
+Learn about setting up, configuring, and managing an Organization in Snyk. You'll find [topics](https://learn.snyk.io/catalog/product-training/?type=product-training\&format=learning\_path) to get you off to the right start, including setting the defaults for your Organization's notifications and alerts. You'll also learn different ways to configure various automations that Snyk offers to optimize your application security.
 
 ### Finding and fixing issues with Snyk course catalog
 
-Learn how to use Snyk to find and fix issues in different ways. These [short courses](https://training.snyk.io/pages/dev-tasks) demonstrate how to get started with the Snyk CLI, with a plug-in or extension to use in your IDE, and how to find, prioritize, and fix issues via the Snyk Web UI.
+Learn how to use Snyk to find and fix issues in different ways. These [short courses ](https://learn.snyk.io/catalog/product-training/?type=product-training\&format=learning\_path)demonstrate how to get started with the Snyk CLI and with a plug-in or extension to use in your IDE and how to find, prioritize, and fix issues through the Snyk Web UI.
 
 ### Video library catalog
 
-In addition to the courses available for enrolment, the [video library ](https://training.snyk.io/pages/video-library)offers individual videos that provide quick demonstrations or refreshers on key Snyk tasks. Each video includes links to related courses.
+In addition to the courses available for enrolment, the [video library](https://learn.dev.snyk.io/catalog/product-training/?type=product-training) offers individual videos that provide quick demonstrations or refreshers on key Snyk tasks. Each video includes links to related courses.
 
 ### Additional resources
 
@@ -105,5 +105,5 @@ The [Digital Success program](https://snyk.io/digital-customer-success/) offers 
 * Kickoff sessions: Guided learning for roll out best practices
 
 {% hint style="info" %}
-Also see [Snyk Learn](snyk-learn.md) for developer education for general security across a variety of languages and ecosystems.
+Also, see [Snyk Learn](snyk-learn.md) for developer education for general security across a variety of languages and ecosystems.
 {% endhint %}

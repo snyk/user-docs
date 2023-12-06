@@ -3,7 +3,7 @@
 Snyk has many resources to assist developers in their learning security and the Snyk Platform
 
 * [Snyk Learn](https://learn.snyk.io) - teaches developers how to stay secure with interactive lessons exploring vulnerabilities across various languages and ecosystems.
-* [Snyk Training](https://training.snyk.io) - provides product training on the Snyk Platform. Learning paths are available for key stakeholder roles like Developers and Administrators.
+* [Snyk Product training](https://learn.snyk.io/catalog/product-training/) - provides product training on the Snyk Platform. Learning paths are available for key stakeholder roles like Developers and Administrators.
 
 ## Snyk Learn
 
@@ -17,5 +17,5 @@ We recommend introducing developers to this resource early on in the rollout pro
 
 ## Snyk Training
 
-[Snyk Training](https://training.snyk.io) provides training on the Snyk Platform. Learning paths are available for Developers, Administrators, and other key roles. Additionally, individual lessons are searchable from the main interface.
+[Snyk Product training](https://learn.snyk.io/catalog/product-training/) provides training on the Snyk Platform. Learning paths are available for Developers, Administrators, and other key roles. Additionally, individual lessons are searchable from the main interface.
 

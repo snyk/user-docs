@@ -24,4 +24,5 @@ If you are on an [Enterprise plan](../more-info/plans.md), see [Enterprise setup
 
 See also:
 
-* [Snyk Training](https://training.snyk.io/):  introductory training.
+* [Snyk Learn](https://learn.snyk.io/catalog/product-training/https://learn.dev.snyk.io/catalog/product-training/):  introductory training.
+
