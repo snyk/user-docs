@@ -27,13 +27,13 @@ To verify that the Eclipse plugin is ready to start scanning, be sure the Snyk p
 * Snyk CLI path that the Eclipse plugin will use
 * Snyk API token, securely stored through the Eclipse's secure storage mechanism
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="CLI path and API token in preferences"><figcaption><p>CLI path and API toekn in preferences</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (347).png" alt="CLI path and API token in preferences"><figcaption><p>CLI path and API toekn in preferences</p></figcaption></figure>
 
 ## Configure the API token manually
 
 You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="Set the API token"><figcaption><p>Set the API token</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt="Set the API token"><figcaption><p>Set the API token</p></figcaption></figure>
 
 ## Next steps
 
