@@ -43,13 +43,13 @@ To enable the open beta integration, navigate to [Snyk Preview](../../snyk-admin
 Reachable vulnerability analysis using the Snyk CLI, other Git integrations, and other languages is not currently supported.
 {% endhint %}
 
-**Enabling Reachability for brokered connections**
+## **Enabling Reachability for brokered connections**
 
 If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See the [Snyk Code - Clone capability with Broker for Docker](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md), the [Broker rules for Snyk Code](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/broker-rules-for-snyk-code.md), and the [Snyk Broker - Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/) documentation for configuration details when the Broker is used with Snyk Code.&#x20;
 
-### Using Reachability
+## Using Reachability
 
-#### The Reachability status&#x20;
+### The Reachability status&#x20;
 
 After a vulnerability is identified, it receives one of two reachability statuses:
 
@@ -60,7 +60,7 @@ After a vulnerability is identified, it receives one of two reachability statuse
 If a `no path found` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
 {% endhint %}
 
-#### On the Project page
+### On the Project page
 
 After importing or testing a Project using the Snyk UI, the Project is monitored by Snyk, and the results of the reachable vulnerabilities analysis appear on the Project page in the following places:
 
@@ -74,7 +74,7 @@ After importing or testing a Project using the Snyk UI, the Project is monitored
 Reachability status is currently not available using Reports or the API.
 {% endhint %}
 
-#### As part of the Risk Score
+### As part of the Risk Score
 
 [Risk Score](../risk-score.md) helps you apply holistic Risk-Based prioritization that combines multiple factors, either objective to the vulnerability or the context of your application. Reachability is such a contextual factor that will significantly increase the overall score.&#x20;
 
@@ -90,7 +90,7 @@ Risk Score is available on the Projects page, API, and Reports.&#x20;
 [Priority score](priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;
 {% endhint %}
 
-### About Reachability analysis&#x20;
+### Reachability analysis&#x20;
 
 Snyk uses a combination of security expert analysis, program analysis, and various AI techniques to determine the reachability of a vulnerability, including these steps of analysis:&#x20;
 
