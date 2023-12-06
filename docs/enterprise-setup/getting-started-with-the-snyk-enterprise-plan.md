@@ -116,4 +116,4 @@ A scan with [**Snyk iac test**](../snyk-cli/scan-and-maintain-projects-using-the
 * If you want developers to try Snyk in their local environment using the IDE or CLI, review the [Getting started guide for individuals and small teams](../getting-started/getting-started-with-snyk-free-team-plan.md).
 * To get specific recommendations for your tech stack, visit the guide specific to your language.
 * When you are ready to plan a Snyk rollout to more teams, review [Preparing for implementation of the Enterprise plan](broken-reference) for more information.
-* See the Launch Snyk to your teams course for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.
+* See the [Launch Snyk to your teams](https://learn.dev.snyk.io/catalog/product-training/) training material for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.
