@@ -133,14 +133,14 @@ When Git repository cloning is enabled, Snyk will ingest, through configured SCM
 
 Snyk uses cloud products from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to process and store the data in a cache.
 
-Data is cached for 24 hours “per commit”, meaning that for every commit pushed to a repository that Snyk is tracking, the contents of that commit will be held in a cache for up to 24 hours. Multiple commits within a single 24-hour period will result in multiple caches with their own 24-hour lifecycle. At the end of each 24-hour lifecycle, the cache is automatically deleted according to cloud provider policies.
+Data is cached up to 48 hours “per commit”, meaning that for every commit pushed to a repository that Snyk is tracking, the contents of that commit will be held in a cache for up to 48 hours. Multiple commits within a single 48-hour period will result in multiple caches with their own 48-hour lifecycle. At the end of each 48-hour lifecycle, the cache is automatically deleted according to cloud provider policies.
 
 ### Safeguards Snyk puts in place to ensure data is secure
 
 * Snyk will perform a clone only when an SCM integration flow requires it, for example, PR check, import, and test.
 * Communication between the cloning service and cache is encrypted with TLS 1.2.
 * Cloned assets are deleted from the file system immediately after populating the cache.
-* The cache for a clone is deleted after a maximum of 24 hours.
+* The cache for a clone is deleted after a maximum of 48 hours.
 * All data is handled by Snyk in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
 * Your data is analyzed only for the purposes of improving code security and code quality and in accordance with your Data Processing Addendum.
 
