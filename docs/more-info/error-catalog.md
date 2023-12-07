@@ -53,6 +53,22 @@ Authentication credentials not recognized, or user access is not provisioned. Re
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 
+### [SNYK-0006](#snyk-0006)
+
+#### Test Limit Reached error
+
+Maximum number of test reached. 
+
+This means you have fully consumed your test quota for your level of subscription. 
+This will cause Snyk Test on PRs and CLI to fail. If this is an blocking issue, you can either deactivate Snyk Test on the project of upgrade your subscription.
+
+**HTTP Status:** [406](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)
+
+**Help Links:**
+- [https://support.snyk.io/hc/en-us/articles/4409805538833-Rate-limit-hit-while-testing-the-project](https://support.snyk.io/hc/en-us/articles/4409805538833-Rate-limit-hit-while-testing-the-project)
+- [https://docs.snyk.io/scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test](https://docs.snyk.io/scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test)
+- [https://support.snyk.io/hc/en-us/articles/360001945297-Snyk-Test-of-PR-failing-due-to-test-limit](https://support.snyk.io/hc/en-us/articles/360001945297-Snyk-Test-of-PR-failing-due-to-test-limit)
+
 ### [SNYK-9999](#snyk-9999)
 
 #### Request not fulfilled due to server error 
@@ -1514,4 +1530,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-12-07T10:56:28.518Z
+--- Generated at 2023-12-07T13:57:10.532Z
