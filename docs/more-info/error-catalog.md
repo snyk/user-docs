@@ -70,7 +70,7 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 
 #### Analysis file count limit exceeded
 
-This error occurs when the analysis target has a supported file count which exceeds current system limits.
+This error occurs when the analysis target has a supported file count that exceeds current system limits.
 
 To reduce the file count, use a `.snyk` file to ignore specified directories or files. Alternatively, use the Snyk CLI to analyze individual subdirectories separately.
 
@@ -1514,4 +1514,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-12-04T13:26:44.263Z
+--- Generated at 2023-12-07T10:56:28.518Z
