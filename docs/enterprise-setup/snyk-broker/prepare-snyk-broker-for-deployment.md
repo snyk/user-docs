@@ -2,6 +2,12 @@
 
 ## Prerequisites for Snyk Broker
 
+{% hint style="info" %}
+The use of Snyk Broker on Windows is not supported. Snyk recommends that Windows users deploy Broker using Linux.
+{% endhint %}
+
+The following are prerequisites for using Snyk Broker:
+
 * Client machine system requirements: 1 CPU, 256MB of RAM
 * Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) that is also allowed by any firewalls installed on your network
 * A Snyk account
