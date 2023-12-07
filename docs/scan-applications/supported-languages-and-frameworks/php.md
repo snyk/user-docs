@@ -8,9 +8,7 @@ You might encounter false positives or false negatives for partially supported f
 
 ### Code analysis
 
-{% hint style="info" %}
-Interfile is currently not supported. The data flow is monitored within a single file, not between multiple files.
-{% endhint %}
+Interfile is supported, as the data flow is monitored between multiple files.
 
 Snyk Code supports the following frameworks:
 
