@@ -54,9 +54,13 @@ After Snyk has been authorized, you will be asked to authorize Slack to connect 
 If multiple Slack workspaces are available, a dropdown will be visible at the top right of the page. Select the desired Slack workspace.
 {% endhint %}
 
-After this step is complete, you can configure the integration to choose the Slack channel where issue notifications for the Organization are sent, and also filter by severity level.
+After this step is complete, you can configure the integration to provide a Slack channel ID for the channel where issue notifications for the Organization are sent, and also filter by severity level.
 
-<figure><img src="../../.gitbook/assets/slack-app4.png" alt="Choose Slack channel and severity level for the notifications for the Organization"><figcaption><p>Choose Slack channel and severity level for the notifications for the Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/slack-app-settings.png" alt="Choose Slack channel and severity level for the notifications for the Organization"><figcaption><p>Choose Slack channel and severity level for the notifications for the Organization</p></figcaption></figure>
+
+{% hint style="info" %}
+To find the channel ID of a Slack Channel, open Slack, right-click on the channel name, select **View channel details**, then scroll down to the bottom of the window where you will see the channel ID, for example, C2TB2222N.
+{% endhint %}
 
 {% hint style="info" %}
 To add the Snyk for Slack app to a private channel, you must first add the app manually to the channel from within Slack and then select the channel within the Snyk integration.
@@ -101,7 +105,7 @@ To set a Project level override, find the ID of the Project for which you want t
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (301).png" alt="Project notification customization creation dialog" width="409"><figcaption><p>Project notification customization creation dialog</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/slack-app-project-override.png" alt="Project notification customization creation dialog" width="563"><figcaption><p>Project notification customization creation dialog</p></figcaption></figure>
 
 </div>
 
