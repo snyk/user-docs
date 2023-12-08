@@ -55,12 +55,9 @@ Authentication credentials not recognized, or user access is not provisioned. Re
 
 ### [SNYK-0006](#snyk-0006)
 
-#### Test Limit Reached error
+#### Test limit reached
 
-Maximum number of test reached. 
-
-This means you have fully consumed your test quota for your level of subscription. 
-This will cause Snyk Test on PRs and CLI to fail. If this is an blocking issue, you can either deactivate Snyk Test on the project of upgrade your subscription.
+You have reached the maximum number of tests in your Snyk plan. This will cause Snyk tests on PRs and CLI to fail. Deactivate Snyk Test on your Project or upgrade your Snyk plan.
 
 **HTTP Status:** [406](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)
 
@@ -1530,4 +1527,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-12-07T13:57:10.532Z
+--- Generated at 2023-12-08T10:02:01.368Z
