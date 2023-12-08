@@ -23,12 +23,12 @@ Snyk Code supports the following frameworks:
 Features may not be available, depending on your plan. See the [Plans and pricing ](https://snyk.io/plans/) page for more details.
 {% endhint %}
 
-| Package managers / Features                  | CLI support | Git support    | License scanning | Fix PRs |
-| -------------------------------------------- | ----------- | -------------- | ---------------- | ------- |
-| [Pip](https://pypi.org/project/pip/)         | ✔︎          | ✔︎             | ✔︎               | ✔︎      |
-| [Poetry](https://python-poetry.org)          | ✔︎          | ✔︎             | ✔︎               |         |
-| [Pipenv](https://pipenv.pypa.io/en/latest/)  | ✔︎          | ✔︎ (Open beta) | ✔︎               |         |
-| setup.py                                     | ✔︎          |                | ✔︎               |         |
+| Package managers / Features                  | CLI support | Git support | License scanning | Fix PRs |
+| -------------------------------------------- | ----------- | ----------- | ---------------- | ------- |
+| [Pip](https://pypi.org/project/pip/)         | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
+| [Poetry](https://python-poetry.org)          | ✔︎          | ✔︎          | ✔︎               |         |
+| [Pipenv](https://pipenv.pypa.io/en/latest/)  | ✔︎          | ✔︎          | ✔︎               |         |
+| setup.py                                     | ✔︎          |             | ✔︎               |         |
 
 Snyk builds a dependency tree and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the dependencies in the tree.
 
@@ -142,8 +142,7 @@ To scan your Projects, you must ensure your repository contains the supported ma
 #### Pip and Git repositories
 
 {% hint style="warning" %}
-URLs in `requirements.txt` files are not supported, as this poses a security risk.\
-They are removed before resolving the dependencies in the files.
+URLs in `requirements.txt` files are not supported. They are removed before resolving the dependencies in the files.
 {% endhint %}
 
 To scan Pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
@@ -179,10 +178,6 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 
 #### Pipenv and Git repositories
 
-{% hint style="info" %}
-Pipenv is available as an open beta feature, meaning that some of its functionalities might be subject to change.
-{% endhint %}
-
 {% hint style="warning" %}
 Private PyPI mirrors are not supported. `Pipfiles` specifying a private mirror as their only source will not be imported.
 {% endhint %}
@@ -190,7 +185,7 @@ Private PyPI mirrors are not supported. `Pipfiles` specifying a private mirror a
 To scan Pipenv Projects, Snyk analyzes your `Pipfile` and `Pipfile.lock` files using native `pipenv` tooling in an isolated Linux environment.
 
 {% hint style="info" %}
-When you scan in the isolated environment, private packages and those with non-Linux OS requirements may be unresolvable and omitted from the dependency tree.
+Private packages and those with non-Linux OS requirements may be unresolvable and omitted from the dependency tree.
 
 If a `Pipfile.lock` is present, any unresolved packages it contains are added to the top level of the dependency tree using versions from the lock file.&#x20;
 {% endhint %}
@@ -219,9 +214,9 @@ You can specify the version of Python that Snyk uses to scan dependencies in bot
 #### Pip and Python versions
 
 {% hint style="info" %}
-When you are scanning Pip Projects imported from Git, Snyk uses Python 2 or 3.&#x20;
+When scanning Pip Projects imported from Git, Snyk uses Python 2 or 3.&#x20;
 
-Currently the default supported versions are `2.7.16` and `3.7.4.`
+Currently, the default supported versions are `2.7.16` and `3.7.4.`
 {% endhint %}
 
 By default, Snyk tests Pip Projects using Python 3.
@@ -253,10 +248,6 @@ language-settings:
 In this example, Snyk runs the scan using its currently supported version of Python 3. Snyk does not use the exact minor and patch version specified.
 
 #### Pipenv and Python versions
-
-{% hint style="warning" %}
-Pipenv is available as an open feature, meaning that some of its functionalities might be subject to change.
-{% endhint %}
 
 {% hint style="info" %}
 Currently supported Python versions are `3.8`, `3.9`, `3.10`, `3.11`.
