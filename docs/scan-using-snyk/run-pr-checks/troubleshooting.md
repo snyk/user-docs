@@ -49,4 +49,4 @@ To re-run PR Checks results:
 
 Provide specific users or roles with the capability to pass the PR Check when errors happen. This can be done through the Snyk link in the PR Check and Marking as successful.&#x20;
 
-[^1]: [andrei.onciu](http://127.0.0.1:5000/u/Ge4Ptulj2Hb65sgVH1Uanpl5nZv2 "mention") the link here is not&#x20;
+[^1]: [andrei.onciu](https://app.gitbook.com/u/Ge4Ptulj2Hb65sgVH1Uanpl5nZv2 "mention") the link here is not&#x20;
