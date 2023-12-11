@@ -44,7 +44,7 @@ New licenses added by Snyk will inherit the **Unknown** license type severity. I
 
 If you notice a license with the wrong license type assigned to it, you can contact Snyk support. Snyk will investigate the request and update the license type if needed.
 
-## **Supported package managers**
+## **Supported package types**
 
 {% hint style="warning" %}
 Snyk does not support scanning for license issues for package versions that include a git commit hash.
@@ -65,4 +65,4 @@ Snyk does not support scanning for license issues for package versions that incl
 Snyk does not support scanning for license issues for package versions that include a git commit hash.
 {% endhint %}
 
-C/C++ is not supported for scanning for license issues.
+C/C++ scanning for license issues is supported in Open Beta.
