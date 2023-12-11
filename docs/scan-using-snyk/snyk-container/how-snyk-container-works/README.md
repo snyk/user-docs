@@ -17,6 +17,10 @@ When Snyk Container tests an image using any of the available integrations, Snyk
 * Popular unmanaged software (installed outside a package manager)
 * Application packages that are based on the presence of a manifest file.
 
+{% hint style="info" %}
+To determine the final filesystem, Snyk does not squash the layers of the container image into one. It scans for supported application package manifest files in each intermediate layer of the container image, even when those files are deleted by a subsequent layer.
+{% endhint %}
+
 Because Snyk reads the information from the file system, the container does not need to be run. This means that for a successful scan, no container or foreign code must be run.
 
 After Snyk has the list of installed software, Snyk looks that up against the Snyk Vulnerability Database, which combines public sources with proprietary research.
