@@ -33,7 +33,7 @@ Use the [Connect an SCM integration](connect-an-scm-integration.md) page for ste
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove it from your configuration.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Snyk AppRisk - Integration status</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (4).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Snyk AppRisk - Integration status</p></figcaption></figure>
 
 ## Using Snyk Broker
 

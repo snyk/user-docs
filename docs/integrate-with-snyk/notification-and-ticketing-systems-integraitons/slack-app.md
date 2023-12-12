@@ -84,7 +84,7 @@ New issue notifications may take up to an hour to start propagating to your Slac
 
 To override Slack notification settings for a Project, use the customizations table.
 
-<figure><img src="../../.gitbook/assets/image (118).png" alt="Empty Project notification customizations table"><figcaption><p>Empty Project notification customizations table</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (118) (3).png" alt="Empty Project notification customizations table"><figcaption><p>Empty Project notification customizations table</p></figcaption></figure>
 
 ### Find your Project ID
 
