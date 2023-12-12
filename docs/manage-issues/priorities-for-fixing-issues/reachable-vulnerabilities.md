@@ -14,7 +14,7 @@ Enabling Reachability is done using the Organization setting:&#x20;
 * Navigate to the Reachable vulnerabilities analysis section.
 * Activate the Reachable vulnerabilities analysis and save your changes.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="Enabling reachability setting"><figcaption><p>Enabling reachability setting</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (9).png" alt="Enabling reachability setting"><figcaption><p>Enabling reachability setting</p></figcaption></figure>
 
 After it is enabled, reachability analysis is done as part of testing Projects.&#x20;
 
@@ -82,7 +82,7 @@ Risk Score is available on the Projects page, API, and Reports.&#x20;
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Reachability as part of the Risk Score</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (7).png" alt=""><figcaption><p>Reachability as part of the Risk Score</p></figcaption></figure>
 
 </div>
 

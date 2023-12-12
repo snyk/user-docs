@@ -23,7 +23,7 @@ To meet this requirement, first add the `Critical`, `Production`, and `Frontend`
 
 Next, create a new license policy and apply the policy to those attributes:
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt="Apply license policy to selected attributes"><figcaption><p>Apply license policy to selected attributes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt="Apply license policy to selected attributes"><figcaption><p>Apply license policy to selected attributes</p></figcaption></figure>
 
 {% hint style="info" %}
 In the policy itself, a high severity can be applied to any copyleft license identified in Projects, such as the [**GPL-3.0**](https://snyk.io/learn/what-is-gpl-license-gplv3-explained/) and [**AGPL-3.0 licenses**](https://snyk.io/learn/agpl-license/). \
@@ -60,7 +60,7 @@ An example follows of a PR check on a JavaScript package license.
 
 This example shows a pull request to add the `fullpage.js` package to a JavaScript application. Although this change passes the security policy check, because the latest version of the package has no known vulnerability, it fails the license policy check because the GPLv3 license is included in violation of the license policy of the company.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (2).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
 
 ## Apply policies in CI/CD
 
