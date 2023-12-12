@@ -169,6 +169,6 @@ Suppressing vulnerabilities carries a level of risk, so you can make this functi
 
 ## Using ignores in reports
 
-If you have access to the Snyk Reports feature, you can see an overview of how many issues in the Projects in your Organization are ignored, with an option to filter the issues so you can drill down into each one. If the issue was ignored in the Snyk Web UI, Snyk includes a credit so you can see who initiated it.
+If you have access to the Snyk Reporting feature, and use the new [Snyk Reports](../../manage-issues/reporting/available-snyk-reports.md), you can display an Issue Status report showing only the open, ignored issues.
 
-For more information, see [Legacy reports](../../manage-issues/reporting/legacy-reports/).
+If you use the [Legacy reports](../../manage-issues/reporting/legacy-reports/), you can see an overview of how many issues in the Projects in your Organization are ignored, with an option to filter the issues so you can drill down into each one. If the issue was ignored in the Snyk Web UI, Snyk includes a credit so you can see who initiated it.
