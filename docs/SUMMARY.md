@@ -505,6 +505,8 @@
         * [Understand your issues](manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/using-the-insights-ui/understand-your-issues.md)
         * [Evidence graph](manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/using-the-insights-ui/evidence-graph.md)
         * [Export and customize views](manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/using-the-insights-ui/export-and-customize-views.md)
+    * [Dashboard for Snyk AppRisk](manage-risk/snyk-apprisk/dashboard-for-snyk-apprisk.md)
+    * [Data Considerations for Snyk AppRisk](manage-risk/snyk-apprisk/data-considerations-for-snyk-apprisk.md)
   * [Risk Score](manage-issues/risk-score.md)
   * [Find and manage priority issues](manage-risk/find-and-manage-priority-issues/README.md)
     * [Severity levels](manage-issues/prioritizing-issues/severity-levels.md)
