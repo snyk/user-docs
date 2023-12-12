@@ -3,7 +3,7 @@
 Each inventory layout is presented in a table format, detailing the available key attributes:
 
 * [Assets](inventory-capabilities.md#asset)
-* [Controls](inventory-capabilities.md#controls)
+* [Coverage Controls](inventory-capabilities.md#coverage-controls)
 * [Tags](inventory-capabilities.md#tags)
 * [Developers](inventory-capabilities.md#developers)
 * [Class](inventory-capabilities.md#class)
