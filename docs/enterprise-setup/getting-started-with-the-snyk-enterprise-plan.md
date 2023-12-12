@@ -24,9 +24,9 @@ The rest of this page explains how to connect a Git repository to Snyk and how t
 Snyk provides limited free tests per month for each type of scan, Snyk Open Source, Code, Container, or IaC. For unlimited tests, ensure you have a paid plan for the type of testing you need to do, and that the setting for that type has been enabled.
 {% endhint %}
 
-## Create or log into your Snyk account
+## Create or log in to your Snyk account
 
-You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md) to try out a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Logging in to an existing account](broken-reference).
+You must have a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md) to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Logging in to an existing account](broken-reference).
 
 ## **Enable Snyk Code**
 
@@ -43,8 +43,6 @@ Add a Snyk Project to connect a Git repository integration. This video demonstra
 Adding projects video
 {% endembed %}
 
-See [Preparing for implementation of the Enterprise plan](broken-reference) for more information on configuring the Git repository integration for your Organization.
-
 ## **Configure initial Snyk integration settings**
 
 After your Git repository is connected (see [See Git repository integrations (SCMs)](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) for details), you have automated processes available to automatically check pull requests for vulnerabilities, automatically generate pull requests, and automatically generate dependency upgrade pull requests. Snyk recommends you disable these options initially.
@@ -60,7 +58,7 @@ The settings for each Snyk Project are inherited from the Snyk Organization inte
    4. **Automatic dependency upgrade pull requests**
 
 {% hint style="info" %}
-Snyk recommends defining standards for these options as well as notification defaults before you add more than a few Projects. When your teams are ready for a broader implementation, Snyk recommends defining standards for these options according to your security maturity. Review [Preparing for implementation of the Enterprise plan](broken-reference) for more information
+Snyk recommends defining standards for these options as well as notification defaults before you add more than a few Projects. When your teams are ready for a broader implementation, Snyk recommends defining standards for these options according to your security maturity. For more information, see [Configure integrations](enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-integrations.md).
 {% endhint %}
 
 ## **Review the Snyk scan result**
@@ -115,5 +113,5 @@ A scan with [**Snyk iac test**](../snyk-cli/scan-and-maintain-projects-using-the
 
 * If you want developers to try Snyk in their local environment using the IDE or CLI, review the [Getting started guide for individuals and small teams](../getting-started/getting-started-with-snyk-free-team-plan.md).
 * To get specific recommendations for your tech stack, visit the guide specific to your language.
-* When you are ready to plan a Snyk rollout to more teams, review [Preparing for implementation of the Enterprise plan](broken-reference) for more information.
+* When you are ready to plan a Snyk rollout to more teams, review the [Enterprise implementation guide](enterprise-implementation-guide/) for more information.
 * See the [Developer launch package](https://assets.ctfassets.net/4un77bcsnjzw/2YfaqJNMsogGNJM6BBQz4p/8f5ca77b9c40a1bbe14cc9fb0aa05462/Snyk-developer-launch-package.pdf) for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.
