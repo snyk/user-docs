@@ -51,7 +51,7 @@ See [Integrate with Snyk](../integrate-with-snyk/) for details.
 
 ## **What does Snyk cost?**
 
-Snyk has several pricing plans available, from free to Enterprise. See [Snyk Pricing Plans](../more-info/plans.md).
+Snyk has several pricing plans available, from free to Enterprise. See [Snyk Pricing Plans](../more-info/snyk-plans-and-pricing.md).
 
 ## What happens to my data?
 

@@ -968,7 +968,7 @@
       * [Creating and using the import file](snyk-api-info/other-tools/snyk-scm-contributors-count-cli-tool/creating-and-using-the-import-files.md)
       * [API rate limit control](snyk-api-info/other-tools/snyk-scm-contributors-count-cli-tool/api-rate-limit-control.md)
 * [More info](more-info/README.md)
-  * [Snyk Pricing Plans](more-info/plans.md)
+  * [Snyk Plans and Pricing](more-info/snyk-plans-and-pricing.md)
   * [How Snyk handles your data](more-info/how-snyk-handles-your-data.md)
   * [Regional hosting and data residency](more-info/data-residency-at-snyk.md)
   * [Supported browsers](more-info/supported-browsers.md)

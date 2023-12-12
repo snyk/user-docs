@@ -1,8 +1,8 @@
-# Snyk Pricing Plans
+# Snyk Plans and Pricing
 
 ## Pricing plans available
 
-Snyk functionality is available with several [pricing plans](https://snyk.io/plans/):
+Snyk functionality is available through several [plans](https://snyk.io/plans/):
 
 * **Free**: For individual developers and small teams looking to secure while they build. Limited tests.
 * **Team**: For dev teams looking to build security into their development process with shared visibility into Projects. Unlimited tests.
@@ -14,18 +14,18 @@ Snyk functionality is available with several [pricing plans](https://snyk.io/pla
 
 ## Feature availability notice
 
-If a feature is only available on some plans, this is shown in the feature's documentation. For example:
+If a feature is available only on some plans, this is shown in the documentation for that feature, for example:
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is only available for Enterprise plans.
+This feature is available only for Enterprise plans.
 {% endhint %}
 
 ## Trial limitations
 
 Snyk's 14-day trial offers a sample of the features available in the paid Enterprise plan. However, certain features will have limited functionality or be entirely unavailable in order to provide a seamless experience when the trial concludes.
 
-If you are considering the purchase of the Team plan, remember that the trial offers features above and beyond those included in the Team plan.
+If you are considering the purchase of the Team plan, remember that the trial offers features beyond those included in the Team plan.
 
 The following Enterprise features are limited or unavailable during the trial:
 

@@ -3,7 +3,7 @@
 Start securing code, dependencies, containers, and deployed applications with Snyk.
 
 {% hint style="info" %}
-If you are on an [Enterprise plan](../more-info/plans.md), see [Enterprise setup](../enterprise-setup/).
+If you are on an [Enterprise plan](../more-info/snyk-plans-and-pricing.md), see [Enterprise setup](../enterprise-setup/).
 {% endhint %}
 
 ## About Snyk

@@ -5,7 +5,7 @@ PR Checks for Snyk Code is in Closed Beta and only available for Enterprise plan
 {% endhint %}
 
 {% hint style="warning" %}
-A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-). The number of tests allowed is determined by the [pricing plans](../../more-info/plans.md).
+A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-). The number of tests allowed is determined by the [pricing plans](../../more-info/snyk-plans-and-pricing.md).
 {% endhint %}
 
 ## Prerequisites for automated PR Checks
