@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Home](README.md)
+* [Snyk Documentation](README.md)
 * [Getting started](getting-started/README.md)
   * [Introducing Snyk](getting-started/introducing-snyk.md)
   * [Explore Snyk through the Web UI](getting-started/explore-snyk-through-the-web-ui.md)
