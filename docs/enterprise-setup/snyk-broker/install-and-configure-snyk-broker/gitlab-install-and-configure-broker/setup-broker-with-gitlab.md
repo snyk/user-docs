@@ -20,7 +20,7 @@ To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run*
 
 ## Docker run command to set up a Broker Client for GitLab
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk AppRisk information. Enable [Snyk AppRisk](broken-reference) to identify your application assets, monitor them, and prioritize the risks.
 
 ```bash
 docker run --restart=always \
@@ -32,8 +32,13 @@ docker run --restart=always \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
            -e ACCEPT_IAC=tf,yaml,yml,json,tpl \
            -e ACCEPT_CODE=true \
+           -e ACCEPT_APPRISK=true \
        snyk/broker:gitlab
 ```
+
+{% hint style="info" %}
+Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
+{% endhint %}
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitLab integration.
 

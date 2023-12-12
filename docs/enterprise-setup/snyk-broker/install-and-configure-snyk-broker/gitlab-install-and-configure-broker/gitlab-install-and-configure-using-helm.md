@@ -19,5 +19,10 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set gitlab=<ENTER_GITLAB_URL> \
              --set scmToken=<ENTER_GITLAB_TOKEN> \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
+             --set enabledAppRisk=true \
              -n snyk-broker --create-namespace
 ```
+
+{% hint style="info" %}
+Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
+{% endhint %}
