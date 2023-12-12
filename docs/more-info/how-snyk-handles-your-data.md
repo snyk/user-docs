@@ -61,9 +61,8 @@ Your account is subject to contract terms which might restrict your ability to e
 
 ![Snyk Code](../.gitbook/assets/SnykCode.svg)
 
-* Snyk accesses your repository code for a one-time analysis, caching it for up to 12 hours. After this period, only the location (file path, line, and column) of the issues found, the issue id, and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
+* Snyk accesses your repository code for a one-time analysis and [caches the source code](how-snyk-handles-your-data.md#how-snyk-processes-this-data) according to the Cloud provider's storage minimum policy. After this period, only the location (file path, line, and column) of the issues found, the issue id, and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
 * Results are stored in a database and used for analytic and monitoring purposes by Snyk.
-* When you are viewing Snyk Code issue details on the Snyk Web UI, note that the associated files are loaded and cached for up to 24 hours.
 * Snyk Code does not use any customer code (1) for engine training purposes or (2) to extract examples to show possible fixes.
 * The AI model for Snyk Code Fix Suggestions is trained on public repositories with permissive licenses, where any data from repositories with changing licenses are immediately removed. Static analysis, automated assessment, and partial human labeling are used during the data collection.
 * The scan results do not contain original source code but rather pointers to positions (for example, files, line, and column numbers), plus identification meta-information so that results are displayed using the correct source code version.
@@ -103,19 +102,6 @@ Your account is subject to contract terms which might restrict your ability to e
 * During scans, Snyk gathers and stores a resource configuration state to perform analysis, and stores the results of that analysis, including the details of misconfigurations which result in issues.
 * Snyk Cloud retains resource configuration states found in scans to provide context for Issues and resources but does not store secrets or sensitive values.
 {% endtab %}
-
-{% tab title="Snyk AppRisk " %}
-## Snyk AppRisk
-
-<figure><img src="../.gitbook/assets/AppRisk_Color_64px.png" alt=""><figcaption><p>Snyk AppRisk</p></figcaption></figure>
-
-* Snyk AppRisk provides visibility into data at a Snyk Group level and therefore covers the scope of all Snyk Organizations within a Snyk Group.
-* From Snyk targets and Projects within associated Snyk organizations, Snyk AppRisk accesses and stores asset metadata to generate code repository assets, package (first party) assets, and container image assets. Asset metadata includes the git remote URL, languages represented in repositories, and commit history metadata (not the underlying source code).
-* From SCM integrations configured using the Snyk AppRisk Integration Hub, Snyk AppRisk accesses and stores the following data:
-  * Commit history metadata from the last 50 commits for repositories monitored, including profile information on the code committer - such as GitHub user IDs, display name, or email.
-  * Metadata on the languages (e.g. python, HTML) used for a given code repository.
-  * Repository “topics”, which are represented as asset tags.
-{% endtab %}
 {% endtabs %}
 
 ## Snyk integrations: Git repository cloning
@@ -146,14 +132,16 @@ When Git repository cloning is enabled, Snyk will ingest, through configured SCM
 
 Snyk uses cloud products from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to process and store the data in a cache.
 
-Data is cached up to 48 hours “per commit”, meaning that for every commit pushed to a repository that Snyk is tracking, the contents of that commit will be held in a cache for up to 48 hours. Multiple commits within a single 48-hour period will result in multiple caches with their own 48-hour lifecycle. At the end of each 48-hour lifecycle, the cache is automatically deleted according to cloud provider policies.
+Data is cached according to the cloud provider's storage minimum retention policy:
+
+* For AWS tenants - EU/AU/Private Tenant: [S3 policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
+* GCP tenants - US (Default): [Google Cloud Storage Policy](https://cloud.google.com/storage/docs/lifecycle)
 
 ### Safeguards Snyk puts in place to ensure data is secure
 
 * Snyk will perform a clone only when an SCM integration flow requires it, for example, PR check, import, and test.
 * Communication between the cloning service and cache is encrypted with TLS 1.2.
 * Cloned assets are deleted from the file system immediately after populating the cache.
-* The cache for a clone is deleted after a maximum of 48 hours.
 * All data is handled by Snyk in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
 * Your data is analyzed only for the purposes of improving code security and code quality and in accordance with your Data Processing Addendum.
 

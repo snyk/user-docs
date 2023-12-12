@@ -33,7 +33,6 @@ The cloning is performed via HTTPS connection. If your SCM does not support HTTP
 
 4\. The Code Agent filters the cloned repository for supported files and sends them to the Snyk Code AI Engine.
 
-5\. The [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine) analyzes the code files in search of vulnerability issues. The analysis results are sent back to the Snyk Web UI.\
-The cloned files are cached for up to 24 hours before they are deleted. For more information, see [How Snyk handles your data](../../../more-info/how-snyk-handles-your-data.md).
+5\. The [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine) analyzes the code files in search of vulnerability issues. The analysis results are sent back to the Snyk Web UI. The cloned files are [cached](./#how-snyk-processes-this-data) according to the Cloud provider's storage minimum policy.
 
 <figure><img src="../../../.gitbook/assets/Code Agent - diagram - new - 4.png" alt="Snyk Code Analysis workflow with Broker"><figcaption><p>Snyk Code Analysis workflow with Broker</p></figcaption></figure>
