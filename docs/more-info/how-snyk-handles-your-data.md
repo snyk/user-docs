@@ -103,6 +103,19 @@ Your account is subject to contract terms which might restrict your ability to e
 * During scans, Snyk gathers and stores a resource configuration state to perform analysis, and stores the results of that analysis, including the details of misconfigurations which result in issues.
 * Snyk Cloud retains resource configuration states found in scans to provide context for Issues and resources but does not store secrets or sensitive values.
 {% endtab %}
+
+{% tab title="Snyk AppRisk " %}
+## Snyk AppRisk
+
+<figure><img src="../.gitbook/assets/AppRisk_Color_64px.png" alt=""><figcaption><p>Snyk AppRisk</p></figcaption></figure>
+
+* Snyk AppRisk provides visibility into data at a Snyk Group level and therefore covers the scope of all Snyk Organizations within a Snyk Group.
+* From Snyk targets and Projects within associated Snyk organizations, Snyk AppRisk accesses and stores asset metadata to generate code repository assets, package (first party) assets, and container image assets. Asset metadata includes the git remote URL, languages represented in repositories, and commit history metadata (not the underlying source code).
+* From SCM integrations configured using the Snyk AppRisk Integration Hub, Snyk AppRisk accesses and stores the following data:
+  * Commit history metadata from the last 50 commits for repositories monitored, including profile information on the code committer - such as GitHub user IDs, display name, or email.
+  * Metadata on the languages (e.g. python, HTML) used for a given code repository.
+  * Repository “topics”, which are represented as asset tags.
+{% endtab %}
 {% endtabs %}
 
 ## Snyk integrations: Git repository cloning
