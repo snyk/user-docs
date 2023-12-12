@@ -1,6 +1,6 @@
 # Prerequisites: project plan templates
 
-The following templates and checklists form the basis of the following sections. \
+The templates provided on this page are the basis of the following sections of this guide. \
 You can download and use these templates in your project management system.
 
 {% hint style="info" %}
