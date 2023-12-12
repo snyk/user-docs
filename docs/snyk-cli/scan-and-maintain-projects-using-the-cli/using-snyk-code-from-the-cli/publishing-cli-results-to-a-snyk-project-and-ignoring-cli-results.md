@@ -1,26 +1,24 @@
 # Publish Snyk Code CLI results
 
-Using Snyk Code, you can publish results to a Snyk Project with or without using an integration. The sections of this page explain how:
+This page explains how you can publish Snyk Code results to a Snyk Project with or without using an integration.
 
-* [Publish CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project) created using the CLI
-  * Run Snyk Code in the CI/CD and append results to Snyk Projects for reports.&#x20;
-  * Issues that are ignored in the WebUI Project will apply to the CLI scans.&#x20;
-  * This does not require an [SCM Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).&#x20;
-* [Test and publish CLI results to an existing Snyk Code SCM Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#test-and-publish-cli-results-to-an-existing-snyk-code-scm-project)
-  * Run Snyk Code in the CI/CD, and push the results to an existing SCM Code Analysis Project to get Code Snippets.&#x20;
-  * Issues that are ignored in the WebUI Project will apply to the CLI scans.&#x20;
-  * The command will scan the specific code in the repository, not locally, as you do when you publish Snyk CLI results to a Code Project.&#x20;
-  * The results are appended to the existing SCM Project, which requires an [SCM Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
+You can [publish CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project) created using the CLI. Run Snyk Code in the CI/CD and upload results to a Snyk Project for reports. When you do this:
 
-If a CLI-based Snyk Code Project does not yet exist for the value provided in the `--project-name` option, Snyk creates a new CLI-based Project.&#x20;
+* After you have created a Snyk Code Project from the CLI, any issues that are ignored in the Web UI Project will apply to future CLI scans.
+* A Git repository[ Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) is not required.
+* If a CLI-based Snyk Code Project does not yet exist for the value provided in the `--project-name` option, Snyk creates a new CLI-based Project.&#x20;
+* If a CLI-based Snyk Code Project does exist, a new snapshot is created under the same Project.
+* The identity is based on `--project-name` or `--target-name`.
 
-A new snapshot is created under the same Project if a CLI-based Project already exists.
+You can [use the CLI to trigger a Snyk Code Git repository Project to test a specific commit in a Git repository](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#use-the-cli-to-trigger-a-snyk-code-git-repository-project-to-test-a-specific-commit-in-a-git-reposit). Run Snyk Code in the CI/CD and specify an existing SCM Code Analysis Project along with the commit ID you wish to test, which will then also display code snippets. When you do this:
 
-The identity is based on `--project-name` or `--target-name`.
+* Issues that are ignored in the Web UI Project will apply to scans triggered through this method.&#x20;
+* The command will trigger a scan of the specified code in the repository, not local code, based on the commit ID you specified.&#x20;
+* The results are saved as a new snapshot of the existing SCM Project, which requires a Git repository[ Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
 
 This page also explains how to [ignore CLI results](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#ignore-cli-results).
 
-See the CLI help for more information about `snyk code test`, such as [exit codes](../../commands/code-test.md#exit-codes) and [available options](../../commands/code-test.md#options).
+See the CLI help for more information about the `snyk code test` command, including [exit codes](../../commands/code-test.md#exit-codes) and [available options](../../commands/code-test.md#options).
 
 ## **Publish CLI results to a Snyk Code Project**
 
@@ -31,9 +29,9 @@ Publishing and ignoring CLI results is in [Closed Beta](../../../more-info/snyk-
 The minimum supported CLI version is v1.1194.0.
 {% endhint %}
 
-Using Snyk Code through the CLI supports publishing test results to a Snyk Project in the Web UI and respecting issues that were ignored in a Snyk Project in the Web UI so you can filter them from the analysis results.
+Using Snyk Code through the CLI allows you to publish test results of local code to a Snyk Project in the Web UI. Future CLI tests of this Project will respect issues that were ignored in the Web UI.
 
-This allows you to use Snyk Code as a blocking CI/CD gate to test and block builds at the main branch level and then have developers review the results in the Web UI, fix any newly introduced vulnerabilities, or ignore irrelevant ones.
+This allows using Snyk Code as a blocking CI/CD gate to test and block builds at the main branch level and then have developers review the results in the Web UI, fix any newly introduced vulnerabilities, or ignore irrelevant ones.
 
 In the terminal, enter the following command:
 
@@ -41,26 +39,28 @@ In the terminal, enter the following command:
 snyk code test --report --project-name="<PROJECT_NAME>"
 ```
 
-* PROJECT\_NAME must be in double quotation marks. Single quotes or missing quotes will result in an error.
-* The Project name must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
+* `project-name` must be in double quotation marks. Single quotes or missing quotes will result in an error.
+* `project-name` must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
 * There is a temporary limit of 6MB for the resulting payload. If the SARIF output is larger than 6MB, the process will not complete.
 
-Running the `snyk code test` command with the `--report` option as shown returns the results to the terminal window, along with a URL to the Snyk Code Project where the results have been published. Refer to the following screenshot.
+### Commands to publish Snyk Code CLI results
+
+Running the `snyk code test` command with the `--report` option, as shown, returns the results to the terminal window, along with a URL to the Snyk Code Project where the results have been published. Refer to the following screenshot.
 
 <figure><img src="../../../.gitbook/assets/image (2) (6).png" alt="Snyk code test results with --report option"><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
 
-If a Snyk Code Project created using the CLI does not yet exist for the value provided in the `--project-name` option, the Snyk CLI creates a new Project. If a Project created using the CLI exists, a new snapshot is created under the same Project.
+If a Snyk Code Project created using the CLI does not yet exist for the value provided in the `--project-name` option, the Snyk CLI creates a new Project. If a Project created by using the CLI exists, a new snapshot is created under the same Project.
 
-The following command will create or upload an existing Project named \<PROJECT\_NAME> under a target named \<TARGET\_NAME>
-
-* Both PROJECT\_NAME and TARGET\_NAME must be in double quotation marks. Single quotes or missing quotes will result in an error.
-* The project name and target name must each contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
+To make the Project easier to interpret in the Web UI, you can use additional commands to specify a target name and also target references, such as Git branches. The following command will create or upload an existing Project named `<PROJECT_NAME>` under a target named `<TARGET_NAME>`.
 
 ```
 snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_NAME>"
 ```
 
-The following command will create or upload an existing Project named \<PROJECT-NAME> under a target named \<TARGET-NAME> and grouped by the "$(git branch --show-current)" branch name.
+* Both `<PROJECT_NAME>` and `<TARGET_NAME>` must be in double quotation marks. Single quotes or missing quotes will result in an error.
+* The Project name and Target name each must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
+
+The following command will create or upload an existing Project named `<PROJECT_NAME>` under a target named `<TARGET_NAME>` and grouped by the "`$(git branch --show-current)"` branch name.
 
 ```
 snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_NAME>" --target-reference="$(git branch --show-current)"
@@ -68,21 +68,20 @@ snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_N
 
 <figure><img src="../../../.gitbook/assets/image (4) (4).png" alt="Code analysis Projects grouped by branch"><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
 
-### **Troubleshooting**
+### **Troubleshooting publication of Snyk Code CLI results**
 
-#### **There was a problem running Code analysis. The findings for this project may exceed the allowed size limit.**
+You may see this error:\
+`There was a problem running Code analysis. The findings for this project may exceed the allowed size limit.`
 
-If you encounter this error after running the Code Analysis, it indicates that the contents of the scanned Project exceed the 6MB limit. To resolve:
+This error indicates that the contents of the scanned Project exceed the 6MB limit. To complete the scan, consider the following troubleshooting steps:
 
-To complete the scan, consider the following troubleshooting steps:
-
-* Partition the Project repository by scanning sub-directories instead of the whole repository. For example:
+* Partition the Project repository by scanning sub-directories instead of the whole repository, for example:
   * Create two Projects for your frontend and backend directories, and scan them separately.
   * Create and scan Projects for each MicroService.
 * Exclude unnecessary files from the scanning process using the [.snyk exclude option](../../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md#exclusion-syntax-of-the-.snyk-file). For example, you can exclude test files from the scan.
 * Set a severity threshold using the [`--severity-threshold=high`](../failing-of-builds-in-snyk-cli.md#combining-security-policies-with-severity-threshold). You can focus on more critical issues and gain visibility into urgent matters.
 
-## **Test and publish CLI results to an existing Snyk Code SCM Project**
+## Use the CLI to trigger a Snyk Code Git repository Project to test a specific commit in a Git repository
 
 {% hint style="info" %}
 **Feature availability**\
@@ -91,16 +90,14 @@ Publishing and ignoring CLI issues in SCM Projects is in [Closed Beta](../../../
 The minimum supported CLI version is 1.1194.0.
 {% endhint %}
 
-Using Snyk Code via the CLI supports publishing test results to an existing Snyk Code SCM Project in the Web UI and respecting issues ignored in a Snyk Project in the Web UI so you can filter them from the analysis results. This provides [Snyk Code Data flow](broken-reference) for the CLI results snapshot.
+When you are using Snyk Code in the CI/CD, you can specify an existing Git repository Code Analysis Project along with the commit ID to trigger a test for which the results will be saved in the Web UI. The Web UI will also display Code Snippets that provide [Snyk Code Data flow](../../../scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue.md). Ignores that have been added to the Web UI Project will be respected in this test.
 
 Be sure you have the prerequisites and publish the results as you intend:
 
-* An [SCM Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) is required, as the CLI results are appended there. &#x20;
-* The Project ID is required. You can find it as follows:
-  * Find the Project ID in the URL of the Project in the Snyk Web UI: https://app.snyk.io/org/org\_name/project/PROJECT\_UUID
-  * Or use the GET Projects method through the [Snyk API.](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org\_id-/projects)&#x20;
-* The CLI results are pushed to the SCM Project that is monitoring your **default branch**. Consider using the command on your default branch.
-* In the SCM integration, three snapshots are stored at a time. To save scan results, consider outputting a static [JSON or SARIF file](broken-reference) for future reference.
+* A Git repository[ Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) is required, as the CLI command triggers a test using a Git repository Project. &#x20;
+* The Project ID is required. You can find the Project ID in the URL of the Project in the Snyk Web UI: `https://app.snyk.io/org/org_name/project/PROJECT_UUID.`
+* After you run the CLI command, results are saved in the Git repository Project that you have specified. Given that scheduled tests for Git repository Projects scan the default branch, Snyk recommends using this CLI command with the Project ID for the Project where the default branch for the specified repository is being monitored.
+* In the Code Analysis Project, three snapshots are stored at a time. Consider outputting a static [JSON](../cli-tools/snyk-to-html/view-test-results-in-html-format.md) or [SARIF ](../cli-tools/snyk-to-html/view-test-results-in-html-format.md)file to save scan results for future reference.
 
 Use the following command to publish to a specific Project:
 
@@ -110,7 +107,7 @@ snyk code test --report --project-id="<PROJECT_UUID>" --commit-id="<COMMIT_ID>"
 
 ## &#x20;**Ignore CLI results**
 
-You can use the Ignore button to ignore issues from CLI results in the Web UI both to [publish CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project) and to [test and publish CLI results to an existing Snyk Code SCM Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#test-and-publish-cli-results-to-an-existing-snyk-code-scm-project).
+You can ignore issues in the Web UI that will be used to both [publish CLI results to a Snyk Code Project](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project) and [use the CLI to trigger a Snyk Code Git repository Project to test a specific commit in a git repository](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#use-the-cli-to-trigger-a-snyk-code-git-repository-project-to-test-a-specific-commit-in-a-git-reposit).
 
 <figure><img src="../../../.gitbook/assets/image (1) (7) (1).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
 
@@ -118,15 +115,18 @@ You can use the Ignore button to ignore issues from CLI results in the Web UI bo
 &#x20;[snyk-to-html](https://github.com/snyk/snyk-to-html) currently does not honor the ignored issues. Anything that is ignored in the Web UI is NOT ignored in the report that `snyk-to-html` generates.
 {% endhint %}
 
-Issues that are ignored in the Web UI are ignored in CLI tests when you use the following command:&#x20;
+For [publishing workflows](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#publish-cli-results-to-a-snyk-code-project), after the CLI results are published to a Snyk Code Project, issues that were ignored in the Web UI will be ignored in CLI tests when you use the following command:
 
 ```
 snyk code test --report --project-name="PROJECT_NAME"
 ```
 
-Ignores that have been applied to the Project with a `PROJECT_NAME` suppress the issue the next time that the CLI runs for the same `PROJECT_NAME`.
+* Assuming that the --project-name provided matches what is in the Web UI
+* Ignores that have been applied to the Project with a `PROJECT_NAME` suppress the issue the next time that the CLI runs for the same `PROJECT_NAME`.
 
-To ignore the CLI issues appended in the SCM Project, you can use the following command :
+For the [trigger using the CLI workflow](publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#use-the-cli-to-trigger-a-snyk-code-git-repository-project-to-test-a-specific-commit-in-a-git-reposit),  ignores added to the Git repository monitored Project will also be ignored the next time an SCM scan is triggered from the CLI for a given `<PROJECT_UUID>` and `<COMMIT_ID>.`
+
+An example follows:
 
 ```
 snyk code test --report --project-id="<PROJECT_UUID>" --commit-id="<COMMIT_ID>"
