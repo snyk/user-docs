@@ -11,10 +11,10 @@ Currently, Snyk AppRisk supports one policy type - assets. Future releases will 
 You can create policies for organizing the assets, classifying them, and always being up to date with the latest information about an asset.\
 Common use cases for policies include:
 
-* [New asset notifications](broken-reference)
-* [Asset classification](broken-reference)
-* [Asset tagging](broken-reference)
-* [Coverage control](broken-reference)
+* [New asset notifications](use-cases-for-policies/notification-policy-use-case.md)
+* [Asset classification](use-cases-for-policies/classification-policy-use-case.md)
+* [Asset tagging](use-cases-for-policies/tagging-policy-use-case.md)
+* [Coverage control](use-cases-for-policies/coverage-control-policy-use-case.md)
 
 ### New asset notifications
 
