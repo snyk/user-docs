@@ -4,7 +4,7 @@ To determine the risk factors and prioritize your Code, Open Source, and Contain
 
 The container image is at the center of the application model that powers Snyk AppRisk. A container image includes your source code and dependencies, and it is deployed to your running environment, enabling Snyk AppRisk to use the container image to bridge the development and deployment states.\
 \
-Snyk AppRisk will identify any deployed container images using the [Kubernetes Connector](../../../../manage-issues/insights/insights-setup/insights-setup-kubernetes-connector.md) and compare the deployed container images to the list of scanned images you have scanned using [Snyk Container](../../../../scan-using-snyk/snyk-container/).&#x20;
+Snyk AppRisk will identify any deployed container images using the [Kubernetes Connector](broken-reference) and compare the deployed container images to the list of scanned images you have scanned using [Snyk Container](../../../../scan-using-snyk/snyk-container/).&#x20;
 
 {% hint style="info" %}
 Snyk recommends that you scan each image using at least one of the Snyk Container integrations.
