@@ -75,7 +75,7 @@ When switched on, this will cause the PR check to fail when the PR introduces ne
 
 You can configure PR Checks to work only for specific Projects:
 
-1. Navigate to **Projects** and expand the [target](../../snyk-admin/introduction-to-snyk-projects/#target) containing your Project.
+1. Navigate to **Projects** and expand the [target](../../snyk-admin/snyk-projects/#target) containing your Project.
 2. Click a Project name to open it. Based on the Project type, you can choose the following:
 
 * **package.json** to check for open-source and licensing issues.

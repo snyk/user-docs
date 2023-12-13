@@ -1,6 +1,6 @@
 # Introduction to Organizations
 
-Organizations represent business areas such as teams, products, or environments. An Organization contains [Snyk Projects](../introduction-to-snyk-projects/) that contain the code team members are scanning.
+Organizations represent business areas such as teams, products, or environments. An Organization contains [Snyk Projects](../snyk-projects/) that contain the code team members are scanning.
 
 The settings and policies of an Organization influence scan results, depending on which Organization is used when you import a Project, the default Organization, a personal Organization, or another Organization you specify.
 

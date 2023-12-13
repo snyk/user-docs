@@ -134,5 +134,5 @@ After repositories are imported, a confirmation appears in green at the top of t
 </div>
 
 {% hint style="info" %}
-The Azure Repository integration works like the other Snyk [Git integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../snyk-admin/introduction-to-snyk-projects/) documentation.
+The Azure Repository integration works like the other Snyk [Git integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../snyk-admin/snyk-projects/) documentation.
 {% endhint %}

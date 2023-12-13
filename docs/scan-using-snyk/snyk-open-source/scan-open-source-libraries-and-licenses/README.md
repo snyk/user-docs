@@ -24,7 +24,7 @@ Click a Project to open the issues page for that Project, where you will see the
 
 <figure><img src="../../../.gitbook/assets/project-details.png" alt="Open Source Project issues page"><figcaption><p>Open Source Project issues page</p></figcaption></figure>
 
-For more details, see [View Project information](../../../snyk-admin/introduction-to-snyk-projects/view-project-information.md).
+For more details, see [View Project information](../../../snyk-admin/snyk-projects/view-project-information.md).
 
 ## Fix vulnerabilities in your open-source libraries
 

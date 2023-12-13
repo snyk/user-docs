@@ -49,7 +49,7 @@ Currently, Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket
 
 ### Add project
 
-Use the **Add project** link on the Dashboard to add [Snyk Projects](../snyk-admin/introduction-to-snyk-projects/). Select how to add the Project from the dropdown.
+Use the **Add project** link on the Dashboard to add [Snyk Projects](../snyk-admin/snyk-projects/). Select how to add the Project from the dropdown.
 
 Use the links for Projects on the Dashboard to explore and manage the metadata, retest, and fix options for the Target files in your Projects. Each link opens a Project details page where you can view the Project **Overview**, or switch to the **History** and **Settings** tabs.
 

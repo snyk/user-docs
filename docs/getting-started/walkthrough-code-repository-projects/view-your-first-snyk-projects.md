@@ -36,7 +36,7 @@ When you open an entry, you see the different Snyk Projects scanned in that entr
 
 {% hint style="info" %}
 **Reminder: what is a Project?**\
-A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open-source libraries as dependencies. See [Snyk Projects](../../snyk-admin/introduction-to-snyk-projects/).
+A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open-source libraries as dependencies. See [Snyk Projects](../../snyk-admin/snyk-projects/).
 {% endhint %}
 
 An example follows:
@@ -61,7 +61,7 @@ Snyk scans different parts of this lifecycle, with different icons and entries s
 | <img src="../../.gitbook/assets/image (206) (1) (1).png" alt="" data-size="original">           | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/).                                                       |
 
 {% hint style="info" %}
-Other files and types can be displayed; see [View Project information](../../snyk-admin/introduction-to-snyk-projects/view-project-information.md) for more details.
+Other files and types can be displayed; see [View Project information](../../snyk-admin/snyk-projects/view-project-information.md) for more details.
 {% endhint %}
 
 ### View Project settings

@@ -30,7 +30,7 @@ Testing your SBOM can be a long-running operation. Instead of waiting until the 
 Follow these steps to test a SCOM:
 
 1. Log in to the Snyk Web UI and retrieve your Organization ID (UUID format), Project ID (UUID), and API key.\
-   If you need help in finding these values, see [Group and Organization navigation](../snyk-admin/manage-groups-and-organizations/switch-between-groups-and-organizations.md), [View Project settings](../snyk-admin/introduction-to-snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../snyk-api-info/authentication-for-api.md).
+   If you need help in finding these values, see [Group and Organization navigation](../snyk-admin/manage-groups-and-organizations/switch-between-groups-and-organizations.md), [View Project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../snyk-api-info/authentication-for-api.md).
 2. Use any HTTP client, for example, `curl` or Postman, to make a request to the endpoint [Create an SBOM test run](https://apidocs.snyk.io/?version=2023-10-24%7Ebeta#post-/orgs/-org\_id-/sbom\_tests).&#x20;
 
 {% hint style="info" %}
