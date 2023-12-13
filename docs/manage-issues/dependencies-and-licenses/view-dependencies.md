@@ -6,7 +6,7 @@ Dependency reports show details about the packages included in your Projects, in
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (2) (2) (2).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2) (2).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure>
 
 </div>
 
@@ -20,7 +20,7 @@ Examining the details for each package can help you determine the dependency hea
 
 The actions appear at the top of the tab.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-11 at 13.19.55.png" alt="Dependencies tab actions"><figcaption><p>Dependencies tab actions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 13.19.55.png" alt="Dependencies tab actions"><figcaption><p>Dependencies tab actions</p></figcaption></figure>
 
 * **Search for Dependencies**: Start typing to search for a package. To view the results for multiple packages, select them from the dropdown list that opens when you click the field. You can also click the **Select All** or **Deselect All** links that appear dynamically in the dropdown list.
 *   **Dependency filters**: Select specific Project types and dependency health status to mark the packages to be displayed. Only issues matching all selected criteria are displayed.
