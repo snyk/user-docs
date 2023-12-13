@@ -6,10 +6,6 @@
 The Snyk Code custom rules feature is in [Open Beta](../../../more-info/snyk-feature-release-process.md#open-beta) and available only for Enterprise plans through Snyk Preview. See [Enable custom rules](introducing-custom-rules.md).
 {% endhint %}
 
-{% hint style="warning" %}
-Custom rules beta is not currently compatible with [SCM integrations via Broker](../../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker).
-{% endhint %}
-
 This feature allows you to create custom rules to run queries against the code stack as part of your investigation workflow.
 
 You can save successful queries and implement them in your regular static analysis scans to enable custom rules to be triggered every time Snyk Code analyzes your code.
