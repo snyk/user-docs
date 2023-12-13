@@ -57,7 +57,7 @@ Authentication credentials not recognized, or user access is not provisioned. Re
 
 #### Test limit reached
 
-You have reached the maximum number of tests in your Snyk plan. This will cause Snyk tests on PRs and CLI to fail. Deactivate Snyk Test on your Project or upgrade your Snyk plan.
+You have reached the maximum number of tests in your Snyk plan. This causes Snyk tests on PRs and CLI to fail. Deactivate Snyk Test on your Project or upgrade your Snyk plan.
 
 **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
@@ -1527,4 +1527,4 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-12-13T10:59:31.038Z
+--- Generated at 2023-12-13T11:06:19.595Z
