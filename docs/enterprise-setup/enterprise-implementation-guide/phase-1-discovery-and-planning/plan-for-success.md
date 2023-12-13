@@ -4,7 +4,7 @@
 
 Implementing Snyk provides an opportunity to enhance your application security. But how do you know if you're getting the most out of it? Key Performance Indicators (KPIs) are essential measurements that track Snyk's impact and help guide your security journey.
 
-KPIs give you valuable insights by monitoring key metrics at each adoption phase - from raising awareness to preventing new issues. They help you:
+KPIs give you valuable insights by monitoring key metrics at each adoption phase, from raising awareness to preventing new issues. KPIs help you:
 
 * Assess progress toward security goals
 * Identify areas needing improvement
@@ -14,7 +14,7 @@ Tracking metrics aligned to each stage provides tangible insights into what's wo
 
 ## Example metrics
 
-These are just some potential examples of success metrics to consider. Analyzing relevant data points at each stage can provide insight into what's working well and identify areas for improvement.
+Some examples of success metrics to consider are provided here. Analyzing relevant data points at each stage can provide insight into what's working well and help identify areas for improvement.
 
 ### Build awareness
 
@@ -30,7 +30,7 @@ These are just some potential examples of success metrics to consider. Analyzing
 
 ### Prevent new Issues
 
-* Percentage of pull requests or builds that are being failed based on Snyk's automation
+* Percentage of pull requests or builds that are being failed based on Snyk automation
 * Reduction in new vulnerabilities introduced after automation is turned on
 * Time taken to address blocked pull requests and resolve them
 

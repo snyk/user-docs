@@ -227,7 +227,7 @@
     * [Amazon EventBridge](integrate-with-snyk/event-forwarding/amazon-eventbridge.md)
     * [AWS CloudTrail Lake](integrate-with-snyk/event-forwarding/aws-cloudtrail-lake.md)
     * [AWS Security Hub](integrate-with-snyk/event-forwarding/aws-security-hub.md)
-  * [Notification and ticketing systems integrations](integrate-with-snyk/notification-and-ticketing-systems-integrations/README.md)
+  * [Notification and ticketing systems integrations](integrate-with-snyk/notification-and-ticketing-systems-integraitons/README.md)
     * [Snyk Security in Jira Cloud Integration](integrate-with-snyk/notification-and-ticketing-systems-integrations/snyk-security-in-jira-cloud-integration.md)
     * [Jira integration](integrate-with-snyk/notification-and-ticketing-systems-integrations/jira-integration.md)
     * [Slack app](integrate-with-snyk/notification-and-ticketing-systems-integrations/slack-app.md)
