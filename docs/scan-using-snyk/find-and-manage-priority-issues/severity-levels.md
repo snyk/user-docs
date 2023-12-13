@@ -5,7 +5,7 @@ Use severity levels to help you with [vulnerability assessment](https://snyk.io/
 <img src="../../.gitbook/assets/Screenshot 2022-08-16 at 09.52.22.png" alt="Issues at each level of severity, C, H, M, and L" data-size="original">
 
 {% hint style="info" %}
-Severity levels also apply to license issues. See [Licenses](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md).
+Severity levels also apply to license issues. See [Licenses](../snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md).
 {% endhint %}
 
 The severity levels are defined in the following table.
@@ -21,7 +21,7 @@ The severity levels are defined in the following table.
 
 Severity levels are one factor used in determining the Snyk Priority Score for each vulnerability. Other factors include [Snyk Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) and [Reachable Vulnerabilities](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/) information.
 
-See [Snyk Priority Score](../priorities-for-fixing-issues/priority-score.md) for details.
+See [Snyk Priority Score](priority-score.md) for details.
 
 ## How to view severity levels
 
@@ -59,7 +59,7 @@ The severity level and score are determined based on the [CVSS Base Score](https
 See [Scoring security vulnerabilities 101: Introducing CVSS for CVEs](https://snyk.io/blog/scoring-security-vulnerabilities-101-introducing-cvss-for-cve/).
 
 {% hint style="info" %}
-Severity levels may not always align with CVSS scores. For example, Snyk Container severity scores for Linux vulnerabilities may vary depending on NVD severity rankings; see [Understanding Linux vulnerability severity](../../scan-using-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md) for details.
+Severity levels may not always align with CVSS scores. For example, Snyk Container severity scores for Linux vulnerabilities may vary depending on NVD severity rankings; see [Understanding Linux vulnerability severity](../snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md) for details.
 {% endhint %}
 
 ### **Why are there multiple CVSS Scores for the same vulnerability?**

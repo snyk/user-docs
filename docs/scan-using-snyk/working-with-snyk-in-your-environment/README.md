@@ -75,7 +75,7 @@ Snyk Enterprise plan customers can monitor container images and their open-sourc
 
 ## How to fix issues using Snyk
 
-If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For information on how to prioritize issues, see [Find and manage priority issues](../../manage-risk/find-and-manage-priority-issues/).
+If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For information on how to prioritize issues, see [Find and manage priority issues](../find-and-manage-priority-issues/).
 
 Snyk offers capabilities to address issues both reactively and proactively:
 
@@ -99,6 +99,6 @@ With large organizations developing hundreds of applications, a slower approach 
 1. Typically, large organizations start with daily monitoring of applications using Git integration, initially turning on PR checks for a few key applications **at most**. You may use CI/CD scans on key applications for some ecosystems to get a granular view of the exact versions being deployed at that point in time.
 2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
 3. Some customers use CI/CD to passively monitor and then turn on gating by using the Snyk CLI `test` command for each product.
-4. If you import a large number of legacy applications, you can use [Priority Score](../../manage-issues/priorities-for-fixing-issues/priority-score.md) (typically 700 as a starting place). If you would like to have more control over the criteria, you can do the following:
+4. If you import a large number of legacy applications, you can use [Priority Score](../find-and-manage-priority-issues/priority-score.md) (typically 700 as a starting place). If you would like to have more control over the criteria, you can do the following:
    * Focus on `Critical` to start for open source, and `High` for first-party code.
    * For open source, try additional criteria like `Known exploit` or `Fix available` to define a starting point for engaging developers in starting to fix vulnerabilities for key applications.

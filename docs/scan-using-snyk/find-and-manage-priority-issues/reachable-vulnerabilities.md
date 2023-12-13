@@ -19,7 +19,7 @@ Enabling Reachability is done using the Organization setting:&#x20;
 After it is enabled, reachability analysis is done as part of testing Projects.&#x20;
 
 {% hint style="info" %}
-To update existing Projects with the reachability analysis immediately, trigger a [manual test](../../scan-using-snyk/snyk-open-source/open-source-basics/#manual-pull-and-merge-requests-for-project-code).
+To update existing Projects with the reachability analysis immediately, trigger a [manual test](../snyk-open-source/open-source-basics/#manual-pull-and-merge-requests-for-project-code).
 {% endhint %}
 
 ## Supported languages and integrations for Reachable Vulnerabilities
@@ -76,7 +76,7 @@ Reachability status is currently not available using Reports or the API.
 
 ### As part of the Risk Score
 
-[Risk Score](../risk-score.md) helps you apply holistic Risk-Based prioritization that combines multiple factors, either objective to the vulnerability or the context of your application. Reachability is such a contextual factor that will significantly increase the overall score.&#x20;
+[Risk Score](../../manage-issues/risk-score.md) helps you apply holistic Risk-Based prioritization that combines multiple factors, either objective to the vulnerability or the context of your application. Reachability is such a contextual factor that will significantly increase the overall score.&#x20;
 
 Risk Score is available on the Projects page, API, and Reports.&#x20;
 

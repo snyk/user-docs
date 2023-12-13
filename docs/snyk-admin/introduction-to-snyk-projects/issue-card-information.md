@@ -19,9 +19,9 @@ The issue card provides a [Header section](issue-card-information.md#header-sect
 
 <figure><img src="../../.gitbook/assets/issue-card-header_8dec2022.png" alt="npmconf issue card header"><figcaption><p>npmconf issue card header</p></figcaption></figure>
 
-* [Severity level](../../manage-issues/prioritizing-issues/severity-levels.md): for example, **High**
+* [Severity level](../../scan-using-snyk/find-and-manage-priority-issues/severity-levels.md): for example, **High**
 * Issue name: for example, **Uninitialized Memory Exposure**, with a link that can be copied
-* **Score**: [Priority score](../../manage-issues/priorities-for-fixing-issues/priority-score.md): 0 to 1,000
+* **Score**: [Priority score](../../scan-using-snyk/find-and-manage-priority-issues/priority-score.md): 0 to 1,000
 * Type: **VULNERABILITY** or LICENSE ISSUE
 * Links to [CWE](https://cwe.mitre.org/index.html) (Common Weakness Enumeration), [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System), and [Snyk Vulnerability Database](https://snyk.io/vuln) information for the issue. You can use these links to view more information about the CWE, CVE, and CVSS scores or navigate to the Snyk Vulnerability Database information for a specific vulnerability from its issue card.
 
@@ -31,9 +31,9 @@ The issue card provides a [Header section](issue-card-information.md#header-sect
 
 * **Introduced through**: The path through which the vulnerability or license was introduced
 * **Fixed in:** The file the vulnerability is fixed in
-* [**Exploit maturity**](../../manage-issues/priorities-for-fixing-issues/view-exploits.md): for example, **Mature** or **Proof Of Concept**
-* **Reachability**: for example, **Reachable**. For information and an example, see [Reachable vulnerabilities](../../manage-issues/priorities-for-fixing-issues/reachable-vulnerabilities.md)
-* **Social Trends**: Snyk shows a [Trending](../../manage-issues/priorities-for-fixing-issues/vulnerabilities-with-social-trends.md) banner for issues that are being actively discussed on Twitter.
+* [**Exploit maturity**](../../scan-using-snyk/find-and-manage-priority-issues/view-exploits.md): for example, **Mature** or **Proof Of Concept**
+* **Reachability**: for example, **Reachable**. For information and an example, see [Reachable vulnerabilities](../../scan-using-snyk/find-and-manage-priority-issues/reachable-vulnerabilities.md)
+* **Social Trends**: Snyk shows a [Trending](../../scan-using-snyk/find-and-manage-priority-issues/vulnerabilities-with-social-trends.md) banner for issues that are being actively discussed on Twitter.
 
 ## Expand an issue card to show more details
 
@@ -62,6 +62,6 @@ You can sort the issue cards in a Project based on their priority score or sever
 
 You can perform the following actions on the issue card:
 
-* [Ignore the issue](../../manage-risk/find-and-manage-priority-issues/ignore-issues.md): if you do not need to take action on an issue, or it does not need to appear on your reports, you can ignore it.
+* [Ignore the issue](../../scan-using-snyk/find-and-manage-priority-issues/ignore-issues.md): if you do not need to take action on an issue, or it does not need to appear on your reports, you can ignore it.
 * [Create a Jira ticket](../../integrate-with-snyk/notification-and-ticketing-systems-integrations/jira-integration.md): if you have the Jira integration, you can link your issue boards to Snyk and create Jira tickets directly from the Project details page to fix vulnerabilities.
 * [Fix the vulnerability](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md): if a fix is available, you can fix individual vulnerabilities.
