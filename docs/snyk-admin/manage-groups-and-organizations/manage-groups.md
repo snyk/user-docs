@@ -30,7 +30,7 @@ Select **Dependencies** to view the dependencies and license issues for your Gro
 
 </div>
 
-See [Dependencies and licenses](../../manage-issues/dependencies-and-licenses/) for more details.
+See [Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/) for more details.
 
 ## Group policies
 
