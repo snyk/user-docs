@@ -2,7 +2,7 @@
 
 Snyk Policies define how Snyk behaves when identifying issues. Policies give you a quick and automated way to identify, prioritize and triage issues. This saves valuable development time, and allows developers to take more responsibility and ownership for security, reducing the “noise” level.
 
-See [Policies](../../../manage-issues/policies/) for more details.
+See [Policies](../../../scan-using-snyk/policies/) for more details.
 
 ## Security policies
 
@@ -11,7 +11,7 @@ Group administrators can define security policies, providing an automated way to
 * Configure policies to increase priority or decrease as needed.&#x20;
 * Create ignores where needed
 
-See [Security policies](../../../manage-issues/policies/security-policies/) for more details.
+See [Security policies](../../../scan-using-snyk/policies/security-policies/) for more details.
 
 ## License policies
 

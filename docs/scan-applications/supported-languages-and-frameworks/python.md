@@ -221,7 +221,7 @@ Currently, the default supported versions are `2.7.16` and `3.7.4.`
 
 By default, Snyk tests Pip Projects using Python 3.
 
-To define which Python Major version Snyk uses to test your Git-imported Pip Projects, use either Organization settings or a [`.snyk` policy file](../../manage-issues/policies/the-.snyk-file.md).
+To define which Python Major version Snyk uses to test your Git-imported Pip Projects, use either Organization settings or a [`.snyk` policy file](../../scan-using-snyk/policies/the-.snyk-file.md).
 
 To define the Python version for all Projects in an Organization:
 

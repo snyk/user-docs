@@ -59,4 +59,4 @@ Snyk was built with developers in mind, providing:
 * Tools to create secure applications using integrations for IDE, Git, and CI/CD.
 * [Snyk Advisor](https://snyk.io/advisor) and other tools to make decisions.
 * [Snyk Learn](https://learn.snyk.io) training materials on products, securing code, and best practices.&#x20;
-* [Policies](../../manage-issues/policies/) that allow security and compliance teams to provide direction.
+* [Policies](../../scan-using-snyk/policies/) that allow security and compliance teams to provide direction.

@@ -160,7 +160,7 @@ A specific type of a package.
 
 ### License policy
 
-A set of criteria for evaluating open source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../manage-issues/policies/license-policies/).
+A set of criteria for evaluating open source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../scan-using-snyk/policies/license-policies/).
 
 ## M
 
@@ -282,7 +282,7 @@ Software Development Life Cycle. A process followed by a development team, descr
 
 ### Security policy
 
-A set of criteria for evaluating open source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../manage-issues/policies/security-policies/).
+A set of criteria for evaluating open source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../scan-using-snyk/policies/security-policies/).
 
 ### Severity
 
@@ -294,7 +294,7 @@ An individual report within a project’s test history. Includes a tree of depen
 
 ### `.snyk` policy
 
-A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../manage-issues/policies/the-.snyk-file.md).
+A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../scan-using-snyk/policies/the-.snyk-file.md).
 
 ### Snyk
 

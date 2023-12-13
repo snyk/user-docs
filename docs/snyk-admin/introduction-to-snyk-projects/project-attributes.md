@@ -2,7 +2,7 @@
 
 Project attributes are static and non-configurable fields that allow you to apply attribute values to a Project by selecting from a predefined list of values. After you have applied attributes, you can remove them from a Project as needed.
 
-Use attributes to group, prioritize, and filter Projects. Use attributes such as lifecycle stage, business criticality, and environment to prioritize issues at a granular level. After you apply attributes to Snyk [policies](../../manage-issues/policies/), you can assign policies to Projects that have those attributes applied.
+Use attributes to group, prioritize, and filter Projects. Use attributes such as lifecycle stage, business criticality, and environment to prioritize issues at a granular level. After you apply attributes to Snyk [policies](../../scan-using-snyk/policies/), you can assign policies to Projects that have those attributes applied.
 
 ## **Available attributes and their values**
 
