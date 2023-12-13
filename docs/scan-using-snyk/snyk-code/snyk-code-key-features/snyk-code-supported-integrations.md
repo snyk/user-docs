@@ -47,5 +47,5 @@ You can query Code Projects and issues using the [Snyk REST API](https://apidocs
 
 ## Notification integration
 
-You can connect Snyk Code with your J[ira instance](../../../integrate-with-snyk/notification-and-ticketing-systems-integrations/jira-integration.md), allowing developers to export data to Jira issues easily.
+You can connect Snyk Code with your J[ira instance](../../../integrate-with-snyk/notification-and-ticketing-systems-integraitons/jira-integration.md), allowing developers to export data to Jira issues easily.
 

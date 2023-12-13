@@ -1,4 +1,4 @@
-# Notification and ticketing systems integraitons
+# Notification and ticketing systems integrations
 
 This section includes the following documentation of Snyk integrations:
 
