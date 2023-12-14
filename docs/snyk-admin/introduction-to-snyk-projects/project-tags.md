@@ -26,6 +26,10 @@ You can perform some of these actions and additional actions in the Snyk API v1:
 
 You can set values for a tag applied to a Project and clear the Project tags using the Snyk CLI option `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md). for the commands that support this option.
 
+{% hint style="info" %}
+If a Project tag is no longer assigned to a Project, the tag does not exist.&#x20;
+{% endhint %}
+
 ### Tag conditions
 
 The following conditions apply to Project tags:
@@ -34,7 +38,6 @@ The following conditions apply to Project tags:
 * Values are limited to 256 characters.
 * Keys allow only alphanumerics and the following characters **`-`**, **`_`**
 * Values allow these characters plus **`/`**, **`:`**, **`?`**, **`#`**, **`@`**, **`&`**, **`+`**, **`=`**, **`%`**, **`~`**
-* You can create 1,000 unique key and value combinations per Snyk Group and apply ten unique tags per Project.
 * Reusing a key and value combination does not add to the count.
 
 ## **How to create and delete tags**

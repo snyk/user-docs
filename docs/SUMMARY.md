@@ -735,7 +735,7 @@
   * [Snyk Projects](snyk-admin/snyk-projects/README.md)
     * [View Project information](snyk-admin/snyk-projects/view-project-information.md)
     * [Project attributes](snyk-admin/snyk-projects/project-attributes.md)
-    * [Project tags](snyk-admin/snyk-projects/project-tags.md)
+    * [Project tags](snyk-admin/introduction-to-snyk-projects/project-tags.md)
     * [Project collections groupings](snyk-admin/snyk-projects/project-collections-groupings/README.md)
       * [Project views](snyk-admin/snyk-projects/project-collections-groupings/project-views.md)
       * [Project collections](snyk-admin/snyk-projects/project-collections-groupings/project-collections.md)
