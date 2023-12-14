@@ -6,29 +6,9 @@ On the Snyk AppRisk dashboard page, you can add widgets that display an overview
 
 You can customize the dashboard widgets as desired. Choose to rename or modify display configurations, add multiple widget instances, or remove widgets.
 
-## Add and configure a widget
+## Configure a widget
 
-Customize your dashboard with the available widgets. You can choose to add multiple instances of the same widget, change the settings of an existing widget, or change the way it is displayed.
-
-### Add a widget
-
-You can add one or multiple instances of the following widgets:
-
-* Asset breakdown by type
-* Control coverage
-* Number of commits trend
-* Repository activity
-* Repository activity table
-* Repository breakdown by source
-* SAST coverage
-* SCA coverage
-* Technology breakdown
-
-Follow these steps to add a widget to your Dashboard page:
-
-1. Navigate to the Dashboard page.
-2. Click **Add widget**.
-3. Drag and drop any of the available widgets to your dashboard.
+Customize your dashboard with the available widgets. You can change the settings of an existing widget or change the way it is displayed.
 
 ### Configure a widget
 
