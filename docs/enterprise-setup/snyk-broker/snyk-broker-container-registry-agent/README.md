@@ -37,7 +37,7 @@ Using the Snyk Broker Container Registry Agent you can integrate Snyk with the f
 * Google Cloud Container Registry (GCR) (type: gcr)
 * Amazon Elastic Container Registry (ECR) (type: ecr)
 * Google Artifact Registry (type: google-artifact-cr)
-* Docker Hub registry (type: docker-hub)
+* Docker Hub registry (type: docker-hub). Note: Snyk Broker is unable to connect to a self-hosted instance of OCI Distribution, that is, [`docker.io/registry`](http://docker.io/registry).
 * RedHat Quay container registry (type: quay-cr)
 * Nexus registry (type: nexus-cr)
 * GitHub Container registry (type: github-cr)
