@@ -8,11 +8,6 @@ Filters are applied on a normalized `struct` that contains the following fields:
 
 * Type: Type of the resource, for example, `aws_s3_bucket`
 * Id: Id of the resource, for example, `my-bucket-name`
-* Attr: Every resource attribute. See this [terraform attributes reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3\_bucket#attributes-reference) for a full list of supported attributes of a bucket.
-
-{% hint style="info" %}
-If you want to filter on `Attr`, enable deep mode in order to have access to the details of a resource.
-{% endhint %}
 
 ​Examples of filter rules follow.
 
@@ -27,6 +22,4 @@ $ snyk iac describe --filter=$'Type==\'aws_s3_bucket\' && Id!=\'my-bucket-name\'
 $ snyk iac describe --filter=$'!(Type==\'aws_s3_bucket\' && starts_with(Id, \'terraform-\'))'
 # Ignore buckets with an ID suffix of '-test'
 $ snyk iac describe --filter=$'!(Type==\'aws_s3_bucket\' && ends_with(Id, \'-test\'))'
-# Ignore GitHub archived repositories
-$ snyk iac describe --to="github+tf" --deep --filter='!(Attr.Archived)'
 ```
