@@ -373,7 +373,7 @@
       * [Fix code vulnerabilities automatically](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md)
       * [Code Analysis results history](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-history-of-snyk-code-results.md)
     * [Use Snyk Code in the CI/CD pipeline](scan-using-snyk/snyk-code/using-snyk-code-from-a-ci-cd-pipeline.md)
-    * [Use Snyk Code IDE](scan-using-snyk/snyk-code/using-snyk-code-in-an-ide.md)
+    * [Use Snyk Code in your IDE](scan-using-snyk/snyk-code/using-snyk-code-in-an-ide.md)
   * [Snyk Container](scan-using-snyk/snyk-container/README.md)
     * [How Snyk Container works](scan-using-snyk/snyk-container/how-snyk-container-works/README.md)
       * [Snyk Container - Supported operating system distributions](scan-using-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
