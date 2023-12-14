@@ -114,7 +114,7 @@ A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, 
 
 ### Fix PR
 
-A pull request with an automatic fix for vulnerabilities found that Snyk can offer the user. See [Configure Automatic fix PRs](../scan-using-snyk/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md).
+A pull request with an automatic fix for vulnerabilities found that Snyk can offer the user. See [Configure Automatic fix PRs](../scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md).
 
 ## G
 

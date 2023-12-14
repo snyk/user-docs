@@ -14,7 +14,7 @@ Snyk Open Source is available in many common languages and platforms. See [Suppo
 
 ## Find and fix vulnerabilities
 
-Use Snyk Open Source to find and fix vulnerabilities in the open-source libraries in your application. Snyk provides actionable fix advice for vulnerabilities and supports workflows to fix vulnerabilities using pull requests. For more information, see [Automatic and manual PRs with Snyk Open Source](open-source-basics/).
+Use Snyk Open Source to find and fix vulnerabilities in the open-source libraries in your application. Snyk provides actionable fix advice for vulnerabilities and supports workflows to fix vulnerabilities using pull requests. For more information, see [Automatic and manual PRs with Snyk Open Source](automatic-and-manual-prs-with-snyk-open-source/).
 
 Snyk Open Source also helps prioritize and report on the vulnerabilities discovered. For more information, see [Manage risk](../../manage-risk/).
 

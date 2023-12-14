@@ -1,7 +1,7 @@
 # Automatic and manual PRs with Snyk Open Source
 
 {% hint style="info" %}
-For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../manage-vulnerabilities/fix-your-vulnerabilities.md). To be sure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../manage-vulnerabilities/troubleshooting-open-source-vulnerability-fixing.md#languages-supporting-fix-pull-requests-or-merge-requests).
+For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../manage-vulnerabilities/fix-your-vulnerabilities.md). To be sure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../manage-vulnerabilities/troubleshoot-fixing-open-source-vulnerabilities.md#languages-supporting-fix-pull-requests-or-merge-requests).
 {% endhint %}
 
 Snyk provides actionable fix advice for vulnerabilities in your Open Source libraries through the following:
@@ -13,9 +13,9 @@ Snyk provides actionable fix advice for vulnerabilities in your Open Source libr
 
 For Projects imported through an SCM integration, Snyk offers the following types of automated pull and merge requests:
 
-* [Fix pull requests for new vulnerabilities](fix-pull-requests-for-new-vulnerabilities.md)
-* [Fix pull requests to clear the backlog of vulnerabilities in priority order](fix-pull-requests-for-known-vulnerabilities-backlog.md)
-* [Dependency upgrade pull requests](upgrading-dependencies-with-automatic-prs.md)
+* [Fix pull requests for new vulnerabilities](automated-pull-request-creation-for-new-fixes.md)
+* [Fix pull requests to clear the backlog of vulnerabilities in priority order](automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md)
+* [Dependency upgrade pull requests](upgrade-dependencies-with-automatic-prs.md)
 
 ## Manual pull and merge requests for Project code
 

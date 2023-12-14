@@ -14,7 +14,7 @@ You can also use this feature with Snyk Broker. To use this feature, you must up
 
 Automatic dependency or upgrade PRs work as follows.
 
-1. The **Automatic dependency upgrade pull requests** option must be enabled in [the Integration Settings at the Organization level](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or in the Project Settings.
+1. The **Automatic dependency upgrade pull requests** option must be enabled in [the Integration Settings at the Organization level](upgrade-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or in the Project Settings.
 2. When you import repositories, Snyk scans the repositories and provides scan results. Snyk then continues to monitor your Open Source Projects, scanning them on a regular basis. The re-scan frequency is based on the schedule set in the Project Settings.
 3. For each scan, when new versions for your dependencies are identified, Snyk creates automatic upgrade PRs.
    * Snyk does not open a new upgrade PR for a dependency that is already upgraded or patched in another open Snyk PR.

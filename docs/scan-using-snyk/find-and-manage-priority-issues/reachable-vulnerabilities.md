@@ -19,7 +19,7 @@ Enabling Reachability is done using the Organization setting:&#x20;
 After it is enabled, reachability analysis is done as part of testing Projects.&#x20;
 
 {% hint style="info" %}
-To update existing Projects with the reachability analysis immediately, trigger a [manual test](../snyk-open-source/open-source-basics/#manual-pull-and-merge-requests-for-project-code).
+To update existing Projects with the reachability analysis immediately, trigger a [manual test](../snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/#manual-pull-and-merge-requests-for-project-code).
 {% endhint %}
 
 ## Supported languages and integrations for Reachable Vulnerabilities

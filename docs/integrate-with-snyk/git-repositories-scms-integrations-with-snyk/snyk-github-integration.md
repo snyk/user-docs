@@ -49,7 +49,7 @@ You can then scroll down to the section required, and set the options accordingl
 * Pull requests:
   * [Open Snyk automatic PRs from a fixed GitHub account](snyk-github-integration.md#setting-an-account-to-open-snyk-prs)
   * [Automatic fix PRs](snyk-github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-  * [Automatic dependency upgrade PRs](../../scan-using-snyk/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
+  * [Automatic dependency upgrade PRs](../../scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/upgrade-dependencies-with-automatic-prs.md)
   * [Pull request assignees](snyk-github-integration.md#pr-assignment)
   * [Snyk vulnerability patches](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
 * Pull request status checks ([PR Checks](../../scan-using-snyk/run-pr-checks/))
