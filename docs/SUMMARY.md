@@ -574,7 +574,7 @@
     * [Phase 4: Create a fix strategy](enterprise-setup/enterprise-implementation-guide/phase-4-create-a-fix-strategy.md)
     * [Phase 5: Initial rollout to team](enterprise-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/README.md)
       * [Notifying the team](enterprise-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/notifying-the-team.md)
-      * [Announcement templates](enterprise-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/announcement-templates.md)
+      * [Announcement templates for initial rollout](enterprise-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/announcement-templates-for-initial-rollout.md)
       * [Developer training from Snyk](enterprise-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/developer-training-from-snyk.md)
       * [Engage development with IDE plugins](enterprise-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/engage-development-with-ide-plugins.md)
     * [Phase 6: Rolling out the prevention stage](enterprise-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md)

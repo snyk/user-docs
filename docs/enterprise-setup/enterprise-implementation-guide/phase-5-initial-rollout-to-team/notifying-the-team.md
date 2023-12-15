@@ -34,4 +34,4 @@ Introducing Snyk to your developers is the first step in building awareness of S
 
 This is your chance to get developers excited about better ways to introduce security into their work. If Snyk can make their lives easier, they will be more likely to get on board.
 
-You can use the [Announcement templates](announcement-templates.md) to communicate the Snyk rollout to the rest of the developers.
+You can use the [Announcement templates](announcement-templates-for-initial-rollout.md) to communicate the Snyk rollout to the rest of the developers.
