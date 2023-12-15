@@ -582,7 +582,7 @@
       * [Set visibility and configure an Organization template](enterprise-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/README.md)
         * [Configure notifications](enterprise-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-notifications.md)
         * [Enable Snyk Code](enterprise-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md)
-        * [Configure Integrations](enterprise-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-integrations.md)
+        * [Configure integrations](enterprise-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-integrations.md)
         * [Create Organizations](enterprise-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/create-organizations.md)
       * [Apply security and license policies](enterprise-setup/enterprise-implementation-guide/phase-2-configure-account/apply-security-and-license-policies.md)
     * [Phase 3: Gain visibility](enterprise-setup/enterprise-implementation-guide/phase-3-gain-visibility/README.md)
