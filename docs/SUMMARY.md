@@ -600,7 +600,7 @@
       * [Custom base images](enterprise-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/custom-base-images.md)
       * [Infrastructure as Code](enterprise-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/infrastructure-as-code.md)
       * [Announcement templates](enterprise-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/announcement-templates.md)
-    * [Phase 7: Triages, Ignores and Fixes](enterprise-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md)
+    * [Phase 7: Triages, ignores, and fixes](enterprise-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md)
   * [Authentication for third-party tools](enterprise-setup/authentication-for-third-party-tools.md)
   * [Using Single Sign-On (SSO) for authentication](enterprise-setup/using-single-sign-on-sso-for-authentication/README.md)
     * [Choose a provisioning option](enterprise-setup/using-single-sign-on-sso-for-authentication/choose-a-provisioning-option.md)
