@@ -234,6 +234,7 @@
     * [Slack integration](integrate-with-snyk/notification-and-ticketing-systems-integrations/slack-integration.md)
   * [Vulnerability management tools](integrate-with-snyk/vulnerability-management-tools/README.md)
     * [Atlassian Compass integration](integrate-with-snyk/vulnerability-management-tools/atlassian-compass-integration.md)
+    * [Mobb integration](integrate-with-snyk/vulnerability-management-tools/mobb-integration.md)
     * [OpsLevel integration](integrate-with-snyk/vulnerability-management-tools/opslevel-integration.md)
     * [Phoenix Security integration](integrate-with-snyk/vulnerability-management-tools/phoenix-security-integration.md)
     * [ServiceNow AVR integration](integrate-with-snyk/vulnerability-management-tools/servicenow-avr-integration.md)
