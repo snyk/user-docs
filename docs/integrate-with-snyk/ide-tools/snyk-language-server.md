@@ -62,15 +62,15 @@ The PROTOCOL\_VERSION currently is 3, but may increase with ongoing development.
 
 ### Snyk LSP command line flags
 
-`-c <FILE>` allows specifying a config file to load before all others
+`-c <FILE>` allows specifying a config file to load before all others.
 
-`-l <LOGLEVEL>` allows specifying the log level (`trace`, `debug`, `info`, `warn`, `error`, `fatal`). The default log level is `info`
+`-l <LOGLEVEL>` allows specifying the log level (`trace`, `debug`, `info`, `warn`, `error`, `fatal`). The default log level is `info.`
 
-`-o <FORMAT>` allows specifying the output format (`md` or `html`) for issues
+`-o <FORMAT>` allows specifying the output format (`md` or `html`) for issues.
 
-`-f <FILE>` allows specifying a log file instead of logging to the console
+`-f <FILE>` allows specifying a log file instead of logging to the console.
 
-`-licenses` displays the [licenses](https://github.com/snyk/snyk-ls/tree/main/licenses) used by Language Server
+`-licenses` displays the [licenses](https://github.com/snyk/snyk-ls/tree/main/licenses) used by Language Server.
 
 ### **LSP initialization options**
 
@@ -97,6 +97,8 @@ As part of the [Initialize message](https://microsoft.github.io/language-server-
   "trustedFolders": ["/a/trusted/path", "/another/trusted/path"], // An array of folder that should be trusted
 }
 ```
+
+For all .NET Projects, Snyk recommends adding the `--all-projects` additional parameter.
 
 ## **Authentication for Snyk Language Server**
 

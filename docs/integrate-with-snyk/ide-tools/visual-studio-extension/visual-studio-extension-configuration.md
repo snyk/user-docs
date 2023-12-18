@@ -20,7 +20,8 @@ After the plugin is installed, you can set the following configurations for the 
 * **Ignore unknown CA**: Ignore unknown certificate authorities.
 * **Organization**: Specify the ORG\_ID to run Snyk commands tied to a specific organization. Snyk recommends using the ORG\_ID. If you specify the ORG\_NAME, that is, the organization slug name, the value must match the URL slug as displayed in the URL of your org in the Snyk UI: https://app.snyk.io/org/\[orgslugname]. If not specified, the Preferred Organization (as defined in your [account settings](https://app.snyk.io/account)) is used to run tests.
 * **Send usage analytics**: To help Snyk improve the extension, let your Visual Studio send Snyk information about how the extension is working.
-* **Project settings**: Specify any additional Snyk CLI parameters.
+* **Project settings**: Specify any additional Snyk CLI parameters.\
+  For all .NET Projects, Snyk recommends adding the `--all-projects` additional parameter.
 * **Scan all projects**: Auto-detect all projects in the working directory, enabled by default.
 * **Executable settings**: You can opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
   * When **Automatically manage needed binaries** is checked, the plugin automatically downloads the CLI and keeps the CLI updated.
