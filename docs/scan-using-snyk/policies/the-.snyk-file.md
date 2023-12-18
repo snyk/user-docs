@@ -64,8 +64,8 @@ The `ignore:` is an ignore rule in the form of:
 ignore:
   snyk-vulnid:
     - path to library using > seperator :
-      reason: 'text string'
-      expires: 'datetime string'
+        reason: 'text string'
+        expires: 'datetime string'
 ```
 
 The `patch`: is in the form of:
