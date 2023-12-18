@@ -43,11 +43,11 @@ Responses for severity levels are as follows:
 4/ 24x7 support will be supported in English unless during business hours.
 {% endhint %}
 
-## Detailed Definitions
+## Detailed definitions
 
-### Standard Support Overview
+### Standard support overview
 
-Self-serve resources designed to help you quickly and successfully derive value throughout your security journey with Snyk.
+Standard support provides self-serve resources designed to help you quickly and successfully derive value throughout your security journey with Snyk.
 
 | Standard Support Offering                                                                     | Description                                                                                                                                                                                                                                                     |
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,13 +65,30 @@ Self-serve resources designed to help you quickly and successfully derive value 
 1/ Existing Business plan customers
 {% endhint %}
 
-### **Technical Support As Part Of Platinum Care Offering**
+### **Platinum Care services**
 
-Platinum add-on providing extended, in-depth, and skilled expertise to help you maximize your investment with Snyk, by aligning to your account a Technical Support Engineer that will have the relevant level of depth into your environment, deployment and use cases, that will help to expedite resolution time and offering best practices
+The Platinum add-on provides extended, in-depth, and skilled expertise to help you maximize your investment with Snyk, by aligning to your account a Technical Support Engineer who will have the relevant level of depth in your environment, deployment, and use cases, that will help to expedite resolution time and offer best practices
 
-### Premium Care Overview
+The services listed here will be delivered by your assigned Technical Success Manager (TSM), Solutions Architecture (SA), Technical Support Engineer (TSE), and more technical resources and product leadership.
 
-Premium add-on providing extended, in-depth, and skilled expertise to help you maximize your investment with Snyk.
+* Solutions Architecture:  Snyk product expert will design the customer’s deployment and change management process. We enable Snyk’s worldwide growth by accelerating the adoption of Snyk’s solutions by addressing customers’ problems, partnering with internal teams, and deep subject matter expertise. The SA thinks strategically about how to solve customers’ business problems and then dives deep to create technical solutions based on a deep discovery of the customer’s current development environment and processes.
+  * The Solution Architecture item will be delivered as part of the onboarding period and will be initiated in the first 90 days.
+  * The Solution Architect will deliver discovery sessions and will conduct an architecture doc with recommendations on Snyk deployment and change management. Any additional work out of the Platinum Care scope will be charged separately. &#x20;
+* Success Planning: Snyk will work with Customer to understand and document the specific goals they are looking to achieve through their deployment of Snyk throughout their Organization. In addition, Snyk will recommend the optimal workflow and points of integration to help the Customer best achieve their stated goals.
+* Onboarding Guidance: Snyk will conduct a guided technical set up for SSO and Broker features, perform a guided implementation of one or multiple Developer workflows and additional guided implementations based on the product package selected for the subscription term.
+* Complete DevSecOps Capability assessment: Snyk will facilitate a live workshop to assess the customer’s organization along Snyk’s DevSecOps Capability framework. As part of this assessment, we will establish a baseline maturity state and will help Customer set goals for how they can improve both their overall DevSecOps capabilities as well as how they can specifically leverage Snyk to shift left in their own DevSecOps process.
+* Enablement Support: Snyk resources will lead the customer through Admin UI training, and multiple Developer trainings as required throughout the duration of the engagement
+* Regular Business and Deployment Optimization Reviews - Snyk will provide quarterly business reviews back to demonstrate progress achieved against the success criteria established during implementation. In addition, Snyk will provide semi-annual deployment optimization reviews to help ensure the customer is leveraging the latest Snyk functionality and that the deployment has been optimized for any changes in the customer’s tech stack or use case.&#x20;
+* Weekly Deployment Stand-Up and Project Status Calls - during critical periods of implementation or developer roll-out, Snyk will conduct weekly stand-ups and help provide general project management tracking throughout the Snyk implementation project.
+* Technical Advocacy -  The Snyk TSM will help advocate internally for specific product needs and help connect customers with relevant experts within Snyk to assist with specific challenges. The Snyk TSM will also help the customer champion any open support or product tickets to help provide one voice from SnykSecurity Awareness and Education Training - The Snyk team will offer periodic developer education sessions, including our “Stranger Danger” Live Hacking Session, Intro to Security Champions program, How to Bug Bash with Snyk and others
+* Technical Advisory - Access to advanced technical experts with industry and domain expertise who can help solve complex use cases
+* Content Creation - Support the development of custom content for developer training and enablement, Snyk usage policies, internal wikis
+* Developer/Admin training on Snyk platform in order to maximize Snyk value, by educating developers and admins on Snyk platform and having refreshers to increase Snyk value by utilizing new features and capabilities.
+* Onsite visits (twice per year) - Where requested, the TSM will make up to 2 onsite visits to provide customer workshops, trainings or to conduct business reviews (Travel expenses passed through at cost)
+
+### Premium Care overview
+
+The Premium add-on provides extended, in-depth, and skilled expertise to help you maximize your investment with Snyk.
 
 | Premium Care Offering                                                         | Description                                                                                                                                                                                                                                                              |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -101,28 +118,9 @@ approval and may be subject to additional T\&E fees.
 increments unless otherwise agreed to by Snyk.
 {% endhint %}
 
-### **Platinum Care Services**
+### **Premium Care services**
 
-Maximize the value out of Snyk products by leveraging assigned expert and proactive technical resources. The services below will be delivered by your assigned Technical Success Manager (TSM), Solutions Architecture(SA), Technical Support Engineer(TSE) and more technical resources and product leadership:
-
-* Solutions Architecture:  Snyk product expert will design the customer’s deployment and change management process. We enable Snyk’s worldwide growth by accelerating the adoption of Snyk’s solutions by addressing customers’ problems, partnering with internal teams, and deep subject matter expertise. The SA thinks strategically about how to solve customers’ business problems and then dives deep to create technical solutions based on a deep discovery of the customer’s current development environment and processes\*.
-* Success Planning: Snyk will work with Customer to understand and document the specific goals they are looking to achieve through their deployment of Snyk throughout their organization. In addition, Snyk will recommend the optimal workflow and points of integration to help the Customer best achieve their stated goals.
-* Onboarding Guidance: Snyk will conduct a guided technical set up for SSO and Broker features, perform a guided implementation of one or multiple Developer workflows and additional guided implementations based on the product package selected for the subscription term.
-* Complete DevSecOps Capability assessment: Snyk will facilitate a live workshop to assess the customer’s organization along Snyk’s DevSecOps Capability framework. As part of this assessment, we will establish a baseline maturity state and will help Customer set goals for how they can improve both their overall DevSecOps capabilities as well as how they can specifically leverage Snyk to shift left in their own DevSecOps process.
-* Enablement Support: Snyk resources will lead the customer through Admin UI training, and multiple Developer trainings as required throughout the duration of the engagement
-* Regular Business and Deployment Optimization Reviews - Snyk will provide quarterly business reviews back to demonstrate progress achieved against the success criteria established during implementation. In addition, Snyk will provide semi-annual deployment optimization reviews to help ensure the customer is leveraging the latest Snyk functionality and that the deployment has been optimized for any changes in the customer’s tech stack or use case.&#x20;
-* Weekly Deployment Stand-Up and Project Status Calls - during critical periods of implementation or developer roll-out, Snyk will conduct weekly stand-ups and help provide general project management tracking throughout the Snyk implementation project.
-* Technical Advocacy -  The Snyk TSM will help advocate internally for specific product needs and help connect customers with relevant experts within Snyk to assist with specific challenges. The Snyk TSM will also help the customer champion any open support or product tickets to help provide one voice from SnykSecurity Awareness and Education Training - The Snyk team will offer periodic developer education sessions, including our “Stranger Danger” Live Hacking Session, Intro to Security Champions program, How to Bug Bash with Snyk and others
-* Technical Advisory - Access to advanced technical experts with industry and domain expertise who can help solve complex use cases
-* Content Creation - Support the development of custom content for developer training and enablement, Snyk usage policies, internal wikis
-* Developer/Admin training on Snyk platform in order to maximize Snyk value,by educating developers an admins on Snyk platform and having refreshers to increase Snyk value by utilizing new features and capabilities.
-* Onsite visits (twice per year) - Where requested, the TSM will make up to 2 onsite visits to provide customer workshops, trainings or to conduct business reviews (Travel expenses passed through at cost)
-
-\*The Solution Architecture item will be delivered as part of the onboarding period and will be initiated in the first 90 days. The Solution Architect will deliver discovery sessions and will conduct an architecture doc with recommendations on Snyk deployment and change management. Any additional work out of the Premium Care scope will be charged separately. &#x20;
-
-### **Premium Care Services**
-
-Maximize the value out of Snyk products by leveraging assigned expert and proactive technical resources. The services below will be delivered by your assigned Technical Success Manager (TSM) or other specialty resources as required:
+Maximize the value you gain from Snyk products by leveraging assigned expert and proactive technical resources. The services below will be delivered by your assigned Technical Success Manager (TSM) or other specialty resources as required:
 
 * Success Planning: Snyk will work with Customer to understand and document the specific goals they are looking to achieve through their deployment of Snyk throughout their organization. In addition, Snyk will recommend the optimal workflow and points of integration to help the Customer best achieve their stated goals.
 * Onboarding Guidance: Snyk will conduct a guided technical set up for SSO and Broker features, perform a guided implementation of one or multiple Developer workflows and additional guided implementations based on the product package selected for the subscription term.
@@ -140,18 +138,16 @@ Maximize the value out of Snyk products by leveraging assigned expert and proact
 * Snyk will prioritize all Support Requests based on its reasonable assessment of the severity level of the problem reported; and use all reasonable endeavors to meet the timescales specified in the table above.
 * Times listed are the time frames in which you can expect the first response.
 * First response times apply to support communications via Snyk's support portal only. Private Slack channels are designed for regular collaboration between Snyk and customer but are not subject to any specific first response times and should not be used for support communications.
-* For issues outside of typical support scope, those determined to require longer term fix, or part of future development cycles. Snyk will provide regular and meaningful updates on a case by case basis. Including but not limited to - new feature requests, items within Snyk’s long term development roadmap, complex bug fixes.
-*   Technical Success Managers do not provide break/fix support and will refer requests for technical issue resolution to Snyk's technical support team.
+* For issues outside of typical support scope, those determined to require longer term fix, or part of future development cycles. Snyk will provide regular and meaningful updates on a case by case basis. Including but not limited to - new feature requests, items within Snyk’s long-term development roadmap, complex bug fixes.
+* Technical Success Managers do not provide break/fix support and will refer requests for technical issue resolution to Snyk's technical support team.
 
-
-
-## **Definitions of Snyk Global Support Hours**
+## **Definitions of Snyk Global Support hours**
 
 * **8x5**: Snyk support engineers actively respond to tickets within Customer's local business hours, Monday to Friday.
 * **24x5**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday in Customer's local time zone.
 * **24x7**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. Plus, for **urgent customer issues** outside of 24x5, Snyk provides a 24-hour support telephone number. This is served by a telephone answering service which triggers our on-call engineers.
 
-## Implementation Support
+## Implementation support
 
 Customer acknowledges and agrees that the implementation support options outlined below may be performed either by Snyk personnel, or by Snyk’s certified partners, under the direction and supervision of Snyk.  In either event, Snyk remains fully responsible and liable for the performance of the Snyk Accelerate or Snyk Assist implementation support, and its partner’s compliance with the terms of the underlying Agreement between Snyk and Customer, including obligations of confidentiality and data security.
 
