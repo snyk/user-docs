@@ -46,6 +46,8 @@ All columns displayed in the UI are included in the CSV output. In addition, any
 
 There is no row limit, but there is a 5GB file size limit.
 
+The **Download CSV** button is disabled if there are no vulnerabilities in the report, either because the Organization has no vulnerable projects or the filters applied remove all vulnerabilities. In this case, the report can still be exported to PDF if proof of zero vulns is required.&#x20;
+
 ## Column sorting
 
 Sort columns within tables by clicking the arrows next to the column header. Click once to sort in ascending order, twice to sort in descending order and a third time to remove sort from that column. Multi-column sorting is supported.
