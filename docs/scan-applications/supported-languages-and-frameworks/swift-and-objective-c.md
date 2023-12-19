@@ -3,7 +3,9 @@
 ## Supported frameworks and package managers
 
 {% hint style="warning" %}
-You might encounter false positives or false negatives for partially supported frameworks and package managers.
+You might encounter false positives or false negatives for partially supported frameworks and package managers.\
+\
+Objective-C is supported only by Snyk Open Source.
 {% endhint %}
 
 ### Code analysis for Swift
