@@ -1,6 +1,6 @@
 # Configure integration for Docker Hub
 
-This page explains how to enable and configure integration between Docker Hub and Sny, When integration is complete, you can start managing your vulnerabilities.
+This page explains how to enable and configure integration between Docker Hub and Snyk. When integration is complete, you can start managing your vulnerabilities.
 
 ## Enable integration with Docker Hub
 
