@@ -97,7 +97,7 @@ Be sure you have the prerequisites and publish the results as you intend:
 * A Git repository[ Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) is required, as the CLI command triggers a test using a Git repository Project. &#x20;
 * The Project ID is required. You can find the Project ID in the URL of the Project in the Snyk Web UI: `https://app.snyk.io/org/org_name/project/PROJECT_UUID.`
 * After you run the CLI command, results are saved in the Git repository Project that you have specified. Given that scheduled tests for Git repository Projects scan the default branch, Snyk recommends using this CLI command with the Project ID for the Project where the default branch for the specified repository is being monitored.
-* In the Code Analysis Project, three snapshots are stored at a time. Consider outputting a static [JSON](../cli-tools/snyk-to-html/view-test-results-in-html-format.md) or [SARIF ](../cli-tools/snyk-to-html/view-test-results-in-html-format.md)file to save scan results for future reference.
+* In the Code Analysis Project, three snapshots are stored at a time. Consider outputting a static [JSON](https://docs.snyk.io/snyk-cli/commands/code-test#json) or[ SARIF ](https://docs.snyk.io/snyk-cli/commands/code-test#sarif)file to save scan results for future reference.
 
 Use the following command to publish to a specific Project:
 
