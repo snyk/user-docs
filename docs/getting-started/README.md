@@ -1,6 +1,6 @@
 # Getting started
 
-Start securing code, dependencies, containers, and deployed applications with Snyk.
+Start  code, dependencies, containers, and deployed applications with Snyk.
 
 {% hint style="info" %}
 If you are on an [Enterprise plan](../more-info/snyk-plans-and-pricing.md), see [Enterprise setup](../enterprise-setup/).
