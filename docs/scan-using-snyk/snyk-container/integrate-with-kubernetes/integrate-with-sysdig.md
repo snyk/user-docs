@@ -4,19 +4,24 @@ To enhance its capabilities when detecting workload information, Snyk has partne
 
 ## Enable the Sysdig integration
 
-For a successful integration with Sysdig, the Snyk Controller requires an extra Sysdig Secret in the `snyk-monitor` namespace. The Sysdig Secret name is `sysdig-eve-secret`.
+For a successful integration with Sysdig, the Snyk Controller requires an extra Sysdig Secret in the `snyk-monitor` namespace. The Sysdig Secret name is `snyk-sysdig-secret`.
 
 {% hint style="info" %}
-You must execute the commands below immediately after installing Sysdig, in order to allow the Snyk Controller to detect Sysdig in the cluster.
+Execute the commands below after installing Sysdig, in order to allow the Snyk Controller to detect Sysdig in the cluster.
 {% endhint %}
 
-To install the Sysdig Secret, see [Sysdig Secret installation guide](https://docs.sysdig.com/en/docs/sysdig-secure/integrate-effective-vulnerability-exposure-with-snyk/#copy-the-sysdig-secret). After you have installed the Sysdig Secret, you must copy it to the `snyk-monitor` namespace:
+Create the `snyk-sysdig-secret` in the `snyk-monitor` namespace:
 
 ```
-kubectl get secret sysdig-eve-secret -n sysdig-agent -o yaml \
-  | grep -v '^\s*namespace:\s' \
-  | kubectl apply -n snyk-monitor -f -
+kubectl create secret generic snyk-sysdig-secret -n snyk-monitor \
+  --from-literal=token=$SYSDIG_RISK_SPOTLIGHT_TOKEN \
+  --from-literal=region=$SYSDIG_AGENT_REGION \
+  --from-literal=cluster=$SYSDIG_AGENT_CLUSTER
 ```
+
+SYSDIG\_RISK\_SPOTLIGHT\_TOKEN is the "Risk Spotlight Integrations Token" and has to be generated via the Sysdig UI. To create this API token, see the[ Sysdig Risk Spotlight guide](https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/#generate-a-token-for-the-integration).
+
+SYSDIG\_AGENT\_REGION and SYSDIG\_AGENT\_CLUSTER are the ones that you configured when [installing the On Prem Sysdig Agent](https://docs.sysdig.com/en/docs/installation/agent-install-for-on-prem/#options), global.sysdig.region and global.clusterConfig.name.
 
 To enable Snyk to integrate with Sysdig and collect information about packages executed at runtime, use `--set sysdig.enabled=true` when installing the Snyk Controller:
 
@@ -39,7 +44,6 @@ To see which packages have been executed at runtime, you must wait for the next 
 
 After enabling the Sysdig integration, allow four hours before manually importing the workload. This is because of the following timing considerations related to the collection of executed packages:
 
-* Sysdig reports executed packages approximately one hour after they have been detected.
 * The Snyk Controller collects data about executed packages once every four hours.
 * Snyk re-scans imported Kubernetes Projects for new vulnerabilities daily.
 
