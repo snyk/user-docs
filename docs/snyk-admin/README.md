@@ -1,6 +1,6 @@
 # Snyk admin
 
-Snyk administration encompasses the following functions:
+Snyk administration encompasses the following functions: 
 
 * [Manage Groups and Organizations](manage-groups-and-organizations/)
 * [Manage and use Snyk Projects](snyk-projects/)
