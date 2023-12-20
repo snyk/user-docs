@@ -60,9 +60,9 @@ After Snyk has built the tree, Snyk uses the vulnerability database to find vuln
 
 ### Snyk Web UI (Git repository integration)
 
-| Swift Package Manager and Git                                                              | CocoaPods and Git                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| At the moment, it is not possible to scan Swift Package Manager Projects using Git import. | <p>To test your Projects, Snyk analyzes the <code>Podfile</code> and <code>Podfile.lock</code> files.<br><br>You can import projects managed by CocoaPods from any of the Snyk supported Git repositories.</p> |
+| Swift Package Manager and Git                                                              | CocoaPods and Git                                                            |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| At the moment, it is not possible to scan Swift Package Manager Projects using Git import. | To test your Projects, Snyk analyzes the `Podfile` and `Podfile.lock` files. |
 
 ### Snyk integrations&#x20;
 
