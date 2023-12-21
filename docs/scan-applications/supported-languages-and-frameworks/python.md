@@ -223,7 +223,7 @@ The supported versions are `2.7.16` and `3.7.4.`
 
 By default, Snyk tests pip Projects using Python 3.
 
-To define which Python Major version Snyk uses to test your Git-imported pip Projects, use either Organization settings or a [`.snyk` policy file](../../scan-using-snyk/policies/the-.snyk-file.md).
+To define which Python Major version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../../scan-using-snyk/policies/the-.snyk-file.md).
 
 To define the Python version for all Projects in an Organization:
 
@@ -234,9 +234,7 @@ To define the Python version for all Projects in an Organization:
 
 <figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption><p>Pip Python version settings</p></figcaption></figure>
 
-Snyk recommends you create different Organizations to work with different Python versions.
-
-If you prefer one Organization but require Projects to use different Python versions, you may add a `.snyk` file to a Project repository and specify the desired version.
+If you require a Project in an Organization to use a different Python version, you may add a `.snyk` file to the Project repository and specify the desired version.
 
 The `.snyk` file must be in the same directory as the Project manifest file.
 
@@ -268,7 +266,7 @@ The behavior of imports, re-tests, and PR checks for Projects with dependencies 
 * Python 3.8 or above - scans will fail with an [error](https://docs.snyk.io/more-info/error-catalog#snyk-os-pip-0004) including details of the first failed package, the Python version it requires, and the Python version used.
 {% endhint %}
 
-To define which Python minor version Snyk uses to test your Git-imported pip Projects, use either Organization settings or a [`.snyk` policy file](../../scan-using-snyk/policies/the-.snyk-file.md).
+To define which Python minor version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../../scan-using-snyk/policies/the-.snyk-file.md).
 
 To define the Python version for all Projects in an Organization:
 
@@ -279,9 +277,7 @@ To define the Python version for all Projects in an Organization:
 
 <figure><img src="../../.gitbook/assets/python-version.png" alt=""><figcaption><p>Pip Python version settings</p></figcaption></figure>
 
-You may create different Organizations to test with different Python versions.
-
-If you prefer one Organization but require some Projects to use different Python versions, you may add a `.snyk` file to a Project repository and specify the desired version, for example:
+If you require a Project in an Organization to use a different Python version, you may add a `.snyk` file to the Project repository and specify the desired version.
 
 ```python
 language-settings:
