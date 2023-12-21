@@ -9,7 +9,7 @@ For troubleshooting SSL inspection issues, you can set the `tlsRejectUnauthorize
 To provide your own certificate (signed by your own CA), you can pass the file name to the `caCert` parameter. The file must reside within the Helm chart directory.
 
 ```
---set caCert=<CERT_NAME)>
+--set caCert=<CERT_NAME>
 ```
 
 If you want your Broker to run as an HTTPS server, you can pass the files to the `httpsCert` and `httpsKey` parameters. The files must reside within the Helm chart directory.

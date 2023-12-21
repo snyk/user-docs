@@ -1,8 +1,8 @@
 # Backend requests with an internal certificate for Docker
 
-By default, the Broker Client establishes HTTPS connections to the backend system, GitHub, BitBucket, Jira, or other. If your backend system is serving an internal certificate (signed by your own certificate authority (CA)), you can provide the CA certificate to the Broker Client.
+By default, the Broker Client establishes HTTPS connections to the backend system: GitHub, BitBucket, Jira, or other. If your backend system is serving an internal certificate (signed by your own certificate authority (CA)), you can provide the CA certificate to the Broker Client.
 
-For example, if your CA certificate is at `./private/ca.cert.pem`, provide it to the Docker container by mounting the folder and using the `CA_CERT` environment variable:
+For example, if your CA certificate is at `./private/ca.cert.pem`, provide it to the Docker container by mounting the folder and using the `NODE_EXTRA_CA_CERT` environment variable. See the following  example for Bitbucket:
 
 ```
 docker run --restart=always \
