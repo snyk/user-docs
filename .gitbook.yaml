@@ -72,3 +72,4 @@ redirects:
   scan-using-snyk/snyk-code/security-rules-used-by-snyk-code: /scan-using-snyk/snyk-code/snyk-code-security-rules.md
   snyk-open-source/language-and-package-manager-support/snyk-for-golang: /scan-using-snyk/supported-languages-and-frameworks/go.md
   testing: scan-infrastructure/snyk-iac+/fix-cloud-issues-in-integrated-iac.md
+  manage-risk/insights: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk.md   
