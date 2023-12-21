@@ -17,8 +17,6 @@ However, for larger, more process-oriented enterprises, the implementation proce
 
 
 
-I
-
 ## Implementation strategy overview
 
 This guide is composed of multiple phases, outlining a series of actions that align with three goals:
