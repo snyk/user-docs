@@ -10,21 +10,21 @@ Also, Snyk generates **usage alert emails** that warn you when you are approachi
 
 ## Configure notifications
 
-There are several methods to control the behavior of email notifications based on the audience and the following factors:
+{% hint style="info" %}
+Snyk suggests that you initially disable all email notifications so that users do not receive many notifications while Projects are being imported. This means disabling at the Group level for new Organizations and at the Organization level for all existing Organizations.
+{% endhint %}
+
+There are several methods to control email notifications based on the audience and the following factors:
 
 * **Group Settings**: Configure the default settings for new Organizations and get an overview of the current settings for each Organization.
 * **Organization Settings**: Configure the default settings for new users in this Organization.
 * **Personal Settings**: Users can manually change their individual settings to have precise control over what emails they receive for each Organization they have access to.
 
-{% hint style="info" %}
-Snyk suggests that you initially disable all email notifications so that users do not receive many notifications while Projects are being imported. This means disabling at the Group level for new Organizations and at the Organization level for all existing Organizations. For more information, see [Configure notifications](../phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-notifications.md).
-{% endhint %}
-
 Users such as administrators can opt-in to email notifications in their personal settings.
 
 When you are ready to enable notifications more widely, you can see the overview for your Organizations and enable them in bulk on the **Group Settings** page.
 
-See [Manage notifications](../../../snyk-admin/manage-notifications.md) for more details.
+For demonstrations of choosing settings for Organization and individual notifications, see the page  [Configure notifications](../phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-notifications.md). See [Manage notifications](../../../snyk-admin/manage-notifications.md) for detailed steps.
 
 ## Announce Snyk to your teams
 
