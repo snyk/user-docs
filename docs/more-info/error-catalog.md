@@ -1527,4 +1527,15 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-12-13T11:06:19.595Z
+### [SNYK-PR-TEMPLATE-0012](#snyk-pr-template-0012)
+
+#### Failed to render default PR template
+
+Could not render default PR template.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
+
+--- Generated at 2023-12-22T13:57:49.086Z
