@@ -24,13 +24,14 @@ Customers can find the most serious problems that they must resolve, address tho
 
 Use Snyk [Reporting](../manage-issues/reporting/) to track issues and their resolution.
 
-Issues are reported for [Snyk Projects](../snyk-admin/snyk-projects/), which have many features that help you focus on priority issues:
+The following reports are available:
 
-* [View Project information](../snyk-admin/snyk-projects/view-project-information.md).
-* Apply and remove [Project attributes ](../snyk-admin/snyk-projects/project-attributes.md)and [Project tags](../snyk-admin/introduction-to-snyk-projects/project-tags.md) to characterize Projects.
-* Look at [Project collections groupings](../snyk-admin/snyk-projects/project-collections-groupings/).
-* [View Project issues, fixes, and dependencies](../snyk-admin/snyk-projects/view-project-issues-fixes-and-dependencies.md).
-* [View Project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md).
+* Issues Detail
+* Issues Summary
+* Vulnerabilities Detail
+* Cloud Compliance Issues
+
+For more information, see [Available Snyk Reports](../manage-issues/reporting/available-snyk-reports.md).
 
 ## Risk Score
 
