@@ -1,6 +1,6 @@
 # Notification policy - Use case
 
-You can use the **Send Email** and **Sent Slack Message** actions to notify you about changes that take place on your assets.
+You can use the **Send Email** and **Send Slack Message** actions to notify you about changes that take place on your assets.
 
 This use case demonstrates how to set up and receive a notification every time a new class A asset does not have Snyk security coverage.
 
