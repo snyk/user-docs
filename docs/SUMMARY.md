@@ -709,6 +709,7 @@
     * [Upgrade the Snyk Broker Client](enterprise-setup/snyk-broker/upgrade-the-snyk-broker-client.md)
     * [Preflight checks for Snyk Broker](enterprise-setup/snyk-broker/preflight-checks-for-snyk-broker.md)
     * [Troubleshooting Broker](enterprise-setup/snyk-broker/troubleshooting-broker.md)
+    * [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-apprisk.md)
 * [Snyk admin](snyk-admin/README.md)
   * [Introduction to Snyk administration](snyk-admin/introduction-to-snyk-administration.md)
   * [Manage Groups and Organizations](snyk-admin/manage-groups-and-organizations/README.md)
