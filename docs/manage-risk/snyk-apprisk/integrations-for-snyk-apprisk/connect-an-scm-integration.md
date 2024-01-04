@@ -99,6 +99,7 @@ You can use the[ GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) 
       * **Security** - manage
   * Organization - Select **All accessible organizations** or a specific organization.
 * Azure DevOps organization names - The names of all the relevant Azure DevOps organizations.
+* API URL - The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
 
 ### API version
 
