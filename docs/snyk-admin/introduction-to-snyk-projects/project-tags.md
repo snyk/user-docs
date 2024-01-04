@@ -40,7 +40,7 @@ The following conditions apply to Project tags:
 * Values allow these characters plus **`/`**, **`:`**, **`?`**, **`#`**, **`@`**, **`&`**, **`+`**, **`=`**, **`%`**, **`~`**
 * Reusing a key and value combination does not add to the count.
 
-## **How to create and delete tags**
+## **How to create tags**
 
 To create a new tag for a Snyk Project:
 
@@ -62,12 +62,20 @@ You can apply multiple Project tag values to the same Project tag key.
 
 After you create a tag, it can be applied to other Projects in the Snyk Group.
 
-To delete a Project tag from the Group, you must use the Snyk API v1. There are two endpoints to help you delete Project tags:
+## How to delete tags
+
+To delete a Project tag from the Group, use the Snyk API v1. There are two endpoints to help you delete Project tags:
 
 * [List all tags in a Group](https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group)
 * [Delete a tag from a Group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group)
 
-The [Delete a tag from a Group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group) endpoint has the option in the Body to specify `"force": false` or `"force": true`_._ For `"force": true`, the tag will be removed from any Projects to which it is applied, and it will then be deleted. For `"force": false` the error is 403 “the tag has entities”. The error occurs if the tag is still applied to any Projects; otherwise, tag deletion should succeed.&#x20;
+The [Delete a tag from a Group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group) endpoint has the option in the Body to specify `"force": false` or `"force": true`_._ If you specify `"force": true`, the tag will be removed from any Projects to which it is applied, and it will then be deleted. If you specify `"force": false` the error is 403 “the tag has entities”. The error occurs if the tag is still applied to any Projects; otherwise, tag deletion should succeed.&#x20;
+
+{% hint style="info" %}
+A tag will only exist if it has been created and applied to a Project or Projects. If a tag is
+
+removed from all Projects, it will no longer exist.
+{% endhint %}
 
 ## **How to apply and remove tags**
 
