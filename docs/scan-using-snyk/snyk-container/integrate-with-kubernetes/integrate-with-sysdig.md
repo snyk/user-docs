@@ -21,7 +21,7 @@ kubectl create secret generic snyk-sysdig-secret -n snyk-monitor \
 
 SYSDIG\_RISK\_SPOTLIGHT\_TOKEN is the "Risk Spotlight Integrations Token" and has to be generated via the Sysdig UI. To create this API token, see the[ Sysdig Risk Spotlight guide](https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/#generate-a-token-for-the-integration).
 
-SYSDIG\_AGENT\_REGION and SYSDIG\_AGENT\_CLUSTER are the ones that you configured when [installing the On Prem Sysdig Agent](https://docs.sysdig.com/en/docs/installation/agent-install-for-on-prem/#options), global.sysdig.region and global.clusterConfig.name.
+SYSDIG\_AGENT\_REGION and SYSDIG\_AGENT\_CLUSTER are the ones that you configured when [installing the Sysdig Agent](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/kubernetes/#full-deploy) - global.sysdig.region and global.clusterConfig.name.
 
 To enable Snyk to integrate with Sysdig and collect information about packages executed at runtime, use `--set sysdig.enabled=true` when installing the Snyk Controller:
 

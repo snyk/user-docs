@@ -1,7 +1,7 @@
 # Nexus Repository - install and configure using Helm
 
 {% hint style="info" %}
-For information about brokered integration with Artifactory or Nexus Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
+For information about brokered integration with Artifactory or Nexus Container Registry see [Snyk Broker -Container Registry Agent](../../snyk-broker-container-registry-agent/).
 {% endhint %}
 
 ## Nexus 3 Helm installation

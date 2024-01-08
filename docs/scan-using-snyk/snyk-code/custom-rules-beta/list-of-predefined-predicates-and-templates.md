@@ -1,4 +1,4 @@
-# List of predefined predicates and templates
+# Predefined predicates and templates
 
 ## Predicates
 
@@ -312,9 +312,9 @@ public class VarArgsDemo {
 
     public static void main(String[] args) {
         VarArgsDemo check = new VarArgsDemo();
-        check.method("sample1", "sample2", "sample3");
-        check.method("sample0", "sample1", "sample2", "sample3");
-        check.method("sample2", "sample3", "sample1");
+        check.method("tainted", "sample2", "sample3");
+        check.method("sample0", "tainted", "sample2", "sample3");
+        check.method("sample2", "sample3", "tainted");
     }
 }
 ```
@@ -332,6 +332,97 @@ HasAnyArg<"tainted">
 Matches on entities that take an argument at the 0th index, that is, receiver object for method calls, with the provided value.
 
 Template parameter: Value
+
+<details>
+
+<summary>Example (Java)</summary>
+
+The following code snippet demonstrates two types of logging into a network service using a method named `login`.
+
+```java
+import sun.net.ftp.FtpProtocolException;
+import sun.net.ftp.impl.FtpClient;
+
+import javax.security.auth.login.LoginContext;
+import javax.security.auth.login.LoginException;
+import java.io.IOException;
+
+public class X {
+    private static void ftpExample() {
+        FtpClient client = new FtpClient();
+        try {
+            client.login("user", "pass".toCharArray());
+        } catch (FtpProtocolException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static void loginContextExample() {
+        try {
+            LoginContext lc = new LoginContext("MyLoginConfig");
+            lc.login();
+            System.out.println("Authentication succeeded!");
+
+        } catch (LoginException e) {
+            System.err.println("Authentication failed: " + e.getMessage());
+        }
+    }
+
+    public static void main(String[] args) {
+        ftpExample();
+        loginContextExample();
+    }
+}
+```
+
+For this example, the target may be to **capture only the login call on the FtpClient class**. To select it, the following query will match:
+
+```
+And<HasArg0<"sun.net.ftp.impl.FtpClient">, CallExpression<"login">>
+```
+
+</details>
+
+<details>
+
+<summary>Example (Python)</summary>
+
+The following code snippet demonstrates two types of logging into a network service using a method named `login`.
+
+```python
+from ftplib import FTP, error_perm
+import smtplib
+
+def ftp_example():
+    try:
+        ftp = FTP('ftp.example.com')
+        ftp.login('user', 'pass')
+        print("FTP login successful")
+    except error_perm as e:
+        print(f"FTP login failed: {e}")
+
+def smtp_example():
+    try:
+        smtp = smtplib.SMTP('smtp.example.com', 587)
+        smtp.ehlo()
+        smtp.starttls()
+        smtp.login('user@example.com', 'password')
+        print("SMTP login successful")
+    except smtplib.SMTPException as e:
+        print(f"SMTP login failed: {e}")
+
+if __name__ == '__main__':
+    ftp_example()
+    smtp_example()
+```
+
+For this example, the target may be to **capture only the login call on the FTP class**. To select it, the following query will match:
+
+```starlang
+And<HasArg0<"ftplib.FTP">, CallExpression<"login">>
+```
+
+</details>
 
 ### HasArg1
 

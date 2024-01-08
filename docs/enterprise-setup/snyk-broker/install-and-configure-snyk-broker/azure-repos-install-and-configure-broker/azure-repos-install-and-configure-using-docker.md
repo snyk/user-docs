@@ -18,11 +18,11 @@ You need Docker or a way to run Docker Linux containers. Some Docker deployments
 
 To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services/devops/), **run** `docker pull snyk/broker:azure-repos`. Refer to [Azure Repos - environment variables for Snyk Broker](azure-repos-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
-**If necessary,** go to the [Advanced configuration page](../advanced-configuration-for-snyk-broker-docker-installation/) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Azure Repos instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support). See also [Adding custom accept.json for Docker installation](broken-reference).
+**If necessary,** go to the [Advanced configuration page](../advanced-configuration-for-snyk-broker-docker-installation/) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Azure Repos instance is using a private certificate, and setting up [proxy support](../advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md).
 
 ## Docker run command to set up a Broker Client for Azure Repos
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk AppRisk information. Enable [Snyk AppRisk](broken-reference) to identify your application assets, monitor them, and prioritize the risks.
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk AppRisk information. Enable [Snyk AppRisk](../../../../manage-risk/snyk-apprisk/) to identify your application assets, monitor them, and prioritize the risks.
 
 ```bash
 docker run --restart=always \
@@ -55,4 +55,4 @@ Once the container is up, the Azure Repos Integrations page shows the connection
 
 * Run `docker logs <container id>` to look for any errors, where `container id` is the Azure Repos Broker container ID.
 * Ensure relevant ports are exposed to Azure Repos.
-* Make sure that file permissions for the local path to as well as the `accept.json` file itself are correct and accessible.
+* Make sure that file permissions for the local path to the `accept.json` file, as well as the `accept.json` file itself, are correct and accessible.

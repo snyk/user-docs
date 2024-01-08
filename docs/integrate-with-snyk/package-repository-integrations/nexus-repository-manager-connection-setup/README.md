@@ -1,4 +1,4 @@
-# Nexus Repository Manager setup
+# Nexus Repository Manager connection setup
 
 {% hint style="info" %}
 **Feature availability**\
@@ -24,7 +24,7 @@ You can configure these types of Nexus Repository Manager:
 * Nexus Repository Manager version 2.15+ is in Beta
 {% endhint %}
 
-These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Nexus Repository Manager](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/nexus-repository-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
+These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Nexus Repository Manager](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/nexus-repository-install-and-configure-broker/nexus-repository-install-and-configure-using-docker.md)
 
 ## Set up publicly accessible instances
 

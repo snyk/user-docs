@@ -39,7 +39,7 @@ If you do not see the **Snyk Broker** on/off switch, you do not have the necessa
 Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
 {% endhint %}
 
-When you have permissions to add a private registry, continue with the instructions to [generate a Broker token from the Web UI](set-up-snyk-broker-with-artifactory-repository.md#generate-a-broker-token-from-the-web-ui).
+When you have permissions to add a private registry, continue with the instructions to [generate a Broker token from the Web UI](artifactory-repository-install-and-configure-using-docker.md#generate-a-broker-token-from-the-web-ui).
 
 ## Generate a Broker token from the Web UI
 

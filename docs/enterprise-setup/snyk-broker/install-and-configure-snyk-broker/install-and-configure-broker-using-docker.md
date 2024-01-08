@@ -13,14 +13,14 @@ When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant env
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
 For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
 
-* [GitHub](github-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md)
-* [GitHub Enterprise](github-enterprise-install-and-configure-broker/setup-broker-with-github-enterprise.md)
-* [Bitbucket Server/Data Centre](bitbucket-server-data-center-install-and-configure-broker/data-center.md)
-* [Gitlab](gitlab-install-and-configure-broker/setup-broker-with-gitlab.md)
-* [Azure Repos](azure-repos-install-and-configure-broker/setup-broker-with-azure-repos.md)
-* [JFrog Artifactory Repository](artifactory-repository-install-and-configure-broker/set-up-snyk-broker-with-artifactory-repository.md)
-* [Nexus Repository Manager](nexus-repository-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
-* [Jira](jira-install-and-configure-broker/setup-broker-with-jira.md)
+* [GitHub](github-install-and-configure-broker/github-install-and-configure-using-docker.md)
+* [GitHub Enterprise](github-enterprise-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md)
+* [Bitbucket Server/Data Centre](bitbucket-server-data-center-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md)
+* [Gitlab](gitlab-install-and-configure-broker/gitlab-install-and-configure-using-docker.md)
+* [Azure Repos](azure-repos-install-and-configure-broker/azure-repos-install-and-configure-using-docker.md)
+* [JFrog Artifactory Repository](artifactory-repository-install-and-configure-broker/artifactory-repository-install-and-configure-using-docker.md)
+* [Nexus Repository Manager](nexus-repository-install-and-configure-broker/nexus-repository-install-and-configure-using-docker.md)
+* [Jira](jira-install-and-configure-broker/jira-install-and-configure-using-docker.md)
 * [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
 * [Snyk Broker - Code Agent](../snyk-broker-code-agent/) (needed to enable SAST analysis)
 * [Derived Docker images for Broker Client integrations and Container Registry Agent](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)

@@ -31,7 +31,7 @@ docker run --restart=always \
        snyk/broker:jira
 ```
 
-If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../../upgrade-the-snyk-broker-client.md) and make any configuration changes needed, for example, providing the CA (Certificate Authority) to the Broker Client configuration when the Jira instance is using a private certificate.
+If necessary, navigate to [Advanced configuration for Snyk Broker Docker installation](../advanced-configuration-for-snyk-broker-docker-installation/) and make any configuration changes needed, for example, providing the CA (Certificate Authority) to the Broker Client configuration when the Jira instance is using a private certificate.
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Jira integration.
 
@@ -56,7 +56,7 @@ docker run --restart=always \
 
 &#x20;Paste the Broker Client configuration to start the Broker Client container.
 
-Once the container is up, and the Jira Integrations page shows the connection to Jira, under Projects you can create Jira tickets
+After the container is set up, and the Jira Integrations page shows the connection to Jira, under Projects you can create Jira tickets
 
 ## **Basic troubleshooting for Broker with Jira**
 
