@@ -98,7 +98,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description:** A custom name for the Snyk Project to be created on snyk.io.
 
-## **Field:** Organization name (or ID) in Snyk
+## **Field:** Organization ID in Snyk
 
 **Parameter:** organization\
 **Required:** No\
