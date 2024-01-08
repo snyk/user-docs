@@ -1,7 +1,7 @@
 # Configure PR Checks
 
 {% hint style="info" %}
-PR Checks for Snyk Code is in Closed Beta and only available for Enterprise plans.
+PR Checks for Snyk Code is in [Closed Beta](../../more-info/snyk-feature-release-process.md) and only available for Enterprise plans.
 {% endhint %}
 
 {% hint style="warning" %}

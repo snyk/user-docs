@@ -62,7 +62,3 @@ You can validate the correctness of your template by following these steps:
 
 1. Adding the template file to your Project(repository).&#x20;
 2. Opening a PR and verifying that your customized inputs are being used.&#x20;
-
-{% hint style="info" %}
-The Customize PRs feature is in closed beta. Any feedback on improving the functionality is welcome.
-{% endhint %}

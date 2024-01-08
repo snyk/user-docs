@@ -1,7 +1,7 @@
 # Risk Score
 
 {% hint style="info" %}
-Risk Score is currently in Open Beta for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score. See [Snyk feature release process](../more-info/snyk-feature-release-process.md) for more details.
+Risk Score is currently in [Early Access](../more-info/snyk-feature-release-process.md) for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score.
 {% endhint %}
 
 The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for each security issue. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
@@ -11,7 +11,7 @@ Since real risk is scarce, you should expect a significant drift in the distribu
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
 {% hint style="info" %}
-As part of the Open Beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](../scan-using-snyk/find-and-manage-priority-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled. Risk Score is not available in the CLI.&#x20;
+Risk Score replaces the Priority Score directly. See the [priority score docs](../scan-using-snyk/find-and-manage-priority-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled. Risk Score is not available in the CLI.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -374,7 +374,7 @@ Whether or not the asset introducing this issue is exposed to the Internet.
 {% endhint %}
 
 {% hint style="warning" %}
-All factor names and their effect on the score are subject to change during the beta period.&#x20;
+All factor names and their effect on the score are subject to change during the early access period.&#x20;
 {% endhint %}
 
 \

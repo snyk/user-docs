@@ -1,7 +1,7 @@
 # Snyk GitHub Cloud App
 
 {% hint style="warning" %}
-The Snyk GitHub Cloud App is in [Open Beta](../../more-info/snyk-feature-release-process.md#open-beta). This feature must be enabled using a feature flag on the Group or Organization level. Contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you are interested in getting access.
+The Snyk GitHub Cloud App is in [Early Access](../../more-info/snyk-feature-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you are interested in getting access.
 {% endhint %}
 
 {% hint style="info" %}

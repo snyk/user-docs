@@ -1,33 +1,58 @@
 # Snyk feature release process
 
-New Snyk features can be provided to users in the following types of releases.
+Snyk features are provided to users in the following types of releases.
 
 {% hint style="warning" %}
-Not all features will follow all these stages as part of their release process.
-
-There is no definitive timeline for moving from one stage to another; this varies depending on the feature.
+Not all features follow all these stages, and timelines for each feature to move stages vary depending on the feature.
 {% endhint %}
+
+## Alpha
+
+<table><thead><tr><th width="240">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Internal release only.</td><td>Snyk internal users, potentially some design partners.</td><td>Controlled </td><td>No docs provided.</td></tr></tbody></table>
 
 ## Closed Beta
 
-| Description                                     | Available to                               | Access                 | Docs                            |
-| ----------------------------------------------- | ------------------------------------------ | ---------------------- | ------------------------------- |
-| The first customer-facing rollout of a feature. | A closed, preselected group of users only. | On invitation by Snyk. | Provided but may not be public. |
+<table><thead><tr><th width="243">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>The first customer-facing rollout of a feature.</td><td>A preselected group of users.</td><td>On invitation by Snyk.</td><td>Provided but may not be public.</td></tr></tbody></table>
 
-## Open Beta
+* [Customize PR templates](../scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/customize-pr-templates/)
+* [Configure PR Checks](../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
+* [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md)
+* [Enterprise Analytics](../manage-risk/enterprise-analytics.md)
+* [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
+* [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
 
-| Description                                                       | Available to                                                        | Access                                                        | Docs         |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------- | ------------ |
-| Feature is tested and ready for use, but not available by default | All users on [app.snyk.io](http://app.snyk.io/), on an opt-in basis | Opt-in: on request via Snyk account team, or via Snyk Preview | Public docs. |
+### Early Access
 
-## Limited Availability
+<table><thead><tr><th width="246">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Feature is tested and ready for use, but not available by default</td><td>All users on an opt-in basis. This may include some additional purchase costs.</td><td>Opt-in: on request via Snyk account team, or via Snyk Preview</td><td>Public docs.</td></tr></tbody></table>
 
-| Description                                                        | Available to                                                           | Access                                                         | Docs         |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------------- | -------------------------------------------------------------- | ------------ |
-| Feature is tested and ready for use, but not available by default. | All users on an opt-in basis, but with some additional purchase costs. | Opt-in: on request via Snyk account team, or via Snyk Preview. | Public docs. |
+* [Insights](../manage-risk/insights/)
+* [Snyk GitHub Cloud App](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
+* [Use Custom Base Image Recommendations](../scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/)
+* [REST API endpoints: Test an SBOM document for vulnerabilities](../snyk-api/rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md)
+* [Custom rules](../scan-using-snyk/snyk-code/custom-rules/)
+* [Risk Score](../manage-issues/risk-score.md)
+* [Reachable vulnerabilities](../scan-using-snyk/find-and-manage-priority-issues/reachable-vulnerabilities.md)
+* [Group projects by branch or version for monitoring](../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
+* [Git repository cloning](../snyk-admin/manage-settings/snyk-preview.md#enable-git-repository-cloning)
+* [Fix code vulnerabilities automatically](../scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md)
+* [Snyk broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
 
 ## General Availability
 
-| Description               | Available to                                         | Access                | Docs              |
-| ------------------------- | ---------------------------------------------------- | --------------------- | ----------------- |
-| Feature is fully enabled. | All users, subject to standard feature availability. | Available by default. | Full public docs. |
+<table><thead><tr><th width="249">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Feature is fully enabled.</td><td>All users, subject to standard feature availability.</td><td>Available by default.</td><td>Full public docs.</td></tr></tbody></table>
+
+## Deprecated
+
+<table><thead><tr><th width="256">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>The feature is available, but use is discouraged. </td><td>Current users only</td><td>Available by default.</td><td>Full public docs, marked-up appropriately.</td></tr></tbody></table>
+
+## Maintenance mode
+
+<table><thead><tr><th width="256">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>No new development or updates will be made to the feature. </td><td>Current users only</td><td>Available by default.</td><td>Full public docs, marked-up appropriately.</td></tr></tbody></table>
+
+## End of Support
+
+<table><thead><tr><th width="256">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>No new support tickets will be answered. </td><td>Current users only</td><td>Available by default.</td><td>Full public docs, marked-up appropriately.</td></tr></tbody></table>
+
+### End of life
+
+<table><thead><tr><th width="256">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>The feature is no longer available. </td><td>No users</td><td>Not available</td><td>No docs available</td></tr></tbody></table>

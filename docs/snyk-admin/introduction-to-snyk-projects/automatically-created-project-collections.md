@@ -4,7 +4,7 @@
 **Feature availability**\
 This feature is available to Snyk Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
-This feature is in Closed Beta.
+This feature is in [Closed Beta](../../more-info/snyk-feature-release-process.md).
 
 
 {% endhint %}

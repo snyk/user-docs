@@ -4,7 +4,7 @@
 **Feature availability**\
 Enterprise Analytics is available to Snyk Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
-Enterprise Analytics is in Closed Beta. For access, contact your Snyk Account team or Snyk support. During Closed Beta, access at the user level is available. When tenant membership is available, access to Enterprise Analytics will be managed at scale more easily.
+Enterprise Analytics is in [Closed Beta](../more-info/snyk-feature-release-process.md). For access, contact your Snyk Account team or Snyk support. During Closed Beta, access at the user level is available. When tenant membership is available, access to Enterprise Analytics will be managed at scale more easily.
 
 Group admins will be able to see all relevant data that their user has access to in the Enterprise Analytics report during the Closed Beta period. You can use filters to include relevant Groups or Organizations only. This is especially useful for sharing a link with another user.
 {% endhint %}

@@ -1,12 +1,7 @@
 # Introduction to custom rules
 
-{% hint style="info" %}
-**Feature availability**\
-The Snyk Code custom rules feature is in [Open Beta](../../../more-info/snyk-feature-release-process.md#open-beta) and available only for Enterprise plans through Snyk Preview.&#x20;
-{% endhint %}
-
 {% hint style="warning" %}
-Custom rules beta is not currently compatible with [SCM integrations via Broker](../../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker).
+Custom rules is not currently compatible with [SCM integrations via Broker](../../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker).
 {% endhint %}
 
 You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:

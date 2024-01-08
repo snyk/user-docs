@@ -1,8 +1,8 @@
-# Customize PR templates (closed beta)
+# Customize PR templates
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is currently in closed beta. The functionality is likely to evolve based on feedback, and there will be breaking changes. Contact your account manager to get access to this feature.&#x20;
+This feature is currently in [Closed Beta](../../../../more-info/snyk-feature-release-process.md). The functionality is likely to evolve based on feedback, and there will be breaking changes. Contact your account manager to get access to this feature.&#x20;
 {% endhint %}
 
 {% hint style="warning" %}

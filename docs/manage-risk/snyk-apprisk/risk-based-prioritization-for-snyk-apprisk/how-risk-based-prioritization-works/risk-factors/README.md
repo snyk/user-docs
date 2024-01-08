@@ -2,9 +2,9 @@
 
 By understanding your images, packages, and Kubernetes resources as "app context", Snyk can compute the following risk factors:
 
-* [OS condition](broken-reference)
-* [Deployed](broken-reference)
-* [Public facing](broken-reference)
+* [OS condition](../../../../insights/how-insights-works-assets-and-risk-factors/risk-factors/os-condition.md)
+* [Deployed](../../../../insights/how-insights-works-assets-and-risk-factors/risk-factors/deployed.md)
+* [Public facing](../../../../insights/how-insights-works-assets-and-risk-factors/risk-factors/public-facing.md)
 
 You can enable and disable all of these "app context" risk factors through the Group **Settings**, on the **Insights** UI tab. If you choose to disable a risk factor, Snyk will no longer compute it.
 
