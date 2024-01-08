@@ -207,6 +207,69 @@ Matches on entities that happen after in the dataflow of its parameter.
 
 Template parameter: PrevAction The previous action executed.
 
+<details>
+
+<summary>Example</summary>
+
+In the following code snippet, `replaceAll` is used as a sanitizer for data read from the source `scanner.nextLine()`:
+
+```java
+import java.util.Scanner;
+
+public class RegexSanitize {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        input = input.replaceAll("[^a-zA-Z0-9 ]", "");
+        System.out.println(input);
+    }
+}
+```
+
+To verify **replaceAll** with specific parameters is part of this **call chain**, the following rule can be used:
+
+```starlang
+And<CallExpression<"replaceAll">, HasArg1<"[^a-zA-Z0-9 ]">>
+HasArg0<DataFlowAfter<
+  And<
+    CallExpression<"nextLine">, 
+    And<
+      HasArg0<"java.util.Scanner">, 
+      HasArg0<HasArg1<"java.lang.System.in">>
+    >
+  >
+>>
+```
+
+Using `HasArg0`, a relationship to `DataFlowAfter` is established in order to express that a `replaceAll` call (matched by the preceding `And` template) appears on the data flow path after `scanner.nextLine()`.
+
+***
+
+Note this will only match on the function call being actually executed, regardless of whether `input` is re-assigned with the sanitised value or not.&#x20;
+
+It does not match on the data being sent to `System.out.println`. Combine this function with `Taint` to achieve such a check.
+
+```starlang
+Taint<
+  And<
+    And<CallExpression<"replaceAll">, HasArg1<"[^a-zA-Z0-9 ]">>,
+    HasArg0<DataFlowAfter<
+      And<
+        CallExpression<"nextLine">, 
+        And<
+          HasArg0<"java.util.Scanner">, 
+          HasArg0<HasArg1<"java.lang.System.in">>
+        >
+      >
+    >>
+  >,
+  PRED:None,
+  "java.lang.System.out.println"
+>
+```
+
+</details>
+
 ### DataFlowsFrom
 
 Matches on places which a taint data can flow from.

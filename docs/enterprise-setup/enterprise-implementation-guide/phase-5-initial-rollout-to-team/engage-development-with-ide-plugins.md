@@ -18,7 +18,7 @@ Companies with a mature AppSec program may give developers earlier access to Sny
 
 The following Snyk plugins and extensions are available:
 
-* [Eclipse plugin](../../../integrate-with-snyk/ide-tools/eclipse-plugin/)
+* [Eclipse plugin](../../../integrations/ide-tools/eclipse-plugin/)
 * [JetBrains plugins](../../../integrate-with-snyk/ide-tools/jetbrains-plugins/)
 * [Visual Studio extension](../../../integrate-with-snyk/ide-tools/visual-studio-extension/)
 * [Visual Studio Code extension](../../../integrate-with-snyk/ide-tools/visual-studio-code-extension/)

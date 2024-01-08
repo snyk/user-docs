@@ -86,7 +86,7 @@ To make use of FIPS-validated cryptography in the [Snyk Visual Studio Code integ
 
 ### Eclipse
 
-To make use of FIPS-validated cryptography in the [Snyk Eclipse integration](../../integrate-with-snyk/ide-tools/eclipse-plugin/), do the following:
+To make use of FIPS-validated cryptography in the [Snyk Eclipse integration](../../integrations/ide-tools/eclipse-plugin/), do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met
 * [Download the appropriate FIPS-enabled binaries.](using-fips-validated-cryptography.md#download-fips-enabled-binaries)
