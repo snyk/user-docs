@@ -137,6 +137,8 @@ When using Active Directory Federation Service (ADFS) for the connection between
 | **Information**                         | **Description**                                                                                                                                                  |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Realm Identifier                        | urn:auth0:snyk                                                                                                                                                   |
+| EU Realm Identifier                     | urn:auth0:snyk-mt-eu-prod-1                                                                                                                                      |
+| AU Realm Identifier                     | urn:auth0:snyk-mt-au-prod-1                                                                                                                                      |
 | Callback URL                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                                                                   |
 | Callback URL (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback)                                                   |
 | Callback URL (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback)                                                   |
