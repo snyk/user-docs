@@ -172,17 +172,25 @@ With this query, you look for the data flow that originates in a known Snyk sour
 
 ## **High recall mode**
 
-See all the sources in the code no matter what to understand all the places that data can flow from.
+See all the sources and sinks in the source code to understand every location where data can flow from or to. This analysis is conducted regardless of the presence of data flows, allowing users to comprehensively assess coverage.
 
-Find all the sources available in their code, no matter where they end up or the data flow. This is often used as an investigatory query to understand the code stack better and where data can come from in the application.
+This mode is often used as an investigatory tool to gain deeper insights into the code stack and to comprehend where data originates and terminates within the application.
 
-To run this query, call the `AnySource` [predicate](../how-custom-rules-work.md#query-predicates) that hosts all the Snyk known sources.&#x20;
+To initiate this analysis, use the `AnySource` or `AnySink` predicates, which encompass all Snyk-known sources and sinks, respectively.
 
 ```javascript
 PRED:AnySource
 ```
 
-This query highlights all Snyk known sources within the code that it is being tested against.
+This query identifies and highlights every known source within the code being analyzed.
+
+```
+PRED:AnySink
+```
+
+Similarly, this query identifies and highlights every known sink within the code, providing a complete view of potential data endpoints.
+
+
 
 [^1]: C
 
