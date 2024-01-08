@@ -14,6 +14,8 @@ Not all features follow all these stages, and timelines for each feature to move
 
 <table><thead><tr><th width="243">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>The first customer-facing rollout of a feature.</td><td>A preselected group of users.</td><td>On invitation by Snyk.</td><td>Provided but may not be public.</td></tr></tbody></table>
 
+### Snyk features in Closed Beta
+
 * [Customize PR templates](../scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/customize-pr-templates/)
 * [Configure PR Checks](../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
 * [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md)
@@ -21,9 +23,11 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
 * [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
 
-### Early Access
+## Early Access
 
 <table><thead><tr><th width="246">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Feature is tested and ready for use, but not available by default</td><td>All users on an opt-in basis. This may include some additional purchase costs.</td><td>Opt-in: on request via Snyk account team, or via Snyk Preview</td><td>Public docs.</td></tr></tbody></table>
+
+### Snyk features in Early Access
 
 * [Insights](../manage-risk/insights/)
 * [Snyk GitHub Cloud App](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
