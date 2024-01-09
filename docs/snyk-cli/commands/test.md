@@ -398,8 +398,6 @@ Skip packages that cannot be found in the environment, for example, private pack
 
 ### `--file=<FILE_for_Python>`
 
-Specify a package file.
-
 For a Python project, specify a particular file to test.
 
 Default: Snyk scans the requirements.txt file at the top level of the project.

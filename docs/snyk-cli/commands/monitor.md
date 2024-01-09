@@ -357,17 +357,17 @@ Example: `snyk monitor --command=python3`
 
 Skip packages that cannot be found in the environment, for example, private packages that cannot be accessed from the machine running the scan.
 
-### `--file=` for Python
+### `--file=<FILE_for_Python>`
 
 For a Python project, specify a particular file to monitor.
 
-By default, Snyk scans the requirements.txt file at the top level of the project.
+Default: Snyk scans the requirements.txt file at the top level of the project.
 
-Snyk can recognize any manifest files specified with this option based on `--file=req.txt`. Each (\*) is a wildcard and `req` can appear anywhere in the file name.
+Snyk can recognize any manifest files specified with this option based on `--file=req*.txt`. The `*` is a wildcard and `req` can appear anywhere in the file name.
 
-For example, Snyk recognizes your manifest file when you have renamed it to r`equirements-dev.txt`.
+For example, Snyk recognizes your manifest file when you have renamed it to `requirements-dev.txt`.
 
-### `--package-manager=` for Python
+### `--package-manager=pip`
 
 Add`--package-manager=pip` to your command if the file name is not `requirements.txt`.
 
