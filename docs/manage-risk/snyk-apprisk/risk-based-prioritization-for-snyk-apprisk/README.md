@@ -6,7 +6,7 @@ Snyk AppRisk Essentials uses holistic application intelligence to help you bette
 Currently, asset class prioritization is available only for Snyk Code issues within the Insights UI.
 {% endhint %}
 
-Risk-based prioritization is available at the Group level or at the Organization level. The [evidence graph](../../insights/using-insights/evidence-graph.md) is available only at the Group level.
+Risk-based prioritization is available at the Group level or at the Organization level. The [evidence graph](broken-reference) is available only at the Group level.
 
 The Snyk approach looks holistically at your application to understand the following:
 
