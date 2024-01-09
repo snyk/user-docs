@@ -53,7 +53,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 <figure><img src="../../.gitbook/assets/enable analyze code.png" alt="PR check settings to analyze code issues."><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>
 
 {% hint style="info" %}
-If you cannot see the **Code Analysis** section, ensure that your user has the Organization Admin role assigned and that the feature is enabled for Snyk Code. See the  [Prerequisites](configure-pr-checks.md#prerequisites).
+If you cannot see the **Code Analysis** section, ensure that your user has the Group Admin role assigned and that the feature is enabled for Snyk Code. See the  [Prerequisites](configure-pr-checks.md#prerequisites).
 {% endhint %}
 
 3. To check for open-source and licensing issues, configure and save the following changes:
