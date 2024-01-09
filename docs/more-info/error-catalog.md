@@ -796,7 +796,7 @@ The configuration parameter does not meet the expected data type. Please ensure 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
-### [SNYK-OS-PIP-0001](#snyk-os-pip-0001)
+### [SNYK-OS-PYTHON-0001](#snyk-os-python-0001)
 
 #### Unsupported manifest file type for remediation
 
@@ -807,7 +807,7 @@ The provided requirements file is not supported by Snyk for Python.
 **Help Links:**
 - [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python)
 
-### [SNYK-OS-PIP-0002](#snyk-os-pip-0002)
+### [SNYK-OS-PYTHON-0002](#snyk-os-python-0002)
 
 #### Received more manifests than expected
 
@@ -816,7 +816,7 @@ Too many manifest files were provided in the request body.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
-### [SNYK-OS-PIP-0003](#snyk-os-pip-0003)
+### [SNYK-OS-PYTHON-0003](#snyk-os-python-0003)
 
 #### Failed to apply dependency updates
 
@@ -825,13 +825,83 @@ An error occurred while updating dependencies.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
-### [SNYK-OS-PIP-0004](#snyk-os-pip-0004)
+### [SNYK-OS-PYTHON-0004](#snyk-os-python-0004)
+
+#### Python package not found
+
+A package listed in the manifest file cannot be found in the Python Package Index(PyPI).
+Make sure all packages included in the manifest file are public existing ones.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-PYTHON-0005](#snyk-os-python-0005)
+
+#### Syntax errors found in manifest file
+
+The manifest file has syntax issues like incorrect package names or unsupported characters.
+Make sure the manifest file follows the syntax stardards and can be installed locally as well.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-PYTHON-0006](#snyk-os-python-0006)
+
+#### Python version not supported
+
+At least one of the packages requires a Python version that doesn't match the one used in the project scan.
+Make sure to select a suitable Python version from the organization Python language settings.
+Alternatively, add a `.snyk` file for Python version selection override.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-PYTHON-0007](#snyk-os-python-0007)
+
+#### Packages versions caused conflicts
+
+Two or more packages have conflicting version requirements that cannot be resolved.
+Make sure no two packages and their requirements cause conflicts and that the manifest file can be installed locally.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-PYTHON-0008](#snyk-os-python-0008)
 
 #### No matching distribution found for one or more of the packages
 
 At least one of the packages requires a Python version that doesn't match the one used in the project scan.
 Make sure to select a suitable Python version from the organization Python language settings.
 Alternatively, add a `.snyk` file for Python version selection override.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-PYTHON-0009](#snyk-os-python-0009)
+
+#### Packages installation failed
+
+Some packages failed during installation due to missing system dependencies, compilation errors, or other package-specific issues.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-PYTHON-0010](#snyk-os-python-0010)
+
+#### Python version not supported
+
+At least one of the packages requires a Python version that doesn't match the one used in the project scan.
+Make sure to use the correct python version in the requires section of the Pipfile.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-PYTHON-0011](#snyk-os-python-0011)
+
+#### No matching distribution found for one or more of the packages
+
+At least one of the packages requires a Python version that doesn't match the one used in the project scan.
+Make sure to use the correct python version in the requires section of the Pipfile.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1538,4 +1608,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2023-12-22T13:57:49.086Z
+--- Generated at 2024-01-09T06:44:12.527Z
