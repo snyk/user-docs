@@ -8,7 +8,7 @@ After you install the Snyk CLI, you must [authenticate](../commands/auth.md). Th
 Snyk recommends always keeping your CLI installation updated to the latest version. You can check which version of the Snyk CLI you have installed by running `snyk --version`.
 {% endhint %}
 
-For information about installing the CLI with an IDE, see the IDE documentation.
+For information about installing the CLI for an IDE, see the IDE documentation.
 
 ## Install with standalone executables
 
