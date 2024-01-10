@@ -20,7 +20,7 @@ For Snyk Container, see [`snyk container` help](https://docs.snyk.io/snyk-cli/co
 
 The `monitor` command is not supported for Snyk Code.
 
-For Snyk Infrastructure as Code follow the instructions in "Regularly testing IaC files" on [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
+For Snyk Infrastructure as Code follow the instructions in "Regularly testing IaC files" on [Snyk CLI for IaC](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac)
 
 ## Exit codes
 
@@ -32,7 +32,7 @@ Possible exit codes and their meaning:
 
 ## Configure the Snyk CLI
 
-You can use environment variables to configure the Snyk CLI and and set variables for connecting with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli)
+You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli)
 
 ## Code execution warning
 
@@ -125,7 +125,7 @@ Default: `<ORG_ID>` that is the current preferred organization in your [Account 
 
 Note that you can also use `--org=<orgslugname>`. The `ORG_ID` works in both the CLI and the API. The organization slug name works in the CLI, but not in the API.
 
-For more information see the article [How to select the organization to use in the CLI](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli)
+For more information see the article [How to select the organization to use in the CLI](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli)
 
 ### `--file=<FILE>`
 
@@ -167,7 +167,7 @@ Example: `$ snyk monitor --project-name=my-project`
 
 Specify a reference that differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Supported for Snyk Open Source and use with `--unmanaged`.
 
-For more information see [Group projects by branch or version](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version)
+For more information see [Group projects by branch or version for monitoring](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring)
 
 ### `--policy-path=<PATH_TO_POLICY_FILE>`
 
@@ -177,7 +177,7 @@ Manually pass a path to a `.snyk` policy file.
 
 Print results on the console as a JSON data structure.
 
-**Note**: If you use an option that sets project attributes and your role lacks permission to edit project attributes the `monitor` command fails. For instructions on how to proceed see [Editing project attributes from the Snyk CLI](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions#editing-project-attributes-from-the-snyk-cli)
+**Note**: If you use an option that sets project attributes and your role lacks permission to edit project attributes the `monitor` command fails. For instructions on how to proceed see [Permissions (role) required to edit Project attributes from the Snyk CLI](https://docs.snyk.io/snyk-admin/manage-permissions-and-roles/manage-member-roles#permissions-role-required-to-edit-project-attributes-from-the-snyk-cli)
 
 ### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 

@@ -4,7 +4,7 @@ The [Provision user endpoints](https://snyk.docs.apiary.io/#reference/organizati
 
 Provisioned users do not need to accept invites. When provisioned users first log in to Snyk, they will have all their permissions. You can use the [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) endpoint to add users to Organizations at scale before their first login.
 
-## Pre-requisites for provisioning users via API
+## Prerequisites for provisioning users using the API
 
 {% hint style="warning" %}
 The API does not support using service accounts as the inviting user or provisioned user.
@@ -90,7 +90,7 @@ The List pending user permissions endpoint returns pending provisioned users in 
 
 ### Delete pending user provision
 
-Use the Delete pending use providion endpoint to remove a pending provision request.
+Use the Delete pending use provision endpoint to remove a pending provision request.
 
 **`DELETE`** `https://api.snyk.io/api/v1/org/orgId/provision`
 

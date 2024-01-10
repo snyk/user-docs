@@ -1,8 +1,8 @@
-# Update Member Roles via API
+# Update Member Roles using the Snyk API v1
 
-To migrate members of existing organizations to new roles you must use the [Snyk API](../../snyk-api/).
+To migrate members of existing organizations to new roles, you must use the [Snyk API](../../snyk-api/).
 
-Follow the steps in each section of this document. Snyk recommends running these updates with bounded concurrency in batches so as not to trip any of the rate limiters. Optimally, perform the updates in batches of **10** concurrent requests at a time.
+Follow the steps in each section of this document. Snyk recommends running these updates with bounded concurrency in batches so as not to trip any of the rate limiters. Optimally, perform the updates in batches of **ten** concurrent requests at a time.
 
 ## Step 1: Get a list of roles in your Group
 
@@ -10,7 +10,7 @@ Follow the steps in each section of this document. Snyk recommends running these
 
 **API documentation:** [https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group)
 
-This call returns an array of objects each describing custom and non-custom (for example, default) roles. Default roles are indicated by the `customRole: false` property. Save the`publicId` of each role you want to assign to a user.
+This call returns an array of objects, each describing custom and non-custom (for example, default) roles. Default roles are indicated by the `customRole: false` property. Save the`publicId` of each role you want to assign to a user.
 
 ## Step 2: Get a list of Organization members
 
@@ -37,6 +37,6 @@ For each user, call the endpoint Update a member's role in the organization to s
 
 You pass a `rolePublicId` in the JSON-formatted body of the request. This is the role `publicId` you saved in the first step.
 
-For a successful request the response is `200 OK`.
+For a successful request, the response is `200 OK`.
 
 You can verify the change on the Org members page (for humans) or the Service Account Settings page (for robots).

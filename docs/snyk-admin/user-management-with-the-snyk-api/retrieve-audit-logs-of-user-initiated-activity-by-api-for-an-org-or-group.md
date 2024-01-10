@@ -5,7 +5,7 @@
 Audit logs are available with Enterprise plans. See [Plans and pricing](https://snyk.io/plans/) for details.
 {% endhint %}
 
-Snyk has [Audit logs endpoints in the Snyk REST API](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#tag--Audit-Logs) that enable you to retrieve your audit logs of user-initiated activity that took place in the past 90 days. Use the [Group level audit logs endpoint](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#get-/groups/-group\_id-/audit\_logs/search) to get information about your Snyk Group, and the [Organization level audit logs endpoint](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#get-/orgs/-org\_id-/audit\_logs/search) to get information about your Snyk Organization.
+Snyk has [Audit logs endpoints in the Snyk REST API](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#tag--Audit-Logs) that enable you to retrieve your audit logs of user-initiated activity that took place in the past 90 days. Use the [Group level audit logs endpoint](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#get-/groups/-group\_id-/audit\_logs/search) to get information about your Snyk Group and the [Organization level audit logs endpoint](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#get-/orgs/-org\_id-/audit\_logs/search) to get information about your Snyk Organization.
 
 You may want to retrieve audit logs for purposes such as finding out when a new user was added, analyzing unexpected activity and retroactively triaging the issues to address, or monitoring changes in a user's role to see any unusual behavior.
 
