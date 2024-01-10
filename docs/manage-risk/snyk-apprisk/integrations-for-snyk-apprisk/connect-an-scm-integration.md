@@ -136,14 +136,24 @@ Enable the following permissions:
 ### Required parameters
 
 * API URL - The URL of the Bitbucket API
-* Username - The Bitbucket username&#x20;
-* App password - API token with the following permissions:
+* Username - The [Bitbucket username](https://bitbucket.org/account/settings/)&#x20;
+* App password - Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
   * **Workspace membership** - Read
   * **Account** - Read
   * **Projects** - Read
   * **Repositories** - Read
   * **Issues** - Read
-* Workspaces - The Bitbucket workspace names, accessible after authentication)
+
+{% hint style="info" %}
+Create a BitBucket app password by following these steps:
+
+1. Open your BitBucket account&#x20;
+2. Click the Settings option
+3. Click the Personal BitBucket settings option&#x20;
+4. Navigate to the App passwords sub-section from the ACCESS MANAGEMENT section.
+{% endhint %}
+
+* Workspaces - The Bitbucket workspace names, accessible after authentication).
 
 ### API version
 
