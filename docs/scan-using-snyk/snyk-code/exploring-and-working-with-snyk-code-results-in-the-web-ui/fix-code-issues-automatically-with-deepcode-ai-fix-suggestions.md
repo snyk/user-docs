@@ -1,38 +1,43 @@
 # Fix code vulnerabilities automatically
 
 {% hint style="warning" %}
-DeepCode AI Fix Suggestions is in [Early Access](../../../more-info/snyk-feature-release-process.md) and fully supports Javascript/Typescript frameworks.
-
-To enable the feature, see [Enable DeepCode AI Fix Suggestions](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#enable-deepcode-ai-fix-suggestions)
+DeepCode AI Fix Suggestions is in [Early Access](../../../more-info/snyk-feature-release-process.md). To enable the feature, see [Enable DeepCode AI Fix Suggestions](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#enable-deepcode-ai-fix-suggestions).
 {% endhint %}
 
 Fix the security issues and quality flaws in the source code through an automated flow. DeepCode AI Fix Suggestions calculates the most suitable solution for your issues and applies it automatically.
 
-## Why use Fix Suggestions?
+## Why use AI Fix Suggestions?
 
-Fix Suggestions combines the power of a thorough program analysis engine with the abilities of an in-house deep learning-based large language model. This combination allows for compiling large amounts of unstructured language information [from open-source code](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#what-data-does-deepcode-ai-fix-suggestions-collect).
+AI Fix Suggestions combines the power of a thorough program analysis engine with the abilities of an in-house deep learning-based large language model. This combination allows for compiling large amounts of unstructured language information [from open-source code](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#what-data-does-deepcode-ai-fix-suggestions-collect).
 
-Key features set Fix Suggestions apart. It has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. The [Snyk Code engine](../snyk-code-key-features/snyk-code-local-engine.md) rigorously checks the suggestions from the neural network, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
+Key features set AI Fix Suggestions apart. It has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. The [Snyk Code engine](../snyk-code-key-features/snyk-code-local-engine.md) rigorously checks the suggestions from the neural network, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
 
 ## What issues can you fix automatically?
 
 You can address various issues detected by the Snyk Code engine, in terms of quality, promoting best code practices, and security vulnerabilities. DeepCode AI Fix currently does not support inter-file fixes.&#x20;
 
-## How Fix Suggestions works
+## AI Fix Suggestions language support
+
+AI Fix Suggestions supports the following languages:
+
+* Javascript and Typescript
+* Java
+* Python
+* Go
+* C/C++
+* C# (Limited support)
+* APEX (Limited support)
+
+## How AI Fix Suggestions works
 
 A representation of information flow involved in fixing one issue is presented in the following table.
 
 <table><thead><tr><th width="211">Stage</th><th data-type="select">Subsystem</th><th>Details</th></tr></thead><tbody><tr><td>Code scan and   discovery of issues</td><td></td><td>Corresponds to a normal flow of scanning the code from IDE.</td></tr><tr><td>Code preprocessing and minimization with respect to the data flow of the particular issue <span class="math">\mathcal{I}</span></td><td></td><td>Data flow of <span class="math">\mathcal{I}</span> is analyzed and code is minimized, keeping the relevant context only.</td></tr><tr><td>Generating <span class="math">k</span> candidate fixes for the given issue <span class="math">\mathcal{I}</span></td><td></td><td>Here, <span class="math">k</span> is an implementation parameter.</td></tr><tr><td>Candidate fixes ranking and self-assessment</td><td></td><td>Each of the <span class="math"> k</span> fixes is assessed by the Code Engine, filtering out those rendering invalid code or failing to fix the issue (the issue persists).</td></tr><tr><td>Returning the best candidate fix </td><td></td><td>The system has finished.</td></tr></tbody></table>
 
-## Requirements for Fix Suggestions
+## Requirements for AI Fix Suggestions
 
-* Snyk Security Code, Open Source Dependencies, IaC Configurations IDE plugin. Available for IDE plugins that use Language Server, such as [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview) and [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations).
-* Available in the USA Multi-Tenant region. \
-  To learn where Snyk offers data residency, see [What regions are available?](../../../more-info/data-residency-at-snyk.md#what-regions-are-available)
-
-## Fix Suggestions language support
-
-Fix Suggestions supports only [Javascript](broken-reference) and Typescript.
+* [Snyk Code Enterprise plan](../../../more-info/snyk-plans-and-pricing.md).
+* Snyk IDE Plugin for  [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview) or [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations).
 
 ## Enable DeepCode AI Fix Suggestions
 
