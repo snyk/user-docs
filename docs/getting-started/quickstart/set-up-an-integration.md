@@ -26,6 +26,10 @@ Fill in the details for the integration you select. If you select **GitHub**, fi
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 9.39.45 AM.png" alt="Configure automation settings &#x26; authenticate"><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
 
+{% hint style="info" %}
+Snyk Code is enabled by default for the Snyk GitHub integration in this setup stage. If you don't want to enable it in this process, it can be turned on in your Organization **Settings** at a future date.
+{% endhint %}
+
 To finish, [Import a Project](import-a-project.md) to scan:
 
 <figure><img src="../../.gitbook/assets/image (248) (1).png" alt="Add your first project"><figcaption><p>Add your first project</p></figcaption></figure>
