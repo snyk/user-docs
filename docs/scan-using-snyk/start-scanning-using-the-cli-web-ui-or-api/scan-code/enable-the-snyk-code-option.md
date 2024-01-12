@@ -2,17 +2,13 @@
 
 To start working with Snyk Code via the Web UI, CLI, IDE, or API, you must enable the **Snyk Code** option in your Snyk Organization settings.
 
-## Prerequisites to enabling the Snyk Code option in an Organization
+## Prerequisites
 
-To enable the **Snyk Code** option, you must have Admin permissions in your Snyk Organization.
+To enable **Snyk Code** in your Organization, you must have Admin permissions.
 
-Snyk Code is enabled by default for new users. However, Snyk recommends verifying that the **Snyk Code** option is enabled in your Organization settings before importing repositories.
+You can enable Snyk Code when you [Set up an integration for the first time](../../../getting-started/quickstart/set-up-an-integration.md). Otherwise, you can verify if the **Snyk Code** option is enabled in your Organization settings before importing repositories.
 
-{% hint style="info" %}
-Snyk Code is enabled by default in GitHub integration but disabled in other SCM integrations.
-{% endhint %}
-
-To enable Snyk Code:
+## Enable Snyk Code&#x20;
 
 1. In the Snyk Web UI, navigate to **Settings** > **Snyk Code**.
 2. In the **Enable Snyk Code** section, change the setting to **Enabled**:
