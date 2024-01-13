@@ -1,9 +1,12 @@
 # Rust
 
-{% hint style="warning" %}
-You might encounter false positives or false negatives for partially supported frameworks and package managers.
+{% hint style="info" %}
+**Feature availability**\
+Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Features may not be available, depending on your plan. See the [Plans and pricing ](https://snyk.io/plans/) page for more details.
+{% hint style="warning" %}
+Rust is supported for open-source scans. You might encounter false positives or false negatives for partially supported frameworks and package managers.
+{% endhint %}
 
-Use Rust for SBOM testing or running a purl API command.&#x20;
+Snyk supports testing of Rust applications through the [SBOM Test APIs](https://docs.snyk.io/snyk-api/rest-api-endpoints-test-an-sbom-document-for-vulnerabilities), as well as testing individual Rust packages from the Cargo package manager through the [Package Issues API](https://docs.snyk.io/snyk-api/list-issues-for-a-package-endpoint).&#x20;

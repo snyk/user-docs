@@ -255,7 +255,7 @@
     * [C/C++](scan-applications/supported-languages-and-frameworks/c-c++.md)
       * [Best practices for C/C++](scan-using-snyk/supported-languages-and-frameworks/c-c++/best-practices-for-c-c++.md)
       * [Troubleshooting C/C++](scan-using-snyk/supported-languages-and-frameworks/c-c++/help-c-c++.md)
-    * [Dart](scan-using-snyk/supported-languages-and-frameworks/dart.md)
+    * [Dart and Flutter](scan-using-snyk/supported-languages-and-frameworks/dart.md)
     * [Go](scan-applications/supported-languages-and-frameworks/go.md)
     * [Java and Kotlin](scan-applications/supported-languages-and-frameworks/java-and-kotlin.md)
       * [Best practices for Java and Kotlin](scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/snyk-for-java-developers.md)
