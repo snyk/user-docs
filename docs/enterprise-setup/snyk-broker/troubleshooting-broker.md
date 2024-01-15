@@ -70,6 +70,10 @@ To change the location of the systemcheck endpoint, you can specify an alternati
 ENV BROKER_SYSTEMCHECK_PATH /path/to/systemcheck
 ```
 
+{% hint style="info" %}
+Snyk Broker does not support authentication with mTLS method. &#x20;
+{% endhint %}
+
 ## Troubleshooting Standalone Broker
 
 If after running the Broker there is still an error connecting to the on-premise Git, use the following troubleshooting steps.

@@ -13,7 +13,7 @@ The following are prerequisites for using Snyk Broker:
 * A Snyk account
 * Self-enabled Broker integration using the Snyk API, or enabled by contacting [Snyk Support](https://support.snyk.io/hc/en-us)
 * A unique UUID token called Broker token. See [Generate credentials in the target application for Snyk Broker](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker)
-* An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token.
+* An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token. Snyk Broker does not support authentication with the mTLS method. &#x20;
 * Docker configured to pull images from Docker Hub
 
 {% hint style="warning" %}
@@ -47,7 +47,6 @@ Consider the following to understand what the required components are for your d
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
-  *
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with Broker, the Snyk Broker Container Registry Agent.
   * See [Snyk Broker Container Registry agent](snyk-broker-container-registry-agent/).
