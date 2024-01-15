@@ -226,6 +226,22 @@ For Broker with Code Agent deployed by Helm chart, follow the [https://github.co
 
 `--set upstreamUrlCodeAgent=https://deeproxy.au.snyk.io`
 
+### Snyk Code Local Engine (SCLE or LCE)
+
+Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region, based on the values found in the [Broker URLs](data-residency-at-snyk.md#broker-urls) instructions.&#x20;
+
+Then add an extra  variable in the `values-customer-settings.yml`:
+
+#### **EU**
+
+`deeproxy:` \
+&#x20; `verificationEndpoint: "https://api.eu.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
+
+#### **AU**
+
+`deeproxy:` \
+&#x20; `verificationEndpoint: "https://api.au.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
+
 ## **How Snyk maintains GDPR compliance**
 
 Snyk takes privacy seriously and operates a global privacy program to meet the requirements of the GDPR, CCPA, and other applicable privacy laws. Snyk treats all user data the same way and uses industry-standard technical and organizational measures to secure the information Snyk stores. Snyk's Privacy Program is tailored to meet both legal requirements and your needs.
