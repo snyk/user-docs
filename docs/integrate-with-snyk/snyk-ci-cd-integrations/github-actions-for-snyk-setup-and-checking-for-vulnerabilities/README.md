@@ -1,4 +1,4 @@
-# GitHub Actions
+# GitHub Actions for Snyk setup and checking for vulnerabilities
 
 {% hint style="info" %}
 As of December 15, 2022, the GitHub Actions integration pages are being moved from the repository to the Snyk docs site. During this process the explanations will provide the same basic information but vary in presentation. If you need help contact [Snyk support](https://support.snyk.io/hc/en-us).
@@ -6,7 +6,7 @@ As of December 15, 2022, the GitHub Actions integration pages are being moved fr
 
 ## Overview of GitHub Actions Integration
 
-Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using [Snyk](https://snyk.io/) to check for vulnerabilities in your GitHub projects. These actions are are based on the [Snyk CLI ](https://docs.snyk.io/snyk-cli)and you can use [all of its options and capabilities](https://docs.snyk.io/snyk-cli/cli-reference) with the `args` in the [properties](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
+Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using [Snyk](https://snyk.io/) to check for vulnerabilities in your GitHub projects. These actions are based on the [Snyk CLI ](https://docs.snyk.io/snyk-cli)and you can use [all of its options and capabilities](https://docs.snyk.io/snyk-cli/cli-reference) with the `args` in the [properties](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
 
 There is also a [Snyk Setup Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-setup-action).
 
