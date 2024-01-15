@@ -226,7 +226,7 @@ For Broker with Code Agent deployed by Helm chart, follow the [https://github.co
 
 `--set upstreamUrlCodeAgent=https://deeproxy.au.snyk.io`
 
-### Snyk Code Local Engine (SCLE or LCE)
+### Snyk Code Local Engine (SCLE)
 
 Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region, based on the values found in the [Broker URLs](data-residency-at-snyk.md#broker-urls) instructions.&#x20;
 
