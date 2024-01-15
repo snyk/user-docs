@@ -18,10 +18,6 @@ This feature is not yet supported for Snyk Broker.
 * GitHub Admin permissions for the selected repository. If the Snyk GitHub Cloud App is installed in a repository that requires organization permissions, you must be a GitHub organization owner.
 * A public or private GitHub repository.
 
-## Known limitations of the GitHub Cloud App
-
-Only one-to-one mapping between Snyk Organizations and GitHub organizations is supported.
-
 ## GitHub Cloud App benefits
 
 The Snyk GitHub Cloud App improves upon many features as compared to the current GitHub integration, including role-based, granular access control, increased API rate limits, and the creation of an entry point for expanded and enhanced developer experiences.
