@@ -4,17 +4,269 @@ Get an overview of supported languages and package managers across Snyk environm
 
 ## Open source and licensing (Snyk Open Source)
 
-The following table lists the programming languages, fully supported package managers, and features for Snyk Open Source.
+Below, you can find information about the programming languages, fully supported package managers, and features for Snyk Open Source.
 
 {% hint style="info" %}
 Before scanning your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Which Projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)
 {% endhint %}
 
-{% hint style="info" %}
-The tables below are scrollable right and left. Ensure you check all available columns.
-{% endhint %}
+### [.NET](.net/)
 
-<table data-full-width="false"><thead><tr><th width="135">Ecosystem</th><th width="192" align="center">Import your app through SCM</th><th width="173" align="center">Test or monitor your app through CLI and IDE</th><th width="177" align="center">Test your app's SBOM</th><th width="148" align="center">Test your app's packages</th><th width="149">Features</th><th width="178">Package manager versions</th></tr></thead><tbody><tr><td><p><a href=".net/"><strong>.NET</strong></a><br></p><p><strong>NuGet</strong></p><p><strong>Paket</strong></p></td><td align="center">NuGet</td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:nuget</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:nuget</p></td><td><ul><li>Fix PRs (NuGet)</li><li>License scanning</li><li>Reports</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td></tr><tr><td><a href="c-c++.md#open-source-and-licensing"><strong>C/C++</strong></a></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:generic</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:generic</p></td><td><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td></tr><tr><td><p><a href="../../scan-using-snyk/supported-languages-and-frameworks/dart.md"><strong>Dart</strong></a><br></p><p><strong>Pub</strong></p></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:pub</p></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td></tr><tr><td><p><a href="../../scan-using-snyk/supported-languages-and-frameworks/elixir.md"><strong>Elixir</strong></a><br></p><p><strong>Hex</strong></p></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:hex</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:hex</p></td><td><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td></tr><tr><td><p><a href="go.md#open-source-and-licensing"><strong>Go</strong></a><br></p><p><strong>Go Modules</strong></p><p><strong>dep</strong></p></td><td align="center"><strong>✔︎</strong></td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:golang</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:golang</p></td><td><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td></tr><tr><td><p><a href="java-and-kotlin.md#open-source-and-licensing"><strong>Java and Kotlin</strong></a><br></p><p><strong>Maven</strong></p><p><strong>Gradle</strong></p></td><td align="center"><strong>✔︎</strong></td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:maven</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:maven</p></td><td><ul><li>Fix PRs (Maven)</li></ul><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td><p>Maven</p><ul><li><code>3.*</code> For details, see the <a href="https://github.com/snyk/snyk-mvn-plugin#support">Snyk Maven plugin readme</a>.</li></ul><p>Gradle</p><ul><li><code>4.*</code>, <code>5.*</code>, <code>6.*</code>, <code>7.*</code><br>For more information, see the <a href="https://github.com/snyk/snyk-gradle-plugin#support">Snyk Gradle plugin readme</a>.</li></ul></td></tr><tr><td><p><a href="javascript.md#open-source-and-licensing"><strong>JavaScript</strong></a><br></p><p><strong>npm</strong></p><p><strong>Yarn</strong></p></td><td align="center"><strong>✔︎</strong></td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:npm</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:npm</p></td><td><ul><li>Fix PRs</li></ul><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td><p>npm</p><ul><li><code>Lockfile 1, Lockfile 2, Lockfile 3, 7.*</code><br>For details, see the <a href="javascript.md#npm">Snyk Javascript </a>page.</li></ul><p>Yarn</p><ul><li><code>Yarn 1, Yarn 2, Yarn 3</code>. For more information, see the <a href="javascript.md#yarn">Snyk Javascript </a>page.</li></ul></td></tr><tr><td><p><a href="php.md#open-source-and-licensing"><strong>PHP</strong></a><br></p><p><strong>Composer</strong></p></td><td align="center"><strong>✔︎</strong></td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:composer</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:composer</p></td><td><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td></tr><tr><td><p><a href="python.md#open-source-and-licensing"><strong>Python</strong></a><br></p><p><strong>Pip</strong></p><p><strong>Poetry</strong></p><p><strong>pipenv</strong></p><p><strong>setup.py</strong></p></td><td align="center">Pip, pipenv and Poetry</td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:pypi</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:pypi</p></td><td><ul><li>Fix PRs (Pip)</li></ul><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td>Suitable with <code>Python 2 -> 2.7.16</code>, and <code>Python 3 -> 3.7.4</code>.</td></tr><tr><td><p><a href="ruby.md#open-source-and-licensing"><strong>Ruby</strong></a><br></p><p><strong>Bundler</strong></p></td><td align="center"><strong>✔︎</strong></td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:gem</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:gem</p></td><td><ul><li>Fix PRs</li></ul><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td>All Gemfile and Gemfile.lock compatible with the <a href="ruby.md#supported-ruby-versions">Snyk supported Ruby versions</a>.</td></tr><tr><td><p><a href="../../scan-using-snyk/supported-languages-and-frameworks/rust.md"><strong>Rust</strong></a><br></p><p><strong>Cargo</strong></p></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td align="center"><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:cargo</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:cargo</p></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td></tr><tr><td><p><a href="scala.md#open-source-and-licensing"><strong>Scala</strong></a><br></p><p><strong>sbt</strong></p></td><td align="center"><strong>✔︎</strong></td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:maven</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:maven</p></td><td><ul><li>License scanning</li></ul><ul><li>Reports</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2796">➖</span></td></tr><tr><td><p><a href="swift-and-objective-c.md#open-source-and-licensing"><strong>Swift and Objective-C</strong></a><br></p><p><strong>CocoaPods</strong></p><p><strong>Swift Package Manager</strong></p></td><td align="center">CocoaPods</td><td align="center"><strong>✔︎</strong></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:swift<br>pkg:cocoapods</p></td><td align="center"><p><strong>✔︎</strong></p><p>pkg:swift<br>pkg:cocoapods</p></td><td><ul><li>License scanning (CocoaPods)</li></ul><ul><li>Reports</li></ul></td><td><p>CocoaPods</p><ul><li>Swift Package Manager</li></ul><ul><li><code>Swift v3.0</code> or higher.</li></ul></td></tr></tbody></table>
+**Package manager**: NuGet, Paket
+
+**Import your app through SCM**: NuGet
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:nuget`
+
+**Test your app's packages**: Available, `pkg:nuget`
+
+**Features**:&#x20;
+
+* Fix PRs (NuGet)
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
+### [C/C++](c-c++.md)
+
+**Package manager**: NA
+
+**Import your app through SCM**: NA
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:generic`
+
+**Test your app's packages**: Available, `pkg:generic`
+
+**Features**:
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
+### [Dart and Flutter](../../scan-using-snyk/supported-languages-and-frameworks/dart.md)&#x20;
+
+**Package manager**: Pub
+
+**Import your app through SCM**: NA
+
+**Test or monitor your app through CLI and IDE**: NA
+
+**Test your app's SBOM**: NA
+
+**Test your app's packages**: Available, `pkg:pub`
+
+**Features**: NA
+
+**Package manager versions**: NA
+
+### [Elixir](../../scan-using-snyk/supported-languages-and-frameworks/elixir.md)&#x20;
+
+**Package manager**: Hex
+
+**Import your app through SCM**: NA
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:hex`
+
+**Test your app's packages**: Available, `pkg:hex`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
+### [Go](go.md)&#x20;
+
+**Package manager**: Go Modules, dep
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:golang`
+
+**Test your app's packages**: Available, `pkg:golang`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
+### [Java and Kotlin](java-and-kotlin.md)&#x20;
+
+**Package manager**: Maven, Gradle
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:maven`
+
+**Test your app's packages**: Available, `pkg:maven`
+
+**Features**:&#x20;
+
+* Fix PRs (Maven)
+* License scanning
+* Reports
+
+**Package manager versions**:&#x20;
+
+* Maven
+  * `3.*` For details, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
+* Gradle
+  * `4.*`, `5.*`, `6.*`, `7.*`\
+    For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+
+### [JavaScript](javascript.md)&#x20;
+
+**Package manager**: npm, Yarn
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:npm`
+
+**Test your app's packages**: Available, `pkg:npm`
+
+**Features**:&#x20;
+
+* Fix PRs&#x20;
+* License scanning
+* Reports
+
+**Package manager versions**:&#x20;
+
+* npm
+  * `Lockfile 1, Lockfile 2, Lockfile 3, 7.*`\
+    For details, see the [Snyk Javascript ](javascript.md#npm)page.
+* Yarn
+  * `Yarn 1, Yarn 2, Yarn 3`. For more information, see the [Snyk Javascript ](javascript.md#yarn)page.
+
+### [PHP](php.md)
+
+**Package manager**: Composer
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:composer`
+
+**Test your app's packages**: Available, `pkg:composer`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
+### [Python](python.md)&#x20;
+
+**Package manager**: Pip, Poetry, pipenv, setup.py
+
+**Import your app through SCM**: Available for Pip, pipenv and Poetry
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:pypi`
+
+**Test your app's packages**: Available, `pkg:pypi`
+
+**Features**:&#x20;
+
+* Fix PRs&#x20;
+* License scanning
+* Reports
+
+**Package manager versions**: Suitable with `Python 2 -> 2.7.16`, and `Python 3 -> 3.7.4`.
+
+### [Ruby](ruby.md)&#x20;
+
+**Package manager**: Bundler
+
+**Import your app through SCM**: Available&#x20;
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:gem`
+
+**Test your app's packages**: Available, `pkg:gem`
+
+**Features**:&#x20;
+
+* Fix PRs&#x20;
+* License scanning
+* Reports
+
+**Package manager versions**: All Gemfile and Gemfile.lock are compatible with the [Snyk supported Ruby versions](ruby.md#supported-ruby-versions).
+
+### [Rust](../../scan-using-snyk/supported-languages-and-frameworks/rust.md)
+
+**Package manager**: Cargo
+
+**Import your app through SCM**: NA&#x20;
+
+**Test or monitor your app through CLI and IDE**: NA
+
+**Test your app's SBOM**: Available, `pkg:cargo`
+
+**Test your app's packages**: Available, `pkg:cargo`
+
+**Features**: NA
+
+**Package manager versions**: NA
+
+### [Scala](scala.md)&#x20;
+
+**Package manager**: sbt
+
+**Import your app through SCM**: Available&#x20;
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:maven`
+
+**Test your app's packages**: Available, `pkg:maven`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
+### [Swift and Objective-C](swift-and-objective-c.md)
+
+**Package manager**: CocoaPods, Swift Package Manager
+
+**Import your app through SCM**: Available for CocoaPods
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:swift`, `pkg:cocoapods`
+
+**Test your app's packages**: Available, `pkg:swift`, `pkg:cocoapods`
+
+**Features**:&#x20;
+
+* License scanning (CocoaPods)
+* Reports
+
+**Package manager versions**: CocoaPods, Swift Package Manager, Swift v3.0 or higher.
 
 ## Code analysis (Snyk Code)
 
