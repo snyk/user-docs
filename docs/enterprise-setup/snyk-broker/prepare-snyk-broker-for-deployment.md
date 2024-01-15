@@ -47,8 +47,7 @@ Consider the following to understand what the required components are for your d
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
-  * You will need to deploy an additional agent with Broker, the Snyk Broker Code Agent, and add an environment variable `-e ACCEPT_CODE` or a custom allowlist `accept.json` file if you want to view code snippets.
-  * See [Snyk Broker Code Agent](snyk-broker-code-agent/).
+  *
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with Broker, the Snyk Broker Container Registry Agent.
   * See [Snyk Broker Container Registry agent](snyk-broker-container-registry-agent/).

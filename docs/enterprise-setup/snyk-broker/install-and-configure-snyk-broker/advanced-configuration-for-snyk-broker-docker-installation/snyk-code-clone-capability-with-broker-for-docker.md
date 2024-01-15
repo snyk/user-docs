@@ -50,9 +50,7 @@ docker run --restart=always \
        snyk/broker:github-com
 ```
 
-If you are using a custom `accept` file from a separate folder, with the `ACCEPT` environment variable, you cannot use the `ACCEPT_CODE` mechanism.
-
-You can find the relevant `accept.json` for each of the Git integrations in [Adding custom allowlist for Docker installation](broken-reference).
+If you are using a custom `accept` file from a separate folder, with the `ACCEPT` environment variable, you cannot use any of the other `ACCEPT` mechanisms, such as `ACCEPT_CODE` or `ACCEPT_IAC`.
 
 If you want to customize the `accept.json`, add this snippet to your custom `accept.json`
 
