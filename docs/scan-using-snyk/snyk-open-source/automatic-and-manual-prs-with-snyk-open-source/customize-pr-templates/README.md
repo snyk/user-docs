@@ -11,7 +11,7 @@ After your account manager turns on the feature flag, you can activate this feat
 
 {% hint style="info" %}
 **API support**\
-Customize your PR template automatically by making an API request; see [Create an API request with a Custom template](apply-a-custom-pr-template.md#create-an-api-request-with-a-custom-template). For more information, see the [Snyk API pull request templates endpoints](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#tag--Pull-Request-Templates).
+Customize your PR template automatically by making an API request; see [Create an API request with a Custom template](../customize-pr-templates-closed-beta/apply-a-custom-pr-template.md#create-an-api-request-with-a-custom-template). For more information, see the [Snyk API pull request templates endpoints](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#tag--Pull-Request-Templates).
 {% endhint %}
 
 ## Understand Customized PRs
