@@ -4,7 +4,7 @@
 Snyk Code Local Engine is currently in Private Beta. If you would like to set it up in your Organization, contact your Snyk account team.
 {% endhint %}
 
-Snyk Code Local Engine is a fully contained version of the Snyk Code Engine that allows users to avoid uploading their code to the internet.
+Snyk Code Local Engine (SCLE) is a fully contained version of the Snyk Code Engine that allows users to avoid uploading their code to the internet.
 
 This high-level architecture diagram shows the components and their interactions. Snyk scans a request for a Git repository through the Snyk Code Local Engine, which returns the results to Snyk.
 
