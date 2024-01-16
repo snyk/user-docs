@@ -15,13 +15,15 @@ Create the `snyk-sysdig-secret` in the `snyk-monitor` namespace:
 ```
 kubectl create secret generic snyk-sysdig-secret -n snyk-monitor \
   --from-literal=token=$SYSDIG_RISK_SPOTLIGHT_TOKEN \
-  --from-literal=region=$SYSDIG_AGENT_REGION \
+  --from-literal=endpoint=$SYSDIG_ENDPOINT_URL \
   --from-literal=cluster=$SYSDIG_AGENT_CLUSTER
 ```
 
-SYSDIG\_RISK\_SPOTLIGHT\_TOKEN is the "Risk Spotlight Integrations Token" and has to be generated via the Sysdig UI. To create this API token, see the[ Sysdig Risk Spotlight guide](https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/#generate-a-token-for-the-integration).
+SYSDIG\_RISK\_SPOTLIGHT\_TOKEN is the "Risk Spotlight Integrations Token" and must be generated through the Sysdig UI. To create this API token, see the[ Sysdig Risk Spotlight guide](https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/#generate-a-token-for-the-integration).
 
-SYSDIG\_AGENT\_REGION and SYSDIG\_AGENT\_CLUSTER are the ones that you configured when [installing the Sysdig Agent](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/kubernetes/#full-deploy) - global.sysdig.region and global.clusterConfig.name.
+SYSDIG\_ENDPOINT\_URL is associated with your Sysdig SaaS application and region. To identify it, see [SaaS Regions and IP Ranges](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges). For example, for US West (Oregon), the domain is [us2.app.sysdig.com](https://us2.app.sysdig.com/) (you must omit the prefix "https://").
+
+SYSDIG\_AGENT\_CLUSTER are the ones that you configured when [installing the Sysdig Agent](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/kubernetes/#parameter-definitions) - global.clusterConfig.name.
 
 To enable Snyk to integrate with Sysdig and collect information about packages executed at runtime, use `--set sysdig.enabled=true` when installing the Snyk Controller:
 
