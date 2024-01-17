@@ -390,6 +390,19 @@ This error occurs when your code depends on external libraries that are added to
 **Help Links:**
 - [https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditional-constructs](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditional-constructs)
 
+### [SNYK-OS-DOTNET-0007](#snyk-os-dotnet-0007)
+
+#### No target frameworks found in manifest files
+
+Snyk was unable to detect any `<TargetFramework>`s in the supplied manifest files. 
+
+If you are using `Directory.Build.props` files to determine the target framework, please ensure that it is named as such, as Snyk does not perform case-insensitive searches for `.props` files due to performance considerations on the customer's SCM network.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets)
+
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 
 #### Failed to access private module
@@ -1608,4 +1621,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-01-09T06:44:12.527Z
+--- Generated at 2024-01-17T19:12:16.384Z
