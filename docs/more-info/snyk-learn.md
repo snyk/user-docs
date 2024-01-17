@@ -4,7 +4,7 @@
 
 ## Developer education
 
-Our developer education resources looking at vulnerabilities in detail including the why and how:
+Our developer education resources look at vulnerabilities in detail, including the why and how:
 
 * **Why** is it vulnerable?
 * **How** do we mitigate it?
@@ -24,7 +24,7 @@ The lessons at Snyk Learn are aligned with the [NIST NICE Framework](https://www
 Lessons are structured as follows:
 
 * The _basics_ of the vulnerability are covered which explains exactly what the vulnerability is.
-* Then there is an _in action_ section that looks at how the vulnerability would be executed.
+* There is an _in action_ section that looks at how the vulnerability would be executed.
 * Each lesson has an interactive widget where developers can see exactly how the vulnerability is being executed. But seeing it work and knowing how it works is different.
 * The third section of the lesson is _under the hood_ where we take a look at why the vulnerability worked and the code behind it.
 * Finally, it’s the _mitigation_ section. This is where developers will learn how to fix the vulnerability using code examples.
@@ -35,7 +35,7 @@ There are many lessons covering many different languages. The languages being co
 
 ### Learning paths
 
-We offer [learning paths](https://learn.snyk.io/learning-paths/) as a way for learners to take a predefined set of lessons. We offer multiple learning paths including OWASP Top 10 and Snyk Top 10.
+We offer [learning paths](https://learn.snyk.io/learning-paths/) as a way for learners to take a predefined set of lessons. We offer multiple learning paths, including OWASP Top 10 and Snyk Top 10.
 
 ### OWASP Top 10
 
@@ -100,7 +100,7 @@ Snyk Training is one component of learning available for users and customers.
 The [Digital Success program](https://snyk.io/digital-customer-success/) offers customers a way to get started quickly and scale learning to the rest of their teams. In addition to the self-paced content available in Snyk Training, customers can take advantage of:
 
 * Office hours: Informal sessions to discuss a Snyk topic
-* Kickoff sessions: Guided learning for roll out best practices
+* Kickoff sessions: Guided learning for roll-out best practices
 
 {% hint style="info" %}
 Also, see [Snyk Learn](snyk-learn.md) for developer education for general security across a variety of languages and ecosystems.
