@@ -14,6 +14,6 @@ The results of a vulnerability scan show issues with context, impact, and fix gu
 
 The Snyk IDE plugins and extensions rely on the [Snyk Vulnerability Database](https://security.snyk.io/). For more information, see the documentation for the [Snyk Vulnerability Database](../../scan-applications/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md).
 
-If Snyk is hosting your data in a region other than the default, you must set the `Custom endpoint` in the IDE. For more information, see [IDEs URLS](../../more-info/data-residency-at-snyk.md#ides-urls) on the [Regional hosting and data residency](../../more-info/data-residency-at-snyk.md) page.
+If Snyk is hosting your data in a region other than the default, you must set the `Custom endpoint` in the IDE. For more information, see [IDEs URLS](../../more-info/regional-hosting-and-data-residency.md#ides-urls) on the [Regional hosting and data residency](../../more-info/regional-hosting-and-data-residency.md) page.
 
 **Training** is available: [**Introduction to using Snyk in an IDE**](https://learn.snyk.io/lesson/snyk-in-an-ide/)

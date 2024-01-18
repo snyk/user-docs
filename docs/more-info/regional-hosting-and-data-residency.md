@@ -13,7 +13,7 @@ By default, customers are hosted in the US region.
 
 ## **What is data residency?**
 
-Data residency allows you to control what region Snyk hosts a selected subset of your data in. For more information, see [Regional and global data](data-residency-at-snyk.md#regional-and-global-data).
+Data residency allows you to control what region Snyk hosts a selected subset of your data in. For more information, see [Regional and global data](regional-hosting-and-data-residency.md#regional-and-global-data).
 
 Data residency is available for [Snyk Open Source](../scan-using-snyk/snyk-open-source/), [Snyk Code](../scan-using-snyk/snyk-code/), [Snyk Container](../scan-using-snyk/snyk-container/), and [Snyk Infrastructure as Code (IaC)](../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/).
 
@@ -228,7 +228,7 @@ For Broker with Code Agent deployed by Helm chart, follow the [https://github.co
 
 ### Snyk Code Local Engine (SCLE)
 
-Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region, based on the values found in the [Broker URLs](data-residency-at-snyk.md#broker-urls) instructions.&#x20;
+Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region, based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-urls) instructions.&#x20;
 
 Then add an extra  variable in the `values-customer-settings.yml`:
 

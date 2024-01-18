@@ -26,7 +26,7 @@ limits: cpu: "1" memory: "2Gi"
   * Org custom role with the permission **Publish Kubernetes Resources**
 * Install [Helm](https://helm.sh/docs/intro/install/) locally.
 
-The Snyk Controller defaults to using the US data center. If you are using Snyk deployed in [an alternative data center](../../../../more-info/data-residency-at-snyk.md), you must change the upstream endpoint `integrationApi` URL through an environment variable for your specific deployment:
+The Snyk Controller defaults to using the US data center. If you are using Snyk deployed in [an alternative data center](../../../../more-info/regional-hosting-and-data-residency.md), you must change the upstream endpoint `integrationApi` URL through an environment variable for your specific deployment:
 
 * AU: [https://api.au.snyk.io/v2/kubernetes-upstream](https://api.au.snyk.io/v1/kubernetes-upstream)
 * EU: [https://api.eu.snyk.io/v2/kubernetes-upstream](https://api.eu.snyk.io/v1/kubernetes-upstream)

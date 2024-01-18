@@ -961,7 +961,7 @@
 * [More info](more-info/README.md)
   * [Snyk Plans and Pricing](more-info/snyk-plans-and-pricing.md)
   * [How Snyk handles your data](more-info/how-snyk-handles-your-data.md)
-  * [Regional hosting and data residency](more-info/data-residency-at-snyk.md)
+  * [Regional hosting and data residency](more-info/regional-hosting-and-data-residency.md)
   * [Supported browsers](more-info/supported-browsers.md)
   * [Snyk feature release process](more-info/snyk-feature-release-process.md)
   * [Snyk Terms of Support and Services Glossary](more-info/snyk-terms-of-support-and-services-glossary.md)
