@@ -965,7 +965,6 @@
   * [Supported browsers](more-info/supported-browsers.md)
   * [Snyk feature release process](more-info/snyk-feature-release-process.md)
   * [Snyk Terms of Support and Services Glossary](more-info/snyk-terms-of-support-and-services-glossary.md)
-  * [Disclosing vulnerabilities](more-info/disclosing-vulnerabilities/README.md)
-    * [Disclose a vulnerability in Snyk services](more-info/disclosing-vulnerabilities/disclose-a-vulnerability-in-snyk-services.md)
+  * [Disclose a vulnerability in Snyk services](more-info/disclose-a-vulnerability-in-snyk-services.md)
   * [Snyk Learn](more-info/snyk-learn.md)
   * [Error Catalog](more-info/error-catalog.md)
