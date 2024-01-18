@@ -1,7 +1,7 @@
 # Snyk CLI for IaC
 
 {% hint style="info" %}
-To use the [IaC+](../../../scan-using-snyk/scan-infrastructure/getting-started-with-iac+-and-cloud-scans/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
+To use the [IaC+](../../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
 {% endhint %}
 
 ## Overview
