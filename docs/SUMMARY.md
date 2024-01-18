@@ -241,6 +241,7 @@
     * [Phoenix Security integration](integrate-with-snyk/vulnerability-management-tools/phoenix-security-integration.md)
     * [ServiceNow AVR integration](integrate-with-snyk/vulnerability-management-tools/servicenow-avr-integration.md)
     * [ServiceNow SBOM Integration](integrate-with-snyk/vulnerability-management-tools/servicenow-sbom-integration.md)
+    * [Tines Integration](integrate-with-snyk/vulnerability-management-tools/tines-integration.md)
 * [Scan using Snyk](scan-using-snyk/README.md)
   * [Working with Snyk in your environment](scan-using-snyk/working-with-snyk-in-your-environment/README.md)
     * [Running scans](scan-using-snyk/working-with-snyk-in-your-environment/running-scans.md)
