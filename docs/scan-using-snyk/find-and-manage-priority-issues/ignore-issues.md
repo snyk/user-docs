@@ -96,7 +96,7 @@ The same repository imported from the SCM is considered to be a different Projec
 
 ### Use the .snyk file to ignore issues
 
-For all Projects, you can ignore the vulnerability by creating a `.snyk` YAML file or  modifying the existing `.snyk` file.
+For Open Source Projects, you can ignore the vulnerability by creating a `.snyk` YAML file or  modifying the existing `.snyk` file.
 
 <figure><img src="../../.gitbook/assets/screen+shot+2017-05-10+at+11.16.57+am.png" alt="A .snyk file"><figcaption><p>A .snyk file</p></figcaption></figure>
 
