@@ -42,11 +42,16 @@ The `.snyk` file should be versioned in the code repository, the same as other a
 You can create the `.snyk` file in a number of ways:
 
 * **Snyk vulnerability fix pull request (PR)** - When you select the **fix a vulnerability** button on a Git code repository scan, and a Snyk patch is available and an upgrade is not possible, a `.snyk` file is added to the pull request. Creating Snyk patches is supported for npm and Yarn only.
-* **Snyk CLI** - When you use the `snyk ignore` command, Snyk creates a `.snyk` file.
-* **Manual creation** - If you want to ignore by path, you must edit the `.snyk` file manually. You can create a new `.snyk` file and populate it with the code that follows:\
+* **Snyk CLI** - When you use the `snyk ignore` command, Snyk creates a `.snyk` file. See the [Ignore](../../snyk-cli/commands/ignore.md) command CLI help for usage.
+* **Manual creation** - If you do not have an existing .snyk file, you can create a new .snyk file and populate it with the code that follows:\
   &#x20;`# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
-  `version: v1.25.0`\
-  The `version` is the current version of the snyk-policy package found at [https://www.npmjs.com/package/snyk-policy](https://www.npmjs.com/package/snyk-policy).
+  `version: v1.25.0`
+  * The `version` should be set to `v1.25.0` as this is the current policy schema version.&#x20;
+  * The ignore block or blocks should follow the relevant syntax as shown in the [description of the `ignore` command](../../snyk-cli/commands/ignore.md#description) or the examples on this page.
+
+{% hint style="info" %}
+The snyk-policy package can be found at [https://www.npmjs.com/package/snyk-policy](https://www.npmjs.com/package/snyk-policy). Note that the version of the package is not the same as the policy schema version to be entered in the `.snyk` file
+{% endhint %}
 
 ## Syntax of the `.snyk` file
 
@@ -64,8 +69,8 @@ The `ignore:` is an ignore rule in the form of:
 ignore:
   snyk-vulnid:
     - path to library using > seperator :
-       reason: 'text string'
-       expires: 'datetime string'
+        reason: 'text string'
+        expires: 'datetime string'
 ```
 
 The `patch`: is in the form of:
@@ -120,7 +125,7 @@ Generate a patch rule using a vulnerability fix PR:
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.22.1
+version: v1.25.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -135,7 +140,7 @@ Manually modify the `.snyk` file to set `language-settings:` for the Project to 
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.22.1
+version: v1.25.0
 language-settings: 
   python: "2.7"
 ```
@@ -144,7 +149,7 @@ Manually modify the `.snyk` file to set `language-settings:` for the Project to 
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.22.1
+version: v1.25.0
 language-settings: 
   python: "3.6.2"
 ```
@@ -153,19 +158,18 @@ language-settings:
 When you include the `.snyk` file in your code repository and the `language-settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans.
 {% endhint %}
 
-See the [Python version](../../scan-applications/supported-languages-and-frameworks/python.md#python-version-support) documentation for more information about the Python version support.
+See the [Python version](../../scan-applications/supported-languages-and-frameworks/python.md#python-version-support) documentation for more information about the Python version support.&#x20;
 
 ### Set vulnerability ignore rules
 
 Ignore a specific vulnerability for a given path:
 
-```
-ignore:
- SNYK-JS-BSON-561052:
+<pre><code><strong>ignore:
+</strong>  SNYK-JS-BSON-561052:
     - mongodb > mongodb-core > bson:
         reason: None given
         expires: '2020-06-19T20:36:54.553Z'
-```
+</code></pre>
 
 Ignore a vulnerability for all paths:
 
@@ -179,16 +183,15 @@ ignore:
 
 Ignore a specific vulnerability on multiple paths:
 
-```
-ignore:
- SNYK-JS-DOTPROP-543489:
-   - configstore > dot-prop:
-       reason: None given
-       expires: '2020-06-19T20:36:54.553Z'
-   - snyk > configstore > dot-prop:
-       reason: None given
-       expires: '2020-06-19T20:36:54.553Z'
-```
+<pre><code><strong>ignore:
+</strong><strong>  SNYK-JS-DOTPROP-543489:
+</strong>    - configstore > dot-prop:
+        reason: None given
+        expires: '2020-06-19T20:36:54.553Z'
+    - snyk > configstore > dot-prop:
+        reason: None given
+        expires: '2020-06-19T20:36:54.553Z'
+</code></pre>
 
 ### Set license ignore rules
 
@@ -204,13 +207,12 @@ Enter the license ID in lowercase to avoid causing an error. Only the proper nam
 
 This command results in the following `.snyk` file:
 
-```
-ignore:
-  'snyk:lic:npm:goof:GPL-2.0':
+<pre><code><strong>ignore:
+</strong>  'snyk:lic:npm:goof:GPL-2.0':
     - '*':
         reason: None Given
         expires: 2020-11-07T11:38:28.614Z
-```
+</code></pre>
 
 ## `.snyk`-related CLI commands
 
