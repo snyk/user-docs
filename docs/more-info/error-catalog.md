@@ -396,7 +396,7 @@ This error occurs when your code depends on external libraries that are added to
 
 Snyk was unable to detect any `<TargetFramework>`s in the supplied manifest files. 
 
-If you are using `Directory.Build.props` files to determine the target framework, please ensure that it is named as such, as Snyk does not perform case-insensitive searches for `.props` files due to performance considerations on the customer's SCM network.
+If you are using `Directory.Build.props` files to determine the target framework, ensure that it is named as such. Due to performance considerations on the customer's SCM network, Snyk does not perform case-insensitive searches for `.props` files.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1621,4 +1621,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-01-17T20:19:13.496Z
+--- Generated at 2024-01-18T09:36:08.289Z
