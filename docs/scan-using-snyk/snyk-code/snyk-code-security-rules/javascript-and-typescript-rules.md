@@ -272,19 +272,13 @@
 
 **CWE** (770) Allocation of Resources Without Limits or Throttling
 
-## Rule (43) XML internal entity expansion
-
-**CWE** (776) Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-## Rule (44) Use of Password Hash With Insufficient Computational Effort
+## Rule (43) Use of Password Hash With Insufficient Computational Effort
 
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (45) Server-Side Request Forgery (SSRF)
+## Rule (44) Server-Side Request Forgery (SSRF)
 
 **CWE** (918) Server-Side Request Forgery (SSRF)
 
@@ -292,36 +286,36 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (46) Permissive Cross-domain Policy
+## Rule (45) Permissive Cross-domain Policy
 
 **CWE** (942) Permissive Cross-domain Policy with Untrusted Domains
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (47) NoSQL Injection
+## Rule (46) NoSQL Injection
 
 **CWE** (943) Improper Neutralization of Special Elements in Data Query Logic
 
-## Rule (48) Sensitive Cookie Without 'HttpOnly' Flag
+## Rule (47) Sensitive Cookie Without 'HttpOnly' Flag
 
 **CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (49) Bad Coding Practices
+## Rule (48) Bad Coding Practices
 
 **CWE** (1006) Bad Coding Practices
 
-## Rule (50) Improper Restriction of Rendered UI Layers or Frames
+## Rule (49) Improper Restriction of Rendered UI Layers or Frames
 
 **CWE** (1021) Improper Restriction of Rendered UI Layers or Frames
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
-## Rule (51) Improper Type Validation
+## Rule (50) Improper Type Validation
 
 **CWE** (1287) Improper Validation of Specified Type of Input
 
-## Rule (52) Prototype Pollution
+## Rule (51) Prototype Pollution
 
 **CWE** (1321) Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')
