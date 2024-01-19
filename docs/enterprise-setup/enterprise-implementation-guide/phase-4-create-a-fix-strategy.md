@@ -70,7 +70,7 @@ DevSecOps-led implementation, focusing on securing your custom images and enviro
 
 ## Targeted vulnerabilities campaigns
 
-As you operationalize security testing in your development process, another option for your fix strategy is to have campaigns to eliminate vulnerability types, for example, SQ and injection. Using CWE filters can be very helpful in reporting to identify and log issues.
+When you operationalize security testing in your development process, another option for your fix strategy is to have campaigns to eliminate vulnerability types, for example, SQL injection. Using CWE filters can be very helpful in reporting to identify and log issues.
 
 ## Update your timeline
 

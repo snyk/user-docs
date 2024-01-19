@@ -23,21 +23,21 @@ Some examples of success metrics to consider are provided here. Analyzing releva
 
 ### Gain visibility
 
-* Percentage of Projects that have been successfully scanned for vulnerabilities
-* The number of critical and high-severity vulnerabilities identified
+* Percentage of Projects that have been successfully scanned for issues
+* The number of critical and high-severity issues identified
 * Mean time to complete the initial scan for a Project
-* Progress in prioritizing vulnerabilities by severity level
+* Progress in prioritizing issues by severity level
 
 ### Prevent new Issues
 
 * Percentage of pull requests or builds that are being failed based on Snyk automation
-* Reduction in new vulnerabilities introduced after automation is turned on
+* Reduction in new issues introduced after automation is turned on
 * Time taken to address blocked pull requests and resolve them
 
 ### Fix backlog
 
-* Percentage of existing vulnerabilities that have been resolved
-* Mean time to fix vulnerabilities from the backlog
+* Percentage of existing issues that have been resolved
+* Mean time to fix issues from the backlog
 * Number of auto-fix pull requests raised and successfully merged
-* Progress in using Jira integration for managing vulnerabilities and tracking fixes
+* Progress in using Jira integration for managing issues and tracking fixes
 
