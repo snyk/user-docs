@@ -239,6 +239,7 @@
     * [OpsLevel integration](integrate-with-snyk/vulnerability-management-tools/opslevel-integration.md)
     * [Opus Integration](integrate-with-snyk/vulnerability-management-tools/opus-integration.md)
     * [Phoenix Security integration](integrate-with-snyk/vulnerability-management-tools/phoenix-security-integration.md)
+    * [Phylum](integrate-with-snyk/vulnerability-management-tools/phylum.md)
     * [ServiceNow AVR integration](integrate-with-snyk/vulnerability-management-tools/servicenow-avr-integration.md)
     * [ServiceNow SBOM Integration](integrate-with-snyk/vulnerability-management-tools/servicenow-sbom-integration.md)
     * [Tines Integration](integrate-with-snyk/vulnerability-management-tools/tines-integration.md)
