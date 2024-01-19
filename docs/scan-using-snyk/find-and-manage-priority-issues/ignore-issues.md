@@ -147,6 +147,16 @@ var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err
 
 For more information, see [Exploring the vulnerability issues discovered by Snyk Code](broken-reference).
 
+## Ignore issues in Snyk Container
+
+
+
+When scanning your container images using `snyk container test`, you can ignore issues that are not relevant to you by using [The .snyk file](../policies/the-.snyk-file.md).
+
+Snyk recommends storing and versioning the `.snyk` file in the root of your working directory.
+
+For Snyk Container, after registering an ignore, when you call `snyk container test` or `snyk container monitor`, you must use the `--policy-path=` option, for example: `snyk container test node --policy-path=.snyk.`
+
 ## Ignore issues in Snyk IaC
 
 When scanning your IaC configuration files using `snyk iac test`, you can ignore issues that are not relevant to you by using [The .snyk file](../policies/the-.snyk-file.md).
