@@ -11,7 +11,7 @@ Snyk is able to integrate with Kubernetes, enabling you to import and scan your 
 
 The Kubernetes integration follows the below process:&#x20;
 
-1. Your administrator installs a controller on your cluster, authenticating the integration with a unique integration ID and a service account token with the needed permissions generated from the Snyk account. For more information, including the permissions needed, see [Prerequisites for installing the Snyk Controller](../use-the-snyk-controller/#prerequisites-for-installing-the-snyk-controller).
+1. Your administrator installs a controller **on your cluster**, authenticating the integration with a unique integration ID and a service account token with the needed permissions generated from the Snyk account. For more information, including the permissions needed, see [Prerequisites for installing the Snyk Controller](../use-the-snyk-controller/#prerequisites-for-installing-the-snyk-controller).
 2. You install the controller with one of the options:
    * [Install the Snyk Controller with Helm (Azure and Google Cloud Platform)](../use-the-snyk-controller/install-the-snyk-controller-with-helm-azure-and-google-cloud-platform.md)
    * [Install the Snyk Controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../use-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)

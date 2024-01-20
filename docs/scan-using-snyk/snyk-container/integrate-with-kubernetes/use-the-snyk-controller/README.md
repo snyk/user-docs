@@ -11,7 +11,7 @@ Before you install the Snyk Controller:
 
 * You must have an administrator account for your Snyk Organization.
 * You must have a minimum of 50 GB of storage available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster.
-* You must have a minimum of the indicated RAM requirements to run on the cluster.
+* You must have a minimum of the RAM requirements indicated in the code that follows to run on the cluster.
 
 ```
 requests: cpu: "250m" memory: "400Mi"
@@ -25,6 +25,10 @@ limits: cpu: "1" memory: "2Gi"
   * Org Admin
   * Org custom role with the permission **Publish Kubernetes Resources**
 * Install [Helm](https://helm.sh/docs/intro/install/) locally.
+
+{% hint style="warning" %}
+The Snyk-monitor Kubernetes integration is designed to be deployed into your cluster. It has not been tested on Serverless FaaS deployment options such as Fargate, Google Cloud Run, and Azure Container Instances. Deployment into serverless platforms may be unreliable and is not recommended or supported.
+{% endhint %}
 
 The Snyk Controller defaults to using the US data center. If you are using Snyk deployed in [an alternative data center](../../../../more-info/regional-hosting-and-data-residency.md), you must change the upstream endpoint `integrationApi` URL through an environment variable for your specific deployment:
 
