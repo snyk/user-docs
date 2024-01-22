@@ -41,6 +41,10 @@ Snyk AppRisk derives assets from Snyk automatically, and also from any SCM tools
 
 Currently, Snyk AppRisk supports repository assets as an asset type. In future releases, Snyk will add support for additional code-based assets, such as software packages. Repository assets are visible in all inventory layouts and are supported by Policies. To avoid duplication, assets are identified using a unique identifier, which is the git remote URL for repository assets.
 
+{% hint style="info" %}
+If you archive or delete repositories, they are not displayed in the asset inventory and, therefore, not considered to be shown in the dashboard widgets.
+{% endhint %}
+
 #### Scanned artifacts
 
 Snyk AppRisk also includes the concept of scanned artifacts. A scanned artifact is an entity detected by Snyk and cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.&#x20;
