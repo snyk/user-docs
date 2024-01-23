@@ -8,9 +8,9 @@ The guide starts by recognizing that most businesses:
 * Are continuously creating new software, and need to secure new code.&#x20;
 
 {% hint style="info" %}
-There are t**ypical timelines for implementation** depending on the size and scope of your business.
+There are **typical timelines for implementation** depending on the size and scope of your business.
 
-f your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using a Git integration and the [API Import Tool](../../snyk-api-info/other-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/) sections for details of this type of process
+If your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using a Git integration and the [API Import Tool](../../snyk-api-info/other-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/) sections for details of this type of process
 
 However, for larger, more process-oriented enterprises, the implementation process may take weeks or months and it requires more detailed planning to succeed.&#x20;
 {% endhint %}
