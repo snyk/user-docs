@@ -112,7 +112,7 @@ Response times are dependent on the severity of the ticket, the Snyk Plan purcha
 
 #### Initial response time details
 
-* &#x20;Snyk will prioritize all support requests based on its reasonable assessment of the severity level of the problem reported, and use all reasonable endeavors to meet the timescales specified in the table above.
+* &#x20;Snyk will prioritize all support requests based on its reasonable assessment of the severity level of the problem reported, and use all reasonable endeavors to meet the timeframes specified in the table above.
 * The times listed are the time frames in which you can expect the first response.
 * First response times apply to support communications through Snyk's support portal only. Private Slack channels are designed for regular collaboration between Snyk and customers but are not subject to specific first response times and should not be used for support communications.
 * For issues outside of the typical support scope, issues determined to require a longer-term fix, or issues that are part of future development cycles, Snyk will provide regular and meaningful updates on a case-by-case basis. This includes, but is not limited to, new feature requests, items within Snyk’s long-term development roadmap, and complex bug fixes.
