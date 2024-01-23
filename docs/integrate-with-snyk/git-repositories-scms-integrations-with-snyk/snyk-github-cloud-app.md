@@ -44,7 +44,11 @@ The Snyk GitHub Cloud App improves upon many features as compared to the current
 
 
     <figure><img src="../../.gitbook/assets/2023-11-28_09-45-45.png" alt="" width="375"><figcaption><p>Selection of the GitHub Organization to install the app into</p></figcaption></figure>
-5. The next screen asks if you wish to install the app in all of the repositories belonging to the selected GitHub organization, or if you want to install the app in a select number of repositories belonging to a GitHub organization.&#x20;
+5.  If the GitHub Cloud App is already installed in a GitHub organization, you can still select that same organization during the installation process for a different Snyk Organization, but this must be distinct from the one used in the initial installation.\
+
+
+    <figure><img src="../../.gitbook/assets/2024-01-23_10-40-45.png" alt="Connect another GitHub organization into a Snyk Organization" width="563"><figcaption><p>Connect another GitHub organization into a Snyk Organization</p></figcaption></figure>
+6. The next screen asks if you wish to install the app in all of the repositories belonging to the selected GitHub organization, or if you want to install the app in a select number of repositories belonging to a GitHub organization.&#x20;
 
 <figure><img src="https://lh7-us.googleusercontent.com/izrSkGKUWpJYqBk4yOi4psfRqmNLJiH1LCun3RLwdIfdEUx8wmU5LomzYzvHCGf5Ak5WVAatbOYhDd489QCmSjJv58lYnizUnfH6HiMiI7xi5o0VfLHyDzCIMO5MdqNXxlOPgTR4pIWD6fhHrPEpC8o" alt="Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into" width="375"><figcaption><p>Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
 
