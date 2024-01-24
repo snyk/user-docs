@@ -28,9 +28,9 @@ The following explains how the `.snyk` file works.
 * When the `.snyk` file is included in an SCM Project, Snyk considers both the database ignores and the `.snyk` ignores.
 * Developers can ignore issues by using the .snyk policy file when running `snyk monitor`.
 * You can use the `.snyk` file to specify the files or directories to exclude from the Snyk Code scan that will generate the Code Analysis Project.
-* The `.snyk` file defines certain analysis configuration items such as `language settings:` for the Python version.
-  * For SCM scans, for example, GitHub, the Snyk Web UI limits users to setting Python versions at the Organization level.
-  * When you include the `.snyk` file in your code repository and the `language settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans.
+* The `.snyk` file defines certain analysis configuration items such as `language settings:` for the Python (Pip) version.
+  * For SCM scans, for example, GitHub, the Snyk Web UI controls the Python version at the Organization level, from the **Organization > Settings > Languages > Python > Pip Python version** option.
+  * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options. See [Pip and Python versions](https://docs.snyk.io/scan-using-snyk/supported-languages-and-frameworks/python#pip-and-python-versions) for more details.
   * You may need to re-import the Project if the `.snyk` file was not present at the initial import of the Project into Snyk.
 
 ## How to create the `.snyk` file
