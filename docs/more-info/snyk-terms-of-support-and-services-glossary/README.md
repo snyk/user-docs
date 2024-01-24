@@ -174,7 +174,7 @@ The Platinum add-on provides extended, in-depth, and skilled expertise to help y
 
 The Customer acknowledges that the implementation and professional service options listed below may be performed either by Snyk personnel or by Snyk's certified partners under the direction and supervision of Snyk. In either event, Snyk remains fully responsible and liable for the performance of the Snyk Accelerate or Snyk Assist implementation support and its partner's compliance with the terms of the underlying Agreement between Snyk and the Customer, including obligations of confidentiality and data security.
 
-See the services descriptions on each of the following pages.
+See the service descriptions on each of the following pages.
 
 * [Snyk Jumpstart](snyk-jumpstart-services-description.md)
 * [Statement of Work](statement-of-work.md)

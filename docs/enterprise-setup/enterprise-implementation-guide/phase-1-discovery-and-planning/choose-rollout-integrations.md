@@ -37,7 +37,7 @@ If you have an on-premise Git repository, you must consider deploying [Snyk Brok
 {% hint style="info" %}
 Enterprise customers can enable and manage [Snyk Broker](https://docs.snyk.io/enterprise-setup/snyk-broker) via API.&#x20;
 
-[Paid services](../../../more-info/snyk-terms-of-support-and-services-glossary/snyk-terms-of-support-and-services-glossary.md) can be engaged to assist in Snyk Broker deployments.
+[Paid services](broken-reference) can be engaged to assist in Snyk Broker deployments.
 {% endhint %}
 
 ### Continuous Integration/Continuous Deployment (CI/CD) pipeline integrations

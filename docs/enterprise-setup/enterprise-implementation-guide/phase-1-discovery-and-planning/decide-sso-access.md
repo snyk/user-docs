@@ -17,7 +17,7 @@ For more information, see [Choose a Provisioning Option](../../using-single-sign
 
 {% hint style="info" %}
 **Custom Mapping**\
-This feature is available exclusively with [paid services](../../../more-info/snyk-terms-of-support-and-services-glossary/snyk-terms-of-support-and-services-glossary.md). This feature allows you to provision user accounts with customized rules, tailoring access and roles based on specific needs. Keep in mind that this feature may involve complex configuration and setup, and it is recommended for organizations with advanced specific access management requirements.\
+This feature is available exclusively with [paid services](broken-reference). This feature allows you to provision user accounts with customized rules, tailoring access and roles based on specific needs. Keep in mind that this feature may involve complex configuration and setup, and it is recommended for organizations with advanced specific access management requirements.\
 
 {% endhint %}
 

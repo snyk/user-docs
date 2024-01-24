@@ -969,7 +969,6 @@
   * [Snyk Terms of Support and Services Glossary](more-info/snyk-terms-of-support-and-services-glossary/README.md)
     * [Snyk Jumpstart Services Description](more-info/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
     * [Statement of Work](more-info/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
-    * [\[ARCHIVE\] Snyk Terms of Support and Services Glossary](more-info/snyk-terms-of-support-and-services-glossary/snyk-terms-of-support-and-services-glossary.md)
   * [Disclose a vulnerability in Snyk services](more-info/disclose-a-vulnerability-in-snyk-services.md)
   * [Snyk Learn](more-info/snyk-learn.md)
   * [Error Catalog](more-info/error-catalog.md)
