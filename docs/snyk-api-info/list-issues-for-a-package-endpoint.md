@@ -224,10 +224,6 @@ Remove the component that is not supported and try to make the request again. Th
 403\
 To get access, contact your Solutions Engineer or Technical Success Manager, or the administrator for your team.
 
-**Package not found**\
-404\
-The package you entered in the purl specification can not be found in the Snyk Vulnerability Database. Check that the package name, ecosystem, and version are correct, and try again.
-
 **Rate limit exceeded**\
 429\
 180 requests per minute per user are permitted on this API endpoint. If you exceed this volume, you will receive a 429 error response code.
