@@ -1,38 +1,49 @@
 # How Snyk handles your data
 
-Snyk is a developer security platform, and thus Snyk places the utmost importance on data security. Fully understanding your privacy and security needs, Snyk provides this document with the goal of providing you with transparency as to how and what data is accessed, transferred, and stored by Snyk.
+Snyk is a developer security platform placing the utmost importance on data security. Fully understanding your privacy and security needs, Snyk provides this document with the goal of providing you with transparency as to how and what data is accessed, transferred, and stored by Snyk.
 
-The data handled by Snyk varies depending on the product you are using, how you are integrating with Snyk and your Snyk deployment. Because Snyk is subject to fast-moving changes, the types of data accessed and stored might change with the introduction of a new capability or changes to an existing capability.
+The data that Snyk handles varies depending on the product you are using, how you are integrating with Snyk and your Snyk deployment. Be aware, Snyk is subject to fast-moving changes, therefore, the types of data that Snyk accesses and stores might change with the introduction of a new capability or changes to an existing capability.
 
 ## Flexible deployment options
 
 Snyk leverages the latest software development practices and technologies to provide customers with the flexibility to use Snyk’s developer security platform in the manner that best suits the needs of their business.
 
-Snyk’s cloud-first deployment options offer ease of use and scalability while also providing the required level of data protection with multi- and single-tenancy options supported in the US, EU, and AUS. Additional regions will be supported in the future.
+Snyk’s cloud-first deployment options offer ease of use and scalability while also providing the required level of data protection with multi- and single-tenancy options supported in the US, EU, and AUS.
+
+In the future, Snyk will support additional regions.
 
 * **Multi-Tenant SaaS**: The simplest, most common, and most cost-effective way to use Snyk’s developer security platform
 * **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform on AWS. For details, see [Snyk Deployment Options](https://snyk.io/platform/deployment-options/).
 * **Snyk Broker**: A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](../enterprise-setup/snyk-broker/) securely handles inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
 
-**Be sure to reach out to your Snyk contact for more details on how these different options can be leveraged to meet your needs.**
-
 ## Customer data flows across Snyk
 
-Snyk provides a wide range of development tools and integration points, requiring different types of data and involving different data interactions. The sections that follow provide an overview of both the common types of data Snyk accesses and stores and product and integration-specific types. The information is reviewed at least twice per year or when a significant change occurs within the product operations.
+Snyk provides a wide range of development tools and integration points, requiring different types of data and involving different data interactions. The following sections provide an overview of both the common types of data Snyk accesses and stores and product and integration-specific types. The information is reviewed at least twice per year or when a significant change occurs within the product operations.
 
 ## Common data types
 
 * **Vulnerability data** - Snyk stores information on the vulnerabilities identified in customer applications and related fix context.
 * **Vulnerability source** - Snyk stores information on where the vulnerability was identified. Examples: source code repository or registry, file name and location, dependency tree, vulnerability path.
-* **Integration-related data** - Snyk stores information required to set up an integration with Snyk. Examples: tokens and configurations.
+* **Integration-related data** - Snyk stores information required to set up an integration with Snyk. Examples: tokens and API configurations.
 * **User data** - Snyk stores user information required to access and use the platform. Examples: user name, IDs (for example, GitHub user ID), email address, IP address.
 * **User list** - For purposes of accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored. Upon request, an unhashed version of user emails is produced.
 * **Billing data** - Snyk stores information required for billing your Snyk account.
 * **User behavior analytics** - Snyk stores various types of information pertaining to usage patterns. Examples: platform navigation and executed CLI commands.
 
+{% hint style="info" %}
+All data is handled by Snyk in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
+{% endhint %}
+
+### Cache retention period related to vulnerability source data
+
+Snyk uses cloud products from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to process and store the vulnerability source data in a cache. Such data is cached according to the shortest possible duration afforded by the cloud service provider's storage lifecycle policy, which is subject to change by these cloud service providers and set out approximately in the periods below:
+
+* For AWS tenants - EU/AU/Private Tenant: 24 to 48 hours under the[ S3 policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/intro-lifecycle-rules.html)
+* For GCP tenants - US (Default): 24 hours under the[ Google Cloud Storage Policy](https://cloud.google.com/storage/docs/lifecycle)
+
 ## Product-specific data types
 
-Snyk knows how important it is for you to protect your data. Snyk products only access and store the information needed to provide you with Snyk services and to ensure accurate analysis as described for each Snyk product: [Snyk Open Source](how-snyk-handles-your-data.md#snyk-open-source), [Snyk Code](how-snyk-handles-your-data.md#snyk-code), [Snyk Container](how-snyk-handles-your-data.md#snyk-container), and [Snyk IaC](how-snyk-handles-your-data.md#snyk-iac).
+Snyk knows how important it is to protect your data. Therefore we will only access and store the information needed to provide you with Snyk services and to ensure accurate analysis as described for each Snyk product: Snyk Open Source, Snyk Code, Snyk Container, and Snyk IaC.
 
 ### **Snyk Open Source**
 
@@ -40,7 +51,6 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 
 * Snyk accesses manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
 * By default, Snyk does not access your source code with this exception: for CLI scans using the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and store the file signatures and file names.
-* For SCA Scans, Snyk does not access your source code.
 * Snyk accesses and stores the names and version numbers of your dependencies.
 * Snyk stores the names of associated licenses, including copyright and attribution information.
 * Snyk accesses and stores repository-specific information.
@@ -130,15 +140,6 @@ The accuracy of results is improved in a number of ways through cloning. Since S
 ### Snyk data ingestion
 
 When Git repository cloning is enabled, Snyk will ingest, through configured SCM integrations, a temporary snapshot of repository contents at a given commit and all commit metadata (including the commit message, authors, and timestamp).
-
-### How Snyk processes this data
-
-Snyk uses cloud products from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to process and store the data in a cache.
-
-Data is cached according to the cloud provider's storage minimum retention policy:
-
-* For AWS tenants - EU/AU/Private Tenant: [S3 policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
-* GCP tenants - US (Default): [Google Cloud Storage Policy](https://cloud.google.com/storage/docs/lifecycle)
 
 ### Safeguards Snyk puts in place to ensure data is secure
 
