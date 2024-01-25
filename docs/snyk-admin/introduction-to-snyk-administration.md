@@ -31,7 +31,7 @@ Snyk has the following types of members (users), defined by their roles:
 Group administrators and Collaborators are available with Snyk Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.&#x20;
 {% endhint %}
 
-For details of the permissions associated with each role, see [Permissions associated with each role ](manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md#permissions-associated-with-each-role)on the Managing permissions page.
+For details of the permissions associated with each role, see [Permissions associated with each role ](manage-user-roles-and-permissions/permissions-associated-with-each-pre-defined-role.md#permissions-associated-with-each-role)on the Managing permissions page.
 
 ## Snyk Admin tools
 

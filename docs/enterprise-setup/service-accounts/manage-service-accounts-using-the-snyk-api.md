@@ -3,7 +3,7 @@
 You can manage service accounts using the [Snyk REST API](https://apidocs.snyk.io/?version=2023-09-07#tag--ServiceAccounts).
 
 {% hint style="info" %}
-Specific permissions are required to perform all these tasks; see [Service Account permissions](../../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md#service-account-management-permissions).
+Specific permissions are required to perform all these tasks; see [Service Account permissions](../../snyk-admin/manage-user-roles-and-permissions/permissions-associated-with-each-pre-defined-role.md#service-account-management-permissions).
 {% endhint %}
 
 ## Service account attributes
