@@ -12,7 +12,7 @@ For more information, see [Snyk Open Source ](../enterprise-setup/snyk-broker/in
 
 Scan your codebase for known vulnerabilities and get remediation guidance either inline in your IDE or by importing your code repository to Snyk Web UI.
 
-For more information, see [Snyk Code](./#snyk-code) and [Exploring the advanced technologies behind Snyk Code ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)on the Snyk blog.
+For more information, see [Snyk Code](snyk-code/) and [Exploring the advanced technologies behind Snyk Code ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)on the Snyk blog.
 
 ## Snyk Container
 
