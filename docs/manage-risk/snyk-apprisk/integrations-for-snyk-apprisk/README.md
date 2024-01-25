@@ -43,7 +43,7 @@ If your SCM instance is not publicly accessible, you need Snyk Broker. You can i
 Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before running the commands.
 {% endhint %}
 
-* GitHub - install and configure Snyk Broker :thumbsup:
+* GitHub - install and configure Snyk Broker
   * [using Docker](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/github-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md#docker-run-command-to-set-up-a-broker-client-for-github)
   * [using Helm](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/github-install-and-configure-broker/githhub.com-install-and-configure-using-helm.md)
   * [environment variables](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/github-install-and-configure-broker/github-environment-variables-for-snyk-broker.md)
