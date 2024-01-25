@@ -349,7 +349,7 @@
       * [Create custom rules](scan-using-snyk/snyk-code/custom-rules/create-custom-rules.md)
       * [The query language](scan-using-snyk/snyk-code/custom-rules/the-query-language.md)
       * [Templates and predicates](scan-using-snyk/snyk-code/custom-rules/templates-and-predicates.md)
-      * [Predefined predicates and templates](scan-using-snyk/snyk-code/custom-rules-beta/list-of-predefined-predicates-and-templates.md)
+      * [Predefined predicates and templates](scan-using-snyk/snyk-code/custom-rules/predefined-predicates-and-templates.md)
       * [Basic Usage](scan-using-snyk/snyk-code/custom-rules/query-examples/README.md)
         * [CWE 312 Example](scan-using-snyk/snyk-code/custom-rules/query-examples/cwe-312-example.md)
       * [Best practices for Snyk Code custom rules](scan-using-snyk/snyk-code/custom-rules/best-practices-for-snyk-code-custom-rules.md)
