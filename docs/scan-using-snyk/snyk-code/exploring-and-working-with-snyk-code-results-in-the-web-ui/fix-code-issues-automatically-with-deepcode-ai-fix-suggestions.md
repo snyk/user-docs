@@ -6,7 +6,7 @@ DeepCode AI Fix is in [Early Access](../../../more-info/snyk-feature-release-pro
 
 Fix the security issues and quality flaws in the source code through an automated flow. DeepCode AI Fix Suggestions calculates the most suitable solution for your issues and applies it automatically.
 
-## Why use AI Fix suggestions?
+## Why use DeepCode AI Fix?
 
 DeepCode AI Fix combines the power of a thorough program analysis engine with the abilities of an in-house deep learning-based large language model. This combination allows for compiling large amounts of unstructured language information [from open-source code](fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md#what-data-does-deepcode-ai-fix-suggestions-collect).
 
