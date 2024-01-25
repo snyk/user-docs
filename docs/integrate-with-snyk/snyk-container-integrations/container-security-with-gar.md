@@ -40,7 +40,7 @@ Configure integration from Snyk with your Google Artifact Registry account to sc
 1. Navigate to your Organization in the Snyk Web UI.
 2. Select **Integrations**.
 3. In the Container Registries section, select **Google Artifact Registry**.
-4. In the Account credentials section, enter your Artifact Registry hostname.
+4. In the Account credentials section, enter your [Artifact Registry](https://cloud.google.com/artifact-registry/docs/repositories/repo-locations) hostname. This is typically **\<Your Region Name>-docker.pkg.dev**, but in some cases, you may need to use a specific region or multi-region, for example, **us-east1-docker.pkg.dev** or **us-docker.pkg.dev**.
 5. In the JSON key file field, paste the entire contents of the JSON key file you downloaded when [enabling permissions](container-security-with-gar.md#enable-permissions-for-gar-integration).
 6. Select **Save**.
 
