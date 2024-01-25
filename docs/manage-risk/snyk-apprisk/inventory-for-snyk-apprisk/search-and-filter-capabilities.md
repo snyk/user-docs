@@ -26,5 +26,11 @@ There are several filtering options:
 * **Tags** - filter assets by certain categories, for example, tags.\
   Assets have default tags for various use cases, such as tracing active/inactive assets, filtering by specific technology, and more. On top of it, users can create policy rules to tag assets according to their own logic.
 * **Discovered** -  filter assets according to duration, since they were discovered.
-* **Control executed -** mostly used to answer scan coverage questions. For example, to find all assets that were scanned by Snyk Open Source, set the filter with these settings:\
-  **Control Executed -> Is any of -> Snyk Open Source.**
+* **Coverage and Coverage gap -** mostly used to answer scan coverage questions.&#x20;
+  * **Coverage** means that an asset has been tested by this product at some point in the past.
+  * **Coverage gap** means the asset does not meet the coverage requirements as set by the **Set coverage control** policy.
+
+{% hint style="info" %}
+If you use Snyk AppRisk for the first time, start with the **Coverage** filter to determine where you currently have Snyk Implemented.
+{% endhint %}
+
