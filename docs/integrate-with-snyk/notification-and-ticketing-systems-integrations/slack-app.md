@@ -38,7 +38,7 @@ To enable the Snyk app for Slack, you must do the following:
 
 ## Configure the Snyk app for Slack
 
-Ensure the user performing this installation has the permission **Snyk Apps Management - Install Apps** before continuing. See [documentation for member roles](../../snyk-admin/manage-user-roles-and-permissions/manage-member-roles.md).
+Ensure the user performing this installation has the permission **Snyk Apps Management - Install Apps** before continuing. See [documentation for member roles](../../snyk-admin/manage-permissions-and-roles/manage-user-roles.md).
 
 Open the [Snyk integrations page](https://app.snyk.io/integrations), navigate to **Notifications**, and click the **Slack App** tile:
 

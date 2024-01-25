@@ -10,7 +10,7 @@ The Snyk API is available to Enterprise customers. See [Plans and pricing](https
 You can manage service accounts using the [Snyk REST API](https://apidocs.snyk.io/?version=2024-01-04#tag--ServiceAccounts).
 {% endhint %}
 
-Users can be managed using the Snyk [v1](https://snyk.docs.apiary.io) and [REST](https://apidocs.snyk.io/?version=2024-01-04#overview) API and the [Snyk Web UI](../manage-user-roles-and-permissions/manage-member-roles.md).
+Users can be managed using the Snyk [API v1](https://snyk.docs.apiary.io) and [REST](https://apidocs.snyk.io/?version=2024-01-04#overview) API and the [Snyk Web UI](../manage-permissions-and-roles/manage-user-roles.md).
 
 [User provisioning ](provision-users-to-orgs-using-the-snyk-api-v1.md)uses the provisioning endpoints to organize and grant permissions under a specified role for SSO users before initial log-on.
 

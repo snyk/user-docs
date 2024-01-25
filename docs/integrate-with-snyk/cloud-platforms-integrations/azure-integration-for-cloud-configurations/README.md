@@ -13,7 +13,7 @@ To add an Azure integration for cloud configurations, you need the following:
 
 * A Snyk Business or Enterprise [plan](https://snyk.io/plans/)
 * A new Snyk Organization with appropriate feature flags assigned by your Snyk contact
-* A Snyk Group Administrator or Organization Administrator [role](../../../snyk-admin/manage-user-roles-and-permissions/permissions-associated-with-each-pre-defined-role.md)
+* A Snyk Group Administrator or Organization Administrator [role](../../../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md)
 * Access to a [Microsoft Azure](https://azure.microsoft.com/en-us/) subscription and associated credentials with permissions to create the following resources:
   * [An Active Directory (AD) application registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration)
   * [A federated identity credential](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)\

@@ -20,7 +20,8 @@ You can configure these types of Nexus Repository Manager:
 {% hint style="info" %}
 **Versions supported**
 
-* Nexus Repository Manager versions 3.x and 2.15+ are supported.
+* Nexus Repository Manager version 3.x is fully supported.
+* Nexus Repository Manager version 2.15+ is in Beta
 {% endhint %}
 
 These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Nexus Repository Manager](../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/nexus-repository-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
