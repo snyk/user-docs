@@ -21,10 +21,10 @@ Never share the **clientSecret** publicly, as this is used to authenticate your 
 Example CURL request to create a Snyk App:
 
 ```
-curl -X POST -H "Content-Type: application/vnd.api+json" \                                 
--H "Authorization: token <REPLACE_WITH_API_TOKEN>" \
--d '{"name": "My Awesome Snyk App", "redirect_uris": ["https://example.com/callback"], "scopes": ["org.read"]}' \
-https://api.snyk.io/rest/orgs/<REPLACE_WITH_YOUR_ORGID>/apps?version=2023-11-06
+curl -XPOST -H"Content-Type: application/vnd.api+json" \
+ -H"Authorization: token <REPLACE_WITH_API_TOKEN>" \
+ -d '{"data": { "attributes": {"name": "My Awesome Snyk App", "redirect_uris": ["https://example.com/callback"], "scopes": ["org.read"], "context": "tenant"}, "type": "app"}}' \
+ "https://api.snyk.io/rest/orgs/<REPLACE_WITH_YOUR_ORGID>/apps/creations?version=2024-01-04"
 ```
 
 ## Create using Snyk CLI
