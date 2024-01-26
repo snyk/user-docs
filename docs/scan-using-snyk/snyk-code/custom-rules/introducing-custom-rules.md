@@ -1,9 +1,5 @@
 # Introduction to custom rules
 
-{% hint style="warning" %}
-Custom rules is not currently compatible with [SCM integrations via Broker](../../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker).
-{% endhint %}
-
 You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:
 
 * [Snyk Web UI](../../../getting-started/explore-snyk-through-the-web-ui.md)
