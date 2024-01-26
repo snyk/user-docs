@@ -7,8 +7,8 @@ The default roles Snyk provides are as follows:
 * **Organization Admin** is the default role for Team Leads. Users with this role can add and delete Projects, override Snyk checks, and provision Group members with an Organization-level role.
 * **Organization Collaborator** is the default role for Developers. This role is ideal for small teams or a developer-first organizational approach.
 * **Group Admin** is the default role for the user who manages Snyk in the Organization. This role provides a full set of permissions at the Group and Organization level.
-* **Group Viewer** is a non-functional user role in Snyk. The user can access the Group level but requires Organization-level permissions to take actions in Snyk. This is normally used as a starting point during onboarding with Snyk to understand functions tied to Group permissions and design a custom Group role for post-deployment use.
-* **Group Member** is a role added to your environment as a transition from Group Viewer if you do not yet wish to create a custom role after onboarding with Snyk. This means the permissions granted can vary depending on your requirements, as discussed with your Snyk contacts. Select the named role from the list under Manage Members in the Snyk Web UI to check the permissions assigned to your Group Member role.
+* **Group Viewer** is a user that can access the Group level but requires Organization-level permissions to take actions in Snyk. This is normally used as a starting point during onboarding with Snyk to understand functions tied to Group permissions and design a custom Group role for post-deployment use.
+* **Group Member** is a non-functional user role added to your environment as a transition from Group Viewer if you do not yet wish to create a custom role after onboarding with Snyk. This means the permissions granted can vary depending on your requirements, as discussed with your Snyk contacts. Select the named role from the list under Manage Members in the Snyk Web UI to check the permissions assigned to your Group Member role.
 
 {% hint style="info" %}
 **Feature availability**
