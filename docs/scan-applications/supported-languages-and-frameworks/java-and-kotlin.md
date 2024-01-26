@@ -63,16 +63,10 @@ Snyk recommends using the Snyk CLI to test Gradle Projects for the most accurate
 
 #### Supported versions of Maven and Gradle
 
-| Maven                                                                                                               | Gradle                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| CLI - Maven `3.*` For details, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support). | CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support). |
-| Git - Maven `3.*`                                                                                                   | Git - Gradle `4.*`, `5.*`, `6.*`, `7.*`                                                                                                                |
-
-{% hint style="info" %}
-Gradle 8 is not yet supported in the CLI.&#x20;
-
-If your app does not use Gradle 8 specific features, it is generally possible to install Gradle 7 instead before running Snyk CLI scans.
-{% endhint %}
+| Maven                                                                                                               | Gradle                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CLI - Maven `3.*` For details, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support). | CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*`, `8.*` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support). |
+| Git - Maven `3.*`                                                                                                   | Git - Gradle `4.*`, `5.*`, `6.*`, `7.*`, `8.*`                                                                                                                |
 
 #### Open source policy
 
@@ -243,7 +237,7 @@ By default, Snyk CLI scans only the current Project, the Project in the root of 
 Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
 {% endhint %}
 
-*   To scan a specific Project (for example, _myapp_):
+*   To scan a specific Project (for example, myapp):
 
     ```
     snyk test --sub-project=myapp
@@ -450,10 +444,10 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/ide-tools/).
+For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/ide-tools/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
+If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 
 ## Help
 
-:link: See [best practices](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/snyk-for-java-developers.md) and [FAQ about Java](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/faq-about-java.md).
+See [best practices](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/snyk-for-java-developers.md) and [FAQ about Java](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/faq-about-java.md).
