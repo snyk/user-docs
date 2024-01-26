@@ -747,7 +747,7 @@
   * [Manage user roles and permissions](snyk-admin/manage-permissions-and-roles/README.md)
     * [Default user roles](snyk-admin/manage-permissions-and-roles/default-user-roles.md)
     * [Manage user roles](snyk-admin/manage-permissions-and-roles/manage-user-roles.md)
-    * [Change the permissions (role) of a user](snyk-admin/manage-permissions-and-roles/change-the-permissions-role-of-a-user.md)
+    * [Change the role of a user](snyk-admin/manage-permissions-and-roles/change-the-role-of-a-user.md)
   * [Manage notifications](snyk-admin/manage-notifications.md)
   * [Manage settings](snyk-admin/manage-settings/README.md)
     * [Group general settings](snyk-admin/manage-settings/group-general-settings.md)

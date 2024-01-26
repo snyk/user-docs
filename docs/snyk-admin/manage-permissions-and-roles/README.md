@@ -10,7 +10,7 @@ See [Plans and pricing](https://snyk.io/plans/) for details.
 
 Permissions are granted to users according to their role.
 
-Snyk Enterprise plan customers can [manage user roles](manage-user-roles.md), [change the permissions (role) of a user](change-the-permissions-role-of-a-user.md) in the Snyk Web UI, or [update member roles using the Snyk API v1](../manage-users-and-permissions/update-member-roles-via-api.md).
+Snyk Enterprise plan customers can [manage user roles](manage-user-roles.md), [change the permissions (role) of a user](change-the-role-of-a-user.md) in the Snyk Web UI, or [update member roles using the Snyk API v1](../manage-users-and-permissions/update-member-roles-via-api.md).
 
 When you create or edit a role, as explained on the [Manage user roles](manage-user-roles.md) page, the Web UI displays a list of permissions you can associate with each role. For more information, see the page [Default user roles](default-user-roles.md).
 
