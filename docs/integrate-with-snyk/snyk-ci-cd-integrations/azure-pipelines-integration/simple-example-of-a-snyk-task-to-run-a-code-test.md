@@ -3,7 +3,7 @@
 The following is a simple example of a Snyk task to run a Snyk Code test.
 
 {% hint style="warning" %}
-[Publishing Snyk Code results](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md) is not currently supported.
+[Publishing Snyk Code results](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md) is not currently supported.
 {% endhint %}
 
 ```

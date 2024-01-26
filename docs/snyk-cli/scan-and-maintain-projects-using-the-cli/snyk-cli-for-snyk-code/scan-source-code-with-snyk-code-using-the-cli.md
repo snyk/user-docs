@@ -1,11 +1,11 @@
-# Scan source code with Snyk Code CLI
+# Scan source code with Snyk Code using the CLI
 
 Snyk Code enables you to test the source code of your repositories using the Snyk CLI.
 
 When testing your repository code via the CLI, you can:
 
-* [Test the repository directly from its root folder](testing-your-source-code-using-the-cli.md#testing-a-repository-from-its-root-folder).
-* [Test the repository from another location](testing-your-source-code-using-the-cli.md#testing-a-repository-from-a-different-location).
+* [Test the repository directly from its root folder](scan-source-code-with-snyk-code-using-the-cli.md#testing-a-repository-from-its-root-folder).
+* [Test the repository from another location](scan-source-code-with-snyk-code-using-the-cli.md#testing-a-repository-from-a-different-location).
 
 When you test a folder, all its sub-folders and files are also tested.
 
@@ -54,6 +54,6 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof
 
 <figure><img src="../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2 (1).png" alt="Example of Snyk Code CLI test results"><figcaption><p>Example of Snyk Code CLI test results</p></figcaption></figure>
 
-* To explore the test results, see [View Snyk Code CLI results](working-with-the-snyk-code-cli-results.md).
+* To explore the test results, see [View Snyk Code CLI results](view-snyk-code-cli-results.md).
 * To work with the test results, see [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html/).
 

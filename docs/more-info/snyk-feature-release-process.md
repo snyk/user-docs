@@ -18,7 +18,7 @@ Not all features follow all these stages, and timelines for each feature to move
 
 * [Customize PR templates](../scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/customize-pr-templates/)
 * [Configure PR Checks](../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
-* [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md)
+* [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
 * [Enterprise Analytics](../manage-risk/enterprise-analytics.md)
 * [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
 * [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)

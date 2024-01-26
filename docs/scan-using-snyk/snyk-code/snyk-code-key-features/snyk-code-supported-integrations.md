@@ -39,7 +39,7 @@ Snyk Code analysis can be applied to every pull request you create in your SCM b
 
 ## CLI and CI/CD integrations
 
-[Using the CLI ](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/)helps you find and fix security flaws in your code on your local machine or in your CI/CD.
+[Using the CLI ](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)helps you find and fix security flaws in your code on your local machine or in your CI/CD.
 
 ## APIs and extensibility
 

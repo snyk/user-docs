@@ -15,7 +15,7 @@ This document collects questions the support team receives frequenty and provide
 
 * To ignore a code vulnerability, import the Project into the Snyk UI, and use the ignore button.&#x20;
 * You cannot use the `.snyk` file to ignore issues in Code scans.
-* If you use the Early Access CLI option `code test --report`, issues ignored in the Web UI are suppressed in linked CLI scans. See [Ignore CLI results](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results.md#ignore-cli-results) when publishing Snyk Code results.
+* If you use the Early Access CLI option `code test --report`, issues ignored in the Web UI are suppressed in linked CLI scans. See [Ignore CLI results](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md#ignore-cli-results) when publishing Snyk Code results.
 * This is not currently shown in the results from the `snyk-to-html` tool for code scans with ignored issues; these will still show as issues.
 
 ### Q: How do I avoid scanning certain files for Open Source scans?
@@ -31,8 +31,8 @@ This document collects questions the support team receives frequenty and provide
 ### Q: How do I avoid scanning certain files for Code scans?
 
 * Use the `--exclude` option in a `.snyk` file to omit all scanning of certain files or folders. For details, see [Ignore files or folders using glob expression - Snyk Code and `unmanaged`only](../../../snyk-cli/commands/ignore.md#ignore-files-or-folders-using-glob-expression-snyk-code-and-unmanaged-only).
-* Use the `snyk ignore --file-path` command to omit scanning of certain files or folders in Snyk Code scan. For details, see [Exclude directories and files from Snyk Code CLI tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/exclude-directories-and-files-from-snyk-code-cli-tests.md).
-* When you import a repository to test using Snyk Code, use an `exclude:` statement in the `.snyk` file to omit certain directories and files from the import. For details see For details see [Exclude directories and files from Snyk Code CLI tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/exclude-directories-and-files-from-snyk-code-cli-tests.md).
+* Use the `snyk ignore --file-path` command to omit scanning of certain files or folders in Snyk Code scan. For details, see [Exclude directories and files from Snyk Code CLI tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md).
+* When you import a repository to test using Snyk Code, use an `exclude:` statement in the `.snyk` file to omit certain directories and files from the import. For details see For details see [Exclude directories and files from Snyk Code CLI tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md).
 * A `.snyk` file with file or folder exclusions and contained in the root directory of your repository or SCM will exclude those files and folders from being scanned when you import using an SCM.
 * The CLI `--exclude` option used with `snyk test` and `snyk monitor` does not work for Code scans.
 * The import window Exclude Folders option does not work for Code scans.
