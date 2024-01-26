@@ -20,7 +20,7 @@ You can add a new profile by following these steps:
 2. Click **Add profile**.
 3. Fill in the configuration fields and click **Done**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (8) (1).png" alt="AppRisk - Integration with multiple profiles"><figcaption><p>Snyk AppRisk - Integration with multiple profiles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (8) (1) (1).png" alt="AppRisk - Integration with multiple profiles"><figcaption><p>Snyk AppRisk - Integration with multiple profiles</p></figcaption></figure>
 
 ## Remove an integration
 
@@ -28,4 +28,4 @@ Select an existing integration and click the Delete icon to remove it from your 
 
 You cannot restore an integration that was already deleted. To add it again, you need to follow the steps from the [Using the Integration Hub](customize-an-integration.md#using-the-integration-hub) section.
 
-<figure><img src="../../../.gitbook/assets/image (2) (10).png" alt="AppRisk - Remove an integration"><figcaption><p>Snyk AppRisk - Remove an integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (10) (1).png" alt="AppRisk - Remove an integration"><figcaption><p>Snyk AppRisk - Remove an integration</p></figcaption></figure>

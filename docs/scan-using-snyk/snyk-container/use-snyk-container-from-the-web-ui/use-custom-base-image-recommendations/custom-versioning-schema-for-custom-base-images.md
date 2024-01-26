@@ -1,28 +1,14 @@
 # Custom Versioning Schema for custom base images
 
-The Custom Versioning Schema (CVS) is a method for Snyk to understand your company’s container image tag versioning scheme. It enables Snyk to give more accurate base image upgrade recommendations.
+The Custom Versioning Schema (CVS) is a way for Snyk to understand your company’s container image tag versioning schema. It enables Snyk to give more accurate base image upgrade recommendations.
 
 ## Prerequisites for Snyk CVS
 
 CVS is part of the Snyk Container Custom Base Images feature. For more information, see [Use Custom base image recommendations](./).
 
-{% hint style="info" %}
-The Custom Versioning Schema is available only through the [Snyk REST API.](https://apidocs.snyk.io/a?#get-/custom\_base\_images)
-{% endhint %}
-
-## What is a versioning schema?
-
-A versioning schema is a system of identifying and organizing different versions of a Project. It is used to track changes and updates to the Project over time and to help users identify which version they are using.
-
-A versioning schema typically consists of a series of numbers or labels that are incremented to reflect the progression of versions.
-
-For example, a versioning schema can use a series of numbers, such as "1.0", "1.1", "2.0", and so on, to indicate major and minor releases of a product.
-
-A consistent and well-defined versioning schema helps users and tools understand and track the development of a Project.
-
 ## When to use CVS
 
-If your container image's tags follow a versioning scheme other than [Semantic Versioning](https://semver.org/) (SemVer), it is highly recommended that you select the Custom Versioning Schema for your image repositories.
+If your container image's tags follow a versioning schema other than [Semantic Versioning](https://semver.org/) (SemVer), it is highly recommended that you select the Custom Versioning Schema for your image repositories.
 
 ## CVS expression guide
 

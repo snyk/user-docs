@@ -1,10 +1,10 @@
-# Ruby rules
+# PHP rules
 
-## Rule (1) Improper Input Validation
+## Rule (1) Arbitrary File Write via Archive Extraction (Zip Slip)
 
-**CWE** (20) Improper Input Validation
+**CWE** (22) Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
 
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
@@ -44,19 +44,13 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (7) Remote Code Execution via Endpoint
+## Rule (7) File Inclusion
 
-**CWE** (94) Improper Control of Generation of Code ('Code Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (8) Improper Neutralization of Directives in Statically Saved Code
-
-**CWE** (96) Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')
+**CWE** (98) Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (9) Information Exposure
+## Rule (8) Information Exposure
 
 **CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
 
@@ -64,7 +58,7 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (10) Use of Hardcoded Credentials
+## Rule (9) Use of Hardcoded Credentials
 
 **CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
 
@@ -72,61 +66,51 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (11) Session Manipulation
+## Rule (10) Inadequate Padding for Public Key Encryption
 
-**CWE** (285) Improper Authorization
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-## Rule (12) Improper Certificate Validation
-
-**CWE** (295) Improper Certificate Validation
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-## Rule (13) Selection of Less-Secure Algorithm During Negotiation (Force SSL)
-
-**CWE** (311, 757) Missing Encryption of Sensitive Data, Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+**CWE** (326) Inadequate Encryption Strength
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (14) Insecure Data Transmission
+## Rule (11) Inadequate Encryption Strength
 
-**CWE** (319) Cleartext Transmission of Sensitive Information
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (15) Use of Hardcoded Cryptographic Key
-
-**CWE** (321) Use of Hard-coded Cryptographic Key
+**CWE** (326) Inadequate Encryption Strength
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (16) Use of a Broken or Risky Cryptographic Algorithm
+## Rule (12) Use of a Broken or Risky Cryptographic Algorithm
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (17) Use of Insufficiently Random Values
+## Rule (13) Use of Insufficiently Random Values
 
 **CWE** (330) Use of Insufficiently Random Values
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (18) Regular Expression Denial of Service (ReDoS)
+## Rule (14) Origin Validation Error
+
+**CWE** (346, 942) Origin Validation Error, Permissive Cross-domain Policy with Untrusted Domains
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+## Rule (15) Cross-Site Request Forgery (CSRF)
+
+**CWE** (352) Cross-Site Request Forgery (CSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (16) Regular Expression Denial of Service (ReDoS)
 
 **CWE** (400) Uncontrolled Resource Consumption
 
-## Rule (19) Unsafe Reflection
-
-**CWE** (470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (20) Deserialization of Untrusted Data
+## Rule (17) Deserialization of Untrusted Data
 
 **CWE** (502) Deserialization of Untrusted Data
 
@@ -134,25 +118,25 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (21) No Weak Password Requirements
+## Rule (18) Privacy Leak
 
-**CWE** (521) Weak Password Requirements
+**CWE** (532) Insertion of Sensitive Information into Log File
 
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A09:2021 - Security Logging and Monitoring Failures
 
-## Rule (22) Hardcoded Secret
+## Rule (19) Hardcoded Secret
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (23) Open Redirect
+## Rule (20) Open Redirect
 
 **CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
-## Rule (24) XML External Entity (XXE) Injection
+## Rule (21) XML External Entity (XXE) Injection
 
 **CWE** (611) Improper Restriction of XML External Entity Reference
 
@@ -160,36 +144,50 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
-## Rule (25) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+## Rule (22) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (26) XPath Injection
+## Rule (23) Weak Password Recovery Mechanism for Forgotten Password
+
+**CWE** (640) Weak Password Recovery Mechanism for Forgotten Password
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
+
+## Rule (24) XPath Injection
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
-## Rule (27) Improperly Controlled Modification of Dynamically-Determined Object Attributes
+## Rule (25) Allocation of Resources Without Limits or Throttling
 
-**CWE** (915) Improperly Controlled Modification of Dynamically-Determined Object Attributes
+**CWE** (770) Allocation of Resources Without Limits or Throttling
 
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
-
-## Rule (28) Use of Password Hash With Insufficient Computational Effort
+## Rule (26) Use of Password Hash With Insufficient Computational Effort
 
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
-## Rule (29) Sensitive Cookie Without 'HttpOnly' Flag
+## Rule (27) Server-Side Request Forgery (SSRF)
+
+**CWE** (918) Server-Side Request Forgery (SSRF)
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A10:2021 - Server-Side Request Forgery (SSRF)
+
+**OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+## Rule (28) Sensitive Cookie Without 'HttpOnly' Flag
 
 **CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
-## Rule (30) Incorrect regular expression for validating values
+## Rule (29) Improper Restriction of Rendered UI Layers or Frames
 
-**CWE** (1286) Improper Validation of Syntactic Correctness of Input
+**CWE** (1021) Improper Restriction of Rendered UI Layers or Frames
+
+**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design

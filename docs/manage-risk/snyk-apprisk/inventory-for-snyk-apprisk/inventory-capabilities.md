@@ -36,14 +36,14 @@ The Controls column displays all of the Snyk products that were executed on a sp
 
 The Controls logos can have one of the following states:
 
-| Logo                                                                               | Description                                                                      |
-| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| <img src="../../../.gitbook/assets/image (3) (5).png" alt="" data-size="original"> | The Snyk product was executed.                                                   |
-| <img src="../../../.gitbook/assets/image (4) (7).png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
-| <img src="../../../.gitbook/assets/image (5) (3).png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
-| <img src="../../../.gitbook/assets/image (6) (6).png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
-| <img src="../../../.gitbook/assets/image (7) (4).png" alt="" data-size="original"> | The Snyk product was executed and failed with issues.                            |
-| <img src="../../../.gitbook/assets/image (8) (3).png" alt="" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
+| Logo                                                                                   | Description                                                                      |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| <img src="../../../.gitbook/assets/image (3) (5) (1).png" alt="" data-size="original"> | The Snyk product was executed.                                                   |
+| <img src="../../../.gitbook/assets/image (4) (7) (1).png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
+| <img src="../../../.gitbook/assets/image (5) (3) (1).png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
+| <img src="../../../.gitbook/assets/image (6) (6) (1).png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
+| <img src="../../../.gitbook/assets/image (7) (4).png" alt="" data-size="original">     | The Snyk product was executed and failed with issues.                            |
+| <img src="../../../.gitbook/assets/image (8) (3).png" alt="" data-size="original">     | The Snyk product was executed and failed due to not being covered by the policy. |
 
 Click a Controls logo to see **Last test** details. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
