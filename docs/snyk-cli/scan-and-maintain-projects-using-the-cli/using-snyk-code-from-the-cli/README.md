@@ -24,7 +24,7 @@ Before running Snyk Code tests with the CLI, you may want to do the following:
 
 * [Update your Snyk CLI version](../../install-or-update-the-snyk-cli/).
 * [Set the Organization for the CLI tests](set-the-snyk-organization-for-the-cli-tests.md).
-* [Exclude directories and files from the Snyk Code test](excluding-directories-and-files-from-the-snyk-code-cli-test.md).
+* [Exclude directories and files from the Snyk Code test](exclude-directories-and-files-from-snyk-code-cli-tests.md).
 
 After running a Snyk Code test, you can do the following:
 

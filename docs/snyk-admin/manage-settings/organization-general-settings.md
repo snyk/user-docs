@@ -23,7 +23,7 @@ In the Organization general settings, you can view and modify the following:
   * **Require reason for each ignore**
     * `Required (only applies to ignores in the Snyk app, not the CLI or API)`
     * `Not required`
-    * See [Configure Ignore settings](../../scan-using-snyk/find-and-manage-priority-issues/ignore-issues.md#configure-ignore-settings) in the Ignore issues documentation for more details.
+    * See [Configure Ignore settings](../../scan-using-snyk/find-and-manage-priority-issues/ignore-issues/#configure-ignore-settings) in the Ignore issues documentation for more details.
 * **Requesting access**: Enable to allow users without access to this Snyk Organization to request access. This includes external users. For more details, see [Enable the request for access setting](../manage-users-in-organizations-and-groups/requests-for-access-to-an-organization.md#enable-the-request-access-setting) in the documentation of requests for access to an Organization.
 * **Leave Organization**: Leave this Organization. You will lose access to the Projects and notifications for that Organization.
 * **Delete Organization**: Delete this Organization to remove it entirely from Snyk, including all of its Projects and their historical data. See [Delete an Organization](../manage-groups-and-organizations/manage-organizations.md#delete-an-organization) in the Manage Organizations documentation for details.

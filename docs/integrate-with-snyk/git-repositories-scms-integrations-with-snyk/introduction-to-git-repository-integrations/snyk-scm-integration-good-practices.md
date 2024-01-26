@@ -52,7 +52,7 @@ To disable notifications for all the users in an Org ahead of your import, desel
 
 ## Stage 2: Import Projects
 
-Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.
+Navigate to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.
 
 <figure><img src="../../../.gitbook/assets/image (2) (4) (1) (1) (1) (1) (1) (1) (1).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
 
