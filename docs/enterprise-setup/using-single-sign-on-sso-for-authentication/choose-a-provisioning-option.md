@@ -17,7 +17,7 @@ With the Open option, all users have automatic access to Snyk by using SSO to lo
 * The **Org** **administrator** role allows all new users to manage other Org admins and collaborators, view Group reports, and work with Organizations within the Group as well as perform non-administrative tasks in the Organization.
 * The **Org** **collaborator** role can perform non-administrative tasks in the Organization.
 
-Let Snyk Support know whether new users will have the **administrator** role or the **collaborator** role for the Organization. The selected role applies for all users. For details, see [Permissions per rol](../../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md#permissions-per-role)e.
+Let Snyk Support know whether new users will have the **administrator** role or the **collaborator** role for the Organization. The selected role applies for all users. For details, see [Permissions per rol](broken-reference)e.
 
 ## Invitation required
 

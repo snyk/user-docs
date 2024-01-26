@@ -27,7 +27,7 @@ Click the **Create role** button. Basic details about the role appear in the top
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 15.29.53.png" alt="Basic information about the new role"><figcaption><p>Basic information about the new role</p></figcaption></figure>
 
-The bottom section lists all the permissions available at the Organization level that you can use to define the role. For more information about these permissions, see [Permissions associated with each pre-defined role](permissions-associated-with-each-pre-defined-role.md).
+The bottom section lists all the permissions available at the Organization level that you can use to define the role. For more information about these permissions, see [Default user roles](default-user-roles.md).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 17.07.18.png" alt="Organization level permissions"><figcaption><p>Organization level permissions</p></figcaption></figure>
 
@@ -116,7 +116,7 @@ Snyk prevents users from assigning roles to others that have more privileges tha
 
 ### Assign roles to service accounts
 
-Users who have permission to create an Organization-level or Group-level service account can set up new service accounts for their Organization and assign a role. For details about permission to create service accounts, see the [service account information on the Manage permissions page](permissions-associated-with-each-pre-defined-role.md#service-account-management-permissions).
+Users who have permission to create an Organization-level or Group-level service account can set up new service accounts for their Organization and assign a role. For details about permission to create service accounts, see the [service account information on the Manage permissions page](broken-reference).
 
 Select an Organization and navigate to **Settings** > **Service Accounts**. Provide a name, choose a role from the dropdown, and click **Create**.
 
