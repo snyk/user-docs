@@ -44,7 +44,7 @@ To enrich the priority score of vulnerabilities it detects, Snyk uses packages e
 
 To see which packages have been executed at runtime, you must wait for the next daily scan or manually import the workload into Snyk.
 
-After enabling the Sysdig integration, allow four hours before manually importing the workload. This is because of the following timing considerations related to the collection of executed packages:
+After enabling the Sysdig integration, allow 30 minutes before manually importing the workload. This is because of the following timing considerations related to the collection of executed packages:
 
 * The Snyk Controller collects data about executed packages once every four hours.
 * Snyk re-scans imported Kubernetes Projects for new vulnerabilities daily.
