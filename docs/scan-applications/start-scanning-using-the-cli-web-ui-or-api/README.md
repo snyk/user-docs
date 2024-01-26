@@ -65,7 +65,7 @@ After you finish running a Snyk CLI scan, the results are displayed in the termi
 
 * [Review the Snyk Open Source CLI results](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/review-the-snyk-open-source-cli-results.md)
 * [Working with the Snyk Code CLI results](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md)
-* [Understand Snyk Container CLI results](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/understanding-snyk-container-cli-results.md)
+* [Understand Snyk Container CLI results](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/understand-snyk-container-cli-results.md)
 
 ## Scan using the Web UI
 

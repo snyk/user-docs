@@ -2,7 +2,7 @@
 
 The Snyk CLI provides support for fixing vulnerabilities found by using the `snyk test` command. For information about fixes in the Web UI, see [Fix your vulnerabilities](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). For general information about patches, see [Snyk patches to fix vulnerabilities](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md).
 
-If you are using `snyk container test`, see [Understanding Snyk Container CLI results](snyk-cli-for-snyk-container/understanding-snyk-container-cli-results.md) for information about resolving vulnerabilities found in a scan. If you are using `snyk code test`, see [Understanding the Snyk Code CLI results](broken-reference). If you are using `snyk iac test`, see [Understanding the IaC CLI test results](snyk-cli-for-iac/understand-the-iac-cli-test-results/).
+If you are using `snyk container test`, see [Understanding Snyk Container CLI results](snyk-cli-for-snyk-container/understand-snyk-container-cli-results.md) for information about resolving vulnerabilities found in a scan. If you are using `snyk code test`, see [Understanding the Snyk Code CLI results](broken-reference). If you are using `snyk iac test`, see [Understanding the IaC CLI test results](snyk-cli-for-iac/understand-the-iac-cli-test-results/).
 
 ## Upgrade and patch results from the CLI
 

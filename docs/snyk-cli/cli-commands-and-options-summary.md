@@ -110,7 +110,7 @@ Generate an SBOM for a local software project in an ecosystem supported by Snyk.
 
 ### [`snyk fix`](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix)
 
-Apply the recommended updates for supported ecosystems automatically. For more information, see [Automatic fixing with `snyk fix`](scan-and-maintain-projects-using-the-cli/automatic-remediation-with-snyk-fix.md).
+Apply the recommended updates for supported ecosystems automatically. For more information, see [Automatic fixing with `snyk fix`](scan-and-maintain-projects-using-the-cli/automatic-fixing-with-snyk-fix.md).
 
 ### [`snyk apps`](https://docs.snyk.io/snyk-cli/create-a-snyk-app-using-the-snyk-cli)
 
