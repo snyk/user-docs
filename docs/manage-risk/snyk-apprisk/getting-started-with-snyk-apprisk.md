@@ -19,12 +19,12 @@ The first import, synchronization, can take up to 24 hours to complete.
 
 ## Permissions
 
-Group level roles with the following permissions can access Snyk AppRisk:
+You can access Snyk AppRisk with one of the Group level roles permissions described below. To access the permissions, navigate to **View groups**, then select the **Snyk AppRisk permissions** option.
 
-1. View groups
-2. Access Snyk AppRisk
+1. View AppRisk - Grants you a read-only access to AppRisk.
+2. Edit AppRisk - Grants you edit access to AppRisk, for example, edit policies, edit asset classification, and add the integration.
 
-Currently, only the Group Administrator role (a [predefined role](https://docs.snyk.io/snyk-admin/manage-permissions-and-roles/manage-member-roles)) has this permission available by default.
+Currently,  the Group Administrator role (a [predefined role](https://docs.snyk.io/snyk-admin/manage-permissions-and-roles/manage-member-roles)) has edit permission available by default, and the Group Viewer role has view permission available by default.
 
 ## Login and Authentication
 
