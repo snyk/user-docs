@@ -7,10 +7,8 @@ description: >-
 # Snyk Bitbucket Cloud App integration
 
 {% hint style="info" %}
-the **Feature availability**\
+**Feature availability**\
 This feature is available for all plans. See [pricing plans](https://snyk.io/plans/) for more details.
-
-Snyk offers two Bitbucket Cloud integrations: the Personal Access Token (PAT) legacy integration and the new App integration. The App integration is available only on multi-tenant US. If you are a user of multi-tenant EU/AU or single tenant, use the PAT integration.
 {% endhint %}
 
 The Snyk Bitbucket Cloud App integration lets you connect your Snyk Organization to a Bitbucket Cloud Workspace and get all Snyk's core SCM integration features:
