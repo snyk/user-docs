@@ -34,7 +34,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
   --set sysdig.enabled=true
 ```
 
-Your Snyk Controller now collects data from Sysdig every four hours.&#x20;
+Your Snyk Controller now collects data from Sysdig every 30 minutes.&#x20;
 
 ## Enrich Snyk vulnerability data and priority score
 
@@ -46,7 +46,7 @@ To see which packages have been executed at runtime, you must wait for the next 
 
 After enabling the Sysdig integration, allow 30 minutes before manually importing the workload. This is because of the following timing considerations related to the collection of executed packages:
 
-* The Snyk Controller collects data about executed packages once every four hours.
+* The Snyk Controller collects data about executed packages once every 30 minutes.
 * Snyk re-scans imported Kubernetes Projects for new vulnerabilities daily.
 
 ## Application support
