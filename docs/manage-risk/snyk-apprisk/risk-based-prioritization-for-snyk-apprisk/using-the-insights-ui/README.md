@@ -2,7 +2,7 @@
 
 The following pages provide information and instructions to help with using Insights.
 
-* [Filtering your issues](broken-reference)
-* [Understanding your issues](broken-reference)
-* [Evidence graph](broken-reference)
-* [Exporting and customizing Insights data](broken-reference)
+* [filter-your-issues.md](filter-your-issues.md "mention")
+* [understand-your-issues.md](understand-your-issues.md "mention")
+* [evidence-graph.md](evidence-graph.md "mention")
+* [export-and-customize-views.md](export-and-customize-views.md "mention")
