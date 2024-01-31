@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-This feature is in [Early Access](../more-info/snyk-feature-release-process.md), for [Enterprise plan customers](https://snyk.io/plans/) only.
+This feature is in [Early Access](../getting-started/snyk-release-process.md), for [Enterprise plan customers](https://snyk.io/plans/) only.
 {% endhint %}
 
 Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) to asynchronously test a software bill of materials (SBOM) document. You can use these endpoints to learn more about the vulnerabilities impacting your SBOM and its packages.

@@ -1,7 +1,7 @@
 # Group projects by branch or version for monitoring
 
 {% hint style="warning" %}
-This feature is currently in [Early Access](../../more-info/snyk-feature-release-process.md). There are areas where it is not fully supported. Currently [Snyk Open Source](../../scan-using-snyk/snyk-open-source/) is supported.
+This feature is currently in [Early Access](../../getting-started/snyk-release-process.md). There are areas where it is not fully supported. Currently [Snyk Open Source](../../scan-using-snyk/snyk-open-source/) is supported.
 {% endhint %}
 
 Your project may have multiple states which you want to monitor separately, for example, branches, releases, or deployments. You can use the `--target-reference` option to separate projects into these specific groupings.

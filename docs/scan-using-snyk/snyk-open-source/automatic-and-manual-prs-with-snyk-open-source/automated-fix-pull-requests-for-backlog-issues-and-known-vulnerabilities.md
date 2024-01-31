@@ -4,7 +4,7 @@
 * Snyk supports backlog issues for GitHub, GitHub Enterprise, and Bitbucket Cloud integrations.
 * The Automatic fix PRs feature is supported for the following integrations: BitBucket Server, BitBucket Cloud, BitBucket Connect, GitHub, GitHub Enterprise, GitLab, and Azure.
 * The Autofix PR settings may vary depending on the integration.
-* The fix strategy feature for getting dependency-oriented fixes is in [beta](../../../more-info/snyk-feature-release-process.md). Snyk wants to hear your feedback.
+* The fix strategy feature for getting dependency-oriented fixes is in [beta](../../../getting-started/snyk-release-process.md). Snyk wants to hear your feedback.
 {% endhint %}
 
 The following rules are applied to automatic PR creation for vulnerabilities:

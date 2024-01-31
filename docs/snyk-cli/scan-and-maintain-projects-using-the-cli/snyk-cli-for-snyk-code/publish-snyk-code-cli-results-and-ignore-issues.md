@@ -24,7 +24,7 @@ See the CLI help for more information about the `snyk code test` command, includ
 
 {% hint style="info" %}
 **Feature availability**\
-Publishing and ignoring CLI results is in [Closed Beta](../../../more-info/snyk-feature-release-process.md#closed-beta) and available only by invitation from Snyk.
+Publishing and ignoring CLI results is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available only by invitation from Snyk.
 
 The minimum supported CLI version is v1.1194.0.
 {% endhint %}
@@ -85,7 +85,7 @@ This error indicates that the contents of the scanned Project exceed the 6MB lim
 
 {% hint style="info" %}
 **Feature availability**\
-Publishing and ignoring CLI issues in SCM Projects is in [Closed Beta](../../../more-info/snyk-feature-release-process.md#closed-beta) and available only by invitation from Snyk.
+Publishing and ignoring CLI issues in SCM Projects is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available only by invitation from Snyk.
 
 The minimum supported CLI version is 1.1194.0.
 {% endhint %}

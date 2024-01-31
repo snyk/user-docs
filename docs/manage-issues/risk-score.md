@@ -1,7 +1,7 @@
 # Risk Score
 
 {% hint style="info" %}
-Risk Score is currently in [Early Access](../more-info/snyk-feature-release-process.md) for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score.
+Risk Score is currently in [Early Access](../getting-started/snyk-release-process.md) for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score.
 {% endhint %}
 
 The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for each security issue. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
