@@ -1,6 +1,6 @@
 # Snyk Projects
 
-Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters that are visible (checkboxes appear on the left when you click the **Filters** button) depend on the **Group by** option you choose from the pulldown on the right.
+Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters you can add depend on the **Group by** option you choose from the pulldown on the right. To filter by Origin or source, use an Integrations filter.
 
 {% hint style="info" %}
 After filters have been applied to the Project listing page, you can bookmark the URL and share it with other users in the Organization. This allows all users to see the same view of the page.
