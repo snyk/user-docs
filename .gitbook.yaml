@@ -16,7 +16,6 @@ redirects:
   products/snyk-infrastructure-as-code/jira-integration/understanding-configuration-scan-issues: products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues.md
   products/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries: products/snyk-container/integrate-self-hosted-container-registries.md
   snyk-infrastructure-as-code/scan-terraform-files/detecting-terraform-configuration-files-using-a-broker: features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-a-broker.md
-  snyk-cli/commands/iac: snyk-cli/commands/README.md
   snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries: products/snyk-container/integrate-self-hosted-container-registries.md
   features/snyk-cli/grouping-projects-by-branch-or-version: snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version.md
   #getting-started/getting-started-with-snyk-dashboard: snyk-web-ui/getting-started-with-the-snyk-web-ui.md
@@ -71,6 +70,5 @@ redirects:
   products/snyk-code/security-rules-used-by-snyk-code: /scan-using-snyk/snyk-code/snyk-code-security-rules.md 
   scan-using-snyk/snyk-code/security-rules-used-by-snyk-code: /scan-using-snyk/snyk-code/snyk-code-security-rules.md
   snyk-open-source/language-and-package-manager-support/snyk-for-golang: /scan-using-snyk/supported-languages-and-frameworks/go.md
-  testing: scan-using-snyk/scan-infrastructure/iac+-code-to-cloud-capabilities/fix-cloud-issues-in-iac.md
   manage-risk/insights: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/README.md   
   manage-issues/insights: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/README.md 
