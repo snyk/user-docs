@@ -92,9 +92,9 @@ Snyk offers capabilities to address issues both reactively and proactively:
 
 ## Deployment and rollout recommendations
 
-Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow. For more information, see G[etting started with Snyk Free and Team plans](../../getting-started/getting-started-with-snyk-free-team-plan.md) and [Preparing for implementation with Free and Team plans](../../getting-started/preparing-for-implementation-free-and-team-plans.md).
+Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow. For more information, see G[etting started with Snyk Free and Team plans](../../implement-snyk/walkthrough-initiate-a-scan-locally.md) and [Preparing for implementation with Free and Team plans](broken-reference).
 
-With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For details, see the [Enterprise implementation guide](../../enterprise-setup/enterprise-implementation-guide/).
+With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For details, see the [Enterprise implementation guide](../../implement-snyk/enterprise-implementation-guide/).
 
 1. Typically, large organizations start with daily monitoring of applications using Git integration, initially turning on PR checks for a few key applications **at most**. You may use CI/CD scans on key applications for some ecosystems to get a granular view of the exact versions being deployed at that point in time.
 2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.

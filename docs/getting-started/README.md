@@ -18,11 +18,11 @@ If you are on an [Enterprise plan](../more-info/snyk-plans-and-pricing.md), see 
 
 ## Tutorials
 
-* [Getting started with Snyk: Free/Team plan](getting-started-with-snyk-free-team-plan.md)
-* [Preparing for implementation: Free/Team plan](preparing-for-implementation-free-and-team-plans.md)
-* [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/)
+* [Getting started with Snyk: Free/Team plan](../implement-snyk/walkthrough-initiate-a-scan-locally.md)
+* [Preparing for implementation: Free/Team plan](broken-reference)
+* [Walkthrough: Code Repository Projects](../implement-snyk/walkthrough-code-repository-projects/)
 
 See also:
 
-* [Snyk Learn](https://learn.snyk.io/catalog/product-training/https://learn.dev.snyk.io/catalog/product-training/):  introductory training.
+* [Snyk Learn](https://learn.snyk.io/catalog/product-training/https://learn.dev.snyk.io/catalog/product-training/):  introductory training.&#x20;
 

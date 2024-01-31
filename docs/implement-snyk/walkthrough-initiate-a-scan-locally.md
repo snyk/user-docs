@@ -1,4 +1,4 @@
-# Getting started with Snyk: Free and Team plans
+# Walkthrough: Initiate a scan locally
 
 These pages explain how you can try a few scans to see the results.
 
@@ -28,7 +28,7 @@ The Snyk free plan provides limited free tests per month. For unlimited tests, c
 
 ### Create or log into your account
 
-You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](quickstart/create-or-log-in-to-a-snyk-account.md) to try out a Project. If your Organization is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For more information, see [Create or log in to a Snyk account](quickstart/create-or-log-in-to-a-snyk-account.md).
+You need a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md) to try out a Project. If your Organization is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For more information, see [Create or log in to a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
 
 ### Test a Project in your local development environment
 
@@ -78,6 +78,6 @@ A scan with [**Snyk iac test**](../snyk-cli/scan-and-maintain-projects-using-the
 
 ## What’s next?
 
-* When you are ready to start scanning more applications, see [Preparing for Implementation:  Free and Team plans](preparing-for-implementation-free-and-team-plans.md).
+* When you are ready to start scanning more applications, see [Preparing for Implementation:  Free and Team plans](broken-reference).
 * To get specific recommendations for your tech stack, see the pages specific to your language.
-* If you decide you want to expand the use of Snyk throughout your business and involve more teams in Snyk, read the [Enterprise implementation guide](../enterprise-setup/enterprise-implementation-guide/).
+* If you decide you want to expand the use of Snyk throughout your business and involve more teams in Snyk, read the [Enterprise implementation guide](enterprise-implementation-guide/).

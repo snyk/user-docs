@@ -26,12 +26,12 @@ Developers can test, fix, and monitor using:
 When developers merge their code changes into their Git repository, Snyk can:
 
 * **Run PR Checks**: scan for issues when a pull request (PR) is merged. By default, PR Checks act to ensure that the attack surface of the application never increases, only failing when a PR adds a dependency with issues.
-* **Run daily scans**: have Snyk, by default, run daily scans if you imported Snyk Projects from your repo, to find any new problems in your current libraries quickly, such as critical zero-day vulnerabilities. This scanning occurs for all imported Projects, whether or not your teams are currently working on them. See [Walkthrough: code repository Projects](../../../getting-started/walkthrough-code-repository-projects/).
+* **Run daily scans**: have Snyk, by default, run daily scans if you imported Snyk Projects from your repo, to find any new problems in your current libraries quickly, such as critical zero-day vulnerabilities. This scanning occurs for all imported Projects, whether or not your teams are currently working on them. See [Walkthrough: code repository Projects](../../../implement-snyk/walkthrough-code-repository-projects/).
 * **Create Jira tickets**: manage work on new issues discovered, to assign this work to developers in your team, and track progress on these issues. See the [Jira integration](../../notification-and-ticketing-systems-integrations/jira-integration.md) documentation.
 
 ## Automatically fix
 
-Snyk can also suggest fixes by creating a PR to address a vulnerability, address older dependencies, and help address backlogged vulnerabilities over time. See [Fix your first vulnerability](../../../getting-started/walkthrough-code-repository-projects/fix-your-first-vulnerability.md).
+Snyk can also suggest fixes by creating a PR to address a vulnerability, address older dependencies, and help address backlogged vulnerabilities over time. See [Fix your first vulnerability](../../../implement-snyk/walkthrough-code-repository-projects/fix-your-first-vulnerability.md).
 
 ## During build
 

@@ -58,7 +58,7 @@ The settings for each Snyk Project are inherited from the Snyk Organization inte
    4. **Automatic dependency upgrade pull requests**
 
 {% hint style="info" %}
-Snyk recommends defining standards for these options as well as notification defaults before you add more than a few Projects. When your teams are ready for a broader implementation, Snyk recommends defining standards for these options according to your security maturity. For more information, see [Configure integrations](enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-integrations.md).
+Snyk recommends defining standards for these options as well as notification defaults before you add more than a few Projects. When your teams are ready for a broader implementation, Snyk recommends defining standards for these options according to your security maturity. For more information, see [Configure integrations](../implement-snyk/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-integrations.md).
 {% endhint %}
 
 ## **Review the Snyk scan result**
@@ -111,7 +111,7 @@ A scan with [**Snyk iac test**](../snyk-cli/scan-and-maintain-projects-using-the
 
 ## Next steps in implementing the Snyk Enterprise plan
 
-* If you want developers to try Snyk in their local environment using the IDE or CLI, review the [Getting started guide for individuals and small teams](../getting-started/getting-started-with-snyk-free-team-plan.md).
+* If you want developers to try Snyk in their local environment using the IDE or CLI, review the [Getting started guide for individuals and small teams](../implement-snyk/walkthrough-initiate-a-scan-locally.md).
 * To get specific recommendations for your tech stack, visit the guide specific to your language.
-* When you are ready to plan a Snyk rollout to more teams, review the [Enterprise implementation guide](enterprise-implementation-guide/) for more information.
+* When you are ready to plan a Snyk rollout to more teams, review the [Enterprise implementation guide](../implement-snyk/enterprise-implementation-guide/) for more information.
 * See the [Developer launch package](https://assets.ctfassets.net/4un77bcsnjzw/2YfaqJNMsogGNJM6BBQz4p/8f5ca77b9c40a1bbe14cc9fb0aa05462/Snyk-developer-launch-package.pdf) for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.
