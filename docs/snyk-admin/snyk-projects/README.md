@@ -36,7 +36,7 @@ Use **Sort by** (pull down on the far right) to sort the **Projects** listing by
 
 <figure><img src="../../.gitbook/assets/image (2) (5).png" alt="Sorting attributes available when grouping by Target"><figcaption><p>Sorting attributes available when grouping by Target</p></figcaption></figure>
 
-## Origin
+## Origin or source
 
 The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of Targets (see preceding section) and appear in the **Projects** listing as an icon next to the Target name.
 
