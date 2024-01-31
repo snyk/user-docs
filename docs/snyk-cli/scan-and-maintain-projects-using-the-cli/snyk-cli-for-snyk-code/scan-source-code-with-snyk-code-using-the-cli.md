@@ -55,5 +55,5 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof
 <figure><img src="../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2 (1).png" alt="Example of Snyk Code CLI test results"><figcaption><p>Example of Snyk Code CLI test results</p></figcaption></figure>
 
 * To explore the test results, see [View Snyk Code CLI results](view-snyk-code-cli-results.md).
-* To work with the test results, see [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html/).
+* To work with the test results, see [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html.md).
 

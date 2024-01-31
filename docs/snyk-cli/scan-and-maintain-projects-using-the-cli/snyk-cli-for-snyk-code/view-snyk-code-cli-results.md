@@ -7,7 +7,7 @@ The Snyk CLI enables you to perform the following actions on the results of the 
 * [Output test results](view-snyk-code-cli-results.md#output-test-results): Output the `snyk code test` results to a JSON or SARIF format in the terminal instead of displaying the results in the standard CLI format.
 * [Export test results](view-snyk-code-cli-results.md#export-test-results): Export the CLI Code results to a JSON or SARIF format file.
 
-You can also [display the CLI results in HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html/).
+You can also [display the CLI results in HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html.md).
 
 ## Analyze Snyk Code CLI results
 

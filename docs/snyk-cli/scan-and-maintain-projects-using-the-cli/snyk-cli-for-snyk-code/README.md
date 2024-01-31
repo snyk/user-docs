@@ -32,4 +32,4 @@ After running a Snyk Code test, you can do the following:
 * [Filter the CLI results, and display only issues with a specific severity level and higher](broken-reference).
 * [Output the CLI results to a JSON or SARIF format in the terminal](broken-reference).
 * [Export the CLI results to a JSON or SARIF format file](broken-reference).
-* [Display the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html/).
+* [Display the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html.md).
