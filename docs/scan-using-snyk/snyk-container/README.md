@@ -18,4 +18,4 @@ Snyk Container provides tools and integrations to quickly find and fix vulnerabi
 
 Snyk Container provides a range of integrations to import Projects into Snyk. These integrations support different workflows.
 
-For details about available integrations, see [Snyk Container - integrations](../../integrate-with-snyk/snyk-container-integrations/).
+For details on available integrations, see [Snyk Container - integrations](../../integrate-with-snyk/snyk-container-integrations/).
