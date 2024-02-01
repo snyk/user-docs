@@ -7,6 +7,7 @@ Reports available include:
 * [Vulnerabilities Detail report](available-snyk-reports.md#vulnerabilities-detail-report)
 * [OWASP TOP 10 report](available-snyk-reports.md#owasp-top-10-report)
 * [CWE TOP 25 report](available-snyk-reports.md#cwe-top-25-report)
+* [CWE TOP 10 KEV report](available-snyk-reports.md#cwe-top-10-kev-report)
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
 
 Select **Change Report** to change the report displayed:
@@ -98,6 +99,14 @@ The [CWE Top 25](https://cwe.mitre.org/top25/) Most Dangerous Software Weaknesse
 <figure><img src="../../.gitbook/assets/image (353).png" alt="CWE Top 10 report"><figcaption><p>CWE Top 10 report</p></figcaption></figure>
 
 The report is based on the latest version released in 2023 by Mitre. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
+
+## CWE Top 10 KEV report&#x20;
+
+The [CWE Top 10 KEV Weaknesses](https://cwe.mitre.org/top25/archive/2023/2023\_kev\_list.html) list identifies the top ten CWEs in the Cybersecurity and Infrastructure Security Agency’s (CISA) [Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (KEV) Catalog, a database of security flaws in software applications and weaknesses that have been exposed and leveraged by attackers.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption><p>CWE TOP 10 KEV</p></figcaption></figure>
+
+The report is based on the version released in 2023 by Mitre. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
 
 ## Cloud Compliance Issues report
 
