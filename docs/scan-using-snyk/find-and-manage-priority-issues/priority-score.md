@@ -20,7 +20,7 @@ There are no settings related to the Priority Score; they are read-only and cann
 
 </div>
 
-## View Priority Score in Projects
+## View Priority Score for an issue
 
 Priority Scores are visible for each Issue card, with all issues sorted by score, to show you the most pressing issues first.
 
@@ -28,9 +28,9 @@ You can filter issues by Priority Score range in the left sidebar.
 
 <figure><img src="../../.gitbook/assets/screen_shot_2021-07-14_at_1.41.24_pm.png" alt="Filter issues"><figcaption><p>Filter issues </p></figcaption></figure>
 
-## View Priority Score in Reports
+## View issues by priority score
 
-The **Issues** tab in the reports includes the Priority Score as its own sortable column. By default, the table is sorted by the score to show you the most pressing issues first.
+The **Issues** tab on the issue cards page includes the Priority Score as its own sortable column. By default, the issues are sorted by the score to show you the most pressing issues first.
 
 Issues can also be filtered by the score.
 
