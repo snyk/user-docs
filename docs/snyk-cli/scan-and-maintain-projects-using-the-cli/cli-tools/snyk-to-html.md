@@ -7,7 +7,7 @@ You can use `snyk-to-html` (the Snyk JSON to HTML Mapper) to:
 * Create a readable build artifact as part of the output of a scan
 * Create an HTML report of the full context of a vulnerability that you can view in a browser
 
-This page explains how to [install `snyk-to-html`](snyk-to-html.md#install-snyk-to-html), [run the `snyk-to-html` command](snyk-to-html.md#run-the-snyk-to-html-command) to export the test results to a JSON or SARIF file, and [view the test results in a browser](snyk-to-html.md#view-test-results-in-html-format).
+This page explains how to [install `snyk-to-html`](snyk-to-html.md#install-snyk-to-html), [use the `snyk-to-html` tool](snyk-to-html.md#use-the-snyk-to-html-tool) to export the test results to a JSON or SARIF file, and [view the test results in a browser](snyk-to-html.md#view-test-results-in-html-format).
 
 ## Install `snyk-to-html`
 
@@ -27,7 +27,7 @@ npm run build
 node ./dist/index.js
 ```
 
-## Run the `snyk-to-html` command
+## Use the `snyk-to-html` tool
 
 You can run `snyk-to-html` as part of a `snyk test` command to create a readable build artifact as part of the output of a test.
 
