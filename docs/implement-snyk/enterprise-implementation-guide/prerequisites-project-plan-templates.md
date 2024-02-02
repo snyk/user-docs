@@ -9,7 +9,7 @@ The suggested timelines are typically for mid to large-sized enterprises, which 
 
 You can download or import these plans:
 
-* .csv (tab-delimited) - [Download](https://assets.ctfassets.net/4un77bcsnjzw/4ZqTPC5c3dOTdMpV57M2iv/1693e20fc574f0a242aabbf65d6c8cab/Enterprise\_Implementation\_Project\_Plan.csv)
+* Comma Separated Values (.csv) - [Download](https://assets.ctfassets.net/4un77bcsnjzw/4ZqTPC5c3dOTdMpV57M2iv/1693e20fc574f0a242aabbf65d6c8cab/Enterprise\_Implementation\_Project\_Plan.csv)
 * .csv formatted for Asana - [Download](https://assets.ctfassets.net/4un77bcsnjzw/4YKntIk3LCgQR1md1WIBjj/070d180fb166cf5d456482810dd78bac/Enterprise\_Implementation\_Project\_Plan\_-\_Asana.csv)
 * Microsoft Excel - [Download](https://assets.ctfassets.net/4un77bcsnjzw/xjJcNkrxgHohUVrHfQwUw/30d142f0712693469360b19491abe58c/Enterprise\_Implementation\_Project\_Plan.xlsx)
 
