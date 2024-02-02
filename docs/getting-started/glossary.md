@@ -6,6 +6,10 @@
 
 See [Snyk Advisor](https://snyk.io/advisor/).
 
+### **Asset (Snyk AppRisk)**
+
+A Snyk AppRisk asset is an identifiable entity that is part of an application, and relevant for security and developers.
+
 ## B
 
 ### Base image
@@ -25,6 +29,10 @@ A system that takes the source code and builds the deployable application (such 
 ### CI/CD
 
 Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../integrate-with-snyk/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
+
+### **Class (Snyk AppRisk)**
+
+A way to assign business context to assets and categorize an asset based on the business criticality. Assets can be assigned Classes A, B, C, or D, where Class A (assets that are business critical, deal with sensitive data, are subject to compliance, and so on) is the most important, and Class D (test apps, sandbox environments, and so on) the least important. Assets are assigned Class C by default. A class can be used in policies as well as defined in a policy.
 
 ### CLI
 
@@ -50,6 +58,14 @@ One or more files that, when instantiated by a container engine or runtime, prov
 ### Container registry
 
 A server that provides a mechanism to store and retrieve container images.
+
+### **Controls (Snyk AppRisk)**&#x20;
+
+The security controls associated with the asset. Navigate to the Snyk AppRisk Controls section to see all available statuses for security controls.
+
+### **Coverage (Snyk AppRisk)**
+
+An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program. A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
 
 ### CVE
 
@@ -207,6 +223,10 @@ A fix type: define and "pin" a specific version of an indirect dependency, to av
 ### Policy
 
 See [license policy](glossary.md#license-policy), [security policy](glossary.md#security-policy), and [`.snyk` policy](glossary.md#.snyk-policy).
+
+### **Policy (Snyk AppRisk)**
+
+&#x20;A way to automate actions in certain conditions, like classifying and tagging assets with business context. You can also use a policy to configure actions like sending a message or setting the coverage gap control using a Policy builder UI.
 
 ### PR
 
@@ -366,6 +386,10 @@ A method of debugging by examining source code before a program is run. See also
 ### Target
 
 Representation of an external resource Snyk has scanned. All [Snyk Projects](glossary.md#project) are associated with a parent Target. One Target may relate to many Projects. The structure of the Target depends on the [origin](glossary.md#origin-or-source).
+
+### **Tags (Snyk AppRisk)**
+
+A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags and you can use them for creating policies.
 
 ## U
 
