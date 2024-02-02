@@ -91,7 +91,7 @@ Learn how to use Snyk to find and fix issues in different ways. These [short cou
 
 ### Video library catalog
 
-In addition to the courses available for enrolment, the [video library](https://learn.dev.snyk.io/catalog/product-training/?type=product-training) offers individual videos that provide quick demonstrations or refreshers on key Snyk tasks. Each video includes links to related courses.
+In addition to the courses available for enrolment, the [video library](https://learn.snyk.io/catalog/product-training/?type=product-training) offers individual videos that provide quick demonstrations or refreshers on key Snyk tasks. Each video includes links to related courses.
 
 ### Additional resources
 
