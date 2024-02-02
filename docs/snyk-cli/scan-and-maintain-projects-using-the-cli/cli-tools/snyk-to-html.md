@@ -1,13 +1,13 @@
 # snyk-to-html
 
-The CLI provides a direct or automated way to fail the build and, by default, provides only summary information unless you use the `--json` or `--sarif` format to direct the output to a file. These files include the issues discovered. The formats are not human-readable.
+The CLI provides a direct or automated way to fail the build and, by default, provides only summary information unless you use the `--json` or `--sarif` format. You can direct this output to a file; these files include the issues discovered. The formats are not human-readable.
 
 You can use `snyk-to-html` (the Snyk JSON to HTML Mapper) to:
 
 * Create a readable build artifact as part of the output of a scan
 * Create an HTML report of the full context of a vulnerability that you can view in a browser
 
-This page explains how to [install `snyk-to-html`](snyk-to-html.md#install-snyk-to-html), [use the `snyk-to-html` tool](snyk-to-html.md#use-the-snyk-to-html-tool) to export the test results to a JSON or SARIF file, and [view the test results in a browser](snyk-to-html.md#view-test-results-in-html-format).
+This page explains how to [install `snyk-to-html`](snyk-to-html.md#install-snyk-to-html), [use the `snyk-to-html` tool](snyk-to-html.md#use-the-snyk-to-html-tool) to export the test results in JSON or SARIF format to an HTML file, and [view the test results in a browser](snyk-to-html.md#view-test-results-in-html-format).
 
 ## Install `snyk-to-html`
 
@@ -31,7 +31,7 @@ node ./dist/index.js
 
 You can run `snyk-to-html` as part of a `snyk test` command to create a readable build artifact as part of the output of a test.
 
-You can also run a `snyk test` command with the option to export the results to a JSON file and then convert the JSON  file to HTML using  `snyk-to-html`. You can also export Snyk Code results to a SARIF file and convert that file to HTML.
+You can also run a `snyk test` command with the option to export the results to a JSON file and then convert the JSON  file to HTML using  `snyk-to-html`. You can export Snyk Code results to a SARIF file and convert that file to HTML.
 
 When you run the `snyk-to-html` command, you can customize it with the following command options:
 
@@ -50,11 +50,9 @@ For more information, see [Use `snyk-to-html` command options](snyk-to-html.md#u
 Follow these steps to create a build artifact by running `snyk-to-html` as part of a `snyk test` command. This streams the results directly to `snyk-to-html`.
 
 1. Change the directory to the root folder of the repository you want to test.
-2. To test the repository, export the results to a JSON file, and convert that file to an HTML file called `results` appended with output of the `snyk test` you ran.
+2. To test the repository, export the results to a JSON format, and use the plugin to convert the output to an HTML file called `results-[scantype].html`.
 
-The output filenames for the `snyk test` commands are `results-opensource`, `results-container`, `results-code`, and `results-iac`.
-
-The commands to use for each Snyk scanning method follow. When you run a command, an HTML file with one of these names is created in your repository folder, allowing you to [view your test results in HTML format](snyk-to-html.md#view-test-results-in-html-format).
+The commands to use for each Snyk scanning method follow. When you run a command, an HTML file with one of the names in these examples is created in your repository folder, allowing you to [view your test results in HTML format](snyk-to-html.md#view-test-results-in-html-format).
 
 #### Snyk Open Source command
 
@@ -82,15 +80,19 @@ Navigate to the subfolder with the related files and run the following line to c
 
 ### Convert a JSON or SARIF file to HTML to view in a browser
 
-Follow these steps to run `snyk test` and then convert the output file to HTML:
+For automation purposes, you may be creating JSON file for programmatic access to the results or already have one from a previous scan. You can send this JSON output to `snyk-to-html` to generate an HTML file. Follow these steps to run `snyk test` and then convert the output file to HTML:
 
 1. Change the directory to the root folder of the repository you want to test.
-2. Run the `test` command, as shown in the example that follows for `snyk code test`:\
-   `snyk code test --json > results.json`\
-   The output filenames for the `snyk test` commands are `results-opensource`, `results-container`, `results-code`, and `results-iac`.
-3. Pass the JSON file to `snyk-to-html` to be converted to HTML. Ensure you use the name of the output file you generated:\
-   `snyk-to-html -i results.json -o results.html`\
-   **`Note:`**The input files should be valid JSON and use UTF-8 encoding.
+2. Run the appropriate `test` command for each product type as shown:\
+   `snyk test --json > results-opensource.json`\
+   `snyk code test --json > results-code.json`\
+   `snyk container test [image] --json > results-container.json`\
+   `snyk iac test --json > results-iac.json`
+3. Pass the JSON file to `snyk-to-html` to be converted to HTML. The input files should be valid JSON and use UTF-8 encoding. Ensure you use the name of the output file you generated:\
+   `snyk-to-html -i results.json -o results-opensource.html`\
+   `snyk-to-html -i results-code.json -o results-code.html`\
+   `snyk-to-html -i results-container.json -o results-container.html`\
+   `snyk-to-html -i results-iac.json -o results-iac.html`
 
 ### Use `snyk-to-html` command options
 
