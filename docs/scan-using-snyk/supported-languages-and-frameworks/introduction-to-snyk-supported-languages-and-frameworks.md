@@ -174,15 +174,15 @@ Snyk Code automatically excludes the following files from analysis:
 
 ### Filename length limitation
 
-The analysis is available only for files with names shorter or equal to 255 characters. You receive an error if the filename exceeds this limit. To make sure that all files are being analyzed, consider shortening long filenames.
+The analysis is available only for files with names shorter or equal to 255 characters. You receive an error if the filename exceeds this limit. To ensure that all files are being analyzed, consider shortening long filenames.
 
 ### Framework support
 
 To support a specific framework, Snyk Code must both support the relevant language and be trained on Projects using the framework. The found patterns are then annotated by the security team and extended by curated content.
 
-Most framework are supported out of the box, as Snyk Code only need to parse the code to analyze it. In some cases, they might require specific rules, or it might require specific program analysis engine updates or both.&#x20;
+Most frameworks are supported out of the box, as Snyk Code needs only to parse the code to analyze it. In some cases, they might require specific rules, or it might require specific program analysis engine updates or both.&#x20;
 
-If you notice any gaps in a specific framework support, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
+If you notice any gaps in support for a specific framework, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 ### How Snyk works for code analysis&#x20;
 
