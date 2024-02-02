@@ -10,7 +10,7 @@ Regardless of how you use Snyk, ensure you have completed the steps in the [Quic
 
 In addition, if you are using Snyk Code or scanning container images, complete the following:
 
-* [Activate Snyk Code](../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-code/activate-snyk-code-using-the-web-ui.md) to scan your application code.
+* [Activate Snyk Code](broken-reference) to scan your application code.
 * [Set up integration with a supported container registry](../../getting-started/quickstart/set-up-an-integration.md) to scan container images.
 
 For general information about Snyk scans, see [Running scans](../../scan-using-snyk/working-with-snyk-in-your-environment/running-scans.md).&#x20;

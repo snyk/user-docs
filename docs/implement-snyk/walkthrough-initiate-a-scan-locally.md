@@ -15,7 +15,7 @@ The tool or tools that best serve your tech stack, environment, and workflow dep
 To learn more about choosing the integration points in the software development lifecycle that work best for you and your current level of security maturity, see the [Ways to integrate Snyk at your company](https://learn.dev.snyk.io/lesson/integrate-snyk-at-your-company/) course.
 
 {% hint style="info" %}
-To perform code scanning, ensure you enable Snyk Code. For details, see [Activate Snyk Code using the Web UI](../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api/scan-code/activate-snyk-code-using-the-web-ui.md).
+To perform code scanning, ensure you enable Snyk Code. For details, see [Activate Snyk Code using the Web UI](broken-reference).
 {% endhint %}
 
 ## Try out a Project

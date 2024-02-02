@@ -1,6 +1,12 @@
-# Use Snyk Code IDE
+# Use Snyk Code in the IDE
 
 IDE integrations use the fast analysis and response of Snyk Code, allowing you to spot an issue, understand and learn more about it, and fix it while you write the code before checking it in. In this way, you can find possible security flaws in your code as you write it on a line-by-line basis.
+
+## Prerequisites for using Snyk Code in the IDE
+
+Before scanning your repositories with Snyk Code, ensure you have enabled Snyk Code.&#x20;
+
+See [Configure Snyk Code](scan-code.md).
 
 ## JetBrains IDE plugins
 
