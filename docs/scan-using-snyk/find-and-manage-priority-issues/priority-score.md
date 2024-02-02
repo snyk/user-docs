@@ -28,11 +28,9 @@ You can filter issues by Priority Score range in the left sidebar.
 
 <figure><img src="../../.gitbook/assets/screen_shot_2021-07-14_at_1.41.24_pm.png" alt="Filter issues"><figcaption><p>Filter issues </p></figcaption></figure>
 
-## View issues by priority score
+## View issues by Priority Score
 
-The **Issues** tab on the issue cards page includes the Priority Score as its own sortable column. By default, the issues are sorted by the score to show you the most pressing issues first.
-
-Issues can also be filtered by the score.
+The **Issues** tab on the Project details allows you to filter issues by Priority Score.
 
 <figure><img src="../../.gitbook/assets/filter issues by score.png" alt="Filter issues by score"><figcaption><p>Filter issues by score</p></figcaption></figure>
 
