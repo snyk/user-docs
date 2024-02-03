@@ -400,7 +400,7 @@
         * [Vulnerabilities](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/code-analysis-page-vulnerability-issues-area.md)
         * [Data flow](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue.md)
         * [Fix analysis](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/exploring-the-fix-analysis-page.md)
-        * [Priority score](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/understanding-the-priority-score-of-snyk-code-issues.md)
+        * [Priority Score in Snyk Code](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/priority-score-in-snyk-code.md)
         * [Severity score](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/exploring-the-code-analysis-page/understanding-the-severity-score-of-snyk-code-issues.md)
       * [View vulnerabilities in your code](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/view-vulnerabilities-in-your-code.md)
       * [Fix code vulnerabilities automatically](scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md)

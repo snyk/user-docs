@@ -1,10 +1,10 @@
-# Priority score
+# Priority Score in Snyk Code
 
 Snyk Code assigns a Priority Score to each discovered issue displayed on the Web UI. This Priority Score can help filter and prioritize the issues discovered in your source code according to their level of importance, risk, frequency, and ease of fix:
 
 <figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Priority Score.png" alt="Priority Score information example"><figcaption><p>Priority Score information example</p></figcaption></figure>
 
-## **Priority score factors**
+## **Priority Score factors**
 
 A Priority Score for each issue can be between 0-1000, and it changes automatically if one of its factors changes. For example, if the Severity Level of an issue has increased or decreased, the Priority Score of the issue changes accordingly.
 
@@ -22,7 +22,7 @@ Calculation of the Priority Score is based on the following factors:
   * Beta - the vulnerability type of the issue is in Beta status.\
     These internal tags are automatically assigned by Snyk Code analysis, and they are not visible on the Web UI.
 
-## Filter vulnerabilities by priority score
+## Filter vulnerabilities by Priority Score
 
 You can filter the discovered issues according to their Priority Score, thus displaying only the issues that are between a certain Priority Score range.
 
