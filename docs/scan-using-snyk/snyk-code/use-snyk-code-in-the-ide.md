@@ -6,7 +6,7 @@ IDE integrations use the fast analysis and response of Snyk Code, allowing you t
 
 Before scanning your repositories with Snyk Code, ensure you have enabled Snyk Code.&#x20;
 
-See [Configure Snyk Code](scan-code.md).
+See [Configure Snyk Code](configure-snyk-code.md).
 
 ## JetBrains IDE plugins
 

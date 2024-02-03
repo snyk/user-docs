@@ -1,4 +1,4 @@
-# Snyk feature release process
+# Snyk Release Process
 
 Snyk features are provided to users in the following types of releases.
 
@@ -38,7 +38,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Reachable vulnerabilities](../scan-using-snyk/find-and-manage-priority-issues/reachable-vulnerabilities.md)
 * [Group projects by branch or version for monitoring](../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
 * [Git repository cloning](../snyk-admin/manage-settings/snyk-preview.md#enable-git-repository-cloning)
-* [Fix code vulnerabilities automatically](../scan-using-snyk/snyk-code/exploring-and-working-with-snyk-code-results-in-the-web-ui/fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md)
+* [Fix code vulnerabilities automatically](../scan-using-snyk/snyk-code/manage-code-vulnerabilities/fix-code-issues-automatically-with-deepcode-ai-fix-suggestions.md)
 * [Snyk broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
 
 ## General Availability

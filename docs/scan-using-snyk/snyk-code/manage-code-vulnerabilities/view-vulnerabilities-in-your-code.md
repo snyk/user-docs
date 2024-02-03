@@ -17,5 +17,5 @@ If your Snyk Account is already integrated with your SCM and contains imported r
 You may find this information about repositories and Snyk Code useful as you begin to work with Snyk Code results:
 
 * [Importing additional repositories to Snyk](broken-reference)
-* [Excluding directories and files from the import process](../../start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/excluding-directories-and-files-from-the-import-process.md)
-* [Removing imported repositories from the Snyk Code test](../../start-scanning-using-the-cli-web-ui-or-api/snyk-code-and-your-repositories/removing-imported-repositories-from-snyk-code-testing.md)
+* [Excluding directories and files from the import process](../import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md)
+* [Removing imported repositories from the Snyk Code test](../import-repository-to-snyk/removing-imported-repositories-from-snyk-code-testing.md)
