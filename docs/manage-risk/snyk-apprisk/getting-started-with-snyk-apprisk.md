@@ -24,7 +24,11 @@ You can access Snyk AppRisk with one of the Group level roles permissions descri
 1. View AppRisk - Grants you a read-only access to AppRisk.
 2. Edit AppRisk - Grants you edit access to AppRisk, for example, edit policies, edit asset classification, and add the integration.
 
-Currently,  the Group Administrator role (a [predefined role](https://docs.snyk.io/snyk-admin/manage-permissions-and-roles/manage-member-roles)) has edit permission available by default, and the Group Viewer role has view permission available by default.
+A Group Administrator has the **Edit AppRisk** permission assigned by default, and a Group Viewer has the **View AppRisk** permission assigned by default.
+
+{% hint style="info" %}
+For more information on default user roles and permissions, see [Default user roles](../../snyk-admin/manage-permissions-and-roles/default-user-roles.md).
+{% endhint %}
 
 ## Login and Authentication
 
