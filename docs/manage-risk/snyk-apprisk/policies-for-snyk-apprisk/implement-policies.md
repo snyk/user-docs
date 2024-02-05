@@ -21,7 +21,7 @@ You can hover over a policy to gain access to extra details:
 
 ## Customize a policy
 
-Click any of the available policies to view them in full screen and to access all their functionalities.&#x20;
+Click any available policies to view them in full screen and access all their functionalities.&#x20;
 
 ### Simulate the policy
 
@@ -43,4 +43,4 @@ Click Edit to change the settings of your policies. You can change, add, or remo
 You cannot revert changes to a policy to its initial state.
 {% endhint %}
 
-**Last modified** and **Modified by** fields are updated every time you are making changes to a policy.
+The **Last modified** and **Modified by** fields are updated every time you make changes to a policy.
