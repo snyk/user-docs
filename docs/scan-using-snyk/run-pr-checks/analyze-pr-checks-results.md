@@ -15,7 +15,7 @@ The following status indicators can appear for your Snyk PR checks in the integr
 <table><thead><tr><th width="212">Result status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Success/Passed</strong></td><td>No issues were discovered and the manifest file was not changed.</td></tr><tr><td><strong>Pending</strong></td><td>The PR Checks are still running.</td></tr><tr><td><strong>Failed/Issues found</strong></td><td>Security issues were identified in the pull request. In this scenario, you need to manually set the result status to <strong>Passed</strong>.</td></tr><tr><td><strong>Error</strong></td><td>Out-of-sync package.json and package.lock files, failure to find or to read the manifest file.</td></tr><tr><td><strong>Canceled</strong></td><td>The test limit has been reached.</td></tr></tbody></table>
 
 {% hint style="info" %}
-For false positive or false negative results, see [Troubleshooting PR Checks](troubleshooting.md).
+For false positive or false negative results, see [Troubleshooting PR Checks](troubleshoot-pr-checks.md).
 {% endhint %}
 
 ## **Example: fix dependency issues with PR Checks**
@@ -78,7 +78,7 @@ The issue is marked as **Passed** and shows up as **Skipped** in the PR Checks c
 
 ## Troubleshooting PR Checks
 
-[Troubleshooting PR Checks](troubleshooting.md) has more information on how to troubleshoot PR Checks or how to restart them
+[Troubleshooting PR Checks](troubleshoot-pr-checks.md) has more information on how to troubleshoot PR Checks or how to restart them
 
 ## More resources for PR Checks
 

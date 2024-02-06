@@ -8,8 +8,8 @@ The Policy Manager allows you to [create](create-and-edit-policies.md#create-a-p
 2. Enter a policy name and a description to help you quickly identify a policy.\
    Policies in the same category cannot have the same name. You cannot save a policy without a name.
 3. Select whether to apply the policy to Organizations or Project attributes.
-4. Select the [Organizations](assign-a-policy-to-an-organization.md) or [attributes](assign-policies-to-projects.md) to which you want to apply the policy.
-5. Add rules to the policy. See [Create a license policy and rules](license-policies/create-a-license-policy-and-rules.md) or [Create a security policy and rules](security-policies/create-a-security-policy-and-rules.md).
+4. Select the [Organizations](apply-a-policy-to-organizations.md) or [attributes](apply-a-policy-to-projects.md) to which you want to apply the policy.
+5. Add rules to the policy. See [Create a license policy and rules](license-policies/create-a-license-policy-and-rules.md) or [Create a security policy and rules](security-policies/how-to-create-a-security-policy-and-set-rules.md).
 6. Click **Submit** to create and save the policy.
 
 <div align="left">
@@ -21,7 +21,7 @@ The Policy Manager allows you to [create](create-and-edit-policies.md#create-a-p
 ## Edit a policy
 
 1. Click the name of an existing policy in the Policy Manager tab to make any changes.
-2. Change the [Organizations](assign-a-policy-to-an-organization.md), [attributes](assign-policies-to-projects.md), and rules as you wish.
+2. Change the [Organizations](apply-a-policy-to-organizations.md), [attributes](apply-a-policy-to-projects.md), and rules as you wish.
 3. Click **Submit** to save your changes.
 
 ## **Duplicate or delete a policy**&#x20;

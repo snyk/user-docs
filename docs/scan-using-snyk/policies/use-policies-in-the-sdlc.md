@@ -10,7 +10,7 @@ In addition, the `.snyk` file is a policy file that Snyk uses to define certain 
 
 ## Assign policies to Projects or Organizations
 
-For both [security policies](security-policies/) and [license policies](license-policies/), you can apply a policy to Project attributes and to an Organization. This enables you to assign policies to Projects and to Organizations. For details, see [Assign policies to Projects](assign-policies-to-projects.md) and [Assign a policy to an Organization](assign-a-policy-to-an-organization.md).
+For both [security policies](security-policies/) and [license policies](license-policies/), you can apply a policy to Project attributes and to an Organization. This enables you to assign policies to Projects and to Organizations. For details, see [Assign policies to Projects](apply-a-policy-to-projects.md) and [Assign a policy to an Organization](apply-a-policy-to-organizations.md).
 
 ### Example: assign a license policy to Projects
 

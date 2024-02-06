@@ -38,5 +38,5 @@ Snyk has security and license policies.
 
 Different applications may need to be scanned according to different policies. Mission-critical applications are likely to need more control than internal applications in a sandbox environment. You can establish the needed control by assigning policies to:
 
-* [Projects](assign-policies-to-projects.md), after applying attributes to Projects and policies to attributes
-* [Organizations](assign-a-policy-to-an-organization.md) in a Snyk Group
+* [Projects](apply-a-policy-to-projects.md), after applying attributes to Projects and policies to attributes
+* [Organizations](apply-a-policy-to-organizations.md) in a Snyk Group
