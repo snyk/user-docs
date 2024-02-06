@@ -46,7 +46,7 @@ Keep both Snyk Web UI and Snyk AppRisk tabs open to ensure optimal functionality
 
 **Asset**: An asset is an identifiable entity that is part of an application, and relevant for security and developers.&#x20;
 
-**Controls**: The security controls associated with the asset. Navigate to the [Controls](broken-reference) section to see all available statuses for security controls.
+**Controls**: The security controls associated with the asset. Navigate to the [Coverage controls](policies-for-snyk-apprisk/use-cases-for-policies/coverage-control-policy-use-case.md) section to see all available statuses for security controls.
 
 **Coverage**: An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program.  A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
 
