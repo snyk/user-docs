@@ -10,7 +10,7 @@ In addition, the `.snyk` file is a policy file that Snyk uses to define certain 
 
 ## Assign policies to Projects or Organizations
 
-For both [security policies](security-policies/) and [license policies](license-policies/), you can apply a policy to Project attributes and to an Organization. This enables you to assign policies to Projects and to Organizations. For details, see [Assign policies to Projects](apply-a-policy-to-projects.md) and [Assign a policy to an Organization](apply-a-policy-to-organizations.md).
+For both [security policies](security-policies/) and [license policies](license-policies/), you can apply a policy to Project attributes and to an Organization. This enables you to assign policies to Projects and to Organizations. For details, see [Assign policies to Projects](assign-policies-to-projects.md) and [Assign a policy to an Organization](assign-a-policy-to-an-organization.md).
 
 ### Example: assign a license policy to Projects
 
@@ -53,7 +53,7 @@ See [Security policies](security-policies/) for more details.
 For GitHub Projects monitored by Snyk, any new pull request from a contributing developer can be checked against policies assigned to that Project. This ensures that policy-breaking code cannot be committed to the repository.
 
 {% hint style="info" %}
-See [PR Checks](../../scan-using-snyk/run-pr-checks/) for details of Snyk’s PR Checks feature.
+See [PR Checks](../run-pr-checks/) for details of Snyk’s PR Checks feature.
 {% endhint %}
 
 An example follows of a PR check on a JavaScript package license.

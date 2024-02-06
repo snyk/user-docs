@@ -34,4 +34,4 @@ When you create a new Organization, it will automatically be added to the defaul
 
 The default policy cannot be deleted; however, the default policy name, description, and rules can be edited to match your preferences. A default policy can also contain no rules if you'd prefer.
 
-See [Assign a policy to an Organization](apply-a-policy-to-organizations.md) for details.
+See [Assign a policy to an Organization](assign-a-policy-to-an-organization.md) for details.
