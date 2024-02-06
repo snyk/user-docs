@@ -15,7 +15,7 @@ If your business is small and nimble, Snyk implementation can be achieved in day
 However, for larger, more process-oriented enterprises, the implementation process may take weeks or months and it requires more detailed planning to succeed.&#x20;
 {% endhint %}
 
-
+If you want to enable the Application Security Posture Management for all your used products, you can use the [Snyk AppRisk Implementation Guide](../../manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/).
 
 ## Implementation strategy overview
 
