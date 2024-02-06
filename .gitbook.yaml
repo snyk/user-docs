@@ -5,8 +5,8 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  - nexus: features/integrations/private-registry-gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md
-  - artifactory: features/integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md
-  - fix-images: products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md
-  - languages: more-info/product-language-support-list.md
-  - snyk-infrastructure-as-code/detecting-infrastructure-as-code-files-using-a-broker: features/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-a-broker.m
+  nexus: features/integrations/private-registry-gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md
+  artifactory: features/integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md
+  fix-images: products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md
+  languages: more-info/product-language-support-list.md
+  snyk-infrastructure-as-code/detecting-infrastructure-as-code-files-using-a-broker: features/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-a-broker.m
