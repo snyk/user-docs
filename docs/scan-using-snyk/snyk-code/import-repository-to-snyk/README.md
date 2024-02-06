@@ -99,4 +99,4 @@ If you are re-importing repositories you deleted before the re-import, you must 
 ## What's next?
 
 * [Exclude directories and files from the import process](excluding-directories-and-files-from-the-import-process.md)
-* [Remove imported repository](removing-imported-repositories-from-snyk-code-testing.md)
+* [Remove imported repository](remove-imported-repository.md)

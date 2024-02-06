@@ -1,4 +1,4 @@
-# How custom rules work
+# How Snyk Code custom rules work
 
 ## Query language
 
@@ -58,7 +58,7 @@ For more information, see [The .snyk file](../../policies/the-.snyk-file.md).
 
 Snyk Code offers a user-friendly development environment that uses AI technology to simplify defining and testing rules. The AI acts as an intuitive assistant, providing helpful suggestions for queries based on the code you are testing.
 
-For example, you can use the  `DataFlowsInto` [query template](how-custom-rules-work.md#query-templates) if you need to locate a method that data flows into. The AI will then suggest methods that data flows into within your code based on the Event Graph. This streamlines the process of creating rules and may also spark new query ideas.
+For example, you can use the  `DataFlowsInto` [query template](how-snyk-code-custom-rules-work.md#query-templates) if you need to locate a method that data flows into. The AI will then suggest methods that data flows into within your code based on the Event Graph. This streamlines the process of creating rules and may also spark new query ideas.
 
 <figure><img src="../../../.gitbook/assets/suggestive_ai_support (1).gif" alt="Suggestive AI support"><figcaption><p>Suggestive AI support</p></figcaption></figure>
 

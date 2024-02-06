@@ -18,4 +18,4 @@ You may find this information about repositories and Snyk Code useful as you beg
 
 * [Importing additional repositories to Snyk](broken-reference)
 * [Excluding directories and files from the import process](../import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md)
-* [Removing imported repositories from the Snyk Code test](../import-repository-to-snyk/removing-imported-repositories-from-snyk-code-testing.md)
+* [Removing imported repositories from the Snyk Code test](../import-repository-to-snyk/remove-imported-repository.md)

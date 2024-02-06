@@ -72,12 +72,12 @@ The page shows the name of the branch of the analyzed repository, in this exampl
 <figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Header - Project Tabs.png" alt="Project tabs"><figcaption><p>Project tabs</p></figcaption></figure>
 
 * **Overview** – the default Project page that displays the most recent vulnerability results.
-* **History** – a page that displays the previous snapshots and results of past tests. For more information, see [Exploring the history of the Snyk Code results](../exploring-the-history-of-snyk-code-results.md).
+* **History** – a page that displays the previous snapshots and results of past tests. For more information, see [Exploring the history of the Snyk Code results](../code-analysis-results-history.md).
 * **Settings** – a page that enables you to perform the following:
   * Set the frequency of recurring tests.
   * Find the unique Project ID.
-  * [Deactivate the Project](../../import-repository-to-snyk/removing-imported-repositories-from-snyk-code-testing.md#deactivating-and-deleting-imported-repositories).
-  * [Delete the Project](../../import-repository-to-snyk/removing-imported-repositories-from-snyk-code-testing.md#deactivating-and-deleting-the-snyk-code-project).
+  * [Deactivate the Project](../../import-repository-to-snyk/remove-imported-repository.md#deactivating-and-deleting-imported-repositories).
+  * [Delete the Project](../../import-repository-to-snyk/remove-imported-repository.md#deactivating-and-deleting-the-snyk-code-project).
 
 <figure><img src="../../../../.gitbook/assets/Snyk Code - Results - Header - Project Settings page.png" alt="Code Analysis settings"><figcaption><p>Code Analysis settings</p></figcaption></figure>
 

@@ -90,7 +90,7 @@ Publishing and ignoring CLI issues in SCM Projects is in [Closed Beta](../../../
 The minimum supported CLI version is 1.1194.0.
 {% endhint %}
 
-When you are using Snyk Code in the CI/CD, you can specify an existing Git repository Code Analysis Project along with the commit ID to trigger a test for which the results will be saved in the Web UI. The Web UI will also display Code Snippets that provide [Snyk Code Data flow](../../../scan-using-snyk/snyk-code/manage-code-vulnerabilities/exploring-the-code-analysis-page/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue.md). Ignores that have been added to the Web UI Project will be respected in this test.
+When you are using Snyk Code in the CI/CD, you can specify an existing Git repository Code Analysis Project along with the commit ID to trigger a test for which the results will be saved in the Web UI. The Web UI will also display Code Snippets that provide [Snyk Code Data flow](../../../scan-using-snyk/snyk-code/manage-code-vulnerabilities/breakdown-of-code-analysis/data-flow.md). Ignores that have been added to the Web UI Project will be respected in this test.
 
 Be sure you have the prerequisites and publish the results as you intend:
 

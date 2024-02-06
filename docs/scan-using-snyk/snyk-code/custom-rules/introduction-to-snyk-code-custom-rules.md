@@ -1,4 +1,4 @@
-# Introduction to custom rules
+# Introduction to Snyk Code custom rules
 
 You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:
 
@@ -18,7 +18,7 @@ You can create and test queries in a local environment, completely separate from
 * [Run query on a repository](run-query.md#run-query-on-a-repository)
 * [Run query on a code snippet](run-query.md#run-query-on-a-code-snippet)
 * [Analyze query results](run-query.md#analyze-query-results)
-* [Save custom rules](create-custom-rules.md)
+* [Save custom rules](create-snyk-code-custom-rules.md)
 
 ## Using custom rules in the Snyk CLI
 

@@ -38,7 +38,7 @@ The explanation continues for each area depicted in a box in the image at the be
 * **Snyk Learn link** - if available, a link to [Snyk Learn](https://learn.snyk.io/) for interactive lessons on understanding, fixing, and avoiding the discovered vulnerability.
 * **Ignore** button - enables you to ignore this vulnerability issue.\
   For more information, see [Ignore issue](../../../find-and-manage-priority-issues/ignore-issues/)s.
-* **Full details** button - enables you to open the [Data flow](broken-reference) and [Fix analysis](exploring-the-fix-analysis-page.md) pages for more information on the discovered issue and fix recommendations and examples.
+* **Full details** button - enables you to open the [Data flow](broken-reference) and [Fix analysis](fix-analysis.md) pages for more information on the discovered issue and fix recommendations and examples.
 
 ## Vulnerabilities in Code Analysis
 
@@ -48,9 +48,9 @@ The Vulnerability Issues area on the **Code Analysis** page displays all the iss
 
 You can change the display of the issues on the **Code Analysis** page using the following options:
 
-* [Grouping](code-analysis-page-vulnerability-issues-area.md#grouping-the-discovered-issues-according-to-their-file-or-vulnerability-type) - by **File** or **Vulnerability Type**.
-* [Sorting](code-analysis-page-vulnerability-issues-area.md#sorting-the-discovered-issues-according-to-their-severity-level) - from the **Highest** or the **Lowest** severity level.
-* [Filtering](code-analysis-page-vulnerability-issues-area.md#filtering-the-discovered-issues-according-to-pre-defined-criteria-or-a-search-word) - according to pre-defined criteria or a search word.
+* [Grouping](vulnerabilities.md#grouping-the-discovered-issues-according-to-their-file-or-vulnerability-type) - by **File** or **Vulnerability Type**.
+* [Sorting](vulnerabilities.md#sorting-the-discovered-issues-according-to-their-severity-level) - from the **Highest** or the **Lowest** severity level.
+* [Filtering](vulnerabilities.md#filtering-the-discovered-issues-according-to-pre-defined-criteria-or-a-search-word) - according to pre-defined criteria or a search word.
 
 {% hint style="info" %}
 For more information on the available details and options for each discovered issue, see [Exploring the vulnerability issues discovered by Snyk Code](broken-reference).

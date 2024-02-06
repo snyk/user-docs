@@ -71,4 +71,4 @@ A number of specific factors contribute to priority calculation for Snyk Code, i
 * Rule tags: decrease priority if beta tags are found
 * Hot files: if the vulnerability is in the source file, or inside a code flow
 
-See [Understanding the Priority Score of the Snyk Code issues](../snyk-code/manage-code-vulnerabilities/exploring-the-code-analysis-page/priority-score-in-snyk-code.md) for details.
+See [Understanding the Priority Score of the Snyk Code issues](../snyk-code/manage-code-vulnerabilities/breakdown-of-code-analysis/priority-score-in-snyk-code.md) for details.
