@@ -763,7 +763,7 @@
     * [Introduction to Organizations](snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md)
     * [Manage Organizations](snyk-admin/manage-groups-and-organizations/manage-organizations.md)
     * [Switch between Groups and Organizations](snyk-admin/manage-groups-and-organizations/switch-between-groups-and-organizations.md)
-    * [Structure your hierarchy for high application performance](snyk-admin/manage-groups-and-organizations/structure-your-hierarchy-for-high-application-performance.md)
+    * [Structure your account for high application performance](snyk-admin/manage-groups-and-organizations/structure-your-account-for-high-application-performance.md)
   * [Snyk Projects](snyk-admin/snyk-projects/README.md)
     * [View Project information](snyk-admin/snyk-projects/view-project-information.md)
     * [Project attributes](snyk-admin/snyk-projects/project-attributes.md)

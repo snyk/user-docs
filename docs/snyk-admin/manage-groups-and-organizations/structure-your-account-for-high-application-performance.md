@@ -1,8 +1,4 @@
----
-description: Considerations for groups, organizations, projects, and users
----
-
-# Structure your hierarchy for high application performance
+# Structure your account for high application performance
 
 To ensure the best experience using Snyk, consider these guidelines when making decisions about your Snyk user accounts, Groups, Organizations, and Projects.
 
