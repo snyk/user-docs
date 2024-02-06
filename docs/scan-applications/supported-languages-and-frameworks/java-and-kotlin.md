@@ -450,4 +450,4 @@ If you prefer continuous integration/continuous delivery workflows, you can scan
 
 ## Help
 
-See [best practices](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/snyk-for-java-developers.md) and [FAQ about Java](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/faq-about-java.md).
+See [best practices](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/best-practices-for-java-and-kotlin.md) and [FAQ about Java](../../scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/faq-about-java.md).

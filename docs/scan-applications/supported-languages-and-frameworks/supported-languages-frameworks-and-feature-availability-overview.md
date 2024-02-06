@@ -49,7 +49,7 @@ Before scanning your Open Source Project for vulnerabilities, with limited excep
 
 **Package manager versions**: NA
 
-### [Dart and Flutter](../../scan-using-snyk/supported-languages-and-frameworks/dart.md)&#x20;
+### [Dart and Flutter](../../scan-using-snyk/supported-languages-and-frameworks/dart-and-flutter.md)&#x20;
 
 **Package manager**: Pub
 

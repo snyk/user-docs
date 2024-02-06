@@ -184,5 +184,5 @@ If you are currently managing your Project dependencies with NuGet and leveragin
 
 ## Help
 
-For best practices and troubleshooting, see [Help](../../../scan-using-snyk/supported-languages-and-frameworks/.net/help-.net.md).
+For best practices and troubleshooting, see [Help](../../../scan-using-snyk/supported-languages-and-frameworks/.net/best-practices-for-.net.md).
 

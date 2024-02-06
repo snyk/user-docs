@@ -373,4 +373,4 @@ Under **Additional Parameters** in the IDE settings, enter the **--unmanaged** o
 
 ## Help
 
-:link: See [best practices](../../scan-using-snyk/supported-languages-and-frameworks/c-c++/best-practices-for-c-c++.md) and [troubleshooting](../../scan-using-snyk/supported-languages-and-frameworks/c-c++/help-c-c++.md).
+:link: See [best practices](../../scan-using-snyk/supported-languages-and-frameworks/c-c++/best-practices-for-c-c++.md) and [troubleshooting](../../scan-using-snyk/supported-languages-and-frameworks/c-c++/troubleshooting-c-c++.md).
