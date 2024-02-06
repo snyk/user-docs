@@ -4,7 +4,7 @@
 While Ignores via the Snyk UI are available for current IaC and IaC+, using ignores in the .snyk file is available only in current IaC at this time.&#x20;
 {% endhint %}
 
-When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant to you by using the [`.snyk` policy file](../../../scan-using-snyk/policies/the-.snyk-file.md). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files.
+When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant to you by using the [`.snyk` policy file](../../../scan-with-snyk/policies/the-.snyk-file.md). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files.
 
 This file can be created with the `snyk ignore` command. For details see [Ignore vulnerabilities using Snyk CLI](../ignore-vulnerabilities-using-the-snyk-cli.md).
 
@@ -21,7 +21,7 @@ Ignores in the `.snyk` file and ignores created in the Snyk UI are not synchroni
 ## `.snyk` file semantics
 
 {% hint style="info" %}
-The `.snyk` file has some limitations for IaC Projects. See [The `.snyk` file](../../../scan-using-snyk/policies/the-.snyk-file.md) for standard functionality.
+The `.snyk` file has some limitations for IaC Projects. See [The `.snyk` file](../../../scan-with-snyk/policies/the-.snyk-file.md) for standard functionality.
 
 * The **patches** section is not yet supported and is ignored.
 * There are no IaC-supported **language settings**. This section is ignored.

@@ -17,7 +17,7 @@ For both dependencies and licenses, you can filter by Project or other filter cr
 </div>
 
 * From the **Projects** drop-down, select specific Projects.
-* From the **Filters** drop-down, check the applicable boxes to filter by [Severity level](../../scan-using-snyk/find-and-manage-priority-issues/severity-levels.md) or Project type.
+* From the **Filters** drop-down, check the applicable boxes to filter by [Severity level](../../scan-with-snyk/find-and-manage-priority-issues/severity-levels.md) or Project type.
 
 {% hint style="info" %}
 Results from the Dockerfile Project type are filtered out by default in the filter criteria as they can result in duplication of results from scans of the images resulting from building the Dockerfiles. To match results from API calls, either filter out Dockerfiles from the API results or turn on Dockfiles in the Project type column of the filter

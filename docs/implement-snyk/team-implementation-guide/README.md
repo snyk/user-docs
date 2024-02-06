@@ -1,4 +1,4 @@
-# Team plan - Implementation guide
+# Team implementation guide
 
 Accelerate your team performance by using Snyk. This guide aims to help you implement Snyk for your team. The team plan applies to teams of up to 10 members.&#x20;
 
@@ -9,7 +9,7 @@ We start with the awareness that most businesses:
 
 ## **Typical timelines**
 
-You can implement Snyk for your team in days. You can start scanning with Snyk soon after implementation, often using the Git integration. For details, see [Getting started](../../getting-started/) and [Start scanning using the CLI, Web UI, or API](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/). The main guidance for a team to roll out Snyk is to onboard your projects, pilot Snyk functionality with an important project, confirm it works best for your workflows, and then enable the other projects, letting the team know through regular communication what the expectations are.
+You can implement Snyk for your team in days. You can start scanning with Snyk soon after implementation, often using the Git integration. For details, see [Getting started](../../getting-started/) and [Start scanning using the CLI, Web UI, or API](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md). The main guidance for a team to roll out Snyk is to onboard your projects, pilot Snyk functionality with an important project, confirm it works best for your workflows, and then enable the other projects, letting the team know through regular communication what the expectations are.
 
 ## Implementation strategy overview
 

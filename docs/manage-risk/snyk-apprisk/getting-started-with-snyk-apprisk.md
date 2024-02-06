@@ -58,7 +58,7 @@ Keep both Snyk Web UI and Snyk AppRisk tabs open to ensure optimal functionality
 
 ## Scanning methods
 
-You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. See the [Start scanning using the CLI, Web UI, or API](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/) page for more details.
+You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. See the [Start scanning using the CLI, Web UI, or API](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md) page for more details.
 
 If you initiate your scans using the CLI, you might encounter one of the following situations:
 

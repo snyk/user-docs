@@ -11,8 +11,8 @@ This quickstart helps you with these basic tasks in the Snyk application:
 
 ## More information about basic tasks
 
-* See [Start scanning ](../../scan-applications/start-scanning-using-the-cli-web-ui-or-api/)to start using Snyk capabilities.
-* See [Running tests](../../scan-using-snyk/working-with-snyk-in-your-environment/running-scans.md) for a general overview of how to use Snyk functions to run tests.
+* See [Start scanning ](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md)to start using Snyk capabilities.
+* See [Running tests](../../scan-with-snyk/working-with-snyk-in-your-environment/running-scans.md) for a general overview of how to use Snyk functions to run tests.
 * See [Walkthrough: Code Repository Projects](../../implement-snyk/walkthrough-code-repository-projects/) to read a full walkthrough of scanning and fixing vulnerabilities from content stored in a Git repository.
 * Visit [Snyk Learn](https://learn.snyk.io/catalog/product-training/) for related introductory training:
   * [Find and fix with Snyk Open Source](https://learn.snyk.io/catalog/product-training/?type=product-training\&format=learning\_path)

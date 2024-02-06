@@ -1,6 +1,6 @@
 # Introduction to Git repositories integrations
 
-You can use Snyk functions to secure your application code, using [Snyk Code](../../../scan-using-snyk/snyk-code/) for your own code and [Snyk Open Source](../../../scan-using-snyk/snyk-open-source/) for the open-source libraries you use.
+You can use Snyk functions to secure your application code, using [Snyk Code](../../../scan-with-snyk/snyk-code/) for your own code and [Snyk Open Source](../../../scan-with-snyk/snyk-open-source/) for the open-source libraries you use.
 
 <figure><img src="https://lh5.googleusercontent.com/DfNV0u45H2pscEybpGNWSBLFPbIUe-Tp-75iTNUnNFJQvkpow1pWr07HgWkzaE31f1XdH9wQfijKStwEyDIvF93J6rD0E9aWbrVeBEUQuh111VpnHssNuS0FGCQ-ugaSp3OYUz_fMwRjbZNQVbjvdYp0CYaQQyyEq4NoXCFda3HLtTc5WBVkKJ_emw" alt="Snyk functions to secure application code"><figcaption><p>Snyk functions to secure application code</p></figcaption></figure>
 

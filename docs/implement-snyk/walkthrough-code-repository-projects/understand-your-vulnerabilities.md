@@ -33,12 +33,12 @@ For details, see [Issue card information](../../snyk-admin/snyk-projects/issue-c
 
 Snyk provides detailed resources for more information about vulnerabilities, accessible directly from the card:
 
-* [**Snyk Vulnerability Database**](../../scan-applications/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md): access details on a specific vulnerability.
+* [**Snyk Vulnerability Database**](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md): access details on a specific vulnerability.
 * [**Snyk Learn**](../../getting-started/snyk-learn.md): access general information about that type of vulnerability.
 
 ### Access Snyk Vulnerability Database
 
-For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../scan-applications/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
+For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
 
 <figure><img src="../../.gitbook/assets/image (174) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Access Snyk Vulnerability Database"><figcaption><p>Access Snyk Vulnerability Database</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 <figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Snyk Vulnerability Database example entry"><figcaption><p>Snyk Vulnerability Database example entry</p></figcaption></figure>
 
 {% hint style="info" %}
-[Snyk Code](../../scan-using-snyk/snyk-code/) and [Snyk IaC](../../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/) issue cards have separate information sets for these areas.
+[Snyk Code](../../scan-with-snyk/snyk-code/) and [Snyk IaC](../../scan-with-snyk/scan-infrastructure/scan-your-iac-source-code/) issue cards have separate information sets for these areas.
 {% endhint %}
 
 ### Access Snyk Learn
@@ -64,7 +64,7 @@ Some cards may not have Snyk Learn lessons available - if so, no links are prese
 
 ## Understand the Snyk Priority Score
 
-The [Snyk Priority Score](../../scan-using-snyk/find-and-manage-priority-issues/priority-score.md), ranging from 0 - 1,000, is our evaluation of the seriousness of the vulnerability. The Snyk Priority Score includes [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System) information, plus other factors such as attack complexity and known exploits. For example, this **Hibernate** vulnerability has no known exploit allowing attackers to take advantage of that vulnerability.
+The [Snyk Priority Score](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md), ranging from 0 - 1,000, is our evaluation of the seriousness of the vulnerability. The Snyk Priority Score includes [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System) information, plus other factors such as attack complexity and known exploits. For example, this **Hibernate** vulnerability has no known exploit allowing attackers to take advantage of that vulnerability.
 
 Other factors also affect the score. For example, SQL injections are easy to run (you just need a web browser and submit a form), so increasing the score, but it takes more work to understand and exploit the results for that attack, so decreasing the score.
 
