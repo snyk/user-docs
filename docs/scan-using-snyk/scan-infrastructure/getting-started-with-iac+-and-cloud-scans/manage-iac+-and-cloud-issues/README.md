@@ -6,7 +6,7 @@ The [Fix Cloud issues in IaC](../../iac+-code-to-cloud-capabilities/fix-cloud-is
 
 When Snyk scans an IaC+ or cloud environment, it tests infrastructure configurations against a comprehensive set of security rules. These rules identify misconfigurations that can lead to security problems. For example, Snyk can scan the configuration of an Amazon Web Services (AWS) S3 bucket to see if it is publicly readable, and so vulnerable to a data breach.
 
-Any IaC or cloud misconfiguration Snyk finds is reported as an issue. The [cloud issues page](view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md) in the Snyk Web UI provides details about each issue, including status, severity, impact, associated resources, and other information.
+Any IaC or cloud misconfiguration Snyk finds is reported as an issue. The [cloud issues page](view-iac+-and-cloud-issues-in-the-snyk-web-ui.md) in the Snyk Web UI provides details about each issue, including status, severity, impact, associated resources, and other information.
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-issues-page-3.png" alt="Cloud issues page in the Web UI"><figcaption><p>Cloud issues page in the Web UI</p></figcaption></figure>
 
@@ -18,7 +18,7 @@ Issues have the following components:
 * **Rule:** The rule that is used to test the resource, such as "S3 bucket is publicly readable"
 
 {% hint style="info" %}
-See [Key concepts](../key-concepts-in-iac+.md) for more details.
+See [Key concepts](../key-concepts-for-iac+-and-cloud.md) for more details.
 {% endhint %}
 
 The first time a misconfiguration is detected, Snyk opens an issue for that rule and resource. The issue remains open across scans as long as the misconfiguration is present.

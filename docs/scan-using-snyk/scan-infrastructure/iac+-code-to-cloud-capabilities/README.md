@@ -5,4 +5,4 @@ This section provides information to help you use capabilities for Snyk IaC that
 * [Fix cloud issues in IaC](fix-cloud-issues-in-iac.md)
 * [Add cloud context to your IaC tests](add-cloud-context-to-your-iac-tests.md)
 * [Detect drift and manually created resources](detect-drift-and-manually-created-resources/)
-* [Manage cloud and IaC+ rules](../introduction-to-iac+/manage-cloud-and-iac+-rules.md)
+* [Manage cloud and IaC+ rules](../getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-rules.md)

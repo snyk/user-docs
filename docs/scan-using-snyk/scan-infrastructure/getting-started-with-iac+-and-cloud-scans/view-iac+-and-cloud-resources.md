@@ -1,4 +1,4 @@
-# View resources
+# View IaC+ and cloud resources
 
 You can view all attributes for IaC+ and cloud resources in an Organization. This allows you to inventory all of your resources across cloud provider accounts or see the recorded state of any resource during the most recent scan.
 
@@ -137,4 +137,4 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-Snyk returns a JSON document containing information about the selected resource. The information is the same as shown in [Understand the API response](view-resources.md#understand-the-api-response).
+Snyk returns a JSON document containing information about the selected resource. The information is the same as shown in [Understand the API response](view-iac+-and-cloud-resources.md#understand-the-api-response).

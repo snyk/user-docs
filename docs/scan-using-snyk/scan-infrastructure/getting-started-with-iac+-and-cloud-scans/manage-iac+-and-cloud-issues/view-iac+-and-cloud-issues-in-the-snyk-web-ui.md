@@ -6,7 +6,7 @@ To view your cloud issues in the Snyk Web UI, navigate to the Organization, and 
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-access-issues-page-3.png" alt="Select Cloud to view the issues"><figcaption><p>Select Cloud to view the issues</p></figcaption></figure>
 
-By default, Snyk displays open issues across all cloud environments in an Organization. The issues are initially [grouped by the security rule they failed](view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-rule), but you can choose to [group them by resource](view-cloud-and-integragted-iac-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-resource).
+By default, Snyk displays open issues across all cloud environments in an Organization. The issues are initially [grouped by the security rule they failed](view-iac+-and-cloud-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-rule), but you can choose to [group them by resource](view-iac+-and-cloud-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-resource).
 
 ## Group issues by rule
 

@@ -87,7 +87,7 @@ The `data.attributes.status` field in the JSON output is set to `in_progress.` T
 
 To check to see if your scan is finished, see [Check to see if the scan is finished](https://docs.snyk.io/integrations/cloud-platforms/aws-integration/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-to-see-if-the-scan-is-finished).
 
-To re-scan an environment, see [Scan a Cloud environment](../../../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/snyk-environments/scan-a-cloud-environment.md).
+To re-scan an environment, see [Scan a Cloud environment](../../../../scan-using-snyk/scan-infrastructure/getting-started-with-iac+-and-cloud-scans/snyk-environments/scan-a-cloud-environment.md).
 
 {% hint style="info" %}
 It can take Google 60 seconds or more to create your service account. If you try to create an environment immediately after you create a service account and you receive a **could not validate credentials error**, wait at least 60 seconds and try again.
@@ -97,5 +97,5 @@ It can take Google 60 seconds or more to create your service account. If you try
 
 You can now do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-using-snyk/scan-infrastructure/introduction-to-iac+/cloud-and-integrated-iac-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-using-snyk/scan-infrastructure/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

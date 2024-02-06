@@ -8,5 +8,5 @@ With Snyk IaC, you can test your configuration files with the CLI using your cus
 
 There are two ways to use your built bundle:
 
-* [Using a local custom rules bundle](using-a-local-custom-rules-bundle.md) stored on your disk.
-* [Using a remote custom rules bundle](using-a-remote-custom-rules-bundle.md) by configuring a remote OCI Registry, where your custom rules bundle is already stored.
+* [Using a local custom rules bundle](use-a-local-iac-custom-rules-bundle.md) stored on your disk.
+* [Using a remote custom rules bundle](use-a-remote-iac-custom-rules-bundle.md) by configuring a remote OCI Registry, where your custom rules bundle is already stored.

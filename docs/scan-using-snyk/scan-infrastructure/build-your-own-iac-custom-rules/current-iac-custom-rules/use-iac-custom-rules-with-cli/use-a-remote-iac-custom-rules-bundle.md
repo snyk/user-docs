@@ -1,12 +1,12 @@
-# Using a remote custom rules bundle
+# Use a remote IaC custom rules bundle
 
 After you generate your custom rules bundle, you can distribute it to one of the supported OCI registries by following the steps in [Pushing a bundle](../writing-rules-using-the-sdk/pushing-a-bundle.md).
 
 After successfully pushing your custom rules bundle, you can enforce the use of the bundle using any of the following:
 
-* [Snyk settings](using-a-remote-custom-rules-bundle.md#snyk-settings-and-remote-custom-rules-bundle)
-* [Snyk API](using-a-remote-custom-rules-bundle.md#snyk-api-and-remote-custom-rules-bundle)
-* [Environment variables](using-a-remote-custom-rules-bundle.md#environment-variables-and-remote-custom-rules-bundle)
+* [Snyk settings](use-a-remote-iac-custom-rules-bundle.md#snyk-settings-and-remote-custom-rules-bundle)
+* [Snyk API](use-a-remote-iac-custom-rules-bundle.md#snyk-api-and-remote-custom-rules-bundle)
+* [Environment variables](use-a-remote-iac-custom-rules-bundle.md#environment-variables-and-remote-custom-rules-bundle)
 
 Finally, after you have enforced your custom rules using one of these options, configure the Snyk Snyk CLI with your username and password to allow Snyk to authorize a pull from your OCI registry:
 
