@@ -44,12 +44,6 @@ Select **Policies** to view the license and security policies for your Group:
 
 See [Policies](../../scan-with-snyk/policies/) for details.
 
-## Group settings
-
-Select **Settings** to view and manage Group settings.&#x20;
-
-See [Manage settings](../manage-settings/) for details.
-
 ## Group members
 
 Select **Members** to view members (users) in the Group.
@@ -59,3 +53,9 @@ Group members are members who have access to all Organizations in the Group. Mem
 {% endhint %}
 
 See [Manage users in a Group](../manage-users-in-organizations-and-groups/manage-users-in-a-group.md) for details.
+
+## Group settings
+
+Select **Settings** to view and manage Group settings.&#x20;
+
+See [Manage settings](../manage-settings/) for details.
