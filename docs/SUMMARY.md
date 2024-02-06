@@ -322,7 +322,7 @@
       * [Best practices for Java and Kotlin](scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/snyk-for-java-developers.md)
       * [FAQ about Java](scan-using-snyk/supported-languages-and-frameworks/java-and-kotlin/faq-about-java.md)
     * [JavaScript](scan-applications/supported-languages-and-frameworks/javascript.md)
-      * [Best practices for JavaScript and Node.js](scan-using-snyk/supported-languages-and-frameworks/javascript/snyk-for-javascript-node.js-developers.md)
+      * [Best practices for JavaScript and Node.js](scan-using-snyk/supported-languages-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md)
     * [PHP](scan-applications/supported-languages-and-frameworks/php.md)
     * [Python](scan-applications/supported-languages-and-frameworks/python.md)
     * [Ruby](scan-applications/supported-languages-and-frameworks/ruby.md)
