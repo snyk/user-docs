@@ -386,7 +386,7 @@
         * [Apply a Custom PR template](scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/customize-pr-templates-closed-beta/apply-a-custom-pr-template.md)
         * [Variables list and description](scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/customize-pr-templates/variables-list-and-description.md)
         * [Troubleshooting and limitations](scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/customize-pr-templates/troubleshooting-and-limitations.md)
-        * [Examples and template validation](scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/customize-pr-templates/validate-the-template-and-examples.md)
+        * [Examples and template validation](scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/customize-pr-templates/examples-and-template-validation.md)
   * [Snyk Code](scan-using-snyk/snyk-code/README.md)
     * [Supported languages, frameworks, and feature availability overview](scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md)
     * [Snyk Code Local Engine](scan-using-snyk/snyk-code/snyk-code-local-engine.md)
