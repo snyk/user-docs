@@ -783,7 +783,7 @@
     * [Requests for access to an Organization](snyk-admin/manage-users-in-organizations-and-groups/requests-for-access-to-an-organization.md)
     * [Configure session length for a Snyk Group](snyk-admin/manage-users-in-organizations-and-groups/configure-session-length-for-a-snyk-group.md)
   * [Manage user roles and permissions](snyk-admin/manage-permissions-and-roles/README.md)
-    * [Default user roles](snyk-admin/manage-permissions-and-roles/default-user-roles.md)
+    * [Pre-defined user roles](snyk-admin/manage-permissions-and-roles/pre-defined-user-roles.md)
     * [Manage user roles](snyk-admin/manage-permissions-and-roles/manage-user-roles.md)
     * [Change the role of a user](snyk-admin/manage-permissions-and-roles/change-the-permissions-role-of-a-user.md)
   * [Manage notifications](snyk-admin/manage-notifications.md)

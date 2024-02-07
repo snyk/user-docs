@@ -9,7 +9,7 @@ In the **Organization** where you want to manage users, select the **Members** m
 * [Filter and sort views](manage-users-in-organizations.md#filter-and-sort-views-of-organization-members)
 
 {% hint style="info" %}
-You must have the permissions required to perform these tasks. For details, see [Default user roles](../manage-permissions-and-roles/default-user-roles.md).
+You must have the permissions required to perform these tasks. For details, see [Default user roles](../manage-permissions-and-roles/pre-defined-user-roles.md).
 {% endhint %}
 
 ## Add members
