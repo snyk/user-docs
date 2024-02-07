@@ -31,11 +31,12 @@ sudo npm install -g
 3. The exit code from `snyk-filter` is 0 for pass (no issues) and 1 for fail (issues found).
 
 {% hint style="info" %}
-When using multi-step approach like snyk test --json>result-opensource.json and then piping results to a plugin, you’ll note that the [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) may stop/break the process on your build system before you get to the next step of using the output file with a plugin like snyk-to-html or snyk-filter. There are several options, dependant on the capabilities of your build tools:\
-1\) capture the [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) in a parameter, preventing it from being returned to the process, in addition to checking [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) for an error state.\
-2\) use ||true or some form of logic to prevent the [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) from terminating the process. Note by doing this, any return is ignored, such as error codes (network/Snyk platform issues or other non-scan result issue). Subsequently the next step of using the JSON will be likely to fail. Reviewing the  [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) , prior to proceeding to the next step in your script, is the recommended approach.
-
-3\) set the step to "continue on failure", if such option exists.
+When you use a multi-step approach like `snyk test --json > result-opensource.json` and then pass the results to a plugin, the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) may stop or break the process on your build system before you get to the step of passing the output file to a tool like `snyk-to-html` or `snyk-filter`. You have several options, depending on the capabilities of your build tools:\
+\
+1\) Capture the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) in a parameter to prevent it from being returned to the process in addition to checking for an error state.\
+2\) Use `||true` or some form of logic to prevent the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) from terminating the process.\
+Note that when you do this, any return code is ignored, such as error codes signifying network or Snyk platform issues or another non-scan result issue. The next step in using the JSON is likely to fail. It is recommended that you review the exit code before you proceed to the next step in your script.\
+3\) Set the step to `continue on failure`, if such an option exists.
 {% endhint %}
 
 ### Example with Snyk CLI (using .snyk-filter/snyk.yml by default)
