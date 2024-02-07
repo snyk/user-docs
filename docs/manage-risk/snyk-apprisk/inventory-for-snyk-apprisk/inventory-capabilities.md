@@ -76,6 +76,10 @@ Reflects the business criticality of the asset from A (most critical) to D (leas
 
 You can manually change the business criticality of an asset. Click the criticality level and select another one from the list.&#x20;
 
+After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A popup is displayed, asking you for confirmation about unlocking the value.
+
+<figure><img src="../../../.gitbook/assets/Code Asset - Lock Class.png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk AppRisk - Lock the value of a class</p></figcaption></figure>
+
 The Asset Class column is also available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 
 {% hint style="info" %}

@@ -41,6 +41,7 @@ Each filter component requires you to specify an asset property. Available prope
 * **Coverage gap** - specify the products for which the asset has not been scanned and do not meet the Set Coverage Control Policy requirements.
 * **Developers** - specify the developer or developers who contributed to the asset.
 * **Discovered** - specify the period when the asset was discovered.
+* **Locked attributes** - specify if the attribute value is locked.
 * **Last seen** - specify the repository freshness status.
 * **Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.

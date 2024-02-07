@@ -27,7 +27,7 @@ Every item listed in the inventory is considered an individual asset. Most asset
 * **Controls** - A report detailing all products detected by the Snyk AppRisk on a specific repository asset and all products that should be covered but are not yet by the Snyk AppRisk.
 * **Tags** -  Snyk AppRisk automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository, and repository latest updates. You can also use policies to tag repository assets.
 * **Developers** - includes the SCM profile details for code committers to the repository asset.
-* **Class** - reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. The class can be manually changed by you or automatically changed by a policy.
+* **Class** - reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. The class can be manually changed by you or automatically changed by a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
 
 <figure><img src="../../../.gitbook/assets/Inventory1.png" alt="Inventory view - Key attributes"><figcaption><p>Inventory view - Key attributes</p></figcaption></figure>
 
