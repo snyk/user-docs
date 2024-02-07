@@ -14,7 +14,7 @@ You must have specific permissions in order to change the role of a user.
 For example, only Group admins can assign the role of Group admin to other users. If you want to add a Group admin, and your company currently does not have any Group admins, ask Snyk [support](https://support.snyk.io/hc/en-us/requests/new) to promote at least one user.
 
 {% hint style="info" %}
-For more information on if your role has permission to change other user roles, see [Default user roles](pre-defined-user-roles.md).
+For more information on if your role has permission to change other user roles, see [Default user roles](default-user-roles.md).
 {% endhint %}
 
 ## How to change the role of a user

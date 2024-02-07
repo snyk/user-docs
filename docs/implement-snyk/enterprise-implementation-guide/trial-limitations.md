@@ -10,7 +10,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Service Accounts**](../../enterprise-setup/service-accounts/)**:** Not available.
 * [**Group / Multiple Orgs**](../../snyk-admin/manage-groups-and-organizations/)**:** Limited to one Group and one Org
 * [**Custom Project Tags**](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)**:** Not available.
-* [**Custom User Roles**](../../snyk-admin/manage-permissions-and-roles/manage-user-roles.md): Not available.
+* [**Custom User Roles**](../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md): Not available.
 * [**Audit Logging**](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md): Not available.
 * [**Local Code Engine**](broken-reference): Not available.
 * [**Broker**](../../enterprise-setup/snyk-broker/): Not available.

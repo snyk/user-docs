@@ -1,6 +1,6 @@
 # Prioritization setup: User permissions
 
-Currently, Snyk AppRisk Essentials is available at the Group level, so [grant relevant users the Group viewer or the Organization Collaborator role](../../../../snyk-admin/manage-permissions-and-roles/manage-user-roles.md#manage-roles). This is the minimum required permission, but Group Admins can also view Prioritization.
+Currently, Snyk AppRisk Essentials is available at the Group level, so [grant relevant users the Group viewer or the Organization Collaborator role](../../../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md#manage-roles). This is the minimum required permission, but Group Admins can also view Prioritization.
 
 After users have the right permission, they will see a new **Insights UI** option in the left navigation at the Group level.
 
