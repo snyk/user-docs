@@ -793,7 +793,7 @@
       * [Remediator role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/remediator-role-template.md)
       * [Integration Editor/Implementor role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/integration-editor-implementor-role-template.md)
       * [Incident Responder role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/incident-responder-role-template.md)
-      * [Security Champion role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/security-champion-role-template.md)
+      * [Application Security Engineer role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/application-security-engineer-role-template.md)
       * [Kubernetes Uploader role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/kubernetes-uploader-role-template.md)
       * [Legal Advisor role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/legal-advisor-role-template.md)
   * [Manage notifications](snyk-admin/manage-notifications.md)

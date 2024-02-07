@@ -10,7 +10,7 @@ You can use these templates to create your own custom roles that fit into and re
 * [Remediator](remediator-role-template.md)
 * [Integration Editor/Implementor](integration-editor-implementor-role-template.md)
 * [Incident Responder](incident-responder-role-template.md)
-* [Security Champion](security-champion-role-template.md)
+* [Security Champion](application-security-engineer-role-template.md)
 * [Kubernetes Uploader](kubernetes-uploader-role-template.md)
 * [Legal Advisor](legal-advisor-role-template.md)
 
