@@ -1,6 +1,6 @@
 # Snyk CLI
 
-This documentation provides guidance and information for using the Snyk CLI to bring the [functionality of Snyk](../getting-started/introducing-snyk.md) into your development workflow. Here you will find:
+This documentation provides guidance and information for using the Snyk CLI to bring the [functionality of Snyk](broken-reference) into your development workflow. Here you will find:
 
 * Guidance for [getting started with the CLI](getting-started-with-the-snyk-cli.md)
 * An [important code execution warning for the Snyk CLI](code-execution-warning-for-snyk-cli.md)

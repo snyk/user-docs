@@ -2,7 +2,6 @@
 
 * [Snyk Documentation](README.md)
 * [Getting started](getting-started/README.md)
-  * [Introducing Snyk](getting-started/introducing-snyk.md)
   * [Quickstart](getting-started/quickstart/README.md)
     * [Create or log in to a Snyk account](getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
     * [Set up an integration](getting-started/quickstart/set-up-an-integration.md)
