@@ -1000,7 +1000,6 @@
 * [More info](more-info/README.md)
   * [How Snyk handles your data](more-info/how-snyk-handles-your-data.md)
   * [Regional hosting and data residency](more-info/regional-hosting-and-data-residency.md)
-  * [Supported browsers](more-info/supported-browsers.md)
   * [Snyk Terms of Support and Services Glossary](more-info/snyk-terms-of-support-and-services-glossary/README.md)
     * [Snyk Jumpstart Services Description](more-info/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
     * [Statement of Work](more-info/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
