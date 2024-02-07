@@ -19,7 +19,7 @@ You can install `snyk-to-html`using npm:
 npm install snyk-to-html -g
 ```
 
-To install the `snyk-to-html` plugin locally, clone the [`snyk-to-html`](https://github.com/snyk/snyk-to-html) GitHub repository and use the script:
+To install the `snyk-to-html` plugin locally, [clone the `snyk-to-html` GitHub repository](https://github.com/snyk/snyk-to-html) and use the script:
 
 ```
 npm install
@@ -80,19 +80,31 @@ Navigate to the subfolder with the related files and run the following line to c
 
 ### Convert a JSON or SARIF file to HTML to view in a browser
 
-For automation purposes, you may be creating JSON file for programmatic access to the results or already have one from a previous scan. You can send this JSON output to `snyk-to-html` to generate an HTML file. Follow these steps to run `snyk test` and then convert the output file to HTML:
+For automation purposes, you may be creating a JSON file for programmatic access to the results or already have one from a previous scan. You can send this JSON output to `snyk-to-html` to generate an HTML file.
+
+Follow these steps to run `snyk test` and then convert the output file to HTML.
 
 1. Change the directory to the root folder of the repository you want to test.
-2. Run the appropriate `test` command for each product type as shown:\
+2. Run the appropriate `test` command for each product as shown:\
    `snyk test --json > results-opensource.json`\
    `snyk code test --json > results-code.json`\
    `snyk container test [image] --json > results-container.json`\
-   `snyk iac test --json > results-iac.json`
+   `snyk iac test --json > results-iac.json`\
+   If an exit code stops the process before piping the output to the tool, refer to the note that follows these steps.
 3. Pass the JSON file to `snyk-to-html` to be converted to HTML. The input files should be valid JSON and use UTF-8 encoding. Ensure you use the name of the output file you generated:\
    `snyk-to-html -i results.json -o results-opensource.html`\
    `snyk-to-html -i results-code.json -o results-code.html`\
    `snyk-to-html -i results-container.json -o results-container.html`\
    `snyk-to-html -i results-iac.json -o results-iac.html`
+
+{% hint style="info" %}
+When you use a multi-step approach like `snyk test --json > result-opensource.json` and then pass the results to a plugin, the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) may stop or break the process on your build system before you get to the step of passing the output file to a tool like `snyk-to-html` or `snyk-filter`. You have several options, depending on the capabilities of your build tools:\
+\
+1\) Capture the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) in a parameter to prevent it from being returned to the process in addition to checking for an error state.\
+2\) Use `||true` or some form of logic to prevent the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) from terminating the process.\
+Note that when you do this, any result is ignored, such as error codes signifying network or Snyk platform issues or another non-scan result issue. The next step in using the JSON is likely to fail. It is recommended that you review the exit code before you proceed to the next step in your script.\
+3\) Set the step to `continue on failure`, if such an option exists.
+{% endhint %}
 
 ### Use `snyk-to-html` command options
 

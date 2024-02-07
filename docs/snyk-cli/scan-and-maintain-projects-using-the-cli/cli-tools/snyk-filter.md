@@ -28,7 +28,15 @@ sudo npm install -g
 
 1. Implement your custom `jq` filters in a .snyk-filter/snyk.yml file relative to your current working directory where you are running `snyk test`. See [sample-filters](https://github.com/snyk-tech-services/snyk-filter/tree/develop/sample-filters) and tweak things from there; use [JQPlay](https://jqplay.org/)
 2. Then pipe your `snyk test --json` output into `snyk-filter` or use the `-i` argument to input a JSON file. Use the `-f` argument to point to the yml file containing your custom filters if you are not using the default location (.snyk-filter/snyk.yml).
-3. The return code from `snyk-filter` is 0 for pass (no issues) and 1 for fail (issues found).
+3. The exit code from `snyk-filter` is 0 for pass (no issues) and 1 for fail (issues found).
+
+{% hint style="info" %}
+When using multi-step approach like snyk test --json>result-opensource.json and then piping results to a plugin, you’ll note that the [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) may stop/break the process on your build system before you get to the next step of using the output file with a plugin like snyk-to-html or snyk-filter. There are several options, dependant on the capabilities of your build tools:\
+1\) capture the [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) in a parameter, preventing it from being returned to the process, in addition to checking [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) for an error state.\
+2\) use ||true or some form of logic to prevent the [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) from terminating the process. Note by doing this, any return is ignored, such as error codes (network/Snyk platform issues or other non-scan result issue). Subsequently the next step of using the JSON will be likely to fail. Reviewing the  [exit code](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#exit-codes-for-cli-commands) , prior to proceeding to the next step in your script, is the recommended approach.
+
+3\) set the step to "continue on failure", if such option exists.
+{% endhint %}
 
 ### Example with Snyk CLI (using .snyk-filter/snyk.yml by default)
 
