@@ -29,7 +29,7 @@ In the context of your application, the Triage Assistant evaluates the vulnerabl
 {% hint style="info" %}
 To provide this feature, Snyk takes a temporary copy of your Git repository contents.
 
-For more information, see [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md).
+For more information, see [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md).
 {% endhint %}
 
 ## Assessment of Jackson Vulnerable Conditions

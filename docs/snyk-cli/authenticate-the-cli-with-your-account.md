@@ -13,7 +13,7 @@ For details, see [How to obtain and authenticate with your Snyk API token](../ge
 ## Methods of authenticating with Snyk
 
 {% hint style="info" %}
-If you are using Snyk on the EU and AU tenants, you must set your endpoints accordingly before running `snyk auth`. For more information, see [Regional hosting and data residency](../more-info/regional-hosting-and-data-residency.md#cli-and-ci-pipelines-urls).
+If you are using Snyk on the EU and AU tenants, you must set your endpoints accordingly before running `snyk auth`. For more information, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md#cli-and-ci-pipelines-urls).
 {% endhint %}
 
 You can authenticate by using the CLI `snyk auth` command to launch the authentication dialog in your browser.  See the [Auth command help](commands/auth.md). This method is the default and recommended.

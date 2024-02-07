@@ -28,7 +28,7 @@ Review the chart values file to adjust additional configurations such as increas
 
 ## **Important notes about settings**
 
-The Dispatcher Base Url should be specific to your region if you are using a regional Snyk platform, for example, api.eu.snyk.io. See [Regional hosting and data residency](../../more-info/regional-hosting-and-data-residency.md) for details.
+The Dispatcher Base Url should be specific to your region if you are using a regional Snyk platform, for example, api.eu.snyk.io. See [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md) for details.
 
 If you are using app.snyk.io, the following is not required. It is applicable only to regional Snyk platforms.
 

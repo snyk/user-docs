@@ -143,7 +143,7 @@ To enable full source code analysis, adjust your settings as follows:
 
 <figure><img src="../../.gitbook/assets/image (149) (1).png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
 
-For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md).
+For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md).
 
 #### **Private modules**
 

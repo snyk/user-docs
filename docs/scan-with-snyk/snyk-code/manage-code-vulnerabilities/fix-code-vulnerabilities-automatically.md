@@ -86,4 +86,4 @@ The data collection process is thorough and includes the following:
 
 The training data is ensured to be of the highest quality to optimize the performance of the LLM.
 
-For more information, see [How Snyk handles your data](../../../more-info/how-snyk-handles-your-data.md).
+For more information, see [How Snyk handles your data](../../../working-with-snyk/how-snyk-handles-your-data.md).

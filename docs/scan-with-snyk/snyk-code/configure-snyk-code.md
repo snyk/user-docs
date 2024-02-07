@@ -54,7 +54,7 @@ Then, you can import the required repositories to your Snyk account, and Snyk Co
 {% hint style="info" %}
 Snyk Code temporarily clones your repositories for code analysis. This requires appropriate permissions and HTTPS access to your SCM.
 
-For more information on how data is stored in Snyk, see [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md). For more details about integrations, see [Integrate with Snyk](../../integrate-with-snyk/).
+For more information on how data is stored in Snyk, see [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md). For more details about integrations, see [Integrate with Snyk](../../integrate-with-snyk/).
 {% endhint %}
 
 To integrate your SCM with your Snyk account:

@@ -26,6 +26,6 @@ The following Snyk plugins and extensions are available:
 The training session [Introduction to using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/) provides further guidance.
 
 {% hint style="info" %}
-&#x20;If your Snyk application is hosted on the Snyk EU or AU data center, then you must specify this in your IDE plugin settings with the [URL relevant to your region](../../../more-info/regional-hosting-and-data-residency.md#ides-urls).\
-See [Regional hosting and data residency](../../../more-info/regional-hosting-and-data-residency.md) for more details.
+&#x20;If your Snyk application is hosted on the Snyk EU or AU data center, then you must specify this in your IDE plugin settings with the [URL relevant to your region](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).\
+See [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md) for more details.
 {% endhint %}

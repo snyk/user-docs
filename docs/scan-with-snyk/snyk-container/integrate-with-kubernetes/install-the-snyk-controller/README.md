@@ -30,7 +30,7 @@ limits: cpu: "1" memory: "2Gi"
 The Snyk-monitor Kubernetes integration is designed to be deployed into your cluster. It has not been tested on Serverless FaaS deployment options such as Fargate, Google Cloud Run, and Azure Container Instances. Deployment into serverless platforms may be unreliable and is not recommended or supported.
 {% endhint %}
 
-The Snyk Controller defaults to using the US data center. If you are using Snyk deployed in [an alternative data center](../../../../more-info/regional-hosting-and-data-residency.md), you must change the upstream endpoint `integrationApi` URL through an environment variable for your specific deployment:
+The Snyk Controller defaults to using the US data center. If you are using Snyk deployed in [an alternative data center](../../../../working-with-snyk/regional-hosting-and-data-residency.md), you must change the upstream endpoint `integrationApi` URL through an environment variable for your specific deployment:
 
 * AU: [https://api.au.snyk.io/v2/kubernetes-upstream](https://api.au.snyk.io/v1/kubernetes-upstream)
 * EU: [https://api.eu.snyk.io/v2/kubernetes-upstream](https://api.eu.snyk.io/v1/kubernetes-upstream)

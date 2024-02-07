@@ -31,7 +31,7 @@ To start using IaC+ you must have the following:
 ## Import IaC+ SCM repositories
 
 {% hint style="warning" %}
-IaC+ SCM integrations use the new Snyk [git repository cloning](../../../more-info/how-snyk-handles-your-data.md#git-repository-cloning) capability to support multi-file analysis. This capability is available through [Snyk Preview](../../../snyk-admin/manage-settings/snyk-preview.md), and must be turned on for IaC+ SCM scans to work properly.
+IaC+ SCM integrations use the new Snyk [git repository cloning](../../../working-with-snyk/how-snyk-handles-your-data.md#git-repository-cloning) capability to support multi-file analysis. This capability is available through [Snyk Preview](../../../snyk-admin/manage-settings/snyk-preview.md), and must be turned on for IaC+ SCM scans to work properly.
 {% endhint %}
 
 {% hint style="warning" %}

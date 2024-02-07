@@ -55,5 +55,5 @@ Snyk has several pricing plans available, from free to Enterprise. See [Snyk Pri
 
 ## What happens to my data?
 
-See [How Snyk handles your data](../more-info/how-snyk-handles-your-data.md) for details of Snyk data handling.&#x20;
+See [How Snyk handles your data](../working-with-snyk/how-snyk-handles-your-data.md) for details of Snyk data handling.&#x20;
 
