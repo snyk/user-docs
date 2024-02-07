@@ -2,7 +2,7 @@
 
 Here are some templates for custom roles, with their titles and corresponding permissions reflecting the key responsibilities of users throughout the development lifecycle while using Snyk.
 
-You can use these templates to create your own custom roles that fit into and reflect your Organization's structure.
+You can use these templates to create your own custom roles that fit into and reflect your business structure.
 
 * [Team Lead](team-lead-role-template.md)
 * [Developer](developer-role-template.md)
