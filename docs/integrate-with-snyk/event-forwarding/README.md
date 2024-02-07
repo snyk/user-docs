@@ -34,7 +34,7 @@ The **Snyk issue** event type currently does not include Snyk Cloud issues.
 {% endhint %}
 
 {% hint style="info" %}
-The **Snyk platform audit** event type is available with Snyk Enterprise plans. See [Pricing plans](../../more-info/snyk-plans-and-pricing.md) for details
+The **Snyk platform audit** event type is available with Snyk Enterprise plans. See [Pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) for details
 {% endhint %}
 
 ## Supported integrations

@@ -8,7 +8,7 @@ You can use Snyk to scan your code:
 To start using Snyk scanning capabilities for open-source libraries, container images, and application code, see [Start scanning](../start-scanning-using-the-cli-web-ui-or-api.md).
 
 {% hint style="info" %}
-Scans may be limited on your account, depending on your[ Pricing Plan](../../more-info/snyk-plans-and-pricing.md). See [What counts as a scan?](what-counts-as-a-test.md) for more information.
+Scans may be limited on your account, depending on your[ Pricing Plan](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md). See [What counts as a scan?](what-counts-as-a-test.md) for more information.
 {% endhint %}
 
 ## Scan manually

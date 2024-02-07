@@ -21,7 +21,7 @@ At the end of the transition window, **integrations which have not been authoriz
 The [Amazon EventBridge](https://aws.amazon.com/eventbridge/) integration sends Snyk platform events to EventBridge, allowing you to integrate Snyk events into your existing AWS environments. The integration can be configured to send two different types of events:
 
 * **Snyk issue events** - these events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
-* **Snyk platform audit events** - these events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Audit logs](https://docs.snyk.io/snyk-admin/manage-users-and-permissions/audit-logs). This event type is available with Snyk Enterprise plans. See [Pricing plans](../../more-info/snyk-plans-and-pricing.md) for details
+* **Snyk platform audit events** - these events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Audit logs](https://docs.snyk.io/snyk-admin/manage-users-and-permissions/audit-logs). This event type is available with Snyk Enterprise plans. See [Pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) for details
 
 To set up the integration, there are two steps:
 
@@ -99,7 +99,7 @@ Not all Snyk issue data is included in these events, though Snyk is continually 
 ### Snyk audit events
 
 {% hint style="info" %}
-This event type is available with Snyk Enterprise plans. See [Pricing plans](../../more-info/snyk-plans-and-pricing.md) for details.
+This event type is available with Snyk Enterprise plans. See [Pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) for details.
 {% endhint %}
 
 This event type forwards Snyk platform audit logs with the same schema defined as part of the Snyk [v1 Audit Log API](https://snyk.docs.apiary.io/#reference/audit-logs). &#x20;

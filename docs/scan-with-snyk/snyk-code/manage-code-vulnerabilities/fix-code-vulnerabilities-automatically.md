@@ -41,7 +41,7 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Requirements for DeepCode AI Fix
 
-* [Snyk Code Enterprise plan](../../../more-info/snyk-plans-and-pricing.md).
+* [Snyk Code Enterprise plan](../../../implement-snyk/enterprise-implementation-guide/trial-limitations.md).
 * Snyk IDE Plugin for  [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview) or [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations).
 
 ## Enable DeepCode AI Fix
