@@ -14,7 +14,7 @@ For users who are evaluating Snyk or planning an enterprise deployment, and for 
 The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. Visit the [guide](broken-reference) specific to your language for more details.
 {% endhint %}
 
-To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see the [Ways to integrate Snyk at your company](https://learn.dev.snyk.io/lesson/integrate-snyk-at-your-company/) course.
+To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see the [Ways to integrate Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/) course.
 
 To see what Snyk can do for you, **try out a Project**
 
