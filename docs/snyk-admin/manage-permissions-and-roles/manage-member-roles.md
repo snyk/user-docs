@@ -1,4 +1,4 @@
-# Manage User Roles
+# Manage user roles
 
 {% hint style="info" %}
 **Feature availability**\
@@ -27,7 +27,7 @@ Click the **Create role** button. Basic details about the role appear in the top
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 15.29.53.png" alt="Basic information about the new role"><figcaption><p>Basic information about the new role</p></figcaption></figure>
 
-The bottom section lists all the permissions available at the Organization level that you can use to define the role. For more information about these permissions, see [Default user roles](default-user-roles.md).
+The bottom section lists all the permissions available at the Organization level that you can use to define the role. For more information about these permissions, see [Default user roles](pre-defined-user-roles.md).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 17.07.18.png" alt="Organization level permissions"><figcaption><p>Organization level permissions</p></figcaption></figure>
 

@@ -12,7 +12,7 @@ Permissions are granted to users according to their role.
 
 Snyk Enterprise plan customers can [manage user roles](manage-member-roles.md), [change the permissions (role) of a user](change-the-permissions-role-of-a-user.md) in the Snyk Web UI, or [update member roles using the Snyk API v1](../manage-users-and-permissions/update-member-roles-via-api.md).
 
-When you create or edit a role, as explained on the [Manage user roles](manage-member-roles.md) page, the Web UI displays a list of permissions you can associate with each role. For more information, see the page [Pre-defined user roles](default-user-roles.md).
+When you create or edit a role, as explained on the [Manage user roles](manage-member-roles.md) page, the Web UI displays a list of permissions you can associate with each role. For more information, see the page [Pre-defined user roles](pre-defined-user-roles.md).
 
 There are many considerations involved in managing user roles. See these sections on the [Manage user roles](manage-member-roles.md) page:
 
