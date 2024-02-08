@@ -85,14 +85,19 @@ For automation purposes, you may be creating a JSON file for programmatic access
 Follow these steps to run `snyk test` and then convert the output file to HTML.
 
 1. Change the directory to the root folder of the repository you want to test.
-2. Run the appropriate `test` command for each product as shown:\
-   `snyk test --json > results-opensource.json`\
-   `snyk code test --json > results-code.json`\
-   `snyk container test [image] --json > results-container.json`\
-   `snyk iac test --json > results-iac.json`\
-   If an exit code stops the process before piping the output to the tool, refer to the note that follows these steps.
+2.  Run the appropriate `test` command for each product as shown:\
+    `snyk test --json-file-output=results-opensource.json`
+
+    `snyk code test --json-file-output=results-code.json`
+
+    `snyk container test [image] --json-file-output=results-container.json`
+
+    `snyk iac test  --json-file-output=results-iac.json`
+
+    \
+    If an exit code stops the process before piping the output to the tool, refer to the note that follows these steps.
 3. Pass the JSON file to `snyk-to-html` to be converted to HTML. The input files should be valid JSON and use UTF-8 encoding. Ensure you use the name of the output file you generated:\
-   `snyk-to-html -i results.json -o results-opensource.html`\
+   `snyk-to-html -i results-opensource.json -o results-opensource.html`\
    `snyk-to-html -i results-code.json -o results-code.html`\
    `snyk-to-html -i results-container.json -o results-container.html`\
    `snyk-to-html -i results-iac.json -o results-iac.html`

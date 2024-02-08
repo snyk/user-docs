@@ -49,7 +49,9 @@ Note that when you do this, any return code is ignored, such as error codes sign
 
 ### Example to input a JSON file
 
-`snyk-filter -i snyk_results.json`
+snyk test --json-file-output=results-opensource.json
+
+`snyk-filter -i` results-opensource.json
 
 ### Example with custom yml file location
 
