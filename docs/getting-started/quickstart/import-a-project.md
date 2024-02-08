@@ -72,7 +72,7 @@ Importing a Project also does the following:
 * Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
 
 {% hint style="info" %}
-For training on best practices in using automation, visit the Snyk course [Source Code Manager Configurations](https://learn.dev.snyk.io/lesson/configure-snyk-scm/).
+For training on best practices in using automation, visit the Snyk course [Source Code Manager Configurations](https://learn.snyk.io/lesson/configure-snyk-scm/).
 {% endhint %}
 
 ## What's next?

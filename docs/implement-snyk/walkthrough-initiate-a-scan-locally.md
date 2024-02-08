@@ -12,7 +12,7 @@ If you have a set of applications you are responsible for, as an individual or a
 The tool or tools that best serve your tech stack, environment, and workflow depend on your individual circumstances. See the language pages for more information.
 {% endhint %}
 
-To learn more about choosing the integration points in the software development lifecycle that work best for you and your current level of security maturity, see the [Ways to integrate Snyk at your company](https://learn.dev.snyk.io/lesson/integrate-snyk-at-your-company/) course.
+To learn more about choosing the integration points in the software development lifecycle that work best for you and your current level of security maturity, see the [Ways to integrate Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/) course.
 
 {% hint style="info" %}
 To perform code scanning, ensure you enable Snyk Code. For details, see [Activate Snyk Code using the Web UI](broken-reference).
