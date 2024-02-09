@@ -128,6 +128,13 @@ Enable the following permissions:
 
 ## BitBucket setup guide
 
+{% hint style="info" %}
+BitBucket Server and BitBucket Cloud do not support automatic language detection. \
+If you use BitBucket Cloud you can manually add the language tags to a repository.&#x20;
+
+Note that for BitBucket Server you are unable to manually add language tags to a repository.
+{% endhint %}
+
 ### Pulled entities
 
 * Users
