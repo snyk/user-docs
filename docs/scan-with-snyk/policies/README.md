@@ -1,10 +1,11 @@
 # Policies
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available to Enterprise customers. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**&#x20;
 
-Snyk policies apply only to Snyk Open Source scans.
+Policies are available for Enterprise plans and apply only to Snyk Open Source scans.&#x20;
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Snyk policies contain rules to define how Snyk behaves when encountering specific types of issues. With policies, you can identify types of issues based on conditions, such as `no exploit available`, and then apply actions to these issues, such as changing the severity. Thus by using customizable Snyk policies, you can define actions for specific types of issues encountered in scanning.

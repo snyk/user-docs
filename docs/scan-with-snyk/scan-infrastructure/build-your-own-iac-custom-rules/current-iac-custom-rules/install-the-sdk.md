@@ -10,7 +10,7 @@
 
 After installation, you can get started writing rules. For details, see [Writing rules using the SDK](writing-rules-using-the-sdk/).
 
-{% hint style="warning" %}
+{% hint style="info" %}
 After installation, Apple M1 users might encounter the error `Architecture not supported: ${process.arch}`. To resolve this, first install the Rosetta 2 software by running `softwareupdate --install-rosetta`.
 {% endhint %}
 

@@ -43,9 +43,12 @@ To learn more about container security, see [The importance of Container Monitor
 
 You can also access aggregate reports of vulnerabilities across all of your Projects.
 
-{% hint style="info" %}
-**Feature availability**\
-The aggregate reports feature is available with all paid plans. For more details, see [pricing plans](https://snyk.io/plans/).
+{% hint style="warning" %}
+**Release status**&#x20;
+
+The aggregate reports feature is available for all paid plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 To monitor an image, run the `container monitor` command:

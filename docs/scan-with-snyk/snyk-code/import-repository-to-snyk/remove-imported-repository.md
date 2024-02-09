@@ -6,7 +6,7 @@ If you do not want Snyk to continue testing one or more of your imported reposit
   * Deactivate the repository.
   * Delete the repository from your Snyk Account.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 If you remove the entire repository from your Account, your repository will no longer be analyzed by any of the Snyk products.
 {% endhint %}
 
@@ -14,7 +14,7 @@ If you remove the entire repository from your Account, your repository will no l
   * Deactivate the Project.
   * Delete the Project from your Snyk Account.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 If you remove only the **Code analysis** Project, other Snyk products that are enabled in your account will continue to analyze the imported repository.
 {% endhint %}
 

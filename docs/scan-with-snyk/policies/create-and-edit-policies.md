@@ -36,7 +36,7 @@ Click the three dots on the right-hand side to duplicate or delete a policy:
 
 ### Delete a policy
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Deleting a policy cannot be undone. If you delete a policy that has Organizations assigned to it, those Organizations will return to the default policy.
 {% endhint %}
 

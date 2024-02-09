@@ -1,12 +1,12 @@
 # Service accounts
 
-{% hint style="info" %}
-**Feature availability**\
-Service accounts are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
-{% endhint %}
+{% hint style="warning" %}
+**Release status**\
+SSO is available only for Enterprise plans.
 
-{% hint style="info" %}
 Free and Team plan users and Trial users have access to a Snyk user's token under their profile and can use this token to authenticate with a CI/CD, to run the CLI locally or on a build machine, and to authenticate with an IDE manually.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials. Snyk needs authentication in order to initiate Snyk processes.

@@ -8,7 +8,9 @@ To retrieve the orgid that is used by your App, send a GET request to the `orgs`
 https://api.snyk.io/rest/orgs?version={version}
 ```
 
-{% hint style="danger" %}
+{% hint style="warning" %}
+**Deprecated**
+
 Snyk deprecated the `/rest/apps/{clientId}/orgs?version={version}` endpoint as of 2022-03-02, and sunset it after 2022-04-03.
 {% endhint %}
 

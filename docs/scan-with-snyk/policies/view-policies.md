@@ -1,6 +1,6 @@
 # View policies
 
-{% hint style="warning" %}
+{% hint style="info" %}
 You must be a Group administrator to view, create, and modify policies for that Group.
 {% endhint %}
 

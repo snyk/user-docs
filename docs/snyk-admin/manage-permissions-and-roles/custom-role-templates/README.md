@@ -14,7 +14,7 @@ You can use these templates to create your own custom roles that fit into and re
 * [Kubernetes Uploader](kubernetes-uploader-role-template.md)
 * [Legal Advisor](legal-advisor-role-template.md)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 These templates are not provided as[ pre-defined roles](../pre-defined-user-roles.md) in Snyk.
 {% endhint %}
 

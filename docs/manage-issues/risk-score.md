@@ -18,7 +18,7 @@ Risk Score replaces the Priority Score directly. See the [priority score docs](.
 The Priority Score will be replaced with the Risk Score when Snyk Open Source and Snyk Container Projects are re-tested
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Note that in the API, the relevant fields are still named with `priority.`When Risk Score is enabled, the scores and factors populated in these fields are based on the Risk Score model as part of the beta,&#x20;
 {% endhint %}
 
@@ -373,7 +373,7 @@ Whether or not the asset introducing this issue is exposed to the Internet.
 `No data` - Likelihood subscore will not change
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 All factor names and their effect on the score are subject to change during the early access period.&#x20;
 {% endhint %}
 

@@ -1,6 +1,6 @@
 # Amazon EventBridge
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Transition to Snyk Apps**
 
 Snyk is currently transitioning event forwarding integrations to use the Snyk Apps platform. This change will enable new features and enhanced security across current and future Cloud Events integrations.&#x20;

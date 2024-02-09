@@ -6,7 +6,7 @@ This section describes the actions you can perform on all Reports tabs.
 
 At the Organization level, from the top of the Reports area, you can search for and filter specific Snyk Projects, and you can filter Projects by severity and type. After you've filtered, the settings are retained as you navigate between tabs.
 
-{% hint style="danger" %}
+{% hint style="info" %}
 The maximum support for filtering is 1,000 Projects.
 {% endhint %}
 

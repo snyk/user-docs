@@ -4,7 +4,7 @@
 For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/hc/en-us/articles/4404288846353-Broker-Troubleshooting).
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Multi-tenant settings**\
 When you are setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md) for details.
 {% endhint %}

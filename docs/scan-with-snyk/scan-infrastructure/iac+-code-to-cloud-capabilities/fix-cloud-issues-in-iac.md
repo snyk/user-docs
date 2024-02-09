@@ -1,6 +1,8 @@
 # Fix cloud issues in IaC
 
-{% hint style="info" %}
+{% hint style="warning" %}
+**Release** **status**
+
 The fix cloud issues in IaC feature is available for [IaC+](./) only and supports AWS, Azure, and Google Cloud.
 {% endhint %}
 

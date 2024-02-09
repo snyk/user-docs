@@ -1,9 +1,11 @@
 # Custom rules
 
-{% hint style="info" %}
-**Feature availability**
+{% hint style="warning" %}
+**Release status**&#x20;
 
-The Snyk Code custom rules feature is in [Early Access](../../../getting-started/snyk-release-process.md#open-beta) and available only for Enterprise plans through Snyk Preview. See [Enable custom rules](introduction-to-snyk-code-custom-rules.md).
+Snyk Code custom rules are [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
+
+To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
 {% endhint %}
 
 This feature allows you to create custom rules to run queries against the code stack as part of your investigation workflow.

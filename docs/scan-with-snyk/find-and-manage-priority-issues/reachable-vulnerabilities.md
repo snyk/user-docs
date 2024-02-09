@@ -35,11 +35,15 @@ The following integrations are supported for Reachable Vulnerabilities analysis:
 * [Azure Repos](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md) (Currently in Open Beta)
 * [Brokered connections](../../enterprise-setup/snyk-broker/connections-with-snyk-broker.md) (Currently in Open Beta)
 
-{% hint style="info" %}
-To enable the open beta integration, navigate to [Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md) and toggle the **Enable reachability for all SCM providers** option.&#x20;
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Reachability for all SCM providers is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
+
+To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Reachable vulnerability analysis using the Snyk CLI, other Git integrations, and other languages is not currently supported.
 {% endhint %}
 
@@ -56,7 +60,7 @@ After a vulnerability is identified, it receives one of two reachability statuse
 * Reachable - A direct or indirect path was found from your application to the vulnerable code.
 * No path found - No path found from your application to the vulnerable code.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 If a `no path found` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
 {% endhint %}
 
@@ -70,7 +74,7 @@ After importing or testing a Project using the Snyk UI, the Project is monitored
 
 <figure><img src="../../.gitbook/assets/image (124) (1) (1) (1) (2) (1) (1) (1) (2) (2).png" alt="Reachability call path"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Reachability status is currently not available using Reports or the API.
 {% endhint %}
 

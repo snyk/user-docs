@@ -4,7 +4,7 @@ You can [view dependencies](view-dependencies.md) and [license information](view
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 12.45.48.png" alt="Dependencies tab for an Organization"><figcaption><p>Dependencies tab for an Organization</p></figcaption></figure>
 
-{% hint style="warning" %}
+{% hint style="info" %}
 When you import or re-test a Project, changes will be reflected on the **Dependencies** UI after a ten-second delay.
 {% endhint %}
 

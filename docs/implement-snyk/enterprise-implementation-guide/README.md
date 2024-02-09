@@ -29,7 +29,7 @@ This guide is composed of multiple phases, outlining a series of actions that al
 
 For large businesses, we recommend you first focus on visibility - getting a clear sense of the security issues, but without always fixing them.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 This does not stop you from fixing issues using Snyk. You can start fixing issues early, but the emphasis is to avoid blocking development early on, build trust, and slowly introduce gating in later phases, usually the prevention phase.
 {% endhint %}
 

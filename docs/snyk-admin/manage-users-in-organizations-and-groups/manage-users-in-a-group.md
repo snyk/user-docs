@@ -1,8 +1,11 @@
 # Manage users in a Group
 
-{% hint style="info" %}
-**Feature availability**\
-Groups are available with the Snyk Enterprise plan. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Groups available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Select the **Group** where you want to manage users and the **Members** menu option to manage your Group members:

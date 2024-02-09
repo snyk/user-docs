@@ -6,7 +6,7 @@ This page explains how to configure the custom mapping of roles for Ping Identit
 This guide assumes your Ping Identity application is configured and functional.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact, as self-serve SSO does not accommodate custom mapping.
 {% endhint %}
 

@@ -200,8 +200,8 @@ For more information, see [Supported languages, frameworks, and feature availabi
 
 ### Code Quality
 
-{% hint style="info" %}
-**Feature availability**
+{% hint style="warning" %}
+**Release status**
 
 Code Quality is an experimental feature. If you are interested in using the feature, contact your Snyk team.
 {% endhint %}

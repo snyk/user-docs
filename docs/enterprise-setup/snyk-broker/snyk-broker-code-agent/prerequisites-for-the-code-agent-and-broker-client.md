@@ -12,7 +12,7 @@ The maximum file size you can import via the Snyk Broker – Code Agent deployme
 
 The machine that hosts the Broker Client and the Code agent must have the ability to run a Docker Container, for example, by using a Docker Desktop or Kubernetes.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\

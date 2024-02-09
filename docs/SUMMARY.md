@@ -844,7 +844,7 @@
     * [Log4shell command use](snyk-cli/scan-and-maintain-projects-using-the-cli/log4shell-command-use.md)
     * [Monitor your projects at regular intervals](snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md)
     * [How to select the Organization to use in the CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md)
-    * [Group projects by branch or version for monitoring](snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
+    * [Group Projects by branch or version for monitoring](snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
     * [Setup.py file failing to scan or finding zero dependencies](snyk-cli/scan-and-maintain-projects-using-the-cli/setup.py-file-failing-to-scan-or-finding-zero-dependencies.md)
     * [Severity thresholds for CLI tests](snyk-cli/scan-and-maintain-projects-using-the-cli/set-severity-thresholds-for-cli-tests.md)
     * [@snyk/protect package](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-protect-package.md)

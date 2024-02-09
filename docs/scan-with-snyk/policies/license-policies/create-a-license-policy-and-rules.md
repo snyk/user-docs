@@ -1,11 +1,14 @@
 # Create a license policy and rules
 
-{% hint style="info" %}
-**Feature availability**\
-For customers with an Enterprise plan, Group administrators can create or modify a policy. See [plans and pricing](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+License policies are available for Enterprise plans and apply only to Snyk Open Source scans.&#x20;
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
-Administrators can configure the following settings for each license:
+Group administrators can configure the following settings for each license:
 
 * Level of severity: Values include `None`, `Low`, `Medium`, and `High`.
   * When `None` is selected, instructions cannot be inserted since licenses marked with `None` do not appear in any Snyk test results.

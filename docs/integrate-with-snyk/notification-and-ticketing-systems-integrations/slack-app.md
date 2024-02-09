@@ -2,7 +2,7 @@
 
 The Snyk app for Slack is built as an official [Slack App](https://api.slack.com/start/overview#apps).
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk recommends that all customers use the Snyk Slack app, as the [Slack integration](slack-integration.md) is outdated.
 {% endhint %}
 
@@ -71,7 +71,7 @@ In the Private channel, select **Channel settings - Integrations**, and then **A
 After you have done this, the channel is displayed on the **Settings** page for the integration.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 If you are a Slack Admin, you can manually add the Snyk for Slack app to a private channel. To do this, type **@Snyk for Slack** in the chosen channel to summon the setup bot.
 {% endhint %}
 

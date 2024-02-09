@@ -1,10 +1,11 @@
 # Jira integration
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.\
-For the availability of this feature for Snyk Infrastructure as Code, see [Jira Integration for IaC](../../scan-with-snyk/scan-infrastructure/snyk-iac-integrations/jira-integration-for-iac.md).\
-[Snyk Security in Jira Cloud](snyk-security-in-jira-cloud-integration.md) is now available.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Jira integration is available with all paid plans. See [Pricing plans](https://snyk.io/plans).
+
+For Snyk Infrastructure as Code, see [Jira Integration for IaC](../../scan-with-snyk/scan-infrastructure/snyk-iac-integrations/jira-integration-for-iac.md).
 {% endhint %}
 
 ## **Set up your Jira integration**
@@ -61,3 +62,7 @@ After you create a Jira issue, the Jira key with a link is displayed on the issu
 ## Integrate with Jira using Snyk Broker
 
 See [Set up Snyk Broker with Jira](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/jira-install-and-configure-broker/setup-broker-with-jira.md).
+
+## See also
+
+[Snyk Security in Jira Cloud](snyk-security-in-jira-cloud-integration.md)

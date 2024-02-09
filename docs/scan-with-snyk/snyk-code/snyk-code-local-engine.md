@@ -1,9 +1,9 @@
 # Snyk Code Local Engine
 
-## Local Engine
+{% hint style="warning" %}
+**Release status**&#x20;
 
-{% hint style="info" %}
-Snyk Code Local Engine is currently in [Early Access](../../getting-started/snyk-release-process.md#early-access). If you want to set it up in your Organization, contact your Snyk account team.
+Snyk Code Local Engine is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans. If you are interested in using the feature, contact your Snyk account team.
 {% endhint %}
 
 Snyk Code Local Engine (SCLE) is a fully contained version of the Snyk Code Engine that allows you to avoid uploading your code to the internet. When you use the Local Engine, only the scan is performed locally. Your scan results are uploaded to Snyk so you can view them on the Snyk Web UI.
@@ -12,7 +12,7 @@ This high-level architecture diagram shows the components and their interactions
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png" alt="Snyk Code Local Engine high-level architecture"><figcaption><p>Snyk Code Local Engine high-level architecture</p></figcaption></figure>
 
-### System requirements for Snyk Code Local Engine
+## System requirements for Snyk Code Local Engine
 
 The core requirements to deploy the Snyk Code Local Engine are:
 
@@ -47,7 +47,7 @@ The total required resources for each flavor of the Snyk Code Local Engine are i
 
 <table><thead><tr><th width="236">Deployment options</th><th width="263.3333333333333">Resources required</th><th>Use cases</th></tr></thead><tbody><tr><td>CLI </td><td><ul><li>165GB RAM</li><li>60 Core CPU</li><li>55GB Ephemeral Storage</li></ul></td><td><ul><li>Run the SCLE in the pipeline</li></ul></td></tr><tr><td>IDE </td><td><ul><li>165GB RAM</li><li>60 Core CPU</li><li>55GB Ephemeral Storage</li></ul></td><td><ul><li>Developers using it on their IDE</li></ul></td></tr><tr><td>SCM </td><td><ul><li>170GB RAM</li><li>65 Core CPU</li><li>65GB Ephemeral Storage</li></ul></td><td><ul><li>Import repositories for monitoring purposes</li></ul></td></tr><tr><td>SCM and PR Checks </td><td><ul><li>200GB RAM</li><li>90 Core CPU</li><li>160GB Ephemeral Storage</li></ul></td><td><ul><li>Import repositories for monitoring purposes</li><li>Scan every PR for new vulnerabilities</li></ul></td></tr><tr><td>SCM, PR Checks and CLI </td><td><ul><li>220GB RAM</li><li>100 Core CPU</li><li>160GB Ephemeral Storage</li></ul></td><td><ul><li>Run the SCLE in the pipeline</li><li>Import repositories for monitoring purposes</li><li>Scan every PR for new vulnerabilities</li></ul></td></tr><tr><td>Full deployment (all features)</td><td><ul><li>330GB RAM</li><li>140 Core CPU</li><li>220GB Ephemeral Storage</li></ul></td><td><ul><li>All of the above</li></ul></td></tr></tbody></table>
 
-### Using the CLI and IDEs with the Snyk Code Local Engine
+## Using the CLI and IDEs with the Snyk Code Local Engine
 
 To use the Snyk CLI and IDEs with Snyk Code Local Engine, provide your Snyk account team with your Snyk Code Local Engine URL, the URL of the Snyk Code Local Engine running on your premises.\
 \
@@ -55,6 +55,6 @@ After your CSM has configured the URL for your Organization, you can view it fro
 
 <figure><img src="../../.gitbook/assets/Snyk Code Local Engine settings showing Local Engine URL (1) (1).png" alt="Snyk Code Local Engine settings Local Engine URL"><figcaption><p>Snyk Code Local Engine settings Local Engine URL</p></figcaption></figure>
 
-### Configure and deploy the Local Engine
+## Configure and deploy the Local Engine
 
 The instructions to configure and deploy the Local Engine in your environment are in the Readme file in the Local Engine installation package. For more information and assistance, contact your Snyk account team.

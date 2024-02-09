@@ -1,8 +1,11 @@
 # Enable the Kubernetes integration
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with the Enterprise plan. For details, see [pricing plans](https://snyk.io/plans/).
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Kubernetes integration is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 ## Set up the Kubernetes integration for your Organization

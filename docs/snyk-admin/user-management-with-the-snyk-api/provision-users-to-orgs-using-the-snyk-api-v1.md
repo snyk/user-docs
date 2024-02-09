@@ -6,7 +6,7 @@ Provisioned users do not need to accept invites. When provisioned users first lo
 
 ## Prerequisites for provisioning users using the API
 
-{% hint style="warning" %}
+{% hint style="info" %}
 The API does not support using service accounts as the inviting user or provisioned user.
 {% endhint %}
 

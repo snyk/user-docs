@@ -1,11 +1,11 @@
 # Configure PR Checks
 
-{% hint style="info" %}
-PR Checks for Snyk Code is in [Closed Beta](../../getting-started/snyk-release-process.md) and only available for Enterprise plans.
-{% endhint %}
-
 {% hint style="warning" %}
-A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-). The number of tests allowed is determined by the [pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md).
+**Release status**&#x20;
+
+PR Checks is in [Closed Beta](../../getting-started/snyk-release-process.md) and available only for Enterprise plans.
+
+To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
 {% endhint %}
 
 ## Prerequisites for automated PR Checks
@@ -19,6 +19,8 @@ To check for open-source and licensing issues and code security, ensure that you
 
 {% hint style="info" %}
 PR Checks rely on webhooks from the SCM. Integration scope must include the ability to create webhooks.
+
+A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](../working-with-snyk-in-your-environment/what-counts-as-a-test.md). The number of tests allowed is determined by the [pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md).
 {% endhint %}
 
 ## Types of Snyk scans supported

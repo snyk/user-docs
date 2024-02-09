@@ -14,7 +14,7 @@ Create a file named `dockercfg.json`.  Store your credentials in this file.
 Ensure the file containing your credentials is named `dockercfg.json`. This filename is required by the `snyk-monitor`.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Ensure the formatting is correct, including new line characters and whitespace in the `dockercfg.json` file. Malformed files will result in authentication failures.
 {% endhint %}
 

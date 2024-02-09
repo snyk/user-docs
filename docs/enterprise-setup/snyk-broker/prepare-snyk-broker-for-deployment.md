@@ -16,7 +16,7 @@ The following are prerequisites for using Snyk Broker:
 * An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token. Snyk Broker does not support authentication with the mTLS method. &#x20;
 * Docker configured to pull images from Docker Hub
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\

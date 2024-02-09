@@ -2,7 +2,7 @@
 
 The following shows two different options for [Custom Mapping Options](../../using-single-sign-on-sso-for-authentication/custom-mapping-option/) of Okta roles.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 For both of these options to work, the Snyk SSO application **must** be assigned at the group level, not the user level.
 {% endhint %}
 

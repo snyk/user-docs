@@ -2,9 +2,12 @@
 
 Follow the instructions on this page to set up Nexus Repository Manager with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Nexus Respository Manager deployment.
 
-{% hint style="info" %}
-**Feature availability**\
-Integration with Nexus Repository Manager is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Integration with Nexus Repository Manager is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 {% hint style="info" %}

@@ -1,9 +1,11 @@
 # Service accounts using OAuth 2.0
 
 {% hint style="info" %}
-**Feature availability**
+**Release status**
 
-This feature is available through the Snyk REST API. See [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md) for details.
+Service accounts using OAuth 2.0 is available through the Snyk REST API.&#x20;
+
+See [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md).
 {% endhint %}
 
 You can create service accounts that authenticate with the [OAuth 2.0 `client_credentials` grant flow](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) rather than with the traditional Snyk API key. OAuth 2.0 access tokens can be used the same way a Snyk API key would be used, but they have the added security of a short time-to-live (TTL) and can be automatically refreshed.

@@ -6,7 +6,7 @@ See [Manage notifications](../../../../snyk-admin/manage-notifications.md) for m
 
 Snyk sends different types of alerts to teams based on Group and Organization settings.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk strongly recommends disabling notifications for the Group and the first Organization by default, before you create additional Organizations and start scanning applications.
 {% endhint %}
 

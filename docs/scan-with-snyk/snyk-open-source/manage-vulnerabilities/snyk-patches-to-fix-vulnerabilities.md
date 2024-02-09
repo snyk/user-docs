@@ -6,7 +6,7 @@ Sometimes there is no direct upgrade that can address the vulnerability, or an u
 
 In such cases, Snyk can help you [protect your code with patches](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-protect-package.md). This option will make minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when you use [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Patching is currently supported for **Node.js** Projects only.
 {% endhint %}
 

@@ -1,13 +1,15 @@
 # Working with Snyk in your environment
 
-{% hint style="info" %}
-**Feature availability**\
-Some features mentioned on this page may not be available depending on your Snyk plan or product. Each Snyk product provides key capabilities for the ecosystems you are working in.&#x20;
+{% hint style="warning" %}
+**Release status** \
+Some features mentioned on this page are available based on your Snyk plan.&#x20;
 
-There is a monthly limit to the number of tests performed if a particular product is not purchased. See the [Pricing plans](https://snyk.io/plans) page for more details.
+Based on your plan and product selection, your account has a monthly limit set on the number of tests that can be performed.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
-Snyk takes a developer-first approach to securing your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. For details, see [Introducing Snyk](broken-reference).
+Snyk takes a developer-first approach to secure your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. For details, see [Introducing Snyk](broken-reference).
 
 The Snyk developer-first approach allows you to:
 

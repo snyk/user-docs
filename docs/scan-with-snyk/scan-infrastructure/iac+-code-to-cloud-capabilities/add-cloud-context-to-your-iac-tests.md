@@ -1,6 +1,8 @@
 # Add cloud context to your IaC tests
 
-{% hint style="info" %}
+{% hint style="warning" %}
+**Release status**
+
 The cloud context feature is available for [IaC+](./) only and supports AWS.
 {% endhint %}
 

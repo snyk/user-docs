@@ -1,7 +1,7 @@
 # Introduction to Groups
 
-{% hint style="info" %}
-**Feature availability**\
+{% hint style="warning" %}
+**Release status**\
 This feature is available with Enterprise Plans. See [Plans and pricing](https://snyk.io/plans/) for details.
 {% endhint %}
 

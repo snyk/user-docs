@@ -18,7 +18,7 @@ docker run --restart=always \
        snyk/broker:bitbucket-server
 ```
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Recent change**\
 The custom CA cert instruction changed recently. `CA_CERT` is no longer in use and must be replaced by `NODE_EXTRA_CA_CERTS`.
 {% endhint %}

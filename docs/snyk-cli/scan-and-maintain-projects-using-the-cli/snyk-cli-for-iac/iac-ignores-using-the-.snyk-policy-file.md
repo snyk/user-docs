@@ -1,6 +1,8 @@
 # IaC ignores using the .snyk policy file
 
 {% hint style="warning" %}
+**Release status**
+
 While Ignores via the Snyk UI are available for current IaC and IaC+, using ignores in the .snyk file is available only in current IaC at this time.&#x20;
 {% endhint %}
 
@@ -14,7 +16,7 @@ For tests run using the Snyk CLI, only issues defined in the `.snyk` file are ig
 
 For tests run from imported Git repositories, issues can be ignored in the Snyk UI. Note that these ignores apply only to scans done using the Snyk UI.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Ignores in the `.snyk` file and ignores created in the Snyk UI are not synchronized.
 {% endhint %}
 

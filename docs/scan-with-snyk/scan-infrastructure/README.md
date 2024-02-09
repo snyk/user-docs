@@ -1,14 +1,17 @@
 # Scan infrastructure
 
-{% hint style="info" %}
-**Feature availability**\
-IaC+ is a new version of Snyk IaC that includes more accurate results, an expanded security ruleset, and code to cloud capabilities. IaC+ is now in early access via [Snyk Preview](../../snyk-admin/manage-settings/snyk-preview.md).
+{% hint style="warning" %}
+**Release status**&#x20;
+
+IaC+ is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
+
+To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
 {% endhint %}
 
 With Snyk Infrastructure as Code (IaC), you can secure cloud infrastructure configurations before and after deployment. There are two version of Snyk IaC available today:
 
-* **Current IaC**: The generally available version of Snyk IaC
-* **IaC+**: A new version of Snyk IaC that is currently in early access
+* **Current IaC**: The generally available version of Snyk IaC.
+* **IaC+**: A new version of Snyk IaC that is currently in early access. It includes more accurate results, an expanded security ruleset, and code-to-cloud capabilities.
 
 With both versions of Snyk IaC, you can:
 

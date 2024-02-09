@@ -1,7 +1,7 @@
 # Introduction to Snyk administration
 
-{% hint style="info" %}
-**Feature availability**\
+{% hint style="warning" %}
+**Release status**\
 Some functions, such as Groups, are available only on some [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
@@ -26,9 +26,12 @@ Snyk has the following types of members (users), defined by their roles:
 * Group member
 * Group administrator
 
-{% hint style="info" %}
-**Feature availability**\
-Group administrators and Collaborators are available with Snyk Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.&#x20;
+{% hint style="warning" %}
+**Release status**
+
+Group administrators and Collaborators are available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 For details of the permissions associated with each role, see [Permissions associated with each role ](broken-reference)on the Managing permissions page.

@@ -80,6 +80,6 @@ The issue is marked as **Passed** and shows up as **Skipped** in the PR Checks c
 
 [Troubleshooting PR Checks](troubleshoot-pr-checks.md) has more information on how to troubleshoot PR Checks or how to restart them
 
-## More resources for PR Checks
+## What's next?
 
 To learn from an end-to-end example in Bitbucket, see the following Snyk Learn course: [Use Snyk to block builds in Bitbucket](https://learn.snyk.io/lesson/snyk-with-bitbucket/).

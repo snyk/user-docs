@@ -31,7 +31,7 @@ Snyk supports the latest versions of the following web browsers:
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 * [Safari](https://www.apple.com/safari/)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk requires Javascript to be enabled on your browser.
 {% endhint %}
 

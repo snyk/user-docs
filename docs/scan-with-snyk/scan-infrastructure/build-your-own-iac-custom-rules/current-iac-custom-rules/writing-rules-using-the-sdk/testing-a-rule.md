@@ -10,7 +10,7 @@ Assuming you have written your rule based on the previous page, open the `main_t
 
 Create or modify fixture files to store your resources under `rules/MY_RULE/fixtures`. These files can have any name, so take, for example, `denied.tf` and `allowed.tf`:
 
-{% hint style="warning" %}
+{% hint style="info" %}
 The file can have any name, but pay close attention to the file extension. Be especially careful if you want to write a test for a fixture file containing Terraform Plan JSON Output. Make sure the name of the file has the file extension `.json.tfplan` so that the Snyk testing library can differentiate between plain JSON and Terraform Plan JSON Output.
 {% endhint %}
 

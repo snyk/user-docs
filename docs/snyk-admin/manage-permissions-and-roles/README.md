@@ -1,11 +1,13 @@
 # Manage user roles and permissions
 
-{% hint style="info" %}
-**Feature availability**\
+{% hint style="warning" %}
+**Release status**&#x20;
+
 The Snyk free subscription plan allows you to send up to 200 pending invitations every seven days and has only administrator roles.
 
-Enterprise plans have administrators, viewers, collaborators, and custom roles.\
-See [Plans and pricing](https://snyk.io/plans/) for details.
+Enterprise plans have administrators, viewers, collaborators, and custom roles.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Permissions are granted to users according to their role.

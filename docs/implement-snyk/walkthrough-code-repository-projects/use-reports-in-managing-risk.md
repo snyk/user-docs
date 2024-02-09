@@ -1,13 +1,16 @@
 # Use Reports in managing risk
 
-{% hint style="info" %}
-**Recap**\
-You have seen how to view your Snyk Projects, understand Snyk scan results, fix vulnerabilities, and integrate fix work into your development workflow.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Reports are available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 {% hint style="info" %}
-**Feature availability**\
-Reports are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+**Recap**\
+You have seen how to view your Snyk Projects, understand Snyk scan results, fix vulnerabilities, and integrate fix work into your development workflow.
 {% endhint %}
 
 Snyk reports provide the visibility and analytics needed to drive data-based conversations between development and security.

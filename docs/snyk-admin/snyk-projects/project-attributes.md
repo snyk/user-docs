@@ -24,7 +24,7 @@ You can apply attributes to Projects and remove attributes using the Snyk API v1
 You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and -`-project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) for the commands that support these options.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Organization admins can add an attribute to a Project. However, only Group admins can modify Project attributes in cases where attributes match a policy, because policies can only be managed by Group admins.
 {% endhint %}
 

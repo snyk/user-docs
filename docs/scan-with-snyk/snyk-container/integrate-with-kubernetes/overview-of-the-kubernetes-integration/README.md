@@ -1,8 +1,11 @@
 # Overview of the Kubernetes integration
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with the Enterprise plan. For details, see [pricing plans](https://snyk.io/plans/).
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Kubernetes integration is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Snyk is able to integrate with Kubernetes, enabling you to import and scan your running workloads. This helps you identify vulnerabilities in their associated images and configurations that can make those workloads less secure. After workloads are imported, Snyk continues to monitor them and to identify additional security issues as new images are deployed and the workload configuration changes.
@@ -22,7 +25,7 @@ The Kubernetes integration follows the below process:&#x20;
 6. Snyk continuously monitors your imported workloads and reports new vulnerabilities it identifies whenever they affect your Projects.
 7. Based on your configurations, if vulnerabilities are found, Snyk notifies you through email or Slack so that you can take immediate action.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 To maintain the health of the database, Snyk removes any information relating to a workload that has not been changed or updated for eight days. This can lead to failure when rescanning the workload.
 
 If an image and its corresponding Project are removed, and you reimport the same workload during the eight days when the metadata still resides in the Snyk database, you can create the Project again.

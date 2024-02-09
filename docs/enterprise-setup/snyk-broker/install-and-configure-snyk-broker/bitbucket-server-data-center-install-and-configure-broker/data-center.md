@@ -12,6 +12,8 @@ You need Docker or a way to run Docker Linux containers. Some Docker deployments
 ## Configure Broker to be used with Bitbucket
 
 {% hint style="warning" %}
+**Release status**
+
 Snyk Code PR Checks are available only for Bitbucket DC/Server versions 7.0 and above
 {% endhint %}
 

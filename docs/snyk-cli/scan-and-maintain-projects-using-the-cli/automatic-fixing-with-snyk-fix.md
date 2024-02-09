@@ -1,14 +1,18 @@
 # Automatic fixing with snyk fix
 
-{% hint style="info" %}
-This feature is currently in beta. We would appreciate any feedback you might have - contact us at [snyk-fix-feedback@snyk.io](mailto:snyk-fix-feedback@snyk.io).
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Snyk Fix is in [Closed Beta](../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 {% hint style="info" %}
 Ensure you use the latest version of CLI ([v1.715.0](https://github.com/snyk/snyk/releases/tag/v1.715.0) or later) to use `snyk fix`.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk fix is currently only supported for Python.
 {% endhint %}
 

@@ -6,7 +6,7 @@ The following information shows how to configure the custom mapping of roles for
 See the [Azure AD Enterprise Application example](../self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md) for guidance setting up the initial Enterprise application.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact, as self-serve SSO does not accommodate custom mapping.
 {% endhint %}
 

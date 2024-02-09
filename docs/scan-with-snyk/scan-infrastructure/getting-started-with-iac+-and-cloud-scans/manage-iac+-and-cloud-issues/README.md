@@ -1,6 +1,8 @@
 # Manage IaC+ and cloud issues
 
-{% hint style="info" %}
+{% hint style="warning" %}
+**Release status**
+
 The [Fix Cloud issues in IaC](../../iac+-code-to-cloud-capabilities/fix-cloud-issues-in-iac.md) feature is now available for users who use Terraform with AWS, Azure, and/or Google Cloud.
 {% endhint %}
 

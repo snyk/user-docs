@@ -1,6 +1,8 @@
 # Migrate List all Projects v1 API to REST API
 
-{% hint style="info" %}
+{% hint style="warning" %}
+**End of servicing**
+
 On June 22, 2023, Snyk [announced](https://updates.snyk.io/deprecation-and-end-of-life-for-the-list-all-projects-v1-api-267781) the plan to sunset the [List all projects v1 API](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects) with  end-of-life on December 22, 2023, in favor of the [REST List all projects API](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org\_id-/projects).&#x20;
 {% endhint %}
 

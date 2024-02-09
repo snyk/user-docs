@@ -12,6 +12,6 @@ https://snyk.io/org/{your-org-name}/manage/settings
 
 or by using the `https://api.snyk.io/rest/orgs` API endpoint, with the Snyk API token in the Authorization header.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk Apps have first-class access to the API, regardless of whether users installing the App have paid for access or not. To take advantage of this feature, Apps must use API endpoints with the domain https://api.snyk.io/ rather than the conventional `https://snyk.io/api/`to call the API within the App.
 {% endhint %}

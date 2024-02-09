@@ -1,8 +1,11 @@
 # Project tags
 
-{% hint style="info" %}
-**Feature availability**\
-Project tags are available for Snyk Enterprise plan customers. See the [plans and pricing page](https://snyk.io/plans/) for details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Project tags are available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 ## Project tags use and conditions

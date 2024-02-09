@@ -1,8 +1,10 @@
 # Change the role of a user
 
-{% hint style="info" %}
-**Feature availability**\
-Enterprise plans have default Snyk roles: administrators, viewers, and collaborators, as well as custom roles. Roles are defined by permissions. Manging permissions is available on Snyk Enterprise plans. See [Plans and pricing](https://snyk.io/plans/) for details.
+{% hint style="warning" %}
+**Release status**\
+Enterprise plans have default Snyk roles: administrators, viewers, and collaborators, as well as custom roles. Roles are defined by permissions. Manging permissions are available on Snyk Enterprise plans.&#x20;
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 To change the permissions of a user,  you must change the role of that user.

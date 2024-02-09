@@ -1,9 +1,11 @@
 # Use Custom Base Image Recommendations
 
-{% hint style="info" %}
-**Feature availability**
+{% hint style="warning" %}
+**Release status**&#x20;
 
-This feature is available with the Enterprise plan. For details, see [pricing plans](https://snyk.io/plans/).
+Custom Base Image Recommendations is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 ## **Overview of Custom Base Image Recommendations (CBIR)**

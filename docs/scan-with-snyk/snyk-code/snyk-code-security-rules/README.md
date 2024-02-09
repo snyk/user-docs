@@ -4,7 +4,7 @@
 Snyk Code rules are updated continuously. The list expands continually, and the rules may change to provide the best protection and security solutions for your code.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 If you have followed a link for code quality from an IDE, see the [language documentation for that information](../../supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md#code-quality).
 {% endhint %}
 

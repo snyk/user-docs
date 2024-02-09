@@ -1,8 +1,11 @@
 # Project collections groupings
 
-{% hint style="info" %}
-**Feature availability**\
-Project collections are available for Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Project collections in [Closed Beta](../../../getting-started/snyk-release-process.md) and available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 There are two ways to group your Projects: **Project views** and **Project collections**.&#x20;

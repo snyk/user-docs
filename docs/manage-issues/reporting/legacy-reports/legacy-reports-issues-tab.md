@@ -72,6 +72,6 @@ These controls appear above the table:
 * CSV
 * Print/generate a preview from the Print dialog box in your local environment. This can take a few seconds to generate.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Only 2,000 issues can be generated at once.
 {% endhint %}

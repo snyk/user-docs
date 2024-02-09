@@ -1,4 +1,4 @@
-# Examples of custom rules
+# Examples of IaC custom rules
 
 ## Example of a simple boolean rule
 
@@ -53,7 +53,7 @@ deny[msg] {
 To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK is able to [parse a fixture file](parsing-an-input-file.md) into JSON.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk recommends always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
@@ -142,7 +142,7 @@ deny[msg] {
 ```
 {% endcode %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk recommends always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
@@ -242,7 +242,7 @@ deny[msg] {
 
 This will successfully return all the rules that deny.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk recommends always validating that your rule is correct by [updating and running the unit tests](./#test-a-custom-rule).
 {% endhint %}
 
@@ -316,7 +316,7 @@ deny[msg] {
 ```
 {% endcode %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk recommends always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
@@ -426,7 +426,7 @@ deny[msg] {
 
 If you want to try it out yourselves, use the same example in this [OPA Playground](https://play.openpolicyagent.org/p/1xcdj9kJRw).
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk recommends always validating that your rule is correct by[ updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 

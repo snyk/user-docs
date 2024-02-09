@@ -1,8 +1,11 @@
 # Retrieve audit logs of user-initiated activity by API for an Org or Group
 
-{% hint style="info" %}
-**Feature availability**\
-Audit logs are available with Enterprise plans. See [Plans and pricing](https://snyk.io/plans/) for details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Audit logs are available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Snyk has [Audit logs endpoints in the Snyk REST API](https://apidocs.snyk.io/?version=2024-01-04#get-/groups/-group\_id-/audit\_logs/search) that enable you to retrieve your audit logs of user-initiated activity that took place in the past 90 days. Use the [Group level audit logs endpoint](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#get-/groups/-group\_id-/audit\_logs/search) to get information about your Snyk Group and the [Organization level audit logs endpoint](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#get-/orgs/-org\_id-/audit\_logs/search) to get information about your Snyk Organization.

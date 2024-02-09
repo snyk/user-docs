@@ -1,8 +1,11 @@
 # Manage user roles
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available for Enterprise customers. See [Plans and pricing](https://snyk.io/plans/) for details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Managing user roles is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Snyks Member Roles functionality enables you to manage default and custom roles, allowing you to create and enforce set permissions to roles that reflect the users and functions in your Organization. Permissions for default Snyk roles, such as Group Admin, cannot be changed.

@@ -1,13 +1,11 @@
 # Automatically import and delete Kubernetes workload Projects
 
-{% hint style="info" %}
-**Feature availability**
+{% hint style="warning" %}
+**Release status**&#x20;
 
-This feature is still in Beta. Auto import and deletion are not guaranteed and can depend on the network.
+Automatically importing and deleting Kubernetes workload Projects is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans. If you want to set it up in your Organization, contact your Snyk account team.
 
-If you don't find your workload in Snyk, please import the workload manually.
-
-If your workload persists in Snyk after it was deleted from your cluster, please delete the workload manually.
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Using the same integration ID, you can import multiple clusters to one Snyk Organization by giving clusters a unique cluster name during installation.
@@ -136,4 +134,9 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 ```
 
 Now, you can deploy the Snyk Controller, or restart it if it is already running, in order for it to pick up the policy. New workloads are now visible in Snyk.
+
+## Troubleshooting **automatic import and delete**
+
+* If you don't find your workload in Snyk, please import the workload manually.
+* If your workload persists in Snyk after it was deleted from your cluster, please delete the workload manually.
 

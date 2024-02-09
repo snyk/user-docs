@@ -1,16 +1,18 @@
 # Enterprise Analytics
 
-{% hint style="info" %}
-**Feature availability**\
-Enterprise Analytics is available to Snyk Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
+{% hint style="warning" %}
+**Release status**\
+Enterprise Analytics is in [Closed Beta](../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
 
-Enterprise Analytics is in [Closed Beta](../getting-started/snyk-release-process.md). For access, contact your Snyk Account team or Snyk support. During Closed Beta, access at the user level is available. When tenant membership is available, access to Enterprise Analytics will be managed at scale more easily.
+See [Pricing plans](https://snyk.io/plans).
 
-Group admins will be able to see all relevant data that their user has access to in the Enterprise Analytics report during the Closed Beta period. You can use filters to include relevant Groups or Organizations only. This is especially useful for sharing a link with another user.
+During Closed Beta, access at the user level is available. When tenant membership is available, access to Enterprise Analytics will be managed at scale more easily.
+
+Group admins will be able to see all relevant data their users can access in the Enterprise Analytics report during the Closed Beta period. You can use filters to include relevant Groups or Organizations only. This is especially useful for sharing a link with another user.
 {% endhint %}
 
 {% hint style="info" %}
-Data is refreshed in Enterprise Analytics daily approximately between 13:00 and 14:00 UTC.
+Data is refreshed in Enterprise Analytics daily, approximately between 13:00 and 14:00 UTC.
 {% endhint %}
 
 Enterprise Analytics provides executives as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.

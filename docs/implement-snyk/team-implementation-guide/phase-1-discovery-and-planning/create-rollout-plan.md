@@ -27,7 +27,7 @@ Typically, importing everything using a repository integration for visibility an
 
 Next, set up Snyk integrations across your Git repositories to gain broad visibility into your security posture.&#x20;
 
-{% hint style="warning" %}
+{% hint style="info" %}
 To reduce noise, disable notifications before import if you have onboarded all your users.
 {% endhint %}
 

@@ -1,7 +1,7 @@
 # Manage Groups and Organizations
 
-{% hint style="info" %}
-**Feature availability**\
+{% hint style="warning" %}
+**Release status**\
 Snyk Groups are only available on certain [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 

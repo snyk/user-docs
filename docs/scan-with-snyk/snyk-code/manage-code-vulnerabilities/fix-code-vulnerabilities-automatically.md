@@ -1,7 +1,11 @@
 # Fix code vulnerabilities automatically
 
 {% hint style="warning" %}
-DeepCode AI Fix is in [Early Access](../../../getting-started/snyk-release-process.md). To enable the feature, see [Enable DeepCode AI Fix Suggestions](fix-code-vulnerabilities-automatically.md#enable-deepcode-ai-fix-suggestions).
+**Release status**&#x20;
+
+DeepCode AI Fix is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
+
+To enable the feature, see [Enable DeepCode AI Fix Suggestions](fix-code-vulnerabilities-automatically.md#enable-deepcode-ai-fix).
 {% endhint %}
 
 Fix the security issues and quality flaws in the source code through an automated flow. DeepCode AI Fix Suggestions calculates the most suitable solution for your issues and applies it automatically.

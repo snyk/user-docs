@@ -1,17 +1,10 @@
 # Customize PR templates
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is currently in [Closed Beta](../../../../getting-started/snyk-release-process.md). The functionality is likely to evolve based on feedback, and there will be breaking changes. Contact your account manager to get access to this feature.&#x20;
-{% endhint %}
-
 {% hint style="warning" %}
-After your account manager turns on the feature flag, you can activate this feature in the [Snyk Preview](../../../../snyk-admin/manage-settings/snyk-preview.md) settings.&#x20;
-{% endhint %}
+**Release status** \
+Customize PR templates is currently in [Closed Beta](../../../../getting-started/snyk-release-process.md) and available only for Enterprise plans. The functionality is likely to evolve based on feedback, and there will be breaking changes.&#x20;
 
-{% hint style="info" %}
-**API support**\
-Customize your PR template automatically by making an API request; see [Create an API request with a Custom template](apply-a-custom-pr-template.md#create-an-api-request-with-a-custom-template). For more information, see the [Snyk API pull request templates endpoints](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#tag--Pull-Request-Templates).
+Contact your account manager to get access to this feature. After your account manager turns on the feature flag, you can activate this feature in the [Snyk Preview](../../../../snyk-admin/manage-settings/snyk-preview.md).
 {% endhint %}
 
 ## Understand Customized PRs
@@ -38,3 +31,7 @@ Follow these steps to enable the Configure Snyk Pull Requests feature:
    You can enable this feature at the Group level. See [Configure Automatic fix PRs](../automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md) for more configuration details.
 
 <figure><img src="../../../../.gitbook/assets/Enable config pull request.png" alt="Enable the Configure Snyk Pull Requests feature"><figcaption><p>Enable the Configure Snyk Pull Requests feature</p></figcaption></figure>
+
+## **API support**
+
+Customize your PR template automatically by making an API request; see [Create an API request with a Custom template](apply-a-custom-pr-template.md#create-an-api-request-with-a-custom-template). For more information, see the [Snyk API pull request templates endpoints](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#tag--Pull-Request-Templates).

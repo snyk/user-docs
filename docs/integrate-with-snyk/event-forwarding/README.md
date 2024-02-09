@@ -1,6 +1,12 @@
 # Event Forwarding
 
 {% hint style="warning" %}
+**Release status**&#x20;
+
+Snyk event forwarding integrations are currently available in the Snyk MT-US environment. If you are a Single-tenant customer, contact your Snyk representative to enable these integrations.
+{% endhint %}
+
+{% hint style="info" %}
 **Transition to Snyk Apps**
 
 Snyk is currently transitioning event forwarding integrations to use the Snyk Apps platform. This change will enable new features and enhanced security across current and future Cloud Events integrations.&#x20;
@@ -12,12 +18,6 @@ During the transition, existing integrations will continue to function normally,
 3. Click the **Authorize app** button and complete the App authorization flow
 
 At the end of the transition window, **integrations that have not been authorized will no longer be able to forward events and will cease functioning.**
-{% endhint %}
-
-{% hint style="info" %}
-**Feature availability**
-
-Snyk event forwarding integrations are currently available in the Snyk MT-US environment. They will be rolled out to other Snyk Multi-tenant environments soon. If you are a Single-tenant customer, contact your Snyk representative to enable these integrations.
 {% endhint %}
 
 Snyk event forwarding integrations allow you to push Snyk platform events directly to certain products on other platforms, enabling you to set up custom alerting, build your own reporting, trigger automation, and more.&#x20;

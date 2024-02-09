@@ -115,6 +115,6 @@ Example:
   ],
 ```
 
-{% hint style="warning" %}
+{% hint style="info" %}
 To ensure you have set up your Kubernetes Connector properly, navigate to the **Set up Insights** tab on the **Insights** page and check the **Image composition** section to view the data Insights has access to.
 {% endhint %}

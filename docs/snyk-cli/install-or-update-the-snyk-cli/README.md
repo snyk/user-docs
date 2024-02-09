@@ -4,7 +4,7 @@ You can install or update the [Snyk CLI](../) using the methods explained on thi
 
 After you install the Snyk CLI, you must [authenticate](../commands/auth.md). Then you can [get started](../getting-started-with-the-snyk-cli.md) testing and fixing your vulnerabilities, beginning with testing your installation.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk recommends always keeping your CLI installation updated to the latest version. You can check which version of the Snyk CLI you have installed by running `snyk --version`.
 {% endhint %}
 

@@ -66,7 +66,7 @@ Snyk recommends using the Helm Chart to deploy the agent; the Helm Chart will cr
 \
 [Follow the instructions on the Kubernetes-scanner GitHub repo](https://github.com/snyk/kubernetes-scanner) to use the Helm Chart to deploy the [latest released version](https://github.com/snyk/kubernetes-scanner/releases).
 
-{% hint style="warning" %}
+{% hint style="info" %}
 To ensure you have set up your Kubernetes connector properly, navigate to the **Set up Insights** tab on the **Insights** page and check the **Kubernetes resources** table to view the data that Insights has access to.
 {% endhint %}
 

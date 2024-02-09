@@ -2,9 +2,12 @@
 
 ## Prerequisites for installing the Snyk Controller
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with all paid plans. For more details, see [pricing plans](https://snyk.io/plans/).
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Snyk Controller is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Before you install the Snyk Controller:
@@ -26,7 +29,7 @@ limits: cpu: "1" memory: "2Gi"
   * Org custom role with the permission **Publish Kubernetes Resources**
 * Install [Helm](https://helm.sh/docs/intro/install/) locally.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 The Snyk-monitor Kubernetes integration is designed to be deployed into your cluster. It has not been tested on Serverless FaaS deployment options such as Fargate, Google Cloud Run, and Azure Container Instances. Deployment into serverless platforms may be unreliable and is not recommended or supported.
 {% endhint %}
 

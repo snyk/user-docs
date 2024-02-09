@@ -20,7 +20,7 @@ Snyk uses the OCI registries that support the [OCI artifact specification](https
 * [Harbor](https://goharbor.io)
 * [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk does not support insecure registries. The only protocol Snyk supports is HTTPS.
 {% endhint %}
 

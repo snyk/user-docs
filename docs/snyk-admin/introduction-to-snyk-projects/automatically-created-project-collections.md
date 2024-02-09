@@ -1,12 +1,11 @@
 # Automatically created Project collections
 
 {% hint style="info" %}
-**Feature availability**\
-This feature is available to Snyk Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
+**Release status**&#x20;
 
-This feature is in [Closed Beta](../../getting-started/snyk-release-process.md).
+Project collections in [Closed Beta](../../getting-started/snyk-release-process.md) and available only for Enterprise plans.
 
-
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Scanning the same Project outside of Snyk through an SCM integration and the Snyk CLI creates duplicate Targets within Snyk, with duplicate Projects and Issues. These may not be exact duplicates.&#x20;

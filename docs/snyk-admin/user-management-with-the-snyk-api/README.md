@@ -1,12 +1,14 @@
 # User management with the Snyk API
 
-{% hint style="info" %}
-**Feature availability**
+{% hint style="warning" %}
+**Release status**&#x20;
 
-The Snyk API is available to Enterprise customers. See [Plans and pricing](https://snyk.io/plans/) for details.
+Snyk API is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 You can manage service accounts using the [Snyk REST API](https://apidocs.snyk.io/?version=2024-01-04#tag--ServiceAccounts).
 {% endhint %}
 

@@ -1,9 +1,10 @@
 # Jira integration for Snyk IaC
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with all paid plans for Snyk Infrastructure as Code.\
-See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**\
+Jira integration for Snyk IaC is available for all paid plans.&#x20;
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 As for other Snyk products, Snyk Infrastructure as Code allows users to raise Jira issues for misconfigurations found in their IaC resources.

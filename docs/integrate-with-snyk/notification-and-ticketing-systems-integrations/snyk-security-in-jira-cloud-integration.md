@@ -1,13 +1,10 @@
 # Snyk Security in Jira Cloud Integration
 
+{% hint style="warning" %}
+**Release status** \
+Snyk Security in Jira Cloud is available for all Snyk and Jira plans, including Free versions.&#x20;
 
-
-{% hint style="info" %}
-**Feature availability**
-
-Snyk Security in Jira Cloud is available for all Snyk and Jira plans, including Free versions. This page has instructions for activating the feature; see the prerequisites.
-
-Snyk Security in Jira Cloud is available for Jira Cloud only. Jira Server and Jira Data Center are not supported.
+Jira Server and Jira Data Center are not supported.
 {% endhint %}
 
 Snyk Security in Jira Cloud helps developers identify, prioritize, and triage security vulnerabilities related to their code repositories directly from the Jira interface.

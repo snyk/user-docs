@@ -10,7 +10,7 @@ This default policy is a baseline to meet the requirements of multiple types of 
 
 The default license policy contains the standard Snyk Default License Policy, but you can edit the rules to suit your preferences.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 The default policy does not endorse or criticize any license and should not be treated as legal guidance.
 {% endhint %}
 

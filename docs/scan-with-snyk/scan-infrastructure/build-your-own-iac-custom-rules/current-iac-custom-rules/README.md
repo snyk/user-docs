@@ -1,8 +1,11 @@
 # Current IaC custom rules
 
-{% hint style="info" %}
-**Feature availability**\
-Custom rules are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**
+
+IaC custom rules are available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Snyk IaC includes a comprehensive list of security rules, covering AWS, Azure, GCP, and Kubernetes. These rules are based on security research, best practices, recognized standards. and benchmarks. They are actively maintained by Snyk’s security engineering team, and new rules are released on a regular basis.

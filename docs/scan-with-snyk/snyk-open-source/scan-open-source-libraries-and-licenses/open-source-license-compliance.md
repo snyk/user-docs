@@ -1,8 +1,11 @@
 # Open-source license compliance
 
-{% hint style="info" %}
-**Feature availability**\
-Licenses are available for all paid plans. For details, see [pricing plans](https://snyk.io/plans/).
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Open-source license compliance is available for all paid plans.&#x20;
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 ## Overview of licenses&#x20;
@@ -46,7 +49,7 @@ If you notice a license with the wrong license type assigned to it, you can cont
 
 ## **Supported package types**
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk does not support scanning for license issues for package versions that include a git commit hash.
 {% endhint %}
 
@@ -61,7 +64,7 @@ Snyk does not support scanning for license issues for package versions that incl
 
 ## **Supported unmanaged ecosystems**
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk does not support scanning for license issues for package versions that include a git commit hash.
 {% endhint %}
 

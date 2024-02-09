@@ -29,9 +29,11 @@ If users who have not been invited use SSO to log in, they will gain access to S
 
 ## Custom mapping
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**\
+Custom Mapping is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 You can provision user accounts with customized rules using the [Custom Mapping Option](custom-mapping-option/).
