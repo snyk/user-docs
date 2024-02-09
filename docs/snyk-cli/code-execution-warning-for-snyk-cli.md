@@ -1,6 +1,6 @@
 # Code execution warning for Snyk CLI
 
-{% hint style="info" %}
+{% hint style="danger" %}
 As part of examining the codebase for vulnerabilities, Snyk CLI may automatically execute code on your computer to obtain additional data for analysis.
 {% endhint %}
 
