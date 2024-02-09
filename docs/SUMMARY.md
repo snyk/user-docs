@@ -745,7 +745,7 @@
   * [Introduction to Snyk administration](snyk-admin/introduction-to-snyk-administration.md)
   * [Manage Groups and Organizations](snyk-admin/manage-groups-and-organizations/README.md)
     * [Introduction to Groups](snyk-admin/manage-groups-and-organizations/introduction-to-groups.md)
-    * [Manage Groups](snyk-admin/manage-groups-and-organizations/manage-groups.md)
+    * [Use Group-level options](snyk-admin/manage-groups-and-organizations/use-group-level-options.md)
     * [Introduction to Organizations](snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md)
     * [Manage Organizations](snyk-admin/manage-groups-and-organizations/manage-organizations.md)
     * [Switch between Groups and Organizations](snyk-admin/manage-groups-and-organizations/switch-between-groups-and-organizations.md)

@@ -5,17 +5,11 @@
 This feature is available with Enterprise Plans. See [Plans and pricing](https://snyk.io/plans/) for details.
 {% endhint %}
 
-Snyk Groups make it easier for you to work in teams. Groups can hold many Organizations, and each Organization can contain many collaborators and Projects.
+Snyk Groups make it easier for you to work in teams. Groups can contain many Organizations, and each Organization can contain many collaborators and Projects.
 
-You can use Group options to view reports across all of the Organizations in your Group, to configure your Group settings, and to view all of the members in a Group:
+You can use Group options to view the Organizations to which you have access and request joining Organizations, to view reports across all of the Organizations in your Group, tp configure your Group settings, and to view all of the members in a Group.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1) (1).png" alt="Snyk Group options"><figcaption><p>Snyk Group options</p></figcaption></figure>
-
-</div>
-
-See [Manage Groups](manage-groups.md) for more information.
+See [Use Group-level options](use-group-level-options.md) for details.
 
 As part of your onboarding, Snyk will set you up with a Group for your company. You can then add your current Organizations to this Group.&#x20;
 
