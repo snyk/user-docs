@@ -127,8 +127,9 @@ Create a new rule because Snyk is not aware of the proprietary source built in-h
 
 Use a data flow [template](how-snyk-code-custom-rules-work.md#query-templates) known as `Taint` when [creating a data flow query](run-query.md#run-query-on-a-repository).&#x20;
 
-<pre class="language-javascript"><code class="lang-javascript"><a data-footnote-ref href="#user-content-fn-1">Taint</a>&#x3C;PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
-</code></pre>
+```javascript
+Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
+```
 
 You can configure the following parameters:
 
@@ -146,7 +147,7 @@ Recreate a Snyk rule and add a source to the current Snyk known vulnerable sourc
 
 Like the [Net new data flow rule](create-queries-with-snyk-code-custom-rules.md#net-new-data-flow-rule), the `Taint` data flow template is used with an `Or` operator. Operators are available to create logical statements for your queries, such as `Or` or `And`.
 
-Run the data flow rule using both the Snyk known sources but also a custom source called [`SourceFoo`](#user-content-fn-2)[^2]_._
+Run the data flow rule using both the Snyk known sources but also a custom source called [`SourceFoo`](#user-content-fn-1)[^1]_._
 
 ```javascript
 Taint<Or<PRED:AnySource,"SourceFoo">,PRED:XssSanitizer,PRED:XssSink>
@@ -190,8 +191,79 @@ PRED:AnySink
 
 Similarly, this query identifies and highlights every known sink within the code, providing a complete view of potential data endpoints.
 
+## Assessing coverage and identifying missing data flow links
 
+Identifying gaps in data flow paths is crucial for understanding the destinations of user data, especially if it does not end up in expected locations such as databases or file systems. These gaps may reveal the use of unsupported libraries or frameworks—or components thereof—potentially leading to false negatives. This insight is essential for comprehensive security assessments and ensuring robust coverage.
 
-[^1]: C
+<details>
 
-[^2]: 
+<summary><strong>Java example: Interaction between custom WebServer and WebServlet</strong></summary>
+
+This Java example demonstrates two components: `WebServer` and `WebServlet`.
+
+* **WebServer**: A custom HTTP server that represents the use of an unsupported or proprietary component.
+* **WebServlet**: Uses Java's standard Servlet API for web interactions but connects to a custom database for user record queries.
+
+```java
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.util.Map;
+
+public class CoverageDemo {
+    static class WebServer extends MyWebEndpoint {
+        private Connection connection;
+
+        @Override
+        void handlePostRequest(Map<String, String> parameters) throws Throwable {
+            final String username = parameters.get("username");
+            final String query = String.format("SELECT * FROM users WHERE user = '%s'", username);
+            final Statement statement = connection.createStatement();
+            statement.execute(query);
+            statement.close();
+        }
+    }
+
+    static class WebServlet extends HttpServlet {
+        private MySpecialDatabase database;
+
+        @Override
+        protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+            final String username = req.getParameter("username");
+            final String query = String.format("SELECT * FROM users WHERE user = '%s'", username);
+            database.performSQL(query);
+        }
+    }
+}
+
+```
+
+</details>
+
+Out of the box, Snyk will not show any vulnerabilities for these two classes, so the following query will not yield any results in the code snippet above.
+
+```
+Taint<PRED:AnySource,  PRED:None, PRED:AnySink>
+```
+
+### Find unmatched sources
+
+The following query enhances security coverage by revealing unmatched sources, pinpointing situations where the `HttpServletRequest` parameter in the`WebServlet`'s `doPost` method is not linked to known sinks, thus identifying gaps in data handling.
+
+```starlang
+PRED:AnySource and not DataFlowsInto<Taint<PRED:AnySource, PRED:None, PRED:AnySink>>
+```
+
+### Find unmatched sinks
+
+Similarly, to improve coverage another query locates unmatched sinks by finding elements like the `java.sql.Connection` object in the `WebServer` class that are poised to receive data but lack incoming data flows, highlighting areas for potential gaps in library and framework coverage.
+
+```starlang
+PRED:AnySink and not DataFlowsFrom<PRED:AnySource>
+```
+
+[^1]: 
