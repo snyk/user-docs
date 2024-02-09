@@ -16,7 +16,7 @@ You can also use the instructions in this section to exclude directories and fil
 
 ## **Exclusion syntax of the .snyk file**
 
-### Snytax to use to exclude files and directories from Snyk Code testing
+### Syntax to use to exclude files and directories from Snyk Code testing
 
 Use the following syntax to exclude files and directories by using the `.snyk` file:
 
@@ -59,7 +59,7 @@ You can use `global` or `code.` Either will exclude the specified directories an
 
 Follow these steps to exclude directories and files from the import process using the .`snyk` file:
 
-1\. In the repository you want to import, create a YAML file called `.snyk`, for example`:`
+1\. In the repository you want to import, create a YAML file called `.snyk`, for example:
 
 <figure><img src="../../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png" alt=".snyk file in a repository"><figcaption><p><code>.snyk</code> file in a repository</p></figcaption></figure>
 
