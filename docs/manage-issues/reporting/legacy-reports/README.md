@@ -1,8 +1,10 @@
 # Legacy reports
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details. See [Reporting](../) for information about Snyk's updated reporting feature.
+{% hint style="warning" %}
+**Release status**\
+Snyk Reporting is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Snyk reports show the status of all of your Projects, issues, dependencies, and licenses, for your Organization or Group.
@@ -11,12 +13,10 @@ Snyk reports help security and development teams work together. As your coding w
 
 See the [Reports Overview](legacy-reports-overview.md) page for more information on organizing and customizing legacy reports.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Reports do not support Snyk Code Projects.
 {% endhint %}
 
-## Accessing reports
-
-Select the **Reports** menu option to view reports:
+To view reports, select the **Reports** menu option:
 
 ![The report tab is located in the top nav bar as shown here.](../../../.gitbook/assets/snyk-org-report.png)

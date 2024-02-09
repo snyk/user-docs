@@ -26,10 +26,10 @@ The legacy **Reports tabs** are as follows:
 
 Report data can also be generated and retrieved with our APIs. For more information about this, see our [API documentation](https://snyk.docs.apiary.io/#introduction).
 
-{% hint style="warning" %}
+{% hint style="info" %}
 There may be a delay from the time a project is tested and until that data appears in the Reports area. If you find that there is more than a 9-hour delay, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="info" %}
 Read-only and deactivated Projects and results do not appear in the Reports area.
 {% endhint %}

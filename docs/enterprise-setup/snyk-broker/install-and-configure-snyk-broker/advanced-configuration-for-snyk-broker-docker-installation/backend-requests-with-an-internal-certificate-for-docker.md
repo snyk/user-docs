@@ -1,8 +1,8 @@
 # Backend requests with an internal certificate for Docker
 
-By default, the Broker Client establishes HTTPS connections to the backend system, GitHub, BitBucket, Jira, or other. If your backend system is serving an internal certificate (signed by your own certificate authority (CA)), you can provide the CA certificate to the Broker Client.
+By default, the Broker Client establishes HTTPS connections to the backend system: GitHub, BitBucket, Jira, or other. If your backend system is serving an internal certificate (signed by your own certificate authority (CA)), you can provide the CA certificate to the Broker Client.
 
-For example, if your CA certificate is at `./private/ca.cert.pem`, provide it to the Docker container by mounting the folder and using the `CA_CERT` environment variable:
+For example, if your CA certificate is at `./private/ca.cert.pem`, provide it to the Docker container by mounting the folder and using the `NODE_EXTRA_CA_CERT` environment variable. See the following  example for Bitbucket:
 
 ```
 docker run --restart=always \
@@ -13,10 +13,15 @@ docker run --restart=always \
            -e BITBUCKET=your.bitbucket-server.domain.com \
            -e BITBUCKET_API=your.bitbucket-server.domain.com/rest/api/1.0 \
            -e PORT=8000 \
-           -e CA_CERT=/private/ca.cert.pem \
+           -e NODE_EXTRA_CA_CERTS=/private/ca.cert.pem \
            -v /local/path/to/private:/private \
        snyk/broker:bitbucket-server
 ```
+
+{% hint style="info" %}
+**Recent change**\
+The custom CA cert instruction changed recently. `CA_CERT` is no longer in use and must be replaced by `NODE_EXTRA_CA_CERTS`.
+{% endhint %}
 
 Note that this completely replaces the default CA Certificate List for any requests made to your backend system, so this must be the complete chain required by the certificate used by the backend system.
 

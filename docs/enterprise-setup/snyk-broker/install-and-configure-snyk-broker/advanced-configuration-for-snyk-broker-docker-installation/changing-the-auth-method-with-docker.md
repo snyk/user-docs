@@ -64,3 +64,7 @@ Note that you must set this for every individual object in the `private` array.
 If `scheme` is `bearer` or `token`, you must provide a `token`, and if `scheme` is `basic`, you must provide a `username` and `password`.
 
 This overrides any other configured authentication method, for example, setting the token in the `origin` field, or in the `.env` file.
+
+{% hint style="info" %}
+Snyk Broker does not support authentication with mTLS method. &#x20;
+{% endhint %}

@@ -9,16 +9,15 @@ You can now view the results of your scan on the Projects listing page and selec
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 15.24.15.png" alt="Projects listing page showing a new scan"><figcaption><p>Projects listing page showing a new scan</p></figcaption></figure>
 
-This shows the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). See [Severity levels](../../manage-issues/priorities-for-fixing-issues/severity-levels.md) for more details.
+This shows the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). See [Severity levels](../../scan-with-snyk/find-and-manage-priority-issues/severity-levels.md) for more details.
 
 The scan results and available actions depend on the type of Project you scan:
 
-* Open-source libraries: see [Snyk Open Source](broken-reference).
-* Application code: see [Snyk Code](../../scan-applications/start-scanning/scan-code/activate-snyk-code-using-the-web-ui.md).
-* Container images: see [Snyk Container](../../scan-applications/start-scanning/scan-container-images.md).
-* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files: see [Snyk IaC](../../scan-infrastructure/getting-started-with-snyk-iac/).
-* Cloud misconfigurations: see [Snyk Cloud](../../scan-infrastructure/snyk-iac+/).
+* Open-source libraries: see [Snyk Open Source](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/view-vulnerabilities-in-your-code.md).
+* Application code: see [Snyk Code](broken-reference).
+* Container images: see [Snyk Container](../../scan-with-snyk/snyk-container/scan-container-images.md).
+* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files and cloud misconfigurations: see [Scan infrastructure](../../scan-with-snyk/scan-infrastructure/).
 
-**What's next?**
+## **What's next?**
 
-Now, you can start to fix your issues. See [Manage issues](../../manage-risk/).
+Now, you can start to fix your issues. See [Manage risk](../../manage-risk/).

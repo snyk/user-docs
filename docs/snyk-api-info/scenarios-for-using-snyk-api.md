@@ -143,7 +143,7 @@ API v1 [Invite users](https://snyk.docs.apiary.io/#reference/groups/list-all-rol
 
 ### Add users to organizations at scale ahead of the first login
 
-Scenario: [Provision users to Orgs via API](../snyk-admin/manage-users-in-organizations-and-groups/provision-users-to-orgs-using-the-snyk-api-v1.md)
+Scenario: [Provision users to Orgs via API](../snyk-admin/user-management-with-the-snyk-api/provision-users-to-orgs-using-the-snyk-api-v1.md)
 
 **Endpoint used:**\
 API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
@@ -175,7 +175,7 @@ API v1 Projects (Ignored issues) [Retrieve ignore](https://snyk.docs.apiary.io/r
 Scenario: [Tag projects in Snyk](https://github.com/snyk-playground/cx-tools/blob/main/scripts/tag-snyk-projects.md) (complete procedure)
 
 **Endpoints used:**\
-API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
+API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects) now REST API [List all Projects for an Org with the given Org ID](https://apidocs.snyk.io/?version=2023-06-19#get-/orgs/-org\_id-/projects)
 
 ### Import fresh Container images
 
@@ -198,6 +198,22 @@ Scenario: [detect-and-import-new-projects](https://github.com/snyk-playground/cx
 API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
+
+### Move projects from one organisation to another
+
+Scenario: [Move projects between organisations](https://github.com/snyk-playground/cx-tools/blob/main/scripts/move-projects.md) (complete procedure)
+
+{% hint style="info" %}
+API token used must have Group Admin access. \
+If moving between orgs in different groups, a personal API token with Group Admin in both groups must be used - Service Accounts are not able to move projects between orgs in different groups.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+Historical data for reporting will be lost.
+{% endhint %}
+
+**Endpoints used:**\
+API v1 [Move Projects](https://snyk.docs.apiary.io/#reference/projects/move-project/move-project-to-a-different-organization)
 
 ### More uses of API v1 Projects
 
@@ -222,8 +238,8 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 ## API v1 Users and Roles
 
 SEE:\
-[Provision users to Orgs via API](../snyk-admin/manage-users-in-organizations-and-groups/provision-users-to-orgs-using-the-snyk-api-v1.md)\
-[Remove members from Groups and Orgs via API](../snyk-admin/manage-users-in-organizations-and-groups/remove-members-from-groups-and-orgs-using-the-snyk-rest-and-v1-api.md)\
+[Provision users to Orgs via API](../snyk-admin/user-management-with-the-snyk-api/provision-users-to-orgs-using-the-snyk-api-v1.md)\
+[Remove members from Groups and Orgs via API](../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-snyk-rest-and-v1-api.md)\
 [Update Member Roles via API](../snyk-admin/manage-users-and-permissions/update-member-roles-via-api.md) (also Snyk REST API Users endpoint `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta)`
 
 ## API v1 Webhooks

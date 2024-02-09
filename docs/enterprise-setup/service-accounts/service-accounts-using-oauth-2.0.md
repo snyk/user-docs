@@ -1,9 +1,11 @@
 # Service accounts using OAuth 2.0
 
 {% hint style="info" %}
-**Feature availability**
+**Release status**
 
-This feature is available through the Snyk REST API. See [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md) for details.
+Service accounts using OAuth 2.0 is available through the Snyk REST API.&#x20;
+
+See [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md).
 {% endhint %}
 
 You can create service accounts that authenticate with the [OAuth 2.0 `client_credentials` grant flow](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) rather than with the traditional Snyk API key. OAuth 2.0 access tokens can be used the same way a Snyk API key would be used, but they have the added security of a short time-to-live (TTL) and can be automatically refreshed.
@@ -22,9 +24,11 @@ Never share the `client_secret` publicly, as this is used to authenticate your s
 
 ### Retrieve an OAuth 2.0 access token
 
-After the service account is created, you can retrieve an `access_token` through the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh) using the `client_secret`. An `access_token` can be used as a Snyk API key would be used.
+After the service account is created, you can retrieve an `access_token` through the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh) using the `client_secret`. The body format and `Content-Type` header must be form-urlencoded.
 
-The `access_token` has a short time-to-live and must be refreshed once it expires. There are many OAuth 2.0 libraries available that will greatly simplify this process.
+You can use an`access_token` the same way as you would use a Snyk API key, but with the `Authorization: bearer $access_token` header (see the Snyk [REST API documentation](https://apidocs.snyk.io/)) or the `SNYK_OAUTH_TOKEN` environment variable with the Snyk CLI.
+
+The `access_token` has a short time to live and must be refreshed once it expires. There are many OAuth 2.0 libraries available that greatly simplify this process.
 
 ## OAuth 2.0 with Private Key JWT &#x20;
 
@@ -51,7 +55,7 @@ The response includes the `client_id`, which is needed for the next step.
 
 Snyk recommends you prepare a tool or script to build a `private_key_jwt` with the proper claims and sign it with the private signing key you generated. as a prerequisite
 
-The JWT should include the [claims](https://datatracker.ietf.org/doc/html/rfc7519#section-4) outlined in the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh) for the `client_assertion` property. Note that the `aud` claim may vary based on the Snyk instance, for example, `api.snyk.io`, or `api.eu.snyk.io`. For more information, see [Regional hosting and data residency](../../more-info/data-residency-at-snyk.md).
+The JWT should include the [claims](https://datatracker.ietf.org/doc/html/rfc7519#section-4) outlined in the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh) for the `client_assertion` property. Note that the `aud` claim may vary based on the Snyk instance, for example, `api.snyk.io`, or `api.eu.snyk.io`. For more information, see [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md).
 
 ### Retrieve a Private Key JWT access token
 

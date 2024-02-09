@@ -1,6 +1,6 @@
 # Snyk CLI
 
-This documentation provides guidance and information for using the Snyk CLI to bring the [functionality of Snyk](../getting-started/introducing-snyk.md) into your development workflow. Here you will find:
+This documentation provides guidance and information for using the Snyk CLI to bring the [functionality of Snyk](broken-reference) into your development workflow. Here you will find:
 
 * Guidance for [getting started with the CLI](getting-started-with-the-snyk-cli.md)
 * An [important code execution warning for the Snyk CLI](code-execution-warning-for-snyk-cli.md)
@@ -11,7 +11,7 @@ This documentation provides guidance and information for using the Snyk CLI to b
 
 For additional information, see the following pages:
 
-* [Use Snyk Open Source from the CLI](../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/)
-* [Using Snyk Code via the CLI](../scan-application-code/snyk-code/using-snyk-code-from-the-cli/)
-* [Snyk CLI for container security](../scan-applications/snyk-container/use-snyk-container-from-the-cli/)
-* [Snyk CLI for Infrastructure as Code](../scan-cloud-configurations/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)
+* [Use Snyk Open Source from the CLI](scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
+* [Using Snyk Code via the CLI](scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
+* [Snyk CLI for container security](scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
+* [Snyk CLI for Infrastructure as Code](scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)

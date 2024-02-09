@@ -4,15 +4,11 @@ The Snyk REST API endpoint [List issues for a package](https://apidocs.snyk.io/?
 
 When you pass a `purl` to the endpoint, Snyk will find any known vulnerabilities for that package and return them as part of the response body.
 
-#### Supported purl types
+## Supported purl types
 
 The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `swift` and `maven`.
 
 If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
-
-{% hint style="info" %}
-For `golang`, Snyk supports `purl` for both modules and packages. Snyk supports only semantic versions and does not support pseudo-versions.&#x20;
-{% endhint %}
 
 The API is useful when you have a list of packages and want to retrieve a list of vulnerabilities for a package version.
 
@@ -42,7 +38,7 @@ $ http \
   version==2023-09-12
 ```
 
-For operating system packages, a vendor must be specified in the namespace portion and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.&#x20;
+For operating system packages, a vendor must be specified in the namespace portion, and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.&#x20;
 
 An example using a valid url-encoded operating system purl follows:
 
@@ -227,10 +223,6 @@ Remove the component that is not supported and try to make the request again. Th
 **Your organization is not authorized to perform this action.**\
 403\
 To get access, contact your Solutions Engineer or Technical Success Manager, or the administrator for your team.
-
-**Package not found**\
-404\
-The package you entered in the purl specification can not be found in the Snyk Vulnerability Database. Check that the package name, ecosystem, and version are correct, and try again.
 
 **Rate limit exceeded**\
 429\

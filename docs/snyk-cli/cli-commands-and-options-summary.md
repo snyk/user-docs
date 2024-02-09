@@ -110,11 +110,11 @@ Generate an SBOM for a local software project in an ecosystem supported by Snyk.
 
 ### [`snyk fix`](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix)
 
-Apply the recommended updates for supported ecosystems automatically.
+Apply the recommended updates for supported ecosystems automatically. For more information, see [Automatic fixing with `snyk fix`](scan-and-maintain-projects-using-the-cli/automatic-fixing-with-snyk-fix.md).
 
 ### [`snyk apps`](https://docs.snyk.io/snyk-cli/create-a-snyk-app-using-the-snyk-cli)
 
-Create a Snyk App using the Snyk CLI.
+Create a Snyk App using the Snyk CLI. For more information, see [Snyk Apps](../snyk-api-info/snyk-apps/).
 
 ## Subcommands of CLI commands
 
@@ -325,7 +325,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `[--file=] or [--f=]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
-`[--name=<NAME>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbomhttps://docs.snyk.io/snyk-cli/commands/sbom)
+`[--name=<NAME>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 `[--version=<VERSION>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 

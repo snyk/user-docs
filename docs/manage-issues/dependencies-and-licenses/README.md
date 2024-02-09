@@ -4,7 +4,7 @@ You can [view dependencies](view-dependencies.md) and [license information](view
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 12.45.48.png" alt="Dependencies tab for an Organization"><figcaption><p>Dependencies tab for an Organization</p></figcaption></figure>
 
-{% hint style="warning" %}
+{% hint style="info" %}
 When you import or re-test a Project, changes will be reflected on the **Dependencies** UI after a ten-second delay.
 {% endhint %}
 
@@ -17,4 +17,8 @@ For both dependencies and licenses, you can filter by Project or other filter cr
 </div>
 
 * From the **Projects** drop-down, select specific Projects.
-* From the **Filters** drop-down, check the applicable boxes to filter by [Severity level](../priorities-for-fixing-issues/severity-levels.md) or Project type.
+* From the **Filters** drop-down, check the applicable boxes to filter by [Severity level](../../scan-with-snyk/find-and-manage-priority-issues/severity-levels.md) or Project type.
+
+{% hint style="info" %}
+Results from the Dockerfile Project type are filtered out by default in the filter criteria as they can result in duplication of results from scans of the images resulting from building the Dockerfiles. To match results from API calls, either filter out Dockerfiles from the API results or turn on Dockfiles in the Project type column of the filter
+{% endhint %}

@@ -1,7 +1,7 @@
 # Introduction to Snyk administration
 
-{% hint style="info" %}
-**Feature availability**\
+{% hint style="warning" %}
+**Release status**\
 Some functions, such as Groups, are available only on some [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
@@ -13,9 +13,9 @@ Snyk has a hierarchy that controls access to scanning and other Snyk features.
 * [**Groups**](manage-groups-and-organizations/introduction-to-groups.md)**:** Customers have at least one Snyk Group. The Group may correspond to the entire company. Large companies may have multiple Groups, corresponding to divisions, departments, or other parts of the company. Groups can contain multiple Organizations.
 * [**Organizations**](manage-groups-and-organizations/whats-a-snyk-organization.md)**:** Snyk Groups encompass one or more Snyk Organizations. Organizations represent specific business areas, such as teams. Organizations can contain multiple Projects.
 * **Targets**. Each Target represents a repository imported into Snyk for scanning and re-testing.
-* [**Projects**](introduction-to-snyk-projects/)**:** A Project is established based on the items that Snyk scans for issues, such as manifest files, and shows the results of scans. You can configure your Projects to define how to scan for issues in that Project. See the [Quickstart](../getting-started/quickstart/) for the basic steps.
+* [**Projects**](snyk-projects/)**:** A Project is established based on the items that Snyk scans for issues, such as manifest files, and shows the results of scans. You can configure your Projects to define how to scan for issues in that Project. See the [Quickstart](../getting-started/quickstart/) for the basic steps.
 
-Snyk administrators set up Groups and Organizations. See [Manage Groups and Organizations](manage-groups-and-organizations/) for details. Targets and [Projects](introduction-to-snyk-projects/) are created when Snyk users import development Projects into Snyk for scanning.
+Snyk administrators set up Groups and Organizations. See [Manage Groups and Organizations](manage-groups-and-organizations/) for details. Targets and [Projects](snyk-projects/) are created when Snyk users import development Projects into Snyk for scanning.
 
 ## Member (user) types
 
@@ -26,12 +26,15 @@ Snyk has the following types of members (users), defined by their roles:
 * Group member
 * Group administrator
 
-{% hint style="info" %}
-**Feature availability**\
-Group administrators and Collaborators are available with Snyk Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.&#x20;
+{% hint style="warning" %}
+**Release status**
+
+Group administrators and Collaborators are available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
-For details of the permissions associated with each role, see [Permissions associated with each role ](manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md#permissions-associated-with-each-role)on the Managing permissions page.
+For details of the permissions associated with each role, see [Permissions associated with each role ](broken-reference)on the Managing permissions page.
 
 ## Snyk Admin tools
 

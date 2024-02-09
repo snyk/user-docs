@@ -1,7 +1,7 @@
 # Risk Score
 
 {% hint style="info" %}
-.Risk Score is currently in Open Beta for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score. See [Snyk feature release process](../more-info/snyk-feature-release-process.md) for more details.
+Risk Score is currently in [Early Access](../getting-started/snyk-release-process.md) for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score.
 {% endhint %}
 
 The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for each security issue. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
@@ -11,14 +11,14 @@ Since real risk is scarce, you should expect a significant drift in the distribu
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
 {% hint style="info" %}
-As part of the Open Beta, the Risk Score replaces the Priority Score directly. See the [priority score docs](priorities-for-fixing-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled. Risk Score is not available in the CLI.&#x20;
+Risk Score replaces the Priority Score directly. See the [priority score docs](../scan-with-snyk/find-and-manage-priority-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled. Risk Score is not available in the CLI.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
 The Priority Score will be replaced with the Risk Score when Snyk Open Source and Snyk Container Projects are re-tested
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Note that in the API, the relevant fields are still named with `priority.`When Risk Score is enabled, the scores and factors populated in these fields are based on the Risk Score model as part of the beta,&#x20;
 {% endhint %}
 
@@ -46,7 +46,7 @@ The Risk Model results from extensive research conducted by the Snyk Security Da
 
 Objective impact factors are the CVSS impact metrics, Availability, Confidentiality, Integrity, and Scope, calculated based on the CVSS impact subscore. For Container issues, Provider Urgency is also taken into account.&#x20;
 
-The business criticality Project attribute will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore. For more information, see [Project attributes](../snyk-admin/introduction-to-snyk-projects/project-attributes.md).
+The business criticality Project attribute will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore. For more information, see [Project attributes](../snyk-admin/snyk-projects/project-attributes.md).
 
 ### Likelihood subscore&#x20;
 
@@ -78,32 +78,32 @@ Fixability is no longer considered part of the Score Calculation, as the effort 
 
 #### Confidentiality
 
-Represents the impact on customer’s data confidentiality, based on CVSS definition.\
+Represents the impact on customer’s data confidentiality, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-1-Confidentiality-C).\
 **Possible input values:** `None`, `Low`, `High`
 
 #### Integrity
 
-Represents the impact on customer’s data integrity, based on CVSS definition.\
+Represents the impact on customer’s data integrity, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-2-Integrity-I).\
 **Possible input values:** `None`, `Low`, `High`
 
 #### Availability
 
-Represents the impact of customer’s application availability based on CVSS definition.\
+Represents the impact of customer’s application availability based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-3-Availability-A).\
 **Possible input values:** `None`, `Low`, `High`
 
 #### Scope
 
-Indicates whether the vulnerability can affect components outside of the target’s security scope, based on CVSS definition.\
+Indicates whether the vulnerability can affect components outside of the target’s security scope, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-2-Scope-S).\
 **Possible input values:** `Unchanged`, `Changed`.&#x20;
 
 {% hint style="info" %}
 **How would these affect the score?** \
-The objective impact subscore is calculated based on the CVSS impact subscore. For more information, see these references on CVSS [impact definitions](https://www.first.org/cvss/v3.1/specification-document#2-3-Impact-Metrics) and [subscore equations](https://www.first.org/cvss/v3.1/specification-document#7-1-Base-Metrics-Equations).
+The objective impact subscore is calculated based on the CVSS impact subscore. For more information, see the references on CVSS definitions above and the [subscore equations](https://www.first.org/cvss/v3.1/specification-document#7-1-Base-Metrics-Equations).
 {% endhint %}
 
 #### Provider urgency (Snyk Container)&#x20;
 
-Urgency rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../scan-applications/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.\
+Urgency rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.\
 **Possible input values:** `Critical`, `High`, `Medium`, and `Low`_._ When neither CVSS nor Importance Rating is provided, Provider Urgency is set to `Low` by default.
 
 {% hint style="info" %}
@@ -120,7 +120,7 @@ Note that Provider Urgency will also affect the Likelihood subscore.&#x20;
 
 **Business criticality**&#x20;
 
-User-defined Project attribute representing the subjective business impact of the respective application. For more information, see [Project attributes](../snyk-admin/introduction-to-snyk-projects/project-attributes.md).\
+User-defined Project attribute representing the subjective business impact of the respective application. For more information, see [Project attributes](../snyk-admin/snyk-projects/project-attributes.md).\
 **Possible input values:** `Critical`, `High`, `Medium`, `Low`.
 
 {% hint style="info" %}
@@ -141,7 +141,7 @@ When you apply a business criticality attribute to a Project, a retest is requir
 
 #### Exploit maturity&#x20;
 
-Represents the existence and maturity of any public exploit retrieved and validated by Snyk. For more information, see [View exploits, How exploits are determined](priorities-for-fixing-issues/view-exploits.md#how-exploits-are-determined).\
+Represents the existence and maturity of any public exploit retrieved and validated by Snyk. For more information, see [View exploits, How exploits are determined](../scan-with-snyk/find-and-manage-priority-issues/view-exploits.md#how-exploits-are-determined).\
 **Possible input values:** `No Known Exploit`, `Proof of Concept`, `Functional`, `High`.
 
 {% hint style="info" %}
@@ -167,7 +167,7 @@ The likelihood subscore will increase significantly according to the EPSS score
 
 #### Attack vector&#x20;
 
-Represents the context by which vulnerability exploitation is possible, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-Exploitability-Metrics).\
+Represents the context by which vulnerability exploitation is possible, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-1-Attack-Vector-AV).\
 **Possible input values:** `Network, Adjacent, Local, Physical`
 
 {% hint style="info" %}
@@ -180,7 +180,7 @@ _`Adjacent, Local, Physical`_ - Likelihood subscore will decrease according to t
 
 #### Attack complexity&#x20;
 
-Represents the level of complexity defined by the conditions that must exist to exploit the vulnerability, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-Exploitability-Metrics).\
+Represents the level of complexity defined by the conditions that must exist to exploit the vulnerability, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-2-Attack-Complexity-AC).\
 **Possible input values:** `Low`, `High`
 
 {% hint style="info" %}
@@ -193,33 +193,33 @@ Represents the level of complexity defined by the conditions that must exist to 
 
 #### Privileges required&#x20;
 
-Represents the level of privileges an attacker must possess before successfully exploiting the vulnerability, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-Exploitability-Metrics).\
+Represents the level of privileges an attacker must possess before successfully exploiting the vulnerability, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-3-Privileges-Required-PR).\
 **Possible input values:** `None`, `Low`, `High`
 
 {% hint style="info" %}
 **How would this affect the score?**&#x20;
 
-_`None`_ - Likelihood subscore will increase&#x20;
+_`None`_- Likelihood subscore will increase&#x20;
 
-`Low, High` - Likelihood subscore will decrease according to the level of privileges required&#x20;
+`Low, High`- Likelihood subscore will decrease according to the level of privileges required&#x20;
 {% endhint %}
 
 #### User interaction&#x20;
 
-Represents the need for action from a user as part of the exploitation process, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-Exploitability-Metrics).\
+Represents the need for action from a user as part of the exploitation process, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-1-4-User-Interaction-UI).\
 **Possible input values:** `None`, `Required`&#x20;
 
 {% hint style="info" %}
 **How would this affect the score?**&#x20;
 
-`None` -  Likelihood subscore will increase&#x20;
+`None`-  Likelihood subscore will increase&#x20;
 
-`Required` - Likelihood subscore will decrease&#x20;
+`Required`- Likelihood subscore will decrease&#x20;
 {% endhint %}
 
 #### Social trends&#x20;
 
-Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation. For more information, see [Vulnerabilities with social trends](priorities-for-fixing-issues/vulnerabilities-with-social-trends.md).\
+Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation. For more information, see [Vulnerabilities with social trends](../scan-with-snyk/find-and-manage-priority-issues/vulnerabilities-with-social-trends.md).\
 **Possible input values:**  `Trending`, `Not trending`
 
 {% hint style="info" %}
@@ -285,7 +285,7 @@ _`False`_ - Likelihood subscore will not change
 
 #### Provider urgency (Snyk Container)&#x20;
 
-Importance rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../scan-applications/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.\
+Importance rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.\
 **Possible input values:** `Critical`, `High`, `Medium`, and `Low`_._ When neither CVSS nor Importance rating is provided, provider urgency is set to `Low` by default.
 
 {% hint style="info" %}
@@ -317,7 +317,7 @@ _Great transitive depth -_ Likelihood subscore will decrease significantly (comi
 
 #### Reachability&#x20;
 
-Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. For more information, see [Reachable vulnerabilities](priorities-for-fixing-issues/reachable-vulnerabilities.md).\
+Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. For more information, see [Reachable vulnerabilities](../scan-with-snyk/find-and-manage-priority-issues/reachable-vulnerabilities.md).\
 **Possible input values:** `Reachable`, `No path found`\
 When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.
 
@@ -373,8 +373,8 @@ Whether or not the asset introducing this issue is exposed to the Internet.
 `No data` - Likelihood subscore will not change
 {% endhint %}
 
-{% hint style="warning" %}
-All factor names and their effect on the score are subject to change during the beta period.&#x20;
+{% hint style="info" %}
+All factor names and their effect on the score are subject to change during the early access period.&#x20;
 {% endhint %}
 
 \

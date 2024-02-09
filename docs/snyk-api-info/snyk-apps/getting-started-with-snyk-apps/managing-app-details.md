@@ -66,6 +66,6 @@ To delete an App from your Snyk Organization, send a **DELETE** request to the `
 https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
 ```
 
-{% hint style="danger" %}
+{% hint style="info" %}
 Deleting an App will revoke your App credentials and remove all of your App's installations. If you have active users, they will no longer be able to connect to Snyk through the App.
 {% endhint %}

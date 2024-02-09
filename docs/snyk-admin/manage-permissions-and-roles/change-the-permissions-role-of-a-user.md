@@ -1,8 +1,10 @@
-# Change the permissions (role) of a user
+# Change the role of a user
 
-{% hint style="info" %}
-**Feature availability**\
-Enterprise plans have pre-defined Snyk roles: administrators, viewers, and collaborators, as well as custom roles. Roles are defined by permissions. Manging permissions is available on Snyk Enterprise plans. See [Plans and pricing](https://snyk.io/plans/) for details.
+{% hint style="warning" %}
+**Release status**\
+Enterprise plans have default Snyk roles: administrators, viewers, and collaborators, as well as custom roles. Roles are defined by permissions. Manging permissions are available on Snyk Enterprise plans.&#x20;
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 To change the permissions of a user,  you must change the role of that user.
@@ -12,6 +14,10 @@ To change the permissions of a user,  you must change the role of that user.
 You must have specific permissions in order to change the role of a user.
 
 For example, only Group admins can assign the role of Group admin to other users. If you want to add a Group admin, and your company currently does not have any Group admins, ask Snyk [support](https://support.snyk.io/hc/en-us/requests/new) to promote at least one user.
+
+{% hint style="info" %}
+For more information on if your role has permission to change other user roles, see [Default user roles](pre-defined-user-roles.md).
+{% endhint %}
 
 ## How to change the role of a user
 

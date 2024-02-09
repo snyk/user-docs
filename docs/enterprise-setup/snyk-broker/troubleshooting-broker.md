@@ -4,41 +4,33 @@
 For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/hc/en-us/articles/4404288846353-Broker-Troubleshooting).
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Multi-tenant settings**\
-When you are setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../more-info/data-residency-at-snyk.md) for details.
+When you are setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md) for details.
 {% endhint %}
 
 This page has information and instructions for the following:
 
-* [Preflight checks](troubleshooting-broker.md#preflight-checks)
 * [Logging with the Broker Client](troubleshooting-broker.md#logging-with-the-broker-client)
 * Basic troubleshooting with the monitoring features, [Healthcheck](troubleshooting-broker.md#monitoring-healthcheck) and [Systemcheck](troubleshooting-broker.md#monitoring-systemcheck)
 * [Troubleshooting Standalone Broker](troubleshooting-broker.md#troubleshooting-standalone-broker)
+* [Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise](troubleshooting-broker.md#support-of-big-manifest-files-greater-than-1mb-for-github-and-github-enterprise)
 * [Troubleshooting Broker with Code Agent](troubleshooting-broker.md#troubleshooting-broker-with-code-agent)
 * [Ensuring your containers stay online when you log out of the host](troubleshooting-broker.md#containers-go-down-when-you-log-out-of-the-host)
 
-## Preflight checks
-
-The main objective of preflight checks is to catch errors and misconfigurations early, on Broker Client startup, rather than later during use. Whether or not the checks are successful, the Broker Client starts. The following checks are available:
-
-| Check ID               | Description                                                                                                                                                                                                                                                 | Configuration Defaults                                                                     |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| `broker-server-status` | **Broker Server Healthcheck** validates the connectivity to the Broker Server. It performs a GET request to `{BROKER_SERVER_URL}/healthcheck`                                                                                                               | If not specified, `BROKER_SERVER_URL` is [https://broker.snyk.io](https://broker.snyk.io/) |
-| `rest-api-status`      | **REST API Healthcheck** validates the connectivity to the [Snyk REST API](https://apidocs.snyk.io/). It performs a GET request to `{API_BASE_URL}/rest/openapi`. This check is conditional and will be executed only if high availability mode is enabled. | If not specified, `API_BASE_URL` is [https://api.snyk.io](https://api.snyk.io/)            |
-
-{% hint style="info" %}
-You can use the environment variable `PREFLIGHT_CHECKS_ENABLED=false` to disable Preflight Checks feature, so no checks will be executed when the Broker Client starts.
-{% endhint %}
-
 ## Logging with the Broker Client
 
-By default the log level of the Broker is set to INFO. All SCM responses regardless of HTTP status code re logged by the Broker Client. Set the following environment variables to alter the logging behavior:
+By default, the log level of the Broker is set to INFO. All SCM responses, regardless of HTTP status code, are logged by the Broker Client. Set the following environment variables to alter the logging behavior:
 
 | Key               | Default | Notes                                                          |
 | ----------------- | ------- | -------------------------------------------------------------- |
 | LOG\_LEVEL        | info    | Set to "debug" for all logs.                                   |
 | LOG\_ENABLE\_BODY | false   | Set to "true" to include the response body in the Client logs. |
+
+To keep the logs concise in normal operation, Snyk produces minimal information on the INFO level, tracking the requests coming from Snyk into the client as well as the downstream request made to the targeted system, Github, Gitlab, JIRA, and so on, and logging the url hit and the response code received.\
+
+
+When you set `LOG_INFO_VERBOSE="true"`, the environment variable will add the headers in these log lines without requiring that you use debug.
 
 ## Monitoring: Healthcheck
 
@@ -78,6 +70,10 @@ To change the location of the systemcheck endpoint, you can specify an alternati
 ENV BROKER_SYSTEMCHECK_PATH /path/to/systemcheck
 ```
 
+{% hint style="info" %}
+Snyk Broker does not support authentication with mTLS method. &#x20;
+{% endhint %}
+
 ## Troubleshooting Standalone Broker
 
 If after running the Broker there is still an error connecting to the on-premise Git, use the following troubleshooting steps.
@@ -92,7 +88,7 @@ If after running the Broker there is still an error connecting to the on-premise
 * Review the HTTP code in the request to the on-premise Git.
   * **404 - Not found** - Ensure correct information in the docker run command.
   * **401/403** - Check credentials.
-  * If there is any reference to SSL, this can be caused by a self-signed certificate. Ensure you have either mounted the correct certificate, or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED=0.`
+  * If there is any reference to SSL, this can be caused by a self-signed certificate. Ensure you have either mounted the correct certificate or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED=0.`
 
 ### Testing connectivity for Standalone Broker
 
@@ -113,22 +109,7 @@ https.get('<URL_HERE>', res => {console.log(`statusCode: ${res.statusCode}`)})
 
 ## **Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise**
 
-Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big manifest files (> 1Mb) failure. To address this issue, whitelist an additional Blob API endpoint in `accept.json`:
-
-This should be in the `private` array.
-
-```
-{
-    "//": "used to get given manifest file",
-    "method": "GET",
-    "path": "/repos/:owner/:repo/git/blobs/:sha",
-    "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
-}
-```
-
-{% hint style="info" %}
-To ensure the maximum possible security, Snyk does not enable this rule by default, as use of this endpoint theortically gives the Snyk platform access to all files in this repository because the path does not include specific allowed file names.
-{% endhint %}
+Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big manifest files (> 1Mb) failure. To address this issue, follow either the [Docker](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup) or [Helm](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup) instructions to allow large manifest files.
 
 ## Troubleshooting Broker with Code Agent
 

@@ -31,15 +31,32 @@ docker run --restart=always \
        snyk/broker:jira
 ```
 
-If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../../upgrade-the-snyk-broker-client.md) and make any configuration changes needed, for example, providing the CA (Certificate Authority) to the Broker Client configuration when the Jira instance is using a private certificate.
+If necessary, navigate to [Advanced configuration for Snyk Broker Docker installation](../advanced-configuration-for-snyk-broker-docker-installation/) and make any configuration changes needed, for example, providing the CA (Certificate Authority) to the Broker Client configuration when the Jira instance is using a private certificate.
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Jira integration.
+
+## Jira PAT authentication for SSO-enabled JIRA
+
+When SSO is enabled, JIRA usually prohibits the use of a username and password and requires the use of a personal access token (PAT).
+
+When SSO is enabled, you must use a specific Jira version that will instead use the authorization header with the bearer token. To use this version, provide the following configuration:
+
+```
+docker run --restart=always \
+           -p 8000:8000 \
+           -e BROKER_TOKEN=secret-broker-token \
+           -e JIRA_PAT=<your_pat_token> \
+           -e JIRA_HOSTNAME=your.jira.domain.com \
+           -e BROKER_CLIENT_URL=http://my.broker.client:8000 \
+           -e PORT=8000 \
+       snyk/broker:jira-bearer-auth
+```
 
 ## Start the Broker Client container and verify the connection with Jira
 
 &#x20;Paste the Broker Client configuration to start the Broker Client container.
 
-Once the container is up, and the Jira Integrations page shows the connection to Jira, under Projects you can create Jira tickets
+After the container is set up, and the Jira Integrations page shows the connection to Jira, under Projects you can create Jira tickets
 
 ## **Basic troubleshooting for Broker with Jira**
 

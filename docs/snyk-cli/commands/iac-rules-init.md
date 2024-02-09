@@ -2,7 +2,7 @@
 
 ## Usage
 
-**Feature availability:** This feature is in beta.
+**Feature availability:** This feature is in Early Access.
 
 `snyk iac rules init [<OPTIONS>]`
 
@@ -46,5 +46,5 @@ snyk iac rules init
 
 `What do you want to initialize? project`
 
-`Project name: project1  ✔`
+`Project name: project1 ✔`
 

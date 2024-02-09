@@ -2,9 +2,12 @@
 
 Follow the instructions on this page to set up Artifactory Repository with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Artifactory Repository  deployment.
 
-{% hint style="info" %}
-**Feature availability**\
-Integration with Artifactory Repository is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Integration with Artifactory Repository is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 {% hint style="info" %}
@@ -17,7 +20,7 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 {% endhint %}
 
 {% hint style="info" %}
-For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../integrations/package-repository-integrations/artifactory-repository-setup/).
+For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../integrate-with-snyk/package-repository-integrations/artifactory-package-repository-connection-setup/).
 {% endhint %}
 
 {% hint style="info" %}

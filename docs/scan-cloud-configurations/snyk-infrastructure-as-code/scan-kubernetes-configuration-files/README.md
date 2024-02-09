@@ -1,2 +1,0 @@
-# Scan Kubernetes configuration files
-

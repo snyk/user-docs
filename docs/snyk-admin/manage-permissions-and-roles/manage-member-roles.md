@@ -1,13 +1,16 @@
-# Manage Member Roles
+# Manage user roles
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available for Enterprise customers. See [Plans and pricing](https://snyk.io/plans/) for details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Managing user roles is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
-The Member Roles feature provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce customized access by assigning a set of permissions to a role that will be granted to users. Pre-defined Snyk roles, such as Group Admin, cannot be changed.&#x20;
+Snyks Member Roles functionality enables you to manage default and custom roles, allowing you to create and enforce set permissions to roles that reflect the users and functions in your Organization. Permissions for default Snyk roles, such as Group Admin, cannot be changed.
 
-You can [manage roles](manage-member-roles.md#manage-roles), [assign roles](manage-member-roles.md#assign-roles) to users or to service accounts, and [use roles with SSO](manage-member-roles.md#use-roles-in-custom-sso).
+You can [manage roles](manage-member-roles.md#manage-roles), [assign roles](manage-member-roles.md#assign-roles) to users or service accounts, and [use roles with SSO](manage-member-roles.md#use-roles-in-custom-sso).
 
 ## Manage roles
 
@@ -15,7 +18,7 @@ You can [create](manage-member-roles.md#create-a-role), [edit](manage-member-rol
 
 ### Create a Role
 
-**Group Admins** can select their Gorup and find this option in **Settings > Member Roles**.
+**Group Admins** can select their Group and find this option in **Settings > Member Roles**.
 
 You will find the default roles, **Org Admin** and **Org Collaborator**. When you click each of these roles, you can view the associated permissions, but you cannot modify the default roles.
 
@@ -27,7 +30,7 @@ Click the **Create role** button. Basic details about the role appear in the top
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 15.29.53.png" alt="Basic information about the new role"><figcaption><p>Basic information about the new role</p></figcaption></figure>
 
-The bottom section lists all the permissions available at the Organization level that you can use to define the role. For more information about these permissions, see [Permissions associated with each pre-defined role](permissions-associated-with-each-pre-defined-role.md).
+The bottom section lists all the permissions available at the Organization level that you can use to define the role. For more information about these permissions, see [Default user roles](pre-defined-user-roles.md).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 17.07.18.png" alt="Organization level permissions"><figcaption><p>Organization level permissions</p></figcaption></figure>
 
@@ -47,7 +50,7 @@ When the process of creating a role completes, a confirmation message appears.
 
 ### Edit a Role
 
-**Group Admins** can select a role, except for the default roles that are marked as locked, from the  list on the Member Roles page and update the name, description, and permissions at any time . You can view how the default roles are set up and duplicate those roles, but you cannot edit them.
+**Group Admins** can select a role, except for the default roles that are marked as locked, from the list on the Member Roles page and update the name, description, and permissions at any time. You can view how the default roles are set up and duplicate those roles, but you cannot edit them.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 15.37.06.png" alt="Update Role Details"><figcaption><p>Update Role Details</p></figcaption></figure>
 
@@ -116,7 +119,7 @@ Snyk prevents users from assigning roles to others that have more privileges tha
 
 ### Assign roles to service accounts
 
-Users who have permission to create an Organization-level or Group-level service account can set up new service accounts for their Organization and assign a role. For details about permission to create service accounts, see the [service account information on the Manage permissions page](permissions-associated-with-each-pre-defined-role.md#service-account-management-permissions).
+Users who have permission to create an Organization-level or Group-level service account can set up new service accounts for their Organization and assign a role. For details about permission to create service accounts, see the [service account information on the Manage permissions page](broken-reference).
 
 Select an Organization and navigate to **Settings** > **Service Accounts**. Provide a name, choose a role from the dropdown, and click **Create**.
 

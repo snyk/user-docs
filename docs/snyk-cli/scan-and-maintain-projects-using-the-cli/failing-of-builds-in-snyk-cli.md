@@ -14,13 +14,13 @@ The Snyk CLI on its own does not have the capability natively to fail tests on m
 
 ## Combining security policies with --severity-threshold
 
-[Security policies](../../manage-issues/policies/) provide the capability to change the severity of a vulnerability, when a Project is tested against an Organization using that policy and the severity matches specific criteria. You could, for example, change the severity of a vulnerability from high to low, and if you run `snyk test` with the option `--severity-threshold=medium|high`, this previously high severity vulnerability no longer fails the build.
+[Security policies](../../scan-with-snyk/policies/) provide the capability to change the severity of a vulnerability, when a Project is tested against an Organization using that policy and the severity matches specific criteria. You could, for example, change the severity of a vulnerability from high to low, and if you run `snyk test` with the option `--severity-threshold=medium|high`, this previously high severity vulnerability no longer fails the build.
 
 {% hint style="info" %}
 Security policies do not have all attributes available for criteria matching. Refer to the security policy configuration to see what is available.
 {% endhint %}
 
-An example follows of `snyk test` with the optoin `--severity-threshold=high` running against a default Organization with no policy applied to it.
+An example follows of `snyk test` with the option `--severity-threshold=high` running against a default Organization with no policy applied to it.
 
 ![Test against a default organization with no policy applied to it](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT\_W3O1oFyMAzF9g3s%2F-MZTrc0D6NjT6VlS1jmU%2Fimage.png?alt=media\&token=27e0ee8c-147f-4942-ada4-08de07f67c40)
 

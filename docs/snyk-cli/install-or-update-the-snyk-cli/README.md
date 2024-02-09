@@ -4,7 +4,11 @@ You can install or update the [Snyk CLI](../) using the methods explained on thi
 
 After you install the Snyk CLI, you must [authenticate](../commands/auth.md). Then you can [get started](../getting-started-with-the-snyk-cli.md) testing and fixing your vulnerabilities, beginning with testing your installation.
 
-**Note**: Snyk recommends always keeping your CLI installation updated to the latest version. You can check which version of the Snyk CLI you have installed by running `snyk --version`.
+{% hint style="info" %}
+Snyk recommends always keeping your CLI installation updated to the latest version. You can check which version of the Snyk CLI you have installed by running `snyk --version`.
+{% endhint %}
+
+For information about installing the CLI for an IDE, see the IDE documentation.
 
 ## Install with standalone executables
 
@@ -33,7 +37,7 @@ You can also use these direct links to download the executables:
 * **Alpine**: [https://static.snyk.io/cli/latest/snyk-alpine](https://static.snyk.io/cli/latest/snyk-alpine)
 
 {% hint style="info" %}
-To use the CLI on an Apple M1 or M2 machine, (darwin/arm64), see [Prerequisite for CLI on an Apple M1 machine](prerequisite-for-cli-on-an-apple-m1-machine.md).
+To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine, (darwin/arm64), see [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md).
 
 To use the CLI with Alpine Linux, see [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md).
 
@@ -54,7 +58,7 @@ brew install snyk
 ```
 
 {% hint style="warning" %}
-For Apple M1 (darwin/arm64), see: [How do I run Snyk CLI on an Apple M1 machine?](https://support.snyk.io/hc/en-us/articles/5022278090397)
+For Apple M1 or M2 (darwin/arm64), see: [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md).
 {% endhint %}
 
 ## Install with Scoop (Windows)
@@ -108,17 +112,4 @@ snyk/snyk:maven snyk monitor \
 --maven-aggregate-project
 ```
 
-## Install as a part of a Snyk integration
-
-Snyk also offers many [integrations](../../integrations/) into developer tooling. These integrations install and manage the Snyk CLI for you. Integrations include the following:
-
-* [Snyk Jenkins plugin](https://github.com/jenkinsci/snyk-security-scanner-plugin)
-* [CircleCI Orb](https://github.com/snyk/snyk-orb)
-* [Azure Pipelines Task](https://github.com/snyk/snyk-azure-pipelines-task)
-* [GitHub Actions](https://github.com/snyk/actions)
-* [IntelliJ IDE Plugin](https://github.com/snyk/snyk-intellij-plugin)
-* [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner)
-* [Eclipse IDE Extension](https://github.com/snyk/snyk-eclipse-plugin)
-* [Maven plugin](https://github.com/snyk/snyk-maven-plugin)
-
-See the [integrations](../../integrations/) docs for detailed information about the integrations and how to install.\
+\

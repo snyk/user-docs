@@ -2,9 +2,12 @@
 
 Follow the instructions on this page to set up Nexus Repository Manager with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Nexus Respository Manager deployment.
 
-{% hint style="info" %}
-**Feature availability**\
-Integration with Nexus Repository Manager is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Integration with Nexus Repository Manager is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 {% hint style="info" %}
@@ -16,11 +19,11 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 {% endhint %}
 
 {% hint style="info" %}
-For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../../integrations/package-repository-integrations/nexus-repo-manager-setup/).
+For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../../integrate-with-snyk/package-repository-integrations/nexus-repository-manager-connection-setup/).
 {% endhint %}
 
 {% hint style="info" %}
-For information about brokered integration with Nexus Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
+For information about brokered integration with Nexus Container Registry see [Snyk Broker -Container Registry Agent](../../snyk-broker-container-registry-agent/).
 {% endhint %}
 
 ## Obtain Broker token for Nexus integration

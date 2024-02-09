@@ -2,15 +2,21 @@
 
 ## Prerequisites for Snyk Broker
 
+{% hint style="info" %}
+The use of Snyk Broker on Windows is not supported. Snyk recommends that Windows users deploy Broker using Linux.
+{% endhint %}
+
+The following are prerequisites for using Snyk Broker:
+
 * Client machine system requirements: 1 CPU, 256MB of RAM
 * Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) that is also allowed by any firewalls installed on your network
 * A Snyk account
 * Self-enabled Broker integration using the Snyk API, or enabled by contacting [Snyk Support](https://support.snyk.io/hc/en-us)
 * A unique UUID token called Broker token. See [Generate credentials in the target application for Snyk Broker](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker)
-* An SCM token or password. See the [integrations documentation](../../integrations/) for each SCM for information on how to obtain the token.
+* An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token. Snyk Broker does not support authentication with the mTLS method. &#x20;
 * Docker configured to pull images from Docker Hub
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
@@ -41,8 +47,6 @@ Consider the following to understand what the required components are for your d
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
-  * You will need to deploy an additional agent with Broker, the Snyk Broker Code Agent, and add an environment variable `-e ACCEPT_CODE` or a custom allowlist `accept.json` file if you want to view code snippets.
-  * See [Snyk Broker Code Agent](snyk-broker-code-agent/).
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with Broker, the Snyk Broker Container Registry Agent.
   * See [Snyk Broker Container Registry agent](snyk-broker-container-registry-agent/).
@@ -69,7 +73,7 @@ For code repository (SCM) integrations, a Broker token can be generated via API 
 1. Go to the Snyk API v1 documentation and follow the example under "Set up a broker for an existing integration" within the [Integrations API](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 2. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration. by selecting **Settings** > **Integrations** for that specific integration update to see the Broker token.
 
-For [Artifactory Repository](../../integrations/package-repository-integrations/artifactory-repository-setup/) and [Nexus Repository Manager](../../integrations/package-repository-integrations/nexus-repo-manager-setup/) brokered instances or [Jira](install-and-configure-snyk-broker/jira-install-and-configure-broker/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+For [Artifactory Repository](../../integrate-with-snyk/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager](../../integrate-with-snyk/package-repository-integrations/nexus-repository-manager-connection-setup/) brokered instances or [Jira](install-and-configure-snyk-broker/jira-install-and-configure-broker/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 
 1. Select **Settings** > **Integrations** for that specific integration to generate the Broker token.
 2. Once the Broker token is generated, under the integration, the notification from this screen correctly displays “Could not connect to…”, as you have not yet installed and configured the client.

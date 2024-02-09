@@ -46,8 +46,8 @@ You can also provide a dedicated role in Amazon ECS tasks. For more information 
 6. Review and provide a role name: **SnykCraEc2Role**.
 7. Create the role.
 8.  From the role's **Summary** page, for later use, copy the **Instance Profile ARN**.\
-    \*\*\*\*Example: \*\*\*\* `arn:aws:iam::aws-account:instance-profile` or `SnykCraEc2Role`\
-    Also copy the **Role ARN**.
+    Example:  `arn:aws:iam::aws-account:instance-profile` or `SnykCraEc2Role`\
+    Also, copy the **Role ARN**.
 
     Example: `arn:aws:iam::aws-account:role` or `SnykCraEc2Role`
 

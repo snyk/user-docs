@@ -1,2 +1,0 @@
-# Integrate with Snyk
-

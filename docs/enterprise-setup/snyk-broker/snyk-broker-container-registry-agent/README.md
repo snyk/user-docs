@@ -1,8 +1,11 @@
 # Snyk Broker - Container Registry Agent
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Snyk Broker Container Registry Agent is available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 The Snyk Broker Container Registry Agent enables you to establish connection with network-restricted container registries so you can scan these registries using the Snyk service.
@@ -14,7 +17,7 @@ When you use the Container Registry Agent, Snyk can integrate with private conta
 
 This page explains how to use the Container Registry Agent to integrate through Broker with supported open-source container registries as [listed](./#supported-container-registries) on this page. This method of integration is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.
 
-If you **do not require that images be scanned in your own environment**, you do not need to use the Container Registry Agent. You can **integrate with the supported container registries from the integrations page in your account**. For details, see [Snyk Container - Integrations](../../../scan-containers/snyk-container-integrations/).
+If you **do not require that images be scanned in your own environment**, you do not need to use the Container Registry Agent. You can **integrate with the supported container registries from the integrations page in your account**. For details, see [Snyk Container - Integrations](../../../integrate-with-snyk/snyk-container-integrations/).
 
 ## **Components of the network-restricted container registries solution**
 
@@ -37,7 +40,7 @@ Using the Snyk Broker Container Registry Agent you can integrate Snyk with the f
 * Google Cloud Container Registry (GCR) (type: gcr)
 * Amazon Elastic Container Registry (ECR) (type: ecr)
 * Google Artifact Registry (type: google-artifact-cr)
-* Docker Hub registry (type: docker-hub)
+* Docker Hub registry (type: docker-hub). Note: Snyk Broker is unable to connect to a self-hosted instance of OCI Distribution, that is, [`docker.io/registry`](http://docker.io/registry).
 * RedHat Quay container registry (type: quay-cr)
 * Nexus registry (type: nexus-cr)
 * GitHub Container registry (type: github-cr)
@@ -101,9 +104,8 @@ For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **
 * `CR_USERNAME` - The username for authenticating to the container registry api.
 * `CR_PASSWORD` - The password for authenticating to the container registry api.
 * `CR_TOKEN` - Authentication token for DigitalOcean container registry.
-* `PORT` - The local port at which the Broker client accepts connections. Default is 7341.
+* `PORT` - The local port at which the Broker client accepts connections (default value: 7341).
 * Optional - `BROKER_CLIENT_VALIDATION_URL` - URL to configure /systemcheck for the container registry agent. For details, see [Configuring and using systemcheck](./#configuring-and-using-systemcheck) on this page.
-* Optional - `SNYK_MAX_IMAGE_SIZE_IN_BYTES` - The maximum size of an image that can be scanned (default value: `2147483648`)
 
 Run the Broker Client container with the relevant configuration:
 
@@ -123,9 +125,16 @@ docker run --restart=always \
 
 As an alternative to this command, you can use a derived Docker image to set up the Container Registry Agent. See [Derived Docker images](../install-and-configure-snyk-broker/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Container Registry Agent.
 
-### Run**ning the Container Registry Agent**
+### Configuring and running **the Container Registry Agent**
 
-You can pull the Container Registry Agent image from Docker Hub using the link provided in the [prerequisites](./#prerequisites-for-container-registry-agent). To run the image you can use a single environment variable for specifying the port:
+You can pull the Container Registry Agent image from Docker Hub using the link provided in the [prerequisites](./#prerequisites-for-container-registry-agent).
+
+To configure the Container Registry Agent, the following environment variables are required:
+
+* `SNYK_PORT` - the local port at which the Container Registry Agent accepts connections (default value: 17500).
+* `SNYK_MAX_IMAGE_SIZE_IN_BYTES` - the maximum size of an image that Snyk is able to scan (default value: 2147483648).
+
+Run the Container Registry Agent container with the relevant configuration:
 
 ```
 docker run --restart=always \
@@ -152,7 +161,7 @@ If you are using **Repository path** as your Docker access method, set the conta
 
 Note that the catalog endpoint `/artifactory/api/docker/<artifactory-repository>/v2/_catalog` is not required for importing a project in Artifactory; this is used for listing the image repositories.
 
-See [Configuring your JFrog Artifactory container registry integration](../../../integrations/snyk-container-integrations/container-security-with-jfrog-artifactory-integration/configuring-your-jfrog-artifactory-container-registry-integration.md) for more details.
+See [Configuring your JFrog Artifactory container registry integration](../../../integrate-with-snyk/snyk-container-integrations/container-security-with-jfrog-artifactory-integration/configuring-your-jfrog-artifactory-container-registry-integration.md) for more details.
 
 ### **Elastic Container Registry (ECR)**
 
@@ -186,7 +195,7 @@ ECR setup requires that the following kinds of IAM resources be created:
 
 #### **Setup steps for ECR**
 
-The resources described can be used as follows, so that a single Container Registry Agent instance can access ECR repositories located in different accounts.
+The resources described can be used as follows so that a single Container Registry Agent instance can access ECR repositories located in different accounts.
 
 **Run this step once only.** Create the Container Registry Agent IAM Role or IAM User and use it to run the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent using one of the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
 
@@ -203,22 +212,21 @@ The resources described can be used as follows, so that a single Container Regis
 
 You can use the `/systemcheck` endpoint of the Broker Client to verify connectivity between the Broker Client, the Container Registry Agent, and your container registry.
 
-In order to use the endpoint, provide the following environment variable to the Broker Client:\
+To use the endpoint, provide the following environment variable to the Broker Client:\
 `BROKER_CLIENT_VALIDATION_URL=<agent-url>/systemcheck`
 
 When you call the `/systemcheck` endpoint of the Broker Client, it uses the `BROKER_CLIENT_VALIDATION_URL` to make a request to the `/systemcheck` endpoint Container Registry Agent, with the credentials provided to the Broker Client. The Container Registry Agent then makes a request to the container registry to validate connectivity.
 
 {% hint style="info" %}
-The `/systemcheck` endpoint is **not mandatory** for the brokered integration to function. For more information see Systemcheck on the [Monitoring](broken-reference) page.
+The `/systemcheck` endpoint is not mandatory for the brokered integration to function. For more information, see [Systemcheck documentation](../troubleshooting-broker.md#monitoring-systemcheck).
 {% endhint %}
 
 ## **Debugging methods for Container Registry Agent**
 
 The `LOG_LEVEL` environment variable can be set to the desired level (debug/info/warn/error) in order to change the level of the Container Registry Agent and Broker Client logs.
 
-For more verbose debugging, run the Container Registry Agent with the `DEBUG=*` environment variable. This allows printing the logs of the Node [Debug](https://www.npmjs.com/package/debug) package. The Debug package is used by several packages in the Container Registry Agent, among them the [Needle](https://www.npmjs.com/package/needle) package, which is used for making HTTP requests. To print debug logs specifically from Needle, set `DEBUG=needle`.
+For more verbose debugging, run the Container Registry Agent with the `DEBUG=*` environment variable. This allows you to print the logs of the Node [Debug](https://www.npmjs.com/package/debug) package. The Debug package is used by several packages in the Container Registry Agent, among them the [Needle](https://www.npmjs.com/package/needle) package, which is used for making HTTP requests. To print debug logs specifically from Needle, set `DEBUG=needle`.
 
 {% hint style="danger" %}
-**Warning:**\
 Using the debugging options of third-party tools is not recommended for production environments, as this may result in logging sensitive information in logs that are not maintained by Snyk, for example, header information of HTTP requests.
 {% endhint %}

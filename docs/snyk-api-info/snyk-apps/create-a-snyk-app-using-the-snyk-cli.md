@@ -1,6 +1,6 @@
 # Create a Snyk App using the Snyk CLI
 
-{% hint style="warning" %}
+{% hint style="info" %}
 All `apps` subcommands are accessible only behind the `--experimental` flag and the behavior can change at any time, without prior notice. Use all the commands with caution
 {% endhint %}
 

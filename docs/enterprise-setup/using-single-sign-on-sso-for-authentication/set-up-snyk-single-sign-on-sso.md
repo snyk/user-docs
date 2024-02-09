@@ -82,6 +82,10 @@ Obtain the following information from your identity provider. Provide this infor
 
 ## Set up OpenID Connect (OIDC) for SSO
 
+{% hint style="info" %}
+The IdP (or issuer URL) must be publicly reachable. If these cannot be made public then SAML should be used rather than OIDC
+{% endhint %}
+
 When using OIDC for the connection between your Identity provider and Snyk, add the Callback/Redirect URIs and OAuth Grant Type in your identity provider to establish trust with Snyk.
 
 | Information                                       | Description                                                                                                    |
@@ -95,12 +99,12 @@ When using OIDC for the connection between your Identity provider and Snyk, add 
 
 Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
-| Information                  | Description                                                                               |
-| ---------------------------- | ----------------------------------------------------------------------------------------- |
-| Issuer URL                   | The URL of the discovery document of the OpenID Connect provider you want to connect with |
-| Client ID                    | The public identifier unique for your authorization server                                |
-| Client Secret                | Needed only if the IdP does not allow the Implicit grant type                             |
-| Email domains and subdomains | The email domains and subdomains that need access to the SSO                              |
+| Information                  | Description                                                                                                                 |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Issuer URL                   | The URL of the discovery document of the OpenID Connect provider you want to connect with. This must be publicly reachable. |
+| Client ID                    | The public identifier unique for your authorization server                                                                  |
+| Client Secret                | Needed only if the IdP does not allow the Implicit grant type                                                               |
+| Email domains and subdomains | The email domains and subdomains that need access to the SSO                                                                |
 
 ## Set up Azure AD as SSO (via App Registration/OIDC)
 
@@ -133,6 +137,8 @@ When using Active Directory Federation Service (ADFS) for the connection between
 | **Information**                         | **Description**                                                                                                                                                  |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Realm Identifier                        | urn:auth0:snyk                                                                                                                                                   |
+| EU Realm Identifier                     | urn:auth0:snyk-mt-eu-prod-1                                                                                                                                      |
+| AU Realm Identifier                     | urn:auth0:snyk-mt-au-prod-1                                                                                                                                      |
 | Callback URL                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                                                                   |
 | Callback URL (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback)                                                   |
 | Callback URL (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback)                                                   |
@@ -175,10 +181,10 @@ To complete your login:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).pdf" %}
+{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3).pdf" %}
 
 {% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO ADFS Worksheet (2).pdf" %}
+{% file src="../../.gitbook/assets/SSO ADFS Worksheet (2) (1).pdf" %}
 
 {% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}

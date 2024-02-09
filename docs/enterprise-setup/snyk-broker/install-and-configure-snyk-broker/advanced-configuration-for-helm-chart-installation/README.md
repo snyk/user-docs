@@ -11,3 +11,5 @@ When you set up Snyk Broker using Helm, you can set advanced parameters as expla
 * [Deploying multiple Brokers in the same namespace](deploying-multiple-brokers-in-the-same-namespace.md)
 * [Custom additional options for Broker Helm Chart installation](custom-additional-options-for-broker-helm-chart-installation.md)
 * [Broker rules for Snyk Code](broker-rules-for-snyk-code.md)
+* [Snyk Open Source scans (SCA) of large manifest files, Helm setup](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup)
+* [Insecure Downstream Mode](insecure-downstream-mode.md)

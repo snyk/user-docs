@@ -6,7 +6,7 @@ Custom mappings allows you to dynamically assign users to your Snyk Groups and O
 Work with your Snyk account team to implement this option.
 {% endhint %}
 
-To understand more about roles and permissions within Snyk, see [Managing permissions](../../../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md).
+To understand more about roles and permissions within Snyk, see [Managing permissions](broken-reference).
 
 See also [Member Roles](../../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md) and [Roles in Custom SSO](../../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md#roles-in-custom-sso).
 
@@ -46,7 +46,7 @@ To configure this option, send the `roles` array within the SAML attributes or O
   * If you are using standard roles, **{role}** should be either **collaborator** or **admin.**
   * Custom Role can also be used for **{role}** and should use the normalized name. See [Roles in SSO](../../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md#roles-in-custom-sso) for more details.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Users must only have one role mapped per Organization. Mapping multiple roles for an Organization is not supported and can lead to unexpected behavior.
 {% endhint %}
 
@@ -105,7 +105,7 @@ To assign users a custom role, use the following format for the roles array. You
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="info" %}
 The system also supports comma-separated lists of roles instead of an array.
 
 ```

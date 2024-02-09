@@ -1,10 +1,13 @@
 # Usage settings
 
-In your Group or Organization, elect **Settings** > **Usage** to view Snyk usage details for your Group or Organization, including the following
+In your Group or Organization, select **Settings** > **Usage** to view Snyk usage details for your Group or Organization:
 
 * [Test usage](usage-settings.md#test-usage): the number of tests used
 * [Contributing developers](usage-settings.md#contributing-developers): the number of developers contributing to Projects
-* [Projects](usage-settings.md#projects): Project test usage settings (can be viewed and modified)
+
+{% hint style="info" %}
+For more information about test frequency settings, see [Project actions](../snyk-projects/#project-actions-on-the-project-listing-page) on the Project Listings page, where bulk actions are also explained.
+{% endhint %}
 
 ## Test usage
 
@@ -21,7 +24,7 @@ Test limits vary for Snyk products and plans. See the [Pans and pricing page](ht
 {% endhint %}
 
 {% hint style="info" %}
-See [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for details of how Snyk counts tests.
+See [What counts as a test?](../../scan-with-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test.md) for details of how Snyk counts tests.
 {% endhint %}
 
 ## Contributing developers
@@ -47,39 +50,4 @@ An example of the count of contributing developers follows:
 
 Each contributor is **counted by** the **author** email field, which is set within the local Git configuration in the developer’s machine.
 
-## Projects
-
-The **Projects** section shows test usage settings for your Projects:
-
-### Bulk actions settings
-
-For **Bulk actions**, select the relevant Projects; then, for the selected Projects, select **Delete**, **Activate,** or **Deactivate**:
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/usage-projects-bulk-actions.png" alt="Bulk actions on Projects" width="563"><figcaption><p>Bulk actions on Projects</p></figcaption></figure>
-
-</div>
-
-### Test frequency settings
-
-You can set the frequency of testing for each Project.&#x20;
-
-For each entry, you can select the frequency of testing for that Project (`never`, `daily`, or `weekly`) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/usage-projects-single.png" alt="Select test frequency"><figcaption><p>Select test frequency</p></figcaption></figure>
-
-</div>
-
-{% hint style="info" %}
-The default test frequency and limitations are as follows:
-
-* Open Source: The default is daily.
-* Code analysis Projects: The default is weekly; daily is not available. To test your code daily, submit a request to [Snyk Support.](https://support.snyk.io/hc/en-us/requests)
-* Container: The default is daily.
-* IaC: The default is weekly.
-{% endhint %}
-
-Click **Deactivate** to never test, and also remove webhooks and stop showing the Project’s results in reporting.
+###

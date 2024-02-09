@@ -1,10 +1,15 @@
-# Scan and maintain projects using the CLI
+# Scan and maintain Projects using the CLI
 
-This group of pages provides detailed "how-to" information for the Snyk CLI. The navigation is alphabetical by keyword. The same list of pages follows in the categories Scanning projects, Monitoring projects, and Maintaining projects.
+This group of pages provides detailed "how-to" information for the Snyk CLI.
 
-## Scanning projects
+* The [CLI tools](cli-tools/) provide ways to perform tasks that cannot be done using CLI commands and options.
+* [Use Snyk Open Source from the CLI](snyk-cli-for-open-source/), [Analyze code with the Snyk Code CLI](snyk-cli-for-snyk-code/), and [Use Snyk Container from the CLI ](snyk-cli-for-snyk-container/)explain how to perform basic operations with Snyk Open Source, Snyk Code, and Snyk Container using the CLI.
 
-* [The **.snyk** file](../../manage-issues/policies/the-.snyk-file.md)
+The remaining pages address [Scanning Projects](./#scanning-projects), [Monitoring Projects](./#monitoring-projects), and [Maintaining Projects](./#maintaining-projects). The pages are arranged in alphabetical order by keyword.
+
+## Scanning Projects
+
+* [The **.snyk** file](../../scan-with-snyk/policies/the-.snyk-file.md)
 * [A **.snyk** policy file in a different directory from the manifest file](a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
 * [Failing **builds** in Snyk CLI](failing-of-builds-in-snyk-cli.md)
 * [**Ignore** vulnerabilties using Snyk CLI](ignore-vulnerabilities-using-the-snyk-cli.md)
@@ -15,16 +20,16 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 * [**Severity thresholds** for CLI tests](set-severity-thresholds-for-cli-tests.md)
 * [**Test public npm packages** before use](test-public-npm-packages-before-use.md)
 * [CLI **test results**](view-cli-test-results.md)
-* [Differences in **vulnerability counts** across environments](../../scan-applications/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
+* [Differences in **vulnerability counts** across environments](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
 
-## Monitoring projects
+## Monitoring Projects
 
 * [**Monitor** your projects at regular intervals](monitor-your-projects-at-regular-intervals.md)
 * [Group **projects** for monitoring](group-projects-by-branch-or-version-for-monitoring.md)
 
-## Maintaining projects
+## Maintaining Projects
 
-* [Automatic **fixing** with Snyk Fix](automatic-remediation-with-snyk-fix.md)
-* [**Log4shell** command use](how-to-use-the-log4shell-command.md)
+* [Automatic **fixing** with Snyk Fix](automatic-fixing-with-snyk-fix.md)
+* [**Log4shell** command use](log4shell-command-use.md)
 * [@**snyk/protect** package](snyk-protect-package.md)
 * [Fix **vulnerabilities** using the Snyk CLI](fix-vulnerabilities-using-the-snyk-cli.md)

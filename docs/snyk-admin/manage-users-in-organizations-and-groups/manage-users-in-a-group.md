@@ -1,8 +1,11 @@
 # Manage users in a Group
 
-{% hint style="info" %}
-**Feature availability**\
-Groups are available with the Snyk Enterprise plan. See [pricing plans](https://snyk.io/plans/) for more details.
+{% hint style="warning" %}
+**Release status**&#x20;
+
+Groups available only for Enterprise plans.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
 Select the **Group** where you want to manage users and the **Members** menu option to manage your Group members:
@@ -28,7 +31,7 @@ On the Group members page, you can see all the members associated with your Grou
 There are two standard roles available at the Group level, **Group Member** and **Group Admin**.
 
 {% hint style="info" %}
-Group Admins have all Snyk permissions; see [Managing permissions](../manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md). However, being a Group Member does not directly grant the user any rights. To have rights, users must be added as Organization members or promoted to Group Admin.
+Group Admins have all Snyk permissions; see [Pre-defined user roles](../manage-permissions-and-roles/pre-defined-user-roles.md). However, being a Group Member does not directly grant the user any rights. To have rights, users must be added as Organization members or promoted to Group Admin.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (250) (1).png" alt="View Group members"><figcaption><p>View Group members</p></figcaption></figure>

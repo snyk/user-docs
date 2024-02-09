@@ -18,7 +18,7 @@ When you test each JAR file individually, the name of the JAR file that was scan
 
 ## Recursively scanning all subfolders
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **The method described here is deprecated.**
 
 Beginning with Snyk CLI 1.1176.0, by default you can scan all subfolders using the `--scan-all-unmanaged`option. When you scan using --`scan-all-unmanaged`, the package name appears rather than the file name.

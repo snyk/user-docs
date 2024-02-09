@@ -6,7 +6,7 @@ When a user connects their Snyk account to your App, they must authorize access 
 https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&scope={scopes}&nonce={nonce}&state={state}&version={version}
 ```
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Note that this is a webpage link and not an API endpoint.
 {% endhint %}
 

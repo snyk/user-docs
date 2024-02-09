@@ -1,35 +1,46 @@
 # Service accounts
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
+{% hint style="warning" %}
+**Release status**\
+SSO is available only for Enterprise plans.
+
+Free and Team plan users and Trial users have access to a Snyk user's token under their profile and can use this token to authenticate with a CI/CD, to run the CLI locally or on a build machine, and to authenticate with an IDE manually.
+
+See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
-You can set up a **service account** to be used for continuous integration (CI) and other automation purposes without using a Snyk user’s token.
+Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials. Snyk needs authentication in order to initiate Snyk processes.
 
-Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials.
+You can set up a **service account** to use for automation rather than using a Snyk user's token and to help manage integrations.&#x20;
 
-Use this token to provide credentials to authenticate with your Snyk account when you are setting up integration with your development tools and when you are working with the Snyk [CLI](../../snyk-cli/) and [API](../../snyk-api/). Snyk needs authentication in order to initiate Snyk processes.
+You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Each service account has a unique name to make it easier to recognize. This name cannot be reused.
 
-You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use Group-level tokens to use Group API endpoints, Organization API endpoints, and the CLI for all Organizations in the Group.
+## When to use a service account
 
-{% hint style="info" %}
-Each service account has a unique name to make it easier to recognize. This name cannot be reused.
-{% endhint %}
+If you are an Enterprise user, you have a Snyk user's token under your profile. You also have access to service account tokens.
 
-## Using service accounts
+### Use a service account to create any kind of automation.
 
-By using a service account token, you can:
+This includes, but is not limited to, scanning using a CI/CD or build system plugin and automation with the Snyk API.
 
-* Create multiple tokens for different uses or integrations to manage each separately.
-* Ensure seamless integrations, for example, when employees change roles or close their Snyk accounts.
+### You can use a service account for GitHub Enterprise integration.
 
-{% hint style="info" %}
-Group roles are only for service accounts on the Group level and are only for paid accounts.
-{% endhint %}
+If your team needs to set up a service account in GitHub, you must use GitHub Enterprise, which is available only with Snyk Enterprise accounts.
 
-{% hint style="info" %}
-Service accounts can be used for GitHub Enterprise integrations. If your team needs to set up a service account in GitHub, the service account must be set up as a GitHub Enterprise integration. GHE is available only with Snyk Enterprise accounts.
+Using a service account to authenticate with an integration rather than a Snyk user's token ensures continuity when users change roles or close their personal Snyk accounts.
+
+### Use Group-level tokens in managing integrations.
+
+Use Group-level tokens to call Group API endpoints and Organization API endpoints, and to run the CLI for all Organizations in the Group.
+
+Group roles are only for service accounts on the Group level and are limited to Enterprise accounts.
+
+### Use your Snyk user's token for local scanning and testing API calls.
+
+If you are an Enterprise user, use your Snyk user's token to run the CLI locally on your machine, authenticate with an IDE manually, and make an occasional API call, for example, to test the use of an endpoint.
+
+{% hint style="warning" %}
+Snyk advises against using a service account token to authenticate with an IDE.
 {% endhint %}
 
 ## Set up a Group or Organization level service account
@@ -79,7 +90,7 @@ For Group service accounts, choose from the following list of roles to configure
 * **Group Admin** enables full administrator access.
 * **Group Member** associates a service account with a group but does not grant any specific access.
 
-For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Managing permissions](../../snyk-admin/manage-permissions-and-roles/permissions-associated-with-each-pre-defined-role.md) for the scope of the Org Admin and Org Collaborator roles.
+For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Managing permissions](broken-reference) for the scope of the Org Admin and Org Collaborator roles.
 
 ### Create the service account
 
