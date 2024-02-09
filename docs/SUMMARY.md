@@ -1,6 +1,7 @@
 # Table of contents
 
 * [User Docs](README.md)
+* [new file](new-file.md)
 * [Getting started](getting-started/README.md)
   * [Introducing Snyk](getting-started/introducing-snyk.md)
   * [Exploring the Snyk Web UI](getting-started/exploring-the-snyk-web-ui.md)
