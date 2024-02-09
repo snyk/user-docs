@@ -204,6 +204,7 @@
       * [Snyk Git repositories: deployment recommendations](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md)
       * [View and understand Snyk upgrade pull requests](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/view-and-understand-snyk-upgrade-pull-requests.md)
       * [Opening fix and upgrade pull requests from a fixed GitHub account](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
+      * [Git repository cloning for SCM integrations](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations.md)
     * [Snyk GitHub Enterprise integration](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md)
     * [Snyk GitHub integration](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-integration.md)
     * [Snyk GitHub Cloud App](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
