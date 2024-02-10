@@ -1,5 +1,7 @@
 # Scan and monitor images
 
+It is common to use both `test` and `monitor` commands with Snyk Container. You can use the `snyk container test` command for quick checks. You can use the `snyk container monitor` command for ongoing assurance and to easily share results.
+
 ## Scan an image
 
 To scan an image, run the `container test` command. For example:
@@ -41,15 +43,7 @@ Snyk Container also allows you to monitor images. This provides the following ad
 
 To learn more about container security, see [The importance of Container Monitoring](https://snyk.io/learn/container-security/container-monitoring/).
 
-You can also access aggregate reports of vulnerabilities across all of your Projects.
-
-{% hint style="warning" %}
-**Release status**&#x20;
-
-The aggregate reports feature is available for all paid plans.
-
-See [Pricing plans](https://snyk.io/plans).
-{% endhint %}
+Users on [paid plans](https://snyk.io/plans) can also access aggregate reports of vulnerabilities across all of your Projects.
 
 To monitor an image, run the `container monitor` command:
 
@@ -65,7 +59,3 @@ This command:
 4. Returns a link to the Snyk service, where you can see the results.
 
 <figure><img src="../../../.gitbook/assets/monitor.png" alt="Recommendatios for upgrading the base image"><figcaption><p>Recommendatios for upgrading the base image</p></figcaption></figure>
-
-{% hint style="info" %}
-It is common to use both `test` and `monitor` commands with Snyk Container. You can use the `test` command for quick checks. You can use the `monitor` command for ongoing assurance and to easily share results.
-{% endhint %}
