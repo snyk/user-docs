@@ -10,6 +10,7 @@ Snyk can integrate with the following Source Control Managers (SCMs) to help you
 * [Bitbucket Data Center/Server](snyk-bitbucket-data-center-server-integration.md)
 * [GitLab](snyk-gitlab-integration.md)
 * [Azure (TFS) Repos](snyk-azure-repositories-tfs-integration.md)
+* [Buddy](snyk-buddy-integration.md)
 
 ## Tips for integrating Git repositories with Snyk
 
