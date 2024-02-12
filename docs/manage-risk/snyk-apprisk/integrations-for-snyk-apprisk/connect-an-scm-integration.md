@@ -28,7 +28,9 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
   * `read:user`
   * `user:email`
 
-If you've configured SAML SSO, authorize your personal access token.
+Authorize your personal access token if you have configured SAML SSO.
+
+If you only want to pull the repositories you own, select the **Pull personal repositories** checkbox on the Integration Hub page.
 
 {% hint style="info" %}
 Fine-grained personal access token is not supported.
@@ -75,6 +77,10 @@ Fine-grained personal access token is not supported.
 * Permissions:
   * `read_api` - Grants read access to the API, including all groups and projects, the container registry, and the package registry.
   * `read_repository` - Grants read-only access to repositories on private projects using Git-over-HTTP or the Repository Files API.
+
+Authorize your personal access token if you have configured SAML SSO.
+
+If you only want to pull the repositories you own, select the **Pull personal repositories** checkbox on the Integration Hub page.
 
 ### API version
 
