@@ -85,14 +85,18 @@ echo ""
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" 
 echo "Detected jars ($detected_count) - does not include transitive dependencies:"
 echo ""
-printf $detected_jars
+if [ ${detected_count} -gt 0 ]; then
+   printf "${detected_jars}"
+fi
 echo ""
 echo ""
 echo ""
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" 
 echo "Undetected jars ($undetected_count) - not found on Maven Central:"
 echo ""
-printf $undetected_jars
+if [ ${undetected_count} -gt 0 ]; then
+   printf "${undetected_jars}"
+fi
 ```
 
 The following is a Windows batch script for scanning JARs in all subfolders, run from a `scanjar.bat` file.
