@@ -9,4 +9,4 @@ Snyk administration encompasses the following functions:
 * [Manage notifications](manage-notifications.md)
 * [Manage settings](manage-settings/)
 
-See [Enterprise setup](../enterprise-setup/) for information about set up for Enterprise plan customers.
+See [Enterprise setup](../enterprise-configurations/) for information about set up for Enterprise plan customers.

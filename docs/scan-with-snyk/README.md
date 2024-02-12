@@ -6,7 +6,7 @@ You can use Snyk to scan and secure your codebase and cloud infrastructure confi
 
 Find and fix known vulnerabilities and licensing issues in your open-source dependencies.
 
-For more information, see [Snyk Open Source ](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md)and [Open Source Security Explained](https://snyk.io/series/open-source-security/) on the Security series hub.
+For more information, see [Snyk Open Source ](../enterprise-configurations/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md)and [Open Source Security Explained](https://snyk.io/series/open-source-security/) on the Security series hub.
 
 ## Snyk Code
 

@@ -3,7 +3,7 @@
 This page looks at how you can get several members of your team involved in trying Snyk to get feedback and buy-in.
 
 {% hint style="info" %}
-If you have been using Snyk on the Free or Team Plan and are looking for guidance on upgrading to the Enterprise plan, see [Upgrading to the Enterprise Plan](broken-reference/).
+If you have been using Snyk on the Free or Team Plan and are looking for guidance on upgrading to the Enterprise plan, see [Upgrading to the Enterprise Plan](../enterprise-setup/broken-reference/).
 {% endhint %}
 
 Snyk has a number of tools and processes that help secure your entire software development lifecycle. With Snyk, you can scan while you are coding or monitor code when you are not working on it. Snyk can also provide visibility into issues across your Projects with a Git repository integration or integrate into your CI/CD through plugins, the CLI, or curated containers.
@@ -11,7 +11,7 @@ Snyk has a number of tools and processes that help secure your entire software d
 For users who are evaluating Snyk or planning an enterprise deployment, and for most programming languages, Snyk recommends integrating with a Git repository to get started.
 
 {% hint style="info" %}
-The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. Visit the [guide](broken-reference/) specific to your language for more details.
+The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. Visit the [guide](../enterprise-setup/broken-reference/) specific to your language for more details.
 {% endhint %}
 
 To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see the [Ways to integrate Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/) course.
@@ -26,7 +26,7 @@ Snyk provides limited free tests per month for each type of scan, Snyk Open Sour
 
 ## Create or log in to your Snyk account
 
-You must have a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md) to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Logging in to an existing account](broken-reference/).
+You must have a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md) to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Logging in to an existing account](../enterprise-setup/broken-reference/).
 
 ## **Enable Snyk Code**
 
