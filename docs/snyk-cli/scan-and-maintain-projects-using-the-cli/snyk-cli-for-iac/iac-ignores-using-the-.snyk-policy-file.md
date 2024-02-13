@@ -1,14 +1,10 @@
 # IaC ignores using the .snyk policy file
 
-{% hint style="warning" %}
-**Release status**
+When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant to you by using the [`.snyk` policy file](../../../scan-with-snyk/policies/the-.snyk-file.md) **for current IaC only**. Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files. This file can be created with the `snyk ignore` command. For details see [Ignore vulnerabilities using Snyk CLI](../ignore-vulnerabilities-using-the-snyk-cli.md).
 
-While Ignores via the Snyk UI are available for current IaC and IaC+, using ignores in the .snyk file is available only in current IaC at this time.&#x20;
+{% hint style="info" %}
+You can use ignores through the Snyk Web UI for both current IaC and IaC+.
 {% endhint %}
-
-When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant to you by using the [`.snyk` policy file](../../../scan-with-snyk/policies/the-.snyk-file.md). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files.
-
-This file can be created with the `snyk ignore` command. For details see [Ignore vulnerabilities using Snyk CLI](../ignore-vulnerabilities-using-the-snyk-cli.md).
 
 ## Ignore paths
 
@@ -16,18 +12,16 @@ For tests run using the Snyk CLI, only issues defined in the `.snyk` file are ig
 
 For tests run from imported Git repositories, issues can be ignored in the Snyk UI. Note that these ignores apply only to scans done using the Snyk UI.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Ignores in the `.snyk` file and ignores created in the Snyk UI are not synchronized.
 {% endhint %}
 
 ## `.snyk` file semantics
 
-{% hint style="info" %}
 The `.snyk` file has some limitations for IaC Projects. See [The `.snyk` file](../../../scan-with-snyk/policies/the-.snyk-file.md) for standard functionality.
 
 * The **patches** section is not yet supported and is ignored.
 * There are no IaC-supported **language settings**. This section is ignored.
-{% endhint %}
 
 When you run `snyk iac test` against a directory, either by passing in one or more directories or using the default argument of the current working directory, the Snyk CLI looks for a file named `.snyk` in each of those directories.
 
