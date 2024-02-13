@@ -4,7 +4,7 @@
 
 ## Start using Snyk
 
-<table data-header-hidden><thead><tr><th></th><th width="164.33333333333331"></th><th width="188"></th><th></th></tr></thead><tbody><tr><td>​<a href="getting-started/">Getting started</a> <br>Start running Snyk to secure your code</td><td><a href="scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md">Start scanning</a><br>Scan applications using Snyk</td><td><a href="implement-snyk/enterprise-implementation-guide/">Enterprise implementation</a><br>Implement Snyk for an enterprise platform</td><td><a href="scan-with-snyk/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md">Supported languages</a><br>Match your language and package to Snyk</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th></th><th width="164.33333333333331"></th><th width="188"></th><th></th></tr></thead><tbody><tr><td>​<a href="getting-started/">Getting started</a> <br>Start running Snyk to secure your code</td><td><a href="enterprise-configuration/">Enterprise configuration</a><br>Use Snyk in an enterprise system</td><td><a href="implement-snyk/">Implement Snyk</a><br>Set up Snyk to run in your business</td><td><a href="scan-with-snyk/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview.md">Supported languages</a><br>Match your language and package to Snyk</td></tr></tbody></table>
 
 ## Integrate with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
@@ -12,8 +12,8 @@
 
 ## Scan using Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-| <p><a href="scan-with-snyk/">Scan applications</a><br>Secure your code, open-source libraries, and containers</p> | <p><a href="scan-with-snyk/scan-infrastructure/">Scan infrastructure</a><br>Secure your infrastructure, before and after it is deployed</p> | <p><a href="snyk-cli/getting-started-with-the-snyk-cli.md">Snyk CLI</a><br>Use Snyk locally on your command line</p> |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| <p><a href="scan-with-snyk/">Scan with Snyk</a><br>Scan your code, open-source libraries, infrastructure, and containers</p> | <p><a href="snyk-cli/getting-started-with-the-snyk-cli.md">Scan with Snyk CLI</a><br>Scan with Snyk locally on your command line</p> |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 
 ## Manage risk
 
