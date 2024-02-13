@@ -1,14 +1,14 @@
 # Group Projects by branch or version for monitoring
 
 {% hint style="warning" %}
-**Release status**
+**Release status and feature availability**
 
-Grouping Projects for Open Source is currently in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans.
+Grouping Projects by branch or version is in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. The feature is supported for Open Source. In some areas, the feature is not fully supported.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
-Your Project may have multiple states which you want to monitor separately, for example, branches, releases, or deployments. You can use the `--target-reference` option to separate projects into these specific groupings.
+Your Project may have multiple states that you want to monitor separately, for example, branches, releases, or deployments. You can use the `--target-reference` option to separate Projects into these specific groupings.
 
 `--target-reference` takes any text so you can combine it with a command to automatically set it to a value. Examples follow.
 
@@ -28,4 +28,4 @@ You can adjust the option for the developer tools used in your project. Any vali
 
 `--target-reference` allows you to create sub-groupings on the Projects page.
 
-![A project page with sub-groups.](../../.gitbook/assets/project-grouping-with-sub-groups.png)
+<figure><img src="../../.gitbook/assets/project-grouping-with-sub-groups.png" alt="A Project page with sub-groups"><figcaption><p>A Project page with sub-groups.</p></figcaption></figure>
