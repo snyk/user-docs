@@ -1,10 +1,10 @@
 # Scan all unmanaged JAR files
 
-The Snyk CLI can scan unmanaged JAR files in [Java applications](broken-reference) to identify which open-source package they contain.
+The Snyk CLI can scan unmanaged JAR files in [Java applications](broken-reference/) to identify which open-source package they contain.
 
 The CLI identifies the package name, version, and vulnerabilities only if the package is available in Maven Central, and the JAR file hash matches the hash in Maven Central.
 
-**Prerequisite:** You must install a [supported version](broken-reference) of Maven to scan unmanaged JAR files.
+**Prerequisite:** You must install a [supported version](broken-reference/) of Maven to scan unmanaged JAR files.
 
 ## Scanning all JAR files in a single folder and scanning each JAR file individually
 
@@ -18,7 +18,7 @@ When you test each JAR file individually, the name of the JAR file that was scan
 
 ## Recursively scanning all subfolders
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **The method described here is deprecated.**
 
 Beginning with Snyk CLI 1.1176.0, by default you can scan all subfolders using the `--scan-all-unmanaged`option. When you scan using --`scan-all-unmanaged`, the package name appears rather than the file name.
@@ -26,7 +26,7 @@ Beginning with Snyk CLI 1.1176.0, by default you can scan all subfolders using t
 
 Java apps often have JAR files in a number of different folders within an application.
 
-The following is a  Linux/Mac Bash script used with CLI versions before Snyk CLI 1.1176.0 that recurses through all subfolders starting with the current folder and tests each JAR file found.
+The following is a Linux/Mac Bash script used with CLI versions before Snyk CLI 1.1176.0 that recurses through all subfolders starting with the current folder and tests each JAR file found.
 
 Setting a value for the `REMOTE_REPO_URL` variable is important; it is used to combine all scan results under a single Snyk Project in the UI using the `--remote-repo-url` parameter.
 
