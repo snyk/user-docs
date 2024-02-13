@@ -1,22 +1,14 @@
 # Automatic fixing with snyk fix
 
 {% hint style="warning" %}
-**Release status**&#x20;
+**Release status and feature availability**
 
-Snyk Fix is in [Closed Beta](../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
+The snyk fix command is in [Closed Beta](../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-{% hint style="info" %}
-Ensure you use the latest version of CLI ([v1.715.0](https://github.com/snyk/snyk/releases/tag/v1.715.0) or later) to use `snyk fix`.
-{% endhint %}
-
-{% hint style="info" %}
-Snyk fix is currently only supported for Python.
-{% endhint %}
-
-The `snyk fix` command is a CLI command to automatically apply the recommended updates for supported ecosystems.
+The `snyk fix` CLI command automatically applies the recommended updates for supported ecosystems. Ensure you use the latest version of CLI ([v1.715.0](https://github.com/snyk/snyk/releases/tag/v1.715.0) or later) to use `snyk fix`. The command is supported only for Python.
 
 When you use the `snyk test` command, actionable fixes for supported ecosystems appear in the scan results as shown in the example that follows.
 
@@ -68,9 +60,9 @@ The `snyk fix` command supports all the `snyk test` command options and has the 
 
 ## Python support
 
-* Pip projects with `requirements.txt` files (or custom named files, for example `prod.txt`)
-* Pipenv projects with `Pipfile` and `Pipfile.lock` files
-* Poetry projects with `pyproject.toml` and `Poetry.lock` files
+* Pip Projects with `requirements.txt` files or custom named files, for example `prod.txt`.
+* Pipenv Projects with `Pipfile` and `Pipfile.lock` files
+* Poetry Projects with `pyproject.toml` and `Poetry.lock` files
 
 ### Usage examples
 
@@ -101,7 +93,7 @@ If multiple files are tested but are related (for example one requires the other
 
 Snyk detects previously fixed files and skips applying fixes to them again.
 
-### Projects which use `constraints.txt`
+### Projects that use `constraints.txt`
 
 Constraints files are requirements files that control only which version of a dependency is installed, not whether it is installed or not. Their syntax and contents are nearly identical to requirements files. There is one key difference: including a package in a constraints file does not trigger installation of the package. For more information, see [User Guide - pip documentation v21.0.1](https://pip.pypa.io/en/stable/user\_guide/#constraints-files).
 
