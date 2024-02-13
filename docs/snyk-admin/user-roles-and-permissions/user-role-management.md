@@ -21,6 +21,16 @@ Under **Manage roles**, you can:
 7. [Change the role of a user](user-role-management.md#change-the-role-of-a-user)
 8. [Use roles in custom SSO](user-role-management.md#use-roles-in-custom-sso)
 
+## Essential information for working with Member roles
+
+* Permissions granted to users using the **Member roles** functionality enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
+* The permission **View Organization** is needed by default for all Organization-level member roles.
+* If the role is expected to view Project-related data for an Organization along with other operations, the **View Organization**, **View Project**, and **View Project History** permissions should be added to the role at a minimum.
+* For [Integration edit abilities](custom-role-templates/integration-editor-implementor-role-template.md), the **Edit Organization** permission is required.&#x20;
+* The permission **View Preview Features** is required to run `snyk container test` and `snyk iac test`.
+* Snyk prevents role privileges from escalating. This means users cannot assign a higher privileged role to others and cannot create service accounts with a higher privileged role.
+* It is advisable to use the **Duplicate Role** functionality and create a copy of a standard role and then amend the permissions rather than build a role from scratch if you are unsure about the permissions.
+
 ## Manage roles
 
 You can create, edit, duplicate, and delete custom roles, granting your users the exact permissions they need to do their jobs across the Snyk platform. This ensures the right people have the right access to the right resources at the right time, maximizing transparency and reducing risk.
@@ -167,93 +177,8 @@ New member role SAML assertions follow the existing Snyk pattern for declaring O
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 16.31.11.png" alt="Normalized name for a member role displayed in the Web UI"><figcaption><p>Normalized name for a member role displayed in the Web UI</p></figcaption></figure>
 
-## Sample roles
+## Permissions required to edit Project attributes from the Snyk CLI
 
-### Org Collaborator who cannot ignore issues
+The **Organization Collaborator** role lacks permission to edit Project attributes, including using the CLI [`snyk monitor`](../../snyk-cli/commands/monitor.md) command with arguments such as `--project-environment`. Attempting to use these arguments without the proper permission causes the `snyk monitor` command to fail.
 
-Create a new role similar to Org Collaborator but blocks the ability to ignore issues.
-
-Permissions:
-
-* `Add Project`
-* `Create Jira issues`
-* `Create Pull Requests`
-* `Edit Project`
-* `Edit Project Tags`
-* `Project Status`
-* `Remove Project`
-* `Remove Targets`
-* `Test Packages`
-* `Test Project`
-* `User Leave`
-* `View Audit Logs`
-* `View Entitlements`
-* `View Integrations`
-* `View Jira issues`
-* `View Organization`
-* `View Organization Reports`
-* `View Preview Features`
-* `View Project`
-* `View Project History`
-* `View Project Ignores`
-* `View Project Collections`
-* `View Targets`
-* `View Users`
-
-### Dashboard and report reviewer
-
-Create a new role with permissions only to review dashboards and reporting for their management and executive teams.
-
-Permissions:
-
-* `View Organization`
-* `View Organization Reports`
-* `View Project`
-* `View Project History`
-
-For additional operations on the Dashboard, add:
-
-* `Add Project`
-* `Create Pull Requests`
-
-### Read-only CLI Tester
-
-Create a new role that blocks use of `snyk monitor`.
-
-Permissions:
-
-* `View Organization`
-* `View Project`
-* `Test Packages`
-* `Test Project`
-* `View Preview Features`
-
-### **Full Access CLI Tester**
-
-Create a new role that can use `snyk test` and `snyk monitor`.
-
-Permissions:
-
-* `View Organization`
-* `View Project`
-* `View Project History`
-* `Test Packages`
-* `Add Project`
-* `Test Project`
-* `View Preview Features`
-
-## Permissions (role) required to edit Project attributes from the Snyk CLI
-
-The Organization Collaborator role lacks permission to edit Project attributes, including using the CLI [`snyk monitor`](../../snyk-cli/commands/monitor.md) command with arguments such as `--project-environment`. Attempting to use these arguments without the proper permission causes the `snyk monitor` command to fail.
-
-Users or service accounts requiring the ability to edit Project attributes must be an Organization Admin or have a custom role with the `org.project.attributes.edit` permission assigned. A user who does not have this permission must remove any arguments that edit the Project attributes to use the `snyk monitor` command.
-
-## Things to remember in working with Member Roles
-
-* Permissions granted to users by means of Roles enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
-* The permission `View Organization` is needed by default for all Organization-level member roles.
-* If the role is expected to view Project-related data for an Organization along with other operations, the `View Organization`, `View Project`, and `View Project History` permissions should be added to the role at a minimum.
-* For `Integration Edit` abilities, the `Organization Edit` permission is also required.&#x20;
-* The permission `View Preview Features` is required to run `snyk container test` and `snyk iac test`.
-* Snyk prevents role privileges from escalating. Thus, users cannot assign a higher privileged role to others and cannot create service accounts with a higher privileged role.
-* It is advisable to use the Duplicate Role functionality and create a copy of a standard role and then amend the permissions rather than build a role from scratch if you are unsure about the permissions.
+Users or service accounts requiring the ability to edit Project attributes must be an **Organization Admin** or have a custom role with the **Edit Project Attributes** permission assigned. A user who does not have this permission must remove any arguments that edit the Project attributes to use the `snyk monitor` command.
