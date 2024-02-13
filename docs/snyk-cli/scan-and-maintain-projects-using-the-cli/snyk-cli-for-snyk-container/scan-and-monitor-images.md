@@ -43,7 +43,7 @@ Snyk Container also allows you to monitor images. This provides the following ad
 
 To learn more about container security, see [The importance of Container Monitoring](https://snyk.io/learn/container-security/container-monitoring/).
 
-Users on [paid plans](https://snyk.io/plans) can also access aggregate reports of vulnerabilities across all of your Projects.
+Users on [paid plans](https://snyk.io/plans) can also access aggregate reports of vulnerabilities across all of their Projects.
 
 To monitor an image, run the `container monitor` command:
 
