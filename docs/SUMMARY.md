@@ -782,6 +782,8 @@
       * [Application Security Engineer role template](snyk-admin/user-roles-and-permissions/custom-role-templates/application-security-engineer-role-template.md)
       * [Kubernetes Uploader role template](snyk-admin/user-roles-and-permissions/custom-role-templates/kubernetes-uploader-role-template.md)
       * [Legal Advisor role template](snyk-admin/user-roles-and-permissions/custom-role-templates/legal-advisor-role-template.md)
+      * [CLI Tester role template](snyk-admin/user-roles-and-permissions/custom-role-templates/cli-tester-role-template.md)
+      * [Read-only CLI Tester role template](snyk-admin/user-roles-and-permissions/custom-role-templates/read-only-cli-tester-role-template.md)
   * [Manage notifications](snyk-admin/manage-notifications.md)
   * [Manage settings](snyk-admin/manage-settings/README.md)
     * [Group general settings](snyk-admin/manage-settings/group-general-settings.md)

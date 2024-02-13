@@ -13,6 +13,8 @@ You can use these templates to create your own custom roles that fit into and re
 * [Application Security Engineer](application-security-engineer-role-template.md)
 * [Kubernetes Uploader](kubernetes-uploader-role-template.md)
 * [Legal Advisor](legal-advisor-role-template.md)
+* [CLI Tester](cli-tester-role-template.md)
+* [Read-only CLI Tester](read-only-cli-tester-role-template.md)
 
 {% hint style="warning" %}
 These templates are not provided as[ pre-defined roles](../pre-defined-roles.md) in Snyk.
