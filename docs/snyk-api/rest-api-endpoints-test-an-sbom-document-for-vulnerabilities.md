@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Release status and feature availability**
 
-REST API is in [Early Access](../getting-started/snyk-release-process.md) and available only for Enterprise plans.
+The Snyk REST API is in [Early Access](../getting-started/snyk-release-process.md) and available only for Enterprise plans.
 
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
