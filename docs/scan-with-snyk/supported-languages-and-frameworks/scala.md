@@ -8,6 +8,12 @@ You might encounter false positives or false negatives for partially supported f
 
 ### Code analysis
 
+{% hint style="info" %}
+**Snyk Code for Kotlin**
+
+Interfile is supported, as the data flow is monitored between multiple files.
+{% endhint %}
+
 Snyk Code supports the following frameworks:
 
 * Play Framework

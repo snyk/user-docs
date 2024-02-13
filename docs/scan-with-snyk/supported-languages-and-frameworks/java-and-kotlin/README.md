@@ -8,6 +8,14 @@ You might encounter false positives or false negatives for partially supported f
 
 ### Code analysis
 
+{% hint style="info" %}
+**Snyk Code for Kotlin**
+
+Android is partially supported.
+
+Interfile is supported, as the data flow is monitored between multiple files.
+{% endhint %}
+
 Snyk Code supports the following frameworks:
 
 * Apache Camel
@@ -18,12 +26,6 @@ Snyk Code supports the following frameworks:
 * JSP
 * Spring MVC
 * Spring JDBC
-
-{% hint style="info" %}
-**Snyk Code for Kotlin**
-
-Android is partially supported.
-{% endhint %}
 
 ### Open source and licensing
 
