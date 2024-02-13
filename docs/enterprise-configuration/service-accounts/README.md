@@ -68,7 +68,7 @@ Note that while creating a **Group service account**, you can choose a Group lev
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
-In contrast, while creating an **Organization service account,** you can choose Org level roles, including custom [member roles](../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md) that you have set up for your Organizations.
+In contrast, while creating an **Organization service account,** you can choose Org level roles, including custom [member roles](../../snyk-admin/user-roles-and-permissions/user-role-management.md) that you have set up for your Organizations.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-06 at 12.06.35.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 

@@ -1,6 +1,6 @@
 # Team Lead role template
 
-A Team Lead is equivalent to the default [**Organisation Admin**](../pre-defined-user-roles.md) role**,** providing additional capabilities to customize or change other user permissions.
+A Team Lead is equivalent to the default [**Organisation Admin**](../pre-defined-roles.md) role**,** providing additional capabilities to customize or change other user permissions.
 
 This Group-level role has all Organization-level permissions plus the following additional Group level permissions:
 

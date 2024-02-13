@@ -25,7 +25,7 @@ As with all default roles, the permissions within the **Org Collaborator** role 
 
 ## Customized roles
 
-The [Manage Member Roles](../../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md) feature provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce customized access by assigning a set of permissions to a role that will be granted to users. The permissions within these roles can be updated and changed even after assigning them to users.&#x20;
+The [Manage Member Roles](../../../snyk-admin/user-roles-and-permissions/user-role-management.md) feature provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce customized access by assigning a set of permissions to a role that will be granted to users. The permissions within these roles can be updated and changed even after assigning them to users.&#x20;
 
 The most common types of custom roles include Team Lead and Developer.
 

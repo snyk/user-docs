@@ -12,7 +12,7 @@ To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage
 
 To check for open-source and licensing issues and code security, ensure that you have established the following:
 
-* You have the Group Admin role so you have access to all integration settings. See [Member roles](../../snyk-admin/manage-permissions-and-roles/manage-member-roles.md).
+* You have the Group Admin role so you have access to all integration settings. See [Member roles](../../snyk-admin/user-roles-and-permissions/user-role-management.md).
 * You have [set up a Git repository integration](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
 * [Import a Project](../../getting-started/quickstart/import-a-project.md) to have a working Git repository.
 * For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you.&#x20;
