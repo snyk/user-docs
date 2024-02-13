@@ -3,7 +3,7 @@
 This page looks at how you can get several members of your team involved in trying Snyk to get feedback and buy-in.
 
 {% hint style="info" %}
-If you have been using Snyk on the Free or Team Plan and are looking for guidance on upgrading to the Enterprise plan, see [Upgrading to the Enterprise Plan](../enterprise-setup/broken-reference/).
+If you have been using Snyk on the Free or Team Plan and are looking for guidance on upgrading to the Enterprise plan, see the [Enterprise implementation guide](../implement-snyk/enterprise-implementation-guide/).
 {% endhint %}
 
 Snyk has a number of tools and processes that help secure your entire software development lifecycle. With Snyk, you can scan while you are coding or monitor code when you are not working on it. Snyk can also provide visibility into issues across your Projects with a Git repository integration or integrate into your CI/CD through plugins, the CLI, or curated containers.
@@ -11,10 +11,10 @@ Snyk has a number of tools and processes that help secure your entire software d
 For users who are evaluating Snyk or planning an enterprise deployment, and for most programming languages, Snyk recommends integrating with a Git repository to get started.
 
 {% hint style="info" %}
-The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. Visit the [guide](../enterprise-setup/broken-reference/) specific to your language for more details.
+The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. See the [guide](../scan-with-snyk/supported-languages-and-frameworks/) specific to your language for more details.
 {% endhint %}
 
-To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see the [Ways to integrate Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/) course.
+To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see [Integrating Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/).
 
 To see what Snyk can do for you, **try out a Project**
 
@@ -26,7 +26,7 @@ Snyk provides limited free tests per month for each type of scan, Snyk Open Sour
 
 ## Create or log in to your Snyk account
 
-You must have a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md) to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Logging in to an existing account](../enterprise-setup/broken-reference/).
+You must have a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md) to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Log in to an existing account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md#log-in-to-an-existing-account).
 
 ## **Enable Snyk Code**
 
@@ -111,7 +111,7 @@ A scan with [**Snyk iac test**](../snyk-cli/scan-and-maintain-projects-using-the
 
 ## Next steps in implementing the Snyk Enterprise plan
 
-* If you want developers to try Snyk in their local environment using the IDE or CLI, review the [Getting started guide for individuals and small teams](../implement-snyk/walkthrough-initiate-a-scan-locally.md).
+* If you want developers to try Snyk in their local environment using the IDE or CLI, review [Walkthrough: Initiate a scan locally](../implement-snyk/walkthrough-initiate-a-scan-locally.md).
 * To get specific recommendations for your tech stack, visit the guide specific to your language.
 * When you are ready to plan a Snyk rollout to more teams, review the [Enterprise implementation guide](../implement-snyk/enterprise-implementation-guide/) for more information.
 * See the [Developer launch package](https://assets.ctfassets.net/4un77bcsnjzw/2YfaqJNMsogGNJM6BBQz4p/8f5ca77b9c40a1bbe14cc9fb0aa05462/Snyk-developer-launch-package.pdf) for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.
