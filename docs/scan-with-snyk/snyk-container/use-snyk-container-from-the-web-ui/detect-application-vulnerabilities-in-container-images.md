@@ -1,31 +1,20 @@
 # Detect application vulnerabilities in container images
 
-{% hint style="warning" %}
-**Release status**&#x20;
-
-* For Container Registry integration, this feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java.
-* For the CLI and Kubernetes, this feature is supported for Node, PHP, Python, Go binaries, and Java.
+In one scan, Snyk can detect the vulnerabilities in your application dependencies from container images, as well as from the operating system.
 
 Detecting application vulnerabilities is intended for scanning third-party images. This feature was not designed for detecting issues in code developed in-house, where the user has access to the source code and can shift left and detect Issues earlier in the SDLC by using Snyk Code and Snyk Open Source.
-{% endhint %}
 
-Snyk can detect in one scan the vulnerabilities in your application dependencies from container images, as well as from the operating system.
+Detecting application vulnerabilities in container images for Container Registry integration is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, this feature is supported for Node, PHP, Python, Go binaries, and Java.
 
 After you integrate with a container registry and import your Projects, Snyk scans your image for vulnerabilities.
 
-{% hint style="info" %}
 For application Projects created from images that are imported from container registry integrations, the applications are not re-imported during recurring scans or manual rescans.
 
 Instead, the application dependencies that are found during the initial image import are scanned for new vulnerabilities.
-{% endhint %}
 
-If new dependencies are introduced in an application within an image, they will not be detected by recurring scans or manual rescans.
+If new dependencies are introduced in an application within an image, they will not be detected by recurring scans or manual rescans. To detect new or updated applications within images from container registries, you must re-import the image to Snyk.
 
-To detect new or updated applications within images from container registries, you must re-import the image to Snyk.
-
-For applications found in images imported from the Kubernetes integration, existing applications will be re-imported, but new apps added to the image will not be imported during recurring scans.
-
-To detect new applications within images from Kubernetes, you must re-import the image to Snyk.
+For applications found in images imported from the Kubernetes integration, existing applications will be re-imported, but new apps added to the image will not be imported during recurring scans. To detect new applications within images from Kubernetes, you must re-import the image to Snyk.
 
 ## Enable container registries vulnerability scan
 
@@ -50,7 +39,7 @@ When you are scanning an image using a container registry or Kubernetes integrat
 
 In CLI versions 1.1090.0 (2023-01-24) and higher, Snyk scans for application dependencies in your image by default; you do not need to specify the `--app-vulns` option.
 
-If you want to opt out of application vulnerability scanning, you can specify the `--exclude-app-vulns` flag. This omits the application vulnerabilities section from the results, mimicking the previous behavior. The `--exclude-app-vulns` option is available in CLI version 1.1021.0 and above.
+If you want to opt out of application vulnerability scanning, you can specify the `--exclude-app-vulns` option. This omits the application vulnerabilities section from the results, mimicking the previous behavior. The `--exclude-app-vulns` option is available in CLI version 1.1021.0 and above.
 
 ### Nested jars depth option
 
@@ -73,7 +62,7 @@ With this feature enabled, you can also see nested manifest files detected in th
 
 ## Set up automated scanning
 
-Depending on your Project settings, Snyk scans the image regularly. Based on your configuration, Snyk updates you through email or Slack whenever new vulnerabilities are identified in both the operating system and application dependencies.
+Depending on your Project settings, Snyk scans the image regularly. Based on your configuration, Snyk updates you by email or Slack whenever new vulnerabilities are identified in both the operating system and application dependencies.
 
 You can set the scan frequency for each Project. The default is daily testing. To update the scan frequency, navigate to the **Settings** tab on the Project page and select the frequency from the dropdown. The options are never, **daily**, or **weekly**.
 
@@ -99,11 +88,4 @@ The following container registries are supported:&#x20;
 
 The supported languages work with the following integrations:
 
-| **Language** | **Container Registry** | **CLI** | **Kubernetes** |
-| ------------ | ---------------------- | ------- | -------------- |
-| Node         | Yes                    | Yes     | Yes            |
-| Ruby         | Yes                    |         |                |
-| PHP          | Yes                    | Yes     | Yes            |
-| Python       | Yes                    | Yes     | Yes            |
-| Go Binaries  | Yes                    | Yes     | Yes            |
-| Java         | Yes                    | Yes     | Yes            |
+<table data-header-hidden><thead><tr><th width="133"></th><th width="165"></th><th width="157"></th><th></th></tr></thead><tbody><tr><td><strong>Language</strong></td><td><strong>Container Registry</strong></td><td><strong>CLI</strong></td><td><strong>Kubernetes</strong></td></tr><tr><td>Node</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Ruby</td><td>Yes</td><td></td><td></td></tr><tr><td>PHP</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Python</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Go Binaries</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Java</td><td>Yes</td><td>Yes</td><td>Yes</td></tr></tbody></table>
