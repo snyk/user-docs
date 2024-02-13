@@ -27,6 +27,6 @@ This group of pages provides detailed information about aspects of using the Sny
 For more articles on using the Snyk API, see the following:
 
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
-* [Audit logs](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
+* [Audit logs](../../snyk-api/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 * [Bazel](../../scan-with-snyk/supported-languages-and-frameworks/bazel.md)
-* [User management with the Snyk API](../../snyk-admin/user-management-with-the-snyk-api/)
+* [User management with the Snyk API](../../snyk-api/user-management-with-the-snyk-api/)
