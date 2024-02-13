@@ -1,11 +1,11 @@
 # Regional hosting and data residency
 
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
 Regional hosting and data residency are available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 Snyk can host your data in a number of regions. During initial onboarding of your system, you can work with your account team to select a multi-tenant region. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of onboarding.
@@ -24,7 +24,7 @@ Data residency is available for [Snyk Open Source](../scan-with-snyk/snyk-open-s
 
 During your system onboarding, you can work with your account team to select a hosting region.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 After you select a region, the data in that region cannot be migrated to another region. Moving to a new region requires a complete re-onboarding.
 {% endhint %}
 
@@ -90,7 +90,7 @@ EU and AU datacenter Snyk accounts are available only with the purchase of an [E
 
 [https://app.au.snyk.io/](https://app.au.snyk.io/)
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Using Snyk.io or app.snyk.io will not redirect you to these URLs.
 {% endhint %}
 
@@ -152,9 +152,9 @@ When running Jenkins, use the additional argument:
 
 ### IDEs URLs
 
-Snyk IDE extensions have similar modifiable options to the CLI and need to be configured to use the appropriate endpoint. In the extensions settings for Snyk in your IDE, set the **Custom Endpoint** parameter to the appropriate value for EU and AU as follows.
+Snyk IDE extensions have modifiable options similar to the CLI and need to be configured to use the appropriate endpoint. In the extensions settings for Snyk in your IDE, set the **Custom Endpoint** parameter to the appropriate value for EU and AU as follows.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Ensure you are using the latest version of IDE plugins. The following specifies the minimum version required:\
 VSCode - 1.2.18\
 Visual Studio - 1.1.21\
