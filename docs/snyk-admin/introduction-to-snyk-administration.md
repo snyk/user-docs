@@ -1,7 +1,8 @@
 # Introduction to Snyk administration
 
 {% hint style="warning" %}
-**Release status**\
+**Feature availability**
+
 Some functions, such as Groups, are available only on some [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
