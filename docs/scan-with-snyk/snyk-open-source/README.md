@@ -22,4 +22,4 @@ Snyk Open Source also helps prioritize and report on the vulnerabilities discove
 
 Snyk Open Source can also scan your Projects for license compliance, checking against licenses known to Snyk. For more information, see [Open-source license compliance](scan-open-source-libraries-and-licenses/open-source-license-compliance.md).
 
-You can also use license policies to define how your company deals with license issues. For more information, see [License policies](../policies/license-policies/).
+You can also use license policies to define how your company deals with license issues. For more information, see [License policies](../../enterprise-configuration/policies/license-policies/).
