@@ -242,7 +242,7 @@ The Snyk Consultant will educate the Customer on how to identify assets that are
 
 #### Snyk Container - single CICD CLI configuration
 
-The Snyk Consultant will work with the Customer to configure a single pipeline to run the `snyk container test` and `synk container monitor` commands and provide the Customer with an understanding of how to configure additional pipeline scans.&#x20;
+The Snyk Consultant will work with the Customer to configure a single pipeline to run the `snyk container test` and `snyk container monitor` commands and provide the Customer with an understanding of how to configure additional pipeline scans.&#x20;
 
 #### **Snyk Container - single Broker Container Registry installation and configuration**
 

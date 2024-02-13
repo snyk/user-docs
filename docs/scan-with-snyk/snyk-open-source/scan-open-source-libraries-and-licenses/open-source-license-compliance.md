@@ -21,7 +21,7 @@ By default, Snyk determines the severity of license issue in the following way:
 * High severity - licenses that definitely present issues for commercial software.
 * Medium severity - licenses with clauses that may be of concern and should be reviewed.
 
-For more information, see [License policies](../../../enterprise-configuration/policies/license-policies/) and [Open Source Licenses: Types and Comparison](https://snyk.io/learn/open-source-licenses/).
+For more information, see [License policies](../../policies/license-policies/) and [Open Source Licenses: Types and Comparison](https://snyk.io/learn/open-source-licenses/).
 
 ### How Snyk uses licenses
 

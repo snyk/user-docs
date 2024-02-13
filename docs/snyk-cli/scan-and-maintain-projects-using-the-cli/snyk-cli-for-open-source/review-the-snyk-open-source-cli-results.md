@@ -34,7 +34,7 @@ These are issues that cannot be resolved by upgrading a direct dependency. They 
 
 ### License Issues
 
-License issues are determined by the [license policy](../../../enterprise-configuration/policies/license-policies/) of your Snyk Organization. License issues  contain the following information:
+License issues are determined by the [license policy](../../../scan-with-snyk/policies/license-policies/) of your Snyk Organization. License issues  contain the following information:
 
 * Type of license
 * License severity as determined by the license policy of your Snyk Organization
@@ -51,5 +51,5 @@ The descriptive information about the test results includes the following detail
 * **Project Name:** The name of the directory in which this Project is located
 * **Open Source:** Information about whether or not this scan was performed on an Open Source Project. For more information, see [Test public repositories before use](broken-reference).
 * **Project Path:** The path through which the target file is introduced
-* **Local Snyk Policy:** Information about whether this scan was performed on an Open Source Project. For more information, see [The .snyk file](../../../scan-with-snyk/the-.snyk-file.md).
+* **Local Snyk Policy:** Information about whether this scan was performed on an Open Source Project. For more information, see [The .snyk file](../../../scan-with-snyk/policies/the-.snyk-file.md).
 * **Licenses:** Information about whether this Project was scanned for license issues

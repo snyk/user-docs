@@ -11,7 +11,7 @@ Snyk AppRisk uses Kubernetes state information to extract Docker image identifie
 
 <figure><img src="https://lh6.googleusercontent.com/BoYMeFGbzjUmNmXbmtrklBcl9LLm9S94mwJWkrFA_5E5WIO07BsS3Zv-fbGBlXkNAx4oGnbBtzFijWTxUQbsnlzJI2QqprUJWPevpwBybhmwtzQayYnmW6_Qvhddgz1_vdy-NDZgQKUQhmxnY54xkrI" alt="A vulnerability in a deployed image"><figcaption><p>A vulnerability in a deployed image</p></figcaption></figure>
 
-Kubernetes is very [specific](https://kubernetes.io/docs/concepts/containers/images/#image-names) about how images are managed. Synk uses the same logic to map the images Snyk knows about. Whenever you scan an Image with Snyk Container, Snyk collects information about the image name and image ID. Snyk uses this information to map images against information from Kubernetes.
+Kubernetes is very [specific](https://kubernetes.io/docs/concepts/containers/images/#image-names) about how images are managed. Snyk uses the same logic to map the images Snyk knows about. Whenever you scan an Image with Snyk Container, Snyk collects information about the image name and image ID. Snyk uses this information to map images against information from Kubernetes.
 
 {% hint style="info" %}
 Snyk adheres to the defined naming standards as documented for [Kubernetes](https://kubernetes.io/docs/concepts/containers/images/#image-names) and Docker [images](https://docs.docker.com/engine/reference/commandline/images/) to ensure consistency with Kubernetes.&#x20;

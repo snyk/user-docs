@@ -112,14 +112,14 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../../the-.snyk-file.md), including the section about [.snyk files in monorepos](../../the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
+For more information, see [The .snyk file](../../policies/the-.snyk-file.md), including the section about [.snyk files in monorepos](../../policies/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
 {% endhint %}
 
 ### Use policy actions to ignore issues
 
-You can set [Security policy](../../../enterprise-configuration/policies/security-policies/)[Security policy actions](../../../enterprise-configuration/policies/security-policies/security-policy-actions.md) to ignore all vulnerabilities that match the conditions specified in a policy rule.
+You can set [Security policy](../../policies/security-policies/)[Security policy actions](../../policies/security-policies/security-policy-actions.md) to ignore all vulnerabilities that match the conditions specified in a policy rule.
 
-For more information, see [Security policies](../../../enterprise-configuration/policies/security-policies/).
+For more information, see [Security policies](../../policies/security-policies/).
 
 ## Ignore issues in Snyk Code
 
@@ -151,7 +151,7 @@ For more information, see [Exploring the vulnerability issues discovered by Snyk
 
 
 
-When scanning your container images using `snyk container test`, you can ignore issues that are not relevant to you by using [The .snyk file](../../the-.snyk-file.md).
+When scanning your container images using `snyk container test`, you can ignore issues that are not relevant to you by using [The .snyk file](../../policies/the-.snyk-file.md).
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory.
 
@@ -159,7 +159,7 @@ For Snyk Container, after registering an ignore, when you call `snyk container t
 
 ## Ignore issues in Snyk IaC
 
-When scanning your IaC configuration files using `snyk iac test`, you can ignore issues that are not relevant to you by using [The .snyk file](../../the-.snyk-file.md).
+When scanning your IaC configuration files using `snyk iac test`, you can ignore issues that are not relevant to you by using [The .snyk file](../../policies/the-.snyk-file.md).
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 
