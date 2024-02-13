@@ -23,7 +23,7 @@ Under **Manage roles**, you can:
 
 ## Manage roles
 
-You can [create](user-role-management.md#create-a-role), [edit](user-role-management.md#edit-a-role), [duplicate](user-role-management.md#duplicate-a-role), and [delete](user-role-management.md#delete-a-role) custom roles, granting your users the exact permissions they need to do their jobs across the Snyk platform. This ensures the right people have the right access to the right resources at the right time, maximizing transparency and reducing risk.
+You can create, edit, duplicate, and delete custom roles, granting your users the exact permissions they need to do their jobs across the Snyk platform. This ensures the right people have the right access to the right resources at the right time, maximizing transparency and reducing risk.
 
 You will find [pre-defined roles](pre-defined-roles.md) such as **Organization Admin** and **Organization Collaborator** listed under your Group. These roles can be selected to view their associated permissions, but permissions cannot be added, edited, or removed. Pre-defined role permissions can be duplicated to act as a starting point for any custom role creation.
 
