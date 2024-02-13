@@ -28,7 +28,7 @@ To run `snyk test`, you must authenticate using a token with access to the targe
 
 Snyk Free and Team plan users must use their **personal Snyk API token**. See [API token configuration](ci-cd-setup.md#api-token-configuration) on this page for information on how to do this.
 
-Enterprise users should use a **service account** for any type of automation, including CI/CD setup. For more information, see [Service accounts](../../../enterprise-configurations/service-accounts/).
+Enterprise users should use a **service account** for any type of automation, including CI/CD setup. For more information, see [Service accounts](../../../enterprise-configuration/service-accounts/).
 
 ## Setting up Snyk to run in a pipeline
 
