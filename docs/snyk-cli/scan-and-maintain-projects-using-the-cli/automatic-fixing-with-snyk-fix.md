@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Release status and feature availability**
 
-The snyk fix command is in [Closed Beta](../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
+The snyk fix command is in [Closed Beta](../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans. Snyk welcomes feedback at [snyk-fix-feedback@snyk.io](mailto:snyk-fix-feedback@snyk.io).
 
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
