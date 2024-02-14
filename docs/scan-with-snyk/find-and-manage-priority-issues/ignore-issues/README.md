@@ -61,7 +61,7 @@ You can suppress issues through the CLI by using the `snyk ignore` command, for 
 
 For more information, see the [`ignore`](../../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md).
 
-When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given if one was provided. An example follows for an open-source vulnerability.
+When you use `snyk ignore` for Open Source, the `.snyk` policy file is updated with the path and reason given if one was provided. An example follows:
 
 ```
 'npm:moment:20170905':
@@ -74,7 +74,7 @@ For more information, see [Use the .snyk file to ignore issues](./#use-the-.snyk
 
 ### Scan from the CLI or CI/CD, ignore in the Web UI
 
-Ignores for issues found in a CLI or CI/CD run are synchronized with the Web UI as follows:
+Ignores for Open Source issues found in a CLI or CI/CD run are synchronized with the Web UI as follows:
 
 1. You scan a Project and push the results to the Web UI using `snyk monitor`.
 2. You see the results of the scan in the Web UI and choose to ignore an issue.
