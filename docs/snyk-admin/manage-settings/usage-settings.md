@@ -24,7 +24,7 @@ Test limits vary for Snyk products and plans. See the [Pans and pricing page](ht
 {% endhint %}
 
 {% hint style="info" %}
-See [What counts as a test?](../../scan-with-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test.md) for details of how Snyk counts tests.
+See [What counts as a test?](../../scan-with-snyk/scanning-overview/what-counts-as-a-test.md) for details of how Snyk counts tests.
 {% endhint %}
 
 ## Contributing developers
