@@ -1,11 +1,11 @@
 # Snyk Broker
 
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
 Snyk Broker is available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, allowing for access by [snyk.io](http://snyk.io/) to your code to scan it and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC.  For more information, see [How Snyk Broker works](./#how-snyk-broker-works).
@@ -14,9 +14,7 @@ Snyk Broker is an open-source tool that acts as a proxy between Snyk and special
 
 Snyk Broker is hosted on [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. Snyk provides a [Helm Chart](https://github.com/snyk/snyk-broker-helm) to deploy Snyk Broker if you are using Kubernetes. To deploy Broker, you must install and configure an integration.
 
-{% hint style="info" %}
 The Snyk Broker documentation provides detailed instructions for using [Helm](install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) and [Docker](install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md). Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also use Docker to run the Snyk Broker Client or run npm `install snyk-broker`.
-{% endhint %}
 
 ## **Integrations with Snyk Broker**
 
