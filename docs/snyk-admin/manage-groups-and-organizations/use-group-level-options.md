@@ -14,7 +14,7 @@ Select **Organizations** to view all the Organizations you have access to and yo
 
 <figure><img src="../../.gitbook/assets/my organizations.png" alt="The Organizations a user has access to under My Organizations"><figcaption><p>The Organizations a user has access to under My Organizations</p></figcaption></figure>
 
-See [Determine Member Roles](../../implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/determine-member-roles.md) for more details about Organization roles.
+See [Determine Member Roles](../../implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/determine-user-roles.md) for more details about Organization roles.
 
 If your Group is set up to let its members join Organizations, you also see a list of all the Organizations in the Group and options to join the Organizations where you are not currently a member.
 

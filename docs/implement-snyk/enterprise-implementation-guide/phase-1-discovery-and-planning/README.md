@@ -5,7 +5,7 @@
 * [Connect with Snyk](connect-with-snyk.md): Connect with your Snyk account manager.
 * [Conduct discovery](conduct-discovery.md): Identify stakeholders, integrations, and applications to monitor.
 * [Plan Organization structure](plan-organization-structure.md): Decide how to organize and control access to content using Organization structure.
-* [Determine Member roles](determine-member-roles.md): Decide whether your users need customized access to Snyk.
+* [Determine Member roles](determine-user-roles.md): Decide whether your users need customized access to Snyk.
 * [Decide SSO access](decide-sso-access.md): Identify initial Single Sign-On (SSO) settings.
 * [Plan for success](plan-for-success.md): Decide how to judge the success of your rollout.
 * [Choose rollout integrations](choose-rollout-integrations.md): Decide which integrations to implement initially.

@@ -182,7 +182,7 @@
       * [Connect with Snyk](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/connect-with-snyk.md)
       * [Conduct discovery](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/conduct-discovery.md)
       * [Plan Organization structure](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/plan-organization-structure.md)
-      * [Determine Member Roles](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/determine-member-roles.md)
+      * [Determine user roles](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/determine-user-roles.md)
       * [Decide SSO access](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/decide-sso-access.md)
       * [Plan for success](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/plan-for-success.md)
       * [Choose rollout integrations](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations.md)
