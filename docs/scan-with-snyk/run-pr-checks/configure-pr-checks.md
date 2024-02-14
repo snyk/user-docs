@@ -3,9 +3,7 @@
 {% hint style="warning" %}
 **Release status**&#x20;
 
-PR Checks is in [Closed Beta](../../getting-started/snyk-release-process.md) and available only for Enterprise plans.
-
-To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
+PR Checks for Snyk Code are in [Closed Beta](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. If you want to set it up in your Organization, contact your Snyk account team.
 {% endhint %}
 
 ## Prerequisites for automated PR Checks
@@ -27,7 +25,7 @@ A PR Check is counted as a test within your Organization's test count, including
 
 You can analyze the changed code with PR Checks as follows:
 
-* (Beta) Snyk Code: Source code changes result in a vulnerability that exceeds a specified threshold. A full scan of the repository is done to determine if there are new vulnerabilities.&#x20;
+* ([Closed Beta](../../getting-started/snyk-release-process.md#closed-beta)) Snyk Code: Source code changes result in a vulnerability that exceeds a specified threshold. A full scan of the repository is done to determine if there are new vulnerabilities.&#x20;
 * Snyk Open Source: Snyk analyzes dependency manifest or supported files for known security vulnerabilities that meet a threshold, such as exceeding severity, or checks to determine whether a fix is available.&#x20;
 * Open Source license check: Snyk validates package licenses against the configured policy for license policy violations.
 
