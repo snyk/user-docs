@@ -2,11 +2,13 @@
 
 ## Prerequisites for Snyk Broker
 
-{% hint style="info" %}
 The use of Snyk Broker on Windows is not supported. Snyk recommends that Windows users deploy Broker using Linux.
-{% endhint %}
 
-The following are prerequisites for using Snyk Broker:
+When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls) on the Regional hosting and data residency page.
+
+The following are prerequisites for using Snyk Broker in any environment:
 
 * Client machine system requirements: 1 CPU, 256MB of RAM
 * Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) that is also allowed by any firewalls installed on your network
@@ -15,13 +17,6 @@ The following are prerequisites for using Snyk Broker:
 * A unique UUID token called Broker token. See [Generate credentials in the target application for Snyk Broker](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker)
 * An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token. Snyk Broker does not support authentication with the mTLS method. &#x20;
 * Docker configured to pull images from Docker Hub
-
-{% hint style="info" %}
-**Multi-tenant settings for EU and AU**\
-When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
-Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
-For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
-{% endhint %}
 
 ## Prepare hosts for installation of Snyk Broker
 
