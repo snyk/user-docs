@@ -1,14 +1,14 @@
 # Nexus Repository - install and configure using Docker
 
-Follow the instructions on this page to set up Nexus Repository Manager with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Nexus Respository Manager deployment.
-
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
 Integration with Nexus Repository Manager is available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
+
+Follow the instructions on this page to set up Nexus Repository Manager with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Nexus Repository Manager deployment.
 
 {% hint style="info" %}
 **Prerequisites**\

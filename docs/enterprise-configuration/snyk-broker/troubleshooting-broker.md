@@ -1,10 +1,6 @@
 # Troubleshooting Broker
 
 {% hint style="info" %}
-For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/hc/en-us/articles/4404288846353-Broker-Troubleshooting).
-{% endhint %}
-
-{% hint style="info" %}
 **Multi-tenant settings**\
 When you are setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md) for details.
 {% endhint %}
@@ -17,6 +13,8 @@ This page has information and instructions for the following:
 * [Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise](troubleshooting-broker.md#support-of-big-manifest-files-greater-than-1mb-for-github-and-github-enterprise)
 * [Troubleshooting Broker with Code Agent](troubleshooting-broker.md#troubleshooting-broker-with-code-agent)
 * [Ensuring your containers stay online when you log out of the host](troubleshooting-broker.md#containers-go-down-when-you-log-out-of-the-host)
+
+For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/hc/en-us/articles/4404288846353-Broker-Troubleshooting).
 
 ## Logging with the Broker Client
 

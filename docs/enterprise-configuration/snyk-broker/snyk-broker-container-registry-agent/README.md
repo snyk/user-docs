@@ -1,11 +1,11 @@
 # Snyk Broker - Container Registry Agent
 
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
 Snyk Broker Container Registry Agent is available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 The Snyk Broker Container Registry Agent enables you to establish connection with network-restricted container registries so you can scan these registries using the Snyk service.
@@ -47,13 +47,9 @@ Using the Snyk Broker Container Registry Agent you can integrate Snyk with the f
 * DigitalOcean Container Registry (type: digitalocean-cr)
 * GitLab Container Registry (type: gitlab-cr)
 
-{% hint style="info" %}
 Artifactory and Nexus are also available as private package repositories with Broker options. The Brokers required for the Container Registry must be the ones as specified in [Prerequisites for Container Registry Agent](./#prerequisites-for-container-registry-agent), not the Brokers for snyk/broker:artifactory or snyk/broker:nexus.
-{% endhint %}
 
-{% hint style="info" %}
 GitHub Container registry and GitLab Container Registry do not follow Docker v2 API; they do not have the /v2/\_catalog endpoint. Thus it is not possible to list images in repos, and you must manually specify the images you wish to scan.
-{% endhint %}
 
 ## **Prerequisites for Container Registry Agent**
 
@@ -227,6 +223,6 @@ The `LOG_LEVEL` environment variable can be set to the desired level (debug/info
 
 For more verbose debugging, run the Container Registry Agent with the `DEBUG=*` environment variable. This allows you to print the logs of the Node [Debug](https://www.npmjs.com/package/debug) package. The Debug package is used by several packages in the Container Registry Agent, among them the [Needle](https://www.npmjs.com/package/needle) package, which is used for making HTTP requests. To print debug logs specifically from Needle, set `DEBUG=needle`.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Using the debugging options of third-party tools is not recommended for production environments, as this may result in logging sensitive information in logs that are not maintained by Snyk, for example, header information of HTTP requests.
 {% endhint %}

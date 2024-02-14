@@ -13,7 +13,7 @@ Insecure downstream mode makes all requests go over `http`, thus no longer benef
 
 Export the environment variable `INSECURE_DOWNSTREAM="true"` to use this mode, passing it as an environment value using the `-e INSECURE_DOWNSTREAM="true"` option.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Using HTTP is highly insecure! Your data and credentials will be transmitted in clear form over the network exchanges.
 
 Snyk **will not be held responsible** for any credential leaks that may occur as a result of the use of insecure downstream mode.

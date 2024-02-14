@@ -14,9 +14,7 @@ You must [install Cosign](https://docs.sigstore.dev/system\_config/installation/
 
 To verify the signed image, you must use the built-in `cosign verify` command.
 
-{% hint style="info" %}
 It is not necessary to pull the Broker container image to perform the verification step
-{% endhint %}
 
 ```
 $ cosign verify --key cosign.pub snyk/broker:4.169.1-github-com

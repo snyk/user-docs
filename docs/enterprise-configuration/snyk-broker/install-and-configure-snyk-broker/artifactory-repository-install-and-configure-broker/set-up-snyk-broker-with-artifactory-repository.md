@@ -1,14 +1,16 @@
 # Artifactory Repository - install and configure using Docker
 
-Follow the instructions on this page to set up Artifactory Repository with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Artifactory Repository  deployment.
-
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
 Integration with Artifactory Repository is available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
+
+Follow the instructions on this page to set up Artifactory Repository with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Artifactory Repository deployment.
+
+For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../integrate-with-snyk/package-repository-integrations/artifactory-package-repository-connection-setup/). For information about brokered integration with Artifactory Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
 
 {% hint style="info" %}
 **Prerequisites**\
@@ -19,17 +21,9 @@ You need Docker or a way to run Docker Linux containers.
 Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 {% endhint %}
 
-{% hint style="info" %}
-For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../integrate-with-snyk/package-repository-integrations/artifactory-package-repository-connection-setup/).
-{% endhint %}
-
-{% hint style="info" %}
-For information about brokered integration with Artifactory Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
-{% endhint %}
-
 ## Obtain Broker token for Artifactory Repository setup
 
-1. Go to settings <img src="../../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Package Repositories > Artifactory**.
+1. Navigate to **Settings** > **Integrations > Package Repositories > Artifactory**.
 2. Enter the URL of your Artifactory instance, this **must** end with **/artifactory**.
 3. Enter your username and password.
 4. Select **Save**.
@@ -42,7 +36,7 @@ If you do not see the **Snyk Broker** on/off switch, you do not have the necessa
 Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
 {% endhint %}
 
-When you have permissions to add a private registry, continue with the instructions to [generate a Broker token from the Web UI](set-up-snyk-broker-with-artifactory-repository.md#generate-a-broker-token-from-the-web-ui).
+When you have the permissions needed to add a private registry, continue with the instructions to [generate a Broker token from the Web UI](set-up-snyk-broker-with-artifactory-repository.md#generate-a-broker-token-from-the-web-ui).
 
 ## Generate a Broker token from the Web UI
 

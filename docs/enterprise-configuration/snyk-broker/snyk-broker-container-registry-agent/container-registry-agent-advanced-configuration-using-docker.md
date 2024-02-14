@@ -1,8 +1,6 @@
 # Container Registry Agent advanced configuration using Docker
 
-{% hint style="info" %}
 For instructions on installation of the Broker Container Registry Agent using Docker, see [Snyk Broker - Container Registry Agent](./). See [Install Broker for Container Registry using Helm](install-broker-for-container-registry-agent-using-helm.md) for instructions on the Helm method.
-{% endhint %}
 
 ## Container Registry Agent server **HTTPS configuration**
 

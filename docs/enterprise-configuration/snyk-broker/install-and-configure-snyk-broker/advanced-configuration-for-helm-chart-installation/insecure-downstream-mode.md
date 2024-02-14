@@ -11,11 +11,9 @@ In the cases where this is not possible in the near term, the insecure downstrea
 Using this mode should be avoided in most cases and remains opt-in.\
 It makes all requests go over http, therefore not benefiting from the safety of TLS encryption. It means all your credentials and data will appear unencrypted, which is only tolerable in tightly secure networks.
 
-Use the [custom-additional-options-for-broker-helm-chart-installation.md](custom-additional-options-for-broker-helm-chart-installation.md "mention") to inject this environment variable:
+Use the [Custom additional options for Broker Helm Chart installation](custom-additional-options-for-broker-helm-chart-installation.md) to inject this environment variable:
 
 `--set env[0].name=INSECURE_DOWNSTREAM --set env[0].value="true"`
-
-
 
 {% hint style="danger" %}
 Using HTTP is highly insecure ! Your data and credentials will transit in clear over the network exchanges.
