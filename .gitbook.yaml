@@ -72,4 +72,4 @@ redirects:
   snyk-open-source/language-and-package-manager-support/snyk-for-golang: /scan-using-snyk/supported-languages-and-frameworks/go.md
   manage-risk/insights: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/README.md   
   manage-issues/insights: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/README.md 
-  manage-issues/insights/insights-setup: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/README.md 
+  manage-issues/insights/insights-setup: https://docs.snyk.io/manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/prioritization-setup/README.md 
