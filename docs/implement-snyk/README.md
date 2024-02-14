@@ -1,9 +1,6 @@
 # Implement Snyk
 
-This section contains information about:
+If you're a small team looking for guidance on rolling out Snyk within your processes, see [Team implementation guide](team-implementation-guide/).
 
-* [Team implementation guide](team-implementation-guide/)
-* [Enterprise implementation guide](enterprise-implementation-guide/)
-* [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/)
-* [Walkthrough: Initiate a scan locally](walkthrough-initiate-a-scan-locally.md)
+If you're part of an enterprise implementing a large-scale rollout, see [Enterprise implementation guide](enterprise-implementation-guide/).
 
