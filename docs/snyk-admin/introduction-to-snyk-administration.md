@@ -18,24 +18,24 @@ Snyk has a hierarchy that controls access to scanning and other Snyk features.
 
 Snyk administrators set up Groups and Organizations. See [Manage Groups and Organizations](manage-groups-and-organizations/) for details. Targets and [Projects](snyk-projects/) are created when Snyk users import development Projects into Snyk for scanning.
 
-## Member (user) types
+## User types
 
-Snyk has the following types of members (users), defined by their roles:
+Snyk has the following types of users, defined by their roles:
 
 * Collaborator
 * Organization administrator
 * Group member
 * Group administrator
 
+See [Pre-defined roles](user-roles-and-permissions/pre-defined-roles.md) for more details, including the permissions associated with each role.
+
 {% hint style="warning" %}
 **Release status**
 
-Group administrators and Collaborators are available only for Enterprise plans.
+Group-level roles are available only for Enterprise plans.
 
 See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
-
-For details of the permissions associated with each role, see [Permissions associated with each role ](broken-reference)on the Managing permissions page.
 
 ## Snyk Admin tools
 

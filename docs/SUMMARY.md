@@ -159,7 +159,7 @@
       * [Validate your Snyk plan](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/validate-your-snyk-plan.md)
       * [Discovery](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/discovery.md)
       * [Name your Organization](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/name-your-organization.md)
-      * [Determine user roles](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/determine-user-roles.md)
+      * [Determine user roles](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/determine-member-roles.md)
       * [Plan for success](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/plan-for-success.md)
       * [Choose rollout integrations](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations.md)
       * [Create rollout plan](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/create-rollout-plan.md)

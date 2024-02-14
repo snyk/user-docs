@@ -1,18 +1,12 @@
 # Manage users in Organizations
 
-In the **Organization** where you want to manage users, select the **Members** menu option. You can do the following:
-
-* [Add members](manage-users-in-organizations.md#add-members)
-* [Revoke pending invites](manage-users-in-organizations.md#revoke-pending-invites)
-* [Change member roles](manage-users-in-organizations.md#change-member-roles)
-* [Delete members](manage-users-in-organizations.md#delete-members)
-* [Filter and sort views](manage-users-in-organizations.md#filter-and-sort-views-of-organization-members)
+In the **Organization** where you want to manage users, select the **Members** menu option.
 
 {% hint style="info" %}
-You must have the permissions required to perform these tasks. For details, see [Default user roles](../user-roles-and-permissions/pre-defined-roles.md).
+You must have the permissions required to perform these tasks - see [Pre-defined user roles](../user-roles-and-permissions/pre-defined-roles.md) for a list of permissions.
 {% endhint %}
 
-## Add members
+## Add users
 
 To add new users to your Organization, click **Add members**:
 
@@ -25,12 +19,12 @@ To add new users to your Organization, click **Add members**:
 You can do the following on the **Add members** screen:
 
 * Select **Invite new members** to send an email invitation to a new user. Enter the email addresses of users to invite, separated by commas, and click **Send invite**.
-* Select **Add existing members** to add existing members of your Group to the Organization. Select the members when prompted and click **Invite members.**
+* Select **Add existing members** to add existing members of your Group to the Organization. Select the users when prompted and click **Invite members.**
 * For Free plan users only:\
   Select **Invite by link** to send a link; click **Copy link** and send the link yourself.
-* Use the **New members join as** dropdown to define the default role of a member when joining, such as **Org admin**. For details, see [Manage permissions](broken-reference).
+* Use the **New members join as** dropdown to define the default role of a user when joining, such as **Org admin**. For details, see [Manage permissions](broken-reference).
 
-To see a demonstration of adding members, play this video:
+To see a demonstration of adding users, play this video:
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/qqmkcaequj" %}
 Inviting members to an Organization
@@ -49,12 +43,12 @@ Follow these steps to cancel pending invites:
 
 ## Change member roles
 
-To change the role of a member, click on the **Role** entry for the member and use the dropdown to select the new role:
+To change the role of a user, click on the **Role** entry for the member and use the dropdown to select the new role:
 
 <figure><img src="../../.gitbook/assets/Change-role.png" alt="Selec new role"><figcaption><p>Selec new role</p></figcaption></figure>
 
 {% hint style="warning" %}
-For Enterprise plan customers who create custom member roles, Snyk prevents users from assigning roles to other users who have more privileges. If you try to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than you have, you will see the error **Cannot assign higher privilege role**.
+For Enterprise plan customers who create custom roles, Snyk prevents users from assigning roles to other users who have more privileges. If you try to update a role, invite a new user, or add an existing user with a role that has more privileges than you have, you will see the error **Cannot assign higher privilege role**.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png" alt="Cannot assign higher privilege role error message"><figcaption><p><strong>Cannot assign higher privilege role error message</strong></p></figcaption></figure>
