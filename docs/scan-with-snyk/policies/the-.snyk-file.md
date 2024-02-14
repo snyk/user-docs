@@ -113,7 +113,7 @@ Your complete statement should be `snyk ignore --id=IssueID [--expiry=expiry] [-
 If you use the `.snyk` policy file, you avoid having to specify ignores in the web interface, which you can do only after an issue is detected and monitored.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 For Projects imported using a code repository integration as opposed to using the `snyk monitor` command, the `--policy-path` option is not available. The `.snyk` file  applies only to Projects found on the same path as the `.snyk` file.
 {% endhint %}
 

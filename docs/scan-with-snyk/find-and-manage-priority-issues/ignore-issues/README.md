@@ -1,12 +1,12 @@
 # Ignore issues
 
-You can ignore a vulnerability or license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores you can display results only for issues you need to fix. For details, see [How to set ignores](./#how-to-set-ignores).
+You can ignore a vulnerability or open-source license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores you can display results only for issues you need to fix
 
-<div align="left">
+&#x20;For Open Source details, see [How to set ignores](./#how-to-set-ignores). This information provides useful background for using ignores with other Snyk scanning methods. For more information, see the following sections on this page:
 
-<figure><img src="../../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Setting an ignore"><figcaption><p>Setting an ignore</p></figcaption></figure>
-
-</div>
+* [Ignore issues in Snyk Code](./#ignore-issues-in-snyk-code)
+* [Ignore issues in Snyk Container](./#ignore-issues-in-snyk-container)
+* [Ignore issues in Snyk IaC](./#ignore-issues-in-snyk-iac)
 
 ## Decisions to ignore issues
 
@@ -117,7 +117,7 @@ For more information, see [The .snyk file](../../policies/the-.snyk-file.md), in
 
 ### Use policy actions to ignore issues
 
-You can set [Security policy](../../policies/security-policies/)[Security policy actions](../../policies/security-policies/security-policy-actions.md) to ignore all vulnerabilities that match the conditions specified in a policy rule.
+You can set [Security policy actions](../../policies/security-policies/security-policy-actions.md) to ignore all vulnerabilities that match the conditions specified in a policy rule.
 
 For more information, see [Security policies](../../policies/security-policies/).
 
@@ -145,17 +145,17 @@ var generalLogFileName = req.query.file || 'standard_log.log';
 var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data) {...
 ```
 
-For more information, see [Exploring the vulnerability issues discovered by Snyk Code](broken-reference).
+For more information, see [Ignore CLI results for Snyk Code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md#ignore-cli-results-for-snyk-code).
 
 ## Ignore issues in Snyk Container
 
-
-
-When scanning your container images using `snyk container test`, you can ignore issues that are not relevant to you by using [The .snyk file](../../policies/the-.snyk-file.md).
+When you scan container images using `snyk container test`, you can ignore issues that are not relevant to you by setting an ignore in [The .snyk file](../../policies/the-.snyk-file.md).
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory.
 
-For Snyk Container, after registering an ignore, when you call `snyk container test` or `snyk container monitor`, you must use the `--policy-path=` option, for example: `snyk container test node --policy-path=.snyk.`
+After you set an ignore, when you use the `snyk container test` or `snyk container monitor` command, you must use the `--policy-path=` option. An example follows:
+
+`snyk container test node --policy-path=.snyk.`
 
 ## Ignore issues in Snyk IaC
 
