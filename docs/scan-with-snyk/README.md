@@ -30,7 +30,7 @@ For more information, see [Scan infrastructure](scan-infrastructure/).
 
 Implement a workflow to secure your code and infrastructure in your environment using the scanning methods provided by Snyk products.
 
-For more information, see [Working with Snyk in your environment](scanning-overview/) and [Supported languages and frameworks](supported-languages-and-frameworks/).
+For more information, see [Working with Snyk in your environment](working-with-snyk-in-your-environment/) and [Supported languages and frameworks](supported-languages-and-frameworks/).
 
 ## Run pull request checks
 

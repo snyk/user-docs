@@ -1,4 +1,4 @@
-# Working with Snyk in your environment
+# Scanning overview
 
 {% hint style="warning" %}
 **Release status** \

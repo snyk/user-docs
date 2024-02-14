@@ -7,7 +7,7 @@
 * [Validate your Snyk plan](validate-your-snyk-plan.md): c[onfirm your license has been applied correctly.](#user-content-fn-1)[^1]
 * [Conduct discovery](discovery.md): identify stakeholders, integrations, and applications to monitor.
 * [Name your  Organization](name-your-organization.md): decide what to name your Organization.
-* [Determine member roles](determine-member-roles.md): who will be administrators?
+* [Determine user roles](determine-user-roles.md): who will be administrators?
 * [Plan for success](plan-for-success.md): decide how to judge the success of your rollout.&#x20;
 * [Choose rollout integrations](choose-rollout-integrations.md): decide which integrations to implement initially.
 * [Create rollout plan](create-rollout-plan.md): create your high-level plan for rolling out Snyk in your business.
