@@ -1000,4 +1000,5 @@
   * [Regional hosting and data residency](working-with-snyk/regional-hosting-and-data-residency.md)
   * [Snyk Terms of Support and Services Glossary](working-with-snyk/snyk-terms-of-support-and-services-glossary/README.md)
     * [Snyk Jumpstart Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
+    * [Snyk Jumpstart Customer Prerequisites](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)
     * [Statement of Work](working-with-snyk/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
