@@ -1,10 +1,28 @@
 # The .snyk file
 
-The `.snyk` file is a YAML [policy](./) file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins.
+The `.snyk` file is a YAML [policy](./) file that Snyk uses to define analysis behaviors, in particular, ignores, to specify patches for the CLI and CI/CD plugins, and to establish language settings. Many of the uses apply to Snyk Open Source scans. There are also uses for Snyk Code and Snyk IaC.
 
-The file can be generated in a number of ways and can be used in a number of different scenarios. The `.snyk` file is generally located at the root of your Project, however for SCM imports, the `.snyk` file must be in the same directory as any manifest file to which it relates. See [Monorepos and complex Project considerations](the-.snyk-file.md#monorepos-and-complex-project-considerations).&#x20;
+You can create the file in a number of ways and use it in a number of different scenarios. The `.snyk` file is generally located at the root of your Project, however for SCM imports, the `.snyk` file must be in the same directory as any manifest file to which it relates. See [Monorepos and complex Project considerations](the-.snyk-file.md#monorepos-and-complex-project-considerations).&#x20;
 
-This page provides detailed information about the contents and use of the `.snyk` file, as well as about creating the file.
+## How to create the `.snyk` file
+
+{% hint style="info" %}
+The `.snyk` file should be versioned in the code repository, the same as other applications and build resources.
+{% endhint %}
+
+You can create the `.snyk` file in a number of ways:
+
+* **Snyk vulnerability fix pull request (PR)** - When you select the **fix a vulnerability** button on a Git code repository scan, and a Snyk patch is available and an upgrade is not possible, a `.snyk` file is added to the pull request. Creating Snyk patches is supported for npm and Yarn only.
+* **Snyk CLI** - When you use the `snyk ignore` command, Snyk creates a `.snyk` file. See the [Ignore](../../snyk-cli/commands/ignore.md) command CLI help for usage.
+* **Manual creation** - If you do not have an existing .snyk file, you can create a new .snyk file and populate it with the code that follows:\
+  &#x20;`# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
+  `version: v1.25.0`
+  * The `version` should be set to `v1.25.0` as this is the current policy schema version.&#x20;
+  * The ignore block or blocks should follow the relevant syntax as shown in the [description of the `ignore` command](../../snyk-cli/commands/ignore.md#description) or the examples on this page.
+
+{% hint style="info" %}
+The snyk-policy package can be found at [https://www.npmjs.com/package/snyk-policy](https://www.npmjs.com/package/snyk-policy). Note that the version of the package is not the same as the policy schema version to be entered in the `.snyk` file
+{% endhint %}
 
 ## Capabilities and behaviors of the `.snyk` file
 
@@ -28,26 +46,6 @@ The following explains how the `.snyk` file works.
   * For SCM scans, for example, GitHub, the Snyk Web UI controls the Python version at the Organization level, from the **Organization > Settings > Languages > Python > Pip Python version** option.
   * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options. See [Pip and Python versions](https://docs.snyk.io/scan-using-snyk/supported-languages-and-frameworks/python#pip-and-python-versions) for more details.
   * You may need to re-import the Project if the `.snyk` file was not present at the initial import of the Project into Snyk.
-
-## How to create the `.snyk` file
-
-{% hint style="info" %}
-The `.snyk` file should be versioned in the code repository, the same as other applications and build resources.
-{% endhint %}
-
-You can create the `.snyk` file in a number of ways:
-
-* **Snyk vulnerability fix pull request (PR)** - When you select the **fix a vulnerability** button on a Git code repository scan, and a Snyk patch is available and an upgrade is not possible, a `.snyk` file is added to the pull request. Creating Snyk patches is supported for npm and Yarn only.
-* **Snyk CLI** - When you use the `snyk ignore` command, Snyk creates a `.snyk` file. See the [Ignore](../../snyk-cli/commands/ignore.md) command CLI help for usage.
-* **Manual creation** - If you do not have an existing .snyk file, you can create a new .snyk file and populate it with the code that follows:\
-  &#x20;`# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
-  `version: v1.25.0`
-  * The `version` should be set to `v1.25.0` as this is the current policy schema version.&#x20;
-  * The ignore block or blocks should follow the relevant syntax as shown in the [description of the `ignore` command](../../snyk-cli/commands/ignore.md#description) or the examples on this page.
-
-{% hint style="info" %}
-The snyk-policy package can be found at [https://www.npmjs.com/package/snyk-policy](https://www.npmjs.com/package/snyk-policy). Note that the version of the package is not the same as the policy schema version to be entered in the `.snyk` file
-{% endhint %}
 
 ## Syntax of the `.snyk` file
 
