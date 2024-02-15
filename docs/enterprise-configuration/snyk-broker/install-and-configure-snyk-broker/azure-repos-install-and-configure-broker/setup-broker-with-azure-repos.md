@@ -1,6 +1,6 @@
 # Azure Repos - install and configure using Docker
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Feature availability**\
 Snyk Azure Repos are available only for Azure DevOps/TFS 2020 or above.
 {% endhint %}
@@ -11,7 +11,7 @@ Follow the instructions on this page to set up Snyk Azure Repos with Snyk Broker
 **Prerequisites**\
 Ask your Snyk account team to provide you with a Broker token.
 
-You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 {% endhint %}
 
 ## Configure Broker to be used with Azure Repos
@@ -22,7 +22,9 @@ To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services
 
 ## Docker run command to set up a Broker Client for Azure Repos
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk AppRisk information. Enable [Snyk AppRisk](../../../../manage-risk/snyk-apprisk/) to identify your application assets, monitor them, and prioritize the risks.
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk AppRisk information **for one Azure organiztion**. **Enable** [Snyk AppRisk](../../../../manage-risk/snyk-apprisk/) to identify your application assets, monitor them, and prioritize the risks.
+
+Note that if you have more than one Azure organization, you must deploy a Broker for each one. Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 
 ```bash
 docker run --restart=always \
@@ -40,7 +42,7 @@ docker run --restart=always \
 ```
 
 {% hint style="info" %}
-Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
+
 {% endhint %}
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Azure Repos integration.
