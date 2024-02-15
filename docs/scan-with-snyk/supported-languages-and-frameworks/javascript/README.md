@@ -15,6 +15,7 @@ Snyk Code supports the following frameworks:
 * Express
 * jQuery
 * Angular (partial support)
+* NodeJS
 
 ### Open source and licensing
 

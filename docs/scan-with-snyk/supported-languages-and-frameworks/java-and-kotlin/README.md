@@ -24,6 +24,7 @@ Snyk Code supports the following frameworks:
 * Jakarta XML Services
 * Java Servlet
 * JSP
+* Spring Boot (partial support)
 * Spring MVC
 * Spring JDBC
 
