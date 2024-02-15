@@ -6,10 +6,6 @@ The file can be generated in a number of ways and can be used in a number of dif
 
 This page provides detailed information about the contents and use of the `.snyk` file, as well as about creating the file.
 
-The following video provides an introduction to the `.snyk` file.
-
-{% embed url="https://youtu.be/QSIBt-hQ0Xo" %}
-
 ## Capabilities and behaviors of the `.snyk` file
 
 The `.snyk` policy file in a Project is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands and for any tests done through the API or Snyk Web UI. and to apply the `@snyk/protect` [package](https://github.com/snyk/snyk/tree/master/packages/snyk-protect) that replaced the `snyk protect` command.
@@ -116,6 +112,14 @@ If you use the `.snyk` policy file, you avoid having to specify ignores in the w
 {% hint style="info" %}
 For Projects imported using a code repository integration as opposed to using the `snyk monitor` command, the `--policy-path` option is not available. The `.snyk` file  applies only to Projects found on the same path as the `.snyk` file.
 {% endhint %}
+
+
+
+## Deep dive into the `.snyk` file
+
+The following video explains uses of the `.snyk` file in detail.
+
+{% embed url="https://youtu.be/QSIBt-hQ0Xo" %}
 
 ## Examples for the `.snyk` file
 
