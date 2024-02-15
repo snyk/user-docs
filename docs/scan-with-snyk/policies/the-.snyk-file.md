@@ -20,19 +20,38 @@ You can create the `.snyk` file in a number of ways:
   * The `version` should be set to `v1.25.0` as this is the current policy schema version.&#x20;
   * The ignore block or blocks should follow the relevant syntax as shown in the [description of the `ignore` command](../../snyk-cli/commands/ignore.md#description) or the examples on this page.
 
+The following example shows how to create a  `.snyk` file to generate a patch rule using a vulnerability fix PR:
+
+```
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - tap > codecov.io > request > hawk:
+        patched: '2020-01-20T14:26:34.404Z'
+```
+
 {% hint style="info" %}
 The snyk-policy package can be found at [https://www.npmjs.com/package/snyk-policy](https://www.npmjs.com/package/snyk-policy). Note that the version of the package is not the same as the policy schema version to be entered in the `.snyk` file
 {% endhint %}
 
-## Capabilities and behaviors of the `.snyk` file
-
-The `.snyk` policy file in a Project is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands and for any tests done through the API or Snyk Web UI. and to apply the `@snyk/protect` [package](https://github.com/snyk/snyk/tree/master/packages/snyk-protect) that replaced the `snyk protect` command.
+## Use the .snyk file with Snyk Code
 
 The `.snyk` file can also be used to exclude directories and files from repositories that are imported for Snyk Code testing. The `exclude from import` option is supported only in Snyk Code, and only for imports that are performed using the Snyk Web UI and CLI. For details, see [Excluding directories and files from the import process](../snyk-code/import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md).
 
+## Use the .snyk file with Snyk IaC
+
 For IaC ignore rules, see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
 
-The following explains how the `.snyk` file works.
+## Use the .snyk file with Snyk Open Source
+
+The `.snyk` policy file in a Project is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands and for any tests done through the API or Snyk Web UI. and to apply the `@snyk/protect` [package](https://github.com/snyk/snyk/tree/master/packages/snyk-protect) that replaced the `snyk protect` command.
+
+### Considerations in using the .snyk file with Open Source
+
+Consider the following in using `.snyk` file for Snyk Open Source:
 
 * The `.snyk` file defines **Snyk patches** to be applied at build time, to resolve vulnerabilities that cannot be fixed with upgrades.
 * The `.snyk` file defines **Ignores**.
@@ -46,6 +65,81 @@ The following explains how the `.snyk` file works.
   * For SCM scans, for example, GitHub, the Snyk Web UI controls the Python version at the Organization level, from the **Organization > Settings > Languages > Python > Pip Python version** option.
   * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options. See [Pip and Python versions](https://docs.snyk.io/scan-using-snyk/supported-languages-and-frameworks/python#pip-and-python-versions) for more details.
   * You may need to re-import the Project if the `.snyk` file was not present at the initial import of the Project into Snyk.
+
+### Examples of the .snyk for Open Source
+
+#### Set the language version for Python
+
+Manually modify the `.snyk` file to set `language-settings:` for the Project to Python 2.7:
+
+```
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+language-settings: 
+  python: "2.7"
+```
+
+Manually modify the `.snyk` file to set `language-settings:` for the Project to Python 3.6.2:
+
+```
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+language-settings: 
+  python: "3.6.2"
+```
+
+{% hint style="info" %}
+When you include the `.snyk` file in your code repository and the `language-settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans.
+{% endhint %}
+
+See the [Python version](../supported-languages-and-frameworks/python.md#python-version-support) documentation for more information about the Python version support.&#x20;
+
+#### Set vulnerability ignore rules
+
+Ignore a specific vulnerability for a given path:
+
+<pre><code><strong>ignore:
+</strong>  SNYK-JS-BSON-561052:
+    - mongodb > mongodb-core > bson:
+        reason: None given
+        expires: '2020-06-19T20:36:54.553Z'
+</code></pre>
+
+Ignore a vulnerability for all paths:
+
+```
+ignore:
+  SNYK-JS-BSON-561052:
+    - '*':
+        reason: None Given
+        expires: 2020-04-04T17:33:45.004Z
+```
+
+Ignore a specific vulnerability on multiple paths:
+
+<pre><code><strong>ignore:
+</strong><strong>  SNYK-JS-DOTPROP-543489:
+</strong>    - configstore > dot-prop:
+        reason: None given
+        expires: '2020-06-19T20:36:54.553Z'
+    - snyk > configstore > dot-prop:
+        reason: None given
+        expires: '2020-06-19T20:36:54.553Z'
+</code></pre>
+
+#### Set license ignore rules
+
+To ignore the license issue for a package, find the ID for the license in the output of the `snyk test` command.
+
+The license ID is part of the license issue URL, for example, in this URL: [https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0](https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0), the license ID is `snyk:lic:npm:symbol:MPL-2.0`.
+
+### More information about the .snyk file for Open Source
+
+For more information, see the following:
+
+[Ignore vulnerabilities using the Snyk CLI](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
+
+[Error message: Ignoring via the CLI is not enabled for this organization. Please ignore issues via our website](https://support.snyk.io/hc/en-us/articles/360001569438-Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
 
 ## Syntax of the `.snyk` file
 
@@ -75,6 +169,22 @@ The `patch`: is in the form of:
     patched: 'datetime string'
   - path to library using > seperator > to > another > path:
     patched: 'datetime string'
+```
+
+## The Snyk CLI and the  `.snyk` file for Snyk Open Source
+
+The `snyk policy` command displays the `.snyk` policy for a package.
+
+The `snyk ignore` command modifies the `.snyk` policy to ignore a stated issue.
+
+```
+snyk ignore --id='vulnerabilityID' --expiry='date-string' --reason='text string'
+```
+
+The following example shows using the `snyk ignore` command to generate a rule for ignoring the `SNYK-JS-BSON-561052` vulnerability for all paths that lead to that library on disk.
+
+```
+snyk ignore --id='SNYK-JS-BSON-561052' --expiry='2018-04-01' --reason='testing'
 ```
 
 ## How to override the ignore rules in the database
@@ -111,131 +221,8 @@ If you use the `.snyk` policy file, you avoid having to specify ignores in the w
 For Projects imported using a code repository integration as opposed to using the `snyk monitor` command, the `--policy-path` option is not available. The `.snyk` file  applies only to Projects found on the same path as the `.snyk` file.
 {% endhint %}
 
-
-
 ## Deep dive into the `.snyk` file
 
 The following video explains uses of the `.snyk` file in detail.
 
 {% embed url="https://youtu.be/QSIBt-hQ0Xo" %}
-
-## Examples for the `.snyk` file
-
-### Create a `.snyk` file
-
-Generate a patch rule using a vulnerability fix PR:
-
-```
-# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.25.0
-ignore: {}
-# patches apply the minimum changes required to fix a vulnerability
-patch:
-  'npm:hawk:20160119':
-    - tap > codecov.io > request > hawk:
-        patched: '2020-01-20T14:26:34.404Z'
-```
-
-### Set the language version for Python
-
-Manually modify the `.snyk` file to set `language-settings:` for the Project to Python 2.7:
-
-```
-# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.25.0
-language-settings: 
-  python: "2.7"
-```
-
-Manually modify the `.snyk` file to set `language-settings:` for the Project to Python 3.6.2:
-
-```
-# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.25.0
-language-settings: 
-  python: "3.6.2"
-```
-
-{% hint style="info" %}
-When you include the `.snyk` file in your code repository and the `language-settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans.
-{% endhint %}
-
-See the [Python version](../supported-languages-and-frameworks/python.md#python-version-support) documentation for more information about the Python version support.&#x20;
-
-### Set vulnerability ignore rules
-
-Ignore a specific vulnerability for a given path:
-
-<pre><code><strong>ignore:
-</strong>  SNYK-JS-BSON-561052:
-    - mongodb > mongodb-core > bson:
-        reason: None given
-        expires: '2020-06-19T20:36:54.553Z'
-</code></pre>
-
-Ignore a vulnerability for all paths:
-
-```
-ignore:
-  SNYK-JS-BSON-561052:
-    - '*':
-        reason: None Given
-        expires: 2020-04-04T17:33:45.004Z
-```
-
-Ignore a specific vulnerability on multiple paths:
-
-<pre><code><strong>ignore:
-</strong><strong>  SNYK-JS-DOTPROP-543489:
-</strong>    - configstore > dot-prop:
-        reason: None given
-        expires: '2020-06-19T20:36:54.553Z'
-    - snyk > configstore > dot-prop:
-        reason: None given
-        expires: '2020-06-19T20:36:54.553Z'
-</code></pre>
-
-### Set license ignore rules
-
-To ignore the license issue for a package, find the ID for the license in the output of the `snyk test` command.
-
-The license ID is part of the license issue URL, for example, in this URL: [https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0](https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0), the license ID is `snyk:lic:npm:symbol:MPL-2.0`.
-
-### **Ignoring the license with the CLI**
-
-Enter the license ID in lowercase to avoid causing an error. Only the proper name of the license can be in uppercase. In the example that follows, everything is in lowercase except the proper name of the license, GPL-2.0.
-
-`snyk ignore --id=snyk:lic:npm:goof:GPL-2.0`
-
-This command results in the following `.snyk` file:
-
-<pre><code><strong>ignore:
-</strong>  'snyk:lic:npm:goof:GPL-2.0':
-    - '*':
-        reason: None Given
-        expires: 2020-11-07T11:38:28.614Z
-</code></pre>
-
-## `.snyk`-related CLI commands
-
-The `snyk policy` command displays the `.snyk` policy for a package.
-
-The `snyk ignore` command modifies the `.snyk` policy to ignore a stated issue.
-
-```
-snyk ignore --id='vulnerabilityID' --expiry='date-string' --reason='text string'
-```
-
-The following example shows using the `snyk ignore` command to generate a rule for ignoring the `SNYK-JS-BSON-561052` vulnerability for all paths that lead to that library on disk.
-
-```
-snyk ignore --id='SNYK-JS-BSON-561052' --expiry='2018-04-01' --reason='testing'
-```
-
-## More information about the `.snyk` file
-
-For more information, see the following:
-
-[Ignore vulnerabilities using the Snyk CLI](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
-
-[Error message: Ignoring via the CLI is not enabled for this organization. Please ignore issues via our website](https://support.snyk.io/hc/en-us/articles/360001569438-Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
