@@ -1,9 +1,9 @@
 # Snyk GitHub Cloud App
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Feature availability**
 
-The GitHub Cloud App is in Open Beta and available for all customers on GitHub Cloud, independent of plan type.
+The GitHub Cloud App is in Early Access and available for all customers on GitHub Cloud, independent of plan type.
 
 This feature is not yet supported for Snyk Broker.
 {% endhint %}
