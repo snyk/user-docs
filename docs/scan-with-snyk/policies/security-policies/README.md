@@ -1,6 +1,6 @@
 # Security policies
 
-Group administrators can define security policies, providing an automated way to identify certain issues or types of issues and apply actions like changing the severity of or ignoring an issue based on specified conditions.
+Group administrators can define Open Source security policies, providing an automated way to identify certain issues or types of issues and apply actions like changing the severity of or ignoring an issue based on specified conditions.
 
 You can [create a security policy and set rules](create-a-security-policy-and-rules.md) by clicking the **Policies** menu option on the Group Overview page to open the Policy manager:
 
