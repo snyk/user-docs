@@ -3,7 +3,7 @@
 In the **Organization** where you want to manage users, select the **Members** menu option.
 
 {% hint style="info" %}
-You must have the permissions required to perform these tasks - see [Pre-defined user roles](../user-roles-and-permissions/pre-defined-roles.md) for a list of permissions.
+You must have the permissions required to perform these tasks - see [Pre-defined user roles](../user-roles/pre-defined-roles.md) for a list of permissions.
 {% endhint %}
 
 ## Add users

@@ -27,7 +27,7 @@ Snyk has the following types of users, defined by their roles:
 * Group member
 * Group administrator
 
-See [Pre-defined roles](user-roles-and-permissions/pre-defined-roles.md) for more details, including the permissions associated with each role.
+See [Pre-defined roles](user-roles/pre-defined-roles.md) for more details, including the permissions associated with each role.
 
 {% hint style="warning" %}
 **Release status**

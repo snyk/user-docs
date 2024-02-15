@@ -21,7 +21,7 @@ Before scanning your code with Snyk Code, ensure the following:
 
 ### Prerequisites
 
-To enable Snyk Code in your Organization, you need to be an [Org Admin](../../snyk-admin/user-roles-and-permissions/pre-defined-roles.md).
+To enable Snyk Code in your Organization, you need to be an [Org Admin](../../snyk-admin/user-roles/pre-defined-roles.md).
 
 ### Enable Snyk Code&#x20;
 
