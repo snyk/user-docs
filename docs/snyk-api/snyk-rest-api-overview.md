@@ -96,6 +96,8 @@ Note: In the default case of Generally Available, there is no stability level sp
 
 This means the requested endpoint should be 2023-11-27 or older on the Generally Available stability tree.
 
+When the requested endpoint is at a specific stability level, Snyk serves the latest version, the version released on or before the requested date, or that stability or higher. For example, if the requested endpoint has a beta version at 2023-09-29 and GA version at 2024-01-23, and the requested endpoint is after 2024-01-23\~beta, Snyk resolves to the GA version.
+
 Granular version controls enable Snyk to introduce progressive enhancements. These may require small or minor backwards-incompatible changes. However, using granular version controls means Snyk can deliver rapid enhancements more quickly, while supporting existing endpoints for a guaranteed period of time.
 
 Once an endpoint is marked as deprecated, it will contain a `Sunset` header indicating the date at which that endpoint contract will no longer be supported. For example:
