@@ -208,8 +208,3 @@ The `patch`: is in the form of:
     patched: 'datetime string'
 ```
 
-## Deep dive into the `.snyk` file
-
-The following video explains uses of the `.snyk` file in detail.
-
-{% embed url="https://youtu.be/QSIBt-hQ0Xo" %}
