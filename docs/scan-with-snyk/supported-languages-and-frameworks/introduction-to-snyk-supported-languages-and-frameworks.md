@@ -176,6 +176,10 @@ Snyk Code automatically excludes the following files from analysis:
 
 The analysis is available only for files with names shorter or equal to 255 characters. You receive an error if the filename exceeds this limit. To ensure that all files are being analyzed, consider shortening long filenames.
 
+### Unicode character encoding&#x20;
+
+Snyk Code only accepts source code files in UTF-8 encoding. Consider convering source files to this encoding type before importing into Snyk.
+
 ### Framework support
 
 To support a specific framework, Snyk Code must both support the relevant language and be trained on Projects using the framework. The found patterns are then annotated by the security team and extended by curated content.
