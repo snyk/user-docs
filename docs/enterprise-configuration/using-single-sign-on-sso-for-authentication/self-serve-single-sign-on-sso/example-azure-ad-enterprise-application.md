@@ -29,7 +29,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
 9.  Click **Edit** under **Basic SAML configuration**.
 
     <figure><img src="../../../.gitbook/assets/9 (2) (1) (1) (1).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
-10. Add the Identity (Entity ID) and reply URL (Assertion Consumer Service URL) you obtained from Snyk and click **Save**; \*\*\*\* then close the edit window.
+10. Add the Identity (Entity ID) and reply URL (Assertion Consumer Service URL) you obtained from Snyk and click **Save**; then close the edit window.
 
     <figure><img src="../../../.gitbook/assets/10.png" alt="Entity ID and Assertion Consumer Service URL"><figcaption><p>Entity ID and Assertion Consumer Service URL</p></figcaption></figure>
 11. Scroll to find the login URL needed to finish the configuration in Snyk. Copy it and paste it into the SSO settings in the Snyk portal.
