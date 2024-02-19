@@ -9,9 +9,7 @@ Based on your plan and product selection, your account has a monthly limit set o
 See [Pricing plans](https://snyk.io/plans).
 {% endhint %}
 
-Snyk takes a developer-first approach to secure your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. For details, see [Introducing Snyk](broken-reference).
-
-The Snyk developer-first approach allows you to:
+Snyk takes a developer-first approach to secure your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. This approach allows you to:
 
 * Use Snyk to focus on early enablement, not later enforcement.&#x20;
 * Run scans while you are working on a Project to minimize rework by finding issues that require changes before you commit the code.
@@ -22,7 +20,7 @@ Using Snyk begins with importing one or more Projects and scanning for issues.
 
 ## Snyk methods of scanning
 
-Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, with a view to finding and fixing vulnerabilities early in the Software Development Life Cycle.
+Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, to find and fix vulnerabilities early in the Software Development Life Cycle.
 
 [Snyk Open Source](../snyk-open-source/) provides vulnerability testing and monitoring for your Projects. Open-source dependency upgrade and version bumping information, as well as license compliance information, are provided on all Snyk plans. Some capabilities may be limited for some [languages and package managers](../supported-languages-and-frameworks/).
 
@@ -94,13 +92,13 @@ Snyk offers capabilities to address issues both reactively and proactively:
 
 ## Deployment and rollout recommendations
 
-Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams have the benefit of being agile and determining what works best for their workflow. For more information, see G[etting started with Snyk Free and Team plans](../../implement-snyk/walkthrough-initiate-a-scan-locally.md) and [Preparing for implementation with Free and Team plans](broken-reference).
+Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams benefit from being agile and determining what works best for their workflow.  With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience.
 
-With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For details, see the [Enterprise implementation guide](../../implement-snyk/enterprise-implementation-guide/).
-
-1. Typically, large organizations start with daily monitoring of applications using Git integration, initially turning on PR checks for a few key applications **at most**. You may use CI/CD scans on key applications for some ecosystems to get a granular view of the exact versions being deployed at that point in time.
+1. Typically, large organizations start with daily monitoring of applications using Git integration, initially turning on PR checks for a few key applications **at most**. You may use CI/CD scans on key applications for some ecosystems to get a granular view of the exact versions being deployed.
 2. As developers become familiar with Snyk capabilities, your company can widen the scope of applications with PR checks for gating or blocking builds if checks fail.
 3. Some customers use CI/CD to passively monitor and then turn on gating by using the Snyk CLI `test` command for each product.
-4. If you import a large number of legacy applications, you can use [Priority Score](../find-and-manage-priority-issues/priority-score.md) (typically 700 as a starting place). If you would like to have more control over the criteria, you can do the following:
-   * Focus on `Critical` to start for open source, and `High` for first-party code.
-   * For open source, try additional criteria like `Known exploit` or `Fix available` to define a starting point for engaging developers in starting to fix vulnerabilities for key applications.
+4. If you import many legacy applications, you can use [Priority Score](../find-and-manage-priority-issues/priority-score.md) (typically 700 as a starting place). If you would like to have more control over the criteria, you can do the following:
+   * Focus on `Critical` to start with for open source, and `High` for first-party code.
+   * For open source, try additional criteria like `Known exploit` or `Fix available` to define a starting point for engaging developers in fixing vulnerabilities for key applications.
+
+For more information, see [Implement Snyk](../../implement-snyk/).
