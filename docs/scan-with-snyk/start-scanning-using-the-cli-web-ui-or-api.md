@@ -10,14 +10,14 @@ Regardless of how you use Snyk, ensure you have completed the steps in the [Quic
 
 In addition, if you are using Snyk Code or scanning container images, complete the following:
 
-* [Activate Snyk Code](broken-reference) to scan your application code.
+* [Enable Snyk Code](snyk-code/configure-snyk-code.md#enable-snyk-code-in-snyk-web-ui) to scan your application code.
 * [Set up integration with a supported container registry](../getting-started/quickstart/set-up-an-integration.md) to scan container images.
 
 For general information about Snyk scans, see [Running scans](working-with-snyk-in-your-environment/running-scans.md).&#x20;
 
 ## Overview of ways to scan your Projects
 
-Snyk provides multiple ways to scan Snyk Open Source, Snyk Code, and Snyk Container Projects. You can choose to run your scans from the Web UI, the CLI, the API, or with PR Checks.
+You can run your scans from the [Web UI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-web-ui), the [CLI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-cli), the [API](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-api), or with [PR Checks](run-pr-checks/).
 
 | Features                                                                           | Snyk Web UI          | Snyk CLI             | Snyk API             | PR Checks            |
 | ---------------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | -------------------- |
@@ -27,11 +27,11 @@ Snyk provides multiple ways to scan Snyk Open Source, Snyk Code, and Snyk Contai
 | Incorporate into the CI/CD pipelines                                               | :heavy\_minus\_sign: | :heavy\_check\_mark: | :heavy\_minus\_sign: | :heavy\_minus\_sign: |
 | Obtain results precisely reflecting the Project vulnerabilities and configurations | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
 
-If you choose to use the CLI for scanning your Snyk Open Source, Snyk Code, and Snyk Container Projects, you can run the scans locally on your machine or incorporate them into your CI/CD pipelines, providing more control and flexibility over the scanning process.&#x20;
+## Scan using the CLI
+
+If you choose to use the CLI for scanning, you can run the scans locally on your machine or incorporate them into your CI/CD pipelines, providing more control and flexibility over the scanning process.&#x20;
 
 In addition, using the CLI enables you to scan your code, open-source packages, and container images in their specific development environments, ensuring results that precisely reflect the dependencies and configurations of your Projects.
-
-## Scan using the CLI
 
 Before initiating a scan using the CLI, ensure you follow all the installation, authentication, and getting started steps:
 
@@ -61,7 +61,7 @@ For more information, see the following pages:
 
 ### Scan results
 
-After you finish running a Snyk CLI scan, the results are displayed in the terminal. The following pages explain the results for Snyk Open Source, Snyk Code, and Snyk Container scans:
+After you run a Snyk CLI scan, the results are displayed in the terminal. The following pages explain the results for Snyk Open Source, Snyk Code, and Snyk Container scans:
 
 * [Review the Snyk Open Source CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/review-the-snyk-open-source-cli-results.md)
 * [Working with the Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md)
@@ -69,7 +69,9 @@ After you finish running a Snyk CLI scan, the results are displayed in the termi
 
 ## Scan using the Web UI
 
-Using a Snyk integration, you can scan your Projects from the Web UI> Running PR Checks also scans your code. See [Configure PR Checks](run-pr-checks/configure-pr-checks.md) to learn how to enable this functionality. See [Run an analysis with Visual Studio Code extension](../integrate-with-snyk/ide-tools/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension.md) for an example of scanning using an integration.. For more information, see [Use Snyk in your IDE](../integrate-with-snyk/ide-tools/) and [Snyk CI/CD integrations](../integrate-with-snyk/snyk-ci-cd-integrations/).
+Using a Snyk integration, you can scan your Projects from the Web UI. See [Explore Snyk through the Web UI](../getting-started/explore-snyk-through-the-web-ui.md).
+
+Running PR Checks also scans your code. See [Configure PR Checks](run-pr-checks/configure-pr-checks.md) to learn how to enable this functionality. See [Run an analysis with Visual Studio Code extension](../integrate-with-snyk/ide-tools/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension.md) for an example of scanning using an integration. For more information, see [Use Snyk in your IDE](../integrate-with-snyk/ide-tools/) and [Snyk CI/CD integrations](../integrate-with-snyk/snyk-ci-cd-integrations/).
 
 ## Scan using the API
 
