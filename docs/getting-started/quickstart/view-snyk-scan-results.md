@@ -14,7 +14,7 @@ This shows the number of issues found, grouped by severity level (**C**ritical, 
 The scan results and available actions depend on the type of Project you scan:
 
 * Open-source libraries: see [Snyk Open Source](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/view-vulnerabilities-in-your-code.md).
-* Application code: see [Snyk Code](broken-reference).
+* Application code: see [Snyk Code](../../scan-with-snyk/snyk-code/).
 * Container images: see [Snyk Container](../../scan-with-snyk/snyk-container/scan-container-images.md).
 * Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files and cloud misconfigurations: see [Scan infrastructure](../../scan-with-snyk/scan-infrastructure/).
 
