@@ -18,16 +18,6 @@ As the feature progresses, Snyk will provide more comprehensive error reporting 
 
 ## Limitations of Custom PR templates
 
-### Branch names&#x20;
-
-Although you can still customize your branch name, to avoid any potential issues, Snyk automatically appends a hash to the end of the branch name you choose. This hash derives from the PR contents and prevents opening duplicate branches, as well as naming conflicts with existing or future branches.
-
-### \{{package\_name\}}
-
-Some ecosystem specific package names contain special characters. This could potentially cause a problem if the character is not allowed in the branch name by GitHub and other integrations. \
-\
-Currently, Snyk may fail to open your PR if this happens. You can avoid this issue by not using the `{{package_name}}` variable in your `branch_name` attribute.&#x20;
-
 ### Jira
 
 You can add Jira tickets to your PR, but Snyk is limited to those created using Snyk workflows, either UI or API.

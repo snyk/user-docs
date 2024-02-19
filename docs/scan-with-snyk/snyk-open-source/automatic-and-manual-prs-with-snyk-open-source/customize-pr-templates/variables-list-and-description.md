@@ -207,8 +207,7 @@ This is the number of issues in your Project or repository that are covered by t
 {
     "data": {
         "attributes": {
-            "branch_name": "fix/{{ issue_count }}-issues"
-            
+            "description": "The PR will fix {{ issue_count }} issues."
         },
         "type": "pull_request_template"
     }
@@ -217,10 +216,10 @@ This is the number of issues in your Project or repository that are covered by t
 
 ### Output
 
-The branch name of your PR will be:&#x20;
+The description of your PR will be:&#x20;
 
 ```yaml
-fix/98-issues-4e25b18624124a1b6f4dd00e3caa4f6c
+The PR will fix 98 issues.
 ```
 
 ## <mark style="color:purple;">`is_fix_pr: boolean`</mark>
@@ -483,15 +482,16 @@ This is the number of issues in your Project or repository that are covered by t
 ### Input
 
 ```yaml
-branchName: fix/{{ issue_count }}-issues
+description: |
+   The PR will fix {{ issue_count }} issues.
 ```
 
 ### Output
 
-The branch name of your PR will be:&#x20;
+The description of your PR will be:&#x20;
 
 ```yaml
-fix/98-issues-4e25b18624124a1b6f4dd00e3caa4f6c
+The PR will fix 98 issues.
 
 ```
 

@@ -12,7 +12,6 @@ The following template example shows how to use the variables with a PR template
         "attributes": {
             "title": "[{{ snyk_pull_request_type }}] for {{ package_name }}",
             "commit_message": "{{ snyk_pull_request_type}}: for {{ package_name }}",
-            "branch_name": "fix/{{ issue_count }}-issues",
             "description": "Moving package {{ package_name }} from {{ package_from }} to {{ package_to }}\nFixes {{ issue_count }} issues\nFor more details see {{ snyk_project_url }}\nProject {{ snyk_project_name }}\nOrg {{ snyk_org_name }}"
         },
         "type": "pull_request_template"
@@ -24,7 +23,6 @@ The following template example shows how to use the variables with a PR template
 
 ```yaml
 title: This PR fixes {{ issue_count }} issues
-branchName: fix/{{ issue_count }}-issues
 commitMessage: "fix: {{ issue_count }} Snyk issues"
 description: |
   {{ #is_upgrade_pr }}

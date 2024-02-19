@@ -22,7 +22,6 @@ The following properties are customizable:
 
 * `title` - customize the PR title
 * `commit_message` - customize the PR commit message
-* `branch_name`- customize the PR branch name
 * `description` - customize the PR description&#x20;
 
 {% hint style="info" %}
@@ -63,7 +62,6 @@ The following properties are customizable:
 
 * `title` - customize the PR title
 * `commitMessage` - customize the PR commit message
-* `branch`- customize the PR branch name
 * `description` - customize the PR description&#x20;
 
 {% hint style="info" %}

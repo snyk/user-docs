@@ -11,7 +11,7 @@ Contact your account manager to get access to this feature. After your account m
 
 When you fix or upgrade Snyk Open Source and Container Projects imported using the [SCM integrations](../../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/), Snyk raises pull requests (PRs) against your repository.&#x20;
 
-Snyk has default templates for the title, description, commit message, and branch name. These indicate what packages are being changed, which issues are being fixed, and many other details.
+Snyk has default templates for the title, description and commit message. These indicate what packages are being changed, which issues are being fixed, and many other details.
 
 You may have your own standards and practices for submitting pull requests. For instance, if a pull request comes from Snyk, you may require the title to begin with `SNYK:`. This page identifies the areas of pull requests that you can customize and provides instructions on how to do so.
 
