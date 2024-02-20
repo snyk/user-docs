@@ -26,10 +26,4 @@ Before running Snyk Code tests with the CLI, you may want to do the following:
 * [Set the Organization for the CLI tests](set-the-snyk-organization-for-the-cli-tests.md).
 * [Exclude directories and files from the Snyk Code test](exclude-directories-and-files-from-snyk-code-cli-tests.md).
 
-After running a Snyk Code test, you can do the following:
-
-* [Explore the Snyk Code CLI results](broken-reference).
-* [Filter the CLI results, and display only issues with a specific severity level and higher](broken-reference).
-* [Output the CLI results to a JSON or SARIF format in the terminal](broken-reference).
-* [Export the CLI results to a JSON or SARIF format file](broken-reference).
-* [Display the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html.md).
+For information about using the snyk code test command and the results, see the pages in this section of the documentation and [snyk-to-html](../cli-tools/snyk-to-html.md).
