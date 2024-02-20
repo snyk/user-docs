@@ -13,7 +13,7 @@ To set up an AWS integration, you need the following:
 
 * A Snyk Enterprise [plan](https://snyk.io/plans/)
 * A new Snyk Organization, with appropriate feature flags assigned by your Snyk contact
-* A Snyk Group Administrator or Organization Administrator [role](../../../snyk-admin/user-roles/)
+* A Snyk Group Administrator or Organization Administrator [role](../../../snyk-admin/introduction-to-snyk-administration.md#user-types)
 * Access to an [AWS](https://aws.amazon.com/) account and associated credentials with permissions to create a read-only IAM role
 * Access to the [Terraform CLI](https://www.terraform.io/downloads), [AWS CLI](https://aws.amazon.com/cli/), or [AWS Management Console](https://console.aws.amazon.com) to create the IAM role for Snyk via Terraform or AWS CloudFormation
 * If you are using Terraform or the AWS CLI, ensure you configure it with your AWS credentials. See the instructions for [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration) or the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
