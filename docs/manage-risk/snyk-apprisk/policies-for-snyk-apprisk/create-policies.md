@@ -38,7 +38,7 @@ Each filter component requires you to specify an asset property. Available prope
 * **Attribute** - asset attributes retrieved from the data source.
 * **Class** - specify the class of the asset.
 * **Coverage** - specify the product or products used to scan the asset. The Coverage filter identifies if at least one scan has been run by the specified product.
-* **Coverage gap** - specify the products for which the asset has not been scanned and do not meet the Set Coverage Control Policy requirements.
+* **Coverage gap** - specify the products for which the asset has not been scanned and do not meet the Set Coverage Control Policy requirements. The coverage gap applies only if you previously defined the coverage requirements of an asset and the asset has never been scanned, or the last scan is older than the default scanning frequency.
 * **Developers** - specify the developer or developers who contributed to the asset.
 * **Discovered** - specify the period when the asset was discovered.
 * **Locked attributes** - specify if the attribute value is locked.
