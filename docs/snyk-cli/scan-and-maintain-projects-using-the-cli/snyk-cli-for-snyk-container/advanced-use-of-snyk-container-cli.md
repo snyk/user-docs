@@ -63,7 +63,7 @@ Frequently used CLI options include:
 * `--nested-jars-depth`
 * `--fail-on` - only available with `container test`
 
-For more details and CLI options, see the [Snyk CLI containe](../../commands/container.md)r help or display the help by running:
+For more details and CLI options, see the [Snyk CLI container](../../commands/container.md) help or display the help by running:
 
 ```
 snyk container --help
