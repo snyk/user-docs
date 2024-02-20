@@ -29,7 +29,6 @@ Not all features follow all these stages, and timelines for each feature to move
 
 ### Snyk features in Early Access
 
-* [Insights](broken-reference)
 * [Snyk GitHub Cloud App](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
 * [Use Custom Base Image Recommendations](../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/)
 * [REST API endpoints: Test an SBOM document for vulnerabilities](../snyk-api/rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md)
