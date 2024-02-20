@@ -121,6 +121,19 @@ To reduce the overall result size, use a `.snyk` file to ignore specified direct
 **Help Links:**
 - [https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli](https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli)
 
+### [SNYK-CODE-0004](#snyk-code-0004)
+
+#### Analysis target includes a file with a name longer than 255 bytes
+
+This error occurs when the analysis target has a file name length that exceeds 255 bytes.
+
+To be able to scan the analysis target, rename the file to a name that is 255 bytes or less.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-with-snyk/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks#filename-length-limitation](https://docs.snyk.io/scan-with-snyk/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks#filename-length-limitation)
+
 ---
 # OpenAPI
 ### [SNYK-OPENAPI-0001](#snyk-openapi-0001)
@@ -1621,4 +1634,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-02-06T13:46:27.201Z
+--- Generated at 2024-02-20T13:03:05.123Z
