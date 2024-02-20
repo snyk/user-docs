@@ -13,9 +13,9 @@ Snyk Code support for Go is limited.
 ### Open source and licensing
 
 {% hint style="warning" %}
-From January 1 2023 Snyk no longer supports govendor Projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.
+Beginning on January 1 2023 Snyk no longer supports govendor Projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.
 
-After Snyk no longer supports scanning of govendor Projects, a warning will be issued and no results will be received.
+Now that Snyk no longer supports scanning of govendor Projects, a warning is issued and no results are provided.
 {% endhint %}
 
 Snyk supports testing and monitoring of Go Projects with dependencies managed by [Go Modules](https://golang.org/ref/mod) and [dep](https://github.com/golang/dep).
@@ -29,7 +29,7 @@ To manage licenses from your developer workflows through policy, see the followi
 
 #### Open source license compliance
 
-To check compliance for open source licenses, see [Getting Started with Snyk License Compliance Management](https://docs.snyk.io/scan-application-code/snyk-open-source/licenses/getting-started-snyk-licensing-compliance).
+To check compliance for open source licenses, see [Snyk License Compliance Management](../snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md).
 
 #### Open source supported features
 
@@ -57,7 +57,7 @@ The way Snyk analyzes and builds the dependencies tree varies depending on the l
 
 1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
 2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
-3. [Set the default Organization for all Snyk tests](broken-reference) (code analysis).
+3. [Set the Snyk Organization for CLI tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md).
 4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
 5. Ensure you have included the relevant manifest files supported by Snyk before testing.
 
@@ -73,8 +73,7 @@ To customize test options, run other commands, exclude directories and files, an
 
 * [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
 * [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](broken-reference)
-* [Exporting the test results to a JSON or SARIF file](broken-reference)
+* [`snyk-to-html`](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md)
 
 #### Open source and licensing
 
@@ -127,7 +126,7 @@ If full source code analysis is enabled, Snyk uses the `go list -json -deps ./..
 #### Enable full source code analysis
 
 {% hint style="info" %}
-Full source code analysis for Go Modules is currently in [Beta](../../getting-started/snyk-release-process.md#open-beta).
+Full source code analysis for Go Modules is currently in [Open beta](../../getting-started/snyk-release-process.md#open-beta).
 {% endhint %}
 
 To build the most accurate dependency tree for Go Modules Projects imported from Git, Snyk needs to access all the files in your repository.
@@ -160,7 +159,7 @@ Private module support in different SCMs varies depending on whether [full sourc
 #### **Snyk Broker**
 
 {% hint style="warning" %}
-Snyk Broker is currently only supported when [full source code analysis](go.md#enable-full-source-code-analysis) is disabled
+Snyk Broker is currently supported only  when [full source code analysis](go.md#enable-full-source-code-analysis) is disabled
 {% endhint %}
 
 Go Modules Projects imported using new [Snyk Broker](../../enterprise-configuration/snyk-broker/) clients should work as expected.
