@@ -7,7 +7,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 {% hint style="info" %}
 **Supported Projects**\
-The Nexus Repository Manager integration currently supports [Node.js](../../../scan-with-snyk/supported-languages-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](broken-reference) projects. Gradle projects are not currently supported.
+The Nexus Repository Manager integration currently supports [Node.js](../../../scan-with-snyk/supported-languages-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](broken-reference) Projects. Gradle Projects are not currently supported.
 {% endhint %}
 
 Connecting Nexus Repository Manager enables Snyk to resolve all direct and transitive dependencies of packages hosted on the Nexus registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
@@ -28,7 +28,7 @@ These instructions apply to configuring publicly accessible instances. For instr
 
 ## Set up publicly accessible instances
 
-1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> > **Integrations > Package Repositories > Nexus**
+1. Navigate to **Settings** > **Integrations > Package Repositories > Nexus**
 2. Verify that you see the screen to configure Nexus.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
@@ -53,7 +53,7 @@ On the page to configure Nexus, enter the information for the version you are us
 
 ## Nexus behind reverse proxy
 
-If your Nexus server is running behind a reverse proxy, for example, Nginx, the URL might not end with the default `/repository` for Nexus 3 or `/nexus/content` for Nexus 2, depending on what routes have been configured in the reverse proxy. If this is the case, make sure to use the URL configured in the reverse proxy.
+If your Nexus server is running behind a reverse proxy, for example, Nginx, the URL might not end with the default `/repository` for Nexus 3 or `/nexus/content` for Nexus 2, depending on what routes have been configured in the reverse proxy. If this is the case, ensure you use the URL configured in the reverse proxy.
 
 Example: for Nexus 3: if `http://nexus.company.io/repository` is mapped to `http://nexus.company.io/my-company/my-repository`, use `http://nexus.company.io/my-company/my-repository`.
 
