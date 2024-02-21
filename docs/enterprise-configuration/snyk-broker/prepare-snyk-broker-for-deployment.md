@@ -37,7 +37,7 @@ Consider the following to understand what the required components are for your d
 
 * What service are you connecting Broker to?
   * GitHub, Jira, Bitbucket, Harbor, other service
-  * See [Snyk Broker - Client integration setups](broken-reference).
+  * See [Install and configure Snyk Broker](install-and-configure-snyk-broker/).
 * Are you planning to detect Infrastructure as Code files?
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection/).
@@ -80,4 +80,4 @@ You can use the same Git service across multiple Organizations in Snyk with the 
 
 To do this retroactively for existing Organizations, you can use the API v1 endpoint [Clone an integration (with settings and credentials)](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning) to clone a specific integration, including the Broker token.
 
-Unless you do this, you must generate a new Broker token for the Organization, as each integration and Organization have their own unique Broker token.
+Unless you do this, you must generate a new Broker token for the Organization, as each integration and Organization has its own unique Broker token.

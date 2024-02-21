@@ -1,12 +1,12 @@
 # Step 5.2a – Running the Broker Client without the code snippet display
 
 {% hint style="info" %}
-**Important!** The setup commands for running the Broker Client described in this section include the common commands used for all SCMs. However, some SCMs require additional parameters for the Broker Client setup.
+The setup commands for running the Broker Client described in this section include the common commands used for all SCMs. However, some SCMs require additional parameters for the Broker Client setup.
 
-When such additional parameters are required, they are indicated in this section, but when setting up a Broker Client for a specific SCM, use also the section that is specific to that SCM. For more information see [Snyk Broker integration setups](broken-reference).
+When such additional parameters are required, they are indicated in this section, but when setting up a Broker Client for a specific SCM, use also the section that is specific to that SCM. For more information see [Install and configure Snyk Broker](../../../install-and-configure-snyk-broker/).
 {% endhint %}
 
-Once the Broker Client image is stored on your machine, use the docker run command in order to run the image and launch a Broker Client container that is based on it.
+After the Broker Client image is stored on your machine, use the docker run command in order to run the image and launch a Broker Client container that is based on it.
 
 The following explains how to set up the Broker Client in a way that does NOT display the code snippets of the Snyk Code results on the Web UI:
 

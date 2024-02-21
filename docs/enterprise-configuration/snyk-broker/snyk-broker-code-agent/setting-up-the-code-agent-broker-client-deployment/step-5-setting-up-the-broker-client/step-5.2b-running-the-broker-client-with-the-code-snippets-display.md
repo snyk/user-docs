@@ -1,9 +1,9 @@
 # Step 5.2b – Running the Broker Client with the code snippets display
 
 {% hint style="info" %}
-**Important!** The setup commands for running the Broker Client described in this section include the common commands used for all SCMs. However, some SCMs require additional parameters for the Broker Client setup.
+The setup commands for running the Broker Client described in this section include the common commands used for all SCMs. However, some SCMs require additional parameters for the Broker Client setup.
 
-When such additional parameters are required, they are indicated in this section, but when you are setting up a Broker Client for a specific SCM, use also the section that is specific to that SCM. For more information, see [Snyk Broker integration setups](broken-reference).
+When such additional parameters are required, they are indicated in this section, but when you are setting up a Broker Client for a specific SCM, use also the section that is specific to that SCM. For more information, see [Install and configure Snyk Broker](../../../install-and-configure-snyk-broker/).
 {% endhint %}
 
 The following explains how to set up the Broker Client in a way that displays code snippets of the Snyk Code results on the Web UI:
@@ -24,7 +24,7 @@ Add these parameters to the setup commands to mount the `accept.json` file to th
 
 ## **Downloading the accept.json file**
 
-To display the code snippets of the Snyk Code results on the Web UI, first download a pre-defined accept.json file. When downloading the accept.json file, select the file that is customized for your integrated SCM and save it on an accessible location.
+To display the code snippets of the Snyk Code results on the Web UI, first download a pre-defined accept.json file. When downloading the accept.json file, select the file that is customized for your integrated SCM and save it in an accessible location.
 
 1\. Download the `accept.json` file for your integrated SCM:
 
@@ -36,7 +36,7 @@ On each Integration Setup page, locate the pre-defined `accept.json` file for th
 * [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-install-and-configure-broker/data-center.md)
 * [Azure Repos](../../../install-and-configure-snyk-broker/azure-repos-install-and-configure-broker/setup-broker-with-azure-repos.md)
 
-2\. Verify that the downloaded file is called **`accept.json`**. If during the download process the file name has changed, rename the file to its original name.
+2\. Verify that the downloaded file is called **`accept.json`**. If during the download process, the file name has changed, rename the file to its original name.
 
 3\. Save the file in a secure and separate folder such as `./private/accept.json`.
 

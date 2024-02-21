@@ -11,7 +11,7 @@ For **all other environments**, you can install Snyk Broker using the [Docker im
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
-For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
+For the URLs, see [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md).
 
 * [GitHub](github-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md)
 * [GitHub Enterprise](github-enterprise-install-and-configure-broker/setup-broker-with-github-enterprise.md)
@@ -41,7 +41,6 @@ When you install using Docker, follow these instructions to configure Broker as 
 * [Backend requests with an internal certificate for Docker](advanced-configuration-for-snyk-broker-docker-installation/backend-requests-with-an-internal-certificate-for-docker.md)
 * [Proxy support with Docker](advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md)
 * [Disable certificate verification with Docker](advanced-configuration-for-snyk-broker-docker-installation/disable-certificate-verification-with-docker.md)
-* [Adding custom allowlist for Docker installation](broken-reference)
 * [Custom approved-listing filter with Docker](advanced-configuration-for-snyk-broker-docker-installation/custom-approved-listing-filter-with-docker.md)
 * [Mounting secrets with Docker](advanced-configuration-for-snyk-broker-docker-installation/mounting-secrets-with-docker.md)
 * [Snyk Code - Clone capability with Broker for Docker](advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
@@ -62,9 +61,9 @@ There is a 14-day SLA for fixing high vulnerabilities and a five-day SLA for fix
 
 ## Additional information for developers
 
-If you need to upgrade, see [Upgrade the Snyk Broker Client](https://docs.snyk.io/snyk-admin/snyk-broker/upgrade-the-snyk-broker-client).
+If you need to upgrade, see [Upgrade the Snyk Broker Client](../upgrade-the-snyk-broker-client.md).
 
-Troubleshooting information is provided on the [Troubleshooting Broker](https://docs.snyk.io/snyk-admin/snyk-broker/troubleshooting-broker) page.
+Troubleshooting information is provided on the [Troubleshooting Broker](../troubleshooting-broker.md) page.
 
 You can view the [license, Apache License, Version 2.0](https://github.com/snyk/broker/blob/master/LICENSE).
 
