@@ -14,7 +14,7 @@ Snyk Code only scans and tests new repositories that are imported to Snyk. If a 
 
 Before scanning your code with Snyk Code, ensure the following:
 
-* You have completed [Quickstart](../../getting-started/quickstart/).
+* You have completed the [Quickstart](../../getting-started/quickstart/).
 * Your repositories contain code in a [supported language and platform](../supported-languages-and-frameworks/).&#x20;
 
 ## Enable Snyk Code in Snyk Web UI
@@ -38,10 +38,10 @@ The next step is to [integrate your Git repositories with Snyk](configure-snyk-c
 
 ## Integrate Git repository with Snyk
 
-After you have activated Snyk Code and imported repositories to Snyk for testing, you can view and work with the Snyk Code test results, which include vulnerabilities and fixes. See [Exploring and working with the Snyk Code results](manage-code-vulnerabilities/).
+After you have activated Snyk Code and imported repositories to Snyk for testing, you can view and work with the Snyk Code test results, which include vulnerabilities and fixes. See [Manage code vulnerabiiites.](manage-code-vulnerabilities/)
 
 {% hint style="info" %}
-If your SCM is already integrated with your Snyk Account, and you do not want to add additional SCMs, you can skip this step and move to [Importing repositories for Snyk Code testing](broken-reference).
+If your SCM is already integrated with your Snyk Account, and you do not want to add additional SCMs, you can skip this step and move to [Import repository to Snyk](import-repository-to-snyk/).
 
 \
 If you are using Snyk Code with the API, but not the CLI, this step is mandatory.
@@ -62,7 +62,7 @@ To integrate your SCM with your Snyk account:
 1\. In the Snyk Web UI, navigate to **Settings** > **Integrations** > **Source control**.
 
 {% hint style="info" %}
-If you already have an integrated SCM, it is marked as **Configured**. If you want to use the configured SCM, continue with[ Importing repositories to Snyk for the Snyk Code testing](broken-reference).
+If you already have an integrated SCM, it is marked as **Configured**. If you want to use the configured SCM, continue with [Import repository to Snyk](import-repository-to-snyk/).
 {% endhint %}
 
 2\. From the available options, select the SCM system you want to integrate by clicking **Edit settings**.
