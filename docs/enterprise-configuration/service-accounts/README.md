@@ -1,12 +1,10 @@
 # Service accounts
 
-{% hint style="warning" %}
-**Release status**\
-SSO is available only for Enterprise plans.
+{% hint style="info" %}
+**Feature availability**\
+Service accounts are available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 
-Free and Team plan users and Trial users have access to a Snyk user's token under their profile and can use this token to authenticate with a CI/CD, to run the CLI locally or on a build machine, and to authenticate with an IDE manually.
-
-See [Pricing plans](https://snyk.io/plans).
+**Note:** Free and Team plan users and Trial users have access to a Snyk user's token under their profile and can use this token to authenticate with a CI/CD, to run the CLI locally or on a build machine, and to authenticate with an IDE manually.
 {% endhint %}
 
 Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials. Snyk needs authentication in order to initiate Snyk processes.
@@ -19,23 +17,23 @@ You can generate single or multiple tokens on the Organization or Group levels t
 
 If you are an Enterprise user, you have a Snyk user's token under your profile. You also have access to service account tokens.
 
-### Use a service account to create any kind of automation.
+### Use a service account to create any kind of automation
 
 This includes, but is not limited to, scanning using a CI/CD or build system plugin and automation with the [Snyk API](manage-service-accounts-using-the-snyk-api.md).
 
-### You can use a service account for GitHub Enterprise integration.
+### Use a service account for GitHub Enterprise integration
 
 If your team needs to set up a service account in GitHub, you must use [GitHub Enterprise](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md), which is available only with Snyk Enterprise accounts.
 
 Using a service account to authenticate with an integration rather than a Snyk user's token ensures continuity when users change roles or close their personal Snyk accounts.
 
-### Use Group-level tokens in managing integrations.
+### Use Group-level tokens in managing integrations
 
 Use Group-level tokens to call Group API endpoints and Organization API endpoints, and to run the CLI for all Organizations in the Group.
 
 Group roles are only for service accounts on the Group level and are limited to Enterprise accounts.
 
-### Use your Snyk user's token for local scanning and testing API calls.
+### Use your Snyk user's token for local scanning and testing API calls
 
 If you are an Enterprise user, use your Snyk user's token to run the CLI locally on your machine, authenticate with an IDE manually, and make an occasional API call, for example, to test the use of an endpoint.
 
@@ -49,7 +47,7 @@ Generate single or multiple tokens on the Group or Organization levels to manage
 
 ### Prerequisites to set up a service account
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Group viewers are not able to create service accounts, regardless of their Org role.
 {% endhint %}
 
@@ -64,11 +62,11 @@ This process describes all options. Repeat the steps to create multiple tokens f
 * Click **Create a service account** to create a new one.\
   The screen that loads varies depending on whether you chose a **Group** or an **Organization.**
 
-Note that while creating a **Group service account**, you can choose a Group level role.
+Note that while creating a **Group service account**, you can choose a Group-level role.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
-In contrast, while creating an **Organization service account,** you can choose Org level roles, including custom [member roles](../../snyk-admin/user-roles/user-role-management.md) that you have set up for your Organizations.
+In contrast, while creating an **Organization service account,** you can choose Organization-level roles, including [custom roles](../../snyk-admin/user-roles/user-role-management.md#create-a-custom-role) that you have set up for your Organizations.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-06 at 12.06.35.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 
@@ -90,7 +88,7 @@ For Group service accounts, choose from the following list of roles to configure
 * **Group Admin** enables full administrator access.
 * **Group Member** associates a service account with a group but does not grant any specific access.
 
-For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Managing permissions](broken-reference) for the scope of the Org Admin and Org Collaborator roles.
+For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Pre-defined](../../snyk-admin/user-roles/pre-defined-roles.md) roles for the scope of the Org Admin and Org Collaborator roles.
 
 ### Create the service account
 
@@ -98,7 +96,7 @@ Click **Create**.
 
 The token is generated and displayed.
 
-Make sure you copy this token, as you will not see it again. You can click **Close and Hide** once you have copied the token; whether you do or not, when you navigate away from this page, the token will no longer be visible. This is a standard security practice to keep your tokens safe.
+Ensure that you copy this token, as you will not see it again. You can click **Close and Hide** once you have copied the token; whether you do or not, when you navigate away from this page, the token will no longer be visible. This is a standard security practice to keep your tokens safe.
 
 #### How the token is associated with a Group and Organizations
 

@@ -5,7 +5,7 @@
 
 Managing user roles is available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 Snyks **Manage roles** functionality enables you to manage pre-defined and custom roles, allowing you to create and enforce set permissions to roles that reflect the users and functions in your Organization.
