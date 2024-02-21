@@ -16,21 +16,22 @@ Snyk has a hierarchy that controls access to scanning and other Snyk features.
 * **Targets**. Each Target represents a repository imported into Snyk for scanning and re-testing.
 * [**Projects**](snyk-projects/)**:** A Project is established based on the items that Snyk scans for issues, such as manifest files, and shows the results of scans. You can configure your Projects to define how to scan for issues in that Project. See the [Quickstart](../getting-started/quickstart/) for the basic steps.
 
-Snyk administrators set up Groups and Organizations. See [Manage Groups and Organizations](manage-groups-and-organizations/) for details. Targets and [Projects](snyk-projects/) are created when Snyk users import development Projects into Snyk for scanning.
+Snyk Admins set up Groups and Organizations. See [Manage Groups and Organizations](manage-groups-and-organizations/) for details. Targets and [Projects](snyk-projects/) are created when Snyk users import development Projects into Snyk for scanning.
 
 ## User types
 
-Snyk has the following types of users, defined by their roles:
+Snyk has the following types of pre-defined users:
 
-* Collaborator
-* Organization administrator
-* Group member
-* Group administrator
+* Organization Admin
+* Organization Collaborator
+* Group Admin
+* Group Viewer
+* Group Member
 
 See [Pre-defined roles](user-roles/pre-defined-roles.md) for more details, including the permissions associated with each role.
 
 {% hint style="warning" %}
-**Release status**
+**Feature availability**
 
 Group-level roles are available only for Enterprise plans.
 
@@ -43,7 +44,7 @@ Snyk provides tools to manage Groups, Organizations, and user roles and permissi
 
 ### Manage users and permissions
 
-You can manage users and permissions in your groups. For details, see [Manage users and permissions](manage-users-in-organizations-and-groups/).
+You can manage users and permissions in your Groups. For details, see [Manage users and permissions](manage-users-in-organizations-and-groups/).
 
 <figure><img src="../.gitbook/assets/image (245) (1) (1) (1).png" alt="Manage members interface"><figcaption><p>Manage members interface</p></figcaption></figure>
 

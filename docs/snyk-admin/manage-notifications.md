@@ -41,7 +41,7 @@ An example follows of a Snyk notification for new issues and remediations in Pro
 Snyk provides controls to manage your own notifications. Administrators can manage the notification defaults for others in the [Group](manage-notifications.md#define-group-notification-defaults) or [Organization](manage-notifications.md#define-organization-notification-defaults).
 
 {% hint style="info" %}
-Weekly notification emails are sent only to Org members, so Group Admins must add themselves as an Org member for Organizations where they need to receive the emails.
+Weekly notification emails are sent only to Organization users, so Group Admins must add themselves as an Organiztion member for Organizations where they need to receive the emails.
 {% endhint %}
 
 You can also send notifications for an Organization to a designated Slack channel. For details, see  [Slack integration](../integrate-with-snyk/notification-and-ticketing-systems-integrations/slack-integration.md).
@@ -68,8 +68,8 @@ Issue alert emails are notifications Snyk sends the same day as it finds a new v
 
 To set the defaults for issue alert emails:
 
-1. Check the **Vulnerabilities** box when members of new Organizations in this Group should receive alert emails by default for new issues or remediations for all Projects in a new Organization.
-2. Check the **License Violations** box when members of new Organizations in this Group should receive alert emails for new license issues or remediations for all Projects in a new Organization.
+1. Check the **Vulnerabilities** box when users of new Organizations in this Group should receive alert emails by default for new issues or remediations for all Projects in a new Organization.
+2. Check the **License Violations** box when users of new Organizations in this Group should receive alert emails for new license issues or remediations for all Projects in a new Organization.
 3. If either the **Vulnerabilities** or **License Violations** boxes are checked, indicate the severity of issues for which Snyk should send alert emails by selecting **All severities** or **Critical and high severity** from the drop-down list.
 4. To change the default for individual organizations, change the **Vulnerabilities**, **License Violations,** and **Severity** settings next to the Organization name. These settings apply for any individual user who has not updated personal notifications when you create new Organizations in this Group.
 
@@ -81,7 +81,7 @@ Weekly report emails are notifications Snyk sends to provide a summary of the vu
 
 To set the defaults for weekly report emails:
 
-* Check the **Enabled by default** box when members of new Organizations in this Group should receive a weekly summary email.
+* Check the **Enabled by default** box when users of new Organizations in this Group should receive a weekly summary email.
 * To change the defaults for individual Organizations, clear or check the box next to the Organization name. The defaults will apply for new Organizations created in this Group.
 
 #### Group defaults for usage alerts
@@ -92,7 +92,7 @@ Usage alert emails are notifications Snyk sends to warn you when you are approac
 
 To set the defaults for usage alerts:
 
-* Check the Enabled by default box when members of new Organizations in this Group should receive usage alert emails.
+* Check the Enabled by default box when users of new Organizations in this Group should receive usage alert emails.
 * To change the defaults for individual Organizations, clear or check the box next to the Organization name. The defaults will apply for new Organizations created in this Group.
 
 ### Define Organization notification defaults

@@ -7,7 +7,7 @@ This feature is available with Enterprise Plans. See [Plans and pricing](https:/
 
 Snyk Groups make it easier for you to work in teams. Groups can contain many Organizations, and each Organization can contain many collaborators and Projects.
 
-You can use Group options to view the Organizations to which you have access and request joining Organizations, to view reports across all of the Organizations in your Group, tp configure your Group settings, and to view all of the members in a Group.
+You can use Group options to view the Organizations to which you have access and request joining Organizations, to view reports across all of the Organizations in your Group, tp configure your Group settings, and to view all of the users in a Group.
 
 See [Use Group-level options](use-group-level-options.md) for details.
 

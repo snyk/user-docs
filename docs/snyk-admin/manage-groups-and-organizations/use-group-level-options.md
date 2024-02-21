@@ -1,6 +1,6 @@
 # Use Group-level options
 
-You can use Group-level options to view [Organizations](use-group-level-options.md#group-organizations), [reports](use-group-level-options.md#group-reports), [dependencies](use-group-level-options.md#group-dependencies), and [policies](use-group-level-options.md#group-policies) across all of the Organizations in your Group, configure your [Group settings](use-group-level-options.md#group-settings), and view all the [members](use-group-level-options.md#group-members) in a Group.
+You can use Group-level options to view [Organizations](use-group-level-options.md#group-organizations), [reports](use-group-level-options.md#group-reports), [dependencies](use-group-level-options.md#group-dependencies), and [policies](use-group-level-options.md#group-policies) across all of the Organizations in your Group, configure your [Group settings](use-group-level-options.md#group-settings), and view all the [users](use-group-level-options.md#group-members) in a Group.
 
 <div align="left">
 
@@ -16,7 +16,7 @@ Select **Organizations** to view all the Organizations you have access to and yo
 
 See [Determine Member Roles](../../implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/determine-member-roles.md) for more details about Organization roles.
 
-If your Group is set up to let its members join Organizations, you also see a list of all the Organizations in the Group and options to join the Organizations where you are not currently a member.
+If your Group is set up to let its users join Organizations, you also see a list of all the Organizations in the Group and options to join the Organizations where you are not currently a member.
 
 <figure><img src="../../.gitbook/assets/screencapture-app-dev-snyk-io-group-3514be75-5fda-4da9-a923-58ff04877b8b-organizations-2024-02-07-14_52_45.png" alt="All the Organizations of the Group and their access status"><figcaption><p>All the Organizations of the Group and their access status</p></figcaption></figure>
 
@@ -60,9 +60,9 @@ See [Policies](../../scan-with-snyk/policies/) for details.
 
 ## Group members
 
-Select **Members** to view members (users) in the Group.
+Select **Members** to view users in the Group.
 
-Group members are users who have access to all Organizations in the Group. Members of the Organizations are managed in the Settings of each Organization.
+Group members are users who have access to all Organizations in the Group. Users of the Organizations are managed in the Settings of each Organization.
 
 See [Manage users in a Group](../manage-users-in-organizations-and-groups/manage-users-in-a-group.md) for details.
 
