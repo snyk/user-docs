@@ -28,5 +28,5 @@ For more articles on using the Snyk API, see the following:
 
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
 * [Audit logs](../../snyk-api/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
-* [Bazel](../../scan-with-snyk/supported-languages-and-frameworks/bazel.md)
+* [Bazel](../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/bazel.md)
 * [User management with the Snyk API](../../snyk-api/user-management-with-the-snyk-api/)

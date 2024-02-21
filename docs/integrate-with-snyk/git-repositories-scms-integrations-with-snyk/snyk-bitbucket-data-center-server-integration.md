@@ -73,7 +73,7 @@ Snyk pull requests are automatically assigned to the default reviewer set in you
 
 Unlike manual pull requests opened from the Bitbucket interface, for the Snyk Bitbucket Cloud integration, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
-For more information, see [Automated pull request creation for new fixes](../../scan-with-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/automated-pull-request-creation-for-new-fixes.md).
+For more information, see [Automated pull request creation for new fixes](../../scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/automated-pull-request-creation-for-new-fixes.md).
 {% endhint %}
 
 ### **Pull request tests**

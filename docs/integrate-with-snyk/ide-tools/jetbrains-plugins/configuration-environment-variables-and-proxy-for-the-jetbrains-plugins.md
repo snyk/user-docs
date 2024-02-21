@@ -14,7 +14,7 @@ You can set the following configurations for the plugin, using **Preferences →
     If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 *   **Additional parameters**: set additional `snyk test` [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for Open Source scanning.
 
-    For **unmanaged** [**C/C++**](../../../scan-with-snyk/supported-languages-and-frameworks/c-c++/) **scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. For all .NET Projects, Snyk recommends adding the `--all-projects` additional parameter.\
+    For **unmanaged** [**C/C++**](../../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/c-c++/) **scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. For all .NET Projects, Snyk recommends adding the `--all-projects` additional parameter.\
     Additional parameters do not apply to Snyk Code or IaC.
 * **Snyk Open Source vulnerabilities**: use to analyze the project for open source vulnerabilities through the CLI using Snyk Open Source; enabled by default.
 * **Snyk Infrastructure as Code issues**: use to analyze the project for insecure configurations in Terraform and Kubernetes code; enabled by default.

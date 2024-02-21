@@ -50,15 +50,15 @@ You can then scroll down to the section required, and set the options accordingl
 * Pull requests:
   * [Open Snyk automatic PRs from a fixed GitHub account](snyk-github-integration.md#setting-an-account-to-open-snyk-prs)
   * [Automatic fix PRs](snyk-github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-  * [Automatic dependency upgrade PRs](../../scan-with-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/upgrade-dependencies-with-automatic-prs.md)
+  * [Automatic dependency upgrade PRs](../../scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/upgrade-dependencies-with-automatic-prs.md)
   * [Pull request assignees](snyk-github-integration.md#pr-assignment)
-  * [Snyk vulnerability patches](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
-* Pull request status checks ([PR Checks](../../scan-with-snyk/run-pr-checks/))
-  * [Open Source security and licenses](../../scan-with-snyk/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
-  * [Code analysis](../../scan-with-snyk/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
+  * [Snyk vulnerability patches](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
+* Pull request status checks ([PR Checks](../../scan-using-snyk/run-pr-checks/))
+  * [Open Source security and licenses](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
+  * [Code analysis](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level)
 * Dockerfiles
-  * [Scan you Dockerfile](../../scan-with-snyk/snyk-container/scan-your-dockerfile/)
-  * [Fix vulnerable base images in your Dockerfile](../../scan-with-snyk/snyk-container/scan-your-dockerfile/fix-vulnerable-base-images-in-your-dockerfile.md)
+  * [Scan you Dockerfile](../../scan-using-snyk/snyk-container/scan-your-dockerfile/)
+  * [Fix vulnerable base images in your Dockerfile](../../scan-using-snyk/snyk-container/scan-your-dockerfile/fix-vulnerable-base-images-in-your-dockerfile.md)
 
 ## General Snyk GitHub integration settings
 
@@ -124,7 +124,7 @@ All the commits in Snyk's pull requests are done by `snyk-bot@snyk.io` (a verifi
 
 ### **Pull request status checks**
 
-The Snyk [PR Checks](../../scan-with-snyk/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
+The Snyk [PR Checks](../../scan-using-snyk/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
 
 This example shows how Snyk PR checks appear on the GitHub pull request page.
 

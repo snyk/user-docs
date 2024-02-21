@@ -116,7 +116,7 @@ Can refer to a cloud environment, a [Project attribute](../snyk-admin/snyk-proje
 
 ### Exploit
 
-A demonstration of how a vulnerability can be taken advantage of. When an exploit is widely published, it is commonly referred to as an exploit "in the wild". See [View exploits](../scan-with-snyk/find-and-manage-priority-issues/view-exploits.md).
+A demonstration of how a vulnerability can be taken advantage of. When an exploit is widely published, it is commonly referred to as an exploit "in the wild". See [View exploits](../scan-using-snyk/find-and-manage-priority-issues/view-exploits.md).
 
 ### Exploit Maturity
 
@@ -126,11 +126,11 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md).
+A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-using-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md).
 
 ### Fix PR
 
-A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](../scan-with-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md).
+A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](../scan-using-snyk/snyk-open-source/automatic-and-manual-prs-with-snyk-open-source/automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md).
 
 ## G
 
@@ -166,7 +166,7 @@ Third-party products, applications, and platforms that Snyk works with, for exam
 
 ### Issue
 
-A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Find and manage priority issues](../scan-with-snyk/find-and-manage-priority-issues/).
+A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Find and manage priority issues](../scan-using-snyk/find-and-manage-priority-issues/).
 
 ## L
 
@@ -234,11 +234,11 @@ Pull Request. Allows a user to exchange changes made to source code and collabor
 
 ### PR Checks
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../scan-with-snyk/run-pr-checks/).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../scan-using-snyk/run-pr-checks/).
 
 ### Priority Score
 
-Snyk scores issues, including vulnerabilities and licenses for Open Source, to help prioritize the treatment of each one. Scores are based on multiple factors including the CVSS score and range from 0 (low) to 1000 (high). See [Priority Score](../scan-with-snyk/find-and-manage-priority-issues/priority-score.md).
+Snyk scores issues, including vulnerabilities and licenses for Open Source, to help prioritize the treatment of each one. Scores are based on multiple factors including the CVSS score and range from 0 (low) to 1000 (high). See [Priority Score](../scan-using-snyk/find-and-manage-priority-issues/priority-score.md).
 
 ### Project
 
@@ -248,7 +248,7 @@ An external item scanned by Snyk with configuration to define how to run that sc
 
 ### Reachability
 
-Whether an application contains code that will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../scan-with-snyk/find-and-manage-priority-issues/reachable-vulnerabilities.md).
+Whether an application contains code that will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../scan-using-snyk/find-and-manage-priority-issues/reachable-vulnerabilities.md).
 
 ### Registry
 
@@ -302,7 +302,7 @@ A set of criteria for evaluating open-source vulnerabilities. Security policies 
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../scan-with-snyk/find-and-manage-priority-issues/severity-levels.md).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../scan-using-snyk/find-and-manage-priority-issues/severity-levels.md).
 
 ### Snapshot
 
@@ -310,7 +310,7 @@ An individual report within the test history of a Project. Includes a tree of de
 
 ### `.snyk` policy
 
-A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../scan-with-snyk/policies/the-.snyk-file.md).
+A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../scan-using-snyk/the-.snyk-file.md).
 
 ### Snyk
 
@@ -338,19 +338,19 @@ A Snyk platform tool that enables developers to find and fix known vulnerabiliti
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../scan-with-snyk/snyk-code/).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../scan-using-snyk/snyk-code/).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container](../scan-with-snyk/snyk-container/).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container](../scan-using-snyk/snyk-container/).
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-with-snyk/scan-infrastructure/scan-your-iac-source-code/).
+A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/).
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open-source vulnerabilities. See [Snyk Open Source](../scan-with-snyk/snyk-open-source/).
+A Snyk product. Enables developers to find and fix open-source vulnerabilities. See [Snyk Open Source](../scan-using-snyk/snyk-open-source/).
 
 ### Snyk plugin
 
@@ -367,7 +367,7 @@ The browser-based environment providing users access to Snyk functions. See [Exp
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed on Twitter. See  [Vulnerabilities with Social Trends](../scan-with-snyk/find-and-manage-priority-issues/vulnerabilities-with-social-trends.md).
+Snyk shows a Trending banner on issues that are being actively discussed on Twitter. See  [Vulnerabilities with Social Trends](../scan-using-snyk/find-and-manage-priority-issues/vulnerabilities-with-social-trends.md).
 
 ### Source
 
@@ -401,7 +401,7 @@ A fix type: a problem can be fixed by upgrading a version of a package or by app
 
 ### Vulnerability
 
-A security vulnerability identified by Snyk. See [Manage vulnerabilities](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/).
+A security vulnerability identified by Snyk. See [Manage vulnerabilities](../scan-using-snyk/snyk-open-source/manage-vulnerabilities/).
 
 ## W
 

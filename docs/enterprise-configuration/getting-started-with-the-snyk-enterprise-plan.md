@@ -11,7 +11,7 @@ Snyk has a number of tools and processes that help secure your entire software d
 For users who are evaluating Snyk or planning an enterprise deployment, and for most programming languages, Snyk recommends integrating with a Git repository to get started.
 
 {% hint style="info" %}
-The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. See the [guide](../scan-with-snyk/supported-languages-and-frameworks/) specific to your language for more details.
+The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. See the [guide](../scan-using-snyk/supported-languages-and-frameworks.md) specific to your language for more details.
 {% endhint %}
 
 To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see [Integrating Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/).
