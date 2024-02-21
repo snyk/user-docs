@@ -4,7 +4,7 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 
 {% hint style="info" %}
 * In Snyk Code, the`.snyk` file can only be used to exclude directories and files from import. It cannot be used to ignore vulnerabilities or for any other action, as in other Snyk products.
-* Currently, the `Exclude` option in the`.snyk` file applies only to the Snyk Web UI and CLI Environments. The `Exclude` option cannot be used when working with Snyk Code in an IDE environment.
+* Currently, the `exclude` option in the`.snyk` file applies only to the Snyk Web UI and CLI Environments. The `exclude` option cannot be used when working with Snyk Code in an IDE environment.
 * In certain situations, your excluded files may not be excluded if there is an invalid`.snyk` file. In these situations, the scan continues without the`.snyk` file.
 {% endhint %}
 
@@ -21,21 +21,21 @@ You can also use the instructions in this section to exclude directories and fil
 Use the following syntax to exclude files and directories by using the `.snyk` file:
 
 <pre class="language-yaml"><code class="lang-yaml"># Snyk (https://snyk.io) policy file
-
+---
 exclude:
     global:
 <strong>        # Exclude a single file. For example, - test.spec.js
-</strong>            - file_name.ext
+</strong>        - file_name.ext
 <strong>        # Exclude a single directory. For example, - src/lib
-</strong>            - source/directory_name
+</strong>        - source/directory_name
         # Exclude any file with a specific extension in the specific directory. For example, - tests/.js
-<strong>            - directory_name/.ext
+<strong>        - directory_name/.ext
 </strong>        # Exclude files with a specific ending in any directory. For example, - “*.spec.js”
-            - "*.ending.ext"
+        - "*.ending.ext"
         # Exclude files in directories that have the same name with a different ending, like “test” and “tests”. The last character before the question mark is optional. For example, - tests?/
-            - directory_name?/
+        - directory_name?/
         # Exclude all files and directories in a specific directory. For example, - tests/
-<strong>            - directory_name/**
+<strong>        - directory_name/**
 </strong></code></pre>
 
 {% hint style="info" %}
@@ -45,7 +45,7 @@ You can use `global` or `code.` Either will exclude the specified directories an
 ### **Considerations in creating the `.snyk` file**
 
 * The path in the rule should be relative to the `.snyk` file location.
-* All rules must have a preceding dash to be valid: `- <Exclusion_rule>`
+* All rules must have a preceding dash to be valid: `- <exclusion_rule>`
 * For rules beginning with special characters and patterns, such as an asterisk character `*`, you must wrap them in double quotes (`" "`). This ensures they are treated as a single entity, avoiding potential misinterpretation or unintended behavior. For example, `"*/src"`
 * The following are considerations in using indentations:
   * When using the syntax in the `.snyk` YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
