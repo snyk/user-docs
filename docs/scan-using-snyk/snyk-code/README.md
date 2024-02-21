@@ -57,7 +57,7 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 
 ## Supported languages
 
-Snyk Code supports many [languages and frameworks](../supported-languages-and-frameworks.md).
+Snyk Code supports many [languages and frameworks](broken-reference).
 
 ## What's next?
 

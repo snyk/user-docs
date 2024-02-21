@@ -453,7 +453,6 @@
     * [Tines Integration](integrate-with-snyk/vulnerability-management-tools/tines-integration.md)
     * [Torq Integration](integrate-with-snyk/vulnerability-management-tools/torq-integration.md)
 * [Scan with Snyk](scan-using-snyk/README.md)
-  * [Supported languages and frameworks](scan-using-snyk/supported-languages-and-frameworks.md)
   * [Scanning overview](scan-using-snyk/working-with-snyk-in-your-environment/README.md)
     * [What counts as a test?](scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test.md)
   * [Supported languages and frameworks](scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/README.md)
