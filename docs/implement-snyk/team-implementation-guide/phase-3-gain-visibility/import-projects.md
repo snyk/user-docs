@@ -12,7 +12,7 @@ Here are some key points to determine the best starting point. For details, see 
 ## Getting started with Snyk
 
 {% hint style="info" %}
-For details, see [Getting started](../../../getting-started/) and [Start scanning](../../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md).
+For details, see [Getting started](../../../getting-started/) and [Start scanning](../../../scan-with-snyk/start-scanning.md).
 {% endhint %}
 
 Depending on your needs, Snyk offers various integration methods:

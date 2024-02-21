@@ -482,7 +482,7 @@
     * [VB.NET](scan-with-snyk/supported-languages-and-frameworks/vb.net.md)
   * [Scanning overview](scan-with-snyk/scanning-overview/README.md)
     * [What counts as a test?](scan-with-snyk/scanning-overview/what-counts-as-a-test.md)
-  * [Start scanning using the CLI, Web UI, or API](scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md)
+  * [Start scanning](scan-with-snyk/start-scanning.md)
   * [The .snyk file](scan-with-snyk/policies/the-.snyk-file.md)
   * [Find and manage priority issues](scan-with-snyk/find-and-manage-priority-issues/README.md)
     * [Severity levels](scan-with-snyk/find-and-manage-priority-issues/severity-levels.md)
