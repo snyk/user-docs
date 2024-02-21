@@ -18,7 +18,7 @@ To check for open-source and licensing issues and code security, ensure that you
 {% hint style="info" %}
 PR Checks rely on webhooks from the SCM. Integration scope must include the ability to create webhooks.
 
-A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](../working-with-snyk-in-your-environment/what-counts-as-a-test.md). The number of tests allowed is determined by the [pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md).
+A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](../scanning-overview/what-counts-as-a-test.md). The number of tests allowed is determined by the [pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md).
 {% endhint %}
 
 ## Types of Snyk scans supported

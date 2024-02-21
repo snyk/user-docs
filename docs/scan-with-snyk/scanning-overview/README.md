@@ -1,12 +1,7 @@
 # Scanning overview
 
-{% hint style="warning" %}
-**Release status** \
-Some features mentioned on this page are available based on your Snyk plan.&#x20;
-
-Based on your plan and product selection, your account has a monthly limit set on the number of tests that can be performed.
-
-See [Pricing plans](https://snyk.io/plans).
+{% hint style="info" %}
+Scans may be limited on your account, depending on your[ Pricing Plan](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md). See [What counts as a scan?](what-counts-as-a-test.md) for more information.
 {% endhint %}
 
 Snyk takes a developer-first approach to secure your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. This approach allows you to:
@@ -25,7 +20,7 @@ Snyk supports scanning methods that correspond to Snyk products. Choose the righ
 * [Snyk Container](../snyk-container/) scans your Projects for issues with container images.
 * [Snyk Infrastructure as Code ](../scan-infrastructure/)scans for issues in your cloud infrastructure configurations before and after deployment.
 
-For more information, see [Running scans](running-scans.md).
+For more information, see [Start scanning](../start-scanning-using-the-cli-web-ui-or-api.md).
 
 ### Running PR checks
 
@@ -37,7 +32,7 @@ Snyk Open Source and Snyk Code allow you to [run PR Checks](../run-pr-checks/) t
   * Check for license compliance (Snyk Open Source)
   * Address dependency upgrades by positioning updates to address technical debt (Snyk Open Source)
 
-## Learning resources to design secure code
+## Learn how to design secure code
 
 The following resources are available for all users:
 
@@ -51,7 +46,7 @@ The following capabilities are available for all Snyk users except as noted in t
 * Using the [Snyk CLI](../../snyk-cli/), you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
 * Using [Snyk IDE Plugins](../../integrate-with-snyk/ide-tools/), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
 * Using [Git integrations](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/), you can improve security in your Git repositories for both your code and deployed applications.
-* Using CI/CD plugins and integrations, you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
+* Using [CI/CD integrations](../../integrate-with-snyk/snyk-ci-cd-integrations/), you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
   * There are options for passive monitoring and establishing a quality assurance gate by failing build checks based on tests for violations of policies.
   * Most CI/CD integrations use the Snyk CLI, allowing you to fail the build based on criteria specified in options or using the [snyk-filter tool](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
   * Snyk CI/CD integrations include Snyk plugins for Jenkins, Circle CI, and other tools, as well as Partner Platforms, including Azure, Bitbucket, and AWS, that offer built-in pipes or components for using Snyk.
