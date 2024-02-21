@@ -10,30 +10,26 @@ To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage
 Cloud scans for AWS, Azure, and Google Cloud are generally available to Snyk IaC customers on an enterprise plan - for both current IaC and IaC+.
 {% endhint %}
 
-{% hint style="info" %}
-This page explains using IaC+ and cloud scans in the Snyk Web UI. For information about using IaC+ with the Snyk CLI, see [Test your IaC files with Snyk CLI](broken-reference).
-{% endhint %}
-
 Use IaC+ to find, view, and fix issues in cloud configuration files for Terraform, Kubernetes (except Helm, coming soon), AWS CloudFormation, and Azure Resource Manager (ARM) in your Git repositories.
 
 Use Snyk IaC cloud scans to find, view, and fix issues in deployed cloud resource configurations for AWS, Azure, and Google Cloud.
+
+This page explains using IaC+ and cloud scans in the Snyk Web UI. For information about using IaC+ with the Snyk CLI, see [Test your IaC files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files/).
 
 ## Prerequisites for IaC+ and cloud scans
 
 To start using IaC+ you must have the following:
 
 * A Snyk account. For details, see [Create a Snyk account](../../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
-* Belong to an organization that has Snyk IaC on the enterprise plan.
+* Belong to an Organization that has Snyk IaC on the enterprise plan.
 * An existing Terraform, CloudFormation, or Azure Resource Manager environment to work in, or deployed AWS, Azure, or Google Cloud account to onboard.
 * Integration with your Git repository as for other Snyk products. For details, see [Git repositories (SCMs)](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
 
 ## Import IaC+ SCM repositories
 
 {% hint style="warning" %}
-IaC+ SCM integrations use the new Snyk [git repository cloning](../../../working-with-snyk/how-snyk-handles-your-data.md#git-repository-cloning) capability to support multi-file analysis. This capability is available through [Snyk Preview](../../../snyk-admin/manage-settings/snyk-preview.md), and must be turned on for IaC+ SCM scans to work properly.
-{% endhint %}
+IaC+ SCM integrations use the new Snyk [git repository cloning](../../../working-with-snyk/how-snyk-handles-your-data.md#git-repository-cloning) capability to support multi-file analysis. This capability is available through [Snyk Preview](../../../snyk-admin/manage-settings/snyk-preview.md) and must be turned on for IaC+ SCM scans to work properly.
 
-{% hint style="warning" %}
 If you want to scan a new SCM repository with IaC+ and you have already imported that repository, you must re-import the repository. This will not affect any of your existing Projects.
 {% endhint %}
 
