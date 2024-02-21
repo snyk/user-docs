@@ -21,11 +21,11 @@ If you are an Enterprise user, you have a Snyk user's token under your profile. 
 
 ### Use a service account to create any kind of automation.
 
-This includes, but is not limited to, scanning using a CI/CD or build system plugin and automation with the Snyk API.
+This includes, but is not limited to, scanning using a CI/CD or build system plugin and automation with the [Snyk API](manage-service-accounts-using-the-snyk-api.md).
 
 ### You can use a service account for GitHub Enterprise integration.
 
-If your team needs to set up a service account in GitHub, you must use GitHub Enterprise, which is available only with Snyk Enterprise accounts.
+If your team needs to set up a service account in GitHub, you must use [GitHub Enterprise](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md), which is available only with Snyk Enterprise accounts.
 
 Using a service account to authenticate with an integration rather than a Snyk user's token ensures continuity when users change roles or close their personal Snyk accounts.
 
