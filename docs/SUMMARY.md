@@ -481,7 +481,6 @@
     * [TypeScript](scan-with-snyk/supported-languages-and-frameworks/typescript.md)
     * [VB.NET](scan-with-snyk/supported-languages-and-frameworks/vb.net.md)
   * [Scanning overview](scan-with-snyk/scanning-overview/README.md)
-    * [Running scans](scan-with-snyk/scanning-overview/running-scans.md)
     * [What counts as a test?](scan-with-snyk/scanning-overview/what-counts-as-a-test.md)
   * [Start scanning using the CLI, Web UI, or API](scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md)
   * [The .snyk file](scan-with-snyk/policies/the-.snyk-file.md)
