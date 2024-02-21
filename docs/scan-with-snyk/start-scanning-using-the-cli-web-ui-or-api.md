@@ -1,6 +1,6 @@
 # Start scanning
 
-You can use Snyk to scan your code manually and automatically, using the [Snyk CLI](start-scanning.md#scan-using-the-cli), the [Snyk Web UI](start-scanning.md#scan-using-the-web-ui), the [Snyk API](start-scanning.md#scan-using-the-api), and by running [PR Checks](start-scanning.md#using-pr-checks).
+You can use Snyk to scan your code manually and automatically, using the [Snyk CLI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-cli), the [Snyk Web UI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-web-ui), the [Snyk API](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-api), and by running [PR Checks](start-scanning-using-the-cli-web-ui-or-api.md#using-pr-checks).
 
 {% hint style="info" %}
 Scans may be limited on your account, depending on your[ Pricing Plan](../implement-snyk/enterprise-implementation-guide/trial-limitations.md). See [What counts as a scan?](scanning-overview/what-counts-as-a-test.md) for more information.
@@ -15,7 +15,7 @@ Scans may be limited on your account, depending on your[ Pricing Plan](../implem
 
 ## Overview of ways to scan your Projects
 
-You can run your scans from the [Web UI](start-scanning.md#scan-using-the-web-ui), the [CLI](start-scanning.md#scan-using-the-cli), the [API](start-scanning.md#scan-using-the-api), or with [PR Checks](run-pr-checks/).
+You can run your scans from the [Web UI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-web-ui), the [CLI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-cli), the [API](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-api), or with [PR Checks](run-pr-checks/).
 
 | Features                                                                           | Snyk Web UI          | Snyk CLI             | Snyk API             | PR Checks            |
 | ---------------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | -------------------- |

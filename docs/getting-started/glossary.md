@@ -314,7 +314,7 @@ A policy file that Snyk uses to define certain analysis behaviors and to specify
 
 ### Snyk
 
-A platform providing Cloud Native Application Security (CNAS) solutions, allowing developers to own and build security for the whole application, from code and open source to containers and cloud infrastructure. Snyk is also the company providing the Snyk platform. See [Introducing Snyk](broken-reference).
+A platform providing Cloud Native Application Security (CNAS) solutions, allowing developers to own and build security for the whole application, from code and open source to containers and cloud infrastructure. Snyk is also the company providing the Snyk platform. See [Getting started](./).
 
 ### Snyk Advisor
 
