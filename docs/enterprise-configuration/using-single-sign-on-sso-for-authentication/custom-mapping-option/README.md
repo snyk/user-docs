@@ -8,43 +8,43 @@ Work with your Snyk account team to implement this option.
 
 To understand more about roles and permissions within Snyk, see [Managing permissions](broken-reference).
 
-See also [Member Roles](../../../snyk-admin/user-roles/user-role-management.md) and [Roles in Custom SSO](../../../snyk-admin/user-roles/user-role-management.md#roles-in-custom-sso).
+See also [User role management](../../../snyk-admin/user-roles/user-role-management.md) and [Roles in Custom SSO](../../../snyk-admin/user-roles/user-role-management.md#roles-in-custom-sso).
 
 ## Requirements for Custom Mapping
 
-* Complete the SSO information worksheet for appropriate IdP (identity provider) found in the Resources section of [Set up Snyk Single Sign-On (SSO)](../set-up-snyk-single-sign-on-sso.md)
+* Complete the SSO information worksheet for the appropriate IdP (identity provider) found in the Resources section of [Set up Snyk Single Sign-On (SSO)](../set-up-snyk-single-sign-on-sso.md)
 * Properly configure the custom attributes in your IdP to populate the `roles` array mapping ([Example roles array mapping](./#example-roles-array-mapping))
 
 ## Roles array mapping with Snyk
 
-In the IdP, you must first pass a custom mapping called `roles` as a string array. Refer to [Example: Setting up custom mapping for Okta](example-setting-up-custom-mapping-for-okta.md). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.
+In the IdP, you must first pass a custom mapping called `roles` as a string array. Refer to [Example: Example: setting up custom mapping for Okta](example-setting-up-custom-mapping-for-okta.md). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.
 
-To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to one of the following patterns:
+To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to **one** of the following patterns:
 
-1\. snyk-groupadmin
+snyk-groupadmin
 
 * This role mapping assigns users with the Group Admin and Org Admin roles.
 * **groupadmin** configures all users with this role as a Group Admin and Org Admin for all Group(s) that the user is assigned to and all Orgs that fall under the Group(s).
 
-2\. snyk-groupviewer
+snyk-groupviewer
 
-* This role mapping assigns users with the Group Viewer role and grants read-only access to the Group, reports and all organisations associated with the Group.
+* This role mapping assigns users with the Group Viewer role and grants read-only access to the Group, reports, and all Organizations associated with the Group.
 
-3\. snyk-{groupID}
+snyk-{groupID}
 
 * This role mapping assigns users with the Org Collaborator roles for all Organizations underneath the specified Group(s).
-* **groupID** is the ID string for a group in Snyk. This can be found in the snyk URL at the Group level: https://app.snyk.io/group/\<Group ID> or Group dropdown -> <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> -> General -> Group ID.
+* **groupID** is the ID string for a group in Snyk. This can be found in the snyk URL at the Group level: `https://app.snyk.io/group/<Group ID>` or **Group dropdown -> Settings -> General -> Group ID**.
 
-4\. snyk-{orgslug}-{role}
+snyk-{orgslug}-{role}
 
-* This role mapping assigns users with the specified role of Collaborator or Admin or Custom Role for the Snyk Organization specified in **orgslug**.
-* **orgslug** is the unique identifier of the Organization name in Snyk.
-  * How to find the **orgslug**: https://app.snyk.io/org/{orgslug} OR by using the Snyk [API List all organizations in a group endpoint.](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
-  * **Note**: The **orgslug** is the name of the Organization in most cases; however, there may be exceptions.
-  * Note: **orgslug** can be a value of up to 60 characters.
+* This role mapping assigns users with the specified role of Collaborator or Admin or Custom Role for the Snyk Organization specified in `orgslug`.
+* `orgslug` is the unique identifier of the Organization name in Snyk.
+  * How to find the `orgslug`: `https://app.snyk.io/org/{orgslug}` OR by using the Snyk [API List all organizations in a group endpoint.](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
+  * **Note**: The `orgslug` is the name of the Organization in most cases; however, there may be exceptions.
+  * Note: `orgslug` can be a value of up to 60 characters.
 * **role**:
-  * If you are using standard roles, **{role}** should be either **collaborator** or **admin.**
-  * Custom Role can also be used for **{role}** and should use the normalized name. See [Roles in SSO](../../../snyk-admin/user-roles/user-role-management.md#roles-in-custom-sso) for more details.
+  * If you are using standard roles, `{role}` should be either `collaborator` or `admin`**.**
+  * Custom Role can also be used for `{role}` and should use the normalized name. See [Roles in custom SSO](../../../snyk-admin/user-roles/user-role-management.md#roles-in-custom-sso) for more details.
 
 {% hint style="info" %}
 Users must only have one role mapped per Organization. Mapping multiple roles for an Organization is not supported and can lead to unexpected behavior.
@@ -82,7 +82,7 @@ To assign users with Org Collaborator roles, use the following format:
 }
 ```
 
-To assign users as Org Admin or Org Collaborator, use the following format for the roles array. **Note**: You can assign different roles on a per-org basis. The following example assigns a user as Org Admin in the **orgslug** Org but a Collaborator in the **orgslug2** Org.
+To assign users as Org Admin or Org Collaborator, use the following format for the roles array. **Note**: You can assign different roles on a per-org basis. The following example assigns a user as Org Admin in the `orgslug` Org but a Collaborator in the `orgslug2` Org.
 
 ```
 {
@@ -93,7 +93,7 @@ To assign users as Org Admin or Org Collaborator, use the following format for t
 }
 ```
 
-To assign users a custom role, use the following format for the roles array. You can assign different roles on a per-org basis and can use a combination of standard and custom roles for different orgs.
+To assign users a custom role, use the following format for the roles array. You can assign different roles on a per-Org basis and can use a combination of standard and custom roles for different Orgs.
 
 ```
 {
@@ -123,7 +123,7 @@ The following example shows how to assign roles to Snyk users under the mapping 
 * The customer has three Organizations within Snyk: Application-SecurityScanner1, Partner-Plugins, and Application-Payments.
 * The customer has four teams: Business Development, Engineering, Security, and Product. Each has different needs:
   * The Business Development team needs access to the ABC group and only the Partner-Plugins Organization as Org Admin.
-  * Engineering needs access to the ABC group, the Application-SecurityScanner1 Organization as Org Admin, Partner-Plugins Organization as Org Admin, and Application-Payments as Org Collaborator.
+  * Engineering needs access to the ABC Group, the Application-SecurityScanner1 Organization as Org Admin, Partner-Plugins Organization as Org Admin, and Application-Payments as Org Collaborator.
   * Security needs access to the ABC group as Group Admin and all three organizations as Org Admin.
   * The Product team needs access to the ABC group and all three organizations as Org Collaborator,
 
