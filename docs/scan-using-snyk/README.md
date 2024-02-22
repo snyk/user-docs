@@ -13,7 +13,7 @@ Implement a workflow to secure your code and infrastructure in your environment 
 * [Snyk Code](snyk-code/): Scan your codebase for known vulnerabilities and get remediation guidance either inline in your IDE or by importing your code repository to Snyk Web UI. \
   More information: [Exploring the advanced technologies behind Snyk Code](https://snyk.io/blog/advanced-technologies-behind-snyk-code/).
 * [Snyk Container](snyk-container/): Find and automatically fix container and workload vulnerabilities.
-* [Scan infrastructure](scan-infrastructure/): Secure cloud infrastructure configurations before and after deployment.
+* [Scan infrastructure](snyk-iac/): Secure cloud infrastructure configurations before and after deployment.
 
 ## Manage issues
 

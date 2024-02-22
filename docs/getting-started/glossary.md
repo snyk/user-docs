@@ -268,7 +268,7 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 
 ### Rule
 
-A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../scan-using-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../scan-using-snyk/scan-infrastructure/build-your-own-iac-custom-rules/).
+A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../scan-using-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../scan-using-snyk/snyk-iac/build-your-own-iac-custom-rules/).
 
 ## S
 
@@ -346,7 +346,7 @@ A Snyk product. Enables developers to find and fix vulnerabilities in container 
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/).
+A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-using-snyk/snyk-iac/scan-your-iac-source-code/).
 
 ### Snyk Open Source
 

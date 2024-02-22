@@ -18,7 +18,7 @@ Snyk supports scanning methods that correspond to Snyk products. Choose the righ
 * [Snyk Open Source](../snyk-open-source/) provides vulnerability testing, license testing and monitoring for your open-source libraries.
 * [Snyk Code](../snyk-code/) scans your code for security vulnerabilities using source code analysis.
 * [Snyk Container](../snyk-container/) scans your Projects for issues with container images.
-* [Snyk Infrastructure as Code ](../scan-infrastructure/)scans for issues in your cloud infrastructure configurations before and after deployment.
+* [Snyk Infrastructure as Code ](../snyk-iac/)scans for issues in your cloud infrastructure configurations before and after deployment.
 
 For more information, see [Start scanning](../start-scanning-using-the-cli-web-ui-or-api.md).
 

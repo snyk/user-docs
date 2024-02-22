@@ -5,7 +5,7 @@ For information on the environments supported with other Snyk products, see:
 
 * [Snyk Open Source - supported languages and package managers](../../supported-languages-frameworks-and-feature-availability-overview/#open-source-and-licensing-snyk-open-source)
 * [Snyk Code - Supported languages and frameworks](../../supported-languages-frameworks-and-feature-availability-overview/#code-analysis-snyk-code)
-* [Snyk IaC and Cloud - Supported providers](../../scan-infrastructure/supported-iac-languages-cloud-providers-and-cloud-resources/)
+* [Snyk IaC and Cloud - Supported providers](../../snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/)
 {% endhint %}
 
 If you use an unsupported distribution, for example, that has reached its End-of-life (EOL) and is no longer being maintained, Snyk displays a message to tell you this is unsupported.

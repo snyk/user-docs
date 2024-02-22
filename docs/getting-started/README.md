@@ -18,7 +18,7 @@ A robust security process secures each of these components where they are built 
 
 * **Secure your code**: use [Snyk Open Source](../scan-using-snyk/snyk-open-source/) to fix vulnerabilities in your open source dependencies and [Snyk Code](../scan-using-snyk/snyk-code/) to fix vulnerabilities in your source code.
 * **Secure your containers**: use [Snyk Container](../scan-using-snyk/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications.
-* **Secure your infrastructure**: use [Snyk Infrastructure as Code (IaC)](../scan-using-snyk/scan-infrastructure/scan-your-iac-source-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [IaC+](../scan-using-snyk/scan-infrastructure/iac+-code-to-cloud-capabilities/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud Projects.
+* **Secure your infrastructure**: use [Snyk Infrastructure as Code (IaC)](../scan-using-snyk/snyk-iac/scan-your-iac-source-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [IaC+](../scan-using-snyk/snyk-iac/iac+-code-to-cloud-capabilities/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud Projects.
 
 ## Choose how to run Snyk
 
@@ -41,7 +41,7 @@ The Snyk tech stacks that are supported depend on the Snyk product you use:
 
 * **Snyk Open Source** and **Snyk Code**: see [Supported languages and frameworks](broken-reference).
 * **Snyk Container**: see [Supported operating system distributions](../scan-using-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
-* **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-using-snyk/scan-infrastructure/supported-iac-languages-cloud-providers-and-cloud-resources/).
+* **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-using-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
 
 ## What can Snyk integrate with?
 
