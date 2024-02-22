@@ -6,7 +6,7 @@ If you are considering the purchase of the Team plan, remember that the trial of
 
 The following Enterprise features are limited or unavailable during the trial:
 
-* [**Single Sign-On (SSO)**](../../enterprise-configuration/using-single-sign-on-sso-for-authentication/)**:** Not available.
+* [**Single Sign-On (SSO)**](../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/)**:** Not available.
 * [**Service Accounts**](../../enterprise-configuration/service-accounts/)**:** Not available.
 * [**Group / Multiple Orgs**](../../snyk-admin/manage-groups-and-organizations/)**:** Limited to one Group and one Org
 * [**Custom Project Tags**](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)**:** Not available.

@@ -3,7 +3,7 @@
 The following information shows how to configure the custom mapping of roles for Azure AD using the [Custom Mapping Option](./).
 
 {% hint style="info" %}
-See the [Azure AD Enterprise Application example](../self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md) for guidance setting up the initial Enterprise application.
+See the [Azure AD Enterprise Application example](../configure-self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md) for guidance setting up the initial Enterprise application.
 {% endhint %}
 
 {% hint style="info" %}

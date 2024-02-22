@@ -1,6 +1,6 @@
 # Example: Setting up custom mapping for Okta
 
-The following shows two different options for [Custom Mapping Options](../../using-single-sign-on-sso-for-authentication/custom-mapping-option/) of Okta roles.
+The following shows two different options for [Custom Mapping Options](./) of Okta roles.
 
 {% hint style="info" %}
 For both of these options to work, the Snyk SSO application **must** be assigned at the group level, not the user level.
@@ -112,7 +112,7 @@ When you look at a user's Application assignment it should look similar to the i
 
 1. On the main page of Okta select **Directory -> Groups**.
 2. Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk SSO app,. Then click on the **pencil** next to the displayed Snyk SSO app.
-3. In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](../../using-single-sign-on-sso-for-authentication/custom-mapping-option/#example-roles-array-mapping). Example, `snyk-org-role`.
+3. In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](./#example-roles-array-mapping). Example, `snyk-org-role`.
 4. Repeat the preceding steps for all your applicable Okta groups to assign the org name and role combination to each user within each configured group.
 
 ### Construct a value expression that creates a roles array to be sent to Snyk

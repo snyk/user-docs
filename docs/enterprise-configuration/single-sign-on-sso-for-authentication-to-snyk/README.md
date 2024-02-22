@@ -1,10 +1,10 @@
-# Using Single Sign-On (SSO) for authentication
+# Single Sign-On (SSO) for authentication to Snyk
 
-{% hint style="warning" %}
-**Release status**\
+{% hint style="info" %}
+**Feature availability**\
 SSO is available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 ## Overview of SSO

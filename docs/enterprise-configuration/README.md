@@ -7,6 +7,6 @@ The [Enterprise implementation guide](../implement-snyk/enterprise-implementatio
 Here you can find instructions on how to authenticate and connect while using the Snyk Enterprise plan.
 
 * [Authenticate for third-party tools](authentication-for-third-party-tools.md)
-* [Set up SSO](using-single-sign-on-sso-for-authentication/)
+* [Set up SSO](single-sign-on-sso-for-authentication-to-snyk/)
 * [Snyk Broker](snyk-broker/)
 * [Service accounts](service-accounts/)

@@ -9,7 +9,7 @@ Ensure you have at least one Group and Organization to indicate where new users 
 {% hint style="info" %}
 After you gather the needed information identified in the following sections, create a support ticket to request SSO setup.
 
-Alternatively, Group Admins can configure Snyk Single Sign-On. See [Self-Serve Single Sign-On (SSO)](self-serve-single-sign-on-sso/) for the steps.
+Alternatively, Group Admins can configure Snyk Single Sign-On. See [Self-Serve Single Sign-On (SSO)](configure-self-serve-single-sign-on-sso/) for the steps.
 {% endhint %}
 
 ## Overview of SSO
