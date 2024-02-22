@@ -7,7 +7,7 @@ After the plugin is installed, you can opt out of downloading the CLI through th
 You can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
 * **Token**: set the token that should be used for authentication with Snyk (see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugins.md)).
-* **Custom endpoint**: set the custom endpoint for the Snyk Web UI, if needed. Use this field for single tenant setups as well instead of https://app.snyk.io.
+* **Custom endpoint**: set the custom endpoint for the Snyk Web UI, if needed. Use this field for single tenant setups as well instead of https://app.snyk.io. See [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
 * **Ignore unknown CA**: ignore the SSL cert, if needed
 *   **Organization**: set the org to run `snyk test` against (similar to the `--org=` option in the CLI). Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 

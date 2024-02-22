@@ -16,7 +16,7 @@ You can set the variables using the Web UI or on the command line using the `set
 After the plugin is installed, you can set the following configurations for the extension:
 
 * **Token**: Enter the token the extension uses to connect to Snyk. You can manually replace it, if you need to switch to another account.
-* **Custom endpoint**: Specify the custom Snyk API endpoint for your organization. Use this field for Single Tenant setups as well instead of https://app.snyk.io.
+* **Custom endpoint**: Specify the custom Snyk API endpoint for your organization. Use this field for Single Tenant setups as well instead of https://app.snyk.io. See [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
 * **Ignore unknown CA**: Ignore unknown certificate authorities.
 * **Organization**: Specify the ORG\_ID to run Snyk commands tied to a specific organization. Snyk recommends using the ORG\_ID. If you specify the ORG\_NAME, that is, the organization slug name, the value must match the URL slug as displayed in the URL of your org in the Snyk UI: https://app.snyk.io/org/\[orgslugname]. If not specified, the Preferred Organization (as defined in your [account settings](https://app.snyk.io/account)) is used to run tests.
 * **Send usage analytics**: To help Snyk improve the extension, let your Visual Studio send Snyk information about how the extension is working.
