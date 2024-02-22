@@ -11,6 +11,6 @@ Depending on the language of the project you have tested you may also see fix ad
 For more information see:\
 [Snyk CLI](../)\
 [Getting started with the CLI](../getting-started-with-the-snyk-cli.md)\
-[Snyk Code CLI results](broken-reference)\
-[Understanding Snyk Container CLI test results](snyk-cli-for-snyk-container/understand-snyk-container-cli-results.md)\
-[Understanding the IaC CLI test output](snyk-cli-for-iac/understand-the-iac-cli-test-results/)
+[View Snyk Code CLI results](snyk-cli-for-snyk-code/view-snyk-code-cli-results.md)\
+[Understand Snyk Container CLI test results](snyk-cli-for-snyk-container/understand-snyk-container-cli-results.md)\
+[Understand the IaC CLI test output](snyk-cli-for-iac/understand-the-iac-cli-test-results/)

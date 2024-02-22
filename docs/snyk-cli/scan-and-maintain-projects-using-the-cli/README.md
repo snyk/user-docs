@@ -19,7 +19,7 @@ The remaining pages address [Scanning Projects](./#scanning-projects), [Monitori
 * [**Setup.py file** failing to scan or finding zero dependencies](setup.py-file-failing-to-scan-or-finding-zero-dependencies.md)
 * [**Severity thresholds** for CLI tests](set-severity-thresholds-for-cli-tests.md)
 * [**Test public npm packages** before use](test-public-npm-packages-before-use.md)
-* [CLI **test results**](view-cli-test-results.md)
+* [CLI **test results**](cli-test-results.md)
 * [Differences in **vulnerability counts** across environments](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
 
 ## Monitoring Projects
