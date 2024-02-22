@@ -2,9 +2,7 @@
 
 {% hint style="warning" %}
 **Release status**\
-Enterprise Analytics is in [Closed Beta](../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
-
-See [Pricing plans](https://snyk.io/plans).
+Enterprise Analytics is in [Closed Beta](../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 
 During Closed Beta, access at the user level is available. When tenant membership is available, access to Enterprise Analytics will be managed at scale more easily.
 
