@@ -1,15 +1,15 @@
 # Legacy reports
 
-{% hint style="warning" %}
-**Release status**\
+{% hint style="info" %}
+**Feature availability**\
 Snyk Reporting is available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Snyk reports show the status of all of your Projects, issues, dependencies, and licenses, for your Organization or Group.
+Snyk reports show the status of all of your Projects, issues, dependencies, and licenses for your Organization or Group.
 
-Snyk reports help security and development teams work together. As your coding work progresses, Snyk's reporting dashboard lets security professionals monitor activity and maintain security insight without looking over development’s shoulder.
+Snyk reports help security and development teams work together. As your coding work progresses, the Snyk reporting dashboard lets security professionals monitor activity and maintain security insight without looking over development’s shoulder.
 
 See the [Reports Overview](legacy-reports-overview.md) page for more information on organizing and customizing legacy reports.
 
