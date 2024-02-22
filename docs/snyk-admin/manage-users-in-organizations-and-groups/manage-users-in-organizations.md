@@ -3,7 +3,7 @@
 In the **Organization** where you want to manage users, select the **Members** menu option.
 
 {% hint style="info" %}
-You must have the permissions required to perform these tasks - see [Pre-defined user roles](../user-roles/pre-defined-roles.md) for a list of permissions.
+You must have the permissions required to perform these tasks. For details, see [Pre-defined user roles](../user-roles/pre-defined-roles.md) for a list of permissions.
 {% endhint %}
 
 ## Add users
@@ -24,7 +24,7 @@ You can do the following on the **Add members** screen:
   Select **Invite by link** to send a link; click **Copy link** and send the link yourself.
 * Use the **New members join as** dropdown to define the default role of a user when joining, such as **Org admin**. For details, see [Manage permissions](broken-reference).
 
-To see a demonstration of adding users, play this video:
+For a demonstration of adding users, view this video:
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/qqmkcaequj" %}
 Inviting members to an Organization
