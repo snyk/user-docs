@@ -222,7 +222,7 @@ A fix type: define and "pin" a specific version of an indirect dependency, to av
 
 ### Policy
 
-See [license policy](glossary.md#license-policy), [security policy](glossary.md#security-policy), and [`.snyk` policy](glossary.md#.snyk-policy).
+See [license policy](glossary.md#license-policy), [security policy](glossary.md#security-policy), and [`.snyk` policy](glossary.md#snyk-policy).
 
 ### **Policy (Snyk AppRisk)**
 
@@ -234,7 +234,7 @@ Pull Request. Allows a user to exchange changes made to source code and collabor
 
 ### PR Checks
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../scan-using-snyk/run-pr-checks/).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../scan-using-snyk/run-pr-checks/).
 
 ### Priority Score
 
@@ -268,7 +268,7 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 
 ### Rule
 
-A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems.
+A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../scan-using-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../scan-using-snyk/scan-infrastructure/build-your-own-iac-custom-rules/).
 
 ## S
 
@@ -278,7 +278,7 @@ Static Analysis Results Interchange Format. A standard, JSON-based format for th
 
 ### SAST
 
-Static Application Security Testing. A method to secure software by reviewing the source code of your proprietary software and identifying sources of vulnerabilities. Also see [DAST](glossary.md#dast).
+Static Application Security Testing. A method to secure software by reviewing the source code of your proprietary software and identifying sources of vulnerabilities. See also [DAST](glossary.md#dast).
 
 ### SBOM
 
@@ -363,7 +363,7 @@ Incorporates the Snyk Intel Vulnerability DB: the Snyk database of vulnerabiliti
 
 ### Snyk Web UI
 
-The browser-based environment providing users access to Snyk functions. See [Explore the Snyk Web UI](explore-snyk-through-the-web-ui.md).
+The browser-based environment that provides users access to Snyk functions. See [Explore the Snyk Web UI](explore-snyk-through-the-web-ui.md).
 
 ### Social Trends
 
@@ -401,7 +401,7 @@ A fix type: a problem can be fixed by upgrading a version of a package or by app
 
 ### Vulnerability
 
-A security vulnerability identified by Snyk. See [Manage vulnerabilities](../scan-using-snyk/snyk-open-source/manage-vulnerabilities/).
+A security vulnerability that was identified by Snyk. See [Manage vulnerabilities](../scan-using-snyk/snyk-open-source/manage-vulnerabilities/).
 
 ## W
 
