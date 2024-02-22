@@ -1,6 +1,6 @@
 # Explore Snyk through the Web UI
 
-{% hint style="success" %}
+{% hint style="info" %}
 If you have not done so already, you should [create an account](quickstart/create-or-log-in-to-a-snyk-account.md).
 {% endhint %}
 
@@ -64,7 +64,7 @@ You can view [reports](../manage-issues/reporting/) to gain visibility and insig
 
 {% hint style="info" %}
 **Feature availability**\
-Reporting is available for Enterprise plans.
+Reporting is available for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 ## **Manage your** **Projects**
