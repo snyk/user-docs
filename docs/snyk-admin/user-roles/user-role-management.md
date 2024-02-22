@@ -28,10 +28,9 @@ If you use the Snyk API, see [User management with the Snyk API](../../snyk-api/
 * Permissions granted to users using the **Member roles** functionality enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
 * The permission **View Organization** is needed by default for all Organization-level member roles.
 * If the role is expected to view Project-related data for an Organization along with other operations, the **View Organization**, **View Project**, and **View Project History** permissions should be added to the role at a minimum.
-* For [Integration edit abilities](custom-role-templates/integration-editor-implementor-role-template.md), the **Edit Organization** permission is required.&#x20;
-* The permission **View Preview Features** is required to run `snyk container test` and `snyk iac test`.
+* For [Integration edit abilities](custom-role-templates/integration-editor-implementor-role-template.md), the **Edit Organization** permission is required.
 * Snyk prevents role privileges from escalating. This means users cannot assign a higher privileged role to others and cannot create service accounts with a higher privileged role.
-* It is advisable to use the **Duplicate Role** functionality and create a copy of a standard role and then amend the permissions rather than build a role from scratch if you are unsure about the permissions.
+* It is advisable to use the **Duplicate Role** functionality and create a copy of a standard role, then amend the permissions rather than build a role from scratch if you are unsure about the permissions.
 
 ## Manage roles
 
