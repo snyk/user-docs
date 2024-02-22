@@ -321,7 +321,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## `snyk sbom` and `snyk container sbom` command options
 
-`--format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json>`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom), s[nyk container sbom](https://docs.snyk.io/snyk-cli/commands/container-sbom)
+`--format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json>`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom), [snyk container sbom](https://docs.snyk.io/snyk-cli/commands/container-sbom)
 
 `[--file=] or [--f=]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
