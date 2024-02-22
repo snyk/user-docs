@@ -1,7 +1,7 @@
 # Snyk GitHub Cloud App
 
 {% hint style="warning" %}
-**Feature availability**
+**Release status and feature availability**
 
 The GitHub Cloud App is in Early Access and available for all customers on GitHub Cloud, independent of plan type.
 
@@ -23,7 +23,7 @@ The Snyk GitHub Cloud App improves on many features as compared to the current G
 * **Increased API rate limit**: The GitHub Cloud App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit will assist in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
 * **Enabler for an enhanced developer experience:**
   * Pull request checks: The GitHub Cloud App improves the PR Checks workflow by showing the test results directly on the Checks tab in GitHub.
-  * Fix and upgrade pull requests: Pull requests initiated by Snyk would be performed on behalf of Snyk-bot rather than a service account individual user account.
+  * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed on behalf of Snyk-bot rather than a service account as the user.
 
 ## How to set up the Snyk GitHub Cloud App
 
@@ -43,7 +43,7 @@ When the install screen in GitHub opens, you can select the GitHub organization 
 
 <figure><img src="../../.gitbook/assets/2023-11-28_09-45-45.png" alt="" width="375"><figcaption><p>Selection of the GitHub Organization to install the app into</p></figcaption></figure>
 
-If the GitHub Cloud App is already installed in a GitHub organization, you can still select that same organization during the installation process for a different Snyk Organization, but this must be distinct from the one used in the initial installation.\
+If the GitHub Cloud App is already installed in a GitHub organization, you can select that same GitHub organization during the integration process for a different Snyk Organization.\
 
 
 <figure><img src="../../.gitbook/assets/2024-01-23_10-40-45.png" alt="Connect another GitHub organization into a Snyk Organization" width="563"><figcaption><p>Connect another GitHub organization into a Snyk Organization</p></figcaption></figure>
