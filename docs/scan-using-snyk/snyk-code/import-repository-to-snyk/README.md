@@ -70,7 +70,7 @@ The selected repositories are imported to Snyk, and a progress bar appears on th
 
 ## Re-import repository to Snyk
 
-If your Snyk account includes repositories that were imported to it before the **Snyk Code** option was enabled, and you want Snyk Code to test these repositories, you must re-import these repositories to Snyk (see [Snyk Code conditions](../configure-snyk-code.md#conditions)).
+If your Snyk account includes repositories that were imported to it before the **Snyk Code** option was enabled, and you want Snyk Code to test these repositories, you must re-import these repositories to Snyk (see [Snyk Code conditions](../../../scan-with-snyk/snyk-code/configure-snyk-code.md#conditions)).
 
 Follow these steps to re-import existing repositories:
 

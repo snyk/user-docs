@@ -20,7 +20,7 @@ Snyk supports scanning methods that correspond to Snyk products. Choose the righ
 * [Snyk Container](../snyk-container/) scans your Projects for issues with container images.
 * [Snyk Infrastructure as Code ](../snyk-iac/)scans for issues in your cloud infrastructure configurations before and after deployment.
 
-For more information, see [Start scanning](../start-scanning-using-the-cli-web-ui-or-api.md).
+For more information, see [Start scanning](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md).
 
 ### Running PR checks
 

@@ -3,7 +3,7 @@
 You can use Snyk to scan your code manually and automatically, using the [Snyk CLI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-cli), the [Snyk Web UI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-web-ui), the [Snyk API](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-api), and by running [PR Checks](start-scanning-using-the-cli-web-ui-or-api.md#using-pr-checks).
 
 {% hint style="info" %}
-Scans may be limited on your account, depending on your[ Pricing Plan](../implement-snyk/enterprise-implementation-guide/trial-limitations.md). See [What counts as a scan?](working-with-snyk-in-your-environment/what-counts-as-a-test.md) for more information.
+Scans may be limited on your account, depending on your[ Pricing Plan](../implement-snyk/enterprise-implementation-guide/trial-limitations.md). See [What counts as a scan?](../scan-using-snyk/scanning-overview/what-counts-as-a-test.md) for more information.
 {% endhint %}
 
 ## Prerequisites
@@ -15,7 +15,7 @@ Scans may be limited on your account, depending on your[ Pricing Plan](../implem
 
 ## Overview of ways to scan your Projects
 
-You can run your scans from the [Web UI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-web-ui), the [CLI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-cli), the [API](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-api), or with [PR Checks](run-pr-checks/).
+You can run your scans from the [Web UI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-web-ui), the [CLI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-cli), the [API](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-api), or with [PR Checks](../scan-using-snyk/run-pr-checks/).
 
 | Features                                                                           | Snyk Web UI          | Snyk CLI             | Snyk API             | PR Checks            |
 | ---------------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | -------------------- |
@@ -92,4 +92,4 @@ See the [API documentation](https://snyk.docs.apiary.io/#reference/test) and the
 
 Snyk can scan every new Pull Request (PR) submitted on your monitored repositories to help prevent new vulnerabilities from being added to your codebase.
 
-See [Run PR Checks](run-pr-checks/) for details.
+See [Run PR Checks](../scan-using-snyk/run-pr-checks/) for details.

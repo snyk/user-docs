@@ -4,6 +4,21 @@ You can view Project information on your Projects pages. For example, to view yo
 
 <figure><img src="../../.gitbook/assets/Project-list.png" alt="Projects listed in the Target snyk-goof"><figcaption><p>Projects listed in the Target <code>snyk-goof</code></p></figcaption></figure>
 
+## Filtering existing Projects
+
+The **Projects** page on the Web UI includes a filter pane that allows you to filter your Snyk Projects according to different criteria, and provides you with information about the number of existing Snyk Projects that match each criterion:
+
+<figure><img src="../../.gitbook/assets/Project filtering.png" alt="Filter pane on Projects page"><figcaption><p>Filter pane on Projects page</p></figcaption></figure>
+
+By default, only active Projects with discovered issues are displayed on the **Projects** page.
+
+You can choose the following filter criteria on the filter pane:
+
+* **SHOW**:
+  * **With issues** and **Without issues** - Projects with or without issues that were discovered by Snyk.
+  * **Active and Inactive** - Projects that are either in an **Active** or **Inactive** status in Snyk. Inactive Projects are Projects that were deactivated on the Web UI.
+* **INTEGRATIONS**: the integrated Git repositories imported to Snyk.
+
 ## Detailed information for a Project
 
 Click on a Project entry to view detailed information for that Project:
