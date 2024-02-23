@@ -11,7 +11,7 @@ Snyk has a number of tools and processes that help secure your entire software d
 For users who are evaluating Snyk or planning an enterprise deployment, and for most programming languages, Snyk recommends integrating with a Git repository to get started.
 
 {% hint style="info" %}
-The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. See the [guide](broken-reference) specific to your language for more details.
+The tool that best serves your tech stack, environment, and workflow depends on your individual circumstances. See [Supported languages and frameworks ](../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/)for the guide specific to your language for more details.
 {% endhint %}
 
 To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see [Integrating Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/).
@@ -103,11 +103,11 @@ A scan with [**Snyk test**](../snyk-cli/scan-and-maintain-projects-using-the-cli
 Snyk test video
 {% endembed %}
 
-A scan with [**Snyk code test** ](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)runs a Static Code Analysis test on the code in that Project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
+A scan with [`snyk code test` ](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)runs a Static Code Analysis test on the code in that Project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
 
-A scan with [**Snyk container test**](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image to one that is more secure.
+A scan with [`snyk container test`](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image to one that is more secure.
 
-A scan with [**Snyk iac test**](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/) returns advice on how to resolve discovered issues in your Infrastructure as Code files.
+A scan with [`snyk iac test`](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/) returns advice on how to resolve discovered issues in your Infrastructure as code files.
 
 ## Next steps in implementing the Snyk Enterprise plan
 
