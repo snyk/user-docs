@@ -74,3 +74,4 @@ redirects:
   manage-issues/insights: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/README.md 
   manage-issues/insights/insights-setup: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/prioritization-setup/README.md
   scan-with-snyk/supported-languages-and-frameworks: scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/README.md
+  scan-application-code/snyk-code/snyk-code-language-and-framework-support: scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/README.md
