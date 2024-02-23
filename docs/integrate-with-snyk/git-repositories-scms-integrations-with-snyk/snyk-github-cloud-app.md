@@ -1,11 +1,8 @@
 # Snyk GitHub Cloud App
 
 {% hint style="warning" %}
-**Release status and feature availability**
-
-The GitHub Cloud App is in Early Access and available for all customers on GitHub Cloud, independent of plan type.
-
-This feature is not yet supported for Snyk Broker.
+**Feature availability**\
+The Snyk GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you are interested in getting access.
 {% endhint %}
 
 ## Prerequisites for GitHub Cloud App
@@ -62,7 +59,7 @@ If you are an Enterprise plan customer, you can migrate Snyk Targets to the Snyk
 
 ## Feedback on the Snyk GitHub Cloud App
 
-Because this feature is in Open Beta, the functionality will likely evolve based on your feedback. If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+Because this feature is in  [Early Access](../../getting-started/snyk-release-process.md), the functionality will likely evolve based on your feedback. If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 
 
 
