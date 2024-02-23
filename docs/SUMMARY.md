@@ -749,7 +749,6 @@
       * [View licenses](manage-issues/dependencies-and-licenses/view-licenses.md)
   * [Risk Score](manage-issues/risk-score.md)
 * [Snyk Admin](snyk-admin/README.md)
-  * [Introduction to Snyk administration](snyk-admin/introduction-to-snyk-administration.md)
   * [Manage Groups and Organizations](snyk-admin/manage-groups-and-organizations/README.md)
     * [Introduction to Groups](snyk-admin/manage-groups-and-organizations/introduction-to-groups.md)
     * [Use Group-level options](snyk-admin/manage-groups-and-organizations/use-group-level-options.md)
