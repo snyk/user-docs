@@ -10,7 +10,7 @@ Snyk scans for the following types of issues:
 
 The Eclipse plugin provides automated, algorithm-based fix suggestions for both direct and transitive dependencies. This single plugin provides a Java vulnerability scanner and an open-source security scanner.
 
-After you have installed and configured the Eclipse plugin, every time you run it, open a file, or autosave, Snyk scans the manifest files, proprietary code, and configuration files in your project. Snyk delivers actionable vulnerability, license, or misconfiguration issue details and displays the results natively within the Eclipse UI.
+After you have installed and configured the Eclipse plugin, every time you run it, open a file, or autosave, Snyk scans the manifest files, proprietary code, and configuration files in your project (if not deactivated in the Snyk Settings). Snyk delivers actionable vulnerability, license, or misconfiguration issue details and displays the results natively within the Eclipse UI.
 
 This page explains supported environments, support, and giving feedback and provides installation instructions. **After you complete the steps on this page**, you will continue by following the instructions in the other Eclipse plugins docs:
 
@@ -45,6 +45,11 @@ The plugin runs on
 
 ## Supported Eclipse versions
 
+The latest plugin version may not be supported on all Eclipse versions. So if you use an older Eclipse version, you may need to install an older plugin version.
+
+* 2023-12
+* 2023-09
+* 2023-06
 * 2023-03
 * 2022-12
 * 2022-09

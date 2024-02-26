@@ -2,7 +2,7 @@
 
 You can set the following configuration options in the Snyk preferences.
 
-<figure><img src="../../../.gitbook/assets/image (2) (4).png" alt="Snyk preferences"><figcaption><p>Snyk preferences</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Snyk Preferences</p></figcaption></figure>
 
 * `Snyk API Token`: Set the authentication token from Snyk.
 * `Path`: Specify your additions to the path to find needed third-party tools such as Gradle or Maven.
@@ -11,6 +11,7 @@ You can set the following configuration options in the Snyk preferences.
 * `Snyk Open Source enabled`: Enable or Disable Snyk Open Source Dependency Scans through Language Server. Default: `Enabled` during beta
 * `Snyk Code enabled`: Enable or Disable Snyk Code Scans via Language Server. Default: `Disabled` during beta.
 * `Snyk Infrastructure-as-Code enabled` : Enable or Disable Snyk IaC Scans through Language Server. Default: `Enabled` during beta.
+* `Scan automatically on start-up and save` : Scan automatically or not
 * `Organization`: Specify the Snyk Organization to use for scanning. Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug (`[orgslugname]`) as displayed in the URL of your Organization in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 * `Additional Parameters`: Specify additional parameters to pass to the CLI , for example, `--all-projects` or `--debug.` For all .NET Projects, Snyk recommends adding the `--all-projects` additional parameter.
 * `Additional Environment`: Add environment variables to Language Server; multiple variable can be separated by `;`. Example: `JAVA_HOME=/usr/local/bin;GOPATH=/usr/local/bin`
