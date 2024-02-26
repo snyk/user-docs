@@ -8,7 +8,7 @@ Snyk Broker is available only for Enterprise plans.
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, allowing for access by [snyk.io](http://snyk.io/) to your code to scan it and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC.  For more information, see [How Snyk Broker works](./#how-snyk-broker-works).
+Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, allowing for access by [snyk.io](http://snyk.io/) to your code to scan it and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. For more information, see [How Snyk Broker works](./#how-snyk-broker-works).
 
 ## How to download and install Snyk Broker
 
@@ -47,7 +47,7 @@ To scan other types of code with Snyk Broker, you must add a component or config
 
 Snyk Broker is designed to connect Snyk products to self-hosted integrations that are not publicly accessible from the internet. Snyk Broker also allows you to do the following:
 
-* Control Snyk's access to your network by limiting the files to which Snyk has access and the actions that Snyk can perform.
+* Control Snyk access to your network by limiting the files to which Snyk has access and the actions that Snyk can perform.
 * Manage a fixed private IP for your integration, targeting the Broker.
 
 Snyk Broker includes a Server and a Client, basic components that are the same across all integrations. The Broker Server runs on the Snyk SaaS backend and is provided by Snyk; no installation is required. The Broker Client is a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure. For more information, see [Components of Snyk Broker](components-of-snyk-broker.md) and [Connections with Snyk Broker](connections-with-snyk-broker.md).
