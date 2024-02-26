@@ -14,7 +14,7 @@ Snyk Broker is an open-source tool that acts as a proxy between Snyk and special
 
 Snyk Broker is hosted on [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. Snyk provides a [Helm Chart](https://github.com/snyk/snyk-broker-helm) to deploy Snyk Broker if you are using Kubernetes. To deploy Broker, you must install and configure an integration.
 
-The Snyk Broker documentation provides detailed instructions for using [Helm](install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) and [Docker](install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md). Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also use Docker to run the Snyk Broker Client or run npm `install snyk-broker`.
+You can install and configure using [Helm](install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) or [Docker](install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md). Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also install using Docker to run the Snyk Broker Client or run npm `install snyk-broker`.
 
 ## **Integrations with Snyk Broker**
 
@@ -22,12 +22,12 @@ Install each type of integration and configure using environment variables, as e
 
 Types of integrations supported with Broker are:
 
-* Your Source Code Management (SCM) system ([GitHub](install-and-configure-snyk-broker/github-install-and-configure-broker/), [GitHub Enterprise](install-and-configure-snyk-broker/github-enterprise-install-and-configure-broker/), [BitBucket Server/Data Center](install-and-configure-snyk-broker/bitbucket-server-data-center-install-and-configure-broker/), [GitLab](install-and-configure-snyk-broker/gitlab-install-and-configure-broker/), [Azure Repos](install-and-configure-snyk-broker/azure-repos-install-and-configure-broker/)
-  * SCM that is not internet reachable
+* Your Source Code Management (SCM) system ([GitHub](install-and-configure-snyk-broker/github-install-and-configure-broker/), [GitHub Enterprise](install-and-configure-snyk-broker/github-enterprise-install-and-configure-broker/), [BitBucket Server/Data Center](install-and-configure-snyk-broker/bitbucket-server-data-center-install-and-configure-broker/), [GitLab](install-and-configure-snyk-broker/gitlab-install-and-configure-broker/), [Azure Repos](install-and-configure-snyk-broker/azure-repos-install-and-configure-broker/))
+  * SCM that is not internet-reachable
   * Publicly-accessible SCM, allowing you to view and control Snyk activity for increased data security
 * Your on-premise [Jira](install-and-configure-snyk-broker/jira-install-and-configure-broker/), [JFrog Artifactory](install-and-configure-snyk-broker/artifactory-repository-install-and-configure-broker/), or [Nexus](install-and-configure-snyk-broker/nexus-repository-install-and-configure-broker/) installation
 * Network-restricted [container registries](snyk-broker-container-registry-agent/)
-* [Infrastructure as code (IaC) configuration files](snyk-broker-infrastructure-as-code-detection/) using Snyk IaC located on private Git-based repositories
+* [Infrastructure as code (IaC) configuration files](snyk-broker-infrastructure-as-code-detection/) on private Git-based repositories
 
 You can also use [derived Docker images](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent) for each integration and the Container Registry Agent.
 
@@ -35,7 +35,7 @@ For information about advanced configuration as needed for your installation, se
 
 ## **Using Snyk Broker to scan your code**
 
-To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and  Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables following the links in the previous section, [Integrations with Snyk Broker](./#integrations-with-snyk-broker).
+To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and  Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables following the links in the section [Integrations with Snyk Broker](./#integrations-with-snyk-broker).
 
 To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
 
