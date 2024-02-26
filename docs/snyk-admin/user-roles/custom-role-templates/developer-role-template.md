@@ -2,6 +2,8 @@
 
 This Organization-level role enables review of scan results, fixing issues, and initiating Project tests. They can view Organizations and Projects.
 
+Often, when deploying Snyk, developers might have the ability to override Snyk PR checks, but this permission might get revoked after developers are comfortable using the Snyk IDE extensions and start fixing issues earlier in the SDLC. Similarly, you may start by allowing them to add Projects and then limit that permission to a Team Lead.
+
 ## Organization-level permissions
 
 This table details the Organization-level permissions that apply to the **Developer** custom role.

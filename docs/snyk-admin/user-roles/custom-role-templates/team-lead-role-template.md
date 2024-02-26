@@ -1,6 +1,8 @@
 # Team Lead role template
 
-A Team Lead is equivalent to the default [**Organisation Admin**](../pre-defined-roles.md) role**,** providing additional capabilities to customize or change other user permissions.
+A Team Lead is equivalent to the default [**Organization Admin**](../pre-defined-roles.md) role**,** providing additional capabilities to customize or change other user permissions. We suggest duplicating the Organization Admin role as a starting point for this custom role creation.\
+\
+Sample permissions include the ability to **Mark as Successful** in Git repositories for pull request/merge request checks, with the ignore capability disabled.
 
 This Group-level role has all Organization-level permissions plus the following additional Group level permissions:
 
