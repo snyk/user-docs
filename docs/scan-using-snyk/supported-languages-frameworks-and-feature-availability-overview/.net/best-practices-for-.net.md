@@ -96,7 +96,7 @@ Runtime dependencies (provided by the runtime environment known as "meta-package
 
 Snyk can analyze dependencies managed by Paket through the CLI. Keep in mind that the paket.dependencies and paket.lock must be present.
 
-For more information on Paket support, see [Snyk for .net](broken-reference).
+For more information on Paket support, see [Snyk for .NET](./).
 
 ## Other
 
@@ -106,7 +106,7 @@ Snyk provides custom test APIs for your unique dependency management strategies.
 
 ## Build-time versus runtime dependencies
 
-See [Snyk for .NET](broken-reference) for more information
+See [Snyk for .NET](./) for more information
 
 ## Snyk CLI tips and tricks
 
