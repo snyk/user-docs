@@ -1,48 +1,31 @@
 # Determine user roles
 
-## Use default or customized roles?
+## Use default or custom roles?
 
-A key consideration when setting up Snyk is determining if the pre-defined [default user roles](../../../snyk-admin/user-roles/pre-defined-roles.md) align with your needs, or if you need to customize roles for your business requirements.&#x20;
-
-{% hint style="info" %}
-The default user roles in Snyk have a fixed set of permissions that cannot be changed. One of the biggest advantages of customizing roles is that you can adjust the role permissions to align with your desired level of control.&#x20;
-{% endhint %}
-
-## Default roles
-
-The following are the default user roles. See [Pre-defined roles](../../../snyk-admin/user-roles/pre-defined-roles.md) for more details.
-
-* **Group Member**: a non-functional role in Snyk. The user has access to the Group but requires Organization-level permissions to use Snyk.&#x20;
-* **Group Admin**: provides a full set of permissions at the Group and Organization level. No other roles need to be assigned. This role is typically used for users who manage Snyk.&#x20;
-* **Org Admin**: Typically assigned to team leads. Users with this role can add and delete Projects, override Snyk checks, and provision Group users with an Organization-level role.&#x20;
-* **Org Collaborator**: This is the default role in Snyk used for developers. This role is ideal for small teams or a very developer-first organizational approach.&#x20;
+A key consideration when setting up Snyk is determining if the [pre-defined user roles](../../../snyk-admin/user-roles/pre-defined-roles.md) align with your needs or if you need to customize roles for your business requirements.
 
 {% hint style="info" %}
-Large enterprises typically limit access to actions such as who can add or delete Projects, and so reduce permissions early on. For this purpose, you should use Custom Roles, for example, creating a **Team Lead** role to provide a middle ground between the **Org Collaborator** and **Org Admin** roles.
+The pre-defined user roles in Snyk have a fixed set of permissions that cannot be changed. One of the biggest advantages of customizing roles is that you can adjust the role permissions to align with your desired level of control.&#x20;
 {% endhint %}
 
-As with all default roles, the permissions within the **Org Collaborator** role cannot be changed, so you cannot grant the developers the ability to **Mark SCM Check as Successful**. This role can be helpful when introducing developers to Snyk PR Checks. This is where Custom Roles is useful.&#x20;
+## Pre-defined roles
 
-## Customized roles
+The following are the standard pre-defined user roles. See [Pre-defined roles](../../../snyk-admin/user-roles/pre-defined-roles.md) for more details.
 
-The [User role management](../../../snyk-admin/user-roles/user-role-management.md) feature provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce customized access by assigning a set of permissions to a role that will be granted to users. The permissions within these roles can be updated and changed even after assigning them to users.&#x20;
-
-The most common types of custom roles include Team Lead and Developer.
+* **Group Member**: a non-functional role in Snyk. The user can access the Group but requires Organization-level permissions to use Snyk.
+* **Group Viewer**: a user that can access the Group level but requires Organization-level permissions to take actions in Snyk. This is normally used as a starting point during onboarding with Snyk to understand functions tied to Group permissions and design a custom Group role for post-deployment use.
+* **Group Admin**: provides a full set of permissions at the Group and Organization level. No other roles need to be assigned. This role is typically used for users who manage Snyk.
+* **Organization Admin**: Typically assigned to Team Leads. Users with this role can add and delete Projects, override Snyk checks, and provision Group users with an Organization-level role.
+* **Organization Collaborator**: This is the standard role in Snyk used for developers. This role is ideal for small teams or a very developer-first organizational approach.
 
 {% hint style="info" %}
-See [Custom role templates](../../../snyk-admin/user-roles/custom-role-templates/) for examples.
+Large enterprises typically limit access to actions such as who can add or delete Projects, and so reduce permissions early on. For this purpose, you should use Custom Roles, for example, creating a **Team Lead** role to provide a middle ground between the **Organization Collaborator** and **Organization Admin** roles.
 {% endhint %}
 
-### Team Lead&#x20;
+## Custom roles
 
-* This often starts as an equivalent to the Org Admin default role but would provide the ability to customize or change the permissions within the role if needed. You can duplicate the default Org Admin role as a starting point.&#x20;
-* Sample permissions might include the ability to **Mark as Successful** in SCM for pull request/merge request checks., with the ignore capability disabled.
+The [User role management](../../../snyk-admin/user-roles/user-role-management.md) feature provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce customized access by assigning a set of permissions to a role that will be granted to users. The permissions within these roles can be updated and changed even after assigning them to users.
 
-### Developer&#x20;
+As with all pre-defined roles, the permissions within the **Organization Collaborator** role cannot be changed, so you cannot grant the developers the ability to **Mark SCM Check as Successful**. This pre-defined role can be helpful when introducing developers to Snyk PR Checks but cannot be expanded when a developer is fully functioning in a Snyk environment. This is where Custom Roles are useful.
 
-* This is a custom role that, at minimum, allows developers to view Organizations and Projects and also gives them the ability to test Projects.&#x20;
-* Often, when a company is deploying Snyk, developers might have the ability to override Snyk PR checks, but this permission might get revoked after developers are comfortable using the Snyk IDE extensions and start fixing issues earlier in the SDLC. Similarly, you may start by allowing them to add Projects and then limit that permission to a team lead.
-
-{% hint style="info" %}
-Remember to give developers the ability to `test` Projects and `test` packages when you create the developer role to ensure developers can initiate tests.
-{% endhint %}
+The most common types of custom roles include [Team Lead](../../../snyk-admin/user-roles/custom-role-templates/team-lead-role-template.md) and [Developer](../../../snyk-admin/user-roles/custom-role-templates/developer-role-template.md), but your company can have custom roles that suit your business structure. Snyk has provided multiple templates for you to use in structuring your Enterprise in Snyk; for more custom role suggestions and the listed permissions, see [Custom role templates](../../../snyk-admin/user-roles/custom-role-templates/).
