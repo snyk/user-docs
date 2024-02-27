@@ -6,7 +6,7 @@ Before starting installation, review the [Prerequisites](../prepare-snyk-broker-
 
 For **all other environments**, you can install Snyk Broker using the [Docker images](https://github.com/snyk/broker) provided by Snyk. For details, see [Install and configure Broker using Docker](install-and-configure-broker-using-docker.md).
 
-## Installation using the Snyk Broker Helm Chart
+## Install using the Snyk Broker Helm Chart
 
 The Helm chart does not manage connectivity, and thus you will be responsible for managing [ingress](advanced-configuration-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
 
@@ -14,7 +14,7 @@ To use this chart, you must first add the Snyk Broker Helm Chart by adding the r
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
 
-Then run the commands for each SCM, registry or Jira as explained on the following pages:
+Then run the commands to customize the environment variables for each SCM, registry, or Jira as explained on the following pages:
 
 * [GitHub](github-prerequisites-to-install-and-configure-broker/githhub.com-install-and-configure-using-helm.md) `scmType`: `github-com`
 * [GitHub Enterprise](github-enterprise-prerequisites-to-install-and-configure-broker/github-enterprise-install-and-configure-using-helm.md) `scmType`: `github-enterprise`
@@ -39,6 +39,6 @@ Additional commands are available to Install the Snyk Broker Code Agent and Cont
 
 You can verify that the Broker is running by looking at the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a confirmation message that you are connected. You can start importing Projects once you are connected.
 
-## Set advanced parameters for Snyk Broker using the Helm Chart
+## Advanced configuration using Helm
 
 When you install using Helm, follow the instructions in the pages on [Advanced configuration for Helm Chart installation](advanced-configuration-for-helm-chart-installation/) as needed.
