@@ -1,6 +1,6 @@
 # Install and configure Broker using Docker
 
-Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, providing for access by [snyk.io](http://snyk.io/) to your code to scan it and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. For details about Snyk Broker, including how it works, how to deploy it, commit signing, upgrading, and troubleshooting, see the Snyk Broker user documentation.
+Before starting installation, review the [Prerequisites](../prepare-snyk-broker-for-deployment.md#prerequisites-for-snyk-broker) and other information on the page [Prepare Snyk Broker for deployment](../prepare-snyk-broker-for-deployment.md).
 
 **If you are using Kubernetes**, Snyk recommends that you **install Snyk Broker with the** [**Broker Helm Chart**](https://github.com/snyk/snyk-broker-helm). For details, see[ Install and configure Broker using Helm.](install-and-configure-broker-using-helm.md)
 
@@ -8,10 +8,7 @@ For **all other environments**, you can install Snyk Broker using the [Docker im
 
 ## Installation using Docker
 
-**Multi-tenant settings for EU and AU**\
-When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
-Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
-For the URLs, see [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md).
+The following pages explain how to install these special integrations.
 
 * [GitHub](github-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md)
 * [GitHub Enterprise](github-enterprise-install-and-configure-broker/setup-broker-with-github-enterprise.md)
@@ -33,20 +30,7 @@ You can verify that the Broker is running by looking at the settings for your br
 
 ## Advanced configuration using Docker
 
-When you install using Docker, follow these instructions to configure Broker as needed:
-
-* [Changing the auth method with Docker](advanced-configuration-for-snyk-broker-docker-installation/changing-the-auth-method-with-docker.md)
-* [Credential pooling with Docker](advanced-configuration-for-snyk-broker-docker-installation/credential-pooling-with-docker-and-helm.md)
-* [HTTPS for Broker Client with Docker](advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker.md)
-* [Backend requests with an internal certificate for Docker](advanced-configuration-for-snyk-broker-docker-installation/backend-requests-with-an-internal-certificate-for-docker.md)
-* [Proxy support with Docker](advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md)
-* [Disable certificate verification with Docker](advanced-configuration-for-snyk-broker-docker-installation/disable-certificate-verification-with-docker.md)
-* [Custom approved-listing filter with Docker](advanced-configuration-for-snyk-broker-docker-installation/custom-approved-listing-filter-with-docker.md)
-* [Mounting secrets with Docker](advanced-configuration-for-snyk-broker-docker-installation/mounting-secrets-with-docker.md)
-* [Snyk Code - Clone capability with Broker for Docker](advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
-* [High availability mode](../high-availability-mode.md)
-* [Large manifest files rule addition](advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md)
-* [Insecure downstream mode](advanced-configuration-for-snyk-broker-docker-installation/insecure-downstream-mode.md)
+When you install using Docker, follow the instructions in the pages on [Advanced configuration for Snyk Broker Docker installation](advanced-configuration-for-snyk-broker-docker-installation/) as needed.
 
 ## Common questions about Snyk Broker
 
