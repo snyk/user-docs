@@ -12,7 +12,9 @@ For information about non-brokered integration with Nexus Repository Manager inc
 
 ## Nexus 3 Helm installation
 
-For instructions on using the Snyk Broker Helm Chart, see [Install and configure Broker using Helm](../install-and-configure-broker-using-helm.md). The command to use follows. For definitions of the environment variables, see [Nexus Repository - environment variables for Snyk Broker](nexus-repository-environment-variables-for-snyk-broker.md).
+Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
+
+The command to set the environment variables follows. For definitions of the environment variables, see [Nexus Repository - environment variables for Snyk Broker](nexus-repository-environment-variables-for-snyk-broker.md).
 
 Note: for `baseNexusUrl` and `nexusUrl` values include `https://`
 
@@ -28,7 +30,9 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 ## Nexus 2 Helm installation
 
-For instructions on using the Snyk Broker Helm Chart, see [Install and configure Broker using Helm](../install-and-configure-broker-using-helm.md). The command to use follows. For definitions of the environment variables, see [Nexus Repository - environment variables for Snyk Broker](nexus-repository-environment-variables-for-snyk-broker.md).
+Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
+
+The command to set the environment variables follows. For definitions of the environment variables, see [Nexus Repository - environment variables for Snyk Broker](nexus-repository-environment-variables-for-snyk-broker.md).
 
 Note: for `baseNexusUrl` and `nexusUrl` values include `https://`
 

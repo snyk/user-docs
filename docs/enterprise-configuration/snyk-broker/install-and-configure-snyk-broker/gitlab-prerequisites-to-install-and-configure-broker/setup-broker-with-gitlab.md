@@ -1,5 +1,7 @@
 # GitLab - install and configure using Docker
 
+Before installing, review the prerequisites and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).
+
 This integration is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
 
 ## Configure Broker to be used for GitLab
