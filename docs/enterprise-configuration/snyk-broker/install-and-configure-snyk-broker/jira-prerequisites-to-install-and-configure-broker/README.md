@@ -1,0 +1,11 @@
+# Jira - prerequisites to install and configure Broker
+
+Before installing the Snyk Nexus Repository Broker, ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
+
+To install using Docker, you must have Docker or a way to run Docker Linux containers.\
+Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+
+To generate a Broker token from the Web UI:
+
+1. Navigate to **Settings** > **Integrations** > **Jira** > **For installation of Jira within a private network click here**.
+2. Click **Generate** to generate a Broker Token for Jira and click **Show** to confirm.

@@ -1,18 +1,12 @@
 # Azure Repos - install and configure using Docker
 
-{% hint style="warning" %}
-**Feature availability**\
+{% hint style="info" %}
+**Feature availability**
+
 Snyk Azure Repos are available only for Azure DevOps/TFS 2020 or above.
 {% endhint %}
 
-Follow the instructions on this page to set up Snyk Azure Repos with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
-
-{% hint style="info" %}
-**Prerequisites**\
-Ask your Snyk account team to provide you with a Broker token.
-
-You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
-{% endhint %}
+This integration is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
 
 ## Configure Broker to be used with Azure Repos
 

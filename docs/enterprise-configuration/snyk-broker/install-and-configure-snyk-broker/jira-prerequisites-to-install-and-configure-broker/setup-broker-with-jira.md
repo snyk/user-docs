@@ -1,15 +1,6 @@
 # Jira - install and configure using Docker
 
-Follow the instructions on this page to set up Jira with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Jira deployment.
-
-{% hint style="info" %}
-Docker is a prerequisite.
-{% endhint %}
-
-## Generate a Broker token from the Web UI
-
-1. Click **Settings** > **Integrations** > **Jira** > **For installation of Jira within a private network click here**.
-2. Click **Generate** to generate a Broker Token for Jira and click **Show** to confirm.
+This integration is useful to ensure a secure connection with your on-premise Jira deployment.
 
 ## Configure Broker to be used for Jira
 

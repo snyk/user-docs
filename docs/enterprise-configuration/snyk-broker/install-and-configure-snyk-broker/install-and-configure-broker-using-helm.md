@@ -16,15 +16,15 @@ To use this chart, you must first add the Snyk Broker Helm Chart by adding the r
 
 Then run the commands for each SCM, registry or Jira as explained on the following pages:
 
-* [GitHub](github-install-and-configure-broker/githhub.com-install-and-configure-using-helm.md) `scmType`: `github-com`
-* [GitHub Enterprise](github-enterprise-install-and-configure-broker/github-enterprise-install-and-configure-using-helm.md) `scmType`: `github-enterprise`
-* [Bitbucket Server/Data Center](bitbucket-server-data-center-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-helm.md) `scmType`: `bitbucket-server`
-* [GitLab](gitlab-install-and-configure-broker/gitlab-install-and-configure-using-helm.md) `scmType`: `gitlab`
-* [Azure Repos](azure-repos-install-and-configure-broker/azure-repos-install-and-configure-and-configure-using-helm.md) `scmType`: `azure-repos`
+* [GitHub](github-prerequisites-to-install-and-configure-broker/githhub.com-install-and-configure-using-helm.md) `scmType`: `github-com`
+* [GitHub Enterprise](github-enterprise-prerequisites-to-install-and-configure-broker/github-enterprise-install-and-configure-using-helm.md) `scmType`: `github-enterprise`
+* [Bitbucket Server/Data Center](bitbucket-server-data-center-prerequisites-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-helm.md) `scmType`: `bitbucket-server`
+* [GitLab](gitlab-prerequisites-to-install-and-configure-broker/gitlab-install-and-configure-using-helm.md) `scmType`: `gitlab`
+* [Azure Repos](azure-repos-prerequisites-to-install-and-configure-broker/azure-repos-install-and-configure-and-configure-using-helm.md) `scmType`: `azure-repos`
 * [JFrog Artifactory](artifactory-repository-install-and-configure-broker/artifactory-repository-install-and-configure-using-helm.md) `scmType`: `artifactory`
-* [Nexus 3](nexus-repository-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus`
-* [Nexus 2](nexus-repository-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus2`
-* [Jira](jira-install-and-configure-broker/jira-install-and-configure-using-helm.md) `scmType`: `jira`
+* [Nexus 3](nexus-repository-prerequisites-to-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus`
+* [Nexus 2](nexus-repository-prerequisites-to-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus2`
+* [Jira](jira-prerequisites-to-install-and-configure-broker/jira-install-and-configure-using-helm.md) `scmType`: `jira`
 
 `scmType` designates the system type. For JFrog and Nexus, this is an artifact repository, For Jira, it is a ticket management system.
 

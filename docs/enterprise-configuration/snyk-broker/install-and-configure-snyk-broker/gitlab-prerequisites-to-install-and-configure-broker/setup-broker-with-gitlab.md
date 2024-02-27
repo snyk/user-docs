@@ -1,16 +1,6 @@
 # GitLab - install and configure using Docker
 
-Follow the instructions on this page to set up GitLab with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
-
-{% hint style="info" %}
-**Prerequisites**
-
-Ask your Snyk account team to provide you with a Broker token.
-
-Ensure that the GItLab permissions are correct for integration with Snyk. For details, see [GitLab integration](../../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-gitlab-integration.md).
-
-You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
-{% endhint %}
+This integration is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
 
 ## Configure Broker to be used for GitLab
 

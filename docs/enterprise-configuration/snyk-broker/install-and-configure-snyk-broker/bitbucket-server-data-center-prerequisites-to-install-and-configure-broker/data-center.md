@@ -1,21 +1,8 @@
 # Bitbucket Server/Data Center - install and configure using Docker
 
-Follow the instructions on this page to set up Bitbucket Server/Data Center with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Bitbucket deployment.
-
-{% hint style="info" %}
-**Prerequisites**\
-Ask your Snyk account team to provide you with a Broker token.
-
-You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
-{% endhint %}
+This integration is useful to ensure a secure connection with your on-premise Bitbucket deployment.
 
 ## Configure Broker to be used with Bitbucket
-
-{% hint style="warning" %}
-**Release status**
-
-Snyk Code PR Checks are available only for Bitbucket DC/Server versions 7.0 and above
-{% endhint %}
 
 The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment.
 

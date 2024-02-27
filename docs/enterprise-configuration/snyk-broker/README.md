@@ -22,10 +22,10 @@ Install each type of integration and configure using environment variables, as e
 
 Types of integrations supported with Broker are:
 
-* Your Source Code Management (SCM) system ([GitHub](install-and-configure-snyk-broker/github-install-and-configure-broker/), [GitHub Enterprise](install-and-configure-snyk-broker/github-enterprise-install-and-configure-broker/), [BitBucket Server/Data Center](install-and-configure-snyk-broker/bitbucket-server-data-center-install-and-configure-broker/), [GitLab](install-and-configure-snyk-broker/gitlab-install-and-configure-broker/), [Azure Repos](install-and-configure-snyk-broker/azure-repos-install-and-configure-broker/))
+* Your Source Code Management (SCM) system ([GitHub](install-and-configure-snyk-broker/github-prerequisites-to-install-and-configure-broker/), [GitHub Enterprise](install-and-configure-snyk-broker/github-enterprise-prerequisites-to-install-and-configure-broker/), [BitBucket Server/Data Center](install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-to-install-and-configure-broker/), [GitLab](install-and-configure-snyk-broker/gitlab-prerequisites-to-install-and-configure-broker/), [Azure Repos](install-and-configure-snyk-broker/azure-repos-prerequisites-to-install-and-configure-broker/))
   * SCM that is not internet-reachable
   * Publicly-accessible SCM, allowing you to view and control Snyk activity for increased data security
-* Your on-premise [Jira](install-and-configure-snyk-broker/jira-install-and-configure-broker/), [JFrog Artifactory](install-and-configure-snyk-broker/artifactory-repository-install-and-configure-broker/), or [Nexus](install-and-configure-snyk-broker/nexus-repository-install-and-configure-broker/) installation
+* Your on-premise [Jira](install-and-configure-snyk-broker/jira-prerequisites-to-install-and-configure-broker/), [JFrog Artifactory](install-and-configure-snyk-broker/artifactory-repository-install-and-configure-broker/), or [Nexus](install-and-configure-snyk-broker/nexus-repository-prerequisites-to-install-and-configure-broker/) installation
 * Network-restricted [container registries](snyk-broker-container-registry-agent/)
 * [Infrastructure as code (IaC) configuration files](snyk-broker-infrastructure-as-code-detection/) on private Git-based repositories
 

@@ -1,13 +1,6 @@
 # GitHub Enterprise - install and configure using Docker
 
-Follow the instructions on this page to set up GitHub Enterprise with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitHub Enterprise deployment.
-
-{% hint style="info" %}
-**Prerequisites**\
-Ask your Snyk account team to provide you with a Broker token.
-
-You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
-{% endhint %}
+This integration is useful to ensure a secure connection with your on-premise or cloud GitHub Enterprise deployment.
 
 ## Configure Broker to be used for GitHub Enterprise
 
