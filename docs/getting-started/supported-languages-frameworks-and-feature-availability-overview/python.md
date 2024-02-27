@@ -44,7 +44,7 @@ To scan your Projects, you must first install the relevant package manager and e
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+1. [Create a Snyk account](../quickstart/create-or-log-in-to-a-snyk-account.md).
 2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
 3. [Set the default Organization for all Snyk tests](broken-reference) (code analysis).
 4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
@@ -223,7 +223,7 @@ The supported versions are `2.7.16` and `3.7.4.`
 
 By default, Snyk tests pip Projects using Python 3.
 
-To define which Python Major version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../the-.snyk-file.md).
+To define which Python Major version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../../scan-using-snyk/the-.snyk-file.md).
 
 To define the Python version for all Projects in an Organization:
 
@@ -266,7 +266,7 @@ The behavior of imports, re-tests, and PR checks for Projects with dependencies 
 * Python 3.8 or above - scans will fail with an [error](https://docs.snyk.io/more-info/error-catalog#snyk-os-pip-0004) including details of the first failed package, the Python version it requires, and the Python version used.
 {% endhint %}
 
-To define which Python minor version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../the-.snyk-file.md).
+To define which Python minor version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../../scan-using-snyk/the-.snyk-file.md).
 
 To define the Python version for all Projects in an Organization:
 

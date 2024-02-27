@@ -52,7 +52,7 @@ The way Snyk analyzes and builds the dependencies tree varies depending on the l
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+1. [Create a Snyk account](../quickstart/create-or-log-in-to-a-snyk-account.md).
 2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
 3. [Set the default Organization for all Snyk tests](broken-reference) (code analysis).
 4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
@@ -106,7 +106,7 @@ These settings are applied to all newly imported Projects and to all existing Pr
 #### What's next?
 
 * [Open a Fix PR](php.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

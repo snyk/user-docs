@@ -16,7 +16,7 @@ Interfile is currently not supported. The data flow is monitored within a single
 
 #### Prerequisites
 
-* [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+* [Create a Snyk account](../quickstart/create-or-log-in-to-a-snyk-account.md)
 * [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 * [Set the default Organization for all Snyk tests](broken-reference) (code analysis)
 
@@ -38,7 +38,7 @@ To customize test options, run other commands, exclude directories and files, an
 #### What's next?
 
 * [Open a Fix PR](apex.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

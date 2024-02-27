@@ -51,7 +51,7 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+1. [Create a Snyk account](../../quickstart/create-or-log-in-to-a-snyk-account.md)
 2. [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 3. [Set the default Organization for all Snyk tests](broken-reference) (code analysis)
 
@@ -165,7 +165,7 @@ You can also **update your language preferences.**
 
 #### Fixing vulnerabilities for .NET
 
-For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your Projects, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md).
+For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your Projects, see [Fix your vulnerabilities](../../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md).
 
 {% hint style="info" %}
 **Feature availability**\

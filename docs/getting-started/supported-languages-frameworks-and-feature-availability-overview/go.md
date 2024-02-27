@@ -29,7 +29,7 @@ To manage licenses from your developer workflows through policy, see the followi
 
 #### Open source license compliance
 
-To check compliance for open source licenses, see [Snyk License Compliance Management](../snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md).
+To check compliance for open source licenses, see [Snyk License Compliance Management](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md).
 
 #### Open source supported features
 
@@ -55,7 +55,7 @@ The way Snyk analyzes and builds the dependencies tree varies depending on the l
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+1. [Create a Snyk account](../quickstart/create-or-log-in-to-a-snyk-account.md).
 2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
 3. [Set the Snyk Organization for CLI tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md).
 4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
@@ -126,7 +126,7 @@ If full source code analysis is enabled, Snyk uses the `go list -json -deps ./..
 #### Enable full source code analysis
 
 {% hint style="info" %}
-Full source code analysis for Go Modules is currently in [Open beta](../../getting-started/snyk-release-process.md#open-beta).
+Full source code analysis for Go Modules is currently in [Open beta](../snyk-release-process.md#open-beta).
 {% endhint %}
 
 To build the most accurate dependency tree for Go Modules Projects imported from Git, Snyk needs to access all the files in your repository.
@@ -175,7 +175,7 @@ To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your Git r
 #### What's next?
 
 * [Open a Fix PR](go.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

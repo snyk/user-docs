@@ -88,7 +88,7 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+1. [Create a Snyk account](../../quickstart/create-or-log-in-to-a-snyk-account.md)
 2. [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 3. [Set the default Organization for all Snyk tests](broken-reference) (code analysis)
 4. Install the relevant package manager before you use the Snyk CLI.
@@ -367,7 +367,7 @@ To import Projects from a Git repository integration:
    \
    If you have an integrated Git repository (GitHub) it shows up as an option to choose from.
 
-[Import a Project](../../../getting-started/quickstart/import-a-project.md)
+[Import a Project](../../quickstart/import-a-project.md)
 
 #### Configure language settings for open source&#x20;
 
@@ -392,7 +392,7 @@ The following capabilities are available for all Snyk users:
 
 **With Git integrations**
 
-Snyk allows you to [run PR Checks](../../run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
+Snyk allows you to [run PR Checks](../../../scan-using-snyk/run-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
 
 These results are viewable on the Snyk projects screen, for:
 
@@ -443,7 +443,7 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 #### What's next?
 
 * [Open a Fix PR](./#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

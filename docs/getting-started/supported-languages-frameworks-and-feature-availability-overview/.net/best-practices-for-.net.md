@@ -27,11 +27,11 @@ There are a couple of actions you can choose to take to address these types of v
 
 #### **Vulnerabilities from runtime dependencies in SCM**
 
-If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your Project, you may choose to [ignore](../../find-and-manage-priority-issues/ignore-issues/) it.
+If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your Project, you may choose to [ignore](../../../scan-using-snyk/find-and-manage-priority-issues/ignore-issues/) it.
 
 #### **Vulnerabilities from runtime dependencies in CLI**
 
-If you believe you have found false positives because when the application runs in production, you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your Project, you may [ignore](../../find-and-manage-priority-issues/ignore-issues/) them and do the following:
+If you believe you have found false positives because when the application runs in production, you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your Project, you may [ignore](../../../scan-using-snyk/find-and-manage-priority-issues/ignore-issues/) them and do the following:
 
 * If, in production your application always runs on the latest SDK patch version, you can set `TargetLatestRuntimePatch` to `true` in the Project file. Make sure to upgrade your environments (for example, dev, prod) to the latest runtime version.
 
@@ -131,7 +131,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Containers**
 
-:link: [Supported Operating System Distributions](../../snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
+:link: [Supported Operating System Distributions](../../../scan-using-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
 
 :link: [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
 

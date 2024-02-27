@@ -129,7 +129,7 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 #### Prerequisites
 
-* [Create a Snyk account](../../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+* [Create a Snyk account](../../quickstart/create-or-log-in-to-a-snyk-account.md)
 * [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 * [Set the default Organization for all Snyk tests](broken-reference) (code analysis)
 
@@ -212,7 +212,7 @@ snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6
 
 
 
-Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path (see [The .snyk file](../../the-.snyk-file.md)).
+Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path (see [The .snyk file](../../../scan-using-snyk/the-.snyk-file.md)).
 
 ```javascript
 snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
@@ -234,7 +234,7 @@ To import Projects from a Git repository integration:
    \
    If you have an integrated Git repository (GitHub) it shows up as an option to choose from.
 
-:link: [Import a Project](../../../getting-started/quickstart/import-a-project.md)
+:link: [Import a Project](../../quickstart/import-a-project.md)
 
 #### Configure language settings for open source&#x20;
 
@@ -273,7 +273,7 @@ If you use the **zero-installs** feature, Snyk Fix PRs do not update the **.yarn
 #### What's next?
 
 * [Open a Fix PR](./#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 
