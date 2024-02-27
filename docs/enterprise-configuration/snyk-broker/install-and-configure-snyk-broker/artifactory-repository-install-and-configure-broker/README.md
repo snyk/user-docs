@@ -8,6 +8,10 @@ Integration with Artifactory Repository is available only for Enterprise plans.
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
+Before installing, review the general instructions for the installation method you plan to use, [Helm](../install-and-configure-broker-using-helm.md) or [Docker](../install-and-configure-broker-using-docker.md).
+
+The prerequisites follow.
+
 Before installing the Snyk Artifactory Repository Broker, ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
 
 To install using Docker, you must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
