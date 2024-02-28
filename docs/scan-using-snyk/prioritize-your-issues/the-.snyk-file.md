@@ -10,14 +10,14 @@ If you use the `.snyk` file to specify ignores, you avoid having to specify them
 
 Generally, you must ensure the `.snyk` file is created in the code repository, the same as other applications and build resources.
 
-You can create the `.snyk` file for Open Source by using the `snyk ignore` command. For details, see the [Ignore](../snyk-cli/commands/ignore.md) command CLI help.
+You can create the `.snyk` file for Open Source by using the `snyk ignore` command. For details, see the [Ignore](../../snyk-cli/commands/ignore.md) command CLI help.
 
 If you do not have an existing `.snyk` file, you can create one and populate it with the code that follows:\
 &#x20;`# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
 `version: v1.25.0`
 
 * The `version` should be set to `v1.25.0` as this is the current policy schema version.&#x20;
-* The ignore block or blocks should follow the relevant syntax as shown in the [description of the `ignore` command](../snyk-cli/commands/ignore.md#description) or the examples on this page.
+* The ignore block or blocks should follow the relevant syntax as shown in the [description of the `ignore` command](../../snyk-cli/commands/ignore.md#description) or the examples on this page.
 
 Snyk also provides the [snyk-policy package](https://www.npmjs.com/package/snyk-policy) to create a policy file, typically named `.snyk`. Note that the version of the package is not the same as the policy schema version to be entered in the `.snyk` file
 
@@ -44,11 +44,11 @@ You can use the `.snyk` file to specify files or directories in a repository tha
 
 For Projects imported using a code repository integration as opposed to using the `snyk monitor` command, the `--policy-path` option is not available. The `.snyk` file applies only to Projects found on the same path as the `.snyk` file.
 
-For details, see [Excluding directories and files from the import process](snyk-code/import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md).
+For details, see [Excluding directories and files from the import process](../snyk-code/import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md).
 
 ## Use the `.snyk` file with Snyk IaC
 
-For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md). For more information, see [Ignore resources for drift](snyk-iac/iac+-code-to-cloud-capabilities/detect-drift-and-manually-created-resources/ignore-resources-for-drift.md).
+For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md). For more information, see [Ignore resources for drift](../snyk-iac/iac+-code-to-cloud-capabilities/detect-drift-and-manually-created-resources/ignore-resources-for-drift.md).
 
 ## Use the `.snyk` file with Snyk Open Source
 
@@ -67,7 +67,7 @@ When you include the `.snyk` file in your code repository and the `language-sett
 * For SCM scans, for example, GitHub scans, the Snyk Web UI controls the Python version at the Organization level, from the **Organization > Settings > Languages > Python > Pip Python version** option.
 * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options.
 * Note that you may need to r**e-import the Project if the `.snyk` file was not present at the initial import** of the Project into Snyk.
-* See the [Python version](../getting-started/supported-languages-frameworks-and-feature-availability-overview/python.md#python-version-support) documentation for more information about Python version support.&#x20;
+* See the [Python version](../../getting-started/supported-languages-frameworks-and-feature-availability-overview/python.md#python-version-support) documentation for more information about Python version support.&#x20;
 
 For more information about using the `.snyk` file with Open Source Projects, see the following:
 
@@ -164,7 +164,7 @@ If **Admin users only** is enabled by using **Settings > General > Ignores**) yo
 
 Follow these steps to set these ignore preferences for use by the Snyk Web UI and API:
 
-1. Log in to your [Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+1. Log in to your [Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
 2. Select **Settings**, then **General**.
 3. Select an option as follows:
    * **Admin users only** - only admins can customize the ignore settings.

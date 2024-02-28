@@ -7,7 +7,7 @@ When you ignore an issue, you must consider the following factors:
 * How was the ignore created: In a policy? Through the UI from the Project page? Using an API? In a  `.snyk` file?
   * For ignores created in a policy, ignoring an issue on the Organization level will ensure the issues are ignored for Projects imported using an SCM and Projects imported using the CLI.
   * Ignoring for a particular Project or attribute will ensure the issue is ignored only for the specific Project and only for Projects imported using an SCM.
-  * For more information, see [Ignore issues in the Snyk Web UI](./#ignore-issues-in-the-snyk-web-ui), [Security policies](../../../scan-with-snyk/policies/security-policies/), and [The `.snyk` file](../../the-.snyk-file.md).
+  * For more information, see [Ignore issues in the Snyk Web UI](./#ignore-issues-in-the-snyk-web-ui), [Security policies](../../../scan-with-snyk/policies/security-policies/), and [The `.snyk` file](../the-.snyk-file.md).
 
 Depending on these factors, the ignore is respected for testing in different places. Where will the ignore be respected testing?
 

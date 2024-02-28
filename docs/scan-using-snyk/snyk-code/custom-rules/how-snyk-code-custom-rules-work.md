@@ -52,7 +52,7 @@ _A_ll Snyk Code rules, including custom rules, run against the Event Graph, wher
 
 A vulnerability is removed and added to the resolved issues section within the reporting tab when it has been addressed.
 
-For more information, see [The .snyk file](../../the-.snyk-file.md).
+For more information, see [The .snyk file](../../prioritize-your-issues/the-.snyk-file.md).
 
 ## Suggestive AI support
 

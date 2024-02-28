@@ -112,7 +112,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../../the-.snyk-file.md), including the section about [.snyk files in monorepos](../../the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
+For more information, see [The .snyk file](../the-.snyk-file.md), including the section about [.snyk files in monorepos](../the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
 {% endhint %}
 
 ### Use policy actions to ignore issues
@@ -149,7 +149,7 @@ For more information, see [Ignore CLI results for Snyk Code](../../../snyk-cli/s
 
 ## Ignore issues in Snyk Container
 
-When you scan container images using `snyk container test`, you can ignore issues that are not relevant to you by setting an ignore in [The .snyk file](../../the-.snyk-file.md).
+When you scan container images using `snyk container test`, you can ignore issues that are not relevant to you by setting an ignore in [The .snyk file](../the-.snyk-file.md).
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory.
 
@@ -159,7 +159,7 @@ After you set an ignore, when you use the `snyk container test` or `snyk contain
 
 ## Ignore issues in Snyk IaC
 
-When scanning your IaC configuration files using `snyk iac test`, you can ignore issues that are not relevant to you by using [The .snyk file](../../the-.snyk-file.md).
+When scanning your IaC configuration files using `snyk iac test`, you can ignore issues that are not relevant to you by using [The .snyk file](../the-.snyk-file.md).
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 

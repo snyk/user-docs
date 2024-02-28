@@ -310,7 +310,7 @@ An individual report within the test history of a Project. Includes a tree of de
 
 ### `.snyk` policy
 
-A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../scan-using-snyk/the-.snyk-file.md).
+A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../scan-using-snyk/prioritize-your-issues/the-.snyk-file.md).
 
 ### Snyk
 
