@@ -33,6 +33,6 @@ In **Settings-General** it's common to limit access to who can ignore an issue a
 
 By default, the **Organization Collaborator** role has permission to ignore issues, but this can be controlled per Organization in the **Settings** page (that is, restricted to **Organization admins** only).&#x20;
 
-See [Ignore issues](../../scan-using-snyk/find-and-manage-priority-issues/ignore-issues/) for more details.
+See [Ignore issues](../../scan-using-snyk/prioritize-your-issues/ignore-issues/) for more details.
 
 ##

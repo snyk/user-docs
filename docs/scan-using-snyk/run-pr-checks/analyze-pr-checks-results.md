@@ -50,7 +50,7 @@ Confirm your selected issue and click **Open a Fix PR** to open a pull request i
 2. Find the conversation card showing the PR Checks results. For this example, the result is set to **Failed** and is manually changed to **Passed**.&#x20;
 
 {% hint style="info" %}
-Issues that have previously been ignored via the Snyk Web UI in the associated Open Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../find-and-manage-priority-issues/ignore-issues/) across feature branch PRs.
+Issues that have previously been ignored via the Snyk Web UI in the associated Open Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../prioritize-your-issues/ignore-issues/) across feature branch PRs.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/PR_checks_in_GitHub_integration.png" alt="PR Checks card in the Conversations tab, GitHub."><figcaption><p>PR Checks card in the Conversations tab, GitHub</p></figcaption></figure>

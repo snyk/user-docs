@@ -33,7 +33,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [REST API endpoints: Test an SBOM document for vulnerabilities](../snyk-api/rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md)
 * [Custom rules](../scan-using-snyk/snyk-code/custom-rules/)
 * [Risk Score](../manage-issues/risk-score.md)
-* [Reachable vulnerabilities](../scan-using-snyk/find-and-manage-priority-issues/reachable-vulnerabilities.md)
+* [Reachable vulnerabilities](../scan-using-snyk/prioritize-your-issues/reachable-vulnerabilities.md)
 * [Group projects by branch or version for monitoring](../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
 * [Git repository cloning](../snyk-admin/manage-settings/snyk-preview.md#enable-git-repository-cloning)
 * [Fix code vulnerabilities automatically](../scan-using-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)

@@ -16,7 +16,7 @@ Since real risk is scarce, you should expect a significant drift in the distribu
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
-Risk Score replaces the Priority Score directly. See the [priority score docs](../scan-using-snyk/find-and-manage-priority-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled.&#x20;
+Risk Score replaces the Priority Score directly. See the [priority score docs](../scan-using-snyk/prioritize-your-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled.&#x20;
 
 Risk Score is not available in the CLI.&#x20;
 
@@ -145,7 +145,7 @@ When you apply a business criticality attribute to a Project, a retest is requir
 
 #### Exploit maturity&#x20;
 
-Represents the existence and maturity of any public exploit retrieved and validated by Snyk. For more information, see [View exploits, How exploits are determined](../scan-using-snyk/find-and-manage-priority-issues/view-exploits.md#how-exploits-are-determined).
+Represents the existence and maturity of any public exploit retrieved and validated by Snyk. For more information, see [View exploits, How exploits are determined](../scan-using-snyk/prioritize-your-issues/view-exploits.md#how-exploits-are-determined).
 
 | Possible input value | Score impact                             |
 | -------------------- | ---------------------------------------- |
@@ -205,7 +205,7 @@ Represents the need for action from a user as part of the exploitation process, 
 
 #### Social trends&#x20;
 
-Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation. For more information, see [Vulnerabilities with social trends](../scan-using-snyk/find-and-manage-priority-issues/vulnerabilities-with-social-trends.md).
+Represents the social media traffic regarding this vulnerability. Snyk research has shown that greater social media interaction can predict future exploitation or point to existing exploitation. For more information, see [Vulnerabilities with social trends](../scan-using-snyk/prioritize-your-issues/vulnerabilities-with-social-trends.md).
 
 | Possible input values | Score impact                         |
 | --------------------- | ------------------------------------ |
@@ -277,7 +277,7 @@ Building on [past studies](https://arxiv.org/pdf/2301.07972.pdf), Snyk research 
 
 #### Reachability&#x20;
 
-Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. For more information, see [Reachable vulnerabilities](../scan-using-snyk/find-and-manage-priority-issues/reachable-vulnerabilities.md).\
+Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. For more information, see [Reachable vulnerabilities](../scan-using-snyk/prioritize-your-issues/reachable-vulnerabilities.md).\
 When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.
 
 | Possible input values | Score impact                                                            |

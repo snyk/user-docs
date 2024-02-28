@@ -24,7 +24,7 @@ These are issues that can be fixed by upgrading a direct dependencies version. T
 
 * Which dependency to upgrade to resolve the issue
 * The issue type
-* The [severity rating](../../../scan-using-snyk/find-and-manage-priority-issues/severity-levels.md) for the issue
+* The [severity rating](../../../scan-using-snyk/prioritize-your-issues/severity-levels.md) for the issue
 * A link to the related issue in the [Snyk Vulnerability Database](https://security.snyk.io/)
 * The dependency through which this vulnerability is introduced and its path
 
