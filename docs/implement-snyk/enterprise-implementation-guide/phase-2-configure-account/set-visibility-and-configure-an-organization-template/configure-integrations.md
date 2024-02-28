@@ -25,7 +25,11 @@ The most common tools to integrate Snyk into your SDLC to gain visibility are de
 
 ### Git repository
 
-Snyk can integrate with multiple Git repositories to help you track, monitor, and fix the issues and vulnerabilities in your code. When importing a repository, Snyk will scan and monitor the default branch for vulnerabilities.&#x20;
+Snyk can integrate with multiple Git repositories to help you track, monitor, and fix the issues and vulnerabilities in your code.
+
+If you have on-premise Git repositories, you must configure and run [Snyk Broker](../../../../enterprise-configuration/snyk-broker/) to enable the integration.
+
+When importing a repository, Snyk will scan and monitor the default branch for vulnerabilities.&#x20;
 
 Monitoring takes the form of
 
