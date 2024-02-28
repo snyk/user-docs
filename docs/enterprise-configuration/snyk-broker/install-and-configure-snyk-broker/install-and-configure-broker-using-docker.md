@@ -10,14 +10,14 @@ For **all other environments**, you can install Snyk Broker using the [Docker im
 
 The following pages explain how to install these special integrations.
 
-* [GitHub](github-prerequisites-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md)
-* [GitHub Enterprise](github-enterprise-prerequisites-to-install-and-configure-broker/setup-broker-with-github-enterprise.md)
-* [Bitbucket Server/Data Centre](bitbucket-server-data-center-prerequisites-to-install-and-configure-broker/data-center.md)
-* [Gitlab](gitlab-prerequisites-to-install-and-configure-broker/setup-broker-with-gitlab.md)
-* [Azure Repos](azure-repos-prerequisites-to-install-and-configure-broker/setup-broker-with-azure-repos.md)
+* [GitHub](github-prerequisites-and-steps-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md)
+* [GitHub Enterprise](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md)
+* [Bitbucket Server/Data Centre](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md)
+* [Gitlab](gitlab-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-gitlab.md)
+* [Azure Repos](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md)
 * [JFrog Artifactory Repository](artifactory-repository-install-and-configure-broker/set-up-snyk-broker-with-artifactory-repository.md)
-* [Nexus Repository Manager](nexus-repository-prerequisites-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
-* [Jira](jira-prerequisites-to-install-and-configure-broker/setup-broker-with-jira.md)
+* [Nexus Repository Manager](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
+* [Jira](jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md)
 * [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
 * [Snyk Broker - Code Agent](../snyk-broker-code-agent/) (needed to enable SAST analysis)
 * [Derived Docker images for Broker Client integrations and Container Registry Agent](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)

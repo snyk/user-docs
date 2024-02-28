@@ -1,4 +1,4 @@
-# Artifactory Repository - prerequisites to install and configure Broker
+# Artifactory Repository - prerequisites and steps to install and configure Broker
 
 {% hint style="info" %}
 **Feature availability**
@@ -8,13 +8,15 @@ Integration with Artifactory Repository is available only for Enterprise plans.
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Before installing, review the general instructions for the installation method you plan to use, [Helm](../install-and-configure-broker-using-helm.md) or [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, **review the general instructions** for the installation method you plan to use, [Helm](../install-and-configure-broker-using-helm.md) or [Docker](../install-and-configure-broker-using-docker.md).
 
-The prerequisites follow.
+The **prerequisites** follow.
 
 Before installing the Snyk Artifactory Repository Broker, ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
 
 To install using Docker, you must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+
+For convenience, instructions to obtain or generate the Broker token follow. When you are done, **continue** with the steps to install using [Docker](set-up-snyk-broker-with-artifactory-repository.md) or [Helm](artifactory-repository-install-and-configure-using-helm.md).
 
 ## Obtain Broker token for Artifactory Repository setup
 
