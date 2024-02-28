@@ -8,7 +8,11 @@ Snyk Azure Repos are available only for Azure DevOps/TFS 2020 or above.
 
 Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
-The command to set the environment variables follows. Refer to [Azure Repos - environment variables for Snyk Broker](azure-repos-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
+To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
+
+`helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
+
+Then run the following commands to customize the environment variables. Refer to [Azure Repos - environment variables for Snyk Broker](azure-repos-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
 Note that for the variable `azureReposHost` the value does not include `https://`. If you have more than one Azure organization, you must deploy a Broker for each one. Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 

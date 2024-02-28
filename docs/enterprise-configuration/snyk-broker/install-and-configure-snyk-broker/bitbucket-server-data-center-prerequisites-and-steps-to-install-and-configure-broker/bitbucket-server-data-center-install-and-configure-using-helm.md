@@ -2,7 +2,11 @@
 
 Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
-The command to set the environment variables follows. Refer to [BitBucket Server/Data Center - environment variables](bitbucket-server-data-center-environment-variables-for-snyk-broker.md) for Snyk Broker for definitions of the environment variables.
+To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
+
+`helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
+
+Then run the following commands to customize the environment variables. Refer to [BitBucket Server/Data Center - environment variables](bitbucket-server-data-center-environment-variables-for-snyk-broker.md) for Snyk Broker for definitions of the environment variables.
 
 &#x20;in the Docker setup instructions.
 

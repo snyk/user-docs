@@ -4,7 +4,11 @@ Before installing, review the prerequisites and the general instructions for ins
 
 ## Command to install the Jira integration
 
-The command to set the environment variables follows. For definitions of the environment variables, see [Jira - environment variables for Snyk Broker](jira-environment-variables-for-snyk-broker.md).
+To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
+
+`helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
+
+Then run the following commands to customize the environment variables. For definitions of the environment variables, see [Jira - environment variables for Snyk Broker](jira-environment-variables-for-snyk-broker.md).
 
 Note: for `jiraHostname` value do not include `https://`
 
