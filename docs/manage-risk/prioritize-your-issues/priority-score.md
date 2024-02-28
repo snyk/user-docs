@@ -45,7 +45,7 @@ For each issue, Snyk processes and weighs several factors in a proprietary algor
 * [Severity levels](severity-levels.md): calculated using CVSS framework v3.1 scores for an issue.
 * [Exploit maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): determined by the industry-leading Snyk security team using manual and automated methods to track which vulnerabilities are exploitable and to what extent.
 * [Reachability](reachable-vulnerabilities.md) (extent to which vulnerabilities are reachable from the code): determined by looking at the code paths called within a Project.
-* [Fixability](../snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): defined as having a safer version to upgrade to or a Snyk patch available. For vulnerabilities with neither, developers must either fix the code themselves or use an alternative package. Thus vulnerabilities with fixes are given a higher Priority Score.
+* [Fixability](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): defined as having a safer version to upgrade to or a Snyk patch available. For vulnerabilities with neither, developers must either fix the code themselves or use an alternative package. Thus vulnerabilities with fixes are given a higher Priority Score.
 * Time: considered based on how new the vulnerability is. New vulnerabilities are likely to be an increased risk, and so they increase the Priority Score.
 * [Social Trends](vulnerabilities-with-social-trends.md): calculated by Snyk based on mentions of known vulnerabilities in Twitter to express the trend of tweets and reactions.
 * Malicious packages: assessed to determine if a vulnerability originated from a malicious package. Vulnerabilities originating from malicious packages have higher Priority Scores.
@@ -58,7 +58,7 @@ Snyk continually refines its prioritization algorithm to include new factors, an
 
 Kubernetes container images imported from the Kubernetes integration have a number of additional contributing factors for priority score calculation.
 
-See [Snyk Priority Score and Kubernetes](../snyk-container/integrate-with-kubernetes/kubernetes-integration-ui-explained/kubernetes-and-the-snyk-priority-score.md) for more details.
+See [Snyk Priority Score and Kubernetes](../../scan-using-snyk/snyk-container/integrate-with-kubernetes/kubernetes-integration-ui-explained/kubernetes-and-the-snyk-priority-score.md) for more details.
 
 ### Priority calculation for Snyk Code
 
@@ -71,4 +71,4 @@ A number of specific factors contribute to priority calculation for Snyk Code, i
 * Rule tags: decrease priority if beta tags are found
 * Hot files: if the vulnerability is in the source file, or inside a code flow
 
-For more information, see [Priority Score factors](../snyk-code/manage-code-vulnerabilities/breakdown-of-code-analysis.md#priority-score-factors).
+For more information, see [Priority Score factors](../../scan-using-snyk/snyk-code/manage-code-vulnerabilities/breakdown-of-code-analysis.md#priority-score-factors).

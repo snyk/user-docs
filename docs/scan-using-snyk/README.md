@@ -19,7 +19,7 @@ Implement a workflow to secure your code and infrastructure in your environment 
 
 Snyk has several features that help you determine which issues are the most important for you to fix and the sequence in which to fix the issues.
 
-See [Find and manage priority issues](prioritize-your-issues/) for details.
+See [Find and manage priority issues](../manage-risk/prioritize-your-issues/) for details.
 
 ## Run pull request checks
 

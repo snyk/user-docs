@@ -22,7 +22,7 @@ Snyk provides features to fix issues identified during scanning. See [Fix your v
 
 ## View issue details
 
-Click on an issue to view details, including its [priority score](../../scan-using-snyk/prioritize-your-issues/priority-score.md).
+Click on an issue to view details, including its [priority score](../../manage-risk/prioritize-your-issues/priority-score.md).
 
 <div align="left">
 

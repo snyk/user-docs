@@ -24,7 +24,7 @@ These are issues that can be fixed by upgrading a direct dependencies version. T
 
 * Which dependency to upgrade to resolve the issue
 * The issue type
-* The [severity rating](../../../scan-using-snyk/prioritize-your-issues/severity-levels.md) for the issue
+* The [severity rating](../../../manage-risk/prioritize-your-issues/severity-levels.md) for the issue
 * A link to the related issue in the [Snyk Vulnerability Database](https://security.snyk.io/)
 * The dependency through which this vulnerability is introduced and its path
 
@@ -51,5 +51,5 @@ The descriptive information about the test results includes the following detail
 * **Project Name:** The name of the directory in which this Project is located
 * **Open Source:** Information about whether or not this scan was performed on an Open Source Project.
 * **Project Path:** The path through which the target file is introduced
-* **Local Snyk Policy:** Information about whether this scan was performed on an Open Source Project. For more information, see [The .snyk file](../../../scan-using-snyk/prioritize-your-issues/the-.snyk-file.md).
+* **Local Snyk Policy:** Information about whether this scan was performed on an Open Source Project. For more information, see [The .snyk file](../../../manage-risk/prioritize-your-issues/the-.snyk-file.md).
 * **Licenses:** Information about whether this Project was scanned for license issues

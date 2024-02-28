@@ -84,7 +84,7 @@ Click **Full details** to see a preview of the full code:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.20.png" alt="Preview of the full code"><figcaption><p>Preview of the full code</p></figcaption></figure>
 
-Click **Ignore** to ignore this vulnerability. For details, see [Ignore Issues](../prioritize-your-issues/ignore-issues/).
+Click **Ignore** to ignore this vulnerability. For details, see [Ignore Issues](../../manage-risk/prioritize-your-issues/ignore-issues/).
 
 ## Fix configuration files in IaC
 

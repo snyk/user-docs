@@ -32,7 +32,7 @@ Filters are available to help prioritize what issues need to be fixed urgently. 
 * [Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): issues that are **Mature** or have **Proof of Concept** are more exploitable. By choosing this filter, you implicitly filter only open-source results.
 * Fixable: if there is a fix available by simply upgrading a package, fixing is faster than without an upgrade).  &#x20;
 * CVSS Score for Open Source Vulnerabilities
-* [Priority Score](../../scan-using-snyk/prioritize-your-issues/priority-score.md): CVSS Score is included in the calculation. One strategy is to eliminate the vulnerabilities with a score of 900-1000, and then move to vulnerabilities with a score of 800-900, and so on.
+* [Priority Score](../../manage-risk/prioritize-your-issues/priority-score.md): CVSS Score is included in the calculation. One strategy is to eliminate the vulnerabilities with a score of 900-1000, and then move to vulnerabilities with a score of 800-900, and so on.
 
 When planning your fix strategy, decide which metrics will be used and get specific with your timeline. If you choose to fix by severity, for example, estimate the time it will take to resolve vulnerability per severity. It is recommended to be specific with your fix strategy.&#x20;
 

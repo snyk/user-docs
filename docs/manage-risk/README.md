@@ -35,4 +35,4 @@ For more information, see [Available Snyk Reports](../manage-issues/reporting/av
 
 ## Risk Score
 
-Snyk [Risk Score](../manage-issues/risk-score.md) can help you prioritize your approach to security issues, by providing you with an accurate and holistic understanding of the risk posed by a given security issue.
+Snyk [Risk Score](prioritize-your-issues/risk-score.md) can help you prioritize your approach to security issues, by providing you with an accurate and holistic understanding of the risk posed by a given security issue.
