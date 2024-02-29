@@ -88,11 +88,11 @@ The `data.attributes.status` field in the JSON output is set to `in_progress.` T
 
 To check if your scan is finished, see [Check to see if the scan is finished](https://docs.snyk.io/integrations/cloud-platforms/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-to-see-if-the-scan-is-finished).
 
-To manually re-scan an environment, see [Scan a Cloud Environment](../../../../scan-using-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/snyk-environments/scan-a-cloud-environment.md).
+To manually re-scan an environment, see [Scan a Cloud Environment](../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/snyk-environments/scan-a-cloud-environment.md).
 
 ## What's next?
 
 You can now do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-using-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

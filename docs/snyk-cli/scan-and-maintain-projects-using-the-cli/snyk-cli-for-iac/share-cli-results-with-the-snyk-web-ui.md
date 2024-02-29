@@ -7,7 +7,7 @@ To see these issues displayed in the Snyk Web UI, run the following CLI command:
 `snyk iac test myproject --report`
 
 {% hint style="info" %}
-Using [Custom rules](../../../scan-using-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/) and the Share Results functionality together is not currently supported.
+Using [Custom rules](../../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/) and the Share Results functionality together is not currently supported.
 
 Snyk does not share any file contents over the network, only the required metadata for the configuration issues that were just scanned.
 {% endhint %}

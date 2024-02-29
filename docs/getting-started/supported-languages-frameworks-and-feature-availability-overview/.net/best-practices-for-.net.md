@@ -131,7 +131,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Containers**
 
-:link: [Supported Operating System Distributions](../../../scan-using-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
+:link: [Supported Operating System Distributions](../../../scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
 
 :link: [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
 

@@ -273,7 +273,7 @@ If you use the **zero-installs** feature, Snyk Fix PRs do not update the **.yarn
 #### What's next?
 
 * [Open a Fix PR](./#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../../scan-with-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

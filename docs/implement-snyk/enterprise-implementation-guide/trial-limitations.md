@@ -12,7 +12,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Custom Project Tags**](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)**:** Not available.
 * [**Custom User Roles**](../../snyk-admin/user-roles/user-role-management.md): Not available.
 * [**Audit Logging**](../../snyk-api/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md): Not available.
-* [**Snyk Code Local Engine**](../../scan-using-snyk/snyk-code/snyk-code-local-engine.md): Not available.
+* [**Snyk Code Local Engine**](../../scan-with-snyk/snyk-code/snyk-code-local-engine.md): Not available.
 * [**Broker**](../../enterprise-configuration/snyk-broker/): Not available.
 * [**Self-hosted Git**](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md): Not available.
 * [**Private Registry Integrations**](../../integrate-with-snyk/package-repository-integrations/): Not available.

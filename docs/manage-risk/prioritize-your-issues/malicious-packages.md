@@ -102,7 +102,7 @@ The following nuances are important to understand:
 
 A “security holding” on a package means that the package contained malicious code and was removed from the registry by the npm Security Team. A security placeholder was published to ensure users are not affected in the future. Although the package is currently under a “security holding” placeholder, it is important to verify that it was not imported from npm before it was marked in this placeholder. After you confirm that all instances of this package were downloaded from a private registry, you can ignore the issue.
 
-The [Snyk Vulnerability Database](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md) also shows packages in a “Security Holding” state, for example, the [flatmap-stream](https://security.snyk.io/package/npm/flatmap-stream) package.
+The [Snyk Vulnerability Database](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md) also shows packages in a “Security Holding” state, for example, the [flatmap-stream](https://security.snyk.io/package/npm/flatmap-stream) package.
 
 ### **Malicious package is not available on npm and without “security holding”**
 

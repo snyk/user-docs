@@ -12,8 +12,8 @@
 
 ## Scan using Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-| <p><a href="scan-using-snyk/">Scan with Snyk</a><br>Scan your code, open-source libraries, infrastructure, and containers</p> | <p><a href="snyk-cli/getting-started-with-the-snyk-cli.md">Scan with Snyk CLI</a><br>Scan with Snyk locally on your command line</p> |
-| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| <p><a href="scan-with-snyk/">Scan with Snyk</a><br>Scan your code, open-source libraries, infrastructure, and containers</p> | <p><a href="snyk-cli/getting-started-with-the-snyk-cli.md">Scan with Snyk CLI</a><br>Scan with Snyk locally on your command line</p> |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 
 ## Manage your risk
 

@@ -106,7 +106,7 @@ These settings are applied to all newly imported Projects and to all existing Pr
 #### What's next?
 
 * [Open a Fix PR](php.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../scan-with-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

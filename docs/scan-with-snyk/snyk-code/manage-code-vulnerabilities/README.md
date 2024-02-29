@@ -20,13 +20,13 @@ Snyk Code creates a single Project for all the imported files from a repository.
 
 Here is an overview of the testing process in Snyk Code based on the testing phases.
 
-<table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../../../scan-using-snyk/snyk-code/import-repository-to-snyk/">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
+<table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../import-repository-to-snyk/">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
 
 ### Retesting code repository
 
-If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by clicking the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](../../../scan-using-snyk/scanning-overview/what-counts-as-a-test.md)
+If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by clicking the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](../../scanning-overview/what-counts-as-a-test.md)
 
-You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Excluding directories and files from the import process](../../../scan-using-snyk/snyk-code/import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md).
+You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Excluding directories and files from the import process](../import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md).
 
 <figure><img src="../../../.gitbook/assets/Retest Code.png" alt="Retesting a repository."><figcaption><p>Retesting repository </p></figcaption></figure>
 
@@ -42,7 +42,7 @@ You can change the display of the issues on the Code analysis page using the fol
 * Sorting from the **Highest** or the **Lowest** severity level.
 * Filtering discovered vulnerability issues according to different criteria shown in the following table.&#x20;
 
-<table><thead><tr><th width="232">Vulnerability issue filter</th><th>Description</th></tr></thead><tbody><tr><td><a href="../../../manage-risk/prioritize-your-issues/severity-levels.md">Severity level</a></td><td>Show issues with a certain severity level. Snyk Code uses only <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> severity levels, without <strong>Critical</strong>. </td></tr><tr><td><a href="../../../manage-risk/prioritize-your-issues/priority-score.md#calculation-of-priority-score">Priority score</a></td><td>Show issues in a certain priority score range.</td></tr><tr><td>Status</td><td>Show <strong>Open</strong> issues or issues that were <strong>Ignored</strong>.</td></tr><tr><td><a href="../../../getting-started/supported-languages-frameworks-and-feature-availability-overview/">Languages</a></td><td>Show issues that were discovered in code files that were written in a specific language. Only programming languages discovered in the analyzed repository are displayed in the Filter pane.</td></tr><tr><td><a href="../../../scan-using-snyk/snyk-code/snyk-code-security-rules/">Vulnerability types</a></td><td>Show issues with a certain Vulnerability Type. See <a href="../../../scan-using-snyk/snyk-code/snyk-code-security-rules/">Snyk Code security rules</a>.</td></tr></tbody></table>
+<table><thead><tr><th width="232">Vulnerability issue filter</th><th>Description</th></tr></thead><tbody><tr><td><a href="../../../manage-risk/prioritize-your-issues/severity-levels.md">Severity level</a></td><td>Show issues with a certain severity level. Snyk Code uses only <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> severity levels, without <strong>Critical</strong>. </td></tr><tr><td><a href="../../../manage-risk/prioritize-your-issues/priority-score.md#calculation-of-priority-score">Priority score</a></td><td>Show issues in a certain priority score range.</td></tr><tr><td>Status</td><td>Show <strong>Open</strong> issues or issues that were <strong>Ignored</strong>.</td></tr><tr><td><a href="../../../getting-started/supported-languages-frameworks-and-feature-availability-overview/">Languages</a></td><td>Show issues that were discovered in code files that were written in a specific language. Only programming languages discovered in the analyzed repository are displayed in the Filter pane.</td></tr><tr><td><a href="../snyk-code-security-rules/">Vulnerability types</a></td><td>Show issues with a certain Vulnerability Type. See <a href="../snyk-code-security-rules/">Snyk Code security rules</a>.</td></tr></tbody></table>
 
 <figure><img src="../../../.gitbook/assets/Vulnerability issues.png" alt="Overview of vulnerability issue filtering, sorting, and grouping."><figcaption><p>Vulnerability issue filtering, sorting, and grouping</p></figcaption></figure>
 
@@ -56,15 +56,15 @@ To scan your repositories and manage code vulnerabilities, you can check the fol
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project to see all vulnerability issues detected by Snyk Code.
 
-To understand the results, see [Breakdown of Code analysis](../../../scan-using-snyk/snyk-code/manage-code-vulnerabilities/breakdown-of-code-analysis.md).&#x20;
+To understand the results, see [Breakdown of Code analysis](breakdown-of-code-analysis.md).&#x20;
 
 ### Import additional repositories
 
-If you have existing Projects in your Snyk account, you can add additional repositories for Snyk to test. See [Import repository to Snyk](../../../scan-using-snyk/snyk-code/import-repository-to-snyk/#import-repository-to-snyk).
+If you have existing Projects in your Snyk account, you can add additional repositories for Snyk to test. See [Import repository to Snyk](../import-repository-to-snyk/#import-repository-to-snyk).
 
 ### Remove repositories from testing
 
-You can remove the Code analysis Project or delete imported repositories if you no longer need to test them for vulnerabilities. See [Remove imported repository](../../../scan-using-snyk/snyk-code/import-repository-to-snyk/remove-imported-repository.md).
+You can remove the Code analysis Project or delete imported repositories if you no longer need to test them for vulnerabilities. See [Remove imported repository](../import-repository-to-snyk/remove-imported-repository.md).
 
 ### Exclude directories and files
 
@@ -105,6 +105,6 @@ Manage Project settings as follows:
 
 ## What's next?
 
-* [See the breakdown of Code analysis](../../../scan-using-snyk/snyk-code/manage-code-vulnerabilities/breakdown-of-code-analysis.md)
-* [Fix code vulnerabilities automatically](../../../scan-using-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
-* [See Snyk Code security rules](../../../scan-using-snyk/snyk-code/snyk-code-security-rules/)
+* [See the breakdown of Code analysis](breakdown-of-code-analysis.md)
+* [Fix code vulnerabilities automatically](fix-code-vulnerabilities-automatically.md)
+* [See Snyk Code security rules](../snyk-code-security-rules/)

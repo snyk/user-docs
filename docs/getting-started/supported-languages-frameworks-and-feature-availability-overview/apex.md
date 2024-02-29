@@ -38,7 +38,7 @@ To customize test options, run other commands, exclude directories and files, an
 #### What's next?
 
 * [Open a Fix PR](apex.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../scan-using-snyk/run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../scan-with-snyk/run-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

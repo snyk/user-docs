@@ -44,7 +44,7 @@ This is checked by default if there is currently no fix available for the issue.
 {% hint style="info" %}
 An issue is ignored until either of these conditions occurs: the ignore period expires, or the vulnerability becomes fixable.
 
-An issue ignored in an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any subsequent [PR checks](../../../scan-using-snyk/run-pr-checks/) across all branches of the Project.
+An issue ignored in an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any subsequent [PR checks](../../../scan-with-snyk/run-pr-checks/) across all branches of the Project.
 {% endhint %}
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit the ignore or unignore the issue.
@@ -123,7 +123,7 @@ For more information, see [Security policies](../../../scan-with-snyk/policies/s
 
 ## Ignore issues in Snyk Code
 
-For [Snyk Code](../../../scan-using-snyk/snyk-code/), the ignore functionality may capture a wider range of issues than other products.
+For [Snyk Code](../../../scan-with-snyk/snyk-code/), the ignore functionality may capture a wider range of issues than other products.
 
 Static code analysis by Snyk Code transforms the input code into an intermediate representation, which captures the flow of code but abstracts away some details.
 

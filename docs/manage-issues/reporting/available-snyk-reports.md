@@ -111,13 +111,13 @@ The report is based on the version released in 2023 by Mitre. The supported prod
 ## Cloud Compliance Issues report
 
 {% hint style="info" %}
-This report is available only if you have [Snyk IaC+](../../scan-using-snyk/snyk-iac/iac+-code-to-cloud-capabilities/) or the legacy Snyk Cloud enabled.
+This report is available only if you have [Snyk IaC+](../../scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/) or the legacy Snyk Cloud enabled.
 {% endhint %}
 
-The Cloud Compliance Issues report shows cloud and IaC+ issues for an entire Organization, organized by [compliance standard](../../scan-using-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
+The Cloud Compliance Issues report shows cloud and IaC+ issues for an entire Organization, organized by [compliance standard](../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
 
 You can view a report for a single version of a compliance standard at a time, for example, CIS AWS Foundations Benchmark v1.4.0, by selecting the desired standard from the drop-down menu. Each report includes a list of compliance controls organized by control category, with corresponding issue counts.
 
-Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../scan-using-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/view-iac+-and-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
+Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/view-iac+-and-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
 Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.
