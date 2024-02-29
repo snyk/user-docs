@@ -6,11 +6,11 @@ To use this chart, you must first add the Snyk Broker Helm Chart by adding the r
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
 
-Then run the following commands to customize the environment variables. Refer to [BitBucket Server/Data Center - environment variables](bitbucket-server-data-center-environment-variables-for-snyk-broker.md) for Snyk Broker for definitions of the environment variables.
+Then, run the following commands to install the Broker and customize the environment variables. Refer to [BitBucket Server/Data Center - environment variables](bitbucket-server-data-center-environment-variables-for-snyk-broker.md) for Snyk Broker for definitions of the environment variables.
 
-&#x20;in the Docker setup instructions.
+&#x20;For `bitbucket` and `bitbucketApi` values do not include `https://`
 
-Note: for `bitbucket` and `bitbucketApi` values do not include `https://`
+Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
@@ -25,6 +25,4 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-{% hint style="info" %}
-Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
-{% endhint %}
+You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects once you are connected.

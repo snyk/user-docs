@@ -1,12 +1,14 @@
 # githhub.com - install and configure using Helm
 
-Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
+Before installing, r**eview the prerequisites and the general instructions** for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
 
-Then run the following commands to customize the environment variables. Refer to [GitHub - environment variables for Snyk Broker](github-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
+Then, run the following commands to install the Broker and customize the environment variables. Refer to [GitHub - environment variables for Snyk Broker](github-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
+
+Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
@@ -18,6 +20,4 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-{% hint style="info" %}
-Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
-{% endhint %}
+You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects once you are connected.

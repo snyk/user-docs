@@ -8,7 +8,7 @@ Integration with Artifactory Repository is available only for Enterprise plans.
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
+Before installing, **review the prerequisites and the general instructions for installation** using [Helm](../install-and-configure-broker-using-helm.md).
 
 For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../integrate-with-snyk/package-repository-integrations/artifactory-package-repository-connection-setup/). For information about brokered integration with Artifactory Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
 
@@ -16,9 +16,9 @@ To use this chart, you must first add the Snyk Broker Helm Chart by adding the r
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
 
-Then run the following commands to customize the environment variables. For definitions of the environment variables see [Artifactory Repository - environment variables for Snyk Broker](artifactory-repository-environment-variables-for-snyk-broker.md).
+Then, run the following commands to install the Broker and customize the environment variables. For definitions of the environment variables see [Artifactory Repository - environment variables for Snyk Broker](artifactory-repository-environment-variables-for-snyk-broker.md).
 
-Note: for `artifactoryUrl` value do not include `https://`
+For `artifactoryUrl` value do not include `https://`
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
@@ -27,3 +27,5 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set artifactoryUrl=<ENTER_ARTIFACTORY_URL> \
              -n snyk-broker --create-namespace
 ```
+
+You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects once you are connected.

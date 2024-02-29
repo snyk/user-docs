@@ -1,22 +1,20 @@
 # GitLab - install and configure using Helm
 
-Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
+Before installing, **review the prerequisites and the general instructions for installation** using [Helm](../install-and-configure-broker-using-helm.md).
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
 
-Then run the following commands to customize the environment variables. Refer to [GitLab - environment variables for Snyk Broker](gitlab-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
-
-{% hint style="info" %}
-Notes for installation using Helm
+Then, run the following commands to install the Broker and customize the environment variables. Refer to [GitLab - environment variables for Snyk Broker](gitlab-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
 For the `gitlab` value, do not include `https://.`
 
 `brokerToken` is a Helm variable that feeds into and sets the `BROKER_TOKEN` environment variable. It is the Helm way to pass the token.
 
 `ACCEPT_CODE` is [set to true by default](https://github.com/snyk/snyk-broker-helm/blob/465d4ef279755fa5c9507975a88348bab04c2264/charts/snyk-broker/templates/broker\_deployment.yaml#L383) in the chart, as is [ACCEPT\_IAC](https://github.com/snyk/snyk-broker-helm/blob/465d4ef279755fa5c9507975a88348bab04c2264/charts/snyk-broker/templates/broker\_deployment.yaml#L386C23-L386C43). You can disable them if needed using `disableAutoAcceptRules=true`, but otherwise, these are enabled.
-{% endhint %}
+
+Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
@@ -29,6 +27,4 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-{% hint style="info" %}
-Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
-{% endhint %}
+You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects once you are connected.

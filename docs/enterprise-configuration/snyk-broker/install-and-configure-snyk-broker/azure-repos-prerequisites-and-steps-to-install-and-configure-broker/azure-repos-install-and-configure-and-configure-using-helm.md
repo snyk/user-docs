@@ -6,15 +6,17 @@
 Snyk Azure Repos are available only for Azure DevOps/TFS 2020 or above.
 {% endhint %}
 
-Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
+Before installing, **review the prerequisites and the general instructions** for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
 
-Then run the following commands to customize the environment variables. Refer to [Azure Repos - environment variables for Snyk Broker](azure-repos-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
+Then, run the following commands to install the Broker and customize the environment variables. Refer to [Azure Repos - environment variables for Snyk Broker](azure-repos-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
-Note that for the variable `azureReposHost` the value does not include `https://`. If you have more than one Azure organization, you must deploy a Broker for each one. Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
+For the variable `azureReposHost` the value does not include `https://`. If you have more than one Azure organization, you must deploy a Broker for each one.
+
+Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
@@ -27,3 +29,5 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set enabledAppRisk=true \
              -n snyk-broker --create-namespace
 ```
+
+You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects once you are connected.

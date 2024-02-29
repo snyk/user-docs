@@ -8,7 +8,7 @@ To use this chart, you must first add the Snyk Broker Helm Chart by adding the r
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
 
-Then run the following commands to customize the environment variables. For definitions of the environment variables, see [Jira - environment variables for Snyk Broker](jira-environment-variables-for-snyk-broker.md).
+Then, run the following commands to install the Broker and customize the environment variables. For definitions of the environment variables, see [Jira - environment variables for Snyk Broker](jira-environment-variables-for-snyk-broker.md).
 
 Note: for `jiraHostname` value do not include `https://`
 
@@ -22,6 +22,8 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
              -n snyk-broker --create-namespace
 ```
+
+You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects once you are connected.
 
 ## Jira PAT authentication for SSO-enabled JIRA
 
@@ -40,5 +42,5 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 ```
 
 {% hint style="info" %}
-You must use the helm chart version 2.2.0 or above.
+You must use the Helm chart version 2.2.0 or above.
 {% endhint %}
