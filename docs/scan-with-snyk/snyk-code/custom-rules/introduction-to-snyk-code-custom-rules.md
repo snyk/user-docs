@@ -4,7 +4,7 @@ You can run custom rules as part of any scan run by Snyk Code, and the feature i
 
 * [Snyk Web UI](../../../getting-started/explore-snyk-through-the-web-ui.md)
 * [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
-* [IDE](broken-reference)
+* [IDE](../../../integrate-with-snyk/ide-tools/)
 
 {% hint style="info" %}
 **Prerequisite**\
@@ -24,13 +24,11 @@ You can create and test queries in a local environment, completely separate from
 
 You can test your Code Projects using the Snyk CLI with regular commands and options as long as you have the [.snyk file](../../../manage-risk/prioritize-your-issues/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.
 
-For more information, see [Using Snyk Code via the CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+For more information, see [Snyk CLI for Snyk Code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
 ## Using custom rules in the IDE
 
 IDE integrations with Snyk support custom rules as long as you have the [.snyk file](../../../manage-risk/prioritize-your-issues/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.&#x20;
-
-For more information, see [Using Snyk Code via the IDE](broken-reference).
 
 ## Additional resource
 
