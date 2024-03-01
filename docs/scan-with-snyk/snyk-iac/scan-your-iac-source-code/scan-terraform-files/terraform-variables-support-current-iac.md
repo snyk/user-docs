@@ -13,7 +13,7 @@ At this time Snyk does not support [Output Values](https://www.terraform.io/lang
 
 The CLI scans all directories and handles each directory that includes supported TF files as its own module. Each module that includes variables is dereferenced appropriately.
 
-Supported TF file formats are `.tf`, `.tfvars`,`.auto.tfvars`. Snyk currently does not support variables that were set and defined using environment variables or the `--var` CLI option.
+Supported TF file formats are `.tf`, `.tfvars`, `.auto.tfvars`. Snyk currently does not support variables that were set and defined using environment variables or the `--var` CLI option.
 
 The scan handles [variable definition precedence](https://www.terraform.io/language/values/variables#variable-definition-precedence) in the same way that TF handles the precedence.
 
@@ -53,7 +53,7 @@ In the example that follows, we see that we configured a new resource, and we ar
 
 The variable is defined inside the `variables.tf` file with a default value, but the value is being overridden inside the `terraform.tfvars` file.
 
-At the end, the value is set to `0.0.0.0/0` , and this causes the CLI to raise an issue.
+At the end, the value is set to `0.0.0.0/0`, and this causes the CLI to raise an issue.
 
 ```hcl
 vpc.tf
