@@ -450,6 +450,7 @@
     * [Atlassian Compass integration](integrate-with-snyk/vulnerability-management-tools/atlassian-compass-integration.md)
     * [Bright Integration](integrate-with-snyk/vulnerability-management-tools/bright-integration.md)
     * [Escape Integration](integrate-with-snyk/vulnerability-management-tools/escape-integration.md)
+    * [Leen Integration](integrate-with-snyk/vulnerability-management-tools/leen-integration.md)
     * [Mobb Integration](integrate-with-snyk/vulnerability-management-tools/mobb-integration.md)
     * [Nucleus Integration](integrate-with-snyk/vulnerability-management-tools/nucleus-integration.md)
     * [Opsera Integration](integrate-with-snyk/vulnerability-management-tools/opsera-integration.md)
