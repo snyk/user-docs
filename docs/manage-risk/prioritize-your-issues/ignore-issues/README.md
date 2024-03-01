@@ -117,9 +117,9 @@ For more information, see [The .snyk file](../the-.snyk-file.md), including the 
 
 ### Use policy actions to ignore issues
 
-You can set [Security policy actions](../../../scan-with-snyk/policies/security-policies/security-policy-actions.md) to ignore all vulnerabilities that match the conditions specified in a policy rule.
+You can set [Security policy actions](../../policies/security-policies/security-policy-actions.md) to ignore all vulnerabilities that match the conditions specified in a policy rule.
 
-For more information, see [Security policies](../../../scan-with-snyk/policies/security-policies/).
+For more information, see [Security policies](../../policies/security-policies/).
 
 ## Ignore issues in Snyk Code
 

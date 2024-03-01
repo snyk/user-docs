@@ -34,7 +34,7 @@ These are issues that cannot be resolved by upgrading a direct dependency. They 
 
 ### License Issues
 
-License issues are determined by the [license policy](../../../scan-with-snyk/policies/license-policies/) of your Snyk Organization. License issues  contain the following information:
+License issues are determined by the [license policy](../../../manage-risk/policies/license-policies/) of your Snyk Organization. License issues  contain the following information:
 
 * Type of license
 * License severity as determined by the license policy of your Snyk Organization

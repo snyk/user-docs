@@ -5,7 +5,7 @@ You can apply policies across all stages of the SDLC, from the developer’s loc
 These multiple security and compliance controls ensure issues are flagged as early as possible in the development process when it is least costly and time-consuming to fix them.
 
 {% hint style="info" %}
-In addition, the `.snyk` file is a policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../../manage-risk/prioritize-your-issues/the-.snyk-file.md) for details
+In addition, the `.snyk` file is a policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](../prioritize-your-issues/the-.snyk-file.md) for details
 {% endhint %}
 
 ## Assign policies to Projects or Organizations
@@ -53,7 +53,7 @@ See [Security policies](security-policies/) for more details.
 For GitHub Projects monitored by Snyk, any new pull request from a contributing developer can be checked against policies assigned to that Project. This ensures that policy-breaking code cannot be committed to the repository.
 
 {% hint style="info" %}
-See [PR Checks](../run-pr-checks/) for details of Snyk’s PR Checks feature.
+See [PR Checks](../../scan-with-snyk/run-pr-checks/) for details of Snyk’s PR Checks feature.
 {% endhint %}
 
 An example follows of a PR check on a JavaScript package license.

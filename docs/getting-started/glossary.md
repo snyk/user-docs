@@ -176,7 +176,7 @@ A specific type of package.
 
 ### License policy
 
-A set of criteria for evaluating open-source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../scan-with-snyk/policies/license-policies/).
+A set of criteria for evaluating open-source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../manage-risk/policies/license-policies/).
 
 ## M
 
@@ -298,7 +298,7 @@ Software Development Lifecycle. A process followed by a development team, descri
 
 ### Security policy
 
-A set of criteria for evaluating open-source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../scan-with-snyk/policies/security-policies/).
+A set of criteria for evaluating open-source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../manage-risk/policies/security-policies/).
 
 ### Severity
 

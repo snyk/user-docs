@@ -56,7 +56,7 @@ Select **Policies** to view the license and security policies for your Group:
 
 </div>
 
-See [Policies](../../scan-with-snyk/policies/) for details.
+See [Policies](../../manage-risk/policies/) for details.
 
 ## Group members
 
