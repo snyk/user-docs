@@ -23,6 +23,8 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
+You can pass any environment variable of your choice in the Helm command. For details, see [Custom additional options for Broker Helm Chart](../advanced-configuration-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation.md). Follow the instructions for [Advanced configuration for Helm Chart installation](../advanced-configuration-for-helm-chart-installation/) to make configuration changes as needed.
+
 You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects once you are connected.
 
 ## Jira PAT authentication for SSO-enabled JIRA
