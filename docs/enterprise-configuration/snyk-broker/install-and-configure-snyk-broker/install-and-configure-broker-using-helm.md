@@ -41,4 +41,18 @@ You can verify that the Broker is running by looking at the settings for your br
 
 ## Advanced configuration using Helm
 
-You can pass any environment variable of your choice in the Helm command. For details, see [Custom additional options for Broker Helm Chart](advanced-configuration-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation.md). Follow the instructions for [Advanced configuration for Helm Chart installation](advanced-configuration-for-helm-chart-installation/) to make configuration changes as needed.
+You can pass any environment variable of your choice in the Helm command. For details, see [Custom additional options for Broker Helm Chart](advanced-configuration-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation.md).&#x20;
+
+For example, if you want to pass BROKER\_CLIENT\_VALIDATION\_URL using the Helm chart, the additional parameters would be:
+
+`--set env[0].name=BROKER_CLIENT_VALIDATION_URL \`\
+`--set env[0].value=whatever_value_makes_sense`
+
+`Additional parameters would be:`
+
+`--set env[1].name=MY_OTHER_ENV_VAR \`\
+`--set env[1].value="other env with spaces" \`\
+`--set env[2].name=THIRD_ENV_VAR \`\
+`--set env[2].value=and_so_on`
+
+Follow the instructions for [Advanced configuration for Helm Chart installation](advanced-configuration-for-helm-chart-installation/) to make configuration changes as needed.
