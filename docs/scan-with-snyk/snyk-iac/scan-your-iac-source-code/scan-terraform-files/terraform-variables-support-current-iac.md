@@ -53,7 +53,7 @@ In the example that follows, we see that we configured a new resource, and we ar
 
 The variable is defined inside the `variables.tf` file with a default value, but the value is being overridden inside the `terraform.tfvars` file.
 
-At the end, the value is set to `0.0.0.0/0` , and this causes the CLI to raise an issue.
+At the end, the value is set to `0.0.0.0/0`, and this causes the CLI to raise an issue.
 
 ```hcl
 vpc.tf
