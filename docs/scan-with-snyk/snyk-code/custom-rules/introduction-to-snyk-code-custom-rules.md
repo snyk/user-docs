@@ -4,7 +4,7 @@ You can run custom rules as part of any scan run by Snyk Code, and the feature i
 
 * [Snyk Web UI](../../../getting-started/explore-snyk-through-the-web-ui.md)
 * [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
-* [IDE](../use-snyk-code-in-the-ide.md)
+* [IDE](broken-reference)
 
 {% hint style="info" %}
 **Prerequisite**\
@@ -30,7 +30,7 @@ For more information, see [Using Snyk Code via the CLI](../../../snyk-cli/scan-a
 
 IDE integrations with Snyk support custom rules as long as you have the [.snyk file](../../../manage-risk/prioritize-your-issues/the-.snyk-file.md) to hold any custom rules that you have created using Snyk Web UI.&#x20;
 
-For more information, see [Using Snyk Code via the IDE](../use-snyk-code-in-the-ide.md).
+For more information, see [Using Snyk Code via the IDE](broken-reference).
 
 ## Additional resource
 

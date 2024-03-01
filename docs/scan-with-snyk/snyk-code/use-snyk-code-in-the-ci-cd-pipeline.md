@@ -11,4 +11,4 @@ Use a CI/CD integration to test your code for vulnerabilities and ensure your ch
 
 ## What's next?
 
-[Integrate Snyk Code into a CI/CD pipeline](./).
+[Integrate Snyk Code into a CI/CD pipeline](../../integrate-with-snyk/snyk-ci-cd-integrations/).
