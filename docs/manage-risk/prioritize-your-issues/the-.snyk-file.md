@@ -4,13 +4,13 @@ The `.snyk` file is a capability of Snyk that all users can employ locally or as
 
 How the `.snyk` file works varies among Snyk products, When you deploy the `.snyk` file, start by reviewing how the file is created, where it can be used, and what it is used for. For details, see [Use the `.snyk` file with Snyk Open Source](the-.snyk-file.md#use-the-.snyk-file-with-snyk-open-source), [Use the `.snyk` file with Snyk Code](the-.snyk-file.md#use-the-.snyk-file-with-snyk-code) and [Use the `.snyk` file with Snyk IaC](the-.snyk-file.md#use-the-.snyk-file-with-snyk-iac).
 
-You can **create** the `.snyk` file by using **the `snyk ignore` command**. This generates the file and an ignore rule. You can also create the file using **a text or code editor**. The format is YAML. For details, see [How to create the .snyk file](the-.snyk-file.md#how-to-create-the-.snyk-file).
+You can **create** the `.snyk` file by using **the `snyk ignore` command**. This generates the file and an ignore rule. You can also create the file using **a text or code editor**. The format is YAML. For details, see [How to create the `.snyk` file](the-.snyk-file.md#how-to-create-the-.snyk-file).
 
 Key considerations regarding how the `.snyk` file is used are as follows:
 
-* The CLI automatically uses the `.snyk` file if it is present, along with the ignore rules in the database, created in the Snyk Web UI , if the product supports using ignores in the database or Snyk rules.
-* CI/CD plugins or the CLI used as part of a build system using the `.snyk` file during scanning if the file is present.
-* If you merge the `.snyk` file with the rest of your code, when you import  an SCM to Snyk, the rules in the `.snyk` file are applied on top of the database rules created in the Snyk Web UI.&#x20;
+* The CLI automatically uses the `.snyk` file if it is present, along with the ignore rules in the database created in the Snyk Web UI, if the product supports using ignores in the database or Snyk rules.
+* CI/CD plugins or the CLI used as part of a build system use the `.snyk` file during scanning if the file is present.
+* If you merge the `.snyk` file with the rest of your code, when you import an SCM to Snyk, the rules in the `.snyk` file are applied on top of the database rules created in the Snyk Web UI.&#x20;
 * If you use the `.snyk` file to specify ignores, you avoid having to specify them in the web interface, which you can do only after an issue is detected and monitored. You can use the `.snyk` file to override the ignore rules in the Snyk database. For details, see [How to override the ignore rules in the database](the-.snyk-file.md#how-to-override-the-ignore-rules-in-the-database).
 
 ## How to create the `.snyk` file
