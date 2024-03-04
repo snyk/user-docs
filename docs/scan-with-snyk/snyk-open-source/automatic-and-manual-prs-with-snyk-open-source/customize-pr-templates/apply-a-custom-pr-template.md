@@ -87,7 +87,7 @@ If you want to use multiple repositories for a custom template, add the customiz
 
 ## Broker configurations for fetching PR templates
 
-If you use  [Snyk Broker](../../../../enterprise-configuration/snyk-broker/), you must allow access to these file locations in the `accept.json` [configuration of your Broker client](../../../../enterprise-configuration/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.2b-running-the-broker-client-with-the-code-snippets-display.md). The following describes the additional rules that should be added for each git integration.
+If you use  [Snyk Broker](../../../../enterprise-configuration/snyk-broker/), you must allow access to these file locations in the `accept.json` [configuration of your Broker client](../../../../enterprise-configuration/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/step-5-setting-up-the-broker-client/step-5.2b-running-the-broker-client-with-the-code-snippets-display.md). The following describes the additional rules that should be added for each git integration.
 
 ### Github and GitHub Enterprise
 

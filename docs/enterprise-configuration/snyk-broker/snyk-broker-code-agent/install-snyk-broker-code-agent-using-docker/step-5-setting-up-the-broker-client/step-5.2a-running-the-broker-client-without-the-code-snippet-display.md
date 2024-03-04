@@ -34,8 +34,8 @@ where:
 * `-- restart=always` is a Docker command that determines that the Broker Client container will always restart regardless of the exit status.
 * `-p <host_machine_port_no._mapped to>:<Broker_Client_container_port_ no.>` is the mapping of a physical open port in the host machine to a port in the Broker Client container. These port numbers on the host machine and container do not have to be the same, for example, `8001:8000`.\
   The port number of the host machine must be unique.
-* `-e BROKER_TOKEN` is the [Broker token](../step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token.md) that is associated with the specific Organization and the specific integrated SCM.
-* `-e <SCM_TOKEN>` is the [SCM token](../step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-scm-token.md) for the specific integrated SCM.
+* `-e BROKER_TOKEN` is the [Broker token](broken-reference) that is associated with the specific Organization and the specific integrated SCM.
+* `-e <SCM_TOKEN>` is the [SCM token](broken-reference) for the specific integrated SCM.
 * `-e <SCM_domain>=` is your SCM domain name, without http/https, for example, `snyk.git.com`. For each SCM. Use the parameter for your SCM:
   * **GitHub** - the `-e <SCM_domain>` parameter is NOT required.
   * **GitHub Enterprise**: `-e GITHUB`\
