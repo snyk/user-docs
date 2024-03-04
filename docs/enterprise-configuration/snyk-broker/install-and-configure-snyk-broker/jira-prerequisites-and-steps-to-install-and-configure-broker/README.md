@@ -6,7 +6,7 @@ The **prerequisites** follow.
 
 Before installing the Snyk Nexus Repository Broker, ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
 
-To install using Docker, you must have Docker or a way to run Docker Linux containers.\
+You must have Docker or a way to run Docker Linux containers.\
 Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
 To generate a Broker token from the Web UI:

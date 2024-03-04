@@ -12,6 +12,6 @@ The **prerequisites** follow.
 
 Before installing the Bitbucket Server/Data Center Broker, ask your Snyk account team to provide you with a Broker token.&#x20;
 
-To install with Docker, you must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
 **Continue** with the steps to install using [Docker](data-center.md) or [Helm](bitbucket-server-data-center-install-and-configure-using-helm.md).

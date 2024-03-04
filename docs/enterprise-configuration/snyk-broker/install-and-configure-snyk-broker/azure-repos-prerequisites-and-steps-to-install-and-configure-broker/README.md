@@ -12,6 +12,6 @@ The **prerequisites** follow.
 
 Before installing the Snyk Azure Repos Broker, ask your Snyk account team to provide you with a Broker token.
 
-To install using Docker, you must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
 **Continue** with the steps to install using [Docker](setup-broker-with-azure-repos.md) or [Helm](azure-repos-install-and-configure-and-configure-using-helm.md).
