@@ -33,7 +33,6 @@ You can customize the filters and actions or use the template as is. After finis
 
 Each filter component requires you to specify an asset property. Available properties for asset policies include:
 
-* **Asset ID** - the unique identifier of the asset
 * **Asset name** - the name of the asset.
 * **Asset type** - repository, package or scanned artifact.
 * **Attribute** - asset attributes retrieved from the data source.
