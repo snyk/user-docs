@@ -1,6 +1,6 @@
-# Create queries with Snyk Code custom rules
+# Create query
 
-Use Snyk Code custom rules to create queries with [suggestive AI support](how-snyk-code-custom-rules-work.md#suggestive-ai-support). You can choose from provided [templates](how-snyk-code-custom-rules-work.md#query-templates) and [predicates](how-snyk-code-custom-rules-work.md#query-predicates). Alternatively, you can create your own predicates and [save them as a custom rule](create-snyk-code-custom-rules.md).&#x20;
+Use Snyk Code custom rules to create queries with [suggestive AI support](broken-reference). You can choose from provided [templates](broken-reference) and [predicates](broken-reference). Alternatively, you can create your own predicates and [save them as a custom rule](create-snyk-code-custom-rules.md).&#x20;
 
 Consider the following query examples and rules to use with Snyk Code custom rules.
 
@@ -125,7 +125,7 @@ There is nothing language-specific in the query. It would work on similar code i
 
 Create a new rule because Snyk is not aware of the proprietary source built in-house, resulting in missed findings.
 
-Use a data flow [template](how-snyk-code-custom-rules-work.md#query-templates) known as `Taint` when [creating a data flow query](run-query.md#run-query-on-a-repository).&#x20;
+Use a data flow [template](broken-reference) known as `Taint` when [creating a data flow query](run-query.md#run-query-on-a-repository).&#x20;
 
 ```javascript
 Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
@@ -137,7 +137,7 @@ You can configure the following parameters:
 * **Sanitizer:** The second parameter indicates a known sanitizer that would sanitize the data resulting in it not being tainted
 * **Sink**_**:**_ The third parameter indicating where the data flow ends
 
-Custom [predicates](how-snyk-code-custom-rules-work.md#query-predicates) are indicated by writing their names within brackets. In this scenario, the custom method is called `SourceFoo`.
+Custom [predicates](broken-reference) are indicated by writing their names within brackets. In this scenario, the custom method is called `SourceFoo`.
 
 With this query, you can look for the data flow that originates in `SourceFoo`. A source unknown to Snyk ends up in a known vulnerable cross-site scripting (XSS) Sink and does not pass through a known cross-site scripting (XSS) Sanitizer. Therefore, the assumption is that the data is tainted.
 
@@ -163,7 +163,7 @@ Recreate a Snyk rule and remove a source from the current Snyk known vulnerable 
 
 Like the [Net new data flow](create-queries-with-snyk-code-custom-rules.md#net-new-data-flow-rule) and [Extend a data flow](create-queries-with-snyk-code-custom-rules.md#extend-a-data-flow-rule) rules, the `Taint` data flow template is used with an `And` operator. A declarative negative statement (`Not`) is used to indicate the false case of the statement and not the true case.
 
-Run the data flow rule using the Snyk known sources, removing `SnykSource` from the results. In this example, `SnykSource` is a Snyk known source that is used within the regular general `AnySource` [predicate](how-snyk-code-custom-rules-work.md#query-predicates).
+Run the data flow rule using the Snyk known sources, removing `SnykSource` from the results. In this example, `SnykSource` is a Snyk known source that is used within the regular general `AnySource` [predicate](broken-reference).
 
 ```javascript
 Taint<And<PRED:AnySource,Not<PRED:”SnykSource”>>,PRED:XssSanitizer,PRED:XssSink>
@@ -264,6 +264,176 @@ Similarly, to improve coverage another query locates unmatched sinks by finding 
 
 ```starlang
 PRED:AnySink and not DataFlowsFrom<PRED:AnySource>
+```
+
+## CWE 312 query example
+
+In the context of Static Application Security Testing (SAST), identifying vulnerabilities associated with CWE-312 poses complex challenges in terms of analysis and accuracy. Specifically, the following concerns must be addressed:
+
+1. Data Sensitivity Classification: Accurately categorizing **which data** elements are sensitive and which are not is a non-trivial task. An incorrect classification can result in false positives.
+2. Sink Protection Validation: Another challenge is the identification of **data sinks** (endpoints where data is stored or transmitted) that are adequately secure.
+3. Geographical Data Protection Requirements: Moreover, the data protection regulations can vary significantly depending on the jurisdiction.
+
+Given these complexities, custom rules offer a more flexible and tailored approach for detecting CWE-312 vulnerabilities. In this example, we will employ the C# programming language and leverage the `Taint` template within the Custom Rules framework to address these challenges.
+
+Let's start with a simple program:
+
+```csharp
+using System;
+using System.IO;
+using System.Text;
+using System.Threading;
+
+namespace CWE_312_Example
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Please enter your username: ");
+            string username = Console.ReadLine();
+
+            string userData = $"Username: {username}";
+
+            File.WriteAllText("testFile.txt", userData);
+        }
+    }
+}
+```
+
+Building a rule that matches on sensitive data (`username`) being sent to a text file is simple enough. A naive first approach is:
+
+```
+Taint<
+  "global::System.Console.ReadLine",
+  PRED:None,
+  "global::System.IO.File.WriteAllText"
+>
+```
+
+This matches a sensitive data flow from `ReadLine` to `WriteAllText`. Given the broad nature of the rule, it may create quite a lot of noise.
+
+### Restricting to specific log files only
+
+The first caveat is that perhaps only `testFile.txt` is considered unsafe. Files like `cache.txt` should be considered safe.&#x20;
+
+```csharp
+// Create a warning on this one
+File.WriteAllText("testFile.txt", userData);
+
+// We can ignore this file
+File.WriteAllText("cache.txt", userData);
+```
+
+To achieve this, we use the `CallExpression` and `HasArg1` templates.&#x20;
+
+```ada
+Taint<
+  "global::System.Console.ReadLine",
+  PRED:None,
+  And<
+    CallExpression<"global::System.IO.File.WriteAllText">, 
+    HasArg1<"testFile.txt">
+  >
+>
+```
+
+{% hint style="info" %}
+**`CallExpression`** and **`HasArg1`** may also be used on it's own. Connecting them using the **`And`** statement establishes the relationship & Snyk Code will attempt to match them in combination only.
+{% endhint %}
+
+### Catching all File writers
+
+In .NET, files can be written using [`WriteAllText`](https://learn.microsoft.com/en-us/dotnet/api/system.io.file.writealltext?view=net-7.0). There'a also `WriteAllLines` and `WriteAllBytes`.
+
+Our code snippet may be extended this way:
+
+```csharp
+string userData = $"Username: {username}";
+byte[] userBytes = Encoding.UTF8.GetBytes(userData);
+string[] userLines = new string[] {userData};
+
+File.WriteAllText("testFile.txt", userData);
+File.WriteAllLines("testFile.txt", userLines);
+File.WriteAllBytes("testFile.bin", userBytes);
+```
+
+Let's capture the variants first using regular expressions. We will look for the functions and also both filename variants (`.bin` and `.txt`):
+
+```ada
+Taint<
+  "global::System.Console.ReadLine",
+  PRED:None,
+  And<
+    CallExpression<
+      ~"global::System\.IO\.File\.WriteAll(Text|Lines|Bytes)"
+    >, 
+    HasArg1<Or<"testFile.txt", "testFile.bin">>
+  >
+>
+```
+
+{% hint style="info" %}
+Notice how CallExpression now contains a **regular expression,** whereas **`HasArg1`** utilises the **`Or`** template. It could be written either way.
+{% endhint %}
+
+Finally, let's add support for .NETs `Async` variants and also the `Append` methods:
+
+```ada
+Taint<
+  "global::System.Console.ReadLine",
+  PRED:None,
+  And<
+    CallExpression<
+      ~"global::System\.IO\.File\.(Write|Append)All(Text|Lines|Bytes)(Async)?"
+    >, 
+    HasArg1<Or<"testFile.txt", "testFile.bin">>
+  >
+>
+```
+
+### Defining "interesting data"
+
+In our previous example, we treated `ReadLine` as a source of sensitive data. Let's consider a simple object with only specific sensitive fields:
+
+```csharp
+public class MyUser
+{
+    public string EmailAddress;
+
+    public string MembershipType;
+}
+```
+
+For this class, only `EmailAddress` should be considered.
+
+Therefore, given a code snippet like this:
+
+```csharp
+MyUser user = new MyUser();
+user.EmailAddress = "support@snyk.io";
+user.MembershipType = "SampleRole";
+
+string sensitiveData = $"Username: {user.EmailAddress}";
+string notSensitiveData = $"MembershipType: {user.MembershipType}";
+
+File.WriteAllText("testFile.txt", sensitiveData);
+File.WriteAllText("testFile.txt", notSensitiveData);
+```
+
+The first call to `WriteAllText` should be prevented while the second call is allowed. In order to accomplish this, you can simply defer to specifying the field name in the query:
+
+```ada
+Taint<
+  "EmailAddress",
+  PRED:None,
+  And<
+    CallExpression<
+      ~"global::System\.IO\.File\.(Write|Append)All(Text|Lines|Bytes)(Async)?"
+    >, 
+    HasArg1<Or<"testFile.txt", "testFile.bin">>
+  >
+>
 ```
 
 [^1]: 
