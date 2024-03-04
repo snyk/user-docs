@@ -1,5 +1,12 @@
 # Prepare Snyk Broker for deployment
 
+{% hint style="info" %}
+**Multi-tenant settings for EU and AU**\
+When you set up Snyk Broker for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md).
+{% endhint %}
+
 ## Prerequisites for Snyk Broker
 
 The use of Snyk Broker on Windows is not supported. Snyk recommends that Windows users deploy Broker using Linux.

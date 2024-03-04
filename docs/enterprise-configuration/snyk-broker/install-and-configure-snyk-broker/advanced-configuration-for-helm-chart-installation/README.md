@@ -1,5 +1,12 @@
 # Advanced configuration for Helm Chart installation
 
+{% hint style="info" %}
+**Multi-tenant settings for EU and AU**\
+When you set up Snyk Broker for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [Regional hosting and data residency](../../../../working-with-snyk/regional-hosting-and-data-residency.md).
+{% endhint %}
+
 When you set up Snyk Broker using Helm, you can set advanced parameters as explained on the following pages:
 
 * [Custom additional options for Broker Helm Chart installation](custom-additional-options-for-broker-helm-chart-installation.md)
