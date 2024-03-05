@@ -68,6 +68,43 @@ A system-generated tag includes the following information:
 
 <figure><img src="../../../.gitbook/assets/inventory6.png" alt="AppRisk - Tags"><figcaption><p>Snyk AppRisk - Tags</p></figcaption></figure>
 
+### Tag rules overview
+
+System tags are automatically generated from the SCM repositories. System tags can be classified into three main categories:
+
+* Languages:
+  * This applies to GitHub, GitLab, Azure DevOps, and BitBucket as long the data is available in the repository.
+  * GitHub, GitLab, and Azure DevOps have automated language detection, instead, BitBucket requires users to set up the language in their repositories.&#x20;
+* SCM Topic:&#x20;
+  * This applies to GitHub and GitLab
+* Multiple different rules based on the words we found in the repositories
+  * This applies to GitHub, GitLab, Azure DevOps, and BitBucket.
+
+### Tag rules related to user
+
+| Rule                                     | Tag             |
+| ---------------------------------------- | --------------- |
+| The user commit is older than 6 months.  | `Dormant user`  |
+| The user commit is older than 3 months.  | `Inactive user` |
+| The user commit is newer than 3 months.  | `Active user`   |
+| A new user is detected.                  | `New user`      |
+
+### Tag rules related to repository and code project
+
+| Rule                                                                                             | Tag                              |
+| ------------------------------------------------------------------------------------------------ | -------------------------------- |
+| The word `payment` or `checkout` is found in the repository and code project.                    | `payment`                        |
+| Snyk AppRisk found the code project with the code owner.                                         | `codeowners`                     |
+| Snyk AppRisk found the word `infrastructure` in the repository and code project.                 | `infrastructure`                 |
+| Snyk AppRisk found the word `store` or `cart` in the repository and code project.                | `ecommerce`                      |
+| For scanned artifact code project.                                                               | `scanned artifact: packages`     |
+| For scanned artifact repositories.                                                               | `scanned artifact: repositories` |
+| Snyk AppRisk found the word `upload` in the repository or code project.                          | `upload`                         |
+| Snyk AppRisk found the word `demo` in the repository and code project.                           | `demo`                           |
+| Snyk AppRisk found the word `billing`, `charges` or `invoice` in the repository or code project. | `billing`                        |
+| Snyk AppRisk found the word `account` in the repository or code project.                         | `account`                        |
+| Snyk AppRisk found the word `download` or `attachement` in the repository or code project.       | `attachment`                     |
+
 ## **Developers**
 
 You can see the list of all developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
