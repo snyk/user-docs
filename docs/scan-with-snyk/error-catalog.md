@@ -355,6 +355,34 @@ If this step is successful locally, it is possible that Snyk is running another 
 - [https://learn.microsoft.com/en-us/dotnet/core/tools/global-json](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json)
 - [https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L67](https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L67)
 
+### [SNYK-OS-DOTNET-0005](#snyk-os-dotnet-0005)
+
+#### The dotnet CLI was unable to restore from private package sources
+
+This error occurs when running `dotnet restore` fails to access dependencies stored in a private package source that Snyk does not have access to. 
+
+This means that your `.csproj` file or files refer to a dependency hosted on a private package store or Nuget Artifact Registry defined in your `NuGet.config` file, such as:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <clear />
+    <add key="AzureFeed" value="https://pkgs.dev.azure.com/your-org/_packaging/your-repo/nuget/v3/index.json" />
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
+  </packageSources>
+</configuration>
+```
+
+In order to allow Snyk to access your private dependency package source, you must supply Snyk with a valid JSON object as a private registry token in the .NET language settings.
+
+You can set up a connection to your private Nuget repository in your Snyk integration settings.
+
+**HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+**Help Links:**
+- [https://github.com/microsoft/artifacts-credprovider#environment-variables](https://github.com/microsoft/artifacts-credprovider#environment-variables)
+
 ### [SNYK-OS-DOTNET-0006](#snyk-os-dotnet-0006)
 
 #### Missing MSBuild Condition Construct in project file
@@ -460,7 +488,7 @@ Verify your authentication configuration with your Git cloud provider and try ag
 
 Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the project. If the operation fails, creating a full dependency graph cannot continue.  
 
-This error means that you need some cleanup, such as `go mod tidy`) or your project deployment process contains a code generation step such as `protobuf` or similar that is not currently supported by Snyk. 
+This error means that you need some cleanup, (such as `go mod tidy`) or your project deployment process contains a code generation step such as `protobuf` or similar that is not currently supported by Snyk. 
 
 To verify if this is the case, clone your project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. 
 
@@ -1634,4 +1662,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-02-20T13:03:05.123Z
+--- Generated at 2024-03-05T19:31:47.656Z
