@@ -1,6 +1,6 @@
 # Create query
 
-Use Snyk Code custom rules to create queries with [suggestive AI support](broken-reference). You can choose from provided [templates](broken-reference) and [predicates](broken-reference). Alternatively, you can create your own predicates and [save them as a custom rule](create-snyk-code-custom-rules.md).&#x20;
+To use Snyk Code custom rules to create queries with [suggestive AI support](broken-reference), you can choose from provided [templates](broken-reference) and [predicates](broken-reference). Alternatively, you can create your own predicates and [save them as a custom rule](create-snyk-code-custom-rules.md).&#x20;
 
 Consider the following query examples and rules to use with Snyk Code custom rules.
 
@@ -45,7 +45,7 @@ This query does not select the Body with a capital B. The query language is case
 
 ### Try it yourself
 
-Run the following query over your own code `~"([a-zA-Z0-9+/]{40})"` If you find something, check it out first, as you might leak your AWS secrets.
+Run the following query over your code `~"([a-zA-Z0-9+/]{40})"` If you find something, check it out first, as you might leak your AWS secrets.
 
 If you are interested in a certain type of object, you can use [templates](templates-and-predicates.md). For example, the query `CallExpression<"Format">` matches a function call or `Literal<"nobody@notrealdomain.co.uk">` matches the string with the email address.
 
@@ -134,7 +134,7 @@ Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
 You can configure the following parameters:
 
 * **Source:** The first parameter indicates where the data flow starts.
-* **Sanitizer:** The second parameter indicates a known sanitizer that would sanitize the data resulting in it not being tainted
+* **Sanitizer:** The second parameter indicates a known sanitizer that would sanitize the data, resulting in it's not being tainted
 * **Sink**_**:**_ The third parameter indicating where the data flow ends
 
 Custom [predicates](broken-reference) are indicated by writing their names within brackets. In this scenario, the custom method is called `SourceFoo`.
@@ -163,7 +163,7 @@ Recreate a Snyk rule and remove a source from the current Snyk known vulnerable 
 
 Like the [Net new data flow](create-queries-with-snyk-code-custom-rules.md#net-new-data-flow-rule) and [Extend a data flow](create-queries-with-snyk-code-custom-rules.md#extend-a-data-flow-rule) rules, the `Taint` data flow template is used with an `And` operator. A declarative negative statement (`Not`) is used to indicate the false case of the statement and not the true case.
 
-Run the data flow rule using the Snyk known sources, removing `SnykSource` from the results. In this example, `SnykSource` is a Snyk known source that is used within the regular general `AnySource` [predicate](broken-reference).
+Run the data flow rule using the Snyk known sources, removing `SnykSource` from the results. In this example, `SnykSource` is a Snyk-known source that is used within the regular general `AnySource` [predicate](broken-reference).
 
 ```javascript
 Taint<And<PRED:AnySource,Not<PRED:”SnykSource”>>,PRED:XssSanitizer,PRED:XssSink>
@@ -173,7 +173,7 @@ With this query, you look for the data flow that originates in a known Snyk sour
 
 ## **High recall mode**
 
-See all the sources and sinks in the source code to understand every location where data can flow from or to. This analysis is conducted regardless of the presence of data flows, allowing users to comprehensively assess coverage.
+See all the sources and sinks in the source code to understand every location where data can flow from or to. This analysis is conducted regardless of the presence of data flows, allowing users to assess coverage comprehensively.
 
 This mode is often used as an investigatory tool to gain deeper insights into the code stack and to comprehend where data originates and terminates within the application.
 
@@ -260,7 +260,7 @@ PRED:AnySource and not DataFlowsInto<Taint<PRED:AnySource, PRED:None, PRED:AnySi
 
 ### Find unmatched sinks
 
-Similarly, to improve coverage another query locates unmatched sinks by finding elements like the `java.sql.Connection` object in the `WebServer` class that are poised to receive data but lack incoming data flows, highlighting areas for potential gaps in library and framework coverage.
+Similarly, to improve coverage, another query locates unmatched sinks by finding elements like the `java.sql.Connection` object in the `WebServer` class that are poised to receive data but lack incoming data flows, highlighting areas for potential gaps in library and framework coverage.
 
 ```starlang
 PRED:AnySink and not DataFlowsFrom<PRED:AnySource>
@@ -303,7 +303,7 @@ namespace CWE_312_Example
 
 Building a rule that matches on sensitive data (`username`) being sent to a text file is simple enough. A naive first approach is:
 
-```
+```ada
 Taint<
   "global::System.Console.ReadLine",
   PRED:None,
@@ -331,20 +331,19 @@ To achieve this, we use the `CallExpression` and `HasArg1` templates.&#x20;
 Taint<
   "global::System.Console.ReadLine",
   PRED:None,
-  And<
-    CallExpression<"global::System.IO.File.WriteAllText">, 
-    HasArg1<"testFile.txt">
-  >
+  CallExpression<"global::System.IO.File.WriteAllText">
+    and
+      HasArg1<"testFile.txt">
 >
 ```
 
 {% hint style="info" %}
-**`CallExpression`** and **`HasArg1`** may also be used on it's own. Connecting them using the **`And`** statement establishes the relationship & Snyk Code will attempt to match them in combination only.
+**`CallExpression`** and **`HasArg1`** may also be used on their own. Connecting them using the **`and`** operator establishes the relationship, and Snyk Code will attempt to match them in combination only.
 {% endhint %}
 
 ### Catching all File writers
 
-In .NET, files can be written using [`WriteAllText`](https://learn.microsoft.com/en-us/dotnet/api/system.io.file.writealltext?view=net-7.0). There'a also `WriteAllLines` and `WriteAllBytes`.
+In .NET, files can be written using [`WriteAllText`](https://learn.microsoft.com/en-us/dotnet/api/system.io.file.writealltext?view=net-7.0). There are also `WriteAllLines` and `WriteAllBytes`.
 
 Our code snippet may be extended this way:
 
@@ -364,31 +363,29 @@ Let's capture the variants first using regular expressions. We will look for the
 Taint<
   "global::System.Console.ReadLine",
   PRED:None,
-  And<
-    CallExpression<
-      ~"global::System\.IO\.File\.WriteAll(Text|Lines|Bytes)"
-    >, 
-    HasArg1<Or<"testFile.txt", "testFile.bin">>
-  >
+  CallExpression<
+    ~"global::System\.IO\.File\.(Write|Append)All(Text|Lines|Bytes)(Async)?"
+  > 
+    and 
+      HasArg1<"testFile.txt" or "testFile.bin">
 >
 ```
 
 {% hint style="info" %}
-Notice how CallExpression now contains a **regular expression,** whereas **`HasArg1`** utilises the **`Or`** template. It could be written either way.
+Notice how `CallExpression now` contains a **regular expression,** whereas **`HasArg1`** uses the **`or`** operator. It could be written either way.
 {% endhint %}
 
-Finally, let's add support for .NETs `Async` variants and also the `Append` methods:
+Finally, let's add support for the .NET`Async` variants and also the `Append` methods:
 
 ```ada
 Taint<
   "global::System.Console.ReadLine",
   PRED:None,
-  And<
-    CallExpression<
-      ~"global::System\.IO\.File\.(Write|Append)All(Text|Lines|Bytes)(Async)?"
-    >, 
-    HasArg1<Or<"testFile.txt", "testFile.bin">>
+  CallExpression<
+    ~"global::System\.IO\.File\.(Write|Append)All(Text|Lines|Bytes)(Async)?"
   >
+    and 
+      HasArg1<"testFile.txt" or "testFile.bin">
 >
 ```
 
@@ -421,18 +418,17 @@ File.WriteAllText("testFile.txt", sensitiveData);
 File.WriteAllText("testFile.txt", notSensitiveData);
 ```
 
-The first call to `WriteAllText` should be prevented while the second call is allowed. In order to accomplish this, you can simply defer to specifying the field name in the query:
+The first call to `WriteAllText` should be prevented while the second call is allowed. To accomplish this, you can defer to specifying the field name in the query:
 
 ```ada
 Taint<
   "EmailAddress",
   PRED:None,
-  And<
-    CallExpression<
-      ~"global::System\.IO\.File\.(Write|Append)All(Text|Lines|Bytes)(Async)?"
-    >, 
-    HasArg1<Or<"testFile.txt", "testFile.bin">>
+  CallExpression<
+    ~"global::System\.IO\.File\.(Write|Append)All(Text|Lines|Bytes)(Async)?"
   >
+    and 
+      HasArg1<"testFile.txt" or "testFile.bin">
 >
 ```
 
