@@ -105,6 +105,18 @@ System tags are automatically generated from the SCM repositories. System tags c
 | Snyk AppRisk found the word `account` in the repository or code project.                         | `account`                        |
 | Snyk AppRisk found the word `download` or `attachement` in the repository or code project.       | `attachment`                     |
 
+### Tag rules related to metadata
+
+| Rule                                       | Tag                 |
+| ------------------------------------------ | ------------------- |
+| Snyk AppRisk found pip metadata.           | `python module`     |
+| Snyk AppRisk found a browser extension.    | `browser extension` |
+| Snyk AppRisk found technologies in use.    | `< technologies>`   |
+| Snyk AppRisk found ruby metadata.          | `ruby module`       |
+| Snyk AppRisk found languages from the SCM. | `<languages>`       |
+| Snyk AppRisk detected a new repository.    | `new repository`    |
+| Snyk AppRisk found nodejs metadata.        | `nodejs module`     |
+
 ## **Developers**
 
 You can see the list of all developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
