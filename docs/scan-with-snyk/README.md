@@ -15,12 +15,6 @@ Snyk supports scanning methods that correspond to Snyk products. Choose the righ
 * [Snyk Container](snyk-container/): scan for container image and workload vulnerabilities.
 * [Snyk Infrastructure as Code: ](snyk-iac/)scan for issues in your cloud infrastructure configurations, before and after deployment.
 
-## Manage issues
-
-Snyk has several features that help you determine which issues are the most important for you to fix and the sequence in which to fix the issues.
-
-See [Find and manage priority issues](../manage-risk/prioritize-your-issues/) for details.
-
 ## Run pull request checks
 
 Scan and automatically address potential vulnerabilities when you review pull requests (PRs), to prevent security issues in production, for your open-source libraries and your own code.
