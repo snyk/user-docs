@@ -1,7 +1,7 @@
-# Step 2: Removing an existing Broker Client
+# Remove an existing Broker Client
 
 {% hint style="info" %}
-This section applies only if you already have a running Broker Client. If you do not have a Broker Client yet, proceed to [Step 3 - Creating a network for the Broker Client and Code Agent communication](step-3-creating-a-network-for-the-broker-client-and-code-agent-communication.md).
+This section applies only if you already have a running Broker Client. If you do not have a Broker Client yet, proceed to [Step 3 - Creating a network for the Broker Client and Code Agent communication](create-network-for-broker-client-and-code-agent-communication.md).
 {% endhint %}
 
 If you have a running Broker Client for the same Organization and the same Integration, stop and remove it before you set up a new Broker Client for the Code Agent. Since the Broker Client needs to communicate with the Code Agent, and this communication is configured in the setup commands of the Broker Client container, you cannot use an existing Broker Client container for the Code Agent operation.

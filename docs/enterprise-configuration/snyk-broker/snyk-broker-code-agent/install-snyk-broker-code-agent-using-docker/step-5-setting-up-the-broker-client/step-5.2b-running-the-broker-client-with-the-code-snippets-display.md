@@ -86,7 +86,7 @@ where:
 * `-e GIT_CLIENT_URL=` is a URL to the port of the running Code Agent container. The URL includes the name of the Code Agent container with its port number, for example, `http://code-agent:3000`.
 * `-e ACCEPT=` is the name of the folder that stores the downloaded `accept.json` file with the name of the file, for example, `/private/accept.json`.
 * `-v /local/path/to/<folder_name>:/<folder_name>` is the path to the folder that stores the accept.json file with the name of the folder, for example, `/private:/private`.
-* `--network` is the name of the [Docker bridge network](../step-3-creating-a-network-for-the-broker-client-and-code-agent-communication.md), used for the communication with the Code Agent.
+* `--network` is the name of the [Docker bridge network](../create-network-for-broker-client-and-code-agent-communication.md), used for the communication with the Code Agent.
 * `snyk/broker:<SCM_tag>` is the [Docker image of the Broker Client](step-5.1-downloading-or-updating-the-snyk-broker-client-docker-image.md) for the specific integrated SCM.
 
 {% hint style="info" %}

@@ -1,7 +1,7 @@
 # Step 5: Setting up the Broker Client
 
 {% hint style="info" %}
-**Before you start** – make sure that you currently do not have a running Broker Client for the same Snyk Organization and the same SCM. If you do have a running Broker Client, [stop and remove it](../step-2-removing-an-existing-broker-client.md).
+**Before you start** – make sure that you currently do not have a running Broker Client for the same Snyk Organization and the same SCM. If you do have a running Broker Client, [stop and remove it](../remove-an-existing-broker-client.md).
 {% endhint %}
 
 Setup of the Broker Client begins with [downloading or updating the Docker image of the Broker Client](step-5.1-downloading-or-updating-the-snyk-broker-client-docker-image.md).

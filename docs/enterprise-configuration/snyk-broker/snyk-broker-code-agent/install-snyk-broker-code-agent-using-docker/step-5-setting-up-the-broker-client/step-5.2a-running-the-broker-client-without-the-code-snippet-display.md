@@ -53,7 +53,7 @@ where:
   Add this parameter only if you are using the same Broker Client for other Snyk products, and you want to enable for them the Automatic PR Checks feature. Since currently the Automatic PR Checks feature is not supported by the Code Agent, you do not have to use this parameter for the Code Agent.
 * `-e PORT` is the port number of the Broker Client container, where it accepts external connections. The default is `8000`. This port number must be the same as the `<Broker_Client_container_port_ no.>` in the `-p` parameter above.
 * `-e GIT_CLIENT_URLis`a URL to the port of the running Code Agent container. The URL should include the name of the Code Agent container with its port number, for example, `http://code-agent:3000`.
-* `--network` is the name of the [Docker bridge network](../step-3-creating-a-network-for-the-broker-client-and-code-agent-communication.md), which will be used for the communication with the Code Agent.
+* `--network` is the name of the [Docker bridge network](../create-network-for-broker-client-and-code-agent-communication.md), which will be used for the communication with the Code Agent.
 * `snyk/broker:<SCM_tag>` is the [Docker image of the Broker Client](step-5.1-downloading-or-updating-the-snyk-broker-client-docker-image.md) for the specific integrated SCM.
 
 When the Broker Client setup is completed successfully, the following message appears in the terminal:
