@@ -1,10 +1,10 @@
-# Step 6: Testing the Code Agent – Snyk Broker Setup
+# Test the Snyk Broker Code Agent setup
 
-To test the Code Agent – Snyk Broker deployment setup, import a repository to Snyk, and verify that you are receiving the **Code Analysis** Project and results. When the selected repositories are imported to Snyk, and the Snyk Code results are displayed, the Code Agent – Snyk Broker deployment is operating successfully.
+To test the Code Agent with Snyk Broker setup, import a repository to Snyk and verify that you receive the Code Analysis Project and results. When the selected repositories are imported to Snyk, and the Snyk Code results are displayed, the Code Agent with Snyk Broker setup is operating successfully.
 
-**To test the Code Agent – Snyk Broker deployment** follow these steps:
+To test the setup, follow these steps:
 
-1\. On the Snyk Web UI, in the left navigation, open the Organization where you want to test the Code Agent.
+1\. On the Snyk Web UI, open the Organization where you want to test the Code Agent.
 
 2\. When the required Organization is open, select **Add project**. Then select the SCM for which you set the Code Agent:
 
@@ -24,16 +24,16 @@ The **Code Analysis** page opens, displaying the list and details of the vulnera
 
 <figure><img src="../../../../.gitbook/assets/Code Agent - Test - Code Analysis page.png" alt="Code Analysis page showing issues"><figcaption><p>Code Analysis page showing issues</p></figcaption></figure>
 
-5\. To view the details of a certain vulnerability issue, select **Full details** .
+5\. To view the details of a vulnerability issue, select **Full details**.
 
-The details of the issue appear, and depending on the way you set up the Broker Client, the code snippets either appear in the **Data flow** tab or not:
+The details of the issue appear, and depending on the way you set up the Broker client, the code snippets either appear in the **Data flow** tab or not:
 
-Snyk Code results with code snippets:
+This example shows Snyk Code results with code snippets.
 
 <figure><img src="../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
 
-Snyk Code results without code snippets:
+This example shows Snyk Code results without code snippets:
 
 <figure><img src="../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4) (1).png" alt="Broker Client run with no display of code snippets"><figcaption><p>Broker Client run with no display of code snippets</p></figcaption></figure>
 
-For more information on how to troubleshoot the Snyk Broker - Code Agent deployment, see [Troubleshooting Broker](../../troubleshooting-broker.md).
+For more information on how to troubleshoot the Snyk Broker Code Agent setup, see [Troubleshooting Broker](../../troubleshooting-broker.md).
