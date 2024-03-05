@@ -2,6 +2,10 @@
 
 This quickstart helps you with these basic tasks in the Snyk application:
 
+{% hint style="info" %}
+Before starting, check that the code in your repositories matches Snyk's [supported languages and frameworks](../supported-languages-frameworks-and-feature-availability-overview/).
+{% endhint %}
+
 1. [Create a Snyk account](create-or-log-in-to-a-snyk-account.md).
 2. [Set up a Snyk integration](set-up-an-integration.md) to give Snyk access to your code for scanning.
 3. [Import a Project](import-a-project.md) to scan and identify issues.
