@@ -129,7 +129,9 @@ To scan your Projects, you must ensure your repository contains the supported ma
 URLs in `requirements.txt` files are not supported. They are removed before resolving the dependencies in the files.
 {% endhint %}
 
-To scan Pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
+To scan pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
+
+pip Projects scanned using the Git integration will be given the same name as the directory where they are contained.&#x20;
 
 Snyk imports any file that follows the `**/*req*.txt` pattern. This can help if you have renamed the `requirements.txt` files, for example, to `requirements-dev.txt`.
 
@@ -208,9 +210,9 @@ For details, see the [Test command help](https://docs.snyk.io/snyk-cli/commands/
 #### Pip and Python versions
 
 {% hint style="success" %}
-Selecting the minor version of Python to use in pip Project scans is in Open Beta. You can enable this in [snyk-preview.md](../../snyk-admin/manage-settings/snyk-preview.md "mention") (you may need to refresh the page after)
+Selecting the minor version of Python to use in pip Project scans is in Early Access. You can enable this in [snyk-preview.md](../../snyk-admin/manage-settings/snyk-preview.md "mention") (you may need to refresh the page after)
 
-Python version options for the default and open beta scenarios are detailed below.
+Python version options for the default and early access scenarios are detailed below.
 {% endhint %}
 
 {% tabs %}
@@ -248,7 +250,7 @@ language-settings:
 In this example, Snyk runs the scan using its currently supported version of Python 3. Snyk does not use the exact minor and patch version specified.
 {% endtab %}
 
-{% tab title="Open Beta" %}
+{% tab title="Early Access" %}
 {% hint style="info" %}
 When scanning pip Projects imported from Git, Snyk uses the version of Python specified in Organization settings or `.snyk` files.
 
