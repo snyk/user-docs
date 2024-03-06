@@ -34,7 +34,8 @@ Ensure you have the following permission scopes in Jira, which are required for 
 Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketplace.atlassian.com/apps/1230482/snyk-security-in-jira-cloud) from the Atlassian Marketplace.
 
 1. In Jira, navigate to **Apps** > **Find new apps.**
-2. Search for **Snyk Security in Jira Cloud**.
+2. Search for **Snyk Security in Jira Cloud**.\
+   If you are installing Jira for [EU](https://marketplace.atlassian.com/apps/1232502/snyk-security-in-jira-cloud-eu?hosting=cloud\&tab=overview) or [AU](https://marketplace.atlassian.com/apps/1232503/snyk-security-in-jira-cloud-au?hosting=cloud\&tab=overview) you must install the dedicated EU or AU app from the Atlassian app marketplace
 3. Click the app and then select **Get it now.**
 4. Review the information about the app, and select **Get it now**.
 5. Follow the instructions to install the app.
