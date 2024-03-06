@@ -29,11 +29,11 @@ Reachable vulnerabilities analysis is available for Java (Maven and Gradle) Proj
 The following integrations are supported for Reachable Vulnerabilities analysis:
 
 * [GitHub](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-integration.md)&#x20;
-* [Bitbucket Cloud](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-app-integration.md) (Currently in Open Beta)
-* [Bitbucket Server](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md) (Currently in Open Beta)
-* [GitLab](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-gitlab-integration.md) (Currently in Open Beta)
-* [Azure Repos](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md) (Currently in Open Beta)
-* [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md) (Currently in Open Beta)
+* [Bitbucket Cloud](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-app-integration.md) (Currently in Early Access)
+* [Bitbucket Server](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md) (Currently in Early Access)
+* [GitLab](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-gitlab-integration.md) (Currently in Early Access)
+* [Azure Repos](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md) (Currently in Early Access)
+* [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md) (Currently in Early Access)
 
 {% hint style="warning" %}
 **Release status**&#x20;

@@ -68,4 +68,4 @@ Snyk does not support scanning for license issues for package versions that incl
 Snyk does not support scanning for license issues for package versions that include a git commit hash.
 {% endhint %}
 
-C/C++ scanning for license issues is supported in Open Beta.
+C/C++ scanning for license issues is supported in Early Access.
