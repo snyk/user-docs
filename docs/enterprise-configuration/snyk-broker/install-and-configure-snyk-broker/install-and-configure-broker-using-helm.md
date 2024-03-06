@@ -32,10 +32,7 @@ Running the commands for each SCM, registry, or Jira creates a namespace called 
 
 Beginning with version 2.0.0, all created objects have a suffix based on the release name, allowing for multiple Brokers in the same namespace. For backward compatibility, 2.1.0 introduces a `disableSuffixes` flag to revert to the 1.x.x behavior by adding `--set disableSuffixes=true`.
 
-Additional commands are available to Install the Snyk Broker Code Agent and Container Registry Agent.
-
-* [Snyk Broker Code Agent](../snyk-broker-code-agent/): needed to enable SAST analysis
-* [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/): needed to connect to Container Registries; `scmType`: `container-registry-agent`\\
+Additional commands are available to install [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/), needed to connect to Container Registries; `scmType`: `container-registry-agent`\\
 
 You can verify that the Broker is running by looking at the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a confirmation message that you are connected. You can start importing Projects once you are connected.
 
