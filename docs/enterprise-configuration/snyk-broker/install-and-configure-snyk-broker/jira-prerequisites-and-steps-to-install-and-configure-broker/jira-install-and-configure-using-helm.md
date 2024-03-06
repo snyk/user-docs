@@ -1,6 +1,6 @@
 # Jira - install and configure using Helm
 
-Before installing, review the prerequisites and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
 ## Command to install the Jira integration
 

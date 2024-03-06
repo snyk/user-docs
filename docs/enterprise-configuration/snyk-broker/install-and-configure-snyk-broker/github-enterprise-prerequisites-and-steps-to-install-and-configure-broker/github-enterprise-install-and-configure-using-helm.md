@@ -1,6 +1,6 @@
 # GitHub Enterprise - install and configure using Helm
 
-Before installing, **review the prerequisites and the general instructions** for installation using [Helm](../install-and-configure-broker-using-helm.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 

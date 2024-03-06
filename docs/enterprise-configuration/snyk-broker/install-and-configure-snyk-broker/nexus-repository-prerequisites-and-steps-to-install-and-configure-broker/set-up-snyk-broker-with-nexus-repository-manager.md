@@ -8,7 +8,7 @@ Integration with Nexus Repository Manager is available only for Enterprise plans
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Before installing, review the prerequisites and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).
 
 This integration is useful to ensure a secure connection with your on-premise Nexus Repository Manager deployment.
 
