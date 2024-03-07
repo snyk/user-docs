@@ -1,6 +1,6 @@
 # Create query
 
-To use Snyk Code custom rules to create queries with [suggestive AI support](broken-reference), you can choose from provided [templates](broken-reference) and [predicates](broken-reference). Alternatively, you can create your own predicates and [save them as a custom rule](create-snyk-code-custom-rules.md).&#x20;
+To use Snyk Code custom rules to create queries with [suggestive AI support](./#suggestive-ai-support), you can choose from provided [templates](./#template) and [predicates.](./#predicate-pred) Alternatively, you can create your own predicates and [save them as a custom rule](create-snyk-code-custom-rules.md).&#x20;
 
 Consider the following query examples and rules to use with Snyk Code custom rules.
 
@@ -113,8 +113,6 @@ Query `PRED:SqliSinks` shows you that `query()` is part of that list of SQL inje
 
 To check whether the data flows into a SQL injection sink, use the following: `DataFlowsInto<PRED:SqliSink>`. It shows you that in the program, data from the `req` parameter flow into `query()` taking several turns.
 
-language-specific
-
 If the data flow is also going through a sanitizer, you can use a specialized template. Change the query to ​​`Taint<PRED:AnySource, PRED:SqliSanitizer, PRED:SqliSink>`
 
 {% hint style="info" %}
@@ -125,7 +123,7 @@ There is nothing language-specific in the query. It would work on similar code i
 
 Create a new rule because Snyk is not aware of the proprietary source built in-house, resulting in missed findings.
 
-Use a data flow [template](broken-reference) known as `Taint` when [creating a data flow query](run-query.md#run-query-on-a-repository).&#x20;
+Use a data flow [template](templates-and-predicates.md) known as `Taint` when [creating a data flow query](run-query.md#run-query-on-a-repository).&#x20;
 
 ```javascript
 Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
@@ -134,10 +132,10 @@ Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
 You can configure the following parameters:
 
 * **Source:** The first parameter indicates where the data flow starts.
-* **Sanitizer:** The second parameter indicates a known sanitizer that would sanitize the data, resulting in it's not being tainted
+* **Sanitizer:** The second parameter indicates a known sanitizer that would sanitize the data, resulting in the data's not being tainted
 * **Sink**_**:**_ The third parameter indicating where the data flow ends
 
-Custom [predicates](broken-reference) are indicated by writing their names within brackets. In this scenario, the custom method is called `SourceFoo`.
+Custom [predicates](templates-and-predicates.md) are indicated by writing their names within brackets. In this scenario, the custom method is called `SourceFoo`.
 
 With this query, you can look for the data flow that originates in `SourceFoo`. A source unknown to Snyk ends up in a known vulnerable cross-site scripting (XSS) Sink and does not pass through a known cross-site scripting (XSS) Sanitizer. Therefore, the assumption is that the data is tainted.
 
@@ -163,7 +161,7 @@ Recreate a Snyk rule and remove a source from the current Snyk known vulnerable 
 
 Like the [Net new data flow](create-queries-with-snyk-code-custom-rules.md#net-new-data-flow-rule) and [Extend a data flow](create-queries-with-snyk-code-custom-rules.md#extend-a-data-flow-rule) rules, the `Taint` data flow template is used with an `And` operator. A declarative negative statement (`Not`) is used to indicate the false case of the statement and not the true case.
 
-Run the data flow rule using the Snyk known sources, removing `SnykSource` from the results. In this example, `SnykSource` is a Snyk-known source that is used within the regular general `AnySource` [predicate](broken-reference).
+Run the data flow rule using the Snyk known sources, removing `SnykSource` from the results. In this example, `SnykSource` is a Snyk-known source that is used within the regular general `AnySource` [predicate](templates-and-predicates.md).
 
 ```javascript
 Taint<And<PRED:AnySource,Not<PRED:”SnykSource”>>,PRED:XssSanitizer,PRED:XssSink>

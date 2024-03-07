@@ -5,7 +5,7 @@
 
 Snyk Code custom rules are [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
 
-To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
+To enable the feature, see [Snyk Preview](../../../snyk-admin/manage-settings/snyk-preview.md).
 {% endhint %}
 
 Create custom rules to run queries against the code stack as part of your investigation workflow. Use custom rules, as follows:
@@ -50,7 +50,7 @@ The goal is to create useful queries that will provide valuable and actionable r
 
 #### Query templates
 
-The templates are abstract, pre-built constructs created to provide a quicker and easier way to build queries. See [Detailed explanation of templates](broken-reference).
+The templates are abstract, pre-built constructs created to provide a quicker and easier way to build queries. See [Templates and predicates](templates-and-predicates.md).
 
 <figure><img src="../../../.gitbook/assets/query templates.png" alt="Query Templates"><figcaption><p>Query Templates</p></figcaption></figure>
 
@@ -142,7 +142,7 @@ For example, using a query like: `PRED:SourceCookie ~"get.*"` will only match on
 
 #### **Template**
 
-Templates are used for combining one or more conditions provided as their parameters. Templates themselves, just like predicates and value matches, also describe rules for matching elements in the given code. The parameters of templates are provided in chevrons or angle brackets, `<` and `>,` and are comma separated. The predefined templates are designed for multiple use cases that are defined here.
+Templates are used for combining one or more conditions provided as their parameters. Templates themselves, just like predicates and value matches, also describe rules for matching elements in the given code. The parameters of templates are provided in chevrons or angle brackets, `<` and `>,` and are comma-separated. The predefined templates are designed for multiple use cases that are defined here.
 
 Templates can be used to restrict the matches of their parameters. For example `StringLiteral<"test">` takes all the program elements with value test and only returns the elements that are string literals.
 
