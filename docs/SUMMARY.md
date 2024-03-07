@@ -786,6 +786,7 @@
       * [snyk-filter](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md)
       * [snyk-to-html](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md)
     * [Snyk CLI for Open Source](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/README.md)
+      * [Open Source Projects that must be built before testing with the Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md)
       * [Use options to customize the snyk test command](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/use-options-to-customize-the-snyk-test-command.md)
       * [Review the Snyk Open Source CLI results](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/review-the-snyk-open-source-cli-results.md)
       * [Integrate Snyk into your workflow using the CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/integrate-snyk-into-your-workflow-using-the-cli.md)
