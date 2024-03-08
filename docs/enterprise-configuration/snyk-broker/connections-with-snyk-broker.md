@@ -44,7 +44,7 @@ See [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-d
 
 When you configure your Broker Client setup, Git repository webhooks are set to enable automatic Snyk scans, triggered when your developers submit new pull requests or merge events.
 
-Webhook notifications are delivered to Snyk through the Broker Client only for events relevant to Snyk actions: push to branch and open pull request, _**and only when**_ the event data also includes a dependency manifest file or a `.snyk` policy file.
+Webhook notifications are delivered to Snyk through the Broker Client only for events relevant to Snyk actions: push to branch and open pull request, and only when the event data also shows a scan has occurred. For example, for Open Source, the event data must include a dependency manifest file or a `.snyk` policy file.
 
 ### Default approved data list and `accept.json` file
 
