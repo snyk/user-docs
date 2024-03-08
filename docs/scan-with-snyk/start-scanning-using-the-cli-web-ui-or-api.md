@@ -24,7 +24,7 @@ A scan runs when you import a Snyk Project (see [Import a Project](../getting-st
 
 See [Explore Snyk through the Web UI](../getting-started/explore-snyk-through-the-web-ui.md).
 
-The default **scanning frequency** and available frequencies vary depending on the type of Project: for more information, see [Usage settings](../snyk-admin/manage-settings/usage-settings.md). You can also set the frequency in the Project **Settings** (see [View and edit project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md)) or use the Snyk REST API; see the  [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-) endpoint.
+The default **scanning frequency** and available frequencies vary depending on the type of Project: for more information, see [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md). You can also set the frequency in the Project **Settings** (see [View and edit project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md)) or use the Snyk REST API; see the  [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-) endpoint.
 
 ## Scan using the API
 

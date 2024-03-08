@@ -3,7 +3,7 @@
 After you have imported one or more Projects, you can see the results of your scans.
 
 {% hint style="info" %}
-In the Snyk Web UI, you see information specific to your Organization, such as your team), which is under a Group, such as your company. This allows your company to organize and collect data for the work your teams are doing. For more information, see [Manage users in an Organization](../../snyk-admin/manage-users-in-organizations-and-groups/manage-users-in-organizations.md).
+In the Snyk Web UI, you see information specific to your Organization, such as your team), which is under a Group, such as your company. This allows your company to organize and collect data for the work your teams are doing. For more information, see [Manage users in an Organization](../../snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations.md).
 {% endhint %}
 
 ## View imports

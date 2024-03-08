@@ -4,7 +4,7 @@
 **Release status** \
 Customize PR templates is currently in [Closed Beta](../../../../getting-started/snyk-release-process.md) and available only for Enterprise plans. The functionality is likely to evolve based on feedback, and there will be breaking changes.&#x20;
 
-Contact your account manager to get access to this feature. After your account manager turns on the feature flag, you can activate this feature in the [Snyk Preview](../../../../snyk-admin/manage-settings/snyk-preview.md).
+Contact your account manager to get access to this feature. After your account manager turns on the feature flag, you can activate this feature in the [Snyk Preview](../../../../snyk-preview.md).
 {% endhint %}
 
 ## Understand Customized PRs

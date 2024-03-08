@@ -39,7 +39,7 @@ You can navigate to [Snyk](https://snyk.io/) and use the link to log in. If your
 
 If your company requires an invitation to use Snyk, you may see a list of Organizations when you log in for the first time. This means that you have not yet been invited. Select the name of an Organization Admin to send an email to request access to that Organization.
 
-Organizations in Snyk control access to projects. For details see the [Snyk Organizations](../../snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md) page.
+Organizations in Snyk control access to projects. For details see the [Snyk Organizations](../../snyk-admin/groups-and-organizations/organizations/) page.
 
 The Organization settings and policies influence your scan results, depending on which Organization you use when you add a project.
 

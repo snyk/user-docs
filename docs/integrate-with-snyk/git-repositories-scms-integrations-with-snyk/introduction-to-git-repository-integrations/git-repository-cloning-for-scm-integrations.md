@@ -4,7 +4,7 @@
 **Feature availability**\
 This feature is in early access for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
 
-To enable this feature, you must use Snyk Preview. See [Enable Git repository cloning](../../../snyk-admin/manage-settings/snyk-preview.md#enable-git-repository-cloning).
+To enable this feature, you must use Snyk Preview. See [Enable Git repository cloning](../../../snyk-preview.md#enable-git-repository-cloning).
 {% endhint %}
 
 Full Git repository cloning allows Snyk to provide more reliable and accurate results when scanning your source code through the [SCM integrations](https://docs.snyk.io/integrations/git-repository-scm-integrations), helping you develop fast and stay secure.

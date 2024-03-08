@@ -22,7 +22,7 @@ Snyk uses a hierarchical approach to managing assets, access, and rollup reporti
   * The import you have tested and monitored with Snyk.
   * A CLI scan that is being monitored, a container that is being monitored in a registry or Kubernetes, or an asset detected during a Git import, such as an open-source manifest, a code analysis scan, or an infrastructure as code file detected.
 
-For more details, see [Manage Groups and Organizations](../../../snyk-admin/manage-groups-and-organizations/).
+For more details, see [Manage Groups and Organizations](../../../snyk-admin/groups-and-organizations/).
 
 ## Decide the structure
 
@@ -44,4 +44,4 @@ By exploring these options and grasping your company's requirements, you can est
 
 ## Additional information
 
-See [Manage Organizations](../../../snyk-admin/manage-groups-and-organizations/create-and-delete-organizations.md) for more details.&#x20;
+See [Manage Organizations](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md) for more details.&#x20;

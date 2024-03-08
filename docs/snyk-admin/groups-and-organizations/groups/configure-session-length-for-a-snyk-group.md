@@ -20,11 +20,11 @@ You must be a customer on a Snyk plan that supports Groups. For more information
 2. Navigate to **Settings** to update the Group settings.
 3. In the **Session expiration** area, enter values for the session length:
 
-<figure><img src="../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png" alt="Group settings, change Session expiration"><figcaption><p>Session expiration area of Group settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png" alt="Group settings, change Session expiration"><figcaption><p>Session expiration area of Group settings</p></figcaption></figure>
 
 When session length expiration is configured, tracking of session length starts within 60 seconds or when a user logs in, whichever comes first.
 
 {% hint style="info" %}
-See the [Group general settings](../manage-settings/group-general-settings.md) documentation for more information about Group settings.
+See the [Group general settings](group-general-settings.md) documentation for more information about Group settings.
 {% endhint %}
 
