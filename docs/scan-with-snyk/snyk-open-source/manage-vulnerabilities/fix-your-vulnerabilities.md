@@ -52,9 +52,9 @@ To apply fixes, you can:
 * Click **Fix this vulnerability** on a specific [issue card](../../../snyk-admin/snyk-projects/issue-card-information.md) on the relevant Project page.
 * If you are using a [Source code integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/):
   * Click **Open a fix PR** on the Project page.
-  * Use [automated pull requests](../snyk-fix-prs-and-fix-merge-requests/automated-pull-request-creation-for-new-fixes.md) when new fixes become available that help you to fix a vulnerability.
+  * Use [automated pull requests](../automatic-snyk-fix-prs-and-manual-fix-merge-requests/automated-pull-request-creation-for-new-fixes.md) when new fixes become available that help you to fix a vulnerability.
 
 {% hint style="info" %}
 **Automatic Fix PRs**\
-When a new fixable vulnerability is found, Snyk can attempt to open a new pull request automatically. See [Automated pull request creation for new fixes](../snyk-fix-prs-and-fix-merge-requests/automated-pull-request-creation-for-new-fixes.md) for details.
+When a new fixable vulnerability is found, Snyk can attempt to open a new pull request automatically. See [Automated pull request creation for new fixes](../automatic-snyk-fix-prs-and-manual-fix-merge-requests/automated-pull-request-creation-for-new-fixes.md) for details.
 {% endhint %}

@@ -1,4 +1,4 @@
-# Snyk Fix PRs and Fix Merge requests with Snyk Open Source
+# Automatic Snyk fix PRs and manual fix merge requests
 
 {% hint style="info" %}
 For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../manage-vulnerabilities/fix-your-vulnerabilities.md). To be sure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../manage-vulnerabilities/troubleshoot-fixing-open-source-vulnerabilities.md#languages-supporting-fix-pull-requests-or-merge-requests).
@@ -6,10 +6,10 @@ For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](.
 
 Snyk provides actionable fix advice for vulnerabilities in your Open Source libraries through the following:
 
-* [Snyk Fix PRs](./#snyk-fix-prs): automatic pull and merge requests (PRs and MRs)
-* [Snyk Fix Merge requests](./#snyk-fix-merge-requests): manual pull and merge requests
+* [Snyk fix PRs](./#snyk-fix-prs): automatic pull and merge requests (PRs and MRs)
+* [Snyk fix merge requests](./#snyk-fix-merge-requests): manual pull and merge requests
 
-## **Snyk Fix PRs**
+## **Automatic Snyk fix PRs**
 
 For Projects imported through an SCM integration, Snyk offers the following types of automated pull and merge requests:
 
@@ -17,7 +17,7 @@ For Projects imported through an SCM integration, Snyk offers the following type
 * [Fix pull requests to clear the backlog of vulnerabilities in priority order](automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md)
 * [Dependency upgrade pull requests](upgrade-dependencies-with-automatic-prs.md)
 
-## Snyk Fix Merge requests
+## Manual Snyk fix merge requests
 
 Follow these steps to generate a PR or MR directly from your Project in the Snyk Web UI:
 
@@ -30,7 +30,7 @@ Follow these steps to generate a PR or MR directly from your Project in the Snyk
 <figure><img src="../../../.gitbook/assets/image18.png" alt="Open Fix PR to fix Open Source Project vulnerabilities"><figcaption><p>Open Fix PR to fix Open Source Project vulnerabilities</p></figcaption></figure>
 
 {% hint style="info" %}
-PRs use a branch naming convention based on the issues that they fix. When a PR already exists for a specific change, Snyk does not create a new one, even if the original PR is closed. If you try to create a Fix PR that duplicates an existing one, an error may be displayed. If this happens, check to see if the branch already exists and re-open it.
+PRs use a branch naming convention based on the issues that they fix. When a PR already exists for a specific change, Snyk does not create a new one, even if the original PR is closed. If you try to create a fix PR that duplicates an existing one, an error may be displayed. If this happens, check to see if the branch already exists and re-open it.
 {% endhint %}
 
 ## Snyk SCM webhooks
