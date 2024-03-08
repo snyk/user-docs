@@ -335,6 +335,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## Option for Maven projects
 
+`--maven-aggregate-project`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+
+`--scan-unmanaged`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+
 `--scan-all-unmanaged`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for Gradle projects
