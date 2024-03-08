@@ -12,7 +12,7 @@ To connect Snyk Code to your self-hosted Git server using Snyk Broker, you can a
 
 The Code Agent is available as a [Docker image](https://hub.docker.com/r/snyk/code-agent/). The Code Agent is supported only for Snyk Broker version 4.108.0 and later versions. If you already have a running Broker Client, you must update it by pulling the latest Docker image.
 
-Deploying the Broker client and Code Agent creates two separate services. that, along with the Broker server, Snyk Code AI Engine, and Snyk Web UI, enable the following Code Analysis workflow:
+Deploying the Broker client and Code Agent creates two separate services. that, along with the Broker server, [Snyk Code AI Engine](../../../scan-with-snyk/snyk-code/#ai-engine), and Snyk Web UI, enable the following Code Analysis workflow:
 
 1. On the Snyk Web UI, a user initiates a request to import a repository from a self-hosted Git server to Snyk for Code Analysis. The request can also be initiated from the Snyk API v1, by using the [Import targets request](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets).
 2. The request arrives at the Broker server, which sends the request to the Broker client, which sends the request to the Code Agent. The Broker client automatically provides the Code Agent with the connection details to the integrated SCM, which stores the required repositories.
