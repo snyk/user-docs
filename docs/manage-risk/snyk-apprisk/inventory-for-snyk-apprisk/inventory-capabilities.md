@@ -22,7 +22,7 @@ The asset information is divided into the following tabs:
 
 <figure><img src="../../../.gitbook/assets/Inventory2.png" alt="AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
 
-* **Attributes** - miscellaneous attributes that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
+* **Attributes** - miscellaneous attributes, like the Asset ID, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
 <figure><img src="../../../.gitbook/assets/2024-03-04_11-04-15.png" alt="AppRisk - Assets Attributes window"><figcaption><p>Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
 

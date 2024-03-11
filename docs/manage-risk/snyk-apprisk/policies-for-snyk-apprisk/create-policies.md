@@ -33,6 +33,7 @@ You can customize the filters and actions or use the template as is. After finis
 
 Each filter component requires you to specify an asset property. Available properties for asset policies include:
 
+* **Asset ID** - the unique identifier of the asset.
 * **Asset name** - the name of the asset.
 * **Asset type** - repository, package or scanned artifact.
 * **Attribute** - asset attributes retrieved from the data source.
@@ -65,6 +66,7 @@ Each property contains different options for conditions and values:
 
 | Property             | Conditions Values                                                                                                                         | Values                                                                                                                |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Asset ID             | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
 | Asset name           | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
 | Asset type           | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | <ul><li>Package</li><li>Repository</li><li>Scanned artifact</li></ul>                                                 |
 | Attribute            | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
@@ -74,6 +76,7 @@ Each property contains different options for conditions and values:
 | Developers           | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
 | Discovered           | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date </li></ul> |
 | Last seen            | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
+| Locked attributes    | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Class</li></ul>                                                                                               |
 | Repository freshness | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Active</li><li>Inactive</li><li>Dormant</li></ul>                                                             |
 | Source               | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>azure-devops</li><li>GitHub</li><li>GitLab</li><li>Snyk</li></ul>                                             |
 | Tags                 | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | all available tags you previously created                                                                             |
