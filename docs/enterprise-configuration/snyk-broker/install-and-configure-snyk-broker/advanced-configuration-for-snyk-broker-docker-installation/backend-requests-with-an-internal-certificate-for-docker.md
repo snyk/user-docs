@@ -18,10 +18,7 @@ docker run --restart=always \
        snyk/broker:bitbucket-server
 ```
 
-{% hint style="info" %}
-**Recent change**\
-The custom CA cert instruction changed recently. `CA_CERT` is no longer in use and must be replaced by `NODE_EXTRA_CA_CERTS`.
-{% endhint %}
+Beginning with [Broker version 4.166.0 (2023-10-10)](https://github.com/snyk/broker/releases/tag/v4.166.0), the custom CA cert instruction is `NODE_EXTRA_CA_CERTS`  and this must be set as shown in order to use a custom CA. The `CA_CERT` environment variable is no longer in use for this purpose.
 
 Note that this completely replaces the default CA Certificate List for any requests made to your backend system, so this must be the complete chain required by the certificate used by the backend system.
 
