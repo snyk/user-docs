@@ -2,8 +2,6 @@
 
 Get an overview of supported languages and package managers across Snyk environments, including feature availability for open source and licensing (Snyk Open Source) and code analysis (Snyk Code).
 
-
-
 ## Open source and licensing (Snyk Open Source)
 
 Below, you can find information about the programming languages, fully supported package managers, and features for Snyk Open Source.
@@ -289,7 +287,7 @@ Below, you can find information about the programming languages, fully supported
 * Interfile is supported
 * `.trigger` and `.cls` files are supported
 
-### [C#](c-c++/)
+### [C#](.net/best-practices-for-.net.md#c)
 
 **Package manager**:&#x20;
 
