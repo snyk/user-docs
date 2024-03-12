@@ -10,7 +10,7 @@ https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
 
 For more information see the [API documentation](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps). See the example request at the end of this section.
 
-The request body should contain the details for your new App, including the App's **name**, **redirectURIs**, and [**scopes**](create-an-app-via-the-api.md#requesting-scopes).
+The request body should contain the details for your new App, including the App's **name**, **redirectURIs**, and [**scopes**](./#requesting-scopes).
 
 The response includes details necessary to complete the integration: **clientId** and **clientSecret**. You will use these values with Snyk API endpoints within your App, so consider storing them as part of your App's configuration.
 
@@ -29,7 +29,7 @@ curl -XPOST -H"Content-Type: application/vnd.api+json" \
 
 ## Create using Snyk CLI
 
-The [Snyk CLI](../../../snyk-cli/) can be used to create the Snyk App. If you do not already have the Snyk CLI installed on your machine, you can install it by following the steps in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-snyk-cli.md). See [Create a Snyk App using the CLI](../create-a-snyk-app-using-the-snyk-cli.md) for details.
+The [Snyk CLI](../../../snyk-cli/) can be used to create the Snyk App. If you do not already have the Snyk CLI installed on your machine, you can install it by following the steps in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-snyk-cli.md). See [Create a Snyk App using the CLI](../../../snyk-api-info/snyk-apps/create-a-snyk-app-using-the-snyk-cli.md) for details.
 
 {% hint style="info" %}
 All `apps` commands are only accessible behind the `--experimental` flag and the behavior can change at any time without prior notice. You are advised to use all the commands with caution.
@@ -58,7 +58,7 @@ snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --nam
     Required for the `create` command. A comma-separated list of redirect URIs. This forms a list of allowed redirect URIs to call back after authentication.
 *   `--scopes=<SCOPES>`
 
-    Required for the `create` command. A comma-separated list of scopes that are required by your Snyk App. This will form a list of [scopes](create-an-app-via-the-api.md#requesting-scopes) that your app is allowed to request during authorization.
+    Required for the `create` command. A comma-separated list of scopes that are required by your Snyk App. This will form a list of [scopes](./#requesting-scopes) that your app is allowed to request during authorization.
 
 The second is the interactive mode, which prompts you to enter all the values in a similar fashion as the normal mode. The following is an example of the interactive mode:
 
