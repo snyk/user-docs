@@ -37,6 +37,26 @@ What is the difference between supported and limited support?&#x20;
 * Supported languages provide remediation for 10 or more rules covering the OWASP Top 10,&#x20;
 * Limited support languages provide remediation for less than 10 rules.
 
+## What data does DeepCode AI Fix collect?
+
+### Customer data
+
+DeepCode AI Fix does not collect customer data for training purposes. All customer data is stored and managed in Snyk premises; no DeepCode AI Fix data is sent to third parties.
+
+### Training data
+
+The Large Language Model (LLM) is trained exclusively on public repositories with **permissive licenses**. If a license for a repository changes after the initial scrape, the repository is immediately excluded from the training data. DeepCode AI Fix does not use customer data for training purposes.
+
+The data collection process is thorough and includes the following:
+
+* Static analysis of permissive public repositories
+* Automated assessment of the suggested fix qualities
+* Partial in-house labeling by humans
+
+The training data is ensured to be of the highest quality to optimize the performance of the LLM.
+
+For more information on how Snyk manages data, see [How Snyk handles your data](../../../working-with-snyk/how-snyk-handles-your-data.md).
+
 ## How DeepCode AI Fix works
 
 A representation of information flow involved in fixing one issue is presented in the following table.
@@ -78,16 +98,3 @@ You can follow the entire sequence in this short (12-second) video.
 
 <figure><img src="../../../.gitbook/assets/fix_hardcoded_secret.gif" alt="Fix hardcoded credentials with DeepCode AI Fix"><figcaption><p>Fix hardcoded credentials with DeepCode AI Fix</p></figcaption></figure>
 
-## What data does DeepCode AI Fix collect?
-
-The Large Language Model (LLM) is trained exclusively on public repositories with permissive licenses. If a license for a repository changes after the initial scrape, the repository is immediately excluded from the training data. During the inference, DeepCode AI Fix does not collect or send the client data to third parties.
-
-The data collection process is thorough and includes the following:
-
-* Static analysis
-* Automated assessment of the suggested fix qualities
-* Partial in-house labeling by humans
-
-The training data is ensured to be of the highest quality to optimize the performance of the LLM.
-
-For more information, see [How Snyk handles your data](../../../working-with-snyk/how-snyk-handles-your-data.md).
