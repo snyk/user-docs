@@ -8,7 +8,7 @@ Snyk provides more factors to help you prioritize issues, for example, in the ca
 
 You can prioritize the Project level when looking at a specific Project. Enterprise customers can prioritize across all Projects.
 
-[View exploits ](view-exploits.md)to start evaluating and prioritizing vulnerabilities using guidance from the [Snyk Priority Score](priority-score.md) for each issue.
+[View exploits ](view-exploits.md)to start evaluating and prioritizing vulnerabilities using guidance from the [Snyk Priority Score](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md) for each issue.
 
 You can also [ignore issues](ignore-issues/) and [triage issues](triage-for-issues.md) to establish your issue management strategy.
 

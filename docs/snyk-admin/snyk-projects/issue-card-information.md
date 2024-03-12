@@ -21,7 +21,7 @@ The issue card provides a [Header section](issue-card-information.md#header-sect
 
 * [Severity level](../../manage-risk/prioritize-your-issues/severity-levels.md): for example, **High**
 * Issue name: for example, **Uninitialized Memory Exposure**, with a link that can be copied
-* **Score**: [Priority score](../../manage-risk/prioritize-your-issues/priority-score.md): 0 to 1,000
+* **Score**: [Priority score](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md): 0 to 1,000
 * Type: **VULNERABILITY** or LICENSE ISSUE
 * Links to [CWE](https://cwe.mitre.org/index.html) (Common Weakness Enumeration), [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System), and [Snyk Vulnerability Database](https://snyk.io/vuln) information for the issue. You can use these links to view more information about the CWE, CVE, and CVSS scores or navigate to the Snyk Vulnerability Database information for a specific vulnerability from its issue card.
 

@@ -21,7 +21,7 @@ The severity levels are defined in the following table.
 
 Severity levels are one factor used in determining the Snyk Priority Score for each vulnerability. Other factors include [Snyk Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) and [Reachable Vulnerabilities](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/) information.
 
-See [Snyk Priority Score](priority-score.md) for details.
+See [Snyk Priority Score](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md) for details.
 
 ## How to view severity levels
 

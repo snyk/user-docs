@@ -10,7 +10,7 @@
 The following rules are applied to automatic PR creation for vulnerabilities:
 
 * If you select **Retest now** for the Project, a scan is run manually, and the 24-hour window is marked as having had a scan run. No automatic PR is created until the next automated scan runs.
-* One pull request is created per Project with a [priority score](../../../manage-risk/prioritize-your-issues/priority-score.md) of **700 and above**.
+* One pull request is created per Project with a [priority score](../../find-and-manage-priority-issues/priority-score.md) of **700 and above**.
 * Pull requests are created based on the **Test & Automated Pull Request Frequency** settings.
   * To update the **Test & Automated Pull Request Frequency**, navigate to **Projects** and select your Open Source Project.
   * Navigate to **Settings** and select an option from the pulldown list.
