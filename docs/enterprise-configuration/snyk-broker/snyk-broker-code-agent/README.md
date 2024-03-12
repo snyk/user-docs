@@ -26,7 +26,7 @@ Deploying the Broker client and Code Agent creates two separate services. that, 
 
 You have installed a Broker client.
 
-The maximum file size you can import using the Code Agent deployment method is 1MB. For more information, see [File size limit for Snyk Code analysis](../../../getting-started/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md#file-size-limit-for-snyk-code-analysis).
+The maximum file size you can import using the Code Agent deployment method is 1MB. For more information, see [File size limit for Snyk Code analysis](../../../getting-started/supported-languages-and-frameworks/technical-specifications.md#file-size-limit-for-snyk-code-analysis).
 
 You must have the ability to run a Docker Container, for example, by using a Docker Desktop or Kubernetes.
 

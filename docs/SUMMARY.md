@@ -8,7 +8,7 @@
     * [Import a Project](getting-started/quickstart/import-a-project.md)
     * [View Snyk scan results](getting-started/quickstart/view-snyk-scan-results.md)
   * [Supported languages and frameworks](getting-started/supported-languages-and-frameworks/README.md)
-    * [Technical specifications](getting-started/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks.md)
+    * [Technical specifications](getting-started/supported-languages-and-frameworks/technical-specifications.md)
     * [Apex](getting-started/supported-languages-and-frameworks/apex.md)
     * [.NET](getting-started/supported-languages-and-frameworks/.net/README.md)
       * [Best practices for .NET](getting-started/supported-languages-and-frameworks/.net/best-practices-for-.net.md)
