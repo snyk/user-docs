@@ -1,6 +1,6 @@
 # Snyk Security Scan task parameters and values
 
-The following describes the Snyk task configuration fields from the configuration panel in Azure Pipelines, the associated parameters for Azure Pipelines integration, and the valid values.
+The following describes the Snyk task configuration fields on the configuration panel in Azure Pipelines, the associated parameters for Azure Pipelines integration, and the valid values.
 
 ## **Field: Snyk API token service**
 
@@ -24,7 +24,11 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** application\
 **Type:** string: "app" or "container" or "code"
 
-**Description:** Determines which dynamic fields to display as described on the rest of this page.
+**Description:** Determines the type of testing to perform, which also selects the dynamic fields to display as described on the rest of this page.&#x20;
+
+* Specifying "app" will perform analysis of your application's open-source dependencies (SCA)
+* Specifying "container" will analyze container packages and detected application open-source packages (SCA)
+* Specifying "code" will perform static analysis (SAST) on source code.
 
 ## **Field:** Container Image Name
 

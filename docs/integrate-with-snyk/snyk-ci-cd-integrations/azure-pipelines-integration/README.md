@@ -4,13 +4,13 @@ Snyk enables security across the Microsoft Azure ecosystem, including Azure Pipe
 
 The Snyk Security Scan task is available for all languages supported by Snyk and Azure DevOps.
 
-{% hint style="warning" %}
-The Snyk Security Scan task supports Snyk Open Source, Snyk Container and Snyk Code. If you plan to include other products in your pipeline, use the [Snyk CLI](../../../snyk-cli/).
+{% hint style="info" %}
+The Snyk Security Scan task supports Snyk Open Source, Snyk Container, and Snyk Code. If you plan to include other products in your pipeline, use the [Snyk CLI](../../../snyk-cli/).
 {% endhint %}
 
 Ready-to-use tasks for Azure Pipelines can be inserted quickly and directly from the Azure interface, enabling you to customize and automate your pipelines with no extra coding. Among the tasks included is the Snyk task.
 
-You can include the Snyk task in your pipeline to test for security vulnerabilities and open source license issues as part of your routine work. In this way you can test and monitor your application dependencies and container images for security vulnerabilities. When the testing is done you can review and work with results directly from the Azure Pipelines output, as well as from the Snyk interface.
+You can include the Snyk task in your pipeline to test for security vulnerabilities and open-source license issues as part of your routine work. In this way, you can test and monitor your application dependencies and container images for security vulnerabilities. When the testing is done you can review and work with results directly from the Azure Pipelines output, as well as from the Snyk interface.
 
 For setup and use details, see the following pages:
 
