@@ -915,7 +915,6 @@
       * [Set up the refresh token exchange](snyk-api/snyk-apps/set-up-and-use-a-snyk-app/set-up-the-refresh-token-exchange.md)
       * [Retrieve the App Org IDs](snyk-api/snyk-apps/set-up-and-use-a-snyk-app/retrieve-the-app-org-ids.md)
       * [Managie App details](snyk-api/snyk-apps/set-up-and-use-a-snyk-app/managie-app-details.md)
-    * [Advantages of Snyk Apps](snyk-api-info/snyk-apps/building-your-snyk-app.md)
     * [Tutorial: create a Snyk App](snyk-api-info/snyk-apps/tutorial-create-a-snyk-app/README.md)
       * [Configuring Express.js](snyk-api-info/snyk-apps/tutorial-create-a-snyk-app/configuring-express.js.md)
       * [Register the App and configure user authorization](snyk-api-info/snyk-apps/tutorial-create-a-snyk-app/register-the-app-and-configure-user-authorization.md)

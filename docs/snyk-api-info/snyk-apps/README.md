@@ -1,6 +1,8 @@
 # Snyk Apps
 
-Snyk Apps are integrations that extend the functionality of the Snyk platform, allowing you to create a Snyk experience to suit your specific needs. For example, a Snyk App might automate Snyk’s [application security testing](https://snyk.io/learn/application-security/testing/) as part of a build tool. Another Snyk App might stream Snyk’s security testing results into an incident management tool.
+Snyk Apps are integrations that extend the functionality of the Snyk platform, allowing you to create a Snyk experience to suit your specific needs.
+
+For example, a Snyk App might automate Snyk’s [application security testing](https://snyk.io/learn/application-security/testing/) as part of a build tool. Another Snyk App might stream Snyk’s security testing results into an incident management tool.  You can create your own reporting, metrics, or even a user management App. You can move your automated Snyk API scripts and transform them into a Snyk App, which will add a better UX/UI experience for your Snyk Organization users.
 
 The easiest way to start building a new Snyk App is to clone the [Demo Snyk Apps ](https://github.com/snyk/snyk-apps-demo)GitHub repository. You can either modify the demo to suit your App design or use it as a base for creating your own Snyk App. See the [Snyk Apps blog post](https://snyk.io/blog/snyk-apps-beta-build-custom-apps-extend-snyk-security-into-workflows/) for more details.
 
