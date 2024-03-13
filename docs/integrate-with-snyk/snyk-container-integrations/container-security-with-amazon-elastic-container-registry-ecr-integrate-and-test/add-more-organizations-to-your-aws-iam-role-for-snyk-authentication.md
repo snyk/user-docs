@@ -1,6 +1,6 @@
-# Add additional organizations to your AWS IAM role for Snyk authentication
+# Add more Organizations to your AWS IAM role for Snyk authentication
 
-After you have created an AWS IAM role for Snyk, you can add additional Organizations to the same role for repeated use.
+After you have created an AWS IAM role for Snyk, you can add more Organizations to the same role for repeated use.
 
 1. In [Snyk](https://app.snyk.io/), retrieve and copy the IDs for any additional Snyk Organizations that you want to integrate and save the IDs so you can paste them into a script in the subsequent steps.
 2. In AWS, navigate to the **Trust relationships** tab for the role you wnat o update with additional Organizations.
