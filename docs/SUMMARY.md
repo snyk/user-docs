@@ -906,7 +906,7 @@
   * [Revoking and regenerating Snyk API tokens](snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
   * [Snyk Apps](snyk-api-info/snyk-apps/README.md)
     * [Prerequisites for Snyk Apps](snyk-api/snyk-apps/prerequisites-for-snyk-apps.md)
-    * [Request scopes](snyk-api/snyk-apps/request-scopes.md)
+    * [Scopes to request](snyk-api/snyk-apps/scopes-to-request.md)
     * [Create a Snyk App using the Snyk API](snyk-api/snyk-apps/create-a-snyk-app-using-the-snyk-api.md)
     * [Create a Snyk App using the Snyk CLI](snyk-api-info/snyk-apps/create-a-snyk-app-using-the-snyk-cli.md)
     * [Set up and use a Snyk App](snyk-api/snyk-apps/set-up-and-use-a-snyk-app/README.md)

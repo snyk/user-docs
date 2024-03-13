@@ -15,7 +15,7 @@ curl -XPOST -H"Content-Type: application/vnd.api+json" \
  "https://api.snyk.io/rest/orgs/<REPLACE_WITH_YOUR_ORGID>/apps/creations?version=2024-01-04"
 ```
 
-The request body should contain the details for your new App, including the `name`, `redirectURIs`, and [`scopes`](request-scopes.md).
+The request body should contain the details for your new App, including the `name`, `redirectURIs`, and [`scopes`](scopes-to-request.md).
 
 The response includes details necessary to complete the integration: `clientId` and `clientSecret`. Use these values with Snyk API endpoints within your App, so consider storing them as part of the configuration of your App.
 
