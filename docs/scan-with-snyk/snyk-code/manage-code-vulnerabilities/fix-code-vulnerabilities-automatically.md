@@ -41,7 +41,7 @@ What is the difference between supported and limited support?&#x20;
 
 ### Customer data
 
-DeepCode AI Fix does not collect customer data for training purposes. All customer data is stored and managed in Snyk premises; no DeepCode AI Fix data is sent to third parties.
+DeepCode AI Fix does not collect customer data for training purposes nor send customer data to third parties.
 
 ### Training data
 
