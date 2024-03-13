@@ -8,4 +8,4 @@ To safeguard from using the extension on untrusted folders, our extension will a
 
 After a single folder trust is granted, Snyk will not ask for trust on the opened folder and its subfolders again. To revoke an existing folder trust, manually edit the **trustedFolders** JSON element in the **settings.json** file located in the following path:
 
-%LocalAppData%\Microsoft\VisualStudio\\\<Visual Studio version>\Extensions\Snyk\Snyk Security - Code and Open Source Dependencies\\\<Snyk extension version>
+`%LocalAppData%\Microsoft\VisualStudio\<Visual Studio version>\Extensions\Snyk\Snyk Security\<Snyk extension version>`
