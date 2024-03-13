@@ -30,4 +30,4 @@ The `scopes` of an App determine which actions an App can perform while connecte
 
 ### Snyk Organization ID
 
-The final step for the integration process is to [get the ID of the Snyk Organization the user has authorized](../../snyk-api/snyk-apps/create-an-app-via-the-api/retrieve-the-app-org-ids.md). This ID is needed to use most API endpoints, so the App must associate it with the user's account or workspace for future use.
+The final step for the integration process is to [get the ID of the Snyk Organization the user has authorized](../../snyk-api/snyk-apps/set-up-and-use-a-snyk-app/retrieve-the-app-org-ids.md). This ID is needed to use most API endpoints, so the App must associate it with the user's account or workspace for future use.

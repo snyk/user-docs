@@ -1,24 +1,34 @@
 # Create a Snyk App using the Snyk CLI
 
-{% hint style="info" %}
-All `apps` subcommands are accessible only behind the `--experimental` flag and the behavior can change at any time, without prior notice. Use all the commands with caution
+{% hint style="warning" %}
+Release status\
+All `snyk apps` subcommands are available only behind the `--experimental` flag and the behavior can change at any time, without prior notice. Use all the commands with caution.
 {% endhint %}
 
-You can use the Snyk CLI to create [Snyk Apps](./) by running `snyk apps create`.
+You can use the Snyk CLI to create Snyk Apps by running `snyk apps create`. There are two ways to use the command.
 
-You can pass the Snyk App-related data either by using the options to pass it to the Snyk CLI or by using the `--interactive` mode, for example `snyk apps --experimental --interactive`.
+The first is the normal mode, for example:
 
-All Snyk Apps related subcommands are grouped under the top-level `apps` command, for example, `snyk apps create`.
+`snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --name='My Awesome App' --redirect-uris=https://example1.com,https://example2.com --scopes=apps:beta`
 
-## Sub-commands of snyk apps
+The second is the interactive mode, which prompts you to enter all the values in a similar way as with the normal mode. The following is an example of the interactive mode:
 
-To learn about all the available subcommands under `snyk apps` command, use the `--help` option, `snyk apps --help.`
+`snyk apps create --experimental --interactive`
 
-## Options for snyk apps
+```
+snyk apps create --experimental --interactive
+
+? Name of the Snyk App (visible to users when they install the Snyk App)? My Awesome Snyk App
+? Your Snyk App's redirect URIs (comma-separated list.  Ex: https://example1.com,https://example2.com)?:  https://example1.com
+? Your Snyk App's permission scopes (comma-separated list.  Ex: org.read)?:  apps:beta
+? Please provide the org id under which you want to create your Snyk App:  48ebb069-472f-40f4-b5bf-d2d103bc02d4
+```
+
+## Options for `snyk apps create`
 
 `--interactive`
 
-Use the command in interactive mode.
+Use the `snyk apps create` command in interactive mode.
 
 `--org=<ORG_ID>`
 
@@ -26,11 +36,11 @@ Specify the `<ORG_ID>` under which to create the Snyk App. Required for the `cre
 
 `--name=<SNYK_APP_NAME>`
 
-The name of the Snyk App that to be displayed to the user during the authentication flow. Required for the `create` command.
+The name to be displayed to the end-user when the user authorizes the App. Required for the `create` command.
 
 `--redirect-uris=<REDIRECT_URIS>`
 
-A comma-separated list of redirect URIs. This forms a list of allowed redirect URIs to call \_\_ back after authentication. Required for the `create` command.
+A comma-separated list of redirect URIs. This forms a list of allowed redirect URIs to call back after authentication. Required for the `create` command.
 
 `--scopes=<SCOPES>`
 
@@ -38,14 +48,14 @@ A comma-separated list of scopes required by your Snyk App. This forms a list of
 
 `--context=<CONTEXT>`
 
-The context your Snyk App will install using. Can be either 'tenant' or 'user', will default to 'tenant' if not specified. A Snyk App using the 'tenant' context will act as a bot user so it is not tied to any particular user and hence will persist even if the installing user leaves an organisation. In contrast a Snyk App under the 'user' context will perform actions as the installing user, this should only be used if your Snyk App is performing operations that are specific to individual users. If in doubt use 'tenant'.
+The `context` your Snyk App will use when installed.
 
-## Examples
+Can be either `tenant` or `user`. The default is `tenant` if `context` is not specified.
 
-Create a Snyk App
+A Snyk App that has the `tenant` context will act as a bot user so it is not tied to any individual user and thus will persist even if the installing user leaves the Snyk Organization. In contrast, a Snyk App that has the `user` context will perform actions as the installing user. Specify the `user` context only if your Snyk App is performing operations that are specific to individual users. If there is any doubt, use `tenant`.
 
-`snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --name='My Awesome App' --redirect-uris=https://example1.com,https://example2.com --scopes=apps:beta`
+## Sub-commands of `snyk apps`
 
-or
+All `snyk apps` subcommands are used with the command, for example, `snyk apps create`.
 
-`snyk apps create --experimental --interactive`
+To learn about all the available subcommands under `snyk apps` command, use the `--help` option, `snyk apps --help.`
