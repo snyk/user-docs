@@ -20,7 +20,7 @@ The request body should contain the details for your new App, including the `nam
 The response includes details necessary to complete the integration: `clientId` and `clientSecret`. Use these values with Snyk API endpoints within your App, so consider storing them as part of the configuration of your App.
 
 {% hint style="info" %}
-Never share the `clientSecret` publicly, as this is used to authenticate your App. This is also the only time you will see the `clientSecret`, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's **clientSecret**](set-up-a-snyk-app/managie-app-details.md#rotate-app-client-secret).
+Never share the `clientSecret` publicly, as this is used to authenticate your App. This is also the only time you will see the `clientSecret`, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's **clientSecret**](set-up-a-snyk-app-using-the-api/managie-app-details.md#rotate-app-client-secret).
 {% endhint %}
 
 For more information see the [Snyk REST API endpoint Create a new app for an organization](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps).

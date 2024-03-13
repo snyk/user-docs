@@ -1,4 +1,4 @@
-# Managing App details
+# Managie App details
 
 ## List Apps
 

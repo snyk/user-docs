@@ -1,4 +1,4 @@
-# Set up and use a Snyk App
+# Set up a Snyk App using the API
 
 The following pages explain how to:
 
