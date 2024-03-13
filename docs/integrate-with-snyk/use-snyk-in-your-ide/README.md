@@ -2,7 +2,7 @@
 
 The following Snyk plugins and extensions are available.
 
-* [Eclipse plugin](../../integrations/ide-tools/eclipse-plugin/)
+* [Eclipse plugin](eclipse-plugin/)
 * [JetBrains plugins](jetbrains-plugins/)
 * [Visual Studio extension](visual-studio-extension/)
 * [Visual Studio Code extension](visual-studio-code-extension/)

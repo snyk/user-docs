@@ -63,7 +63,7 @@ For more details, see [Snyk CI/CD integrations](../../../integrate-with-snyk/sny
 
 IDE integrations like Visual Studio Code, IntelliJ IDEA, and Eclipse allow developers to access Snyk's security features directly within their coding environment. This enables real-time scanning and issue remediation as developers write code at the earliest possible stages.&#x20;
 
-For more details, see [Use Snyk in your IDE](../../../integrate-with-snyk/ide-tools/).
+For more details, see [Use Snyk in your IDE](../../../integrate-with-snyk/use-snyk-in-your-ide/).
 
 ## Considerations for import strategies&#x20;
 

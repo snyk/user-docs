@@ -7,7 +7,7 @@ Snyk Code is a security tool that is fast and accurate and produces fewer false 
 You can scan your code using the following options:
 
 * [Snyk Web UI](../../getting-started/explore-snyk-through-the-web-ui.md) (including [PR checks](../run-pr-checks/))
-* [Snyk IDE](../../integrate-with-snyk/ide-tools/)
+* [Snyk IDE](../../integrate-with-snyk/use-snyk-in-your-ide/)
 * [Snyk CLI](../../snyk-cli/)
 * [Snyk API](../../snyk-api/)
 
@@ -42,9 +42,9 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 ## Supported integrations
 
 * **IDE**&#x20;
-  * [JetBrains plugins](../../integrate-with-snyk/ide-tools/jetbrains-plugins/)
-  * [Visual Studio Code extension](../../integrate-with-snyk/ide-tools/visual-studio-code-extension/)
-  * [Visual Studio extension](../../integrate-with-snyk/ide-tools/visual-studio-extension/)
+  * [JetBrains plugins](../../integrate-with-snyk/use-snyk-in-your-ide/jetbrains-plugins/)
+  * [Visual Studio Code extension](../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/)
+  * [Visual Studio extension](../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-extension/)
 * **Git repository**: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools at your disposal. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time. See [Supported Git repositories](../../integrate-with-snyk/git-repository-and-ci-cd-integrations-comparisons.md).
 
 {% hint style="info" %}

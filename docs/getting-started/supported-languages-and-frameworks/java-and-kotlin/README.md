@@ -447,7 +447,7 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 
 ### Snyk integrations&#x20;
 
-For integrated development environments, see [Use Snyk in your IDE](../../../integrate-with-snyk/ide-tools/).
+For integrated development environments, see [Use Snyk in your IDE](../../../integrate-with-snyk/use-snyk-in-your-ide/).
 
 If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../../snyk-api/)).
 

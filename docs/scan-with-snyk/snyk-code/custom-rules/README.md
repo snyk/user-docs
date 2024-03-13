@@ -19,7 +19,7 @@ You can run custom rules as part of any scan run by Snyk Code, and the feature i
 
 * [Snyk Web UI](../../../getting-started/explore-snyk-through-the-web-ui.md)
 * [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
-* [IDE](../../../integrate-with-snyk/ide-tools/)
+* [IDE](../../../integrate-with-snyk/use-snyk-in-your-ide/)
 
 ## Use custom rules in the Snyk Web UI
 
