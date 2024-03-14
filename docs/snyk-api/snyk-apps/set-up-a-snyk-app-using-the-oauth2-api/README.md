@@ -1,4 +1,4 @@
-# Set up a Snyk App using the API
+# Set up a Snyk App using the OAuth2 API
 
 The following pages explain how to:
 
@@ -6,4 +6,4 @@ The following pages explain how to:
 * [Set up the authorization code exchange](set-up-the-authorization-code-exchange.md)
 * [Set up the refresh token exchange](set-up-the-refresh-token-exchange.md)
 * [Retrieve the App Org IDs](retrieve-the-app-org-ids.md)
-* [Manage App details](managie-app-details.md)
+* [Manage App details](../manage-app-details.md)
