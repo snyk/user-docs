@@ -81,3 +81,4 @@ redirects:
   manage-risk/insights/insights-setup/insights-setup-image-scanning: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/prioritization-setup/prioritization-setup-image-scanning.md 
   manage-issues/insights/insights-setup/insights-setup-associating-snyk-open-source-code-and-container-projects: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/prioritization-setup/prioritization-setup-associating-snyk-open-source-code-and-container-projects.md
   scan-applications/supported-languages-and-frameworks: /getting-started/supported-languages-frameworks-and-feature-availability-overview/README.md
+  manage-risk/insights/insights-setup/insights-setup-associating-snyk-open-source-code-and-container-projects: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/prioritization-setup/prioritization-setup-associating-snyk-open-source-code-and-container-projects.md
