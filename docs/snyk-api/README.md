@@ -3,7 +3,7 @@
 {% hint style="info" %}
 The Snyk API is available only for Enterprise plans.
 
-For more information, see [Plans and pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 Snyk [extensibility and the Snyk API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk security automation to their specific workflows, ensuring consistency in both developer experience and platform governance. The [Snyk API v1](./#snyk-api-v1) and the [Snyk REST API](./#snyk-rest-api) are available for you to use when you decide to [use an API rather than the CLI or an integration](./#when-to-use-the-api-versus-the-cli-or-an-integration).
