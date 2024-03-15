@@ -6,11 +6,9 @@
 Risk Score is currently in [Early Access](../../getting-started/snyk-release-process.md) for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
 
-The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability type issues (license issues are not currently supported). Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
+The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not currently supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
 
-{% hint style="info" %}
-Risk Score currently only applies to vulnerability issues, not license issues.
-{% endhint %}
+Risk score remains the same over time if the contributing factors do not change. However, some contributing factors,  such as Exploit Prediction Scoring System (EPSS), potentially can change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change once, when the number of days becomes more than one year and the likelihood subscore decreases.&#x20;
 
 Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example of Project score distributions:&#x20;
 
@@ -156,7 +154,7 @@ Represents the existence and maturity of any public exploit retrieved and valida
 
 #### EPSS score&#x20;
 
-Exploit Prediction Scoring System (EPSS), predicting whether a CVE would be exploited in the wild, based on an elaborated model created and owned by the FIRST Organization. \
+Exploit Prediction Scoring System (EPSS), predicting whether a CVE will be exploited in the wild, based on an elaborated model created and owned by the FIRST Organization. \
 The probability is the direct output of the EPSS model and conveys an overall sense of the threat of exploitation in the wild. This data is updated daily, relying on the latest available EPSS model version. See the EPSS [documentation](https://www.first.org/epss/articles/prob\_percentile\_bins) for more details.\
 **Possible input values:** `EPSS score [0.00-1.00]`
 
