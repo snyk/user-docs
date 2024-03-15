@@ -27,7 +27,7 @@ You can use the following table to decide which type of score works best for you
 | **Integrations**     | <ul><li>Kubernetes</li></ul>                                                                           | NA                                                                                                      |
 | **Assessment model** | <ul><li>Impact</li><li>Actionability</li></ul>                                                         | <ul><li>Impact</li><li>Likelihood</li></ul><p></p>                                                      |
 
-## When and Why to Use the Priority Score
+## When and why to use the Priority Score
 
 The Priority Score tool helps manage vulnerabilities by prioritizing the most urgent issues based on exploitability, ease of mitigation, and potential for exploitation. Use it to first address the critical vulnerabilities and if you want to prioritize the Snyk Code issues (since Risk score is not available for Snyk Code).
 
@@ -80,8 +80,6 @@ Scan your source code and apply the following filters to your list of found vuln
 
 <figure><img src="../../.gitbook/assets/Priority score.png" alt="Priority score detailed card"><figcaption><p>Priority score detailed card</p></figcaption></figure>
 
-
-
 ### Risk score use case
 
 Let's assume that you are integrating a new third-party library into an existing application, and after a scan, you discover that the library has several vulnerabilities. Filter the vulnerabilities using the Risk score to determine which vulnerabilities pose the greatest threat.&#x20;
@@ -103,6 +101,4 @@ Given the high severity and the mature exploit, the risk score for this issue wo
 This example demonstrates how risk scores guide decision-makers in prioritizing security efforts effectively, ensuring that the most critical vulnerabilities are addressed promptly.
 
 <figure><img src="../../.gitbook/assets/Risk score.png" alt="Priority score detailed card"><figcaption><p>Priority score detailed card</p></figcaption></figure>
-
-
 
