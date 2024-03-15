@@ -1,82 +1,45 @@
-# Security Champion role template
+# Application Security Engineer role template
 
 This Organization-level role can add, move, and remove Projects and ignores, and can mark PR checks as successful.
 
+## Group-level permissions
+
+This template is for an Organization-level role and has no Group-level permissions.
+
 ## Organization-level permissions
 
-This table details the Organization-level permissions that apply to the **Security Champion** custom role.
+To create this role, enable the following permissions in the relevant categories:
 
-| Permission                             | Enabled? |
-| -------------------------------------- | :------: |
-| View Organization                      |     x    |
-| Edit Organization                      |          |
-| Remove Organization                    |          |
-| View Organization Reports              |          |
-| View Project                           |     x    |
-| Add Project                            |     x    |
-| Edit Project                           |     x    |
-| Project Status                         |     x    |
-| Test Project                           |     x    |
-| Move Project                           |     x    |
-| Remove Project                         |          |
-| View Project History                   |     x    |
-| Edit Project Integrations              |     x    |
-| Edit Project Attributes                |     x    |
-| View Jira Issues                       |     x    |
-| Create Jira Issues                     |     x    |
-| Edit Project Tags                      |     x    |
-| View Project Ignores                   |     x    |
-| Create Project Ignores                 |     x    |
-| Edit Project Ignores                   |     x    |
-| Remove Project Ignores                 |     x    |
-| Create Pull Requests                   |          |
-| Mark Pull Request checks as successful |     x    |
-| View Collections                       |          |
-| Create Collections                     |          |
-| Edit Collections                       |          |
-| Delete Collections                     |          |
-| View Service Accounts                  |          |
-| Create Service Accounts                |          |
-| Edit Service Accounts                  |          |
-| Remove Service Accounts                |          |
-| View Users                             |          |
-| Invite Users                           |          |
-| Manage Users                           |          |
-| Add Users                              |          |
-| Provision Users                        |          |
-| User Leave                             |          |
-| User Remove                            |          |
-| View Integrations                      |          |
-| Edit Integrations                      |          |
-| Test Packages                          |          |
-| View Billing                           |          |
-| Edit Billing                           |          |
-| View Entitlements                      |          |
-| View Preview Features                  |          |
-| Edit Preview Features                  |          |
-| View Audit Logs                        |          |
-| View Outbound Webhooks                 |          |
-| Create Outbound Webhooks               |          |
-| Remove Outbound Webhooks               |          |
-| View Apps                              |          |
-| Install Apps                           |          |
-| Create Apps                            |          |
-| Edit Apps                              |          |
-| Delete Apps                            |          |
-| View Environments                      |          |
-| Create Environments                    |          |
-| Delete Environments                    |          |
-| Update Environments                    |          |
-| View Scans                             |          |
-| Create Scans                           |          |
-| View Resources                         |          |
-| View Artifacts                         |          |
-| Create Artifacts                       |          |
-| View Custom Rules                      |          |
-| Create Custom Rules                    |          |
-| Edit Custom Rules                      |          |
-| Delete Custom Rules                    |          |
-| View Container Image                   |          |
-| Create Container Image                 |          |
-| Edit Container Image                   |          |
-| Publish Kubernetes Resources           |          |
+### Organization management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Organization</td><td>true</td></tr><tr><td>Edit Organization</td><td>false</td></tr><tr><td>Remove Organization</td><td>false</td></tr></tbody></table>
+
+### Project management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Project</td><td>true</td></tr><tr><td>Add Project</td><td>true</td></tr><tr><td>Edit Project</td><td>true</td></tr><tr><td>Edit Project status</td><td>true</td></tr><tr><td>Test Project</td><td>true</td></tr><tr><td>Move Project</td><td>true</td></tr><tr><td>Remove Project</td><td>false</td></tr><tr><td>View Project history</td><td>true</td></tr><tr><td>Edit Project integrations</td><td>true</td></tr><tr><td>Edit Project attributes</td><td>true</td></tr><tr><td>View Jira issues</td><td>true</td></tr><tr><td>Create Jira issues</td><td>true</td></tr><tr><td>Edit Project Tags</td><td>true</td></tr></tbody></table>
+
+### Project Ignore management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Project Ignores</td><td>true</td></tr><tr><td>Create Project Ignores</td><td>true</td></tr><tr><td>Edit Project Ignores</td><td>true</td></tr><tr><td>Remove Project Ignores</td><td>true</td></tr></tbody></table>
+
+### Project pull request management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>Create pull requests</td><td>false</td></tr><tr><td>Mark pull request checks as successful</td><td>true</td></tr></tbody></table>
+
+The remaining categories of permissions listed below should have all permissions within them set to disabled:
+
+* Audit Log management
+* Billing management
+* Collection management
+* Container Image management
+* Entitlement management
+* Integration management
+* Kubernetes Integration management
+* Package management
+* Reports management
+* Service account management
+* Snyk Apps management
+* Snyk Cloud management
+* Snyk Preview management
+* User management
+* Webhook management

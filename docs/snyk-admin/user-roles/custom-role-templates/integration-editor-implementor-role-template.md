@@ -2,135 +2,86 @@
 
 This is a Group-level role with integration-related permissions to enable and process the integration of multiple third-party tools.
 
-As an Integration Editor/Implementor, you should define whether this user implements the API. This template includes API implementation using the four Organization-level **Service Accounts** permissions. If this is not required for your custom role, do not include the **Service Accounts** permissions.
-
-## Organization-level permissions
-
-This table details the Organization-level permissions that apply to the **Integration Editor/Implementor** custom role.
-
-| Permission                             | Enabled? |
-| -------------------------------------- | :------: |
-| View Organization                      |     x    |
-| Edit Organization                      |          |
-| Remove Organization                    |          |
-| View Organization Reports              |          |
-| View Project                           |     x    |
-| Add Project                            |     x    |
-| Edit Project                           |     x    |
-| Project Status                         |     x    |
-| Test Project                           |     x    |
-| Move Project                           |     x    |
-| Remove Project                         |     x    |
-| View Project History                   |          |
-| Edit Project Integrations              |     x    |
-| Edit Project Attributes                |          |
-| View Jira Issues                       |          |
-| Create Jira Issues                     |          |
-| Edit Project Tags                      |          |
-| View Project Ignores                   |          |
-| Create Project Ignores                 |          |
-| Edit Project Ignores                   |          |
-| Remove Project Ignores                 |          |
-| Create Pull Requests                   |     x    |
-| Mark Pull Request checks as successful |     x    |
-| View Collections                       |          |
-| Create Collections                     |          |
-| Edit Collections                       |          |
-| Delete Collections                     |          |
-| View Service Accounts                  |     x    |
-| Create Service Accounts                |     x    |
-| Edit Service Accounts                  |     x    |
-| Remove Service Accounts                |     x    |
-| View Users                             |          |
-| Invite Users                           |          |
-| Manage Users                           |          |
-| Add Users                              |          |
-| Provision Users                        |          |
-| User Leave                             |          |
-| User Remove                            |          |
-| View Integrations                      |     x    |
-| Edit Integrations                      |     x    |
-| Test Packages                          |          |
-| View Billing                           |          |
-| Edit Billing                           |          |
-| View Entitlements                      |          |
-| View Preview Features                  |          |
-| Edit Preview Features                  |          |
-| View Audit Logs                        |          |
-| View Outbound Webhooks                 |     x    |
-| Create Outbound Webhooks               |     x    |
-| Remove Outbound Webhooks               |     x    |
-| View Apps                              |     x    |
-| Install Apps                           |     x    |
-| Create Apps                            |     x    |
-| Edit Apps                              |     x    |
-| Delete Apps                            |     x    |
-| View Environments                      |          |
-| Create Environments                    |          |
-| Delete Environments                    |          |
-| Update Environments                    |          |
-| View Scans                             |          |
-| Create Scans                           |          |
-| View Resources                         |          |
-| View Artifacts                         |          |
-| Create Artifacts                       |          |
-| View Custom Rules                      |          |
-| Create Custom Rules                    |          |
-| Edit Custom Rules                      |          |
-| Delete Custom Rules                    |          |
-| View Container Image                   |          |
-| Create Container Image                 |          |
-| Edit Container Image                   |          |
-| Publish Kubernetes Resources           |     x    |
+When you create an Integration Editor/Implementor, you define whether this user implements the API. This template includes API implementation using the four Organization-level **Service Accounts** permissions. If this is not required for your custom role, do not include the **Service Accounts** permissions.
 
 ## Group-level permissions
 
-This table details the Group-level permissions that apply to the **Integration Editor/Implementor** custom role.
+To create this role, enable the following permissions in the relevant categories:
 
-| Permission                       | Enabled? |
-| -------------------------------- | :------: |
-| View groups                      |          |
-| Edit group details               |          |
-| View group settings              |          |
-| Edit settings                    |          |
-| View group notification settings |          |
-| Edit group notification settings |          |
-| View orgs                        |          |
-| Add orgs                         |          |
-| Remove orgs                      |          |
-| Read roles                       |          |
-| Create roles                     |          |
-| Edit roles                       |          |
-| Remove roles                     |          |
-| View users                       |          |
-| Add users to the group           |          |
-| Edit users in the group          |          |
-| Remove users                     |          |
-| Delete users                     |          |
-| Provision users                  |          |
-| Assign and unassign roles        |          |
-| View service accounts            |          |
-| Create service accounts          |          |
-| Edit service accounts            |          |
-| Remove service accounts          |          |
-| View audit logs                  |          |
-| View policies                    |          |
-| Create policies                  |          |
-| Edit policies                    |          |
-| Delete policies                  |          |
-| View reports                     |          |
-| View tags                        |          |
-| View IaC settings                |          |
-| Edit IaC settings                |          |
-| View feature flags               |          |
-| Edit feature flags               |          |
-| View request access settings     |          |
-| Edit request access settings     |          |
-| View SSO settings                |          |
-| Edit SSO settings                |          |
-| View Apps                        |     x    |
-| Install Apps                     |     x    |
-| Edit Apps                        |     x    |
-| View AppRisk                     |          |
-| Edit AppRisk                     |          |
-| Access Insights                  |          |
+### Snyk Apps management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Apps</td><td>true</td></tr><tr><td>Install Apps</td><td>true</td></tr><tr><td>Edit Apps</td><td>true</td></tr></tbody></table>
+
+The remaining categories of permissions listed below should have all permissions within them set to disabled:
+
+* Group management
+* Organization management
+* AppRisk management
+* Audit Log management
+* IaC settings management
+* Insights management
+* Issue management
+* Reports management
+* Request access management
+* Role management
+* Security and licence policies
+* Service account management
+* Snyk Preview management
+* SSO settings management
+* Tags management
+* User Management
+
+## Organization-level permissions
+
+To create this role, enable the following permissions in the relevant categories:
+
+### Organization management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Organization</td><td>true</td></tr><tr><td>Edit Organization</td><td>false</td></tr><tr><td>Remove Organization</td><td>false</td></tr></tbody></table>
+
+### Integration management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View integrations</td><td>true</td></tr><tr><td>Edit integrations</td><td>true</td></tr></tbody></table>
+
+### Kubernetes Integration management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>Publish Kubernetes resources</td><td>true</td></tr></tbody></table>
+
+### Project management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Project</td><td>true</td></tr><tr><td>Add Project</td><td>true</td></tr><tr><td>Edit Project</td><td>true</td></tr><tr><td>Edit Project status</td><td>true</td></tr><tr><td>Test Project</td><td>true</td></tr><tr><td>Move Project</td><td>true</td></tr><tr><td>Remove Project</td><td>true</td></tr><tr><td>View Project history</td><td>false</td></tr><tr><td>Edit Project integrations</td><td>true</td></tr><tr><td>Edit Project attributes</td><td>false</td></tr><tr><td>View Jira issues</td><td>false</td></tr><tr><td>Create Jira issues</td><td>false</td></tr><tr><td>Edit Project Tags</td><td>false</td></tr></tbody></table>
+
+### Project pull request management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>Create pull requests</td><td>true</td></tr><tr><td>Mark pull request checks as successful</td><td>true</td></tr></tbody></table>
+
+### Reports management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Organization reports</td><td>true</td></tr></tbody></table>
+
+### Service account management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View service accounts</td><td>true</td></tr><tr><td>Create service accounts</td><td>true</td></tr><tr><td>Edit service accounts</td><td>true</td></tr><tr><td>Remove service accounts</td><td>true</td></tr></tbody></table>
+
+### Snyk Apps management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Apps</td><td>true</td></tr><tr><td>Install Apps</td><td>true</td></tr><tr><td>Create Apps</td><td>true</td></tr><tr><td>Edit Apps</td><td>true</td></tr><tr><td>Delete Apps</td><td>true</td></tr></tbody></table>
+
+### Webhook management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Outbound Webhooks</td><td>true</td></tr><tr><td>Create Outbound Webhooks</td><td>true</td></tr><tr><td>Remove Outbound Webhooks</td><td>true</td></tr></tbody></table>
+
+The remaining categories of permissions listed below should have all permissions within them set to disabled:
+
+* Audit Log management
+* Billing management
+* Collection management
+* Container Image management
+* Entitlement management
+* Integration management
+* Package management
+* Project Ignore management
+* Snyk Cloud management
+* Snyk Preview management
+* User management
+

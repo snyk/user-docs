@@ -1,55 +1,49 @@
 # Team Lead role template
 
-A Team Lead is equivalent to the default [**Organization Admin**](../pre-defined-roles.md) role**,** providing additional capabilities to customize or change other user permissions. We suggest duplicating the Organization Admin role as a starting point for this custom role creation.\
+A Team Lead is equivalent to the default [**Organization Admin**](../pre-defined-roles.md) role**,** providing additional capabilities to customize or change user permissions for other users. Snyk suggests duplicating the Organization Admin role as a starting point for creating this custom role.\
 \
-Sample permissions include the ability to **Mark as Successful** in Git repositories for pull request/merge request checks, with the ignore capability disabled.
+Sample permissions include the ability to **Mark as Successful** in Git repositories for pull request and merge request checks, with the ignore capability disabled.
 
 This Group-level role has all Organization-level permissions plus the following additional Group level permissions:
 
-| Permission                       | Enabled? |
-| -------------------------------- | :------: |
-| View groups                      |     x    |
-| Edit group details               |     x    |
-| View group settings              |     x    |
-| Edit settings                    |          |
-| View group notification settings |          |
-| Edit group notification settings |          |
-| View orgs                        |          |
-| Add orgs                         |          |
-| Remove orgs                      |          |
-| Read roles                       |     x    |
-| Create roles                     |     x    |
-| Edit roles                       |     x    |
-| Remove roles                     |     x    |
-| View users                       |     x    |
-| Add users to the group           |     x    |
-| Edit users in the group          |     x    |
-| Remove users                     |     x    |
-| Delete users                     |     x    |
-| Provision users                  |     x    |
-| Assign and unassign roles        |     x    |
-| View service accounts            |          |
-| Create service accounts          |          |
-| Edit service accounts            |          |
-| Remove service accounts          |          |
-| View audit logs                  |          |
-| View policies                    |          |
-| Create policies                  |          |
-| Edit policies                    |          |
-| Delete policies                  |          |
-| View reports                     |          |
-| View tags                        |          |
-| View IaC settings                |          |
-| Edit IaC settings                |          |
-| View feature flags               |          |
-| Edit feature flags               |          |
-| View request access settings     |          |
-| Edit request access settings     |          |
-| View SSO settings                |          |
-| Edit SSO settings                |          |
-| View Apps                        |          |
-| Install Apps                     |          |
-| Edit Apps                        |          |
-| View AppRisk                     |          |
-| Edit AppRisk                     |          |
-| Access Insights                  |          |
+## Group-level permissions
+
+To create this role, enable the following permissions in the relevant categories:
+
+### Group Management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Groups</td><td>true</td></tr><tr><td>Edit Group details</td><td>true</td></tr><tr><td>View Group settings</td><td>true</td></tr><tr><td>Edit settings</td><td>false</td></tr><tr><td>View Group notification settings</td><td>false</td></tr><tr><td>Edit Group notification settings</td><td>false</td></tr></tbody></table>
+
+### Role management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled</th></tr></thead><tbody><tr><td>Read roles</td><td>true</td></tr><tr><td>Create roles</td><td>true</td></tr><tr><td>Edit roles</td><td>true</td></tr><tr><td>Remove roles</td><td>true</td></tr></tbody></table>
+
+### User management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox"></th></tr></thead><tbody><tr><td>View users</td><td>true</td></tr><tr><td>Add users to the Group</td><td>true</td></tr><tr><td>Edit users in the Group</td><td>true</td></tr><tr><td>Remove users</td><td>true</td></tr><tr><td>Delete users</td><td>true</td></tr><tr><td>Provision users</td><td>true</td></tr><tr><td>Assign and unassign roles</td><td>true</td></tr></tbody></table>
+
+The remaining categories of permissions listed below should have all permissions within them set to disabled:
+
+* Organization management
+* AppRisk management
+* Audit Log management
+* IaC settings management
+* Insights management
+* Issue management
+* Reports management
+* Request access management
+* Security and licence policies
+* Service account management
+* Snyk Apps management
+* Snyk Preview management
+* SSO settings management
+* Tags management
+
+## Organization-level permissions
+
+This role should have all Organization-level permissions enabled.
+
+You can set this quickly using the **Enable all** button in the Organization-level permissions section. Be sure to update the permissions using the button at the bottom of the section.
+
+<figure><img src="../../../.gitbook/assets/image (363).png" alt="Organization-level permissions sectoini"><figcaption><p>Organization-level permissions section</p></figcaption></figure>
+

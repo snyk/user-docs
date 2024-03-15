@@ -2,81 +2,44 @@
 
 This Organization-level role blocks the use of `snyk monitor`.
 
+## Group-level permissions
+
+This template is for an Organization-level role and has no Group-level permissions.
+
 ## Organization-level permissions
 
-This table details the Organization-level permissions that apply to the **Read-only CLI Tester** custom role.
+To create this role, enable the following permissions in the relevant categories:
 
-| Permission                             | Enabled? |
-| -------------------------------------- | :------: |
-| View Organization                      |     x    |
-| Edit Organization                      |          |
-| Remove Organization                    |          |
-| View Organization Reports              |          |
-| View Project                           |     x    |
-| Add Project                            |          |
-| Edit Project                           |          |
-| Project Status                         |          |
-| Test Project                           |     x    |
-| Move Project                           |          |
-| Remove Project                         |          |
-| View Project History                   |          |
-| Edit Project Integrations              |          |
-| Edit Project Attributes                |          |
-| View Jira Issues                       |          |
-| Create Jira Issues                     |          |
-| Edit Project Tags                      |          |
-| View Project Ignores                   |          |
-| Create Project Ignores                 |          |
-| Edit Project Ignores                   |          |
-| Remove Project Ignores                 |          |
-| Create Pull Requests                   |          |
-| Mark Pull Request checks as successful |          |
-| View Collections                       |          |
-| Create Collections                     |          |
-| Edit Collections                       |          |
-| Delete Collections                     |          |
-| View Service Accounts                  |          |
-| Create Service Accounts                |          |
-| Edit Service Accounts                  |          |
-| Remove Service Accounts                |          |
-| View Users                             |          |
-| Invite Users                           |          |
-| Manage Users                           |          |
-| Add Users                              |          |
-| Provision Users                        |          |
-| User Leave                             |          |
-| User Remove                            |          |
-| View Integrations                      |          |
-| Edit Integrations                      |          |
-| Test Packages                          |     x    |
-| View Billing                           |          |
-| Edit Billing                           |          |
-| View Entitlements                      |          |
-| View Preview Features                  |     x    |
-| Edit Preview Features                  |          |
-| View Audit Logs                        |          |
-| View Outbound Webhooks                 |          |
-| Create Outbound Webhooks               |          |
-| Remove Outbound Webhooks               |          |
-| View Apps                              |          |
-| Install Apps                           |          |
-| Create Apps                            |          |
-| Edit Apps                              |          |
-| Delete Apps                            |          |
-| View Environments                      |          |
-| Create Environments                    |          |
-| Delete Environments                    |          |
-| Update Environments                    |          |
-| View Scans                             |          |
-| Create Scans                           |          |
-| View Resources                         |          |
-| View Artifacts                         |          |
-| Create Artifacts                       |          |
-| View Custom Rules                      |          |
-| Create Custom Rules                    |          |
-| Edit Custom Rules                      |          |
-| Delete Custom Rules                    |          |
-| View Container Image                   |          |
-| Create Container Image                 |          |
-| Edit Container Image                   |          |
-| Publish Kubernetes Resources           |          |
+### Organization management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Organization</td><td>true</td></tr><tr><td>Edit Organization</td><td>false</td></tr><tr><td>Remove Organization</td><td>false</td></tr></tbody></table>
+
+### Package management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>Test packages</td><td>true</td></tr></tbody></table>
+
+### Project management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Project</td><td>true</td></tr><tr><td>Add Project</td><td>false</td></tr><tr><td>Edit Project</td><td>false</td></tr><tr><td>Edit Project status</td><td>false</td></tr><tr><td>Test Project</td><td>true</td></tr><tr><td>Move Project</td><td>false</td></tr><tr><td>Remove Project</td><td>false</td></tr><tr><td>View Project history</td><td>false</td></tr><tr><td>Edit Project integrations</td><td>false</td></tr><tr><td>Edit Project attributes</td><td>false</td></tr><tr><td>View Jira issues</td><td>false</td></tr><tr><td>Create Jira issues</td><td>false</td></tr><tr><td>Edit Project Tags</td><td>false</td></tr></tbody></table>
+
+### Snyk Preview management
+
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Snyk Preview features</td><td>true</td></tr><tr><td>Edit Snyk Preview features</td><td>false</td></tr></tbody></table>
+
+The remaining categories of permissions listed below should have all permissions within them set to disabled:
+
+* Audit Log management
+* Billing management
+* Collection management
+* Container Image management
+* Entitlement management
+* Integration management
+* Kubernetes Integration management
+* Project Ignore management
+* Project pull request management
+* Reports management
+* Service account management
+* Snyk Apps management
+* Snyk Cloud management
+* User management
+* Webhook management

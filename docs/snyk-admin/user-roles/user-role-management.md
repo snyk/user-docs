@@ -40,11 +40,16 @@ You will find [pre-defined roles](pre-defined-roles.md) such as **Organization A
 
 ### Create a custom role
 
+{% hint style="warning" %}
+**Release status**\
+Group custom roles are in Closed Beta. For more information, contact your Snyk team.
+{% endhint %}
+
 Role management for Groups takes place in **Settings** > **Member roles**. This is accessible to **Group Admins** or custom roles with **Role management** permissions.
 
-Click the **Create new role** button and enter the **New role name**, **Role Type**, and **Description**. Role names should be unique, reflecting the user purpose in Snyk, and can contain alphanumeric characters plus spaces. The **Role Type** reflects the permission sets the user can have, Organization or Group.
+Click the **Create new role** button and enter the **New role name**, **Role Type**, and **Description**. Role names should be unique, reflecting the user purpose in Snyk, and can contain alphanumeric characters plus spaces. The **Role Type** reflects the permission sets the user can have, Organization-level only, or Group and Organization-level.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="Creation of a custom Org-level role" width="375"><figcaption><p>Creation of a custom Org-level role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="Create a custom Organization-level role" width="375"><figcaption><p>Create  a custom Organization-level role</p></figcaption></figure>
 
 If you would like to continue, you can click the **Create role** button. Basic details about the role are visible in the top section of the **Role details** screen.
 
@@ -56,7 +61,11 @@ The bottom section lists all the permissions available at the level you specifie
 Snyk provides custom role templates to provide inspiration for your own roles. For more information, see [Custom role templates](custom-role-templates/).
 {% endhint %}
 
-Choose the required permissions and click **Update Role Permissions**.
+Choose the required permissions and click the update button at the bottom of the permissions section. Note that Group-level roles have both Organization and Group-level permissions, and each permission set is updated separately.
+
+You can enable or disable all permissions in a set quickly by using the **Enable all** or **Disable all** button in the relevant permissions section. Be sure to update the permissions using the button at the bottom of the section.
+
+<figure><img src="../../.gitbook/assets/image (362).png" alt=""><figcaption><p>Organization-level permissions section</p></figcaption></figure>
 
 Permissions are grouped under categories. This is done so you can understand what functions assigning a permission might enable, and because some permissions require similar permissions to function fully. For example, for a user to move Projects (**Move Project** permission) in an Organization, the user must also be able to add Projects (**Add Project** permission) to that Organization, as these permissions work in tandem.
 
@@ -137,11 +146,11 @@ Snyk prevents users from assigning roles to others with more privileges than tho
 
 ### Assign roles to service accounts
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Feature availability**\
 Service accounts are available only to Snyk Enterprise customers. Free and Team users have access to [personal tokens](../../snyk-cli/authenticate-the-cli-with-your-account.md#methods-of-authenticating-with-snyk) only. Personal tokens are recommended for use with IDEs and the local CLI.
 
-See the [Plans and Pricing](https://snyk.io/plans/) page for more information.
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 Users with the Group-level View, Create, and Edit service account permissions can change the assigned role and related permissions of a service account. For detailed steps, see [Assign roles and permissions to a service account](../../enterprise-configuration/service-accounts/#assign-roles-and-permissions-to-a-service-account).
@@ -166,7 +175,7 @@ If the user is not already a part of your Group, you must first add that user as
 Member roles are supported as part of a customized SSO authentication flow. All new and existing customers who have customized SSO can use new roles they create in their IDP SAML assertions to provision users in their Organizations with those roles.
 
 {% hint style="info" %}
-If you are a customer who already has Custom SSO set up, or you are planning to create Member Roles after setting up Custom SSO, you can use Member Roles with no modification to the Custom SSO configuration on the Snyk side, as long as you send the normalized role name in your payload in the agreed format.
+If you already have Custom SSO set up, or are planning to create Member Roles after setting up Custom SSO, you can use Member Roles with no modification to the Snyk Custom SSO configuration, provided you send the normalized role name in your payload in the agreed-upon format.
 {% endhint %}
 
 New member role SAML assertions follow the existing Snyk pattern for declaring Organization memberships in IDP payloads: `{snyk-prefix}-{org-slug}-{normalized-role-name},` for example: `snyk-goof-developer_readonly` where:
