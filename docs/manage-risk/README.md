@@ -10,7 +10,7 @@ Snyk AppRisk provides:
 
 * **Automated app asset discovery**: Continually discover application assets and classify them by business context, ensuring security is in sync with development.
 * **Tailored security controls**: Define and manage appropriate security and compliance requirements, and verify the correct controls are in place.
-* **Risk-based prioritization**: Melding application context with best-in-class security analysis and fix guidance to quantify risk for each app, and assure developer remediation effort is focused on issues that matter most to the business.
+* **Risk-based prioritization**: Assess risk for each app based on application context and best-in-class security analysis and fix guidance to focus developer remediation efforts on issues that matter most to the business.
 
 ## Enterprise Analytics
 

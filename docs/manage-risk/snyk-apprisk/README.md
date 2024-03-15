@@ -4,11 +4,11 @@ Snyk AppRisk is a product that enables Application Security teams to implement, 
 
 The Snyk AppRisk Essentials offering is focused on enabling ASPM for Snyk products; in the coming months we will release an addition offering that supports non-Snyk AppSec products as well.&#x20;
 
-Snyk AppRisk Essentials enables:
+Snyk AppRisk Essentials enables:&#x20;
 
 * **Automated app asset discovery**: Continually discover application assets and classify them by business context, ensuring security is in sync with development.
 * **Tailored security controls**: Define and manage appropriate security and compliance requirements, and verify the correct controls are in place.
-* **Risk-based prioritization**: Melding application context with best-in-class security analysis and fix guidance to quantify risk for each app, and assure developer remediation effort is focused on issues that matter most to the business.
+* **Risk-based prioritization**: Assess risk for each app based on application context and best-in-class security analysis and fix guidance to focus developer remediation efforts on issues that matter most to the business.
 
 ## Features
 
