@@ -20,7 +20,7 @@ The **Test Usage** section shows how many tests you are using over the current b
 </div>
 
 {% hint style="info" %}
-Test limits vary for Snyk products and plans. See the [Pans and pricing page](https://snyk.io/plans/) for details.
+Test limits vary for Snyk products and plans. See the [Plans and pricing page](https://snyk.io/plans/) for details.
 {% endhint %}
 
 {% hint style="info" %}
