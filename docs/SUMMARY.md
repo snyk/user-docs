@@ -485,7 +485,7 @@
       * [Snyk patches to fix vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
       * [Snyk Vulnerability Database](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)
       * [Differences in Open Source vulnerability counts across environments](scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
-      * [Disclose a vulnerability in an open source package](scan-with-snyk/snyk-open-source/manage-vulnerabilities/disclose-a-vulnerability-in-an-open-source-package.md)
+      * [Disclosure of a vulnerability in an open-source package](scan-with-snyk/snyk-open-source/manage-vulnerabilities/disclosure-of-a-vulnerability-in-an-open-source-package.md)
       * [Troubleshoot fixing Open Source vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-open-source-vulnerabilities.md)
   * [Snyk Code](scan-with-snyk/snyk-code/README.md)
     * [Snyk Code Local Engine](scan-with-snyk/snyk-code/snyk-code-local-engine.md)
