@@ -25,9 +25,7 @@ See the CLI help for more information about the `snyk code test` command, includ
 {% hint style="warning" %}
 **Release status and feature availability**
 
-Publishing and ignoring CLI results is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
-
-For more information, see [Plans and pricing.](https://snyk.io/plans)
+Publishing and ignoring CLI results is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
 
 The minimum supported CLI version is v1.1194.0.
 {% endhint %}
