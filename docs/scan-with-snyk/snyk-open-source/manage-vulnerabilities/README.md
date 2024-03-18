@@ -8,4 +8,4 @@ For information about fixability, see [Vulnerability fix types](vulnerability-fi
 
 To help you decide which issues to fix, see [Prioritizing and managing issues](../../../manage-risk/prioritize-your-issues/).
 
-Fixing vulnerabilities relies on the [Snyk Vulnerability Database](snyk-vulnerability-database.md). You may see [differences in Open Source vulnerability counts across environments](differences-in-open-source-vulnerability-counts-across-environments.md). Information about [troubleshooting](troubleshoot-fixing-open-source-vulnerabilities.md) when you are fixing vulnerabilities is provided.
+Fixing vulnerabilities relies on the [Snyk Vulnerability Database](snyk-vulnerability-database.md). You may see [differences in Open Source vulnerability counts across environments](differences-in-open-source-vulnerability-counts-across-environments.md). Information about [troubleshooting](troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md) when you are fixing vulnerabilities is provided.

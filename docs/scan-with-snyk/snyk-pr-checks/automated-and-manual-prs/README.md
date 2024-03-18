@@ -1,7 +1,7 @@
 # Automated and manual PRs
 
 {% hint style="info" %}
-For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To be sure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-open-source-vulnerabilities.md#languages-supporting-fix-pull-requests-or-merge-requests).
+For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To be sure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supporting-fix-pull-requests-or-merge-requests).
 {% endhint %}
 
 Snyk provides actionable fix advice for vulnerabilities in your Open Source libraries through the following:
