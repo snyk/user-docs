@@ -1,6 +1,20 @@
-# Run PR Checks
+# Snyk PR Checks
 
-Use the Snyk PR Checks feature to prevent new security issues from entering your codebase by automatically scanning code changes in real time as soon as you submit a pull request (PR) in your source code manager (SCM).
+## Introduction to automated security scans with PR Checks
+
+The Snyk PR Checks feature allows developers to auto-scan their PRs for issues before merging their code. As Snyk acts as an automated pseudo-team member (an “expert security reviewer”), it finds potential issues, leaving review notes on your PR before the code is committed.
+
+While PRs are the points in the development process where code reviews happen, PR Checks allow security scanning to be integrated with developer workflows, empowering dev teams and helping to prevent security issues from occurring in deployed code.
+
+## **Test the change**
+
+The Snyk PR Checks feature allows you to test a change to the current codebase to see if that change introduces a problem. This change testing makes it easier to maintain the security of your codebase on an ongoing basis.
+
+For developers, change-related flaws are relevant and easy to fix, and fixing change-related flaws rather than accumulated flaws makes rolling out secure code easier. You can detect security issues early in the development process, see the test results immediately after you write new code, and find and fix issues as they emerge, all in your native workflow.
+
+## **Testing “before” and “after”**
+
+The Snyk PR Checks feature runs live tests of the “before and after” branch with the PR and fails only if the new branch has more issues. This allows you to address problems that have been introduced since the last scan, for example, new vulnerabilities introduced externally. Snyk PR Checks are triggered by a change in your code, and find issues across the entire repository. Thus,  a PR check finds issues in your code as well as other issues introduced since the last Snyk scan.Use the Snyk PR Checks feature to prevent new security issues from entering your codebase by automatically scanning code changes in real time as soon as you submit a pull request (PR) in your source code manager (SCM).
 
 ## Why use PR Checks
 
@@ -30,7 +44,7 @@ PR checks proceed as follows:
 5. The developer can view the PR Checks results and fix identified issues before merging the code.
 6. The PR Checks results appear as **Passed** or **Failed** directly in the SCM, preventing PRs from being merged with security issues.
 
-For more information on how PR Checks work, see [Introduction to automated security scans with PR Checks](introduction-to-automated-security-scans-with-pr-checks.md).
+For more information on how PR Checks work, see [Introduction to automated security scans with PR Checks](broken-reference).
 
 For more information on working with PR Checks, see the following pages:
 

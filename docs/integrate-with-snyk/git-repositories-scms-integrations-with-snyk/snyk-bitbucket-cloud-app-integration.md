@@ -94,7 +94,7 @@ The example that follows shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
-Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../scan-with-snyk/snyk-open-source/automatic-snyk-fix-prs-and-manual-fix-merge-requests/automated-pull-request-creation-for-new-fixes.md) with fixes for your repositories.
+Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../scan-with-snyk/snyk-pr-checks/automated-and-manual-prs/create-automatic-prs-for-new-fixes.md) with fixes for your repositories.
 
 The example that follows shows a fix pull request opened by Snyk.
 
@@ -114,7 +114,7 @@ To review and adjust the automatic fix pull request settings:
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
-For more information, see [Automated pull request creation for new fixes](../../scan-with-snyk/snyk-open-source/automatic-snyk-fix-prs-and-manual-fix-merge-requests/automated-pull-request-creation-for-new-fixes.md).
+For more information, see [Automated pull request creation for new fixes](../../scan-with-snyk/snyk-pr-checks/automated-and-manual-prs/create-automatic-prs-for-new-fixes.md).
 {% endhint %}
 
 ### Pull request tests
@@ -128,7 +128,7 @@ The example that follows shows a Snyk pull request build check on the Bitbucket 
 To review and adjust the pull request test settings, follow these steps:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud App**, and click **Edit Settings**.
-2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options. See [Configure PR Checks](../../scan-with-snyk/run-pr-checks/configure-pr-checks.md) for more details.
+2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options. See [Configure PR Checks](../../scan-with-snyk/snyk-pr-checks/configure-pr-checks.md) for more details.
 
 ### First-party interface in Bitbucket Cloud
 

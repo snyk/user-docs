@@ -16,8 +16,8 @@ Not all features follow all these stages, and timelines for each feature to move
 
 ### Snyk features in Closed Beta
 
-* [Customize PR templates](../scan-with-snyk/snyk-open-source/automatic-snyk-fix-prs-and-manual-fix-merge-requests/customize-pr-templates/)
-* [Configure PR Checks](../scan-with-snyk/run-pr-checks/configure-pr-checks.md)
+* [Customize PR templates](../scan-with-snyk/snyk-pr-checks/automated-and-manual-prs/customize-pr-templates/)
+* [Configure PR Checks](../scan-with-snyk/snyk-pr-checks/configure-pr-checks.md)
 * [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
 * [Enterprise Analytics](../manage-risk/enterprise-analytics.md)
 * [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)

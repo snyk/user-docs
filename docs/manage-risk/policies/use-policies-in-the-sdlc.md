@@ -53,7 +53,7 @@ See [Security policies](security-policies/) for more details.
 For GitHub Projects monitored by Snyk, any new pull request from a contributing developer can be checked against policies assigned to that Project. This ensures that policy-breaking code cannot be committed to the repository.
 
 {% hint style="info" %}
-See [PR Checks](../../scan-with-snyk/run-pr-checks/) for details of Snyk’s PR Checks feature.
+See [PR Checks](../../scan-with-snyk/snyk-pr-checks/) for details of Snyk’s PR Checks feature.
 {% endhint %}
 
 An example follows of a PR check on a JavaScript package license.

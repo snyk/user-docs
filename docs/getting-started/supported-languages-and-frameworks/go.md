@@ -175,7 +175,7 @@ To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your Git r
 #### What's next?
 
 * [Open a Fix PR](go.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../scan-with-snyk/run-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../scan-with-snyk/snyk-pr-checks/configure-pr-checks.md)
 
 ### Snyk integrations&#x20;
 

@@ -1,7 +1,7 @@
-# Automatic Snyk fix PRs and manual fix merge requests
+# Automated and manual PRs
 
 {% hint style="info" %}
-For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../manage-vulnerabilities/fix-your-vulnerabilities.md). To be sure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../manage-vulnerabilities/troubleshoot-fixing-open-source-vulnerabilities.md#languages-supporting-fix-pull-requests-or-merge-requests).
+For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To be sure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-open-source-vulnerabilities.md#languages-supporting-fix-pull-requests-or-merge-requests).
 {% endhint %}
 
 Snyk provides actionable fix advice for vulnerabilities in your Open Source libraries through the following:
@@ -9,12 +9,12 @@ Snyk provides actionable fix advice for vulnerabilities in your Open Source libr
 * [Snyk fix PRs](./#snyk-fix-prs): automatic pull and merge requests (PRs and MRs)
 * [Snyk fix merge requests](./#snyk-fix-merge-requests): manual pull and merge requests
 
-## **Automatic Snyk fix PRs**
+## **Automated Snyk fix PRs**
 
 For Projects imported through an SCM integration, Snyk offers the following types of automated pull and merge requests:
 
-* [Fix pull requests for new vulnerabilities](automated-pull-request-creation-for-new-fixes.md)
-* [Fix pull requests to clear the backlog of vulnerabilities in priority order](automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md)
+* [Fix pull requests for new vulnerabilities](create-automatic-prs-for-new-fixes.md)
+* [Fix pull requests to clear the backlog of vulnerabilities in priority order](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md)
 * [Dependency upgrade pull requests](upgrade-dependencies-with-automatic-prs.md)
 
 ## Manual Snyk fix merge requests

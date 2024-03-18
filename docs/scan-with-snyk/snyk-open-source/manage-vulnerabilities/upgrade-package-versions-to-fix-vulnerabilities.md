@@ -6,4 +6,4 @@ To resolve a vulnerability in a transitive dependency, Snyk will calculate the d
 
 Some fixes may require a major upgrade of a dependency. In this situation, if Snyk suspects a major change that would cause breakage, the Fix PR screen indicates this.
 
-See [Upgrading dependencies with automatic PRs](../automatic-snyk-fix-prs-and-manual-fix-merge-requests/upgrade-dependencies-with-automatic-prs.md) for more details.
+See [Upgrading dependencies with automatic PRs](../../snyk-pr-checks/automated-and-manual-prs/upgrade-dependencies-with-automatic-prs.md) for more details.

@@ -1,13 +1,13 @@
-# Automated fix pull requests for backlog issues and known vulnerabilities
+# Create automatic fix PRs for backlog issues and known vulnerabilities
 
 {% hint style="info" %}
 * Snyk supports backlog issues for GitHub, GitHub Enterprise, and Bitbucket Cloud integrations.
-* The Automatic fix PRs feature is supported for the following integrations: BitBucket Server, BitBucket Cloud, BitBucket Connect, GitHub, GitHub Enterprise, GitLab, and Azure.
-* The Autofix PR settings may vary depending on the integration.
-* The fix strategy feature for getting dependency-oriented fixes is in [beta](../../../getting-started/snyk-release-process.md). Snyk wants to hear your feedback.
+* The **Automatic fix PRs** feature is supported for the following integrations: BitBucket Server, BitBucket Cloud, BitBucket Connect, GitHub, GitHub Enterprise, GitLab, and Azure.
+* The **Automatic fix PR** settings may vary depending on the integration.
+* The fix strategy feature for getting dependency-oriented fixes is in [beta](../../../getting-started/snyk-release-process.md).&#x20;
 {% endhint %}
 
-The following rules are applied to automatic PR creation for vulnerabilities:
+When Snyk creates automatic PRs for vulnerabilities, the following rules are applied:
 
 * If you select **Retest now** for the Project, a scan is run manually, and the 24-hour window is marked as having had a scan run. No automatic PR is created until the next automated scan runs.
 * One pull request is created per Project with a [priority score](../../find-and-manage-priority-issues/priority-score.md) of **700 and above**.
@@ -33,10 +33,10 @@ Enabling **Automatic fix PRs** can result in larger version jumps.
 
 The configuration settings apply to all Projects in that Organization. You can also extend the configuration to Projects with custom settings.
 
-1. Open Snyk Web UI and navigate to **Settings** <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations**.
+1. Open Snyk Web UI and navigate to **Settings >** **Integrations**.
 2. Select a Git repository integration (SCM). For this example, GitHub is configured.
-3. Under **Automatic fix PRs** enable **Known vulnerabilities (backlog)**.\
-   **Known vulnerabilities** retrieve vulnerabilities from the Project's backlog. These are the previously declared vulnerabilities.
+3. Under **Automatic fix PRs,** enable **Known vulnerabilities (backlog)**.\
+   This retrieves vulnerabilities from the Project's backlog, which have been previously declared.
 
 <figure><img src="../../../.gitbook/assets/Automatic fix PRs settings for Git integration.png" alt="Automatic fix PRs settings for Git integration."><figcaption><p>Automatic fix PRs settings for Git integration</p></figcaption></figure>
 
@@ -45,7 +45,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 * By default, the fix strategy will be a single PR at the vulnerability level. Snyk opens one PR each day for issues in your backlog, fixing the top vulnerability it finds.
 * You can check **Fix all vulnerabilities for the same dependency in a single PR**. This selects the vulnerability with the highest priority and a fix to resolve it, as well as fixes for other vulnerabilities in the same dependency.
 
-5. **Save** changes.
+5. Click **Save**.
 6. (Optional) Select **Save changes and apply to all overridden Projects** to extend the current configuration to Projects with custom settings.\
    Use this option to apply the same configuration to all Projects. Selecting this option updates all of the individual Project settings for **Automatic fix PRs**. For Projects that previously had their own settings for automatic fix full requests, selecting this option overrides the Project setting with the global setting.
 
@@ -60,8 +60,8 @@ You can configure Automatic fix PRs to work only for specific Projects rather th
 3. In the **Automatic fix pull requests** section:
    * Select **Customize for only this project**
    * Enable **Known vulnerabilities (backlog)**
-4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md#configure-automatic-fix-prs-at-the-integration-level).
-5. **Save changes**.
+4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md#configure-automatic-fix-prs-at-the-integration-level).
+5. Click **Save changes**.
 
 <figure><img src="../../../.gitbook/assets/Automatic fix PRs settings at the Project level.png" alt="Automatic fix PRs settings at the Project level."><figcaption><p>Automatic fix PRs settings at the Project level</p></figcaption></figure>
 

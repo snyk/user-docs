@@ -43,8 +43,8 @@ Follow these steps to configure automatic upgrade PRs for an entire Organization
 2.  Navigate to **Settings > Organization Settings > Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.
 
     <figure><img src="../../../.gitbook/assets/scm-integration_edit settings_20oct2022.png" alt="Editing integration settings."><figcaption><p>Editing integration settings</p></figcaption></figure>
-3. On the **Settings** page of the selected integration, scroll down to the **Automatic dependency upgrade pull requests** section.
-4. In the **Automatic dependency upgrade pull requests** section, perform the following:
+3. On the **Settings** page of the selected integration, navigate to the **Automatic dependency upgrade PRs** section.
+4. In this section, perform the following actions:
    * Slider - change to **Enable**.
    * **Maximum number of open upgrade PRs allowed** – define how many open Snyk PRs a Project can have to also receive a dependency upgrade PR; the maximum is ten. When the limit of the open PRs is reached, no new upgrade PRs are created.
    * **Include major version in upgrade recommendation** – select whether to include major version upgrades in the recommendations. By default, only patches and minor versions are included in the upgrade recommendations.
@@ -76,8 +76,8 @@ Follow these steps to configure automatic upgrade PRs for a specific Project:
    <img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="Select the integratiion" data-size="original">Project
 5. On the **Integration** page, scroll to the **Automatic dependency upgrade pull requests** section and choose one of the following:
    * **Inherit from Integration settings** – apply the Integration Settings of the Organization to the selected Project.\
-     If the **Automatic dependency upgrade pull requests option is disabled for the Organization**, this option will also be disabled for the Project.
-   * **Customize for only this Project** – apply specific settings of the **Automatic dependency upgrade pull requests** option on the Project. If you select this option:
+     If the **Automatic dependency upgrade PRs option is disabled for the Organization**, this option will also be disabled for the Project.
+   * **Customize for only this Project** – apply specific settings of the **Automatic dependency upgrade PRs** option on the Project. If you select this option:
      * Change the slider to **Enabled**.
      * In **Include major version in upgrade recommendation,** select one of the available options to define whether major version upgrades will be included in the recommendations.\
        By default, only patches and minor versions are included in the upgrade recommendations.

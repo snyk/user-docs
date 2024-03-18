@@ -36,4 +36,4 @@ See the [API documentation](https://snyk.docs.apiary.io/#reference/test) and the
 
 Snyk can scan every new Pull Request (PR) submitted on your monitored repositories to help prevent new vulnerabilities from being added to your codebase.
 
-See [Run PR Checks](run-pr-checks/) for details.
+See [Run PR Checks](snyk-pr-checks/) for details.
