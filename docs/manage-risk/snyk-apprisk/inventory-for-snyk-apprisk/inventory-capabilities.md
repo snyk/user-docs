@@ -7,6 +7,8 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Tags](inventory-capabilities.md#tags)
 * [Developers](inventory-capabilities.md#developers)
 * [Class](inventory-capabilities.md#class)
+* [Source](inventory-capabilities.md#source)
+* [Repository freshness](inventory-capabilities.md#repository-freshness)
 
 ## **Asset**
 
@@ -143,7 +145,13 @@ The class value can be auto-generated with policies. You just need to create a p
 
 <figure><img src="../../../.gitbook/assets/inventory7.png" alt="AppRisk - Class"><figcaption><p>Snyk AppRisk - Class</p></figcaption></figure>
 
-###
+## Source
+
+The Source column in Snyk AppRisk helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
+
+## Repository freshness
+
+The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation.
 
 
 
