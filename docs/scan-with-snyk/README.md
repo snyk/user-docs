@@ -21,4 +21,4 @@ Scan and automatically address potential vulnerabilities when you review pull re
 
 Snyk can also retest and alert on the default branch on a scheduled basis and show results.&#x20;
 
-For more information, see [Run PR checks](snyk-pr-checks/).
+For more information, see [Run PR checks](pull-requests/pull-request-checks/).

@@ -392,7 +392,7 @@ The following capabilities are available for all Snyk users:
 
 **With Git integrations**
 
-Snyk allows you to [run PR Checks](../../../scan-with-snyk/snyk-pr-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
+Snyk allows you to [run PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis, and show results.
 
 These results are viewable on the Snyk projects screen, for:
 
@@ -443,7 +443,7 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 #### What's next?
 
 * [Open a Fix PR](./#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../../scan-with-snyk/snyk-pr-checks/configure-pr-checks.md)
+* [Configure PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 
 ### Snyk integrations&#x20;
 

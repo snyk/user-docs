@@ -28,7 +28,7 @@ For more details, see [View Project information](../../../snyk-admin/snyk-projec
 
 ## Fix vulnerabilities in your open-source libraries
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../snyk-pr-checks/automated-and-manual-prs/).
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../pull-requests/snyk-fix-pull-or-merge-requests/).
 
 Navigate to the **Issues** card for a Project:
 

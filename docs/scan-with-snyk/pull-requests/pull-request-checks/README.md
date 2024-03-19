@@ -1,4 +1,4 @@
-# Snyk PR Checks
+# Pull Request Checks
 
 ## Introduction to automated security scans with PR Checks
 
@@ -27,13 +27,13 @@ The Snyk PR Checks feature runs live tests of the “before and after” branch 
 
 ## What to test for
 
-You can analyze PR Checks results in your SCM to test for dependency and licensing issues using [Snyk Open Source](../snyk-open-source/) and code security using [Snyk Code](../snyk-code/).
+You can analyze PR Checks results in your SCM to test for dependency and licensing issues using [Snyk Open Source](../../snyk-open-source/) and code security using [Snyk Code](../../snyk-code/).
 
 ## How PR checks work
 
 The following diagram explains how Snyk Checks PRs in your development workflow.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-09-20 at 11.27.44 (1) (1).png" alt="Where Snyk checks for pull requests in the development workflow."><figcaption><p>Where Snyk checks for pull requests in the development workflow</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-20 at 11.27.44 (1) (1).png" alt="Where Snyk checks for pull requests in the development workflow."><figcaption><p>Where Snyk checks for pull requests in the development workflow</p></figcaption></figure>
 
 PR checks proceed as follows:
 
@@ -46,6 +46,6 @@ PR checks proceed as follows:
 
 For more information on working with PR Checks, see the following pages:
 
-* [Configure PR Checks](configure-pr-checks.md)
+* [Configure PR Checks](configure-pull-request-checks.md)
 * [Analyze PR Checks results](analyze-pr-checks-results.md)
 * [Troubleshoot PR Checks](troubleshoot-pr-checks.md)

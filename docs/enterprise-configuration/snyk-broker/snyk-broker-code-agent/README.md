@@ -3,7 +3,7 @@
 {% hint style="info" %}
 <mark style="color:red;">**The Code Agent is deprecated**</mark>. The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](../install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md).  The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io/hc/en-us).
 
-The automatic [PR Checks](../../../scan-with-snyk/snyk-pr-checks/) feature is not supported ifor Snyk Broker - Code Agent.
+The automatic [PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) feature is not supported ifor Snyk Broker - Code Agent.
 {% endhint %}
 
 To connect Snyk Code to your self-hosted Git server using Snyk Broker, you can add the Code Agent after installing Snyk Broker for your SCM.&#x20;
