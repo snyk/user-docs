@@ -270,11 +270,11 @@ Before scanning your Open Source Project for vulnerabilities, with limited excep
 
 ## Code analysis (Snyk Code)
 
-Below, you can find information about the programming languages, fully supported package managers, and features for Snyk Code.
+Below, you can find information about the programming languages, fully supported frameworks, and features for Snyk Code.
 
 ### [Apex](apex.md)
 
-**Package manager**: APEX manager
+**Frameworks**: APEX&#x20;
 
 **Import your app through SCM**: Available
 
@@ -289,7 +289,7 @@ Below, you can find information about the programming languages, fully supported
 
 ### [C#](.net/best-practices-for-.net.md#c)
 
-**Package manager**:&#x20;
+**Frameworks**:&#x20;
 
 * .NET
 * ASP.NET
@@ -304,7 +304,7 @@ Below, you can find information about the programming languages, fully supported
 * Reports
 * Custom rules
 
-**Package manager versions**:&#x20;
+**Framework versions**:&#x20;
 
 * .NET Framework 4.6 - 4.8.x
 * ASP.NET 6.x
@@ -312,7 +312,7 @@ Below, you can find information about the programming languages, fully supported
 
 ### [C/C++](c-c++/)
 
-**Package manager**: C++ Standard Library
+**Frameworks**: C++ Standard Library
 
 **Import your app through SCM**: Available
 
@@ -322,7 +322,7 @@ Below, you can find information about the programming languages, fully supported
 
 ### [Go](go.md)
 
-**Package manager**: gopm
+**Frameworks**: gopm
 
 **Import your app through SCM**: Available
 
@@ -333,11 +333,11 @@ Below, you can find information about the programming languages, fully supported
 * Reports
 * Custom rules
 
-**Package manager versions**: Versions up to go1.16
+**Framework versions**: Versions up to go1.16
 
 ### [Java](java-and-kotlin/)
 
-**Package manager:**
+**Frameworks:**
 
 * Apache Camel
 * Apache Struts
@@ -355,11 +355,11 @@ Below, you can find information about the programming languages, fully supported
 * Report&#x20;
 * Custom rules
 
-**Package manager versions**: Versions up to Java SE 17
+**Framework versions**: Versions up to Java SE 17
 
 ### [JavaScript](javascript/)
 
-**Package manager**:&#x20;
+**Frameworks**:&#x20;
 
 * React
 * Vue.js
@@ -376,7 +376,7 @@ Below, you can find information about the programming languages, fully supported
 * Reports
 * Custom rules
 
-**Package manager versions**: Versions up to ECMAScript 2020
+**Framework versions**: Versions up to ECMAScript 2020
 
 ### [Kotlin](java-and-kotlin/)
 
@@ -392,7 +392,7 @@ Below, you can find information about the programming languages, fully supported
 
 ### [PHP](php.md)
 
-**Package manager**:&#x20;
+**Frameworks**:&#x20;
 
 * Symfony
 * Laravel
@@ -407,11 +407,11 @@ Below, you can find information about the programming languages, fully supported
 * Reports&#x20;
 * Custom rules
 
-**Package manager versions**: Versions 5.2 up to 8.0
+**Framework versions**: Versions 5.2 up to 8.0
 
 ### [Python](python.md)
 
-**Package manager**:&#x20;
+**Frameworks**:&#x20;
 
 * Django
 * Flask
@@ -429,11 +429,11 @@ Below, you can find information about the programming languages, fully supported
 * Reports
 * Customer rules
 
-**Package manager versions**: Versions up to 3.8.x
+**Framework versions**: Versions up to 3.8.x
 
 ### [Ruby](ruby.md)
 
-**Package manager**: Ruby On Rails
+**Frameworks**: Ruby On Rails
 
 **Import your app through SCM**: Available
 
@@ -446,7 +446,7 @@ Below, you can find information about the programming languages, fully supported
 
 ### [Scala](scala.md)
 
-**Package manager**:&#x20;
+**Frameworks**:&#x20;
 
 * Play Framework
 * Akka
@@ -461,11 +461,11 @@ Below, you can find information about the programming languages, fully supported
 * Reports
 * Interfile is supported
 
-**Package manager versions**: Version 2.x
+**Framework versions**: Version 2.x
 
 ### [Swift](swift-and-objective-c.md)
 
-**Package manager**:&#x20;
+**Frameworks**:&#x20;
 
 * AlamoFire
 * Pathos
@@ -480,11 +480,11 @@ Below, you can find information about the programming languages, fully supported
 
 * Reports
 
-**Package manager versions**: Versions up to 5.7.x
+**Framework versions**: Versions up to 5.7.x
 
 ### [TypeScript](typescript.md)
 
-**Package manager**: npm
+**Frameworks**: npm
 
 **Import your app through SCM**: Available
 
@@ -495,11 +495,11 @@ Below, you can find information about the programming languages, fully supported
 * Reports
 * Custom rules
 
-**Package manager versions**: Versions up to 4.2
+**Framework versions**: Versions up to 4.2
 
 ### [VB.NET](vb.net.md)
 
-**Package manager**: NuGet
+**Frameworks**: NuGet
 
 **Import your app through SCM**: Available
 
@@ -509,4 +509,4 @@ Below, you can find information about the programming languages, fully supported
 
 * Reports
 
-**Package manager versions**: Version 7
+**Framework versions**: Version 7
