@@ -152,7 +152,7 @@ The Silver Success Plan includes Silver Support.
 
 #### Gold Support
 
-The Gold Success slan includes Gold Support.
+The Gold Success plan includes Gold Support.
 
 **Pooled Technical Support:** Support tickets are handled and triaged by a pool of Technical Support Engineers.
 
