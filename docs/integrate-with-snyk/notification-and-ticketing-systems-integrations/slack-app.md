@@ -1,10 +1,10 @@
 # Slack app
 
-The Snyk app for Slack is built as an official [Slack App](https://api.slack.com/start/overview#apps).
-
-{% hint style="info" %}
+{% hint style="warning" %}
 Snyk recommends that all customers use the Snyk Slack app, as the [Slack integration](slack-integration.md) is outdated.
 {% endhint %}
+
+The Snyk app for Slack is built as an official [Slack App](https://api.slack.com/start/overview#apps).
 
 The Slack app provides the following benefits and more:
 
@@ -12,13 +12,9 @@ The Slack app provides the following benefits and more:
 * Support for filtering on severity levels
 * Support for overriding notifications at the Project level
 
-{% hint style="info" %}
-Vulnerabilities detected on initial import of Projects are not sent to Slack. Only newly disclosed vulnerabilities from imported Projects are sent to Slack.&#x20;
-{% endhint %}
-
 ## Overview of the Snyk app for Slack
 
-The Snyk app for Slack highlights vulnerability information across your software Projects and presents actionable context within your Slack workspace channels. Your teams get the issue notifications that matter the most and can act on them without leaving Slack.
+The Snyk app for Slack highlights newly disclosed vulnerability information across your software from imported Projects and presents actionable context within your Slack workspace channels. Your teams get the issue notifications that matter the most and can act on them without leaving Slack.
 
 This has the advantage of:
 
@@ -28,7 +24,11 @@ This has the advantage of:
 
 The Snyk app for Slack is based on [Snyk Apps](../../snyk-api-info/snyk-apps/), providing you with the benefit of more granular scopes and more ability to configure issue notifications at the Organization and Project levels.
 
-## Steps to enable the Snyk app for Slack
+{% hint style="info" %}
+Vulnerabilities detected on initial import of Projects are not sent to Slack. Only newly disclosed vulnerabilities from imported Projects are sent to Slack.
+{% endhint %}
+
+## Enable the Snyk app for Slack
 
 To enable the Snyk app for Slack, you must do the following:
 
@@ -52,28 +52,17 @@ After Snyk has been authorized, you will be asked to authorize Slack to connect 
 
 <figure><img src="../../.gitbook/assets/slack-app3.png" alt="Authorize Slack to connect to Snyk"><figcaption><p>Authorize Slack to connect to Snyk</p></figcaption></figure>
 
-{% hint style="info" %}
 If multiple Slack workspaces are available, a dropdown will be visible at the top right of the page. Select the desired Slack workspace.
-{% endhint %}
 
 After this step is complete, you can configure the integration to provide a Slack channel ID for the channel where issue notifications for the Organization are sent, and also filter by severity level.
 
 <figure><img src="../../.gitbook/assets/slack-app-settings.png" alt="Choose Slack channel and severity level for the notifications for the Organization"><figcaption><p>Choose Slack channel and severity level for the notifications for the Organization</p></figcaption></figure>
 
-{% hint style="info" %}
 To find the channel ID of a Slack Channel, open Slack, right-click on the channel name, select **View channel details**, then scroll down to the bottom of the window where you will see the channel ID, for example, C2TB2222N.
-{% endhint %}
 
-{% hint style="info" %}
-To add the Snyk for Slack app to a private channel, you must first add the app manually to the channel from within Slack and then select the channel within the Snyk integration.
+To add the Snyk for Slack app to a private channel, you must first add the app manually to the channel from within Slack and then select the channel within the Snyk integration. In the Private channel, select **Channel settings - Integrations**, and then **Add an app**. Search for **Snyk for Slack** and select **add**. After you have done this, the channel is displayed on the **Settings** page for the integration.
 
-In the Private channel, select **Channel settings - Integrations**, and then **Add an app**. Search for **Snyk for Slack** and select **add**. \
-After you have done this, the channel is displayed on the **Settings** page for the integration.
-{% endhint %}
-
-{% hint style="info" %}
 If you are a Slack Admin, you can manually add the Snyk for Slack app to a private channel. To do this, type **@Snyk for Slack** in the chosen channel to summon the setup bot.
-{% endhint %}
 
 ## Issue notifications
 
