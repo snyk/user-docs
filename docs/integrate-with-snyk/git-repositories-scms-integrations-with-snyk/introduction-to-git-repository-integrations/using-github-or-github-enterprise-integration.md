@@ -30,7 +30,7 @@ After this GitHub service account user is created, you can use the single person
 Before you configure and Import Projects using the Snyk GitHub Enterprise integration, Snyk recommends removing all Projects imported using the GitHub integration. This avoids having duplicate Snyk Projects.
 
 {% hint style="warning" %}
-Before deleting Snyk Projects imported using the GitHub integration, consider the impact on reporting. For details, contact your Snyk account team or [Snyk support](https://support.snyk.io/hc/en-us).
+Before deleting Snyk Projects imported using the GitHub integration, consider the impact on reporting. If you decide to delete Projects, and none remain for a Target, delete the Target too. For details, contact your Snyk account team or [Snyk support](https://support.snyk.io/hc/en-us).
 {% endhint %}
 
 You can remove Projects imported using the GitHub integration manually by removing the Projects from Snyk. However, depending on how many Projects you have already imported using the GitHub integration, it may be easier for you to create a new Snyk Organization.
