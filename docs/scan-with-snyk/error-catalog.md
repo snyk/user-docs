@@ -444,6 +444,46 @@ If you are using `Directory.Build.props` files to determine the target framework
 **Help Links:**
 - [https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets)
 
+### [SNYK-OS-DOTNET-0008](#snyk-os-dotnet-0008)
+
+#### Your global.json is targeting an outdated SDK version
+
+Snyk supports the latest channels of .NET which is currently [supported by Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet).
+
+Within these supported channels, Snyk supports the latest SDK version currently under that channel.
+
+This means, that if the versions released under the .NET 8 channel are `8.0.0`, `8.0.1`, `8.0.2` and `8.0.3`, Snyk will support only `8.0.3`.   
+
+Further, if the SDK versions released under `8.0.3` are: `8.0.203`, `8.0.202` and `8.0.103`, Snyk will only support `8.0.203`.
+
+This can lead to scan failures for customers that are pinning SDK versions in their `global.json` files without a [rollForward](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward) directive, such as:
+```json
+{
+  "sdk": {
+    "version": "8.0.101"
+  }
+}
+```
+Since as `8.0.1` is not the newest .NET version release patch, and `8.0.101` is not the latest SDK version released under that channel. 
+
+To solve it, we recommend that customers employ some flexibility in their `global.json` file by employing the `rollFoward` directive to at least be `latestPatch`, as such:
+```json
+{
+  "sdk": {
+    "version": "8.0.101",
+    "rollForward": "latestPatch"
+  }
+}
+```
+Which will allow Snyk to scan your code using a newer patch version of the SDK, despite your version pinning.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://versionsof.net/core/](https://versionsof.net/core/)
+- [https://dotnet.microsoft.com/en-us/download/dotnet](https://dotnet.microsoft.com/en-us/download/dotnet)
+- [https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward)
+
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 
 #### Failed to access private module
@@ -1662,4 +1702,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-03-15T13:30:22.610Z
+--- Generated at 2024-03-20T10:02:13.693Z
