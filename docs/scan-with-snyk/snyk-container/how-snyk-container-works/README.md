@@ -26,7 +26,7 @@ Because Snyk reads the information from the file system, the container does not 
 After Snyk has the list of installed software, Snyk looks that up against the Snyk Vulnerability Database, which combines public sources with proprietary research.
 
 {% hint style="warning" %}
-Snyk supports testing OCI compliant and Docker v2 complaint images but does not support images that combine both OCI and Docker v2 standards into a single archive.
+Snyk supports testing OCI compliant and Docker v2 compliant images but does not support images that combine both OCI and Docker v2 standards into a single archive.
 {% endhint %}
 
 ## Operating systems supported by Snyk Container
