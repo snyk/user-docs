@@ -32,8 +32,6 @@ Below is a summary of the features offered by Snyk for Scala, organized by packa
 To scan your dependencies, you must ensure you have first installed the relevant package manager and that your Project contains the supported manifest files.
 {% endhint %}
 
-Snyk scans Scala projects by running `sbt` plugins or examining your `build.sbt` and compares the versions of every direct and transitive dependency in your Project against Snyk's [Maven vulnerability database](https://snyk.io/vuln?type=maven).
-
 ## Getting started with Snyk for Scala across environments
 
 ### Snyk CLI&#x20;
