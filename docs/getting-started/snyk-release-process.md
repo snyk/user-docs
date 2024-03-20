@@ -35,7 +35,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Risk Score](../manage-risk/prioritize-your-issues/risk-score.md)
 * [Reachable vulnerabilities](../manage-risk/prioritize-your-issues/reachable-vulnerabilities.md)
 * [Group projects by branch or version for monitoring](../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
-* [Git repository cloning](../snyk-preview.md#enable-git-repository-cloning)
+* [Git repository cloning](../snyk-admin/snyk-preview.md#enable-git-repository-cloning)
 * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
 * [Snyk broker commit signing](../enterprise-configuration/snyk-broker/snyk-broker-commit-signing.md)
 

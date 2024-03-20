@@ -210,7 +210,7 @@ For details, see the [Test command help](https://docs.snyk.io/snyk-cli/commands/
 #### Pip and Python versions
 
 {% hint style="success" %}
-Selecting the minor version of Python to use in pip Project scans is in Early Access. You can enable this in [snyk-preview.md](../../snyk-preview.md "mention") (you may need to refresh the page after)
+Selecting the minor version of Python to use in pip Project scans is in Early Access. You can enable this in [snyk-preview.md](../../snyk-admin/snyk-preview.md "mention") (you may need to refresh the page after)
 
 Python version options for the default and early access scenarios are detailed below.
 {% endhint %}
