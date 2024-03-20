@@ -80,7 +80,9 @@ Snyk uses PRs to tell GitHub Enterprise that a merge is to occur. To do this, ch
    If the organization is showing as **Authorized**, but the issue still persists, try de-authorizing the organization and then re-authorizing.
 
 {% hint style="info" %}
-To use the integration with GitHub Enterprise Cloud, add the URL `https://api.github.com.`To integrate with a self-hosted GitHub Enterprise, add the URL `https://your.github-enterprise.host` in step two of PAT authorization.
+To use the integration with GitHub Enterprise Cloud, add the URL `https://api.github.com`. To integrate with a self-hosted GitHub Enterprise, add the URL `https://your.github-enterprise.host` in step two of PAT authorization.
+
+Ensure that there are no trailing characters such as `/` following the url. An integration with trailing characters in the URL may connect successfully but provide incorrect links back to the GitHub files.
 {% endhint %}
 
 {% hint style="warning" %}
