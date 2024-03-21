@@ -4,7 +4,7 @@ Start onboarding AppRisk by identifying all inventory code-based assets and dete
 
 ## Access Snyk AppRisk
 
-You can access Snyk AppRisk from the [Snyk Web UI.](../../../getting-started/explore-snyk-through-the-web-ui.md)
+You can access Snyk AppRisk from the [Snyk Web UI.](../../../getting-started/snyk-web-ui.md)
 
 * Access Snyk AppRisk from the Group level of your Snyk Group.
 * Ensure you have Group Admin access.

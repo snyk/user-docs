@@ -6,7 +6,7 @@ Snyk Code is a security tool that is fast and accurate and produces fewer false 
 
 You can scan your code using the following options:
 
-* [Snyk Web UI](../../getting-started/explore-snyk-through-the-web-ui.md) (including [PR checks](../pull-requests/pull-request-checks/))
+* [Snyk Web UI](../../getting-started/snyk-web-ui.md) (including [PR checks](../pull-requests/pull-request-checks/))
 * [Snyk IDE](../../integrate-with-snyk/use-snyk-in-your-ide/)
 * [Snyk CLI](../../snyk-cli/)
 * [Snyk API](../../snyk-api/)

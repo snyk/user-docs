@@ -50,5 +50,5 @@ If you log in with a different authentication provider from the one your company
 Snyk shows your preferred, that is, default Organization when you log in to the Snyk Web UI. Snyk also uses the settings for your preferred Organization when you test a project locally using the CLI.
 
 {% hint style="info" %}
-To change your default Organization, see [Manage account preferences and settings](../explore-snyk-through-the-web-ui.md#manage-account-preferences-and-settings) on Explore the Snyk Web UI.
+To change your default Organization, see [Manage account preferences and settings](../snyk-web-ui.md#manage-account-preferences-and-settings) on Explore the Snyk Web UI.
 {% endhint %}

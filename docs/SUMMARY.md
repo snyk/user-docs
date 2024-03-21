@@ -33,7 +33,7 @@
     * [Swift and Objective-C](getting-started/supported-languages-and-frameworks/swift-and-objective-c.md)
     * [TypeScript](getting-started/supported-languages-and-frameworks/typescript.md)
     * [VB.NET](getting-started/supported-languages-and-frameworks/vb.net.md)
-  * [Explore Snyk through the Web UI](getting-started/explore-snyk-through-the-web-ui.md)
+  * [Snyk Web UI](getting-started/snyk-web-ui.md)
   * [How to obtain and authenticate with your Snyk API token](getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md)
   * [Snyk Release Process](getting-started/snyk-release-process.md)
   * [Snyk Learn](getting-started/snyk-learn.md)

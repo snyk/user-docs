@@ -22,7 +22,7 @@ Use the following Snyk [CLI commands](../snyk-cli/cli-commands-and-options-summa
 
 A scan runs when you import a Snyk Project (see [Import a Project](../getting-started/quickstart/import-a-project.md)) or click the **Retest now** button on a Project. Snyk then automatically runs periodic scans on that imported Project, to see if your code is affected by newly disclosed vulnerabilities.
 
-See [Explore Snyk through the Web UI](../getting-started/explore-snyk-through-the-web-ui.md).
+See [Explore Snyk through the Web UI](../getting-started/snyk-web-ui.md).
 
 The default **scanning frequency** and available frequencies vary depending on the type of Project: for more information, see [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md). You can also set the frequency in the Project **Settings** (see [View and edit project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md)) or use the Snyk REST API; see the  [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-) endpoint.
 

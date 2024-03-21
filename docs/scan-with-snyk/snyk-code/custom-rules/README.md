@@ -17,7 +17,7 @@ Create custom rules to run queries against the code stack as part of your invest
 
 You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:
 
-* [Snyk Web UI](../../../getting-started/explore-snyk-through-the-web-ui.md)
+* [Snyk Web UI](../../../getting-started/snyk-web-ui.md)
 * [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
 * [IDE](../../../integrate-with-snyk/use-snyk-in-your-ide/)
 
