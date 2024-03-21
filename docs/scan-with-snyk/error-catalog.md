@@ -448,34 +448,64 @@ If you are using `Directory.Build.props` files to determine the target framework
 
 #### Your global.json is targeting an outdated SDK version
 
-Snyk supports the latest channels of .NET which is currently [supported by Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet).
+Snyk supports the latest channels of .NET which is currently [supported by Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet), but does **not** guarantee to support all SDK versions within each currently supported channel.
 
-Within these supported channels, Snyk supports the latest SDK version currently under that channel.
+Within the supported channels, Snyk aims to support most, if not all, of the SDK versions currently released under the **newest** of the channels.
 
-This means, that if the versions released under the .NET 8 channel are `8.0.0`, `8.0.1`, `8.0.2` and `8.0.3`, Snyk will support only `8.0.3`.   
+If the channels currently supported by Microsoft are `8.0`, `7.0` and `6.0`, Snyk **will** support all of the *latest* SDKs released for these channels.
 
-Further, if the SDK versions released under `8.0.3` are: `8.0.203`, `8.0.202` and `8.0.103`, Snyk will only support `8.0.203`.
+If the SDK versions released under `8.0.3` are: `8.0.203`, `8.0.202` and `8.0.103`, Snyk **cannot** guarantee to support *all* of them, but makes an effort to do so. Snyk **will** support the latest of the SDK versions currently released by Microsoft. 
 
-This can lead to scan failures for customers that are pinning SDK versions in their `global.json` files without a [rollForward](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward) directive, such as:
+If channel `8.0` is the newest channel currently supported, Snyk **cannot** guarantee that multiple, specific SDK versions for older, still supported channels such as .NET 6. 
+
+### Example support matrix
+
+If:
+
+* .NET channels currently supported by Microsoft are `.NET 8.0`,  `.NET 7.0` and  `.NET 6.0`
+* Newest SDK version under `.NET 8.0` is `8.0.203`
+
+Then:
+
+| Channel |              SDK             | End-of-Life |  Supported  |
+|:-------:|:----------------------------:|:-----------:|:-----------:|
+|   8.0   | 8.0.203  (latest in channel) |      No     |     Yes     |
+|   8.0   |            8.0.202           |      No     |     Yes     |
+|   8.0   |            8.0.103           |      No     |     Yes     |
+|         |             (...)            |             |             |
+|   7.0   | 7.0.407  (latest in channel) |      No     |     Yes     |
+|   7.0   |            7.0.314           |      No     |      No     |
+|         |             (...)            |             |             |
+|   6.0   |            6.0.420           |      No     |     Yes     |
+|   6.0   |            6.0.128           |      No     |      No     |
+|         |             (..)             |             |             |
+|   5.0   |  5.0.408 (latest in channel) |     Yes     |      No     |
+|   5.0   |            5.0.214           |     Yes     |      No     |
+|         |             (..)             |             |             |
+
+### Workarounds
+
+This limitation can lead to scan failures for customers that are pinning SDK versions in their `global.json` files without a [rollForward](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward) directive, such as:
 ```json
 {
   "sdk": {
-    "version": "8.0.101"
+    "version": "6.0.101"
   }
 }
 ```
-Since as `8.0.1` is not the newest .NET version release patch, and `8.0.101` is not the latest SDK version released under that channel. 
+Since as `6.0` is not the newest .NET channel. 
 
-To solve it, we recommend that customers employ some flexibility in their `global.json` file by employing the `rollFoward` directive to at least be `latestPatch`, as such:
+To work around this issue, we recommend that customers employ some flexibility in their `global.json` file by employing the `rollFoward` directive to be `latestMajor`, as such:
 ```json
 {
   "sdk": {
-    "version": "8.0.101",
-    "rollForward": "latestPatch"
+    "version": "6.0.101",
+    "rollForward": "latestMajor"
   }
 }
 ```
-Which will allow Snyk to scan your code using a newer patch version of the SDK, despite your version pinning.
+
+Which will allow Snyk to scan your code using a newer version of the SDK, despite your version pinning.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -1702,4 +1732,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-03-20T10:29:06.648Z
+--- Generated at 2024-03-21T10:40:45.498Z
