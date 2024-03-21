@@ -8,7 +8,7 @@ Use the Snyk Web UI to run Snyk from any [supported browser](quickstart/#support
 
 The following Snyk functions are available with the Web UI:
 
-* [Explore the Dashboard](snyk-web-ui.md#dashboard)
+* [Explore the Dashboard](snyk-web-ui.md#explore-the-dashboard)
 * [View reports](snyk-web-ui.md#view-reports)
 * [Manage your Projects](snyk-web-ui.md#manage-your-projects)
 * [Manage your integrations](snyk-web-ui.md#manage-your-integrations)
