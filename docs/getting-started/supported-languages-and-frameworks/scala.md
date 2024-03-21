@@ -9,7 +9,7 @@ You might encounter false positives or false negatives for partially supported f
 ### Code analysis
 
 {% hint style="info" %}
-**Snyk Code for Kotlin**
+**Snyk Code for Scala**
 
 Interfile is supported, as the data flow is monitored between multiple files.
 {% endhint %}
