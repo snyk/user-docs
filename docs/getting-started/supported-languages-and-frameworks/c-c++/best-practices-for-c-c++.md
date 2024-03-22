@@ -63,7 +63,7 @@ snyk code test
 If you precompile components, the source code should still be present to get the best results and coverage.
 {% endhint %}
 
-For reporting, you can generate reports using the [snyk-to-html](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](broken-reference).
+For reporting, you can generate reports using the [snyk-to-html](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results).
 
 #### **Open Source libraries**
 

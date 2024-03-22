@@ -53,7 +53,7 @@ Use this guide to apply Snyk effectively in your technology stack.
 
 Snyk Code can analyze your C# code using IDE, CLI, and Git integration.&#x20;
 
-For framework support, see [Snyk Code - Supported languages and frameworks](broken-reference).
+For framework support, see [Snyk Code - Supported languages and frameworks](../).
 
 ## Nuget
 
@@ -150,7 +150,7 @@ Additional security topics for .Net developers
 The following is a collection of articles from the Snyk Security team and Developer Relations related to this ecosystem.&#x20;
 
 * [Snyk Blog](https://snyk.io/blog/)
-* [Snyk for .Net](broken-reference)
+* [Snyk for .Net](./)
 * [Best Practices for Containerizing .NET applications](https://snyk.io/blog/best-practices-for-containerizing-net-applications/)
 
 

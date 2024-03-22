@@ -131,7 +131,7 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 * [Create a Snyk account](../../quickstart/create-or-log-in-to-a-snyk-account.md)
 * [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-* [Set the default Organization for all Snyk tests](broken-reference) (code analysis)
+* [Set the default Organization for all Snyk tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis)
 
 #### Code analysis
 
@@ -145,8 +145,8 @@ To customize test options, run other commands, exclude directories and files, an
 
 * [Snyk CLI commands](../../../snyk-cli/commands/#available-commands)
 * [Exclude directories and files from the Snyk tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](broken-reference)
-* [Exporting the test results to a JSON or SARIF file](broken-reference)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
+* [Exporting the test results to a JSON or SARIF file](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
 
 #### Open source and licensing
 
