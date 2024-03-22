@@ -4,7 +4,7 @@ By default, the Snyk CLI connects to `https://snyk.io/api`. You can use the foll
 
 `SNYK_API`
 
-Sets the API host to use for Snyk requests. Useful for [regional hosting](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/diff/\~/changes/6358/more-info/data-residency-at-snyk#cli-and-ci-pipelines-urls), on-premise instances, or when using a proxy server. If set with the `http` protocol the CLI upgrades the requests to `https`, unless `SNYK_HTTP_PROTOCOL_UPGRADE` is set to `0`.
+Sets the API host to use for Snyk requests. Useful for [regional hosting](../../working-with-snyk/regional-hosting-and-data-residency.md#cli-and-ci-pipelines-urls), on-premise instances, or when using a proxy server. If set with the `http` protocol the CLI upgrades the requests to `https`, unless `SNYK_HTTP_PROTOCOL_UPGRADE` is set to `0`.
 
 `SNYK_HTTP_PROTOCOL_UPGRADE=0`
 
