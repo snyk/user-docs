@@ -1,6 +1,6 @@
 # Using Snyk API articles
 
-This group of pages provides detailed information about aspects of using the Snyk API. The following articles are included, listed here in alphabetical order by a **keyword**.
+These pages provide [scenarios for using Snyk APIs](../../snyk-api/using-snyk-api/scenarios-for-using-snyk-api.md) and articles with detailed information about aspects of using the Snyk API. The following articles are included, listed here in alphabetical order by a **keyword**.
 
 * [**Aggregated project issues** API returns an array of ignoreReasons](aggregated-project-issues-api-returns-an-array-of-ignorereasons.md)
 * [Determine why **API import targets** has failed](determine-why-api-import-targets-has-failed.md)
