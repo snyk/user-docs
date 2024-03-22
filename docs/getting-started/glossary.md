@@ -363,7 +363,7 @@ Incorporates the Snyk Intel Vulnerability DB: the Snyk database of vulnerabiliti
 
 ### Snyk Web UI
 
-The browser-based environment that provides users access to Snyk functions. See [Explore the Snyk Web UI](snyk-web-ui.md).
+The browser-based environment that provides users access to Snyk functions. See [Snyk Web UI](snyk-web-ui.md).
 
 ### Social Trends
 
@@ -408,3 +408,7 @@ A security vulnerability that was identified by Snyk. See [Manage vulnerabilitie
 ### Webhook
 
 A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code. See [Snyk Webhooks](../snyk-api-info/snyk-webhooks/).
+
+### Web UI
+
+See [Snyk Web UI](glossary.md#snyk-web-ui).
