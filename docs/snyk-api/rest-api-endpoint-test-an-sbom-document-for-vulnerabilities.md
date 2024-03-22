@@ -1,4 +1,4 @@
-# REST API endpoints: Test an SBOM document for vulnerabilities
+# REST API endpoint: Test an SBOM document for vulnerabilities
 
 {% hint style="warning" %}
 **Release status and feature availability**
@@ -18,9 +18,9 @@ Snyk identifies components within the SBOM by their [package URL](https://github
 
 Follow these steps to [create an SBOM test run](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) and view the results.
 
-1. [Create the test by sending an SBOM to Snyk.](rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md#create-a-test-by-sending-an-sbom-to-snyk)
-2. [Check the status of the test](rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md#check-the-status-of-the-test-optional).
-3. [View the test results when the test is complete.](rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md#view-results-of-the-test)
+1. [Create the test by sending an SBOM to Snyk.](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#create-a-test-by-sending-an-sbom-to-snyk)
+2. [Check the status of the test](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#check-the-status-of-the-test-optional).
+3. [View the test results when the test is complete.](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#view-results-of-the-test)
 
 ## How to test an SBOM document
 

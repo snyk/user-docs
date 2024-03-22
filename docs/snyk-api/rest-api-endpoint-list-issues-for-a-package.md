@@ -210,7 +210,7 @@ Ensure that the purl specification you provided is a valid purl. For more inform
 
 **Unsupported Ecosystem**\
 400\
-Ensure that the package type is one of the [supported purl types](list-issues-for-a-package-endpoint.md#supported-purl-types).
+Ensure that the package type is one of the [supported purl types](rest-api-endpoint-list-issues-for-a-package.md#supported-purl-types).
 
 **Package requested without namespace**\
 400\

@@ -30,7 +30,7 @@ Not all features follow all these stages, and timelines for each feature to move
 ### Snyk features in Early Access
 
 * [Snyk GitHub Cloud App](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
-* [REST API endpoints: Test an SBOM document for vulnerabilities](../snyk-api/rest-api-endpoints-test-an-sbom-document-for-vulnerabilities.md)
+* [REST API endpoints: Test an SBOM document for vulnerabilities](../snyk-api/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 * [Custom rules](../scan-with-snyk/snyk-code/custom-rules/)
 * [Risk Score](../manage-risk/prioritize-your-issues/risk-score.md)
 * [Reachable vulnerabilities](../manage-risk/prioritize-your-issues/reachable-vulnerabilities.md)

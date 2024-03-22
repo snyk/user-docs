@@ -17,7 +17,7 @@ Snyk provides full documentation for the following key Snyk Tools:
 * [snyk-filter (docs)](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md): Takes the JSON output from the Snyk CLI and applies custom filtering of the results. Repo: [snyk-filter](https://github.com/snyk-tech-services/snyk-filter)
 * [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md): Snyk JSON to HTML Mapper takes the JSON output from `snyk test --json` and creates a local HTML file displaying the vulnerabilities discovered. Repo: [snyk-to-html](https://github.com/snyk/snyk-to-html)
 * [jira-tickets-for-new-vulns (docs)](tool-jira-tickets-for-new-vulns.md): Sync your Snyk-monitored Projects and auto-open JIRA tickets for issues. Repo: [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns)
-* [snyk-scm-contributors-count (docs)](snyk-scm-contributors-count-cli-tool/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count).
+* [snyk-scm-contributors-count (docs)](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count).
 
 ## Additional Snyk Tools
 
@@ -43,4 +43,4 @@ Refer to the repositories for instructions on how to use the following additiona
 
 ## Tool ideas
 
-Do you have an idea for a tool? If so, check out [Snyk Apps](../snyk-apps/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io/hc/en-us/) with questions.
+Do you have an idea for a tool? If so, check out [Snyk Apps](../../snyk-api-info/snyk-apps/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io/hc/en-us/) with questions.

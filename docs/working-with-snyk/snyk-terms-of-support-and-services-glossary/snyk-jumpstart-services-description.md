@@ -79,7 +79,7 @@ The Snyk delivery method is designed to ensure rapid value realization with Snyk
 
 #### Repository import
 
-The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) either through the UI import functionality or through the [API Import tool](../../snyk-api-info/other-tools/tool-snyk-api-import/).
+The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) either through the UI import functionality or through the [API Import tool](../../snyk-api/snyk-tools/tool-snyk-api-import/).
 
 #### SCM integration settings
 
@@ -121,7 +121,7 @@ The Snyk delivery method is tailored to ensure rapid value realization with Snyk
 
 #### Repository import
 
-The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) either through the UI import functionality or through the [API Import tool](../../snyk-api-info/other-tools/tool-snyk-api-import/). Repos will be imported into Snyk Organizations that either mirror the Customer’s SCM organization structure or through custom Organizations configured in the API-import script.&#x20;
+The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) either through the UI import functionality or through the [API Import tool](../../snyk-api/snyk-tools/tool-snyk-api-import/). Repos will be imported into Snyk Organizations that either mirror the Customer’s SCM organization structure or through custom Organizations configured in the API-import script.&#x20;
 
 #### SCM integration settings
 

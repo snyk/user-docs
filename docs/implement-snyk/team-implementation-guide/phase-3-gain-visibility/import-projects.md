@@ -36,7 +36,7 @@ For hundreds or thousands of repositories:
 
 * At scale, Snyk recommends using the API. APIs are available with the Snyk Enterprise plan.
   * Use the [Snyk API](../../../snyk-api/) to import your Projects. This leverages an existing source control integration and can be used to automate processes.
-  * The  [snyk-api-import](../../../snyk-api-info/other-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
+  * The  [snyk-api-import](../../../snyk-api/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
 
 ## Snyk CLI
 
