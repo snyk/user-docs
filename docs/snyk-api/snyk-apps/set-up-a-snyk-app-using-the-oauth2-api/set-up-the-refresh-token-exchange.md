@@ -1,6 +1,6 @@
 # Set up the refresh token exchange
 
-As the `access_token` will expire in a short time, the App will need to frequently request a new one using the `refresh_token`. This must be done while the `refresh_toke`**n** itself is still valid.
+As the `access_token` will expire in a short time, the App will need to frequently request a new one using the `refresh_token`. This must be done while the `refresh_token` itself is still valid.
 
 To exchange for a fresh `access_token`, make a POST request to the token endpoint (more details found in the [API documentation](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh)):
 
