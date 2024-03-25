@@ -25,7 +25,7 @@ Currently, you can use the Backstage catalog file for the following GitHub SCM i
 5. Select at least one attribute you want to add to Snyk AppRisk.
 
 {% hint style="info" %}
-If you are not changing the text field, Snyk AppRisk uses the default field from the Backstage `catalog.yaml` file.
+Snyk AppRisk parses the fields of the detected file using the default field names unless an alternate field name is specified.
 {% endhint %}
 
 6. Click the **Done** button.
@@ -72,18 +72,18 @@ In the Asset Attributes tab only the selected attributes should be added as meta
 
 ```
 {
-name:"spring.goof",
-repositoryURL:"https://github.com/snyk/spring.goof.git",
-context: [
-	data: {
-		name: "super-duper-component",
-title: "Super Duper Component",
-	application: "super-duper-app",
-	lifecycle: "production",
-	owner: "super-duper-team",
-	category: "service",
-source: "Backstage"
-}]
+    name:"spring.goof",
+    repositoryURL:"https://github.com/snyk/spring.goof.git",
+    context:[
+             {
+              name: "super-duper-component",
+              title: "Super Duper Component",
+	      application: "super-duper-app",
+	      lifecycle: "production",
+	      owner: "super-duper-team",
+	      category: "service",
+              source: "Backstage"
+              }]
 }
 ```
 
@@ -97,7 +97,7 @@ The following list describes all possible backstage attributes that you can choo
 
 * **Application** - represents a group of components that serve the same purpose.&#x20;
 * **Owner** - specifies the team owning the repository.
-* **Catalog name** - the name of the catalog.
-* **Title** - the name of the component.
+* **Catalog name** - the metadata name.
+* **Title** - a name to display for the entity instead of the property. Is an alternative to the metadata name, when the catalog name is too hard to read.
 * **Category** - represents the classification of the repository. The Organization can choose any name or text.
 * **Lifecycle** - specifies the lifecycle state of the component, for example production, experimental, deprecated.
