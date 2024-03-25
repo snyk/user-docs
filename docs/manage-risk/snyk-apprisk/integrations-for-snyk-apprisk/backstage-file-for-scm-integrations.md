@@ -2,9 +2,7 @@
 
 Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk AppRisk.
 
-{% hint style="info" %}
-Currently, you can use the Backstage catalog file for the following GitHub SCM integrations. Soon, this integration will support GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM.
-{% endhint %}
+You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
 
 ## Prerequisites
 
