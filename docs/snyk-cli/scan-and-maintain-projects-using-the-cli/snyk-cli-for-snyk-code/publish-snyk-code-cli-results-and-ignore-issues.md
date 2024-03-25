@@ -1,5 +1,13 @@
 # Publish Snyk Code CLI results and ignore issues
 
+{% hint style="warning" %}
+**Release status and feature availability**
+
+Publishing and ignoring CLI results is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
+
+The minimum supported CLI version is v1.1194.0.
+{% endhint %}
+
 This page explains how you can publish Snyk Code results to a Snyk Project with or without using an integration.
 
 You can [publish CLI results to a Snyk Code Project](publish-snyk-code-cli-results-and-ignore-issues.md#publish-cli-results-to-a-snyk-code-project) created using the CLI. Run Snyk Code in the CI/CD and upload results to a Snyk Project for reports. When you do this:
@@ -22,13 +30,7 @@ See the CLI help for more information about the `snyk code test` command, includ
 
 ## **Publish CLI results to a Snyk Code Project**
 
-{% hint style="warning" %}
-**Release status and feature availability**
-
-Publishing and ignoring CLI results is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
-
-The minimum supported CLI version is v1.1194.0.
-{% endhint %}
+Note that this feature is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta). The minimum supported CLI version is v1.1194.0.
 
 Using Snyk Code through the CLI allows you to publish test results of local code to a Snyk Project in the Web UI. Future CLI tests of this Project will respect issues that were ignored in the Web UI.
 
@@ -84,12 +86,7 @@ This error indicates that the contents of the scanned Project exceed the 6MB lim
 
 ## Use the CLI to trigger a test for a specific commit to an existing Snyk Code Git repository Project
 
-{% hint style="info" %}
-**Feature availability**\
-Publishing and ignoring CLI issues in SCM Projects is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available only by invitation from Snyk.
-
-The minimum supported CLI version is 1.1194.0.
-{% endhint %}
+Note that this feature is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta). The minimum supported CLI version is v1.1194.0.
 
 When you are using Snyk Code in the CI/CD, you can specify an existing Git repository Code Analysis Project along with the commit ID to trigger a test for which the results will be saved in the Web UI. The Web UI will also display Code Snippets that provide [Snyk Code Data flow](broken-reference). Ignores that have been added to the Web UI Project will be respected in this test.
 
@@ -107,6 +104,8 @@ snyk code test --report --project-id="<PROJECT_UUID>" --commit-id="<COMMIT_ID>"
 ```
 
 ## &#x20;**Ignore CLI results for Snyk Code**
+
+Note that this feature is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta). The minimum supported CLI version is v1.1194.0.
 
 You can ignore issues in the Web UI. The ignores will be used both to [publish CLI results to a Snyk Code Project](publish-snyk-code-cli-results-and-ignore-issues.md#publish-cli-results-to-a-snyk-code-project) and in [using the CLI to trigger a test for a specific commit to an existing Snyk Code Git repository Project](publish-snyk-code-cli-results-and-ignore-issues.md#use-the-cli-to-trigger-a-test-for-a-specific-commit-to-an-existing-snyk-code-git-repository-project).
 
