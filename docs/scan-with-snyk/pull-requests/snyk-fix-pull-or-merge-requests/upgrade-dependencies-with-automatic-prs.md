@@ -8,7 +8,7 @@ After you import Git repositories, Snyk continuously monitors these repositories
 
 Snyk supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven Central repositories with the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, and Bitbucket Cloud.
 
-You can also use this feature with Snyk Broker. To use this feature, you must upgrade Snyk Broker to v. 1.4.55.0 or later. For more information, see [Upgrade the Snyk Broker client](../../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/upgrade-the-snyk-broker-client.md).
+You can also use this feature with Snyk Broker. To use this feature, you must upgrade Snyk Broker to v. 1.4.55.0 or later. For more information, see [Upgrade the Snyk Broker client](../../../enterprise-configuration/snyk-broker/upgrade-the-snyk-broker-client.md).
 
 ## Automatic dependency (upgrade) PRs
 

@@ -25,7 +25,7 @@ The Broker Client provides the Agent with the connection details. The Agent uses
 
 The brokered communication happens when a Broker Client connects (using your Broker ID) to a Broker server that runs within the Snyk environment.
 
-For more details, see [Snyk Broker - Container Registry Agent](../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/snyk-broker-container-registry-agent/).
+For more details, see [Snyk Broker - Container Registry Agent](../../enterprise-configuration/snyk-broker/snyk-broker-container-registry-agent/).
 
 ## **Supported container registries**
 

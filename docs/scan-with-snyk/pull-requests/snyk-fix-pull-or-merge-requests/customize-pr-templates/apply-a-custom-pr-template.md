@@ -87,11 +87,11 @@ If you want to use multiple repositories for a custom template, add the customiz
 
 ## Broker configurations for fetching PR templates
 
-If you use  [Snyk Broker](../../../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/), you must allow access to these file locations in the `accept.json` [configuration of your Broker client](../../../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-with-the-code-snippets-display.md). The following describes the additional rules that should be added for each git integration.
+If you use  [Snyk Broker](../../../../enterprise-configuration/snyk-broker/), you must allow access to these file locations in the `accept.json` [configuration of your Broker client](../../../../enterprise-configuration/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-with-the-code-snippets-display.md). The following describes the additional rules that should be added for each git integration.
 
 ### Github and GitHub Enterprise
 
-Under the list of `private` rules add the following input. For more information, see [Configure Broker to be used for GitHub Enterprise](../../../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md#configure-broker-to-be-used-for-github-enterprise) in the instructions for installing Broker for GitHub Enterprise.
+Under the list of `private` rules add the following input. For more information, see [Configure Broker to be used for GitHub Enterprise](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md#configure-broker-to-be-used-for-github-enterprise) in the instructions for installing Broker for GitHub Enterprise.
 
 ```json
 {
@@ -110,7 +110,7 @@ Under the list of `private` rules add the following input. For more information,
 
 ### Azure repos
 
-Under the list of `private` rules, add the following two elements to the existing `valid.values` array for file content. For more information, see [Configure Broker to be used with Azure Repos](../../../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md#configure-broker-to-be-used-with-azure-repos) in the instructions for installing Broker for Azure repos.
+Under the list of `private` rules, add the following two elements to the existing `valid.values` array for file content. For more information, see [Configure Broker to be used with Azure Repos](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md#configure-broker-to-be-used-with-azure-repos) in the instructions for installing Broker for Azure repos.
 
 ```json
 {
@@ -129,7 +129,7 @@ Under the list of `private` rules, add the following two elements to the existin
 
 ### BitBucket Server
 
-Under the list of `private` rules, add the following input. For more information, see [Bitbucket Server/Data Center - environment variables for Snyk Broker](../../../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker.md) in the instructions for installing Broker for BitBucket Server.
+Under the list of `private` rules, add the following input. For more information, see [Bitbucket Server/Data Center - environment variables for Snyk Broker](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker.md) in the instructions for installing Broker for BitBucket Server.
 
 ```json
 {
@@ -158,7 +158,7 @@ Under the list of `private` rules, add the following input. For more information
 
 ### GitLab
 
-Under the list of `private` rules, add the following input. For more information, see [GitLab - environment variables for Snyk Broker](../../../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/install-and-configure-snyk-broker/gitlab-prerequisites-and-steps-to-install-and-configure-broker/gitlab-environment-variables-for-snyk-broker.md) in the instructions for installing Broker for GitLab.
+Under the list of `private` rules, add the following input. For more information, see [GitLab - environment variables for Snyk Broker](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/gitlab-prerequisites-and-steps-to-install-and-configure-broker/gitlab-environment-variables-for-snyk-broker.md) in the instructions for installing Broker for GitLab.
 
 ```json
 {

@@ -60,7 +60,7 @@ If you answered Yes to any of the above questions, then you need to deploy a new
 Snyk recommends creating a new Organization in Snyk specifically for the Snyk AppRisk Broker.
 {% endhint %}
 
-Navigate to the [Snyk Broker - AppRisk](../../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/snyk-broker-apprisk.md) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.\
+Navigate to the [Snyk Broker - AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.\
 
 
 ## Features
