@@ -7,12 +7,12 @@ You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBuck
 ## Prerequisites
 
 * Configured SCM integration for Snyk AppRisk.
-* The `catalog.yaml` file is available in the root folder or your Project.&#x20;
+* The `catalog-info.yaml` file is available in the root folder or your Project.&#x20;
 
 ## Required Parameters
 
 * A configured SCM integration.&#x20;
-* The `catalog.yaml` file from your Project.
+* The `catalog-info.yaml` file from your Project.
 
 ## Integration Hub setup
 
@@ -30,7 +30,7 @@ Snyk AppRisk parses the fields of the detected file using the default field name
 
 <figure><img src="../../../.gitbook/assets/image (364).png" alt="Integration Hub - Backstage setup"><figcaption><p>Integration Hub - Backstage setup</p></figcaption></figure>
 
-After you finish configuring the Backstage catalog, Snyk AppRisk starts enriching your repository assets with the data found in the `catalog.yaml` file.
+After you finish configuring the Backstage catalog, Snyk AppRisk starts enriching your repository assets with the data found in the `catalog-info.yaml` file.
 
 ## Backstage catalog in Asset Inventory
 
@@ -41,14 +41,14 @@ Components have several attributes and most of them are optional:
 * `spec.type` (mandatory) - represents the classification of the repository.&#x20;
 * `spec.owner` (mandatory) - represents the team owning the repository.
 * `spec.lifecycle` - represents the lifecycle state of the component, for example `production`, `experimental`, `deprecated`.
-* `spec.system` (optional) - represents a group of components that serve the same purpose. This concept is reffer to as “Application”.
+* `spec.system` (optional) - represents a group of components that serve the same purpose. This concept is referred to as “Application”.
 * `Metadata.name` (mandatory) - represents the name of the component.
 * `Metadata.title` (optional) - represents the name of the component.
 
 The Backstage data is dynamic and may change over time:
 
-* If new commits or updates are made on the `catalog.yaml` file, then Snyk AppRisk updates the asset attribute for that specific repository asset.
-* If the`catalog.yaml` file is removed from the repository, then Snyk AppRisk deletes the asset attribute from that specific repository assets.
+* If new commits or updates are made on the `catalog-info.yaml` file, then Snyk AppRisk updates the asset attribute for that specific repository asset.
+* If the`catalog-info.yaml` file is removed from the repository, then Snyk AppRisk deletes the asset attribute from that specific repository assets.
 
 ### Inventory menu
 
@@ -96,6 +96,6 @@ The following list describes all possible backstage attributes that you can choo
 * **Application** - represents a group of components that serve the same purpose.&#x20;
 * **Owner** - specifies the team owning the repository.
 * **Catalog name** - the metadata name.
-* **Title** - a name to display for the entity instead of the property. Is an alternative to the metadata name, when the catalog name is too hard to read.
+* **Title** - a name to display for the entity instead of the property. It is an alternative to the metadata name, when the catalog name is too hard to read.
 * **Category** - represents the classification of the repository. The Organization can choose any name or text.
 * **Lifecycle** - specifies the lifecycle state of the component, for example production, experimental, deprecated.
