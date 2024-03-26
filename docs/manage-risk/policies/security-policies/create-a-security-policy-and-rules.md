@@ -1,6 +1,6 @@
 # Create a security policy and rules
 
-To create a new security policy, navigate to **Policies** in your Group menu, and in the Policies manager, expand the **Security policies** category and click **Add new policy**. For details, see [View policies](../view-policies.md).
+To create a new security policy, navigate to **Policies** in your Group menu, and in the Policies manager, expand the **Security policies** category and click **Add new policy**. For details, see [View policies](../view-create-and-modify-policies.md).
 
 <figure><img src="../../../.gitbook/assets/screenshot_2020-10-20_at_10.01.49_am.png" alt="Security policies category expanded"><figcaption><p>Security policies category expanded</p></figcaption></figure>
 
