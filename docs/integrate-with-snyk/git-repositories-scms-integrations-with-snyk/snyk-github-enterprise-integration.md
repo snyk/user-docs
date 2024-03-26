@@ -12,7 +12,7 @@ GitHub Enterprise integration is available to Snyk Enterprise plan customers. If
 ## Prerequisites for Snyk GitHub Enterprise integration
 
 * Internet-accessible repositories.\
-  If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-configuration/snyk-broker/). This requires creating a startup script. For the script and instructions, see [GitHub Enterprise - install and configure using Docker](../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md).
+  If your repositories are not internet-accessible, you must use [Snyk Broker](../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/). This requires creating a startup script. For the script and instructions, see [GitHub Enterprise - install and configure using Docker](../../getting-started-with-the-snyk-enterprise-plan/snyk-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md).
 * A public or private GitHub project.
 
 {% hint style="info" %}
