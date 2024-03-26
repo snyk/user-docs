@@ -153,7 +153,7 @@ Service accounts are available only to Snyk Enterprise customers. Free and Team 
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Users with the Group-level View, Create, and Edit service account permissions can change the assigned role and related permissions of a service account. For detailed steps, see [Assign roles and permissions to a service account](../../enterprise-configuration/service-accounts/#assign-roles-and-permissions-to-a-service-account).
+Users with the Group-level View, Create, and Edit service account permissions can change the assigned role and related permissions of a service account. For detailed steps, see [Assign roles and permissions to a service account](../../enterprise-configuration-and-implementation/service-accounts/#assign-roles-and-permissions-to-a-service-account).
 
 ## Change the role of a user
 

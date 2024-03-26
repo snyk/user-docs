@@ -18,7 +18,7 @@ The parent image used to construct a container image, usually defined in the `FR
 
 ### Broker
 
-See [Snyk Broker](../enterprise-configuration/snyk-broker/).
+See [Snyk Broker](../enterprise-configuration-and-implementation/snyk-broker/).
 
 ### Build System
 
@@ -330,7 +330,7 @@ Snyk Apps are the modern and preferred way to build integrations with Snyk, expo
 
 ### Snyk Broker
 
-A client/server system that serves as an agent or proxy, allowing Snyk to scan private customer environments: Jira, code repositories, or container registries. Snyk Broker relays messages and allows users to filter which messages are allowed through,  for example, allowing users to expose only some GitHub APIs to Snyk. See [Snyk Broker](../enterprise-configuration/snyk-broker/).
+A client/server system that serves as an agent or proxy, allowing Snyk to scan private customer environments: Jira, code repositories, or container registries. Snyk Broker relays messages and allows users to filter which messages are allowed through,  for example, allowing users to expose only some GitHub APIs to Snyk. See [Snyk Broker](../enterprise-configuration-and-implementation/snyk-broker/).
 
 ### Snyk CLI
 

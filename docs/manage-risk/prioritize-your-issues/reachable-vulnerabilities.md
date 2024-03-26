@@ -33,7 +33,7 @@ The following integrations are supported for Reachable Vulnerabilities analysis:
 * [Bitbucket Server](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md) (Currently in Early Access)
 * [GitLab](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-gitlab-integration.md) (Currently in Early Access)
 * [Azure Repos](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md) (Currently in Early Access)
-* [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md) (Currently in Early Access)
+* [Brokered connections](../../enterprise-configuration-and-implementation/snyk-broker/connections-with-snyk-broker.md) (Currently in Early Access)
 
 {% hint style="warning" %}
 **Release status**&#x20;
@@ -49,7 +49,7 @@ Reachable vulnerability analysis using the Snyk CLI, other Git integrations, and
 
 ## **Enabling Reachability for brokered connections**
 
-If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See the [Snyk Code - Clone capability with Broker for Docker](../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md), the [Broker rules for Snyk Code](../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/broker-rules-for-snyk-code.md), and the [Snyk Broker - Code Agent](../../enterprise-configuration/snyk-broker/snyk-broker-code-agent/) documentation for configuration details when the Broker is used with Snyk Code.&#x20;
+If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See the [Snyk Code - Clone capability with Broker for Docker](../../enterprise-configuration-and-implementation/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md), the [Broker rules for Snyk Code](../../enterprise-configuration-and-implementation/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/broker-rules-for-snyk-code.md), and the [Snyk Broker - Code Agent](../../enterprise-configuration-and-implementation/snyk-broker/snyk-broker-code-agent/) documentation for configuration details when the Broker is used with Snyk Code.&#x20;
 
 ## Using Reachability
 
