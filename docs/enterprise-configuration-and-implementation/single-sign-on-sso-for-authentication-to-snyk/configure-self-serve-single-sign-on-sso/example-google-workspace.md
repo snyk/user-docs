@@ -25,7 +25,7 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
     <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (1).png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>
 6.  Click on **SSO**, scroll down to step 2, and paste the Google SSO URL from step 4 into **Sign in URL** and the certificate in your text editor into **X509 signing certificate**.\
     Add the domain name(s) you are configuring this connection for in **Email domains and subdomains that need SSO access**.\
-    Save your modifications
+    Verify if an **IdP-initiated workflow** should be enabled and then save your modifications
 
     <figure><img src="../../../.gitbook/assets/6 (2) (1) (1) (1) (1).png" alt="Enter details from Google Workspace"><figcaption><p>Enter details from Google Workspace</p></figcaption></figure>
 7.  Scroll up to step 1 and copy the **Entity ID** and **ACS URL**.

@@ -40,7 +40,8 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
 12. Return to Azure AD and click **Download** next to **Certificate (Base64)**.
 
     <figure><img src="../../../.gitbook/assets/13.png" alt="Download SAML Certificate (Base 64)"><figcaption><p>Download SAML Certificate (Base 64)</p></figcaption></figure>
-13. Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection. Finally, click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.
+13. Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection.\
+    Finally, verify if an **IdP-initiated workflow** should be enabled and then click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.
 
     <figure><img src="../../../.gitbook/assets/14.png" alt="Enter certificate and domains supported, set connection"><figcaption><p>Enter certificate and domains supported, set connection</p></figcaption></figure>
 14. Decide how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**. Finally, modify the **profile attributes** if your settings in Azure deviate from the default; then click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).\

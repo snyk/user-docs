@@ -52,7 +52,8 @@ Then, assign this role to all the users that should be able to use Snyk.
 
 <figure><img src="https://lh4.googleusercontent.com/jZL7kElRSz3PX4LmKkCH1k5vYNCgj2BHqlGHU3dNmJRPIJwQjyMFchWSc6et-m7qeVv2QELr_OWH0IJok0Xwn8OifxWjdfkYqiD2YYs1ubmLBQL2ZM8XAOiPKadNfMSLYoOfMEQ4-JsVCQ0wo0YW4b8" alt="Create Snyk role"><figcaption><p>Create Snyk role</p></figcaption></figure>
 
-10\. Go back to the Snyk portal, scroll to step 2, make a note ofenter the details from step 8, including the domain(s) you wish to use over the SSO connection, and click **Create Auth0 connection**.
+10\. Go back to the Snyk portal, scroll to step 2, make a note ofenter the details from step 8, including the domain(s) you wish to use over the SSO connection.\
+Verify if an **IdP-initiated workflow** should be enabled and then click **Create Auth0 connection**.
 
 <figure><img src="https://lh6.googleusercontent.com/N_sEZ9IrkaSDpmkYVGhHTiSUf1kVL3P1VWBjBhIJfZgraVdifO8zFfS9Y6yQYjNlc5ic9mSimYGfw07-cm7LsweGdlywAAv99LqSz5964wne9EOjB_PvPuE8yhyLf3kvmKhRU6vQKhVsKxiGNR9Mb_E" alt="Enter SAML attributes in the Snyk portal"><figcaption><p>Enter SAML attributes in the Snyk portal</p></figcaption></figure>
 

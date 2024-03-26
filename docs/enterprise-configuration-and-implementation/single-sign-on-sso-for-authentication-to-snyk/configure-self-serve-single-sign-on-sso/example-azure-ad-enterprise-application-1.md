@@ -30,7 +30,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 
     <figure><img src="../../../.gitbook/assets/single-sign-on-URL-field.png" alt="Paste Sign in URL"><figcaption><p>Paste Sign in URL</p></figcaption></figure>
 9.  Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection.\
-    Finally, click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.&#x20;
+    Finally, verify if an **IdP-initiated workflow** should be enabled and then click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.&#x20;
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-09-05 at 11.01.53 AM.png" alt="Enter the Ping Identity details"><figcaption><p>Enter the Ping Identity details</p></figcaption></figure>
 10. In Ping Identity, select **Attribute mappings** and click the pencil to edit.
