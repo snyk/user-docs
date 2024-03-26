@@ -36,6 +36,6 @@ Custom Mapping is available only for Enterprise plans.
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-You can provision user accounts with customized rules using the [Custom Mapping Option](custom-mapping-option/).
+You can provision user accounts with customized rules using the [Custom Mapping Option](sso-custom-mapping-option/).
 
 You can configure SSO differently for each of your different Groups. You can also map users to a specific Organization and role assignment based on information from the identity provider.
