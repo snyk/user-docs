@@ -18,7 +18,7 @@ Snyk policies contain rules to define how Snyk behaves when encountering specifi
 
 </div>
 
-Using the Snyk Policy Manager, you can [view](view-create-and-modify-policies.md), [create, and edit](broken-reference) policies.
+Using the Snyk Policy Manager, you can view, create, and edit policies. For details, see [View, create, and modify policies](view-create-and-modify-policies.md).
 
 ## Benefits of Snyk policies
 
