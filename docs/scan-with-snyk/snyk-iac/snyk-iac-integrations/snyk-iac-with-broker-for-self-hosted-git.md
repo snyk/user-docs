@@ -4,4 +4,4 @@ Snyk Broker enables you to connect your local Git server to Snyk if the Git serv
 
 By default, Snyk Broker allows only information for Snyk Open Source and Docker files to go through. If you also want to analyze Infrastructure as Code files, such as `.tf` or `.yaml`, you must configure the Broker to do so.
 
-For details, see [Snyk Broker - Infrastructure as Code detection](../../../enterprise-configuration-and-implementation/snyk-broker/snyk-broker-infrastructure-as-code-detection/). For more information about Snyk Broker, see the [Broker](../../../enterprise-configuration-and-implementation/snyk-broker/) docs.
+For details, see [Snyk Broker - Infrastructure as Code detection](../../../enterprise-configuration/snyk-broker/snyk-broker-infrastructure-as-code-detection/). For more information about Snyk Broker, see the [Broker](../../../enterprise-configuration/snyk-broker/) docs.

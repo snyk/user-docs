@@ -1,4 +1,4 @@
-# Example: Okta SAML Application
+# Okta SAML Application setup
 
 This example shows setting up an Okta SAML application and connecting this to Snyk to facilitate SSO. To configure your Okta to use SSO with Snyk, you need an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
 

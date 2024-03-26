@@ -30,4 +30,4 @@ For more articles on using the Snyk API, see the following:
 * [Audit logs](../user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 * [Bazel](../../getting-started/supported-languages-and-frameworks/bazel.md)
 * [User management with the Snyk API](../user-management-with-the-snyk-api/)
-* [Manage service accounts using the Snyk API](../../enterprise-configuration-and-implementation/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+* [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md)

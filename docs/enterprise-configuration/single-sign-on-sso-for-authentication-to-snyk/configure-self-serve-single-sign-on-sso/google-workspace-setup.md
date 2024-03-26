@@ -1,4 +1,4 @@
-# Example: Google Workspace
+# Google Workspace setup
 
 This example shows setting up an Google Workspace SAML application and connecting it to Snyk to facilitate SSO.
 

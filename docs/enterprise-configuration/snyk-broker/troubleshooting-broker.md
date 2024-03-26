@@ -30,6 +30,10 @@ To keep the logs concise in normal operation, Snyk produces minimal information 
 
 When you set `LOG_INFO_VERBOSE="true"`, the environment variable will add the headers in these log lines without requiring that you use debug.
 
+{% hint style="danger" %}
+If you override the default logging, some logs may be provided by other processes such as API requests, and may list credentials. Before you send any Broker logs with increased logging enabled, check for any passwords or tokens and redact them in bulk.
+{% endhint %}
+
 ## Monitoring: Healthcheck
 
 Broker exposes an endpoint at `/healthcheck`, which can be used to monitor the health of the running application. This endpoint responds with status code `200 OK` when the internal request is successful and returns `{ ok: true }` in the response body.

@@ -1,4 +1,4 @@
-# Step 3: Creating a network for the Broker Client and Code Agent communication
+# Create network for Broker client and Code Agent communication
 
 To run Snyk Broker with the Code Agent, you must establish a network connection between them. To do this you can create a Docker bridge network as explained here.
 

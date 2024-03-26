@@ -1,4 +1,4 @@
-# Example: Ping Identity
+# Ping Identity setup
 
 This page explains how to set up a Ping Identity Application and connect it to Snyk to facilitate SSO.
 

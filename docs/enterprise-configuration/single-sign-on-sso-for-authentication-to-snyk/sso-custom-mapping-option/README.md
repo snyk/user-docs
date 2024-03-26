@@ -1,4 +1,4 @@
-# Custom Mapping Option
+# SSO Custom Mapping Option
 
 Custom mappings allows you to dynamically assign users to your Snyk Groups and Organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model.
 

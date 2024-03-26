@@ -1,4 +1,4 @@
-# Step 5.1: Downloading or Updating the Snyk Broker Client – Docker image
+# Download or update the Snyk Broker client Docker image
 
 {% hint style="info" %}
 Before downloading the Broker Client Docker image, verify that your machine can run Docker containers.
