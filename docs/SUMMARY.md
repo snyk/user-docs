@@ -38,7 +38,6 @@
   * [Snyk Release Process](getting-started/snyk-release-process.md)
   * [Snyk Learn](getting-started/snyk-learn.md)
   * [Glossary](getting-started/glossary.md)
-* [Enterprise configuration](enterprise-configuration.md)
 * [Enterprise configuration and implementation](enterprise-configuration/README.md)
   * [Authentication for third-party tools](enterprise-configuration/authentication-for-third-party-tools.md)
   * [Single Sign-On (SSO) for authentication to Snyk](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/README.md)
