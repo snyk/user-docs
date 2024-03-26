@@ -74,7 +74,7 @@ See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-spec
 
 ## US region URLs
 
-The following are the default URLs for Snyk features in the US region. No configuration is required to use these URLs. For regional hosting, configuration is required. See [Login and Web UI URLs](regional-hosting-and-data-residency.md#login-and-web-ui-urls).
+The following are the default URLs for Snyk features in the US region. No configuration is required to use these URLs. For hosting in non-default regions, configuration is required. See [Login and Web UI URLs](regional-hosting-and-data-residency.md#login-and-web-ui-urls).
 
 US login and Web UI\
 https://app.snyk.io
