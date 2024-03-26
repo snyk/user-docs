@@ -16,13 +16,13 @@ By default, customers are hosted in the US region.
 
 ## **What is data residency?**
 
-Data residency allows you to control what region Snyk hosts a selected subset of your data in. For more information, see [Regional and global data](regional-hosting-and-data-residency.md#regional-and-global-data).
+Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For more information, see [Regional and global data](regional-hosting-and-data-residency.md#regional-and-global-data).
 
-Data residency is available for [Snyk Open Source](../scan-with-snyk/snyk-open-source/), [Snyk Code](../scan-with-snyk/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/), and [Snyk Infrastructure as Code (IaC)](../scan-with-snyk/snyk-iac/scan-your-iac-source-code/).
+Data residency is available for [Snyk Open Source](../scan-with-snyk/snyk-open-source/), [Snyk Code](../scan-with-snyk/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/), and [Snyk IaC](../scan-with-snyk/snyk-iac/).
 
 ## **How does data residency work?**
 
-During your system onboarding, you can work with your account team to select a hosting region.
+During your system onboarding, you can work with your account team to select a hosting region. When using Snyk features, you will use specific URLs that differ from the default US region URLs.
 
 {% hint style="warning" %}
 After you select a region, the data in that region cannot be migrated to another region. Moving to a new region requires a complete re-onboarding.
@@ -72,13 +72,37 @@ See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-spec
 {% endtab %}
 {% endtabs %}
 
-## Regional multi and single-tenant hosting notes
+## US region URLs
 
-Snyk offers almost all the same features, support, and performance in the regional multi and single-tenant regions as in the US region. For an up-to-date overview of feature parity across regions, reach out to your account team.
+The following are the default URLs for Snyk features in the US region. No configuration is required to use these URLs. For regional hosting, configuration is required. See [Login and Web UI URLs](regional-hosting-and-data-residency.md#login-and-web-ui-urls).
 
-### EU and AU datacenter account creation
+US login and Web UI\
+https://app.snyk.io
 
-EU and AU datacenter Snyk accounts are available only with the purchase of an [Enterprise plan](https://snyk.io/plans/). The resources and URLs are as follows.
+US Support portal tickets\
+[US Tenant Support Portal](https://support.snyk.io)
+
+US API v1 URL\
+https://api.snyk.io/v1/\
+US REST API URL\
+https://api.snyk.io/rest/
+
+US CLI and CI pipelines URL\
+https://app.snyk.io/api
+
+US IDEs URL\
+https://app.snyk.io/api
+
+US Broker server URL\
+https://broker.snyk.io
+
+## Regional multi- and single-tenant hosting notes
+
+Snyk offers almost all the same features, support, and performance in the regional multi- and single-tenant regions as in the US region. For an up-to-date overview of feature parity across regions, reach out to your account team.
+
+### EU and AU data center account creation
+
+EU and AU data center Snyk accounts are available only with the purchase of an [Enterprise plan](https://snyk.io/plans/). The resources and URLs are as follows.
 
 ### Login and Web UI URLs
 
