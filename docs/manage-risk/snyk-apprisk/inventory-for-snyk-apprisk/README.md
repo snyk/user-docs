@@ -10,7 +10,7 @@ Each line in the inventory represents either a repository asset or a scanned art
 
 ## Inventory Layouts <a href="#inventory-layouts" id="inventory-layouts"></a>
 
-To get better context and clarity over your asset inventory, Snyk AppRisk allows flexible structuring with inventory layouts. Snyk AppRisk includes four inventory layouts, and groups assets by different contexts:
+To get better context and clarity over your asset inventory, Snyk AppRisk allows flexible structuring with inventory layouts. Snyk AppRisk includes four inventory layouts and groups assets by different contexts. You can find all inventory layouts under the Inventory menu option at the Group level:&#x20;
 
 * **Code Assets**: A hierarchical list of all assets.&#x20;
 * **Organization Teams**: SCM repository assets grouped by teams. Note that only SCM organizations with teams, and repositories assigned to a team, appear on this layout.
@@ -40,6 +40,8 @@ You can filter the information for all the inventory layouts and can use the fol
   * **Dormant**: No commits in the last 6 months.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
+
+<figure><img src="../../../.gitbook/assets/Inventory view-new UI.png" alt="Snyk AppRisk - Inventory layouts"><figcaption><p>Snyk AppRisk - Inventory layouts</p></figcaption></figure>
 
 ## Assets and their attributes
 
@@ -71,7 +73,7 @@ Every item listed in the inventory is considered an individual asset. Most asset
 * **Source** - Reflects the source of the asset, which can come from Snyk, an SCM, or a third-party integration.
 * **SCM Repository freshness** - Reflects the status of the repository and the date of the last commit.
 
-<figure><img src="../../../.gitbook/assets/Issues tab - Inventory view.png" alt="Inventory view - Key attributes"><figcaption><p>Inventory view - Key attributes</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Inventory - New UI.png" alt="Inventory view - Key attributes"><figcaption><p>Inventory view - Key attributes</p></figcaption></figure>
 
 ###
 

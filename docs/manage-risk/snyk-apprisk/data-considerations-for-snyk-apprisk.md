@@ -2,7 +2,7 @@
 
 ## Repository Assets
 
-Snyk AppRisk Essentials generates asset data from existing Snyk targets and projects. Repository assets can be generated from SCM and CLI targets from Snyk, depending on the Snyk product:
+Snyk AppRisk generates asset data from existing Snyk targets and projects. Repository assets can be generated from SCM and CLI targets from Snyk, depending on the Snyk product:
 
 | Snyk Product               | Git integration (SCM) | Snyk CLI                                                        |
 | -------------------------- | --------------------- | --------------------------------------------------------------- |
@@ -13,7 +13,7 @@ Snyk AppRisk Essentials generates asset data from existing Snyk targets and proj
 
 ## Packages (first party)
 
-Snyk AppRisk Essentials generates first party packages from Snyk Open Source data, and represents them on asset inventory pages. Currently, Snyk AppRisk Essentials does not support dependencies (third party packages).
+Snyk AppRisk generates first party packages from Snyk Open Source data, and represents them on asset inventory pages. Currently, Snyk AppRisk does not support dependencies (third party packages).
 
 ## Data Freshness
 

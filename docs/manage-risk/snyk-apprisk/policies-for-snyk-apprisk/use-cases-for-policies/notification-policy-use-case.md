@@ -20,7 +20,7 @@ To follow this example, you need to create four filters that find:
 
 * **Filter 4**: Do not have Snyk Open Code or Snyk Open Source scan coverage.
 
-<figure><img src="../../../../.gitbook/assets/Coverage filter.png" alt="Filter configuration for coverage control"><figcaption><p>Filter configuration for coverage control</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Coverage filter.png" alt="Filter configuration for coverage control" width="353"><figcaption><p>Filter configuration for coverage control</p></figcaption></figure>
 
 After setting up the filter conditions, you need to choose the **Send Slack Message** action. You can generate the Slack webhook by using the  [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
 

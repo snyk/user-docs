@@ -8,8 +8,7 @@ You can access Snyk AppRisk from the [Snyk Web UI.](../../../getting-started/sny
 
 * Access Snyk AppRisk from the Group level of your Snyk Group.
 * Ensure you have Group Admin access.
-* Click the Snyk AppRisk button to launch Snyk AppRisk.
-* A new tab of your browser is opened, displaying the Snyk AppRisk [Dashboard](../dashboard-for-snyk-apprisk.md).
+* Access Group that has Snyk AppRisk enabled.
 
 ## Setup integrations <a href="#setup-integrations" id="setup-integrations"></a>
 
@@ -63,9 +62,34 @@ Snyk recommends creating a new Organization in Snyk specifically for the Snyk Ap
 Navigate to the [Snyk Broker - AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.\
 
 
+### Third-party integrations
+
+To set up your third-party integrations, you can utilize the Snyk AppRisk Integrations Hub. It's important to mention that this is a distinct integration interface solely dedicated to Snyk AppRisk, separate from the Organization integrations interface. \
+\
+In each Snyk Organization, administrators can give out tokens that provide restricted access to the applications utilized by developers. \
+\
+With regards to Snyk AppRisk, the purpose of a token is to provide an overview of the current assets as compared to what is imported into Snyk.
+
+In each Snyk Organization, administrators have the capability to provide tokens with limited access to the applications utilized by developers.
+
+The scope of the token used in Snyk AppRisk is to provide an overview of the existing assets compared to what is imported into Snyk.
+
+The supported third-party integrations are:
+
+* Veracode
+* Nightfall
+
+### Backstage file for SCM Integrations
+
+Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk AppRisk.
+
+You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
+
+Access the [Backstage file for SCM Integrations](../integrations-for-snyk-apprisk/backstage-file-for-scm-integrations.md) docs for more details about how to use this feature.
+
 ## Features
 
-You can access the different Snyk AppRisk features on their own screen view, allowing you to focus on each feature at a time.
+The Snyk AppRisk functionality is split across several menu options from the Group level.&#x20;
 
 * [Dashboard](../dashboard-for-snyk-apprisk.md)
 * [Inventory](../inventory-for-snyk-apprisk/)

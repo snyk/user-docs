@@ -20,7 +20,7 @@ You can add a new profile by following these steps:
 2. Click **Add profile**.
 3. Fill in the configuration fields and click **Done**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (8) (1) (1).png" alt="AppRisk - Integration with multiple profiles"><figcaption><p>Snyk AppRisk - Integration with multiple profiles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Integrations - New UI.png" alt="AppRisk - Integration with multiple profiles"><figcaption><p>Snyk AppRisk - Integration with multiple profiles</p></figcaption></figure>
 
 ## Remove an integration
 

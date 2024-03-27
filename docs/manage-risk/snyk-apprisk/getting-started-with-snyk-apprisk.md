@@ -5,7 +5,7 @@
 Before you get started, ensure that you meet the following prerequisites:&#x20;
 
 * You are a Snyk Enterprise customer.
-* Your account is entitled with access for Snyk AppRisk Essentials.
+* Your account is entitled with access for Snyk AppRisk Essentials or Snyk AppRisk Pro.
 * You are a Group Administrator for the Group associated with Snyk AppRisk, or you are assigned a Group level role with permissions to View Group and Edit AppRisk.&#x20;
 * The Group associated with Snyk AppRisk includes organizations that have onboarded Snyk application security products.
 * You have the necessary permissions and authority to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk AppRisk for repository asset discovery.
@@ -36,11 +36,7 @@ Login and authenticate to Snyk using existing mechanisms (SSO, Google SAML, and 
 
 ## Accessing Snyk AppRisk
 
-Select the Group with Snyk AppRisk enabled. A link to Snyk AppRisk appears in the left navigation menu. Click this link to open the application in a new browser window.
-
-{% hint style="info" %}
-Keep both Snyk Web UI and Snyk AppRisk tabs open to ensure optimal functionality.
-{% endhint %}
+Ensure you are at the Group level to access the Snyk AppRisk options. From the Group level you have a centralized security management that enhances security and simplifies security procedures for projects.
 
 ## Key Concepts
 

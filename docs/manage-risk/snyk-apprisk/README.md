@@ -20,14 +20,14 @@ Snyk AppRisk Essentials includes the following features:&#x20;
 * **Dashboard** to view, add, and customize widgets.
 * **Prioritization** of Snyk issues with application and business context in the Insights UI.
 
-{% hint style="info" %}
-You can access Snyk AppRisk Essentials if you have appropriate product entitlements. Please reach out to your account team with any questions.
+## Using Snyk AppRisk Essentials and Snyk AppRisk Pro
+
+{% hint style="warning" %}
+Snyk AppRisk Pro is currently available in Closed Beta. Please contact your salesperson if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
-## Using Snyk AppRisk Essentials
-
-&#x20;Access Snyk AppRisk Essentials by following these steps:
+Access Snyk AppRisk Essentials and Snyk AppRisk Pro by following these steps:
 
 1. Log in to [Snyk Web UI](https://docs.snyk.io/getting-started/exploring-the-snyk-web-ui) and navigate to the Group view.
 2. Ensure you are a Group Administrator for the Group associated with Snyk AppRisk, or that you have a custom role assigned with the necessary permissions.
-3. Click on the Snyk AppRisk account-level link that leads to a separate browser window with Snyk AppRisk-specific pages.&#x20;
+

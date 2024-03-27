@@ -2,7 +2,7 @@
 
 Implementing Snyk AppRisk brings many benefits to your products by enabling the Application Security Posture Management for all your used products. You can benefit from automated application asset discovery, customized security controls, and risk-based prioritization.
 
-Snyk AppRisk Essentials helps application security teams implement, manage, and scale their Snyk-based developer security program. It allows you to pull in Assets from various sources into one central view to understand what security controls you have in place.
+Snyk AppRisk helps application security teams implement, manage, and scale their Snyk-based developer security program. It allows you to pull in Assets from various sources into one central view to understand what security controls you have in place.
 
 This guide helps you implement Snyk AppRisk at the Group level. You can find more details about adopting Snyk at the enterprise level by accessing the [Enterprise Implementation Guide](../../../implement-snyk/enterprise-implementation-guide/) documentation.
 

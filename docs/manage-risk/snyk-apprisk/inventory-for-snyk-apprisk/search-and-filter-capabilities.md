@@ -16,7 +16,7 @@ Click Filters from the top left side of the screen. A pop-up is displayed allowi
 * **Condition** depends on the asset selected (such as `contains` or `does not contain` for `asset name`).
 * **Value** depends on the Property and Condition.
 
-<figure><img src="../../../.gitbook/assets/inventory8.png" alt="AppRisk - Filters"><figcaption><p>Snyk AppRisk - Filters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Filters - new UI.png" alt="AppRisk - Filters"><figcaption><p>Snyk AppRisk - Filters</p></figcaption></figure>
 
 You can add as many filters as needed. To add another filter click **Add Filter,** set the condition as **And** or **Or** and customize the **Property**, **Condition**, and **Value** fields.&#x20;
 

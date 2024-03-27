@@ -21,7 +21,7 @@ Learn more about any asset by clicking the name of the asset in the inventory la
 
 You can copy the name of an asset or browse the repository. Click an asset and a menu appears at the end of the row. Click the menu, then select **Copy** or **Browse**.
 
-<figure><img src="../../../.gitbook/assets/inventory4 (1).png" alt="AppRisk - Asset options"><figcaption><p>Snyk AppRisk - Asset options</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Asset options - New UI.png" alt="AppRisk - Asset options"><figcaption><p>Snyk AppRisk - Asset options</p></figcaption></figure>
 
 ### Asset tabs
 
@@ -97,7 +97,7 @@ A system-generated tag includes the following information:
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
 
-<figure><img src="../../../.gitbook/assets/inventory6.png" alt="AppRisk - Tags"><figcaption><p>Snyk AppRisk - Tags</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Asset tags - new UI.png" alt="AppRisk - Tags"><figcaption><p>Snyk AppRisk - Tags</p></figcaption></figure>
 
 ### Tag rules overview
 
@@ -152,7 +152,7 @@ System tags are automatically generated from the SCM repositories. System tags c
 
 You can see the list of all developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
 
-<figure><img src="../../../.gitbook/assets/image (10) (4).png" alt="AppRisk - Developers"><figcaption><p>AppRisk - Developers</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Asset devs- New UI.png" alt="AppRisk - Developers"><figcaption><p>AppRisk - Developers</p></figcaption></figure>
 
 ## **Class**
 
@@ -162,7 +162,7 @@ You can manually change the business criticality of an asset. Click the critical
 
 After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A popup is displayed, asking you for confirmation about unlocking the value.
 
-<figure><img src="../../../.gitbook/assets/Code Asset - Lock Class.png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk AppRisk - Lock the value of a class</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Class - New UI.png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk AppRisk - Lock the value of a class</p></figcaption></figure>
 
 The Asset Class column is also available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 
@@ -172,7 +172,7 @@ The synchronization between Asset Class and the Insights UI can take up to 3 hou
 
 The class value can be auto-generated with policies. You just need to create a policy that has as an action **Set Asset Class**.
 
-<figure><img src="../../../.gitbook/assets/inventory7.png" alt="AppRisk - Class"><figcaption><p>Snyk AppRisk - Class</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Class2 - New UI.png" alt="AppRisk - Class"><figcaption><p>Snyk AppRisk - Class</p></figcaption></figure>
 
 ## Source
 
