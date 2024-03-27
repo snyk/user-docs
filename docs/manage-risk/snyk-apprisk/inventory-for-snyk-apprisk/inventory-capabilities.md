@@ -58,8 +58,6 @@ The **Issues** column from the Asset view is designed to present an aggregated c
 
 This classification streamlines prioritization, helping you focus on critical areas and optimize remediation.
 
-
-
 ## **Coverage Controls**
 
 The Controls column displays all of the Snyk products that were executed on a specific repository asset. This column displays, in circles, a logo for each Snyk product. The logo icon itself has an indication of the highest severity of issues from this source. For example, if the highest severity issue is **C** (critical), you can see a red dot on the control icon.
@@ -182,12 +180,6 @@ The Source column in Snyk AppRisk helps users identify the origin of their asset
 
 The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation.
 
-## Source
 
-The Source column in Snyk AppRisk helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
-
-## SCM Repository freshness
-
-The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation.
 
 \
