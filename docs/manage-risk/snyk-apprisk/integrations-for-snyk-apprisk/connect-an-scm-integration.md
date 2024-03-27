@@ -1,6 +1,6 @@
 # Connect an SCM integration
 
-The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced, and provides access to the Integration Hub.
+The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
 You can customize your AppRisk integrations from the **Integrations Hub** where the following SCMs are available:
 
@@ -9,7 +9,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [Azure DevOps](connect-an-scm-integration.md#azure-devops-setup-guide)
 * [BitBucket](connect-an-scm-integration.md#bitbucket-setup-guide)
 
-If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details see [Snyk Broker - AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
 
 ## GitHub setup guide
 
@@ -19,51 +19,47 @@ If your SCM instance is not publicly accessible, you must connect using Snyk Bro
 * Builds - only when using GitHub Actions.
 * Scans - only when using Code security.
 
-### Required parameters&#x20;
+### Integrate using Snyk AppRisk
 
-* Organization Name - The GitHub organization name.
-* Profile name - The GitHub user used to read repositories.
-* API Token - API access token with the following permissions:
-  * `repo`
-  * `read:packages`
-  * `read:org`
-  * `read:user`
-  * `user:email`
-
-Authorize your personal access token if you have configured SAML SSO.
-
-If you only want to pull the repositories you own, select the **Pull personal repositories** checkbox on the Integration Hub page.
+1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+2. Organizations (`mandatory`): Input the names of all the relevant GitHub organizations.
+3. Access Token (`mandatory`): Create your GitHub PAT from your GitHub organization. Follow the instructions in the [Generate a Personal access token from your GitHub settings](connect-an-scm-integration.md#generate-a-personal-access-token-from-your-github-settings) section. Authorize your personal access token if you have configured SAML SSO.
 
 {% hint style="info" %}
-Fine-grained personal access token is not supported.
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
 {% endhint %}
 
-### GitHub enterprise additional parameters
+4. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
+5. Pull personal repositories (`optional`): Enable the option if you only want to pull the repositories you own.
+6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
 
-You can use as the host Address the IP/URL of the GitHub server. The default URL is [`https://api.github.com`](https://api.github.com).
-
-### GitHub code security additional parameters
-
-The user associated with the token needs to have write permissions on relevant repositories to collect a breakdown of scan issues.
-
-### API Version
-
-You can use the[ GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28) repository to access information about the API.
-
-### API token setup
+#### Generate a Personal access token from your GitHub settings
 
 1. Open GitHub and click the Settings menu for your profile.
 2. Select Developer settings from the left sidebar.
 3. Select Personal access tokens and then Tokens (classic).
 4. Click Generate new token and, from the dropdown, select Generate new token (classic).
 5. Add a description for your token in the Note field.
-6. Select the required permissions: `repo`, `read:packages`, `read:org`, `read:user`, `user:email`.
+6. Select the required permissions:&#x20;
+   * `repo`
+   * `read:packages`
+   * `read:org`
+   * `read:user`
+   * `user:email`.
 7. Click Generate token.
 8. Copy and store the displayed key.
 
 {% hint style="info" %}
 Fine-grained personal access token is not supported.
 {% endhint %}
+
+### API Version
+
+You can use the[ GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28) repository to access information about the API.
+
+You can use as the host Address the IP/URL of the GitHub server. The default URL is [`https://api.github.com`](https://api.github.com).
+
+The user associated with the token needs to have write permissions on relevant repositories to collect a breakdown of scan issues.
 
 ## GitLab setup guide
 
@@ -72,17 +68,32 @@ Fine-grained personal access token is not supported.
 * Users
 * Repositories&#x20;
 
-### Required parameters&#x20;
+### Integrate using Snyk AppRisk
 
-* Host address - The IP/URL of the GitLab server.
-* Personal API token - Associated to a user account with permissions to fetch users and repositories. The URL should follow this example: `https://gitlab.com/-/profile/personal_access_tokens`.
-* Permissions:
-  * `read_api` - Grants read access to the API, including all groups and projects, the container registry, and the package registry.
-  * `read_repository` - Grants read-only access to repositories on private projects using Git-over-HTTP or the Repository Files API.
+1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+2. API Token (`mandatory`): Create your GitLab PAT from your GitLab organization. Follow the instructions in [Generate a Personal access token from your GitLab settings section](connect-an-scm-integration.md#generate-a-personal-access-token-from-your-gitlab-settings). Authorize your personal access token if you have configured SAML SSO.
 
-Authorize your personal access token if you have configured SAML SSO.
+{% hint style="info" %}
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
+{% endhint %}
 
-If you only want to pull the repositories you own, select the **Pull personal repositories** checkbox on the Integration Hub page.
+3. Host URL (`mandatory`): The IP/URL of the GitLab server. The default URL is [`https://gitlab.com`](https://gitlab.com)
+4. Verify SSL (`optional`): Enable the option if you want to verify the SSL.
+5. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.
+6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
+
+#### Generate a Personal access token from your GitLab settings
+
+1. Navigate to your GitLab profile.
+2. Select Edit Profile.
+3. On the left sidebar, select Access Token.
+4. Select Add New Token.
+5. Enter a name and expiry date for the token.
+6. Ensure to enable this permission:
+   * `read_api` - Grants read access to the API, including all groups and projects, the container registry, and the package registry.
+   * `read_repository` - Grants read-only access to repositories on private projects using Git-over-HTTP or the Repository Files API.
+7. Click the Create personal access token button.
+8. Copy and store the displayed key.
 
 ### API version
 
@@ -92,47 +103,41 @@ You can use the[ GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) 
 
 ### Pulled entities
 
-* Repositories
+* Repository - the pulled entity retrieved by Snyk AppRisk.
 
-### Required parameters
+### Integrate using Snyk AppRisk
 
-* Azure DevOps PAT - Generate a personal access token
-  * Permissions
-    * **Code** - read
-      * **Project and Team** - read
-      * **Graph** - read
-      * **Analytics** - read
-      * **Build** - read
-      * **Release** - read
-      * **Security** - manage
-  * Organization - Select **All accessible organizations** or a specific organization.
-* Azure DevOps organization names - The names of all the relevant Azure DevOps organizations.
-* API URL - The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
+1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
+3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings. Follow the instructions from the  [Generate a Personal access token from your Azure DevOps settings](connect-an-scm-integration.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
 
-### API version
+{% hint style="info" %}
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
+{% endhint %}
 
-You can use the[ Azure DevOps REST API v6](https://learn.microsoft.com/en-us/rest/api/azure/devops/core/?view=azure-devops-rest-6.0) repository to access information about the API.
+4. API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
+5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
 
-### Generate a Personal access token
+#### Generate a Personal access token from your Azure DevOps settings
 
 1. Open Azure DevOps and click the **Settings** menu for your profile.
 2. Click **Personal access tokens** and then **New token**.
-3. Select the **Code**, **Project** **and** **Team**, **Graph**, and **Analytics** read scopes.
+3. Select the following scopes:
+   * Permissions
+     * **Code** - read
+     * **Project and Team** - read
+     * **Graph** - read
+     * **Analytics** - read
+     * **Build** - read
+     * **Release** - read
+     * **Security** - manage
+   * Organization - Select **All accessible organizations** or a specific organization.
 4. Set the expiration to 12 months.
 5. Copy the generated personal access token and share it through a secured vault.
 
-### Permissions
+### API version (optional)
 
-Enable the following permissions:
-
-* **Graph** - Read
-* **Security** - Manage
-* **Scopes** - Custom defined
-* **Analytics** - Read
-* **Build** - Read
-* **Code** - Read
-* **Project and Team** - Read
-* **Release** - Read
+You can use the[ Azure DevOps REST API v6](https://learn.microsoft.com/en-us/rest/api/azure/devops/core/?view=azure-devops-rest-6.0) repository to access information about the API.
 
 ## BitBucket setup guide
 
@@ -148,16 +153,23 @@ Note that for BitBucket Server you are unable to manually add language tags to a
 * Users
 * Repositories
 
-### Required parameters
+### Integrate using Snyk AppRisk
 
-* API URL - The URL of the Bitbucket API
-* Username - The [Bitbucket username](https://bitbucket.org/account/settings/)&#x20;
-* App password - Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
-  * **Workspace membership** - Read
-  * **Account** - Read
-  * **Projects** - Read
-  * **Repositories** - Read
-  * **Issues** - Read
+1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+2. Access Token (`mandatory`): Create your BitBucket PAT from your BitBucket organization.
+
+{% hint style="info" %}
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
+{% endhint %}
+
+3. API URL (`mandatory`) - Input the API URL.
+4. Username (`mandatory`): Input the BitBucket username of your organization.
+5. App password (`mandatory`): Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
+   * **Workspace membership** - Read
+   * **Account** - Read
+   * **Projects** - Read
+   * **Repositories** - Read
+   * **Issues** - Read
 
 {% hint style="info" %}
 Create a BitBucket app password by following these steps:
@@ -168,7 +180,8 @@ Create a BitBucket app password by following these steps:
 4. Navigate to the App passwords sub-section from the ACCESS MANAGEMENT section.
 {% endhint %}
 
-* Workspaces - The Bitbucket workspace names, accessible after authentication).
+6. Service type (`mandatory`): Select the service type, Cloud, or On-premises.
+7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
 
 ### API version
 
