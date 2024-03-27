@@ -31,10 +31,11 @@ Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before r
 
 You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445489dd96cc68c8386ede38/defaultFilters/apprisk) all the updated `.json` files that include the allowed list of accessible endpoints for the integrations.
 
-\
-
-
 ## Third-party integrations
+
+{% hint style="warning" %}
+The third-party integrations are available in a Closed Beta state and are applicable only to the Snyk AppRisk Pro version.  Please contact your salesperson if you are interested in Snyk AppRisk Pro.
+{% endhint %}
 
 ### Checkmarx SAST integration
 
