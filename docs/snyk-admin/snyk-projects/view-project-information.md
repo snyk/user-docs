@@ -6,7 +6,7 @@ You can view Project information on your Projects pages. For example, to view yo
 
 ## Filtering existing Projects
 
-The **Projects** page on the Web UI includes a filter pane that allows you to filter your Snyk Projects according to different criteria, and provides you with information about the number of existing Snyk Projects that match each criterion:
+The **Projects** page on the Web UI includes a filter pane that allows you to filter your Snyk Projects according to different criteria. It provides you with information about the number of existing Snyk Projects that match each criterion:
 
 <figure><img src="../../.gitbook/assets/Project filtering.png" alt="Filter pane on Projects page"><figcaption><p>Filter pane on Projects page</p></figcaption></figure>
 
