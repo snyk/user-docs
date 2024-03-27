@@ -35,7 +35,7 @@ Each filter component requires you to specify an asset property. Available prope
 
 * **Asset ID** - the unique identifier of the asset.
 * **Asset name** - the name of the asset.
-* **Asset type** - SCM repository, package, scanned artifact, or container image.
+* **Asset type** - repository, package or scanned artifact.
 * **Attribute** - asset attributes retrieved from the data source.
 * **Class** - specify the class of the asset.
 * **Coverage** - specify the product or products used to scan the asset. The Coverage filter identifies if at least one scan has been run by the specified product.
@@ -44,7 +44,7 @@ Each filter component requires you to specify an asset property. Available prope
 * **Discovered** - specify the period when the asset was discovered.
 * **Locked attributes** - specify if the attribute value is locked.
 * **Last seen** - specify the repository freshness status.
-* **SCM Repository freshness** - the status of the repository and the date of the last commit.
+* **Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
@@ -64,22 +64,22 @@ The Coverage gap filter identifies assets that fall 'out of policy' and do not s
 
 Each property contains different options for conditions and values:
 
-| Property                 | Conditions Values                                                                                                                         | Values                                                                                                                |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Asset ID                 | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
-| Asset name               | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
-| Asset type               | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | <ul><li>Package</li><li>SCM Repository</li><li>Scanned artifact</li><li>Container image</li></ul>                     |
-| Attribute                | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
-| Class                    | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | A, B, C, D                                                                                                            |
-| Coverage                 | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | Snyk Code, Container, IaC, Open Source                                                                                |
-| Coverage gap             | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | Snyk Code, Container, IaC, Open Source                                                                                |
-| Developers               | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
-| Discovered               | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date </li></ul> |
-| Last seen                | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
-| Locked attributes        | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Class</li></ul>                                                                                               |
-| SCM Repository freshness | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Active</li><li>Inactive</li><li>Dormant</li></ul>                                                             |
-| Source                   | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>azure-devops</li><li>GitHub</li><li>GitLab</li><li>Snyk</li></ul>                                             |
-| Tags                     | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | all available tags you previously created                                                                             |
+| Property             | Conditions Values                                                                                                                         | Values                                                                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Asset ID             | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                                      |
+| Asset name           | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                                      |
+| Asset type           | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | <ul><li>Package</li><li>Repository</li><li>Scanned artifact</li></ul>                                                          |
+| Attribute            | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                                      |
+| Class                | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | A, B, C, D                                                                                                                     |
+| Coverage             | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | <p></p><ul><li>Snyk Code, Container, IaC, Open Source</li><li>Third-party integrations with Snyk AppRisk Pro version</li></ul> |
+| Coverage gap         | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | <ul><li>Snyk Code, Container, IaC, Open Source</li><li>Third-party integrations with Snyk AppRisk Pro version</li></ul>        |
+| Developers           | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                                      |
+| Discovered           | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date </li></ul>          |
+| Last seen            | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>           |
+| Locked attributes    | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Class</li></ul>                                                                                                        |
+| Repository freshness | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Active</li><li>Inactive</li><li>Dormant</li></ul>                                                                      |
+| Source               | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>azure-devops</li><li>GitHub</li><li>GitLab</li><li>Snyk</li></ul>                                                      |
+| Tags                 | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | all available tags you previously created                                                                                      |
 
 
 

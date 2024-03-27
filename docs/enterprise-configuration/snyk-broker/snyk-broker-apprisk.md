@@ -1,10 +1,12 @@
 # Snyk Broker - AppRisk
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. The minimum supported Broker version for Snyk AppRisk is [4.171.0](https://github.com/snyk/broker/releases/tag/v4.171.0).
+If your SCM or third-party instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. The minimum supported Broker version for Snyk AppRisk is [4.171.0](https://github.com/snyk/broker/releases/tag/v4.171.0).
 
 {% hint style="info" %}
 Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before running the commands.
 {% endhint %}
+
+## SCM integrations
 
 * GitHub - install and configure Snyk Broker&#x20;
   * [using Docker](install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md#docker-run-command-to-set-up-a-broker-client-for-github)
@@ -28,3 +30,5 @@ Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before r
   * [environment variables](install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/azure-repos-environment-variables-for-snyk-broker.md)
 
 You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445489dd96cc68c8386ede38/defaultFilters/apprisk) all the updated `.json` files that include the allowed list of accessible endpoints for the integrations.
+
+\

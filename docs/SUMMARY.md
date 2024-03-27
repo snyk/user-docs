@@ -652,6 +652,7 @@
       * [Customize an integration](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/customize-an-integration.md)
       * [Connect an SCM integration](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration.md)
       * [Backstage file for SCM Integrations](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/backstage-file-for-scm-integrations.md)
+      * [Connect a third-party integration](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
     * [Inventory for Snyk AppRisk](manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/README.md)
       * [Inventory capabilities](manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/inventory-capabilities.md)
       * [Search and filter capabilities](manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/search-and-filter-capabilities.md)

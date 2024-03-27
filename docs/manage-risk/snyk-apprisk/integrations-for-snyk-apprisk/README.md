@@ -4,6 +4,11 @@
 
 The Integrations page shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
 
+{% hint style="warning" %}
+Use the Snyk AppRisk Pro version to integrate third-party with SAST and Secret Detection tools.\
+Snyk AppRisk Pro is currently available in Closed Beta. Please contact your salesperson if you are interested in Snyk AppRisk Pro.
+{% endhint %}
+
 The following supported Snyk data are automatically synced:
 
 * Snyk Open Source
@@ -29,7 +34,7 @@ You can add an integration by following these steps:
 3. Click **Add** on the integration you want to connect.
 4. Configure your connection and click **Done**.
 
-See the [Connect an SCM integration](connect-an-scm-integration.md) page for step-by-step details about how to set up an integration.
+See the [Connect an SCM integration](connect-an-scm-integration.md) page or the Connect a third-party integration [connect-a-third-party-integration.md](connect-a-third-party-integration.md "mention")page for step-by-step details about how to set up an integration.
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 
