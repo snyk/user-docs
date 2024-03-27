@@ -11,6 +11,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 SAST:
 
 * Verocode SAST
+* Checkmarx SAST&#x20;
 
 Secrets:
 
@@ -47,7 +48,39 @@ Ensure you are adding a custom field called repoURL:
 7. Click the **Done** button.
 8. When the connection is established, the status of the Veracode integration is changed to **Connected**.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="Integration Hub - Veracode setup"><figcaption><p>Integration Hub - Veracode setup</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Integration Hub - Veracode setup"><figcaption><p>Integration Hub - Veracode setup</p></figcaption></figure>
+
+## Checkmarx setup guide
+
+Use the following instructions to set up your Checkmarx SAST integration. Checkmarx SAST integration is only working for the Checkmarx SAST, we are not yet supporting Checkmarx One.
+
+{% hint style="info" %}
+Snyk AppRisk Pro does not currently support the Checkmarx One integration.
+{% endhint %}
+
+### Prerequisites
+
+* Install and configure your [Snyk Broker](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
+
+### Required parameters
+
+1. API URL - The URL of Checkmarx API, for example, `checkmarx.customer.com`.
+2. Username and Password - Credentials for a user account with Checkmarx SAST access.
+
+### Integration Hub setup
+
+After you have installed and configured Snyk Broker for AppRisk and you successfully established a connection for Checkmarx SAST, you need to also configure the integration from the Snyk AppRisk Integration Hub. &#x20;
+
+1. Open the **Integration Hub** menu.&#x20;
+2. Select the **SAST** tag and search for Checkmarx.&#x20;
+3. Click the **Add** button.
+4. Add the profile name for this integration.
+5. Add the Broker token for the Snyk AppRisk Checkmarx integration.
+6. Add the Checkmarx host. E.g. `checkmarx.customer.com`
+7. Click the **Done** button.
+8. When the connection is established, the status of the Checkmarx integration is changed to **Connected**.
+
+<figure><img src="../../../.gitbook/assets/image (370).png" alt="Integration Hub - Checkmarx setup"><figcaption><p>Integration Hub - Checkmarx setup</p></figcaption></figure>
 
 ## Nightfall setup guide
 

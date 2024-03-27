@@ -32,3 +32,69 @@ Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before r
 You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445489dd96cc68c8386ede38/defaultFilters/apprisk) all the updated `.json` files that include the allowed list of accessible endpoints for the integrations.
 
 \
+
+
+## Third-party integrations
+
+### Checkmarx SAST integration
+
+Use the following steps to install and run Snyk Broker for the AppRisk and Checkmarx SAST integration.
+
+1. Ensure you have the Snyk Broker token for the Snyk AppRisk integration. The Snyk support team can provide the needed token.&#x20;
+2. Pull the latest broker image by running this command:
+
+```docker
+docker pull snyk/broker:universal
+```
+
+3. Ensure the `config.universal.json` file contains the following information:
+
+```
+{
+  "BROKER_CLIENT_CONFIGURATION": {
+    "common": {
+      "default": {
+        "BROKER_SERVER_URL": "https://broker.snyk.io",
+        "BROKER_HA_MODE_ENABLED": "false"
+      }
+    }
+  },
+  "CONNECTIONS": {
+    "apprisk connection": {
+      "type": "apprisk",
+      "identifier": "${BROKER_TOKEN}",
+      "CHECKMARX": "${CHECKMARX}",
+      "CHECKMARX_USERNAME": "${CHECKMARX_USERNAME}",
+      "CHECKMARX_PASSWORD": "${CHECKMARX_PASSWORD}",
+      "BROKER_CLIENT_URL": "http://my.broker.client.dns.hostname"
+    }
+  }
+}
+
+```
+
+4. Run the following commands with your Checkmarx username and password:
+
+```docker
+docker run --restart=always \
+        -p 8001:8001 -e PORT=8001 \
+        -e BROKER_CLIENT_URL=http://broker.url.example:8000 \
+        -e BROKER_TOKEN=<YOUR BROKER TOKEN> \
+        -e UNIVERSAL_BROKER_ENABLED=true \
+        -e CHECKMARX=<YOUR CHECKMARX HOST> \
+        -e CHECKMARX_USERNAME=<YOUR CHECKMARX USERNAME> \
+        -e CHECKMARX_PASSWORD=<YOUR CHECKMARX PASSWORD> \
+        -e BROKER_SERVER_URL=https://broker.snyk.io \
+        -v $(pwd)/config.universal.json:/home/node/config.universal.json \
+    snyk/broker:universal
+
+```
+
+5. When the connection is established, you will find in the logs the following message: `successfully established a websocket connection to the broker server`
+
+{% code overflow="wrap" %}
+```docker
+{"id":"broker-client-url-validation","name":"Broker Client URL Validation Check","status":"passing","output":"config check: ok"},{"id":"universal-broker-connections-config-validation","name":"Universal Broker Client Connections Configuration Check","status":"passing","output":"connections config check: ok"}],"version":"4.179.5","supportedIntegrationType":"apprisk"},"msg":"successfully established a websocket connection to the broker server","time":"2024-03-11T11:43:26.014Z","v":0}
+
+```
+{% endcode %}
