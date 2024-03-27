@@ -23,7 +23,6 @@ You can add as many filters as needed. To add another filter click **Add Filter,
 There are several filtering options:
 
 * **Asset ID -** filter assets by their unique identifier.
-* **Asset Type** - filter assets by type.
 * **Asset Name** - filter assets by name.
 * **Tags** - filter assets by certain categories, for example, tags.\
   Assets have default tags for various use cases, such as tracing active/inactive assets, filtering by specific technology, and more. On top of it, users can create policy rules to tag assets according to their own logic.
@@ -32,6 +31,8 @@ There are several filtering options:
 * **Coverage and Coverage gap -** mostly used to answer scan coverage questions.&#x20;
   * **Coverage** means that an asset has been tested by this product at some point in the past.
   * **Coverage gap** means the asset does not meet the coverage requirements as set by the **Set coverage control** policy.
+
+
 
 {% hint style="info" %}
 If you use Snyk AppRisk for the first time, start with the **Coverage** filter to determine where you currently have Snyk Implemented.

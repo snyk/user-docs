@@ -9,7 +9,7 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Developers](inventory-capabilities.md#developers)
 * [Class](inventory-capabilities.md#class)
 * [Source](inventory-capabilities.md#source)
-* [SCM Repository freshness](inventory-capabilities.md#scm-repository-freshness)
+* [Repository freshness](inventory-capabilities.md#repository-freshness)
 
 ## **Asset**
 
@@ -27,13 +27,17 @@ You can copy the name of an asset or browse the repository. Click an asset and a
 
 The asset information is divided into the following tabs:
 
-* **Summary** - a concentrated view of the asset properties.
+* **Summary** - a concentrated view of the asset properties. The Summary screen presents you with the following information:
+  * Class - specifies the business criticality of the asset.
+  * Source - specifies the origin of the asset.
+  * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
+  * Issues - categorizes the identified types of open issues. If you click on the source title or logo, you are taken to the Project page. If there are multiple Projects, it takes you to a page that displays all the issues across all the Projects.
 
-<figure><img src="../../../.gitbook/assets/Inventory2.png" alt="AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Asset summary - Issues included.png" alt="AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
 
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-<figure><img src="../../../.gitbook/assets/2024-03-04_11-04-15.png" alt="AppRisk - Assets Attributes window"><figcaption><p>Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Asset Attributes with Issues.png" alt="AppRisk - Assets Attributes window"><figcaption><p>Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
 
 ### Image assets
 
@@ -45,9 +49,20 @@ Snyk AppRisk retrieves all image assets from Snyk Container. Reimport the images
 
 The Issues column is designed to present a comprehensive list of issues that have been identified within your assets. These findings are the result of scans performed by Snyk as well as internal tools you may have deployed. This detailed list not only helps in understanding the security posture of your assets but also in prioritizing remediation efforts based on the severity and impact of each issue. By having visibility into these issues, you can take proactive steps toward improving the overall security of your applications and infrastructure.
 
+The **Issues** column from the Asset view is designed to present an aggregated count of open issues. These counts are carefully categorized based on the severity level of the issues found in assets, their children assets, or associated packages. Specifically, the severity is divided into four distinct levels:
+
+* **C** (Critical): Issues that represent a serious threat and should be addressed immediately to prevent potential exploits or major disruptions.
+* **H** (High): These are significant issues that, while not immediately dangerous, could potentially lead to critical vulnerabilities if not resolved in a timely manner.
+* **M** (Medium): Issues of medium severity might not pose an immediate threat but are still important to fix as part of regular maintenance to improve overall security and functionality.
+* **L** (Low): These are considered minor issues that have a low impact on the security of the system and operation but should still be addressed to maintain optimal performance and prevent future vulnerabilities.
+
+This classification streamlines prioritization, helping you focus on critical areas and optimize remediation.
+
+
+
 ## **Coverage Controls**
 
-The Controls column displays all of the Snyk products that were executed on a specific repository asset. This column displays, in circles, a logo for each Snyk product.
+The Controls column displays all of the Snyk products that were executed on a specific repository asset. This column displays, in circles, a logo for each Snyk product. The logo icon itself has an indication of the highest severity of issues from this source. For example, if the highest severity issue is **C** (critical), you can see a red dot on the control icon.
 
 The Controls logos can have one of the following states:
 
@@ -60,9 +75,9 @@ The Controls logos can have one of the following states:
 | <img src="../../../.gitbook/assets/image (7) (4).png" alt="" data-size="original">     | The Snyk product was executed and failed with issues.                            |
 | <img src="../../../.gitbook/assets/image (8) (3).png" alt="" data-size="original">     | The Snyk product was executed and failed due to not being covered by the policy. |
 
-Click a Controls logo to see **Last test** details. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
+Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
-<figure><img src="../../../.gitbook/assets/inventory5.png" alt="AppRisk - Controls"><figcaption><p>Snyk AppRisk - Controls</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Controls with Issues count.png" alt="AppRisk - Controls"><figcaption><p>Snyk AppRisk - Controls</p></figcaption></figure>
 
 ## **Tags**
 
@@ -163,7 +178,7 @@ The class value can be auto-generated with policies. You just need to create a p
 
 The Source column in Snyk AppRisk helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
 
-## Repository freshness
+## SCM Repository freshness
 
 The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation.
 
