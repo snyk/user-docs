@@ -6,7 +6,7 @@ The following rules are applied to the creation of automatic PRs for vulnerabili
 * If you select **Retest now** for the Project, a scan runs manually. The 24-hour window is marked as having had the scan run. and no automatic PR is created until the next automated scan runs.
 * One pull request is created per Project.
 * If **either** the vulnerability is new and has a fix available **or** the fix is new and is not ignored, a Fix PR can be created.
-* For known vulnerabilities, see [Configure Automatic fix PRs](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md).
+* For known vulnerabilities, see [Configure Automatic fix PRs](automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md).
 
 <figure><img src="../../../.gitbook/assets/os1.png" alt="Test &#x26; Automated Pull Request Frequency setting"><figcaption><p>Test &#x26; Automated Pull Request Frequency setting</p></figcaption></figure>
 

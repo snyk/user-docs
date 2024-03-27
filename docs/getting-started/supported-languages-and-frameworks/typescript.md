@@ -29,8 +29,8 @@ To customize test options, run other commands, exclude directories and files, an
 
 #### **What's next?**
 
-* ​[Open a Fix PR](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/)
-* ​[Configure PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)​
+* ​[Open a Fix PR](../../scan-with-snyk/snyk-open-source/automatic-snyk-fix-prs-and-manual-fix-merge-requests/)
+* ​[Configure PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/configure-pr-checks.md)​
 
 ### Snyk integrations  <a href="#snyk-integrations" id="snyk-integrations"></a>
 

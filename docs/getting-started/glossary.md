@@ -130,7 +130,7 @@ A measure of whether a vulnerability can be fixed by Sny by applying a patch, up
 
 ### Fix PR
 
-A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md).
+A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](../scan-with-snyk/snyk-open-source/automatic-snyk-fix-prs-and-manual-fix-merge-requests/automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md).
 
 ## G
 
@@ -234,7 +234,7 @@ Pull Request. Allows a user to exchange changes made to source code and collabor
 
 ### PR Checks
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../scan-with-snyk/run-pr-checks/).
 
 ### Priority Score
 
