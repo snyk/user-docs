@@ -1,4 +1,4 @@
-# Enterprise configuration and implementation
+# Enterprise setup
 
 Enterprise configuration focuses on helping understand, plan, and roll out your Enterprise Snyk solution.  This includes:
 

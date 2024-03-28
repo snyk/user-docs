@@ -9,7 +9,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [Azure DevOps](connect-an-scm-integration.md#azure-devops-setup-guide)
 * [BitBucket](connect-an-scm-integration.md#bitbucket-setup-guide)
 
-If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
 
 ## GitHub setup guide
 
@@ -26,7 +26,7 @@ If your SCM instance is not publicly accessible, you must connect using Snyk Bro
 3. Access Token (`mandatory`): Create your GitHub PAT from your GitHub organization. Follow the instructions in the [Generate a Personal access token from your GitHub settings](connect-an-scm-integration.md#generate-a-personal-access-token-from-your-github-settings) section. Authorize your personal access token if you have configured SAML SSO.
 
 {% hint style="info" %}
-If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md) page.
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
 {% endhint %}
 
 4. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
@@ -74,7 +74,7 @@ The user associated with the token needs to have write permissions on relevant r
 2. API Token (`mandatory`): Create your GitLab PAT from your GitLab organization. Follow the instructions in [Generate a Personal access token from your GitLab settings section](connect-an-scm-integration.md#generate-a-personal-access-token-from-your-gitlab-settings). Authorize your personal access token if you have configured SAML SSO.
 
 {% hint style="info" %}
-If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md) page.
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
 {% endhint %}
 
 3. Host URL (`mandatory`): The IP/URL of the GitLab server. The default URL is [`https://gitlab.com`](https://gitlab.com)
@@ -112,7 +112,7 @@ You can use the[ GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) 
 3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings. Follow the instructions from the  [Generate a Personal access token from your Azure DevOps settings](connect-an-scm-integration.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
 
 {% hint style="info" %}
-If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md) page.
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
 {% endhint %}
 
 4. API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
@@ -159,7 +159,7 @@ Note that for BitBucket Server you are unable to manually add language tags to a
 2. Access Token (`mandatory`): Create your BitBucket PAT from your BitBucket organization.
 
 {% hint style="info" %}
-If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md) page.
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
 {% endhint %}
 
 3. API URL (`mandatory`) - Input the API URL.
