@@ -8,7 +8,7 @@ Free, Team, and Trial plan users have access only to this personal token under t
 * The Snyk CLI running on a local or a build machine
 * An IDE, when setting a token manually
 
-Enterprise users have access to a personal token under their profile and to service account tokens. For details, see [Service accounts](../enterprise-configuration/service-accounts/).
+Enterprise users have access to a personal token under their profile and to service account tokens. For details, see [Service accounts](../enterprise-setup/service-accounts/).
 
 * **Enterprise users should use a service account** to authenticate for any kind of automation. This includes, but is not limited to, CI/CD scanning with the CLI or build system plugins and automations, including the API.
 * **Enterprise users should use the personal token** under their user profile for:

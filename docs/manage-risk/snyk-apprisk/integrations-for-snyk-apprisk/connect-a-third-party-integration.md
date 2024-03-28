@@ -60,7 +60,7 @@ Snyk AppRisk Pro does not currently support the Checkmarx One integration.
 
 ### Prerequisites
 
-* Install and configure your [Snyk Broker](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
+* Install and configure your [Snyk Broker](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
 
 ### Required parameters
 
