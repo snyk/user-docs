@@ -9,7 +9,7 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Developers](inventory-capabilities.md#developers)
 * [Class](inventory-capabilities.md#class)
 * [Source](inventory-capabilities.md#source)
-* [Repository freshness](inventory-capabilities.md#repository-freshness)
+* [SCM Repository freshness](inventory-capabilities.md#repository-freshness)
 
 ## **Asset**
 
@@ -49,7 +49,11 @@ Snyk AppRisk retrieves all image assets from Snyk Container. Reimport the images
 
 The Issues column is designed to present a comprehensive list of issues that have been identified within your assets. These findings are the result of scans performed by Snyk as well as internal tools you may have deployed. This detailed list not only helps in understanding the security posture of your assets but also in prioritizing remediation efforts based on the severity and impact of each issue. By having visibility into these issues, you can take proactive steps toward improving the overall security of your applications and infrastructure.
 
-The **Issues** column from the Asset view is designed to present an aggregated count of open issues. These counts are carefully categorized based on the severity level of the issues found in assets, their children assets, or associated packages. Specifically, the severity is divided into four distinct levels:
+{% hint style="warning" %}
+The Issues column is available in a Closed Beta state and is applicable only for the Snyk AppRisk Pro version. Please contact your salesperson if you are interested in Snyk AppRisk Pro.
+{% endhint %}
+
+The **Issues** column from the Asset view is designed to present an aggregated count of open issues. These counts are carefully categorized based on the severity level of the issues found in assets, their children assets, or associated packages. The severity is divided into four distinct levels:
 
 * **C** (Critical): Issues that represent a serious threat and should be addressed immediately to prevent potential exploits or major disruptions.
 * **H** (High): These are significant issues that, while not immediately dangerous, could potentially lead to critical vulnerabilities if not resolved in a timely manner.
