@@ -785,6 +785,24 @@ There was an timeout when processing the dependency tree.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-MAVEN-0017](#snyk-os-maven-0017)
+
+#### Cannot reach one or more Maven repositories configured under your Snyk organisations language settings
+
+One or more of the Maven repositories configured under your organisations language settings cannot be reached.
+
+This error can happen for a variety of reasons:
+
+* If using broker it could be a misconfiguration in your broker client. Double check the username and password. 
+* It could be network connectivity between the broker client and Snyk or between the broker client and the configured repository, check your firewall rules.
+
+In order to solve this issue, refer to the specific details of this error message to identify which repository is causing issues. 
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+**Help Links:**
+- [https://docs.snyk.io/integrate-with-snyk/package-repository-integrations](https://docs.snyk.io/integrate-with-snyk/package-repository-integrations)
+
 ### [SNYK-OS-NODEJS-0001](#snyk-os-nodejs-0001)
 
 #### No repository found for A NPM package
@@ -1732,4 +1750,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-03-21T10:40:45.498Z
+--- Generated at 2024-03-29T06:37:55.466Z
