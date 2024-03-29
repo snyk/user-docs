@@ -90,7 +90,7 @@ touch ./src/routes/index/indexController.ts
 
 Before we start working on the index controller, we should also create a [TypeScript interface](https://www.typescriptlang.org/docs/handbook/interfaces.html) definition to describe a common shape for controller data. This will help keep our controllers consistent and allow TypeScript to warn us early if a controller is missing something important.
 
-Let's use a similar separation pattern as the one we decided on for routes. Since interface definitions in TypeScript are typically self-contained and descriptive, we'll skip creating a directory for each definition and store any interface files we create as siblings:
+Let's use a similar separation pattern to the one we decided on for routes. Since interface definitions in TypeScript are typically self-contained and descriptive, we'll skip creating a directory for each definition and store any interface files we create as siblings:
 
 ```bash
 mkdir -p ./src/interfaces
@@ -108,7 +108,7 @@ export interface Controller {
 }
 ```
 
-With that done, open the route controller file (`./src/routes/index/indexController`) in your editor and add the following:
+With that done, open the route controller file `./src/routes/index/indexController` in your editor and add the following:
 
 ```typescript
 import type { Controller } from '../../interfaces/Controller';
@@ -180,11 +180,11 @@ export default App;
 
 ## Running the Express server
 
-So far, we've created an App class which, when instantiated, will run an Express server which responds to requests at `/` and we've added an interface definition to ensure all our controllers follow the same data pattern.
+So far, we've created an App class that, when instantiated, will run an Express server that responds to requests at `/` and we've added an interface definition to ensure all our controllers follow the same data pattern.
 
 Let's run our project and try it out!
 
-If you run the compiled `./dist/app.js` at this point, nothing interesting happens. This is because we've yet to actually instantiate our exported class. Do you remember where, in the previous module, we initialized our `package.json`? During that command, we were presented with questions pertaining to our app. One of the questions asked what our project's entrypoint was. If you were following along and selected the default value, this should be set to `index.js` in your `package.json`. This entrypoint is where we'll instantiate the App class.
+If you run the compiled `./dist/app.js` at this point, nothing interesting happens. This is because we've yet to instantiate our exported class. In the previous module, we initialized our `package.json`. During that command, we were presented with questions pertaining to our app. One of the questions asked what our project's entrypoint was. If you were following along and selected the default value, this should be set to `index.js` in your `package.json`. This entrypoint is where we'll instantiate the App class.
 
 Edit `./src/index.ts` (where we had that hello world code) and clear it out if there's any content left over, then add import statements for our App and other required objects.
 
