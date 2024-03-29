@@ -19,7 +19,7 @@ Now that we have a place to save dependency information, use `npm` to install Ty
 npm install typescript --save-dev
 ```
 
-At this point, TypeScript has been installed, but we'll need a configuration file to provide compilation options to the `tsc` binary. Create a TypeScript configuration file i called `tsconfig.json` n the root of the project. Use the template that follows:
+At this point, TypeScript has been installed, but we'll need a configuration file to provide compilation options to the `tsc` binary. Create a TypeScript configuration file called `tsconfig.json` in the root of the project. Use the template that follows:
 
 ```json
 {
@@ -42,7 +42,7 @@ At this point, TypeScript has been installed, but we'll need a configuration fil
 }
 ```
 
-The options we've provided tell TypeScript to emit ES6 JavaScript, which type of module code to generate, and whether or not to provide a corresponding source map for the compiled files, and specify a few other handy options. For a complete overview of the possible options, visit https://aka.ms/tsconfig.json
+The options we've provided tell TypeScript to emit ES6 JavaScript, which type of module code to generate, and whether or not to provide a corresponding source map for the compiled files, and specify a few other handy options. For a complete overview of the possible options, see [Intro to the TSConfig Reference ](https://aka.ms/tsconfig.json)in the Typescript documentation.
 
 For the purposes of this tutorial, the most noteworthy options we've set are `rootDir` and `outDir`. These options describe where our source `.ts` files and our compiled `.js` files, respectively, live within our project. Create the directories referenced by the setting values:
 
