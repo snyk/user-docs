@@ -1,6 +1,6 @@
 # Enterprise implementation guide
 
-Each business and environment is different. With that in mind, this guide aims to help an enterprise business to implement Snyk. The guide provides recommendations on implementing a large-scale rollout, focusing on the stages needed to help get towards an ideal rollout.
+Each business and environment is different. With that in mind, this guide aims to help an enterprise business to implement Snyk. The guide provides recommendations on implementing a large-scale rollout, focusing on the stages needed to help get to an ideal rollout.
 
 The guide starts by recognizing that most businesses:
 
