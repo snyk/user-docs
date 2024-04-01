@@ -453,7 +453,7 @@
     * [Phylum Integration](integrate-with-snyk/vulnerability-management-tools/phylum.md)
     * [Security Compass Integration](integrate-with-snyk/vulnerability-management-tools/security-compass-integration.md)
     * [SentinelOne Integration](integrate-with-snyk/vulnerability-management-tools/sentinelone-integration.md)
-    * [ServiceNow AVR Integration](integrate-with-snyk/vulnerability-management-tools/servicenow-avr-integration.md)
+    * [ServiceNow AppVR Integration](integrate-with-snyk/vulnerability-management-tools/servicenow-avr-integration.md)
     * [ServiceNow SBOM Integration](integrate-with-snyk/vulnerability-management-tools/servicenow-sbom-integration.md)
     * [StackHawk Integration](integrate-with-snyk/vulnerability-management-tools/stackhawk-integration.md)
     * [Sysdig Integration](integrate-with-snyk/vulnerability-management-tools/sysdig-integration.md)
