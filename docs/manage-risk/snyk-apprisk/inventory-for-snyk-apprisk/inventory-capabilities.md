@@ -13,17 +13,48 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 ## **Asset**
 
-The asset column incorporates the name of the repository asset, package, scanned artifact, or container images. [Scanned artifacts](./#scanned-artifacts) do not have a Git remote URL.
+An asset in Snyk AppRisk represents a component in the software development lifecycle that may pose a risk. The following asset types are currently available:
 
-An asset can be the parent of multiple items. Click on the arrow next to the parent asset name to expand the list of all contained items.&#x20;
+* Repository assets
+* Packages
+* Container images
+* Scanned artifacts
 
-Learn more about any asset by clicking the name of the asset in the inventory layout. A pop-up screen is displayed with all relevant information on that specific asset.
+An asset can be the parent of multiple items. For example, a repository asset usually contains one or more package assets.
 
-You can copy the name of an asset or browse the repository. Click an asset and a menu appears at the end of the row. Click the menu, then select **Copy** or **Browse**.
+The Asset column incorporates the name of the repository asset, package, scanned artifact, or container images. Click on the arrow next to the parent asset name to expand the list of all contained items.&#x20;
+
+You can copy the name of an asset or browse the repository. Each asset has a menu at the end of the row. Click the menu, then select **Copy** to copy the URL or **Browse** to navigate to the asset repository.
 
 <figure><img src="../../../.gitbook/assets/Asset options - New UI.png" alt="AppRisk - Asset options"><figcaption><p>Snyk AppRisk - Asset options</p></figcaption></figure>
 
-### Asset tabs
+### Repository assets
+
+Repository assets represent SCM repositories. A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository (in Snyk, this means filling in the `gitRemoteURL` parameter).
+
+If you scan the code locally using CLI, with no association to a repository, then a repository asset will not be created.
+
+### Packages
+
+Packages in Snyk AppRisk are defined as software or libraries that are managed by package management systems.&#x20;
+
+Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk AppRisk to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
+
+### Scanned artifacts
+
+A scanned artifact in Snyk AppRisk is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.&#x20;
+
+Scanned artifacts provide users with visibility into what Snyk AppRisk detects from scans but require additional troubleshooting.&#x20;
+
+You can find scanned artifacts in the Inventory Type view, but they are not supported by Policies. Scanned artifacts may include duplicates due to missing identifying information.
+
+### Container Image assets
+
+You can identify a container image based on the Image ID. If multiple container images have the same Image ID, then only one image asset is generated for that Image ID, enriched with information from all the identified container images for that ID.
+
+Snyk AppRisk retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md) page for more details.
+
+## Asset tabs
 
 The asset information is divided into the following tabs:
 
@@ -31,7 +62,7 @@ The asset information is divided into the following tabs:
   * Class - specifies the business criticality of the asset.
   * Source - specifies the origin of the asset.
   * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
-  * Issues - categorizes the identified types of open issues. If you click on the source title or logo, you are taken to the Project page. If there are multiple Projects, it takes you to a page that displays all the issues across all the Projects.
+  * Issues - categorizes the identified types of open issues.&#x20;
 
 <figure><img src="../../../.gitbook/assets/Asset summary - Issues included.png" alt="AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
 
@@ -39,21 +70,19 @@ The asset information is divided into the following tabs:
 
 <figure><img src="../../../.gitbook/assets/Asset Attributes with Issues.png" alt="AppRisk - Assets Attributes window"><figcaption><p>Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
 
-### Image assets
-
-You can identify a container image based on the Image ID. If multiple container images have the same Image ID, then only one image asset is generated for that Image ID, enriched with information from all the identified container images for that ID.
-
-Snyk AppRisk retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md) for more details.
-
 ## Issues
-
-The Issues column is designed to present a comprehensive list of issues that have been identified within your assets. These findings are the result of scans performed by Snyk as well as internal tools you may have deployed. This detailed list not only helps in understanding the security posture of your assets but also in prioritizing remediation efforts based on the severity and impact of each issue. By having visibility into these issues, you can take proactive steps toward improving the overall security of your applications and infrastructure.
 
 {% hint style="warning" %}
 The Issues column is available in a Closed Beta state and is applicable only for the Snyk AppRisk Pro version. Please contact your salesperson if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
-The **Issues** column from the Asset view is designed to present an aggregated count of open issues. These counts are carefully categorized based on the severity level of the issues found in assets, their children assets, or associated packages. The severity is divided into four distinct levels:
+The Issues column is designed to present a comprehensive list of issues that have been identified within your assets. These findings are the result of scans performed by Snyk as well as internal tools you may have deployed. This detailed list not only helps in understanding the security posture of your assets but also in prioritizing remediation efforts based on the severity and impact of each issue. By having visibility into these issues, you can take proactive steps toward improving the overall security of your applications and infrastructure.
+
+Most of the issues are mapped to an asset. However, some of the issues are associated with an asset but not directly linked to it. This is the case with image assets.&#x20;
+
+You can see these assets under the **Inventory** view, and they will also be reflected under the **Asset and Source Code** column from the **Insights UI** view.&#x20;
+
+The **Issues** column from the Asset view is designed to present an aggregated count of open issues. These counts are carefully categorized based on the severity level of the issues found in assets, their children's assets, or associated packages. The severity is divided into four distinct levels:
 
 * **C** (Critical): Issues that represent a serious threat and should be addressed immediately to prevent potential exploits or major disruptions.
 * **H** (High): These are significant issues that, while not immediately dangerous, could potentially lead to critical vulnerabilities if not resolved in a timely manner.

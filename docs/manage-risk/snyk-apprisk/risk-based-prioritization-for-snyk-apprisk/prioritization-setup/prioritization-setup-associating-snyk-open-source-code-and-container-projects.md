@@ -4,10 +4,23 @@ After you have set up risk-based prioritization, Snyk can set up the required li
 
 To prioritize your Snyk Code and Snyk Open Source vulnerabilities, Snyk needs to understand the relationships between those imported Snyk Projects and the Container Project. Snyk uses the relationships between these Projects as a proxy to understand the composition of the container image.&#x20;
 
+The Insights UI displays a variety of asset types, including but not limited to:
+
+* Repository assets
+* Packages
+* Container images
+* Scanned artifacts
+
+These assets are directly linked to the ones displayed on the [Snyk AppRisk Inventory](../../inventory-for-snyk-apprisk/inventory-capabilities.md) view.&#x20;
+
+{% hint style="info" %}
+For more details regarding supported assets, you can navigate to the [Asset](../../inventory-for-snyk-apprisk/inventory-capabilities.md#asset) and [Issue](../../inventory-for-snyk-apprisk/inventory-capabilities.md#issues) pages.&#x20;
+{% endhint %}
+
 The container image is the build artifact that is deployed and running on your Kubernetes cluster, so Snyk can map your application from its source code to its deployed state by understanding the following:
 
 * The link between the Source Code and Open Source Dependencies and the **image**.
-* What **images** are deployed to Kubernetes and how they are configured.
+* What **images** are deployed to Kubernetes, and how are they configured.
 
 
 
@@ -15,7 +28,7 @@ The container image is the build artifact that is deployed and running on your K
 
 ## Use Project tags to link Projects
 
-Add Snyk [Project tags](../../../../snyk-admin/introduction-to-snyk-projects/project-tags.md) to all the Projects used by your application, to link these Projects together and allow Snyk to represent the whole of the application that you are testing.&#x20;
+Add Snyk [Project tags](../../../../snyk-admin/introduction-to-snyk-projects/project-tags.md) to all the Projects used by your application to link these Projects together and allow Snyk to represent the whole of the application that you are testing.&#x20;
 
 To associate two Projects together, add the exact same tag to both Projects. For example, add the same tag to your Snyk Open Source Projects and Snyk Container Project if they are related to each other.&#x20;
 
