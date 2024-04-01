@@ -11,5 +11,5 @@ You can enable and disable all of these "application context" risk factors throu
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2023-09-26 at 18.45.06.png" alt="Group settings page"><figcaption><p>Insights tab in the Group settings</p></figcaption></figure>
 
 {% hint style="info" %}
-Risk factor settings may take up to two hours to take effect.
+Risk factor settings may take up to four hours to take effect.
 {% endhint %}
