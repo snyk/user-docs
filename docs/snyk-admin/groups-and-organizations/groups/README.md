@@ -11,7 +11,7 @@ As part of your onboarding, Snyk will set you up with a Group for your company. 
 
 ## Group-level options
 
-You can use Group-level options to view [Organizations](broken-reference), [reports](./#group-reports), [dependencies](./#group-dependencies), and [policies](./#group-policies) across all of the Organizations in your Group, configure your [Group settings](./#group-settings), and view all the [users](./#group-members) in a Group.
+You can use Group-level options to view [Organizations](./#group-organizations), [reports](./#group-reports), [dependencies](./#group-dependencies), and [policies](./#group-policies) across all of the Organizations in your Group, configure your [Group settings](./#group-settings), and view all the [users](./#group-members) in a Group.
 
 <figure><img src="../../../.gitbook/assets/2024-04-02_09-27-55.png" alt="Group-level options for Enterprise plan users" width="210"><figcaption><p>Group-level options for Enterprise plan users</p></figcaption></figure>
 

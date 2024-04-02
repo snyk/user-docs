@@ -4,7 +4,7 @@ Snyk administration encompasses the following functions:
 
 * [Manage Groups and Organizations](groups-and-organizations/)
 * [Manage and use Snyk Projects](snyk-projects/)
-* [Manage users in Organizations and Groups](broken-reference)
+* [Manage users in Organizations](groups-and-organizations/organizations/manage-users-in-organizations.md) and [Groups](groups-and-organizations/groups/manage-users-in-a-group.md)
 * [Manage user roles](user-roles/)
 * [Manage notifications](manage-notifications.md)
 * [Manage settings](groups-and-organizations/group-and-organization-settings.md)
@@ -19,7 +19,7 @@ This page covers the following topics:
 **Feature availability**
 
 Some functions, such as Groups, are available only on some [pricing plans](https://snyk.io/plans/).\
-See [Enterprise setup](../enterprise-setup/) for information about set up for Enterprise plan customers.
+See [Enterprise setup](../enterprise-configuration/) for information about set up for Enterprise plan customers.
 {% endhint %}
 
 ## Accounts, Groups, Organizations, Targets, and Projects

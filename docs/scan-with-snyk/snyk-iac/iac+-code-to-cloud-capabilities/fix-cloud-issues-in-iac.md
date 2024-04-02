@@ -26,7 +26,7 @@ Snyk generates [resource mappings](../getting-started-with-iac+-and-cloud-scans/
 
 You must have the following:
 
-* Access to a Snyk [service account](../../../enterprise-setup/service-accounts/) and API token
+* Access to a Snyk [service account](../../../enterprise-configuration/service-accounts/) and API token
 * Access to a Snyk Organization with IaC+
 * Cloud resources deployed to AWS, Azure, and/or Google Cloud with Terraform via CI/CD
 * Terraform version 0.11 or later
