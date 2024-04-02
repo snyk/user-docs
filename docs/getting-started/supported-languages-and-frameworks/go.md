@@ -126,7 +126,7 @@ If full source code analysis is enabled, Snyk uses the `go list -json -deps ./..
 #### Enable full source code analysis
 
 {% hint style="info" %}
-Full source code analysis for Go Modules is currently in [Open beta](../snyk-release-process.md#open-beta).
+Full source code analysis for Go Modules is currently in [Early Access](../snyk-release-process.md#open-beta).
 {% endhint %}
 
 To build the most accurate dependency tree for Go Modules Projects imported from Git, Snyk needs to access all the files in your repository.
