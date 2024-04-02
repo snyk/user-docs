@@ -1,24 +1,54 @@
 # Manage App details
 
-## List Apps
+## List Apps created by an Organization
 
-To view a list of Snyk Apps owned by your Snyk organization, send a `GET` request to the `apps` endpoint (for details, see the [API documentation](https://apidocs.snyk.io/#get-/orgs/-org\_id-/apps)).
+To view a list of Snyk Apps owned by your Snyk Organization, send a `GET` request to the `apps/creations` endpoint:
 
-```
-https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
-```
+`https://api.snyk.io/rest/orgs/{orgId}/apps/creations?version={version}`
+
+For details, refer to the documentation: [Get a list of apps created by an Organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations).
+
+## Update App details
+
+You can update the name of your App or the list of redirect URIs you have set.
+
+To update an App, send a `PATCH` request to the `apps/creations{app_id}` endpoint:
+
+`https://api.snyk.io/rest/orgs/{orgId}/apps/creations{app_id}?version={version}`
+
+The `app_id` path parameter is the `id` in the response to a [`GET` request to the `apps/creations` endpoint](manage-app-details.md#list-apps-created-by-an-organization).
+
+For details, refer to the documentation: [Update app creation attributes such as name, redirect URLs, and access token time to live using the App ID](https://apidocs.snyk.io/#patch-/orgs/-org\_id-/apps/creations/-app\_id-).
+
+## Delete an App
+
+To delete an App from your Snyk Organization, send a DELETE request to the endpoint `apps/creations{app_id}`:
+
+`https://api.snyk.io/rest/orgs/{orgId}/apps/creations/{app_id}?version={version}`
+
+The `app_id` path parameter is the `id` in the response to a [`GET` request to the `apps/creations` endpoint](manage-app-details.md#list-apps-created-by-an-organization).
+
+For details, refer to the documentation: [Delete an app by its App ID](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/apps/creations/-app\_id-).
+
+Deleting an App revokes your App credentials and removes all of your App's installations. If you have active users, they will no longer be able to connect to Snyk through the App.
 
 ## Rotate App clientSecret
 
 You cannot view the `clientSecret` after the App is created. If you have misplaced it, you can rotate your `clientSecret` and receive a new one.
 
-All secret management requests are performed by sending a `POST` request to the endpoint `/apps/{clientId}/secrets`. For more details refer to the [API documentation](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps/-client\_id-/secrets). The `clientId` can be found using the [List Apps endpoint](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org\_id-/apps).
+Perform secret management requests for apps you have created by sending a `POST` request to the endpoint `apps/creations{app_id}/secrets`:
 
-```
-https://api.snyk.io/rest/orgs/{orgId}/apps/{clientId}/secrets?version={version}
-```
+`https://api.snyk.io/rest/orgs/{orgId}/apps/creations/{app_id}/secrets?version={version}`
 
-There are currently three operations that can be performed which are indicated by the body of your POST request:
+The `app_id` path parameter is the `id` in the response to a [`GET` request to the `apps/creations` endpoint](manage-app-details.md#list-apps-created-by-an-organization).
+
+For details, refer to the documentation: [Manage client secret for the Snyk App](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps/creations/-app\_id-/secrets).
+
+{% hint style="info" %}
+For client credentials apps that you have installed, see [Manage client secret for non-interactive Snyk App installations](https://apidocs.snyk.io/?version=2024-03-12#post-/orgs/-org\_id-/apps/installs/-install\_id-/secrets).
+{% endhint %}
+
+You can perform three operations that are indicated by the body of your POST request:
 
 * create `{"mode": "create"}`
 * delete `{"mode": "delete", "secret": "{clientSecret}"}`
@@ -30,40 +60,20 @@ Snyk recommends you adopt the following procedure when rotating your secrets:
 2. Update your services with the newly generated secret
 3. Remove the old secret using `{"mode": "delete", "secret": "{secret}"}`
 
-## Create a clientSecret
+### Create a clientSecret
 
-In normal operation it is recommended that you periodically rotate your client secrets. To start the process, send the request body `{"mode": "create"}` to the endpoint which will create a new secret. The returned value of this call will be your app with the new generated secret. Both the new secret and any existing secrets will be valid until they are manually replaced or deleted. You can also immediately replace a client secret.
+It is recommended that in normal operation you periodically rotate your client secrets. To start the process, send the request body `{"mode": "create"}` to the endpoint which will create a new secret. The returned value of this call will be your app with the newly generated secret. Both the new secret and any existing secrets will be valid until they are manually replaced or deleted. You can also immediately replace a client secret.
 
 An App can have a maximum of two active secrets at any time. This endpoint fails if you try to call `create` when you already have the maximum number of secrets active.
 
-## Delete a clientSecret
+### Replace a clientSecret
 
-To clean up any unused secrets call the endpoint with `{"mode": "delete", "secret": "{clientSecret}"}` where `{clientSecret}` is your client secret that you want to delete. This action invalidates the secret immediately so it can no longer be used.
-
-An App must have at least one active secret; calling delete with your last secret will fail.
-
-## Replace a clientSecret
-
-In the event that your Apps `clientSecret` is leaked, you can generate a new one by using `{"mode": "replace"}`.
+In the event that your App's `clientSecret` is leaked, you can generate a new one by using `{"mode": "replace"}`.
 
 When you replace your `clientSecret`, your current secret is immediately invalid. Your App will not be able to connect to Snyk until you update the App's configuration with the new secret.
 
-## Update App details
+### Delete a clientSecret
 
-You can update your App's name, or the list of redirect URIs you have set.
+To clean up any unused secrets, call the endpoint with `{"mode": "delete", "secret": "{clientSecret}"}` where `{clientSecret}` is your client secret that you want to delete. This action invalidates the secret immediately so it can no longer be used.
 
-To update an App, send a `PATCH` request to the `apps/{clientId}` endpoint (for details, see the [API documentation](https://apidocs.snyk.io/#patch-/orgs/-org\_id-/apps/-client\_id-)). The clientId can be found using the [List Apps endpoint](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org\_id-/apps).
-
-```
-https://api.snyk.io/rest/orgs/{orgId}/apps/{clientId}?version={version}
-```
-
-## Delete an App
-
-To delete an App from your Snyk Organization, send a DELETE request to the `apps` endpoint (for details, see the [API documentation](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#delete-/orgs/-org\_id-/apps/-client\_id-)):
-
-```
-https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
-```
-
-Deleting an App will revoke your App credentials and remove all of your App's installations. If you have active users, they will no longer be able to connect to Snyk through the App.
+An App must have at least one active secret; calling delete with your last secret will fail.
