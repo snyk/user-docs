@@ -7,7 +7,7 @@ Snyk Groups are only available on certain [pricing plans](https://snyk.io/plans/
 
 ## Groups, Organizations, and Projects
 
-Snyk has a [hierarchy](broken-reference) that allows you to control access to Snyk scanning and features. Key parts of the hierarchy are illustrated in this diagram:
+Snyk has a hierarchy that allows you to control access to Snyk scanning and features. Key parts of the hierarchy are illustrated in this diagram:
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt="Groups, Organizations and Projects"><figcaption><p>Groups, Organizations and Projects</p></figcaption></figure>
 

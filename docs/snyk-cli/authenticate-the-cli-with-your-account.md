@@ -32,7 +32,7 @@ You can authenticate Snyk CLI in your CI/CD programmatically as follows:
   `snyk test`
 {% endhint %}
 
-You can specify either your personal API token or a service token, available for Enterprise customers only. See [Service accounts](../enterprise-configuration/service-accounts/) for information on using service tokens.
+You can specify either your personal API token or a service token, available for Enterprise customers only. See [Service accounts](../enterprise-setup/service-accounts/) for information on using service tokens.
 
 ## Steps to authenticate using your API token
 

@@ -19,7 +19,7 @@ This page covers the following topics:
 **Feature availability**
 
 Some functions, such as Groups, are available only on some [pricing plans](https://snyk.io/plans/).\
-See [Enterprise setup](../enterprise-configuration/) for information about set up for Enterprise plan customers.
+See [Enterprise setup](../enterprise-setup/) for information about set up for Enterprise plan customers.
 {% endhint %}
 
 ## Accounts, Groups, Organizations, Targets, and Projects
