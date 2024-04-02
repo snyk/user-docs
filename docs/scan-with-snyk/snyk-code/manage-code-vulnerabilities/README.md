@@ -16,17 +16,19 @@ When you import a repository, Snyk creates a Target folder that contains differe
 
 Snyk Code creates a single Project for all the imported files from a repository. This aggregates vulnerabilities detected in the repository code into one Project, presenting the data flow of a vulnerability issue across multiple files.
 
+Automate importing multiple repositories using [Snyk API v1 Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets).
+
 ## Code testing from import to retest
 
 Here is an overview of the testing process in Snyk Code based on the testing phases.
 
-<table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../import-repository-to-snyk/">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
+<table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../import-repository-to-snyk.md">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
 
 ### Retesting code repository
 
 If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by clicking the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](../../../working-with-snyk/what-counts-as-a-test.md)
 
-You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Excluding directories and files from the import process](../import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md).
+You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Excluding directories and files from the import process](../../import-project-repository/excluding-directories-and-files-from-the-import-process.md).
 
 <figure><img src="../../../.gitbook/assets/Retest Code.png" alt="Retesting a repository."><figcaption><p>Retesting repository </p></figcaption></figure>
 
@@ -60,11 +62,11 @@ To understand the results, see [Breakdown of Code analysis](breakdown-of-code-an
 
 ### Import additional repositories
 
-If you have existing Projects in your Snyk account, you can add additional repositories for Snyk to test. See [Import repository to Snyk](../import-repository-to-snyk/#import-repository-to-snyk).
+If you have existing Projects in your Snyk account, you can add additional repositories for Snyk to test. See [Import repository to Snyk](../import-repository-to-snyk.md#import-repository-to-snyk).
 
 ### Remove repositories from testing
 
-You can remove the Code analysis Project or delete imported repositories if you no longer need to test them for vulnerabilities. See [Remove imported repository](../import-repository-to-snyk/remove-imported-repository.md).
+You can remove the Code analysis Project or delete imported repositories if you no longer need to test them for vulnerabilities. See [Remove imported repository](../../import-project-repository/remove-imported-repository.md).
 
 ### Exclude directories and files
 

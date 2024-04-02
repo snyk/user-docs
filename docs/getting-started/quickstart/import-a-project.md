@@ -5,6 +5,8 @@
 You have [created a Snyk account](create-or-log-in-to-a-snyk-account.md) and [integrated with your source code (Git) repository](set-up-an-integration.md) to allow access to your code for scanning. You can now run scans.
 {% endhint %}
 
+## Import Project
+
 **Snyk Projects** are items that Snyk scans for issues, for example, a manifest file listing your open-source dependencies.
 
 When you import a Project, Snyk scans that imported Project, and displays the results for you to review.
@@ -17,7 +19,7 @@ Video demonstration of importing projects via the Snyk Web UI
 
 The steps to import a Project are as follows:
 
-* Select **Projects** > **Add Project,** and select where to import the Project from, for example, select **GitHub** to import from your GitHub repository, or select **CLI** to use the [Snyk CLI](../../snyk-cli/) locally:
+1. Select **Projects** > **Add Project,** and select where to import the Project from, for example, select **GitHub** to import from your GitHub repository, or select **CLI** to use the [Snyk CLI](../../snyk-cli/) locally:
 
 <div align="left">
 
@@ -25,8 +27,8 @@ The steps to import a Project are as follows:
 
 </div>
 
-* Select the repositories to use; then click **Add selected repositories** to import the selected repositories into your Project.\
-  You can choose optional Settings for the Project you are importing: **Add custom file location** and **Exclude folders**, supported only for Snyk Open Source and Snyk Container. For details, see [Adding custom file locations and excluding folders](https://docs.snyk.io/integrations/git-repository-scm-integrations/snyk-azure-repositories-tfs-integration#adding-custom-file-locations-and-excluding-folders) in the documentation for Azure repositories integrations,
+2. Select the repositories to use; then click **Add selected repositories** to import the selected repositories into your Project.\
+   You can choose optional Settings for the Project you are importing: **Add custom file location** and **Exclude folders**, supported only for Snyk Open Source and Snyk Container. For details, see [Adding custom file locations and excluding folders](https://docs.snyk.io/integrations/git-repository-scm-integrations/snyk-azure-repositories-tfs-integration#adding-custom-file-locations-and-excluding-folders) in the documentation for Azure repositories integrations,
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-10-20 at 15.20.49.png" alt="Select GitHub repositories to import"><figcaption><p>Select GitHub repositories to import</p></figcaption></figure>
 

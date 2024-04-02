@@ -53,7 +53,7 @@ You can use the `.snyk` file to specify files or directories in a repository tha
 
 For Projects imported using a code repository integration as opposed to using the `snyk monitor` command, the `--policy-path` option is not available. The `.snyk` file applies only to Projects found on the same path as the `.snyk` file.
 
-For details, see [Excluding directories and files from the import process](../../scan-with-snyk/snyk-code/import-repository-to-snyk/excluding-directories-and-files-from-the-import-process.md).
+For details, see [Excluding directories and files from the import process](../../scan-with-snyk/import-project-repository/excluding-directories-and-files-from-the-import-process.md).
 
 ## Use the `.snyk` file with Snyk IaC
 

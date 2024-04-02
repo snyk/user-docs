@@ -1,4 +1,4 @@
-# Exclude directories and files from the import process
+# Exclude directories and files from Project import
 
 When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the `.snyk` file. The `.snyk` file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The `.snyk` file should be created in the repository you intend to import.
 
@@ -12,7 +12,7 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 Consider excluding directories and files only if you do not publish or compile them into production. If a trace goes through an excluded file or directory with existing vulnerabilities, Snyk might miss potential issues.
 {% endhint %}
 
-You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md), by creating the `.snyk` file in your tested repository.
+You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md), by creating the `.snyk` file in your tested repository.
 
 ## **Exclusion syntax of the .snyk file**
 
@@ -61,7 +61,7 @@ Follow these steps to exclude directories and files from the import process usin
 
 1\. In the repository you want to import, create a YAML file called `.snyk`, for example:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png" alt=".snyk file in a repository"><figcaption><p><code>.snyk</code> file in a repository</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png" alt=".snyk file in a repository"><figcaption><p><code>.snyk</code> file in a repository</p></figcaption></figure>
 
 2\. In the `.snyk` file, specify the directories or files or both that you want to exclude from import according to the following syntax:
 
@@ -88,9 +88,9 @@ exclude:
 
     On the **Projects** page, click the **Code analysis** Project of the repository. Then, on the **Code Analysis** page, click the **Retest now** option:
 
-<figure><img src="../../../.gitbook/assets/image (459).png" alt="Retest now option"><figcaption><p>Retest now option</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (459).png" alt="Retest now option"><figcaption><p>Retest now option</p></figcaption></figure>
 
-* If the repository was not imported yet to Snyk, [import the repository](./#import-repository-to-snyk).
+* If the repository was not imported yet to Snyk, [import the repository](../snyk-code/import-repository-to-snyk.md#import-repository-to-snyk).
 
 Your repository is imported to Snyk, without the directories and/or files you selected to exclude.
 
@@ -98,20 +98,20 @@ Your repository is imported to Snyk, without the directories and/or files you se
 
 We have a repository called `snyk-goof`, which we want to test for vulnerabilities using Snyk Code. After we import his repository to Snyk, we get a list of ten detected vulnerability issues, which were found in three files:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Before Exclude.png" alt="Vulnerabilities detected found in three files"><figcaption><p>Vulnerabilities detected found in three files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Before Exclude.png" alt="Vulnerabilities detected found in three files"><figcaption><p>Vulnerabilities detected found in three files</p></figcaption></figure>
 
 Now we want to exclude the `app.js` and `db.js` files from the Snyk Code analysis. To achieve that, we do the following:
 
 1\. We create a `.snyk` file in the **snyk-goof** repository in GitHub:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - Exlude from Import - Example - .snyk file creation.png" alt=".snyk file in snyk-goof repository"><figcaption><p><code>.snyk</code> file in snyk-goof repository</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - Example - .snyk file creation.png" alt=".snyk file in snyk-goof repository"><figcaption><p><code>.snyk</code> file in snyk-goof repository</p></figcaption></figure>
 
 2\. In the `.snyk` file, we enter the following commands to exclude the `app.js` and `db.js` files from the import:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Command.png" alt=".snyk file commands"><figcaption><p><code>.snyk</code> file commands</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Command.png" alt=".snyk file commands"><figcaption><p><code>.snyk</code> file commands</p></figcaption></figure>
 
 3\. We retest the **snyk-goof** repository by clicking the **Retest now** option on the **Code Analysis** page for the repository.
 
 The `app.js` and `db.js` files are excluded from the retest and therefore are not tested by Snyk Code and do not appear in the Code Analysis results. Now only five vulnerability issues are detected:
 
-<figure><img src="../../../.gitbook/assets/image (545) (1).png" alt="Detected issues after files are excluded"><figcaption><p>Detected issues after files are excluded</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (545) (1).png" alt="Detected issues after files are excluded"><figcaption><p>Detected issues after files are excluded</p></figcaption></figure>
