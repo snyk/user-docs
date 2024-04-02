@@ -30,7 +30,7 @@ Click on an issue to view details, including its [priority score](../../scan-wit
 
 </div>
 
-* Click **Learn about this type of vulnerability** for [Snyk Learn](../../getting-started/snyk-learn.md) training.
+* Click **Learn about this type of vulnerability** for [Snyk Learn](../../getting-started/snyk-learn/) training.
 * Click **Show more detail** to view detailed information about the vulnerability from the [Snyk Vulnerability database](https://snyk.io/product/vulnerability-database/):
 
 <div align="left">

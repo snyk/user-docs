@@ -34,7 +34,7 @@ For details, see [Issue card information](../../snyk-admin/snyk-projects/issue-c
 Snyk provides detailed resources for more information about vulnerabilities, accessible directly from the card:
 
 * [**Snyk Vulnerability Database**](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md): access details on a specific vulnerability.
-* [**Snyk Learn**](../../getting-started/snyk-learn.md): access general information about that type of vulnerability.
+* [**Snyk Learn**](../../getting-started/snyk-learn/): access general information about that type of vulnerability.
 
 ### Access Snyk Vulnerability Database
 
