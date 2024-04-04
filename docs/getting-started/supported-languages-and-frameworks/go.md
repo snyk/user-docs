@@ -152,9 +152,9 @@ If you have private modules in repositories from other Git organizations, your P
 
 Private module support in different SCMs varies depending on whether [full source code analysis](go.md#enable-full-source-code-analysis) is enabled or disabled.
 
-| Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                       |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| <ul><li>Gitlab</li><li>GitHub Enterprise</li><li>GitHub</li><li>Bitbucket Server</li><li>Bitbucket Cloud</li><li>Azure Repos</li></ul> | <p></p><ul><li>GitHub</li><li>GitHub Enterprise</li><li>Gitlab</li></ul> |
+| Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                                |
+| -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| <ul><li>Gitlab</li><li>GitHub Enterprise</li><li>GitHub</li><li>Bitbucket Server</li><li>Bitbucket Cloud</li><li>Azure Repos</li></ul> | <p></p><ul><li>GitHub</li><li>GitHub Enterprise</li><li>Bitbucket Cloud</li></ul> |
 
 #### **Snyk Broker**
 
