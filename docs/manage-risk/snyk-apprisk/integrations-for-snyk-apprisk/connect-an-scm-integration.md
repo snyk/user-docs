@@ -128,7 +128,6 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
      * **Project and Team** - read
      * **Graph** - read
      * **Analytics** - read
-     * **Build** - read
      * **Release** - read
      * **Security** - manage
    * Organization - Select **All accessible organizations** or a specific organization.
