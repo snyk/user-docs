@@ -401,6 +401,7 @@
     * [Container security with DigitalOcean integration](integrate-with-snyk/snyk-container-integrations/container-security-with-digitalocean-integration.md)
     * [Container security with GitLab Container Registry integration](integrate-with-snyk/snyk-container-integrations/container-security-with-gitlab-container-registry-integration.md)
     * [Container security with GAR integration](integrate-with-snyk/snyk-container-integrations/container-security-with-gar.md)
+    * [Container security with Snyk Docker Desktop Extension](scan-with-snyk/snyk-container/snyk-docker-desktop-extension/snyk-docker-desktop-extension.md)
   * [Cloud platforms integrations](integrate-with-snyk/cloud-platforms-integrations/README.md)
     * [AWS Integration](integrate-with-snyk/cloud-platforms-integrations/aws-integration/README.md)
       * [AWS Integration: Web UI](integrate-with-snyk/cloud-platforms-integrations/aws-integration/aws-integration-web-ui/README.md)
