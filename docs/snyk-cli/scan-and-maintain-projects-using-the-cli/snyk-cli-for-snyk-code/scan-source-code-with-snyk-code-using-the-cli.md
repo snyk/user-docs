@@ -24,7 +24,7 @@ snyk code test
 
 No additional options are required for using the `snyk code test` command to test a repository from its root folder.
 
-Snyk Code tests the current folder and displays the [test results](broken-reference) in the terminal.
+Snyk Code tests the current folder and displays the [test results](view-snyk-code-cli-results.md) in the terminal.
 
 For example, to test the `snyk-goof` repository from its root folder, first change the directory to the root folder of the repository. Then enter:
 

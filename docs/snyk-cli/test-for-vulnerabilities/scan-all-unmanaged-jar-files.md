@@ -4,7 +4,7 @@ The Snyk CLI can scan unmanaged JAR files in [Java applications](broken-referenc
 
 The CLI identifies the package name, version, and vulnerabilities only if the package is available in Maven Central, and the JAR file hash matches the hash in Maven Central.
 
-**Prerequisite:** You must install a [supported version](broken-reference/) of Maven to scan unmanaged JAR files.
+**Prerequisite:** You must install a [supported version](../../getting-started/supported-languages-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) of Maven to scan unmanaged JAR files.
 
 ## Scanning all JAR files in a single folder and scanning each JAR file individually
 
