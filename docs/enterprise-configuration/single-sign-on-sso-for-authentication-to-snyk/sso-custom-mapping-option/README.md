@@ -6,7 +6,7 @@ Custom mappings allows you to dynamically assign users to your Snyk Groups and O
 Work with your Snyk account team to implement this option.
 {% endhint %}
 
-To understand more about roles and permissions within Snyk, see [Managing permissions](broken-reference).
+To understand more about roles and permissions within Snyk, see [Managing permissions](../../../snyk-admin/user-roles/pre-defined-roles.md).
 
 See also [User role management](../../../snyk-admin/user-roles/user-role-management.md) and [Roles in Custom SSO](../../../snyk-admin/user-roles/user-role-management.md#roles-in-custom-sso).
 
