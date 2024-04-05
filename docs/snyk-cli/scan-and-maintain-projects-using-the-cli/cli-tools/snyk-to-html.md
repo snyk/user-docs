@@ -1,6 +1,6 @@
 # snyk-to-html
 
-The CLI provides a direct or automated way to fail the build and, by default, provides only summary information unless you use the `--json` or `--sarif` format. You can direct this output to a file; these files include the issues discovered. The formats are not human-readable.
+The CLI provides a direct or automated way to fail the build and, by default, provides only summary information unless you use the `--json` or `--sarif` format.  You can direct this output to a file; these files include the issues discovered. The formats are not human-readable.
 
 You can use `snyk-to-html` (the Snyk JSON to HTML Mapper) to:
 
@@ -8,6 +8,10 @@ You can use `snyk-to-html` (the Snyk JSON to HTML Mapper) to:
 * Create an HTML report of the full context of a vulnerability that you can view in a browser
 
 This page explains how to [install `snyk-to-html`](snyk-to-html.md#install-snyk-to-html), [use the `snyk-to-html` tool](snyk-to-html.md#use-the-snyk-to-html-tool) to export the test results in JSON or SARIF format to an HTML file, and [view the test results in a browser](snyk-to-html.md#view-test-results-in-html-format).
+
+{% hint style="warning" %}
+Note, only `json` output is supported for Open Source (SCA) scans. `sarif` output will return no results from the `snyk-to-html` process for Open Source tests.&#x20;
+{% endhint %}
 
 ## Install `snyk-to-html`
 
@@ -31,11 +35,11 @@ node ./dist/index.js
 
 You can run `snyk-to-html` as part of a `snyk test` command to create a readable build artifact as part of the output of a test.
 
-You can also run a `snyk test` command with the option to export the results to a JSON file and then convert the JSON  file to HTML using  `snyk-to-html`. You can export Snyk Code results to a SARIF file and convert that file to HTML.
+You can also run a `snyk test` command with the option to export the results to a JSON file and then convert the JSON  file to HTML using  `snyk-to-html`. You can export Snyk Code results to either a JSON or a SARIF file and convert that file to HTML.
 
 When you run the `snyk-to-html` command, you can customize it with the following command options:
 
-<table data-header-hidden><thead><tr><th width="105"></th><th width="134"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Short</strong></td><td><strong>Long</strong></td><td><strong>Description</strong></td><td><strong>Default</strong></td></tr><tr><td><code>-i</code></td><td><code>--input</code></td><td>The input path of the JSON or SARIF file that contains the test results.</td><td><code>stdin</code></td></tr><tr><td><code>-o</code></td><td><code>--output</code></td><td><p>Precedes the name of the output file of the HTML results.</p><p>Example:<br><code>-o results.html</code></p></td><td><code>stdout</code></td></tr><tr><td><code>-t</code></td><td><code>--template</code></td><td>Template location for generating the HTML.</td><td><code>template/test-report.hbs</code></td></tr><tr><td><code>-s</code></td><td><code>--summary</code></td><td>Generates an HTML file with only the summary instead of the details report.</td><td>Details vulnerability report</td></tr><tr><td><code>-a</code></td><td><code>--actionalable-remediation</code></td><td>Display actionable remediation info if available.</td><td>Not applicable</td></tr><tr><td><code>-d</code></td><td><code>--debug</code></td><td>Run the command in debug mode.</td><td>Not applicable</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="105"></th><th width="134"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Short</strong></td><td><strong>Long</strong></td><td><strong>Description</strong></td><td><strong>Default</strong></td></tr><tr><td><code>-i</code></td><td><code>--input</code></td><td>The input path of the JSON or SARIF file that contains the test results. SARIF format is not supported for open source scan results </td><td><code>stdin</code></td></tr><tr><td><code>-o</code></td><td><code>--output</code></td><td><p>Precedes the name of the output file of the HTML results.</p><p>Example:<br><code>-o results.html</code></p></td><td><code>stdout</code></td></tr><tr><td><code>-t</code></td><td><code>--template</code></td><td>Template location for generating the HTML.</td><td><code>template/test-report.hbs</code></td></tr><tr><td><code>-s</code></td><td><code>--summary</code></td><td>Generates an HTML file with only the summary instead of the details report.</td><td>Details vulnerability report</td></tr><tr><td><code>-a</code></td><td><code>--actionalable-remediation</code></td><td>Display actionable remediation info if available.</td><td>Not applicable</td></tr><tr><td><code>-d</code></td><td><code>--debug</code></td><td>Run the command in debug mode.</td><td>Not applicable</td></tr></tbody></table>
 
 The `snyk-to-html` command does not generate the standard exit codes.
 
