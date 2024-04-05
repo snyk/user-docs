@@ -1,30 +1,30 @@
-# Docker Desktop Snyk Extension
+# Container security with Snyk Docker Desktop Extension
 
-Docker Desktop is a GUI that can be installed on Mac, Windows, or Linux to simplify the management of containers and containerized applications. Snyk has a Docker Desktop extension, allowing developers and platform teams to scan container images for vulnerabilities within the Docker Desktop interface.
+Docker Desktop is a GUI that simplifies the management of containers and containerized applications. You can use it with Mac, Windows, or Linux.
 
-## How to Install and Run the Snyk Docker Desktop Extension
+Snyk has a Docker Desktop extension that allows developers and platform teams to scan container images for vulnerabilities within the Docker Desktop interface.
 
-From the Docker Desktop Homescreen:
+To install and run the Snyk Docker Desktop Extension:
 
-1. Select "Extensions" from the homepage then select "Marketplace":  
-   ![Snyk Extension in Marketplace](../../../.gitbook/assets/marketplace_step1.png)
+1.  On the Docker Desktop home screen, click the three dots next to **Extensions**, and select **Marketplace**.\
 
-&nbsp;
 
-2. Once in the Marketplace view, scroll down until you find the Snyk extension. Click to install:  
-   ![Install Snyk Extension](../../../.gitbook/assets/install_docker_desktopext_step2.png)
+    <figure><img src="../../../.gitbook/assets/Docker_Desktop_Marketplace.png" alt="Marketplace on Docker Desktop"><figcaption><p>Marketplace on Docker Desktop</p></figcaption></figure>
+2.  In the **Marketplace** window, navigate to the Snyk Extension and click **Install**.\
 
-&nbsp;
 
-3. Once the extension has been installed, click to "open" to launch the extension. This takes you to the Snyk Extension page:  
-   ![Snyk Extension Page](../../../.gitbook/assets/snyk_ext_page_step3.png)
+    <figure><img src="../../../.gitbook/assets/Install_Snyk_Docker_Desktop_Extension (2).png" alt="Install Snyk Extension on Docker Desktop"><figcaption><p>Install Snyk Extension on Docker Desktop</p></figcaption></figure>
 
-&nbsp;
+&#x20;
 
-4. Click the settings button to add your API token or service account token:  
-   ![Add API Token](../../../.gitbook/assets/add_token_step4.png)
+3.  After installation, launch the Snyk Extension and click **Settings**.
 
-&nbsp;
+    <figure><img src="../../../.gitbook/assets/Snyk_Ext_page_Docker_Deskop.png" alt=""><figcaption><p>Snyk Extension page on Docker Desktop</p></figcaption></figure>
+4.  In the **Settings** window, add your API token or service account token and click **Save**.\
 
-5. Select the local image you want to scan from the dropdown and then click "Test image":  
-   ![Test Image](../../../.gitbook/assets/extresults_step5.png)
+
+    <figure><img src="../../../.gitbook/assets/Add_token_Docker_Desktop.png" alt="Add authorization token in the Settings window"><figcaption><p>Add authorization token in the Settings window</p></figcaption></figure>
+
+You can now select the local image you want to scan with Snyk by clicking **Test image**.
+
+<figure><img src="../../../.gitbook/assets/Images_list_Docker_Desktop.png" alt="List of images in the Snyk Extension window"><figcaption><p>List of images in the Snyk Extension window</p></figcaption></figure>
