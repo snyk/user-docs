@@ -4,7 +4,7 @@
 
 Before managing vulnerabilities with Snyk Code, ensure the following:
 
-* You have completed [Quickstart](../../../getting-started/quickstart/).
+* You have completed the [Quickstart](../../../getting-started/quickstart/).
 * Your repositories contain code in a [supported language and platform](../../../getting-started/supported-languages-and-frameworks/).&#x20;
 * You have [configured Snyk Code](../configure-snyk-code.md).
 
@@ -28,7 +28,7 @@ Here is an overview of the testing process in Snyk Code based on the testing pha
 
 If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by clicking the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](../../../working-with-snyk/what-counts-as-a-test.md)
 
-You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Excluding directories and files from the import process](../../import-project-repository/excluding-directories-and-files-from-the-import-process.md).
+You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Exclude directories and files from Project import](../../import-project-repository/excluding-directories-and-files-from-the-import-process.md).
 
 <figure><img src="../../../.gitbook/assets/Retest Code.png" alt="Retesting a repository."><figcaption><p>Retesting repository </p></figcaption></figure>
 
@@ -72,7 +72,7 @@ You can remove the Code analysis Project or delete imported repositories if you 
 
 Adjust your import settings to exclude specific directories and files from being tested.
 
-To exclude specific files and directories from being imported by Snyk Code, you need to create a `.snyk` YAML policy file in your repository. See [Exclude directories and files from the import process](./#exclude-directories-and-files).
+To exclude specific files and directories from being imported by Snyk Code, you need to create a `.snyk` YAML policy file in your repository. See [Exclude directories and files from Project import](../../import-project-repository/excluding-directories-and-files-from-the-import-process.md).
 
 ### Open repository external link&#x20;
 
