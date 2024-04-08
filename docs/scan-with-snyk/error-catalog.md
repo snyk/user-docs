@@ -938,6 +938,30 @@ The configuration parameter does not meet the expected data type. Please ensure 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
+### [SNYK-OS-NODEJS-0016](#snyk-os-nodejs-0016)
+
+#### Out of Sync Error
+
+Sometimes a project may become out of sync between the lockfile and the manifest file. This might happen if the package.json is modified or updated but the pnpm-lock.yaml is not. 
+
+This can be resolved by ensuring the lockfile and manifest file are correctly synced, by executing pnpm install.
+
+In some cases, it may be necessary to delete the node_modules folder and the pnpm-lock.yaml and run pnpm install again to force a full reinstall. 
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://support.snyk.io/hc/en-us/articles/360000912457-Out-of-sync-manifest-lockfile-in-the-project](https://support.snyk.io/hc/en-us/articles/360000912457-Out-of-sync-manifest-lockfile-in-the-project)
+
+### [SNYK-OS-NODEJS-0017](#snyk-os-nodejs-0017)
+
+#### Unsupported pnpm lockfile version
+
+The lockfile version is not supported. Supported lockfile versions for pnpm include v5 and v6.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-PYTHON-0001](#snyk-os-python-0001)
 
 #### Unsupported manifest file type for remediation
@@ -1750,4 +1774,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-03-29T06:59:49.487Z
+--- Generated at 2024-04-08T11:10:57.422Z
