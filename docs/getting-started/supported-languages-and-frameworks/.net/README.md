@@ -2,10 +2,6 @@
 
 ## Supported frameworks and package managers
 
-{% hint style="warning" %}
-You might encounter false positives or false negatives for partially supported frameworks and package managers.
-{% endhint %}
-
 ### Code analysis
 
 Snyk Code supports the following frameworks:
@@ -27,6 +23,10 @@ Features may not be available, depending on your plan. See [pricing plans](https
 | ------------------------------------------------------ | ----------- | ----------- | ---------------- | ------- |
 | [NuGet](https://www.nuget.org)                         | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
 | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎          |             |                  |         |
+
+{% hint style="warning" %}
+You might encounter false positives or false negatives for partially supported frameworks and package managers.
+{% endhint %}
 
 {% hint style="warning" %}
 Snyk does not currently support PackageReference without a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.\
