@@ -48,7 +48,7 @@ Ensure you are adding a custom field called repoURL:
 7. Click the **Done** button.
 8. When the connection is established, the status of the Veracode integration is changed to **Connected**.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="Integration Hub - Veracode setup"><figcaption><p>Integration Hub - Veracode setup</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (11).png" alt="Integration Hub - Veracode setup"><figcaption><p>Integration Hub - Veracode setup</p></figcaption></figure>
 
 ## Checkmarx setup guide
 

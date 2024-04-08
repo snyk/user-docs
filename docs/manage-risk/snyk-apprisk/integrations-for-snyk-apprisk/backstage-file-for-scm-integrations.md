@@ -20,17 +20,18 @@ You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBuck
 2. Select an SCM integration.&#x20;
 3. Click the **Settings** option of the SCM integration.&#x20;
 4. Enable the **Add Backstage Catalog** option.
-5. Select at least one attribute you want to add to Snyk AppRisk.
+5. Optional - if the Backstage catalog filename in your repository is not `catalog-info.yaml` you can change the default value in the Backstage catalog filename field.
+6. Select at least one attribute you want to add to Snyk AppRisk.
 
 {% hint style="info" %}
 Snyk AppRisk parses the fields of the detected file using the default field names unless an alternate field name is specified.
 {% endhint %}
 
-6. Click the **Done** button.
+7. Click the **Done** button.
 
-<figure><img src="../../../.gitbook/assets/image (364).png" alt="Integration Hub - Backstage setup"><figcaption><p>Integration Hub - Backstage setup</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Integration Hub - Backstage setup"><figcaption><p>Integration Hub - Backstage setup</p></figcaption></figure>
 
-After you finish configuring the Backstage catalog, Snyk AppRisk starts enriching your repository assets with the data found in the `catalog-info.yaml` file.
+After you finish configuring the Backstage catalog, Snyk AppRisk starts enriching your repository assets with the data found in the backstage catalog .yaml file.
 
 ## Backstage catalog in Asset Inventory
 
@@ -54,7 +55,7 @@ The Backstage data is dynamic and may change over time:
 
 Depending on the selection you made on the Integration Hub configuration menu, only those selections are displayed in filters from the Inventory menu. For example, if you selected the Category attribute, then it will also be displayed in the filters list.
 
-<figure><img src="../../../.gitbook/assets/image (365).png" alt="Backstage selections in the Integration Hub menu"><figcaption><p>Backstage selections in the Integration Hub menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt="Backstage selections in the Integration Hub menu"><figcaption><p>Backstage selections in the Integration Hub menu</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (367).png" alt="Backstage selections in the Snyk AppRisk Inventory menu" width="375"><figcaption><p>Backstage selections in the Snyk AppRisk Inventory menu</p></figcaption></figure>
 

@@ -38,11 +38,11 @@ Here are the steps for creating a policy:
 3. Define the filters of your policy and click **Apply**.
 4.  Set actions for your policy. Click the + icon to add an action. You can trigger an action based on the assets you have filtered or create a logic node to combine it with another filter node.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (2) (12).png" alt="Create policy - multiple nodes"><figcaption><p>Create policy - Multiple nodes</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (12) (1).png" alt="Create policy - multiple nodes"><figcaption><p>Create policy - Multiple nodes</p></figcaption></figure>
 5. When you add another filter node and select the + icon next to it, you can flow into existing logic nodes.
 6.  Trigger an action based on the assets you have filtered.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Create policy - Set action</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (7).png" alt=""><figcaption><p>Create policy - Set action</p></figcaption></figure>
 
 ### Policy freshness
 
