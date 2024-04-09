@@ -83,4 +83,4 @@ redirects:
   scan-applications/supported-languages-and-frameworks: /getting-started/supported-languages-frameworks-and-feature-availability-overview/README.md
   manage-risk/insights/insights-setup/insights-setup-associating-snyk-open-source-code-and-container-projects: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/prioritization-setup/prioritization-setup-associating-snyk-open-source-code-and-container-projects.md
   snyk-admin/groups-and-organizations/groups/use-group-level-options: snyk-admin/groups-and-organizations/groups.md
-  scan-with-snyk/snyk-code/custom-rules/cwe-312-query-example: scan-with-snyk/snyk-code/custom-rules/create-queries-with-snyk-code-custom-rules.md#cwe-312-query-example
+  scan-with-snyk/snyk-code/custom-rules/cwe-312-query-example: scan-with-snyk/snyk-code/custom-rules/create-queries-with-snyk-code-custom-rules.md
