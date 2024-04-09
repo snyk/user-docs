@@ -2,9 +2,7 @@
 
 ## Supported frameworks and package managers
 
-{% hint style="warning" %}
-You might encounter false positives or false negatives for partially supported frameworks and package managers.\
-\
+{% hint style="info" %}
 Objective-C is supported only by Snyk Open Source.
 {% endhint %}
 

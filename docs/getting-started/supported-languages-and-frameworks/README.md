@@ -1,10 +1,10 @@
 # Supported languages and frameworks
 
-Get an overview of supported languages and package managers across Snyk environments, including feature availability for open source and licensing (Snyk Open Source) and code analysis (Snyk Code).
+This page provides an overview of supported languages and package managers across Snyk environments, including feature availability for open source and licensing (Snyk Open Source) and code analysis (Snyk Code).
 
 ## Open source and licensing (Snyk Open Source)
 
-Below, you can find information about the programming languages, fully supported package managers, and features for Snyk Open Source.
+Here you can find information about the programming languages, fully supported package managers, and features for Snyk Open Source.
 
 {% hint style="info" %}
 Before scanning your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
@@ -270,7 +270,7 @@ Before scanning your Open Source Project for vulnerabilities, with limited excep
 
 ## Code analysis (Snyk Code)
 
-Below, you can find information about the programming languages, fully supported frameworks, and features for Snyk Code.
+Here you can find information about the programming languages, fully supported frameworks, and features for Snyk Code.
 
 ### [Apex](apex.md)
 

@@ -2,10 +2,6 @@
 
 ## Supported frameworks and package managers
 
-{% hint style="warning" %}
-You might encounter false positives or false negatives for partially supported frameworks and package managers.
-{% endhint %}
-
 ### Code analysis
 
 Snyk Code supports the following frameworks:

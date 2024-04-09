@@ -21,15 +21,13 @@ For further information on .NET automated fixes, see the [Snyk blog](https://sny
 * **Build-time dependency**: Snyk understands build-time dependency to be resolved during build time and not susceptible to change at runtime.
 * **Runtime dependency**: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc\_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
 
-### Tackling vulnerabilities from runtime dependencies
+You can choose one of the following actions to address **vulnerabilities from runtime dependencies**. These vary between the SCM and the CLI.
 
-There are a couple of actions you can choose to take to address these types of vulnerable dependencies. These vary between the SCM and the CLI.
-
-#### **Vulnerabilities from runtime dependencies in SCM**
+### **Vulnerabilities from runtime dependencies in SCM**
 
 If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your Project, you may choose to [ignore](../../../manage-risk/prioritize-your-issues/ignore-issues/) it.
 
-#### **Vulnerabilities from runtime dependencies in CLI**
+### **Vulnerabilities from runtime dependencies in CLI**
 
 If you believe you have found false positives because when the application runs in production, you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your Project, you may [ignore](../../../manage-risk/prioritize-your-issues/ignore-issues/) them and do the following:
 
@@ -102,11 +100,11 @@ For more information on Paket support, see [Snyk for .NET](./).
 
 Snyk provides custom test APIs for your unique dependency management strategies.
 
-:link: [Purl issues](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org\_id-/packages/-purl-/issues)&#x20;
+:link: [List issues for a package](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org\_id-/packages/-purl-/issues)&#x20;
 
 ## Build-time versus runtime dependencies
 
-See [Snyk for .NET](./) for more information
+See [.NET](./) for more information
 
 ## Snyk CLI tips and tricks
 
@@ -120,10 +118,10 @@ Use the `--help` option in the CLI for details of Snyk CLI commands.
 
 ### **Open Source libraries**
 
-For open source analysis in the CLI, first, install the dependencies. After installing the dependencies, use one of the following strategies when you go to run a test
+For open source analysis in the CLI, first, install the dependencies. After installing the dependencies, use one of the following options to run `snyk test`:
 
-* `--file=`: This option targets the solution file (.sln) or a specific file.&#x20;
-* &#x20;`--all-projects`: This option to analyze your open source, especially if multiple languages/package managers/.sln files are involved.
+* `--file=`: Choose this option to target the solution file (.sln) or a specific file.&#x20;
+* &#x20;`--all-projects`: Choose this option to analyze your open source projects, especially if multiple languages, package managers, and .sln files are involved.
 
 ### **Codebase**
 
@@ -139,13 +137,13 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 :link: [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/)
 
-### **Helpful Options/Plugins**
+### **Helpful options and plugins**
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
-* See `--json` and `--sarif` options for generating output that can be programmatically accessed.
+* To help generate reports locally or at build time, see [snyk-to-html](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
+* See the `--json` and `--sarif` options for generating output that can be programmatically accessed.
 * For advanced filtering options, see[ snyk-filter](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
 
-Additional security topics for .Net developers
+## Additional security topics for .Net developers
 
 The following is a collection of articles from the Snyk Security team and Developer Relations related to this ecosystem.&#x20;
 

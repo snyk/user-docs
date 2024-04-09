@@ -5,8 +5,6 @@
 Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-{% hint style="warning" %}
-Rust is supported for open-source scans. You might encounter false positives or false negatives for partially supported frameworks and package managers.
-{% endhint %}
+Rust us supported for open-source scans.
 
-Snyk supports testing of Rust applications through the [SBOM Test APIs](https://docs.snyk.io/snyk-api/rest-api-endpoints-test-an-sbom-document-for-vulnerabilities), as well as testing individual Rust packages from the Cargo package manager through the [Package Issues API](https://docs.snyk.io/snyk-api/list-issues-for-a-package-endpoint).&#x20;
+Snyk supports testing of Rust applications through the [SBOM Test API](../../snyk-api/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)s, as well as testing individual Rust packages from the Cargo package manager through the [Package Issues API](../../snyk-api/rest-api-endpoint-list-issues-for-a-package.md).&#x20;

@@ -6,10 +6,6 @@ Snyk for Elixir is supported only for Snyk Open Source.
 
 ## Supported frameworks and package managers
 
-{% hint style="warning" %}
-You might encounter false positives or false negatives for partially supported frameworks and package managers.
-{% endhint %}
-
 Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](../../snyk-cli/).
 
 {% hint style="info" %}
