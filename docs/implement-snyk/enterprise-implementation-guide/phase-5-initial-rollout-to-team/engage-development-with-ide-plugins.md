@@ -10,7 +10,7 @@ The webinar [Workflows for Developers using Snyk in the IDE and CLI](https://www
 
 ## Implementation tips
 
-Companies just getting started with security should start with the visibility and prevention stages to give clear direction on what issues must be fixed. As developers are fixing prioritized issues or starting new work, a natural opportunity arises to introduce the IDE to validate fixes and proactively test to eliminate potential friction introduced by the security gates. This is where AppSec programs often move from reactive to proactive approaches.&#x20;
+Companies just getting started with security should start with the visibility and prevention stages to give clear direction on what issues must be fixed. As developers are fixing prioritized issues or starting new work, a natural opportunity arises to introduce an IDE plugin to validate fixes and proactively test to eliminate potential friction introduced by the security gates. This is where AppSec programs often move from reactive to proactive approaches.&#x20;
 
 Companies with a mature AppSec program may give developers earlier access to Snyk IDE plugins as they are already familiar with security concepts. So rollout is less about resolving a backlog, and more about prevention of new issues and validation of fixes.
 
