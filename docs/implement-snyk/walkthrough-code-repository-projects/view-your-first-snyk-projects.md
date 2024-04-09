@@ -61,7 +61,7 @@ Snyk scans different parts of this lifecycle, with different icons and entries s
 | <img src="../../.gitbook/assets/image (206) (1) (1).png" alt="" data-size="original">           | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/).                                                                  |
 
 {% hint style="info" %}
-Other files and types can be displayed; see [View Project information](../../snyk-admin/snyk-projects/view-project-information.md) for more details.
+Other files and types can be displayed; see [View Project information](../../snyk-admin/snyk-projects/project-information.md) for more details.
 {% endhint %}
 
 ### View Project settings

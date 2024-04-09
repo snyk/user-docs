@@ -34,7 +34,7 @@ You can also use the **Retest now** option to apply the exclusion rules of the `
 
 ## Project filters
 
-The Projects page on Snyk Web UI has a filter pane that categorizes Snyk Projects and shows the number of matching Projects for each criterion. See [Project information](../../../snyk-admin/snyk-projects/view-project-information.md).
+The Projects page on Snyk Web UI has a filter pane that categorizes Snyk Projects and shows the number of matching Projects for each criterion. See [Project information](../../../snyk-admin/snyk-projects/project-information.md).
 
 ## Vulnerability issues
 

@@ -17,7 +17,7 @@ For example, for a **Code analysis** project scanned by Snyk Code:
 
 <figure><img src="../../.gitbook/assets/image (149) (1) (1) (2).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
 
-See [View project information](../../snyk-admin/snyk-projects/view-project-information.md) for more details.
+See [View project information](../../snyk-admin/snyk-projects/project-information.md) for more details.
 
 ## View Issue Cards
 

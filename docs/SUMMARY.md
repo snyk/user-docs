@@ -767,7 +767,7 @@
       * [Read-only CLI Tester role template](snyk-admin/user-roles/custom-role-templates/read-only-cli-tester-role-template.md)
   * [Manage notifications](snyk-admin/manage-notifications.md)
   * [Snyk Projects](snyk-admin/snyk-projects/README.md)
-    * [View Project information](snyk-admin/snyk-projects/view-project-information.md)
+    * [Project information](snyk-admin/snyk-projects/project-information.md)
     * [Project attributes](snyk-admin/snyk-projects/project-attributes.md)
     * [Project tags](snyk-admin/introduction-to-snyk-projects/project-tags.md)
     * [Project collections groupings](snyk-admin/snyk-projects/project-collections-groupings/README.md)
