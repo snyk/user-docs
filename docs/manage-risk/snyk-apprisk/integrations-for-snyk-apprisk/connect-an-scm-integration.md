@@ -134,7 +134,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 4. Set the expiration to 12 months.
 5. Copy the generated personal access token and share it through a secured vault.
 
-### API version (optional)
+### API version
 
 You can use the[ Azure DevOps REST API v6](https://learn.microsoft.com/en-us/rest/api/azure/devops/core/?view=azure-devops-rest-6.0) repository to access information about the API.
 

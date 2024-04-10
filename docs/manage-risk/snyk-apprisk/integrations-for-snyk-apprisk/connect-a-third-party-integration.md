@@ -16,6 +16,7 @@ SAST:
 Secrets:
 
 * Nightfall
+* GitGuardian
 
 ## Veracode setup guide
 
@@ -69,7 +70,7 @@ Snyk AppRisk Pro does not currently support the Checkmarx One integration.
 
 ### Integration Hub setup
 
-After you have installed and configured Snyk Broker for AppRisk and you successfully established a connection for Checkmarx SAST, you need to also configure the integration from the Snyk AppRisk Integration Hub. &#x20;
+After you have installed and configured Snyk Broker for AppRisk and you successfully established a connection for Checkmarx SAST, you also need to configure the integration from the Snyk AppRisk Integration Hub. &#x20;
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **SAST** tag and search for Checkmarx.&#x20;
@@ -90,8 +91,6 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 
 ### Integration Hub setup
 
-
-
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **Secrets** tag and search for Veracode.&#x20;
 3. Click the **Add** button.
@@ -102,3 +101,28 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 8. When the connection is established, the status of the Nightfall integration is changed to **Connected**.
 
 <figure><img src="https://lh7-us.googleusercontent.com/FhueUeoeYL3j5ihKIc6lFSFuvoS43NU30PiSCIOpkfWkoPXI8XaLh_ABzR5DipTn-TVLAkX3pSmoBfdq6hNDL65JPV72E2lErTcTua9YTcUnFXzwVI_smOtlZqS4LzD2-XqGZHlygjVZHVlba4ju3pQ" alt="Integration Hub - Nightfall setup"><figcaption><p>Integration Hub - Nightfall setup</p></figcaption></figure>
+
+## GitGuardian
+
+### Required parameters
+
+* API Key. [Here](https://docs.gitguardian.com/api-docs/authentication) you can find more details about how to create a GitGuardian API Key.&#x20;
+
+When you create a GitGuardian API Key, remember that it works for both service accounts and personal access token.
+
+Ensure that the following permissions are set as READ:
+
+* Incident (`mandatory`)
+* Teams (`recommended` for GitGuardian paid accounts)
+
+### Integration Hub setup
+
+1. Open the **Integration Hub** menu.&#x20;
+2. Select the **Secrets** tag and search for GitGuardian.&#x20;
+3. Click the **Add** button.
+4. Add the **Profile name** for this integration.
+5. Add the **API Token** for this integration.
+6. Click the **Done** button.
+7. When the connection is established, the status of the Nightfall integration is changed to **Connected**.
+
+<figure><img src="https://lh7-us.googleusercontent.com/IZz3ozkuESpiOJt8wv5Ux3CMm7cvH79xJeYl_7okSbupwhBVSuHxH1MxCX7KBzWbtuTVBhXyeFDQ_lclXYGavE6kVRtu0SicVNPc8ClYRsOmvUX1XYtxvTmK-vayu8mgAAgp-K8NC6BTcje1UQRTutQ" alt="Integration Hub - GitGuardian setup"><figcaption><p>Integration Hub - GitGuardian setup</p></figcaption></figure>
