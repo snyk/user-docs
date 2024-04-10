@@ -1,6 +1,6 @@
 # Start scanning
 
-You can use Snyk to scan your code manually and automatically using the [Snyk CLI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-cli), the [Snyk Web UI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-web-ui), the [Snyk API](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-api), and by running [PR Checks](start-scanning-using-the-cli-web-ui-or-api.md#using-pr-checks).
+You can use Snyk to scan your code manually and automatically using the [Snyk CLI](start-scanning.md#scan-using-the-cli), the [Snyk Web UI](start-scanning.md#scan-using-the-web-ui), the [Snyk API](start-scanning.md#scan-using-the-api), and by running [PR Checks](start-scanning.md#using-pr-checks).
 
 {% hint style="info" %}
 Scans (tests) may be limited on your account, depending on your[ Pricing Plan](../implement-snyk/enterprise-implementation-guide/trial-limitations.md). For more information, see [What counts as a test?](../working-with-snyk/what-counts-as-a-test.md)

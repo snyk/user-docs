@@ -470,7 +470,7 @@
     * [Exclude directories and files from Project import](scan-with-snyk/import-project-repository/excluding-directories-and-files-from-the-import-process.md)
     * [Remove imported repository from a Project](scan-with-snyk/import-project-repository/remove-imported-repository.md)
   * [Scanning overview](scan-with-snyk/scanning-overview/README.md)
-  * [Start scanning](scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md)
+  * [Start scanning](scan-with-snyk/start-scanning.md)
   * [Pull Requests](scan-with-snyk/pull-requests/README.md)
     * [Snyk Fix Pull or Merge Requests](scan-with-snyk/snyk-open-source/automatic-snyk-fix-prs-and-manual-fix-merge-requests/README.md)
       * [Create automatic PRs for new fixes](scan-with-snyk/snyk-open-source/automatic-snyk-fix-prs-and-manual-fix-merge-requests/automated-pull-request-creation-for-new-fixes.md)
