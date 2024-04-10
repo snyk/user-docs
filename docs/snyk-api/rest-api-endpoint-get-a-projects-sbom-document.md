@@ -22,11 +22,8 @@ SBOM documents can be generated in [CycloneDX](https://cyclonedx.org/) v1.4 (JSO
    Example: To retrieve a CycloneDX 1.4 JSON document, set `format=cyclonedx1.4%2Bjson` on the query.
 
 ```bash
-$ curl --get \
-  -H "Authorization: token <SNYK_API_TOKEN>" \
-  --data-urlencode "version=2023-03-20" \
-  --data-urlencode "format=<SBOM_FORMAT>" \
-  https://api.snyk.io/rest/orgs/<ORG_ID>/projects/<PROJECT_ID>/sbom
+$ curl --location 'https://api.snyk.io/rest/orgs/<ORG_ID>/projects/<PROJECT_ID>/sbom?version=2024-03-12&format=<SBOM_FORMAT>' \
+--header 'Authorization: token <SNYK_API_TOKEN>'
 ```
 
 ## Custom CycloneDX properties
