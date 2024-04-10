@@ -6,7 +6,7 @@ Snyk Code is a security tool that is fast and accurate and produces fewer false 
 
 You can scan your code using the following options:
 
-* [Snyk Web UI](../../getting-started/snyk-web-ui.md) (including [PR checks](../run-pr-checks/))
+* [Snyk Web UI](../../getting-started/snyk-web-ui.md) (including [PR checks](../pull-requests/pull-request-checks/))
 * [Snyk IDE](../../integrate-with-snyk/use-snyk-in-your-ide/)
 * [Snyk CLI](../../snyk-cli/)
 * [Snyk API](../../snyk-api/)
@@ -48,7 +48,7 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 * **Git repository**: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools at your disposal. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time. See [Supported Git repositories](../../integrate-with-snyk/git-repository-and-ci-cd-integrations-comparisons.md).
 
 {% hint style="info" %}
-Snyk Code analysis can be applied to every pull request you create in your Git repository before you merge it into the target branch. See [PR Checks](../run-pr-checks/).
+Snyk Code analysis can be applied to every pull request you create in your Git repository before you merge it into the target branch. See [PR Checks](../pull-requests/pull-request-checks/).
 {% endhint %}
 
 * **CLI and CI/CD**: [Using the CLI ](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)helps you find and fix security flaws in your code on your local machine or in your CI/CD.

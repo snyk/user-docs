@@ -21,5 +21,5 @@ See the [Snyk deployment recommendations](introduction-to-git-repository-integra
 For details, see the following pages:
 
 * [Opening fix and upgrade PRs from a fixed GitHub account](introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
-* [PR Checks](../../scan-with-snyk/run-pr-checks/)
+* [PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/)
 * [View and understand Snyk upgrade PRs](introduction-to-git-repository-integrations/view-and-understand-snyk-upgrade-pull-requests.md)

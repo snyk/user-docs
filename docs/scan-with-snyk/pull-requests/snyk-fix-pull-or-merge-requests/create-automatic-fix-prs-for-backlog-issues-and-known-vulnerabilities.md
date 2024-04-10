@@ -60,7 +60,7 @@ You can configure Automatic fix PRs to work only for specific Projects rather th
 3. In the **Automatic fix pull requests** section:
    * Select **Customize for only this project**
    * Enable **Known vulnerabilities (backlog)**
-4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](automated-fix-pull-requests-for-backlog-issues-and-known-vulnerabilities.md#configure-automatic-fix-prs-at-the-integration-level).
+4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md#configure-automatic-fix-prs-at-the-integration-level).
 5. Click **Save changes**.
 
 <figure><img src="../../../.gitbook/assets/Automatic fix PRs settings at the Project level.png" alt="Automatic fix PRs settings at the Project level."><figcaption><p>Automatic fix PRs settings at the Project level</p></figcaption></figure>

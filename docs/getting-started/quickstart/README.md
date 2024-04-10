@@ -13,7 +13,7 @@ Before starting, check that the code in your repositories matches Snyk's [suppor
 
 ### For more details
 
-* See [Start scanning ](../../scan-with-snyk/start-scanning.md)to start using Snyk capabilities.
+* See [Start scanning ](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md)to start using Snyk capabilities.
 * See [Walkthrough: Code Repository Projects](../../implement-snyk/walkthrough-code-repository-projects/) to read a full walkthrough of scanning and fixing vulnerabilities from content stored in a Git repository.
 * Visit [Snyk Learn](https://learn.snyk.io/catalog/product-training/) for related introductory training
 

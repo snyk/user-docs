@@ -33,7 +33,7 @@ PR Checks also support all programming languages and frameworks supported by the
 
 ## How configuration of PR Checks works
 
-You can configure PR Checks either [at the Integration level](configure-pr-checks.md#configure-pr-checks-at-the-integration-level) for your Snyk Organization or [for specific Snyk Projects](configure-pr-checks.md#configure-pr-checks-at-the-project-level) in an Organization.
+You can configure PR Checks either [at the Integration level](configure-pull-request-checks.md#configure-pr-checks-at-the-integration-level) for your Snyk Organization or [for specific Snyk Projects](configure-pull-request-checks.md#configure-pr-checks-at-the-project-level) in an Organization.
 
 * In your Organization, you can have multiple repository integrations, but the feature works only for those integrations that have PR Checks configured.
 * At the Project level, the settings are inherited from the integration by default, but you can configure custom settings.
@@ -53,7 +53,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 <figure><img src="../../../.gitbook/assets/enable analyze code.png" alt="PR check settings to analyze code issues."><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>
 
 {% hint style="info" %}
-If you cannot see the **Code Analysis** section, ensure that your user has the Group Admin role assigned and that the feature is enabled for Snyk Code. See the  [Prerequisites](configure-pr-checks.md#prerequisites).
+If you cannot see the **Code Analysis** section, ensure that your user has the Group Admin role assigned and that the feature is enabled for Snyk Code. See the  [Prerequisites](configure-pull-request-checks.md#prerequisites).
 {% endhint %}
 
 3. To check for open-source and licensing issues, configure and save the following changes:
@@ -69,7 +69,7 @@ When switched on, this will cause the PR check to fail when the PR introduces ne
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13 (1) (1).png" alt="Pull request check settings to analyze open-source and licensing issues." width="563"><figcaption><p>PR check settings to analyze open-source and licensing issues</p></figcaption></figure>
 
-4. Either click **Save** to save the changes, select the Save dropdown and click **Apply changes to all overridden Projects** to extend the current configuration to Projects with custom settings. For more information, see [Configure PR Checks at the Project level](configure-pr-checks.md#configure-pr-checks-at-the-project-level).
+4. Either click **Save** to save the changes, select the Save dropdown and click **Apply changes to all overridden Projects** to extend the current configuration to Projects with custom settings. For more information, see [Configure PR Checks at the Project level](configure-pull-request-checks.md#configure-pr-checks-at-the-project-level).
 
 ## Configure PR Checks at the Project level
 
