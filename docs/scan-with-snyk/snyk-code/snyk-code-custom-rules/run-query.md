@@ -3,7 +3,7 @@
 ## Requirements to run a custom rules query
 
 * If you re-imported Projects in Snyk, you must **Select new repo** in **Custom rules** or wait for the next automated scan cycle.\
-  For details, see [Re-importing existing repositories for the Snyk Code testing](../import-repository-to-snyk.md#re-import-repository-to-snyk).
+  For details, see [Re-importing existing repositories for the Snyk Code testing](../import-project-with-snyk-code.md#re-import-repository-to-snyk).
 * The query language is case-sensitive.
 
 ## Run a query on a repository

@@ -22,7 +22,7 @@ Automate importing multiple repositories using [Snyk API v1 Import targets](http
 
 Here is an overview of the testing process in Snyk Code based on the testing phases.
 
-<table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../import-repository-to-snyk.md">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
+<table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../import-project-with-snyk-code.md">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
 
 ### Retesting code repository
 
@@ -62,7 +62,7 @@ To understand the results, see [Breakdown of Code analysis](breakdown-of-code-an
 
 ### Import additional repositories
 
-If you have existing Projects in your Snyk account, you can add additional repositories for Snyk to test. See [Import repository to Snyk](../import-repository-to-snyk.md#import-repository-to-snyk).
+If you have existing Projects in your Snyk account, you can add additional repositories for Snyk to test. See [Import repository to Snyk](../import-project-with-snyk-code.md#import-repository-to-snyk).
 
 ### Remove repositories from testing
 
