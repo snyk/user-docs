@@ -26,7 +26,7 @@ Run queries against a repository from your Snyk Project list. The list contains 
 8. [Analyze the query results](run-query.md#analyze-query-results).
 9. (Optional) [Save the custom rule you created](run-query.md#save-custom-rule).
 
-For more information, see [Query examples](create-queries-with-snyk-code-custom-rules.md).
+For more information, see [Query examples](create-query.md).
 
 ## Run a query on a code snippet
 

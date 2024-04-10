@@ -1,8 +1,8 @@
 # Create query
 
-To use Snyk Code custom rules to create queries with [suggestive AI support](./#suggestive-ai-support), you can choose from provided [templates](./#template) and [predicates.](./#predicate-pred) Alternatively, you can create your own predicates and [save them as a custom rule](create-snyk-code-custom-rules.md).&#x20;
+To use Snyk Code custom rules to create queries with [suggestive AI support](./#suggestive-ai-support), you can choose from the provided [templates](./#template) and [predicates.](./#predicate-pred) Alternatively, you can create your own predicates and [save them as a custom rule](create-custom-rule.md).&#x20;
 
-Consider the following query examples and rules to use with Snyk Code custom rules.
+Consider the following query examples and rules to use with Snyk Code custom rules. A [CWE 312 query example](create-query.md#cwe-312-query-example) is provided on this page.
 
 ## Simple syntactical query
 
@@ -143,7 +143,7 @@ With this query, you can look for the data flow that originates in `SourceFoo`. 
 
 Recreate a Snyk rule and add a source to the current Snyk known vulnerable source list because they are not being taken into account in the scans, resulting in missed vulnerabilities.&#x20;
 
-Like the [Net new data flow rule](create-queries-with-snyk-code-custom-rules.md#net-new-data-flow-rule), the `Taint` data flow template is used with an `Or` operator. Operators are available to create logical statements for your queries, such as `Or` or `And`.
+Like the [Net new data flow rule](create-query.md#net-new-data-flow-rule), the `Taint` data flow template is used with an `Or` operator. Operators are available to create logical statements for your queries, such as `Or` or `And`.
 
 Run the data flow rule using both the Snyk known sources but also a custom source called [`SourceFoo`](#user-content-fn-1)[^1]_._
 
@@ -159,7 +159,7 @@ Any statement that uses an operator will be written within angle brackets  _`< s
 
 Recreate a Snyk rule and remove a source from the current Snyk known vulnerable sources because this source is not vulnerable within the context of an application.&#x20;
 
-Like the [Net new data flow](create-queries-with-snyk-code-custom-rules.md#net-new-data-flow-rule) and [Extend a data flow](create-queries-with-snyk-code-custom-rules.md#extend-a-data-flow-rule) rules, the `Taint` data flow template is used with an `And` operator. A declarative negative statement (`Not`) is used to indicate the false case of the statement and not the true case.
+Like the [Net new data flow](create-query.md#net-new-data-flow-rule) and [Extend a data flow](create-query.md#extend-a-data-flow-rule) rules, the `Taint` data flow template is used with an `And` operator. A declarative negative statement (`Not`) is used to indicate the false case of the statement and not the true case.
 
 Run the data flow rule using the Snyk known sources, removing `SnykSource` from the results. In this example, `SnykSource` is a Snyk-known source that is used within the regular general `AnySource` [predicate](templates-and-predicates.md).
 

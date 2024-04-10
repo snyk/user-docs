@@ -5,7 +5,7 @@
 
 Snyk Code custom rules are [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
 
-To enable the feature, see [Snyk Preview](../../../snyk-admin/snyk-preview.md).
+For information on how to enable the feature, see [Snyk Preview](../../../snyk-admin/snyk-preview.md).
 {% endhint %}
 
 Create custom rules to run queries against the code stack as part of your investigation workflow. Use custom rules, as follows:
@@ -28,7 +28,7 @@ You can create and test queries in a local environment, completely separate from
 * [Run query on a repository](run-query.md#run-query-on-a-repository)
 * [Run query on a code snippet](run-query.md#run-query-on-a-code-snippet)
 * [Analyze query results](run-query.md#analyze-query-results)
-* [Save custom rules](create-snyk-code-custom-rules.md)
+* [Save custom rules](create-custom-rule.md)
 
 ## Use custom rules in the Snyk CLI
 
@@ -194,5 +194,5 @@ As a result, the Snyk Code Query Language becomes a subset of Datalog, effective
 ## What's next?
 
 * Learn from an end-to-end example with the [Snyk Code Custom Rules course](https://learn.snyk.io/lesson/custom-rules-for-snyk-code/)
-* [Create custom rules](create-snyk-code-custom-rules.md)
+* [Create custom rules](create-custom-rule.md)
 
