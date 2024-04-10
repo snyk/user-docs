@@ -931,6 +931,7 @@
     * [Find the differences between versions in the Snyk REST API](snyk-api/using-snyk-api-articles/find-the-differences-between-versions-in-the-snyk-rest-api.md)
     * [Scenarios for using Snyk API](snyk-api/using-snyk-api-articles/scenarios-for-using-snyk-api.md)
   * [Migrate List all Projects v1 API to REST API](snyk-api/migrate-list-all-projects-v1-api-to-rest-api.md)
+  * [Snyk API v1 Dep Graph endpoints](snyk-api/snyk-api-v1-dep-graph-endpoints.md)
   * [REST API endpoint: Get a project’s SBOM document](snyk-api/rest-api-endpoint-get-a-projects-sbom-document.md)
   * [REST API endpoint: Test an SBOM document for vulnerabilities](snyk-api/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
   * [REST API endpoint: List issues for a package](snyk-api/rest-api-endpoint-list-issues-for-a-package.md)
