@@ -18,6 +18,10 @@ Secrets:
 * Nightfall
 * GitGuardian
 
+{% hint style="info" %}
+Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
+{% endhint %}
+
 ## Veracode setup guide
 
 ### Prerequisites
