@@ -106,7 +106,7 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 
 <figure><img src="https://lh7-us.googleusercontent.com/FhueUeoeYL3j5ihKIc6lFSFuvoS43NU30PiSCIOpkfWkoPXI8XaLh_ABzR5DipTn-TVLAkX3pSmoBfdq6hNDL65JPV72E2lErTcTua9YTcUnFXzwVI_smOtlZqS4LzD2-XqGZHlygjVZHVlba4ju3pQ" alt="Integration Hub - Nightfall setup"><figcaption><p>Integration Hub - Nightfall setup</p></figcaption></figure>
 
-## GitGuardian
+## GitGuardian setup guide
 
 ### Required parameters
 
