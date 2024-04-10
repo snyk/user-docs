@@ -464,6 +464,7 @@
     * [Tines Integration](integrate-with-snyk/vulnerability-management-tools/tines-integration.md)
     * [Torq Integration](integrate-with-snyk/vulnerability-management-tools/torq-integration.md)
     * [Vulcan Integration](integrate-with-snyk/vulnerability-management-tools/vulcan-integration.md)
+    * [Wabbi Integration](integrate-with-snyk/vulnerability-management-tools/wabbi-integration.md)
 * [Scan with Snyk](scan-with-snyk/README.md)
   * [Import Project repository](scan-with-snyk/import-project-repository/README.md)
     * [Exclude directories and files from Project import](scan-with-snyk/import-project-repository/excluding-directories-and-files-from-the-import-process.md)
