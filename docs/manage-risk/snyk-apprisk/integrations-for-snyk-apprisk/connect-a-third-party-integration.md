@@ -115,7 +115,7 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 ### Integration Hub setup
 
 1. Open the **Integration Hub** menu.&#x20;
-2. Select the **Secrets** tag and search for Veracode.&#x20;
+2. Select the **Secrets** tag and search for Nightfall.&#x20;
 3. Click the **Add** button.
 4. Add the **Profile name** for this integration.
 5. Add the **Base API URL** for this integration.
