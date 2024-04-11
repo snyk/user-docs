@@ -12,6 +12,7 @@ SAST:
 
 * Verocode SAST
 * Checkmarx SAST&#x20;
+* SonarQube
 
 Secrets:
 
@@ -86,6 +87,24 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 8. When the connection is established, the status of the Checkmarx integration is changed to **Connected**.
 
 <figure><img src="../../../.gitbook/assets/image (370).png" alt="Integration Hub - Checkmarx setup"><figcaption><p>Integration Hub - Checkmarx setup</p></figcaption></figure>
+
+## SonarQube setup guide
+
+### Required parameters
+
+* API Key. [Here](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/) you can find more details about the SonarQube API Key.
+
+### Integration Hub setup
+
+* Open the **Integration Hub** menu.&#x20;
+* Select the **SAST** tag and search for SonarQube.&#x20;
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Add the **API token**. Navigate to your SonarQube account, select User, select My Account, select Security, and then User Token. [Here](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/) you can find more details about the SonarQube API Key.
+* Click the **Done** button.
+* When the connection is established, the status of the SonarQube integration is changed to **Connected**.
+
+<figure><img src="../../../.gitbook/assets/image (372).png" alt="Integration Hub - SonarQube setup"><figcaption><p>Integration Hub - SonarQube setup</p></figcaption></figure>
 
 ## Nightfall setup guide
 
