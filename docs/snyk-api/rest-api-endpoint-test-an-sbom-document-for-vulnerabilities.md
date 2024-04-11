@@ -28,7 +28,7 @@ Follow these steps to [create an SBOM test run](https://apidocs.snyk.io/?version
 
 Testing your SBOM can be a long-running operation. Instead of waiting until the test results are ready, Snyk returns a `job_id` after your initial request to send the SBOM, and then processes the request asynchronously.
 
-Follow these steps to test a SCOM:
+Follow these steps to test an SBOM:
 
 1. Log in to the Snyk Web UI and retrieve your Organization ID (UUID format), Project ID (UUID), and API key.\
    If you need help in finding these values, see [Group and Organization navigation](../snyk-admin/groups-and-organizations/switch-between-groups-and-organizations.md), [View Project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../snyk-api-info/authentication-for-api.md).
