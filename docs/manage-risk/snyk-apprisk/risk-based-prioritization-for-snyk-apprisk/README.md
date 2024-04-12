@@ -20,3 +20,9 @@ Risk-based prioritization works as illustrated in this example:
 * Snyk Open Source has identified a high-severity Remote Code Exploit (RCE).&#x20;
 * That RCE is built into a container image, which is deployed onto a production Kubernetes cluster, and the running container is configured to have access to the internet.&#x20;
 * The combination of an RCE in a running image with internet access enables Snyk to determine that this particular vulnerability poses more risk to your application than an RCE that is not deployed.
+
+The following video explains the initial steps of setting up your risk-based prioritization for Snyk AppRisk:
+
+{% embed url="https://youtu.be/41VJovflLsI" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}

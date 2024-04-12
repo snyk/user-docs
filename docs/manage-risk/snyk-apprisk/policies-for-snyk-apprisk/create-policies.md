@@ -25,6 +25,12 @@ You can create a new policy by using one of the available templates. To select o
 
 Each policy template has a name, a description, and displays the graphic connections between filters and actions.
 
+The following video explains how to use a policy template from the Policies view:
+
+{% embed url="https://youtu.be/-4qux-bsRK4" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
 You can customize the filters and actions or use the template as is. After finishing all the template changes, click the **Save** button to create the new policy.
 
 <figure><img src="../../../.gitbook/assets/Policy template - new UI.png" alt="Policy templates accesible from Policy view, New policy button, the Use a template option "><figcaption><p>Policy templates accesible from Policy view, New policy button, the Use a template option </p></figcaption></figure>
@@ -62,7 +68,11 @@ Each filter component requires you to specify an asset property. Available prope
 The Coverage gap filter identifies assets that fall 'out of policy' and do not satisfy the coverage criteria you have specified, due to infrequent scanning or no scanning at all. On the other hand, the Coverage filter allows you to locate assets that have or have not been scanned, irrespective of any coverage requirements.
 {% endhint %}
 
+The following video explains how to create a new policy:
 
+{% embed url="https://youtu.be/OMuyzAM1Omo" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
 
 Each property contains different options for conditions and values:
 
@@ -91,6 +101,12 @@ You can specify more than one filter component with an **And** or **Or** operato
 
 
 <figure><img src="../../../.gitbook/assets/Create policy New UI.png" alt="AppRisk - Create new policy"><figcaption><p>Snyk AppRisk - Create new policy</p></figcaption></figure>
+
+The following video explains the use of filters and the use of the **And**, **Or** operator.&#x20;
+
+{% embed url="https://youtu.be/W-GDCZVxLIo" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
 
 ## **Set actions**
 

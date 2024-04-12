@@ -6,6 +6,12 @@ With Snyk AppRisk policies, you can easily automate the process of adding busine
 
 Access the Snyk AppRisk policies by positioning yourself at the Group level, selecting **Policies**, then **Assets**.
 
+The following video presents an overview of the types of policies you can create from the Policies view.
+
+{% embed url="https://youtu.be/79oz_hgMrCE" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
 ## **Use Cases**
 
 You can create policies for organizing the assets, classifying them, and always being up to date with the latest information about an asset.\

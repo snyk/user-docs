@@ -9,6 +9,12 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [Azure DevOps](connect-an-scm-integration.md#azure-devops-setup-guide)
 * [BitBucket](connect-an-scm-integration.md#bitbucket-setup-guide)
 
+The following video explains some of the configuration capabilities available for you in the Integrations view:
+
+{% embed url="https://www.youtube.com/watch?v=4W6B9lPU10c" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
 If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
 
 ## GitHub setup guide

@@ -146,6 +146,6 @@ Ensure that the following permissions are set as READ:
 4. Add the **Profile name** for this integration.
 5. Add the **API Token** for this integration.
 6. Click the **Done** button.
-7. When the connection is established, the status of the Nightfall integration is changed to **Connected**.
+7. When the connection is established, the status of the GitGuardian integration is changed to **Connected**.
 
 <figure><img src="https://lh7-us.googleusercontent.com/IZz3ozkuESpiOJt8wv5Ux3CMm7cvH79xJeYl_7okSbupwhBVSuHxH1MxCX7KBzWbtuTVBhXyeFDQ_lclXYGavE6kVRtu0SicVNPc8ClYRsOmvUX1XYtxvTmK-vayu8mgAAgp-K8NC6BTcje1UQRTutQ" alt="Integration Hub - GitGuardian setup"><figcaption><p>Integration Hub - GitGuardian setup</p></figcaption></figure>

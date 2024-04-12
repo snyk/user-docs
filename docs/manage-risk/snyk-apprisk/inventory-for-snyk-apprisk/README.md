@@ -1,6 +1,6 @@
 # Inventory for Snyk AppRisk
 
-Snyk AppRisk inventory layouts are organizing your repository assets in meaningful ways, enabling you to:
+,Snyk AppRisk inventory layouts are organizing your repository assets in meaningful ways, enabling you to:
 
 * Gain full repository asset visibility from your SCM tools, including details about configured teams and repository code committers.
 * Track controls coverage for Snyk products.
@@ -18,6 +18,12 @@ To get better context and clarity over your asset inventory, Snyk AppRisk allows
 * **Type**: All the discovered assets, grouped by their type.&#x20;
 
 Each inventory layout may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
+
+The following video presents an overview of the Inventory view from the Snyk Web UI.
+
+{% embed url="https://youtu.be/BIvGd_TCwHw" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
 
 You can filter the information for all the inventory layouts and can use the following filters:
 

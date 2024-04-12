@@ -38,6 +38,12 @@ Login and authenticate to Snyk using existing mechanisms (SSO, Google SAML, and 
 
 Ensure you are at the Group level to access the Snyk AppRisk options. From the Group level you have a centralized security management that enhances security and simplifies security procedures for projects.
 
+The following video presents an overview of the Snyk AppRisk interfaces:
+
+{% embed url="https://www.youtube.com/watch?v=OUoukT5518c" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
 ## Key Concepts
 
 **Asset**: An asset is an identifiable entity that is part of an application, and relevant for security and developers.&#x20;
