@@ -1,6 +1,6 @@
 # Inventory for Snyk AppRisk
 
-,Snyk AppRisk inventory layouts are organizing your repository assets in meaningful ways, enabling you to:
+Snyk AppRisk inventory layouts are organizing your repository assets in meaningful ways, enabling you to:
 
 * Gain full repository asset visibility from your SCM tools, including details about configured teams and repository code committers.
 * Track controls coverage for Snyk products.
@@ -76,7 +76,7 @@ Snyk AppRisk derives assets from Snyk automatically, and also from any SCM tools
 
 #### Repository assets
 
-Currently, Snyk AppRisk supports repository assets as an asset type. In future releases, Snyk will add support for additional code-based assets, such as software packages. Repository assets are visible in all inventory layouts and are supported by Policies. To avoid duplication, assets are identified using a unique identifier, which is the git remote URL for repository assets.
+Currently, Snyk AppRisk supports repository assets (from main branches) as an asset type. In future releases, Snyk will add support for additional code-based assets, such as software packages. Repository assets are visible in all inventory layouts and are supported by Policies. To avoid duplication, assets are identified using a unique identifier, which is the git remote URL for repository assets.
 
 {% hint style="info" %}
 If you archive or delete repositories, they are not displayed in the asset inventory and, therefore, not considered to be shown in the dashboard widgets.
