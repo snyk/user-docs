@@ -28,7 +28,7 @@ Snyk supports the latest versions of the following web browsers:
 * [Chrome](https://www.google.com/chrome/)
 * [Edge](https://www.microsoft.com/en-us/edge?form=MA13FJ)
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-* [Safari](https://www.apple.com/safari/)
+* [Safari](https://www.apple.com/safari/) (except for [Opening Fix PR](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/))
 
 {% hint style="info" %}
 Snyk requires Javascript to be enabled on your browser.
