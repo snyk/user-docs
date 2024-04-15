@@ -103,7 +103,7 @@ docker run -it \
 This is an example for scanning a Maven project with `snyk/snyk`:
 
 ```
-docker run --rm -r \
+docker run --rm \
 -e SNYK_TOKEN=<YOUR_SNYK_TOKEN> \
 -v <PROJECT_DIRECTORY>:/app \
 -v <PROJECT_DIRECTORY>/settings.xml:/root/.m2/settings.xml \
