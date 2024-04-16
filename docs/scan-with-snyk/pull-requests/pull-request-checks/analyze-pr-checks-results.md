@@ -26,6 +26,10 @@ Consider the following end-to-end scenario, including specific actions such as t
 2. [Open a Fix PR](analyze-pr-checks-results.md#open-a-fix-pr) to open a pull request in GitHub.
 3. [Analyze PR Checks results and set status](analyze-pr-checks-results.md#analyze-pr-checks-result-and-set-status) to merge the pull request.
 
+{% hint style="info" %}
+Before you begin, check the [Prerequisites for automated PR Checks](configure-pull-request-checks.md#prerequisites-for-automated-pr-checks) to make sure you have Snyk configured and the role defined.
+{% endhint %}
+
 ### Trigger a fix for an individual dependency issue
 
 1. Log in to the Snyk Web UI.
