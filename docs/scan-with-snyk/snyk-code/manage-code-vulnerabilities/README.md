@@ -70,9 +70,9 @@ You can remove the Code analysis Project or delete imported repositories if you 
 
 ### Exclude directories and files
 
-Adjust your import settings to exclude specific directories and files from being tested.
-
 To exclude specific files and directories from being imported by Snyk Code, you need to create a `.snyk` YAML policy file in your repository. See [Exclude directories and files from Project import](../../import-project-repository/excluding-directories-and-files-from-the-import-process.md).
+
+You can specify directories to exclude from the import process using the Exclude dialog box when you import repositories through Git repository. However, this feature is only supported for open-source dependency scans (SCA).
 
 ### Open repository external link&#x20;
 
