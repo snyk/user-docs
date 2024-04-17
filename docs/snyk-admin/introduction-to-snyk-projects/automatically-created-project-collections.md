@@ -1,9 +1,9 @@
 # Automatically created Project collections
 
 {% hint style="info" %}
-**Release status**&#x20;
+**Release status and feature availability**
 
-Automated Collections are in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans.
+Automated Collections are in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. [Limitations](automatically-created-project-collections.md#limitations) apply.
 
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
@@ -48,3 +48,9 @@ Automatically created collections have no management options available:
 * You cannot rename an automated collection; its name will reflect the repository URL of the matched Projects.
 * You cannot add new Projects to an automated collection. Its content updates itself when new Projects with the same repo URL are imported.
 * You cannot delete an automatically created collection. You can turn off the Automated Collections feature, which will remove all automatically created collections.
+
+## Limitations
+
+* This feature does not detect [SAST](../../getting-started/glossary.md#sast) scans pushed to the Snyk Web UI using the `snyk code test --report --project-name="name"` command.
+* This feature only supports GitHub, GitHub Enterprise, GitLab, Bitbucket Cloud, and Azure integration scans. CLI-based scans are not supported.
+* This feature does not support Snyk Container.
