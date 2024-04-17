@@ -66,6 +66,23 @@ You have reached the maximum number of tests in your Snyk plan. This causes Snyk
 - [https://docs.snyk.io/scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test](https://docs.snyk.io/scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test)
 - [https://support.snyk.io/hc/en-us/articles/360001945297-Snyk-Test-of-PR-failing-due-to-test-limit](https://support.snyk.io/hc/en-us/articles/360001945297-Snyk-Test-of-PR-failing-due-to-test-limit)
 
+### [SNYK-0007](#snyk-0007)
+
+#### Organization is not part of a group
+
+This error occures when trying to add tags to Organizations that that are part of a Group.
+
+Verify with your Group Admin if the Organization should be in a Group.
+
+If you have more than one Organization, you can set the Organization with which new Projects should be associated by running `snyk config set org=ORG_ID`.
+
+If you want to override this global configuration for individual runs of snyk monitor, `run snyk test --org=ORG_ID` or `snyk monitor --org=ORG_ID`.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-admin/snyk-projects/project-tags](https://docs.snyk.io/snyk-admin/snyk-projects/project-tags)
+
 ### [SNYK-9999](#snyk-9999)
 
 #### Request not fulfilled due to server error 
@@ -1073,6 +1090,30 @@ Make sure to use the correct python version in the requires section of the Pipfi
 
 
 ---
+# CLI
+### [SNYK-OS-7001](#snyk-os-7001)
+
+#### Unable to create monitor
+
+There was an unexpected error when attempting to monitor specified project.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
+
+### [SNYK-OS-7002](#snyk-os-7002)
+
+#### Request to Snyk API timeout
+
+A request to the Snyk CLI has unexpectedly timeout.
+
+**HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
+
+---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001)
 
@@ -1774,4 +1815,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-04-16T18:26:12.730Z
+--- Generated at 2024-04-17T10:55:05.984Z
