@@ -1093,25 +1093,14 @@ Make sure to use the correct python version in the requires section of the Pipfi
 # CLI
 ### [SNYK-OS-7001](#snyk-os-7001)
 
-#### Unable to create monitor
-
-There was an unexpected error when attempting to monitor specified project.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Help Links:**
-- [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
-
-### [SNYK-OS-7002](#snyk-os-7002)
-
 #### Request to Snyk API timeout
 
-A request to the Snyk CLI has unexpectedly timeout.
+A request to the Snyk API has unexpectedly timeout. Check Snyk status, then try again.
 
 **HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
 
 **Help Links:**
-- [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
+- [https://status.snyk.io/](https://status.snyk.io/)
 
 ---
 # Builds
@@ -1815,4 +1804,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-04-17T10:55:05.984Z
+--- Generated at 2024-04-17T11:47:28.523Z
