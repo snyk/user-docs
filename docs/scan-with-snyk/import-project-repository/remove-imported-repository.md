@@ -39,44 +39,7 @@ If you want to remove specific directories or files from the Snyk Code test, use
 
 ## **Deactivate and delete imported repositories**
 
-To deactivate or delete an imported repository, you must select all the Projects in the repository, and then use a bulk action to either deactivate or delete all the Projects at once. If you want to entirely delete a repository from your Snyk account, after you delete its Projects, you must also delete its Target folder.
-
-{% hint style="info" %}
-If after deleting a repository you will want to re-import it to Snyk, you must refresh the **Projects** page to view the results from the re-import.
-{% endhint %}
-
-Follow these steps to deactivate or delete multiple Snyk Projects:
-
-1\. On the Snyk Web UI, select <img src="../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6) (3).png" alt="Settings icon" data-size="line"> **Settings** > **Usage**:
-
-<figure><img src="../../.gitbook/assets/image (295) (1).png" alt="Usage page"><figcaption><p>Usage page</p></figcaption></figure>
-
-3\. Scroll down the **Usage** page until you reach the **Projects** section, where all your Snyk Projects are listed:
-
-<figure><img src="../../.gitbook/assets/Snyk Code - Org Settings - Usage - Projects section.png" alt="Projects section on Usage page"><figcaption><p>Projects section on Usage page</p></figcaption></figure>
-
-4\. On the **Projects** list, select the checkboxes of all the Projects you want to remove:
-
-<figure><img src="../../.gitbook/assets/Snyk Code - Org Settings - Usage - Projects section - Selection.png" alt="Checkboxes selected for Projects to be removed"><figcaption><p>Checkboxes selected for Projects to be removed</p></figcaption></figure>
-
-5\. From the **Bulk actions** dropdown, select either **Delete** or **Deactivate**:
-
-<figure><img src="../../.gitbook/assets/Snyk Code - Org Settings - Usage - Projects section - Bulk actions.png" alt="Bulk actions options"><figcaption><p>Bulk actions options</p></figcaption></figure>
-
-Depending on your selected action, one of the following occurs:
-
-* **Delete**: A confirmation message appears. In this case, continue to the next step.
-* **Deactivate**: Your selected Projects are deactivated, and they will no longer be tested by Snyk. If later you will want to reactivate the Projects, repeat this procedure, and select **Activate** from the **Bulk actions** dropdown
-
-6\. If you selected **Delete**, a confirmation message appears, asking you to confirm the deletion. Click **OK** to delete the Projects:
-
-<figure><img src="../../.gitbook/assets/Snyk Code - Org Settings - Usage - Delete Projects - Confirmation message (1).png" alt="Conformation message to delete Projects"><figcaption><p>Confirmation message to delete Projects</p></figcaption></figure>
-
-7\. To remove from Snyk the Target folder of the repository whose Projects you deleted, return to the **Projects** page. Then open the Target folder, and click the **Delete** button:
-
-<figure><img src="../../.gitbook/assets/image (176) (1) (1) (1) (1) (1) (2) (1).png" alt="Selected Target folder and Delete button"><figcaption><p>Selected Target folder and Delete button</p></figcaption></figure>
-
-The entire repository is now deleted from your Snyk account.
+For instructions on deleting repositories, see [How can I delete multiple Projects](https://support.snyk.io/hc/en-us/articles/360002623578-How-can-I-delete-multiple-projects)?
 
 ## **Deactivate and delete a Snyk Code Project**
 
