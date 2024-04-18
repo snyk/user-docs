@@ -18,5 +18,5 @@ Snyk Learn offers [learning paths](https://learn.snyk.io/catalog/?format=learnin
 
 ## Admin features
 
-Snyk Learn offers various [admin features](snyk-learn-reports.md). These features allow an Organization to stay in compliance with developer training.&#x20;
+Snyk Learn offers various [admin features](snyk-learn-reports-and-assignments.md). These features allow an Organization to stay in compliance with developer training.&#x20;
 

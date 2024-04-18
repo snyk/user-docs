@@ -39,7 +39,7 @@
   * [Snyk Learn](getting-started/snyk-learn/README.md)
     * [Security education on Snyk Learn](getting-started/snyk-learn/security-education-on-snyk-learn.md)
     * [Product training on Snyk Learn](getting-started/snyk-learn/product-training-on-snyk-learn.md)
-    * [Snyk Learn Reports](getting-started/snyk-learn/snyk-learn-reports.md)
+    * [Snyk Learn Reports and Assignments](getting-started/snyk-learn/snyk-learn-reports-and-assignments.md)
   * [Glossary](getting-started/glossary.md)
 * [Enterprise setup](enterprise-configuration/README.md)
   * [Authentication for third-party tools](enterprise-configuration/authentication-for-third-party-tools.md)
