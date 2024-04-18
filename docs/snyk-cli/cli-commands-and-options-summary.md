@@ -106,6 +106,10 @@ Modify the `.snyk` policy to ignore stated issues.
 
 Generate an SBOM for a local software project in an ecosystem supported by Snyk.
 
+### [`snyk sbom test`](https://docs.snyk.io/snyk-cli/commands/sbom-test)
+
+Checks an SBOM for vulnerabilities in open source packages.
+
 ## New CLI commands
 
 ### [`snyk fix`](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix)
