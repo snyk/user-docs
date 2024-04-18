@@ -39,10 +39,13 @@ You can customize the filters and actions or use the template as is. After finis
 
 Each filter component requires you to specify an asset property. Available properties for asset policies include:
 
+* **Application\*** - the list of the applications for which you have configured the Backstage catalog in Snyk AppRisk.
 * **Asset ID** - the unique identifier of the asset.
 * **Asset name** - the name of the asset.
 * **Asset type** - repository, package or scanned artifact.
 * **Attribute** - asset attributes retrieved from the data source.
+* **Catalog name\*** - the name of your backstage catalog.
+* **Category\*** - the category of a repository asset. For example, service or library.
 * **Class** - specify the class of the asset.
 * **Coverage** - specify the product or products used to scan the asset. The Coverage filter identifies if at least one scan has been run by the specified product.
 * **Coverage gap** - specify the products for which the asset has not been scanned and do not meet the Set Coverage Control Policy requirements. The coverage gap applies only if you previously defined the coverage requirements of an asset and the asset has never been scanned, or the last scan is older than the default scanning frequency.
@@ -50,14 +53,19 @@ Each filter component requires you to specify an asset property. Available prope
 * **Discovered** - specify the period when the asset was discovered.
 * **Issue severity** - specify the severity of the issue: critical, high, medium, low.
 * **Issue source** - specify where the issue was identified: SCM or third-party integrations. A source category will only be visible if there is at least one source present.
-* **Locked attributes** - specify if the attribute value is locked.
 * **Last seen** - specify the repository freshness status.
+* **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
+* **Locked attributes** - specify if the attribute value is locked.
+* **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
+* **Title\*** - represents the name of the component for which the backstage catalog was configured.
+
+**\***All filters marked with `*` are visible only to the users who configured the Backstage catalog for their SCM integrations.
 
 {% hint style="info" %}
 **Coverage** and **Coverage gap**  filter differences
