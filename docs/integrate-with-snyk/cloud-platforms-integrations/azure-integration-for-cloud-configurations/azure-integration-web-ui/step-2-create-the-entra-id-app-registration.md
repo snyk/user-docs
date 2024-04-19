@@ -13,8 +13,8 @@ Additionally, Snyk has a security feature that locks the federated credential fo
 
 You can create the app registration, federated identity credential, and service principal using one of the following tools, according to the type of file you downloaded from Snyk:
 
-* [Terraform](step-2-create-the-azure-ad-app-registration.md#create-azure-app-registration-infrastructure-using-terraform): Terraform CLI
-* [Bash](step-2-create-the-azure-ad-app-registration.md#create-azure-app-registration-infrastructure-using-the-azure-cli): Azure CLI, installed locally or accessed via Cloud Shell
+* [Terraform](step-2-create-the-entra-id-app-registration.md#create-azure-app-registration-infrastructure-using-terraform): Terraform CLI
+* [Bash](step-2-create-the-entra-id-app-registration.md#create-azure-app-registration-infrastructure-using-the-azure-cli): Azure CLI, installed locally or accessed via Cloud Shell
 
 ### Create Azure app registration infrastructure using Terraform
 

@@ -1,9 +1,9 @@
 # Example: Setting up custom mapping for Entra ID
 
-The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD) using  [Legacy custom mapping](../legacy-custom-mapping.md).
+The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD) using [Legacy custom mapping](../legacy-custom-mapping.md).
 
 {% hint style="info" %}
-See the [Entra ID Enterprise Application example](../../configure-self-serve-single-sign-on-sso/azure-ad-enterprise-application-setup.md) for guidance setting up the initial Enterprise application.
+See the [Entra ID Enterprise Application example](../../configure-self-serve-single-sign-on-sso/entra-id-enterprise-application-setup.md) for guidance setting up the initial Enterprise application.
 {% endhint %}
 
 {% hint style="info" %}
@@ -28,8 +28,7 @@ The **steps** in **configuring App role**s follow.
     Select the **Allowed member types**: **Users/Groups**, **Applications**, or **Both**.\
     Enter the **Value** and **Description** for the selected type.\
     Enable the app role.\
-    When you are finished, select **Apply**.\
-
+    When you are finished, select **Apply**.\\
 
     <figure><img src="../../../../.gitbook/assets/image (380).png" alt="Create app role" width="285"><figcaption><p>Create app role</p></figcaption></figure>
 4.  In Entra ID, select your Enterprise Application.
@@ -39,12 +38,10 @@ The **steps** in **configuring App role**s follow.
     Search and select the users and groups to add.
 
     <figure><img src="../../../../.gitbook/assets/image (4) (5).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
-6.  Select **Users and groups**; from the dropdown, select a role and select **Assign**.\
-
+6.  Select **Users and groups**; from the dropdown, select a role and select **Assign**.\\
 
     <figure><img src="../../../../.gitbook/assets/image (383).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
-7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.\
-
+7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.\\
 
     Note that it is also possible to add multiple Snyk roles to one App role, as the payload can be interpreted as a comma-separated string. However, this can not be used in conjunction with multiple App roles, as only one syntax will be respected (string or array).
 
