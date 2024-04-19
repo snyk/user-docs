@@ -8,7 +8,7 @@ Before you can create a Cloud Environment for an Azure subscription, you must **
 
 This infrastructure gives Snyk read-only permission to scan the configuration of resources in your subscription.
 
-You will use the IaC template or Bash script you downloaded to **provision** the infrastructure in Step 2: Create the Azure AD app registration (API).
+You will use the IaC template or Bash script you downloaded to **provision** the infrastructure in Step 2: Create the Entra ID app registration (API).
 
 Both methods create the same infrastructure, so pick the method you are most comfortable working with.
 
@@ -88,7 +88,7 @@ Example response with Bash script:
 
 ## Unescape the JSON
 
-The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform template or Bash script with the Azure AD app registration, federated identity credential, and service principal.
+The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform template or Bash script with the Entra ID app registration, federated identity credential, and service principal.
 
 Before you can use the template to provision the resources, you need to **unescape** the JSON. This can be accomplished in the following ways:
 
@@ -111,4 +111,4 @@ Before you can use the template to provision the resources, you need to **unesca
 
 ## What's next?
 
-The next step is to create the Azure AD app registration, federated identity credential, and service principal for Snyk using the template or script you downloaded.
+The next step is to create the Entra ID app registration, federated identity credential, and service principal for Snyk using the template or script you downloaded.

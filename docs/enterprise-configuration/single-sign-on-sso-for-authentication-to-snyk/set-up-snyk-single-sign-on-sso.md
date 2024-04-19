@@ -104,12 +104,12 @@ Obtain the following information from your identity provider. Provide this infor
 | Client Secret                | Needed only if the IdP does not allow the Implicit grant type                                                               |
 | Email domains and subdomains | The email domains and subdomains that need access to the SSO                                                                |
 
-## Set up Azure AD as SSO (via App Registration/OIDC)
+## Set up Entra ID as SSO (via App Registration/OIDC)
 
-When using Azure AD for the connection between your Identity provider and Snyk, you must add the Redirect URIs in your Identity provider to establish trust with Snyk.
+When using Entra ID (formerly Azure AD) for the connection between your Identity provider and Snyk, you must add the Redirect URIs in your Identity provider to establish trust with Snyk.
 
 {% hint style="info" %}
-Use your Azure AD name when authenticating rather than the SCM user account name, or a connection error can occur.
+Use your Entra ID name when authenticating rather than the SCM user account name, or a connection error can occur.
 {% endhint %}
 
 | Information                              | Description                                                                                                    |
@@ -118,7 +118,7 @@ Use your Azure AD name when authenticating rather than the SCM user account name
 | Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
 | Redirect URIs (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
 
-## Azure AD information to provide to Snyk
+## Entra ID information to provide to Snyk
 
 Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
@@ -126,7 +126,7 @@ Obtain the following information from your identity provider. Provide this infor
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Client ID                 | The public identifier unique for your authorization server                                                                  |
 | Client Secret             | The secret for your authorization that grants tokens to authorized requestors                                               |
-| Microsoft Azure AD Domain | The numbers and letters shown in the Directory (tenant) ID, which can be found from the Snyk app you created under Overview |
+| Microsoft Entra ID Domain | The numbers and letters shown in the Directory (tenant) ID, which can be found from the Snyk app you created under Overview |
 
 ## Set up ADFS as SSO
 

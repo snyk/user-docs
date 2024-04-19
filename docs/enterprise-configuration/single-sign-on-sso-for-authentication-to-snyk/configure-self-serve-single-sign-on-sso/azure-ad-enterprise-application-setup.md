@@ -1,6 +1,6 @@
-# Azure AD Enterprise Application setup
+# Entra ID Enterprise Application setup
 
-This example shows setting up an Azure AD Enterprise Application and connecting this to Snyk to facilitate SSO. To configure your Azure Enterprise Application to use SSO with Snyk, first obtain an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
+This example shows setting up an Entra ID (formerly Azure AD) Enterprise Application and connecting this to Snyk to facilitate SSO. To configure your Azure Enterprise Application to use SSO with Snyk, first obtain an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
 
 1.  From the dropdown at the top left select **GROUP OVERVIEW** and then the **cog** icon (top right corner) to get to your group settings.
 
@@ -8,9 +8,9 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
     <figure><img src="../../../.gitbook/assets/2 (1) (1) (1) (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
-3.  Navigate to Azure and open Azure AD.
+3.  Navigate to Azure and open Entra ID.
 
-    <figure><img src="../../../.gitbook/assets/3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Entra ID Default Directory"><figcaption><p>Entra ID Default Directory</p></figcaption></figure>
 4.  Click **Add** then **Enterprise application**.
 
     <figure><img src="../../../.gitbook/assets/4 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
@@ -37,7 +37,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
     <figure><img src="../../../.gitbook/assets/11 (2).png" alt="Login URL"><figcaption><p>Login URL</p></figcaption></figure>
 
     <figure><img src="../../../.gitbook/assets/1 (1) (3) (1) (1) (1) (1) (1) (1) (1).png" alt="Sign in URL in Snyk portal"><figcaption><p>Sign in URL in Snyk portal</p></figcaption></figure>
-12. Return to Azure AD and click **Download** next to **Certificate (Base64)**.
+12. Return to Entra ID and click **Download** next to **Certificate (Base64)**.
 
     <figure><img src="../../../.gitbook/assets/13.png" alt="Download SAML Certificate (Base 64)"><figcaption><p>Download SAML Certificate (Base 64)</p></figcaption></figure>
 13. Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection.\

@@ -1,9 +1,9 @@
-# Example: Setting up custom mapping for Azure AD
+# Example: Setting up custom mapping for Entra ID
 
-The following information shows how to configure the custom mapping of roles for Azure AD using  [Legacy custom mapping](../legacy-custom-mapping.md).
+The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD) using  [Legacy custom mapping](../legacy-custom-mapping.md).
 
 {% hint style="info" %}
-See the [Azure AD Enterprise Application example](../../configure-self-serve-single-sign-on-sso/azure-ad-enterprise-application-setup.md) for guidance setting up the initial Enterprise application.
+See the [Entra ID Enterprise Application example](../../configure-self-serve-single-sign-on-sso/azure-ad-enterprise-application-setup.md) for guidance setting up the initial Enterprise application.
 {% endhint %}
 
 {% hint style="info" %}
@@ -12,7 +12,7 @@ Any step on the Snyk side in setting up the Enterprise application must be perfo
 
 The following are the **prerequisites** for **configuring App roles**:
 
-* Snyk support must configure your Snyk SSO as Microsoft Azure AD (WAAD or SAML).
+* Snyk support must configure your Snyk SSO as Microsoft Entra ID (WAAD or SAML).
 * If you select SAML, there is a requirement to add a custom claim; the step to do that is in these instructions.
 * You must have an existing Azure Enterprise application and app registration connected to that SSO configuration.
 
@@ -32,9 +32,9 @@ The **steps** in **configuring App role**s follow.
 
 
     <figure><img src="../../../../.gitbook/assets/image (380).png" alt="Create app role" width="285"><figcaption><p>Create app role</p></figcaption></figure>
-4.  In Azure AD, select your Enterprise Application.
+4.  In Entra ID, select your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Enterprise Application in Entra ID"><figcaption><p>Select Enterprise Application in Entra ID</p></figcaption></figure>
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 
