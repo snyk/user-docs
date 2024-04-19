@@ -78,12 +78,6 @@ When the process of updating a role completes, a confirmation message appears.
 
 ### Duplicate a pre-defined or custom role
 
-{% hint style="info" %}
-**Feature availability**
-
-Duplication of Group-level roles, like **Group Admin,** is an Early Access feature. To use this, you must be a Snyk Admin user type who can enable the`groupCustomRole` feature flag.
-{% endhint %}
-
 **Group Admins** can create a copy of an existing role using the Duplicate role functionality. The system copies only the permissions associated with the role that you are duplicating and role memberships are not copied over.
 
 To copy a role, use the **Duplicate** button next to each role in the Member Roles list, or select a role from the Member Roles list page, and when the Role details page opens, click the **Duplicate Role** button.

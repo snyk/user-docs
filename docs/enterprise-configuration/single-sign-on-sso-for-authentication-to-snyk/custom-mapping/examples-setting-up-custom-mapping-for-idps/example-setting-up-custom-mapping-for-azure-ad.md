@@ -3,7 +3,7 @@
 The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD) using [Legacy custom mapping](../legacy-custom-mapping.md).
 
 {% hint style="info" %}
-See the [Entra ID Enterprise Application example](../../configure-self-serve-single-sign-on-sso/entra-id-enterprise-application-setup.md) for guidance setting up the initial Enterprise application.
+See the [Entra ID Enterprise Application example](../../configure-self-serve-single-sign-on-sso/azure-ad-enterprise-application-setup.md) for guidance setting up the initial Enterprise application.
 {% endhint %}
 
 {% hint style="info" %}
