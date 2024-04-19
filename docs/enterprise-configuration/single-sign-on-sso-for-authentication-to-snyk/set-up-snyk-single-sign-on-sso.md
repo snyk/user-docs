@@ -78,8 +78,6 @@ Obtain the following information from your identity provider. Provide this infor
 | IdP initiated flow supported? | Idp-initiated flows carry a security risk and are therefore not recommended. Make sure you understand the risks before enabling                                                                                                                                                                                                                                                                                                                           |
 | Email domains and subdomains  | The email domains and subdomains that need access to the SSO                                                                                                                                                                                                                                                                                                                                                                                              |
 
-##
-
 ## Set up OpenID Connect (OIDC) for SSO
 
 {% hint style="info" %}
@@ -156,7 +154,9 @@ Obtain the following information from your Identity provider. Provide this infor
 
 For Enterprise plans, Snyk can map new users to a specific Organization and role when they first sign in using SSO. This option requires additional configuration, including specific naming conventions for organizations.
 
+{% hint style="info" %}
 Work with your Snyk account team to prepare for implementing this SSO option.
+{% endhint %}
 
 ## Complete SSO connection
 

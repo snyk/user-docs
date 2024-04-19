@@ -38,12 +38,7 @@ You can create, edit, duplicate, and delete custom roles, granting your users th
 
 You will find [pre-defined roles](pre-defined-roles.md) such as **Organization Admin** and **Organization Collaborator** listed under your Group. These roles can be selected to view their associated permissions, but permissions cannot be added, edited, or removed. Pre-defined role permissions can be duplicated to act as a starting point for any custom role creation.
 
-### Create a custom role
-
-{% hint style="warning" %}
-**Release status**\
-Group custom roles are in [Closed Beta](../../getting-started/snyk-release-process.md#snyk-features-in-closed-beta). For more information, contact your Snyk team.
-{% endhint %}
+## Create a custom role
 
 Role management for Groups takes place in **Settings** > **Member roles**. This is accessible to **Group Admins** or custom roles with **Role management** permissions.
 
@@ -174,17 +169,11 @@ If the user is not already a part of your Group, you must first add that user as
 
 Member roles are supported as part of a customized SSO authentication flow. All new and existing customers who have customized SSO can use new roles they create in their IDP SAML assertions to provision users in their Organizations with those roles.
 
+For more details, see [Custom mapping](../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/)
+
 {% hint style="info" %}
-If you already have Custom SSO set up, or are planning to create Member Roles after setting up Custom SSO, you can use Member Roles with no modification to the Snyk Custom SSO configuration, provided you send the normalized role name in your payload in the agreed-upon format.
+If you already have Custom SSO set up, or are planning to create Member roles after setting up Custom SSO, you can use Member roles with no modification to the Snyk Custom SSO configuration, provided you send the normalized role name in your payload in the agreed-upon format.
 {% endhint %}
-
-New member role SAML assertions follow the existing Snyk pattern for declaring Organization memberships in IDP payloads: `{snyk-prefix}-{org-slug}-{normalized-role-name},` for example: `snyk-goof-developer_readonly` where:
-
-* snyk-prefix = `snyk`
-* org-name = `goof`
-* role-name = `developer_readonly`
-
-<figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 16.31.11.png" alt="Normalized name for a member role displayed in the Web UI"><figcaption><p>Normalized name for a member role displayed in the Web UI</p></figcaption></figure>
 
 ## Permissions required to edit Project attributes from the Snyk CLI
 

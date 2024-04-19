@@ -1,6 +1,6 @@
 # Example: Setting up custom mapping for Google Workspace
 
-The following shows how to use the [Custom Mapping Option](./) for custom mapping of roles for a Google Workspace custom SAML connection.
+The following shows how to use [custom mapping](../) to map roles for a Google Workspace custom SAML connection.
 
 For additional details and guidance, see the [Google documentation, Manage Custom User Fields](https://developers.google.com/admin-sdk/directory/v1/guides/manage-schemas).
 
@@ -36,10 +36,10 @@ Attach the desired roles to the user profile with the user [API endpoint](https:
    "Snyk-SSO": {
      "roles": [
        {
-         "value": "snyk-org1-admin"
+         "value": "snyk:org:org1:org_admin"
        },
        {
-         "value": "snyk-org2-admin"
+         "value": "snyk:org:org2:org_admin"
        }
      ]
    }
@@ -53,11 +53,11 @@ To expose these roles in the SAML payload, you must modify the attributes in the
 
 1.  Log in to your Google Workspace Admin area and go to **Apps** and then **Web and mobile apps** and open your application.
 
-    <figure><img src="../../../.gitbook/assets/x1.png" alt="Open Google SAML app"><figcaption><p>Open Google SAML app</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/x1.png" alt="Open Google SAML app"><figcaption><p>Open Google SAML app</p></figcaption></figure>
 2. Click on **SAML attribute mapping** and then **ADD MAPPING**.
 3. Click **Select field** and scroll to the bottom until you find **Snyk-SSO - roles** and select it.
 4.  In the **App attributes** value field, enter **roles** and click **Save**.
 
-    <figure><img src="../../../.gitbook/assets/x2 (1).png" alt="Adding custom mapping app attribute"><figcaption><p>Adding custom mapping app attribute</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/x2 (1).png" alt="Adding custom mapping app attribute"><figcaption><p>Adding custom mapping app attribute</p></figcaption></figure>
 
 After this, log in as a user and have your Snyk contact validate the SAML payload and finalize the setup in the Snyk backend.

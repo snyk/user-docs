@@ -1,30 +1,11 @@
-# SSO Custom Mapping Option
-
-Custom mappings allows you to dynamically assign users to your Snyk Groups and Organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model.
-
-{% hint style="info" %}
-Work with your Snyk account team to implement this option.
-{% endhint %}
-
-To understand more about roles and permissions within Snyk, see [Managing permissions](../../../snyk-admin/user-roles/pre-defined-roles.md).
-
-See also [User role management](../../../snyk-admin/user-roles/user-role-management.md) and [Roles in Custom SSO](../../../snyk-admin/user-roles/user-role-management.md#roles-in-custom-sso).
-
-## Requirements for Custom Mapping
-
-* Complete the SSO information worksheet for the appropriate IdP (identity provider) found in the Resources section of [Set up Snyk Single Sign-On (SSO)](../set-up-snyk-single-sign-on-sso.md)
-* Properly configure the custom attributes in your IdP to populate the `roles` array mapping ([Example roles array mapping](./#example-roles-array-mapping))
-
-## Roles array mapping with Snyk
-
-In the IdP, you must first pass a custom mapping called `roles` as a string array. Refer to [Example: Example: setting up custom mapping for Okta](example-setting-up-custom-mapping-for-okta.md). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.
+# Legacy custom mapping
 
 To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to **one** of the following patterns:
 
 snyk-groupadmin
 
-* This role mapping assigns users with the Group Admin and Org Admin roles.
-* **groupadmin** configures all users with this role as a Group Admin and Org Admin for all Group(s) that the user is assigned to and all Orgs that fall under the Group(s).
+* This role mapping assigns users with the Group Admin role.
+* **groupadmin** configures all users with this role as a Group Admin all Group(s) that the user is assigned to, which grants Organization Admin permissions to all Organizations that fall under the Group(s).
 
 snyk-groupviewer
 
@@ -171,4 +152,4 @@ For the Product Team, Snyk uses the snyk-{groupID} mapping, where the value of g
 
 ## Summary diagram of roles under custom mapping
 
-<figure><img src="../../../.gitbook/assets/custom-mapping-screenshot.png" alt="Summary diagram of role under custom mapping"><figcaption><p>Summary diagram of role under custom mapping</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (373).png" alt=""><figcaption></figcaption></figure>
