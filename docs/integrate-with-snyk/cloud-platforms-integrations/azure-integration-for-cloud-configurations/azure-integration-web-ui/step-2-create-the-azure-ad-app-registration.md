@@ -1,4 +1,4 @@
-# Step 2: Create the Azure AD app registration
+# Step 2: Create the Entra ID app registration
 
 {% hint style="info" %}
 **Recap**\

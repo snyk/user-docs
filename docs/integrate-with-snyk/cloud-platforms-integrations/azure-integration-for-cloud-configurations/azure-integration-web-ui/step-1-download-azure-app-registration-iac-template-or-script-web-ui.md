@@ -8,7 +8,7 @@ Before you can create a Cloud Environment for an Azure subscription, you must **
 
 This infrastructure gives Snyk read-only permission to scan the configuration of resources in your subscription.
 
-You will use the IaC template or Bash script you downloaded to **provision** the infrastructure in [Step 2: Create the Azure AD application](step-2-create-the-azure-ad-app-registration.md).
+You will use the IaC template or Bash script you downloaded to **provision** the infrastructure in [Step 2: Create the Entra ID application](step-2-create-the-azure-ad-app-registration.md).
 
 Both methods create the same infrastructure, so pick the method you are most comfortable working with.
 
@@ -20,7 +20,7 @@ Both methods create the same infrastructure, so pick the method you are most com
 4. Select the **Terraform** button to download a `snyk-permissions-azure.tf` file or **Azure CLI Bash** to download a `snyk-permissions-azure.sh` file:\
    ![The Snyk Cloud Add Azure Environment modal](../../../../.gitbook/assets/snyk-cloud-onboard-azure-step-1.png)
 
-You can now proceed to [Step 2: Create the Azure AD app registration](step-2-create-the-azure-ad-app-registration.md).
+You can now proceed to [Step 2: Create the Entra ID app registration](step-2-create-the-azure-ad-app-registration.md).
 
 {% hint style="info" %}
 You can also add a Cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments](../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/snyk-environments/view-add-and-remove-environments.md).
@@ -28,4 +28,4 @@ You can also add a Cloud environment from **Organization Settings (cog icon) > C
 
 ## What's next?
 
-You can now proceed to [Step 2: Create the Azure AD app registration](step-2-create-the-azure-ad-app-registration.md).
+You can now proceed to [Step 2: Create the Entra ID app registration](step-2-create-the-azure-ad-app-registration.md).

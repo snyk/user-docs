@@ -13,7 +13,7 @@ You can take advantage of your company's existing identity management system and
 
 <figure><img src="../../.gitbook/assets/image (1) (4).png" alt="Log in to Snyk with SSO"><figcaption><p>Log in to Snyk with SSO</p></figcaption></figure>
 
-Snyk can integrate with any SAML-based and OpenID Connect (OIDC)-based SSO, as well as ADFS. You can also use your Enterprise Identity Provider for SSO, including [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) and [Google G Suite](https://community.snowflake.com/s/article/configuring-g-suite-as-an-identity-provider). Read more about SAML in [the Auth0 documentation](https://auth0.com/docs/protocols/saml).
+Snyk can integrate with any SAML-based and OpenID Connect (OIDC)-based SSO, as well as ADFS. You can also use your Enterprise Identity Provider for SSO, including [Entra ID](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) (formerly Azure AD) and [Google G Suite](https://community.snowflake.com/s/article/configuring-g-suite-as-an-identity-provider). Read more about SAML in [the Auth0 documentation](https://auth0.com/docs/protocols/saml).
 
 ## User authentication and provisioning for SSO
 

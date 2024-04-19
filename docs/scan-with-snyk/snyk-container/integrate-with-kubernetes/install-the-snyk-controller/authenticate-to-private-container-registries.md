@@ -158,7 +158,7 @@ If your cluster runs on `AKS` and you're using `ACR`, add the following:
 ```
 
 {% hint style="info" %}
-In addition, for clusters running on AKS and using ACR, see [Azure AD Workload Identity service account](https://azure.github.io/azure-workload-identity/docs/topics/service-account-labels-and-annotations.html#service-account). It is possible that you are required to configure labels and annotations on the `snyk-monito`r ServiceAccount.
+In addition, for clusters running on AKS and using ACR, see [Entra ID Workload Identity service account](https://azure.github.io/azure-workload-identity/docs/topics/service-account-labels-and-annotations.html#service-account). It is possible that you are required to configure labels and annotations on the `snyk-monito`r ServiceAccount.
 {% endhint %}
 
 You can configure different credential helpers for different registries.&#x20;

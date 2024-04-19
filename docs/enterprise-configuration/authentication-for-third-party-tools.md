@@ -15,7 +15,7 @@ You can use one of the following identity providers for authentication with Snyk
 * GitHub
 * Bitbucket
 * Google
-* Azure AD
+* Entra ID (formerly Azure AD)
 * Docker ID
 * Single Sign-On (SSO): available with Enterprise plans.\
   See [Setting up Single Sign-On (SSO) for authentication](single-sign-on-sso-for-authentication-to-snyk/).

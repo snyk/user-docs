@@ -41,7 +41,7 @@ The Snyk delivery method is designed to ensure rapid value realization with Snyk
 
 #### Base SSO Configuration and Custom Mapping
 
-The Snyk Consultant will work with the Customer to configure SSO through SAML, Azure AD, OIDC, or ADFS connection along with custom mapping of dynamically assigned users to Snyk Groups and Organizations based on data provided by the desired Identity Provider (IdP) to set up a scaled user provisioning and access model.
+The Snyk Consultant will work with the Customer to configure SSO through SAML, Entra ID (formerly Azure AD), OIDC, or ADFS connection along with custom mapping of dynamically assigned users to Snyk Groups and Organizations based on data provided by the desired Identity Provider (IdP) to set up a scaled user provisioning and access model.
 
 #### **Template Organization configuration**
 
