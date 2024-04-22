@@ -65,4 +65,6 @@ Snyk also has limited support for `:path`, `:git` and `:github` dependencies, bu
 
 ## Troubleshooting
 
+When using `asdf`, please make sure to set a version by running `asdf global elixir <version of your choice>`. 
+
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
