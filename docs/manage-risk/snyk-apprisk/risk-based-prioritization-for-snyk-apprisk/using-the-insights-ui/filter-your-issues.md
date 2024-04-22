@@ -6,7 +6,7 @@ Snyk AppRisk operates at the Group level and provides a holistic view of all the
 
 ## Funnel View
 
-The visual representation of the issues and risk factors for your application is called the funnel view. It makes it possible to filter the list of issues by the ones with specific risk factors or a combination of them. The risk factors Os condition, Deployed, and Public facing are clickable filters.
+The visual representation of the issues and risk factors for your application is called the funnel view. It makes it possible to filter the list of issues by the ones with specific risk factors or a combination of them. The risk factors OS condition, Deployed, and Public facing are clickable filters.
 
 ## Table view filters
 
