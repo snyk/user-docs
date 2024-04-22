@@ -11,7 +11,7 @@ Snyk Code supports the following:
   * Windows (limited)
 * Embedded systems: Linux
 * GUI Framework&#x20;
-* Libraries: POSIX, C++ Standard Library, Boost, QT (limited)
+* Libraries: POSIX, C++ Standard Library, Boost, Qt (limited)
 
 ### Open source and licensing
 
