@@ -6,7 +6,7 @@ When you pass a `purl` to the endpoint, Snyk will find any known vulnerabilities
 
 ## Supported purl types
 
-The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `swift` and `maven`.
+The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `rpm`, `swift` and `maven`.
 
 If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 

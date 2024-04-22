@@ -14,7 +14,7 @@ Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=202
 Supported SBOM formats are [CycloneDX](https://cyclonedx.org/) 1.4 JSON and [SPDX](https://spdx.dev/) 2.3 JSON.
 {% endhint %}
 
-Snyk identifies components within the SBOM by their [package URL](https://github.com/package-url/purl-spec) (purl). If a component does not contain a purl or the purl type is not supported, Snyk skips vulnerability analysis for that component. Supported purl types are: `cargo`, `cocoapods`, `gem`, `golang`, `hex`, `maven`, `npm`, `nuget`, `pypi`, `swift`, and `generic` for unmanaged C/C++ dependencies.
+Snyk identifies components within the SBOM by their [package URL](https://github.com/package-url/purl-spec) (purl). If a component does not contain a purl or the purl type is not supported, Snyk skips vulnerability analysis for that component. Supported purl types are: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `golang`, `hex`, `maven`, `npm`, `nuget`, `pypi`, `rpm`, `swift`, and `generic` for unmanaged C/C++ dependencies.
 
 Follow these steps to [create an SBOM test run](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) and view the results.
 
