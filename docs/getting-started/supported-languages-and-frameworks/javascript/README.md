@@ -88,7 +88,7 @@ The following table shows the Yarn versions and Snyk features availability matri
 {% hint style="info" %}
 Because different versions of Yarn have different feature sets, there are differences in Snyk support in order to match how the package manager works.
 
-**Resolutions** are supported in Yarn v2 only. Yarn v1 resolutions are not supported.
+**Resolutions** are supported in Yarn v2 and above. Yarn v1 resolutions are not supported.
 {% endhint %}
 
 #### Partially supported package managers
@@ -218,7 +218,7 @@ snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
 
 You can import JavaScript repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
-:link: [How Snyk works for open source and licensing](../technical-specifications.md#how-snyk-works-for-open-source-and-licensing)
+Navigate to the [How Snyk works for open source and licensing](../technical-specifications.md#how-snyk-works-for-open-source-and-licensing) page for more details.
 
 #### Import Project
 
@@ -230,7 +230,7 @@ To import Projects from a Git repository integration:
    \
    If you have an integrated Git repository (GitHub) it shows up as an option to choose from.
 
-:link: [Import a Project](../../quickstart/import-a-project.md)
+Navigate to the [Import a Project](../../quickstart/import-a-project.md) page for more details.
 
 #### Configure language settings for open source&#x20;
 
@@ -273,9 +273,9 @@ If you use the **zero-installs** feature, Snyk Fix PRs do not update the **.yarn
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../../integrate-with-snyk/use-snyk-in-your-ide/).
+For integrated development environments, see [Use Snyk in your IDE](../../../integrate-with-snyk/use-snyk-in-your-ide/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../../snyk-api/)).
+If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../../snyk-api/)).
 
 ## Best practices
 
