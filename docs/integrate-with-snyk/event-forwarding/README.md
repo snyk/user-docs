@@ -1,11 +1,5 @@
 # Event Forwarding
 
-{% hint style="warning" %}
-**Release status**&#x20;
-
-Snyk event forwarding integrations are currently available in the Snyk MT-US environment. If you are a Single-tenant customer, contact your Snyk representative to enable these integrations.
-{% endhint %}
-
 {% hint style="info" %}
 **Transition to Snyk Apps**
 
@@ -13,7 +7,7 @@ Snyk is currently transitioning event forwarding integrations to use the Snyk Ap
 
 During the transition, existing integrations will continue to function normally, and customers will have the opportunity to authorize the integrations to ensure they continue working once they become Snyk Apps. You can complete authorization for existing integrations by following these steps:
 
-1. Go to the **Settings** page for your organization
+1. Go to the **Settings** page for your Organization
 2. Go to the settings section for the integration you want to authorize, for example, Amazon EventBridge, AWS CloudTrail Lake, AWS Security Hub.
 3. Click the **Authorize app** button and complete the App authorization flow
 
