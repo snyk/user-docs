@@ -39,7 +39,7 @@ If you want to remove specific directories or files from the Snyk Code test, use
 
 ## **Deactivate and delete imported repositories**
 
-For instructions on deleting repositories, see [How can I delete multiple Projects](https://support.snyk.io/hc/en-us/articles/360002623578-How-can-I-delete-multiple-projects)?
+For instructions on deleting repositories, see the Project actions [Delete, Activate, or Deactivate](../../snyk-admin/snyk-projects/#delete-activate-or-deactivate). For more details, see [How can I delete multiple Projects](https://support.snyk.io/hc/en-us/articles/360002623578-How-can-I-delete-multiple-projects)?
 
 ## **Deactivate and delete a Snyk Code Project**
 
