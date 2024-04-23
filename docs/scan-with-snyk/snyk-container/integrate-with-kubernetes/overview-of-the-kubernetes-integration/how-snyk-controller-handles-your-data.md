@@ -13,7 +13,7 @@ After you install the Snyk Controller in your Kubernetes cluster, it pulls image
    * Image scan results and image metadata:
      * List of OS packages
      * Application dependencies
-5. The Snyk Controller's scanning result is updated in the Snyk Web UI after some time between a few minutes and a few hours. This is because the result depends on multiple factors:
+5. The Snyk Controller's scanning result is available for import in the Snyk Web UI after some time between a few minutes and a few hours. The length of the delay depends on multiple factors:
    * The Snyk Controller doing the first scan of the cluster
    * The size of the Kubernetes clusters and workloads
    * How the customer uses manual or auto-import of the Kubernetes workload
