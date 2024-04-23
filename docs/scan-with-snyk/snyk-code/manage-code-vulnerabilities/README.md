@@ -28,7 +28,7 @@ Here is an overview of the testing process in Snyk Code based on the testing pha
 
 If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by clicking the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](../../../working-with-snyk/what-counts-as-a-test.md)
 
-You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Exclude directories and files from Project import](../../import-project-repository/excluding-directories-and-files-from-the-import-process.md).
+You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Exclude directories and files from Project import](../../import-project-repository/exclude-directories-and-files-from-project-import.md).
 
 <figure><img src="../../../.gitbook/assets/Retest Code.png" alt="Retesting a repository."><figcaption><p>Retesting repository </p></figcaption></figure>
 
@@ -66,11 +66,11 @@ If you have existing Projects in your Snyk account, you can add additional repos
 
 ### Remove repositories from testing
 
-You can remove the Code analysis Project or delete imported repositories if you no longer need to test them for vulnerabilities. See [Remove imported repository](../../import-project-repository/remove-imported-repository.md).
+You can remove the Code analysis Project or delete imported repositories if you no longer need to test them for vulnerabilities. See [Remove imported repository](../../import-project-repository/remove-imported-repository-from-a-project.md).
 
 ### Exclude directories and files
 
-To exclude specific files and directories from being imported by Snyk Code, you need to create a `.snyk` YAML policy file in your repository. See [Exclude directories and files from Project import](../../import-project-repository/excluding-directories-and-files-from-the-import-process.md).
+To exclude specific files and directories from being imported by Snyk Code, you need to create a `.snyk` YAML policy file in your repository. See [Exclude directories and files from Project import](../../import-project-repository/exclude-directories-and-files-from-project-import.md).
 
 You can specify directories to exclude from the import process using the Exclude dialog box when you import repositories through Git repository. However, this feature is only supported for open-source dependency scans (SCA).
 

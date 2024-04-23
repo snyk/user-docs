@@ -1,5 +1,9 @@
 # Exclude directories and files from Project import
 
+If you import a Project through an SCM integration, add the exclusions, folders only, to the bottom of the import window.
+
+<figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt="Exclude folders"><figcaption><p>Exclude folders</p></figcaption></figure>
+
 When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the `.snyk` file. The `.snyk` file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The `.snyk` file should be created in the repository you intend to import.
 
 {% hint style="info" %}

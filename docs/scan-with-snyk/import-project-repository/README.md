@@ -16,5 +16,5 @@ If some of the files in the selected repositories were not imported, you receive
 
 ## Next steps?
 
-* [Exclude directories and files from Project import](excluding-directories-and-files-from-the-import-process.md)
-* [Remove imported repository from a Project](remove-imported-repository.md)
+* [Exclude directories and files from Project import](exclude-directories-and-files-from-project-import.md)
+* [Remove imported repository from a Project](remove-imported-repository-from-a-project.md)

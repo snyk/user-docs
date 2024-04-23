@@ -34,7 +34,7 @@ To select the right method for you for removing repositories from Snyk testing, 
 {% hint style="info" %}
 Deleting a Snyk Project or an imported repository will not have any effect on your source code.
 
-If you want to remove specific directories or files from the Snyk Code test, use [the exclude option in the `.snyk` file](excluding-directories-and-files-from-the-import-process.md).
+If you want to remove specific directories or files from the Snyk Code test, use [the exclude option in the `.snyk` file](exclude-directories-and-files-from-project-import.md).
 {% endhint %}
 
 ## **Deactivate and delete imported repositories**
