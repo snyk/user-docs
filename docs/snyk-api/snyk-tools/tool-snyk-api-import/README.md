@@ -21,7 +21,7 @@ Snyk `snyk-api-import` CLI can be installed through multiple channels.
 
 ### Standalone executables (macOS, Linux, Windows)
 
-Use the [GitHub Releases](https://github.com/snyk-tech-services/snyk-api-import/releases) to download a standalone executable of `snyk-api-import` CLI for your platform.
+Use the [GitHub Releases](https://github.com/snyk/snyk-api-import/releases) to download a standalone executable of `snyk-api-import` CLI for your platform.
 
 ### More installation methods
 
@@ -69,8 +69,8 @@ The logs can be explored using [Bunyan CLI](http://trentm.com/node-bunyan/bunyan
   * [Mirroring Bitbucket Cloud organizations and repos in Snyk](mirroring-bitbucket-cloud-organizations-and-repos-in-snyk.md)
 * [Kicking off an import](kicking-off-an-import.md)
 * [Contributing](contributing.md)
-* [Sync: detecting changes in monitored repos and updating Snyk projects](https://github.com/snyk-tech-services/snyk-api-import/blob/master/docs/sync.md)
-* Example workflow: [AWS automation](https://github.com/snyk-tech-services/snyk-api-import/blob/master/docs/example-workflows/aws-automation-example.md)
+* [Sync: detecting changes in monitored repos and updating Snyk projects](https://github.com/snyk/snyk-api-import/blob/master/docs/sync.md)
+* Example workflow: [AWS automation](https://github.com/snyk/snyk-api-import/blob/master/docs/example-workflows/aws-automation-example.md)
 
 ## FAQ
 

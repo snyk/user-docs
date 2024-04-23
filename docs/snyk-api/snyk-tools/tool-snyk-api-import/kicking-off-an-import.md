@@ -162,7 +162,7 @@ If you have any tests or fixtures that should be ignored, please set the `exclus
 
 ## 3. Download and run
 
-Grab a binary from the [releases page](https://github.com/snyk-tech-services/snyk-api-import/releases) and run with `DEBUG=snyk* snyk-api-import-macos import --file=path/to/imported-targets.json`
+Grab a binary from the [releases page](https://github.com/snyk/snyk-api-import/releases) and run with `DEBUG=snyk* snyk-api-import-macos import --file=path/to/imported-targets.json`
 
 ### **Skip all previously imported targets**
 

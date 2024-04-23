@@ -103,7 +103,7 @@ The file should be formatted this way:
 }
 ```
 
-Once the file is created, you can feed it to the [orgs:create command](https://github.com/snyk-tech-services/snyk-api-import/blob/0e5162d29dec7f1d5acde247cc8da0553871db3f/docs/orgs.md#creating-organizations-in-snyk-1)
+Once the file is created, you can feed it to the [orgs:create command](https://github.com/snyk/snyk-api-import/blob/0e5162d29dec7f1d5acde247cc8da0553871db3f/docs/orgs.md#creating-organizations-in-snyk-1)
 
 ## Methods of creating Orgs
 
