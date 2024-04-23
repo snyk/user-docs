@@ -1,10 +1,8 @@
 # Automatically created Project collections
 
 {% hint style="info" %}
-**Release status and feature availability**
-
-Automated Collections are in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. [Limitations](automatically-created-project-collections.md#limitations) apply.
-
+**Release status and feature availability**\
+Automated Collections are in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. [Limitations](automatically-created-project-collections.md#limitations) apply.\
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
@@ -12,10 +10,14 @@ Scanning a repository through an SCM integration and rescanning it using the Sny
 
 With the option to create Project collections automatically, Projects from these duplicate Targets will be detected and grouped automatically into a new collection. This helps identify duplicates and allows filtering and reporting on the issues of your preferred code-scanning method.
 
+{% hint style="info" %}
+Automated Collections takes up to an hour to create or delete a collection.
+{% endhint %}
+
 ## Enable automatic Project collections
 
 {% hint style="info" %}
-Automated Collections take up to an hour to be created or deleted.
+Bitbucket Server Projects cannot be grouped into automatically created collections because of their dynamic repository URL schema.
 {% endhint %}
 
 Automated Collections can be turned on under the Organization settings by users with the appropriate permissions: Organization Admins, Group Admins, or users with permissions to edit Organization settings.
@@ -24,24 +26,16 @@ Automated Collections can be turned on under the Organization settings by users 
 
 After Automated Collections are enabled, all the Organization's Projects will be analyzed, and Projects with the same repository URL will be grouped automatically into a collection. All subsequent Project imports will also update the list of automatically created collections; there is no need to refresh the list manually.&#x20;
 
-{% hint style="info" %}
-Bitbucket Server Projects cannot be grouped into automatically created collections because of their dynamic repository URL schema.
-{% endhint %}
-
 ## Turn off Automated Collections
 
 Turning off Automated Collections will remove all the automatically created collections without impacting any of the grouped Projects. Only the automated collections are deleted, not their contents.
-
-{% hint style="info" %}
-Automated Collections takes up to an hour to create or delete a collection.
-{% endhint %}
 
 ## Automatically versus manually created Project collections
 
 An automatically created collection has the same filtering and reporting options as a manually created collection:
 
 * You can filter an automatically created collection to see only the result of your preferred scanning method, thus hiding duplicates.
-* You can create reports from an automatically created collection, track issues from just one of the scanning methods and ignore the rest.
+* You can create reports from an automatically created collection and track issues from just one of the scanning methods and ignore the rest.
 
 Automatically created collections have no management options available:
 
@@ -51,6 +45,6 @@ Automatically created collections have no management options available:
 
 ## Limitations
 
-* This feature does not detect [SAST](../../getting-started/glossary.md#sast) scans pushed to the Snyk Web UI using the `snyk code test --report --project-name="name"` command.
-* This feature only supports GitHub, GitHub Enterprise, GitLab, Bitbucket Cloud, and Azure integration scans. CLI-based scans are not supported.
+* Automated Collections does not detect [SAST](../../getting-started/glossary.md#sast) scans pushed to the Snyk Web UI using the `snyk code test --report --project-name="name"` command.
+* This feature supports only GitHub, GitHub Enterprise, GitLab, Bitbucket Cloud, and Azure integration scans.
 * This feature does not support Snyk Container.
