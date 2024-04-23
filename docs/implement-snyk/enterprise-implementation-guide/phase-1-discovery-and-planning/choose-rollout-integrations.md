@@ -30,7 +30,7 @@ The advantages of SCM integrations are:
 * Onboarding repositories can be configured through the UI or [API/API Import Tool](https://docs.snyk.io/snyk-api-info/other-tools/tool-snyk-api-import)
 * Support for Cloud and Private Code Repositories on the Snyk Enterprise plan
 
-See [Git repositories (SCMs)](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) for more details.
+See [Git repositories (SCMs)](../../../integrate-with-snyk/snyk-scm-integrations/) for more details.
 
 If you have an on-premise Git repository, you must consider deploying [Snyk Broker](https://docs.snyk.io/snyk-admin/snyk-broker) for Snyk to communicate with your repositories.
 
@@ -75,7 +75,7 @@ For complex environments, modules, and highly templated implementations, using t
 
 ### CR (Container Registries) integrations
 
-Snyk also integrates with various [Container Registries](../../../integrate-with-snyk/snyk-container-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found, at a frequency you control.
+Snyk also integrates with various [Container Registries](../../../integrate-with-snyk/container-security-management-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found, at a frequency you control.
 
 ### Kubernetes
 

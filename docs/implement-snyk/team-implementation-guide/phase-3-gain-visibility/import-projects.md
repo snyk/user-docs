@@ -19,7 +19,7 @@ Depending on your needs, Snyk offers various integration methods:
 
 ### Git Integration
 
-For details, see [Git repositories (SCMs) integrations with Snyk](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
+For details, see [Git repositories (SCMs) integrations with Snyk](../../../integrate-with-snyk/snyk-scm-integrations/).
 
 Connect your repositories for automatic scanning.
 

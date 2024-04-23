@@ -290,7 +290,7 @@ Software Composition Analysis. A technology that is used to identify open-source
 
 ### SCM
 
-Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
+Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../integrate-with-snyk/snyk-scm-integrations/).
 
 ### SDLC
 

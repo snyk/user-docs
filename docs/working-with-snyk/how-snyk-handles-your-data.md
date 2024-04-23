@@ -120,7 +120,7 @@ Your account is subject to contract terms which might restrict your ability to e
 ## Snyk integrations: Git repository cloning
 
 {% hint style="info" %}
-For more information on Git repository cloning enablement and use, see [Git repository cloning for SCM integrations](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations.md).
+For more information on Git repository cloning enablement and use, see [Git repository cloning for SCM integrations](../integrate-with-snyk/snyk-scm-integrations/introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations.md).
 {% endhint %}
 
 ### Safeguards Snyk puts in place to ensure data is secure

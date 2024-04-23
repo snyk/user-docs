@@ -75,7 +75,7 @@ The **Source control** integrations display only SCMs that are supported by Snyk
 
 This grants Snyk access permissions for the integrated SCM.
 
-For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
+For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../integrate-with-snyk/snyk-scm-integrations/).
 
 After you have integrated the SCM with your Snyk account, you can import the repositories you want to scan using Snyk Code.
 

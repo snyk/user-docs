@@ -13,7 +13,7 @@ This page explains how you can publish Snyk Code results to a Snyk Project with 
 You can [publish CLI results to a Snyk Code Project](publish-snyk-code-cli-results-and-ignore-issues.md#publish-cli-results-to-a-snyk-code-project) created using the CLI. Run Snyk Code in the CI/CD and upload results to a Snyk Project for reports. When you do this:
 
 * After you have created a Snyk Code Project from the CLI, any issues that are ignored in the Web UI Project will apply to future CLI scans.
-* A Git repository[ Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) is not required.
+* A Git repository[ Integration](../../../integrate-with-snyk/snyk-scm-integrations/) is not required.
 * If a CLI-based Snyk Code Project does not yet exist for the value provided in the `--project-name` option, Snyk creates a new CLI-based Project.&#x20;
 * If a CLI-based Snyk Code Project does exist, a new snapshot is created under the same Project.
 * The identity is based on `--project-name` or `--target-name`.
@@ -22,7 +22,7 @@ You can [use the CLI to trigger a Snyk Code Git repository Project to test a spe
 
 * Issues that are ignored in the Web UI Project will apply to scans triggered through this method.&#x20;
 * The command will trigger a scan of the specified code in the repository, not local code, based on the commit ID you specified.&#x20;
-* The results are saved as a new snapshot of the existing SCM Project, which requires a Git repository[ Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
+* The results are saved as a new snapshot of the existing SCM Project, which requires a Git repository[ Integration](../../../integrate-with-snyk/snyk-scm-integrations/).
 
 This page also explains how to [ignore CLI results](publish-snyk-code-cli-results-and-ignore-issues.md#ignore-cli-results).
 
@@ -92,7 +92,7 @@ When you are using Snyk Code in the CI/CD, you can specify an existing Git repos
 
 Be sure you have the prerequisites and publish the results as you intend:
 
-* A Git repository[ Integration](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/) is required, as the CLI command triggers a test using a Git repository Project. &#x20;
+* A Git repository[ Integration](../../../integrate-with-snyk/snyk-scm-integrations/) is required, as the CLI command triggers a test using a Git repository Project. &#x20;
 * The Project ID is required. You can find the Project ID in the URL of the Project in the Snyk Web UI: `https://app.snyk.io/org/org_name/project/PROJECT_UUID.`
 * After you run the CLI command, results are saved in the Git repository Project that you have specified. Given that scheduled tests for Git repository Projects scan the default branch, Snyk recommends using this CLI command with the Project ID for the Project where the default branch for the specified repository is being monitored.
 * In the Code Analysis Project, three snapshots are stored at a time. Consider outputting a static [JSON](https://docs.snyk.io/snyk-cli/commands/code-test#json) or[ SARIF ](https://docs.snyk.io/snyk-cli/commands/code-test#sarif)file to save scan results for future reference.

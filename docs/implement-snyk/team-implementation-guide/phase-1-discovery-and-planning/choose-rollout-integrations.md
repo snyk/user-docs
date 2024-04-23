@@ -30,7 +30,7 @@ Advantages:
 * Onboarding of repositories can be configured using the UI
 * Supports Cloud Repositories on the Team plan
 
-For more details, see [Git repositories (SCMs)](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
+For more details, see [Git repositories (SCMs)](../../../integrate-with-snyk/snyk-scm-integrations/).
 
 
 
@@ -79,6 +79,6 @@ For complex environments, modules, and highly templated implementations, utilizi
 
 ### CR (Container Registries)
 
-Snyk also integrates with various [Container Registries](../../../integrate-with-snyk/snyk-container-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
+Snyk also integrates with various [Container Registries](../../../integrate-with-snyk/container-security-management-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
 
 ###

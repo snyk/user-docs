@@ -71,7 +71,7 @@ If you see any errors during import, see [Project import errors](https://support
 Importing a Project also does the following:
 
 * Sets Snyk to run a regular scan on that Project for issues; see [Test frequency settings](../../snyk-admin/groups-and-organizations/usage-settings.md#test-frequency-settings) for the defaults.
-* Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
+* Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../../integrate-with-snyk/snyk-scm-integrations/).
 
 {% hint style="info" %}
 For training on best practices in using automation, visit the Snyk course [Source Code Manager Configurations](https://learn.snyk.io/lesson/configure-snyk-scm/).
