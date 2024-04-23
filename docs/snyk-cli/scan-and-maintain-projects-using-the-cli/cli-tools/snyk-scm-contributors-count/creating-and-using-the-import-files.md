@@ -49,5 +49,5 @@ This tool requires a json file with the repos data to be imported. This file can
 
 For more information about the **snyk-api-import** tool see:
 
-* [https://github.com/snyk-tech-services/snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import)
-* [https://github.com/snyk-tech-services/snyk-api-import/blob/master/docs/import.md](https://github.com/snyk-tech-services/snyk-api-import/blob/master/docs/import.md)
+* [https://github.com/snyk/snyk-api-import](https://github.com/snyk/snyk-api-import)
+* [https://github.com/snyk/snyk-api-import/blob/master/docs/import.md](https://github.com/snyk/snyk-api-import/blob/master/docs/import.md)

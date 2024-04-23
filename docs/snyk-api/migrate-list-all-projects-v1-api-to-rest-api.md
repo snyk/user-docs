@@ -38,7 +38,7 @@ The following Snyk Tools that use the [List all projects v1 API](https://snyk.do
 * [snyk-api-ts-client](https://github.com/snyk-labs/snyk-api-ts-client): version 1.11.1 or newer
 * [snyk-request-manager](https://github.com/snyk-labs/snyk-request-manager): version 1.8.1 or newer
 * [backstage-plugin](https://github.com/snyk-tech-services/backstage-plugin-snyk): version 2.0.0 or newer
-* [api-import-tool](https://github.com/snyk-tech-services/snyk-api-import): version 1.99.0 or newer
+* [api-import-tool](https://github.com/snyk/snyk-api-import): version 1.99.0 or newer
 * [snyk-scm-mapper](https://github.com/snyk-labs/snyk-scm-mapper): latest version
 * [pysnyk](https://github.com/snyk-labs/pysnyk): version 0.9.8 or newer
 * [snyk-repo-diff](https://github.com/snyk-labs/snyk-repo-diff): latest version

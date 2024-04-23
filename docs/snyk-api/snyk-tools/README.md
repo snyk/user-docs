@@ -12,7 +12,7 @@ You must have a [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=
 
 Snyk provides full documentation for the following key Snyk Tools:
 
-* [snyk-api-import (docs)](tool-snyk-api-import/): Bulk import Projects into Snyk in a robust, paced way. Repo: [snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import)
+* [snyk-api-import (docs)](tool-snyk-api-import/): Bulk import Projects into Snyk in a robust, paced way. Repo: [snyk-api-import](https://github.com/snyk/snyk-api-import)
 * [snyk-delta (docs)](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md): Get the delta between two Snyk snapshots. Repo: [snyk-delta](https://github.com/snyk-tech-services/snyk-delta)
 * [snyk-filter (docs)](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md): Takes the JSON output from the Snyk CLI and applies custom filtering of the results. Repo: [snyk-filter](https://github.com/snyk-tech-services/snyk-filter)
 * [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md): Snyk JSON to HTML Mapper takes the JSON output from `snyk test --json` and creates a local HTML file displaying the vulnerabilities discovered. Repo: [snyk-to-html](https://github.com/snyk/snyk-to-html)
