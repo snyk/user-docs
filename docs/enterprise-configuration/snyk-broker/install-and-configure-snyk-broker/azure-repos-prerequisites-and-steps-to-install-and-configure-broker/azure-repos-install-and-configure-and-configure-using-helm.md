@@ -26,7 +26,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set azureReposOrg=<ENTER_REPO_ORG> \
              --set azureReposHost=<ENTER_REPO_HOST> \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
-             --set enabledAppRisk=true \
+             --set enableAppRisk=true \
              -n snyk-broker --create-namespace
 ```
 

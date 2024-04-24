@@ -15,7 +15,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=github-com \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
              --set scmToken=<ENTER_REPO_TOKEN> \
-             --set enabledAppRisk=true \
+             --set enableAppRisk=true \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
              -n snyk-broker --create-namespace
 ```

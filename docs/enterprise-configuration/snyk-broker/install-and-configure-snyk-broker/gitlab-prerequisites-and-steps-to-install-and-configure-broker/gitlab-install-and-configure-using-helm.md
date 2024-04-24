@@ -25,7 +25,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set gitlab=<ENTER_GITLAB_URL> \
              --set scmToken=<ENTER_GITLAB_TOKEN> \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
-             --set enabledAppRisk=true \
+             --set enableAppRisk=true \
              -n snyk-broker --create-namespace
 ```
 
