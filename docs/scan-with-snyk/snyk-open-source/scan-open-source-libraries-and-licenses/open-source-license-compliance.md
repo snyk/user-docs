@@ -53,19 +53,12 @@ If you notice a license with the wrong license type assigned to it, you can cont
 Snyk does not support scanning for license issues for package versions that include a git commit hash.
 {% endhint %}
 
-* npm
-* RubyGems
-* Maven
-* Pip
-* Nuget
-* Go
-* Composer
+* C/C++ (Unmanaged)
 * Cocoapods
-
-## **Supported unmanaged ecosystems**
-
-{% hint style="info" %}
-Snyk does not support scanning for license issues for package versions that include a git commit hash.
-{% endhint %}
-
-C/C++ scanning for license issues is supported in Early Access.
+* Composer
+* Go
+* Maven
+* npm
+* Nuget
+* Pip
+* RubyGems
