@@ -1,14 +1,22 @@
 # Snyk API
 
 {% hint style="info" %}
-The Snyk API is available only for Enterprise plans.
+The Snyk API is available only for Enterprise plans.&#x20;
 
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Snyk [extensibility and the Snyk API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk security automation to their specific workflows, ensuring consistency in both developer experience and platform governance. The [Snyk API v1](./#snyk-api-v1) and the [Snyk REST API](./#snyk-rest-api) are available for you to use when you decide to [use an API rather than the CLI or an integration](./#when-to-use-the-api-versus-the-cli-or-an-integration).
+Snyk [extensibility and the Snyk API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk security automation to their specific workflows, ensuring consistency in both developer experience and platform governance. The [Snyk REST API](./#snyk-rest-api)  and the [Snyk API v1](./#snyk-api-v1) are available for you to use when you decide to [use an API rather than the CLI or an integration](./#when-to-use-the-api-versus-the-cli-or-an-integration).
 
-## Snyk API v1
+## Snyk REST API
+
+The [**Snyk REST API**](https://apidocs.snyk.io/) is based on the OpenAPI and JSON:API standards and represents an evolutionary approach to API development, with each endpoint versioned. For more information, see [Versioning](https://apidocs.snyk.io/#overview) in the reference docs.&#x20;
+
+## Snyk API v1 (superseded by the REST API)
+
+{% hint style="info" %}
+Snyk API v1 will be sunset eventually, as further Snyk developments and maintenance iare now focused on REST-specific APIs.
+{% endhint %}
 
 The [**Snyk API v1**](https://snyk.docs.apiary.io/) has the ability to test a package for issues as they are defined by Snyk, and to provide Snyk security automation according to your own workflows, unconstrained by security processes in Snyk products. Customers and partners can perform functions including:
 
@@ -16,14 +24,6 @@ The [**Snyk API v1**](https://snyk.docs.apiary.io/) has the ability to test a pa
 * Scanning Projects and applications
 * Receiving remediation advice
 * Viewing user data to build custom security solutions
-
-## Snyk REST API
-
-{% hint style="info" %}
-The Snyk REST API was formerly known as Snyk API v3.
-{% endhint %}
-
-The [**Snyk REST API**](https://apidocs.snyk.io/) is available for you to try out as endpoints are released. It is based on the OpenAPI and JSON:API standards and represents an evolutionary approach to API development, with each endpoint versioned. For more information, see [Versioning](https://apidocs.snyk.io/#overview) in the reference docs). The Snyk REST API ultimately will replace the API v1.
 
 ## When to use the API versus the CLI or an integration
 
