@@ -5,7 +5,9 @@
 ### Code analysis
 
 {% hint style="info" %}
-**Snyk Code for Kotlin**
+**Snyk Code support for Kotlin**
+
+Snyk supports Kotlin Mobile Apps. Kotlin Web Applications are not supported.
 
 Android is partially supported.
 
