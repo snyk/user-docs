@@ -1,11 +1,11 @@
 # REST API endpoint: Test an SBOM document for vulnerabilities
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status and feature availability**
 
-The Snyk REST API is in [Early Access](../getting-started/snyk-release-process.md) and available only for Enterprise plans.
+The Snyk REST API is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 
-For more information, see [Plans and pricing](https://snyk.io/plans).
+These endpoints are beta versions. Some of the functionality may change. For more information, see Versioning in the [Snyk REST API reference documentation](https://apidocs.snyk.io/?version=2024-04-22#overview).
 {% endhint %}
 
 Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=2023-10-13%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) to asynchronously test a software bill of materials (SBOM) document. You can use these endpoints to learn more about the vulnerabilities impacting your SBOM and its packages.
