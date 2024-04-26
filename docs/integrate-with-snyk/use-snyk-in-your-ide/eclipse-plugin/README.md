@@ -45,20 +45,13 @@ The plugin runs on
 
 ## Supported Eclipse versions
 
-The latest plugin version may not be supported on all Eclipse versions. So if you use an older Eclipse version, you may need to install an older plugin version.
+The latest plugin version may not be supported in all Eclipse versions. So if you use an older Eclipse version, you may need to install an older plugin version.
 
+* 2024-03
 * 2023-12
 * 2023-09
 * 2023-06
 * 2023-03
-* 2022-12
-* 2022-09
-* 2022-06
-* 2022-03
-* 2021-12
-* 2021-09
-* 2021-06
-* 2021-03
 
 ## Supported languages, package managers, and frameworks
 
