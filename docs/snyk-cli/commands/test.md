@@ -252,7 +252,7 @@ Auto-detect Maven, JAR, WAR, and AAR files recursively from the current folder.&
 
 ## Options for Gradle projects
 
-**Note:** If you see the invalid string length error, refer to I[nvalid string length error when scanning projects](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/invalid-string-length-error-when-scanning-projects)
+**Note:** If you see the invalid string length error, refer to [Invalid string length error when scanning projects](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/invalid-string-length-error-when-scanning-projects)
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
@@ -260,7 +260,9 @@ For Gradle multi project configurations, test a specific sub-project.
 
 ### `--all-sub-projects`
 
-For multi project configurations, test all sub-projects.
+For multi project configurations, test all sub-projects.  \
+\
+Both a build.gradle file and a settings.gradle file, or equivalent files, based on the package manager, must exist in the current directory.&#x20;
 
 ### `--all-projects`
 
