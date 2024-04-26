@@ -261,6 +261,8 @@ For Gradle "multi project" configurations, monitor a specific sub-project.
 
 For "multi project" configurations, monitor all sub-projects.
 
+Both a build.gradle file and a settings.gradle file, or equivalent files, based on the package manager, must exist in the current directory.
+
 ### `--configuration-matching=<CONFIGURATION_REGEX>`
 
 Resolve dependencies using only configuration(s) that match the specified Java regular expression.
