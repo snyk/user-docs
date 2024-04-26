@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is in early access for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
+This feature is in **Early Access** for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
 
 To enable this feature, you must use Snyk Preview. See [Enable Git repository cloning](../../../snyk-admin/snyk-preview.md#enable-git-repository-cloning).
 {% endhint %}
@@ -47,4 +47,23 @@ Brokered connections are supported when Git operations are allowed through Broke
 
 {% hint style="warning" %}
 This will override restrictions from `accept.json`. For more information, see [Clone capability with Broker for Docker](../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md).
+{% endhint %}
+
+## Limitations
+
+Git repository cloning **does not** support scanning Projects located under the following glob pattern paths:
+
+```
+'**/fixtures',
+'**/tests',
+'**/__tests__',
+'**/test',
+'**/__test__',
+'**/ci',
+'**/node_modules',
+'**/bower_components'
+```
+
+{% hint style="warning" %}
+The above paths are not supported even when using [exclude folders](https://docs.snyk.io/scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import) during Project imports.
 {% endhint %}
