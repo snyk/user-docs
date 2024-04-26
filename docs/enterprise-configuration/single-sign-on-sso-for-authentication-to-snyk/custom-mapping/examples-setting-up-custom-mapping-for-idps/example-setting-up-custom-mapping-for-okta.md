@@ -57,7 +57,7 @@ When you look at a user's Application assignment it should look similar to the i
 The following describes Custom Mapping with user roles.&#x20;
 
 {% hint style="warning" %}
-These instructions show how to map roles using the [legacy custom  mapping](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/oWHMXcV9L0iFBsd3xtpp/) option. To use Custom mapping, [option 1](example-setting-up-custom-mapping-for-okta.md#option-1-assign-custom-mapping-with-groups) is recommended. \
+These instructions show how to map roles using the [legacy custom mapping](../legacy-custom-mapping.md) option. To use Custom mapping, [option 1](example-setting-up-custom-mapping-for-okta.md#option-1-assign-custom-mapping-with-groups) is recommended. \
 Reach out to your Snyk point of contact if you have any questions
 {% endhint %}
 
