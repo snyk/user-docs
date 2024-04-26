@@ -38,7 +38,7 @@ exclude:
         - "*.ending.ext"
         # Exclude files in directories that have the same name with a different ending, like “test” and “tests”. The last character before the question mark is optional. For example, - tests?/
         - directory_name?/
-        # Exclude all files and directories in a specific directory. For example, - tests/
+        # Exclude all files and directories located within any specified folder within your Project. For example, directory_name/** matches and excludes all contents under any directory named directory_name. It is not constrained to the root level or the location of the .snyk file.
 <strong>        - directory_name/**
 </strong></code></pre>
 
