@@ -43,9 +43,9 @@ The plugin runs on
 * Linux
 * Windows
 
-## Supported Eclipse versions
+## Versions of the plugin supported in Eclipse
 
-The latest plugin version may not be supported in all Eclipse versions. So if you use an older Eclipse version, you may need to install an older plugin version.
+The latest plugin version may not be supported in all Eclipse versions. So if you use an older Eclipse version, you may need to install an older plugin version. The following versions of the plugin are available:
 
 * 2024-03
 * 2023-12
