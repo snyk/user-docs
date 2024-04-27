@@ -104,6 +104,7 @@ Snyk Container supports the following operating system distributions:
 
 ### [Ubuntu](https://ubuntu.com/)
 
+* Ubuntu 24.04 - Noble Numbat
 * Ubuntu 23.10 - Mantic Minotaur
 * Ubuntu 23.04 - Lunar Lobster
 * Ubuntu 22.10 - Kinetic Kudu
