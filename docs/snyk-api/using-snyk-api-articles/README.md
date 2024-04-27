@@ -29,5 +29,7 @@ For more articles on using the Snyk API, see the following:
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
 * [Audit logs](../user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 * [Bazel](../../getting-started/supported-languages-and-frameworks/bazel.md)
+* [Dart and Flutter](../../getting-started/supported-languages-and-frameworks/dart-and-flutter.md): [List issues for a package](../rest-api-endpoint-list-issues-for-a-package.md)
+* [Rust](../../getting-started/supported-languages-and-frameworks/rust.md): [SBOM test endpoints](../rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md), [List issues for a package](../rest-api-endpoint-list-issues-for-a-package.md)
 * [User management with the Snyk API](../user-management-with-the-snyk-api/)
 * [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
