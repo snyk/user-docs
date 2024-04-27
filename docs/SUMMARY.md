@@ -907,7 +907,7 @@
     * [Configure Snyk CLI to connect to Snyk API](snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md)
     * [Proxy configuration for Snyk CLI](snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md)
 * [Snyk API](snyk-api/README.md)
-  * [Snyk REST API overview](snyk-api/snyk-rest-api-overview.md)
+  * [REST API overview](snyk-api/snyk-rest-api-overview.md)
   * [Try a simple call to the Snyk REST API](snyk-api/try-a-simple-call-to-the-snyk-rest-api.md)
   * [Authentication for API](snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
