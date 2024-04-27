@@ -80,7 +80,7 @@ When an SSO connection is associated with only one Group, the following call can
 
 You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** >**Settings** >**SSO** >**Step 3**. If you need help, reach out to your Account team.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 10.27.19.png" alt="Self Serve SSO screen, Step 3, sso_id highlighted"><figcaption><p>Self Serve SSO screen, Step 3, sso_id highlighted</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-02-22 at 10.27.19.png" alt="Self Serve SSO screen, Step 3, sso_id highlighted"><figcaption><p>Self Serve SSO screen, Step 3, sso_id highlighted</p></figcaption></figure>
 
 For a successful request, the response is `200 OK`.
 

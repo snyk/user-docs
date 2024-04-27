@@ -6,7 +6,7 @@ Follow these steps to make a simple call to the Snyk REST API.
 2. Log in to [Snyk](https://snyk.io/).
 3. Navigate to the **Org Settings** (gear icon) for an organization where you have projects you can list.
 4. Find the **Organization ID** so you can copy the value when you make the API call.
-5. Navigate to the Snyk REST API and authenticate. For instructions, see See [Authentication for API](../snyk-api-info/authentication-for-api.md).
+5. Navigate to the Snyk REST API and authenticate. For instructions, see See [Authentication for API](../authentication-for-api/).
 6. Observe that the Snyk REST API opens to the most recent beta version.
 7. Look for the **Projects** endpoint and navigate to the **GET** `/orgs/{org_id}/projects` (Get project by org ID) call.
 8. Copy your **Organization ID** from your **Org settings** and paste the ID into the **PATH PARAMETERS** `org_id` field (asterisk designates a required request parameter).
