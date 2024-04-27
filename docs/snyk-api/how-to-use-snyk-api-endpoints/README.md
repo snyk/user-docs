@@ -1,4 +1,4 @@
-# Using Snyk API articles
+# How to use Snyk API endpoints
 
 These pages provide [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md) and articles with detailed information about aspects of using the Snyk API. The following articles are included, listed here in alphabetical order by a **keyword**.
 
@@ -7,7 +7,6 @@ These pages provide [scenarios for using Snyk APIs](scenarios-for-using-snyk-api
 * [Snyk **API token** permissions users can control](api-token-permissions-users-can-control.md)
 * [List all projects with a vulnerability linked to a **CVE**](list-all-projects-with-a-vulnerability-linked-to-a-cve.md)
 * [Get a list of **fixed issues** using Snyk API](get-a-list-of-fixed-issues-using-snyk-api.md)
-* [**Issues** information for Snyk products in Snyk APIs](issues-information-for-snyk-products-in-snyk-apis.md)
 * [Snyk API v1 Project **issue paths** endpoints](snyk-api-v1-project-issue-paths-endpoints.md)
 * [**Links** for pagination in Snyk REST API](links-for-pagination-in-snyk-rest-api.md)
 * [**Org identification** and projects in the Snyk API](org-identification-and-projects-in-snyk-apis.md)
