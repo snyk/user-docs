@@ -36,6 +36,8 @@ After a Project rescan, issues that are ignored are reflected in reporting and t
 
 Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. For information about Project test frequency, see [Project Settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md).
 
+This does not apply to an ignore in a `.snyk` file.
+
 ## Known limitations
 
 Tables in PDF exports are limited to 50 results. A link is available at the bottom of the table in the PDF export to view the report in the browser.
