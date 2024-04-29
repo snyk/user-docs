@@ -7,6 +7,7 @@
 Snyk Code supports the following frameworks:
 
 * Django
+* FastAPI
 * Flask
 * Jinja2
 * PyYAML
