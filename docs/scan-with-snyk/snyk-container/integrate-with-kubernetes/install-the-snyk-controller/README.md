@@ -13,7 +13,7 @@ See [Pricing plans](https://snyk.io/plans).
 Before you install the Snyk Controller:
 
 * You must have an administrator account for your Snyk Organization.
-* You must have a minimum of 50 GB of storage available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster.
+* You must have a minimum of 50 GB of storage available in the cluster as an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir).
 * You must have a minimum of the RAM requirements indicated in the code that follows to run on the cluster.
 
 ```
@@ -21,6 +21,7 @@ requests: cpu: "250m" memory: "400Mi"
 limits: cpu: "1" memory: "2Gi"
 ```
 
+* Your Kubernetes cluster must have a Kubernetes `linux/amd64` worker node.
 * Your Kubernetes cluster must be able to communicate with Snyk outbound over HTTPS.
 * [Enable the Kubernetes Integration ](../overview-of-the-kubernetes-integration/enable-the-kubernetes-integration.md)to get your **Integration ID.**
 * Create a **Group** or **Organization** **service account token**. For more information, see [Service account](../../../../enterprise-configuration/service-accounts/)s. There are different roles that allow the integration to publish data:
