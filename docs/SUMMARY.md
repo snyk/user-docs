@@ -894,6 +894,7 @@
     * [SBOM](snyk-cli/commands/sbom.md)
     * [SBOM test](snyk-cli/commands/sbom-test.md)
     * [Test](snyk-cli/commands/test.md)
+  * [Releases and channels for the Snyk CLI](snyk-cli/releases-and-channels-for-the-snyk-cli.md)
   * [Install or update the Snyk CLI](snyk-cli/install-or-update-the-snyk-cli/README.md)
     * [Verifying CLI standalone binaries](snyk-cli/install-or-update-the-snyk-cli/verifying-cli-standalone-binaries.md)
     * [Installing Snyk CLI as a binary via npm](snyk-cli/install-or-update-the-snyk-cli/installing-snyk-cli-as-a-binary-via-npm.md)
