@@ -4,7 +4,7 @@ Before installing, **review the general instructions** for the installation meth
 
 The **prerequisites** follow.
 
-Before installing the Snyk Nexus Repository Broker, ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
+Before installing the Snyk Jira Broker, ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
 
 You must have Docker or a way to run Docker Linux containers.\
 Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
