@@ -24,13 +24,13 @@ Runtime:
 * [Dynatrace](connect-a-third-party-integration.md#dynatrace-setup-guide)
 * [Sysdig](connect-a-third-party-integration.md#sysdig-setup-guide)
 
+ITSM:
+
+* [Jira](connect-a-third-party-integration.md#jira-setup-guide)
+
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
 {% endhint %}
-
-ITSM:
-
-* Jira
 
 ## Veracode setup guide
 
@@ -322,15 +322,3 @@ storage:system:read
 * When the connection is established, the status of the Sysdig integration is changed to **Connected**.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-04-07 at 17.58.17.png" alt="Integration Hub - Sysdig setup"><figcaption><p>Integration Hub - Sysdig setup</p></figcaption></figure>
-
-The following video provides an overview of the GitGuardian configuration from the Integration Hub:
-
-{% embed url="https://www.youtube.com/watch?v=4u4QrJBZTkI" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
-
-After you set up your GitGuardian integration using the Integration Hub, you can see the secrets detection coverage:
-
-{% embed url="https://www.youtube.com/watch?v=zh4c5f_vv1k" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
