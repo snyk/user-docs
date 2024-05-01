@@ -103,6 +103,6 @@ The following list describes all possible backstage attributes that you can choo
 
 The following video provides an overview of the Backstage file option from the Integration Hub and a quick explanation of the available attributes:
 
-{% embed url="https://youtu.be/4W6B9lPU10c?t=147" %}
+{% embed url="https://www.youtube.com/watch?v=gfOUSE0UhHA" %}
 Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
 {% endembed %}

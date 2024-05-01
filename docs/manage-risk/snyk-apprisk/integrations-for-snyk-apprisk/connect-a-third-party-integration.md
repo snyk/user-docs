@@ -136,6 +136,18 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 
 <figure><img src="https://lh7-us.googleusercontent.com/FhueUeoeYL3j5ihKIc6lFSFuvoS43NU30PiSCIOpkfWkoPXI8XaLh_ABzR5DipTn-TVLAkX3pSmoBfdq6hNDL65JPV72E2lErTcTua9YTcUnFXzwVI_smOtlZqS4LzD2-XqGZHlygjVZHVlba4ju3pQ" alt="Integration Hub - Nightfall setup"><figcaption><p>Integration Hub - Nightfall setup</p></figcaption></figure>
 
+The following video provides an overview of the Nightfall configuration from the Integration Hub:
+
+{% embed url="https://www.youtube.com/watch?v=FJ5fAyMYSUs" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
+After you set up your Nightfall integration using the Integration Hub, you can see the secrets detection coverage.
+
+{% embed url="https://www.youtube.com/watch?v=o6TqPMSq1rk" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
 ## GitGuardian setup guide
 
 ### Required parameters
@@ -298,3 +310,15 @@ storage:system:read
 * When the connection is established, the status of the Sysdig integration is changed to **Connected**.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-04-07 at 17.58.17.png" alt="Integration Hub - Sysdig setup"><figcaption><p>Integration Hub - Sysdig setup</p></figcaption></figure>
+
+The following video provides an overview of the GitGuardian configuration from the Integration Hub:
+
+{% embed url="https://www.youtube.com/watch?v=4u4QrJBZTkI" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
+After you set up your GitGuardian integration using the Integration Hub, you can see the secrets detection coverage:
+
+{% embed url="https://www.youtube.com/watch?v=zh4c5f_vv1k" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}

@@ -17,6 +17,10 @@ Using the secondary token reduces the likelihood of introducing a blindspot from
 The first import, synchronization, can take up to 24 hours to complete.
 {% endhint %}
 
+The following video is an overview of what Snyk AppRisk can offer:
+
+{% embed url="https://www.youtube.com/embed/23y6pEnTfqQ" %}
+
 ## Permissions
 
 You can access Snyk AppRisk with one of the Group level roles permissions described below. To access the permissions, navigate to **View groups**, then select the **Snyk AppRisk permissions** option.

@@ -7,7 +7,7 @@ Snyk AppRisk's prioritization with Insights capability relies on understanding y
 
 The following video presents the main functionalities that you can find in the Insights UI:
 
-{% embed url="https://youtu.be/iHXephDvHuQ" %}
+{% embed url="https://www.youtube.com/watch?v=MZZINnVmGL0" %}
 Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
 {% endembed %}
 
