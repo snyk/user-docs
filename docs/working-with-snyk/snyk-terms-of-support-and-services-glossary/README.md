@@ -176,7 +176,7 @@ The Customer acknowledges that the implementation and professional service optio
 
 See the service descriptions on each of the following pages.
 
-* [Snyk Jumpstart](snyk-jumpstart-services-description.md)
+* [Snyk Jumpstart Services](snyk-jumpstart-services-description.md)
+* [Snyk Residency Services](snyk-residency-services.md)
 * [Statement of Work](statement-of-work.md)
-* [Snyk Residency](snyk-residency-services.md)
 

@@ -1008,6 +1008,6 @@
   * [Snyk Terms of Support and Services Glossary](working-with-snyk/snyk-terms-of-support-and-services-glossary/README.md)
     * [Snyk Jumpstart Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
     * [Snyk Jumpstart Customer Prerequisites](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)
-    * [Statement of Work](working-with-snyk/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
     * [Snyk Residency Services](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-residency-services.md)
+    * [Statement of Work](working-with-snyk/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
   * [What counts as a test?](working-with-snyk/what-counts-as-a-test.md)
