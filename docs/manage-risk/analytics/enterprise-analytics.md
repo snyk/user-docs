@@ -2,22 +2,22 @@
 
 {% hint style="warning" %}
 **Release status**\
-Enterprise Analytics is in [Closed Beta](../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
+Enterprise Analytics is in [Closed Beta](../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans that also have the Snyk AppRisk Essentials offering. For more information, see [Plans and pricing](https://snyk.io/plans).
 
 During Closed Beta, access at the user level is available. When tenant membership is available, access to Enterprise Analytics will be managed at scale more easily.
 
 Group admins will be able to see all relevant data their users can access in the Enterprise Analytics report during the Closed Beta period. You can use filters to include relevant Groups or Organizations only. This is especially useful for sharing a link with another user.
 {% endhint %}
 
+Enterprise Analytics provides executives as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
+
 {% hint style="info" %}
 Data is refreshed in Enterprise Analytics daily, approximately between 13:00 and 14:00 UTC.
 {% endhint %}
 
-Enterprise Analytics provides executives as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
-
 The following is an example of the Enterprise Analytics dashboard showing AppSec performance for your Groups and Organizations.&#x20;
 
-<figure><img src="https://lh3.googleusercontent.com/7ZCFLTUzQ0r--P354i0p14zVLdE7YjhjvkgODlCfbUho8UMtDUh-EqdFzXmLV8PrvPLIbvE1bDE-qfl1ccYRkNqRksLDhXKr7nvldehocZ89Xa8YQ99nnqt8SmJ-lLTkGO_U05Rl_yrLvXVlOUpmpKg" alt="AppSec performance display"><figcaption><p>AppSec performance dashboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (393).png" alt="Enterprise Analytics performance dashboard"><figcaption><p>Enterprise Analytics performance dashboard</p></figcaption></figure>
 
 ## AppSec performance framework
 
@@ -65,7 +65,7 @@ Any issues identified in a Project after the first day of monitoring are conside
 
 Preventable issues could have been identified and remediated earlier in the SDLC if developers had taken greater advantage of available shift-left tooling and processes.
 
-Issues can be prevented by developers' taking advantage of Snyk Learn, leveraging the IDE plug-ins, activating PR checks, running `snyk test` locally in the CLI, breaking the build, or taking any other available actions for catching issues pre-production. If Snyk knows about an issue, a test can catch it. Other actions to stop preventable issues from getting into production environments include lowering/extending the threshold for what breaks a build from `critical` to `critical` and `high` severity issues, or more strictly refraining from approving PRs that fail a Snyk test.
+Issues can be prevented by developers' taking advantage of Snyk Learn, leveraging the IDE plug-ins, activating PR checks, running `snyk test` locally in the CLI, breaking the build, or taking any other available actions for catching issues pre-production. If Snyk knows about an issue, a test can catch it. Other actions to stop preventable issues from getting into production environments include increasing the threshold for what breaks a build from `critical` to `critical` and `high` severity issues, or more strictly refraining from approving PRs that fail a Snyk test.
 
 Issues are categorized as Preventable if the problem was known to Snyk at least seven days before the detection of the issue. While it is possible that introducing an issue could have been prevented within the seven-day interval, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
 
@@ -83,7 +83,7 @@ There may be a repository that has not been modified in months or years, but bec
 
 Issues are categorized as Non-preventable if the issue is detected within seven days of becoming known to Snyk. This could include a new vulnerability in a dependency already in use or a vulnerability disclosed in the same time frame as the dependency was introduced to the Project. While it is possible that introducing an issue could have been prevented within the seven-day period, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
 
-<figure><img src="https://lh6.googleusercontent.com/ykfbiHzdDVB2X3va4iSzYpSfZ6Ca5yBmeplYMz95wj2Gq6i-xcW4ZZdVOX6Vsl3B1bOaL-gbpTHyksYMjeeAaCHbjAz2QNx3vJ_6h3Oz5ykjqXg2oRWbA5_U-DyoOjGSjSInP_XJv6hIyLsKxmjjFUo" alt="Example of dates an issue was identified, categorized as Non-preventable and Preventable"><figcaption><p>Example of dates an issue was identified, categorized as Non-preventable and Preventable</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (394).png" alt="Example of dates an issue was identified, categorized as Non-preventable and Preventable"><figcaption><p>Example of dates an issue was identified, categorized as Non-preventable and Preventable</p></figcaption></figure>
 
 ### Other new issues
 
@@ -102,7 +102,3 @@ Enterprise Analytics is designed to make a top-level metric and its associated t
 Use the tooltips throughout the pages of the Enterprise Analytics application for explanations of metrics and terms.
 
 You can filter Enterprise Analytics on Groups or Organizations manually as needed.
-
-
-
-\
