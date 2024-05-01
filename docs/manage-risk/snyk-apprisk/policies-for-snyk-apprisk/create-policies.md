@@ -37,6 +37,13 @@ You can customize the filters and actions or use the template as is. After finis
 
 ## **Define Filters**
 
+{% hint style="warning" %}
+**Release status** \
+**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only for Snyk AppRisk Pro plans. Based on feedback, the functionality is likely to evolve, and there will be breaking changes.
+
+Contact your account manager if you are interested in Snyk AppRisk Pro.
+{% endhint %}
+
 Each filter component requires you to specify an asset property. Available properties for asset policies include:
 
 * **Application\*** - the list of the applications for which you have configured the Backstage catalog in Snyk AppRisk.
@@ -57,12 +64,11 @@ Each filter component requires you to specify an asset property. Available prope
 * **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
 * **Locked attributes** - specify if the attribute value is locked.
 * **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
+* **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
-* **Runtime discovered** - specify the period when the runtime image asset was discovered.
-* **Runtime last seen** - specify the freshness status for the runtime image asset.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the backstage catalog was configured.
@@ -106,12 +112,11 @@ Each property contains different options for conditions and values:
 | Lifecycle\*                  | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | the available list of the lifecycle states of the backstage catalog component                                         |
 | Locked attributes            | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Class</li></ul>                                                                                               |
 | Owner\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list of teams owning the repository for which the backstage catalog was configured.                               |
-| Runtime discovered           | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
-| Runtime last seen            | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
+| Risk factors                 | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | the list of available risk factors                                                                                    |
 | SCM Repository freshness     | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Active</li><li>Inactive</li><li>Dormant</li></ul>                                                             |
 | Source                       | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>azure-devops</li><li>GitHub</li><li>GitLab</li><li>Snyk</li></ul>                                             |
 | Tags                         | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | all available tags you previously created                                                                             |
-| Title\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list with all the names of the component for which the backstage catalog was configured.                          |
+| Title\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list with all the names of the component for which the backstage catalog was configured                           |
 
 **\***All filters marked with `*` are visible only to the users who configured the Backstage catalog for their SCM integrations.
 

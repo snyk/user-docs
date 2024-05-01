@@ -15,10 +15,10 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 An asset in Snyk AppRisk represents a component in the software development lifecycle that may pose a risk. The following asset types are currently available:
 
-* Repository assets
-* Packages
-* Container images
-* Scanned artifacts
+* **Repository assets** - Repository assets represent SCM repositories. A repository asset is created by discovering the repositories directly in the source code management (SCM) system, provided the integration is configured. Alternatively, a repository asset can also be created by scanning a repository using Snyk or third-party tools, as long as the scanned code is associated with a specific repository. In Snyk, this can be achieved by entering the gitRemoteURL parameter.
+* **Packages** - software or libraries that are managed by package management systems. When you scan the dependencies of a Project through package management systems or the Snyk CLI, Snyk creates Package assets. This allows Snyk AppRisk to analyze the security vulnerabilities of the packages used in the Project. By doing so, it can identify possible risk exposures and provide recommendations for mitigation.
+* **Container images** - Software packages called container images are designed to be self-contained and able to run consistently in any environment. These images consist of the code, libraries, dependencies, and system tools necessary for an application. The lightweight containers created from these images are portable and provide a consistent runtime environment across different development, testing, and production setups. You can identify a container image based on the Image ID. If multiple container images share the same Image ID, a single image asset is generated with information from all the identified container images.
+* **Scanned artifacts** - entities detected by Snyk that cannot be identified as repository assets because they lack any identifying information, such as a Git remote URL. While scanned artifacts provide visibility into what Snyk AppRisk detects from scans, they may require additional troubleshooting. You can see the scanned artifacts in the Inventory Type view, but Policies do not support them. Due to missing identifying information, scanned artifacts may include duplicates.
 
 An asset can be the parent of multiple items. For example, a repository asset usually contains one or more package assets.
 
@@ -71,15 +71,24 @@ If the same image ID is found in both the Snyk Container and Runtime integration
 
 ## Asset tabs
 
+{% hint style="warning" %}
+**Release status** \
+**Risk factors** on assets are currently in Closed Beta and available only for Snyk AppRisk Pro plans. Based on feedback, the functionality is likely to evolve, and there will be breaking changes.
+
+Contact your account manager if you are interested in Snyk AppRisk Pro.
+{% endhint %}
+
 The asset information is divided into the following tabs:
 
 * **Summary** - a concentrated view of the asset properties. The Summary screen presents you with the following information:
   * Class - specifies the business criticality of the asset.
   * Source - specifies the origin of the asset.
   * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
+  * Risk factors - provides the types of risk factors of the asset.
+  * Tags - provides a list of all the available tags of the asset.
   * Issues - categorizes the identified types of open issues.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Asset summary - Issues included.png" alt="AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (362).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
 
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
@@ -88,7 +97,10 @@ The asset information is divided into the following tabs:
 ## Issues
 
 {% hint style="warning" %}
-The Issues column is available in a Closed Beta state and is applicable only for the Snyk AppRisk Pro version. Please contact your salesperson if you are interested in Snyk AppRisk Pro.
+**Release status** \
+The Issues column is available in Closed Beta and available only for Snyk AppRisk Pro plans. Based on feedback, the functionality is likely to evolve, and there will be breaking changes.
+
+Contact your account manager if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
 The Issues column is designed to present a comprehensive list of issues that have been identified within your assets. These findings are the result of scans performed by Snyk as well as internal tools you may have deployed. This detailed list not only helps in understanding the security posture of your assets but also in prioritizing remediation efforts based on the severity and impact of each issue. By having visibility into these issues, you can take proactive steps toward improving the overall security of your applications and infrastructure.

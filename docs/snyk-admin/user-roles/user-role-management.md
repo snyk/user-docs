@@ -60,7 +60,7 @@ Choose the required permissions and click the update button at the bottom of the
 
 You can enable or disable all permissions in a set quickly by using the **Enable all** or **Disable all** button in the relevant permissions section. Be sure to update the permissions using the button at the bottom of the section.
 
-<figure><img src="../../.gitbook/assets/image (362).png" alt=""><figcaption><p>Organization-level permissions section</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (362) (1).png" alt=""><figcaption><p>Organization-level permissions section</p></figcaption></figure>
 
 Permissions are grouped under categories. This is done so you can understand what functions assigning a permission might enable, and because some permissions require similar permissions to function fully. For example, for a user to move Projects (**Move Project** permission) in an Organization, the user must also be able to add Projects (**Add Project** permission) to that Organization, as these permissions work in tandem.
 

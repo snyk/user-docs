@@ -39,6 +39,13 @@ If you use Snyk AppRisk for the first time, start with the **Coverage** filter t
 
 ## Available filters
 
+{% hint style="warning" %}
+**Release status** \
+**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only for Snyk AppRisk Pro plans. Based on feedback, the functionality is likely to evolve, and there will be breaking changes.
+
+Contact your account manager if you are interested in Snyk AppRisk Pro.
+{% endhint %}
+
 Each filter component requires you to specify an asset property. Available properties for asset policies include:
 
 * **Application\*** - the list of the applications for which you have configured the Backstage catalog in Snyk AppRisk.
@@ -59,12 +66,15 @@ Each filter component requires you to specify an asset property. Available prope
 * **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
 * **Locked attributes** - specify if the attribute value is locked.
 * **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
+* **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
+* **Runtime discovered** - specify the period when the runtime image asset was discovered.
+* **Runtime last seen** - specify the freshness status for the runtime image asset.
+* **Runtime discovered** - specify the period when the runtime image asset was discovered.
+* **Runtime last seen** - specify the freshness status for the runtime image asset.
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
-* **Runtime discovered** - specify the period when the runtime image asset was discovered.
-* **Runtime last seen** - specify the freshness status for the runtime image asset.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the backstage catalog was configured.
