@@ -45,6 +45,8 @@ You can filter the information for all the inventory layouts and can use the fol
 * **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
 * **Locked attributes** - specify if the attribute value is locked.
 * **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
+* **Runtime discovered** - specify the period when the runtime image asset was discovered.
+* **Runtime last seen** - specify the freshness status for the runtime image asset.
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.

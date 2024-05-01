@@ -33,8 +33,6 @@ There are several filtering options:
   * **Coverage** means that an asset has been tested by this product at some point in the past.
   * **Coverage gap** means the asset does not meet the coverage requirements as set by the **Set coverage control** policy.
 
-
-
 {% hint style="info" %}
 If you use Snyk AppRisk for the first time, start with the **Coverage** filter to determine where you currently have Snyk Implemented.
 {% endhint %}
@@ -65,6 +63,8 @@ Each filter component requires you to specify an asset property. Available prope
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
+* **Runtime discovered** - specify the period when the runtime image asset was discovered.
+* **Runtime last seen** - specify the freshness status for the runtime image asset.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the backstage catalog was configured.

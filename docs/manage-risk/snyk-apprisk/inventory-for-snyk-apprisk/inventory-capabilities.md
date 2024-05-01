@@ -54,6 +54,21 @@ You can identify a container image based on the Image ID. If multiple container 
 
 Snyk AppRisk retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md) page for more details.
 
+### Runtime Image assets&#x20;
+
+{% hint style="warning" %}
+**Release status** \
+Runtime image assets are currently in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
+
+Contact your account manager if you are interested in Snyk AppRisk Pro.
+{% endhint %}
+
+You can see the runtime image assets under the [Asset](inventory-capabilities.md#asset) column. These images are deployed and discovered when you are using the [runtime third-party integrations](../integrations-for-snyk-apprisk/connect-a-third-party-integration.md).&#x20;
+
+A runtime image is considered any image that was last seen in runtime in the last 48 hours. Any runtime image that was not seen in the runtime in the last 48 hours will be removed from the asset inventory.&#x20;
+
+If the same image ID is found in both the Snyk Container and Runtime integrations, then the two images are considered to be correlated. In such cases, only one image with the given Image ID is displayed, while the Source column specifies the different places where it was discovered.
+
 ## Asset tabs
 
 The asset information is divided into the following tabs:

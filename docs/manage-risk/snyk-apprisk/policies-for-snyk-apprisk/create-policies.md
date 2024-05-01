@@ -61,6 +61,8 @@ Each filter component requires you to specify an asset property. Available prope
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
+* **Runtime discovered** - specify the period when the runtime image asset was discovered.
+* **Runtime last seen** - specify the freshness status for the runtime image asset.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the backstage catalog was configured.
@@ -104,6 +106,8 @@ Each property contains different options for conditions and values:
 | Lifecycle\*                  | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | the available list of the lifecycle states of the backstage catalog component                                         |
 | Locked attributes            | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Class</li></ul>                                                                                               |
 | Owner\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list of teams owning the repository for which the backstage catalog was configured.                               |
+| Runtime discovered           | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
+| Runtime last seen            | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
 | SCM Repository freshness     | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Active</li><li>Inactive</li><li>Dormant</li></ul>                                                             |
 | Source                       | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>azure-devops</li><li>GitHub</li><li>GitLab</li><li>Snyk</li></ul>                                             |
 | Tags                         | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | all available tags you previously created                                                                             |
