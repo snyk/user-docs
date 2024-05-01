@@ -24,7 +24,7 @@ The default display in the Integrations view includes the configured Snyk integr
 
 The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../integrations-for-snyk-apprisk/customize-an-integration.md) or [connect a new SCM integration](../integrations-for-snyk-apprisk/connect-an-scm-integration.md).
 
-<figure><img src="../../../.gitbook/assets/image (357).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk AppRisk - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (357) (1).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk AppRisk - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
 
 After you click on the Integration Hub, a list of the available integrations is displayed. You can add one or multiple profiles, for each integration.&#x20;
 

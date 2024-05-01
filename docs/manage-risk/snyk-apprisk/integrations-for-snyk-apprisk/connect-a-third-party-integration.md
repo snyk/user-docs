@@ -10,14 +10,19 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 
 SAST:
 
-* Verocode SAST
-* Checkmarx SAST&#x20;
-* SonarQube
+* [Verocode SAST](connect-a-third-party-integration.md#veracode-setup-guide)
+* [Checkmarx SAST ](connect-a-third-party-integration.md#checkmarx-setup-guide)
+* [SonarQube](connect-a-third-party-integration.md#sonarqube-setup-guide)
 
 Secrets:
 
-* Nightfall
-* GitGuardian
+* [Nightfall](connect-a-third-party-integration.md#nightfall-setup-guide)
+* [GitGuardian](connect-a-third-party-integration.md#gitguardian-setup-guide)
+
+Runtime:
+
+* [Dynatrace](connect-a-third-party-integration.md#dynatrace-setup-guide)
+* [Sysdig](connect-a-third-party-integration.md#sysdig-setup-guide)
 
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
@@ -46,6 +51,8 @@ Ensure you are adding a custom field called repoURL:
 ### Required parameters
 
 * API ID and API Key - API credentials associated with a user account. For more information, access this link: [https://help.veracode.com/r/c\_api\_credentials3](https://help.veracode.com/r/c\_api\_credentials3).
+
+### Integration Hub setup
 
 ### Integration Hub setup
 
@@ -202,3 +209,92 @@ The following table presents the functionality of all types of Jira integrations
 
 \
 \
+
+
+## Dynatrace setup guide
+
+### Prerequisites
+
+* Use Dynatrace SaaS on the DPS licensing model.
+* Kubernetes is configured to monitor at least one cluster.
+* API token from a user with permissions to query entity model.
+
+Comply with the following steps before integrating Dynatrace with Snyk AppRisk:
+
+1. Retrieve the `account-uuid` from your Dynatrace account. Navigate to [https://myaccount.dynatrace.com/accounts](https://myaccount.dynatrace.com/accounts) and select the account whose environment you want to integrate into Snyk. Identify the `account-uuid` in the URL and save it for later use.
+2. Ensure you have OneAgent deployed in your Kubernetes environment. Navigate to `Settings` -> `Environments` and select the environment you want to integrate into Snyk. Save the environment ID for later use (available in the URL of the new window as well). Click `Deploy OneAgent` -> `Kubernetes` and follow the instructions if you haven't already.
+3. Ensure your deployment is activated. On your environment's page, click `Kubernetes` , then `Recommendations` and activate the cluster where you deployed OneAgent.
+4. An OAuth client with the right permissions. Navigate to [https://myaccount.dynatrace.com/accounts](https://myaccount.dynatrace.com/accounts), then to `Identity & access management` , select `OAuth clients` and click `Create client`. Fill in the details and check the following permissions, then click `Create client`:
+
+```
+account-env-read
+account-env-write
+account-uac-read
+account-uac-write
+storage:bizevents:read
+storage:bizevents:write
+storage:bucket-definitions:delete
+storage:bucket-definitions:read
+storage:bucket-definitions:truncate
+storage:bucket-definitions:write
+storage:buckets:read
+storage:entities:read
+storage:events:read
+storage:events:write
+storage:fieldsets:read
+storage:logs:read
+storage:logs:write
+storage:metrics:read
+storage:metrics:write
+storage:spans:read
+storage:system:read
+```
+
+5. Save the Client ID and Client secret for later and click `Finish`.
+
+### Required parameters
+
+1. **Account UUID** - the `account-uuid` of your Dynatrace account.
+2. **Environment ID** - the ID of the environment monitored in Dynatrace.
+3. **OAuth client ID** - the ID of the OAuth client created in the prerequisites.
+4. **OAuth client secret** - the secret of the OAuth client created in the prerequisites.
+
+### Integration Hub setup
+
+* Open the **Integration Hub** menu.
+* Select the **Runtime** tag and search for **Dynatrace**.
+* Click the **Add** button.
+* Edit the **Profile name** of your integration.
+* Enter the **Account UUID**.
+* Enter the **Environment ID**.
+* Enter the **OAuth client ID**.
+* Enter the **OAuth client secret**.
+* Click the **Done** button.
+* When the connection is established, the **Dynatrace** integration status changes to **Connected**.
+
+<figure><img src="../../../.gitbook/assets/image (357).png" alt="Integration Hub - Dynatrace setup"><figcaption><p>Integration Hub - Dynatrace setup</p></figcaption></figure>
+
+## Sysdig setup guide
+
+### Prerequisites
+
+* The account must have access to Sysdig Secure product.
+* Contact your Sysdig representative to activate the in-use packages feature flag
+
+### Required parameters
+
+* **Account API Token** - [Here](https://docs.sysdig.com/en/docs/administration/administration-settings/user-profile-and-password/retrieve-the-sysdig-api-token/) you can find details on how to retrieve your Sysdig API Token.
+* **Region -** [**Here**](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges) you can find details about the Sysdig region URLs.
+
+### Integration Hub setup
+
+* Open the **Integration Hub** menu.&#x20;
+* Select the **Runtime** tag and search for Sysdig.&#x20;
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Add the **Account API Token**.
+* Set the **Region**.
+* Click the **Done** button.
+* When the connection is established, the status of the Sysdig integration is changed to **Connected**.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-07 at 17.58.17.png" alt="Integration Hub - Sysdig setup"><figcaption><p>Integration Hub - Sysdig setup</p></figcaption></figure>
