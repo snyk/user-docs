@@ -178,4 +178,5 @@ See the service descriptions on each of the following pages.
 
 * [Snyk Jumpstart](snyk-jumpstart-services-description.md)
 * [Statement of Work](statement-of-work.md)
+* [Snyk Residency](snyk-residency-services.md)
 
