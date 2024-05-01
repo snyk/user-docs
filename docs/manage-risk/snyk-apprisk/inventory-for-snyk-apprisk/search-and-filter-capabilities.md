@@ -69,8 +69,6 @@ Each filter component requires you to specify an asset property. Available prope
 * **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **Runtime discovered** - specify the period when the runtime image asset was discovered.
 * **Runtime last seen** - specify the freshness status for the runtime image asset.
-* **Runtime discovered** - specify the period when the runtime image asset was discovered.
-* **Runtime last seen** - specify the freshness status for the runtime image asset.
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
