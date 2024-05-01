@@ -1,6 +1,6 @@
 # Prioritization setup: Associating Snyk Open Source, Code, and Container Projects
 
-After you have set up risk-based prioritization, Snyk can set up the required linking for the chosen application.&#x20;
+After you have set up the prioritization with Insights, Snyk can set up the required linking for the chosen application.&#x20;
 
 To prioritize your Snyk Code and Snyk Open Source vulnerabilities, Snyk needs to understand the relationships between those imported Snyk Projects and the Container Project. Snyk uses the relationships between these Projects as a proxy to understand the composition of the container image.&#x20;
 

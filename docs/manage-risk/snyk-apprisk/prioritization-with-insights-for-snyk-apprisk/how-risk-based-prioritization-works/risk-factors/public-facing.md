@@ -6,12 +6,12 @@ Cloud-native solutions such as AWS, Kubernetes, and GCP are used for many purpos
 
 ## Snyk analysis to determine the network connectivity paths
 
-The Snyk platform analyzes various data sources to compute the network connectivity paths. This information is used by Snyk AppRisk Essentials to determine if packages and Images may be exposed to external traffic.&#x20;
+The Snyk platform analyzes various data sources to compute the network connectivity paths. This information is used by Snyk AppRisk to determine if packages and Images may be exposed to external traffic.&#x20;
 
 Cloud-native solutions are deterministic in the way the network connectivity is configured. Snyk uses that knowledge to compute the answers based on the available information. For example,  to understand how the network connectivity can be configured, see Kubernetes [Services](https://kubernetes.io/docs/concepts/services-networking/service/) and [Ingresses](https://kubernetes.io/docs/concepts/services-networking/ingress/) documentation.&#x20;
 
 {% hint style="info" %}
-Risk-based prioritization currently supports the following configurations: Kubernetes services and ingress, and Gloo.
+Prioritization with Insights currently supports the following configurations: Kubernetes services and ingress, and Gloo.
 {% endhint %}
 
 ## Technical details for the Public facing risk factor

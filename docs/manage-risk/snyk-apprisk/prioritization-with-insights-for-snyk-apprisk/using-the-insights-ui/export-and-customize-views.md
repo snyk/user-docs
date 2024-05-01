@@ -1,6 +1,6 @@
 # Export and customize views
 
-<figure><img src="https://lh5.googleusercontent.com/qvNMtTudflGgqnlZTSCbZsVTHjpZ7PkuUqxB-6ydnRpo2tzJNamTMVCAQMTWkWI6RGzPQcWud9HJTfFyr0YSLoDdhyXZaIHCDX7lfrBBq27lrdqGTjCaMxi3eZH8z_bRNYKeynhMTtnCgIAvZ0SlGbU" alt="Customized table view"><figcaption><p>Customized table view</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/loaded-package4.png" alt="Customized table view"><figcaption><p>Customized table view</p></figcaption></figure>
 
 By using the **Modify Columns** dropdown, you can customize the data you see in your table view by choosing from a variety of options.
 

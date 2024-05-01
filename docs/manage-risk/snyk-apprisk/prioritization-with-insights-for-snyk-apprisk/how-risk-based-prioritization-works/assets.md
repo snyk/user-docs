@@ -1,6 +1,6 @@
 # Assets
 
-Snyk AppRisk Essential's prioritization capability analyzes the assets described on this page.
+Snyk AppRisk prioritization capability analyzes the assets described on this page.
 
 ## Images
 
