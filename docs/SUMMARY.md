@@ -676,6 +676,7 @@
         * [Classification policy - Use case](manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/classification-policy-use-case.md)
         * [Tagging policy - Use case](manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/tagging-policy-use-case.md)
         * [Notification policy - Use case](manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/notification-policy-use-case.md)
+        * [Jira policy - Use case](manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/jira-policy-use-case.md)
     * [Risk-Based Prioritization for Snyk AppRisk](manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/README.md)
       * [How risk-based prioritization works](manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/how-risk-based-prioritization-works/README.md)
         * [Assets](manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/how-risk-based-prioritization-works/assets.md)

@@ -23,6 +23,10 @@ Secrets:
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
 {% endhint %}
 
+ITSM:
+
+* Jira
+
 ## Veracode setup guide
 
 ### Prerequisites
@@ -43,7 +47,7 @@ Ensure you are adding a custom field called repoURL:
 
 * API ID and API Key - API credentials associated with a user account. For more information, access this link: [https://help.veracode.com/r/c\_api\_credentials3](https://help.veracode.com/r/c\_api\_credentials3).
 
-### &#x20;Integration Hub setup
+### Integration Hub setup
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **SAST** tag and search for Veracode.&#x20;
@@ -149,3 +153,52 @@ Ensure that the following permissions are set as READ:
 7. When the connection is established, the status of the GitGuardian integration is changed to **Connected**.
 
 <figure><img src="https://lh7-us.googleusercontent.com/IZz3ozkuESpiOJt8wv5Ux3CMm7cvH79xJeYl_7okSbupwhBVSuHxH1MxCX7KBzWbtuTVBhXyeFDQ_lclXYGavE6kVRtu0SicVNPc8ClYRsOmvUX1XYtxvTmK-vayu8mgAAgp-K8NC6BTcje1UQRTutQ" alt="Integration Hub - GitGuardian setup"><figcaption><p>Integration Hub - GitGuardian setup</p></figcaption></figure>
+
+## Jira setup guide
+
+### Required parameters
+
+* API Key - Access [https://id.atlassian.com/manage-profile/security/api-tokens](https://id.atlassian.com/manage-profile/security/api-tokens) to generate a Jira API Token.&#x20;
+
+{% hint style="info" %}
+Ensure you have the correct user permissions before creating the API Token.
+{% endhint %}
+
+### Integration Hub setup
+
+* Open the **Integration Hub** menu.&#x20;
+* Select the **ITSM** tag and search for Jira.&#x20;
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Add the **API Token** for this integration.
+* Add the **User Email** used for this integration.
+* Add the **Host URL** for this integration.
+* Click the **Done** button.
+* When the connection is established, the status of the Nightfall integration is changed to **Connected**.
+
+{% hint style="info" %}
+You can add only one Jira profile to the Jira integration.
+{% endhint %}
+
+<figure><img src="https://lh7-us.googleusercontent.com/omhvmt3Pcn4afVjerqqr_k9ZqjEScAleWFUNkaMGzV15MH1zCIhHvcIN6QBy4bL6p9UNk5tytKNLEFa66vOuWyF25r7W0wT8bptipJ6WLC5b4QVw4ErKdCEsTw7MwZB3ZOvgvvkrmL5M6dy6ODOzWqs" alt=""><figcaption><p>Integration Hub - Jira setup</p></figcaption></figure>
+
+### Types of Jira integrations
+
+Multiple Jira integrations are available when using Snyk, each designed to support specific needs.
+
+* Jira - Manually create a ticket for issues from Snyk.
+* [Jira Script](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md) - Automatically create tickets for new vulnerabilities.
+* [Security in Jira](../../../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) - View vulnerability information in Jira and create a ticket from Jira. The ticket is not visible in Snyk.
+* [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide) - As part of the policy action, you can automatically create Jira tickets from Snyk AppRisk Assets.
+
+The following table presents the functionality of all types of Jira integrations available in Snyk, specifies the supported Jira platform, the expected outcome, the authentication type, and the level of availability in Snyk.
+
+| Jira integration type                                                                                                   | Functionality                                                                                                                                                                                                                                                                          | Authentication                                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Jira                                                                                                                    | <p>Create a manual ticket for issues from Snyk.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                                       | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
+| [Jira Script](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md)                             | <p>Automatically create tickets for new vulnerabilities.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                              | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
+| [Security in Jira](../../../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) | <p>View vulnerability information in Jira and create a ticket from Jira. <br>* Jira ticket is not visible in Snyk.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                           | <p><strong>Authentication type</strong>:  JWT(JSON Web Token) as part of the Connect App framework.</p><p><br><strong>Availability level</strong>: Snyk Organization</p> |
+| [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide)                                          | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
+
+\
+\
