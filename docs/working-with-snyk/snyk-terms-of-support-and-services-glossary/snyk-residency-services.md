@@ -56,6 +56,7 @@ The following assumptions are reflected in the services outlined in this Residen
 6. The Customer acknowledges that the Residency Services depend on collaboration with the Customer’s resources, and, therefore, will provide prompt access to its knowledgeable resources, relevant information, and systems, as mutually agreed upon to complete the work.
 7. The Residency Services will be performed in a professional and workmanlike manner, with knowledgeable Snyk consultants.  Except for the foregoing, the Residency Services are offered “AS IS” without warranty of any kind.
 8. Residency Services are confined to work that can be reasonably completed within the engagement’s allocated hours. Such work may be incomplete and/or require further effort from the Customer to complete post-engagement.   Additional consulting services may be purchased on a subsequent Order Form if the Customer wishes to continue to engage with Snyk consultants after the term of the Residency Services.
+9. All services and communications will be conducted in English language.
 
 \
 \

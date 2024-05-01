@@ -309,3 +309,4 @@ The following assumptions are reflected in the services outlined in this Jumpsta
 7. The Customer will provide prompt access to all systems and resources that Snyk will need in order to complete the work.
 8. Snyk does not provide support for third-party software that is used as part of the Snyk solution, such as version control systems, repository management, trouble ticketing systems, packaging, and other software that is not part of the Snyk stack.
 9. If a Broker is required, the Customer will have all system requirements before services start.
+10. All services and communications will be conducted in English language.
