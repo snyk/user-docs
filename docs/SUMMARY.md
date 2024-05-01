@@ -652,6 +652,7 @@
 * [Manage risk](manage-risk/README.md)
   * [Snyk AppRisk](manage-risk/snyk-apprisk/README.md)
     * [Getting started with Snyk AppRisk](manage-risk/snyk-apprisk/getting-started-with-snyk-apprisk.md)
+    * [How does Snyk count assets](manage-risk/snyk-apprisk/how-does-snyk-count-assets.md)
     * [Implementation guide for Snyk AppRisk](manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/README.md)
       * [Prerequisites](manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/prerequisites.md)
       * [Level 1: Configure Snyk AppRisk and setup integrations](manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/level-1-configure-snyk-apprisk-and-setup-integrations.md)
