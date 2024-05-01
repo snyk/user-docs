@@ -139,13 +139,13 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 The following video provides an overview of the Nightfall configuration from the Integration Hub:
 
 {% embed url="https://www.youtube.com/watch?v=FJ5fAyMYSUs" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
 {% endembed %}
 
 After you set up your Nightfall integration using the Integration Hub, you can see the secrets detection coverage.
 
 {% embed url="https://www.youtube.com/watch?v=o6TqPMSq1rk" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
 {% endembed %}
 
 ## GitGuardian setup guide
@@ -172,6 +172,18 @@ Ensure that the following permissions are set as READ:
 7. When the connection is established, the status of the GitGuardian integration is changed to **Connected**.
 
 <figure><img src="https://lh7-us.googleusercontent.com/IZz3ozkuESpiOJt8wv5Ux3CMm7cvH79xJeYl_7okSbupwhBVSuHxH1MxCX7KBzWbtuTVBhXyeFDQ_lclXYGavE6kVRtu0SicVNPc8ClYRsOmvUX1XYtxvTmK-vayu8mgAAgp-K8NC6BTcje1UQRTutQ" alt="Integration Hub - GitGuardian setup"><figcaption><p>Integration Hub - GitGuardian setup</p></figcaption></figure>
+
+The following video provides an overview of the GitGuardian configuration from the Integration Hub:
+
+{% embed url="https://www.youtube.com/watch?v=4u4QrJBZTkI" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
+{% endembed %}
+
+After you set up your GitGuardian integration using the Integration Hub, you can see the secrets detection coverage:
+
+{% embed url="https://www.youtube.com/watch?v=zh4c5f_vv1k" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
+{% endembed %}
 
 ## Jira setup guide
 

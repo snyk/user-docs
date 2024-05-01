@@ -31,5 +31,5 @@ Prioritization with Insights works as illustrated in this example:
 The following video explains the initial steps of setting up your prioritization with Insights for Snyk AppRisk:
 
 {% embed url="https://www.youtube.com/watch?v=TqcJ2UIAOvU" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
 {% endembed %}
