@@ -1,5 +1,13 @@
 # Snyk runtime sensor
 
+{% hint style="warning" %}
+**Release status**
+
+The Snyk runtime sensor is available in a Closed Beta state and is applicable only to the Snyk AppRisk Pro version. &#x20;
+
+Contact your salesperson if you are interested in Snyk AppRisk Pro.
+{% endhint %}
+
 The Runtime Sensor watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
 
 ## Installation
