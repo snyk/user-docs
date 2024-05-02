@@ -5,7 +5,8 @@
 
 The Snyk GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you are interested in getting access.
 
-This feature is not yet supported for Snyk Broker.
+This feature is not yet supported for Snyk Broker.\
+As Snyk does not have static IP addresses, this integration will not work with IP Whitelisting in GitHub.
 {% endhint %}
 
 ## Prerequisites for GitHub Cloud App
