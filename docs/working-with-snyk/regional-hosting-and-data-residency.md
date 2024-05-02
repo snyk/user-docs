@@ -187,13 +187,13 @@ IntelliJ - 2.4.32
 
 #### EU
 
-`https://app.eu.snyk.io/api`
+`https://api.eu.snyk.io`
 
 #### **AU**
 
-`https://app.au.snyk.io/api`
+`https://api.au.snyk.io`
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-04-20 at 3.25.46 PM.png" alt="Configuring the AU endpoint in Visual Studio Code"><figcaption><p>Configuring the AU endpoint in Visual Studio Code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-05-02 at 10.42.52.png" alt="Configure the AU endpoint in Visual Studio Code"><figcaption><p>Configure the AU endpoint in Visual Studio Code</p></figcaption></figure>
 
 ### Broker URLs
 
