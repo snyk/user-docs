@@ -10,6 +10,8 @@ This list includes the categories and names of REST GA and beta and API v1 endpo
 
 ## Apps
 
+More information: [Snyk Apps](../snyk-api-info/snyk-apps/)
+
 ### Get a list of apps installed for a group
 
 [https://apidocs.snyk.io/?#get-/groups/-group\_id-/apps/installs](https://apidocs.snyk.io/?#get-/groups/-group\_id-/apps/installs)
@@ -30,75 +32,121 @@ This list includes the categories and names of REST GA and beta and API v1 endpo
 
 [https://apidocs.snyk.io/?#get-/orgs/-org\_id-/app\_bots](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/app\_bots)
 
+Replaced by Get a list of apps installed for an organization: GET/orgs/{org\_id}/apps/installs
+
 ### DEPRECATED Revoke app bot authorization
 
 [https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/app\_bots/-bot\_id-](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/app\_bots/-bot\_id-)
+
+Replaced by  Revoke app authorization for a Snyk Group with install ID.: DELETE/groups/{group\_id}/apps/installs/{install\_id}
+
+See also Revoke access for an app by install ID: DELETE/self/apps/installs/{install\_id}
 
 ### DEPRECATED Get a list of apps created by an organization
 
 [https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps)
 
+More information: [Manage App details](snyk-apps/manage-app-details.md)
+
+Replaced by Get a list of apps created by an organization: GET/orgs/{org\_id}/apps/creations
+
 ### DEPRECATED Create a new app for an organization
 
 [https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps)
+
+More information: [Create a Snyk App using the Snyk API](snyk-apps/create-a-snyk-app-using-the-snyk-api.md)
+
+Replaced by Create a new Snyk App for an organization: POST/orgs/{org\_id}/apps/creations
 
 ### Get a list of apps created by an organization
 
 [https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations)
 
+Replaces Get a list of apps created by an organization: GET/orgs/{org\_id}/apps
+
 ### Create a new Snyk App for an organization
 
 [https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/creations](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/creations)
+
+Replaces Create a new app for an organization: POST/orgs/{org\_id}/apps
 
 ### Get a Snyk APP by its App ID
 
 [https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations/-app\_id-](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations/-app\_id-)&#x20;
 
+Replaces Get an app by client id: GET/orgs/{org\_id}/apps/{client\_id}
+
 ### Delete an app by its App ID
 
 [https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/apps/creations/-app\_id-](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/apps/creations/-app\_id-)
+
+More information: [Manage App details](snyk-apps/manage-app-details.md)
+
+Replaces Delete an app: DELETE/orgs/{org\_id}/apps/{client\_id}
 
 ### Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID
 
 [https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/apps/creations/-app\_id-](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/apps/creations/-app\_id-)
 
+More information: [Manage App details](snyk-apps/manage-app-details.md)
+
+Replaces Update App attributes that are name, redirect URIs, and access token time to live: PATCH/orgs/{org\_id}/apps/{client\_id}"" Deprecated 7"
+
 ### Manage client secret for the Snyk App
 
 [https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/creations/-app\_id-/secrets](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/creations/-app\_id-/secrets)
+
+More information: [Manage App details](snyk-apps/manage-app-details.md)
 
 ### Get a list of apps installed for an organization
 
 [https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/installs](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/installs)
 
+Replaces  Get a list of app bots authorized to an organization: GET/orgs/{org\_id}/app\_bots/
+
 ### Install a Snyk Apps to this organization
 
 [https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/installs](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/installs)
 
-### Revoke app authorization for an Snyk Organization with install ID
+### Revoke app authorization for a Snyk Organization with install ID
 
 [https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/apps/installs/-install\_id-](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/apps/installs/-install\_id-)
+
+See also Revoke app authorization for a Snyk Group with install ID: DELETE/groups/{group\_id}/apps/installs/{install\_id}
 
 ### Manage client secret for non-interactive Snyk App installations
 
 [https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/installs/-install\_id-/secrets](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/installs/-install\_id-/secrets)
 
+Replaces DEPRECATED Manage client secrets for an app:  POST/orgs/{org\_id}/apps/{client\_id}/secrets
+
 ### DEPRECATED Get an app by client id
 
 [https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/-client\_id-](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/-client\_id-)
+
+Replaced by Get a Snyk App by its App ID: GET /orgs/{org\_id}/apps/creations/{app\_id}
 
 ### DEPRECATED Delete an app
 
 [https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/apps/-client\_id-](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/apps/-client\_id-)
 
+Replaced by Delete an app by its App ID: DELETE/orgs/{org\_id}/apps/creations/{app\_id}
+
 ### DEPRECATED Update app attributes that are name, redirect URIs, and access token time to live
 
 [https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/apps/-client\_id-](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/apps/-client\_id-)
+
+Replaced by Update app creation attributes such as name, redirect URLs, and access token time to live using the App ID: PATCH/orgs/{org\_id}/apps/creations/{app\_id}"
 
 ### DEPRECATED Manage client secrets for an app
 
 [https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/-client\_id-/secrets](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/-client\_id-/secrets)
 
-Get a list of apps that can act on your behalfhttps://apidocs.snyk.io/?version=2024-04-22#get-/self/apps
+Replaced by Revoke an app: DELETE/self/apps/{app\_id}
+
+### Get a list of apps that can act on your behalf
+
+https://apidocs.snyk.io/?version=2024-04-22#get-/self/apps
 
 ### Get a list of apps installed for a user
 
@@ -107,6 +155,8 @@ Get a list of apps that can act on your behalfhttps://apidocs.snyk.io/?version=2
 ### Revoke access for an app by install ID
 
 [https://apidocs.snyk.io/?#delete-/self/apps/installs/-install\_id-](https://apidocs.snyk.io/?#delete-/self/apps/installs/-install\_id-)
+
+Replaces Revoke app bot authorization: DELETE/orgs/{org\_id}/app\_bots/{bot\_id}
 
 ### Revoke an app
 
