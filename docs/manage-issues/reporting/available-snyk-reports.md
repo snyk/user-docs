@@ -1,10 +1,11 @@
 # Available Snyk Reports
 
-Reports available include:
+The following reports are available:
 
 * [Issues Detail report](available-snyk-reports.md#issues-detail-report)
 * [Issues Summary report](available-snyk-reports.md#issues-summary-report)
 * [Vulnerabilities Detail report](available-snyk-reports.md#vulnerabilities-detail-report)
+* [Featured Zero-Day report](available-snyk-reports.md#featured-zero-day-report)
 * [OWASP TOP 10 report](available-snyk-reports.md#owasp-top-10-report)
 * [CWE TOP 25 report](available-snyk-reports.md#cwe-top-25-report)
 * [CWE TOP 10 KEV report](available-snyk-reports.md#cwe-top-10-kev-report)
@@ -73,6 +74,27 @@ For a table of Total Issues, use Change Reports to switch to the Issues Detail r
 
 To view Dependencies and Licenses information, select the **Dependencies** menu option. See [Dependencies and licenses](../dependencies-and-licenses/) for details.
 {% endhint %}
+
+## Featured Zero-Day report
+
+This report addresses primary scenarios for managing and resolving emerging zero-day vulnerabilities, which carry significant consequences and attract substantial attention in the global AppSec community.
+
+Use this report to discover your exposure to issues highlighted in a zero-day publication across various Targets and Projects. The report helps you prioritize zero-day issues and monitor the progress of remediation efforts against any remaining occurrences.
+
+<figure><img src="../../.gitbook/assets/Zero-day report.png" alt="Featured Zero-Day Report"><figcaption><p>Featured Zero-Day Report</p></figcaption></figure>
+
+Upon the announcement of a new zero-day event, begin by examining the **Impacted Targets** table to gain a deeper understanding of the exposure. Use filters such as Project Lifecycle, Environment, or Project Criticality to focus solely on Targets associated with Projects in production that are externally exposed or of high criticality. Gaining such insights depends on the [availability of Project attributes](../../snyk-admin/snyk-projects/project-attributes.md#available-attributes-and-their-values).
+
+<figure><img src="../../.gitbook/assets/image (427).png" alt="Impacted Targets table"><figcaption><p>Impacted Targets table</p></figcaption></figure>
+
+Next, proceed to the **All** **Issues** table and compile a prioritized list of issues requiring remediation. Typically, prioritization is determined by either the Snyk [Risk Score](../../manage-risk/prioritize-your-issues/risk-score.md) or NVD CVSS Score, with emphasis placed on addressing vulnerabilities within sensitive targets. Apply filters based on Project Lifecycle, Environment, or Project Criticality to identify and address these targets promptly.
+
+<figure><img src="../../.gitbook/assets/image (428).png" alt="All Issues table"><figcaption><p>All Issues table</p></figcaption></figure>
+
+For continuous monitoring of remediation progress and efficacy, refer to the trend diagrams.\
+The **Accumulative Issues Backlog Trend** diagram shows the weekly changes in the zero-day’s backlog by accumulating the weekly delta between identified and resolved issues. Use this diagram to ensure that your R\&D teams are reducing the zero-day’s backlog consistently, which will be indicated by a negative trend line.
+
+In parallel, review the **Issues Identified versus Resolved over Time** diagram to conclude whether additional emphasis should be placed on preventing the introduction of new issues or on accelerating the remediation efforts.
 
 ## OWASP Top 10 report
 
