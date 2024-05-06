@@ -6,6 +6,7 @@ The following reports are available:
 * [Issues Summary report](available-snyk-reports.md#issues-summary-report)
 * [Vulnerabilities Detail report](available-snyk-reports.md#vulnerabilities-detail-report)
 * [Featured Zero-Day report](available-snyk-reports.md#featured-zero-day-report)
+* [SLA Management report](available-snyk-reports.md#sla-management-report)
 * [OWASP TOP 10 report](available-snyk-reports.md#owasp-top-10-report)
 * [CWE TOP 25 report](available-snyk-reports.md#cwe-top-25-report)
 * [CWE TOP 10 KEV report](available-snyk-reports.md#cwe-top-10-kev-report)
@@ -95,6 +96,34 @@ For continuous monitoring of remediation progress and efficacy, refer to the tre
 The **Accumulative Issues Backlog Trend** diagram shows the weekly changes in the zero-day’s backlog by accumulating the weekly delta between identified and resolved issues. Use this diagram to ensure that your R\&D teams are reducing the zero-day’s backlog consistently, which will be indicated by a negative trend line.
 
 In parallel, review the **Issues Identified versus Resolved over Time** diagram to conclude whether additional emphasis should be placed on preventing the introduction of new issues or on accelerating the remediation efforts.
+
+## SLA Management report&#x20;
+
+The SLA (Service Level Agreement) Management report provides new levels of visibility into your SLA governance and compliance across Snyk Groups, Organizations, and Targets. It provides the means to assess the remediation time against SLA targets and prioritize the next steps to achieve the desired results.
+
+<figure><img src="../../.gitbook/assets/01-SlLAManagementReport (1).png" alt="SLA Management report"><figcaption><p>SLA Management report</p></figcaption></figure>
+
+The report presents the SLA targets with default values based on common security standards, for example, FedRAMP.  Within the report, users can modify each SLA target according to their security requirements.
+
+<figure><img src="../../.gitbook/assets/02-EditableSLATargets.png" alt="Editable SLA targets"><figcaption><p>Editable SLA targets</p></figcaption></figure>
+
+Users can share the report with predefined SLA targets by sharing the URL of the report. Users can also return to a predefined SLA report by bookmarking the web page in their browser.
+
+In the open issues section, the SLA severity breakdown shows a distribution of severity levels by the SLA compliance status of the viewed Group or Organization. The SLA trend indicates whether the viewed Group or Organization meets the expected progress toward SLA compliance.
+
+<figure><img src="../../.gitbook/assets/03OpenIssuesDetails.png" alt="Open issues section"><figcaption><p>Open issues section</p></figcaption></figure>
+
+The SLA breakdown table allows you to compare SLA compliance results of Organizations in the Group view, or Targets in the Organization view. The table is sorted by default according to the quantity of breached issues. Use the filters to view counters for specific severities only.
+
+<figure><img src="../../.gitbook/assets/04SLABreakdowntable.png" alt="SLA breakdown table"><figcaption><p>SLA breakdown table</p></figcaption></figure>
+
+The breached and at-risk open issues table helps you prioritize issues based on their aging and SLA compliance status.
+
+<figure><img src="../../.gitbook/assets/05BreachedAndAtRiskOpenIssuesTable.png" alt="Breached issues table"><figcaption><p>Breached issues table</p></figcaption></figure>
+
+You can also review the SLA results for resolved issues and perform a retrospective analysis.
+
+<figure><img src="../../.gitbook/assets/06ResolvedIssuesSection.png" alt="Resolved Issues section"><figcaption><p>Resolved Issues section</p></figcaption></figure>
 
 ## OWASP Top 10 report
 
