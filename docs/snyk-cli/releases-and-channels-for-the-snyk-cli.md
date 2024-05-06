@@ -71,6 +71,21 @@ However, customers who would like to receive code changes as soon they are merge
 Existing Snyk customers who are opted-in to the previously known latest channel will be automatically opted-in to the stable channel. Snyk is mirroring the latest channel and the stable channel to avoid disruption to existing customers. However, Snyk encourages you to switch to the new channels as shown above.
 {% endhint %}
 
+## Install standalone executables from a channel
+
+See the `release.json` in each channel for the download links. Examples for the preview version on MacOS platform follow:
+
+* [https://static.snyk.io/cli/preview/release.json](https://static.snyk.io/cli/preview/release.json)
+* [https://static.snyk.io/cli/preview/snyk-macos](https://static.snyk.io/cli/preview/snyk-macos)
+
+For example, to download and run the preview release of the Snyk CLI for macOS, you could run:
+
+```
+curl --compressed https://static.snyk.io/cli/preview/snyk-macos -o snyk
+chmod +x ./snyk
+mv ./snyk /usr/local/bin/
+```
+
 ## Selecting a channel from the IDE
 
 {% hint style="warning" %}
