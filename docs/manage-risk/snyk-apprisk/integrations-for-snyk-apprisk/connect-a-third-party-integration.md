@@ -308,6 +308,11 @@ storage:system:read
 ### Required parameters
 
 * **Account API Token** - [Here](https://docs.sysdig.com/en/docs/administration/administration-settings/user-profile-and-password/retrieve-the-sysdig-api-token/) you can find details on how to retrieve your Sysdig API Token.
+
+{% hint style="info" %}
+The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Monitor API Token`.&#x20;
+{% endhint %}
+
 * **Region -** [**Here**](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges) you can find details about the Sysdig region URLs.
 
 ### Integration Hub setup
