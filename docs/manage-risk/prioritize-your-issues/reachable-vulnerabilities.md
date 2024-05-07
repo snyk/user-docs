@@ -64,6 +64,8 @@ After a vulnerability is identified, it receives one of two reachability statuse
 If a `no path found` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
 {% endhint %}
 
+Reachability status is available [on the Project page](reachable-vulnerabilities.md#on-the-project-page), [as part of the Risk Score](reachable-vulnerabilities.md#as-part-of-the-risk-score), using Reports and through the [Get issues by group ID](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues) API.
+
 ### On the Project page
 
 After importing or testing a Project using the Snyk UI, the Project is monitored by Snyk, and the results of the reachable vulnerabilities analysis appear on the Project page in the following places:
@@ -73,10 +75,6 @@ After importing or testing a Project using the Snyk UI, the Project is monitored
 3. Call path - Allows you to see the path from your code to the vulnerable function to validate the result.
 
 <figure><img src="../../.gitbook/assets/image (124) (1) (1) (1) (2) (1) (1) (1) (2) (2).png" alt="Reachability call path"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
-
-{% hint style="info" %}
-Reachability status is currently not available using Reports or the API.
-{% endhint %}
 
 ### As part of the Risk Score
 
@@ -94,7 +92,7 @@ Risk Score is available on the Projects page, API, and Reports.&#x20;
 [Priority score](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;
 {% endhint %}
 
-### Reachability analysis&#x20;
+## Reachability analysis&#x20;
 
 Snyk uses a combination of security expert analysis, program analysis, and various AI techniques to determine the reachability of a vulnerability, including these steps of analysis:&#x20;
 
