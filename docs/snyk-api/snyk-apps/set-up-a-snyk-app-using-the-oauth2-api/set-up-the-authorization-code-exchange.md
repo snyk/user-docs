@@ -2,7 +2,7 @@
 
 After you receive an authorization **code**, you must exchange it for an access token.
 
-To request an access token, make a POST request to the token endpoint (more details in the [API documentation](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh)):
+To request an access token, make a POST request to the token endpoint:
 
 ```
 https://api.snyk.io/oauth2/token
@@ -16,9 +16,10 @@ grant_type=authorization_code
 &redirect_uri=(redirect URI from the previous step)
 &client_id=(clientId from the app creation),
 &client_secret=(clientSecret from the app creation)
+&code_verifier=(code verifier generated in the previous step)
 ```
 
-The response includes details necessary for your app to communicate with the Snyk APIs: `access_token` and **r**`efresh_token`, as well as their expiry.
+The response includes details necessary for your app to communicate with the Snyk APIs: `access_token` and `refresh_token`, as well as their expiry.
 
 Both tokens must be stored in a secured data store. It is highly recommended to encrypt the values before storing them.
 

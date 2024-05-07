@@ -74,19 +74,18 @@ Once access has been provisioned, the user will be kicked back to our app's regi
 Essentially, our app needs to generate a link like the following and then send the user to it when it's time to authorize:
 
 ```
-https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&scope={scopes}&nonce={nonce}&state={state}&version={version}
+https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&state={state}&code_challenge={codeChallenge}&code_challenge_method=S256
 ```
 
 Though some of the query parameters may be somewhat obvious, we will go over them. We're going to modify our Snyk App to generate this URL for our users.
 
-* `version`: The current version can be found in [Snyk's OAuth API documentation](https://snykoauth2.docs.apiary.io/#reference/apps/app-authorization/authorize-an-app).
-* `scopes` and `redirect_uri`: These values must match what was sent with our registration command from [Registering our app with Snyk](register-the-app-and-configure-user-authorization.md#registering-our-app-with-snyk).
+* `redirect_uri`: Optional values must match one of the values sent with our registration command from [Registering our app with Snyk](register-the-app-and-configure-user-authorization.md#registering-our-app-with-snyk). If not passed then the first value on the Snyk App is assumed.
 * `state`: This is used to carry any App-specific state from this `/authorize` call to the callback on the `redirect_uri` (such as a user's ID). It must be verified in our callback to [prevent CSRF attacks](https://datatracker.ietf.org/doc/html/rfc6749#section-10.12).
-* `nonce`: A highly randomized string stored alongside a timestamp on the app side before calling `/authorize`, then verified on the returned access token. This is intended for the Snyk App to have confidence in the security of the response.
+* `code_challenge`: A URL-safe base64-encodes string of the SHA256 hash of a code verifier. The code verifier is a highly randomized string stored alongside the app side before calling `/authorize`, then sent when exchanging the returned authorization code for a token pair. This is part of Proof Key for Code Exchange (PKCE) which helps prevent authorization code interception attacks.
 
 Once a connection is complete, the user is redirected to the provided redirect URI (our `/callback` route in this case) with query string parameters `code` and `state` added on, which are necessary for the next steps of authorization.
 
-That next step involves taking the authorization code received as query parameter in the response of the previous step, and turning it into an _access token_. To do this, a Snyk App makes a POST request to the token endpoint: `https://api.snyk.io/oauth2/token`. That POST request needs some specific data in its request body, including the _authorization code_, `client id`, `client secret`, and so on.
+That next step involves taking the authorization code received as a query parameter in the response of the previous step and turning it into an _access token_. To do this, a Snyk App makes a POST request to the token endpoint: `https://api.snyk.io/oauth2/token`. That POST request needs some specific data in its request body, including the _authorization code_, `client id`, `client secret`, `code_verifier` and so on.
 
 When successful, that POST request's response contains everything a Snyk App needs to communicate with Snyk on behalf of the authorizing user, namely, a **refresh\_token** and an **access token**.
 
@@ -159,7 +158,6 @@ export const REDIRECT_URI = "https://localhost:3000/callback";
 export const TOKEN_URL = "/oauth2/token";
 export const AUTHORIZATION_URL = "/oauth2/authorize";
 export const SCOPE = "apps:beta";
-export const NONCE = uuid4();
 export const STATE = true;
 ...
 ```
@@ -234,7 +232,6 @@ export interface AuthData {
   expires_in: 3600;
   scope: string;
   token_type: string;
-  nonce: string;
   refresh_token: string;
 }
 ```
@@ -442,12 +439,7 @@ type Params = {
   token_type: string;
 };
 
-// There is more data here but we only care about the nonce
-type JWT = { nonce: string };
-
 export function getOAuth2(): SnykOAuth2Strategy {
-  const nonce = uuid4();
-
   // User can pass their own implementation of fetching the profile
   // by providing the profileFunc implementation. Snyk OAuth2 strategy
   // will call this function to fetch the profile associated with request
@@ -463,16 +455,14 @@ export function getOAuth2(): SnykOAuth2Strategy {
   // Note*: the value of version being manually added
   return new SnykOAuth2Strategy(
     {
-      authorizationURL: `${config.APP_BASE}${config.AUTHORIZATION_URL}?version=2021-08-11~experimental`,
+      authorizationURL: `${config.APP_BASE}${config.AUTHORIZATION_URL}`,
       tokenURL: `${config.API_BASE}${config.TOKEN_URL}`,
       clientID: config.CLIENT_ID,
       clientSecret: config.CLIENT_SECRET,
       callbackURL: "http://localhost:3000/callback",
-      scope: config.SCOPE,
-      scopeSeparator: " ",
       state: true,
+      pkce: true,
       passReqToCallback: true,
-      nonce,
       profileFunc,
     },
     async function (
@@ -487,9 +477,6 @@ export function getOAuth2(): SnykOAuth2Strategy {
         // Notify passport that all work, like the storing
         // of data in the DB, has been completed
         const userId = profile.data.id;
-        const decoded: JWT = jwt_decode(access_token);
-        if (nonce !== decoded.nonce)
-          throw new Error("Nonce values do not match");
         const { expires_in, scope, token_type } = params;
 
         const { orgId } = await getAppOrgID(token_type, access_token);
@@ -504,7 +491,6 @@ export function getOAuth2(): SnykOAuth2Strategy {
           scope,
           token_type,
           refresh_token: ed.encryptString(refresh_token),
-          nonce,
         } as AuthData);
       } catch (error) {
         return done(error as Error, false);
@@ -699,8 +685,7 @@ If you ran the app to test things, take a look at database entries. If you've be
       "expires_in": 3599,
       "scope": "apps:beta",
       "token_type": "bearer",
-      "refresh_token": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "nonce": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "refresh_token": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
     },
   ]
 }
