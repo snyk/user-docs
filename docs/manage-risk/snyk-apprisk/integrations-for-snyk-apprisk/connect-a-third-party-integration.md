@@ -10,7 +10,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 
 SAST:
 
-* [Verocode SAST](connect-a-third-party-integration.md#veracode-setup-guide)
+* [Veracode SAST](connect-a-third-party-integration.md#veracode-setup-guide)
 * [Checkmarx SAST ](connect-a-third-party-integration.md#checkmarx-setup-guide)
 * [SonarQube](connect-a-third-party-integration.md#sonarqube-setup-guide)
 
@@ -240,13 +240,13 @@ The following table presents the functionality of all types of Jira integrations
 ### Prerequisites
 
 * Use Dynatrace SaaS on the DPS licensing model.
-* Kubernetes is configured to monitor at least one cluster.
+* The Dynatrace [Kubernetes app](https://docs.dynatrace.com/docs/platform-modules/infrastructure-monitoring/container-platform-monitoring/kubernetes-app/overview) is configured to monitor at least one cluster.
 * API token from a user with permissions to query entity model.
 
 Comply with the following steps before integrating Dynatrace with Snyk AppRisk:
 
 1. Retrieve the `account-uuid` from your Dynatrace account. Navigate to [https://myaccount.dynatrace.com/accounts](https://myaccount.dynatrace.com/accounts) and select the account whose environment you want to integrate into Snyk. Identify the `account-uuid` in the URL and save it for later use.
-2. Ensure you have OneAgent deployed in your Kubernetes environment. Navigate to `Settings` -> `Environments` and select the environment you want to integrate into Snyk. Save the environment ID for later use (available in the URL of the new window as well). Click `Deploy OneAgent` -> `Kubernetes` and follow the instructions if you haven't already.
+2. Ensure you have OneAgent deployed in your Kubernetes environment. Navigate to `Settings` -> `Environments` and select the environment you want to integrate into Snyk. Save the environment ID for later use (available in the URL of the new window as well). Click `Deploy OneAgent` -> `Kubernetes` and follow the instructions. Ensure OneAgent is running in full-stack mode.
 3. Ensure your deployment is activated. On your environment's page, click `Kubernetes` , then `Recommendations` and activate the cluster where you deployed OneAgent.
 4. An OAuth client with the right permissions. Navigate to [https://myaccount.dynatrace.com/accounts](https://myaccount.dynatrace.com/accounts), then to `Identity & access management` , select `OAuth clients` and click `Create client`. Fill in the details and check the following permissions, then click `Create client`:
 
