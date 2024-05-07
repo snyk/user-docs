@@ -55,11 +55,11 @@ Users must only have one role mapped per Organization or Group. Mapping multiple
 
 ### Example role assertions
 
-* `snyk:group:*:admin` Assign the user the Group admin role for all groups associated with the SSO connection.
+* `snyk:group:*:group_admin` Assign the user the Group admin role for all groups associated with the SSO connection.
 * `snyk:group::custom:sysadmin` Assign the user the custom Group-level role `Sys Admin` for all groups associated with the SSO connection.
   * Note that `::` here indicates an empty string for the target, and so is treated as a wildcard in the preceding example.
   * Note that this Group-level custom role must be created manually before it can be assigned.
-* `snyk:org:my-default-org:admin` Assign the user the **Organization Admin** Organization-level role for the Organization `my-default-org`.
+* `snyk:org:my-default-org:org_admin` Assign the user the **Organization Admin** Organization-level role for the Organization `my-default-org`.
 
 ### Example role assertions array
 
