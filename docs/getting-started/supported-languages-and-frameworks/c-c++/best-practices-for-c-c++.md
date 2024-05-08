@@ -109,8 +109,6 @@ The list is printed before the issues list, as shown below:
 **License policy text** is the text associated with the issue by your administrators that provides custom direction on what to do or why it's contrary to the policy, if it's found in your application.
 {% endhint %}
 
-For the Beta, while the issues are displayed, the license policy text associated with the issues is not currently displayed within the IDE or CLI. This is planned to be addressed by GA. To see the policy text, use the Snyk Web UI.&#x20;
-
 Below, you can see the license policy text example at the bottom of the screen, giving you directions on what to do if the license is found.
 
 <div align="left">
