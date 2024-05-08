@@ -106,6 +106,8 @@ language-settings:
   python: "3.6.2"
 ```
 
+For more information, see [Setting Python version in Git Projects](../../getting-started/supported-languages-and-frameworks/python.md#setting-python-version-in-git-projects).
+
 #### Set vulnerability ignore rules
 
 Ignore a specific vulnerability for a given path:
