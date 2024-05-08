@@ -15,7 +15,7 @@ The scan results and available actions depend on the type of Project you scan:
 
 * Open-source libraries: see [Snyk Open Source](../../scan-with-snyk/snyk-open-source/).
 * Application code: see [Snyk Code](../../scan-with-snyk/snyk-code/).
-* Container images: see [Snyk Container](../../scan-with-snyk/snyk-container/scan-container-images.md).
+* Container images: see [Snyk Container](../../scan-using-snyk/snyk-container/scan-container-images.md).
 * Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files and cloud misconfigurations: see [Scan infrastructure](../../scan-with-snyk/snyk-iac/).
 
 ## **What's next?**

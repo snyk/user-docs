@@ -55,7 +55,7 @@ You provision a user to the specified Organization with a role. When a user firs
 `}`
 
 {% hint style="info" %}
-Enterprise plan users can define their own customized [member roles](../../../snyk-admin/user-roles/user-role-management.md) and can use `rolePublicId` for assignment.\
+Enterprise plan users can define their own customized [member roles](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md) and can use `rolePublicId` for assignment.\
 \
 You can use either `role` or `rolePublicId` but not both in the same call.
 {% endhint %}

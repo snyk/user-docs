@@ -21,7 +21,7 @@ Before scanning your code with Snyk Code, ensure the following:
 
 ### Prerequisites
 
-To enable Snyk Code in your Organization, you need to be an [Org Admin](../../snyk-admin/user-roles/pre-defined-roles.md).
+To enable Snyk Code in your Organization, you need to be an [Org Admin](../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md).
 
 ### Enable Snyk Code&#x20;
 
@@ -75,7 +75,7 @@ The **Source control** integrations display only SCMs that are supported by Snyk
 
 This grants Snyk access permissions for the integrated SCM.
 
-For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../integrate-with-snyk/snyk-scm-integrations/).
+For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
 
 After you have integrated the SCM with your Snyk account, you can import the repositories you want to scan using Snyk Code.
 

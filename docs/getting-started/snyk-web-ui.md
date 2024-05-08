@@ -98,7 +98,7 @@ Select **Integrations** from the navigation on the Dashboard to open the [Integr
 Select **Members** from the navigation on the Dashboard to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations.md) or [Group](../snyk-admin/groups-and-organizations/groups/manage-users-in-a-group.md).
 
 {% hint style="info" %}
-You must be assigned the [required Admin roles and permissions](../snyk-admin/user-roles/pre-defined-roles.md) to make changes on the **Members** tab.
+You must be assigned the [required Admin roles and permissions](../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md) to make changes on the **Members** tab.
 {% endhint %}
 
 ## Snyk Organization or Group Settings

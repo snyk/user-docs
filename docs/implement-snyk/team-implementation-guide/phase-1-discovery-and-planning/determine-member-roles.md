@@ -2,7 +2,7 @@
 
 ## Default  roles
 
-A key consideration when setting up Snyk is determining which [default user roles](../../../snyk-admin/user-roles/pre-defined-roles.md) align with your needs.
+A key consideration when setting up Snyk is determining which [default user roles](../../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md) align with your needs.
 
 {% hint style="info" %}
 The user roles in Snyk use a fixed set of permissions that cannot be changed.&#x20;

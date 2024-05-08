@@ -6,7 +6,7 @@ Custom mapping allows you to dynamically assign users to your Snyk Groups and Or
 Work with your Snyk account team to implement this option.
 {% endhint %}
 
-To understand more about roles and permissions within Snyk, see [Pre-defined roles](../../../snyk-admin/user-roles/pre-defined-roles.md). See also [user role management](../../../snyk-admin/user-roles/user-role-management.md).
+To understand more about roles and permissions within Snyk, see [Pre-defined roles](../../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md). See also [user role management](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md).
 
 ## Requirements for custom mapping
 
@@ -87,7 +87,7 @@ snyk:org:test-org-N58YhztauHcaMiNfvi5fbL:custom:developer_readonly"
 
 These assertions will assign the user:
 
-* The pre-defined Group-level role **Group Viewer** for all groups in the SSO. See [pre-defined roles](../../../snyk-admin/user-roles/pre-defined-roles.md) for the permission this grants
+* The pre-defined Group-level role **Group Viewer** for all groups in the SSO. See [pre-defined roles](../../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md) for the permission this grants
 * The pre-defined Organization-level role **Organization Admin** for the Organization with the name **Development**.
 * The custom Organization-level role **Developer ReadOnly** for the Organization with the name **Test Org**, which has the slug `test-org-N58YhztauHcaMiNfvi5fbL`.
 
@@ -132,13 +132,13 @@ To find the normalized name of a role for use in custom mapping, first confirm t
 
 This will open the role details page showing which permissions are enabled for the role and also show the normalized name. Copy this normalized name and use it in custom mapping.
 
-For more details on roles, and specifically, custom roles, see [user role management](../../../snyk-admin/user-roles/user-role-management.md).
+For more details on roles, and specifically, custom roles, see [user role management](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md).
 
 <figure><img src="../../../.gitbook/assets/image (376).png" alt="Role details page for Organization Admin role"><figcaption><p>Role details page for Organization Admin role</p></figcaption></figure>
 
 ## Pre-defined role slugs
 
-Snyk has a set of [pre-defined roles](../../../snyk-admin/user-roles/pre-defined-roles.md). Their corresponding normalized names are listed below.
+Snyk has a set of [pre-defined roles](../../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md). Their corresponding normalized names are listed below.
 
 | Role Type    | Role Name        | Role Slug          |
 | ------------ | ---------------- | ------------------ |

@@ -351,7 +351,7 @@ The following table includes the Git services available for Maven and Gradle Pro
 
 ### Snyk Web UI (Git repository integration)
 
-You can import Java repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../../integrate-with-snyk/snyk-scm-integrations/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
+You can import Java repositories from any Git services (Source Control Managers) Snyk supports (see [Git repositories](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/)). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
 [How Snyk works for open source and licensing](../technical-specifications.md#how-snyk-works-for-open-source-and-licensing)
 

@@ -2,13 +2,15 @@
 
 Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters you can add depend on the **Group by** option you choose from the pulldown on the right. To filter by Origin or source, use an Integrations filter.
 
+Progress and error information on the state of your repository and container registry image imports are shown in the [Import Log](import-log.md).
+
 {% hint style="info" %}
 After filters have been applied to the Project listing page, you can bookmark the URL and share it with other users in the Organization. This allows all users to see the same view of the page.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 09.09.25.png" alt="Snyk Projects listing grouped by Target"><figcaption><p>Snyk Projects listing grouped by Target</p></figcaption></figure>
 
-**Snyk Projects concepts** include the following:
+Snyk Projects concepts include the following:
 
 * [Target](./#target)
 * [Origin](./#origin)

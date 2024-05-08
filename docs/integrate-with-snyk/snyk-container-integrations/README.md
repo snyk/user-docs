@@ -1,4 +1,4 @@
-# Snyk Container - Integrations
+# Container security management integrations
 
 Snyk Container provides a range of integrations to import Projects into Snyk. These integrations support different workflows for Snyk users and customers.
 

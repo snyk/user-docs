@@ -31,7 +31,7 @@ You can access Snyk AppRisk with one of the Group level roles permissions descri
 A Group Administrator has the **Edit AppRisk** permission assigned by default, and a Group Viewer has the **View AppRisk** permission assigned by default.
 
 {% hint style="info" %}
-For more information on default user roles and permissions, see [Default user roles](../../snyk-admin/user-roles/pre-defined-roles.md).
+For more information on default user roles and permissions, see [Default user roles](../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md).
 {% endhint %}
 
 ## Login and Authentication

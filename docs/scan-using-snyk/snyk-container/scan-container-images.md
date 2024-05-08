@@ -4,9 +4,9 @@ Snyk Container helps you find and fix vulnerabilities in container images, based
 
 You can scan your container images using Snyk Container:&#x20;
 
-* In the [Snyk Web UI](use-snyk-container-from-the-web-ui/)
+* In the [Snyk Web UI](../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/)
 * Through the [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
-* With [Broker](integrate-with-self-hosted-container-registries-broker.md) (for self-hosted container registries)
+* With [Broker](../../scan-with-snyk/snyk-container/integrate-with-self-hosted-container-registries-broker.md) (for self-hosted container registries)
 
 ## **Prerequisites for using Snyk Container in the Web UI**
 
@@ -18,6 +18,10 @@ Before scanning your container images with Snyk Container, ensure you:
 ## View vulnerabilities in your container images
 
 In the **Projects** tab, you can see vulnerability results for Snyk Projects that you have imported. The imported Projects are grouped into **Targets**.
+
+{% hint style="info" %}
+You can see the history of all the repositories and container registry images imported into an Organization. For details, see [Import Log](../../snyk-admin/snyk-projects/import-log.md).
+{% endhint %}
 
 To see vulnerability information for that Project, select an imported Project from the target list.
 
@@ -36,4 +40,4 @@ To fix vulnerabilities in your container images:
 
 After it is pushed, Snyk automatically rescans your new image.&#x20;
 
-For more details on how to fix vulnerabilities, see [Analysis and fixes for your images from the Snyk Web UI](use-snyk-container-from-the-web-ui/analyze-and-fix-container-images.md).
+For more details on how to fix vulnerabilities, see [Analysis and fixes for your images from the Snyk Web UI](../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/analyze-and-fix-container-images.md).

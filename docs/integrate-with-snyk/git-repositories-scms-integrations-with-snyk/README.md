@@ -1,4 +1,4 @@
-# Git repositories (SCMs) integrations with Snyk
+# Snyk SCM Integrations
 
 Snyk can integrate with the following Source Control Managers (SCMs) to help you track, monitor, and fix the issues and vulnerabilities in your code:
 
