@@ -19,19 +19,18 @@ The Snyk Consultant will deliver the following services related to the setup of 
 1. [Pre-engagement planning and preparation](snyk-jumpstart-services-description.md#pre-engagement-planning-and-preparation)
    1. Review deliverables per product module
    2. Review prerequisites per product module
-   3. Confirm full-time availability for Customer contacts based on Customer prerequisites
+   3. Confirm full-time availability for Customer contacts based on Customer [prerequisites](snyk-jumpstart-customer-prerequisites.md)
 2. [Snyk Platform configuration](snyk-jumpstart-services-description.md#snyk-platform-configuration)
 3. [Snyk Open Source configuration](snyk-jumpstart-services-description.md#snyk-open-source-configuration)
 4. [Snyk Code configuration](snyk-jumpstart-services-description.md#snyk-code-configuration)
 5. [Snyk Container configuration](snyk-jumpstart-services-description.md#snyk-container-configuration)
-6. [Snyk IaC+ configuration](snyk-jumpstart-services-description.md#snyk-iac-configuration)
-7. [Snyk AppRisk Essentials prioritization configuration](snyk-jumpstart-services-description.md#snyk-apprisk-essentials-prioritization-configuration)
+6. [Snyk IaC configuration](snyk-jumpstart-services-description.md#snyk-iac-configuration)
 
 ## Pre-engagement planning and preparation
 
 ### Pre-engagement call
 
-A Pre-engagement call will be held before the start of the Jumpstart Services listed herein, to ensure the Customer understands the prerequisites required for engagement start along with the deliverables completed during the engagement timeframe. Customer prerequisites, including resources, availability, and deliverables for each product module, will be reviewed and confirmed. The Customer acknowledges that complying with these prerequisites is its sole responsibility, and Snyk will not be responsible for any delays or failure to deliver the Jumpstart Services based on the Customer’s failure to meet these prerequisites.
+A Pre-engagement call will be held before the start of the Jumpstart Services listed herein, to ensure the Customer understands the prerequisites required for engagement start along with the deliverables completed during the engagement timeframe. Customer [prerequisites](snyk-jumpstart-customer-prerequisites.md), including resources, availability, and deliverables for each product module, will be reviewed and confirmed. The Customer acknowledges that complying with these prerequisites is its sole responsibility, and Snyk will not be responsible for any delays or failure to deliver the Jumpstart Services based on the Customer’s failure to meet these prerequisites.
 
 ## Snyk Platform configuration
 
@@ -181,17 +180,17 @@ The Customer will be provided with a document that provides a comprehensive over
 
 <table><thead><tr><th width="269">Snyk Container Configuration</th><th>Outcome</th><th>Hours</th></tr></thead><tbody><tr><td>Single Broker Container Registry installation and configuration</td><td>Single Broker installed and configured for a <a href="https://snyk.io/integrations/?type=container-registries">Supported Container Registry</a>.</td><td>3</td></tr><tr><td>Container Registry import (up to 50 targets)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://snyk.io/integrations/?type=container-registries">Supported Container Registry</a>.</td><td>2</td></tr><tr><td>Interpreting and actioning Container results</td><td>Gain an understanding of how to view Container results in Snyk Reporting along with managing issues.</td><td>2</td></tr><tr><td>Single CI/CD CLI rntegration</td><td>Configure a single pipeline to <code>test</code> and <code>monitor</code> for Snyk Container.</td><td>3</td></tr><tr><td>Custom Base Images walkthrough (UI and CLI)</td><td>Gain an understanding of how to use the Custom Base Image Recommendations functionality through the UI and CLI.</td><td>2</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td><td>2</td></tr><tr><td><strong>TOTAL HOURS</strong></td><td></td><td><strong>14</strong></td></tr></tbody></table>
 
-## Snyk IAC+ Configuration
+## Snyk IaC Configuration
 
-### Delivery approach - Snyk IAC+ configuration
+### Delivery approach - Snyk IaC configuration
 
 #### Repository import
 
 The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) using the UI import functionality to import into the Customer’s SCM integration.
 
-#### Interpreting and actioning IAC+ results
+#### Interpreting and actioning IaC results
 
-The Snyk Consultant will educate the Customer on understanding Snyk IaC+ results through the CLI and Snyk UI and how to manage Snyk IAC+ results using Snyk Reporting.
+The Snyk Consultant will educate the Customer on understanding Snyk IaC results through the CLI and Snyk UI and how to manage Snyk IaC results using Snyk Reporting.
 
 #### SCM integration settings
 
@@ -213,78 +212,33 @@ The Snyk Consultant will work with the Customer to configure up to three (3) Clo
 
 The customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document provides an essential guide for customers to realize the full potential of their investment in Snyk.
 
-### Target initiatives - Snyk IAC+ configuration
+### Target initiatives - Snyk IaC configuration
 
-| Snyk IAC+ configuration                                 | Outcome                                                                                                             | Hours  |
+| Snyk IaC configuration                                  | Outcome                                                                                                             | Hours  |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------ |
 | Repository import (SCM only up to 50 targets)           | Import a maximum of 50 targets into Snyk via a [supported SCM Integration](https://snyk.io/integrations/?type=scm). | 2      |
-| Interpreting and actioning IAC+ Results                 | Gain an understanding of how to view IaC+ results in Snyk Reporting along with managing misconfigurations.          | 1.5    |
+| Interpreting and actioning IaC Results                  | Gain an understanding of how to view IaC results in Snyk Reporting along with managing misconfigurations.           | 1.5    |
 | SCM integration settings                                | Configure SCM integration settings to the Customer’s desired gating settings.                                       | .5     |
 | SCM Broker installation                                 | Install SCM Broker in a pre-determined customer environment based on Snyk System Requirements.                      | 2      |
-| Single Pipeline CI/CD CLI configuration                 | Configure a single pipeline to test and provide a report for Snyk IAC+.                                             | 4      |
+| Single Pipeline CI/CD CLI configuration                 | Configure a single pipeline to test and provide a report for Snyk IaC.                                              | 4      |
 | Configure Cloud environments (up to three environments) | Customer will configure up to three Cloud Eenvironments (Azure, GCP, AWS) with Snyk.                                | 3      |
 | Documentation close-out                                 | Gain an understanding of work completed along with a runbook for onboarding additional projects.                    | 2      |
 | **TOTAL HOURS**                                         |                                                                                                                     | **15** |
 
-## Snyk AppRisk Essentials prioritization configuration
 
-This portion of the Jumpstart service is applicable to Customers looking to achieve [risk-based prioritization](../../manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/).
-
-### Delivery approach - Snyk AppRisk Essentials configuration
-
-#### Coverage and visibility configuration
-
-The Snyk Consultant will work with the Customer to configure their Source Code Management system integration(s) and create two starter policies to show coverage gaps and asset classification, respectively.
-
-#### **Walkthrough of coverage and visibility use cases in AppRisk**
-
-The Snyk Consultant will educate the Customer on how to identify assets that are not currently being scanned by Snyk, as well as how to group assets and issues based on asset classification.
-
-#### Snyk Container - single CICD CLI configuration
-
-The Snyk Consultant will work with the Customer to configure a single pipeline to run the `snyk container test` and `snyk container monitor` commands and provide the Customer with an understanding of how to configure additional pipeline scans.
-
-#### **Snyk Container - single Broker Container Registry installation and configuration**
-
-The Snyk Consultant will work with the Customer to configure and install Broker, if needed, for a single [supported Container Registry](https://snyk.io/integrations/?type=container-registries) integration.
-
-#### **Snyk Container - Container Registry Import**
-
-The Snyk Consultant will work with the Customer to import the set of Container Rargets for container images running in a single Kubernetes cluster either through UI Import functionality or using the Snyk API Import tool.
-
-#### **Single Kubernetes Connector for AppRisk Installation**
-
-The Snyk Consultant will work with the Customer to install the [Kubernetes Connector for AppRisk](../../manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/prioritization-setup/prioritization-setup-kubernetes-connector.md) on a predetermined Kubernetes Cluster that meets the Snyk system requirements.
-
-#### **Walkthrough of Prioritized Issues in AppRisk Dashboard**
-
-The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the AppRisk Dashboard using deployed and public-facing risk factors.
-
-#### Documentation close-out
-
-The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, it offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document is an essential guide for customers to realize the full potential of their investment in Snyk.
-
-### Target initiatives - Snyk AppRisk Essentials prioritization
-
-<table><thead><tr><th width="322">Snyk AppRisk Essentials Prioritization Configuration</th><th width="299">Outcome</th><th>Hours</th></tr></thead><tbody><tr><td>Coverage and visibility configuration</td><td>SCM integration is configured in AppRisk and two starter policies are created to show coverage gaps and asset classifications respectively.</td><td>2</td></tr><tr><td>Walk-through of coverage and visibility use cases in AppRisk</td><td>Gain an understanding of how to identify assets that are not currently being scanned by one more Snyk controls, as well as how to group assets and issues based on asset classification</td><td>.5</td></tr><tr><td><p>Snyk Container for AppRisk *</p><p>Setup of one of the following integration methods</p><ul><li>Single Broker Container Registry installation and donfiguration</li><li>Single CI/CD CLI Integration</li></ul></td><td><p>One of:</p><p>Single Broker installed and configured for a <a href="https://snyk.io/integrations/?type=container-registries">Supported Container Registry</a> or</p><p>configure a single pipeline to <code>test</code> and <code>monitor</code> for Snyk Container, including application of component tags according to the <a href="../../manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/prioritization-setup/prioritization-setup-associating-snyk-open-source-code-and-container-projects.md">product requirements</a>.</p></td><td>2</td></tr><tr><td><p>Snyk Container for AppRisk *</p><p>Container Registry import</p></td><td><p>Import the set of Container targets</p><p>into Snyk via a <a href="https://snyk.io/integrations/?type=container-registries">Supported Container Registry</a>.</p></td><td>2</td></tr><tr><td>Single Kubernetes Connector for AppRisk installation</td><td><a href="../../manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/prioritization-setup/prioritization-setup-kubernetes-connector.md">Kubernetes connector for AppRisk</a> is installed in a single Kubernetes cluster</td><td>3</td></tr><tr><td>Component tagging automation</td><td>Tagging rules are configured for Snyk Open Source, Code, and Container projects (if using Container Registry integration) according to the <a href="../../manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/prioritization-setup/prioritization-setup-associating-snyk-open-source-code-and-container-projects.md">product requirements</a>.<br>Application of tags is automed through the<a href="https://github.com/snyk-labs/snyk-tags-tool/blob/main/docs/components.md"> snyk-tags</a> tool in the Customer environment to tag new projects periodically.</td><td>8</td></tr><tr><td>Walk-through of prioritized issues in AppRisk</td><td>Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard using deployed and public-facing risk factors.</td><td>1.5</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td><td>2</td></tr><tr><td><strong>TOTAL HOURS</strong></td><td></td><td><strong>21</strong></td></tr></tbody></table>
-
-{% hint style="info" %}
-\* _Snyk Container for AppRisk_ steps are required when the Customer does not already have Snyk Container on contract.
-{% endhint %}
 
 ## Timeline for Snyk Jumpstart delivery
 
 Snyk Jumpstart delivery will include initial platform configuration and each product module that has been purchased. Modules have been designed to be delivered consecutively and over consecutive hours.
 
-| Product                                | Total time   |
-| -------------------------------------- | ------------ |
-| Snyk Platform configuration            | 9 hours      |
-| Snyk Open Source                       | 14 hours     |
-| Snyk Code                              | 10 hours     |
-| Snyk Container                         | 14 hours     |
-| Snyk IAC+                              | 15 hours     |
-| Snyk AppRisk Essentials Prioritization | 21 hours     |
-| **TOTAL HOURS**                        | **83 hours** |
+| Product                     | Total time   |
+| --------------------------- | ------------ |
+| Snyk Platform configuration | 9 hours      |
+| Snyk Open Source            | 14 hours     |
+| Snyk Code                   | 10 hours     |
+| Snyk Container              | 14 hours     |
+| Snyk IaC                    | 15 hours     |
+| **TOTAL HOURS**             | **62 hours** |
 
 ## Additional terms
 
