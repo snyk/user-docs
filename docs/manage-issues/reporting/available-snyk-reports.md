@@ -137,7 +137,7 @@ For example, the critical vulnerability [SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720
 
 Learn more by using the [OWASP TOP 10 Learning path](https://learn.snyk.io/learning-paths/owasp-top-10/) on Snyk Learn.
 
-<figure><img src="../../.gitbook/assets/image (349).png" alt="OWASP Top 10 Distribution of Control and Issues by Severity dashboards "><figcaption><p>OWASP Top 10 Distribution of Control and Issues by Severity dashboards </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (349) (1).png" alt="OWASP Top 10 Distribution of Control and Issues by Severity dashboards "><figcaption><p>OWASP Top 10 Distribution of Control and Issues by Severity dashboards </p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (351).png" alt="A list of of the OWASP controls, and a breadkdown of the issues by severity "><figcaption><p>A list of of the OWASP controls, and a breadkdown of the issues by severity </p></figcaption></figure>
 

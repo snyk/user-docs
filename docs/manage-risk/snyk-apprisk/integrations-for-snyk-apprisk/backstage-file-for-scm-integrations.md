@@ -29,7 +29,7 @@ Snyk AppRisk parses the fields of the detected file using the default field name
 
 7. Click the **Done** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (12).png" alt="Integration Hub - Backstage setup"><figcaption><p>Integration Hub - Backstage setup</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (12) (1).png" alt="Integration Hub - Backstage setup"><figcaption><p>Integration Hub - Backstage setup</p></figcaption></figure>
 
 After you finish configuring the Backstage catalog, Snyk AppRisk starts enriching your repository assets with the data found in the backstage catalog .yaml file.
 

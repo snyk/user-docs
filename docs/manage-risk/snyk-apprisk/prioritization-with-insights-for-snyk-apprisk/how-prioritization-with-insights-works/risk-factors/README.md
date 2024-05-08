@@ -15,7 +15,7 @@ Contact your account manager if you are interested in Snyk AppRisk Pro.
 
 You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Insights** UI tab. If you choose to disable a risk factor, Snyk will no longer compute it.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Insights tab in the Group settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (349).png" alt=""><figcaption><p>Insights tab in the Group settings</p></figcaption></figure>
 
 {% hint style="info" %}
 Risk factor settings may take up to four hours to take effect.

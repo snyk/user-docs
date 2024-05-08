@@ -93,7 +93,7 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 3. Click the **Add** button.
 4. Add the profile name for this integration.
 5. Add the Broker token for the Snyk AppRisk Checkmarx integration.
-6. Add the Checkmarx host. E.g. `checkmarx.customer.com`
+6. Add the Checkmarx host. For example `checkmarx.customer.com`
 7. Click the **Done** button.
 8. When the connection is established, the status of the Checkmarx integration is changed to **Connected**.
 
@@ -111,11 +111,12 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 * Select the **SAST** tag and search for SonarQube.&#x20;
 * Click the **Add** button.
 * Add the **Profile name** for this integration.
+* Add the **Host URL** for this integration.
 * Add the **API token**. Navigate to your SonarQube account, select User, select My Account, select Security, and then User Token. [Here](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/) you can find more details about the SonarQube API Key.
 * Click the **Done** button.
 * When the connection is established, the status of the SonarQube integration is changed to **Connected**.
 
-<figure><img src="../../../.gitbook/assets/image (372).png" alt="Integration Hub - SonarQube setup"><figcaption><p>Integration Hub - SonarQube setup</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Integration Hub - SonarQube setup"><figcaption><p>Integration Hub - SonarQube setup</p></figcaption></figure>
 
 ## Nightfall setup guide
 
@@ -322,8 +323,8 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 * Click the **Add** button.
 * Add the **Profile name** for this integration.
 * Add the **Account API Token**.
-* Set the **Region**.
+* Set the **Sysdig region**.
 * Click the **Done** button.
 * When the connection is established, the status of the Sysdig integration is changed to **Connected**.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-07 at 17.58.17.png" alt="Integration Hub - Sysdig setup"><figcaption><p>Integration Hub - Sysdig setup</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt="Integration Hub - Sysdig setup"><figcaption><p>Integration Hub - Sysdig setup</p></figcaption></figure>
