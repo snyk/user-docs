@@ -1,4 +1,4 @@
-# Snyk REST API overview
+# REST API overview
 
 {% hint style="info" %}
 The information on this page is also available in the [Snyk REST API reference docs](https://apidocs.snyk.io/).
@@ -8,7 +8,7 @@ Snyk REST API is based on the [JSON:API standard](https://jsonapi.org/), defined
 
 ## When to use Snyk REST API
 
-Snyk REST API is available for you to try out as endpoints are released. Use this API when you find endpoints that correspond to your needs according to your own workflow. You can also use Snyk API v1 at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io/).
+Use this API when you find endpoints that correspond to your needs according to your own workflow. You can also use Snyk API v1 at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io/).
 
 For more information about Snyk APIs and using an API versus Snyk CLI or an integration, see the [Snyk API docs](https://docs.snyk.io/snyk-api-info).
 
