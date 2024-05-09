@@ -15,4 +15,4 @@ Follow these steps to make a simple call to the Snyk REST API.
 11. Scroll to the **RESPONSE**, which is a 200 response (provided that your permissions and your **Organization ID** are correct), showing a list of projects, along with RESPONSE HEADERS and CURL to copy. If you get a different status code, do what is needed to resolve the error.
 12. Observe the optional **QUERY-STRING PARAMETERS** to see the range of data you can retrieve from the Snyk REST API.
 
-If you have any problems or questions, contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+Note that if you use the parameter `target-reference`, you must URL-encode it. If you have any problems or questions, contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
