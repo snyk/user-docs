@@ -149,7 +149,7 @@ To view the HTML file, locate the output file in your repository and double-clic
 
 The test results report opens in the browser. The following example shows `snyk code test` results. You can view the **Data Flow** and **Fix Analysis** information for the issues discovered by clicking the corresponding buttons for each issue.
 
-<figure><img src="../../../.gitbook/assets/Snyk-to-HTML - Example - HTML Report - Fix Analysis tab - 2.png" alt="Snyk Code Report highligghting Data Flow and Fix Analysis buttons for an issue"><figcaption><p>Snyk Code Report highligghting Data Flow and Fix Analysis buttons for an issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk-to-HTML - Example - HTML Report - Fix Analysis tab - 2.png" alt="Snyk Code Report highligghting Data Flow and Fix Analysis buttons for an issue"><figcaption><p>Snyk Code Report highlighting Data Flow and Fix Analysis buttons for an issue</p></figcaption></figure>
 
 ## License
 
