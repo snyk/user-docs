@@ -48,9 +48,12 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     --set snykGroupId=<<YOUR_GROUP_ID>> \
     -n snyk-runtime-sensor \
     runtime-sensor/runtime-sensor
+
     ```
 
+## Troubleshooting
+
+* In case the `is_loaded` risk factor is not properly reported by the sensor, it may be caused by a non-default value of the Linux kernel `perf_event_paranoid` configuration.\
+  In such cases, install the helm chart with either `--set securityContext.privileged=true` or add `SYS_ADMIN` as a required Linux capability `--set "securityContext.capabilities={SYS_ADMIN}"`.
+
 Release versions can be found on[ GitHub](https://github.com/snyk/runtime-sensor/releases).
-
-
-
