@@ -53,11 +53,11 @@ You can use the `.snyk` file to specify files or directories in a repository tha
 
 For Projects imported using a code repository integration as opposed to using the `snyk monitor` command, the `--policy-path` option is not available. The `.snyk` file applies only to Projects found on the same path as the `.snyk` file.
 
-For details, see [Excluding directories and files from the import process](../../scan-using-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md).
+For details, see [Excluding directories and files from the import process](../../scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md).
 
 ## Use the `.snyk` file with Snyk IaC
 
-For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md). For more information, see [Ignore resources for drift](../../scan-using-snyk/snyk-iac/iac+-code-to-cloud-capabilities/detect-drift-and-manually-created-resources/ignore-resources-for-drift.md).
+For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md). For more information, see [Ignore resources for drift](../../scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/detect-drift-and-manually-created-resources/ignore-resources-for-drift.md).
 
 ## Use the `.snyk` file with Snyk Open Source
 
@@ -76,7 +76,7 @@ When you include the `.snyk` file in your code repository and the `language-sett
 * For SCM scans, for example, GitHub scans, the Snyk Web UI controls the Python version at the Organization level, from the **Organization > Settings > Languages > Python > Pip Python version** option.
 * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options.
 * Note that you may need to r**e-import the Project if the `.snyk` file was not present at the initial import** of the Project into Snyk.
-* See the [Python version](../../getting-started/supported-languages-frameworks-and-feature-availability-overview/python.md#python-version-support) documentation for more information about Python version support.&#x20;
+* See the [Python version](../../getting-started/supported-languages-and-frameworks/python.md#python-version-support) documentation for more information about Python version support.&#x20;
 
 For more information about using the `.snyk` file with Open Source Projects, see the following:
 
@@ -106,7 +106,7 @@ language-settings:
   python: "3.6.2"
 ```
 
-For more information, see [Setting Python version in Git Projects](../../getting-started/supported-languages-frameworks-and-feature-availability-overview/python.md#setting-python-version-in-git-projects).
+For more information, see [Setting Python version in Git Projects](../../getting-started/supported-languages-and-frameworks/python.md#setting-python-version-in-git-projects).
 
 #### Set vulnerability ignore rules
 

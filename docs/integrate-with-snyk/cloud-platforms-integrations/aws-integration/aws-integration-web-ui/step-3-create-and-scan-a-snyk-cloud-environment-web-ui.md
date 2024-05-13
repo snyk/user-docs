@@ -61,5 +61,5 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 
 You can now do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-using-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and IaC+ issues](../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

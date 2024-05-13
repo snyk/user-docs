@@ -81,7 +81,7 @@ If the connection to Azure fails, a notification appears under the **Azure Repos
 
 ## Add Projects to Snyk for Azure Repos
 
-Snyk tests and monitors Azure Repos by evaluating root folders and custom file locations for the [languages that Snyk supports](../../getting-started/supported-languages-frameworks-and-feature-availability-overview/).
+Snyk tests and monitors Azure Repos by evaluating root folders and custom file locations for the [languages that Snyk supports](../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/).
 
 To add a default Project:
 
