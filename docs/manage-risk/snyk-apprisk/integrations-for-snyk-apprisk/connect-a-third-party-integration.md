@@ -63,8 +63,6 @@ Ensure you are adding a custom field called repoURL:
 7. Click the **Done** button.
 8. When the connection is established, the status of the Veracode integration is changed to **Connected**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (11).png" alt="Integration Hub - Veracode setup"><figcaption><p>Integration Hub - Veracode setup</p></figcaption></figure>
-
 ## Checkmarx setup guide
 
 Use the following instructions to set up your Checkmarx SAST integration. Checkmarx SAST integration is only working for the Checkmarx SAST, we are not yet supporting Checkmarx One.
@@ -95,8 +93,6 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 7. Click the **Done** button.
 8. When the connection is established, the status of the Checkmarx integration is changed to **Connected**.
 
-<figure><img src="../../../.gitbook/assets/image (370).png" alt="Integration Hub - Checkmarx setup"><figcaption><p>Integration Hub - Checkmarx setup</p></figcaption></figure>
-
 ## SonarQube setup guide
 
 ### Required parameters <a href="#sonarqube-required-parameters" id="sonarqube-required-parameters"></a>
@@ -114,8 +110,6 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 * Click the **Done** button.
 * When the connection is established, the status of the SonarQube integration is changed to **Connected**.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="Integration Hub - SonarQube setup"><figcaption><p>Integration Hub - SonarQube setup</p></figcaption></figure>
-
 ## Nightfall setup guide
 
 ### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
@@ -132,8 +126,6 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 6. Add the **API Key** for this integration.
 7. Click the **Done** button.
 8. When the connection is established, the status of the Nightfall integration is changed to **Connected**.
-
-<figure><img src="https://lh7-us.googleusercontent.com/FhueUeoeYL3j5ihKIc6lFSFuvoS43NU30PiSCIOpkfWkoPXI8XaLh_ABzR5DipTn-TVLAkX3pSmoBfdq6hNDL65JPV72E2lErTcTua9YTcUnFXzwVI_smOtlZqS4LzD2-XqGZHlygjVZHVlba4ju3pQ" alt="Integration Hub - Nightfall setup"><figcaption><p>Integration Hub - Nightfall setup</p></figcaption></figure>
 
 The following video provides an overview of the Nightfall configuration from the Integration Hub:
 
@@ -169,8 +161,6 @@ Ensure that the following permissions are set as READ:
 5. Add the **API Token** for this integration.
 6. Click the **Done** button.
 7. When the connection is established, the status of the GitGuardian integration is changed to **Connected**.
-
-<figure><img src="https://lh7-us.googleusercontent.com/IZz3ozkuESpiOJt8wv5Ux3CMm7cvH79xJeYl_7okSbupwhBVSuHxH1MxCX7KBzWbtuTVBhXyeFDQ_lclXYGavE6kVRtu0SicVNPc8ClYRsOmvUX1XYtxvTmK-vayu8mgAAgp-K8NC6BTcje1UQRTutQ" alt="Integration Hub - GitGuardian setup"><figcaption><p>Integration Hub - GitGuardian setup</p></figcaption></figure>
 
 The following video provides an overview of the GitGuardian configuration from the Integration Hub:
 
@@ -210,8 +200,6 @@ Ensure you have the correct user permissions before creating the API Token.
 You can add only one Jira profile to the Jira integration.
 {% endhint %}
 
-<figure><img src="https://lh7-us.googleusercontent.com/omhvmt3Pcn4afVjerqqr_k9ZqjEScAleWFUNkaMGzV15MH1zCIhHvcIN6QBy4bL6p9UNk5tytKNLEFa66vOuWyF25r7W0wT8bptipJ6WLC5b4QVw4ErKdCEsTw7MwZB3ZOvgvvkrmL5M6dy6ODOzWqs" alt=""><figcaption><p>Integration Hub - Jira setup</p></figcaption></figure>
-
 ### Types of Jira integrations
 
 Multiple Jira integrations are available when using Snyk, each designed to support specific needs.
@@ -229,10 +217,6 @@ The following table presents the functionality of all types of Jira integrations
 | [Jira Script](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md)                             | <p>Automatically create tickets for new vulnerabilities.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                              | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
 | [Security in Jira](../../../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) | <p>View vulnerability information in Jira and create a ticket from Jira. <br>* Jira ticket is not visible in Snyk.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                           | <p><strong>Authentication type</strong>:  JWT(JSON Web Token) as part of the Connect App framework.</p><p><br><strong>Availability level</strong>: Snyk Organization</p> |
 | [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide)                                          | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
-
-\
-\
-
 
 ## Dynatrace setup guide
 
@@ -295,8 +279,6 @@ storage:system:read
 * Click the **Done** button.
 * When the connection is established, the **Dynatrace** integration status changes to **Connected**.
 
-<figure><img src="../../../.gitbook/assets/image (357).png" alt="Integration Hub - Dynatrace setup"><figcaption><p>Integration Hub - Dynatrace setup</p></figcaption></figure>
-
 ## Sysdig setup guide
 
 ### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
@@ -324,5 +306,3 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 * Set the **Sysdig region**.
 * Click the **Done** button.
 * When the connection is established, the status of the Sysdig integration is changed to **Connected**.
-
-<figure><img src="../../../.gitbook/assets/image (2).png" alt="Integration Hub - Sysdig setup"><figcaption><p>Integration Hub - Sysdig setup</p></figcaption></figure>
