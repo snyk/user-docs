@@ -32,7 +32,7 @@ This page explains the installation of the Visual Studio Code extension. **After
 Supported languages and frameworks include C#, JavaScript, TypeScript, Java, Go, Ruby, Python, Ruby, PHP, Scala, Swift, Objective-C, Kubernetes, Terraform, CloudFormation, Azure Resource Manager (ARM)
 
 * For Snyk Open Source, the VS Code extension supports all the languages and package managers supported by Snyk Open Source and the CLI.
-* For Snyk Code, the VS Code extension supports all the languages and frameworks supported by Snyk Code. Before scanning your repositories with Snyk Code, ensure you have [enabled Snyk Code](../../../scan-with-snyk/snyk-code/configure-snyk-code.md).&#x20;
+* For Snyk Code, the VS Code extension supports all the languages and frameworks supported by Snyk Code. Before scanning your repositories with Snyk Code, ensure you have [enabled Snyk Code](../../../scan-using-snyk/snyk-code/configure-snyk-code.md).&#x20;
 
 See [Supported languages and frameworks](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks) for more details.
 

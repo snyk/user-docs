@@ -12,7 +12,7 @@ You can prioritize the Project level when looking at a specific Project. Enterpr
 
 You can also [ignore issues](ignore-issues/) and [triage issues](triage-for-issues.md) to establish your issue management strategy.
 
-Based on your priorities, you can start [fixing vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/).
+Based on your priorities, you can start [fixing vulnerabilities](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/).
 
 See [Prioritize issues in the Snyk Web UI](https://learn.snyk.io/lesson/prioritize-issues-snyk) to learn about prioritization in action.
 

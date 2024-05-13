@@ -79,4 +79,4 @@ Snyk also integrates with various [Container Registries](../../../integrate-with
 
 ### Kubernetes
 
-Snyk can be configured to monitor workloads deployed to Kubernetes. See [Overview of the Kubernetes integration](../../../scan-with-snyk/snyk-container/integrate-with-kubernetes/overview-of-the-kubernetes-integration/) for more information on how to configure the controller.
+Snyk can be configured to monitor workloads deployed to Kubernetes. See [Overview of the Kubernetes integration](../../../scan-using-snyk/snyk-container/integrate-with-kubernetes/overview-of-the-kubernetes-integration/) for more information on how to configure the controller.

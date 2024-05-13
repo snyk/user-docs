@@ -12,7 +12,7 @@ Here are some key points to determine the best starting point. For details, see 
 ## Getting started with Snyk
 
 {% hint style="info" %}
-For details, see [Getting started](../../../getting-started/) and [Start scanning](../../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md).
+For details, see [Getting started](../../../getting-started/) and [Start scanning](../../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api.md).
 {% endhint %}
 
 Depending on your needs, Snyk offers various integration methods:
@@ -64,7 +64,7 @@ To use the Snyk CLI:
      * `snyk test --all-projects --org=[org-id]`
      * `snyk monitor --all-projects --org=[org-id]`\
        Replace `[org-id]` with the ID of your Organization.
-   * For Container and Infrastructure as Code scans, see [Container](../../../scan-using-snyk/snyk-container/scan-container-images.md) and [Infrastructure as Code](../../../scan-with-snyk/snyk-iac/), as this will vary based on the type being scanned.
+   * For Container and Infrastructure as Code scans, see [Container](../../../scan-using-snyk/snyk-container/scan-container-images.md) and [Infrastructure as Code](../../../scan-using-snyk/snyk-iac/), as this will vary based on the type being scanned.
 4. Review results either locally when running `snyk test`, or via the Snyk Web UI when using monitor or report.
 
 For demonstrations of various pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).

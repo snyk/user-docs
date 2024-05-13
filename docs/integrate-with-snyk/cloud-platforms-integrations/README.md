@@ -1,7 +1,7 @@
 # Cloud platforms integrations
 
 {% hint style="info" %}
-These integrations are available for IaC+. See [Scan cloud configurations](../../scan-with-snyk/snyk-iac/) for details.
+These integrations are available for IaC+. See [Scan cloud configurations](../../scan-using-snyk/snyk-iac/) for details.
 {% endhint %}
 
 The following pages provide information and instructions for cloud platforms integrations:

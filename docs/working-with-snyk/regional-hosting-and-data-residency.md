@@ -18,7 +18,7 @@ By default, customers are hosted in the US region.
 
 Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For more information, see [Regional and global data](regional-hosting-and-data-residency.md#regional-and-global-data).
 
-Data residency is available for [Snyk Open Source](../scan-with-snyk/snyk-open-source/), [Snyk Code](../scan-with-snyk/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/), and [Snyk IaC](../scan-with-snyk/snyk-iac/).
+Data residency is available for [Snyk Open Source](../scan-using-snyk/snyk-open-source/), [Snyk Code](../scan-using-snyk/snyk-code/), [Snyk Container](../scan-using-snyk/snyk-container/), and [Snyk IaC](../scan-using-snyk/snyk-iac/).
 
 ## **How does data residency work?**
 

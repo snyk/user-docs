@@ -5,7 +5,7 @@ Beginning with CLI version 1.594.0, all configuration files are processed locall
 {% endhint %}
 
 {% hint style="info" %}
-To use the [IaC+](../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
+To use the [IaC+](../../../../scan-using-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
 {% endhint %}
 
 ## Overview

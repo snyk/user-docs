@@ -64,7 +64,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## Scanning methods
 
-You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. See [Start scanning](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md) for more details.
+You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. See [Start scanning](../../scan-using-snyk/start-scanning-using-the-cli-web-ui-or-api.md) for more details.
 
 If you initiate your scans using the CLI, you might encounter one of the following situations:
 

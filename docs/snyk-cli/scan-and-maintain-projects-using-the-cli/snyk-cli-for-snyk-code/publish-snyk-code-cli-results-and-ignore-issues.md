@@ -81,14 +81,14 @@ This error indicates that the contents of the scanned Project exceed the 6MB lim
 * Partition the Project repository by scanning sub-directories instead of the whole repository, for example:
   * Create two Projects for your frontend and backend directories, and scan them separately.
   * Create and scan Projects for each MicroService.
-* Exclude unnecessary files from the scanning process using the [.snyk exclude option](../../../scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md#exclusion-syntax-of-the-.snyk-file). For example, you can exclude test files from the scan.
+* Exclude unnecessary files from the scanning process using the [.snyk exclude option](../../../scan-using-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md#exclusion-syntax-of-the-.snyk-file). For example, you can exclude test files from the scan.
 * Set a severity threshold using the [`--severity-threshold=high`](../failing-of-builds-in-snyk-cli.md#combining-security-policies-with-severity-threshold). You can focus on more critical issues and gain visibility into urgent matters.
 
 ## Use the CLI to trigger a test for a specific commit to an existing Snyk Code Git repository Project
 
 Note that this feature is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta). The minimum supported CLI version is v1.1194.0.
 
-When you are using Snyk Code in the CI/CD, you can specify an existing Git repository Code Analysis Project along with the commit ID to trigger a test for which the results will be saved in the Web UI. The Web UI will also display Code Snippets that provide [Snyk Code Data flow](../../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/breakdown-of-code-analysis.md#data-flow). Ignores that have been added to the Web UI Project will be respected in this test.
+When you are using Snyk Code in the CI/CD, you can specify an existing Git repository Code Analysis Project along with the commit ID to trigger a test for which the results will be saved in the Web UI. The Web UI will also display Code Snippets that provide [Snyk Code Data flow](../../../scan-using-snyk/snyk-code/manage-code-vulnerabilities/breakdown-of-code-analysis.md#data-flow). Ignores that have been added to the Web UI Project will be respected in this test.
 
 Be sure you have the prerequisites and publish the results as you intend:
 

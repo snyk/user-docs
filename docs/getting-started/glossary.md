@@ -126,11 +126,11 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md).
+A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](../scan-using-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md).
 
 ### Fix PR
 
-A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md).
+A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md).
 
 ## G
 
@@ -234,7 +234,7 @@ Pull Request. Allows a user to exchange changes made to source code and collabor
 
 ### PR Checks
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../scan-using-snyk/pull-requests/pull-request-checks/).
 
 ### Priority Score
 
@@ -268,7 +268,7 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 
 ### Rule
 
-A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../scan-with-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/).
+A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../scan-using-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../scan-using-snyk/snyk-iac/build-your-own-iac-custom-rules/).
 
 ## S
 
@@ -338,19 +338,19 @@ A Snyk platform tool that enables developers to find and fix known vulnerabiliti
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../scan-with-snyk/snyk-code/).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../scan-using-snyk/snyk-code/).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container](../scan-with-snyk/snyk-container/).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container](../scan-using-snyk/snyk-container/).
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-with-snyk/snyk-iac/scan-your-iac-source-code/).
+A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk Infrastructure as Code](../scan-using-snyk/snyk-iac/scan-your-iac-source-code/).
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open-source vulnerabilities. See [Snyk Open Source](../scan-with-snyk/snyk-open-source/).
+A Snyk product. Enables developers to find and fix open-source vulnerabilities. See [Snyk Open Source](../scan-using-snyk/snyk-open-source/).
 
 ### Snyk plugin
 
@@ -401,7 +401,7 @@ A fix type: a problem can be fixed by upgrading a version of a package or by app
 
 ### Vulnerability
 
-A security vulnerability that was identified by Snyk. See [Manage vulnerabilities](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/).
+A security vulnerability that was identified by Snyk. See [Manage vulnerabilities](../scan-using-snyk/snyk-open-source/manage-vulnerabilities/).
 
 ## W
 

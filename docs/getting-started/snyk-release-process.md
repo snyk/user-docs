@@ -16,8 +16,8 @@ Not all features follow all these stages, and timelines for each feature to move
 
 ### Snyk features in Closed Beta
 
-* [Customize PR templates](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/)
-* [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
+* [Customize PR templates](../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/)
+* [Configure PR Checks](../scan-using-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 * [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
 * [Enterprise Analytics](../manage-risk/analytics/)
 * [Snyk Code - Clone capability with Broker for Docker](../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
@@ -31,12 +31,12 @@ Not all features follow all these stages, and timelines for each feature to move
 
 * [Snyk GitHub Cloud App](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
 * [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
-* [Custom rules](../scan-with-snyk/snyk-code/snyk-code-custom-rules/)
+* [Custom rules](../scan-using-snyk/snyk-code/snyk-code-custom-rules/)
 * [Risk Score](../manage-risk/prioritize-your-issues/risk-score.md)
 * [Reachable vulnerabilities](../manage-risk/prioritize-your-issues/reachable-vulnerabilities.md)
 * [Group projects by branch or version for monitoring](../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
 * [Git repository cloning](../snyk-admin/snyk-preview.md#enable-git-repository-cloning)
-* [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
+* [Fix code vulnerabilities automatically](../scan-using-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
 * [Snyk broker commit signing](../enterprise-configuration/snyk-broker/snyk-broker-commit-signing.md)
 
 ## General Availability

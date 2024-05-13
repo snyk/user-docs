@@ -21,7 +21,7 @@ If you try to implement all the SCM integration features at the same time, you r
 | <p><a href="snyk-scm-integration-good-practices.md#stage-3-enable-snyk-test-on-prs"><strong>Stage 3</strong></a></p><p>Developer and Security teams use Snyk prioritization reporting capabilities to build a fix plan.</p> | Watch this [video ](https://www.youtube.com/watch?v=\_kAY94JwQHY)to learn more about Snyk prioritization reporting.                                                                                                            | Alignment between Developers and Security on what should be fixed and when to streamline the fix process. |
 | <p><a href="snyk-scm-integration-good-practices.md#stage-4-enable-blocking-prs"><strong>Stage 4</strong></a></p><p>Alert developers to issues in real time and educate them on available fixes.</p>                         | <p>• Enable Snyk PR checks and fail PRs if they contain high-severity issues with available fixes</p><p>• Enable Auto-fix PRs</p>                                                                                              | Improve your organization’s mean-time-to-fix (MTTF).                                                      |
 | <p><a href="snyk-scm-integration-good-practices.md#stage-5-automatic-fix-prs"><strong>Stage 5</strong></a></p><p>Prevent developers from introducing any new vulnerabilities</p>                                            | Enable Failing PR checks for ANY high-severity issues (fix or no fix)                                                                                                                                                          | ‘Secure by Design’ methodology achieved.                                                                  |
-| <p><a href="snyk-scm-integration-good-practices.md#stage-6-dependency-upgrade-prs"><strong>Stage 6</strong></a></p><p>Reduce technical security debt</p>                                                                    | Enable [Automatic dependency upgrades](../../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/)                                                                         | Reduce future design headaches and hot fixes, which can be time-consuming to research and address.        |
+| <p><a href="snyk-scm-integration-good-practices.md#stage-6-dependency-upgrade-prs"><strong>Stage 6</strong></a></p><p>Reduce technical security debt</p>                                                                    | Enable [Automatic dependency upgrades](../../../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/)                                                                        | Reduce future design headaches and hot fixes, which can be time-consuming to research and address.        |
 
 ## Stage 1: Set up your Git integration
 
@@ -92,13 +92,13 @@ Click the **Details** link to display the status of the Snyk check. The status o
 
 ### **Manage PR Check settings**
 
-An administrator can manage Snyk [PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) settings for each SCM integration at the Organization level and then apply these settings, either to all the Projects for that integration or to selected specific Projects. You can configure whether this feature is on (enabled by default) and set fail conditions to define when Snyk should fail your PR checks.
+An administrator can manage Snyk [PR Checks](../../../scan-using-snyk/pull-requests/pull-request-checks/) settings for each SCM integration at the Organization level and then apply these settings, either to all the Projects for that integration or to selected specific Projects. You can configure whether this feature is on (enabled by default) and set fail conditions to define when Snyk should fail your PR checks.
 
-See [Configure PR Checks at the Integration level](../../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md#configure-pr-checks-at-the-integration-level) and [Configure PR Checks at the Project level](../../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md#configure-pr-checks-at-the-project-level) for details of this process.&#x20;
+See [Configure PR Checks at the Integration level](../../../scan-using-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md#configure-pr-checks-at-the-integration-level) and [Configure PR Checks at the Project level](../../../scan-using-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md#configure-pr-checks-at-the-project-level) for details of this process.&#x20;
 
 {% hint style="info" %}
 Use Snyk License policies to ensure that your Snyk PRs are free of licensing issues.\
-See [Licenses](../../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) for more information.
+See [Licenses](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) for more information.
 {% endhint %}
 
 ### **Initial step: get visibility and set fail conditions**
@@ -202,7 +202,7 @@ To set PR Settings on the Project level and override the PR settings configured 
 5. In the options that appear:
    1. Snyk creates PRs up to a maximum of ten open simultaneously per repo.\
       To limit this number further, select the maximum number of PRs from the dropdown list.\
-      For more information, see [Upgrading dependencies with automatic PRs](../../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/).
+      For more information, see [Upgrading dependencies with automatic PRs](../../../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/).
    2. In the **Dependencies to ignore** field, enter the exact name of any dependencies that should _not_ be handled as part of the automatic functionality.\
       This field accepts only lowercase letters.
    3. After you click **Upgrade dependency settings**, each time Snyk scans this Project, Snyk automatically submits upgrade PRs based on the scan results.\

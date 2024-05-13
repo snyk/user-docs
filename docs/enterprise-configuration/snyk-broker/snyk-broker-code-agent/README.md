@@ -3,7 +3,7 @@
 {% hint style="info" %}
 <mark style="color:red;">**The Code Agent is deprecated**</mark>. The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](../install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md).  The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io/hc/en-us).
 
-The automatic [PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) feature is not supported ifor Snyk Broker - Code Agent.
+The automatic [PR Checks](../../../scan-using-snyk/pull-requests/pull-request-checks/) feature is not supported ifor Snyk Broker - Code Agent.
 {% endhint %}
 
 To connect Snyk Code to your self-hosted Git server using Snyk Broker, you can add the Code Agent after installing Snyk Broker for your SCM.&#x20;
@@ -12,7 +12,7 @@ To connect Snyk Code to your self-hosted Git server using Snyk Broker, you can a
 
 The Code Agent is available as a [Docker image](https://hub.docker.com/r/snyk/code-agent/). The Code Agent is supported only for Snyk Broker version 4.108.0 and later versions. If you already have a running Broker Client, you must update it by pulling the latest Docker image.
 
-Deploying the Broker client and Code Agent creates two separate services. that, along with the Broker server, [Snyk Code AI Engine](../../../scan-with-snyk/snyk-code/#ai-engine), and Snyk Web UI, enable the following Code Analysis workflow:
+Deploying the Broker client and Code Agent creates two separate services. that, along with the Broker server, [Snyk Code AI Engine](../../../scan-using-snyk/snyk-code/#ai-engine), and Snyk Web UI, enable the following Code Analysis workflow:
 
 1. On the Snyk Web UI, a user initiates a request to import a repository from a self-hosted Git server to Snyk for Code Analysis. The request can also be initiated from the Snyk API v1, by using the [Import targets request](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets).
 2. The request arrives at the Broker server, which sends the request to the Broker client, which sends the request to the Code Agent. The Broker client automatically provides the Code Agent with the connection details to the integrated SCM, which stores the required repositories.
@@ -26,7 +26,7 @@ Deploying the Broker client and Code Agent creates two separate services. that, 
 
 You have installed a Broker client.
 
-The maximum file size you can import using the Code Agent deployment method is 1MB. For more information, see [File size limit for Snyk Code analysis](../../../getting-started/supported-languages-and-frameworks/technical-specifications.md#file-size-limit-for-snyk-code-analysis).
+The maximum file size you can import using the Code Agent deployment method is 1MB. For more information, see [File size limit for Snyk Code analysis](../../../getting-started/supported-languages-frameworks-and-feature-availability-overview/technical-specifications.md#file-size-limit-for-snyk-code-analysis).
 
 You must have the ability to run a Docker Container, for example, by using a Docker Desktop or Kubernetes.
 

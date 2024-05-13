@@ -14,7 +14,7 @@ In the Group general settings, you can view and modify the following:
   * This restriction reduces the risk of someone guessing the URL of your Organization.
   * The value set is used as the default for any new Organizations but does not override the **Requesting access** setting for existing Snyk Organizations.&#x20;
   * For more details, see [Enable the Request Access setting](../organizations/requests-for-access-to-an-organization.md#enable-the-request-access-setting) in the documentation of requests for access to an Organization.
-* **Project test frequency**: Set the default test frequency for any new Projects created in this Group. Note that Changing the **Project test frequency** setting will not affect the default test frequency of [Snyk Infrastructure as Code](../../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/) or [Snyk Code](../../../scan-with-snyk/snyk-code/) Projects. The default for both of these is weekly.
+* **Project test frequency**: Set the default test frequency for any new Projects created in this Group. Note that Changing the **Project test frequency** setting will not affect the default test frequency of [Snyk Infrastructure as Code](../../../scan-using-snyk/snyk-iac/scan-your-iac-source-code/) or [Snyk Code](../../../scan-using-snyk/snyk-code/) Projects. The default for both of these is weekly.
 
 
 
