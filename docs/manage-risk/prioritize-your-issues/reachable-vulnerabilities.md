@@ -1,22 +1,22 @@
 # Reachable vulnerabilities
 
-A reachable vulnerability has a path from your code to the root cause of a vulnerability. Snyk reachable vulnerability scanning allows you to gauge risk by identifying whether a function related to the vulnerability is being called by your application, raising the chances of that vulnerability being exploitable in the context of your application.
+A reachable vulnerability has a path to your code from the root cause of a vulnerability. Snyk reachable vulnerability scanning allows you to gauge risk by identifying whether a function related to the vulnerability is being called by your application, raising the chances of that vulnerability being exploitable in the context of your application.
 
 Reachable vulnerabilities can be used as a single signal to make decisions or as part of a broader risk-based prioritization approach, like the Risk Score.&#x20;
 
 The following instructions explain how to set up and use reachable vulnerabilities, as well as provide more information on how reachability analysis works at Snyk.&#x20;
 
-## Setting up reachability&#x20;
+## Set up reachable vulnerability analysis
 
-Enabling Reachability is done using the Organization setting:&#x20;
+To set up reachable vulnerabilities analysis:&#x20;
 
 * In the Organization settings, navigate to the Languages section.
-* Navigate to the Reachable vulnerabilities analysis section.
-* Activate the Reachable vulnerabilities analysis and save your changes.
+* Navigate to the Reachable vulnerabilities section.
+* Activate Reachable vulnerabilities analysis and save your changes.
 
 <figure><img src="../../.gitbook/assets/image (2) (9).png" alt="Enabling reachability setting"><figcaption><p>Enabling reachability setting</p></figcaption></figure>
 
-After it is enabled, reachability analysis is done as part of testing Projects.&#x20;
+After it is enabled, reachable vulnerabilities analysis is done as part of scanning Projects.&#x20;
 
 {% hint style="info" %}
 To update existing Projects with the reachability analysis immediately, trigger a [manual test](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/#manual-pull-and-merge-requests-for-project-code).

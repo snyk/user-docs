@@ -9,7 +9,7 @@ The remaining pages address [Scanning Projects](./#scanning-projects), [Monitori
 
 ## Scanning Projects
 
-* [The **.snyk** file](../../manage-risk/prioritize-your-issues/the-.snyk-file.md)
+* [The **.snyk** file](../../manage-risk/policies/the-.snyk-file.md)
 * [A **.snyk** policy file in a different directory from the manifest file](a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
 * [Failing **builds** in Snyk CLI](failing-of-builds-in-snyk-cli.md)
 * [**Ignore** vulnerabilties using Snyk CLI](ignore-vulnerabilities-using-the-snyk-cli.md)

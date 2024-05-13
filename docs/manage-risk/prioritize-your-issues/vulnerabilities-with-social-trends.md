@@ -2,7 +2,7 @@
 
 Snyk Social Trends shows a **Trending** notification for issues that are being actively discussed on Twitter.
 
-Social Trends are calculated into the priority score by default. You can look at the top tweets mentioning this vulnerability by clicking on **View Tweets**.
+Social Trends are calculated as part of the priority score by default. You can look at the top tweets mentioning this vulnerability by clicking on **View Tweets**.
 
 Snyk determines that a vulnerability is trending and displays the Trending banner as follows: trending?
 

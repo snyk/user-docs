@@ -225,7 +225,7 @@ The behavior of imports, re-tests, and PR checks for Projects with dependencies 
 * Python 2.7 or 3.7 - scans will succeed, but the incompatible dependencies are omitted from the results.
 {% endhint %}
 
-To define which Python minor version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../../manage-risk/prioritize-your-issues/the-.snyk-file.md).
+To define which Python minor version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../../manage-risk/policies/the-.snyk-file.md).
 
 To define the Python version for all Projects in an Organization:
 

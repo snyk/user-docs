@@ -1,8 +1,8 @@
 # Priority Score vs Risk Score
 
-The Snyk Risk score and Priority score are crucial for security management. Both types of score help Organizations handle current threats and prepare for future vulnerabilities, leading to a more robust security framework.
+The Snyk Risk score and Priority score are keys to security management. Both types of score help Organizations handle current threats and prepare for future vulnerabilities, leading to a more robust security framework.
 
-The Priority and Risk Scores are ranking the severity of an issue and the urgency for fixing it. Both scores provide a number between 1 and 1000, where 1 means low severity and 1000 means high severity. Snyk uses these numbers to indicate the urgency of remediating a vulnerability.
+The Priority and Risk Scores rank the severity of an issue and the urgency of fixing it. Both scores provide a number between 1 and 1000, where 1 means low severity and 1000 means high severity. Snyk uses these numbers to indicate the urgency of remediating a vulnerability.
 
 {% hint style="info" %}
 **Risk score** assesses the potential impact of vulnerabilities, prioritizing those with severe consequences.&#x20;
@@ -10,7 +10,7 @@ The Priority and Risk Scores are ranking the severity of an issue and the urgenc
 **Priority score** helps teams quickly identify and address critical security vulnerabilities by ranking them based on urgency.&#x20;
 {% endhint %}
 
-Risk Score and Priority Score are critical for vulnerability management. Risk Score predicts the long-term impact of a vulnerability. Priority Score assesses vulnerabilities based on their immediacy and likelihood of exploitation, prioritizing responses to potential threats that could immediately compromise security. In contrast, Risk Score guides strategic resource allocation to prevent long-term damage.
+Risk Score and Priority Score are fundamental to vulnerability management. Risk Score predicts the long-term impact of a vulnerability. Priority Score assesses vulnerabilities based on their immediacy and likelihood of exploitation, prioritizing responses to potential threats that could immediately compromise security. In contrast, Risk Score guides strategic resource allocation to prevent long-term damage.
 
 If you want to compare scores, ensure you are looking at the same type of score and for the same product. For example, you can compare a Risk score from Snyk Open Source with another Risk score from Snyk Open Source but cannot compare a Risk score from Snyk Open Source with another Risk score from Snyk Container.
 
