@@ -16,7 +16,7 @@ Relative importance asserts a common severity for a vulnerability and shows the 
 
 For each issue, information appears on the Project page, under **Security information**.
 
-<figure><img src="../../../.gitbook/assets/security_info.png" alt=""><figcaption><p>Security information for a vulnerability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Debian-Unimportant.png" alt=""><figcaption><p>Example of a vulnerability with additional security rating information</p></figcaption></figure>
 
 Snyk supports relative Importance in Ubuntu, Debian, Red Hat Enterprise Linux (RHEL), CentOS, Amazon Linux, Oracle Linux, and SUSE Linux Enterprise Server (SLES).
 
@@ -30,3 +30,9 @@ To provide information for the distribution, Snyk uses the following external so
 * [Red Hat Enterprise Linux Severity Rating](https://access.redhat.com/security/updates/classification)
 * [SUSE Linux Enterprise Security Rating Overview](https://www.suse.com/support/security/rating/)
 * [Amazon Linux](https://alas.aws.amazon.com/alas2.html)
+
+### View NVD Score and Severity for Linux vulnerabilities
+
+To create a report showing only NVD Score and Severity (without the Linux-maintainer rating), add the NVD Score and NVD Severity columns in the Issues Detail report.
+
+<figure><img src="../../../.gitbook/assets/container-NVD-report.png" alt=""><figcaption><p>Example of a report with NVD Score and Severity</p></figcaption></figure>
