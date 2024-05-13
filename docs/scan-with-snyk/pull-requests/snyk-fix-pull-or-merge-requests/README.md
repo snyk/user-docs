@@ -15,7 +15,7 @@ For Projects imported through an SCM integration, Snyk offers the following type
 
 * [Fix pull requests for new vulnerabilities](create-automatic-prs-for-new-fixes.md)
 * [Fix pull requests to clear the backlog of vulnerabilities in priority order](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md)
-* [Dependency upgrade pull requests](upgrade-dependencies-with-automatic-prs.md)
+* [Dependency upgrade pull requests](upgrade-dependencies-with-automatic-prs/)
 
 ## Manual Snyk fix merge requests
 
