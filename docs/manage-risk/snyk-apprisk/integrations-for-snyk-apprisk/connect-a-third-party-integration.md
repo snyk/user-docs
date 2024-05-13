@@ -34,7 +34,7 @@ Data synchronization may take up to two hours after receiving the **Connected** 
 
 ## Veracode setup guide
 
-### Prerequisites
+### Prerequisites <a href="#verocode-prerequisites" id="verocode-prerequisites"></a>
 
 The Veracode application concept is matched into the Snyk AppRisk repository assets. You need to create and utilize the Veracode custom field by using the [Veracode API](https://app.swaggerhub.com/apis/Veracode/veracode-applications\_api\_specification/1.0#/Application%20information%20API/updateApplicationUsingPUT). More details about the Veracode custom field are available [here](https://docs.veracode.com/r/t\_create\_custom\_metadata).&#x20;
 
@@ -48,13 +48,11 @@ Ensure you are adding a custom field called repoURL:
 
 ```
 
-### Required parameters
+### Required parameters <a href="#veracode-required-parameters" id="veracode-required-parameters"></a>
 
 * API ID and API Key - API credentials associated with a user account. For more information, access this link: [https://help.veracode.com/r/c\_api\_credentials3](https://help.veracode.com/r/c\_api\_credentials3).
 
-### Integration Hub setup
-
-### Integration Hub setup
+### Integration Hub setup <a href="#veracode-integration-hub-setup" id="veracode-integration-hub-setup"></a>
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **SAST** tag and search for Veracode.&#x20;
@@ -75,16 +73,16 @@ Use the following instructions to set up your Checkmarx SAST integration. Checkm
 Snyk AppRisk Pro does not currently support the Checkmarx One integration.
 {% endhint %}
 
-### Prerequisites
+### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>
 
 * Install and configure your [Snyk Broker](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
 
-### Required parameters
+### Required parameters <a href="#checkmarx-required-parameters" id="checkmarx-required-parameters"></a>
 
 1. API URL - The URL of Checkmarx API, for example, `checkmarx.customer.com`.
 2. Username and Password - Credentials for a user account with Checkmarx SAST access.
 
-### Integration Hub setup
+### Integration Hub setup <a href="#checkmarx-integration-hub-setup" id="checkmarx-integration-hub-setup"></a>
 
 After you have installed and configured Snyk Broker for AppRisk and you successfully established a connection for Checkmarx SAST, you also need to configure the integration from the Snyk AppRisk Integration Hub. &#x20;
 
@@ -101,11 +99,11 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 
 ## SonarQube setup guide
 
-### Required parameters
+### Required parameters <a href="#sonarqube-required-parameters" id="sonarqube-required-parameters"></a>
 
 * API Key. [Here](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/) you can find more details about the SonarQube API Key.
 
-### Integration Hub setup
+### Integration Hub setup <a href="#sonarqube-integration-hub-setup" id="sonarqube-integration-hub-setup"></a>
 
 * Open the **Integration Hub** menu.&#x20;
 * Select the **SAST** tag and search for SonarQube.&#x20;
@@ -120,11 +118,11 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 
 ## Nightfall setup guide
 
-### Required parameters
+### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
 
 * API Key. [Here](https://docs.nightfall.ai/docs/creating-an-api-key) you can find more details about how to create a Nightfall API key.&#x20;
 
-### Integration Hub setup
+### Integration Hub setup <a href="#nightfall-integration-hub-setup" id="nightfall-integration-hub-setup"></a>
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **Secrets** tag and search for Nightfall.&#x20;
@@ -151,7 +149,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## GitGuardian setup guide
 
-### Required parameters
+### Required parameters <a href="#gitguardian-required-parameters" id="gitguardian-required-parameters"></a>
 
 * API Key. [Here](https://docs.gitguardian.com/api-docs/authentication) you can find more details about how to create a GitGuardian API Key.&#x20;
 
@@ -162,7 +160,7 @@ Ensure that the following permissions are set as READ:
 * Incident (`mandatory`)
 * Teams (`recommended` for GitGuardian paid accounts)
 
-### Integration Hub setup
+### Integration Hub setup <a href="#gitguardian-integration-hub-setup" id="gitguardian-integration-hub-setup"></a>
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **Secrets** tag and search for GitGuardian.&#x20;
@@ -188,7 +186,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## Jira setup guide
 
-### Required parameters
+### Required parameters <a href="#jira-required-parameters" id="jira-required-parameters"></a>
 
 * API Key - Access [https://id.atlassian.com/manage-profile/security/api-tokens](https://id.atlassian.com/manage-profile/security/api-tokens) to generate a Jira API Token.&#x20;
 
@@ -196,7 +194,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 Ensure you have the correct user permissions before creating the API Token.
 {% endhint %}
 
-### Integration Hub setup
+### Integration Hub setup <a href="#jira-integration-hub-setup" id="jira-integration-hub-setup"></a>
 
 * Open the **Integration Hub** menu.&#x20;
 * Select the **ITSM** tag and search for Jira.&#x20;
@@ -238,7 +236,7 @@ The following table presents the functionality of all types of Jira integrations
 
 ## Dynatrace setup guide
 
-### Prerequisites
+### Prerequisites <a href="#dynatrace-prerequisites" id="dynatrace-prerequisites"></a>
 
 * Use Dynatrace SaaS on the DPS licensing model.
 * The Dynatrace [Kubernetes app](https://docs.dynatrace.com/docs/platform-modules/infrastructure-monitoring/container-platform-monitoring/kubernetes-app/overview) is configured to monitor at least one cluster.
@@ -277,14 +275,14 @@ storage:system:read
 
 5. Save the Client ID and Client secret for later and click `Finish`.
 
-### Required parameters
+### Required parameters <a href="#dynatrace-required-parameters" id="dynatrace-required-parameters"></a>
 
 1. **Account UUID** - the `account-uuid` of your Dynatrace account.
 2. **Environment ID** - the ID of the environment monitored in Dynatrace.
 3. **OAuth client ID** - the ID of the OAuth client created in the prerequisites.
 4. **OAuth client secret** - the secret of the OAuth client created in the prerequisites.
 
-### Integration Hub setup
+### Integration Hub setup <a href="#dynatrace-integration-hub-setup" id="dynatrace-integration-hub-setup"></a>
 
 * Open the **Integration Hub** menu.
 * Select the **Runtime** tag and search for **Dynatrace**.
@@ -301,12 +299,12 @@ storage:system:read
 
 ## Sysdig setup guide
 
-### Prerequisites
+### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
 
 * The account must have access to Sysdig Secure product.
 * Contact your Sysdig representative to activate the in-use packages feature flag
 
-### Required parameters
+### Required parameters <a href="#sysdig-required-parameters" id="sysdig-required-parameters"></a>
 
 * **Account API Token** - [Here](https://docs.sysdig.com/en/docs/administration/administration-settings/user-profile-and-password/retrieve-the-sysdig-api-token/) you can find details on how to retrieve your Sysdig API Token.
 
@@ -316,7 +314,7 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 
 * **Region -** [**Here**](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges) you can find details about the Sysdig region URLs.
 
-### Integration Hub setup
+### Integration Hub setup <a href="#sysdig-integration-hub-setup" id="sysdig-integration-hub-setup"></a>
 
 * Open the **Integration Hub** menu.&#x20;
 * Select the **Runtime** tag and search for Sysdig.&#x20;

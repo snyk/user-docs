@@ -19,13 +19,13 @@ If your SCM instance is not publicly accessible, you must connect using Snyk Bro
 
 ## GitHub setup guide
 
-### Pulled entities
+### Pulled entities <a href="#github-pulled-entities" id="github-pulled-entities"></a>
 
 * Repositories
 * Builds - only when using GitHub Actions.
 * Scans - only when using Code security.
 
-### Integrate using Snyk AppRisk
+### Integrate using Snyk AppRisk <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. Organizations (`mandatory`): Input the names of all the relevant GitHub organizations.
@@ -61,7 +61,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 Fine-grained personal access token is not supported.
 {% endhint %}
 
-### API Version
+### API Version <a href="#github-api-version" id="github-api-version"></a>
 
 You can use the[ GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28) repository to access information about the API.
 
@@ -71,12 +71,12 @@ The user associated with the token needs to have write permissions on relevant r
 
 ## GitLab setup guide
 
-### Pulled entities
+### Pulled entities <a href="#gitlab-pulled-entities" id="gitlab-pulled-entities"></a>
 
 * Users
 * Repositories&#x20;
 
-### Integrate using Snyk AppRisk
+### Integrate using Snyk AppRisk <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. API Token (`mandatory`): Create your GitLab PAT from your GitLab organization. Follow the instructions in [Generate a Personal access token from your GitLab settings section](connect-an-scm-integration.md#generate-a-personal-access-token-from-your-gitlab-settings). Authorize your personal access token if you have configured SAML SSO.
@@ -103,17 +103,17 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 7. Click the Create personal access token button.
 8. Copy and store the displayed key.
 
-### API version
+### API version <a href="#gitlab-api-version" id="gitlab-api-version"></a>
 
 You can use the[ GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) repository to access information about the API.
 
 ## Azure DevOps setup guide
 
-### Pulled entities
+### Pulled entities <a href="#azure-devops-pulled-entities" id="azure-devops-pulled-entities"></a>
 
 * Repository - the pulled entity retrieved by Snyk AppRisk.
 
-### Integrate using Snyk AppRisk
+### Integrate using Snyk AppRisk <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
@@ -142,7 +142,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 4. Set the expiration to 12 months.
 5. Copy the generated personal access token and share it through a secured vault.
 
-### API version
+### API version <a href="#azure-devops-api-version" id="azure-devops-api-version"></a>
 
 You can use the[ Azure DevOps REST API v6](https://learn.microsoft.com/en-us/rest/api/azure/devops/core/?view=azure-devops-rest-6.0) repository to access information about the API.
 
@@ -155,12 +155,12 @@ If you use BitBucket Cloud you can manually add the language tags to a repositor
 Note that for BitBucket Server you are unable to manually add language tags to a repository.
 {% endhint %}
 
-### Pulled entities
+### Pulled entities <a href="#bitbucket-pulled-entities" id="bitbucket-pulled-entities"></a>
 
 * Users
 * Repositories
 
-### Integrate using Snyk AppRisk
+### Integrate using Snyk AppRisk <a href="#bitbucket-integrate-using-snyk-apprisk" id="bitbucket-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. Access Token (`mandatory`): Create your BitBucket PAT from your BitBucket organization.
@@ -190,7 +190,7 @@ Create a BitBucket app password by following these steps:
 6. Service type (`mandatory`): Select the service type, Cloud, or On-premises.
 7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
 
-### API version
+### API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
 
 You can use the [BitBucket REST API V2](https://developer.atlassian.com/bitbucket/api/2/reference/resource/) repository to access information about the API.\
 \
