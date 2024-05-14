@@ -1,6 +1,6 @@
 # Reachable vulnerabilities
 
-A reachable vulnerability has a path to your code from the root cause of a vulnerability. Snyk reachable vulnerability scanning allows you to gauge risk by identifying whether a function related to the vulnerability is being called by your application, raising the chances of that vulnerability being exploitable in the context of your application.
+Snyk reachable vulnerability scanning allows you to gauge risk by identifying whether a function related to the vulnerability is being called by your application, raising the chances of that vulnerability being exploitable in the context of your application.
 
 Reachable vulnerabilities can be used as a single signal to make decisions or as part of a broader risk-based prioritization approach, like the Risk Score.&#x20;
 
@@ -11,8 +11,8 @@ The following instructions explain how to set up and use reachable vulnerabiliti
 To set up reachable vulnerabilities analysis:&#x20;
 
 * In the Organization settings, navigate to the Languages section.
-* Navigate to the Reachable vulnerabilities section.
-* Activate Reachable vulnerabilities analysis and save your changes.
+* Navigate to the **Reachable vulnerabilities** section.
+* Activate **Reachable vulnerabilities analysis** and save your changes.
 
 <figure><img src="../../.gitbook/assets/image (2) (9).png" alt="Enabling reachability setting"><figcaption><p>Enabling reachability setting</p></figcaption></figure>
 
@@ -53,9 +53,9 @@ If you use a brokered connection to your SCM, configure the Broker to provide ac
 
 ## Using Reachability
 
-### The Reachability status&#x20;
+### Reachability status&#x20;
 
-After a vulnerability is identified, it receives one of two reachability statuses:
+After a vulnerability is identified, it has a reachability status
 
 * Reachable - A direct or indirect path was found from your application to the vulnerable code.
 * No path found - No path found from your application to the vulnerable code.
@@ -66,9 +66,9 @@ If a `no path found` status is given, do not assume that the vulnerability is to
 
 Reachability status is available [on the Project page](reachable-vulnerabilities.md#on-the-project-page), [as part of the Risk Score](reachable-vulnerabilities.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report),  and through the [Get issues by group ID](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues) API.
 
-### On the Project page
+### Reachability as shown on the Project page
 
-After importing or testing a Project using the Snyk UI, the Project is monitored by Snyk, and the results of the reachable vulnerabilities analysis appear on the Project page in the following places:
+After you import  or test a Project using the Snyk UI, the Project is monitored by Snyk, and the results of the reachable vulnerabilities analysis appear on the Project page in the following places:
 
 1. Filters - Allows you to focus on reachable vulnerabilities first by filtering results based on reachability.
 2. Reachability badge - Allows you to quickly understand the reachability level of vulnerabilities.
@@ -76,11 +76,11 @@ After importing or testing a Project using the Snyk UI, the Project is monitored
 
 <figure><img src="../../.gitbook/assets/image (124) (1) (1) (1) (2) (1) (1) (1) (2) (2).png" alt="Reachability call path"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
 
-### As part of the Risk Score
+### Reachability as part of the Risk Score
 
-[Risk Score](risk-score.md) helps you apply holistic Risk-Based prioritization that combines multiple factors, either objective to the vulnerability or the context of your application. Reachability is such a contextual factor that will significantly increase the overall score.&#x20;
+[Risk Score](risk-score.md) helps you apply holistic Risk-Based prioritization that combines multiple factors,  associated with either the vulnerability or the context of your application. Reachability is such a contextual factor that will significantly increase the overall score.&#x20;
 
-Risk Score is available on the Projects page, API, and Reports.&#x20;
+Risk Score is available on the Projects page and through the API and Reports.&#x20;
 
 <div data-full-width="false">
 
@@ -92,20 +92,20 @@ Risk Score is available on the Projects page, API, and Reports.&#x20;
 [Priority score](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;
 {% endhint %}
 
-## Reachability analysis&#x20;
+## Reachable vulnerability analysis&#x20;
 
 Snyk uses a combination of security expert analysis, program analysis, and various AI techniques to determine the reachability of a vulnerability, including these steps of analysis:&#x20;
 
-1. **Enriching vulnerabilities with the patches applied to fix them** - as part of our vulnerability curation process, we reference the fix commit that the maintainer applied.&#x20;
+1. **Enriching vulnerabilities with the patches applied to fix them** - as part of the Snyk vulnerability curation process, Snyk references the fix commit that the maintainer applied.&#x20;
 2. **Related elements analysis**- Based on the commit fix, Snyk uses DeepCode AI program analysis to analyze the functions and other elements related to the vulnerability.&#x20;
 3. **Root Cause analysis** - Snyk uses DeepCode AI and NLP techniques to automatically rank the related code elements by their chances of being the root cause of the vulnerability.  &#x20;
-4. **Reachability analysis** -  As issues are found in your application by the Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.&#x20;
+4. **Reachability analysis** -  As issues are found in your application by a Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.&#x20;
 5. **Security experts supervision** - Snyk security experts will manually verify and mark elements as root causes in order to make the entire analysis more accurate over time
 
-#### False Positive and False Negative considerations
+The following considerations related to **false positives and false negatives** apply to Reachble vulnerability analysis.&#x20;
 
-Program analysis requires a trade-off between accurate results (minimizing false positives) and great recall rates (not missing on potentially exploitable vulnerabilities).&#x20;
+Program analysis requires a trade-off between accurate results (minimizing false positives) and recall rates (not missing potentially exploitable vulnerabilities).&#x20;
 
-To combat this, Snyk DeepCode applies real-time decision-making on whether to under-approximate the set of reachable elements based on analysis of the likelihood of a reachable path to be found in a specific environment. &#x20;
+To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood  a reachable path will be found in a specific environment. &#x20;
 
-For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. Snyk Deep Code analysis optimizes to retrieve the most accurate and complete result possible for a given code structure. \
+For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. Snyk Deep Code analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure. \
