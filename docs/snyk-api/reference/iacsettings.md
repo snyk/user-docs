@@ -11,10 +11,10 @@ This document uses the REST API. For more details, see the [Authentication for A
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/iac" method="GET" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/iac" method="PATCH" %}
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/iac" method="PATCH" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/iac" method="GET" %}
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
