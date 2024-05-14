@@ -15,10 +15,10 @@ This document uses the REST API. For more details, see the [Authentication for A
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/custom_base_images/{custombaseimage_id}" method="DELETE" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/custom_base_images/{custombaseimage_id}" method="GET" %}
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/custom_base_images/{custombaseimage_id}" method="GET" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/custom_base_images/{custombaseimage_id}" method="DELETE" %}
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}

@@ -7,7 +7,7 @@ This document uses the deprecated v1 API. For more details, see the [v1 API](../
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/user/me/notification-settings/org/{orgId}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/user/me" method="GET" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
@@ -15,14 +15,14 @@ This document uses the deprecated v1 API. For more details, see the [v1 API](../
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/user/me" method="GET" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/user/me/notification-settings/org/{orgId}/project/{projectId}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/user/me/notification-settings/org/{orgId}" method="GET" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
 {% swagger src="../../.gitbook/assets/spec.yaml" path="/user/me/notification-settings/org/{orgId}/project/{projectId}" method="PUT" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/user/me/notification-settings/org/{orgId}/project/{projectId}" method="GET" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}

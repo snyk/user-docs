@@ -11,7 +11,39 @@ This document uses the deprecated v1 API. For more details, see the [v1 API](../
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/invite" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}" method="DELETE" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/settings" method="PUT" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/settings" method="GET" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/provision" method="POST" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/provision" method="GET" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/provision" method="DELETE" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/notification-settings" method="PUT" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/notification-settings" method="GET" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/members" method="GET" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
@@ -23,42 +55,10 @@ This document uses the deprecated v1 API. For more details, see the [v1 API](../
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/notification-settings" method="GET" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/notification-settings" method="PUT" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}" method="DELETE" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/members" method="GET" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/provision" method="DELETE" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/provision" method="GET" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/provision" method="POST" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
 {% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/members/update/{userId}" method="PUT" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/settings" method="GET" %}
-[spec.yaml](../../.gitbook/assets/spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/settings" method="PUT" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/invite" method="POST" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}

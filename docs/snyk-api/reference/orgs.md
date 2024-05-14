@@ -7,11 +7,11 @@ This document uses the REST API. For more details, see the [Authentication for A
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}" method="GET" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}" method="PATCH" %}
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}" method="PATCH" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}" method="GET" %}
 [spec.yaml](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
 
