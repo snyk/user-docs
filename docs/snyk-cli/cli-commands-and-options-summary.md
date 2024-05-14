@@ -22,61 +22,17 @@ To learn more about each Snyk CLI command, use the `--help` option, for example,
 
 Authenticate Snyk CLI with a Snyk account.
 
+### [`snyk config`](https://docs.snyk.io/snyk-cli/commands/config)
+
+Manage Snyk CLI configuration.
+
 ### [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test)
 
-Test a project for open-source vulnerabilities and license issues.
+Test a Project for open-source vulnerabilities and license issues.
 
 ### [`snyk monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 Snapshot and continuously monitor a project for open-source vulnerabilities and license issues.
-
-### [`snyk container`](https://docs.snyk.io/snyk-cli/commands/container)
-
-Print a list of the `snyk container` commands, `snyk container monitor` and `snyk container test`.
-
-### [`snyk container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
-
-Capture the container image layers and dependencies and monitor for vulnerabilities on [snyk.io](https://snyk.io)
-
-### [snyk container test](https://docs.snyk.io/snyk-cli/commands/container-test)
-
-Test container images for any known vulnerabilities.
-
-### [`snyk container sbom`](https://docs.snyk.io/snyk-cli/commands/container-sbom)
-
-Generate an SBOM for a container image.
-
-### [snyk iac](https://docs.snyk.io/snyk-cli/commands/iac)
-
-Print a list of the `snyk iac` commands: `snyk iac describe`, `snyk iac update-exclude-policy`, and `snyk iac test`.
-
-### [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture)
-
-Generate a mapping artifact that contains the minimum amount of information needed to generate, from Terraform state files, resource mappings from code to Cloud, such as resource IDs and names, and send the mapping artifact to Snyk.
-
-### [`snyk iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
-
-Detect, track, and alert on infrastructure drift and unmanaged resources.
-
-### [`snyk iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
-
-Generate exclude policy rules to be used by `snyk iac describe`.
-
-### [`snyk iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
-
-Test for any known security issue.
-
-### [snyk iac rules init](https://docs.snyk.io/snyk-cli/commands/iac-rules-init)
-
-Initialize custom rules project structure, relation, rule, or spec
-
-### [snyk iac rules test](https://docs.snyk.io/snyk-cli/commands/iac-rules-test)
-
-Run tests for all custom rules
-
-### [snyk iac rules push](https://docs.snyk.io/snyk-cli/commands/iac-rules-push)
-
-Bundle and upload custom rule bundles to Snyk Cloud API
 
 ### [`snyk code`](https://docs.snyk.io/snyk-cli/commands/code)
 
@@ -86,21 +42,65 @@ Bundle and upload custom rule bundles to Snyk Cloud API
 
 Test for any known security issues using Static Code Analysis.
 
-### [`snyk log4shell`](https://docs.snyk.io/snyk-cli/commands/log4shell)
+### [`snyk container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-Find Log4Shell vulnerability.
+Print a list of the `snyk container` commands, `snyk container monitor` and `snyk container test`.
 
-### [`snyk config`](https://docs.snyk.io/snyk-cli/commands/config)
+### [`snyk container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
 
-Manage Snyk CLI configuration.
+Capture the container image layers and dependencies and monitor for vulnerabilities on [snyk.io](https://snyk.io).
 
-### [`snyk policy`](https://docs.snyk.io/snyk-cli/commands/policy)
+### [snyk container SBOM](https://docs.snyk.io/snyk-cli/commands/container-sbom)
 
-generates a mapping artifact that contains the minimum amount of information needed to generate, from Terraform state files, resource mappings from code to Cloud, such as resource IDs and names, and sends the mapping artifact to Snyk.Display the `.snyk` policy for a package.
+Generate an SBOM for a container image
+
+### [snyk container test](https://docs.snyk.io/snyk-cli/commands/container-test)
+
+Test container images for any known vulnerabilities.
+
+### [snyk iac](https://docs.snyk.io/snyk-cli/commands/iac)
+
+Print a list of the `snyk iac` commands: `snyk iac describe`, `snyk iac update-exclude-policy`, and `snyk iac test`.
+
+### [`snyk iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+
+Test for any known security issue.
+
+### [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture)
+
+Generate a mapping artifact that contains the minimum amount of information needed to generate resource mappings from code to Cloud from Terraform state files, such as resource IDs and names, and send the mapping artifact to Snyk.
+
+### [`snyk iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+Detect, track, and alert on infrastructure drift and unmanaged resources.
+
+### [snyk iac rules init](https://docs.snyk.io/snyk-cli/commands/iac-rules-init)
+
+Initialize custom rules project structure, relation, rule, or spec
+
+### [snyk iac rules test](https://docs.snyk.io/snyk-cli/commands/iac-rules-test)
+
+Run tests for all custom rules.
+
+### [snyk iac rules push](https://docs.snyk.io/snyk-cli/commands/iac-rules-push)
+
+Bundle and upload custom rule bundles to Snyk Cloud API.
+
+### [`snyk iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
+
+Generate exclude policy rules to be used by `snyk iac describe`.
 
 ### [`snyk ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
 Modify the `.snyk` policy to ignore stated issues.
+
+### [`snyk log4shell`](https://docs.snyk.io/snyk-cli/commands/log4shell)
+
+Find Log4Shell vulnerability.
+
+### [`snyk policy`](https://docs.snyk.io/snyk-cli/commands/policy)
+
+generates a mapping artifact that contains the minimum amount of information needed to generate, from Terraform state files, resource mappings from code to Cloud, such as resource IDs and names, and sends the mapping artifact to Snyk.Display the `.snyk` policy for a package.
 
 ### [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
@@ -108,7 +108,7 @@ Generate an SBOM for a local software project in an ecosystem supported by Snyk.
 
 ### [`snyk sbom test`](https://docs.snyk.io/snyk-cli/commands/sbom-test)
 
-Checks an SBOM for vulnerabilities in open source packages.
+Checks an SBOM for vulnerabilities in open-source packages.
 
 ## New CLI commands
 
