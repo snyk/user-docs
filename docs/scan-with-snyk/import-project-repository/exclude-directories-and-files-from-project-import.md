@@ -65,7 +65,7 @@ Follow these steps to exclude directories and files from the import process usin
 
 1\. In the repository you want to import, create a YAML file called `.snyk`, for example:
 
-<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png" alt=".snyk file in a repository"><figcaption><p><code>.snyk</code> file in a repository</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png" alt=".snyk file in a repository"><figcaption><p><code>.snyk</code> file in a repository.</p></figcaption></figure>
 
 2\. In the `.snyk` file, specify the directories or files or both that you want to exclude from import according to the following syntax:
 
