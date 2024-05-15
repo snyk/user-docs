@@ -59,12 +59,15 @@ You can find scanned artifacts in the Inventory Type view, but they are not supp
 The asset information is divided into the following tabs:
 
 * **Summary** - a concentrated view of the asset properties. The Summary screen presents you with the following information:
-  * Class - specifies the business criticality of the asset.
-  * Source - specifies the origin of the asset.
-  * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
-  * Issues - categorizes the identified types of open issues.&#x20;
+  * Asset Info
+    * Class - specifies the business criticality of the asset.
+    * Source - specifies the origin of the asset.
+    * Risk factors - provides the list of active risk factors.
+    * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
+  * Issues Info - categorizes the identified types of open issues.&#x20;
+  * App Context - asset metadata from App Context integrations, such as Backstage catalog or ServiceNow CMDB, can include the following attributes: catalog name, category, application, owner, and so on.
 
-<figure><img src="../../../.gitbook/assets/Asset summary - Issues included.png" alt="AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (442).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
 
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
