@@ -223,6 +223,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
 
+## `snyk code test command`
+
+`--include-ignores`: [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test)
+
 ## `snyk code test` and `snyk iac test` command option
 
 `--report`: [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test),  [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
@@ -372,6 +376,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--project-name-prefix=<PREFIX_STRING>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 `--project-name-prefix=my-group/`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+
+`--dotnet-runtime-resolution`: [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test)
+
+`--dotnet-target-framework`: [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test)
 
 ## Options for npm projects
 
