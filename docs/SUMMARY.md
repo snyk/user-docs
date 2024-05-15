@@ -533,7 +533,7 @@
   * [Snyk Container](scan-with-snyk/snyk-container/README.md)
     * [How Snyk Container works](scan-with-snyk/snyk-container/how-snyk-container-works/README.md)
       * [Snyk Container - Supported operating system distributions](scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
-      * [Application vulnerability in Snyk Container and Snyk Open Source](scan-with-snyk/snyk-container/how-snyk-container-works/application-vulnerability-in-snyk-container-and-snyk-open-source.md)
+      * [Application vulnerabilities in Snyk Container and Snyk Open Source](scan-using-snyk/snyk-container/how-snyk-container-works/application-vulnerabilities-in-snyk-container-and-snyk-open-source.md)
       * [Severity levels of detected Linux vulnerabilities](scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md)
     * [Scan container images](scan-using-snyk/snyk-container/scan-container-images.md)
     * [Use Snyk Container from the Web UI](scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/README.md)
