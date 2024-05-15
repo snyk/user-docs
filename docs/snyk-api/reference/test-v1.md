@@ -1,72 +1,72 @@
 # Test (v1)
 
 {% hint style="info" %}
-This document uses the deprecated v1 API. For more details, see the [v1 API](../v1-api-deprecated/).
+This document uses the v1 API. For more details, see the [v1 API](../v1-api).
 {% endhint %}
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/yarn" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/yarn" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/sbt" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/sbt" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/sbt/{groupId}/{artifactId}/{version}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/sbt/{groupId}/{artifactId}/{version}" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/rubygems" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/rubygems" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/rubygems/{gemName}/{version}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/rubygems/{gemName}/{version}" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/pip" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/pip" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/pip/{packageName}/{version}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/pip/{packageName}/{version}" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/npm" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/npm" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/npm/{packageName}/{version}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/npm/{packageName}/{version}" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/maven" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/maven" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/maven/{groupId}/{artifactId}/{version}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/maven/{groupId}/{artifactId}/{version}" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/gradle" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/gradle" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/gradle/{group}/{name}/{version}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/gradle/{group}/{name}/{version}" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/govendor" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/govendor" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/golangdep" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/golangdep" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/dep-graph" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/dep-graph" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/composer" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/test/composer" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
