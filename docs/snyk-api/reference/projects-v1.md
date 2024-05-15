@@ -1,104 +1,104 @@
 # Projects (v1)
 
 {% hint style="info" %}
-This document uses the deprecated v1 API. For more details, see the [v1 API](../v1-api-deprecated/).
+This document uses the v1 API. For more details, see the [v1 API](../v1-api).
 {% endhint %}
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}" method="PUT" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}" method="put" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}" method="DELETE" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}" method="delete" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/tags" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/tags" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/tags/remove" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/tags/remove" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/settings" method="PUT" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/settings" method="put" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/settings" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/settings" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/settings" method="DELETE" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/settings" method="delete" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/move" method="PUT" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/move" method="put" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/jira-issues" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/jira-issues" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/issue/{issueId}/paths" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/issue/{issueId}/paths" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/issue/{issueId}/jira-issue" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/issue/{issueId}/jira-issue" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignores" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignores" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="PUT" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="put" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="DELETE" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="delete" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/history" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/history" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/history/{snapshotId}/issue/{issueId}/paths" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/history/{snapshotId}/issue/{issueId}/paths" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/history/{snapshotId}/aggregated-issues" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/history/{snapshotId}/aggregated-issues" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/dep-graph" method="GET" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/dep-graph" method="get" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/deactivate" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/deactivate" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/attributes" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/attributes" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/aggregated-issues" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/aggregated-issues" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/activate" method="POST" %}
+{% swagger src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/activate" method="post" %}
 [spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endswagger %}
