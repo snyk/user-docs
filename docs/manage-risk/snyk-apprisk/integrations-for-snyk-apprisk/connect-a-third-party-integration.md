@@ -313,19 +313,19 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 
 ## ServiceNow CMDB setup guide
 
-### Required Parameters
+### Required Parameters <a href="#servicenow-cmdb-required-parameters" id="servicenow-cmdb-required-parameters"></a>
 
 1. Setup the host instance for the ServiceNow CMDB by following this example `https://<INSTANCE_NAME>.service-now.com`.
 2. Username and Password - Credentials for your ServiceNow CMDB instance.
 3. The CMDB configuration item class. The list can be found here: [https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html](https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html)
-4. Repo URL
+4. Repo URL - Add the URL of the repository.
 
 {% hint style="info" %}
 * This feature is only for the integration with ServiceNow CMDB
 * The data gathered by Snyk from ServiceNow CMDB will be correlated with the Repository Assets.
 {% endhint %}
 
-### Integration Hub setup
+### Integration Hub setup <a href="#servicenow-cmdb-integration-hub-setup" id="servicenow-cmdb-integration-hub-setup"></a>
 
 * Open the **Integration Hub** menu.&#x20;
 * Select the **App Context** tag and search for ServiceNow CMDB.&#x20;
@@ -335,7 +335,7 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 * Add the **Table name** - select the configuration item class that Snyk AppRisk should onboard. Use this format `cmdb_ci_<class>`
 * Add the **Repo URL** - the specific URL that is being referred to in the ServiceNow CMDB record.
 * You can select one or more attributes related to repository assets and configure where Snyk AppRisk can take this attribute in ServiceNow CMDB. Example:&#x20;
-  1. Category: application\_type
-  2. Owner: business\_unit
+  * Category: application\_type
+  * Owner: business\_unit
 * Click the **Done** button.
 * When the connection is established, the status of the Sysdig integration is changed to **Connected**.
