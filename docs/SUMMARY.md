@@ -687,7 +687,7 @@
         * [Assets](manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/assets.md)
         * [Risk factors](manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/risk-factors/README.md)
           * [Deployed](manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/risk-factors/deployed.md)
-          * [Loaded packages](manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/risk-factors/loaded-packages.md)
+          * [Loaded package](manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/risk-factors/loaded-package.md)
           * [OS condition](manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/risk-factors/os-condition.md)
           * [Public facing](manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/risk-factors/public-facing.md)
       * [Prioritization setup](manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/prioritization-setup/README.md)

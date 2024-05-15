@@ -3,6 +3,7 @@
 By understanding your images, packages, and Kubernetes resources as "application context", Snyk can compute the following risk factors:
 
 * [Deployed](deployed.md)
+* [Loaded package](loaded-package.md)
 * [OS condition](os-condition.md)
 * [Public facing](public-facing.md)
 
