@@ -922,7 +922,6 @@
     * [Configure Snyk CLI to connect to Snyk API](snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md)
     * [Proxy configuration for Snyk CLI](snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md)
 * [Snyk API](snyk-api/README.md)
-  * [Index to API endpoints (WIP)](snyk-api/index-to-api-endpoints-wip.md)
   * [REST API overview](snyk-api/snyk-rest-api-overview.md)
   * [V1 API overview](snyk-api/v1-api-overview/README.md)
     * [Entities](snyk-api/v1-api-overview/entities.md)
