@@ -129,7 +129,7 @@ Under the list of `private` rules, add the following two elements to the existin
 
 ### BitBucket Server
 
-Under the list of `private` rules, add the following input. For more information, see [Bitbucket Server/Data Center - environment variables for Snyk Broker](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker.md) in the instructions for installing Broker for BitBucket Server.
+Under the list of `private` rules, add the following input. For more information, see [Bitbucket Server/Data Center - environment variables for Snyk Broker](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker-basic-auth.md) in the instructions for installing Broker for BitBucket Server.
 
 ```json
 {
