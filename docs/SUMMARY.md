@@ -1043,7 +1043,7 @@
       * [Contributing to snyk-api-import](snyk-api/snyk-tools/tool-snyk-api-import/contributing.md)
     * [Tool: jira-tickets-for-new-vulns](snyk-api/snyk-tools/tool-jira-tickets-for-new-vulns.md)
     * [Python code to extract issues from Snyk API](snyk-api/snyk-tools/python-code-to-extract-issues-from-snyk-api.md)
-  * [Migrate List all Projects v1 API to REST API](snyk-api/migrate-list-all-projects-v1-api-to-rest-api.md)
+  * [Example migration guide: List all Projects V1 API to REST API](snyk-api/example-migration-guide-list-all-projects-v1-api-to-rest-api.md)
 * [Working with Snyk](working-with-snyk/README.md)
   * [How Snyk handles your data](working-with-snyk/how-snyk-handles-your-data.md)
   * [Regional hosting and data residency](working-with-snyk/regional-hosting-and-data-residency.md)
