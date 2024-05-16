@@ -72,11 +72,15 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (11) Use of a Broken or Risky Cryptographic Algorithm
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (12) Insecure TLS Configuration
 
@@ -108,6 +112,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (17) XPath Injection
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
@@ -133,3 +139,5 @@
 **CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Autofixable** by DeepCode AI Fix

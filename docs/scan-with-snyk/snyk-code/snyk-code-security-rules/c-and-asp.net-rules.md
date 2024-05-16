@@ -74,6 +74,8 @@
 
 **CWE** (215) Insertion of Sensitive Information Into Debugging Code
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (12) Use of Hardcoded Credentials
 
 **CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
@@ -120,6 +122,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (19) Exposure of Private Personal Information to an Unauthorized Actor
 
 **CWE** (359) Exposure of Private Personal Information to an Unauthorized Actor
@@ -147,6 +151,8 @@
 ## Rule (23) Request Validation Disabled
 
 **CWE** (554) ASP.NET Misconfiguration: Not Using Input Validation Framework
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (24) Open Redirect
 

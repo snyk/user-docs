@@ -42,6 +42,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (7) JavaScript Enabled
 
 **CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
@@ -49,6 +51,8 @@
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (8) Unauthorized File Access
 
@@ -58,6 +62,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (9) SQL Injection
 
 **CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
@@ -65,6 +71,8 @@
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (10) LDAP Injection
 
@@ -100,6 +108,8 @@
 
 **CWE** (114) Process Control
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (16) Use of Externally-Controlled Format String
 
 **CWE** (134) Use of Externally-Controlled Format String
@@ -120,15 +130,21 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (19) Observable Timing Discrepancy (Timing Attack)
 
 **CWE** (208) Observable Timing Discrepancy
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (20) Server Information Exposure
 
 **CWE** (209) Generation of Error Message Containing Sensitive Information
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (21) Unprotected Storage of Credentials
 
@@ -186,6 +202,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (30) The cipher text is equal to the provided input plain text
 
 **CWE** (311) Missing Encryption of Sensitive Data
@@ -198,17 +216,23 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (32) Cleartext Transmission of Sensitive Information
 
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (33) Inadequate Padding for AES encryption
 
 **CWE** (326) Inadequate Encryption Strength
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (34) Inadequate Encryption Strength
 
@@ -222,11 +246,15 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (36) Use of Insufficiently Random Values
 
 **CWE** (330) Use of Insufficiently Random Values
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (37) Origin Validation Error
 
@@ -235,6 +263,8 @@
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (38) JWT Signature Verification Bypass
 
@@ -262,6 +292,8 @@
 
 **CWE** (400, 730) Uncontrolled Resource Consumption, OWASP Top Ten 2004 Category A9 - Denial of Service
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (42) Android Fragment Injection
 
 **CWE** (470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
@@ -288,6 +320,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (46) Privacy Leak
 
 **CWE** (532) Insertion of Sensitive Information into Log File
@@ -300,11 +334,15 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (48) Use of Hardcoded, Security-relevant Constants
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (49) Open Redirect
 
@@ -341,6 +379,8 @@
 ## Rule (54) Use of Potentially Dangerous Function
 
 **CWE** (676) Use of Potentially Dangerous Function
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (55) Android World Writeable/Readable File Permission Found
 

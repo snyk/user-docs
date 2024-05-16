@@ -32,9 +32,13 @@
 
 **CWE** (122) Heap-based Buffer Overflow
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (6) Potential buffer overflow from usage of unsafe function
 
 **CWE** (122) Heap-based Buffer Overflow
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (7) Potential Negative Number Used as Index
 
@@ -42,23 +46,33 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (8) Size Used as Index
 
 **CWE** (125, 787) Out-of-bounds Read, Out-of-bounds Write
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (9) Use of Externally-Controlled Format String
 
 **CWE** (134) Use of Externally-Controlled Format String
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (10) Memory Allocation Of String Length
 
 **CWE** (170) Improper Null Termination
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (11) Improper Null Termination
 
 **CWE** (170) Improper Null Termination
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (12) Integer Overflow
 
@@ -80,19 +94,27 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (15) Inadequate Encryption Strength
 
 **CWE** (326) Inadequate Encryption Strength
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (16) Division By Zero
 
 **CWE** (369) Divide By Zero
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (17) Missing Release of Memory after Effective Lifetime
 
 **CWE** (401) Missing Release of Memory after Effective Lifetime
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (18) Double Free
 

@@ -6,17 +6,23 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (2) Configuration Issues: Electron Insecure Web Preferences
 
 **CWE** (16) Configuration
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (3) Configuration Issues: Electron Load Insecure Content
 
 **CWE** (16) Configuration
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (4) Insufficient postMessage Validation
 
@@ -25,6 +31,8 @@
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (5) Arbitrary File Write via Archive Extraction (Zip Slip)
 
@@ -48,6 +56,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (8) Disabling Strict Contextual escaping (SCE) could provide additional attack surface for Cross-site Scripting (XSS)
 
 **CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
@@ -55,6 +65,8 @@
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (9) Cross-site Scripting (XSS)
 
@@ -64,6 +76,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (10) Use dangerouslySetInnerHTML to be explicit that this function is dangerous and also trigger react updates
 
 **CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
@@ -71,6 +85,8 @@
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (11) GraphQL Injection
 
@@ -80,6 +96,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (12) SQL Injection
 
 **CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
@@ -88,11 +106,15 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (13) Code Injection
 
 **CWE** (94) Improper Control of Generation of Code ('Code Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (14) Improper Neutralization of Directives in Statically Saved Code
 
@@ -108,6 +130,8 @@
 
 **CWE** (134) Use of Externally-Controlled Format String
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (17) Clear Text Sensitive Storage
 
 **CWE** (200, 312) Exposure of Sensitive Information to an Unauthorized Actor, Cleartext Storage of Sensitive Information
@@ -118,6 +142,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (18) Information Exposure
 
 **CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
@@ -125,6 +151,8 @@
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (19) Introspection Enabled
 
@@ -146,11 +174,15 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (22) Cryptographic Issues
 
 **CWE** (310) Cryptographic Issues
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (23) Cleartext Transmission of Sensitive Information
 
@@ -158,11 +190,15 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (24) Use of a Broken or Risky Cryptographic Algorithm
 
 **CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (25) Insecure TLS Configuration
 
@@ -170,11 +206,15 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (26) Use of Insufficiently Random Values
 
 **CWE** (330) Use of Insufficiently Random Values
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (27) Origin Validation Error
 
@@ -222,6 +262,8 @@
 
 **CWE** (400) Uncontrolled Resource Consumption
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (35) Deserialization of Untrusted Data
 
 **CWE** (502) Deserialization of Untrusted Data
@@ -256,6 +298,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (40) Weak Password Recovery Mechanism for Forgotten Password
 
 **CWE** (640) Weak Password Recovery Mechanism for Forgotten Password
@@ -272,6 +316,8 @@
 
 **CWE** (770) Allocation of Resources Without Limits or Throttling
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (43) XML internal entity expansion
 
 **CWE** (776) Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')
@@ -283,6 +329,8 @@
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (45) Server-Side Request Forgery (SSRF)
 
@@ -298,6 +346,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (47) NoSQL Injection
 
 **CWE** (943) Improper Neutralization of Special Elements in Data Query Logic
@@ -308,9 +358,13 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (49) Bad Coding Practices
 
 **CWE** (1006) Bad Coding Practices
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (50) Improper Restriction of Rendered UI Layers or Frames
 
@@ -318,10 +372,16 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (51) Improper Type Validation
 
 **CWE** (1287) Improper Validation of Specified Type of Input
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (52) Prototype Pollution
 
 **CWE** (1321) Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')
+
+**Autofixable** by DeepCode AI Fix

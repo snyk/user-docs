@@ -16,6 +16,7 @@ Each rule includes the following information.
 * **CWE(s):** The [CWE numbers](https://cwe.mitre.org/) that are covered by this rule.
 * **OWASP Top 10/SANS 25**: The [OWASP Top 10 ](https://owasp.org/Top10/)(2021 edition) category to which the rule belongs to, if any, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
 * **Supported Languages**: The programming languages to which this specific rule applies. Note that there might be two rules with the same name that apply to different languages.
+* **Autofixable**: Security rules that are autofixable by DeepCode AI Fix. This information is included only for the supported programming languages.
 
 ## Rule (1) External Control of System or Configuration Setting
 

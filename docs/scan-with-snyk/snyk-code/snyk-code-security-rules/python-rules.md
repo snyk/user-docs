@@ -30,6 +30,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (5) Cross-site Scripting (XSS)
 
 **CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
@@ -37,6 +39,8 @@
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (6) Jinja auto-escape is set to false.
 
@@ -46,6 +50,8 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (7) SQL Injection
 
 **CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
@@ -54,11 +60,15 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (8) Code Injection
 
 **CWE** (94) Improper Control of Generation of Code ('Code Injection')
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (9) Improper Neutralization of Directives in Statically Saved Code
 
@@ -92,6 +102,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (14) Broken User Authentication
 
 **CWE** (287) Improper Authentication
@@ -106,6 +118,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (16) Cryptographic Issues
 
 **CWE** (310) Cryptographic Issues
@@ -117,6 +131,8 @@
 **CWE** (319) Cleartext Transmission of Sensitive Information
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (18) Use of Hardcoded Cryptographic Key
 
@@ -164,11 +180,15 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (25) Insecure Temporary File
 
 **CWE** (377) Insecure Temporary File
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (26) Regular Expression Denial of Service (ReDoS)
 
@@ -182,6 +202,8 @@
 
 **CWE** (489) Active Debug Code
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (29) Deserialization of Untrusted Data
 
 **CWE** (502) Deserialization of Untrusted Data
@@ -190,11 +212,15 @@
 
 **OWASP Top 10/SANS 25:** SANS/CWE Top 25
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (30) Hardcoded Secret
 
 **CWE** (547) Use of Hard-coded, Security-relevant Constants
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (31) Open Redirect
 
@@ -216,6 +242,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (34) XPath Injection
 
 **CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
@@ -234,11 +262,15 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (37) Use of Password Hash With Insufficient Computational Effort
 
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (38) Server-Side Request Forgery (SSRF)
 
@@ -257,6 +289,8 @@
 **CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (41) Python 2 source code
 

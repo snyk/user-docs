@@ -78,6 +78,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (11) Improper Access Control: Email Content Injection
 
 **CWE** (284) Improper Access Control
@@ -112,6 +114,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (17) Unverified Password Change
 
 **CWE** (620) Unverified Password Change
@@ -123,6 +127,8 @@
 **CWE** (916) Use of Password Hash With Insufficient Computational Effort
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
+
+**Autofixable** by DeepCode AI Fix
 
 ## Rule (19) Server-Side Request Forgery (SSRF)
 
