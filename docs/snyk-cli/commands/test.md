@@ -328,6 +328,8 @@ Example: `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`
 
 This is useful when you have multiple projects with the same name in other `.sln` files.
 
+## Options for .NET projects
+
 ### `--dotnet-runtime-resolution`
 
 **Note:** This option in in Early Access and may change until it is released.

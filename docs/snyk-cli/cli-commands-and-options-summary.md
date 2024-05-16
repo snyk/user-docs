@@ -377,9 +377,9 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-name-prefix=my-group/`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--dotnet-runtime-resolution`: [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test)
+`--dotnet-runtime-resolution`:  `test,` [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--dotnet-target-framework`: [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test)
+`--dotnet-target-framework`: `test,` [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for npm projects
 
