@@ -1,0 +1,25 @@
+name: Test API Docs Generator
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/api-docs-generator/**'
+      - '.github/workflows/test-generator.yml'
+
+jobs:
+  test:
+    name: test-api-docs-generator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          #TODO: Remove before merge
+          ref: chore/docs-action
+      - uses: actions/setup-go@v5
+        with:
+          cache-dependency-path: |
+            tools/api-docs-generator/go.sum
+      - name: test
+        working-directory: ./tools/api-docs-generator
+        run: make test
