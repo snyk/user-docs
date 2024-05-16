@@ -20,7 +20,7 @@ Snyk AppRisk Pro empowers AppSec teams to enhance and expand their AppSec progra
 
 ## When and why to use Snyk AppRisk Essentials <a href="#when-and-why-to-use-the-priority-score" id="when-and-why-to-use-the-priority-score"></a>
 
-Snyk AppRisk Essentials is ideal for AppSec teams looking to streamline their developer-first security programs. The integrated capabilities offered by Snyk are useful for managing security scope for code-based assets. Snyk AppRisk Essentials is ideal for foundational security practices in organizations. It offers efficient prioritization with Insights, automated workflows, and clear visibility into code-based vulnerabilities. By focusing on essential security coverage and prioritization, Snyk AppRisk Essentials provides a solid starting point for teams embarking on their security journey or those who require a focused, efficient approach to application security.
+Snyk AppRisk Essentials is ideal for AppSec teams looking to streamline their developer-first security programs. The integrated capabilities offered by Snyk are useful for managing security scope for code-based assets. Snyk AppRisk Essentials is ideal for foundational security practices in organizations. It offers efficient automated workflows and clear visibility into code-based vulnerabilities. By focusing on essential security coverage and prioritization, Snyk AppRisk Essentials provides a solid starting point for teams embarking on their security journey or those who require a focused, efficient approach to application security.
 
 ## When and why to use Snyk AppRisk Pro
 
