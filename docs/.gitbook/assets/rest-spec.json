@@ -503,8 +503,8 @@
         }
       },
       "GroupId": {
-        "description": "The ID of the Group.",
-        "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+        "description": "Snyk Group ID",
+        "example": "7626925e-4b0f-11ee-be56-0242ac120002",
         "in": "path",
         "name": "group_id",
         "required": true,
@@ -1279,6 +1279,9 @@
             "properties": {
               "client_id": {
                 "$ref": "#/components/schemas/ClientId"
+              },
+              "installed_at": {
+                "$ref": "#/components/schemas/InstalledAt"
               }
             },
             "type": "object"
@@ -1323,6 +1326,9 @@
               },
               "client_secret": {
                 "$ref": "#/components/schemas/ClientSecret"
+              },
+              "installed_at": {
+                "$ref": "#/components/schemas/InstalledAt"
               }
             },
             "required": [
@@ -1844,7 +1850,7 @@
       },
       "ClientSecret": {
         "description": "The oauth2 client secret for the app. This is the only time this secret will be returned, store it securely and don’t lose it.",
-        "example": "snyk_cs_ctZW0JsWG^Bm`*oPo=mnV26qU_6pjxht<]S_v1",
+        "example": "snyk_cs_ctZW0JsWG^Bm`*oPo=mnV26qU_6pjxht\u003c]S_v1",
         "minLength": 1,
         "type": "string"
       },
@@ -3451,6 +3457,12 @@
         "enum": [
           "group"
         ],
+        "type": "string"
+      },
+      "InstalledAt": {
+        "description": "Timestamp at which this app was first installed at.",
+        "example": "2024-04-30T16:07:46.230044Z",
+        "format": "date-time",
         "type": "string"
       },
       "IsActive": {
@@ -5616,6 +5628,37 @@
         },
         "type": "object"
       },
+      "PullRequestTemplateAttributes": {
+        "additionalProperties": false,
+        "minProperties": 1,
+        "properties": {
+          "branch_name": {
+            "description": "The name of the branch that will be created when the pull request is created",
+            "example": "chore/bump-{{package_name}}-{{package_from}}-{{package_to}}",
+            "minLength": 1,
+            "type": "string"
+          },
+          "commit_message": {
+            "description": "The commit message that will be used when the pull request is created",
+            "example": "chore(deps): bump {{package_name}} from {{package_from}} to {{package_to}}",
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "description": "The description of the pull request",
+            "example": "{{ #is_upgrade_pr }} This PR has been opened to make sure our repositories are kept up-to-date. It updates {{ package_name }} from version {{ package_from }} to version {{ package_to }}. Review relevant docs for possible breaking changes. {{ /is_upgrade_pr }}\n",
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": {
+            "description": "Specify a title for the pull request",
+            "example": "Snyk has created this PR to upgrade {{package_name}} from {{package_from}} to {{package_to}}.",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "PullRequestsSettings": {
         "additionalProperties": false,
         "description": "Settings which describe how pull requests for a project are tested.",
@@ -5647,6 +5690,11 @@
           }
         },
         "type": "object"
+      },
+      "PullRequsetTemplateId": {
+        "example": "https://api.snyk.io/rest/groups/7626925e-4b0f-11ee-be56-0242ac120002/pull_request_template",
+        "format": "uri",
+        "type": "string"
       },
       "QueryVersion": {
         "description": "Requested API version",
@@ -6287,7 +6335,7 @@
             "type": "object"
           },
           "id": {
-            "example": "slack://channel?team=T123456&id=C123456",
+            "example": "slack://channel?team=T123456\u0026id=C123456",
             "format": "uri",
             "type": "string"
           },
@@ -6389,7 +6437,7 @@
         "type": "object"
       },
       "TargetChannelId": {
-        "example": "slack://channel?team=team-id&id=channel-id",
+        "example": "slack://channel?team=team-id\u0026id=channel-id",
         "format": "uri",
         "type": "string"
       },
@@ -6569,7 +6617,7 @@
         "properties": {
           "expression": {
             "description": "The regular expression used to describe the format of tags.\nKeep in mind that backslashes in the expression need to be escaped due to being encompassed in a JSON string.\n",
-            "example": "(?<C0>.)\\-(?<M2>.*)",
+            "example": "(?\u003cC0\u003e.)\\-(?\u003cM2\u003e.*)",
             "type": "string"
           },
           "label": {
@@ -11911,7 +11959,15 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the Group.",
+            "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Cursor"
@@ -16683,6 +16739,290 @@
         "x-snyk-api-version": "2021-12-09"
       },
       "x-snyk-api-resource": "iac_settings"
+    },
+    "/groups/{group_id}/settings/pull_request_template": {
+      "delete": {
+        "description": "Delete your groups pull request template. This means Snyk pull requests will start to use the default template for this group.",
+        "operationId": "deletePullRequestTemplate",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/GroupId"
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/204"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Delete pull request template for group",
+        "tags": [
+          "Pull Request Templates"
+        ],
+        "x-snyk-api-releases": [
+          "2023-10-13~beta",
+          "2024-05-08"
+        ],
+        "x-snyk-api-version": "2024-05-08"
+      },
+      "get": {
+        "description": "Get your groups pull request template",
+        "operationId": "getPullRequestTemplate",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/GroupId"
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfter"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBefore"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "additionalProperties": false,
+                      "description": "Fetch a pull request template response",
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/PullRequestTemplateAttributes"
+                        },
+                        "id": {
+                          "$ref": "#/components/schemas/PullRequsetTemplateId"
+                        },
+                        "type": {
+                          "$ref": "#/components/schemas/Types"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type",
+                        "attributes"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/PaginatedLinks"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Fetch Pull Request Template for group.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "location": {
+                "$ref": "#/components/headers/LocationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get pull request template for group",
+        "tags": [
+          "Pull Request Templates"
+        ],
+        "x-snyk-api-releases": [
+          "2023-10-13~beta",
+          "2024-05-08"
+        ],
+        "x-snyk-api-version": "2024-05-08"
+      },
+      "post": {
+        "description": "Configures a group level pull request template that will be used on any org or project within that group",
+        "operationId": "createOrUpdatePullRequestTemplate",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/GroupId"
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "properties": {
+                  "data": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "attributes": {
+                        "$ref": "#/components/schemas/PullRequestTemplateAttributes"
+                      },
+                      "type": {
+                        "$ref": "#/components/schemas/Types"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "attributes"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "additionalProperties": false,
+                      "description": "Create or update Pull Request Template response",
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/PullRequestTemplateAttributes"
+                        },
+                        "id": {
+                          "$ref": "#/components/schemas/PullRequsetTemplateId"
+                        },
+                        "type": {
+                          "$ref": "#/components/schemas/Types"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type",
+                        "attributes"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/PaginatedLinks"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Pull Request Template created for group.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "location": {
+                "$ref": "#/components/headers/LocationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Create or update pull request template for group",
+        "tags": [
+          "Pull Request Templates"
+        ],
+        "x-snyk-api-releases": [
+          "2023-10-13~beta",
+          "2024-05-08"
+        ],
+        "x-snyk-api-version": "2024-05-08"
+      },
+      "x-snyk-api-resource": "pull-request-templates"
     },
     "/openapi": {
       "get": {
@@ -42491,7 +42831,7 @@
             "name": "tags",
             "schema": {
               "items": {
-                "pattern": "^[a-zA-Z0-9_-]+:[:/?#@&+=%a-zA-Z0-9_.~-]+$",
+                "pattern": "^[a-zA-Z0-9_-]+:[:/?#@\u0026+=%a-zA-Z0-9_.~-]+$",
                 "type": "string"
               },
               "type": "array"
@@ -43743,7 +44083,7 @@
                             "type": "string"
                           },
                           "role_id": {
-                            "description": "The ID of the role which the created service account should use. Obtained in the Snyk UI, via \"Group Page\" -> \"Settings\" -> \"Member Roles\" -> \"Create new Role\". Can be shared among multiple accounts.",
+                            "description": "The ID of the role which the created service account should use. Obtained in the Snyk UI, via \"Group Page\" -\u003e \"Settings\" -\u003e \"Member Roles\" -\u003e \"Create new Role\". Can be shared among multiple accounts.",
                             "format": "uuid",
                             "type": "string"
                           }
@@ -54546,6 +54886,10 @@
       "name": "Projects"
     },
     {
+      "description": "Snyk pull request templates allow you to control title, description, commit message and branch name.",
+      "name": "Pull Request Templates"
+    },
+    {
       "description": "A Software Bill of Materials document",
       "name": "SBOM"
     },
@@ -54572,5 +54916,5 @@
   ],
   "x-optic-url": "https://app.useoptic.com/organizations/390ef489-882c-48ba-acb3-4e0b73e48767/apis/5Tz5UMTNEIuz5-FZ6J2ki",
   "x-snyk-api-lifecycle": "released",
-  "x-snyk-api-version": "2024-04-29"
+  "x-snyk-api-version": "2024-05-08"
 }
