@@ -162,6 +162,17 @@ This error occurs when Snyk Code is not enabled for the current Organization. Ac
 **Help Links:**
 - [https://docs.snyk.io/scan-using-snyk/snyk-code/configure-snyk-code#enable-snyk-code-in-snyk-web-ui](https://docs.snyk.io/scan-using-snyk/snyk-code/configure-snyk-code#enable-snyk-code-in-snyk-web-ui)
 
+### [SNYK-CODE-0006](#snyk-code-0006)
+
+#### Project not supported
+
+Snyk was unable to find supported files.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code](https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code)
+
 ---
 # OpenAPI
 ### [SNYK-OPENAPI-0001](#snyk-openapi-0001)
@@ -1815,4 +1826,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-05-15T07:51:28.999Z
+--- Generated at 2024-05-16T09:09:03.635Z
