@@ -20,7 +20,7 @@ The [**Snyk REST API**](https://apidocs.snyk.io/) is based on the OpenAPI and JS
 The Snyk V1 API will be sunset eventually, as further Snyk developments and maintenance iare now focused on REST-specific APIs.
 {% endhint %}
 
-The [Snyk V1 API ](v1-api/)has the ability to test a package for issues as they are defined by Snyk, and to provide Snyk security automation according to your own workflows, unconstrained by security processes in Snyk products. Customers and partners can perform functions including:
+The [Snyk V1 API ](v1-api-overview/)has the ability to test a package for issues as they are defined by Snyk, and to provide Snyk security automation according to your own workflows, unconstrained by security processes in Snyk products. Customers and partners can perform functions including:
 
 * Accessing vulnerability data
 * Scanning Projects and applications
