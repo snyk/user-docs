@@ -67,9 +67,10 @@ Apply complete! Resources: 22 added, 0 changed, 0 destroyed.
 Outputs:
 
 service_account_email = "snyk-cloud-mt-us-abcd1234@my-project.iam.gserviceaccount.com"
+identity_provider = "https://iam.googleapis.com/projects/12345567/locations/global/workloadIdentityPools/workload-identity-123456/providers/identity-provider-123456"
 ```
 
-Copy the service account email for use in the next step.
+Copy the service account email and identity provider for use in the [next step](step-3-create-and-scan-a-cloud-environment-for-google-web-ui.md).
 
 ## What's next?
 
