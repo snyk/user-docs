@@ -1,0 +1,109 @@
+---
+openapi: 3.0.3
+info:
+  title: Snyk OAuth2 API
+  version: 1.0.0
+servers:
+  - url: https://app.snyk.io
+    description: Snyk UI
+tags:
+  - name: oauth2
+    description: oauth2
+x-hideTryItPanel: true
+x-codeSamples: true
+paths:
+  /oauth2/authorize:
+    get:
+      summary: Initiate the authorization code flow
+      description:
+        To be called by the end user to authorize the client application
+        to their Snyk organizations. Success returns a redirect to the provided `redirect_uri`,
+        containing an authorization code which can be exchanged for an access token.
+      tags: [oauth2]
+      parameters:
+        - name: response_type
+          in: query
+          description:
+            The type of authorization flow being used. Only "code" is supported
+            for authorization code flow.
+          required: true
+          schema:
+            type: string
+            enum: [code]
+            example: code
+        - name: client_id
+          in: query
+          description: The client ID of the client application.
+          required: true
+          schema:
+            type: string
+            example: 64ae3415-5ccd-49e5-91f0-9101a6793ec2
+        - name: redirect_uri
+          in: query
+          description:
+            The redirection URI to which the authorization server will
+            redirect the user after granting or denying authorization. Must match
+            one of the URIs set on the client application exactly.
+          required: true
+          schema:
+            type: string
+            example: https://example.com/callback
+        - name: state
+          in: query
+          description:
+            An opaque value used by the client to maintain state between
+            the authorization request and the authorization callback. Use this value
+            to match client callbacks to the request that spawned them.
+          required: false
+          schema:
+            type: string
+            example: random_state_value
+        - name: code_challenge
+          in: query
+          description:
+            A cryptographically secure code challenge derived from a secret
+            code verifier you generate on the client-side as defined in [RFC7636].
+            It is generated from a hashing a randomly generated string, the `code_verifier`
+            used when exchanging tokens, then URL safe base 64 encoding the result.
+          required: true
+          schema:
+            type: string
+            example: YWVjMDcwNjQ1ZmU1M2VlM2IzNzYzMDU5Mzc2MTM0ZjA1OGNjMzM3MjQ3Yzk3OGFkZDE3OGI2Y2NkZmIwMDE5Zg
+        - name: code_challenge_method
+          in: query
+          description:
+            The method used to derive the code challenge from the code
+            verifier, only S256 is supported.
+          required: true
+          schema:
+            type: string
+            enum: [S256]
+            example: S256
+      responses:
+        "303":
+          description:
+            Redirection to authorization server. The Location header is
+            set to the provided `redirect_uri` so the user's browser should follow
+            this redirect automatically.
+          headers:
+            Location:
+              description:
+                "Specified redirect_uri with querystring parameters `code`
+                and `state`, or if there is an error: `error`, `error_description`
+                and `state`. See examples for more details."
+              schema:
+                type: string
+              required: true
+              examples:
+                success:
+                  value: https://example.com/callback?code=returned_auth_code&state=random_state_value
+                  description:
+                    Authorization succeeded, the returned code can be used
+                    to call /oauth2/token to obtain an access token.
+                error:
+                  value: https://example.com/callback?error=invalid_token&error_description=Token%20expired.&state=random_state_value
+                  description:
+                    "There was an error. Inform the user that the flow
+                    did not complete successfully. A full list of possible errors
+                    can be found in the OAuth Extensions Error Registry registry maintained
+                    by IANA: https://www.iana.org/assignments/oauth-parameters/oauth-parameters.xhtml"

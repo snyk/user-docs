@@ -961,6 +961,7 @@
     * [Users (v1)](snyk-api/reference/users-v1.md)
     * [Users](snyk-api/reference/users.md)
     * [Webhooks (v1)](snyk-api/reference/webhooks-v1.md)
+  * [OAuth2 API](snyk-api/oauth2-api.md)
   * [Make calls to the Snyk API](snyk-api/make-calls-to-the-snyk-api/README.md)
     * [Try a simple call to the Snyk REST API](snyk-api/make-calls-to-the-snyk-api/try-a-simple-call-to-the-snyk-rest-api.md)
     * [Find the differences between versions in the REST API](snyk-api/make-calls-to-the-snyk-api/find-the-differences-between-versions-in-the-rest-api.md)

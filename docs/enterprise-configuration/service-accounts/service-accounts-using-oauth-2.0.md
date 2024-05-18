@@ -24,7 +24,7 @@ Never share the `client_secret` publicly, as this is used to authenticate your s
 
 ### Retrieve an OAuth 2.0 access token
 
-After the service account is created, you can retrieve an `access_token` through the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh) using the `client_secret`. The body format and `Content-Type` header must be form-urlencoded.
+After the service account is created, you can retrieve an `access_token` through the [Snyk OAuth 2.0 token endpoint](../../snyk-api/oauth2-api.md#token) using the `client_secret`. The body format and `Content-Type` header must be form-urlencoded.
 
 You can use an`access_token` the same way as you would use a Snyk API key, but with the `Authorization: bearer $access_token` header (see the Snyk [REST API documentation](https://apidocs.snyk.io/)) or the `SNYK_OAUTH_TOKEN` environment variable with the Snyk CLI.
 
@@ -55,11 +55,11 @@ The response includes the `client_id`, which is needed for the next step.
 
 Snyk recommends you prepare a tool or script to build a `private_key_jwt` with the proper claims and sign it with the private signing key you generated. as a prerequisite
 
-The JWT should include the [claims](https://datatracker.ietf.org/doc/html/rfc7519#section-4) outlined in the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh) for the `client_assertion` property. Note that the `aud` claim may vary based on the Snyk instance, for example, `api.snyk.io`, or `api.eu.snyk.io`. For more information, see [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md).
+The JWT should include the [claims](https://datatracker.ietf.org/doc/html/rfc7519#section-4) outlined in the [Snyk OAuth 2.0 token endpoint](../../snyk-api/oauth2-api.md#token) for the `client_assertion` property. Note that the `aud` claim may vary based on the Snyk instance, for example, `api.snyk.io`, or `api.eu.snyk.io`. For more information, see [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md).
 
 ### Retrieve a Private Key JWT access token
 
-After the service account is created and signed JWT is prepared, you can retrieve an `access_token` using the [Snyk OAuth 2.0 token endpoint](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh). This access token can be used as a Snyk API key would be used. The request body should include the following:
+After the service account is created and signed JWT is prepared, you can retrieve an `access_token` using the [Snyk OAuth 2.0 token endpoint](../../snyk-api/oauth2-api.md#token). This access token can be used as a Snyk API key would be used. The request body should include the following:
 
 * `grant_type: client_credentials`
 * `client_assertion_type: private_key_jwt`

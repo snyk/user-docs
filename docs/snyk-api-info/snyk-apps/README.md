@@ -14,7 +14,7 @@ Snyk Apps are based on the [Snyk API](../../snyk-api/) so that your integrations
 
 The Snyk Apps platform uses an OAuth 2.0 authorization flow. This allows your Snyk App to get an access token to act on behalf of the user, depending on the scopes you request. There are many OAuth 2.0 libraries available that will greatly simplify the integration. The [Snyk Apps Demo](https://github.com/snyk/snyk-apps-demo) uses the popular JavaScript library [passport.js](http://www.passportjs.org/packages/passport-oauth2/).
 
-See the Snyk [OAuth2 API documentation](https://snykoauth2.docs.apiary.io) for details.
+See the Snyk [OAuth2 API documentation](../../snyk-api/oauth2-api.md) for details.
 
 ## How do Apps connect?
 
