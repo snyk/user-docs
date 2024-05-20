@@ -14,7 +14,7 @@ Since real risk is scarce, you should expect a significant drift in the distribu
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure>
 
-Risk Score replaces the Priority Score directly. See the [priority score docs](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled.&#x20;
+Risk Score replaces the Priority Score directly. See the [priority score docs](priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled.&#x20;
 
 Risk Score is not available in the CLI.&#x20;
 

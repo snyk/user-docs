@@ -2,7 +2,7 @@
 
 The Snyk Risk score and Priority score are keys to security management. Both types of score help Organizations handle current threats and prepare for future vulnerabilities, leading to a more robust security framework.
 
-The Priority and Risk Scores rank the severity of an issue and the urgency of fixing it. Both scores provide a number between 1 and 1000, where 1 means low severity and 1000 means high severity. Snyk uses these numbers to indicate the urgency of remediating a vulnerability.
+The Priority and Risk Scores are ranking the issues and the urgency of fixing them. Both scores provide a number between 1 and 1000, where 1 means low severity and 1000 means high severity. Snyk uses these numbers to indicate the urgency of remediating a vulnerability.
 
 {% hint style="info" %}
 **Risk score** assesses the potential impact of vulnerabilities, prioritizing those with severe consequences.&#x20;

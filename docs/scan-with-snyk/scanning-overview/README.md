@@ -33,7 +33,7 @@ See [Monitor your projects at regular intervals](../../snyk-cli/scan-and-maintai
 
 ## Manage and fix issues using Snyk
 
-If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For more details, see [Prioritize your issues](../../manage-risk/prioritize-your-issues/).
+If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For more details, see [Prioritize your issues](../../manage-risk/prioritize-issues-for-fixing/).
 
 Snyk offers capabilities to address issues both reactively and proactively:
 

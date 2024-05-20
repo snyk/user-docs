@@ -89,7 +89,7 @@ Risk Score is available on the Projects page and through the API and Reports.&#x
 </div>
 
 {% hint style="info" %}
-[Priority score](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;
+[Priority score](priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;
 {% endhint %}
 
 ## Reachable vulnerability analysis&#x20;

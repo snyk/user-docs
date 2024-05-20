@@ -6,6 +6,6 @@ To apply fixes, you can use different methods, including manual application in t
 
 For information about fixability, see [Vulnerability fix types](vulnerability-fix-types.md). For details, see [Upgrade package versions to fix vulnerabilities](upgrade-package-versions-to-fix-vulnerabilities.md) and [Snyk patches to fix vulnerabilities](snyk-patches-to-fix-vulnerabilities.md) for details.
 
-To help you decide which issues to fix, see [Prioritizing and managing issues](../../../manage-risk/prioritize-your-issues/).
+To help you decide which issues to fix, see [Prioritizing and managing issues](../../../manage-risk/prioritize-issues-for-fixing/).
 
 Fixing vulnerabilities relies on the [Snyk Vulnerability Database](snyk-vulnerability-database.md). You may see [differences in Open Source vulnerability counts across environments](differences-in-open-source-vulnerability-counts-across-environments.md). Information about [troubleshooting](troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md) when you are fixing vulnerabilities is provided.

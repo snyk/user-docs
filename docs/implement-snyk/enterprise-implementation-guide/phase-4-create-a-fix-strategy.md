@@ -35,7 +35,7 @@ Filters are available to help prioritize what issues need to be fixed urgently. 
   * By choosing the Exploit Maturity filter, you implicitly filter only open-source results. [Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) addresses issues that are **Mature** or have **Proof of Concept** and thus are more exploitable.&#x20;
   * By choosing the Fixable filter find issues where there is a fix available by upgrading a package. This makes fixing is faster than without an upgrade.  &#x20;
   * You can choose CVSS Score for Open Source Vulnerabilities
-* When you filter by [Priority Score](../../scan-with-snyk/find-and-manage-priority-issues/priority-score.md), CVSS Score is included in the calculation. One strategy is to eliminate the vulnerabilities with a score of 900-1000, and then move to vulnerabilities with a score of 800-900, and so on.
+* When you filter by [Priority Score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md), CVSS Score is included in the calculation. One strategy is to eliminate the vulnerabilities with a score of 900-1000, and then move to vulnerabilities with a score of 800-900, and so on.
 * If you are using AppRisk and you have instrumented AppRisk Insights, using Classification and filters like  Public IP/OS Condition to further refine and find applications of High Importance or exposed publicly in the first round of triage may also be beneficial.
 
 When planning your fix strategy, decide which metrics will be used and get specific with your timeline. If you choose to fix by severity, for example, estimate the time it will take to resolve vulnerability per severity. It is recommended to be specific with your fix strategy.&#x20;

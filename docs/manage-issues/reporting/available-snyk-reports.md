@@ -88,7 +88,7 @@ Upon the announcement of a new zero-day event, begin by examining the **Impacted
 
 <figure><img src="../../.gitbook/assets/image (427).png" alt="Impacted Targets table"><figcaption><p>Impacted Targets table</p></figcaption></figure>
 
-Next, proceed to the **All** **Issues** table and compile a prioritized list of issues requiring remediation. Typically, prioritization is determined by either the Snyk [Risk Score](../../manage-risk/prioritize-your-issues/risk-score.md) or NVD CVSS Score, with emphasis placed on addressing vulnerabilities within sensitive targets. Apply filters based on Project Lifecycle, Environment, or Project Criticality to identify and address these targets promptly.
+Next, proceed to the **All** **Issues** table and compile a prioritized list of issues requiring remediation. Typically, prioritization is determined by either the Snyk [Risk Score](../../manage-risk/prioritize-issues-for-fixing/risk-score.md) or NVD CVSS Score, with emphasis placed on addressing vulnerabilities within sensitive targets. Apply filters based on Project Lifecycle, Environment, or Project Criticality to identify and address these targets promptly.
 
 <figure><img src="../../.gitbook/assets/image (428).png" alt="All Issues table"><figcaption><p>All Issues table</p></figcaption></figure>
 

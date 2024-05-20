@@ -22,7 +22,7 @@ Describes the main attributes of the issue.
 * **ISSUE STATUS** - Indicates whether the issue is open, resolved, or ignored.
 * **PRODUCT NAME** - Snyk product name.
 * **SEVERITY** - Indicates the issue severity according to the analysis by a specific Snyk product.
-* **SCORE** - A score based on an analysis model. Priority score is released in General Availability, while Risk Score is in Early Access. For details, see [Priority Score vs Risk Score](../prioritize-your-issues/priority-score-vs-risk-score.md).
+* **SCORE** - A score based on an analysis model. Priority score is released in General Availability, while Risk Score is in Early Access. For details, see [Priority Score vs Risk Score](../prioritize-issues-for-fixing/priority-score-vs-risk-score.md).
 * **REACHABILITY** - The reachability of the issue indicates whether the issue is related to functions that are being called by the application and thus has a greater risk of exploitability.\
   Allowed values:
   * **Reachable** - A direct or indirect path was found from your application to the vulnerable code.
@@ -35,7 +35,7 @@ The vulnerability details refer to various issue attributes that are being defin
 
 * **CVE** - Mitre CVE ID
 * **CWE** - Mitre CWE ID
-* **EXPLOIT MATURITY** - Represents the existence and maturity of public exploits validated by Snyk. The allowed values follow. For details, see [View exploits in Projects](../prioritize-your-issues/view-exploits.md#view-exploits-in-projects).
+* **EXPLOIT MATURITY** - Represents the existence and maturity of public exploits validated by Snyk. The allowed values follow. For details, see [View exploits in Projects](../prioritize-issues-for-fixing/view-exploits.md#view-exploits-in-projects).
   * **Mature:** Snyk has a published code exploit for this vulnerability.
   * **Proof of concept:** Snyk has a proof-of-concept or detailed explanation of how to exploit this vulnerability. Proof of concept vulnerability patches cannot be disabled and will appear in fix PRs where they are found
   * **No known exploit:** Snyk did not find a proof-of-concept or a published exploit for this vulnerability.
