@@ -52,7 +52,7 @@ Select **Dependencies** to view the dependencies and license issues for your Gro
 </div>
 
 {% hint style="info" %}
-See [Dependencies and licenses](../../../manage-issues/dependencies-and-licenses/) for more details.
+See [Dependencies and licenses](../../snyk-projects/dependencies-and-licenses/) for more details.
 {% endhint %}
 
 ### Group Policies
