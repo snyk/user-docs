@@ -338,4 +338,4 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
   * Category: application\_type
   * Owner: business\_unit
 * Click the **Done** button.
-* When the connection is established, the status of the Sysdig integration is changed to **Connected**.
+* When the connection is established, the status of the ServiceNow CMDB integration is changed to **Connected**.
