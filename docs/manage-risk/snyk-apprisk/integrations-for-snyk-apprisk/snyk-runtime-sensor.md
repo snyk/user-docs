@@ -39,13 +39,15 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
-5.  Install the Helm chart:
+5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default (USA), you also need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
+6.  Install the Helm chart:
 
     ```
     helm install my-runtime-sensor \
     --set secretName=<<YOUR_SECRET_NAME>> \
     --set clusterName=<<CLUSTER_NAME>> \
     --set snykGroupId=<<YOUR_GROUP_ID>> \
+    --set snykAPIBaseURL=<<YOUR_REGIONS_API_URL>> \ # Optional
     -n snyk-runtime-sensor \
     runtime-sensor/runtime-sensor
 
