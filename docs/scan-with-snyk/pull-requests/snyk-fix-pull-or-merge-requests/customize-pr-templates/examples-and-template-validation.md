@@ -1,10 +1,10 @@
 # Examples and template validation
 
-## Example of a Custom PR template
+## Examples of custom PR templates
 
-The following template example shows how to use the variables with a PR template.
+The following example templates show how to use the variables in a PR template.
 
-### API Custom PR template examples
+### API custom PR template example
 
 ```json
 {
@@ -19,7 +19,7 @@ The following template example shows how to use the variables with a PR template
 }
 ```
 
-### YAML Custom PR template examples
+### YAML custom PR template example
 
 ```yaml
 title: This PR fixes {{ issue_count }} issues
@@ -39,7 +39,7 @@ description: |
   To find more details, see the Snyk project [{{ snyk_project_name }}]({{ snyk_project_url }})
 ```
 
-## Validate the Custom PR template
+## Validate the custom PR template
 
 You can validate the correctness of your template by following the steps described for each section.
 
@@ -47,16 +47,12 @@ You can validate the correctness of your template by following the steps describ
 
 For the API configuration, you can validate the correctness of your template by following these steps:
 
-1. An error response is returned if there are any issues with the customized content. Fix the issues and wait to receive an API success response.&#x20;
-2. Open a PR and verify that your customized inputs are being used.&#x20;
+1. If an error response is returned, there are issues with the custom content. Fix the issues and wait to receive an API success response.&#x20;
+2. Open a PR and verify that your custom inputs are being used.&#x20;
 
-{% hint style="info" %}
-The Customize PRs feature is in closed beta. Any feedback on improving the functionality is welcome.
-{% endhint %}
-
-### YAMl template validation
+### YAML template validation
 
 You can validate the correctness of your template by following these steps:
 
-1. Adding the template file to your Project(repository).&#x20;
-2. Opening a PR and verifying that your customized inputs are being used.&#x20;
+1. Add the template file to your Project (repository).&#x20;
+2. Open a PR and verify that your custom inputs are being used.&#x20;

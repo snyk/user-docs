@@ -63,8 +63,6 @@ To find more details, see the Snyk project https://app.snyk.io/org/my-org/projec
 
 In this output, `my-org` is your Snyk Organization name and `xx-xxx-xx-xx-xxxx` is the public ID of your Project or repository.&#x20;
 
-##
-
 ## <mark style="color:purple;">`snyk_project_name: string`</mark>
 
 This is the Snyk Project name. You can add the Snyk Project name to your description.
@@ -222,9 +220,61 @@ The description of your PR will be:&#x20;
 The PR will fix 98 issues.
 ```
 
+## <mark style="color:purple;">`product_is_container: boolean`</mark>
+
+This variable can be used to customize attributes based on whether the PR is a Snyk Container product. Currently, there are two different product types at Snyk that can open PRs (Snyk Open Source PRs and Snyk Container PRs). Using this variable will help you customize your template to differentiate between the two.&#x20;
+
+### Input
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "{{ #product_is_container }} This Container PR has been opened to fix vulnerabilities in your project. {{ /product_is_container }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+### Output
+
+If your PR is an Open Source product, then the description of your PR will be:&#x20;
+
+```
+This Container PR has been opened to fix vulnerabilities in your project
+```
+
+## <mark style="color:purple;">`product_is_open_source: boolean`</mark>
+
+This variable can be used to customize attributes based on whether the PR is an Open-Source product. Currently, Snyk has two different product types that can open PRs (Open-Source PRs and Container PRs). Using this variable will help you customize your template to differentiate between the two.&#x20;
+
+### Input
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "{{ #product_is_open_source }} This Open Source PR has been opened to fix vulnerabilities in your project. {{ /product_is_open_source }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+### Output
+
+If your PR is an Open Source product then the description of your PR will be:&#x20;
+
+```
+This Open Source PR has been opened to fix vulnerabilities in your project
+```
+
 ## <mark style="color:purple;">`is_fix_pr: boolean`</mark>
 
-This variable can be used to customize attributes based on whether the PR is a backlog PR,  for example, opened to fix new vulnerabilities introduced to the Project or repository in the latest scan. In the example below you can see that the description of the PR will only show if it is a fix PR.
+This variable can be used to customize attributes based on whether the PR is a backlog PR,  for example, opened to fix new vulnerabilities introduced to the Project or repository in the latest scan. In the example below, you can see that the description of the PR will only show if it is a fixed PR.
 
 ### Input
 
@@ -242,7 +292,7 @@ This variable can be used to customize attributes based on whether the PR is a b
 
 ### Output
 
-If your PR is a fix PR then the description of your PR will be:&#x20;
+If your PR is a fixed PR ,then the description of your PR will be:&#x20;
 
 ```yaml
 This PR has been opened to fix vulnerabilities in your project.
@@ -300,6 +350,86 @@ If your PR is an upgrade PR then the description of your PR will be:&#x20;
 This PR has been opened to make sure our repositories are kept up-to-date. It updates package-x from version 1.0.0 to version 2.0.0. Review relevant docs for possible breaking changes.
 ```
 
+## <mark style="color:purple;">`files_changed`</mark>
+
+This variable can be used in your template to list the files changed as part of the pull request.&#x20;
+
+### Input
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "Changes included in this PR: {{ files_changed }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+
+
+### Output
+
+If the pull request was for a maven project and the changes made were in the pom.xml file then this is what the description of your PR would look like.&#x20;
+
+```
+Changes included in this PR: pom.xml
+```
+
+## <mark style="color:purple;">`container.recommended_base_image_name`</mark>
+
+This variable is for container projects only. It can be used to display the name of the recommended base image applied in this PR.
+
+### Input
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "We recommend upgrading to {{ container.recommended_base_image_name }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+### Output
+
+The description of your PR will be:&#x20;
+
+```
+We recommend upgrading to node:xx.xx.x
+```
+
+## <mark style="color:purple;">`container.current_base_image_name`</mark>
+
+This variable is for container projects only. It can be used to display the current base image.
+
+### Input
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "The current base image is: {{ container.current_base_image_name }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+### Output
+
+The description of your PR will be:&#x20;
+
+```
+The current base image is: node:xx.xx.x
+```
+
 ## <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
 
 This is the prType of your Project or repository. You can use it to display the PR type from the pull request description.
@@ -320,7 +450,7 @@ This is the prType of your Project or repository. You can use it to display the 
 
 ### Output
 
-If you have opened a Fix PR then the commit message of your PR will be:&#x20;
+If you have opened a Fix PR, then the commit message of your PR will be:&#x20;
 
 ```yaml
 fix: for package-x
@@ -495,6 +625,56 @@ The PR will fix 98 issues.
 
 ```
 
+## <mark style="color:purple;">`product_is_container: boolean`</mark>
+
+This variable can be used to customize attributes based on whether the PR is a Container product. Currently there are two different product types at Snyk which can open PRs (Open Source PRs and Container Prs). Using this variable will help you customise your template to differentiate between the two.
+
+### Input
+
+```
+description: |
+  {{ #product_is_container }}
+  This Container PR has been opened to make sure our repositories are kept up-to-date.
+  It updates {{ package_name }} from version {{ package_from }} to version {{ package_to }}.
+  Review relevant docs for possible breaking changes.
+  {{ /product_is_container }}
+```
+
+### Output
+
+If your project is a Container project, the description will be:
+
+```
+  This Container PR has been opened to make sure our repositories are kept up-to-date.
+  It updates package x from version 1 to version 2.
+  Review relevant docs for possible breaking changes.
+```
+
+## <mark style="color:purple;">`product_is_open_source: boolean`</mark>
+
+This variable can be used to customize attributes based on whether the PR is an Open Source product. Currently there are two different product types at Snyk which can open PRs (Open Source PRs and Container Prs). Using this variable will help you customise your template to differentiate between the two.
+
+### Input
+
+```
+description: |
+  {{ #product_is_open_source }}
+  This Open Source PR has been opened to make sure our repositories are kept up-to-date.
+  It updates {{ package_name }} from version {{ package_from }} to version {{ package_to }}.
+  Review relevant docs for possible breaking changes.
+  {{ /product_is_open_source }}
+```
+
+### Output
+
+If your project is an Open Source project, the description will be:
+
+```
+  This Open Source PR has been opened to make sure our repositories are kept up-to-date.
+  It updates package x from version 1 to version 2.
+  Review relevant docs for possible breaking changes.
+```
+
 ## <mark style="color:purple;">`is_fix_pr: boolean`</mark>
 
 This checks to determine whether the pull request is a fix PR, for example, opened to fix new vulnerabilities introduced to the Project or repository in the latest scan.
@@ -551,6 +731,88 @@ The description of your PR will be:&#x20;
 
 ```yaml
 Is this an upgrade pr? false
+```
+
+
+
+## <mark style="color:purple;">`files_changed`</mark>
+
+This variable can be used in your template to list the files changed as part of the pull request.&#x20;
+
+### Input
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "Changes included in this PR: {{ files_changed }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+
+
+### Output
+
+If the pull request was for a maven project and the changes made were in the pom.xml file then this is what the description of your PR would look like.&#x20;
+
+```
+Changes included in this PR: pom.xml
+```
+
+## <mark style="color:purple;">`container.recommended_base_image_name`</mark>
+
+This variable is for container projects only. It can be used to display the name of the recommended base image applied in this PR.
+
+### Input
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "We recommend upgrading to {{ container.recommended_base_image_name }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+### Output
+
+The description of your PR will be:&#x20;
+
+```
+We recommend upgrading to node:xx.xx.x
+```
+
+## <mark style="color:purple;">`container.current_base_image_name`</mark>
+
+This variable is for container projects only. It can be used to display the current base image.
+
+### Input
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "The current base image is: {{ container.current_base_image_name }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+### Output
+
+The description of your PR will be:&#x20;
+
+```
+The current base image is: node:xx.xx.x
 ```
 
 ## <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
