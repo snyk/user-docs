@@ -237,29 +237,8 @@ Comply with the following steps before integrating Dynatrace with Snyk AppRisk:
 3. Ensure your deployment is activated. On your environment's page, click `Kubernetes` , then `Recommendations` and activate the cluster where you deployed OneAgent.
 4. An OAuth client with the right permissions. Navigate to [https://myaccount.dynatrace.com/accounts](https://myaccount.dynatrace.com/accounts), then to `Identity & access management` , select `OAuth clients` and click `Create client`. Fill in the details and check the following permissions, then click `Create client`:
 
-```
-account-env-read
-account-env-write
-account-uac-read
-account-uac-write
-storage:bizevents:read
-storage:bizevents:write
-storage:bucket-definitions:delete
-storage:bucket-definitions:read
-storage:bucket-definitions:truncate
-storage:bucket-definitions:write
-storage:buckets:read
-storage:entities:read
-storage:events:read
-storage:events:write
-storage:fieldsets:read
-storage:logs:read
-storage:logs:write
-storage:metrics:read
-storage:metrics:write
-storage:spans:read
-storage:system:read
-```
+<pre><code><strong>storage:entities:read
+</strong></code></pre>
 
 5. Save the Client ID and Client secret for later and click `Finish`.
 
