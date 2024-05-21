@@ -62,7 +62,7 @@ As a user of npm, you may ask, “Why Snyk?” when npm-audit is at hand anytime
 * Snyk helps secure not only open source but also your first-party code. If you are using infrastructure as code and/or containers, Snyk can also provide visibility and remediation advice.
 * It’s designed both for individuals and companies.
 * In the context of Open Source:
-  * You receive all the benefits of the curation, updates, and additional value that the Snyk Security Team adds, such as Known Exploit and Trending on Twitter.
+  * You receive all the benefits of the curation, updates, and additional value that the Snyk Security Team adds, such as Known Exploit and Trending on X (formerly known as Twitter).
   * You have Automated Remediation.
 * Central reporting.
 * Git Code repository integration, but not just there, Snyk has integrations across your pipeline and visibility into production.
