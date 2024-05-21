@@ -78,7 +78,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 ## **Field: When to run Snyk Monitor**
 
 **Parameter:** monitorWhen\
-**Required:** Yes\
+**Required:** No\
 **Default:** "always"\
 **Type:** string: string: "always", "onIssuesFound", or "never"
 
