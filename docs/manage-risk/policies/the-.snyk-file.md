@@ -88,22 +88,13 @@ For more information about using the `.snyk` file with Open Source Projects, see
 
 #### Set the language version for Python
 
-Manually modify the `.snyk` file to set `language-settings:` for the Project to Python 2.7:
+Manually modify the `.snyk` file to set `language-settings:` for the Project to Python 3.7:
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.25.0
 language-settings: 
-  python: "2.7"
-```
-
-Manually modify the `.snyk` file to set `language-settings:` for the Project to Python 3.6.2:
-
-```
-# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.25.0
-language-settings: 
-  python: "3.6.2"
+  python: "3.7"
 ```
 
 For more information, see [Setting Python version in Git Projects](../../getting-started/supported-languages-and-frameworks/python.md#setting-python-version-in-git-projects).
