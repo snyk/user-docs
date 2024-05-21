@@ -795,7 +795,7 @@
     * [View and edit Project settings](snyk-admin/snyk-projects/view-and-edit-project-settings.md)
     * [View Project history](snyk-admin/snyk-projects/view-project-history.md)
     * [Issue card information](snyk-admin/snyk-projects/issue-card-information.md)
-    * [Maximum number of Projects in an Organization](snyk-admin/snyk-projects/maximum-number-of-projects-in-an-organization.md)
+    * [Maximum number of Projects in an Organization](snyk-admin/snyk-projects/maximum-number-of-projects-in-an-organsation.md)
   * [Snyk Preview](snyk-admin/snyk-preview.md)
 * [Snyk CLI](snyk-cli/README.md)
   * [Getting started with the Snyk CLI](snyk-cli/getting-started-with-the-snyk-cli.md)

@@ -57,4 +57,4 @@ The **steps** in **configuring App role**s follow.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 2.55.05 PM.png" alt="Custom claim"><figcaption><p>Custom claim</p></figcaption></figure>
 
-When you have completed these steps, reach out to your Snyk point of contact to have the configuration completedd.
+When you have completed these steps, reach out to your Snyk point of contact to have the configuration completed.
