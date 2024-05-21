@@ -1049,6 +1049,7 @@
   * [How Snyk handles your data](working-with-snyk/how-snyk-handles-your-data.md)
   * [Regional hosting and data residency](working-with-snyk/regional-hosting-and-data-residency.md)
   * [Disclosure of a vulnerability in an open-source package](working-with-snyk/disclosure-of-a-vulnerability-in-an-open-source-package.md)
+  * [Reporting security issues](working-with-snyk/reporting-security-issues.md)
   * [Snyk Terms of Support and Services Glossary](working-with-snyk/snyk-terms-of-support-and-services-glossary/README.md)
     * [Snyk Jumpstart Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
     * [Snyk Jumpstart Customer Prerequisites](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)
