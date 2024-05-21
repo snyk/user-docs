@@ -287,7 +287,7 @@ Here you can find information about the programming languages, fully supported f
 * Interfile is supported
 * `.trigger` and `.cls` files are supported
 
-### [C#](../../getting-started/supported-languages-and-frameworks/.net/best-practices-for-.net.md#c)
+### [.Net](../../scan-with-snyk/supported-languages-and-frameworks/.net/)
 
 **Frameworks**:&#x20;
 
@@ -322,7 +322,7 @@ Here you can find information about the programming languages, fully supported f
 
 ### [Go](../../getting-started/supported-languages-and-frameworks/go.md)
 
-**Frameworks**: gopm
+**Frameworks**: GORM
 
 **Import your app through SCM**: Available
 
