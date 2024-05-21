@@ -142,13 +142,13 @@ For more details on levels of access to your repository required by different Sn
 
 Go modules projects that rely on modules from private Git repositories are supported if those repositories are in the same Git organization as the main project repository.
 
-If you have private modules in repositories from other Git organizations, your Project imports may not work properly.
+If you have private modules in repositories from other Git organizations, your Project imports may not work properly. The same is true if your code uses Git Submodules from another organization.
 
 Private module support in different SCMs varies depending on whether [full source code analysis](go.md#enable-full-source-code-analysis) is enabled or disabled.
 
 | Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                                |
 | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| <ul><li>Gitlab</li><li>GitHub Enterprise</li><li>GitHub</li><li>Bitbucket Server</li><li>Bitbucket Cloud</li><li>Azure Repos</li></ul> | <p></p><ul><li>GitHub</li><li>GitHub Enterprise</li><li>Bitbucket Cloud</li></ul> |
+| <ul><li>Azure Repos</li><li>Bitbucket Cloud</li><li>Bitbucket Server</li><li>GitHub</li><li>GitLab</li><li>GitHub Enterprise</li></ul> | <p></p><ul><li>Bitbucket Cloud</li><li>GitHub</li><li>GitHub Enterprise</li></ul> |
 
 #### **Snyk Broker**
 
@@ -173,9 +173,8 @@ To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your Git r
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/use-snyk-in-your-ide/).
-
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
+* For integrated development environments, see [Use Snyk in your IDE](../../integrate-with-snyk/use-snyk-in-your-ide/).
+* If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../integrate-with-snyk/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 
 ## Troubleshooting
 
