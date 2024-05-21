@@ -86,4 +86,5 @@ redirects:
   snyk-admin/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token: enterprise-configuration/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md
   manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk: manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/README.md
   manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/how-risk-based-prioritization-works: manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-risk-based-prioritization-works.md
+  scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers: scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/README.md
   
