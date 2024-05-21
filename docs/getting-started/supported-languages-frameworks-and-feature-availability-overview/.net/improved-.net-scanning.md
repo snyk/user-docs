@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Release status**&#x20;
 
-Improved Snyk Open Source scanning for NuGet .NET applications is now available in Early Access.&#x20;
+Improved Snyk Open Source scanning for NuGet .NET applications is now available in [Early Access](../../snyk-release-process.md#early-access).&#x20;
 
 While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations.
 
