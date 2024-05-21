@@ -73,7 +73,7 @@ For a table of Total Issues, use Change Reports to switch to the Issues Detail r
 {% hint style="info" %}
 #### Dependencies and Licenses information
 
-To view Dependencies and Licenses information, select the **Dependencies** menu option. See [Dependencies and licenses](../../snyk-admin/snyk-projects/dependencies-and-licenses/) for details.
+To view Dependencies and Licenses information, select the **Dependencies** menu option. See [Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/) for details.
 {% endhint %}
 
 ## Featured Zero-Day report

@@ -39,7 +39,7 @@ An example follows:
 
 ### View and manage license policies
 
-You can view an inventory of all of your licenses across all your Projects. Snyk also lists packages that have dual licenses and multiple licenses. For more information, see [View licenses](../../../snyk-admin/snyk-projects/dependencies-and-licenses/view-licenses.md).
+You can view an inventory of all of your licenses across all your Projects. Snyk also lists packages that have dual licenses and multiple licenses. For more information, see [View licenses](../../../manage-risk/reporting/dependencies-and-licenses/view-licenses.md).
 
 Different customers may have different needs and tolerance for different license types. We encourage you to ensure you have made the needed changes or created new policies that fit the specific requirements of your company.
 

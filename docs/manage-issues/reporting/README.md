@@ -19,4 +19,4 @@ Snyk Reports are highly flexible, enabling you to display specifically selected 
 Deactivated Projects and their respective results will not appear in the Reports area.
 {% endhint %}
 
-You can view dependencies and license information for all Projects in your Group or Organization. For more details, navigate to the [Dependencies and licenses](../../snyk-admin/snyk-projects/dependencies-and-licenses/) page.
+You can view dependencies and license information for all Projects in your Group or Organization. For more details, navigate to the [Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/) page.
