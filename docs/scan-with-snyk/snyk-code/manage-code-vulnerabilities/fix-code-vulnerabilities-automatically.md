@@ -3,12 +3,12 @@
 {% hint style="warning" %}
 **Release status**&#x20;
 
-DeepCode AI Fix is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
+DeepCode AI Fix is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) for anyone to try in the IDE.
 
-To enable the feature, see [Enable DeepCode AI Fix Suggestions](fix-code-vulnerabilities-automatically.md#enable-deepcode-ai-fix).
+To enable the feature, see [Enable DeepCode AI Fix](fix-code-vulnerabilities-automatically.md#enable-deepcode-ai-fix).
 {% endhint %}
 
-Fix the security issues and quality flaws in the source code through an automated flow. DeepCode AI Fix Suggestions calculates the most suitable solution for your issues and applies it automatically.
+Fix the security issues and quality flaws in the source code through an automated flow. DeepCode AI Fix calculates the most suitable solution for your issues and applies it automatically.
 
 ## Why use DeepCode AI Fix?
 
@@ -74,27 +74,35 @@ Enable DeepCode AI Fix  for your Organization in Snyk Web UI by navigating to **
 
 <figure><img src="../../../.gitbook/assets/enable_fix_suggestions_snyk_preview.png" alt="DeepCodeAI Fix Suggestions settings in Snyk Preview"><figcaption><p>DeepCodeAI Fix Suggestions settings in Snyk Preview</p></figcaption></figure>
 
-{% hint style="info" %}
-**Prerequisites for enabling DeepCode AI Fix**
+## Fix code issues automatically
 
-* Save the file before fixing an issue, as it requires clean code (saved code) to provide a fix.
-* Snyk recommends that when you save the code, you re-run the analysis to show code actions, such as **Fix this issue**.
-* You can request a fix by clicking **Fix this issue** in Code Lense and then saving the file. If your plugin settings are set to test automatically when saving, it will trigger the Snyk Code Analysis, and as a result, the issue disappears.
+{% hint style="info" %}
+**Before you begin**
+
+* Make sure you have Snyk IDE with Automated fixes.
+* Save the files and [scan your code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md) to generate a fresh set of results.
+* You should see a zap icon:zap:next to all Snyk Code issues that can be automatically fixed.
 {% endhint %}
 
-## Example: Fix code issue automatically
+1. Open your code base.
+2. Find and fix issues through the panel or by clicking **Fix this issue** in Code Lens.
+3. After a fix has been applied,  save and rescan.
 
-Consider the following scenario where hardcoded credentials are fixed using DeepCode AI Fix Suggestions.
+## Example: Fix a code issue automatically
 
-Snyk highlights hardcoded credentials as a vulnerability by adding a **Fix this issue** element in the IDE.
+DeepCode AI Fix highlights all identified vulnerabilities that can be automatically fixed. These are highlighted with a zap icon :zap:. For example, in this scenario, we have identified a Cross-Site Request Forgery (CSRF).
 
-<figure><img src="../../../.gitbook/assets/fix_suggestions_discovery (1).png" alt="Discovering a vulnerability in the code"><figcaption><p>Discovering a vulnerability in the code</p></figcaption></figure>
+Opening the vulnerability gives us details on where the issue is and allows us to generate a fix using DeepCode AI Fix.
 
-The issue is fixed by replacing the credentials with environment variables.
+<figure><img src="../../../.gitbook/assets/image (444).png" alt=""><figcaption><p>Opening the Snyk Code vulnerability panel</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/fix_suggestions_fix_applied (1).png" alt="Fix applied with DeepCode AI Fix "><figcaption><p>Fix applied with DeepCode AI Fix </p></figcaption></figure>
+Once you click on Generate fix using Snyk DeepCode AI, the machines will start turning and up to 5 fixes will be generated. To ensure we have fixed the vulnerability and DeepCode AI has not hallucinated and added a new vulnerability, we automatically retest all fixes with Snyk Code's engine.
 
-You can follow the entire sequence in this short (12-second) video.
+The result, in this case, is 5 fixes, which you can navigate through to decide which one is best for you. The first one is importing and using `csrf`, should solve this issue.
 
-<figure><img src="../../../.gitbook/assets/fix_hardcoded_secret.gif" alt="Fix hardcoded credentials with DeepCode AI Fix"><figcaption><p>Fix hardcoded credentials with DeepCode AI Fix</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (443).png" alt=""><figcaption><p>5 fixes have been generated</p></figcaption></figure>
+
+When you apply the fix in Code Lens, you will be guided to where the new code has been introduced. After you save and rescan, the vulnerability will disappear.
+
+<figure><img src="../../../.gitbook/assets/image (447).png" alt=""><figcaption><p>Vulnerability has been fixed</p></figcaption></figure>
 
