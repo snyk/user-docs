@@ -7,7 +7,7 @@ When testing your repository code via the CLI, you can:
 * [Test the repository directly from its root folder](scan-source-code-with-snyk-code-using-the-cli.md#testing-a-repository-from-its-root-folder).
 * [Test the repository from another location](scan-source-code-with-snyk-code-using-the-cli.md#testing-a-repository-from-a-different-location).
 
-When you test a folder, all its sub-folders and files are also tested.
+When you test a folder, all its sub-folders and files are also tested. You can test a single file in the current folder, or a single file in another folder by specifying the absolute path to the file.
 
 To exclude certain directories or files from the Snyk Code CLI test, you can use the following means:
 
