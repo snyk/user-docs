@@ -1,4 +1,4 @@
-package fetcher
+package versions
 
 import "testing"
 
@@ -26,7 +26,7 @@ func Test_getLatestGAVersion(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := getLatestGAVersion(tt.versions); got != tt.want {
+			if got := GetLatestGAVersion(tt.versions); got != tt.want {
 				t.Errorf("getLatestGAVersion() = %v, want %v", got, tt.want)
 			}
 		})
