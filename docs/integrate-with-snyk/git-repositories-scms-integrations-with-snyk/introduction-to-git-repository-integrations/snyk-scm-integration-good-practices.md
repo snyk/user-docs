@@ -130,13 +130,17 @@ The example that follows shows a fix pull request opened by Snyk:
 
 <figure><img src="../../../.gitbook/assets/mceclip0 (1).png" alt="Fix pull request opened by Snyk"><figcaption><p>Fix pull request opened by Snyk</p></figcaption></figure>
 
-To configure the PR test settings for specific Projects, select the relevant Organization and go to Organization **Settings** <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> > **Integrations > Edit Settings.**
+To configure the automatic fix PR settings for all Projects in an Organization, select the relevant Organization and navigate to Organization **Settings** > **Integrations > Edit Settings.**
 
-<div align="left">
+<div align="center">
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
 
 </div>
+
+{% hint style="info" %}
+Settings can also be configured per Project by selecting the specific Project in your Organization and navigating to the **Settings** tab. For more information, see [View and edit Project settings](https://docs.snyk.io/snyk-admin/snyk-projects/view-and-edit-project-settings).
+{% endhint %}
 
 Snyk recommends that you exclude patches from the auto fix PRs if your developers are not familiar with how to use and execute them.
 
