@@ -10,6 +10,20 @@ Contact your salesperson if you are interested in Snyk AppRisk Pro.
 
 The Runtime Sensor watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
 
+## Prerequisites
+
+To ensure proper use of the Snyk Runtime Sensor, ensure that your environment meets the following technical prerequisites:
+
+* Kubernetes supported version - Use Kubernetes v.1.19 or higher.
+
+{% hint style="info" %}
+Managed Kubernetes are not supported, for example, EKS Fargate or GKE Autopilot.
+{% endhint %}
+
+* Privileged access - you need either root or the following Linux capabilities: `BPF`, `PERFMON`, `SYS_RESOURCES`, `DAC_READ_SEARCH`, `SYS_PTRACE`, `NET_ADMIN`
+* Cluster nodes must support BTF
+* Language support - Go, Java v8 or higher, .NET v2.0.9 of higher, Node.js v10 or higher, Python 3.6 or higher
+
 ## Installation
 
 There is a [Helm chart](https://helm.sh) within this repo in [helm/runtime-sensor](https://github.com/snyk/runtime-sensor), that is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
