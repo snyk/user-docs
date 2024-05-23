@@ -1,0 +1,123 @@
+---
+run:
+  build-tags:
+    - integration
+  concurrency: 4
+  issues-exit-code: 1
+  skip-dirs:
+    - internal/rest/api/versions
+    - internal/rest/api_hidden/versions
+  tests: true
+  timeout: 5m
+
+linters-settings:
+  errcheck:
+    check-blank: true
+    check-type-assertions: true
+  exhaustive:
+    default-signifies-exhaustive: true
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - experimental
+      - opinionated
+      - performance
+      - style
+    settings:
+      hugeParam:
+        # Docs say this is the default, but for some reason without this set
+        # the rule doesn't trigger locally.
+        sizeThreshold: 80
+  gocyclo:
+    min-complexity: 10
+  gofmt:
+    simplify: true
+  goimports:
+    local-prefixes: github.com/snyk/user-docs/tools/api-docs-generator
+  gosec:
+    config:
+      G306: "0644"
+  gomnd:
+    checks:
+      - argument
+      - assign
+      - case
+      - condition
+      - operation
+      - return
+  govet:
+    check-shadowing: true
+  lll:
+    line-length: 160
+  misspell:
+    locale: US
+  nolintlint:
+    allow-leading-space: true
+    allow-unused: false
+    require-explanation: true
+    require-specific: true
+  prealloc:
+    simple: true
+    range-loops: true
+    for-loops: true
+  staticcheck:
+    checks:
+      - all
+      - -SA1019
+    go: "1.18"
+  stylecheck:
+    checks:
+      - all
+    go: "1.18"
+  varcheck:
+    exported-fields: true
+
+linters:
+  enable:
+    - asciicheck
+    - bidichk
+    - bodyclose
+    - contextcheck
+    - dogsled
+    - dupl
+    - durationcheck
+    - errname
+    - errorlint
+    - exhaustive
+    - exportloopref
+    - forcetypeassert
+    - goconst
+    - gocritic
+    - gocyclo
+    - godot
+    - goimports
+    - gosec
+    - lll
+    - misspell
+    - nakedret
+    - nestif
+    - nilerr
+    - nilnil
+    - noctx
+    - nolintlint
+    - prealloc
+    - promlinter
+    - sqlclosecheck
+    - stylecheck
+    - tenv
+    - thelper
+    - tparallel
+    - unconvert
+    - unparam
+    - wastedassign
+    - whitespace
+
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - bodyclose
+        - goconst
+    - path: test/
+      linters:
+        - testpackage
