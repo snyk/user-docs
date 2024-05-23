@@ -414,7 +414,7 @@ Snyk uses Python in order to scan and find your dependencies. If you are using m
 
 Default: `python` This executes your default python version. Run `python -V` to find out what your default version is.
 
-Example: `snyk test--command=python3`
+Example: `snyk test --command=python3`
 
 ### `--skip-unresolved=true|false`
 
@@ -440,7 +440,7 @@ For complete information about the command see [`--package-manager=<PACKAGE_MANA
 
 ## Options for Go projects
 
-Currently the following options are not supported:
+The following options are not supported:
 
 `--fail-on=<all|upgradable|patchable>`
 
@@ -480,7 +480,7 @@ To see how confident Snyk is about the identified dependency and its version, us
 
 ### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
-Use a double dash (`--`) after the complete Snyk command to pass additional options (arguments, flags) that follow directly to the build tool, for example Gradle or Maven.
+Use a double dash (`--`) after the complete Snyk command to pass additional options (arguments, flags) that follow directly to the build tool, for example, Gradle or Maven.
 
 The format is `snyk <command> -- [<context-specific_options>]`
 
