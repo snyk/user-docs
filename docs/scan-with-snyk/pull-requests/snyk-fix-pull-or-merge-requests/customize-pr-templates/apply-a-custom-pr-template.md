@@ -69,111 +69,14 @@ You can manually upload the YAML file with the name  `snyk_pull_request_template
 
 If you want to use a custom template for multiple repositories, add the YAML custom template file to each of these repositories.
 
-## Broker configurations for fetching custom PR templates
+## Broker configuration for fetching custom PR templates
 
-If you use  [Snyk Broker](../../../../enterprise-configuration/snyk-broker/), you must allow access to these file locations in the `accept.json` configuration of your Broker client. The following describes the additional rules that should be added for each Git integration.
+If you use  [Snyk Broker](../../../../enterprise-configuration/snyk-broker/), you must use a Broker at version 4.188.0 or higher and enable the Broker to fetch the custom PR templates using the`ACCEPT_CUSTOM_PR_TEMPLATES` environment variable.
 
-### GitHub and GitHub Enterprise
+To do this, you must remove `ACCEPT=/path/to/custom.json` and add the following environment variable to your Broker container or deployment:
 
-Under the list of `private` rules add the following input. For more information, see the Broker installation instructions for [GitHub](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/) and [GitHub Enterprise.](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/)
-
-```json
-{
-  "//": "used to get custom pull request template",
-  "method": "GET",
-  "path": "/repos/:name/:repo/contents/.github/snyk_pull_request_template.yaml",
-  "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
-},
-{
-  "//": "used to get custom pull request template",
-  "method": "GET",
-  "path": "/repos/:name/:repo/contents/.github%2Fsnyk_pull_request_template.yaml",
-  "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
-}
 ```
-
-### Azure repositories
-
-Under the list of `private` rules, add the following two elements to the existing `valid.values` array for file content. For more information, see the Broker installation instructions for [Azure repositories](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/).
-
-```json
-{
-  "//": "get file content. restrict by file types",
-  "method": "GET",
-  "path": "/:owner/_apis/git/repositories/:repo/items",
-  "origin": "https://${AZURE_REPOS_HOST}/${AZURE_REPOS_ORG}",
-  "valid": [
-    {
-      "queryParam": "path",
-      "values": [
-        "**/.azuredevops/snyk_pull_request_template.yaml",
-        "**%2F.azuredevops%2Fsnyk_pull_request_template.yaml",
-}
-```
-
-### BitBucket Server
-
-Under the list of `private` rules, add the following input. For more information, see the Broker installation instructions for [Bitbucket Server/Data Center](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/).
-
-```json
-{
-  "//": "used to get custom pull request template",
-  "method": "GET",
-  "path": "/projects/:project/repos/:repo/browse*/snyk_pull_request_template.yaml",
-  "origin": "https://${BITBUCKET_API}",
-  "auth": {
-    "scheme": "basic",
-    "username": "${BITBUCKET_USERNAME}",
-    "password": "${BITBUCKET_PASSWORD}"
-  }
-},
-{
-  "//": "used to get custom pull request template",
-  "method": "GET",
-  "path": "/projects/:project/repos/:repo/browse*%2Fsnyk_pull_request_template.yaml",
-  "origin": "https://${BITBUCKET_API}",
-  "auth": {
-    "scheme": "basic",
-    "username": "${BITBUCKET_USERNAME}",
-    "password": "${BITBUCKET_PASSWORD}"
-  }
-}
-```
-
-### GitLab
-
-Under the list of `private` rules, add the following input. For more information, the Broker installation instructions for [GitLab](../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/gitlab-prerequisites-and-steps-to-install-and-configure-broker/).
-
-```json
-{
-  "//": "used to get custom pull request template",
-  "method": "GET",
-  "path": "/api/v4/projects/:project/repository/files*/snyk_pull_request_template.yaml",
-  "origin": "https://${GITLAB}"
-},
-{
-  "//": "used to get custom pull request template",
-  "method": "GET",
-  "path": "/api/v4/projects/:project/repository/files*%2Fsnyk_pull_request_template.yaml",
-  "origin": "https://${GITLAB}"
-}
-```
-
-If you use GitLab v3, add the following two elements to the existing `valid.values` array for file content:
-
-```json
-{
-  "//": "used to determine the full dependency tree for v3 protocol",
-  "method": "GET",
-  "path": "/api/v3/projects/:project/repository/files",
-  "origin": "https://${GITLAB}",
-  "valid": [
-    {
-      "queryParam": "file_path",
-      "values": [
-        "**/.config/snyk_pull_request_template.yaml",
-        "**%2F.config%2Fsnyk_pull_request_template.yaml",
-}
+ACCEPT_CUSTOM_PR_TEMPLATES=true
 ```
 
 [^1]: 
