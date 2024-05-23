@@ -25,6 +25,7 @@ Snyk Container supports the following operating system distributions:
 
 ### [Alpine Linux](https://www.alpinelinux.org/)
 
+* Alpine Linux 3.20
 * Alpine Linux 3.19
 * Alpine Linux 3.18
 * Alpine Linux 3.17
