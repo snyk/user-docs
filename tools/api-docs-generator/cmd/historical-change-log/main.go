@@ -24,7 +24,7 @@ func main() {
 	// 2. oas diff to generate log
 	// 3. Write the changelog file
 
-	err := Generate("docs/snyk-api/CHANGELOG.md", "2024-04-29")
+	err := Generate("docs/snyk-api/changelog.md", "2024-04-29")
 	if err != nil {
 		log.Panic(err)
 	}
@@ -59,43 +59,57 @@ func Generate(changeLogFileName, endVersion string) error {
 	endVersionPos := sort.SearchStrings(gaVersions, endVersion)
 	gaVersions = gaVersions[:endVersionPos]
 	slices.Reverse(gaVersions)
-	baseVersion := gaVersions[0]
+	nextVersion := gaVersions[0]
 
 	writer, err := os.Create(changeLogFileName)
 	if err != nil {
 		return err
 	}
 
-	_, err = fmt.Fprintf(writer, "# Change Log\n\n")
+	_, err = fmt.Fprintf(writer, "# API Change Log\n\n")
 	if err != nil {
 		return err
 	}
-
-	for _, nextVersion := range gaVersions[1:] {
-		baseVersionURI := fmt.Sprintf("https://api.snyk.io/rest/openapi/%s", baseVersion)
-		nextVersionURI := fmt.Sprintf("https://api.snyk.io/rest/openapi/%s", nextVersion)
-		baseVersion = nextVersion
-		groupedChanges, err := getChangeLog(baseVersionURI, nextVersionURI, loader)
+	for _, baseVersion := range gaVersions[1:] {
+		nextURL := fmt.Sprintf("https://api.snyk.io/rest/openapi/%s", nextVersion)
+		baseURL := fmt.Sprintf("https://api.snyk.io/rest/openapi/%s", baseVersion)
+		nextVersion = baseVersion
+		groupedChanges, _, err := getChangeLog(nextURL, baseURL, loader)
 		if err != nil {
 			return err
 		}
 
+		if len(groupedChanges) == 0 {
+			continue
+		}
 		markdown := md.NewMarkdown(writer)
-		markdown.H2(fmt.Sprintf("%s\n", nextVersion))
+		markdown.H2(fmt.Sprintf("%s\n", baseVersion))
+
 		for op, changes := range groupedChanges {
 			changesVal := *changes
-			markdown.H3f("%s - %s - Updated", op.Operation, op.Path)
-			for index, change := range changesVal {
-				if change.IsBreaking {
-					markdown.BulletList(change.Text)
-					markdown.YellowBadge("Breaking")
-				} else {
-					markdown.BulletList(fmt.Sprintf("%s\n", change.Text))
+			if len(changesVal) == 1 && changesVal[0].Text == "endpoint added" {
+				markdown.H3f("%s - %s - Added", op.Operation, op.Path)
+				parsedUrl, err := url.Parse(nextURL)
+				if err != nil {
+					return err
 				}
-				if index == len(groupedChanges)-1 {
-					markdown.PlainText("\n")
+				document, err := loader.LoadFromURI(parsedUrl)
+				if err != nil {
+					return err
+				}
+				markdown.BulletList(replaceWithCodeQuotes(document.Paths.Find(op.Path).Operations()[op.Operation].Description))
+			} else {
+				markdown.H3f("%s - %s - Updated", op.Operation, op.Path)
+				for _, change := range changesVal {
+					if change.IsBreaking {
+						markdown.BulletList(replaceWithCodeQuotes(change.Text))
+						markdown.YellowBadge("Breaking")
+					} else {
+						markdown.BulletList(fmt.Sprintf("%s\n", replaceWithCodeQuotes(change.Text)))
+					}
 				}
 			}
+			markdown.PlainText("\n")
 		}
 		err = markdown.Build()
 
@@ -103,7 +117,12 @@ func Generate(changeLogFileName, endVersion string) error {
 			return err
 		}
 	}
+
 	return writer.Close()
+}
+
+func replaceWithCodeQuotes(description string) string {
+	return strings.ReplaceAll(description, "'", "`")
 }
 
 type Endpoint struct {
@@ -137,15 +156,15 @@ func GroupChanges(changes checker.Changes, l checker.Localizer) ChangesByEndpoin
 	return apiChanges
 }
 
-func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader) (ChangesByEndpoint, error) {
+func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader) (ChangesByEndpoint, *diff.Diff, error) {
 	baseVersionURL, err := url.Parse(baseVersionURI)
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
 
 	nextVersionURL, err := url.Parse(nextVersionURI)
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
 
 	flattenAllOf := load.WithFlattenAllOf()
@@ -154,11 +173,11 @@ func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader
 
 	s1, err := load.NewSpecInfo(loader, load.NewSource(baseVersionURL.String()), flattenAllOf, flattenParams, lowerHeaderNames)
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
 	s2, err := load.NewSpecInfo(loader, load.NewSource(nextVersionURL.String()), flattenAllOf, flattenParams, lowerHeaderNames)
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
 
 	diffReport, sourcesMap, err := diff.GetWithOperationsSourcesMap(diff.NewConfig(), s1, s2)
@@ -166,10 +185,10 @@ func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader
 
 	groupedChanges := GroupChanges(changes, checker.NewLocalizer("en"))
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
 
-	return groupedChanges, nil
+	return groupedChanges, diffReport, nil
 }
 
 func gaVersions(versions []string) []string {
