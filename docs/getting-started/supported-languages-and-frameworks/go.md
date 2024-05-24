@@ -4,7 +4,7 @@
 
 ### Code analysis
 
-Snyk Code support for Go is limited.
+Snyk Code partially supports Go.
 
 ### Open source and licensing
 
