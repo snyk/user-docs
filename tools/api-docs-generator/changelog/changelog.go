@@ -8,6 +8,7 @@ import (
 	"os"
 	"slices"
 	"sort"
+	"strings"
 
 	"github.com/getkin/kin-openapi/openapi3"
 	md "github.com/nao1215/markdown"
@@ -103,11 +104,6 @@ func GenerateHistorical(ctx context.Context, cfg config.Config, changeLogFileNam
 		return err
 	}
 
-	_, err = fmt.Fprintf(writer, "# API Change Log\n\n")
-	if err != nil {
-		return err
-	}
-
 	for _, baseVersion := range gaVersions[1:] {
 		nextURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, nextVersion)
 		baseURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, baseVersion)
@@ -116,6 +112,8 @@ func GenerateHistorical(ctx context.Context, cfg config.Config, changeLogFileNam
 		if err != nil {
 			return err
 		}
+
+		groupedChanges = filterChanges(groupedChanges)
 
 		if len(groupedChanges) == 0 {
 			continue
@@ -136,6 +134,16 @@ func GenerateHistorical(ctx context.Context, cfg config.Config, changeLogFileNam
 
 	return writer.Close()
 }
+func filterChanges(changes ChangesByEndpoint) ChangesByEndpoint {
+	filteredChanges := ChangesByEndpoint{}
+	for endpoint, change := range changes {
+		if strings.HasPrefix(endpoint.Path, "/openapi") {
+			continue
+		}
+		filteredChanges[endpoint] = change
+	}
+	return filteredChanges
+}
 
 func WriteToChangeLog(markdown *md.Markdown, groupedChanges ChangesByEndpoint, baseVersion, nextVersionURL string) error {
 	loader := openapi3.NewLoader()
@@ -147,7 +155,7 @@ func WriteToChangeLog(markdown *md.Markdown, groupedChanges ChangesByEndpoint, b
 
 	for op, changes := range groupedChanges {
 		if len(changes) == 1 && changes[0].GetUncolorizedText(localizer) == "endpoint added" {
-			markdown.H3f("%s - %s - Added", op.Operation, op.Path)
+			markdown.H3f("%s - `%s` - Added", op.Operation, op.Path)
 			parsedURL, err := url.Parse(nextVersionURL)
 			if err != nil {
 				return err
@@ -158,7 +166,7 @@ func WriteToChangeLog(markdown *md.Markdown, groupedChanges ChangesByEndpoint, b
 			}
 			markdown.BulletList(versions.ReplaceWithCodeQuotes(document.Paths.Find(op.Path).Operations()[op.Operation].Description))
 		} else {
-			markdown.H3f("%s - %s - Updated", op.Operation, op.Path)
+			markdown.H3f("%s - `%s` - Updated", op.Operation, op.Path)
 			for index := range changes {
 				if changes[index].IsBreaking() {
 					markdown.BulletList(versions.ReplaceWithCodeQuotes(changes[index].GetUncolorizedText(localizer)))
