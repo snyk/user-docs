@@ -1,409 +1,827 @@
-# API Change Log
-
 ## 2024-04-11
 
-### GET - /orgs/{org_id}/projects/{project_id} - Updated
-- added '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' to the 'data/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects</span>
+  - Updated
+</div>
+
+- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/items/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
-### PATCH - /orgs/{org_id}/projects/{project_id} - Updated
-- added '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' to the 'data/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
-### GET - /self - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/self</span>
+  - Added
+</div>
+
 - Retrieves information about the the user making the request.
-
-
-### GET - /orgs/{org_id}/projects - Updated
-- added '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' to the 'data/items/relationships/target' response property 'oneOf' list for the response status '200'
-
 
 ## 2024-02-21
 
-### GET - /orgs - Updated
-- for the 'query' request parameter 'name', the maxLength was set to '100'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- for the 'query' request parameter 'slug', the maxLength was set to '100'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the pattern '^[\w.-]+$' to the 'query' request parameter 'slug'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property 'data/items/attributes/access_requests_enabled' to the response with the '200' status
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs</span>
+  - Updated
+</div>
+
+- for the `query` request parameter `name`, the maxLength was set to `100`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- for the `query` request parameter `slug`, the maxLength was set to `100`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the pattern `^[\w.-]+$` to the `query` request parameter `slug`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/items/attributes/access_requests_enabled` to the response with the `200` status
 
 
 
-### GET - /groups/{group_id}/orgs - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/orgs</span>
+  - Added
+</div>
+
 - Get a paginated list of all the organizations belonging to the group.
-By default, this endpoint returns the organizations in alphabetical order of their name.
-
-
-### GET - /orgs/{org_id} - Updated
-- added the optional property 'data/attributes/access_requests_enabled' to the response with the '200' status
+  By default, this endpoint returns the organizations in alphabetical order of their name.
 
 
 
-### PATCH - /orgs/{org_id} - Updated
-- added the optional property 'data/attributes/access_requests_enabled' to the response with the '200' status
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}</span>
+  - Updated
+</div>
+
+- added the optional property `data/attributes/access_requests_enabled` to the response with the `200` status
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}</span>
+  - Updated
+</div>
+
+- added the optional property `data/attributes/access_requests_enabled` to the response with the `200` status
 
 
 ## 2024-01-23
 
-### GET - /orgs/{org_id}/projects/{project_id} - Updated
-- removed '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' from the 'data/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
-### PATCH - /orgs/{org_id}/projects/{project_id} - Updated
-- removed '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' from the 'data/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/targets</span>
+  - Added
+</div>
+
+- Get a list of an organization`s targets.
 
 
 
-### GET - /orgs/{org_id}/targets - Added
-- Get a list of an organization's targets.
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/targets/{target_id}</span>
+  - Added
+</div>
 
-
-### DELETE - /orgs/{org_id}/targets/{target_id} - Added
 - Delete the specified target.
 
 
-### GET - /orgs/{org_id}/targets/{target_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/targets/{target_id}</span>
+  - Added
+</div>
+
 - Get a specified target for an organization.
 
 
-### GET - /openapi - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
 
-- added the optional property 'errors/items/links' to the response with the '401' status
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
 
-- added the optional property 'errors/items/links' to the response with the '404' status
+- added the optional property `errors/items/links` to the response with the `400` status
 
-- added the optional property 'errors/items/links' to the response with the '500' status
+- added the optional property `errors/items/links` to the response with the `401` status
 
+- added the optional property `errors/items/links` to the response with the `404` status
 
-
-### GET - /openapi/{version} - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
-
-- added the optional property 'errors/items/links' to the response with the '401' status
-
-- added the optional property 'errors/items/links' to the response with the '404' status
-
-- added the optional property 'errors/items/links' to the response with the '500' status
+- added the optional property `errors/items/links` to the response with the `500` status
 
 
 
-### GET - /orgs/{org_id}/projects - Updated
-- removed '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' from the 'data/items/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- added the optional property `errors/items/links` to the response with the `400` status
+
+- added the optional property `errors/items/links` to the response with the `401` status
+
+- added the optional property `errors/items/links` to the response with the `404` status
+
+- added the optional property `errors/items/links` to the response with the `500` status
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/items/relationships/target` response property `oneOf` list for the response status `200`
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
 ## 2024-01-04
 
-### GET - /openapi/{version} - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 
-### GET - /groups/{group_id}/issues - Added
-- Get a list of a group's issues.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/issues</span>
+  - Added
+</div>
+
+- Get a list of a group`s issues.
 
 
-### GET - /groups/{group_id}/issues/{issue_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/issues/{issue_id}</span>
+  - Added
+</div>
+
 - Get an issue
 
 
-### GET - /orgs/{org_id}/issues - Added
-- Get a list of an organization's issues.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/issues</span>
+  - Added
+</div>
+
+- Get a list of an organization`s issues.
 
 
-### GET - /orgs/{org_id}/issues/{issue_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/issues/{issue_id}</span>
+  - Added
+</div>
+
 - Get an issue
 
 
-### GET - /openapi - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 ## 2023-12-21
 
-### GET - /custom_base_images/{custombaseimage_id} - Updated
-- removed '#/components/schemas/VersioningSchemaDateType' from the 'data/attributes/versioning_schema' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/custom_base_images/{custombaseimage_id}</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/VersioningSchemaDateType` from the `data/attributes/versioning_schema` response property `oneOf` list for the response status `200`
 
 
 
-### POST - /custom_base_images - Updated
-- removed '#/components/schemas/VersioningSchemaDateType' from the 'data/attributes/versioning_schema' request property 'oneOf' list
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed '#/components/schemas/VersioningSchemaDateType' from the 'data/attributes/versioning_schema' response property 'oneOf' list for the response status '201'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/custom_base_images</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/VersioningSchemaDateType` from the `data/attributes/versioning_schema` request property `oneOf` list
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed `#/components/schemas/VersioningSchemaDateType` from the `data/attributes/versioning_schema` response property `oneOf` list for the response status `201`
 
 
 
-### PATCH - /custom_base_images/{custombaseimage_id} - Updated
-- removed '#/components/schemas/VersioningSchemaDateType' from the 'data/attributes/versioning_schema' request property 'oneOf' list
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed '#/components/schemas/VersioningSchemaDateType' from the 'data/attributes/versioning_schema' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/custom_base_images/{custombaseimage_id}</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/VersioningSchemaDateType` from the `data/attributes/versioning_schema` request property `oneOf` list
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed `#/components/schemas/VersioningSchemaDateType` from the `data/attributes/versioning_schema` response property `oneOf` list for the response status `200`
 
 
 ## 2023-11-03
 
-### GET - /openapi - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
 
-- added the optional property 'errors/items/links' to the response with the '401' status
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
 
-- added the optional property 'errors/items/links' to the response with the '404' status
+- added the optional property `errors/items/links` to the response with the `400` status
 
-- added the optional property 'errors/items/links' to the response with the '500' status
+- added the optional property `errors/items/links` to the response with the `401` status
 
+- added the optional property `errors/items/links` to the response with the `404` status
 
-
-### GET - /openapi/{version} - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
-
-- added the optional property 'errors/items/links' to the response with the '401' status
-
-- added the optional property 'errors/items/links' to the response with the '404' status
-
-- added the optional property 'errors/items/links' to the response with the '500' status
+- added the optional property `errors/items/links` to the response with the `500` status
 
 
 
-### DELETE - /orgs/{org_id}/projects/{project_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- added the optional property `errors/items/links` to the response with the `400` status
+
+- added the optional property `errors/items/links` to the response with the `401` status
+
+- added the optional property `errors/items/links` to the response with the `404` status
+
+- added the optional property `errors/items/links` to the response with the `500` status
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Added
+</div>
+
 - Delete one project in the organization by project ID.
 
 ## 2023-11-02
 
-### GET - /orgs/{org_id}/apps/creations - Added
-- Get a list of apps created by an organization.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/apps/installs/{install_id}/secrets</span>
+  - Added
+</div>
+
+- Manage client secret for non-interactive Snyk App installations.
 
 
-### POST - /orgs/{org_id}/apps/creations - Added
-- Create a new Snyk App for an organization.
 
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/self/apps/{app_id}/sessions</span>
+  - Added
+</div>
 
-### POST - /orgs/{org_id}/apps/installs - Added
-- Install a Snyk Apps to this organization, the Snyk App must use unattended authentication eg client credentials.
-
-
-### DELETE - /orgs/{org_id}/apps/installs/{install_id} - Added
-- Revoke app authorization for an Snyk Organization with install ID.
-
-
-### GET - /self/apps/{app_id}/sessions - Added
 - Get a list of active OAuth sessions for the app.
 
 
-### GET - /orgs/{org_id}/apps - Updated
-- the response property 'data/items/attributes/client_id' became optional for the status '200'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the response property 'data/items/attributes/redirect_uris' became optional for the status '200'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps</span>
+  - Updated
+</div>
+
+- the response property `data/items/attributes/client_id` became optional for the status `200`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/items/attributes/redirect_uris` became optional for the status `200`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 
-### GET - /groups/{group_id}/apps/installs - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/{client_id}</span>
+  - Updated
+</div>
+
+- added the new required request property `data`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/attributes/client_id` became optional for the status `200`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/attributes/redirect_uris` became optional for the status `200`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `access_token_ttl_seconds`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `name`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `redirect_uris`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/apps/installs</span>
+  - Added
+</div>
+
 - Get a list of apps installed for a group.
 
 
-### DELETE - /groups/{group_id}/apps/installs/{install_id} - Added
-- Revoke app authorization for an Snyk Group with install ID.
 
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/apps/installs</span>
+  - Added
+</div>
 
-### GET - /orgs/{org_id}/apps/{client_id} - Updated
-- the response property 'data/attributes/client_id' became optional for the status '200'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the response property 'data/attributes/redirect_uris' became optional for the status '200'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### PATCH - /orgs/{org_id}/apps/{client_id} - Updated
-- added the new required request property 'data'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the response property 'data/attributes/client_id' became optional for the status '200'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the response property 'data/attributes/redirect_uris' became optional for the status '200'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'access_token_ttl_seconds'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'name'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'redirect_uris'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### GET - /orgs/{org_id}/apps/creations/{app_id} - Added
-- Get a Snyk App by its App ID.
-
-
-### POST - /orgs/{org_id}/apps/creations/{app_id}/secrets - Added
-- Manage client secret for the Snyk App.
-
-
-### DELETE - /self/apps/installs/{install_id} - Added
-- Revoke access for an app by install ID.
-
-
-### DELETE - /self/apps/{app_id}/sessions/{session_id} - Added
-- Revoke an active user app session.
-
-
-### GET - /openapi/{version} - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### POST - /groups/{group_id}/apps/installs - Added
 - Install a Snyk Apps to this group, the Snyk App must use unattended authentication eg client credentials.
 
 
-### DELETE - /orgs/{org_id}/apps/creations/{app_id} - Added
-- Delete an app by its App ID.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/apps/installs/{install_id}</span>
+  - Added
+</div>
+
+- Revoke app authorization for an Snyk Group with install ID.
 
 
-### PATCH - /orgs/{org_id}/apps/creations/{app_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/creations/{app_id}</span>
+  - Added
+</div>
+
 - Update app creation attributes with App ID.
 
 
-### GET - /orgs/{org_id}/apps/installs - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/installs</span>
+  - Added
+</div>
+
 - Get a list of apps installed for an organization.
 
 
-### POST - /orgs/{org_id}/apps/installs/{install_id}/secrets - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/installs/{install_id}</span>
+  - Added
+</div>
+
+- Revoke app authorization for an Snyk Organization with install ID.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/{client_id}</span>
+  - Updated
+</div>
+
+- the response property `data/attributes/client_id` became optional for the status `200`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/attributes/redirect_uris` became optional for the status `200`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/creations</span>
+  - Added
+</div>
+
+- Get a list of apps created by an organization.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/creations</span>
+  - Added
+</div>
+
+- Create a new Snyk App for an organization.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/creations/{app_id}</span>
+  - Added
+</div>
+
+- Get a Snyk App by its App ID.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/installs/{install_id}/secrets</span>
+  - Added
+</div>
+
 - Manage client secret for non-interactive Snyk App installations.
 
 
-### GET - /self/apps/installs - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/self/apps/installs</span>
+  - Added
+</div>
+
 - Get a list of apps installed for an user.
 
 
-### POST - /orgs/{org_id}/apps - Updated
-- added the new required request property 'data'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'access_token_ttl_seconds'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'context'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'name'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'redirect_uris'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'scopes'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/creations/{app_id}/secrets</span>
+  - Added
+</div>
+
+- Manage client secret for the Snyk App.
 
 
-### GET - /openapi - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/self/apps/installs/{install_id}</span>
+  - Added
+</div>
+
+- Revoke access for an app by install ID.
 
 
-### POST - /groups/{group_id}/apps/installs/{install_id}/secrets - Added
-- Manage client secret for non-interactive Snyk App installations.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/self/apps/{app_id}/sessions/{session_id}</span>
+  - Added
+</div>
+
+- Revoke an active user app session.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps</span>
+  - Updated
+</div>
+
+- added the new required request property `data`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `access_token_ttl_seconds`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `context`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `name`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `redirect_uris`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `scopes`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/creations/{app_id}</span>
+  - Added
+</div>
+
+- Delete an app by its App ID.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/installs</span>
+  - Added
+</div>
+
+- Install a Snyk Apps to this organization, the Snyk App must use unattended authentication eg client credentials.
 
 ## 2023-10-24
 
-### GET - /orgs/{org_id}/container_images - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/container_images</span>
+  - Added
+</div>
+
 - List instances of container image
 
 
-### GET - /orgs/{org_id}/container_images/{image_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/container_images/{image_id}</span>
+  - Added
+</div>
+
 - Get instance of container image
 
 
-### GET - /orgs/{org_id}/container_images/{image_id}/relationships/image_target_refs - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/container_images/{image_id}/relationships/image_target_refs</span>
+  - Added
+</div>
+
 - List instances of image target references for a container image
 
 ## 2023-09-12
 
-### GET - /orgs/{org_id}/projects - Updated
-- added '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' to the 'data/items/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
-### GET - /orgs/{org_id}/projects/{project_id} - Updated
-- added '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' to the 'data/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
-### PATCH - /orgs/{org_id}/projects/{project_id} - Updated
-- added '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' to the 'data/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects</span>
+  - Updated
+</div>
+
+- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/items/relationships/target` response property `oneOf` list for the response status `200`
 
 
 ## 2023-09-11
 
-### POST - /orgs/{org_id}/collections - Added
-- Create a collection
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
-### DELETE - /orgs/{org_id}/collections/{collection_id} - Added
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/collections</span>
+  - Added
+</div>
+
+- Return a list of organization`s collections with issues counts  and projects count.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/collections/{collection_id}</span>
+  - Added
+</div>
+
 - Delete a collection
 
 
-### GET - /orgs/{org_id}/projects - Updated
-- removed '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' from the 'data/items/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/collections/{collection_id}/relationships/projects</span>
+  - Added
+</div>
+
+- Return a list of organization`s projects that are from the specified collection.
 
 
 
-### GET - /orgs/{org_id}/collections/{collection_id}/relationships/projects - Added
-- Return a list of organization's projects that are from the specified collection.
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/collections/{collection_id}/relationships/projects</span>
+  - Added
+</div>
+
+- Remove projects from a collection by specifying an array of project ids
 
 
-### POST - /orgs/{org_id}/collections/{collection_id}/relationships/projects - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/collections/{collection_id}/relationships/projects</span>
+  - Added
+</div>
+
 - Add projects to a collection by specifying an array of project ids
 
 
-### GET - /orgs/{org_id}/projects/{project_id} - Updated
-- removed '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' from the 'data/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects</span>
+  - Updated
+</div>
+
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/items/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
-### PATCH - /orgs/{org_id}/projects/{project_id} - Updated
-- removed '#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget' from the 'data/relationships/target' response property 'oneOf' list for the response status '200'
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/collections</span>
+  - Added
+</div>
+
+- Create a collection
 
 
 
-### GET - /orgs/{org_id}/collections - Added
-- Return a list of organization's collections with issues counts  and projects count.
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/collections/{collection_id}</span>
+  - Added
+</div>
 
-
-### GET - /orgs/{org_id}/collections/{collection_id} - Added
 - Get a collection
 
 
-### PATCH - /orgs/{org_id}/collections/{collection_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/collections/{collection_id}</span>
+  - Added
+</div>
+
 - Edit a collection
-
-
-### DELETE - /orgs/{org_id}/collections/{collection_id}/relationships/projects - Added
-- Remove projects from a collection by specifying an array of project ids
 
 ## 2023-09-07
 
-### GET - /groups/{group_id}/audit_logs/search - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/audit_logs/search</span>
+  - Added
+</div>
+
 - Search audit logs for a Group. Some Organization level events are supported as well as the following
-Group level events:
+  Group level events:
   - api.access
   - group.cloud_config.settings.edit
   - group.create
@@ -440,7 +858,13 @@ Group level events:
 
 
 
-### GET - /orgs/{org_id}/audit_logs/search - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/audit_logs/search</span>
+  - Added
+</div>
+
 - Search audit logs for an Organization. Supported event types:
   - api.access
   - org.app_bot.create
@@ -516,86 +940,209 @@ Group level events:
 
 
 
-### PATCH - /orgs/{org_id}/settings/sast - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/settings/sast</span>
+  - Added
+</div>
+
 - Enable/Disable the Snyk Code settings for an org
 
 ## 2023-08-29
 
-### POST - /groups/{group_id}/service_accounts/{serviceaccount_id}/secrets - Added
-- Manage the client secret of a group service account by the service account ID.
 
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets</span>
+  - Added
+</div>
 
-### GET - /orgs/{org_id}/service_accounts - Added
-- Get all service accounts for an organization.
-
-
-### POST - /orgs/{org_id}/service_accounts - Added
-- Create a service account for an organization. The service account can be used to access the Snyk API.
-
-
-### PATCH - /orgs/{org_id}/service_accounts/{serviceaccount_id} - Added
-- Update the name of an organization-level service account by its ID.
-
-
-### POST - /groups/{group_id}/service_accounts - Added
-- Create a service account for a group. The service account can be used to access the Snyk API.
-
-
-### DELETE - /groups/{group_id}/service_accounts/{serviceaccount_id} - Added
-- Permanently delete a group-level service account by its ID.
-
-
-### GET - /groups/{group_id}/service_accounts/{serviceaccount_id} - Added
-- Get a group-level service account by its ID.
-
-
-### GET - /orgs/{org_id}/service_accounts/{serviceaccount_id} - Added
-- Get an organization-level service account by its ID.
-
-
-### POST - /orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets - Added
 - Manage the client secret of an organization service account by the service account ID.
 
 
-### GET - /groups/{group_id}/service_accounts - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/service_accounts/{serviceaccount_id}</span>
+  - Added
+</div>
+
+- Update the name of a group`s service account by its ID.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/service_accounts</span>
+  - Added
+</div>
+
+- Get all service accounts for an organization.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/service_accounts</span>
+  - Added
+</div>
+
+- Create a service account for an organization. The service account can be used to access the Snyk API.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/service_accounts/{serviceaccount_id}</span>
+  - Added
+</div>
+
+- Get an organization-level service account by its ID.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/service_accounts/{serviceaccount_id}</span>
+  - Added
+</div>
+
+- Update the name of an organization-level service account by its ID.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/service_accounts/{serviceaccount_id}</span>
+  - Added
+</div>
+
+- Delete a service account in an organization.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/service_accounts</span>
+  - Added
+</div>
+
 - Get all service accounts for a group.
 
 
-### PATCH - /groups/{group_id}/service_accounts/{serviceaccount_id} - Added
-- Update the name of a group's service account by its ID.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/service_accounts</span>
+  - Added
+</div>
+
+- Create a service account for a group. The service account can be used to access the Snyk API.
 
 
-### DELETE - /orgs/{org_id}/service_accounts/{serviceaccount_id} - Added
-- Delete a service account in an organization.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/service_accounts/{serviceaccount_id}</span>
+  - Added
+</div>
+
+- Permanently delete a group-level service account by its ID.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/service_accounts/{serviceaccount_id}</span>
+  - Added
+</div>
+
+- Get a group-level service account by its ID.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets</span>
+  - Added
+</div>
+
+- Manage the client secret of a group service account by the service account ID.
 
 ## 2023-08-24
 
-### PATCH - /orgs/{org_id}/projects/{project_id} - Updated
-- deleted the 'query' request parameter 'user_id'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Updated
+</div>
+
+- deleted the `query` request parameter `user_id`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 
-### GET - /orgs/{org_id}/projects - Updated
-- added the new optional 'query' request parameter 'names_start_with'
 
-- added the new optional 'query' request parameter 'target_file'
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects</span>
+  - Updated
+</div>
 
-- added the new optional 'query' request parameter 'target_reference'
+- added the new optional `query` request parameter `names_start_with`
 
-- added the new optional 'query' request parameter 'target_runtime'
+- added the new optional `query` request parameter `target_file`
+
+- added the new optional `query` request parameter `target_reference`
+
+- added the new optional `query` request parameter `target_runtime`
 
 
 ## 2023-08-04
 
-### GET - /custom_base_images - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/custom_base_images/{custombaseimage_id}</span>
+  - Added
+</div>
+
+- Updates a custom base image`s attributes
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/packages/issues</span>
+  - Updated
+</div>
+
+- added the optional property `meta` to the response with the `200` status
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/custom_base_images</span>
+  - Added
+</div>
+
 - Get a list of custom base images with support for ordering and filtering.
-Either the org_id or group_id parameters must be set to authorize successfully.
+  Either the org_id or group_id parameters must be set to authorize successfully.
 
 
 
-### POST - /custom_base_images - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/custom_base_images</span>
+  - Added
+</div>
+
 - In order to create a custom base image, you first need to import your base images into Snyk.
-You can do this through the CLI, UI, or API.
+  You can do this through the CLI, UI, or API.
 
 This endpoint marks an image as a custom base image. This means that the image will get
 added to the pool of images from which Snyk can recommend base image upgrades.
@@ -605,161 +1152,260 @@ To update the versioning schema, the PATCH endpoint must be used.
 
 
 
-### DELETE - /custom_base_images/{custombaseimage_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/custom_base_images/{custombaseimage_id}</span>
+  - Added
+</div>
+
 - Delete a custom base image resource. (the related container project is unaffected)
 
 
-### GET - /custom_base_images/{custombaseimage_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/custom_base_images/{custombaseimage_id}</span>
+  - Added
+</div>
+
 - Get a custom base image
-
-
-### PATCH - /custom_base_images/{custombaseimage_id} - Added
-- Updates a custom base image's attributes
-
-
-### POST - /orgs/{org_id}/packages/issues - Updated
-- added the optional property 'meta' to the response with the '200' status
-
 
 ## 2023-06-19
 
-### GET - /orgs/{org_id}/settings/sast - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
+
+- added the optional property `errors/items/links` to the response with the `400` status
+
+- added the optional property `errors/items/links` to the response with the `401` status
+
+- added the optional property `errors/items/links` to the response with the `404` status
+
+- added the optional property `errors/items/links` to the response with the `500` status
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- added the optional property `errors/items/links` to the response with the `400` status
+
+- added the optional property `errors/items/links` to the response with the `401` status
+
+- added the optional property `errors/items/links` to the response with the `404` status
+
+- added the optional property `errors/items/links` to the response with the `500` status
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/settings/sast</span>
+  - Added
+</div>
+
 - Retrieves the SAST settings for an org
-
-
-### GET - /openapi - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
-
-- added the optional property 'errors/items/links' to the response with the '401' status
-
-- added the optional property 'errors/items/links' to the response with the '404' status
-
-- added the optional property 'errors/items/links' to the response with the '500' status
-
-
-
-### GET - /openapi/{version} - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
-
-- added the optional property 'errors/items/links' to the response with the '401' status
-
-- added the optional property 'errors/items/links' to the response with the '404' status
-
-- added the optional property 'errors/items/links' to the response with the '500' status
-
 
 ## 2023-05-29
 
-### GET - /openapi - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 
-### GET - /openapi/{version} - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 ## 2023-04-28
 
-### GET - /orgs - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs</span>
+  - Added
+</div>
+
 - Get a paginated list of organizations you have access to.
 
 
-### GET - /orgs/{org_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}</span>
+  - Added
+</div>
+
 - Get the full details of an organization.
 
 
-### PATCH - /orgs/{org_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}</span>
+  - Added
+</div>
+
 - Update the details of an organization
 
 ## 2023-04-27
 
-### POST - /orgs/{org_id}/invites - Updated
-- added the new required request property 'data'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the 'data/attributes/role' response's property type/format changed from 'string'/'' to 'string'/'uuid' for status '201'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'email'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property 'role'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the new 'org_invitation' enum value to the 'data/type' response property for the response status '201'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/invites</span>
+  - Updated
+</div>
+
+- added the new required request property `data`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the `data/attributes/role` response`s property type/format changed from `string`/`` to `string`/`uuid` for status `201`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `email`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `role`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `org_invitation` enum value to the `data/type` response property for the response status `201`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 
-### GET - /orgs/{org_id}/invites - Updated
-- the 'data/items/attributes/role' response's property type/format changed from 'string'/'' to 'string'/'uuid' for status '200'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the new 'org_invitation' enum value to the 'data/items/type' response property for the response status '200'
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/invites</span>
+  - Updated
+</div>
+
+- the `data/items/attributes/role` response`s property type/format changed from `string`/`` to `string`/`uuid` for status `200`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `org_invitation` enum value to the `data/items/type` response property for the response status `200`
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 ## 2023-03-30
 
-### GET - /openapi/{version} - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
 
-- added the optional property 'errors/items/links' to the response with the '401' status
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/packages/issues</span>
+  - Added
+</div>
 
-- added the optional property 'errors/items/links' to the response with the '404' status
-
-- added the optional property 'errors/items/links' to the response with the '500' status
-
-
-
-### POST - /orgs/{org_id}/packages/issues - Added
 - This endpoint is not available to all customers. If you are interested please contact support. Query issues for a batch of packages identified by Package URL (purl). Only direct vulnerabilities are returned, transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context.
 
 
-### GET - /openapi - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
 
-- added the optional property 'errors/items/links' to the response with the '401' status
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
 
-- added the optional property 'errors/items/links' to the response with the '404' status
+- added the optional property `errors/items/links` to the response with the `400` status
 
-- added the optional property 'errors/items/links' to the response with the '500' status
+- added the optional property `errors/items/links` to the response with the `401` status
+
+- added the optional property `errors/items/links` to the response with the `404` status
+
+- added the optional property `errors/items/links` to the response with the `500` status
+
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- added the optional property `errors/items/links` to the response with the `400` status
+
+- added the optional property `errors/items/links` to the response with the `401` status
+
+- added the optional property `errors/items/links` to the response with the `404` status
+
+- added the optional property `errors/items/links` to the response with the `500` status
 
 
 ## 2023-03-29
 
-### GET - /openapi - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 
-### GET - /openapi/{version} - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 ## 2023-03-08
 
-### GET - /orgs/{org_id}/projects/{project_id}/sbom - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}/sbom</span>
+  - Added
+</div>
+
 - This endpoint lets you retrieve the SBOM document of a software project.
-It supports the following formats:
+  It supports the following formats:
 * CycloneDX version 1.4 in JSON (set `format` to `cyclonedx1.4+json`).
 * CycloneDX version 1.4 in XML (set `format` to `cyclonedx1.4+xml`).
 * SPDX version 2.3 in JSON (set `format` to `spdx2.3+json`).
@@ -768,174 +1414,378 @@ By default it will respond with an empty JSON:API response.
 
 ## 2023-01-30
 
-### GET - /orgs/{org_id}/projects - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects</span>
+  - Added
+</div>
+
 - List all Projects for an Org.
 
 
-### GET - /orgs/{org_id}/projects/{project_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Added
+</div>
+
 - Get one project of the organization by project ID.
 
 
-### PATCH - /orgs/{org_id}/projects/{project_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/projects/{project_id}</span>
+  - Added
+</div>
+
 - Updates one project of the organization by project ID.
 
 ## 2022-11-14
 
-### POST - /orgs/{org_id}/slack_app/{bot_id}/projects/{project_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}</span>
+  - Added
+</div>
+
 - Create Slack settings override for a project.
 
 
-### DELETE - /orgs/{org_id}/slack_app/{bot_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{bot_id}</span>
+  - Added
+</div>
+
 - Remove the given Slack App integration
 
 
-### GET - /orgs/{org_id}/slack_app/{bot_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{bot_id}</span>
+  - Added
+</div>
+
 - Get Slack integration default notification settings for the provided tenant ID and bot ID.
 
 
-### POST - /orgs/{org_id}/slack_app/{bot_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{bot_id}</span>
+  - Added
+</div>
+
 - Create new Slack notification default settings for a given tenant.
 
 
-### GET - /orgs/{org_id}/slack_app/{bot_id}/projects - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{bot_id}/projects</span>
+  - Added
+</div>
+
 - Slack notification settings overrides for projects. These settings overrides the default settings configured for the tenant.
 
 
-### DELETE - /orgs/{org_id}/slack_app/{bot_id}/projects/{project_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}</span>
+  - Added
+</div>
+
 - Remove Slack settings override for a project.
 
 
-### PATCH - /orgs/{org_id}/slack_app/{bot_id}/projects/{project_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}</span>
+  - Added
+</div>
+
 - Update Slack notification settings for a project.
 
 ## 2022-11-07
 
-### GET - /orgs/{org_id}/invites - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/invites</span>
+  - Added
+</div>
+
 - List pending user invitations to an organization.
 
 
-### DELETE - /orgs/{org_id}/invites/{invite_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/invites/{invite_id}</span>
+  - Added
+</div>
+
 - Cancel a pending user invitations to an organization.
 
 ## 2022-10-06
 
-### GET - /orgs/{org_id}/slack_app/{tenant_id}/channels - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{tenant_id}/channels</span>
+  - Added
+</div>
+
 - Requires the Snyk Slack App to be set up for this org, will retrieve a list of channels the Snyk Slack App can access. Note that it is currently only possible to page forwards through this collection, no prev links will be generated and the ending_before parameter will not function.
 
 
-### GET - /orgs/{org_id}/slack_app/{tenant_id}/channels/{channel_id} - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/slack_app/{tenant_id}/channels/{channel_id}</span>
+  - Added
+</div>
+
 - Requires the Snyk Slack App to be set up for this org. It will return the Slack channel name for the provided Slack channel ID.
 
 ## 2022-09-14
 
-### GET - /orgs/{org_id}/packages/{purl}/issues - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/packages/{purl}/issues</span>
+  - Added
+</div>
+
 - Query issues for a specific package version identified by Package URL (purl). Snyk returns only direct vulnerabilities. Transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context.
 
 ## 2022-04-06
 
-### POST - /orgs/{org_id}/invites - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/invites</span>
+  - Added
+</div>
+
 - Invite a user to an organization with a role.
 
 ## 2022-03-11
 
-### GET - /openapi - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
 
-- added the optional property 'errors/items/links' to the response with the '401' status
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
 
-- added the optional property 'errors/items/links' to the response with the '404' status
+- added the optional property `errors/items/links` to the response with the `400` status
 
-- added the optional property 'errors/items/links' to the response with the '500' status
+- added the optional property `errors/items/links` to the response with the `401` status
+
+- added the optional property `errors/items/links` to the response with the `404` status
+
+- added the optional property `errors/items/links` to the response with the `500` status
 
 
 
-### GET - /openapi/{version} - Updated
-- added the optional property 'errors/items/links' to the response with the '400' status
 
-- added the optional property 'errors/items/links' to the response with the '401' status
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
 
-- added the optional property 'errors/items/links' to the response with the '404' status
+- added the optional property `errors/items/links` to the response with the `400` status
 
-- added the optional property 'errors/items/links' to the response with the '500' status
+- added the optional property `errors/items/links` to the response with the `401` status
+
+- added the optional property `errors/items/links` to the response with the `404` status
+
+- added the optional property `errors/items/links` to the response with the `500` status
 
 
 ## 2022-03-01
 
-### DELETE - /orgs/{org_id}/app_bots/{bot_id} - Added
-- Revoke app bot authorization. Deprecated, use /orgs/{org_id}/apps/installs/{install_id} instead.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/self/apps</span>
+  - Added
+</div>
+
+- Get a list of apps that can act on your behalf.
 
 
-### GET - /orgs/{org_id}/apps - Added
-- Get a list of apps created by an organization. Deprecated, use /orgs/{org_id}/apps/creations instead.
 
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/self/apps/{app_id}</span>
+  - Added
+</div>
 
-### POST - /orgs/{org_id}/apps - Added
-- Create a new app for an organization. Deprecated, use /orgs/{org_id}/apps/creations instead.
-
-
-### GET - /orgs/{org_id}/apps/{client_id} - Added
-- Get an App by client id. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
-
-
-### PATCH - /orgs/{org_id}/apps/{client_id} - Added
-- Update app attributes. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
-
-
-### DELETE - /self/apps/{app_id} - Added
 - Revoke access for an app by app id
 
 
-### GET - /openapi - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 
-### GET - /openapi/{version} - Updated
-- removed the optional property 'errors/items/links' from the response with the '400' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '401' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '404' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the optional property 'errors/items/links' from the response with the '500' status
-![Badge](https://img.shields.io/badge/Breaking-yellow)
 
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/app_bots</span>
+  - Added
+</div>
 
-### GET - /orgs/{org_id}/app_bots - Added
 - Get a list of app bots authorized to an organization. Deprecated, use /orgs/{org_id}/apps/installs instead.
 
 
-### DELETE - /orgs/{org_id}/apps/{client_id} - Added
-- Delete an app by app id. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps</span>
+  - Added
+</div>
+
+- Get a list of apps created by an organization. Deprecated, use /orgs/{org_id}/apps/creations instead.
 
 
-### POST - /orgs/{org_id}/apps/{client_id}/secrets - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/{client_id}</span>
+  - Added
+</div>
+
+- Get an App by client id. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/{client_id}/secrets</span>
+  - Added
+</div>
+
 - Manage client secrets for an app. Deprecated, use /orgs/{org_id}/apps/creations/{app_id}/secrets instead.
 
 
-### GET - /self/apps - Added
-- Get a list of apps that can act on your behalf.
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/openapi/{version}</span>
+  - Updated
+</div>
+
+- removed the optional property `errors/items/links` from the response with the `400` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+  ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/app_bots/{bot_id}</span>
+  - Added
+</div>
+
+- Revoke app bot authorization. Deprecated, use /orgs/{org_id}/apps/installs/{install_id} instead.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-post">POST</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps</span>
+  - Added
+</div>
+
+- Create a new app for an organization. Deprecated, use /orgs/{org_id}/apps/creations instead.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-delete">DELETE</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/{client_id}</span>
+  - Added
+</div>
+
+- Delete an app by app id. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
+
+
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/apps/{client_id}</span>
+  - Added
+</div>
+
+- Update app attributes. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
 
 ## 2021-09-29
 
-### GET - /groups/{group_id}/settings/iac - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/settings/iac</span>
+  - Added
+</div>
+
 - Get the Infrastructure as Code Settings for a group.
 
 
-### PATCH - /groups/{group_id}/settings/iac - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/groups/{group_id}/settings/iac</span>
+  - Added
+</div>
+
 - Update the Infrastructure as Code Settings for a group.
 
 
-### GET - /orgs/{org_id}/settings/iac - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-get">GET</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/settings/iac</span>
+  - Added
+</div>
+
 - Get the Infrastructure as Code Settings for an org.
 
 
-### PATCH - /orgs/{org_id}/settings/iac - Added
+
+<div class="openapi-target">
+  <span class="openapi-method openapi-method-patch">PATCH</span>
+  <span class="openapi-url"><span><span>https://api.snyk.io/rest</span></span>/orgs/{org_id}/settings/iac</span>
+  - Added
+</div>
+
 - Update the Infrastructure as Code Settings for an org.
 
