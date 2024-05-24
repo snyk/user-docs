@@ -95,6 +95,187 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 - [https://status.snyk.io/](https://status.snyk.io/)
 
 ---
+# CustomBaseImages
+### [SNYK-CBI-0001](#snyk-cbi-0001)
+
+#### Versioning schema does not support tag
+
+The versioning schema used does not support the given tag. Update the versioning schema to include the tag.
+
+        Once the tag of the custom base image is correct, the versioning schema must be modified.
+        You can use a different versioning schema that supports all tags in the repository or you can update the relevant properties of the versioning schema.
+
+        For example, if the repository currently uses Semver, and a new tag "1.2.5.7" needs to be added, then you can use a Custom versioning schema.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images)
+
+### [SNYK-CBI-0002](#snyk-cbi-0002)
+
+#### Missing required parameter
+
+Provide an ORG ID or GROUP ID.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0003](#snyk-cbi-0003)
+
+#### Project does not exist
+
+The project could not be found. Check that the project exists, that you have access to the project, and also check that the ID you have provided is the project ID and not a CBI ID.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0004](#snyk-cbi-0004)
+
+#### Project is not a container image
+
+The project is not a container image.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations)
+
+### [SNYK-CBI-0005](#snyk-cbi-0005)
+
+#### Unable to retrieve group
+
+The project's org does not belong to a group. In order to use a Custom Base Image, recreate the project and add it to a group or add a group to the org. Note that the group feature is not available to free users.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0006](#snyk-cbi-0006)
+
+#### The values in the request do not match
+
+The request body ID and the request path ID do not match. Ensure that the values are the same and try again.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0007](#snyk-cbi-0007)
+
+#### The request body cannot be updated
+
+The request body does not contain any attributes that can be updated. Provide the necessary attributes and try again.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0008](#snyk-cbi-0008)
+
+#### Invalid pagination cursor
+
+The provided pagination cursor is invalid.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0009](#snyk-cbi-0009)
+
+#### Unable to sort by version
+
+Snyk was unable to filter by version. Provide a repository filter and try again.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0010](#snyk-cbi-0010)
+
+#### Unable to update versioning schema
+
+The versioning schema could not be applied to all images in the repository. Therefore, no resources have been updated. Update the provided versioning schema so that all tags in the repository fit the new schema.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0011](#snyk-cbi-0011)
+
+#### Project is already linked to a custom base image
+
+The project ID provided is already linked to another Custom Base Image.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0012](#snyk-cbi-0012)
+
+#### No versioning schema for repository
+
+No versioning schema exists for the repository. This image is the first in its repository. Provide a versioning schema that fits the format of current and future images in this repository.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0013](#snyk-cbi-0013)
+
+#### Unable to apply versioning schema
+
+A versioning schema already exists for repository. Remove the "versioning_schema" property or, if you want to update the versioning schema, use the PATCH endpoint.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CBI-0014](#snyk-cbi-0014)
+
+#### Unable to find custom base image
+
+Unable to find the requested custom base image. Try again, and if the error persists, contact Snyk support.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-CBI-0015](#snyk-cbi-0015)
+
+#### Custom base image does not exist
+
+The requested custom base image does not exist.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
+
+### [SNYK-CBI-0016](#snyk-cbi-0016)
+
+#### Unable to update custom base image
+
+An internal error occurred while trying to update a custom base image. Try again, and if the error persists, contact Snyk support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
+
+### [SNYK-CBI-0017](#snyk-cbi-0017)
+
+#### Unable to retrieve project properties
+
+An internal error occurred while trying to retrieve project properties. Try again, and if the error persists, contact Snyk support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
+
+### [SNYK-CBI-0018](#snyk-cbi-0018)
+
+#### Unable to retrieve image collection
+
+An internal error occurred while trying to retrieve the image collection. Try again, and if the error persists, contact Snyk support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
+
+---
 # Code
 ### [SNYK-CODE-0001](#snyk-code-0001)
 
@@ -1826,4 +2007,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-05-24T08:01:22.415Z
+--- Generated at 2024-05-24T13:25:11.397Z
