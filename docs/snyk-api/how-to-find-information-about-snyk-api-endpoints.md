@@ -1,4 +1,4 @@
-# How to find information about API endpoints
+# How to find information about Snyk API endpoints
 
 This list includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This listing is a work in progress; additional information is being added continually.
 
@@ -158,73 +158,41 @@ Replaces: DEPRECATED Get a list of apps created by an organization
 
 ## Collection
 
-### Get collections
+### [Get collections](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections)
 
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections)
+### [Create a collection](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/collections)
 
-### Create a collection
+### [Get a collection](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections/-collection\_id-)
 
-[https://apidocs.snyk.io/?#post-/orgs/-org\_id-/collections](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/collections)
+### [Delete a collection](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/collections/-collection\_id-)
 
-### Get a collection
+### [Edit a collection](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/collections/-collection\_id-)
 
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections/-collection\_id-](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections/-collection\_id-)
+### [Get projects from the specified collection](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
 
-### Delete a collection
+### [Add projects to a collection](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
 
-[https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/collections/-collection\_id-](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/collections/-collection\_id-)
-
-### Edit a collection
-
-[https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/collections/-collection\_id-](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/collections/-collection\_id-)
-
-### Get projects from the specified collection
-
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
-
-### Add projects to a collection
-
-[https://apidocs.snyk.io/?#post-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
-
-### Remove projects from a collection
-
-[https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
+### [Remove projects from a collection](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
 
 ## ContainerImage
 
-### List instances of container image
+### [List instances of container image](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images)
 
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images)
+### [Get instance of container image](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images/-image\_id-)
 
-### Get instance of container image
-
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images/-image\_id-](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images/-image\_id-)
-
-### List instances of image target references for a container image
-
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images/-image\_id-/relationships/image\_target\_refs](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images/-image\_id-/relationships/image\_target\_refs)
+### [List instances of image target references for a container image](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images/-image\_id-/relationships/image\_target\_refs)
 
 ## Custom Base Images
 
-### Get a custom base image collection
+### [Get a custom base image collection](https://apidocs.snyk.io/?#get-/custom\_base\_images)
 
-[https://apidocs.snyk.io/?#get-/custom\_base\_images](https://apidocs.snyk.io/?#get-/custom\_base\_images)
+### [Create a Custom Base Image from an existing container project](https://apidocs.snyk.io/?#post-/custom\_base\_images)
 
-### Create a Custom Base Image from an existing container project
+### [Get a custom base image](https://apidocs.snyk.io/?#get-/custom\_base\_images/-custombaseimage\_id-)
 
-[https://apidocs.snyk.io/?#post-/custom\_base\_images](https://apidocs.snyk.io/?#post-/custom\_base\_images)
+### [Delete a custom base image](https://apidocs.snyk.io/?#delete-/custom\_base\_images/-custombaseimage\_id-)
 
-### Get a custom base image
-
-[https://apidocs.snyk.io/?#get-/custom\_base\_images/-custombaseimage\_id-](https://apidocs.snyk.io/?#get-/custom\_base\_images/-custombaseimage\_id-)
-
-### Delete a custom base image
-
-[https://apidocs.snyk.io/?#delete-/custom\_base\_images/-custombaseimage\_id-](https://apidocs.snyk.io/?#delete-/custom\_base\_images/-custombaseimage\_id-)
-
-### Update a custom base image
-
-[https://apidocs.snyk.io/?#patch-/custom\_base\_images/-custombaseimage\_id-](https://apidocs.snyk.io/?#patch-/custom\_base\_images/-custombaseimage\_id-)
+### [Update a custom base image](https://apidocs.snyk.io/?#patch-/custom\_base\_images/-custombaseimage\_id-)
 
 ## Dependencies (v1)
 
@@ -232,7 +200,7 @@ Replaces: DEPRECATED Get a list of apps created by an organization
 
 #### List all dependencies
 
-[Migrated List all dependencies](how-to-find-information-about-api-endpoints.md#list-all-dependencies)
+[Migrated List all dependencies](how-to-find-information-about-snyk-api-endpoints.md#list-all-dependencies)
 
 ## Entitlements (v1)
 
