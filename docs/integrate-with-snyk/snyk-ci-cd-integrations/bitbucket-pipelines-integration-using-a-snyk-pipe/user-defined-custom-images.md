@@ -17,7 +17,6 @@ Using custom images allows you to:
 
 In order for your custom image to be supported, it must:
 
-* Meet the [Prerequisites for Bitbucket Pipelines integration](prerequisites-for-bitbucket-pipelines-integration.md)
 * Use an environment [supported](../../../snyk-cli/install-or-update-the-snyk-cli/) by the Snyk CLI
 * Use a language and framework [supported](../../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/) by Snyk
 * Have Snyk CLI installed on the image - see [Install or update the Snyk CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) for steps to install the CLI
@@ -25,7 +24,7 @@ In order for your custom image to be supported, it must:
 
 ## Use of user-defined custom images
 
-Providing a custom image gives you more control over your environments. For example, unless you use custom images, you cannot  able to use an environment with Node LTS.
+Providing a custom image gives you more control over your environment. For example, unless you use custom images, you cannot use an environment with Node LTS.
 
 ### How to create a custom image using Dockerfile
 
@@ -42,8 +41,8 @@ RUN apk add --no-cache curl
 RUN apk add --no-cache nodejs
 
 # Install & setup Snyk CLI
-RUN curl -o ./snyk-alpine https://static.snyk.io/cli/latest/snyk-alpine && \
-    curl -o ./snyk-alpine.sha256 https://static.snyk.io/cli/latest/snyk-alpine.sha256 && \
+RUN curl -o ./snyk-alpine https://static.snyk.io/cli/stable/snyk-alpine && \
+    curl -o ./snyk-alpine.sha256 https://static.snyk.io/cli/stable/snyk-alpine.sha256 && \
     sha256sum -c snyk-alpine.sha256 && \
     mv snyk-alpine /usr/local/bin/snyk && \
     chmod +x /usr/local/bin/snyk
@@ -54,7 +53,7 @@ The base image uses Alpine to keep things lightweight. You have installed Node a
 
 ### How to build and push the Docker image
 
-Once the Dockerfile is defined, you can build and tag the image via [docker build](https://docs.docker.com/engine/reference/commandline/build/) and push the image via [docker push](https://docs.docker.com/engine/reference/commandline/push/). for example:
+After the Dockerfile is defined, you can build and tag the image using [docker build](https://docs.docker.com/engine/reference/commandline/build/) and push the image using [docker push](https://docs.docker.com/engine/reference/commandline/push/). for example:
 
 ```sh
 # bulid image
@@ -63,6 +62,10 @@ docker build --tag foobar/snyk:node-lts
 # push image
 docker push foobar/snyk:node-lts
 ```
+
+### How to use a custom image in a BitBucket pipeline&#x20;
+
+Ensure that the [Prerequisites for Bitbucket Pipelines integration](prerequisites-for-bitbucket-pipelines-integration.md) are met.
 
 As long as the pushed image is publicly accessible, you can use the `SNYK_BASE_IMAGE` and `LANGUAGE` variables to reference your custom image and tag, respectively, in your Bitbucket pipeline:
 
