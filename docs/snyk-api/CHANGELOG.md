@@ -1,3 +1,78 @@
+## 2024-05-23
+
+### POST - /groups/{group_id}/apps/installs/{install_id}/secrets - Updated
+- added the optional property `data/attributes/installed_at` to the response with the `200` status
+
+
+
+### GET - /groups/{group_id}/settings/pull_request_template - Added
+- Get your groups pull request template
+
+
+### POST - /groups/{group_id}/settings/pull_request_template - Added
+- Configures a group level pull request template that will be used on any org or project within that group
+
+
+### GET - /orgs/{org_id}/apps/installs - Updated
+- added the optional property `data/items/attributes/installed_at` to the response with the `200` status
+
+
+
+### POST - /orgs/{org_id}/apps/installs/{install_id}/secrets - Updated
+- added the optional property `data/attributes/installed_at` to the response with the `200` status
+
+
+
+### GET - /openapi/{version} - Updated
+- removed the optional property `errors/items/links` from the response with the `400` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - /groups/{group_id}/apps/installs - Updated
+- added the optional property `data/items/attributes/installed_at` to the response with the `200` status
+
+
+
+### DELETE - /groups/{group_id}/apps/installs/{install_id} - Updated
+- api operation id `deleteGroupAppInstallByID` removed and replaced with `deleteGroupAppInstallById`
+
+
+
+### DELETE - /groups/{group_id}/settings/pull_request_template - Added
+- Delete your groups pull request template. This means Snyk pull requests will start to use the default template for this group.
+
+
+### DELETE - /orgs/{org_id}/apps/installs/{install_id} - Updated
+- api operation id `deleteAppOrgInstallByID` removed and replaced with `deleteAppOrgInstallById`
+
+
+
+### GET - /self/apps/installs - Updated
+- added the optional property `data/items/attributes/installed_at` to the response with the `200` status
+
+
+
+### DELETE - /self/apps/installs/{install_id} - Updated
+- api operation id `deleteUserAppInstallByID` removed and replaced with `deleteUserAppInstallById`
+
+
+
+### GET - /openapi - Updated
+- removed the optional property `errors/items/links` from the response with the `400` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `401` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `404` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `errors/items/links` from the response with the `500` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 # Change Log
 
 ## 2024-04-22
