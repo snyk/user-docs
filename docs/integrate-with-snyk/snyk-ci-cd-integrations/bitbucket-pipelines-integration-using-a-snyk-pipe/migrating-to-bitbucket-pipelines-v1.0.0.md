@@ -11,7 +11,7 @@ description: >-
 When upgrading from < 1.0.0 to 1.0.0+, the following changes should be made to your configuration:
 
 * Please use tags supported by [Snyk Images](https://hub.docker.com/r/snyk/snyk/tags) for the `LANGUAGE` variable instead of tags supported by [Snyk CLI Docker images](https://hub.docker.com/r/snyk/snyk-cli/tags)
-* Alternately, users can provide their own [custom image](user-defined-custom-images.md) using the new `SNYK_BASE_IMAGE` variable
+* Alternately, users can provide their own [custom image](../user-defined-custom-images-for-cli.md) using the new `SNYK_BASE_IMAGE` variable
 
 ### Example
 
@@ -66,7 +66,7 @@ But for the purpose of Bitbucket Pipelines, they are functionally equivalent.
 {% endhint %}
 
 {% hint style="danger" %}
-Where the supported language/framework has reached EOL, it is **highly recommended** to use your own [user defined custom images](user-defined-custom-images.md) with newer versions of the language/framework that is still supported by the vendor.
+Where the supported language/framework has reached EOL, it is **highly recommended** to use your own [user defined custom images](../user-defined-custom-images-for-cli.md) with newer versions of the language/framework that is still supported by the vendor.
 {% endhint %}
 
 | **Snyk CLI Docker images tag**                                                                                                                                                                                      | **Snyk Images tag**                                                                                                                                               |
