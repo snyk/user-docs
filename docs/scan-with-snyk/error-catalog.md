@@ -102,10 +102,10 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 
 The versioning schema used does not support the given tag. Update the versioning schema to include the tag.
 
-        Once the tag of the custom base image is correct, the versioning schema must be modified.
-        You can use a different versioning schema that supports all tags in the repository or you can update the relevant properties of the versioning schema.
+Once the tag of the custom base image is correct, the versioning schema must be modified.
+You can use a different versioning schema that supports all tags in the repository or you can update the relevant properties of the versioning schema.
 
-        For example, if the repository currently uses Semver, and a new tag "1.2.5.7" needs to be added, then you can use a Custom versioning schema.
+For example, if the repository currently uses Semver, and a new tag "1.2.5.7" needs to be added, then you can use a Custom versioning schema.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -2007,4 +2007,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-05-27T08:43:04.383Z
+--- Generated at 2024-05-27T11:27:59.221Z
