@@ -1,12 +1,14 @@
 fetcher:
-  source: https://api.snyk.io/rest/openapi
-  destination: docs/.gitbook/assets/rest-spec.json
+    source: https://api.snyk.io/rest/openapi
+    destination: docs/.gitbook/assets/rest-spec.json
 specs:
-- path: docs/.gitbook/assets/spec.yaml
-  suffix: " (v1)"
-  docsHint: This document uses the v1 API. For more details, see the [v1 API](../v1-api).
-- path: docs/.gitbook/assets/rest-spec.json
-  docsHint: This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
-
+    - path: docs/.gitbook/assets/spec.yaml
+      suffix: ' (v1)'
+      docsHint: This document uses the v1 API. For more details, see the [v1 API](../v1-api).
+    - path: docs/.gitbook/assets/rest-spec.json
+      docsHint: This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 output:
-  apiReferencePath: docs/snyk-api/reference
+    apiReferencePath: docs/snyk-api/reference
+changelog:
+    historicalDate: "2024-04-25"
+    lastSyncDate: "2024-04-25"

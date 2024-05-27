@@ -53,8 +53,8 @@ output:
 				t.Errorf("Parse() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("Parse() got = %v, want %v", got, tt.want)
+			if !reflect.DeepEqual(*got, tt.want) {
+				t.Errorf("Parse() got = %v, want %v", *got, tt.want)
 			}
 		})
 	}

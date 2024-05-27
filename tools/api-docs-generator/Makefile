@@ -1,5 +1,5 @@
-test: tidy lint
-	go test ./...
+test:
+	go test -v ./...
 
 run:
 	@go run . config.yml ../..

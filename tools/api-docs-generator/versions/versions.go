@@ -10,7 +10,7 @@ import (
 	"github.com/snyk/user-docs/tools/api-docs-generator/config"
 )
 
-func GetCurrentVersions(ctx context.Context, cfg config.Config) ([]string, error) {
+func GetCurrentVersions(ctx context.Context, cfg *config.Config) ([]string, error) {
 	// #nosec G107 // cfg.Fetcher.Source is a URL from config and does not contain user input
 	resp, err := Get(ctx, cfg.Fetcher.Source)
 	if err != nil {

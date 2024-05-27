@@ -14,7 +14,7 @@ import (
 	"github.com/snyk/user-docs/tools/api-docs-generator/versions"
 )
 
-func FetchSpec(ctx context.Context, cfg config.Config, directory string) error {
+func FetchSpec(ctx context.Context, cfg *config.Config, directory string) error {
 	allVersions, err := versions.GetCurrentVersions(ctx, cfg)
 	if err != nil {
 		return err
@@ -30,7 +30,7 @@ func FetchSpec(ctx context.Context, cfg config.Config, directory string) error {
 	return os.WriteFile(path.Join(directory, cfg.Fetcher.Destination), formattedSpec.Bytes(), 0o644)
 }
 
-func getSpecByVersion(ctx context.Context, cfg config.Config, version string) (*bytes.Buffer, error) {
+func getSpecByVersion(ctx context.Context, cfg *config.Config, version string) (*bytes.Buffer, error) {
 	specPath, err := url.JoinPath(cfg.Fetcher.Source, version)
 	if err != nil {
 		return nil, err

@@ -22,7 +22,7 @@ type operationPath struct {
 	docsHint  string
 }
 
-func GenerateReferenceDocs(cfg config.Config, docsBasePath string) error {
+func GenerateReferenceDocs(cfg *config.Config, docsBasePath string) error {
 	aggregatedDocs, err := aggregateSpecs(cfg, docsBasePath)
 	if err != nil {
 		return err
@@ -45,7 +45,7 @@ func GenerateReferenceDocs(cfg config.Config, docsBasePath string) error {
 	return nil
 }
 
-func aggregateSpecs(cfg config.Config, docsBasePath string) (map[string][]operationPath, error) {
+func aggregateSpecs(cfg *config.Config, docsBasePath string) (map[string][]operationPath, error) {
 	aggregatedDocs := map[string][]operationPath{}
 
 	for _, spec := range cfg.Specs {
