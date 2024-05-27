@@ -355,7 +355,7 @@ Snyk was unable to find supported files.
 - [https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code](https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code)
 
 ---
-# OpenAPI
+# Open A P I
 ### [SNYK-OPENAPI-0001](#snyk-openapi-0001)
 
 #### Bad request
@@ -1293,7 +1293,7 @@ Make sure to use the correct python version in the requires section of the Pipfi
 
 
 ---
-# CLI
+# C L I
 ### [SNYK-OS-7001](#snyk-os-7001)
 
 #### Request to Snyk API timeout
@@ -1722,7 +1722,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 
 
 ---
-# PRChecks
+# P R Checks
 ### [SNYK-PR-CHECK-0001](#snyk-pr-check-0001)
 
 #### Error reading manifest
@@ -2007,4 +2007,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-05-27T08:22:35.886Z
+--- Generated at 2024-05-27T08:37:01.573Z
