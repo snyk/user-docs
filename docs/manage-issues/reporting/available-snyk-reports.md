@@ -84,6 +84,8 @@ Use this report to discover your exposure to issues highlighted in a zero-day pu
 
 <figure><img src="../../.gitbook/assets/Zero-day report.png" alt="Featured Zero-Day Report"><figcaption><p>Featured Zero-Day Report</p></figcaption></figure>
 
+The [Security team at Snyk](https://snyk.io/platform/security-intelligence/) continuously updates the [Vulnerability Database](https://security.snyk.io/) with new vulnerabilities several times a day. When the team discovers a major new zero-day vulnerability—typically in a widely used package with high severity that affects many customers—it will be announced and addressed as a zero-day event.
+
 Upon the announcement of a new zero-day event, begin by examining the **Impacted Targets** table to gain a deeper understanding of the exposure. Use filters such as Project Lifecycle, Environment, or Project Criticality to focus solely on Targets associated with Projects in production that are externally exposed or of high criticality. Gaining such insights depends on the [availability of Project attributes](../../snyk-admin/snyk-projects/project-attributes.md#available-attributes-and-their-values).
 
 <figure><img src="../../.gitbook/assets/image (427).png" alt="Impacted Targets table"><figcaption><p>Impacted Targets table</p></figcaption></figure>
