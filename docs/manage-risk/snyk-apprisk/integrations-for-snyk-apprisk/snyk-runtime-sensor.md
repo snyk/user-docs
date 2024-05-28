@@ -17,7 +17,7 @@ To ensure proper use of the Snyk Runtime Sensor, ensure that your environment me
 * Kubernetes supported version - Use Kubernetes v.1.19 or higher.
 
 {% hint style="info" %}
-Managed Kubernetes are not supported, for example, EKS Fargate or GKE Autopilot.
+Managed Kubernetes services such as EKS Fargate or GKE Autopilot, are not supported, as the cluster nodes are managed by the cloud provider.
 {% endhint %}
 
 * Privileged access - you need either root or the following Linux capabilities: `BPF`, `PERFMON`, `SYS_RESOURCES`, `DAC_READ_SEARCH`, `SYS_PTRACE`, `NET_ADMIN`
