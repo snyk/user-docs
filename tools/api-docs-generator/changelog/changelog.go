@@ -25,7 +25,10 @@ type Endpoint struct {
 	Operation string
 }
 
-type ChangesByEndpoint map[Endpoint]checker.Changes
+type ChangesByEndpoint struct {
+	Endpoint
+	checker.Changes
+}
 
 func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg config.SyncStateConfig, changeLogFileName string) (string, error) {
 	loader := openapi3.NewLoader()
@@ -110,7 +113,6 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config, changeLogFileNa
 	for _, baseVersion := range gaVersions[1:] {
 		nextURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, nextVersion)
 		baseURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, baseVersion)
-		nextVersion = baseVersion
 		groupedChanges, err := getChangeLog(nextURL, baseURL, loader)
 		if err != nil {
 			return err
@@ -118,37 +120,36 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config, changeLogFileNa
 
 		groupedChanges = filterChanges(groupedChanges)
 
-		if len(groupedChanges) == 0 {
-			continue
-		}
+		if len(groupedChanges) != 0 {
+			markdown := md.NewMarkdown(writer)
 
-		markdown := md.NewMarkdown(writer)
+			err = WriteToChangeLog(markdown, groupedChanges, nextVersion, nextURL, "")
+			if err != nil {
+				return err
+			}
 
-		err = WriteToChangeLog(markdown, groupedChanges, baseVersion, nextURL, "")
-		if err != nil {
-			return err
+			err = markdown.Build()
+			if err != nil {
+				return err
+			}
 		}
-
-		err = markdown.Build()
-		if err != nil {
-			return err
-		}
+		nextVersion = baseVersion
 	}
 
 	return writer.Close()
 }
-func filterChanges(changes ChangesByEndpoint) ChangesByEndpoint {
-	filteredChanges := ChangesByEndpoint{}
-	for endpoint, change := range changes {
-		if strings.HasPrefix(endpoint.Path, "/openapi") {
+func filterChanges(changes []ChangesByEndpoint) []ChangesByEndpoint {
+	filteredChanges := make([]ChangesByEndpoint, 0, len(changes))
+	for _, endpointChange := range changes {
+		if strings.HasPrefix(endpointChange.Path, "/openapi") {
 			continue
 		}
-		filteredChanges[endpoint] = change
+		filteredChanges = append(filteredChanges, endpointChange)
 	}
 	return filteredChanges
 }
 
-func WriteToChangeLog(markdown *md.Markdown, groupedChanges ChangesByEndpoint, baseVersion, nextVersionURL, lastSyncVersion string) error {
+func WriteToChangeLog(markdown *md.Markdown, groupedChanges []ChangesByEndpoint, baseVersion, nextVersionURL, lastSyncVersion string) error {
 	loader := openapi3.NewLoader()
 	loader.IsExternalRefsAllowed = true
 
@@ -162,9 +163,14 @@ func WriteToChangeLog(markdown *md.Markdown, groupedChanges ChangesByEndpoint, b
 
 	groupedChanges = filterChanges(groupedChanges)
 
-	for op, changes := range groupedChanges {
-		if len(changes) == 1 && changes[0].GetUncolorizedText(localizer) == "endpoint added" {
-			markdown.H3f("%s - `%s` - Added", op.Operation, op.Path)
+	// sort for stability
+	sort.Slice(groupedChanges, func(i, j int) bool {
+		return groupedChanges[i].Path+groupedChanges[i].Operation > groupedChanges[j].Path+groupedChanges[j].Operation
+	})
+
+	for _, changeGroup := range groupedChanges {
+		if len(changeGroup.Changes) == 1 && changeGroup.Changes[0].GetUncolorizedText(localizer) == "endpoint added" {
+			markdown.H3f("%s - `%s` - Added", changeGroup.Operation, changeGroup.Path)
 			parsedURL, err := url.Parse(nextVersionURL)
 			if err != nil {
 				return err
@@ -173,16 +179,16 @@ func WriteToChangeLog(markdown *md.Markdown, groupedChanges ChangesByEndpoint, b
 			if err != nil {
 				return err
 			}
-			markdown.BulletList(versions.ReplaceWithCodeQuotes(document.Paths.Find(op.Path).Operations()[op.Operation].Description))
+			markdown.BulletList(versions.ReplaceWithCodeQuotes(document.Paths.Find(changeGroup.Path).Operations()[changeGroup.Operation].Description))
 			continue
 		}
-		markdown.H3f("%s - Updated %s", op.Operation, op.Path)
-		for index := range changes {
-			if changes[index].IsBreaking() {
-				markdown.BulletList(versions.ReplaceWithCodeQuotes(changes[index].GetUncolorizedText(localizer)))
+		markdown.H3f("%s - `%s` - Updated", changeGroup.Operation, changeGroup.Path)
+		for index := range changeGroup.Changes {
+			if changeGroup.Changes[index].IsBreaking() {
+				markdown.BulletList(versions.ReplaceWithCodeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer)))
 				markdown.YellowBadge("Breaking")
 			} else {
-				markdown.BulletList(fmt.Sprintf("%s\n", versions.ReplaceWithCodeQuotes(changes[index].GetUncolorizedText(localizer))))
+				markdown.BulletList(fmt.Sprintf("%s\n", versions.ReplaceWithCodeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer))))
 			}
 		}
 
@@ -191,8 +197,8 @@ func WriteToChangeLog(markdown *md.Markdown, groupedChanges ChangesByEndpoint, b
 	return nil
 }
 
-func groupChanges(changes checker.Changes) ChangesByEndpoint {
-	apiChanges := ChangesByEndpoint{}
+func groupChanges(changes checker.Changes) []ChangesByEndpoint {
+	apiChanges := map[Endpoint]checker.Changes{}
 
 	for _, change := range changes {
 		if change, ok := change.(checker.ApiChange); ok {
@@ -205,10 +211,15 @@ func groupChanges(changes checker.Changes) ChangesByEndpoint {
 		}
 	}
 
-	return apiChanges
+	apiChangesSlice := make([]ChangesByEndpoint, 0, len(apiChanges))
+	for endpoint, changes := range apiChanges {
+		apiChangesSlice = append(apiChangesSlice, ChangesByEndpoint{Endpoint: endpoint, Changes: changes})
+	}
+
+	return apiChangesSlice
 }
 
-func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader) (ChangesByEndpoint, error) {
+func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader) ([]ChangesByEndpoint, error) {
 	baseVersionURL, err := url.Parse(baseVersionURI)
 	if err != nil {
 		return nil, err

@@ -25,27 +25,8 @@ func main() {
 		log.Panic("Missing historical version cutoff")
 	}
 
-	syncStateCfg, err := config.LoadSyncState(cfg.Changelog.SyncStateFile)
+	err = changelog.GenerateHistorical(ctx, cfg, "docs/snyk-api/changelog.md", cfg.Changelog.HistoricalVersionCutoff)
 	if err != nil {
 		log.Panic(err)
-	}
-
-	//
-	// err = changelog.GenerateHistorical(ctx, &cfg, "docs/snyk-api/changelog.md", cfg.Changelog.HistoricalDate)
-	// if err != nil {
-	//	log.Panic(err)
-	// }
-
-	updatedToVersion, err := changelog.UpdateChangelog(ctx, cfg, syncStateCfg, "docs/snyk-api/CHANGELOG.md")
-	if err != nil {
-		log.Panic(err)
-	}
-
-	if updatedToVersion != "" {
-		syncStateCfg.LastSyncedVersion = updatedToVersion
-		err := config.UpdateSyncState(cfg.Changelog.SyncStateFile, syncStateCfg)
-		if err != nil {
-			log.Panic(err)
-		}
 	}
 }
