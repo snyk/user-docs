@@ -53,6 +53,40 @@ The Kubernetes Connector is different from the Kubernetes Controller, Snyk-Monit
 6. To ensure you have properly set up the prioritization capability, navigate to the **Set up Snyk AppRisk** tab on the **Insights** page and view the data Snyk has access to.\
    You can also filter relevant sections by Organization for a granular view of your progress.
 
+## Insights settings
+
+The Insights settings are organized into three main categories:
+
+* [Risk factors](./#risk-factors) - allows you to enable or disable the risk factors involved in calculating the risk of your identified issues.&#x20;
+* [Provider selection](./#provider-selection) - allows you to configure the Kubernetes runtime providers.
+* [Kubernetes cluster mapping](./#kubernetes-cluster-mapping) - allows you to match the clusters identified by providers with the preferred names.
+
+All these settings can be found in the Snyk Web UI, under Group Settings, the Settings option.
+
+### Risk Factors
+
+You can enable or disable the available risk factors: [Deployed](../how-prioritization-with-insights-works/risk-factors/deployed.md), [Loaded package](../how-prioritization-with-insights-works/risk-factors/loaded-package.md), [OS condition](../how-prioritization-with-insights-works/risk-factors/os-condition.md), [Public facing](../how-prioritization-with-insights-works/risk-factors/public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
+
+You can enable or disable the risk factors from [Snyk Web UI](../../../../getting-started/snyk-web-ui.md), Group Settings, Settings option, Risk factors.
+
+### Provider Selection
+
+You can set up multiple Kubernetes runtime providers to gather relevant runtime risk factors from your current integrations. When multiple Kubernetes runtime providers report the same resources, some details, such as the Loaded package, may only be available from one of them.&#x20;
+
+The default provider setting is used when two or more providers report data for the same Kubernetes cluster. When the same deployment is identified, select which one should take priority. When no default provider is selected, the earliest data available is used.
+
+Individual providers can also be disabled here if they should not be used when calculating Insights.
+
+### Kubernetes Cluster Mapping
+
+Runtime providers may report different names that refer to the same Kubernetes cluster. You can add a cluster name mapping to let Insights correlate resources from the two data sets.&#x20;
+
+For example, if Snyk reports a cluster name as `dev`, and an integration reports the same cluster name as `dev-foo`, you can add a mapping for the integration with a source name of `dev-foo` and a target name of `dev`.
+
+{% hint style="info" %}
+Ensure each source name is assigned to only one cluster mapping.
+{% endhint %}
+
 ## Prioritize your integrations
 
 When prioritizing with Insights, it is important to understand the available integration options and associated risk factors.&#x20;
