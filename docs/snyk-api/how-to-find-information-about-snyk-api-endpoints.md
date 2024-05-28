@@ -360,47 +360,29 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## Invites
 
-#### See also Invite users
+**See also:** [Migrated invite users](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
 
-[https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
+### [List pending user invitations to an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/invites)
 
-### List pending user invitations to an organization
+### [Invite a user to an organization](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/invites)
 
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/invites](https://apidocs.snyk.io/?version=2024-04-22#get-/orgs/-org\_id-/invites)
-
-### Invite a user to an organization
-
-[https://apidocs.snyk.io/?#post-/orgs/-org\_id-/invites](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/invites)
-
-### Cancel a pending user invitations to an organization
-
-[https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/invites/-invite\_id-](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/invites/-invite\_id-)
+### [Cancel a pending user invitations to an organization](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/invites/-invite\_id-)
 
 ## Issues
 
-### Get issues by group ID
+### [Get issues by group ID](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues)
 
-[https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues)
+### [Get an issue](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues/-issue\_id-)
 
-### Get an issue
+### [Get issues by org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues)
 
-[https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues/-issue\_id-](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues/-issue\_id-)
-
-### Get issues by org ID
-
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues)
-
-### Get an issue
-
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues/-issue\_id-](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues/-issue\_id-)
+### [Get an issue](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues/-issue\_id-)
 
 ### List issues for a given set of packages (Currently not available to all customers)
 
 [https://apidocs.snyk.io/?#post-/orgs/-org\_id-/packages/issues](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/packages/issues)
 
-### List issues for a package
-
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/packages/-purl-/issues](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/packages/-purl-/issues)
+### [List issues for a package](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/packages/-purl-/issues)
 
 ## Licenses (v1)
 
@@ -408,25 +390,19 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 #### List all licenses
 
-[https://snyk.docs.apiary.io/#reference/licenses/licenses-by-organization/list-all-licenses](https://snyk.docs.apiary.io/#reference/licenses/licenses-by-organization/list-all-licenses)
+[Migrated List all licenses](https://snyk.docs.apiary.io/#reference/licenses/licenses-by-organization/list-all-licenses)
 
 ## Monitor (v1)
 
 ### Dep Graph
 
-#### Monitor Dep Graph
-
-[https://snyk.docs.apiary.io/#reference/monitor/depgraph/monitor-dep-graph](https://snyk.docs.apiary.io/#reference/monitor/depgraph/monitor-dep-graph)
+#### [Monitor Dep Graph](https://snyk.docs.apiary.io/#reference/monitor/depgraph/monitor-dep-graph)
 
 ## OpenAPI
 
-### List available versions of OpenAPI specification
+### [List available versions of OpenAPI specification](https://apidocs.snyk.io/?#get-/openapi)
 
-[https://apidocs.snyk.io/?#get-/openapi](https://apidocs.snyk.io/?#get-/openapi)
-
-### Get OpenAPI specification effective at version
-
-[https://apidocs.snyk.io/?#get-/openapi/-version-](https://apidocs.snyk.io/?#get-/openapi/-version-)
+### [Get OpenAPI specification effective at version](https://apidocs.snyk.io/?#get-/openapi/-version-)
 
 ## Organizations (v1)
 
@@ -434,45 +410,45 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 #### List all the organizations a user belongs to
 
-[https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to)
+[Migrated List all the organizations a user belongs to](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to)
 
 ### Create organization
 
 #### Create a new organization
 
-[https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization)
+[Migrated Create a new organization](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization)
 
 ### Notification settings
 
 #### Get organization notification settings
 
-[https://snyk.docs.apiary.io/#reference/organizations/notification-settings/get-organization-notification-settings](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/get-organization-notification-settings)
+[Migrated Get organization notification settings](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/get-organization-notification-settings)
 
 #### Set notification settings
 
-[https://snyk.docs.apiary.io/#reference/organizations/notification-settings/set-notification-settings](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/set-notification-settings)
+Migrated Set notification settings
 
 ### User invitation to organization
 
 #### Invite users
 
-[https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
+[Migrated Invite users](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
 
 ### Members in organization
 
 #### List members
 
-[https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members](https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members)
+[Migrated List members](https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members)
 
 ### Organization settings
 
 #### View organization settings
 
-[https://snyk.docs.apiary.io/#reference/organizations/organization-settings/view-organization-settings](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/view-organization-settings)
+[Migrated View organization settings](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/view-organization-settings)
 
 #### Update organization settings
 
-[https://snyk.docs.apiary.io/#reference/organizations/organization-settings/update-organization-settings](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/update-organization-settings)
+[Migrated Update organization settings](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/update-organization-settings)
 
 ### Manage roles in organization
 
