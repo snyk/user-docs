@@ -67,9 +67,22 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
 
     ```
 
+## OpenShift
+
+When running your Kubernetes cluster in OpenShift, you will have to apply the `privileged` Security Context Constraint to the Runtime Sensor's service account by running the following command:
+
+```
+oc adm policy add-scc-to-user privileged \
+system:serviceaccount:<<YOUR_NAMESPACE>>:runtime-sensor
+```
+
+This command must be run after the sensor has been installed, as the service account will not available prior to the installation.&#x20;
+
 ## Troubleshooting
 
 * In case the `is_loaded` risk factor is not properly reported by the sensor, it may be caused by a non-default value of the Linux kernel `perf_event_paranoid` configuration.\
   In such cases, install the helm chart with either `--set securityContext.privileged=true` or add `SYS_ADMIN` as a required Linux capability `--set "securityContext.capabilities={SYS_ADMIN}"`.
+
+
 
 Release versions can be found on[ GitHub](https://github.com/snyk/runtime-sensor/releases).
