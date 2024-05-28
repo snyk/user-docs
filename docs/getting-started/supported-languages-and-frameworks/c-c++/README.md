@@ -99,6 +99,10 @@ c-example
 ...
 ```
 
+### **Version identification**
+
+Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.
+
 ### Data collection note
 
 When you scan C++ Projects, the following data is collected and may be stored for troubleshooting purposes:
