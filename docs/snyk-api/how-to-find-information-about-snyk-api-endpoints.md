@@ -116,9 +116,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### [Search Group audit logs](https://apidocs.snyk.io/?#get-/groups/-group\_id-/audit\_logs/search)
 
-**More information**
-
-[Filter through your audit logs more efficiently with the new GA REST version of the audit logs API, and api.access is now opt-in](https://updates.snyk.io/filter-through-your-audit-logs-more-efficiently-with-the-new-ga-rest-version-of-the-audit-logs-api-and-api-access-is-now-opt-in-291850)
+**More information:** [Filter through your audit logs more efficiently with the new GA REST version of the audit logs API, and api.access is now opt-in](https://updates.snyk.io/filter-through-your-audit-logs-more-efficiently-with-the-new-ga-rest-version-of-the-audit-logs-api-and-api-access-is-now-opt-in-291850)
 
 ### [Search Organization audit logs](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/audit\_logs/search)
 
@@ -262,7 +260,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 #### Delete tag from group
 
-[https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group)
+[Migrated Delete tag from group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group)
 
 ### List all organizations in a group
 
@@ -378,9 +376,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### [Get an issue](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues/-issue\_id-)
 
-### List issues for a given set of packages (Currently not available to all customers)
-
-[https://apidocs.snyk.io/?#post-/orgs/-org\_id-/packages/issues](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/packages/issues)
+### [List issues for a given set of packages](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/packages/issues) (Currently not available to all customers)
 
 ### [List issues for a package](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/packages/-purl-/issues)
 
@@ -426,7 +422,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 #### Set notification settings
 
-Migrated Set notification settings
+[Migrated Set notification settings](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/set-notification-settings)
 
 ### User invitation to organization
 
@@ -454,77 +450,59 @@ Migrated Set notification settings
 
 #### Update a member in the organization
 
-[https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/update-a-member-in-the-organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/update-a-member-in-the-organization)
+[Migrated Update a member in the organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/update-a-member-in-the-organization)
 
 #### Remove a member from the organization
 
-[https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization)
+[Migrated Remove a member from the organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization)
 
 ### Update member roles in your organization
 
 #### Update a member's role in the organization
 
-[https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization](https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization)
+[Migrated Update a member's role in the organization](https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization)
 
 ### Manage organization
 
 #### Remove organization
 
-[https://snyk.docs.apiary.io/#reference/organizations/manage-organization/remove-organization](https://snyk.docs.apiary.io/#reference/organizations/manage-organization/remove-organization)
+[Migrated Remove organization](https://snyk.docs.apiary.io/#reference/organizations/manage-organization/remove-organization)
 
 ### Provision user
 
 #### Provision a user to the organization
 
-[https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
+[Migrated Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
 
 #### List pending user provisions
 
-[https://snyk.docs.apiary.io/#reference/organizations/provision-user/list-pending-user-provisions](https://snyk.docs.apiary.io/#reference/organizations/provision-user/list-pending-user-provisions)
+[Migrated List pending user provisions](https://snyk.docs.apiary.io/#reference/organizations/provision-user/list-pending-user-provisions)
 
 #### Delete pending user provision
 
-[https://snyk.docs.apiary.io/#reference/organizations/provision-user/delete-pending-user-provision](https://snyk.docs.apiary.io/#reference/organizations/provision-user/delete-pending-user-provision)
+[Migrated Delete pending user provision](https://snyk.docs.apiary.io/#reference/organizations/provision-user/delete-pending-user-provision)
 
 ## Orgs (GA and beta)
 
-### List all organizations in a group
+### [List all organizations in a group](https://apidocs.snyk.io/?#get-/groups/-group\_id-/orgs)
 
-[https://apidocs.snyk.io/?#get-/groups/-group\_id-/orgs](https://apidocs.snyk.io/?#get-/groups/-group\_id-/orgs)
+### [List accessible organizations](https://apidocs.snyk.io/?#get-/orgs)
 
-### List accessible organizations
+### [Get an ORG](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-) (beta)
 
-[https://apidocs.snyk.io/?#get-/orgs](https://apidocs.snyk.io/?#get-/orgs)
+### [Get organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-)
 
-### Get an ORG (beta)
-
-[https://apidocs.snyk.io/?version=2024-04-22%7Ebeta#get-/orgs/-org\_id-](https://apidocs.snyk.io/?version=2024-04-22%7Ebeta#get-/orgs/-org\_id-)
-
-### Get organization
-
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-](https://apidocs.snyk.io/?#get-/orgs/-org\_id-)
-
-### Update organization
-
-[https://apidocs.snyk.io/?#patch-/orgs/-org\_id-](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-)
+### [Update organization](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-)
 
 ## Projects
 
-### List all Projects for an Org with the given Org ID
+### [List all Projects for an Org with the given Org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects)
 
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects)
+### [Get project by project ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-)
 
-### Get project by project ID
+### [Delete project by project ID](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/projects/-project\_id-)
 
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-)
-
-### Delete project by project ID
-
-[https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/projects/-project\_id-](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/projects/-project\_id-)
-
-### Updates project by project ID
-
-[https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/projects/-project\_id-](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/projects/-project\_id-)
+### [Updates project by project ID](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/projects/-project\_id-)
 
 ## Projects (v1)
 
@@ -532,151 +510,147 @@ Migrated Set notification settings
 
 #### Retrieve a single project
 
-[https://snyk.docs.apiary.io/#reference/projects/individual-project/retrieve-a-single-project](https://snyk.docs.apiary.io/#reference/projects/individual-project/retrieve-a-single-project)
+[Migrated Retrieve a single project](https://snyk.docs.apiary.io/#reference/projects/individual-project/retrieve-a-single-project)
 
 #### Update a project
 
-[https://snyk.docs.apiary.io/#reference/projects/individual-project/update-a-project](https://snyk.docs.apiary.io/#reference/projects/individual-project/update-a-project)
+[Migrated Update a project](https://snyk.docs.apiary.io/#reference/projects/individual-project/update-a-project)
 
 #### Delete a project
 
-[https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project)
+[Migrated Delete a project](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project)
 
 ### Deactivate an individual project
 
 #### Deactivate
 
-[https://snyk.docs.apiary.io/#reference/projects/deactivate-an-individual-project/deactivate](https://snyk.docs.apiary.io/#reference/projects/deactivate-an-individual-project/deactivate)
+[Migrated Deactivate an individual project](https://snyk.docs.apiary.io/#reference/projects/deactivate-an-individual-project/deactivate)
 
 ### Activate an individual project
 
 #### Activate
 
-[https://snyk.docs.apiary.io/#reference/projects/activate-an-individual-project/activate](https://snyk.docs.apiary.io/#reference/projects/activate-an-individual-project/activate)
+[Migrated Activate an individual project](https://snyk.docs.apiary.io/#reference/projects/activate-an-individual-project/activate)
 
 ### Aggregated Project issues
 
 #### List all Aggregated issues
 
-[https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues)
+[Migrated List  all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues)
 
 ### Project Issue Paths
 
 #### List all project issue paths
 
-[https://snyk.docs.apiary.io/#reference/projects/project-issue-paths/list-all-project-issue-paths](https://snyk.docs.apiary.io/#reference/projects/project-issue-paths/list-all-project-issue-paths)
+[Migrated List all project issue paths](https://snyk.docs.apiary.io/#reference/projects/project-issue-paths/list-all-project-issue-paths)
 
 ### Project History
 
 #### List all project snapshots
 
-[https://snyk.docs.apiary.io/#reference/projects/project-history/list-all-project-snapshots](https://snyk.docs.apiary.io/#reference/projects/project-history/list-all-project-snapshots)
+[Migrated List all project snapshots](https://snyk.docs.apiary.io/#reference/projects/project-history/list-all-project-snapshots)
 
 ### Aggregated Project Snapshot Issues
 
 #### List all project snapshot aggregated issues
 
-[https://snyk.docs.apiary.io/#reference/projects/aggregated-project-snapshot-issues/list-all-project-snapshot-aggregated-issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-snapshot-issues/list-all-project-snapshot-aggregated-issues)
+[Migrated List all project snapshot aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-snapshot-issues/list-all-project-snapshot-aggregated-issues)
 
 ### Project Snapshot Issue Paths
 
 #### List all project snapshot issue paths
 
-[https://snyk.docs.apiary.io/#reference/projects/project-snapshot-issue-paths/list-all-project-snapshot-issue-paths](https://snyk.docs.apiary.io/#reference/projects/project-snapshot-issue-paths/list-all-project-snapshot-issue-paths)
+[Migrated List all project snapshot issue paths](https://snyk.docs.apiary.io/#reference/projects/project-snapshot-issue-paths/list-all-project-snapshot-issue-paths)
 
 ### Project dependency graph
 
 #### Get Project dependency graph
 
-[https://snyk.docs.apiary.io/#reference/projects/project-dependency-graph/get-project-dependency-graph](https://snyk.docs.apiary.io/#reference/projects/project-dependency-graph/get-project-dependency-graph)
+[Migrated Get Project dependency graph](https://snyk.docs.apiary.io/#reference/projects/project-dependency-graph/get-project-dependency-graph)
 
 ### Project ignores
 
 #### List all ignores
 
-[https://snyk.docs.apiary.io/#reference/projects/project-ignores/list-all-ignores](https://snyk.docs.apiary.io/#reference/projects/project-ignores/list-all-ignores)
+[Migrated List all ignores](https://snyk.docs.apiary.io/#reference/projects/project-ignores/list-all-ignores)
 
 ### Ignored issues
 
 #### Retrieve ignore
 
-[https://snyk.docs.apiary.io/#reference/projects/ignored-issues/retrieve-ignore](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/retrieve-ignore)
+[Migrated Retrieve ignore](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/retrieve-ignore)
 
 #### Add ignore
 
-[https://snyk.docs.apiary.io/#reference/projects/ignored-issues/add-ignore](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/add-ignore)
+[Migrated Add ignore](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/add-ignore)
 
 #### Replace ignores
 
-[https://snyk.docs.apiary.io/#reference/projects/ignored-issues/replace-ignores](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/replace-ignores)
+[Migrated Replace ignores](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/replace-ignores)
 
 #### Delete ignores
 
-[https://snyk.docs.apiary.io/#reference/projects/ignored-issues/delete-ignores](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/delete-ignores)&#x20;
+[Migrated Delete ignores](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/delete-ignores)
 
 ### Project jira issues
 
 #### List all jira issues
 
+Migrated List all jira issues
+
 [https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/list-all-jira-issues](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/list-all-jira-issues)&#x20;
 
 #### Create jira issue
 
-[https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/create-jira-issue](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/create-jira-issue)
+[Migrated Create Jira issue](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/create-jira-issue)
 
 ### Project settings
 
 #### List project settings
 
-[https://snyk.docs.apiary.io/#reference/projects/project-settings/list-project-settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/list-project-settings)
+[Migrated List project settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/list-project-settings)
 
 #### Update project settings
 
-[https://snyk.docs.apiary.io/#reference/projects/project-settings/update-project-settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/update-project-settings)
+[Migrated Update project settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/update-project-settings)
 
 #### Delete project settings
 
-[https://snyk.docs.apiary.io/#reference/projects/project-settings/delete-project-settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/delete-project-settings)
+[Migrated Delete project settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/delete-project-settings)
 
 ### Move project
 
 #### Move project to a different organization
 
-[https://snyk.docs.apiary.io/#reference/projects/move-project/move-project-to-a-different-organization](https://snyk.docs.apiary.io/#reference/projects/move-project/move-project-to-a-different-organization)
+[Migrated Move project to a different organization](https://snyk.docs.apiary.io/#reference/projects/move-project/move-project-to-a-different-organization)
 
 ### Project tags
 
 #### Add a tag to a project
 
-[https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project)
+[Migrated Add a tag to a project](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project)
 
 ### Remove project tag
 
 #### Remove a tag from a project
 
-[https://snyk.docs.apiary.io/#reference/projects/remove-project-tag/remove-a-tag-from-a-project](https://snyk.docs.apiary.io/#reference/projects/remove-project-tag/remove-a-tag-from-a-project)
+[Migrated Remove a tag from a project](https://snyk.docs.apiary.io/#reference/projects/remove-project-tag/remove-a-tag-from-a-project)
 
 ### Project Attributes
 
 #### Applying attributes
 
-[https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes)
+[Migrated Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes)
 
 ## Pull request templates
 
-For information on how to use these endpoints, see [Create and manage a custom PR template using the API](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api).
+**More information:** [Create and manage a custom PR template using the API](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api).
 
-### Get pull request template for group
+### [Get pull request template for group](https://apidocs.snyk.io/?#get-/groups/-group\_id-/settings/pull\_request\_template)
 
-[https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#get-/groups/-group\_id-/settings/pull\_request\_template](https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#get-/groups/-group\_id-/settings/pull\_request\_template)
+### Create or update pull [request template for group](https://apidocs.snyk.io/?version=2024-05-23#delete-/groups/-group\_id-/settings/pull\_request\_template)
 
-### Create or update pull request template for group
-
-[https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#post-/groups/-group\_id-/settings/pull\_request\_template](https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#post-/groups/-group\_id-/settings/pull\_request\_template)
-
-### Delete pull request template for group
-
-[https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#delete-/groups/-group\_id-/settings/pull\_request\_template](https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#delete-/groups/-group\_id-/settings/pull\_request\_template)
+### [Delete pull request template for group](https://apidocs.snyk.io/?version=2024-05-23#delete-/groups/-group\_id-/settings/pull\_request\_template)
 
 ## Reporting API (v1)
 
