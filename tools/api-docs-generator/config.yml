@@ -10,5 +10,5 @@ specs:
 output:
     apiReferencePath: docs/snyk-api/reference
 changelog:
-    historicalDate: "2024-04-25"
-    lastSyncDate: "2024-04-25"
+    historicalVersionCutoff: "2024-04-25"
+    syncStateFile:  tools/api-docs-generator/syncState.yml

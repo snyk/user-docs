@@ -27,7 +27,7 @@ type Endpoint struct {
 
 type ChangesByEndpoint map[Endpoint]checker.Changes
 
-func UpdateChangelog(ctx context.Context, cfg *config.Config, changeLogFileName string) (string, error) {
+func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg config.SyncStateConfig, changeLogFileName string) (string, error) {
 	loader := openapi3.NewLoader()
 	loader.IsExternalRefsAllowed = true
 
@@ -51,7 +51,7 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, changeLogFileName 
 	defer func(writer *os.File) {
 		writeErr := writer.Close()
 		if writeErr != nil {
-			fmt.Printf("Error closing writer for %s\n", historicalChangelog)
+			fmt.Printf("Error closing writer for %s\n", changeLogFileName)
 		}
 	}(writer)
 
@@ -69,7 +69,7 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, changeLogFileName 
 
 	markdown := md.NewMarkdown(writer)
 
-	err = WriteToChangeLog(markdown, groupedChanges, latestGAVersion, nextURL, cfg.Changelog.LastSyncDate)
+	err = WriteToChangeLog(markdown, groupedChanges, latestGAVersion, nextURL, syncStateCfg.LastSyncedVersion)
 	if err != nil {
 		return "", err
 	}
@@ -124,7 +124,7 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config, changeLogFileNa
 
 		markdown := md.NewMarkdown(writer)
 
-		err = WriteToChangeLog(markdown, groupedChanges, baseVersion, nextURL, cfg.Changelog.LastSyncDate)
+		err = WriteToChangeLog(markdown, groupedChanges, baseVersion, nextURL, "")
 		if err != nil {
 			return err
 		}

@@ -18,8 +18,8 @@ type Spec struct {
 }
 
 type Changelog struct {
-	HistoricalDate string `yaml:"historicalDate"`
-	LastSyncDate   string `yaml:"lastSyncDate"`
+	HistoricalVersionCutoff string `yaml:"historicalVersionCutoff"`
+	SyncStateFile           string `yaml:"syncStateFile"`
 }
 
 type Output struct {
@@ -41,13 +41,4 @@ func Parse(filename string) (*Config, error) {
 	}
 	err = yaml.NewDecoder(file).Decode(&cfg)
 	return &cfg, err
-}
-
-func Update(filename string, cfg *Config) error {
-	file, err := os.Create(filename)
-	if err != nil {
-		return err
-	}
-	err = yaml.NewEncoder(file).Encode(cfg)
-	return err
 }

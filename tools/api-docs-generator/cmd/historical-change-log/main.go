@@ -21,8 +21,13 @@ func main() {
 		log.Panic(err)
 	}
 
-	if cfg.Changelog.HistoricalDate == "" {
-		log.Panic("Missing historical changelog date")
+	if cfg.Changelog.HistoricalVersionCutoff == "" {
+		log.Panic("Missing historical version cutoff")
+	}
+
+	syncStateCfg, err := config.LoadSyncState(cfg.Changelog.SyncStateFile)
+	if err != nil {
+		log.Panic(err)
 	}
 
 	//
@@ -31,14 +36,14 @@ func main() {
 	//	log.Panic(err)
 	// }
 
-	updatedToVersion, err := changelog.UpdateChangelog(ctx, cfg, "docs/snyk-api/CHANGELOG.md")
+	updatedToVersion, err := changelog.UpdateChangelog(ctx, cfg, syncStateCfg, "docs/snyk-api/CHANGELOG.md")
 	if err != nil {
 		log.Panic(err)
 	}
 
 	if updatedToVersion != "" {
-		cfg.Changelog.LastSyncDate = updatedToVersion
-		err := config.Update(configFile, cfg)
+		syncStateCfg.LastSyncedVersion = updatedToVersion
+		err := config.UpdateSyncState(cfg.Changelog.SyncStateFile, syncStateCfg)
 		if err != nil {
 			log.Panic(err)
 		}

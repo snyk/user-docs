@@ -1,4 +1,4 @@
-test:
+test: tidy lint
 	go test -v ./...
 
 run:

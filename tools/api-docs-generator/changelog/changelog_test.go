@@ -19,30 +19,30 @@ type testConfig struct {
 	want            string
 }
 
-var tests = []testConfig{
-	// {
-	// 	name:            "01_new_version_added",
-	// 	baseURL:         "../testdata/changelog/01_new_version_added/2024-04-25.yaml",
-	// 	nextURL:         "../testdata/changelog/01_new_version_added/2024-05-23.json",
-	// 	latestGAVersion: "2024-05-23",
-	// 	lastSyncVersion: "2024-04-25",
-	// 	want:            "## 2024-05-23",
-	// },
-	// {
-	// 	name:            "02_no_changes_detected",
-	// 	baseURL:         "../testdata/changelog/02_no_changes_detected/2024-04-25.yaml",
-	// 	nextURL:         "../testdata/changelog/02_no_changes_detected/2024-05-23.yaml",
-	// 	latestGAVersion: "2024-04-25",
-	// 	lastSyncVersion: "2024-04-25",
-	// 	want:            "",
-	// },
-	// {
-	// 	name:            "03_current_version_updated_in_place",
-	// 	baseURL:         "../testdata/changelog/03_current_version_updated_in_place/2024-05-23.yaml",
-	// 	nextURL:         "../testdata/changelog/03_current_version_updated_in_place/2024-05-23_updated.yaml",
-	// 	latestGAVersion: "2024-05-23",
-	// 	lastSyncVersion: "2024-05-23",
-	// 	want:            fmt.Sprintf("## %s - Updated %s", "2024-05-23", time.Now().Format("2006-01-02")),
+var tests = []*testConfig{
+	{
+		name:            "01_new_version_added",
+		baseURL:         "../testdata/changelog/01_new_version_added/2024-04-25.yaml",
+		nextURL:         "../testdata/changelog/01_new_version_added/2024-05-23.yaml",
+		latestGAVersion: "2024-05-23",
+		lastSyncVersion: "2024-04-25",
+		want:            "## 2024-05-23",
+	},
+	{
+		name:            "02_no_changes_detected",
+		baseURL:         "../testdata/changelog/02_no_changes_detected/2024-04-25.yaml",
+		nextURL:         "../testdata/changelog/02_no_changes_detected/2024-05-23.yaml",
+		latestGAVersion: "2024-04-25",
+		lastSyncVersion: "2024-04-25",
+		want:            "",
+	},
+	{
+		name:            "03_current_version_updated_in_place",
+		baseURL:         "../testdata/changelog/03_current_version_updated_in_place/2024-05-23.yaml",
+		nextURL:         "../testdata/changelog/03_current_version_updated_in_place/2024-05-23_update.yaml",
+		latestGAVersion: "2024-05-23",
+		lastSyncVersion: "2024-05-23",
+		want:            fmt.Sprintf("## %s - Updated %s", "2024-05-23", time.Now().Format("2006-01-02")),
 	},
 }
 
@@ -79,7 +79,7 @@ func testFn(config *testConfig) (string, error) {
 func Test_delta(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			gotRes, gotErr := testFn(&tt)
+			gotRes, gotErr := testFn(tt)
 			if gotErr != nil {
 				t.Errorf("Expected not to fail %v", gotErr)
 			}
