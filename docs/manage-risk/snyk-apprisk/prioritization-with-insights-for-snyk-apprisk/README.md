@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 **Release status** \
-The Loaded Package, Deployed from third-party integrations risk factors, and the Snyk Runtime Sensor are currently in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
+The Snyk Runtime Sensor and the thrid-party integrations providing the Deployed and Loaded Package risk factors are currently in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
 
 Contact your account manager if you are interested in Snyk AppRisk Pro.
 {% endhint %}

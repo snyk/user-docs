@@ -1,16 +1,26 @@
-# Loaded packages
+# Loaded package
 
 Vulnerabilities in a package are only exploitable if relevant code is executed. To do that, the package must be loaded into memory. Snyk can use data from integrations to match the packages loaded in a Kubernetes container against the issues found when Snyk scans the container, helping to prioritize issues that are more likely to be exploitable.
 
 Snyk collects information on packages loaded into memory from the runtime environment. This information can be collected either from a runtime integration or from the Runtime Sensor. The Loaded package risk factor helps to identify packages that impose the highest level of risk. Unlike theoretical risks, the likelihood of exploiting a vulnerability increases when a package is actually loaded into memory.
-
-
 
 {% hint style="info" %}
 The Loaded package risk factor is an enhancement of the Deployed risk factor.&#x20;
 
 Loaded packages are associated with a Kubernetes container deployed in a cluster that is known to Snyk. Therefore, an issue cannot have a loaded package risk factor without also having a deployed risk factor.
 {% endhint %}
+
+## Types of integration
+
+The Loaded package risk factor work with the Snyk Runtime Sensor and third-party integrations.
+
+### Snyk Runtime Sensor
+
+The Snyk Runtime Sensor improves the identification and management of loaded package risks by providing real-time data on packages loaded into memory within Kubernetes containers. It closely integrates with your runtime environment to continuously monitor active packages and cross-reference this information with known vulnerabilities. This dynamic approach ensures accurate application of the loaded package risk factor, using up-to-date data to prioritize and mitigate risks based on actual runtime conditions.
+
+### Third-party integrations
+
+Third-party integrations make the Loaded package risk factor even stronger by providing extra data sources and analysis capabilities. Snyk integrates with various security tools and platforms to gather comprehensive information about loaded packages from different environments. These integrations allow for cross-referencing of loaded packages against extensive vulnerability databases, resulting in a more robust identification and prioritization of risks. Third-party integrations help ensure a comprehensive and up-to-date vulnerability management process by leveraging the strengths and specialized knowledge of various security ecosystems.
 
 ## Technical details for the Loaded package risk factor
 

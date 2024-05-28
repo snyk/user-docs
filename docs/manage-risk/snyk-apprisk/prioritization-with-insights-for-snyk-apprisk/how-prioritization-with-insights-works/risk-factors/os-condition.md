@@ -20,6 +20,14 @@ If the vulnerability condition matches the operating system used by the runtime 
 
 When an image is scanned by Snyk Container, the information about which operating system the base of the image is running on is exposed. Therefore, whenever Insights is able to determine that a package is a dependency of the image or that the package has been included in the image, it compares the vulnerability information with the image specification. The same applies to problems identified directly in the image entity.
 
+## Types of integration
+
+The OS condition risk factor works with your Kubernetes Connector integrations.&#x20;
+
+### Kubernetes **Connector**
+
+The Kubernetes Connector leverages the OS condition risk factors to enhance the identification of vulnerabilities within containerized applications. It continuously checks and compares the operating systems of running containers with the known risk factors from the Snyk database. This integration helps to detect potentially vulnerable packages or images in real-time based on the operating system conditions. It allows proactive security measures within Kubernetes environments.
+
 ## Technical details for Insights OS condition risk factor
 
 Every hour, the data pipeline takes a snapshot of all Snyk Projects and data sources and extrapolates packages and images. This snapshot is used to determine which images and packages are known to Snyk for any given customer.&#x20;

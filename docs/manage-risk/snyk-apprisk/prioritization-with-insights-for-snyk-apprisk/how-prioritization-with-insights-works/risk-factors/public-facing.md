@@ -14,6 +14,14 @@ Cloud-native solutions are deterministic in the way the network connectivity is 
 Prioritization with Insights currently supports the following configurations: Kubernetes services and ingress, and Gloo.
 {% endhint %}
 
+## Types of integration
+
+The Public facing risk factor can be applied to your Kubernetes Connector integrations.&#x20;
+
+### Kubernetes **Connector**
+
+The Public facing risk factor has significant implications for Kubernetes Connector integration. It affects how vulnerabilities and potential attack vectors are prioritized and managed within the Kubernetes environment. The continuous monitoring of Kubernetes events by the Kubernetes Connector ensures that any changes or potential risks are instantly evaluated and relayed to the Snyk platform. This real-time data allows for the dynamic adjustment of security policies and proactive risk mitigation, ensuring the integrity and security of the cloud-native infrastructure.
+
 ## Technical details for the Public facing risk factor
 
 The Kubernetes Connector continuously monitors the Kubernetes events. These events are streamed to the Snyk platform continuously.&#x20;
