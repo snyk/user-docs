@@ -8,7 +8,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## Apps
 
-More information: [Snyk Apps](../snyk-api-info/snyk-apps/)
+**More information:** [Snyk Apps](../snyk-api-info/snyk-apps/)
 
 ### [Get a list of apps installed for a group](https://apidocs.snyk.io/?#get-/groups/-group\_id-/apps/installs)
 
@@ -32,7 +32,7 @@ More information: [Snyk Apps](../snyk-api-info/snyk-apps/)
 
 **Replaced by:** [Get a list of apps created by an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations)
 
-More information: [Manage App details](snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](snyk-apps/manage-app-details.md)
 
 ### DEPRECATED [Create a new app for an organization](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps)
 
@@ -42,7 +42,7 @@ More information: [Manage App details](snyk-apps/manage-app-details.md)
 
 ### [Get a list of apps created by an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations)
 
-Replaces: DEPRECATED Get a list of apps created by an organization
+**Replaces:** DEPRECATED Get a list of apps created by an organization
 
 ### [Create a new Snyk App for an organization](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/creations)
 
@@ -218,25 +218,15 @@ Replaces: DEPRECATED Get a list of apps created by an organization
 
 ## Groups (beta)
 
-### Get all groups
+### [Get all groups](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups)
 
-https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#get-/groups
+### [Get a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-)
 
-### Get a group
+### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-/sso\_connections)
 
-https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#get-/groups/-group\_id-/sso\_connections
+### [Get all users using a given SSO connection](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users)
 
-### Get all SSO connections for a group
-
-https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users
-
-### Get all users using a given SSO connection
-
-[https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users](https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users)
-
-### Delete a user from a Group SSO connection
-
-https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-
+### [Delete a user from a Group SSO connection](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
 
 ## Groups (v1)
 
@@ -254,19 +244,19 @@ https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#delete-/groups/-group\_id-/ss
 
 #### List all members in a group
 
-[https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group/list-all-members-in-a-group](https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group/list-all-members-in-a-group)
+[Migrated List all members in a group](https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group/list-all-members-in-a-group)
 
 ### Members in an organization of a group
 
 #### Add a member to an organization within a group
 
-[https://snyk.docs.apiary.io/#reference/groups/members-in-an-organization-of-a-group/add-a-member-to-an-organization-within-a-group](https://snyk.docs.apiary.io/#reference/groups/members-in-an-organization-of-a-group/add-a-member-to-an-organization-within-a-group)
+[Migrated Add a member to an organization within a group](https://snyk.docs.apiary.io/#reference/groups/members-in-an-organization-of-a-group/add-a-member-to-an-organization-within-a-group)
 
 ### List all tags in a group
 
 #### List all tags in a group
 
-[https://snyk.docs.apiary.io/#reference/groups/list-all-tags-in-a-group/list-all-tags-in-a-group](https://snyk.docs.apiary.io/#reference/groups/list-all-tags-in-a-group/list-all-tags-in-a-group)
+[Migrated List all tags in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-tags-in-a-group/list-all-tags-in-a-group)
 
 ### Delete Tag From Group
 
@@ -278,33 +268,23 @@ https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#delete-/groups/-group\_id-/ss
 
 #### List all organizations in a group
 
-[https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
+[Migrated List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
 
 ### List all roles in a group
 
 #### List all roles in a group
 
-[https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group)
+[Migrated List all roles in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group)
 
 ## IacSettings
 
-### Get the Infrastructure as Code Settings for a group
+### [Get the Infrastructure as Code Settings for a group](https://apidocs.snyk.io/?version=2024-05-23#get-/groups/-group\_id-/settings/iac)
 
-[https://apidocs.snyk.io/?#get-/groups/-group\_id-/settings/iac](https://apidocs.snyk.io/?#get-/groups/-group\_id-/settings/iac)
+### [Update the Infrastructure as Code Settings for a group](https://apidocs.snyk.io/?#patch-/groups/-group\_id-/settings/iac)
 
-### Update the Infrastructure as Code Settings for a group
+### [Get the Infrastructure as Code Settings for an org](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/settings/iac)
 
-[https://apidocs.snyk.io/?#patch-/groups/-group\_id-/settings/iac](https://apidocs.snyk.io/?#patch-/groups/-group\_id-/settings/iac)
-
-[https://apidocs.snyk.io/?#get-/groups/-group\_id-/settings/iac](https://apidocs.snyk.io/?#get-/groups/-group\_id-/settings/iac)
-
-### Get the Infrastructure as Code Settings for an org
-
-[https://apidocs.snyk.io/?#get-/orgs/-org\_id-/settings/iac](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/settings/iac)
-
-### Update the Infrastructure as Code Settings for an org
-
-[https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/settings/iac](https://apidocs.snyk.io/?version=2024-04-22#patch-/orgs/-org\_id-/settings/iac)
+### [Update the Infrastructure as Code Settings for an org](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/settings/iac)
 
 ## Import Projects (v1)
 
@@ -312,13 +292,13 @@ https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#delete-/groups/-group\_id-/ss
 
 #### Import targets
 
-[https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets)
+[Migrated import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets)
 
 ### Import job
 
 #### Get import job details
 
-[https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details)
+[Migrated Get import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details)
 
 ## Integrations (v1)
 
@@ -326,57 +306,57 @@ https://apidocs.snyk.io/?version=2024-04-29%7Ebeta#delete-/groups/-group\_id-/ss
 
 #### List
 
-[https://snyk.docs.apiary.io/#reference/integrations/integrations/list](https://snyk.docs.apiary.io/#reference/integrations/integrations/list)
+[Migrated List integrations](https://snyk.docs.apiary.io/#reference/integrations/integrations/list)
 
 #### Add new integration
 
-[https://snyk.docs.apiary.io/#reference/integrations/integrations/add-new-integration](https://snyk.docs.apiary.io/#reference/integrations/integrations/add-new-integration)
+[Migrated Add new integration](https://snyk.docs.apiary.io/#reference/integrations/integrations/add-new-integration)
 
 ### Integration
 
 #### Update existing integration
 
-[https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration)
+[Migrated Update existing integration](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration)
 
 ### Integration authentication
 
 #### Delete credentials
 
-[https://snyk.docs.apiary.io/#reference/integrations/integration-authentication/delete-credentials](https://snyk.docs.apiary.io/#reference/integrations/integration-authentication/delete-credentials)
+[Migrated Delete credentials](https://snyk.docs.apiary.io/#reference/integrations/integration-authentication/delete-credentials)
 
 ### Integration broker token provisioning
 
 #### Provision new broker token
 
-[https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-provisioning/provision-new-broker-token](https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-provisioning/provision-new-broker-token)
+[Migrated Provision new broker token](https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-provisioning/provision-new-broker-token)
 
 ### Integration broker token switching
 
 #### Switch between broker tokens
 
-[https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-switching/switch-between-broker-tokens](https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-switching/switch-between-broker-tokens)
+[Migrated Switch between broker tokens](https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-switching/switch-between-broker-tokens)
 
 ### Integration cloning
 
 #### Clone  an integration (with settings and credentials)
 
-[https://snyk.docs.apiary.io/#reference/integrations/integration-cloning/clone-an-integration-(with-settings-and-credentials)](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning/clone-an-integration-\(with-settings-and-credentials\))
+[Migrated Clone an integration (with settings and credentials)](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning/clone-an-integration-\(with-settings-and-credentials\))
 
 ### Integration by type
 
 #### Get existing integration by type
 
-[https://snyk.docs.apiary.io/#reference/integrations/integration-by-type/get-existing-integration-by-type](https://snyk.docs.apiary.io/#reference/integrations/integration-by-type/get-existing-integration-by-type)
+[Migrated Get existing integration by type](https://snyk.docs.apiary.io/#reference/integrations/integration-by-type/get-existing-integration-by-type)
 
 ### Integration settings
 
 #### Retrieve
 
-[https://snyk.docs.apiary.io/#reference/integrations/integration-settings/retrieve](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/retrieve)
+[Migrated Retrieve integration settings](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/retrieve)
 
 #### Update
 
-[https://snyk.docs.apiary.io/#reference/integrations/integration-settings/update](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/update)
+[Migrated Update integration settings](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/update)
 
 ## Invites
 
