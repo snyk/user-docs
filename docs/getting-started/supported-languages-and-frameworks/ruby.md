@@ -19,6 +19,10 @@ Snyk Code supports the following frameworks:
 Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
+{% hint style="info" %}
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+{% endhint %}
+
 Snyk supports testing, monitoring, and fixing Ruby Projects in the [CLI ](ruby.md#snyk-cli)and Git [integrations](ruby.md#snyk-integrations) that have their dependencies managed by [Bundler](https://bundler.io/) and comparing the specific dependency versions against the [Ruby vulnerability database](https://snyk.io/vuln?type=rubygems).
 
 Snyk tests all Bundler groups. Currently, it is not possible to exclude certain groups, such as test or development groups.

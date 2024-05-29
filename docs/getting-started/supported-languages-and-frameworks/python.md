@@ -20,6 +20,10 @@ Snyk Code supports the following frameworks:
 Features may not be available, depending on your plan. See the [Plans and pricing ](https://snyk.io/plans/) page for more details.
 {% endhint %}
 
+{% hint style="info" %}
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+{% endhint %}
+
 | Package managers / Features                  | CLI support | Git support | License scanning | Fix PRs |
 | -------------------------------------------- | ----------- | ----------- | ---------------- | ------- |
 | [Pip](https://pypi.org/project/pip/)         | ✔︎          | ✔︎          | ✔︎               | ✔︎      |

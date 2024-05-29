@@ -14,6 +14,10 @@ Beginning on January 1 2023 Snyk no longer supports govendor Projects. As a gene
 Now that Snyk no longer supports scanning of govendor Projects, a warning is issued and no results are provided.
 {% endhint %}
 
+{% hint style="info" %}
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+{% endhint %}
+
 Snyk supports testing and monitoring of Go Projects with dependencies managed by [Go Modules](https://golang.org/ref/mod) and [dep](https://github.com/golang/dep).
 
 #### Open source policy

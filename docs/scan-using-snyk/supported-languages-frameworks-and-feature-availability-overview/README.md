@@ -7,7 +7,7 @@ This page provides an overview of supported languages and package managers acros
 Here you can find information about the programming languages, fully supported package managers, and features for Snyk Open Source.
 
 {% hint style="info" %}
-Before scanning your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
 ### [.NET](../../scan-with-snyk/supported-languages-and-frameworks/.net/)

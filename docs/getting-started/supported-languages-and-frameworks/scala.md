@@ -18,6 +18,12 @@ Snyk Code supports the following frameworks:
 
 ### Open source and licensing
 
+Source.
+
+{% hint style="info" %}
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+{% endhint %}
+
 Below is a summary of the features offered by Snyk for Scala, organized by package manager. In addition to these features, Snyk may offer additional functionality related to specific integration configurations.
 
 | Package managers / Features       | CLI support | Git support | License scanning | Fix PRs |

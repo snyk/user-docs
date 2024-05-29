@@ -28,6 +28,10 @@ Snyk Code supports the following frameworks:
 
 ### Open source and licensing
 
+{% hint style="info" %}
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+{% endhint %}
+
 Snyk Open Source provides full support for Java and Kotlin, as outlined below.
 
 {% hint style="info" %}
