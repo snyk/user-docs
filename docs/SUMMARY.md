@@ -971,7 +971,7 @@
     * [Snyk API rate limits](snyk-api/make-calls-to-the-snyk-api/snyk-api-rate-limits.md)
     * [Request body schema in Snyk REST API](snyk-api/make-calls-to-the-snyk-api/request-body-schema-in-snyk-rest-api.md)
     * [Relationships in Snyk REST API](snyk-api/make-calls-to-the-snyk-api/relationships-in-snyk-rest-api.md)
-  * [How to find information about API endpoints](snyk-api/how-to-find-information-about-api-endpoints.md)
+  * [How to find information about Snyk API endpoints](snyk-api/how-to-find-information-about-snyk-api-endpoints.md)
   * [How to use Snyk API endpoints](snyk-api/how-to-use-snyk-api-endpoints/README.md)
     * [Solutions for specific use cases](snyk-api/how-to-use-snyk-api-endpoints/solutions-for-specific-use-cases.md)
     * [Scenarios for using Snyk API](snyk-api/how-to-use-snyk-api-endpoints/scenarios-for-using-snyk-api.md)

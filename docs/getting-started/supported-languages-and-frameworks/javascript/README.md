@@ -248,6 +248,16 @@ Configure language settings for your open source and licensing at the Organizati
 
 <figure><img src="../../../.gitbook/assets/language_settings.png" alt="JavaScript language settings for open source and licensing."><figcaption><p>JavaScript language settings for open source and licensing</p></figcaption></figure>
 
+#### Workspaces
+
+{% hint style="info" %}
+Yarn and npm workspaces are not explicitly supported in Snyk git repository integration scans.
+{% endhint %}
+
+Root-level `package.json`manifest files with adjacent lockfiles will be scanned as normal.&#x20;
+
+For nested manifest files with no lockfiles Snyk will approximate what the tree will look like at build time without using the root lockfile.
+
 #### Fix PRs and npm save-prefix
 
 When creating a fix for vulnerabilities using npm v7+ Projects, Snyk will use the default npm `save-prefix` rather than inferring it from your Project.

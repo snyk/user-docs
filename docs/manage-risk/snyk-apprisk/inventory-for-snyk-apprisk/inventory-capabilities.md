@@ -67,7 +67,7 @@ The asset information is divided into the following tabs:
   * Issues Info - categorizes the identified types of open issues.&#x20;
   * App Context - asset metadata from App Context integrations, such as Backstage catalog or ServiceNow CMDB, can include the following attributes: catalog name, category, application, owner, and so on.
 
-<figure><img src="../../../.gitbook/assets/image (442).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (442) (1).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
 
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 

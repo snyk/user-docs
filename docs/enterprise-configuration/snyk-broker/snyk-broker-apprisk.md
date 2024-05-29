@@ -2,9 +2,7 @@
 
 If your SCM or third-party instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. The minimum supported Broker version for Snyk AppRisk is [4.171.0](https://github.com/snyk/broker/releases/tag/v4.171.0).
 
-{% hint style="info" %}
-Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before running the commands.
-{% endhint %}
+Enable Broker for Snyk AppRisk by setting the `APPRISK` environment variable to `true` in the installation command: `ACCEPT_APPRISK=true`  for Docker and `--set enableAppRisk=true` for Helm.
 
 ## SCM integrations
 
@@ -37,7 +35,7 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 The third-party integrations are available in a Closed Beta state and are applicable only to the Snyk AppRisk Pro version.  Please contact your salesperson if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
-### Checkmarx SAST integration
+## Checkmarx SAST integration
 
 Use the following steps to install and run Snyk Broker for the AppRisk and Checkmarx SAST integration.
 

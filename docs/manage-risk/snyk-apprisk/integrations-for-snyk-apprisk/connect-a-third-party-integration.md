@@ -2,6 +2,8 @@
 
 {% hint style="warning" %}
 The third-party integrations are available in a Closed Beta state and are applicable only to the Snyk AppRisk Pro version.  Please contact your salesperson if you are interested in Snyk AppRisk Pro.
+
+The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
 {% endhint %}
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
@@ -318,3 +320,7 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
   * Owner: business\_unit
 * Click the **Done** button.
 * When the connection is established, the status of the ServiceNow CMDB integration is changed to **Connected**.
+
+{% hint style="info" %}
+The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
+{% endhint %}

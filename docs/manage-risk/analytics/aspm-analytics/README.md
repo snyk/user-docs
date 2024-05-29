@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 **Release status** \
-Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
+Application Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
 
 Contact your account manager if you are interested in Snyk AppRisk Pro.
 {% endhint %}

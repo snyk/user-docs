@@ -1,11 +1,17 @@
 # Deployed
 
-Any code that is deployed poses more risk to your application and business as it has an increased likelihood of being exploited.&#x20;
+Any deployed code increases the risk of exploitation of your application and business.
 
-Understanding what code is deployed and where enables you to adopt a remediation strategy focused on reducing your risk surface area from running code.&#x20;
+Understanding what code is deployed and where enables you to adopt a remediation strategy focused on reducing your risk surface area from running code.
 
-Snyk AppRisk determines that a container image is deployed by looking for a match between the running images on the Kubernetes cluster and the created Snyk Container Projects.\
-\
+## Types of integration
+
+The Deployed risk factor works with the Kubernetes Connector, the Snyk Runtime Sensor, and third-party integrations.
+
+### Kubernetes **Connector**
+
+Snyk AppRisk determines that a container image is deployed by looking for a match between the running images on the Kubernetes cluster and the created Snyk Container Projects.
+
 Snyk AppRisk uses Kubernetes state information to extract Docker image identifiers that are currently being executed. The status of a Kubernetes container has image names that are being run by the Kubernetes runtime. A search is performed on the database of known Docker images to find matching names. When the image names are matched, Snyk can display this information in a graph. The graph shows the relationship between the image and the container. \
 
 
@@ -32,7 +38,7 @@ The matching uses the following order of precedence, where the first step must p
 
 Consider the examples that follow.
 
-## **Example one: Using Snyk Container CLI**
+#### **Example one: Using Snyk Container CLI**
 
 Result: Image successfully matched, and risk factor applied
 
@@ -55,9 +61,9 @@ The image is deployed to your Kubernetes cluster with this example manifest:\
 
 &#x20;   `image: gcr.io/my-company/my-app:latest`
 
-This enables Insights to successfully match on the image name and apply the Deployed risk factor to all issues associated with this Snyk Container Project.
+This enables Insights to successfully match the image name and apply the Deployed risk factor to all issues associated with this Snyk Container Project.
 
-## **Example two: Using Snyk Container CLI and a container Registry**&#x20;
+#### **Example two: Using Snyk Container CLI and a container Registry**&#x20;
 
 Result: Image successfully matched, and risk factor applied
 
@@ -94,6 +100,14 @@ This enables Insights to successfully match both Snyk Container Projects and app
 {% hint style="info" %}
 Snyk recommends always specifying the full name of the image in your CLI command. If you are not able to do this, Snyk recommends also scanning the same image using a second integration.&#x20;
 {% endhint %}
+
+### Snyk Runtime Sensor
+
+The Snyk Runtime Sensor applies the Deployed risk factor by constantly monitoring the active containers within a Kubernetes cluster. It does this by capturing real-time Kubernetes events and taking hourly snapshots of the cluster's state. These real-time data and snapshots help identify which images are currently being deployed. By comparing this information with Snyk Projects and known vulnerabilities, the Snyk Runtime Sensor accurately assesses deployed risks. This ensures that security insights are up-to-date and reflect the current deployment environment.
+
+### Third-party integrations
+
+The Deployed risk factor is extended to third-party integrations through real-time monitoring of Kubernetes clusters, along with data from external sources. This enables a comprehensive assessment of deployed risks across diverse environments. By integrating with third-party tools, Snyk can cross-reference vulnerabilities from various sources, ensuring that the deployed risk factor reflects the most accurate and current threat landscape. This holistic approach allows Snyk to provide actionable insights and maintain robust security postures across all integrated platforms.
 
 ## Technical details for Snyk Insights Deployed risk factor
 

@@ -3,7 +3,7 @@
 The error codes in the table below describe the codes that you may encounter while working with the [Snyk API](../snyk-api/README.md) or [CLI](../snyk-cli/README.md). When errors are encountered using the API, they will also have an appropriate [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). If you encounter errors without an error code, use the HTTP status code to determine the appropriate action.
 
 ---
-# [Snyk](https://docs.snyk.io/introducing-snyk)
+# Snyk
 ### [SNYK-0001](#snyk-0001)
 
 #### Service temporarily throttled
@@ -95,17 +95,17 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 - [https://status.snyk.io/](https://status.snyk.io/)
 
 ---
-# CustomBaseImages
+# Custom Base Images
 ### [SNYK-CBI-0001](#snyk-cbi-0001)
 
 #### Versioning schema does not support tag
 
 The versioning schema used does not support the given tag. Update the versioning schema to include the tag.
 
-        Once the tag of the custom base image is correct, the versioning schema must be modified.
-        You can use a different versioning schema that supports all tags in the repository or you can update the relevant properties of the versioning schema.
+Once the tag of the custom base image is correct, the versioning schema must be modified.
+You can use a different versioning schema that supports all tags in the repository or you can update the relevant properties of the versioning schema.
 
-        For example, if the repository currently uses Semver, and a new tag "1.2.5.7" needs to be added, then you can use a Custom versioning schema.
+For example, if the repository currently uses Semver, and a new tag "1.2.5.7" needs to be added, then you can use a Custom versioning schema.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -433,7 +433,7 @@ The media format of the request is not supported. Change media format, then try 
 
 
 ---
-# [Open Source Languages & Package Managers](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
+# Open Source Languages & Package Managers
 ### [SNYK-OS-0001](#snyk-os-0001)
 
 #### Unable to parse manifest file
@@ -1339,7 +1339,7 @@ The language or package manager is not supported. Please refer to the supported 
 - [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
 
 ---
-# SbomExport
+# SBOM Export
 ### [SNYK-OS-9000](#snyk-os-9000)
 
 #### SBOM generation export server error
@@ -1424,7 +1424,7 @@ The supplied dependency graph was not valid. Review the request, then try again.
 
 
 ---
-# [Open Source Unmanaged](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files)
+# Open Source Unmanaged
 ### [SNYK-OSJVM-001](#snyk-osjvm-001)
 
 #### Maven search service unavailable
@@ -1449,7 +1449,7 @@ Unable to find the coordinates for the provided SHA1. Please verify the data you
 - [https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files)
 
 ---
-# [PURL Vulnerabilities](https://docs.snyk.io/scan-applications/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database#about-the-vulnerability-database)
+# PURL Vulnerabilities
 ### [SNYK-OSSI-1040](#snyk-ossi-1040)
 
 #### Your Organisation is not authorized to perform this action
@@ -1628,7 +1628,7 @@ The given Package URL does not contain a supported vendor. Please use one of the
 
 
 ---
-# OpenSourceProjectIssues
+# Open Source Project Issues
 ### [SNYK-OSSI-OSPI-1001](#snyk-ossi-ospi-1001)
 
 #### Invalid request
@@ -2007,4 +2007,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-05-24T13:25:11.397Z
+--- Generated at 2024-05-27T11:27:59.221Z
