@@ -25,7 +25,7 @@ func main() {
 		log.Panic("Missing historical version cutoff")
 	}
 
-	err = changelog.GenerateHistorical(ctx, cfg, "docs/snyk-api/changelog.md", cfg.Changelog.HistoricalVersionCutoff)
+	err = changelog.GenerateHistorical(ctx, cfg)
 	if err != nil {
 		log.Panic(err)
 	}

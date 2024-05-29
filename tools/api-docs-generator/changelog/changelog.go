@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/url"
 	"os"
+	"path"
 	"slices"
 	"sort"
 	"strings"
@@ -30,7 +31,7 @@ type ChangesByEndpoint struct {
 	checker.Changes
 }
 
-func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg config.SyncStateConfig, changeLogFileName string) (string, error) {
+func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg config.SyncStateConfig, docsDirectory string) (string, error) {
 	loader := openapi3.NewLoader()
 	loader.IsExternalRefsAllowed = true
 
@@ -41,25 +42,8 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 
 	latestGAVersion := versions.GetLatestGAVersion(allVersions)
 
-	historicalChangelog, err := os.ReadFile(changeLogFileName) // just pass the file name
-	if err != nil {
-		fmt.Print(err)
-	}
-
-	writer, err := os.Create(changeLogFileName)
-	if err != nil {
-		return "", err
-	}
-
-	defer func(writer *os.File) {
-		writeErr := writer.Close()
-		if writeErr != nil {
-			fmt.Printf("Error closing writer for %s\n", changeLogFileName)
-		}
-	}(writer)
-
 	nextURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, latestGAVersion)
-	baseURL := cfg.Fetcher.Destination
+	baseURL := path.Join(docsDirectory, cfg.Fetcher.Destination)
 
 	groupedChanges, err := getChangeLog(nextURL, baseURL, loader)
 	if err != nil {
@@ -69,6 +53,24 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 	if len(groupedChanges) == 0 {
 		return "", nil
 	}
+
+	// changes detected
+	historicalChangelog, err := os.ReadFile(path.Join(docsDirectory, cfg.Changelog.ChangelogFile)) // just pass the file name
+	if err != nil {
+		fmt.Print(err)
+	}
+
+	writer, err := os.Create(path.Join(docsDirectory, cfg.Changelog.ChangelogFile))
+	if err != nil {
+		return "", err
+	}
+
+	defer func(writer *os.File) {
+		writeErr := writer.Close()
+		if writeErr != nil {
+			fmt.Printf("Error closing writer for %s\n", cfg.Changelog.ChangelogFile)
+		}
+	}(writer)
 
 	markdown := md.NewMarkdown(writer)
 
@@ -90,7 +92,7 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 	return latestGAVersion, err
 }
 
-func GenerateHistorical(ctx context.Context, cfg *config.Config, changeLogFileName, endVersion string) error {
+func GenerateHistorical(ctx context.Context, cfg *config.Config) error {
 	allVersions, err := versions.GetCurrentVersions(ctx, cfg)
 	if err != nil {
 		return err
@@ -100,12 +102,12 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config, changeLogFileNa
 	loader.IsExternalRefsAllowed = true
 
 	gaVersions := versions.ExtractGAVersions(allVersions)
-	endVersionPos := sort.SearchStrings(gaVersions, endVersion)
+	endVersionPos := sort.SearchStrings(gaVersions, cfg.Changelog.HistoricalVersionCutoff)
 	gaVersions = gaVersions[:endVersionPos]
 	slices.Reverse(gaVersions)
 	nextVersion := gaVersions[0]
 
-	writer, err := os.Create(changeLogFileName)
+	writer, err := os.Create(cfg.Changelog.ChangelogFile)
 	if err != nil {
 		return err
 	}

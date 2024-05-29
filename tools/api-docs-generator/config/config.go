@@ -20,6 +20,7 @@ type Spec struct {
 type Changelog struct {
 	HistoricalVersionCutoff string `yaml:"historicalVersionCutoff"`
 	SyncStateFile           string `yaml:"syncStateFile"`
+	ChangelogFile           string `yaml:"changelogFile"`
 }
 
 type Output struct {

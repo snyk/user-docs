@@ -27,7 +27,11 @@ specs:
   docsHint: hint 2
 
 output:
-  apiReferencePath: snyk-api/reference`)
+  apiReferencePath: snyk-api/reference
+changelog:
+    historicalVersionCutoff: "2024-05-24"
+    syncStateFile:  tools/api-docs-generator/sync-state.yml
+    changelogFile:  tools/snyk-api/changelog.md`)
 			},
 			want: Config{
 				Fetcher: Fetcher{"source", "destination"},
@@ -36,6 +40,11 @@ output:
 					{".gitbook/assets/rest-spec.json", "", "hint 2"},
 				},
 				Output: Output{"snyk-api/reference"},
+				Changelog: Changelog{
+					HistoricalVersionCutoff: "2024-05-24",
+					SyncStateFile:           "tools/api-docs-generator/sync-state.yml",
+					ChangelogFile:           "tools/snyk-api/changelog.md",
+				},
 			},
 		},
 		{
