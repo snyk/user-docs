@@ -32,17 +32,9 @@ func main() {
 		log.Panic(err)
 	}
 
-	updatedToVersion, err := changelog.UpdateChangelog(ctx, cfg, syncStateCfg, docsDirectory)
+	err = changelog.UpdateChangelog(ctx, cfg, syncStateCfg, docsDirectory)
 	if err != nil {
 		log.Panic(err)
-	}
-
-	if updatedToVersion != "" {
-		syncStateCfg.LastSyncedVersion = updatedToVersion
-		updateSyncStateErr := config.UpdateSyncState(path.Join(docsDirectory, cfg.Changelog.SyncStateFile), syncStateCfg)
-		if err != nil {
-			log.Panic(updateSyncStateErr)
-		}
 	}
 
 	// replace latest spec

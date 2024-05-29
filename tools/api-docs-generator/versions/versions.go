@@ -49,10 +49,6 @@ func ExtractGAVersions(versions []string) []string {
 	return gaVersions
 }
 
-func ReplaceWithCodeQuotes(description string) string {
-	return strings.ReplaceAll(description, "'", "`")
-}
-
 func GetLatestGAVersion(versions []string) string {
 	gaVersions := []string{}
 	for _, version := range versions {

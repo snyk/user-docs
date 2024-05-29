@@ -31,13 +31,16 @@ type ChangesByEndpoint struct {
 	checker.Changes
 }
 
-func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg config.SyncStateConfig, docsDirectory string) (string, error) {
+func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg config.SyncStateConfig, docsDirectory string) error {
+	changeLogFile := path.Join(docsDirectory, cfg.Changelog.ChangelogFile)
+	syncStateFile := path.Join(docsDirectory, cfg.Changelog.SyncStateFile)
+
 	loader := openapi3.NewLoader()
 	loader.IsExternalRefsAllowed = true
 
 	allVersions, err := versions.GetCurrentVersions(ctx, cfg)
 	if err != nil {
-		return "", err
+		return err
 	}
 
 	latestGAVersion := versions.GetLatestGAVersion(allVersions)
@@ -47,52 +50,55 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 
 	groupedChanges, err := getChangeLog(nextURL, baseURL, loader)
 	if err != nil {
-		return "", err
+		return err
 	}
 
 	if len(groupedChanges) == 0 {
-		return "", nil
+		// skip all logic if no actual changes detected
+		return nil
 	}
 
 	// changes detected
-	historicalChangelog, err := os.ReadFile(path.Join(docsDirectory, cfg.Changelog.ChangelogFile)) // just pass the file name
+	historicalChangelog, err := os.ReadFile(changeLogFile) // just pass the file name
 	if err != nil {
 		fmt.Print(err)
 	}
 
-	writer, err := os.Create(path.Join(docsDirectory, cfg.Changelog.ChangelogFile))
+	writer, err := os.Create(changeLogFile)
 	if err != nil {
-		return "", err
+		return err
 	}
 
 	defer func(writer *os.File) {
 		writeErr := writer.Close()
 		if writeErr != nil {
-			fmt.Printf("Error closing writer for %s\n", cfg.Changelog.ChangelogFile)
+			fmt.Printf("Error closing writer for %s\n", changeLogFile)
 		}
 	}(writer)
 
 	markdown := md.NewMarkdown(writer)
-
 	err = WriteToChangeLog(markdown, groupedChanges, latestGAVersion, nextURL, syncStateCfg.LastSyncedVersion)
 	if err != nil {
-		return "", err
+		return err
 	}
 
 	err = markdown.Build()
 	if err != nil {
-		return "", err
+		return err
 	}
 
 	_, err = writer.Write(historicalChangelog)
 	if err != nil {
-		return "", err
+		return err
 	}
 
-	return latestGAVersion, err
+	syncStateCfg.LastSyncedVersion = latestGAVersion
+	err = config.UpdateSyncState(syncStateFile, syncStateCfg)
+
+	return err
 }
 
-func GenerateHistorical(ctx context.Context, cfg *config.Config) error {
+func GenerateHistorical(ctx context.Context, cfg *config.Config, docsDirectory string) error {
 	allVersions, err := versions.GetCurrentVersions(ctx, cfg)
 	if err != nil {
 		return err
@@ -107,7 +113,7 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config) error {
 	slices.Reverse(gaVersions)
 	nextVersion := gaVersions[0]
 
-	writer, err := os.Create(cfg.Changelog.ChangelogFile)
+	writer, err := os.Create(path.Join(docsDirectory, cfg.Changelog.ChangelogFile))
 	if err != nil {
 		return err
 	}
@@ -115,6 +121,7 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config) error {
 	for _, baseVersion := range gaVersions[1:] {
 		nextURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, nextVersion)
 		baseURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, baseVersion)
+		fmt.Printf("Comparing %s to %s\n", nextVersion, baseVersion)
 		groupedChanges, err := getChangeLog(nextURL, baseURL, loader)
 		if err != nil {
 			return err
@@ -181,16 +188,16 @@ func WriteToChangeLog(markdown *md.Markdown, groupedChanges []ChangesByEndpoint,
 			if err != nil {
 				return err
 			}
-			markdown.BulletList(versions.ReplaceWithCodeQuotes(document.Paths.Find(changeGroup.Path).Operations()[changeGroup.Operation].Description))
+			markdown.BulletList(normalizeQuotes(document.Paths.Find(changeGroup.Path).Operations()[changeGroup.Operation].Description))
 			continue
 		}
 		markdown.H3f("%s - `%s` - Updated", changeGroup.Operation, changeGroup.Path)
 		for index := range changeGroup.Changes {
 			if changeGroup.Changes[index].IsBreaking() {
-				markdown.BulletList(versions.ReplaceWithCodeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer)))
+				markdown.BulletList(normalizeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer)))
 				markdown.YellowBadge("Breaking")
 			} else {
-				markdown.BulletList(fmt.Sprintf("%s\n", versions.ReplaceWithCodeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer))))
+				markdown.BulletList(fmt.Sprintf("%s\n", normalizeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer))))
 			}
 		}
 
@@ -254,4 +261,8 @@ func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader
 	}
 
 	return groupedChanges, nil
+}
+
+func normalizeQuotes(description string) string {
+	return strings.ReplaceAll(description, "'", "`")
 }

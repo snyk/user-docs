@@ -4,6 +4,9 @@ test: tidy lint
 run:
 	@go run . config.yml ../..
 
+historical-changelog:
+	@go run ./cmd/historical-change-log config.yml ../..
+
 lint: tidy
 	go run github.com/golangci/golangci-lint/cmd/golangci-lint run
 
