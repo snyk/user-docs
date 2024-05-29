@@ -1,15 +1,33 @@
-## 2024-04-25
+## 2024-05-23
 
-### GET - `/groups/{group_id}/audit_logs/search` - Updated
-- deleted the `query` request parameter `event`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- deleted the `query` request parameter `exclude_event`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the new optional `query` request parameter `events`
-
-- added the new optional `query` request parameter `exclude_events`
+### DELETE - `/self/apps/installs/{install_id}` - Updated
+- api operation id `deleteUserAppInstallByID` removed and replaced with `deleteUserAppInstallById`
 
 
+
+### DELETE - `/orgs/{org_id}/apps/installs/{install_id}` - Updated
+- api operation id `deleteAppOrgInstallByID` removed and replaced with `deleteAppOrgInstallById`
+
+
+
+### DELETE - `/groups/{group_id}/apps/installs/{install_id}` - Updated
+- api operation id `deleteGroupAppInstallByID` removed and replaced with `deleteGroupAppInstallById`
+
+
+## 2024-05-08
+
+### POST - `/groups/{group_id}/settings/pull_request_template` - Added
+- Configures a group level pull request template that will be used on any org or project within that group
+
+
+### GET - `/groups/{group_id}/settings/pull_request_template` - Added
+- Get your groups pull request template
+
+
+### DELETE - `/groups/{group_id}/settings/pull_request_template` - Added
+- Delete your groups pull request template. This means Snyk pull requests will start to use the default template for this group.
+
+## 2024-04-29
 
 ### GET - `/orgs/{org_id}/audit_logs/search` - Updated
 - deleted the `query` request parameter `event`
@@ -21,7 +39,18 @@
 - added the new optional `query` request parameter `exclude_events`
 
 
-## 2024-04-11
+
+### GET - `/groups/{group_id}/audit_logs/search` - Updated
+- deleted the `query` request parameter `event`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- deleted the `query` request parameter `exclude_event`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional `query` request parameter `events`
+
+- added the new optional `query` request parameter `exclude_events`
+
+
+## 2024-04-22
 
 ### GET - `/self` - Added
 - Retrieves information about the the user making the request.
@@ -32,16 +61,16 @@
 
 
 
-### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
-- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
-
-
-
 ### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
 - added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
-## 2024-02-21
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+
+## 2024-02-28
 
 ### GET - `/orgs` - Updated
 - for the `query` request parameter `name`, the maxLength was set to `100`
@@ -54,9 +83,9 @@
 
 
 
-### GET - `/groups/{group_id}/orgs` - Added
-- Get a paginated list of all the organizations belonging to the group.
-By default, this endpoint returns the organizations in alphabetical order of their name.
+### PATCH - `/orgs/{org_id}` - Updated
+- added the optional property `data/attributes/access_requests_enabled` to the response with the `200` status
+
 
 
 ### GET - `/orgs/{org_id}` - Updated
@@ -64,19 +93,26 @@ By default, this endpoint returns the organizations in alphabetical order of the
 
 
 
-### PATCH - `/orgs/{org_id}` - Updated
-- added the optional property `data/attributes/access_requests_enabled` to the response with the `200` status
+### GET - `/groups/{group_id}/orgs` - Added
+- Get a paginated list of all the organizations belonging to the group.
+By default, this endpoint returns the organizations in alphabetical order of their name.
+
+## 2024-02-21
+
+### GET - `/orgs/{org_id}/targets` - Added
+- Get a list of an organization`s targets.
 
 
-## 2024-01-23
+### GET - `/orgs/{org_id}/targets/{target_id}` - Added
+- Get a specified target for an organization.
+
+
+### DELETE - `/orgs/{org_id}/targets/{target_id}` - Added
+- Delete the specified target.
+
 
 ### GET - `/orgs/{org_id}/projects` - Updated
 - removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/items/relationships/target` response property `oneOf` list for the response status `200`
-
-
-
-### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
-- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
@@ -85,22 +121,11 @@ By default, this endpoint returns the organizations in alphabetical order of the
 
 
 
-### GET - `/orgs/{org_id}/targets` - Added
-- Get a list of an organization`s targets.
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
-### DELETE - `/orgs/{org_id}/targets/{target_id}` - Added
-- Delete the specified target.
-
-
-### GET - `/orgs/{org_id}/targets/{target_id}` - Added
-- Get a specified target for an organization.
-
-## 2024-01-04
-
-### GET - `/groups/{group_id}/issues/{issue_id}` - Added
-- Get an issue
-
+## 2024-01-23
 
 ### GET - `/orgs/{org_id}/issues` - Added
 - Get a list of an organization`s issues.
@@ -113,7 +138,11 @@ By default, this endpoint returns the organizations in alphabetical order of the
 ### GET - `/groups/{group_id}/issues` - Added
 - Get a list of a group`s issues.
 
-## 2023-12-21
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Added
+- Get an issue
+
+## 2024-01-04
 
 ### POST - `/custom_base_images` - Updated
 - removed `#/components/schemas/VersioningSchemaDateType` from the `data/attributes/versioning_schema` request property `oneOf` list
@@ -133,108 +162,27 @@ By default, this endpoint returns the organizations in alphabetical order of the
 - removed `#/components/schemas/VersioningSchemaDateType` from the `data/attributes/versioning_schema` response property `oneOf` list for the response status `200`
 
 
-## 2023-11-03
+## 2023-11-06
 
 ### DELETE - `/orgs/{org_id}/projects/{project_id}` - Added
 - Delete one project in the organization by project ID.
 
-## 2023-11-02
+## 2023-11-03
 
-### DELETE - `/orgs/{org_id}/apps/creations/{app_id}` - Added
-- Delete an app by its App ID.
-
-
-### GET - `/groups/{group_id}/apps/installs` - Added
-- Get a list of apps installed for a group.
-
-
-### GET - `/self/apps/installs` - Added
-- Get a list of apps installed for an user.
-
-
-### PATCH - `/orgs/{org_id}/apps/creations/{app_id}` - Added
-- Update app creation attributes with App ID.
-
-
-### POST - `/orgs/{org_id}/apps/installs/{install_id}/secrets` - Added
-- Manage client secret for non-interactive Snyk App installations.
-
-
-### POST - `/orgs/{org_id}/apps/installs` - Added
-- Install a Snyk Apps to this organization, the Snyk App must use unattended authentication eg client credentials.
-
-
-### GET - `/orgs/{org_id}/apps/creations/{app_id}` - Added
-- Get a Snyk App by its App ID.
-
-
-### DELETE - `/orgs/{org_id}/apps/installs/{install_id}` - Added
-- Revoke app authorization for an Snyk Organization with install ID.
+### GET - `/self/apps/{app_id}/sessions` - Added
+- Get a list of active OAuth sessions for the app.
 
 
 ### DELETE - `/self/apps/{app_id}/sessions/{session_id}` - Added
 - Revoke an active user app session.
 
 
-### GET - `/orgs/{org_id}/apps/installs` - Added
-- Get a list of apps installed for an organization.
-
-
-### GET - `/orgs/{org_id}/apps` - Updated
-- the response property `data/items/attributes/client_id` became optional for the status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the response property `data/items/attributes/redirect_uris` became optional for the status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### GET - `/orgs/{org_id}/apps/{client_id}` - Updated
-- the response property `data/attributes/client_id` became optional for the status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the response property `data/attributes/redirect_uris` became optional for the status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### POST - `/groups/{group_id}/apps/installs/{install_id}/secrets` - Added
-- Manage client secret for non-interactive Snyk App installations.
-
-
-### GET - `/self/apps/{app_id}/sessions` - Added
-- Get a list of active OAuth sessions for the app.
-
-
-### GET - `/orgs/{org_id}/apps/creations` - Added
-- Get a list of apps created by an organization.
+### GET - `/self/apps/installs` - Added
+- Get a list of apps installed for an user.
 
 
 ### DELETE - `/self/apps/installs/{install_id}` - Added
 - Revoke access for an app by install ID.
-
-
-### PATCH - `/orgs/{org_id}/apps/{client_id}` - Updated
-- added the new required request property `data`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the response property `data/attributes/client_id` became optional for the status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the response property `data/attributes/redirect_uris` became optional for the status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property `access_token_ttl_seconds`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property `name`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the request property `redirect_uris`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### POST - `/groups/{group_id}/apps/installs` - Added
-- Install a Snyk Apps to this group, the Snyk App must use unattended authentication eg client credentials.
-
-
-### DELETE - `/groups/{group_id}/apps/installs/{install_id}` - Added
-- Revoke app authorization for an Snyk Group with install ID.
-
-
-### POST - `/orgs/{org_id}/apps/creations/{app_id}/secrets` - Added
-- Manage client secret for the Snyk App.
 
 
 ### POST - `/orgs/{org_id}/apps` - Updated
@@ -252,10 +200,91 @@ By default, this endpoint returns the organizations in alphabetical order of the
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 
+### GET - `/orgs/{org_id}/apps` - Updated
+- the response property `data/items/attributes/client_id` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/items/attributes/redirect_uris` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### PATCH - `/orgs/{org_id}/apps/{client_id}` - Updated
+- added the new required request property `data`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/attributes/client_id` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/attributes/redirect_uris` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `access_token_ttl_seconds`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `name`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `redirect_uris`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/apps/{client_id}` - Updated
+- the response property `data/attributes/client_id` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/attributes/redirect_uris` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### POST - `/orgs/{org_id}/apps/installs` - Added
+- Install a Snyk Apps to this organization, the Snyk App must use unattended authentication eg client credentials.
+
+
+### GET - `/orgs/{org_id}/apps/installs` - Added
+- Get a list of apps installed for an organization.
+
+
+### DELETE - `/orgs/{org_id}/apps/installs/{install_id}` - Added
+- Revoke app authorization for an Snyk Organization with install ID.
+
+
+### POST - `/orgs/{org_id}/apps/installs/{install_id}/secrets` - Added
+- Manage client secret for non-interactive Snyk App installations.
+
+
 ### POST - `/orgs/{org_id}/apps/creations` - Added
 - Create a new Snyk App for an organization.
 
-## 2023-10-24
+
+### GET - `/orgs/{org_id}/apps/creations` - Added
+- Get a list of apps created by an organization.
+
+
+### PATCH - `/orgs/{org_id}/apps/creations/{app_id}` - Added
+- Update app creation attributes with App ID.
+
+
+### GET - `/orgs/{org_id}/apps/creations/{app_id}` - Added
+- Get a Snyk App by its App ID.
+
+
+### DELETE - `/orgs/{org_id}/apps/creations/{app_id}` - Added
+- Delete an app by its App ID.
+
+
+### POST - `/orgs/{org_id}/apps/creations/{app_id}/secrets` - Added
+- Manage client secret for the Snyk App.
+
+
+### POST - `/groups/{group_id}/apps/installs` - Added
+- Install a Snyk Apps to this group, the Snyk App must use unattended authentication eg client credentials.
+
+
+### GET - `/groups/{group_id}/apps/installs` - Added
+- Get a list of apps installed for a group.
+
+
+### DELETE - `/groups/{group_id}/apps/installs/{install_id}` - Added
+- Revoke app authorization for an Snyk Group with install ID.
+
+
+### POST - `/groups/{group_id}/apps/installs/{install_id}/secrets` - Added
+- Manage client secret for non-interactive Snyk App installations.
+
+## 2023-11-02
 
 ### GET - `/orgs/{org_id}/container_images` - Added
 - List instances of container image
@@ -268,15 +297,10 @@ By default, this endpoint returns the organizations in alphabetical order of the
 ### GET - `/orgs/{org_id}/container_images/{image_id}/relationships/image_target_refs` - Added
 - List instances of image target references for a container image
 
-## 2023-09-12
+## 2023-09-13
 
 ### GET - `/orgs/{org_id}/projects` - Updated
 - added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/items/relationships/target` response property `oneOf` list for the response status `200`
-
-
-
-### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
-- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
@@ -284,15 +308,34 @@ By default, this endpoint returns the organizations in alphabetical order of the
 - added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
 
 
-## 2023-09-11
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+
+## 2023-09-12
 
 ### GET - `/orgs/{org_id}/projects` - Updated
 - removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/items/relationships/target` response property `oneOf` list for the response status `200`
 
 
 
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+
+
 ### POST - `/orgs/{org_id}/collections` - Added
 - Create a collection
+
+
+### GET - `/orgs/{org_id}/collections` - Added
+- Return a list of organization`s collections with issues counts  and projects count.
 
 
 ### PATCH - `/orgs/{org_id}/collections/{collection_id}` - Added
@@ -303,10 +346,6 @@ By default, this endpoint returns the organizations in alphabetical order of the
 - Get a collection
 
 
-### GET - `/orgs/{org_id}/collections` - Added
-- Return a list of organization`s collections with issues counts  and projects count.
-
-
 ### DELETE - `/orgs/{org_id}/collections/{collection_id}` - Added
 - Delete a collection
 
@@ -315,66 +354,17 @@ By default, this endpoint returns the organizations in alphabetical order of the
 - Add projects to a collection by specifying an array of project ids
 
 
-### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
-- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
-
+### GET - `/orgs/{org_id}/collections/{collection_id}/relationships/projects` - Added
+- Return a list of organization`s projects that are from the specified collection.
 
 
 ### DELETE - `/orgs/{org_id}/collections/{collection_id}/relationships/projects` - Added
 - Remove projects from a collection by specifying an array of project ids
 
-
-### GET - `/orgs/{org_id}/collections/{collection_id}/relationships/projects` - Added
-- Return a list of organization`s projects that are from the specified collection.
-
-
-### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
-- removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
-
-
-## 2023-09-07
+## 2023-09-11
 
 ### PATCH - `/orgs/{org_id}/settings/sast` - Added
 - Enable/Disable the Snyk Code settings for an org
-
-
-### GET - `/groups/{group_id}/audit_logs/search` - Added
-- Search audit logs for a Group. Some Organization level events are supported as well as the following
-Group level events:
-  - api.access
-  - group.cloud_config.settings.edit
-  - group.create
-  - group.delete
-  - group.edit
-  - group.notification_settings.edit
-  - group.org.add
-  - group.org.remove
-  - group.policy.create
-  - group.policy.delete
-  - group.policy.edit
-  - group.request_access_settings.edit
-  - group.role.create
-  - group.role.delete
-  - group.role.edit
-  - group.service_account.create
-  - group.service_account.delete
-  - group.service_account.edit
-  - group.settings.edit
-  - group.settings.feature_flag.edit
-  - group.sso.add
-  - group.sso.auth0_connection.create
-  - group.sso.auth0_connection.edit
-  - group.sso.create
-  - group.sso.delete
-  - group.sso.edit
-  - group.sso.membership.sync
-  - group.sso.remove
-  - group.tag.create
-  - group.tag.delete
-  - group.user.add
-  - group.user.remove
-  - group.user.role.edit
-
 
 
 ### GET - `/orgs/{org_id}/audit_logs/search` - Added
@@ -452,61 +442,95 @@ Group level events:
   - user.org.notification_settings.edit
 
 
-## 2023-08-29
 
-### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Added
-- Manage the client secret of a group service account by the service account ID.
+### GET - `/groups/{group_id}/audit_logs/search` - Added
+- Search audit logs for a Group. Some Organization level events are supported as well as the following
+Group level events:
+  - api.access
+  - group.cloud_config.settings.edit
+  - group.create
+  - group.delete
+  - group.edit
+  - group.notification_settings.edit
+  - group.org.add
+  - group.org.remove
+  - group.policy.create
+  - group.policy.delete
+  - group.policy.edit
+  - group.request_access_settings.edit
+  - group.role.create
+  - group.role.delete
+  - group.role.edit
+  - group.service_account.create
+  - group.service_account.delete
+  - group.service_account.edit
+  - group.settings.edit
+  - group.settings.feature_flag.edit
+  - group.sso.add
+  - group.sso.auth0_connection.create
+  - group.sso.auth0_connection.edit
+  - group.sso.create
+  - group.sso.delete
+  - group.sso.edit
+  - group.sso.membership.sync
+  - group.sso.remove
+  - group.tag.create
+  - group.tag.delete
+  - group.user.add
+  - group.user.remove
+  - group.user.role.edit
+
+
+## 2023-09-07
+
+### POST - `/orgs/{org_id}/service_accounts` - Added
+- Create a service account for an organization. The service account can be used to access the Snyk API.
 
 
 ### GET - `/orgs/{org_id}/service_accounts` - Added
 - Get all service accounts for an organization.
 
 
-### POST - `/orgs/{org_id}/service_accounts` - Added
-- Create a service account for an organization. The service account can be used to access the Snyk API.
-
-
-### DELETE - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Added
-- Delete a service account in an organization.
-
-
-### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
-- Update the name of a group`s service account by its ID.
-
-
-### POST - `/groups/{group_id}/service_accounts` - Added
-- Create a service account for a group. The service account can be used to access the Snyk API.
-
-
-### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
-- Get a group-level service account by its ID.
+### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Added
+- Update the name of an organization-level service account by its ID.
 
 
 ### GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Added
 - Get an organization-level service account by its ID.
 
 
-### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Added
-- Update the name of an organization-level service account by its ID.
+### DELETE - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Added
+- Delete a service account in an organization.
 
 
 ### POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - Added
 - Manage the client secret of an organization service account by the service account ID.
 
 
-### DELETE - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
-- Permanently delete a group-level service account by its ID.
+### POST - `/groups/{group_id}/service_accounts` - Added
+- Create a service account for a group. The service account can be used to access the Snyk API.
 
 
 ### GET - `/groups/{group_id}/service_accounts` - Added
 - Get all service accounts for a group.
 
-## 2023-08-24
 
-### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
-- deleted the `query` request parameter `user_id`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
+- Update the name of a group`s service account by its ID.
 
+
+### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
+- Get a group-level service account by its ID.
+
+
+### DELETE - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
+- Permanently delete a group-level service account by its ID.
+
+
+### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Added
+- Manage the client secret of a group service account by the service account ID.
+
+## 2023-08-28
 
 ### GET - `/orgs/{org_id}/projects` - Updated
 - added the new optional `query` request parameter `names_start_with`
@@ -518,28 +542,15 @@ Group level events:
 - added the new optional `query` request parameter `target_runtime`
 
 
-## 2023-08-04
 
-### DELETE - `/custom_base_images/{custombaseimage_id}` - Added
-- Delete a custom base image resource. (the related container project is unaffected)
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- deleted the `query` request parameter `user_id`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-
-### GET - `/custom_base_images/{custombaseimage_id}` - Added
-- Get a custom base image
-
-
-### PATCH - `/custom_base_images/{custombaseimage_id}` - Added
-- Updates a custom base image`s attributes
-
+## 2023-08-21
 
 ### POST - `/orgs/{org_id}/packages/issues` - Updated
 - added the optional property `meta` to the response with the `200` status
-
-
-
-### GET - `/custom_base_images` - Added
-- Get a list of custom base images with support for ordering and filtering.
-Either the org_id or group_id parameters must be set to authorize successfully.
 
 
 
@@ -554,32 +565,43 @@ Note, after the first image in a repository gets added, a versioning schema cann
 To update the versioning schema, the PATCH endpoint must be used.
 
 
-## 2023-06-19
+
+### GET - `/custom_base_images` - Added
+- Get a list of custom base images with support for ordering and filtering.
+Either the org_id or group_id parameters must be set to authorize successfully.
+
+
+
+### PATCH - `/custom_base_images/{custombaseimage_id}` - Added
+- Updates a custom base image`s attributes
+
+
+### GET - `/custom_base_images/{custombaseimage_id}` - Added
+- Get a custom base image
+
+
+### DELETE - `/custom_base_images/{custombaseimage_id}` - Added
+- Delete a custom base image resource. (the related container project is unaffected)
+
+## 2023-06-22
 
 ### GET - `/orgs/{org_id}/settings/sast` - Added
 - Retrieves the SAST settings for an org
 
-## 2023-04-28
+## 2023-05-29
 
-### GET - `/orgs/{org_id}` - Added
-- Get the full details of an organization.
+### GET - `/orgs` - Added
+- Get a paginated list of organizations you have access to.
 
 
 ### PATCH - `/orgs/{org_id}` - Added
 - Update the details of an organization
 
 
-### GET - `/orgs` - Added
-- Get a paginated list of organizations you have access to.
+### GET - `/orgs/{org_id}` - Added
+- Get the full details of an organization.
 
-## 2023-04-27
-
-### GET - `/orgs/{org_id}/invites` - Updated
-- the `data/items/attributes/role` response`s property type/format changed from `string`/`` to `string`/`uuid` for status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the new `org_invitation` enum value to the `data/items/type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
+## 2023-04-28
 
 ### POST - `/orgs/{org_id}/invites` - Updated
 - added the new required request property `data`
@@ -593,12 +615,19 @@ To update the versioning schema, the PATCH endpoint must be used.
 - added the new `org_invitation` enum value to the `data/type` response property for the response status `201`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-## 2023-03-30
+
+### GET - `/orgs/{org_id}/invites` - Updated
+- the `data/items/attributes/role` response`s property type/format changed from `string`/`` to `string`/`uuid` for status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `org_invitation` enum value to the `data/items/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+## 2023-04-17
 
 ### POST - `/orgs/{org_id}/packages/issues` - Added
 - This endpoint is not available to all customers. If you are interested please contact support. Query issues for a batch of packages identified by Package URL (purl). Only direct vulnerabilities are returned, transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context.
 
-## 2023-03-08
+## 2023-03-20
 
 ### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Added
 - This endpoint lets you retrieve the SBOM document of a software project.
@@ -609,100 +638,92 @@ It supports the following formats:
 
 By default it will respond with an empty JSON:API response.
 
-## 2023-01-30
+## 2023-02-15
 
-### GET - `/orgs/{org_id}/projects/{project_id}` - Added
-- Get one project of the organization by project ID.
+### GET - `/orgs/{org_id}/projects` - Added
+- List all Projects for an Org.
 
 
 ### PATCH - `/orgs/{org_id}/projects/{project_id}` - Added
 - Updates one project of the organization by project ID.
 
 
-### GET - `/orgs/{org_id}/projects` - Added
-- List all Projects for an Org.
+### GET - `/orgs/{org_id}/projects/{project_id}` - Added
+- Get one project of the organization by project ID.
 
-## 2022-11-14
+## 2022-12-14
 
-### PATCH - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - Added
-- Update Slack notification settings for a project.
-
-
-### POST - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - Added
-- Create Slack settings override for a project.
-
-
-### DELETE - `/orgs/{org_id}/slack_app/{bot_id}` - Added
-- Remove the given Slack App integration
+### POST - `/orgs/{org_id}/slack_app/{bot_id}` - Added
+- Create new Slack notification default settings for a given tenant.
 
 
 ### GET - `/orgs/{org_id}/slack_app/{bot_id}` - Added
 - Get Slack integration default notification settings for the provided tenant ID and bot ID.
 
 
-### POST - `/orgs/{org_id}/slack_app/{bot_id}` - Added
-- Create new Slack notification default settings for a given tenant.
+### DELETE - `/orgs/{org_id}/slack_app/{bot_id}` - Added
+- Remove the given Slack App integration
 
 
 ### GET - `/orgs/{org_id}/slack_app/{bot_id}/projects` - Added
 - Slack notification settings overrides for projects. These settings overrides the default settings configured for the tenant.
 
 
+### POST - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - Added
+- Create Slack settings override for a project.
+
+
+### PATCH - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - Added
+- Update Slack notification settings for a project.
+
+
 ### DELETE - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - Added
 - Remove Slack settings override for a project.
 
-## 2022-11-07
-
-### DELETE - `/orgs/{org_id}/invites/{invite_id}` - Added
-- Cancel a pending user invitations to an organization.
-
+## 2022-11-14
 
 ### GET - `/orgs/{org_id}/invites` - Added
 - List pending user invitations to an organization.
 
-## 2022-10-06
 
-### GET - `/orgs/{org_id}/slack_app/{tenant_id}/channels/{channel_id}` - Added
-- Requires the Snyk Slack App to be set up for this org. It will return the Slack channel name for the provided Slack channel ID.
+### DELETE - `/orgs/{org_id}/invites/{invite_id}` - Added
+- Cancel a pending user invitations to an organization.
 
+## 2022-11-07
 
 ### GET - `/orgs/{org_id}/slack_app/{tenant_id}/channels` - Added
 - Requires the Snyk Slack App to be set up for this org, will retrieve a list of channels the Snyk Slack App can access. Note that it is currently only possible to page forwards through this collection, no prev links will be generated and the ending_before parameter will not function.
 
-## 2022-09-14
+
+### GET - `/orgs/{org_id}/slack_app/{tenant_id}/channels/{channel_id}` - Added
+- Requires the Snyk Slack App to be set up for this org. It will return the Slack channel name for the provided Slack channel ID.
+
+## 2022-09-15
 
 ### GET - `/orgs/{org_id}/packages/{purl}/issues` - Added
 - Query issues for a specific package version identified by Package URL (purl). Snyk returns only direct vulnerabilities. Transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context.
 
-## 2022-04-06
+## 2022-06-01
 
 ### POST - `/orgs/{org_id}/invites` - Added
 - Invite a user to an organization with a role.
 
-## 2022-03-01
-
-### GET - `/orgs/{org_id}/app_bots` - Added
-- Get a list of app bots authorized to an organization. Deprecated, use /orgs/{org_id}/apps/installs instead.
-
+## 2022-03-11
 
 ### GET - `/self/apps` - Added
 - Get a list of apps that can act on your behalf.
 
 
-### DELETE - `/orgs/{org_id}/app_bots/{bot_id}` - Added
-- Revoke app bot authorization. Deprecated, use /orgs/{org_id}/apps/installs/{install_id} instead.
-
-
-### DELETE - `/orgs/{org_id}/apps/{client_id}` - Added
-- Delete an app by app id. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
-
-
-### POST - `/orgs/{org_id}/apps/{client_id}/secrets` - Added
-- Manage client secrets for an app. Deprecated, use /orgs/{org_id}/apps/creations/{app_id}/secrets instead.
-
-
 ### DELETE - `/self/apps/{app_id}` - Added
 - Revoke access for an app by app id
+
+
+### POST - `/orgs/{org_id}/apps` - Added
+- Create a new app for an organization. Deprecated, use /orgs/{org_id}/apps/creations instead.
+
+
+### GET - `/orgs/{org_id}/apps` - Added
+- Get a list of apps created by an organization. Deprecated, use /orgs/{org_id}/apps/creations instead.
 
 
 ### PATCH - `/orgs/{org_id}/apps/{client_id}` - Added
@@ -713,27 +734,35 @@ By default it will respond with an empty JSON:API response.
 - Get an App by client id. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
 
 
-### GET - `/orgs/{org_id}/apps` - Added
-- Get a list of apps created by an organization. Deprecated, use /orgs/{org_id}/apps/creations instead.
+### DELETE - `/orgs/{org_id}/apps/{client_id}` - Added
+- Delete an app by app id. Deprecated, use /orgs/{org_id}/apps/creations/{app_id} instead.
 
 
-### POST - `/orgs/{org_id}/apps` - Added
-- Create a new app for an organization. Deprecated, use /orgs/{org_id}/apps/creations instead.
+### POST - `/orgs/{org_id}/apps/{client_id}/secrets` - Added
+- Manage client secrets for an app. Deprecated, use /orgs/{org_id}/apps/creations/{app_id}/secrets instead.
 
-## 2021-09-29
 
-### GET - `/orgs/{org_id}/settings/iac` - Added
-- Get the Infrastructure as Code Settings for an org.
+### GET - `/orgs/{org_id}/app_bots` - Added
+- Get a list of app bots authorized to an organization. Deprecated, use /orgs/{org_id}/apps/installs instead.
 
+
+### DELETE - `/orgs/{org_id}/app_bots/{bot_id}` - Added
+- Revoke app bot authorization. Deprecated, use /orgs/{org_id}/apps/installs/{install_id} instead.
+
+## 2021-12-09
 
 ### PATCH - `/orgs/{org_id}/settings/iac` - Added
 - Update the Infrastructure as Code Settings for an org.
 
 
-### GET - `/groups/{group_id}/settings/iac` - Added
-- Get the Infrastructure as Code Settings for a group.
+### GET - `/orgs/{org_id}/settings/iac` - Added
+- Get the Infrastructure as Code Settings for an org.
 
 
 ### PATCH - `/groups/{group_id}/settings/iac` - Added
 - Update the Infrastructure as Code Settings for a group.
+
+
+### GET - `/groups/{group_id}/settings/iac` - Added
+- Get the Infrastructure as Code Settings for a group.
 
