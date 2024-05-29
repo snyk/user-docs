@@ -23,3 +23,5 @@ Integrations for [event forwarding](event-forwarding/) allow you to push Snyk pl
 
 Information is also provided on how Snyk can work with [vulnerability management tools](vulnerability-management-tools/).
 
+Snyk provides alternative reporting tools. For more information, see [Reporting and BI integrations](../manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share.md).
+
