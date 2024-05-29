@@ -35,7 +35,7 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 The third-party integrations are available in a Closed Beta state and are applicable only to the Snyk AppRisk Pro version.  Please contact your salesperson if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
-### Checkmarx SAST integration
+## Checkmarx SAST integration
 
 Use the following steps to install and run Snyk Broker for the AppRisk and Checkmarx SAST integration.
 
