@@ -61,7 +61,7 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 	// changes detected
 	historicalChangelog, err := os.ReadFile(changeLogFile) // just pass the file name
 	if err != nil {
-		fmt.Print(err)
+		return err
 	}
 
 	writer, err := os.Create(changeLogFile)
@@ -121,7 +121,7 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config, docsDirectory s
 	for _, baseVersion := range gaVersions[1:] {
 		nextURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, nextVersion)
 		baseURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, baseVersion)
-		fmt.Printf("Comparing %s to %s\n", nextVersion, baseVersion)
+
 		groupedChanges, err := getChangeLog(nextURL, baseURL, loader)
 		if err != nil {
 			return err

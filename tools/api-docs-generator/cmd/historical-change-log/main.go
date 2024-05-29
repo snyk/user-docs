@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"os"
 	"time"
@@ -18,8 +17,6 @@ func main() {
 	if len(os.Args) != 3 {
 		log.Panicf("usage: api-docs <config-file> <docs-dir>")
 	}
-
-	fmt.Println(os.Args)
 
 	cfg, err := config.Parse(os.Args[1])
 	if err != nil {
