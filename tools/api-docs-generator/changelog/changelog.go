@@ -189,21 +189,24 @@ func WriteToChangeLog(markdown *md.Markdown, groupedChanges []ChangesByEndpoint,
 				return err
 			}
 			markdown.BulletList(normalizeQuotes(document.Paths.Find(changeGroup.Path).Operations()[changeGroup.Operation].Description))
-			continue
-		}
-		markdown.H3f("%s - `%s` - Updated", changeGroup.Operation, changeGroup.Path)
-		for index := range changeGroup.Changes {
-			if changeGroup.Changes[index].IsBreaking() {
-				markdown.BulletList(normalizeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer)))
-				markdown.YellowBadge("Breaking")
-			} else {
-				markdown.BulletList(fmt.Sprintf("%s\n", normalizeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer))))
+		} else {
+			markdown.H3f("%s - `%s` - Updated", changeGroup.Operation, changeGroup.Path)
+			for index := range changeGroup.Changes {
+				writeOperationChangeDetails(markdown, changeGroup, index, localizer)
 			}
 		}
-
 		markdown.PlainText("\n")
 	}
 	return nil
+}
+
+func writeOperationChangeDetails(markdown *md.Markdown, changeGroup ChangesByEndpoint, index int, localizer checker.Localizer) {
+	if changeGroup.Changes[index].IsBreaking() {
+		markdown.BulletList(normalizeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer)))
+		markdown.YellowBadge("Breaking")
+	} else {
+		markdown.BulletList(fmt.Sprintf("%s\n", normalizeQuotes(changeGroup.Changes[index].GetUncolorizedText(localizer))))
+	}
 }
 
 func groupChanges(changes checker.Changes) []ChangesByEndpoint {
