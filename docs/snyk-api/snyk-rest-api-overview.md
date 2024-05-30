@@ -76,7 +76,7 @@ HTTP/1.1 400 Bad Request
 
 ## Versioning
 
-Snyk REST API has per-endpoint version contracts. Each endpoint can have its own release and support lifecycle, independent of any other endpoint in Snyk REST API. In its most explicit form, the endpoint version number includes a date and stability tree, for example:
+Snyk REST API has per-endpoint version contracts. For information about the differences in versions, see the [API Changelog](https://docs.snyk.io/snyk-api/changelog). Each endpoint can have its own release and support lifecycle, independent of any other endpoint in the Snyk REST API. In its most explicit form, the endpoint version number includes a date and stability tree, for example:
 
 ```
 2023-11-27~beta
