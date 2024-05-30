@@ -6,6 +6,10 @@
 Objective-C is supported only by Snyk Open Source.
 {% endhint %}
 
+{% hint style="info" %}
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+{% endhint %}
+
 ### Code analysis for Swift
 
 Snyk Code for Swift supports the following frameworks:

@@ -6,6 +6,10 @@
 Snyk has introduced a new Early Access feature with significantly enhanced scanning capabilities for NuGet applications. For detailed information and access to these features, visit the [Improved .NET scanning](../../../getting-started/supported-languages-frameworks-and-feature-availability-overview/.net/improved-.net-scanning.md) page.&#x20;
 {% endhint %}
 
+{% hint style="info" %}
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+{% endhint %}
+
 ### Code analysis
 
 Snyk Code supports the following frameworks:

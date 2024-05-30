@@ -66,7 +66,7 @@ To set up and configure the plugin and start scanning and managing the artifacts
 4. Shut down the Nexus service instance and then restart it.
 5. Log in to your Nexus instance and check that the Snyk bundle has been installed successfully.
 
-<figure><img src="../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png" alt="Capabilities to configure"><figcaption><p>Capabilities to configure</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png" alt="Capabilities to configure"><figcaption><p>Capabilities to configure</p></figcaption></figure>
 
 ### Track vulnerabilities in your team artifacts
 
@@ -76,9 +76,9 @@ After the plugin is installed, every time a developer requests a download of an 
 * Scan results are displayed for the developer with a link to full details for the error.
 * Results are stored in the Snyk Security part of the **Attributes** section of the Nexus interface for the artifact.
 
-<figure><img src="../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Attributes showing results of a scan"><figcaption><p>Attributes showing results of a scan</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Attributes showing results of a scan"><figcaption><p>Attributes showing results of a scan</p></figcaption></figure>
 
 By reviewing the results, you can evaluate the issues found in your artifact and determine a course of action.
 
@@ -104,6 +104,6 @@ Snyk continuously runs in the background on the Nexus instance, and whenever any
 
 When the scan ends, you get an error message if the download was blocked, with a link to the full details for the known vulnerabilities found in that artifact, similar to the following example:
 
-<figure><img src="../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png" alt="Error message example"><figcaption><p>Error message example</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png" alt="Error message example"><figcaption><p>Error message example</p></figcaption></figure>
 
 Click the link to view the number of vulnerabilities found in the artifact and their severities.

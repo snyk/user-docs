@@ -9,7 +9,7 @@ This section of the Snyk user docs explains how to set up and use many types of 
 
 Snyk provides plugins for repository gatekeepers and integrations to connect with package repositories:
 
-* [Gatekeeper plugins](gatekeeper-plugins/)
+* [Gatekeeper plugins](../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/gatekeeper-plugins/)
 * [Package repository integrations](package-repository-integrations/)
 
 Additional integrations support working with Snyk Container and Snyk Iac:
@@ -22,4 +22,6 @@ Integrations for [event forwarding](event-forwarding/) allow you to push Snyk pl
 [Notification and ticketing systems integrations](jira-and-slack-integrations/) help you work with Snyk in Jira and Slack.
 
 Information is also provided on how Snyk can work with [vulnerability management tools](vulnerability-management-tools/).
+
+Snyk provides alternative reporting tools. For more information, see [Reporting and BI integrations](../manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share.md).
 
