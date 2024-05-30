@@ -176,6 +176,10 @@ For Snyk to perform the required operation on monitored repositories, that is, r
 | Opening fix and upgrade pull requests                   | Used to create fix and upgrade PRs in the monitored repos.                                                                                                                                                                                              | _Write_ or higher                          |
 | Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on).</li><li>Send push events to trigger PR checks.</li></ul> | _Admin_                                    |
 
+{% hint style="info" %}
+The [repository-level permission scopes](snyk-github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) apply to both the GitHub and GitHub Enterprise integration.
+{% endhint %}
+
 ## **How to set up a GitHub account to open Snyk PRs**
 
 Snyk lets you designate a specific GitHub account to open fix and upgrade pull requests.

@@ -163,7 +163,13 @@ You can re-connect anytime; however, re-initiating GitHub Enterprise projects fo
 
 ## Required access scopes for Snyk GitHub Enterprise integration
 
-All the operations, whether triggered manually or automatically, are performed for a GitHub service account that has its token configured on the integrations settings page. This shows the required access scopes for the configured token. GitHub custom roles are not supported :
+All the operations, whether triggered manually or automatically, are performed for a GitHub service account that has its token configured on the integrations settings page.
+
+{% hint style="info" %}
+For details on repository-level permissions requirements, please see [Required permission scope for repositories](https://docs.snyk.io/integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-integration#h\_01eefvj14p8b3depeffvyvdwzj). These apply to both the GitHub Enterprise integration and the GitHub integration.
+{% endhint %}
+
+This shows the required access scopes for the configured token. GitHub custom roles are not supported :
 
 | **Action**                                              | **Purpose**                                                                                                                                                                                                                                                     | **Required scope in GitHub**                                                                                                                                                |
 | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
