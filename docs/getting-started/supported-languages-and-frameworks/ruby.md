@@ -119,7 +119,7 @@ When creating Fix PRs for Ruby Projects using private Gem sources, Snyk may need
 
 ### Snyk Web UI (Git repository integration)
 
-Snyk for Ruby is not available at the moment for Snyk Web UI. You can use it with the [CLI,](ruby.md#snyk-cli) or with the available [Snyk integrations](ruby.md#snyk-integrations).
+You can test your Ruby projects using the Snyk Web UI.&#x20;
 
 ### Snyk integrations&#x20;
 
