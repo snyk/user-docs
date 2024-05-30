@@ -10,7 +10,7 @@ func TestParse(t *testing.T) {
 	tests := []struct {
 		name    string
 		args    func() string
-		want    Config
+		want    *Config
 		wantErr bool
 	}{
 		{
@@ -29,7 +29,7 @@ specs:
 output:
   apiReferencePath: snyk-api/reference`)
 			},
-			want: Config{
+			want: &Config{
 				Fetcher: Fetcher{"source", "destination"},
 				Specs: []Spec{
 					{".gitbook/assets/spec.yaml", " (v1)", "hint 1"},

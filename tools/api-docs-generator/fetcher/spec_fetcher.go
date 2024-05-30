@@ -15,7 +15,7 @@ import (
 	"github.com/snyk/user-docs/tools/api-docs-generator/config"
 )
 
-func FetchSpec(ctx context.Context, cfg config.Config, directory string) error {
+func FetchSpec(ctx context.Context, cfg *config.Config, directory string) error {
 	// #nosec G107 // cfg.Fetcher.Source is a URL from config and does not contain user input
 	resp, err := get(ctx, cfg.Fetcher.Source)
 	if err != nil {
