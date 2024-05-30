@@ -51,13 +51,13 @@ Use this guide to apply Snyk effectively in your technology stack.
 
 Snyk Code can analyze your C# code using IDE, CLI, and Git integration.&#x20;
 
-For framework support, see [Snyk Code - Supported languages and frameworks](../../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/).
+For framework support, see [Snyk Code - Supported languages and frameworks](../).
 
 ## Nuget
 
 * **Target Frameworks**: Snyk identifies the target frameworks and presents results against each identified version using the git integration.
 * **Development dependencies**: Snyk generally does not scan developer dependencies, as they are not usually pushed to production and are seen as "noise." \
-  Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](../../../scan-with-snyk/supported-languages-and-frameworks/.net/#git-settings-for-.net)). \
+  Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](./#git-settings-for-.net)). \
   Snyk scans and fixes the build and `development Dependency` sections of your [`*.proj`](#user-content-fn-1)[^1], `packages.config` and `project.json` files
 * **Lock files**: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
 * **PackageReference:** Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
@@ -94,7 +94,7 @@ Runtime dependencies (provided by the runtime environment known as "meta-package
 
 Snyk can analyze dependencies managed by Paket through the CLI. Keep in mind that the paket.dependencies and paket.lock must be present.
 
-For more information on Paket support, see [Snyk for .NET](../../../scan-with-snyk/supported-languages-and-frameworks/.net/).
+For more information on Paket support, see [Snyk for .NET](./).
 
 ## Other
 
@@ -104,7 +104,7 @@ Snyk provides custom test APIs for your unique dependency management strategies.
 
 ## Build-time versus runtime dependencies
 
-See [.NET](../../../scan-with-snyk/supported-languages-and-frameworks/.net/) for more information
+See [.NET](./) for more information
 
 ## Snyk CLI tips and tricks
 
@@ -148,7 +148,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 The following is a collection of articles from the Snyk Security team and Developer Relations related to this ecosystem.&#x20;
 
 * [Snyk Blog](https://snyk.io/blog/)
-* [Snyk for .Net](../../../scan-with-snyk/supported-languages-and-frameworks/.net/)
+* [Snyk for .Net](./)
 * [Best Practices for Containerizing .NET applications](https://snyk.io/blog/best-practices-for-containerizing-net-applications/)
 
 

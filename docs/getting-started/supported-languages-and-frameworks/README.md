@@ -10,7 +10,7 @@ Here you can find information about the programming languages, fully supported p
 Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
-### [.NET](../../scan-with-snyk/supported-languages-and-frameworks/.net/)
+### [.NET](.net/)
 
 **Package manager**: NuGet, Paket
 
@@ -30,7 +30,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [C/C++](../../getting-started/supported-languages-and-frameworks/c-c++/)
+### [C/C++](c-c++/)
 
 **Package manager**: NA
 
@@ -49,7 +49,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Dart and Flutter](../../getting-started/supported-languages-and-frameworks/dart-and-flutter.md)&#x20;
+### [Dart and Flutter](dart-and-flutter.md)&#x20;
 
 **Package manager**: Pub
 
@@ -65,7 +65,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Elixir](../../getting-started/supported-languages-and-frameworks/elixir.md)&#x20;
+### [Elixir](elixir.md)&#x20;
 
 **Package manager**: Hex
 
@@ -84,7 +84,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Go](../../getting-started/supported-languages-and-frameworks/go.md)&#x20;
+### [Go](go.md)&#x20;
 
 **Package manager**: Go Modules, dep
 
@@ -103,7 +103,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Java and Kotlin](../../getting-started/supported-languages-and-frameworks/java-and-kotlin/)&#x20;
+### [Java and Kotlin](java-and-kotlin/)&#x20;
 
 **Package manager**: Maven, Gradle
 
@@ -129,7 +129,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
   * `4.*`, `5.*`, `6.*`, `7.*`\
     For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 
-### [JavaScript](../../getting-started/supported-languages-and-frameworks/javascript/)&#x20;
+### [JavaScript](javascript/)&#x20;
 
 **Package manager**: npm, Yarn
 
@@ -151,11 +151,11 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 * npm
   * `Lockfile 1, Lockfile 2, Lockfile 3, 7.*`\
-    For details, see the [Snyk Javascript ](../../getting-started/supported-languages-and-frameworks/javascript/#npm)page.
+    For details, see the [Snyk Javascript ](javascript/#npm)page.
 * Yarn
-  * `Yarn 1, Yarn 2, Yarn 3`. For more information, see the [Snyk Javascript ](../../getting-started/supported-languages-and-frameworks/javascript/#yarn)page.
+  * `Yarn 1, Yarn 2, Yarn 3`. For more information, see the [Snyk Javascript ](javascript/#yarn)page.
 
-### [PHP](../../getting-started/supported-languages-and-frameworks/php.md)
+### [PHP](php.md)
 
 **Package manager**: Composer
 
@@ -174,7 +174,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Python](../../getting-started/supported-languages-and-frameworks/python.md)&#x20;
+### [Python](python.md)&#x20;
 
 **Package manager**: Pip, Poetry, pipenv, setup.py
 
@@ -194,7 +194,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: Suitable with `Python 2 -> 2.7.16`, and `Python 3 -> 3.7.4`.
 
-### [Ruby](../../getting-started/supported-languages-and-frameworks/ruby.md)&#x20;
+### [Ruby](ruby.md)&#x20;
 
 **Package manager**: Bundler
 
@@ -212,9 +212,9 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 * License scanning
 * Reports
 
-**Package manager versions**: All Gemfile and Gemfile.lock are compatible with the [Snyk supported Ruby versions](../../getting-started/supported-languages-and-frameworks/ruby.md#supported-ruby-versions).
+**Package manager versions**: All Gemfile and Gemfile.lock are compatible with the [Snyk supported Ruby versions](ruby.md#supported-ruby-versions).
 
-### [Rust](../../getting-started/supported-languages-and-frameworks/rust.md)
+### [Rust](rust.md)
 
 **Package manager**: Cargo
 
@@ -230,7 +230,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Scala](../../getting-started/supported-languages-and-frameworks/scala.md)&#x20;
+### [Scala](scala.md)&#x20;
 
 **Package manager**: sbt
 
@@ -249,7 +249,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Swift and Objective-C](../../getting-started/supported-languages-and-frameworks/swift-and-objective-c.md)
+### [Swift and Objective-C](swift-and-objective-c.md)
 
 **Package manager**: CocoaPods, Swift Package Manager
 
@@ -272,7 +272,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 Here you can find information about the programming languages, fully supported frameworks, and features for Snyk Code.
 
-### [Apex](../../getting-started/supported-languages-and-frameworks/apex.md)
+### [Apex](apex.md)
 
 **Frameworks**: APEX&#x20;
 
@@ -287,7 +287,7 @@ Here you can find information about the programming languages, fully supported f
 * Interfile is supported
 * `.trigger` and `.cls` files are supported
 
-### [.Net](../../scan-with-snyk/supported-languages-and-frameworks/.net/)
+### [.Net](.net/)
 
 **Frameworks**:&#x20;
 
@@ -310,7 +310,7 @@ Here you can find information about the programming languages, fully supported f
 * ASP.NET 6.x
 * .NET 6
 
-### [C/C++](../../getting-started/supported-languages-and-frameworks/c-c++/)
+### [C/C++](c-c++/)
 
 **Frameworks**: C++ Standard Library
 
@@ -320,7 +320,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Features**: Reports
 
-### [Go](../../getting-started/supported-languages-and-frameworks/go.md)
+### [Go](go.md)
 
 **Frameworks**: GORM
 
@@ -335,7 +335,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to go1.16
 
-### [Java](../../getting-started/supported-languages-and-frameworks/java-and-kotlin/)
+### [Java](java-and-kotlin/)
 
 **Frameworks:**
 
@@ -357,7 +357,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to Java SE 17
 
-### [JavaScript](../../getting-started/supported-languages-and-frameworks/javascript/)
+### [JavaScript](javascript/)
 
 **Frameworks**:&#x20;
 
@@ -365,7 +365,7 @@ Here you can find information about the programming languages, fully supported f
 * Vue.js
 * Express
 * jQuery
-* Angular (partial support)
+* Angular
 
 **Import your app through SCM**: Available
 
@@ -378,7 +378,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to ECMAScript 2020
 
-### [Kotlin](../../getting-started/supported-languages-and-frameworks/java-and-kotlin/)
+### [Kotlin](java-and-kotlin/)
 
 **Import your app through SCM**: Available
 
@@ -390,7 +390,7 @@ Here you can find information about the programming languages, fully supported f
 * Interfile is supported
 * Android is partially supported
 
-### [PHP](../../getting-started/supported-languages-and-frameworks/php.md)
+### [PHP](php.md)
 
 **Frameworks**:&#x20;
 
@@ -409,7 +409,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions 5.2 up to 8.0
 
-### [Python](../../getting-started/supported-languages-and-frameworks/python.md)
+### [Python](python.md)
 
 **Frameworks**:&#x20;
 
@@ -431,7 +431,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to 3.8.x
 
-### [Ruby](../../getting-started/supported-languages-and-frameworks/ruby.md)
+### [Ruby](ruby.md)
 
 **Frameworks**: Ruby On Rails
 
@@ -444,7 +444,7 @@ Here you can find information about the programming languages, fully supported f
 * Reports
 * Custom rules
 
-### [Scala](../../getting-started/supported-languages-and-frameworks/scala.md)
+### [Scala](scala.md)
 
 **Frameworks**:&#x20;
 
@@ -463,7 +463,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Version 2.x
 
-### [Swift](../../getting-started/supported-languages-and-frameworks/swift-and-objective-c.md)
+### [Swift](swift-and-objective-c.md)
 
 **Frameworks**:&#x20;
 
@@ -482,7 +482,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to 5.7.x
 
-### [TypeScript](../../getting-started/supported-languages-and-frameworks/typescript.md)
+### [TypeScript](typescript.md)
 
 **Frameworks**: npm
 
@@ -497,7 +497,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to 4.2
 
-### [VB.NET](../../getting-started/supported-languages-and-frameworks/vb.net.md)
+### [VB.NET](vb.net.md)
 
 **Frameworks**: NuGet
 

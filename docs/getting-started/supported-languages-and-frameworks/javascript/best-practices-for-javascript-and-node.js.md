@@ -136,7 +136,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 #### Codebase
 
-* Framework support - see [Supported languages, frameworks, and feature availability overview](../../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/).
+* Framework support - see [Supported languages, frameworks, and feature availability overview](../).
 * Use the `snyk code test` command from the root of the Project to perform source code analysis.
 
 #### Containers

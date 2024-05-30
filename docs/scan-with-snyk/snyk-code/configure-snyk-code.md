@@ -15,7 +15,7 @@ Snyk Code only scans and tests new repositories that are imported to Snyk. If a 
 Before scanning your code with Snyk Code, ensure the following:
 
 * You have completed the [Quickstart](../../getting-started/quickstart/).
-* Your repositories contain code in a [supported language and platform](../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/).
+* Your repositories contain code in a [supported language and platform](../../getting-started/supported-languages-and-frameworks/).
 
 ## Enable Snyk Code in Snyk Web UI
 

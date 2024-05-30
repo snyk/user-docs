@@ -96,7 +96,7 @@ Use the `--help` option in the CLI for details of Snyk CLI commands.
 
 #### Testing your own code:
 
-* Framework support - see [Snyk Code - Supported languages and frameworks](../../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/).
+* Framework support - see [Snyk Code - Supported languages and frameworks](../).
 * Use the **snyk code test** command from the root of the project to perform source code analysis.
 * Use **--scan-all-unmanaged --all-projects** to recursively find all jars under the present working directory.
 
