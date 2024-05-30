@@ -12,7 +12,7 @@ import (
 
 func GetCurrentVersions(ctx context.Context, cfg *config.Config) ([]string, error) {
 	// #nosec G107 // cfg.Fetcher.Source is a URL from config and does not contain user input
-	resp, err := Get(ctx, cfg.Fetcher.Source)
+	resp, err := get(ctx, cfg.Fetcher.Source)
 	if err != nil {
 		return nil, err
 	}
@@ -31,7 +31,7 @@ func GetCurrentVersions(ctx context.Context, cfg *config.Config) ([]string, erro
 	return versions, nil
 }
 
-func Get(ctx context.Context, urlToGet string) (*http.Response, error) {
+func get(ctx context.Context, urlToGet string) (*http.Response, error) {
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, urlToGet, http.NoBody)
 	if err != nil {
 		return nil, err
