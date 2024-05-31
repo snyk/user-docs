@@ -12,4 +12,5 @@ categoryContext:
   hint: |
     **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
 output:
+  summaryPath: docs/SUMMARY.md
   apiReferencePath: docs/snyk-api/reference

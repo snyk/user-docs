@@ -35,7 +35,7 @@ output:
 					{".gitbook/assets/spec.yaml", " (v1)", "hint 1"},
 					{".gitbook/assets/rest-spec.json", "", "hint 2"},
 				},
-				Output: Output{"snyk-api/reference"},
+				Output: Output{APIReferencePath: "snyk-api/reference"},
 			},
 		},
 		{
