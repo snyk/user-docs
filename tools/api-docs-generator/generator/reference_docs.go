@@ -45,7 +45,7 @@ func GenerateReferenceDocs(cfg *config.Config, docsBasePath string) error {
 	}
 	sort.Strings(summary)
 
-	matches, err := matchCurrentSummary(cfg.Output.SummaryPath, summary)
+	matches, err := matchCurrentSummary(path.Join(docsBasePath, cfg.Output.SummaryPath), summary)
 	if err != nil {
 		return err
 	}
