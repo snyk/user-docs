@@ -280,9 +280,13 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### [Update the Infrastructure as Code Settings for a group](https://apidocs.snyk.io/?#patch-/groups/-group\_id-/settings/iac)
 
+**More information:** [Use a remote IaC custom rules bundle](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../scan-using-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md), [Use a remote IaC custom rules bundle](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
+
 ### [Get the Infrastructure as Code Settings for an org](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/settings/iac)
 
 ### [Update the Infrastructure as Code Settings for an org](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/settings/iac)
+
+**More information:** [Use a remote IaC custom rules bundle](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [Use a remote IaC custom rules bundle](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ## Import Projects (v1)
 
