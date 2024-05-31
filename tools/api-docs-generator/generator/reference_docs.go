@@ -22,7 +22,7 @@ type operationPath struct {
 	docsHint  string
 }
 
-func GenerateReferenceDocs(cfg config.Config, docsBasePath string) error {
+func GenerateReferenceDocs(cfg *config.Config, docsBasePath string) error {
 	aggregatedDocs, err := aggregateSpecs(cfg, docsBasePath)
 	if err != nil {
 		return err
@@ -33,7 +33,7 @@ func GenerateReferenceDocs(cfg config.Config, docsBasePath string) error {
 		destinationPath := path.Join(docsBasePath, cfg.Output.APIReferencePath, labelToFileName(label))
 		summary = append(summary, fmt.Sprintf("* [%s](%s)\n", label, path.Join(cfg.Output.APIReferencePath, labelToFileName(label))))
 
-		err := renderReferenceDocsPage(destinationPath, label, docsBasePath, operations)
+		err := renderReferenceDocsPage(destinationPath, label, docsBasePath, operations, cfg.CategoryContext)
 		if err != nil {
 			return err
 		}
@@ -45,7 +45,7 @@ func GenerateReferenceDocs(cfg config.Config, docsBasePath string) error {
 	return nil
 }
 
-func aggregateSpecs(cfg config.Config, docsBasePath string) (map[string][]operationPath, error) {
+func aggregateSpecs(cfg *config.Config, docsBasePath string) (map[string][]operationPath, error) {
 	aggregatedDocs := map[string][]operationPath{}
 
 	for _, spec := range cfg.Specs {
@@ -73,17 +73,30 @@ func aggregateSpecs(cfg config.Config, docsBasePath string) (map[string][]operat
 	return aggregatedDocs, nil
 }
 
-func renderReferenceDocsPage(filePath, label, docsPath string, operation []operationPath) error {
+func renderReferenceDocsPage(filePath, label, docsPath string, operation []operationPath, categoryContext config.CategoryContexts) error {
 	docsFile, err := os.Create(filePath)
 	if err != nil {
 		return err
 	}
 
-	fmt.Fprintf(docsFile, `# %s
+	_, err = fmt.Fprintf(docsFile, `# %s
 
 {%% hint style="info" %%}
 %s
 {%% endhint %%}`, label, operation[0].docsHint)
+	if err != nil {
+		return err
+	}
+	if categoryContextHint, found := categoryContext.ToMap()[labelToKey(label)]; found {
+		_, err = fmt.Fprintln(docsFile)
+		if err != nil {
+			return err
+		}
+		_, err = fmt.Fprint(docsFile, categoryContextHint)
+		if err != nil {
+			return err
+		}
+	}
 
 	// sort for stability
 	sort.Slice(operation, func(i, j int) bool {
@@ -113,9 +126,14 @@ func renderReferenceDocsPage(filePath, label, docsPath string, operation []opera
 }
 
 func labelToFileName(label string) string {
+	return labelToKey(label) + ".md"
+}
+
+func labelToKey(label string) string {
 	replacements := []string{"(", ")"}
 	for _, replacement := range replacements {
 		label = strings.ReplaceAll(label, replacement, "")
 	}
-	return strings.ToLower(strings.ReplaceAll(label, " ", "-")) + ".md"
+
+	return strings.ToLower(strings.ReplaceAll(label, " ", "-"))
 }

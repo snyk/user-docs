@@ -15,6 +15,20 @@ To generate the API documentation locally, run:
 make run
 ```
 
+## Config
+
+Generator is configured with `config.yml`. The following options are available:
+
+categoryContext: additional context for the category of the API documentation, for example:
+```yaml
+categoryContext:
+    - name: licenses-v1
+      hint: |
+        **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
+```
+will add a hint on the top of the `licenses` category, for the v1 API. 
+
+
 ## Development
 
 To test the utility, run:
