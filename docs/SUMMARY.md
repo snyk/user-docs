@@ -617,7 +617,7 @@
         * [Use IaC custom rules with CLI](scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/README.md)
           * [Use a local IaC custom rules bundle](scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-local-iac-custom-rules-bundle.md)
           * [Use a remote IaC custom rules bundle](scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
-        * [Integrated IaC custom rules within a pipeline](scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/integrated-iac-custom-rules-within-a-pipeline.md)
+        * [IaC custom rules within a pipeline](scan-using-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md)
         * [SDK reference](scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/sdk-reference.md)
       * [IaC+ and cloud custom rules](scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/iac+-and-cloud-custom-rules/README.md)
         * [Create a Custom Rules Project](scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/iac+-and-cloud-custom-rules/create-a-custom-rules-project.md)
