@@ -3,7 +3,7 @@
 This quickstart helps you with these basic tasks in the Snyk application:
 
 {% hint style="info" %}
-Before starting, check that the code in your repositories matches Snyk's [supported languages and frameworks](../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/).
+Before starting, check that the code in your repositories matches Snyk's [supported languages and frameworks](../supported-languages-and-frameworks/).
 {% endhint %}
 
 1. [Create a Snyk account](create-or-log-in-to-a-snyk-account.md).

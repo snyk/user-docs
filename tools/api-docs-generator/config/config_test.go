@@ -10,7 +10,7 @@ func TestParse(t *testing.T) {
 	tests := []struct {
 		name    string
 		args    func() string
-		want    Config
+		want    *Config
 		wantErr bool
 	}{
 		{
@@ -33,13 +33,13 @@ changelog:
     syncStateFile:  tools/api-docs-generator/sync-state.yml
     changelogFile:  tools/snyk-api/changelog.md`)
 			},
-			want: Config{
+			want: &Config{
 				Fetcher: Fetcher{"source", "destination"},
 				Specs: []Spec{
 					{".gitbook/assets/spec.yaml", " (v1)", "hint 1"},
 					{".gitbook/assets/rest-spec.json", "", "hint 2"},
 				},
-				Output: Output{"snyk-api/reference"},
+				Output: Output{APIReferencePath: "snyk-api/reference"},
 				Changelog: Changelog{
 					HistoricalVersionCutoff: "2024-05-24",
 					SyncStateFile:           "tools/api-docs-generator/sync-state.yml",
@@ -62,7 +62,7 @@ changelog:
 				t.Errorf("Parse() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !reflect.DeepEqual(*got, tt.want) {
+			if !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("Parse() got = %v, want %v", *got, tt.want)
 			}
 		})

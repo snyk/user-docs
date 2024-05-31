@@ -38,12 +38,12 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 	loader := openapi3.NewLoader()
 	loader.IsExternalRefsAllowed = true
 
-	allVersions, err := versions.GetCurrentVersions(ctx, cfg)
+	allVersions, err := versions.Find(ctx, cfg)
 	if err != nil {
 		return err
 	}
 
-	latestGAVersion := versions.GetLatestGAVersion(allVersions)
+	latestGAVersion := allVersions.LatestGA()
 
 	nextURL := fmt.Sprintf("%s/%s", cfg.Fetcher.Source, latestGAVersion)
 	baseURL := path.Join(docsDirectory, cfg.Fetcher.Destination)
@@ -59,7 +59,7 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 	}
 
 	// changes detected
-	historicalChangelog, err := os.ReadFile(changeLogFile) // just pass the file name
+	historicalChangelog, err := os.ReadFile(changeLogFile)
 	if err != nil {
 		return err
 	}
@@ -77,7 +77,7 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 	}(writer)
 
 	markdown := md.NewMarkdown(writer)
-	err = WriteToChangeLog(markdown, groupedChanges, latestGAVersion, nextURL, syncStateCfg.LastSyncedVersion)
+	err = writeToChangeLog(markdown, groupedChanges, latestGAVersion, nextURL, syncStateCfg.LastSyncedVersion)
 	if err != nil {
 		return err
 	}
@@ -99,7 +99,7 @@ func UpdateChangelog(ctx context.Context, cfg *config.Config, syncStateCfg confi
 }
 
 func GenerateHistorical(ctx context.Context, cfg *config.Config, docsDirectory string) error {
-	allVersions, err := versions.GetCurrentVersions(ctx, cfg)
+	allVersions, err := versions.Find(ctx, cfg)
 	if err != nil {
 		return err
 	}
@@ -107,7 +107,7 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config, docsDirectory s
 	loader := openapi3.NewLoader()
 	loader.IsExternalRefsAllowed = true
 
-	gaVersions := versions.ExtractGAVersions(allVersions)
+	gaVersions := allVersions.FilterGA()
 	endVersionPos := sort.SearchStrings(gaVersions, cfg.Changelog.HistoricalVersionCutoff)
 	gaVersions = gaVersions[:endVersionPos]
 	slices.Reverse(gaVersions)
@@ -132,7 +132,7 @@ func GenerateHistorical(ctx context.Context, cfg *config.Config, docsDirectory s
 		if len(groupedChanges) != 0 {
 			markdown := md.NewMarkdown(writer)
 
-			err = WriteToChangeLog(markdown, groupedChanges, nextVersion, nextURL, "")
+			err = writeToChangeLog(markdown, groupedChanges, nextVersion, nextURL, "")
 			if err != nil {
 				return err
 			}
@@ -158,7 +158,7 @@ func filterChanges(changes []ChangesByEndpoint) []ChangesByEndpoint {
 	return filteredChanges
 }
 
-func WriteToChangeLog(markdown *md.Markdown, groupedChanges []ChangesByEndpoint, baseVersion, nextVersionURL, lastSyncVersion string) error {
+func writeToChangeLog(markdown *md.Markdown, groupedChanges []ChangesByEndpoint, baseVersion, nextVersionURL, lastSyncVersion string) error {
 	loader := openapi3.NewLoader()
 	loader.IsExternalRefsAllowed = true
 

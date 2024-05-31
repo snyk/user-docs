@@ -24,22 +24,42 @@ type Changelog struct {
 }
 
 type Output struct {
+	SummaryPath      string `yaml:"summaryPath"`
 	APIReferencePath string `yaml:"apiReferencePath"`
 }
 
 type Config struct {
-	Fetcher   Fetcher   `yaml:"fetcher"`
-	Specs     []Spec    `yaml:"specs"`
-	Output    Output    `yaml:"output"`
-	Changelog Changelog `yaml:"changelog"`
+	Fetcher         Fetcher          `yaml:"fetcher"`
+	Specs           []Spec           `yaml:"specs"`
+	Output          Output           `yaml:"output"`
+	Changelog       Changelog        `yaml:"changelog"`
+	CategoryContext CategoryContexts `yaml:"categoryContext"`
+}
+
+type CategoryContexts []CategoryContext
+
+func (contexts CategoryContexts) ToMap() map[string]string {
+	m := make(map[string]string)
+	for i := range contexts {
+		m[contexts[i].Name] = contexts[i].Hint
+	}
+	return m
+}
+
+type CategoryContext struct {
+	Name string `yaml:"name"`
+	Hint string `yaml:"hint"`
 }
 
 func Parse(filename string) (*Config, error) {
 	cfg := Config{}
 	file, err := os.Open(filename)
 	if err != nil {
-		return &cfg, err
+		return nil, err
 	}
 	err = yaml.NewDecoder(file).Decode(&cfg)
+	if err != nil {
+		return nil, err
+	}
 	return &cfg, err
 }

@@ -63,7 +63,7 @@ func testFn(config *testConfig) (string, error) {
 	builder := new(strings.Builder)
 	markdown := md.NewMarkdown(builder)
 
-	err = WriteToChangeLog(markdown, groupedChanges, config.latestGAVersion, config.nextURL, config.lastSyncVersion)
+	err = writeToChangeLog(markdown, groupedChanges, config.latestGAVersion, config.nextURL, config.lastSyncVersion)
 	if err != nil {
 		return "", err
 	}

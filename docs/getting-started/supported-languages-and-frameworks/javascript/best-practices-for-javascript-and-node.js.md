@@ -33,8 +33,8 @@ If your Projects reference private dependencies in these repositories but you ar
 
 For more information, see the following:
 
-* Package registry integrations: [npm Teams and npm Enterprise](../../../integrate-with-snyk/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md), [Artifactory Registry setup](../../../integrate-with-snyk/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager setup](../../../integrate-with-snyk/package-repository-integrations/nexus-repository-manager-connection-setup/).
-* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/gatekeeper-plugins/artifactory-gatekeeper-plugin.md) and [Nexus Repository Manager Gatekeeper plugin](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
+* Package registry integrations: [npm Teams and npm Enterprise](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md), [Artifactory Registry setup](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager setup](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/).
+* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md) and [Nexus Repository Manager Gatekeeper plugin](../../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
 
 ## Language and package manager considerations
 
@@ -136,7 +136,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 #### Codebase
 
-* Framework support - see [Supported languages, frameworks, and feature availability overview](../../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/).
+* Framework support - see [Supported languages, frameworks, and feature availability overview](../).
 * Use the `snyk code test` command from the root of the Project to perform source code analysis.
 
 #### Containers

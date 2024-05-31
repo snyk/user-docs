@@ -15,14 +15,12 @@ import (
 )
 
 func FetchSpec(ctx context.Context, cfg *config.Config, directory string) error {
-	allVersions, err := versions.GetCurrentVersions(ctx, cfg)
+	allVersions, err := versions.Find(ctx, cfg)
 	if err != nil {
 		return err
 	}
 
-	gaVersion := versions.GetLatestGAVersion(allVersions)
-
-	formattedSpec, err := getSpecByVersion(ctx, cfg, gaVersion)
+	formattedSpec, err := getSpecByVersion(ctx, cfg, allVersions.LatestGA())
 	if err != nil {
 		return err
 	}

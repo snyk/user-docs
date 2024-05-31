@@ -10,7 +10,7 @@ Sometimes, these issues are rooted deep in the code. Open-source packages often 
 
 Snyk Open Source allows you to find and fix vulnerabilities in the open-source libraries used by your applications. You can also find and address licensing issues in or caused by these open-source libraries.
 
-Snyk Open Source is available in many common languages and platforms. See [Supported languages and package managers](../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/).
+Snyk Open Source is available in many common languages and platforms. See [Supported languages and package managers](../../getting-started/supported-languages-and-frameworks/).
 
 ## Find and fix vulnerabilities
 

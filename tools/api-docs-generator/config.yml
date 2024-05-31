@@ -7,8 +7,12 @@ specs:
   docsHint: This document uses the v1 API. For more details, see the [v1 API](../v1-api-overview/).
 - path: docs/.gitbook/assets/rest-spec.json
   docsHint: This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
-
+categoryContext:
+- name: licenses-v1
+  hint: |
+    **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
 output:
+    summaryPath: docs/SUMMARY.md
     apiReferencePath: docs/snyk-api/reference
 changelog:
     historicalVersionCutoff: "2024-05-24"

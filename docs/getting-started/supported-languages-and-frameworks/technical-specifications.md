@@ -200,7 +200,7 @@ Snyk scans your codebase following this sequence
 
 ### More information about language support for Snyk Code
 
-For more information, see [Supported languages, frameworks, and feature availability overview, Snyk Code section](../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/#code-analysis-snyk-code).
+For more information, see [Supported languages, frameworks, and feature availability overview, Snyk Code section](./#code-analysis-snyk-code).
 
 ### Code Quality
 
@@ -220,6 +220,6 @@ The way Snyk analyzes and builds the graph varies depending on the language and 
 
 ### More information about language support for Snyk Open Source
 
-For more information, see [Supported languages, frameworks, and feature availability overview, Open Source section](../../scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/#open-source-and-licensing-snyk-open-source).
+For more information, see [Supported languages, frameworks, and feature availability overview, Open Source section](./#open-source-and-licensing-snyk-open-source).
 
 \

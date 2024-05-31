@@ -10,7 +10,9 @@ import (
 	"github.com/snyk/user-docs/tools/api-docs-generator/config"
 )
 
-func GetCurrentVersions(ctx context.Context, cfg *config.Config) ([]string, error) {
+type Versions []string
+
+func Find(ctx context.Context, cfg *config.Config) (Versions, error) {
 	// #nosec G107 // cfg.Fetcher.Source is a URL from config and does not contain user input
 	resp, err := get(ctx, cfg.Fetcher.Source)
 	if err != nil {
@@ -39,9 +41,9 @@ func get(ctx context.Context, urlToGet string) (*http.Response, error) {
 	return http.DefaultClient.Do(req)
 }
 
-func ExtractGAVersions(versions []string) []string {
+func (v Versions) FilterGA() Versions {
 	var gaVersions []string
-	for _, version := range versions {
+	for _, version := range v {
 		if !strings.Contains(version, "~") {
 			gaVersions = append(gaVersions, version)
 		}
@@ -49,13 +51,8 @@ func ExtractGAVersions(versions []string) []string {
 	return gaVersions
 }
 
-func GetLatestGAVersion(versions []string) string {
-	gaVersions := []string{}
-	for _, version := range versions {
-		if !strings.Contains(version, "~") {
-			gaVersions = append(gaVersions, version)
-		}
-	}
+func (v Versions) LatestGA() string {
+	gaVersions := v.FilterGA()
 	sort.Strings(gaVersions)
 	return gaVersions[len(gaVersions)-1]
 }
