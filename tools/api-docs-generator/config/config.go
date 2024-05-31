@@ -18,6 +18,7 @@ type Spec struct {
 }
 
 type Output struct {
+	SummaryPath      string `yaml:"summaryPath"`
 	APIReferencePath string `yaml:"apiReferencePath"`
 }
 
