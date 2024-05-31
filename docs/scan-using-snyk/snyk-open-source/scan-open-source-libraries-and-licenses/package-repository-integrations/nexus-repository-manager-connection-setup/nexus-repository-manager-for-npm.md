@@ -21,11 +21,11 @@ This guide is relevant for Snyk Web UI integrations only, the Snyk CLI already s
 
 ## JavaScript Language Settings
 
-Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> **> Languages > JavaScript** and either the npm or yarn settings depending on your project types.
+Go to settings <img src="../../../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> **> Languages > JavaScript** and either the npm or yarn settings depending on your project types.
 
 If you have not previously connected to Nexus Repository Manager you will be asked to configure an integration first, see [.](./ "mention")
 
-![](<../../../.gitbook/assets/Screenshot 2022-07-15 at 14.18.43.png>)
+![](<../../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.18.43.png>)
 
 Now follow the steps below, according to your version of Nexus.
 
@@ -58,4 +58,4 @@ Now follow the steps below, according to your version of Nexus.
 
 Open a Pull/Merge Request on a project that contains private dependencies that are hosted in Nexus to see **a lockfile updated and included in the Snyk Fix Pull Request with the correct URL to your repository.**
 
-![](<../../../.gitbook/assets/Screenshot 2022-07-15 at 14.22.59.png>)
+![](<../../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.22.59.png>)

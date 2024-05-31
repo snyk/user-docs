@@ -349,7 +349,7 @@ The following table includes the Git services available for Maven and Gradle Pro
 
 #### Git settings for Java
 
-From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrate-with-snyk/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md).
+From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md).
 
 The following table includes the Git services available for Maven and Gradle Projects.&#x20;
 
@@ -436,7 +436,7 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 
 * Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.
 * Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
-* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../../integrate-with-snyk/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../../integrate-with-snyk/package-repository-integrations/artifactory-package-repository-connection-setup/)
+* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/)
 
 {% hint style="info" %}
 If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis is best performed using CLI as the build system will retrieve the dependencies and be present locally.

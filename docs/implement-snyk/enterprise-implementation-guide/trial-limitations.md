@@ -15,7 +15,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Snyk Code Local Engine**](../../scan-with-snyk/snyk-code/snyk-code-local-engine.md): Not available.
 * [**Broker**](../../enterprise-configuration/snyk-broker/): Not available.
 * [**Self-hosted Git**](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md): Not available.
-* [**Private Registry Integrations**](../../integrate-with-snyk/package-repository-integrations/): Not available.
+* [**Private Registry Integrations**](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/): Not available.
 
 {% hint style="info" %}
 Need more help? [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
