@@ -1046,6 +1046,7 @@
       * [Contributing to snyk-api-import](snyk-api/snyk-tools/tool-snyk-api-import/contributing.md)
     * [Tool: jira-tickets-for-new-vulns](snyk-api/snyk-tools/tool-jira-tickets-for-new-vulns.md)
     * [Python code to extract issues from Snyk API](snyk-api/snyk-tools/python-code-to-extract-issues-from-snyk-api.md)
+  * [REST Issues Experimental API to GA API Migration Guide](snyk-api/rest-issues-experimental-api-to-ga-api-migration-guide.md)
   * [Example migration guide: List all Projects V1 API to REST API](snyk-api/example-migration-guide-list-all-projects-v1-api-to-rest-api.md)
   * [API Changelog](snyk-api/changelog.md)
 * [Working with Snyk](working-with-snyk/README.md)
