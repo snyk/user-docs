@@ -1,6 +1,6 @@
 fetcher:
-  source: https://api.snyk.io/rest/openapi
-  destination: docs/.gitbook/assets/rest-spec.json
+    source: https://api.snyk.io/rest/openapi
+    destination: docs/.gitbook/assets/rest-spec.json
 specs:
 - path: docs/.gitbook/assets/spec.yaml
   suffix: " (v1)"
@@ -12,5 +12,9 @@ categoryContext:
   hint: |
     **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
 output:
-  summaryPath: docs/SUMMARY.md
-  apiReferencePath: docs/snyk-api/reference
+    summaryPath: docs/SUMMARY.md
+    apiReferencePath: docs/snyk-api/reference
+changelog:
+    historicalVersionCutoff: "2024-05-24"
+    syncStateFile:  tools/api-docs-generator/sync-state.yml
+    changelogFile:  docs/snyk-api/changelog.md

@@ -17,6 +17,12 @@ type Spec struct {
 	DocsHint string `yaml:"docsHint,omitempty"`
 }
 
+type Changelog struct {
+	HistoricalVersionCutoff string `yaml:"historicalVersionCutoff"`
+	SyncStateFile           string `yaml:"syncStateFile"`
+	ChangelogFile           string `yaml:"changelogFile"`
+}
+
 type Output struct {
 	SummaryPath      string `yaml:"summaryPath"`
 	APIReferencePath string `yaml:"apiReferencePath"`
@@ -26,6 +32,7 @@ type Config struct {
 	Fetcher         Fetcher          `yaml:"fetcher"`
 	Specs           []Spec           `yaml:"specs"`
 	Output          Output           `yaml:"output"`
+	Changelog       Changelog        `yaml:"changelog"`
 	CategoryContext CategoryContexts `yaml:"categoryContext"`
 }
 
