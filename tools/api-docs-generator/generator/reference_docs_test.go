@@ -1,6 +1,7 @@
 package generator
 
 import (
+	"fmt"
 	"os"
 	"path"
 	"testing"
@@ -191,4 +192,131 @@ func createTempFile(t *testing.T, baseDir, content string) string {
 	_, err = file.WriteString(content)
 	assert.NoError(t, err)
 	return file.Name()
+}
+
+func Test_aggregateSpecs(t *testing.T) {
+	type args struct {
+		cfg          *config.Config
+		docsBasePath string
+	}
+	tests := []struct {
+		name    string
+		args    args
+		want    map[string][]operationPath
+		wantErr assert.ErrorAssertionFunc
+	}{
+		{
+			name: "aggregates single specs",
+			args: args{
+				cfg: &config.Config{
+					Specs: []config.Spec{
+						{
+							Path: "spec_with_only_tagged.yaml",
+						},
+					},
+				},
+				docsBasePath: "../testdata/reference_docs/",
+			},
+			want: map[string][]operationPath{
+				"test": {
+					{
+						method:   "POST",
+						specPath: "spec_with_only_tagged.yaml",
+						pathURL:  "/test",
+					},
+				},
+			},
+			wantErr: assert.NoError,
+		},
+		{
+			name: "aggregates multiple specs",
+			args: args{
+				cfg: &config.Config{
+					Specs: []config.Spec{
+						{
+							Path: "spec_with_only_tagged.yaml",
+						},
+						{
+							Path: "spec_with_only_tagged_2.yaml",
+						},
+					},
+				},
+				docsBasePath: "../testdata/reference_docs/",
+			},
+			want: map[string][]operationPath{
+				"test": {
+					{
+						method:   "POST",
+						specPath: "spec_with_only_tagged.yaml",
+						pathURL:  "/test",
+					},
+				},
+				"another": {
+					{
+						method:   "POST",
+						specPath: "spec_with_only_tagged_2.yaml",
+						pathURL:  "/another_test",
+					},
+				},
+			},
+			wantErr: assert.NoError,
+		},
+		{
+			name: "uses override category name if present",
+			args: args{
+				cfg: &config.Config{
+					Specs: []config.Spec{
+						{
+							Path: "spec_with_only_tagged.yaml",
+						},
+						{
+							Path: "spec_with_override.yaml",
+						},
+					},
+				},
+				docsBasePath: "../testdata/reference_docs/",
+			},
+			want: map[string][]operationPath{
+				"test": {
+					{
+						method:   "POST",
+						specPath: "spec_with_only_tagged.yaml",
+						pathURL:  "/test",
+					},
+				},
+				"overridden-test": {
+					{
+						method:   "POST",
+						specPath: "spec_with_override.yaml",
+						pathURL:  "/test",
+					},
+				},
+			},
+			wantErr: assert.NoError,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got, err := aggregateSpecs(tt.args.cfg, tt.args.docsBasePath)
+			if !tt.wantErr(t, err, fmt.Sprintf("aggregateSpecs(%v, %v)", tt.args.cfg, tt.args.docsBasePath)) {
+				return
+			}
+			compareForTest(t, tt.want, got)
+		})
+	}
+}
+
+func compareForTest(t *testing.T, want, got map[string][]operationPath) {
+	t.Helper()
+	assert.Equal(t, len(want), len(got), "length of maps do not match")
+	for key, wantValue := range want {
+		gotValue, ok := got[key]
+		assert.Truef(t, ok, "key %s not found in got map", key)
+		assert.Equal(t, len(wantValue), len(gotValue), "length of values do not match")
+		for i := range wantValue {
+			assert.Equal(t, wantValue[i].method, gotValue[i].method, "method does not match")
+			assert.Equal(t, wantValue[i].pathURL, gotValue[i].pathURL, "pathURL does not match")
+			assert.Equal(t, wantValue[i].specPath, gotValue[i].specPath, "pathURL does not match")
+		}
+	}
 }
