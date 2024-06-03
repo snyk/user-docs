@@ -88,7 +88,7 @@ You can restore the inheritance of group configurations at any time by using the
 
 If manually updating the settings through the Snyk Settings page is too time-consuming, you can use the Snyk API. It currently allows you to send any variation of the custom rules settings using an API call.
 
-* For example, in order to configure the custom rules bundle at the **group** level, call the [**Group IaC Settings API** endpoint](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/groups/-group\_id-/settings/iac) by providing the following body:
+* For example, in order to configure the custom rules bundle at the **group** level, call the [Update the Infrastructure as Code settings for a group API](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/groups/-group\_id-/settings/iac) by providing the following body:
 
 ```
 {
@@ -153,9 +153,9 @@ The API replies with the Group settings so you can confirm the changes:
 
 You can **override remote bundle configurations using the Snyk API**.
 
-Similarly to the Settings page, the [**Group IaC Settings API**](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/groups/-group\_id-/settings/iac) applies the remote bundle to all the Organizations in the Group. An Organization can override the configurations for a Group and define its own bundle and tag by using an API call.
+Similarly to the Settings page, the [Update the Infrastructure as Code settings for a aroup API](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/orgs/-org\_id-/settings/iac) applies the remote bundle to all the Organizations in the Group. An Organization can override the configurations for a Group and define its own bundle and tag by using an API call.
 
-* To override the Group configurations, call the [**Org IaC Settings API** endpoint](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/orgs/-org\_id-/settings/iac) by providing a different custom rules bundle and tag in the request body:
+* To override the Group configurations, call the [Update the Infrastructure as Code settings for an org API](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/orgs/-org\_id-/settings/iac) by providing a different custom rules bundle and tag in the request body:
 
 ```
 {
