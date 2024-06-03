@@ -7,9 +7,9 @@ If you import a Project through an SCM integration, add the exclusions, folders 
 When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the `.snyk` file. The `.snyk` file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The `.snyk` file should be created in the repository you intend to import.
 
 {% hint style="info" %}
-* In Snyk Code, the`.snyk` file can only be used to exclude directories and files from import. It cannot be used to ignore vulnerabilities or for any other action, as in other Snyk products.
-* Currently, the `exclude` option in the`.snyk` file applies only to the Snyk Web UI and CLI Environments. The `exclude` option cannot be used when working with Snyk Code in an IDE environment.
-* In certain situations, your excluded files may not be excluded if there is an invalid`.snyk` file. In these situations, the scan continues without the`.snyk` file.
+* In Snyk Code, the `.snyk` file can only be used to exclude directories and files from import. It cannot be used to ignore vulnerabilities or for any other action, as in other Snyk products.
+* Currently, the `exclude` option in the `.snyk` file applies only to the Snyk Web UI and CLI Environments. The `exclude` option cannot be used when working with Snyk Code in an IDE environment.
+* In certain situations, your excluded files may not be excluded if there is an invalid `.snyk` file. In these situations, the scan continues without the `.snyk` file.
 {% endhint %}
 
 {% hint style="info" %}
@@ -43,7 +43,7 @@ exclude:
 </strong></code></pre>
 
 {% hint style="info" %}
-You can use `global` or `code.` Either will exclude the specified directories and files from Snyk code tests. `code` applies only to Snyk Code analysis.`global` currently applies only to analysis using Snyk Code but may apply to other products in the future.
+You can use `global` or `code`. Either will exclude the specified directories and files from Snyk code tests. `code` applies only to Snyk Code analysis. `global` currently applies only to analysis using Snyk Code but may apply to other products in the future.
 {% endhint %}
 
 ### **Considerations in creating the `.snyk` file**
@@ -65,7 +65,7 @@ Follow these steps to exclude directories and files from the import process usin
 
 1\. In the repository you want to import, create a YAML file called `.snyk`, for example:
 
-<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png" alt=".snyk file in a repository"><figcaption><p><code>.snyk</code> file in a repository</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png" alt=".snyk file in a repository"><figcaption><p><code>.snyk</code> file in a repository.</p></figcaption></figure>
 
 2\. In the `.snyk` file, specify the directories or files or both that you want to exclude from import according to the following syntax:
 
