@@ -88,22 +88,6 @@ The following manifest files are supported:
 Snyk requires both files to be present to correctly test, monitor, and fix Ruby projects.
 {% endhint %}
 
-#### Fixing vulnerabilities in your Ruby Projects
-
-Snyk can fix vulnerabilities by updating vulnerable gems using `bundle update`after modifying your Gemfile, adhering to the rules you have specified there as far as possible.
-
-In some scenarios, Snyk cannot upgrade all dependencies to non-vulnerable versions. In this case, consider updating the rules in your Gemfile.
-
-{% hint style="info" %}
-For Ruby versions < 3.2, Snyk does not currently support pinning a specific version of Ruby in the Gemfile, for example, `ruby "2.7.7".` You must use a more permissive version range that encapsulates all point versions, such as`ruby "~> 2.7.x"`
-{% endhint %}
-
-#### **Private Gem sources**
-
-Using private Gem sources should work normally when you are using the Snyk CLI.
-
-When creating Fix PRs for Ruby Projects using private Gem sources, Snyk may need access to the service hosting the Gems to update the file correctly.
-
 #### Supported Ruby versions
 
 | Ruby main version           | Ruby specific version                                         |
@@ -120,6 +104,22 @@ When creating Fix PRs for Ruby Projects using private Gem sources, Snyk may need
 ### Snyk Web UI (Git repository integration)
 
 You can test your Ruby projects using the Snyk Web UI.&#x20;
+
+#### Fixing vulnerabilities in your Ruby Projects
+
+Snyk can fix vulnerabilities by updating vulnerable gems using `bundle update`after modifying your Gemfile, adhering to the rules you have specified there as far as possible.
+
+In some scenarios, Snyk cannot upgrade all dependencies to non-vulnerable versions. In this case, consider updating the rules in your Gemfile.
+
+{% hint style="info" %}
+For Ruby versions < 3.2, Snyk does not currently support pinning a specific version of Ruby in the Gemfile, for example, `ruby "2.7.7".` You must use a more permissive version range that encapsulates all point versions, such as`ruby "~> 2.7.x"`
+{% endhint %}
+
+#### **Private Gem sources**
+
+Using private Gem sources should work normally when you are using the Snyk CLI.
+
+When creating Fix PRs for Ruby Projects using private Gem sources, Snyk may need access to the service hosting the Gems to update the file correctly.
 
 ### Snyk integrations&#x20;
 
