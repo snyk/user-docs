@@ -12,9 +12,9 @@ You can report issues by submitting a [support ticket](https://support.snyk.io/h
 
 ## Limitations of existing solution
 
-The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](../../supported-languages-and-frameworks/.net/best-practices-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](../../supported-languages-and-frameworks/.net/best-practices-for-.net.md#tackling-vulnerabilities-from-runtime-dependencies) that have no remediation available and must be manually ignored.&#x20;
+The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](best-practices-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](best-practices-for-.net.md#tackling-vulnerabilities-from-runtime-dependencies) that have no remediation available and must be manually ignored.&#x20;
 
-If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can [encounter errors](../../supported-languages-and-frameworks/.net/troubleshooting-.net.md#not-supported-in-snyk-open-source-for-.net) when scanning Projects that use specific .NET features.
+If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can [encounter errors](troubleshooting-.net.md#not-supported-in-snyk-open-source-for-.net) when scanning Projects that use specific .NET features.
 
 ## Scanning improvements
 
@@ -51,6 +51,7 @@ If you are not using `nuget.config`, but another way of informing the .NET ecosy
 
 * `Directory.Build.props` , `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).&#x20;
 * For `global.json`, Snyk does not support all `major.minor.patch` versions that are currently supported by Microsoft, only a subset thereof. For more information, see this [error code](https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-os-dotnet-0008).
+* The operations are performed on a **case-sensitive** file system, meaning manifest definitions like your `<ProjectReference>`s strings must match files and folders with the same case.
 
 ## .NET scanning improvements for the Snyk CLI
 
