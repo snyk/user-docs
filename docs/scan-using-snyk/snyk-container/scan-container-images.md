@@ -6,7 +6,7 @@ You can scan your container images using Snyk Container:&#x20;
 
 * In the [Snyk Web UI](../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/)
 * Through the [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
-* With [Broker](../../scan-with-snyk/snyk-container/integrate-with-self-hosted-container-registries-broker.md) (for self-hosted container registries)
+* With [Broker](../../enterprise-configuration/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries.md) (for self-hosted container registries)
 
 ## **Prerequisites for using Snyk Container in the Web UI**
 

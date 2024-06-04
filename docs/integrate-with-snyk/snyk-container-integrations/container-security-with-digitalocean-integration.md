@@ -23,7 +23,7 @@ This page explains how to set up DigitalOcean integration in Snyk and start mana
 
 <figure><img src="../../.gitbook/assets/mceclip0-10-.png" alt="DigitalOcean account credentials"><figcaption><p>DigitalOcean account credentials</p></figcaption></figure>
 
-If you are using self-hosted DigitalOcean, contact [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-with-snyk/snyk-container/integrate-with-self-hosted-container-registries-broker.md).
+If you are using self-hosted DigitalOcean, contact [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../enterprise-configuration/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries.md).
 
 {% hint style="info" %}
 **Note:** For the connection to succeed, make sure you have a repository in DigitalOcean.

@@ -26,7 +26,7 @@ This page explains how to set up Nexus Container Registry integration in Snyk an
 
 ![Nexus Container Registry Account credentials](../../.gitbook/assets/mceclip1-20-.png)
 
-If you are using a self-hosted Nexus registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-with-snyk/snyk-container/integrate-with-self-hosted-container-registries-broker.md).
+If you are using a self-hosted Nexus registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../enterprise-configuration/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries.md).
 
 Snyk tests the connection values, and the page reloads, now displaying Nexus integration information. The **Add your Nexus images to Snyk** button becomes available.
 

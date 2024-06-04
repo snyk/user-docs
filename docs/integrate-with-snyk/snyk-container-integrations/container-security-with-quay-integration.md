@@ -20,7 +20,7 @@ Integration with Quay is available for all Snyk users.
 
 <figure><img src="../../.gitbook/assets/mceclip1-10-.png" alt="Configure Quay integration"><figcaption><p>Configure Quay integration</p></figcaption></figure>
 
-If you are using a self-hosted Quay registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-with-snyk/snyk-container/integrate-with-self-hosted-container-registries-broker.md).
+If you are using a self-hosted Quay registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../enterprise-configuration/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries.md).
 
 {% hint style="info" %}
 [Quay.io](http://quay.io) [deprecated](https://access.redhat.com/articles/5925591) use of Quay login in June 2021. The credentials can no longer be Quay username and password, but must be Quay robot account credentials (username and token) that have at least 'read' permissions to the desired repository.
