@@ -376,6 +376,8 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### [Get an issue](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues/-issue\_id-)
 
+Note: Remedies are not included in the response at this time.
+
 ### [Get issues by org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues)
 
 ### [Get an issue](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues/-issue\_id-)
@@ -865,6 +867,8 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 ## Users
 
 ### [Update a user’s role in a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#patch-/groups/-group\_id-/users/-id-) (beta)
+
+Note: Use this endpoint to remove users from a group.
 
 ### [Get user by ID](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
 
