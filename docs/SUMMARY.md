@@ -494,7 +494,7 @@
         * [Private gem sources for Ruby configuration](scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/private-gem-sources-for-ruby-configuration.md)
     * [Manage vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/README.md)
       * [Fix your vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md)
-      * [Gatekeeper plugins](scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/README.md)
+      * [Gatekeeper plugins](integrate-with-snyk/gatekeeper-plugins/README.md)
         * [Artifactory Gatekeeper Plugin](scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md)
         * [Nexus Repository Manager Gatekeeper Plugin](scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
       * [Vulnerability fix types](scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md)
@@ -1060,3 +1060,4 @@
     * [Snyk Residency Services](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-residency-services.md)
     * [Statement of Work](working-with-snyk/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
   * [What counts as a test?](working-with-snyk/what-counts-as-a-test.md)
+  * [Snyk for Government (US)](working-with-snyk/snyk-for-government-us.md)
