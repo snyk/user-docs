@@ -13,7 +13,7 @@ This list identifies all the areas with differences in functionality in the Snyk
 * Snyk Code is available except:
   * Does not include Code Search
   * Does not include DeepCode AI Fix
-* Snyk Container is available except for [Kubernetes Integration](https://docs.snyk.io/scan-applications/snyk-container/kubernetes-integration/kubernetes-integration-overview)
+* Snyk Container is available except for [Kubernetes Integration](https://docs.snyk.io/scan-applications/snyk-container/kubernetes-integration/kubernetes-integration-overview).
 * Snyk Open Source is available except:
   * Does not include Unmanaged C++
   * Does not include the npm packages `@snyk/protect` and `@snyk/fix.`
@@ -22,11 +22,11 @@ This list identifies all the areas with differences in functionality in the Snyk
 
 ## Authentication not available
 
-API keys are **not available**. The `auth_type` of `api_key` is not accepted.  The OAuth protocol is used for all scenarios where API keys are typically used. See [Service accounts using OAuth 2.0](../enterprise-configuration/service-accounts/service-accounts-using-oauth-2.0.md) for details.
+API keys are **not available**. The `auth_type` of `api_key` is not accepted. The OAuth protocol is used for all scenarios where API keys are typically used. See [Service accounts using OAuth 2.0](../enterprise-configuration/service-accounts/service-accounts-using-oauth-2.0.md) for details.
 
 As Snyk for Government (US) does not support API keys, you cannot request the API to create a [service account](../enterprise-configuration/service-accounts/) that uses an API key.
 
-## Single Sign-On not avialable
+## Single Sign-On limitations on&#x20;
 
 [Single Sign-On (SSO)](../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/) is available except for [Self-Serve Single Sign-On (SSO)](../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
 
@@ -53,11 +53,11 @@ See [Single Sign-On (SSO) for authentication to Snyk](../enterprise-configuratio
 * [Jira App](../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md)
 * [Snyk Advisor](https://snyk.io/advisor/)
 * [Snyk Learn](https://learn.snyk.io/?)
-* Social logins: Google, Github, and so on as identity provider
+* Social logins: Google, GitHub, and so on as identity provider
 * SSO into [Snyk Support](https://support.snyk.io/hc/en-us)
 * [Status Page](https://status.snyk.io)
 * Outbound webhooks
-* Session Concurrency limited to 3 sessions per user
+* Session Concurrency is limited to three (3) sessions per user.
 * Session lockout: After sessions expire, the signed-in user loses access to all data present in existing session windows.
 * Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](../snyk-admin/groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md) for details.&#x20;
 * [Snyk CLI docker images](../snyk-cli/install-or-update-the-snyk-cli/#snyk-cli-in-a-docker-image). These do not support FIPS-validated cryptography and should only be used when this can be accepted.

@@ -2,14 +2,9 @@
 
 ## Context for user-defined custom images for CLI
 
-Following Snyk announcements regarding [Snyk CLI Images](https://headwayapp.co/snyk-io-updates/deprecation-notice-for-snyk-cli-images-292562) and also [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563) [here](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that Snyk customers will find useful in building their own custom images.
+Following Snyk announcements regarding [Snyk CLI Images](https://headwayapp.co/snyk-io-updates/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that customers will find useful in building their own custom images.
 
-Using custom images allows you to:
-
-* Extend environment support to any [environment](../../snyk-cli/install-or-update-the-snyk-cli/) supported by the Snyk CLI
-* Extend support to newer versions of languages and frameworks not available in Bitbucket Pipelines versions < 1.0.0
-
-<figure><img src="../../.gitbook/assets/Untitled.jpg" alt="Users can now define custom images in v1.0.0"><figcaption><p>Users can now define custom images in v1.0.0</p></figcaption></figure>
+Using custom images will allow you to extend environment support to any [environment](../../snyk-cli/install-or-update-the-snyk-cli/) supported by the Snyk CLI.
 
 ## Requirements for user-defined custom images for CLI
 
@@ -24,7 +19,7 @@ In order for your custom image to be supported, it must:
 
 Providing a custom image gives you more control over your environment. For example, unless you use custom images, you cannot use an environment with Node LTS.
 
-### How to create a custom image using Dockerfile
+### Example: How to create a custom image using Dockerfile for Node LTS support
 
 Given the base requirements, you can create a custom image to use Node LTS with the following Dockerfile:
 
@@ -49,9 +44,7 @@ RUN curl -o ./snyk-alpine https://static.snyk.io/cli/stable/snyk-alpine && \
 
 The base image uses Alpine to keep things lightweight. You have installed Node and the Snyk CLI; this satisfies three-quarters of the requirements.
 
-### How to build and push the Docker image
-
-After the Dockerfile is defined, you can build and tag the image using [docker build](https://docs.docker.com/engine/reference/commandline/build/) and push the image using [docker push](https://docs.docker.com/engine/reference/commandline/push/). for example:
+After the Dockerfile is defined, you can build and tag the image using [docker build](https://docs.docker.com/engine/reference/commandline/build/) and push the image using [docker push](https://docs.docker.com/engine/reference/commandline/push/):
 
 ```sh
 # bulid image
@@ -63,7 +56,7 @@ docker push foobar/snyk:node-lts
 
 ### Example: how to use a custom image in a BitBucket pipeline&#x20;
 
-Compatibility in the BitBucket Pipeline integration is limited to environments supported by the Docker container the integration runs in. Following our announcement [here](https://updates.snyk.io/decoupling-snyk-scan-from-snyk-cli-docker-images-277502), before v1.0.0, the said experience was limited to environments supported by the Snyk CLI Docker Images.
+Compatibility in the BitBucket Pipeline integration is limited to environments supported by the Docker container the integration runs in. Following the Snyk announcement [Decoupling Snyk Scan from Snyk CLI Docker Images](https://updates.snyk.io/decoupling-snyk-scan-from-snyk-cli-docker-images-277502), before v1.0.0, the experience was limited to environments supported by the Snyk CLI Docker Images.
 
 With the release of v1.0.0, users can define custom images. If the list of environments provided by the [LANGUAGE](bitbucket-pipelines-integration-using-a-snyk-pipe/snyk-pipe-parameters-and-values-bitbucket-cloud.md#snyk-pipe-variables) variable does not support your particular build environment, you can define your own build environment in the form of a custom Docker image.
 

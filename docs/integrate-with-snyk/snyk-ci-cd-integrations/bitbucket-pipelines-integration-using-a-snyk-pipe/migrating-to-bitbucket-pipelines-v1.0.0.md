@@ -1,23 +1,15 @@
----
-description: >-
-  When upgrading from Bitbucket Pipelines < 1.0.0 to  v1.0.0+, there are some
-  changes to note
----
-
 # Migrating to Bitbucket Pipelines v1.0.0
 
-## Changes required
+When you are upgrading from < 1.0.0 to 1.0.0+, make the following changes in your configuration:
 
-When upgrading from < 1.0.0 to 1.0.0+, the following changes should be made to your configuration:
+* Use tags supported by [Snyk Images](https://hub.docker.com/r/snyk/snyk/tags) for the `LANGUAGE` variable instead of tags supported by [Snyk CLI Docker images](https://hub.docker.com/r/snyk/snyk-cli/tags).
+* Alternately, you can provide your own [custom image](../user-defined-custom-images-for-cli.md) using the new `SNYK_BASE_IMAGE` variable
 
-* Please use tags supported by [Snyk Images](https://hub.docker.com/r/snyk/snyk/tags) for the `LANGUAGE` variable instead of tags supported by [Snyk CLI Docker images](https://hub.docker.com/r/snyk/snyk-cli/tags)
-* Alternately, users can provide their own [custom image](../user-defined-custom-images-for-cli.md) using the new `SNYK_BASE_IMAGE` variable
+<figure><img src="../../../.gitbook/assets/Untitled.jpg" alt="Users can now define custom images in v1.0.0"><figcaption><p>Users can now define custom images in v1.0.0</p></figcaption></figure>
 
-### Example
+## Basic app dependencies scan example <a href="#markdown-header-basic-app-dependencies-scan-example" id="markdown-header-basic-app-dependencies-scan-example"></a>
 
-#### Basic app dependencies scan example <a href="#markdown-header-basic-app-dependencies-scan-example" id="markdown-header-basic-app-dependencies-scan-example"></a>
-
-Uses Snyk to scan a Node.js application and break the build if any vulnerabilities found.
+Uses Snyk to scan a Node.js application and break the build if any vulnerabilities are found.
 
 {% code title="snyk/snyk-scan:1.0.0" %}
 ```yaml
@@ -53,21 +45,17 @@ script:
 
 ## Equivalent Snyk Images
 
-The table below lists the Snyk CLI Docker images used in Bitbucket Pipelines < 1.0.0 and the equivalent Snyk Images that can be used in Bitbucket Pipelines > 1.0.0.
+The table that follows lists the Snyk CLI Docker images used in Bitbucket Pipelines < 1.0.0 and the equivalent Snyk Images that can be used in Bitbucket Pipelines > 1.0.0.
 
 {% hint style="info" %}
-NodeJS 14 is installed in all Snyk CLI Docker images for the purpose of installing the CLI. In comparison, NodeJS is only installed Snyk Images containing the `node` tag
+Node.js 14 is installed in all Snyk CLI Docker images for the purpose of installing the CLI. In comparison, NodeJS is installed only in Snyk Images containing the `node` tag.
 {% endhint %}
 
-{% hint style="warning" %}
-Note that the images will not be exactly like-for-like. Properties like the base image, the installed Snyk CLI version, etc will be different.
+Note that the **images will not be exactly like-for-lik**e. Properties such the base image, the installed Snyk CLI version, and others will be different.
 
-But for the purpose of Bitbucket Pipelines, they are functionally equivalent.
-{% endhint %}
+However, for the purpose of Bitbucket Pipelines, they are functionally equivalent.
 
-{% hint style="danger" %}
-Where the supported language/framework has reached EOL, it is **highly recommended** to use your own [user defined custom images](../user-defined-custom-images-for-cli.md) with newer versions of the language/framework that is still supported by the vendor.
-{% endhint %}
+Where the supported language or framework has reached end of life, it is **highly recommended** that you use your own [user-defined custom images](../user-defined-custom-images-for-cli.md) with newer versions of the language or framework that are still supported by the vendor.
 
 | **Snyk CLI Docker images tag**                                                                                                                                                                                      | **Snyk Images tag**                                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -89,4 +77,4 @@ Where the supported language/framework has reached EOL, it is **highly recommend
 | [snyk/snyk-cli:1.1228.0-gradle-5.4](https://hub.docker.com/layers/snyk/snyk-cli/1.1228.0-gradle-5.4/images/sha256-2bc490a3b49398117282f39d0619213c9e7ba4b20dc8ed695bb121201dab7b38?context=explore)                 | _no direct equivalent\*_                                                                                                                                          |
 | [snyk/snyk-cli:1.1228.0-gradle-5.4\_java11](https://hub.docker.com/layers/snyk/snyk-cli/1.1228.0-gradle-5.4\_java11/images/sha256-9a05884de9da4de8b7098039bb28d634e3ca6ae0f3e47d4c5df43ff697e48c20?context=explore) | _no direct equivalent\*_                                                                                                                                          |
 
-&#x20;_\* There are a_ [_selection_](https://hub.docker.com/r/snyk/snyk/tags?page=1\&name=gradle) _of gradle Snyk Images which may suit your needs_
+&#x20;_\* There is a_ [_selection_](https://hub.docker.com/r/snyk/snyk/tags?page=1\&name=gradle) _of gradle Snyk Images that may suit your needs_
