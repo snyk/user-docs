@@ -3,14 +3,14 @@
 {% hint style="warning" %}
 **Release status**&#x20;
 
-Self-hosted container registries (Broker) are available only for Enterprise plans.
+Self-hosted container registries with Snyk Broker) are available only for Enterprise plans.
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Snyk can integrate with self-hosted private container registries that do not have internet access and can help you to better secure container images in those registries.
+Snyk can integrate with self-hosted private container registries that are not internet-accessible and can help you to better secure container images in those registries.
 
-To enable and configure your hosted container registry, contact Snyk admin.
+To enable and configure your hosted container registry, contact your Snyk team.
 
 ## **Solution components of self-hosted container registries**
 
