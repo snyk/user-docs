@@ -1,0 +1,37 @@
+openapi: 3.0.3
+info:
+  title: Test
+  contact: {}
+  version: 3.0.0
+  description: Sample API
+servers:
+  - url: /test
+    description: Test
+tags:
+  - name: Test
+    description: test
+paths:
+  /test:
+    post:
+      description: test
+      operationId: test
+      tags:
+        - test
+      requestBody:
+        content:
+          application/vnd.api+json:
+            schema:
+              type: object
+              properties:
+                prop1:
+                  type: string
+      responses:
+        "201":
+          description: success
+          content:
+            application/vnd.api+json:
+              schema:
+                type: object
+            location:
+              schema:
+                type: string

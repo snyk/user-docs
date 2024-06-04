@@ -104,6 +104,13 @@ func aggregateSpecs(cfg *config.Config, docsBasePath string) (map[string][]opera
 					if tag == "OpenAPI" {
 						continue
 					}
+					snykDocsExtension := operation.Extensions["x-snyk-documentation"]
+					if snykDocsExtension != nil {
+						tag, err = extractCategoryNameFromExtension(snykDocsExtension)
+						if err != nil {
+							return nil, err
+						}
+					}
 					tag += spec.Suffix
 					aggregatedDocs[tag] = append(aggregatedDocs[tag], operationPath{
 						operation: operation,
@@ -118,6 +125,18 @@ func aggregateSpecs(cfg *config.Config, docsBasePath string) (map[string][]opera
 		}
 	}
 	return aggregatedDocs, nil
+}
+
+func extractCategoryNameFromExtension(extension interface{}) (string, error) {
+	extensionMap, worked := extension.(map[string]interface{})
+	if !worked {
+		return "", fmt.Errorf("failed to parse docs extension as an object")
+	}
+	categoryValue, worked := extensionMap["category"].(string)
+	if !worked {
+		return "", fmt.Errorf("x-snyk-documentation extension category field not a string")
+	}
+	return categoryValue, nil
 }
 
 func renderReferenceDocsPage(filePath, label, docsPath string, operation []operationPath, categoryContext config.CategoryContexts) error {

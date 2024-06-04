@@ -15,6 +15,21 @@ To generate the API documentation locally, run:
 make run
 ```
 
+## Override the category names in the generated documentation
+
+To override the category names for an operation in the generated documentation, apply the `x-snyk-documentation` extension to the operation in the OpenAPI specification. This extension is provided so that the category name can be overridden without changing the tags, as tag updates are considered breaking changes. For example:
+
+```yaml
+paths:
+  /tomatoes:
+    post:
+      x-snyk-documentation:
+        category: vegetables
+      tags:
+        - fruits
+```
+In the above example, the generated docs will use the `vegetables` category for the `POST /tomatoes` operation.
+
 ## Config
 
 Generator is configured with `config.yml`. The following options are available:
