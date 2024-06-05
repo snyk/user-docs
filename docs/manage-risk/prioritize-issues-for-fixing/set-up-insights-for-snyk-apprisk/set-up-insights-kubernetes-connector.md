@@ -1,4 +1,8 @@
-# Prioritization setup: Kubernetes connector
+# Set up Insights: Kubernetes connector
+
+{% hint style="info" %}
+The Set up Insights option is available only to Snyk AppRisk Pro users.
+{% endhint %}
 
 ## What is Kubernetes connector for Snyk AppRisk?
 
@@ -18,35 +22,35 @@ The Kubernetes connector is the agent deployed in your Kubernetes clusters to co
 Before you can deploy the Kubernetes connector in your Kubernetes clusters, be sure you have the following:
 
 * **A Snyk Organization** to which the Kubernetes information collected will be sent to be stored. This could be a new Organization; it does not have to be the same one containing the Snyk Projects you wish to use with Snyk AppRisk, but it must be in the same Snyk Group.&#x20;
-* **A Snyk service account created specifically** to be used with the Kubernetes connector. For instructions on creating a service account, see [Service accounts](../../../../enterprise-configuration/service-accounts/). For the roles and permissions, Snyk recommends:
+* **A Snyk service account created specifically** to be used with the Kubernetes connector. For instructions on creating a service account, see [Service accounts](../../../enterprise-configuration/service-accounts/). For the roles and permissions, Snyk recommends:
   * Creating a new specific role for this service account
   * Taking a least privilege approach, granting the new specific role the sole permission required to **Publish Kubernetes Resources**.
 
 ### Step 1: Create a Snyk Organization
 
-If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](../../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.&#x20;
+If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.&#x20;
 
 If you are not creating a separate Snyk Organization, continue with the next step.
 
 ### Step 2: Create a new role
 
-Follow the steps in this documentation to [create a new role](../../../../snyk-admin/manage-permissions-and-roles/user-role-management.md#create-a-role).
+Follow the steps in this documentation to [create a new role](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md#create-a-role).
 
 This example illustrates creating a new role called **Kubernetes connector**
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for role</p></figcaption></figure>
 
 ### Step 3: Assign permissions to this role
 
-Navigate to the newly created role and [select edit](../../../../snyk-admin/manage-permissions-and-roles/user-role-management.md#edit-a-role); you will also be taken to this page immediately after creating the role.&#x20;
+Navigate to the newly created role and [select edit](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md#edit-a-role); you will also be taken to this page immediately after creating the role.&#x20;
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
 
 ### Step 4: Create a service account and assign it to a role
 
-Next, create a new [service account](../../../../enterprise-configuration/service-accounts/) for Kubernetes connector integration with Snyk AppRisk.
+Next, create a new [service account](../../../enterprise-configuration/service-accounts/) for Kubernetes connector integration with Snyk AppRisk.
 
 {% hint style="info" %}
 Snyk recommends creating this service account for the Snyk Organization used or created for the Kubernetes agent.&#x20;
@@ -56,7 +60,7 @@ Navigate to that **Snyk Organization -> Settings -> Service Account.**
 
 Create a new service account with your chosen name, and from the dropdown, select the role you created in the previous step.
 
-<figure><img src="../../../../.gitbook/assets/image (11) (2) (1).png" alt="Select the Insights k8s Agent role"><figcaption><p>Select the k8s Agent role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (2) (1).png" alt="Select the Insights Kubernetes Agent role"><figcaption><p>Select the Kubernetes Agent role</p></figcaption></figure>
 
 After the service account is created, you will see the API token. Copy the API token and save it somewhere safe; you will need this to configure the agent in the Helm chart.
 
@@ -67,12 +71,12 @@ Snyk recommends using the Helm Chart to deploy the agent; the Helm Chart will cr
 [Follow the instructions on the Kubernetes-scanner GitHub repo](https://github.com/snyk/kubernetes-scanner) to use the Helm Chart to deploy the [latest released version](https://github.com/snyk/kubernetes-scanner/releases).
 
 {% hint style="info" %}
-To ensure you have set up your Kubernetes connector properly, navigate to the **Set up Insights** tab on the **Insights** page and check the **Kubernetes resources** table to view the data that Insights has access to.
+To ensure you have set up your Kubernetes connector properly, navigate to the **Set up Insights** tab on the **Issues** page and check the **Kubernetes resources** table to view the data that Insights has access to.
 {% endhint %}
 
 ## FAQ
 
-#### **What is the difference between the** [**Kubernetes monitor**](../../../../scan-with-snyk/snyk-container/integrate-with-kubernetes/overview-of-the-kubernetes-integration/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector for Snyk AppRisk?**
+#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-with-snyk/snyk-container/integrate-with-kubernetes/overview-of-the-kubernetes-integration/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector for Snyk AppRisk?**
 
 The Kubernetes **monitor** extracts images from a Kubernetes cluster’s workloads and scans them for vulnerabilities. The Kubernetes **connector** for Snyk AppRisk extracts workload configurations from a Kubernetes cluster.
 

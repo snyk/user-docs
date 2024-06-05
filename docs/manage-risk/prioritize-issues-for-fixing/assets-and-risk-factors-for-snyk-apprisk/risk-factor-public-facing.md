@@ -1,4 +1,8 @@
-# Public facing
+# Risk factor: Public facing
+
+{% hint style="info" %}
+The Public facing risk factor is available only to Snyk AppRisk Pro users.
+{% endhint %}
 
 Knowing that code is deployed tells you that there is a possibility that someone can exploit a flaw you are concerned about. That someone may be a well-trusted person within your Organization or a completely unknown external entity. Snyk can further narrow down the possibilities by determining if the package or Image is configured to be exposed to external traffic.
 
@@ -8,21 +12,19 @@ Cloud-native solutions such as AWS, Kubernetes, and GCP are used for many purpos
 
 The Snyk platform analyzes various data sources to compute the network connectivity paths. This information is used by Snyk AppRisk to determine if packages and Images may be exposed to external traffic.&#x20;
 
-Cloud-native solutions are deterministic in the way the network connectivity is configured. Snyk uses that knowledge to compute the answers based on the available information. For example,  to understand how the network connectivity can be configured, see Kubernetes [Services](https://kubernetes.io/docs/concepts/services-networking/service/) and [Ingresses](https://kubernetes.io/docs/concepts/services-networking/ingress/) documentation.&#x20;
+Cloud-native solutions are deterministic in how network connectivity is configured. Snyk uses that knowledge to compute the answers based on the available information. For example,  to understand how the network connectivity can be configured, see Kubernetes [Services](https://kubernetes.io/docs/concepts/services-networking/service/) and [Ingresses](https://kubernetes.io/docs/concepts/services-networking/ingress/) documentation.&#x20;
 
 {% hint style="info" %}
-Prioritization with Insights currently supports the following configurations: Kubernetes services and ingress, and Gloo.
+Issues prioritization currently supports the following configurations: Kubernetes services and ingress, and Gloo.
 {% endhint %}
 
-## Types of integration
+## Kubernetes Connector integration
 
 The Public facing risk factor can be applied to your Kubernetes Connector integrations.&#x20;
 
-### Kubernetes **Connector**
-
 The Public facing risk factor has significant implications for Kubernetes Connector integration. It affects how vulnerabilities and potential attack vectors are prioritized and managed within the Kubernetes environment. The continuous monitoring of Kubernetes events by the Kubernetes Connector ensures that any changes or potential risks are instantly evaluated and relayed to the Snyk platform. This real-time data allows for the dynamic adjustment of security policies and proactive risk mitigation, ensuring the integrity and security of the cloud-native infrastructure.
 
-## Technical details for the Public facing risk factor
+## Technical details for the public-facing risk factor
 
 The Kubernetes Connector continuously monitors the Kubernetes events. These events are streamed to the Snyk platform continuously.&#x20;
 

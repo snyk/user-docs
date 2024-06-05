@@ -4,7 +4,7 @@ Learn what Risk-Based prioritization is and how to set up and deploy the Kuberne
 
 Risk-based prioritization is the capability of Snyk AppRisk to understand the context of your application and help you better prioritize your security issues.
 
-The [Snyk Risk-Based prioritization](../prioritization-with-insights-for-snyk-apprisk/prioritization-setup/) product focuses on several risk factors for your vulnerabilities:
+The [Snyk Risk-Based prioritization](../../prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/) product focuses on several risk factors for your vulnerabilities:
 
 * **OS condition**: Does this vulnerability apply to my operating system?
 * **Deployed**: Is my code in a container image that is deployed?
@@ -12,8 +12,8 @@ The [Snyk Risk-Based prioritization](../prioritization-with-insights-for-snyk-ap
 
 The goal of Snyk Risk-based prioritization is to provide application context to your Open Source, Code, and Container issues by understanding how your application is deployed and configured. This enables you to prioritize your issues based on the risk they are posing to your application.
 
-See the [How risk-based prioritization works](../prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/) page, with focus on the [Assets](../prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/assets.md) and [Risk factors](../prioritization-with-insights-for-snyk-apprisk/how-prioritization-with-insights-works/risk-factors/) pages, for more details and a better understanding of the core concepts.
+See the [How risk-based prioritization works](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/) page, with focus on the [Assets](broken-reference) and [Risk factors](broken-reference) pages, for more details and a better understanding of the core concepts.
 
 The purpose of this level is to provide context to your Snyk Container issues or vulnerabilities. After you deploy the kubernetes connector to your cluster, you will be able to identify if a Container is Deployed and Public Facing, allowing you to prioritize your container vulnerabilities.
 
-See the [Prioritization setup: Kubernetes connector](../prioritization-with-insights-for-snyk-apprisk/prioritization-setup/prioritization-setup-kubernetes-connector.md) page for more details about how to set up the Kubernetes connector.
+See the [Prioritization setup: Kubernetes connector](../../prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-kubernetes-connector.md) page for more details about how to set up the Kubernetes connector.

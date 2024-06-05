@@ -1,6 +1,6 @@
-# Using the Insights UI
+# Using the Issues UI with Snyk AppRisk
 
-The following pages provide information and instructions to help with using Insights.
+The following pages provide information and instructions on how to use the Issues UI.
 
 * [Filter your issues](filter-your-issues.md)
 * [Understand your issues](understand-your-issues.md)
