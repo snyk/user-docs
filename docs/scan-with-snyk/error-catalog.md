@@ -127,7 +127,7 @@ Provide an ORG ID or GROUP ID.
 
 The project could not be found. Check that the project exists, that you have access to the project, and also check that the ID you have provided is the project ID and not a CBI ID.
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 
 ### [SNYK-CBI-0004](#snyk-cbi-0004)
@@ -274,6 +274,15 @@ An internal error occurred while trying to retrieve the image collection. Try ag
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+
+### [SNYK-CBI-0019](#snyk-cbi-0019)
+
+#### Unable to create versioning schema
+
+The provided versioning schema is invalid and image could therefor not be created. Provide a properly formatted versioning schema and try again.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
 
 ---
 # Code
@@ -2007,4 +2016,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-06-05T09:11:37.301Z
+--- Generated at 2024-06-05T11:51:49.155Z
