@@ -14,7 +14,7 @@ Snyk AppRisk provides:
 
 ## Enterprise Analytics
 
-[Enterprise Analytics](analytics/) shows the performance of a company's Application Security program.&#x20;
+[Enterprise Analytics](enterprise-analytics/) shows the performance of a company's Application Security program.&#x20;
 
 Metrics are reported for the pillars: Exposure, Manage, Prevention, and Coverage. The breakdown of open issues over time is shown in these categories: Baseline, Preventable, Non-preventable, and Other new.&#x20;
 

@@ -130,7 +130,7 @@ Snyk Enterprise Analytics provides a comprehensive overview of your entire appli
 
 ### Enterprise Analytics
 
-[Enterprise Analytics](../analytics/enterprise-analytics.md) provides a view into the performance of your AppSec program. You can use Enterprise Analytics to better understand the strengths and weaknesses of your program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
+[Enterprise Analytics](../enterprise-analytics/enterprise-analytics.md) provides a view into the performance of your AppSec program. You can use Enterprise Analytics to better understand the strengths and weaknesses of your program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
 
 You can use this type of prioritization with the following Snyk Plan:&#x20;
 
@@ -140,12 +140,12 @@ You can use this type of prioritization with the following Snyk Plan:&#x20;
 You can use Enterprise Analytics at the Snyk tenant level, including both the Snyk Group and Snyk Organization levels.
 
 {% hint style="info" %}
-If you have both Snyk Enterprise and Snyk AppRisk Pro plans, then Enterprise Analytics is found under the Analytics option in the [Issues](../analytics/aspm-analytics/issues-analytics.md) tab.
+If you have both Snyk Enterprise and Snyk AppRisk Pro plans, then Enterprise Analytics is found under the Analytics option in the [Issues](../enterprise-analytics/aspm-analytics/issues-analytics.md) tab.
 {% endhint %}
 
 ### Application Analytics
 
-[Application Analytics](../analytics/aspm-analytics/application-analytics.md) for Snyk AppRisk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
+[Application Analytics](../enterprise-analytics/aspm-analytics/application-analytics.md) for Snyk AppRisk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
 
 Prioritize the displayed data by using the available filters, dimension views, and specific timeframes. \
 \

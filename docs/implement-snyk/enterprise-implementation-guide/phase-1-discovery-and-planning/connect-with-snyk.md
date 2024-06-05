@@ -16,8 +16,9 @@ Your account manager is your go-to resource for any account-related questions or
 * Adding new products and features
 * Changing account access
 
-With the right license in hand, you're set up for a smooth and successful experience using Snyk.
+With the right license in hand, you are set up for a smooth and successful experience using Snyk.
 
 {% hint style="info" %}
 Most importantly, your account manager can confirm your Snyk license has been applied to an environment, has the correct naming, and is ready to be implemented.
 {% endhint %}
+

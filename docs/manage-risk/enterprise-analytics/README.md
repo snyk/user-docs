@@ -39,5 +39,3 @@ The following table presents an overview of the features available for both Ente
 | <ul><li>Data filtered by default on critical and high-severity issues.</li><li>Drill-downs surface issues according to the way they were introduced:</li><li>Issues framework: categorized based on Exposure, Manage, Prevention, and Coverage.</li></ul> | <ul><li>Data filtered based on assets, applications, and code owners (teams).</li><li>Helps you to identify and take action on risk, coverage gaps, and association gaps.</li><li>Asset class view</li><li>Application and owner view</li><li>Surface coverage gap</li><li>Comparison and prioritization</li></ul> |
 
 Note: The specific features and availability of both products may vary as they continue to evolve. For the latest information, refer to the respective product documentation.
-
-\\

@@ -3,7 +3,7 @@
 {% hint style="info" %}
 The Asset Dashboard menu option is available only for Snyk AppRisk Essentials users.&#x20;
 
-If you are using Snyk AppRisk Pro, navigate to the [Application Analytics ](../analytics/aspm-analytics/application-analytics.md)page.
+If you are using Snyk AppRisk Pro, navigate to the [Application Analytics ](../enterprise-analytics/aspm-analytics/application-analytics.md)page.
 {% endhint %}
 
 ## Overview

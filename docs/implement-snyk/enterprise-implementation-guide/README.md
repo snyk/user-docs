@@ -10,12 +10,22 @@ The guide starts by recognizing that most businesses:
 {% hint style="info" %}
 There are **typical timelines for implementation** depending on the size and scope of your business.
 
-If your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using a Git integration and the [API Import Tool](../../snyk-api/snyk-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md) sections for details of this type of process
+If your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using a Git integration and the [API Import Tool](../../snyk-api/snyk-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md) sections for details of this type of process.
 
 However, for larger, more process-oriented enterprises, the implementation process may take weeks or months and it requires more detailed planning to succeed.&#x20;
 {% endhint %}
 
-If you want to enable the Application Security Posture Management for all your used products, you can use the [Snyk AppRisk Implementation Guide](../../manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/).
+The Snyk AppRisk Essentials plan is included in the Snyk Enterprise plan, meanng that you will gain access to the following features:
+
+* [Coverage control](../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/coverage-and-coverage-gap-policies.md) for SCM.
+* [Policy](../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/) creation to automatically trigger specific actions.
+* [Backstage file](../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/backstage-file-for-scm-integrations.md) customization for SCM integrations.
+* [Customized analytics](../../manage-risk/enterprise-analytics/) and reports about the application.&#x20;
+
+{% hint style="info" %}
+If you want to upgrade your plan to Snyk AppRisk Pro, please contact your salesperson. \
+On the [Snyk AppRisk Essentials vs Snyk AppRisk Pro ](../../manage-risk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md)page, you can find more details about the features available for both offerings.
+{% endhint %}
 
 ## Implementation strategy overview
 

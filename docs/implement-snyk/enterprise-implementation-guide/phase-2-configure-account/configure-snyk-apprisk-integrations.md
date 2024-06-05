@@ -1,4 +1,18 @@
-# Level 1: Configure Snyk AppRisk and setup integrations
+# Configure Snyk AppRisk Integrations
+
+{% hint style="info" %}
+Snyk AppRisk Essentials is included in your Snyk Enterprise plan.&#x20;
+{% endhint %}
+
+## Prerequisites for Snyk AppRisk Essentials
+
+Ensure that you meet the following prerequisites before setting up Snyk AppRisk Essentials:
+
+* You are a Group Administrator for the Group associated with Snyk AppRisk, or you are assigned a Group level role with permissions to View Group and Edit AppRisk.
+* The Group associated with Snyk AppRisk includes organizations that have onboarded Snyk application security products.
+* You have the necessary permissions and authority to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk AppRisk for repository asset discovery.
+
+## Configure Snyk AppRisk and setup SCM integrations
 
 Start onboarding AppRisk by identifying all inventory code-based assets and detecting which assets have security controls set up.
 
@@ -15,26 +29,28 @@ You can access Snyk AppRisk from the [Snyk Web UI.](../../../getting-started/sny
 After you ensure you can correctly access Snyk AppRisk, you can start to build your asset inventory by setting up the integrations.
 
 {% hint style="info" %}
-Snyk scan information is automatically imported within two hours after enabling Snyk AppRisk.&#x20;
+The scanned information is automatically imported within two hours after enabling all features.&#x20;
 {% endhint %}
 
-You can access and configure the integrations from the Integrations view. Select the Integration Hub option to see the list of all available integrations. You can find more details about integration configuration in the [Using the Integration Hub](../integrations-for-snyk-apprisk/#using-the-integration-hub) section.
+You can access and configure the integrations from the Integrations view. Select the Integration Hub option to see the list of all available integrations. You can find more details about integration configuration in the [Using the Integration Hub](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/#using-the-integration-hub) section.
 
-The default display in the Integrations view includes the configured Snyk integrations. The status of each integration, **Connected**, or **Not connected**, depends on the specific content imported into Snyk.
+The default display in the Integrations view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../integrations-for-snyk-apprisk/customize-an-integration.md) or [connect a new SCM integration](../integrations-for-snyk-apprisk/connect-an-scm-integration.md).
+The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/customize-an-integration.md) or [connect a new SCM integration](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration.md).
 
 <figure><img src="../../../.gitbook/assets/image (357) (1).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk AppRisk - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
 
-After you click on the Integration Hub, a list of the available integrations is displayed. You can add one or multiple profiles, for each integration.&#x20;
+After you click on the Integration Hub, a list of the available integrations is displayed. For each integration, you can add one or multiple profiles.&#x20;
 
 ### SCM integrations
 
-Use the Snyk AppRisk Integrations Hub to configure your SCM integrations. Note that this is a distinct integration interface dedicated to Snyk AppRisk, separate from the Organization integrations interface.
+Use the Snyk AppRisk Integrations Hub to configure your SCM integrations.&#x20;
 
-In each Snyk Organization, administrators have the capability to provide tokens with limited access to the applications utilized by developers.
+{% hint style="info" %}
+Integration Hub is a distinct integration interface dedicated to Snyk AppRisk, separate from the Organization integrations interface.
+{% endhint %}
 
-The scope of the token used in Snyk AppRisk is to provide an overview of the existing assets compared to what is imported into Snyk.
+The integrations at the organization level that facilitate Snyk Code, Snyk Open Source, Snyk Container, and Snyk IaC scanning are typicallly maintained or restricted by or for development. When you set a token at the group level integrations screen, it is intended for security to have a comprehensive view. This token provides broad access to all repositories that developers may not have access to. In a way, you are checking if the security perspective on assets aligns with that of the development teams.
 
 The supported SCM integrations are:
 
@@ -43,7 +59,7 @@ The supported SCM integrations are:
 * Azure DevOps (Azure Repos)
 * BitBucket
 
-Navigate to the [Connect an SCM integration](../integrations-for-snyk-apprisk/connect-an-scm-integration.md) page for more details about the supported SCM integrations.
+Navigate to the [Connect an SCM integration](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration.md) page for more details about the supported SCM integrations.
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
@@ -64,7 +80,11 @@ Navigate to the [Snyk Broker - AppRisk](../../../enterprise-configuration/snyk-b
 
 ### Third-party integrations
 
-To set up your third-party integrations, you can utilize the Snyk AppRisk Integrations Hub. It's important to mention that this is a distinct integration interface solely dedicated to Snyk AppRisk, separate from the Organization integrations interface. \
+{% hint style="info" %}
+The third-party integrations are mostly available only for Snyk AppRisk Pro. As a Snyk AppRisk Essentials user, you can use the third-party integrations marked as available for Snyk AppRisk Essentials, too.
+{% endhint %}
+
+To set up your third-party integrations, you can use the Snyk AppRisk Integrations Hub. \
 \
 In each Snyk Organization, administrators can give out tokens that provide restricted access to the applications utilized by developers. \
 \
@@ -85,25 +105,30 @@ Backstage is a service catalog that allows users to add metadata or annotations 
 
 You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
 
-Access the [Backstage file for SCM Integrations](../integrations-for-snyk-apprisk/backstage-file-for-scm-integrations.md) docs for more details about how to use this feature.
+Access the [Backstage file for SCM Integrations](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/backstage-file-for-scm-integrations.md) docs for more details about how to use this feature.
+
+{% hint style="info" %}
+After setting up all the Snyk AppRisk integrations, depending on the number of repositories, results may take up to a day to appear.
+{% endhint %}
 
 ## Features
 
 The Snyk AppRisk functionality is split across several menu options from the Group level.&#x20;
 
-* [Dashboard](../dashboard-for-snyk-apprisk.md)
-* [Inventory](../inventory-for-snyk-apprisk/)
-* [Policies](../policies-for-snyk-apprisk/)
-* [Integrations](../integrations-for-snyk-apprisk/)
+* [Dashboard](../../../manage-risk/snyk-apprisk/dashboard-for-snyk-apprisk.md)
+* [Inventory](../../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/)
+* [Policies](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/)
+* [Integrations](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/)
+* [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 
 #### Inventory view
 
 The Inventory feature is structured in four sections, each focused on a specific area:
 
-* **Code assets**: provides a list of all your repository assets and package assets found in the repository. Navigate to the [Inventory capabilities](../inventory-for-snyk-apprisk/inventory-capabilities.md) page for a detailed overview of all options available in the Code assets view and to the [Filters capabilities](../inventory-for-snyk-apprisk/search-and-filter-capabilities.md#filters-capabilities) page for more details about the filtering options and how to use them.
-* **Organization teams**: provides a list of the repository assets grouped by teams. Note that only SCM organizations with teams and repositories assigned to a team, appear on this layout.
+* **Code assets**: provides a list of all your repository assets and package assets found in the repository. Navigate to the [Inventory capabilities](../../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/inventory-capabilities.md) page for a detailed overview of all options available in the Code assets view and to the [Filters capabilities](../../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/search-and-filter-capabilities.md#filters-capabilities) page for more details about the filtering options and how to use them.
+* **Organization teams**: provides a list of the repository assets grouped by teams. Note that only SCM organizations with teams and repositories assigned to a team appear on this layout.
 * **Technology**: provides a list of the repository assets grouped by technology, as detected and tagged by Snyk AppRisk.
-* **Type**: provides a list off all the discovered assets, grouped by their type.
+* **Type**: lists all the discovered assets, grouped by their type.
 
 If you are using Snyk AppRisk for the first time, Snyk recommends you to first use the Coverage filter to determine where you currently have Snyk implemented. Then, you can use the Coverage Gap filter to identify the assets that do not meet the coverage requirements set in a **Set coverage control** policy.
 
@@ -126,11 +151,11 @@ You can use tags to categorize the assets. You can use tags in multiple ways:
 BitBucket cannot automatically detect the language used in the source code from the repositories. In Snyk AppRisk you can see only the language tags that have been manually added for BitBucket. For more information, see the official documentation provided by BitBucket.
 {% endhint %}
 
-* User-defined tags: you can set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies ](../policies-for-snyk-apprisk/create-policies.md)page for more details.&#x20;
+* User-defined tags: you can set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies ](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/create-policies.md)page for more details.&#x20;
 
 #### Dashboard
 
-You can use the dashboard for a quick overview of your application and security controls. Use the default widgets and customize the displayed information as needed, or add new widgets that meet your needs. See the [Dashboard for Snyk AppRisk](../dashboard-for-snyk-apprisk.md) page for more details.
+You can use the dashboard for a quick overview of your application and security controls. Use the default widgets and customize the displayed information as needed, or add new widgets that meet your needs. See the [Dashboard for Snyk AppRisk](../../../manage-risk/snyk-apprisk/dashboard-for-snyk-apprisk.md) page for more details.
 
 Here are the available dashboard widgets:
 
@@ -150,6 +175,8 @@ The SCA coverage widget uses an OR statement, meaning that a repository is cover
 * **Technology breakdown**: check the top technology (language) tags of the repositories that Snyk discovered.
 * **Asset breakdown by type**: check if the asset is a repository or a package.
 * **Repository activity**: check if the repository is active, inactive, or dormant.
+
+
 
 
 

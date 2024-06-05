@@ -62,6 +62,8 @@ To disable gating initially, use the daily monitoring that is automatically conf
 
 &#x20;Similarly, you may want to disable fix and upgrade PR features.
 
+[Snyk AppRisk integrations](../configure-snyk-apprisk-integrations.md#setup-integrations) require additional setup and configuration using the Integration Hub option from the Snyk Web UI, Snyk AppRisk menu.
+
 ### CI/CD (Build Pipelines)
 
 Keep your applications secure by preventing deployment of vulnerable applications or components (registries), by adding Snyk in the build as a step of the pipeline.

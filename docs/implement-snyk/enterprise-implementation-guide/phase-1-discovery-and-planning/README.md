@@ -9,7 +9,7 @@
 * [Decide SSO access](decide-sso-access.md): Identify initial Single Sign-On (SSO) settings.
 * [Plan for success](plan-for-success.md): Decide how to judge the success of your rollout.
 * [Choose rollout integrations](choose-rollout-integrations.md): Decide which integrations to implement initially.
-* [Create rollout plan](create-rollout-plan.md): Create your high-level plan for rolling out Snyk in your business.
+* [Create rollout plan](create-rollout-plan.md): Create a high-level plan for rolling out Snyk in your business.
 
 ## General pre-rollout questions
 
@@ -49,3 +49,15 @@ How will you provision users and integrate Snyk with your platforms?
 * What KPIs will be tracked?
 * How will you know you’re making progress?
 * Are there key development projects that progress tracking should be aligned with, or at least included, to measure progress against?
+
+## Snyk AppRisk considerations
+
+Snyk AppRisk Essentials is part of the Snyk Enterprise offering, and it provides discovery and visibility for your application assets and security tool coverage.&#x20;
+
+When or before you are using Snyk AppRisk, you should consider the following items:
+
+* Who would want coverage visibility or is accountable if an important application is not being monitored by security tools?
+* Who would you notify, using automated policies, if a repository was missing coverage by a security tool?
+* Are you using [Backstage](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/backstage-file-for-scm-integrations.md), and are there fields that might be valuable in automating policies with Snyk AppRisk?
+  * Is it possible to categorize important applications in Git or CMDB (ServiceNow) using topics or fields, such as a PCI topic or tag? Would this also reduce noise about test applications and internal applications by implementing an internal tag, topic, or naming convention?&#x20;
+* Read the available examples of [common policies](broken-reference) that can be created using Snyk AppRisk.&#x20;
