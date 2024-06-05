@@ -40,7 +40,7 @@ The Risk Factor column and filter, and with it, the evidence graph information, 
 
 **Issues page - Snyk AppRisk Essentials**
 
-<figure><img src="https://lh7-us.googleusercontent.com/slidesz/AGV_vUcyf0HJ_jkCiIpzbnU8U-V78pQR-cCnvoV7Tt-yVyVX2E0qHnRDOSXib3VuxEckHCs4GddkBaX8jFOUO6V_KCCYpc3xKG_GzNlniu4RB0le_u827rxZTzHGVceDwAE-bt_o65kLupcWApHVxZukBpjubfLCH30=s2048?key=Gj5HkPyGfrq_qi6vJJiWGw" alt="Issues page - Snyk AppRisk Essentials"><figcaption><p>Issues page - Snyk AppRisk Essentials</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/issues-apprisk-essentials.png" alt="Issues page - Snyk AppRisk Essentials"><figcaption><p>Issues page - Snyk AppRisk Essentials</p></figcaption></figure>
 
 **Issues page - Snyk AppRisk Pro**
 
