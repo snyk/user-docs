@@ -21,7 +21,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Self-hosted Git**](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md): Not available.
 * [**Private Registry Integrations**](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/): Not available.
 * [**Snyk AppRisk Inventory**](../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/): Not available
-* [**Snyk AppRisk Issue page**](../../manage-risk/prioritize-issues-for-fixing/): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.
+* [**Snyk AppRisk Issue page**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.
 
 {% hint style="info" %}
 Need more help? [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).

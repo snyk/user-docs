@@ -15,7 +15,7 @@ The [Snyk risk-based prioritization](../../../manage-risk/prioritize-issues-for-
 
 The goal of Snyk Risk-based prioritization is to provide application context to your Open Source, Code, and Container issues by understanding how your application is deployed and configured. This enables you to prioritize your issues based on the risk they are posing to your application.
 
-See the [How risk-based prioritization works](../../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/) page, with focus on the [Assets](broken-reference) and [Risk factors](broken-reference) pages, for more details and a better understanding of the core concepts.
+See the [How risk-based prioritization works](../../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/) page, with focus on the [Assets](../../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#assets) and [Risk factors](../../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) pages, for more details and a better understanding of the core concepts.
 
 The purpose of this level is to provide context to your Snyk Container issues or vulnerabilities. After you deploy the Kubernetes connector to your cluster, you will be able to identify if a Container is Deployed and Public Facing, allowing you to prioritize your container vulnerabilities.
 
