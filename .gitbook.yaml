@@ -90,4 +90,4 @@ redirects:
   more-info/disclosing-vulnerabilities/disclose-a-vulnerability-in-snyk-services: working-with-snyk/reporting-security-issues.md
   manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk: manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md
   manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk: implement-snyk/enterprise-implementation-guide/README.md
-  manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/level-1-configure-snyk-apprisk-and-setup-integrations: implement-snyk/enterprise-implementation-guide/phase-2-configure-account/configure-snyk-apprisk-integrations/README.md  
+  manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/level-1-configure-snyk-apprisk-and-setup-integrations: implement-snyk/enterprise-implementation-guide/phase-2-configure-account/configure-snyk-apprisk-integrations.md  
