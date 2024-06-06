@@ -24,24 +24,17 @@ This page explains supported environments, support, and giving feedback and prov
 * Third-party[ dependency scanning (SCA, Snyk Open Source)](https://docs.snyk.io/ide-tools/eclipse-plugin/third-party-dependency-scanning-sca-snyk-open-source)
 * [Troubleshooting for the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/troubleshooting-for-the-eclipse-plugin)
 
-## Where you can download the Eclipse plugin
+## Supported operating systems and architecture
 
-* **Eclipse Marketplace (recommended)**: [https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations)
-* Preview update site (CI/CD, on commit): [https://static.snyk.io/eclipse/preview](https://static.snyk.io/eclipse/preview)
-* Stable update site (weekly): [https://static.snyk.io/eclipse/stable](https://static.snyk.io/eclipse/stable)
-* Manual downloads: [https://github.com/snyk/snyk-eclipse-plugin/releases](https://github.com/snyk/snyk-eclipse-plugin/releases)
+{% hint style="warning" %}
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+{% endhint %}
 
-**Signing Information for Jars**
+You can use the Eclipse plugin in the following environments:
 
-If you want to verify the correct provenance of your download, verify the signing details from the Eclipse dialog using this data.
-
-<figure><img src="../../../.gitbook/assets/image (134) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="The signing key details to verify the integrity and origin of the download plugin"><figcaption><p>The signing key details to verify the integrity and origin of the download plugin</p></figcaption></figure>
-
-The plugin runs on
-
-* macOS
-* Linux
-* Windows
+* Linux: AMD64 and ARM64
+* Windows: 386 and AMD64
+* MacOS: AMD64 and ARM64
 
 ## Versions of the plugin supported in Eclipse
 
@@ -59,13 +52,18 @@ The latest plugin version may not be supported in all Eclipse versions. Thus, if
 * For Snyk Code, the Eclipse plugin supports the languages and frameworks supported by Snyk Code. For more information, see [Supported languages, frameworks, and feature availability overview, Snyk Code section](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code).
 * For Snyk IaC, the Eclipse plugin supports the following IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager.
 
-## Supported operating systems and architecture
+## Where you can download the Eclipse plugin
 
-You can use the Eclipse plugin in the following environments:
+* **Eclipse Marketplace (recommended)**: [https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations)
+* Preview update site (CI/CD, on commit): [https://static.snyk.io/eclipse/preview](https://static.snyk.io/eclipse/preview)
+* Stable update site (weekly): [https://static.snyk.io/eclipse/stable](https://static.snyk.io/eclipse/stable)
+* Manual downloads: [https://github.com/snyk/snyk-eclipse-plugin/releases](https://github.com/snyk/snyk-eclipse-plugin/releases)
 
-* Linux: AMD64 and ARM64
-* Windows: 386 and AMD64
-* MacOS: AMD64 and ARM64
+**Signing Information for Jars**
+
+If you want to verify the correct provenance of your download, verify the signing details from the Eclipse dialog using this data.
+
+<figure><img src="../../../.gitbook/assets/image (134) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="The signing key details to verify the integrity and origin of the download plugin"><figcaption><p>The signing key details to verify the integrity and origin of the download plugin</p></figcaption></figure>
 
 ## How to install the Snyk Eclipse plugin
 
