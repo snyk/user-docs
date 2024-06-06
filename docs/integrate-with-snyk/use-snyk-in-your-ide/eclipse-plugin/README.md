@@ -26,10 +26,6 @@ This page explains supported environments, support, and giving feedback and prov
 
 ## Supported operating systems and architecture
 
-{% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
-{% endhint %}
-
 You can use the Eclipse plugin in the following environments:
 
 * Linux: AMD64 and ARM64
