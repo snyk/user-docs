@@ -18,29 +18,25 @@ The Custom Base Image Recommendation feature allows Snyk to recommend an image u
 
 ## How CBIR works
 
-To use the Custom Base Image Recommendations feature, the base images, as well as the application images built on top of a base image, must be imported to Snyk as Projects. These Projects can be in different organizations, but they must belong to the same Group.
+To use the Custom Base Image Recommendations feature, the base images, as well as the application images built on top of a base image, must be imported to Snyk as Projects. These Projects can be in different Organizations, but these Organizations must belong to the same Group.
 
 To receive custom base image recommendations for an application image, you must specify a Dockerfile in the Project for the application image.
 
 {% hint style="info" %}
-As opposed to public Docker Official Images, Snyk can only detect a custom base image when a Dockerfile is linked to the application image Project.
+As opposed to public Docker Official Images, Snyk can detect a custom base image only when a Dockerfile is linked to the application image Project.
 {% endhint %}
 
 All custom base image recommendations are considered minor upgrades, regardless of the image tag.
 
-To determine the latest version of a base image across Projects imported for the same repository, Snyk allows configuring a [versioning schema](versioning-schema-for-custom-base-images.md).
+To determine the latest version of a base image across Projects imported into the same repository, Snyk allows configuring a [versioning schema](versioning-schema-for-custom-base-images.md).
 
 Custom base image recommendation supports Automatic fix PRs. If you are not using the latest version of the base image, then immediately after image import, Snyk automatically issues a fix pull request against your Dockerfile to upgrade to the latest available custom base image version.
 
-## **Enable CBIR**
+## **Enable CBIR:** configure an image as a custom base image
 
-The following steps describe how to configure custom base images.
+The following steps explain how to configure custom base images. The team that is responsible for creating and maintaining custom base images for the Organization performs these steps.
 
-### Configure an image as a custom base image
-
-The team that is responsible for creating and maintaining custom base images for the Organization performs this step.
-
-#### Build and import a base image
+### Build and import a base image
 
 1. Build a custom base image.
 2. Import the image to a Snyk Project using one of the following options:
@@ -50,18 +46,18 @@ The team that is responsible for creating and maintaining custom base images for
      * Example of a Snyk CLI command: \
        `snyk container monitor somecompany/base-python:3.9.2_2021110408 --project-name=base-python:3.9.2_2021110408 --org=ORGANIZATION_ID/ORGANIZATION_NAME`
 
-#### Mark the created Project as a custom base image
+### Mark the created Project as a custom base image
 
-{% hint style="info" %}
-You can also do this through the [Snyk REST API](https://apidocs.snyk.io/#tag--Custom-Base-Images).
-{% endhint %}
-
-1. From the Web UI, open the Project of the imported base image.
+1. From the Web UI, open the Project with the imported base image.
 2. On the Project page, navigate to **Settings**.
 3. Enable **Custom Base Image**. This allows Snyk to recognize this image as a base image in other Projects.
 4. If you want Snyk to use this image as a source to determine the best upgrade path, enable **Include in recommendations**.
 
-<figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt="Enable Custom Base Image recommendation"><figcaption><p>Enable Custom Base Image recommendation</p></figcaption></figure>
+{% hint style="info" %}
+You can also do this using the Snyk REST API endpoint [Create a Custom Base Image from an existing container Project](https://apidocs.snyk.io/?#post-/custom\_base\_images).
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt="Enable Custom Base Image"><figcaption><p>Enable Custom Base Image</p></figcaption></figure>
 
 5. Click **Save changes**.
 
@@ -73,7 +69,7 @@ Any changes you make to the versioning schema apply to all custom base images in
 
 You can also edit the **Custom base Image** settings for Projects that you have already marked as custom base images.
 
-### Receive custom base image recommendations
+## Receive custom base image recommendations
 
 The applications team responsible for using pre-built custom base images and adding additional layers on top of the pre-built images for their applications performs this step.
 
@@ -83,7 +79,7 @@ First, import an image to a new Snyk Project. Ensure that the Project is in the 
 If the same image is scanned from both the CLI and Web UI, Snyk creates two Projects and monitors both.
 {% endhint %}
 
-#### Import a new image through the CLI and set the Dockerfile
+### Import a new image through the CLI and set the Dockerfile
 
 Here is an example command for importing an image through the CLI:
 
@@ -91,7 +87,7 @@ Here is an example command for importing an image through the CLI:
 
 Use `--file` (mandatory) to specify the path to the Dockerfile.
 
-#### Use a previously imported image and set the Dockerfile
+### Use a previously imported image and set the Dockerfile
 
 You can modify previously imported container Projects in order to attach a Dockerfile.
 
@@ -103,7 +99,7 @@ Choose the Dockerfile repository and add the path to your Dockerfile. Click **Up
 
 <figure><img src="https://lh5.googleusercontent.com/4cyspvfpv1ZA-4rmhU7DzngLigf8c6rgEu5d7wHiiy7QMbIHy8Qw6qqS0VLEAEYpAfBADISvvQAyCkGqeoBgKxexDxzVPBJvNzB44MSvBzGlPd0NNuWrZyv_73NggOYlSjZCER0z" alt="Configure the path to your Dockerfile"><figcaption><p>Configure the path to your Dockerfile</p></figcaption></figure>
 
-#### See Custom Base Image Recommendations
+### View Custom Base Image Recommendations
 
 Next, navigate to the **Project** page to see the recommendations for the image.
 
