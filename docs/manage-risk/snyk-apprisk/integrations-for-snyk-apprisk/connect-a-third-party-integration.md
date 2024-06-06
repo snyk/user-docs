@@ -295,6 +295,12 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 
 ## ServiceNow CMDB setup guide
 
+{% hint style="warning" %}
+**Release status**
+
+The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
+{% endhint %}
+
 ### Required Parameters <a href="#servicenow-cmdb-required-parameters" id="servicenow-cmdb-required-parameters"></a>
 
 1. Setup the host instance for the ServiceNow CMDB by following this example `https://<INSTANCE_NAME>.service-now.com`.
