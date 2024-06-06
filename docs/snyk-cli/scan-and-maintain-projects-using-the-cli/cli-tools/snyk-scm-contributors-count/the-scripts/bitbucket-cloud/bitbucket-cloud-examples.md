@@ -84,7 +84,6 @@ Consider the following levels of usage and options:
 *   To run in debug mode for verbose output, prefix with `DEBUG=snyk*`:
 
     ```
-    DEBUG=snyk* snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1 --repo Repo1 --exclusionFilePath PATH_TO_FILE --skipSnykMonitoredRepos --jsonTo learn more about how to create a service account, refer to 
-    How to set up a service account
+    DEBUG=snyk* snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1 --repo Repo1 --exclusionFilePath PATH_TO_FILE --skipSnykMonitoredRepos --json
     .
     ```
