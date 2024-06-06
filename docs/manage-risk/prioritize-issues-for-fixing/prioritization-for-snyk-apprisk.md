@@ -24,7 +24,7 @@ The Snyk approach looks holistically at your application to understand the follo
 * Where the image was deployed
 * How the supporting Kubernetes and cloud infrastructure is configured
 
-The following video explains the initial steps of setting up your prioritization with Insights for Snyk AppRisk:
+The following video explains the initial steps of setting up your prioritization with Issues for Snyk AppRisk:
 
 {% embed url="https://youtu.be/xnSUFsDzlMg" %}
 Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
@@ -51,3 +51,9 @@ Issues prioritization for Snyk AppRisk Pro works as illustrated in the following
 * Snyk Open Source has identified a high-severity Remote Code Exploit (RCE).&#x20;
 * That RCE is built into a container image, which is deployed onto a production Kubernetes cluster, and the running container is configured to have access to the internet.&#x20;
 * The combination of an RCE in a running image with internet access enables Snyk to determine that this particular vulnerability poses more risk to your application than an RCE that is not deployed.
+
+The following video explains the initial steps of setting up your prioritization with Issues insights for Snyk AppRisk Pro:
+
+{% embed url="https://youtu.be/wGbcsSDDZE8" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
+{% endembed %}
