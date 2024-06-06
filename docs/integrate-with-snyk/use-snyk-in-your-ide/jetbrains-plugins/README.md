@@ -57,10 +57,6 @@ You can use the Snyk JetBrains plugin in the following environments:
 * Windows: 386, AMD64, and ARM64
 * MacOS: AMD64 and ARM64
 
-{% hint style="warning" %}
-Snyk Plugins are not supported on any Operating System that has reached End Of Life (EOL) from the distributor.
-{% endhint %}
-
 ## **Install the JetBrains plugin**
 
 The Snyk JetBrains plugin is available for installation on the [JetBrains marketplace](https://plugins.jetbrains.com/plugin/10972-snyk-vulnerability-scanner).
