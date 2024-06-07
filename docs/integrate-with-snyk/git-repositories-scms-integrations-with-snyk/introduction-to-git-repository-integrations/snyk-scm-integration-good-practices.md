@@ -168,7 +168,7 @@ Ask your developers to consider the merge advice label that appears on the auto 
 Snyk auto fix PRs are generated only for new issues.
 {% endhint %}
 
-If your SCM is GitHub and you are not using Snyk Broker, then by default, Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for details.
+If your SCM is GitHub and you are not using Snyk Broker, then by default, Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](../../../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for details.
 
 ## Stage 6 - Dependency Upgrade PRs
 
