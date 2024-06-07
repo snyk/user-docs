@@ -28,4 +28,4 @@ Alternatively, you can add an [SCM integration](../../../snyk-scm-ide-and-ci-cd-
 
 If you are using a proxy, see [Proxy configuration for Snyk CLI](../../configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md).
 
-For IaC scans specifically, you must also whitelist the \*.snyk.io address, as explained[ ](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)on the page [How can we whitelist Snyk IP addresses?](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)
+For IaC scans specifically, you must also whitelist the \*.snyk.io address, as explained[ ](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)on the page [How can we allowlist Snyk IP addresses](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-allowlist-Snyk-IP-addresses)?
