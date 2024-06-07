@@ -186,6 +186,8 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### [Create a Custom Base Image from an existing container project](https://apidocs.snyk.io/?#post-/custom\_base\_images)
 
+**More information:** [Use Custom Base Image Recommendations: Mark the created Project as a custom base image](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations#mark-the-created-project-as-a-custom-base-image)
+
 ### [Get a custom base image](https://apidocs.snyk.io/?#get-/custom\_base\_images/-custombaseimage\_id-)
 
 ### [Delete a custom base image](https://apidocs.snyk.io/?#delete-/custom\_base\_images/-custombaseimage\_id-)
