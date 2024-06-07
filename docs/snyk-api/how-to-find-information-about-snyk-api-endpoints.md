@@ -182,6 +182,8 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## Custom Base Images
 
+**More information:** [Use Custom Base Image Recommendations](../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/)
+
 ### [Get a custom base image collection](https://apidocs.snyk.io/?#get-/custom\_base\_images)
 
 ### [Create a Custom Base Image from an existing container project](https://apidocs.snyk.io/?#post-/custom\_base\_images)
