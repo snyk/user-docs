@@ -18,6 +18,8 @@ Cloud-native solutions are deterministic in how network connectivity is configur
 Issues prioritization currently supports the following configurations: Kubernetes services and ingress, and Gloo.
 {% endhint %}
 
+Kubernetes Connector checks the images for ingress configuration. If not detected, the image is considered public facing.
+
 ## Kubernetes Connector integration
 
 The Public facing risk factor can be applied to your Kubernetes Connector integrations.&#x20;
