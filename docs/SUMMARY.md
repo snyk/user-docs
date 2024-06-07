@@ -236,7 +236,7 @@
   * [Snyk SCM Integrations](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/README.md)
     * [Introduction to Git repositories integrations](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/README.md)
       * [Using GitHub or GitHub Enterprise integration](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md)
-      * [Snyk Git repositories: deployment recommendations](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md)
+      * [Deployment recommendations for SCM integrations](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/deployment-recommendations-for-scm-integrations.md)
       * [Git repository cloning for SCM integrations](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations.md)
     * [Snyk GitHub Enterprise integration](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md)
     * [Snyk GitHub integration](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-integration.md)

@@ -19,7 +19,7 @@ As well as how to access Snyk functionality in your developer workflow:
 Enterprise plan users have base-level access to all of the above functionality. Free and Team plan users do not have access to the Snyk API or Snyk AppRisk. See [Plans and pricing](https://snyk.io/plans/) for more information.
 {% endhint %}
 
-If you are an Enterprise customer, see [Choose rollout integrations](../implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations.md) in the Enterprise implementation guide for tips and considerations on import strategies.
+If you are an Enterprise customer, see [Choose rollout integrations](../implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations.md) in the Enterprise implementation guide for tips and considerations on import strategies. We then suggest reading through our [Deployment recommendations](./#deployment-recommendations-for-git-integrations), so you have the smoothest rollout for your teams.
 
 ## SCM integrations
 
@@ -61,3 +61,10 @@ Snyk offers the following IDEs:
 * [Visual Studio Code](use-snyk-in-your-ide/visual-studio-code-extension/)
 * [Snyk Language Server](use-snyk-in-your-ide/snyk-language-server.md)
 
+## Deployment recommendations for SCM integrations
+
+If you try to implement all the SCM integration features at the same time, you risk causing friction in your software development life cycle ([SDLC](https://snyk.io/learn/secure-sdlc/)), which in turn leads to a poor developer experience.
+
+To ensure a smooth rollout of Snyk across your organization, Snyk provides a suggested deployment timeline consisting of deployment stages, configuration steps, and the desired outcome for each stage.
+
+For detailed steps, see [Deployment recommendations for SCM integrations](./#deployment-recommendations-for-git-integrations).

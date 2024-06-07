@@ -28,7 +28,7 @@ Use Git repository integrations to Improve the security of your code and deploye
 * More friendly experience for developers.
 * Does not take resources from your CI/CD pipeline.
 
-For more details, see [Snyk Git repository integration: deployment recommendations](git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md).
+For more details, see [Snyk Git repository integration: deployment recommendations](git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/deployment-recommendations-for-scm-integrations.md).
 
 ### CI/CD
 
