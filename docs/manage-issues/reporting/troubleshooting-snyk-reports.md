@@ -5,7 +5,7 @@
 If reporting is not loading in the Snyk UI, follow these troubleshooting steps that may help resolve the issue.
 
 {% hint style="info" %}
-Whitelisting may be necessary due to some firewall settings. If whitelisting snyk.io was required for the initial implementation, additional whitelisting may be needed for new reporting access. Contact your account team for more information.
+Allowlisting may be necessary due to some firewall settings. If allowlisting snyk.io was required for the initial implementation, additional allowlisting may be needed for new reporting access. Contact your account team for more information.
 {% endhint %}
 
 If you still have issues accessing the new reporting after using these troubleshooting tips, [submit a ticket](https://support.snyk.io/hc/en-us/requests/new) to Snyk support.
@@ -28,15 +28,13 @@ Historical data for Snyk Code issue reports entered General Availability (GA) in
 
 ## Data freshness
 
-Data is available in reporting approximately one hour after a scan occurs. Data refreshes hourly and should therefore always be updated within two hours. Note the exception for ignores that follows.
+Data is available in reporting approximately one hour after a scan occurs. Data refreshes hourly and should, therefore, always be updated within two hours. Note the exception for ignores that follows.
 
 ## Ignores in reporting
 
-After a Project rescan, issues that are ignored are reflected in reporting and the rest of the Snyk platform, including APIs. &#x20;
+After a Project rescan, issues that are ignored are reflected in reporting and the rest of the Snyk platform, including APIs. Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. This does not apply to an ignore in a `.snyk` file.
 
-Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. For information about Project test frequency, see [Project Settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md).
-
-This does not apply to an ignore in a `.snyk` file.
+For information about Project test frequency, see [Project Settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md).
 
 ## Known limitations
 
