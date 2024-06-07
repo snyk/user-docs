@@ -28,7 +28,7 @@ A system that takes the source code and builds the deployable application (such 
 
 ### CI/CD
 
-Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../integrate-with-snyk/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
+Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../snyk-scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
 
 ### **Class (Snyk AppRisk)**
 
@@ -59,7 +59,7 @@ One or more files that, when instantiated by a container engine or runtime, prov
 
 A server that provides a mechanism to store and retrieve container images.
 
-### **Controls (Snyk AppRisk)**&#x20;
+### **Controls (Snyk AppRisk)**
 
 The security controls associated with the asset. Navigate to the Snyk AppRisk Controls section to see all available statuses for security controls.
 
@@ -226,7 +226,7 @@ See [license policy](glossary.md#license-policy), [security policy](glossary.md#
 
 ### **Policy (Snyk AppRisk)**
 
-&#x20;A way to automate actions in certain conditions, like classifying and tagging assets with business context. You can also use a policy to configure actions like sending a message or setting the coverage gap control using a Policy builder UI.
+A way to automate actions in certain conditions, like classifying and tagging assets with business context. You can also use a policy to configure actions like sending a message or setting the coverage gap control using a Policy builder UI.
 
 ### PR
 
@@ -290,7 +290,7 @@ Software Composition Analysis. A technology that is used to identify open-source
 
 ### SCM
 
-Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/).
+Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/).
 
 ### SDLC
 
@@ -330,7 +330,7 @@ Snyk Apps are the modern and preferred way to build integrations with Snyk, expo
 
 ### Snyk Broker
 
-A client/server system that serves as an agent or proxy, allowing Snyk to scan private customer environments: Jira, code repositories, or container registries. Snyk Broker relays messages and allows users to filter which messages are allowed through,  for example, allowing users to expose only some GitHub APIs to Snyk. See [Snyk Broker](../enterprise-configuration/snyk-broker/).
+A client/server system that serves as an agent or proxy, allowing Snyk to scan private customer environments: Jira, code repositories, or container registries. Snyk Broker relays messages and allows users to filter which messages are allowed through, for example, allowing users to expose only some GitHub APIs to Snyk. See [Snyk Broker](../enterprise-configuration/snyk-broker/).
 
 ### Snyk CLI
 
@@ -367,7 +367,7 @@ The browser-based environment that provides users access to Snyk functions. See 
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed on X (formerly known as Twitter). See  [Vulnerabilities with Social Trends](../manage-risk/prioritize-issues-for-fixing/vulnerabilities-with-social-trends.md).
+Snyk shows a Trending banner on issues that are being actively discussed on X (formerly known as Twitter). See [Vulnerabilities with Social Trends](../manage-risk/prioritize-issues-for-fixing/vulnerabilities-with-social-trends.md).
 
 ### Source
 

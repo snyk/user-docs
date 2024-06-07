@@ -160,7 +160,7 @@ Operations that are not triggered via the Snyk Web UI, such as daily and weekly 
 For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
 
 {% hint style="info" %}
-A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](../../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
+A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
 
 Note that Snyk will continue to use a random Snyk Organization member's GitHub account to perform all the other operations. Therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
 {% endhint %}

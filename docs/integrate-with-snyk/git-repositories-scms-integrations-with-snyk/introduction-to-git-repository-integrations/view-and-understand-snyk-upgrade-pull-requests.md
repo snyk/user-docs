@@ -1,4 +1,4 @@
-# View and understand Snyk upgrade pull requests
+# View and understand Snyk upgrade pull requests for integrations
 
 In addition to fix advice, Snyk can automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results. Snyk currently supports this feature for npm, Yarn, Maven-Central, NuGet (C#), Pip and PyPI (Python), and Bundler (Ruby) Projects through GitHub, GitHub Enterprise Server, BitBucket Cloud, GitLab, and Azure repos.
 

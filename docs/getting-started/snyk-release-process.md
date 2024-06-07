@@ -29,7 +29,7 @@ Not all features follow all these stages, and timelines for each feature to move
 
 **Snyk features in Early Access**
 
-* [Snyk GitHub Cloud App](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
+* [Snyk GitHub Cloud App](../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
 * [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
 * [Custom rules](../scan-with-snyk/snyk-code/snyk-code-custom-rules/)
 * [Risk Score](../manage-risk/prioritize-issues-for-fixing/risk-score.md)

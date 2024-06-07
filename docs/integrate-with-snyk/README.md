@@ -2,10 +2,10 @@
 
 This section of the Snyk user docs explains how to set up and use many types of integration with Snyk.  This includes plugins and extensions for using Snyk in your IDE, importing Git repositories, and methods for using Snyk in your CI/CD environment:
 
-* [Use Snyk in your IDE](use-snyk-in-your-ide/)
-* [Git repositories and CI/CD comparisons](git-repository-and-ci-cd-integrations-comparisons.md)
-* [Snyk CI/CD integrations](snyk-ci-cd-integrations/)
-* [Git repositories (SCMs) integrations with Snyk](git-repositories-scms-integrations-with-snyk/)
+* [Use Snyk in your IDE](../snyk-scm-ide-and-ci-cd-integrations/use-snyk-in-your-ide/)
+* [Git repositories and CI/CD comparisons](../snyk-scm-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md)
+* [Snyk CI/CD integrations](../snyk-scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/)
+* [Git repositories (SCMs) integrations with Snyk](../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/)
 
 Snyk provides plugins for repository gatekeepers and integrations to connect with package repositories:
 

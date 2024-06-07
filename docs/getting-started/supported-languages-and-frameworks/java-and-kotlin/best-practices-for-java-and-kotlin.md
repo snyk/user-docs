@@ -77,11 +77,11 @@ Typically you can instrument testing as part of a build system or adopt a lockfi
 
 * It is quite common for large organizations to monitor applications via Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
 * As developers become familiar with Snyk capabilities, they widen the scope of applications with PR checks for gating.
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../integrate-with-snyk/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../snyk-scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 
 ### Gradle Projects without a lock file
 
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../integrate-with-snyk/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../snyk-scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 * Gating and failing the build typically will be turned on one Project to start so that everyone can become familiar with the process and use passive monitoring for the remainder of the portfolio.
 
 ## Snyk CLI Tips and Tricks
