@@ -265,6 +265,10 @@ Comply with the following steps before integrating Dynatrace with Snyk AppRisk:
 * Click the **Done** button.
 * When the connection is established, the **Dynatrace** integration status changes to **Connected**.
 
+{% hint style="info" %}
+After the Dynatrace runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
+{% endhint %}
+
 ## Sysdig setup guide
 
 ### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
@@ -292,6 +296,10 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 * Set the **Sysdig region**.
 * Click the **Done** button.
 * When the connection is established, the status of the Sysdig integration is changed to **Connected**.
+
+{% hint style="info" %}
+After the Sysdig runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
+{% endhint %}
 
 ## ServiceNow CMDB setup guide
 
