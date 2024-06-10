@@ -81,6 +81,7 @@ Snyk AppRisk Pro does not currently support the Checkmarx One integration.
 ### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>
 
 * Install and configure your [Snyk Broker](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
+* Ensure you have properly used Git Setting for your Checkmarx Project based on the Checkmarx [documentation](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git).
 
 ### Required parameters <a href="#checkmarx-required-parameters" id="checkmarx-required-parameters"></a>
 
