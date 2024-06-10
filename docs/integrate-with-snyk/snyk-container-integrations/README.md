@@ -13,7 +13,7 @@ The main Container integrations are:
 * **CLI:** Use for local investigation or testing an image you have built. This integration enables you to get early feedback on your machine and use as a gatekeeping stage in CI. It also serves a tool in CD for Snyk to capture snapshots and identify newly discovered vuilnerabilities. For details, see [Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/).
 * **SCM:** Snyk can detect Dockerfiles directly from Git repositories and provide recommendations for updating the base image to a less vulnerable one. For details, see [Scan your Dockerfile](../../scan-with-snyk/snyk-container/scan-your-dockerfile/).
 * **Container registries:** Use to test a large number of images, or if you cannot modify lots of CI pipelines.
-* **Kubernetes:** Monitor running workloads with additional context around how the workload has been configured to run. For details, see [Kubernetes integration overview.](../../scan-with-snyk/snyk-container/integrate-with-kubernetes/overview-of-the-kubernetes-integration/)
+* **Kubernetes:** Monitor running workloads with additional context around how the workload has been configured to run. For details, see [Kubernetes integration overview.](../../scan-using-snyk/snyk-container/container-security-integrations/integrate-with-kubernetes/overview-of-the-kubernetes-integration/)
 
 {% hint style="info" %}
 For cloud-hosted container registries, Snyk does not import and scan images that are larger than 2GB in size. To scan images that exceed this size, use the [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/).

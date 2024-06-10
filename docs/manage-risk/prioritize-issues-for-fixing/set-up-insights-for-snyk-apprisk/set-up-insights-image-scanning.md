@@ -38,4 +38,4 @@ The names of the container images will match because the deployed image is scann
 To ensure you have set up your Kubernetes Connector properly, navigate to the **Set up Insights** tab on the **Issues** page and check the **Image coverage** section to view the data Insights has access to.
 {% endhint %}
 
-For details, see [Kubernetes integration](../../../scan-with-snyk/snyk-container/integrate-with-kubernetes/).
+For details, see [Kubernetes integration](../../../scan-using-snyk/snyk-container/container-security-integrations/integrate-with-kubernetes/).
