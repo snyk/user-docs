@@ -1191,6 +1191,42 @@ The lockfile version is not supported. Supported lockfile versions for pnpm incl
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-NODEJS-0019](#snyk-os-nodejs-0019)
+
+#### Yarn package not found
+
+Snyk could not find the package in the Yarn registry.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-OS-NODEJS-0020](#snyk-os-nodejs-0020)
+
+#### Unable to reach package registry
+
+Snyk could not reach the node package registry.
+
+**HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
+
+
+### [SNYK-OS-NODEJS-0021](#snyk-os-nodejs-0021)
+
+#### Lock file is outdated
+
+The lock file is outdated. Update the lock file and try again.
+
+**HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
+
+
+### [SNYK-OS-NODEJS-0022](#snyk-os-nodejs-0022)
+
+#### Unable to read from remote repository
+
+Snyk does not have sufficient permissions to access the repository, or the repository does not exist.
+
+**HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+
 ### [SNYK-OS-PYTHON-0001](#snyk-os-python-0001)
 
 #### Unsupported manifest file type for remediation
@@ -2016,4 +2052,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-06-06T10:42:37.316Z
+--- Generated at 2024-06-10T14:31:26.356Z
