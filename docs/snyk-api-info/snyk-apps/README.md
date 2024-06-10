@@ -33,3 +33,28 @@ The `scopes` of an App determine which actions an App can perform while connecte
 ### Snyk Organization ID
 
 The final step for the integration process is to [get the ID of the Snyk Organization the user has authorized](../../snyk-api/snyk-apps/set-up-a-snyk-app-using-the-oauth2-api/retrieve-the-app-org-ids.md). This ID is needed to use most API endpoints, so the App must associate it with the user's account or workspace for future use.
+
+## Managing Snyk Apps from the UI
+
+Snyk provides a user-friendly interface for managing your authorized Snyk Apps. This allows you to easily view and control which Apps have access to your Snyk account.
+
+### Open the Management UI
+
+Navigate to your **Account Settings** and select the **Authorized Snyk Apps** tab.
+
+You can also [navigate directly to the Authorized Snyk Apps page](https://app.snyk.io/account/manage/authorized-apps).&#x20;
+
+<figure><img src="../../.gitbook/assets/image (472).png" alt="Snyk Apps management UI"><figcaption><p>Snyk Apps management UI</p></figcaption></figure>
+
+### Revoking a Snyk App from the management UI
+
+On the Authorized Snyk Apps page, you will see a list of all the Snyk Apps that you have integrated and authorized. The page displays relevant information about each App, including the date when it was authorized.
+
+If you wish to revoke access for a particular Snyk App:
+
+* Locate the specific App in the list of authorized Apps.
+* Click the **Revoke** button next to the App.
+
+Revoking access will prevent the App from further accessing your Snyk account and performing actions on your behalf. This gives you full control over which Apps can interact with your Snyk data and ensures that you can manage your App integrations securely.
+
+By using the Snyk Apps management UI, you can maintain a clear overview of your authorized Apps and make adjustments to their access as needed, enhancing the security and customization of your Snyk experience.
