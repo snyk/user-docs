@@ -7,7 +7,7 @@ The instructions on this page explain how to enable integration between one Arti
 * You must be an administrator for the Organization you are configuring in Snyk.
 * You must provide user credentials to integrate with Artifactory.&#x20;
 * You must be running Docker. Snyk supports Docker repositories and the Docker package type for this integration.
-* If you are using a self-hosted Artifactory instance, see [Snyk Broker - Container Registry Agent](../../../../enterprise-configuration/snyk-broker/snyk-broker-container-registry-agent/).
+* If you are using a self-hosted Artifactory instance, see [Snyk Broker - Container Registry Agent](../../../enterprise-configuration/snyk-broker/snyk-broker-container-registry-agent/).
 
 ## Configure Artifactory Container Registry integration&#x20;
 
@@ -28,4 +28,4 @@ To set up the integration, the Artifactory credentials need, at minimum, read pe
 
 Snyk tests the connection values and the page reloads, now displaying integration details as you entered them. At the top of the screen, a confirmation message in green indicates that the details were saved. If the connection fails, a notification appears.
 
-<figure><img src="../../../../.gitbook/assets/artifactory_confirmation.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/artifactory_confirmation.png" alt="" width="375"><figcaption></figcaption></figure>

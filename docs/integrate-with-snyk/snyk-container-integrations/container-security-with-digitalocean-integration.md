@@ -21,9 +21,9 @@ This page explains how to set up DigitalOcean integration in Snyk and start mana
 2. In the **Account credentials** section, enter your DigitalOcean personal access token as the login credential. You can find detailed instructions for creating the access token on the integration page.
 3. To finish, click **Save**.
 
-<figure><img src="../../../.gitbook/assets/mceclip0-10-.png" alt="DigitalOcean account credentials"><figcaption><p>DigitalOcean account credentials</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip0-10-.png" alt="DigitalOcean account credentials"><figcaption><p>DigitalOcean account credentials</p></figcaption></figure>
 
-If you are using self-hosted DigitalOcean, contact [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../scan-with-snyk/snyk-container/integrate-with-self-hosted-container-registries-broker.md).
+If you are using self-hosted DigitalOcean, contact [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-with-snyk/snyk-container/integrate-with-self-hosted-container-registries-broker.md).
 
 {% hint style="info" %}
 **Note:** For the connection to succeed, make sure you have a repository in DigitalOcean.
@@ -58,12 +58,12 @@ The steps follow to add images from DigitalOcean to Snyk.
 6. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    2. An **import log** becomes available; you can reach it at the top of the Projects list.
-   3. To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-with-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
+   3. To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-with-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 DigitalOcean imports are indicated with a unique icon. You can filter the integration in the **Projects** view to see DigitalOcean Projects only:
 
-<figure><img src="../../../.gitbook/assets/mceclip0-11-.png" alt="DigitalOcean Projects in Projects listing"><figcaption><p>DigitalOcean Projects in Projects listing</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip0-11-.png" alt="DigitalOcean Projects in Projects listing"><figcaption><p>DigitalOcean Projects in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
-For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md).
+For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}

@@ -19,9 +19,9 @@ If the connection to Docker Hub fails, an error notification appears:
 
 ## Troubleshooting Docker Hub integration
 
-If issues occur such as failure to import Projects, failure to connect, and no error shown, first try generating a new Access Token and resaving the Docker Hub integration on the Snyk settings page.
+If issues occur, such as failure to import Projects, failure to connect, and no error shown, first try generating a new Access Token and resaving the Docker Hub integration on the Snyk settings page.
 
-## Generate Docker Hub Access Token
+### Generate Docker Hub Access Token
 
 1. Navigate to [https://hub.docker.com/settings/security](https://hub.docker.com/settings/security)
 2. Select **New Access Token**.
@@ -30,3 +30,11 @@ If issues occur such as failure to import Projects, failure to connect, and no e
 5. Select **Copy Access Token** for use with the username when you [enable integration with Docker Hub](configure-integration-for-docker-hub.md#enable-integration-with-docker-hub).
 
 More information on [Docker Hub Access Tokens](https://docs.docker.com/docker-hub/access-tokens/) is available in the Docker Hub docs.
+
+### Unauthorized access or Resource does not exist
+
+This error occurs when importing images from Docker Hub fails, and you receive the error `Unauthorized access or Resource does not exist`_._
+
+![Unauthorized access or Resource does not exist error message](../../../../.gitbook/assets/screen-shot-2021-04-28-at-2.13.11-am.png)
+
+This error occurs because your image is private on your Docker Hub account. To resolve this, go to the **Settings > Visibility settings** section of your repository in Docker Hub and make the image public.
