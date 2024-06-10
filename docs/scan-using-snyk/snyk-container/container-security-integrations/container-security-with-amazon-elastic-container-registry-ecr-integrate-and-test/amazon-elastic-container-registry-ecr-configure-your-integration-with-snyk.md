@@ -20,6 +20,6 @@ An example follows:
 
 Snyk tests the connection values, and the page reloads, now displaying Amazon ECR integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
 
-<figure><img src="../../../.gitbook/assets/uuid-49671392-b5d5-389d-66c8-86b3daf9a2e1-en.png" alt="ECR integration was updated"><figcaption><p>ECR integration was updated</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/uuid-49671392-b5d5-389d-66c8-86b3daf9a2e1-en.png" alt="ECR integration was updated"><figcaption><p>ECR integration was updated</p></figcaption></figure>
 
 If the connection to AWS fails, a notification appears under the **Connected to Amazon ECR** section.

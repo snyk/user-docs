@@ -28,7 +28,7 @@ For details, see [Snyk CLI for container security](../../../snyk-cli/scan-and-ma
 
 The names will match if you are importing images to Snyk from the same container registry that you are referencing in your Kubernetes deployments.
 
-For details, see [Snyk Container - Integrations](../../../integrate-with-snyk/container-security-integrations/).
+For details, see [Snyk Container - Integrations](../../../scan-using-snyk/snyk-container/container-security-integrations/).
 
 ## Snyk Container scanning with Kubernetes integration
 

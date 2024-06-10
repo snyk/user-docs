@@ -11,11 +11,11 @@ This page explains how to enable and configure integration between Docker Hub an
    The page reloads with new options. The Access Token field is blank.\
    A confirmation message that the details were saved also appears in green at the top of the screen.
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.27 AM.png" alt="Successful connection with Docker Hub"><figcaption><p>Successful connection with Docker Hub</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.27 AM.png" alt="Successful connection with Docker Hub"><figcaption><p>Successful connection with Docker Hub</p></figcaption></figure>
 
 If the connection to Docker Hub fails, an error notification appears:
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.50 AM.png" alt="Failed connection, Could not connect to Docker Hub"><figcaption><p>Failed connection, Could not connect to Docker Hub</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.50 AM.png" alt="Failed connection, Could not connect to Docker Hub"><figcaption><p>Failed connection, Could not connect to Docker Hub</p></figcaption></figure>
 
 ## Troubleshooting Docker Hub integration
 
