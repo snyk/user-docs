@@ -98,6 +98,32 @@ To add a Jira issue, navigate to the Snyk Security tab, find a vulnerability, an
 
 If the vulnerability already has a Jira issue, you can link the vulnerability to the existing Jira issue by clicking the three dots in the Actions column and selecting **Link issue.**
 
+### Auto-close resolved vulnerabilities in security in Jira
+
+These steps describe how to use Jira automation and JQL to automatically close or change the status of tickets for vulnerabilities that are now in a closed state.
+
+1. In Jira on your Project, navigate to **Project Settings** and then **Automation.**
+2. Click he **Create Rule** button.
+3. Click **Scheduled** and then **Scheduled**.
+
+<figure><img src="../../.gitbook/assets/Scheduled View.png" alt="Add Scheduled trigger"><figcaption><p>Add Scheduled trigger</p></figcaption></figure>
+
+4. Select the checkbox that says **`Run a JQL search`** and enter `status != Done AND vulnerability[status] = CLOSED` in the field. Then click **Next**.
+
+<figure><img src="../../.gitbook/assets/scheduled config.png" alt="Set up a scheduled JQL search"><figcaption><p>Set up a scheduled JQL search</p></figcaption></figure>
+
+5. Add a new component and choose **THEN: Add an action**_._ Select **Issue actions**`and`choose **Transition issue**.
+
+<figure><img src="../../.gitbook/assets/transition issue.png" alt="Transition issue action"><figcaption><p>Transition issue action</p></figcaption></figure>
+
+5. Set the **Destination statu**_s_ to `Done` or another status depending on your workflow.
+
+<figure><img src="../../.gitbook/assets/destination.png" alt="Set up the transition to Done status"><figcaption><p>Set up the transition to Done status</p></figcaption></figure>
+
+6. Now that the setup is complete, give it a name and click on **Turn on rule.**
+
+Now, according to your schedule, Jira will search for any issues for which the vulnerability is closed, but the issues are not closed, and close each Jira issue.
+
 ## Uninstall Snyk Security in Jira Cloud
 
 {% hint style="danger" %}
