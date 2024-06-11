@@ -1,6 +1,6 @@
 # Snyk GitHub integration
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Feature availability**
 
 The Snyk GitHub integration is available for all Snyk customers regardless of plan level. See the [Plans and pricing page](https://snyk.io/plans/) for more details.
@@ -11,6 +11,7 @@ The Snyk GitHub integration is available for all Snyk customers regardless of pl
 * Internet-accessible repositories.\
   If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-configuration/snyk-broker/).
 * A public or private GitHub project.
+* The required PAT and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements).
 
 ## Known limitations of the Snyk GitHub integration
 
@@ -138,24 +139,13 @@ You can review and adjust the pull request test settings using the Snyk GitHub I
 
 </div>
 
-## Required permissions scope for the Snyk GitHub integration
+## GitHub user permissions and actions
 
-The table that follows provides a summary of the required access scopes for GitHub integration. For information about the token in a brokered integration, see [GitHub - install and configure using Docker](../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md). For details about permissions in a non-brokered integration, refer to the information that follows this table.
+In non-brokered GitHub integrations, operations that are triggered through the Snyk Web UI, for example, opening a Fix PR or re-testing a Project, are performed on behalf of the acting user.&#x20;
 
-| **Action**                                              | **Purpose**                                                                                                                                                                                                                                           | **Required permissions in GitHub** |
-| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| Daily / weekly tests                                    | Used to read manifest files in private repositories.                                                                                                                                                                                                  | _repo (all)_                       |
-| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repositories.                                                                                                                                                                                                 | _repo (all)_                       |
-| Automatic fix and upgrade pull requests                 | Used to create fix or upgrade PRs in the monitored repositories.                                                                                                                                                                                      | _repo (all)_                       |
-| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated.                                                                                                                                                    | _repo (all)_                       |
-| Importing new projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup).                                                                                                                                    | _admin:read:org, repo (all)_       |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | _admin:repo\_hooks (read & write)_ |
+Therefore, a user who wants to perform this operation on GitHub through the Snyk UI must connect their GitHub account to Snyk with the required permission scope for the repositories where they want to perform these operations. See [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements) for details.
 
-In non-brokered GitHub integrations, operations that are triggered via the Snyk Web UI, for example, opening a Fix PR or re-testing a Project, are performed on behalf of the acting user.&#x20;
-
-Therefore, a user who wants to perform this operation on GitHub via the Snyk UI must connect their GitHub account to Snyk with the required permission scope for the repositories where they want to perform these operations. See the [Required permissions scope for repositories](snyk-github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) section for details.
-
-Operations that are not triggered via the Snyk Web UI, such as daily and weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
+Operations that are not triggered through the Snyk Web UI, such as daily and weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
 
 For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
 
@@ -163,21 +153,6 @@ For public repositories that are non-brokered, some operations, such as creating
 A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
 
 Note that Snyk will continue to use a random Snyk Organization member's GitHub account to perform all the other operations. Therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
-{% endhint %}
-
-## Required permission scope for repositories <a href="#h_01eefvj14p8b3depeffvyvdwzj" id="h_01eefvj14p8b3depeffvyvdwzj"></a>
-
-For Snyk to perform the required operation on monitored repositories, that is, reading manifest files on a frequent basis and opening fix or upgrade PRs, the accounts that are connected to Snyk, either directly or via Snyk Broker, must have the following access to the repositories:
-
-| **Action**                                              | **Purpose**                                                                                                                                                                                                                                             | **Required permissions on the repository** |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| Daily / weekly tests                                    | Used to read manifest files in private repos.                                                                                                                                                                                                           | _Read_ or higher                           |
-| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated.                                                                                                                                                      | _Write_ or higher                          |
-| Opening fix and upgrade pull requests                   | Used to create fix and upgrade PRs in the monitored repos.                                                                                                                                                                                              | _Write_ or higher                          |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on).</li><li>Send push events to trigger PR checks.</li></ul> | _Admin_                                    |
-
-{% hint style="info" %}
-The [repository-level permission scopes](snyk-github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) apply to both the GitHub and GitHub Enterprise integration.
 {% endhint %}
 
 ## **How to set up a GitHub account to open Snyk PRs**
@@ -204,7 +179,7 @@ To use this feature, follow these steps:
 {% hint style="info" %}
 Ensure that the GitHub account that you designate to open Snyk PRs has **write-level** permissions or higher for the repos you want to monitor with Snyk.
 
-See [repository permission levels on GitHub](snyk-github-integration.md#required-permissions-scope-for-the-github-integration) for more information.
+See [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements) for more information.
 {% endhint %}
 
 ## **How to assign pull requests to users** <a href="#pr-assignment" id="pr-assignment"></a>

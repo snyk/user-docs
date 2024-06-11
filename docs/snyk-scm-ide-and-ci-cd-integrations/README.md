@@ -21,6 +21,8 @@ Enterprise plan users have base-level access to all of the above functionality. 
 
 If you are an Enterprise customer, see [Choose rollout integrations](../implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations.md) in the Enterprise implementation guide for tips and considerations on import strategies. We then suggest reading through our [Deployment recommendations](./#deployment-recommendations-for-git-integrations), so you have the smoothest rollout for your teams.
 
+Snyk can automatically create pull requests (PRs) on your behalf to upgrade your dependencies based on scan results. This is compatible with a variety of Snyk integrations. For more information, see [View and understand Snyk upgrade pull requests for integrations](../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/view-and-understand-snyk-upgrade-pull-requests.md).
+
 ## SCM integrations
 
 Snyk offers the following Git integrations:
@@ -35,6 +37,8 @@ Snyk offers the following Git integrations:
 * [Bitbucket Cloud App](git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-app-integration.md)
 * [Bitbucket Data Center/Server](git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md)
 * [Azure Repositories (TFS)](git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md)
+
+Snyk requires certain permissions and access scopes for SCM integrations to ensure Snyk functionality works seamlessly. For more information, see [User permissions and access scopes for SCM integrations](git-repositories-scms-integrations-with-snyk/#user-permissions-and-access-scopes-for-scm-integrations).
 
 ## Snyk CI/CDs
 
