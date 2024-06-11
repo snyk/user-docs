@@ -19,7 +19,7 @@ See the Snyk blog post about the ability to interpolate variables: [Snyk IaC pub
 ### **Prerequisites for scanning Terraform files**
 
 * You must be an administrator for the Organization you are configuring in Snyk.
-* Ensure you have already integrated your Git repository. For details, see [Git repository (SCM) integrations](../../../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/).
+* Ensure you have already integrated your Git repository. For details, see [Git repository (SCM) integrations](../../../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/).
 
 ### **Configure Snyk to scan Terraform files**
 

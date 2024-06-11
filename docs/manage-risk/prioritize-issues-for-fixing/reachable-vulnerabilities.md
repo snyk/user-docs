@@ -28,11 +28,11 @@ Reachable vulnerabilities analysis is available for Java (Maven and Gradle) Proj
 
 The following integrations are supported for Reachable Vulnerabilities analysis:
 
-* [GitHub](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-integration.md)&#x20;
-* [Bitbucket Cloud](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-app-integration.md) (Currently in Early Access)
-* [Bitbucket Server](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md) (Currently in Early Access)
-* [GitLab](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-gitlab-integration.md) (Currently in Early Access)
-* [Azure Repos](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md) (Currently in Early Access)
+* [GitHub](../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/snyk-github-integration.md)&#x20;
+* [Bitbucket Cloud](../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-app-integration.md) (Currently in Early Access)
+* [Bitbucket Server](../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md) (Currently in Early Access)
+* [GitLab](../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/snyk-gitlab-integration.md) (Currently in Early Access)
+* [Azure Repos](../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md) (Currently in Early Access)
 * [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md) (Currently in Early Access)
 
 {% hint style="warning" %}

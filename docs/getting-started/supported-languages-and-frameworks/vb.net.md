@@ -34,9 +34,9 @@ To customize test options, run other commands, exclude directories and files, an
 
 ### Snyk integrations  <a href="#snyk-integrations" id="snyk-integrations"></a>
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../snyk-scm-ide-and-ci-cd-integrations/use-snyk-in-your-ide/).​
+:link: For integrated development environments, see [Use Snyk in your IDE](../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/).​
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../snyk-scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
+:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../scm.-ide-and-ci-cd-workflow/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 
 ## Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 

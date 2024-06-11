@@ -21,13 +21,15 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 * [Bitbucket Data Center/Server](snyk-bitbucket-data-center-server-integration.md)
 * [Azure Repositories (TFS)](snyk-azure-repositories-tfs-integration.md)
 
-## User permissions and access scopes for SCM integrations
+## Deployment recommendations for SCM integrations
 
-This section details:
+If you try to implement all the SCM integration features at the same time, you risk causing friction in your software development life cycle ([SDLC](https://snyk.io/learn/secure-sdlc/)), which in turn leads to a poor developer experience.
 
-* [GitHub and GitHub Enterprise permission requirements](./#github-and-github-enterprise-permissions-requirements)
+To ensure a smooth rollout of Snyk across your organization, Snyk provides a suggested deployment timeline consisting of deployment stages, configuration steps, and the desired outcome for each stage.
 
-### GitHub and GitHub Enterprise permissions requirements
+For detailed steps, see [Deployment recommendations for SCM integrations](./#deployment-recommendations-for-git-integrations).
+
+## GitHub and GitHub Enterprise permissions requirements
 
 {% hint style="info" %}
 For information about token permissions in a brokered integration, see [GitHub - install and configure using Docker](../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md).

@@ -37,7 +37,7 @@ If you have changed the name of your GitHub organization, copy the new name from
 3. Access Token (`mandatory`): Create your GitHub PAT from your GitHub Organization.&#x20;
 
 * Generate your GitHub PAT by following the instructions in the [Generate a Personal access token from your GitHub settings](connect-an-scm-integration.md#generate-a-personal-access-token-from-your-github-settings) section.&#x20;
-* Authorize your GitHub PAT if you have configured SAML SSO. See the [How to authorize your Personal Access Token and enable SSO](../../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
+* Authorize your GitHub PAT if you have configured SAML SSO. See the [How to authorize your Personal Access Token and enable SSO](../../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
 
 {% hint style="info" %}
 If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.

@@ -12,7 +12,7 @@ A benefit of adding tests to your pipeline is that you do not need to import the
 
 When adding Snyk to a build pipeline, there are common options:&#x20;
 
-* Using the specific [pipeline integration](../../../snyk-scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for your tool.
+* Using the specific [pipeline integration](../../../scm.-ide-and-ci-cd-workflow/snyk-ci-cd-integrations/) for your tool.
 * Using the [Snyk CLI](../../../snyk-cli/) and running the specific commands directly.&#x20;
 
 Each option has benefits - using an existing pipeline integration may be faster and easier to configure, but using the Snyk CLI will give you a greater range of options and flexibility in your "fail" criteria.&#x20;

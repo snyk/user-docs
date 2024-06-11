@@ -30,7 +30,7 @@ Advantages:
 * Onboarding of repositories can be configured using the UI
 * Supports Cloud Repositories on the Team plan
 
-For more details, see [Git repositories (SCMs)](../../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/).
+For more details, see [Git repositories (SCMs)](../../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/).
 
 
 
@@ -57,13 +57,13 @@ Advantages:
 * Full control over testing (which tests to run, where in the build script)
 * Can automate via CI/CD
 
-For more details, see [Snyk CI/CD integrations](../../../snyk-scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/).
+For more details, see [Snyk CI/CD integrations](../../../scm.-ide-and-ci-cd-workflow/snyk-ci-cd-integrations/).
 
 ### Integrated Development Environment (IDE) integrations
 
 IDE integrations like Visual Studio Code, IntelliJ IDEA, and Eclipse allow developers to access Snyk's security features directly within their coding environment. This enables real-time scanning and issue remediation as developers write code at the earliest possible stages.&#x20;
 
-For more details, see [Use Snyk in your IDE](../../../snyk-scm-ide-and-ci-cd-integrations/use-snyk-in-your-ide/).
+For more details, see [Use Snyk in your IDE](../../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/).
 
 ## Considerations for import strategies&#x20;
 
