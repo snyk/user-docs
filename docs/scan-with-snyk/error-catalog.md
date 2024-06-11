@@ -743,6 +743,21 @@ Which will allow Snyk to scan your code using a newer version of the SDK, despit
 - [https://dotnet.microsoft.com/en-us/download/dotnet](https://dotnet.microsoft.com/en-us/download/dotnet)
 - [https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward)
 
+### [SNYK-OS-DOTNET-0009](#snyk-os-dotnet-0009)
+
+#### Project failed to build due to missing type or namespace references
+
+While attempting to build your solution for scanning, the `dotnet` SDK was unable to restore one or more projects referenced in your manifest files.
+
+Please note that Snyk runs these builds on a **case-sensitive** filesystem, meaning that `<ProjectReference>../src/NS.Project.csproj</ProjectReference>` and `<ProjectReference>../src/ns.project.csproj</ProjectReference>` are not referring to the same thing.
+
+This can present itself as a problem for customers that are using Mac or Windows build pipeline where file systems are not case-sensitive. In this case, verify you're referring to the right manifest files and check the Snyk import logs for more details.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/assembly-references#missing-references](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/assembly-references#missing-references)
+
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 
 #### Failed to access private module
@@ -2052,4 +2067,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-06-11T10:44:57.922Z
+--- Generated at 2024-06-11T11:06:41.961Z
