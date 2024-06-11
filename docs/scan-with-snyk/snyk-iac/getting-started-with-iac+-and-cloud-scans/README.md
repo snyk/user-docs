@@ -1,13 +1,9 @@
 # Getting started with IaC+ and cloud scans
 
 {% hint style="warning" %}
-**Release status**&#x20;
-
-IaC+ is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
-
-To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
-
-Cloud scans for AWS, Azure, and Google Cloud are generally available to Snyk IaC customers on an enterprise plan - for both current IaC and IaC+.
+**Release status** \
+Snyk IaC+ is now in closed beta and is no longer accepting new customers for participation.\
+See [Getting started with current IaC](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac) for details about the functionality available.
 {% endhint %}
 
 Use IaC+ to find, view, and fix issues in cloud configuration files for Terraform, Kubernetes (except Helm, coming soon), AWS CloudFormation, and Azure Resource Manager (ARM) in your Git repositories.

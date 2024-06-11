@@ -1,9 +1,11 @@
 # Add cloud context to your IaC tests
 
 {% hint style="warning" %}
-**Release status**
-
+**Release status**\
 The cloud context feature is available for [IaC+](./) only and supports AWS.
+
+Snyk IaC+ is now in closed beta and is no longer accepting new customers for participation.\
+See [Getting started with current IaC](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac) for details about the functionality available.
 {% endhint %}
 
 ## What is cloud context?

@@ -1,11 +1,9 @@
 # IaC+ and cloud custom rules
 
 {% hint style="warning" %}
-**Release status**
-
-IaC custom rules are available only for Enterprise plans.
-
-See [Pricing plans](https://snyk.io/plans).
+**Release status**\
+IaC custom rules are available only for Enterprise plans.\
+For more information, see [Plans and pricing .](https://snyk.io/plans)
 {% endhint %}
 
 ## Prerequisites for IaC to cloud custom roles

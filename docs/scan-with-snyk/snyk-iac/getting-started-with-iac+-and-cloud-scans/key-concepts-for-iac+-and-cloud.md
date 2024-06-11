@@ -1,5 +1,12 @@
 # Key concepts for IaC+ and cloud
 
+{% hint style="info" %}
+Snyk IaC+ is now in closed beta and is no longer accepting new customers for participation
+
+\
+_Please see_ [_Getting started with current IaC_](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac) _for more details about the functionality available_
+{% endhint %}
+
 IaC+ and cloud scans have a number of unique concepts that are different from Snyk core concepts, such as [Environments](key-concepts-for-iac+-and-cloud.md#environments) and [Resources](key-concepts-for-iac+-and-cloud.md#resources).
 
 ## Environments

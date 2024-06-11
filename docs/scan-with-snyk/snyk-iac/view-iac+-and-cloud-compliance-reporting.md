@@ -1,5 +1,11 @@
 # View IaC+ and cloud compliance reporting
 
+{% hint style="warning" %}
+**Release status**\
+Snyk IaC+ is now in closed beta and is no longer accepting new customers for participation.\
+See [Getting started with current IaC](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac) for details about the functionality available.
+{% endhint %}
+
 ## Overview of compliance reporting
 
 Snyk IaC supports [compliance reporting](../../manage-issues/reporting/available-snyk-reports.md#cloud-compliance-issues-report) and [cloud issue](getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/) triage for compliance standards and controls relevant to cloud services. With this information, developers can fix issues to bring cloud environments into compliance, and auditors can see appropriate evidence.

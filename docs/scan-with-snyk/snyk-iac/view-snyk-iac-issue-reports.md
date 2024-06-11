@@ -6,7 +6,7 @@ Use [Snyk reports](../../manage-issues/reporting/legacy-reports/) to view issues
 **Release status**\
 IaC issue reports are available for all paid plans.&#x20;
 
-See [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 ## Summary page
