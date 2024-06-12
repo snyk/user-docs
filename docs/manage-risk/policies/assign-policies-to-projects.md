@@ -42,12 +42,6 @@ For example, if you have a policy applied to `Critical`, `External`, and `Fronte
 
 An example policy follows. It is applied to an attribute in the **Business Criticality** section, `Critical`, and to attributes in the **Environment** section,  `Frontend` and `External`. The policy also has two Project tags. The first tag has the key `PCI`, with the value of `Compliant`. The second tag has the key `owner`, with the value of `fred`.
 
-<div align="center" data-full-width="true">
-
-<figure><img src="../../.gitbook/assets/sample-policy.png" alt="Sample policy"><figcaption><p>Sample policy</p></figcaption></figure>
-
-</div>
-
 The following Project has the attributes `Frontend`, `External`, and `Critical`, and has at least one matching tag, `PCI:Compliant`. Thus the Project will inherit the policy, that is, the policy is assigned to this Project.
 
 <div align="left">
