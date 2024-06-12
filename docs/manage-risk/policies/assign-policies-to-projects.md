@@ -18,7 +18,7 @@ To apply a policy to an attribute, in the attribute selector panel, check the bo
 
 You can also search for tags that have already been created in Projects in your Group. You can select more than one tag for the policy.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-07-28 at 17.28.18.png" alt="Attribute selector panel"><figcaption><p>Attribute selector panel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-07-28 at 17.28.18.png" alt="Attribute selector panel" width="291"><figcaption><p>Attribute selector panel</p></figcaption></figure>
 
 To remove a policy from an attribute, uncheck the box next to the attribute from which you want to remove the policy.
 
