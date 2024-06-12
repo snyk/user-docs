@@ -4,4 +4,3 @@ Snyk integrates with Docker Hub to enable you to import snapshots of your Projec
 
 * [Configure integration for Docker Hub](configure-the-integration-with-docker-hub.md)
 * [Docker Hub - add Projects and images to the Snyk UI](docker-hub-add-projects-and-images-to-the-snyk-ui.md)
-* [Unauthorized access or Resource does not exist - Docker Hub](unauthorized-access-or-resource-does-not-exist-docker-hub.md)

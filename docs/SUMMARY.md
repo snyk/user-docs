@@ -522,7 +522,6 @@
       * [Integrate with Docker Hub](scan-using-snyk/snyk-container/container-security-integrations/integrate-with-docker-hub/README.md)
         * [Configure the integration with Docker Hub](scan-using-snyk/snyk-container/container-security-integrations/integrate-with-docker-hub/configure-the-integration-with-docker-hub.md)
         * [Docker Hub - add Projects and images to the Snyk UI](scan-using-snyk/snyk-container/container-security-integrations/integrate-with-docker-hub/docker-hub-add-projects-and-images-to-the-snyk-ui.md)
-        * [Unauthorized access or Resource does not exist - Docker Hub](scan-using-snyk/snyk-container/container-security-integrations/integrate-with-docker-hub/unauthorized-access-or-resource-does-not-exist-docker-hub.md)
       * [Integrate with Docker Desktop Extension](scan-using-snyk/snyk-container/container-security-integrations/integrate-with-docker-desktop-extension.md)
       * [Integrate with GitHub Container registry](scan-using-snyk/snyk-container/container-security-integrations/integrate-with-github-container-registry.md)
       * [Integrate with GitLab Container Registry](scan-using-snyk/snyk-container/container-security-integrations/integrate-with-gitlab-container-registry.md)
