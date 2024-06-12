@@ -4,6 +4,12 @@
 
 ### Code analysis
 
+{% hint style="info" %}
+**Snyk Code for Python**
+
+Interfile analysis is supported, as the data flow is monitored between multiple files.
+{% endhint %}
+
 Snyk Code supports the following frameworks:
 
 * Django

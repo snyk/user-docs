@@ -11,7 +11,7 @@ Snyk supports Kotlin Mobile Apps. Kotlin Web Applications are not supported.
 
 Android is partially supported.
 
-Interfile is supported, as the data flow is monitored between multiple files.
+Interfile analysis is supported, as the data flow is monitored between multiple files.
 {% endhint %}
 
 Snyk Code supports the following frameworks:
