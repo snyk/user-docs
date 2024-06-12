@@ -9,6 +9,6 @@ To use the Snyk API, you must first get your API token from Snyk.
 
 For more information about authentication, refer to the overview in the [API reference docs](https://apidocs.snyk.io/). For additional information, see [Revoking and regenerating Snyk API tokens](revoking-and-regenerating-snyk-api-tokens.md).
 
-![Get API token](<../../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (16).png>)
+![Get API token](<../../../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (16).png>)
 
-For information about using personal tokens versus service account tokens, see [How to obtain and authenticate with your Snyk API token](../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+For information about using personal tokens versus service account tokens, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).

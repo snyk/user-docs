@@ -4,4 +4,4 @@ To set an API token to be read-only and unable to write to the platform, use a s
 
 Service accounts at the org level have only org admin and org collaborator permissions. Thus to set a service account to view-only you must use a group level service account.
 
-For more information see [Service accounts](../../enterprise-configuration/service-accounts/).
+For more information see [Service accounts](../../../enterprise-configuration/service-accounts/).

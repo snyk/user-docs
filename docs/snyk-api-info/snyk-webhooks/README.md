@@ -1,10 +1,4 @@
-# Snyk Webhooks
-
-### Snyk Webhooks for Snyk API
-
-[Visit the Snyk API documentation for Webhooks](https://snyk.docs.apiary.io/#introduction/consuming-webhooks) to get information on consuming, validating, and examples.
-
-{% embed url="https://snyk.docs.apiary.io/#introduction/consuming-webhooks" %}
+# Webhooks
 
 Webhooks allow you to be notified of Snyk system events, enabling you to build notifications and react to changes in your projects. The current implementation supports events for recurring scans of open source and container image related projects.
 
@@ -27,18 +21,6 @@ Get real-time security alerts aggregated across various sources into a single pl
 #### Vulnerability Management and Aggregation
 
 Browse the various [Snyk Partner integrations](../../integrate-with-snyk/vulnerability-management-tools/) for a comprehensive list of solutions.
-
-### Webhook headers
-
-Event messages are delivered with a ​`Content-Type​` of ​`application/json`,​ with the event payload as JSON in the request body. We also send the following headers:
-
-* `X-Snyk-Event` the name of the event and the version of the payload, such as `ping/v1`
-* `X-Snyk-Transport-ID` a GUID to identify this delivery
-* ​ `X-Snyk-Timestamp`an ISO 8601 timestamp for when the event occurred, e.g. `2020-09-25T15:27:53Z`
-* `X-Hub-Signature` the HMAC hex digest of the request body which is used to secure your webhooks and ensure the request did indeed come from Snyk
-* `User-Agent​` identifies the origin of the request, e.g. ​`Snyk-Webhooks/XXX`
-
-Each webhook receives all events.
 
 ### Security SSL
 

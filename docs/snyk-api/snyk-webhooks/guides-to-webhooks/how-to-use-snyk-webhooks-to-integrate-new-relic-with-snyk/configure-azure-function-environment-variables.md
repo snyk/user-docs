@@ -15,6 +15,6 @@ If you want to use the optional parameters for troubleshooting in a separate New
 
 * **NEW\_RELIC\_INSIGHTS\_URL**: URL for the New Relic account event API, that is, https://insights-collector.newrelic.com/v1/accounts/{NR-ACCOUNT-ID}/events
 
-<figure><img src="../../../.gitbook/assets/azure-function-configuration.png" alt="Azure Function Configuration"><figcaption><p>Azure Function Configuration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/azure-function-configuration.png" alt="Azure Function Configuration"><figcaption><p>Azure Function Configuration</p></figcaption></figure>
 
 Next [Copy the Azure Function URL](copy-the-azure-function-url.md).

@@ -12,7 +12,7 @@ Snyk [extensibility and the Snyk API](https://snyk.io/blog/extensibility-and-the
 
 ## Snyk REST API
 
-The [Snyk REST API](https://apidocs.snyk.io/) is based on the OpenAPI and JSON:API standards and represents an evolutionary approach to API development, with each endpoint versioned. For more information, see [Versioning](https://apidocs.snyk.io/#overview) in the reference docs. The most recent version of the REST API endpoints is also available in the [Reference](reference/) in the Snyk user docs along with the current [REST API overview](snyk-rest-api-overview.md).
+The [Snyk REST API](https://apidocs.snyk.io/) is based on the OpenAPI and JSON:API standards and represents an evolutionary approach to API development, with each endpoint versioned. For more information, see [Versioning](https://apidocs.snyk.io/#overview) in the reference docs. The most recent version of the REST API endpoints is also available in the [Reference](reference/) in the Snyk user docs along with the current [REST API overview](snyk-rest-api-overview/).
 
 ## Snyk V1 API (superseded by the REST API)
 

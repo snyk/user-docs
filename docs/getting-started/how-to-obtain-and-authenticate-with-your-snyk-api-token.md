@@ -16,7 +16,7 @@ Enterprise users have access to a personal token under their profile and to serv
   * Authenticating with the IDE manually
   * Running API calls one time, for example, to test something
 
-For more information on the personal Snyk API token, see the following pages: [Authenticate the CLI with your account](../snyk-cli/authenticate-the-cli-with-your-account.md) and [Authentication for API](../snyk-api/authentication-for-api/).
+For more information on the personal Snyk API token, see the following pages: [Authenticate the CLI with your account](../snyk-cli/authenticate-the-cli-with-your-account.md) and [Authentication for API](../snyk-api/snyk-rest-api-overview/authentication-for-api/).
 
 {% hint style="info" %}
 If you are using Snyk on the EU and AU tenants,  you must set your endpoints accordingly before authenticating. For more information, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md).

@@ -1,4 +1,4 @@
-# Example migration guide: List all Projects V1 API to REST API
+# List all Projects V1 API to REST API migration guide (completed migration)
 
 {% hint style="warning" %}
 **End of life**
@@ -88,7 +88,3 @@ The following Snyk Tools that use the [List all projects v1 API](https://snyk.do
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Filter by tags                                                                                                                   | <p>Filter: tags</p><p>Return projects that match all the provided tags</p><p><br></p> | Supported from version [2023-02-15](https://apidocs.snyk.io/?version=2023-02-15#get-/orgs/-org\_id-/projects) and up                                                                                                                                                                                                                                                                                                                                                                                            |
 | Filter by attributes                                                                                                             | Filter: business\_criticality, environment and lifecycle                              | Supported from version [2023-02-15](https://apidocs.snyk.io/?version=2023-02-15#get-/orgs/-org\_id-/projects) and up                                                                                                                                                                                                                                                                                                                                                                                            |
-
-###
-
-\\
