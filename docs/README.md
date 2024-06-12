@@ -8,7 +8,7 @@
 
 ## Integrate with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-<table data-header-hidden><thead><tr><th width="247"></th><th width="252"></th><th width="177"></th></tr></thead><tbody><tr><td><a href="scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/">Git repositories</a><br>Connect code repos to Snyk</td><td><a href="scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/">IDEs</a><br>Use Snyk in your dev environment</td><td><a href="scm.-ide-and-ci-cd-workflow/snyk-ci-cd-integrations/">CI/CD</a><br>Add Snyk to your CI/CD pipeline</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="247"></th><th width="252"></th><th width="177"></th></tr></thead><tbody><tr><td><a href="scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/">Git repositories</a><br>Connect code repos to Snyk</td><td><a href="scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/">IDEs</a><br>Use Snyk in your dev environment</td><td><a href="scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/">CI/CD</a><br>Add Snyk to your CI/CD pipeline</td></tr></tbody></table>
 
 ## Scan using Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 

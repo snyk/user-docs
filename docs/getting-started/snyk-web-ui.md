@@ -18,7 +18,7 @@ The following Snyk functions are available with the Web UI:
 * [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings)
 
 {% hint style="info" %}
-You can also use Snyk functions from the [Snyk CLI](../snyk-cli/), [in your IDE](../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/), and with the [Snyk API](../snyk-api/).
+You can also use Snyk functions from the [Snyk CLI](../snyk-cli/), [in your IDE](../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/), and with the [Snyk API](../snyk-api/).
 {% endhint %}
 
 ## Explore the Dashboard

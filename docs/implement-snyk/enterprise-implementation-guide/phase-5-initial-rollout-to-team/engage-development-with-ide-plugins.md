@@ -2,7 +2,7 @@
 
 ## Introduce Snyk IDE plugins to your developers
 
-Encouraging your developers to install a [Snyk IDE plugin](../../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/) is a key step in improving developer adoption and achieving “shift left,” where developers are more empowered and responsible for fixing issues before they are committed to pull requests or added to builds.
+Encouraging your developers to install a [Snyk IDE plugin](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/) is a key step in improving developer adoption and achieving “shift left,” where developers are more empowered and responsible for fixing issues before they are committed to pull requests or added to builds.
 
 Snyk IDE plugins help developers to find and fix security vulnerabilities and issues. This allows individual developers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
 
@@ -18,10 +18,10 @@ Companies with a mature AppSec program may give developers earlier access to Sny
 
 The following Snyk plugins and extensions are available:
 
-* [Eclipse plugin](../../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/eclipse-plugin/)
-* [JetBrains plugins](../../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/jetbrains-plugins/)
-* [Visual Studio extension](../../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/visual-studio-extension/)
-* [Visual Studio Code extension](../../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/visual-studio-code-extension/)
+* [Eclipse plugin](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/eclipse-plugin/)
+* [JetBrains plugins](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/jetbrains-plugins/)
+* [Visual Studio extension](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/visual-studio-extension/)
+* [Visual Studio Code extension](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/visual-studio-code-extension/)
 
 The training session [Introduction to using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/) provides further guidance.
 

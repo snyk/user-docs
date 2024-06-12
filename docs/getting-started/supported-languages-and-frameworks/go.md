@@ -177,8 +177,8 @@ To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your Git r
 
 ### Snyk integrations&#x20;
 
-* For integrated development environments, see [Use Snyk in your IDE](../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/).
-* If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../scm.-ide-and-ci-cd-workflow/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
+* For integrated development environments, see [Use Snyk in your IDE](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
+* If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 
 ## Troubleshooting
 

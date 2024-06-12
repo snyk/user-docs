@@ -17,7 +17,7 @@ Scanning CloudFormation provides security feedback on everything that is statica
 ### **Prerequisites for scanning CloudFormation files**
 
 * You must be an administrator for the Organization you are configuring in Snyk.
-* Ensure you have already integrated your Git repository, For details, see [Git repository (SCM) integrations](../../../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/).
+* Ensure you have already integrated your Git repository, For details, see [Git repository (SCM) integrations](../../../../scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/).
 
 ### **Configure Snyk to scan CloudFormation files**
 

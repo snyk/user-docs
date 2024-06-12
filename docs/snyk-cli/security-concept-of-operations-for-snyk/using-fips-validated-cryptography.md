@@ -13,7 +13,7 @@ Support for use of FIPS-validated cryptography is limited to the Windows and Lin
 
 ## FIPS-validated cryptography support and use in the Snyk CLI and Snyk Language Server
 
-To optimize the developer experience, Snyk is combining the [Snyk Language Server](../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/snyk-language-server.md) and the [Snyk CLI](../getting-started-with-the-snyk-cli.md). As a first step, Snyk is bringing FIPS binaries under one application. Later also non-FIPS CLI binaries will be used for Snyk Language Server.
+To optimize the developer experience, Snyk is combining the [Snyk Language Server](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/snyk-language-server.md) and the [Snyk CLI](../getting-started-with-the-snyk-cli.md). As a first step, Snyk is bringing FIPS binaries under one application. Later also non-FIPS CLI binaries will be used for Snyk Language Server.
 
 The Snyk Language Server can now be executed as a CLI command.
 
@@ -77,7 +77,7 @@ docker run -it mcr.microsoft.com/cbl-mariner/base/core:2.0 bash
 
 ### Visual Studio Code
 
-To make use of FIPS-validated cryptography in the [Snyk Visual Studio Code integration](../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/visual-studio-code-extension/), do the following:
+To make use of FIPS-validated cryptography in the [Snyk Visual Studio Code integration](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/visual-studio-code-extension/), do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
 * [Download the appropriate FIPS-enabled binaries](using-fips-validated-cryptography.md#download-fips-enabled-binaries).
@@ -86,7 +86,7 @@ To make use of FIPS-validated cryptography in the [Snyk Visual Studio Code integ
 
 ### Eclipse
 
-To make use of FIPS-validated cryptography in the [Snyk Eclipse integration](../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/eclipse-plugin/), do the following:
+To make use of FIPS-validated cryptography in the [Snyk Eclipse integration](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/eclipse-plugin/), do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met
 * [Download the appropriate FIPS-enabled binaries.](using-fips-validated-cryptography.md#download-fips-enabled-binaries)
@@ -96,7 +96,7 @@ To make use of FIPS-validated cryptography in the [Snyk Eclipse integration](../
 
 ### JetBrains
 
-To make use of FIPS-validated cryptography in the [Snyk JetBrains integration](../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/jetbrains-plugins/), do the following:
+To make use of FIPS-validated cryptography in the [Snyk JetBrains integration](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/jetbrains-plugins/), do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
 * [Download the appropriate FIPS-enabled binaries](using-fips-validated-cryptography.md#download-fips-enabled-binaries).
@@ -106,7 +106,7 @@ To make use of FIPS-validated cryptography in the [Snyk JetBrains integration](.
 
 ### Visual Studio
 
-To make use of FIPS-validated cryptography in the [Snyk Visual Studio integration](../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/visual-studio-extension/) do the following:
+To make use of FIPS-validated cryptography in the [Snyk Visual Studio integration](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/visual-studio-extension/) do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
 * [Download the appropriate FIPS-enabled binaries](using-fips-validated-cryptography.md#download-fips-enabled-binaries).
@@ -115,7 +115,7 @@ To make use of FIPS-validated cryptography in the [Snyk Visual Studio integratio
 
 ## FIPS-validated cryptography support and use in CI/CD Integrations
 
-FIPS in [CI/CD Integrations](../../scm.-ide-and-ci-cd-workflow/snyk-ci-cd-integrations/) is available only by using a FIPS-enabled CLI directly.
+FIPS in [CI/CD Integrations](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) is available only by using a FIPS-enabled CLI directly.
 
 ## FIPS-validated cryptography support and use in Package Repositories
 

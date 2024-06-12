@@ -30,7 +30,7 @@ The advantages of SCM integrations are:
 * Onboarding repositories can be configured through the UI or [API/API Import Tool](https://docs.snyk.io/snyk-api-info/other-tools/tool-snyk-api-import)
 * Support for Cloud and Private Code Repositories on the Snyk Enterprise plan
 
-See [Git repositories (SCMs)](../../../scm.-ide-and-ci-cd-workflow/git-repositories-scms-integrations-with-snyk/) for more details.
+See [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/) for more details.
 
 If you have an on-premise Git repository, you must consider deploying [Snyk Broker](https://docs.snyk.io/snyk-admin/snyk-broker) for Snyk to communicate with your repositories.
 
@@ -53,13 +53,13 @@ The advantages of CI/CD integrations are:
 * Full control over testing: which tests to run and where in the build script
 * Automation by CI/CD if desired
 
-See [Snyk CI/CD integrations](../../../scm.-ide-and-ci-cd-workflow/snyk-ci-cd-integrations/) for more details.
+See [Snyk CI/CD integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) for more details.
 
 ### IDE Integrations
 
 Integrated Development Environment (IDE) integrations like Visual Studio Code, IntelliJ IDEA, and Eclipse allow developers to access Snyk security features directly within their coding environment. This enables real-time scanning and issue remediation as developers write code.&#x20;
 
-See [Use Snyk in your IDE](../../../scm.-ide-and-ci-cd-workflow/use-snyk-in-your-ide/) for more details.
+See [Use Snyk in your IDE](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/) for more details.
 
 ## Considerations for import strategies&#x20;
 
