@@ -15,9 +15,9 @@ When you use the Container Registry Agent, Snyk can integrate with private conta
 * Keep sensitive data such as your access tokens inside your private network, never sharing that information with Snyk.
 * Provide controlled access to the network for Snyk, limiting Snyk access and the actions that Snyk can perform.
 
-This page explains how to use the Container Registry Agent to integrate through Broker with supported open-source container registries as [listed](./#supported-container-registries) on this page. This method of integration is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.
+This page explains how to use the Container Registry Agent to integrate through Broker with supported open-source container registries as [listed](./#supported-container-registries) on this page. This method of integration is designed for users who require images to be scanned in their own environment instead of inside the Snyk service.
 
-If you **do not require that images be scanned in your own environment**, you do not need to use the Container Registry Agent. You can **integrate with the supported container registries from the integrations page in your account**. For details, see [Snyk Container - Integrations](../../../integrate-with-snyk/snyk-container-integrations/).
+If you do not require that images be scanned in your own environment, you do not need to use the Container Registry Agent. You can integrate with the supported container registries from the integrations page in your account. For details, see [Snyk Container security integrations](../../../integrate-with-snyk/snyk-container-integrations/).
 
 ## **Components of the network-restricted container registries solution**
 
@@ -47,16 +47,16 @@ Using the Snyk Broker Container Registry Agent you can integrate Snyk with the f
 * DigitalOcean Container Registry (type: digitalocean-cr)
 * GitLab Container Registry (type: gitlab-cr)
 
-Artifactory and Nexus are also available as private package repositories with Broker options. The Brokers required for the Container Registry must be the ones as specified in [Prerequisites for Container Registry Agent](./#prerequisites-for-container-registry-agent), not the Brokers for snyk/broker:artifactory or snyk/broker:nexus.
+Artifactory and Nexus are also available as private package repositories with Broker options. The Brokers required for the Container Registry must be those specified in [Prerequisites for Container Registry Agent](./#prerequisites-for-container-registry-agent), not the Brokers for snyk/broker:artifactory or snyk/broker:nexus.
 
-GitHub Container registry and GitLab Container Registry do not follow Docker v2 API; they do not have the /v2/\_catalog endpoint. Thus it is not possible to list images in repos, and you must manually specify the images you wish to scan.
+GitHub Container registry and GitLab Container Registry do not follow Docker v2 API; they do not have the /v2/\_catalog endpoint. Thus, it is not possible to list images in repos, and you must manually specify the images you wish to scan.
 
 ## **Prerequisites for Container Registry Agent**
 
 To set up the Snyk Broker and the Container Registry Agent, you must have a Broker token. Contact [Snyk Support](https://support.snyk.io/hc/en-us) to obtain your Broker token.
 
 {% hint style="warning" %}
-For the Container Registry Agent to work, you must have two separate containers deployed in your infrastructure, creating two separate services. For details, see [Components of the network-restricted container registries solution ](./#components-of-the-network-restricted-container-registries-solution)on this page.
+For the Container Registry Agent to work, you must have two separate containers deployed in your infrastructure, creating two separate services. For details, see [Components of the network-restricted container registries solution](./#components-of-the-network-restricted-container-registries-solution).
 {% endhint %}
 
 The system and software requirements to set up and run the Snyk Broker Container Registry Agent are as follows;
@@ -87,7 +87,7 @@ To use the Broker Client with a Container Registry Agent deployment, run `docker
 The following environment variables are required to configure the Broker Client.
 
 {% hint style="info" %}
-For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **Google Artifact Registry**, and **Artifactory**, there are a few values to note; see [Container registry-specific configurations](./#container-registry-specific-configurations). For **Elastic Container Registry**, additional setup is required. [Specific configurations](./#container-registry-specific-configurations) are also provided.
+For DigitalOcean Container Registry, Google Cloud Container Registry, Google Artifact Registry, and Artifactory, there are a few values to note; see [Container registry-specific configurations](./#container-registry-specific-configurations). For Elastic Container Registry, additional setup is required. [Specific configurations](./#container-registry-specific-configurations) are also provided.
 {% endhint %}
 
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration provided by Snyk support.
@@ -153,7 +153,7 @@ All the preceding information applies to setting up the Broker Client for these 
 
 ### **JFrog Container Registry (Artifactory)**
 
-If you are using **Repository path** as your Docker access method, set the container registry hostname in the `CR_BASE` variable in this structure: `<your artifactory host>/artifactory/api/docker/<artifactory-repo-name>`
+If you are using Repository path as your Docker access method, set the container registry hostname in the `CR_BASE` variable in this structure: `<your artifactory host>/artifactory/api/docker/<artifactory-repo-name>`
 
 Note that the catalog endpoint `/artifactory/api/docker/<artifactory-repository>/v2/_catalog` is not required for importing a project in Artifactory; this is used for listing the image repositories.
 
