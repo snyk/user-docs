@@ -722,6 +722,8 @@ Note: Remedies are not included in the response at this time.
 
 ## ServiceAccounts
 
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+
 ### [Get a list of group service accounts](https://apidocs.snyk.io/?#get-/groups/-group\_id-/service\_accounts)
 
 ### [Create a service account for a group](https://apidocs.snyk.io/?#post-/groups/-group\_id-/service\_accounts)
