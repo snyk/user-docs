@@ -1,6 +1,6 @@
 # How to use Snyk API endpoints
 
-This section provides [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md) and pages with detailed information about using Snyk API endpoints.
+This section provides [scenarios for using Snyk APIs](../api-endpoints-index-and-notes/scenarios-for-using-snyk-api.md) and pages with detailed information about using Snyk API endpoints.
 
 For more information about using the Snyk API, see the following:
 

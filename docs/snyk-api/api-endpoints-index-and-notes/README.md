@@ -8,7 +8,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## Apps
 
-**More information:** [Snyk Apps](../snyk-api-info/snyk-apps/)
+**More information:** [Snyk Apps](../../snyk-api-info/snyk-apps/)
 
 ### [Get a list of apps installed for a group](https://apidocs.snyk.io/?#get-/groups/-group\_id-/apps/installs)
 
@@ -32,13 +32,13 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 **Replaced by:** [Get a list of apps created by an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations)
 
-**More information:** [Manage App details](snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](../snyk-apps/manage-app-details.md)
 
 ### DEPRECATED [Create a new app for an organization](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps)
 
 **Replaced by:** [Create a new Snyk App for an organization](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/creations)
 
-**More information:** [Create a Snyk App using the Snyk API](snyk-apps/create-a-snyk-app-using-the-snyk-api.md)
+**More information:** [Create a Snyk App using the Snyk API](../snyk-apps/create-a-snyk-app-using-the-snyk-api.md)
 
 ### [Get a list of apps created by an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations)
 
@@ -56,17 +56,17 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 **Replaces:** DEPRECATED Delete an app
 
-**More information:** [Manage App details](snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](../snyk-apps/manage-app-details.md)
 
 ### [Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/apps/creations/-app\_id-)
 
 **Replaces:** DEPRECATED Update App attributes that are name, redirect URIs, and access token time to live
 
-**More information:** [Manage App details](snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](../snyk-apps/manage-app-details.md)
 
 ### [Manage client secret for the Snyk App](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/apps/creations/-app\_id-/secrets)
 
-**More information:** [Manage App details](snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](../snyk-apps/manage-app-details.md)
 
 ### [Get a list of apps installed for an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/installs)
 
@@ -124,13 +124,13 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### Group level audit logs
 
-#### [Get group level audit logs](reference/audit-logs-v1.md)
+#### [Get group level audit logs](../reference/audit-logs-v1.md)
 
 [Migrated Get group level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/group-level-audit-logs/get-group-level-audit-logs)
 
 ### Organization level audit logs
 
-#### [Get organization level audit logs](reference/audit-logs-v1.md)
+#### [Get organization level audit logs](../reference/audit-logs-v1.md)
 
 [Migrated Get organization level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/organization-level-audit-logs/get-organization-level-audit-logs)
 
@@ -182,7 +182,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## Custom Base Images
 
-**More information:** [Use Custom Base Image Recommendations](../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/)
+**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/)
 
 ### [Get a custom base image collection](https://apidocs.snyk.io/?#get-/custom\_base\_images)
 
@@ -202,7 +202,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 #### List all dependencies
 
-[Migrated List all dependencies](api-endpoints-index-and-notes.md#list-all-dependencies)
+[Migrated List all dependencies](./#list-all-dependencies)
 
 ## Entitlements (v1)
 
@@ -284,13 +284,13 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### [Update the Infrastructure as Code Settings for a group](https://apidocs.snyk.io/?#patch-/groups/-group\_id-/settings/iac)
 
-**More information:** [Use a remote IaC custom rules bundle](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../scan-using-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md), [Use a remote IaC custom rules bundle](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
+**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-using-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md), [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ### [Get the Infrastructure as Code Settings for an org](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/settings/iac)
 
 ### [Update the Infrastructure as Code Settings for an org](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/settings/iac)
 
-**More information:** [Use a remote IaC custom rules bundle](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [Use a remote IaC custom rules bundle](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
+**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ## Import Projects (v1)
 
@@ -652,7 +652,7 @@ Note: Remedies are not included in the response at this time.
 
 ## Pull request templates
 
-**More information:** [Create and manage a custom PR template using the API](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api).
+**More information:** [Create and manage a custom PR template using the API](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api).
 
 ### [Get pull request template for group](https://apidocs.snyk.io/?#get-/groups/-group\_id-/settings/pull\_request\_template)
 
