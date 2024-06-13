@@ -6,9 +6,7 @@
 The Snyk API is available only for Enterprise plans.&#x20;
 
 For more information, see [Plans and pricing](https://snyk.io/plans).
-{% endhint %}
 
-{% hint style="info" %}
 The V1 API will be sunset eventually, as further Snyk developments are now focused on the REST API.
 {% endhint %}
 
@@ -19,17 +17,17 @@ The V1 API has the ability to test a package for issues as they are defined by S
 * Receiving remediation advice
 * Viewing user data to build custom security solutions
 
-The V1 API endpoints are available in the [Reference](reference/) in the Snyk user docs. Updates are made in the user docs. The endpoints migrated to the user docs remain [online](https://snyk.docs.apiary.io) also.
+The V1 API endpoints are available in the [Reference](../reference/) in the Snyk user docs. Updates are made in the user docs. The endpoints migrated to the user docs remain [online](https://snyk.docs.apiary.io) also.
 
 ## API URL&#x20;
 
-Snyk is hosted in three main regions: US, EU and AU. Each region has its own base URL.
+Snyk is hosted in three main regions: US, EU, and AU. Each region has its own base URL.
 
 <table><thead><tr><th width="189">Region</th><th>Base URL</th></tr></thead><tbody><tr><td>US</td><td><code>https://api.snyk.io/v1</code></td></tr><tr><td>Europe</td><td><code>https://api.eu.snyk.io/v1</code></td></tr><tr><td>Australia</td><td><code>https://api.au.snyk.io/v1</code></td></tr></tbody></table>
 
-## Rate Limiting
+## Rate limiting
 
-Snyk limits the requests to the V1 API to help provide a stable experience for our customers.
+Snyk limits the requests to the V1 API to help provide a stable experience for customers.
 
 The V1 API has a default rate limit of **2,000 requests per minute**, but some specific endpoints have lower limits. Refer to the reference docs for each endpoint to see the rate limits.
 

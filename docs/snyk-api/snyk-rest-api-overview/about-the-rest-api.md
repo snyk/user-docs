@@ -113,7 +113,7 @@ Errors conform to the JSON:API specification and include path-based information 
 }
 ```
 
-## Rate Limiting
+## Rate limiting
 
 There is a limit of **1620 requests per minute**, per API key. All requests above the limit will get a response with status code `429` - `Too many requests` until requests stop for the duration of the rate-limiting interval (currently one minute).
 
