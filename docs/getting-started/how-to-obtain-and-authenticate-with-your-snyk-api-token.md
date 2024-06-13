@@ -4,9 +4,9 @@ Your Snyk API token is a personal token available under your user profile. A tok
 
 Free, Team, and Trial plan users have access only to this personal token under the user profile. The **personal token can be used** to authenticate with:
 
-* A CI/CD integration
 * The Snyk CLI running on a local or a build machine
 * An IDE, when setting a token manually
+* A CI/CD integration
 
 Enterprise users have access to a personal token under their profile and to service account tokens. For details, see [Service accounts](../enterprise-configuration/service-accounts/).
 
@@ -26,7 +26,7 @@ Follow these steps to obtain your personal Snyk API token:
 
 1. Log in to Snyk and navigate to your **Account settings**
 2. In the **Account Settings,** select **General** > **Auth Token**
-3. Click inside the **KEY** box to display your API token.
+3. In the KEY field, **click to show** and then select and copy your API token.
 4. Copy the token and save it in a secure location for future use.
 
 <figure><img src="../.gitbook/assets/Snyk Broker - API Token - Account settings - API Token box.png" alt="Settings page, display API token"><figcaption><p>Settings page, display API token</p></figcaption></figure>

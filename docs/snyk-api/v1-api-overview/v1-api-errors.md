@@ -10,7 +10,7 @@ The V1 API uses standard HTTP error codes for error responses.&#x20;
 }
 ```
 
-The error reference will also be supplied in the `x-error-reference` header in the server reply.
+The error reference is also supplied in the `x-error-reference` header in the server reply.
 
 Example `500` response:
 

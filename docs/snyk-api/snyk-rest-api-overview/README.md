@@ -1,4 +1,4 @@
-# REST API overview
+# REST API
 
 {% hint style="info" %}
 The information on this page is also available in the [Snyk REST API reference docs](https://apidocs.snyk.io/).
@@ -8,7 +8,7 @@ Snyk REST API is based on the [JSON:API standard](https://jsonapi.org/), defined
 
 ## When to use Snyk REST API
 
-Use this API when you find endpoints that correspond to your needs according to your own workflow. You can also use Snyk API v1 at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io/).
+Use this API when you find endpoints that correspond to your needs according to your own workflow. You can also use V1 API at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io/).
 
 For more information about Snyk APIs and using an API versus Snyk CLI or an integration, see the [Snyk API docs](https://docs.snyk.io/snyk-api-info).
 
@@ -20,7 +20,7 @@ This API is only available over HTTPS. Accessing over HTTP will yield a 404 for 
 
 ## About authentication
 
-To use this API, you must get your API token from Snyk. You can find your token in your General Account Settings on [https://snyk.io/account/](https://snyk.io/account/) after you register with Snyk and log in. See [Authentication for API](https://docs.snyk.io/snyk-api-info/authentication-for-api).
+To use this API, you must get your API token from Snyk. You can find your token in your General Account Settings [https://snyk.io/account/](https://snyk.io/account/) after you register with Snyk and log in. See [Authentication for API](https://docs.snyk.io/snyk-api-info/authentication-for-api).
 
 When using the API directly, provide the API token in an `Authorization` header, preceded by `token` exactly as follows (no initial capital letter or quotation marks):
 
@@ -28,13 +28,13 @@ When using the API directly, provide the API token in an `Authorization` header,
 Authorization: token API_KEY
 ```
 
-If you are using the API through [Snyk Apps](https://docs.snyk.io/integrations/snyk-apps), provide the `access_token` in an `Authorization` header preceded by `bearer` as follows:
+If you are using the API through [Snyk Apps](https://docs.snyk.io/snyk-api/snyk-apps), provide the `access_token` in an `Authorization` header preceded by `bearer` as follows:
 
 ```
 Authorization: bearer ACCESS_TOKEN
 ```
 
-Otherwise a 401 "Unauthorized" response will be returned:
+Otherwise, a 401 "Unauthorized" response will be returned:
 
 ```
 HTTP/1.1 401 Unauthorized
@@ -108,7 +108,7 @@ Sunset: Wed, 11 Nov 2021 11:11:11 GMT
 
 ## Pagination
 
-All endpoints in the Snyk REST API are paginated using _cursor-based_ pagination. This form of pagination helps prevent inconsistent results when collections are modified while they are being iterated. However, cursor-based pagination does not totally prevent inconsistent results, which can occur, for example, if an item is inserted in a prior page based on the sort order requested after a request is made. To mitigate the possibility of inconsistent results, by default Snyk sorts by insertion order so it is not possible to have items inserted on a prior page. However, if you specify the `sort` parameter, consistent pagination is no longer guaranteed. If you see inconsistent results you can submit a new request. If consistent pagination is important to your workflow, use the default insertion sort order.
+All endpoints in the Snyk REST API are paginated using _cursor-based_ pagination. This form of pagination helps prevent inconsistent results when collections are modified while they are being iterated. However, cursor-based pagination does not totally prevent inconsistent results, which can occur, for example, if an item is inserted in a prior page based on the sort order requested after a request is made. To mitigate the possibility of inconsistent results, by default, Snyk sorts by insertion order so it is not possible to have items inserted on a prior page. However, if you specify the `sort` parameter, consistent pagination is no longer guaranteed. If you see inconsistent results, you can submit a new request. If consistent pagination is important to your workflow, use the default insertion sort order.
 
 Whenever you receive an API response, it will contain appropriate links in the body of the response as follows:
 
