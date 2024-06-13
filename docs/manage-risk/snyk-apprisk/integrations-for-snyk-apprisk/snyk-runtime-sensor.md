@@ -207,6 +207,8 @@ aws eks delete-addon --addon-name snyk-runtimesensor --cluster-name $CLUSTER_NAM
 * If the Snyk Runtime Sensor is not properly reporting the `is_loaded` risk factor, it may be caused by a non-default value of the Linux kernel `perf_event_paranoid` configuration.\
   In such cases, install the helm chart with either `--set securityContext.privileged=true` or add `SYS_ADMIN` as a required Linux capability `--set "securityContext.capabilities={SYS_ADMIN}"`.
 
-
+{% hint style="info" %}
+The Loaded package risk factor is not supported by Snyk for open-source packages, only for application packages such as npm, Maven, or PyPI.
+{% endhint %}
 
 Release versions can be found on[ GitHub](https://github.com/snyk/runtime-sensor/releases).
