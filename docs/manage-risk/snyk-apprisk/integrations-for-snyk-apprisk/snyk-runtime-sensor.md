@@ -31,6 +31,8 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
 
 ## Installation
 
+The Snyk Runtime Sensor is a Kubernetes DeamonSet that can be easily deployed using various methods, including a [Helm chart](https://helm.sh/) or through the [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-i23vvrxuamcya)_._
+
 There is a [Helm chart](https://helm.sh) within this repo in [helm/runtime-sensor](https://github.com/snyk/runtime-sensor), that is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
 
 To install the Snyk runtime sensor using Helm Charts, you can follow these steps:
