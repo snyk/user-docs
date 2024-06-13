@@ -23,7 +23,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set bitbucket=<ENTER_BITBUCKET_URL> \
              --set bitbucketApi=<ENTER_BITBUCKET_API_URL> \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
-             --set enabledAppRisk=true \
+             --set enableAppRisk=true \
              -n snyk-broker --create-namespace
 ```
 
@@ -37,7 +37,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set bitbucket=<ENTER_BITBUCKET_URL> \
              --set bitbucketApi=<ENTER_BITBUCKET_API_URL> \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
-             --set enabledAppRisk=true \
+             --set enableAppRisk=true \
              -n snyk-broker --create-namespace
 ```
 
