@@ -24,9 +24,9 @@ terrraform init && snyk iac test
 
 Snyk IaC supports scanning the following cloud providers:
 
-* [Amazon Web Services](../../../integrate-with-snyk/cloud-platforms-integrations/aws-integration/)
-* [Azure](../../../integrate-with-snyk/cloud-platforms-integrations/azure-integration-for-cloud-configurations/)
-* [Google Cloud](../../../integrate-with-snyk/cloud-platforms-integrations/google-cloud-integration/)
+* [Amazon Web Services](../../../scan-using-snyk/snyk-iac/cloud-platforms-integrations/aws-integration/)
+* [Azure](../../../scan-using-snyk/snyk-iac/cloud-platforms-integrations/azure-integration-for-cloud-configurations/)
+* [Google Cloud](../../../scan-using-snyk/snyk-iac/cloud-platforms-integrations/google-cloud-integration/)
 
 ## Supported resources for cloud scans
 
