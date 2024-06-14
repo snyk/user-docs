@@ -7,7 +7,7 @@
 {% hint style="info" %}
 **Snyk Code for Scala**
 
-Interfile analysis is supported, as the data flow is monitored between multiple files.
+Interfile analysis is supported for Scala for code analysis, as the data flow is monitored between multiple files.
 {% endhint %}
 
 Snyk Code supports the following frameworks:

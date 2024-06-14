@@ -284,7 +284,7 @@ Here you can find information about the programming languages, fully supported f
 
 * Reports
 * Custom rules
-* Interfile is supported for Apex
+* Interfile analysis is supported for Apex
 * `.trigger` and `.cls` files are supported
 
 ### [.Net](.net/) for code analysis
@@ -375,7 +375,7 @@ Here you can find information about the programming languages, fully supported f
 
 * Reports
 * Custom rules
-* Interfile is supported for JavaScript for code analysis
+* Interfile analysis is supported for JavaScript for code analysis
 
 **Framework versions**: Versions up to ECMAScript 2020
 
@@ -388,7 +388,7 @@ Here you can find information about the programming languages, fully supported f
 **Features**:&#x20;
 
 * Reports
-* Interfile is supported for Kotlin
+* Interfile analysis is supported for Kotlin
 * Android is partially supported
 
 ### [PHP](php.md) for code analysis
@@ -429,7 +429,7 @@ Here you can find information about the programming languages, fully supported f
 
 * Reports
 * Customer rules
-* Interfile is supported for Python for code analysis
+* Interfile analysis is supported for Python for code analysis
 
 **Framework versions**: Versions up to 3.8.x
 
@@ -461,7 +461,7 @@ Here you can find information about the programming languages, fully supported f
 **Features**:&#x20;
 
 * Reports
-* Interfile is supported for Scala
+* Interfile analysis is supported for Scala
 
 **Framework versions**: Version 2.x
 
@@ -496,7 +496,7 @@ Here you can find information about the programming languages, fully supported f
 
 * Reports
 * Custom rules
-* Interfile is supported for TyepScript for code analysis
+* Interfile analysis is supported for TyepScript for code analysis
 
 **Framework versions**: Versions up to 4.2
 
