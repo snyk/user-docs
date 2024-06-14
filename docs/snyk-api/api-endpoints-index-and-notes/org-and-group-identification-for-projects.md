@@ -1,11 +1,11 @@
-# Org identification and projects in Snyk APIs
+# Org and group identification for Projects
 
-The Org Id is defined by Snyk in Snyk and thus is the same in both Snyk API v1 and the Snyk REST API. For projects, the best identifier depends on the Snyk product.
+The Org Id is defined by Snyk and is the same in both the V1 and REST API. For Projects, the best identifier depends on the Snyk product.
 
 In the Snyk REST API, you can:
 
-* Get a list of groups identified by GroupId (**GET** /groups/{group\_id}).
-* Get the list of Orgs that you have access to, identified by Orgid (**GET** /orgs/{org\_id}).
+* Get a list of groups identified by GroupId using Get a group (**GET** /groups/{group\_id}).
+* Get the list of Orgs that you have access to, identified by Orgid, using Get an org (**GET** /orgs/{org\_id}).
 
 **Note:** These are [experimental](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#overview) endpoints.
 
