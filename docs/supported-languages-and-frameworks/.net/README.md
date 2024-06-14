@@ -7,7 +7,7 @@ Snyk has introduced a new Early Access feature with significantly enhanced scann
 {% endhint %}
 
 {% hint style="info" %}
-Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
 ### Code analysis
@@ -55,9 +55,9 @@ To check compliance for open source licenses, see [Getting Started with Snyk Lic
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../quickstart/create-or-log-in-to-a-snyk-account.md)
-2. [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-3. [Set the default Organization for all Snyk tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis)
+1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
+3. [Set the default Organization for all Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis)
 
 #### Code analysis
 
@@ -69,14 +69,14 @@ snyk code test
 
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
-* [Snyk CLI commands](../../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
-* [Exporting the test results to a JSON or SARIF file](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
+* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
+* [Exporting the test results to a JSON or SARIF file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
 
 #### Open source and licensing
 
-The following sections list the steps to start scanning your dependencies. The basic commands are covered, such as `snyk test` and `snyk monitor`. To check the full list, see [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md).
+The following sections list the steps to start scanning your dependencies. The basic commands are covered, such as `snyk test` and `snyk monitor`. To check the full list, see [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).
 
 {% hint style="info" %}
 To scan your dependencies, ensure you install the relevant package manager and that your Project contains the supported manifest files.
@@ -86,7 +86,7 @@ To scan your dependencies, ensure you install the relevant package manager and t
 
 #### Dependencies managed by PackageReference
 
-Restore dependencies in the .NET project by running `dotnet restore` and make sure that **obj/project.assets.json** has been created by the previous command. Then run `snyk test`. For more information see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-snyk-cli.md).
+Restore dependencies in the .NET project by running `dotnet restore` and make sure that **obj/project.assets.json** has been created by the previous command. Then run `snyk test`. For more information see [Getting started with the CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md).
 
 Examples of supported Project files that resolve into **project.assets.json** include:
 
@@ -114,8 +114,8 @@ While you should also be able to run `snyk test` without previously installing d
 
 #### **Nuget CLI options**&#x20;
 
-* For information about the `snyk test` options available for use with NuGet, see [Options for NuGet projects in the Test help](../../../snyk-cli/commands/test.md#options-for-nuget-projects).&#x20;
-* For the available `snyk monitor` options, see [Options for NuGet projects in the Monitor help](../../../snyk-cli/commands/monitor.md#options-for-nuget-projects).
+* For information about the `snyk test` options available for use with NuGet, see [Options for NuGet projects in the Test help](../../snyk-cli/commands/test.md#options-for-nuget-projects).&#x20;
+* For the available `snyk monitor` options, see [Options for NuGet projects in the Monitor help](../../snyk-cli/commands/monitor.md#options-for-nuget-projects).
 
 #### Paket **CLI options**
 
@@ -134,7 +134,7 @@ Import .NET Projects from any of the Git services Snyk supports.
 
 When your Projects have been imported, Snyk analyzes your Projects based on their supported manifest files and then builds the dependency tree and displays it in the Snyk Web UI, similar to the following:
 
-<figure><img src="../../../.gitbook/assets/dotNet Project.png" alt=".NET dependency tree in Snyk Web UI"><figcaption><p>.NET dependency tree in Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dotNet Project.png" alt=".NET dependency tree in Snyk Web UI"><figcaption><p>.NET dependency tree in Snyk Web UI</p></figcaption></figure>
 
 #### **Nuget**
 
@@ -165,15 +165,15 @@ You can also **update your language preferences.**
 2. Go to **Settings** and select settings for **.NET**. To scan all development dependencies, be sure that **Scan build dependencies** are checked.
 3.
 
-    <figure><img src="../../../.gitbook/assets/DotNet languages.png" alt=""><figcaption><p>Update your language preferences</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/DotNet languages.png" alt=""><figcaption><p>Update your language preferences</p></figcaption></figure>
 
 #### Fixing vulnerabilities for .NET
 
-For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your Projects, see [Fix your vulnerabilities](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md).
+For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your Projects, see [Fix your vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md).
 
 {% hint style="info" %}
 **Feature availability**\
-The Fix PR feature is _only_ available across Snyk [SCM](../../../scm-ide-and-ci-cd-workflow-and-integrations/git-repository-and-ci-cd-integrations-comparisons.md) integrations.
+The Fix PR feature is _only_ available across Snyk [SCM](../../scm-ide-and-ci-cd-workflow-and-integrations/git-repository-and-ci-cd-integrations-comparisons.md) integrations.
 {% endhint %}
 
 #### Fix PR supported manifest files
@@ -182,9 +182,9 @@ If you are currently managing your Project dependencies with NuGet and leveragin
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../../../snyk-api/)).
+:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
 
 ## Help
 

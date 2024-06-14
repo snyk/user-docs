@@ -15,7 +15,7 @@ Snyk Code supports the following frameworks:
 ### Open source and licensing
 
 {% hint style="info" %}
-Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
 #### Open source policy
@@ -52,9 +52,9 @@ The way Snyk analyzes and builds the dependencies tree varies depending on the l
 
 #### Prerequisites
 
-1. [Create a Snyk account](../quickstart/create-or-log-in-to-a-snyk-account.md).
-2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
-3. [Set the default Organization for all Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis).
+1. [Create a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+2. [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
+3. [Set the default Organization for all Snyk tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis).
 4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
 5. Ensure you have included the relevant manifest files supported by Snyk before testing.
 
@@ -68,10 +68,10 @@ snyk code test
 
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
-* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
-* [Exporting the test results to a JSON or SARIF file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
+* [Snyk CLI commands](../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
+* [Exporting the test results to a JSON or SARIF file](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
 
 #### Open source and licensing
 
@@ -79,7 +79,7 @@ To build the dependency tree, Snyk analyzes the `composer.json` and `composer.lo
 
 There are no unique options for use when running Snyk for PHP.
 
-For more information about Snyk CLI see [Getting started with the CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md).
+For more information about Snyk CLI see [Getting started with the CLI](../snyk-cli/getting-started-with-the-snyk-cli.md).
 
 ### Snyk Web UI (Git repository integration)
 
@@ -106,13 +106,13 @@ These settings are applied to all newly imported Projects and to all existing Pr
 #### What's next?
 
 * [Open a Fix PR](php.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
+* [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 
 ### Snyk integrations&#x20;
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
+:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../snyk-api/)).
 
 ## Troubleshooting
 

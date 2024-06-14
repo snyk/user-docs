@@ -4,7 +4,7 @@
 Snyk for Bazel is supported only for Snyk Open Source. The instructions on this page apply to Bazel v 7 only.
 {% endhint %}
 
-Snyk supports testing Projects that have their dependencies managed by Bazel. The recommended approach is to test and monitor using the [Snyk API v1 Dep Graph endpoints](../../snyk-api/how-to-use-snyk-api-endpoints/api-v1-dep-graph-endpoints.md). While you can use Bazel for many languages including C++, the Dep Graph endpoints do not support C++.
+Snyk supports testing Projects that have their dependencies managed by Bazel. The recommended approach is to test and monitor using the [Snyk API v1 Dep Graph endpoints](../snyk-api/how-to-use-snyk-api-endpoints/api-v1-dep-graph-endpoints.md). While you can use Bazel for many languages including C++, the Dep Graph endpoints do not support C++.
 
 ## Getting started with Snyk for Bazel&#x20;
 
@@ -18,7 +18,7 @@ Bazel has limited native integration with package registries such as npmjs.org o
 
 You must often manually specify all dependencies (package name, location, and version), including transitive dependencies, which can then be fetched by Bazel during builds.
 
-Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover the dependencies from a Project. For details about testing Bazel Projects using Snyk, see [Snyk API v1 Dep Graph endpoints](../../snyk-api/how-to-use-snyk-api-endpoints/api-v1-dep-graph-endpoints.md).
+Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover the dependencies from a Project. For details about testing Bazel Projects using Snyk, see [Snyk API v1 Dep Graph endpoints](../snyk-api/how-to-use-snyk-api-endpoints/api-v1-dep-graph-endpoints.md).
 
 ## Examples of Snyk for Bazel
 

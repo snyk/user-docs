@@ -7,10 +7,10 @@ This page provides an overview of supported languages and package managers acros
 Here you can find information about the programming languages, fully supported package managers, and features for Snyk Open Source.
 
 {% hint style="info" %}
-Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
-### [.NET](.net/)
+### [.NET](.net/) for open source
 
 **Package manager**: NuGet, Paket
 
@@ -30,7 +30,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [C/C++](c-c++/)
+### [C/C++](c-c++/) for open source
 
 **Package manager**: NA
 
@@ -49,7 +49,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Dart and Flutter](dart-and-flutter.md)&#x20;
+### [Dart and Flutter](dart-and-flutter.md) for open source
 
 **Package manager**: Pub
 
@@ -65,7 +65,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Elixir](elixir.md)&#x20;
+### [Elixir](elixir.md) for open source
 
 **Package manager**: Hex
 
@@ -84,7 +84,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Go](go.md)&#x20;
+### [Go](go.md) for open source
 
 **Package manager**: Go Modules, dep
 
@@ -103,7 +103,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Java and Kotlin](java-and-kotlin/)&#x20;
+### [Java and Kotlin](java-and-kotlin/) for open source
 
 **Package manager**: Maven, Gradle
 
@@ -129,7 +129,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
   * `4.*`, `5.*`, `6.*`, `7.*`\
     For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 
-### [JavaScript](javascript/)&#x20;
+### [JavaScript](javascript/) for open source
 
 **Package manager**: npm, Yarn
 
@@ -155,7 +155,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 * Yarn
   * `Yarn 1, Yarn 2, Yarn 3`. For more information, see the [Snyk Javascript ](javascript/#yarn)page.
 
-### [PHP](php.md)
+### [PHP](php.md) for open source
 
 **Package manager**: Composer
 
@@ -174,7 +174,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Python](python.md)&#x20;
+### [Python](python.md) for open source
 
 **Package manager**: Pip, Poetry, pipenv, setup.py
 
@@ -194,7 +194,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: Suitable with `Python 2 -> 2.7.16`, and `Python 3 -> 3.7.4`.
 
-### [Ruby](ruby.md)&#x20;
+### [Ruby](ruby.md) for open source
 
 **Package manager**: Bundler
 
@@ -214,7 +214,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: All Gemfile and Gemfile.lock are compatible with the [Snyk supported Ruby versions](ruby.md#supported-ruby-versions).
 
-### [Rust](rust.md)
+### [Rust](rust.md) for open source
 
 **Package manager**: Cargo
 
@@ -230,7 +230,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Scala](scala.md)&#x20;
+### [Scala](scala.md) for open source
 
 **Package manager**: sbt
 
@@ -249,7 +249,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager versions**: NA
 
-### [Swift and Objective-C](swift-and-objective-c.md)
+### [Swift and Objective-C](swift-and-objective-c.md) for open source
 
 **Package manager**: CocoaPods, Swift Package Manager
 
@@ -272,7 +272,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 Here you can find information about the programming languages, fully supported frameworks, and features for Snyk Code.
 
-### [Apex](apex.md)
+### [Apex](apex.md) for code anaysis
 
 **Frameworks**: APEX&#x20;
 
@@ -284,10 +284,10 @@ Here you can find information about the programming languages, fully supported f
 
 * Reports
 * Custom rules
-* Interfile is supported
+* Interfile is supported for Apex
 * `.trigger` and `.cls` files are supported
 
-### [.Net](.net/)
+### [.Net](.net/) for code analysis
 
 **Frameworks**:&#x20;
 
@@ -310,7 +310,7 @@ Here you can find information about the programming languages, fully supported f
 * ASP.NET 6.x
 * .NET 6
 
-### [C/C++](c-c++/)
+### [C/C++](c-c++/) for code analysis
 
 **Frameworks**: C++ Standard Library
 
@@ -320,7 +320,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Features**: Reports
 
-### [Go](go.md)
+### [Go](go.md) for code analysis
 
 **Frameworks**: GORM
 
@@ -335,7 +335,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to go1.16
 
-### [Java](java-and-kotlin/)
+### [Java](java-and-kotlin/) for code analysis
 
 **Frameworks:**
 
@@ -357,7 +357,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to Java SE 17
 
-### [JavaScript](javascript/)
+### [JavaScript](javascript/) for code analysis
 
 **Frameworks**:&#x20;
 
@@ -375,10 +375,11 @@ Here you can find information about the programming languages, fully supported f
 
 * Reports
 * Custom rules
+* Interfile is supported for JavaScript for code analysis
 
 **Framework versions**: Versions up to ECMAScript 2020
 
-### [Kotlin](java-and-kotlin/)
+### [Kotlin](java-and-kotlin/) for code analysis
 
 **Import your app through SCM**: Available
 
@@ -387,10 +388,10 @@ Here you can find information about the programming languages, fully supported f
 **Features**:&#x20;
 
 * Reports
-* Interfile is supported
+* Interfile is supported for Kotlin
 * Android is partially supported
 
-### [PHP](php.md)
+### [PHP](php.md) for code analysis
 
 **Frameworks**:&#x20;
 
@@ -409,7 +410,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions 5.2 up to 8.0
 
-### [Python](python.md)
+### [Python](python.md) for code analysis
 
 **Frameworks**:&#x20;
 
@@ -428,10 +429,11 @@ Here you can find information about the programming languages, fully supported f
 
 * Reports
 * Customer rules
+* Interfile is supported for Python for code analysis
 
 **Framework versions**: Versions up to 3.8.x
 
-### [Ruby](ruby.md)
+### [Ruby](ruby.md) for code analysis
 
 **Frameworks**: Ruby On Rails
 
@@ -444,7 +446,7 @@ Here you can find information about the programming languages, fully supported f
 * Reports
 * Custom rules
 
-### [Scala](scala.md)
+### [Scala](scala.md) for code analysis
 
 **Frameworks**:&#x20;
 
@@ -459,11 +461,11 @@ Here you can find information about the programming languages, fully supported f
 **Features**:&#x20;
 
 * Reports
-* Interfile is supported
+* Interfile is supported for Scala
 
 **Framework versions**: Version 2.x
 
-### [Swift](swift-and-objective-c.md)
+### [Swift](swift-and-objective-c.md) for code analysis
 
 **Frameworks**:&#x20;
 
@@ -482,7 +484,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to 5.7.x
 
-### [TypeScript](typescript.md)
+### [TypeScript](typescript.md) for code analysis
 
 **Frameworks**: npm
 
@@ -494,10 +496,11 @@ Here you can find information about the programming languages, fully supported f
 
 * Reports
 * Custom rules
+* Interfile is supported for TyepScript for code analysis
 
 **Framework versions**: Versions up to 4.2
 
-### [VB.NET](vb.net.md)
+### [VB.NET](vb.net.md) for code analysis
 
 **Frameworks**: NuGet
 

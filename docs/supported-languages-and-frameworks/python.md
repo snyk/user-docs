@@ -27,7 +27,7 @@ Features may not be available, depending on your plan. See the [Plans and pricin
 {% endhint %}
 
 {% hint style="info" %}
-Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
 | Package managers / Features                  | CLI support | Git support | License scanning | Fix PRs |
@@ -51,9 +51,9 @@ To scan your Projects, you must first install the relevant package manager and e
 
 #### Prerequisites
 
-1. [Create a Snyk account](../quickstart/create-or-log-in-to-a-snyk-account.md).
-2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
-3. [Set the default Organization for all Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis).
+1. [Create a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+2. [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
+3. [Set the default Organization for all Snyk tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis).
 4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
 5. Ensure you have included the relevant manifest files supported by Snyk before testing.
 
@@ -67,10 +67,10 @@ snyk code test
 
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
-* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
-* [Exporting the test results to a JSON or SARIF file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
+* [Snyk CLI commands](../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
+* [Exporting the test results to a JSON or SARIF file](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
 
 #### Open source and licensing
 
@@ -169,7 +169,7 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Poetry dev dependencies** option under the **Poetry dev dependencies** settings.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (145) (1).png" alt=""><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (145) (1).png" alt=""><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
 #### Pipenv and Git repositories
 
@@ -194,7 +194,7 @@ Pipenv dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Pipenv dev dependencies** option under the **Pipenv** settings.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (146).png" alt=""><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>
 
 ### Python version support
 
@@ -235,7 +235,7 @@ The behavior of imports, re-tests, and PR checks for Projects with dependencies 
 * Python 2.7 or 3.7 - scans will succeed, but the incompatible dependencies are omitted from the results.
 {% endhint %}
 
-To define which Python minor version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../../manage-risk/policies/the-.snyk-file.md).
+To define which Python minor version Snyk uses to test your Git-imported pip Projects, you can use Organization settings and [`.snyk` policy files](../manage-risk/policies/the-.snyk-file.md).
 
 To define the Python version for all Projects in an Organization:
 
@@ -244,7 +244,7 @@ To define the Python version for all Projects in an Organization:
 3. Select **Edit settings** for **Python**.
 4. From the **Python version** dropdown, select the Python version to use when testing Projects for this Organization.
 
-<figure><img src="../../.gitbook/assets/python-version.png" alt=""><figcaption><p>Pip Python version settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/python-version.png" alt=""><figcaption><p>Pip Python version settings</p></figcaption></figure>
 
 If you require a Project in an Organization to use a different Python version, you may add a `.snyk` file to the Project repository and specify the desired version.
 

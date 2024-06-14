@@ -47,7 +47,7 @@ Under **Additional Parameters** in the IDE settings, enter the `--unmanaged` opt
 
 Use the `--help` option in the CLI for details of Snyk CLI commands.
 
-:link: [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md)
+:link: [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
 
 #### Codebase
 
@@ -63,7 +63,7 @@ snyk code test
 If you precompile components, the source code should still be present to get the best results and coverage.
 {% endhint %}
 
-For reporting, you can generate reports using the [snyk-to-html](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results).
+For reporting, you can generate reports using the [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results).
 
 #### **Open Source libraries**
 
@@ -82,7 +82,7 @@ Similarly, for monitoring and sharing reporting:
 snyk monitor --unmanaged --org=<org-id>
 ```
 
-Where **org-id** is found under your Organization settings in the Snyk web interface, although the Organization id is not required, it's strongly suggested. Like Snyk Code, you can generate reports using the [snyk-to-html](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts.&#x20;
+Where **org-id** is found under your Organization settings in the Snyk web interface, although the Organization id is not required, it's strongly suggested. Like Snyk Code, you can generate reports using the [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts.&#x20;
 
 * For individual or personal scans, use the CLI or IDE and use the **snyk monitor --unmanaged** command to upload results, but the recommendation is you send these results to your personal folder and disable the scheduled scanning in the Project settings to ensure an individual scan does not cause noise. This provides license/policy information in a viewable state.
 * For automated scans, such as CI/CD, use **snyk monitor --unmanaged** and send results to the Organization of your choice. This provides license/policy information in a viewable state.
@@ -104,7 +104,7 @@ The list is printed before the issues list, as shown below:
 #### **License policy text during the Beta phase**
 
 {% hint style="info" %}
-[License Compliance](../../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) allows a company to create a license policy for your Open Source, indicating what licenses are not approved for use. To access [License Compliance](../../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md), you must be on a Snyk Team or Enterprise [plan](https://snyk.io/plans). Snyk detects and alerts when a match is found. The alert contains the name of the license and license policy text.&#x20;
+[License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) allows a company to create a license policy for your Open Source, indicating what licenses are not approved for use. To access [License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md), you must be on a Snyk Team or Enterprise [plan](https://snyk.io/plans). Snyk detects and alerts when a match is found. The alert contains the name of the license and license policy text.&#x20;
 
 **License policy text** is the text associated with the issue by your administrators that provides custom direction on what to do or why it's contrary to the policy, if it's found in your application.
 {% endhint %}
@@ -125,6 +125,6 @@ If you develop advanced dependency management strategies, you might not use the 
 
 ### **Options and plugins**
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
-* For advanced filtering options, see[ snyk-filter](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
+* For advanced filtering options, see[ snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).

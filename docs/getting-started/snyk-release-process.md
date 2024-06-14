@@ -38,7 +38,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Git repository cloning](../snyk-admin/snyk-preview.md#enable-git-repository-cloning)
 * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
 * [Snyk broker commit signing](../enterprise-configuration/snyk-broker/snyk-broker-commit-signing.md)
-* [Improved .NET scanning](supported-languages-and-frameworks/.net/improved-.net-scanning.md)
+* [Improved .NET scanning](../supported-languages-and-frameworks/.net/improved-.net-scanning.md)
 
 ## General Availability
 

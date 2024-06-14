@@ -15,7 +15,7 @@ Now that Snyk no longer supports scanning of govendor Projects, a warning is iss
 {% endhint %}
 
 {% hint style="info" %}
-Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
 Snyk supports testing and monitoring of Go Projects with dependencies managed by [Go Modules](https://golang.org/ref/mod) and [dep](https://github.com/golang/dep).
@@ -29,7 +29,7 @@ To manage licenses from your developer workflows through policy, see the followi
 
 #### Open source license compliance
 
-To check compliance for open source licenses, see [Snyk License Compliance Management](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md).
+To check compliance for open source licenses, see [Snyk License Compliance Management](../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md).
 
 #### Open source supported features
 
@@ -55,9 +55,9 @@ The way Snyk analyzes and builds the dependencies tree varies depending on the l
 
 #### Prerequisites
 
-1. [Create a Snyk account](../quickstart/create-or-log-in-to-a-snyk-account.md).
-2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
-3. [Set the Snyk Organization for CLI tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md).
+1. [Create a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+2. [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine).
+3. [Set the Snyk Organization for CLI tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md).
 4. Ensure you have installed the relevant package manager before you begin using the Snyk CLI (open source).
 5. Ensure you have included the relevant manifest files supported by Snyk before testing.
 
@@ -71,9 +71,9 @@ snyk code test
 
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
-* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-* [`snyk-to-html`](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md)
+* [Snyk CLI commands](../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
+* [`snyk-to-html`](../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md)
 
 #### Open source and licensing
 
@@ -124,7 +124,7 @@ When full source code analysis is enabled, Snyk uses the `go list -json -deps ./
 #### Enable full source code analysis
 
 {% hint style="info" %}
-Full source code analysis for Go Modules is currently in [Early Access](../snyk-release-process.md#open-beta).
+Full source code analysis for Go Modules is currently in [Early Access](../getting-started/snyk-release-process.md#open-beta).
 {% endhint %}
 
 To build the most accurate dependency tree for Go Modules Projects imported from Git, Snyk needs to access all the files in your repository.
@@ -138,9 +138,9 @@ To enable full source code analysis, adjust your settings as follows:
 3. Select **Edit settings** for **Go**.
 4. Toggle full source code analysis on or off.
 
-<figure><img src="../../.gitbook/assets/image (149) (1).png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (149) (1).png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
 
-For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md).
+For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](../working-with-snyk/how-snyk-handles-your-data.md).
 
 #### **Private modules**
 
@@ -160,7 +160,7 @@ Private module support in different SCMs varies depending on whether [full sourc
 Snyk Broker is currently supported only  when [full source code analysis](go.md#enable-full-source-code-analysis) is disabled
 {% endhint %}
 
-Go Modules Projects imported using new [Snyk Broker](../../enterprise-configuration/snyk-broker/) clients should work as expected.
+Go Modules Projects imported using new [Snyk Broker](../enterprise-configuration/snyk-broker/) clients should work as expected.
 
 To add support to clients created before December 30, 2020, add `go.mod` and `go.sum` to your `accept.json` file, as per the changes in this [pull request](https://github.com/snyk/broker/pull/299/files).
 
@@ -173,12 +173,12 @@ To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your Git r
 #### What's next?
 
 * [Open a Fix PR](go.md#open-a-fix-pr)&#x20;
-* [Configure PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
+* [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 
 ### Snyk integrations&#x20;
 
-* For integrated development environments, see [Use Snyk in your IDE](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
-* If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
+* For integrated development environments, see [Use Snyk in your IDE](../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
+* If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../snyk-api/)).
 
 ## Troubleshooting
 

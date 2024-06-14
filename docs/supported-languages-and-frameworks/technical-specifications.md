@@ -196,7 +196,7 @@ Snyk scans your codebase following this sequence
 2. Rules are run against the event graph to find matches. The rules act as a checklist of known vulnerabilities that Snyk looks for in the event graph.
 3. If a match is found, Snyk looks for a vulnerability in the event graph, identifying where problems might be hiding in the code.&#x20;
 
-:link: See [Snyk Code AI Engine](../../scan-with-snyk/snyk-code/#ai-engine).
+:link: See [Snyk Code AI Engine](../scan-with-snyk/snyk-code/#ai-engine).
 
 ### More information about language support for Snyk Code
 

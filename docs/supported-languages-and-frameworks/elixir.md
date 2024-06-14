@@ -6,7 +6,7 @@ Snyk for Elixir is supported only for Snyk Open Source.
 
 ## Supported frameworks and package managers
 
-Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](../../snyk-cli/).
+Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](../snyk-cli/).
 
 {% hint style="info" %}
 Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -59,9 +59,9 @@ Snyk also has limited support for `:path`, `:git` and `:github` dependencies, bu
 
 ### Snyk integrations
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/)).
+:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../snyk-api/)).
 
 ## Troubleshooting
 

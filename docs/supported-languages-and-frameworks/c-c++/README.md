@@ -36,7 +36,7 @@ Scans are powered by an open source database, periodically updated with the late
 To navigate through the vulnerabilities for C/C++, use the [Snyk Vuln DB](https://security.snyk.io).
 {% endhint %}
 
-When you run the [`snyk test --unmanaged`](../../../snyk-cli/commands/test.md#unmanaged) command, Snyk does the following:
+When you run the [`snyk test --unmanaged`](../../snyk-cli/commands/test.md#unmanaged) command, Snyk does the following:
 
 1. Converts all files from your current folder into a list of hashes.
 2. Sends hashes to the Snyk scan server to compute the dependencies list.
@@ -118,9 +118,9 @@ Example:\
 
 #### Prerequisites
 
-1. [Create a Snyk account](../../quickstart/create-or-log-in-to-a-snyk-account.md)
-2. [Install Snyk CLI and authenticate your machine](../../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-3. [Set the default Organization for all Snyk tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis)
+1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
+3. [Set the default Organization for all Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis)
 
 #### Code analysis
 
@@ -132,10 +132,10 @@ snyk code test
 
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
-* [Snyk CLI commands](../../../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
-* [Exporting the test results to a JSON or SARIF file](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
+* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
+* [Exporting the test results to a JSON or SARIF file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
 
 #### Open source and licensing
 
@@ -357,7 +357,7 @@ This creates a snapshot of dependencies and vulnerabilities and imports them int
 
 Importing a Project with unmanaged dependencies creates a new Project:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt=""><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt=""><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
 
 {% hint style="info" %}
 Snyk Web UI supports only code analysis, using Snyk Code.
@@ -373,7 +373,7 @@ No additional options are required. The Snyk plugin has views within the IDE for
 
 Under **Additional Parameters** in the IDE settings, enter the **--unmanaged** option to scan for C/C++ open source dependencies.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-08-04 at 12.18.01.png" alt=""><figcaption><p>Scan for dependencies</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 12.18.01.png" alt=""><figcaption><p>Scan for dependencies</p></figcaption></figure>
 
 ## Help
 

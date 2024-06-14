@@ -8,7 +8,7 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 
 * Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.
 * Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
-* Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/)
+* Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/)
 
 {% hint style="info" %}
 If you are not a Snyk Enterprise user using Artifactory or Nexus, analysis is best performed via CLI, as the build system will retrieve the dependencies and be present locally.
@@ -16,11 +16,11 @@ If you are not a Snyk Enterprise user using Artifactory or Nexus, analysis is be
 
 For more information on package registry integrations, including Maven, see the following:
 
-* Package registry integrations: [Nexus Repository Manager setup](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/)
-* [Artifactory Registry for Maven](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
-* [Nexus Registry for Maven](../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
-* Nexus Container Registry: [Container security with Nexus integration](../../../scan-using-snyk/snyk-container/container-security-integrations/integrate-with-nexus-container-registry.md)
-* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md) and [Nexus Repository Manager Gatekeeper plugin](../../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
+* Package registry integrations: [Nexus Repository Manager setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/)
+* [Artifactory Registry for Maven](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
+* [Nexus Registry for Maven](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
+* Nexus Container Registry: [Container security with Nexus integration](../../scan-using-snyk/snyk-container/container-security-integrations/integrate-with-nexus-container-registry.md)
+* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md) and [Nexus Repository Manager Gatekeeper plugin](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
 
 ## Language and package manager considerations
 
@@ -77,11 +77,11 @@ Typically you can instrument testing as part of a build system or adopt a lockfi
 
 * It is quite common for large organizations to monitor applications via Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
 * As developers become familiar with Snyk capabilities, they widen the scope of applications with PR checks for gating.
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 
 ### Gradle Projects without a lock file
 
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 * Gating and failing the build typically will be turned on one Project to start so that everyone can become familiar with the process and use passive monitoring for the remainder of the portfolio.
 
 ## Snyk CLI Tips and Tricks
@@ -92,7 +92,7 @@ Typically you can instrument testing as part of a build system or adopt a lockfi
 
 Use the `--help` option in the CLI for details of Snyk CLI commands.
 
-:link: [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md)
+:link: [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
 
 #### Testing your own code:
 
@@ -102,13 +102,13 @@ Use the `--help` option in the CLI for details of Snyk CLI commands.
 
 #### Open Source libraries
 
-<table data-full-width="true"><thead><tr><th>Maven</th><th>Gradle</th><th>Unmanaged</th></tr></thead><tbody><tr><td><ul><li><p>The <strong>snyk test</strong> command tests the first manifest it can find, and scans that singular entry point. To scan all manifests:</p><ul><li>To scan aggregate projects, use the <strong>--maven-aggregate-project</strong> option<br>(for example, <strong>snyk test --maven-aggregate-project</strong>)</li><li>To scan for all projects use <strong>--all-projects</strong> option:<br>(that is, <strong>snyk test --all-projects</strong>)</li></ul></li></ul><ul><li><p>Snyk scans active profiles activated by default.</p><ul><li>Any additional Maven args can be passed, a common one is a non-standard settings.xml location. For example, <strong>snyk test -- -s path/to/settings.xml</strong></li></ul></li></ul><ul><li>To scan a specific configuration, test a specific Maven profile using <strong>-P [name]</strong>. For example, use <strong>snyk test -- -P prod</strong> to scan the <strong>prod</strong> configuration.</li></ul></td><td><p></p><ul><li>By default, Snyk CLI scans only the current project (the project in the root of the current folder), or the project that is specified by <strong>--file=path/to/build.gradle</strong>.</li></ul><ul><li><p>As above, <strong>--all-projects</strong> can be used across all package managers, which also includes the behaviors of <strong>--all-sub-projects</strong>, mentioned below.</p><ul><li>To scan all projects at once (recommended), use the <strong>--all-sub-projects</strong> option:<br>(that is, <strong>snyk test --all-sub-projects</strong>). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.</li><li>To scan a specific project (for example, myapp), use <strong>--sub-project=</strong> (that is, <strong>snyk test --sub-project=myapp</strong>).</li></ul></li></ul><ul><li>To test specific configurations, see detailed examples here <a href="./">Snyk for Java and Kotlin</a>.</li></ul><ul><li>For Android Build variants, see <a href="./">Snyk for Java and Kotlin</a>.</li></ul></td><td>Unmanaged Jars - see <a href="../../../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md">Scan all unmanaged JAR files</a>.</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Maven</th><th>Gradle</th><th>Unmanaged</th></tr></thead><tbody><tr><td><ul><li><p>The <strong>snyk test</strong> command tests the first manifest it can find, and scans that singular entry point. To scan all manifests:</p><ul><li>To scan aggregate projects, use the <strong>--maven-aggregate-project</strong> option<br>(for example, <strong>snyk test --maven-aggregate-project</strong>)</li><li>To scan for all projects use <strong>--all-projects</strong> option:<br>(that is, <strong>snyk test --all-projects</strong>)</li></ul></li></ul><ul><li><p>Snyk scans active profiles activated by default.</p><ul><li>Any additional Maven args can be passed, a common one is a non-standard settings.xml location. For example, <strong>snyk test -- -s path/to/settings.xml</strong></li></ul></li></ul><ul><li>To scan a specific configuration, test a specific Maven profile using <strong>-P [name]</strong>. For example, use <strong>snyk test -- -P prod</strong> to scan the <strong>prod</strong> configuration.</li></ul></td><td><p></p><ul><li>By default, Snyk CLI scans only the current project (the project in the root of the current folder), or the project that is specified by <strong>--file=path/to/build.gradle</strong>.</li></ul><ul><li><p>As above, <strong>--all-projects</strong> can be used across all package managers, which also includes the behaviors of <strong>--all-sub-projects</strong>, mentioned below.</p><ul><li>To scan all projects at once (recommended), use the <strong>--all-sub-projects</strong> option:<br>(that is, <strong>snyk test --all-sub-projects</strong>). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.</li><li>To scan a specific project (for example, myapp), use <strong>--sub-project=</strong> (that is, <strong>snyk test --sub-project=myapp</strong>).</li></ul></li></ul><ul><li>To test specific configurations, see detailed examples here <a href="./">Snyk for Java and Kotlin</a>.</li></ul><ul><li>For Android Build variants, see <a href="./">Snyk for Java and Kotlin</a>.</li></ul></td><td>Unmanaged Jars - see <a href="../../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md">Scan all unmanaged JAR files</a>.</td></tr></tbody></table>
 
 #### Testing containers
 
 Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. We recommend you integrate via CLI or Registry earlier in the pipeline and use this as an additional signal/insight into what is in production.
 
-See [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) for more details.
+See [Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) for more details.
 
 #### Infrastructure as code
 
@@ -120,9 +120,9 @@ See [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projec
 
 ### Options and plugins
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
-* For advanced filtering options, see[ snyk-filter](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
+* For advanced filtering options, see[ snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
 
 Additionally, the Snyk team has built plugins to make it easy to integrate Snyk into your workflows:
 

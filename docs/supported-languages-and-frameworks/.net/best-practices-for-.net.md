@@ -25,11 +25,11 @@ You can choose one of the following actions to address **vulnerabilities from ru
 
 ### **Vulnerabilities from runtime dependencies in SCM**
 
-If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your Project, you may choose to [ignore](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) it.
+If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your Project, you may choose to [ignore](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) it.
 
 ### **Vulnerabilities from runtime dependencies in CLI**
 
-If you believe you have found false positives because when the application runs in production, you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your Project, you may [ignore](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) them and do the following:
+If you believe you have found false positives because when the application runs in production, you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your Project, you may [ignore](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) them and do the following:
 
 * If, in production your application always runs on the latest SDK patch version, you can set `TargetLatestRuntimePatch` to `true` in the Project file. Make sure to upgrade your environments (for example, dev, prod) to the latest runtime version.
 
@@ -37,7 +37,7 @@ If you believe you have found false positives because when the application runs 
 <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 ```
 
-* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes the runtime. Then set `RuntimeFrameworkVersion`to the specific patch version in the Project file. You may choose to [ignore](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md) vulnerabilities that you believe are no longer relevant.
+* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes the runtime. Then set `RuntimeFrameworkVersion`to the specific patch version in the Project file. You may choose to [ignore](../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md) vulnerabilities that you believe are no longer relevant.
 
 ```
 <PropertyGroup>
@@ -114,7 +114,7 @@ See [.NET](./) for more information
 
 Use the `--help` option in the CLI for details of Snyk CLI commands.
 
-:link: [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md)
+:link: [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
 
 ### **Open Source libraries**
 
@@ -129,9 +129,9 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Containers**
 
-:link: [Supported Operating System Distributions](../../../scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
+:link: [Supported Operating System Distributions](../../scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
 
-:link: [Snyk CLI for container security](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
+:link: [Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
 
 ### Infrastructure as Code
 
@@ -139,9 +139,9 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Helpful options and plugins**
 
-* To help generate reports locally or at build time, see [snyk-to-html](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
+* To help generate reports locally or at build time, see [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
 * See the `--json` and `--sarif` options for generating output that can be programmatically accessed.
-* For advanced filtering options, see[ snyk-filter](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
+* For advanced filtering options, see[ snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
 
 ## Additional security topics for .Net developers
 

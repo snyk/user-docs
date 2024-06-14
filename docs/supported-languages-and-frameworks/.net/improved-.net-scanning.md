@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Release status**&#x20;
 
-Improved Snyk Open Source scanning for NuGet .NET applications is now available in [Early Access](../../snyk-release-process.md#early-access).&#x20;
+Improved Snyk Open Source scanning for NuGet .NET applications is now available in [Early Access](../../getting-started/snyk-release-process.md#early-access).&#x20;
 
 While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations.
 
@@ -32,7 +32,7 @@ The .NET scanning improvements are available when importing Projects using Git r
 
 **Follow these steps to enable the improvements:**
 
-1. Activate improved .NET scanning for your Organization or Group through the [Snyk Preview](../../../snyk-admin/snyk-preview.md) menu.
+1. Activate improved .NET scanning for your Organization or Group through the [Snyk Preview](../../snyk-admin/snyk-preview.md) menu.
 2. Re-import any repositories with .NET applications; **re-testing existing Projects is not sufficient.**
 
 ### Private package repository integration
@@ -55,11 +55,11 @@ If you are not using `nuget.config`, but another way of informing the .NET ecosy
 
 ## .NET scanning improvements for the Snyk CLI
 
-The .NET scanning improvements are also available in the Snyk CLI for both the [snyk test](../../../snyk-cli/commands/test.md) and [`snyk monitor`](../../../snyk-cli/commands/monitor.md) commands.
+The .NET scanning improvements are also available in the Snyk CLI for both the [snyk test](../../snyk-cli/commands/test.md) and [`snyk monitor`](../../snyk-cli/commands/monitor.md) commands.
 
 **Follow these steps to enable the improvements:**
 
-1. [Install](../../../snyk-cli/install-or-update-the-snyk-cli/) the latest version of the CLI.
+1. [Install](../../snyk-cli/install-or-update-the-snyk-cli/) the latest version of the CLI.
 2. Run `dotnet restore.`
 3. Scan your .NET Projects using `snyk test` or `snyk monitor` as usual, but add the  `--dotnet-runtime-resolution` option.
 

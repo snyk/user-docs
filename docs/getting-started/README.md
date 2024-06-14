@@ -39,7 +39,7 @@ Running Snyk from the command line.
 
 The Snyk tech stacks that are supported depend on the Snyk product you use:
 
-* **Snyk Open Source** and **Snyk Code**: see [Supported languages and frameworks](supported-languages-and-frameworks/).
+* **Snyk Open Source** and **Snyk Code**: see [Supported languages and frameworks](../supported-languages-and-frameworks/).
 * **Snyk Container**: see [Supported operating system distributions](../scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md).
 * **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
 
