@@ -368,7 +368,7 @@
       * [How to use the Terraform Cloud integration for IaC](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/terraform-cloud-integration-for-snyk-iac-using-run-tasks/how-to-use-the-terraform-cloud-integration-for-iac.md)
     * [Terraform Enterprise integration for Snyk IaC](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/terraform-enterprise-integration-for-snyk-iac.md)
   * [Git repositories and CI/CD comparisons](scm-ide-and-ci-cd-workflow-and-integrations/git-repository-and-ci-cd-integrations-comparisons.md)
-* [Integrate with Snyk](integrate-with-snyk/README.md)
+* [Additional Snyk integrations](integrate-with-snyk/README.md)
   * [Jira and Slack Integrations](integrate-with-snyk/jira-and-slack-integrations/README.md)
     * [Snyk Security in Jira Cloud Integration](integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md)
     * [Jira integration](integrate-with-snyk/jira-and-slack-integrations/jira-integration.md)

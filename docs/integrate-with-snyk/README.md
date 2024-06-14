@@ -1,18 +1,15 @@
-# Integrate with Snyk
+# Additional Snyk integrations
 
-This section of the Snyk user docs explains how to set up and use many types of integration with Snyk.  This includes plugins and extensions for using Snyk in your IDE, importing Git repositories, and methods for using Snyk in your CI/CD environment:
+Many integrations are available for using third-party functionality within Snyk and using Snyk within other tools. See [SCM, IDE, and Ci/CD workflow and integrations](../scm-ide-and-ci-cd-workflow-and-integrations/) for information on integrations and other methods of accomplishing that workflow.
 
-* [Use Snyk in your IDE](../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/)
-* [Git repositories and CI/CD comparisons](../scm-ide-and-ci-cd-workflow-and-integrations/git-repository-and-ci-cd-integrations-comparisons.md)
-* [Snyk CI/CD integrations](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/)
-* [Git repositories (SCMs) integrations with Snyk](../scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/)
+This page identifies additional Snyk integrations and where to find them.
 
 Snyk provides plugins for repository gatekeepers and integrations to connect with package repositories:
 
 * [Gatekeeper plugins](gatekeeper-plugins/)
 * [Package repository integrations](../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/)
 
-Additional integrations support working with Snyk Container and Snyk Iac:
+There are integrations that support Snyk Container and Snyk Iac:
 
 * [Snyk Container integrations](snyk-container-integrations/)
 * [Cloud platforms integrations](../scan-using-snyk/snyk-iac/cloud-platforms-integrations/)
