@@ -155,10 +155,8 @@ You can use the[ Azure DevOps REST API v6](https://learn.microsoft.com/en-us/res
 ## BitBucket setup guide
 
 {% hint style="info" %}
-BitBucket Server and BitBucket Cloud do not support automatic language detection. \
-If you use BitBucket Cloud you can manually add the language tags to a repository.&#x20;
-
-Note that for BitBucket Server you are unable to manually add language tags to a repository.
+Bitbucket Server and Bitbucket Cloud do not support automatic language detection. You can manually add language tags to a Bitbucket Cloud repository.\
+After manually setting up the languages in your Bitbucket project, Snyk can automatically detect and ingest all those languages in your Snyk AppRisk application.
 {% endhint %}
 
 ### Pulled entities <a href="#bitbucket-pulled-entities" id="bitbucket-pulled-entities"></a>
