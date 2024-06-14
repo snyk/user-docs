@@ -8,7 +8,15 @@ See [Snyk Advisor](https://snyk.io/advisor/).
 
 ### **Asset (Snyk AppRisk)**
 
-A Snyk AppRisk asset is an identifiable entity that is part of an application, and relevant for security and developers.
+A Snyk AppRisk asset is an identifiable entity that is part of an application, and relevant for security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
+
+### Application (Snyk AppRisk)
+
+An application is software that serves a business purpose and consists of assets that form the app. Organizations often define the scope of an application differently.
+
+### Application Graph
+
+Represents the mapping of security issues, application assets, relationships between assets, and all relevant contextual information.&#x20;
 
 ## B
 
@@ -23,6 +31,10 @@ See [Snyk Broker](../enterprise-configuration/snyk-broker/).
 ### Build System
 
 A system that takes the source code and builds the deployable application (such as a container).
+
+### Business context
+
+Information related to the organization's objectives, priorities, and regulatory requirements, such as criticality of the application to the business, compliance standards, data sensitivity, and potential impact on revenue or reputation.
 
 ## C
 
@@ -42,6 +54,10 @@ Command Line Interface. See [Snyk CLI](glossary.md#snyk-cli).
 
 Implementing security throughout the CI/CD pipeline, automating security embedding in microservices, and maximizing repetition to reduce the introduction of vulnerabilities. Snyk provides a comprehensive [CNAS platform](https://snyk.io/product/cloud-native-application-security/).\
 See the article [Cloud-native security guide for building secure applications](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/).
+
+### Code assets (Snyk AppRisk)
+
+A hierarchical list of all assets retrieved from the scanned repositories.
 
 ### Container
 
@@ -66,6 +82,10 @@ The security controls associated with the asset. Navigate to the Snyk AppRisk Co
 ### **Coverage (Snyk AppRisk)**
 
 An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program. A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
+
+### Coverage gap (Snyk AppRisk)
+
+An assessment of all assets that fall "out of policy" and do not satisfy the coverage criteria you have specified, due to infrequent scanning or no scanning at all.
 
 ### CVE
 
@@ -95,6 +115,10 @@ When your application uses another package, this other package becomes a depende
 ### Dependency tree
 
 Also known as Dependency path. A hierarchical graph showing the dependencies of a software application. This includes both direct and indirect dependencies and thus may be many levels deep.
+
+### Development context
+
+Information and requirements surrounding the development of applications within an organization, such as ownership, development tools, environments, teams, workflows, and processes.
 
 ### DevOps
 
@@ -168,6 +192,18 @@ Third-party products, applications, and platforms that Snyk works with, for exam
 
 A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Find and manage priority issues](../manage-risk/prioritize-issues-for-fixing/).
 
+### Issue (Snyk AppRisk)
+
+An issue is a security problem identified by a Snyk security product when testing an asset, that AppSec teams need to remediate.
+
+### Issues prioritization (Snyk AppRisk)
+
+Provides a centralized view of all the issues identified by Snyk with additional asset context. This empowers AppSec teams to better triage and remediate issues in Snyk.
+
+### Issue context (Snyk AppRisk)
+
+Information surrounding a particular security issue that serves as objective risk factors such as issue severity level, availability of a fix, exploit maturity.
+
 ## L
 
 ### Library
@@ -207,6 +243,10 @@ The identifier for the ecosystem that a Target exists in. Snyk can scan Projects
 ### Package
 
 A group of files and additional metadata about those files, used by package managers.
+
+### Package assets (Snyk AppRisk)
+
+Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk AppRisk to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
 
 ### Package manager
 
@@ -258,9 +298,17 @@ See [Container registry](glossary.md#container-registry) or [Package registry](g
 
 A storage area that contains all elements necessary for the distribution of an application.
 
+### Repository assets (Snyk AppRisk)
+
+A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository.
+
 ### Resource
 
 A cloud infrastructure entity such as an AWS S3 bucket, Identity and Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
+
+### Risk-based prioritization **(Snyk AppRisk)**
+
+Assess the risk for each app based on the application context and conduct best-in-class security analysis. Provide fix guidance to direct developer remediation efforts towards the most critical business issues.
 
 ### Risk score
 
@@ -269,6 +317,10 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 ### Rule
 
 A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../scan-with-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/).
+
+### Runtime context (Snyk AppRisk)
+
+Information on where and how an application is running.
 
 ## S
 
@@ -288,9 +340,17 @@ Software Bill Of Materials. A list of components in a piece of software.
 
 Software Composition Analysis. A technology that is used to identify open-source and third-party components in use in an application, including their known security vulnerabilities, and typically adversarial license restrictions. See also [Static Code Analysis](glossary.md#static-code-analysis).
 
+### Scanned artifacts (Snyk AppRisk)
+
+A scanned artifact in Snyk AppRisk is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.
+
 ### SCM
 
 Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/).
+
+### SCM Repository freshness (Snyk AppRisk)
+
+The SCM Repository freshness provides an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation. Reflects the status of the repository and the date of the last commit.
 
 ### SDLC
 
