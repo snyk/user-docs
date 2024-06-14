@@ -19,11 +19,13 @@ This list identifies all the areas with differences in functionality in the Snyk
   * Does not include the npm packages `@snyk/protect` and `@snyk/fix.`
 * Snyk AppRisk is **not available**.
 
-## Authentication not available
+## API keys not available
 
-API keys are **not available**. The `auth_type` of `api_key` is not accepted. The OAuth protocol is used for all scenarios where API keys are typically used. See [Service accounts using OAuth 2.0](../enterprise-configuration/service-accounts/service-accounts-using-oauth-2.0.md) for details.
+API keys are not available.
 
-As Snyk for Government (US) does not support API keys, you cannot request the API to create a [service account](../enterprise-configuration/service-accounts/) that uses an API key.
+This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. The OAuth protocol is used instead for all scenarios where API keys would typically be used. See[ Service accounts using OAuth 2.0](https://docs.snyk.io/enterprise-configuration/service-accounts/service-accounts-using-oauth-2.0) for details.
+
+In addition, the CLI must be used in OAuth mode, not with token-driven authentication.
 
 ## Single Sign-On limitations on&#x20;
 
