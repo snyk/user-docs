@@ -126,11 +126,15 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 #### [Get group level audit logs](../reference/audit-logs-v1.md)
 
+To find who created an Org-level or Group-level service account, use API v1 [Get group level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/group-level-audit-logs/get-group-level-audit-logs) or [Get organization level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/organization-level-audit-logs/get-organization-level-audit-logs) to find the event that shows service account creation, deletion, or edit.
+
 [Migrated Get group level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/group-level-audit-logs/get-group-level-audit-logs)
 
 ### Organization level audit logs
 
 #### [Get organization level audit logs](../reference/audit-logs-v1.md)
+
+To find who created an Org-level or Group-level service account, use API v1 [Get group level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/group-level-audit-logs/get-group-level-audit-logs) or and [Get organization level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/organization-level-audit-logs/get-organization-level-audit-logs) to find the event that shows service account creation, deletion, or edit.
 
 [Migrated Get organization level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/organization-level-audit-logs/get-organization-level-audit-logs)
 
@@ -297,6 +301,18 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 ### Import
 
 #### Import targets
+
+The Snyk API v1 endpoint [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets) can be used to import Snyk Projects. If this fails, use [Get import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details) to help determine why. There are two types of failures:
+
+* The repository was rejected for processing, that is, HTTP status code 201 was not returned. This happens if there is an issue Snyk can see quickly for example:
+  * The repository does not exist.
+  * The repository is unreachable by Snyk because the token is invalid or does not have sufficient permissions; there is no default branch.
+* The repository was accepted for processing, that is, the user got back HTTP status code 201 and a url to poll, but no projects were detected or some failed. This may occur because:
+  * There are no Snyk-supported manifests in this repository.
+  * The repository is archived and the Snyk API calls to fetch files fail.
+  * The individual project or manifest had issues during processing. In this case Snyk returns success: false with a message in the log.
+
+The poll results return a message per manifest processed, either `success: true` or `success: false.`
 
 [Migrated import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets)
 
@@ -548,6 +564,8 @@ Note: Remedies are not included in the response at this time.
 
 [Migrated List  all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues)
 
+The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues) returns an array of `ignoreReasons` for each vulnerability. This happens because ignores implemented using the CLI and API are path-based and thus potentially could have different `ignoreReasons` for different paths. Because List all aggregated issues returns only one issue for all paths, the entire set of reasons is returned. Snyk groups issues together by their identifier, so one response for the List all aggregated issues endpoint could correspond to the same issue across multiple paths. Thus the `ignoredReason` is across all issues that are aggregated and applies to that single grouped issue.
+
 ### Project Issue Paths
 
 #### List all project issue paths
@@ -648,6 +666,14 @@ Note: Remedies are not included in the response at this time.
 
 #### Applying attributes
 
+By using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) you can set attributes for Snyk Projects including business criticality, lifecycle stage, and environment once the project has been created . To do so:
+
+* Import the project using the Snyk API v1 endpoint [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets).
+* Get the status API ID from Import targets.
+* Poll using [Import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details) until all imports have completed.
+* Parse the project IDs from the projectURL field.
+* Use the [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) endpoint to set the project attributes.
+
 [Migrated Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes)
 
 ## Pull request templates
@@ -666,11 +692,17 @@ Note: Remedies are not included in the response at this time.
 
 #### Get list of latest issues
 
+To list all projects that have a vulnerability linked to a CVE use the capability to filter on strings with the [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) and [Get List of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues) reporting endpoints. Filter by the identifier attribute.
+
+To get a list of issues that have been fixed: Use [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) and filter by `“isFixed”: true` in the request body.
+
 [Migrated Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues)
 
 ### Issues
 
 #### Get list of issues
+
+To list all projects that have a vulnerability linked to a CVE use the capability to filter on strings with the [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) and [Get List of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues) (reporting) endpoints. Filter by the identifier attribute.
 
 [Migrated Get list of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues)
 
@@ -722,7 +754,7 @@ Note: Remedies are not included in the response at this time.
 
 ## ServiceAccounts
 
-**More information:** [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md); [Choose a service account type to use with Snyk APIs](../../enterprise-configuration/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis.md)
 
 ### [Get a list of group service accounts](https://apidocs.snyk.io/?#get-/groups/-group\_id-/service\_accounts)
 
