@@ -93,3 +93,10 @@ redirects:
   manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/level-1-configure-snyk-apprisk-and-setup-integrations: implement-snyk/enterprise-implementation-guide/phase-2-configure-account/configure-snyk-apprisk-integrations.md  
   scan-using-snyk/snyk-container/container-security-integrations/integrate-with-docker-hub/unauthorized-access-or-resource-does-not-exist-docker-hub: scan-using-snyk/snyk-container/container-security-integrations/integrate-with-docker-hub/configure-the-integration-with-docker-hub.md
   scan-using-snyk/snyk-container/snyk-container-integrations/integrate-with-docker-hub/unauthorized-access-or-resource-does-not-exist-docker-hub: scan-using-snyk/snyk-container/container-security-integrations/integrate-with-docker-hub/configure-the-integration-with-docker-hub.md
+  snyk-api/how-to-use-snyk-api-endpoints/aggregated-project-issues-api-returns-an-array-of-ignorereasons: snyk-api/api-endpoints-index-and-notes/README.md
+  snyk-api/how-to-use-snyk-api-endpoints/determine-why-api-import-targets-has-failed: snyk-api/api-endpoints-index-and-notes/README.md
+  snyk-api/how-to-use-snyk-api-endpoints/list-all-projects-with-a-vulnerability-linked-to-a-cve: snyk-api/api-endpoints-index-and-notes/README.md
+  snyk-api/how-to-use-snyk-api-endpoints/get-a-list-of-fixed-issues-using-snyk-api: snyk-api/api-endpoints-index-and-notes/README.md
+  snyk-api/api-endpoints-index-and-notes/set-project-attributes-using-the-snyk-api: snyk-api/api-endpoints-index-and-notes/README.md
+  snyk-api/how-to-use-snyk-api-endpoints/set-project-attributes-using-the-snyk-api: snyk-api/api-endpoints-index-and-notes/README.md
+  snyk-api/how-to-use-snyk-api-endpoints/find-who-created-a-service-account: snyk-api/api-endpoints-index-and-notes/README.md
