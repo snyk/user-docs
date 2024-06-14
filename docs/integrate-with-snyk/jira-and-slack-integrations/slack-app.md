@@ -110,7 +110,7 @@ After a notification customization has been created, you can edit its configurat
 
 To override Slack notification settings on a per-Project basis, you can use a set of [Snyk REST API](https://apidocs.snyk.io/) endpoints.
 
-Before attempting to use these endpoints, ensure that you have retrieved your authentication token and Organization ID (`org_id`) as outlined in the steps of the [guide for getting started using Snyk REST API.](../../snyk-api/snyk-rest-api-overview/getting-started-with-rest-api.md)
+Before attempting to use these endpoints, ensure that you have retrieved your authentication token and Organization ID (`org_id`) as outlined in the steps of the [guide for getting started using Snyk REST API.](../../snyk-api/rest-api/getting-started-with-rest-api.md)
 
 ### P**rerequisites** for managing Project-level notification overrides
 
