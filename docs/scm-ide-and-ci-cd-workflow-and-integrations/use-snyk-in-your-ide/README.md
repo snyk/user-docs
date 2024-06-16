@@ -1,12 +1,12 @@
-# Use Snyk in your IDE
+# Snyk IDEs
 
 The following Snyk plugins and extensions are available.
 
-* [Eclipse plugin](eclipse-plugin/)
-* [JetBrains plugins](jetbrains-plugins/)
-* [Visual Studio extension](visual-studio-extension/)
-* [Visual Studio Code extension](visual-studio-code-extension/)
-* [Language Server](snyk-language-server.md)
+* [Eclipse plugin](../../integrate-with-snyk/use-snyk-in-your-ide/eclipse-plugin/)
+* [JetBrains plugins](../../integrate-with-snyk/use-snyk-in-your-ide/jetbrains-plugins/)
+* [Visual Studio extension](../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-extension/)
+* [Visual Studio Code extension](../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/)
+* [Language Server](../../integrate-with-snyk/use-snyk-in-your-ide/snyk-language-server.md)
 
 Snyk Security plugins and extensions find and fix security vulnerabilities and issues in Snyk Projects. This allows individual developers, open source contributors, and code maintainers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
 

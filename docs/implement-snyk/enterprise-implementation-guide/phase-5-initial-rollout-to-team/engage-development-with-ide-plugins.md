@@ -18,10 +18,10 @@ Companies with a mature AppSec program may give developers earlier access to Sny
 
 The following Snyk plugins and extensions are available:
 
-* [Eclipse plugin](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/eclipse-plugin/)
-* [JetBrains plugins](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/jetbrains-plugins/)
-* [Visual Studio extension](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/visual-studio-extension/)
-* [Visual Studio Code extension](../../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/visual-studio-code-extension/)
+* [Eclipse plugin](../../../integrate-with-snyk/use-snyk-in-your-ide/eclipse-plugin/)
+* [JetBrains plugins](../../../integrate-with-snyk/use-snyk-in-your-ide/jetbrains-plugins/)
+* [Visual Studio extension](../../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-extension/)
+* [Visual Studio Code extension](../../../integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/)
 
 The training session [Introduction to using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/) provides further guidance.
 

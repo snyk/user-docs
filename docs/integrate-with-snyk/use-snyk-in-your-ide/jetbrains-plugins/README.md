@@ -50,6 +50,10 @@ After you complete the installation steps on this page and the [configuration](h
 
 ## Supported operating systems and architecture
 
+{% hint style="warning" %}
+Snyk Plugins are not supported on any Operating System that has reached End Of Life (EOL) with the distributor.
+{% endhint %}
+
 You can use the Snyk JetBrains plugin in the following environments:
 
 * Linux: 386, AMD64, and ARM64

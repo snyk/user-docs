@@ -39,6 +39,10 @@ Supported languages and frameworks include C#, JavaScript, TypeScript, Java, Go 
 
 ## Supported operating systems and architecture
 
+{% hint style="warning" %}
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+{% endhint %}
+
 You can use the Snyk Visual Studio extension in the following environments:
 
 * Windows: 386, AMD64, and ARM64
