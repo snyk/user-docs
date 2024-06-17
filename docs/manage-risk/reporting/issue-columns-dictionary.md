@@ -44,8 +44,9 @@ The vulnerability details refer to various issue attributes that are being defin
   * **No data**: The issue is not a vulnerability, but a license issue or a vulnerability advisory.
 * **FIXED IN AVAILABLE** - Indicates if a new package version that includes a fix for the vulnerability exists.
 * **FIXED IN VERSION** - Indicates the package version with a fix for the vulnerability.
+* **HAS JIRA ISSUE(S) ASSIGNED** - Displays `true`when at least one Jira issue is assigned, otherwise displays f`alse`.
 * **JIRA ISSUES LIST** - A list of all the attached Jira issue keys.
-* **LATEST JIRA KEY** - The latest attached Jira issue key with a link to the issue card in the project page.
+* **LATEST JIRA ISSUE** - The latest attached Jira issue key with a link to the issue card in the project page.
 * **NVD SCORE** - The vuln score as calculated by NVD.
 * **NVD SEVERITY** - The vuln severity as rated by NVD.
 * **PACKAGE NAME AND VERSION** - The vuln associated package name and version.
