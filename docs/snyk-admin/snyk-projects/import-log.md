@@ -1,10 +1,5 @@
 # Import Log
 
-{% hint style="warning" %}
-**Release Status**\
-This new experience will be rolled out incrementally to all customers over the coming days and will be visible in your Organization shortly. Read the [announcement](https://updates.snyk.io/improved-import-logs-and-general-availability-292289) for details.
-{% endhint %}
-
 The Import Log feature provides a history of all the Git repositories and container registry images imported into an Organization through an Integration, allowing all manual and automated changes to be reviewed and any errors troubleshooted. This log makes it easier to see if any errors have occurred and how to resolve them.
 
 ## View Import Log
