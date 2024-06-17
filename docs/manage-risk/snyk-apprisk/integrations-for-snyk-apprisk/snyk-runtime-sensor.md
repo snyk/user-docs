@@ -61,15 +61,14 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
-5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
-6.  Install the Helm chart:
+5.  Install the Helm chart:
 
     ```
     helm install my-runtime-sensor \
     --set secretName=<<YOUR_SECRET_NAME>> \
     --set clusterName=<<CLUSTER_NAME>> \
     --set snykGroupId=<<YOUR_GROUP_ID>> \
-    --set snykAPIBaseURL=<<YOUR_REGIONS_API_URL>> \ # Optional
+    --set snykAPIBaseURL=api.snyk.io:443 \
     -n snyk-runtime-sensor \
     runtime-sensor/runtime-sensor
 
@@ -77,16 +76,16 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
 
 ### On OpenShift
 
-When running your Kubernetes cluster in OpenShift, you will have to apply the `privileged` Security Context Constraint to the Runtime Sensor's service account by running the following command:
+When running your Kubernetes cluster in OpenShift, you will have to apply the `privileged` Security Context Constraint to the service account of the Snyk Runtime Sensor by running the following command:
 
 ```
 oc adm policy add-scc-to-user privileged \
 system:serviceaccount:<<YOUR_NAMESPACE>>:runtime-sensor
 ```
 
-This command must be run after the sensor has been installed, as the service account will not be available prior to the installation.&#x20;
+Run this command after the sensor is installed as the service account will not be available until the installation is complete.
 
-### Through the AWS Marketplace as an EKS add-on&#x20;
+### Through the AWS Marketplace as an EKS add-on  <a href="#aws-eks-deployment" id="aws-eks-deployment"></a>
 
 Snyk provides a straightforward process for installing the Snyk Runtime Sensor on your AWS EKS cluster. The following steps explain how to integrate this security feature into your environment, enhancing the security of your cluster.
 
@@ -95,7 +94,7 @@ To deploy the Snyk Runtime Sensor on Amazon EKS with EKS Add-on, you need to mee
 1. Subscribe to Snyk Runtime Sensor on AWS Marketplace [here](https://aws.amazon.com/marketplace/pp/prodview-i23vvrxuamcya).
 2. Install the following tools: `kubectl`, `AWS CLI`, and optionally `eksctl`.&#x20;
 3. Ensure you have access to the Amazon EKS cluster where you want to install the sensor.&#x20;
-4. Ensure you have a Snyk service account token ready with the right permissions.
+4. Ensure you have a Snyk service account token ready with the right permissions, as described in the [prerequisites](snyk-runtime-sensor.md#prerequisites).
 
 #### **Enable the Snyk Runtime Sensor add-on from AWS console**
 
@@ -114,7 +113,7 @@ Under the "configuration values", set the following attributes in a YAML or JSON
 * `secretName` - the secret name that will be created later in the process. The default value is  `snyk-secret` .
 * `clusterName` - the name of the cluster where the add-on is installed.
 * `snykGroupId` - the Group ID associated with the used service account.
-* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443` unless your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default (USA).&#x20;
+* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443` .
 
 Here is a base configuration to copy:
 
@@ -135,10 +134,9 @@ After you select the **Next** and **Create** options you will see the "Add-on sn
 
 Run the following command on your workspace to enable the Snyk Runtime Sensor add-on for your Amazon EKS cluster. You have to set the following parameters in your targeted EKS cluster:
 
-* $CLUSTER\_NAME,&#x20;
-* $AWS\_REGION,&#x20;
+* $CLUSTER\_NAME
+* $AWS\_REGION
 * $SNYK\_GROUP\_ID&#x20;
-* Snyk Group ID
 
 ```
 aws eks create-addon \
@@ -149,18 +147,18 @@ aws eks create-addon \
 --resolve-conflicts OVERWRITE
 ```
 
-After you have added the Snyk Service Account Token as described below, ensure installation has been completed successfully by running the following command:
+After you have added the Snyk service account token as described [below](snyk-runtime-sensor.md#add-your-snyk-service-account-token-to-the-eks-cluster), ensure installation has been completed successfully by running the following command:
 
 ```
 aws eks describe-addon --addon-name snyk_runtime-sensor --cluster-name $CLUSTER_NAME --region $AWS_REGION
 ```
 
-Ensure the response you get is similar to this one and that the status is ACTIVE.
+Ensure the response you get is similar to this one and that the status is ACTIVE - it could take a few minutes until it reaches this status.
 
 ```
 {
     "addon": {
-        "addonName": "snyk-runtimesensor",
+        "addonName": "snyk_runtime-sensor",
         "clusterName": "<<YOUR_CLUSTER>>",
         "status": "ACTIVE",
         "addonVersion": "v1.17.2-eksbuild.1",
@@ -184,7 +182,7 @@ Ensure the response you get is similar to this one and that the status is ACTIVE
 aws eks update-kubeconfig --name $CLUSTER_NAME --region $AWS_REGION
 ```
 
-* Create a secret name `snyk-secret` under the `snyk-runtime-sensor` namespace that contains the `snykToken` . The `snykToken` will be your service account token:&#x20;
+* Create a secret name `snyk-secret` under the `snyk-runtime-sensor` namespace that contains the `snykToken`. The `snykToken` will be your service account token:&#x20;
 
 ```
 kubectl create secret generic snyk-secret \
@@ -192,14 +190,14 @@ kubectl create secret generic snyk-secret \
 -n snyk-runtime-sensor
 ```
 
-* Now, data from your AWS EKS Cluster will be reported to Snyk using the Snyk Runtime Sensor.
+* Data from your AWS EKS Cluster will be reported to Snyk using the Snyk Runtime Sensor.
 
 #### **Disable the Snyk Runtime Sensor add-on**
 
 You can disable the Snyk Runtime Sensor add-on by running the following command:
 
 ```
-aws eks delete-addon --addon-name snyk-runtimesensor --cluster-name $CLUSTER_NAME --region $AWS_REGION
+aws eks delete-addon --addon-name snyk_runtime-sensor --cluster-name $CLUSTER_NAME --region $AWS_REGION
 ```
 
 ## Troubleshooting
