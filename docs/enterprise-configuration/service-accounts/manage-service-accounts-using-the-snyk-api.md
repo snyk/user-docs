@@ -32,7 +32,7 @@ Specific permissions are required to perform all these tasks; see [Service accou
 
 **API documentation:** [https://apidocs.snyk.io/#get-/groups/-group\_id-/service\_accounts](https://apidocs.snyk.io/?version=2023-09-07#get-/groups/-group\_id-/service\_accounts)
 
-This [paginated](broken-reference) call returns an array of objects, each describing a service account.
+This [paginated](../../snyk-api/rest-api/about-the-rest-api.md#pagination) call returns an array of objects, each describing a service account.
 
 ### Create a service account for your Group
 
@@ -86,7 +86,7 @@ This call allows you to manage the client secret for `oauth_client_secret` servi
 
 **API documentation:** [https://apidocs.snyk.io/#get-/orgs/-org\_id-/service\_accounts](https://apidocs.snyk.io/?version=2023-09-07#get-/orgs/-org\_id-/service\_accounts)
 
-This [paginated](broken-reference) call returns an array of objects, each describing a service account.
+This [paginated](../../snyk-api/rest-api/about-the-rest-api.md#pagination) call returns an array of objects, each describing a service account.
 
 ### Create a service account for your Organization
 
