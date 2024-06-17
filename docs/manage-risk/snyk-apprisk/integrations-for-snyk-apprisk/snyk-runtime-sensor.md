@@ -10,7 +10,7 @@ Contact your salesperson if you are interested in Snyk AppRisk Pro.
 
 The Runtime Sensor watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
 
-## Prerequisites
+## Prerequisites for Snyk Runtime Sensor
 
 Ensure that your environment meets the following technical prerequisites to properly use the Snyk Runtime Sensor:
 
@@ -46,9 +46,8 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
 1. Ensure Helm is installed.
 2.  Create the `snyk-runtime-sensor` namespace:
 
-    ```
-    kubectl create namespace snyk-runtime-sensor
-    ```
+    <pre><code><strong>kubectl create namespace snyk-runtime-sensor
+    </strong></code></pre>
 3.  Create a secret with your service account token, which has the appropriate permissions (as instructed in the prerequisites section) under the created namespace:
 
     {% code overflow="wrap" %}
@@ -61,17 +60,44 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
-5.  Install the Helm chart:
+5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
+6.  Install the Helm chart:
 
     ```
     helm install my-runtime-sensor \
     --set secretName=<<YOUR_SECRET_NAME>> \
     --set clusterName=<<CLUSTER_NAME>> \
     --set snykGroupId=<<YOUR_GROUP_ID>> \
-    --set snykAPIBaseURL=api.snyk.io:443 \
+    --set snykAPIBaseURL=<<YOUR_REGIONS_API_URL>> \ # Optional
     -n snyk-runtime-sensor \
     runtime-sensor/runtime-sensor
+    ```
 
+#### Upgrading to the latest version
+
+1.  Check the name that was given to the sensor
+
+    {% code overflow="wrap" %}
+    ```
+    helm repo list
+    ```
+    {% endcode %}
+2.  Create a secret with your service account token, which has the appropriate permissions (as instructed in the prerequisites section) under the created namespace:
+
+    {% code overflow="wrap" %}
+    ```
+    helm repo update <<SENSOR_REPO_NAME>>
+    ```
+    {% endcode %}
+3.  Upgrade installation:
+
+    ```
+    helm upgrade --install <<SENSOR_REPO_NAME>> \
+    --set secretName=<<YOUR_SECRET_NAME>> \
+    --set clusterName=<<CLUSTER_NAME>> \
+    --set snykGroupId=<<YOUR_GROUP_ID>> \
+    -n snyk-runtime-sensor \
+    runtime-sensor/runtime-sensor
     ```
 
 ### On OpenShift
@@ -200,10 +226,10 @@ You can disable the Snyk Runtime Sensor add-on by running the following command:
 aws eks delete-addon --addon-name snyk_runtime-sensor --cluster-name $CLUSTER_NAME --region $AWS_REGION
 ```
 
-## Troubleshooting
+## Troubleshooting for Snyk Runtime Sensor
 
-* If the Snyk Runtime Sensor is not properly reporting the `is_loaded` risk factor, it may be caused by a non-default value of the Linux kernel `perf_event_paranoid` configuration.\
-  In such cases, install the helm chart with either `--set securityContext.privileged=true` or add `SYS_ADMIN` as a required Linux capability `--set "securityContext.capabilities={SYS_ADMIN}"`.
+If the Snyk Runtime Sensor is not properly reporting the `is_loaded` risk factor, it may be caused by a non-default value of the Linux kernel `perf_event_paranoid` configuration.\
+In such cases, install the helm chart with either `--set securityContext.privileged=true` or add `SYS_ADMIN` as a required Linux capability `--set "securityContext.capabilities={SYS_ADMIN}"`.
 
 {% hint style="info" %}
 The Loaded package risk factor is not supported by Snyk for open-source packages, only for application packages such as npm, Maven, or PyPI.
