@@ -6,4 +6,4 @@
 * [About the REST API](about-the-rest-api.md)
 * [Authentication for API](authentication-for-api/)
 * [Changelog](changelog.md)
-* [Guides to migration](../api-end-of-life-eol-overview/guides-to-migration/)
+* [Guides to migration](../../api-end-of-life-eol-process-and-migration-guides/guides-to-migration/)
