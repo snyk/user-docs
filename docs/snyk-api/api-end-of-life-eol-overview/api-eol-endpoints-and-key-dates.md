@@ -12,10 +12,14 @@ Beginning July 19, 2024, the following endpoints will follow the EOL process:
 
 ## Brownouts
 
-Beginning July 19t, 2024, brownouts for the endpoints in EOL brownouts for the EOL endpoints will occur at the following dates and times (with duration).
+A brownout occurs when Snyk temporarily suspends an endpoint from being usable. returning a `410 gone` response when a user calls the endpoint.
 
-| Brownout date | Time |
-| ------------- | ---- |
-|               |      |
-|               |      |
-|               |      |
+Snyk brownouts for APIs that are part of an end-of-life cycle will occur at 12:00 UTC. For the end-of-life cycle beginning July 19, 2024, the brownouts will occur on the following dates. Users will see a reminder two weeks before the brownout through an announcement on [updates.snyk.io](http://updates.snyk.io/):
+
+| Endpoints             | Brownout date     | Duration   |
+| --------------------- | ----------------- | ---------- |
+| Non-GA REST endpoints | Tuesday August 13 | 30 minutes |
+| Non-GA REST endpoints | September 10      | 1 hour     |
+| v1 endpoints          | October 8         | 1 hour     |
+| v1 endpoints          | November 12       | 2 hours    |
+| v1 endpoints          | December 10       | 4 hours    |
