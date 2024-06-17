@@ -1,7 +1,7 @@
 # Open-source license compliance
 
-{% hint style="warning" %}
-**Release status**\
+{% hint style="info" %}
+**Availability**\
 Open-source license compliance is available for all paid plans. \
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
@@ -16,8 +16,8 @@ To enable customers to get started with license compliance faster, Snyk created 
 
 By default, Snyk determines the severity of license issue in the following way:
 
-* High severity - licenses that definitely present issues for commercial software.
-* Medium severity - licenses with clauses that may be of concern and should be reviewed.
+* High severity - licenses that definitely present issues for commercial software
+* Medium severity - licenses with clauses that may be of concern and should be reviewed
 
 For more information, see [License policies](../../../manage-risk/policies/license-policies/) and [Open Source Licenses: Types and Comparison](https://snyk.io/learn/open-source-licenses/).
 
@@ -35,7 +35,7 @@ An example follows:
 
 </div>
 
-### View and manage license policies
+## View and manage license policies
 
 You can view an inventory of all of your licenses across all your Projects. For more information, see [View licenses](../../../manage-risk/reporting/dependencies-and-licenses/view-licenses.md).
 
@@ -45,7 +45,7 @@ New licenses added by Snyk will inherit the **Unknown** license type severity. I
 
 If you notice a license with the wrong license type assigned to it, you can contact Snyk support. Snyk will investigate the request and update the license type if needed.
 
-### Multiple licenses
+## Multiple licenses
 
 For some packages, a version contains two or even more licenses that apply simultaneously. Snyk calls these dual-licenses or multi-licenses.&#x20;
 
@@ -74,5 +74,13 @@ Snyk does not support scanning for license issues for packages whose version has
 * Maven
 * npm
 * Nuget
-* Pip
+* Pypi
 * RubyGems
+
+## Licenses data sources
+
+In some cases, the developer specifies one license type in the source repository (for example, GitHub, GitLab) and another when releasing the package (for example, to npm, pypi). Snyk ensures the accuracy of license information by examining the package manager's license definition to verify that the licenses match the released package. If the developer did not define the licenses in the package manager, this could result in `none` or `unknown` values.&#x20;
+
+Note that this behavior may change as Snyk works on improving the license detection processes.
+
+&#x20;
