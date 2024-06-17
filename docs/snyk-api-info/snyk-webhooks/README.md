@@ -1,41 +1,8 @@
 # Webhooks
 
-Webhooks allow you to be notified of Snyk system events, enabling you to build notifications and react to changes in your projects. The current implementation supports events for recurring scans of open source and container image related projects.
+#### In this section
 
-When events are triggered, Snyk sends HTTP POST requests to URLs you have configured for those events, with all the information you need.
-
-### Example use cases
-
-#### Notifications
-
-Receive instant notifications/alerts in your organization's business communication/collaboration software.
-
-#### Incident Response
-
-Respond to critical issues before they impact your business. Embrace modern incident management and Snyk to stay ahead of application security. Read more about this use case in the blog ["Shifting left security incident management with the Snyk & Opsgenie integration"](https://snyk.io/blog/security-incident-management-snyk-opsgenie-integration/).
-
-#### Security Information and Event Management (SIEM)
-
-Get real-time security alerts aggregated across various sources into a single platform. read more about Snyk's partnership with Rapid7 and how together we help organizations mitigate security risks.
-
-#### Vulnerability Management and Aggregation
-
-Browse the various [Snyk Partner integrations](../../integrate-with-snyk/vulnerability-management-tools/) for a comprehensive list of solutions.
-
-### Security SSL
-
-Webhooks can only be configured for URLs using the HTTPS protocol. HTTP is not allowed.
-
-### Request signing
-
-When creating a webhook, you must provide a ​secret​ - this is a string that only you know that we will use to sign our transports to you so that you can ensure they come from Snyk. Your secret should be:
-
-* A random string with high entropy
-* Not be used for anything else
-* Only known to Snyk and your webhook transport consuming code
-
-All transports sent to your webhooks will have a ​`X-Hub-Signature` ​header, which contains the hash signature for the transport. The signature is a HMAC hexdigest of the request body, generated using sha256 and your secret as the HMAC key.
-
-{% hint style="info" %}
-`X-Hub-Signature​`always starts with​ `sha256=`
-{% endhint %}
+* [About webhooks](../../snyk-api/snyk-webhooks/about-webhooks.md)
+* [Webhook events and payload](../../snyk-api/snyk-webhooks/webhooks.md)
+* [Validation and versioning](../../snyk-api/snyk-webhooks/validation-and-versioning-of-payloads.md)
+* [Guides to webhooks](../../snyk-api/snyk-webhooks/guides-to-webhooks/)

@@ -22,7 +22,7 @@ The ping event happens after a new webhook is created, and can also be manually 
 
 The `ping` event makes the following request:
 
-```
+```shell
 POST /webhook-handler/snyk123 HTTP/1.1
 Host: my.app.com
 X-Snyk-Event: ping/v0
@@ -40,7 +40,7 @@ Content-Type: application/json
 
 This event is triggered every time an existing project is tested and a new snapshot is created. It is triggered on every test of a project, whether or not there are new issues. This event is not triggered when a new project is created or imported. Currently supported targets/scan types are Open Source and container.
 
-```
+```sh
 POST /webhook-handler/snyk123 HTTP/1.1
 Host: my.app.com
 X-Snyk-Event: project_snapshot/v0
@@ -62,9 +62,9 @@ Content-Type: application/json
 
 **project**
 
-see: [https://snyk.docs.apiary.io/#reference/projects](https://snyk.docs.apiary.io/#reference/projects)
+see: [https://app.gitbook.com/snyk-api/reference/projects-v1](../reference/projects-v1.md)
 
-```
+```json
 "project": {
   "name": "snyk/goof",
   "id": "af137b96-6966-46c1-826b-2e79ac49bbd9",
@@ -125,9 +125,9 @@ see: [https://snyk.docs.apiary.io/#reference/projects](https://snyk.docs.apiary.
 
 **org**
 
-see: [https://snyk.docs.apiary.io/#reference/organizations](https://snyk.docs.apiary.io/#reference/organizations)
+see: [https://app.gitbook.com/snyk-api/reference/organizations-v1](../reference/organizations-v1.md)
 
-```
+```json
 "org": {
   "name": "My Org",
   "id": "a04d9cbd-ae6e-44af-b573-0556b0ad4bd2",
@@ -139,9 +139,9 @@ see: [https://snyk.docs.apiary.io/#reference/organizations](https://snyk.docs.ap
 
 **group**
 
-see: [https://snyk.docs.apiary.io/#reference/groups](https://snyk.docs.apiary.io/#reference/groups)
+see: [https://app.gitbook.com/snyk-api/reference/groups-v1](../reference/groups-v1.md)
 
-```
+```json
 "group": {
   "name": "ACME Inc.",
    "id": "a060a49f-636e-480f-9e14-38e773b2a97f"
@@ -150,9 +150,7 @@ see: [https://snyk.docs.apiary.io/#reference/groups](https://snyk.docs.apiary.io
 
 **issue**
 
-see: [https://snyk.docs.apiary.io/#reference/users/user-organization-notification-settings/list-all-aggregated-issues](https://snyk.docs.apiary.io/#reference/users/user-organization-notification-settings/list-all-aggregated-issues)
-
-```
+```json
 {
   "id": "npm:ms:20170412",
   "issueType": "vuln",
