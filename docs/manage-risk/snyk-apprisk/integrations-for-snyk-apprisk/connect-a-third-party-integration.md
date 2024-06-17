@@ -327,10 +327,11 @@ The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/gettin
 * Open the **Integration Hub** menu.&#x20;
 * Select the **App Context** tag and search for ServiceNow CMDB.&#x20;
 * Click the **Add** button.
-* Add the **Host URL** - this is your ServiceNow instance, use this format: `https://<INSTANCE_NAME>.service-now.com`
+* Add the **Profile name** - this is the name of your ServiceNow CMDB profile.
+* Add the **CMDB Instance** - this is your ServiceNow instance, use this format: `https://<INSTANCE_NAME>.service-now.com`
 * Add the **Username** and the **Password**- the username and password to access the ServiceNow CMDB instance
 * Add the **Table name** - select the configuration item class that Snyk AppRisk should onboard. Use this format `cmdb_ci_<class>`
-* Add the **Repo URL** - the specific URL that is being referred to in the ServiceNow CMDB record.
+* Add the **CMDB Field to map Repo URL** - the specific URL that is being referred to in the ServiceNow CMDB record.
 * You can select one or more attributes related to repository assets and configure where Snyk AppRisk can take this attribute in ServiceNow CMDB. Example:&#x20;
   * Category: application\_type
   * Owner: business\_unit
