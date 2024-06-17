@@ -24,7 +24,7 @@ You can add Jira tickets to your PR, but Snyk is limited to those created using 
 
 ### Failure to open PR
 
-Currently, Snyk does not identify errors when a PR cannot be opened. This will be resolved in an upcoming update.
+If a PR cannot be opened, Snyk cannot identify errors when a PR cannot be opened.&#x20;
 
 ### No line between variables
 

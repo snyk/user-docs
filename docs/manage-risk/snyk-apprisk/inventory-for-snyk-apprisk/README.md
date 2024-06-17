@@ -27,7 +27,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 {% hint style="warning" %}
 **Release status** \
-**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
+**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
 
 Contact your account manager if you are interested in Snyk AppRisk Pro.
 {% endhint %}
@@ -78,7 +78,7 @@ Assets in the inventory are presented with key attributes in the following colum
 
 * **Asset** - The name of the repository asset, scanned artifact, and the Git remote URL, if available. Scanned artifacts are missing Git remote URLs.
 * **Issue** - The number of issue counts on open assets aggregated across all relevant tools of the same severity of the asset itself and its child assets or packages. The severity level is classified into **C** (critical), **H** (high), **M** (medium), and **L** (low).
-* **Controls** - A report detailing all products detected by the Snyk AppRisk on a specific repository asset and all products that should be covered but are not yet by the Snyk AppRisk.
+* **Controls** - A report detailing all products detected by the Snyk AppRisk on a specific repository asset and all products that should be but are not covered by the Snyk AppRisk.
 * **Tags** -  Snyk AppRisk automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository, and repository latest updates. You can also use policies to tag repository assets.
 * **Developers** - Includes the SCM profile details for code committers to the repository asset.
 * **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. The class can be manually changed by you or automatically changed by a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
@@ -93,7 +93,7 @@ Snyk AppRisk derives assets from Snyk automatically, and also from any SCM tools
 
 #### Repository assets
 
-Currently, Snyk AppRisk supports repository assets (from main branches) as an asset type. In future releases, Snyk will add support for additional code-based assets, such as software packages. Repository assets are visible in all inventory layouts and are supported by Policies. To avoid duplication, assets are identified using a unique identifier, which is the git remote URL for repository assets.
+Snyk AppRisk supports repository assets (from main branches) as an asset type. Repository assets are visible in all inventory layouts and are supported by Policies. To avoid duplication, assets are identified using a unique identifier, which is the git remote URL for repository assets.
 
 {% hint style="info" %}
 If you archive or delete repositories, they are not displayed in the asset inventory and, therefore, not considered to be shown in the dashboard widgets.
