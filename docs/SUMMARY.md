@@ -926,7 +926,7 @@
       * [Snyk API token permissions users can control](snyk-api/rest-api/authentication-for-api/api-token-permissions-users-can-control.md)
       * [Revoking and regenerating Snyk API tokens](snyk-api/rest-api/authentication-for-api/revoking-and-regenerating-snyk-api-tokens.md)
     * [Changelog](snyk-api/rest-api/changelog.md)
-  * [V1 API](snyk-api/v1-api-overview/README.md)
+  * [V1 API](snyk-api/v1-api.md)
   * [OAuth2 API](snyk-api/oauth2-api.md)
   * [Reference](snyk-api/reference/README.md)
     * [Apps](snyk-api/reference/apps.md)
