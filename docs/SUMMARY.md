@@ -1038,6 +1038,8 @@
     * [REST API: Get a project’s SBOM document](snyk-api/how-to-use-snyk-api-endpoints/rest-api-get-a-projects-sbom-document.md)
     * [REST API: Test an SBOM document for vulnerabilities](snyk-api/how-to-use-snyk-api-endpoints/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
     * [REST API: List issues for a package](snyk-api/how-to-use-snyk-api-endpoints/rest-api-list-issues-for-a-package.md)
+  * [API End of Life (EOL) overview](snyk-api/api-end-of-life-eol-overview/README.md)
+    * [API EOL endpoints and key dates](snyk-api/api-end-of-life-eol-overview/api-eol-endpoints-and-key-dates.md)
 * [Working with Snyk](working-with-snyk/README.md)
   * [How Snyk handles your data](working-with-snyk/how-snyk-handles-your-data.md)
   * [Regional hosting and data residency](working-with-snyk/regional-hosting-and-data-residency.md)
