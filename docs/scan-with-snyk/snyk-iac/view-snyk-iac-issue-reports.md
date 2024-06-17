@@ -40,7 +40,7 @@ Use the **Export button to export issues** as a CSV file in the same format as y
 
 ## API access to IaC issues
 
-You can access the full list of issues via the API using the API v1 [latest issues endpoint](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1).
+You can see the full list of issues by using the V1 API [Get list of atest issues ](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1)endpoint.
 
 To retrieve only your Infrastructure as Code issues, submit a body payload:
 
