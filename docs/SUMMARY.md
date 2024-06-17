@@ -247,7 +247,7 @@
     * [Snyk Bitbucket Cloud integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-integration.md)
     * [Migrate a Bitbucket Cloud Personal Access Token](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/migrate-a-bitbucket-cloud-personal-access-token.md)
     * [Snyk Bitbucket Cloud App integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-app-integration.md)
-    * [Snyk Bitbucket Data Center/Server integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md)
+    * [Snyk Bitbucket Data Center/Server integration](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md)
     * [Snyk Azure Repositories (TFS) integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md)
   * [Snyk IDEs](scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/README.md)
     * [Eclipse plugin](integrate-with-snyk/use-snyk-in-your-ide/eclipse-plugin/README.md)

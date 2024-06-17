@@ -18,7 +18,7 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 * [Bitbucket Cloud](snyk-bitbucket-cloud-integration.md)
 * [Bitbucket Cloud (Legacy)](migrate-a-bitbucket-cloud-personal-access-token.md)
 * [Bitbucket Cloud App](snyk-bitbucket-cloud-app-integration.md)
-* [Bitbucket Data Center/Server](snyk-bitbucket-data-center-server-integration.md)
+* [Bitbucket Data Center/Server](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md)
 * [Azure Repositories (TFS)](snyk-azure-repositories-tfs-integration.md)
 
 ## Deployment recommendations for SCM integrations

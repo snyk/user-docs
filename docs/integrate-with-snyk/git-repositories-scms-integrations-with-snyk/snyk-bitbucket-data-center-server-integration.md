@@ -16,6 +16,8 @@ For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](h
    Ensure the newly-created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 2. In Snyk, navigate to the **Integrations** page and click on the **Bitbucket Server** card.
 3. Enter your Bitbucket DC/Server URL and the username and password for the service account you created. Alternatively, you can create a [personal access token](https://confluence.atlassian.com/bitbucketserver075/personal-access-tokens-1018784848.html) and use it instead of a password.
+   1. If your Bitbucket DC/Server instance has Basic Auth disabled, you must use a personal access token.
+   2. Specify `x-access-token` for the username, and provide the personal access token instead of a password.
 4. **Save** your changes.\
    Snyk connects to your Bitbucket DC/Server instance.\
    When the connection succeeds, a confirmation message appears on your integrations screen.
@@ -29,9 +31,9 @@ To select the repositories for Snyk to monitor:
 
 After they are added, Snyk scans the selected repositories for dependency files in the entire directory tree, (that is, `package.json`, `pom.xml`, and so on) and imports them to Snyk as projects.\
 \
-The imported projects appear on your Snyk **Projects** page and are continuously checked for vulnerabilities.
+The imported Projects appear on your Snyk **Projects** page and are continuously checked for vulnerabilities.
 
-![](../../.gitbook/assets/bitbucketserver\_add-repos\_18july2022.png)
+<figure><img src="../../.gitbook/assets/bitbucketserver_add-repos_18july2022.png" alt="Imported Projects on Projects page"><figcaption><p>Imported Projects on Projects page</p></figcaption></figure>
 
 ## Bitbucket DC/Server Integration Features
 
