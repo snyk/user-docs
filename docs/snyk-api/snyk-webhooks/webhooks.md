@@ -62,7 +62,7 @@ Content-Type: application/json
 
 **project**
 
-see: [https://app.gitbook.com/snyk-api/reference/projects-v1](../reference/projects-v1.md)
+see: [Projects (v1)](../reference/projects-v1.md)
 
 ```json
 "project": {
@@ -125,7 +125,7 @@ see: [https://app.gitbook.com/snyk-api/reference/projects-v1](../reference/proje
 
 **org**
 
-see: [https://app.gitbook.com/snyk-api/reference/organizations-v1](../reference/organizations-v1.md)
+see: [Organizations (v1)](../reference/organizations-v1.md)
 
 ```json
 "org": {
@@ -139,7 +139,7 @@ see: [https://app.gitbook.com/snyk-api/reference/organizations-v1](../reference/
 
 **group**
 
-see: [https://app.gitbook.com/snyk-api/reference/groups-v1](../reference/groups-v1.md)
+see: [Groups (v1)](../reference/groups-v1.md)&#x20;
 
 ```json
 "group": {
