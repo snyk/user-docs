@@ -9,6 +9,10 @@ The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials an
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
+{% hint style="info" %}
+The Loaded package risk factor is not supported by Snyk for open-source packages, only for application packages such as npm, Maven, or PyPI.
+{% endhint %}
+
 You can customize your AppRisk integrations from the **Integrations Hub** where the following SAST and Secrets integrations are available:
 
 SAST:
