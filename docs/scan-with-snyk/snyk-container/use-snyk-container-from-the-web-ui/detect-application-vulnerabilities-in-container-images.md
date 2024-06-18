@@ -41,11 +41,19 @@ In CLI versions 1.1090.0 (2023-01-24) and higher, Snyk scans for application dep
 
 If you want to opt out of application vulnerability scanning, you can specify the `--exclude-app-vulns` option. This omits the application vulnerabilities section from the results, mimicking the previous behavior. The `--exclude-app-vulns` option is available in CLI version 1.1021.0 and above.
 
+### Java applications
+
+Snyk Container CLI supports scanning Java applications embedded in container images as JARs or uber -jars. In the case of uber-jars or shaded jars, Snyk uses the `pom.properties` manifest file to resolve package versions and dependencies. The presence of the `pom.properties` file in a JAR file depends on how the JAR was built and what tools and configurations were used during the build process.  Maven and Maven Shade Plugin built JARs include `pom.properties` manifest file by default.&#x20;
+
 ### Nested jars depth option
 
-For Java applications, when `--app-vulns` is enabled, you can also use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk will unpack. The implicit default is 1. When you specify 2, it means that Snyk unzips jars in jars; 3 means Snyk unzips jars in jars in jars, and so on.
+When `--app-vulns` is enabled, you can also use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk will unpack. The implicit default is 1. When you specify 2, it means that Snyk unzips jars in jars; 3 means Snyk unzips jars in jars in jars, and so on.
 
 To opt out of any scans you feel are unnecessary, use `--nested-jar-depth=0` .
+
+### Maven packages suffixed with a version of @unknown
+
+&#x20;Snyk Container CLI could report Maven packages suffixed with a version of @unknown when `pom.properties`manifest file is not included in the scanned JARs. For details of other reasons why the package version is reported as @unknown, see  [Why-does-my-Maven-package-show-Unknown-through-the-SCM](https://support.snyk.io/hc/en-us/articles/4934749708829-Why-does-my-Maven-package-show-Unknown-through-the-SCM).&#x20;
 
 ## View application vulnerabilities and licensing issues
 
@@ -64,7 +72,7 @@ With this feature enabled, you can also see nested manifest files detected in th
 
 Depending on your Project settings, Snyk scans the image regularly. Based on your configuration, Snyk updates you by email or Slack whenever new vulnerabilities are identified in both the operating system and application dependencies.
 
-You can set the scan frequency for each Project. The default is daily testing. To update the scan frequency, navigate to the **Settings** tab on the Project page and select the frequency from the dropdown. The options are never, **daily**, or **weekly**.
+You can set the scan frequency for each Project. The default is daily testing. To update the scan frequency, navigate to the **Settings** tab on the Project page and select the frequency from the dropdown. The options are **never**, **daily**, or **weekly**.
 
 <figure><img src="../../../.gitbook/assets/scan_frequency.png" alt=""><figcaption><p>Update scan frequency</p></figcaption></figure>
 
