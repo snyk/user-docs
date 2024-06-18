@@ -27,7 +27,7 @@ This means that attempts to create Service Accounts either through the UI or usi
 
 In addition, the CLI must be used in OAuth mode, not with token-driven authentication.
 
-## Single Sign-On limitations on&#x20;
+## Single Sign-On limitations on availability&#x20;
 
 [Single Sign-On (SSO)](../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/) is available except for [Self-Serve Single Sign-On (SSO)](../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
 
