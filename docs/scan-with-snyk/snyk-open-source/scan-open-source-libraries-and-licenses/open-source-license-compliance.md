@@ -59,7 +59,7 @@ There are two types of dual or multiple licenses:
 
 
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="Example of an AND license in npm" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt="Example of an AND license in npm" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
 
 In both of these cases, Snyk defaults to the license with the **lowest severity** when displaying issues.
 
