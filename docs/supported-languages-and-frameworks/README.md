@@ -14,6 +14,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: NuGet, Paket
 
+**Package registry**: [nuget.org](https://www.nuget.org/)
+
 **Import your app through SCM**: NuGet
 
 **Test or monitor your app through CLI and IDE**: Available
@@ -34,6 +36,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: NA
 
+**Package registry**: No single registry, multiple sources&#x20;
+
 **Import your app through SCM**: NA
 
 **Test or monitor your app through CLI and IDE**: Available
@@ -53,6 +57,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: Pub
 
+**Package registry**: [pub.dev](https://pub.dev/)
+
 **Import your app through SCM**: NA
 
 **Test or monitor your app through CLI and IDE**: NA
@@ -68,6 +74,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 ### [Elixir](elixir.md) for open source
 
 **Package manager**: Hex
+
+**Package registry:**  [hex.pm](https://hex.pm/)
 
 **Import your app through SCM**: NA
 
@@ -88,6 +96,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: Go Modules, dep
 
+**Package registry**: No single registry, multiple sources&#x20;
+
 **Import your app through SCM**: Available
 
 **Test or monitor your app through CLI and IDE**: Available
@@ -106,6 +116,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 ### [Java and Kotlin](java-and-kotlin/) for open source
 
 **Package manager**: Maven, Gradle
+
+**Package registry**: [maven.org](https://maven.org/)
 
 **Import your app through SCM**: Available
 
@@ -133,6 +145,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: npm, Yarn
 
+**Package registry**: [npmjs.org](https://www.npmjs.org)
+
 **Import your app through SCM**: Available
 
 **Test or monitor your app through CLI and IDE**: Available
@@ -159,6 +173,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: Composer
 
+**Package registry**: [packagist.org](https://packagist.org/)
+
 **Import your app through SCM**: Available
 
 **Test or monitor your app through CLI and IDE**: Available
@@ -177,6 +193,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 ### [Python](python.md) for open source
 
 **Package manager**: Pip, Poetry, pipenv, setup.py
+
+**Package resgirty**: [pypi.org](https://pypi.org)
 
 **Import your app through SCM**: Available for Pip, pipenv and Poetry
 
@@ -198,6 +216,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: Bundler
 
+**Package registry**: [rubygems.org](https://rubygems.org/)
+
 **Import your app through SCM**: Available&#x20;
 
 **Test or monitor your app through CLI and IDE**: Available
@@ -218,6 +238,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: Cargo
 
+**Package registry**: [crates.io](https://crates.io/)
+
 **Import your app through SCM**: NA&#x20;
 
 **Test or monitor your app through CLI and IDE**: NA
@@ -233,6 +255,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 ### [Scala](scala.md) for open source
 
 **Package manager**: sbt
+
+**Package registry**: [maven.org](https://maven.org/)
 
 **Import your app through SCM**: Available&#x20;
 
@@ -253,6 +277,8 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 **Package manager**: CocoaPods, Swift Package Manager
 
+**Package registry**: No single registry, multiple sources including [cocoapods.org](https://cocoapods.org)
+
 **Import your app through SCM**: Available for CocoaPods
 
 **Test or monitor your app through CLI and IDE**: Available
@@ -272,7 +298,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 Here you can find information about the programming languages, fully supported frameworks, and features for Snyk Code.
 
-### [Apex](apex.md) for code anaysis
+### [Apex](apex.md) for code analysis
 
 **Frameworks**: APEX&#x20;
 
@@ -287,7 +313,7 @@ Here you can find information about the programming languages, fully supported f
 * Interfile analysis is supported for Apex
 * `.trigger` and `.cls` files are supported
 
-### [.Net](.net/) for code analysis
+### [.NET](.net/) for code analysis
 
 **Frameworks**:&#x20;
 
