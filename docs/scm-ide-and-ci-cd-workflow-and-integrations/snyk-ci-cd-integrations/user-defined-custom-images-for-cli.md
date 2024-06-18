@@ -48,7 +48,7 @@ After the Dockerfile is defined, you can build and tag the image using [docker b
 
 ```sh
 # bulid image
-docker build --tag foobar/snyk:node-lts
+docker build <PATH-TO-DOCKERFILE> --tag foobar/snyk:node-lts
 
 # push image
 docker push foobar/snyk:node-lts
