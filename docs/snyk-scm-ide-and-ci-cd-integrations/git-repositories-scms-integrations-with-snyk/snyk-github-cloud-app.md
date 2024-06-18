@@ -5,15 +5,20 @@
 
 The Snyk GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you are interested in getting access.
 
-This feature is not yet supported for Snyk Broker.\
+This feature is not yet supported for Snyk Broker.
+
 As Snyk does not have static IP addresses, this integration will not work with IP allowlisting in GitHub.
 {% endhint %}
 
 ## Prerequisites for GitHub Cloud App
 
 * Snyk Organization Admin user role.
-* GitHub Admin permissions for the selected repository. If the Snyk GitHub Cloud App is installed in a repository that requires organization permissions, you must be a GitHub organization owner.
+* GitHub Organization Admin user role.
 * A public or private GitHub repository.
+
+{% hint style="info" %}
+Users can install the app on GitHub Organizations they are Repository Admins on through the GitHub UI.
+{% endhint %}
 
 ## GitHub Cloud App benefits
 
