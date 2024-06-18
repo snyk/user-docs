@@ -19,7 +19,7 @@ Note that this guide is relevant for Snyk UI integrations only. The CLI already 
 
 ## JavaScript language settings
 
-1. Go to settings <img src="../../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> **> Languages > JavaScript** and either the npm or Yarn settings depending on your project types
+1. Go to settings <img src="../../../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> **> Languages > JavaScript** and either the npm or Yarn settings depending on your project types
 2. If you have not previously connected to Artifactory you will be asked to configure an integration first; see [Artifactory Registry setup](./).
 3. Select **Add registry configuration**.
    1. Select **Artifactory** as the Package source.
@@ -32,4 +32,4 @@ Note that this guide is relevant for Snyk UI integrations only. The CLI already 
 
 Open a Pull/Merge Request on a Project that contains private dependencies that are hosted in Artifactory to see **a lockfile updated and included in the Snyk Fix Pull Request with the correct URL to your repository**.
 
-<figure><img src="../../../../.gitbook/assets/image4-3-.png" alt="Pull request to test Artifactory integration"><figcaption><p>Pull request to test Artifactory integration</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image4-3-.png" alt="Pull request to test Artifactory integration"><figcaption><p>Pull request to test Artifactory integration</p></figcaption></figure>

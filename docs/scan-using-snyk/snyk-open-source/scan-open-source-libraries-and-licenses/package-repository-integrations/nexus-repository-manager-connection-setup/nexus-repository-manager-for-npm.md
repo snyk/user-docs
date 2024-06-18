@@ -21,11 +21,7 @@ This guide is relevant for Snyk Web UI integrations only, the Snyk CLI already s
 
 ## JavaScript Language Settings
 
-
-
-
-
-![](<../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.18.43.png>)
+![](<../../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.18.43.png>)
 
 Now follow the steps below, according to your version of Nexus.
 
@@ -58,4 +54,4 @@ Now follow the steps below, according to your version of Nexus.
 
 Open a Pull/Merge Request on a project that contains private dependencies that are hosted in Nexus to see **a lockfile updated and included in the Snyk Fix Pull Request with the correct URL to your repository.**
 
-![](<../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.22.59.png>)
+![](<../../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.22.59.png>)

@@ -19,7 +19,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Snyk Code Local Engine**](../../scan-with-snyk/snyk-code/snyk-code-local-engine.md): Not available.
 * [**Broker**](../../enterprise-configuration/snyk-broker/): Not available.
 * [**Self-hosted Git**](../../scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md): Not available.
-* [**Private Registry Integrations**](../../scan-using-snyk/snyk-open-source/package-repository-integrations/): Not available.
+* [**Private Registry Integrations**](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/): Not available.
 * [**Snyk AppRisk Inventory**](../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/): Not available
 * [**Snyk AppRisk Issue page**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.
 
