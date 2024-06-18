@@ -28,8 +28,8 @@ The Snyk GitHub Cloud App improves on many features as compared to the current G
 * **Granular access control**: The GitHub Cloud App allows for fine-grained control over access permissions at the repository level.&#x20;
 * **Increased API rate limit**: The GitHub Cloud App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit will assist in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
 * **Enabler for an enhanced developer experience:**
-  * Pull request checks: The GitHub Cloud App improves the PR Checks workflow by showing the test results directly on the Checks tab in GitHub.
-  * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed on behalf of Snyk-bot rather than a service account as the user.
+  * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of future PR check workflow improvements.
+  * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed directly by the GitHub App rather than a service account.
 
 ## How to set up the Snyk GitHub Cloud App
 
