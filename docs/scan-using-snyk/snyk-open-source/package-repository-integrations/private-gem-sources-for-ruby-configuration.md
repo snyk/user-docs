@@ -13,14 +13,14 @@ This guide is relevant for Snyk UI integrations only. The CLI supports Ruby Proj
 
 ## Configuration of private gem sources for Ruby
 
-1. Go to settings <img src="../../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> > **General**.
+1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> > **General**.
 2. Find the `RubyGems Bundler environment variables` section (see the screen illustration).
 3. Add environment variable names and values to define credentials for gem sources.\
    These are generally the same as the values you set on your developer machine, in your CI environments, or both.\
    Example name: `BUNDLE_GITHUB__COM`, Value: `abcd0123generatedtoken:x-oauth-basic`
 4. To test the configuration, open a Pull/Merge Request on a Project that contains gems from your private registries to see a lockfile updated and included in the Snyk Fix Pull Request.
 
-<figure><img src="../../../../.gitbook/assets/94445628-8fdd3980-019f-11eb-816e-2c61c5b99c5c.png" alt="RubyGems Bundler environment variables"><figcaption><p>RubyGems Bundler environment variables</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/94445628-8fdd3980-019f-11eb-816e-2c61c5b99c5c.png" alt="RubyGems Bundler environment variables"><figcaption><p>RubyGems Bundler environment variables</p></figcaption></figure>
 
 ## Requirements for configuration of private gem sources for Ruby
 

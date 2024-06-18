@@ -8,7 +8,7 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 
 * Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.
 * Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
-* Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/)
+* Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../scan-using-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-using-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)
 
 {% hint style="info" %}
 If you are not a Snyk Enterprise user using Artifactory or Nexus, analysis is best performed via CLI, as the build system will retrieve the dependencies and be present locally.
@@ -16,9 +16,9 @@ If you are not a Snyk Enterprise user using Artifactory or Nexus, analysis is be
 
 For more information on package registry integrations, including Maven, see the following:
 
-* Package registry integrations: [Nexus Repository Manager setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/)
-* [Artifactory Registry for Maven](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
-* [Nexus Registry for Maven](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
+* Package registry integrations: [Nexus Repository Manager setup](../../scan-using-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-using-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)
+* [Artifactory Registry for Maven](../../scan-using-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
+* [Nexus Registry for Maven](../../scan-using-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
 * Nexus Container Registry: [Container security with Nexus integration](../../scan-using-snyk/snyk-container/container-security-integrations/integrate-with-nexus-container-registry.md)
 * Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md) and [Nexus Repository Manager Gatekeeper plugin](../../scan-using-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
 

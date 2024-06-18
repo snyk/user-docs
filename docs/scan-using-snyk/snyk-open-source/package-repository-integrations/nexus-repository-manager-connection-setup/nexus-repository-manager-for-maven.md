@@ -15,7 +15,7 @@ Maven Projects can be configured to mirror all requests through a custom package
 
 If authentication is required to access your Nexus registry, you must first configure the Nexus Repository Manager integration. See [Nexus Repository Manager setup](./).
 
-Once the integration is set up, you can configure Maven settings by navigating to settings ![Settings icon](../../../../../.gitbook/assets/cog\_icon.png) **> Languages > Java**.
+
 
 You can choose whether to use Nexus as a mirror or as an additional repository where your artifacts will reside.
 
@@ -23,7 +23,7 @@ These settings are very similar to what you have in `~/.m2/settings.xml`.
 
 ### **Mirrors**
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.10.52.png" alt="Set up for Mirrors"><figcaption><p>Set up for Mirrors</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.10.52.png" alt="Set up for Mirrors"><figcaption><p>Set up for Mirrors</p></figcaption></figure>
 
 Choose a value for the Type, either **Direct** or, if you are using using authentication, **Integration**.
 

@@ -7,7 +7,7 @@ This page identifies additional Snyk integrations and where to find them.
 Snyk provides plugins for repository gatekeepers and integrations to connect with package repositories:
 
 * [Gatekeeper plugins](gatekeeper-plugins/)
-* [Package repository integrations](../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/)
+* [Package repository integrations](../scan-using-snyk/snyk-open-source/package-repository-integrations/)
 
 There are integrations that support Snyk Container and Snyk Iac:
 
