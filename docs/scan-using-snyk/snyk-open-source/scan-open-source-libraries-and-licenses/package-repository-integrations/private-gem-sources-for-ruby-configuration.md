@@ -1,20 +1,20 @@
 # Private gem sources for Ruby configuration
 
 {% hint style="info" %}
-**Note**\
-This functionality is currently in beta. [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to have it enabled for your Organization.
+**Availability**\
+This functionality is in beta. [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to have it enabled for your Organization.
+
+This guide is relevant for Snyk UI integrations only. The CLI supports Ruby Projects with private registries without extra configuration.
 {% endhint %}
 
 You can add a configuration to tell Snyk where your private gems are hosted. This is the same information you would normally add as a Bundler environment variable.
 
 After you have added this configuration, Snyk uses the information to access private dependencies when creating Pull/Merge Requests, by allowing Bundler to reach those dependencies in order to regenerate the lockfile.
 
-This guide is relevant for Snyk UI integrations only. The CLI supports Ruby Projects with private registries without extra configuration.
-
 ## Configuration of private gem sources for Ruby
 
-1. Go to settings <img src="../../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> > **General**.
-2. Find the `RubyGems Bundler environment variables` section (see the screen illustration).
+1. Navigate to **Settings > General**.
+2. Find the `RubyGems Bundler environment variables` section; see the screen illustration.
 3. Add environment variable names and values to define credentials for gem sources.\
    These are generally the same as the values you set on your developer machine, in your CI environments, or both.\
    Example name: `BUNDLE_GITHUB__COM`, Value: `abcd0123generatedtoken:x-oauth-basic`

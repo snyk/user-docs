@@ -1,8 +1,8 @@
 # Nexus Repository Manager for Maven
 
 {% hint style="info" %}
-**Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+**Availability**\
+This feature is available with Enterprise plans.  [ricing](https://snyk.io/plans/)for more details.
 {% endhint %}
 
 Snyk can use Nexus Repository Manager with Maven Projects.
@@ -15,13 +15,9 @@ Maven Projects can be configured to mirror all requests through a custom package
 
 If authentication is required to access your Nexus registry, you must first configure the Nexus Repository Manager integration. See [Nexus Repository Manager setup](./).
 
-
-
-You can choose whether to use Nexus as a mirror or as an additional repository where your artifacts will reside.
+You can choose to use Nexus as a mirror or as an additional repository where your artifacts will reside.
 
 These settings are very similar to what you have in `~/.m2/settings.xml`.
-
-### **Mirrors**
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.10.52.png" alt="Set up for Mirrors"><figcaption><p>Set up for Mirrors</p></figcaption></figure>
 
@@ -51,8 +47,6 @@ If the URL is `http://nexus.company.io/nexus/content/repositories/releases`, Rep
 {% endtab %}
 {% endtabs %}
 
-### **Repositories**
-
-Alternatively, you can configure repositories which will be used as additional locations to check for artifacts.
+Alternatively, you can configure repositories  will be used as additional locations to check for artifacts.
 
 Repositories are configured in the same way as [Mirrors](nexus-repository-manager-for-maven.md#mirrors), but do not require **Mirror Of**.

@@ -1,13 +1,11 @@
 # Nexus Repository Manager connection setup
 
 {% hint style="info" %}
-**Feature availability**\
+**Availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
 
-{% hint style="info" %}
 **Supported Projects**\
-The Nexus Repository Manager integration currently supports [Node.js](../../../../../supported-languages-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../../supported-languages-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) Projects. Gradle Projects are not currently supported.
+The Nexus Repository Manager integration supports [Node.js](../../../../../supported-languages-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../../supported-languages-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) Projects. Gradle Projects are not currently supported.
 {% endhint %}
 
 Connecting Nexus Repository Manager enables Snyk to resolve all direct and transitive dependencies of packages hosted on the Nexus registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
@@ -15,7 +13,7 @@ Connecting Nexus Repository Manager enables Snyk to resolve all direct and trans
 You can configure these types of Nexus Repository Manager:
 
 * Publicly accessible instances protected by basic authentication
-* Instances on a private network accessed through Snyk Broker (with or without basic authentication).
+* Instances on a private network by using Snyk Broker (with or without basic authentication).
 
 {% hint style="info" %}
 **Versions supported**
@@ -24,7 +22,7 @@ You can configure these types of Nexus Repository Manager:
 * Nexus Repository Manager version 2.15+
 {% endhint %}
 
-These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Nexus Repository Manager](../../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
+These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance, see the [setup instructions for Snyk Broker with Nexus Repository Manager](../../../../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/).
 
 ## Set up publicly accessible instances
 
@@ -37,27 +35,27 @@ On the page to configure Nexus, enter the information for the version you are us
 
 {% tabs %}
 {% tab title="Nexus 3" %}
-* Enter the URL of your Nexus instance; this **must** end with `/repository`
-* Enter Username
-* Enter Password
+* Enter the URL of your Nexus instance; this must end with `/repository`
+* Enter the Username.
+* Enter the Password.
 * Click **Save**
 {% endtab %}
 
 {% tab title="Nexus 2" %}
-* Enter URL of your Nexus instance, this **must** end with `/nexus/content`
-* Enter Username
-* Enter Password
-* Click **Save**
+* Enter the URL of your Nexus instance; this must end with `/nexus/content.`
+* Enter the Username.
+* Enter the Password.
+* Click **Save.**
 {% endtab %}
 {% endtabs %}
 
-## Nexus behind reverse proxy
+## Nexus behind a reverse proxy
 
 If your Nexus server is running behind a reverse proxy, for example, Nginx, the URL might not end with the default `/repository` for Nexus 3 or `/nexus/content` for Nexus 2, depending on what routes have been configured in the reverse proxy. If this is the case, ensure you use the URL configured in the reverse proxy.
 
-Example: for Nexus 3: if `http://nexus.company.io/repository` is mapped to `http://nexus.company.io/my-company/my-repository`, use `http://nexus.company.io/my-company/my-repository`.
+Example: for Nexus 3, if `http://nexus.company.io/repository` is mapped to `http://nexus.company.io/my-company/my-repository`, use `http://nexus.company.io/my-company/my-repository`.
 
-Example: for Nexus 2: if `http://nexus.company.io/nexus/content` is mapped to `http://nexus.company.io/my-nexus-content`, use `http://nexus.company.io/my-nexus-content`.
+Example: for Nexus 2, if `http://nexus.company.io/nexus/content` is mapped to `http://nexus.company.io/my-nexus-content`, use `http://nexus.company.io/my-nexus-content`.
 
 {% hint style="success" %}
 A green success message appears if Snyk can contact your repository.
@@ -67,7 +65,7 @@ If you see a yellow warning message, check your URL and credentials and try agai
 
 ## Nexus user permissions
 
-The Nexus user needs the following privileges, either as part of Role or added individually:
+The Nexus user needs the following privileges, either as part of the Role or added individually:
 
 {% tabs %}
 {% tab title="Nexus 3" %}
