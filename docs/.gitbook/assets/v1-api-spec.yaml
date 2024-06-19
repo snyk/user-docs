@@ -21228,7 +21228,7 @@ components:
           description: The name of the package that the issue relates to
         version:
           type: string
-          description: The version of the package that the issue relates to
+          description: The version of the package that the issue relates to. If we `groupBy` issue, this will return the most recent version of the package the issue relates to
         severity:
           type: string
           description: The severity status of the issue, after policies are applied
