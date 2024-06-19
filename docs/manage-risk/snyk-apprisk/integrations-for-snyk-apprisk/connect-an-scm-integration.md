@@ -19,6 +19,10 @@ If your SCM instance is not publicly accessible, you must connect using Snyk Bro
 
 ## GitHub setup guide
 
+{% hint style="info" %}
+If you used GitHub Apps for your SCM integrations at the Snyk Organization level, Snyk AppRisk requires an overview of your GitHub Organization. This means that the GitHub integration in Snyk AppRisk uses an API token as an authentication method to onboard your GitHub Organization.&#x20;
+{% endhint %}
+
 ### Pulled entities <a href="#github-pulled-entities" id="github-pulled-entities"></a>
 
 * Repositories
