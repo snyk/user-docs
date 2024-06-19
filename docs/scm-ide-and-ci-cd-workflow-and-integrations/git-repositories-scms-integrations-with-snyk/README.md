@@ -29,21 +29,43 @@ To ensure a smooth rollout of Snyk across your organization, Snyk provides a sug
 
 For detailed steps, see [Deployment recommendations for SCM integrations](./#deployment-recommendations-for-git-integrations).
 
-## GitHub and GitHub Enterprise permissions requirements
+## User permissions and access scope requirements
+
+Snyk SCM integrations may require different permission requirements based on the connection method.
+
+See the following for detailed permission requirements:
+
+* [GitHub and GitHub Enterprise](./#github-and-github-enterprise-permissions-requirements)
+* [GitLab](./#gitlab-permission-requirements)
+
+### GitHub and GitHub Enterprise permissions requirements
 
 {% hint style="info" %}
 For information about token permissions in a brokered integration, see [GitHub - install and configure using Docker](../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md).
 {% endhint %}
 
-The Snyk GitHub integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the PAT on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
+The [Snyk GitHub integration](snyk-github-integration.md) is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the PAT on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
 
 The following table details the access scopes required in GitHub for Personal Access Tokens (PAT) and the scopes required for Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs. GitHub custom roles are not supported.
 
 <table><thead><tr><th width="259">Action and purpose</th><th align="center">PAT scopes</th><th align="center">Repository scopes</th></tr></thead><tbody><tr><td><strong>Daily/weekly tests:</strong><br>Read manifest files in private repositories.</td><td align="center"><code>repo (all)</code></td><td align="center">≥ <code>read</code></td></tr><tr><td><strong>Manual fix pull requests:</strong><br>Create fix PRs in monitored repositories.</td><td align="center"><code>repo (all)</code></td><td align="center"></td></tr><tr><td><strong>Automatic fix and upgrade pull requests:</strong><br>Create fix or upgrade PRs in monitored repositories.</td><td align="center"><code>repo (all)</code></td><td align="center">≥ <code>write</code></td></tr><tr><td><strong>Snyk tests on pull requests:</strong><br>Send PR status checks whenever a new PR is created, or an existing PR is updated.</td><td align="center"><code>repo (all)</code></td><td align="center">≥ <code>write</code></td></tr><tr><td><strong>Initial configuration of Snyk tests on pull requests:</strong><br>Used to add SCM webhooks to the imported repo</td><td align="center"><code>admin:repo_hooks (read &#x26; write)</code></td><td align="center"><code>admin</code></td></tr><tr><td><strong>Import new Projects to Snyk:</strong><br>Present a list of all the available repos in the GitHub org in the <strong>Add Projects</strong> screen.</td><td align="center"><code>admin:read:org</code><br><code>repo (all)</code></td><td align="center"></td></tr></tbody></table>
 
-Snyk uses PRs to tell GitHub Enterprise that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
+Snyk uses PRs to tell [GitHub Enterprise](snyk-github-enterprise-integration.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
 
 Snyk uses SCM webhooks to:
 
 * Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.
 * Send push events to trigger PR checks.
+
+### GitLab permission requirements
+
+The [Snyk GitLab integration](snyk-gitlab-integration.md#gitlab-access-tokens) uses either a personal access token (PAT) or group access token (GAT), depending on the GitLab account tier you are on.
+
+To set up the Snyk GitLab integration you must be a:
+
+* Snyk Group or Organization Admin.
+* GitLab Owner or Maintainer
+
+A PAT is used for managing personal GitLab projects and requires the `api` scope.
+
+A GAT is used for managing multiple GitLab projects in a GitLab group and requires the `api` scope and maintainer role selected from the dropdown. You must be a GitLab Premium or Ultimate account tier holder to create a GAT.
