@@ -36,6 +36,7 @@ Snyk SCM integrations may require different permission requirements based on the
 See the following for detailed permission requirements:
 
 * [GitHub and GitHub Enterprise](./#github-and-github-enterprise-permissions-requirements)
+* GitHub Cloud App
 * [GitLab](./#gitlab-permission-requirements)
 
 ### GitHub and GitHub Enterprise permissions requirements
@@ -66,6 +67,16 @@ Snyk uses SCM webhooks to:
 
 * Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.
 * Send push events to trigger PR checks.
+
+### GitHub Cloud App permission requirements
+
+The [Snyk GitHub Cloud App](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
+
+To set up the GitHub Cloud app integration you must be a:
+
+* Snyk Organization Admin.
+* GitHub Organization Admin.
+* GitHub Repository Admin (if installing through the GitHub UI).
 
 ### GitLab permission requirements
 
