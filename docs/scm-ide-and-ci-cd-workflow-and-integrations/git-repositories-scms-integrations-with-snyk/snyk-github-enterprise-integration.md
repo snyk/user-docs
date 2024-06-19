@@ -39,24 +39,11 @@ Follow these steps to connect Snyk with your GitHub repositories:
 3. [Authorize your personal access token and enable SSO.](snyk-github-enterprise-integration.md#how-to-authorize-your-personal-access-token-and-enable-sso)
 4. [Import your GitHub repositories](snyk-github-enterprise-integration.md#how-to-import-github-repositories).
 
-### How to generate a Personal Access Token
+### Generate a Personal Access Token
 
-Generate a classic personal access token for the account, under **Developer settings** in GitHub Enterprise, with the following access scopes:
+A personal access token (PAT) or fine-grained PAT must be generated in GitHub Enterprise under **Developer settings**.
 
-* `repo (all)`
-* `admin:read: org`
-* `admin:repo_hooks (read & write)`
-
-If you are using fine-grained personal access tokens, the following repository access scopes are required:
-
-* `Administration: Read-only`
-* `Commit Status: Read and write`
-* `Content: Read and write`
-* `Metadata: Read-only`
-* `Pull requests: Read and write`
-* `Webhooks: Read and write`
-
-For fine-grained personal access tokens, an additional `Members access: Read-only` organization access scope is required.
+See [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements) for detailed information on the access scope requirements you must adhere to.
 
 ### **How to authorize** your Personal Access Token and enable SSO
 

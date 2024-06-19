@@ -50,6 +50,16 @@ The following table details the access scopes required in GitHub for Personal Ac
 
 <table><thead><tr><th width="259">Action and purpose</th><th align="center">PAT scopes</th><th align="center">Repository scopes</th></tr></thead><tbody><tr><td><strong>Daily/weekly tests:</strong><br>Read manifest files in private repositories.</td><td align="center"><code>repo (all)</code></td><td align="center">≥ <code>read</code></td></tr><tr><td><strong>Manual fix pull requests:</strong><br>Create fix PRs in monitored repositories.</td><td align="center"><code>repo (all)</code></td><td align="center"></td></tr><tr><td><strong>Automatic fix and upgrade pull requests:</strong><br>Create fix or upgrade PRs in monitored repositories.</td><td align="center"><code>repo (all)</code></td><td align="center">≥ <code>write</code></td></tr><tr><td><strong>Snyk tests on pull requests:</strong><br>Send PR status checks whenever a new PR is created, or an existing PR is updated.</td><td align="center"><code>repo (all)</code></td><td align="center">≥ <code>write</code></td></tr><tr><td><strong>Initial configuration of Snyk tests on pull requests:</strong><br>Used to add SCM webhooks to the imported repo</td><td align="center"><code>admin:repo_hooks (read &#x26; write)</code></td><td align="center"><code>admin</code></td></tr><tr><td><strong>Import new Projects to Snyk:</strong><br>Present a list of all the available repos in the GitHub org in the <strong>Add Projects</strong> screen.</td><td align="center"><code>admin:read:org</code><br><code>repo (all)</code></td><td align="center"></td></tr></tbody></table>
 
+A fine-grained PAT requires additional repository access scopes:
+
+* `Administration: Read-only`
+* `Commit Status: Read and write`
+* `Content: Read and write`
+* `Metadata: Read-only`
+* `Pull requests: Read and write`
+* `Webhooks: Read and write`
+* `Members access: Read-only (Organization access scope)`
+
 Snyk uses PRs to tell [GitHub Enterprise](snyk-github-enterprise-integration.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
 
 Snyk uses SCM webhooks to:
