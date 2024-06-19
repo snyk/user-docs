@@ -100,3 +100,4 @@ redirects:
   snyk-api/api-endpoints-index-and-notes/set-project-attributes-using-the-snyk-api: snyk-api/api-endpoints-index-and-notes/README.md
   snyk-api/how-to-use-snyk-api-endpoints/set-project-attributes-using-the-snyk-api: snyk-api/api-endpoints-index-and-notes/README.md
   snyk-api/how-to-use-snyk-api-endpoints/find-who-created-a-service-account: snyk-api/api-endpoints-index-and-notes/README.md
+  manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration#servicenow-cmdb-setup-guide: manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/application-context-for-scm-integrations#servicenow-cmdb-for-scm-integrations.md
