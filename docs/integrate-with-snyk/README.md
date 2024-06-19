@@ -1,6 +1,6 @@
-# Additional Snyk integrations
+# Integrate with Snyk
 
-Many integrations are available for using third-party functionality within Snyk and using Snyk within other tools. See [SCM, IDE, and Ci/CD workflow and integrations](../scm-ide-and-ci-cd-workflow-and-integrations/) for information on integrations and other methods of accomplishing that workflow.
+Many integrations are available for using third-party functionality within Snyk and using Snyk with other tools. See [SCM, IDE, and CI/CD workflow and integrations](../scm-ide-and-ci-cd-workflow-and-integrations/) for information on integrations and other methods of accomplishing that workflow.
 
 This page identifies additional Snyk integrations and where to find them.
 
