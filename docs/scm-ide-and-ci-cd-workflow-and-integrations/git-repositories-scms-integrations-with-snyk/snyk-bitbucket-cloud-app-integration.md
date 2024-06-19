@@ -21,7 +21,7 @@ The Snyk Bitbucket Cloud App integration lets you connect your Snyk Organization
 {% hint style="info" %}
 Snyk recommends using the Bitbucket Cloud App integration for smoother integration and to ensure long-term support.
 
-If you are using the [Bitbucket Cloud Personal Access Token (Legacy) integration](snyk-bitbucket-cloud-integration.md), see [Migrate a Bitbucket Cloud Legacy integration](migrate-a-bitbucket-cloud-personal-access-token.md) for more information.
+If you are using the [Bitbucket Cloud Personal Access Token (Legacy) integration](snyk-bitbucket-cloud-integration.md), see [Migrate a Bitbucket Cloud Legacy integration](snyk-bitbucket-cloud-legacy-vs-snyk-bitbucket-cloud-app.md) for more information.
 {% endhint %}
 
 ## Setting up a Bitbucket Cloud App
