@@ -3,8 +3,6 @@
 {% hint style="warning" %}
 **Release status**\
 The third-party integrations are available in Closed Beta and are applicable only to the Snyk AppRisk Pro version. Contact your salesperson if you are interested in Snyk AppRisk Pro.
-
-The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
 {% endhint %}
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
@@ -304,44 +302,4 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 
 {% hint style="info" %}
 After the Sysdig runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
-{% endhint %}
-
-## ServiceNow CMDB setup guide
-
-{% hint style="warning" %}
-**Release status**
-
-The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
-{% endhint %}
-
-### Required Parameters <a href="#servicenow-cmdb-required-parameters" id="servicenow-cmdb-required-parameters"></a>
-
-1. Setup the host instance for the ServiceNow CMDB by following this example `https://<INSTANCE_NAME>.service-now.com`.
-2. Username and Password - Credentials for your ServiceNow CMDB instance.
-3. The CMDB configuration item class. The list can be found here: [https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html](https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html)
-4. Repo URL - Add the URL of the repository.
-
-{% hint style="info" %}
-* This feature is only for the integration with ServiceNow CMDB
-* The data gathered by Snyk from ServiceNow CMDB will be correlated with the Repository Assets.
-{% endhint %}
-
-### Integration Hub setup <a href="#servicenow-cmdb-integration-hub-setup" id="servicenow-cmdb-integration-hub-setup"></a>
-
-* Open the **Integration Hub** menu.&#x20;
-* Select the **App Context** tag and search for ServiceNow CMDB.&#x20;
-* Click the **Add** button.
-* Add the **Profile name** - this is the name of your ServiceNow CMDB profile.
-* Add the **CMDB Instance** - this is your ServiceNow instance, use this format: `https://<INSTANCE_NAME>.service-now.com`
-* Add the **Username** and the **Password**- the username and password to access the ServiceNow CMDB instance
-* Add the **Table name** - select the configuration item class that Snyk AppRisk should onboard. Use this format `cmdb_ci_<class>`
-* Add the **CMDB Field to map Repo URL** - the specific URL that is being referred to in the ServiceNow CMDB record.
-* You can select one or more attributes related to repository assets and configure where Snyk AppRisk can take this attribute in ServiceNow CMDB. Example:&#x20;
-  * Category: application\_type
-  * Owner: business\_unit
-* Click the **Done** button.
-* When the connection is established, the status of the ServiceNow CMDB integration is changed to **Connected**.
-
-{% hint style="info" %}
-The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
 {% endhint %}

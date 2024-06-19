@@ -673,7 +673,7 @@
     * [Integrations for Snyk AppRisk](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/README.md)
       * [Customize an integration](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/customize-an-integration.md)
       * [Connect an SCM integration](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration.md)
-      * [Backstage file for SCM Integrations](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/backstage-file-for-scm-integrations.md)
+      * [Application context for SCM Integrations](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/application-context-for-scm-integrations.md)
       * [Connect a third-party integration](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
       * [Snyk runtime sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
     * [Inventory for Snyk AppRisk](manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/README.md)

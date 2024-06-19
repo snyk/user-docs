@@ -49,7 +49,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 
 4. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
 5. Pull personal repositories (`optional`): Enable the option if you only want to pull the repositories you own.
-6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
+6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
 
 #### Generate a Personal access token from your GitHub settings
 
@@ -98,7 +98,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 3. Host URL (`mandatory`): The IP/URL of the GitLab server. The default URL is [`https://gitlab.com`](https://gitlab.com)
 4. Verify SSL (`optional`): Enable the option if you want to verify the SSL.
 5. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.
-6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
+6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
 
 #### Generate a Personal access token from your GitLab settings
 
@@ -134,7 +134,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 {% endhint %}
 
 4. API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
-5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
+5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
 
 #### Generate a Personal access token from your Azure DevOps settings
 
@@ -196,7 +196,7 @@ Create a BitBucket app password by following these steps:
 {% endhint %}
 
 6. Service type (`mandatory`): Select the service type, Cloud, or On-premises.
-7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](backstage-file-for-scm-integrations.md) page.
+7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
 
 ### API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
 
