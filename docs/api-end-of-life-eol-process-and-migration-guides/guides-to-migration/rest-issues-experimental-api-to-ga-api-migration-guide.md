@@ -9,7 +9,7 @@ An experimental endpoint should be considered unstable and regarded as a tech pr
 ## What's new in the GA REST Issues API?
 
 {% hint style="info" %}
-GA REST Issues API documentation [`/groups/{group_id}/issues`](https://apidocs.snyk.io/?version=2024-06-06#get-/groups/-group\_id-/issues) and [`/orgs/{org_id}/issues`](https://apidocs.snyk.io/?version=2024-06-06#get-/orgs/-org\_id-/issues).
+GA REST Issues API documentation [`/groups/{group_id}/issues`](https://apidocs.snyk.io/#get-/groups/-group\_id-/issues) and [`/orgs/{org_id}/issues`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/issues).
 {% endhint %}
 
 This version of the API delivers:
