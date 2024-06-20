@@ -301,6 +301,7 @@
       * [Server returned HTTP response code 403 for URL](scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/troubleshooting-ides/server-returned-http-response-code-403-for-url.md)
       * [Maven Scans with Private Repositories](scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/troubleshooting-ides/maven-scans-with-private-repositories.md)
       * [Error executing binary because of corporate policy (Windows)](scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/troubleshooting-ides/error-executing-binary-because-of-corporate-policy-windows.md)
+      * [IDE plugin fails with "Scan failed" on windows systems with .exe download blocking](scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/troubleshooting-ides/ide-plugin-fails-with-scan-failed-on-windows-systems-with-.exe-download-blocking.md)
   * [Snyk CI/CD integrations](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/README.md)
     * [Snyk Code in the CI/CD pipeline](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/use-snyk-code-in-the-ci-cd-pipeline.md)
     * [Snyk CI/CD Integration deployment and strategies](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/README.md)
