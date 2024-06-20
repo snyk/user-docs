@@ -57,4 +57,4 @@ For application vulnerabilities, Snyk currently provides support for the followi
 * JavaScript
 * Go
 
-To see the updated list of supported languages, see [Detect application vulnerabilities in container images](../../../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md).
+To see the updated list of supported languages, see [Detect application vulnerabilities in container images](../../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).

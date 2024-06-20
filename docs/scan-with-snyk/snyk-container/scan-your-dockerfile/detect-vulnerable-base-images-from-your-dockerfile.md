@@ -50,4 +50,4 @@ After you [integrate your Git repository with Snyk](../../../scm-ide-and-ci-cd-w
 
 <figure><img src="../../../.gitbook/assets/dockerfiles_projects.png" alt=""><figcaption><p>Dockerfiles displayed in the Project list</p></figcaption></figure>
 
-For details about detecting vulnerable base images in containers and fix recommendations, see [Detect the container base image](../use-snyk-container-from-the-web-ui/detect-the-container-base-image.md).
+For details about detecting vulnerable base images in containers and fix recommendations, see [Detect the container base image](../../../scan-using-snyk/snyk-container/use-snyk-container/detect-the-container-base-image.md).

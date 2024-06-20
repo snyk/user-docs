@@ -71,6 +71,6 @@ Harbor imports are indicated with a unique icon. You can also filter to view onl
 <figure><img src="../../../.gitbook/assets/mceclip1-9-.png" alt="Harbor Projects in Projects listing"><figcaption><p>Harbor Projects in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
-For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images.md).
+For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}
 

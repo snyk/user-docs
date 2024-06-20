@@ -186,7 +186,7 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 ## Custom Base Images
 
-**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/)
+**More information:** [Use Custom Base Image Recommendations](../../scan-using-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/)
 
 ### [Get a custom base image collection](https://apidocs.snyk.io/?#get-/custom\_base\_images)
 
