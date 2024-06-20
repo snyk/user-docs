@@ -30,7 +30,11 @@ When you select a channel, you are selecting the stability level you want to use
 
 ### preview&#x20;
 
-Note that the preview channel contains features that are being developed. This channel may have known as well as unknown issues that are not yet officially released and supported.
+{% hint style="info" %}
+Snyk offers a preview channel for those who want to test _in-progress_ features. However, keep in mind that this channel may contain bugs and is not officially supported.
+{% endhint %}
+
+A preview version is not recommended for production environments. It may contain bugs and is best tested in a local environment. For instructions on installing a preview version, see [Install standalone executables from a channel.](releases-and-channels-for-the-snyk-cli.md#install-standalone-executables-from-a-channel)
 
 * Preview: pre-release builds are deployed regularly up to multiple times a day and contain the latest changes.
 * Version Pattern: v{MAJOR}.{MINOR}.{PATCH}-preview
@@ -38,10 +42,6 @@ Note that the preview channel contains features that are being developed. This c
 * Availability:
   * [https://static.snyk.io/cli/preview/](https://static.snyk.io/cli/preview/)
   * [https://static.snyk.io/fips/cli/preview/](https://static.snyk.io/cli/preview/)
-
-{% hint style="info" %}
-For instructions on installing a preview version, see [Install standalone executables from a channel.](releases-and-channels-for-the-snyk-cli.md#install-standalone-executables-from-a-channel)
-{% endhint %}
 
 ### rc&#x20;
 
@@ -84,13 +84,14 @@ See the `release.json` in each channel for the download links. Examples for the 
 * [https://static.snyk.io/cli/preview/release.json](https://static.snyk.io/cli/preview/release.json)
 * [https://static.snyk.io/cli/preview/snyk-macos](https://static.snyk.io/cli/preview/snyk-macos)
 
-For example, to download and run the preview release of the Snyk CLI for macOS, you could run:
+For example, to download and run a preview version of the CLI in a temporary folder of macOS, you could run the following set of commands.&#x20;
 
-```
+<pre class="language-sh"><code class="lang-sh"><strong>mkdir snyk-preview
+</strong>cd snyk-preview
 curl --compressed https://static.snyk.io/cli/preview/snyk-macos -o snyk
 chmod +x ./snyk
-mv ./snyk /usr/local/bin/
-```
+./snyk -version
+</code></pre>
 
 ## Selecting a channel from the IDE
 
