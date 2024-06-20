@@ -4,7 +4,7 @@
 
 ### Code analysis
 
-Snyk Code partially supports Go.
+Snyk Code supports Go.
 
 ### Open source and licensing
 
@@ -122,10 +122,6 @@ To obtain the best possible resolution, enable [full source code analysis](go.md
 When full source code analysis is enabled, Snyk uses the `go list -json -deps ./...` command to build the dependency tree the same way the CLI test does. Otherwise, it uses `go mod graph` .
 
 #### Enable full source code analysis
-
-{% hint style="info" %}
-Full source code analysis for Go Modules is currently in [Early Access](../getting-started/snyk-release-process.md#open-beta).
-{% endhint %}
 
 To build the most accurate dependency tree for Go Modules Projects imported from Git, Snyk needs to access all the files in your repository.
 
