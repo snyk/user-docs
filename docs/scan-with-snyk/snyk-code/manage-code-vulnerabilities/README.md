@@ -20,13 +20,13 @@ Automate importing multiple repositories using [Snyk API v1 Import targets](http
 
 ## Code testing from import to retest
 
-Here is an overview of the testing process in Snyk Code based on the testing phases.
+The following provides an overview of the testing process in Snyk Code based on the testing phases.
 
 <table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../import-project-with-snyk-code.md">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
 
 ### Retesting code repository
 
-If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by clicking the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](../../../working-with-snyk/what-counts-as-a-test.md)
+If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by selecting the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](../../../working-with-snyk/what-counts-as-a-test.md)
 
 You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Exclude directories and files from Project import](../../import-project-repository/exclude-directories-and-files-from-project-import.md).
 
@@ -36,13 +36,28 @@ You can also use the **Retest now** option to apply the exclusion rules of the `
 
 The Projects page on Snyk Web UI has a filter pane that categorizes Snyk Projects and shows the number of matching Projects for each criterion. See [Project information](../../../snyk-admin/snyk-projects/project-information.md).
 
+The **Grouping by File or Vulnerability Type** feature offers the following additional options:
+
+* **Grouping by File**: This option helps identify specific files that contain multiple vulnerabilities, enabling you to focus on problematic files that may need more rigorous review or refactoring.
+* **Grouping by Vulnerability Type**: This option categorizes vulnerabilities by their type, such as SQL Injection or Cross-Site Scripting (XSS), assisting in addressing the most prevalent types of vulnerabilities within your codebase.
+
+Refer to the respective sections in the Snyk User Documentation for detailed examples and usage scenarios.
+
 ## Vulnerability issues
 
 You can change the display of the issues on the Code analysis page using the following options:
 
-* Grouping by **File** or **Vulnerability Type** to identify problematic files with multiple issues or address prevalent vulnerability types.
-* Sorting from the **Highest** or the **Lowest** severity level.
-* Filtering discovered vulnerability issues according to different criteria shown in the following table.&#x20;
+### Group by **File** or **Vulnerability Type**&#x20;
+
+Identify problematic files with multiple issues or address frequent vulnerability types. Use these filtering options to determine where vulnerabilities are likely to cluster together.
+
+### Sort by Severity level
+
+Sort vulnerability issues by displaying those with the highest severity levels first, followed by those with lower severity levels.
+
+### Filter vulnerabilities by criteria
+
+Filter discovered vulnerability issues according to different criteria shown in the following table.
 
 <table><thead><tr><th width="232">Vulnerability issue filter</th><th>Description</th></tr></thead><tbody><tr><td><a href="../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md">Severity level</a></td><td>Show issues with a certain severity level. Snyk Code uses only <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> severity levels, without <strong>Critical</strong>. </td></tr><tr><td><a href="../../../manage-risk/prioritize-issues-for-fixing/priority-score.md#calculation-of-priority-score">Priority score</a></td><td>Show issues in a certain priority score range.</td></tr><tr><td>Status</td><td>Show <strong>Open</strong> issues or issues that were <strong>Ignored</strong>.</td></tr><tr><td><a href="../../../supported-languages-and-frameworks/">Languages</a></td><td>Show issues that were discovered in code files that were written in a specific language. Only programming languages discovered in the analyzed repository are displayed in the Filter pane.</td></tr><tr><td><a href="../snyk-code-security-rules/">Vulnerability types</a></td><td>Show issues with a certain Vulnerability Type. See <a href="../snyk-code-security-rules/">Snyk Code security rules</a>.</td></tr></tbody></table>
 
