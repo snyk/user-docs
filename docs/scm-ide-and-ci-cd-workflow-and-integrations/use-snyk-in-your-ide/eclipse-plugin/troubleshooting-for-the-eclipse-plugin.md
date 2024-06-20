@@ -2,7 +2,7 @@
 
 ## General troubleshooting
 
-For general troubleshooting please see the troubleshooting pages [here](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/7345/scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/troubleshooting).
+For general troubleshooting please see the troubleshooting pages [here](../troubleshooting-ides/).
 
 ## Logs
 
