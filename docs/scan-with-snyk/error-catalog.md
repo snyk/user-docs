@@ -517,6 +517,15 @@ The server encountered a critical operation that requires a specific environment
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
+### [SNYK-OS-0009](#snyk-os-0009)
+
+#### Missing environment variable
+
+The service encountered a permissions or credentials error most likely related to an import through a brokered connection for a scanner that does not yet support that.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
 
 #### Unsupported manifest file type for remediation
@@ -2067,4 +2076,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-06-11T11:06:41.961Z
+--- Generated at 2024-06-20T19:12:15.576Z
