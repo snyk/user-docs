@@ -6,7 +6,7 @@ Snyk for Apex is supported only for Snyk Code.
 
 ## Code analysis
 
-Interfile is currently not supported. The data flow is monitored within a single file, not between multiple files.
+Interfile analysis is supported.
 
 `.trigger` and `.cls` files are supported.
 
