@@ -32,7 +32,7 @@ For a small number of applications, typically under a hundred, follow these step
 
 For hundreds or thousands of repositories, you can use the [Snyk API v1 Import targets endpointI](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets) to import your Projects. This takes advantage of an existing source control integration and can be used to automate processes.
 
-The [snyk-api-import](../../../snyk-api/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. You must mirror the source control structure when using the snyk-api-import tool.
+The [snyk-api-import](../../../scan-using-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. You must mirror the source control structure when using the snyk-api-import tool.
 
 ### Snyk CLI
 

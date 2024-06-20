@@ -23,7 +23,7 @@ When you run a test in your pipeline, you can use filters to determine what woul
 
 ## CLI supporting tools
 
-When you use the Snyk CLI in your pipeline, you can use a range of supporting [Snyk Tools](../../../snyk-api/snyk-tools/) that provide additional functionality, including:
+When you use the Snyk CLI in your pipeline, you can use a range of supporting [Snyk Tools](../../../scan-using-snyk/snyk-tools/) that provide additional functionality, including:
 
 * [snyk-delta](https://docs.snyk.io/snyk-api/other-tools/tool-snyk-delta), which can be used to compare two sets of results and identify new vulnerabilities, similar to how the PR Checks feature tests for new vulnerabilities only
 * [snyk-filter](https://docs.snyk.io/snyk-api/other-tools/tool-snyk-filter), which can be used for more complex fail criteria, such as `fail if more than three High severity vulnerabilities are found`.
