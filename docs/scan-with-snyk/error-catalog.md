@@ -519,7 +519,7 @@ The server encountered a critical operation that requires a specific environment
 
 ### [SNYK-OS-0009](#snyk-os-0009)
 
-#### Missing environment variable
+#### Brokered connections not currently supported
 
 The service encountered a permissions or credentials error most likely related to an import through a brokered connection for a scanner that does not yet support that.
 
@@ -2076,4 +2076,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-06-20T19:12:15.576Z
+--- Generated at 2024-06-20T19:31:40.545Z
