@@ -33,10 +33,6 @@ ITSM:
 
 * [Jira](connect-a-third-party-integration.md#jira-setup-guide)
 
-App Context:
-
-* [ServiceNow CMDB](connect-a-third-party-integration.md#servicenow-cmdb-setup-guide)
-
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
 {% endhint %}
