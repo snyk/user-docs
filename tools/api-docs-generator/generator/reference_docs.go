@@ -149,7 +149,8 @@ func renderReferenceDocsPage(filePath, label, docsPath string, operation []opera
 
 {%% hint style="info" %%}
 %s
-{%% endhint %%}`, label, operation[0].docsHint)
+{%% endhint %%}
+`, label, operation[0].docsHint)
 	if err != nil {
 		return err
 	}
@@ -176,12 +177,13 @@ func renderReferenceDocsPage(filePath, label, docsPath string, operation []opera
 		_, err = fmt.Fprintf(docsFile,
 			`
 {%% swagger src="%s" path="%s" method="%s" %%}
-[spec.yaml](%s)
+[%s](%s)
 {%% endswagger %%}
 `,
 			relativePathToSpec,
 			op.pathURL,
 			strings.ToLower(op.method),
+			path.Base(relativePathToSpec),
 			relativePathToSpec,
 		)
 		if err != nil {
