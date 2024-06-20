@@ -4,9 +4,9 @@ fetcher:
 specs:
 - path: docs/.gitbook/assets/v1-api-spec.yaml
   suffix: " (v1)"
-  docsHint: This document uses the v1 API. For more details, see the [v1 API](../v1-api-overview/).
+  docsHint: This document uses the v1 API. For more details, see the [v1 API](../v1-api.md).
 - path: docs/.gitbook/assets/rest-spec.json
-  docsHint: This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
+  docsHint: This document uses the REST API. For more details, see the [Authentication for API](../rest-api/authentication-for-api/) page.
 categoryContext:
 - name: licenses-v1
   hint: |
