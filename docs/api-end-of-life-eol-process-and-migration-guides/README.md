@@ -1,4 +1,4 @@
-# API End of Life (EOL) overview
+# API End of Life (EOL) process and migration guides
 
 This page explains the process, key dates, and milestones associated with the end-of-life (EOL) cycle for all API endpoints. In this documentation, you will also find detailed information about [key dates](api-eol-endpoints-and-key-dates.md) and [migration guides](guides-to-migration/) for API endpoints that are in the end-of-life process.
 
@@ -22,6 +22,7 @@ Migrating from V1 API to GA REST can be a time-consuming process, and Snyk wants
    * A migration guide by our field specialists for ease of migration
 3. Snyk will [publicly announce](http://updates.snyk.io/) which endpoints will be part of an EOL cycle one month before the cycle begins.&#x20;
 4. On a monthly basis during the EOL cadence, Snyk will temporarily halt functionality for the nominated endpoints for a period of time, increasing in duration over the course of the EOL.
+5. When we reach the EOL date, the endpoint will stop working and you will receive an error. In addition, the API documentation will be removed.
 
 ## Types of API EOL
 

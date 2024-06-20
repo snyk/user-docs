@@ -1052,6 +1052,7 @@
   * [Guides to migration](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/README.md)
     * [List all Projects V1 API to REST API migration guide (completed migration)](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/list-all-projects-v1-api-to-rest-api-migration-guide-completed-migration.md)
     * [REST Issues experimental API to GA API migration guide](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/rest-issues-experimental-api-to-ga-api-migration-guide.md)
+    * [Search Audit Logs (Group and Org) v1 API to GA REST Audit logs API migration guide](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/search-audit-logs-group-and-org-v1-api-to-ga-rest-audit-logs-api-migration-guide.md)
 * [Working with Snyk](working-with-snyk/README.md)
   * [How Snyk handles your data](working-with-snyk/how-snyk-handles-your-data.md)
   * [Regional hosting and data residency](working-with-snyk/regional-hosting-and-data-residency.md)
