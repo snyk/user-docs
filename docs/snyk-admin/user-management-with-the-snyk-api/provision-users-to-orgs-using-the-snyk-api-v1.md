@@ -12,11 +12,11 @@ The API does not support using service accounts as the inviting user or provisio
 
 * The user being provisioned must not already exist in the Snyk system.
 * The inviting user must call the API using a personal token.
-* The Snyk Group to which the Organizations belong should have [Single Sign On (SSO) configured](../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/).
+* The Snyk Group to which the Organizations belong should have [Single Sign On (SSO) configured](../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/).
 * Both the inviting user and the provisioned user must log in using SSO.
 * The inviting user should have the permission `Provision Users` to invoke these calls. All Group and Org Admins by default have this permission.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-09 at 09.57.17.png" alt="Enable Provision Users permission"><figcaption><p>Enable Provision Users permission</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-09 at 09.57.17.png" alt="Enable Provision Users permission"><figcaption><p>Enable Provision Users permission</p></figcaption></figure>
 
 ## How to use the Provision user API
 
@@ -55,7 +55,7 @@ You provision a user to the specified Organization with a role. When a user firs
 `}`
 
 {% hint style="info" %}
-Enterprise plan users can define their own customized [member roles](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md) and can use `rolePublicId` for assignment.\
+Enterprise plan users can define their own customized [member roles](../manage-permissions-and-roles/user-role-management.md) and can use `rolePublicId` for assignment.\
 \
 You can use either `role` or `rolePublicId` but not both in the same call.
 {% endhint %}
