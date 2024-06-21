@@ -1,6 +1,6 @@
-# Provision users to Orgs using the Snyk API v1
+# Provision users to Organizations using the V1 API
 
-The [Provision user endpoints](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) in the Snyk API v1 allow you to organize and grant permissions to your single sign-on users before the users log in to the Snyk platform.
+The [Provision user endpoints](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) allow you to organize and grant permissions to your single sign-on users before the users log in to the Snyk platform.
 
 Provisioned users do not need to accept invites. When provisioned users first log in to Snyk, they will have all their permissions. You can use the [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) endpoint to add users to Organizations at scale before their first login.
 
@@ -14,7 +14,7 @@ The API does not support using service accounts as the inviting user or provisio
 * The inviting user must call the API using a personal token.
 * The Snyk Group to which the Organizations belong should have [Single Sign On (SSO) configured](../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/).
 * Both the inviting user and the provisioned user must log in using SSO.
-* The inviting user should have the permission `Provision Users` to invoke these calls. All Group and Org Admins by default have this permission.
+* The inviting user should have the permission `Provision Users` to invoke these calls. All Group and Org Admins, by default, have this permission.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-09-09 at 09.57.17.png" alt="Enable Provision Users permission"><figcaption><p>Enable Provision Users permission</p></figcaption></figure>
 
@@ -55,7 +55,7 @@ You provision a user to the specified Organization with a role. When a user firs
 `}`
 
 {% hint style="info" %}
-Enterprise plan users can define their own customized [member roles](../manage-permissions-and-roles/user-role-management.md) and can use `rolePublicId` for assignment.\
+Enterprise plan users can define their own customized [member roles](../manage-permissions-and-roles/user-role-management.md) and can use the`rolePublicId` for assignment.\
 \
 You can use either `role` or `rolePublicId` but not both in the same call.
 {% endhint %}

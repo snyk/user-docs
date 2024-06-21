@@ -1,8 +1,6 @@
-# Remove members from Groups and Orgs using the Snyk REST and v1 API
+# Remove members from Groups and Orgs using the API
 
-To remove members from Groups and Organizations programmatically, you can use the Snyk API v1 and the Snyk REST API, as explained in the steps that follow.
-
-You cannot use the following API calls to remove Service Accounts. The API calls are for use to remove human user accounts only.
+To remove members from Groups and Organizations programmatically from user user accounts, you can use the API V1 and REST as explained in the steps that follow. You cannot use these API calls to remove service accounts.
 
 ## Remove Organization memberships
 
@@ -44,6 +42,8 @@ This call returns an array of all members of the Group. Save the `id` of each us
 
 **Request**: PATCH https://api.snyk.io/rest/groups/{group\_id}/users/{id}?version=2023-01-30\~beta
 
+**API documentation**: [https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#patch-/groups/-group\_id-/users/-id-](https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#patch-/groups/-group\_id-/users/-id-)
+
 **Body:**
 
 ```postman_json
@@ -57,8 +57,6 @@ This call returns an array of all members of the Group. Save the `id` of each us
     }
 }
 ```
-
-**API documentation**: [https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#patch-/groups/-group\_id-/users/-id-](https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#patch-/groups/-group\_id-/users/-id-)
 
 For each user, call the endpoint to remove that member from the Group using the user id you saved previously.
 

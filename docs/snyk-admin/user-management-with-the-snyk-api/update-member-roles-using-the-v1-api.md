@@ -1,8 +1,8 @@
-# Update Member Roles using the Snyk API v1
+# Update member roles using the V1 API
 
-To migrate members of existing organizations to new roles, you must use the [Snyk API](../../snyk-api/).
+To migrate members of existing organizations to new roles, you must use the API. Follow the steps in each section of this document.
 
-Follow the steps in each section of this document. Snyk recommends running these updates with bounded concurrency in batches so as not to trip any of the rate limiters. Optimally, perform the updates in batches of **ten** concurrent requests at a time.
+Snyk recommends running these updates with bounded concurrency in batches so as not to trip any of the rate limiters. Optimally, perform the updates in batches of **ten** concurrent requests at a time.
 
 ## Step 1: Get a list of roles in your Group
 
@@ -20,12 +20,10 @@ This call returns an array of objects, each describing custom and non-custom (fo
 
 This call returns an array of all non-admin members of the Organization. Save the `id` of each user who should have a new role.
 
-Listing public IDs
+Service accounts are not returned by the List members endpoint. You must get the `publicID` of each service account from the Service Account Settings page:
 
-Service accounts are not returned by the list members in an organization endpoint. You must get the **public IDs** of service accounts from the Service Account Settings page:
-
-* In your **Service Accounts Settings**, select the **name of the service account** for which you want to get the public id.
-* When the **Edit account name** window opens, copy the string at the end of the URL; this is the **public ID** of the service account.
+* In your **Service Accounts Settings**, select the **name of the service account** for which you want to get the `publicID`.
+* When the **Edit account name** window opens, copy the string at the end of the URL; this is the `publicID` of the service account.
 
 ## Step 3: Update the role of users
 
@@ -39,4 +37,4 @@ You pass a `rolePublicId` in the JSON-formatted body of the request. This is the
 
 For a successful request, the response is `200 OK`.
 
-You can verify the change on the Org members page (for humans) or the Service Account Settings page (for robots).
+You can verify the change on the Organization members page (for humans) or the Service Account Settings page (for robots).

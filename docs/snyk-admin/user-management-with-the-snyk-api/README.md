@@ -2,14 +2,13 @@
 
 {% hint style="info" %}
 **Availability**\
-Snyk API is available only for Enterprise plans.\
+The Snyk API is available only for Enterprise plans.\
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Users can be managed using the Snyk [API v1](https://snyk.docs.apiary.io) and [REST](https://apidocs.snyk.io/?version=2024-01-04#overview) API and the [Snyk Web UI](../manage-permissions-and-roles/user-role-management.md). You can also [manage service accounts](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md) using the Snyk REST API.
+You can manage users through the Snyk Web UI, and also the Snyk API [V1](https://snyk.docs.apiary.io) and [REST](https://apidocs.snyk.io/?version=2024-01-04#overview). In addition, you can [manage service accounts](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md) using the Snyk REST API.
 
-[User provisioning ](provision-users-to-orgs-using-the-snyk-api-v1.md)uses the provisioning endpoints to organize and grant permissions under a specified role for SSO users before initial log-on.
-
-Users can be programmatically [removed from Groups and Organizations](remove-members-from-groups-and-orgs-using-the-snyk-rest-and-v1-api.md) using the member endpoint.
-
-[Audit logs](retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md) can be retrieved for the past 90 days using the Group-level audit logs endpoint to monitor user activity.
+* You can use the [provisioning endpoints ](provision-users-to-organizations-using-the-v1-api.md)to organize and grant permissions under a specified role for SSO users before initial log-on.
+* You must use the API to [update member roles](update-member-roles-using-the-v1-api.md).
+* You can [remove users from Groups and Organizations](remove-members-from-groups-and-orgs-using-the-api.md) programmatically using the member endpoints.
+* You can retrieve [audit logs](retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md) for the past 90 days using the Group-level audit logs endpoint to monitor user activity.
