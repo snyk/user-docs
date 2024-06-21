@@ -234,6 +234,8 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 ### [Delete a user from a Group SSO connection](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
 
+For information on how to use this endpoint, see [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
+
 ## Groups (v1)
 
 ### Group settings
@@ -251,6 +253,8 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 #### List all members in a group
 
 [Migrated List all members in a group](https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group/list-all-members-in-a-group)
+
+For information on how to use this endpoint, see [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
 
 ### Members in an organization of a group
 
@@ -282,6 +286,8 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 [Migrated List all roles in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group)
 
+For information on how to use this endpoint, see [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md).
+
 ## IacSettings
 
 ### [Get the Infrastructure as Code Settings for a group](https://apidocs.snyk.io/?version=2024-05-23#get-/groups/-group\_id-/settings/iac)
@@ -302,7 +308,9 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 #### Import targets
 
-The Snyk API v1 endpoint [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets) can be used to import Snyk Projects. If this fails, use [Get import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details) to help determine why. There are two types of failures:
+The Snyk API v1 endpoint [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets) can be used to import Snyk Projects. Using this endpoint, you can automate importing multiple repositories; see [Manage code vulnerabilities](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/).
+
+If this fails, use [Get import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details) to help determine why. There are two types of failures:
 
 * The repository was rejected for processing, that is, HTTP status code 201 was not returned. This happens if there is an issue Snyk can see quickly for example:
   * The repository does not exist.
@@ -313,6 +321,8 @@ The Snyk API v1 endpoint [Import targets](https://snyk.docs.apiary.io/#reference
   * The individual project or manifest had issues during processing. In this case Snyk returns success: false with a message in the log.
 
 The poll results return a message per manifest processed, either `success: true` or `success: false.`
+
+
 
 [Migrated import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets)
 
@@ -462,6 +472,8 @@ Note: Remedies are not included in the response at this time.
 
 [Migrated List members](https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members)
 
+For information on how to use this endpoint, see [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)
+
 ### Organization settings
 
 #### View organization settings
@@ -482,11 +494,15 @@ Note: Remedies are not included in the response at this time.
 
 [Migrated Remove a member from the organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization)
 
+For information on how to use this endpoint, see [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
+
 ### Update member roles in your organization
 
 #### Update a member's role in the organization
 
 [Migrated Update a member's role in the organization](https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization)
+
+For information on how to use this endpoint, see [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md).
 
 ### Manage organization
 
@@ -495,6 +511,8 @@ Note: Remedies are not included in the response at this time.
 [Migrated Remove organization](https://snyk.docs.apiary.io/#reference/organizations/manage-organization/remove-organization)
 
 ### Provision user
+
+For information how to use these endpoints, see [Provision users to Organizations using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-v1-api.md).
 
 #### Provision a user to the organization
 
@@ -907,6 +925,8 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 ### [Update a user’s role in a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#patch-/groups/-group\_id-/users/-id-) (beta)
 
 Note: Use this endpoint to remove users from a group.
+
+For information on how to use this endpoint, see [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
 
 ### [Get user by ID](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
 
