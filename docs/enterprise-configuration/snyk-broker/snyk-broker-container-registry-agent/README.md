@@ -93,7 +93,7 @@ For DigitalOcean Container Registry, Google Cloud Container Registry, Google Art
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration provided by Snyk support.
 * `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example: "[http://my.broker.client:8000](http://my.broker.client:8000)". &#x20;
   * This must have http:// and the port number.&#x20;
-  * To configure the client with HTTPS, [additional settings are required](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker).
+  * .[Additional settings are required](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker) to configure the client with HTTPS.
 * `CR_AGENT_URL` - The URL of your Container Registry Agent, including scheme and port, to which the Broker Client will route the requests, for example: "[http://my.container-registry-agent](http://my.container-registry-agent)".
 * `CR_TYPE` - The container registry type as listed in [Supported container registries](./#supported-container-registries) on this page, for example, "docker-hub", "gcr", "artifactory-cr".
 * `CR_BASE` - The hostname of the container registry api to connect to, for example: "cr.host.com".
@@ -219,10 +219,14 @@ The `/systemcheck` endpoint is not mandatory for the brokered integration to fun
 
 ## **Debugging methods for Container Registry Agent**
 
-The `LOG_LEVEL` environment variable can be set to the desired level (debug/info/warn/error) in order to change the level of the Container Registry Agent and Broker Client logs.
-
-For more verbose debugging, run the Container Registry Agent with the `DEBUG=*` environment variable. This allows you to print the logs of the Node [Debug](https://www.npmjs.com/package/debug) package. The Debug package is used by several packages in the Container Registry Agent, among them the [Needle](https://www.npmjs.com/package/needle) package, which is used for making HTTP requests. To print debug logs specifically from Needle, set `DEBUG=needle`.
+The `LOG_LEVEL` environment variable can be set to control the desired log level of the Container Registry Agent and Broker Client. The default value is `info`. The accepted values are `debug`, `info`, `warn` and `error`.
 
 {% hint style="warning" %}
-Using the debugging options of third-party tools is not recommended for production environments, as this may result in logging sensitive information in logs that are not maintained by Snyk, for example, header information of HTTP requests.
+Enabling debugging for third-party libraries is not recommended for production environments, as this may expose sensitive information in logs not maintained by Snyk, for example, headers of HTTP requests.
 {% endhint %}
+
+To enable debug logs from the third-party HTTP request library [Needle](https://www.npmjs.com/package/needle), set the environment variable `NODE_DEBUG=needle`.
+
+To enable debug logs from all third-party libraries, set the environment variables `DEBUG=*` and `NODE_DEBUG=*`.
+
+The `DEBUG` environment variable controls the [Debug](https://www.npmjs.com/package/debug) package output. The `NODE_DEBUG` environment variable controls Node.js [util.debuglog](https://nodejs.org/api/util.html#utildebuglogsection-callback) output.
