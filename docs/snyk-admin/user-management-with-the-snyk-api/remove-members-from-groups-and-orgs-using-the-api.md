@@ -42,7 +42,7 @@ This call returns an array of all members of the Group. Save the `id` of each us
 
 **Request**: PATCH https://api.snyk.io/rest/groups/{group\_id}/users/{id}?version=2023-01-30\~beta
 
-**API documentation**: [https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#patch-/groups/-group\_id-/users/-id-](https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#patch-/groups/-group\_id-/users/-id-)
+**API documentation**: [https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#patch-/groups/-group\_id-/users/-id-](https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#patch-/groups/-group\_id-/users/-id-)
 
 **Body:**
 
