@@ -74,7 +74,7 @@ When an SSO connection is associated with only one Group, the following call can
 
 **Request**: DELETE `https://api.snyk.io/rest/groups/{group_id}/sso_connections/{sso_id}/users/{user_id}?version=2023-01-30~beta`
 
-**API documentation**: [https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-](https://apidocs.snyk.io/?version=2023-01-30%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
+**API documentation**: [https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-](https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
 
 You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** >**Settings** >**SSO** >**Step 3**. If you need help, reach out to your Account team.
 
