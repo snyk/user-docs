@@ -5622,12 +5622,6 @@
         "additionalProperties": false,
         "minProperties": 1,
         "properties": {
-          "branch_name": {
-            "description": "The name of the branch that will be created when the pull request is created",
-            "example": "chore/bump-{{package_name}}-{{package_from}}-{{package_to}}",
-            "minLength": 1,
-            "type": "string"
-          },
           "commit_message": {
             "description": "The commit message that will be used when the pull request is created",
             "example": "chore(deps): bump {{package_name}} from {{package_from}} to {{package_to}}",
@@ -54925,7 +54919,7 @@
       "name": "Projects"
     },
     {
-      "description": "Snyk pull request templates allow you to control title, description, commit message and branch name.",
+      "description": "Snyk pull request templates allow you to control title, description, commit message.",
       "name": "Pull Request Templates"
     },
     {
@@ -54955,5 +54949,5 @@
   ],
   "x-optic-url": "https://app.useoptic.com/organizations/390ef489-882c-48ba-acb3-4e0b73e48767/apis/5Tz5UMTNEIuz5-FZ6J2ki",
   "x-snyk-api-lifecycle": "released",
-  "x-snyk-api-version": "2024-06-06"
+  "x-snyk-api-version": "2024-06-18"
 }

@@ -1,3 +1,16 @@
+## 2024-06-18
+
+### POST - `/groups/{group_id}/settings/pull_request_template` - Updated
+- removed the request property `data/attributes/branch_name`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `data/attributes/branch_name` from the response with the `201` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/settings/pull_request_template` - Updated
+- removed the optional property `data/attributes/branch_name` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2024-06-06
 
 ### GET - `/orgs/{org_id}/projects` - Updated
