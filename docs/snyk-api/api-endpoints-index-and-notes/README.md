@@ -230,6 +230,8 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 ### [Get a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-)
 
+**More information:** [Org and group identification for Projects](org-and-group-identification-for-projects.md)
+
 ### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-/sso\_connections)
 
 ### [Get all users using a given SSO connection](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users)
@@ -281,6 +283,8 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 #### List all organizations in a group
 
 [Migrated List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
+
+**More information:** [Org and group identification for Projects](org-and-group-identification-for-projects.md)
 
 ### List all roles in a group
 
@@ -446,6 +450,8 @@ Note: Remedies are not included in the response at this time.
 
 [Migrated List all the organizations a user belongs to](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to)
 
+**More information:** [Org and group identification for Projects](org-and-group-identification-for-projects.md)
+
 ### Create organization
 
 #### Create a new organization
@@ -538,6 +544,8 @@ Note: Remedies are not included in the response at this time.
 
 ### [Get organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-)
 
+**More information:** [Org and group identification for Projects](org-and-group-identification-for-projects.md)
+
 ### [Update organization](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-)
 
 ## Projects
@@ -587,6 +595,8 @@ Note: Remedies are not included in the response at this time.
 The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues) returns an array of `ignoreReasons` for each vulnerability. This happens because ignores implemented using the CLI and API are path-based and thus potentially could have different `ignoreReasons` for different paths. Because List all aggregated issues returns only one issue for all paths, the entire set of reasons is returned. Snyk groups issues together by their identifier, so one response for the List all aggregated issues endpoint could correspond to the same issue across multiple paths. Thus the `ignoredReason` is across all issues that are aggregated and applies to that single grouped issue.
 
 ### Project Issue Paths
+
+**More information:** [V1 API Project issue paths endpoints](v1-api-project-issue-paths-endpoints.md)
 
 #### List all project issue paths
 
