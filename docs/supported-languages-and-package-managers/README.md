@@ -135,7 +135,7 @@ Here you can find information about the programming languages, fully supported f
 * Interfile analysis is supported for Kotlin
 * Android is partially supported
 
-### [PHP](php.md) for code analysis
+### [PHP](php/) for code analysis
 
 **Frameworks**:&#x20;
 
