@@ -190,7 +190,7 @@ Here you can find information about the programming languages, fully supported f
 * Reports
 * Custom rules
 
-### [Scala](scala.md) for code analysis
+### [Scala](scala/) for code analysis
 
 **Frameworks**:&#x20;
 
