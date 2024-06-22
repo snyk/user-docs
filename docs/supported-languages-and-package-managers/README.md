@@ -177,7 +177,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions up to 3.8.x
 
-### [Ruby](ruby.md) for code analysis
+### [Ruby](ruby/) for code analysis
 
 **Frameworks**: Ruby On Rails
 
