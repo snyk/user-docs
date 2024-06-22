@@ -2,6 +2,27 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [Swift and Objective-C](swift-and-objective-c.md) for open source
+
+**Package manager**: CocoaPods, Swift Package Manager
+
+**Package registry**: No single registry, multiple sources including [cocoapods.org](https://cocoapods.org)
+
+**Import your app through SCM**: Available for CocoaPods
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:swift`, `pkg:cocoapods`
+
+**Test your app's packages**: Available, `pkg:swift`, `pkg:cocoapods`
+
+**Features**:&#x20;
+
+* License scanning (CocoaPods)
+* Reports
+
+**Package manager versions**: CocoaPods, Swift Package Manager, Swift v3.0 or higher.
+
 {% hint style="info" %}
 Objective-C is supported only by Snyk Open Source.
 {% endhint %}

@@ -1,7 +1,7 @@
 # Supported IaC languages, cloud providers, and cloud resources
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see [Supported languages and frameworks](../../../supported-languages-and-frameworks/).
+For environments supported with other Snyk products, see [Supported languages and frameworks](../../../supported-languages-and-package-managers/).
 {% endhint %}
 
 Use Snyk IaC to find, view, and fix issues in infrastructure configuration files for Terraform, Kubernetes Manifests, AWS CloudFormation, Azure Resource Manager (ARM), and Helm Charts.

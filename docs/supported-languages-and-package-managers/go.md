@@ -2,6 +2,27 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [Go](go.md) for open source
+
+**Package manager**: Go Modules, dep
+
+**Package registry**: No single registry, multiple sources&#x20;
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:golang`
+
+**Test your app's packages**: Available, `pkg:golang`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
 ## Code analysis
 
 Snyk Code supports Go.

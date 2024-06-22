@@ -2,6 +2,28 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [Ruby](ruby.md) for open source
+
+**Package manager**: Bundler
+
+**Package registry**: [rubygems.org](https://rubygems.org/)
+
+**Import your app through SCM**: Available&#x20;
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:gem`
+
+**Test your app's packages**: Available, `pkg:gem`
+
+**Features**:&#x20;
+
+* Fix PRs&#x20;
+* License scanning
+* Reports
+
+**Package manager versions**: All Gemfile and Gemfile.lock are compatible with the [Snyk supported Ruby versions](ruby.md#supported-ruby-versions)
+
 ## Code analysis
 
 {% hint style="info" %}

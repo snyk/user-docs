@@ -2,6 +2,27 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [C/C++](./) for open source
+
+**Package manager**: NA
+
+**Package registry**: No single registry, multiple sources&#x20;
+
+**Import your app through SCM**: NA
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:generic`
+
+**Test your app's packages**: Available, `pkg:generic`
+
+**Features**:
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
 ## Code analysis
 
 Snyk Code supports the following:

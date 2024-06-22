@@ -12,10 +12,10 @@ Snyk can generate Fix Pull Requests (Fix PRs) or Merge Requests (MRs) for depend
 
 Snyk supports creating Fix PRs or MRs for the following languages:
 
-* [Maven](../../../supported-languages-and-frameworks/java-and-kotlin/best-practices-for-java-and-kotlin.md#maven)
-* [.NET](../../../supported-languages-and-frameworks/.net/)
-* [npm](../../../supported-languages-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#npm)
-* [Python](../../../supported-languages-and-frameworks/python.md)
-* [Ruby](../../../supported-languages-and-frameworks/ruby.md)
-* [Yarn](../../../supported-languages-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#yarn)
+* [Maven](../../../supported-languages-and-package-managers/java-and-kotlin/best-practices-for-java-and-kotlin.md#maven)
+* [.NET](../../../supported-languages-and-package-managers/.net/)
+* [npm](../../../supported-languages-and-package-managers/javascript/best-practices-for-javascript-and-node.js.md#npm)
+* [Python](../../../supported-languages-and-package-managers/python.md)
+* [Ruby](../../../supported-languages-and-package-managers/ruby.md)
+* [Yarn](../../../supported-languages-and-package-managers/javascript/best-practices-for-javascript-and-node.js.md#yarn)
 

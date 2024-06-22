@@ -2,6 +2,27 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [Elixir](elixir.md) for open source
+
+**Package manager**: Hex
+
+**Package registry:**  [hex.pm](https://hex.pm/)
+
+**Import your app through SCM**: NA
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:hex`
+
+**Test your app's packages**: Available, `pkg:hex`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
 {% hint style="info" %}
 Snyk for Elixir is supported only for Snyk Open Source.
 {% endhint %}

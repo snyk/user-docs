@@ -2,6 +2,30 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [Python](python.md) for open source
+
+**Package manager**: Pip, Poetry, pipenv, setup.py
+
+**Package resgirty**: [pypi.org](https://pypi.org)
+
+**Import your app through SCM**: Available for Pip, pipenv and Poetry
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:pypi`
+
+**Test your app's packages**: Available, `pkg:pypi`
+
+**Features**:&#x20;
+
+* Fix PRs&#x20;
+* License scanning
+* Reports
+
+**Package manager versions**: Suitable with `Python 2 -> 2.7.16`, and `Python 3 -> 3.7.4`.
+
+
+
 ## Code analysis
 
 {% hint style="info" %}

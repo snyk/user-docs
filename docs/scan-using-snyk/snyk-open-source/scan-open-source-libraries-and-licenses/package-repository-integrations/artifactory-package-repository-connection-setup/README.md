@@ -5,7 +5,7 @@
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
 **Supported Projects**\
-The Artifactory Package Repository integration supports [Node.js](../../../../../supported-languages-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../../supported-languages-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) Projects. Gradle Projects are not supported.
+The Artifactory Package Repository integration supports [Node.js](../../../../../supported-languages-and-package-managers/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../../supported-languages-and-package-managers/java-and-kotlin/#supported-frameworks-and-package-managers) Projects. Gradle Projects are not supported.
 {% endhint %}
 
 Connecting a custom Artifactory Package Repository enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.

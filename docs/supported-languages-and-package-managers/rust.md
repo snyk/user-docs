@@ -2,6 +2,22 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+**Package manager**: Cargo
+
+**Package registry**: [crates.io](https://crates.io/)
+
+**Import your app through SCM**: NA&#x20;
+
+**Test or monitor your app through CLI and IDE**: NA
+
+**Test your app's SBOM**: Available, `pkg:cargo`
+
+**Test your app's packages**: Available, `pkg:cargo`
+
+**Features**: NA
+
+**Package manager versions**: NA
+
 {% hint style="info" %}
 **Feature availability**\
 Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.

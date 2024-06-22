@@ -2,6 +2,85 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+### [JavaScript](../javascript/) for open source
+
+**Package manager**: npm, Yarn
+
+**Package registry**: [npmjs.org](https://www.npmjs.org)
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:npm`
+
+**Test your app's packages**: Available, `pkg:npm`
+
+**Features**:&#x20;
+
+* Fix PRs&#x20;
+* License scanning
+* Reports
+
+**Package manager versions**:&#x20;
+
+* npm
+  * `Lockfile 1, Lockfile 2, Lockfile 3, 7.*`\
+    For details, see the [Snyk Javascript ](../javascript/#npm)page.
+* Yarn
+  * `Yarn 1, Yarn 2, Yarn 3`. For more information, see the [Snyk Javascript ](../javascript/#yarn)page.
+
+TO MOVE
+
+### [PHP](../php.md) for open source
+
+**Package manager**: Composer
+
+**Package registry**: [packagist.org](https://packagist.org/)
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:composer`
+
+**Test your app's packages**: Available, `pkg:composer`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
+## [Java and Kotlin](./) for open source
+
+**Package manager**: Maven, Gradle
+
+**Package registry**: [maven.org](https://maven.org/)
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:maven`
+
+**Test your app's packages**: Available, `pkg:maven`
+
+**Features**:&#x20;
+
+* Fix PRs (Maven)
+* License scanning
+* Reports
+
+**Package manager versions**:&#x20;
+
+* Maven
+  * `3.*` For details, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
+* Gradle
+  * `4.*`, `5.*`, `6.*`, `7.*`\
+    For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+
 ## Code analysis
 
 {% hint style="info" %}

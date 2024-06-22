@@ -2,6 +2,27 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [Scala](scala.md) for open source
+
+**Package manager**: sbt
+
+**Package registry**: [maven.org](https://maven.org/)
+
+**Import your app through SCM**: Available&#x20;
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:maven`
+
+**Test your app's packages**: Available, `pkg:maven`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
 ## Code analysis
 
 {% hint style="info" %}

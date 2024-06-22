@@ -2,6 +2,30 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [.NET](./) for open source
+
+**Package manager**: NuGet, Paket
+
+**Package registry**: [nuget.org](https://www.nuget.org/)
+
+**Import your app through SCM**: NuGet
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:nuget`
+
+**Test your app's packages**: Available, `pkg:nuget`
+
+**Features**:&#x20;
+
+* Fix PRs (NuGet)
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
+
+
 ## Supported frameworks and package managers
 
 {% hint style="info" %}

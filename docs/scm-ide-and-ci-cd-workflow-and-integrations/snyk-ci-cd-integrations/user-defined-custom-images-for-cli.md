@@ -11,7 +11,7 @@ Using custom images will allow you to extend environment support to any [environ
 In order for your custom image to be supported, it must:
 
 * Use an environment [supported](../../snyk-cli/install-or-update-the-snyk-cli/) by the Snyk CLI
-* Use a language and framework [supported](../../supported-languages-and-frameworks/) by Snyk
+* Use a language and framework [supported](../../supported-languages-and-package-managers/) by Snyk
 * Have Snyk CLI installed on the image; see [Install or update the Snyk CLI](../../snyk-cli/install-or-update-the-snyk-cli/) for steps to install the CLI
 * Be publicly accessible; the integration will pull the image.
 
