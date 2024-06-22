@@ -1,4 +1,4 @@
-# Supported languages and package managers
+# Supported languages , package managers, and frameworks
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23. The open source language detail has been moved to each language page.
 
@@ -135,7 +135,7 @@ Here you can find information about the programming languages, fully supported f
 * Interfile analysis is supported for Kotlin
 * Android is partially supported
 
-### [PHP](php.md) for code analysis
+### [PHP](php/) for code analysis
 
 **Frameworks**:&#x20;
 
@@ -209,7 +209,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Version 2.x
 
-### [Swift](swift-and-objective-c.md) for code analysis
+### [Swift](swift-and-objective-c/) for code analysis
 
 **Frameworks**:&#x20;
 

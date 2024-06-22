@@ -76,7 +76,7 @@ When you include the `.snyk` file in your code repository and the `language-sett
 * For SCM scans, for example, GitHub scans, the Snyk Web UI controls the Python version at the Organization level, from the **Organization > Settings > Languages > Python > Pip Python version** option.
 * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options.
 * Note that you may need to r**e-import the Project if the `.snyk` file was not present at the initial import** of the Project into Snyk.
-* See the [Python version](../../supported-languages-and-package-managers/python/#python-version-support) documentation for more information about Python version support.&#x20;
+* See the [Python version](../../supported-languages-package-managers-and-frameworks/python/#python-version-support) documentation for more information about Python version support.&#x20;
 
 For more information about using the `.snyk` file with Open Source Projects, see the following:
 
@@ -97,7 +97,7 @@ language-settings:
   python: "3.7"
 ```
 
-For more information, see [Setting Python version in Git Projects](../../supported-languages-and-package-managers/python/#setting-python-version-in-git-projects).
+For more information, see [Setting Python version in Git Projects](../../supported-languages-package-managers-and-frameworks/python/#setting-python-version-in-git-projects).
 
 #### Set vulnerability ignore rules
 

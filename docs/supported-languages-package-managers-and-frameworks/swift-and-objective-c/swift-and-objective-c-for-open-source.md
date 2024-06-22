@@ -2,7 +2,7 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
-## [Swift and Objective-C](../swift-and-objective-c.md) for open source
+## [Swift and Objective-C](./) for open source
 
 **Package manager**: CocoaPods, Swift Package Manager
 

@@ -6,9 +6,9 @@
 
 #### **Prerequisites for CLI for Swift and CocoaPods**
 
-1. [Create a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
-2. [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-3. [Set the default Organization for all Snyk tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis)
+1. [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+2. [Install Snyk CLI and authenticate your machine](../../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
+3. [Set the default Organization for all Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md) (code analysis)
 
 #### Code analysis
 
@@ -20,10 +20,10 @@ snyk code test
 
 To customize test options, run other commands, exclude directories and files, and explore the results in different formats, see the following:
 
-* [Snyk CLI commands](../snyk-cli/commands/#available-commands)
-* [Exclude directories and files from the Snyk tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-* [Explore test results in a JSON or SARIF format in the terminal ](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
-* [Exporting the test results to a JSON or SARIF file](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
+* [Snyk CLI commands](../../snyk-cli/commands/#available-commands)
+* [Exclude directories and files from the Snyk tests](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
+* [Explore test results in a JSON or SARIF format in the terminal ](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
+* [Exporting the test results to a JSON or SARIF file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
 
 #### Open source and licensing
 
@@ -43,9 +43,9 @@ After Snyk has built the tree, Snyk uses the vulnerability database to find vuln
 
 ## IDE and CI/CD
 
-:link: For integrated development environments, see [Use Snyk in your IDE](../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
+:link: For integrated development environments, see [Use Snyk in your IDE](../../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
 
-:link: If you use continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software. See [Snyk CI/CD](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../snyk-api/).
+:link: If you use continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software. See [Snyk CI/CD](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../../snyk-api/).
 
 ## Troubleshooting
 

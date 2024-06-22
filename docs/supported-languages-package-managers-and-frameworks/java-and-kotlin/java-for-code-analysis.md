@@ -1,4 +1,4 @@
-# Java and Kotlin for code analysis
+# Java for code analysis
 
 ## Code analysis
 

@@ -29,7 +29,7 @@ You can analyze the changed code with PR Checks as follows:
 * Snyk Open Source: Snyk analyzes dependency manifest or supported files for known security vulnerabilities that meet a threshold, such as exceeding severity, or checks to determine whether a fix is available.
 * Open Source license check: Snyk validates package licenses against the configured policy for license policy violations.
 
-PR Checks also support all programming languages and frameworks supported by the Snyk Code and Open Source engines. For more information, see programming language support for [Snyk Code](../../../supported-languages-and-package-managers/#code-analysis-snyk-code) and [Open Source](../../../supported-languages-and-package-managers/#open-source-and-licensing-snyk-open-source).
+PR Checks also support all programming languages and frameworks supported by the Snyk Code and Open Source engines. For more information, see programming language support for [Snyk Code](../../../supported-languages-package-managers-and-frameworks/#code-analysis-snyk-code) and [Open Source](../../../supported-languages-package-managers-and-frameworks/#open-source-and-licensing-snyk-open-source).
 
 ## How configuration of PR Checks works
 

@@ -7,11 +7,11 @@ The Snyk API is available with Enterprise plans. See [plans and pricing](https:/
 The Dep Graph API requires additional permissions. [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to request access.
 {% endhint %}
 
-The recommended approach to testing and monitoring your dependencies managed by [Bazel](../../supported-languages-and-package-managers/bazel.md) is to use the [Snyk Dep Graph](https://snyk.docs.apiary.io/#reference/test/dep-graph) v1 APIs. The monitor capability allows customers to submit a tree for Snyk to monitor for vulnerabilities. While you can use Bazel for many languages including C++, the Dep Graph endpoints do not support C++. For more information, including a list of the supported package managers, see [Snyk Dep Graph Test v1 API](https://github.com/snyk/dep-graph).
+The recommended approach to testing and monitoring your dependencies managed by [Bazel](../../supported-languages-package-managers-and-frameworks/bazel.md) is to use the [Snyk Dep Graph](https://snyk.docs.apiary.io/#reference/test/dep-graph) v1 APIs. The monitor capability allows customers to submit a tree for Snyk to monitor for vulnerabilities. While you can use Bazel for many languages including C++, the Dep Graph endpoints do not support C++. For more information, including a list of the supported package managers, see [Snyk Dep Graph Test v1 API](https://github.com/snyk/dep-graph).
 
 Follow these basic steps:
 
-1. For each type of dependency (for example, Maven, Cocoapods), create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions. For an example, see the Snyk user docs [Bazel](../../supported-languages-and-package-managers/bazel.md) page.
+1. For each type of dependency (for example, Maven, Cocoapods), create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions. For an example, see the Snyk user docs [Bazel](../../supported-languages-package-managers-and-frameworks/bazel.md) page.
 2.  As part of a Bazel test rule, send the Dep Braph JSON object as a POST request to the [Dep Graph Test API](https://snyk.docs.apiary.io/#reference/test/dep-graph), along with your [auth token](../rest-api/authentication-for-api/). An example curl request follows:
 
     ```
