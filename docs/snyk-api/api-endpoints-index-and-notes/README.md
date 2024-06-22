@@ -434,6 +434,8 @@ Note: Remedies are not included in the response at this time.
 
 ### Dep Graph
 
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
+
 #### [Monitor Dep Graph](https://snyk.docs.apiary.io/#reference/monitor/depgraph/monitor-dep-graph)
 
 ## OpenAPI
@@ -929,6 +931,8 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 [Migrated Test composer.json & composer.lock file](https://snyk.docs.apiary.io/#reference/test/composer/test-composer.json-&-composer.lock-file)
 
 ### Dep Graph
+
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
 
 #### Test Dep Graph
 
