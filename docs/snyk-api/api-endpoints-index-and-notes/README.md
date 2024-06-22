@@ -230,7 +230,7 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 ### [Get a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-)
 
-**More information:** [Org and group identification for Projects](org-and-group-identification-for-projects.md)
+**More information:** [Org and group identification for Projects](undefined.md)
 
 ### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-/sso\_connections)
 
@@ -284,7 +284,7 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 [Migrated List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
 
-**More information:** [Org and group identification for Projects](org-and-group-identification-for-projects.md)
+**More information:** [Org and group identification for Projects](undefined.md)
 
 ### List all roles in a group
 
@@ -450,7 +450,7 @@ Note: Remedies are not included in the response at this time.
 
 [Migrated List all the organizations a user belongs to](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to)
 
-**More information:** [Org and group identification for Projects](org-and-group-identification-for-projects.md)
+**More information:** [Org and group identification for Projects](undefined.md)
 
 ### Create organization
 
@@ -544,7 +544,7 @@ Note: Remedies are not included in the response at this time.
 
 ### [Get organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-)
 
-**More information:** [Org and group identification for Projects](org-and-group-identification-for-projects.md)
+**More information:** [Org and group identification for Projects](undefined.md)
 
 ### [Update organization](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-)
 
@@ -559,6 +559,8 @@ Note: Remedies are not included in the response at this time.
 ### [Updates project by project ID](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/projects/-project\_id-)
 
 ## Projects (v1)
+
+**More information:** [Project type responses from API](project-type-responses-from-api.md)
 
 ### Individual project
 
@@ -596,7 +598,7 @@ The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.i
 
 ### Project Issue Paths
 
-**More information:** [V1 API Project issue paths endpoints](v1-api-project-issue-paths-endpoints.md)
+**More information:** [V1 API Project issue paths endpoints](project-issue-paths-v1-api-endpoints.md)
 
 #### List all project issue paths
 
