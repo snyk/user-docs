@@ -2,7 +2,7 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
-## [PHP](./) for open source
+## [PHP](../php.md) for open source
 
 **Package manager**: Composer
 

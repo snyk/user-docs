@@ -135,7 +135,7 @@ Here you can find information about the programming languages, fully supported f
 * Interfile analysis is supported for Kotlin
 * Android is partially supported
 
-### [PHP](php/) for code analysis
+### [PHP](php.md) for code analysis
 
 **Frameworks**:&#x20;
 
@@ -154,7 +154,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Versions 5.2 up to 8.0
 
-### [Python](python.md) for code analysis
+### [Python](python/) for code analysis
 
 **Frameworks**:&#x20;
 
