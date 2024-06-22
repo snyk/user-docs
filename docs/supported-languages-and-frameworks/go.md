@@ -1,12 +1,12 @@
 # Go
 
-## Supported frameworks and package managers
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
 
-### Code analysis
+## Code analysis
 
 Snyk Code supports Go.
 
-### Open source and licensing
+## Open source and licensing
 
 {% hint style="warning" %}
 Beginning on January 1 2023 Snyk no longer supports govendor Projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.

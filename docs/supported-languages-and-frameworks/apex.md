@@ -1,10 +1,12 @@
 # Apex
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
+## Code analysis
+
 {% hint style="info" %}
 Snyk for Apex is supported only for Snyk Code.
 {% endhint %}
-
-## Code analysis
 
 Interfile analysis is supported.
 

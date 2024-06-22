@@ -1,5 +1,7 @@
 # Elixir
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
 {% hint style="info" %}
 Snyk for Elixir is supported only for Snyk Open Source.
 {% endhint %}

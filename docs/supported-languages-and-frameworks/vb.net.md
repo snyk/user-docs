@@ -1,5 +1,7 @@
 # VB.NET
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
 ## Code analysis <a href="#code-analysis" id="code-analysis"></a>
 
 `.aspx` files are not supported.

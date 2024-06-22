@@ -1,8 +1,8 @@
 # Ruby
 
-## Supported frameworks and package managers
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
 
-### Code analysis
+## Code analysis
 
 {% hint style="info" %}
 Interfile analysis is currently not supported for Ruby for code analysis. The data flow is monitored within a single file, not between multiple files.
@@ -12,7 +12,7 @@ Snyk Code supports the following frameworks:
 
 * Ruby On Rails
 
-### Open source and licensing
+## Open source and licensing
 
 {% hint style="info" %}
 **Feature availability**\

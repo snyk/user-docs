@@ -1,5 +1,7 @@
 # Supported languages and frameworks
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
 This page provides an overview of supported languages and package managers across Snyk environments, including feature availability for open source and licensing (Snyk Open Source) and code analysis (Snyk Code).
 
 ## Open source and licensing (Snyk Open Source)

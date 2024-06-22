@@ -1,8 +1,8 @@
 # C/C++
 
-## Supported frameworks and package managers
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
 
-### Code analysis
+## Code analysis
 
 Snyk Code supports the following:
 
@@ -13,7 +13,7 @@ Snyk Code supports the following:
 * GUI Framework&#x20;
 * Libraries: POSIX, C++ Standard Library, Boost, Qt (limited)
 
-### Open source and licensing
+## Open source and licensing
 
 #### Open source policy
 

@@ -1,5 +1,7 @@
 # Dart and Flutter
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
 {% hint style="info" %}
 **Feature availability**\
 Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.

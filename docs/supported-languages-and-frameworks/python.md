@@ -1,8 +1,8 @@
 # Python
 
-## Supported frameworks and package managers
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
 
-### Code analysis
+## Code analysis
 
 {% hint style="info" %}
 **Snyk Code for Python**
@@ -20,7 +20,7 @@ Snyk Code supports the following frameworks:
 * Requests
 * urllib3
 
-### Open source and licensing
+## Open source and licensing
 
 {% hint style="info" %}
 Features may not be available, depending on your plan. See the [Plans and pricing ](https://snyk.io/plans/) page for more details.

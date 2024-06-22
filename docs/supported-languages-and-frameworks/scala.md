@@ -1,8 +1,8 @@
 # Scala
 
-## Supported frameworks and package managers
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
 
-### Code analysis
+## Code analysis
 
 {% hint style="info" %}
 **Snyk Code for Scala**
@@ -16,7 +16,7 @@ Snyk Code supports the following frameworks:
 * Akka
 * HTTP4S
 
-### Open source and licensing
+## Open source and licensing
 
 Source.
 

@@ -1,5 +1,7 @@
 # Bazel
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
 {% hint style="info" %}
 Snyk for Bazel is supported only for Snyk Open Source. The instructions on this page apply to Bazel v 7 only.
 {% endhint %}

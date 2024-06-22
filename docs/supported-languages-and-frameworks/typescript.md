@@ -1,5 +1,7 @@
 # TypeScript
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
 {% hint style="info" %}
 Snyk for Typescript is supported only for Snyk Code.
 {% endhint %}

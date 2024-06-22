@@ -1,6 +1,6 @@
 # Swift and Objective-C
 
-## Supported frameworks and package managers
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
 
 {% hint style="info" %}
 Objective-C is supported only by Snyk Open Source.
@@ -10,7 +10,7 @@ Objective-C is supported only by Snyk Open Source.
 Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
-### Code analysis for Swift
+## Code analysis for Swift
 
 Snyk Code for Swift supports the following frameworks:
 
@@ -70,7 +70,7 @@ After Snyk has built the tree, Snyk uses the vulnerability database to find vuln
 
 :link: For integrated development environments, see [Use Snyk in your IDE](../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
 
-:link: If you prefer continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software (see [Snyk CI/CD](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../snyk-api/)).
+:link: If you use continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software. See [Snyk CI/CD](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/) and [Snyk API](../snyk-api/).
 
 ## Troubleshooting
 
