@@ -1,5 +1,7 @@
 # Dep Graph API
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
 {% hint style="info" %}
 **Feature availability**\
 The Snyk API is available with Enterprise plans. See [plans and pricing](https://snyk.io/plans/) for details.

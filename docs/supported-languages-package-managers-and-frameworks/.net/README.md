@@ -1,5 +1,7 @@
 # .NET
 
+**Note:** The language pages are being restructured and updated on June 22 and June 23.
+
 {% hint style="info" %}
 Snyk has introduced a new Early Access feature with significantly enhanced scanning capabilities for NuGet applications. For detailed information and access to these features, visit the [Improved .NET scanning](improved-.net-scanning.md) page.&#x20;
 {% endhint %}

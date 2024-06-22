@@ -434,7 +434,7 @@ Note: Remedies are not included in the response at this time.
 
 ### Dep Graph
 
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel-tool/dep-graph-api.md)
 
 #### [Monitor Dep Graph](https://snyk.docs.apiary.io/#reference/monitor/depgraph/monitor-dep-graph)
 
@@ -932,7 +932,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### Dep Graph
 
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel-tool/dep-graph-api.md)
 
 #### Test Dep Graph
 
