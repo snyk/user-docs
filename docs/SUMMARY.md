@@ -34,6 +34,8 @@
   * [Elixir](supported-languages-and-package-managers/elixir.md)
   * [Go](supported-languages-and-package-managers/go.md)
   * [Java and Kotlin](supported-languages-and-package-managers/java-and-kotlin/README.md)
+    * [Java and Kotlin for code analysis](supported-languages-and-package-managers/java-and-kotlin/java-and-kotlin-for-code-analysis.md)
+    * [Java and Kotlin for open source](supported-languages-and-package-managers/java-and-kotlin/java-and-kotlin-for-open-source.md)
     * [Best practices for Java and Kotlin](supported-languages-and-package-managers/java-and-kotlin/best-practices-for-java-and-kotlin.md)
     * [FAQ about Java](supported-languages-and-package-managers/java-and-kotlin/faq-about-java.md)
   * [JavaScript](supported-languages-and-package-managers/javascript/README.md)
