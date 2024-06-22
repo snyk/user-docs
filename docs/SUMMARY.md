@@ -18,6 +18,8 @@
 * [Supported languages and package managers](supported-languages-and-package-managers/README.md)
   * [Technical specifications](supported-languages-and-package-managers/technical-specifications.md)
   * [.NET](supported-languages-and-package-managers/.net/README.md)
+    * [.NET for code analysis](supported-languages-and-package-managers/.net/.net-for-code-analysis.md)
+    * [.NET for opensource](supported-languages-and-package-managers/.net/.net-for-opensource.md)
     * [Improved .NET scanning](supported-languages-and-package-managers/.net/improved-.net-scanning.md)
     * [Best practices for .NET](supported-languages-and-package-managers/.net/best-practices-for-.net.md)
     * [Troubleshooting .NET](supported-languages-and-package-managers/.net/troubleshooting-.net.md)

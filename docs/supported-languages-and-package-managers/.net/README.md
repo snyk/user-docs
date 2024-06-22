@@ -1,33 +1,5 @@
 # .NET
 
-**Note:** The language pages are being restructured and updated on June 22 and June 23.
-
-## [.NET](./) for open source
-
-**Package manager**: NuGet, Paket
-
-**Package registry**: [nuget.org](https://www.nuget.org/)
-
-**Import your app through SCM**: NuGet
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:nuget`
-
-**Test your app's packages**: Available, `pkg:nuget`
-
-**Features**:&#x20;
-
-* Fix PRs (NuGet)
-* License scanning
-* Reports
-
-**Package manager versions**: NA
-
-
-
-## Supported frameworks and package managers
-
 {% hint style="info" %}
 Snyk has introduced a new Early Access feature with significantly enhanced scanning capabilities for NuGet applications. For detailed information and access to these features, visit the [Improved .NET scanning](improved-.net-scanning.md) page.&#x20;
 {% endhint %}
@@ -35,45 +7,6 @@ Snyk has introduced a new Early Access feature with significantly enhanced scann
 {% hint style="info" %}
 Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
-
-### Code analysis
-
-Snyk Code supports the following frameworks:
-
-* .NET Framework 4.6-4.8.x
-* ASP.NET 6.x (C# only)
-* .NET 6
-
-### Open source and licensing
-
-Snyk Open Source provides support for both NuGet and Paket, as outlined below.
-
-{% hint style="info" %}
-**Feature availability**\
-Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
-
-| Package managers / Features                            | CLI support | Git support | License scanning | Fix PRs |
-| ------------------------------------------------------ | ----------- | ----------- | ---------------- | ------- |
-| [NuGet](https://www.nuget.org)                         | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
-| [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎          |             |                  |         |
-
-{% hint style="warning" %}
-Snyk does not currently support PackageReference without a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.\
-\
-The current workaround is to add versions to all PackageReferences.
-{% endhint %}
-
-#### Open source policy
-
-To manage licenses from your developer workflows through policy, see the following topics:
-
-* [Defining a secure open source policy](https://snyk.io/series/open-source-security/open-source-policy/)
-* [Use Snyk security policies to prioritize fixes more efficiently](https://snyk.io/blog/snyk-security-policies/)
-
-#### Open source license compliance
-
-To check compliance for open source licenses, see [Getting Started with Snyk License Compliance Management](https://docs.snyk.io/scan-application-code/snyk-open-source/licenses/getting-started-snyk-licensing-compliance).
 
 ## Getting started with Snyk for .NET across environments
 
