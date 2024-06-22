@@ -39,6 +39,8 @@
     * [Best practices for Java and Kotlin](supported-languages-and-package-managers/java-and-kotlin/best-practices-for-java-and-kotlin.md)
     * [FAQ about Java](supported-languages-and-package-managers/java-and-kotlin/faq-about-java.md)
   * [JavaScript](supported-languages-and-package-managers/javascript/README.md)
+    * [JavaScript for code analysis](supported-languages-and-package-managers/javascript/javascript-for-code-analysis.md)
+    * [JavaScript for open source](supported-languages-and-package-managers/javascript/javascript-for-open-source.md)
     * [Best practices for JavaScript and Node.js](supported-languages-and-package-managers/javascript/best-practices-for-javascript-and-node.js.md)
   * [PHP](supported-languages-and-package-managers/php.md)
   * [Python](supported-languages-and-package-managers/python.md)
