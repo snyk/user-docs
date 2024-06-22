@@ -8,3 +8,22 @@ Snyk Code for Swift supports the following frameworks:
 * Pathos&#x20;
 * sqlite3
 * CryptoKit
+
+### [Swift](./) for code analysis
+
+**Frameworks**:&#x20;
+
+* AlamoFire
+* Pathos
+* SQLite
+* CryptoKit
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Features**:&#x20;
+
+* Reports
+
+**Framework versions**: Versions up to 5.7.x

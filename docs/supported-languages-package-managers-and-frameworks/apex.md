@@ -12,6 +12,21 @@ Interfile analysis is supported.
 
 `.trigger` and `.cls` files are supported.
 
+### [Apex](apex.md) for code analysis
+
+**Frameworks**: APEX&#x20;
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Features**:&#x20;
+
+* Reports
+* Custom rules
+* Interfile analysis is supported for Apex
+* `.trigger` and `.cls` files are supported
+
 ## Getting started with Snyk for Apex across environments
 
 ### Snyk CLI&#x20;

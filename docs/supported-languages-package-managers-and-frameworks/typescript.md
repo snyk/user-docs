@@ -6,6 +6,22 @@
 Snyk for Typescript is supported only for Snyk Code.
 {% endhint %}
 
+## [TypeScript](typescript.md) for code analysis
+
+**Frameworks**: npm
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Features**:&#x20;
+
+* Reports
+* Custom rules
+* Interfile analysis is supported for TyepScript for code analysis
+
+**Framework versions**: Versions up to 4.2
+
 ## Getting started with Snyk for TypeScript across environments <a href="#getting-started-with-snyk-for-apex-across-environments" id="getting-started-with-snyk-for-apex-across-environments"></a>
 
 ### Snyk CLI  <a href="#snyk-cli" id="snyk-cli"></a>

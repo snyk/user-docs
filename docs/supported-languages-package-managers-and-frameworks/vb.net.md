@@ -6,6 +6,20 @@
 
 `.aspx` files are not supported.
 
+### [VB.NET](vb.net.md) for code analysis
+
+**Frameworks**: NuGet
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Features**:&#x20;
+
+* Reports
+
+**Framework versions**: Version 7
+
 ## Getting started with Snyk for VB.NET across environments <a href="#getting-started-with-snyk-for-apex-across-environments" id="getting-started-with-snyk-for-apex-across-environments"></a>
 
 ### Snyk CLI  <a href="#snyk-cli" id="snyk-cli"></a>
