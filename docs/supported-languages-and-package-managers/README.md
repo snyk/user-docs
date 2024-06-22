@@ -209,7 +209,7 @@ Here you can find information about the programming languages, fully supported f
 
 **Framework versions**: Version 2.x
 
-### [Swift](swift-and-objective-c.md) for code analysis
+### [Swift](swift-and-objective-c/) for code analysis
 
 **Frameworks**:&#x20;
 
