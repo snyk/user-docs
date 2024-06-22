@@ -1,14 +1,13 @@
-# Bazel
-
-**Note:** The language pages are being restructured and updated on June 22 and June 23.
+# Bazel tool
 
 {% hint style="info" %}
-Snyk for Bazel is supported only for Snyk Open Source. The instructions on this page apply to Bazel v 7 only.
+**Feature availability**\
+Snyk for Bazel is supported for Snyk Open Source. The instructions in this documentation apply to Bazel v 7 only.
 {% endhint %}
 
-Snyk supports testing Projects that have their dependencies managed by Bazel. The recommended approach is to test and monitor using the [Snyk API v1 Dep Graph endpoints](dep-graph-api.md). While you can use Bazel for many languages including C++, the Dep Graph endpoints do not support C++.
+Snyk supports testing Projects that have their dependencies managed by Bazel. The recommended approach is to test and monitor using the [API Dep Graph endpoints](dep-graph-api.md). While you can use Bazel for many languages including C++, **the Dep Graph endpoints do not support C++**.
 
-## Getting started with Snyk for Bazel&#x20;
+## Using Bazel&#x20;
 
 Bazel is defined on [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.html) as follows:
 
@@ -20,8 +19,8 @@ Bazel has limited native integration with package registries such as npmjs.org o
 
 You must often manually specify all dependencies (package name, location, and version), including transitive dependencies, which can then be fetched by Bazel during builds.
 
-Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover the dependencies from a Project. For details about testing Bazel Projects using Snyk, see [Snyk API v1 Dep Graph endpoints](dep-graph-api.md).
+Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover the dependencies from a Project. For information about testing and monitorign Bazel Projects using Snyk, see [Dep Graph API](dep-graph-api.md).
 
-## Troubleshooting
+## Troubleshooting Snyk for Bazel
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
