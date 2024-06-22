@@ -26,6 +26,8 @@
   * [Apex](supported-languages-and-package-managers/apex.md)
   * [Bazel](supported-languages-and-package-managers/bazel.md)
   * [C/C++](supported-languages-and-package-managers/c-c++/README.md)
+    * [C++ for code analysis](supported-languages-and-package-managers/c-c++/c++-for-code-analysis.md)
+    * [C/C++ for open source](supported-languages-and-package-managers/c-c++/c-c++-for-open-source.md)
     * [Best practices for C/C++](supported-languages-and-package-managers/c-c++/best-practices-for-c-c++.md)
     * [Troubleshooting C/C++](supported-languages-and-package-managers/c-c++/troubleshooting-c-c++.md)
   * [Dart and Flutter](supported-languages-and-package-managers/dart-and-flutter.md)
