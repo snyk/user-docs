@@ -30,29 +30,6 @@
 * Yarn
   * `Yarn 1, Yarn 2, Yarn 3`. For more information, see the [Snyk Javascript ](../javascript/#yarn)page.
 
-TO MOVE
-
-### [PHP](../php.md) for open source
-
-**Package manager**: Composer
-
-**Package registry**: [packagist.org](https://packagist.org/)
-
-**Import your app through SCM**: Available
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:composer`
-
-**Test your app's packages**: Available, `pkg:composer`
-
-**Features**:&#x20;
-
-* License scanning
-* Reports
-
-**Package manager versions**: NA
-
 ## [Java and Kotlin](./) for open source
 
 **Package manager**: Maven, Gradle

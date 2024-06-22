@@ -2,6 +2,27 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23.
 
+## [PHP](php.md) for open source
+
+**Package manager**: Composer
+
+**Package registry**: [packagist.org](https://packagist.org/)
+
+**Import your app through SCM**: Available
+
+**Test or monitor your app through CLI and IDE**: Available
+
+**Test your app's SBOM**: Available, `pkg:composer`
+
+**Test your app's packages**: Available, `pkg:composer`
+
+**Features**:&#x20;
+
+* License scanning
+* Reports
+
+**Package manager versions**: NA
+
 ## Code analysis
 
 Interfile is supported, as the data flow is monitored between multiple files.
