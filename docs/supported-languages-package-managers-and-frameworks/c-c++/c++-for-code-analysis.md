@@ -1,22 +1,23 @@
 # C++ for code analysis
 
-**Note:** The language pages are being restructured and updated on June 22 and June 23.
+## C++ for code analysis support
 
-Snyk Code supports the following:
-
-* Operating systems
-  * Linux
-  * Windows (limited)
-* Embedded systems: Linux
-* GUI Framework&#x20;
-* Libraries: POSIX, C++ Standard Library, Boost, Qt (limited)
-
-### [C/C++](./) for code analysis
-
-**Frameworks**: C++ Standard Library
+**Frameworks**: C++ Standard Library, GUI Framework&#x20;
 
 **Import your app through SCM**: Available
 
 **Test or monitor your app through CLI and IDE**: Available
 
 **Features**: Reports
+
+**Operating systems:** Linux, Windows (limited)
+
+**Embedded systems:** Linux
+
+**Libraries:** POSIX, C++ Standard Library, Boost, Qt (limited)
+
+**IDE:** No additional options are required. The Snyk plugin has views within the IDE for displaying results.
+
+## Troubleshooting C++ for code analysis
+
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
