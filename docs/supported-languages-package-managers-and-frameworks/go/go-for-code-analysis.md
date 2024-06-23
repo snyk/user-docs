@@ -1,16 +1,10 @@
 # Go for code analysis
 
-**Note:** The language pages are being restructured and updated on June 22 and June 23.
-
-## Code analysis
-
-Snyk Code supports Go.
-
-###
-
-### [Go](./) for code analysis
+The following summarizes Snyk support for Go for code analysis.
 
 **Frameworks**: GORM
+
+**Framework versions**: Versions up to go1.16
 
 **Import your app through SCM**: Available
 
@@ -20,5 +14,3 @@ Snyk Code supports Go.
 
 * Reports
 * Custom rules
-
-**Framework versions**: Versions up to go1.16

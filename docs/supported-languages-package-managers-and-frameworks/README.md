@@ -18,13 +18,24 @@ The pages for open-source support provide details about fully supported package 
 
 Snyk supports Bazel, C.C++, Dart and Flutter, Elixir, Go, Java and Kotlin, Javascrpt. .NET, PHP, Python, Ruby, and Swift and Objective-C,
 
+### Open source policy
+
+For information on managing de\[emdemcoes and vulnerabilties from your developer workflows through the use of policies, policy, see the following:
+
+* [Defining a secure open source policy](https://snyk.io/series/open-source-security/open-source-policy/)
+* [Use Snyk security policies to prioritize fixes more efficiently](https://snyk.io/blog/snyk-security-policies/)
+
+### Open source license compliance
+
+To check compliance for open source licenses, see [Snyk License Compliance Management](../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md).
+
 ## Snyk CLI
 
 To use the Snyki CLI:
 
 * [Create a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
 * [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
-* [Set the default Organization for `snyk code test`](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md)
+* [Set the default Organization for the `snyk test` or `snyk code test` commands ](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md)
 
 ### CLI for code analysis
 
@@ -36,6 +47,7 @@ For information about customizing test options, running other commands, excludin
 * [Exclude directories and files from Snyk Code CLI tests](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
 * [Output test results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
 * [Export test results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
+* [snyk-to-html](../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md)
 
 After you have run `snyk code test`, you can:
 
@@ -43,6 +55,8 @@ After you have run `snyk code test`, you can:
 * [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 
 ### Snyk CLI for open source
+
+Ensure you have installed the relevant package manager and you have included the relevant manifest files supported by Snyk before testing.
 
 To test your open-source Project for vulnerabilities, run the `snyk test` command.
 

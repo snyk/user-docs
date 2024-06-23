@@ -196,7 +196,7 @@ Snyk scans your codebase following this sequence
 2. Rules are run against the event graph to find matches. The rules act as a checklist of known vulnerabilities that Snyk looks for in the event graph.
 3. If a match is found, Snyk looks for a vulnerability in the event graph, identifying where problems might be hiding in the code.&#x20;
 
-:link: See [Snyk Code AI Engine](../scan-with-snyk/snyk-code/#ai-engine).
+See [Snyk Code AI Engine](../scan-with-snyk/snyk-code/#ai-engine).
 
 ### More information about language support for Snyk Code
 
@@ -216,7 +216,9 @@ Code Quality is an experimental feature. If you are interested in using the feat
 
 Snyk builds a dependency graph and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any packages anywhere in that tree.
 
-The way Snyk analyzes and builds the graph varies depending on the language and package manager of the Project, as well as the location of your Project.
+After Snyk has built the dependencies tree, Snyk uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
+
+The way Snyk analyzes and builds the dependencies tree varies depending on the language and package manager of the Project, as well as the location of your Project.&#x20;
 
 ### More information about language support for Snyk Open Source
 
