@@ -1,16 +1,6 @@
 # Ruby for code analysis
 
-**Note:** The language pages are being restructured and updated on June 22 and June 23.
-
-{% hint style="info" %}
-Interfile analysis is currently not supported for Ruby for code analysis. The data flow is monitored within a single file, not between multiple files.
-{% endhint %}
-
-Snyk Code supports the following frameworks:
-
-* Ruby On Rails
-
-### [Ruby](./) for code analysis
+Snyk Code provides support for Ruby as follows:
 
 **Frameworks**: Ruby On Rails
 
@@ -22,3 +12,5 @@ Snyk Code supports the following frameworks:
 
 * Reports
 * Custom rules
+
+**Interfile analysis:** Not supported. The data flow is monitored within a single file, not between multiple files.
