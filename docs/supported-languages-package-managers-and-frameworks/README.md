@@ -2,6 +2,12 @@
 
 **Note:** The language pages are being restructured and updated on June 22 and June 23. The open source and code analysis details have been moved to each language page.
 
+## Code analysis (Snyk Code)
+
+The pages for code analysis support provide details about fully supported frameworks and features for Snyk Code.
+
+Snyk supports Apex, C++, Go, Java and Kotlin, JavaScript, .NET, PHP. Python, Ruby, Swift, TypeScript, and VB NET.
+
 ## Open source and licensing (Snyk Open Source)
 
 {% hint style="info" %}
@@ -10,9 +16,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 The pages for open-source support provide details about fully supported package managers and features supported for Snyk Open Source.
 
-## Code analysis (Snyk Code)
-
-The pages for code analysis support provide details about fully supported frameworks and features for Snyk Code.
+Snyk supports Bazel, C.C++, Dart and Flutter, Elixir, Go, Java and Kotlin, Javascrpt. .NET, PHP, Python, Ruby, and Swift and Objective-C,
 
 ## Snyk CLI
 
