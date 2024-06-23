@@ -4,7 +4,7 @@
 
 Snyk for Apex is supported **only for Snyk Code**.
 
-**Frameworks supported**: APEX&#x20;
+**Framework supported**: APEX&#x20;
 
 **Import your app through SCM**: Available
 
@@ -19,6 +19,6 @@ Snyk for Apex is supported **only for Snyk Code**.
 
 For instructions on using the Snyk CLI for code analysis, see the [languages overview](./).
 
-## Troubleshooting for Apex
+## Troubleshooting Snyk for Apex
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;

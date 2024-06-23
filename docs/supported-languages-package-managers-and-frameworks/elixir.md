@@ -58,7 +58,7 @@ For integrated development environments, see [Snyk IDEs](../scm-ide-and-ci-cd-wo
 
 If you use continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software.
 
-## Troubleshooting for Elixir
+## Troubleshooting Snyk for Elixir
 
 When using `asdf`, be sure to set a version by running the `asdf global elixir <version of your choice>`.
 
