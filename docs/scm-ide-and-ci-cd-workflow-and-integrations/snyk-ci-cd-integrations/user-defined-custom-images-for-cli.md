@@ -2,7 +2,11 @@
 
 ## Context for user-defined custom images for CLI
 
-Following Snyk announcements regarding [Snyk CLI Images](https://headwayapp.co/snyk-io-updates/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that customers will find useful in building their own custom images.
+Following Snyk announcements regarding [Snyk CLI Images](https://headwayapp.co/snyk-io-updates/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that customers will find useful in building their own custom images. You can visit the [Snyk Images build tool chain](https://github.com/snyk/snyk-images) on GitHub for a list of [currently supported images](https://github.com/snyk/snyk-images?tab=readme-ov-file#current-images).&#x20;
+
+{% hint style="info" %}
+Snyk does not build or maintain images that contain end-of-life software by an upstream vendor. The list of unsupported images is available on the [GitHub repo](https://github.com/snyk/snyk-images?tab=readme-ov-file#vendor-unsupported-base-images).
+{% endhint %}
 
 Using custom images will allow you to extend environment support to any [environment](../../snyk-cli/install-or-update-the-snyk-cli/) supported by the Snyk CLI.
 
