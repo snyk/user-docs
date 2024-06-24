@@ -12,9 +12,9 @@ You can report issues by submitting a [support ticket](https://support.snyk.io/h
 
 ## Limitations of existing solution
 
-The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](best-practices-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](best-practices-for-.net.md#tackling-vulnerabilities-from-runtime-dependencies) that have no remediation available and must be manually ignored.&#x20;
+The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](guidance-for-snyk-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](guidance-for-snyk-for-.net.md#tackling-vulnerabilities-from-runtime-dependencies) that have no remediation available and must be manually ignored.&#x20;
 
-If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can [encounter errors](troubleshooting-.net.md#not-supported-in-snyk-open-source-for-.net) when scanning Projects that use specific .NET features.
+If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can [encounter errors](troubleshooting-snyk-for-.net.md#not-supported-in-snyk-open-source-for-.net) when scanning Projects that use specific .NET features.
 
 ## Scanning improvements
 
@@ -25,7 +25,7 @@ The improved .NET scanning also provides the capability of scanning any Project 
 ## .NET scanning improvements for Git repository integrations
 
 {% hint style="info" %}
-Snyk Broker is not currently supported.
+Snyk Broker is not supported.
 {% endhint %}
 
 The .NET scanning improvements are available when importing Projects using Git repository integrations.
@@ -38,7 +38,7 @@ The .NET scanning improvements are available when importing Projects using Git r
 ### Private package repository integration
 
 {% hint style="info" %}
-This feature is currently available only to customers on the [Enterprise plan](https://snyk.io/plans/). For more information, see [Enterprise setup](https://docs.snyk.io/enterprise-configuration).
+This feature is available only to customers on the [Enterprise plan](https://snyk.io/plans/). For more information, see [Enterprise setup](https://docs.snyk.io/enterprise-configuration).
 {% endhint %}
 
 Since the improved .NET solution will build your .NET Project, Snyk requires access to any private NuGet repositories.&#x20;

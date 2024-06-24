@@ -1,4 +1,4 @@
-# Best practices for .NET
+# Guidance for  Snyk for .NET
 
 ## Dependency analysis
 
@@ -108,13 +108,13 @@ See [.NET](./) for more information
 
 ## Snyk CLI tips and tricks
 
-:link: [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/)​
+[CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/)​
 
 ## What to test&#x20;
 
 Use the `--help` option in the CLI for details of Snyk CLI commands.
 
-:link: [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
+[CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
 
 ### **Open Source libraries**
 
@@ -129,13 +129,13 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Containers**
 
-:link: [Supported Operating System Distributions](../../scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
+[Supported Operating System Distributions](../../scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions.md)
 
-:link: [Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
+[Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
 
 ### Infrastructure as Code
 
-:link: [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/)
+[Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/)
 
 ### **Helpful options and plugins**
 
