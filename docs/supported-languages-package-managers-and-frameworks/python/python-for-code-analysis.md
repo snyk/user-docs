@@ -1,28 +1,11 @@
 # Python for code analysis
 
-**Note:** The language pages are being restructured and updated on June 22 and June 23.
+The following summarizes Snyk support for Python for code analysis.
 
-{% hint style="info" %}
-**Snyk Code for Python**
-
-Interfile analysis is supported, as the data flow is monitored between multiple files.
-{% endhint %}
-
-Snyk Code supports the following frameworks:
+**Frameworks**:
 
 * Django
 * FastAPI
-* Flask
-* Jinja2
-* PyYAML
-* Requests
-* urllib3
-
-### [Python](./) for code analysis
-
-**Frameworks**:&#x20;
-
-* Django
 * Flask
 * Jinja2
 * PyYAML
@@ -37,4 +20,3 @@ Snyk Code supports the following frameworks:
 
 * Reports
 * Customer rules
-* Interfile analysis is supported for Python for code analysis
