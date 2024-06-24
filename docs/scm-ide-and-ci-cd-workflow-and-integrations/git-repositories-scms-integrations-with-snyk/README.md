@@ -16,7 +16,7 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 * [GitHub](snyk-github-integration.md)
 * [GitHub Read-only Projects](snyk-github-read-only-projects.md)
 * [GitLab](snyk-gitlab-integration.md)
-* [Bitbucket Cloud (legacy)](snyk-bitbucket-cloud-integration.md)
+* [Bitbucket Cloud](snyk-bitbucket-cloud-integration.md)
 * [Bitbucket Cloud App](snyk-bitbucket-cloud-app-integration.md)
 * [Bitbucket Data Center/Server](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md)
 * [Azure Repositories (TFS)](snyk-azure-repositories-tfs-integration.md)
@@ -43,10 +43,10 @@ See the following for detailed permission requirements:
 ### GitHub and GitHub Enterprise permissions requirements
 
 {% hint style="info" %}
-For information about token permissions in a brokered integration, see [GitHub - install and configure using Docker](../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md).
+For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](https://docs.snyk.io/enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker).
 {% endhint %}
 
-The [Snyk GitHub integration](snyk-github-integration.md) is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the PAT on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
+The Snyk GitHub Enterprise integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the PAT on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
 
 The following table details the access scopes required in GitHub for Personal Access Tokens (PAT) and the scopes required for Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs. GitHub custom roles are not supported.
 
