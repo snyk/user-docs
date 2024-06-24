@@ -37,7 +37,7 @@ See the following for detailed permission requirements:
 
 * [GitHub and GitHub Enterprise](./#github-and-github-enterprise-permissions-requirements)
 * [GitHub Cloud App](./#github-cloud-app-permission-requirements)
-* GitHub Server App
+* [GitHub Server App](./#github-server-app-permission-requirements)
 * [GitLab](./#gitlab-permission-requirements)
 
 ### GitHub and GitHub Enterprise permissions requirements
