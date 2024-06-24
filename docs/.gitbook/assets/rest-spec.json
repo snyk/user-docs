@@ -4306,14 +4306,6 @@
           "attributes": {
             "$ref": "#/components/schemas/OrgInvitationPostAttributes"
           },
-          "relationships": {
-            "properties": {
-              "org": {
-                "$ref": "#/components/schemas/Relationship"
-              }
-            },
-            "type": "object"
-          },
           "type": {
             "enum": [
               "org_invitation"
@@ -40456,9 +40448,10 @@
         ],
         "x-snyk-api-releases": [
           "2022-06-01",
-          "2023-04-28"
+          "2023-04-28",
+          "2024-06-21"
         ],
-        "x-snyk-api-version": "2023-04-28"
+        "x-snyk-api-version": "2024-06-21"
       },
       "x-snyk-api-resource": "org_invitations"
     },
@@ -54949,5 +54942,5 @@
   ],
   "x-optic-url": "https://app.useoptic.com/organizations/390ef489-882c-48ba-acb3-4e0b73e48767/apis/5Tz5UMTNEIuz5-FZ6J2ki",
   "x-snyk-api-lifecycle": "released",
-  "x-snyk-api-version": "2024-06-18"
+  "x-snyk-api-version": "2024-06-21"
 }
