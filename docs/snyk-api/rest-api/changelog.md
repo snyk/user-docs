@@ -1,3 +1,9 @@
+## 2024-06-21
+
+### POST - `/orgs/{org_id}/invites` - Updated
+- removed the request property `data/relationships`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2024-06-18
 
 ### POST - `/groups/{group_id}/settings/pull_request_template` - Updated
