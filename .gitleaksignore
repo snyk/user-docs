@@ -31,3 +31,4 @@ f24d682148b438cfb525b7c7399db66c6e885230:docs/features/integrations/ide-tools/ec
 fb50b384919c6e9c9ce54165bdd9f57d08984286:docs/enterprise-setup/using-single-sign-on-sso-for-authentication/set-up-snyk-single-sign-on-sso.md:generic-api-key:140
 fb50b384919c6e9c9ce54165bdd9f57d08984286:docs/enterprise-setup/using-single-sign-on-sso-for-authentication/set-up-snyk-single-sign-on-sso.md:generic-api-key:141
 7799a0715cd7597ec0a3d7189e79ea05972fa1f5:docs/manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md:generic-api-key:43
+7c8d7b082289a6384ab5f93bb22076cbea67d164:docs/scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-server-app.md:generic-api-key:47
