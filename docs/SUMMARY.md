@@ -275,7 +275,7 @@
     * [Snyk GitHub Read-only Projects](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-read-only-projects.md)
     * [Snyk GitLab integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-gitlab-integration.md)
     * [Snyk Bitbucket Cloud integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-integration.md)
-    * [Snyk Bitbucket Cloud (legacy) vs Snyk Bitbucket Cloud App](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-legacy-vs-snyk-bitbucket-cloud-app.md)
+    * [Snyk Bitbucket Cloud vs Snyk Bitbucket Cloud App](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-vs-snyk-bitbucket-cloud-app.md)
     * [Snyk Bitbucket Cloud App integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-app-integration.md)
     * [Snyk Bitbucket Data Center/Server integration](integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md)
     * [Snyk Azure Repositories (TFS) integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-azure-repositories-tfs-integration.md)
