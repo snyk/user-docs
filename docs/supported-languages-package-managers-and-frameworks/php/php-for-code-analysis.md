@@ -1,22 +1,14 @@
 # PHP for code analysis
 
-## Code analysis
-
-Interfile is supported, as the data flow is monitored between multiple files.
-
-Snyk Code supports the following frameworks:
-
-* Symfony
-* Laravel
-* PHP Standards
-
-### [PHP](./) for code analysis
+The following summarizes Snyk support for PHP for code analysis:
 
 **Frameworks**:&#x20;
 
 * Symfony
 * Laravel
 * PHP Standards
+
+**Framework versions**: Versions 5.2 up to 8.0
 
 **Import your app through SCM**: Available
 
@@ -26,5 +18,3 @@ Snyk Code supports the following frameworks:
 
 * Reports&#x20;
 * Custom rules
-
-**Framework versions**: Versions 5.2 up to 8.0
