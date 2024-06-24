@@ -10,20 +10,7 @@
 Interfile analysis is supported, as the data flow is monitored between multiple files.
 {% endhint %}
 
-Snyk Code supports the following frameworks:
-
-* React
-* Vue.js
-* Express
-* jQuery
-* Angular
-* NodeJS
-
-Snyk Code.
-
-###
-
-### [JavaScript](./) for code analysis
+The following summarizes support for JavaScript for code analysis.
 
 **Frameworks**:&#x20;
 
@@ -32,6 +19,7 @@ Snyk Code.
 * Express
 * jQuery
 * Angular
+* NodeJS
 
 **Import your app through SCM**: Available
 
@@ -41,4 +29,3 @@ Snyk Code.
 
 * Reports
 * Custom rules
-* Interfile analysis is supported for JavaScript for code analysis
