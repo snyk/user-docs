@@ -1,4 +1,4 @@
-# FAQ about Java
+# More information about Java support
 
 ## Maven Bill of Materials (BOM)
 
@@ -102,6 +102,18 @@ Snyk offers fix advice, including recommendations for upgrading vulnerable packa
 Fix PRs can only be created for dependencies whose versions are managed in the POM file where the issue is reported.
 
 If the version or dependency is managed in a parent BOM, then even though Snyk sees that it could fix the vulnerable path by changing the version,  it cannot apply the fix.
+
+## Package Registry Integrations (Artifactory/Nexus) - Maven
+
+Artifactory and Nexus Package Registry integrations are available to Snyk Enterprise plan users.
+
+* Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.
+* Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
+* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/).
+
+{% hint style="info" %}
+If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis is best performed using CLI as the build system will retrieve the dependencies and be present locally.
+{% endhint %}
 
 ## Troubleshooting
 

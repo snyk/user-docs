@@ -1,18 +1,10 @@
 # Java and Kotlin for code analysis
 
-**Note:** The language pages are being restructured and updated on June 22 and June 23.
+## Snyk for Java for code analysis
 
-{% hint style="info" %}
-**Snyk Code support for Kotlin**
+The following summarizes Java support for code analysis.
 
-Snyk supports Kotlin Mobile Apps. Kotlin Web Applications are not supported.
-
-Android is partially supported.
-
-Interfile analysis is supported, as the data flow is monitored between multiple files.
-{% endhint %}
-
-Snyk Code supports the following frameworks:
+**Frameworks:**
 
 * Apache Camel
 * Apache Struts
@@ -24,18 +16,7 @@ Snyk Code supports the following frameworks:
 * Spring MVC
 * Spring JDBC
 
-###
-
-### [Java](./) for code analysis
-
-**Frameworks:**
-
-* Apache Camel
-* Apache Struts
-* Spring MVC
-* Spring JDBC
-* Jakarta XML Services
-* Dropwizard
+**Framework versions**: Versions up to Java SE 17
 
 **Import your app through SCM**: Available
 
@@ -46,9 +27,13 @@ Snyk Code supports the following frameworks:
 * Report&#x20;
 * Custom rules
 
-**Framework versions**: Versions up to Java SE 17
+## Synk for Kotlin for code analysis
 
-### [Kotlin](./) for code analysis
+Snyk supports Kotlin Mobile Apps. Android is partially supported.
+
+Kotlin Web Applications are not supported.
+
+The following summarizes support for Kotlin for code analysis.
 
 **Import your app through SCM**: Available
 

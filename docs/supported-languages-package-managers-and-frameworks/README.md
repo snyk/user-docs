@@ -16,7 +16,7 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 
 The pages for open-source support provide details about fully supported package managers and features supported for Snyk Open Source.
 
-Snyk supports Bazel, C.C++, Dart and Flutter, Elixir, Go, Java and Kotlin, Javascrpt. .NET, PHP, Python, Ruby, and Swift and Objective-C,
+Snyk supports Bazel, C.C++, Dart and Flutter, Elixir, Go, Java and Kotlin, Javascrpt. .NET, PHP, Python, Ruby, and Swift and Objective-C.
 
 ### Open source policy
 
