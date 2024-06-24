@@ -14,15 +14,15 @@ Snyk supports Apex, C++, Go, Java and Kotlin, JavaScript, .NET, PHP. Python, Rub
 Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
-The pages for open-source support provide details about fully supported package managers and features supported for Snyk Open Source.
+The pages for open source support provide details about fully supported package managers and features supported for Snyk Open Source.
 
 Snyk supports Bazel, C.C++, Dart and Flutter, Elixir, Go, Java and Kotlin, Javascrpt. .NET, PHP, Python, Ruby, and Swift and Objective-C.
 
 ### Open source policy
 
-For information on managing de\[emdemcoes and vulnerabilties from your developer workflows through the use of policies, policy, see the following:
+For information on managing dependencies and vulnerabilities from your developer workflows through the use of policies, see the following:
 
-* [Defining a secure open source policy](https://snyk.io/series/open-source-security/open-source-policy/)
+* [Defining a secure open-source policy](https://snyk.io/series/open-source-security/open-source-policy/)
 * [Use Snyk security policies to prioritize fixes more efficiently](https://snyk.io/blog/snyk-security-policies/)
 
 ### Open source license compliance
@@ -31,7 +31,7 @@ To check compliance for open source licenses, see [Snyk License Compliance Manag
 
 ## Snyk CLI
 
-To use the Snyki CLI:
+To use the Snyk CLI:
 
 * [Create a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
 * [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
