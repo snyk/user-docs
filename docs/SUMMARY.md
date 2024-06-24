@@ -271,6 +271,7 @@
     * [Snyk GitHub Enterprise integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md)
     * [Snyk GitHub integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-integration.md)
     * [Snyk GitHub Cloud App](snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
+    * [Snyk GitHub Server App](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-server-app.md)
     * [Snyk GitHub Read-only Projects](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-read-only-projects.md)
     * [Snyk GitLab integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-gitlab-integration.md)
     * [Snyk Bitbucket Cloud integration](scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-cloud-integration.md)

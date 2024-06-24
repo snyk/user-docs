@@ -11,6 +11,7 @@ Snyk Source Control Manager (SCM) integrations allow you to:
 Snyk can integrate with the following SCMs to help you track, monitor, and fix the issues and vulnerabilities in your code:
 
 * [GitHub Cloud App](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
+* [GitHub Server App](snyk-github-server-app.md)
 * [GitHub Enterprise](snyk-github-enterprise-integration.md)
 * [GitHub](snyk-github-integration.md)
 * [GitHub Read-only Projects](snyk-github-read-only-projects.md)

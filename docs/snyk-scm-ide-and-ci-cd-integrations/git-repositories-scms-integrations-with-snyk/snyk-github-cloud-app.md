@@ -5,6 +5,8 @@
 
 The Snyk GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you are interested in getting access.
 
+If you are using a self-hosted instance of GitHub, you must use the [Snyk GitHub Server App](../../scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-server-app.md).
+
 This feature is not yet supported for Snyk Broker.
 
 As Snyk does not have static IP addresses, this integration will not work with IP allowlisting in GitHub.
@@ -28,7 +30,7 @@ The Snyk GitHub Cloud App improves on many features as compared to the current G
 * **Granular access control**: The GitHub Cloud App allows for fine-grained control over access permissions at the repository level.&#x20;
 * **Increased API rate limit**: The GitHub Cloud App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit will assist in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
 * **Enabler for an enhanced developer experience:**
-  * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of future PR check workflow improvements.
+  * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of potential future PR check workflow improvements.
   * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed directly by the GitHub App rather than a service account.
 
 ## How to set up the Snyk GitHub Cloud App
