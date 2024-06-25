@@ -26,6 +26,7 @@ The following summarizes Java support for code analysis.
 
 * Report&#x20;
 * Custom rules
+* Interfile analysis
 
 ## Synk for Kotlin for code analysis
 

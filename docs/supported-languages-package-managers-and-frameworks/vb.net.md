@@ -14,6 +14,8 @@ Snyk for Apex is supported **only for Snyk Code**.
 
 **Framework version**: Version 7
 
+**Feature:** Interfile analysis
+
 For instructions on using the Snyk CLI, and IDE and CI/CD for code analysis, see the [languages overview](./).
 
 ## Troubleshooting Snyk for VB.NET <a href="#troubleshooting" id="troubleshooting"></a>

@@ -16,7 +16,7 @@ Snyk for Typescript is supported **only for Snyk Code**.
 
 * Reports
 * Custom rules
-* Interfile analysis is supported for TyepScript for code analysis
+* Interfile analysis
 
 For instructions on using the Snyk CLI and IDE and CI/CD for code analysis, see the [languages overview](./).
 

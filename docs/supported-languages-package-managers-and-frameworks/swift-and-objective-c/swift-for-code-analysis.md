@@ -15,4 +15,7 @@ The following summarizes support for Swift for code analysis.
 
 **Test or monitor your app through CLI and IDE**: Available
 
-**Feature:** Reports
+**Feature:**
+
+* Reports
+* Interfile analysis

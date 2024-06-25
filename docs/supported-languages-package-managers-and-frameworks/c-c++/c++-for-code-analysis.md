@@ -18,6 +18,8 @@
 
 **IDE:** No additional options are required. The Snyk plugin has views within the IDE for displaying results.
 
+**Feature:** Interfile analysis
+
 ## Troubleshooting C++ for code analysis
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).

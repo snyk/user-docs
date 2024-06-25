@@ -16,6 +16,7 @@ Snyk for Apex is supported **only for Snyk Code**.
 * Support for `.trigger` and `.cls` files
 * Custom rules
 * Reports
+* Interfile analysis
 
 For instructions on using the Snyk CLI for code analysis, see the [languages overview](./).
 

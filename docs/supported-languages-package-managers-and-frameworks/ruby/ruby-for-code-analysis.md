@@ -12,5 +12,4 @@ Snyk Code provides support for Ruby as follows:
 
 * Reports
 * Custom rules
-
-**Interfile analysis:** Not supported. The data flow is monitored within a single file, not between multiple files.
+* **Interfile analysis: Not supported**. The data flow is monitored within a single file, not between multiple files.

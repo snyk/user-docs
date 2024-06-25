@@ -29,3 +29,4 @@ The following summarizes support for JavaScript for code analysis.
 
 * Reports
 * Custom rules
+* Interfile analysis

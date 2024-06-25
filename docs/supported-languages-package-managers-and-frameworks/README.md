@@ -6,7 +6,7 @@
 
 The pages for code analysis support provide details about fully supported frameworks and features for Snyk Code.
 
-Snyk supports Apex, C++, Go, Java and Kotlin, JavaScript, .NET, PHP. Python, Ruby, Swift, TypeScript, and VB NET.
+Snyk supports Apex, C++, Go, Java and Kotlin, JavaScript, .NET, PHP, Python, Ruby, Swift, TypeScript, and VB NET. Interfile analysis is available for all languages supported except Ruby.
 
 ## Open source and licensing (Snyk Open Source)
 

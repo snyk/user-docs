@@ -17,4 +17,4 @@ The following summarizes Snyk support for Scala for code analysis
 **Features**:&#x20;
 
 * Reports
-* Interfile analysis is supported for Scala
+* Interfile analysis

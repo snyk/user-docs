@@ -18,3 +18,4 @@ The following summarizes Snyk support for PHP for code analysis:
 
 * Reports&#x20;
 * Custom rules
+* Interfile analysis

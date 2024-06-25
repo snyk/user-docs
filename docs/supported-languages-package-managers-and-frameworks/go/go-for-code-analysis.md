@@ -14,3 +14,4 @@ The following summarizes Snyk support for Go for code analysis.
 
 * Reports
 * Custom rules
+* Interfile analysis
