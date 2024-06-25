@@ -3,11 +3,10 @@
 {% hint style="warning" %}
 **Release status and feature availability**
 
-The Snyk GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you are interested in getting access.
+The Snyk GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). \
+This feature is not yet supported for Snyk Broker.
 
 If you are using a self-hosted instance of GitHub, you must use the [Snyk GitHub Server App](snyk-github-server-app.md).
-
-This feature is not yet supported for Snyk Broker.
 
 As Snyk does not have static IP addresses, this integration will not work with IP allowlisting in GitHub.
 {% endhint %}
