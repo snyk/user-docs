@@ -21,7 +21,7 @@ The Snyk Bitbucket Cloud App integration lets you connect your Snyk Organization
 {% hint style="info" %}
 Snyk recommends using the Bitbucket Cloud App integration for smoother integration and to ensure long-term support.
 
-If you are using the [Bitbucket Cloud Personal Access Token integration](snyk-bitbucket-cloud-integration.md), see [Migrate a Bitbucket Cloud integration](snyk-bitbucket-cloud-vs-snyk-bitbucket-cloud-app.md) for more information.
+If you are using the [Bitbucket Cloud Personal Access Token integration](snyk-bitbucket-cloud-integration.md), see [Migrate a Bitbucket Cloud integration](migrate-a-bitbucket-cloud-personal-access-token.md) for more information.
 {% endhint %}
 
 ## Setting up a Bitbucket Cloud App
@@ -150,16 +150,9 @@ To change the Snyk Organization after onboarding, go to the workspace settings >
 
 The installation process begins again, and you can choose the relevant Snyk Organization.
 
-## Required permissions scope for the Snyk Bitbucket Cloud App integration
+## Required permission scopes for the Snyk Bitbucket Cloud App integration
 
-The table that follows shows the required access scopes for the Bitbucket Cloud App.
-
-| Action                                              | Purpose                                                                                                                                       | Required Scope                                            |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Daily / weekly tests                                | Used to read manifest files in private repositories.                                                                                          | Read and modify your repositories and their pull requests |
-| Snyk tests on pull requests                         | Used to send pull request status checks when a new PR is created, or an existing PR is updated.                                               | Read and modify your repositories and their pull requests |
-| Opening fix and upgrade pull requests               | Used to create fix PRs in monitored repositories.                                                                                             | Read and modify your repositories and their pull requests |
-| Snyk tests on pull requests - initial configuration | Used to add Snyk webhooks to the imported repos, to notify Snyk when pull requests are created or updated, and enable Snyk to trigger a scan. | Read and modify your repositories' webhooks               |
+For detailed information on the permissions required for this integration, see [Bitbucket permission requirements](./#bitbucket-permission-requirements).
 
 ## Disabling the Bitbucket Cloud App integration
 

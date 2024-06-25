@@ -39,8 +39,9 @@ See the following for detailed permission requirements:
 * [GitHub Cloud App](./#github-cloud-app-permission-requirements)
 * [GitHub Server App](./#github-server-app-permission-requirements)
 * [GitLab](./#gitlab-permission-requirements)
+* [Bitbucket](./#bitbucket-permission-requirements)
 
-### GitHub and GitHub Enterprise permissions requirements
+### GitHub and GitHub Enterprise permission requirements
 
 {% hint style="info" %}
 For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](https://docs.snyk.io/enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker).
@@ -105,3 +106,46 @@ To set up the Snyk GitLab integration you must be a:
 A PAT is used for managing personal GitLab projects and requires the `api` scope.
 
 A GAT is used for managing multiple GitLab projects in a GitLab group and requires the `api` scope and maintainer role selected from the dropdown. You must be a GitLab Premium or Ultimate account tier holder to create a GAT.
+
+### Bitbucket permission requirements
+
+The Snyk Bitbucket integrations use different access control mechanisms to connect with Snyk:
+
+* [Snyk Bitbucket Cloud](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](snyk-bitbucket-cloud-integration.md#how-to-set-up-the-snyk-bitbucket-cloud-integration).
+* [Snyk Bitbucket Cloud App](./#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](snyk-bitbucket-cloud-app-integration.md#setting-up-a-bitbucket-cloud-app) and related permissions.
+* [Snyk Bitbucket Data Center/Server](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
+
+{% hint style="warning" %}
+To set up any Snyk Bitbucket integration, you must be a Bitbucket Workspace Admin.
+{% endhint %}
+
+#### Bitbucket Cloud and Bitbucket Data Center/Server scopes
+
+The following table details the required permission scopes in Bitbucket Cloud and Bitbucket Data Center/Server**:**
+
+| Action and purpose                                                                                                                                      |                                                                       App password requirements                                                                      | Bitbucket permissions |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
+| <p><strong>Daily / weekly tests:</strong><br>Read manifest files in private repos.</p>                                                                  |                                                                       **Repositories:** `read`                                                                       |       ≥ `write`       |
+| <p><strong>Manual fix pull requests (triggered by the user):</strong><br>Create fix PRs in repos.</p>                                                   |                      <p><strong>Repositories</strong>: <code>read, write</code><br><strong>Pull Requests</strong>: <code>read, write</code></p>                      |                       |
+| <p><strong>Automatic fix and upgrade pull requests:</strong><br>Create fix/upgrade PRs in repos.</p>                                                    |                      <p><strong>Repositories</strong>: <code>read, write</code><br><strong>Pull requests</strong>: <code>read, write</code></p>                      |       ≥ `write`       |
+| <p><strong>Snyk tests on pull requests:</strong><br>Send PR status checks when a new PR is created or a PR is updated.</p>                              |                      <p><strong>Repositories</strong>: <code>read, write</code><br><strong>Pull requests</strong>: <code>read, write</code></p>                      |       ≥ `write`       |
+| <p><strong>Snyk tests on pull requests (initial configuration):</strong><br>Add SCM webhooks to imported repos.</p>                                     |                                                                      **Webhooks**: `read, write`                                                                     |        `admin`        |
+| <p><strong>Importing new projects to Snyk:</strong><br>Lists available repos in the Bitbucket instance in the <strong>Add Projects</strong> screen.</p> | <p><strong>Account</strong>: <code>read</code></p><p><strong>Workspace membership</strong>: <code>read</code></p><p><strong>Projects</strong>: <code>read</code></p> |                       |
+
+Snyk uses SCM webhooks in Bitbucket to:
+
+* Track the state of pull requests when PRs are created, updated triggered, merged, and so on.
+* Send push events to trigger PR checks.
+
+#### Bitbucket Cloud App scopes
+
+The following table details the permissions required for the **Bitbucket Cloud App**:
+
+| Action                                              | Purpose                                                                                                                                       | Required Scope                                            |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| Daily / weekly tests                                | Used to read manifest files in private repositories.                                                                                          | Read and modify your repositories and their pull requests |
+| Snyk tests on pull requests                         | Used to send pull request status checks when a new PR is created, or an existing PR is updated.                                               | Read and modify your repositories and their pull requests |
+| Opening fix and upgrade pull requests               | Used to create fix PRs in monitored repositories.                                                                                             | Read and modify your repositories and their pull requests |
+| Snyk tests on pull requests - initial configuration | Used to add Snyk webhooks to the imported repos, to notify Snyk when pull requests are created or updated, and enable Snyk to trigger a scan. | Read and modify your repositories' webhooks               |
+
+*

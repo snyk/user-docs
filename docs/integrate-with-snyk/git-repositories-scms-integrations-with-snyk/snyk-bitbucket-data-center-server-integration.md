@@ -101,7 +101,7 @@ To review and adjust the pull request tests settings:
 
 </div>
 
-## Required permissions scope for the Bitbucket DC/Server integration
+## Required permission scopes for the Bitbucket DC/Server integration
 
 Snyk performs all the Bitbucket DC/Server operations on behalf of the integrated service account.
 
@@ -110,12 +110,7 @@ For Snyk to perform the required operations on monitored repositories, such as r
 **Admin** permissions are also needed to set secure webhooks. Snyk relies on webhooks to perform a variety of tasks, from PR checks, to commit tests upon merge events, and upcoming auto imports. To ensure the events come from your system and your system only, with no tampering or spoofing, we secure the webhooks using the recommended method shared by the systems we are connecting to. For Bitbucket Server, please see [this link](https://urldefense.proofpoint.com/v2/url?u=https-3A\_\_confluence.atlassian.com\_bitbucketserver\_manage-2Dwebhooks-2D938025878.html-23Managewebhooks-2DwebhooksecretsSecuringyourwebhook\&d=DwMGaQ\&c=wwDYKmuffy0jxUGHACmjfA\&r=Ck2O4F9WHPBs7KXjKQbW8v6LYdkZzI7TbBwtHf0DvoQ\&m=aKqZjXlWOErUgMQ\_jsYYcqqKiHpEYfZS1BT-ru1umJEnIorIvvNt1QshbHugekFP\&s=khA\_g0Unp0YP0qTeBtQyma-KHpa1vgWwT0kzcA5tQr0\&e=).\
 To do this, a secret token is generated for each secure webhook we create. Snyk setting the webhooks resolves scalability constraints, eliminates token leakage, and reduces the integration workload for you.
 
-| **Action**                                              | **Purpose**                                                                                                                                                                                                                                           | **Required permissions on the repository** |
-| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| Daily / weekly tests                                    | Used to read manifest files in private repositories.                                                                                                                                                                                                  | **Write** or above                         |
-| Snyk tests on pull requests                             | Used to send pull request status checks when a new PR is created or an existing PR is updated.                                                                                                                                                        | **Write** or above                         |
-| Opening fix and upgrade pull requests                   | Used to create fix PRs in monitored repositories.                                                                                                                                                                                                     | **Write** or above                         |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | **Admin**                                  |
+For detailed information on the permission scopes required, see [Bitbucket permission requirements](../../scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/#bitbucket-permission-requirements).
 
 ## **How to disconnect the Bitbucket Data Center/Server integration**
 
