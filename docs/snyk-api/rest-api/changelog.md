@@ -1,3 +1,23 @@
+## 2024-06-21 - Updated 2024-06-25
+
+### PATCH - `/orgs/{org_id}` - Updated
+- request property `data/type` was restricted to a list of enum values
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/attributes` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `org` enum value to the `data/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `org` enum value to the request property `data/type`
+
+- removed the pattern `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$` from the request property `data/type`
+
+- the `data/type` response`s property pattern `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$` was removed for the status `200`
+
+
 ## 2024-06-21
 
 ### POST - `/orgs/{org_id}/invites` - Updated

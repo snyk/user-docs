@@ -641,6 +641,17 @@
           "type": "string"
         }
       },
+      "PathOrgId": {
+        "description": "Unique identifier for org",
+        "in": "path",
+        "name": "org_id",
+        "required": true,
+        "schema": {
+          "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
+          "format": "uuid",
+          "type": "string"
+        }
+      },
       "Platform": {
         "description": "The image Operating System and processor architecture",
         "example": "linux/amd64",
@@ -17369,15 +17380,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Unique identifier for org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/PathOrgId"
           }
         ],
         "requestBody": {
@@ -17392,13 +17395,24 @@
                         "$ref": "#/components/schemas/OrgUpdateAttributes"
                       },
                       "id": {
+                        "description": "The ID of the resource.",
                         "format": "uuid",
                         "type": "string"
                       },
                       "type": {
-                        "$ref": "#/components/schemas/Types"
+                        "description": "The type of the resource.",
+                        "enum": [
+                          "org"
+                        ],
+                        "example": "org",
+                        "type": "string"
                       }
                     },
+                    "required": [
+                      "id",
+                      "type",
+                      "attributes"
+                    ],
                     "type": "object"
                   }
                 },
@@ -17432,7 +17446,11 @@
                           "$ref": "#/components/schemas/OrgRelationships"
                         },
                         "type": {
-                          "$ref": "#/components/schemas/Types"
+                          "enum": [
+                            "org"
+                          ],
+                          "example": "org",
+                          "type": "string"
                         }
                       },
                       "required": [
@@ -17503,9 +17521,10 @@
         "x-snyk-api-releases": [
           "2022-04-06~experimental",
           "2022-12-15~beta",
-          "2023-05-29"
+          "2023-05-29",
+          "2024-02-28"
         ],
-        "x-snyk-api-version": "2023-05-29"
+        "x-snyk-api-version": "2024-02-28"
       },
       "x-snyk-api-resource": "orgs"
     },
