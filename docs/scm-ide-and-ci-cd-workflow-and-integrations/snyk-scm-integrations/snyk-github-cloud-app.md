@@ -5,7 +5,7 @@
 
 The Snyk GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you are interested in getting access.
 
-If you are using a self-hosted instance of GitHub, you must use the [Snyk GitHub Server App](../../scm-ide-and-ci-cd-workflow-and-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-server-app.md).
+If you are using a self-hosted instance of GitHub, you must use the [Snyk GitHub Server App](snyk-github-server-app.md).
 
 This feature is not yet supported for Snyk Broker.
 

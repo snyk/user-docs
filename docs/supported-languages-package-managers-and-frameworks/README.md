@@ -62,6 +62,6 @@ To test your open-source Project for vulnerabilities, run the `snyk test` comman
 
 ## IDE and CI/CD
 
-For integrated development environments, see [Snyk IDEs](../scm-ide-and-ci-cd-workflow-and-integrations/use-snyk-in-your-ide/).
+For integrated development environments, see [Snyk IDEs](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/).
 
 If you use continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software.

@@ -6,7 +6,7 @@ Snyk supports SCM, IDE, and CI/CD workflow and integrations methods that allow y
 Enterprise plan users have access to all of the functionality. The API and Snyk AppRisk are not available to Free and Team plan users. See [Plans and pricing](https://snyk.io/plans/) for more information.
 {% endhint %}
 
-This section of the documentation provides information about [Snyk SCM](git-repositories-scms-integrations-with-snyk/), [IDE](use-snyk-in-your-ide/), and [CI/CD workflow](snyk-ci-cd-integrations/) and integrations.
+This section of the documentation provides information about [Snyk SCM](snyk-scm-integrations/), [IDE](snyk-ide-plugins-and-extensions/), and [CI/CD workflow](snyk-ci-cd-integrations/) and integrations.
 
 If you are an Enterprise customer, see [Choose rollout integrations](../implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations.md) in the Enterprise implementation guide for tips and considerations on import strategies. Snyk suggests reading through the [Deployment recommendations](./#deployment-recommendations-for-git-integrations) for a smooth rollout.
 

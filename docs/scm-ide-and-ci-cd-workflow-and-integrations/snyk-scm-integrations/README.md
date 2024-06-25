@@ -10,7 +10,7 @@ Snyk Source Control Manager (SCM) integrations allow you to:
 
 Snyk can integrate with the following SCMs to help you track, monitor, and fix the issues and vulnerabilities in your code:
 
-* [GitHub Cloud App](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md)
+* [GitHub Cloud App](snyk-github-cloud-app.md)
 * [GitHub Server App](snyk-github-server-app.md)
 * [GitHub Enterprise](snyk-github-enterprise-integration.md)
 * [GitHub](snyk-github-integration.md)
@@ -18,7 +18,7 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 * [GitLab](snyk-gitlab-integration.md)
 * [Bitbucket Cloud](snyk-bitbucket-cloud-integration.md)
 * [Bitbucket Cloud App](snyk-bitbucket-cloud-app-integration.md)
-* [Bitbucket Data Center/Server](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md)
+* [Bitbucket Data Center/Server](snyk-bitbucket-data-center-server-integration.md)
 * [Azure Repositories (TFS)](snyk-azure-repositories-tfs-integration.md)
 
 ## Deployment recommendations for SCM integrations
@@ -72,7 +72,7 @@ Snyk uses SCM webhooks to:
 
 ### GitHub Cloud App permission requirements
 
-The [Snyk GitHub Cloud App](../../snyk-scm-ide-and-ci-cd-integrations/git-repositories-scms-integrations-with-snyk/snyk-github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
+The [Snyk GitHub Cloud App](snyk-github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
 
 To set up the GitHub Cloud app integration you must be a:
 
@@ -113,7 +113,7 @@ The Snyk Bitbucket integrations use different access control mechanisms to conne
 
 * [Snyk Bitbucket Cloud](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](snyk-bitbucket-cloud-integration.md#how-to-set-up-the-snyk-bitbucket-cloud-integration).
 * [Snyk Bitbucket Cloud App](./#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](snyk-bitbucket-cloud-app-integration.md#setting-up-a-bitbucket-cloud-app) and related permissions.
-* [Snyk Bitbucket Data Center/Server](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
+* [Snyk Bitbucket Data Center/Server](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](snyk-bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
 
 {% hint style="warning" %}
 To set up any Snyk Bitbucket integration, you must be a Bitbucket Workspace Admin.
