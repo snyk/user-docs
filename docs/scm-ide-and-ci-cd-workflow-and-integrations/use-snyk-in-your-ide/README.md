@@ -1,4 +1,4 @@
-# Snyk IDEs
+# Snyk IDE plugins and extensions
 
 The following Snyk plugins and extensions are available.
 
