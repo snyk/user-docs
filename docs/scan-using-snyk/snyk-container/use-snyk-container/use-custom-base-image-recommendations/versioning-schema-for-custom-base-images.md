@@ -1,14 +1,14 @@
 # Versioning schemas for custom base images
 
-For a custom base image, Snyk recommends upgrading the image to the latest available version from the pool of images that have been imported as Projects, marked as custom base images and are enabled for recommendations. See [Enable CBIR](./#enable-cbir).
+You must set a versioning schema for the first Project you marked as a custom base image in the image's repository. You can edit the Custom base Image settings for Projects that you have already marked as custom base images. For details. see [Mark the created Project as a custom base image](./#mark-the-created-project-as-a-custom-base-image).
+
+Snyk recommends updating a custom base image to the latest available version from the pool of images imported as Projects, marked as custom base images and enabled for recommendations. For more information, see [Enable CBIR](./#enable-cbir).
 
 To determine which is the latest version, Snyk uses a versioning schema that allows comparing image tags.
 
-{% hint style="info" %}
-Managing the versioning schema for images imported to projects for a repository can be done either from the Web UI or the Snyk REST API.
-{% endhint %}
+You can manage the versioning schema for images imported to Projects for a repository in the Web UI or using the Snyk REST API.
 
-Snyk supports the below versioning schemas.
+Snyk supports the following versioning schemas.
 
 ## **Semantic Versioning (SemVer)**
 

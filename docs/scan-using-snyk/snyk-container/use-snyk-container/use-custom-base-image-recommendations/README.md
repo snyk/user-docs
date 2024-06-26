@@ -1,11 +1,9 @@
 # Use Custom Base Image Recommendations
 
-{% hint style="warning" %}
-**Release status**&#x20;
-
-Custom Base Image Recommendations is available only for Enterprise plans.
-
-See [Pricing plans](https://snyk.io/plans).
+{% hint style="info" %}
+**Feature availability**\
+**The** Custom Base Image Recommendations feature is available only for Enterprise plans.\
+For more information, see [Plans and pricing](https://snyk.io/plans)
 {% endhint %}
 
 ## **Overview of Custom Base Image Recommendations (CBIR)**
@@ -30,7 +28,7 @@ All custom base image recommendations are considered minor upgrades, regardless 
 
 To determine the latest version of a base image across Projects imported into the same repository, Snyk allows configuring a [versioning schema](versioning-schema-for-custom-base-images.md).
 
-Custom base image recommendation supports Automatic fix PRs. If you are not using the latest version of the base image, then immediately after image import, Snyk automatically issues a fix pull request against your Dockerfile to upgrade to the latest available custom base image version.
+Custom base image recommendations support Automatic fix PRs. If you are not using the latest version of the base image, then immediately after image import, Snyk automatically issues a fix pull request against your Dockerfile to upgrade to the latest available custom base image version.
 
 ## **Enable CBIR:** configure an image as a custom base image
 
