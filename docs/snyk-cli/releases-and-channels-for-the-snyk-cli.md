@@ -79,12 +79,12 @@ Existing Snyk customers who are opted in to the previously known latest channel 
 
 ## Install standalone executables from a channel
 
-See the `release.json` in each channel for the download links. Examples for the preview version on the MacOS platform follow:
+Use the`release.json` in each channel. The download links are provided here, followed by an example for the preview version on the MacOS platform:
 
 * [https://static.snyk.io/cli/preview/release.json](https://static.snyk.io/cli/preview/release.json)
 * [https://static.snyk.io/cli/preview/snyk-macos](https://static.snyk.io/cli/preview/snyk-macos)
 
-For example, to download and run a preview version of the CLI in a temporary folder of macOS, you could run the following set of commands.&#x20;
+For MacOS, download and run a preview version of the CLI in a temporary folder named `snyk-preview`. To do this, you can run the following set of commands.
 
 <pre class="language-sh"><code class="lang-sh"><strong>mkdir snyk-preview
 </strong>cd snyk-preview
