@@ -88,7 +88,7 @@ To utilize the Snyk GitHub Server App you must be using a self-hosted instance o
 
 The [Snyk GitHub Server App](snyk-github-server-app.md) uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
 
-To set up the GitHub Cloud app integration you must be a:
+To set up the GitHub Server app integration you must be a:
 
 * Snyk Organization Admin.
 * GitHub Organization Admin.
