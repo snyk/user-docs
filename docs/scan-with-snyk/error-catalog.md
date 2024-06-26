@@ -526,6 +526,19 @@ The service encountered a permissions or credentials error most likely related t
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
+### [SNYK-OS-0010](#snyk-os-0010)
+
+#### Snyk failed to clone your repository
+
+We encountered a fatal error from Git while trying to clone your code using your provided credentials. Please verify that:
+
+* Your provided credentials are correct or not scoped too narrowly
+* The branch you've asked us to clone exists
+* The repository you've provided is accessible from the internet is you are not connected through a broker
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
 
 #### Unsupported manifest file type for remediation
@@ -2076,4 +2089,4 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-06-20T19:31:40.545Z
+--- Generated at 2024-06-26T19:06:10.158Z
