@@ -2,7 +2,7 @@
 
 ## Snyk CLI for open-source C/C++
 
-To explore the vulnerabilities for C/C++, search the [Snyk Vuln DB](https://security.snyk.io). Snyk scans test your code against this database, which is periodically updated with the latest source code from online sources. For details, see&#x20;
+To explore the vulnerabilities for C/C++, search the [Snyk Vuln DB](https://security.snyk.io). Snyk tests your code against this database, which is periodically updated with the latest source code from online sources. For details, see [Snyk Vulnerability Database](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md).
 
 For Snyk to scan the open-source Project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned. For details, see [Source code dependencies must be in the scanned folder](snyk-cli-for-open-source-c++-scans.md#source-code-dependencies-must-be-in-the-scanned-folder).
 
@@ -16,7 +16,7 @@ When you run the [`snyk test --unmanaged`](../../snyk-cli/commands/test.md#unman
 
 ## Scanning archives
 
-By default, archives are not scanned. However, Snyk CLI can recursively extract archives to analyze the source code inside.
+By default, archives are not scanned. However, the CLI can recursively extract archives to analyze the source code inside.
 
 To enable archive extraction, specify the depth of the extraction using the `--max-depth` option.
 
@@ -28,7 +28,7 @@ The supported archive formats are:
 
 ## **Source code dependencies must be in the scanned folder**
 
-For Snyk CLI to be able to find dependencies in your source code, enough of the full dependencies source code must be present in the scanned folder.
+For the CLI to be able to find dependencies in your source code, enough of the full dependencies source code must be present in the scanned folder.
 
 Having a large percentage of files in their original (unchanged) form is critical to accurately identifying dependencies and reporting the correct set of vulnerabilities back. Modifying that source code reduces the confidence of the scanning engine, resulting in less accurate results. Other potential issues could include dependencies not being identified or being identified incorrectly, as a different version or even a different package.
 
@@ -137,22 +137,19 @@ Dependencies:
     ... and 249 more files
 ```
 
+This output also shows how confident Snyk is about the identified dependency and its version. To sww how confident Snyk is about the identified dependency and its version, you can, use the `--print-deps` or `--print-dep-paths` option.
+
 ## **Understanding the confidence level**
+
+The confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between `0` and `1` and the higher the number is, the more accurate the identification. A confidence level of `1` means that all the files in the source tree fully matched all the expected files in the Snyk database.
+
+`curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0 confidence: 0.993`
 
 You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open-source library, your changes may decrease the accuracy of the identification of the actual library.
 
-To learn how confident Snyk is about the identified dependency and its version, use the `--print-deps` or `--print-dep-paths` command line option:
-
-```
-curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0
-confidence: 0.993
-```
-
-This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between **0** and **1** and the higher it is, the more accurate the identification is. Thus a confidence of **1** means that all the files in the source tree fully matched all the expected files in the Snyk database.
-
 ## **JSON output**
 
-To get a machine-readable output in JSON, use the `--json` option:
+To get machine-readable output in JSON, use the `--json` option:
 
 ```
 $ snyk test --unmanaged --json
@@ -282,6 +279,6 @@ Notifications about newly disclosed issues related to these dependencies will be
 
 This creates a snapshot of dependencies and vulnerabilities and imports them into the Snyk Web UI, where you can review the issues and see them included in your reports.
 
-Importing a Project with unmanaged dependencies creates a new Project:
+Importing a Project with unmanaged dependencies creates a new Project that is listed on the Project page:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt="Project with unmanaged dependencies"><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
