@@ -37,17 +37,21 @@ Role assertions should be provided to Snyk in the following format:
 
 Where:
 
-`snyk` is a fixed prefix for the role mapping. Required.
+`snyk` is a fixed prefix for role mapping. **Required**.
 
-`scope` can be one of `org` or `group.`Required; if a role mapping does not contain a valid scope, it will be ignored.
+`scope` can be one of `org` or `group.`**Required**; if a role mapping does not contain a valid scope, it will be ignored.
 
-`target` can be a slug of `org` or `group` where the role will be granted. See [slugs](./#slugs) to find this information. Optional; an asterisk ( `*`) or an empty string can be used to apply to all resources **t**hat are associated with the SSO connection.
+`target` must be a **slug** of either `org` or `group` where the role will be granted, or `target`.
+
+* May be an asterisk `*` or empty string `::`to apply as a wildcard.
+* See the [Slugs](./#slugs) section to find this information.
+* **Optional**; an asterisk ( `*`) or an empty string can be used to apply to all resources that are associated with the SSO connection.
 
 `role` is the normalized name of the required role. See [Role normalized name](./#role-normalized-name) to find this information.
 
-* Required; if not role is present, the role mapping is ignored.
-* If the role begins with `custom:` then it is understood to be a custom role created in that Group.
-* Built-in roles should not have the `custom:` prefix, so values like `org_admin`, `org_collaborator`, `group_viewer` will refer to the Snyk pre-defined roles.
+* **Required**; if not role is present, the role mapping is ignored.
+* If the role is a custom role, that is, a role created in the Group Member Roles admin panel that can be of either `Org` or `Group` type,  then it must have a `custom:` prefix. See the e[xample role assertions](./#example-role-assertions).
+* Built-in roles do not have the `custom:` prefix, so values like `org_admin`, `org_collaborator`, `group_viewer` will refer to the Snyk pre-defined roles, which are shown with a padlock symbol in the Member Roles page.
 
 {% hint style="warning" %}
 Users must only have one role mapped per Organization or Group. Mapping multiple roles except when using wildcards is not supported and can lead to unexpected behavior.
@@ -56,10 +60,11 @@ Users must only have one role mapped per Organization or Group. Mapping multiple
 ### Example role assertions
 
 * `snyk:group:*:group_admin` Assign the user the Group admin role for all groups associated with the SSO connection.
-* `snyk:group::custom:sysadmin` Assign the user the custom Group-level role `Sys Admin` for all groups associated with the SSO connection.
+* `snyk:group::custom:sys_admin` Assign the user the custom Group-level role `Sys Admin` for all groups associated with the SSO connection.
   * Note that `::` here indicates an empty string for the target, and so is treated as a wildcard in the preceding example.
   * Note that this Group-level custom role must be created manually before it can be assigned.
 * `snyk:org:my-default-org:org_admin` Assign the user the **Organization Admin** Organization-level role for the Organization `my-default-org`.
+* `snyk:org:my-default-org:custom:code_editor`   Assign the user the custom Org-level role `Code Editor` for the `my-default-org` .
 
 ### Example role assertions array
 
@@ -148,3 +153,6 @@ Snyk has a set of [pre-defined roles](../../../snyk-admin/manage-permissions-and
 | Group        | Group Viewer     | `group_viewer`     |
 | Group        | Group Member     | `group_member`     |
 
+
+
+* See&#x20;
