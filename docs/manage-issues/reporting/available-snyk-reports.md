@@ -11,6 +11,7 @@ The following reports are available:
 * [CWE TOP 25 report](available-snyk-reports.md#cwe-top-25-report)
 * [CWE TOP 10 KEV report](available-snyk-reports.md#cwe-top-10-kev-report)
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
+* [Developer IDE and CLI usage report](available-snyk-reports.md#developer-ide-and-cli-usage)
 
 Select **Change Report** to change the report displayed:
 
@@ -58,7 +59,7 @@ Key metrics are then broken down to point out information at the Organization or
 
 ## Vulnerabilities Detail report
 
-The Vulnerabilities Detail report is similar to the Issues Detail report, but shows issues grouped by Snyk Problem ID ([see Snyk Vulnerability DB](https://security.snyk.io/vuln)).&#x20;
+The Vulnerabilities Detail report is similar to the Issues Detail report but shows issues grouped by Snyk Problem ID ([see Snyk Vulnerability DB](https://security.snyk.io/vuln)).&#x20;
 
 <div align="left">
 
@@ -71,9 +72,9 @@ You can easily see how many instances of a vulnerability exist and how many Proj
 For a table of Total Issues, use Change Reports to switch to the Issues Detail report.
 
 {% hint style="info" %}
-#### Dependencies and Licenses information
+#### Dependencies and license information
 
-To view Dependencies and Licenses information, select the **Dependencies** menu option. See [Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/) for details.
+To view Dependencies and license information, select the **Dependencies** menu option. See [Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/) for details.
 {% endhint %}
 
 ## Featured Zero-Day report
@@ -95,7 +96,7 @@ Next, proceed to the **All** **Issues** table and compile a prioritized list of 
 <figure><img src="../../.gitbook/assets/image (428).png" alt="All Issues table"><figcaption><p>All Issues table</p></figcaption></figure>
 
 For continuous monitoring of remediation progress and efficacy, refer to the trend diagrams.\
-The **Accumulative Issues Backlog Trend** diagram shows the weekly changes in the zero-day’s backlog by accumulating the weekly delta between identified and resolved issues. Use this diagram to ensure that your R\&D teams are reducing the zero-day’s backlog consistently, which will be indicated by a negative trend line.
+The **Accumulative Issues Backlog Trend** diagram shows the weekly changes in the zero-day backlog by accumulating the weekly delta between identified and resolved issues. Use this diagram to ensure that your R\&D teams are reducing the zero-day backlog consistently, which will be indicated by a negative trend line.
 
 In parallel, review the **Issues Identified versus Resolved over Time** diagram to conclude whether additional emphasis should be placed on preventing the introduction of new issues or on accelerating the remediation efforts.
 
@@ -115,7 +116,7 @@ In the open issues section, the SLA severity breakdown shows a distribution of s
 
 <figure><img src="../../.gitbook/assets/03OpenIssuesDetails.png" alt="Open issues section"><figcaption><p>Open issues section</p></figcaption></figure>
 
-The SLA breakdown table allows you to compare SLA compliance results of Organizations in the Group view, or Targets in the Organization view. The table is sorted by default according to the quantity of breached issues. Use the filters to view counters for specific severities only.
+The SLA breakdown table allows you to compare the SLA compliance results of Organizations in the Group view, or Targets in the Organization view. The table is sorted by default according to the quantity of breached issues. Use the filters to view counters for specific severities only.
 
 <figure><img src="../../.gitbook/assets/04SLABreakdowntable.png" alt="SLA breakdown table"><figcaption><p>SLA breakdown table</p></figcaption></figure>
 
@@ -174,3 +175,31 @@ You can view a report for a single version of a compliance standard at a time, f
 Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/view-iac+-and-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
 Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.
+
+## Developer IDE and CLI usage
+
+To use this report, you must ensure you have met the following prerequisites:&#x20;
+
+* Snyk CLI version 1.1292.1 or newer
+* VS Code 1.86.0 or newer and Snyk Security plugin 2.3.3 or newer
+* IntelliJ IDEs 2023.3 or newer and Snyk Security plugin 2.7.3 or newer
+* Visual Studio 2019, 2022 and Snyk Security Plugin 1.1.47 or newer
+* Eclipse 2023.12 or newer and Snyk Security plugin 2.1.0 or newer
+
+This report shows the adoption of Snyk testing in local development through the IDE plugins and using the CLI locally. The report is available under the Change Report dropdown at the Group and Organization levels.
+
+{% hint style="info" %}
+This report focuses on the local developer experience and thus does not include the use of CI/CD. In addition, the report does not show organizations or developers that have never used the CLI or IDE.
+{% endhint %}
+
+Security teams can use this report to demonstrate strong shift left behavior as model behavior to bring to other teams. This report also shows where teams or individual developers are not adopting Snyk locally. Companies can use this report to encourage more shift left behavior.
+
+<figure><img src="../../.gitbook/assets/SCR-20240626-nxvs.png" alt="Developer IDE and CLI usage"><figcaption><p>Developer IDE and CLI usage</p></figcaption></figure>
+
+This report shows the test usage in the IDE and CLI by developers:
+
+* Total number of developers running scans and the number of scans in IDE and CLI
+* Charts and summary tables breaking down this data by different dimensions, including IDE plugin
+* List of organizations and developers adopting Snyk locally
+
+Teams can filter by date and Organization.\

@@ -30,6 +30,7 @@ The following reports are available:
 * Issues Summary
 * Vulnerabilities Detail
 * Cloud Compliance Issues
+* Developer IDE and CLI usage
 
 For more information, see [Available Snyk Reports](../manage-issues/reporting/available-snyk-reports.md).
 
