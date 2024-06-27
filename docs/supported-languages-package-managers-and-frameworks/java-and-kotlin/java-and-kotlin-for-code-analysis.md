@@ -28,7 +28,7 @@ The following summarizes Java support for code analysis.
 * Custom rules
 * Interfile analysis
 
-## Synk for Kotlin for code analysis
+## Snyk for Kotlin for code analysis
 
 Snyk supports Kotlin Mobile Apps. Android is partially supported.
 
