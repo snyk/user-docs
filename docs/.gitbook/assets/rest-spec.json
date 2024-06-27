@@ -1876,7 +1876,8 @@
             "type": "boolean"
           },
           "name": {
-            "$ref": "#/components/schemas/name"
+            "description": "User-defined name of the collection",
+            "type": "string"
           }
         },
         "required": [
