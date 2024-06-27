@@ -554,6 +554,8 @@ Note: Remedies are not included in the response at this time.
 
 ### [List all Projects for an Org with the given Org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects)
 
+The query-string parameter types is optional. The endpoint does not enforce specific project types and will return no matching projects if you enter a string that does not match a project type.
+
 ### [Get project by project ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-)
 
 ### [Delete project by project ID](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/projects/-project\_id-)
