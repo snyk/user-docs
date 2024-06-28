@@ -21,6 +21,16 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 * [Bitbucket Data Center/Server](snyk-bitbucket-data-center-server-integration.md)
 * [Azure Repositories (TFS)](snyk-azure-repositories-tfs-integration.md)
 
+## Snyk Git repository cloning
+
+{% hint style="warning" %}
+This feature is in Early Access for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
+{% endhint %}
+
+Git repository cloning enables Snyk to ingest a temporary snapshot of repository contents, and all commit metadata through your configured SCM integrations.
+
+For detailed information on this feature, including enablement steps, see [Git repository cloning for SCM integrations](introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations.md).
+
 ## Deployment order recommendations
 
 If you try to implement all the SCM integration features at the same time, you risk causing friction in your software development life cycle ([SDLC](https://snyk.io/learn/secure-sdlc/)), which in turn leads to a poor developer experience.

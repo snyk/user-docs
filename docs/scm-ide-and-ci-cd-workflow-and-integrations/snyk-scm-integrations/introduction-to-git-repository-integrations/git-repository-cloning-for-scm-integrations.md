@@ -1,6 +1,6 @@
 # Git repository cloning for SCM integrations
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Feature availability**\
 This feature is in **Early Access** for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
 
