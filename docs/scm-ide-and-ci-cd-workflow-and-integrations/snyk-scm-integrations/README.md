@@ -58,7 +58,7 @@ See the following for detailed permission requirements:
 For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](https://docs.snyk.io/enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker).
 {% endhint %}
 
-The Snyk GitHub Enterprise integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the PAT on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
+The Snyk GitHub Enterprise integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the Personal Access Token (PAT) on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
 
 The following table details the access scopes required in GitHub for Personal Access Tokens (PAT) and the scopes required for Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs. GitHub custom roles are not supported.
 
@@ -99,7 +99,7 @@ To utilize the Snyk GitHub Server App you must be using a self-hosted instance o
 
 The [Snyk GitHub Server App](snyk-github-server-app.md) uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
 
-To set up the GitHub Cloud app integration you must be a:
+To set up the GitHub Server app integration you must be a:
 
 * Snyk Organization Admin.
 * GitHub Organization Admin.
