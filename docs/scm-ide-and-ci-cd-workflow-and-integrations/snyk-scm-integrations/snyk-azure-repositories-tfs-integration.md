@@ -1,11 +1,19 @@
 # Snyk Azure Repositories (TFS) integration
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Feature availability**\
 Integration with Azure Repos Cloud is available with all Snyk pricing plans. Integration with Azure DevOps Server 2020 and above, also known as TFS, is available for Snyk Enterprise plan customers. For details, see [Plans and pricing](https://snyk.io/plans/).
 
 Snyk supports only Git. Snyk does not currently support integration with Team Foundation Version Control (TFVC).
 {% endhint %}
+
+## Prerequisites for Snyk Azure Repositories (TFS) integration
+
+* [Snyk Organization Admin](../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md) user role.
+* An Azure project. If you do not have a project yet, create one in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) or set one up in an [on-premise Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops) instance.
+* The required Personal Access Token (PAT) access scopes. For details on the permissions required, see [Azure Repositories (TFS) permission requirements](./#azure-repositories-tfs-permission-requirements).
+
+## Snyk Azure Repositories (TFS) integration features
 
 Snyk integrates with your Microsoft Azure Repository to let you import Projects and monitor the source code for your repositories. Snyk tests the Projects you have imported for known security vulnerabilities in the dependencies, testing at a frequency you control.
 
@@ -15,44 +23,24 @@ Snyk Azure Repository integration lets you:
 * Detect vulnerabilities in your open-source components
 * Provide automated fixes and upgrades
 
-## How Azure Repository integration works
-
-The process to connect Snyk with your Azure repositories includes the following steps:
-
-1. Generate a unique Azure DevOps personal access token (PAT) for Snyk, based on a username and password combination, and configured with the specific permissions Snyk needs to access your Azure repositories.\
-   For more information, see [Configure your Azure Repository integration](snyk-azure-repositories-tfs-integration.md#configure-your-azure-repository-integration).
-2. Select the Projects and repositories you want to associate with Snyk for testing and monitoring.\
-   You can also enter custom file locations for any manifest files that are not located in the root folders of your repositories.
-
-Snyk then does the following:
+After the integration is configured, Snyk does the following:
 
 1. Evaluates the items you selected and imports the ones that have the relevant manifest files in their root folder and all the subfolders at any level.
 2. Communicates directly with your repository for each test it runs using the permissions you associated with your PAT, to determine exactly which code is currently pushed by the Snyk application and which dependencies are being used. Each dependency is tested against the Snyk vulnerability database to see if it contains any known vulnerabilities.
 3. Notifies you by email or a dedicated Slack channel if vulnerabilities are found according to the preferences you configured, so that you can take immediate action to fix the issues.
 
-## Configure your Azure Repository integration
+## How to set up the Snyk Azure Repositories (TFS) integration
 
-### Prerequisites for Azure Repository integration
+The process to connect Snyk with your Azure repositories includes the following steps:
 
-{% hint style="info" %}
-Only a Snyk admin user can configure the integration within the UI.\
-Collaborator users cannot perform this task.
-{% endhint %}
+1. Generate a unique Azure DevOps personal access token (PAT) for Snyk, based on a username and password combination, and configured with the specific permissions Snyk needs to access your Azure repositories. For more information, see [Configure a Personal Access Token (PAT)](snyk-azure-repositories-tfs-integration.md#configure-a-personal-access-token-pat).
+2. [Enable the integration through the Snyk Web UI](snyk-azure-repositories-tfs-integration.md#integrate-using-the-snyk-web-ui).
+3. [Select the Projects and repositories](snyk-azure-repositories-tfs-integration.md#add-projects-to-snyk-for-azure-repos) you want to associate with Snyk for testing and monitoring.\
+   You can also enter custom file locations for any manifest files that are not located in the root folders of your repositories.
 
-To enable integration between Azure Repository and Snyk:
+### **Configure a Personal Access Token (PAT)**
 
-* Set up your Azure Repos account and your Snyk account.
-  * You must have an Azure project.
-  * If you do not have a project yet, create one in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) or set one up in an [on-premise Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops) instance.
-* &#x20;Create a Personal Access Token (PAT). You must be a member of the [Project Administrators Group](https://docs.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?view=azure-devops) so that the PAT has the `edit subscriptions permissions` required to enable webhooks.
-
-### **Integrate with your Azure Repository**
-
-1. Generate and copy a unique PAT to use for Snyk. For more information, see the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops).
-2. When you are prompted in Azure, enable the following permissions for Snyk access:
-   * **Expiry**: to avoid breaking the integration, Snyk recommends that you choose a token expiration date that is far in the future.
-   * **Scopes**: Custom defined
-   * **Code**: `Read & write`.
+Generate and copy a unique PAT to use for Snyk. For more information on the PAT access scope requirements to enable in Azure, see [Azure Repositories (TFS) permission requirements](./#azure-repositories-tfs-permission-requirements).
 
 ### Integrate using the Snyk Web UI
 
@@ -73,11 +61,9 @@ To enable integration between Azure Repository and Snyk:
 5. Click **Save**.\
    Snyk tests the connection values and the page reloads, displaying the Azure Repos integration information. A message to confirm that the details were updated appears at the top of the screen.
 
-If the connection to Azure fails, a notification appears under the **Azure Repos** card title.
-
-<img src="../../.gitbook/assets/azure-no-connect_31july2022.png" alt="Could not connect to Azure Repos. Ensure you have entered your account credential correctly." data-size="original">
-
-
+{% hint style="info" %}
+If the connection to Azure fails, a notification will appear under the **Azure Repos** card title.
+{% endhint %}
 
 ## Add Projects to Snyk for Azure Repos
 
@@ -109,13 +95,13 @@ Use this procedure to add an Azure Repository dependency from a non-default path
 2. Open the **Add custom file location (optional)** list and **select a repository...** to configure a custom path.
 3. In the text field, enter the `relative path for the manifest file location`.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 The relative path field is case-sensitive.
 {% endhint %}
 
-<div align="left">
+<div align="center">
 
-<figure><img src="../../.gitbook/assets/azure_custom_repo-11aug2022.png" alt="Select Azure repos" width="563"><figcaption><p>Select Azure repos</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/azure_custom_repo-11aug2022.png" alt="Select Azure repos to import" width="563"><figcaption><p>Select Azure repos to import</p></figcaption></figure>
 
 </div>
 
@@ -134,5 +120,5 @@ After repositories are imported, a confirmation appears in green at the top of t
 </div>
 
 {% hint style="info" %}
-The Azure Repository integration works like the other Snyk [Git integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../snyk-admin/snyk-projects/) documentation.
+The Azure Repository integration works like the other [Snyk SCM integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../snyk-admin/snyk-projects/) documentation.
 {% endhint %}
