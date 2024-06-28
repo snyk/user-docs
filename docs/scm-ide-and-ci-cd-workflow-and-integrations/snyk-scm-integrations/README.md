@@ -21,13 +21,13 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 * [Bitbucket Data Center/Server](snyk-bitbucket-data-center-server-integration.md)
 * [Azure Repositories (TFS)](snyk-azure-repositories-tfs-integration.md)
 
-## Deployment recommendations for SCM integrations
+## Deployment order recommendations
 
 If you try to implement all the SCM integration features at the same time, you risk causing friction in your software development life cycle ([SDLC](https://snyk.io/learn/secure-sdlc/)), which in turn leads to a poor developer experience.
 
 To ensure a smooth rollout of Snyk across your organization, Snyk provides a suggested deployment timeline consisting of deployment stages, configuration steps, and the desired outcome for each stage.
 
-For detailed steps, see [Deployment recommendations for SCM integrations](./#deployment-recommendations-for-git-integrations).
+For detailed steps, see [Deployment recommendations for SCM integrations](introduction-to-git-repository-integrations/deployment-recommendations-for-scm-integrations.md).
 
 ## User permissions and access scope requirements
 
