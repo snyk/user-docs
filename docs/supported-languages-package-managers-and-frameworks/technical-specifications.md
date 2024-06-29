@@ -178,7 +178,7 @@ The analysis is available only for files with names shorter or equal to 255 char
 
 ### Unicode character encoding&#x20;
 
-Snyk Code only accepts source code files in UTF-8 encoding. Consider convering source files to this encoding type before importing into Snyk.
+Snyk Code only accepts source code files in UTF-8 encoding. Consider converting source files to this encoding type before importing into Snyk.
 
 ### Framework support
 
