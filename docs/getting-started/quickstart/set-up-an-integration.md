@@ -5,7 +5,7 @@
 You have [created a Snyk account](create-or-log-in-to-a-snyk-account.md). You now need to tell Snyk where to scan.
 {% endhint %}
 
-You must give Snyk access to your environment, to allow Snyk to scan that environment. The type of integration you need depends on what systems you use, and what you want to scan. See [Integrate with Snyk](../../integrate-with-snyk/) for information about aviaable integrators.
+You must give Snyk access to your environment, to allow Snyk to scan that environment. The type of integration you need depends on what systems you use, and what you want to scan. See [Integrate with Snyk](../../integrate-with-snyk/) for information about available integrators.
 
 You can set up this integration:
 
