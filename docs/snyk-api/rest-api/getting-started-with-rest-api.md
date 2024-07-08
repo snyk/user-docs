@@ -15,7 +15,7 @@ Follow these steps to make a simple call to the REST API using `curl` in the com
 
 ```sh
 curl --request GET \
---url "https://api.snyk.com/rest/orgs/{orgId}/projects?version=2024-06-10" \
+--url "https://api.snyk.io/rest/orgs/{orgId}/projects?version=2024-06-10" \
 --header "Content-Type: application/vnd.api+json" \
 --header "Authorization: token API_TOKEN"
 ```
