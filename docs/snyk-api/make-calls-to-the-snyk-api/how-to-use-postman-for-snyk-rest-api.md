@@ -6,11 +6,11 @@ You can use Postman to see the various endpoints in the Snyk REST API to learn h
 2. Go to the Snyk REST API: [https://apidocs.snyk.io/](https://apidocs.snyk.io/).
    * If you need a specific version, for example, a beta release, select the version from the dropdown at the top of the page.
    * Click **Download OpenAPI Spec**.
-   * Save this file locally to your machine.
+   * Save this output locally to your machine.
 3. Open Postman: [https://learning.postman.com/docs/getting-started/importing-and-exporting-data/](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/) and follow these steps:
    * Click on **Collection**
    * Click the **Import** button
-   * Select the OpenAPI spec file you downloaded from the Snyk REST API.
+   * Select the OpenAPI spec you downloaded from the Snyk REST API.
    * Accept the default and import.
 4. Click on the top level of the Collection you imported and follow these steps:
    * Under Authorization tab - Type = API Key, Key= `Authorization,` and Value = `token {{snyk_token}}`
