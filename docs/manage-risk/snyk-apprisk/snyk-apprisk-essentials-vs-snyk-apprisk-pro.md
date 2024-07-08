@@ -2,7 +2,6 @@
 
 Snyk AppRisk solution is designed for developers and focuses on Application Security Posture Management. It helps AppSec teams implement, manage, and scale a modern AppSec program.
 
-\
 Snyk AppRisk is available as two separate offerings. Snyk AppRisk Essentials and Snyk AppRisk Pro. Snyk AppRisk Essentials streamlines the management of developer security programs for AppSec teams, leveraging Snyk capabilities.
 
 Snyk AppRisk Pro empowers AppSec teams to enhance and expand their AppSec programs comprehensively, providing expanded visibility and enhanced control.
@@ -18,10 +17,10 @@ Snyk AppRisk Pro empowers AppSec teams to enhance and expand their AppSec progra
 | **Security coverage management** | Ensure these assets are covered by Snyk.                                                                                                                     | Ensure these assets are covered by Snyk or other third-party tools.                                                                                                                                                                                                                                                                   |
 | **Prioritization with Insights** |                                                                                                                                                              | <p>Manage risk from these assets:</p><ul><li>Prioritize issues posing greatest risk with business context and holistic application context, from development to runtime.</li><li>Automate risk management workflows for assets using policies.</li><li>Track and report upon program health with risk and coverage metrics.</li></ul> |
 
-## When and why to use Snyk AppRisk Essentials <a href="#when-and-why-to-use-the-priority-score" id="when-and-why-to-use-the-priority-score"></a>
+## When and why to use Snyk AppRisk Essentials
 
 Snyk AppRisk Essentials is ideal for AppSec teams looking to streamline their developer-first security programs. The integrated capabilities offered by Snyk are useful for managing security scope for code-based assets. Snyk AppRisk Essentials is ideal for foundational security practices in organizations. It offers efficient automated workflows and clear visibility into code-based vulnerabilities. By focusing on essential security coverage and prioritization, Snyk AppRisk Essentials provides a solid starting point for teams embarking on their security journey or those who require a focused, efficient approach to application security.
 
 ## When and why to use Snyk AppRisk Pro
 
-Snyk AppRisk Pro offers a comprehensive view of both code and runtime environments, and seamlessly integrates with third-party tools for a complete security perspective. Snyk AppRisk Pro is a great solution if you want to also use third-party integrations. Covering the entire development to runtime spectrum, it incorporates both the business and application contexts, covering the entire development to runtime spectrum. With Snyk AppRisk Pro you can take action with confidence, knowing that you are making informed decisions based on relevant data. Through the use of automation and comprehensive metrics, you can attain exceptional security coverage and risk management, leading to the ongoing success of your program.&#x20;
+Snyk AppRisk Pro offers a comprehensive view of both code and runtime environments, and seamlessly integrates with third-party tools for a complete security perspective. Snyk AppRisk Pro is a great solution if you want to also use third-party integrations. Covering the entire development to runtime spectrum, it incorporates both the business and application contexts, covering the entire development to runtime spectrum. With Snyk AppRisk Pro you can take action with confidence, knowing that you are making informed decisions based on relevant data. Through the use of automation and comprehensive metrics, you can attain exceptional security coverage and risk management, leading to the ongoing success of your program.
