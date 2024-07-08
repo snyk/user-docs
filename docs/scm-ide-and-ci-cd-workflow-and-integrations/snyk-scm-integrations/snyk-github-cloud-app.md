@@ -43,21 +43,25 @@ Select the **GitHub Cloud App** tile.
 In the confirmation modal, select **Configure GitHub Cloud App.**\
 
 
-<figure><img src="../../.gitbook/assets/2023-11-28_09-44-21.png" alt="Configuration notice for the GitHub Cloud App" width="375"><figcaption><p>Configuration notice for the GitHub Cloud App</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.03.50.png" alt="Configuration notice for the GitHub Cloud App" width="375"><figcaption><p>Configuration notice for the GitHub Cloud App</p></figcaption></figure>
+
+You are then asked to authorize the app to act on your user’s behalf. The app uses this information to check which GitHub organizations you are authorized to install the app in.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.05.37.png" alt="" width="375"><figcaption><p>User authorization for the app</p></figcaption></figure>
 
 When the install screen in GitHub opens, you can select the GitHub organization where you wish to install the app.\
 
 
-<figure><img src="../../.gitbook/assets/2023-11-28_09-45-45.png" alt="Selection of the GitHub organization to install the app into" width="375"><figcaption><p>Selection of the GitHub organization to install the app into</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.06.25.png" alt="Selection of the GitHub organization to install the app into" width="375"><figcaption><p>Selection of the GitHub organization to install the app into</p></figcaption></figure>
 
 If the GitHub Cloud App is already installed in a GitHub organization, you can select that same GitHub organization during the integration process for a different Snyk Organization.\
 
 
-<figure><img src="../../.gitbook/assets/2024-01-23_10-40-45.png" alt="Connect another GitHub organization into a Snyk Organization" width="563"><figcaption><p>Connect another GitHub organization into a Snyk Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.13.54.png" alt="Connect another GitHub organization into a Snyk Organization" width="563"><figcaption><p>Connect another GitHub organization into a Snyk Organization</p></figcaption></figure>
 
 Specify whether you wish to install the app in all of the repositories belonging to the selected GitHub organization, or you want to install the app in a select number of repositories belonging to a GitHub organization; then click **Install & Authorize**.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-05-15 at 12.20.49.png" alt="Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into"><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.09.37.png" alt="Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into" width="375"><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
 
 {% hint style="warning" %}
 The GitHub Cloud App will lose access to Snyk if it is uninstalled from the GitHub organization or if the repositories to which the app instance has access are edited.
