@@ -285,6 +285,11 @@ The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Mo
 
 * **Region -** [**Here**](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges) you can find details about the Sysdig region URLs.
 
+### Known limitations
+
+* If the Sysdig Agent is not deployed on every node of a cluster, runtime data available from this integration may be incomplete.
+* Various Sysdig scans run at different intervals, which may cause a delay between applying changes to a resource within a cluster and reporting this information through the integration.
+
 ### Integration Hub setup <a href="#sysdig-integration-hub-setup" id="sysdig-integration-hub-setup"></a>
 
 * Open the **Integration Hub** menu.&#x20;
