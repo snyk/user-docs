@@ -139,7 +139,7 @@ Under the "configuration values", set the following attributes in a YAML or JSON
 * `secretName` - the secret name that will be created later in the process. The default value is  `snyk-secret` .
 * `clusterName` - the name of the cluster where the add-on is installed.
 * `snykGroupId` - the Group ID associated with the used service account.
-* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443` .
+* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443` , unless your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md#what-regions-are-available) than the default (US).
 
 Here is a base configuration to copy:
 
@@ -152,24 +152,25 @@ snykAPIBaseURL: api.snyk.io:443
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.58.12.png" alt="Set the appropriate configuration values under &#x22;Optional configuraiton settings&#x22;"><figcaption><p>Set the appropriate configuration values under "Optional configuraiton settings"</p></figcaption></figure>
 
-After you select the **Next** and **Create** options you will see the "Add-on snyk-runtimesensor successfully added to cluster <\<YOUR\_CLUSTER>>" notification on top of the page.
+After you select the **Next** and **Create** options you will see the `Add-on snyk-runtimesensor successfully added to cluster <<YOUR_CLUSTER>>` notification on top of the page.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 16.26.13.png" alt="The success message."><figcaption><p>The success message.</p></figcaption></figure>
 
 #### **Enable Snyk Runtime Sensor add-on using AWS CLI**
 
-Run the following command on your workspace to enable the Snyk Runtime Sensor add-on for your Amazon EKS cluster. You have to set the following parameters in your targeted EKS cluster:
+Run the following command on your workspace to enable the Snyk Runtime Sensor add-on for your Amazon EKS cluster. You have to set the following environment variables to match your Snyk account and your targeted EKS cluster:
 
 * $CLUSTER\_NAME
 * $AWS\_REGION
 * $SNYK\_GROUP\_ID&#x20;
+* $SNYK\_API\_BASE\_URL (should be set to `api.snyk.io:443` unless your account is hosted on a different region than US).
 
 ```
 aws eks create-addon \
 --cluster-name $CLUSTER_NAME \
 --region $AWS_REGION \
 --addon-name snyk_runtime-sensor \
---configuration-values '{"secretName":"snyk-secret","clusterName":"$CLUSTER_NAME","snykGroupId":"$SNYK_GROUP_ID","snykAPIBaseURL": "api.snyk.io:443"}' \
+--configuration-values '{"secretName":"snyk-secret","clusterName":"$CLUSTER_NAME","snykGroupId":"$SNYK_GROUP_ID","snykAPIBaseURL": "$SNYK_API_BASE_URL"}' \
 --resolve-conflicts OVERWRITE
 ```
 
