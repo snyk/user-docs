@@ -1,17 +1,17 @@
 # Quickstart
 
-This quickstart helps you with these basic tasks in the Snyk application:
-
 {% hint style="info" %}
-Before starting, check that the code in your repositories matches Snyk's [supported languages and frameworks](../../supported-languages-package-managers-and-frameworks/).
+Before starting the steps to scan a code analysis or open-source project, ensure you are using languages, package managers, and frameworks supported by Snyk. See [Supported languages, package managers, and frameworks](../../supported-languages-package-managers-and-frameworks/).
 {% endhint %}
+
+This quickstart helps you with these basic tasks in the Snyk application:
 
 1. [Create a Snyk account](create-or-log-in-to-a-snyk-account.md).
 2. [Set up a Snyk integration](set-up-an-integration.md) to give Snyk access to your code for scanning.
 3. [Import a Project](import-a-project.md) to scan and identify issues.
 4. [Review the results](view-snyk-scan-results.md) and take action to fix your issues.
 
-### For more details
+## For more details
 
 * See [Start scanning ](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md)to start using Snyk capabilities.
 * See [Walkthrough: Code Repository Projects](../../implement-snyk/walkthrough-code-repository-projects/) to read a full walkthrough of scanning and fixing vulnerabilities from content stored in a Git repository.
