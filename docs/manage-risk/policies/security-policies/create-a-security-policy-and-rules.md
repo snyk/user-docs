@@ -6,6 +6,8 @@ To create a new security policy, navigate to **Policies** in your Group menu, an
 
 {% hint style="info" %}
 Select **Snyk Default Security Policy** to change the conditions or actions for a security policy that applies to all Projects in all Organizations in the Group.
+
+Security policies are applicable to Snyk Open Source and Snyk Container Projects.
 {% endhint %}
 
 ## Rules, conditions, and actions

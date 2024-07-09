@@ -2,7 +2,9 @@
 
 A condition is a variable on which to set a rule.
 
-After you select a condition category, you are prompted to select **Includes** or **Does not include** and the desired condition, for example, Mature, CWE-1234.
+After you select a condition category, you are prompted to select **Includes** or **Does not include** and the desired condition, for example, Mature, CWE-1234.&#x20;
+
+Security policies are applicable to Snyk Open Source and Snyk Container Projects.
 
 You can stack multiple conditions in the same rule using the **AND** function.
 
