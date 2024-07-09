@@ -195,18 +195,18 @@ The `ignore:` is an ignore rule in the form of:
 ```
 ignore:
   snyk-vulnid:
-    - path to library using > seperator :
+    - path to library using > separator :
         reason: 'text string'
-        expires: 'datetime string'
+        expires: 'YYYY-MM-DDThh:mm:ss.fffZ'
 ```
 
 The `patch`: is in the form of:
 
 ```
 'npm:library:yyyymmdd’ :
-  - path to library using > seperator:
+  - path to library using > separator:
     patched: 'datetime string'
-  - path to library using > seperator > to > another > path:
-    patched: 'datetime string'
+  - path to library using > separator > to > another > path:
+    patched: 'YYYY-MM-DDThh:mm:ss.fffZ'
 ```
 
