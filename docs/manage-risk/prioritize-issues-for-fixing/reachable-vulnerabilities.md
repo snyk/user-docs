@@ -102,7 +102,7 @@ Snyk uses a combination of security expert analysis, program analysis, and vario
 4. **Reachability analysis** -  As issues are found in your application by a Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.&#x20;
 5. **Security experts supervision** - Snyk security experts will manually verify and mark elements as root causes in order to make the entire analysis more accurate over time
 
-The following considerations related to **false positives and false negatives** apply to Reachble vulnerability analysis.&#x20;
+The following considerations related to **false positives and false negatives** apply to Reachable vulnerability analysis.&#x20;
 
 Program analysis requires a trade-off between accurate results (minimizing false positives) and recall rates (not missing potentially exploitable vulnerabilities).&#x20;
 
