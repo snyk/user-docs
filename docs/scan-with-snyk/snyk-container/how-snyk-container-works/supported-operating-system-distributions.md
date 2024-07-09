@@ -1,29 +1,21 @@
 # Snyk Container - Supported operating system distributions
 
-{% hint style="info" %}
-For information on the environments supported with other Snyk products, see:
+Snyk detects vulnerabilities in images based on operating systems listed on this page along with the specific versions that are supported. For the latest updates, see [Snyk updates](https://updates.snyk.io).
 
-* [Snyk Open Source - supported languages and package managers](../../../supported-languages-package-managers-and-frameworks/#open-source-and-licensing-snyk-open-source)
-* [Snyk Code - Supported languages and frameworks](../../../supported-languages-package-managers-and-frameworks/#code-analysis-snyk-code)
-* [Snyk IaC and Cloud - Supported providers](../../snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/)
-{% endhint %}
-
-If you use an unsupported distribution, for example, that has reached its End-of-life (EOL) and is no longer being maintained, Snyk displays a message to tell you this is unsupported.
+If you use an unsupported distribution, for example, one that has reached its end of life (EOL) and is no longer being maintained, Snyk displays a message to tell you the distribution is unsupported. Due to a lack of security updates for unsupported distributions, it is possible that you will not receive notifications about vulnerabilities. However, it does not mean that your image is secure.
 
 {% hint style="info" %}
-Due to a lack of security updates, for unsupported distributions, it is possible that you do not receive notifications about vulnerabilities. However, it does not mean that your image is secure.
+Snyk also supports images using packages from these distributions, but without the associated package manager, such as Distroless images.
 {% endhint %}
 
-## Supported Linux distributions
+This is the list of supported operating systems and distributions:
 
-Snyk Container supports the following operating system distributions:
-
-### [AlmaLinux](https://almalinux.org/)
+## [AlmaLinux](https://almalinux.org/)
 
 * AlmaLinux 9
 * AlmaLinux 8
 
-### [Alpine Linux](https://www.alpinelinux.org/)
+## [Alpine Linux](https://www.alpinelinux.org/)
 
 * Alpine Linux 3.20
 * Alpine Linux 3.19
@@ -45,29 +37,29 @@ Snyk Container supports the following operating system distributions:
 * Alpine Linux 3.3
 * Alpine Linux 3.2
 
-### [Amazon Linux](https://aws.amazon.com/linux/)
+## [Amazon Linux](https://aws.amazon.com/linux/)
 
 * Amazon Linux 2023
 * Amazon Linux 2022
 * Amazon Linux 2
 * Amazon AMI 2018.03
 
-### [CentOS Linux](https://www.centos.org/centos-linux/)
+## [CentOS Linux](https://www.centos.org/centos-linux/)
 
 * CentOS Linux 8
 * CentOS Linux 7
 * CentOS Linux 6
 
-### [CentOS Stream](https://www.centos.org/centos-stream/)
+## [CentOS Stream](https://www.centos.org/centos-stream/)
 
 * CentOS Linux 9
 * CentOS Linux 8
 
-### [Chainguard](https://www.chainguard.dev/)
+## [Chainguard](https://www.chainguard.dev/)
 
 * Any
 
-### [Debian](https://www.debian.org/)
+## [Debian](https://www.debian.org/)
 
 * Unstable - Sid
 * Debian 13 - Trixie
@@ -77,7 +69,7 @@ Snyk Container supports the following operating system distributions:
 * Debian 9 - Stretch
 * Debian 8 - Jessie
 
-### [Oracle Linux](https://www.oracle.com/linux/)
+## [Oracle Linux](https://www.oracle.com/linux/)
 
 * Oracle Linux 9
 * Oracle Linux 8
@@ -85,25 +77,25 @@ Snyk Container supports the following operating system distributions:
 * Oracle Linux 6
 * Oracle Linux 5
 
-### [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/technologies/linux-platforms/enterprise-linux)
+## [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/technologies/linux-platforms/enterprise-linux)
 
 * Red Hat Enterprise Linux 9
 * Red Hat Enterprise Linux 8
 * Red Hat Enterprise Linux 7
 * Red Hat Enterprise Linux 6
 
-### [Rocky Linux](https://rockylinux.org/)
+## [Rocky Linux](https://rockylinux.org/)
 
 * Rocky Linux 9
 * Rocky Linux 8
 
-### [SUSE Linux Enterprise Server (SLES)](https://www.suse.com/products/server/)
+## [SUSE Linux Enterprise Server (SLES)](https://www.suse.com/products/server/)
 
 * SUSE Linux Enterprise Server 15.2
 * SUSE Linux Enterprise Server 15.1
 * SUSE Linux Enterprise Server 15.0
 
-### [Ubuntu](https://ubuntu.com/)
+## [Ubuntu](https://ubuntu.com/)
 
 * Ubuntu 24.04 - Noble Numbat
 * Ubuntu 23.10 - Mantic Minotaur
@@ -129,7 +121,7 @@ Snyk Container supports the following operating system distributions:
 * Ubuntu 13.04 - Raring Ringtail&#x20;
 * Ubuntu 12.10 - Quantal Quetzal
 
-### [Wolfi](https://github.com/wolfi-dev)
+## [Wolfi](https://github.com/wolfi-dev)
 
 * Any&#x20;
 

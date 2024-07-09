@@ -1,13 +1,13 @@
 # How Snyk Container works
 
-## Container image scans
+## Container images
 
 As defined by the [Open Container Initiative](https://opencontainers.org) (OCI) specifications, container images comprise a layered file system and associated metadata.
 
 Container images often include several layers containing third-party software from:
 
-* Operating system distributions, such as Debian, Ubuntu, or CentOS
-* Application package managers, such as npm, pip, and RubyGems.
+* Operating system distributions, such as Debian, Ubuntu, or CentOS. For details see [Snyk Container - Supported operating system distributions.](supported-operating-system-distributions.md)
+* Application package managers, such as npm, pip, and RubyGems
 
 ## What Snyk Container detects
 
@@ -15,42 +15,19 @@ When Snyk Container tests an image using any of the available integrations, Snyk
 
 * dpkg, rpm, and apk operating systems packages
 * Popular unmanaged software (installed outside a package manager)
-* Application packages that are based on the presence of a manifest file.
+* Application packages that are based on the presence of a manifest file
 
 {% hint style="info" %}
-To determine the final filesystem, Snyk does not squash the layers of the container image into one. It scans for supported application package manifest files in each intermediate layer of the container image, even when those files are deleted by a subsequent layer.
+To determine the final filesystem, Snyk does not squash the layers of the container image into one. Snyk scans for supported application package manifest files in each intermediate layer of the container image, even when those files are deleted by a subsequent layer.
 {% endhint %}
 
 Because Snyk reads the information from the file system, the container does not need to be run. This means that for a successful scan, no container or foreign code must be run.
 
-After Snyk has the list of installed software, Snyk looks that up against the Snyk Vulnerability Database, which combines public sources with proprietary research.
+After Snyk has the list of installed software, Snyk looks that up in the Snyk Vulnerability Database, which combines public sources with proprietary research.
 
 {% hint style="warning" %}
 Snyk supports testing OCI compliant and Docker v2 compliant images but does not support images that combine both OCI and Docker v2 standards into a single archive.
 {% endhint %}
-
-## Operating systems supported by Snyk Container
-
-Snyk detects vulnerabilities in images based on the following operating systems:
-
-* AlmaLinux
-* Alpine Linux
-* Amazon Linux
-* CentOS Linux & CentOS Stream
-* Chainguard
-* Debian
-* Oracle Linux
-* Red Hat Enterprise Linux (RHEL), including Universal Base Image (UBI)
-* Rocky Linux
-* SUSE Linux Enterprise Server (SLES)
-* Ubuntu
-* Wolfi
-
-{% hint style="info" %}
-Snyk also supports images using packages from these distributions, but without the associated package manager, such as Distroless images.
-{% endhint %}
-
-For specific version support, see [supported operating system distributions](supported-operating-system-distributions.md). For the latest updates, see [Snyk updates](https://updates.snyk.io).
 
 ## Official advisory resources used by Snyk Container
 
@@ -65,7 +42,7 @@ Some software components from upstream providers are not installed using a packa
 
 ## Recurring container image scans
 
-Snyk continuously discloses new vulnerabilities. Snyk can alert you to new vulnerabilities in your image as they are announced, even when your image software installed has not changed.
+Snyk continuously discloses new vulnerabilities. Snyk can alert you to new vulnerabilities in your image as they are announced, even when your installed image software has not changed.
 
 If you use an integration that saves a snapshot of the installed software on Snyk’s service and the image has not changed, Snyk Container automatically rescans without accessing the image, alerting you to new vulnerabilities.
 
