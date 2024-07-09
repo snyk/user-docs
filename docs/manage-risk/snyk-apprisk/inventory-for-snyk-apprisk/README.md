@@ -12,10 +12,10 @@ Each line in the inventory represents either a repository asset or a scanned art
 
 To get better context and clarity over your asset inventory, Snyk AppRisk allows flexible structuring with inventory layouts. Snyk AppRisk includes four inventory layouts and groups assets by different contexts. You can find all inventory layouts under the Inventory menu option at the Group level:&#x20;
 
-* **Code Assets**: A hierarchical list of all assets.&#x20;
-* **Organization Teams**: SCM repository assets grouped by teams. Note that only SCM organizations with teams, and repositories assigned to a team, appear on this layout.
+* **All Assets**: All the discovered assets, grouped by their type.&#x20;
+* **Asset Hierarchy**: A hierarchical list of all assets.&#x20;
+* **Teams**: SCM repository assets grouped by teams. Note that only SCM organizations with teams, and repositories assigned to a team, appear on this layout.
 * **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk AppRisk.
-* **Type**: All the discovered assets, grouped by their type.&#x20;
 
 Each inventory layout may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
 
@@ -52,6 +52,7 @@ You can filter the information for all the inventory layouts and can use the fol
 * **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
 * **Locked attributes** - specify if the attribute value is locked.
 * **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
+* **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **Runtime discovered** - specify the period when the runtime image asset was discovered.
 * **Runtime last seen** - specify the freshness status for the runtime image asset.
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
@@ -64,7 +65,11 @@ You can filter the information for all the inventory layouts and can use the fol
 
 **\***All filters marked with `*` are visible only to the users who configured the Backstage catalog for their SCM integrations.
 
-<figure><img src="../../../.gitbook/assets/Inventory view-new UI.png" alt="Snyk AppRisk - Inventory layouts"><figcaption><p>Snyk AppRisk - Inventory layouts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (497).png" alt="Snyk AppRisk - Inventory layouts"><figcaption><p>Snyk AppRisk - Inventory layouts</p></figcaption></figure>
+
+{% hint style="info" %}
+After you apply the filters, the assets list will only display the assets that directly match the filter conditions.
+{% endhint %}
 
 ## Assets and their attributes
 

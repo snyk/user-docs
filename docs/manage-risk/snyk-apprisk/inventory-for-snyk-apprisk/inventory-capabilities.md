@@ -26,8 +26,6 @@ The Asset column incorporates the name of the repository asset, package, scanned
 
 You can copy the name of an asset or browse the repository. Each asset has a menu at the end of the row. Click the menu, then select **Copy** to copy the URL or **Browse** to navigate to the asset repository.
 
-<figure><img src="../../../.gitbook/assets/Asset options - New UI.png" alt="AppRisk - Asset options"><figcaption><p>Snyk AppRisk - Asset options</p></figcaption></figure>
-
 ### Repository assets
 
 Repository assets represent SCM repositories. A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository (in Snyk, this means filling in the `gitRemoteURL` parameter).
@@ -66,12 +64,21 @@ The asset information is divided into the following tabs:
     * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
   * Issues Info - categorizes the identified types of open issues.&#x20;
   * App Context - asset metadata from App Context integrations, such as Backstage catalog or ServiceNow CMDB, can include the following attributes: catalog name, category, application, owner, and so on.
+  * Related assets - a list of assets related to the selected one.
 
-<figure><img src="../../../.gitbook/assets/image (442) (1).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+{% hint style="info" %}
+After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (493).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+
+You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Package Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
+
+<figure><img src="../../../.gitbook/assets/image (494).png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view of a children asset</p></figcaption></figure>
 
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-<figure><img src="../../../.gitbook/assets/Asset Attributes with Issues.png" alt="AppRisk - Assets Attributes window"><figcaption><p>Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (498).png" alt="Snyk AppRisk - Assets Attributes window"><figcaption><p>Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
 
 ## Issues
 
@@ -111,7 +118,7 @@ The Controls logos can have one of the following states:
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Controls with Issues count.png" alt="AppRisk - Controls"><figcaption><p>Snyk AppRisk - Controls</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Snyk AppRisk - Controls</p></figcaption></figure>
 
 ## **Tags**
 
@@ -131,7 +138,7 @@ A system-generated tag includes the following information:
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
 
-<figure><img src="../../../.gitbook/assets/Asset tags - new UI.png" alt="AppRisk - Tags"><figcaption><p>Snyk AppRisk - Tags</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (500).png" alt="Snyk AppRisk - Tags"><figcaption><p>Snyk AppRisk - Tags</p></figcaption></figure>
 
 ### Tag rules overview
 
@@ -186,8 +193,6 @@ System tags are automatically generated from the SCM repositories. System tags c
 
 You can see the list of all developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
 
-<figure><img src="../../../.gitbook/assets/Asset devs- New UI.png" alt="AppRisk - Developers"><figcaption><p>AppRisk - Developers</p></figcaption></figure>
-
 ## **Class**
 
 Reflects the business criticality of the asset from A (most critical) to D (least critical), as you defined it in the Policies view.&#x20;
@@ -196,7 +201,7 @@ You can manually change the business criticality of an asset. Click the critical
 
 After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A popup is displayed, asking you for confirmation about unlocking the value.
 
-<figure><img src="../../../.gitbook/assets/Class - New UI.png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk AppRisk - Lock the value of a class</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (501).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk AppRisk - Lock the value of a class</p></figcaption></figure>
 
 The Asset Class column is also available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 
@@ -205,8 +210,6 @@ The synchronization between Asset Class and the Insights UI can take up to 3 hou
 {% endhint %}
 
 The class value can be auto-generated with policies. You just need to create a policy that has as an action **Set Asset Class**.
-
-<figure><img src="../../../.gitbook/assets/Class2 - New UI.png" alt="AppRisk - Class"><figcaption><p>Snyk AppRisk - Class</p></figcaption></figure>
 
 ## Source
 

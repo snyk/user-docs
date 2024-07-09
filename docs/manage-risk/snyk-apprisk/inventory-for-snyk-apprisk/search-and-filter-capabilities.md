@@ -16,7 +16,7 @@ Click Filters from the top left side of the screen. A pop-up is displayed allowi
 * **Condition** depends on the asset selected (such as `contains` or `does not contain` for `asset name`).
 * **Value** depends on the Property and Condition.
 
-<figure><img src="../../../.gitbook/assets/Filters - new UI.png" alt="AppRisk - Filters"><figcaption><p>Snyk AppRisk - Filters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (502).png" alt="Snyk AppRisk - Filters"><figcaption><p>Snyk AppRisk - Filters</p></figcaption></figure>
 
 You can add as many filters as needed. To add another filter click **Add Filter,** set the condition as **And** or **Or** and customize the **Property**, **Condition**, and **Value** fields.&#x20;
 
@@ -78,3 +78,6 @@ Each filter component requires you to specify an asset property. Available prope
 * **Title\*** - represents the name of the component for which the backstage catalog was configured.
 
 **\***All filters marked with `*` are visible only to the users who configured the Backstage catalog for their SCM integrations.
+
+After applying the filters, the asset list will display only the assets that match the specified conditions, without a hierarchical structure.
+
