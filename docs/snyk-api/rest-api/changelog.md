@@ -1,38 +1,38 @@
 ## 2024-06-21 - Updated 2024-06-27
 
 ### POST - `/orgs/{org_id}/collections` - Updated
-- the `data/attributes/name` response property`s maxLength was unset from `255` for the response status `201`
+- the `data/attributes/name` response property's maxLength was unset from `255` for the response status `201`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the `data/attributes/name` response property`s minLength was decreased from `1` to `0` for the response status `201`
+- the `data/attributes/name` response property's minLength was decreased from `1` to `0` for the response status `201`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the `data/attributes/name` response`s property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `201`
+- the `data/attributes/name` response's property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `201`
 
 
 
 ### GET - `/orgs/{org_id}/collections` - Updated
-- the `data/items/attributes/name` response property`s maxLength was unset from `255` for the response status `200`
+- the `data/items/attributes/name` response property's maxLength was unset from `255` for the response status `200`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the `data/items/attributes/name` response property`s minLength was decreased from `1` to `0` for the response status `200`
+- the `data/items/attributes/name` response property's minLength was decreased from `1` to `0` for the response status `200`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the `data/items/attributes/name` response`s property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `200`
+- the `data/items/attributes/name` response's property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `200`
 
 
 
 ### PATCH - `/orgs/{org_id}/collections/{collection_id}` - Updated
-- the `data/attributes/name` response property`s maxLength was unset from `255` for the response status `200`
+- the `data/attributes/name` response property's maxLength was unset from `255` for the response status `200`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the `data/attributes/name` response property`s minLength was decreased from `1` to `0` for the response status `200`
+- the `data/attributes/name` response property's minLength was decreased from `1` to `0` for the response status `200`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the `data/attributes/name` response`s property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `200`
+- the `data/attributes/name` response's property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `200`
 
 
 
 ### GET - `/orgs/{org_id}/collections/{collection_id}` - Updated
-- the `data/attributes/name` response property`s maxLength was unset from `255` for the response status `200`
+- the `data/attributes/name` response property's maxLength was unset from `255` for the response status `200`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the `data/attributes/name` response property`s minLength was decreased from `1` to `0` for the response status `200`
+- the `data/attributes/name` response property's minLength was decreased from `1` to `0` for the response status `200`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
-- the `data/attributes/name` response`s property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `200`
+- the `data/attributes/name` response's property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `200`
 
 
 ## 2024-06-21 - Updated 2024-06-25
@@ -52,7 +52,7 @@
 
 - removed the pattern `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$` from the request property `data/type`
 
-- the `data/type` response`s property pattern `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$` was removed for the status `200`
+- the `data/type` response's property pattern `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$` was removed for the status `200`
 
 
 ## 2024-06-21
