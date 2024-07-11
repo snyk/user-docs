@@ -5,7 +5,7 @@
 Snowflake Data Share is in [Closed Beta](https://docs.snyk.io/getting-started/snyk-release-process#closed-beta) and available only for customers:
 
 * Under the Enterprise plan. For more information, see [Plans and pricing](https://snyk.io/plans).
-* With the Enterprise Plus package. For more information, contact your Snyk Account Executive.
+* For more information, contact your Snyk Account Executive.
 * With an active Snowflake account.
 
 Customers can try the integration for a 60-day beta period starting from their initial access date. For access beyond 60 days, the customer is expected to be on the Enterprise Plus SKU. During beta, the data share will be limited to a capacity of 10 million records per share.&#x20;
@@ -39,7 +39,7 @@ Snyk Snowflake Data Share can be used for various use cases and can answer count
   Measure the performance of fix behaviour against SLA. For example, enter customer SLA targets and track towards those goals.\
   Build custom prevention reporting to understand shift left impact. For example, view trends in preventable Open Source vulnerabilities across all Snyk Groups, filtered by specific severities and risk scores.
 
-## Getting Started <a href="#getting-started" id="getting-started"></a>
+## Getting started <a href="#getting-started" id="getting-started"></a>
 
 ### Request a Snowflake Data Share access <a href="#request-a-snowflake-data-share-access" id="request-a-snowflake-data-share-access"></a>
 
@@ -68,15 +68,15 @@ To get access and be able to query the data share, follow the steps below to cre
    **Note:** it can take about ten minutes for the data to be provisioned and ready to use, depending on your cloud region
 3. [Grant privileges to the shared database](https://docs.snowflake.com/en/user-guide/data-share-consumers#granting-privileges-on-a-shared-database).
 
-## Data Policy <a href="#data-policy" id="data-policy"></a>
+## Data policy <a href="#data-policy" id="data-policy"></a>
 
-### Data Scope and Accessibility <a href="#data-freshness" id="data-freshness"></a>
+### Data scope and accessibility <a href="#data-freshness" id="data-freshness"></a>
 
 * Snyk Snowflake Data Share is scoped to the data of a requested set of Snyk Groups. A customer can request access to all Snyk groups or to specific ones.&#x20;
 * Snyk shares all the data that is available for the requested Snyk Groups as exists in the Snyk database, with no additional limitations in the data share itself.
 * The data share itself is provided as a read-only database and is accessible according to Snowflake standard role-based access control.
 
-### Supported Data <a href="#supported-data" id="supported-data"></a>
+### Supported data <a href="#supported-data" id="supported-data"></a>
 
 Snyk Data Share focuses on issues data. \
 There are over 50 fields available to query, including:&#x20;
@@ -98,6 +98,6 @@ To reach the same figures as presented in Snyk reports, select only issues with:
 * IS\_PROJECT\_MONITORED = TRUE
 {% endhint %}
 
-### Data Freshness <a href="#data-freshness" id="data-freshness"></a>
+### Data freshness <a href="#data-freshness" id="data-freshness"></a>
 
 The data available within the share refreshes within approximately two hours. This process occurs automatically and doesn't require any action from the customer's end.
