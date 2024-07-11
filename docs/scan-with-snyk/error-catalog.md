@@ -364,6 +364,19 @@ Snyk was unable to find supported files.
 - [https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code](https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code)
 
 ---
+# Integration
+### [SNYK-INTEGRATION-0001](#snyk-integration-0001)
+
+#### SCM integration not found
+
+Ensure your SCM integration exists and that it is correctly set up.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+**Help Links:**
+- [https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations](https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations)
+
+---
 # OpenAPI
 ### [SNYK-OPENAPI-0001](#snyk-openapi-0001)
 
@@ -2091,4 +2104,90 @@ Could not render default PR template.
 **Help Links:**
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
---- Generated at 2024-07-09T17:34:56.512Z
+---
+# SCM
+### [SNYK-SCM-0001](#snyk-scm-0001)
+
+#### Integration type not supported
+
+The integration you provided does not support SCM repository access.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+**Help Links:**
+- [https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations](https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations)
+
+### [SNYK-SCM-0002](#snyk-scm-0002)
+
+#### Revision cannot be resolved
+
+Snyk was unable to resolve the SCM revision you provided. Provide a valid revision, either a full commit ID or an existing commit reference.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-SCM-0003](#snyk-scm-0003)
+
+#### Integration authentication failed
+
+Snyk was unable to authenticate with your SCM provider. Ensure you are using valid credentials for the Snyk integration.
+
+**HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+
+### [SNYK-SCM-0004](#snyk-scm-0004)
+
+#### Integration authorization failed
+
+Snyk was unable to authorize with your SCM provider. If your Organization has SAML SSO enabled or enforced, re-authorize the OAuth Application `Snyk`.
+
+**HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+
+### [SNYK-SCM-0005](#snyk-scm-0005)
+
+#### Too many files
+
+Snyk was unable to retrieve the repository because the overall file count exceeds the limit of 40000.
+
+To reduce the file count, use a `.snyk` file to ignore certain directories or files. Alternatively, analyze individual work subdirectories separately.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-SCM-0006](#snyk-scm-0006)
+
+#### Repository size too large
+
+Snyk was unable to retrieve the repository because the size of the repository exceeds 15 GB.
+
+To reduce the overall size of the repository, use a a `.snyk` file to ignore certain directories or files. Alternatively, analyze individual work subdirectories separately.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+---
+# Target
+### [SNYK-TARGET-0001](#snyk-target-0001)
+
+#### Target not found
+
+Snyk was unable to resolve the imported target. Ensure that Snyk created the target and try again.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
+
+### [SNYK-TARGET-0002](#snyk-target-0002)
+
+#### No unique target found
+
+Snyk was unable to resolve a single target. Snyk found multiple targets configured for the same integration and repository URL pair. Ensure a unique target exists.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
+
+--- Generated at 2024-07-11T12:55:19.990Z
