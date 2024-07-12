@@ -50,7 +50,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## Key Concepts
 
-**Asset**: An asset is an identifiable entity that is part of an application, and relevant for security and developers.&#x20;
+**Asset**: meaningful, real-world components in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages) and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term).
 
 **Controls**: The security controls associated with the asset. Navigate to the [Coverage controls](policies-for-snyk-apprisk/use-cases-for-policies/coverage-control-policy-use-case.md) section to see all available statuses for security controls.
 
