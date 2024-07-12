@@ -1724,6 +1724,15 @@ The given Package URL does not contain a supported vendor. Please use one of the
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
+### [SNYK-OSSI-2048](#snyk-ossi-2048)
+
+#### Unsupported Alpine distro
+
+This Alpine distro is currently not supported.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
 ---
 # Open Source Project Issues
 ### [SNYK-OSSI-OSPI-1001](#snyk-ossi-ospi-1001)
@@ -2190,4 +2199,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-07-11T12:55:19.990Z
+--- Generated at 2024-07-12T10:41:11.444Z
