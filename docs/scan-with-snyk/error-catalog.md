@@ -2132,7 +2132,7 @@ The integration you provided does not support SCM repository access.
 
 Snyk was unable to resolve the SCM revision you provided. Provide a valid revision, either a full commit ID or an existing commit reference.
 
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
 ### [SNYK-SCM-0003](#snyk-scm-0003)
@@ -2199,4 +2199,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-07-12T10:41:11.444Z
+--- Generated at 2024-07-12T13:55:30.081Z
