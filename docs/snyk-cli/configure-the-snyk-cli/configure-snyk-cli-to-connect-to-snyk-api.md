@@ -1,6 +1,6 @@
 # Configure Snyk CLI to connect to Snyk API
 
-By default, the Snyk CLI connects to `https://snyk.io/api`. You can use the following variables to configure your connection.
+By default, the Snyk CLI connects to `https://api.snyk.io/`. You can use the following variables to configure your connection.
 
 `SNYK_API`
 

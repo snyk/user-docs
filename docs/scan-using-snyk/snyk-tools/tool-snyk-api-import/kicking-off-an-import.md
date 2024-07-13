@@ -158,7 +158,7 @@ If you have any tests or fixtures that should be ignored, please set the `exclus
 * `SNYK_TOKEN` - your [Snyk api token](https://app.snyk.io/account)
 * `SNYK_LOG_PATH` - the path to folder where all logs should be saved. Snyk recommends creating a dedicated logs folder for each import you have running. Note: all logs will be appended.
 * `CONCURRENT_IMPORTS` (optional) - defaults to 15 repos at a time, which is the recommended amount to import at once as a maximum. Just one repo may have many projects inside which can trigger many files at once to be requested from the user's SCM instance and some may have rate limiting in place. This script aims to help reduce the risk of hitting a rate limit.
-* `SNYK_API` (optional) defaults to `https://snyk.io/api/v1`
+* `SNYK_API` (optional) defaults to `https://api.snyk.io/v1`
 
 ## 3. Download and run
 

@@ -7,7 +7,7 @@ The API requires that you provide the Snyk organization ID, the Snyk authenticat
 An example request follows. You can use your favorite tool to send the request.
 
 ```
-POST https://snyk.io/api/v1/org/{SNYK-ORG-ID}/webhooks HTTP/2
+POST https://api.snyk.io/v1/org/{SNYK-ORG-ID}/webhooks HTTP/2
 Host: snyk.io
 Authorization: token {SNYK-TOKEN}
 Content-Type: application/json
@@ -30,7 +30,7 @@ The response is like this:
 You can then use the [Ping a webhook API](https://snyk.docs.apiary.io/#reference/webhooks/ping/ping-a-webhook) to pro-actively trigger the Snyk Webhook in order to test your integration:
 
 ```
-POST https://snyk.io/api/v1/org/{SNYK-ORG-ID}/webhooks/{SNYK-WEBHOOK-ID}/ping HTTP/2
+POST https://api.snyk.io/v1/org/{SNYK-ORG-ID}/webhooks/{SNYK-WEBHOOK-ID}/ping HTTP/2
 Host: snyk.io
 Authorization: token {SNYK-TOKEN}
 Content-Type: application/json

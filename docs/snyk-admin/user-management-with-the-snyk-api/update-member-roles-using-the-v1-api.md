@@ -6,7 +6,7 @@ Snyk recommends running these updates with bounded concurrency in batches so as 
 
 ## Step 1: Get a list of roles in your Group
 
-**Request**: `GET https://snyk.io/api/v1/group/{groupId}/roles`
+**Request**: `GET https://api.snyk.io/v1/group/{groupId}/roles`
 
 **API documentation:** [https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group)
 
@@ -14,7 +14,7 @@ This call returns an array of objects, each describing custom and non-custom (fo
 
 ## Step 2: Get a list of Organization members
 
-**Request**: `GET https://snyk.io/api/v1/org/{orgId}/members`
+**Request**: `GET https://api.snyk.io/v1/org/{orgId}/members`
 
 **API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members](https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members)
 
@@ -27,7 +27,7 @@ Service accounts are not returned by the List members endpoint. You must get the
 
 ## Step 3: Update the role of users
 
-**Request**: `PUT https://snyk.io/api/v1/org/{orgId}/members/update/{userId}`
+**Request**: `PUT https://api.snyk.io/v1/org/{orgId}/members/update/{userId}`
 
 **API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization](https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization)
 

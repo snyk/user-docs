@@ -6,8 +6,8 @@ The `paths` endpoints provide details of the paths through which an issue has be
 
 **Requests** to the `paths` endpoint are `GET` requests. The endpoint is available at the following URLs:
 
-* `https://snyk.io/api/v1/org/<orgId>/project/<projectId>/issue/<issueId>/paths` This returns the paths for an issue in the most recent test of the project.
-* `https://snyk.io/api/v1/org/<orgId>/project/<projectId>/history/<snapshotId>/issue/<issueId>/paths` This returns the paths for an issue in a specific test of the project.
+* `https://api.snyk.io/v1/org/<orgId>/project/<projectId>/issue/<issueId>/paths` This returns the paths for an issue in the most recent test of the project.
+* `https://api.snyk.io/v1/org/<orgId>/project/<projectId>/history/<snapshotId>/issue/<issueId>/paths` This returns the paths for an issue in a specific test of the project.
 
 Both paths can take a query string allowing for pagination, for example,`?page=2&perPage=500`.
 

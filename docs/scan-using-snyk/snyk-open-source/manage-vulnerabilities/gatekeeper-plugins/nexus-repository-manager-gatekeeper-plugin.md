@@ -24,7 +24,7 @@ Nexus transmits the package name and version to the test endpoint at the Snyk AP
 
 If the Nexus installation is configured to use a proxy, Snyk will automatically use it too. Potentially, there could be an issue if the proxy is an authenticated or Kerberos proxy, but a standard, unauthenticated, forwarding proxy should work if the Nexus installation and its underlying JVM are configured correctly with a proxy.
 
-Snyk calls [`https://snyk.io/api/v1/test`](https://snyk.io/api/v1/test) for the right packager manager with the right name and version.
+Snyk calls [`https://api.snyk.io/v1/test`](https://api.snyk.io/v1/test) for the right packager manager with the right name and version.
 
 ## **How the Nexus Repository Manager Gatekeeper Plugin works**
 

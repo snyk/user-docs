@@ -91,7 +91,7 @@ As part of the [Initialize message](https://microsoft.github.io/language-server-
   "additionalEnv":  "MAVEN_OPTS=-Djava.awt.headless=true;FOO=BAR", // Additional environment variables, separated by semicolons
   "path": "/usr/local/bin", // Adds to the system path used by the CLI
   "sendErrorReports":  "true", // Whether or not to report errors to Snyk - defaults to true
-  "organization": "a string", // The name of your organization, e.g. the output of: curl -H "Authorization: token $(snyk config get api)"  https://snyk.io/api/cli-config/settings/sast | jq .org
+  "organization": "a string", // The name of your organization, e.g. the output of: curl -H "Authorization: token $(snyk config get api)"  https://api.snyk.io/v1/cli-config/settings/sast | jq .org
   "enableTelemetry":  "true", // Whether or not user analytics can be tracked
   "manageBinariesAutomatically": "true", // Whether or not CLI/LS binaries will be downloaded & updated automatically
   "cliPath":  "/a/patch/snyk-cli", // The path where the CLI can be found, or where it should be downloaded to

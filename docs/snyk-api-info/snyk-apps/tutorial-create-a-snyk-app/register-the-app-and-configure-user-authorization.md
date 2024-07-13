@@ -17,14 +17,14 @@ We've made some good progress with our TypeScript application so far, but at the
 There are two methods for retrieving an `orgid`. The first is to log in to your Snyk account and visit the organization settings page of the Organization for which you wish to retrieve the ID. The path to the Organization settings page is:
 
 ```
-https://snyk.io/org/{your-org-name}/manage/settings
+https://app.snyk.io/org/{your-org-name}/manage/settings
 ```
 
-Alternatively, you may retrieve an Organization's `orgid` using the `https://snyk.io/api/v1/orgs` API endpoint, using your API token in the authorization header. For details about this endpoint, view its [documentation](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to).
+Alternatively, you may retrieve an Organization's `orgid` using the `https://api.snyk.io/v1/orgs` API endpoint, using your API token in the authorization header. For details about this endpoint, view its [documentation](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to).
 
 ### About Snyk Apps and the Snyk API
 
-Snyk Apps have first-class access to the API, regardless of whether users installing the App have paid for access or not. To take advantage of this feature, Apps must use API endpoints with the domain `https://api.snyk.io/`rather than the conventional `https://snyk.io/api/`, when accessing the API within the App.
+Snyk Apps have first-class access to the API, regardless of whether users installing the App have paid for access or not. To take advantage of this feature, Apps must use API endpoints with the domain `https://api.snyk.io/`rather than the deprecated `https://snyk.io/api/`, when accessing the API within the App.
 
 ### Registering our app with Snyk
 

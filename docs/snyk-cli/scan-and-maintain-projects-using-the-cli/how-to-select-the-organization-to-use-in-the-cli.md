@@ -6,7 +6,7 @@ When you run commands with the CLI such as `snyk monitor` and `snyk test`, Snyk 
 
 ## Specify an organization globally
 
-Run `snyk config set org=orgslugname`. Note: `orgslugname` must match the slug name as displayed in the URL of your org in the Snyk UI: `https://snyk.io/org/[orgslugname]`.
+Run `snyk config set org=orgslugname`. Note: `orgslugname` must match the slug name as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 
 ## Specify an organization individually
 
