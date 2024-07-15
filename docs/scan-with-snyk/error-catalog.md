@@ -285,6 +285,28 @@ The provided versioning schema is invalid and image could therefor not be create
 
 
 ---
+# CLI
+### [SNYK-CLI-0001](#snyk-cli-0001)
+
+#### Unable to set environment
+
+The specified environment cannot be used. As a result, the configuration remains unchanged.Provide the correct specifications for the environment and try again.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+
+### [SNYK-OS-7001](#snyk-os-7001)
+
+#### Request to Snyk API timeout
+
+A request to the Snyk API has unexpectedly timeout. Check Snyk status, then try again.
+
+**HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
+
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
+
+---
 # Code
 ### [SNYK-CODE-0001](#snyk-code-0001)
 
@@ -1390,19 +1412,6 @@ Make sure to use the correct python version in the requires section of the Pipfi
 
 
 ---
-# CLI
-### [SNYK-OS-7001](#snyk-os-7001)
-
-#### Request to Snyk API timeout
-
-A request to the Snyk API has unexpectedly timeout. Check Snyk status, then try again.
-
-**HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
-
-**Help Links:**
-- [https://status.snyk.io/](https://status.snyk.io/)
-
----
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001)
 
@@ -2199,4 +2208,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-07-12T13:55:30.081Z
+--- Generated at 2024-07-15T11:09:21.205Z
