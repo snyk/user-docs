@@ -22,9 +22,9 @@ Yarn and npm workspaces are not explicitly supported in Snyk git repository inte
 
 Root-level `package.json`manifest files with adjacent lockfiles will be scanned as normal.&#x20;
 
-For nested manifest files with no lockfiles Snyk will approximate what the dependency tree will look like at build time without using the root lockfile.&#x20;
+For nested manifest files with no lockfiles, Snyk will approximate what the dependency tree will look like at build time without using the root lockfile.&#x20;
 
-Fix PRs are also unsupported for nested manifest files with no lockfiles.
+In addition, Fix PRs are not supported for nested manifest files with no lockfiles.
 
 ## Fix PRs and npm save-prefix
 
