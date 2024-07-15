@@ -110,4 +110,4 @@ You may need to retest a Project when you set the Dockerfile for an existing pro
 ## Known limitations of CBIR
 
 * When you scan an application image, custom base image recommendations do not appear unless you attach the Dockerfile to the scanned Project.
-* The image's registry is ignored when recommendations are given for custom base images. When showing recommendations and fix PRs, images with the same repository but different registries are treated as coming from the same registry (the current base image's registry).
+* The image registry is ignored when recommendations are given for custom base images. When Snyk shows recommendations and fix PRs, images with the same repository but different registries are treated as coming from the same registry (the current base image's registry).

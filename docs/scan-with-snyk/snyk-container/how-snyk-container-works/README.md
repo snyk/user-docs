@@ -6,7 +6,7 @@ As defined by the [Open Container Initiative](https://opencontainers.org) (OCI) 
 
 Container images often include several layers containing third-party software from:
 
-* Operating system distributions, such as Debian, Ubuntu, or CentOS. For details see [Snyk Container - Supported operating system distributions.](supported-operating-system-distributions.md)
+* Operating system distributions, such as Debian, Ubuntu, or CentOS. For details see [Snyk Container - Supported operating system distributions.](../../../scan-using-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md)
 * Application package managers, such as npm, pip, and RubyGems
 
 ## What Snyk Container detects
@@ -15,10 +15,10 @@ When Snyk Container tests an image using any of the available integrations, Snyk
 
 * dpkg, rpm, and apk operating systems packages
 * Popular unmanaged software (installed outside a package manager)
-* Application packages that are based on the presence of a manifest file
+* Application packages, based on the presence of a manifest file
 
 {% hint style="info" %}
-To determine the final filesystem, Snyk does not squash the layers of the container image into one. Snyk scans for supported application package manifest files in each intermediate layer of the container image, even when those files are deleted by a subsequent layer.
+To determine the final file system, Snyk does not squash the layers of the container image into one. Snyk scans for supported application package manifest files in each intermediate layer of the container image, even when those files are deleted by a subsequent layer.
 {% endhint %}
 
 Because Snyk reads the information from the file system, the container does not need to be run. This means that for a successful scan, no container or foreign code must be run.
@@ -26,7 +26,7 @@ Because Snyk reads the information from the file system, the container does not 
 After Snyk has the list of installed software, Snyk looks that up in the Snyk Vulnerability Database, which combines public sources with proprietary research.
 
 {% hint style="warning" %}
-Snyk supports testing OCI compliant and Docker v2 compliant images but does not support images that combine both OCI and Docker v2 standards into a single archive.
+Snyk supports testing OCI-compliant and Docker v2-compliant images but does not support images that combine both OCI and Docker v2 standards into a single archive.
 {% endhint %}
 
 ## Official advisory resources used by Snyk Container
