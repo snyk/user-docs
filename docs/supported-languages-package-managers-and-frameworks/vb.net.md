@@ -2,7 +2,7 @@
 
 ## VB.NET support <a href="#code-analysis" id="code-analysis"></a>
 
-Snyk for Apex is supported **only for Snyk Code**.
+Snyk for VB.NET is supported **only for Snyk Code**.
 
 **Framework supported**: NuGet
 
