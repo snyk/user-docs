@@ -4,7 +4,7 @@
 This capability is enabled automatically for all customers using the Kubernetes integration and does not require any additional configuration.
 {% endhint %}
 
-All issues in Snyk have a [Priority Score](../../../../../manage-risk/prioritize-issues-for-fixing/priority-score.md). This helps determine the relative importance of vulnerabilities, taking into account both the severity of the issue and various other contextual factors.
+All issues in Snyk have a [Priority Score](../../../../manage-risk/prioritize-issues-for-fixing/priority-score.md). This helps determine the relative importance of vulnerabilities, taking into account both the severity of the issue and various other contextual factors.
 
 Similar to the factors contributing to the Priority Score, images imported from the Kubernetes integration also have a number of additional contributing factors.
 
@@ -12,11 +12,11 @@ Similar to the factors contributing to the Priority Score, images imported from 
 
 The Kubernetes integration collects information about how workloads are configured, focusing on options that can lead to security issues. Snyk displays this summary on the Project page:
 
-![Project configuration details](../../../../../.gitbook/assets/secure\_configuration\_info.png)
+![Project configuration details](../../../../.gitbook/assets/secure\_configuration\_info.png)
 
 To see the factors taken into consideration for the Priority Score of each vulnerability, hover over the score.
 
-![](../../../../../.gitbook/assets/hover\_priority\_score.png)
+![](../../../../.gitbook/assets/hover\_priority\_score.png)
 
 The rationale is based on the fact that a vulnerability that is present in a poorly configured workload scores higher than the same vulnerability found in a well-configured workload.
 

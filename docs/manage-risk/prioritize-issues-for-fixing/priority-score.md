@@ -54,7 +54,7 @@ Snyk continually refines its prioritization algorithm to include new factors, an
 
 Kubernetes container images imported from the Kubernetes integration have a number of additional contributing factors for priority score calculation.
 
-See [Snyk Priority Score and Kubernetes](../../scan-using-snyk/snyk-container/container-security-integrations/integrate-with-kubernetes/kubernetes-integration-ui-explained/kubernetes-and-the-snyk-priority-score.md) for more details.
+See [Snyk Priority Score and Kubernetes](../../scan-using-snyk/snyk-container/kubernetes-integration/kubernetes-integration-ui-explained/kubernetes-and-the-snyk-priority-score.md) for more details.
 
 ### Priority calculation for Snyk Code
 

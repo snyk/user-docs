@@ -40,7 +40,7 @@ Your Snyk Controller now collects data from Sysdig every 30 minutes.&#x20;
 
 To enrich the priority score of vulnerabilities it detects, Snyk uses packages executed at runtime.  This allows Snyk to better prioritize which vulnerabilities to fix first. The priority score is available on both the **Project** page and in the [Snyk public API](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues).
 
-![Packages executed at runtime](<../../../../.gitbook/assets/image (113) (1) (2) (1) (1) (2) (1) (1) (1).png>)
+![Packages executed at runtime](<../../../.gitbook/assets/image (113) (1) (2) (1) (1) (2) (1) (1) (1).png>)
 
 To see which packages have been executed at runtime, you must wait for the next daily scan or manually import the workload into Snyk.
 
@@ -57,4 +57,4 @@ For application vulnerabilities, Snyk currently provides support for the followi
 * JavaScript
 * Go
 
-To see the updated list of supported languages, see [Detect application vulnerabilities in container images](../../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+To see the updated list of supported languages, see [Detect application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).

@@ -79,6 +79,6 @@ For complex environments, modules, and highly templated implementations, utilizi
 
 ### CR (Container Registries)
 
-Snyk also integrates with various [Container Registries](../../../scan-using-snyk/snyk-container/container-security-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
+Snyk also integrates with various [Container Registries](../../../scan-using-snyk/snyk-container/container-registry-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
 
 ###

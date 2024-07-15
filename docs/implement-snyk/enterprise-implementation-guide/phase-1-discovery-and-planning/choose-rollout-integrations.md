@@ -75,8 +75,8 @@ For complex environments, modules, and highly templated implementations, using t
 
 ### CR (Container Registries) integrations
 
-Snyk also integrates with various [Container Registries](../../../scan-using-snyk/snyk-container/container-security-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found, at a frequency you control.
+Snyk also integrates with various [Container Registries](../../../scan-using-snyk/snyk-container/container-registry-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found, at a frequency you control.
 
 ### Kubernetes
 
-Snyk can be configured to monitor workloads deployed to Kubernetes. See [Overview of the Kubernetes integration](../../../scan-using-snyk/snyk-container/container-security-integrations/integrate-with-kubernetes/overview-of-the-kubernetes-integration/) for more information on how to configure the controller.
+Snyk can be configured to monitor workloads deployed to Kubernetes. See [Overview of the Kubernetes integration](../../../scan-using-snyk/snyk-container/kubernetes-integration/overview-of-the-kubernetes-integration/) for more information on how to configure the controller.

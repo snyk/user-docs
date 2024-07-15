@@ -33,7 +33,7 @@ If an image and its corresponding Project are removed, and you reimport the same
 
 ## **The architecture of Snyk and Kubernetes integration**&#x20;
 
-![Kubernetes integration architecture diagram](<../../../../../.gitbook/assets/System Diagram-Kubernetes integration (1).jpg>)
+![Kubernetes integration architecture diagram](<../../../../.gitbook/assets/System Diagram-Kubernetes integration (1).jpg>)
 
 Based on the process exemplified in this diagram:
 
