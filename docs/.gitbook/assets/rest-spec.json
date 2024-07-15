@@ -601,10 +601,12 @@
         "style": "form"
       },
       "OrgId": {
-        "description": "The organization ID of the custom base image",
-        "in": "query",
+        "description": "Unique identifier for org",
+        "in": "path",
         "name": "org_id",
+        "required": true,
         "schema": {
+          "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
           "format": "uuid",
           "type": "string"
         }
@@ -6725,7 +6727,13 @@
             "$ref": "#/components/parameters/ProjectId"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The organization ID of the custom base image",
+            "in": "query",
+            "name": "org_id",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/GroupId"
