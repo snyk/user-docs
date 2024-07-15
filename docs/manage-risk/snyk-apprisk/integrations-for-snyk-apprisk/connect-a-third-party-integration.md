@@ -226,6 +226,8 @@ The following table presents the functionality of all types of Jira integrations
 
 ## Dynatrace setup guide
 
+The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Dynatrace runtime integration: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
+
 ### Prerequisites <a href="#dynatrace-prerequisites" id="dynatrace-prerequisites"></a>
 
 * Use Dynatrace SaaS on the DPS licensing model.
@@ -269,6 +271,8 @@ After the Dynatrace runtime data becomes available from the runtime integration,
 {% endhint %}
 
 ## Sysdig setup guide
+
+The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
 
 ### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
 

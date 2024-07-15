@@ -10,6 +10,8 @@ Contact your salesperson if you are interested in Snyk AppRisk Pro.
 
 The Runtime Sensor watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
 
+The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
+
 ## Prerequisites for Snyk Runtime Sensor
 
 Ensure that your environment meets the following technical prerequisites to properly use the Snyk Runtime Sensor:
