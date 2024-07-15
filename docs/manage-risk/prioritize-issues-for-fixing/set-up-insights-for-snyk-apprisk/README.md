@@ -1,7 +1,7 @@
 # Set up Insights for Snyk AppRisk
 
 {% hint style="info" %}
-The Set up Insights option is available only to Snyk AppRisk Pro users.
+The Insights feature is available only to Snyk AppRisk Pro users.
 {% endhint %}
 
 ## Prerequisites for prioritization with Snyk AppRisk
