@@ -18,7 +18,7 @@
 * [Supported languages, package managers, and frameworks](supported-languages-package-managers-and-frameworks/README.md)
   * [Technical specifications](supported-languages-package-managers-and-frameworks/technical-specifications.md)
   * [Apex](supported-languages-package-managers-and-frameworks/apex.md)
-  * [Bazel tool](supported-languages-package-managers-and-frameworks/bazel-tool/README.md)
+  * [Bazel](supported-languages-package-managers-and-frameworks/bazel-tool/README.md)
     * [Dep Graph API](supported-languages-package-managers-and-frameworks/bazel-tool/dep-graph-api.md)
     * [Examples of Snyk for Bazel](supported-languages-package-managers-and-frameworks/bazel-tool/examples-of-snyk-for-bazel.md)
   * [C/C++](supported-languages-package-managers-and-frameworks/c-c++/README.md)
