@@ -23,7 +23,7 @@ limits: cpu: "1" memory: "2Gi"
 
 * Your Kubernetes cluster must have a Kubernetes `linux/amd64` worker node.
 * Your Kubernetes cluster must be able to communicate with Snyk outbound over HTTPS.
-* [Enable the Kubernetes Integration ](../kubernetes-integration/overview-of-the-kubernetes-integration/enable-the-kubernetes-integration.md)to get your **Integration ID.**
+* [Enable the Kubernetes Integration ](../kubernetes-integration/overview-of-kubernetes-integration/enable-the-kubernetes-integration.md)to get your **Integration ID.**
 * Create a **Group** or **Organization** **service account token**. For more information, see [Service account](../../../enterprise-configuration/service-accounts/)s. There are different roles that allow the integration to publish data:
   * Group Admin
   * Org Admin

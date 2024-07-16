@@ -2,7 +2,7 @@
 
 This section provides information on how to integrate Snyk with Kubernetes and how to use Snyk capabilities after the integration. See:
 
-* [Overview of the Kubernetes integration](overview-of-the-kubernetes-integration/)
+* [Overview of the Kubernetes integration](overview-of-kubernetes-integration/)
 * [Install the Snyk Controller](../install-the-snyk-controller/)
 * [Manually import Kubernetes workload Projects](manually-import-kubernetes-workload-projects.md)
 * [Automatically import and delete Kubernetes workload Projects](automatically-import-and-delete-kubernetes-workload-projects.md)
