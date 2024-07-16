@@ -150,6 +150,8 @@ snyk test --all-projects
 
 {% hint style="info" %}
 `nohoist`is **not** supported by Yarn Workspaces.
+
+For Yarn Workspaces, only the `package.json` file is updated for Snyk Fix PRs. The `yarn.lock` file is not updated.
 {% endhint %}
 
 For Yarn Workspaces, you can use the following options:
@@ -159,21 +161,19 @@ For Yarn Workspaces, you can use the following options:
 * `--strict-out-of-sync=false` : Relax strict synchronization requirements for packages in a Yarn workspace. When set to `false` , you can run Snyk tests with unsynchronized `package.json` and the `package-lock.json` files without throwing errors. Using different dependency versions can introduce potential risks, such as compatibility issues or security vulnerabilities.
 * `--policy-path` : Specify the path to a policy used by Snyk during testing.
 
+### Examples of scanning Yarn workspaces
+
 Scan the packages that belong to any discovered workspaces in this directory, five deep sub-directories, and any other Projects detected.
 
 ```javascript
 snyk test --all-projects --strict-out-of-sync=false --detection-depth=6 
 ```
 
-### Examples of scanning Yarn workspaces
-
 Scan only the Yarn Workspace packages that belong to any discovered workspaces in this directory and five deep sub-directories.
 
 ```javascript
 snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6
 ```
-
-
 
 Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path (see [The .snyk file](../../manage-risk/policies/the-.snyk-file.md)).
 
