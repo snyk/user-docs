@@ -1,12 +1,14 @@
 # Supported languages, package managers, and frameworks
 
-**Note:** The language pages are being restructured and updated on June 22 and June 23. The open source and code analysis details have been moved to each language page.
+This section provides detailed information about language support for Snyk Code and Snyk Open Source. For information about language support for Snyk Container, see [Supported workloads, container registries, languages, and operating systems](../scan-using-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/supported-workloads-container-registries-languages-and-operating-systems.md). See also [Operating system distributions supported by Snyk Container](../scan-using-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md). For IaC language support, see [Supported IaC languages, cloud providers, and cloud resources](../scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
 
 ## Code analysis (Snyk Code)
 
-The pages for code analysis support provide details about fully supported frameworks and features for Snyk Code.
+Snyk supports the following languages for code analysis: [Apex](apex.md), [C++](c-c++/c++-for-code-analysis.md), [Go](go/go-for-code-analysis.md), [Java and Kotlin](java-and-kotlin/java-and-kotlin-for-code-analysis.md), [JavaScript](javascript/javascript-for-code-analysis.md), [.NET](.net/.net-for-code-analysis.md), [PHP](php/php-for-code-analysis.md), [Python](python/python-for-code-analysis.md), [Ruby](ruby/ruby-for-code-analysis.md), [Scala](scala/scala-for-code-analysis.md). [Swift](swift-and-objective-c/swift-for-code-analysis.md), [TypeScript](typescript.md), and [VB NET](vb.net.md).
 
-Snyk supports Apex, C++, Go, Java and Kotlin, JavaScript, .NET, PHP, Python, Ruby, Swift, TypeScript, and VB NET. Interfile analysis is available for all languages supported except Ruby.
+Interfile analysis is available for all languages supported except Ruby.
+
+The individual language pages for code analysis provide details about fully supported frameworks and features for Snyk Code.
 
 ## Open source and licensing (Snyk Open Source)
 
@@ -14,9 +16,9 @@ Snyk supports Apex, C++, Go, Java and Kotlin, JavaScript, .NET, PHP, Python, Rub
 Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must **build your Project**. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
-The pages for open source support provide details about fully supported package managers and features supported for Snyk Open Source.
+Snyk supports the following for Snyk Open Source: Bazel, C.C++, Dart and Flutter, Elixir, Go, Java and Kotlin, Javascript. .NET, PHP, Python, Ruby, Swift, Typescript, and VB.NET.
 
-Snyk supports Bazel, C.C++, Dart and Flutter, Elixir, Go, Java and Kotlin, Javascript. .NET, PHP, Python, Ruby, and Swift and Objective-C.
+The individual language pages for Open Source support provide details about fully supported package managers and features supported for Snyk Open Source.
 
 ### Open source policy
 
