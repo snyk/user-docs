@@ -579,7 +579,7 @@
       * [Analyze and fix container images](scan-using-snyk/snyk-container/use-snyk-container/analyze-and-fix-container-images.md)
       * [Use Custom Base Image Recommendations](scan-using-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/README.md)
         * [Versioning schemas for custom base images](scan-using-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images.md)
-        * [Custom Versioning Schema for custom base images](scan-using-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/custom-versioning-schema-for-custom-base-images.md)
+        * [Custom versioning schema for custom base images](scan-using-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/custom-versioning-schema-for-custom-base-images.md)
     * [Scan your Dockerfile](scan-with-snyk/snyk-container/scan-your-dockerfile/README.md)
       * [Detect vulnerable base images from your Dockerfile](scan-with-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md)
       * [Fix vulnerable base images in your Dockerfile](scan-with-snyk/snyk-container/scan-your-dockerfile/fix-vulnerable-base-images-in-your-dockerfile.md)
