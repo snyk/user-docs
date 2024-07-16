@@ -2123,6 +2123,113 @@ Could not render default PR template.
 - [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ---
+# SBOM Test
+### [SNYK-SBOM-0001](#snyk-sbom-0001)
+
+#### SBOM test error
+
+An unexpected error occurred. Review the request, then try again. If the error persists, contact Snyk Support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-SBOM-0002](#snyk-sbom-0002)
+
+#### Organization ID mismatch
+
+The requested organization ID does not match the owner of the SBOM test ID.
+
+This error occurs when the supplied organization ID is different to the one used when creating an SBOM test run.
+Ensure the organization ID used to make the request is the same as the the organization ID used to create the SBOM test.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-SBOM-0003](#snyk-sbom-0003)
+
+#### Unable to find SBOM test
+
+Snyk was unable to find the requested SBOM test.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-SBOM-0004](#snyk-sbom-0004)
+
+#### SBOM test failed
+
+The SBOM test failed and does not have any results.
+
+This error occurs when results for a failed SBOM test are being requested.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-SBOM-0005](#snyk-sbom-0005)
+
+#### SBOM test results still pending
+
+The SBOM test is still processing and does not have any results yet.
+
+This error occurs when the results for an SBOM test have been requested, but the SBOM test is still being processed.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-SBOM-0006](#snyk-sbom-0006)
+
+#### Unknown SBOM format
+
+Snyk does not recognize the SBOM file format.
+
+Provide an SBOM document with a supported format.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/commands/sbom-test](https://docs.snyk.io/snyk-cli/commands/sbom-test)
+
+### [SNYK-SBOM-0007](#snyk-sbom-0007)
+
+#### Unable to process SBOM input
+
+Snyk is unable to decode the SBOM file. Provide a valid SBOM document and try again.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/commands/sbom-test](https://docs.snyk.io/snyk-cli/commands/sbom-test)
+
+### [SNYK-SBOM-0008](#snyk-sbom-0008)
+
+#### SBOM format not supported
+
+Provide a supported format of the SBOM document and try again.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/commands/sbom-test](https://docs.snyk.io/snyk-cli/commands/sbom-test)
+
+### [SNYK-SBOM-0009](#snyk-sbom-0009)
+
+#### SBOM analysis failed
+
+Snyk was unable to process the provided SBOM input and is unable to scan it for issues.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-SBOM-0010](#snyk-sbom-0010)
+
+#### No testable packages found
+
+The SBOM document you provided does not contain any packages supported by Snyk vulnerability analysis, or it does not contain any package.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+---
 # SCM
 ### [SNYK-SCM-0001](#snyk-scm-0001)
 
@@ -2208,4 +2315,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-07-15T11:09:21.205Z
+--- Generated at 2024-07-16T15:17:53.797Z
