@@ -22,7 +22,7 @@ See [Import the Certificate as a Trusted Certificate (The Java™ Tutorials > Se
 
 ### Eclipse <a href="#eclipse" id="eclipse"></a>
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="Allow unknown certificate authorities"><figcaption><p>Allow unknown certificate authorities</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Allow unknown certificate authorities"><figcaption><p>Allow unknown certificate authorities</p></figcaption></figure>
 
 * Update the JDK used by Snyk scans to add unknown certificates.
 * Update to the latest CLI and pugin version.
@@ -30,7 +30,7 @@ See [Import the Certificate as a Trusted Certificate (The Java™ Tutorials > Se
 
 ### IntelliJ  <a href="#intellij" id="intellij"></a>
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="IntelliJ setting"><figcaption><p>IntelliJ setting</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (16).png" alt="IntelliJ setting"><figcaption><p>IntelliJ setting</p></figcaption></figure>
 
 * See [Trusted root certificates | IntelliJ IDEA](https://www.jetbrains.com/help/idea/ssl-certificates.html).
 * Updating the Jetbrains certificate handling only will most likely not be sufficient, as the CLI does not use Jetbrains settings, but JAVA\_HOME and PATH to determine a JDK. This JDKs certificate store must be updated.&#x20;
