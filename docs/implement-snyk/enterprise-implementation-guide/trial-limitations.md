@@ -1,9 +1,9 @@
 # Trial limitations
 
-Snyk's 14-day trial offers a sample of the features available in the paid Enterprise plan. However, certain features will have limited functionality or be entirely unavailable in order to provide a seamless experience when the trial concludes.
+The Snyk 14-day trial offers a sample of the features available in the paid Enterprise plan. However, certain features will have limited functionality or be entirely unavailable in order to provide a seamless experience when the trial concludes.
 
 {% hint style="info" %}
-After implementing Snyk AppRisk, you need to access the Inventory page to ensure it is populated with all the necessary information. Depending on the number of repositories you have imported, the update may take up to several hours.
+After implementing Snyk AppRisk, you must access the Inventory page to ensure it is populated with all the necessary information. Depending on the number of repositories you have imported, the update may take up to several hours.
 {% endhint %}
 
 If you consider purchasing the Team plan, remember that the trial offers features beyond those included in the Team plan.
