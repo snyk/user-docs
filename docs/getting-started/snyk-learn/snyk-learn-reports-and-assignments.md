@@ -13,7 +13,7 @@ All reports can be downloaded to a CSV file.&#x20;
 {% hint style="warning" %}
 **Release status**
 
-The Assignments feature is in [Closed Beta](https://docs.snyk.io/getting-started/snyk-release-process#closed-beta) and available only for customers with the Enterprise Plus package. For more information, contact your Snyk Account Executive.
+The Assignments feature is in [Closed Beta](https://docs.snyk.io/getting-started/snyk-release-process#closed-beta). For more information, contact your Snyk Account Executive.
 {% endhint %}
 
 Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by allowing customers to set due dates for completion and seamlessly integrate with organizational goals, ensuring alignment across training initiatives.
