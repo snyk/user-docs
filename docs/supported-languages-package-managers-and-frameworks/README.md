@@ -31,9 +31,9 @@ For information on managing dependencies and vulnerabilities from your developer
 
 To check compliance for open source licenses, see [Snyk License Compliance Management](../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md).
 
-## Snyk CLI
+## Supported languages and the CLI, SCM integrations, IDE, and CI/CD
 
-To use the Snyk CLI:
+### Steps to start using the CLI
 
 * [Create a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
 * [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
@@ -41,7 +41,7 @@ To use the Snyk CLI:
 
 ### CLI for code analysis
 
-To start testing your code using Snyk Code, open your repository in a terminal and run `snyk code test`.
+To start testing your code using Snyk Code through the CLI, open your repository in a terminal and run `snyk code test`.
 
 For information about customizing test options, running other commands, excluding directories and files, and viewing and exploring the results in different formats, see the following:
 
@@ -60,10 +60,16 @@ After you have run `snyk code test`, you can:
 
 Ensure you have installed the relevant package manager and you have included the relevant manifest files supported by Snyk before testing.
 
-To test your open-source Project for vulnerabilities, run the `snyk test` command.
+To test your Open Source Project for vulnerabilities, run the `snyk test` command.
 
-## IDE and CI/CD
+### Steps to start using SCM integrations
 
-For integrated development environments, see [Snyk IDEs](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/).
+* [Set up an integration](../getting-started/quickstart/set-up-an-integration.md).
+* For details, see [Snyk SCM integrations](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/).
+* For language-specific information, see [Git repositories with Maven and Gradle](java-and-kotlin/git-repositories-with-maven-and-gradle.md), [Git repositories and JavaScript](javascript/git-repositories-and-javascript.md), and [Git repositories and Python](python/git-repositories-and-python.md).
+
+### IDE and CI/CD
+
+For information about integrated development environments, see [Snyk IDE plugins and extensions](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/).
 
 If you use continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software.
