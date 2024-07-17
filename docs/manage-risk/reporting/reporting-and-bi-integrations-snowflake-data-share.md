@@ -8,7 +8,7 @@ Snowflake Data Share is in [Closed Beta](https://docs.snyk.io/getting-started/sn
 * For more information, contact your Snyk Account Executive.
 * With an active Snowflake account.
 
-Customers can try the integration for a 60-day beta period starting from their initial access date. For access beyond 60 days, the customer is expected to be on the Enterprise Plus SKU. During beta, the data share will be limited to a capacity of 10 million records per share.&#x20;
+In a Closed Beta state, the data share will be limited to a capacity of 10 million records per share.&#x20;
 {% endhint %}
 
 With the new Snowflake Data Share integration, your data science, BI and AppSec teams can securely access the same underlying data available in Snyk Reporting, but within your own Snowflake account, unlocking powerful new analytical tools to better understand and visualize Snyk data.
@@ -35,7 +35,7 @@ Snyk Snowflake Data Share can be used for various use cases and can answer count
 * **Enhance the AppSec posture visibility for the CISO and management team.**\
   Streamline Snyk data to your BI platforms and existing security dashboards and reflect performance metrics and KPI's, for example, MTTR, SLA compliance, remediation trends, and so on.&#x20;
 * **Answer specific questions or surface unique insights.**\
-  Better understand risk exposure trends, such as tracking total issues above a specific risk score only affecting certain Project collections or tags across all Snyk Groups whilst filtering for only main or master branches.\
+  Better understand risk exposure trends, such as tracking total issues above a specific risk score only affect certain Project collections or tags across all Snyk Groups whilst filtering for only main or master branches.\
   Measure the performance of fix behaviour against SLA. For example, enter customer SLA targets and track towards those goals.\
   Build custom prevention reporting to understand shift left impact. For example, view trends in preventable Open Source vulnerabilities across all Snyk Groups, filtered by specific severities and risk scores.
 
@@ -43,14 +43,14 @@ Snyk Snowflake Data Share can be used for various use cases and can answer count
 
 ### Request a Snowflake Data Share access <a href="#request-a-snowflake-data-share-access" id="request-a-snowflake-data-share-access"></a>
 
-Snyk Data Share for Snowflake is included within the Enterprise Plus package. Follow the steps below to join Snyk Enterprise Plus package and request a Snowflake Data Share access:
+Follow the steps below to request a Snowflake Data Share access:
 
-1. Contact your Snyk Account Executive about the Snyk Enterprise Plus package
-2. To enable Snowflake Data Share, provide the following Snowflake account details to your Snyk contact person (see [Finding the Organization and Account Name for an Account in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account)):
+1. Contact your Snyk Account Executive to request access
+2. Provide your Snyk contact person with the following Snowflake account details (find [here](https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account) guidelines to trace your credentials):
    * Account Name.
    * Organization Name.
    * If you prefer to limit the data share to a specific set of Snyk Groups, mention the relevant Group IDs (the ID is available in the Snyk Group Settings).
-3. &#x20;Once we receive the Snowflake account details, our team will prepare the Data Share. You should expect to see your data within 24 hours.
+3. &#x20;After Snyk receives the Snowflake account details, the team will prepare the Data Share. You should expect to see your data within 24 hours.
 
 ### Prepare to consume Snowflake Data Shares <a href="#prepare-to-consume-snowflake-data-shares" id="prepare-to-consume-snowflake-data-shares"></a>
 
