@@ -5,10 +5,11 @@
 Snowflake Data Share is in [Closed Beta](https://docs.snyk.io/getting-started/snyk-release-process#closed-beta) and available only for customers:
 
 * Under the Enterprise plan. For more information, see [Plans and pricing](https://snyk.io/plans).
-* For more information, contact your Snyk Account Executive.
 * With an active Snowflake account.
 
 In a Closed Beta state, the data share will be limited to a capacity of 10 million records per share.&#x20;
+
+For more information, contact your Snyk Account Executive.
 {% endhint %}
 
 With the new Snowflake Data Share integration, your data science, BI and AppSec teams can securely access the same underlying data available in Snyk Reporting, but within your own Snowflake account, unlocking powerful new analytical tools to better understand and visualize Snyk data.
