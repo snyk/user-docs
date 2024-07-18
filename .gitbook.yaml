@@ -101,3 +101,8 @@ redirects:
   snyk-api/how-to-use-snyk-api-endpoints/set-project-attributes-using-the-snyk-api: snyk-api/api-endpoints-index-and-notes/README.md
   snyk-api/how-to-use-snyk-api-endpoints/find-who-created-a-service-account: snyk-api/api-endpoints-index-and-notes/README.md
   manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration#servicenow-cmdb-setup-guide: manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/application-context-for-scm-integrations#servicenow-cmdb-for-scm-integrations.md
+  manage-risk/snyk-apprisk/dashboard-for-snyk-apprisk: getting-started/snyk-web-ui#view-the-assets-dashboard.md
+  manage-risk/snyk-apprisk/integrations-for-snyk-apprisk: integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md
+  manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration: scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations.md
+  manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/customize-an-integration: getting-started/snyk-web-ui.md
+  manage-risk/snyk-apprisk/dashboard-for-snyk-apprisk: scan-using-snyk/snyk-apprisk/using-snyk-apprisk.md 
