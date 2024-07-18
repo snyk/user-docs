@@ -1,22 +1,22 @@
-# Inventory capabilities
+# Assets inventory components
 
 Each inventory layout is presented in a table format, detailing the available key attributes:
 
-* [Assets](inventory-capabilities.md#asset)
-* [Issues](inventory-capabilities.md#issues)
-* [Coverage Controls](inventory-capabilities.md#coverage-controls)
-* [Tags](inventory-capabilities.md#tags)
-* [Developers](inventory-capabilities.md#developers)
-* [Class](inventory-capabilities.md#class)
-* [Source](inventory-capabilities.md#source)
-* [SCM Repository freshness](inventory-capabilities.md#repository-freshness)
+* [Assets](assets-inventory-components.md#asset)
+* [Issues](assets-inventory-components.md#issues)
+* [Coverage Controls](assets-inventory-components.md#coverage-controls)
+* [Tags](assets-inventory-components.md#tags)
+* [Developers](assets-inventory-components.md#developers)
+* [Class](assets-inventory-components.md#class)
+* [Source](assets-inventory-components.md#source)
+* [SCM Repository freshness](assets-inventory-components.md#repository-freshness)
 
 ## **Asset**
 
 An asset in Snyk AppRisk represents a component in the software development lifecycle that may pose a risk. The following asset types are currently available:
 
-* Repository assets [**`Billable`**](../how-does-snyk-count-assets.md#billable-assets)
-* Container images [**`Billable`**](../how-does-snyk-count-assets.md#billable-assets)
+* Repository assets [**`Billable`**](../manage-risk/snyk-apprisk/how-does-snyk-count-assets.md#billable-assets)
+* Container images [**`Billable`**](../manage-risk/snyk-apprisk/how-does-snyk-count-assets.md#billable-assets)
 * Packages
 * Scanned artifacts
 
@@ -36,7 +36,7 @@ If you scan the code locally using CLI, with no association to a repository, the
 
 You can identify a container image based on the Image ID. If multiple container images have the same Image ID, then only one image asset is generated for that Image ID, enriched with information from all the identified container images for that ID.
 
-Snyk AppRisk retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../../../scan-using-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) page for more details.
+Snyk AppRisk retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../scan-using-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) page for more details.
 
 ### Packages
 
@@ -70,15 +70,15 @@ The asset information is divided into the following tabs:
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (493).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (493).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
 
 You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Package Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
 
-<figure><img src="../../../.gitbook/assets/image (494).png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view of a children asset</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (494).png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Snyk AppRisk Inventory - Assets Summary view of a children asset</p></figcaption></figure>
 
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-<figure><img src="../../../.gitbook/assets/image (498).png" alt="Snyk AppRisk - Assets Attributes window"><figcaption><p>Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (498).png" alt="Snyk AppRisk - Assets Attributes window"><figcaption><p>Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
 
 ## Issues
 
@@ -107,18 +107,18 @@ The Controls column displays all of the Snyk products that were executed on a sp
 
 The Controls logos can have one of the following states:
 
-| Logo                                                                                   | Description                                                                      |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| <img src="../../../.gitbook/assets/image (3) (5) (1).png" alt="" data-size="original"> | The Snyk product was executed.                                                   |
-| <img src="../../../.gitbook/assets/image (4) (7) (1).png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
-| <img src="../../../.gitbook/assets/image (5) (3) (1).png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
-| <img src="../../../.gitbook/assets/image (6) (6) (1).png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
-| <img src="../../../.gitbook/assets/image (7) (4).png" alt="" data-size="original">     | The Snyk product was executed and failed with issues.                            |
-| <img src="../../../.gitbook/assets/image (8) (3).png" alt="" data-size="original">     | The Snyk product was executed and failed due to not being covered by the policy. |
+| Logo                                                                             | Description                                                                      |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| <img src="../.gitbook/assets/image (3) (5) (1).png" alt="" data-size="original"> | The Snyk product was executed.                                                   |
+| <img src="../.gitbook/assets/image (4) (7) (1).png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
+| <img src="../.gitbook/assets/image (5) (3) (1).png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
+| <img src="../.gitbook/assets/image (6) (6) (1).png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
+| <img src="../.gitbook/assets/image (7) (4).png" alt="" data-size="original">     | The Snyk product was executed and failed with issues.                            |
+| <img src="../.gitbook/assets/image (8) (3).png" alt="" data-size="original">     | The Snyk product was executed and failed due to not being covered by the policy. |
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Snyk AppRisk - Controls</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Snyk AppRisk - Controls</p></figcaption></figure>
 
 ## **Tags**
 
@@ -138,7 +138,7 @@ A system-generated tag includes the following information:
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
 
-<figure><img src="../../../.gitbook/assets/image (500).png" alt="Snyk AppRisk - Tags"><figcaption><p>Snyk AppRisk - Tags</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (500).png" alt="Snyk AppRisk - Tags"><figcaption><p>Snyk AppRisk - Tags</p></figcaption></figure>
 
 ### Tag rules overview
 
@@ -201,7 +201,7 @@ You can manually change the business criticality of an asset. Click the critical
 
 After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A popup is displayed, asking you for confirmation about unlocking the value.
 
-<figure><img src="../../../.gitbook/assets/image (501).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk AppRisk - Lock the value of a class</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (501).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk AppRisk - Lock the value of a class</p></figcaption></figure>
 
 The Asset Class column is also available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 

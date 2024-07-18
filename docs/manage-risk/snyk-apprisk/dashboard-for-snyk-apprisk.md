@@ -14,7 +14,7 @@ You can customize the dashboard widgets as desired. Choose to rename or modify d
 
 ## Configure a widget
 
-Customize your dashboard with the available widgets. You can change the settings of an existing widget or change the way it is displayed. You have the ability to move a widget around the dashboard, rename it, display or hide the legend, view it in full screen, export or download it. See the [Repositories assets](inventory-for-snyk-apprisk/#repository-assets) section for additional details regarding archived or deleted repositories and the information presented in the dashboard widgets.
+Customize your dashboard with the available widgets. You can change the settings of an existing widget or change the way it is displayed. You have the ability to move a widget around the dashboard, rename it, display or hide the legend, view it in full screen, export or download it. See the [Repositories assets](../../manage-assets/#repository-assets) section for additional details regarding archived or deleted repositories and the information presented in the dashboard widgets.
 
 ### Settings menu
 

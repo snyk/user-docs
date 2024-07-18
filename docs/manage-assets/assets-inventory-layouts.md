@@ -1,4 +1,6 @@
-# Inventory for Snyk AppRisk
+# Assets inventory layouts
+
+Snyk defines an asset as a meaningful, real-world component in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages), and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term). In most cases, assets carry a risk or aggregate risk of other components, for example, repositories that contain packages.
 
 Snyk AppRisk inventory layouts are organizing your repository assets in meaningful ways, enabling you to:
 
@@ -6,14 +8,14 @@ Snyk AppRisk inventory layouts are organizing your repository assets in meaningf
 * Track controls coverage for Snyk products.
 * Prioritize coverage mitigation efforts according to business impact.
 
-Each line in the inventory represents either a repository asset or a scanned artifact from Snyk that is likely a repository but lacks some identifying information. Scanned artifacts are not supported through Policies.
+Each line in the inventory represents an asset.
 
 ## Inventory Layouts <a href="#inventory-layouts" id="inventory-layouts"></a>
 
 To get better context and clarity over your asset inventory, Snyk AppRisk allows flexible structuring with inventory layouts. Snyk AppRisk includes four inventory layouts and groups assets by different contexts. You can find all inventory layouts under the Inventory menu option at the Group level:&#x20;
 
 * **All Assets**: All the discovered assets, grouped by their type.&#x20;
-* **Asset Hierarchy**: A hierarchical list of all assets.&#x20;
+* **Asset Hierarchy**: Asset Hierarchy layout shows assets in a hierarchical structure. The list of assets is sorted by issue counts, and, where applicable, the package assets are listed underneath the repositories where they are located. Assets hierarchy is visible only when there are no filters applied.
 * **Teams**: SCM repository assets grouped by teams. Note that only SCM organizations with teams, and repositories assigned to a team, appear on this layout.
 * **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk AppRisk.
 
@@ -21,55 +23,16 @@ Each inventory layout may include different counts of assets and scanned artifac
 
 The following video presents an overview of the Inventory view from the Snyk Web UI.
 
-{% embed url="https://youtu.be/BIvGd_TCwHw" %}
+{% embed url="https://www.youtube.com/watch?v=NwF1a08dwjk" %}
 Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
 {% endembed %}
 
 {% hint style="warning" %}
 **Release status** \
-**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
-
-Contact your account manager if you are interested in Snyk AppRisk Pro.
+**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are in Closed Beta and available only for Snyk AppRisk Pro.
 {% endhint %}
 
-You can filter the information for all the inventory layouts and can use the following filters:
-
-* **Application\*** - the list of the applications for which you have configured the Backstage catalog in Snyk AppRisk.
-* **Asset ID** - the unique identifier of the asset.
-* **Asset name** - the name of the asset.
-* **Asset type** - repository, package or scanned artifact.
-* **Attribute** - asset attributes retrieved from the data source.
-* **Catalog name\*** - the name of your backstage catalog.
-* **Category\*** - the category of a repository asset. For example, service or library.
-* **Class** - specify the class of the asset.
-* **Coverage** - specify the product or products used to scan the asset. The Coverage filter identifies if at least one scan has been run by the specified product.
-* **Coverage gap** - specify the products for which the asset has not been scanned and do not meet the Set Coverage Control Policy requirements. The coverage gap applies only if you previously defined the coverage requirements of an asset and the asset has never been scanned, or the last scan is older than the default scanning frequency.
-* **Developers** - specify the developer or developers who contributed to the asset.
-* **Discovered** - specify the period when the asset was discovered.
-* **Issue severity** - specify the severity of the issue: critical, high, medium, low.
-* **Issue source** - specify where the issue was identified: SCM or third-party integrations. A source category will only be visible if there is at least one source present.
-* **Last seen** - specify the repository freshness status.
-* **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
-* **Locked attributes** - specify if the attribute value is locked.
-* **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
-* **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
-* **Runtime discovered** - specify the period when the runtime image asset was discovered.
-* **Runtime last seen** - specify the freshness status for the runtime image asset.
-* **SCM Repository freshness** - the status of the repository and the date of the last commit.
-  * **Active**: Had commits in the last 3 months.
-  * **Inactive**: The last commits were made in the last 3 - 6 months.
-  * **Dormant**: No commits in the last 6 months.
-* **Source** - specify the asset source.
-* **Tags** - information about the detected languages and repository update status.
-* **Title\*** - represents the name of the component for which the backstage catalog was configured.
-
-**\***All filters marked with `*` are visible only to the users who configured the Backstage catalog for their SCM integrations.
-
-<figure><img src="../../../.gitbook/assets/image (497).png" alt="Snyk AppRisk - Inventory layouts"><figcaption><p>Snyk AppRisk - Inventory layouts</p></figcaption></figure>
-
-{% hint style="info" %}
-After you apply the filters, the assets list will only display the assets that directly match the filter conditions.
-{% endhint %}
+You can filter the information for all the inventory layouts and use any of the available filters listed on the [Assets inventory features](assets-inventory-features.md#available-filters) page.
 
 ## Assets and their attributes
 
@@ -94,7 +57,7 @@ Assets in the inventory are presented with key attributes in the following colum
 
 Snyk AppRisk derives assets from Snyk automatically, and also from any SCM tools that are onboarded using the Snyk AppRisk Integration Hub. SCM tools from Snyk AppRisk Integration Hub may add additional repositories that aren’t scanned by Snyk, as well as additional context such as teams and code committers.
 
-### Repository assets and scanned artifacts
+### Repository assets, scanned artifacts and packages
 
 #### Repository assets
 
@@ -106,9 +69,15 @@ If you archive or delete repositories, they are not displayed in the asset inven
 
 #### Scanned artifacts
 
-Snyk AppRisk also includes the concept of scanned artifacts. A scanned artifact is an entity detected by Snyk and cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.&#x20;
+Snyk AppRisk also includes the concept of scanned artifacts. A scanned artifact is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.&#x20;
 
 Scanned artifacts provide users with visibility into what Snyk AppRisk detects from scans but require additional troubleshooting.&#x20;
 
 You can see the scanned artifacts in the Inventory Type view. The scanned artifacts are not supported by Policies. Furthermore, scanned artifacts may include duplicates, as identifying information is missing.
+
+#### Packages
+
+Packages are defined as software or libraries that are managed by package management systems.
+
+Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk AppRisk to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
 

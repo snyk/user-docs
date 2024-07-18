@@ -116,7 +116,7 @@ After setting up all the Snyk AppRisk integrations, depending on the number of r
 The Snyk AppRisk functionality is split across several menu options from the Group level.&#x20;
 
 * [Dashboard](../../../manage-risk/snyk-apprisk/dashboard-for-snyk-apprisk.md)
-* [Inventory](../../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/)
+* [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/)
 * [Integrations](broken-reference)
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
@@ -125,7 +125,7 @@ The Snyk AppRisk functionality is split across several menu options from the Gro
 
 The Inventory feature is structured in four sections, each focused on a specific area:
 
-* **Code assets**: provides a list of all your repository assets and package assets found in the repository. Navigate to the [Inventory capabilities](../../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/inventory-capabilities.md) page for a detailed overview of all options available in the Code assets view and to the [Filters capabilities](../../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/search-and-filter-capabilities.md#filters-capabilities) page for more details about the filtering options and how to use them.
+* **Code assets**: provides a list of all your repository assets and package assets found in the repository. Navigate to the [Inventory capabilities](../../../manage-assets/assets-inventory-components.md) page for a detailed overview of all options available in the Code assets view and to the [Filters capabilities](../../../manage-assets/assets-inventory-features.md#filters-capabilities) page for more details about the filtering options and how to use them.
 * **Organization teams**: provides a list of the repository assets grouped by teams. Note that only SCM organizations with teams and repositories assigned to a team appear on this layout.
 * **Technology**: provides a list of the repository assets grouped by technology, as detected and tagged by Snyk AppRisk.
 * **Type**: lists all the discovered assets, grouped by their type.

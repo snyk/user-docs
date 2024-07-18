@@ -32,7 +32,7 @@ Next, you need to define two actions, one for Snyk Open Source, and one for Snyk
 
 <figure><img src="../../../../.gitbook/assets/image (6) (6).png" alt="Filter configuration for coverage control" width="350"><figcaption><p>Filter configuration for coverage control</p></figcaption></figure>
 
-In the Inventory view, any coverage gap is indicated with strikes through the control coverage icon. See more details about each icon on the [Inventory capabilities](../../inventory-for-snyk-apprisk/inventory-capabilities.md) page.
+In the Inventory view, any coverage gap is indicated with strikes through the control coverage icon. See more details about each icon on the [Inventory capabilities](../../../../manage-assets/assets-inventory-components.md) page.
 
 The following video explains how to configure a Coverage policy:
 

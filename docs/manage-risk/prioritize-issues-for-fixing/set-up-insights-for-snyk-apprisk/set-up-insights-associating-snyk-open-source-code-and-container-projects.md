@@ -15,10 +15,10 @@ The Set up Insights UI displays a variety of asset types, including but not limi
 * Container images
 * Scanned artifacts
 
-These assets are directly linked to the ones displayed on the [Snyk AppRisk Inventory](../../snyk-apprisk/inventory-for-snyk-apprisk/inventory-capabilities.md) view.&#x20;
+These assets are directly linked to the ones displayed on the [Snyk AppRisk Inventory](../../../manage-assets/assets-inventory-components.md) view.&#x20;
 
 {% hint style="info" %}
-For more details regarding supported assets, you can navigate to the [Asset](../../snyk-apprisk/inventory-for-snyk-apprisk/inventory-capabilities.md#asset) and [Issue](../../snyk-apprisk/inventory-for-snyk-apprisk/inventory-capabilities.md#issues) pages.&#x20;
+For more details regarding supported assets, you can navigate to the [Asset](../../../manage-assets/assets-inventory-components.md#asset) and [Issue](../../../manage-assets/assets-inventory-components.md#issues) pages.&#x20;
 {% endhint %}
 
 The container image is the build artifact that is deployed and running on your Kubernetes cluster, so Snyk can map your application from its source code to its deployed state by understanding the following:

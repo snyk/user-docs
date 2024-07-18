@@ -1,4 +1,4 @@
-# Search and filter capabilities
+# Assets inventory features
 
 Snyk AppRisk provides powerful search and filtering capabilities to help you narrow in on assets for investigation and mitigation.
 
@@ -8,7 +8,7 @@ Use the search bar to search for specific keywords across various asset properti
 
 ## Filters capabilities
 
-With this feature, you can [define filters](../policies-for-snyk-apprisk/create-policies.md#define-filters) and filter assets based on highly specific criteria. For example, repository assets that have `AWS` in the name, are classified as either **A** or **B**, and do not have Snyk IaC as a control executed. This can be useful for finding repositories that have infrastructure as code that Snyk IaC is not currently scanning.
+With this feature, you can [define filters](../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/create-policies.md#define-filters) and filter assets based on highly specific criteria. For example, repository assets that have `AWS` in the name, are classified as either **A** or **B**, and do not have Snyk IaC as a control executed. This can be useful for finding repositories that have infrastructure as code that Snyk IaC is not currently scanning.
 
 Click Filters from the top left side of the screen. A pop-up is displayed allowing you to add new filters. The filter capability enables you to specify one or more sets of criteria as follows:
 
@@ -16,7 +16,7 @@ Click Filters from the top left side of the screen. A pop-up is displayed allowi
 * **Condition** depends on the asset selected (such as `contains` or `does not contain` for `asset name`).
 * **Value** depends on the Property and Condition.
 
-<figure><img src="../../../.gitbook/assets/image (502).png" alt="Snyk AppRisk - Filters"><figcaption><p>Snyk AppRisk - Filters</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (502).png" alt="Snyk AppRisk - Filters"><figcaption><p>Snyk AppRisk - Filters</p></figcaption></figure>
 
 You can add as many filters as needed. To add another filter click **Add Filter,** set the condition as **And** or **Or** and customize the **Property**, **Condition**, and **Value** fields.&#x20;
 
