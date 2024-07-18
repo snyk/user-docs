@@ -30,7 +30,7 @@ The advantages of SCM integrations are:
 * Onboarding repositories can be configured through the UI or [API/API Import Tool](https://docs.snyk.io/snyk-api-info/other-tools/tool-snyk-api-import)
 * Support for Cloud and Private Code Repositories on the Snyk Enterprise plan
 
-See [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/) for more details.
+See [Snyk SCM integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/) for more details.
 
 If you have an on-premise Git repository, you must consider deploying [Snyk Broker](https://docs.snyk.io/snyk-admin/snyk-broker) for Snyk to communicate with your repositories.
 
@@ -59,24 +59,24 @@ See [Snyk CI/CD integrations](../../../scm-ide-and-ci-cd-workflow-and-integratio
 
 Integrated Development Environment (IDE) integrations like Visual Studio Code, IntelliJ IDEA, and Eclipse allow developers to access Snyk security features directly within their coding environment. This enables real-time scanning and issue remediation as developers write code.&#x20;
 
-See [Use Snyk in your IDE](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/) for more details.
+See [Snyk IDE plugins and extensions](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/) for more details.
 
 ## Considerations for import strategies&#x20;
 
-<table><thead><tr><th width="200">Project Import Strategy</th><th>Considerations</th><th>Advantages</th><th>Disadvantages</th></tr></thead><tbody><tr><td>CLI (automated with CI/CD)</td><td>Has to be configured for each application within CI/CD</td><td><ul><li>Can select what to test and when: which package managers, where in the process, which language to analyze</li><li>May need development effort for integration</li></ul></td><td>Requires configuration per application.</td></tr><tr><td>CLI (run locally by user)</td><td>Can be used to perform testing locally while the developer is working on an application, very configurable per scan type.</td><td>Local use case</td><td>Not meant for visibility or automation. Can require buildable code or dependencies to be installed, for example, Gradle without lockfile, Scala</td></tr><tr><td>API</td><td><ul><li>Typically for advanced use cases.</li><li>Integration into CI/CD workflows or custom tooling. </li></ul></td><td>Automated integration into CI/CD pipelines</td><td>Requires API familiarity, access through the  Enterprise plan.</td></tr><tr><td>Git Code Repository Integration</td><td>Used for onboarding and daily monitoring: rapid vulnerability assessment across application portfolio</td><td><p></p><ul><li>Continuous monitoring of repositories, even when you are not working on it</li><li>Centralized visibility for teams</li><li>Monitors specified branch</li><li>Code does not need to be built</li></ul></td><td><ul><li>Can be initiated theough the UI, however larger portfolios should use API to initiate onboarding of repositories with the <a href="https://docs.snyk.io/snyk-api/other-tools/tool-snyk-api-import">Api Import Tool</a></li><li>Some languages/package managers have better resolution through use of  the CLI: Gradle without lockfile, Scala</li></ul></td></tr><tr><td></td><td><ul><li>Pull request (PR)/merge request (MR)  scanning</li></ul></td><td><ul><li>Immediate feedback on introduced issues on the PR/MR against any branch on repository</li></ul></td><td>Configurable rules for pass/fail</td></tr></tbody></table>
+<table><thead><tr><th width="200">Project Import Strategy</th><th>Considerations</th><th>Advantages</th><th>Disadvantages</th></tr></thead><tbody><tr><td>CLI (automated with CI/CD)</td><td>Has to be configured for each application within CI/CD</td><td><ul><li>Can select what to test and when: which package managers, where in the process, which language to analyze</li><li>May need development effort for integration</li></ul></td><td>Requires configuration per application.</td></tr><tr><td>CLI (run locally by user)</td><td>Can be used to perform testing locally while the developer is working on an application, very configurable per scan type.</td><td>Local use case</td><td>Not meant for visibility or automation. Can require buildable code or dependencies to be installed, for example, Gradle without lockfile, Scala</td></tr><tr><td>API</td><td><ul><li>Typically for advanced use cases.</li><li>Integration into CI/CD workflows or custom tooling. </li></ul></td><td>Automated integration into CI/CD pipelines</td><td>Requires API familiarity, access through the  Enterprise plan.</td></tr><tr><td>Git code repository integration</td><td>Used for onboarding and daily monitoring: rapid vulnerability assessment across application portfolio</td><td><p></p><ul><li>Continuous monitoring of repositories, even when you are not working on it</li><li>Centralized visibility for teams</li><li>Monitors specified branch</li><li>Code does not need to be built</li></ul></td><td><ul><li>Can be initiated theough the UI, however larger portfolios should use API to initiate onboarding of repositories with the <a href="https://docs.snyk.io/snyk-api/other-tools/tool-snyk-api-import">Api Import Tool</a></li><li>Some languages/package managers have better resolution through use of  the CLI: Gradle without lockfile, Scala</li></ul></td></tr><tr><td></td><td><ul><li>Pull request (PR)/merge request (MR)  scanning</li></ul></td><td><ul><li>Immediate feedback on introduced issues on the PR/MR against any branch on repository</li></ul></td><td>Configurable rules for pass/fail</td></tr></tbody></table>
 
 ## Additional considerations for integrations
 
 ### Infrastructure as Code integration
 
-For Snyk Infrastructure as Code, it is common that your Terraform or yaml configuration files are held in your SCM, but they may be in a separate area or repository. Thus, consider whether there are other areas you need to import. You may also want to integrate with Terraform Cloud if applicable, to enable Snyk tests as part of your `terraform run` processes.
+For Snyk Infrastructure as Code, it is common that your Terraform or YAML configuration files are held in your SCM, but they may be in a separate area or repository. Thus, consider whether there are other areas you need to import. You may also want to integrate with Terraform Cloud if applicable, to enable Snyk tests as part of your `terraform run` processes.
 
 For complex environments, modules, and highly templated implementations, using the CLI on your Terraform Plan file may provide the best results.
 
-### CR (Container Registries) integrations
+### Container registry (CR) integrations
 
-Snyk also integrates with various [Container Registries](../../../scan-using-snyk/snyk-container/container-registry-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found, at a frequency you control.
+Snyk also integrates with various [container registries](../../../scan-using-snyk/snyk-container/container-registry-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found, at a frequency you control.
 
 ### Kubernetes
 
-Snyk can be configured to monitor workloads deployed to Kubernetes. See [Overview of the Kubernetes integration](../../../scan-using-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/) for more information on how to configure the controller.
+Snyk can be configured to monitor workloads deployed to Kubernetes. See [Overview of Kubernetes integration](../../../scan-using-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/) for more information on how to configure the controller.
