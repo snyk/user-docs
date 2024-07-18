@@ -48,6 +48,15 @@ The following video presents an overview of the Snyk AppRisk interfaces:
 Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
 {% endembed %}
 
+Here are the Snyk AppRisk features available from the Snyk Web UI:&#x20;
+
+* [Dashboard](../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) - offers you widgets that display an overview of your application and security controls.
+* [Inventory](../../manage-assets/) - helps you get better context and clarity over your asset inventory.
+* [Issues](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) - the insights presented on the issues page provide a centralized view of all the issues identified by Snyk with additional asset context.
+* [Policies](../../manage-risk/policies/assets-policies/) - allows you to automate the process of adding business context and receiving notifications.
+* [SCM integrations](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [third-party integrations](../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md) - provides information about all active integrations, and allows you to set up new ones.
+* [Analytics](../../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md) - enables you to review and explore your AppSec program status and results from a top-down approach.
+
 ## Key Concepts
 
 **Asset**: meaningful, real-world components in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages) and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term).

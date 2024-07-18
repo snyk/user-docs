@@ -1,5 +1,14 @@
 # Application context for SCM Integrations
 
+These are the available integrations that you can set up for the application context:
+
+* [Backstage file](application-context-for-scm-integrations.md#backstage-file-for-scm-integrations)&#x20;
+* [ServiceNow CMDB](application-context-for-scm-integrations.md#servicenow-cmdb-for-scm-integrations)
+* [Atlassian Compass](application-context-for-scm-integrations.md#atlassian-compass)
+* [Harness](application-context-for-scm-integrations.md#harness)
+* [OpsLevel](application-context-for-scm-integrations.md#opslevel)
+* [Datadog Org Context ](application-context-for-scm-integrations.md#datadog-org-context-service-catalog)&#x20;
+
 ## Backstage file for SCM integrations
 
 Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk AppRisk.

@@ -10,7 +10,7 @@ Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro.
 {% hint style="info" %}
 Application Analytics is available only for Snyk AppRisk Pro users.&#x20;
 
-If you are using Snyk AppRisk Essentials, navigate to the [Dashboard for Snyk AppRisk ](broken-reference)page.
+If you are using Snyk AppRisk Essentials, navigate to the [asset dashboard](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) page.
 {% endhint %}
 
 Application Analytics enables you to review and explore your AppSec program status and results from a top-down approach. You can start the exploration from a high, general level over applications, teams (owners), or asset classes and then narrow it down to the asset level.\
