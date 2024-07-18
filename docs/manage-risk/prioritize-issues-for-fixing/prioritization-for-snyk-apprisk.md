@@ -11,11 +11,11 @@ Snyk AppRisk uses holistic application intelligence to help you better identify 
 
 If you use Snyk AppRisk, you can access the Issues page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md).
 
-## Issues prioritization
+## Insights
 
 Snyk is introducing a new Issues page, providing a centralized view of all the issues identified by Snyk with additional asset context. This will help empower AppSec teams to better triage and remediate issues in Snyk.
 
-Issues prioritization is available at the Group level or at the Organization level. The [evidence graph](using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) is available only for Snyk AppRisk Pro users and only at the Group level.&#x20;
+**Issues** is available at the Group level or at the Organization level. The [evidence graph](using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) is available only for Snyk AppRisk Pro users and only at the Group level.&#x20;
 
 The Snyk approach looks holistically at your application to understand the following:
 
@@ -32,21 +32,21 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## Issues page: Snyk AppRisk Essentials vs Snyk AppRisk Pro
 
-The Issues page is nested in the main left menu and provides information about the identified issues. Use the available filters to customize and prioritize the issues list.
+Issues is nested in the main left menu and provides information about the identified issues. Use the available filters to customize and prioritize the issues list.
 
 {% hint style="info" %}
 The Risk Factor column and filter, and with it, the evidence graph information, are available only for Snyk AppRisk Pro users.&#x20;
 {% endhint %}
 
-**Issues page - Snyk AppRisk Essentials**
+**Issues - Snyk AppRisk Essentials**
 
 <figure><img src="../../.gitbook/assets/issues-apprisk-essentials.png" alt="Issues page - Snyk AppRisk Essentials"><figcaption><p>Issues page - Snyk AppRisk Essentials</p></figcaption></figure>
 
-**Issues page - Snyk AppRisk Pro**
+**Issues - Snyk AppRisk Pro**
 
 <figure><img src="../../.gitbook/assets/image (451).png" alt="Issues page - Snyk AppRisk Pro"><figcaption><p>Issues page - Snyk AppRisk Pro</p></figcaption></figure>
 
-Issues prioritization for Snyk AppRisk Pro works as illustrated in the following example. The same principles apply to Snyk AppRisk Essentials without the availability of Risk Factors or evidence graph information.
+The insights presented under the Issues menu for Snyk AppRisk Pro work as illustrated in the following example. The same principles apply to Snyk AppRisk Essentials without the availability of Risk Factors or evidence graph information.
 
 * Snyk Open Source has identified a high-severity Remote Code Exploit (RCE).&#x20;
 * That RCE is built into a container image, which is deployed onto a production Kubernetes cluster, and the running container is configured to have access to the internet.&#x20;

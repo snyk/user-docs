@@ -15,7 +15,7 @@ The Snyk platform analyzes various data sources to compute the network connectiv
 Cloud-native solutions are deterministic in how network connectivity is configured. Snyk uses that knowledge to compute the answers based on the available information. For example,  to understand how the network connectivity can be configured, see Kubernetes [Services](https://kubernetes.io/docs/concepts/services-networking/service/) and [Ingresses](https://kubernetes.io/docs/concepts/services-networking/ingress/) documentation.&#x20;
 
 {% hint style="info" %}
-Issues prioritization currently supports the following configurations: Kubernetes services and ingress, and Gloo.
+Snyk AppRisk Insights currently supports the following configurations: Kubernetes services and ingress, and Gloo.
 {% endhint %}
 
 Kubernetes Connector checks the images for ingress configuration. If not detected, the image is considered public facing.

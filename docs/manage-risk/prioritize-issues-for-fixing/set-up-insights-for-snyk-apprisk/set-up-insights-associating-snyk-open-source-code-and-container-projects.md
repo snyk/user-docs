@@ -1,10 +1,10 @@
 # Set up Insights: Associating Snyk Open Source, Code, and Container Projects
 
 {% hint style="info" %}
-The Set up Insights option is available only to Snyk AppRisk Pro users.
+The Insights feature is available only to Snyk AppRisk Pro users.
 {% endhint %}
 
-After you have set up the issues prioritization, Snyk can set up the required linking for the chosen application.&#x20;
+After you have set up insights, Snyk can set up the required linking for the chosen application.&#x20;
 
 To prioritize your Snyk Code and Snyk Open Source vulnerabilities, Snyk needs to understand the relationships between those imported Snyk Projects and the Container Project. Snyk uses the relationships between these Projects as a proxy to understand the composition of the container image.&#x20;
 
@@ -32,7 +32,7 @@ The container image is the build artifact that is deployed and running on your K
 
 ## Use Project tags to link Projects
 
-Add Snyk [Project tags](../../../snyk-admin/introduction-to-snyk-projects/project-tags.md) to all the Projects used by your application to link these Projects together and allow Snyk to represent the whole of the application that you are testing.&#x20;
+Add Snyk [Project tags](../../../snyk-admin/introduction-to-snyk-projects/project-tags.md) to all the Projects used by your application to link these Projects together and allow Snyk to represent the whole application that you are testing.&#x20;
 
 To associate two Projects together, add the exact same tag to both Projects. For example, add the same tag to your Snyk Open Source Projects and Snyk Container Project if they are related to each other.&#x20;
 

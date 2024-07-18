@@ -1,7 +1,7 @@
 # Set up Insights: Image scanning
 
 {% hint style="info" %}
-The Set up Insights option is available only to Snyk AppRisk Pro users.
+The Insights feature is available only to Snyk AppRisk Pro users.
 {% endhint %}
 
 To determine the risk factors and prioritize your Code, Open Source, and Container issues, you must scan your container images using [Snyk Container](../../../scan-with-snyk/snyk-container/).&#x20;

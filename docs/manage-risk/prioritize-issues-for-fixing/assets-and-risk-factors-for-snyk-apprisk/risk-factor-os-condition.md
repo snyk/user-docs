@@ -22,7 +22,7 @@ If the vulnerability condition matches the operating system used by the runtime 
 | Linux              | Windows         | No risk factor         |
 | Windows            | Windows         | Risk factor identified |
 
-When an image is scanned by Snyk Container, the information about which operating system the base of the image is running on is exposed. Therefore, whenever Issues prioritization is able to determine that a package is a dependency of the image or that the package has been included in the image, it compares the vulnerability information with the image specification. The same applies to problems identified directly in the image entity.
+When an image is scanned by Snyk Container, the information about which operating system the base of the image is running on is exposed. Therefore, whenever Snyk AppRisk Insights is able to determine that a package is a dependency of the image or that the package has been included in the image, it compares the vulnerability information with the image specification. The same applies to problems identified directly in the image entity.
 
 ## Kubernetes Connector integration
 

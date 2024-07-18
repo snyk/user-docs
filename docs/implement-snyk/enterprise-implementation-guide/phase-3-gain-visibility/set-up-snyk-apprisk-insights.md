@@ -1,10 +1,10 @@
-# Configure Snyk AppRisk Issues Prioritization
+# Set up Snyk AppRisk Insights
 
 ## Prioritize issues with risk factors
 
-Learn about risk-based prioritization and how to set up and deploy the Kubernetes connector for Snyk AppRisk, using the Issues page from the Snyk AppRisk menu.
+Learn about risk-based prioritization and how to set up and deploy the Kubernetes connector for Snyk AppRisk, using the **Issues** page from the Snyk AppRisk menu.
 
-Risk-based prioritization is the capability of Snyk AppRisk to understand the context of your application and help you better prioritize your security issues.
+Risk-based prioritization, or insights, is the capability of Snyk AppRisk to understand the context of your application and help you better prioritize your security issues.
 
 The [Snyk risk-based prioritization](../../../manage-risk/prioritize-issues-for-fixing/#prioritization-based-on-risk) product focuses on several risk factors for your vulnerabilities:
 
@@ -13,7 +13,7 @@ The [Snyk risk-based prioritization](../../../manage-risk/prioritize-issues-for-
 * **Public facing**: Does my container image have a configured path to the internet?
 * **Loaded package**:  Has a third-party package that is the dependency of an image been loaded?
 
-The goal of Snyk Risk-based prioritization is to provide application context to your Open Source, Code, and Container issues by understanding how your application is deployed and configured. This enables you to prioritize your issues based on the risk they are posing to your application.
+The goal of Snyk risk-based prioritization is to provide application context to your Open Source, Code, and Container issues by understanding how your application is deployed and configured. This enables you to prioritize your issues based on the risk they pose to your application.
 
 See the [How risk-based prioritization works](../../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/) page, with focus on the [Assets](../../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#assets) and [Risk factors](../../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) pages, for more details and a better understanding of the core concepts.
 

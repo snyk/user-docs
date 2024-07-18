@@ -1,9 +1,9 @@
 # Assets and risk factors for Snyk AppRisk
 
-The capabilities of the Snyk AppRisk Issues page rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk AppRisk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) information for the Snyk AppRisk Pro plan.
+The capabilities of the Snyk AppRisk Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk AppRisk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) information for the Snyk AppRisk Pro plan.
 
-* [Assets](./#assets) are analyzed by Snyk issues prioritization, focusing on images, Kubernetes resources, and packages to understand how they all interact with each other.
-* [Risk factors](./#risk-factors) are analyzed by Snyk issues prioritization and grouped into four main categories:&#x20;
+* [Assets](./#assets) are analyzed using Snyk insights, focusing on images, Kubernetes resources, and packages to understand how they all interact with each other.
+* [Risk factors](./#risk-factors) are analyzed using Snyk insights and grouped into four main categories:&#x20;
   * [Deployed](risk-factor-deployed.md)&#x20;
   * [Loaded package ](risk-factor-loaded-package.md)
   * [OS conditions](risk-factor-os-condition.md)&#x20;
@@ -17,7 +17,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## Assets
 
-Snyk AppRisk prioritization capability analyzes the assets described on this page.
+Snyk AppRisk insights analyzes the assets described on this page.
 
 ### Images
 

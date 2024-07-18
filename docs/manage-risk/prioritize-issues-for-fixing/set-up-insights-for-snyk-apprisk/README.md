@@ -10,7 +10,7 @@ Customize the Snyk AppRisk prioritization using the Set up Insights option and a
 
 ### What risk factors do I need?
 
-Snyk issues prioritization product operates by providing you with the following risk factors for your vulnerabilities:&#x20;
+Snyk AppRisk Insights product operates by providing you with the following risk factors for your vulnerabilities:&#x20;
 
 * [**Deployed**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md): Is my code and container image deployed anywhere?
 * [**Loaded package**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md): Has a third-party package that is the dependency of an image been loaded?
@@ -30,7 +30,7 @@ To get data about these four risk factors, you must meet the following criteria:
 You need to meet the following conditions to use the Loaded package risk factor:&#x20;
 
 * There is a package that is loaded more often than others poses a higher risk to your application compared to one that is rarely loaded.
-* This is the minimum requirement you need to set up for the loaded package risk factor to be applied for issues prioritization:
+* This is the minimum requirement you need to set up for the loaded package risk factor to be applied for runtime prioritization with Insights:
 * You must set up the Dynatrace or Sysdig integrations with Snyk AppRisk, or the [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md). You can find more details on the [runtime third-party integrations](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) page.&#x20;
 
 #### **OS condition risk factor**
@@ -49,9 +49,9 @@ You need to meet the following conditions to use the Deployed and Public facing 
 
 Ensure you meet these requirements to gather data for all four risk factors for the code in your scanned image.
 
-### Maximize your issues prioritization
+### Maximize your insights
 
-Snyk **recommends** that you also perform the following steps to get the maximum value out of the issues prioritization:
+Snyk **recommends** that you also perform the following steps to get the maximum value out of insights:
 
 * Scan the third-party dependencies using Snyk Open Source,
 * Scan the source code using Snyk Code,
