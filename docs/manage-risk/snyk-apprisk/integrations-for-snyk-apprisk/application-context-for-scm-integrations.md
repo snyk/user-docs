@@ -149,3 +149,120 @@ The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/gettin
 {% hint style="info" %}
 The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
 {% endhint %}
+
+## Atlassian Compass
+
+### Required Parameters
+
+1. Add your Atlassian Compass **Profile name**.
+2. Add your Atlassian Compass **Instance URL**. You can use this format type: `https://<YOUR ORGANIZATION>.atlassian.net`.
+3. Add your Atlassian Compass **Username**.
+4. Add your Atlassian Compass instance **Token**. Refer to this document for creating the Atlassian API token: [https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)&#x20;
+
+{% hint style="info" %}
+The gathered data from Atlassian Compass will be correlated with the Repository Assets.
+
+This feature is availabale only for the integration with Atlassian Compass.
+{% endhint %}
+
+### Integration Hub setup
+
+1. Open the **Integration Hub** menu.&#x20;
+2. Select the **App Context** tag and search for Atlassian Compass.&#x20;
+3. Click the **Add** button.
+4. Add the **Profile name** - this is the name of your Atlassian Compass profile.
+5. Add the **Instance URL** - this is the URL of the Atlassian Compass instance. Use this format type: `https://<YOUR ORGANIZATION>.atlassian.net`
+6. Add the **Username** - this is the username to access the Atlassian Compass instance.
+7. Add the **Token** - this is the API token to access the Atlassian Compass instance.&#x20;
+8. You can select one or more attributes related to repository assets that Snyk AppRisk can pull from Atlassian Compass based on the [Component Data](https://developer.atlassian.com/cloud/compass/forge-graphql-toolkit/Interfaces/Component/):&#x20;
+   * **Catalog Name** - Matches with name.
+   * **Category** - Identified when '`fields.definition.name`' equals tier.
+   * **Lifecycle** - Identified when '`fields.definition.name`' equals lifecycle.
+   * **Owner** - the `ownerId` (finding owner name from ownerId).
+   * **Application** - the `typeId` (all component types, Application, Service, Library, and so on receive an ID).
+9. Click the **Done** button.
+10. When the connection is established, the status of the Atlassian Compass integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in Atlassian Compass.
+
+## Harness
+
+### Required Parameters
+
+1. Add your Harness **Profile name**.
+2. Add the **Host URL** of your Harness account. You can use this format type: `https://<YOUR ORGANIZATION>.harness.io`
+3. Add the **API key** for your Harness instance. You can use [this documentation](https://developer.harness.io/docs/platform/automation/api/add-and-manage-api-keys/) to manage your API key.
+
+{% hint style="info" %}
+This integration is focused on [Harness’s](https://developer.harness.io/docs/internal-developer-portal/catalog/software-catalog/) service catalog module and it is backed by the Backstage catalog.
+{% endhint %}
+
+### Integration Hub setup
+
+1. Open the **Integration Hub** menu.&#x20;
+2. Select the **App Context** tag and search for Harness.&#x20;
+3. Click the **Add** button.
+4. Add the **Profile name** - this is the name of your Harness instance.
+5. Add the **Host URL** of your Harness account.&#x20;
+6. Add the **API key** of your Harness instance.
+7. Select at least one Harness software catalog [metadata](https://developer.harness.io/docs/internal-developer-portal/catalog/software-catalog#component-definition-yaml):
+   * Catalog name - If you select this metadata, it is mandatory to add the **Catalog name key**.
+   * Title - If you select this metadata, it is mandatory to add the **Title key**.
+   * Category - If you select this metadata, it is mandatory to add the **Category key**.
+   * Lifecycle - If you select this metadata, it is mandatory to add the **Lifecycle key**.
+   * Owner - If you select this metadata, it is mandatory to add the **Owner key**.
+   * Application - If you select this metadata, it is mandatory to add the **Application key**.
+8. Click the **Done** button.
+9. When the connection is established, the status of the Harness integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in Harness.
+
+## OpsLevel
+
+### Required Parameters
+
+1. Add your OpsLevel **Profile name**.
+2. Add the **Instance URL** of your OpsLevel account. You can use this format type: `https://<YOUR Organizer>.opslevel.com`
+3. Add the **API Token** for your OpsLevel instance. Create the API Token in your OpsLevel account by following the instructions from [here](https://docs.opslevel.com/docs/graphql#1-create-an-api-token).
+
+### Integration Hub setup
+
+1. Open the **Integration Hub** menu.&#x20;
+2. Select the **App Context** tag and search for OpsLevel.&#x20;
+3. Click the **Add** button.
+4. Add the **Profile name** - this is the name of your OpsLevel instance.
+5. Add the **Instance URL** of your OpsLevel account.&#x20;
+6. Add the **API Token** for your OpsLevel instance.
+7. You can select one or more attributes related to repository assets that Snyk AppRisk can pull from OpsLevel with the following mapping:
+   * Catalog name - Identified with `name` in OpsLevel.
+   * Category - Identified with `tier.name` in OpsLevel.
+   * Lifecycle - Identified with `lifecycle.name` in OpsLevel.
+   * Owner - Identified with `owner.name` in OpsLevel.
+   * Application - Identified with `product` in OpsLevel.
+8. Click the **Done** button.
+9. When the connection is established, the status of the OpsLevel integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in OpsLevel.
+
+## Datadog Org Context (Service Catalog)
+
+### Required Parameters
+
+1. Add your Datadog **Profile name**.
+2. Add the **API key** for the Datadog instance.
+3. Add the **Application Key** along with your organization's API key to grant users access to Datadog's programmatic API. [Here](https://docs.datadoghq.com/account\_management/api-app-keys/) you can find details about the Datadog API and Application key.
+
+### Integration Hub setup
+
+1. Open the **Integration Hub** menu.&#x20;
+2. Select the **App Context** tag and search for Datadog Org Context.&#x20;
+3. Click the **Add** button.
+4. Add the **Profile name** - this is the name of your Datadog instance.
+5. Add the **API key** for your Datadog instance.
+6. Add the **Application key** for your Datadog instance.
+7. Add the details of your **Datadog site**.
+8. You can select one or more attributes related to repository assets that Snyk AppRisk can pull from OpsLevel with the following mapping:
+   * Catalog name - If you select this metadata, it is mandatory to add the **Catalog name key**.
+   * Title - If you select this metadata, it is mandatory to add the **Title key**.
+   * Category - If you select this metadata, it is mandatory to add the **Category key**.
+   * Lifecycle - If you select this metadata, it is mandatory to add the **Lifecycle key**.
+   * Owner - If you select this metadata, it is mandatory to add the **Owner key**.
+   * Application - If you select this metadata, it is mandatory to add the **Application key**.
+9. Click the **Done** button.
+10. When the connection is established, the status of the Datadog Org Context integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in Datadog Org Context.
+
+\
