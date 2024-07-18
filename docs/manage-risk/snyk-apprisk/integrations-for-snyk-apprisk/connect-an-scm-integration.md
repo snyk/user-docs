@@ -17,6 +17,26 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
 
+## Wildcard SCM integration
+
+The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;
+
+{% hint style="info" %}
+The wildcard integration applies to the GitHub and Azure DevOps integrations and offers support when you set them up using Snyk Broker.&#x20;
+{% endhint %}
+
+You can use the wildcards while setting up your integration using the Integration Hub:
+
+* Open the **Integration Hub** menu.&#x20;
+* Select the **SCM** tag and search for GitHub or Azure DevOps.&#x20;
+* Click the **Add** button.
+* In the **Organizations** field, add the Organization details by using the `*` symbol. For example, using  `*snyk` integrates all SCM Organizations that have Snyk in their name.
+* All the Organizations that match with the wildcard, `*` symbol will be added.&#x20;
+
+{% hint style="info" %}
+The wildcard, `*` symbol is considered a living command and will be applied every time you are rescanning your repositories.&#x20;
+{% endhint %}
+
 ## GitHub setup guide
 
 {% hint style="info" %}

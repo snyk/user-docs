@@ -22,6 +22,16 @@ You can add a new profile by following these steps:
 
 <figure><img src="../../../.gitbook/assets/Integrations - New UI.png" alt="AppRisk - Integration with multiple profiles"><figcaption><p>Snyk AppRisk - Integration with multiple profiles</p></figcaption></figure>
 
+## Edit an integration
+
+You can edit an existing integration by clicking **Settings** on the integrations card and then clicking **Settings** again on the added organization for that integration. &#x20;
+
+<figure><img src="../../../.gitbook/assets/image (473).png" alt="Edit an existing integration from the Integration Hub"><figcaption><p>Edit an existing integration from the Integration Hub</p></figcaption></figure>
+
+{% hint style="info" %}
+For security reasons, all credentials are anonymized when you open the Settings of an already existing integration.&#x20;
+{% endhint %}
+
 ## Remove an integration
 
 Select an existing integration and click the Delete icon to remove it from your environment.

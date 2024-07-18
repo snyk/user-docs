@@ -44,7 +44,7 @@ Navigate to your **Account Settings** and select the **Authorized Snyk Apps** ta
 
 You can also [navigate directly to the Authorized Snyk Apps page](https://app.snyk.io/account/manage/authorized-apps).&#x20;
 
-<figure><img src="../../.gitbook/assets/image (472).png" alt="Snyk Apps management UI"><figcaption><p>Snyk Apps management UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (472) (1).png" alt="Snyk Apps management UI"><figcaption><p>Snyk Apps management UI</p></figcaption></figure>
 
 ### Revoking a Snyk App from the management UI
 
