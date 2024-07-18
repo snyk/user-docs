@@ -61,4 +61,4 @@ When or before you use Snyk AppRisk, you should consider the following items:
 * Are you using [Backstage](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md), and are there fields that might be valuable in automating policies with Snyk AppRisk?
   * Is it possible to categorize important applications in Git or CMDB (ServiceNow) using topics or fields, such as a PCI topic or tag?
   * Would this also reduce noise about test applications and internal applications by implementing an internal tag, topic, or naming convention?&#x20;
-* Read the available examples of [common policies](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/#use-cases) that can be created using Snyk AppRisk.&#x20;
+* Read the available examples of [common policies](../../../manage-risk/policies/assets-policies/#use-cases) that can be created using Snyk AppRisk.&#x20;

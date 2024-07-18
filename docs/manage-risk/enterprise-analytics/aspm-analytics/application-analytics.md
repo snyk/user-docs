@@ -2,9 +2,7 @@
 
 {% hint style="warning" %}
 **Release status** \
-Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
-
-Contact your account manager if you are interested in Snyk AppRisk Pro.
+Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro.
 {% endhint %}
 
 ## Overview
@@ -12,7 +10,7 @@ Contact your account manager if you are interested in Snyk AppRisk Pro.
 {% hint style="info" %}
 Application Analytics is available only for Snyk AppRisk Pro users.&#x20;
 
-If you are using Snyk AppRisk Essentials, navigate to the [Dashboard for Snyk AppRisk ](../../snyk-apprisk/dashboard-for-snyk-apprisk.md)page.
+If you are using Snyk AppRisk Essentials, navigate to the [Dashboard for Snyk AppRisk ](broken-reference)page.
 {% endhint %}
 
 Application Analytics enables you to review and explore your AppSec program status and results from a top-down approach. You can start the exploration from a high, general level over applications, teams (owners), or asset classes and then narrow it down to the asset level.\
@@ -138,7 +136,7 @@ You can see more details about each graphic by hovering over the presented data.
 
 ### Coverage
 
-AppSec teams struggle with maintaining an accurate asset inventory view. To achieve this view, you must establish a [coverage policy](../../snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/coverage-and-coverage-gap-policies.md) and ensure that security tests are configured based on the policy criteria. Then you need to examine your scanned assets, starting with critical assets (by asset class) that are deployed and public-facing.
+AppSec teams struggle with maintaining an accurate asset inventory view. To achieve this view, you must establish a [coverage policy](../../policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md) and ensure that security tests are configured based on the policy criteria. Then you need to examine your scanned assets, starting with critical assets (by asset class) that are deployed and public-facing.
 
 In the Coverage section, you have information about the assets coverage.&#x20;
 

@@ -1,4 +1,4 @@
-# Policies for Snyk AppRisk
+# Assets policies
 
 ## Overview
 
@@ -17,6 +17,10 @@ The following video presents an overview of the types of policies you can create
 {% embed url="https://youtu.be/79oz_hgMrCE" %}
 Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
 {% endembed %}
+
+{% hint style="info" %}
+Manage assets and assets policies are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
+{% endhint %}
 
 ## **Use Cases**
 

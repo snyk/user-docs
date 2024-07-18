@@ -3,10 +3,6 @@
 {% hint style="warning" %}
 **Release status**\
 Analytics is in [Closed Beta](../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
-
-During Closed Beta, access is available at the user level. When tenant membership is available, access to Analytics will be more easily managed at scale.
-
-Group admins will be able to see all relevant data their users can access in the  Analytics report during the Closed Beta period. You can use filters to include relevant Groups or Organizations only. This is especially useful for sharing a link with another user.
 {% endhint %}
 
 {% hint style="info" %}

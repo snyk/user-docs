@@ -2,9 +2,7 @@
 
 {% hint style="warning" %}
 **Release status** \
-Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro plans.&#x20;
-
-Contact your account manager if you are interested in Snyk AppRisk Pro.
+Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro.
 {% endhint %}
 
 Issues Analytics takes an opinionated approach, focusing teams on a relatively recent view of the most important metrics available for critical and high-severity issues in a 90-day lookback period. These static filters are displayed at the top of the page.

@@ -12,7 +12,7 @@ To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run*
 
 ## Docker run command to set up a Broker Client for GitLab
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk AppRisk information. Enable [Snyk AppRis](../../../../manage-risk/snyk-apprisk/)k to identify your application assets, monitor them, and prioritize the risks.
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk AppRisk information. Enable [Snyk AppRis](../../../../scan-using-snyk/snyk-apprisk/)k to identify your application assets, monitor them, and prioritize the risks.
 
 ```bash
 docker run --restart=always \

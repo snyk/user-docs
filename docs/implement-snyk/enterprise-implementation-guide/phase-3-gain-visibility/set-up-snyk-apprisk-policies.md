@@ -1,6 +1,6 @@
-# Configure Snyk AppRisk Policies
+# Set up Snyk AppRisk Policies
 
-The [Snyk AppRisk policies](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/) help you automate the process of adding business context and receiving notifications. You can set up policies to automatically identify the coverage control gaps. &#x20;
+The [Snyk AppRisk policies](../../../manage-risk/policies/assets-policies/) help you automate the process of adding business context and receiving notifications. You can set up policies to automatically identify the coverage control gaps. &#x20;
 
 ## Understand a policy
 
@@ -19,8 +19,8 @@ You can create a policy by navigating to the Policy view and using the **New pol
 
 The policy builder editor focuses on two main areas:
 
-* [Define the filters](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/create-policies.md#define-filters) - Set filter conditions on asset properties.
-* [Set actions](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/create-policies.md#set-actions) - Define actions to be taken on filtered assets.
+* [Define the filters](../../../manage-risk/policies/assets-policies/create-policies.md#define-filters) - Set filter conditions on asset properties.
+* [Set actions](../../../manage-risk/policies/assets-policies/create-policies.md#set-actions) - Define actions to be taken on filtered assets.
 
 ### Key filter types <a href="#key-filter-types" id="key-filter-types"></a>
 
@@ -52,8 +52,8 @@ All policies are automatically run in a maximum of 30 minutes after creation, th
 
 Familiarize yourself with the Snyk AppRisk policies by going through these use cases:
 
-* [Coverage control](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/coverage-control-policy-use-case.md) policy - identify and set coverage policies to allow your team to define where certain security controls need to be in place.
-* [Classification](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/classification-policy-use-case.md) policy - classify assets based on importance.
-* [Tagging](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/tagging-policy-use-case.md) policy - sets a tag on the matched assets.
-* [Notification](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/notification-policy-use-case.md) policy - get notifications about changes that take place on your assets.
-* [Coverage and coverage gap](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/use-cases-for-policies/coverage-and-coverage-gap-policies.md) policies - use the Coverage filter to verify if an asset has ever been tested by the product and the Coverage gap filter to verify if the asset meets the coverage requirements set in a Set coverage control policy.
+* [Coverage control](../../../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-control-policy-use-case.md) policy - identify and set coverage policies to allow your team to define where certain security controls need to be in place.
+* [Classification](../../../manage-risk/policies/assets-policies/use-cases-for-policies/classification-policy-use-case.md) policy - classify assets based on importance.
+* [Tagging](../../../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy-use-case.md) policy - sets a tag on the matched assets.
+* [Notification](../../../manage-risk/policies/assets-policies/use-cases-for-policies/notification-policy-use-case.md) policy - get notifications about changes that take place on your assets.
+* [Coverage and coverage gap](../../../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md) policies - use the Coverage filter to verify if an asset has ever been tested by the product and the Coverage gap filter to verify if the asset meets the coverage requirements set in a Set coverage control policy.

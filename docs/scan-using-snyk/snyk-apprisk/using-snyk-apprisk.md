@@ -1,4 +1,4 @@
-# Getting started with Snyk AppRisk
+# Using Snyk AppRisk
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 **Asset**: meaningful, real-world components in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages) and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term).
 
-**Controls**: The security controls associated with the asset. Navigate to the [Coverage controls](policies-for-snyk-apprisk/use-cases-for-policies/coverage-control-policy-use-case.md) section to see all available statuses for security controls.
+**Controls**: The security controls associated with the asset. Navigate to the [Coverage controls](../../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-control-policy-use-case.md) section to see all available statuses for security controls.
 
 **Coverage**: An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program.  A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
 
@@ -82,6 +82,45 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
 
 
 
+{% hint style="info" %}
+The Asset Dashboard menu option is available only for Snyk AppRisk Essentials users.&#x20;
+
+If you are using Snyk AppRisk Pro, navigate to the [Application Analytics ](../../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md)page.
+{% endhint %}
+
+## Asset dashboard
+
+On the Snyk AppRisk dashboard page, you can add widgets that display an overview of your application and security controls.
+
+You can customize the dashboard widgets as desired. Choose to rename or modify display configurations, or add multiple widget instances.
+
+### Configure a widget
+
+Customize your dashboard with the available widgets. You can change the settings of an existing widget or change the way it is displayed. You have the ability to move a widget around the dashboard, rename it, display or hide the legend, view it in full screen, export or download it. See the [Repositories assets](../../manage-assets/#repository-assets) section for additional details regarding archived or deleted repositories and the information presented in the dashboard widgets.
+
+### Settings menu
+
+You can make several changes to a widget. All widgets allow you to change the name. Other particular settings are available for each widget. You can access the Settings menu by following these steps:
+
+1. Select a widget and click the **Setting** menu.
+2. &#x20;Customize the widget by changing its name or other specific details.&#x20;
+3. After all changes are done, click **Apply**.
+
+### Action menu
+
+Access the full list of general options from the action menu. You can access the Action menu by following these steps:
+
+1. Select a widget and click the **Action** menu.
+2. Select one of the following actions:
+   * View in full-screen
+   * CSV export
+   * XLS export
+   * Download PNG
+   * Download PDF
+
+
+
+\
 
 
 \

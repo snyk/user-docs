@@ -2,9 +2,9 @@
 
 Snyk AppRisk solution is designed for developers and focuses on Application Security Posture Management. It helps AppSec teams implement, manage, and scale a modern AppSec program.
 
-Snyk AppRisk is available as two separate offerings. Snyk AppRisk Essentials and Snyk AppRisk Pro. Snyk AppRisk Essentials streamlines the management of developer security programs for AppSec teams, leveraging Snyk capabilities.
+Snyk AppRisk is available as two separate offerings. Snyk AppRisk Essentials and Snyk AppRisk Pro. Snyk AppRisk Essentials helps AppSec teams better operationalize and scale Snyk usage with broad application visibility and security coverage management.
 
-Snyk AppRisk Pro empowers AppSec teams to enhance and expand their AppSec programs comprehensively, providing expanded visibility and enhanced control.
+Snyk AppRisk Pro provides a more holistic view of application risk. It provides Insights into runtime risk factors, such as whether an application is deployed or public-facing, to help AppSec teams focus on the issues that really matter. The product also offers application-centric reporting to help teams measure the effectiveness of their AppSec program.
 
 ## Capabilities and features
 
@@ -15,7 +15,7 @@ Snyk AppRisk Pro empowers AppSec teams to enhance and expand their AppSec progra
 | **Integrations**                 | <ul><li>SCM</li></ul>                                                                                                                                        | <ul><li>SCM</li><li>Third-party SAST</li><li>Secrets</li><li>Runtime</li><li>ITSM</li></ul>                                                                                                                                                                                                                                           |
 | **Discovery and visibility**     | <ul><li>Discover and classify code-based assets and runtime-based assets (repositories, packages, images).</li><li>Issue counts identified by Snyk</li></ul> | <ul><li>Discover and classify code and runtime-based assets (repositories, packages, images).</li><li>Issue counts identified by Snyk and view issue counts identified by third-party tools.</li></ul>                                                                                                                                |
 | **Security coverage management** | Ensure these assets are covered by Snyk.                                                                                                                     | Ensure these assets are covered by Snyk or other third-party tools.                                                                                                                                                                                                                                                                   |
-| **Prioritization with Insights** |                                                                                                                                                              | <p>Manage risk from these assets:</p><ul><li>Prioritize issues posing greatest risk with business context and holistic application context, from development to runtime.</li><li>Automate risk management workflows for assets using policies.</li><li>Track and report upon program health with risk and coverage metrics.</li></ul> |
+| **Issue prioritization**         |                                                                                                                                                              | <p>Manage risk from these assets:</p><ul><li>Prioritize issues posing greatest risk with business context and holistic application context, from development to runtime.</li><li>Automate risk management workflows for assets using policies.</li><li>Track and report upon program health with risk and coverage metrics.</li></ul> |
 
 ## When and why to use Snyk AppRisk Essentials
 

@@ -40,18 +40,16 @@ You can customize the filters and actions or use the template as is. After finis
 {% hint style="warning" %}
 **Release status** \
 **Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only for Snyk AppRisk Pro plans. Based on feedback, the functionality is likely to evolve, and there will be breaking changes.
-
-Contact your account manager if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
 Each filter component requires you to specify an asset property. Available properties for asset policies include:
 
-* **Application\*** - the list of the applications for which you have configured the Backstage catalog in Snyk AppRisk.
+* **Application\*** - the list of the applications for which you have configured the application context (Backstage catalog or ServiceNow CMDB) in Snyk AppRisk.
 * **Asset ID** - the unique identifier of the asset.
 * **Asset name** - the name of the asset.
 * **Asset type** - repository, package or scanned artifact.
 * **Attribute** - asset attributes retrieved from the data source.
-* **Catalog name\*** - the name of your backstage catalog.
+* **Catalog name\*** - the name of your application context.
 * **Category\*** - the category of a repository asset. For example, service or library.
 * **Class** - specify the class of the asset.
 * **Coverage** - specify the product or products used to scan the asset. The Coverage filter identifies if at least one scan has been run by the specified product.
@@ -61,9 +59,9 @@ Each filter component requires you to specify an asset property. Available prope
 * **Issue severity** - specify the severity of the issue: critical, high, medium, low.
 * **Issue source** - specify where the issue was identified: SCM or third-party integrations. A source category will only be visible if there is at least one source present.
 * **Last seen** - specify the repository freshness status.
-* **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
+* **Lifecycle\*** - represents the lifecycle state of the application context component, for example `production`, `experimental`, `deprecated`.
 * **Locked attributes** - specify if the attribute value is locked.
-* **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
+* **Owner\*** - represents the team owning the repository for which the application context was configured.
 * **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **Runtime discovered** - specify the period when the runtime image asset was discovered.
 * **Runtime last seen** - specify the freshness status for the runtime image asset.
@@ -73,9 +71,9 @@ Each filter component requires you to specify an asset property. Available prope
   * **Dormant**: No commits in the last 6 months.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
-* **Title\*** - represents the name of the component for which the backstage catalog was configured.
+* **Title\*** - represents the name of the component for which the application context was configured.
 
-**\***All filters marked with `*` are visible only to the users who configured the Backstage catalog for their SCM integrations.
+**\***All filters marked with `*` are visible only to the users who configured the application context for their SCM integrations.
 
 {% hint style="info" %}
 **Coverage** and **Coverage gap**  filter differences
@@ -111,18 +109,18 @@ Each property contains different options for conditions and values:
 | <p></p><p>Issue severity</p> | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | <ul><li>Critical </li><li>High </li><li>Medium </li><li>Low</li></ul>                                                 |
 | Issue source                 | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | Snyk Code, Container, IaC, Open Source, Nightfall                                                                     |
 | Last seen                    | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
-| Lifecycle\*                  | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | the available list of the lifecycle states of the backstage catalog component                                         |
+| Lifecycle\*                  | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | the available list of the lifecycle states of the application context component                                       |
 | Locked attributes            | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Class</li></ul>                                                                                               |
-| Owner\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list of teams owning the repository for which the backstage catalog was configured.                               |
+| Owner\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list of teams owning the repository for which the application context was configured.                             |
 | Risk factors                 | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | the list of available risk factors                                                                                    |
 | Runtime discovered           | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
 | Runtime last seen            | <ul><li>Is within</li><li>Is not within</li></ul>                                                                                         | <ul><li>Last 24 hours</li><li>Last 7 days</li><li>Last 30 days</li><li>Last 12 months</li><li>Year to date</li></ul>  |
 | SCM Repository freshness     | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>Active</li><li>Inactive</li><li>Dormant</li></ul>                                                             |
 | Source                       | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | <ul><li>azure-devops</li><li>GitHub</li><li>GitLab</li><li>Snyk</li></ul>                                             |
 | Tags                         | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | all available tags you previously created                                                                             |
-| Title\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list with all the names of the component for which the backstage catalog was configured                           |
+| Title\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list with all the names of the component for which the application context was configured                         |
 
-**\***All filters marked with `*` are visible only to the users who configured the Backstage catalog for their SCM integrations.
+**\***All filters marked with `*` are visible only to the users who configured the application context for their SCM integrations.
 
 You can specify more than one filter component with an **And** or **Or** operator.\
 

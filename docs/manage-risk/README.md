@@ -4,7 +4,7 @@ Snyk has several features to help you manage Application Security (AppSec) risk.
 
 ## Snyk AppRisk
 
-[Snyk AppRisk](snyk-apprisk/) enables Application Security teams to run a full developer security program, covering use cases under Application Security Posture Management (ASPM).&#x20;
+[Snyk AppRisk](../scan-using-snyk/snyk-apprisk/) enables Application Security teams to run a full developer security program, covering use cases under Application Security Posture Management (ASPM).&#x20;
 
 Snyk AppRisk provides:
 

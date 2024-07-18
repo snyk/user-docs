@@ -2,7 +2,7 @@
 
 Snyk AppRisk is a product that enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. The product covers use cases under Application Security Posture Management (ASPM).
 
-The **Snyk AppRisk Essentials** offering is focused on enabling ASPM for Snyk products, while **Snyk AppRisk Pro** enhances the foundational capabilities of Snyk AppRisk Essentials by supporting non-Snyk Application Security products, offering a more extensive and flexible ASPM approach. It enables integrations with a wider range of security tools beyond the Snyk ecosystem, advanced security policies, in-depth risk analysis, and more customizable controls. This allows security teams to manage and maintain a robust security framework across diverse applications and development environments, ensuring a heightened level of protection and compliance.&#x20;
+**Snyk AppRisk Essentials** helps AppSec teams better operationalize and scale usage of Snyk with broad application visibility and security coverage management. At the same time, **Snyk AppRisk Pro** enhances the foundational capabilities of Snyk AppRisk Essentials by supporting non-Snyk Application Security products, offering a more extensive and flexible ASPM approach. It enables integrations with a wider range of security tools beyond the Snyk ecosystem, advanced security policies, in-depth risk analysis, and more customizable controls. This allows security teams to manage and maintain a robust security framework across diverse applications and development environments, ensuring a heightened level of protection and compliance.&#x20;
 
 Snyk AppRisk Essentials enables:&#x20;
 
@@ -30,14 +30,10 @@ Snyk AppRisk Essentials includes the following features:&#x20;
 On top of the Snyk AppRisk Essentials features, Snyk AppRisk Pro offers:
 
 * **Integrations** with non-Snyk products.
-* **Issues** prioritization for all scanned assets with application and business context in the Insights UI.
+* **Issues** prioritization for all scanned assets with runtime context in the Insights UI.
 * **Analytics** for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
 ## Using Snyk AppRisk Essentials and Snyk AppRisk Pro
-
-{% hint style="warning" %}
-Snyk AppRisk Pro is currently available in Closed Beta. Please contact your salesperson if you are interested in Snyk AppRisk Pro.
-{% endhint %}
 
 Access Snyk AppRisk Essentials and Snyk AppRisk Pro by following these steps:
 
@@ -45,4 +41,3 @@ Access Snyk AppRisk Essentials and Snyk AppRisk Pro by following these steps:
 2. Ensure you are a Group Administrator for the Group associated with Snyk AppRisk, or that you have a custom role assigned with the necessary permissions.
 
 Navigate to the [Snyk AppRisk Essentials vs Snyk AppRisk Pro](snyk-apprisk-essentials-vs-snyk-apprisk-pro.md) to check the features availability.
-
