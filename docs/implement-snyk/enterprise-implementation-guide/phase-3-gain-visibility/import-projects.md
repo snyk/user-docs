@@ -2,8 +2,8 @@
 
 Depending on the integrations you have configured and the language and package managers in your tech stack, you can import Projects into Snyk using the following:&#x20;
 
-* A source control integration with your Git repositories.
-* The Snyk CLI with CI/CD.
+* A source control integration with your Git repositories
+* The Snyk CLI with CI/CD
 
 The best import route varies based on the languages and package managers in your tech stack.&#x20;
 
@@ -19,7 +19,7 @@ Snyk offers various integration methods to meet your needs, as described here.
 
 ### Git integration
 
-You can connect your repositories for automatic scanning. See [Git repositories (SCMs) integrations with Snyk](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/) for more details.
+You can connect your repositories for automatic scanning. See [Snyk SCM integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/) for more details.
 
 For a small number of applications, typically under a hundred, follow these steps.
 
@@ -30,7 +30,7 @@ For a small number of applications, typically under a hundred, follow these step
 3. From the Projects listing, add Projects using the Web UI.
 4. Monitor results in Git code repositories.
 
-For hundreds or thousands of repositories, you can use the [Snyk API v1 Import targets endpointI](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets) to import your Projects. This takes advantage of an existing source control integration and can be used to automate processes.
+For hundreds or thousands of repositories, you can use the[ V1 API v1 Import targets endpoint ](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)to import your Projects. This takes advantage of an existing source control integration and can be used to automate processes.
 
 The [snyk-api-import](../../../scan-using-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. You must mirror the source control structure when using the snyk-api-import tool.
 
@@ -44,8 +44,8 @@ You must formulate a command for each type of test to perform: open source, code
 
 Follow these steps to use the CLI:
 
-1. [Install the CLI ](../../../snyk-cli/install-or-update-the-snyk-cli/)using one of the appropriate methods as part of the build script
-2. In the script, navigate to the Project folder
+1. [Install the CLI ](../../../snyk-cli/install-or-update-the-snyk-cli/)using one of the appropriate methods as part of the build script.
+2. In the script, navigate to the Project folder.
 3. Run the appropriate `snyk test` or `snyk monitor` commands with the appropriate options for the type of scan being run. \
    Where to implement testing in your scripts is generally flexible, but most commonly, testing is done prior to deployment. Use the `monitor` command alone for Snyk Open Source and Snyk Container to report vulnerabilities passively. In using gating with the `test` command, the idea is to break the build if issues are found that meet particular criteria like `--severity-threshold` or any number of options in the CLI or snyk-filter plugin. \
    \
