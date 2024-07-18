@@ -19,7 +19,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 {% endembed %}
 
 {% hint style="info" %}
-Manage assets and assets policies are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
+[Manage assets](../../../manage-assets/) and [assets policies](./) are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
 {% endhint %}
 
 ## **Use Cases**
