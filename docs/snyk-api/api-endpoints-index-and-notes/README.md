@@ -4,7 +4,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## AccessRequests (beta)
 
-### [Get access requests](https://apidocs.snyk.io/?beta=\&version=2024-05-23%7Ebeta#get-/self/access\_requests)
+### [Get access requests](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/self/access\_requests)
 
 ## Apps
 
@@ -142,23 +142,23 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 ## Cloud (beta)
 
-### [List Environments](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/cloud/environments)
+### [List Environments](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/environments)
 
-### [Create New Environment](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#post-/orgs/-org\_id-/cloud/environments)
+### [Create New Environment](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/cloud/environments)
 
-### [Delete Environment](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#delete-/orgs/-org\_id-/cloud/environments/-environment\_id-)
+### [Delete Environment](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#delete-/orgs/-org\_id-/cloud/environments/-environment\_id-)
 
-### [Update Environment](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#patch-/orgs/-org\_id-/cloud/environments/-environment\_id-)
+### [Update Environment](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#patch-/orgs/-org\_id-/cloud/environments/-environment\_id-)
 
-### [Generate Cloud Provider Permissions](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#post-/orgs/-org\_id-/cloud/permissions)
+### [Generate Cloud Provider Permissions](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/cloud/permissions)
 
-### [List Resources](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/cloud/resources)
+### [List Resources](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/resources)
 
-### [List Scans](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/cloud/scans)
+### [List Scans](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/scans)
 
-### [Create Scan](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#post-/orgs/-org\_id-/cloud/scans)
+### [Create Scan](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/cloud/scans)
 
-### [Get scan](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/cloud/scans/-scan\_id-)
+### [Get scan](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/scans/-scan\_id-)
 
 ## Collection
 
@@ -226,17 +226,17 @@ To find who created an Org-level or Group-level service account, use API v1 [Get
 
 ## Groups (beta)
 
-### [Get all groups](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups)
+### [Get all groups](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups)
 
-### [Get a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-)
+### [Get a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-)
 
 **More information:** [Org and group identification for Projects](undefined.md)
 
-### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-/sso\_connections)
+### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-/sso\_connections)
 
-### [Get all users using a given SSO connection](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users)
+### [Get all users using a given SSO connection](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users)
 
-### [Delete a user from a Group SSO connection](https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
+### [Delete a user from a Group SSO connection](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
 
 **More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md) and [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md).
 
@@ -542,7 +542,7 @@ Note: Remedies are not included in the response at this time.
 
 ### [List accessible organizations](https://apidocs.snyk.io/?#get-/orgs)
 
-### [Get an ORG](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-) (beta)
+### [Get an ORG](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-) (beta)
 
 ### [Get organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-)
 
@@ -776,11 +776,11 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Get a project’s SBOM document](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-/sbom)
 
-### [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) (beta)
+### [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) (beta)
 
-### [Gets an SBOM test run status](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-) (beta)
+### [Gets an SBOM test run status](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-) (beta)
 
-### [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results) (beta)
+### [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results) (beta)
 
 ## SastSettings
 
@@ -840,7 +840,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## Targets
 
-### [Get targets by org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/targets)
+### [Get targets by org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/targets)&#x20;
 
 **More information:** [Target definition on the Projects page](../../snyk-admin/snyk-projects/#target)
 
@@ -944,13 +944,13 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## Users
 
-### [Update a user’s role in a group](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#patch-/groups/-group\_id-/users/-id-) (beta)
+### [Update a user’s role in a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#patch-/groups/-group\_id-/users/-id-) (beta)
 
 Note: Use this endpoint to remove users from a group.
 
 **More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
 
-### [Get user by ID](https://apidocs.snyk.io/?version=2024-05-23%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
+### [Get user by ID](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
 
 ### [My User Details](https://apidocs.snyk.io/?#get-/self)
 
