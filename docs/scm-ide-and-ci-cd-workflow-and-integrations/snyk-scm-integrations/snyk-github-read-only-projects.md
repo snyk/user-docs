@@ -1,8 +1,19 @@
 # Snyk GitHub Read-only Projects
 
+When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+
+* [Group level ](snyk-github-read-only-projects.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](snyk-github-read-only-projects.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+
+{% hint style="info" %}
+If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+{% endhint %}
+
 Snyk offers GitHub Read-only Projects, providing the ability to monitor a public GitHub repository that is not owned by your Organization.
 
-## How GitHub Read-only Projects work
+## Organization level - Snyk integrations
+
+### How GitHub Read-only Projects work
 
 Adding a read-only Project lets you track the vulnerabilities in a Project you are considering using as a dependency, a Project you are already using as a stand-alone independent tool within your business, or any other public repository where you do not need to actively prevent or fix issues using Snyk.
 
@@ -16,7 +27,7 @@ Unlike Projects imported through the Snyk GitHub integration, Projects that are 
 * Use [automated dependency upgrade PRs](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/) to keep dependencies up to date, avoid new vulnerabilities, and simplify fixing those that are found.
 * Use manual Fix PRs generated through Snyk to address specific issues chosen by the user.
 
-## How to monitor a public GitHub repository
+### How to monitor a public GitHub repository
 
 You can import a read-only Project using the **Add project** **> Monitor public GitHub repos** menu in the **Dashboard** and **Projects** tabs, or by going to [Monitor public GitHub repositories](https://app.snyk.io/add/github-readonly).
 
@@ -28,3 +39,7 @@ You can import a read-only Project using the **Add project** **> Monitor public 
 3. Enter the public repositories you want to monitor and select **Import N repository/ies**.
 
 <figure><img src="../../.gitbook/assets/github_readonly_steps 2 &#x26; 3_18july2022.png" alt="Add repo and Import repository or repositories"><figcaption><p>Add repo and Import repository or repositories</p></figcaption></figure>
+
+## Group level - Snyk AppRisk integrations
+
+Navigate to the [GitHub setup guide for Snyk AppRisk ](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.

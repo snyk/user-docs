@@ -1,37 +1,21 @@
-# Connect a third-party integration
+# Third-party integrations for Snyk AppRisk
 
-{% hint style="warning" %}
-**Release status**\
-The third-party integrations are available in Closed Beta and are applicable only to the Snyk AppRisk Pro version. Contact your salesperson if you are interested in Snyk AppRisk Pro.
-{% endhint %}
-
-The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
+The Integrations page shows all active integrations, including data from your existing Snyk Organizations that are automatically synced and provides access to the Integration Hub.
 
 {% hint style="info" %}
 The Loaded package risk factor is not supported by Snyk for open-source packages, only for application packages such as npm, Maven, or PyPI.
 {% endhint %}
 
-You can customize your AppRisk integrations from the **Integrations Hub** where the following SAST and Secrets integrations are available:
+You can customize your AppRisk integrations from the **Integrations Hub** where the following integrations are available:
 
-SAST:
-
-* [Veracode SAST](connect-a-third-party-integration.md#veracode-setup-guide)
-* [Checkmarx SAST ](connect-a-third-party-integration.md#checkmarx-setup-guide)
-* [SonarQube](connect-a-third-party-integration.md#sonarqube-setup-guide)
-
-Secrets:
-
-* [Nightfall](connect-a-third-party-integration.md#nightfall-setup-guide)
-* [GitGuardian](connect-a-third-party-integration.md#gitguardian-setup-guide)
-
-Runtime:
-
-* [Dynatrace](connect-a-third-party-integration.md#dynatrace-setup-guide)
-* [Sysdig](connect-a-third-party-integration.md#sysdig-setup-guide)
-
-ITSM:
-
-* [Jira](connect-a-third-party-integration.md#jira-setup-guide)
+* [Veracode SAST](third-party-integrations-for-snyk-apprisk.md#veracode-setup-guide)
+* [Checkmarx SAST ](third-party-integrations-for-snyk-apprisk.md#checkmarx-setup-guide)
+* [SonarQube](third-party-integrations-for-snyk-apprisk.md#sonarqube-setup-guide)
+* [Nightfall](third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide)
+* [GitGuardian](third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide)
+* [Dynatrace](third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide)
+* [Sysdig](third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide)
+* [Jira](third-party-integrations-for-snyk-apprisk.md#jira-setup-guide)
 
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
@@ -72,13 +56,13 @@ Ensure you are adding a custom field called repoURL:
 
 Use the following instructions to set up your Checkmarx SAST integration. Checkmarx SAST integration is only working for the Checkmarx SAST, we are not yet supporting Checkmarx One.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Snyk AppRisk Pro does not currently support the Checkmarx One integration.
 {% endhint %}
 
 ### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>
 
-* Install and configure your [Snyk Broker](../../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
+* Install and configure your [Snyk Broker](../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
 * Ensure you have properly used Git Setting for your Checkmarx Project based on the Checkmarx [documentation](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git).
 
 ### Required parameters <a href="#checkmarx-required-parameters" id="checkmarx-required-parameters"></a>
@@ -202,7 +186,7 @@ Ensure you have the correct user permissions before creating the API Token.
 * Click the **Done** button.
 * When the connection is established, the status of the Nightfall integration is changed to **Connected**.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 You can add only one Jira profile to the Jira integration.
 {% endhint %}
 
@@ -211,18 +195,18 @@ You can add only one Jira profile to the Jira integration.
 Multiple Jira integrations are available when using Snyk, each designed to support specific needs.
 
 * Jira - Manually create a ticket for issues from Snyk.
-* [Jira Script](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md) - Automatically create tickets for new vulnerabilities.
-* [Security in Jira](../../../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) - View vulnerability information in Jira and create a ticket from Jira. The ticket is not visible in Snyk.
-* [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide) - As part of the policy action, you can automatically create Jira tickets from Snyk AppRisk Assets.
+* [Jira Script](jira-and-slack-integrations/jira-integration.md) - Automatically create tickets for new vulnerabilities.
+* [Security in Jira](jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) - View vulnerability information in Jira and create a ticket from Jira. The ticket is not visible in Snyk.
+* [Jira for Snyk AppRisk](third-party-integrations-for-snyk-apprisk.md#jira-setup-guide) - As part of the policy action, you can automatically create Jira tickets from Snyk AppRisk Assets.
 
 The following table presents the functionality of all types of Jira integrations available in Snyk, specifies the supported Jira platform, the expected outcome, the authentication type, and the level of availability in Snyk.
 
-| Jira integration type                                                                                                   | Functionality                                                                                                                                                                                                                                                                          | Authentication                                                                                                                                                           |
-| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Jira                                                                                                                    | <p>Create a manual ticket for issues from Snyk.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                                       | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
-| [Jira Script](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md)                             | <p>Automatically create tickets for new vulnerabilities.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                              | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
-| [Security in Jira](../../../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) | <p>View vulnerability information in Jira and create a ticket from Jira. <br>* Jira ticket is not visible in Snyk.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                           | <p><strong>Authentication type</strong>:  JWT(JSON Web Token) as part of the Connect App framework.</p><p><br><strong>Availability level</strong>: Snyk Organization</p> |
-| [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide)                                          | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
+| Jira integration type                                                                      | Functionality                                                                                                                                                                                                                                                                          | Authentication                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Jira                                                                                       | <p>Create a manual ticket for issues from Snyk.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                                       | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
+| [Jira Script](jira-and-slack-integrations/jira-integration.md)                             | <p>Automatically create tickets for new vulnerabilities.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                              | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
+| [Security in Jira](jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) | <p>View vulnerability information in Jira and create a ticket from Jira. <br>* Jira ticket is not visible in Snyk.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                           | <p><strong>Authentication type</strong>:  JWT(JSON Web Token) as part of the Connect App framework.</p><p><br><strong>Availability level</strong>: Snyk Organization</p> |
+| [Jira for Snyk AppRisk](third-party-integrations-for-snyk-apprisk.md#jira-setup-guide)     | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
 
 ## Dynatrace setup guide
 
@@ -284,7 +268,7 @@ The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-
 * **Account API Token** - [Here](https://docs.sysdig.com/en/docs/administration/administration-settings/user-profile-and-password/retrieve-the-sysdig-api-token/) you can find details on how to retrieve your Sysdig API Token.
 
 {% hint style="info" %}
-The `Account API Token` must be a `Sysdig Secure API token` and not a `Sysdig Monitor API Token`.&#x20;
+The **Account API Token** must be a **Sysdig Secure API token** and not a **Sysdig Monitor API Token**.&#x20;
 {% endhint %}
 
 * **Region -** [**Here**](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges) you can find details about the Sysdig region URLs.

@@ -9,7 +9,7 @@ Use the Snyk Web UI to run Snyk from any [supported browser](quickstart/#support
 In the Snyk Web UI, you can visualize information at the [Group](snyk-web-ui.md#group-level) or [Organization](snyk-web-ui.md#organization-level) level by clicking the name of the Group or Organization. [General information](snyk-web-ui.md#general-settings-available-for-all-level-types), like the Reports, Issues, Dependencies, Members, Settings, Help, and Settings[^1], is available for all level types.
 
 {% hint style="info" %}
-Snyk AppRisk Essentials is available with the Snyk Enterprise plan.&#x20;
+Snyk AppRisk Essentials is available with Snyk Enterprise.&#x20;
 {% endhint %}
 
 ## Group level
@@ -105,6 +105,16 @@ You can add a new profile by following these steps:
 1. Click the **Settings** icon from an already available integration profile.
 2. Click **Add profile**.
 3. Fill in the configuration fields and click **Done**.
+
+#### Edit an integration
+
+You can edit an existing integration by clicking Settings on the integrations card and then clicking Settings again on the added organization for that integration.
+
+<figure><img src="../.gitbook/assets/image.png" alt="Edit an existing integration from the Integration Hub"><figcaption><p>Edit an existing integration from the Integration Hub</p></figcaption></figure>
+
+{% hint style="info" %}
+For security reasons, all credentials are anonymized when you open the Settings of an already existing integration.
+{% endhint %}
 
 #### Remove an integration
 

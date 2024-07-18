@@ -1,5 +1,16 @@
 # Snyk Bitbucket Cloud integration
 
+When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+
+* [Group level ](snyk-bitbucket-cloud-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](snyk-bitbucket-cloud-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+
+{% hint style="info" %}
+If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+{% endhint %}
+
+## Organization level - Snyk integrations
+
 {% hint style="info" %}
 **Feature availability**\
 This feature is available for all plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -13,7 +24,7 @@ The Snyk Bitbucket Cloud (PAT) integration lets you:
 * Detect vulnerabilities in your open-source components
 * Provide automated fixes and upgrades
 
-## How to set up the Snyk Bitbucket Cloud Integration
+### How to set up the Snyk Bitbucket Cloud Integration
 
 {% hint style="info" %}
 Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the App Password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/).
@@ -39,7 +50,7 @@ Admin permissions are required; however, Snyk's access is ultimately limited by 
    \
    <img src="../../.gitbook/assets/settings (1).png" alt="Bitbucket Cloud settings successfully updated." data-size="original">
 
-## How to add Bitbucket repositories to Snyk
+### How to add Bitbucket repositories to Snyk
 
 After you connect Snyk to your Bitbucket Cloud account, you can select repositories for Snyk to monitor.
 
@@ -52,7 +63,7 @@ The imported projects appear on your **Projects** page and are continuously chec
 
 <figure><img src="../../.gitbook/assets/444 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12) (2).png" alt="The Imported projects on your Projects page"><figcaption><p>The Imported projects on your <strong>Projects</strong> page</p></figcaption></figure>
 
-## Bitbucket integration features
+### Bitbucket integration features
 
 After the integration is in place, you will be able to use capabilities such as:
 
@@ -60,7 +71,7 @@ After the integration is in place, you will be able to use capabilities such as:
 * [Project monitoring and automatic fix pull requests](snyk-bitbucket-cloud-integration.md#project-monitoring-and-automatic-fix-pull-requests)
 * [Pull request testing](snyk-bitbucket-cloud-integration.md#pull-request-tests)
 
-### Project-level security reports
+#### Project-level security reports
 
 Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/reports-overview) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
@@ -68,7 +79,7 @@ The example that follows shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="An example of a Project-level security report"><figcaption><p>An example of a Project-level security report</p></figcaption></figure>
 
-### Project monitoring and automatic fix Pull Requests
+#### Project monitoring and automatic fix Pull Requests
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-new-fixes.md) with fixes for your repositories.
 
@@ -89,7 +100,7 @@ Unlike manual pull requests opened from the Bitbucket interface, Snyk pull reque
 For more information, see [Snyk automated pull requests](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-new-fixes.md).
 {% endhint %}
 
-### Pull request tests
+#### Pull request tests
 
 Snyk tests any newly-created pull request in your repositories for security vulnerabilities and sends a build check to Bitbucket Cloud. You can see directly from Bitbucket Cloud whether or not the pull request introduces new security issues.
 
@@ -104,7 +115,7 @@ To review and adjust the pull request tests settings:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png" alt="Configuring the options for pull request Open Source Security &#x26; Licenses"><figcaption><p>Configuring the options for pull request Open Source Security &#x26; Licenses</p></figcaption></figure>
 
-## Required permission scope for the Bitbucket Cloud integration
+### Required permission scope for the Bitbucket Cloud integration
 
 All the operations, whether triggered manually or automatically, are performed for a Bitbucket Cloud [service account](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/service-accounts) that has its token (App Password) configured in the **Integration settings**.
 
@@ -112,7 +123,7 @@ For Snyk to perform the required operations on monitored repositories, such as r
 
 For detailed information on the permission scopes required, see [Bitbucket permission requirements](./#bitbucket-permission-requirements).
 
-## How to disconnect Snyk from Bitbucket Cloud
+### How to disconnect Snyk from Bitbucket Cloud
 
 {% hint style="warning" %}
 When you disconnect Snyk from your repository Projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
@@ -128,7 +139,7 @@ To disconnect this integration, in **Organization settings** > **Integrations:**
 
 <figure><img src="../../.gitbook/assets/mceclip2-4-.png" alt="Disconnect button at the bottom left of the Disconnect from Bitbucket Cloud section"><figcaption><p>Disconnect button at the bottom left of the Disconnect from Bitbucket Cloud section</p></figcaption></figure>
 
-## Migrate to the Snyk Bitbucket Cloud App
+### Migrate to the Snyk Bitbucket Cloud App
 
 This section describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](snyk-bitbucket-cloud-integration.md), displayed in Snyk as Bitbucket Cloud, to the [**Bitbucket Cloud App**](snyk-bitbucket-cloud-app-integration.md) integration.
 
@@ -181,7 +192,7 @@ Go to your **Workspace settings** page in **Bitbucket.org > Manage installed app
 
 See the [Bitbucket Cloud App integration](snyk-bitbucket-cloud-app-integration.md) topic for instructions.
 
-### Migration demo
+#### Migration demo
 
 In less than five minutes, Marco Morales, a Partner Solutions Architect at Snyk, talks about the Snyk Bitbucket Cloud App and goes through the process of migrating an existing Bitbucket Cloud integration to the Snyk Bitbucket Cloud App.
 
@@ -190,3 +201,54 @@ _Go to timestamp 2:34 to jump right into the demo._
 {% embed url="https://thoughtindustries-1.wistia.com/medias/32rgw3hkdk" %}
 How to migrate to the new Snyk Bitbucket Cloud App integration
 {% endembed %}
+
+## Group level - Snyk AppRisk integrations
+
+The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
+
+### BitBucket setup guide
+
+{% hint style="info" %}
+Bitbucket Server and Bitbucket Cloud do not support automatic language detection. You can manually add language tags to a Bitbucket Cloud repository.\
+After manually setting up the languages in your Bitbucket project, Snyk can automatically detect and ingest all those languages in your Snyk AppRisk application.
+{% endhint %}
+
+#### Pulled entities <a href="#bitbucket-pulled-entities" id="bitbucket-pulled-entities"></a>
+
+* Users
+* Repositories
+
+#### Integrate using Snyk AppRisk <a href="#bitbucket-integrate-using-snyk-apprisk" id="bitbucket-integrate-using-snyk-apprisk"></a>
+
+1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+2. Access Token (`mandatory`): Create your BitBucket PAT from your BitBucket organization.
+
+{% hint style="info" %}
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
+{% endhint %}
+
+3. API URL (`mandatory`) - Input the API URL.
+4. Username (`mandatory`): Input the BitBucket username of your organization.
+5. App password (`mandatory`): Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
+   * **Workspace membership** - Read
+   * **Account** - Read
+   * **Projects** - Read
+   * **Repositories** - Read
+   * **Issues** - Read
+
+{% hint style="info" %}
+Create a BitBucket app password by following these steps:
+
+1. Open your BitBucket account&#x20;
+2. Click the Settings option
+3. Click the Personal BitBucket settings option&#x20;
+4. Navigate to the App passwords sub-section from the ACCESS MANAGEMENT section.
+{% endhint %}
+
+6. Service type (`mandatory`): Select the service type, Cloud, or On-premises.
+7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
+
+#### API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
+
+You can use the [BitBucket REST API V2](https://developer.atlassian.com/bitbucket/api/2/reference/resource/) repository to access information about the API.
+

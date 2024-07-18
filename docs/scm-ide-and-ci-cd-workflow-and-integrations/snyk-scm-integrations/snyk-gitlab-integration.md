@@ -1,16 +1,27 @@
 # Snyk GitLab integration
 
+When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+
+* [Group level ](snyk-gitlab-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](snyk-gitlab-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+
+{% hint style="info" %}
+If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+{% endhint %}
+
+## Organization level - Snyk integrations
+
 {% hint style="warning" %}
 &#x20;**Feature availability**\
 The Snyk GitLab integration is available for [Snyk Enterprise plan](https://snyk.io/plans/) customers. [Snyk Broker](../../enterprise-configuration/snyk-broker/) is required if you integrate from a private network.
 {% endhint %}
 
-## Prerequisites for Snyk GitLab integration
+### Prerequisites for Snyk GitLab integration
 
 * GitLab versions 9.5 and above (API v4).
 * A public or private GitLab group or project.
 
-## Snyk GitLab integration features
+### Snyk GitLab integration features
 
 The Snyk GitLab integration allows you to:
 
@@ -19,7 +30,7 @@ The Snyk GitLab integration allows you to:
 3. Receive [email alerts](snyk-gitlab-integration.md#receive-email-alerts-for-new-vulnerabilities) when new vulnerabilities that affect your repository arise and fixes for those vulnerabilities are shown.
 4. Receive [email alerts](snyk-gitlab-integration.md#receive-email-alerts-for-new-upgrades-or-patches) containing a new pull request if a new upgrade or patch is available for a vulnerability.
 
-## GitLab access tokens
+### GitLab access tokens
 
 To set up the GitLab integration with Snyk, create a GitLab access token and enter this into the Snyk application.&#x20;
 
@@ -34,9 +45,9 @@ To trigger the creation of fix pull requests manually, all users in a Snyk Organ
 Group Access Tokens can only be created by a GitLab Owner using a GitLab Premium or Ultimate [account tier](https://about.gitlab.com/pricing/). This can be done in [GitLab's web UI](https://docs.gitlab.com/ee/user/group/settings/group\_access\_tokens.html), their Rails console, or through the GitLab API.
 {% endhint %}
 
-## How to set up the Snyk GitLab integration
+### How to set up the Snyk GitLab integration
 
-### Add a GitLab Personal Access Token in GitLab
+#### Add a GitLab Personal Access Token in GitLab
 
 1.  Generate a GitLab Personal Access Token in a GitLab instance.\
     Select the profile icon, then **Edit Profile > Access Tokens**.\
@@ -58,7 +69,7 @@ Group Access Tokens can only be created by a GitLab Owner using a GitLab Premium
 
     </div>
 
-### Add a GitLab Group Access Token
+#### Add a GitLab Group Access Token
 
 Generating a GitLab Group Access Token requires selecting the Maintainer role for access.
 
@@ -84,9 +95,9 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 
     <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Enter your GitLab Group Access Token into the Snyk application Personal access token field.</p></figcaption></figure>
 
-## **Uses of the Snyk GitLab integration**
+### **Uses of the Snyk GitLab integration**
 
-### **Fix vulnerabilities with Snyk merge requests**
+#### **Fix vulnerabilities with Snyk merge requests**
 
 When viewing a Snyk test report for a Snyk Project that you own or when looking at a GitLab Project that you are watching with Snyk, you see two options for fixing a vulnerability:
 
@@ -105,11 +116,11 @@ You can review the vulnerabilities that will be fixed, change your selection wit
 **GitLab webhooks** send out an event to Snyk when merge requests occur. This starts a series of other events, such as pulling GitLab project files, running the test process, and posting the results to GitLab, all of which occur on the Snyk side.
 {% endhint %}
 
-### Receive email alerts for new vulnerabilities
+#### Receive email alerts for new vulnerabilities
 
 When a new vulnerability is detected on a Snyk Project you are watching, Snyk will send you an email with a generated Snyk merge request to address the vulnerability.
 
-### Receive email alerts for new upgrades or patches
+#### Receive email alerts for new upgrades or patches
 
 You may find yourself in a situation where no upgrade is found for a vulnerability, and only a patch is available. When a fix does become available, Snyk notifies you by email and generates a merge request containing the new fix.
 
@@ -117,7 +128,7 @@ You may find yourself in a situation where no upgrade is found for a vulnerabili
 Patching is only available on Node.js Projects.
 {% endhint %}
 
-## How to disconnect the Snyk GitLab integration
+### How to disconnect the Snyk GitLab integration
 
 {% hint style="warning" %}
 Disconnecting the Snyk GitLab integration removes all Snyk webhooks, along with the Snyk credentials, and deactivates the GitLab Projects in the Snyk Web UI.
@@ -142,12 +153,54 @@ After GitLab is disconnected, Snyk Projects imported from GitLab will be set to 
 
 You can re-connect anytime; however, re-initiating GitLab projects for monitoring requires setting up the integration again.
 
-## Snyk GitLab Troubleshooting
+### Snyk GitLab Troubleshooting
 
-### Error message: Could not connect to GitLab
+#### Error message: Could not connect to GitLab
 
 When you are adding the environment URL and access token to set up the integration, the following message may appear:
 
 <figure><img src="../../.gitbook/assets/2023-09-05_15-25-06.png" alt="Could not connect to GitLab integration error message" width="563"><figcaption><p>Could not connect to GitLab integration error message</p></figcaption></figure>
 
 This is a permissions issue unless [Snyk Broker](https://support.snyk.io/hc/en-us/articles/360005105598-Gitlab-Broker-is-not-working) is involved. In the PAT settings in GitLab, ensure you have selected the api scope and the **Maintainer** role.
+
+## Group level - Snyk AppRisk integrations
+
+The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
+
+### GitLab setup guide
+
+#### Pulled entities <a href="#gitlab-pulled-entities" id="gitlab-pulled-entities"></a>
+
+* Users
+* Repositories&#x20;
+
+#### Integrate using Snyk AppRisk <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
+
+1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+2. API Token (`mandatory`): Create your GitLab PAT from your GitLab organization. Follow the instructions in [Generate a Personal access token from your GitLab settings section](snyk-gitlab-integration.md#generate-a-personal-access-token-from-your-gitlab-settings). Authorize your personal access token if you have configured SAML SSO.
+
+{% hint style="info" %}
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
+{% endhint %}
+
+3. Host URL (`mandatory`): The IP/URL of the GitLab server. The default URL is [`https://gitlab.com`](https://gitlab.com)
+4. Verify SSL (`optional`): Enable the option if you want to verify the SSL.
+5. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.
+6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
+
+#### Generate a Personal access token from your GitLab settings
+
+1. Navigate to your GitLab profile.
+2. Select Edit Profile.
+3. On the left sidebar, select Access Token.
+4. Select Add New Token.
+5. Enter a name and expiry date for the token.
+6. Ensure to enable this permission:
+   * `read_api` - Grants read access to the API, including all groups and projects, the container registry, and the package registry.
+   * `read_repository` - Grants read-only access to repositories on private projects using Git-over-HTTP or the Repository Files API.
+7. Click the Create personal access token button.
+8. Copy and store the displayed key.
+
+#### API version <a href="#gitlab-api-version" id="gitlab-api-version"></a>
+
+You can use the[ GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) repository to access information about the API.

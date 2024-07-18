@@ -2,6 +2,80 @@
 
 You can integrate Snyk with your Git repository to quickly and easily gain visibility across all the [Snyk Projects](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects) that you add to your **Projects** list.
 
+This page contains information about the following Snyk SCM integration aspects:
+
+* [Snyk AppRisk SCM integrations available at the Group level](./#group-level-snyk-apprisk-scm-integrations)
+* [Snyk SCM integrations available at the Organization level](./#organization-level-snyk-scm-integrations)
+* [General user permissions and access scope requirements](./#user-permissions-and-access-scope-requirements)
+
+## Overview
+
+When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
+
+* [Group level ](./#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](./#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products except Snyk AppRisk.
+
+{% hint style="info" %}
+To set up integrations for Snyk AppRisk, use the **Integrations** menu at the Group level.
+{% endhint %}
+
+## Group level - Snyk AppRisk SCM integrations
+
+You can customize your Snyk AppRisk integrations from the **Integrations Hub** where the following SCMs are available:
+
+* [GitHub](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)
+* [GitLab](snyk-gitlab-integration.md#gitlab-setup-guide)
+* [Azure DevOps](snyk-azure-repositories-tfs-integration.md#azure-devops-setup-guide)
+* [BitBucket](snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide)
+
+Snyk AppRisk Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
+
+If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
+
+The Integrations page at the Group level shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
+
+The following supported Snyk data are automatically synced:
+
+* Snyk Open Source
+* Snyk Code
+* Snyk IaC
+* Snyk Container&#x20;
+
+Each connected integration enables you to:
+
+* Pause data syncing
+* Modify integration profiles and configurations
+* Delete the integration
+* Check when the integration was last synced and when the next sync is scheduled.
+
+### Snyk AppRisk integrations ecosystem
+
+You can refer to the table below to verify the availability and compatibility of all integrations for Snyk AppRisk. The integrations are categorized by type, listed by name, and indicated as available or not for both Snyk AppRisk Essentials and Snyk AppRisk Pro.
+
+<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk AppRisk Essentials</th><th>Snyk AppRisk Pro</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="snyk-github-integration.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide">BitBucket</a></li><li><a href="snyk-github-integration.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="snyk-azure-repositories-tfs-integration.md#azure-devops-setup-guide">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="application-context-for-scm-integrations.md">Backstage catalog</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#jira-setup-guide">Jira</a></li><li><a href="../../integrate-with-snyk/jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide">NightFall</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="../../integrate-with-snyk/snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
+
+### Using the Integration Hub
+
+Use the Integration Hub page to onboard integrations and populate Snyk AppRisk with data from SCM tools.
+
+See the [Snyk Web UI](../../getting-started/snyk-web-ui.md#manage-your-integrations) page for step-by-step instructions on how to set up an integration.
+
+After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
+
+### Using Snyk Broker
+
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker - AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
+
+{% hint style="info" %}
+Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before running the commands.
+{% endhint %}
+
+You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445489dd96cc68c8386ede38/defaultFilters/apprisk) all the updated `.json` files that include the allowed list of accessible endpoints for the integrations.
+
+## Organization level - Snyk SCM integrations
+
+Snyk provides seamless integrations with various source control management systems such as GitHub, GitLab, Bitbucket, and Azure Repos at the Organizational level. These integrations enable you to automatically scan for vulnerabilities and receive actionable insights to enhance the security of your repositories. By integrating at this level, you can ensure comprehensive protection for all your Projects within the Organization.
+
 Snyk Source Control Manager (SCM) integrations allow you to:
 
 * Continuously perform security scanning across all integrated repositories
@@ -12,7 +86,7 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 
 * [GitHub Cloud App](snyk-github-cloud-app.md)
 * [GitHub Server App](snyk-github-server-app.md)
-* [GitHub Enterprise](snyk-github-enterprise-integration.md)
+* [GitHub Enterprise](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md)
 * [GitHub](snyk-github-integration.md)
 * [GitHub Read-only Projects](snyk-github-read-only-projects.md)
 * [GitLab](snyk-gitlab-integration.md)
@@ -74,7 +148,7 @@ A fine-grained PAT requires additional repository access scopes:
 * `Webhooks: Read and write`
 * `Members access: Read-only (Organization access scope)`
 
-Snyk uses PRs to tell [GitHub Enterprise](snyk-github-enterprise-integration.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
+Snyk uses PRs to tell [GitHub Enterprise](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
 
 Snyk uses SCM webhooks to:
 

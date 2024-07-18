@@ -8,6 +8,11 @@ Snyk supports SCM, IDE, and CI/CD workflow and integration methods that allow yo
 Enterprise plan users have access to all of the functionality. The API and Snyk AppRisk are not available to Free and Team plan users. See [Plans and pricing](https://snyk.io/plans/) for more information.
 {% endhint %}
 
+There are two ways of implementing SCM integrations in a Snyk environment:
+
+* **Group level** - At the Group level, you can set up the SCM integrations for Snyk AppRisk.&#x20;
+* **Organization level** - At the Organization level, you can set up the SCM integrations for all Snyk plans. See the [Manage your Integrations](../getting-started/snyk-web-ui.md) at the Organizational level page for more details.&#x20;
+
 ## Choose an Integration
 
 If you are an Enterprise customer, see [Choose rollout integrations](../implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations.md) in the Enterprise implementation guide for tips and considerations on import strategies, as well as context for which integrations suit your SDLC.

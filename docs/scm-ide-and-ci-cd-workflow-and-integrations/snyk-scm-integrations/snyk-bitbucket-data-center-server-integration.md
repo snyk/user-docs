@@ -1,5 +1,16 @@
 # Snyk Bitbucket Data Center/Server integration
 
+When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+
+* [Group level ](snyk-bitbucket-data-center-server-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](snyk-bitbucket-data-center-server-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+
+{% hint style="info" %}
+If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+{% endhint %}
+
+## Organization level - Snyk integrations
+
 {% hint style="info" %}
 **Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -9,7 +20,7 @@ The Snyk Bitbucket Data Center/Server integration allows you to continuously per
 
 For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](https://snyk.io/blog/snyk-bitbucket-best-practices-cheat-sheet/) on the Snyk blog.
 
-## How to set up a Bitbucket DC/Server Integration
+### How to set up a Bitbucket DC/Server Integration
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up a dedicated service account in Bitbucket DC/Server with admin permissions.\
    Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.\
@@ -22,7 +33,7 @@ For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](h
    Snyk connects to your Bitbucket DC/Server instance.\
    When the connection succeeds, a confirmation message appears on your integrations screen.
 
-## How to import Bitbucket Server repositories
+### How to import Bitbucket Server repositories
 
 To select the repositories for Snyk to monitor:
 
@@ -35,7 +46,7 @@ The imported Projects appear on your Snyk **Projects** page and are continuously
 
 <figure><img src="../../.gitbook/assets/bitbucketserver_add-repos_18july2022.png" alt="Imported Projects on Projects page"><figcaption><p>Imported Projects on Projects page</p></figcaption></figure>
 
-## Bitbucket DC/Server Integration Features
+### Bitbucket DC/Server Integration Features
 
 After the integration is in place, you can use capabilities such as:
 
@@ -43,7 +54,7 @@ After the integration is in place, you can use capabilities such as:
 * [Project monitoring and automatic fix pull requests](snyk-bitbucket-data-center-server-integration.md#projects-monitoring-and-automatic-fix-pull-requests)
 * [Pull request testing](snyk-bitbucket-data-center-server-integration.md#pull-request-testing)
 
-### **Project-level security reports**
+#### **Project-level security reports**
 
 Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository with the required upgrades or patches.
 
@@ -51,7 +62,7 @@ The example that follows shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/project_lvl_security_rpt-18july2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
-### **Project monitoring and automatic fix pull requests**
+#### **Project monitoring and automatic fix pull requests**
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening automated Snyk pull requests with fixes for your repositories.
 
@@ -78,7 +89,7 @@ Unlike manual pull requests opened from the Bitbucket interface, for the Snyk Bi
 For more information, see [Automated pull request creation for new fixes](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-new-fixes.md).
 {% endhint %}
 
-### **Pull request tests**
+#### **Pull request tests**
 
 {% hint style="warning" %}
 Snyk Code PR Checks are only available for Bitbucket DC/Server versions 7.0 and above
@@ -101,7 +112,7 @@ To review and adjust the pull request tests settings:
 
 </div>
 
-## Required permission scopes for the Bitbucket DC/Server integration
+### Required permission scopes for the Bitbucket DC/Server integration
 
 Snyk performs all the Bitbucket DC/Server operations on behalf of the integrated service account.
 
@@ -112,7 +123,7 @@ To do this, a secret token is generated for each secure webhook we create. Snyk 
 
 For detailed information on the permission scopes required, see [Bitbucket permission requirements](./#bitbucket-permission-requirements).
 
-## **How to disconnect the Bitbucket Data Center/Server integration**
+### **How to disconnect the Bitbucket Data Center/Server integration**
 
 {% hint style="warning" %}
 When you disconnect Snyk from your Bitbucket repository projects, your credentials are removed from Snyk, and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
@@ -132,8 +143,14 @@ To disable this integration, in **Organization settings** > **Integrations**, fo
 
 </div>
 
-## Migration from Bitbucket Server to Bitbucket Data Center
+### Migration from Bitbucket Server to Bitbucket Data Center
 
 Usually, migrating from Bitbucket Server to Bitbucket Data Center requires no further action. The Snyk integration should keep working as Bitbucket Server and Bitbucket Data Center APIs are identical.
 
 Action is required only when the new Bitbucket Data Center instance URL differs from the Bitbucket Server instance URL. In this case, you must reconnect the integration from the Bitbucket Server-Bitbucket Data Center integration page in Snyk.io. To reconnect, follow the steps in [How to set up a Bitbucket DC/Server Integration](snyk-bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration).
+
+## Group level - Snyk AppRisk integrations
+
+The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
+
+Navigate to the [BitBucket setup guide for Snyk AppRisk ](snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk AppRisk.

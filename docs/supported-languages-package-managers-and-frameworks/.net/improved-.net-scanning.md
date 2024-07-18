@@ -45,7 +45,7 @@ Since the improved .NET solution will build your .NET Project, Snyk requires acc
 
 The recommended approach is to use [`nuget.config`](https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file) files along with registering the credentials in Snyk NuGet private package repository integration (**Settings > Integrations > NuGet**).
 
-<figure><img src="../../.gitbook/assets/image.png" alt="Set up Nuget Repositories from the Settings, Integrations screen"><figcaption><p>Set up Nuget Repositories from the Settings, Integrations screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="Set up Nuget Repositories from the Settings, Integrations screen"><figcaption><p>Set up Nuget Repositories from the Settings, Integrations screen</p></figcaption></figure>
 
 If you are not using `nuget.config`, but another way of informing the .NET ecosystem of where to look for private packages, Snyk will attempt to add all private NuGet repository credentials defined in the private package repository integration as a `dotnet nuget` source before restoring the Project.
 

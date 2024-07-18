@@ -11,7 +11,7 @@ Snyk AppRisk uses holistic application intelligence to help you better identify 
 
 If you use Snyk AppRisk, you can access the Issues page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md).
 
-## Insights
+## Insights for Snyk AppRisk
 
 Snyk is introducing a new Issues page, providing a centralized view of all the issues identified by Snyk with additional asset context. This will help empower AppSec teams to better triage and remediate issues in Snyk.
 

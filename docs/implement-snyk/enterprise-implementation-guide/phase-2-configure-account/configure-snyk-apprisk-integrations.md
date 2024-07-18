@@ -32,11 +32,11 @@ After you ensure you can correctly access Snyk AppRisk, you can start to build y
 The scanned information is automatically imported within two hours after enabling all features.&#x20;
 {% endhint %}
 
-You can access and configure the integrations from the Integrations view. Select the Integration Hub option to see the list of all available integrations. You can find more details about integration configuration in the [Using the Integration Hub](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/#using-the-integration-hub) section.
+You can access and configure the integrations from the Integrations view. Select the Integration Hub option to see the list of all available integrations. You can find more details about integration configuration in the [Using the Integration Hub](broken-reference) section.
 
 The default display in the Integrations view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/customize-an-integration.md) or [connect a new SCM integration](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration.md).
+The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../../../customize-an-integration.md) or [connect a new SCM integration](broken-reference).
 
 <figure><img src="../../../.gitbook/assets/image (357) (1).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk AppRisk - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
 
@@ -59,7 +59,7 @@ The supported SCM integrations are:
 * Azure DevOps (Azure Repos)
 * BitBucket
 
-Navigate to the [Connect an SCM integration](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration.md) page for more details about the supported SCM integrations.
+Navigate to the [Connect an SCM integration](broken-reference) page for more details about the supported SCM integrations.
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
@@ -105,7 +105,7 @@ Backstage is a service catalog that allows users to add metadata or annotations 
 
 You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
 
-Access the [Backstage file for SCM Integrations](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/application-context-for-scm-integrations.md) docs for more details about how to use this feature.
+Access the [Backstage file for SCM Integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md) docs for more details about how to use this feature.
 
 {% hint style="info" %}
 After setting up all the Snyk AppRisk integrations, depending on the number of repositories, results may take up to a day to appear.
@@ -118,7 +118,7 @@ The Snyk AppRisk functionality is split across several menu options from the Gro
 * [Dashboard](../../../manage-risk/snyk-apprisk/dashboard-for-snyk-apprisk.md)
 * [Inventory](../../../manage-risk/snyk-apprisk/inventory-for-snyk-apprisk/)
 * [Policies](../../../manage-risk/snyk-apprisk/policies-for-snyk-apprisk/)
-* [Integrations](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/)
+* [Integrations](broken-reference)
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 
 #### Inventory view

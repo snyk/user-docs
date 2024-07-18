@@ -11,7 +11,18 @@ If you are using a self-hosted instance of GitHub, you must use the [Snyk GitHub
 As Snyk does not have static IP addresses, this integration will not work with IP allowlisting in GitHub.
 {% endhint %}
 
-## Prerequisites for GitHub Cloud App
+When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+
+* [Group level ](snyk-github-cloud-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](snyk-github-cloud-app.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+
+{% hint style="info" %}
+If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+{% endhint %}
+
+## Organization level - Snyk integrations
+
+### Prerequisites for GitHub Cloud App
 
 * Snyk Organization Admin user role.
 * GitHub Organization Admin user role.
@@ -21,7 +32,7 @@ As Snyk does not have static IP addresses, this integration will not work with I
 Users can install the app on GitHub Organizations they are Repository Admins on through the GitHub UI.
 {% endhint %}
 
-## GitHub Cloud App benefits
+### GitHub Cloud App benefits
 
 The Snyk GitHub Cloud App improves on many features as compared to the current GitHub integration, including role-based, granular access control, increased API rate limits, and creation of an entry point for expanded and enhanced developer experiences.
 
@@ -32,7 +43,7 @@ The Snyk GitHub Cloud App improves on many features as compared to the current G
   * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of potential future PR check workflow improvements.
   * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed directly by the GitHub App rather than a service account.
 
-## How to set up the Snyk GitHub Cloud App
+### How to set up the Snyk GitHub Cloud App
 
 Log in to your Snyk account and navigate to the Integrations section in the Snyk Organization where you would like to set up the GitHub Cloud App.
 
@@ -67,13 +78,15 @@ Specify whether you wish to install the app in all of the repositories belonging
 The GitHub Cloud App will lose access to Snyk if it is uninstalled from the GitHub organization or if the repositories to which the app instance has access are edited.
 {% endhint %}
 
-## How to migrate to the Snyk GitHub Cloud App
+### How to migrate to the Snyk GitHub Cloud App
 
 If you are an Enterprise plan customer, you can migrate Snyk Targets to the Snyk GitHub Cloud App using the [snyk-migrate-to-github-app](https://github.com/snyk-labs/snyk-migrate-to-github-app) tool in the [tool repository](https://github.com/snyk-labs/snyk-migrate-to-github-app).
 
-## Feedback on the Snyk GitHub Cloud App
+### Feedback on the Snyk GitHub Cloud App
 
 Because this feature is in  [Early Access](../../getting-started/snyk-release-process.md), the functionality will likely evolve based on your feedback. If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 
+## Group level - Snyk AppRisk integrations
 
+Navigate to the [GitHub setup guide for Snyk AppRisk ](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
 

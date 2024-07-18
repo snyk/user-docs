@@ -31,7 +31,7 @@ Snyk AppRisk parses the fields of the detected file using the default field name
 
 7. Click the **Done** button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (12) (1).png" alt="Integration Hub - Backstage setup"><figcaption><p>Integration Hub - Backstage setup</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (12) (1).png" alt="Integration Hub - Backstage setup"><figcaption><p>Integration Hub - Backstage setup</p></figcaption></figure>
 
 After you finish configuring the Backstage catalog, Snyk AppRisk starts enriching your repository assets with the data found in the backstage catalog .yaml file.
 
@@ -57,15 +57,15 @@ The Backstage data is dynamic and may change over time:
 
 Depending on the selection you made on the Integration Hub configuration menu, only those selections are displayed in filters from the Inventory menu. For example, if you selected the Category attribute, then it will also be displayed in the filters list.
 
-<figure><img src="../../../.gitbook/assets/image (448).png" alt="Backstage selections in the Integration Hub menu"><figcaption><p>Backstage selections in the Integration Hub menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (448).png" alt="Backstage selections in the Integration Hub menu"><figcaption><p>Backstage selections in the Integration Hub menu</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (367).png" alt="Backstage selections in the Snyk AppRisk Inventory menu" width="375"><figcaption><p>Backstage selections in the Snyk AppRisk Inventory menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (367).png" alt="Backstage selections in the Snyk AppRisk Inventory menu" width="375"><figcaption><p>Backstage selections in the Snyk AppRisk Inventory menu</p></figcaption></figure>
 
 #### Asset Summary Tab
 
 The Asset Summary tab shows the six Backstage attributes that are configured in the Integration Hub only if you choose to integrate with Backstage.
 
-<figure><img src="../../../.gitbook/assets/image (368).png" alt="Backstage selections in the Asset Summary menu"><figcaption><p>Backstage selections in the Asset Summary menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (368).png" alt="Backstage selections in the Asset Summary menu"><figcaption><p>Backstage selections in the Asset Summary menu</p></figcaption></figure>
 
 #### Asset Attributes Tab
 
@@ -92,7 +92,7 @@ In the Asset Attributes tab only the selected attributes should be added as meta
 
 In the policy builder you can find only the attributes you have previously selected when configuring the backstage catalog file.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (369).png" alt="Backstage selections in the Policies menu" width="375"><figcaption><p>Backstage selections in the Policies menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (369).png" alt="Backstage selections in the Policies menu" width="375"><figcaption><p>Backstage selections in the Policies menu</p></figcaption></figure>
 
 The following list describes all possible backstage attributes that you can choose from when you configure the backstage catalog file.&#x20;
 

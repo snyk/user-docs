@@ -45,7 +45,7 @@ Another option is using environment variables; see [How to add custom certificat
 
 The last resort is to disable Certificate checks. Add `--insecure` to additional arguments to disable checks in the CLI, and **uncheck** the setting to use a strict proxy (`http.proxyStrictSSL`) in VSCode to disable certificate checks in `https` calls.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt="--inseucure argument"><figcaption><p>--inseucure argument</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (17).png" alt="--inseucure argument"><figcaption><p>--inseucure argument</p></figcaption></figure>
 
 &#x20;
 

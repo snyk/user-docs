@@ -1,10 +1,17 @@
----
-description: >-
-  The Bitbucket Cloud App is positioned to be the default Bitbucket Cloud
-  integration
----
-
 # Snyk Bitbucket Cloud App integration
+
+When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+
+* [Group level ](snyk-bitbucket-cloud-app-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](snyk-bitbucket-cloud-app-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+
+{% hint style="info" %}
+If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+{% endhint %}
+
+## Organization level - Snyk integrations
+
+The Bitbucket Cloud App is positioned to be the default Bitbucket Cloud integration
 
 {% hint style="info" %}
 **Feature availability**\
@@ -24,7 +31,7 @@ Snyk recommends using the Bitbucket Cloud App integration for smoother integrati
 If you are using the [Bitbucket Cloud Personal Access Token integration](snyk-bitbucket-cloud-integration.md), see [Migrate a Bitbucket Cloud integration](migrate-a-bitbucket-cloud-personal-access-token.md) for more information.
 {% endhint %}
 
-## Setting up a Bitbucket Cloud App
+### Setting up a Bitbucket Cloud App
 
 To give Snyk access to your Bitbucket account, you need to install the Snyk App on your Bitbucket Cloud workspace.
 
@@ -57,7 +64,7 @@ Watch this short video to see how to set up **Snyk security** in Bitbucket Cloud
 Set up Snyk security in Bitbucket Cloud
 {% endembed %}
 
-## Installing the Snyk App from Bitbucket Cloud
+### Installing the Snyk App from Bitbucket Cloud
 
 If you need to, you can also install the Snyk Bitbucket Cloud App integration while you are in Bitbucket Cloud.
 
@@ -65,7 +72,7 @@ In one of your Bitbucket Cloud workspaces, go to the **Security** tab in one of 
 
 <figure><img src="../../.gitbook/assets/install-app-bbc_6oct-2022.png" alt="Install the Snyk Bitbucket Cloud App from Bitbucket"><figcaption><p>Install the Snyk Bitbucket Cloud App from Bitbucket</p></figcaption></figure>
 
-## Adding Bitbucket repositories to Snyk
+### Adding Bitbucket repositories to Snyk
 
 After you connect Snyk to your Bitbucket Cloud account, you can select repositories for Snyk to monitor.
 
@@ -78,7 +85,7 @@ The imported Projects appear on your **Projects** page and are continuously chec
 
 <figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022 (1).png" alt="Snyk Projects page"><figcaption><p>Snyk Projects page</p></figcaption></figure>
 
-## Bitbucket integration features
+### Bitbucket integration features
 
 After the integration is in place, you can use capabilities such as:
 
@@ -86,7 +93,7 @@ After the integration is in place, you can use capabilities such as:
 * [Pull request testing](snyk-bitbucket-cloud-app-integration.md#pull-request-tests)
 * [First-party interface in Bitbucket Cloud](snyk-bitbucket-cloud-app-integration.md#first-party-interface-in-bitbucket-cloud)
 
-### Project-level security reports
+#### Project-level security reports
 
 Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
@@ -117,7 +124,7 @@ Unlike manual pull requests opened from the Bitbucket interface, Snyk pull reque
 For more information, see [Automated pull request creation for new fixes](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-new-fixes.md).
 {% endhint %}
 
-### Pull request tests
+#### Pull request tests
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities and sends a build check to Bitbucket Cloud. You can see directly from Bitbucket Cloud whether or not the pull request introduces new security issues.
 
@@ -130,7 +137,7 @@ To review and adjust the pull request test settings, follow these steps:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud App**, and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options. See [Configure PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md) for more details.
 
-### First-party interface in Bitbucket Cloud
+#### First-party interface in Bitbucket Cloud
 
 When you install the Snyk Bitbucket Cloud App integration in your Bitbucket workspace, the members of your workspace can import repositories and see the security issues related to their repositories in a dedicated Snyk security tab in Bitbucket Cloud.
 
@@ -150,11 +157,11 @@ To change the Snyk Organization after onboarding, go to the workspace settings >
 
 The installation process begins again, and you can choose the relevant Snyk Organization.
 
-## Required permission scopes for the Snyk Bitbucket Cloud App integration
+### Required permission scopes for the Snyk Bitbucket Cloud App integration
 
 For detailed information on the permissions required for this integration, see [Bitbucket permission requirements](./#bitbucket-permission-requirements).
 
-## Disabling the Bitbucket Cloud App integration
+### Disabling the Bitbucket Cloud App integration
 
 {% hint style="warning" %}
 When you disconnect Snyk from your repository Projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.
@@ -170,5 +177,11 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
 2. Scroll to the **Disconnect** section and click **Remove** to remove the integration.
 
 {% hint style="info" %}
-Disconnecting the integration from the Snyk side does not uninstall the app from your workspace in Bitbucket Cloud. To uninstall the Bitbucket app, go to your workspace settings in Bitbucket.org --> Installed Apps and remove the _Snyk Security for Bitbucket Cloud_ app.
+Disconnecting the integration from the Snyk side does not uninstall the app from your workspace in Bitbucket Cloud. To uninstall the Bitbucket app, navigate to your workspace settings in Bitbucket.org --> Installed Apps and remove the **Snyk Security for Bitbucket Cloud** app.
 {% endhint %}
+
+## Group level - Snyk AppRisk integrations
+
+The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
+
+Navigate to the [BitBucket setup guide for Snyk AppRisk ](snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk AppRisk.
