@@ -11,11 +11,11 @@
 Snyk uses a hierarchical approach to managing assets, access, and rollup reporting.
 
 * **A Snyk Group**: the top level
-  * Typically this represents the account and is the company name.
+  * Typically, this represents the account and is the company name.
   * The largest customers may have multiple groups representing each of their companies.
 * **Snyk Organizations**: below the Group level, typically representing
   * Line of business
-  * Git Organization or team structure
+  * Git organization or team structure
   * Types of application
   * Dev teams
 * **Snyk Projects**
@@ -30,11 +30,11 @@ Deciding your structure is one of the earliest decisions you must make. When det
 
 Consider various factors when structuring Organizations, such as:
 
-* Team-Based Structure: Link Developer Team A with Organization Team A.
-* Product-Based Structure:
-  * Set up separate Organizations for distinct parts of an application, like Payment Front-End and Payment Back-End.
-  * Allow full-stack developers to join multiple organizations as needed.
-* Git organization-based. : Some companies use a structure that mimics the organizations in Git, typically seen if a customer has 10+ organizations in their Git platform.
+* Team-based structure: Link developer team A with Organization team A.
+* Product-based structure:
+  * Set up separate Organizations for distinct parts of an application, for example, Payment Front-End and Payment Back-End.
+  * Allow full-stack developers to join multiple Organizations as needed.
+* Git organization-based. : Some companies use a structure that mimics the organizations in Git, typically seen if a customer has 10-plus organizations in their Git platform.
 
 {% hint style="info" %}
 If you intend to use the [api-import-tool](../../../scan-using-snyk/snyk-tools/tool-snyk-api-import/), the Git organization-based approach will be your path forward.
