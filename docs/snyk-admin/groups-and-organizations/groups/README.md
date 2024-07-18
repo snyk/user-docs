@@ -41,6 +41,30 @@ Select **Reports** to view the vulnerability status of the Organizations in your
 See [Reporting](../../../manage-issues/reporting/) for more details.
 {% endhint %}
 
+### Group Asset Dashboard
+
+Select **Asset Dashboard** for an overview of your application and security controls.&#x20;
+
+{% hint style="info" %}
+**Asset Dashboard** is available only with the Snyk AppRisk plan.
+{% endhint %}
+
+### Group Inventory
+
+Select **Inventory** to view, filter, and manage your assets.&#x20;
+
+{% hint style="info" %}
+**Inventory** is available only with the Snyk AppRisk plan.
+{% endhint %}
+
+### Group Issues
+
+Select **Issues** to better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. **Issues** offer a centralized view of all the issues identified by Snyk with additional asset context.
+
+{% hint style="info" %}
+**Issues** is available only with the Snyk AppRisk plan.
+{% endhint %}
+
 ### Group Dependencies
 
 Select **Dependencies** to view the dependencies and license issues for your Groups:
@@ -67,6 +91,14 @@ Select **Policies** to view the license and security policies for your Group:
 
 {% hint style="info" %}
 See [Policies](../../../manage-risk/policies/) for details.
+{% endhint %}
+
+### Group Integrations
+
+Select **Integrations** to view and configure the available Snyk AppRisk integrations.
+
+{% hint style="info" %}
+**Integrations** is available only with the Snyk AppRisk plan.
 {% endhint %}
 
 ### Group Members

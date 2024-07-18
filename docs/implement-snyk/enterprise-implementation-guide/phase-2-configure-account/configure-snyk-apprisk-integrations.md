@@ -32,7 +32,7 @@ After you ensure you can correctly access Snyk AppRisk, you can start to build y
 The scanned information is automatically imported within two hours after enabling all features.&#x20;
 {% endhint %}
 
-You can access and configure the integrations from the Integrations view. Select the Integration Hub option to see the list of all available integrations. You can find more details about integration configuration in the [Using the Integration Hub](../../../manage-risk/snyk-apprisk-placeholder/integrations-for-snyk-apprisk.md#using-the-integration-hub) section.
+You can access and configure the integrations from the Integrations view. Select the Integration Hub option to see the list of all available integrations. You can find more details about integration configuration in the [Using the Integration Hub](broken-reference) section.
 
 The default display in the Integrations view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
@@ -118,7 +118,7 @@ The Snyk AppRisk functionality is split across several menu options from the Gro
 * [Dashboard](broken-reference)
 * [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/policies/assets-policies/)
-* [Integrations](../../../manage-risk/snyk-apprisk-placeholder/integrations-for-snyk-apprisk.md)
+* [Integrations](broken-reference)
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 
 #### Inventory view
