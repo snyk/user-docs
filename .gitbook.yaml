@@ -103,5 +103,5 @@ redirects:
   manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration: manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/application-context-for-scm-integrations.md
   manage-risk/snyk-apprisk/dashboard-for-snyk-apprisk: getting-started/snyk-web-ui.md
   manage-risk/snyk-apprisk/integrations-for-snyk-apprisk: integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md
-  manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration: scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations.md
+  manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration: scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/README.md
   manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/customize-an-integration: getting-started/snyk-web-ui.md
