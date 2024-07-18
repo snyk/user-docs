@@ -30,7 +30,9 @@ You can customize your Snyk AppRisk integrations from the **Integrations Hub** w
 
 Snyk AppRisk Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
 
+{% hint style="warning" %}
 If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
+{% endhint %}
 
 The Integrations page at the Group level shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
 
@@ -48,11 +50,31 @@ Each connected integration enables you to:
 * Delete the integration
 * Check when the integration was last synced and when the next sync is scheduled.
 
+### Wildcard SCM integration
+
+The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;
+
+{% hint style="info" %}
+The wildcard integration applies to the GitHub and Azure DevOps integrations and offers support when you set them up using Snyk Broker.&#x20;
+{% endhint %}
+
+You can use the wildcards while setting up your integration using the Integration Hub:
+
+* Open the **Integration Hub** menu.&#x20;
+* Select the **SCM** tag and search for GitHub or Azure DevOps.&#x20;
+* Click the **Add** button.
+* In the **Organizations** field, add the Organization details by using the `*` symbol. For example, using  `*snyk` integrates all SCM Organizations that have Snyk in their name.
+* All the Organizations that match with the wildcard, `*` symbol will be added.&#x20;
+
+{% hint style="info" %}
+The wildcard, `*` symbol is considered a living command and will be applied every time you are rescanning your repositories.&#x20;
+{% endhint %}
+
 ### Snyk AppRisk integrations ecosystem
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk AppRisk. The integrations are categorized by type, listed by name, and indicated as available or not for both Snyk AppRisk Essentials and Snyk AppRisk Pro.
 
-<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk AppRisk Essentials</th><th>Snyk AppRisk Pro</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="snyk-github-integration.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide">BitBucket</a></li><li><a href="snyk-github-integration.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="snyk-azure-repositories-tfs-integration.md#azure-devops-setup-guide">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="application-context-for-scm-integrations.md">Backstage catalog</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#jira-setup-guide">Jira</a></li><li><a href="../../integrate-with-snyk/jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide">NightFall</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="../../integrate-with-snyk/snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
+<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk AppRisk Essentials</th><th>Snyk AppRisk Pro</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="snyk-github-integration.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide">BitBucket</a></li><li><a href="snyk-github-integration.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="snyk-azure-repositories-tfs-integration.md#azure-devops-setup-guide">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="application-context-for-scm-integrations.md">Backstage catalog</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li><li><a href="application-context-for-scm-integrations.md#atlassian-compass">Atlassian Compass</a></li><li><a href="application-context-for-scm-integrations.md#harness">Harness</a></li><li><a href="application-context-for-scm-integrations.md#opslevel">OpsLevel</a></li><li><a href="application-context-for-scm-integrations.md#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#jira-setup-guide">Jira</a></li><li><a href="../../integrate-with-snyk/jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide">NightFall</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="../../integrate-with-snyk/snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
 
 ### Using the Integration Hub
 
@@ -66,7 +88,7 @@ After the integration is validated, a card is displayed on the Integrations page
 
 If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker - AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before running the commands.
 {% endhint %}
 
