@@ -1,6 +1,6 @@
 # Snyk AppRisk Essentials vs Snyk AppRisk Pro
 
-Snyk AppRisk solution is designed for developers and focuses on Application Security Posture Management. It helps AppSec teams implement, manage, and scale a modern AppSec program.
+Snyk AppRisk helps AppSec teams implement, manage, and scale a modern AppSec program.
 
 Snyk AppRisk is available as two separate offerings. Snyk AppRisk Essentials and Snyk AppRisk Pro. Snyk AppRisk Essentials helps AppSec teams better operationalize and scale Snyk usage with broad application visibility and security coverage management.
 

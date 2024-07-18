@@ -1090,4 +1090,3 @@
     * [Statement of Work](working-with-snyk/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
   * [What counts as a test?](working-with-snyk/what-counts-as-a-test.md)
   * [Snyk for Government (US)](working-with-snyk/snyk-for-government-us.md)
-* [Customize an integration](customize-an-integration.md)

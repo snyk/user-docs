@@ -39,7 +39,7 @@ You can customize the filters and actions or use the template as is. After finis
 
 {% hint style="warning" %}
 **Release status** \
-**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only for Snyk AppRisk Pro plans. Based on feedback, the functionality is likely to evolve, and there will be breaking changes.
+**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only with Snyk AppRisk Pro.
 {% endhint %}
 
 Each filter component requires you to specify an asset property. Available properties for asset policies include:
@@ -94,12 +94,12 @@ Each property contains different options for conditions and values:
 
 | Property                     | Conditions Values                                                                                                                         | Values                                                                                                                |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Application\*                | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | all available applications for which you have configured the Backstage catalog in Snyk AppRisk.                       |
+| Application\*                | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | all available applications for which you have configured the application context in Snyk AppRisk.                     |
 | Asset ID                     | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
 | Asset name                   | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
 | Asset type                   | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | <ul><li>Package</li><li>Repository</li><li>Scanned artifact</li></ul>                                                 |
 | Attribute                    | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
-| Catalog name\*               | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | the list of names of your backstage catalog.                                                                          |
+| Catalog name\*               | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | the list of names of your application context.                                                                        |
 | Category                     | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | the list of the available categories of a repository asset                                                            |
 | Class                        | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | A, B, C, D                                                                                                            |
 | Coverage                     | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | Snyk Code, Container, IaC, Open Source                                                                                |

@@ -22,16 +22,16 @@ Snyk AppRisk Pro builds upon the capabilities of Snyk AppRisk Essentials by offe
 
 Snyk AppRisk Essentials includes the following features:&#x20;
 
-* **Integrations** to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the Integration Hub from the Integration page to add and set up new integrations.
-* **Policies** to classify and tag assets with business context and configure actions using a Policy Builder UI.
-* **Inventory** layouts for managing assets and viewing Snyk coverage.
-* **Dashboard** to view, add, and customize widgets.
+* [**Integrations**](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the Integration Hub from the Integration page to add and set up new integrations.
+* [**Policies**](../../manage-risk/policies/assets-policies/) to classify and tag assets with business context and configure actions using a Policy Builder UI.
+* [**Inventory**](../../manage-assets/) layouts for managing assets and viewing Snyk coverage.
+* [**Dashboard**](../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) to view, add, and customize widgets.
 
 On top of the Snyk AppRisk Essentials features, Snyk AppRisk Pro offers:
 
-* **Integrations** with non-Snyk products.
-* **Issues** prioritization for all scanned assets with runtime context in the Insights UI.
-* **Analytics** for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
+* [**Integrations**](../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md) with non-Snyk products.
+* [**Insights**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) for all scanned assets with runtime context in the Insights UI.
+* [**Analytics**](../../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
 ## Using Snyk AppRisk Essentials and Snyk AppRisk Pro
 

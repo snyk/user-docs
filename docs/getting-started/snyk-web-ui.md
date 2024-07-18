@@ -6,7 +6,7 @@ If you have not done so already, [create an account](quickstart/create-or-log-in
 
 Use the Snyk Web UI to run Snyk from any [supported browser](quickstart/#supported-browsers).
 
-In the Snyk Web UI, you can visualize information at the [Group](snyk-web-ui.md#group-level) or [Organization](snyk-web-ui.md#organization-level) level by clicking the name of the Group or Organization. [General information](snyk-web-ui.md#general-settings-available-for-all-level-types), like the Reports, Issues, Dependencies, Members, Settings, Help, and Settings[^1], is available for all level types.
+In the Snyk Web UI, you can visualize information at the [Group](snyk-web-ui.md#group-level) or [Organization](snyk-web-ui.md#organization-level) level by clicking the name of the Group or Organization. [General information](snyk-web-ui.md#general-settings-available-for-all-level-types), like the Reports, Issues, Dependencies, Members, Settings, Help, and Settings, is available for all level types.
 
 {% hint style="info" %}
 Snyk AppRisk Essentials is available with Snyk Enterprise.&#x20;
@@ -40,7 +40,7 @@ You can customize the dashboard widgets as desired. Choose to rename or modify d
 
 #### Configure a widget
 
-Customize your dashboard with the available widgets. You can change the settings of an existing widget or the way it is displayed. You have the ability to move a widget around the dashboard, rename it, display or hide the legend, view it in full screen, export or download it. See the [Repositories assets](../manage-assets/#repository-assets) section for additional details regarding archived or deleted repositories and the information presented in the dashboard widgets.
+Customize your dashboard with the available widgets. You can change the settings of an existing widget or the way it is displayed. You have the ability to move a widget around the dashboard, rename it, display or hide the legend, view it in full screen, export or download it. See the [Repositories assets](../manage-assets/assets-inventory-layouts.md#repository-assets) section for additional details regarding archived or deleted repositories and the information presented in the dashboard widgets.
 
 #### Settings menu
 
@@ -68,7 +68,7 @@ Access the full list of general options from the widget menu. You can access the
 The Inventory menu option is available only for Snyk AppRisk users.&#x20;
 {% endhint %}
 
-The Inventory is available if you are using Snyk AppRisk. You can use the Inventory page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
+The [Inventory](../manage-assets/) is available if you are using Snyk AppRisk. You can use the Inventory page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
 
 Each line in the inventory represents either a repository asset or a scanned artifact from Snyk that is likely a repository but lacks some identifying information. Scanned artifacts are not supported through Policies.
 
@@ -78,7 +78,7 @@ Each line in the inventory represents either a repository asset or a scanned art
 The Policies menu option is available only for Snyk AppRisk users.&#x20;
 {% endhint %}
 
-You can use the Policies page to automate the process of adding business context and receiving notifications.
+You can use the [Policies](../manage-risk/policies/assets-policies/) page to automate the process of adding business context and receiving notifications.
 
 ### Manage integrations for asset discovery, asset coverage, and issues from third-party vendors
 
@@ -86,9 +86,9 @@ You can use the Policies page to automate the process of adding business context
 The Integrations menu option for the Group level is available only for Snyk AppRisk users.&#x20;
 {% endhint %}
 
-The Integrations page shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.&#x20;
+The Integrations page shows all active integrations, [SCM](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.&#x20;
 
-An overview of all your integrations is available on the Integrations main page.
+You can find the overview of all your integrations on the Snyk Web UI Integrations page and more details about the available integrations on the [Snyk AppRisk SCM integrations](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) page and on the [Integrate with Snyk](../integrate-with-snyk/#integrations-for-snyk-apprisk) page.
 
 You can enable or disable your integrations, edit them, or remove them from your configuration.
 
@@ -118,7 +118,7 @@ For security reasons, all credentials are anonymized when you open the Settings 
 
 #### Remove an integration
 
-Select an existing integration and click the Delete icon to remove it from your environment.
+Select an existing integration and click **Delete** to remove it from your environment.
 
 You cannot restore an integration that was already deleted. To add it again, you need to follow the steps from the [Using the Integration Hub](snyk-web-ui.md#using-the-integration-hub) section.
 
@@ -269,5 +269,3 @@ Select your **name** in the navigation on the Dashboard and then **Account setti
 * **Delete** your account.
 * Manage your Account Settings for email **Notifications** (link in the left navigation), including Issue email alerts, Weekly report emails, and Usage alerts, as well as email notifications when reports are available and preferences for sales and marketing communications. See the [Manage notifications](../snyk-admin/manage-notifications.md) page for more details.
 * Get a referral link to **Share with a Friend**. The link is in the left navigation of your Account Settings.
-
-[^1]: 

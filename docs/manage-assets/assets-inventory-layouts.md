@@ -39,7 +39,7 @@ You can filter the information for all the inventory layouts and use any of the 
 Every item listed in the inventory is considered an individual asset. Most assets are actual components of the application (code repositories, domains, endpoints, and so on), but an asset can also be a representation of a Group such as the asset type (repository), a group (certain business unit), or even a product.&#x20;
 
 {% hint style="warning" %}
-The Issues column is available in a Closed Beta state and is applicable only for the Snyk AppRisk Pro version.  Please contact your salesperson if you are interested in Snyk AppRisk Pro.
+The Issues column is available in a Closed Beta state and is applicable only for Snyk AppRisk Pro. &#x20;
 {% endhint %}
 
 Assets in the inventory are presented with key attributes in the following columns:

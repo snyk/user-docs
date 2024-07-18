@@ -1,7 +1,7 @@
 # Risk factor: Loaded package
 
 {% hint style="info" %}
-The Loaded package risk factor is available only to Snyk AppRisk Pro users.
+The Loaded package risk factor is available only for Snyk AppRisk Pro.
 {% endhint %}
 
 Vulnerabilities in a package are only exploitable if relevant code is executed. For that to occur, the package must be loaded into memory. Snyk can use data from integrations to match the packages loaded in a Kubernetes container against the issues found when Snyk scans the container, helping to prioritize issues that are more likely to be exploitable.

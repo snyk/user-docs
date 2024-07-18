@@ -1,7 +1,7 @@
 # Set up Insights: Kubernetes connector
 
 {% hint style="info" %}
-The Insights feature is available only to Snyk AppRisk Pro users.
+The Insights feature is available only with Snyk AppRisk Pro.
 {% endhint %}
 
 ## What is Kubernetes connector for Snyk AppRisk?

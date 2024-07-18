@@ -1,7 +1,7 @@
 # Set up Insights: Associating Snyk Open Source, Code, and Container Projects
 
 {% hint style="info" %}
-The Insights feature is available only to Snyk AppRisk Pro users.
+The Insights feature is available only with Snyk AppRisk Pro.
 {% endhint %}
 
 After you have set up insights, Snyk can set up the required linking for the chosen application.&#x20;

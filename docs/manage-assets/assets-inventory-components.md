@@ -15,8 +15,8 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 An asset in Snyk AppRisk represents a component in the software development lifecycle that may pose a risk. The following asset types are currently available:
 
-* Repository assets [**`Billable`**](broken-reference)
-* Container images [**`Billable`**](broken-reference)
+* Repository assets [**`Billable`**](../working-with-snyk/what-counts-as-a-test.md#counting-git-repository-integration-scans)
+* Container images [**`Billable`**](../working-with-snyk/what-counts-as-a-test.md)
 * Packages
 * Scanned artifacts
 
@@ -83,7 +83,7 @@ You can see the details of a related asset by clicking on one of them. Usually, 
 ## Issues
 
 {% hint style="warning" %}
-The Issues column is available in a Closed Beta state and is applicable only for the Snyk AppRisk Pro version. Please contact your salesperson if you are interested in Snyk AppRisk Pro.
+The Issues column is available in a Closed Beta state and applies only to Snyk AppRisk Pro.&#x20;
 {% endhint %}
 
 The Issues column is designed to present a comprehensive list of issues that have been identified within your assets. These findings are the result of scans performed by Snyk as well as internal tools you may have deployed. This detailed list not only helps in understanding the security posture of your assets but also in prioritizing remediation efforts based on the severity and impact of each issue. By having visibility into these issues, you can take proactive steps toward improving the overall security of your applications and infrastructure.
@@ -146,7 +146,7 @@ System tags are automatically generated from the SCM repositories. System tags c
 
 * Languages:
   * This applies to GitHub, GitLab, Azure DevOps, and BitBucket as long the data is available in the repository.
-  * GitHub, GitLab, and Azure DevOps have automated language detection, instead, BitBucket requires users to set up the language in their repositories.&#x20;
+  * GitHub, GitLab, and Azure DevOps have automated language detection. Instead, BitBucket requires users to set up the language in their repositories.&#x20;
 * SCM Topic:&#x20;
   * This applies to GitHub and GitLab.
 * Multiple different rules based on the words we found in the repositories:

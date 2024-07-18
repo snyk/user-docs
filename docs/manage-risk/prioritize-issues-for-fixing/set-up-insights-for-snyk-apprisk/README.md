@@ -1,7 +1,7 @@
 # Set up Insights for Snyk AppRisk
 
 {% hint style="info" %}
-The Insights feature is available only to Snyk AppRisk Pro users.
+The Insights feature is available only with Snyk AppRisk Pro.
 {% endhint %}
 
 ## Prerequisites for prioritization with Snyk AppRisk
@@ -18,7 +18,7 @@ Snyk AppRisk Insights product operates by providing you with the following risk 
 * [**Public facing**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md): Does my container have any internet exposure?
 
 {% hint style="info" %}
-The Risk Factors are available only to Snyk AppRisk Pro users.
+The Risk Factors are available only with Snyk AppRisk Pro.
 {% endhint %}
 
 ### Risk factors usage criteria

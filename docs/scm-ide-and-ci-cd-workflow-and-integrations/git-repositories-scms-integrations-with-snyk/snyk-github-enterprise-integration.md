@@ -145,7 +145,7 @@ You can re-connect anytime; however, re-initiating GitHub Enterprise projects fo
 
 ## Group level  - Snyk AppRisk integrations
 
-The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
+The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the [Integration Hub](../../getting-started/snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors).
 
 ### GitHub setup guide for Snyk AppRisk
 

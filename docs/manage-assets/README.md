@@ -59,22 +59,17 @@ After you apply the filters, the assets list will only display the assets that d
 
 ## Assets and their attributes
 
-When using Snyk, you can find and use assets from:
-
-* Snyk CLI when using the [test](../snyk-cli/commands/test.md#assets-project-name), [monitor](../snyk-cli/commands/monitor.md#assets-project-name), or [SBOM](../snyk-cli/commands/sbom.md#assets-project-name) commands.&#x20;
-* Snyk AppRisk context when using the [Inventory](assets-inventory-components.md), Policies, [Issues prioritization](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md), or [Analytics](../manage-risk/enterprise-analytics/) menu.&#x20;
-
-In the Snyk AppRisk context, you can find information about assets under the following menus: Inventory, Policies, Issues Prioritization, and Analytics.&#x20;
+In the Snyk AppRisk context, you can find information about assets under the following menus: [Inventory](./), [Policies](../manage-risk/policies/assets-policies/), [Insights for Snyk AppRisk](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md), and [Analytics](../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md).&#x20;
 
 The main source of information is the **Inventory** menu. Here, you can view, filter, and manage your assets.&#x20;
 
-The **Inventory** menu provides a centralized view of all the issues identified by Snyk with additional asset context. The Inventory serves as the cornerstone of this interconnected system, providing detailed information on each asset to facilitate further processes.
+The [**Inventory**](./) menu provides a centralized view of all the issues identified by Snyk with additional asset context. The Inventory serves as the cornerstone of this interconnected system, providing detailed information on each asset to facilitate further processes.
 
-In the **Policies** menu, you can create policies for organizing the assets, classifying them, and always being up to date with the latest information about an asset. The policies are put in place to regulate these assets, making sure that each one follows security standards, organizational best practices, and regulatory requirements. These policies are enforced using the data from the Inventory, ensuring consistent compliance across all assets.
+In the [**Policies**](../manage-risk/policies/assets-policies/) menu, you can create policies for organizing the assets, classifying them, and always being up to date with the latest information about an asset. The policies are put in place to regulate these assets, making sure that each one follows security standards, organizational best practices, and regulatory requirements. These policies are enforced using the data from the Inventory, ensuring consistent compliance across all assets.
 
-In the **Analytics** menu, you can review and explore your application status and results, from a top-down approach. The Analytics page then uses this data to provide detailed insights into the performance and security metrics of the assets. This page helps identify trends, detect anomalies, and pinpoint potential vulnerabilities, providing a data-driven approach to asset management.
+In the [**Analytics**](../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md) menu, you can review and explore your application status and results, from a top-down approach. The Analytics page then uses this data to provide detailed insights into the performance and security metrics of the assets. This page helps identify trends, detect anomalies, and pinpoint potential vulnerabilities, providing a data-driven approach to asset management.
 
-The **Issues** menu utilizes information from both the Inventory and Policies menus to prioritize issues based on their severity and impact. This prioritization assists organizations in concentrating on addressing the most critical risks first, streamlining risk management, and enhancing overall security posture.
+The [**Issues**](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) menu utilizes information from both the Inventory and Policies menus to prioritize issues based on their severity and impact. This prioritization assists organizations in concentrating on addressing the most critical risks first, streamlining risk management, and enhancing overall security posture.
 
 Through this interconnected framework, Snyk ensures robust asset protection and optimized performance, integrating inventory management, policy enforcement, analytical insights, and risk prioritization into a cohesive, efficient system.
 

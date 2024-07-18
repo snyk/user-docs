@@ -41,9 +41,7 @@ If you use Snyk AppRisk for the first time, start with the **Coverage** filter t
 
 {% hint style="warning" %}
 **Release status** \
-**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only for Snyk AppRisk Pro plans. Based on feedback, the functionality is likely to evolve, and there will be breaking changes.
-
-Contact your account manager if you are interested in Snyk AppRisk Pro.
+**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only with Snyk AppRisk Pro.&#x20;
 {% endhint %}
 
 Each filter component requires you to specify an asset property. Available properties for asset policies include:

@@ -26,18 +26,16 @@ Configure policies to match your requirements.
 
 See [Snyk License Compliance Management](../../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md) for more details.
 
+## Asset policies
 
+Policies can be created using the Policy Editor to:
 
-## (SHAWN) Asset policies
-
-Policies can be created via the Policy Editor to&#x20;
-
-* Notify user(s) via slack or email when a condition is met
-* (JIRA - ready yet for this?)
-* Set classification via policy
-* Set tags via policy
-* Specify coverage policies (i.e scan not performed within specified number of days)
-* For more information, refer to [https://docs.snyk.io/manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/level-2-policies](https://docs.snyk.io/manage-risk/snyk-apprisk/implementation-guide-for-snyk-apprisk/level-2-policies)
+* Notify user(s) using Slack or email when a condition is met
+* create a Jira ticket
+* Set classification using policy
+* Set tags using policy
+* Specify coverage policies, for example, scan not performed within a specified number of days
+* For more information, navigate to the [Assets policies](../../../manage-risk/policies/assets-policies/) page.
 
 
 
