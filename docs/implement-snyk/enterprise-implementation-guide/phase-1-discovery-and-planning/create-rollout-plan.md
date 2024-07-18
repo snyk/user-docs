@@ -28,7 +28,7 @@ Typically, within a large enterprise, importing everything using a repository in
 Next, set up Snyk integrations across your Git repositories to gain broad visibility into your security posture.&#x20;
 
 {% hint style="warning" %}
-To reduce noise, disable notifications before import if you have onboarded all your users.
+To reduce noise, turn off notifications before import if you have onboarded all your users.
 {% endhint %}
 
 Key advantages of using this process are:
@@ -57,15 +57,15 @@ This phased approach allows thoughtful onboarding while rapidly gaining visibili
 
 After the first month, gradually turn on gating measures.
 
-* Pull Request/Merge Request Checks using criteria such as `severity` and `is fixable`.
+* Implement Pull Request/Merge Request Checks using criteria such as `severity` and `is fixable`.
 * Fail builds based on criteria such as `High` or `Critical`, `CVSS`, `Mature Exploit` for Open Source, and other criteria using the [Snyk Filter](https://github.com/snyk-labs/snyk-filter) plugin.
 
-It's recommended to start with a few applications, especially during the pilot team phase, work through the processes then roll out more widely.
+It is recommended to start with a few applications, especially during the pilot team phase, work through the processes, and then roll out more widely.
 
 ## Exception handling
 
-Ensure there is an exception process in place and users are aware. For example:
+Ensure there is an exception process in place and users are aware of it. For example:
 
-* If a pull request/merge request is failed by Snyk, let the users know who is the Snyk admin who can override it.&#x20;
-* Similarly, if Snyk fails in CI/CD, let users know who can create an ignore rule or, authorize it to progress, or configure CI/CD to run without the Snyk `test` or set it to `monitor` only.
+* If a pull request/merge request is failed by Snyk, let the users know who ithe Snyk admin is who can override it.&#x20;
+* Similarly, if Snyk fails in CI/CD, let users know who can create an ignore rule, or authorize the build to progress, or configure CI/CD to run without the Snyk `test` or set it to `monitor` only.
 
