@@ -1,6 +1,6 @@
 # snyk-filter
 
-The `snyk-filter` tool provides **custom filtering for Snyk CLI output**. `snyk-filter` takes the JSON-formatted output from the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference), for example, `snyk test --json` and applies custom filtering of the results, as well as options to fail your build.
+The `snyk-filter` tool provides **custom filtering for Snyk CLI output**. `snyk-filter` takes the JSON-formatted output from the [Snyk CLI](../../), for example, `snyk test --json` and applies custom filtering of the results, as well as options to fail your build.
 
 ## Clone and install snyk-filter
 
