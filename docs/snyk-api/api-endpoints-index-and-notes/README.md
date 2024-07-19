@@ -106,7 +106,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### [Get a list of apps installed for a group](../reference/apps.md#groups-group\_id-apps-installs-1)
 
-### [Revoke app authorization for a Snyk Group with install ID](../reference/apps.md#groups-group\_id-apps-installs-1)
+### [Revoke app authorization for a Snyk Group with install ID](../reference/apps.md#groups-group\_id-apps-installs-install\_id)
 
 ### [Manage client secret for non-interactive Snyk App installations](../reference/apps.md#groups-group\_id-apps-installs-install\_id-secrets)
 
