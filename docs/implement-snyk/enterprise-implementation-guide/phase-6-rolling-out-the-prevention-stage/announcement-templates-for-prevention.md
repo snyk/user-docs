@@ -2,9 +2,9 @@
 
 This page provides example email and Slack message templates that you can use to introduce prevention tools to your teams.
 
-## Introduce prevention features to your Developers
+## Introduce prevention features to your developers
 
-It is important that your development teams understand what changes are being made that may affect their day-to-day work. Ensure they understand how the prevention tests work, to help avoid surprises from possible issues, which could affect their deadlines.
+It is important that your development teams understand what changes are being made that may affect their day-to-day work. Ensure they understand how the prevention tests work, to help avoid surprises from possible issues that could affect their deadlines.
 
 {% hint style="info" %}
 These examples are written based on the Snyk tests on the PR Checks feature, with the configuration set to fail only on High or Critical severity issues. If you are adding Snyk tests to your CI/CD pipelines, ensure that you tweak the messages.
@@ -23,5 +23,3 @@ Use the following template to communicate the Snyk rollout to the rest of the de
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _Snyk Tests being introduced to our PRs: From \[date] we’ll be enabling a feature in Snyk so that all new PRs on repositories that have been imported to Snyk will be tested for new vulnerabilities. You’ll see the test will fail if any new High or Critical severity issues are found. Please fix these before merging if possible! For now, the tests are optional, so you can merge the PR even if the test fails, but in the future, we’ll be setting this to be a required check. Get in touch if you have any questions!_  |
-
-###
