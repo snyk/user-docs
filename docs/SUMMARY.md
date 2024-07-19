@@ -436,6 +436,7 @@
     * [Panther Integration](integrate-with-snyk/vulnerability-management-tools/panther-integration.md)
     * [Phoenix Security Integration](integrate-with-snyk/vulnerability-management-tools/phoenix-security-integration.md)
     * [Phylum Integration](integrate-with-snyk/vulnerability-management-tools/phylum.md)
+    * [Port Integration](integrate-with-snyk/vulnerability-management-tools/port-integration.md)
     * [Pulumi Integration](integrate-with-snyk/vulnerability-management-tools/pulumi-integration.md)
     * [Security Compass Integration](integrate-with-snyk/vulnerability-management-tools/security-compass-integration.md)
     * [SentinelOne Integration](integrate-with-snyk/vulnerability-management-tools/sentinelone-integration.md)
