@@ -28,7 +28,13 @@ The plugin runs on Windows.
 
 ## Supported Visual Studio versions
 
-Supported versions of Visual Studio are 2015, 2017, 2019, and 2022 (version 17.0.5 and above).
+Supported versions of Visual Studio are 2015, 2017, 2019, and 2022 (version 17.5 and above).
+
+### Deprecation Notice
+
+{% hint style="warning" %}
+As of 20 August 2024, Snyk will no longer support Visual Studio 2015, 2017, and 2019. Upgrade to Visual Studio 2022 for updates, security patches, and technical support.
+{% endhint %}
 
 ## Supported languages, package managers, and frameworks
 
