@@ -1,6 +1,6 @@
 # Snyk Azure Repositories (TFS) integration
 
-When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
 * [Group level ](snyk-azure-repositories-tfs-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
 * [Organization level](snyk-azure-repositories-tfs-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
@@ -18,17 +18,17 @@ Integration with Azure Repos Cloud is available with all Snyk pricing plans. Int
 Snyk supports only Git. Snyk does not currently support integration with Team Foundation Version Control (TFVC).
 {% endhint %}
 
-### Prerequisites for Snyk Azure Repositories (TFS) integration
+### Prerequisites for Azure Repositories (TFS) integration
 
 * [Snyk Organization Admin](../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md) user role.
 * An Azure project. If you do not have a project yet, create one in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) or set one up in an [on-premise Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops) instance.
 * The required Personal Access Token (PAT) access scopes. For details on the permissions required, see [Azure Repositories (TFS) permission requirements](./#azure-repositories-tfs-permission-requirements).
 
-### Snyk Azure Repositories (TFS) integration features
+### Azure Repositories (TFS) integration features
 
 Snyk integrates with your Microsoft Azure Repository to let you import Projects and monitor the source code for your repositories. Snyk tests the Projects you have imported for known security vulnerabilities in the dependencies, testing at a frequency you control.
 
-Snyk Azure Repository integration lets you:
+The Azure Repository integration lets you:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your open-source components
@@ -40,7 +40,7 @@ After the integration is configured, Snyk does the following:
 2. Communicates directly with your repository for each test it runs using the permissions you associated with your PAT, to determine exactly which code is currently pushed by the Snyk application and which dependencies are being used. Each dependency is tested against the Snyk vulnerability database to see if it contains any known vulnerabilities.
 3. Notifies you by email or a dedicated Slack channel if vulnerabilities are found according to the preferences you configured, so that you can take immediate action to fix the issues.
 
-### How to set up the Snyk Azure Repositories (TFS) integration
+### How to set up the Azure Repositories (TFS) integration
 
 The process to connect Snyk with your Azure repositories includes the following steps:
 

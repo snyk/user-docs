@@ -4,7 +4,7 @@ Before installing, **review the general instructions** for the installation meth
 
 The **prerequisites** follow.
 
-Before installing the Snyk GitHub Broker, you must configure a GitHub service account token with the [required permissions](../../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/snyk-github-integration.md#required-permissions-scope-for-the-github-integration). All the operations, both those that are triggered through the Snyk Web UI and the automatic operations, are performed for a GitHub service account that has its token configured with the Broker.
+Before installing the Snyk GitHub Broker, you must configure a GitHub service account token with the [required permissions](../../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/github-integration.md#required-permissions-scope-for-the-github-integration). All the operations, both those that are triggered through the Snyk Web UI and the automatic operations, are performed for a GitHub service account that has its token configured with the Broker.
 
 You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 

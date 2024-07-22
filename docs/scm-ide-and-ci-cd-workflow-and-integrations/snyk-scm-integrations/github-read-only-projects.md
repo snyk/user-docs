@@ -1,9 +1,9 @@
-# Snyk GitHub Read-only Projects
+# GitHub Read-only Projects
 
 When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](snyk-github-read-only-projects.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](snyk-github-read-only-projects.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](github-read-only-projects.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](github-read-only-projects.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -42,4 +42,4 @@ You can import a read-only Project using the **Add project** **> Monitor public 
 
 ## Group level - Snyk AppRisk integrations
 
-Navigate to the [GitHub setup guide for Snyk AppRisk ](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
+Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.

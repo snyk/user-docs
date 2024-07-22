@@ -1,8 +1,8 @@
-# Snyk Bitbucket Cloud vs Snyk Bitbucket Cloud App
+# Bitbucket Cloud vs Bitbucket Cloud App
 
 In general, Snyk recommends using the new Bitbucket Cloud app integration. However, the new integration does not fit all cases. The information in this section is intended to help you decide which integration is right for you.
 
-See [Migrate to the Snyk Bitbucket Cloud App](snyk-bitbucket-cloud-integration.md#migrate-to-the-snyk-bitbucket-cloud-app) for detailed migration instructions.
+See [Migrate to the Snyk Bitbucket Cloud App](bitbucket-cloud-integration.md#migrate-to-the-snyk-bitbucket-cloud-app) for detailed migration instructions.
 
 ### Main capabilities unlocked by the new app integration
 

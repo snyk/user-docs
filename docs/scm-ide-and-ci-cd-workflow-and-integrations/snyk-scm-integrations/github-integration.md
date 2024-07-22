@@ -1,15 +1,15 @@
-# Snyk GitHub integration
+# GitHub integration
 
 {% hint style="warning" %}
 **Feature availability**
 
-The Snyk GitHub integration is available for all Snyk customers regardless of plan level. See the [Plans and pricing page](https://snyk.io/plans/) for more details.
+The GitHub integration is available for all Snyk customers regardless of plan level. See the [Plans and pricing page](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](snyk-github-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](snyk-github-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](github-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](github-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -17,22 +17,22 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 
 ## Organization level - Snyk integrations
 
-### Prerequisites for Snyk GitHub integration
+### Prerequisites for GitHub integration
 
 * Internet-accessible repositories.\
   If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-configuration/snyk-broker/).
 * A public or private GitHub project.
 * The required PAT and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements).
 
-### Known limitations of the Snyk GitHub integration
+### Known limitations of the GitHub integration
 
-You cannot use the Snyk GitHub integration with a Snyk [Service Account](../../enterprise-configuration/service-accounts/), as the GitHub integration is associated with your user account, not with the Snyk Organization.
+You cannot use the GitHub integration with a Snyk [Service Account](../../enterprise-configuration/service-accounts/), as the GitHub integration is associated with your user account, not with the Snyk Organization.
 
-Use the [GitHub Enterprise integration](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md) to import public and private Projects using the API with a Snyk Service Account.
+Use the [GitHub Enterprise integration](github-enterprise-integration.md) to import public and private Projects using the API with a Snyk Service Account.
 
-### Snyk GitHub integration features
+### GitHub integration features
 
-The Snyk GitHub integration allows you to:
+The GitHub integration allows you to:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your open-source components
@@ -44,26 +44,26 @@ The GitHub integration is set up for your user account, not for a Snyk Organizat
 
 When you import a Snyk Project using your GitHub integration with the Snyk PR functionality enabled, Snyk PRs are created for that Project. However, if another user imports Projects with their GitHub integration after disabling the Snyk PR functionality, Snyk PRs are not created for the Projects they import.
 
-### How to set up the Snyk GitHub integration
+### How to set up the GitHub integration
 
 To connect your GitHub repositories to Snyk for scanning, you need to set up the integration and then import Projects.&#x20;
 
 See [Set up an integration](../../getting-started/quickstart/set-up-an-integration.md) and [Import a Project](../../getting-started/quickstart/import-a-project.md) for details of this process.
 
-### Snyk GitHub integration settings
+### GitHub integration settings
 
-To see all settings for your GitHub integration, go to the Snyk GitHub Integration settings page, then navigate to Organization **Settings**, and select **GitHub** in the **Integrations** section:
+To see all settings for your GitHub integration, go to the GitHub Integration settings page, then navigate to Organization **Settings**, and select **GitHub** in the **Integrations** section:
 
 <figure><img src="../../.gitbook/assets/Github-integrations-intro.png" alt="GitHub integration settings"><figcaption><p>GitHub integration settings</p></figcaption></figure>
 
 You can then scroll down to the section required, and set the options accordingly:
 
-* [General settings](snyk-github-integration.md#github-integration-general-settings)
+* [General settings](github-integration.md#github-integration-general-settings)
 * Pull requests:
-  * [Open Snyk automatic PRs from a fixed GitHub account](snyk-github-integration.md#setting-an-account-to-open-snyk-prs)
-  * [Automatic fix PRs](snyk-github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
+  * [Open Snyk automatic PRs from a fixed GitHub account](github-integration.md#setting-an-account-to-open-snyk-prs)
+  * [Automatic fix PRs](github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
   * [Automatic dependency upgrade PRs](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/)
-  * [Pull request assignees](snyk-github-integration.md#pr-assignment)
+  * [Pull request assignees](github-integration.md#pr-assignment)
   * [Snyk vulnerability patches](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
 * Pull request status checks ([PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/))
   * [Open Source security and licenses](../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md#configure-pr-checks-at-the-integration-level)
@@ -72,7 +72,7 @@ You can then scroll down to the section required, and set the options accordingl
   * [Scan you Dockerfile](../../scan-with-snyk/snyk-container/scan-your-dockerfile/)
   * [Fix vulnerable base images in your Dockerfile](../../scan-with-snyk/snyk-container/scan-your-dockerfile/fix-vulnerable-base-images-in-your-dockerfile.md)
 
-### General Snyk GitHub integration settings
+### General GitHub integration settings
 
 Select **General** to view general settings:
 
@@ -85,14 +85,14 @@ Select **General** to view general settings:
 * **Integration ID**: The unique ID for this integration, needed if you use the [Snyk API](../../snyk-api/).
 * **Repository access**: Whether Snyk can access private repos (in addition to public repos). Changing this setting affects existing Projects.
 
-### Snyk GitHub integration features
+### GitHub integration features
 
 After you have connected GitHub to Snyk, you can use:
 
-* [Project-level security reports](snyk-github-integration.md#project-level-security-reports)
-* [Project monitoring and automatic fix pull requests](snyk-github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-* [Commit signing](snyk-github-integration.md#commit-signing)
-* [Pull request testing](snyk-github-integration.md#pull-request-testing)
+* [Project-level security reports](github-integration.md#project-level-security-reports)
+* [Project monitoring and automatic fix pull requests](github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
+* [Commit signing](github-integration.md#commit-signing)
+* [Pull request testing](github-integration.md#pull-request-testing)
 
 #### **Project-level security reports**
 
@@ -238,9 +238,9 @@ To configure the Auto-assign settings for a specific Project from an imported pr
 
 </div>
 
-### How to disable the Snyk GitHub integration
+### How to disable the GitHub integration
 
-The Snyk GitHub SCM integration leverages the OAuth app integration. If you integrated GitHub without using Snyk Broker, you can disconnect it by following these steps:
+The GitHub SCM integration leverages the OAuth app integration. If you integrated GitHub without using Snyk Broker, you can disconnect it by following these steps:
 
 1. In GitHub, log in to the GitHub account that you used to create the integration.
 2. Go to your GitHub account settings and select the **Applications** option in the left sidebar.
@@ -270,4 +270,4 @@ A disconnected GitHub integration will still appear as configured in the Integra
 
 ## Group level - Snyk AppRisk integrations
 
-Navigate to the [GitHub setup guide for Snyk AppRisk ](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
+Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.

@@ -1,9 +1,9 @@
-# Snyk Bitbucket Cloud integration
+# Bitbucket Cloud integration
 
-When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](snyk-bitbucket-cloud-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](snyk-bitbucket-cloud-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](bitbucket-cloud-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](bitbucket-cloud-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -15,16 +15,16 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 **Feature availability**\
 This feature is available for all plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
-Snyk recommends installing or [migrating](migrate-a-bitbucket-cloud-personal-access-token.md) to the [Bitbucket Cloud Application](snyk-bitbucket-cloud-app-integration.md) for smoother integration and to ensure long-term support.
+Snyk recommends installing or [migrating](bitbucket-cloud-vs-bitbucket-cloud-app.md) to the [Bitbucket Cloud Application](bitbucket-cloud-app-integration.md) for smoother integration and to ensure long-term support.
 {% endhint %}
 
-The Snyk Bitbucket Cloud (PAT) integration lets you:
+The Bitbucket Cloud (PAT) integration lets you:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your open-source components
 * Provide automated fixes and upgrades
 
-### How to set up the Snyk Bitbucket Cloud Integration
+### How to set up the Bitbucket Cloud Integration
 
 {% hint style="info" %}
 Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the App Password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/).
@@ -67,9 +67,9 @@ The imported projects appear on your **Projects** page and are continuously chec
 
 After the integration is in place, you will be able to use capabilities such as:
 
-* [Project-level security reports](snyk-bitbucket-cloud-integration.md#project-level-security-reports)
-* [Project monitoring and automatic fix pull requests](snyk-bitbucket-cloud-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-* [Pull request testing](snyk-bitbucket-cloud-integration.md#pull-request-tests)
+* [Project-level security reports](bitbucket-cloud-integration.md#project-level-security-reports)
+* [Project monitoring and automatic fix pull requests](bitbucket-cloud-integration.md#project-monitoring-and-automatic-fix-pull-requests)
+* [Pull request testing](bitbucket-cloud-integration.md#pull-request-tests)
 
 #### Project-level security reports
 
@@ -139,9 +139,9 @@ To disconnect this integration, in **Organization settings** > **Integrations:**
 
 <figure><img src="../../.gitbook/assets/mceclip2-4-.png" alt="Disconnect button at the bottom left of the Disconnect from Bitbucket Cloud section"><figcaption><p>Disconnect button at the bottom left of the Disconnect from Bitbucket Cloud section</p></figcaption></figure>
 
-### Migrate to the Snyk Bitbucket Cloud App
+### Migrate to the Bitbucket Cloud App
 
-This section describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](snyk-bitbucket-cloud-integration.md), displayed in Snyk as Bitbucket Cloud, to the [**Bitbucket Cloud App**](snyk-bitbucket-cloud-app-integration.md) integration.
+This section describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](bitbucket-cloud-integration.md), displayed in Snyk as Bitbucket Cloud, to the [**Bitbucket Cloud App**](bitbucket-cloud-app-integration.md) integration.
 
 To migrate to the new app integration, you must remove all the previously imported Projects from Snyk, delete the PAT integration and its Projects, set up the new app integration, and reimport your Projects to Snyk from the new integration.
 
@@ -156,10 +156,10 @@ Before going through the migration process, you should note that the following P
 
 The migration process includes the following steps:
 
-1. [Deleting the existing Projects](snyk-bitbucket-cloud-integration.md#delete-existing-projects) that are connected to the Bitbucket Cloud PAT integration in Snyk.
-2. [Disconnecting the PAT integration](snyk-bitbucket-cloud-integration.md#disconnect-the-pat-integration) in Snyk.
-3. [Removing the first-party extension](snyk-bitbucket-cloud-integration.md#remove-the-snyk-tab-for-the-pat-integration-in-bitbucket-cloud-optional) for the PAT integration in Bitbucket (optional).
-4. [Connecting the Bitbucket Cloud App](snyk-bitbucket-cloud-integration.md#set-up-the-bitbucket-cloud-app-integration) and importing Projects.
+1. [Deleting the existing Projects](bitbucket-cloud-integration.md#delete-existing-projects) that are connected to the Bitbucket Cloud PAT integration in Snyk.
+2. [Disconnecting the PAT integration](bitbucket-cloud-integration.md#disconnect-the-pat-integration) in Snyk.
+3. [Removing the first-party extension](bitbucket-cloud-integration.md#remove-the-snyk-tab-for-the-pat-integration-in-bitbucket-cloud-optional) for the PAT integration in Bitbucket (optional).
+4. [Connecting the Bitbucket Cloud App](bitbucket-cloud-integration.md#set-up-the-bitbucket-cloud-app-integration) and importing Projects.
 
 #### Delete existing Projects
 
@@ -190,7 +190,7 @@ Go to your **Workspace settings** page in **Bitbucket.org > Manage installed app
 
 #### Set up the Bitbucket Cloud App integration
 
-See the [Bitbucket Cloud App integration](snyk-bitbucket-cloud-app-integration.md) topic for instructions.
+See the [Bitbucket Cloud App integration](bitbucket-cloud-app-integration.md) topic for instructions.
 
 #### Migration demo
 

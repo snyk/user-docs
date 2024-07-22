@@ -23,10 +23,10 @@ To set up integrations for Snyk AppRisk, use the **Integrations** menu at the Gr
 
 You can customize your Snyk AppRisk integrations from the **Integrations Hub** where the following SCMs are available:
 
-* [GitHub](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)
-* [GitLab](snyk-gitlab-integration.md#gitlab-setup-guide)
+* [GitHub](github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)
+* [GitLab](gitlab-integration.md#gitlab-setup-guide)
 * [Azure DevOps](snyk-azure-repositories-tfs-integration.md#azure-devops-setup-guide)
-* [BitBucket](snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide)
+* [BitBucket](bitbucket-cloud-integration.md#bitbucket-setup-guide)
 
 Snyk AppRisk Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
 
@@ -74,7 +74,7 @@ The wildcard, `*` symbol is considered a living command and will be applied ever
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk AppRisk. The integrations are categorized by type, listed by name, and indicated as available or not for both Snyk AppRisk Essentials and Snyk AppRisk Pro.
 
-<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk AppRisk Essentials</th><th>Snyk AppRisk Pro</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="snyk-github-integration.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide">BitBucket</a></li><li><a href="snyk-github-integration.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="snyk-azure-repositories-tfs-integration.md#azure-devops-setup-guide">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="application-context-for-scm-integrations.md">Backstage catalog</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li><li><a href="application-context-for-scm-integrations.md#atlassian-compass">Atlassian Compass</a></li><li><a href="application-context-for-scm-integrations.md#harness">Harness</a></li><li><a href="application-context-for-scm-integrations.md#opslevel">OpsLevel</a></li><li><a href="application-context-for-scm-integrations.md#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#jira-setup-guide">Jira</a></li><li><a href="../../integrate-with-snyk/jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide">NightFall</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="../../integrate-with-snyk/snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
+<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk AppRisk Essentials</th><th>Snyk AppRisk Pro</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="github-integration.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="bitbucket-cloud-integration.md#bitbucket-setup-guide">BitBucket</a></li><li><a href="github-integration.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="snyk-azure-repositories-tfs-integration.md#azure-devops-setup-guide">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="application-context-for-scm-integrations.md">Backstage catalog</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li><li><a href="application-context-for-scm-integrations.md#atlassian-compass">Atlassian Compass</a></li><li><a href="application-context-for-scm-integrations.md#harness">Harness</a></li><li><a href="application-context-for-scm-integrations.md#opslevel">OpsLevel</a></li><li><a href="application-context-for-scm-integrations.md#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#jira-setup-guide">Jira</a></li><li><a href="../../integrate-with-snyk/jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide">NightFall</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="../../integrate-with-snyk/snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
 
 ### Using the Integration Hub
 
@@ -106,15 +106,15 @@ Snyk Source Control Manager (SCM) integrations allow you to:
 
 Snyk can integrate with the following SCMs to help you track, monitor, and fix the issues and vulnerabilities in your code:
 
-* [GitHub Cloud App](snyk-github-cloud-app.md)
-* [GitHub Server App](snyk-github-server-app.md)
-* [GitHub Enterprise](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md)
-* [GitHub](snyk-github-integration.md)
-* [GitHub Read-only Projects](snyk-github-read-only-projects.md)
-* [GitLab](snyk-gitlab-integration.md)
-* [Bitbucket Cloud](snyk-bitbucket-cloud-integration.md)
-* [Bitbucket Cloud App](snyk-bitbucket-cloud-app-integration.md)
-* [Bitbucket Data Center/Server](snyk-bitbucket-data-center-server-integration.md)
+* [GitHub Cloud App](github-cloud-app.md)
+* [GitHub Server App](github-server-app.md)
+* [GitHub Enterprise](github-enterprise-integration.md)
+* [GitHub](github-integration.md)
+* [GitHub Read-only Projects](github-read-only-projects.md)
+* [GitLab](gitlab-integration.md)
+* [Bitbucket Cloud](bitbucket-cloud-integration.md)
+* [Bitbucket Cloud App](bitbucket-cloud-app-integration.md)
+* [Bitbucket Data Center/Server](bitbucket-data-center-server-integration.md)
 * [Azure Repositories (TFS)](snyk-azure-repositories-tfs-integration.md)
 
 ## Snyk Git repository cloning
@@ -170,7 +170,7 @@ A fine-grained PAT requires additional repository access scopes:
 * `Webhooks: Read and write`
 * `Members access: Read-only (Organization access scope)`
 
-Snyk uses PRs to tell [GitHub Enterprise](../git-repositories-scms-integrations-with-snyk/snyk-github-enterprise-integration.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
+Snyk uses PRs to tell [GitHub Enterprise](github-enterprise-integration.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
 
 Snyk uses SCM webhooks to:
 
@@ -179,7 +179,7 @@ Snyk uses SCM webhooks to:
 
 ### GitHub Cloud App permission requirements
 
-The [Snyk GitHub Cloud App](snyk-github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
+The [Snyk GitHub Cloud App](github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
 
 To set up the GitHub Cloud app integration you must be a:
 
@@ -193,7 +193,7 @@ To set up the GitHub Cloud app integration you must be a:
 To utilize the Snyk GitHub Server App you must be using a self-hosted instance of GitHub.
 {% endhint %}
 
-The [Snyk GitHub Server App](snyk-github-server-app.md) uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
+The [Snyk GitHub Server App](github-server-app.md) uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
 
 To set up the GitHub Server app integration you must be a:
 
@@ -203,7 +203,7 @@ To set up the GitHub Server app integration you must be a:
 
 ### GitLab permission requirements
 
-The [Snyk GitLab integration](snyk-gitlab-integration.md#gitlab-access-tokens) uses either a personal access token (PAT) or group access token (GAT), depending on the GitLab account tier you are on.
+The [Snyk GitLab integration](gitlab-integration.md#gitlab-access-tokens) uses either a personal access token (PAT) or group access token (GAT), depending on the GitLab account tier you are on.
 
 To set up the Snyk GitLab integration you must be a:
 
@@ -218,9 +218,9 @@ A GAT is used for managing multiple GitLab projects in a GitLab group and requir
 
 The Snyk Bitbucket integrations use different access control mechanisms to connect with Snyk:
 
-* [Snyk Bitbucket Cloud](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](snyk-bitbucket-cloud-integration.md#how-to-set-up-the-snyk-bitbucket-cloud-integration).
-* [Snyk Bitbucket Cloud App](./#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](snyk-bitbucket-cloud-app-integration.md#setting-up-a-bitbucket-cloud-app) and related permissions.
-* [Snyk Bitbucket Data Center/Server](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](snyk-bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
+* [Snyk Bitbucket Cloud](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](bitbucket-cloud-integration.md#how-to-set-up-the-snyk-bitbucket-cloud-integration).
+* [Snyk Bitbucket Cloud App](./#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](bitbucket-cloud-app-integration.md#setting-up-a-bitbucket-cloud-app) and related permissions.
+* [Snyk Bitbucket Data Center/Server](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
 
 {% hint style="warning" %}
 To set up any Snyk Bitbucket integration, you must be a Bitbucket Workspace Admin.

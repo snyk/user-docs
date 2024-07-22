@@ -1,9 +1,9 @@
-# Snyk Bitbucket Data Center/Server integration
+# Bitbucket Data Center/Server integration
 
-When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](snyk-bitbucket-data-center-server-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](snyk-bitbucket-data-center-server-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](bitbucket-data-center-server-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](bitbucket-data-center-server-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -16,7 +16,7 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-The Snyk Bitbucket Data Center/Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open-source components, and use automated fixing. This integration supports Bitbucket Data Center/Server versions 4.0 and above.
+The Bitbucket Data Center/Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open-source components, and use automated fixing. This integration supports Bitbucket Data Center/Server versions 4.0 and above.
 
 For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](https://snyk.io/blog/snyk-bitbucket-best-practices-cheat-sheet/) on the Snyk blog.
 
@@ -50,9 +50,9 @@ The imported Projects appear on your Snyk **Projects** page and are continuously
 
 After the integration is in place, you can use capabilities such as:
 
-* [Project-level security reports](snyk-bitbucket-data-center-server-integration.md#project-level-security-reports)
-* [Project monitoring and automatic fix pull requests](snyk-bitbucket-data-center-server-integration.md#projects-monitoring-and-automatic-fix-pull-requests)
-* [Pull request testing](snyk-bitbucket-data-center-server-integration.md#pull-request-testing)
+* [Project-level security reports](bitbucket-data-center-server-integration.md#project-level-security-reports)
+* [Project monitoring and automatic fix pull requests](bitbucket-data-center-server-integration.md#projects-monitoring-and-automatic-fix-pull-requests)
+* [Pull request testing](bitbucket-data-center-server-integration.md#pull-request-testing)
 
 #### **Project-level security reports**
 
@@ -147,10 +147,10 @@ To disable this integration, in **Organization settings** > **Integrations**, fo
 
 Usually, migrating from Bitbucket Server to Bitbucket Data Center requires no further action. The Snyk integration should keep working as Bitbucket Server and Bitbucket Data Center APIs are identical.
 
-Action is required only when the new Bitbucket Data Center instance URL differs from the Bitbucket Server instance URL. In this case, you must reconnect the integration from the Bitbucket Server-Bitbucket Data Center integration page in Snyk.io. To reconnect, follow the steps in [How to set up a Bitbucket DC/Server Integration](snyk-bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration).
+Action is required only when the new Bitbucket Data Center instance URL differs from the Bitbucket Server instance URL. In this case, you must reconnect the integration from the Bitbucket Server-Bitbucket Data Center integration page in Snyk.io. To reconnect, follow the steps in [How to set up a Bitbucket DC/Server Integration](bitbucket-data-center-server-integration.md#how-to-set-up-a-bitbucket-dc-server-integration).
 
 ## Group level - Snyk AppRisk integrations
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
-Navigate to the [BitBucket setup guide for Snyk AppRisk ](snyk-bitbucket-cloud-integration.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk AppRisk.
+Navigate to the [BitBucket setup guide for Snyk AppRisk ](bitbucket-cloud-integration.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk AppRisk.

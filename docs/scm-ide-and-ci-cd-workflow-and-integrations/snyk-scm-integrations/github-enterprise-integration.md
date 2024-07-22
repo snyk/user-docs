@@ -1,9 +1,9 @@
-# Snyk GitHub Enterprise integration
+# GitHub Enterprise integration
 
 When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](snyk-github-enterprise-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](snyk-github-enterprise-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](github-enterprise-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](github-enterprise-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -12,7 +12,7 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 ## Organization level - Snyk integrations
 
 {% hint style="info" %}
-If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the Snyk GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](../snyk-scm-integrations/introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
+If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the GitHub Enterprise integration. See [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -20,41 +20,41 @@ If you are a Snyk Enterprise plan customer, Snyk recommends that you use the Git
 GitHub Enterprise integration is available to Snyk Enterprise plan customers. If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. See the [Plans and pricing](https://snyk.io/plans/) page for details.
 {% endhint %}
 
-### Prerequisites for Snyk GitHub Enterprise integration
+### Prerequisites for GitHub Enterprise integration
 
 * Internet-accessible repositories.\
   If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-configuration/snyk-broker/). This requires creating a startup script. For the script and instructions, see [GitHub Enterprise - install and configure using Docker](../../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md).
 * A public or private GitHub project.
-* The required [PAT](snyk-github-enterprise-integration.md#how-to-generate-a-personal-access-token) and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](../snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements).
+* The required [PAT](github-enterprise-integration.md#how-to-generate-a-personal-access-token) and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements).
 
 {% hint style="info" %}
 You do not need to be on a GitHub Enterprise level plan to use the Snyk GitHub Enterprise integration.
 {% endhint %}
 
-### Snyk GitHub Enterprise integration features
+### GitHub Enterprise integration features
 
-The Snyk GitHub Enterprise integration lets you:
+The GitHub Enterprise integration lets you:
 
-* Perform [periodic security scans](snyk-github-enterprise-integration.md#obtain-project-level-security-reports) across all integrated repositories.
-* [Detect vulnerabilities](snyk-github-enterprise-integration.md#monitor-projects-and-generate-automatic-fix-pull-requests) in your Open Source components.
-* Provide [automated fixes](snyk-github-enterprise-integration.md#test-new-pull-requests) and upgrades through status checks in GitHub.
+* Perform [periodic security scans](github-enterprise-integration.md#obtain-project-level-security-reports) across all integrated repositories.
+* [Detect vulnerabilities](github-enterprise-integration.md#monitor-projects-and-generate-automatic-fix-pull-requests) in your Open Source components.
+* Provide [automated fixes](github-enterprise-integration.md#test-new-pull-requests) and upgrades through status checks in GitHub.
 
-### How to set up the Snyk GitHub Enterprise integration
+### How to set up the GitHub Enterprise integration
 
 Follow these steps to connect Snyk with your GitHub repositories:
 
 1. Create a dedicated service account in GitHub Enterprise with a write level or higher scope for the repos you want to monitor with Snyk permissions.\
-   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required access scopes for the GitHub integration ](snyk-github-enterprise-integration.md#required-access-scopes-for-snyk-github-enterprise-integration)for details.\
+   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required access scopes for the GitHub integration ](github-enterprise-integration.md#required-access-scopes-for-snyk-github-enterprise-integration)for details.\
    Note that to create webhooks, which is required for PR checks, the repo permission for the account must be `Admin`. GitHub custom roles are not supported.&#x20;
-2. [Generate a personal access token](snyk-github-enterprise-integration.md#how-to-generate-a-personal-access-token) for that account.
-3. [Authorize your personal access token and enable SSO.](snyk-github-enterprise-integration.md#how-to-authorize-your-personal-access-token-and-enable-sso)
-4. [Import your GitHub repositories](snyk-github-enterprise-integration.md#how-to-import-github-repositories).
+2. [Generate a personal access token](github-enterprise-integration.md#how-to-generate-a-personal-access-token) for that account.
+3. [Authorize your personal access token and enable SSO.](github-enterprise-integration.md#how-to-authorize-your-personal-access-token-and-enable-sso)
+4. [Import your GitHub repositories](github-enterprise-integration.md#how-to-import-github-repositories).
 
 #### Generate a Personal Access Token
 
 A personal access token (PAT) or fine-grained PAT must be generated in GitHub Enterprise under **Developer settings**.
 
-See [GitHub and GitHub Enterprise permissions requirements](../snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements) for detailed information on the access scope requirements you must adhere to.
+See [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements) for detailed information on the access scope requirements you must adhere to.
 
 #### **How to authorize** your Personal Access Token and enable SSO
 
@@ -84,7 +84,7 @@ The imported Projects appear on your **Projects** page and are continuously chec
 
 <figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16) (26).jpeg" alt="Importing selected repositories to Snyk"><figcaption><p>Importing selected repositories to Snyk</p></figcaption></figure>
 
-### Uses of the Snyk GitHub Enterprise integration
+### Uses of the GitHub Enterprise integration
 
 #### **Obtain Project-level security reports**
 
@@ -123,7 +123,7 @@ To review and adjust the pull request test settings: In Snyk, navigate to Organi
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.43.34.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 
-### How to disconnect the Snyk GitHub Enterprise integration
+### How to disconnect the GitHub Enterprise integration
 
 {% hint style="warning" %}
 Disconnecting the Snyk GitHub Enterprise integration halts all scans for imported repositories, PR checks cannot be executed, and Projects are deactivated in the Snyk Web UI.
@@ -170,8 +170,8 @@ If you have changed the name of your GitHub organization, copy the new name from
 
 3. Access Token (`mandatory`): Create your GitHub PAT from your GitHub Organization.&#x20;
 
-* Generate your GitHub PAT by following the instructions in the [Generate a Personal access token from your GitHub settings](snyk-github-enterprise-integration.md#generate-a-personal-access-token-from-your-github-settings) section.&#x20;
-* Authorize your GitHub PAT if you have configured SAML SSO. See the [How to authorize your Personal Access Token and enable SSO](snyk-github-enterprise-integration.md#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
+* Generate your GitHub PAT by following the instructions in the [Generate a Personal access token from your GitHub settings](github-enterprise-integration.md#generate-a-personal-access-token-from-your-github-settings) section.&#x20;
+* Authorize your GitHub PAT if you have configured SAML SSO. See the [How to authorize your Personal Access Token and enable SSO](github-enterprise-integration.md#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
 
 {% hint style="info" %}
 If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
@@ -179,7 +179,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 
 4. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
 5. Pull personal repositories (`optional`): Enable the option if you only want to pull the repositories you own.
-6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../snyk-scm-integrations/application-context-for-scm-integrations.md) page.
+6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
 
 #### Generate a Personal access token from your GitHub settings
 
