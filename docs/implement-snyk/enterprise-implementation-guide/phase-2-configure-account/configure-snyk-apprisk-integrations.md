@@ -56,7 +56,7 @@ The supported SCM integrations are:
 
 * [GitHub](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/github.md#group-level-snyk-apprisk-integrations)
 * [GitLab](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-apprisk-integrations)
-* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/snyk-azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)
+* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)
 * [BitBucket](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations)
 
 Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.

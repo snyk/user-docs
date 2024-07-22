@@ -278,7 +278,7 @@
     * [Bitbucket Cloud vs Bitbucket Cloud App](scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-cloud-vs-bitbucket-cloud-app.md)
     * [Bitbucket Cloud App](scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)
     * [Bitbucket Data Center/Server](scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)
-    * [Snyk Azure Repositories (TFS)](scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/snyk-azure-repositories-tfs.md)
+    * [Azure Repositories (TFS)](scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/azure-repositories-tfs.md)
     * [Application context for SCM Integrations](scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md)
   * [Snyk IDE plugins and extensions](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/README.md)
     * [Eclipse plugin](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/README.md)

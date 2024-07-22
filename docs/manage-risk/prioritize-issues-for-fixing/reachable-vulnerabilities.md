@@ -32,7 +32,7 @@ The following integrations are supported for Reachable Vulnerabilities analysis:
 * [Bitbucket Cloud](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-cloud-app.md) (Currently in Early Access)
 * [Bitbucket Server](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-data-center-server.md) (Currently in Early Access)
 * [GitLab](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/gitlab.md) (Currently in Early Access)
-* [Azure Repos](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/snyk-azure-repositories-tfs.md) (Currently in Early Access)
+* [Azure Repos](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/azure-repositories-tfs.md) (Currently in Early Access)
 * [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md) (Currently in Early Access)
 
 {% hint style="warning" %}
