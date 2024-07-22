@@ -60,7 +60,7 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
-5. If your data is hosted in a [different region](../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
+5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
 6.  Install the Helm chart:
 
     ```
@@ -82,7 +82,7 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     helm repo list
     ```
     {% endcode %}
-2.  Create a secret with your service account token, which has the appropriate permissions (as instructed in the prerequisites section) under the created namespace:
+2.  Update the repo (with the name from (1)):
 
     {% code overflow="wrap" %}
     ```
@@ -128,18 +128,18 @@ After you have successfully set up a subscription to Snyk Runtime Sensor on AWS 
 
 To enable the Snyk Runtime Sensor for your Amazon EKS cluster, select your cluster on the Amazon EKS console. Then, navigate to the Add-ons tab and choose "Get more add-ons". Use the search bar to find "runtime" and follow the on-screen instructions to enable the add-on for your cluster.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-05-26 at 15.53.23.png" alt="Select the Snyk Runtime Sensor add-on"><figcaption><p>Select the Snyk Runtime Sensor add-on</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.53.23.png" alt="Select the Snyk Runtime Sensor add-on"><figcaption><p>Select the Snyk Runtime Sensor add-on</p></figcaption></figure>
 
 On the next screen, select the latest version (even if already selected) and open the "Optional configuration settings".
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-05-26 at 15.55.19.png" alt=""><figcaption><p>Select the latest available version and open the 'Optional configuration settings'</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.55.19.png" alt=""><figcaption><p>Select the latest available version and open the 'Optional configuration settings'</p></figcaption></figure>
 
 Under the "configuration values", set the following attributes in a YAML or JSON format:
 
 * `secretName` - the secret name that will be created later in the process. The default value is  `snyk-secret` .
 * `clusterName` - the name of the cluster where the add-on is installed.
 * `snykGroupId` - the Group ID associated with the used service account.
-* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443` , unless your data is hosted in a [different region](../working-with-snyk/regional-hosting-and-data-residency.md#what-regions-are-available) than the default (US).
+* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443` , unless your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md#what-regions-are-available) than the default (US).
 
 Here is a base configuration to copy:
 
@@ -150,11 +150,11 @@ snykGroupId: <<MY_SNYK_GROUP_ID>>
 snykAPIBaseURL: api.snyk.io:443
 ```
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-05-26 at 15.58.12.png" alt="Set the appropriate configuration values under &#x22;Optional configuraiton settings&#x22;"><figcaption><p>Set the appropriate configuration values under "Optional configuraiton settings"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.58.12.png" alt="Set the appropriate configuration values under &#x22;Optional configuraiton settings&#x22;"><figcaption><p>Set the appropriate configuration values under "Optional configuraiton settings"</p></figcaption></figure>
 
 After you select the **Next** and **Create** options you will see the `Add-on snyk-runtimesensor successfully added to cluster <<YOUR_CLUSTER>>` notification on top of the page.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-05-26 at 16.26.13.png" alt="The success message."><figcaption><p>The success message.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 16.26.13.png" alt="The success message."><figcaption><p>The success message.</p></figcaption></figure>
 
 #### **Enable Snyk Runtime Sensor add-on using AWS CLI**
 

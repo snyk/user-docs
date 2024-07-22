@@ -411,7 +411,7 @@
   * [Git repositories and CI/CD comparisons](scm-ide-and-ci-cd-workflow-and-integrations/git-repository-and-ci-cd-integrations-comparisons.md)
 * [Integrate with Snyk](integrate-with-snyk/README.md)
   * [Third-party integrations for Snyk AppRisk](integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md)
-  * [Snyk runtime sensor](integrate-with-snyk/snyk-runtime-sensor.md)
+  * [Snyk runtime sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
   * [Jira and Slack Integrations](integrate-with-snyk/jira-and-slack-integrations/README.md)
     * [Snyk Security in Jira Cloud Integration](integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md)
     * [Jira integration](integrate-with-snyk/jira-and-slack-integrations/jira-integration.md)
