@@ -54,10 +54,10 @@ The integrations at the organization level that facilitate Snyk Code, Snyk Open 
 
 The supported SCM integrations are:
 
-* [GitHub](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/github-integration.md#group-level-snyk-apprisk-integrations)
-* [GitLab](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/gitlab-integration.md#group-level-snyk-apprisk-integrations)
-* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/snyk-azure-repositories-tfs-integration.md#group-level-snyk-apprisk-integrations)
-* [BitBucket](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-cloud-integration.md#group-level-snyk-apprisk-integrations)
+* [GitHub](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/github.md#group-level-snyk-apprisk-integrations)
+* [GitLab](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-apprisk-integrations)
+* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/snyk-azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)
+* [BitBucket](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations)
 
 Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
 

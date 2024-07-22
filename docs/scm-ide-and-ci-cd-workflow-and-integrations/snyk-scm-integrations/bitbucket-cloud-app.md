@@ -1,9 +1,9 @@
-# Bitbucket Cloud App integration
+# Bitbucket Cloud App
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](bitbucket-cloud-app-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](bitbucket-cloud-app-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](bitbucket-cloud-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](bitbucket-cloud-app.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -28,7 +28,7 @@ The Bitbucket Cloud App integration lets you connect your Snyk Organization to a
 {% hint style="info" %}
 Snyk recommends using the Bitbucket Cloud App integration for smoother integration and to ensure long-term support.
 
-If you are using the [Bitbucket Cloud Personal Access Token integration](bitbucket-cloud-integration.md), see [Migrate a Bitbucket Cloud integration](bitbucket-cloud-vs-bitbucket-cloud-app.md) for more information.
+If you are using the [Bitbucket Cloud Personal Access Token integration](bitbucket-cloud.md), see [Migrate a Bitbucket Cloud integration](bitbucket-cloud-vs-bitbucket-cloud-app.md) for more information.
 {% endhint %}
 
 ### Setting up a Bitbucket Cloud App
@@ -40,7 +40,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
 {% endhint %}
 
 1. In Snyk, go to **Integrations (Source control) >** **Bitbucket Cloud App** tile, and click **Connect** to install the Snyk Bitbucket Cloud App on your Bitbucket Cloud workspace.
-2.  In the new Bitbucket tab, select the relevant workspace to connect to your Snyk Organization from the list and [**Grant access** to let Snyk](bitbucket-cloud-app-integration.md#required-snyk-bitbucket-cloud-app-permissions-scope):
+2.  In the new Bitbucket tab, select the relevant workspace to connect to your Snyk Organization from the list and [**Grant access** to let Snyk](bitbucket-cloud-app.md#required-snyk-bitbucket-cloud-app-permissions-scope):
 
     * Read your account information 
     * Read and modify your repositories and their pull requests
@@ -89,9 +89,9 @@ The imported Projects appear on your **Projects** page and are continuously chec
 
 After the integration is in place, you can use capabilities such as:
 
-* [Project-level security reports](bitbucket-cloud-app-integration.md#project-level-security-reports)
-* [Pull request testing](bitbucket-cloud-app-integration.md#pull-request-tests)
-* [First-party interface in Bitbucket Cloud](bitbucket-cloud-app-integration.md#first-party-interface-in-bitbucket-cloud)
+* [Project-level security reports](bitbucket-cloud-app.md#project-level-security-reports)
+* [Pull request testing](bitbucket-cloud-app.md#pull-request-tests)
+* [First-party interface in Bitbucket Cloud](bitbucket-cloud-app.md#first-party-interface-in-bitbucket-cloud)
 
 #### Project-level security reports
 
@@ -184,4 +184,4 @@ Disconnecting the integration from the Snyk side does not uninstall the app from
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
-Navigate to the [BitBucket setup guide for Snyk AppRisk ](bitbucket-cloud-integration.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk AppRisk.
+Navigate to the [BitBucket setup guide for Snyk AppRisk ](bitbucket-cloud.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk AppRisk.

@@ -42,4 +42,4 @@ You can import a read-only Project using the **Add project** **> Monitor public 
 
 ## Group level - Snyk AppRisk integrations
 
-Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
+Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.

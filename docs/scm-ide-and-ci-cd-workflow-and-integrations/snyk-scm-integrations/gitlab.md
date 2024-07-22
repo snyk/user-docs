@@ -1,9 +1,9 @@
-# GitLab integration
+# GitLab
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](gitlab-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](gitlab-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](gitlab.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](gitlab.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -26,9 +26,9 @@ The GitLab integration is available for [Snyk Enterprise plan](https://snyk.io/p
 The GitLab integration allows you to:
 
 1. Check for vulnerabilities in your pull requests.&#x20;
-2. From the **Report** page or the **Project** page on the Snyk Web UI, [trigger a Snyk pull request](gitlab-integration.md#fix-vulnerabilities-with-snyk-merge-requests) for the fixes listed.
-3. Receive [email alerts](gitlab-integration.md#receive-email-alerts-for-new-vulnerabilities) when new vulnerabilities that affect your repository arise and fixes for those vulnerabilities are shown.
-4. Receive [email alerts](gitlab-integration.md#receive-email-alerts-for-new-upgrades-or-patches) containing a new pull request if a new upgrade or patch is available for a vulnerability.
+2. From the **Report** page or the **Project** page on the Snyk Web UI, [trigger a Snyk pull request](gitlab.md#fix-vulnerabilities-with-snyk-merge-requests) for the fixes listed.
+3. Receive [email alerts](gitlab.md#receive-email-alerts-for-new-vulnerabilities) when new vulnerabilities that affect your repository arise and fixes for those vulnerabilities are shown.
+4. Receive [email alerts](gitlab.md#receive-email-alerts-for-new-upgrades-or-patches) containing a new pull request if a new upgrade or patch is available for a vulnerability.
 
 ### GitLab access tokens
 
@@ -177,7 +177,7 @@ The Integrations page shows all active integrations, including data from your ex
 #### Integrate using Snyk AppRisk <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
-2. API Token (`mandatory`): Create your GitLab PAT from your GitLab organization. Follow the instructions in [Generate a Personal access token from your GitLab settings section](gitlab-integration.md#generate-a-personal-access-token-from-your-gitlab-settings). Authorize your personal access token if you have configured SAML SSO.
+2. API Token (`mandatory`): Create your GitLab PAT from your GitLab organization. Follow the instructions in [Generate a Personal access token from your GitLab settings section](gitlab.md#generate-a-personal-access-token-from-your-gitlab-settings). Authorize your personal access token if you have configured SAML SSO.
 
 {% hint style="info" %}
 If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.

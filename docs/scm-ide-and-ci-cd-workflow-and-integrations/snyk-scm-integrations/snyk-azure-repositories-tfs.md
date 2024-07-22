@@ -1,9 +1,9 @@
-# Snyk Azure Repositories (TFS) integration
+# Snyk Azure Repositories (TFS)
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](snyk-azure-repositories-tfs-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](snyk-azure-repositories-tfs-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](snyk-azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](snyk-azure-repositories-tfs.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -44,9 +44,9 @@ After the integration is configured, Snyk does the following:
 
 The process to connect Snyk with your Azure repositories includes the following steps:
 
-1. Generate a unique Azure DevOps personal access token (PAT) for Snyk, based on a username and password combination, and configured with the specific permissions Snyk needs to access your Azure repositories. For more information, see [Configure a Personal Access Token (PAT)](snyk-azure-repositories-tfs-integration.md#configure-a-personal-access-token-pat).
-2. [Enable the integration through the Snyk Web UI](snyk-azure-repositories-tfs-integration.md#integrate-using-the-snyk-web-ui).
-3. [Select the Projects and repositories](snyk-azure-repositories-tfs-integration.md#add-projects-to-snyk-for-azure-repos) you want to associate with Snyk for testing and monitoring.\
+1. Generate a unique Azure DevOps personal access token (PAT) for Snyk, based on a username and password combination, and configured with the specific permissions Snyk needs to access your Azure repositories. For more information, see [Configure a Personal Access Token (PAT)](snyk-azure-repositories-tfs.md#configure-a-personal-access-token-pat).
+2. [Enable the integration through the Snyk Web UI](snyk-azure-repositories-tfs.md#integrate-using-the-snyk-web-ui).
+3. [Select the Projects and repositories](snyk-azure-repositories-tfs.md#add-projects-to-snyk-for-azure-repos) you want to associate with Snyk for testing and monitoring.\
    You can also enter custom file locations for any manifest files that are not located in the root folders of your repositories.
 
 ### **Configure a Personal Access Token (PAT)**
@@ -148,7 +148,7 @@ The Integrations page shows all active integrations, including data from your ex
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
-3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings. Follow the instructions from the  [Generate a Personal access token from your Azure DevOps settings](snyk-azure-repositories-tfs-integration.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
+3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings. Follow the instructions from the  [Generate a Personal access token from your Azure DevOps settings](snyk-azure-repositories-tfs.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
 
 {% hint style="info" %}
 If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.

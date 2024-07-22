@@ -1,4 +1,4 @@
-# GitHub integration
+# GitHub
 
 {% hint style="warning" %}
 **Feature availability**
@@ -8,8 +8,8 @@ The GitHub integration is available for all Snyk customers regardless of plan le
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](github-integration.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](github-integration.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](github.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Organization level](github.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 {% hint style="info" %}
 If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
@@ -28,7 +28,7 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 
 You cannot use the GitHub integration with a Snyk [Service Account](../../enterprise-configuration/service-accounts/), as the GitHub integration is associated with your user account, not with the Snyk Organization.
 
-Use the [GitHub Enterprise integration](github-enterprise-integration.md) to import public and private Projects using the API with a Snyk Service Account.
+Use the [GitHub Enterprise integration](github-enterprise.md) to import public and private Projects using the API with a Snyk Service Account.
 
 ### GitHub integration features
 
@@ -58,12 +58,12 @@ To see all settings for your GitHub integration, go to the GitHub Integration se
 
 You can then scroll down to the section required, and set the options accordingly:
 
-* [General settings](github-integration.md#github-integration-general-settings)
+* [General settings](github.md#github-integration-general-settings)
 * Pull requests:
-  * [Open Snyk automatic PRs from a fixed GitHub account](github-integration.md#setting-an-account-to-open-snyk-prs)
-  * [Automatic fix PRs](github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
+  * [Open Snyk automatic PRs from a fixed GitHub account](github.md#setting-an-account-to-open-snyk-prs)
+  * [Automatic fix PRs](github.md#project-monitoring-and-automatic-fix-pull-requests)
   * [Automatic dependency upgrade PRs](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/)
-  * [Pull request assignees](github-integration.md#pr-assignment)
+  * [Pull request assignees](github.md#pr-assignment)
   * [Snyk vulnerability patches](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
 * Pull request status checks ([PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/))
   * [Open Source security and licenses](../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md#configure-pr-checks-at-the-integration-level)
@@ -89,10 +89,10 @@ Select **General** to view general settings:
 
 After you have connected GitHub to Snyk, you can use:
 
-* [Project-level security reports](github-integration.md#project-level-security-reports)
-* [Project monitoring and automatic fix pull requests](github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-* [Commit signing](github-integration.md#commit-signing)
-* [Pull request testing](github-integration.md#pull-request-testing)
+* [Project-level security reports](github.md#project-level-security-reports)
+* [Project monitoring and automatic fix pull requests](github.md#project-monitoring-and-automatic-fix-pull-requests)
+* [Commit signing](github.md#commit-signing)
+* [Pull request testing](github.md#pull-request-testing)
 
 #### **Project-level security reports**
 
@@ -270,4 +270,4 @@ A disconnected GitHub integration will still appear as configured in the Integra
 
 ## Group level - Snyk AppRisk integrations
 
-Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise-integration.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
+Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
