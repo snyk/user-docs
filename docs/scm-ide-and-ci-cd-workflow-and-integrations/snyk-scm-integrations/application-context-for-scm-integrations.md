@@ -7,7 +7,7 @@ These are the available integrations that you can set up for the application con
 * [Atlassian Compass](application-context-for-scm-integrations.md#atlassian-compass)
 * [Harness](application-context-for-scm-integrations.md#harness)
 * [OpsLevel](application-context-for-scm-integrations.md#opslevel)
-* [Datadog Org Context ](application-context-for-scm-integrations.md#datadog-org-context-service-catalog)&#x20;
+* [Datadog Service Catalog](application-context-for-scm-integrations.md#datadog-service-catalog) &#x20;
 
 ## Backstage file for SCM integrations
 
@@ -247,7 +247,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 8. Click the **Done** button.
 9. When the connection is established, the status of the OpsLevel integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in OpsLevel.
 
-## Datadog Org Context (Service Catalog)
+## Datadog Service Catalog
 
 ### Required Parameters
 
@@ -258,7 +258,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 ### Integration Hub setup
 
 1. Open the **Integration Hub** menu.&#x20;
-2. Select the **App Context** tag and search for Datadog Org Context.&#x20;
+2. Select the **App Context** tag and search for **Datadog Service Catalog**.&#x20;
 3. Click the **Add** button.
 4. Add the **Profile name** - this is the name of your Datadog instance.
 5. Add the **API key** for your Datadog instance.
@@ -272,6 +272,6 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
    * Owner - If you select this metadata, it is mandatory to add the **Owner key**.
    * Application - If you select this metadata, it is mandatory to add the **Application key**.
 9. Click the **Done** button.
-10. When the connection is established, the status of the Datadog Org Context integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in Datadog Org Context.
+10. When the connection is established, the status of the Datadog Service Catalog integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in Datadog Service Catalog.
 
 \
