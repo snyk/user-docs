@@ -984,7 +984,6 @@
   * [OAuth2 API](snyk-api/oauth2-api.md)
   * [Reference](snyk-api/reference/README.md)
     * [Apps](snyk-api/reference/apps.md)
-    * [Audit Logs](snyk-api/reference/audit-logs.md)
     * [Audit logs (v1)](snyk-api/reference/audit-logs-v1.md)
     * [Collection](snyk-api/reference/collection.md)
     * [ContainerImage](snyk-api/reference/containerimage.md)
