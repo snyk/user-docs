@@ -1,5 +1,9 @@
 # Snyk Python-3.7 Action
 
+{% hint style="warning" %}
+**Warning:** This image is scheduled for removal on 12 Aug 2024. It is highly recommended that users consider migrating to a newer action to ensure continued support and up-to-date functionality. If you are currently using this image, plan an upgrade as soon as possible to avoid any disruptions in your workflow post this date.
+{% endhint %}
+
 This page provides examples of using the Snyk GitHub Action for [Python (3.7)](https://github.com/snyk/actions/tree/master/python-3.7). For instructions on using the action and further information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
 
 ## Snyk Python (3.7) Action
