@@ -5,7 +5,7 @@
 You have [created a Snyk account](create-or-log-in-to-a-snyk-account.md). You now need to tell Snyk where to scan.
 {% endhint %}
 
-You must give Snyk access to your environment, to allow Snyk to scan that environment. The type of integration you need depends on what systems you use, and what you want to scan. See [Integrate with Snyk](../../integrate-with-snyk/) for information about available integrators.
+You must give Snyk access to your environment, to allow Snyk to scan that environment. The type of integration you need depends on what systems you use, what you want to scan, and the level where you want to add the integrations; [Organization](../../integrate-with-snyk/#integrations-for-snyk) or [Group](../../integrate-with-snyk/#integrations-for-snyk-apprisk). See [Snyk SCM integrations](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/) or  [Integrate with Snyk](../../integrate-with-snyk/) for information about available integrators.
 
 You can set up this integration:
 
