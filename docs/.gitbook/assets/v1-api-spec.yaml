@@ -30805,7 +30805,7 @@ tags:
       Dependencies are packages/modules that your projects depend on.
 
 
-      Current rate limit is up to 150 requests per minute, per user.
+      Current rate limit is up to 1,500 requests per hour (with bursts of up to 150 requests per minute), per user.
 
       For more information about rate-limiting see: [https://snyk.docs.apiary.io/#introduction/rate-limiting](https://snyk.docs.apiary.io/#introduction/rate-limiting)
   - name: Licenses
@@ -30834,7 +30834,7 @@ tags:
       With it you can find answers to questions like how many issues your organisation has, or how many tests have been conducted in a given time frame.
 
 
-      Current rate limit is up to 70 requests per minute, per user.
+      Current rate limit is up to 1,500 requests per hour (with bursts of up to 70 requests per minute), per user.
 
       All requests above the limit will get a response with status code `429` - `Too many requests` until requests stop for the duration of the rate-limiting interval (currently a minute).
 
