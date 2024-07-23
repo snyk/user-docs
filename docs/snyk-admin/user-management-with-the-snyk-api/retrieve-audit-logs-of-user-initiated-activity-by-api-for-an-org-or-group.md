@@ -17,4 +17,4 @@ Examples of events returned include the following:
 * The license rule or policy was modified.
 * A service account was created, modified, or deleted.
 
-For a list of the events returned, refer to the [API documentation](https://apidocs.snyk.io/?version=2023-08-24%7Ebeta#tag--Audit-Logs). Login and logout events for users are not returned because the endpoints return information for the Group or Organization specified in the request.
+For a list of the events returned, refer to the [API Audit log documentation](https://apidocs.snyk.io/#get-/groups/-group\_id-/audit\_logs/search). Login and logout events for users are not returned because the endpoints return information for the Group or Organization specified in the request.
