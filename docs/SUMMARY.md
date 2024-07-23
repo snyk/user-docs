@@ -991,7 +991,7 @@
   * [OAuth2 API](snyk-api/oauth2-api.md)
   * [Reference](snyk-api/reference/README.md)
     * [Apps](snyk-api/reference/apps.md)
-    * [Audit logs (v1)](snyk-api/reference/audit-logs-v1.md)
+    * [Audit Logs](snyk-api/reference/audit-logs.md)
     * [Collection](snyk-api/reference/collection.md)
     * [ContainerImage](snyk-api/reference/containerimage.md)
     * [Custom Base Images](snyk-api/reference/custom-base-images.md)
