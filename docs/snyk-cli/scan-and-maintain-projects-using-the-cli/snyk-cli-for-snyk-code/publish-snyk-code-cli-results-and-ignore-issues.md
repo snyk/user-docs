@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Release status and feature availability**
 
-Publishing and ignoring CLI results is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans.
+Publishing and ignoring CLI results is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available **by invitation only** and **only for Enterprise plans**. If you are interested in using this feature, contact your Snyk team.
 
 The minimum supported CLI version is v1.1194.0.
 {% endhint %}
