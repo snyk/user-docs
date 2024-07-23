@@ -86,9 +86,9 @@ You can use the [Policies](../manage-risk/policies/assets-policies/) page to aut
 The Integrations menu option for the Group level is available only for Snyk AppRisk users.&#x20;
 {% endhint %}
 
-The Integrations page shows all active integrations, [SCM](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.&#x20;
+The Integrations page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.&#x20;
 
-You can find the overview of all your integrations on the Snyk Web UI Integrations page and more details about the available integrations on the [Snyk AppRisk SCM integrations](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) page and on the [Integrate with Snyk](../integrate-with-snyk/#integrations-for-snyk-apprisk) page.
+You can find the overview of all your integrations on the Snyk Web UI Integrations page and more details about the available integrations on the [Snyk AppRisk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) page and on the [Integrate with Snyk](../integrate-with-snyk/#integrations-for-snyk-apprisk) page.
 
 You can enable or disable your integrations, edit them, or remove them from your configuration.
 
@@ -138,7 +138,7 @@ The following Snyk functions are available with the Web UI:
 * [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings)
 
 {% hint style="info" %}
-You can also use Snyk functions from the [Snyk CLI](../snyk-cli/), [in your IDE](../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/), and with the [Snyk API](../snyk-api/).
+You can also use Snyk functions from the [Snyk CLI](../snyk-cli/), [in your IDE](../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), and with the [Snyk API](../snyk-api/).
 {% endhint %}
 
 ### Explore the Dashboard

@@ -35,7 +35,7 @@ PRs use a branch naming convention based on the issues that they fix. When a PR 
 
 ## Snyk SCM webhooks
 
-To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/).
+To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
 Snyk uses these webhooks to:
 

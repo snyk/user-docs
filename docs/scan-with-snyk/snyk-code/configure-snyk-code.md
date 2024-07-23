@@ -2,7 +2,7 @@
 
 ## Conditions
 
-To use Snyk Code in an [IDE](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](../../snyk-api/), you must perform the following actions
+To use Snyk Code in an [IDE](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](../../snyk-api/), you must perform the following actions
 
 1. [Enable Snyk Code in Snyk Web UI](configure-snyk-code.md#enable-snyk-code-in-snyk-web-ui)
 2. [Integrate Git repository with Snyk](configure-snyk-code.md#integrate-git-repository-with-snyk)
@@ -75,7 +75,7 @@ The **Source control** integrations display only SCMs that are supported by Snyk
 
 This grants Snyk access permissions for the integrated SCM.
 
-For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/).
+For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
 After you have integrated the SCM with your Snyk account, you can import the repositories you want to scan using Snyk Code.
 

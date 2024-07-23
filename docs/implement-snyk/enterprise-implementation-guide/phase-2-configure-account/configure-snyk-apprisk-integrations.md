@@ -32,11 +32,11 @@ After you ensure you can correctly access Snyk AppRisk, you can start to build y
 The scanned information is automatically imported within two hours after enabling all features.&#x20;
 {% endhint %}
 
-You can access and configure the integrations from the Integrations view. Select the Integration Hub option to see the list of all available integrations. You can find more details about integration configuration in the [Using the Integration Hub](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#using-the-integration-hub) section.
+You can access and configure the integrations from the Integrations view. Select the Integration Hub option to see the list of all available integrations. You can find more details about integration configuration in the [Using the Integration Hub](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#using-the-integration-hub) section.
 
 The default display in the Integrations view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem).
+The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem).
 
 <figure><img src="../../../.gitbook/assets/image (357) (1).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk AppRisk - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
 
@@ -54,12 +54,12 @@ The integrations at the organization level that facilitate Snyk Code, Snyk Open 
 
 The supported SCM integrations are:
 
-* [GitHub](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/github.md#group-level-snyk-apprisk-integrations)
-* [GitLab](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-apprisk-integrations)
-* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)
-* [BitBucket](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations)
+* [GitHub](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md#group-level-snyk-apprisk-integrations)
+* [GitLab](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-apprisk-integrations)
+* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)
+* [BitBucket](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations)
 
-Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
+Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
@@ -103,7 +103,7 @@ The supported third-party integrations are:
 
 Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk AppRisk.
 
-Access the [Application context for SCM Integrations](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md) docs for more details about how to use this feature.
+Access the [Application context for SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md) docs for more details about how to use this feature.
 
 {% hint style="info" %}
 After setting up all the Snyk AppRisk integrations, depending on the number of repositories, results may take up to a day to appear.
@@ -116,7 +116,7 @@ The Snyk AppRisk functionality is split across several menu options from the Gro
 * [Dashboard](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard)
 * [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/policies/assets-policies/)
-* [Integrations for SCM](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and for [third-party](../../../integrate-with-snyk/#integrations-for-snyk-apprisk)
+* [Integrations for SCM](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and for [third-party](../../../integrate-with-snyk/#integrations-for-snyk-apprisk)
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 
 #### Inventory view

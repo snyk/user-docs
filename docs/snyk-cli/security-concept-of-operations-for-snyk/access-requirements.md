@@ -1,6 +1,6 @@
 # Access requirements
 
-When you are using Snyk applications like the [CLI ](../getting-started-with-the-snyk-cli.md)or [IDE integrations](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ide-plugins-and-extensions/), certain local and remote resources must be accessible. This documentation explains how to harden your system without affecting Snyk functionality.
+When you are using Snyk applications like the [CLI ](../getting-started-with-the-snyk-cli.md)or [IDE integrations](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), certain local and remote resources must be accessible. This documentation explains how to harden your system without affecting Snyk functionality.
 
 ## Local filesystem
 

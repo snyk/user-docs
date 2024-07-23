@@ -19,7 +19,7 @@ The Snyk AppRisk Essentials plan is included in the Snyk Enterprise plan, meanin
 
 * [Coverage control](../../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md) for SCM.
 * [Policy](../../manage-risk/policies/assets-policies/) creation to automatically trigger specific actions.
-* [Backstage file](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md) customization for SCM integrations.
+* [Backstage file](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md) customization for SCM integrations.
 * [Customized analytics](../../manage-risk/enterprise-analytics/) and reports about the application.&#x20;
 
 {% hint style="info" %}

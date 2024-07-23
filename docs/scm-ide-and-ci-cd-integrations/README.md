@@ -1,8 +1,8 @@
-# SCM, IDE, and CI/CD workflow and integrations
+# SCM, IDE, and CI/CD integrations
 
-This section of the documentation provides information about [Snyk SCM](snyk-scm-integrations/), [IDE](snyk-ide-plugins-and-extensions/), and [CI/CD workflow](snyk-ci-cd-integrations/) and integrations.
+This section of the documentation provides information about [Snyk SCM](snyk-scm-integrations/), [IDE](snyk-ide-plugins-and-extensions/), and [CI/CD integrations](snyk-ci-cd-integrations/).
 
-Snyk supports SCM, IDE, and CI/CD workflow and integration methods that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment.
+Snyk supports SCM, IDE, and CI/CD integration methods that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment.
 
 {% hint style="warning" %}
 Enterprise plan users have access to all of the functionality. The API and Snyk AppRisk are not available to Free and Team plan users. See [Plans and pricing](https://snyk.io/plans/) for more information.

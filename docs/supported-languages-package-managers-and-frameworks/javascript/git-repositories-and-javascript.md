@@ -1,6 +1,6 @@
 # Git repositories and JavaScript
 
-You can import JavaScript repositories from any Git services [supported by Snyk](../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/). After the import, Snyk analyzes your Projects based on their supported manifest files.
+You can import JavaScript repositories from any Git services [supported by Snyk](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
 ## Snyk for JavaScript language settings
 
