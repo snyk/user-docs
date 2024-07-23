@@ -19,7 +19,7 @@ Follow these basic steps:
 2.  As part of a Bazel test rule, send the Dep Braph JSON object as a POST request to the [Dep Graph Test API](https://snyk.docs.apiary.io/#reference/test/dep-graph), along with your [auth token](../../snyk-api/rest-api/authentication-for-api/). An example curl request follows:
 
     ```
-    curl -X POST 'https://snyk.io/api/v1/test/dep-graph' \
+    curl -X POST 'https://api.snyk.io/v1/test/dep-graph' \
       -H 'Authorization: token {{your token}}' \
       -H 'Content-Type: application/json; charset=utf-8' \
       -d @dep-graph.json

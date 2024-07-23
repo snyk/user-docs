@@ -805,34 +805,34 @@ paths:
                   - example:
                       id: a060a49f-636e-480f-9e14-38e773b2a97f
                       name: ACME Inc.
-                      url: https://api.snyk.io/group/0dfc509a-e7a9-48ef-9d39-649d6468fc09
+                      url: https://api.snyk.io/v1/group/0dfc509a-e7a9-48ef-9d39-649d6468fc09
                       created: 2021-06-07T00:00:00.000Z
                       orgs:
                         - name: myDefaultOrg
                           id: 689ce7f9-7943-4a71-b704-2ba575f01089
                           slug: my-default-org
-                          url: https://api.snyk.io/org/default-org
+                          url: https://api.snyk.io/v1/org/default-org
                           created: 2021-06-07T00:00:00.000Z
                         - name: My Other Org
                           id: a04d9cbd-ae6e-44af-b573-0556b0ad4bd2
                           slug: my-other-org
-                          url: https://api.snyk.io/org/my-other-org
+                          url: https://api.snyk.io/v1/org/my-other-org
                           created: 2021-06-07T00:00:00.000Z
               example:
                 id: a060a49f-636e-480f-9e14-38e773b2a97f
                 name: ACME Inc.
-                url: https://api.snyk.io/group/0dfc509a-e7a9-48ef-9d39-649d6468fc09
+                url: https://api.snyk.io/v1/group/0dfc509a-e7a9-48ef-9d39-649d6468fc09
                 created: 2021-06-07T00:00:00.000Z
                 orgs:
                   - name: myDefaultOrg
                     id: 689ce7f9-7943-4a71-b704-2ba575f01089
                     slug: my-default-org
-                    url: https://api.snyk.io/org/default-org
+                    url: https://api.snyk.io/v1/org/default-org
                     created: 2021-06-07T00:00:00.000Z
                   - name: My Other Org
                     id: a04d9cbd-ae6e-44af-b573-0556b0ad4bd2
                     slug: my-other-org
-                    url: https://api.snyk.io/org/my-other-org
+                    url: https://api.snyk.io/v1/org/my-other-org
                     created: 2021-06-07T00:00:00.000Z
       deprecated: false
   /group/{groupId}/roles:
@@ -970,7 +970,7 @@ paths:
                       id: 0356f641-c55c-488f-af05-c2122590f369
                       name: new-org
                       slug: new-org
-                      url: https://snyk.io/org/new-org
+                      url: https://api.snyk.io/v1/org/new-org
                       created: 2021-01-07T16:07:16.237Z
                       group:
                         name: test-group
@@ -979,7 +979,7 @@ paths:
                 id: 0356f641-c55c-488f-af05-c2122590f369
                 name: new-org
                 slug: new-org
-                url: https://snyk.io/org/new-org
+                url: https://api.snyk.io/v1/org/new-org
                 created: 2021-01-07T16:07:16.237Z
                 group:
                   name: test-group
@@ -2557,14 +2557,14 @@ paths:
                           projects:
                             - targetFile: package.json
                               success: true
-                              projectUrl: https://snyk.io/org/org-name/project/7eeaee25-5f9b-4d05-8818-4cca2c9d9adc
+                              projectUrl: https://api.snyk.io/v1/org/org-name/project/7eeaee25-5f9b-4d05-8818-4cca2c9d9adc
                         - name: org3/repo3
                           created: 2018-07-23T15:21:10.643Z
                           status: pending
                           projects:
                             - targetFile: package.json
                               success: true
-                              projectUrl: https://snyk.io/org/org-name/project/0382897c-0617-4429-86df-51187dfd42f6
+                              projectUrl: https://api.snyk.io/v1/org/org-name/project/0382897c-0617-4429-86df-51187dfd42f6
               example:
                 id: dce061f7-ce0f-4ccf-b49b-4335d1205bd9
                 status: pending
@@ -2580,14 +2580,14 @@ paths:
                     projects:
                       - targetFile: package.json
                         success: true
-                        projectUrl: https://snyk.io/org/org-name/project/7eeaee25-5f9b-4d05-8818-4cca2c9d9adc
+                        projectUrl: https://api.snyk.io/v1/org/org-name/project/7eeaee25-5f9b-4d05-8818-4cca2c9d9adc
                   - name: org3/repo3
                     created: 2018-07-23T15:21:10.643Z
                     status: pending
                     projects:
                       - targetFile: package.json
                         success: true
-                        projectUrl: https://snyk.io/org/org-name/project/0382897c-0617-4429-86df-51187dfd42f6
+                        projectUrl: https://api.snyk.io/v1/org/org-name/project/0382897c-0617-4429-86df-51187dfd42f6
       deprecated: false
   /org/{orgId}/project/{projectId}:
     get:
@@ -18991,7 +18991,7 @@ components:
         id: 0356f641-c55c-488f-af05-c2122590f369
         name: new-org
         slug: new-org
-        url: https://snyk.io/org/new-org
+        url: https://api.snyk.io/v1/org/new-org
         created: 2021-01-07T16:07:16.237Z
         group:
           name: test-group
@@ -22725,18 +22725,18 @@ components:
       example:
         id: a060a49f-636e-480f-9e14-38e773b2a97f
         name: ACME Inc.
-        url: https://api.snyk.io/group/0dfc509a-e7a9-48ef-9d39-649d6468fc09
+        url: https://api.snyk.io/v1/group/0dfc509a-e7a9-48ef-9d39-649d6468fc09
         created: 2021-06-07T00:00:00.000Z
         orgs:
           - name: myDefaultOrg
             id: 689ce7f9-7943-4a71-b704-2ba575f01089
             slug: my-default-org
-            url: https://api.snyk.io/org/default-org
+            url: https://api.snyk.io/v1/org/default-org
             created: 2021-06-07T00:00:00.000Z
           - name: My Other Org
             id: a04d9cbd-ae6e-44af-b573-0556b0ad4bd2
             slug: my-other-org
-            url: https://api.snyk.io/org/my-other-org
+            url: https://api.snyk.io/v1/org/my-other-org
             created: 2021-06-07T00:00:00.000Z
     Listallrolesinagroupresponse:
       title: Listallrolesinagroupresponse
@@ -23036,7 +23036,7 @@ components:
         name: myDefaultOrg
         id: 689ce7f9-7943-4a71-b704-2ba575f01089
         slug: my-default-org
-        url: https://api.snyk.io/org/default-org
+        url: https://api.snyk.io/v1/org/default-org
         created: 2021-06-07T00:00:00.000Z
     Orgs2:
       title: Orgs2

@@ -28,7 +28,7 @@ The default **scanning frequency** and available frequencies vary depending on t
 
 ## Scan using the API
 
-The Snyk API v1 offers a set of endpoints to test your code. Scans are counted when calls are made to the **https://snyk.io/api/v1/test** endpoint.
+The Snyk API v1 offers a set of endpoints to test your code. Scans are counted when calls are made to the **https://api.snyk.io/v1/test** endpoint.
 
 See the [API documentation](https://snyk.docs.apiary.io/#reference/test) and the [API v1 Test docs](https://snyk.docs.apiary.io/#reference/test) for more information.
 

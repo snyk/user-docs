@@ -49,7 +49,7 @@ The plugin can download the latest version of Snyk's binaries and keep them up-t
 
 ### Custom API endpoints
 
-By default, Snyk uses the https://snyk.io/api endpoint. It is possible to configure Snyk to use a different endpoint by changing the `SNYK_API` environment variable:
+By default, Snyk uses the https://api.snyk.io endpoint. It is possible to configure Snyk to use a different endpoint by changing the `SNYK_API` environment variable:
 
 * Go to **Manage Jenkins** > **Configure System**.
 * Under **Global Properties** check the **Environment** variables option.

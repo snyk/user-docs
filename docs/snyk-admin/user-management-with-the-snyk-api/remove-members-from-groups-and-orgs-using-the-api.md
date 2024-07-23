@@ -6,7 +6,7 @@ To remove members from Groups and Organizations programmatically from user user 
 
 ### Step 1: Get a list of Organization members
 
-**Request**: `GET https://snyk.io/api/v1/org/{orgId}/members`
+**Request**: `GET https://api.snyk.io/v1/org/{orgId}/members`
 
 **API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members](https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members)
 
@@ -14,7 +14,7 @@ This call returns an array of all non-admin members of the Organization. Save th
 
 ### Step 2: Remove a member from an Organization
 
-**Request**: `DELETE https://snyk.io/api/v1/org/{orgId}/members/update/{userId}`
+**Request**: `DELETE https://api.snyk.io/v1/org/{orgId}/members/update/{userId}`
 
 **API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization)
 
@@ -32,7 +32,7 @@ When a member is removed from an Organization, if the Organization is a part of 
 
 ### Step 1: Get a list of Group members
 
-**Request**: `GET https://api.snyk.io/api/v1/group/groupId/members`
+**Request**: `GET https://api.snyk.io/v1/group/groupId/members`
 
 **API documentation**: [https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group/list-all-members-in-a-group](https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group/list-all-members-in-a-group)
 
@@ -83,4 +83,4 @@ You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** >**Setting
 For a successful request, the response is `200 OK`.
 
 Use the following request to verify the member has been deleted.\
-`GET https://api.snyk.io/api/v1/user/userId`
+`GET https://api.snyk.io/v1/user/userId`

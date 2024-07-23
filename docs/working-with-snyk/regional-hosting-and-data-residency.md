@@ -88,10 +88,10 @@ US REST API URL\
 https://api.snyk.io/rest/
 
 US CLI and CI pipelines URL\
-https://app.snyk.io/api
+https://api.snyk.io
 
 US IDEs URL\
-https://app.snyk.io/api
+https://api.snyk.io
 
 US Broker server URL\
 https://broker.snyk.io
@@ -148,31 +148,31 @@ Both CLI and CI running CLI need to be configured to run against your instance. 
 
 #### **EU**
 
-`snyk config set endpoint=https://app.eu.snyk.io/api`
+`snyk config set endpoint=https://api.eu.snyk.io`
 
 #### **AU**
 
-`snyk config set endpoint=https://app.au.snyk.io/api`
+`snyk config set endpoint=https://api.au.snyk.io`
 
 Alternatively, have an environment variable on your machine or CI tool:
 
 #### **EU**
 
-`SNYK_API=https://app.eu.snyk.io/api`
+`SNYK_API=https://api.eu.snyk.io`
 
 #### **AU**
 
-`SNYK_API=https://app.au.snyk.io/api`
+`SNYK_API=https://api.au.snyk.io`
 
 When running Jenkins, use the additional argument:
 
 #### **EU**
 
-`--API=https://app.eu.snyk.io/api`
+`--API=https://api.eu.snyk.io`
 
 #### **AU**
 
-`--API=https://app.au.snyk.io/api`
+`--API=https://api.au.snyk.io`
 
 ### IDEs URLs
 

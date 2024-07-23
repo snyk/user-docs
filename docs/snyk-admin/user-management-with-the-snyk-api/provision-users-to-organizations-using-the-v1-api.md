@@ -26,7 +26,7 @@ The following explains how to use the Provision user endpoints. For more informa
 
 You provision a user to the specified Organization with a role. When a user first logs into Snyk, the user is automatically assigned the permissions as defined in the role.
 
-**`POST`** `https://api.snyk.io/api/v1/org/orgId/provision`
+**`POST`** `https://api.snyk.io/v1/org/orgId/provision`
 
 **Request model:**
 
@@ -64,7 +64,7 @@ You can use either `role` or `rolePublicId` but not both in the same call.
 
 The List pending user permissions endpoint returns pending provisioned users in the response.
 
-**`GET`** `https://api.snyk.io/api/v1/org/orgId/provision`
+**`GET`** `https://api.snyk.io/v1/org/orgId/provision`
 
 **Response model:**
 
@@ -92,7 +92,7 @@ The List pending user permissions endpoint returns pending provisioned users in 
 
 Use the Delete pending use provision endpoint to remove a pending provision request.
 
-**`DELETE`** `https://api.snyk.io/api/v1/org/orgId/provision`
+**`DELETE`** `https://api.snyk.io/v1/org/orgId/provision`
 
 Query parameters
 
