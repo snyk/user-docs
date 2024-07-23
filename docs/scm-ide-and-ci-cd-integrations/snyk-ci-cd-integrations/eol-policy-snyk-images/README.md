@@ -63,4 +63,4 @@ Here is how Snyk implements this phased approach during the four-month annual cy
 | July            | Create and publish migration user guides on docs.snyk.io where applicable,                        | User documentation will be updated with migration guides,                                |
 | August          | Remove impacted images from Docker Hub,                                                           | Impacted images will be removed,                                                         |
 
-For more details, see [Images planned to be removed in 2024](images-planned-to-be-removed-in-2024.md) and [Images no longer supported by Snyk](images-no-longer-supported-by-snyk.md).
+For more details, see [Images planned to be removed in 2024](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/images-planned-to-be-removed-in-2024.md) and [Images no longer supported by Snyk](../../../scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/images-no-longer-supported-by-snyk.md).

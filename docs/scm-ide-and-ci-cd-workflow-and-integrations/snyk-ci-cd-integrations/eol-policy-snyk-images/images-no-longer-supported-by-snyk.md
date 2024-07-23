@@ -1,6 +1,8 @@
 # Images no longer supported by Snyk
 
-The following images are no longer supported by Snyk.
+
+
+The following images are no longer supported by Snyk and are **scheduled to be removed in August 2024** from [Snyk Images Docker Hub.](https://hub.docker.com/r/snyk/snyk)
 
 | Image                      | Based on                                  |
 | -------------------------- | ----------------------------------------- |
