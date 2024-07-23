@@ -55,7 +55,7 @@ pipelines:
                   DEBUG: "true" # Optional
 ```
 
-Per the [Snyk Images](https://snyksec.atlassian.net/wiki/spaces/CLI/pages/2215575555) guidelines, we can upgrade to a supported Snyk Image like so:
+Following the Snyk Images guidelines, you can upgrade to a supported Snyk Image as shown here:
 
 ```yaml
 #  Upgrading to supported Snyk Image `snyk/snyk:node-22`
