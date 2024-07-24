@@ -105,4 +105,4 @@ redirects:
   manage-risk/snyk-apprisk/integrations-for-snyk-apprisk: integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md
   manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-an-scm-integration: scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations/README.md
   manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/customize-an-integration: getting-started/snyk-web-ui.md
-  scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration: scm-ide-and-ci-cd-integrations#choose-an-integration.md
+  scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration: scm-ide-and-ci-cd-integrations/README.md
