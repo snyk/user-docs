@@ -29,7 +29,7 @@ To use the CLI, you must install it and authenticate your machine. See [Install 
 
 **Note:** Before you can use the CLI for Open Source scanning, you must install your package manager. The needed third-party tools, such as Gradle or Maven, must be in the `PATH`.
 
-You can use the CLI in your IDE or CI/CD environment. For details, see the [IDE and CI/CD documentation](https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations).
+You can also install the CLI in your IDE or CI/CD environment. For details, see the [IDE and CI/CD documentation](https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations) for instructions for each integration.
 
 ## Test your installation
 
