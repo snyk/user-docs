@@ -6,6 +6,8 @@ This page contains information about the following Snyk SCM integration aspects:
 
 * [Snyk AppRisk SCM integrations available at the Group level](./#group-level-snyk-apprisk-scm-integrations)
 * [Snyk SCM integrations available at the Organization level](./#organization-level-snyk-scm-integrations)
+* [Git repository cloning](./#snyk-git-repository-cloning)
+* [Deployment order recommendations](./#deployment-order-recommendations)
 * [General user permissions and access scope requirements](./#user-permissions-and-access-scope-requirements)
 * [Integrated SCM tokens for Snyk Broker](./#integrated-scm-tokens-for-snyk-broker)
 

@@ -265,7 +265,6 @@
 * [SCM, IDE, and CI/CD integrations](scm-ide-and-ci-cd-integrations/README.md)
   * [Snyk SCM Integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/README.md)
     * [Introduction to Git repositories integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/README.md)
-      * [Using GitHub or GitHub Enterprise integration](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md)
       * [Deployment recommendations for SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/deployment-recommendations-for-scm-integrations.md)
       * [Git repository cloning for SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations.md)
     * [GitHub Enterprise](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md)

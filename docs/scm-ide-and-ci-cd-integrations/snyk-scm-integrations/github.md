@@ -268,6 +268,31 @@ Note that branch protection is active only after a PR has been raised.
 A disconnected GitHub integration will still appear as configured in the Integrations menu of the Snyk UI. However, clicking on the integration settings will show that it is not connected. In this case, the "configured" integration can safely be ignored.&#x20;
 {% endhint %}
 
+### Migrate to the GitHub Enterprise integration
+
+{% hint style="warning" %}
+Before deleting Snyk Projects imported using the GitHub integration, consider the impact on reporting. If you decide to delete Projects, and none remain for a Target, delete the Target too. For details, contact your Snyk account team or Snyk support.
+{% endhint %}
+
+Before you configure and Import Projects using the [GitHub Enterprise integration](github-enterprise.md), Snyk recommends removing all Projects imported using the GitHub integration. This avoids having duplicate Snyk Projects.
+
+You can remove Projects imported using the GitHub integration manually by removing the Projects from Snyk. However, depending on how many Projects you have already imported using the GitHub integration, it may be easier for you to create a new Snyk Organization.
+
+If you have already created multiple Snyk Organizations and Projects have been imported from GitHub to each Organization, it may be easier to re-create the Snyk Organizations to use the Snyk GitHub Enterprise integration than to update each one manually. If you choose to do this, you can copy integration settings from an existing Organization to avoid having to re-configure other integrations.
+
+#### Migration steps
+
+If you already have multiple Snyk Organizations with Projects imported using the GitHub integration, follow these steps to migrate from GitHub integration to GitHub Enterprise integration.
+
+1. Create a new Snyk Organization that will be used as the template for all others. You can copy integration settings from an existing Organization if required.
+2. In this new template Organization, set up the Snyk GitHub Enterprise integration using the steps on the page [GitHub Enterprise integration](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise#how-to-set-up-a-github-enterprise-integration). The dedicated GitHub service account in those steps is a separate user account that you will use as the connection between Snyk and GitHub.
+3. When the Snyk GitHub Enterprise integration is configured, you can import a Project to your template Organization to test that the integration is working as expected.
+4. You can now create new Organizations that will replace the existing Organizations that were configured using the GitHub integration. As you create each new Organization, ensure that you copy the integration settings from this template Organization so that the GitHub Enterprise integration is available.
+5. Now that your new Organizations are created, you can import your Projects, choosing the GitHub Enterprise integration when you select the source.
+6. You can now remove the previous Organizations that were configured using the GitHub integration.
+
+You may want to [disconnect your GitHub integration](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github#disconnecting-the-github-integration) to avoid unintentionally importing Projects using the GitHub integration in the future. Because the GitHub integration is configured per user account, rather than per Organization, each user who has set up the GitHub integration must complete this disconnection process individually.
+
 ## Group level - Snyk AppRisk integrations
 
 Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
