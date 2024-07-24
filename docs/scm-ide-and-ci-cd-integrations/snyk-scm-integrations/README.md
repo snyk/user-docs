@@ -268,3 +268,36 @@ In Azure, the PAT requires the following permissions for Snyk access:
 
 * **Expiry**: Custom defined. Snyk recommends choosing a token expiration date that is far in the future.&#x20;
 * **Scopes**: Custom defined. `Read & write` permissions are needed for the **Code** scope.
+
+## Integrated SCM tokens for Snyk Broker
+
+An integrated SCM token is required for [Broker client setup](../../enterprise-configuration/snyk-broker/#integrations-with-snyk-broker). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
+
+An integrated SCM token can be generated for the following SCM integrations:
+
+* [GitHub and GitHub Enterprise](./#github-and-github-enterprise-scm-token)
+* [GitLab](./#gitlab-scm-token)
+* [Azure Repositories (TFS)](./#azure-repositories-tfs-scm-token)
+* [Bitbucket Server/Data Center](./#bitbucket-server-data-center-scm-token)
+
+### GitHub and GitHub Enterprise SCM token
+
+**Format**: `GITHUB_TOKEN=` - a GitHub personal access token. \
+**Scopes:** `repo, read:org` and `admin:repo_hook.`
+
+### GitLab SCM token
+
+**Format**: `GITLAB_TOKEN=` - a GitLab personal access token.\
+**Scopes**: `api`.
+
+GitLab account with `Maintainer` permission.
+
+### Azure Repositories (TFS) SCM token
+
+**Format**: `AZURE_REPOS_TOKEN=` - an Azure Repos personal access token. \
+**Scopes**: `Custom defined`, \*\* `Code:` \*\* `Read & write`_._
+
+### Bitbucket Server/Data Center SCM token
+
+**Format**: `BITBUCKET_USERNAME=`, `BITBUCKET_PASSWORD=` – the Bitbucket Server username and password or a Bitbucket Server personal access token.\
+**Scope**: `Repository admin`**.**
