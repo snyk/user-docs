@@ -36,7 +36,7 @@ You can specify either your personal API token or a service token, available for
 
 ## Steps to authenticate using your API token
 
-1. Go to [your Snyk account](https://app.snyk.io/account), **Account Settings > API Token** section.
+1. Log in to Snyk and from the pull-down menu under your username, choose **Account settings > General.**
 2. In the **KEY** field, choose **click to show**; then select and copy your API token. A screenshot follows.
 3. In the CLI, run `snyk auth [<API_TOKEN>]` or `snyk config set api=<token>`. The `<API_TOKEN>`is validated by the Snyk API.
 

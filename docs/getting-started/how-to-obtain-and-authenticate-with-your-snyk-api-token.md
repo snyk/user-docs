@@ -24,8 +24,8 @@ If you are using Snyk on the EU and AU tenants,  you must set your endpoints acc
 
 Follow these steps to obtain your personal Snyk API token:
 
-1. Log in to Snyk and navigate to your **Account settings**
-2. In the **Account Settings,** select **General** > **Auth Token**
+1. Log in to Snyk and from the pull-down menu under your username, choose **Account settings > General**.
+2. In the **Account Settings,** select **General** > **Auth Token**.
 3. In the KEY field, **click to show** and then select and copy your API token.
 4. Copy the token and save it in a secure location for future use.
 
