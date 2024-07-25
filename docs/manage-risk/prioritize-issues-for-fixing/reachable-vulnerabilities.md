@@ -26,25 +26,26 @@ To update existing Projects with the reachability analysis immediately, trigger 
 
 Reachable vulnerabilities analysis is available for Java (Maven and Gradle) Projects.
 
-The following integrations are supported for Reachable Vulnerabilities analysis:
-
-* [GitHub](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)&#x20;
-* [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md) (Currently in Early Access)
-* [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md) (Currently in Early Access)
-* [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md) (Currently in Early Access)
-* [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md) (Currently in Early Access)
-* [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md) (Currently in Early Access)
-
 {% hint style="warning" %}
 **Release status**&#x20;
 
-Reachability for all SCM providers is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
+Reachability for SCM providers is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
 
 To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
 {% endhint %}
 
+The following integrations are supported for Reachable Vulnerabilities analysis:
+
+* [GitHub](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)
+* [GitHub Enterprise](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/the-scripts/github-enterprise/)
+* [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md) (in Early Access)
+* [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md) (n Early Access)
+* [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md) (in Early Access)
+* [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md) (in Early Access)
+* [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md) (in Early Access)
+
 {% hint style="info" %}
-Reachable vulnerability analysis using the Snyk CLI, other Git integrations, and other languages is not currently supported.
+Reachable vulnerability analysis using the Snyk CLI, other Git integrations, and other languages is not supported.
 {% endhint %}
 
 ## **Enabling Reachability for brokered connections**
