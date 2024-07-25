@@ -16,10 +16,10 @@ Creating a custom image should guarantee compatibility with your system. However
 
 ### Upgrade to a supported Snyk Image <a href="#upgrade-to-a-supported-snyk-image" id="upgrade-to-a-supported-snyk-image"></a>
 
-After you have validated that you are using a Snyk Image that will be removed, as outlined [for users of `snyk/snyk-scan` < v1.0.0](bitbucket-pipelines-migration.md#users-using-snyk-snyk-scan-less-than-v1.0.0), refer to the Snyk Images guidelines to view upgrade paths for your configuration.
+After you have validated that you are using a Snyk Image that will be removed, as outlined [for users of `snyk/snyk-scan` < v1.0.0](bitbucket-pipelines-migration.md#users-using-snyk-snyk-scan-less-than-v1.0.0), refer to the [Snyk images migration](snyk-images-migration.md) guidelines to view upgrade paths for your configuration.
 
 {% hint style="info" %}
-Remember to use pinned versions where available for better stability. for exanple, `snyk/snyk:dotnet-8.0` is preferable to `snyk/snyk:dotnet`
+Remember to use pinned versions where available for better stability. for example, `snyk/snyk:dotnet-8.0` is preferable to `snyk/snyk:dotnet`
 {% endhint %}
 
 An **example** follows of **upgrading to a supported Snyk Image**.
@@ -55,7 +55,7 @@ pipelines:
                   DEBUG: "true" # Optional
 ```
 
-Following the Snyk Images guidelines, you can upgrade to a supported Snyk Image as shown here:
+Following the [Snyk images migration](snyk-images-migration.md) guidelines, you can upgrade to a supported Snyk Image as shown here:
 
 ```yaml
 #  Upgrading to supported Snyk Image `snyk/snyk:node-22`

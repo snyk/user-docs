@@ -346,6 +346,7 @@
       * [Images planned to be removed in 2024](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/images-planned-to-be-removed-in-2024.md)
       * [Images no longer supported by Snyk](scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/images-no-longer-supported-by-snyk.md)
       * [Snyk images guides to migration](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/README.md)
+        * [Snyk Images migration](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/snyk-images-migration.md)
         * [CircleCI migration](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/circleci-migration.md)
         * [BitBucket Pipelines migration](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/bitbucket-pipelines-migration.md)
         * [GitHub actions migration](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/github-actions-migration.md)
