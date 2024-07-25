@@ -20774,7 +20774,7 @@ components:
             $ref: '#/components/schemas/severity'
           description: The list of cvssSources renamed to severities for issueData model
           example: 
-          - assigner: Snyk
+          - assigner: NVD
             severity: medium
             baseScore: 4.8
             vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:A/VC:N/VI:N/VA:N/SC:H/SI:L/SA:L/E:A
@@ -20791,7 +20791,7 @@ components:
               - CISA
             maturityLevels: 
               - format: CVSS_v3
-                level: High
+                level: no-known-exploit
         language:
           type: string
           description: The language of the issue (Non-IaC projects only)
