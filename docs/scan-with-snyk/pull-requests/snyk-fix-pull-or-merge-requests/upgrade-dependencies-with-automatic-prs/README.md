@@ -1,4 +1,8 @@
-# Upgrade dependencies with automatic PRs
+# Upgrade dependencies with automatic PRs (Upgrade PRs)
+
+{% hint style="info" %}
+The **Upgrade PRs** feature is supported for the following SCM integrations: Github, Github Enterprise, BitBucket Server, BitBucket Cloud, BitBucket Connect, GitLab, and Azure Repos.
+{% endhint %}
 
 Keeping dependencies up-to-date is crucial for security, performance, and compatibility. Snyk simplifies the process by scanning Projects for outdated dependencies and proposing updates through automated pull requests. This method allows teams to:
 

@@ -1,4 +1,9 @@
-# Create automatic PRs for new fixes
+# Create automatic PRs for new fixes (Fix PRs)
+
+{% hint style="info" %}
+* The **Automatic Fix PRs** feature is supported for the following SCM integrations: Github, Github Enterprise, BitBucket Server, BitBucket Cloud, BitBucket Connect, GitLab, and Azure Repos.
+* The **Automatic Fix PR** settings may vary depending on the integration.
+{% endhint %}
 
 The following rules are applied to the creation of automatic PRs for vulnerabilities:
 
@@ -6,7 +11,7 @@ The following rules are applied to the creation of automatic PRs for vulnerabili
 * If you select **Retest now** for the Project, a scan runs manually. The 24-hour window is marked as having had the scan run. and no automatic PR is created until the next automated scan runs.
 * One pull request is created per Project.
 * If **either** the vulnerability is new and has a fix available **or** the fix is new and is not ignored, a Fix PR can be created.
-* For known vulnerabilities, see [Configure Automatic fix PRs](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md).
+* For known vulnerabilities, see [Configure Automatic Backlog PRs.](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md)&#x20;
 
 <figure><img src="../../../.gitbook/assets/os1.png" alt="Test &#x26; Automated Pull Request Frequency setting"><figcaption><p>Test &#x26; Automated Pull Request Frequency setting</p></figcaption></figure>
 
@@ -28,7 +33,7 @@ Follow these steps to enable pull requests at the global integration level:
 
 **Apply changes to all overridden Projects** will update all of the individual Project settings for **Automatic fix PRs**. If a Project previously had its own settings for automatic fix full requests, clicking the button will override the Project setting with the global setting.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt="Configure Automatic fix PRs"><figcaption><p>Configure Automatic fix PRs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt="Configure Automatic fix PRs"><figcaption><p>Configure Automatic Fix PRs</p></figcaption></figure>
 
 ## Enable or disable pull requests for a single Project
 
@@ -41,4 +46,4 @@ Enabling or disabling at a Project level will override the pull request setting 
    * Enable **New vulnerabilities**
    * Select **Save changes**
 
-<figure><img src="../../../.gitbook/assets/os3.png" alt="Automatic fix pull requests settings at the project level"><figcaption><p>Automatic fix pull requests settings at the project level</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/os3.png" alt="Automatic fix pull requests settings at the project level"><figcaption><p>Automatic Fix pull requests settings at the project level</p></figcaption></figure>

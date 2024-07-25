@@ -4,7 +4,7 @@
 
 Fix pull or merge requests are created automatically by Snyk when new issues are identified in Project tests or a retest is run on a Project that has identified vulnerabilities. This feature applies to Projects imported through an SCM integration such as GitHub Enterprise or Azure.
 
-For more information on how integrations use fix and upgrade pull requests, see [View and understand Snyk upgrade pull requests for integrations](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/view-and-understand-snyk-upgrade-pull-requests.md).
+For more information on how integrations use fix and upgrade pull requests, see [View and understand Snyk upgrade pull requests for integrations](broken-reference).
 
 For instructions on opening pull requests from a GitHub account, see [Opening fix and upgrade pull requests from a fixed GitHub account](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
 

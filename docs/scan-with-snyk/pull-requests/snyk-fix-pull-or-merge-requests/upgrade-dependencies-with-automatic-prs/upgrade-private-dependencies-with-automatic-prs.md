@@ -16,7 +16,7 @@ The API is available at the Group level, meaning that you only send once the det
 
 ## Supported languages and SCMs
 
-Snyk supports the **Automatic private dependency upgrade pull requests** feature for npm, Yarn, and Maven Central repositories with the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, and Bitbucket Cloud.
+Snyk supports the **Automatic private dependency upgrade pull requests** feature for npm, Yarn, and Maven Central repositories with the following Source Control Managers (SCMs): Github, Github Enterprise, BitBucket Server, BitBucket Cloud, BitBucket Connect, GitLab, and Azure Repos.
 
 Navigate to the [Upgrade open source dependencies with automatic PRs](upgrade-open-source-dependencies-with-automatic-prs.md#supported-languages-and-scms) page for more details.
 

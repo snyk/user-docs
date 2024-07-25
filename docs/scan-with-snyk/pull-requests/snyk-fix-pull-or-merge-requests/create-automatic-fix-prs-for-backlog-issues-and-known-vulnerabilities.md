@@ -1,9 +1,8 @@
-# Create automatic fix PRs for backlog issues and known vulnerabilities
+# Create automatic PRs for backlog issues and known vulnerabilities (Backlog PRs)
 
 {% hint style="info" %}
-* Snyk supports backlog issues for GitHub, GitHub Enterprise, and Bitbucket Cloud integrations.
-* The **Automatic fix PRs** feature is supported for the following integrations: BitBucket Server, BitBucket Cloud, BitBucket Connect, GitHub, GitHub Enterprise, GitLab, and Azure.
-* The **Automatic fix PR** settings may vary depending on the integration.
+* The **Automatic Fix PRs for known vulnerabilities (Backlog PRs)** feature is supported for the following SCM integrations: Github, Github Enterprise, BitBucket Server, BitBucket Cloud, BitBucket Connect, GitLab, and Azure Repos.
+* The **Automatic Fix PR** settings may vary depending on the integration.
 * The fix strategy feature for getting dependency-oriented fixes is in [beta](../../../getting-started/snyk-release-process.md).&#x20;
 {% endhint %}
 
@@ -23,22 +22,22 @@ To determine when your last 24-hour window began, check the Project issue card f
 
 For specific scan results, you can also check your inbox for an email titled **\[snyk] Vulnerability alert**.
 
-## Configure Automatic fix PRs at the integration level
+## Configure Automatic Fix PRs at the integration level
 
 Follow these steps to configure Automatic fix PRs on a specific Git repository you have already integrated with Snyk, such as GitHub.
 
 {% hint style="warning" %}
-Enabling **Automatic fix PRs** can result in larger version jumps.
+Enabling **Automatic Fix PRs** can result in larger version jumps.
 {% endhint %}
 
 The configuration settings apply to all Projects in that Organization. You can also extend the configuration to Projects with custom settings.
 
 1. Open Snyk Web UI and navigate to **Settings >** **Integrations**.
 2. Select a Git repository integration (SCM). For this example, GitHub is configured.
-3. Under **Automatic fix PRs,** enable **Known vulnerabilities (backlog)**.\
+3. Under **Automatic Fix PRs,** enable **Known vulnerabilities (backlog)**.\
    This retrieves vulnerabilities from the Project's backlog, which have been previously declared.
 
-<figure><img src="../../../.gitbook/assets/Automatic fix PRs settings for Git integration.png" alt="Automatic fix PRs settings for Git integration."><figcaption><p>Automatic fix PRs settings for Git integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Automatic fix PRs settings for Git integration.png" alt="Automatic fix PRs settings for Git integration."><figcaption><p>Automatic Fix PRs settings for Git integration</p></figcaption></figure>
 
 4. Select the **Fix Strategy** for your Backlog PRs.
 
@@ -51,7 +50,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 
 <figure><img src="../../../.gitbook/assets/Fix all vulnerabilities for the same dependency in a single PR.png" alt="Fix all vulnerabilities for the same dependency in a single PR."><figcaption><p>Fix all vulnerabilities for the same dependency in a single PR</p></figcaption></figure>
 
-## Configure Automatic fix PRs at the Project level
+## Configure Automatic Fix PRs at the Project level
 
 You can configure Automatic fix PRs to work only for specific Projects rather than having Projects inherit the settings from the global integration.
 
@@ -63,5 +62,5 @@ You can configure Automatic fix PRs to work only for specific Projects rather th
 4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md#configure-automatic-fix-prs-at-the-integration-level).
 5. Click **Save changes**.
 
-<figure><img src="../../../.gitbook/assets/Automatic fix PRs settings at the Project level.png" alt="Automatic fix PRs settings at the Project level."><figcaption><p>Automatic fix PRs settings at the Project level</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Automatic fix PRs settings at the Project level.png" alt="Automatic fix PRs settings at the Project level."><figcaption><p>Automatic Fix PRs settings at the Project level</p></figcaption></figure>
 
