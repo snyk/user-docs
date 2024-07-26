@@ -3,7 +3,7 @@
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that are automatically synced and provides access to the Integration Hub.
 
 {% hint style="info" %}
-The Loaded package risk factor is not supported by Snyk for Operation System packages (such as Debian packages), only for packages which are hosted under package managers such as npm, Maven, or PyPI.
+The Loaded package risk factor is not supported by Snyk for operating system packages (such as Debian packages), only for packages which are hosted under package managers such as npm, Maven, or PyPI.
 {% endhint %}
 
 You can customize your AppRisk integrations from the **Integrations Hub** where the following integrations are available:
