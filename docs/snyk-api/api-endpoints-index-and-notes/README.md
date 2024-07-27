@@ -114,25 +114,25 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## Audit Logs
 
-### [Search Group audit logs](https://apidocs.snyk.io/?#get-/groups/-group\_id-/audit\_logs/search)
+### [Search Organization audit log](../reference/audit-logs.md#orgs-org\_id-audit\_logs-search)s
+
+**More information:** [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
+
+### [Search Group audit logs](../reference/audit-logs.md#groups-group\_id-audit\_logs-search)
 
 **More information:** [Filter through your audit logs more efficiently with the new GA REST version of the audit logs API, and api.access is now opt-in](https://updates.snyk.io/filter-through-your-audit-logs-more-efficiently-with-the-new-ga-rest-version-of-the-audit-logs-api-and-api-access-is-now-opt-in-291850)
 
 [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 
-### [Search Organization audit logs](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/audit\_logs/search)
-
-**More information:** [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
-
 ## Audit logs (v1)
 
 ### Group level audit logs
 
-Use [Search Group audit logs](https://apidocs.snyk.io/?#get-/groups/-group\_id-/audit\_logs/search)
+Use [Search Group audit log](../reference/audit-logs.md#groups-group\_id-audit\_logs-search)s
 
 ### Organization level audit logs
 
-Use [Search Organization audit logs](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/audit\_logs/search)
+Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-audit\_logs-search)
 
 ## Cloud (beta)
 
