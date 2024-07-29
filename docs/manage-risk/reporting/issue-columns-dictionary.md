@@ -7,7 +7,7 @@ Snyk reporting includes tens of filters and columns, allowing users to develop r
 Describes the main attributes of the issue.
 
 * **AUTO FIXABLE** - Indicates whether the issue can be automatically fixed by Snyk.
-* **COMPUTED FIXABILITY** - Indicates whether the issue can be fixed by Snyk. For details, see [Computed Fixability filters](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md#computed-fixability-filters).
+* **COMPUTED FIXABILITY** - Indicates whether the issue can be fixed based on the vulnerability remediation paths. For details, see [Computed Fixability filters](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md#computed-fixability-filters).
   * **Fixable:** There is a fix for all the identified issues, meaning that all detailed paths have remediation.
   * **Partially fixable:** The issue has upgradable paths, but not all detailed paths have remediation.
   * **No supported fix**: The issue has no upgradable paths.
