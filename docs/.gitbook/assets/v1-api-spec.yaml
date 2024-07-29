@@ -3112,6 +3112,8 @@ paths:
     post:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Snapshots
       summary: List all project snapshots
       description: >-
         #### Required permissions
@@ -3276,6 +3278,8 @@ paths:
     post:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Snapshots
       summary: List all project snapshot aggregated issues
       description: >-
         #### Required permissions
@@ -3341,6 +3345,8 @@ paths:
     get:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Snapshots
       summary: List all project snapshot issue paths
       description: >-
         #### Required permissions
@@ -3646,6 +3652,8 @@ paths:
     get:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Ignores
       summary: List all ignores
       description: >-
         Ignores from `.snyk` files are not included here.
@@ -3704,6 +3712,8 @@ paths:
     get:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Ignores
       summary: Retrieve ignore
       description: >-
         It is possible to modify/retrieve ignored [vulnerability](https://snyk.docs.apiary.io/#introduction/overview-and-entities/vulnerability) or [license](https://snyk.docs.apiary.io/#introduction/overview-and-entities/license-issue) issues for a given organization and project.
@@ -3765,6 +3775,8 @@ paths:
     post:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Ignores
       summary: Add ignore
       description: >-
         It is possible to modify/retrieve ignored [vulnerability](https://snyk.docs.apiary.io/#introduction/overview-and-entities/vulnerability) or [license](https://snyk.docs.apiary.io/#introduction/overview-and-entities/license-issue) issues for a given organization and project.
@@ -3839,6 +3851,8 @@ paths:
     put:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Ignores
       summary: Replace ignores
       description: >-
         It is possible to modify/retrieve ignored [vulnerability](https://snyk.docs.apiary.io/#introduction/overview-and-entities/vulnerability) or [license](https://snyk.docs.apiary.io/#introduction/overview-and-entities/license-issue) issues for a given organization and project.
@@ -3918,6 +3932,8 @@ paths:
     delete:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Ignores
       summary: Delete ignores
       description: >-
         It is possible to modify/retrieve ignored [vulnerability](https://snyk.docs.apiary.io/#introduction/overview-and-entities/vulnerability) or [license](https://snyk.docs.apiary.io/#introduction/overview-and-entities/license-issue) issues for a given organization and project.
@@ -3980,6 +3996,8 @@ paths:
     get:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Jira
       summary: List all jira issues
       description: >-
         If you have configured an integration with Jira, it is possible to create Jira issues for project vulnerabilities or license issues directly from the Snyk API.
@@ -4035,6 +4053,8 @@ paths:
     post:
       tags:
         - Projects
+      x-snyk-documentation:
+        category: Jira
       summary: Create jira issue
       description: >-
         If you have configured an integration with Jira, it is possible to create Jira issues for project vulnerabilities or license issues directly from the Snyk API.
