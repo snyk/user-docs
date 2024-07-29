@@ -40,47 +40,7 @@ This document uses the v1 API. For more details, see the [v1 API](../v1-api.md).
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/jira-issues" method="get" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
 {% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/issue/{issueId}/paths" method="get" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/issue/{issueId}/jira-issue" method="post" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignores" method="get" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="put" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="post" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="get" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="delete" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/history" method="post" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/history/{snapshotId}/issue/{issueId}/paths" method="get" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/history/{snapshotId}/aggregated-issues" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endswagger %}
 
