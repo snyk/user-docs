@@ -40,9 +40,10 @@ This call returns an array of all members of the Group. Save the `id` of each us
 
 ### Step 2: Remove a member from a Group
 
-**Request**: PATCH https://api.snyk.io/rest/groups/{group\_id}/users/{id}?version=2023-01-30\~beta
+**Request**: PATCH https://api.snyk.io/rest/groups/{group\_id}/users/{id}?version=2024-07-10\~beta
 
-**API documentation**: [https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#patch-/groups/-group\_id-/users/-id-](https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#patch-/groups/-group\_id-/users/-id-)
+**API documentation**:\
+[https://apidocs.snyk.io/?version=2024-07-10%7Ebeta&\_gl=1\*191l4f9\*\_gcl\_aw\*R0NMLjE3MjE0MDU5NzcuQ2p3S0NBanduZWkwQmhCLUVpd0FBMnh1QmlwWlhrR2JvVy16SGJLb0hGZDk4SU80TlprcGMtcjM4bk8yOXpFMXZFRUJVbHY1LWdnVm1Cb0NHY2dRQXZEX0J3RQ..\*\_ga\*MTM5MDkzOTgyMC4xNzA0NzI3Nzk5\*\_ga\_X9SH3KP7B4\*MTcyMjI3NzI0OS40ODAuMS4xNzIyMjc5MjIxLjQ2LjAuMA..#patch-/groups/-group\_id-/users/-id-](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta&\_gl=1\*191l4f9\*\_gcl\_aw\*R0NMLjE3MjE0MDU5NzcuQ2p3S0NBanduZWkwQmhCLUVpd0FBMnh1QmlwWlhrR2JvVy16SGJLb0hGZDk4SU80TlprcGMtcjM4bk8yOXpFMXZFRUJVbHY1LWdnVm1Cb0NHY2dRQXZEX0J3RQ..\*\_ga\*MTM5MDkzOTgyMC4xNzA0NzI3Nzk5\*\_ga\_X9SH3KP7B4\*MTcyMjI3NzI0OS40ODAuMS4xNzIyMjc5MjIxLjQ2LjAuMA..#patch-/groups/-group\_id-/users/-id-)
 
 **Body:**
 
