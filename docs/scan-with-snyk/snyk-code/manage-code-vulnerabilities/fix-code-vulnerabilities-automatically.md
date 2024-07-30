@@ -79,7 +79,7 @@ Enable DeepCode AI Fix for your Group or Organization in the Snyk Web UI by navi
 {% hint style="info" %}
 **Before you begin**
 
-* Make sure you have the relevant [Snyk IDE plugin](../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) with Automated fixes enabled.
+* Ensure you have automated fixes enabled in Snyk Preview to work with your [Snyk IDE plugin or extension](../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/).
 * Save the files and [scan your code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md) to generate a fresh set of results.
 * You should see a zap icon :zap: next to all Snyk Code issues that can be automatically fixed.
 {% endhint %}
