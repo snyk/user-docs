@@ -156,21 +156,21 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Collection
 
-### [Get collections](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections)
+### [Create a collection](../reference/collection.md#orgs-org\_id-collections)
 
-### [Create a collection](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/collections)
+### [Get collections](../reference/collection.md#orgs-org\_id-collections-1)
 
-### [Get a collection](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections/-collection\_id-)
+### [Edit a collection](../reference/collection.md#orgs-org\_id-collections-collection\_id)
 
-### [Delete a collection](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/collections/-collection\_id-)
+### [Get a collection](../reference/collection.md#orgs-org\_id-collections-collection\_id-1)
 
-### [Edit a collection](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/collections/-collection\_id-)
+### [Delete a collection](../reference/collection.md#orgs-org\_id-collections-collection\_id-2)
 
-### [Get projects from the specified collection](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
+### [Add projects to a collection](../reference/collection.md#orgs-org\_id-collections-collection\_id-relationships-projects)
 
-### [Add projects to a collection](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
+### [Get projects from the specified collection](../reference/collection.md#orgs-org\_id-collections-collection\_id-relationships-projects-1)
 
-### [Remove projects from a collection](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/collections/-collection\_id-/relationships/projects)
+### [Remove projects from a collection](../reference/collection.md#orgs-org\_id-collections-collection\_id-relationships-projects-2)
 
 ## ContainerImage
 
