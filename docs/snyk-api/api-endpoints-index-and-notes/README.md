@@ -174,27 +174,27 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## ContainerImage
 
-### [List instances of container image](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images)
+### [List instances of container image](../reference/containerimage.md#orgs-org\_id-container\_images)
 
-### [Get instance of container image](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images/-image\_id-)
+### [Get instance of container image](../reference/containerimage.md#orgs-org\_id-container\_images-image\_id)
 
-### [List instances of image target references for a container image](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/container\_images/-image\_id-/relationships/image\_target\_refs)
+### [List instances of image target references for a container image](../reference/containerimage.md#orgs-org\_id-container\_images-image\_id-relationships-image\_target\_refs)
 
 ## Custom Base Images
 
 **More information:** [Use Custom Base Image Recommendations](../../scan-using-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/)
 
-### [Get a custom base image collection](https://apidocs.snyk.io/?#get-/custom\_base\_images)
-
-### [Create a Custom Base Image from an existing container project](https://apidocs.snyk.io/?#post-/custom\_base\_images)
+### [Create a Custom Base Image from an existing container project](../reference/custom-base-images.md#custom\_base\_images)
 
 **More information:** [Use Custom Base Image Recommendations: Mark the created Project as a custom base image](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations#mark-the-created-project-as-a-custom-base-image)
 
-### [Get a custom base image](https://apidocs.snyk.io/?#get-/custom\_base\_images/-custombaseimage\_id-)
+### [Get a custom base image collection](../reference/custom-base-images.md#custom\_base\_images-1)
 
-### [Delete a custom base image](https://apidocs.snyk.io/?#delete-/custom\_base\_images/-custombaseimage\_id-)
+### [Update a custom base image](../reference/custom-base-images.md#custom\_base\_images-custombaseimage\_id)
 
-### [Update a custom base image](https://apidocs.snyk.io/?#patch-/custom\_base\_images/-custombaseimage\_id-)
+### [Get a custom base image](../reference/custom-base-images.md#custom\_base\_images-custombaseimage\_id-1)
+
+### [Delete a custom base image](../reference/custom-base-images.md#custom\_base\_images-custombaseimage\_id-2)
 
 ## Dependencies (v1)
 
