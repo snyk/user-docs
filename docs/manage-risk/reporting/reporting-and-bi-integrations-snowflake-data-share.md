@@ -2,12 +2,10 @@
 
 {% hint style="warning" %}
 **Release status** \
-Snowflake Data Share is in [Closed Beta](https://docs.snyk.io/getting-started/snyk-release-process#closed-beta) and available only for customers:
+Snowflake Data Share is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only for customers:
 
 * Under the Enterprise plan. For more information, see [Plans and pricing](https://snyk.io/plans).
 * With an active Snowflake account.
-
-In a Closed Beta state, the data share will be limited to a capacity of 10 million records per share.&#x20;
 
 For more information, contact your Snyk Account Executive.
 {% endhint %}
