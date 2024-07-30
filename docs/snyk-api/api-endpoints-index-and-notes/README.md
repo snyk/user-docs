@@ -198,25 +198,13 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Dependencies (v1)
 
-### Dependencies by organization
-
-#### List all dependencies
-
-[Migrated List all dependencies](./#list-all-dependencies)
+### [List all dependencies](../reference/dependencies-v1.md)
 
 ## Entitlements (v1)
 
-### Entitlements by organization
+### [List all entitlements](../reference/entitlements-v1.md#org-orgid-entitlements)
 
-#### List all entitlements
-
-[Migrated list all entitlements](https://snyk.docs.apiary.io/#reference/entitlements/entitlements-by-organization/list-all-entitlements)
-
-### A specific entitlement by organization
-
-#### Get an organization's entitlement value
-
-[Migrated Get an organization's entitlement value](https://snyk.docs.apiary.io/#reference/entitlements/a-specific-entitlement-by-organization/get-an-organization's-entitlement-value)
+### [Get an organization's entitlement value](../reference/entitlements-v1.md#org-orgid-entitlement-entitlementkey)
 
 ## Groups (beta)
 
