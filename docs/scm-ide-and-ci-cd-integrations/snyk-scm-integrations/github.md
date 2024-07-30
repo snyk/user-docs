@@ -203,7 +203,7 @@ The Auto-assign PRs feature is supported only for private repositories.
 
 Snyk can automatically assign the pull requests it creates to ensure that they are handled by the right team members.
 
-Auto-assign for PRs can be enabled for the GitHub integration and all Projects imported via GitHub, or on a per-Project basis.
+Auto-assign for PRs can be enabled for the GitHub and GitHub Enterprise integration and all Projects imported via GitHub, or on a per-Project basis.
 
 Users can either be manually specified, and all will be assigned, or automatically selected based on the last commit user account.
 
@@ -218,6 +218,10 @@ You can then choose to assign PRs to the last user to change the manifest file o
 <figure><img src="../../.gitbook/assets/image (7) (2) (1).png" alt="Auto-assign PRs in private repos"><figcaption><p>Auto-assign PRs in private repos</p></figcaption></figure>
 
 </div>
+
+{% hint style="info" %}
+For pull request assignees, the option **The last user to change the manifest file** is based on blame data, not Git commits.
+{% endhint %}
 
 #### **Enable Auto-assign for a single Project**
 

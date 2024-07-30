@@ -123,6 +123,53 @@ To review and adjust the pull request test settings: In Snyk, navigate to Organi
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.43.34.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 
+### **How to assign pull requests to users** <a href="#pr-assignment" id="pr-assignment"></a>
+
+{% hint style="info" %}
+**Feature availability**
+
+The Auto-assign PRs feature is supported only for private repositories.
+{% endhint %}
+
+Snyk can automatically assign the pull requests it creates to ensure that they are handled by the right team members.
+
+Auto-assign for PRs can be enabled for the GitHub and GitHub Enterprise integration and all Projects imported via GitHub, or on a per-Project basis.
+
+Users can either be manually specified, and all will be assigned, or automatically selected based on the last commit user account.
+
+#### **Enable Auto-assign for all Projects in the GitHub Enterprise integration**
+
+To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings using Organization **Settings** **>** **Integrations > Source control > GitHub** and select **Enable pull request assignees**.&#x20;
+
+You can then choose to assign PRs to the last user to change the manifest file or specified contributors.
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/image (7) (2) (1).png" alt="Auto-assign PRs in private repos"><figcaption><p>Auto-assign PRs in private repos</p></figcaption></figure>
+
+</div>
+
+{% hint style="info" %}
+For pull request assignees, the option **The last user to change the manifest file** is based on blame data, not Git commits.
+{% endhint %}
+
+#### **Enable Auto-assign for a single Project**
+
+To configure the Auto-assign settings for a specific Project from an imported private repository, follow these steps:
+
+1. In the **Projects** tab for your Organization, select and expand the relevant private repository, select a Target, and click the **Settings** cog. This opens the Project page.
+2. On the Project page, apply unique settings for that specific Project.\
+   Select the **Settings** tab in the upper right and the **Github integration** \_\_ option in the left sidebar.
+3. Go to the **Pull request assignees for private repos** section at the bottom of the page and choose to **Inherit from integration settings** or **Customize only for this Project**.
+4. Ensure **Auto-assign PRs for this private Project** is enabled.
+5. Choose to assign PRs to the last user to change the manifest file or named contributors.
+
+<div align="center">
+
+<figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure>
+
+</div>
+
 ### How to disconnect the GitHub Enterprise integration
 
 {% hint style="warning" %}
