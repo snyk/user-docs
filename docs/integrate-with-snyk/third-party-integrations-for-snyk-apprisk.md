@@ -16,6 +16,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [Jira](third-party-integrations-for-snyk-apprisk.md#jira-setup-guide)
 * [Dynatrace](third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide)
 * [Sysdig](third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide)
+* [Orca Security](third-party-integrations-for-snyk-apprisk.md#orca-security-setup-guide)
 
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
@@ -292,3 +293,39 @@ The **Account API Token** must be a **Sysdig Secure API token** and not a **Sysd
 {% hint style="info" %}
 After the Sysdig runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
 {% endhint %}
+
+## Orca Security setup guide
+
+{% hint style="info" %}
+The Orca runtime integration reports the following [risk factors](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors): [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
+{% endhint %}
+
+### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
+
+* Connect your could vendor account to Orca. Navigate to the [Connecting Accounts](https://docs.orcasecurity.io/docs/onboarding) documentation for more details.
+* Connect your cluster to Orca. Navigate to the [Connecting Clusters using Kubernetes Connector](https://docs.orcasecurity.io/docs/connecting-clusters-using-kubernetes-connector) documentation for more details.
+
+### Required parameters <a href="#sysdig-required-parameters" id="sysdig-required-parameters"></a>
+
+* **API Token** - generate an API token for Orca.
+
+Create the Orca API Token by following these steps:
+
+1. Open your Orca account, click **Settings**, then **Users and Permissions**, then **API**
+2. Click **Add API Token**.
+3. Fill in the fields **Name** and **Description** for the API Token.
+4. Select an **Expiration** date for the API Token.
+5. Select **Integration Configuration** as a Role.
+6. Check **Scope access to specific resources** and **Accounts**.
+7. Select the account you want to integrate.
+
+### Integration Hub setup <a href="#sysdig-integration-hub-setup" id="sysdig-integration-hub-setup"></a>
+
+* Open the **Integration Hub** menu.&#x20;
+* Select the **Runtime** tag and search for Orca.&#x20;
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Add the **API Token**.
+* Set the **URL**.
+* Click the **Done** button.
+* When the connection is established, the status of the Orca integration is changed to **Connected**.
