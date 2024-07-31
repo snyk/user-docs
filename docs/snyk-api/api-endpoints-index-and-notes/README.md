@@ -224,57 +224,29 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Groups (v1)
 
-### Group settings
+### [List all tags in a group](../reference/groups-v1.md#group-groupid-tags)
 
-#### View group settings
+### [Delete tag from group](../reference/groups-v1.md#group-groupid-tags-delete)
 
-[Migrated View group settings](https://snyk.docs.apiary.io/#reference/groups/group-settings/view-group-settings)
+### [Update group settings](../reference/groups-v1.md#group-groupid-settings)
 
-#### Update group settings
+### [View group settings](../reference/groups-v1.md#group-groupid-settings-1)
 
-[Migrated Update group settings](https://snyk.docs.apiary.io/#reference/groups/group-settings/update-group-settings)
+### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
-### List members in a group
+**More information :**\
+[Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md).
 
-#### List all members in a group
+### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
-[Migrated List all members in a group](https://snyk.docs.apiary.io/#reference/groups/list-members-in-a-group/list-all-members-in-a-group)
+**More information:**\
+[Org and group identification for Projects](undefined.md)
+
+### [Add a member to an organization within a group](../reference/groups-v1.md#group-groupid-org-orgid-members)
+
+### [List all members in a group](../reference/groups-v1.md#group-groupid-members)
 
 **More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
-
-### Members in an organization of a group
-
-#### Add a member to an organization within a group
-
-[Migrated Add a member to an organization within a group](https://snyk.docs.apiary.io/#reference/groups/members-in-an-organization-of-a-group/add-a-member-to-an-organization-within-a-group)
-
-### List all tags in a group
-
-#### List all tags in a group
-
-[Migrated List all tags in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-tags-in-a-group/list-all-tags-in-a-group)
-
-### Delete Tag From Group
-
-#### Delete tag from group
-
-[Migrated Delete tag from group](https://snyk.docs.apiary.io/#reference/groups/delete-tag-from-group/delete-tag-from-group)
-
-### List all organizations in a group
-
-#### List all organizations in a group
-
-[Migrated List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
-
-**More information:** [Org and group identification for Projects](undefined.md)
-
-### List all roles in a group
-
-#### List all roles in a group
-
-[Migrated List all roles in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group)
-
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md).
 
 ## IacSettings
 
