@@ -304,13 +304,13 @@ The poll results return a message per manifest processed, either `success: true`
 
 ## Invites
 
-**See also:** [Migrated invite users](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
+See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
-### [List pending user invitations to an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/invites)
+### [Invite a user to an organization](../reference/invites.md#orgs-org\_id-invites)
 
-### [Invite a user to an organization](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/invites)
+### [List pending user invitation to an organization](../reference/invites.md#orgs-org\_id-invites-1)
 
-### [Cancel a pending user invitations to an organization](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/invites/-invite\_id-)
+### [Cancel a pending user invitations to an organization](../reference/invites.md#orgs-org\_id-invites-invite\_id)
 
 ## Issues
 
