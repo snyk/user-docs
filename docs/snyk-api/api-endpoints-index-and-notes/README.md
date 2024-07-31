@@ -382,93 +382,45 @@ Note: Remedies are not included in the response.
 
 ## Orgs (GA and beta)
 
-### [List all organizations in a group](https://apidocs.snyk.io/?#get-/groups/-group\_id-/orgs)
+### [List accessible organizations](../reference/orgs.md#orgs)
 
-### [List accessible organizations](https://apidocs.snyk.io/?#get-/orgs)
+### [Update organization](../reference/orgs.md#orgs-org\_id)
+
+### [Get organization](../reference/orgs.md#orgs-org\_id-1)
+
+### [List all organizations in a group](../reference/orgs.md#groups-group\_id-orgs)
 
 ### [Get an ORG](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-) (beta)
 
-### [Get organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-)
-
 **More information:** [Org and group identification for Projects](undefined.md)
-
-### [Update organization](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-)
-
-## Projects
-
-### [List all Projects for an Org with the given Org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects)
-
-The query-string parameter types is optional. The endpoint does not enforce specific project types and will return no matching projects if you enter a string that does not match a project type.
-
-### [Get project by project ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-)
-
-### [Delete project by project ID](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/projects/-project\_id-)
-
-### [Updates project by project ID](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/projects/-project\_id-)
 
 ## Projects (v1)
 
 **More information:** [Project type responses from API](project-type-responses-from-api.md)
 
-### Individual project
+### Retrieve a single project
 
-#### Retrieve a single project
+### Update a project
 
-[Migrated Retrieve a single project](https://snyk.docs.apiary.io/#reference/projects/individual-project/retrieve-a-single-project)
+### Delete a project
 
-#### Update a project
+### Deactivate (a project)
 
-[Migrated Update a project](https://snyk.docs.apiary.io/#reference/projects/individual-project/update-a-project)
+### Activate (a project)
 
-#### Delete a project
-
-[Migrated Delete a project](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project)
-
-### Deactivate an individual project
-
-#### Deactivate
-
-[Migrated Deactivate an individual project](https://snyk.docs.apiary.io/#reference/projects/deactivate-an-individual-project/deactivate)
-
-### Activate an individual project
-
-#### Activate
-
-[Migrated Activate an individual project](https://snyk.docs.apiary.io/#reference/projects/activate-an-individual-project/activate)
-
-### Aggregated Project issues
-
-#### List all Aggregated issues
-
-[Migrated List  all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues)
+### List all Aggregated (Project) issues
 
 The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues) returns an array of `ignoreReasons` for each vulnerability. This happens because ignores implemented using the CLI and API are path-based and thus potentially could have different `ignoreReasons` for different paths. Because List all aggregated issues returns only one issue for all paths, the entire set of reasons is returned. Snyk groups issues together by their identifier, so one response for the List all aggregated issues endpoint could correspond to the same issue across multiple paths. Thus the `ignoredReason` is across all issues that are aggregated and applies to that single grouped issue.
 
-### Project Issue Paths
+### List all project issue paths
 
 **More information:** [V1 API Project issue paths endpoints](project-issue-paths-v1-api-endpoints.md)
 
-#### List all project issue paths
+### List all project snapshots
 
-[Migrated List all project issue paths](https://snyk.docs.apiary.io/#reference/projects/project-issue-paths/list-all-project-issue-paths)
+### List all project snapshot aggregated issues
 
-### Project History
-
-#### List all project snapshots
-
-[Migrated List all project snapshots](https://snyk.docs.apiary.io/#reference/projects/project-history/list-all-project-snapshots)
-
-### Aggregated Project Snapshot Issues
-
-#### List all project snapshot aggregated issues
-
-[Migrated List all project snapshot aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-snapshot-issues/list-all-project-snapshot-aggregated-issues)
-
-### Project Snapshot Issue Paths
-
-#### List all project snapshot issue paths
-
-[Migrated List all project snapshot issue paths](https://snyk.docs.apiary.io/#reference/projects/project-snapshot-issue-paths/list-all-project-snapshot-issue-paths)
+### List all project snapshot issue paths
 
 ### Project dependency graph
 
@@ -555,6 +507,18 @@ By using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary
 * Use the [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) endpoint to set the project attributes.
 
 [Migrated Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes)
+
+## Projects
+
+### [List all Projects for an Org with the given Org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects)
+
+The query-string parameter types is optional. The endpoint does not enforce specific project types and will return no matching projects if you enter a string that does not match a project type.
+
+### [Get project by project ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-)
+
+### [Delete project by project ID](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/projects/-project\_id-)
+
+### [Updates project by project ID](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/projects/-project\_id-)
 
 ## Pull request templates
 
