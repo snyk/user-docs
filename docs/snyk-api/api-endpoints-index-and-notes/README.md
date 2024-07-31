@@ -264,11 +264,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Import Projects (v1)
 
-### Import
-
-#### Import targets
-
-The Snyk API v1 endpoint [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets) can be used to import Snyk Projects. Using this endpoint, you can automate importing multiple repositories; see [Manage code vulnerabilities](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/).
+### [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)
 
 If this fails, use [Get import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details) to help determine why. There are two types of failures:
 
@@ -282,15 +278,7 @@ If this fails, use [Get import job details](https://snyk.docs.apiary.io/#referen
 
 The poll results return a message per manifest processed, either `success: true` or `success: false.`
 
-
-
-[Migrated import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets)
-
-### Import job
-
-#### Get import job details
-
-[Migrated Get import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details)
+### [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)
 
 ## Integrations (v1)
 
