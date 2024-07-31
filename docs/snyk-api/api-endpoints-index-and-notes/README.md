@@ -398,53 +398,53 @@ Note: Remedies are not included in the response.
 
 **More information:** [Project type responses from API](project-type-responses-from-api.md)
 
-### Update a project
+### [Update a project](../reference/projects-v1.md#org-orgid-project-projectid)
 
-### Retrieve a single project
+### [Retrieve a single project](../reference/projects-v1.md#org-orgid-project-projectid-1)
 
-### Delete a project
+### [Delete a project](../reference/projects-v1.md#org-orgid-project-projectid-2)
 
-### Add a tag to a project
+### [Add a tag to a project](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
-### Remove a tag from a project
+### [Remove a tag from a project](../reference/projects-v1.md#org-orgid-project-projectid-tags-remove)
 
-### Update project settings
+### [Update project settings](../reference/projects-v1.md#org-orgid-project-projectid-settings)
 
-### List project settings
+### [List project settings](../reference/projects-v1.md#org-orgid-project-projectid-settings-1)
 
-### Delete project settings
+### [Delete project settings](../reference/projects-v1.md#org-orgid-project-projectid-settings-2)
 
-### Move project to a different organization
+### [Move project to a different organization](../reference/projects-v1.md#org-orgid-project-projectid-move)
 
-### List all jira issues
+### [List all jira issues](../reference/projects-v1.md#org-orgid-project-projectid-jira-issues)
 
-### List all project issue paths
+### [List all project issue paths](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-paths)
 
 **More information:** [V1 API Project issue paths endpoints](project-issue-paths-v1-api-endpoints.md)
 
-### Create jira issue
+### [Create jira issue](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue)
 
-### List all (project) ignores
+### [List all (project) ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignores)
 
-### Replace ignores
+### [Replace ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignore-issueid)
 
-### Add ignore
+### [Add ignore](../reference/projects-v1.md#org-orgid-project-projectid-ignore-issueid-1)
 
-### Retrieve ignore
+### [Retrieve ignore](../reference/projects-v1.md#org-orgid-project-projectid-ignore-issueid-2)
 
-### Delete ignores
+### [Delete ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignore-issueid-2)
 
-### List all project snapshots
+### [List all project snapshots](../reference/projects-v1.md#org-orgid-project-projectid-history)
 
-### List all project snapshot issue paths
+### [List all project snapshot issue paths](../reference/projects-v1.md#org-orgid-project-projectid-history-snapshotid-issue-issueid-paths)
 
-### List all project snapshot aggregated issues
+### [List all project snapshot aggregated issues](../reference/projects-v1.md#org-orgid-project-projectid-history-snapshotid-aggregated-issues)
 
-### Get Project dependency graph
+### [Get Project dependency graph](../reference/projects-v1.md#org-orgid-project-projectid-dep-graph)
 
-### Deactivate (a project)
+### [Deactivate](../reference/projects-v1.md#org-orgid-project-projectid-deactivate) (a project)
 
-### Applying (project) attributes
+### [Applying (project) attributes](../reference/projects-v1.md#org-orgid-project-projectid-attributes)
 
 By using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) you can set attributes for Snyk Projects including business criticality, lifecycle stage, and environment once the project has been created . To do so:
 
@@ -454,11 +454,11 @@ By using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary
 * Parse the project IDs from the projectURL field.
 * Use the [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) endpoint to set the project attributes.
 
-### List all Aggregated (Project) issues
+### [List all Aggregated (Project) issues](../reference/projects-v1.md#org-orgid-project-projectid-aggregated-issues)
 
 The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues) returns an array of `ignoreReasons` for each vulnerability. This happens because ignores implemented using the CLI and API are path-based and thus potentially could have different `ignoreReasons` for different paths. Because List all aggregated issues returns only one issue for all paths, the entire set of reasons is returned. Snyk groups issues together by their identifier, so one response for the List all aggregated issues endpoint could correspond to the same issue across multiple paths. Thus the `ignoredReason` is across all issues that are aggregated and applies to that single grouped issue.
 
-### Activate (a project)
+### [Activate](../reference/projects-v1.md#org-orgid-project-projectid-activate) (a project)
 
 ## Projects
 
