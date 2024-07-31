@@ -8,6 +8,12 @@ The Coverage Gap filter is not the opposite of the Coverage filter.&#x20;
 An asset can be covered (if it was scanned a month ago) but, at the same time, can still have a coverage gap, if the requirement is a daily scan.
 {% endhint %}
 
+The following video presents an overview of the coverage and coverage gap filters from the Snyk Web UI.
+
+{% embed url="https://youtu.be/ozdmnb2cXVY" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
 ## Coverage
 
 ### Include all selected products
