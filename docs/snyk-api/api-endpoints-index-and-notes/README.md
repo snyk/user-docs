@@ -314,19 +314,19 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 ## Issues
 
-### [Get issues by group ID](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues)
+### [List issues for a package](../reference/issues.md#orgs-org\_id-packages-purl-issues)
 
-### [Get an issue](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues/-issue\_id-)
+### [List issues for a given set of packages](../reference/issues.md#orgs-org\_id-packages-issues) (Currently not available to all customers)
 
-Note: Remedies are not included in the response at this time.
+### [Get issues by org ID](../reference/issues.md#orgs-org\_id-issues)
 
-### [Get issues by org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues)
+### [Get an issue](../reference/issues.md#orgs-org\_id-issues-issue\_id) (Org)
 
-### [Get an issue](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/issues/-issue\_id-)
+### [Get issues by group ID](../reference/issues.md#orgs-org\_id-issues-issue\_id)
 
-### [List issues for a given set of packages](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/packages/issues) (Currently not available to all customers)
+Note: Remedies are not included in the response.
 
-### [List issues for a package](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/packages/-purl-/issues)
+### [Get an issue](../reference/issues.md#groups-group\_id-issues-issue\_id) (Group)
 
 ## Licenses (v1)
 
