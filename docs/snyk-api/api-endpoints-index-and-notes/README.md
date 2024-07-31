@@ -340,95 +340,45 @@ Note: Remedies are not included in the response.
 
 ## Organizations (v1)
 
-### The Snyk organization for a request
-
-#### List all the organizations a user belongs to
-
-[Migrated List all the organizations a user belongs to](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to)
+### [List all the organizations a user belongs to](../reference/organizations-v1.md#orgs)
 
 **More information:** [Org and group identification for Projects](undefined.md)
 
-### Create organization
+### [Create a new organization](../reference/organizations-v1.md#org)
 
-#### Create a new organization
+### [Remove organization](../reference/organizations-v1.md#org-orgid)
 
-[Migrated Create a new organization](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization)
+### [Update organization settings](../reference/organizations-v1.md#org-orgid-settings)
 
-### Notification settings
+### [View organization settings](../reference/organizations-v1.md#org-orgid-settings-1)
 
-#### Get organization notification settings
-
-[Migrated Get organization notification settings](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/get-organization-notification-settings)
-
-#### Set notification settings
-
-[Migrated Set notification settings](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/set-notification-settings)
-
-### User invitation to organization
-
-#### Invite users
-
-[Migrated Invite users](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
-
-### Members in organization
-
-#### List members
-
-[Migrated List members](https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members)
-
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)
-
-### Organization settings
-
-#### View organization settings
-
-[Migrated View organization settings](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/view-organization-settings)
-
-#### Update organization settings
-
-[Migrated Update organization settings](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/update-organization-settings)
-
-### Manage roles in organization
-
-#### Update a member in the organization
-
-[Migrated Update a member in the organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/update-a-member-in-the-organization)
-
-#### Remove a member from the organization
-
-[Migrated Remove a member from the organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization)
-
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
-
-### Update member roles in your organization
-
-#### Update a member's role in the organization
-
-[Migrated Update a member's role in the organization](https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization)
-
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md).
-
-### Manage organization
-
-#### Remove organization
-
-[Migrated Remove organization](https://snyk.docs.apiary.io/#reference/organizations/manage-organization/remove-organization)
-
-### Provision user
+### [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
 
 **More information:** [Provision users to Organizations using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-v1-api.md).
 
-#### Provision a user to the organization
+### [List pending user provisions](../reference/organizations-v1.md#org-orgid-provision-1)
 
-[Migrated Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
+### [Delete pending user provision](../reference/organizations-v1.md#org-orgid-provision-2)
 
-#### List pending user provisions
+### [Set notification settings](../reference/organizations-v1.md#org-orgid-notification-settings)
 
-[Migrated List pending user provisions](https://snyk.docs.apiary.io/#reference/organizations/provision-user/list-pending-user-provisions)
+### [Get organization notification settings](../reference/organizations-v1.md#org-orgid-notification-settings-1)
 
-#### Delete pending user provision
+### [List members](../reference/organizations-v1.md#org-orgid-members) (Organization)
 
-[Migrated Delete pending user provision](https://snyk.docs.apiary.io/#reference/organizations/provision-user/delete-pending-user-provision)
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)
+
+### [Update a member in the organization](../reference/organizations-v1.md#org-orgid-members-userid)
+
+### [Remove a member from the organization](../reference/organizations-v1.md#org-orgid-members-userid-1)
+
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
+
+### [Update a member's roles in your organization](../reference/organizations-v1.md#org-orgid-members-update-userid)
+
+### [Invite users](../reference/organizations-v1.md#org-orgid-invite)
+
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md).
 
 ## Orgs (GA and beta)
 
