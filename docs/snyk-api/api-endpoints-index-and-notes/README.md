@@ -398,105 +398,53 @@ Note: Remedies are not included in the response.
 
 **More information:** [Project type responses from API](project-type-responses-from-api.md)
 
-### Retrieve a single project
-
 ### Update a project
+
+### Retrieve a single project
 
 ### Delete a project
 
-### Deactivate (a project)
+### Add a tag to a project
 
-### Activate (a project)
+### Remove a tag from a project
 
-### List all Aggregated (Project) issues
+### Update project settings
 
-The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues) returns an array of `ignoreReasons` for each vulnerability. This happens because ignores implemented using the CLI and API are path-based and thus potentially could have different `ignoreReasons` for different paths. Because List all aggregated issues returns only one issue for all paths, the entire set of reasons is returned. Snyk groups issues together by their identifier, so one response for the List all aggregated issues endpoint could correspond to the same issue across multiple paths. Thus the `ignoredReason` is across all issues that are aggregated and applies to that single grouped issue.
+### List project settings
+
+### Delete project settings
+
+### Move project to a different organization
+
+### List all jira issues
 
 ### List all project issue paths
 
 **More information:** [V1 API Project issue paths endpoints](project-issue-paths-v1-api-endpoints.md)
 
-### List all project snapshots
+### Create jira issue
 
-### List all project snapshot aggregated issues
+### List all (project) ignores
+
+### Replace ignores
+
+### Add ignore
+
+### Retrieve ignore
+
+### Delete ignores
+
+### List all project snapshots
 
 ### List all project snapshot issue paths
 
-### Project dependency graph
+### List all project snapshot aggregated issues
 
-#### Get Project dependency graph
+### Get Project dependency graph
 
-[Migrated Get Project dependency graph](https://snyk.docs.apiary.io/#reference/projects/project-dependency-graph/get-project-dependency-graph)
+### Deactivate (a project)
 
-### Project ignores
-
-#### List all ignores
-
-[Migrated List all ignores](https://snyk.docs.apiary.io/#reference/projects/project-ignores/list-all-ignores)
-
-### Ignored issues
-
-#### Retrieve ignore
-
-[Migrated Retrieve ignore](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/retrieve-ignore)
-
-#### Add ignore
-
-[Migrated Add ignore](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/add-ignore)
-
-#### Replace ignores
-
-[Migrated Replace ignores](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/replace-ignores)
-
-#### Delete ignores
-
-[Migrated Delete ignores](https://snyk.docs.apiary.io/#reference/projects/ignored-issues/delete-ignores)
-
-### Project jira issues
-
-#### List all jira issues
-
-[Migrated List all jira issues](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/list-all-jira-issues)
-
-#### Create jira issue
-
-[Migrated Create Jira issue](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/create-jira-issue)
-
-### Project settings
-
-#### List project settings
-
-[Migrated List project settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/list-project-settings)
-
-#### Update project settings
-
-[Migrated Update project settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/update-project-settings)
-
-#### Delete project settings
-
-[Migrated Delete project settings](https://snyk.docs.apiary.io/#reference/projects/project-settings/delete-project-settings)
-
-### Move project
-
-#### Move project to a different organization
-
-[Migrated Move project to a different organization](https://snyk.docs.apiary.io/#reference/projects/move-project/move-project-to-a-different-organization)
-
-### Project tags
-
-#### Add a tag to a project
-
-[Migrated Add a tag to a project](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project)
-
-### Remove project tag
-
-#### Remove a tag from a project
-
-[Migrated Remove a tag from a project](https://snyk.docs.apiary.io/#reference/projects/remove-project-tag/remove-a-tag-from-a-project)
-
-### Project Attributes
-
-#### Applying attributes
+### Applying (project) attributes
 
 By using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) you can set attributes for Snyk Projects including business criticality, lifecycle stage, and environment once the project has been created . To do so:
 
@@ -506,7 +454,11 @@ By using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary
 * Parse the project IDs from the projectURL field.
 * Use the [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) endpoint to set the project attributes.
 
-[Migrated Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes)
+### List all Aggregated (Project) issues
+
+The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues) returns an array of `ignoreReasons` for each vulnerability. This happens because ignores implemented using the CLI and API are path-based and thus potentially could have different `ignoreReasons` for different paths. Because List all aggregated issues returns only one issue for all paths, the entire set of reasons is returned. Snyk groups issues together by their identifier, so one response for the List all aggregated issues endpoint could correspond to the same issue across multiple paths. Thus the `ignoredReason` is across all issues that are aggregated and applies to that single grouped issue.
+
+### Activate (a project)
 
 ## Projects
 
