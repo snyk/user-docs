@@ -330,25 +330,13 @@ Note: Remedies are not included in the response.
 
 ## Licenses (v1)
 
-### Licenses by organization
-
-#### List all licenses
-
-[Migrated List all licenses](https://snyk.docs.apiary.io/#reference/licenses/licenses-by-organization/list-all-licenses)
+### [List all licenses](../reference/licenses-v1.md)
 
 ## Monitor (v1)
 
-### Dep Graph
+### [Dep Graph](../reference/monitor-v1.md)
 
 **More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel-tool/dep-graph-api.md)
-
-#### [Monitor Dep Graph](https://snyk.docs.apiary.io/#reference/monitor/depgraph/monitor-dep-graph)
-
-## OpenAPI
-
-### [List available versions of OpenAPI specification](https://apidocs.snyk.io/?#get-/openapi)
-
-### [Get OpenAPI specification effective at version](https://apidocs.snyk.io/?#get-/openapi/-version-)
 
 ## Organizations (v1)
 
