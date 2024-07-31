@@ -11,7 +11,11 @@ Enterprise plan users have access to all of the functionality. The API and Snyk 
 There are two ways of implementing SCM integrations in a Snyk environment:
 
 * **Group level** - At the Group level, you can set up the SCM integrations for Snyk AppRisk.&#x20;
-* **Organization level** - At the Organization level, you can set up the SCM integrations for all Snyk plans. See the [Manage your Integrations](../getting-started/snyk-web-ui.md) at the Organizational level page for more details.&#x20;
+* **Organization level** - At the Organization level, you can set up the SCM integrations for all other Snyk products and all Snyk plans. See the [Manage your Integrations](../getting-started/snyk-web-ui.md) at the Organizational level page for more details.&#x20;
+
+{% hint style="warning" %}
+If you want to use the same SCM integration at both Group and Organization levels, then you must set up that integration for both levels.
+{% endhint %}
 
 ## Choose an Integration
 

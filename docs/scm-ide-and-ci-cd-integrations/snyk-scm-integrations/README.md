@@ -13,14 +13,10 @@ This page contains information about the following Snyk SCM integration aspects:
 
 ## Overview
 
-When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
+When you want to add new integrations to your Snyk account you must first decide the level type at which you want to install the integration. Snyk supports different SCM integrations on different levels of the Snyk hierarchy:
 
-* [Group level ](./#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
-* [Organization level](./#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products except Snyk AppRisk.
-
-{% hint style="info" %}
-To set up integrations for Snyk AppRisk, use the **Integrations** menu at the Group level.
-{% endhint %}
+* [Group level ](./#group-level-snyk-apprisk-integrations)- Group level integrations only support Snyk AppRisk Essentials or Snyk AppRisk Pro.
+* [Organization level](./#organization-level-snyk-integrations) - Organization level integrations support all other Snyk products. Snyk does not support Snyk AppRisk Essentials or Snyk AppRisk Pro integrations at the Organization level.
 
 ## Group level - Snyk AppRisk SCM integrations
 
@@ -30,6 +26,10 @@ You can customize your Snyk AppRisk integrations from the **Integrations Hub** w
 * [GitLab](gitlab.md#gitlab-setup-guide)
 * [Azure DevOps](azure-repositories-tfs.md#azure-devops-setup-guide)
 * [BitBucket](bitbucket-cloud.md#bitbucket-setup-guide)
+
+{% hint style="info" %}
+To set up integrations for Snyk AppRisk, use the **Integrations** menu at the Group level.
+{% endhint %}
 
 Snyk AppRisk Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
 
