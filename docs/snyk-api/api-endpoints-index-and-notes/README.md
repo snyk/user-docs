@@ -462,15 +462,15 @@ The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.i
 
 ## Projects
 
-### [List all Projects for an Org with the given Org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects)
+### [List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)
 
 The query-string parameter types is optional. The endpoint does not enforce specific project types and will return no matching projects if you enter a string that does not match a project type.
 
-### [Get project by project ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-)
+### [Updates project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id)
 
-### [Delete project by project ID](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/projects/-project\_id-)
+### [Get project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id-1)
 
-### [Updates project by project ID](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/projects/-project\_id-)
+### [Delete project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id-2)
 
 ## Pull request templates
 
