@@ -37,4 +37,4 @@ For detailed steps on migrating from GitHub to GitHub Enterprise, see [Migrate t
 
 ## Pull Requests for Snyk integrations
 
-Snyk can automatically create pull requests (PRs) on your behalf to upgrade your dependencies based on scan results. This is compatible with a variety of Snyk integrations. For more information, see [View and understand Snyk upgrade pull requests for integrations](broken-reference).
+Snyk can automatically create pull requests (PRs) on your behalf to upgrade your dependencies based on scan results. This is compatible with a variety of Snyk integrations. For more information, see [Upgrade open source dependencies with automatic PRs](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-open-source-dependencies-with-automatic-prs.md).
