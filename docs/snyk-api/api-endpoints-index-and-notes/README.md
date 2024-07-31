@@ -282,61 +282,25 @@ The poll results return a message per manifest processed, either `success: true`
 
 ## Integrations (v1)
 
-### Integrations
+### [Add new integration](../reference/integrations-v1.md#org-orgid-integrations)
 
-#### List
+### [List](../reference/integrations-v1.md#org-orgid-integrations-1)
 
-[Migrated List integrations](https://snyk.docs.apiary.io/#reference/integrations/integrations/list)
+### [Get existing integration by type](../reference/integrations-v1.md#org-orgid-integrations-type)
 
-#### Add new integration
+### [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid)
 
-[Migrated Add new integration](https://snyk.docs.apiary.io/#reference/integrations/integrations/add-new-integration)
+### [Update](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings)
 
-### Integration
+### [Retrieve](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings-1)
 
-#### Update existing integration
+### [Clone an integration (with settings and credentials)](../reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)
 
-[Migrated Update existing integration](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration)
+### [Delete credentials](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication)
 
-### Integration authentication
+### [Switch between broker tokens](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication-switch-token)
 
-#### Delete credentials
-
-[Migrated Delete credentials](https://snyk.docs.apiary.io/#reference/integrations/integration-authentication/delete-credentials)
-
-### Integration broker token provisioning
-
-#### Provision new broker token
-
-[Migrated Provision new broker token](https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-provisioning/provision-new-broker-token)
-
-### Integration broker token switching
-
-#### Switch between broker tokens
-
-[Migrated Switch between broker tokens](https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-switching/switch-between-broker-tokens)
-
-### Integration cloning
-
-#### Clone  an integration (with settings and credentials)
-
-[Migrated Clone an integration (with settings and credentials)](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning/clone-an-integration-\(with-settings-and-credentials\))
-
-### Integration by type
-
-#### Get existing integration by type
-
-[Migrated Get existing integration by type](https://snyk.docs.apiary.io/#reference/integrations/integration-by-type/get-existing-integration-by-type)
-
-### Integration settings
-
-#### Retrieve
-
-[Migrated Retrieve integration settings](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/retrieve)
-
-#### Update
-
-[Migrated Update integration settings](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/update)
+### [Provision new broker token](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication-provision-token)
 
 ## Invites
 
