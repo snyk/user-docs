@@ -552,25 +552,25 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## SlackSettings
 
-### [Get Slack integration default notification settings](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/slack\_app/-bot\_id-)
+### [Create new Slack notification default settings](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id)
 
-### [Create new Slack notification default settings](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/slack\_app/-bot\_id-)
+### [Get Slack integration default notification settings](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-1)
 
-### [Remove the given Slack App integration](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/slack\_app/-bot\_id-)
+### [Remove the given Slack App integration](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-2)
 
-### [Slack notification settings overrides for projects](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/slack\_app/-bot\_id-/projects)
+### [Slack notification settings override for projects](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects)
 
-### [Create a new Slack settings override for a given project](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+### [Create a new Slack settings override for a given project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id)
 
-### [Remove Slack settings override for a project](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+### [Update Slack notification settings for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-1)
 
-### [Update Slack notification settings for a project](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+### [Remove Slack settings override for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-2)
 
 ## Slack
 
-### [Get a list of Slack channels](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/slack\_app/-tenant\_id-/channels)
+### [Get a list of Slack channels](../reference/slack.md#orgs-org\_id-slack\_app-tenant\_id-channels)
 
-### [Get Slack Channel name by Slack Channel ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/slack\_app/-tenant\_id-/channels/-channel\_id-)
+### [Get Slack Channel name by Slack Channel ID](../reference/slack.md#orgs-org\_id-slack\_app-tenant\_id-channels-channel\_id)
 
 ## Targets
 
