@@ -648,31 +648,15 @@ Note: Use this endpoint to remove users from a group.
 
 ## Webhooks (v1)
 
-### Webhook Collection
+### [Create a webhook](../reference/webhooks-v1.md#org-orgid-webhooks)
 
-#### Create a webhook
+### [List webhooks](../reference/webhooks-v1.md#org-orgid-webhooks-1)
 
-[Migrated Create a webhook](https://snyk.docs.apiary.io/#reference/webhooks/webhook-collection)
+### [Retrieve a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid)
 
-#### List webhooks
+### [Delete a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-1)
 
-[Migrated List webhooks](https://snyk.docs.apiary.io/#reference/webhooks/webhook-collection/create-a-webhook)
-
-### Webhook
-
-#### Retrieve a webhook
-
-[Migrated Retrieve a webhook](https://snyk.docs.apiary.io/#reference/webhooks/webhook/retrieve-a-webhook)
-
-#### Delete a webhook
-
-[Migrated Delete a webhook](https://snyk.docs.apiary.io/#reference/webhooks/webhook/delete-a-webhook)
-
-### Ping
-
-#### Ping a webhook
-
-[Migrated Ping a webhook](https://snyk.docs.apiary.io/#reference/webhooks/ping/ping-a-webhook)
+### [Ping a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-ping)
 
 
 
