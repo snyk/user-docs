@@ -518,9 +518,9 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## SastSettings
 
-### [Retrieves the SAST settings for an org](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/settings/sast)
+### [Enable/Disable the Snyk Code settings for an org](../reference/sastsettings.md#orgs-org\_id-settings-sast)
 
-### [Enable/Disable the Snyk Code settings for an org](https://apidocs.snyk.io/?#patch-/orgs/-org\_id-/settings/sast)
+### [Retrieves the SAST settings for an org](../reference/sastsettings.md#orgs-org\_id-settings-sast-1)
 
 ## ServiceAccounts
 
