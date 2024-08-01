@@ -584,97 +584,41 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## Test (v1)
 
-### Maven
+### [Test package.json & yarn-lock file](../reference/test-v1.md#test-yarn)
 
-#### Test for issues in a public package by group id, artifact id and version
+### [Test sbt file](../reference/test-v1.md#test-sbt)
 
-[Migrated Test for issues in a public package by group id, artfact id and version](https://snyk.docs.apiary.io/#reference/test/maven/test-for-issues-in-a-public-package-by-group-id,-artifact-id-and-version)
+### [sbt\_Test for issues in a public package by group id, artifact id and version](../reference/test-v1.md#test-sbt-groupid-artifactid-version)
 
-#### Test maven file
+### [Test gemfile.lock file](../reference/test-v1.md#test-rubygems)
 
-[Migrated Test maven file](https://snyk.docs.apiary.io/#reference/test/maven/test-maven-file)
+### [Test for issues in a public gem by name and version](../reference/test-v1.md#test-rubygems-gemname-version)
 
-### npm
+### [Test (pip) requirements.txt file](../reference/test-v1.md#test-pip)
 
-#### Test for issues in a public package by name and version
+### [Pip\_Test for issues in a public (pip) package by name and version](../reference/test-v1.md#test-pip-packagename-version)
 
-[Migrated Test for issues in a public package by name and version](https://snyk.docs.apiary.io/#reference/test/npm/test-for-issues-in-a-public-package-by-name-and-version)
+### [Test package.json & package-lock.json file](../reference/test-v1.md#test-npm)
 
-#### Test package.json & package-lock.json File
+### [Test for issues in a public (npm) package by name and version](../reference/test-v1.md#test-npm-packagename-version)
 
-[Migrated Test package.json & package-lock.json file](https://snyk.docs.apiary.io/#reference/test/npm/test-package.json-&-package-lock.json-file)
+### [Test maven file](../reference/test-v1.md#test-maven)
 
-### dep
+### [Test  for issues in a (maven) public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version)
 
-#### Test Gopkg.toml & Gopkg.lock File
+### [Test gradle file](../reference/test-v1.md#test-gradle)
 
-[Migrated Test Gopkg.toml & Gopkg.lock file](https://snyk.docs.apiary.io/#reference/test/dep/test-gopkg.toml-&-gopkg.lock-file)
+### [Test for issues in a public (Gradle) package by group, name and version](../reference/test-v1.md#test-gradle-group-name-version)
 
-### vendor
+### [Test vendor.json file](../reference/test-v1.md#test-govendor)
 
-#### Test vendor.json file
+### [Test Gopkg.toml & Gopkg.lock File](../reference/test-v1.md#test-golangdep)
 
-[Migrated Test vendor.json file](https://snyk.docs.apiary.io/#reference/test/vendor/test-vendor.json-file)
+### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
-### yarn
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel-tool/dep-graph-api.md).
 
-#### Test package.json & yarn.lock file
-
-[Migrated Test package.json & yarn.lock file](https://snyk.docs.apiary.io/#reference/test/yarn/test-package.json-&-yarn.lock-file)
-
-### rubygems
-
-#### Test for issues in a public gem by name and version
-
-[Migrated Test for issues in a public gem by name and version](https://snyk.docs.apiary.io/#reference/test/rubygems/test-for-issues-in-a-public-gem-by-name-and-version)
-
-#### Test gemfile.lock file
-
-[Migrated Test gemfile.lock file](https://snyk.docs.apiary.io/#reference/test/rubygems/test-gemfile.lock-file)
-
-### Gradle
-
-#### Test for issues in a public package by group, name and version
-
-[Migrated Test for issues in a public package by group, name and version](https://snyk.docs.apiary.io/#reference/test/gradle/test-for-issues-in-a-public-package-by-group,-name-and-version)
-
-#### Test gradle file
-
-[Migrated test gradle file](https://snyk.docs.apiary.io/#reference/test/gradle/test-gradle-file)
-
-### sbt
-
-#### Test for issues in a public package by group id, artifact id and version
-
-[Migrated Test for issues in a public package by gorup id, artifact id and version](https://snyk.docs.apiary.io/#reference/test/sbt/test-for-issues-in-a-public-package-by-group-id,-artifact-id-and-version)
-
-#### Test sbt file
-
-[Migrated Test sbt file](https://snyk.docs.apiary.io/#reference/test/sbt/test-sbt-file)
-
-### pip
-
-#### Test for issues in a public package by name and version
-
-[Migrated Test for issues in a public package by name and version](https://snyk.docs.apiary.io/#reference/test/pip/test-for-issues-in-a-public-package-by-name-and-version)
-
-#### Test requirements.txt file
-
-[Migrated Test requirements.txt file](https://snyk.docs.apiary.io/#reference/test/pip/test-requirements.txt-file)
-
-### composer
-
-#### Test composer.json & composer.lock file
-
-[Migrated Test composer.json & composer.lock file](https://snyk.docs.apiary.io/#reference/test/composer/test-composer.json-&-composer.lock-file)
-
-### Dep Graph
-
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel-tool/dep-graph-api.md)
-
-#### Test Dep Graph
-
-[Migrated Test Dep Graph](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph)
+### [Test composer.json & composer.lock file](../reference/test-v1.md#test-composer)
 
 ## Users
 
