@@ -474,13 +474,13 @@ The query-string parameter types is optional. The endpoint does not enforce spec
 
 ## Pull request templates
 
+### [Create or update pull request template for group](../reference/pull-request-templates.md#groups-group\_id-settings-pull\_request\_template)
+
 **More information:** [Create and manage a custom PR template using the API](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api).
 
-### [Get pull request template for group](https://apidocs.snyk.io/?#get-/groups/-group\_id-/settings/pull\_request\_template)
+### [Get pull request template for group](../reference/pull-request-templates.md#groups-group\_id-settings-pull\_request\_template-1)
 
-### [Create or update pull request template for group](https://apidocs.snyk.io/?version=2024-05-23#delete-/groups/-group\_id-/settings/pull\_request\_template)
-
-### [Delete pull request template for group](https://apidocs.snyk.io/?version=2024-05-23#delete-/groups/-group\_id-/settings/pull\_request\_template)
+### [Delete pull request template for group](../reference/pull-request-templates.md#groups-group\_id-settings-pull\_request\_template-2)
 
 ## Reporting API (v1)
 
