@@ -574,13 +574,13 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## Targets
 
-### [Get targets by org ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/targets)&#x20;
+### [Get targets by org ID](../reference/targets.md#orgs-org\_id-targets)&#x20;
 
 **More information:** [Target definition on the Projects page](../../snyk-admin/snyk-projects/#target)
 
-### [Get target by target ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/targets/-target\_id-)
+### [Get target by target ID](../reference/targets.md#orgs-org\_id-targets-target\_id)
 
-### [Delete target by target ID](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/targets/-target\_id-)
+### [Delete target by target ID](../reference/targets.md#orgs-org\_id-targets-target\_id-1)
 
 ## Test (v1)
 
