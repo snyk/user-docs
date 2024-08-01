@@ -526,35 +526,29 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 **More information:** [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md); [Choose a service account type to use with Snyk APIs](../../enterprise-configuration/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis.md)
 
-### [Get a list of group service accounts](https://apidocs.snyk.io/?#get-/groups/-group\_id-/service\_accounts)
+### [Create a service account for an organization](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts)
 
-### [Create a service account for a group](https://apidocs.snyk.io/?#post-/groups/-group\_id-/service\_accounts)
+### [Get a list of organization service accounts](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-1)
 
-### [Get a group service account](https://apidocs.snyk.io/?#get-/groups/-group\_id-/service\_accounts/-serviceaccount\_id-)
+### [Update an organization service account](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id)
 
-### [Delete a group service account](https://apidocs.snyk.io/?#delete-/groups/-group\_id-/service\_accounts/-serviceaccount\_id-)
+### [Get an organization service account](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id-1)
 
-### [Update a group service account](https://apidocs.snyk.io/?#patch-/groups/-group\_id-/service\_accounts/-serviceaccount\_id-)
+### [Delete a service account in an organization](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id-2)
 
-### [Manage a group service account’s client secret](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/service\_accounts)
+### [Manage an organization service account’s client secret](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id-secrets)
 
-### [Get a list of organization service accounts](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/service\_accounts)
+### [Create a service account for a group](../reference/serviceaccounts.md#groups-group\_id-service\_accounts)
 
-### [Create a service account for an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/service\_accounts/-serviceaccount\_id-)
+### [Get a list of group service accounts](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-1)
 
-### [Get an organization service account](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/service\_accounts/-serviceaccount\_id-)
+### [Update a group service account](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id)
 
-### [Delete a service account in an organization](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/service\_accounts/-serviceaccount\_id-)
+### [Get a group service account](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id-1)
 
-### [Update an organization service account](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/service\_accounts/-serviceaccount\_id-)
+### [Delete a group service account](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id)
 
-### [Manage an organization service account’s client secret](https://apidocs.snyk.io/?#post-/orgs/-org\_id-/service\_accounts/-serviceaccount\_id-/secrets)
-
-## Slack
-
-### [Get a list of Slack channels](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/slack\_app/-tenant\_id-/channels)
-
-### [Get Slack Channel name by Slack Channel ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/slack\_app/-tenant\_id-/channels/-channel\_id-)
+### [Manage a group service account’s client secret](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id-secrets)
 
 ## SlackSettings
 
@@ -571,6 +565,12 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 ### [Remove Slack settings override for a project](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
 
 ### [Update Slack notification settings for a project](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+
+## Slack
+
+### [Get a list of Slack channels](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/slack\_app/-tenant\_id-/channels)
+
+### [Get Slack Channel name by Slack Channel ID](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/slack\_app/-tenant\_id-/channels/-channel\_id-)
 
 ## Targets
 
