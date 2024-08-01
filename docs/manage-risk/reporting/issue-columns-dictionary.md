@@ -6,7 +6,6 @@ Snyk reporting includes tens of filters and columns, allowing users to develop r
 
 Describes the main attributes of the issue.
 
-* **AUTO FIXABLE** - Indicates whether the issue can be automatically fixed by Snyk.
 * **COMPUTED FIXABILITY** - Indicates whether the issue can be fixed based on the vulnerability remediation paths. For details, see [Computed Fixability filters](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md#computed-fixability-filters).
   * **Fixable:** There is a fix for all the identified issues, meaning that all detailed paths have remediation.
   * **Partially fixable:** The issue has upgradable paths, but not all detailed paths have remediation.
@@ -33,11 +32,12 @@ Describes the main attributes of the issue.
 
 The vulnerability details refer to various issue attributes that are being defined by Snyk, Mitre, NVD, or any other trusted security organization.
 
+* **ATTACK VECTOR -** Represents the context by which vulnerability exploitation is possible. For more details about the attack vector and its values (Network, Adjacent, Local, Physical), see the [specification document](https://www.first.org/cvss/specification-document).&#x20;
 * **CVE** - Mitre CVE ID
 * **CWE** - Mitre CWE ID
 * **EPSS SCORE** - The probability of exploitation in the wild in the next 30 days.
 * **EPSS PERCENTILE** -  The proportion of all vulnerabilities with the same or lower EPSS score.
-* **EXPLOIT MATURITY** - Represents the existence and maturity of public exploits validated by Snyk. The allowed values follow. For details, see [View exploits in Projects](../prioritize-issues-for-fixing/view-exploits.md#view-exploits-in-projects).
+* **EXPLOIT MATURITY** - Represents the existence and maturity of public exploits validated by Snyk. For details, see [View exploits in Projects](../prioritize-issues-for-fixing/view-exploits.md#view-exploits-in-projects). The allowed values include:
   * **Mature:** Snyk has a published code exploit for this vulnerability.
   * **Proof of concept:** Snyk has a proof-of-concept or detailed explanation of how to exploit this vulnerability. Proof of concept vulnerability patches cannot be disabled and will appear in fix PRs where they are found.
   * **No known exploit:** Snyk did not find a proof-of-concept or a published exploit for this vulnerability.
@@ -53,6 +53,7 @@ The vulnerability details refer to various issue attributes that are being defin
 * **PROBLEM ID** - Snyk Vuln DB ID that uniquely identifies the vulnerability.
 * **PROBLEM TITLE** - The vulnerability name as described by Snyk.
 * **SEMVER VULNERABLE RANGE** - The vulnerable range of package versions (based on semantic versioning).
+* **SNYK CVSS SCORE -** Snyk's CVSS (Common Vulnerability Scoring System) score.
 * **VULNERABILITY PUBLICATION DATE** - Timestamp indicating when the vulnerability was published by Snyk.
 
 ## Issue context columns <a href="#issue-context-columns" id="issue-context-columns"></a>
