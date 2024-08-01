@@ -114,7 +114,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## Audit Logs
 
-### [Search Organization audit log](../reference/audit-logs.md#orgs-org\_id-audit\_logs-search)s
+### [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-audit\_logs-search)
 
 **More information:** [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 
@@ -364,7 +364,7 @@ Note: Remedies are not included in the response.
 
 ### [Get organization notification settings](../reference/organizations-v1.md#org-orgid-notification-settings-1)
 
-### [List members](../reference/organizations-v1.md#org-orgid-members) (Organization)
+### [List members](../reference/organizations-v1.md#org-orgid-members)
 
 **More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)
 
@@ -484,9 +484,7 @@ The query-string parameter types is optional. The endpoint does not enforce spec
 
 ## Reporting API (v1)
 
-### Latest issues
-
-#### Get list of latest issues
+### [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest)
 
 To list all projects that have a vulnerability linked to a CVE use the capability to filter on strings with the [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) and [Get List of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues) reporting endpoints. Filter by the identifier attribute.
 
@@ -494,43 +492,19 @@ To get a list of issues that have been fixed: Use [Get list of latest issues](ht
 
 [Migrated Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues)
 
-### Issues
-
-#### Get list of issues
+### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
 
 To list all projects that have a vulnerability linked to a CVE use the capability to filter on strings with the [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) and [Get List of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues) (reporting) endpoints. Filter by the identifier attribute.
 
-[Migrated Get list of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues)
+### [Get test counts](../reference/reporting-api-v1.md#reporting-counts-tests)
 
-### Latest issue counts
+### [Get project counts](../reference/reporting-api-v1.md#reporting-counts-projects)
 
-#### Get latest issue counts
+### [Get latest project counts](../reference/reporting-api-v1.md#reporting-counts-projects-latest)
 
-[Migrated latest issue counts](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issue-counts/get-latest-issue-counts)
+### [Get issue counts](../reference/reporting-api-v1.md#reporting-counts-issues)
 
-### Issue counts over time
-
-#### Get issue counts
-
-[Migrated Get Issue counts](https://snyk.docs.apiary.io/#reference/reporting-api/issue-counts-over-time/get-issue-counts)
-
-### Latest project counts
-
-#### Get latest project counts
-
-[Migrated Get latest project counts](https://snyk.docs.apiary.io/#reference/reporting-api/latest-project-counts/get-latest-project-counts)
-
-### Project counts over time&#x20;
-
-#### Get project counts
-
-[Migrated Get project counts](https://snyk.docs.apiary.io/#reference/reporting-api/project-counts-over-time/get-project-counts)
-
-### Test counts
-
-#### Get test counts
-
-[Migrated test counts](https://snyk.docs.apiary.io/#reference/reporting-api/test-counts/get-test-counts)
+### [Get latest issue counts](../reference/reporting-api-v1.md#reporting-counts-issues-latest)
 
 ## SBOM (GA and beta)
 
