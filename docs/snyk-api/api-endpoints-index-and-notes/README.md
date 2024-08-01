@@ -508,7 +508,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## SBOM (GA and beta)
 
-### [Get a project’s SBOM document](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/projects/-project\_id-/sbom)
+### [Get a project’s SBOM document](../reference/sbom.md)
 
 ### [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) (beta)
 
