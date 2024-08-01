@@ -19166,7 +19166,6 @@ components:
           items:
             type: string
           description: A list of additional reasons why the error occurred
-    
     fields:
       title: fields
       type: object
@@ -20771,15 +20770,15 @@ components:
         severities:
           type: array
           items:
-            $ref: '#/components/schemas/severity'
+            $ref: '#/components/schemas/severity2'
           description: The list of cvssSources renamed to severities for issueData model
-          example: 
-          - assigner: NVD
-            severity: medium
-            baseScore: 4.8
-            vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:A/VC:N/VI:N/VA:N/SC:H/SI:L/SA:L/E:A
-            cvssVersion: '4.0'
-            modificationTime: 2024-03-07T07:47:26.644482Z
+          example:
+            - assigner: NVD
+              severity: medium
+              baseScore: 4.8
+              vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:A/VC:N/VI:N/VA:N/SC:H/SI:L/SA:L/E:A
+              cvssVersion: '4.0'
+              modificationTime: 2024-03-07T07:47:26.644482Z
         exploitDetails:
           type: object
           properties:
@@ -20787,9 +20786,9 @@ components:
             $ref: '#/components/schemas/exploitDetail'
           description: The exploit maturity of the vulnerability in different industry-standard formats, as well as the sources of the information.
           example:
-            sources: 
+            sources:
               - CISA
-            maturityLevels: 
+            maturityLevels:
               - format: CVSS_v3
                 level: no-known-exploit
         language:
@@ -20818,7 +20817,7 @@ components:
           description: Whether the issue is intentional, indicating a malicious package
           example: true
       description: The details of the issue
-    severity:
+    severity2:
       type: object
       properties:
         assigner:
@@ -20827,13 +20826,13 @@ components:
         severity:
           type: string
           description: The severity calculated via vector
-        baseScore: 
+        baseScore:
           type: number
           description: The CVSS score that results from running the CVSS string (Non-IaC projects only)
         vector:
           type: string
           description: The CVSS string that signifies how the CVSS score was calculated (Non-IaC projects only)
-        cvssVersion: 
+        cvssVersion:
           type: string
           description: The CVSS version that is being described
         modificationTime:
@@ -20842,15 +20841,15 @@ components:
     exploitDetail:
       type: object
       properties:
-        sources: 
+        sources:
           type: array
-            items:
-              type: string
-          description: The sources by which we determined the exploit maturity level
+          items:
+            type: string
+        description: The sources by which we determined the exploit maturity level
         maturityLevels:
           type: array
-            items: 
-              $ref: '#/components/schemas/maturityLevel'
+          items:
+            $ref: '#/components/schemas/maturityLevel'
     maturityLevel:
       type: object
       properties:
