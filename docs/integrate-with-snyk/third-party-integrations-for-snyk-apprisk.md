@@ -302,7 +302,7 @@ The Orca runtime integration reports the following [risk factors](../manage-risk
 
 ### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
 
-* Connect your could vendor account to Orca. Navigate to the [Connecting Accounts](https://docs.orcasecurity.io/docs/onboarding) documentation for more details.
+* Connect your vendor account to Orca. Navigate to the [Connecting Accounts](https://docs.orcasecurity.io/docs/onboarding) documentation for more details.
 * Connect your cluster to Orca. Navigate to the [Connecting Clusters using Kubernetes Connector](https://docs.orcasecurity.io/docs/connecting-clusters-using-kubernetes-connector) documentation for more details.
 
 ### Required parameters <a href="#sysdig-required-parameters" id="sysdig-required-parameters"></a>
