@@ -620,6 +620,20 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Test composer.json & composer.lock file](../reference/test-v1.md#test-composer)
 
+## Users (v1)
+
+### [Get user details](../reference/users-v1.md#user-userid)
+
+### [Get My Details](../reference/users-v1.md#user-me)
+
+### [Modify organization notification settings](../reference/users-v1.md#user-me-notification-settings-org-orgid)
+
+### [Get organization notification settings](../reference/users-v1.md#user-me-notification-settings-org-orgid-1)
+
+### [Modify project notification settings](../reference/users-v1.md#user-me-notification-settings-org-orgid-project-projectid)
+
+### [Get project notification settings](../reference/users-v1.md#user-me-notification-settings-org-orgid-project-projectid-1)
+
 ## Users
 
 ### [Update a user’s role in a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#patch-/groups/-group\_id-/users/-id-) (beta)
@@ -631,40 +645,6 @@ Note: Use this endpoint to remove users from a group.
 ### [Get user by ID](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
 
 ### [My User Details](https://apidocs.snyk.io/?#get-/self)
-
-## Users (v1)
-
-### User Details
-
-#### Get user details
-
-[Migrated Get user details](https://snyk.docs.apiary.io/#reference/users/user-details/get-user-details)
-
-### My User Details
-
-#### Get My Details
-
-[Migrated Get My Details](https://snyk.docs.apiary.io/#reference/users/my-user-details/get-organization-notification-settings)
-
-### User organization notification settings
-
-#### Get organization notification settings
-
-[Migrated Get organization notification settings](https://snyk.docs.apiary.io/#reference/users/user-organization-notification-settings/get-organization-notification-settings)
-
-#### Modify organization notification settings
-
-[Migrated Modify organization notification settings](https://snyk.docs.apiary.io/#reference/users/user-organization-notification-settings/modify-organization-notification-settings)
-
-### User project notification settings
-
-#### Get project notification settings
-
-[Migrated Get project notification settings](https://snyk.docs.apiary.io/#reference/users/user-project-notification-settings/get-project-notification-settings)
-
-#### Modify project notification settings
-
-[Migrated Modify project notification settings](https://snyk.docs.apiary.io/#reference/users/user-project-notification-settings/modify-project-notification-settings)
 
 ## Webhooks (v1)
 
