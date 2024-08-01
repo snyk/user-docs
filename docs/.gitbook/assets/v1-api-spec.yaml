@@ -20803,7 +20803,7 @@ components:
           type: object
           properties:
             target:
-            $ref: '#/components/schemas/exploitDetail'
+              $ref: '#/components/schemas/exploitDetail'
           description: The exploit maturity of the vulnerability in different industry-standard formats, as well as the sources of the information.
           example:
             sources:
@@ -20865,7 +20865,7 @@ components:
           type: array
           items:
             type: string
-        description: The sources by which we determined the exploit maturity level
+          description: The sources by which we determined the exploit maturity level
         maturityLevels:
           type: array
           items:
