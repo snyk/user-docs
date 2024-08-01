@@ -636,6 +636,8 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## Users
 
+### [My User Details](../reference/users.md)
+
 ### [Update a user’s role in a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#patch-/groups/-group\_id-/users/-id-) (beta)
 
 Note: Use this endpoint to remove users from a group.
@@ -643,8 +645,6 @@ Note: Use this endpoint to remove users from a group.
 **More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
 
 ### [Get user by ID](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
-
-### [My User Details](https://apidocs.snyk.io/?#get-/self)
 
 ## Webhooks (v1)
 
