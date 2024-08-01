@@ -20860,7 +20860,7 @@ components:
           description: The date severities was last modified
     exploitDetail:
       type: object
-      properties:
+    properties:
         sources:
           type: array
           items:
