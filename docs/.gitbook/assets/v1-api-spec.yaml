@@ -2065,6 +2065,17 @@ paths:
               - application/json
             type: string
             example: application/json
+        - name: Content-Length
+          in: header
+          description: ''
+          required: true
+          style: simple
+          schema:
+            type: number
+            format: double
+            example: 0
+            enum:
+              - 0
       responses:
         '200':
           description: ''
@@ -2132,6 +2143,17 @@ paths:
               - application/json
             type: string
             example: application/json
+        - name: Content-Length
+          in: header
+          description: ''
+          required: true
+          style: simple
+          schema:
+            type: number
+            format: double
+            example: 0
+            enum:
+              - 0
       responses:
         '200':
           description: ''
