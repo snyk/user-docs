@@ -30,9 +30,6 @@ quay-cr
 nexus-cr
 ```
 
-\
-
-
 Elastic Container Registry and Digital Ocean Container Registry require specific parameters as explained in the sections that follow.
 
 ## **Elastic Container Registry (ecr)**
