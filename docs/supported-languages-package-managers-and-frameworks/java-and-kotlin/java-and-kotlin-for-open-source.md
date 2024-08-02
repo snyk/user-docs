@@ -71,13 +71,13 @@ If you are having any trouble testing your Gradle Projects with Snyk, collect th
 Gradle dependencies are declared for a particular scope; each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring\_dependencies.html#sec:what-are-dependency-configurations). For example:
 
 * **compileOnly** configuration for development dependencies
-* **compile** configuration that includes compile and runtime dependencies
+* **compileClasspath** configuration that includes compile and runtime dependencies
 
-By default, Snyk merges all configurations returned by Gradle to a dependency graph based on the sum total of the dependencies across all configurations in the Project or Projects.
+In most cases, Snyk will include all the dependencies in the **compileClasspath** configuration, but this can vary in some circumstances.
 
 To test a specific configuration:
 
-* Use the `--configuration-matching` option with a [Java regular expression](https://docs.oracle.com/javase/tutorial/essential/regex/) (case-insensitive) as its parameter. The configuration that matches is then tested. If several configurations match, they are all merged and resolved together. For example: `'^releaseRuntimeClasspath$|^compile$'`
+* Use the `--configuration-matching` option with a [Java regular expression](https://docs.oracle.com/javase/tutorial/essential/regex/) (case-insensitive) as its parameter. The first configuration that matches is tested.
 * If the different sub-projects include different configurations, scan each sub-project separately.
 
 ### **Examples of how you can use the --configuration-matching option**
@@ -154,6 +154,4 @@ If you are having any trouble testing your Gradle Projects with Snyk, collect th
 * The output from the following commands:
   * `$ snyk test -d`
   * `$ gradle dependencies -q`
-
-PLACEHOLDER
 
