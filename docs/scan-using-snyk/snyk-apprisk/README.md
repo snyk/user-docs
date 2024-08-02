@@ -12,10 +12,8 @@ Snyk AppRisk Essentials enables:&#x20;
 
 Snyk AppRisk Pro builds upon the capabilities of Snyk AppRisk Essentials by offering:
 
-* **Support for non-Snyk Application Security products**: Integration with a broader range of security tools.
-* **Advanced security policies**: Enhanced policy definition and enforcement.
-* **In-depth risk analysis**: Comprehensive assessment of risks across diverse applications.
-* **Customizable controls**: Tailored security controls to fit specific organizational needs.
+* **More sophisticated risk-based prioritization** with runtime Insights - such as whether an app is deployed and public facing, and whether vulnerable packages found by Snyk Open Source are actually used in runtime.
+* **Manage security coverage for secrets detection tools**: Assess coverage for secrets detection alongside Snyk's AST products.
 * **Scalability for diverse environments**: Robust security management across various development environments.
 
 ## Features
@@ -29,8 +27,8 @@ Snyk AppRisk Essentials includes the following features:&#x20;
 
 On top of the Snyk AppRisk Essentials features, Snyk AppRisk Pro offers:
 
-* [**Integrations**](../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md) with non-Snyk products.
-* [**Insights**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) for all scanned assets with runtime context in the Insights UI.
+* [**Integrations**](../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md) with non-Snyk products to support security coverage and Insights use cases
+* [**Insights**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) for runtime context - providing risk factors to help with risk-based prioritization.
 * [**Analytics**](../../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
 ## Using Snyk AppRisk Essentials and Snyk AppRisk Pro
