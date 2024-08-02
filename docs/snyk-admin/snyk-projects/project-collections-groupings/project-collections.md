@@ -18,7 +18,8 @@ If you move a Project between Organizations, the Project will also be removed fr
 1.  On your Projects page, select the **Collections** tab, and click the  **Create collection** button at the end of the search field.
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 11.55.20.png" alt="Enter the Collections listing page"><figcaption><p>Enter the Collections listing page</p></figcaption></figure>
-2.  Enter a name for your collection in the **Name** field, then click **Create collection**.&#x20;
+2.  Enter a name for your collection in the **Name** field, then click **Create collection**.\
+    Only alphanumerics and the characters -\_/:. are permitted in collection names.
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 11.59.54.png" alt="Name your collection"><figcaption><p>Name your collection</p></figcaption></figure>
 3.  You have successfully created a collection that you can populate.\
