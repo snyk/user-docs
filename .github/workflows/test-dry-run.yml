@@ -1,0 +1,21 @@
+name: Test API Docs Generation
+
+on:
+  pull_request:
+    paths:
+      - '**.yaml'
+      - '**.json'
+
+jobs:
+  test:
+    name: api-docs-generator-dry-run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          cache-dependency-path: |
+            tools/api-docs-generator/go.sum
+      - name: test
+        working-directory: ./tools/api-docs-generator
+        run: make dry-run

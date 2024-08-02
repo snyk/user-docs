@@ -15,3 +15,6 @@ format: tidy
 
 tidy:
 	go mod tidy
+
+dry-run:
+	@go run . config.yml ../.. --dry-run
