@@ -15,16 +15,19 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 Allowed values for `crType`:
 
-`artifactory-cr`\
-`harbor-cr`\
 `acr`\
-`gcr`\
+`artifactory-cr`\
+`digitalocean-cr`\
 `docker-hub`\
+`ecr`\
+`gcr`\
+`google-artifact-cr`\
+`github-cr`\
+`gitlab-cr`\
+`harbor-cr`\
 `quay-cr`\
 `nexus-cr`\
-`github-cr`\
-`ecr`\
-`digitalocean-cr`
+
 
 Elastic Container Registry and Digital Ocean Container Registry require specific parameters as explained in the sections that follow.
 
