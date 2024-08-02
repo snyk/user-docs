@@ -6,13 +6,13 @@ Snyk supports [Python for code analysis](python-for-code-analysis.md) and [Pytho
 
 ## Python version support
 
-Some Python Projects may contain dependencies that require specific versions of Python.  Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
+Some Python Projects may contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
 
 You can specify the version of Python that Snyk uses to scan dependencies in both the CLI and Git integration.
 
 See [Snyk CLI for Python](snyk-cli-for-python.md) for information about the Python version and installation and use information for Pip, Poetry, Pipevn, and setup.py.
 
-See [Git repositories and Python](git-repositories-and-python.md) for information about the Python version and installation and use  for Python and pip and use of Poetry and pipenv.
+See [Git repositories and Python](git-repositories-and-python.md) for information about the Python version and installation and use for Python and pip and use of Poetry and pipenv.
 
 ### Pipenv and Python versions supported
 
@@ -47,8 +47,8 @@ If you are using a virtual environment, you must add the `PYTHON_PATH` to the **
 
 However, if you have manifest files in other directories within the root of the Project, Snyk cannot identify them. For Snyk to find them, you must use the `--all-projects` option. Snyk then recursively searches each Project directory to find all the manifest files.
 
-If those directories each require a different virtual environment to run, the Snyk scan will not be successful because it will use one virtual environment to search for installed dependencies. In this case, it is best to use the CLI or the Git integration to get vulnerability information on all the dependencies listed in each Project directory.
+If those directories each require a different virtual environment to run, the Snyk scan will not be successful because it will use one virtual environment to search for installed dependencies. In this case, it is best to use the CLI or the Git integration rather than an IDE to get vulnerability information on all the dependencies listed in each Project directory.
 
 ## Troubleshooting Snyk for Python
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
