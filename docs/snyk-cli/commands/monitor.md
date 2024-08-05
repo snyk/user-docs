@@ -72,13 +72,13 @@ Example: `--detection-depth=3` limits search to the specified directory (or the 
 
 ### `--exclude=<NAME>[,<NAME>]...>`
 
-Can be used with `--all-projects` and `--yarn-workspaces` to indicate directory names and file names to exclude. Must be comma-separated, and cannot include a path.&#x20;
+Can be used with `--all-projects` and `--yarn-workspaces` to indicate directory names and file names to exclude. Must be comma-separated, and cannot include a path.
 
 Example: `$ snyk test --all-projects --exclude=dir1,file2`
 
 This will exclude any directories and files named `dir1` and `file2` when scanning for project manifest files such as: `./dir1`, `./src/dir1`, `./file2`, `./src/file2` and so on.
 
-**Note**: `--exclude=dir1` will find both  `./dir1`, and `./src/dir1`.\
+**Note**: `--exclude=dir1` will find both `./dir1`, and `./src/dir1`.\
 However, `--exclude=./src/dir1` will result in an error because it includes a path.
 
 ### `--prune-repeated-subdependencies`, `-p`
@@ -235,7 +235,7 @@ Snyk reports the test results per individual `pom.xml` file within the aggregate
 
 ### `--scan-unmanaged`
 
-To monitor individual JAR, WAR, and AAR files, use the following:&#x20;
+To monitor individual JAR, WAR, and AAR files, use the following:
 
 ```
 --scan-unmanaged --file=<JAR_FILE_NAME>
@@ -243,7 +243,7 @@ To monitor individual JAR, WAR, and AAR files, use the following:&#x20;
 
 ### `--scan-all-unmanaged`
 
-Auto-detect Maven, JAR, WAR, and AAR files recursively from the current folder.&#x20;
+Auto-detect Maven, JAR, WAR, and AAR files recursively from the current folder.
 
 ```
 --scan-all-unmanaged 
@@ -265,7 +265,7 @@ Both a build.gradle file and a settings.gradle file, or equivalent files, based 
 
 ### `--configuration-matching=<CONFIGURATION_REGEX>`
 
-Resolve dependencies using only configuration(s) that match the specified Java regular expression.
+Resolve dependencies using the first configuration that matches the specified Java regular expression.
 
 Example: `^releaseRuntimeClasspath$`
 
