@@ -454,6 +454,7 @@
     * [Sysdig Integration](integrate-with-snyk/vulnerability-management-tools/sysdig-integration.md)
     * [Tines Integration](integrate-with-snyk/vulnerability-management-tools/tines-integration.md)
     * [Torq Integration](integrate-with-snyk/vulnerability-management-tools/torq-integration.md)
+    * [Vanta Integration](integrate-with-snyk/vulnerability-management-tools/vanta-integration.md)
     * [Vulcan Integration](integrate-with-snyk/vulnerability-management-tools/vulcan-integration.md)
     * [Wabbi Integration](integrate-with-snyk/vulnerability-management-tools/wabbi-integration.md)
 * [Manage assets](manage-assets/README.md)
