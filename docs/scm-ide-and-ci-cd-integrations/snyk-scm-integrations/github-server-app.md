@@ -50,7 +50,7 @@ Log in to your Snyk account and navigate to the Integrations section in the Snyk
 
 Select the **GitHub Server App** tile.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-06-05 at 11.12.40.png" alt="Select the GitHub Server App tile in the Snyk Web UI"><figcaption><p>Select the GitHub Server App tile in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integration-hub-select-tile-focus-github-server-app.png" alt="GitHub Server App tile on the Integrations page" width="211"><figcaption><p>GitHub Server App tile on the Integrations page</p></figcaption></figure>
 
 In the confirmation modal, select **Configure GitHub Server App.**\
 
