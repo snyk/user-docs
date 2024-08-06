@@ -28,7 +28,7 @@ The Bitbucket Cloud App integration lets you connect your Snyk Organization to a
 {% hint style="info" %}
 Snyk recommends using the Bitbucket Cloud App integration for smoother integration and to ensure long-term support.
 
-If you are using the [Bitbucket Cloud Personal Access Token integration](bitbucket-cloud.md), see [Migrate a Bitbucket Cloud integration](bitbucket-cloud-vs-bitbucket-cloud-app.md) for more information.
+If you are using the [Bitbucket Cloud Personal Access Token integration](bitbucket-cloud.md), see [Migrate a Bitbucket Cloud integration](bitbucket-cloud.md#migrate-to-the-bitbucket-cloud-app) for more information.
 {% endhint %}
 
 ### Setting up a Bitbucket Cloud App
@@ -132,7 +132,7 @@ The example that follows shows a Snyk pull request build check on the Bitbucket 
 
 To review and adjust the pull request test settings, follow these steps:
 
-1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud App**, and click **Edit Settings**.
+1. In Snyk, go to Organization settings > **Integrations > Source control > Bitbucket Cloud App**, and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options. See [Configure PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md) for more details.
 
 #### First-party interface in Bitbucket Cloud

@@ -275,7 +275,6 @@
     * [GitHub Read-only Projects](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-read-only-projects.md)
     * [GitLab](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)
     * [Bitbucket Cloud](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud.md)
-    * [Bitbucket Cloud vs Bitbucket Cloud App](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-vs-bitbucket-cloud-app.md)
     * [Bitbucket Cloud App](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)
     * [Bitbucket Data Center/Server](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)
     * [Azure Repositories (TFS)](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md)
