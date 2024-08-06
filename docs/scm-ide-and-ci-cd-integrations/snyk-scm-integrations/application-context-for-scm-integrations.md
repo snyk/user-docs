@@ -131,7 +131,7 @@ The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/gettin
 1. Add the **profile name** for your ServiceNow CMDB instance.
 2. Setup the **CMDB instance** for the ServiceNow CMDB by following this example `https://<INSTANCE_NAME>.service-now.com`.
 3. **Username** and **Password** - Credentials for your ServiceNow CMDB instance.
-4. Add the t**able name** for the CMDB configuration item class. The list can be found here: [https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html](https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html)
+4. Add the t**able name** for the CMDB configuration item class. Navigate to the [ServiceNow CMDB tables details](https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html) page for the full list of names.&#x20;
 5. Add the **CMDB field to map Repo URL** - Add the URL of the repository.
 
 {% hint style="info" %}
@@ -166,7 +166,7 @@ The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials an
 1. Add your Atlassian Compass **Profile name**.
 2. Add your Atlassian Compass **Instance URL**. You can use this format type: `https://<YOUR ORGANIZATION>.atlassian.net`.
 3. Add your Atlassian Compass **Username**.
-4. Add your Atlassian Compass instance **Token**. Refer to this document for creating the Atlassian API token: [https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)&#x20;
+4. Add your Atlassian Compass instance **Token**. Navigate to the [Manage API tokens for your Atlassian account](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) page for more details about creating an Atlassian API token. &#x20;
 
 {% hint style="info" %}
 The gathered data from Atlassian Compass will be correlated with the Repository Assets.
@@ -198,7 +198,7 @@ This feature is availabale only for the integration with Atlassian Compass.
 
 1. Add your Harness **Profile name**.
 2. Add the **Host URL** of your Harness account. You can use this format type: `https://<YOUR ORGANIZATION>.harness.io`
-3. Add the **API key** for your Harness instance. You can use [this documentation](https://developer.harness.io/docs/platform/automation/api/add-and-manage-api-keys/) to manage your API key.
+3. Add the **API key** for your Harness instance. You can use the Harness [Add and manage your API keys](https://developer.harness.io/docs/platform/automation/api/add-and-manage-api-keys/) documentation page to manage your API key.
 
 {% hint style="info" %}
 This integration is focused on [Harness’s](https://developer.harness.io/docs/internal-developer-portal/catalog/software-catalog/) service catalog module and it is backed by the Backstage catalog.
@@ -228,7 +228,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 
 1. Add your OpsLevel **Profile name**.
 2. Add the **Instance URL** of your OpsLevel account. You can use this format type: `https://<YOUR Organizer>.opslevel.com`
-3. Add the **API Token** for your OpsLevel instance. Create the API Token in your OpsLevel account by following the instructions from [here](https://docs.opslevel.com/docs/graphql#1-create-an-api-token).
+3. Add the **API Token** for your OpsLevel instance. To create an API Token in your OpsLevel account, use the instructions on the OpsLevel [Create an API token](https://docs.opslevel.com/docs/graphql#1-create-an-api-token) documentation page.
 
 ### Integration Hub setup
 
@@ -253,7 +253,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 
 1. Add your Datadog **Profile name**.
 2. Add the **API key** for the Datadog instance.
-3. Add the **Application Key** along with your organization's API key to grant users access to Datadog's programmatic API. [Here](https://docs.datadoghq.com/account\_management/api-app-keys/) you can find details about the Datadog API and Application key.
+3. Add the **Application Key** along with your organization's API key to grant users access to Datadog's programmatic API. For more details, access the [Datadog API and Application key](https://docs.datadoghq.com/account\_management/api-app-keys/) documentation page.
 
 ### Integration Hub setup
 
