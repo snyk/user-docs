@@ -326,7 +326,9 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 ### [Get issues by group ID](../reference/issues.md#orgs-org\_id-issues-issue\_id)
 
-Note: Remedies are not included in the response.
+**Note:** Remedies are not included in the response.
+
+More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing/reachable-vulnerabilities.md)
 
 ### [Get an issue](../reference/issues.md#groups-group\_id-issues-issue\_id) (Group)
 
