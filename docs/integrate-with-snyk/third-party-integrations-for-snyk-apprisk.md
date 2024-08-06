@@ -25,7 +25,7 @@ Data synchronization may take up to two hours after receiving the **Connected** 
 
 ### Prerequisites <a href="#verocode-prerequisites" id="verocode-prerequisites"></a>
 
-The Veracode application concept is matched into the Snyk AppRisk repository assets. You need to create and utilize the Veracode custom field by using the [Veracode API](https://app.swaggerhub.com/apis/Veracode/veracode-applications\_api\_specification/1.0#/Application%20information%20API/updateApplicationUsingPUT). More details about the Veracode custom field are available [here](https://docs.veracode.com/r/t\_create\_custom\_metadata).&#x20;
+The Veracode application concept is matched into the Snyk AppRisk repository assets. You need to create and utilize the Veracode custom field by using the [Veracode API](https://app.swaggerhub.com/apis/Veracode/veracode-applications\_api\_specification/1.0#/Application%20information%20API/updateApplicationUsingPUT). Access the [Veracode custom metadata field](https://docs.veracode.com/r/t\_create\_custom\_metadata) for more details.
 
 Ensure you are adding a custom field called repoURL:
 
@@ -39,7 +39,7 @@ Ensure you are adding a custom field called repoURL:
 
 ### Required parameters <a href="#veracode-required-parameters" id="veracode-required-parameters"></a>
 
-* API ID and API Key - API credentials associated with a user account. For more information, access this link: [https://help.veracode.com/r/c\_api\_credentials3](https://help.veracode.com/r/c\_api\_credentials3).
+* API ID and API Key - API credentials associated with a user account. For more information, access the [Veracode API credentials](https://help.veracode.com/r/c\_api\_credentials3) link.
 
 ### Integration Hub setup <a href="#veracode-integration-hub-setup" id="veracode-integration-hub-setup"></a>
 
@@ -63,7 +63,7 @@ Snyk AppRisk Pro does not currently support the Checkmarx One integration.
 ### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>
 
 * Install and configure your [Snyk Broker](../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
-* Ensure you have properly used Git Setting for your Checkmarx Project based on the Checkmarx [documentation](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git).
+* Ensure you have properly used Git Setting for your Checkmarx Project. Access the Checkmarx [Set project's remote source settings as GIT](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git) documentation page for more details.&#x20;
 
 ### Required parameters <a href="#checkmarx-required-parameters" id="checkmarx-required-parameters"></a>
 
@@ -96,7 +96,7 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 * Click the **Add** button.
 * Add the **Profile name** for this integration.
 * Add the **Host URL** for this integration.
-* Add the **API token**. Navigate to your SonarQube account, select User, select My Account, select Security, and then User Token. [Here](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/) you can find more details about the SonarQube API Key.
+* Add the **API token**. Navigate to your SonarQube account, select User, select My Account, select Security, and then User Token. Access the SonarQube [generating and using tokens](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/) documentation page for more details about the SonarQube API Key.
 * Click the **Done** button.
 * When the connection is established, the status of the SonarQube integration is changed to **Connected**.
 
@@ -104,7 +104,7 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 
 ### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
 
-* API Key. [Here](https://docs.nightfall.ai/docs/creating-an-api-key) you can find more details about how to create a Nightfall API key.&#x20;
+* API Key. Access the Nightfall [Creating an API Key](https://docs.nightfall.ai/docs/creating-an-api-key) documentation page for more details about how to create a Nightfall API key.&#x20;
 
 ### Integration Hub setup <a href="#nightfall-integration-hub-setup" id="nightfall-integration-hub-setup"></a>
 
@@ -133,7 +133,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ### Required parameters <a href="#gitguardian-required-parameters" id="gitguardian-required-parameters"></a>
 
-* API Key. [Here](https://docs.gitguardian.com/api-docs/authentication) you can find more details about how to create a GitGuardian API Key.&#x20;
+* API Key. Access the GitGuardian [authentication](https://docs.gitguardian.com/api-docs/authentication) documentation page for more details about how to create a GitGuardian API Key.&#x20;
 
 When you create a GitGuardian API Key, remember that it works for both service accounts and personal access token.
 
@@ -168,7 +168,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ### Required parameters <a href="#jira-required-parameters" id="jira-required-parameters"></a>
 
-* API Key - Access [https://id.atlassian.com/manage-profile/security/api-tokens](https://id.atlassian.com/manage-profile/security/api-tokens) to generate a Jira API Token.&#x20;
+* API Key - Access the Jira [API tokens](https://id.atlassian.com/manage-profile/security/api-tokens) documentation page for more details about how to generate a Jira API Token.&#x20;
 
 {% hint style="info" %}
 Ensure you have the correct user permissions before creating the API Token.
@@ -220,10 +220,10 @@ The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-
 
 Comply with the following steps before integrating Dynatrace with Snyk AppRisk:
 
-1. Retrieve the `account-uuid` from your Dynatrace account. Navigate to [https://myaccount.dynatrace.com/accounts](https://myaccount.dynatrace.com/accounts) and select the account whose environment you want to integrate into Snyk. Identify the `account-uuid` in the URL and save it for later use.
+1. Retrieve the `account-uuid` from your Dynatrace account. Navigate to the [Dynatrace accounts](https://myaccount.dynatrace.com/accounts) page and select the account whose environment you want to integrate into Snyk. Identify the `account-uuid` in the URL and save it for later use.
 2. Ensure you have OneAgent deployed in your Kubernetes environment. Navigate to `Settings` then `Environments` and select the environment you want to integrate into Snyk. Save the environment ID for later use (available in the URL of the new window as well). Click `Deploy OneAgent` then `Kubernetes` and follow the instructions. Ensure OneAgent is running in full-stack mode.
 3. Ensure your deployment is activated. On your environment's page, click `Kubernetes` , then `Recommendations` and activate the cluster where you deployed OneAgent.
-4. Create an OAuth client with the right permissions. Navigate to [https://myaccount.dynatrace.com/accounts](https://myaccount.dynatrace.com/accounts), then to `Identity & access management`. Select `OAuth clients` and click `Create client`. Fill in the details and check the following permissions; then click `Create client`:
+4. Create an OAuth client with the right permissions. Navigate to the [Dynatrace accounts](https://myaccount.dynatrace.com/accounts) page, then to `Identity & access management`. Select `OAuth clients` and click `Create client`. Fill in the details and check the following permissions; then click `Create client`:
 
 <pre><code><strong>storage:entities:read
 </strong></code></pre>
@@ -265,13 +265,13 @@ The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-
 
 ### Required parameters <a href="#sysdig-required-parameters" id="sysdig-required-parameters"></a>
 
-* **Account API Token** - [Here](https://docs.sysdig.com/en/docs/administration/administration-settings/user-profile-and-password/retrieve-the-sysdig-api-token/) you can find details on how to retrieve your Sysdig API Token.
+* **Account API Token** - Navigate to the [Retrieve the Sysdig API token](https://docs.sysdig.com/en/docs/administration/administration-settings/user-profile-and-password/retrieve-the-sysdig-api-token/) page for details on how to retrieve your Sysdig API Token.
 
 {% hint style="info" %}
 The **Account API Token** must be a **Sysdig Secure API token** and not a **Sysdig Monitor API Token**.&#x20;
 {% endhint %}
 
-* **Region -** [**Here**](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges) you can find details about the Sysdig region URLs.
+* **Region -** Navigate to the Sysdig [SAAS regions and IP ranges](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges) page for details about the Sysdig region URLs.
 
 ### Known limitations
 
