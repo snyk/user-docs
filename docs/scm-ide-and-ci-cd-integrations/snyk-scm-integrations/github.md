@@ -54,8 +54,6 @@ See [Set up an integration](../../getting-started/quickstart/set-up-an-integrati
 
 To see all settings for your GitHub integration, go to the GitHub Integration settings page, then navigate to Organization **Settings**, and select **GitHub** in the **Integrations** section:
 
-<figure><img src="../../.gitbook/assets/Github-integrations-intro.png" alt="GitHub integration settings"><figcaption><p>GitHub integration settings</p></figcaption></figure>
-
 You can then scroll down to the section required, and set the options accordingly:
 
 * [General settings](github.md#github-integration-general-settings)
@@ -76,9 +74,9 @@ You can then scroll down to the section required, and set the options accordingl
 
 Select **General** to view general settings:
 
-<div align="left">
+<div align="center">
 
-<figure><img src="../../.gitbook/assets/Github-integrations-general.png" alt="GitHub general settings" width="563"><figcaption><p>GitHub general settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Github-integrations-general.png" alt="GitHub integration general settings" width="563"><figcaption><p>GitHub integration general settings</p></figcaption></figure>
 
 </div>
 
@@ -144,7 +142,7 @@ This example shows how Snyk PR checks appear on the GitHub pull request page.
 
 You can review and adjust the pull request test settings using the Snyk GitHub Integration settings page in Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
-<div align="left">
+<div align="center">
 
 <figure><img src="../../.gitbook/assets/Github-integrations-PR-request-status-checks.png" alt="Pull request status checks settings" width="563"><figcaption><p>Pull request status checks settings</p></figcaption></figure>
 
@@ -181,7 +179,7 @@ To use this feature, follow these steps:
    You can [generate this from your GitHub account](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 3. Click **Save** to enable this feature.
 
-<div align="left">
+<div align="center">
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (3).png" alt="Set an account to open Snyk PRs" width="563"><figcaption><p>Set an account to open Snyk PRs</p></figcaption></figure>
 
@@ -227,16 +225,14 @@ For pull request assignees, the option **The last user to change the manifest fi
 
 To configure the Auto-assign settings for a specific Project from an imported private repository, follow these steps:
 
-1. In the **Projects** tab for your Organization, select and expand the relevant private repository, select a Target, and click the **Settings** cog.\
-   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (2).png" alt="Settings cog for target settings" data-size="original">\
-   The Project page opens.
+1. In the **Projects** tab for your Organization, select and expand the relevant private repository, select a Target, and click the **Settings** cog. This opens the Project page.
 2. On the Project page, apply unique settings for that specific Project.\
    Select the **Settings** tab in the upper right and the **Github integration** \_\_ option in the left sidebar.
 3. Go to the **Pull request assignees for private repos** section at the bottom of the page and choose to **Inherit from integration settings** or **Customize only for this Project**.
 4. Ensure **Auto-assign PRs for this private Project** is enabled.
 5. Choose to assign PRs to the last user to change the manifest file or named contributors.
 
-<div align="left">
+<div align="center">
 
 <figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure>
 
