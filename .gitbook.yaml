@@ -107,3 +107,4 @@ redirects:
   manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/customize-an-integration: getting-started/snyk-web-ui.md
   scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration: scm-ide-and-ci-cd-integrations/README.md
   scm-ide-and-ci-cd-workflow-and-integrations: scm-ide-and-ci-cd-workflow-and-integrations/README.md
+  scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-vs-bitbucket-cloud-app: scm-ide-and-ci-cd-integrations/README.md
