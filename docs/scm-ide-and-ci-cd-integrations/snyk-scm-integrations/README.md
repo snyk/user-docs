@@ -298,7 +298,7 @@ GitLab account with `Maintainer` permission.
 ### Azure Repositories (TFS) SCM token
 
 **Format**: `AZURE_REPOS_TOKEN=` - an Azure Repos personal access token. \
-**Scopes**: `Custom defined`, \*\* `Code:` \*\* `Read & write`_._
+**Scopes**: `Custom defined`,  `Code:`  `Read & write`_._
 
 ### Bitbucket Server/Data Center SCM token
 
