@@ -177,11 +177,8 @@ Disconnecting the Snyk GitHub Enterprise integration halts all scans for importe
 {% endhint %}
 
 1. Navigate to the Snyk GitHub Enterprise integration **Settings**.
-2.  At the bottom of the page, select **Remove GitHub Enterprise.**\
-
-
-    <figure><img src="../../.gitbook/assets/2023-11-09_15-57-57.png" alt="Remove GitHub Enterprise from your configured Snyk integrations" width="563"><figcaption><p>Remove GitHub Enterprise from your configured Snyk integrations</p></figcaption></figure>
-3.  A confirmation screen opens. To proceed, select **Disconnect GitHub Enterprise**. \
+2. At the bottom of the page, select **Remove GitHub Enterprise.**
+3.  A confirmation modal opens. To proceed, select **Disconnect GitHub Enterprise**. \
 
 
     <figure><img src="../../.gitbook/assets/2023-11-09_17-38-28.png" alt="Confirm disconnecting from GitHub Enterprise" width="375"><figcaption><p>Confirm disconnecting from GitHub Enterprise</p></figcaption></figure>
