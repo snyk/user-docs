@@ -49,7 +49,7 @@ Log in to your Snyk account and navigate to the Integrations section in the Snyk
 
 Select the **GitHub Cloud App** tile.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-02-14 at 10.56.31 (2).png" alt="Source Control integration tiles"><figcaption><p>Source Control integration tiles</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github-cloud-app-tile.png" alt="GitHub Cloud App tile on the Integrations page" width="230"><figcaption><p>GitHub Cloud App tile on the Integrations page</p></figcaption></figure>
 
 In the confirmation modal, select **Configure GitHub Cloud App.**\
 
