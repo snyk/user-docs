@@ -15,8 +15,8 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 An asset in Snyk AppRisk represents a component in the software development lifecycle that may pose a risk. The following asset types are currently available:
 
-* Repository assets [**`Billable`**](../working-with-snyk/what-counts-as-a-test.md#counting-git-repository-integration-scans)
-* Container images [**`Billable`**](../working-with-snyk/what-counts-as-a-test.md)
+* Repository assets [**`Billable`**](../working-with-snyk/how-does-snyk-count-assets.md#billable-assets)
+* Container images [**`Billable`**](../working-with-snyk/how-does-snyk-count-assets.md#billable-assets)
 * Packages
 * Scanned artifacts
 
