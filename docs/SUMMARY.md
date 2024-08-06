@@ -756,7 +756,7 @@
     * [View exploits](manage-risk/prioritize-issues-for-fixing/view-exploits.md)
     * [Malicious packages](manage-risk/prioritize-issues-for-fixing/malicious-packages.md)
     * [Vulnerable conditions](manage-risk/prioritize-issues-for-fixing/vulnerable-conditions.md)
-    * [Reachable vulnerabilities](manage-risk/prioritize-issues-for-fixing/reachable-vulnerabilities.md)
+    * [Reachability](manage-risk/prioritize-issues-for-fixing/reachable-vulnerabilities.md)
     * [Vulnerabilities with Social Trends](manage-risk/prioritize-issues-for-fixing/vulnerabilities-with-social-trends.md)
   * [Policies](manage-risk/policies/README.md)
     * [The .snyk file](manage-risk/policies/the-.snyk-file.md)

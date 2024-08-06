@@ -1,51 +1,58 @@
-# Reachable vulnerabilities
+# Reachability
 
-Snyk reachable vulnerability scanning allows you to gauge risk by identifying whether a function related to the vulnerability is being called by your application, raising the chances of that vulnerability being exploitable in the context of your application.
+Snyk Reachability analysis allows you to analyze risk by identifying whether your application is calling a function related to the vulnerability, raising the chances of that vulnerability being exploitable in the context of your application.
 
-Reachable vulnerabilities can be used as a single signal to make decisions or as part of a broader risk-based prioritization approach, like the Risk Score.&#x20;
+Reachability can be used as a standalone signal to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.&#x20;
 
-The following instructions explain how to set up and use reachable vulnerabilities, as well as provide more information on how reachability analysis works at Snyk.&#x20;
+Snyk uses a combination of program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts.
 
-## Set up reachable vulnerability analysis
+Use the following instructions to set up and use reachability, as well as provide more information on how the underlying analysis works at Snyk.&#x20;
 
-To set up reachable vulnerabilities analysis:&#x20;
+## Set up Reachability
 
-* In the Organization settings, navigate to the Languages section.
-* Navigate to the **Reachable vulnerabilities** section.
-* Activate **Reachable vulnerabilities analysis** and save your changes.
+Follow the next steps to enable reachability and begin analyzing Projects for reachable vulnerabilities:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (9).png" alt="Enabling reachability setting"><figcaption><p>Enabling reachability setting</p></figcaption></figure>
+* In the Organization **Settings**, navigate to the **Languages** section.
+* In the **General** section, find **Reachable vulnerabilities**.
+* Activate **Enable reachable vulnerabilities analysis**.
 
-After it is enabled, reachable vulnerabilities analysis is done as part of scanning Projects.&#x20;
+<figure><img src="../../.gitbook/assets/image (2) (9).png" alt="Enabling reachability setting"><figcaption><p>Enabling Reachability setting</p></figcaption></figure>
+
+After it is enabled, Reachability analysis is done as part of scanning Projects.&#x20;
 
 {% hint style="info" %}
-To update existing Projects with the reachability analysis immediately, trigger a [manual test](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/#manual-pull-and-merge-requests-for-project-code).
+To immediately update existing Projects with Reachability, trigger a [manual test](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/#manual-pull-and-merge-requests-for-project-code).
 {% endhint %}
 
-## Supported languages and integrations for Reachable Vulnerabilities
-
-Reachable vulnerabilities analysis is available for Java (Maven and Gradle) Projects.
+## Supported languages and integrations
 
 {% hint style="warning" %}
 **Release status**&#x20;
 
-Reachability for SCM providers is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
-
-To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
+Reachability is available in [Early Access](../../getting-started/snyk-release-process.md#early-access) for some integrations and languages. To enable the feature in these cases, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
 {% endhint %}
 
-The following integrations are supported for Reachable Vulnerabilities analysis:
+Reachability is supported for the following languages and package managers:
 
-* [GitHub](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)
-* [GitHub Enterprise](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/the-scripts/github-enterprise/)
-* [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md) (in Early Access)
-* [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md) (n Early Access)
-* [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md) (in Early Access)
-* [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md) (in Early Access)
-* [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md) (in Early Access)
+| Language                                                                                                                                                                                             | Package manager | Release status       |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------- |
+| [Java](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/java-and-kotlin)                                                                                                     | Maven, Gradle   | General Availability |
+| [JavaScript](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/javascript), [TypeScript](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/typescript) | npm, Yarn       | Early Access         |
+
+Reachability is supported in the following integrations:
+
+| Integration                                                                                                                                       | Release status       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| [GitHub](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)                                                                    | General Availability |
+| [GitHub Enterprise](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/the-scripts/github-enterprise/) | General Availability |
+| [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)                                              | Early Access         |
+| [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                    | Early Access         |
+| [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)                                                                    | Early Access         |
+| [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                               | Early Access         |
+| [Brokered connections](../../enterprise-configuration/snyk-broker/connections-with-snyk-broker.md)                                                | Early Access         |
 
 {% hint style="info" %}
-Reachable vulnerability analysis using the Snyk CLI, other Git integrations, and other languages is not supported.
+Reachability analysis using the Snyk CLI, IDE, or other integrations is not currently supported.
 {% endhint %}
 
 ## **Enabling Reachability for brokered connections**
@@ -56,16 +63,16 @@ If you use a brokered connection to your SCM, configure the Broker to provide ac
 
 ### Reachability status&#x20;
 
-After a vulnerability is identified, it has a reachability status
+After a vulnerability is identified, it has one of the following reachability statuses:
 
-* Reachable - A direct or indirect path was found from your application to the vulnerable code.
-* No path found - No path found from your application to the vulnerable code.
+* `REACHABLE` - A direct or indirect path was found from your application to the vulnerable code.
+* `NO PATH FOUND` - No path found from your application to the vulnerable code.
 
 {% hint style="info" %}
-If a `no path found` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
+If a `NO PATH FOUND` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
 {% endhint %}
 
-Reachability status is available [on the Project page](reachable-vulnerabilities.md#on-the-project-page), [as part of the Risk Score](reachable-vulnerabilities.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report),  and through the [Get issues by group ID](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues) API.
+Reachability status is available [on the Project page](reachable-vulnerabilities.md#on-the-project-page), [as part of the Risk Score](reachable-vulnerabilities.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the [Get issues ](https://apidocs.snyk.io/?#get-/groups/-group\_id-/issues)API.&#x20;
 
 ### Reachability as shown on the Project page
 
