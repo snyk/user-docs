@@ -49,25 +49,12 @@ Group Access Tokens can only be created by a GitLab Owner using a GitLab Premium
 
 #### Add a GitLab Personal Access Token in GitLab
 
-1.  Generate a GitLab Personal Access Token in a GitLab instance.\
-    Select the profile icon, then **Edit Profile > Access Tokens**.\
-    Set the token name, for example, Snyk, and select the **api** scope.\
-
-
-    <figure><img src="../../.gitbook/assets/2023-08-01_10-31-25.png" alt=""><figcaption><p>Create a GitLab Personal Access Token with the api scope.</p></figcaption></figure>
-2.  Navigate to the Snyk [**Integrations**](https://app.snyk.io/integrations) page, select the GitLab integration tile, and enter the URL of the GitLab instance and the token you generated.\
-
-
-    <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Add the URL of your GitLab instance and the generated Personal access token.</p></figcaption></figure>
+1. Generate a GitLab Personal Access Token in a GitLab instance.\
+   Select the profile icon, then **Edit Profile > Access Tokens**.\
+   Set the token name, for example, Snyk, and select the **api** scope. The **api** scope grants complete read/write access to the API, including all groups and projects, the container registry, and the package registry.
+2. Navigate to the Snyk [**Integrations**](https://app.snyk.io/integrations) page, select the GitLab integration tile, and enter the URL of the GitLab instance and the token you generated.
 3. Click **Save**.
-4.  When the tile on the **Integrations** page indicates the integration is **Configured**, click the tile and select the GitLab projects to test or select **Add projects** from the **Snyk** **Dashboard**.\
-
-
-    <div align="left">
-
-    <figure><img src="../../.gitbook/assets/2023-07-31_14-27-14.png" alt="" width="241"><figcaption><p>The Snyk GitLab integration tile shows as Configured.</p></figcaption></figure>
-
-    </div>
+4. When the tile on the **Integrations** page indicates the integration is **Configured**, click the tile and select the GitLab projects to test or select **Add projects** from the **Snyk** **Dashboard**.
 
 #### Add a GitLab Group Access Token
 
@@ -84,16 +71,11 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 1. Locate the GitLab Group and select **Settings** > **Access Tokens**.
 2. Enter a descriptive token name such as `SnykToken`, select the **Maintainer** role, and check the **api** scope**.**
 
-<figure><img src="../../.gitbook/assets/gitlab_group_token.png" alt="Generate GitLab group access token"><figcaption><p>Generate a GitLab group access token</p></figcaption></figure>
-
 #### Add a GitLab Group Access Token to Snyk
 
 1. Copy the token generated from GitLab.
 2. Navigate to the Snyk GitLab integration page by selecting the tile.
-3.  Paste the GitLab Group Access Token into the Snyk application field the same way you would add a GitLab Personal Access Token.\
-
-
-    <figure><img src="../../.gitbook/assets/2023-08-01_10-19-59.png" alt=""><figcaption><p>Enter your GitLab Group Access Token into the Snyk application Personal access token field.</p></figcaption></figure>
+3. Paste the GitLab Group Access Token into the Snyk application field the same way you would add a GitLab Personal Access Token.
 
 ### **Uses of the GitLab integration**
 
@@ -105,12 +87,6 @@ When viewing a Snyk test report for a Snyk Project that you own or when looking 
 * **Fix this vulnerability:** generate a Snyk merge request on an individual issue that fixes the vulnerability.
 
 You can review the vulnerabilities that will be fixed, change your selection with the checkboxes, and choose to ignore any vulnerabilities that cannot be fixed now before opening the merge request on the **Open a Fix Merge Request** page.
-
-<div align="center">
-
-<figure><img src="../../.gitbook/assets/2023-08-07_11-42-16.png" alt="Open a Fix Merge Request for an individual vulnerability" width="375"><figcaption><p>Open a Fix Merge Request for an individual vulnerability</p></figcaption></figure>
-
-</div>
 
 {% hint style="info" %}
 **GitLab webhooks** send out an event to Snyk when merge requests occur. This starts a series of other events, such as pulling GitLab project files, running the test process, and posting the results to GitLab, all of which occur on the Snyk side.
@@ -136,14 +112,8 @@ Disconnecting the GitLab integration removes all Snyk webhooks, along with the S
 The Projects will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on your pull requests.
 {% endhint %}
 
-1.  Navigate to the Snyk GitLab integration **Settings**.\
-
-
-    <figure><img src="../../.gitbook/assets/2023-08-15_16-32-13.png" alt="Navigate to the Snyk GitLab integration Settings" width="375"><figcaption><p>Navigate to the Snyk GitLab integration Settings</p></figcaption></figure>
-2.  At the bottom of the page, select **Remove GitLab**.\
-
-
-    <figure><img src="../../.gitbook/assets/2023-08-15_15-43-00.png" alt="Remove GitLab from your configured Snyk integrations" width="563"><figcaption><p>Remove GitLab from your configured Snyk integrations</p></figcaption></figure>
+1. Navigate to the Snyk GitLab integration **Settings**.
+2. At the bottom of the page, select **Remove GitLab**.
 3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.\
 
 
