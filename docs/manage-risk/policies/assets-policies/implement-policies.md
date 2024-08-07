@@ -31,7 +31,7 @@ You can run a simulation to get an overview of how the policy is working. A numb
 
 ### Run the policy
 
-All policies are automatically run in a maximum of 30 minutes after creation, then every 30 minutes. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.&#x20;
+All policies are automatically run in a maximum of 30 minutes after creation, then every 3 hours. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.&#x20;
 
 You can also add an **AND** **Send email** or **Send Slack notification** action to be notified after the policy is successfully run.
 

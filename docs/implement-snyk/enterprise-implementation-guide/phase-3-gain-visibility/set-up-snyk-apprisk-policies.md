@@ -46,7 +46,7 @@ Here are the steps for creating a policy:
 
 ### Policy freshness
 
-All policies are automatically run in a maximum of 30 minutes after creation, then every 30 minutes. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.
+All policies are automatically run in a maximum of 30 minutes after creation, then every 3 hours. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.
 
 ### Use cases for policies
 
