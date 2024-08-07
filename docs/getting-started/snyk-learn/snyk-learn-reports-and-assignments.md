@@ -25,3 +25,18 @@ Using Assignments, your company can gain:&#x20;
 * Security: Equip developers with the knowledge to write more secure code, mitigating risks and vulnerabilities.&#x20;
 * Engagement: Promote active participation by providing personalized learning paths.&#x20;
 * Compliance: Get help with meeting regulatory requirements through the timely completion of mandatory training.
+
+### Onboarding New Employees
+Ensure new employees complete their onboarding training within a designated timeframe. Assignments can include mandatory onboarding training content. The provided timeframe determines assignment status. The progress reset feature allows re-onboarding by clearing previous progress.
+
+
+### Annual Security Awareness Training
+Mandate annual security awareness training for all employees. Assignments can span a specific year period and include relevant security education content. The provided timeframe determines assignment status. The admin can use the progress reset feature to reset last year’s progress for the new cycle.
+
+
+### Product Update Training for the Development Team
+Ensure developers are trained on new product features. Admins can create assignments that include product training content on new features. The provided period determines assignment status. The admin can use the progress reset feature if significant updates require re-training.
+
+
+### Compliance Training for New Regulations
+Ensure employees complete training on new regulatory requirements. Admins can create assignments that cover the effective period of new regulations, including content required by compliance. The provided period determines assignment status. The admin can use the progress reset feature to reset previous progress and mandate updated training.
