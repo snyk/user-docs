@@ -20790,7 +20790,7 @@ components:
         severities:
           type: array
           items:
-            $ref: '#/components/schemas/severity2'
+            $ref: '#/components/schemas/severityData'
           description: The list of cvssSources renamed to severities for issueData model
           example:
             - assigner: NVD
@@ -20837,7 +20837,7 @@ components:
           description: Whether the issue is intentional, indicating a malicious package
           example: true
       description: The details of the issue
-    severity2:
+    severityData:
       type: object
       properties:
         assigner:
