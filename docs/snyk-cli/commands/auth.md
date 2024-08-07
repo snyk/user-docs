@@ -12,6 +12,10 @@ Running `$ snyk auth` opens a browser window with prompts to log in to your Snyk
 
 When you have authenticated, you can start using the CLI; see [Getting started with the CLI](https://docs.snyk.io/snyk-cli/getting-started-with-the-cli)
 
+Since 1.1293, Snyk CLI uses OAuth when authenticating through the browser. OAuth provides improved security by issuing shorter-lived expiring authorizations with the convenience of automatic refresh.
+
+Earlier versions of the Snyk CLI (< 1.1293) obtained a non-expiring API token through a legacy browser interaction. This authentication method is deprecated but may be used in the event of problems with OAuth by running `snyk auth --auth-type=token`. Future releases of the CLI will remove this option.
+
 ## Value
 
 In some environments and configurations, you must use the `<API_TOKEN>`; see [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account)
