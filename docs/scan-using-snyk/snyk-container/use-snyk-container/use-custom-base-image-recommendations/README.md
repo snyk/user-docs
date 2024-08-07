@@ -28,7 +28,7 @@ All custom base image recommendations are considered minor upgrades, regardless 
 
 To determine the latest version of a base image across Projects imported into the same repository, Snyk allows configuring a [versioning schema](versioning-schema-for-custom-base-images.md).
 
-The Custom Base Image rRecommendation feature supports Automatic fix PRs. If you are not using the latest version of the base image, then immediately after image import Snyk automatically issues a fix pull request against your Dockerfile to upgrade to the latest available custom base image version.
+The Custom Base Image Recommendation feature supports Automatic fix PRs. If you are not using the latest version of the base image, then immediately after image import Snyk automatically issues a fix pull request against your Dockerfile to upgrade to the latest available custom base image version.
 
 ## **Enable CBIR:** configure an image as a custom base image
 
