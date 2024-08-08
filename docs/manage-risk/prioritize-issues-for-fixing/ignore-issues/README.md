@@ -2,7 +2,7 @@
 
 You can ignore a vulnerability or open-source license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores you can display results only for issues you need to fix
 
-&#x20;For Open Source details, see [How to set ignores](./#how-to-set-ignores). This information provides useful background for using ignores with other Snyk scanning methods. For more information, see the following sections on this page:
+&#x20;For Open Source details, see [How to set ignores](./#how-to-set-ignores). This information provides a useful background for using ignores with other Snyk scanning methods. For more information, see the following sections on this page:
 
 * [Ignore issues in Snyk Code](./#ignore-issues-in-snyk-code)
 * [Ignore issues in Snyk Container](./#ignore-issues-in-snyk-container)
@@ -10,7 +10,7 @@ You can ignore a vulnerability or open-source license issue if you do not need t
 
 ## Decisions to ignore issues
 
-Optimally, it allows you will fix or patch vulnerabilities or remove the vulnerable dependency. However, you may want to suppress an issue for any of the following reasons:
+Optimally, it allows you to fix or patch vulnerabilities or remove vulnerable dependencies. However, you may want to suppress an issue for any of the following reasons:
 
 * There is no fix.
 * The issue is not relevant to the Project. One example is a distributed denial-of-service (DDoS) attack for an internal service.
@@ -31,15 +31,15 @@ You can view and ignore issues in several ways:
 
 Each issue card has an **Ignore** button that opens a dialog where you can select how or why you want to ignore the issue and how long to ignore it.
 
-<figure><img src="../../../.gitbook/assets/ignore-vulnerability-ui-updated.png" alt="Ignore dialog from issue card"><figcaption><p>Ignore dialog from issue card</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (511).png" alt="Ignore dialog from issue card"><figcaption><p>Ignore dialog from issue card</p></figcaption></figure>
 
 You can select **Not vulnerable** for any issue that is not exploitable at the time you create the ignore.
 
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (512).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
 
-This is checked by default if there is currently no fix available for the issue. The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can provide additional details on why you are ignoring the issue.
+This is checked by default if no fix is available for the issue. The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can provide additional details on why you are ignoring the issue.
 
 {% hint style="info" %}
 An issue is ignored until either of these conditions occurs: the ignore period expires, or the vulnerability becomes fixable.
@@ -47,9 +47,9 @@ An issue is ignored until either of these conditions occurs: the ignore period e
 An issue ignored in an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any subsequent [PR checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) across all branches of the Project.
 {% endhint %}
 
-When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit the ignore or unignore the issue.
+When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allows you to edit the ignore or unignore the issue.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (513).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
 For more information, see the training: [Ignoring issues](https://learn.snyk.io/lesson/ignoring-issues/).
 
@@ -82,7 +82,7 @@ Ignores for Open Source issues found in a CLI or CI/CD run are synchronized with
 
 Refer to the following example. Issues are identified as **CI/CLI**, meaning the Project was imported from `snyk monitor`. The issue is **`npmconf`**. It is **Not vulnerable,** and the user can select **Ignore**.
 
-<figure><img src="../../../.gitbook/assets/ignore-vulnerability-snyk-monitor-updated.png" alt="Project imported by snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported by <code>snyk monito</code>r, ignore set in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (514).png" alt="Project imported by snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported by <code>snyk monitor</code>, ignore set in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results before an ignore is set in the Web UI:
 
@@ -169,7 +169,7 @@ For more information, see [IaC ignores using the .snyk policy file](../../../sny
 
 Suppressing vulnerabilities carries a level of risk, so you can make this function available to admins only as follows:
 
-1. Navigate to your Organization **Settings** > **General**, then navigate to the **Ignores** section
+1. Navigate to your Organization **Settings,** then **General**, then navigate to the **Ignores** section.
 2. Under **Ability to ignore an issue or edit the ignore settings on an issue**, select **Admin users only**.\
    This also prevents ignores from being added through the CLI.
 3. Under **Require reason for each ignore**, you can set the **more details** field to be required when an issue is being ignored, so the user must enter a reason for each ignore.
