@@ -51,9 +51,9 @@ To scan your Projects, you must ensure your repository contains the supported ma
 ### Pip and Git repositories
 
 {% hint style="warning" %}
-Private PyPI mirrors are not supported.
+Private PyPI repos and `file://`  URLs are not supported.
 
-`--index-url,` `-i` and URLs in `requirements.txt` files are removed before resolving dependencies.
+`--index-url,` `-i, file://` and regular URLs in `requirements.txt` files are removed before the file is scanned. Any remaining dependencies should be included in the scan as normal.
 {% endhint %}
 
 To scan Pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
