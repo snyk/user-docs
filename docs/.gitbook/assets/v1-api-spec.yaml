@@ -17745,7 +17745,7 @@ components:
         issues:
           type: array
           items:
-            $ref: '#/components/schemas/issues2'
+            $ref: '#/components/schemas/aggregatedProjectIssue'
           description: An array of identified issues
     Aggregatedprojectissuesfilters:
       title: Aggregatedprojectissuesfilters
@@ -17758,7 +17758,7 @@ components:
           type: boolean
           description: If set to `true`, Include issue's introducedThrough, if set to `false` (by default), it won't. It's for container only projects (Non-IaC projects only)
         filters:
-          $ref: '#/components/schemas/filters1'
+          $ref: '#/components/schemas/aggregatedProjectIssuesfilter'
     Issuepaths:
       title: Issuepaths
       type: object
@@ -17777,7 +17777,7 @@ components:
           description: The total number of results
         links:
           allOf:
-            - $ref: '#/components/schemas/links1'
+            - $ref: '#/components/schemas/issuePathsLinks'
             - description: Onward links from this record
     Projectsnapshots:
       title: Projectsnapshots
@@ -19374,8 +19374,8 @@ components:
 
 
             When you filter by multiple attributes, you will return projects which have been assigned values of both attributes in the filter.
-    filters1:
-      title: filters1
+    aggregatedProjectIssuesfilter:
+      title: aggregatedProjectIssuesFilter
       type: object
       properties:
         severities:
@@ -21029,8 +21029,8 @@ components:
             upgradePath:
               - org.apache.flex.blazeds:blazeds@4.7.3
         licenses: []
-    issues2:
-      title: issues2
+    aggregatedProjectIssue:
+      title: aggregatedProjectIssue
       required:
         - id
         - issueType
@@ -22728,8 +22728,8 @@ components:
           type: string
           description: The URL for the dependency paths that introduce this issue
       description: Onward links from this record (Non-IaC projects only)
-    links1:
-      title: links1
+    issuePathsLinks:
+      title: issuePathsLinks
       type: object
       properties:
         prev:
