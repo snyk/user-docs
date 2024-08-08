@@ -47,6 +47,7 @@ You can filter the information for all the inventory layouts and can use the fol
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
+  * **N/A**: There are no commits on the repository.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context was configured.
