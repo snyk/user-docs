@@ -23,7 +23,7 @@ This page explains supported environments, support, and giving feedback and prov
 ## Supported operating systems and architecture
 
 {% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.
 {% endhint %}
 
 You can use the Language Server in the following environments:
@@ -35,13 +35,13 @@ You can use the Language Server in the following environments:
 
 ## Where you can download the Language Server
 
-Currently, Snyk Language Server is automatically downloaded only when you use the Visual Studio Code (VS Code) and Eclipse plugins. Language Server can also be downloaded manually; the following shell script shows how to do that.
+Snyk Language Server is automatically downloaded only when you use the Visual Studio Code (VS Code) and Eclipse plugins. Language Server can also be downloaded manually; the following shell script shows how to do that.
 
 {% code title="getLanguageServer.sh" lineNumbers="true" %}
 ```bash
 #!/bin/bash
 # This file allows you to download the latest language server, which is helpful for integration into non-managed Editors and IDEs.
-# Currently, these might be any editor that does not have a downloader built by Snyk and thus needs to download
+# This might be any editor that does not have a downloader built by Snyk and thus needs to download
 # and update the language server regularly, and this script allows this for system administrators and users.
 # Snyk recommends always using the latest version of the language server.
 
@@ -60,7 +60,7 @@ wget -O /usr/local/bin/snyk-ls "https://static.snyk.io/snyk-ls/$PROTOCOL_VERSION
 ```
 {% endcode %}
 
-The PROTOCOL\_VERSION currently is 3, but may increase with ongoing development.
+The PROTOCOL\_VERSION is 3, but may increase with ongoing development.
 
 ## Configuration of Snyk Language Server
 
@@ -164,7 +164,7 @@ As part of examining the codebase for vulnerabilities, Snyk may automatically ex
 
 To safeguard against using the Language Server on untrusted folders, the Snyk Language Server asks for folder trust before running scans against these folders. When in doubt, do not grant trust.
 
-The trust feature is enabled by default. When a folder is trusted, all sub-folders are also trusted. After a folder is trusted, Snyk Language Server notifies the Language Server Client with the custom `$/snyk.addTrustedFolders` notification, which contains a list of currently trusted folder paths. Based on this, a client can then implement logic to intercept this notification and persist the decision and trust in the IDE or Editor storage mechanism.
+The trust feature is enabled by default. When a folder is trusted, all sub-folders are also trusted. After a folder is trusted, Snyk Language Server notifies the Language Server Client with the custom `$/snyk.addTrustedFolders` notification, which contains a list of trusted folder paths. Based on this, a client can then implement logic to intercept this notification and persist the decision and trust in the IDE or Editor storage mechanism.
 
 Trust dialogs can be disabled by setting `enableTrustedFoldersFeature` to `false` in the initialization options. This disables all trust prompts and checks.
 

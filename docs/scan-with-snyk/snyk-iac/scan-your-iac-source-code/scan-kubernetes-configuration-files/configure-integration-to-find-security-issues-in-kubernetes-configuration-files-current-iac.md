@@ -8,7 +8,7 @@ Snyk tests and monitors Kubernetes configurations stored in your source code rep
 
 ## Supported Git repositories and Kubernetes file formats
 
-Snyk currently scans your Kubernetes configuration files in JSON and YAML format when they are imported from your integrated Git repository.
+Snyk scans your Kubernetes configuration files in JSON and YAML format when they are imported from your integrated Git repository.
 
 ## Configure Snyk to scan Kubernetes configuration files
 
