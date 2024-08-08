@@ -51,9 +51,11 @@ See [Integrate with Snyk](../integrate-with-snyk/) for details.
 
 ## **What does Snyk cost?**
 
-Snyk has several pricing plans available, from free to Enterprise. See [Snyk Pricing Plans](../implement-snyk/enterprise-implementation-guide/trial-limitations.md).
+Snyk has several pricing plans available, from free to Enterprise. See [Snyk Pricing Plans](https://snyk.io/plans/).
+
+Snyk offers a trial of the platform, but this has imposed feature limitations. See [Trial limitations](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations).
 
 ## What happens to my data?
 
-See [How Snyk handles your data](../working-with-snyk/how-snyk-handles-your-data.md) for details of Snyk data handling.&#x20;
+See [How Snyk handles your data](../working-with-snyk/how-snyk-handles-your-data.md) for details of Snyk data handling.
 
