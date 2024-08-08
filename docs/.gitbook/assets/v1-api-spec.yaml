@@ -20785,7 +20785,7 @@ components:
           example: CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
         cvssScore:
           type: number
-          description: The CVSS score that results from running the CVSSv3 string (Non-IaC projects only)
+          description: The CVSS score that results from running the vector from `severities` with the highest CVSS version available.
           example: 3.7
         severities:
           type: array
