@@ -44,8 +44,6 @@ After they are added, Snyk scans the selected repositories for dependency files 
 \
 The imported Projects appear on your Snyk **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/bitbucketserver_add-repos_18july2022.png" alt="Imported Projects on Projects page"><figcaption><p>Imported Projects on Projects page</p></figcaption></figure>
-
 ### Bitbucket DC/Server Integration Features
 
 After the integration is in place, you can use capabilities such as:
@@ -75,9 +73,9 @@ To review and adjust the automatic fix pull request settings:
 1. In Snyk, navigate to **Organization settings** > **Integrations** > **Source control** > **Bitbucket Server**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix PRs** section and configure the relevant options.
 
-<div align="left">
+<div align="center">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.19.09.png" alt="Automatic fix PR settings"><figcaption><p>Automatic fix PR settings </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integ-settings-auto-fix-pr-bitbucket-server.png" alt="Automatic fix PR settings"><figcaption><p>Automatic fix PR settings</p></figcaption></figure>
 
 </div>
 
@@ -136,12 +134,6 @@ To disable this integration, in **Organization settings** > **Integrations**, fo
    \
    The page includes sections specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
 2. Scroll to the relevant section and click **Remove Bitbucket Server.**
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.23.45.png" alt="Disconnect your integration" width="563"><figcaption><p>Disconnect your integration</p></figcaption></figure>
-
-</div>
 
 ### Migration from Bitbucket Server to Bitbucket Data Center
 
