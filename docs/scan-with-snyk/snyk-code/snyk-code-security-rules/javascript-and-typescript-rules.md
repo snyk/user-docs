@@ -48,6 +48,8 @@
 
 **OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
 
+**Autofixable** by DeepCode AI Fix
+
 ## Rule (7) Command Injection
 
 **CWE** (78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
