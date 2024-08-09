@@ -33,6 +33,75 @@ Request failed due to unathorised access. Please read documentation around addin
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations](https://docs.snyk.io/snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations)
 
+### [SNYK-PACKAGES-0001](#snyk-packages-0001)
+
+#### Unsupported ecosystem
+
+The language or package manager is not supported. Please refer to the supported package managers in the documentation.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-open-source-dependencies-with-automatic-prs#supported-languages-and-scms](https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-open-source-dependencies-with-automatic-prs#supported-languages-and-scms)
+
+### [SNYK-PACKAGES-0003](#snyk-packages-0003)
+
+#### Metadata not found
+
+Package metadata not or found or missing.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-private-dependencies-with-automatic-prs#private-packages-api](https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-private-dependencies-with-automatic-prs#private-packages-api)
+
+### [SNYK-PACKAGES-0005](#snyk-packages-0005)
+
+#### No mature versions found for package
+
+Unable to provide a recommended version as no mature versions were found.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-PACKAGES-0006](#snyk-packages-0006)
+
+#### No recommended version found
+
+Unable to provide a recommended version for package using this policy.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-PACKAGES-0007](#snyk-packages-0007)
+
+#### Package is already at latest version
+
+No newer version found for this package, as it is already to latest version.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+
+### [SNYK-PACKAGES-0008](#snyk-packages-0008)
+
+#### Version downgrade is not supported
+
+Unable to suggest a downgrade for a package version.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-PACKAGES-0009](#snyk-packages-0009)
+
+#### Invalid version
+
+Not a valid version for semver format.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+**Help Links:**
+- [https://semver.org/](https://semver.org/)
+
 ### [SNYK-PR-TEMPLATE-0001](#snyk-pr-template-0001)
 
 #### Failed to get pull request attributes
@@ -2355,4 +2424,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-08-08T14:40:10.027Z
+--- Generated at 2024-08-09T06:36:46.309Z
