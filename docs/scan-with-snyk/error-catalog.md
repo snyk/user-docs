@@ -524,17 +524,21 @@ The specified environment cannot be used. As a result, the configuration remains
 
 **HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/commands/config-environment](https://docs.snyk.io/snyk-cli/commands/config-environment)
 
 ### [SNYK-CLI-0002](#snyk-cli-0002)
 
-#### Possible inconsistent configuration detected
+#### Possible inconsistent configuration
 
-There are different ways of configuring the CLI, for example via Environment Variables or configuration file. 
+You can configure the CLI in different ways, for example via Environment Variables or configuration file.
 If one parameter is configured multiple times, it is probably unintentional and might cause unexpected behaviour.
 Review configured environment variables and ensure that everything is intentional. If so, you can skip this check by using --no-check.
 
 **HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/commands/config-environment](https://docs.snyk.io/snyk-cli/commands/config-environment)
 
 ### [SNYK-OS-7001](#snyk-os-7001)
 
@@ -2424,4 +2428,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-08-09T06:36:46.309Z
+--- Generated at 2024-08-09T09:45:13.447Z
