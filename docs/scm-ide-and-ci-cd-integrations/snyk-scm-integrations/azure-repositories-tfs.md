@@ -56,18 +56,13 @@ Generate and copy a unique PAT to use for Snyk. For more information on the PAT 
 ### Integrate using the Snyk Web UI
 
 1. Log in to [your Snyk account](https://app.snyk.io) and navigate to **Integrations**.
-2. On the **Azure Repos** tile, click the settings icon to open **Organization Settings** > **Integrations** > **Azure Repos** > **Account credentials**.\
-   <img src="../../.gitbook/assets/integrations -azure_repo_tile-11aug2022.png" alt="Azure Repos integration tile" data-size="original">
+2. On the **Azure Repos** tile, click the settings icon to open **Organization Settings** > **Integrations** > **Azure Repos** > **Account credentials**.
 3. Pay special attention to the instructions given on the **Account Credentials** page. Depending on your plan, you may need to enter just the Azure DevOps Organization, or you may need to enter the entire URL.
-   *   **Set your organization**: Enter the slug for your Organization only. \
-       For example, enter `your-azure-devops-org`
-
-       <figure><img src="../../.gitbook/assets/image (345) (1).png" alt="If the Organization prompt appears, enter only the &#x27;org slug&#x27; found in your azure URL"><figcaption><p>If the Organization prompt appears, enter only the 'org slug' found in your azure URL</p></figcaption></figure>
-   *   **Set your host**: enter the entire url. \
-       For example, enter `https://dev.azure.com/your-azure-devops-org` \
-       Alternatively, you may enter a custom url that is publicly reachable
-
-       <figure><img src="../../.gitbook/assets/image (344).png" alt="Enterprise customers can provide a custom URL for an Azure Repos Server private instance that is publicly reachable"><figcaption><p>Enterprise customers can provide a custom URL for an Azure Repos Server private instance that is publicly reachable</p></figcaption></figure>
+   * **Set your organization**: Enter the slug for your Organization only. \
+     For example, enter `your-azure-devops-org`
+   * **Set your host**: enter the entire url. \
+     For example, enter `https://dev.azure.com/your-azure-devops-org` \
+     Alternatively, you may enter a custom url that is publicly reachable
 4. Click **Save**, and then enter the PAT that you generated.
 5. Click **Save**.\
    Snyk tests the connection values and the page reloads, displaying the Azure Repos integration information. A message to confirm that the details were updated appears at the top of the screen.
@@ -90,12 +85,6 @@ To add a default Project:
 5. Click **Add selected repositories**.\
    Snyk scans the entire file tree for dependency files and imports them to Snyk as Projects.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png" alt="Import Projects"><figcaption><p>Import Projects</p></figcaption></figure>
-
-</div>
-
 ### Adding custom file locations and excluding folders
 
 #### Add a custom file location
@@ -110,25 +99,13 @@ Use this procedure to add an Azure Repository dependency from a non-default path
 The relative path field is case-sensitive.
 {% endhint %}
 
-<div align="center">
-
-<figure><img src="../../.gitbook/assets/azure_custom_repo-11aug2022.png" alt="Select Azure repos to import" width="563"><figcaption><p>Select Azure repos to import</p></figcaption></figure>
-
-</div>
-
 #### Exclude folders from import
 
 The optional **Exclude folders** field is case-sensitive. The pattern you enter is applied to all the Azure repositories.
 
 ### **Confirming the repository import**
 
-After repositories are imported, a confirmation appears in green at the top of the screen. The selected files are marked with a unique icon and named by Organization and repository. You can filter to view only those Projects, as shown in the example that follows:
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/image (37) (1) (1).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
-
-</div>
+After repositories are imported, a confirmation appears in green at the top of the screen. The selected files are marked with a unique icon and named by Organization and repository. You can filter to view only those Projects by selecting the Azure Repos filter option.
 
 {% hint style="info" %}
 The Azure Repository integration works like the other [Snyk SCM integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../snyk-admin/snyk-projects/) documentation.
