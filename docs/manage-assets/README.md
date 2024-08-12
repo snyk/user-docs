@@ -4,7 +4,7 @@ Snyk defines an asset as an identifiable entity that is part of an application a
 
 ## Inventory overview
 
-The Inventory page from Snyk AppRisk in the Snyk Web UI is structured into Inventory layouts and provide information about your assets:
+The Inventory page in the Snyk Web UI is structured into Inventory layouts and provides information about your assets. Here is a list with all the available inventory layouts:
 
 * **All Assets**: All the discovered assets, grouped by their type.&#x20;
 * **Asset Hierarchy**: Asset Hierarchy layout shows assets in a hierarchical structure. The list of assets is sorted by issue counts, and, where applicable, the package assets are listed underneath the repositories where they are located. Assets hierarchy is visible only when there are no filters applied.
