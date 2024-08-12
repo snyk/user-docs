@@ -15,6 +15,7 @@
     * [Security education on Snyk Learn](getting-started/snyk-learn/security-education-on-snyk-learn.md)
     * [Product training on Snyk Learn](getting-started/snyk-learn/product-training-on-snyk-learn.md)
     * [Snyk Learn Reports and Assignments](getting-started/snyk-learn/snyk-learn-reports-and-assignments.md)
+    * [Snyk Learn Access Controls](getting-started/snyk-learn/snyk-learn-access-controls.md)
   * [Glossary](getting-started/glossary.md)
 * [Supported languages, package managers, and frameworks](supported-languages-package-managers-and-frameworks/README.md)
   * [Technical specifications](supported-languages-package-managers-and-frameworks/technical-specifications.md)
