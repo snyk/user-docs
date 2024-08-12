@@ -177,6 +177,10 @@ Suppressing vulnerabilities carries a level of risk, so you can make this functi
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png" alt="Update ignore settings"><figcaption><p>Update ignore settings</p></figcaption></figure>
 
+{% hint style="warning" %}
+The **Admin users only** Ignore setting applies only to Snyk Organization Admins. This setting is not compatible with custom roles or Group Admins.
+{% endhint %}
+
 ## Using ignores in reports
 
 If you have access to the Snyk Reporting feature, and use the new [Snyk Reports](../../../manage-issues/reporting/available-snyk-reports.md), you can display an Issue Status report showing only the open, ignored issues.
