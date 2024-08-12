@@ -1,10 +1,14 @@
 # Manage assets
 
-Snyk defines an asset as an identifiable entity that is part of an application, and relevant for security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
+Snyk defines an asset as an identifiable entity that is part of an application and relevant to security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
+
+## Inventory overview
+
+The Inventory page from Snyk AppRisk in the Snyk Web UI is structured into Inventory layouts and provide information about your assets:
 
 * **All Assets**: All the discovered assets, grouped by their type.&#x20;
 * **Asset Hierarchy**: Asset Hierarchy layout shows assets in a hierarchical structure. The list of assets is sorted by issue counts, and, where applicable, the package assets are listed underneath the repositories where they are located. Assets hierarchy is visible only when there are no filters applied.
-* **Teams**: SCM repository assets grouped by teams. Note that only SCM organizations with teams, and repositories assigned to a team, appear on this layout.
+* **Teams**: SCM repository assets grouped by teams. Only SCM organizations with teams, and repositories assigned to a team, appear on this layout.
 * **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk AppRisk.
 
 Each inventory layout may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
@@ -58,7 +62,7 @@ You can filter the information for all the inventory layouts and can use the fol
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions.
 {% endhint %}
 
-## Assets and their attributes
+## Assets overview
 
 In the Snyk AppRisk context, you can find information about assets under the following menus: [Inventory](./), [Policies](../manage-risk/policies/assets-policies/), [Insights for Snyk AppRisk](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md), and [Analytics](../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md).&#x20;
 

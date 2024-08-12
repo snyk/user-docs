@@ -36,10 +36,10 @@ You can filter the information for all the inventory layouts and use any of the 
 
 ## Assets and their attributes
 
-Every item listed in the inventory is considered an individual asset. Most assets are actual components of the application (code repositories, domains, endpoints, and so on), but an asset can also be a representation of a Group such as the asset type (repository), a group (certain business unit), or even a product.&#x20;
+Every item listed in the inventory is considered an individual asset. Most assets are actual components of the application (code repositories, domains, endpoints, and so on), but an asset can also represent a Group, such as the asset type (repository), a group (certain business unit), or even a product.&#x20;
 
 {% hint style="warning" %}
-The Issues column is available in a Closed Beta state and is applicable only for Snyk AppRisk Pro. &#x20;
+The Issues column is available in a Closed Beta state and applies only to Snyk AppRisk Pro. &#x20;
 {% endhint %}
 
 Assets in the inventory are presented with key attributes in the following columns:
@@ -49,7 +49,7 @@ Assets in the inventory are presented with key attributes in the following colum
 * **Controls** - A report detailing all products detected by the Snyk AppRisk on a specific repository asset and all products that should be but are not covered by the Snyk AppRisk.
 * **Tags** -  Snyk AppRisk automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository, and repository latest updates. You can also use policies to tag repository assets.
 * **Developers** - Includes the SCM profile details for code committers to the repository asset.
-* **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. The class can be manually changed by you or automatically changed by a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
+* **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. You can manually change the class or automatically change it by applying a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
 * **Source** - Reflects the source of the asset, which can come from Snyk, an SCM, or a third-party integration.
 * **SCM Repository freshness** - Reflects the status of the repository and the date of the last commit.
 
