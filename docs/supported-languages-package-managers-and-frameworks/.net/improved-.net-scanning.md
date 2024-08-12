@@ -3,9 +3,9 @@
 {% hint style="warning" %}
 **Release status**&#x20;
 
-Improved Snyk Open Source scanning for NuGet .NET applications is now available in [Early Access](../../getting-started/snyk-release-process.md#early-access).&#x20;
+Improved Snyk Open Source scanning for NuGet .NET applications is available only to customers on the [Enterprise plan](https://snyk.io/plans/). The feature is in [Early Access](../../getting-started/snyk-release-process.md#early-access).&#x20;
 
-While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations.
+While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations. For more information, see [Enterprise setup](https://docs.snyk.io/enterprise-configuration).
 
 You can report issues by submitting a [support ticket](https://support.snyk.io/hc/en-us/requests/new).
 {% endhint %}
@@ -36,10 +36,6 @@ The .NET scanning improvements are available when importing Projects using Git r
 2. Re-import any repositories with .NET applications; **re-testing existing Projects is not sufficient.**
 
 ### Private package repository integration
-
-{% hint style="info" %}
-This feature is available only to customers on the [Enterprise plan](https://snyk.io/plans/). For more information, see [Enterprise setup](https://docs.snyk.io/enterprise-configuration).
-{% endhint %}
 
 Since the improved .NET solution will build your .NET Project, Snyk requires access to any private NuGet repositories.&#x20;
 
