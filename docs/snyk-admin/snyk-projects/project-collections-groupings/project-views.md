@@ -3,8 +3,11 @@
 On this page you will find information about how to create and use Project views:
 
 * [Create and configure a Project view](project-views.md#create-and-configure-a-project-view)
-* [Share a Project view with another member of your Organization](project-views.md#share-a-project-view-with-another-member-of-your-organization)
 * [View reports on your Projects](project-views.md#view-reports-on-your-projects)
+
+{% hint style="info" %}
+A Project view is visible to all users in the same Organization they were created in.
+{% endhint %}
 
 ## Create and configure a Project view
 
@@ -25,18 +28,6 @@ Your new view is created and automatically selected. Click the icon next to your
 
 5. After applying all the filters you want, click **Save changes** next to the drop-down. Your Project view will be updated.
 6. If you want to configure a Project view, select different filters and click **Save changes** again. You can also discard any changes to a Project view before you save them to return it to its most recent saved state.
-
-## Share a Project view with another member of your Organization
-
-1. From the Project views drop-down, select the Project view you would like to share with another Organization member.
-
-<figure><img src="https://lh6.googleusercontent.com/Q9ArU6RM0vS0V8g2OJjsVtTvO56VAqR1hZHaLUZkljKbh6jhGoJyzgZq9mxnGDCWXzvIaPOysJt5efQ5A5ziQcDASydNEodUGRR7b8O3-i2mgHzLSI-G58vYhKs6bgwRoJR-T1pe6oLWje4JRDFUS5Q" alt="Select Project view"><figcaption><p>Select Project view</p></figcaption></figure>
-
-2. Once the Project view has loaded on the screen, copy the page URL. This URL can be shared with anyone in your Organization.
-
-When you open the link for the view, the Project listing page is organized by the filters applied through the Project view with that URL.
-
-The name of the view will not appear in the Project view drop-down, and other users cannot modify your Project view.
 
 ## View reports on your Projects
 
