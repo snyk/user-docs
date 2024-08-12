@@ -26,24 +26,6 @@ Using Assignments, your company can gain:&#x20;
 * Engagement: Promote active participation by providing personalized learning paths.&#x20;
 * Compliance: Get help with meeting regulatory requirements through the timely completion of mandatory training.
 
-### Use cases for assignments
-
-#### Onboarding new employees
-
-Ensure new employees complete their onboarding training within a designated timeframe. Assignments can include mandatory onboarding training content. The provided timeframe determines assignment status. The progress reset feature allows re-onboarding by clearing previous progress.
-
-#### Annual security awareness training
-
-Mandate annual security awareness training for all employees. Assignments can span a specific year period and include relevant security education content. The provided timeframe determines assignment status. The admin can use the progress reset feature to reset last year’s progress for the new cycle.
-
-#### Product update training for the development team
-
-Ensure developers are trained on new product features. Admins can create assignments that include product training content on new features. The provided period determines assignment status. The admin can use the progress reset feature if significant updates require re-training.
-
-#### Compliance training for new regulations
-
-Ensure employees complete training on new regulatory requirements. Admins can create assignments that cover the effective period of new regulations, including content required by compliance. The provided period determines assignment status. The admin can use the progress reset feature to reset previous progress and mandate updated training.
-
 ### Create new assignments
 
 To create new assignments, log in to Snyk Learn and click on the Assignments page in the account panel dropdown.
@@ -58,33 +40,4 @@ Next, click on the New Assignments button, which will appear on the right-hand s
 
 <figure><img src="../../.gitbook/assets/image (515).png" alt=""><figcaption><p>Clicking on the 'Create new assignments' button in the Assignments Dashboard page</p></figcaption></figure>
 
-You will now reach the New Assignments page which allows an admin to create assignments for Snyk Organization users.
-
-<figure><img src="../../.gitbook/assets/image (525).png" alt=""><figcaption><p>New Assignments page</p></figcaption></figure>
-
-Follow the next steps to create your assignments:
-
-1.  Select an Organization\
-
-
-    <figure><img src="../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
-2.  Select users\
-
-
-    <figure><img src="../../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
-3.  Select content\
-
-
-    <figure><img src="../../.gitbook/assets/image (519).png" alt=""><figcaption></figcaption></figure>
-4.  Set assignment date\
-
-
-    <figure><img src="../../.gitbook/assets/image (520).png" alt=""><figcaption></figcaption></figure>
-5.  Reset user learning progress\
-
-
-    <figure><img src="../../.gitbook/assets/image (521).png" alt=""><figcaption></figcaption></figure>
-6.  Submit assignments\
-
-
-    <figure><img src="../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
+You will now reach the New Assignments page, which allows an admin to create assignments for Snyk Organization users.
