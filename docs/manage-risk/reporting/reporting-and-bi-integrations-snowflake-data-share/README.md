@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 **Release status** \
-Snowflake Data Share is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only for customers:
+Snowflake Data Share is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for customers:
 
 * Under the Enterprise plan. For more information, see [Plans and pricing](https://snyk.io/plans).
 * With an active Snowflake account.
@@ -75,26 +75,12 @@ To get access and be able to query the data share, follow the steps below to cre
 * Snyk shares all the data that is available for the requested Snyk Groups as exists in the Snyk database, with no additional limitations in the data share itself.
 * The data share itself is provided as a read-only database and is accessible according to Snowflake standard role-based access control.
 
-### Supported data <a href="#supported-data" id="supported-data"></a>
+### What Data is Available? <a href="#supported-data" id="supported-data"></a>
 
-Snyk Data Share focuses on issues data. \
-There are over 50 fields available to query, including:&#x20;
-
-* **Issue details:** Issue Type, Issue Severity, Issue Status, CVE, CWE, First/Last Introduced, Computed Fixability, Score, Exploit Maturity, and so on.
-* **Context details:** Organization Name, Project Target, Project Name, Project Origin, etc.
-
-Review the [issue columns dictionary](issue-columns-dictionary.md) to learn more about the Snowflake data share fields that are also available in Snyk Reports.&#x20;
+Snyk's Data Share offering covers a variety of objects which allow for powerful reporting capabilities atop your Snyk Data, including Groups, Orgs, Projects, Issues, Usage Events and Jira Issues.
 
 {% hint style="info" %}
-To allow greater flexibility, the data share includes issues that are unavailable in Snyk reports:
-
-* Deleted issues
-* Issues of Projects that are not monitored
-
-To reach the same figures as presented in Snyk reports, select only issues with:
-
-* DELETED\_AT is NULL
-* IS\_PROJECT\_MONITORED = TRUE
+See the [Data Share Dictionary](data-share-data-dictionary.md) to learn the specifics of Snyks offering.
 {% endhint %}
 
 ### Data freshness <a href="#data-freshness" id="data-freshness"></a>
