@@ -20,7 +20,7 @@ Snyk Learn access controls are available only for Enterprise plans. For more inf
 **Group and Organization Admins** have access to Snyk Learn Reports and Assignments by default without extra permissions.
 {% endhint %}
 
-To **grant permissions** for access to Assignments beyond the default Organization and Group Admin roles, you must [Create a custom role](../../snyk-admin/manage-permissions-and-roles/user-role-management.md#create-a-custom-role) with a set of permissions for assignments. The custom role must have the View Users permission in order for managing assignments to work. The following lists the permissions for managing assignments:
+To **grant permissions** for access to Assignments beyond the default Organization and Group Admin roles, you must create a [custom role](../../snyk-admin/manage-permissions-and-roles/custom-role-templates/snyk-learn-learning-admin.md) with a set of permissions for assignments. The custom role must have the View Users permission in order for managing assignments to work. The following lists the permissions for managing assignments:
 
 * View Organization assignments
 * Edit Organization assignments
