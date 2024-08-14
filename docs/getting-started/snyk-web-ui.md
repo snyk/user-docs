@@ -31,7 +31,7 @@ If you navigate to the Group level and select the Organizations page, you will s
 {% hint style="warning" %}
 The Asset Dashboard menu option is available only for Snyk AppRisk Essentials users.&#x20;
 
-If you use Snyk AppRisk Pro, navigate to the [Application Analytics ](../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md)page.
+If you use Snyk AppRisk Pro, navigate to the [Application Analytics ](../manage-risk/enterprise-analytics/application-analytics.md)page.
 {% endhint %}
 
 On the Snyk AppRisk dashboard page, you can add widgets that display an overview of your application and security controls.

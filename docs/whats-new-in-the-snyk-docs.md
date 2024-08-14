@@ -24,7 +24,7 @@ The most recent updates include significant changes to the user docs, such as fe
   * Policies - [Assets policies](manage-risk/policies/assets-policies/) section
   * Integrations - [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Integrate with Snyk](integrate-with-snyk/#integrations-for-snyk-apprisk) sections
   * Snyk AppRisk - [Scan with Snyk](scan-using-snyk/snyk-apprisk/) section
-  * Analytics - [Manage risk](manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md) section
+  * Analytics - [Manage risk](manage-risk/enterprise-analytics/application-analytics.md) section
 
 ### Snyk Integrations
 

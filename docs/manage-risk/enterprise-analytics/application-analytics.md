@@ -2,19 +2,17 @@
 
 {% hint style="warning" %}
 **Release status** \
-Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro.
+Application Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro.
 {% endhint %}
+
+The Analytics menu, available at the tenant level, under the Application Analytics tab (available only for Snyk AppRisk Pro). Application Analytics is designed to provide an in-depth analysis of your AppSec program, highlighting areas for improvement, emerging risks, and previously overlooked vulnerabilities to support AppSec managers and engineering teams.&#x20;
+
+The dashboard displays essential data such as the status and trends of open issues, control coverage, and repository metadata. It also shows the state of imported assets. It provides a comprehensive and at-a-glance review of information from different viewpoints, such as asset class, application, or team, with a global filter bar to enhance your experience.
 
 ## Overview
 
-{% hint style="info" %}
-Application Analytics is available only for Snyk AppRisk Pro users.&#x20;
-
-If you are using Snyk AppRisk Essentials, navigate to the [asset dashboard](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) page.
-{% endhint %}
-
 Application Analytics enables you to review and explore your AppSec program status and results from a top-down approach. You can start the exploration from a high, general level over applications, teams (owners), or asset classes and then narrow it down to the asset level.\
-You can enhance the security of your application by identifying areas for improvement, recognizing developing risks, and addressing blind spots. The Application Analitycs retrieves the data from all the Groups available for the tenant.
+You can enhance the security of your application by identifying areas for improvement, recognizing developing risks, and addressing blind spots. The Application Analytics retrieves the data from all the Groups available for the tenant.
 
 The following video presents the main functionalities of the Application Analytics:
 
@@ -22,13 +20,17 @@ The following video presents the main functionalities of the Application Analyti
 Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
 {% endembed %}
 
+{% hint style="info" %}
+If you are using Snyk AppRisk Essentials, navigate to the [asset dashboard](../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) page to learn more about your assets or remain on the  [Analytics](issues-analytics.md) page to explore the detected issues.
+{% endhint %}
+
 Harnessing Application Analytics provides answers to questions such as:
 
 * Which sensitive assets are being publicly exposed and not tested according to the coverage policy?
 * Which applications and code owners bear the most risk in terms of accumulated critical and high issues, and how do they compare to others?
 * How many repositories exist without a clear association to an application or a code owner? And are new assets being associated as expected?
 
-<figure><img src="../../../.gitbook/assets/Analytics1.png" alt="Application Analytics Overview"><figcaption><p>Application Analytics Overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Analytics1.png" alt="Application Analytics Overview"><figcaption><p>Application Analytics Overview</p></figcaption></figure>
 
 ## Filters and views <a href="#filters-and-views" id="filters-and-views"></a>
 
@@ -50,10 +52,6 @@ Here are the available filters:
 | Issue severity                                                                                                                                                       | Provides a list with all available types of severity for an issue. The default setting provides information about issues with Critical and High severity.                                                                                                                                                                                                                                                                                                                                                                                              |
 | <p>Add filter</p><ul><li>Asset type</li><li>Asset classes</li><li>Assets application</li><li>Assets owner</li><li>Asset risk factors</li><li>Issues source</li></ul> | <p>You can add filters for a more customized data analysis. </p><ul><li>Asset type - filter by the asset type (Container image, Repository)</li><li>Asset classes - filter by the asset class (A, B, C, D)</li><li>Assets application - filter by the application for which you want to see the assets</li><li>Assets owner - filter by the repository owner of the analyzed assets</li><li>Asset risk factors - filter by specific risk factors of the analyzed assets </li><li>Issues source - filter by the source of the analyzed issues</li></ul> |
 | Reset filters                                                                                                                                                        | Resets the filters to the default state                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-
-Every newly added filter is displayed next to the default ones, the Asset group and Issue Severity filter.
-
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Default filters</strong></td><td><img src="../../../.gitbook/assets/analytics2.png" alt=""></td><td></td></tr><tr><td><strong>Customized filters</strong></td><td><img src="../../../.gitbook/assets/analytics3.png" alt=""></td><td></td></tr></tbody></table>
 
 ### Views
 
@@ -84,7 +82,7 @@ The widgets display the top five applications or code owners based on the contex
 You can also compare specific applications or owners by adding the application or owner display views.
 {% endhint %}
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>View by: Asset Class</strong><img src="../../../.gitbook/assets/analytics4.png" alt="Application Analytics - View by: Asset Class"></td><td></td><td></td></tr><tr><td><strong>View by: Application</strong><img src="../../../.gitbook/assets/analytics5.png" alt="Application Analytics - View by: Application"></td><td></td><td></td></tr><tr><td><strong>View by: Owner</strong> <img src="../../../.gitbook/assets/analytics6.png" alt="Application Analytics - View by: Owner"></td><td></td><td></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>View by: Asset Class</strong><img src="../../.gitbook/assets/analytics4.png" alt="Application Analytics - View by: Asset Class"></td><td></td><td></td></tr><tr><td><strong>View by: Application</strong><img src="../../.gitbook/assets/analytics5.png" alt="Application Analytics - View by: Application"></td><td></td><td></td></tr><tr><td><strong>View by: Owner</strong> <img src="../../.gitbook/assets/analytics6.png" alt="Application Analytics - View by: Owner"></td><td></td><td></td></tr></tbody></table>
 
 Assets and applications vary in importance and sensitivity. Some repositories are internal and used for testing only, while others are public-facing and used in key services.
 
@@ -98,7 +96,7 @@ To associate assets with asset class, you can either change the asset class manu
 
 #### Applications and Owner view <a href="#applications-and-owners-view" id="applications-and-owners-view"></a>
 
-You can filter the data from your Application Analytics dashboard based on application or code owner. To proceed, it is necessary to have the appropriate metadata available for the repositories. The metadata can be pulled directly from the Snyk SCM integration. You can find details of how to set this up on the [Backstage catalog in Asset Inventory](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md#backstage-catalog-in-asset-inventory) page. \
+You can filter the data from your Application Analytics dashboard based on application or code owner. To proceed, it is necessary to have the appropriate metadata available for the repositories. The metadata can be pulled directly from the Snyk SCM integration. You can find details of how to set this up on the [Backstage catalog in Asset Inventory](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md#backstage-catalog-in-asset-inventory) page. \
 To determine if this metadata is available in your repositories, check the completeness widget for repository metadata. Snyk recommends verifying that all class A assets are properly configured by using the asset class filter from the dashboard.&#x20;
 
 ### Analytics timeframe
@@ -112,6 +110,10 @@ You can select a specific timeframe for the assets analyzed data. The default se
 * Last 365 days
 * Month to Date
 * Year to Date
+
+{% hint style="info" %}
+The data in Application Analytics is updated on an hourly basis.
+{% endhint %}
 
 ## Data categories <a href="#data-categories" id="data-categories"></a>
 
@@ -130,13 +132,13 @@ In the Issues section, you have information about the analyzed open issues.
 
 You can choose to view the issues based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Issues section - View by: Asset Class</strong></td><td><img src="../../../.gitbook/assets/image (410).png" alt="Application Analytics - Issues section - View by: Asset class" data-size="original"></td><td></td></tr><tr><td><strong>Issues section - View by: Application</strong></td><td><img src="../../../.gitbook/assets/image (424).png" alt="Application Analytics - Issues section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Issues section - View by: Owner</strong></td><td><img src="../../../.gitbook/assets/image (406).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Issues section - View by: Asset Class</strong></td><td><img src="../../.gitbook/assets/image (410).png" alt="Application Analytics - Issues section - View by: Asset class" data-size="original"></td><td></td></tr><tr><td><strong>Issues section - View by: Application</strong></td><td><img src="../../.gitbook/assets/image (424).png" alt="Application Analytics - Issues section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Issues section - View by: Owner</strong></td><td><img src="../../.gitbook/assets/image (406).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
 
 You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to control the zoom, select a specific area, or download it as an image. You can also use the scroll option for graphics that present data for an extensive time period.
 
 ### Coverage
 
-AppSec teams struggle with maintaining an accurate asset inventory view. To achieve this view, you must establish a [coverage policy](../../policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md) and ensure that security tests are configured based on the policy criteria. Then you need to examine your scanned assets, starting with critical assets (by asset class) that are deployed and public-facing.
+AppSec teams struggle with maintaining an accurate asset inventory view. To achieve this view, you must establish a [coverage policy](../policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md) and ensure that security tests are configured based on the policy criteria. Then you need to examine your scanned assets, starting with critical assets (by asset class) that are deployed and public-facing.
 
 In the Coverage section, you have information about the assets coverage.&#x20;
 
@@ -146,7 +148,7 @@ In the Coverage section, you have information about the assets coverage.&#x20;
 
 You can choose to view the Coverage section based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><p><strong>Coverage section - View by: Asset Class</strong></p><p><img src="../../../.gitbook/assets/analytics7.png" alt="Application Analytics - Coverage section - View by: Asset Class"></p></td><td></td><td></td></tr><tr><td><strong>Coverage section - View by: Application</strong></td><td><img src="../../../.gitbook/assets/analytics8.png" alt="Application Analytics - Coverage section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Coverage section - View by: Owner</strong></td><td><img src="../../../.gitbook/assets/analytics9.png" alt="Application Analytics - Coverage section - View by: Owner" data-size="original"></td><td></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><p><strong>Coverage section - View by: Asset Class</strong></p><p><img src="../../.gitbook/assets/analytics7.png" alt="Application Analytics - Coverage section - View by: Asset Class"></p></td><td></td><td></td></tr><tr><td><strong>Coverage section - View by: Application</strong></td><td><img src="../../.gitbook/assets/analytics8.png" alt="Application Analytics - Coverage section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Coverage section - View by: Owner</strong></td><td><img src="../../.gitbook/assets/analytics9.png" alt="Application Analytics - Coverage section - View by: Owner" data-size="original"></td><td></td></tr></tbody></table>
 
 You can see more details about the **Risk factors and coverage** graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to control the zoom, select a specific area, or download it as an image. You can also use the scroll option for graphics that present data for an extensive time period.
 
@@ -160,7 +162,7 @@ In the Assets section, you have information about the analyzed assets.
 
 You can choose to view the Assets section based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Assets section - View by: Asset Class</strong></td><td><img src="../../../.gitbook/assets/image (407).png" alt="Application Analytics - Assets section - View by: Asset Class" data-size="original"></td><td></td></tr><tr><td><strong>Assets section - View by: Application</strong></td><td><img src="../../../.gitbook/assets/image (408).png" alt="Application Analytics - Assets section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Assets section - View by: Owner</strong></td><td><img src="../../../.gitbook/assets/image (409).png" alt="Application Analytics - Assets section - View by: Owner" data-size="original"></td><td></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Assets section - View by: Asset Class</strong></td><td><img src="../../.gitbook/assets/image (407).png" alt="Application Analytics - Assets section - View by: Asset Class" data-size="original"></td><td></td></tr><tr><td><strong>Assets section - View by: Application</strong></td><td><img src="../../.gitbook/assets/image (408).png" alt="Application Analytics - Assets section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Assets section - View by: Owner</strong></td><td><img src="../../.gitbook/assets/image (409).png" alt="Application Analytics - Assets section - View by: Owner" data-size="original"></td><td></td></tr></tbody></table>
 
 You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to control the zoom, select a specific area, or download it as an image. You can also use the scroll option for graphics that present data for an extensive time period.
 

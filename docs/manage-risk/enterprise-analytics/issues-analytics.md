@@ -1,19 +1,32 @@
-# Enterprise Analytics
+# Issues - Analytics
 
 {% hint style="warning" %}
-**Release status**\
-Enterprise Analytics is in [Closed Beta](../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
+**Release status** \
+Issues Analytics is currently in Early Access and available only for Snyk Enterprise.
 {% endhint %}
 
-Enterprise Analytics provides executives as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
+Issues Analytics takes an opinionated approach, focusing teams on a relatively recent view of the most important metrics available for critical and high-severity issues in a 90-day lookback period. These static filters are displayed at the top of the page.
+
+The Issues Analytics are focused on metrics for the following products:
+
+* Snyk Open Source
+* Snyk Code
+* Snyk Container
+* Snyk IaC
+
+You can select the Groups and Organizations that will be included in the analysis.
+
+Metrics are organized within the pillars of the AppSec performance framework. It is critical to understand both the current state of metrics and the trend to identify anomalies or patterns that contradict expectations.
+
+Issues Analytics is designed to make a top-level metric and its associated trend for each pillar visible at all times to support a quick understanding of the state of the program. You can navigate to a more granular view of each tab as needed. Different pillars and metrics on these views may be more or less relevant at different times to different companies, business units, products, teams, and any other participants.&#x20;
+
+Use the tooltips throughout the pages of the Issues Analytics application for explanations of metrics and terms.
+
+You can filter Issues Analytics on Groups or Organizations manually, as needed.
 
 {% hint style="info" %}
-Data is refreshed in Enterprise Analytics daily, approximately between 13:00 and 14:00 UTC.
+Data is refreshed in Issues Analytics daily, approximately between 13:00 and 14:00 UTC.
 {% endhint %}
-
-The following is an example of the Enterprise Analytics dashboard showing AppSec performance for your Groups and Organizations.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (393).png" alt="Enterprise Analytics performance dashboard"><figcaption><p>Enterprise Analytics performance dashboard</p></figcaption></figure>
 
 ## AppSec performance framework
 
@@ -27,7 +40,7 @@ The Exposure pillar represents a view of the risk to the assets that make up you
 
 ### Manage
 
-The Manage pillar represents a view of how your business is managing issues that impact monitored assets that make up your applications. Rather than looking at existing risk, this provides a look at the patterns of behavior of teams in addressing the resolution or acceptance of, or deferral of, action on risk that manifests itself in monitored assets.
+The Manage pillar represents how your business manages issues impacting monitored assets that make up your applications. Rather than looking at existing risk, this provides a look at the patterns of behavior of teams in addressing the resolution or acceptance of, or deferral of, action on risk that manifests itself in monitored assets.
 
 ### Prevention
 
@@ -43,7 +56,7 @@ When you are assessing exposure to risk only, you need not be concerned with how
 
 However, when you are evaluating the performance of an AppSec program, you must understand how an issue was introduced so you can stay ahead of attacks and be prepared for the next audit or attack defense.
 
-Issues are categorized as follows.
+Issues are categorized as follows:
 
 ### Baseline issues
 
@@ -61,7 +74,7 @@ Any issues identified in a Project after the first day of monitoring are conside
 
 Preventable issues could have been identified and remediated earlier in the SDLC if developers had taken greater advantage of available shift-left tooling and processes.
 
-Issues can be prevented by developers' taking advantage of Snyk Learn, leveraging the IDE plug-ins, activating PR checks, running `snyk test` locally in the CLI, breaking the build, or taking any other available actions for catching issues pre-production. If Snyk knows about an issue, a test can catch it. Other actions to stop preventable issues from getting into production environments include increasing the threshold for what breaks a build from `critical` to `critical` and `high` severity issues, or more strictly refraining from approving PRs that fail a Snyk test.
+Issues can be prevented by developers taking advantage of Snyk Learn, leveraging the IDE plug-ins, activating PR checks, running `snyk test` locally in the CLI, breaking the build, or taking any other available actions for catching issues pre-production. If Snyk knows about an issue, a test can catch it. You can stop preventable issues from getting into production environments by increasing the threshold for what breaks a build. You can increase the threshold from only `critical` issues, to `critical` and `high` issues, or strictly refrain from approving PRs that fail a Snyk test.
 
 Issues are categorized as Preventable if the problem was known to Snyk at least seven days before the detection of the issue. While it is possible that introducing an issue could have been prevented within the seven-day interval, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
 
@@ -79,22 +92,10 @@ There may be a repository that has not been modified in months or years, but bec
 
 Issues are categorized as Non-preventable if the issue is detected within seven days of becoming known to Snyk. This could include a new vulnerability in a dependency already in use or a vulnerability disclosed in the same time frame as the dependency was introduced to the Project. While it is possible that introducing an issue could have been prevented within the seven-day period, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
 
-<figure><img src="../../.gitbook/assets/image (394).png" alt="Example of dates an issue was identified, categorized as Non-preventable and Preventable"><figcaption><p>Example of dates an issue was identified, categorized as Non-preventable and Preventable</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (401).png" alt=""><figcaption></figcaption></figure>
 
 ### Other new issues
 
 Not all issues can be easily categorized as Preventable or Non-preventable within Snyk today. The key inputs to this determination are the dates the issue and problem were identified. If either is in question, the issue will be categorized as **Other new**.
 
 Currently, all Snyk Code and Snyk IaC issues will be labeled as **Other new**. Open Source license issues will also be categorized as **Other new**.
-
-## Enterprise Analytics metrics and filters
-
-Enterprise Analytics takes an opinionated approach, focusing teams on a relatively recent view of the most important metrics available for critical and high-severity issues in a 90-day lookback period. These static filters are displayed at the top of the page.
-
-Metrics are organized within the pillars of the AppSec performance framework. It is critical to understand both the current state of metrics and the trend so you can identify anomalies or patterns that contradict expectations.
-
-Enterprise Analytics is designed to make a top-level metric and its associated trend for each pillar visible at all times to support a quick understanding of the state of the program. You can navigate to a more granular view of each tab as needed. Different pillars and metrics on these views may be more or less relevant at different times to different companies, business units, products, teams, and any other participants.&#x20;
-
-Use the tooltips throughout the pages of the Enterprise Analytics application for explanations of metrics and terms.
-
-You can filter Enterprise Analytics on Groups or Organizations manually as needed.

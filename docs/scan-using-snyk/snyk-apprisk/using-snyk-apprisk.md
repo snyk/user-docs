@@ -55,7 +55,7 @@ Here are the Snyk AppRisk features available from the Snyk Web UI:&#x20;
 * [Issues](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) - the insights presented on the issues page provide a centralized view of all the issues identified by Snyk with additional asset context.
 * [Policies](../../manage-risk/policies/assets-policies/) - allows you to automate the process of adding business context and receiving notifications.
 * [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [third-party integrations](../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md) - provides information about all active integrations, and allows you to set up new ones.
-* [Analytics](../../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md) - enables you to review and explore your AppSec program status and results from a top-down approach.
+* [Analytics](../../manage-risk/enterprise-analytics/application-analytics.md) - enables you to review and explore your AppSec program status and results from a top-down approach.
 
 ## Key Concepts
 
@@ -92,6 +92,6 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
 {% hint style="info" %}
 The Asset Dashboard menu option is available only for Snyk AppRisk Essentials users.&#x20;
 
-If you are using Snyk AppRisk Pro, navigate to the [Application Analytics ](../../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md)page.\
+If you are using Snyk AppRisk Pro, navigate to the [Application Analytics ](../../manage-risk/enterprise-analytics/application-analytics.md)page.\
 
 {% endhint %}

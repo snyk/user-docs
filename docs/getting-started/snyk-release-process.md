@@ -19,7 +19,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Customize PR templates](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/)
 * [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 * [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
-* [Enterprise Analytics](../manage-risk/enterprise-analytics/)
+* [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md)
 * [Snyk Code - Clone capability with Broker for Docker](../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
 
 ## Early Access
@@ -38,7 +38,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
 * [Snyk broker commit signing](../enterprise-configuration/snyk-broker/snyk-broker-commit-signing.md)
 * [Improved .NET scanning](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
-* [Reachability](../manage-risk/prioritize-issues-for-fixing/reachable-vulnerabilities.md)
+* [Issues Analytics](../manage-risk/enterprise-analytics/issues-analytics.md)
 
 ## General Availability
 

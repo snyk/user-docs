@@ -29,7 +29,7 @@ On top of the Snyk AppRisk Essentials features, Snyk AppRisk Pro offers:
 
 * [**Integrations**](../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md) with non-Snyk products to support security coverage and Insights use cases
 * [**Insights**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) for runtime context - providing risk factors to help with risk-based prioritization.
-* [**Analytics**](../../manage-risk/enterprise-analytics/aspm-analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
+* [**Analytics**](../../manage-risk/enterprise-analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
 ## Using Snyk AppRisk Essentials and Snyk AppRisk Pro
 
