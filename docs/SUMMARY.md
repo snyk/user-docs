@@ -833,6 +833,7 @@
       * [Legal Advisor role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/legal-advisor-role-template.md)
       * [CLI Tester role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/cli-tester-role-template.md)
       * [Read-only CLI Tester role template](snyk-admin/manage-permissions-and-roles/custom-role-templates/read-only-cli-tester-role-template.md)
+      * [Snyk Learn - Learning Admin](snyk-admin/manage-permissions-and-roles/custom-role-templates/snyk-learn-learning-admin.md)
   * [User management with the Snyk API](snyk-admin/user-management-with-the-snyk-api/README.md)
     * [Provision users to Organizations using the V1 API](snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-v1-api.md)
     * [Update member roles using the V1 API](snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md)

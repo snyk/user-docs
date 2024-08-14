@@ -17,3 +17,4 @@ You can use these templates to create your own custom roles that fit into and re
 * [Legal Advisor](legal-advisor-role-template.md)
 * [CLI Tester](cli-tester-role-template.md)
 * [Read-only CLI Tester](read-only-cli-tester-role-template.md)
+* Snyk Learn Admin
