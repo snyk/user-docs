@@ -1,12 +1,10 @@
 # Example: Setting up custom mapping for Entra ID
 
-The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD) using [Legacy custom mapping](../legacy-custom-mapping.md).
+The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD).
 
 {% hint style="info" %}
 See the [Entra ID Enterprise Application example](../../configure-self-serve-single-sign-on-sso/azure-ad-enterprise-application-setup.md) for guidance setting up the initial Enterprise application.
-{% endhint %}
 
-{% hint style="info" %}
 Any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact, as self-serve SSO does not accommodate custom mapping.
 {% endhint %}
 
