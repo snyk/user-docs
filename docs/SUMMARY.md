@@ -91,7 +91,7 @@
         * [Example: Setting up custom mapping for Entra ID](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-entra-id.md)
         * [Example: Setting up custom mapping for Ping Identity](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-ping-identity.md)
         * [Example: Setting up custom mapping for Google Workspace](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-google-workspace.md)
-        * [Example: Setting up custom mapping for an Okta OIDC app](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-oidc-okta-app-with-custom-claims.md)
+        * [Example: Setting up custom mapping for an Okta OIDC app](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-an-okta-oidc-app.md)
         * [Example: Setting up custom mapping for OneLogin](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-onelogin.md)
     * [Identity Provider (IdP) migration](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/identity-provider-idp-migration.md)
   * [Service accounts](enterprise-configuration/service-accounts/README.md)
