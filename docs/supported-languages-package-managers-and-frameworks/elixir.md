@@ -14,10 +14,7 @@
 
 **Test your app's packages**: Available, `pkg:hex`
 
-**Features**:&#x20;
-
-* License scanning
-* Reports
+**Feature:** Reports
 
 ## Snyk CLI for Elixir
 
