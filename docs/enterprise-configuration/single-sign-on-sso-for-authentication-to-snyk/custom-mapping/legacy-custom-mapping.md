@@ -25,7 +25,7 @@ snyk-{orgslug}-{role}
   * Note: `orgslug` can be a value of up to 60 characters.
 * **role**:
   * If you are using standard roles, `{role}` should be either `collaborator` or `admin`**.**
-  * Custom Role can also be used for `{role}` and should use the normalized name. See [Roles in custom SSO](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md#roles-in-custom-sso) for more details.
+  * Custom Role can also be used for `{role}` and should use the normalized name. See [Roles in custom SSO](../../../snyk-admin/user-roles/user-role-management.md#roles-in-custom-sso) for more details.
 
 {% hint style="info" %}
 Users must only have one role mapped per Organization. Mapping multiple roles for an Organization is not supported and can lead to unexpected behavior.

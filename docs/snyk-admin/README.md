@@ -5,7 +5,7 @@ Snyk administration encompasses the following functions:
 * [Manage Groups and Organizations](groups-and-organizations/)
 * [Manage and use Snyk Projects](snyk-projects/)
 * [Manage users in Organizations](groups-and-organizations/organizations/manage-users-in-organizations.md) and [Groups](groups-and-organizations/groups/manage-users-in-a-group.md)
-* [Manage user roles](manage-permissions-and-roles/)
+* [Manage user roles](user-roles/)
 * [Manage notifications](manage-notifications.md)
 * [Manage settings](groups-and-organizations/group-and-organization-settings.md)
 
@@ -44,7 +44,7 @@ Snyk has the following types of pre-defined users:
 * Group Viewer
 * Group Member
 
-See [Pre-defined roles](manage-permissions-and-roles/pre-defined-roles.md) for more details, including the permissions associated with each role.
+See [Pre-defined roles](user-roles/pre-defined-roles.md) for more details, including the permissions associated with each role.
 
 {% hint style="warning" %}
 **Feature availability**
@@ -60,7 +60,7 @@ Snyk provides tools to manage Groups, Organizations, and user roles and permissi
 
 ### Manage users and permissions
 
-You can manage users and permissions in your Groups. For details, see [Manage users and permissions](manage-permissions-and-roles/user-role-management.md).
+You can manage users and permissions in your Groups. For details, see [Manage users and permissions](user-roles/user-role-management.md).
 
 <figure><img src="../.gitbook/assets/image (245) (1) (1) (1).png" alt="Manage members interface"><figcaption><p>Manage members interface</p></figcaption></figure>
 

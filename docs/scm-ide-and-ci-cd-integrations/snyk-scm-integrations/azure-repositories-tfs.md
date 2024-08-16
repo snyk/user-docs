@@ -20,7 +20,7 @@ Snyk supports only Git. Snyk does not currently support integration with Team Fo
 
 ### Prerequisites for Azure Repositories (TFS) integration
 
-* [Snyk Organization Admin](../../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md) user role.
+* [Snyk Organization Admin](../../snyk-admin/user-roles/pre-defined-roles.md) user role.
 * An Azure project. If you do not have a project yet, create one in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) or set one up in an [on-premise Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops) instance.
 * The required Personal Access Token (PAT) access scopes. For details on the permissions required, see [Azure Repositories (TFS) permission requirements](./#azure-repositories-tfs-permission-requirements).
 

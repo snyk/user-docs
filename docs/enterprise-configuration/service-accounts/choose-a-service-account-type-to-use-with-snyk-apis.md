@@ -4,4 +4,4 @@ For certain Snyk API calls you must authenticate using an Organization or Group 
 
 For example, use a Group service account token to call Group API endpoints and Organization API endpoints for all Organizations in the Group.
 
-The Snyk API uses the same roles as the Snyk Web UI applications. Each Snyk action requires a set of user permissions to be present. For details, see [User roles](../../snyk-admin/manage-permissions-and-roles/).
+The Snyk API uses the same roles as the Snyk Web UI applications. Each Snyk action requires a set of user permissions to be present. For details, see [User roles](../../snyk-admin/user-roles/).

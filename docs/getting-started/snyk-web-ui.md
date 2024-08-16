@@ -242,7 +242,7 @@ Select **Members** from the navigation on the Dashboard to view and manage users
 The Members page is available at both Group and Organization level.
 
 {% hint style="warning" %}
-You must be assigned the [required Admin roles and permissions](../snyk-admin/manage-permissions-and-roles/pre-defined-roles.md) to make changes to the **Members** tab.
+You must be assigned the [required Admin roles and permissions](../snyk-admin/user-roles/pre-defined-roles.md) to make changes to the **Members** tab.
 {% endhint %}
 
 ### Snyk Organization or Group Settings

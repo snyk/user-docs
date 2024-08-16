@@ -34,7 +34,7 @@ If you are not creating a separate Snyk Organization, continue with the next ste
 
 ### Step 2: Create a new role
 
-Follow the steps in this documentation to [create a new role](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md#create-a-role).
+Follow the steps in this documentation to [create a new role](../../../snyk-admin/user-roles/user-role-management.md#create-a-role).
 
 This example illustrates creating a new role called **Kubernetes connector**
 
@@ -42,7 +42,7 @@ This example illustrates creating a new role called **Kubernetes connector**
 
 ### Step 3: Assign permissions to this role
 
-Navigate to the newly created role and [select edit](../../../snyk-admin/manage-permissions-and-roles/user-role-management.md#edit-a-role); you will also be taken to this page immediately after creating the role.&#x20;
+Navigate to the newly created role and [select edit](../../../snyk-admin/user-roles/user-role-management.md#edit-a-role); you will also be taken to this page immediately after creating the role.&#x20;
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.&#x20;
 

@@ -3,7 +3,7 @@
 In the **Organization** where you want to manage users, select the **Members** menu option.
 
 {% hint style="info" %}
-You must have the permissions required to perform these tasks. For details, see [Pre-defined user roles](../../manage-permissions-and-roles/pre-defined-roles.md) for a list of permissions.
+You must have the permissions required to perform these tasks. For details, see [Pre-defined user roles](../../user-roles/pre-defined-roles.md) for a list of permissions.
 {% endhint %}
 
 ## Add users
@@ -22,7 +22,7 @@ You can do the following on the **Add members** screen:
 * Select **Add existing members** to add existing members of your Group to the Organization. Select the users when prompted and click **Invite members.**
 * For Free plan users only:\
   Select **Invite by link** to send a link; click **Copy link** and send the link yourself.
-* Use the **New members join as** dropdown to define the default role of a user when joining, such as **Org admin**. For details, see [Manage permissions](../../manage-permissions-and-roles/pre-defined-roles.md).
+* Use the **New members join as** dropdown to define the default role of a user when joining, such as **Org admin**. For details, see [Manage permissions](../../user-roles/pre-defined-roles.md).
 
 For a demonstration of adding users, view this video:
 
