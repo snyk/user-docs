@@ -991,7 +991,7 @@ Template parameters:
 * Name - The name of the argument.
 * Value - The value the named argument should have.
 
-#### Identifier
+#### Identifier (deprecated)
 
 Matches on an identifier.
 
