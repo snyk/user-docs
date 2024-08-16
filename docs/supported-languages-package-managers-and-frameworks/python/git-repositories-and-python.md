@@ -64,6 +64,10 @@ Snyk imports any file that follows the `**/*req*.txt` pattern. This can help if 
 
 Snyk also looks for files using the `**/requirements/*.txt` pattern. This can help if you have placed your files in a `requirements` folder, for example, `requirements/requirements.txt`.
 
+{% hint style="warning" %}
+Python packages that are open-source specific and not supported by Linux may not be compatible with Snyk SCM scans, leading to errors.
+{% endhint %}
+
 If you are using a package manager that creates different manifest file formats from `requirements.txt`, then you may be able to convert or export the manifest file to the `requirements.txt` format.
 
 An example follows of how `dephell` is used to convert from Conda `environments.yml` to a `requirements.txt`.
