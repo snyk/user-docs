@@ -45,6 +45,13 @@ The GitHub Cloud App improves on many features as compared to the current GitHub
 
 ### How to set up the GitHub Cloud App
 
+{% hint style="warning" %}
+When setting up the GitHub Cloud App, you can only implement one of the following scenarios:
+
+* One GitHub organization connected to one Snyk Organization
+* One GitHub organization connected to multiple Snyk Organizations
+{% endhint %}
+
 Log in to your Snyk account and navigate to the Integrations section in the Snyk Organization where you would like to set up the GitHub Cloud App.
 
 Select the **GitHub Cloud App** tile.
