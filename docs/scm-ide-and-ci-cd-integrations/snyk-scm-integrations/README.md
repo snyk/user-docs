@@ -173,7 +173,7 @@ A fine-grained PAT requires additional repository access scopes:
 * `Webhooks: Read and write`
 * `Members access: Read-only (Organization access scope)`
 
-The `Administration: Read-only` permission on the PAT allows Snyk to list the users available GitHub organizations, necessary for importing a new Project into Snyk.
+The `Administration: Read-only` permission on the PAT is crucial for Snyk to identify and list the user's accessible GitHub organizations, a prerequisite for importing a new Project.
 
 Snyk uses PRs to tell [GitHub Enterprise](github-enterprise.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
 
