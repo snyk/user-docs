@@ -6,7 +6,7 @@ This page contains information about the following Snyk SCM integration aspects:
 
 * [Snyk AppRisk SCM integrations available at the Group level](./#group-level-snyk-apprisk-scm-integrations)
 * [Snyk SCM integrations available at the Organization level](./#organization-level-snyk-scm-integrations)
-* Workspaces
+* [Workspaces for SCM integrations](./#workspaces-for-scm-integrations)
 * [Deployment order recommendations](./#deployment-order-recommendations)
 * [General user permissions and access scope requirements](./#user-permissions-and-access-scope-requirements)
 * [Integrated SCM tokens for Snyk Broker](./#integrated-scm-tokens-for-snyk-broker)
@@ -120,7 +120,7 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 * [Bitbucket Data Center/Server](bitbucket-data-center-server.md)
 * [Azure Repositories (TFS)](azure-repositories-tfs.md)
 
-## Snyk Workspaces
+## Workspaces for SCM integrations
 
 {% hint style="info" %}
 This feature is available for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos (TFS) integrations.
