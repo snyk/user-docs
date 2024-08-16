@@ -50,7 +50,7 @@ By understanding your images, packages, and Kubernetes resources as "application
 
 {% hint style="warning" %}
 **Release status** \
-The **Loaded package** risk factor is currently in Closed Beta and available only for Snyk AppRisk Pro.&#x20;
+The **Loaded package** risk factor is in Closed Beta and is available only for Snyk AppRisk Pro.&#x20;
 {% endhint %}
 
 You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Insights** UI tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.&#x20;

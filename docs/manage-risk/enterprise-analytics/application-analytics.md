@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 **Release status** \
-Application Analytics is currently in Closed Beta and available only for Snyk AppRisk Pro.
+Application Analytics is in Closed Beta and available only for Snyk AppRisk Pro.
 {% endhint %}
 
 The Analytics menu, available at the tenant level, under the Application Analytics tab (available only for Snyk AppRisk Pro). Application Analytics is designed to provide an in-depth analysis of your AppSec program, highlighting areas for improvement, emerging risks, and previously overlooked vulnerabilities to support AppSec managers and engineering teams.&#x20;

@@ -15,17 +15,17 @@ Backstage is a service catalog that allows users to add metadata or annotations 
 
 You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
 
-### Prerequisites
+### Prerequisites for Backstage file
 
 * Configured SCM integration for Snyk AppRisk.
 * The `catalog-info.yaml` file is available in the root folder or your Project.&#x20;
 
-### Required Parameters
+### Required Parameters for Backstage file
 
 * A configured SCM integration.&#x20;
 * The `catalog-info.yaml` file from your Project.
 
-### Integration Hub setup
+### Integration Hub setup for Backstage file
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select an SCM integration.&#x20;
@@ -126,7 +126,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
 {% endhint %}
 
-### Required Parameters <a href="#servicenow-cmdb-required-parameters" id="servicenow-cmdb-required-parameters"></a>
+### Required Parameters for ServiceNow CMDB <a href="#servicenow-cmdb-required-parameters" id="servicenow-cmdb-required-parameters"></a>
 
 1. Add the **profile name** for your ServiceNow CMDB instance.
 2. Setup the **CMDB instance** for the ServiceNow CMDB by following this example `https://<INSTANCE_NAME>.service-now.com`.
@@ -139,7 +139,7 @@ The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/gettin
 * The data gathered by Snyk from ServiceNow CMDB will be correlated with the Repository Assets.
 {% endhint %}
 
-### Integration Hub setup <a href="#servicenow-cmdb-integration-hub-setup" id="servicenow-cmdb-integration-hub-setup"></a>
+### Integration Hub setup for ServiceNow CMDB <a href="#servicenow-cmdb-integration-hub-setup" id="servicenow-cmdb-integration-hub-setup"></a>
 
 * Open the **Integration Hub** menu.&#x20;
 * Select the **App Context** tag and search for ServiceNow CMDB.&#x20;
@@ -161,7 +161,7 @@ The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials an
 
 ## Atlassian Compass
 
-### Required Parameters
+### Required Parameters for Atlassian Compass
 
 1. Add your Atlassian Compass **Profile name**.
 2. Add your Atlassian Compass **Instance URL**. You can use this format type: `https://<YOUR ORGANIZATION>.atlassian.net`.
@@ -174,7 +174,7 @@ The gathered data from Atlassian Compass will be correlated with the Repository 
 This feature is availabale only for the integration with Atlassian Compass.
 {% endhint %}
 
-### Integration Hub setup
+### Integration Hub setup for Atlassian Compass
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **App Context** tag and search for Atlassian Compass.&#x20;
@@ -194,7 +194,7 @@ This feature is availabale only for the integration with Atlassian Compass.
 
 ## Harness
 
-### Required Parameters
+### Required Parameters for Harness
 
 1. Add your Harness **Profile name**.
 2. Add the **Host URL** of your Harness account. You can use this format type: `https://<YOUR ORGANIZATION>.harness.io`
@@ -204,7 +204,7 @@ This feature is availabale only for the integration with Atlassian Compass.
 This integration is focused on [Harness’s](https://developer.harness.io/docs/internal-developer-portal/catalog/software-catalog/) service catalog module and it is backed by the Backstage catalog.
 {% endhint %}
 
-### Integration Hub setup
+### Integration Hub setup for Harness
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **App Context** tag and search for Harness.&#x20;
@@ -224,13 +224,13 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 
 ## OpsLevel
 
-### Required Parameters
+### Required Parameters for OpsLevel
 
 1. Add your OpsLevel **Profile name**.
 2. Add the **Instance URL** of your OpsLevel account. You can use this format type: `https://<YOUR Organizer>.opslevel.com`
 3. Add the **API Token** for your OpsLevel instance. To create an API Token in your OpsLevel account, use the instructions on the OpsLevel [Create an API token](https://docs.opslevel.com/docs/graphql#1-create-an-api-token) documentation page.
 
-### Integration Hub setup
+### Integration Hub setup for OpsLevel
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **App Context** tag and search for OpsLevel.&#x20;
@@ -249,13 +249,13 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 
 ## Datadog Service Catalog
 
-### Required Parameters
+### Required Parameters for Datadog Service Catalog
 
 1. Add your Datadog **Profile name**.
 2. Add the **API key** for the Datadog instance.
 3. Add the **Application Key** along with your organization's API key to grant users access to Datadog's programmatic API. For more details, access the [Datadog API and Application key](https://docs.datadoghq.com/account\_management/api-app-keys/) documentation page.
 
-### Integration Hub setup
+### Integration Hub setup for Datadog Service Catalog
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **App Context** tag and search for **Datadog Service Catalog**.&#x20;
@@ -264,7 +264,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 5. Add the **API key** for your Datadog instance.
 6. Add the **Application key** for your Datadog instance.
 7. Add the details of your **Datadog site**.
-8. You can select one or more attributes related to repository assets that Snyk AppRisk can pull from OpsLevel with the following mapping:
+8. You can select one or more attributes related to repository assets that Snyk AppRisk can pull from Datadog Service Catalog with the following mapping:
    * Catalog name - If you select this metadata, it is mandatory to add the **Catalog name key**.
    * Title - If you select this metadata, it is mandatory to add the **Title key**.
    * Category - If you select this metadata, it is mandatory to add the **Category key**.

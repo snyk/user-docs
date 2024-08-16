@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 **Release status** \
-Issues Analytics is currently in Early Access and available only for Snyk Enterprise.
+Issues Analytics is in Early Access and available only for Snyk Enterprise.
 {% endhint %}
 
 Issues Analytics takes an opinionated approach, focusing teams on a relatively recent view of the most important metrics available for critical and high-severity issues in a 90-day lookback period. These static filters are displayed at the top of the page.
