@@ -23,19 +23,3 @@ After the feature is enabled at the Group level, all Organizations in the Group 
 
 Additionally, some features can only be made available at the Group level - these are indicated appropriately.
 {% endhint %}
-
-## Enable Git repository cloning
-
-{% hint style="info" %}
-Git repository cloning is in [Early Access](../getting-started/snyk-release-process.md) for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
-{% endhint %}
-
-When enabled, Git repository cloning allows Snyk to provide additional functionality, and improved reliability and accuracy in performing scans by ingesting clones of your source code repositories.
-
-Git cloning can be enabled through **Snyk Preview** in the **General** Organization settings.
-
-<figure><img src="https://lh4.googleusercontent.com/NeiM1iGKaUMiHC-qr8n3SjlNRCr8j33XO3M5PtAdMUJaIap6RNv1UwmpiVv1siDWRnE61v490VoLTP1uXL0gUVHQDLh7FK29vGQLSvCMhlmd2NZJnbWFt3xIOxzHO7Nw7SAQDGiMwLotub8y5HU2-vbyEiY9GzA4DXwRh3xXiib7z99lqHEDDShD9jQMfWjn" alt=".Enable full Git repository cloning from the Snyk settings"><figcaption><p>Enable full Git repository cloning from the Snyk settings</p></figcaption></figure>
-
-{% hint style="info" %}
-For more information bout how Snyk performs Git repository cloning, applicable contract terms, and safeguards in place to keep your data safe, see the [Git repository cloning section](../working-with-snyk/how-snyk-handles-your-data.md#snyk-integrations-git-repository-cloning) on the page "How Snyk handles your data."
-{% endhint %}

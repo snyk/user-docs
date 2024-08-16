@@ -472,3 +472,9 @@ A way for an app to provide other applications with real-time information. Snyk 
 ### Web UI
 
 See [Snyk Web UI](glossary.md#snyk-web-ui).
+
+### Workspaces (SCM integrations)
+
+A Snyk feature. This enables Snyk to ingest shallow copies of your Git repositories for scanning, resulting in precise and reliable vulnerability scans.
+
+See [Workspaces for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).

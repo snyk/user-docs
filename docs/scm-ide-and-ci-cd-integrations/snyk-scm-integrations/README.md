@@ -6,7 +6,7 @@ This page contains information about the following Snyk SCM integration aspects:
 
 * [Snyk AppRisk SCM integrations available at the Group level](./#group-level-snyk-apprisk-scm-integrations)
 * [Snyk SCM integrations available at the Organization level](./#organization-level-snyk-scm-integrations)
-* [Git repository cloning](./#snyk-git-repository-cloning)
+* Workspaces
 * [Deployment order recommendations](./#deployment-order-recommendations)
 * [General user permissions and access scope requirements](./#user-permissions-and-access-scope-requirements)
 * [Integrated SCM tokens for Snyk Broker](./#integrated-scm-tokens-for-snyk-broker)
@@ -120,15 +120,15 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 * [Bitbucket Data Center/Server](bitbucket-data-center-server.md)
 * [Azure Repositories (TFS)](azure-repositories-tfs.md)
 
-## Snyk Git repository cloning
+## Snyk Workspaces
 
-{% hint style="warning" %}
-This feature is in Early Access for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos integrations.
+{% hint style="info" %}
+This feature is available for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos (TFS) integrations.
 {% endhint %}
 
-Git repository cloning enables Snyk to ingest a temporary snapshot of repository contents, and all commit metadata through your configured SCM integrations.
+The Workspaces feature enables Snyk to ingest a temporary snapshot of repository contents, and all commit metadata through your configured SCM integrations.
 
-For detailed information on this feature, including enablement steps, see [Git repository cloning for SCM integrations](introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations.md).
+For detailed information on this feature, including enablement steps, see [Workspaces for SCM integrations](introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).
 
 ## Deployment order recommendations
 

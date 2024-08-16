@@ -50,7 +50,9 @@ Snyk knows how important it is to protect your data. Therefore we will only acce
 <figure><img src="../.gitbook/assets/SnykOSS.svg" alt="Snyk Open Source logo"><figcaption><p>Snyk Open Source</p></figcaption></figure>
 
 * Snyk accesses manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
-* By default, Snyk does not access your source code with this exception: for CLI scans using the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and store the file signatures and file names.
+* Snyk accesses your source code under these scenarios:
+  * When [Workspaces for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md) is enabled, Snyk ingests a short-lived, shallow clone of a [Git reference](https://git-scm.com/book/en/v2/Git-Internals-Git-References) and scans manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
+  * When CLI scans using the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and store the file signatures and file names
 * Snyk accesses and stores the names and version numbers of your dependencies.
 * Snyk stores the names of associated licenses, including copyright and attribution information.
 * Snyk accesses and stores repository-specific information.
@@ -121,7 +123,7 @@ Your account is subject to contract terms which might restrict your ability to e
 ## Snyk integrations: Git repository cloning
 
 {% hint style="info" %}
-For more information on Git repository cloning enablement and use, see [Git repository cloning for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations.md).
+For more information on Git repository cloning enablement and use, see [Git repository cloning for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).
 {% endhint %}
 
 ### Safeguards Snyk puts in place to ensure data is secure
@@ -131,10 +133,6 @@ For more information on Git repository cloning enablement and use, see [Git repo
 * Cloned assets are deleted from the file system immediately after populating the cache.
 * All data is handled by Snyk in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
 * Your data is analyzed only for the purposes of improving code security and code quality and in accordance with your Data Processing Addendum.
-
-### Git cloning applicable contract terms
-
-By enabling this feature, you agree that your Git repository is a Protected Asset as defined in the contract between your company and Snyk.
 
 ## Snyk certifications
 
