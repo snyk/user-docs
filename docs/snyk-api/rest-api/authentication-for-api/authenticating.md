@@ -6,7 +6,7 @@ When using the API directly, provide the API token in an `Authorization` header,
 
 ```bash
 curl --request GET \
---url "https://api.snyk.com/rest/self?version=2024-06-10" \
+--url "https://api.snyk.io/rest/self?version=2024-06-10" \
 --header "Content-Type: application/vnd.api+json" \
 --header "Authorization: token API_TOKEN"
 ```
