@@ -16,7 +16,7 @@ This high-level architecture diagram shows the components and their interactions
 
 The core requirements to deploy the Snyk Code Local Engine are:
 
-* Kubernetes version 1.21.0 - 1.27.0:
+* Kubernetes version 1.21.0 - 1.28.0:
   * _Recommended:_ a dedicated Kubernetes cluster
   *   Outbound HTTPS connections supporting WebSockets from the cluster to \*.snyk.io
 
