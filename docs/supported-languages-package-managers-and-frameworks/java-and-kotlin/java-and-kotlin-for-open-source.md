@@ -1,13 +1,13 @@
 # Java and Kotlin for open source
 
-## Snyk for Java and Kotlin for open source support
+## Snyk support for Java and Kotlin for open source
 
 **Build tools**: Maven, Gradle
 
 **Build tool versions**:&#x20;
 
 * Maven: `3.*.` For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
-* Gradle: `4.*`, `5.*`, `6.*`, `7.*.` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+* Gradle: `4.*`, `5.*`, `6.*`, `7.*, 8.*.` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 
 **Package registry**: [maven.org](https://maven.org/)
 
