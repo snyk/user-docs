@@ -179,15 +179,15 @@ System tags are automatically generated from the SCM repositories. System tags c
 
 ### Tag rules related to metadata
 
-| Rule                                       | Tag                 |
-| ------------------------------------------ | ------------------- |
-| Snyk AppRisk found pip metadata.           | `python module`     |
-| Snyk AppRisk found a browser extension.    | `browser extension` |
-| Snyk AppRisk found technologies in use.    | `< technologies>`   |
-| Snyk AppRisk found ruby metadata.          | `ruby module`       |
-| Snyk AppRisk found languages from the SCM. | `<languages>`       |
-| Snyk AppRisk detected a new repository.    | `new repository`    |
-| Snyk AppRisk found nodejs metadata.        | `nodejs module`     |
+| Rule                                                                | Tag                 |
+| ------------------------------------------------------------------- | ------------------- |
+| Snyk AppRisk found pip metadata.                                    | `python module`     |
+| Snyk AppRisk found a browser extension.                             | `browser extension` |
+| Snyk AppRisk found technologies in use.                             | `< technologies>`   |
+| Snyk AppRisk found ruby metadata.                                   | `ruby module`       |
+| Snyk AppRisk found languages from the SCM.                          | `<languages>`       |
+| Snyk AppRisk detected a new repository, created in the last 7 days. | `new repository`    |
+| Snyk AppRisk found nodejs metadata.                                 | `nodejs module`     |
 
 ## **Developers**
 
