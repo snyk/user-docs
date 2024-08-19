@@ -21,7 +21,7 @@ Under **Manage roles**, you can:
 7. [Change the role of a user](user-role-management.md#change-the-role-of-a-user)
 8. [Use roles in custom SSO](user-role-management.md#use-roles-in-custom-sso)
 
-If you use the Snyk API, see [User management with the Snyk API](../user-management-with-the-snyk-api/) for more information.
+For more information, see [User Management with the Snyk API](../user-management-with-the-snyk-api/).
 
 ## Essential information for working with Member roles
 
@@ -107,7 +107,7 @@ Pre-defined roles cannot be deleted from your Group.
 ### Assign roles to users
 
 {% hint style="info" %}
-If you use the Snyk API, you can update the role assigned to a user in an Organization. See the [Update a member's role in the organization API call](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/update-a-member's-role-in-the-organization) for details.
+You can use the API to update the role assigned to a user in an Organization. For details, see the endpoint [Update a member's role in the organization](../../snyk-api/reference/organizations-v1.md#org-orgid-members-update-userid).
 {% endhint %}
 
 Users with **Role management** permissions can assign roles to users across all Organizations in the Group.
@@ -155,7 +155,7 @@ Follow these steps to change the role of a Group or Organization user:
 3. Find the member to update.
 4. Update the role for that member using the dropdown next to the user.
 
-Alternatively, use the [Manage member's roles in the organization API v1 calls](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/update-a-member's-role-in-the-organization) to update the role of members in your Organization. This API call does not support updating the role of Group Members.
+Alternatively, use the endpoints [Update a member in the organization](../../snyk-api/reference/organizations-v1.md#org-orgid-members-userid) and [Remove a member from the organization](../../snyk-api/reference/organizations-v1.md#org-orgid-members-userid-1) to update the role of members in your Organization. This API call does not support updating the role of Group Members.
 
 If the user is not already a part of your Group, you must first add that user as a member of at least one Organization; see [Add members on the Manage users in Organizations page](../groups-and-organizations/organizations/manage-users-in-organizations.md#add-members). The user then appears on the **Group > Members** page with the role **Group Member**, allowing you to change the role to Group Admin or Group Viewer.
 
