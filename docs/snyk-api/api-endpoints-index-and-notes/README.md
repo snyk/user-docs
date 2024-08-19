@@ -358,7 +358,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
 
-**More information:** [Provision users to Organizations using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-v1-api.md).
+**More information:** [Provision users to Organizations using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-snyk-api.md).
 
 ### [List pending user provisions](../reference/organizations-v1.md#org-orgid-provision-1)
 

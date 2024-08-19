@@ -1,6 +1,6 @@
-# Provision users to Organizations using the V1 API
+# Provision users to Organizations using the Snyk API
 
-The [Provision user endpoints](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) allow you to organize and grant permissions to your single sign-on users before the users log in to the Snyk platform.
+The Provision user endpoints allow you to organize and grant permissions to your single sign-on users before the users log in to the Snyk platform. The endpoints are [Provision a user to the organizaton](../../snyk-api/reference/organizations-v1.md#org-orgid-provision), [List pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-1), and [Delete pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-2).
 
 Provisioned users do not need to accept invites. When provisioned users first log in to Snyk, they will have all their permissions. You can use the [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) endpoint to add users to Organizations at scale before their first login.
 
@@ -20,7 +20,7 @@ The API does not support using service accounts as the inviting user or provisio
 
 ## How to use the Provision user API
 
-The following explains how to use the Provision user endpoints. For more information, see the [API documentation](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization).
+The following explains how to use the Provision user endpoints. For more information, see the API documentation: [Provision a user to the organizaton](../../snyk-api/reference/organizations-v1.md#org-orgid-provision), [List pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-1), and [Delete pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-2).
 
 ### Provision a user to the Organization
 
@@ -62,7 +62,7 @@ You can use either `role` or `rolePublicId` but not both in the same call.
 
 ### List pending user provisions
 
-The List pending user permissions endpoint returns pending provisioned users in the response.
+The [List pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-1) endpoint returns pending provisioned users in the response.
 
 **`GET`** `https://api.snyk.io/v1/org/orgId/provision`
 
@@ -90,7 +90,7 @@ The List pending user permissions endpoint returns pending provisioned users in 
 
 ### Delete pending user provision
 
-Use the Delete pending use provision endpoint to remove a pending provision request.
+Use the [Delete pending use provision endpoint to remove a pending provision request](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-2).
 
 **`DELETE`** `https://api.snyk.io/v1/org/orgId/provision`
 

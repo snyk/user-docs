@@ -143,7 +143,7 @@ API v1 [Invite users](https://snyk.docs.apiary.io/#reference/groups/list-all-rol
 
 ### Add users to organizations at scale ahead of the first login
 
-Scenario: [Provision users to Orgs via API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-v1-api.md)
+Scenario: [Provision users to Orgs via API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-snyk-api.md)
 
 **Endpoint used:**\
 API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
@@ -238,7 +238,7 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 ## API v1 Users and Roles
 
 SEE:\
-[Provision users to Orgs via API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-v1-api.md)\
+[Provision users to Orgs via API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-snyk-api.md)\
 [Remove members from Groups and Orgs via API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)\
 [Update Member Roles via API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md) (also Snyk REST API Users endpoint `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta)`
 
