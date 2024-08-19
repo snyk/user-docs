@@ -10,7 +10,7 @@ You need two components to create and understand a policy:
 * **Actions**: set actions that can be performed on the filtered assets, such as setting asset classification or sending a Slack message or email.
 
 {% hint style="info" %}
-A newly created policy may take up to 30 minutes to become visible and be applied.
+A newly created policy may take up to 3 hours to become visible and be applied.
 {% endhint %}
 
 ## Create a policy
@@ -46,7 +46,7 @@ Here are the steps for creating a policy:
 
 ### Policy freshness
 
-All policies are automatically run in a maximum of 30 minutes after creation, then every 3 hours. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.
+All policies are automatically run in a maximum of 3 hours after creation, then every 3 hours. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.
 
 ### Use cases for policies
 

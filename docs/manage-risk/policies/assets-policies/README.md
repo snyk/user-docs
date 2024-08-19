@@ -5,9 +5,9 @@
 With Snyk AppRisk policies, you can easily automate the process of adding business context and receiving notifications.&#x20;
 
 {% hint style="info" %}
-After a policy is created, it is run in a maximum of 30 minutes after creation, then once every 3 hours.&#x20;
+After a policy is created, it is run in a maximum of 3 hours after creation, then once every 3 hours.&#x20;
 
-If your policy is set to run daily, then the policy is run 30 minutes after the 24-hour period ends. You can always manually run a policy by using the Run button.
+If your policy is set to run daily, then the policy is run 3 hours after the 24-hour period ends. You can always manually run a policy by using the Run button.
 {% endhint %}
 
 Access the Snyk AppRisk policies by positioning yourself at the Group level, selecting **Policies**, then **Assets**.

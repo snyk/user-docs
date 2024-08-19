@@ -39,3 +39,9 @@ This is how your policy should look after all filters and actions are set.
 You will receive an email notification after including the **Link to Assets** option in the Body field. You can access the assets from the notification individually, or view them in an aggregated form by clicking the **Click Here** link. The list of assets displayed in the email notification is automatically generated.
 
 <figure><img src="../../../../.gitbook/assets/image (510).png" alt="Snyk AppRisk - notification example from the Send Email action"><figcaption><p>Snyk AppRisk - notification example from the Send Email action</p></figcaption></figure>
+
+{% hint style="info" %}
+After an email notification policy is created, it is run in a maximum of 3 hours after creation, then once every 3 hours.&#x20;
+
+If your policy is set to run daily, then the policy is run in a maximum of 3 hours after the 24-hour period ends. You can always manually run a policy by using the Run button.
+{% endhint %}
