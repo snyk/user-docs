@@ -1,3 +1,14 @@
+## 2024-08-15
+
+### GET - `/orgs/{org_id}/audit_logs/search` - Updated
+- for the `query` request parameter `size`, default value `100.00` was added
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/audit_logs/search` - Updated
+- for the `query` request parameter `size`, default value `100.00` was added
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2024-06-21 - Updated 2024-06-27
 
 ### POST - `/orgs/{org_id}/collections` - Updated

@@ -722,6 +722,7 @@
         "in": "query",
         "name": "size",
         "schema": {
+          "default": 100,
           "format": "int32",
           "maximum": 100,
           "minimum": 1,
