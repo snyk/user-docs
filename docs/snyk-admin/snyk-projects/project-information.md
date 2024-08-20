@@ -48,5 +48,5 @@ In the header of each Project overview, you can view information about:
   * The last time Snyk took a snapshot of the file that was fetched from the SCM and tested it
 * Project import
   * **IMPORTED BY**: The user who imported the Project.
-  * **PROJECT OWNER.** You can add an owner for this Project from a list of users who have access to the Project by clicking **Add a project owner**. You can also view this information through the [List all Projects](https://apidocs.snyk.io/#get-/orgs/-org\_id-/projects) endpoint in the Snyk API.
+  * **PROJECT OWNER.** You can add an owner for this Project from a list of users who have access to the Project by clicking **Add a project owner**. You can also view this information through the endpoint [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects-v1.md#org-orgid-project-projectid-history-snapshotid-aggregated-issues).
 * Predefined [Project attributes](project-attributes.md) and any additional [Project tag](../introduction-to-snyk-projects/project-tags.md) metadata.
