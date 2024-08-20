@@ -240,7 +240,7 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 SEE:\
 [Provision users to Orgs via API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-snyk-api.md)\
 [Remove members from Groups and Orgs via API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)\
-[Update Member Roles via API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md) (also Snyk REST API Users endpoint `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta)`
+[Update Member Roles via API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-snyk-api.md) (also Snyk REST API Users endpoint `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta)`
 
 ## API v1 Webhooks
 

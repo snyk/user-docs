@@ -1,4 +1,4 @@
-# Update member roles using the V1 API
+# Update member roles using the Snyk API
 
 To migrate members of existing organizations to new roles, you must use the API. Follow the steps in each section of this document.
 
@@ -8,7 +8,7 @@ Snyk recommends running these updates with bounded concurrency in batches so as 
 
 **Request**: `GET https://api.snyk.io/v1/group/{groupId}/roles`
 
-**API documentation:** [https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/list-all-roles-in-a-group)
+**Endpoint:** [List all roles in a group](../../snyk-api/reference/groups-v1.md#group-groupid-roles)
 
 This call returns an array of objects, each describing custom and non-custom (for example, default) roles. Default roles are indicated by the `customRole: false` property. Save the`publicId` of each role you want to assign to a user.
 
@@ -16,7 +16,7 @@ This call returns an array of objects, each describing custom and non-custom (fo
 
 **Request**: `GET https://api.snyk.io/v1/org/{orgId}/members`
 
-**API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members](https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members)
+**Endpoint**: [List members](../../snyk-api/reference/organizations-v1.md#org-orgid-members)
 
 This call returns an array of all non-admin members of the Organization. Save the `id` of each user who should have a new role.
 
@@ -29,7 +29,7 @@ Service accounts are not returned by the List members endpoint. You must get the
 
 **Request**: `PUT https://api.snyk.io/v1/org/{orgId}/members/update/{userId}`
 
-**API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization](https://snyk.docs.apiary.io/#reference/organizations/update-member-roles-in-your-organization/update-a-member's-role-in-the-organization)
+**Endpoint**: [Update a member's role in the organization](../../snyk-api/reference/organizations-v1.md#org-orgid-members-update-userid)
 
 For each user, call the endpoint Update a member's role in the organization to set the member's new role, using the user id and role id you collected previously.
 

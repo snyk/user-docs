@@ -235,7 +235,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
 **More information :**\
-[Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md).
+[Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-snyk-api.md).
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
@@ -370,7 +370,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List members](../reference/organizations-v1.md#org-orgid-members)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-snyk-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)
 
 ### [Update a member in the organization](../reference/organizations-v1.md#org-orgid-members-userid)
 
@@ -382,7 +382,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Invite users](../reference/organizations-v1.md#org-orgid-invite)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md).
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-snyk-api.md).
 
 ## Orgs (GA and beta)
 

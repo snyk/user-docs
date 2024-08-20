@@ -836,7 +836,7 @@
       * [Snyk Learn - Learning Admin](snyk-admin/user-roles/custom-role-templates/snyk-learn-learning-admin.md)
   * [User management with the Snyk API](snyk-admin/user-management-with-the-snyk-api/README.md)
     * [Provision users to Organizations using the Snyk API](snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-snyk-api.md)
-    * [Update member roles using the V1 API](snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-v1-api.md)
+    * [Update member roles using the Snyk API](snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-snyk-api.md)
     * [Remove members from Groups and Orgs using the API](snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)
     * [Retrieve audit logs of user-initiated activity by API for an Org or Group](snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
   * [Manage notifications](snyk-admin/manage-notifications.md)
