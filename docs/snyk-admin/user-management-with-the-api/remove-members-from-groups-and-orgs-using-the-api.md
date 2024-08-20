@@ -8,7 +8,7 @@ To remove members from Groups and Organizations programmatically from user user 
 
 **Request**: `GET https://api.snyk.io/v1/org/{orgId}/members`
 
-**API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members](https://snyk.docs.apiary.io/#reference/organizations/members-in-organization/list-members)
+**Endpoint**: [List members](../../snyk-api/reference/organizations-v1.md#org-orgid-members)
 
 This call returns an array of all non-admin members of the Organization. Save the `id` of each user who needs to be removed from the Organization.
 
@@ -16,7 +16,7 @@ This call returns an array of all non-admin members of the Organization. Save th
 
 **Request**: `DELETE https://api.snyk.io/v1/org/{orgId}/members/update/{userId}`
 
-**API documentation**: [https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization](https://snyk.docs.apiary.io/#reference/organizations/manage-roles-in-organization/remove-a-member-from-the-organization)
+**Endpoint**: [Remove a member from the organization](../../snyk-api/reference/organizations-v1.md#org-orgid-members-userid-1)
 
 For each user, call the endpoint to remove that member from the Organization using the user id you saved previously.
 
@@ -42,8 +42,7 @@ This call returns an array of all members of the Group. Save the `id` of each us
 
 **Request**: PATCH https://api.snyk.io/rest/groups/{group\_id}/users/{id}?version=2024-07-10\~beta
 
-**API documentation**:\
-[https://apidocs.snyk.io/?version=2024-07-10%7Ebeta&\_gl=1\*191l4f9\*\_gcl\_aw\*R0NMLjE3MjE0MDU5NzcuQ2p3S0NBanduZWkwQmhCLUVpd0FBMnh1QmlwWlhrR2JvVy16SGJLb0hGZDk4SU80TlprcGMtcjM4bk8yOXpFMXZFRUJVbHY1LWdnVm1Cb0NHY2dRQXZEX0J3RQ..\*\_ga\*MTM5MDkzOTgyMC4xNzA0NzI3Nzk5\*\_ga\_X9SH3KP7B4\*MTcyMjI3NzI0OS40ODAuMS4xNzIyMjc5MjIxLjQ2LjAuMA..#patch-/groups/-group\_id-/users/-id-](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta&\_gl=1\*191l4f9\*\_gcl\_aw\*R0NMLjE3MjE0MDU5NzcuQ2p3S0NBanduZWkwQmhCLUVpd0FBMnh1QmlwWlhrR2JvVy16SGJLb0hGZDk4SU80TlprcGMtcjM4bk8yOXpFMXZFRUJVbHY1LWdnVm1Cb0NHY2dRQXZEX0J3RQ..\*\_ga\*MTM5MDkzOTgyMC4xNzA0NzI3Nzk5\*\_ga\_X9SH3KP7B4\*MTcyMjI3NzI0OS40ODAuMS4xNzIyMjc5MjIxLjQ2LjAuMA..#patch-/groups/-group\_id-/users/-id-)
+**Endpoint**: [Update a user's role in a group](https://apidocs.snyk.io/?version=2024-08-15%7Ebeta&\_gl=1\*191l4f9\*\_gcl\_aw\*R0NMLjE3MjE0MDU5NzcuQ2p3S0NBanduZWkwQmhCLUVpd0FBMnh1QmlwWlhrR2JvVy16SGJLb0hGZDk4SU80TlprcGMtcjM4bk8yOXpFMXZFRUJVbHY1LWdnVm1Cb0NHY2dRQXZEX0J3RQ..\*\_ga\*MTM5MDkzOTgyMC4xNzA0NzI3Nzk5\*\_ga\_X9SH3KP7B4\*MTcyMjI3NzI0OS40ODAuMS4xNzIyMjc5MjIxLjQ2LjAuMA..#patch-/groups/-group\_id-/users/-id-) (Beta, use current version)
 
 **Body:**
 
@@ -75,7 +74,7 @@ When an SSO connection is associated with only one Group, the following call can
 
 **Request**: DELETE `https://api.snyk.io/rest/groups/{group_id}/sso_connections/{sso_id}/users/{user_id}?version=2023-01-30~beta`
 
-**API documentation**: [https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-](https://apidocs.snyk.io/?version=2024-06-18%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
+**Endpoint**: [Delete a user from a group SSO connection](https://apidocs.snyk.io/?version=2024-08-15%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-) (Beta, use current version)
 
 You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** >**Settings** >**SSO** >**Step 3**. If you need help, reach out to your Account team.
 
