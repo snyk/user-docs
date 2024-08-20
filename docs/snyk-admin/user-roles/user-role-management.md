@@ -21,7 +21,7 @@ Under **Manage roles**, you can:
 7. [Change the role of a user](user-role-management.md#change-the-role-of-a-user)
 8. [Use roles in custom SSO](user-role-management.md#use-roles-in-custom-sso)
 
-For more information, see [User Management with the Snyk API](../user-management-with-the-snyk-api/).
+For more information, see [User Management with the Snyk API](../user-management-with-the-api/).
 
 ## Essential information for working with Member roles
 

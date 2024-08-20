@@ -116,13 +116,13 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ### [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-audit\_logs-search)
 
-**More information:** [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
+**More information:** [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 
 ### [Search Group audit logs](../reference/audit-logs.md#groups-group\_id-audit\_logs-search)
 
 **More information:** [Filter through your audit logs more efficiently with the new GA REST version of the audit logs API, and api.access is now opt-in](https://updates.snyk.io/filter-through-your-audit-logs-more-efficiently-with-the-new-ga-rest-version-of-the-audit-logs-api-and-api-access-is-now-opt-in-291850)
 
-[Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
+[Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 
 ## Audit logs (v1)
 
@@ -220,7 +220,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Delete a user from a Group SSO connection](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md) and [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-snyk-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md).
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md) and [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md).
 
 ## Groups (v1)
 
@@ -235,7 +235,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
 **More information :**\
-[Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-snyk-api.md).
+[Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md).
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
@@ -246,7 +246,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List all members in a group](../reference/groups-v1.md#group-groupid-members)
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md).
 
 ## IacSettings
 
@@ -358,7 +358,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
 
-**More information:** [Provision users to Organizations using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/provision-users-to-organizations-using-the-snyk-api.md).
+**More information:** [Provision users to Organizations using the V1 API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md).
 
 ### [List pending user provisions](../reference/organizations-v1.md#org-orgid-provision-1)
 
@@ -370,19 +370,19 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List members](../reference/organizations-v1.md#org-orgid-members)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-snyk-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md)
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)
 
 ### [Update a member in the organization](../reference/organizations-v1.md#org-orgid-members-userid)
 
 ### [Remove a member from the organization](../reference/organizations-v1.md#org-orgid-members-userid-1)
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md).
 
 ### [Update a member's roles in your organization](../reference/organizations-v1.md#org-orgid-members-update-userid)
 
 ### [Invite users](../reference/organizations-v1.md#org-orgid-invite)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-snyk-api/update-member-roles-using-the-snyk-api.md).
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md).
 
 ## Orgs (GA and beta)
 
@@ -646,7 +646,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 Note: Use this endpoint to remove users from a group.
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-snyk-api/remove-members-from-groups-and-orgs-using-the-api.md).
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md).
 
 ### [Get user by ID](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
 
