@@ -120,10 +120,10 @@ Your account is subject to contract terms which might restrict your ability to e
   * Metadata on the languages (for example, Python, HTML) used for a given code repository.
   * Repository “topics”, which are represented as asset tags.
 
-## Snyk integrations: Git repository cloning
+## Snyk integrations: Workspaces
 
 {% hint style="info" %}
-For more information on Git repository cloning enablement and use, see [Git repository cloning for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).
+For more information on Workspaces enablement and use, see [Workspaces for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).
 {% endhint %}
 
 ### Safeguards Snyk puts in place to ensure data is secure
