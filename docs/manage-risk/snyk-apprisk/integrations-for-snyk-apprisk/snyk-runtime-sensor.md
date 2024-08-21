@@ -34,6 +34,7 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
 The Snyk Runtime Sensor is a Kubernetes DeamonSet that can be easily deployed using various methods:
 
 * [Install the Snyk Runtime Sensor using a Helm chart ](snyk-runtime-sensor.md#using-a-helm-chart)
+* [Install the Snyk Runtime Sensor using a Helm chart and the AWS Secrets Manager ](snyk-runtime-sensor.md#using-a-helm-chart-and-the-aws-secrets-manager)
 * [Install the Snyk Runtime Sensor on OpenShift ](snyk-runtime-sensor.md#on-openshift)
 * [Install the Snyk Runtime Sensor through the AWS Marketplace as an EKS add-on](snyk-runtime-sensor.md#through-the-aws-marketplace-as-an-eks-add-on)
 
@@ -104,6 +105,117 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     ```
     helm upgrade --install <<SENSOR_REPO_NAME>> \
     --set secretName=<<YOUR_SECRET_NAME>> \
+    --set clusterName=<<CLUSTER_NAME>> \
+    --set snykGroupId=<<YOUR_GROUP_ID>> \
+    -n snyk-runtime-sensor \
+    runtime-sensor/runtime-sensor
+    ```
+
+### Using a Helm Chart and the AWS Secrets Manager
+
+There is a [Helm chart](https://helm.sh) within this repo in [helm/runtime-sensor](https://github.com/snyk/runtime-sensor), that is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
+
+To install the Snyk runtime sensor using Helm Charts and the AWS Secrets Manager, you can follow these steps:
+
+Prerequisite: Install AWS Provider and CSI Secrets Store in your cluster, as instructed [here](https://github.com/aws/secrets-store-csi-driver-provider-aws).
+
+1. Ensure Helm is installed.
+2.  Create the `snyk-runtime-sensor` namespace:
+
+    <pre><code><strong>kubectl create namespace snyk-runtime-sensor
+    </strong></code></pre>
+3.  Create the Snyk Runtime Sensor Secret containing your service account token under the `snykToken` key in your AWS account, and obtain the resulted ARN:
+
+    ```
+    aws secretsmanager create-secret \
+    --name snyk-runtime-sensor-secret \
+    --secret-string '{"snykToken":"<<YOUR_SERVICE_ACCOUNT_TOKEN>>"}'
+    ```
+4.  Create an access policy for the newly created secret:
+
+    ```
+    POLICY_ARN=$(aws --query Policy.Arn --output text iam create-policy --policy-name snyk-runtime-sensor-secret-policy --policy-document '{
+        "Version": "2012-10-17",
+        "Statement": [ {
+            "Effect": "Allow",
+            "Action": ["secretsmanager:GetSecretValue", "secretsmanager:DescribeSecret"],
+            "Resource": ["<<YOUR_SECRET'S_ARN>>"]
+        } ]
+    }')
+    ```
+5.  Create an IAM OIDC provider for your cluster if you haven't done so already (only run this once):
+
+    ```
+    eksctl utils associate-iam-oidc-provider \
+    --cluster="<<CLUSTER_NAME>>" \
+    --approve
+    ```
+6.  Add the Helm repo:
+
+    ```
+    helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
+    ```
+7. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
+8.  (Optional) If you want to configure custom resources (CPU/memory) for the runtime sensor image, set the following values as well when running the next step (default values are used here):
+
+    ```
+    ...
+    --set sensor.resources.requests.memory=512Mi
+    --set sensor.resources.requests.cpu=100m
+    --set sensor.resources.limits.memory=1024Mi
+    --set sensor.resources.limits.cpu=500m
+    ...
+    ```
+9.  Install the Helm chart:
+
+    ```
+    helm install my-runtime-sensor \
+    --set secretProvider=aws \
+    --set secretName=snyk-runtime-sensor-secret \
+    --set clusterName=<<CLUSTER_NAME>> \
+    --set snykGroupId=<<YOUR_GROUP_ID>> \
+    --set snykAPIBaseURL=<<YOUR_REGIONS_API_URL>> \ # Optional
+    -n snyk-runtime-sensor \
+    runtime-sensor/runtime-sensor
+    ```
+10. Attach the ARN of the policy created in step 4 to the newly created service account, by creating a new role:
+
+    {% code overflow="wrap" %}
+    ```
+    eksctl create iamserviceaccount \
+    --name runtime-sensor \
+    --region=<<REGION>> \
+    --cluster "<<CLUSTER_NAME>>" \
+    --attach-policy-arn "$POLICY_ARN" \
+    --approve \
+    --override-existing-serviceaccounts \
+    --namespace=snyk-runtime-sensor
+    ```
+    {% endcode %}
+11. Verify that the secret was mounted successfully into the `snyk-runtime-sensor` namespace (`kubectl get secrets -n snyk-runtime-sensor`), and that the sensor pods are running successfully (`kubectl get pods -n snyk-runtime-sensor`).
+
+#### Upgrading to the latest version
+
+1.  Check the name that was given to the sensor
+
+    {% code overflow="wrap" %}
+    ```
+    helm repo list
+    ```
+    {% endcode %}
+2.  Update the repo (with the name from (1)):
+
+    {% code overflow="wrap" %}
+    ```
+    helm repo update <<SENSOR_REPO_NAME>>
+    ```
+    {% endcode %}
+3.  Upgrade installation:
+
+    ```
+    helm upgrade --install <<SENSOR_REPO_NAME>> \
+    --set secretProvider=aws \
+    --set secretName=snyk-runtime-sensor-secret \
     --set clusterName=<<CLUSTER_NAME>> \
     --set snykGroupId=<<YOUR_GROUP_ID>> \
     -n snyk-runtime-sensor \
