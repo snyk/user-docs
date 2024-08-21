@@ -18,7 +18,7 @@ Follow these steps to enable reachability and begin analyzing Projects for reach
 
 <figure><img src="../../.gitbook/assets/image (2) (9).png" alt="Enabling reachability setting"><figcaption><p>Enabling Reachability setting</p></figcaption></figure>
 
-After Reahability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
+After Reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
 
 {% hint style="info" %}
 To update existing Projects with Reachability immediately, trigger a [manual test](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/#manual-pull-and-merge-requests-for-project-code).
