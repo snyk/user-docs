@@ -17,7 +17,7 @@ Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
 The following are prerequisites for using Snyk Broker in any environment:
 
 * Client machine system requirements: one CPU, 256MB of RAM
-* Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) that is also allowed by any firewalls installed on your network
+* Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) AND [https://api.snyk.io](https://api.snyk.io) (or regional equivalent) that is also allowed by any firewalls installed on your network
 * A Snyk account
 * Self-enabled Broker integration using the Snyk API or enabled by contacting [Snyk Support](https://support.snyk.io/hc/en-us)
 * A unique UUID token called a Broker token. See [Generate credentials in the target application for Snyk Broker](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker).
