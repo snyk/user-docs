@@ -67,7 +67,7 @@ Granular version controls enable Snyk to introduce progressive enhancements. The
 Once an endpoint is marked as deprecated, it will contain a `Sunset` header indicating the date at which that endpoint contract will no longer be supported. For example:
 
 ```
-Sunset: Wed, 11 Nov 2021 11:11:11 GMT
+Sunset: "2021-11-11"
 ```
 
 ## Pagination
