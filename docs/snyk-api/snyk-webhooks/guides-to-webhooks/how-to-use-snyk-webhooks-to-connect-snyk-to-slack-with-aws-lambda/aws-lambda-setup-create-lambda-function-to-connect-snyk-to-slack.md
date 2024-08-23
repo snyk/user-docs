@@ -124,8 +124,7 @@ Start by creating a zip file containing the code for the function and the necess
 
          const {hmac_verification, severity_threshold} = process.env
          const hmac = crypto.createHmac('sha256', hmac_verification)
-         const event_body = JSON.parse(event.body)
-         const buffer = JSON.stringify(event_body)
+         const buffer = JSON.stringify(event.body)
          hmac.update(buffer, 'utf8')
          const stored_signature = `sha256=${hmac.digest('hex')}`
 
@@ -141,21 +140,21 @@ Start by creating a zip file containing the code for the function and the necess
          }
 
          // If integrity is ok, verify that the webhook actually contains the project object, iterate and filter
-         if (event.body.indexOf('project') !== -1 && event.body.indexOf('newIssues') !== -1) {
+         if (buffer.indexOf('project') !== -1 && buffer.indexOf('newIssues') !== -1) {
            // Iterate through new issues
-           var len = event_body['newIssues'] ? event_body['newIssues'].length : 0
+           var len = buffer['newIssues'] ? buffer['newIssues'].length : 0
 
            for (let x = 0; x < len; x++) {
              // Get Severity
-             let severity = JSON.stringify(event_body['newIssues'][x]['issueData']['severity'])
+             let severity = JSON.stringify(buffer['newIssues'][x]['issueData']['severity'])
              // Filter
              if (severity.includes('high') || severity.includes('critical')) {
-               let snykProjectName = JSON.stringify(event_body['project'].name)
-               let snykProjectUrl = JSON.stringify(event_body['project'].browseUrl)
-               let snykIssueUrl = JSON.stringify(event_body['newIssues'][x]['issueData'].url)
-               let snykIssueId = JSON.stringify(event_body['newIssues'][x].id)
-               let snykIssuePackage = JSON.stringify(event_body['newIssues'][x].pkgName)
-               let snykIssuePriority = JSON.stringify(event_body['newIssues'][x]['priority'].score)
+               let snykProjectName = JSON.stringify(buffer['project'].name)
+               let snykProjectUrl = JSON.stringify(buffer['project'].browseUrl)
+               let snykIssueUrl = JSON.stringify(buffer['newIssues'][x]['issueData'].url)
+               let snykIssueId = JSON.stringify(buffer['newIssues'][x].id)
+               let snykIssuePackage = JSON.stringify(buffer['newIssues'][x].pkgName)
+               let snykIssuePriority = JSON.stringify(buffer['newIssues'][x]['priority'].score)
                let message = 'New Snyk Vulnerability'
 
                // Send the result to Slack
@@ -185,6 +184,7 @@ Start by creating a zip file containing the code for the function and the necess
 
          return response
        }
+
        ```
 2. Use the following commands in your terminal:\
    \- `cd /path/to/snyk/folder` (to navigate inside the folder where you stored the two files)\
