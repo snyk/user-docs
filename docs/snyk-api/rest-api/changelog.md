@@ -1,3 +1,33 @@
+## 2024-08-22
+
+### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
+- removed the required property `bomFormat` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the required property `components` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the required property `dependencies` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the required property `dependencies` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the required property `metadata` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the required property `metadata` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the required property `specVersion` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the required property `version` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `components` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new enum value `cyclonedx1.5+json` to the `query` request parameter `format`
+
+- added the new enum value `cyclonedx1.5+xml` to the `query` request parameter `format`
+
+- added the new enum value `cyclonedx1.6+json` to the `query` request parameter `format`
+
+- added the new enum value `cyclonedx1.6+xml` to the `query` request parameter `format`
+
+
 ## 2024-08-15
 
 ### GET - `/orgs/{org_id}/audit_logs/search` - Updated
