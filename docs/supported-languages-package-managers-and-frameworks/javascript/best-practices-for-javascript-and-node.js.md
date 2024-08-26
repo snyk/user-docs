@@ -53,7 +53,7 @@ optionalDependencies are included by default for CLI and CI/CD, as well as Git i
 
 Snyk can build a dependency tree with or without a lockfile. If a lockfile is present, this will be used.
 
-* **Locally and CI/CD**: If a lockfile is not present and it is CLI/IDE, Snyk will look at `node_modules` to determine what’s installed.
+* **Locally and CI/CD**: If a lockfile is not present and the scan is with the CLI or an IDE, Snyk looks at `node_modules` to determine what is installed.
 * **Git integration**: If a lockfile is not present, Snyk will approximate what the tree will look like at build time. This is highly valuable for getting insights into Projects in development or what the next build will look like when there is no lockfile present
 
 As a user of npm, you may ask, “Why Snyk?” when npm-audit is at hand anytime you are working with your dependencies. You get the following capabilities:
@@ -82,23 +82,19 @@ For more information, see [Snyk for Yarn](./#yarn).
 
 ### Lerna/PNPM
 
-Not officially supported, but if configured with Yarn workspaces, you may get Snyk IDE/CLI results.
+Not officially supported, but if configured with Yarn workspaces, you may get Snyk results from the CLI or in an IDE.
 
 ### Unmanaged JavaScript
 
-If you can get a full list of dependencies and their transitive dependencies, several API options are available.
+If you are on the Enterprise plan, and thus have access to the Snyk API, and you can get a full list of dependencies and their transitive dependencies, you have several API options.&#x20;
 
-{% hint style="info" %}
-Snyk API access is required, available with the Snyk Enterprise plan.
-{% endhint %}
+To test for vulnerabilities, you can use the following options:
 
-To test for vulnerabilities, the following options are available:
+* [Test package json and yarn lock File](../../snyk-api/reference/test-v1.md#test-yarn)
+* [Test Dep Graph](../../snyk-api/reference/test-v1.md#test-dep-graph)
+* [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues)
 
-* [Test package](https://snyk.docs.apiary.io/#reference/test/npm/test-for-issues-in-a-public-package-by-name-and-version)
-* [Test Depgraph](https://snyk.docs.apiary.io/#reference/test/dep-graph)
-* [Test Purl](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org\_id-/packages/-purl-/issues)
-
-### Out of Sync Lockfiles
+### Out of sync lockfiles
 
 Control behavior when the lockfile and package file are in sync can be done using:
 
