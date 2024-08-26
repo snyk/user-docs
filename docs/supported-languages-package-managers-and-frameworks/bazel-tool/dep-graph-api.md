@@ -7,15 +7,11 @@ The Snyk API is available with Enterprise plans. See [plans and pricing](https:/
 The Dep Graph API requires additional permissions. [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to request access.
 {% endhint %}
 
-The recommended approach to testing and monitoring your dependencies managed by [Bazel](./) is to use the [Snyk Dep Graph](https://snyk.docs.apiary.io/#reference/test/dep-graph) APIs. This API reference documentation includes the endpoints [Test Dep Graph](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph) and [Monitor Dep Graph](https://snyk.docs.apiary.io/#reference/monitor/monitor-dep-graph) and **a list of the supported package managers**.&#x20;
-
-The monitor capability allows customers to submit a tree for Snyk to monitor for vulnerabilities.
-
-While you can use Bazel for many languages including C++, **the Dep Graph endpoints do not support C++**.&#x20;
+The recommended approach to testing and monitoring your dependencies managed by [Bazel](./) is to use the Snyk Dep Graph API. The endpoints are [Test Dep Graph](../../snyk-api/reference/test-v1.md#test-dep-graph) and [Monitor Dep Graph](../../snyk-api/reference/monitor-v1.md). The monitor capability allows customers to submit a tree for Snyk to monitor for vulnerabilities. While you can use Bazel for many languages including C++, **the Dep Graph endpoints do not support C++**.
 
 Follow these basic steps:
 
-1. For each type of dependency (for example, Maven, Cocoapods), create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions. For an example, see [Example of Snyk for Baszel](examples-of-snyk-for-bazel.md).
+1. For each type of dependency, for example, Maven, Cocoapods, create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions. See [Example of Snyk for Baszel](examples-of-snyk-for-bazel.md).
 2.  As part of a Bazel test rule, send the Dep Braph JSON object as a POST request to the [Dep Graph Test API](https://snyk.docs.apiary.io/#reference/test/dep-graph), along with your [auth token](../../snyk-api/rest-api/authentication-for-api/). An example curl request follows:
 
     ```
@@ -30,9 +26,9 @@ Follow these basic steps:
 
 The Snyk Dep Graph Test API takes a generic dependency graph and returns a report containing any relevant vulnerabilities for those dependencies.
 
-The supported package managers and repository ecosystems are listed in the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph) (`deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems`, and `cocoapods`).
+The supported package managers and repository ecosystems are listed in the [Test Dep Graph](../../snyk-api/reference/test-v1.md#test-dep-graph) API documentation.
 
-Any of your Bazel dependencies that are available in these ecosystems can be tested using the Snyk API.
+Any of your Bazel dependencies that are available in the supported ecosystems can be tested using the Snyk API.
 
 ## Snyk Dep Graph JSON syntax
 
@@ -94,7 +90,7 @@ Further notes on specific components in the Dep Graph object follow:
 
 The Dep Graph Test API returns a JSON object describing any issues (vulnerabilities and licenses) found in the Dep Graph dependencies.
 
-An example response with a single vulnerability:
+An example response with a single vulnerability follows:
 
 ```
 {
