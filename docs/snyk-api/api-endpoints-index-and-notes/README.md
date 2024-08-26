@@ -340,7 +340,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Dep Graph](../reference/monitor-v1.md)
 
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel-tool/dep-graph-api.md)
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
 
 ## Organizations (v1)
 
@@ -620,7 +620,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel-tool/dep-graph-api.md).
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md).
 
 ### [Test composer.json & composer.lock file](../reference/test-v1.md#test-composer)
 
