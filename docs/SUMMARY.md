@@ -947,6 +947,7 @@
     * [Code](snyk-cli/commands/code.md)
     * [Code test](snyk-cli/commands/code-test.md)
     * [Config](snyk-cli/commands/config.md)
+    * [Config environment](snyk-cli/commands/config-environment.md)
     * [Container](snyk-cli/commands/container.md)
     * [Container monitor](snyk-cli/commands/container-monitor.md)
     * [Container SBOM](snyk-cli/commands/container-sbom.md)
