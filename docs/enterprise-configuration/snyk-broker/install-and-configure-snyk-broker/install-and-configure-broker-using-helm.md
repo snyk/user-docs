@@ -16,7 +16,7 @@ To use this chart, you must first add the Snyk Broker Helm Chart by adding the r
 
 Then run the commands to customize the environment variables for each SCM, registry, or Jira as explained on the following pages:
 
-* [GitHub](github-prerequisites-and-steps-to-install-and-configure-broker/githhub.com-install-and-configure-using-helm.md) `scmType`: `github-com`
+* [GitHub](github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-helm.md) `scmType`: `github-com`
 * [GitHub Enterprise](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-helm.md) `scmType`: `github-enterprise`
 * [Bitbucket Server/Data Center](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-helm.md) `scmType`: `bitbucket-server`
 * [GitLab](gitlab-prerequisites-and-steps-to-install-and-configure-broker/gitlab-install-and-configure-using-helm.md) `scmType`: `gitlab`
