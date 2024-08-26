@@ -1,12 +1,12 @@
 # Guidance for JavaScript and Node.js
 
-| Product                                                                                                                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Snyk Code**                                                                                                                                                                                     | Scan your code for security vulnerabilities using source code analysis.                                                                                                                                                                                                                                                                                                                                         |
-| <p><strong>Snyk Open Source</strong><br><br><span data-gb-custom-inline data-tag="emoji" data-code="2139">ℹ️</span> Some capabilities may be limited for some languages and package managers.</p> | <ul><li>Open Source vulnerability testing and monitoring (All plans).</li></ul><ul><li>Open Source dependency upgrade version bumping (All plans).</li></ul><ul><li>License Compliance (paid plans).</li></ul>                                                                                                                                                                                                  |
-| **Snyk Infrastructure as Code**                                                                                                                                                                   | <p>Scan for configuration issues when you deploy your new applications using Kubernetes deployment files, Terraform, or Cloudformation templates.<br><span data-gb-custom-inline data-tag="emoji" data-code="1f517">🔗</span> <a href="../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/">Snyk CLI for Infrastructure as Code</a></p>                                                   |
-| **Snyk Container**                                                                                                                                                                                | Scan for issues with container images if you are building containers.                                                                                                                                                                                                                                                                                                                                           |
-| **Snyk Integrated IaC with cloud context**                                                                                                                                                        | <ul><li>Security from code to cloud and back.</li></ul><ul><li>Scan for runtime misconfiguration issues in your cloud and containers, detect infrastructure drift, and fix issues at their source.</li></ul><p><span data-gb-custom-inline data-tag="emoji" data-code="1f517">🔗</span> <a href="../../scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/">Snyk Integrated IaC with cloud context</a></p> |
+| Product                                                                                                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Snyk Code**                                                                                                             | Scan your code for security vulnerabilities using source code analysis.                                                                                                                                                                                                                                                                                                                                         |
+| <p><strong>Snyk Open Source</strong><br><br>Some capabilities may be limited for some languages and package managers.</p> | <ul><li>Open Source vulnerability testing and monitoring (All plans).</li></ul><ul><li>Open Source dependency upgrade version bumping (All plans).</li></ul><ul><li>License Compliance (paid plans).</li></ul>                                                                                                                                                                                                  |
+| **Snyk Infrastructure as Code**                                                                                           | <p>Scan for configuration issues when you deploy your new applications using Kubernetes deployment files, Terraform, or Cloudformation templates.<br><span data-gb-custom-inline data-tag="emoji" data-code="1f517">🔗</span> <a href="../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/">Snyk CLI for Infrastructure as Code</a></p>                                                   |
+| **Snyk Container**                                                                                                        | Scan for issues with container images if you are building containers.                                                                                                                                                                                                                                                                                                                                           |
+| **Snyk Integrated IaC with cloud context**                                                                                | <ul><li>Security from code to cloud and back.</li></ul><ul><li>Scan for runtime misconfiguration issues in your cloud and containers, detect infrastructure drift, and fix issues at their source.</li></ul><p><span data-gb-custom-inline data-tag="emoji" data-code="1f517">🔗</span> <a href="../../scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/">Snyk Integrated IaC with cloud context</a></p> |
 
 Use this guide to apply Snyk effectively in your technology stack.
 
@@ -16,18 +16,18 @@ Use this guide to apply Snyk effectively in your technology stack.
 
 <figure><img src="https://lh6.googleusercontent.com/EYPCKsyukOq5A9wNpYka8tUBa5FbzGQXrbmG2klrIigOxTNSInsA_Znj6P0jpGnBv7yRHAaiTsF_GX9Y9Zr1xdE35eZljg_1crKgqHBkhoZrEbvpTsdZstjXdVZ1hVF4jNyTgfLWbALbvqtDFbuI_ys" alt="PR Checks for Git integrations"><figcaption><p>PR Checks for Git integrations</p></figcaption></figure>
 
-* Snyk can monitor container images and their open source/Linux-based packages being used in production via Kubernetes integration to notify customers of known vulnerabilities for applications in production.\
-  :information\_source: **Snyk Enterprise plan only**\\
-* Where a production integration does not exist, use the [snyk monitor](../../snyk-cli/commands/monitor.md) CLI command to take a snapshot and monitor what is being pushed to production.\
-  :information\_source: **All Snyk plans**
+* On the **Snyk Enterprise plan only**, Snyk can monitor container images and their open source or Linux-based packages being used in production using Kubernetes integration to notify customers of known vulnerabilities for applications in production.\
+
+* On **All Snyk plans**, where a production integration does not exist, use the [`snyk monitor`](../../snyk-cli/commands/monitor.md) CLI command to take a snapshot and monitor what is being pushed to production.\
+
 
 ## Package Registry Integrations (Artifactory/Nexus)
 
-Artifactory, Nexus, npm Teams and npm Enterprise Package Registry integrations are available to Snyk Enterprise plan users.
+Artifactory, Nexus, npm Teams, and npm Enterprise Package Registry integrations are available to Snyk Enterprise plan users.
 
 Snyk Open Source Gatekeeper plugins integrate with Artifactory and Nexus to block builds from downloading packages with vulnerability and license issues.
 
-Snyk Open Source can also integrate with Artifactory, Nexus, npm Teams and npm Enterprise to assist in security testing of your applications. Snyk uses this integration for dependency resolution, fix calculation, and re-locking lock files.
+Snyk Open Source can also integrate with Artifactory, Nexus, npm Teams, and npm Enterprise to assist in the security testing of your applications. Snyk uses this integration for dependency resolution, fix calculation, and re-locking lock files.
 
 If your Projects reference private dependencies in these repositories but you are not a Snyk Enterprise user, you can use the Snyk CLI in a properly configured local environment (such as your build pipeline) so these dependencies can be resolved and included in the test.
 
@@ -68,7 +68,7 @@ As a user of npm, you may ask, “Why Snyk?” when npm-audit is at hand anytime
 * Broad support across programming languages and package managers.
 * Ignore capabilities.
 
-:link: [Snyk for npm](./#npm)
+For more information, see [Snyk for npm](./#npm).
 
 ### Yarn
 
@@ -78,7 +78,7 @@ Requires yarn.lock and package.json
 * If a lock file is not present in CLI, the `node_modules` folder will be used to construct the dependency tree.
 * `nohoist` is not supported for Yarn Workspaces..
 
-:link: [Snyk for Yarn](./#yarn)
+For more information, see [Snyk for Yarn](./#yarn).
 
 ### Lerna/PNPM
 
@@ -108,23 +108,22 @@ Control behavior when the lockfile and package file are in sync can be done usin
 
 ## Snyk integrations common usage patterns
 
-npm and Yarn are well-designed package managers. The main considerations for npm and Yarn packages are if there are multiple package managers or Projects in the same repository or build and what criteria you want to apply, such as the threshold severity of critical/high for each.
+npm and Yarn are well-designed package managers. The main considerations for npm and Yarn packages are whether there are multiple package managers or Projects in the same repository or build and what criteria you want to apply, such as the threshold severity of critical/high for each.
 
 For source code scanning, this ecosystem is straightforward, with no special options required. Testing runs under Git and Snyk CLI with the basic features and commands.
 
 ## Snyk CLI tips and tricks
 
-:link: [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/)
+See the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/).
 
 ### What to test
 
 Use the `--help` option in the CLI for details of Snyk CLI commands.
 
-:link: [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
+For a list of all the CLI commands, see the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).
 
 #### Open Source libraries
 
-\
 The `snyk test` command tests the first manifest it can find and performs a test on that singular entry point. To have Snyk analyze all manifests in the directory, use the following options:
 
 * `--all-projects`: This option detects and scans all Yarn and other Projects in this directory.
@@ -147,7 +146,7 @@ If you are using a package manager that requires options, it’s suggested to ta
 
 #### Infrastructure as code
 
-:link: [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/)
+See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/).
 
 ### **Options and plugins**
 
@@ -163,4 +162,4 @@ The following is a collection of articles from the Snyk Security team and Develo
 * [Best practices for creating Modern npm package](https://snyk.io/blog/best-practices-create-modern-npm-package/)
 * [Detect and prevent dependency confusion attacks on npm to maintain supply chain security](https://snyk.io/blog/detect-prevent-dependency-confusion-attacks-npm-supply-chain-security/)
 * [Switching between Node.Js versions](https://snyk.io/blog/mastering-node-js-version-management-and-npm-registry-sources-like-a-pro/)
-* [DevSecOps tools for open source projects in JavaScript and Node.Js](https://snyk.io/blog/devsecops-tools-for-open-source-projects-in-javascript-and-node-js/)
+* [DevSecOps tools for open-source projects in JavaScript and Node.Js](https://snyk.io/blog/devsecops-tools-for-open-source-projects-in-javascript-and-node-js/)
