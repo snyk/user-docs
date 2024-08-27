@@ -6,7 +6,7 @@ The following Snyk plugins and extensions are available.
 * [JetBrains plugins](jetbrains-plugins/)
 * [Visual Studio extension](visual-studio-extension/)
 * [Visual Studio Code extension](visual-studio-code-extension/)
-* [Language Server](snyk-language-server.md)
+* [Language Server](snyk-language-server/)
 
 Snyk Security plugins and extensions find and fix security vulnerabilities and issues in Snyk Projects. This allows individual developers, open source contributors, and code maintainers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
 

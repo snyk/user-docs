@@ -178,7 +178,7 @@ Use the information in the Cloud Compliance Issues report to investigate, triage
 
 ## Developer IDE and CLI usage
 
-To use this report, you must ensure you have met the following prerequisites:&#x20;
+To use this report, you must ensure you have installed the following prerequisites:&#x20;
 
 * Snyk CLI version 1.1292.1 or newer
 * VS Code 1.86.0 or newer and Snyk Security plugin 2.3.3 or newer
