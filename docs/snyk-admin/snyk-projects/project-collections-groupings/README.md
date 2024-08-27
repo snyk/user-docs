@@ -41,7 +41,7 @@ Project views can be created by any user in an Organization, while Project colle
 * Delete&#x20;
 * Edit
 
-For more information, see [Manage permissions](https://docs.snyk.io/snyk-admin/manage-users-and-permissions/managing-permissions).
+For more information, see [Pre-defined roles](../../user-roles/pre-defined-roles.md).
 {% endhint %}
 
 In the Snyk Web UI and API, you can:&#x20;
