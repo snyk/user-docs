@@ -2,51 +2,44 @@
 
 ## Recommended deployment order
 
-To ensure a smooth deployment for your team, follow the stages outlined below for each integration.
+A smooth deployment of Snyk in your company structure requires a planned rollout. Follow the steps below for each integration stage to limit the risk of causing friction in your software development life cycle ([SDLC](https://snyk.io/learn/secure-sdlc/)).
 
-If you try to implement all the SCM integration features at the same time, you risk causing friction in your software development life cycle ([SDLC](https://snyk.io/learn/secure-sdlc/)), which in turn leads to a poor developer experience.
+| Deployment stages                                                                                                                                                                                                                                                                   | Configurations and tests                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Outcome                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-1-set-up-your-scm-integration"><strong>Stage 1:</strong></a><br>Set up an Organization-level SCM integration in your first Snyk Organization.<br><br>Set up a Group-level SCM integration in Snyk AppRisk.</p> | <p>See the <a href="../#organization-level-snyk-scm-integrations">setup documentation</a> for the applicable SCM integration, and read the <a href="../#user-permissions-and-access-scope-requirements">User permissions and access scope requirements</a> section to ensure accessibility for the right users in your Snyk hierarchy.<br><br>See the <a href="../#group-level-snyk-apprisk-scm-integrations">setup documentation</a> for the applicable AppRisk SCM integration.</p> | <p>A configured integration, ready to import Projects.<br><br>AppRisk will detect your Git repositories so you can track your progress in rolling out Snyk scanning.</p>                                                                                                                                                                                         |
+| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-2-import-projects"><strong>Stage 2:</strong></a><br>Import all of the relevant projects from your integrated SCM.</p>                                                                                          | <p>• Test both public and private repos</p><p>• Disable all user notifications</p><p>• Disable Snyk PR status checks</p><p>• Disable Automatic fix pull requests</p><p>• Disable Automatic dependency upgrade pull requests</p><p>• Disable Update Dockerfile base images</p>                                                                                                                                                                                                         | <p>Snyk will scan your imported repositories to detect all supported files and create them as Projects where you can view the vulnerabilities detected.<br><br>Disabling these features removes potential blockers for your initial setup and use of Snyk. This way, you have scheduled scans and high visibility of reporting without blocking deployments.</p> |
+| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-3-enable-snyk-test-on-prs">Stage 3:</a><br>Build a fix plan using Snyk prioritization reporting capabilities.</p>                                                                                              | Learn more about [Snyk Priority Score](../../../manage-risk/prioritize-issues-for-fixing/priority-score.md) and [Snyk Risk Score](../../../manage-risk/prioritize-issues-for-fixing/risk-score.md) to understand how you can leverage these features to help prioritize which issues to fix.                                                                                                                                                                                          | Alignment between Developers and Security on what should be fixed and when to streamline the fix process.                                                                                                                                                                                                                                                        |
+| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-4-enable-blocking-prs"><strong>Stage 4:</strong></a><br>Configure Snyk PR Checks and auto-fix PRs to alert developers to issues in real-time, with available fixes.</p>                                        | Enable [Snyk PR status checks](../../../scan-with-snyk/pull-requests/) so developers know whether their PR contains high-severity issues with available fixes.                                                                                                                                                                                                                                                                                                                        | Make it easy for your developers to see new issues before they are merged into the repository, decreasing the number of new vulnerabilities added and enabling them to make decisions on blocking a merge.                                                                                                                                                       |
+| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-5-automatic-fix-prs">Stage 5:</a><br>Prevent developers from introducing any new vulnerabilities.</p>                                                                                                          | Enable branch protection in your SCM tool so that PRs with failing Snyk PR status checks cannot be merged.                                                                                                                                                                                                                                                                                                                                                                            | This change will prevent PRs from being merged into your repository if Snyk detects new vulnerabilities. Over time, you can adjust the sensitivity of the check to include all high or critical severity issues, regardless of whether a fix is available.                                                                                                       |
+| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-6-dependency-upgrade-prs">Stage 6:</a><br>Enable Snyk automated features to fix issues and keep dependencies up-to-date to reduce technical security debt.</p>                                                 | <p>Enable <a href="https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests#automated-snyk-prs">Automatic fix pull requests</a>.<br>Enable <a href="https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs">Automatic dependency upgrades</a>.</p>                                                                                                                                      | Snyk will automatically raise PRs to fix issues with the highest severity. Keeping your dependencies up to date helps to reduce future design headaches and hot fixes, which can be time consuming to research and address.                                                                                                                                      |
 
-| **Deployment Stages**                                                                                                                                                                                                                   | **Configurations**                                                                                                                                                                                                             | **Outcome**                                                                                               |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-1-set-up-your-scm-integration"><strong>Stage 1</strong></a></p><p>Set up your Git repository integration</p>                                                       | See the configuration documentation for each [Git repository integration](../)                                                                                                                                                 | A configured integration, ready to import Projects                                                        |
-| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-2-import-projects"><strong>Stage 2</strong></a></p><p>Import all of the Projects from your Git repository.</p>                                                     | <p>• Test both public and private repos</p><p>• Disable all user notifications</p><p>• Disable Snyk PR checks</p><p>• Disable Auto-fix PRs</p><p>• Disable Failing PR checks</p><p>• Disable Automatic dependency upgrades</p> | A complete Software Bill of Materials (SBOM) that enables you to assess risk across your applications.    |
-| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-3-enable-snyk-test-on-prs"><strong>Stage 3</strong></a></p><p>Developer and Security teams use Snyk prioritization reporting capabilities to build a fix plan.</p> | Watch this [video ](https://www.youtube.com/watch?v=\_kAY94JwQHY)to learn more about Snyk prioritization reporting.                                                                                                            | Alignment between Developers and Security on what should be fixed and when to streamline the fix process. |
-| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-4-enable-blocking-prs"><strong>Stage 4</strong></a></p><p>Alert developers to issues in real time and educate them on available fixes.</p>                         | <p>• Enable Snyk PR checks and fail PRs if they contain high-severity issues with available fixes</p><p>• Enable Auto-fix PRs</p>                                                                                              | Improve your organization’s mean-time-to-fix (MTTF).                                                      |
-| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-5-automatic-fix-prs"><strong>Stage 5</strong></a></p><p>Prevent developers from introducing any new vulnerabilities</p>                                            | Enable Failing PR checks for ANY high-severity issues (fix or no fix)                                                                                                                                                          | ‘Secure by Design’ methodology achieved.                                                                  |
-| <p><a href="deployment-recommendations-for-scm-integrations.md#stage-6-dependency-upgrade-prs"><strong>Stage 6</strong></a></p><p>Reduce technical security debt</p>                                                                    | Enable [Automatic dependency upgrades](../../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/)                                                                         | Reduce future design headaches and hot fixes, which can be time-consuming to research and address.        |
+## Stage 1: Set up your Organization and Group-level SCM integrations
 
-## Stage 1: Set up your Git integration
-
-Snyk has pre-built integrations for Git repositories, including GitHub, GitHub Enterprise, Bitbucket Cloud, and others.
+Snyk has Organization-level SCM integrations available, including GitHub, GitHub Enterprise, Bitbucket Cloud, and more.
 
 See [Set up an integration](../../../getting-started/quickstart/set-up-an-integration.md) for details.
+
+Snyk has Group-level SCM integrations available for Snyk AppRisk, including GitHub, GitLab, Azure DevOps, and Bitbucket.
+
+See [Group level Snyk AppRisk SCM integrations](../#group-level-snyk-apprisk-scm-integrations) for details.
 
 ### **SCM permissions on repositories**
 
 Operations triggered using the Snyk UI, such as opening a Fix PR or retesting a Project, are performed for the acting user. Thus to perform these operations, you must connect your own SCM user or service account. This gives Snyk the required permissions for the repositories where you want to perform these operations.
 
-For example, in GitHub, the accounts connected to Snyk need the following access on the target repositories:
-
-| **Action**                                              | **Purpose**                                                                                                                                  | **Required permissions on the repository** |
-| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| **Daily / weekly tests**                                | Used to read manifest files in private repos                                                                                                 | _**Write**_ or higher                      |
-| **Snyk tests on pull requests**                         | Used to send pull request status checks when a new PR is created or an existing PR is updated                                                |                                            |
-| **Opening fix and upgrade pull requests**               | Used to send fix or upgrade PRs in the monitored repos                                                                                       |                                            |
-| **Snyk tests on pull requests - initial configuration** | Used to add Snyk webhooks to the imported repos, to notify Snyk when pull requests are created or updated, and enable Snyk to trigger a scan | _**Admin**_                                |
+For details on these permissions, see [User permissions and access scope requirements](../#user-permissions-and-access-scope-requirements) for your chosen SCM integration.
 
 ### **Change notification settings**
 
-By default, Snyk emails every Org user when a new issue or fix in a Project’s dependencies is found, and provides each user with a weekly update of the security status across the Organization. If you plan to import many Projects to an Organization, to avoid sending multiple email notifications sent to users, consider disabling all the notifications for that Org.
+By default, Snyk emails every Org user when a new issue or fix in a Project’s dependencies is found, and provides each user with a weekly update of the security status across the Organization. If you plan to import many Projects to an Organization, to avoid sending multiple email notifications sent to users, consider disabling all the notifications for that Organization.
 
-To customize the emails your Org users receive, go to **Settings** <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> > **Notifications > Notification Setting**. The changes you make here will affect all of your Organization’s members, although Org users can override these default settings in their user-level account settings.
+To customize the emails your Org users receive, go to **Settings** > **Notifications > Notification Setting**. The changes you make here will affect all of your Organization’s members, although Org users can override these default settings in their user-level account settings.
 
 To disable notifications for all the users in an Org ahead of your import, deselect the appropriate notification boxes. See [Manage notifications](../../../snyk-admin/manage-notifications.md) for more details.
 
 ## Stage 2: Import Projects
 
 Navigate to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.
-
-<figure><img src="../../../.gitbook/assets/image (2) (4) (1) (1) (1) (1) (1) (1) (1).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
 
 * Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as Projects.
 * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
@@ -55,7 +48,7 @@ Navigate to the **Projects** page in the Snyk UI, select **Add projects**, selec
   After a Project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (223) (2) (2).png" alt="Check next to name of repo" data-size="line">
+To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a ✔ next to the repository name.
 {% endhint %}
 
 See [Import a Project](../../../getting-started/quickstart/import-a-project.md) for more details.
@@ -65,8 +58,6 @@ See [Import a Project](../../../getting-started/quickstart/import-a-project.md) 
 ### **PR test settings and workflows**
 
 By default, Snyk scans every pull request submitted on your monitored repositories and displays the results and recommendations grouped together in a single security check and a single license check.
-
-<figure><img src="../../../.gitbook/assets/checks-passed.png" alt="Security check"><figcaption><p>Security check</p></figcaption></figure>
 
 ### **Status details**
 
@@ -79,8 +70,6 @@ Click the **Details** link to display the status of the Snyk check. The status o
   * Your manifest file may be out of sync
   * Snyk could not read the manifest file
   * Snyk could not find the manifest file
-
-<figure><img src="../../../.gitbook/assets/security-check (1).png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
 
 ### **Manage PR Check settings**
 
@@ -118,10 +107,6 @@ To align vulnerability severity with your internal policy, use security policies
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk emails you and opens automated PRs with fixes for the repositories.
 
-The example that follows shows a fix pull request opened by Snyk:
-
-<figure><img src="../../../.gitbook/assets/mceclip0 (1).png" alt="Fix pull request opened by Snyk"><figcaption><p>Fix pull request opened by Snyk</p></figcaption></figure>
-
 To configure the automatic fix PR settings for all Projects in an Organization, select the relevant Organization and navigate to Organization **Settings** > **Integrations > Edit Settings.**
 
 <div align="center">
@@ -136,25 +121,7 @@ Settings can also be configured per Project by selecting the specific Project in
 
 Snyk recommends that you exclude patches from the auto fix PRs if your developers are not familiar with how to use and execute them.
 
-Ask your developers to consider the merge advice label that appears on the auto fix PRs:
-
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (17) (20).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
-
-</div>
-
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (13) (18).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
-
-</div>
-
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (29) (15).png" alt="Merge advice label - not enough data yet" width="312"><figcaption><p>Merge advice label - not enough data yet</p></figcaption></figure>
-
-</div>
+Ask your developers to consider the merge advice label that appears on the auto fix PRs.
 
 {% hint style="info" %}
 Snyk auto fix PRs are generated only for new issues.
@@ -165,8 +132,6 @@ If your SCM is GitHub and you are not using Snyk Broker, then by default, Snyk r
 ## Stage 6 - Dependency Upgrade PRs
 
 When your Group is ready to start tackling security technical debt, you can configure Snyk to automatically create pull requests (PRs) on your behalf to upgrade your dependencies.
-
-<figure><img src="../../../.gitbook/assets/upgrade-node-uuid.png" alt="Automatic upgrade PR"><figcaption><p>Automatic upgrade PR</p></figcaption></figure>
 
 ### **How Automatic upgrade PRs work**
 
@@ -190,9 +155,7 @@ Snyk supports automatic upgrade PRs for npm, Yarn, and Maven-Central Projects th
 To set PR Settings on the Project level and override the PR settings configured at the Organization level:
 
 1. Open the Organization for which you would like to enable automatic upgrade PRs and go to the **Projects** tab.
-2.  Select and expand the relevant Project, select the relevant Target, and using the cog icon, open the **Settings**:
-
-    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (2).png" alt="Cog icon for Project settings" data-size="original">
+2. Select and expand the relevant Project, select the relevant Target, and using the cog icon, open the **Settings.**
 3. In the Settings area, in the left panel menu, click the Integration settings to apply unique settings for that specific Project.
 4. In settings that load, scroll to the **Automatic dependency upgrade pull requests** and click **Disabled**.
 5. In the options that appear:
@@ -203,5 +166,3 @@ To set PR Settings on the Project level and override the PR settings configured 
       This field accepts only lowercase letters.
    3. After you click **Upgrade dependency settings**, each time Snyk scans this Project, Snyk automatically submits upgrade PRs based on the scan results.\
       If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, before Snyk can raise a new PR, the existing PR must be closed or merged.
-
-<figure><img src="../../../.gitbook/assets/general-github_integration.png" alt="Automatic dependency pull request settings"><figcaption><p>Automatic dependency pull request settings</p></figcaption></figure>
