@@ -68,6 +68,12 @@ Developers can now use the security feature to view recent vulnerabilities found
 Only security vulnerabilities will be shown on the Jira Security tab.
 {% endhint %}
 
+### Deleting a target or repository
+
+To delete a target or repository from Snyk that you have connected to Jira, you must first delete the container code repository in Jira, through the **Security** panel in each Jira Project. Then you can remove the target or repository from Snyk.
+
+<figure><img src="../../.gitbook/assets/2024-08-27_14-05-04.png" alt="Remove connected security containers in the Jira Security panel" width="335"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
+
 ## Manage security vulnerabilities in Jira
 
 After installing and configuring the Snyk Security in Jira Cloud app, you can view vulnerabilities on the security tab on the Jira project page.
