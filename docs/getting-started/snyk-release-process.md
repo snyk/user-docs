@@ -37,6 +37,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
 * [Snyk broker commit signing](../enterprise-configuration/snyk-broker/snyk-broker-commit-signing.md)
 * [Improved .NET scanning](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
+* [Snyk CLI pnpm support](../supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm)
 
 ## General Availability
 
