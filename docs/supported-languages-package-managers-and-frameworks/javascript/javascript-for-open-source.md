@@ -2,11 +2,13 @@
 
 ## Snyk for JavaScript support
 
-**Package managers**: npm, Yarn
+**Package managers**: npm, pnpm, Yarn
 
 **Package manager versions**:&#x20;
 
 npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3, 7.*`
+
+pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`
 
 Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
 
@@ -28,11 +30,11 @@ Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
 
 ## Open source and licensing
 
-The following summarizes Snyk Open Source support for npm and Yarn and partial support for Lerna.
+The following summarizes Snyk Open Source support for npm, pnpm and Yarn, and partial support for Lerna.
 
 ### npm
 
-The following table shows the npm lockfile versions and Snyk features availability matrix.
+The following table provides a matrix for npm lockfile versions and Snyk features availability.
 
 | Lockfile version | CLI support | Git support | License scanning | Fix PRs |
 | ---------------- | ----------- | ----------- | ---------------- | ------- |
@@ -40,11 +42,11 @@ The following table shows the npm lockfile versions and Snyk features availabili
 | Lockfile v2      | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
 | Lockfile v3      | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
 
-**Peer dependencies**
+#### **Peer dependencies**
 
-In npm v7 and above, the behavior of **peer dependencies** changes if they are being installed by default. To match this in npm v7+ Projects, Snyk assumes peer dependencies are installed and scans them by default.
+In npm v7 and above, the behavior of **peer dependencies** changes if they are being installed by default. To match this in npm v7+ projects, Snyk assumes peer dependencies are installed and scans them by default.
 
-The only case in which an npm v7+ Project ignores peer dependencies is if they are explicitly marked as optional in the `peerDependenciesMeta` object in the `package.json` as shown here for `cache-manager`:
+An npm v7+ project ignores peer dependencies only if they are explicitly marked as optional in the `peerDependenciesMeta` object in the `package.json` as shown here for `cache-manager`:
 
 ```json
 {
@@ -58,13 +60,13 @@ The only case in which an npm v7+ Project ignores peer dependencies is if they a
 }
 ```
 
-In npm v6 and below, peer dependencies are not scanned by default, as the package manager does not install them by default. To scan peer dependencies, make sure they are installed, and then run the CLI with the `--peer-dependencies` option.
+In npm v6 and below, peer dependencies are not scanned by default, as the package manager does not install them by default. To scan peer dependencies, ensure they are installed, and then run the CLI with the `--peer-dependencies` option.
 
-**Lockfile versions**
+#### **Lockfile versions**
 
-Snyk uses the `package-lock.json` lockfile when present to generate a dependency tree for your Project. These lockfiles come in different versions.
+Snyk uses the `package-lock.json` lockfile when present to generate a dependency tree for your project. These lockfiles come in different versions.
 
-Lockfile v1 was used in npm v5 and v6. Two new formats were introduced in npm v7 - lockfile v2 and lockfile v3 (see [lockfileVersion](https://docs.npmjs.com/cli/v9/configuring-npm/package-lock-json#lockfileversion)).
+Lockfile v1 was used in npm v5 and v6. Two new formats were introduced in npm v7 - lockfile v2 and lockfile v3. For more information, see [lockfileVersion](https://docs.npmjs.com/cli/v9/configuring-npm/package-lock-json#lockfileversion).
 
 You can see which lockfile format you are using in the `package-lock.json`, as follows:
 
@@ -82,11 +84,37 @@ If you want to force npm to create a specific lockfile version, use the npm `--l
 npm install --lockfile-version=2
 ```
 
+### **pnpm**
+
+{% hint style="warning" %}
+**Release status**
+
+Snyk CLI pnpm support is in Early Access.
+
+Enable it using **Settings** > **Snyk Preview**, and install CLI v1.1293.0 or above.
+{% endhint %}
+
+The following table shows a matrix of pnpm versions and Snyk features availability.
+
+| pnpm version | CLI support        | Git support | License scanning   | Fix PRs |
+| ------------ | ------------------ | ----------- | ------------------ | ------- |
+| pnpm 7       | ✔︎ (Early Access)  |             | ✔︎ (Early Access)  |         |
+| pnpm 8       | ✔︎ (Early Access)  |             | ✔︎ (Early Access)︎ |         |
+| pnpm 9       | ✔︎ (Early Access)︎ |             | ✔︎ (Early Access)︎ |         |
+
+**Lockfile versions**
+
+Snyk uses the `pnpm-lock.yaml` lockfile to generate a dependency tree for your project.&#x20;
+
+The supported lockfile versions are 5.4, 6.x and 9.x, corresponding to pnpm 7, 8 and 9.
+
+pnpm lockfiles do not include [bundledDependencies](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#bundledependencies), so Snyk does not include them in scans.
+
 ### **Yarn**
 
-Snyk uses the Yarn lockfile (`yarn.lock`) to generate a representation of Project dependencies.
+Snyk uses the Yarn lockfile (`yarn.lock`) to generate a representation of project dependencies.
 
-The files Snyk relies on to scan a Project may change on version upgrades of the package manager. Snyk lists only versions verified internally as supported.
+The files Snyk relies on to scan a project may change on version upgrades of the package manager. Snyk lists only versions verified internally as supported.
 
 If you are using a newer version of Yarn than is listed on this page, you may find Snyk performs as expected because Yarn is using a lockfile version that is already supported. That version of Yarn has likely not been evaluated and, thus, not added to this page.&#x20;
 
@@ -106,9 +134,9 @@ Because different versions of Yarn have different feature sets, there are differ
 
 ### Lerna
 
-Snyk does not fully support **Lerna**. If your Project is set up using Yarn Workspaces, you can scan the Project in the same way you scan any Yarn Workspaces Project.
+Snyk does not fully support **Lerna**. If your project is set up using Yarn Workspaces, you can scan the project in the same way you scan any Yarn Workspaces project.
 
-If your Lerna Project is set up using Yarn Workspaces, you can run `snyk test` and `snyk monitor` as follows:
+If your Lerna project is set up using Yarn Workspaces, you can run `snyk test` and `snyk monitor` as follows.
 
 For each example package, you can use the following:
 
@@ -121,62 +149,59 @@ Alternatively, you can specify a script to automate scanning of nested `package.
 ls packages | xargs -I PKG_NAME snyk monitor --file=packages/PKG_NAME/package.json
 ```
 
-### Steps to start scanning using npm and Yarn
+## Steps to start scanning using npm, pnpm and Yarn
 
-The following table lists the steps to start scanning your dependencies. It covers basic commands, such as `snyk test` and `snyk monitor`. To check the full list, see [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).
+The following table lists the steps to start scanning your dependencies. It covers basic commands, such as `snyk test` and `snyk monitor`. For a full list of CLI commands, see the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).
 
-| Package manager | Getting started                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Description                                                                                                                                                                                                                                                    |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| npm             | <ol><li>Install NPM.</li><li>Make sure you are in a directory with NPM Project files, that is, <code>package.json</code> and <code>package-lock.json</code>.</li><li>Run <code>npm install</code>.</li><li>Run <a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk commands</a>.</li><li>(Optional) Run command options for <a href="../../snyk-cli/commands/test.md#options-for-npm-projects">snyk test</a> and <a href="../../snyk-cli/commands/monitor.md#options-for-npm-projects">snyk monitor</a>.<br></li></ol> | <p>Snyk analyzes your <code>package.json</code> and <code>package-lock.json</code> files to build a fully structured dependency tree. </p><p></p><p>If the <code>package-lock.json</code> is missing, Snyk analyzes your <code>node_modules</code> folder.</p> |
-| Yarn            | <ol><li>Install Yarn.</li><li>Make sure you are in a directory with Yarn Project files, that is, <code>package.json</code> and <code>yarn.lock</code>.</li><li>Run <code>yarn</code></li><li>Run <a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk commands</a>.</li><li>(Optional) Run command options for <a href="../../snyk-cli/commands/test.md#options-for-yarn-projects">snyk test</a> and <a href="../../snyk-cli/commands/monitor.md#options-for-yarn-projects">snyk monitor</a>.</li></ol>                 | <p>Snyk analyzes your <code>package.json</code> and <code>yarn.lock</code> files to build a fully structured dependency tree. </p><p></p><p>If the <code>yarn.lock</code> is missing, Snyk analyzes your <code>node_modules</code> folder.</p>                 |
+| Package manager | Getting started                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                               |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| npm             | <ol><li>Install npm.</li><li>Ensure you are in a directory with npm project files, that is, <code>package.json</code> and <code>package-lock.json</code>.</li><li>(Optional) Run <code>npm install</code>.</li><li>Run <a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk commands</a>.</li><li>(Optional) Run command options for <a href="../../snyk-cli/commands/test.md#options-for-npm-projects">snyk test</a> and <a href="../../snyk-cli/commands/monitor.md#options-for-npm-projects">snyk monitor</a>.<br></li></ol>                         | <p>Snyk analyzes your <code>package-lock.json</code> files to build a dependency tree. </p><p></p><p>If the <code>package-lock.json</code> is missing, Snyk analyzes your <code>node_modules</code> folder. </p><p></p><p>Alternatively, run <code>npm install</code> to generate the lockfile first.</p> |
+| pnpm            | <ol><li>Install pnpm</li><li>Make sure that you are in a directory with pnpm project files, that is, <code>package.json</code> or <code>pnpm</code>and <code>pnpm-lock.yaml</code>.</li><li>(Optional)  Run <code>pnpm install</code>.</li><li>Run <a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk commands</a>.</li><li>(Optional) Run command options for <a href="../../snyk-cli/commands/test.md#options-for-npm-projects">snyk test</a> and <a href="../../snyk-cli/commands/monitor.md#options-for-npm-projects">snyk monitor</a>.</li></ol> | <p>Snyk analyzes your<code>pnpm-lock.yaml</code> files to build a dependency tree. <br><br>If the <code>pnpm-lock.yaml</code> is missing, Snyk analyzes your <code>node_modules</code> folder. <br><br>Alternatively, run <code>pnpm install</code> to generate the lockfile first.</p>                   |
+| Yarn            | <ol><li>Install Yarn.</li><li>Make sure you are in a directory with Yarn project files, that is, <code>package.json</code> and <code>yarn.lock</code>.</li><li>(Optional) Run <code>yarn install</code></li><li>Run <a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk commands</a>.</li><li>(Optional) Run command options for <a href="../../snyk-cli/commands/test.md#options-for-yarn-projects">snyk test</a> and <a href="../../snyk-cli/commands/monitor.md#options-for-yarn-projects">snyk monitor</a>.</li></ol>                              | <p>Snyk analyzes your <code>yarn.lock</code> files to build a dependency tree. </p><p></p><p>If the <code>yarn.lock</code> is missing, Snyk analyzes your <code>node_modules</code> folder. </p><p></p><p>Alternatively, run <code>yarn install</code> to generate the lockfile first.</p>                |
 
-For Yarn Workspaces, only the `package.json` file is updated for Snyk Fix PRs. The `yarn.lock` file is not updated.
+## Support for monorepos and workspaces
 
-## Monorepo Projects
+Yarn, npm, and pnpm support workspaces, to help manage monorepos containing multiple sub-projects.
 
-Snyk scans one manifest file at a time. For information about scanning all manifest files, see [Does the Snyk CLI support monorepos or multiple manifest files?](https://support.snyk.io/hc/en-us/articles/360000910577-Does-the-Snyk-CLI-support-monorepos-or-multiple-manifest-files-)
+Workspaces are supported in the Snyk CLI for the following CLI options:
 
-### **Scan all npm workspaces**
-
-NPM v7 introduced the concept of **workspaces**. See [lockfile version and Snyk feature availability matrix](javascript-for-open-source.md#npm).&#x20;
-
-To detect and scan all workspaces in your npm Project, use the `--all-projects` Snyk CLI parameter, as follows:
-
-```javascript
-snyk test --all-projects
-```
-
-### **Scan all Yarn workspaces**
-
-{% hint style="info" %}
-`nohoist`is **not** supported by Yarn Workspaces.
-
-For Yarn Workspaces, only the `package.json` file is updated for Snyk Fix PRs. The `yarn.lock` file is not updated.
-{% endhint %}
-
-For Yarn Workspaces, you can use the following options:
-
-* `--all-projects` : Test and monitor your packages with other Projects or `--yarn-workspaces` , scanning only Yarn Workspaces Projects. The root lock file is referenced when scanning all the packages.&#x20;
-* `--detection-depth` : Find sub-folders that are not auto-discovered by default.
-* `--strict-out-of-sync=false` : Relax strict synchronization requirements for packages in a Yarn workspace. When set to `false` , you can run Snyk tests with unsynchronized `package.json` and the `package-lock.json` files without throwing errors. Using different dependency versions can introduce potential risks, such as compatibility issues or security vulnerabilities.
+* `--all-projects` : Discover and scan all Yarn,  npm and pnpm workspaces projects, along with projects from other supported ecosystems. The root lock file is referenced when scanning the workspace projects.
+* `--detection-depth` : Specify how many sub-directory levels to search.
+* `--strict-out-of-sync=false` :  Allow testing out-of-sync lockfiles for packages in a  workspace. When this option is set to `false` , you can run Snyk tests with unsynchronized manifest and lock files without causing errors.
 * `--policy-path` : Specify the path to a policy used by Snyk during testing.
 
-### Examples of scanning Yarn workspaces
+### Examples of scanning workspaces
 
-Scan the packages that belong to any discovered workspaces in this directory, five deep sub-directories, and any other Projects detected.
+Scan all workspaces projects in the current directory and five sub-directories deep, plus any other Projects types detected.
 
-```javascript
+```bash
 snyk test --all-projects --strict-out-of-sync=false --detection-depth=6 
 ```
 
-Scan only the Yarn Workspace packages that belong to any discovered workspaces in this directory and five deep sub-directories.
+Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path. For details about this file, see [The .snyk file](https://docs.snyk.io/manage-risk/policies/the-.snyk-file).
 
-```javascript
-snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6
-```
-
-Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path (see [The .snyk file](../../manage-risk/policies/the-.snyk-file.md)).
-
-```javascript
+```bash
 snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
 ```
+
+### **npm workspaces example**
+
+npm v7 introduced support for workspaces. See the [lockfile version and Snyk feature availability matrix](javascript-for-open-source.md#npm).&#x20;
+
+To detect and scan all workspaces in your npm Project, use the CLI options described above.
+
+### **pnpm workspaces example**
+
+pnpm workspaces must have the `package.json`, `pnpm-lock.yaml` and `pnpm-workspace.yaml` files in the root directory.
+
+To detect and scan all workspaces in your pnpm Project, use the CLI options described above.
+
+### **Yarn workspaces example**
+
+{% hint style="info" %}
+`nohoist`is not supported for Yarn Workspaces.
+{% endhint %}
+
+To detect and scan all workspaces in your Yarn Project, use the CLI options identified for monorepos and workspaces, as well as this Yarn-specific opton:
+
+`--yarn-workspaces` : Use instead of `--all-projects` to detect and scan only Yarn workspaces projects when a lockfile is present in the root. Other ecosystems will be ignored.
