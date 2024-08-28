@@ -17756,7 +17756,7 @@ components:
           description: If set to `true`, Include issue's description, if set to `false` (by default), it won't (Non-IaC projects only)
         includeIntroducedThrough:
           type: boolean
-          description: If set to `true`, Include issue's introducedThrough, if set to `false` (by default), it won't. It's for container only projects (Non-IaC projects only)
+          description: If set to `true`, include the dockerfile instruction that the issue is introducedThrough. If set to false (default), it won’t. This only applies to Container projects with an associated Dockerfile (CLI or Container Registry source)
         filters:
           $ref: '#/components/schemas/aggregatedProjectIssuesfilter'
     Issuepaths:
