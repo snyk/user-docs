@@ -12,7 +12,7 @@ Snyk is dedicated to the secure and responsible handling of user data, with a st
 
     Through this program, Snyk encourages the community to report potential vulnerabilities in open-source packages, facilitating quick identification, validation, and remediation to enhance security.&#x20;
 * [**Reporting security issues**](reporting-security-issues.md)\
-  Snyk requests vulnerabilities in the Snyk application be reported according to the process explained on this page.
+  Snyk requests that vulnerabilities in a Snyk service be reported according to the process explained on this page.
 *   [**Snyk Terms of Support and Services Glossary**](snyk-terms-of-support-and-services-glossary/)
 
     Snyk provides this glossary to outline the scope of support, service level agreements (SLAs), confidentiality commitments, and the responsibilities of Snyk and its customers for transparent and clear service expectations.
