@@ -1,5 +1,7 @@
 # Reporting security issues
 
+Snyk requests that vulnerabilities in a Snyk service be reported according to the process explained on this page.
+
 ## How to report a security issue in a Snyk service
 
 Snyk values the security community and believes that responsible disclosure of security vulnerabilities helps ensure the security and privacy of all users.
