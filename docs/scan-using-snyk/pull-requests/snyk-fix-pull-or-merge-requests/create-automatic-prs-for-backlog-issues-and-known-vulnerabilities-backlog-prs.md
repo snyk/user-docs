@@ -35,7 +35,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 1. Open Snyk Web UI and navigate to **Settings >** **Integrations**.
 2. Select a Git repository integration (SCM). For this example, GitHub is configured.
 3. Under **Automatic Fix PRs,** enable **Known vulnerabilities (backlog)**.\
-   This retrieves vulnerabilities from the Project's backlog, which have been previously declared.
+   This retrieves previously declared vulnerabilities from the Project's backlog.
 
 <figure><img src="../../../.gitbook/assets/Automatic fix PRs settings for Git integration.png" alt="Automatic fix PRs settings for Git integration."><figcaption><p>Automatic Fix PRs settings for Git integration</p></figcaption></figure>
 
@@ -59,7 +59,7 @@ You can configure Automatic fix PRs to work only for specific Projects rather th
 3. In the **Automatic fix pull requests** section:
    * Select **Customize for only this project**
    * Enable **Known vulnerabilities (backlog)**
-4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md#configure-automatic-fix-prs-at-the-integration-level).
+4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md#configure-automatic-fix-prs-at-the-integration-level).
 5. Click **Save changes**.
 
 <figure><img src="../../../.gitbook/assets/Automatic fix PRs settings at the Project level.png" alt="Automatic fix PRs settings at the Project level."><figcaption><p>Automatic Fix PRs settings at the Project level</p></figcaption></figure>

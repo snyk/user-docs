@@ -471,7 +471,7 @@
   * [Pull Requests](scan-with-snyk/pull-requests/README.md)
     * [Snyk Pull or Merge Requests](scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/README.md)
       * [Create automatic PRs for new fixes (Fix PRs)](scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-new-fixes.md)
-      * [Create automatic PRs for backlog issues and known vulnerabilities (Backlog PRs)](scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-fix-prs-for-backlog-issues-and-known-vulnerabilities.md)
+      * [Create automatic PRs for backlog issues and known vulnerabilities (Backlog PRs)](scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)
       * [Upgrade dependencies with automatic PRs (Upgrade PRs)](scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/README.md)
         * [Upgrade open source dependencies with automatic PRs](scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-open-source-dependencies-with-automatic-prs.md)
         * [Upgrade private dependencies with automatic PRs](scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-private-dependencies-with-automatic-prs.md)
