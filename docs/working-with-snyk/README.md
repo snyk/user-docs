@@ -10,8 +10,10 @@ Snyk is dedicated to the secure and responsible handling of user data, with a st
     Snyk offers regional hosting to comply with regional data protection laws and improve service performance. This ensures data residency requirements are met and reduces data latency.
 *   [**Disclosure of a vulnerability in an open-source package**](disclosure-of-a-vulnerability-in-an-open-source-package.md)
 
-    Snyk's program encourages the community to report potential vulnerabilities in open-source packages, facilitating quick identification, validation, and remediation to enhance security.&#x20;
+    Through this program, Snyk encourages the community to report potential vulnerabilities in open-source packages, facilitating quick identification, validation, and remediation to enhance security.&#x20;
+* [**Reporting security issues**](reporting-security-issues.md)\
+  Snyk requests vulnerabilities in the Snyk application be reported according to the process explained on this page.
 *   [**Snyk Terms of Support and Services Glossary**](snyk-terms-of-support-and-services-glossary/)
 
-    Outlines the scope of support, service level agreements (SLAs), confidentiality commitments, and the responsibilities of Snyk and its customers for transparent and clear service expectations.
+    Snyk provides this glossary to outline the scope of support, service level agreements (SLAs), confidentiality commitments, and the responsibilities of Snyk and its customers for transparent and clear service expectations.
 
