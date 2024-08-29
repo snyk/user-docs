@@ -1,6 +1,6 @@
 # Guidance for Java and Kotlin
 
-Use this guide to apply Snyk effectively in your technology stack.
+This guide is provided to help you apply Snyk effectively in your technology stack.
 
 ## Package Registry Integrations (Artifactory/Nexus) - Maven
 
@@ -49,7 +49,7 @@ Developer dependencies (`scope=test`) are ignored as they are not pushed to prod
 * Snyk will interact with the package manager to produce a list of dependencies.
 * Typically Gradle will execute code and other actions during the build process that will impact the installed dependencies, so the CLI workflow is recommended if a gradle.lockfile is not present.
 
-### [**Kotlin**](#user-content-fn-1)[^1]
+### Kotlin
 
 The following manifest files are supported:
 
@@ -58,14 +58,11 @@ The following manifest files are supported:
 
 See the [Java and Kotlin](./#open-source-and-licensing) page for more details about the supported features.
 
-### **Other**
+### **APIs**
 
-Sometimes customers develop advanced dependency management strategies and may not necessarily use the standard/well-traveled package managers. For that reason, Snyk has provided test APIs
+Sometimes customers develop advanced dependency management strategies and may not necessarily use the standard and frequently used package managers. For that reason, Snyk has provided test APIs.
 
-* One-time testing API
-  * Test - will generate a dependency tree. See [Test](https://snyk.docs.apiary.io/#reference/test) docs.
-    * [Maven testing endpoint](https://snyk.docs.apiary.io/#reference/test/maven/test-for-issues-in-a-public-package-by-group-id,-artifact-id-and-version)
-  * [PURL for maven](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org\_id-/packages/-purl-/issues)
+For on-time testing using the Snyk API, you can use the [Test](../../snyk-api/reference/test-v1.md) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) and [Purl for Maven](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues).
 
 ## Snyk Integrations and common usage patterns
 
@@ -141,5 +138,3 @@ The following is a collection of articles from the Snyk Security team and Develo
 * [Log4j vulnerability explained: Prevent Log4Shell RCE by updating to version 2.17.1](https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-44228/)
 * [Best practices for managing Java dependencies](https://snyk.io/blog/best-practices-for-managing-java-dependencies/)
 * [Exploring the Spring security authorization bypass (CVE-2022-31692)](https://snyk.io/blog/spring-security-authorization-bypass-cve-2022-31692/)\\
-
-[^1]: this makes it look like Kotlin is a separate tool like Maven or Gradle. I'd remove the heading, the supported build files are part of Gradle
