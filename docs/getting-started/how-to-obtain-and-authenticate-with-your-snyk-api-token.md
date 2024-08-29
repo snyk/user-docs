@@ -1,6 +1,6 @@
-# How to obtain and authenticate with your Snyk API token
+# How to obtain your Snyk API token
 
-Your Snyk API token is a personal token available under your user profile. A token is required to authenticate with Snyk as an individual user and is also used in `SNYK_TOKEN` parameters. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
+Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
 
 Free, Team, and Trial plan users have access only to this personal token under the user profile. The **personal token can be used** to authenticate with:
 
@@ -16,7 +16,7 @@ Enterprise users have access to a personal token under their profile and to serv
   * Authenticating with the IDE manually
   * Running API calls one time, for example, to test something
 
-For more information on the personal Snyk API token, see the following pages: [Authenticate the CLI with your account](../snyk-cli/authenticate-the-cli-with-your-account.md) and [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
+For more information on the personal Snyk API token, see the following pages: [Authenticate the CLI with your account](../snyk-cli/authenticate-to-use-the-cli.md) and [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
 
 {% hint style="info" %}
 If you are using Snyk on the EU and AU tenants,  you must set your endpoints accordingly before authenticating. For more information, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md).

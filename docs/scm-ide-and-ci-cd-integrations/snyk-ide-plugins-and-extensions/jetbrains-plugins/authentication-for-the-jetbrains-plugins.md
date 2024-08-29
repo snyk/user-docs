@@ -1,44 +1,69 @@
-# Authentication for the JetBrains plugins
+# JetBrains plugin authentication
 
-The first time you start a scan, the plugin automatically downloads the CLI in the background unless you have opted not to download automatically. To use the plugin you must authenticate. There are several ways to authenticate once the plugin is installed.
+To scan your Projects you must authenticate with Snyk.&#x20;
 
-## Automatic authentication
+{% hint style="info" %}
+Before authenticating ensure you configure your Snyk region properly if you use Snyk on the EU and AU tenants. For more information, see [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md#cli-and-ci-pipelines-urls).
+{% endhint %}
 
-After the CLI is installed, you are prompted to authenticate and connect the JetBrains plugin to Snyk.
+Snyk supports the following protocols for authentication:
 
-![Prompt to authenticate and start testing your code.](<../../../.gitbook/assets/Screenshot 2022-02-10 at 17.07.52.png>)
+* OAuth 2.0 (default)
+* Snyk API token (fallback option)
 
-Click **Test code now**. The plugin relies on the Snyk CLI, which authenticates your machine against the Snyk Web UI.
+## Steps to authenticate using the OAuth 2.0 protocol
 
-Click **Authenticate** when prompted by Snyk. If you must enter your token, use your personal token. For more information, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+To authenticate follow these steps:
 
-<figure><img src="../../../.gitbook/assets/authenticate-23-06.png" alt="Authenticate"><figcaption><p>Authenticate</p></figcaption></figure>
+1. After the extension is installed, click the **Snyk icon** in the  navigation bar, then click **Trust project and scan**.
 
-When authentication is complete, a confirmation message appears.
+<figure><img src="../../../.gitbook/assets/SCR-20240821-twbu.png" alt="Snyk idon and connect and trust"><figcaption><p>Snyk icon and connect and trust</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/authentication-complete-23-06.png" alt="Authenticated"><figcaption><p>Authenticated</p></figcaption></figure>
+2. The extension opens a new page in a default browser and asks you to log in to your Snyk account:
 
-The IDE reads and saves the authentication on your local machine.
+<figure><img src="../../../.gitbook/assets/SCR-20240821-qogt.png" alt="Snyk login" width="375"><figcaption><p>Snyk login</p></figcaption></figure>
 
-You can now close the browser window and return to the IDE.
+3. The next page asks for your authorization for the IDE to act on your behalf. Click **Grant app access**.
 
-The analysis starts automatically:
+<figure><img src="../../../.gitbook/assets/SCR-20240821-qnpy.png" alt="Grant app access" width="375"><figcaption><p>Grant app access</p></figcaption></figure>
 
-![Analysis by JetBrains plugin](<../../../.gitbook/assets/Screenshot 2022-02-10 at 17.26.44.png>)
+4. After you authenticate successfully, view the confirmation message.
 
-## Add token manually
+<figure><img src="../../../.gitbook/assets/SCR-20240821-qrgp.png" alt="Successful authentication" width="375"><figcaption><p>Successful authentication</p></figcaption></figure>
 
-1. Get your API token from your Snyk account: [https://app.snyk.io/account](https://app.snyk.io/account)
-2. In the JetBrains plugin navigate to **Preferences** > **Tools** > **Snyk**.
-3. Paste or enter the token under **Connect IDE to Snyk**.
-4. Click **Apply** or **OK**.
+5. The IDE reads and saves the authentication on your local machine. Close the browser window and return to the IDE.&#x20;
 
-![Connect IDE to Snyk token](../../../.gitbook/assets/screen-shot-2021-09-30-at-8.10.21-am.png)
+The analysis starts automatically. If you have problems, see [OAuth 2.0 authentication does not work](../troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md).
 
-## Manual authentication
+{% hint style="info" %}
+OAuth 2.0 tokens are not static and cannot be copied from Snyk account page.
+{% endhint %}
 
-If you are unable to authenticate automatically or by adding the token, run `snyk auth` from the command line and follow the preceding steps to respond to the prompts. If you need help, submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
+## Steps to authenticate using your Snyk API token
 
-![Prompt from authentication using snyk auth](../../../.gitbook/assets/screen-shot-2021-09-29-at-3.57.26-pm.png)
+{% hint style="warning" %}
+This method is inferior to the OAuth method.
+{% endhint %}
 
-##
+To authenticate follow these steps:
+
+1. In the JetBrains plugin navigate to **Preferences** > **Tools** > **Snyk**.
+2. Find the **Authentication Method** and change it to **Token authentication**
+3. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+4. Paste or enter the token in the **Token** field.
+5. Click **Apply** or **OK**. The analysis starts automatically.
+
+## How to switch accounts
+
+To re-authenticate with a different account, follow these steps:
+
+1. In the JetBrains plugin, navigate to **Preferences** > **Tools** > **Snyk**.
+2. Clear the value of the **Token** field.
+3. Click **Apply** or **OK**.
+4. When you have logged out, start authentication from scratch.
+
+## Requirements for Linux and Unix
+
+When authenticating with Snyk, users have the option to copy the authentication URL to their clipboard.
+
+For Linux and Unix users, this requires that the `xclip` or `xsel` utility be installed.
