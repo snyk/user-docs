@@ -1,3 +1,41 @@
+## 2024-08-25
+
+### POST - `/orgs/{org_id}/memberships` - Added
+- Create a org membership for a user with role
+
+
+### GET - `/orgs/{org_id}/memberships` - Added
+- Returns all memberships of the org
+
+
+### PATCH - `/orgs/{org_id}/memberships/{membership_id}` - Added
+- Update a org membership for a user with role
+
+
+### DELETE - `/orgs/{org_id}/memberships/{membership_id}` - Added
+- Remove a user`s membership of the group.
+
+
+
+### GET - `/groups/{group_id}/org_memberships` - Added
+- Get list of org memberships of a group user
+
+
+### POST - `/groups/{group_id}/memberships` - Added
+- Create a group membership for a user with role
+
+
+### GET - `/groups/{group_id}/memberships` - Added
+- Returns all memberships of the group
+
+
+### PATCH - `/groups/{group_id}/memberships/{membership_id}` - Added
+- Update a role from a group membership
+
+
+### DELETE - `/groups/{group_id}/memberships/{membership_id}` - Added
+- Deletes a membership from a group
+
 ## 2024-08-22
 
 ### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
