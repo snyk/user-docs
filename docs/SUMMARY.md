@@ -1002,6 +1002,7 @@
     * [Dependencies (v1)](snyk-api/reference/dependencies-v1.md)
     * [Entitlements (v1)](snyk-api/reference/entitlements-v1.md)
     * [Groups (v1)](snyk-api/reference/groups-v1.md)
+    * [Groups](snyk-api/reference/groups.md)
     * [IacSettings](snyk-api/reference/iacsettings.md)
     * [Ignores (v1)](snyk-api/reference/ignores-v1.md)
     * [Import Projects (v1)](snyk-api/reference/import-projects-v1.md)
