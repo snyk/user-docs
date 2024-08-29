@@ -10,7 +10,7 @@ For more information about using the Snyk API, see the following:
 * [Bazel](../../supported-languages-package-managers-and-frameworks/bazel/)
 * [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md): [List issues for a package](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
 * [Rust](../../supported-languages-package-managers-and-frameworks/rust.md): [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md), [List issues for a package](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
-* [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+* [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 {% endhint %}
 
 This list includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This listing is a work in progress; additional information is being added continually. For additional information, see [Solutions for specific use cases](solutions-for-specific-use-cases.md) and [Scenarios for using Snyk API](scenarios-for-using-snyk-api.md).
@@ -541,7 +541,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ## ServiceAccounts
 
-**More information:** [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md); [Choose a service account type to use with Snyk APIs](../../enterprise-configuration/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis.md)
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md); [Choose a service account type to use with Snyk APIs](../../enterprise-setup/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis.md)
 
 ### [Create a service account for an organization](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts)
 

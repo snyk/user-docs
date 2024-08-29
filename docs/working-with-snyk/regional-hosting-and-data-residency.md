@@ -38,7 +38,7 @@ Snyk offers data residency for the following regions:
 | EU (Germany, Frankfurt) | https://app.eu.snyk.io |
 |     AUS (Australia)     | https://app.au.snyk.io |
 
-Single-tenant deployments may support more regions than the ones listed here, subject to validation of architectural service supportability by Snyk engineering.&#x20;
+Single-tenant deployments may support more regions than the ones listed here, subject to validation of architectural service supportability by Snyk engineering.
 
 ## Regional and global data
 
@@ -219,7 +219,7 @@ For Broker deployed by Helm chart, follow [https://github.com/snyk/snyk-broker-h
 
 ### Broker with high availability (HA) mode URLs.
 
-Follow the [High availability mode](../enterprise-configuration/snyk-broker/high-availability-mode.md) instructions BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
+Follow the [High availability mode](../enterprise-setup/snyk-broker/high-availability-mode.md) instructions BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
 
 #### **EU**
 
@@ -255,19 +255,19 @@ For Broker with Code Agent deployed by Helm chart, follow the [https://github.co
 
 ### Snyk Code Local Engine (SCLE)
 
-Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region, based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-urls) instructions.&#x20;
+Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region, based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-urls) instructions.
 
-Then add an extra  variable in the `values-customer-settings.yml`:
+Then add an extra variable in the `values-customer-settings.yml`:
 
 #### **EU**
 
-`deeproxy:` \
-&#x20; `verificationEndpoint: "https://api.eu.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
+`deeproxy:`\
+`verificationEndpoint: "https://api.eu.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
 
 #### **AU**
 
-`deeproxy:` \
-&#x20; `verificationEndpoint: "https://api.au.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
+`deeproxy:`\
+`verificationEndpoint: "https://api.au.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
 
 ## **How Snyk maintains GDPR compliance**
 

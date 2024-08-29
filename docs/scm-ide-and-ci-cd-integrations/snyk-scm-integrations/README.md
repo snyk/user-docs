@@ -34,7 +34,7 @@ To set up integrations for Snyk AppRisk, use the **Integrations** menu at the Gr
 Snyk AppRisk Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
 
 {% hint style="warning" %}
-If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).
 {% endhint %}
 
 The Integrations page at the Group level shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
@@ -58,7 +58,7 @@ Each connected integration enables you to:
 The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;
 
 {% hint style="info" %}
-The wildcard integration applies to the GitHub and Azure DevOps integrations and offers support when you set them up using [Snyk Broker](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).&#x20;
+The wildcard integration applies to the GitHub and Azure DevOps integrations and offers support when you set them up using [Snyk Broker](../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).&#x20;
 {% endhint %}
 
 You can use the wildcards while setting up your integration using the Integration Hub:
@@ -89,7 +89,7 @@ After the integration is validated, a card is displayed on the Integrations page
 
 ### Using Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker - AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker - AppRisk](../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).
 
 {% hint style="warning" %}
 Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before running the commands.
@@ -276,7 +276,7 @@ In Azure, the PAT requires the following permissions for Snyk access:
 
 ## Integrated SCM tokens for Snyk Broker
 
-An integrated SCM token is required for [Broker client setup](../../enterprise-configuration/snyk-broker/#integrations-with-snyk-broker). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
+An integrated SCM token is required for [Broker client setup](../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
 
 An integrated SCM token can be generated for the following SCM integrations:
 

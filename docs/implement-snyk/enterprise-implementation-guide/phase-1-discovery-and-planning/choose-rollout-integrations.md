@@ -35,7 +35,7 @@ See [Snyk SCM integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-int
 If you have an on-premise Git repository, you must consider deploying [Snyk Broker](https://docs.snyk.io/snyk-admin/snyk-broker) for Snyk to communicate with your repositories.
 
 {% hint style="info" %}
-Enterprise customers can enable and manage [Snyk Broker](../../../enterprise-configuration/snyk-broker/) using the API.&#x20;
+Enterprise customers can enable and manage [Snyk Broker](../../../enterprise-setup/snyk-broker/) using the API.&#x20;
 
 [Paid services](../../../working-with-snyk/snyk-terms-of-support-and-services-glossary/) can be engaged to assist in Snyk Broker deployments.
 {% endhint %}

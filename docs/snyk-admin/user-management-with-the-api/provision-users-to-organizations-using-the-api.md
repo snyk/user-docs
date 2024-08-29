@@ -1,4 +1,4 @@
-# Provision users to Organizations using the Snyk API
+# Provision users to Organizations using the API
 
 The Provision user endpoints allow you to organize and grant permissions to your single sign-on users before the users log in to the Snyk platform. The endpoints are [Provision a user to the organizaton](../../snyk-api/reference/organizations-v1.md#org-orgid-provision), [List pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-1), and [Delete pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-2).
 
@@ -12,7 +12,7 @@ The API does not support using service accounts as the inviting user or provisio
 
 * The user being provisioned must not already exist in the Snyk system.
 * The inviting user must call the API using a personal token.
-* The Snyk Group to which the Organizations belong should have [Single Sign On (SSO) configured](../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/).
+* The Snyk Group to which the Organizations belong should have [Single Sign On (SSO) configured](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/).
 * Both the inviting user and the provisioned user must log in using SSO.
 * The inviting user should have the permission `Provision Users` to invoke these calls. All Group and Org Admins, by default, have this permission.
 

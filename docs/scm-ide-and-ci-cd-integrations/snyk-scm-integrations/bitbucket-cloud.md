@@ -216,7 +216,7 @@ After manually setting up the languages in your Bitbucket project, Snyk can auto
 2. Access Token (`mandatory`): Create your BitBucket PAT from your BitBucket organization.
 
 {% hint style="info" %}
-If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../enterprise-configuration/snyk-broker/snyk-broker-apprisk.md) page.
+If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md) page.
 {% endhint %}
 
 3. API URL (`mandatory`) - Input the API URL.

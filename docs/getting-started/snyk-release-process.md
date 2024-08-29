@@ -20,7 +20,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 * [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
 * [Enterprise Analytics](../manage-risk/enterprise-analytics/)
-* [Snyk Code - Clone capability with Broker for Docker](../enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
+* [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
 
 ## Early Access
 
@@ -35,7 +35,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Reachable vulnerabilities](../manage-risk/prioritize-issues-for-fixing/reachable-vulnerabilities.md)
 * [Group projects by branch or version for monitoring](../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
 * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
-* [Snyk broker commit signing](../enterprise-configuration/snyk-broker/snyk-broker-commit-signing.md)
+* [Snyk broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
 * [Improved .NET scanning](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
 * [Snyk CLI pnpm support](../supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm)
 
