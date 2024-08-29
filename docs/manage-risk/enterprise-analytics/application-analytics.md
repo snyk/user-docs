@@ -30,7 +30,7 @@ Harnessing Application Analytics provides answers to questions such as:
 * Which applications and code owners bear the most risk in terms of accumulated critical and high issues, and how do they compare to others?
 * How many repositories exist without a clear association to an application or a code owner? And are new assets being associated as expected?
 
-<figure><img src="../../.gitbook/assets/Analytics1.png" alt="Application Analytics Overview"><figcaption><p>Application Analytics Overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (537).png" alt=""><figcaption><p>Application Analytics Overview</p></figcaption></figure>
 
 ## Filters and views <a href="#filters-and-views" id="filters-and-views"></a>
 
@@ -82,7 +82,7 @@ The widgets display the top five applications or code owners based on the contex
 You can also compare specific applications or owners by adding the application or owner display views.
 {% endhint %}
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>View by: Asset Class</strong><img src="../../.gitbook/assets/analytics4.png" alt="Application Analytics - View by: Asset Class"></td><td></td><td></td></tr><tr><td><strong>View by: Application</strong><img src="../../.gitbook/assets/analytics5.png" alt="Application Analytics - View by: Application"></td><td></td><td></td></tr><tr><td><strong>View by: Owner</strong> <img src="../../.gitbook/assets/analytics6.png" alt="Application Analytics - View by: Owner"></td><td></td><td></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>View by: Asset Class</strong></td><td><img src="../../.gitbook/assets/image (539).png" alt="" data-size="original"></td><td></td></tr><tr><td><strong>View by: Application</strong></td><td><img src="../../.gitbook/assets/image (540).png" alt="" data-size="original"></td><td></td></tr><tr><td><strong>View by: Owner</strong> </td><td><img src="../../.gitbook/assets/image (541).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
 
 Assets and applications vary in importance and sensitivity. Some repositories are internal and used for testing only, while others are public-facing and used in key services.
 
@@ -101,15 +101,7 @@ To determine if this metadata is available in your repositories, check the compl
 
 ### Analytics timeframe
 
-You can select a specific timeframe for the assets analyzed data. The default setting is Last 365 days. Here are all the available options:
-
-* Last 7 days
-* Last month
-* Last 30 days
-* Last 90 days
-* Last 365 days
-* Month to Date
-* Year to Date
+You can select a specific date range for the assets analyzed data by adding the **Asset Introduction Date** filter. Applying that filter will impact all non-trend widgets, narrowing down from showing all available data, to data of assets that were introduced in the selected date range. The trend widgets are configured to show a fixed timeframe of the last 3 months.
 
 {% hint style="info" %}
 The data in Application Analytics is updated on an hourly basis.
@@ -119,50 +111,48 @@ The data in Application Analytics is updated on an hourly basis.
 
 The Application Analytics dashboard focuses on three main data categories:
 
-* **Issues** - provides the status of the open issues
-* **Coverage** - provides the coverage status and the trends for the analyzed assets
+* **Coverage** - provides the coverage status and the trends for the analyzed assets.
+* **Issues** - provides the status of the open issues.
 * **Assets** - provides the coverage status of the repository metadata and the status and trends for the imported assets.
+
+### Coverage
+
+One of the leading missions of an AppSec team is ensuring appropriate scan coverage across the asset inventory. A [covered asset](../../getting-started/glossary.md#coverage-snyk-apprisk) is simply an asset that has been scanned by a certain application security testing (AST) product. Having uncovered assets expose the company to unknown risks, that is why it is essential to verify that business critical assets (based on asset class or strategic applications), are being properly scanned.
+
+In the Coverage section, you have information about the assets coverage.&#x20;
+
+* **Coverage overview** - provides information, in percentages, about the scanned assets, distributed by the scan category (SAST, SCA, Container, and Secrets).
+* **Coverage trend** - allows reviewing the coverage trend for the last 3 months. A growing trend will indicate that a larger portion of your asset inventory was scanned.
+
+The Coverage section is based on the scan category and is not impacted by the selected view ( Asset Class, Application, or Owner).
+
+<figure><img src="../../.gitbook/assets/image (542).png" alt=""><figcaption><p>The Coverage Section</p></figcaption></figure>
 
 ### Issues
 
 In the Issues section, you have information about the analyzed open issues.
 
-* **Open issues by category** - This graphic provides a clear overview of the number of issues distributed by the integration category (SAST, SCA, Container, Secrets, and so on).&#x20;
-* **Open issues breakdown** - This graphic provides information about the backlog of your open issues. The desired trend is a negative one, especially for higher asset classes or important applications.
+* **Open issues by category** - This graphic provides a clear overview of the number of issues distributed by the issue source category (SAST, SCA, Container, and Secrets) and by the selected view (allowing to compare between asset classes, applications and owners).
+* **Open issues breakdown** - This graphic provides information about the backlog of your open issues. The desired trend is a negative one, especially for higher asset classes or strategic applications. The selected view, allows comparing between asset classes, applications and owners.
 
-You can choose to view the issues based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection.
+You can choose to view the issues based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection. When viewing by application or owner, only the top 5 applications or owners with most issues are displayed.
 
 <table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Issues section - View by: Asset Class</strong></td><td><img src="../../.gitbook/assets/image (410).png" alt="Application Analytics - Issues section - View by: Asset class" data-size="original"></td><td></td></tr><tr><td><strong>Issues section - View by: Application</strong></td><td><img src="../../.gitbook/assets/image (424).png" alt="Application Analytics - Issues section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Issues section - View by: Owner</strong></td><td><img src="../../.gitbook/assets/image (406).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
 
-You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to control the zoom, select a specific area, or download it as an image. You can also use the scroll option for graphics that present data for an extensive time period.
-
-### Coverage
-
-AppSec teams struggle with maintaining an accurate asset inventory view. To achieve this view, you must establish a [coverage policy](../policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md) and ensure that security tests are configured based on the policy criteria. Then you need to examine your scanned assets, starting with critical assets (by asset class) that are deployed and public-facing.
-
-In the Coverage section, you have information about the assets coverage.&#x20;
-
-* **Coverage overview** - provides information, in percentages, about the scanned assets, distributed by the integration category (SAST, SCA, Container, Secrets, and so on).&#x20;
-* **Risk factors and coverage** - provides information about assets with no coverage based on the progression of the risk factors.&#x20;
-* **Outstanding assets** - provides information about the top five assets with no coverage prioritized by risk factors, open issues, and asset class. &#x20;
-
-You can choose to view the Coverage section based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection.
-
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><p><strong>Coverage section - View by: Asset Class</strong></p><p><img src="../../.gitbook/assets/analytics7.png" alt="Application Analytics - Coverage section - View by: Asset Class"></p></td><td></td><td></td></tr><tr><td><strong>Coverage section - View by: Application</strong></td><td><img src="../../.gitbook/assets/analytics8.png" alt="Application Analytics - Coverage section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Coverage section - View by: Owner</strong></td><td><img src="../../.gitbook/assets/analytics9.png" alt="Application Analytics - Coverage section - View by: Owner" data-size="original"></td><td></td></tr></tbody></table>
-
-You can see more details about the **Risk factors and coverage** graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to control the zoom, select a specific area, or download it as an image. You can also use the scroll option for graphics that present data for an extensive time period.
+You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to download it as an image.
 
 ### Assets
 
 In the Assets section, you have information about the analyzed assets.
 
-* **Repo metadata completeness** - Percentage information is provided about the availability of backstage catalog attributes, including application and owner, for the available repositories.
-* **New assets introduced** - provides information about when new assets were introduced over time.
-* **Repository source distribution** - provides information about the repositories distributed by the type of integration (SCM integrations, third-party integrations).
+* **Risk factors breakdown -** a funnel that shows the progression of risk factors on code repositories and container images. Each layer is divided according to the selected view, asset class, application, or owner. When viewing by application or owner, only the top 5 applications/owners will be displayed according to the number of assets with risk factors.
+* **New assets introduced** - allows tracking the inventory size over time. The trend only counts repositories and container images. When viewing by application or owner, only the top 5 applications/owners with the most assets will be displayed.
+* **Repo metadata completeness** - displays the availability of application context metadata across code repositories (learn more about application context metadata [here](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations)).
+* **Repository source distribution** - provides information about the repositories distributed by the type of integration (SCM integrations, third-party integrations). When viewing by application or owner, only the top 5 applications/owners with the most assets will be displayed.
 
 You can choose to view the Assets section based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Assets section - View by: Asset Class</strong></td><td><img src="../../.gitbook/assets/image (407).png" alt="Application Analytics - Assets section - View by: Asset Class" data-size="original"></td><td></td></tr><tr><td><strong>Assets section - View by: Application</strong></td><td><img src="../../.gitbook/assets/image (408).png" alt="Application Analytics - Assets section - View by: Application" data-size="original"></td><td></td></tr><tr><td><strong>Assets section - View by: Owner</strong></td><td><img src="../../.gitbook/assets/image (409).png" alt="Application Analytics - Assets section - View by: Owner" data-size="original"></td><td></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Assets section - View by: Asset Class</strong></td><td><img src="../../.gitbook/assets/image (543).png" alt="" data-size="original"></td><td></td></tr><tr><td><strong>Assets section - View by: Application</strong></td><td><img src="../../.gitbook/assets/image (544).png" alt="" data-size="original"></td><td></td></tr><tr><td><strong>Assets section - View by: Owner</strong></td><td><img src="../../.gitbook/assets/image (545).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
 
-You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to control the zoom, select a specific area, or download it as an image. You can also use the scroll option for graphics that present data for an extensive time period.
+You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to download it as an image.
 
