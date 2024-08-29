@@ -25,7 +25,7 @@ You can also apply and remove attributes using Snyk CLI options, `--project-busi
 {% endhint %}
 
 {% hint style="info" %}
-Organization admins can add an attribute to a Project. However, only Group admins can modify Project attributes in cases where attributes match a policy, because policies can only be managed by Group admins.
+Roles with the **edit project attributes** permission can add an attribute to a Project.
 {% endhint %}
 
 ## **Apply an attribute value to Project**
