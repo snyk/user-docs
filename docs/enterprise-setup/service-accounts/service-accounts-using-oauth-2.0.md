@@ -1,14 +1,11 @@
 # Service accounts using OAuth 2.0
 
 {% hint style="info" %}
-**Release status**
-
-Service accounts using OAuth 2.0 is available through the Snyk REST API.&#x20;
-
-See [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md).
+**Feature availability**\
+Service accounts using OAuth 2.0 are available to Enterprise customers through the Snyk REST API. See [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md).
 {% endhint %}
 
-You can create service accounts that authenticate with the [OAuth 2.0 `client_credentials` grant flow](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) rather than with the traditional Snyk API key. OAuth 2.0 access tokens can be used the same way a Snyk API key would be used, but they have the added security of a short time-to-live (TTL) and can be automatically refreshed.
+You can create service accounts that authenticate with the [Auth 2.0 `client_credentials` grant flow](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) rather than with the Snyk API key. OAuth 2.0 access tokens can be used the same way a Snyk API key would be used, but they have the added security of a short time-to-live (TTL) and can be automatically refreshed.
 
 ## OAuth 2.0 with client secret
 
@@ -24,9 +21,9 @@ Never share the `client_secret` publicly, as this is used to authenticate your s
 
 ### Retrieve an OAuth 2.0 access token
 
-After the service account is created, you can retrieve an `access_token` through the [Snyk OAuth 2.0 token endpoint](../../snyk-api/oauth2-api.md#token) using the `client_secret`. The body format and `Content-Type` header must be form-urlencoded.
+After the service account is created, you can retrieve an `access_token` through the OAuth 2.0 endpoint [Request an access token](../../snyk-api/oauth2-api.md#token) using the `client_secret`. The body format and `Content-Type` header must be form-urlencoded.
 
-You can use an`access_token` the same way as you would use a Snyk API key, but with the `Authorization: bearer $access_token` header (see the Snyk [REST API documentation](https://apidocs.snyk.io/)) or the `SNYK_OAUTH_TOKEN` environment variable with the Snyk CLI.
+You can use an`access_token` the same way as you would use a Snyk API key, but with the `Authorization: bearer $access_token` header or the `SNYK_OAUTH_TOKEN` environment variable with the Snyk CLI.
 
 The `access_token` has a short time to live and must be refreshed once it expires. There are many OAuth 2.0 libraries available that greatly simplify this process.
 
@@ -47,7 +44,7 @@ Customer-managed signing keys can be rotated at will.
 
 ### Create the Private Key JWT service account
 
-You can create an `oauth_private_key_jwt` service account at either the Group or Organization level by using the [Snyk REST API](manage-service-accounts-using-the-snyk-api.md). To create the service account, you must provide the URL from your publicly accessible JWKS endpoint and the role you wish to assign to the service account.
+You can create an `oauth_private_key_jwt` service account at either the Group or Organization level by using the Snyk REST API. To create the service account, you must provide the URL from your publicly accessible JWKS endpoint and the role you wish to assign to the service account. For more information, see [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md).
 
 The response includes the `client_id`, which is needed for the next step.
 
