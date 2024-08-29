@@ -109,6 +109,10 @@ For more information, see [Setting Python version in Git Projects](../../support
 
 #### Set vulnerability ignore rules
 
+{% hint style="warning" %}
+The `expires` field is optional. If you need a permanent ignore please omit the field.
+{% endhint %}
+
 Ignore a specific vulnerability for a given path:
 
 <pre><code><strong>ignore:
@@ -206,6 +210,15 @@ ignore:
     - path to library using > separator :
         reason: 'text string'
         expires: 'YYYY-MM-DDThh:mm:ss.fffZ'
+```
+
+Field `expires` is optional. If you need a permanent ignore please omit this field like below:
+
+```
+ignore:
+  snyk-vulnid:
+    - path to library using > separator :
+        reason: 'text string'
 ```
 
 The `patch`: is in the form of:
