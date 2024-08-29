@@ -1,6 +1,6 @@
 # OAuth2 API
 
-Snyk provides an OAuth2 API, primarily for use with [Snyk Apps](../snyk-api-info/snyk-apps/). It complies with RFC 6749.
+Snyk provides an OAuth2 API, primarily for use with [Snyk Apps](how-to-use-snyk-apps-apis/). It complies with RFC 6749.
 
 Most endpoints are served from the Snyk API subdomain (for example, https://api.snyk.io), with the one exception being `/oauth2/authorize` which is served on the main app subdomain (for example, https://app.snyk.io).
 

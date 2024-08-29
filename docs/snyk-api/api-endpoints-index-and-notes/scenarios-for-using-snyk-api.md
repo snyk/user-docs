@@ -247,4 +247,4 @@ SEE:\
 SEE:\
 API v1 Integrations: [Rotate or change your broker token for any reason](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
 
-[Snyk Webhooks](../../snyk-api-info/snyk-webhooks/)
+[Snyk Webhooks](../how-to-use-snyk-webhooks-apis/)

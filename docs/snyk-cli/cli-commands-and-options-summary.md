@@ -118,7 +118,7 @@ Apply the recommended updates for supported ecosystems automatically. For more i
 
 ### [`snyk apps`](https://docs.snyk.io/snyk-cli/create-a-snyk-app-using-the-snyk-cli)
 
-Create a Snyk App using the Snyk CLI. For more information, see [Snyk Apps](../snyk-api-info/snyk-apps/).
+Create a Snyk App using the Snyk CLI. For more information, see [Snyk Apps](../snyk-api/how-to-use-snyk-apps-apis/).
 
 ## Subcommands of CLI commands
 

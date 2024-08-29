@@ -22,7 +22,7 @@ This has the advantage of:
 * Maintaining awareness of relevant and emerging vulnerabilities
 * Minimizing disruptions with issue notification thresholds
 
-The Snyk app for Slack is based on [Snyk Apps](../../snyk-api-info/snyk-apps/), providing you with the benefit of more granular scopes and more ability to configure issue notifications at the Organization and Project levels.
+The Snyk app for Slack is based on [Snyk Apps](../../snyk-api/how-to-use-snyk-apps-apis/), providing you with the benefit of more granular scopes and more ability to configure issue notifications at the Organization and Project levels.
 
 {% hint style="info" %}
 Vulnerabilities detected on initial import of Projects are not sent to Slack. Only newly disclosed vulnerabilities from imported Projects are sent to Slack.

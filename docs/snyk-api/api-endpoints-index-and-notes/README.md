@@ -1,5 +1,18 @@
 # API endpoints index and notes
 
+{% hint style="info" %}
+In addition to this index, this section provides [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md) and pages with detailed information about using Snyk API endpoints.
+
+For more information about using the Snyk API, see the following:
+
+* [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
+* [Audit logs](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
+* [Bazel](../../supported-languages-package-managers-and-frameworks/bazel/)
+* [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md): [List issues for a package](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
+* [Rust](../../supported-languages-package-managers-and-frameworks/rust.md): [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md), [List issues for a package](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
+* [Manage service accounts using the Snyk API](../../enterprise-configuration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+{% endhint %}
+
 This list includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This listing is a work in progress; additional information is being added continually. For additional information, see [Solutions for specific use cases](solutions-for-specific-use-cases.md) and [Scenarios for using Snyk API](scenarios-for-using-snyk-api.md).
 
 ## AccessRequests (beta)
@@ -8,7 +21,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 ## Apps
 
-**More information:** [Snyk Apps](../../snyk-api-info/snyk-apps/)
+**More information:** [Snyk Apps](../how-to-use-snyk-apps-apis/)
 
 ### [Get a list of apps that act on your behalf](../reference/apps.md#self-apps)
 
@@ -28,7 +41,7 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 **Replaced by:** Create a new Snyk App for an organization
 
-**More information:** [Create a Snyk App using the Snyk API](../snyk-apps/create-a-snyk-app-using-the-snyk-api.md)
+**More information:** [Create a Snyk App using the Snyk API](../how-to-use-snyk-apps-apis/create-a-snyk-app-using-the-snyk-api.md)
 
 ### [Get a list of apps created by an organization](../reference/apps.md#orgs-org\_id-apps-1)
 
@@ -70,13 +83,13 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 **Replaced by:** Get a list of apps created by an organization
 
-**More information:** [Manage App details](../snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
 
 ### [Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID](../reference/apps.md#orgs-org\_id-apps-creations-app\_id)
 
 **Replaces:** DEPRECATED Update App attributes that are name, redirect URIs, and access token time to live
 
-**More information:** [Manage App details](../snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
 
 ### [Get a Snyk APP by its App ID](../reference/apps.md#orgs-org\_id-apps-creations-app\_id)
 
@@ -86,11 +99,11 @@ This list includes the categories and names of REST GA and beta and V1 API endpo
 
 **Replaces:** DEPRECATED Delete an app
 
-**More information:** [Manage App details](../snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
 
 ### [Manage client secret for the Snyk App](../reference/apps.md#orgs-org\_id-apps-creations-app\_id-secrets)
 
-**More information:** [Manage App details](../snyk-apps/manage-app-details.md)
+**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
 
 ### DEPRECATED [Get a list of app bots authorized to an organization](../reference/apps.md#orgs-org\_id-app\_bots)
 
