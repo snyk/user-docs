@@ -1,16 +1,14 @@
-# Best practices for C/C++
+# Guidance for Snyk for C/C++
 
-Use this guide to apply Snyk effectively in your technology stack.
+This page reviews considerations about languages and package managers; to help you apply Snyk effectively in your technology stack.
 
-## Language and package manager considerations
-
-### Code analysis
+## Code analysis
 
 * Snyk does not compile or require a build to perform analysis.
 * Snyk Code analyzes source code directly.
 * If you precompile components, make the source available during the scan.
 
-### Open source and licensing
+## Open source and licensing
 
 In the case of package managers like npm or maven, it traditionally uses the managed open source capabilities of `snyk test` and `snyk monitor`. In the case of C/C++, Snyk supports unmanaged dependencies by adding `--unmanaged`.
 
@@ -109,7 +107,7 @@ The list is printed before the issues list, as shown below:
 **License policy text** is the text associated with the issue by your administrators that provides custom direction on what to do or why it's contrary to the policy, if it's found in your application.
 {% endhint %}
 
-Below, you can see the license policy text example at the bottom of the screen, giving you directions on what to do if the license is found.
+The following shows the license policy text example at the bottom of the screen, giving you directions on what to do if the license is found.
 
 <div align="left">
 
@@ -119,9 +117,7 @@ Below, you can see the license policy text example at the bottom of the screen, 
 
 #### **Alternate testing options**
 
-If you develop advanced dependency management strategies, you might not use the standard/well-traveled package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the OS packages/versions that are included in the application but don't have the source code, the purl API can be used to do this analysis.
-
-:link: PURL See [Purl issues](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org\_id-/packages/-purl-/issues)&#x20;
+If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the OS packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues) to do the analysis.
 
 ### **Options and plugins**
 
