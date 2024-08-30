@@ -7,6 +7,32 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## August 2024
+
+### &#x20;**Snyk AppRisk**&#x20;
+
+* The **Manage Risk > Analytics** pages have been consolidated to better reflect the two Snyk offerings:
+  * [Issues Analytics](manage-risk/enterprise-analytics/issues-analytics.md) - now in Early Access for Snyk Enterprise customers.
+  * [Application Analytics](manage-risk/enterprise-analytics/application-analytics.md) - available only for Snyk AppRisk Pro customers.
+* The [Manage Assets](manage-assets/) documentation has been updated to reflect the addition of Quick filters. Users are only shown quick filters relevant to their entitlement: AppRisk Essentials or AppRisk Pro.
+
+### **Snyk Integrations**
+
+* Git repository cloning has been renamed [Workspaces for SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md) to better reflect its functionality. Additional detail on [enablement](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md#manage-workspaces) has been added.
+* The [relationship](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
+* The [deployment stages table](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/deployment-recommendations-for-scm-integrations.md#recommended-deployment-order) for implementing SCM integrations has been updated to reflect AppRisk functionality.
+
+### **Snyk API**&#x20;
+
+* Links in the API reference docs have been updated.
+* The [API endpoints index and notes](snyk-api/api-endpoints-index-and-notes/) have been updated.
+
+### **Snyk CLI**
+
+* [`snyk auth`](snyk-cli/commands/auth.md) command help has been updated to reflect OAuth default.
+* [`snyk config environment`](snyk-cli/commands/config-environment.md) command help has been added.
+* CLI [support for pnpm added](supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm).
+
 ## July 2024
 
 ### Snyk AppRisk
