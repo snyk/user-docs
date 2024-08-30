@@ -138,7 +138,7 @@ For more information on Workspaces enablement and use, see [Workspaces for SCM i
 
 <figure><img src="../.gitbook/assets/Soc2.png" alt="Soc 2 Type 2 AICPA Soc"><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
 
-Snyk is certified to ISO 27001:2013 with the additional objective controls of ISO 27017:2015.
+Snyk is certified to ISO 27001:2022 with the additional objective controls of ISO 27017:2015.
 
 <figure><img src="../.gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="ISO 27001 Schellman certification" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
 
