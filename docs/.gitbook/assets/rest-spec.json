@@ -5329,94 +5329,20 @@
         "additionalProperties": false,
         "properties": {
           "org": {
-            "additionalProperties": false,
-            "properties": {
-              "data": {
-                "properties": {
-                  "attributes": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "name": {
-                        "description": "The display name of the org.",
-                        "example": "Org display name",
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "id": {
-                    "example": "331ede0a-de94-456f-b788-166caeca58bf",
-                    "format": "uuid",
-                    "type": "string"
-                  },
-                  "type": {
-                    "description": "The Org the membership belongs to.",
-                    "example": "org",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/OrgMembershipOrgData"
           },
           "role": {
-            "additionalProperties": false,
-            "properties": {
-              "data": {
-                "properties": {
-                  "attributes": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "name": {
-                        "description": "The display name of the role.",
-                        "example": "Role name",
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "id": {
-                    "example": "331ede0a-de94-456f-b788-166caeca58bf",
-                    "format": "uuid",
-                    "type": "string"
-                  },
-                  "type": {
-                    "description": "The resource type the role is for",
-                    "example": "org_role",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/OrgMembershipRoleData"
           },
           "user": {
-            "additionalProperties": false,
-            "properties": {
-              "data": {
-                "properties": {
-                  "attributes": {
-                    "$ref": "#/components/schemas/UserRelationshipAttributes"
-                  },
-                  "id": {
-                    "example": "331ede0a-de94-456f-b788-166caeca58bf",
-                    "format": "uuid",
-                    "type": "string"
-                  },
-                  "type": {
-                    "description": "Always \"user\"",
-                    "example": "user",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/OrgMembershipUserData"
           }
         },
+        "required": [
+          "role",
+          "org",
+          "user"
+        ],
         "type": "object"
       },
       "OrgMembershipResponseData": {
