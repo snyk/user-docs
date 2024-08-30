@@ -56,7 +56,7 @@ To authenticate follow these steps:
 <figure><img src="../../../.gitbook/assets/SCR-20240822-lyzs.png" alt="Snyk Settings navigation" width="375"><figcaption><p>Snyk Settings navigation</p></figcaption></figure>
 
 2. Find the **Authentication Method** and change it to **Token authentication**
-3. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+3. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-use-your-snyk-api-token.md).
 4. Be sure to use your personal token.  Paste or enter the token in the **Token** field.
 5. Click **OK.**&#x20;
 

@@ -9,7 +9,7 @@
     * [Import a Project](getting-started/quickstart/import-a-project.md)
     * [View Snyk scan results](getting-started/quickstart/view-snyk-scan-results.md)
   * [Snyk Web UI](getting-started/snyk-web-ui.md)
-  * [How to obtain your Snyk API token](getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md)
+  * [How to obtain and use your Snyk API token](getting-started/how-to-obtain-and-use-your-snyk-api-token.md)
   * [Snyk Release Process](getting-started/snyk-release-process.md)
   * [Snyk Learn](getting-started/snyk-learn/README.md)
     * [Security education on Snyk Learn](getting-started/snyk-learn/security-education-on-snyk-learn.md)

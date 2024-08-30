@@ -263,7 +263,7 @@ Select the **Help** > **Product updates** menu option to visit [snyk.io updates]
 
 Select your **name** in the navigation on the Dashboard and then **Account settings** to open your [account settings](https://app.snyk.io/account) page, where you can view and configure your user account settings, including:
 
-* View and manage your API token or the Auth Token for free accounts. See [How to obtain and authenticate with your Snyk API token](how-to-obtain-and-authenticate-with-your-snyk-api-token.md) for more detalis.
+* View and manage your API token or the Auth Token for free accounts. See [How to obtain and authenticate with your Snyk API token](how-to-obtain-and-use-your-snyk-api-token.md) for more detalis.
 * View the list of your **Authorized Applications**.
 * Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#set-your-preferred-organization).
 * **Delete** your account.

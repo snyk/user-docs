@@ -56,7 +56,7 @@ To authenticate follow these steps:
 
 <figure><img src="../../../.gitbook/assets/SCR-20240821-tarb.png" alt="Change authentication method " width="563"><figcaption><p>Change authentication method </p></figcaption></figure>
 
-2. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+2. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-use-your-snyk-api-token.md).
 3. Then run the`Snyk: Set Token command` and paste the token in the text field.
 
 <figure><img src="../../../.gitbook/assets/image (224) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Set token manually" width="563"><figcaption><p>Set token manually</p></figcaption></figure>

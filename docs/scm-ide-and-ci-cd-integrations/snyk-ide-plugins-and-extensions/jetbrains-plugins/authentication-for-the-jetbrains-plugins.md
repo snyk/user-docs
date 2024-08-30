@@ -49,7 +49,7 @@ To authenticate follow these steps:
 
 1. In the JetBrains plugin navigate to **Preferences** > **Tools** > **Snyk**.
 2. Find the **Authentication Method** and change it to **Token authentication**
-3. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+3. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-use-your-snyk-api-token.md).
 4. Paste or enter the token in the **Token** field.
 5. Click **Apply** or **OK**. The analysis starts automatically.
 

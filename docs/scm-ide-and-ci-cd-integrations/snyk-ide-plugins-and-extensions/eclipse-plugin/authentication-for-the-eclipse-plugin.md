@@ -49,7 +49,7 @@ To authenticate using the API token, follow these steps:
 
 1. Navigate to **Preferences** > **Snyk**.
 2. Set the flag **Use token authentication**.
-3. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+3. Copy your API token. For details, see [How to obtain your Snyk API token](../../../getting-started/how-to-obtain-and-use-your-snyk-api-token.md).
 4. Be sure to use your personal token.  Paste or enter the token in the **Token** field.
 5. Click **Apply and Close.** The analysis starts automatically.
 

@@ -30,6 +30,6 @@ HTTP/1.1 401 Unauthorized
 
 
 
-For more details and for information about using personal tokens versus service account tokens, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+For more details and for information about using personal tokens versus service account tokens, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-use-your-snyk-api-token.md).
 
 For additional information, see [Revoking and regenerating Snyk API tokens](revoking-and-regenerating-snyk-api-tokens.md).

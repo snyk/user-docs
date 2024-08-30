@@ -1,4 +1,4 @@
-# Authenticate to use the CLI&#x20;
+# Authenticate to use the CLI
 
 To scan your projects, you must authenticate with Snyk.&#x20;
 
@@ -64,7 +64,7 @@ All subsequent test calls will be authenticated automatically.  For more infomra
 
 ## How to authenticate to use the CLI in CI/CD pipelines
 
-**Free and Team plan users** are more likely to **use this method in a CI/CD pipeline** than to use OAuth 2.0. **Enterprise plan customers** are advised to use a **service account** in a CI/CD pipeline.  For details, see [How to obtain your Snyk API token](../getting-started/how-to-obtain-and-authenticate-with-your-snyk-api-token.md).
+**Free and Team plan users** are more likely to **use this method in a CI/CD pipeline** than to use OAuth 2.0. **Enterprise plan customers** are advised to use a **service account** in a CI/CD pipeline.  For details, see [How to obtain your Snyk API token](../getting-started/how-to-obtain-and-use-your-snyk-api-token.md).
 
 All CLI `test` commands can automatically recognize the environment variable `SNYK_TOKEN` and use it for authentication. For details, see [Environment variables for Snyk CLI](configure-the-snyk-cli/environment-variables-for-snyk-cli.md).
 
