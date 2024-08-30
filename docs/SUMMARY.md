@@ -1107,3 +1107,4 @@
   * [How does Snyk count assets](working-with-snyk/how-does-snyk-count-assets.md)
   * [What counts as a test?](working-with-snyk/what-counts-as-a-test.md)
   * [Snyk for Government (US)](working-with-snyk/snyk-for-government-us.md)
+* [Page to test a GitBook editor link for an API endpoint](page-to-test-a-gitbook-editor-link-for-an-api-endpoint.md)
