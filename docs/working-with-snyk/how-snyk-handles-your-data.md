@@ -140,7 +140,7 @@ For more information on Workspaces enablement and use, see [Workspaces for SCM i
 
 Snyk is certified to ISO 27001:2013 with the additional objective controls of ISO 27017:2015.
 
-<figure><img src="../.gitbook/assets/Coalfire.png" alt="Coalfire ISO 27001 certified ISO"><figcaption><p>Coalfire ISO 27001 certified ISO</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="ISO 27001 Schellman certification" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
 
 ## Snyk policies
 
