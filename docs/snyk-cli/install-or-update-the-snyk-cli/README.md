@@ -12,6 +12,10 @@ For information about installing the CLI for an IDE, see the [IDE documentation]
 
 ## Install with standalone executables
 
+{% hint style="info" %}
+When you use this method, you must keep the Snyk CLI up to date manually.
+{% endhint %}
+
 Use [GitHub Releases](https://github.com/snyk/snyk/releases) to download a standalone executable (macOS, Linux, Windows) of Snyk CLI for your platform.
 
 Snyk also provides these standalone executables on the Snyk Content Delivery Network (CDN). See the latest `release.json` [file](https://static.snyk.io/cli/latest/release.json) for the download links. Examples for a specific version or platform follow:
@@ -41,11 +45,9 @@ To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine, (darwi
 
 To use the CLI with Alpine Linux, see [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md).
 
-For more information see [verify CLI standalone binaries](verifying-cli-standalone-binaries.md).
-{% endhint %}
+Note that the CLI does not have an Alpine/ARM64 binary.
 
-{% hint style="warning" %}
-The drawback of this method is that you must keep the Snyk CLI up to date manually.
+For more information see [verify CLI standalone binaries](verifying-cli-standalone-binaries.md).
 {% endhint %}
 
 ## Install with Homebrew (macOS, Linux)
