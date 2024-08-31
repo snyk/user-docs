@@ -29,9 +29,15 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk CLI**
 
-* [`snyk auth`](snyk-cli/commands/auth.md) command help has been updated to reflect OAuth default.
+* [`snyk auth`](snyk-cli/commands/auth.md) command help updated to reflect OAuth default.
+* &#x20; [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
 * [`snyk config environment`](snyk-cli/commands/config-environment.md) command help has been added.
 * CLI [support for pnpm added](supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm).
+
+### Snyk IDE
+
+* &#x20;[CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
+* IDE authentication instructions updated: [Eclipse](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md), [Jetbrains](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/authentication-for-the-jetbrains-plugins.md), [VS extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-authentication.md), [VS Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication.md).
 
 ## July 2024
 
