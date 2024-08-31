@@ -30,7 +30,7 @@ Specific permissions are required to perform all these tasks; see [Service accou
 
 **Request**: `GET https://api.snyk.io/rest/groups/{groupId}/service_accounts`
 
-**API endpoint:** [Get a list of group service accounts](../../snyk-api/reference/serviceaccounts.md#groups-group\_id-service\_accounts)
+**API endpoint:** [Get a list of group service accounts](../../snyk-api/reference/serviceaccounts.md#groups-group\_id-service\_accounts-1)
 
 This [paginated](../../snyk-api/rest-api/about-the-rest-api.md#pagination) call returns an array of objects, each describing a service account.
 
@@ -62,7 +62,7 @@ This call updates the details of a specific service account, at this time, the n
 
 **Request**: `DELETE https://api.snyk.io/rest/groups/{groupId}/service_accounts/{serviceAccountId}`
 
-**API endpoint:** [Delete a group service account](../../snyk-api/reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id)
+**API endpoint:** [Delete a group service account](../../snyk-api/reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id-secrets)
 
 This call permanently deletes the specified service account and revokes its credentials.
 
@@ -84,7 +84,7 @@ This call allows you to manage the client secret for `oauth_client_secret` servi
 
 **Request**: `GET https://api.snyk.io/rest/orgs/{orgId}/service_accounts`
 
-**API endpoint:** [Get a list of organization service accounts](../../snyk-api/reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id)
+**API endpoint:** [Get a list of organization service accounts](../../snyk-api/reference/serviceaccounts.md#orgs-org\_id-service\_accounts-1)
 
 This [paginate](../../snyk-api/rest-api/about-the-rest-api.md#pagination)[d](../../snyk-api/rest-api/about-the-rest-api.md#pagination) call returns an array of objects, each describing a service account.
 
@@ -108,7 +108,7 @@ This call returns details describing a specific service account.
 
 **Request**: `PATCH https://api.snyk.io/rest/orgs/{orgId}/service_accounts/{serviceAccountId}`
 
-**API endpoint:** [Update an organization service account](../../snyk-api/reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id)
+**API endpoint:** [Update an organization service account](https://apidocs.snyk.io/?version=2023-09-07#patch-/orgs/-org\_id-/service\_accounts/-serviceaccount\_id-)
 
 This call can update the details of a specific service account. The name of the service account is updated.
 
