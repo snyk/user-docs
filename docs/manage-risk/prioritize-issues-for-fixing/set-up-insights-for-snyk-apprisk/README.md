@@ -76,7 +76,7 @@ The Kubernetes Connector is different from the Kubernetes Controller, Snyk-Monit
 3. Scan your images properly so Snyk has access to the right data. See [Prioritization setup: Image scanning](set-up-insights-image-scanning.md).
 4. Set up the required link for the application on which you want to use prioritization. See [Prioritization setup: Associating Snyk Open Source, Code, and Container Projects](set-up-insights-associating-snyk-open-source-code-and-container-projects.md).
 5. Set up third-party runtime integrations or the Snyk Runtime Sensor to get even more runtime data.
-6. To ensure you have properly set up the prioritization capability, navigate to the **Set up Snyk AppRisk** tab on the **Insights** page and view the data Snyk has access to.\
+6. To ensure you have properly set up the prioritization capability, navigate to the **Set up Snyk AppRisk** tab on the **Issues** page and view the data Snyk has access to.\
    You can also filter relevant sections by Organization for a granular view of your progress.
 
 {% hint style="info" %}
