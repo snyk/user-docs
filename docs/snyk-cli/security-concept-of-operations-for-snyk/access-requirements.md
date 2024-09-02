@@ -25,7 +25,8 @@ The required filesystem access may vary by product.
 ### Optional
 
 * deeproxy.snyk.io:442 (for snyk code)
-* static.snyk.io:443 (depending on used features)
-* snyk.io:443 (depending on used features)
+* downloads.snyk.io:443 (depending on features  used)
+* static.snyk.io:443 (depending on features used )
+* snyk.io:443 (depending on features used)
 * \*_.sentry.io:443 (error reporting)_
 * \*_.amplitude.com:443 (analytics)_

@@ -16,7 +16,7 @@ To determine if this is the case, navigate to the location for the CLI or Langua
 
 ## **Solution**
 
-The preferred solution for this is to allowlist [static.snyk.io](http://static.snyk.io/) in the baseline policy for .exe files, so that downloads from this location are exempt from .exe popup approvals for all users.&#x20;
+The preferred solution for this is to allowlist [downloads.snyk.io](https://downloads.snyk.io) and [static.snyk.io](http://static.snyk.io/) in the baseline policy for .exe files, so that downloads from this location are exempt from .exe popup approvals for all users.&#x20;
 
 You can use the following temporary solutions in the interim if the preferred solution will take time to approve.&#x20;
 

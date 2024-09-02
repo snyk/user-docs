@@ -44,11 +44,11 @@ For testing, FIPS can be enabled using the following registry key   `HKLM\SYSTEM
 
 #### Download FIPS-enabled binaries
 
-Snyk binaries are available with and without FIPS support. They are all hosted on static.snyk.io, differentiated by their Base URL.
+Snyk binaries are available with and without FIPS support. They are all hosted on downloads.snyk.io, differentiated by their Base URL.
 
-**FIPS Base URL:** https://static.snyk.io/fips/
+**FIPS Base URL:** https://downloads.snyk.io/fips/
 
-**Regular Base URL:** https://static.snyk.io/
+**Regular Base URL:** https://downloads.snyk.io/
 
 All instructions on [how to install and use Snyk](../install-or-update-the-snyk-cli/) remain the same. The only required change is using the appropriate Base URL.
 
@@ -59,7 +59,7 @@ The example that follows uses a [Microsoft Mariner](https://mcr.microsoft.com/en
 ```bash
 docker run -it mcr.microsoft.com/cbl-mariner/base/core:2.0 bash
 > tdnf install -y ca-certificates
-> curl --compressed https://static.snyk.io/fips/cli/latest/snyk-linux-arm64 -o snyk
+> curl --compressed https://downloads.snyk.io/fips/cli/latest/snyk-linux-arm64 -o snyk
 > chmod +x snyk
 > ./snyk -d
 ...

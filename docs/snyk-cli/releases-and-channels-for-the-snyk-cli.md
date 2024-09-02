@@ -40,8 +40,8 @@ A preview version is not recommended for production environments. It may contain
 * Version Pattern: v{MAJOR}.{MINOR}.{PATCH}-preview
 * Cadence: Varying
 * Availability:
-  * [https://static.snyk.io/cli/preview/](https://static.snyk.io/cli/preview/)
-  * [https://static.snyk.io/fips/cli/preview/](https://static.snyk.io/cli/preview/)
+  * [https://downloads.snyk.io/cli/preview/](https://downloads.snyk.io/cli/preview/)
+  * [https://downloads.snyk.io/fips/cli/preview/](https://static.snyk.io/fips/cli/preview/)
 
 ### rc&#x20;
 
@@ -49,8 +49,8 @@ A preview version is not recommended for production environments. It may contain
 * Version Pattern: v{MAJOR}.{MINOR}.{PATCH}-rc
 * Cadence: every eight weeks, two weeks before a stable release (hotfix releases possible)
 * Availability:
-  * [https://static.snyk.io/cli/rc/](https://static.snyk.io/cli/rc/)
-  * [https://static.snyk.io/fips/cli/rc/](https://static.snyk.io/cli/rc/)
+  * [https://downloads.snyk.io/cli/rc/](https://downloads.snyk.io/cli/rc/)
+  * [https://downloads.snyk.io/fips/cli/rc/](https://downloads.snyk.io/fips/cli/rc/)
 
 ### **stable**&#x20;
 
@@ -59,8 +59,8 @@ A preview version is not recommended for production environments. It may contain
 * Cadence: every eight weeks (hotfix releases possible)
 * Availability:
   * [https://github.com/snyk/cli/releases/](https://github.com/snyk/cli/releases/)
-  * [https://static.snyk.io/cli/stable/](https://static.snyk.io/cli/stable/)
-  * [https://static.snyk.io/fips/cli/stable/](https://static.snyk.io/cli/stable/)
+  * [https://downloads.snyk.io/cli/stable/](https://downloads.snyk.io/cli/stable/)
+  * [https://downloads.snyk.io/fips/cli/stable/](https://downloads.snyk.io/fips/cli/stable/)
   * npm
   * brew
   * scoop
@@ -81,14 +81,14 @@ Existing Snyk customers who are opted in to the previously known latest channel 
 
 Use the`release.json` in each channel. The download links are provided here, followed by an example for the preview version on the MacOS platform:
 
-* [https://static.snyk.io/cli/preview/release.json](https://static.snyk.io/cli/preview/release.json)
-* [https://static.snyk.io/cli/preview/snyk-macos](https://static.snyk.io/cli/preview/snyk-macos)
+* [https://downloads.snyk.io/cli/preview/release.json](https://downloads.snyk.io/cli/preview/release.json)
+* [https://downloads.snyk.io/cli/preview/snyk-macos](https://downloads.snyk.io/cli/preview/snyk-macos)
 
 For MacOS, download and run a preview version of the CLI in a temporary folder named `snyk-preview`. To do this, you can run the following set of commands.
 
 <pre class="language-sh"><code class="lang-sh"><strong>mkdir snyk-preview
 </strong>cd snyk-preview
-curl --compressed https://static.snyk.io/cli/preview/snyk-macos -o snyk
+curl --compressed https://downloads.snyk.io/cli/preview/snyk-macos -o snyk
 chmod +x ./snyk
 ./snyk -version
 </code></pre>
@@ -105,4 +105,4 @@ To select a channel from the IDE, choose a CLI release channel using the dropdow
 
 However, Snyk also recommends the **stable** channel as the default for IDE users.
 
-<figure><img src="https://lh7-us.googleusercontent.com/RPWcJ4UOtDfSqXNn0V11tljHUDmz3blBCUlK8U3uAtUaodbKi4KYLeHFrqKSdQxGjlLy8VS07DsGAgsEixHnofj6igcaSduNKgdi2GTCi9FcpfuuGha5hnyVm6xypSuh2bgmpKXBQTMyUtUNL_i3RdQ" alt="Choose a CLI release channel"><figcaption><p>Choose a CLI release channel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-09-02 at 10.32.41.png" alt="Choose a CLI release channel"><figcaption><p>Choose a CLI release channel</p></figcaption></figure>

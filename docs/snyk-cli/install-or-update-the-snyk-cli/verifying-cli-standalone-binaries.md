@@ -2,7 +2,7 @@
 
 You can verify both the shasum of downloaded binaries and their GPG signatures.
 
-The download location on `static.snyk.io` contains a file called `sha256sums.txt.asc`. You can download it directly: `https://static.snyk.io/cli/latest/sha256sums.txt.asc` or for a specific version like `https://static.snyk.io/cli/v1.666.0/sha256sums.txt.asc`.
+The download location on `downloads.snyk.io` contains a file called `sha256sums.txt.asc`. You can download it directly: `https://downloads.snyk.io/cli/stable/sha256sums.txt.asc` or for a specific version like `https://downloads.snyk.io/cli/v1.666.0/sha256sums.txt.asc`.
 
 To check that a downloaded file matches the checksum, use a `sha256sum` command, for example:
 

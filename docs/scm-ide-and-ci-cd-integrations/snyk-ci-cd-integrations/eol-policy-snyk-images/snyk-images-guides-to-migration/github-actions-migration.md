@@ -129,8 +129,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Install Snyk CLI
       run: |
-        curl https://static.snyk.io/cli/latest/snyk-linux -o snyk-linux
-        curl https://static.snyk.io/cli/latest/snyk-linux.sha256 -o snyk.sha256
+        curl https://downloads.snyk.io/cli/stable/snyk-linux -o snyk-linux
+        curl https://downloads.snyk.io/cli/stable/snyk-linux.sha256 -o snyk.sha256
         sha256sum -c snyk.sha256
         chmod +x snyk-linux
         sudo mv snyk-linux /usr/local/bin/snyk

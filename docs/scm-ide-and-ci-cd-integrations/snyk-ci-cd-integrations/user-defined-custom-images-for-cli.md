@@ -38,8 +38,8 @@ RUN apk add --no-cache curl
 RUN apk add --no-cache nodejs
 
 # Install & setup Snyk CLI
-RUN curl -o ./snyk-alpine https://static.snyk.io/cli/stable/snyk-alpine && \
-    curl -o ./snyk-alpine.sha256 https://static.snyk.io/cli/stable/snyk-alpine.sha256 && \
+RUN curl -o ./snyk-alpine https://downloads.snyk.io/cli/stable/snyk-alpine && \
+    curl -o ./snyk-alpine.sha256 https://downloads.snyk.io/cli/stable/snyk-alpine.sha256 && \
     sha256sum -c snyk-alpine.sha256 && \
     mv snyk-alpine /usr/local/bin/snyk && \
     chmod +x /usr/local/bin/snyk

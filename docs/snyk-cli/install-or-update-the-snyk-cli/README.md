@@ -20,25 +20,25 @@ Use [GitHub Releases](https://github.com/snyk/snyk/releases) to download a stand
 
 Snyk also provides these standalone executables on the Snyk Content Delivery Network (CDN). See the latest `release.json` [file](https://static.snyk.io/cli/latest/release.json) for the download links. Examples for a specific version or platform follow:
 
-* [https://static.snyk.io/cli/v1.666.0/release.json](https://static.snyk.io/cli/v1.666.0/release.json)
-* [https://static.snyk.io/cli/latest/snyk-macos](https://static.snyk.io/cli/latest/snyk-macos)
+* [https://downloads.snyk.io/cli/v1.666.0/release.json](https://downloads.snyk.io/cli/v1.666.0/release.json)
+* [https://downloads.snyk.io/cli/stable/snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)
 
 For example, to download and run the latest Snyk CLI on macOS, you could run:
 
 ```bash
-curl --compressed https://static.snyk.io/cli/latest/snyk-macos -o snyk
+curl --compressed https://downloads.snyk.io/cli/stable/snyk-macos -o snyk
 chmod +x ./snyk
 mv ./snyk /usr/local/bin/
 ```
 
 You can also use these direct links to download the executables:
 
-* **macOS**: [https://static.snyk.io/cli/latest/snyk-macos](https://static.snyk.io/cli/latest/snyk-macos)
-* **Windows**: [https://static.snyk.io/cli/latest/snyk-win.exe](https://static.snyk.io/cli/latest/snyk-win.exe)\
+* **macOS**: [https://downloads.snyk.io/cli/stable/snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)
+* **Windows**: [https://downloads.snyk.io/cli/stable/snyk-win.exe](https://downloads.snyk.io/cli/stable/snyk-win.exe)\
   You can rename the file to snyk.exe so you can run snyk commands as documented, for example, `snyk test`.
-* **Linux**: [https://static.snyk.io/cli/latest/snyk-linux](https://static.snyk.io/cli/latest/snyk-linux)
-* **Linux/arm64**: [https://static.snyk.io/cli/latest/snyk-linux-arm64](https://static.snyk.io/cli/latest/snyk-linux-arm64)
-* **Alpine**: [https://static.snyk.io/cli/latest/snyk-alpine](https://static.snyk.io/cli/latest/snyk-alpine)
+* **Linux**: [https://downloads.snyk.io/cli/stable/snyk-linux](https://downloads.snyk.io/cli/stable/snyk-linux)
+* **Linux/arm64**: [https://downloads.snyk.io/cli/stable/snyk-linux-arm64](https://downloads.snyk.io/cli/stable/snyk-linux-arm64)
+* **Alpine**: [https://downloads.snyk.io/cli/stable/snyk-alpine](https://downloads.snyk.io/cli/stable/snyk-alpine)
 
 {% hint style="info" %}
 To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine, (darwin/arm64), see [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md).

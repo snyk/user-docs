@@ -48,11 +48,11 @@ jobs:
       - run:
           name: Download Snyk CLI
           command: |
-            curl -Lo snyk-linux https://static.snyk.io/cli/latest/snyk-linux
+            curl -Lo snyk-linux https://downloads.snyk.io/cli/stable/snyk-linux
       - run:
           name: Download Snyk CLI SHA256 Checksum
           command: |
-            curl -Lo snyk-linux.sha256 https://static.snyk.io/cli/latest/snyk-linux.sha256
+            curl -Lo snyk-linux.sha256 https://downloads.snyk.io/cli/stable/snyk-linux.sha256
       - run:
           name: Verify SHA256 Checksum
           command: |

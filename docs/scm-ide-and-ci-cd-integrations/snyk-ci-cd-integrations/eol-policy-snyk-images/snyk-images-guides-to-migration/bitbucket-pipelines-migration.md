@@ -117,9 +117,9 @@ pipelines:
         name: Snyk scan
         script:
           # Download Snyk Linux CLI
-          - curl https://static.snyk.io/cli/latest/snyk-linux -o snyk-linux
+          - curl https://downloads.snyk.io/cli/latest/snyk-linux -o snyk-linux
           # Download Snyk Linux CLI SHASUM
-          - curl https://static.snyk.io/cli/latest/snyk-linux.sha256 -o snyk.sha256
+          - curl https://downloads.snyk.io/cli/latest/snyk-linux.sha256 -o snyk.sha256
           # Validate binary using SHASUM
           - sha256sum -c snyk.sha256
           # Configure CLI for executtion
