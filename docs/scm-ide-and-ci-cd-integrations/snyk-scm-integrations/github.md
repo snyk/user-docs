@@ -58,7 +58,7 @@ You can then scroll down to the section required, and set the options accordingl
 
 * [General settings](github.md#github-integration-general-settings)
 * Pull requests:
-  * [Open Snyk automatic PRs from a fixed GitHub account](github.md#setting-an-account-to-open-snyk-prs)
+  * [Opening fix and upgrade pull requests from a fixed GitHub account](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
   * [Automatic fix PRs](github.md#project-monitoring-and-automatic-fix-pull-requests)
   * [Automatic dependency upgrade PRs](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/)
   * [Pull request assignees](github.md#pr-assignment)
