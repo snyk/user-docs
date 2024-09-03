@@ -1,10 +1,10 @@
 # Jira policy - Use case
 
 {% hint style="warning" %}
-Jira action is in Closed Beta and avalaible only with Snyk AppRisk Pro . If you want to set it up in your Group, contact your Snyk account team.
+Jira action is in Closed Beta and available with Snyk AppRisk Essentials and Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-You can use the **Jira actions** to create tickets about specific assets.
+You can use the Jira action to create tickets for specific assets.
 
 ## Create A Jira Policy
 
