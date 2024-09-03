@@ -3551,94 +3551,20 @@
         "additionalProperties": false,
         "properties": {
           "group": {
-            "additionalProperties": false,
-            "properties": {
-              "data": {
-                "properties": {
-                  "attributes": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "name": {
-                        "description": "The display name of the group.",
-                        "example": "Group display name",
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "id": {
-                    "example": "331ede0a-de94-456f-b788-166caeca58bf",
-                    "format": "uuid",
-                    "type": "string"
-                  },
-                  "type": {
-                    "description": "The group the membership belongs to.",
-                    "example": "group",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/GroupMembershipGroupData"
           },
           "role": {
-            "additionalProperties": false,
-            "properties": {
-              "data": {
-                "properties": {
-                  "attributes": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "name": {
-                        "description": "The display name of the role.",
-                        "example": "Role name",
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "id": {
-                    "example": "331ede0a-de94-456f-b788-166caeca58bf",
-                    "format": "uuid",
-                    "type": "string"
-                  },
-                  "type": {
-                    "description": "The resource type the role is for",
-                    "example": "group_role",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/GroupMembershipRoleData"
           },
           "user": {
-            "additionalProperties": false,
-            "properties": {
-              "data": {
-                "properties": {
-                  "attributes": {
-                    "$ref": "#/components/schemas/UserRelationshipAttributes"
-                  },
-                  "id": {
-                    "example": "331ede0a-de94-456f-b788-166caeca58bf",
-                    "format": "uuid",
-                    "type": "string"
-                  },
-                  "type": {
-                    "description": "Always \"user\"",
-                    "example": "user",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/GroupMembershipUserData"
           }
         },
+        "required": [
+          "role",
+          "group",
+          "user"
+        ],
         "type": "object"
       },
       "GroupMembershipResponseData": {
@@ -44706,7 +44632,7 @@
           "2023-03-29~beta",
           "2023-04-17",
           "2023-08-21",
-          "2024-06-26~experimental"
+          "2024-06-26~beta"
         ],
         "x-snyk-api-version": "2023-08-21"
       },
@@ -44807,7 +44733,7 @@
         "x-snyk-api-releases": [
           "2022-06-29~beta",
           "2022-09-15",
-          "2024-06-26~experimental"
+          "2024-06-26~beta"
         ],
         "x-snyk-api-version": "2022-09-15"
       },
