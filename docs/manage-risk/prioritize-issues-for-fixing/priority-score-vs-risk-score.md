@@ -14,10 +14,10 @@ Risk Score and Priority Score are fundamental to vulnerability management. Risk 
 
 If you want to compare scores, ensure you are looking at the same type of score and for the same product. For example, you can compare a Risk score from Snyk Open Source with another Risk score from Snyk Open Source but cannot compare a Risk score from Snyk Open Source with another Risk score from Snyk Container.
 
-By default, the Priority score is enabled for Container, Code, IaC, and Open Source issues. If the user enables the Risk score from Snyk Preview, then the scores are applied like this:
+By default, the Priority score is enabled for Snyk Container, Snyk Code, Snyk IaC, and Snyk Open Source issues. If the user enables the Risk score from Snyk Preview, then the scores are applied like this:
 
-* Risk score is applied to Container and Open Source issues.
-* Priority score is applied to Code and IaC issues.
+* Risk score is applied to Snyk Container and Snyk Open Source issues.
+* Priority score is applied to Snyk Code and Snyk IaC issues.
 
 ## Priority score and Risk score comparison
 
