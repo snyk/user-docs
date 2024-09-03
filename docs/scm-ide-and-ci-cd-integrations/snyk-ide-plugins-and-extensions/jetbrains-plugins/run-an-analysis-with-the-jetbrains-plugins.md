@@ -6,7 +6,7 @@ Make sure your project file, for example, requirements.txt, is saved before runn
 
 To trigger an analysis during your daily coding workflow, click either the run (play) button, or **Run scan**.
 
-![Play button and Run scan link](../../../.gitbook/assets/play-run.png)
+<figure><img src="../../../.gitbook/assets/play-run.png" alt="Play button and Run scan link"><figcaption><p>Play button and Run scan link</p></figcaption></figure>
 
 Continue by looking at the results:
 

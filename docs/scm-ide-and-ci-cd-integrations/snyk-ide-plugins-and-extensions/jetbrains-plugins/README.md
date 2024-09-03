@@ -6,7 +6,7 @@ description: Use this documentation to get started with the JetBrains plugin.
 
 Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment. This page describes the Snyk JetBrains plugins. For information about all of the IDE plugins and their use, see [Snyk for IDEs](https://docs.snyk.io/ide-tools) in the docs.
 
-Snyk supports JetBrains plugins from version 2020.2 for [IntelliJ IDEA](https://snyk.io/lp/intellij-ide-plugin/), Android Studio, AppCode, GoLand, PhpStorm, PyCharm, Rider, and RubyMine.
+Snyk supports JetBrains plugins from version 2020.2 for [IntelliJ IDEA](https://snyk.io/lp/intellij-ide-plugin/), as well as Android Studio, AppCode, GoLand, PhpStorm, PyCharm, Rider, and RubyMine.
 
 {% hint style="info" %}
 Snyk uses Python in order to scan and find your dependencies. If you are using multiple Python versions, use the -`-command` option to specify the correct Python command for execution. The plugin does not detect the Python version associated with the project.
@@ -27,8 +27,6 @@ Snyk scans for the following types of issues:
 [**Container Security**](https://snyk.io/product/container-vulnerability-management/) - security vulnerabilities in your base images. See also the [Snyk Container docs](https://docs.snyk.io/products/snyk-container).
 
 [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code docs](https://docs.snyk.io/products/snyk-infrastructure-as-code).
-
-The JetBrains plugins also provide the [**Open Source Advisor**](https://snyk.io/advisor/) to help you find the best package for your next project. Information is provided on the package health of the direct dependencies you are using including popularity, maintenance, risk, and community insights.
 
 After you complete the installation steps on this page and the [configuration](https://docs.snyk.io/ide-tools/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins) and [authentication](https://docs.snyk.io/ide-tools/jetbrains-plugins/authentication-for-the-jetbrains-plugins) steps on the next two pages, continue by following the instructions in the other JetBrains plugins docs:
 
@@ -74,7 +72,7 @@ Install using the IDE plugins library:
 5. Click on the **Install** button.
 6. When the installation is complete, restart the IDE.
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (7).png" alt="Select the Snyk vulnerability scanning plugin"><figcaption><p>Select the Snyk vulnerability scanning plugin</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-09-02 at 8.42.05 AM.png" alt="Select the Snyk vulnerability scanning plugin"><figcaption><p>Select the Snyk vulnerability scanning plugin</p></figcaption></figure>
 
 Continue with the steps on the JetBrains [configuration](https://docs.snyk.io/ide-tools/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins) page.
 

@@ -328,6 +328,7 @@
     * [Troubleshooting IDEs](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/README.md)
       * [How to set environment variables by operating system OS for IDEs and CLI](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli.md)
       * [OAuth 2.0 authentication does not work](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md)
+      * [Authentication using API token does not work](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/authentication-using-api-token-does-not-work.md)
       * [Troubleshoot Certificate Errors](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/troubleshoot-certificate-errors.md)
       * [Force use of the latest language server](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/force-use-of-the-latest-language-server.md)
       * [Snyk Code appears disabled](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/snyk-code-appears-disabled.md)
