@@ -233,13 +233,13 @@ The Reports page is available at both the Group and Organization levels.
 
 ### View dependencies and licenses
 
-You can [view dependencies](https://docs.snyk.io/manage-risk/reporting/dependencies-and-licenses/view-dependencies) and [license information](https://docs.snyk.io/manage-risk/reporting/dependencies-and-licenses/view-licenses) for all Projects in your Organization or Group, using the **Dependencies** option in your Organization or Group menu:
+You can [view dependencies](https://docs.snyk.io/manage-risk/reporting/dependencies-and-licenses/view-dependencies) and [license information](https://docs.snyk.io/manage-risk/reporting/dependencies-and-licenses/view-licenses) for all Projects in your Organization or Group, using the **Dependencies** option in your Organization or Group menu.
 
 ### Manage Organization or Group members
 
 Select **Members** from the navigation on the Dashboard to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations.md) or [Group](../snyk-admin/groups-and-organizations/groups/manage-users-in-a-group.md).&#x20;
 
-The Members page is available at both Group and Organization level.
+The Members page is available at both the Group and Organization levels.
 
 {% hint style="warning" %}
 You must be assigned the [required Admin roles and permissions](../snyk-admin/user-roles/pre-defined-roles.md) to make changes to the **Members** tab.
