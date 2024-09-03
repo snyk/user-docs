@@ -2,7 +2,7 @@
 
 The Snyk Risk score and Priority score are keys to security management. Both types of score help Organizations handle current threats and prepare for future vulnerabilities, leading to a more robust security framework.
 
-The Priority and Risk Scores are ranking the issues and the urgency of fixing them. Both scores provide a number between 1 and 1000, where 1 means low severity and 1000 means high severity. Snyk uses these numbers to indicate the urgency of remediating a vulnerability.
+The Priority and Risk Scores rank the issues and the urgency of fixing them. Both scores provide a number between 1 and 1000, where 1 means low severity and 1000 means high severity. Snyk uses these numbers to indicate the urgency of remediating a vulnerability.
 
 {% hint style="info" %}
 **Risk score** assesses the potential impact of vulnerabilities, prioritizing those with severe consequences.&#x20;
@@ -13,6 +13,11 @@ The Priority and Risk Scores are ranking the issues and the urgency of fixing th
 Risk Score and Priority Score are fundamental to vulnerability management. Risk Score predicts the long-term impact of a vulnerability. Priority Score assesses vulnerabilities based on their immediacy and likelihood of exploitation, prioritizing responses to potential threats that could immediately compromise security. In contrast, Risk Score guides strategic resource allocation to prevent long-term damage.
 
 If you want to compare scores, ensure you are looking at the same type of score and for the same product. For example, you can compare a Risk score from Snyk Open Source with another Risk score from Snyk Open Source but cannot compare a Risk score from Snyk Open Source with another Risk score from Snyk Container.
+
+By default, the Priority score is enabled for Container, Code, IaC, and Open Source issues. If the user enables the Risk score from Snyk Preview, then the scores are applied like this:
+
+* Risk score is applied to Container and Open Source issues.
+* Priority score is applied to Code and IaC issues.
 
 ## Priority score and Risk score comparison
 
@@ -84,7 +89,7 @@ Scan your source code and apply the following filters to your list of found vuln
 
 Let's assume that you are integrating a new third-party library into an existing application, and after a scan, you discover that the library has several vulnerabilities. Filter the vulnerabilities using the Risk score to determine which vulnerabilities pose the greatest threat.&#x20;
 
-Remember that Risk score needs to first be enabled from the [Snyk Preview](../../snyk-admin/snyk-preview.md#enable-or-disable-a-feature) screen and can only be applied to Snyk Open Source and Snyk Container.
+Remember that Risk score must first be enabled from the [Snyk Preview](../../snyk-admin/snyk-preview.md#enable-or-disable-a-feature) screen and can only be applied to Snyk Open Source and Snyk Container.
 
 Scan your source code and apply the following filters to your list of found vulnerabilities to prioritize remediation efforts:
 
