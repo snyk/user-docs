@@ -115,7 +115,7 @@ The example that follows shows a fix pull request opened by Snyk.
 
 To review and adjust the automatic fix pull request settings in the Snyk GitHub Integration settings page, navigate to Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
-Scroll down to the **Automatic fix PRs** section and set the options. For definitions, see [Configure automatic fix PRs at the integration level](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/7856/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs#configure-automatic-fix-prs-at-the-integration-level).
+Scroll down to the **Automatic fix PRs** section and set the options. For definitions, see [Configure automatic fix PRs at the integration level](../../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md#configure-automatic-fix-prs-at-the-integration-level).
 
 <div align="left">
 
