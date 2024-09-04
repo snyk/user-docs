@@ -1,30 +1,27 @@
 # Eclipse plugin
 
-The Snyk Eclipse plugin provides analysis of your code, containers, and infrastructure as code configurations.
+## **Scan early, fix as you develop: elevate your security posture**
 
-Snyk scans for the following types of issues:
+Integrating security checks early in your development lifecycle helps you pass security reviews seamlessly and avoid expensive fixes down the line.
 
-* [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both the direct and indirect (transitive) open-source dependencies pulled into the Snyk Project. See also the [`Open Source docs`](https://docs.snyk.io/products/snyk-open-source).
-* [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities in your code. See also the [Snyk Code docs](https://docs.snyk.io/products/snyk-code).
-* [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code docs](https://docs.snyk.io/products/snyk-infrastructure-as-code).
+The Snyk Eclipse extension allows you to analyze your code, open-source dependencies, and Infrastructure as Code (IaC) configurations. With actionable insights directly in your IDE, you can address issues as they arise.
 
-The Eclipse plugin provides automated, algorithm-based fix suggestions for both direct and transitive dependencies. This single plugin provides a Java vulnerability scanner and an open-source security scanner.
+**Key features:**
 
-After you have installed and configured the Eclipse plugin, every time you run it, open a file, or autosave, Snyk scans the manifest files, proprietary code, and configuration files in your project (if not deactivated in the Snyk Settings). Snyk delivers actionable vulnerability, license, or misconfiguration issue details and displays the results natively within the Eclipse UI.
+* **In-line issue highlighting:** Security issues are flagged directly within your code, categorized by type and severity for quick identification and resolution.
+* **Comprehensive scanning:** The extension scans for a wide range of security issues, including:
+  * [**Open Source Security**](https://snyk.io/product/open-source-security-management/)**:** Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-using-snyk/snyk-open-source).
+  * [**Code Security**](https://snyk.io/product/snyk-code/)**:** Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-using-snyk/snyk-code).
+  * [**IaC Security**](https://snyk.io/product/infrastructure-as-code-security/)**:** Uncovers configuration issues in your Infrastructure as Code templates (Terraform, Kubernetes, CloudFormation, Azure Resource Manager). Explore more in the [IaC documentation](https://docs.snyk.io/scan-using-snyk/snyk-iac).
+* **Broad language and framework support:** Snyk Open Source and Snyk Code cover a wide array of package managers, programming languages, and frameworks, with ongoing updates to support the latest technologies. For the most up-to-date information on supported languages, package managers, and frameworks, see the [supported language technologies pages](https://docs.snyk.io/supported-languages-package-managers-and-frameworks).
 
-This page explains supported environments, support, and giving feedback and provides installation instructions. **After you complete the steps on this page**, you will continue by following the instructions in the other Eclipse plugins docs:
+## How to install and set up the extension
 
-* [Download the CLI and language server with the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/download-the-cli-and-language-server-with-the-eclipse-plugin)
-* [Authentication for the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/authentication-for-the-eclipse-plugin)
-* [Configuration of the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/configuration-of-the-eclipse-plugin)
-* [Environment variables for the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/environment-variables-for-the-eclipse-plugin)
-* [Use the Snyk plugin to secure your Eclipse projects](https://docs.snyk.io/ide-tools/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects)
-* [SAST scanning results (SAST, Snyk Code)](https://docs.snyk.io/ide-tools/eclipse-plugin/sast-scanning-results-sast-snyk-code)
-* [Misconfiguration scanning results (Snyk Infrastructure as Code)](https://docs.snyk.io/ide-tools/eclipse-plugin/misconfiguration-scanning-results-snyk-infrastructure-as-code)
-* Third-party[ dependency scanning (SCA, Snyk Open Source)](https://docs.snyk.io/ide-tools/eclipse-plugin/third-party-dependency-scanning-sca-snyk-open-source)
-* [Troubleshooting for the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/troubleshooting-for-the-eclipse-plugin)
+{% hint style="info" %}
+The latest Snyk Eclipse plugin is supported by Eclipse 2024-03 or newer.&#x20;
 
-## Supported operating systems and architecture
+An older plugin version is supported by Eclipse 2023-03 or newer.
+{% endhint %}
 
 {% hint style="warning" %}
 Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
@@ -36,61 +33,21 @@ You can use the Eclipse plugin in the following environments:
 * Windows: 386 and AMD64
 * MacOS: AMD64 and ARM64
 
-## Versions of the plugin supported in Eclipse
-
-The latest plugin version may not be supported in all Eclipse versions. Thus, if you use an older Eclipse version, you may need to install an older plugin version. The following versions of Eclipse are supported by at least one plugin version:
-
-* 2024-03
-* 2023-12
-* 2023-09
-* 2023-06
-* 2023-03
-
-## Supported languages, package managers, and frameworks
-
-* For Snyk Open Source, the Eclipse plugin supports the languages and package managers supported by Snyk Open Source and the CLI except C/C++. For more information, see [Supported languages, frameworks, and feature availability overview, Open Source section](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source).
-* For Snyk Code, the Eclipse plugin supports the languages and frameworks supported by Snyk Code. For more information, see [Supported languages, frameworks, and feature availability overview, Snyk Code section](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code).
-* For Snyk IaC, the Eclipse plugin supports the following IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager.
-
-## Where you can download the Eclipse plugin
-
-* **Eclipse Marketplace (recommended)**: [https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations)
-* Preview update site (CI/CD, on commit): [https://static.snyk.io/eclipse/preview](https://static.snyk.io/eclipse/preview)
-* Stable update site (weekly): [https://static.snyk.io/eclipse/stable](https://static.snyk.io/eclipse/stable)
-* Manual downloads: [https://github.com/snyk/snyk-eclipse-plugin/releases](https://github.com/snyk/snyk-eclipse-plugin/releases)
-
-**Signing Information for Jars**
-
-If you want to verify the correct provenance of your download, verify the signing details from the Eclipse dialog using this data.
-
-<figure><img src="../../../.gitbook/assets/image (134) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="The signing key details to verify the integrity and origin of the download plugin"><figcaption><p>The signing key details to verify the integrity and origin of the download plugin</p></figcaption></figure>
-
-## How to install the Snyk Eclipse plugin
-
-Navigate to the Marketplace from your running Eclipse instance. Search for Snyk and click **Install**.
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-17 at 16.29.29.png" alt="Eclipse Marketplace search showing Snyk plugin and Install button"><figcaption><p>Eclipse Marketplace search showing Snyk plugin and Install button</p></figcaption></figure>
+Install the plugin at any time free of charge from the  [Eclipse marketplace](https://marketplace.eclipse.org/content/snyk-security) and use it with any Snyk account, including the Free plan.&#x20;
 
 When you are prompted, accept the license agreement and add the **Snyk Security** certificate to complete the installation (this happens only once).
 
-Restart the Eclipse instance:
+Continue by following the instructions in the other Eclipse extension docs:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-13 at 09.16.37.png" alt="Restart Eclipse"><figcaption><p>Restart Eclipse</p></figcaption></figure>
-
-After Eclipse is restarted, the Snyk Wizard should run; this will set up your Snyk API endpoint and authentication token.
-
-After the Snyk configuration wizard runs, follow the instructions to set up your Snyk API:
-
-<figure><img src="../../../.gitbook/assets/eclipseSnykWizard (1).png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
-
-After the Snyk plugin is configured, navigate to **Eclipse Preferences** to ensure that **Snyk** now appears in the list:
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png" alt="Eclipse preferences showing Snyk."><figcaption><p>Eclipse preferences showing Snyk.</p></figcaption></figure>
-
-When you open the preferences, you can opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
-
-Continue with the steps to [Download the CLI and language server with the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/download-the-cli-and-language-server-with-the-eclipse-plugin).
+* [Download the CLI and language server with the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/download-the-cli-and-language-server-with-the-eclipse-plugin)
+* [Authentication for the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/authentication-for-the-eclipse-plugin)
+* [Eclipse plugin folder trust](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/folder-trust)
+* [Configuration of the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/configuration-of-the-eclipse-plugin)
+* [Environment variables for the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/environment-variables-for-the-eclipse-plugin)
+* [Use the Snyk plugin to secure your Eclipse projects](https://docs.snyk.io/ide-tools/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects)
 
 ## Support
 
-If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
+For troubleshooting and known issues, see [Troubleshooting for the Eclipse plugin](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/troubleshooting-for-the-eclipse-plugin).
+
+If you need help, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).

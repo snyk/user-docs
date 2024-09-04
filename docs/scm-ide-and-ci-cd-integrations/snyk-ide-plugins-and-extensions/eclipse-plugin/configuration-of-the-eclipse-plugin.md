@@ -31,5 +31,3 @@ You can set the following configuration options in the Snyk preferences.
 * `Send error reports to Snyk`: Send errors from Language Server to Snyk to enable quick bug fixing. Default: `Enabled`.
 * `Send usage statistics to Snyk`: Allow Snyk to get usage data to improve workflows. Default: `Enabled`.
 * `Trusted Folders`: specify, which directories should be considered safe, e.g. the parent directory of all your projects.
-
-###

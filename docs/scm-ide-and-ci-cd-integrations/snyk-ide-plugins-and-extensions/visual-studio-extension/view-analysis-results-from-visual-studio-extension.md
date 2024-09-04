@@ -15,5 +15,3 @@ Users can configure the Snyk extension by **Project settings**.
 Note that the “Scan all projects” option is enabled by default. It adds the `--all-projects` option for Snyk CLI to scan all projects by default.
 
 ![Scan all projects enabled](../../../.gitbook/assets/readme\_image\_3\_3.png)
-
-##
