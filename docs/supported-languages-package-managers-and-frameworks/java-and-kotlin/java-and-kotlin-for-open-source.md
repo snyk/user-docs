@@ -1,6 +1,10 @@
 # Java and Kotlin for open source
 
-## Snyk support for Java and Kotlin for open source
+{% hint style="warning" %}
+**Release status: Improved Gradle SCM scanning - Early Access**
+
+You can now obtain more accurate results for your Gradle Projects imported through Git integrations by using Improved Gradle SCM scanning. this Early Access feature. For more information, see [Git repositories with Maven and Gradle](git-repositories-with-maven-and-gradle.md).
+{% endhint %}
 
 **Build tools**: Maven, Gradle
 
@@ -27,23 +31,19 @@
 
 The following summarizes Snyk support for Java and Kotlin.
 
-### **Java**
+## **Java**
 
 | Package managers / Features       | CLI support | Git support | License scanning | Fix PRs         |
 | --------------------------------- | ----------- | ----------- | ---------------- | --------------- |
 | [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎              |
 | [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | Fix advice only |
 
-### **Kotlin**
+## **Kotlin**
 
-| Package managers / Features       | CLI support | Git support | License scanning | Fix PRs         |
-| --------------------------------- | ----------- | ----------- | ---------------- | --------------- |
-| [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎              |
-| [Gradle](https://gradle.org)      | ✔︎          |             | ✔︎               | Fix advice only |
+| Package managers / Features       | CLI support | Git support  | License scanning | Fix PRs         |
+| --------------------------------- | ----------- | ------------ | ---------------- | --------------- |
+| [Maven](https://maven.apache.org) | ✔︎          | ✔︎           | ✔︎               | ✔︎              |
+| [Gradle](https://gradle.org)      | ✔︎          | Early Access | ✔︎               | Fix advice only |
 
-Gradle Projects imported using a Git integration are tested by parsing `build.gradle` files. You can resolve Gradle dependencies only by executing the tool itself, but even this method can sometimes provide incomplete results.
 
-If possible, enable [lockfiles](java-and-kotlin-for-open-source.md#git-services-for-maven-and-gradle) in your Gradle Project to improve the accuracy of Git imports.
-
-For Gradle projects without lockfiles, Snyk recommends using the Snyk CLI for the most accurate results.
 

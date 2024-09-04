@@ -1,5 +1,61 @@
 # Git repositories with Maven and Gradle
 
+{% hint style="warning" %}
+**Release status: Improved Gradle SCM scanning - Early Access**
+
+You can now obtain more accurate results for your Gradle Projects imported through Git integrations by using Improved Gradle SCM scanning. this Early Access feature. This page has [details](git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access).
+{% endhint %}
+
+## Git services available for Maven and Gradle Projects
+
+| Maven Projects                                                                                                                                                                                                                                                                                                                              | Gradle Projects                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <p>Snyk creates a Project per <code>pom.xml</code> file when it scans Maven applications. The Project includes all direct and indirect dependencies associated with that file. </p><p></p><p>The Project includes only the production dependencies in the <code>compile</code>, <code>provided</code>, and <code>runtime</code> scopes.</p> | <p></p><p>After you select a Project for import, Snyk builds the dependency tree based on the <code>build.gradle</code> file and (optional) <code>gradle.lockfile</code>. </p><p></p><p>Improved scanning for Gradle Projects (including Groovy and Kotlin DSLs) is now in Early Access as explained <a href="git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access">on this page</a>.</p><p></p><p>Only production dependencies in the <code>api</code>, <code>compile</code>, <code>classpath</code>, <code>implementation</code>, <code>runtime</code> and <code>runtimeOnly</code> configurations are included. </p><p></p><p>If possible, enable <a href="https://docs.gradle.org/current/userguide/dependency_locking.html">Gradle lockfiles</a> in your application. When present, Snyk can more accurately resolve the final version of dependencies used in the Project. </p><p></p><p>For Gradle projects without lockfiles, Snyk recommends using the Snyk CLI for the most accurate results.</p> |
+
+## Improved Gradle SCM scanning - Early Access
+
+Snyk has created a new approach for analyzing Gradle Projects imported through Git integrations, which provides significantly more accurate results. This feature is now in Early Access.
+
+### Supported Gradle features&#x20;
+
+The following lists some of the main supported Gradle features:
+
+* [Groovy](https://docs.gradle.org/current/userguide/groovy\_build\_script\_primer.html) and [Kotlin](https://docs.gradle.org/current/userguide/kotlin\_dsl.html) DSLs - `build.gradle(.kts)` and `settings.gradle(.kts)`.
+* [Built-in](https://docs.gradle.org/current/userguide/declaring\_repositories.html#sec:declaring\_public\_repository) and [custom](https://docs.gradle.org/current/userguide/declaring\_repositories.html#sec:declaring\_custom\_repository) package repositories (for example, Artifactory, Nexus).
+* Built-in objects [`ext`](https://docs.gradle.org/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html), [`project`](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html), `rootProject`, and [`settings`](https://docs.gradle.org/current/dsl/org.gradle.api.initialization.Settings.html).
+* Local and global variables, maps, and string interpolation.
+* Gradle [lockfiles](https://docs.gradle.org/current/userguide/dependency\_locking.html).
+* [Gradle properties and system properties](https://docs.gradle.org/current/userguide/build\_environment.html#sec:gradle\_system\_properties) - `gradle.properties`.
+* [Dependency exclusions](https://docs.gradle.org/current/userguide/dependency\_downgrade\_and\_exclude.html#sec:excluding-transitive-deps).
+* Version catalogs declared in [Gradle](https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog-declaration) and [TOML](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) files - `gradle/libs.versions.toml`.
+* [Multi-project builds](https://docs.gradle.org/current/userguide/declaring\_dependencies\_between\_subprojects.html), project names, project references.
+* [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import).
+* Maven BOMs as [`platform`](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps) dependencies.
+
+Note that some Gradle features are not yet supported, and this may influence the scan results. These include:
+
+* Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing\_gradle\_projects.html#sec:build\_sources) directories.
+* Dependencies introduced via [plugins](https://docs.gradle.org/current/userguide/plugins.html).
+
+If you see unexpected results from this Early Access feature, please raise a support ticket.
+
+### How to enable improved Gradle SCM scanning
+
+{% hint style="warning" %}
+Improved Gradle scanning supports importing a maximum limit of 5,000 `build.gradle(.kts)` files per git repository. Attempts to import repos with more than 5,000 Gradle build files will fail.
+{% endhint %}
+
+To enable this feature, follow these steps for your Snyk Organisation:
+
+1. Configure [package repository integrations](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/) (if you use Artifactory or Nexus, see [below](git-repositories-with-maven-and-gradle.md#package-repository-integrations)).
+2. Enable [Workspaces for SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).
+3. Enable **Improved Gradle scanning** in Snyk Preview.
+
+After Improved Gradle scanning is enabled:
+
+* Previously imported Git repositories will have existing Gradle Groovy DSL Projects automatically updated on the next manual or recurring test.
+* Re-import the repository to start seeing results for Gradle Kotlin DSL Projects.
+
 ## Configure language settings for Snyk for Java
 
 Configure language settings for your open source and licensing at the Organization level. The configuration settings apply to all Projects in that Organization.
@@ -9,12 +65,21 @@ Configure language settings for your open source and licensing at the Organizati
 3. Configure the settings for **Maven**.
 4. **Update Settings** to save changes.
 
-## Git services available for Maven and Gradle Projects
+## Package repository integrations
 
-| Maven Projects                                                                                                                                                                                                                                                             | Gradle Projects                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Gradle.lockfile                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Snyk creates a Project per `pom.xml` file when it scans Maven applications. The Project includes all direct and indirect dependencies associated with that file. ℹ️ The Project includes only the production dependencies in the`compile` ,`provided`,and`runtime` scopes. | <p>After you select a Project for import, Snyk builds the dependency tree based on the <code>build.gradle</code> file and (optional) <code>gradle.lockfile</code>. ℹ️ Only production dependencies in the <code>api</code>, <code>compile</code>, <code>classpath</code>, <code>implementation</code>, <code>runtime</code> and <code>runtimeOnly</code> configurations are included. If a lockfile is present, Snyk uses the lockfile to more accurately resolve the final version of dependencies used in the Project.</p><p>Gradle lockfiles do not contain transitive hierarchy information, so in some cases Snyk may place a package at the wrong position in the dependency graph. However no packages should be missing.</p><p>Gradle lockfiles are an opt-in feature that, among other benefits, enables reproducible builds. For more information, see the <a href="https://docs.gradle.org/current/userguide/dependency_locking.html">Gradle docs on dependency locking</a>. ⚠️ <strong>Kotlin</strong>: <code>build.gradle.kts</code> files are not currently supported in Git.</p> | <ul><li><p><strong>Using</strong> <strong>Maven, or Gradle with a gradle.lockfile</strong>:</p><p>The Git code repository integration is a great way to use Snyk and get visibility or you may decide to use CLI/IDE or CI/CD integrations to test/gate/monitor, or do both!</p></li></ul><ul><li><p><strong>Using Gradle</strong> <strong>without a Gradle.lockfile</strong>:</p><p>The full dependency tree may not be apparent or artifacts may be pulled in from external resources, so the CLI/IDE workflow (for local scans), and CI/CD is the recommended approach for analysis, otherwise you may not have a complete view of issues and dependencies.</p></li></ul> |
+{% hint style="success" %}
+If your application build uses private package repositories, you must configure the relevant Snyk integration to get the most accurate results.&#x20;
+{% endhint %}
 
-## **Git settings for Java**
+{% hint style="info" %}
+To use package repository integrations with the Improved Gradle scanning Early Access feature, use the configuration instructions and settings for Maven.&#x20;
 
-From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](https://docs.snyk.io/scan-using-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven).
+These will be detected and used in improved Gradle scans.
+{% endhint %}
+
+In the Java language settings, you can integrate Snyk with your private package repositories (for example, Artifactory or Nexus).&#x20;
+
+This enables Snyk to build a complete dependency tree when scanning Maven or Gradle (Early Access) projects that reference private packages.
+
+For more information, see [Package repository integrations](git-repositories-with-maven-and-gradle.md#package-repository-integrations).
+
