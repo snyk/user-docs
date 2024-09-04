@@ -48,7 +48,7 @@ Snyk requires both files to be present to correctly test, monitor, and fix Ruby 
 
 ## **Private Gem sources**
 
-If your Gemfile needs access to private Gem sources, see [Private Gem sources](ruby-for-open-source.md#private-gem-sources).
+If your Gemfile needs access to private Gem sources, see [Private gem sources for Ruby configuration](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/private-gem-sources-for-ruby-configuration.md).
 
 Using private Gem sources should work normally when you are using the Snyk CLI.
 
