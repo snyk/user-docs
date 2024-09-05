@@ -49,6 +49,8 @@ Not all features follow all these stages, and timelines for each feature to move
   * [SonarQube](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#sonarqube-setup-guide)
   * [GitGuardian](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide)
   * [Jira](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#jira-setup-guide)
+* [Improved Gradle SCM scanning](../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access)
+* [Universal Broker](../enterprise-setup/snyk-broker/universal-broker/)
 
 ## General Availability
 

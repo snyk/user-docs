@@ -1,5 +1,10 @@
 # Universal Broker
 
+{% hint style="warning" %}
+**Release status**\
+Universal Broker is in Early Access. If you would like to use this feature, contact your Snyk team.
+{% endhint %}
+
 The Universal Broker provides improvements to facilitate the management of Snyk Broker deployments and connections.&#x20;
 
 This page explains the configuration flow for the client. These pages guide you through a Broker deployment setup using the Universal Broker:
