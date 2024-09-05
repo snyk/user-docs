@@ -21,6 +21,11 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
 * [Enterprise Analytics](../manage-risk/enterprise-analytics/)
 * [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
+* Third-party integrations for Snyk AppRisk:
+  * [Nightfall](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide)
+  * [Dynatrace](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide)
+  * [Sysdig](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide)
+  * [Orca Security](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#orca-security-setup-guide)
 
 ## Early Access
 
@@ -38,6 +43,12 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Snyk broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
 * [Improved .NET scanning](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
 * [Snyk CLI pnpm support](../supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm)
+* Third-party integrations for Snyk AppRisk:&#x20;
+  * [Veracode](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#veracode-setup-guide)
+  * [Checkmarx](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#checkmarx-setup-guide)
+  * [SonarQube](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#sonarqube-setup-guide)
+  * [GitGuardian](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide)
+  * [Jira](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#jira-setup-guide)
 
 ## General Availability
 

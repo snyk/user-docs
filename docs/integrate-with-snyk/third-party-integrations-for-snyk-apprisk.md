@@ -24,6 +24,12 @@ Data synchronization may take up to two hours after receiving the **Connected** 
 
 ## Veracode setup guide
 
+{% hint style="warning" %}
+**Release status**
+
+Veracode is in Early Access and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
 ### Prerequisites <a href="#verocode-prerequisites" id="verocode-prerequisites"></a>
 
 The Veracode application concept is matched into the Snyk AppRisk repository assets. You need to create and utilize the Veracode custom field by using the [Veracode API](https://app.swaggerhub.com/apis/Veracode/veracode-applications\_api\_specification/1.0#/Application%20information%20API/updateApplicationUsingPUT). Access the [Veracode custom metadata field](https://docs.veracode.com/r/t\_create\_custom\_metadata) for more details.
@@ -54,6 +60,12 @@ Ensure you are adding a custom field called repoURL:
 8. When the connection is established, the status of the Veracode integration is changed to **Connected**.
 
 ## Checkmarx setup guide
+
+{% hint style="warning" %}
+**Release status**
+
+Checkmarx is in Early Access and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
 
 Use the following instructions to set up your Checkmarx SAST integration. Checkmarx SAST integration is only working for the Checkmarx SAST, we are not yet supporting Checkmarx One.
 
@@ -86,6 +98,12 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 
 ## SonarQube setup guide
 
+{% hint style="warning" %}
+**Release status**
+
+SonarQube is in Early Access and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
 ### Required parameters <a href="#sonarqube-required-parameters" id="sonarqube-required-parameters"></a>
 
 * API Key. [Here](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/) you can find more details about the SonarQube API Key.
@@ -102,6 +120,12 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 * When the connection is established, the status of the SonarQube integration is changed to **Connected**.
 
 ## Nightfall setup guide
+
+{% hint style="warning" %}
+**Release status**
+
+Nightfall is in Closed beta and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
 
 ### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
 
@@ -131,6 +155,12 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 {% endembed %}
 
 ## GitGuardian setup guide
+
+{% hint style="warning" %}
+**Release status**
+
+GitGuardian is in Early Access and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
 
 ### Required parameters <a href="#gitguardian-required-parameters" id="gitguardian-required-parameters"></a>
 
@@ -166,6 +196,12 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 {% endembed %}
 
 ## Jira setup guide
+
+{% hint style="warning" %}
+**Release status**
+
+Jira is in Early Access and available with Snyk AppRisk Essentials and Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
 
 ### Required parameters <a href="#jira-required-parameters" id="jira-required-parameters"></a>
 
@@ -210,6 +246,12 @@ The following table presents the functionality of all types of Jira integrations
 | [Jira for Snyk AppRisk](third-party-integrations-for-snyk-apprisk.md#jira-setup-guide)     | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
 
 ## Dynatrace setup guide
+
+{% hint style="warning" %}
+**Release status**
+
+Dynatrace is in Closed beta and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
 
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Dynatrace runtime integration: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
 
@@ -257,12 +299,18 @@ After the Dynatrace runtime data becomes available from the runtime integration,
 
 ## Sysdig setup guide
 
+{% hint style="warning" %}
+**Release status**
+
+Sysdig is in Closed beta and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
 
 ### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
 
 * The account must have access to Sysdig Secure product.
-* Contact your Sysdig representative to activate the in-use packages feature flag
+* Contact your Sysdig representative to activate the in-use packages feature flag.
 
 ### Required parameters <a href="#sysdig-required-parameters" id="sysdig-required-parameters"></a>
 
@@ -299,7 +347,7 @@ After the Sysdig runtime data becomes available from the runtime integration, it
 {% hint style="warning" %}
 **Release status**
 
-Orca Security is available in a Closed Beta state and applies only to Snyk AppRisk Pro.
+Orca Security is in Closed Beta state and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Prerequisites <a href="#orca-prerequisites" id="orca-prerequisites"></a>
