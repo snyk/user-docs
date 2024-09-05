@@ -1,5 +1,11 @@
 # Troubleshooting for Visual Studio Code extension
 
+{% hint style="warning" %}
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+{% endhint %}
+
+## Logs
+
 The logs for VSCode can be found in the output channels for the Snyk Extension and Snyk Language Server. Both are needed for troubleshooting.
 
 To enable debug log level, start VS Code from the terminal like this:

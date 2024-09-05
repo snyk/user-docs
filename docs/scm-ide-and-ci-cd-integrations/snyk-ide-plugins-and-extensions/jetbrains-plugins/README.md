@@ -28,10 +28,6 @@ The latest Snyk JetBrains plugin is supported by all JetBrains IDEs 2023.3 or ne
 An older plugin version is supported by JetBrains IDEs 2020.3 or newer.
 {% endhint %}
 
-{% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
-{% endhint %}
-
 You can use the Snyk JetBrains plugin in the following environments:
 
 * Linux: 386, AMD64, and ARM64

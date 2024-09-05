@@ -23,14 +23,10 @@ The latest Snyk Eclipse plugin is supported by Eclipse 2024-03 or newer.&#x20;
 An older plugin version is supported by Eclipse 2023-03 or newer.
 {% endhint %}
 
-{% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
-{% endhint %}
-
 You can use the Eclipse plugin in the following environments:
 
 * Linux: AMD64 and ARM64
-* Windows: 386 and AMD64
+* Windows: 386, AMD64, and ARM64
 * MacOS: AMD64 and ARM64
 
 Install the plugin at any time free of charge from the  [Eclipse marketplace](https://marketplace.eclipse.org/content/snyk-security) and use it with any Snyk account, including the Free plan.&#x20;

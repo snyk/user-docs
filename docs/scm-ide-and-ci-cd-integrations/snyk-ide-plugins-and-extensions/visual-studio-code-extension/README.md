@@ -17,15 +17,17 @@ The Snyk Visual Studio Code extension allows you to analyze your code, open-sour
 
 ## How to install and set up the extension
 
-{% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
-{% endhint %}
-
 You can use the Snyk Visual Studio Code extension in the following environments:
 
 * Linux: AMD64 and ARM64
-* Windows: 386 and AMD64
+* Windows: 386, AMD64, and ARM64
 * macOS: AMD64 and ARM64
+
+Snyk Visual Studio Code extension does not support remote and containerized environments:
+
+* [Cloud VS Code IDE](https://code.visualstudio.com/docs/editor/vscode-web)
+* [VS Code Remote Development](https://code.visualstudio.com/docs/remote/remote-overview)
+* [Inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
 
 Install the plugin at any time free of charge from the  [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and use it with any Snyk account, including a Free account. For more information, see the[VS Code extension installation guide](https://code.visualstudio.com/docs/editor/extension-marketplace#\_install-an-extension).
 

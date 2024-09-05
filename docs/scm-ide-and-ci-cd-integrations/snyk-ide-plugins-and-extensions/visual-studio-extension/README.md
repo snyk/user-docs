@@ -8,7 +8,6 @@ The Snyk Visual Studio extension allows you to analyze your code and open-source
 
 **Key features:**
 
-* **In-line issue highlighting:** Security issues are flagged directly within your code, categorized by type and severity for quick identification and resolution.
 * **Comprehensive scanning:** The extension scans for a wide range of security issues, including:
   * [**Open Source Security**](https://snyk.io/product/open-source-security-management/)**:** Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-using-snyk/snyk-open-source).
   * [**Code Security**](https://snyk.io/product/snyk-code/)**:** Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-using-snyk/snyk-code).
@@ -20,10 +19,6 @@ The Snyk Visual Studio extension allows you to analyze your code and open-source
 The latest version of the Snyk Visual Studio extension is supported by Visual Studio 2022 (version 17.5 and above).
 
 An older plugin version is supported by Visual Studio 2015, 2017, and 2019
-{% endhint %}
-
-{% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
 {% endhint %}
 
 You can use the Snyk Visual Studio extension in the following environments:

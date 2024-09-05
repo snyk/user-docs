@@ -1,5 +1,9 @@
 # Troubleshooting for the JetBrains plugin
 
+{% hint style="warning" %}
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+{% endhint %}
+
 ## Get detailed logs: debug logs
 
 Each JetBrains IDE provides easy access to the logs.

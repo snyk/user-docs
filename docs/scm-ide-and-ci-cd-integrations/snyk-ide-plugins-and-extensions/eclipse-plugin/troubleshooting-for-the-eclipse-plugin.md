@@ -1,5 +1,9 @@
 # Troubleshooting for the Eclipse plugin
 
+{% hint style="warning" %}
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+{% endhint %}
+
 ## General troubleshooting
 
 For general troubleshooting, see the [IDE troubleshooting pages](../troubleshooting-ides/).
