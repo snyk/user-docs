@@ -2,6 +2,8 @@
 
 ## Restart your Broker with the required environment variable. <a href="#restart-your-broker-with-required-environment-variable" id="restart-your-broker-with-required-environment-variable"></a>
 
+Use `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` for regional Snyk instances.
+
 | <pre><code>docker run --restart=always \
     -p 8000:8000 \
     -e ACCEPT_CODE=true \
@@ -11,11 +13,10 @@
     -e UNIVERSAL_BROKER_ENABLED=true \
     -e MY_GITHUB_TOKEN=GITHUB_TOKEN_VALUE \
     -e PORT=8000 \
-    -e BROKER_SERVER_URL=https://broker.pre-prod.snyk.io \
     -e BROKER_HA_MODE_ENABLED=true \
-snyk/broker:universal-dev
+snyk/broker:universal
 </code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 At this point, the Broker will display the following message:
 
@@ -27,7 +28,7 @@ You can now use the connection in an organization integration.
 
 ## &#x20;Connect your organization integration to use a connection <a href="#id-5-connect-your-org-integration-to-use-a-connection" id="id-5-connect-your-org-integration-to-use-a-connection"></a>
 
-| <pre><code>curl --location --request POST 'https://api.pre-prod.snyk.io/rest/tenants/TENANT_ID/brokers/connections/CONNECTION_ID/orgs/ORG_ID/integration?version=2024-02-08~experimental' \
+| <pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/connections/CONNECTION_ID/orgs/ORG_ID/integration?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{
@@ -37,6 +38,6 @@ You can now use the connection in an organization integration.
     }
 }'
 </code></pre> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 Repeat connecting your organization for as many integrations as needed.

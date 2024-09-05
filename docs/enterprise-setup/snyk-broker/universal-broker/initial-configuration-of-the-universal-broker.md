@@ -10,14 +10,14 @@ The high-level steps in implementing the Universal Broker are the same regardles
 
 <figure><img src="../../../.gitbook/assets/image (563).png" alt="Illustration of steps in implementing the Universal Broker"><figcaption><p>Illustration of steps in implementing the Universal Broker</p></figcaption></figure>
 
-## Configuration using the `snyk-broker-config` command <a href="#using-snyk-broker-config-cli" id="using-snyk-broker-config-cli"></a>
+## Configuration using the `snyk-broker-config` command (recommended) <a href="#using-snyk-broker-config-cli" id="using-snyk-broker-config-cli"></a>
 
 Follow these steps to configure the Universal Broker using the `snyk-broker-config` command.
 
 1. `npm i -g snyk-broker-config`
 2. Set the necessary environment variables:
    * `SNYK_TOKEN` if not already set
-   * `SNYK_API_HOSTNAME` if not targeting api.snyk.io
+   * `SNYK_API_HOSTNAME` if not targeting https://api.snyk.io (for example,`export SNYK_API_HOSTNAME=https://api.eu.snyk.io`)
 3. Set more environment variables as needed to ensure the experience proceeds smoothly:
    * `TENANT_ID` so you do not have to enter it on every command&#x20;
    * `INSTALL_ID` if you have one, otherwise the tool will walk you through the installation process
@@ -68,13 +68,13 @@ Follow these steps to configure the Universal Broker using the `snyk-broker-conf
    See the [First time setup and connection recording](https://asciinema.org/a/YqSmUHEWMcDPeQKm6lpeG3qhM).
 2. Integrate your connection with an organization ID and Integration ID.\
    See the [Integration recording](https://asciinema.org/a/I2QJxi9MDEeThRZTLD1aTv9cN).
-3. List the organization IDs and iintegration IDs for your connection.\
-   See the [List organizaton IDs and integration IDs recording](https://asciinema.org/a/5RWuySWT0M2dDI9mARJjeZS5g).
+3. List the organization IDs and integration IDs for your connection.\
+   See the [List organization IDs and integration IDs recording](https://asciinema.org/a/5RWuySWT0M2dDI9mARJjeZS5g).
 4. Run the Broker client.
 
 ## Run your Broker deployment on your container engine or Kubernetes cluster
 
-Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.pre-prod.snyk.io \` if you are not using `broker.snyk.io`.
+Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker`, `REGION.snyk.io \` if you are not using `broker.snyk.io`.
 
 | <pre><code>docker run --restart=always \
     -p 8000:8000 \
