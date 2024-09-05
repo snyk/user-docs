@@ -1,14 +1,16 @@
 # Set up a GitHub connection using the API
 
-An example follows of using the Snyk API to set up a GitHub connection with the Universal Broker. Repeat connecting your organization for as many integrations as needed.
+This page provides an example of using the Snyk API to set up a GitHub connection with the Universal Broker. Repeat connecting your Organization for as many integrations as needed.
 
-Using the `snyk-broker-config` command is recommended for an easier experience. The API allowing for automation and more control also requires a clear understanding of Broker deployments, credentials, and connections.
+Using the `snyk-broker-config` command is recommended for an easier experience. The API allows for automation and more control, and also requires a clear understanding of Broker deployments, credentials, and connections.
 
-For any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary (for example, `api.eu.snyk.io`).
+{% hint style="info" %}
+In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`.
+{% endhint %}
 
-## Install the Broker App for your organization <a href="#id-1-install-the-broker-app-on-your-org" id="id-1-install-the-broker-app-on-your-org"></a>
+## Install the Broker App for your Organization <a href="#id-1-install-the-broker-app-on-your-org" id="id-1-install-the-broker-app-on-your-org"></a>
 
-Install the Universal Broker App **at the organization level**. Group-level installation is not supported. Use the endpoint to Install a Snyk App for[ this organization](../../../snyk-api/reference/apps.md#orgs-org\_id-apps-installs).
+Install the Universal Broker App **at the Organization level**. Group-level installation is not supported. Use the endpoint to Install a Snyk App for[ this Organization](../../../snyk-api/reference/apps.md#orgs-org\_id-apps-installs).
 
 ## Create your deployment <a href="#id-2-create-your-deployment" id="id-2-create-your-deployment"></a>
 
@@ -31,7 +33,7 @@ Install the Universal Broker App **at the organization level**. Group-level inst
 }'
 </code></pre> |
 
-This returns DEPLOYMENT\_ID (data.id), for example:
+This returns the DEPLOYMENT\_ID (data.id), for example:
 
 | <pre><code>{
     ...
@@ -53,7 +55,7 @@ This returns DEPLOYMENT\_ID (data.id), for example:
 
 At this point, you can start running the Broker client.
 
-## Run your broker deployment <a href="#run-your-broker-deployment_1" id="run-your-broker-deployment_1"></a>
+## Run your Broker deployment <a href="#run-your-broker-deployment_1" id="run-your-broker-deployment_1"></a>
 
 Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed.
 
@@ -76,7 +78,7 @@ When the command is running, you should get the following message in the output:
 </code></pre> |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-## Create your credentials reference(s) <a href="#id-3-create-your-credentials-references" id="id-3-create-your-credentials-references"></a>
+## Create your credentials reference or references <a href="#id-3-create-your-credentials-references" id="id-3-create-your-credentials-references"></a>
 
 | <pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/credentials?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
@@ -94,7 +96,7 @@ When the command is running, you should get the following message in the output:
 </code></pre> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-This returns credential reference id (data.id), for example:
+This returns the credential reference id (data. id), for example:
 
 | <pre><code>{
     ...
@@ -113,7 +115,7 @@ This returns credential reference id (data.id), for example:
 </code></pre> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-You can create a maximum of ten credentials in one call by dding more objects in attributes. These objects can be of different types.
+You can create a maximum of ten credentials in one call by adding more objects in attributes. These objects can be of different types.
 
 | <pre><code>...
 "attributes": [{
@@ -130,7 +132,7 @@ You can create a maximum of ten credentials in one call by dding more objects in
 </code></pre> |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-## Create your connection(s) <a href="#id-4-create-your-connections" id="id-4-create-your-connections"></a>
+## Create your connection or connections <a href="#id-4-create-your-connections" id="id-4-create-your-connections"></a>
 
 | <pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/connections?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
@@ -154,7 +156,7 @@ You can create a maximum of ten credentials in one call by dding more objects in
 </code></pre> |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-This returns a Connection ID (data.id), for example. Note that this call returns the credential reference directly, ready for use, instead of the cred reference UUID.
+This returns a Connection ID (data.id), as shown in the example. Note that this call returns the credential reference directly, ready for use, instead of the cred reference UUID.
 
 | <pre><code>{
     ...

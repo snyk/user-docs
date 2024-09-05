@@ -1,6 +1,6 @@
 # Restart your Broker with the required environment variable and connect
 
-## Restart your Broker with the required environment variable. <a href="#restart-your-broker-with-required-environment-variable" id="restart-your-broker-with-required-environment-variable"></a>
+## Restart your Broker with the required environment variable <a href="#restart-your-broker-with-required-environment-variable" id="restart-your-broker-with-required-environment-variable"></a>
 
 Use `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` for regional Snyk instances.
 
@@ -24,9 +24,9 @@ At this point, the Broker will display the following message:
 </code></pre> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-You can now use the connection in an organization integration.
+You can now use the connection in an Organization integration.
 
-## &#x20;Connect your organization integration to use a connection <a href="#id-5-connect-your-org-integration-to-use-a-connection" id="id-5-connect-your-org-integration-to-use-a-connection"></a>
+## &#x20;Connect your Organization integration to use a connection <a href="#id-5-connect-your-org-integration-to-use-a-connection" id="id-5-connect-your-org-integration-to-use-a-connection"></a>
 
 | <pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/connections/CONNECTION_ID/orgs/ORG_ID/integration?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
@@ -40,4 +40,4 @@ You can now use the connection in an organization integration.
 </code></pre> |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-Repeat connecting your organization for as many integrations as needed.
+Repeat connecting your Organization for as many integrations as needed.
