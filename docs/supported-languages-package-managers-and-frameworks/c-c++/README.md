@@ -6,4 +6,4 @@ Snyk supports [C/C++ for open source](c-c++-for-open-source.md) and [C++ for cod
 
 ## Troubleshooting Snyk for C/C++
 
-If you need help, refer to [Troubleshooting C/C++ for open source](troubleshooting-c-c++-for-open-source.md) or I[contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, refer to [Troubleshooting C/C++ for open source](troubleshooting-c-c++-for-open-source.md) or [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
