@@ -13,7 +13,7 @@ When you run Snyk in your CI/CD platform, you typically want to post the test re
 * For user accounts, this is the user's preferred Organization, configurable in the user's settings.
 * For Organization service accounts, this is the Organization in which the account was created.
 
-You can **define the target organization** in the Snyk CLI by using the  `--org` CLI option and either the `orgslugnam`e or Organization ID:
+You can **define the target organization** in the Snyk CLI by using the  `--org` CLI option and either the `orgslugname` or Organization ID:
 
 * You can define the target Organization using its `orgslugname` as displayed in the address bar of the browser in the Snyk UI.
 * Alternatively, you can define the target Organization using its ORG\_ID on the Organization settings page.
