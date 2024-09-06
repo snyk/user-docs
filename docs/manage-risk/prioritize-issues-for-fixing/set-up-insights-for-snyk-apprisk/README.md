@@ -124,8 +124,8 @@ When prioritizing issues, it is important to understand the available integratio
 Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the Setting menu, and then the Insights option.&#x20;
 
 * **Kubernetes Connector**: Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
-* **Snyk Runtime Sensor**: Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
-* **Third-party Integrations**: These integrations, such as cloud providers or CI/CD tools, provide additional context and data sources for better vulnerability assessment. They help identify misconfigurations, exposure points, and integration-specific vulnerabilities.
+* [**Snyk Runtime Sensor**](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md): Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
+* [**Third-party Integrations**](../../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md): These integrations, such as cloud providers or CI/CD tools, provide additional context and data sources for better vulnerability assessment. They help identify misconfigurations, exposure points, and integration-specific vulnerabilities.
 
 Each of these integration options uses different risk factors:
 
