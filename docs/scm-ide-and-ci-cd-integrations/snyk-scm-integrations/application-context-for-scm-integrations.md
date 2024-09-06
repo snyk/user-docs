@@ -9,6 +9,10 @@ These are the available integrations that you can set up for the application con
 * [OpsLevel](application-context-for-scm-integrations.md#opslevel)
 * [Datadog Service Catalog](application-context-for-scm-integrations.md#datadog-service-catalog) &#x20;
 
+{% hint style="info" %}
+The Application Context integrations on this page work in conjunction with assets found through AppRisk SCM integrations. If there is no Snyk AppRisk SCM integration configured at the Group level on the Integrations page, then data will not populate from these integrations.
+{% endhint %}
+
 ## Backstage file for SCM integrations
 
 Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk AppRisk.
@@ -272,6 +276,6 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
    * Owner - If you select this metadata, it is mandatory to add the **Owner key**.
    * Application - If you select this metadata, it is mandatory to add the **Application key**.
 9. Click the **Done** button.
-10. When the connection is established, the status of the Datadog Service Catalog integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in Datadog Service Catalog.
+10. When the connection is established, the status of the Datadog Service Catalog integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets collected by a Snyk AppRisk SCM Integration with the data found in Datadog Service Catalog.
 
 \
