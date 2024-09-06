@@ -2,14 +2,14 @@
 
 The Snyk REST API is based on the [JSON:API standard](https://jsonapi.org/), defined in [OpenAPI 3.0.3](https://spec.openapis.org/oas/v3.0.3.html), and represents an evolutionary approach to API development, with each endpoint versioned (see the Versioning section on this page).
 
-## API URL&#x20;
+## API URL
 
-Snyk is hosted in three main regions: US, EU and AU. Each region has its own base URL.
+Snyk is hosted in the following regions. Each region has its own base URL.
 
-<table><thead><tr><th width="189">Region</th><th>Base URL</th></tr></thead><tbody><tr><td>US</td><td><code>https://api.snyk.io/rest</code></td></tr><tr><td>Europe</td><td><code>https://api.eu.snyk.io/rest</code></td></tr><tr><td>Australia</td><td><code>https://api.au.snyk.io/rest</code></td></tr></tbody></table>
+<table><thead><tr><th width="189">Region</th><th>Base URL</th></tr></thead><tbody><tr><td>SNYK-US-01</td><td><code>https://api.snyk.io/rest</code></td></tr><tr><td>SNYK-US-02</td><td><code>https://api.us.snyk.io</code> </td></tr><tr><td>SNYK-EU-01 </td><td><code>https://api.eu.snyk.io/rest</code></td></tr><tr><td>SNYK-AU-01</td><td><code>https://api.au.snyk.io/rest</code></td></tr><tr><td>SNYK-GOV-01</td><td><code>https://api.snykgov.io</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-This API is only available over HTTPS. Accessing over HTTP will yield a 404 for all requests.
+This API is available only over HTTPS. Accessing over HTTP will yield a 404 for all requests.
 {% endhint %}
 
 ## JSON:API Content-Type header
@@ -62,9 +62,9 @@ This means the requested endpoint should be 2023-11-27 or older on the Generally
 
 When the requested endpoint is at a specific stability level, Snyk serves the latest version, the version released on or before the requested date, or that stability or higher. For example, if the requested endpoint has a beta version at 2023-09-29 and GA version at 2024-01-23, and the requested endpoint is after 2024-01-23\~beta, Snyk resolves to the GA version.
 
-Granular version controls enable Snyk to introduce progressive enhancements. These may require small or minor backwards-incompatible changes. However, using granular version controls means Snyk can deliver rapid enhancements more quickly, while supporting existing endpoints for a guaranteed period of time.
+Granular version controls enable Snyk to introduce progressive enhancements. These may require small or minor backward-incompatible changes. However, using granular version controls means Snyk can deliver rapid enhancements more quickly while supporting existing endpoints for a guaranteed period of time.
 
-Once an endpoint is marked as deprecated, it will contain a `Sunset` header indicating the date at which that endpoint contract will no longer be supported. For example:
+After an endpoint is marked as deprecated, it will contain a `Sunset` header indicating the date at which that endpoint contract will no longer be supported. For example:
 
 ```
 Sunset: "2021-11-11"
@@ -115,6 +115,6 @@ Errors conform to the JSON:API specification and include path-based information 
 
 ## Rate limiting
 
-There is a limit of **1620 requests per minute**, per API key. All requests above the limit will get a response with status code `429` - `Too many requests` until requests stop for the duration of the rate-limiting interval (currently one minute).
+There is a limit of **1620 requests per minute**, per API key. All requests above the limit will get a response with the status code `429` - `Too many requests` until requests stop for the duration of the rate-limiting interval (currently one minute).
 
 From time to time, Snyk may introduce new rate limits to maintain overall system health. This is not considered a breaking change. All clients are expected to handle the `429` responses correctly and such requests can be retried later safely.
