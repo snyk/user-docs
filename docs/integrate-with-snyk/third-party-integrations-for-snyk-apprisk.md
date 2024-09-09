@@ -129,7 +129,7 @@ Nightfall is in Closed beta and available with Snyk AppRisk Pro. If you want to 
 
 ### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
 
-* API Key. Access the Nightfall [Creating an API Key](https://docs.nightfall.ai/docs/creating-an-api-key) documentation page for more details about how to create a Nightfall API key.&#x20;
+* API Key. Access the Nightfall [Creating an API Key](https://help.nightfall.ai/nightfall-firewall-for-ai/key-concepts/setting-up-nightfall/creating-api-key) documentation page for more details about how to create a Nightfall API key.&#x20;
 
 ### Integration Hub setup <a href="#nightfall-integration-hub-setup" id="nightfall-integration-hub-setup"></a>
 
