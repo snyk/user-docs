@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Release status**
 
-The Snyk runtime sensor is available in a Closed Beta state and applies only to Snyk AppRisk Pro. &#x20;
+The Snyk Runtime Sensor is available in a Closed Beta state and applies only to Snyk AppRisk Pro. &#x20;
 {% endhint %}
 
 The Runtime Sensor watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
@@ -23,6 +23,10 @@ Managed Kubernetes services such as EKS Fargate or GKE Autopilot, are not suppor
 * Privileged access - you need either root or the following Linux capabilities: `BPF`, `PERFMON`, `SYS_RESOURCES`, `DAC_READ_SEARCH`, `SYS_PTRACE`, `NET_ADMIN`
 * Cluster nodes must support BTF.
 * Language support - Go, Java v8 or higher, .NET v2.0.9 or higher, Node.js v10 or higher, Python 3.6 or higher.
+* Network policy - if your cluster does not allow all outgoing traffic, set up the policy to enable outgoing traffic on port 443 for the following hosts:
+  * `kubernetes.default.svc.cluster.local`&#x20;
+  * `api.snyk.io` (or `api.<<REGION>>.snyk.io` if hosted in a different region)&#x20;
+  * `api.sentry.io`
 
 You also need a token for a [service account](https://docs.snyk.io/snyk-admin/service-accounts). The service account must have one of the following roles:
 
