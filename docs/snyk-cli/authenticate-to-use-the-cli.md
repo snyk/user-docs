@@ -3,7 +3,7 @@
 To scan your projects, you must authenticate with Snyk.&#x20;
 
 {% hint style="info" %}
-Before authenticating ensure you configure your Snyk region properly if you use Snyk on the EU and AU tenants. For more information, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md#cli-and-ci-pipelines-urls).
+If you are not in the system default environment, `SNYK-US-01`, use the [`snyk config environment`](commands/config-environment.md) command to set your environment before you run [`snyk auth`](commands/auth.md).
 {% endhint %}
 
 ## How to authenticate to use the CLI locally
