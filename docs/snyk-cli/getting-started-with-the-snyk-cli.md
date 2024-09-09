@@ -11,7 +11,7 @@
 
 [Learn more about what Snyk can do and sign up for a free account](https://snyk.io/).
 
-The **Snyk CLI brings the functionality of Snyk into your development workflow**. You can run the CLI locally from the command line or in an IDE. You can also run the CLI in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.
+The **Snyk CLI brings the functionality of Snyk into your development workflow**. You can run the CLI locally from the command line or in an IDE. You can also run the CLI in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.&#x20;
 
 <figure><img src="../.gitbook/assets/snyk-cli-screenshot.png" alt="Snyk CLI test command output example"><figcaption><p>Snyk CLI test command output</p></figcaption></figure>
 
@@ -119,7 +119,7 @@ For detailed information about the CLI, see the [CLI docs](https://docs.snyk.io/
 
 Effective July 22, 2024, Snyk CLI no longer accepts external contributions.
 
-Due to the CLI's extensive usage and intricate nature, even minor modifications can have unforeseen consequences. Since introducing [release channels](https://docs.snyk.io/snyk-cli/releases-and-channels-for-the-snyk-cli) to the CLI code in April 2024, Synk's focus has been on stabilizing releases. Snyk believes this open-source, closed-contribution model best serves this goal.
+Due to the CLI's extensive usage and intricate nature, even minor modifications can have unforeseen consequences. Since introducing [release channels](https://docs.snyk.io/snyk-cli/releases-and-channels-for-the-snyk-cli) to the CLI code in April 2024, Snyk's focus has been on stabilizing releases. Snyk believes this open-source, closed-contribution model best serves this goal.
 
 In the spirit of transparency to Snyk customers and CLI users, Snyk will continue working in public. However, going forward,  Snyk CLI is closed to contributions.
 
