@@ -269,8 +269,6 @@ Then add an extra variable in the `values-customer-settings.yml`:
 `deeproxy:`\
 `verificationEndpoint: "https://api.au.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
 
-## **How Snyk maintains GDPR compliance**
-
-Snyk takes privacy seriously and operates a global privacy program to meet the requirements of the GDPR, CCPA, and other applicable privacy laws. Snyk treats all user data the same way and uses industry-standard technical and organizational measures to secure the information Snyk stores. Snyk's Privacy Program is tailored to meet both legal requirements and your needs.
-
-Learn more at the[ ](https://www.atlassian.com/trust/privacy)[Snyk Privacy Policy](https://snyk.io/policies/privacy/).
+{% hint style="info" %}
+For information on GDPR compliance, see [How Snyk maintains GDPR compliance](how-snyk-handles-your-data.md#how-snyk-maintains-gdpr-compliance).
+{% endhint %}
