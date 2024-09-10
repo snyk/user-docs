@@ -139,8 +139,8 @@ The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/gettin
 5. Add the **CMDB field to map Repo URL** - Add the URL of the repository.
 
 {% hint style="info" %}
-* This feature is only for the integration with ServiceNow CMDB
 * The data gathered by Snyk from ServiceNow CMDB will be correlated with the Repository Assets.
+* The ServiceNow CMDB integration uses basic authentication and suggests enabling the "Web service access only" option for Service Accounts.&#x20;
 {% endhint %}
 
 ### Integration Hub setup for ServiceNow CMDB <a href="#servicenow-cmdb-integration-hub-setup" id="servicenow-cmdb-integration-hub-setup"></a>
@@ -256,7 +256,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 ### Required Parameters for Datadog Service Catalog
 
 1. Add your Datadog **Profile name**.
-2. Add the **API key** for the Datadog instance.
+2. Add the **API key** for the Datadog instance. Your token should have the following scope permissions: `apm_service_catalog_read`.
 3. Add the **Application Key** along with your organization's API key to grant users access to Datadog's programmatic API. For more details, access the [Datadog API and Application key](https://docs.datadoghq.com/account\_management/api-app-keys/) documentation page.
 
 ### Integration Hub setup for Datadog Service Catalog
