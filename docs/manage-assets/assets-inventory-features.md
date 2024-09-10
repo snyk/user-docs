@@ -60,13 +60,13 @@ You can filter the information for all the inventory layouts and can use the fol
 * **Discovered** - specify the period when the asset was discovered.
 * **Issue severity** - specify the severity of the issue: critical, high, medium, low.
 * **Issue source** - specify where the issue was identified: SCM or third-party integrations. A source category will only be visible if there is at least one source present.
-* **Last seen** - specify the repository freshness status.
+* **Last seen** - specifies the most recent time this asset was detected by Snyk in any of the sources (for example, Snyk, SCM, and so on).
 * **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
 * **Locked attributes** - specify if the attribute value is locked.
 * **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
 * **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **Runtime discovered** - specify the period when the runtime image asset was discovered.
-* **Runtime last seen** - specify the freshness status for the runtime image asset.
+* **Runtime last seen** - specifies the most recent time this image asset was detected in runtime
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
