@@ -399,6 +399,16 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [sbom](https://docs.snyk.io/snyk-cli/commands/sbom)
 
+## Options for pnpm projects
+
+`--dev:` [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+
+\--all-projects: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+
+\--fail-on: [`test`](https://docs.snyk.io/snyk-cli/commands/test)
+
+\--prune-repeated-subdependencies: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+
 ## Options for Yarn projects
 
 `--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
