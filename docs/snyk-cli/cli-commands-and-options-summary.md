@@ -227,7 +227,13 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
 
-## `snyk code test command`
+## `snyk auth` command options
+
+\--`auth-type=<TYPE>`\
+`--client-secret=<SECRET>`\
+`--client-id=<ID>` [`snyk auth`](https://docs.snyk.io/snyk-cli/commands/auth)
+
+## `snyk code test` command option&#x20;
 
 `--include-ignores`: [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test)
 
