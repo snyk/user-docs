@@ -2,11 +2,11 @@
 
 {% hint style="info" %}
 **Availability**\
-Open-source license compliance is available for all paid plans. \
+Open-source license compliance is available for all paid plans.\
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-## Overview of licenses&#x20;
+## Overview of licenses
 
 Every time you test your code in the [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or using [PR Checks](../../pull-requests/pull-request-checks/), your repositories are scanned for vulnerabilities and license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and checks for license issues against Snyk known licenses.
 
@@ -23,7 +23,7 @@ For more information, see [License policies](../../../manage-risk/policies/licen
 
 ### How Snyk uses licenses
 
-To facilitate the onboarding of your developers, Snyk recommends that your teams check these defaults, update severities, and add instructions according to license type based on the policies outlined specifically by your Legal teams.&#x20;
+To facilitate the onboarding of your developers, Snyk recommends that your teams check these defaults, update severities, and add instructions according to license type based on the policies outlined specifically by your Legal teams.
 
 After the license policy is updated, when Snyk detects a license violation, it is displayed for all users in the Organization in the test results on the [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or [PR Checks](../../pull-requests/pull-request-checks/), in the same way as a security vulnerability, and including the severity and instructions you configured.
 
@@ -47,21 +47,27 @@ If you notice a license with the wrong license type assigned to it, you can cont
 
 ## Multiple licenses
 
-For some packages, a version contains two or even more licenses that apply simultaneously. Snyk calls these dual-licenses or multi-licenses.&#x20;
+For some packages, a version contains two or even more licenses that apply simultaneously. Snyk calls these dual-licenses or multi-licenses.
 
 There are two types of dual or multiple licenses:
 
-* **OR -** If Snyk recognizes two licenses marked with `OR`being used in a package,  this means the customer can comply with either of the licenses.&#x20;
+* **OR -** If Snyk recognizes two licenses marked with `OR`being used in a package, this means the customer can comply with either of the licenses.
 
 <figure><img src="../../../.gitbook/assets/image (475).png" alt="Example of an OR license in NPM" width="184"><figcaption><p>Example of an OR license in npm</p></figcaption></figure>
 
-* **AND -** If the license explicitly has `AND`,  customers need to comply with all (dual or multiple) licenses.
-
-
+* **AND -** If the license explicitly has `AND`, customers must comply with all (dual or multiple) licenses.
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt="Example of an AND license in npm" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
 
-In both of these cases, Snyk defaults to the license with the **highest severity** when displaying issues.
+In both of these cases, Snyk displays the severity of the license with the **highest severity** when displaying issues, where all licenses have a severity.&#x20;
+
+{% hint style="warning" %}
+Licenses on the vulnerability card are sorted with the lowest severity license first, even when the vulnerability card is labeled with the highest severity.&#x20;
+
+If any of the multiple licenses on the package at the scanned version are set to `severity:none`, then the current behavior is that no license vulnerability is shown.&#x20;
+
+The behavior of multiple license vulnerabilities is being changed as advised in [this Update](https://updates.snyk.io/multi-licensing-severity-logic-update-299259). &#x20;
+{% endhint %}
 
 ## **Supported package types**
 
@@ -81,8 +87,6 @@ Snyk does not support scanning for license issues for packages whose version has
 
 ## Licenses data sources
 
-In some cases, the developer specifies one license type in the source repository (for example, GitHub, GitLab) and another when releasing the package (for example, to npm, pypi). Snyk ensures the accuracy of license information by examining the package manager's license definition to verify that the licenses match the released package. If the developer did not define the licenses in the package manager, this could result in `none` or `unknown` values.&#x20;
+In some cases, the developer specifies one license type in the source repository (for example, GitHub, GitLab) and another when releasing the package (for example, to npm, pypi). Snyk ensures the accuracy of license information by examining the package manager's license definition to verify that the licenses match the released package. If the developer did not define the licenses in the package manager, this could result in `none` or `unknown` values.
 
 Note that this behavior may change as Snyk works on improving the license detection processes.
-
-&#x20;
