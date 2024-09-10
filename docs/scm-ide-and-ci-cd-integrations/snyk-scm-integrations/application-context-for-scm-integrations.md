@@ -163,6 +163,12 @@ The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/gettin
 The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
 {% endhint %}
 
+The following video provides an overview of the ServiceNow CMDB option from the Integration Hub and a quick explanation of the available attributes:
+
+{% embed url="https://youtu.be/I4EyhOeQGT0" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
+{% endembed %}
+
 ## Atlassian Compass
 
 ### Required Parameters for Atlassian Compass
