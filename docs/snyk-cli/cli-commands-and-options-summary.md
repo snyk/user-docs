@@ -26,6 +26,10 @@ Authenticate Snyk CLI with a Snyk account.
 
 Manage Snyk CLI configuration.
 
+### [`snyk config environment`](https://docs.snyk.io/snyk-cli/commands/config-environment)
+
+Use to set your environment for the region before you run the `snyk auth` command.
+
 ### [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test)
 
 Test a Project for open-source vulnerabilities and license issues.
@@ -230,6 +234,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 ## `snyk code test` and `snyk iac test` command option
 
 `--report`: [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test),  [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+
+## `snyk config environment command option`
+
+`--no-check` [snyk config environment](https://docs.snyk.io/snyk-cli/commands/config-environment)
 
 ## `snyk container` command options
 
