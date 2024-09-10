@@ -39,7 +39,7 @@ For example, deployments run a connection (type `github`) using the environment 
 
 The high-level steps in implementing the Unversal Broker follow.
 
-1. **One time:** Install the Snyk Broker App into an Organization under your Tenant. This returns an install ID, a client ID, and a client secret, all needed to interact with the Snyk platform. The Organization ID is required to create the deployment.
+1. **One time:** Install the Snyk Broker App in your Organization. This returns an install ID, a client ID, and a client secret, all needed to interact with the Snyk platform. The Organization ID is required to create the deployment.
 2. **One time:** Define a deployment for your tenant ID and install ID.
 3. **One time:** Define credentials references needed for your connections.
 4. **One time:** Define your desired connection or connections.
