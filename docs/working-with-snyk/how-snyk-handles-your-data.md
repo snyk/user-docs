@@ -119,6 +119,12 @@ Your account is subject to contract terms which might restrict your ability to e
   * Commit history metadata from the last 50 commits for repositories monitored, including profile information on the code committer, such as GitHub user IDs, display name, or email.
   * Metadata on the languages (for example, Python, HTML) used for a given code repository.
   * Repository “topics”, which are represented as asset tags.
+* From runtime data sources configured using the Snyk AppRisk Integration Hub (including observability, CNAPP, and so on), Snyk AppRisk can access and store the following data:
+  * Kubernetes resources (including but not limited to deployments, pods, and so on) present across the various clusters.
+  * Application entities used in runtime, and how they are executed (for example, loaded into memory) - including but not limited to services and packages.
+  * Metadata on files in the OS itself.
+  * Information on the runtime and cloud environment.
+  * HTTP request metadata (for example, hostnames, paths, and so on) flowing through the cluster.
 
 ## Snyk integrations: Workspaces
 
