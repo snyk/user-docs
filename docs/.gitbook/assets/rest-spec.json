@@ -1346,11 +1346,51 @@
         ],
         "type": "object"
       },
+      "AppData20220311": {
+        "additionalProperties": false,
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/AppResourceAttributes20220311"
+          },
+          "id": {
+            "$ref": "#/components/schemas/Id"
+          },
+          "type": {
+            "$ref": "#/components/schemas/Type"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes"
+        ],
+        "type": "object"
+      },
       "AppDataWithSecret": {
         "additionalProperties": false,
         "properties": {
           "attributes": {
             "$ref": "#/components/schemas/AppResourceAttributesWithSecret"
+          },
+          "id": {
+            "$ref": "#/components/schemas/Id"
+          },
+          "type": {
+            "$ref": "#/components/schemas/Type"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes"
+        ],
+        "type": "object"
+      },
+      "AppDataWithSecret20220311": {
+        "additionalProperties": false,
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/AppResourceAttributesWithSecret20220311"
           },
           "id": {
             "$ref": "#/components/schemas/Id"
@@ -1372,7 +1412,10 @@
           "attributes": {
             "properties": {
               "client_id": {
-                "$ref": "#/components/schemas/ClientId"
+                "description": "The OAuth2 client id for the app installation. Only provided for installations of non-interactive Snyk Apps.",
+                "example": "941b423a-e0a0-4a33-a7ca-dd9e9e6bd8cf",
+                "format": "uuid",
+                "type": "string"
               },
               "installed_at": {
                 "$ref": "#/components/schemas/InstalledAt"
@@ -1416,10 +1459,13 @@
           "attributes": {
             "properties": {
               "client_id": {
-                "$ref": "#/components/schemas/ClientId"
+                "description": "The OAuth2 client id for the app installation. Only provided for installations of non-interactive Snyk Apps.",
+                "example": "941b423a-e0a0-4a33-a7ca-dd9e9e6bd8cf",
+                "format": "uuid",
+                "type": "string"
               },
               "client_secret": {
-                "$ref": "#/components/schemas/ClientSecret"
+                "$ref": "#/components/schemas/ClientSecret20240523"
               },
               "installed_at": {
                 "$ref": "#/components/schemas/InstalledAt"
@@ -1584,6 +1630,22 @@
         ],
         "type": "object"
       },
+      "AppPatchRequest20220311": {
+        "additionalProperties": false,
+        "minProperties": 1,
+        "properties": {
+          "access_token_ttl_seconds": {
+            "$ref": "#/components/schemas/AccessTokenTtlSeconds"
+          },
+          "name": {
+            "$ref": "#/components/schemas/AppName"
+          },
+          "redirect_uris": {
+            "$ref": "#/components/schemas/RedirectUris"
+          }
+        },
+        "type": "object"
+      },
       "AppPostRequest": {
         "properties": {
           "data": {
@@ -1596,7 +1658,12 @@
                     "$ref": "#/components/schemas/AccessTokenTtlSeconds"
                   },
                   "context": {
-                    "$ref": "#/components/schemas/Context"
+                    "description": "Allow installing the app to at  org/group level or user level. Defaults to tenant.",
+                    "enum": [
+                      "tenant",
+                      "user"
+                    ],
+                    "type": "string"
                   },
                   "name": {
                     "$ref": "#/components/schemas/AppName"
@@ -1635,11 +1702,52 @@
         ],
         "type": "object"
       },
+      "AppPostRequest20220311": {
+        "additionalProperties": false,
+        "properties": {
+          "access_token_ttl_seconds": {
+            "$ref": "#/components/schemas/AccessTokenTtlSeconds"
+          },
+          "context": {
+            "$ref": "#/components/schemas/Context"
+          },
+          "name": {
+            "$ref": "#/components/schemas/AppName"
+          },
+          "redirect_uris": {
+            "$ref": "#/components/schemas/RedirectUris"
+          },
+          "scopes": {
+            "$ref": "#/components/schemas/Scopes"
+          }
+        },
+        "required": [
+          "name",
+          "redirect_uris",
+          "scopes"
+        ],
+        "type": "object"
+      },
       "AppPostResponse": {
         "additionalProperties": false,
         "properties": {
           "data": {
             "$ref": "#/components/schemas/AppDataWithSecret"
+          },
+          "jsonapi": {
+            "$ref": "#/components/schemas/JsonApi"
+          },
+          "links": {
+            "$ref": "#/components/schemas/SelfLink"
+          }
+        },
+        "type": "object"
+      },
+      "AppPostResponse20220311": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/AppDataWithSecret20220311"
           },
           "jsonapi": {
             "$ref": "#/components/schemas/JsonApi"
@@ -1660,7 +1768,12 @@
             "$ref": "#/components/schemas/ClientId"
           },
           "context": {
-            "$ref": "#/components/schemas/Context"
+            "description": "Allow installing the app to at  org/group level or user level. Defaults to tenant.",
+            "enum": [
+              "tenant",
+              "user"
+            ],
+            "type": "string"
           },
           "grant_type": {
             "$ref": "#/components/schemas/GrantType"
@@ -1695,6 +1808,56 @@
         ],
         "type": "object"
       },
+      "AppResourceAttributes20220311": {
+        "additionalProperties": false,
+        "properties": {
+          "access_token_ttl_seconds": {
+            "$ref": "#/components/schemas/AccessTokenTtlSeconds"
+          },
+          "client_id": {
+            "description": "The OAuth2 client id for the app when available. If an app can have multiple OAuth2 clients then this field with return all zeros. This field is not present for such apps in future versions of this api.",
+            "example": "941b423a-e0a0-4a33-a7ca-dd9e9e6bd8cf",
+            "format": "uuid",
+            "type": "string"
+          },
+          "context": {
+            "$ref": "#/components/schemas/Context"
+          },
+          "grant_type": {
+            "$ref": "#/components/schemas/GrantType20220311"
+          },
+          "is_confidential": {
+            "$ref": "#/components/schemas/IsConfidential20220311"
+          },
+          "is_public": {
+            "$ref": "#/components/schemas/IsPublic"
+          },
+          "name": {
+            "$ref": "#/components/schemas/AppName"
+          },
+          "org_public_id": {
+            "$ref": "#/components/schemas/Uuid"
+          },
+          "redirect_uris": {
+            "$ref": "#/components/schemas/RedirectUrisNoMin"
+          },
+          "scopes": {
+            "$ref": "#/components/schemas/Scopes"
+          }
+        },
+        "required": [
+          "client_id",
+          "name",
+          "redirect_uris",
+          "scopes",
+          "access_token_ttl_seconds",
+          "is_public",
+          "is_confidential",
+          "context",
+          "grant_type"
+        ],
+        "type": "object"
+      },
       "AppResourceAttributesWithSecret": {
         "additionalProperties": false,
         "properties": {
@@ -1708,13 +1871,72 @@
             "$ref": "#/components/schemas/ClientSecret"
           },
           "context": {
-            "$ref": "#/components/schemas/Context"
+            "description": "Allow installing the app to at  org/group level or user level. Defaults to tenant.",
+            "enum": [
+              "tenant",
+              "user"
+            ],
+            "type": "string"
           },
           "grant_type": {
             "$ref": "#/components/schemas/GrantType"
           },
           "is_confidential": {
             "$ref": "#/components/schemas/IsConfidential"
+          },
+          "is_public": {
+            "$ref": "#/components/schemas/IsPublic"
+          },
+          "name": {
+            "$ref": "#/components/schemas/AppName"
+          },
+          "org_public_id": {
+            "$ref": "#/components/schemas/Uuid"
+          },
+          "redirect_uris": {
+            "$ref": "#/components/schemas/RedirectUris"
+          },
+          "scopes": {
+            "$ref": "#/components/schemas/Scopes"
+          }
+        },
+        "required": [
+          "client_id",
+          "name",
+          "redirect_uris",
+          "scopes",
+          "access_token_ttl_seconds",
+          "is_public",
+          "is_confidential",
+          "client_secret",
+          "context",
+          "grant_type"
+        ],
+        "type": "object"
+      },
+      "AppResourceAttributesWithSecret20220311": {
+        "additionalProperties": false,
+        "properties": {
+          "access_token_ttl_seconds": {
+            "$ref": "#/components/schemas/AccessTokenTtlSeconds"
+          },
+          "client_id": {
+            "description": "The OAuth2 client id for the app when available. If an app can have multiple OAuth2 clients then this field with return all zeros. This field is not present for such apps in future versions of this api.",
+            "example": "941b423a-e0a0-4a33-a7ca-dd9e9e6bd8cf",
+            "format": "uuid",
+            "type": "string"
+          },
+          "client_secret": {
+            "$ref": "#/components/schemas/ClientSecret"
+          },
+          "context": {
+            "$ref": "#/components/schemas/Context"
+          },
+          "grant_type": {
+            "$ref": "#/components/schemas/GrantType20220311"
+          },
+          "is_confidential": {
+            "$ref": "#/components/schemas/IsConfidential20220311"
           },
           "is_public": {
             "$ref": "#/components/schemas/IsPublic"
@@ -1939,6 +2161,12 @@
       },
       "ClientSecret": {
         "description": "The oauth2 client secret for the app. This is the only time this secret will be returned, store it securely and don’t lose it.",
+        "example": "snyk_cs_ctZW0JsWG^Bm`*oPo=mnV26qU_6pjxht\u003c]S_v1",
+        "minLength": 1,
+        "type": "string"
+      },
+      "ClientSecret20240523": {
+        "description": "The OAuth2 client secret for the app. This is the only time this secret will be returned, store it securely and don’t lose it. Only provided for installations of non-interactive Snyk Apps.",
         "example": "snyk_cs_ctZW0JsWG^Bm`*oPo=mnV26qU_6pjxht\u003c]S_v1",
         "minLength": 1,
         "type": "string"
@@ -3192,6 +3420,14 @@
         ],
         "type": "string"
       },
+      "GrantType20220311": {
+        "description": "An authorization grant is a credential representing the resource owner's authorization (to access its protected resources) used by the client to obtain an access token.",
+        "enum": [
+          "authorization_code",
+          "client_credentials"
+        ],
+        "type": "string"
+      },
       "GroupIacSettingsRequest": {
         "description": "The Infrastructure as Code settings for a group.",
         "properties": {
@@ -3875,6 +4111,11 @@
       },
       "IsConfidential": {
         "description": "A boolean to indicate if an app is confidential or not as per the OAuth2 RFC. Confidential apps can securely store secrets. Examples of non-confidential apps are full web-based or CLIs.",
+        "example": true,
+        "type": "boolean"
+      },
+      "IsConfidential20220311": {
+        "description": "A boolean to indicate if an app is confidential or not as per the OAuth2 RFC.",
         "example": true,
         "type": "boolean"
       },
@@ -19236,7 +19477,7 @@
             "style": "form"
           },
           {
-            "description": "Org ID",
+            "description": "Organization ID",
             "in": "path",
             "name": "org_id",
             "required": true,
@@ -20434,7 +20675,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
+            "description": "Organization ID",
             "in": "path",
             "name": "org_id",
             "required": true,
@@ -21616,7 +21857,7 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "$ref": "#/components/schemas/AppData"
+                        "$ref": "#/components/schemas/AppData20220311"
                       },
                       "type": "array"
                     },
@@ -22784,7 +23025,7 @@
           "content": {
             "application/vnd.api+json": {
               "schema": {
-                "$ref": "#/components/schemas/AppPostRequest"
+                "$ref": "#/components/schemas/AppPostRequest20220311"
               }
             }
           },
@@ -22795,7 +23036,7 @@
             "content": {
               "application/vnd.api+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AppPostResponse"
+                  "$ref": "#/components/schemas/AppPostResponse20220311"
                 }
               }
             },
@@ -37018,7 +37259,7 @@
                   "additionalProperties": false,
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/AppData"
+                      "$ref": "#/components/schemas/AppData20220311"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
@@ -38182,7 +38423,7 @@
           "content": {
             "application/vnd.api+json": {
               "schema": {
-                "$ref": "#/components/schemas/AppPatchRequest"
+                "$ref": "#/components/schemas/AppPatchRequest20220311"
               }
             }
           }
@@ -38195,7 +38436,7 @@
                   "additionalProperties": false,
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/AppData"
+                      "$ref": "#/components/schemas/AppData20220311"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
@@ -39394,7 +39635,7 @@
                   "additionalProperties": false,
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/AppDataWithSecret"
+                      "$ref": "#/components/schemas/AppDataWithSecret20220311"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
