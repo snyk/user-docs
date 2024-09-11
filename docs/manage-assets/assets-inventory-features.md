@@ -46,12 +46,12 @@ If you use Snyk AppRisk for the first time, start with the **Coverage** filter t
 
 You can filter the information for all the inventory layouts and can use the following filters available under the **Advanced filters** section:
 
-* **Application\*** - the list of the applications for which you have configured the Backstage catalog in Snyk AppRisk.
+* **Application\*** - the list of the applications for which you have configured the application context catalog in Snyk AppRisk.
 * **Asset ID** - the unique identifier of the asset.
 * **Asset name** - the name of the asset.
 * **Asset type** - repository, package, or scanned artifact.
 * **Attribute** - asset attributes retrieved from the data source.
-* **Catalog name\*** - the name of your backstage catalog.
+* **Catalog name\*** - the name of your application context catalog.
 * **Category**\* - the category of a repository asset. For example, service or library.
 * **Class** - specify the class of the asset.
 * **Coverage** - specify the product or products used to scan the asset. The Coverage filter identifies if at least one scan has been run by the specified product.
@@ -61,9 +61,9 @@ You can filter the information for all the inventory layouts and can use the fol
 * **Issue severity** - specify the severity of the issue: critical, high, medium, low.
 * **Issue source** - specify where the issue was identified: SCM or third-party integrations. A source category will only be visible if there is at least one source present.
 * **Last seen** - specifies the most recent time this asset was detected by Snyk in any of the sources (for example, Snyk, SCM, and so on).
-* **Lifecycle\*** - represents the lifecycle state of the backstage catalog component, for example `production`, `experimental`, `deprecated`.
+* **Lifecycle\*** - represents the lifecycle state of the application context catalog component, for example `production`, `experimental`, `deprecated`.
 * **Locked attributes** - specify if the attribute value is locked.
-* **Owner\*** - represents the team owning the repository for which the backstage catalog was configured.
+* **Owner\*** - represents the team owning the repository for which the application context catalog was configured.
 * **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **Runtime discovered** - specify the period when the runtime image asset was discovered.
 * **Runtime last seen** - specifies the most recent time this image asset was detected in runtime
@@ -74,9 +74,9 @@ You can filter the information for all the inventory layouts and can use the fol
   * **N/A**: There are no commits detected by Snyk AppRisk.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
-* **Title\*** - represents the name of the component for which the backstage catalog was configured.
+* **Title\*** - represents the name of the component for which the application context catalog was configured.
 
-**\***All filters marked with `*` are visible only to the users who configured the Backstage catalog for their SCM integrations.
+**\***All filters marked with `*` are visible only to the users who configured the [application context](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md) catalog for their SCM integrations.
 
 After applying the filters, the asset list will display only the assets that match the specified conditions, without a hierarchical structure.
 
