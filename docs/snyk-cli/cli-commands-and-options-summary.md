@@ -42,7 +42,7 @@ Snapshot and continuously monitor a project for open-source vulnerabilities and 
 
 `Print the name of the snyk code` command `with its help option: snyk code test`
 
-### [snyk code test](https://docs.snyk.io/snyk-cli/commands/code-test)
+### [`snyk code test`](https://docs.snyk.io/snyk-cli/commands/code-test)
 
 Test for any known security issues using Static Code Analysis.
 
@@ -54,15 +54,15 @@ Print a list of the `snyk container` commands, `snyk container monitor` and `sny
 
 Capture the container image layers and dependencies and monitor for vulnerabilities on [snyk.io](https://snyk.io).
 
-### [snyk container SBOM](https://docs.snyk.io/snyk-cli/commands/container-sbom)
+### [`snyk container SBOM`](https://docs.snyk.io/snyk-cli/commands/container-sbom)
 
 Generate an SBOM for a container image
 
-### [snyk container test](https://docs.snyk.io/snyk-cli/commands/container-test)
+### [`snyk container test`](https://docs.snyk.io/snyk-cli/commands/container-test)
 
 Test container images for any known vulnerabilities.
 
-### [snyk iac](https://docs.snyk.io/snyk-cli/commands/iac)
+### [`snyk iac`](https://docs.snyk.io/snyk-cli/commands/iac)
 
 Print a list of the `snyk iac` commands: `snyk iac describe`, `snyk iac update-exclude-policy`, and `snyk iac test`.
 
@@ -70,7 +70,7 @@ Print a list of the `snyk iac` commands: `snyk iac describe`, `snyk iac update-e
 
 Test for any known security issue.
 
-### [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture)
+### [`snyk iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture)
 
 Generate a mapping artifact that contains the minimum amount of information needed to generate resource mappings from code to Cloud from Terraform state files, such as resource IDs and names, and send the mapping artifact to Snyk.
 
@@ -78,15 +78,15 @@ Generate a mapping artifact that contains the minimum amount of information need
 
 Detect, track, and alert on infrastructure drift and unmanaged resources.
 
-### [snyk iac rules init](https://docs.snyk.io/snyk-cli/commands/iac-rules-init)
+### [`snyk iac rules init`](https://docs.snyk.io/snyk-cli/commands/iac-rules-init)
 
 Initialize custom rules project structure, relation, rule, or spec
 
-### [snyk iac rules test](https://docs.snyk.io/snyk-cli/commands/iac-rules-test)
+### [`snyk iac rules test`](https://docs.snyk.io/snyk-cli/commands/iac-rules-test)
 
 Run tests for all custom rules.
 
-### [snyk iac rules push](https://docs.snyk.io/snyk-cli/commands/iac-rules-push)
+### [`snyk iac rules push`](https://docs.snyk.io/snyk-cli/commands/iac-rules-push)
 
 Bundle and upload custom rule bundles to Snyk Cloud API.
 
