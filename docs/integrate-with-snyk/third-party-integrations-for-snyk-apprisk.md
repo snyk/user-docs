@@ -350,14 +350,12 @@ After the Sysdig runtime data becomes available from the runtime integration, it
 Orca Security is in Closed Beta state and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
+The following[ risk factors](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Orca runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
+
 ### Prerequisites <a href="#orca-prerequisites" id="orca-prerequisites"></a>
 
 * Connect your vendor account to Orca. Navigate to the [Connecting Accounts](https://docs.orcasecurity.io/docs/onboarding) documentation for more details.
 * Connect your cluster to Orca. Navigate to the [Connecting Clusters using Kubernetes Connector](https://docs.orcasecurity.io/docs/connecting-clusters-using-kubernetes-connector) documentation for more details.
-
-{% hint style="info" %}
-The Orca runtime integration reports the following [risk factors](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors): [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
-{% endhint %}
 
 ### Required parameters <a href="#orca-required-parameters" id="orca-required-parameters"></a>
 
