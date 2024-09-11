@@ -136,6 +136,8 @@ The following is a list of the sub-commands for Snyk CLI commands. Each sub-comm
 
 `clear`: subcommand of [`config`](https://docs.snyk.io/snyk-cli/commands/config)
 
+`environment`: subcommand of [`config`](https://docs.snyk.io/snyk-cli/commands/config)
+
 ## Configure the Snyk CLI
 
 You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli).
