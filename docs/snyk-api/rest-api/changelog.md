@@ -1,3 +1,54 @@
+## 2024-08-25 - Updated 2024-09-11
+
+### POST - `/orgs/{org_id}/apps` - Updated
+- added the new required request property `name`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new required request property `redirect_uris`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new required request property `scopes`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `data`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional request property `access_token_ttl_seconds`
+
+- added the new optional request property `context`
+
+
+
+### GET - `/orgs/{org_id}/apps` - Updated
+- the `data/items/attributes/redirect_uris` response property`s minItems was decreased from `1` to `0` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/items/attributes/client_id` became required for the status `200`
+
+- the response property `data/items/attributes/redirect_uris` became required for the status `200`
+
+
+
+### PATCH - `/orgs/{org_id}/apps/{client_id}` - Updated
+- the `data/attributes/redirect_uris` response property`s minItems was decreased from `1` to `0` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the request property `data`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional request property `access_token_ttl_seconds`
+
+- added the new optional request property `name`
+
+- added the new optional request property `redirect_uris`
+
+- the response property `data/attributes/client_id` became required for the status `200`
+
+- the response property `data/attributes/redirect_uris` became required for the status `200`
+
+
+
+### GET - `/orgs/{org_id}/apps/{client_id}` - Updated
+- the `data/attributes/redirect_uris` response property`s minItems was decreased from `1` to `0` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `data/attributes/client_id` became required for the status `200`
+
+- the response property `data/attributes/redirect_uris` became required for the status `200`
+
+
 ## 2024-08-25 - Updated 2024-09-03
 
 ### POST - `/groups/{group_id}/memberships` - Updated
