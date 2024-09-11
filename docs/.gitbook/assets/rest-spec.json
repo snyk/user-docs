@@ -640,11 +640,12 @@
         "style": "form"
       },
       "OrgId": {
-        "description": "The ID of the org",
+        "description": "Unique identifier for org",
         "in": "path",
         "name": "org_id",
         "required": true,
         "schema": {
+          "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
           "format": "uuid",
           "type": "string"
         }
@@ -18995,7 +18996,6 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -19051,7 +19051,6 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -44409,7 +44408,14 @@
         "operationId": "listOrgMemberships",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The ID of the org",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -44543,7 +44549,14 @@
         "operationId": "createOrgMembership",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The ID of the org",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -44640,7 +44653,14 @@
         "operationId": "deleteOrgMembership",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The ID of the org",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/OrgMembershipId"
@@ -44704,7 +44724,14 @@
         "operationId": "updateOrgMembership",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The ID of the org",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/OrgMembershipId"
@@ -57236,7 +57263,7 @@
       "name": "OpenAPI"
     },
     {
-      "description": "An Organization is the lowest level of Snyk's tenancy hierarchy, and may contain projects and other data.",
+      "description": "Snyk Organizations.",
       "name": "Orgs"
     },
     {
@@ -57279,10 +57306,9 @@
           "InternalJWT": {}
         }
       ]
-    },
-    "enableAccessAudit": true
+    }
   },
   "x-optic-url": "https://app.useoptic.com/organizations/390ef489-882c-48ba-acb3-4e0b73e48767/apis/5Tz5UMTNEIuz5-FZ6J2ki",
   "x-snyk-api-lifecycle": "released",
-  "x-snyk-api-version": "2024-08-25"
+  "x-snyk-api-version": "2024-09-04"
 }
