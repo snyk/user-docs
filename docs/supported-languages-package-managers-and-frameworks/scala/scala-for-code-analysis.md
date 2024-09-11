@@ -1,6 +1,6 @@
 # Scala for code analysis
 
-The following summarizes Snyk support for Scala for code analysis
+The following summarizes Snyk support for Scala for code analysis.
 
 **Frameworks**:&#x20;
 
@@ -18,3 +18,5 @@ The following summarizes Snyk support for Scala for code analysis
 
 * Reports
 * Interfile analysis
+
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).

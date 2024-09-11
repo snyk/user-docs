@@ -1,6 +1,6 @@
 # C++ for code analysis
 
-## C++ for code analysis support
+The following summarizes Snyk support for C++ for code analysis.
 
 **Frameworks**: C++ Standard Library, GUI Framework&#x20;
 
@@ -19,7 +19,5 @@
 **IDE:** No additional options are required. The Snyk plugin has views within the IDE for displaying results.
 
 **Feature:** Interfile analysis
-
-## Troubleshooting C++ for code analysis
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).

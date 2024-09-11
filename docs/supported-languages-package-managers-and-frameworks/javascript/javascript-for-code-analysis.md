@@ -1,9 +1,5 @@
 # JavaScript for code analysis
 
-**Note:** The language pages are being restructured and updated on June 22 and June 23.
-
-## Code analysis
-
 {% hint style="info" %}
 **Snyk Code for JavaScript**
 
@@ -30,3 +26,5 @@ The following summarizes support for JavaScript for code analysis.
 * Reports
 * Custom rules
 * Interfile analysis
+
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).

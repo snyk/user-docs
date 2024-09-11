@@ -2,7 +2,7 @@
 
 ## Snyk for Java for code analysis
 
-The following summarizes Java support for code analysis.
+The following summarizes Snyk support for Java for code analysis.
 
 **Frameworks:**
 
@@ -22,11 +22,13 @@ The following summarizes Java support for code analysis.
 
 **Test or monitor your app through CLI and IDE**: Available
 
-**Features**:&#x20;
+**Features**:
 
-* Report&#x20;
+* Report
 * Custom rules
 * Interfile analysis
+
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
 
 ## Snyk for Kotlin for code analysis
 
@@ -40,9 +42,10 @@ The following summarizes support for Kotlin for code analysis.
 
 **Test or monitor your app through CLI and IDE**: Available
 
-**Features**:&#x20;
+**Features**:
 
 * Reports
 * Interfile analysis is supported for Kotlin
 * Android is partially supported
 
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).

@@ -1,6 +1,6 @@
 # Ruby for code analysis
 
-Snyk Code provides support for Ruby as follows:
+The following summarizes Snyk support for Ruby for code analysis
 
 **Frameworks**: Ruby On Rails
 
@@ -13,3 +13,5 @@ Snyk Code provides support for Ruby as follows:
 * Reports
 * Custom rules
 * **Interfile analysis: Not supported**. The data flow is monitored within a single file, not between multiple files.
+
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).

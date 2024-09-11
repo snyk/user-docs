@@ -1,7 +1,5 @@
 # Apex
 
-## Apex support
-
 Snyk for Apex is supported **only for Snyk Code**.
 
 **Framework supported**: APEX&#x20;
@@ -18,8 +16,6 @@ Snyk for Apex is supported **only for Snyk Code**.
 * Reports
 * Interfile analysis
 
-For instructions on using the Snyk CLI for code analysis, see the [languages overview](./).
-
-## Troubleshooting Snyk for Apex
+For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;

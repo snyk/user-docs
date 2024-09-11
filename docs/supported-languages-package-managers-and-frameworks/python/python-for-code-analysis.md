@@ -21,3 +21,5 @@ The following summarizes Snyk support for Python for code analysis.
 * Reports
 * Customer rules
 * Interfile analysis
+
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
