@@ -14,6 +14,10 @@ The high-level steps in implementing the Universal Broker are the same regardles
 
 Follow these steps to configure the Universal Broker using the `snyk-broker-config` command.
 
+{% hint style="info" %}
+To use this command, you must install Node 18 or higher.
+{% endhint %}
+
 1. Run `npm i -g snyk-broker-config`.
 2. Set the necessary environment variables:
    * `SNYK_TOKEN` if not already set
@@ -24,7 +28,7 @@ Follow these steps to configure the Universal Broker using the `snyk-broker-conf
 4. Run `snyk-broker-config commands` to list the available commands.
 5. Run `snyk-broker-config workflows` to list the available interactive workflows.
 6. Create a deployment.
-   * Run `snyk-broker-config workflows deployment create`.
+   * Run `snyk-broker-config workflows deployments create`.
    * Add any metadata key-value pair or pairs that are needed.
    * **Optional**:  When the workflow deployment has been created, view your deployment using `snyk-broker-config workflows deployments get`.
 7. Create and configure your connection or connections.
@@ -36,7 +40,7 @@ Follow these steps to configure the Universal Broker using the `snyk-broker-conf
      * Enter the **broker\_client-url**.
      * Enter the credential reference or choose the option **CreateNew** in response to a prompt like **github-token (Sensitive): Which Credential Reference do you want to use? Or create New?**
    * When you see the messages **Connection created** and **Ready to configure integrations to use this connection**, you can run the Broker client.
-8. After the connection is created, use `snyk-broker-config workflows connection integrate` to configure an integration to use the newly created connection. In response to the prompts, enter the **deployment** you want to use, the **connection** you want to use, the **OrgID** of the Organization you want to integrate, and the `integration ID` of the type `github`.
+8. After the connection is created, use `snyk-broker-config workflows connections integrate` to configure an integration to use the newly created connection. In response to the prompts, enter the **deployment** you want to use, the **connection** you want to use, the **OrgID** of the Organization you want to integrate, and the `integration ID` of the type `github`.
 
 ## Example: first-time configuration of a new connection <a href="#quick-examples-below" id="quick-examples-below"></a>
 
