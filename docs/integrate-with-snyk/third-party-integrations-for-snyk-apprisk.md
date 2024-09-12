@@ -251,7 +251,9 @@ The following table presents the functionality of all types of Jira integrations
 {% hint style="warning" %}
 **Release status**
 
-Dynatrace is in Closed beta and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+The Dynatrace integration is in Closed Beta and available with Snyk AppRisk Pro.
+
+If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
@@ -303,7 +305,9 @@ After the Dynatrace runtime data becomes available from the runtime integration,
 {% hint style="warning" %}
 **Release status**
 
-Sysdig is in Closed beta and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+The Sysdig integration is in Closed Beta and available with Snyk AppRisk Pro.
+
+If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
@@ -348,7 +352,7 @@ After the Sysdig runtime data becomes available from the runtime integration, it
 {% hint style="warning" %}
 **Release status**
 
-The Orca Security integration is in Closed Beta state and available with Snyk AppRisk Pro.
+The Orca Security integration is in Closed Beta and available with Snyk AppRisk Pro.
 
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
@@ -395,7 +399,7 @@ The CrowdStrike integration is in Closed Beta and available with Snyk AppRisk Pr
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factor is reported from the Crownstrike runtime integration:  [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
+The following risk factor is reported from the CrowdStrike runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
 
 ### Prerequisites <a href="#crowdstrike-prerequisites" id="crowdstrike-prerequisites"></a>
 
