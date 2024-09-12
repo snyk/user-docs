@@ -44,7 +44,7 @@ All subsequent `test` commands will be authenticated automatically.&#x20;
 
 ### Steps to authenticate using a known Snyk API token
 
-You can copy your **personal** API token from the Snyk website and then configure your CLI to use it locally.
+You can copy your personal API token from your **General Account settings** (under your username) in the Snyk Web UI, and then configure your CLI to use it locally.
 
 All CLI `test` commands can automatically recognize the environment variable `SNYK_TOKEN` and use it for authentication. For details, see [Environment variables for Snyk CLI](configure-the-snyk-cli/environment-variables-for-snyk-cli.md).
 
