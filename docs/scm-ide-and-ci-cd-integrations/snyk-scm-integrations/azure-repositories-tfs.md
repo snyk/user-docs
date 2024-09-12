@@ -145,7 +145,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
      * **Graph** - read
      * **Analytics** - read
      * **Release** - read
-     * **Security** - manage
+     * **Member Entitlement Management** - read
    * Organization - Select **All accessible organizations** or a specific organization.
 4. Set the expiration to 12 months.
 5. Copy the generated personal access token and share it through a secured vault.
