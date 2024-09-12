@@ -39,5 +39,3 @@ When you are running Jenkins, use the following additional argument:
 **SNYK-EU-01 -** `--API=https://api.eu.snyk.io`
 
 **SNYK-AU-01 -** `--API=https://api.au.snyk.io`
-
-### I
