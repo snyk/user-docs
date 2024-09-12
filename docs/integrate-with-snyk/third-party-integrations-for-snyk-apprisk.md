@@ -17,6 +17,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [Dynatrace](third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide)
 * [Sysdig](third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide)
 * [Orca Security](third-party-integrations-for-snyk-apprisk.md#orca-security-setup-guide)
+* [CrowdStrike](third-party-integrations-for-snyk-apprisk.md#crowdstrike-setup-guide)
 
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
@@ -253,7 +254,7 @@ The following table presents the functionality of all types of Jira integrations
 Dynatrace is in Closed beta and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Dynatrace runtime integration: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
+The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
 
 ### Prerequisites <a href="#dynatrace-prerequisites" id="dynatrace-prerequisites"></a>
 
@@ -305,7 +306,7 @@ After the Dynatrace runtime data becomes available from the runtime integration,
 Sysdig is in Closed beta and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
+The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
 
 ### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
 
@@ -347,7 +348,9 @@ After the Sysdig runtime data becomes available from the runtime integration, it
 {% hint style="warning" %}
 **Release status**
 
-Orca Security is in Closed Beta state and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+The Orca Security integration is in Closed Beta state and available with Snyk AppRisk Pro.
+
+If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following[ risk factors](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Orca runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
@@ -381,3 +384,54 @@ Create the Orca API Token by following these steps:
 * Set the **URL**.
 * Click the **Done** button.
 * When the connection is established, the status of the Orca integration is changed to **Connected**.
+
+## CrowdStrike setup guide
+
+{% hint style="warning" %}
+**Release status**
+
+The CrowdStrike integration is in Closed Beta and available with Snyk AppRisk Pro.
+
+If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
+The following risk factor is reported from the Crownstrike runtime integration:  [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
+
+### Prerequisites <a href="#crowdstrike-prerequisites" id="crowdstrike-prerequisites"></a>
+
+* Deploy the [**Falcon Kubernetes Protection Agent (KPA)**](https://falcon.us-2.crowdstrike.com/documentation/page/q444c05c/deploy-falcon-kubernetes-protection-agent-with-a-helm-chart) to the cluster.
+* Include the following scopes in the API Client:
+  * **Falcon Container CLI** - write
+  * **Falcon Container Image** - read/write
+  * **Falcon Images Download** - read
+  * **Kubernetes Protection Agent** - write
+  * **Kubernetes Protection** - read/write
+  * **Sensor Download** - read
+
+### Required parameters <a href="#crowdstrike-required-parameters" id="crowdstrike-required-parameters"></a>
+
+After generating the API Client following the [**Falcon Kubernetes Protection Agent (KPA)**](https://falcon.us-2.crowdstrike.com/documentation/page/q444c05c/deploy-falcon-kubernetes-protection-agent-with-a-helm-chart) deployment, the **Client ID** and the **Client Secret** are generated.
+
+* **Client ID** - To retrieve the **Client ID**, follow these steps:
+  * Left side navigation bar -> Support and resources -> API clients and keys.
+  * Under **OAuth2 API Clients** press on **Create API Client**.
+  * Select the API Client used in the **Falcon Kubernetes Protection Agent (KPA)**.
+  * You can find the **Client ID** on the right side, under the details of the API Client.
+* **Client Secret** - This value is available only at the first generation and cannot be accessed afterward.
+* **URL** - Select the URL based on your network environment.
+
+### Integration Hub setup <a href="#crowdstrike-integration-hub-setup" id="crowdstrike-integration-hub-setup"></a>
+
+* Open the **Integration Hub** menu.
+* Select the **CNAPP** tag and search for CrowdStrike.
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Add the **Client ID**.
+* Add the **Client Secret**.
+* Set the **URL**.
+* Click the **Done** button.
+* When the connection is established, the status of the CrowdStrike integration is changed to **Connected**.
+
+{% hint style="info" %}
+After the CrowdStrike runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
+{% endhint %}
