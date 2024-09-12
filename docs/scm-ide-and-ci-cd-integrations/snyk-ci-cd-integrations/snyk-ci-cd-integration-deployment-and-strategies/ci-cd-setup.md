@@ -13,7 +13,7 @@ When you run Snyk in your CI/CD platform, you typically want to post the test re
 * For user accounts, this is the user's preferred Organization, configurable in the user's settings.
 * For Organization service accounts, this is the Organization in which the account was created.
 
-You can **define the target organization** in the Snyk CLI by using the  `--org` CLI option and either the `orgslugname` or Organization ID:
+You can **define the target Organization** in the Snyk CLI by using the  `--org` CLI option and either the `orgslugname` or Organization ID:
 
 * You can define the target Organization using its `orgslugname` as displayed in the address bar of the browser in the Snyk UI.
 * Alternatively, you can define the target Organization using its ORG\_ID on the Organization settings page.
@@ -24,14 +24,14 @@ For more information, see [How to select the Organization to use in the CLI.](..
 
 ### Snyk authentication
 
-For instruction on authenticating with Snyk, see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-to-use-the-cli.md).
+For instructions on authenticating with Snyk, see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-to-use-the-cli.md).
 
 ## Setting up Snyk to run in a pipeline
 
 Snyk supports the following approaches to add tests to a build pipeline:
 
 * **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](https://docs.snyk.io/integrations/ci-cd-integrations/jenkins-integration-overview), [Team City](https://docs.snyk.io/integrations/ci-cd-integrations/teamcity-integration-overview)[, Bitbucket Pipelines](https://docs.snyk.io/integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview), and [Azure Pipelines](https://docs.snyk.io/integrations/ci-cd-integrations/azure-pipelines-integration).
-* **Snyk CLI:** Teams with more complex workflows, or using a build system without a Snyk pre-built plugin, can use the Snyk CLI during CI/CD setups. See [Setting up using Snyk CLI](ci-cd-setup.md#setting-up-using-snyk-cli) for details.
+* **Snyk CLI:** Teams with more complex workflows or using a build system without a Snyk pre-built plugin, can use the Snyk CLI during CI/CD setups. See [Setting up using Snyk CLI](ci-cd-setup.md#setting-up-using-snyk-cli) for details.
 * **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new Projects, and testing arbitrary libraries. See the [Snyk API documentation](../../../snyk-api/) for details.
 
 ## Setting up CI/CD using Snyk CLI
@@ -55,7 +55,7 @@ If you monitor a Project with Snyk, you will be notified if the dependencies in 
 
 Ensure you do not check your personal Snyk API token into source control, to avoid exposing it to others. Instead, use CI environment variables to configure your token.
 
-See guidance for how to do this in the following documentation:
+See the guidance for how to do this in the following documentation:
 
 * [Travis](https://docs.travis-ci.com/user/environment-variables/)
 * [Circle CI](https://circleci.com/docs/set-environment-variable/)
