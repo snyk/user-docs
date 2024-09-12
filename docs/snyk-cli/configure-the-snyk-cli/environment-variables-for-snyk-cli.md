@@ -21,21 +21,3 @@ For the `snyk container` commands, specify a username to use when connecting to 
 `SNYK_REGISTRY_PASSWORD`
 
 For the `snyk container` commands, specify a password to use when connecting to a container registry. Note that using the `--password` flag overrides this value. This is ignored in favor of local Docker binary credentials when Docker is present.
-
-You can set the region using the `snyk config environment` command or using an environment variable on your machine or CI/CD. The environment variables follow.
-
-**SNYK-US-01** - If you are in this region, no configuration is required. The URL is `https://api.snyk.io`.
-
-**SNYK-US-02** - `SNYK_API=Https://api.us.snyk.io`
-
-**SNYK-EU-01 -** `SNYK_API=https://api.eu.snyk.io`
-
-**SNYK-AU-01 -** `SNYK_API=https://api.au.snyk.io`
-
-When you are running Jenkins, use the following additional argument:
-
-**SNYK-US-02** - `--API=https://api.us.snyk.io`
-
-**SNYK-EU-01 -** `--API=https://api.eu.snyk.io`
-
-**SNYK-AU-01 -** `--API=https://api.au.snyk.io`
