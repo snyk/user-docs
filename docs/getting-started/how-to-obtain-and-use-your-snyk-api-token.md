@@ -6,14 +6,13 @@ If you are using Snyk on the EU and AU tenants,  you must set your endpoints acc
 
 ## How to obtain your personal Snyk API token
 
-Follow these steps to obtain your personal Snyk API token:
+Follow these steps to obtain your personal Organization Snyk API token:
 
-1. Log in to Snyk and from the pull-down menu under your username, choose **Account settings > General**.
-2. In the **Account Settings,** select **General** > **Auth Token**.
-3. In the KEY field, **click to show** and then select and copy your API token.
-4. Copy the token and save it in a secure location for future use.
+1. Log in to Snyk, and from the left-hand menu under your username, choose **Account settings**.
+2. In the **key** field, **Click to show**.
+3. Highlight and copy the API key.
 
-<figure><img src="../.gitbook/assets/Snyk Broker - API Token - Account settings - API Token box.png" alt="Settings page, display API token"><figcaption><p>Settings page, display API token</p></figcaption></figure>
+If you want a new API token, select **Revoke & Regenerate.** This will make the previous API token invalid.
 
 ## How to use your Snyk API token
 
