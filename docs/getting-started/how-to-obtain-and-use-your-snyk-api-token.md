@@ -1,14 +1,14 @@
 # How to obtain and use your Snyk API token
 
 {% hint style="info" %}
-If you are using Snyk on the EU and AU tenants,  you must set your endpoints accordingly before authenticating. For more information, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md).
+Before authenticating, ensure your endpoints are set correctly. For a list of URLs, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md).
 {% endhint %}
 
 ## Obtain your personal Snyk API token
 
 Follow these steps to obtain your personal Organization Snyk API token:
 
-1. Log in to Snyk, and from the left-hand menu under your username, choose **Account settings** to open the **General** settings.
+1. Find your token in your [General Account Settings](https://app.snyk.io/account) after you register with Snyk and log in.
 2. In the **key** field, **Click to show**.
 3. Highlight and copy the API key.
 
