@@ -541,7 +541,7 @@
         },
         "style": "form"
       },
-      "ImageId": {
+      "ImageId20231102": {
         "description": "Image ID",
         "in": "path",
         "name": "image_id",
@@ -42001,7 +42001,7 @@
             }
           },
           {
-            "$ref": "#/components/parameters/ImageId"
+            "$ref": "#/components/parameters/ImageId20231102"
           }
         ],
         "responses": {
@@ -42094,7 +42094,7 @@
             }
           },
           {
-            "$ref": "#/components/parameters/ImageId"
+            "$ref": "#/components/parameters/ImageId20231102"
           },
           {
             "$ref": "#/components/parameters/Version"
