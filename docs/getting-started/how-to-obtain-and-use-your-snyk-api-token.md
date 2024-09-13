@@ -4,7 +4,7 @@
 If you are using Snyk on the EU and AU tenants,  you must set your endpoints accordingly before authenticating. For more information, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md).
 {% endhint %}
 
-## How to obtain your personal Snyk API token
+## Obtain your personal Snyk API token
 
 Follow these steps to obtain your personal Organization Snyk API token:
 
@@ -14,7 +14,7 @@ Follow these steps to obtain your personal Organization Snyk API token:
 
 If you want a new API token, select **Revoke & Regenerate.** This will make the previous API token invalid.
 
-## How to use your Snyk API token
+## How to use personal and service account tokens&#x20;
 
 Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
 
