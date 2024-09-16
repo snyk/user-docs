@@ -201,7 +201,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 {% hint style="warning" %}
 **Release status**
 
-Jira is in Early Access and available with Snyk AppRisk Essentials and Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Jira is in Closed Beta and available with Snyk AppRisk Essentials and Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#jira-required-parameters" id="jira-required-parameters"></a>
