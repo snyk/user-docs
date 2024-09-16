@@ -2,23 +2,35 @@
 
 ## What is Snyk?
 
-Snyk is a platform that allows you to scan, prioritize, and fix security vulnerabilities in your code, open-source dependencies, container images, and infrastructure as code configurations.
+Snyk begins with developer-focused security, providing security tools designed for developers to create secure code from the start. Snyk integrates into all stages of development - IDEs, source code managers, CI/CD pipelines, and repositories, to detect high-risk code, open source packages, containers, and cloud configurations, and give developers the precise information they need to fix each issue - or even to automate the fix, where desired.
+
+The Snyk platform uses a risk-based approach, focusing security efforts on issues that matter, and eliminating the noise of vulnerabilities that have no meaningful impact. To manage and govern the security program, Snyk gives security teams immediate visibility into coverage and business context across all application assets, smart policies to automate and scale in large environments, and analytics and reporting to measure the performance of your security program.
 
 ## The Snyk developer-first approach
 
-Snyk provides visibility in a developer’s workflow and actionable insights. The benefit is engaging developers in security practices as part of their development work. Thus, the focus is on building a secure application rather than overhead-intensive work, such as putting in hard QA gates.&#x20;
+Developers now assemble applications with a combination of proprietary and open-source code, run them in containers, and deploy them using infrastructure as code configurations with technologies like Kubernetes and Terraform. Snyk provides visibility in a developer's workflow and actionable insights, engaging developers in security practices as part of their development work. This approach focuses on building secure applications rather than relying on overhead-intensive processes like stringent
 
-Developers now assemble applications with a combination of proprietary and open-source code, run that code in containers, and then deploy with infrastructure as code configurations using technologies like Kubernetes and Terraform.
+Snyk builds trust between developers and AppSec teams by embracing DevOps, Cloud, and AI without limits. The path to trusted software begins with Developer Security, scales with DevSec Governance, and is navigated through Application Risk Management. Snyk integrates into DevOps processes, IDEs, workflows, and automation pipelines to add security expertise, aligning with industry best practices and enhancing each development method's security.
 
-A robust security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work with developers using the methods each prefers, while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.
+Implementing the Snyk platform allows you to:
 
-<figure><img src="../.gitbook/assets/image (162) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Developer Security Platform: Products and Developer experience"><figcaption><p>Developer Security Platform: Products and Developer experience</p></figcaption></figure>
+* Secure code-to-cloud developer experience to find and fix hand-written and AI-generated code
+* Unite developers and security through comprehensive and scalable governance capabilities&#x20;
+* Uncover and manage actual business risk through holistic application risk management
+
+<figure><img src="../.gitbook/assets/image (565).png" alt="Snyk Developer Security Platform: Products and Developer experience"><figcaption><p>Snyk Developer Security Platform: Products and Developer experience</p></figcaption></figure>
 
 ## Use Snyk in your workflow
 
-* **Secure your code**: use [Snyk Open Source](../scan-with-snyk/snyk-open-source/) to fix vulnerabilities in your open source dependencies and [Snyk Code](../scan-with-snyk/snyk-code/) to fix vulnerabilities in your source code.
-* **Secure your containers**: use [Snyk Container](../scan-with-snyk/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications.
-* **Secure your infrastructure**: use [Snyk Infrastructure as Code (IaC)](../scan-with-snyk/snyk-iac/scan-your-iac-source-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [IaC+](../scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud Projects.
+* **Discover assets** from your application to ensure Snyk is securing your business-critical assets and identifying gaps:
+  * Use the [Manage assets](../manage-assets/) functionality to discover and group assets from an application.
+* **Scan your code** to fix vulnerabilities:&#x20;
+  * Use [Snyk Open Source](../scan-with-snyk/snyk-open-source/) to fix vulnerabilities in your open source dependencies. &#x20;
+  * Use [Snyk Code](../scan-with-snyk/snyk-code/) to fix vulnerabilities in your source code.&#x20;
+  * Use [Snyk Container](../scan-with-snyk/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications.
+  * Use [Snyk Infrastructure as Code (IaC)](../scan-with-snyk/snyk-iac/scan-your-iac-source-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [IaC+](../scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud Projects.
+* **Prioritize issues** based on actual risk by using comprehensive visibility into your application and vulnerabilities:&#x20;
+  * Use Snyk AppRisk to prioritize and manage risk more holistically with visibility into the runtime.&#x20;
 
 ## Choose how to run Snyk
 
@@ -42,12 +54,13 @@ The Snyk tech stacks that are supported depend on the Snyk product you use:
 * **Snyk Open Source** and **Snyk Code**: see [Supported languages and frameworks](../supported-languages-package-managers-and-frameworks/).
 * **Snyk Container**: see [Supported operating system distributions](../scan-using-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md).
 * **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](../scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
+* **Snyk AppRisk**: see [Using Snyk AppRisk](../scan-using-snyk/snyk-apprisk/using-snyk-apprisk.md).
 
 ## What can Snyk integrate with?
 
 Snyk integrations for your software development process allow you to integrate Snyk into your development and security processes, including source control, IDE, CI/CD, and many others.
 
-See [Integrate with Snyk](../integrate-with-snyk/) for details.
+See [Integrate with Snyk](../integrate-with-snyk/) at both the Group and Organization levels for details.
 
 ## **What does Snyk cost?**
 
