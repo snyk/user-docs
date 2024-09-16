@@ -1,10 +1,10 @@
 # Nexus Repository Manager for npm
 
 {% hint style="info" %}
-**Availability**\
-This feature is available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/) for more details.
+**Feature availability**\
+Package repository integrations are available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
-This guide is relevant for Snyk Web UI integrations only; the Snyk CLI already supports Yarn and npm Projects with private Nexus Repository Manager registries.
+This guide is relevant for Snyk Web UI integrations only; the Snyk CLI  supports Yarn and npm Projects with private Nexus Repository Manager registries.
 {% endhint %}
 
 Snyk can use Nexus Repository Manager with npm and Yarn Projects imported from Git.

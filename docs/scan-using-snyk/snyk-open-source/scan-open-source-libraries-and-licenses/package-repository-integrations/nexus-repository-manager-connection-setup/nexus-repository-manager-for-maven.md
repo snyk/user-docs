@@ -1,8 +1,13 @@
 # Nexus Repository Manager for Maven
 
 {% hint style="info" %}
-**Availability**\
-This feature is available with Enterprise plans.  [ricing](https://snyk.io/plans/)for more details.
+**Feature availability**\
+Package repository integrations are available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+
+**Supported projects**\
+The Artifactory Package Repository integration supports [Node.js](../../../../../supported-languages-package-managers-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) Projects.&#x20;
+
+For [Improved Gradle SCM scanning](../../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access), use the Maven settings.
 {% endhint %}
 
 Snyk can use Nexus Repository Manager with Maven Projects.
