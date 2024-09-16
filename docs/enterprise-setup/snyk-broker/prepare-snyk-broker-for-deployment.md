@@ -73,7 +73,7 @@ The Broker token is required and must be generated in order for you to use Snyk 
 
 For code repository (SCM) integrations, a Broker token can be generated using the API or by contacting [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 
-1. Navigate to the Snyk API v1 documentation and follow the example under "Set up a broker for an existing integration" within the [Integrations API](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+1. Follow the example under "Set up a broker for an existing integration" in the endpoint [Update existing integration](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 2. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration. by selecting **Settings** > **Integrations** for that specific integration to see the Broker token.
 
 For [Artifactory Repository](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager](../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/) brokered instances or [Jira](install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
@@ -84,8 +84,8 @@ For [Artifactory Repository](../../scan-using-snyk/snyk-open-source/scan-open-so
 
 ## Enabling Broker across multiple organizations
 
-You can use the same Git service across multiple Organizations in Snyk with the same Broker token. To do this, create the token for an Organization and then create a new Organization based on the original. This clones the token and you can now enable the Broker for it.
+You can use the same Git service across multiple Organizations in Snyk with the same Broker token. To do this, create the token for an Organization and then create a new Organization based on the original. This clones the token, and you can now enable the Broker for it.
 
-To do this retroactively for existing Organizations, you can use the API v1 endpoint [Clone an integration (with settings and credentials)](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning) to clone a specific integration, including the Broker token.
+To do this retroactively for existing Organizations, you can use the endpoint [Clone an integration (with settings and credentials) ](../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)to clone a specific integration, including the Broker token.
 
 Unless you do this, you must generate a new Broker token for the Organization, as each integration and Organization has its own unique Broker token.
