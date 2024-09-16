@@ -9,11 +9,9 @@ You can create service accounts that authenticate with the [Auth 2.0 `client_cre
 
 ## OAuth 2.0 with client secret
 
-You can create an `oauth_client_secret` service account at either the Group or Organization level.
+You can create an `oauth_client_secret` service account at either the Group or Organization level by calling the API endpoint [Create a service account for an organization](../../snyk-api/reference/serviceaccounts.md#orgs-org\_id-service\_accounts) or [Create a service account for a group](../../snyk-api/reference/serviceaccounts.md#groups-group\_id-service\_accounts).
 
-### Receive a client secret
-
-After the service account is created, you will receive a `client_secret`. You cannot view the `client_secret` again after the service account is created. If you have misplaced it, you can [rotate](manage-service-accounts-using-the-snyk-api.md#manage-a-service-account-client-secret-for-your-group) your `client_secret` and receive a new one.
+The response returns the `client_secret` and the `client_id`.  You cannot view the `client_secret` again after the service account is created. If you have misplaced it, you can [rotate](manage-service-accounts-using-the-snyk-api.md#manage-a-service-account-client-secret-for-your-group) your `client_secret` and receive a new one.
 
 {% hint style="danger" %}
 Never share the `client_secret` publicly, as this is used to authenticate your service account. Keep it secure and private.
@@ -26,6 +24,10 @@ After the service account is created, you can retrieve an `access_token` through
 You can use an`access_token` the same way as you would use a Snyk API key, but with the `Authorization: bearer $access_token` header or the `SNYK_OAUTH_TOKEN` environment variable with the Snyk CLI.
 
 The `access_token` has a short time to live and must be refreshed once it expires. There are many OAuth 2.0 libraries available that greatly simplify this process.
+
+### Authenticate with the Snyk CLI
+
+You can also use the `client_secret` and the `client_id` to authenticate with the Snyk CLI. For details, see the [`snyk auth`](../../snyk-cli/commands/auth.md) command help.
 
 ## OAuth 2.0 with Private Key JWT &#x20;
 
