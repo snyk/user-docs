@@ -545,6 +545,8 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Create a service account for an organization](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts)
 
+**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md)
+
 ### [Get a list of organization service accounts](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-1)
 
 ### [Update an organization service account](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id)
@@ -556,6 +558,8 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 ### [Manage an organization service account’s client secret](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id-secrets)
 
 ### [Create a service account for a group](../reference/serviceaccounts.md#groups-group\_id-service\_accounts)
+
+**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md)
 
 ### [Get a list of group service accounts](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-1)
 
