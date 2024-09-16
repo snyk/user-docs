@@ -14,7 +14,7 @@ The Code Agent is available as a [Docker image](https://hub.docker.com/r/snyk/co
 
 Deploying the Broker client and Code Agent creates two separate services. that, along with the Broker server, [Snyk Code AI Engine](../../../scan-with-snyk/snyk-code/#ai-engine), and Snyk Web UI, enable the following Code Analysis workflow:
 
-1. On the Snyk Web UI, a user initiates a request to import a repository from a self-hosted Git server to Snyk for Code Analysis. The request can also be initiated from the Snyk API v1, by using the [Import targets request](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets).
+1. A user initiates a request to import a repository from a self-hosted Git server to Snyk for Code Analysis, either on the Web UI or by using the endpiont [Import targets](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
 2. The request arrives at the Broker server, which sends the request to the Broker client, which sends the request to the Code Agent. The Broker client automatically provides the Code Agent with the connection details to the integrated SCM, which stores the required repositories.
 3. The Code Agent connects to the integrated SCM, and securely clones the local repository in your infrastructure. The cloned repository is stored temporarily in the Code Agent container. The cloning is done over an HTTPS connection. If your SCM does not support HTTPS, you use a reverse proxy. For details reach out to your technical contact at Snyk.
 4. The Code Agent filters the cloned repository for supported files and sends them to the Snyk Code AI Engine.
