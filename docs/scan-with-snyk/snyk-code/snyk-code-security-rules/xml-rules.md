@@ -1,31 +1,19 @@
 # XML rules
 
-## Rule (1) Debug Features Enabled
+Each rule includes the following information.
 
-**CWE** (215) Insertion of Sensitive Information Into Debugging Code
+* **Rule Name**: Consecutive number for each rule and the Snyk name of the rule.
+* **CWE(s):** The [CWE numbers](https://cwe.mitre.org/) that are covered by this rule.
+* **Security Categories**: The [OWASP Top 10 ](https://owasp.org/Top10/)(2021 edition) category to which the rule belongs to, if any, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
+* **Autofixable**: Security rules that are autofixable by DeepCode AI Fix. This information is included only for the supported programming languages.
 
-## Rule (2) Use of Hardcoded Credentials
-
-**CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (3) ASP SSL Disabled
-
-**CWE** (319) Cleartext Transmission of Sensitive Information
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (4) Android Debug Mode Enabled
-
-**CWE** (489) Active Debug Code
-
-## Rule (5) Struts Development Mode Enabled
-
-**CWE** (489) Active Debug Code
-
-## Rule (6) Request Validation Disabled
-
-**CWE** (554) ASP.NET Misconfiguration: Not Using Input Validation Framework
+| Rule Name                                                    | CWE(s)           | Security Categories    | Autofixable |
+| ------------------------------------------------------------ | ---------------- | ---------------------- | ----------- |
+| Android Debug Mode Enabled                                   | CWE-489          | None                   | No          |
+| Debug Features Enabled                                       | CWE-215          | None                   | No          |
+| Generation of Error Message Containing Sensitive Information | CWE-209          | OWASP:A04              | No          |
+| Improper Restriction of Rendered UI Layers or Frames         | CWE-1021         | OWASP:A04              | No          |
+| ASP SSL Disabled                                             | CWE-319          | OWASP:A02              | No          |
+| Use of Hardcoded Passwords                                   | CWE-798, CWE-259 | Sans Top 25, OWASP:A07 | No          |
+| Request Validation Disabled                                  | CWE-554          | None                   | No          |
+| Struts Development Mode Enabled                              | CWE-489          | None                   | No          |

@@ -1,195 +1,43 @@
 # Ruby rules
 
-## Rule (1) Improper Input Validation
-
-**CWE** (20) Improper Input Validation
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (2) Path Traversal
-
-**CWE** (23) Relative Path Traversal
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-## Rule (3) Command Injection
-
-**CWE** (78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (4) Cross-site Scripting (XSS)
-
-**CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (5) SQL Injection
-
-**CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (6) Code Injection
-
-**CWE** (94) Improper Control of Generation of Code ('Code Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (7) Remote Code Execution via Endpoint
-
-**CWE** (94) Improper Control of Generation of Code ('Code Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (8) Improper Neutralization of Directives in Statically Saved Code
-
-**CWE** (96) Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (9) Information Exposure
-
-**CWE** (200) Exposure of Sensitive Information to an Unauthorized Actor
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (10) Use of Hardcoded Credentials
-
-**CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (11) Session Manipulation
-
-**CWE** (285) Improper Authorization
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-## Rule (12) Improper Certificate Validation
-
-**CWE** (295) Improper Certificate Validation
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-## Rule (13) Selection of Less-Secure Algorithm During Negotiation (Force SSL)
-
-**CWE** (311, 757) Missing Encryption of Sensitive Data, Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (14) Insecure Data Transmission
-
-**CWE** (319) Cleartext Transmission of Sensitive Information
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (15) Use of Hardcoded Cryptographic Key
-
-**CWE** (321) Use of Hard-coded Cryptographic Key
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (16) Use of a Broken or Risky Cryptographic Algorithm
-
-**CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (17) Use of Insufficiently Random Values
-
-**CWE** (330) Use of Insufficiently Random Values
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (18) Regular Expression Denial of Service (ReDoS)
-
-**CWE** (400) Uncontrolled Resource Consumption
-
-## Rule (19) Unsafe Reflection
-
-**CWE** (470) Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (20) Deserialization of Untrusted Data
-
-**CWE** (502) Deserialization of Untrusted Data
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (21) No Weak Password Requirements
-
-**CWE** (521) Weak Password Requirements
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-## Rule (22) Hardcoded Secret
-
-**CWE** (547) Use of Hard-coded, Security-relevant Constants
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-## Rule (23) Open Redirect
-
-**CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-## Rule (24) XML External Entity (XXE) Injection
-
-**CWE** (611) Improper Restriction of XML External Entity Reference
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (25) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
-
-**CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-## Rule (26) XPath Injection
-
-**CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (27) Improperly Controlled Modification of Dynamically-Determined Object Attributes
-
-**CWE** (915) Improperly Controlled Modification of Dynamically-Determined Object Attributes
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
-
-## Rule (28) Use of Password Hash With Insufficient Computational Effort
-
-**CWE** (916) Use of Password Hash With Insufficient Computational Effort
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (29) Sensitive Cookie Without 'HttpOnly' Flag
-
-**CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-## Rule (30) Incorrect regular expression for validating values
-
-**CWE** (1286) Improper Validation of Syntactic Correctness of Input
+Each rule includes the following information.
+
+* **Rule Name**: Consecutive number for each rule and the Snyk name of the rule.
+* **CWE(s):** The [CWE numbers](https://cwe.mitre.org/) that are covered by this rule.
+* **Security Categories**: The [OWASP Top 10 ](https://owasp.org/Top10/)(2021 edition) category to which the rule belongs to, if any, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
+* **Autofixable**: Security rules that are autofixable by DeepCode AI Fix. This information is included only for the supported programming languages.
+
+| Rule Name                                                                      | CWE(s)                                                      | Security Categories                                     | Autofixable |
+| ------------------------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------- | ----------- |
+| Code Injection                                                                 | CWE-94                                                      | Sans Top 25, OWASP:A03                                  | No          |
+| Command Injection                                                              | CWE-78                                                      | Sans Top 25, OWASP:A03                                  | No          |
+| Remote Code Execution via Endpoint                                             | CWE-94                                                      | Sans Top 25, OWASP:A03                                  | No          |
+| Deserialization of Untrusted Data                                              | CWE-502                                                     | Sans Top 25, OWASP:A08                                  | No          |
+| Use of Hardcoded Credentials                                                   | CWE-798, CWE-259                                            | Sans Top 25, OWASP:A07                                  | No          |
+| Use of Hardcoded Cryptographic Key                                             | CWE-321                                                     | OWASP:A02                                               | No          |
+| Hardcoded Secret                                                               | CWE-547                                                     | OWASP:A05                                               | No          |
+| Use of Hardcoded Passwords                                                     | CWE-798, CWE-259                                            | Sans Top 25, OWASP:A07                                  | No          |
+| Use of a Broken or Risky Cryptographic Algorithm                               | CWE-327                                                     | OWASP:A02                                               | No          |
+| Use of Password Hash With Insufficient Computational Effort                    | CWE-916                                                     | OWASP:A02                                               | No          |
+| Use of Insufficiently Random Values                                            | CWE-330                                                     | OWASP:A02                                               | No          |
+| Sinatra Protection Layers Disabled                                             | CWE-16, CWE-352, CWE-79, CWE-693, CWE-1021, CWE-35, CWE-348 | Sans Top 25, OWASP:A05, OWASP:A03, OWASP:A01, OWASP:A04 | No          |
+| Insecure Data Transmission                                                     | CWE-319                                                     | OWASP:A02                                               | No          |
+| Improper Input Validation                                                      | CWE-20                                                      | Sans Top 25, OWASP:A03                                  | No          |
+| Improperly Controlled Modification of Dynamically-Determined Object Attributes | CWE-915                                                     | OWASP:A08                                               | No          |
+| Selection of Less-Secure Algorithm During Negotiation (Force SSL)              | CWE-311, CWE-757                                            | OWASP:A02, OWASP:A04                                    | No          |
+| Open Redirect                                                                  | CWE-601                                                     | OWASP:A01                                               | No          |
+| Path Traversal                                                                 | CWE-23                                                      | OWASP:A01                                               | No          |
+| Unsafe Reflection                                                              | CWE-470                                                     | OWASP:A03                                               | No          |
+| Improper Certificate Validation                                                | CWE-295                                                     | OWASP:A07                                               | No          |
+| Information Exposure                                                           | CWE-200                                                     | OWASP:A01                                               | No          |
+| Session Manipulation                                                           | CWE-285                                                     | OWASP:A01                                               | No          |
+| SQL Injection                                                                  | CWE-89                                                      | Sans Top 25, OWASP:A03                                  | No          |
+| Improper Neutralization of Directives in Statically Saved Code                 | CWE-96                                                      | OWASP:A03                                               | No          |
+| No Weak Password Requirements                                                  | CWE-521                                                     | OWASP:A07                                               | No          |
+| Sensitive Cookie Without 'HttpOnly' Flag                                       | CWE-1004                                                    | OWASP:A05                                               | No          |
+| Sensitive Cookie in HTTPS Session Without 'Secure' Attribute                   | CWE-614                                                     | OWASP:A05                                               | No          |
+| Incorrect regular expression for validating values                             | CWE-1286                                                    | None                                                    | No          |
+| Cross-site Scripting (XSS)                                                     | CWE-79                                                      | Sans Top 25, OWASP:A03                                  | No          |
+| XML External Entity (XXE) Injection                                            | CWE-611                                                     | OWASP:A05                                               | No          |
+| XPath Injection                                                                | CWE-643                                                     | OWASP:A03                                               | No          |
+| Regular Expression Denial of Service (ReDoS)                                   | CWE-400                                                     | None                                                    | No          |

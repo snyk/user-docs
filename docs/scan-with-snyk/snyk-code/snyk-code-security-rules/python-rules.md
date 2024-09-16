@@ -1,299 +1,53 @@
 # Python rules
 
-## Rule (1) Incomplete URL sanitization
-
-**CWE** (20) Improper Input Validation
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (2) Arbitrary File Write via Archive Extraction (Tar Slip)
-
-**CWE** (22) Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (3) Path Traversal
-
-**CWE** (23) Relative Path Traversal
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-## Rule (4) Command Injection
-
-**CWE** (78) Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (5) Cross-site Scripting (XSS)
-
-**CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (6) Jinja auto-escape is set to false.
-
-**CWE** (79) Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (7) SQL Injection
-
-**CWE** (89) Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (8) Code Injection
-
-**CWE** (94) Improper Control of Generation of Code ('Code Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (9) Improper Neutralization of Directives in Statically Saved Code
-
-**CWE** (96) Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (10) Server Information Exposure
-
-**CWE** (209) Generation of Error Message Containing Sensitive Information
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
-
-## Rule (11) Use of Hardcoded Credentials
-
-**CWE** (259, 798) Use of Hard-coded Password, Use of Hard-coded Credentials
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (12) Improper Handling of Insufficient Permissions or Privileges
-
-**CWE** (280) Improper Handling of Insufficient Permissions or Privileges
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A04:2021 - Insecure Design
-
-## Rule (13) Binding to all network interfaces may open service to unintended traffic
-
-**CWE** (284) Improper Access Control
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (14) Broken User Authentication
-
-**CWE** (287) Improper Authentication
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (15) Improper Certificate Validation
-
-**CWE** (295) Improper Certificate Validation
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (16) Cryptographic Issues
-
-**CWE** (310) Cryptographic Issues
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (17) Authentication over HTTP
-
-**CWE** (319) Cleartext Transmission of Sensitive Information
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (18) Use of Hardcoded Cryptographic Key
-
-**CWE** (321) Use of Hard-coded Cryptographic Key
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (19) Inadequate Encryption Strength
-
-**CWE** (326) Inadequate Encryption Strength
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (20) Use of a Broken or Risky Cryptographic Algorithm
-
-**CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (21) Missing protocol in ssl.wrap\_socket
-
-**CWE** (327) Use of a Broken or Risky Cryptographic Algorithm
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (22) Use of Hardcoded Cryptographic Initialization Value
-
-**CWE** (329) Generation of Predictable IV with CBC Mode
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-## Rule (23) Origin Validation Error
-
-**CWE** (346, 942) Origin Validation Error, Permissive Cross-domain Policy with Untrusted Domains
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-## Rule (24) Cross-Site Request Forgery (CSRF)
-
-**CWE** (352) Cross-Site Request Forgery (CSRF)
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (25) Insecure Temporary File
-
-**CWE** (377) Insecure Temporary File
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (26) Regular Expression Denial of Service (ReDoS)
-
-**CWE** (400) Uncontrolled Resource Consumption
-
-## Rule (27) Insecure default value
-
-**CWE** (453) Insecure Default Variable Initialization
-
-## Rule (28) Debug Mode Enabled
-
-**CWE** (489) Active Debug Code
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (29) Deserialization of Untrusted Data
-
-**CWE** (502) Deserialization of Untrusted Data
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A08:2021 - Software and Data Integrity Failures
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (30) Hardcoded Secret
-
-**CWE** (547) Use of Hard-coded, Security-relevant Constants
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (31) Open Redirect
-
-**CWE** (601) URL Redirection to Untrusted Site ('Open Redirect')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A01:2021 - Broken Access Control
-
-## Rule (32) Insecure Xml Parser
-
-**CWE** (611) Improper Restriction of XML External Entity Reference
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (33) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
-
-**CWE** (614) Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (34) XPath Injection
-
-**CWE** (643) Improper Neutralization of Data within XPath Expressions ('XPath Injection')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A03:2021 - Injection
-
-## Rule (35) Insecure File Permissions
-
-**CWE** (732) Incorrect Permission Assignment for Critical Resource
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (36) Selection of Less-Secure Algorithm During Negotiation (SSL instead of TLS)
-
-**CWE** (757) Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (37) Use of Password Hash With Insufficient Computational Effort
-
-**CWE** (916) Use of Password Hash With Insufficient Computational Effort
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (38) Server-Side Request Forgery (SSRF)
-
-**CWE** (918) Server-Side Request Forgery (SSRF)
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A10:2021 - Server-Side Request Forgery (SSRF)
-
-**OWASP Top 10/SANS 25:** SANS/CWE Top 25
-
-## Rule (39) NoSQL Injection
-
-**CWE** (943) Improper Neutralization of Special Elements in Data Query Logic
-
-## Rule (40) Sensitive Cookie Without 'HttpOnly' Flag
-
-**CWE** (1004) Sensitive Cookie Without 'HttpOnly' Flag
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A05:2021 - Security Misconfiguration
-
-**Autofixable** by DeepCode AI Fix
-
-## Rule (41) Python 2 source code
-
-**CWE** (1104) Use of Unmaintained Third Party Components
-
-**OWASP Top 10/SANS 25:** OWASP Top Ten 2021 Category A06:2021 - Vulnerable and Outdated Components
+Each rule includes the following information.
+
+* **Rule Name**: Consecutive number for each rule and the Snyk name of the rule.
+* **CWE(s):** The [CWE numbers](https://cwe.mitre.org/) that are covered by this rule.
+* **Security Categories**: The [OWASP Top 10 ](https://owasp.org/Top10/)(2021 edition) category to which the rule belongs to, if any, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
+* **Autofixable**: Security rules that are autofixable by DeepCode AI Fix. This information is included only for the supported programming languages.
+
+| Rule Name                                                                  | CWE(s)           | Security Categories    | Autofixable |
+| -------------------------------------------------------------------------- | ---------------- | ---------------------- | ----------- |
+| Authentication over HTTP                                                   | CWE-319          | OWASP:A02              | Yes         |
+| Binding to all network interfaces may open service to unintended traffic   | CWE-284          | OWASP:A01              | Yes         |
+| Broken User Authentication                                                 | CWE-287          | Sans Top 25, OWASP:A07 | No          |
+| Code Injection                                                             | CWE-94           | Sans Top 25, OWASP:A03 | Yes         |
+| Command Injection                                                          | CWE-78           | Sans Top 25, OWASP:A03 | Yes         |
+| Deserialization of Untrusted Data                                          | CWE-502          | Sans Top 25, OWASP:A08 | Yes         |
+| Cross-Site Request Forgery (CSRF)                                          | CWE-352          | Sans Top 25, OWASP:A01 | Yes         |
+| Password Requirements Not Enforced in Django Application                   | CWE-521          | OWASP:A07              | No          |
+| Use of Hardcoded Cryptographic Initialization Value                        | CWE-329          | OWASP:A02              | No          |
+| Use of Hardcoded Cryptographic Key                                         | CWE-321          | OWASP:A02              | No          |
+| Hardcoded Secret                                                           | CWE-547          | OWASP:A05              | Yes         |
+| Use of a Broken or Risky Cryptographic Algorithm                           | CWE-327          | OWASP:A02              | No          |
+| Insecure default value                                                     | CWE-453          | None                   | No          |
+| Insecure File Permissions                                                  | CWE-732          | None                   | Yes         |
+| Use of Password Hash With Insufficient Computational Effort                | CWE-916          | OWASP:A02              | Yes         |
+| Insecure Temporary File                                                    | CWE-377          | OWASP:A01              | Yes         |
+| Insecure Xml Parser                                                        | CWE-611          | OWASP:A05              | No          |
+| Jinja auto-escape is set to false.                                         | CWE-79           | Sans Top 25, OWASP:A03 | Yes         |
+| LDAP Injection                                                             | CWE-90           | OWASP:A03              | No          |
+| Improper Handling of Insufficient Permissions or Privileges                | CWE-280          | OWASP:A04              | No          |
+| Use of Hardcoded Credentials                                               | CWE-798          | Sans Top 25, OWASP:A07 | No          |
+| Use of Hardcoded Passwords                                                 | CWE-798, CWE-259 | Sans Top 25, OWASP:A07 | No          |
+| NoSQL Injection                                                            | CWE-943          | None                   | No          |
+| Open Redirect                                                              | CWE-601          | OWASP:A01              | No          |
+| Path Traversal                                                             | CWE-23           | OWASP:A01              | Yes         |
+| Debug Mode Enabled                                                         | CWE-489          | None                   | Yes         |
+| Improper Certificate Validation                                            | CWE-295          | OWASP:A07              | No          |
+| Server Information Exposure                                                | CWE-209          | OWASP:A04              | No          |
+| SQL Injection                                                              | CWE-89           | Sans Top 25, OWASP:A03 | Yes         |
+| Server-Side Request Forgery (SSRF)                                         | CWE-918          | Sans Top 25, OWASP:A10 | No          |
+| Improper Neutralization of Directives in Statically Saved Code             | CWE-96           | OWASP:A03              | No          |
+| Inadequate Encryption Strength                                             | CWE-326          | OWASP:A02              | Yes         |
+| Arbitrary File Write via Archive Extraction (Tar Slip)                     | CWE-22           | Sans Top 25, OWASP:A01 | No          |
+| Origin Validation Error                                                    | CWE-942, CWE-346 | OWASP:A05, OWASP:A07   | No          |
+| Cryptographic Issues                                                       | CWE-310          | OWASP:A02              | No          |
+| Python 2 source code                                                       | CWE-1104         | OWASP:A06              | No          |
+| Selection of Less-Secure Algorithm During Negotiation (SSL instead of TLS) | CWE-757          | OWASP:A02              | No          |
+| Sensitive Cookie Without 'HttpOnly' Flag                                   | CWE-1004         | OWASP:A05              | Yes         |
+| Sensitive Cookie in HTTPS Session Without 'Secure' Attribute               | CWE-614          | OWASP:A05              | Yes         |
+| Cross-site Scripting (XSS)                                                 | CWE-79           | Sans Top 25, OWASP:A03 | Yes         |
+| XPath Injection                                                            | CWE-643          | OWASP:A03              | No          |
+| Regular Expression Denial of Service (ReDoS)                               | CWE-400          | None                   | No          |
