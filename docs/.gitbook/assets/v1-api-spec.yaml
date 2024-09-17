@@ -1938,10 +1938,27 @@ paths:
                     type: github
                     broker:
                       enabled: true
-            example:
-              type: github
-              broker:
-                enabled: true
+            examples:
+              setupExistingIntegration:
+                summary: Set up a broker for an existing integration
+                value:
+                  type: github
+                  broker:
+                    enabled: true
+              updateCredentials:
+                summary: Update credentials for an existing non-brokered integration
+                value:
+                  type: gitlab
+                  credentials:
+                    token: GITLAB_TOKEN
+              disableBroker:
+                summary: Disable broker for an existing integration
+                value:
+                  type: github
+                  broker:
+                    enabled: false
+                  credentials:
+                    token: GITHUB_TOKEN
         required: true
       responses:
         '200':
