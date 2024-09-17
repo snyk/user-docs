@@ -1,16 +1,16 @@
 # Jira integration
 
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
-Jira integration is available with all paid plans. See [Pricing plans](https://snyk.io/plans).
+Jira integration is available with all paid plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 
 For Snyk Infrastructure as Code, see [Jira Integration for IaC](../../scan-with-snyk/snyk-iac/snyk-iac-integrations/jira-integration-for-iac.md).
 {% endhint %}
 
 ## **Set up your Jira integration**
 
-Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes APIs ([see Snyk API docs](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues)).
+Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes the API endpoints [Create jira issue](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).
 
 {% hint style="info" %}
 If your Jira instance is private, use [the Snyk Broker deployment method](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md).
