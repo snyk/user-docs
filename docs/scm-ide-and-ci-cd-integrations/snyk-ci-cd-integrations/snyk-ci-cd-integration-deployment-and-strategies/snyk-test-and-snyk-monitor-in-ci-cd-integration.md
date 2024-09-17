@@ -48,7 +48,7 @@ The default`<ORG_ID>` is the current preferred organization in your [Account set
 
 You can add options to the `snyk test` command to refine parameters that can result in a failed build:
 
-* `--severity-threshold=high`: Fail the build only for high severity issues
+* `--severity-threshold=high`: Fail the build only for high-severity issues
 * `--fail-on=upgradable`: fail the build only for issues that are upgradable (can be fixed with Snyk fix advice)
 
 You can also fail the build for any other parameter in the Snyk JSON output (such as CVSS score), using a wrapper like [snyk-filter](https://github.com/snyk-tech-services/snyk-filter), or using additional tooling like [snyk-delta](https://github.com/snyk-tech-services/snyk-delta) to fail the build only for issues found since the last build. For information on using snyk-filter and snyk-delta see [Failing of builds in the Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md).
@@ -57,10 +57,10 @@ You can also fail the build for any other parameter in the Snyk JSON output (suc
 
 By default if issues are not ignored, or if you are not using [snyk-delta](https://github.com/snyk-tech-services/snyk-delta), a `snyk test` in your pipeline fails the build when issues are found. To allow builds to continue without resolving these issues, you can:
 
-* [Ignore issues using a .snyk policy file](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
-* [Ignore issues from the Snyk UI](https://support.snyk.io/hc/en-us/articles/360000923498-How-can-I-ignore-a-vulnerability-)
-* [Ignore issues from the Snyk API](https://snyk.docs.apiary.io/#reference/projects/project-ignores)
-* Use the Snyk Python API for bulk ignores: see [https://github.com/snyk-labs/pysnyk](https://github.com/snyk-labs/pysnyk) and [https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py)
+* [Ignore issues using a .snyk policy file](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
+* [Ignore issues from the Snyk UI](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/#ignore-issues-in-the-snyk-web-ui)
+* [Ignore issues using the API](../../../snyk-api/reference/ignores-v1.md)
+* Use the Snyk Python API for bulk ignores: see [pysnyk](https://github.com/snyk-labs/pysnyk) and the demo [bulk-ignore-vulns-by-issueIdList](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py).
 
 ## Creating custom build artifacts
 
