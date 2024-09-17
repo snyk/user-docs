@@ -60,7 +60,7 @@ This form of authentication is particularly useful for CI/CD pipelines. See [How
 You can also store the Snyk API token locally for later use by running the following CLI command:\
 `snyk auth <SNYK_API_TOKEN>`
 
-All subsequent test calls will be authenticated automatically.  For more infomration, see the [Auth command help](commands/auth.md).
+All subsequent test calls will be authenticated automatically.  For more information, see the [Auth command help](commands/auth.md).
 
 ## How to authenticate to use the CLI in CI/CD pipelines
 
@@ -78,4 +78,4 @@ Alternatively, you can export the environment variable to make it available for 
 You can also store the Snyk API token locally for later use by running the following CLI command:\
 `snyk auth <SNYK_API_TOKEN>`
 
-All subsequent test calls will be authenticated automatically. For more infomration, see the [Auth command help](commands/auth.md).
+All subsequent test calls will be authenticated automatically. For more information, see the [Auth command help](commands/auth.md).

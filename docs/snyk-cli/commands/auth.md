@@ -18,7 +18,7 @@ OAuth provides improved security by issuing shorter-lived expiring authorization
 
 Earlier versions of the Snyk CLI (< 1.1293) obtained a non-expiring API token through a legacy browser interaction.
 
-This authentication method is deprecated but you may use it in the event of problems with OAuth by running `snyk auth --auth-type=token`. A future release of the CLI will remove this option.
+The Snyk API token can still be used as a fallback option. You must explicitly add an option to enable it as follows: `snyk auth --auth-type=token`.
 
 ## Options
 
