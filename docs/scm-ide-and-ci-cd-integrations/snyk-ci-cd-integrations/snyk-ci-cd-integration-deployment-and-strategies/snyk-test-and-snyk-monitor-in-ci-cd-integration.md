@@ -68,6 +68,6 @@ You can use JSON output from Snyk commands to create custom test reports as buil
 
 ## Creating work items for new vulnerabilities
 
-Snyk allows you to automatically create new work items in JIRA (see [Jira integration](https://docs.snyk.io/integrations/untitled-3/jira) documentation). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
+Snyk allows you to automatically create new work items in JIRA; for details, see the [Jira integration ](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md)documentation. You can customize this code for your specific requirements, or adapt it to work with other work management systems.
 
-See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started, or review the [API to create Jira tickets](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues).
+See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started. You can also use the API endpoints [Create jira issue](../../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).
