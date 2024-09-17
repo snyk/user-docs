@@ -30,7 +30,7 @@ For a small number of applications, typically under a hundred, follow these step
 3. From the Projects listing, add Projects using the Web UI.
 4. Monitor results in Git code repositories.
 
-For hundreds or thousands of repositories, you can use the[ V1 API v1 Import targets endpoint ](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)to import your Projects. This takes advantage of an existing source control integration and can be used to automate processes.
+For hundreds or thousands of repositories, you can use the API endpoint [Import targets ](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)to import your Projects. This takes advantage of an existing source control integration and can be used to automate processes.
 
 The [snyk-api-import](../../../scan-using-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. You must mirror the source control structure when using the snyk-api-import tool.
 
