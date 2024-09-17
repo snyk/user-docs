@@ -56,6 +56,8 @@ To use this command, you must install Node 18 or higher.
 
 Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker`, `REGION.snyk.io \` if you are not using `broker.snyk.io`.
 
+Add the environment variable or variables as defined in the credentials references with the associated value. The connection will not be established if references are missing, and an error entry will be logged in the Broker Client logs.
+
 | <pre><code>docker run --restart=always \
     -p 8000:8000 \
     -e ACCEPT_CODE=true \
@@ -65,6 +67,7 @@ Target your desired environment with the usual `-e BROKER_SERVER_URL=https://bro
     -e UNIVERSAL_BROKER_ENABLED=true \
     -e PORT=8000 \
     -e BROKER_HA_MODE_ENABLED=true \
+    -e &#x3C;YOUR_CREDENTIALS_REFERENCE>=&#x3C;secret value> \
 snyk/broker:universal
 </code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
