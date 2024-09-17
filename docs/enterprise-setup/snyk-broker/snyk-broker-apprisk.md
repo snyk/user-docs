@@ -1,6 +1,6 @@
 # Snyk Broker - AppRisk
 
-If your SCM or third-party instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. The minimum supported Broker version for Snyk AppRisk is [4.171.0](https://github.com/snyk/broker/releases/tag/v4.171.0).
+If your SCM or third-party instance is not publicly accessible, you need Snyk Broker. You can install and configure Snyk Broker using Docker or Helm. The minimum supported Broker version for Snyk AppRisk is [4.171.0](https://github.com/snyk/broker/releases/tag/v4.171.0).
 
 Enable Broker for Snyk AppRisk by setting the `APPRISK` environment variable to `true` in the installation command: `ACCEPT_APPRISK=true`  for Docker and `--set enableAppRisk=true` for Helm.
 
@@ -32,47 +32,23 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 ## Third-party integrations
 
 {% hint style="warning" %}
-The third-party integrations are available in a Closed Beta state and are applicable only to the Snyk AppRisk Pro version.  Please contact your salesperson if you are interested in Snyk AppRisk Pro.
+The third-party integrations are available in a Closed Beta state and are applicable only to the Snyk AppRisk Pro version. Contact your salesperson if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
 ## Checkmarx SAST integration
 
-Use the following steps to install and run Snyk Broker for the AppRisk and Checkmarx SAST integration.
+Use the following steps to install and run Snyk Broker for the Snyk AppRisk and Checkmarx SAST integration.
 
 1. Ensure you have the Snyk Broker token for the Snyk AppRisk integration. The Snyk support team can provide the needed token.&#x20;
-2. Pull the latest broker image by running this command:
+2. Pull the latest Broker image by running this command:
 
 ```docker
 docker pull snyk/broker:universal
 ```
 
-3. Ensure the `config.universal.json` file contains the following information:
-
-```
-{
-  "BROKER_CLIENT_CONFIGURATION": {
-    "common": {
-      "default": {
-        "BROKER_SERVER_URL": "https://broker.snyk.io",
-        "BROKER_HA_MODE_ENABLED": "false"
-      }
-    }
-  },
-  "CONNECTIONS": {
-    "apprisk connection": {
-      "type": "apprisk",
-      "identifier": "${BROKER_TOKEN}",
-      "CHECKMARX": "${CHECKMARX}",
-      "CHECKMARX_USERNAME": "${CHECKMARX_USERNAME}",
-      "CHECKMARX_PASSWORD": "${CHECKMARX_PASSWORD}",
-      "BROKER_CLIENT_URL": "http://my.broker.client.dns.hostname"
-    }
-  }
-}
-
-```
-
-4. Run the following commands with your Checkmarx username and password:
+3. Configure your Snyk AppRisk connection type using the `snyk-broker-config` command, as explained on the page [Initial configuration of the Universal Broker](universal-broker/initial-configuration-of-the-universal-broker.md).\
+   The example that follows uses `CHECKMARX_PASSWORD` as the value for the credentials reference.
+4. Run the following commands with your password.&#x20;
 
 ```docker
 docker run --restart=always \
@@ -80,16 +56,13 @@ docker run --restart=always \
         -e BROKER_CLIENT_URL=http://broker.url.example:8000 \
         -e BROKER_TOKEN=<YOUR BROKER TOKEN> \
         -e UNIVERSAL_BROKER_ENABLED=true \
-        -e CHECKMARX=<YOUR CHECKMARX HOST> \
-        -e CHECKMARX_USERNAME=<YOUR CHECKMARX USERNAME> \
         -e CHECKMARX_PASSWORD=<YOUR CHECKMARX PASSWORD> \
         -e BROKER_SERVER_URL=https://broker.snyk.io \
         -v $(pwd)/config.universal.json:/home/node/config.universal.json \
     snyk/broker:universal
-
 ```
 
-5. When the connection is established, you will find in the logs the following message: `successfully established a websocket connection to the broker server`
+5. After the connection is established, the following message is displayed in the logs: `successfully established a websocket connection to the broker server`
 
 {% code overflow="wrap" %}
 ```docker
