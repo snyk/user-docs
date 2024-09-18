@@ -11,9 +11,9 @@ Snyk supports the following protocols for authentication:
 
 After the extension is installed, to authenticate follow these steps:
 
-1. In the dialog that opens, configure your Snyk region properly if you use Snyk on the EU and AU tenants, For more information, see [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md#cli-and-ci-pipelines-urls).
+1. In the dialog that opens, set the Snyk API endpoint for custom multi-tenant or single-tenant setup, The default is `https://api.snyk.io`. For details, see [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
 
-<figure><img src="../../../.gitbook/assets/SCR-20240822-mgxw (1).png" alt="Snyk tenant configuration" width="563"><figcaption><p>Snyk tenant configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20240822-mgxw (1).png" alt="Snyk tenant configuration" width="563"><figcaption><p>Snyk endpoint configuration</p></figcaption></figure>
 
 2. On the next page with additional information, click **Finish**:
 

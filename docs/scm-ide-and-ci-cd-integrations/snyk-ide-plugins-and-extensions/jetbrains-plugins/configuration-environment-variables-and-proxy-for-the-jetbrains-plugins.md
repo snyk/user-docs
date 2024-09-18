@@ -6,20 +6,20 @@ After the plugin is installed, you can opt out of downloading the CLI through th
 
 You can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
-* **Token**: set the token that should be used for authentication with Snyk (see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugins.md)).
-* **Custom endpoint**: set the custom endpoint for the Snyk Web UI if needed. Use this field for single tenant setups as well, instead of https://api.snyk.io. See [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
-* **Ignore unknown CA**: ignore the SSL cert, if needed
-*   **Organization**: set the org to run `snyk test` against (similar to the `--org=` option in the CLI). Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
+* **Token**: Set the token that should be used for authentication with Snyk (see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugins.md)).
+* **Custom endpoint**: Specify the Snyk API endpoint for custom multi-tenant or single-tenant setup, The default is `https://api.snyk.io`. For details, see [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
+* **Ignore unknown CA**: Ignore the SSL cert, if needed
+*   **Organization**: Set the org to run `snyk test` against (similar to the `--org=` option in the CLI). Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 
     If not specified, the preferred Organization, as defined in your [web account settings](https://app.snyk.io/account), is used to run tests.
-*   **Additional parameters**: set additional `snyk test` [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for Open Source scanning.
+*   **Additional parameters**: Set additional `snyk test` [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for Open Source scanning.
 
     For **unmanaged** [**C/C++**](../../../supported-languages-package-managers-and-frameworks/c-c++/) **scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
-* **Snyk Open Source**: use to analyze the project for open source vulnerabilities through the CLI using Snyk Open Source; enabled by default.
-* **Snyk Infrastructure as Code**: use to analyze the project for insecure configurations in Terraform and Kubernetes code; enabled by default.
-* **Snyk Container vulnerabilities**: use to analyze the project for container vulnerabilities in container images and Kubernetes applications; enabled by default.
-* **Snyk Code Security issues**: use to analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
-* **Snyk Code Quality issues**: applies to Snyk Code only; disabled by default.
+* **Snyk Open Source**: Use to analyze the project for open source vulnerabilities through the CLI using Snyk Open Source; enabled by default.
+* **Snyk Infrastructure as Code**: Use to analyze the project for insecure configurations in Terraform and Kubernetes code; enabled by default.
+* **Snyk Container vulnerabilities**: Use to analyze the project for container vulnerabilities in container images and Kubernetes applications; enabled by default.
+* **Snyk Code Security issues**: Use to analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
+* **Snyk Code Quality issues**: Applies to Snyk Code only; disabled by default.
 * **Automatically manage needed binaries** and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
   * **CLI Path** specifies where the plugin searches for the CLI.
   * When **Automatically manage needed binaries** is checked, the plugin will download the CLI and updates regularly to the defined CLI Path. Uncheck this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules), and you need to obtain the CLI through other means.

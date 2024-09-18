@@ -6,7 +6,7 @@ You can set the following configuration options in the Snyk preferences.
 
 * `Snyk API Token`: Set the authentication token from Snyk.
 * `Path`: Specify your additions to the path to find needed third-party tools such as Gradle or Maven.
-* `Custom Endpoint`: Specify the custom endpoint for Single Tenant setups instead of `https://api.snyk.io`. See [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
+* `Custom Endpoint`: Specify the Snyk API endpoint for custom multi-tenant or single-tenant setup, The default is `https://api.snyk.io`. For details, see [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
 * `Allow unknown certificate authorities`: Disable certificate checks for SSL connections.
 * `Snyk Open Source enabled`: Enable or Disable Snyk Open Source Dependency Scans through Language Server. Default: `Enabled` during beta
 * `Snyk Code enabled`: Enable or Disable Snyk Code Scans via Language Server. Default: `Disabled` during beta.

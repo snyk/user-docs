@@ -23,25 +23,25 @@ If you are behind a proxy, configure the proxy settings using VS Code proxy sett
 After the extension is installed, you can set the following configuration options for the extension. Note: Be sure to review the **Advanced** setting **Organization**.&#x20;
 
 * **Features**
-  * **Code Security**: configure if code security analysis should run over your code.
-  * **Code Quality**: configure if code quality analysis should run over your code.
-  * **Open Source Security**: configure if security analysis should run over your open source dependencies.
-  * **Infrastructure as Code**: configure if security analysis should run over your IaC configuration files.
-* **Severity**: set severity level to display in the analysis result tree.
-* **Crash Report**: send error reports to Snyk.
-* **Telemetry**: send usage statistics to Snyk.
-* **Scanning Mode:** run Snyk scans automatically in the background (Code and IaC)
+  * **Code Security**: Configure if code security analysis should run over your code.
+  * **Code Quality**: Configure if code quality analysis should run over your code.
+  * **Open Source Security**: Configure if security analysis should run over your open source dependencies.
+  * **Infrastructure as Code**: Configure if security analysis should run over your IaC configuration files.
+* **Severity**: Set severity level to display in the analysis result tree.
+* **Crash Report**: Send error reports to Snyk.
+* **Telemetry**: Send usage statistics to Snyk.
+* **Scanning Mode:** Run Snyk scans automatically in the background (Code and IaC)
 * **Advanced**
-  * **Auto Scan Open Source Security**: run Snyk Open Source analysis in automatic mode.
-  * **Additional Parameters**: set additional `snyk test` [CLI options](../../../snyk-cli/commands/test.md) for the Open Source scanning. For **unmanaged** [**C/C++**](../../../supported-languages-package-managers-and-frameworks/c-c++/) **scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. For all .NET Projects, Snyk recommends adding the `--all-projects` additional parameter.\
+  * **Auto Scan Open Source Security**: Run Snyk Open Source analysis in automatic mode.
+  * **Additional Parameters**: Set additional `snyk test` [CLI options](../../../snyk-cli/commands/test.md) for the Open Source scanning. For **unmanaged** [**C/C++**](../../../supported-languages-package-managers-and-frameworks/c-c++/) **scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. For all .NET Projects, Snyk recommends adding the `--all-projects` additional parameter.\
     Additional parameters do not apply to Snyk Code or Snyk IaC.
-  * **Organization**: specify an Organization to run tests for that Organization. Snyk recommends using `ORG_ID`. If you specify an Organization slug name, the value of the Organization setting `snyk.advanced.organization` must be the ORG slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If not specified, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
-  * **Custom endpoint**: specify the custom Snyk API endpoint for your Organization. Use this field for the custom endpoint for Single Tenant setups instead of https://api.snyk.io. The custom endpoint must be in the format `https://api.eu.snyk.io`. See [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
-  *   **Proxy Strict SSL:** check to specify that the proxy server certificate should be verified against the list of supplied CAs specific to Snyk Code.\
+  * **Organization**: Specify an Organization to run tests for that Organization. Snyk recommends using `ORG_ID`. If you specify an Organization slug name, the value of the Organization setting `snyk.advanced.organization` must be the ORG slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If not specified, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
+  * **Custom endpoint**: Specify the Snyk API endpoint for custom multi-tenant or single-tenant setup, The default is `https://api.snyk.io`. For details, see [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
+  *   **Proxy Strict SSL:** Check to specify that the proxy server certificate should be verified against the list of supplied CAs specific to Snyk Code.\
       &#x20;&#x20;
 
       <figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt="roxy strict SSL option"><figcaption><p>Proxy strict SSL option</p></figcaption></figure>
-  * **Automatic Dependency Management** and **Cli Path**: uncheck to opt out of downloading the CLI through the plugin and thus use your own installation of the CLI. Snyk recommends always using the most recent version of the CLI.
+  * **Automatic Dependency Management** and **Cli Path**: Uncheck to opt out of downloading the CLI through the plugin and thus use your own installation of the CLI. Snyk recommends always using the most recent version of the CLI.
     * When **Automatic Dependency Management** is checked, the plugin will automatically download and keep the CLI updated.
     *   When **Automatic Dependency Management** is not checked and **Cli Path** contains a path, the plugin uses the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules), and you need to obtain the CLI through other means.
 
