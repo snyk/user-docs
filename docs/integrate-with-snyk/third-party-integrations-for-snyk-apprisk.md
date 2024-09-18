@@ -18,6 +18,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [Sysdig](third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide)
 * [Orca Security](third-party-integrations-for-snyk-apprisk.md#orca-security-setup-guide)
 * [CrowdStrike](third-party-integrations-for-snyk-apprisk.md#crowdstrike-setup-guide)
+* [SentinelOne](third-party-integrations-for-snyk-apprisk.md#sentinelone-setup-guide)
 
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
@@ -439,3 +440,62 @@ After generating the API Client following the [**Falcon Kubernetes Protection Ag
 {% hint style="info" %}
 After the CrowdStrike runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
 {% endhint %}
+
+## SentinelOne setup guide
+
+{% hint style="warning" %}
+**Release status**
+
+The SentinelOne integration is in Closed Beta and available with Snyk AppRisk Pro.
+
+If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
+The following risk factor is reported from the SentinelOne runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
+
+### Prerequisites <a href="#sentinelone-prerequisites" id="sentinelone-prerequisites"></a>
+
+* You must be a customer of Cloud Workload Protection Platform (CWPP).
+* Your SentinelOne license needs to include the following SKUs: `CWS for Containers`, `CWS for Serverless Containers` or `CWS for Servers`
+
+### Required parameters <a href="#sentinelone-required-parameters" id="sentinelone-required-parameters"></a>
+
+Navigate to the [SentinelOne Community](https://community.sentinelone.com) page for more details about the required parameters.&#x20;
+
+**Account IDs**
+
+1. Navigate to **Settings,** then **Accounts.**
+2. Select the account you want to integrate.
+3. Navigate to **ACCOUNT INFO.**
+4. Copy the **ACCOUNT ID.**
+
+**Site IDs**
+
+1. Navigate to **Settings,** then **Sites.**
+2. Select the site you want to integrate.
+3. Navigate to **SITE INFO.**
+4. Copy the **SITE ID.**
+
+**API token**
+
+1. Navigate to **Settings, Users,** then **Service Users.**
+2. Click on **Actions,** then **Create New Service User.**
+3. Give the new service user a name and a description, and select an Expiration Date for it. When the expiration date is reached, the integration will need to be reset.
+4. Select the desired Sites.
+5. Click on **Create User.**
+6. Enter your 2FA code.
+7. Copy the API Token.
+
+Alternatively, you can use an existing **API Token**.
+
+### Integration Hub setup <a href="#sentinelone-integration-hub-setup" id="sentinelone-integration-hub-setup"></a>
+
+* Open the **Integration Hub** menu.
+* Select the **CWPP** tag and search for **SentinelOne**.
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Add the **SentinelOne account IDs**.
+* Add the **SentinelOne site IDs**.
+* Add the **API token**.
+* Click the **Done** button.
+* When the connection is established, the status of the SentinelOne integration is changed to **Connected**.
