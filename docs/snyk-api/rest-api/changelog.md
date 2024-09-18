@@ -1,3 +1,32 @@
+## 2024-09-04
+
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+- removed the optional property `data/items/attributes/coordinates/items/representation` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `data/items/attributes/key` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `data/items/attributes/slots/exploit` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/items/attributes/severities/items/type` to the response with the `200` status
+
+- added the optional property `data/items/attributes/severities/items/version` to the response with the `200` status
+
+- added the optional property `data/items/attributes/slots/exploit_details` to the response with the `200` status
+
+- added the required property `data/items/attributes/coordinates/items/representations` to the response with the `200` status
+
+
+
+### POST - `/orgs/{org_id}/packages/issues` - Updated
+- removed the optional property `data/items/attributes/slots/exploit` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/items/attributes/severities/items/type` to the response with the `200` status
+
+- added the optional property `data/items/attributes/severities/items/version` to the response with the `200` status
+
+- added the optional property `data/items/attributes/slots/exploit_details` to the response with the `200` status
+
+
 ## 2024-08-25 - Updated 2024-09-11
 
 ### POST - `/orgs/{org_id}/apps` - Updated
