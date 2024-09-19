@@ -1,11 +1,5 @@
 # Git repositories with Maven and Gradle
 
-{% hint style="warning" %}
-**Release status: Improved Gradle SCM scanning - Early Access**
-
-You can now obtain more accurate results for your Gradle Projects imported through Git integrations by using Improved Gradle SCM scanning. this Early Access feature. This page has [details](git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access).
-{% endhint %}
-
 ## Git services available for Maven and Gradle Projects
 
 | Maven Projects                                                                                                                                                                                                                                                                                                                              | Gradle Projects                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -14,41 +8,41 @@ You can now obtain more accurate results for your Gradle Projects imported throu
 
 ## Improved Gradle SCM scanning
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **Release status**
 
 Improved Gradle SCM scanning is in Early Access.
 {% endhint %}
 
-Snyk has created a new approach for analyzing Gradle Projects imported through Git integrations, which provides significantly more accurate results. This feature is now in Early Access.
+You can now obtain more accurate results for your Gradle Projects imported through Git integrations by using Improved Gradle SCM scanning.
 
 ### Supported Gradle features&#x20;
 
 The following lists some of the main supported Gradle features:
 
-* [Groovy](https://docs.gradle.org/current/userguide/groovy\_build\_script\_primer.html) and [Kotlin](https://docs.gradle.org/current/userguide/kotlin\_dsl.html) DSLs - `build.gradle(.kts)` and `settings.gradle(.kts)`.
-* [Built-in](https://docs.gradle.org/current/userguide/declaring\_repositories.html#sec:declaring\_public\_repository) and [custom](https://docs.gradle.org/current/userguide/declaring\_repositories.html#sec:declaring\_custom\_repository) package repositories (for example, Artifactory, Nexus).
-* Built-in objects [`ext`](https://docs.gradle.org/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html), [`project`](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html), `rootProject`, and [`settings`](https://docs.gradle.org/current/dsl/org.gradle.api.initialization.Settings.html).
-* Local and global variables, maps, and string interpolation.
-* Gradle [lockfiles](https://docs.gradle.org/current/userguide/dependency\_locking.html).
-* [Gradle properties and system properties](https://docs.gradle.org/current/userguide/build\_environment.html#sec:gradle\_system\_properties) - `gradle.properties`.
-* [Dependency exclusions](https://docs.gradle.org/current/userguide/dependency\_downgrade\_and\_exclude.html#sec:excluding-transitive-deps).
-* Version catalogs declared in [Gradle](https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog-declaration) and [TOML](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) files - `gradle/libs.versions.toml`.
-* [Multi-project builds](https://docs.gradle.org/current/userguide/declaring\_dependencies\_between\_subprojects.html), project names, project references.
-* [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import).
-* Maven BOMs as [`platform`](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps) dependencies.
+* [Groovy](https://docs.gradle.org/current/userguide/groovy\_build\_script\_primer.html) and [Kotlin](https://docs.gradle.org/current/userguide/kotlin\_dsl.html) DSLs - `build.gradle(.kts)` and `settings.gradle(.kts)`
+* [Built-in](https://docs.gradle.org/current/userguide/declaring\_repositories.html#sec:declaring\_public\_repository) and [custom](https://docs.gradle.org/current/userguide/declaring\_repositories.html#sec:declaring\_custom\_repository) package repositories, or example, Artifactory, Nexus
+* Built-in objects [`ext`](https://docs.gradle.org/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html), [`project`](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html), `rootProject`, and [`settings`](https://docs.gradle.org/current/dsl/org.gradle.api.initialization.Settings.html)
+* Local and global variables, maps, and string interpolation
+* Gradle [lockfiles](https://docs.gradle.org/current/userguide/dependency\_locking.html)
+* [Gradle properties and system properties](https://docs.gradle.org/current/userguide/build\_environment.html#sec:gradle\_system\_properties) - `gradle.properties`
+* [Dependency exclusions](https://docs.gradle.org/current/userguide/dependency\_downgrade\_and\_exclude.html#sec:excluding-transitive-deps)
+* Version catalogs declared in [Gradle](https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog-declaration) and [TOML](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) files - `gradle/libs.versions.toml`
+* [Multi-project builds](https://docs.gradle.org/current/userguide/declaring\_dependencies\_between\_subprojects.html), project names, project references
+* [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import)
+* Maven BOMs as [`platform`](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps) dependencies
 
-Note that some Gradle features are not yet supported, and this may influence the scan results. These include:
+Some Gradle features are not supported, and this may influence the scan results. These Gradle features include:
 
-* Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing\_gradle\_projects.html#sec:build\_sources) directories.
+* Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing\_gradle\_projects.html#sec:build\_sources) directories
 * Dependencies introduced via [plugins](https://docs.gradle.org/current/userguide/plugins.html).
 
-If you see unexpected results from this Early Access feature, please raise a support ticket.
+If you see unexpected results from this Early Access feature, contact [Snyk support](https://support.snyk.io/hc/en-us).
 
 ### How to enable improved Gradle SCM scanning
 
 {% hint style="warning" %}
-Improved Gradle scanning supports importing a maximum limit of 5,000 `build.gradle(.kts)` files per git repository. Attempts to import repos with more than 5,000 Gradle build files will fail.
+Improved Gradle scanning supports importing a maximum limit of 5,000 `build.gradle(.kts)` files per Git repository. Attempts to import repos with more than 5,000 Gradle build files will fail.
 {% endhint %}
 
 To enable this feature, follow these steps for your Snyk Organisation:
@@ -57,7 +51,7 @@ To enable this feature, follow these steps for your Snyk Organisation:
 2. Enable [Workspaces for SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).
 3. Enable **Improved Gradle scanning** in Snyk Preview.
 
-After Improved Gradle scanning is enabled:
+After Improved Gradle SCM scanning is enabled:
 
 * Previously imported Git repositories will have existing Gradle Groovy DSL Projects automatically updated on the next manual or recurring test.
 * Re-import the repository to start seeing results for Gradle Kotlin DSL Projects.

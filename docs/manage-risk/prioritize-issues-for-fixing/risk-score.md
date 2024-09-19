@@ -1,7 +1,7 @@
 # Risk Score
 
 {% hint style="warning" %}
-**Release status and feature availability**
+**Release status**
 
 Risk Score is currently in [Early Access](../../getting-started/snyk-release-process.md) for Snyk Open Source and Snyk Container.
 

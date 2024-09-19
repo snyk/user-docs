@@ -1,9 +1,11 @@
 # Reachability
 
 {% hint style="warning" %}
-**Release status and feature availability**
+**Release status**
 
-Reachability analysis is available in [Early Access](../../getting-started/snyk-release-process.md#early-access) for some integrations and languages. To enable the feature in these cases, use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
+Reachability analysis is available in [Early Access](../../getting-started/snyk-release-process.md#early-access) for some integrations and languages.
+
+For information on how to enable the feature for supported integrations and languages, see [Snyk Preview](../../snyk-admin/snyk-preview.md).
 {% endhint %}
 
 Snyk Reachability analysis allows you to analyze risk by identifying whether your application is calling a function related to the vulnerability, thus raising the chances of that vulnerability being exploitable in the context of your application.

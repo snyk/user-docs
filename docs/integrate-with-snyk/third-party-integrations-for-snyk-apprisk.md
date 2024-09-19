@@ -72,7 +72,7 @@ Checkmarx is in Early Access and available with Snyk AppRisk Pro. If you want to
 Use the following instructions to set up your Checkmarx SAST integration. Checkmarx SAST integration is only working for the Checkmarx SAST, we are not yet supporting Checkmarx One.
 
 {% hint style="warning" %}
-Snyk AppRisk Pro does not currently support the Checkmarx One integration.
+Snyk AppRisk Pro does not support the Checkmarx One integration.
 {% endhint %}
 
 ### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>

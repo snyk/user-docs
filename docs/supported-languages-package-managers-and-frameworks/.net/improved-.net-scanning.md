@@ -3,8 +3,10 @@
 {% hint style="warning" %}
 **Release status and feature availability**
 
-Improved Snyk Open Source scanning for NuGet .NET applications is available only to customers on the [Enterprise plan](https://snyk.io/plans/). The feature is in [Early Access](../../getting-started/snyk-release-process.md#early-access).&#x20;
+Improved Snyk Open Source scanning for NuGet .NET applications is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only to customers on the [Enterprise plan](https://snyk.io/plans/). For more information, See [Plans and pricing](https://snyk.io/plans/).
+{% endhint %}
 
+{% hint style="info" %}
 While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations. For more information, see [Enterprise setup](https://docs.snyk.io/enterprise-configuration).
 
 You can report issues by submitting a [support ticket](https://support.snyk.io/hc/en-us/requests/new).
@@ -73,7 +75,7 @@ Example: `snyk test --dotnet-runtime-resolution --dotnet-target-framework=net8.0
 
 ## Supported .NET versions
 
-The improved .NET scanning feature supports all versions of .NET core that are [currently supported](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core) by Microsoft.
+The improved .NET scanning feature supports all versions of .NET core that are [supported](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core) by Microsoft.
 
 If you import an unsupported .NET Project using an SCM integration, the improved .NET scanning feature will not be enabled and will fall back to the legacy scanning method.
 

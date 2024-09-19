@@ -1,9 +1,11 @@
 # Automatically created Project collections
 
-{% hint style="danger" %}
-**Release status and feature availability**\
-Automated Collections are in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. [Limitations](automatically-created-project-collections.md#limitations) apply.\
-For more information, see [Plans and pricing](https://snyk.io/plans).
+{% hint style="warning" %}
+**Release status and feature availability**
+
+Automated Collections are in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
+
+For more information, see [Limitations of Automated Collections](automatically-created-project-collections.md#limitations-of-automated-collections).
 {% endhint %}
 
 Scanning a repository through an SCM integration and rescanning it using the Snyk CLI creates duplicate Targets within the Snyk Web UI with duplicate Projects and issues. These may not be exact duplicates.&#x20;
@@ -43,7 +45,7 @@ Automatically created collections have no management options available:
 * You cannot add new Projects to an automated collection. Its content updates itself when new Projects with the same repo URL are imported.
 * You cannot delete an automatically created collection. You can turn off the Automated Collections feature, which will remove all automatically created collections.
 
-## Limitations
+## Limitations of Automated Collections
 
 * Automated Collections does not detect [SAST](../../getting-started/glossary.md#sast) scans pushed to the Snyk Web UI using the `snyk code test --report --project-name="name"` command.
 * This feature supports only GitHub, GitHub Enterprise, GitLab, Bitbucket Cloud, and Azure integration scans.

@@ -42,8 +42,8 @@ Not all features follow all these stages, and timelines for each feature to move
   * [Risk Score](../manage-risk/prioritize-issues-for-fixing/risk-score.md)
   * [Reachabilty analysis](../manage-risk/prioritize-issues-for-fixing/reachability.md)
 * Snyk Broker
-* [Snyk Broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
-* [Universal Broker](../enterprise-setup/snyk-broker/universal-broker/)
+  * [Snyk Broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
+  * [Universal Broker](../enterprise-setup/snyk-broker/universal-broker/)
 * Language support
   * [Improved .NET scanning](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
   * [Snyk CLI pnpm support](../supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm)

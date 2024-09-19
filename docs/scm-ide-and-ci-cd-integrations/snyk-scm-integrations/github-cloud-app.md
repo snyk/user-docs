@@ -1,7 +1,9 @@
 # GitHub Cloud App
 
 {% hint style="warning" %}
-**Release status and feature availability**
+**Release status**
+
+
 
 The GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). \
 This feature is not supported for Snyk Broker.

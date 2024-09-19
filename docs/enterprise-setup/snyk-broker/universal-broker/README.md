@@ -1,6 +1,6 @@
 # Universal Broker
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **Release status**\
 Universal Broker is in Early Access. If you would like to use this feature, contact your Snyk team.
 {% endhint %}
