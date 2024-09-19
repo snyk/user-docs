@@ -10,7 +10,7 @@ This example shows how a security team can:
 * Use GitHub Actions to add different development-time steps to their pipelines
 * Configure a different GitHub repository to run a GitHub Action pipeline that uses the custom rules to gate changes.
 
-Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository for the example; this repo contains all the custom rules written while [getting started with the SDK](../../../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/writing-rules-using-the-sdk/).
+Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository for the example; this repo contains all the custom rules written while [getting started with the SDK](writing-rules-using-the-sdk/).
 
 **Aims:** Configure our pipeline to:
 
@@ -21,7 +21,7 @@ Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-e
 
 ## Adding PR checks using GitHub Action
 
-An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where there is an attempt to add a new rule called `my_rule`. This is the same rule shown for [learning how to write a rule](../../../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/writing-rules-using-the-sdk/writing-a-rule.md).
+An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where there is an attempt to add a new rule called `my_rule`. This is the same rule shown for [learning how to write a rule](writing-rules-using-the-sdk/writing-a-rule.md).
 
 To verify that this rule works as expected, unit tests were implemented. To run the unit tests as part of PR checks, a GitHub Action was configured previously under `.github/workflows` called `test.yml`:
 
@@ -56,7 +56,7 @@ jobs:
 A few things to note about this workflow:
 
 * It was configured to run on all non-`main` branches, so that it runs when PRs are open.
-* Steps were added steps to set up a Node.js environment to enable installing the `snyk-iac-rules` SDK using [npm](../../../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/install-the-sdk.md#install-the-sdk-with-npm).
+* Steps were added steps to set up a Node.js environment to enable installing the `snyk-iac-rules` SDK using [npm](install-the-sdk.md#install-the-sdk-with-npm).
 * A step was added to run `snyk-iac-rules test`, which will cause the PR check to fail if any of the tests fail.
 
 {% hint style="info" %}
@@ -146,7 +146,7 @@ jobs:
 It looks like the previous workflow, but there are a few things to note about this one:
 
 * It was configured to run only on `main` branches, so that it runs when PRs are merged.
-* A step was added to authenticate with Docker Hub, our chosen OCI registry. For a list of supported registries, read about [pushing bundles](../../../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/writing-rules-using-the-sdk/pushing-a-bundle.md). Use the [docker/login-action](https://github.com/docker/login-action) GitHub Action to do that and be sure to configure the GitHub secrets under `Settings` -> `Secrets`.
+* A step was added to authenticate with Docker Hub, our chosen OCI registry. For a list of supported registries, read about [pushing bundles](writing-rules-using-the-sdk/pushing-a-bundle.md). Use the [docker/login-action](https://github.com/docker/login-action) GitHub Action to do that and be sure to configure the GitHub secrets under `Settings` -> `Secrets`.
 * A step was added to run `snyk-iac-rules build` followed by `snyk-iac-rules push`, which will publish the generated custom rules bundle to an OCI registry.
 
 ## Versioning rules
@@ -174,7 +174,9 @@ Ensure that the OCI\_REGISTRY\_NAME configured in the GitHub Secrets does not al
 
 ## Enforcing the custom rules
 
-After publishing the custom rules to an OCI registry, you can configure a separate pipeline to use these rules. One way to do this is by using the [Update the Infrastructure as Code settings for a group API](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/groups/-group\_id-/settings/iac).
+After publishing the custom rules to an OCI registry, you can configure a separate pipeline to use these rules.
+
+One way to do this is by using the API endpoint [Update the Infrastructure as Code settings for a group](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/groups/-group\_id-/settings/iac).
 
 This means configuring the GitHub Action above with another job for updating Snyk to use the configured custom rules bundle:
 
@@ -201,7 +203,7 @@ This means configuring the GitHub Action above with another job for updating Sny
 This API call will update the chosen Snyk Group and all the Organizations underneath it to use the configured custom rules bundle.
 
 {% hint style="info" %}
-For now, to configure an Organization to use a different bundle, such as the `v2-beta` one, you must use the Snyk Settings page. You can either configure a new bundle or disable custom rules to allow using environment variables in the CI/CD pipeline to run the custom rules.
+To configure an Organization to use a different bundle, such as the `v2-beta` one, use the Snyk Settings page. You can either configure a new bundle or disable custom rules to allow using environment variables in the CI/CD pipeline to run the custom rules.
 {% endhint %}
 
 In a different repository, authenticate with one of the Organizations underneath this Group and add the Snyk IaC GitHub Action to a workflow:
