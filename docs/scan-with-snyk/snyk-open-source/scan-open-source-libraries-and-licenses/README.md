@@ -6,7 +6,7 @@ You can scan your open-source libraries using Snyk Open Source:&#x20;
 * With your [IDE](https://docs.snyk.io/integrations/ide-tools)
 * With a [CI/CD integration](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/)
 * Through the [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
-* Through [Snyk API](../../../snyk-api/)
+* Through the [Snyk API](../../../snyk-api/reference/test-v1.md)
 
 ## Prerequisites for using Snyk Open Source in the Web UI
 
