@@ -2,10 +2,10 @@
 
 Use [Snyk reports](../../manage-issues/reporting/legacy-reports/) to view issues in your IaC configuration files.
 
-{% hint style="success" %}
-**Availability**\
-IaC issue reports are available for all paid plans. \
-For more information, see [Plans and pricing](https://snyk.io/plans).
+{% hint style="info" %}
+**Feature availability**
+
+IaC issue reports are available for all paid plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 ## Summary page
@@ -40,7 +40,7 @@ Use the **Export button to export issues** as a CSV file in the same format as y
 
 ## API access to IaC issues
 
-You can see the full list of issues by using the V1 API [Get list of latest issues ](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1)endpoint.
+You can see the full list of issues by using the API endpoint [Get list of latest issues](../../snyk-api/reference/reporting-api-v1.md#reporting-issues-latest).
 
 To retrieve only your Infrastructure as Code issues, submit a body payload:
 
@@ -59,4 +59,4 @@ To retrieve only your Infrastructure as Code issues, submit a body payload:
 You can obtain your **public-org-id** from the Snyk UI **Settings** page when you view your target Organization.
 {% endhint %}
 
-For the full list of parameters, see the [migrated Latest issues API documentation](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1).
+For the full list of parameters, see the documentation for the API endpoint [Get list of latest issues](../../snyk-api/reference/reporting-api-v1.md#reporting-issues-latest).
