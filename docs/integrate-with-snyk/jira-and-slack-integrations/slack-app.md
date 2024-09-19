@@ -108,7 +108,7 @@ After a notification customization has been created, you can edit its configurat
 
 ## Manage notification customizations using the REST API
 
-To override Slack notification settings on a per-Project basis, you can use a set of [Snyk REST API](https://apidocs.snyk.io/) endpoints.
+To override Slack notification settings on a per-Project basis, you can use the API [Slack settings ](../../snyk-api/reference/slacksettings.md)endpoints.
 
 Before attempting to use these endpoints, ensure that you have retrieved your authentication token and Organization ID (`org_id`) as outlined in the steps of the [guide for getting started using Snyk REST API.](../../snyk-api/rest-api/getting-started-with-rest-api.md)
 
@@ -116,9 +116,9 @@ Before attempting to use these endpoints, ensure that you have retrieved your au
 
 #### Find the Slack App Bot ID
 
-To interact with the Project-level notification customization endpoints, you must have a `bot_id`. You can obtain it with a request to the [Get a list of apps installed for an organization ](https://apidocs.snyk.io/get-/orgs/-org\_id-/apps/installs#get-/orgs/-org\_id-/apps/installs)endpoint.
+To interact with the Project-level notification customization endpoints, you must have a `bot_id`. You can obtain it with a request to the endpoint [Get a list of apps installed for an organization](../../snyk-api/reference/apps.md#orgs-org\_id-apps-installs-1).
 
-GET /orgs/{org\_id}/apps/installs
+`GET /orgs/{org_id}/apps/installs`
 
 {% hint style="info" %}
 Ensure you apply the `expand=app` query string on your request. This enables you to find the Bot for the related Snyk App named **Slack App**.
@@ -126,7 +126,7 @@ Ensure you apply the `expand=app` query string on your request. This enables you
 
 #### Find your Project ID
 
-To target the desired Project, you must have its `project_id`. This can be obtained with a GET request to the [List all Projects for an Org](https://apidocs.snyk.io/?version=2023-08-04#get-/orgs/-org\_id-/projects) endpoint:
+To target the desired Project, you must have its `project_id`. You can obtain this with a GET request to the endpoint [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects.md#orgs-org\_id-projects):
 
 GET [/orgs/{org\_id}/projects](https://apidocs.snyk.io/?version=2023-08-04#get-/orgs/-org\_id-/projects)
 
@@ -134,21 +134,21 @@ GET [/orgs/{org\_id}/projects](https://apidocs.snyk.io/?version=2023-08-04#get-/
 
 After retrieving the `org_id`, `bot_id`, and `project_id` values, you can use the following create, read, update, and delete API operations:
 
-#### List all  Slack notification customizations for Projects
+#### [List all  Slack notification customizations for Projects](../../snyk-api/reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects)
 
-GET [/orgs/{org\_id}/slack\_app/{bot\_id}/projects](https://apidocs.snyk.io/?version=2023-08-04#get-/orgs/-org\_id-/slack\_app/-bot\_id-/projects)
+`GET /orgs/{org_id}/slack_app/{bot_id}/projects`
 
-#### Create a Slack notification customization for a Project
+#### [Create a Slack notification customization for a Project](../../snyk-api/reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id)
 
-POST [/orgs/{org\_id}/slack\_app/{bot\_id}/projects/{project\_id}](https://apidocs.snyk.io/?version=2023-08-04#post-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+`POST /orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}`
 
-#### Update a Slack notification customization for a Project
+#### [Update a Slack notification customization for a Project](../../snyk-api/reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-1)
 
-PATCH [/orgs/{org\_id}/slack\_app/{bot\_id}/projects/{project\_id}](https://apidocs.snyk.io/?version=2023-08-04#patch-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+`PATCH /orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}`
 
-#### Delete a Slack notification customization for a Project
+#### [Delete a Slack notification customization for a Project](../../snyk-api/reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-2)
 
-DELETE [/orgs/{org\_id}/slack\_app/{bot\_id}/projects/{project\_id}](https://apidocs.snyk.io/?version=2023-08-04#delete-/orgs/-org\_id-/slack\_app/-bot\_id-/projects/-project\_id-)
+`DELETE /orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}`
 
 ## Remove the Snyk app for Slack
 
