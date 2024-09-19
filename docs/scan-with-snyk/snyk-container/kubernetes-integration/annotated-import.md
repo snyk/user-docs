@@ -19,7 +19,7 @@ After you have configured the integration between Snyk and your cluster, you can
 {% hint style="info" %}
 The annotated import occurs when the image itself changes (the workload is rescanned due to image change) or when the workload details change (which creates a new revision of the workload). Changing the annotation for the workload does not cause a workload change.
 
-If the workload is annotated only after it has been scanned with `snyk monitor`, the annotation is not recognized until a significant change takes place that causes a full rescan. One way to force a rescan is to terminate the `snyk monitor` pod.
+If the workload is only annotated after it has been scanned with `snyk monitor`, the annotation is not recognized until a significant change takes place that causes a full rescan. One way to force a rescan is to terminate the `snyk monitor` pod.
 {% endhint %}
 
 You can annotate any of the following workload types:
@@ -64,4 +64,4 @@ spec:
 
 To annotate for multiple Organizations, use a comma-separated list.
 
-2. After it is imported, the Project remains in your Snyk Organization even if you remove the annotation. To remove the Project from Snyk, you must delete the annotation and delete the Project from the Snyk UI or by using the API endpoint [Delete a project](../../../snyk-api/reference/projects-v1.md#org-orgid-project-projectid-2).
+2. After it was imported, the Project remains in your Snyk Organization even if you remove the annotation. To remove the Project from Snyk, you must delete the annotation and delete the Project from the Snyk UI or [with the API](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project).
