@@ -18,7 +18,6 @@ Not all features follow all these stages, and timelines for each feature to move
 
 * [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 * [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
-* [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
 * Third-party integrations for Snyk AppRisk:
   * [Nightfall](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide)
   * [Dynatrace](../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide)
@@ -43,6 +42,7 @@ Not all features follow all these stages, and timelines for each feature to move
   * [Reachabilty analysis](../manage-risk/prioritize-issues-for-fixing/reachability.md)
 * Snyk Broker
   * [Snyk Broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
+  * [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
   * [Universal Broker](../enterprise-setup/snyk-broker/universal-broker/)
 * Language support
   * [Improved .NET scanning](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)

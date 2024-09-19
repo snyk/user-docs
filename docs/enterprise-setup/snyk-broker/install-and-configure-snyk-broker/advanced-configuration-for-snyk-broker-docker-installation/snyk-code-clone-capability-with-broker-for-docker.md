@@ -3,9 +3,9 @@
 {% hint style="warning" %}
 **Release status**&#x20;
 
-The environment variable to enable Git clone capabilities is in [Closed Beta](../../../../getting-started/snyk-release-process.md). However, it is the preferred way to run Snyk Code analysis through the Broker and is fully capable.&#x20;
+The environment variable to enable Git clone capabilities is in Early Access.It is the preferred way to run Snyk Code analysis through the Broker and is fully capable.&#x20;
 
-If you are interested in using the feature, contact your Snyk account team.
+If you would like to use this feature, contact your Snyk account team.
 {% endhint %}
 
 Brokered Snyk Code enables the Broker to accept code files, and the Broker then scans between the SCM system and Snyk.
