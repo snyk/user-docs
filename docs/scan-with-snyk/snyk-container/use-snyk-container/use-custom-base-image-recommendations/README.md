@@ -52,7 +52,7 @@ The following steps explain how to configure custom base images. The team that i
 4. If you want Snyk to use this image as a source to determine the best upgrade path, enable **Include in recommendations**.
 
 {% hint style="info" %}
-You can also do this using the Snyk REST API endpoint [Create a Custom Base Image from an existing container Project](https://apidocs.snyk.io/?#post-/custom\_base\_images).
+You can also do this using the API endpoint [Create a Custom Base Image from an existing container Project](../../../../snyk-api/reference/custom-base-images.md#custom\_base\_images).
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt="Enable Custom Base Image"><figcaption><p>Enable Custom Base Image</p></figcaption></figure>
@@ -89,7 +89,7 @@ Use `--file` (mandatory) to specify the path to the Dockerfile.
 
 You can modify previously imported container Projects in order to attach a Dockerfile.
 
-On the Project page of the application image, navigate to **Settings** and configure the Dockerfile by clicking **Configure Dockerfile** and selecting your source control system from the dropdown.
+On the Project page for the application image, navigate to **Settings** and configure the Dockerfile by clicking **Configure Dockerfile** and selecting your source control system from the dropdown.
 
 <figure><img src="../../../../.gitbook/assets/configure_project_dockerfile (1).png" alt=""><figcaption><p>Configure the Project Dockerfile</p></figcaption></figure>
 
