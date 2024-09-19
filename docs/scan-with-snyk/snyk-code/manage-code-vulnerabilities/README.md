@@ -8,7 +8,7 @@ Before managing vulnerabilities with Snyk Code, ensure the following:
 * Your repositories contain code in a [supported language and platform](../../../supported-languages-package-managers-and-frameworks/).&#x20;
 * You have [configured Snyk Code](../configure-snyk-code.md).
 
-## How Project testing works for Snyk Code
+## How Project testing for Snyk Code works
 
 Each time a Project is tested, Snyk Code takes a snapshot of the repository in its current state and analyzes it to find vulnerabilities.  All the files that contain source code that Snyk Code can analyze are aggregated in the Code analysis.
 
@@ -16,7 +16,7 @@ When you import a repository, Snyk creates a Target folder that contains differe
 
 Snyk Code creates a single Project for all the imported files from a repository. This aggregates vulnerabilities detected in the repository code into one Project, presenting the data flow of a vulnerability issue across multiple files.
 
-Automate importing multiple repositories using [Snyk API v1 Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets).
+Automate importing multiple repositories using the API endpoint [Import targets](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
 
 ## Code testing from import to retest
 
