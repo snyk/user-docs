@@ -1,9 +1,11 @@
 # Risk Score
 
 {% hint style="warning" %}
-**Release status**
+**Release status and feature availability**
 
-Risk Score is currently in [Early Access](../../getting-started/snyk-release-process.md) for Snyk Open Source and Snyk Container. Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
+Risk Score is currently in [Early Access](../../getting-started/snyk-release-process.md) for Snyk Open Source and Snyk Container.
+
+Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
 
 The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not currently supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
@@ -275,7 +277,7 @@ Building on [past studies](https://arxiv.org/pdf/2301.07972.pdf), Snyk research 
 
 #### Reachability&#x20;
 
-Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. For more information, see [Reachable vulnerabilities](reachable-vulnerabilities.md).\
+Snyk static code analysis determines whether the vulnerable method is being called. This is currently supported only in Java; JavaScript support is coming soon. For more information, see [Reachable vulnerabilities](reachability.md).\
 When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.
 
 | Possible input values | Score impact                                                            |

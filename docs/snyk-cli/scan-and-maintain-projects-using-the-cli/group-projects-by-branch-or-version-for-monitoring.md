@@ -5,7 +5,7 @@
 
 Grouping Projects by branch or version is in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. The feature is supported for Open Source. In some areas, the feature is not fully supported.
 
-For more information, see [Pricing plans](https://snyk.io/plans).
+For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 Your Project may have multiple states that you want to monitor separately, for example, branches, releases, or deployments. You can use the `--target-reference` option to separate Projects into these specific groupings.

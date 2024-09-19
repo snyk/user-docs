@@ -1,6 +1,8 @@
 # Snyk Broker - commit signing
 
-{% hint style="info" %}
+{% hint style="danger" %}
+**Release status and feature availability**
+
 Snyk Broker commit signing is in [Early Access](../../getting-started/snyk-release-process.md#open-beta). If you are interested in using this feature, contact your Snyk representative or team.
 {% endhint %}
 

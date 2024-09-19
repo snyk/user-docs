@@ -1,9 +1,9 @@
 # Snyk Code custom rules
 
 {% hint style="warning" %}
-**Release status**&#x20;
+**Release status and feature availability**
 
-Snyk Code custom rules are [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans.
+Snyk Code custom rules are [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
 For information on how to enable the feature, see [Snyk Preview](../../../snyk-admin/snyk-preview.md).
 {% endhint %}
@@ -11,7 +11,7 @@ For information on how to enable the feature, see [Snyk Preview](../../../snyk-a
 Create custom rules to run queries against the code stack as part of your investigation workflow. Use custom rules, as follows:
 
 * Define a custom vulnerable method ([Sink](./#sink)) that security teams may be worried about.
-* Create regular expression scans to check for use of secrets and credentials that should not be part of the code.
+* Create regular expression scans to check for the use of secrets and credentials that should not be part of the code.
 * Determine whether certain unwanted methods are being called within the code base that are deemed unsafe by the security teams.
 * After creating a query, test it against a [code snippet](run-query.md#run-query-on-a-code-snippet) or [repository](run-query.md#run-query-on-a-repository) you have previously imported to Snyk. This way, you can see the results of your query before you run regular scans. You can use this feature to validate a rule before pushing it to production and ensure that it provides the expected results.
 

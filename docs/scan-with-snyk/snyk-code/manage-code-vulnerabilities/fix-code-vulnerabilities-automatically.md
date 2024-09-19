@@ -1,7 +1,7 @@
 # Fix code vulnerabilities automatically
 
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="danger" %}
+**Release status  and feature availability**
 
 DeepCode AI Fix is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) for anyone to try in the IDE.
 

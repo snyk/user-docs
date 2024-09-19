@@ -288,7 +288,7 @@ An external item scanned by Snyk with configuration to define how to run that sc
 
 ### Reachability
 
-Whether an application contains code that will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-risk/prioritize-issues-for-fixing/reachable-vulnerabilities.md).
+Whether an application contains code that will hit a vulnerable code path during execution. See [Reachable vulnerabilities](../manage-risk/prioritize-issues-for-fixing/reachability.md).
 
 ### Registry
 

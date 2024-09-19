@@ -1,6 +1,12 @@
 # Reachability
 
-&#x20;Snyk Reachability analysis allows you to analyze risk by identifying whether your application is calling a function related to the vulnerability, thus raising the chances of that vulnerability being exploitable in the context of your application.
+{% hint style="warning" %}
+**Release status and feature availability**
+
+Reachability analysis is available in [Early Access](../../getting-started/snyk-release-process.md#early-access) for some integrations and languages. To enable the feature in these cases, use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
+{% endhint %}
+
+Snyk Reachability analysis allows you to analyze risk by identifying whether your application is calling a function related to the vulnerability, thus raising the chances of that vulnerability being exploitable in the context of your application.
 
 Reachability can be used as a standalone signal to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.&#x20;
 
@@ -8,9 +14,9 @@ Snyk uses a combination of program analysis and various AI techniques to determi
 
 The following instructions explain how to set up and use reachability and provide more information on how the underlying analysis works at Snyk.&#x20;
 
-## Set up Reachability
+## Set up Reachability analysis
 
-Follow these steps to enable reachability and begin analyzing Projects for reachable vulnerabilities:&#x20;
+Follow these steps to enable Reachability analysis and begin analyzing Projects for reachable vulnerabilities:&#x20;
 
 * In the Organization **Settings**, navigate to the **Languages** section.
 * In the **General** section, find **Reachable vulnerabilities**.
@@ -25,12 +31,6 @@ To update existing Projects with Reachability immediately, trigger a [manual tes
 {% endhint %}
 
 ## Supported languages and integrations
-
-{% hint style="warning" %}
-**Release status**&#x20;
-
-Reachability is available in [Early Access](../../getting-started/snyk-release-process.md#early-access) for some integrations and languages. To enable the feature in these cases, use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
-{% endhint %}
 
 Reachability is supported for the following languages and package managers:
 
@@ -57,9 +57,9 @@ Reachability analysis using the Snyk CLI, IDE, or other integrations is not supp
 
 ## **Enabling Reachability for brokered connections**
 
-If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See the [Snyk Code - Clone capability with Broker for Docker](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md), the [Broker rules for Snyk Code](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/broker-rules-for-snyk-code.md), and the [Snyk Broker - Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/) documentation for configuration details when the Broker is used with Snyk Code.&#x20;
+If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See the [Snyk Code - Clone capability with Broker for Docker](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md), the [Broker rules for Snyk Code](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/broker-rules-for-snyk-code.md), and the [Snyk Broker - Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/) documentation for configuration details when Broker is used with Snyk Code.&#x20;
 
-## Using Reachability
+## Using Reachability analysis
 
 ### Reachability status&#x20;
 
@@ -72,7 +72,7 @@ After a vulnerability is identified, it has one of the following reachability st
 If a `NO PATH FOUND` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
 {% endhint %}
 
-Reachability status is available [on the Project page](reachable-vulnerabilities.md#on-the-project-page), [as part of the Risk Score](reachable-vulnerabilities.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the [Get issues by group id](../../snyk-api/reference/issues.md#groups-group\_id-issues) API.&#x20;
+Reachability status is available [on the Project page](reachability.md#on-the-project-page), [as part of the Risk Score](reachability.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the [Get issues by group id](../../snyk-api/reference/issues.md#groups-group\_id-issues) API.&#x20;
 
 ### Reachability as shown on the Project page
 
@@ -100,7 +100,7 @@ Risk Score is available on the Projects page and through the API and Reports.&#x
 [Priority score](priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;
 {% endhint %}
 
-## Reachable vulnerability analysis&#x20;
+## How Reachable vulnerability analysis works
 
 Snyk uses a combination of security expert analysis, program analysis, and various AI techniques to determine the reachability of a vulnerability, including these steps of analysis:&#x20;
 

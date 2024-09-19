@@ -1,6 +1,6 @@
 # Automatically created Project collections
 
-{% hint style="info" %}
+{% hint style="danger" %}
 **Release status and feature availability**\
 Automated Collections are in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. [Limitations](automatically-created-project-collections.md#limitations) apply.\
 For more information, see [Plans and pricing](https://snyk.io/plans).
