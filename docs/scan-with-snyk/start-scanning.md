@@ -30,7 +30,7 @@ The default **scanning frequency** and available frequencies vary depending on t
 
 The Snyk API offers a set of endpoints to test your code. Scans are counted when calls are made to the test endpoint.
 
-For details, see the API [Test](../snyk-api/reference/test-v1.md) endpoints.
+For details, see the API [Test](../snyk-api/reference/test-v1.md) endpoint documentation.
 
 ## Using PR Checks
 
