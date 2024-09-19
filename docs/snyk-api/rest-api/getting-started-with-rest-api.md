@@ -23,7 +23,7 @@ curl --request GET \
 {% hint style="info" %}
 Note that the API URL is different for different regions. For a complete list, see [API URLs](about-the-rest-api.md#api-url).
 
-As an example, `SNYK-US-02`region's API urls will be the following:
+As an example, the`SNYK-US-02`region API URLs will be the following:
 
 * **API v1:** https://api.us.snyk.io/v1/&#x20;
 * **REST** API: https://api.us.snyk.io/rest/&#x20;
