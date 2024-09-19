@@ -1,7 +1,7 @@
 # Scanning overview
 
 {% hint style="info" %}
-Scans may be limited on your account, depending on your[ Pricing Plan](../implement-snyk/enterprise-implementation-guide/trial-limitations.md). See [What counts as a scan?](../working-with-snyk/what-counts-as-a-test.md) for more information.
+Scans may be limited on your account, depending on your[ Pricing Plan](../implement-snyk/enterprise-implementation-guide/trial-limitations.md). For more information, see [What counts as a test?](../working-with-snyk/what-counts-as-a-test.md)
 {% endhint %}
 
 Snyk takes a developer-first approach to secure your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. This approach allows you to:
