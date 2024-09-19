@@ -5,7 +5,7 @@ With Snyk Infrastructure as Code (IaC), you can secure cloud infrastructure conf
 {% hint style="info" %}
 The version referred to as **Current IaC** in this documentation is the generally available version of Snyk IaC.
 
-The version referred to as I**aC+** has been in closed beta and continues to be used by customers in that closed beta. Other customers should refer to the Current IaC documentation. Additional information will be provided.
+The version referred to as **IaC+** has been in closed beta and continues to be used by customers in that closed beta. Other customers should refer to the Current IaC documentation. Additional information will be provided.
 {% endhint %}
 
 With both versions of Snyk IaC, you can:
@@ -13,7 +13,7 @@ With both versions of Snyk IaC, you can:
 * Write secure configurations for [HashiCorp Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/), and [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md) - for IDE, SCM, CLI, and Terraform Cloud/Enterprise workflows.
 * View issues and receive [fix advice](getting-started-with-current-iac.md) so you can make changes directly to code, before applications reach production.
 * [Detect drift](iac+-code-to-cloud-capabilities/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.
-* **Onboard, scan, and test deployed cloud environments** for misconfigurations for AWS, Azure, and Google Cloud environments.
+* Onboard, scan, and test deployed cloud environments for misconfigurations for AWS, Azure, and Google Cloud environments.
 
 IaC+ is built on a new engine and ruleset that also powers Snyk IaC’s cloud scanning capabilities. IaC+ enables the following:
 
@@ -30,6 +30,6 @@ IaC+ also adds support for “code to cloud” use cases that work with Snyk IaC
 * [Fix Cloud issues](iac+-code-to-cloud-capabilities/fix-cloud-issues-in-iac.md) directly in the IaC source code that was used to deploy the misconfigured cloud resources by linking a cloud issue to the underlying IaC template with an SCM source code link.
 * Suppress false positives in IaC tests by applying [context from deployed infrastructure](iac+-code-to-cloud-capabilities/add-cloud-context-to-your-iac-tests.md).
 * For Terraform, apply the same custom rule across the entire SDLC for all workflows (IaC to cloud).
-* View an inventory of IaC and cloud resources generated from your IaC files via the [List resources API](https://apidocs.snyk.io/?version=2023-09-20%7Ebeta#get-/orgs/-org\_id-/cloud/resources).
+* View an inventory of IaC and cloud resources generated from your IaC files using the API endpoint [List resources](https://apidocs.snyk.io/?version=2023-09-20%7Ebeta#get-/orgs/-org\_id-/cloud/resources).
 
 For a list of supported IaC languages and cloud providers, see [Supported IaC and cloud providers](supported-iac-languages-cloud-providers-and-cloud-resources/).
