@@ -18,7 +18,7 @@ By scanning artifacts as part of your workflow and then displaying those test re
 **Note**\
 This page refers to the Artifactory Plugin, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance.
 
-This plugin is separate from the [Artifactory Registry for Maven](../../scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md), a Snyk integration that allows configuring SCM scans to use custom package registries.
+This plugin is separate from the [Artifactory Registry for Maven](../../package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md), a Snyk integration that allows configuring SCM scans to use custom package registries.
 {% endhint %}
 
 ## Package managers supported by the Artifactory Plugin
@@ -45,7 +45,7 @@ Snyk calls [`https://api.snyk.io/v1/test`](https://api.snyk.io/v1/test) for the 
 ## Installation of the Artifactory Plugin
 
 1. Log in to your Snyk account.
-2. Select **Settings**  > **General** to locate, copy, and save the following:
+2. Select **Settings** > **General** to locate, copy, and save the following:
    1. Service account token or Organization API token
    2. The Organization ID for any one of your organizations
 3. Navigate to [the Snyk Artifactory plugin repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and then to the **Releases**.

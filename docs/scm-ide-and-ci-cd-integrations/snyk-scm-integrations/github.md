@@ -58,9 +58,9 @@ You can then scroll down to the section required, and set the options accordingl
 
 * [General settings](github.md#github-integration-general-settings)
 * Pull requests:
-  * [Opening fix and upgrade pull requests from a fixed GitHub account](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
+  * [Opening fix and upgrade pull requests from a fixed GitHub account](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
   * [Automatic fix PRs](github.md#project-monitoring-and-automatic-fix-pull-requests)
-  * [Automatic dependency upgrade PRs](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/)
+  * [Automatic dependency upgrade PRs](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/)
   * [Pull request assignees](github.md#pr-assignment)
   * [Snyk vulnerability patches](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
 * Pull request status checks ([PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/))
@@ -115,7 +115,7 @@ The example that follows shows a fix pull request opened by Snyk.
 
 To review and adjust the automatic fix pull request settings in the Snyk GitHub Integration settings page, navigate to Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
-Scroll down to the **Automatic fix PRs** section and set the options. For definitions, see [Configure automatic fix PRs at the integration level](../../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md#configure-automatic-fix-prs-at-the-integration-level).
+Scroll down to the **Automatic fix PRs** section and set the options. For definitions, see [Configure automatic fix PRs at the integration level](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md#configure-automatic-fix-prs-at-the-integration-level).
 
 <div align="left">
 
@@ -159,7 +159,7 @@ Operations that are not triggered through the Snyk Web UI, such as daily and wee
 For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
 
 {% hint style="info" %}
-A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
+A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
 
 Note that Snyk will continue to use a random Snyk Organization member's GitHub account to perform all the other operations. Therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
 {% endhint %}

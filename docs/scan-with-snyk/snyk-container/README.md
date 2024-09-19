@@ -1,7 +1,7 @@
 # Snyk Container
 
 {% hint style="info" %}
-To start scanning your container images, see [Scan container images](../../scan-using-snyk/snyk-container/scan-container-images.md).
+To start scanning your container images, see [Scan container images](scan-container-images.md).
 {% endhint %}
 
 Containers provide a standard packaging format for applications, but container images can be opaque. This can lead to problems when identifying the software and the vulnerabilities they contain.
@@ -18,4 +18,4 @@ Snyk Container provides tools and integrations to quickly find and fix vulnerabi
 
 Snyk Container provides a range of integrations to import Projects into Snyk. These integrations support different workflows.
 
-For details on available integrations, see [Container registry integrations](../../scan-using-snyk/snyk-container/container-registry-integrations/) and [Kubernetes integration](../../scan-using-snyk/snyk-container/kubernetes-integration/).
+For details on available integrations, see [Container registry integrations](container-registry-integrations/) and [Kubernetes integration](kubernetes-integration/).

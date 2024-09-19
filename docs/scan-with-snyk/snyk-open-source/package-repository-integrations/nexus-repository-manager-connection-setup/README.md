@@ -5,9 +5,9 @@
 Package repository integrations are available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
 **Supported projects**\
-The Nexus Repository Manager integration supports [Node.js](../../../../../supported-languages-package-managers-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) Projects.
+The Nexus Repository Manager integration supports [Node.js](../../../../supported-languages-package-managers-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) Projects.
 
-For [Improved Gradle SCM scanning](../../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access), use the Maven settings.
+For [Improved Gradle SCM scanning](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access), use the Maven settings.
 {% endhint %}
 
 Connecting Nexus Repository Manager enables Snyk to resolve all direct and transitive dependencies of packages hosted on the Nexus registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
@@ -24,14 +24,14 @@ You can configure these types of Nexus Repository Manager:
 * Nexus Repository Manager version 2.15+
 {% endhint %}
 
-These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance, see the [setup instructions for Snyk Broker with Nexus Repository Manager](../../../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/).
+These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance, see the [setup instructions for Snyk Broker with Nexus Repository Manager](../../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/).
 
 ## Set up publicly accessible instances
 
 1. Navigate to **Settings** > **Integrations > Package Repositories > Nexus**
 2. Verify that you see the screen to configure Nexus.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
 
 On the page to configure Nexus, enter the information for the version you are using.
 

@@ -12,7 +12,7 @@ Here are some key points to determine the best starting point. For details, see 
 ## Getting started with Snyk
 
 {% hint style="info" %}
-For details, see [Getting started](../../../getting-started/) and [Start scanning](../../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md).
+For details, see [Getting started](../../../getting-started/) and [Start scanning](../../../scan-with-snyk/start-scanning.md).
 {% endhint %}
 
 Depending on your needs, Snyk offers various integration methods:
@@ -36,7 +36,7 @@ For hundreds or thousands of repositories:
 
 * At scale, Snyk recommends using the API. APIs are available with the Snyk Enterprise plan.
   * Use the [Snyk API](../../../snyk-api/) to import your Projects. This leverages an existing source control integration and can be used to automate processes.
-  * The  [snyk-api-import](../../../scan-using-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
+  * The  [snyk-api-import](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
 
 ## Snyk CLI
 
@@ -64,7 +64,7 @@ To use the Snyk CLI:
      * `snyk test --all-projects --org=[org-id]`
      * `snyk monitor --all-projects --org=[org-id]`\
        Replace `[org-id]` with the ID of your Organization.
-   * For Container and Infrastructure as Code scans, see [Container](../../../scan-using-snyk/snyk-container/scan-container-images.md) and [Infrastructure as Code](../../../scan-with-snyk/snyk-iac/), as this will vary based on the type being scanned.
+   * For Container and Infrastructure as Code scans, see [Container](../../../scan-with-snyk/snyk-container/scan-container-images.md) and [Infrastructure as Code](../../../scan-with-snyk/snyk-iac/), as this will vary based on the type being scanned.
 4. Review results either locally when running `snyk test`, or via the Snyk Web UI when using monitor or report.
 
 For demonstrations of various pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).

@@ -10,7 +10,7 @@ The guide starts by recognizing that most businesses:
 {% hint style="info" %}
 There are **typical timelines for implementation** depending on the size and scope of your business.
 
-If your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using a Git integration and the [API Import Tool](../../scan-using-snyk/snyk-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md) sections for details of this type of process.
+If your business is small and nimble, Snyk implementation can be achieved in days. You can start scanning with Snyk soon after purchasing, often using a Git integration and the [API Import Tool](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/). See the [Getting started](../../getting-started/) and [Start scanning](../../scan-with-snyk/start-scanning.md) sections for details of this type of process.
 
 However, for larger, more process-oriented enterprises, the implementation process may take weeks or months and it requires more detailed planning to succeed.&#x20;
 {% endhint %}
@@ -24,7 +24,7 @@ The Snyk AppRisk Essentials plan is included in the Snyk Enterprise plan, meanin
 
 {% hint style="info" %}
 If you want to upgrade your plan to Snyk AppRisk Pro, please contact your salesperson. \
-On the [Snyk AppRisk Essentials vs Snyk AppRisk Pro ](../../scan-using-snyk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md)page, you can find more details about the features available for both offerings.
+On the [Snyk AppRisk Essentials vs Snyk AppRisk Pro ](../../scan-with-snyk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md)page, you can find more details about the features available for both offerings.
 {% endhint %}
 
 ## Implementation strategy overview

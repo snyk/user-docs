@@ -10,11 +10,11 @@ Ensure that the template is written in valid `JSON` syntax for API and `mustache
 
 ### Verify variable names
 
-Review the variables used in the template and ensure they match the supported variables in the [Variables list and description](../../../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/variables-list-and-description.md). If a variable is misspelled or not recognized, it may cause unexpected output or a fallback to default values.&#x20;
+Review the variables used in the template and ensure they match the supported variables in the [Variables list and description](variables-list-and-description.md). If a variable is misspelled or not recognized, it may cause unexpected output or a fallback to default values.&#x20;
 
 ### Combination of YAML and API template
 
-If you open a custom PR template with values from both the YAML upload template and the API template, this is the expected behavior. Refer to the [order of precedence for processing custom PRs](../../../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/). If you do not want to see this combination, depending on your preference,  either remove the YAML  template or delete your API template.&#x20;
+If you open a custom PR template with values from both the YAML upload template and the API template, this is the expected behavior. Refer to the [order of precedence for processing custom PRs](./). If you do not want to see this combination, depending on your preference,  either remove the YAML  template or delete your API template.&#x20;
 
 ## Limitations of custom PR templates
 

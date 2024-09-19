@@ -37,7 +37,7 @@ Consider various factors when structuring Organizations, such as:
 * Git organization-based. : Some companies use a structure that mimics the organizations in Git, typically seen if a customer has 10-plus organizations in their Git platform.
 
 {% hint style="info" %}
-If you intend to use the [api-import-tool](../../../scan-using-snyk/snyk-tools/tool-snyk-api-import/), the Git organization-based approach will be your path forward.
+If you intend to use the [api-import-tool](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/), the Git organization-based approach will be your path forward.
 {% endhint %}
 
 By exploring these options and grasping your company's requirements, you can establish an account structure that enhances collaboration and efficiency.

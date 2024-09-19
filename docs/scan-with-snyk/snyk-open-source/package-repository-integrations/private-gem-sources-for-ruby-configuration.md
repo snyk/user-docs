@@ -20,7 +20,7 @@ After you have added this configuration, Snyk uses the information to access pri
    Example name: `BUNDLE_GITHUB__COM`, Value: `abcd0123generatedtoken:x-oauth-basic`
 4. To test the configuration, open a Pull/Merge Request on a Project that contains gems from your private registries to see a lockfile updated and included in the Snyk Fix Pull Request.
 
-<figure><img src="../../../../.gitbook/assets/94445628-8fdd3980-019f-11eb-816e-2c61c5b99c5c.png" alt="RubyGems Bundler environment variables"><figcaption><p>RubyGems Bundler environment variables</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/94445628-8fdd3980-019f-11eb-816e-2c61c5b99c5c.png" alt="RubyGems Bundler environment variables"><figcaption><p>RubyGems Bundler environment variables</p></figcaption></figure>
 
 ## Requirements for configuration of private gem sources for Ruby
 

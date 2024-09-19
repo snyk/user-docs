@@ -129,7 +129,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### **Containers**
 
-[Supported Operating System Distributions](../../scan-using-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md)
+[Supported Operating System Distributions](../../scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md)
 
 [Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
 

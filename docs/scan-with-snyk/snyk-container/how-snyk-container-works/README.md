@@ -6,7 +6,7 @@ As defined by the [Open Container Initiative](https://opencontainers.org) (OCI) 
 
 Container images often include several layers containing third-party software from:
 
-* Operating system distributions, such as Debian, Ubuntu, or CentOS. For details see [Snyk Container - Supported operating system distributions.](../../../scan-using-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md)
+* Operating system distributions, such as Debian, Ubuntu, or CentOS. For details see [Snyk Container - Supported operating system distributions.](operating-system-distributions-supported-by-snyk-container.md)
 * Application package managers, such as npm, pip, and RubyGems
 
 ## What Snyk Container detects

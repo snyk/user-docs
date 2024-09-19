@@ -5,9 +5,9 @@
 Package repository integrations are available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
 **Supported projects**\
-The Artifactory Package Repository integration supports [Node.js](../../../../../supported-languages-package-managers-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) Projects.&#x20;
+The Artifactory Package Repository integration supports [Node.js](../../../../supported-languages-package-managers-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm and Yarn) and [Maven](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) Projects.&#x20;
 
-For [Improved Gradle SCM scanning](../../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access), use the Maven settings.
+For [Improved Gradle SCM scanning](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access), use the Maven settings.
 {% endhint %}
 
 Snyk can use Nexus Repository Manager with Maven Projects.
@@ -24,7 +24,7 @@ You can choose to use Nexus as a mirror or as an additional repository where you
 
 These settings are very similar to what you have in `~/.m2/settings.xml`.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.10.52.png" alt="Set up for Mirrors"><figcaption><p>Set up for Mirrors</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.10.52.png" alt="Set up for Mirrors"><figcaption><p>Set up for Mirrors</p></figcaption></figure>
 
 Choose a value for the Type, either **Direct** or, if you are using using authentication, **Integration**.
 

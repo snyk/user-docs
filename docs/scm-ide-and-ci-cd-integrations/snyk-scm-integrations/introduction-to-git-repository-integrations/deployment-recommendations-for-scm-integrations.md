@@ -127,7 +127,7 @@ Ask your developers to consider the merge advice label that appears on the auto 
 Snyk auto fix PRs are generated only for new issues.
 {% endhint %}
 
-If your SCM is GitHub and you are not using Snyk Broker, then by default, Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](../../../integrate-with-snyk/git-repositories-scms-integrations-with-snyk/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for details.
+If your SCM is GitHub and you are not using Snyk Broker, then by default, Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](../../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for details.
 
 ## Stage 6 - Dependency Upgrade PRs
 
@@ -161,7 +161,7 @@ To set PR Settings on the Project level and override the PR settings configured 
 5. In the options that appear:
    1. Snyk creates PRs up to a maximum of ten open simultaneously per repo.\
       To limit this number further, select the maximum number of PRs from the dropdown list.\
-      For more information, see [Upgrading dependencies with automatic PRs](../../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/).
+      For more information, see [Upgrading dependencies with automatic PRs](../../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/).
    2. In the **Dependencies to ignore** field, enter the exact name of any dependencies that should _not_ be handled as part of the automatic functionality.\
       This field accepts only lowercase letters.
    3. After you click **Upgrade dependency settings**, each time Snyk scans this Project, Snyk automatically submits upgrade PRs based on the scan results.\

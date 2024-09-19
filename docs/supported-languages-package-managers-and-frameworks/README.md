@@ -1,6 +1,6 @@
 # Supported languages, package managers, and frameworks
 
-This section provides detailed information about language support for Snyk Code and Snyk Open Source. For information about language support for Snyk Container, see [Supported workloads, container registries, languages, and operating systems](../scan-using-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/supported-workloads-container-registries-languages-and-operating-systems.md). See also [Operating system distributions supported by Snyk Container](../scan-using-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md). For IaC language support, see [Supported IaC languages, cloud providers, and cloud resources](../scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
+This section provides detailed information about language support for Snyk Code and Snyk Open Source. For information about language support for Snyk Container, see [Supported workloads, container registries, languages, and operating systems](../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/supported-workloads-container-registries-languages-and-operating-systems.md). See also [Operating system distributions supported by Snyk Container](../scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md). For IaC language support, see [Supported IaC languages, cloud providers, and cloud resources](../scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
 
 ## Code analysis (Snyk Code)
 
@@ -53,7 +53,7 @@ For information about customizing test options, running other commands, excludin
 
 After you have run `snyk code test`, you can:
 
-* [Open a Fix PR ](../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/)
+* [Open a Fix PR ](../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/)
 * [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 
 ### Snyk CLI for open source

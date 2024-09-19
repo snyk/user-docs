@@ -195,7 +195,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Custom Base Images
 
-**More information:** [Use Custom Base Image Recommendations](../../scan-using-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/)
+**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/)
 
 ### [Create a Custom Base Image from an existing container project](../reference/custom-base-images.md#custom\_base\_images)
 
@@ -271,7 +271,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Update the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group\_id-settings-iac)
 
-**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-using-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md), [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
+**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md), [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ### [Get the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group\_id-settings-iac-1)
 
@@ -493,7 +493,7 @@ The query-string parameter types is optional. The endpoint does not enforce spec
 
 ### [Create or update pull request template for group](../reference/pull-request-templates.md#groups-group\_id-settings-pull\_request\_template)
 
-**More information:** [Create and manage a custom PR template using the API](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api).
+**More information:** [Create and manage a custom PR template using the API](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api).
 
 ### [Get pull request template for group](../reference/pull-request-templates.md#groups-group\_id-settings-pull\_request\_template-1)
 

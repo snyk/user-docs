@@ -12,7 +12,7 @@ Here are some key points to determine the best starting point. See [Git reposito
 ## Ways to get started with Snyk
 
 {% hint style="info" %}
-See the [Getting started](../../../getting-started/) section and [Start scanning using the CLI, Web UI, or AP](../../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md) for more details.
+See the [Getting started](../../../getting-started/) section and [Start scanning using the CLI, Web UI, or AP](../../../scan-with-snyk/start-scanning.md) for more details.
 {% endhint %}
 
 Snyk offers various integration methods to meet your needs, as described here.
@@ -32,7 +32,7 @@ For a small number of applications, typically under a hundred, follow these step
 
 For hundreds or thousands of repositories, you can use the API endpoint [Import targets ](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)to import your Projects. This takes advantage of an existing source control integration and can be used to automate processes.
 
-The [snyk-api-import](../../../scan-using-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. You must mirror the source control structure when using the snyk-api-import tool.
+The [snyk-api-import](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. You must mirror the source control structure when using the snyk-api-import tool.
 
 ### Snyk CLI
 

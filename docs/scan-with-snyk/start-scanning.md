@@ -1,6 +1,6 @@
 # Start scanning
 
-You can use Snyk to scan your code manually and automatically using the [Snyk CLI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-cli), the [Snyk Web UI](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-web-ui), the [Snyk API](start-scanning-using-the-cli-web-ui-or-api.md#scan-using-the-api), and by running [PR Checks](start-scanning-using-the-cli-web-ui-or-api.md#using-pr-checks).
+You can use Snyk to scan your code manually and automatically using the [Snyk CLI](start-scanning.md#scan-using-the-cli), the [Snyk Web UI](start-scanning.md#scan-using-the-web-ui), the [Snyk API](start-scanning.md#scan-using-the-api), and by running [PR Checks](start-scanning.md#using-pr-checks).
 
 {% hint style="info" %}
 Scans (tests) may be limited on your account, depending on your[ Pricing Plan](../implement-snyk/enterprise-implementation-guide/trial-limitations.md). For more information, see [What counts as a test?](../working-with-snyk/what-counts-as-a-test.md)
@@ -11,12 +11,12 @@ Scans (tests) may be limited on your account, depending on your[ Pricing Plan](.
 ## Scan using the CLI
 
 {% hint style="info" %}
-See [Getting started with the CLI](../snyk-cli/getting-started-with-the-snyk-cli.md) for more details.&#x20;
+See [Getting started with the CLI](../snyk-cli/getting-started-with-the-snyk-cli.md) for more details.
 {% endhint %}
 
 Use the following Snyk [CLI commands](../snyk-cli/cli-commands-and-options-summary.md) for specific scanning methods:
 
-<table><thead><tr><th width="190">Command</th><th width="236">Function</th><th>More details</th></tr></thead><tbody><tr><td><a href="../snyk-cli/commands/test.md">snyk test</a></td><td>Scan open-source code</td><td><a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/">Use Snyk Open Source from the CLI</a></td></tr><tr><td><a href="../snyk-cli/commands/code.md">snyk code test</a></td><td>Scan application code</td><td> <a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/">Use Snyk Code from the CLI</a></td></tr><tr><td><a href="../snyk-cli/commands/container.md">snyk container test</a></td><td>Scan container images</td><td><a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/">Use Snyk Container from the CLI</a></td></tr><tr><td><a href="../snyk-cli/commands/iac.md">snyk iac test</a></td><td>Scan infrastructure as code (IaC) files</td><td> <a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/">Snyk CLI for IaC</a></td></tr><tr><td><a href="../snyk-cli/commands/monitor.md">snyk monitor</a> and <a href="../snyk-cli/commands/container-monitor.md">snyk container monitor</a></td><td>Constantly monitor a Project for new vulnerabilities.</td><td><a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md">Monitor your projects at regular intervals</a></td></tr></tbody></table>
+<table><thead><tr><th width="190">Command</th><th width="236">Function</th><th>More details</th></tr></thead><tbody><tr><td><a href="../snyk-cli/commands/test.md">snyk test</a></td><td>Scan open-source code</td><td><a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/">Use Snyk Open Source from the CLI</a></td></tr><tr><td><a href="../snyk-cli/commands/code.md">snyk code test</a></td><td>Scan application code</td><td><a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/">Use Snyk Code from the CLI</a></td></tr><tr><td><a href="../snyk-cli/commands/container.md">snyk container test</a></td><td>Scan container images</td><td><a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/">Use Snyk Container from the CLI</a></td></tr><tr><td><a href="../snyk-cli/commands/iac.md">snyk iac test</a></td><td>Scan infrastructure as code (IaC) files</td><td><a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/">Snyk CLI for IaC</a></td></tr><tr><td><a href="../snyk-cli/commands/monitor.md">snyk monitor</a> and <a href="../snyk-cli/commands/container-monitor.md">snyk container monitor</a></td><td>Constantly monitor a Project for new vulnerabilities.</td><td><a href="../snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md">Monitor your projects at regular intervals</a></td></tr></tbody></table>
 
 ## Scan using the Web UI
 
@@ -24,7 +24,7 @@ A scan runs when you import a Snyk Project (see [Import a Project](../getting-st
 
 See [Explore Snyk through the Web UI](../getting-started/snyk-web-ui.md).
 
-The default **scanning frequency** and available frequencies vary depending on the type of Project: for more information, see [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md). You can also set the frequency in the Project **Settings** (see [View and edit project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md)) or use the Snyk REST API; see the  [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-) endpoint.
+The default **scanning frequency** and available frequencies vary depending on the type of Project: for more information, see [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md). You can also set the frequency in the Project **Settings** (see [View and edit project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md)) or use the Snyk REST API; see the [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-) endpoint.
 
 ## Scan using the API
 

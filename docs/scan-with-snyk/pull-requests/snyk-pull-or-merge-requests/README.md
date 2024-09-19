@@ -19,9 +19,9 @@ Snyk provides actionable fix advice for vulnerabilities in your Open Source libr
 
 For Projects imported through an SCM integration, Snyk offers the following types of automated pull and merge requests:
 
-* [Fix pull requests for new vulnerabilities](create-automatic-prs-for-new-fixes.md) (Fix PRs)
-* [Fix pull requests to clear the backlog of vulnerabilities in priority order](../../../scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md) (Backlog PRs)
-* [Dependency upgrade pull requests](upgrade-dependencies-with-automatic-prs/) (Upgrade PRs)
+* [Fix pull requests for new vulnerabilities](create-automatic-prs-for-new-fixes-fix-prs.md) (Fix PRs)
+* [Fix pull requests to clear the backlog of vulnerabilities in priority order](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md) (Backlog PRs)
+* [Dependency upgrade pull requests](upgrade-dependencies-with-automatic-prs-upgrade-prs/) (Upgrade PRs)
 
 ## Manual Snyk PRs
 

@@ -14,7 +14,7 @@ This quickstart helps you with these basic tasks in the Snyk application:
 
 ## For more details
 
-* See [Start scanning ](../../scan-with-snyk/start-scanning-using-the-cli-web-ui-or-api.md)to start using Snyk capabilities.
+* See [Start scanning ](../../scan-with-snyk/start-scanning.md)to start using Snyk capabilities.
 * See [Walkthrough: Code Repository Projects](../../implement-snyk/walkthrough-code-repository-projects/) to read a full walkthrough of scanning and fixing vulnerabilities from content stored in a Git repository.
 * Visit [Snyk Learn](https://learn.snyk.io/catalog/product-training/) for related introductory training
 
@@ -29,7 +29,7 @@ Snyk supports the latest versions of the following web browsers:
 * [Chrome](https://www.google.com/chrome/)
 * [Edge](https://www.microsoft.com/en-us/edge?form=MA13FJ)
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-* [Safari](https://www.apple.com/safari/) (except for [Opening Fix PR](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/))
+* [Safari](https://www.apple.com/safari/) (except for [Opening Fix PR](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/))
 
 {% hint style="info" %}
 Snyk requires Javascript to be enabled on your browser.

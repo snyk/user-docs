@@ -12,7 +12,7 @@ Before installing, review the [prerequisites](./) and the general instructions f
 
 This integration is useful to ensure a secure connection with your on-premise Nexus Repository Manager deployment.
 
-For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/nexus-repository-manager-connection-setup/). For information about brokered integration with Nexus Container Registry see [Snyk Broker -Container Registry Agent](../../snyk-broker-container-registry-agent/).
+For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/). For information about brokered integration with Nexus Container Registry see [Snyk Broker -Container Registry Agent](../../snyk-broker-container-registry-agent/).
 
 ## Configure Broker to be used for Nexus plugins
 

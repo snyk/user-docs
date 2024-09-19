@@ -10,7 +10,7 @@ For more information, see [Plans and pricing](https://snyk.io/plans).
 
 Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
-For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../scan-using-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/package-repository-integrations/artifactory-package-repository-connection-setup/). For information about brokered integration with Artifactory Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
+For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/). For information about brokered integration with Artifactory Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 

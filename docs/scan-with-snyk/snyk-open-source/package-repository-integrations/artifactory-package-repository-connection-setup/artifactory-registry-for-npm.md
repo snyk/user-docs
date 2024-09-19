@@ -26,4 +26,4 @@ You can add configuration to tell Snyk where your private Artifactory Node.js pa
 
 Open a Pull/Merge Request on a Project that contains private dependencies that are hosted in Artifactory to see **a lockfile updated and included in the Snyk Fix Pull Request with the correct URL to your repository**.
 
-<figure><img src="../../../../../.gitbook/assets/image4-3-.png" alt="Pull request to test Artifactory integration"><figcaption><p>Pull request to test Artifactory integration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image4-3-.png" alt="Pull request to test Artifactory integration"><figcaption><p>Pull request to test Artifactory integration</p></figcaption></figure>

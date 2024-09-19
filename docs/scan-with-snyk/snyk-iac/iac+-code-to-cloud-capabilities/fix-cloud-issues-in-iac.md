@@ -38,7 +38,7 @@ You must have the following:
 
 ### Step 1: Onboard IaC and cloud environments to Snyk
 
-[Onboard IaC+](../getting-started-with-iac+-and-cloud-scans/) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant cloud environments via [AWS Integration](../../../scan-using-snyk/snyk-iac/cloud-platforms-integrations/aws-integration/), [Azure Integration](../../../scan-using-snyk/snyk-iac/cloud-platforms-integrations/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/), or [Google Cloud Integration](../../../scan-using-snyk/snyk-iac/cloud-platforms-integrations/google-cloud-integration/).
+[Onboard IaC+](../getting-started-with-iac+-and-cloud-scans/) environments via the Snyk CLI workflow (`snyk iac test --report`), and onboard relevant cloud environments via [AWS Integration](../cloud-platforms-integrations/aws-integration/), [Azure Integration](../cloud-platforms-integrations/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/), or [Google Cloud Integration](../cloud-platforms-integrations/google-cloud-integration/).
 
 `snyk iac test` must be run from the root folder of the cloned Git repository, not a subdirectory. If you are using GitLab or Azure DevOps, add a `target-reference` option so Snyk can generate an SCM link, as in the following CLI command:
 

@@ -29,7 +29,7 @@ Follow these steps to enable Reachability analysis and begin analyzing Projects 
 After Reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
 
 {% hint style="info" %}
-To update existing Projects with Reachability immediately, trigger a [manual test](../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/#manual-pull-and-merge-requests-for-project-code).
+To update existing Projects with Reachability immediately, trigger a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-pull-and-merge-requests-for-project-code).
 {% endhint %}
 
 ## Supported languages and integrations

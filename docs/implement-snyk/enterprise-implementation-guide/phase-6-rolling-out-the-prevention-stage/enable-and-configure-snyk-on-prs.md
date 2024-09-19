@@ -2,7 +2,7 @@
 
 ## Use PR Checks to introduce gating
 
-[Snyk Pull Request(PR) or Merge Request (MR) Checks](../../../scan-with-snyk/pull-requests/snyk-fix-pull-or-merge-requests/) allow you to prevent new security issues from entering your codebase by automatically scanning code changes when you submit a pull request (PR). PR Checks are available for open-source vulnerabilities, license compliance issues, and your own code issues.
+[Snyk Pull Request(PR) or Merge Request (MR) Checks](../../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/) allow you to prevent new security issues from entering your codebase by automatically scanning code changes when you submit a pull request (PR). PR Checks are available for open-source vulnerabilities, license compliance issues, and your own code issues.
 
 If you import Projects through a source control integration, then Snyk Open Source PR Checks is a good place to start introducing gating.&#x20;
 

@@ -38,7 +38,7 @@ Monitoring takes the form of
 
 Source control scanning of your Git repositories is suitable for the majority of supported languages, but note that if you use a private package manager, such as Artifactory, this must be integrated with Snyk to scan your private packages.
 
-You can import Projects through a Git repository integration manually through the browser, or you can use the API, either with the [snyk-api-import](../../../../scan-using-snyk/snyk-tools/tool-snyk-api-import/) tool to import repositories in bulk, or the endpoint  [Import Targets](../../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to import specific repositories, which can be inserted into a pipeline.
+You can import Projects through a Git repository integration manually through the browser, or you can use the API, either with the [snyk-api-import](../../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool to import repositories in bulk, or the endpoint  [Import Targets](../../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to import specific repositories, which can be inserted into a pipeline.
 
 {% hint style="info" %}
 For Snyk Enterprise customers, it is strongly suggested to use the **GitHub Enterprise integration card** on the Snyk Integrations page. You do not need to be a GitHub Enterprise customer to use this option; however, using this option allows a Personal Access Token (PAT) to be used, whereas OAuth, provided through the GitHub Integration card, provides an inconsistent experience in terms of access in the interface.
