@@ -331,6 +331,8 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 ### [List issues for a package](../reference/issues.md#orgs-org\_id-packages-purl-issues)
 
+**More information:** [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md), [Rust](../../supported-languages-package-managers-and-frameworks/rust.md)
+
 ### [List issues for a given set of packages](../reference/issues.md#orgs-org\_id-packages-issues) (Currently not available to all customers)
 
 ### [Get issues by org ID](../reference/issues.md#orgs-org\_id-issues)
