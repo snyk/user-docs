@@ -29,7 +29,7 @@ snyk iac test <file>
 The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](../../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results/).
 
 {% hint style="info" %}
-Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the Snyk API. Alternatively, clear any previously-stored settings using `snyk config unset`.
+Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the [Snyk API](../../../../../snyk-api/reference/iacsettings.md). Alternatively, clear any previously stored settings using [`snyk config unset`](../../../../../snyk-cli/commands/config.md#unset-less-than-key-greater-than).
 {% endhint %}
 
 ## Snyk settings and remote custom rules bundle
@@ -40,7 +40,7 @@ Snyk recommends you use the Snyk settings page to configure custom rules setting
 Tags are helpful for versioning your custom rules bundles. Configuring your updated bundle can be easily accomplished by setting the new version tag.
 {% endhint %}
 
-You can configure these remote bundles on both the Organization level and the Group level. Configuring a remote bundle for a Group applies the remote bundle to all the Organizations in the Group.
+You can configure these remote bundles on both the Organization and Group levels. Configuring a remote bundle for a Group applies the remote bundle to all the Organizations in the Group.
 
 To configure remote bundles:
 
@@ -54,7 +54,7 @@ You can configure remote custom rules bundles on the Group level by navigating t
 
 <figure><img src="../../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (2) (3).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
 
-* Enable remote bundles configuration using the **Enable rules** toggle. Doing so loads the form to specify the Registry URL and tag as shown in this example:
+* Enable configuration of remote bundles by using the **Enable rules** toggle. Doing so loads the form to specify the Registry URL and tag as shown in this example:
 
 <figure><img src="../../../../../.gitbook/assets/image (102) (2) (1).png" alt="Specify Registry URL and tag form"><figcaption><p>Specify Registry URL and tag form</p></figcaption></figure>
 
@@ -82,13 +82,13 @@ To override the Group configurations, go to the Organization's `Rules` section i
 
 * Now, configurations on the Group level will not override these customized settings for your Organization.
 
-You can restore the inheritance of group configurations at any time by using the **Reset to group default** button.
+You can restore the inheritance of Group configurations at any time by using the **Reset to group default** button.
 
 ## Snyk API and remote custom rules bundle
 
-If manually updating the settings through the Snyk Settings page is too time-consuming, you can use the Snyk API. It currently allows you to send any variation of the custom rules settings using an API call.
+If manually updating the settings through the Snyk Settings page is too time-consuming, you can use the Snyk API, which allows you to send any variation of the custom rules settings using an API call.
 
-* For example, in order to configure the custom rules bundle at the **group** level, call the [Update the Infrastructure as Code settings for a group API](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/groups/-group\_id-/settings/iac) by providing the following body:
+* For example, in order to configure the custom rules bundle at the Group level, use the endpoint [Update the Infrastructure as Code settings for a group](../../../../../snyk-api/reference/iacsettings.md#groups-group\_id-settings-iac) by providing the following body:
 
 ```
 {
@@ -153,9 +153,9 @@ The API replies with the Group settings so you can confirm the changes:
 
 You can **override remote bundle configurations using the Snyk API**.
 
-Similarly to the Settings page, the [Update the Infrastructure as Code settings for a aroup API](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/orgs/-org\_id-/settings/iac) applies the remote bundle to all the Organizations in the Group. An Organization can override the configurations for a Group and define its own bundle and tag by using an API call.
+Similarly to the Settings page, the endpoint [Update the Infrastructure as Code settings for a group](../../../../../snyk-api/reference/iacsettings.md#groups-group\_id-settings-iac) allows you to apply the remote bundle to all the Organizations in the Group. An Organization can override the configurations for a Group and define its own bundle and tag by using an API call.
 
-* To override the Group configurations, call the [Update the Infrastructure as Code settings for an org API](https://apidocs.snyk.io/patch-/groups/-group\_id-/settings/#patch-/orgs/-org\_id-/settings/iac) by providing a different custom rules bundle and tag in the request body:
+* To override the Group configurations, call the endpoint [Update the Infrastructure as Code settings for an org](../../../../../snyk-api/reference/iacsettings.md#orgs-org\_id-settings-iac)  by providing a different custom rules bundle and tag in the request body:
 
 ```
 {
@@ -202,7 +202,7 @@ Similarly to the Settings page, the [Update the Infrastructure as Code settings 
   }
 ```
 
-* To revert back to the Group settings, call the API by providing the following request body:
+* To revert to the Group settings, call the API by providing the following request body:
 
 ```
 {
@@ -250,13 +250,13 @@ Similarly to the Settings page, the [Update the Infrastructure as Code settings 
 
 ## Environment variables and remote custom rules bundle
 
-You can also configure the location of the custom rules bundle using Snyk config for your Organization. In your Project folder, run the following commands to configure your container registry with the Snyk IaC CLI:
+You can also configure the location of the custom rules bundle using Snyk config for your Organization. In your Project folder, use the following command to configure your container registry with the Snyk IaC CLI:
 
 ```
 snyk config set oci-registry-url=registry-1.docker.io/org-account/org-bundle-image:1.3.14
 ```
 
-This sets the following Snyk environment variable: `SNYK_CFG_OCI_REGISTRY_URL`
+This sets the Snyk environment variable `SNYK_CFG_OCI_REGISTRY_URL.`
 
 {% hint style="info" %}
 Ensure the OCI Registry URL is a valid URL, for example, for DockerHub:
@@ -268,7 +268,7 @@ Be sure to clear any previously defined URLs in the Snyk Settings page or disabl
 
 ## Troubleshooting for remote custom rules bundle
 
-Enable debug logs by running the command with the **-d** option:
+Enable debug logs by running the command with the `-d` option:
 
 ```
 snyk iac test <file> -d
@@ -283,7 +283,7 @@ We were unable to download the custom bundle to the disk.
 Please ensure access to the remote Registry and validate you have provided all the right parameters.
 ```
 
-* Providing invalid credentials. The error is
+* Providing invalid credentials. The error is:
 
 ```
 There was an authentication error. Incorrect credentials provided.
