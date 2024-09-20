@@ -74,7 +74,7 @@ After a vulnerability is identified, it has one of the following reachability st
 If a `NO PATH FOUND` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
 {% endhint %}
 
-Reachability status is available [on the Project page](reachability.md#on-the-project-page), [as part of the Risk Score](reachability.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the [Get issues by group id](../../snyk-api/reference/issues.md#groups-group\_id-issues) API.&#x20;
+Reachability status is available [on the Project page](reachability.md#on-the-project-page), [as part of the Risk Score](reachability.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the API endpoint  [Get issues by group id](../../snyk-api/reference/issues.md#groups-group\_id-issues).&#x20;
 
 ### Reachability as shown on the Project page
 
