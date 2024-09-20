@@ -12,12 +12,16 @@ Lesson progress is associated with the individual user, meaning that if they are
 
 All reports can be downloaded to a CSV file. The Lesson Overview report CSV contains the historical completions and current progress. The Learning Path overview report CSV contains the current learning path progress and the last completion date.
 
+{% hint style="info" %}
+Snyk Learn Reports support Organizations with up to 5000 members.
+{% endhint %}
+
 ## Assignments
 
 {% hint style="warning" %}
 **Release status**
 
-The Assignments feature is in [Closed Beta](https://docs.snyk.io/getting-started/snyk-release-process#closed-beta). For more information, contact your Snyk Account Executive.
+The Assignments feature is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) as part of the Snyk Learning Management Add-On offering. For more information, contact your Snyk Account Executive.
 {% endhint %}
 
 Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by allowing customers to set due dates for completion and seamlessly integrate with organizational goals, for example, compliance timelines, ensuring alignment across training initiatives.
@@ -29,6 +33,10 @@ Using Assignments, your company can gain:&#x20;
 * Security: Equip developers with the knowledge to write more secure code, mitigating risks and vulnerabilities.&#x20;
 * Engagement: Promote active participation by providing personalized learning paths.&#x20;
 * Compliance: Get help with meeting regulatory requirements through the timely completion of mandatory training.
+
+{% hint style="info" %}
+Snyk Learn Assignments support Organizations with up to 5000 members.
+{% endhint %}
 
 ### Use cases for assignments
 
