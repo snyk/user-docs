@@ -3,9 +3,7 @@
 {% hint style="info" %}
 **Feature availability**&#x20;
 
-Managing user roles is available only for Enterprise plans.
-
-For more information, see [Plans and pricing](https://snyk.io/plans).
+Managing user roles is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
 Snyk **Manage roles** functionality enables you to manage pre-defined and custom roles, allowing you to create and enforce set permissions for roles that reflect the users and functions in your Organization.
@@ -21,7 +19,7 @@ Under **Manage roles**, you can:
 7. [Change the role of a user](user-role-management.md#change-the-role-of-a-user)
 8. [Use roles in custom SSO](user-role-management.md#use-roles-in-custom-sso)
 
-For more information, see [User Management with the Snyk API](../user-management-with-the-api/).
+For more information, see [User management with the API](../user-management-with-the-api/).
 
 ## Essential information for working with Member roles
 
@@ -42,7 +40,7 @@ You will find [pre-defined roles](pre-defined-roles.md) such as **Organization A
 
 Role management for Groups takes place in **Settings** > **Member roles**. This is accessible to **Group Admins** or custom roles with **Role management** permissions.
 
-Click the **Create new role** button and enter the **New role name**, **Role Type**, and **Description**. Role names should be unique, reflecting the user purpose in Snyk, and can contain alphanumeric characters plus spaces. The **Role Type** reflects the permission sets the user can have, Organization-level only, or Group and Organization-level.
+Click the **Create new role** button and enter the **New role name**, **Role Type**, and **Description**. Role names should be unique, reflecting the user's purpose in Snyk and can contain alphanumeric characters plus spaces. The **Role Type** reflects the permission sets the user can have, Organization-level only or Group and Organization-level.
 
 <figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="Create a custom Organization-level role" width="375"><figcaption><p>Create  a custom Organization-level role</p></figcaption></figure>
 
