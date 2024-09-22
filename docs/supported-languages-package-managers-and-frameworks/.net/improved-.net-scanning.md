@@ -3,7 +3,9 @@
 {% hint style="warning" %}
 **Release status and feature availability**
 
-Improved Snyk Open Source scanning for NuGet .NET applications is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only to customers on the [Enterprise plan](https://snyk.io/plans/). For more information, See [Plans and pricing](https://snyk.io/plans/).
+Improved Snyk Open Source scanning for NuGet .NET applications is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only to Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
+
+You can enable the feature by using [Snyk Preview](../../snyk-admin/snyk-preview.md).
 {% endhint %}
 
 {% hint style="info" %}
