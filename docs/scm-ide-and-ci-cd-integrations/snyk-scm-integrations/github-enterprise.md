@@ -203,6 +203,10 @@ If you used GitHub Apps for your SCM integrations at the Snyk Organization level
 * Builds - only when using GitHub Actions.
 * Scans - only when using Code security.
 
+#### Prerequisites&#x20;
+
+Ensure you meet all prerequisites listed on the [GitHub and GitHub Enterprise permission requirements](./#github-and-github-enterprise-permission-requirements) page.
+
 #### Integrate GitHub using Snyk AppRisk <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
