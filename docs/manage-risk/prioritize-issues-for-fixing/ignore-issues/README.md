@@ -125,7 +125,7 @@ For more information, see [Security policies](../../policies/security-policies/)
 
 For [Snyk Code](../../../scan-with-snyk/snyk-code/), the ignore functionality may capture a wider range of issues than other products.
 
-Static code analysis by Snyk Code transforms the input code into an intermediate representation, which captures the flow of code but abstracts away some details.
+Snyk Code transforms the input code into an intermediate representation, which captures the flow of code but abstracts away some details.
 
 Snyk Code uses this intermediate representation to recognize the same issue even when you refactor your code or rename a variable.
 
