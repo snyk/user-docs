@@ -53,8 +53,8 @@ Ensure the following requirements are met, before installing the Snyk Runtime Se
 
 * The Snyk Runtime Sensor is a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/).
 * The minimum requirements are met:&#x20;
-  1. `CPU: 100m`&#x20;
-  2. `Memory: 512Mi`
+  * `CPU: 100m`&#x20;
+  * `Memory: 512Mi`
 * Choose one of the following methods to deploy the Snyk Runtime Sensor:&#x20;
   * [Install the Snyk Runtime Sensor using a Helm chart ](snyk-runtime-sensor.md#using-a-helm-chart)
   * [Install the Snyk Runtime Sensor using a Helm chart and the AWS Secrets Manager ](snyk-runtime-sensor.md#using-a-helm-chart-and-the-aws-secrets-manager)
