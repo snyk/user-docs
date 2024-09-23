@@ -44,7 +44,7 @@ Snapshot and continuously monitor a project for open-source vulnerabilities and 
 
 ### [`snyk code test`](https://docs.snyk.io/snyk-cli/commands/code-test)
 
-Test for any known security issues using Static Code Analysis.
+Test source code for any known security issues (Static Application Security Testing).
 
 ### [`snyk container`](https://docs.snyk.io/snyk-cli/commands/container)
 
