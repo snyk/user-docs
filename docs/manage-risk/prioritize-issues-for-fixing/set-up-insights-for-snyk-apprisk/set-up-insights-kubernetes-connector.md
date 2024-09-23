@@ -2,6 +2,8 @@
 
 {% hint style="info" %}
 The Insights feature is available only with Snyk AppRisk Pro.
+
+Snyk recommends installing the [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) to achieve the most effective integration and access its continuously expanded set of features.
 {% endhint %}
 
 ## What is Kubernetes connector for Snyk AppRisk?
@@ -76,13 +78,19 @@ To ensure you have set up your Kubernetes connector properly, navigate to the **
 
 ## FAQ
 
-#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/) **(also called Snyk Controller or Snyk-Monitor) and the Kubernetes connector for Snyk AppRisk?**
+#### **What is the difference between the** [**Kubernetes monitor**](../../../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/) **(also called Snyk Controller or Snyk-Monitor), the Kubernetes connector for Snyk AppRisk and the** [**Snyk Runtime Sensor**](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)**?**
 
-The Kubernetes **monitor** extracts images from a Kubernetes cluster’s workloads and scans them for vulnerabilities. The Kubernetes **connector** for Snyk AppRisk extracts workload configurations from a Kubernetes cluster.
+* The Kubernetes **monitor** extracts images from a Kubernetes cluster’s workloads and scans them for vulnerabilities. The Kubernetes monitor reports the **Deployed** risk factor.
+* The Kubernetes **connector** for Snyk AppRisk extracts workload configurations from a Kubernetes cluster. The Kubernetes connector reports the **Public facing** and **Deployed** risk factors.
+* The [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) watches your deployments on a Kubernetes cluster and sends the collected data to Snyk. The Snyk Runtime Sensor reports the **Deployed** and **Loaded package** risk factors.
 
-#### **For prioritization to work, do I need both or only the Kubernetes connector?**
+{% hint style="warning" %}
+Risk factors are available only based on the integration option you implemented.
+{% endhint %}
 
-You need only the Kubernetes connector for Snyk AppRisk installed in your Kubernetes clusters.
+#### **For prioritization to work, do I need all three integration options, or would one suffice?**
+
+You need only one of the installation options. Snyk recommends installing the Snyk Runtime Sensor that reports the Deployed and Loaded package risk factors.&#x20;
 
 #### **If I’m a customer and already use the existing agent, do I also need to install the Kubernetes connector?**
 

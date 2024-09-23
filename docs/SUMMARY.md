@@ -757,6 +757,7 @@
       * [Evidence graph](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/evidence-graph.md)
       * [Export and customize views](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/export-and-customize-views.md)
     * [Set up Insights for Snyk AppRisk](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/README.md)
+      * [Set up Insights: Snyk Runtime Sensor](https://docs.snyk.io/integrate-with-snyk/snyk-runtime-sensor)
       * [Set up Insights: User permissions](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-user-permissions.md)
       * [Set up Insights: Kubernetes connector](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-kubernetes-connector.md)
       * [Set up Insights: Image scanning](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-image-scanning.md)

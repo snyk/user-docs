@@ -34,9 +34,13 @@ Managed Kubernetes services such as EKS Fargate or GKE Autopilot, are not suppor
 * Cluster nodes must support BTF.
 * Language support - Go, Java v8 or higher, .NET v2.0.9 or higher, Node.js v10 or higher, Python 3.6 or higher.
 * Network policy - if your cluster does not allow all outgoing traffic, set up the policy to enable outgoing traffic on port 443 for the following hosts:
-  * `kubernetes.default.svc.cluster.local`&#x20;
-  * `api.snyk.io` (or `api.<<REGION>>.snyk.io` if hosted in a different region)&#x20;
+  * `api.snyk.io` or `api.<<REGION>>.snyk.io` if hosted in a different region.
   * `api.sentry.io`
+  * `kubernetes.default.svc.cluster.local`
+
+{% hint style="warning" %}
+If you encounter network restrictions, ensure that port 443 is enabled and that the policy is stateful.
+{% endhint %}
 
 You also need a token for a [service account](https://docs.snyk.io/snyk-admin/service-accounts). The service account must have one of the following roles:
 

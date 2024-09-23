@@ -6,9 +6,13 @@ The Insights feature is available only with Snyk AppRisk Pro.
 
 ## Prerequisites for prioritization with Snyk AppRisk
 
-Customize the Snyk AppRisk prioritization using the Set up Insights option and an application that scans images using [Snyk Container](../../../scan-with-snyk/snyk-container/). You can get additional value by also scanning your open-source dependencies with [Snyk Open Source](../../../scan-with-snyk/snyk-open-source/) and your source code with [Snyk Code](../../../scan-with-snyk/snyk-code/).
+Customize the Snyk AppRisk prioritization using the Set up Insights option and an application that scans images using [Snyk Container](../../../scan-with-snyk/snyk-container/). You can get additional value by also scanning your open-source dependencies with [Snyk Open Source](../../../scan-with-snyk/snyk-open-source/) and your source code with [Snyk Code](../../../scan-with-snyk/snyk-code/).&#x20;
 
 ### What risk factors do I need?
+
+{% hint style="info" %}
+The Risk Factors are available only with Snyk AppRisk Pro.
+{% endhint %}
 
 Snyk AppRisk Insights product operates by providing you with the following risk factors for your vulnerabilities:&#x20;
 
@@ -16,10 +20,6 @@ Snyk AppRisk Insights product operates by providing you with the following risk 
 * [**Loaded package**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md): Has a third-party package that is the dependency of an image been loaded?
 * [**OS condition**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md): Does this vulnerability apply to my operating system?
 * [**Public facing**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md): Does my container have any internet exposure?
-
-{% hint style="info" %}
-The Risk Factors are available only with Snyk AppRisk Pro.
-{% endhint %}
 
 ### Risk factors usage criteria
 
@@ -54,15 +54,16 @@ Ensure you meet these requirements to gather data for all four risk factors for 
 Snyk **recommends** that you also perform the following steps to get the maximum value out of insights:
 
 * Scan the third-party dependencies using Snyk Open Source,
-* Scan the source code using Snyk Code,
+* Scan the source code using Snyk Code
+* Start with one application and expand from there
 
 By scanning both the source code and the third-party dependencies, you will get risk factors data, which provides the application context to better prioritize your open issues.
 
-{% hint style="info" %}
-Snyk recommends starting with one application and expanding from there.
-{% endhint %}
-
 ## Prioritization process overview
+
+{% hint style="info" %}
+Snyk recommends installing the [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) to achieve the most effective integration and access its continuously expanded set of features.
+{% endhint %}
 
 The major steps in setting up issues are as follows:
 
@@ -123,17 +124,21 @@ When prioritizing issues, it is important to understand the available integratio
 
 Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the Setting menu, and then the Insights option.&#x20;
 
-* **Kubernetes Connector**: Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
 * [**Snyk Runtime Sensor**](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md): Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
+* **Kubernetes Connector**: Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
 * [**Third-party Integrations**](../../../integrate-with-snyk/third-party-integrations-for-snyk-apprisk.md): These integrations, such as cloud providers or CI/CD tools, provide additional context and data sources for better vulnerability assessment. They help identify misconfigurations, exposure points, and integration-specific vulnerabilities.
+
+### Risk factors mapped to integration options
 
 Each of these integration options uses different risk factors:
 
-* **Kubernetes Connector**: Deployed, Public facing
 * **Snyk Runtime Sensor**: Deployed and Loaded Package
+* **Kubernetes Connector**: Deployed, Public facing
 * **Third-party Integrations**: Deployed and Loaded Package
 
 By leveraging these integration options, you can ensure comprehensive coverage and accurate prioritization of security risks.
 
-The Public facing risk factor is less commonly used in all available integration options because it covers broader, more external threats that are harder to quantify and track within an internal monitoring system. In contrast, other risk factors such as the Deployed and Loaded Package offer more specific and actionable insights into the actual state and behavior of your applications, enabling better prioritization and remediation efforts.
+The **Deployed** and **Loaded Package** risk factors offer more specific and actionable insights into the actual state and behavior of your applications, enabling better prioritization and remediation efforts.
+
+The **Public facing** risk factor is less commonly used in all available integration options because it covers broader, more external threats that are harder to quantify and track within an internal monitoring system.&#x20;
 
