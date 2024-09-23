@@ -103,7 +103,7 @@ Common Weakness Enumeration. An online glossary that categorizes software and ha
 
 ### DAST
 
-Dynamic Application Security Testing. An application that you can point at a site or service; the application typically profiles the site or service and  examines the output and behavior to uncover security vulnerabilities. See also [SAST](glossary.md#sast).
+Dynamic Application Security Testing. A security analysis technique that interacts with a running application to examine its behavior and determine if there are security vulnerabilities. Compare [SAST](glossary.md#sast).
 
 ### Dependency
 
@@ -170,7 +170,7 @@ Infrastructure as Code. See [Snyk Infrastructure as Code.](glossary.md#snyk-infr
 
 ### IAST
 
-Interactive Application Security Testing. This approach tests for vulnerabilities while running the application. See [DAST](glossary.md#dast) and [SAST](glossary.md#sast).
+Interactive Application Security Testing. Observing a running application to determine behaviors of interest to you, for example, what packages are loaded, where data flows in the running application, or how end users interact with the application. Capabilities vary between vendors and products. Compare [DAST](glossary.md#dast) and [SAST](glossary.md#sast).
 
 ### IDE
 
@@ -258,7 +258,7 @@ A software package hosting service that allows customers to host packages and co
 
 ### Pinnable
 
-A fix type: define and "pin" a specific version of an indirect dependency, to avoid a direct dependency pulling in a vulnerable version.
+A fix type. Define and "pin" a specific version of an indirect dependency, to avoid a direct dependency pulling in a vulnerable version.
 
 ### Policy
 
@@ -278,7 +278,7 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 
 ### Priority Score
 
-Snyk scores issues, including vulnerabilities and licenses for Open Source, to help prioritize the treatment of each one. Scores are based on multiple factors including the CVSS score and range from 0 (low) to 1000 (high). See [Priority Score](../manage-risk/prioritize-issues-for-fixing/priority-score.md).
+Snyk scores issues, including vulnerabilities and licenses for Open Source, to help prioritize the treatment of each one. Scores are based on multiple factors, including the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](../manage-risk/prioritize-issues-for-fixing/priority-score.md).
 
 ### Project
 
@@ -330,7 +330,7 @@ Static Analysis Results Interchange Format. A standard, JSON-based format for th
 
 ### SAST
 
-Static Application Security Testing. A method to secure software by reviewing the source code of your proprietary software and identifying sources of vulnerabilities. See also [DAST](glossary.md#dast).
+Static Application Security Testing. A security analysis technique that involves reviewing the source code of your software and identifying security vulnerabilities. Compare [DAST](glossary.md#dast). See also [Snyk Code](glossary.md#snyk-code) and [Snyk Infrastructure as Code](glossary.md#snyk-infrastructure-as-code).
 
 ### SBOM
 
@@ -338,7 +338,7 @@ Software Bill Of Materials. A list of components in a piece of software.
 
 ### SCA
 
-Software Composition Analysis. A technology that is used to identify open-source and third-party components in use in an application, including their known security vulnerabilities, and typically adversarial license restrictions. See also [Static Code Analysis](glossary.md#static-code-analysis).
+Software Composition Analysis. A security analysis technique that is used to identify open-source and third-party components in use in an application, their known security vulnerabilities, and typically also adversarial license restrictions. Not to be confused with [Static Code Analysis](glossary.md#static-code-analysis). See also [Snyk Open Source](glossary.md#snyk-open-source).
 
 ### Scanned artifacts (Snyk AppRisk)
 
@@ -439,7 +439,7 @@ Software Package Data Exchange. A file format used to document information on th
 
 ### Static Code Analysis
 
-A method of debugging by examining source code before a program is run. See also [SCA, Software Composition Analysis](glossary.md#sca).
+A technique for looking at source code to find issues of interest to you. For example, you may trace through source code to determine reachability. In contrast, Static Application Security Testing focuses on security analysis. See [SAST](glossary.md#sast).
 
 ## T
 
