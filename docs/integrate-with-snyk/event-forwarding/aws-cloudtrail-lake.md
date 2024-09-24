@@ -3,17 +3,13 @@
 {% hint style="info" %}
 **Transition to Snyk Apps**
 
-Snyk is currently transitioning event forwarding integrations to use the Snyk Apps platform. This change will enable new features and enhanced security across current and future Cloud Events integrations.&#x20;
-
-
+Snyk is transitioning event forwarding integrations to use the Snyk Apps platform. This change will enable new features and enhanced security across current and future Cloud Events integrations.&#x20;
 
 During the transition, existing integrations will continue to function normally and customers will have the opportunity to authorize the integrations to ensure they continue working once they become Snyk Apps. You can complete authorization for existing integrations by following these steps:
 
 1. Go to the **Settings** page for your Organization
 2. Go to the settings section for the integration you want to authorize (e.g. Amazon EventBridge, AWS CloudTrail Lake, AWS Security Hub)
 3. Click the **Authorize app** button and complete the App authorization flow
-
-
 
 At the end of the transition window, **integrations which have not been authorized will no longer be able to forward events and will cease functioning.**
 {% endhint %}
