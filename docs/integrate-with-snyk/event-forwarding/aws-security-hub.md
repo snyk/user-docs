@@ -14,7 +14,7 @@ During the transition, existing integrations will continue to function normally 
 At the end of the transition window, **integrations which have not been authorized will no longer be able to forward events and will cease functioning.**
 {% endhint %}
 
-The [AWS Security Hub](https://aws.amazon.com/security-hub/) integration sends Snyk issues to Security Hub, allowing you to centralize your security reporting, build custom alerting, and trigger automation. Once configured, the integration will automatically upload Snyk issues to Security Hub as security findings. When issues are updated or new remediations become available, the corresponding Security Hub findings will automatically be updated.
+The [AWS Security Hub](https://aws.amazon.com/security-hub/) integration sends Snyk issues to Security Hub, allowing you to centralize your security reporting, build custom alerting, and trigger automation. After it is configured, the integration automatically uploads Snyk issues to Security Hub as security findings. When issues are updated or new remediations become available, the corresponding Security Hub findings are automatically updated.
 
 There are two steps required to configure the integration:
 
@@ -25,9 +25,9 @@ There are two steps required to configure the integration:
 
 Go the the Security Hub console for the AWS account and region you want to receive Snyk findings. Navigate to the **Integrations** section and search for **Snyk**. On the **Snyk** integration tile, click **Accept findings** and follow the prompts.
 
-<figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-aws-acceptfindings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-aws-acceptfindings.png" alt="Search for Snyk integration"><figcaption><p>Search for Snyk integration</p></figcaption></figure>
 
-Once this step is done, you can continue setting up the integration in the Snyk dashboard.
+After this step is done, you can continue setting up the integration in the Snyk dashboard.
 
 ## Configuring Snyk to send findings to Security Hub
 
@@ -39,23 +39,23 @@ Enter a **name** for the integration, along with the **AWS Account ID** and **AW
 
 <figure><img src="../../.gitbook/assets/integratinos-eventforwarding-securityhub-dialog.png" alt="Enter integration details"><figcaption><p>Enter integration details</p></figcaption></figure>
 
-After this step is complete, Snyk will begin sending new issue events to Security Hub.
+After this step is complete, Snyk begins sending new issue events to Security Hub.
 
 {% hint style="info" %}
 Issues on existing Projects will not be sent to Security Hub unless those issues are updated. To backfill issues from existing projects, you can delete and re-import them.
 {% endhint %}
 
-### Snyk App Authorization
+## Snyk App authorization
 
-If this is the first time you have set up an AWS Security Hub integration for your organization, you will be prompted to complete the Snyk App authorization flow.
+If this is the first time you have set up an AWS Security Hub integration for your Organization, you will be prompted to complete the Snyk App authorization flow.
 
-<figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-auth.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-auth.png" alt="Snyk App authorization" width="375"><figcaption><p>Snyk App authorization</p></figcaption></figure>
 
 After completing the authorization flow you will be redirected to the settings page for the integration.&#x20;
 
 ## Managing and deleting a Security Hub integration
 
-Go to the [Security Hub integration settings page](https://app.snyk.io/manage/integrations/aws-securityhub) in the Snyk dashboard and click on the name of the integration you want to manage.
+Navigate to the [Security Hub integration settings page](https://app.snyk.io/manage/integrations/aws-securityhub) in the Snyk dashboard and click on the name of the integration you want to manage.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-snyksettings.png" alt="Select integration to manage"><figcaption><p>Select integration to manage</p></figcaption></figure>
 
