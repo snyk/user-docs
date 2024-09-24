@@ -38,7 +38,7 @@ Enter a **name** for this integration, along with the **AWS Account ID** and **A
 
 When the form is completed, click **Add integration**. After this step is done, you must complete the integration setup in the Amazon EventBridge console.
 
-### Snyk App Authorization
+## Snyk App authorization
 
 If this is the first time you have set up an Amazon EventBridge integration for your Organization, you will be prompted to complete the Snyk App authorization flow.&#x20;
 
