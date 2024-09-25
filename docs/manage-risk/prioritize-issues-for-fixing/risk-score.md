@@ -72,7 +72,7 @@ Objective likelihood factors are taken into account:
 
 Contextual likelihood factors then increase or decrease the likelihood subscore: &#x20;
 
-* Reachability (Snyk Open Source Java only, JavaScript to be supported)&#x20;
+* Reachability (Snyk Open Source Java, JavaScript)&#x20;
 * Transitive depth
 * (Forthcoming) Insights such as `Deployed` , `OS condition` and `Public Facing`
 
@@ -277,7 +277,7 @@ Building on [past studies](https://arxiv.org/pdf/2301.07972.pdf), Snyk research 
 
 #### Reachability&#x20;
 
-Snyk static code analysis determines whether the vulnerable method is being called. This is supported for Java; JavaScript support is coming. For more information, see [Reachable vulnerabilities](reachability.md).\
+Snyk static code analysis determines whether the vulnerable method is being called. This is supported for Java and JavaScript. For more details, navigate to the [Reachability analysis](reachability-analysis.md) page. \
 When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.
 
 | Possible input values | Score impact                                                            |

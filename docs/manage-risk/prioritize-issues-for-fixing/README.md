@@ -187,7 +187,7 @@ You can [ignore issues](ignore-issues/) and [triage issues](vulnerable-condition
 
 Consider [Malicious packages](malicious-packages.md) and how to address them in your Projects.
 
-You can set up [reachable vulnerability analysis ](reachability.md)to identify vulnerabilities with a path to your code. This helps you asse are calculated as part of the priority score.
+You can set up [reachable vulnerability analysis ](reachability-analysis.md)to identify vulnerabilities with a path to your code. This helps you asse are calculated as part of the priority score.
 
 [Vulnerabilities with Social Trends](vulnerabilities-with-social-trends.md) are calculated as part of the Priority Score.
 
