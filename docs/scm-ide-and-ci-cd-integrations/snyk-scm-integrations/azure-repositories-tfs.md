@@ -134,6 +134,10 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 4. API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
 5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
 
+{% hint style="warning" %}
+The following PAT token permissions requirements are for AppRisk integrations. For SCM integration, see the [Azure Respositories (TFS) permissions requirements](./#azure-repositories-tfs-permission-requirements) on the Snyk SCM iintegrations pages.
+{% endhint %}
+
 #### Generate a Personal access token from your Azure DevOps settings
 
 1. Open Azure DevOps and click the **Settings** menu for your profile.
