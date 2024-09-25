@@ -66,7 +66,7 @@ You can filter the test results that are shown in the CLI terminal and display o
 To display only issues above a specific severity level, enter the following:
 
 ```
-snyk code test <path/to/folder> --severity-threshold=<low|medium|high|critical>
+snyk code test <path/to/folder> --severity-threshold=<low|medium|high>
 ```
 
 The results will include only issues with the specified severity level and issues with a higher severity level.
