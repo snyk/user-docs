@@ -135,7 +135,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
 
 {% hint style="warning" %}
-The following PAT token permissions requirements are for AppRisk integrations. For SCM integration, see the [Azure Respositories (TFS) permissions requirements](./#azure-repositories-tfs-permission-requirements) on the Snyk SCM iintegrations pages.
+The following PAT token permissions requirements are for Snyk AppRisk integrations. For SCM integration, see the [Azure Respositories (TFS) permissions requirements](./#azure-repositories-tfs-permission-requirements) on the Snyk SCM integrations pages.
 {% endhint %}
 
 #### Generate a Personal access token from your Azure DevOps settings
