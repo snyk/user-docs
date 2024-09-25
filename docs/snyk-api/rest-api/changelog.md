@@ -1,3 +1,39 @@
+## 2024-09-04 - Updated 2024-09-25
+
+### GET - `/self` - Updated
+- added `#/components/schemas/User20240422, #/components/schemas/ServiceAccount20240422` to the `data/attributes` response property `anyOf` list for the response status `200`
+
+- removed `#/components/schemas/ServiceAccount` from the `data/attributes` response property `anyOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/projects` - Updated
+- added `#/components/schemas/ProjectRelationshipsTarget20230215` to the `data/items/relationships/target` response property `oneOf` list for the response status `200`
+
+- removed `#/components/schemas/ProjectRelationshipsTarget` from the `data/items/relationships/target` response property `oneOf` list for the response status `200`
+
+
+
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added `#/components/schemas/ProjectRelationshipsTarget20230215` to the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+- removed `#/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added `#/components/schemas/ProjectRelationshipsTarget20230215` to the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+- removed `#/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/invites` - Updated
+- the `data/items/attributes/role` response`s property type/format changed from `string`/`uuid` to `string`/`` for status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the `org_invitation` enum value from the `data/items/type` response property for the response status `200`
+
+
 ## 2024-09-04
 
 ### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
