@@ -8,7 +8,7 @@ The high-level steps in implementing the Universal Broker are the same regardles
 * **One time:** Define your desired connection or connections.
 * **One time for each Organization integration:** Configure the Organizations and integrations that should use the connection.
 
-<figure><img src="../../../.gitbook/assets/image (563).png" alt="Illustration of steps in implementing the Universal Broker"><figcaption><p>Illustration of steps in implementing the Universal Broker</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image 7.png" alt="Illustration of steps in implementing the Universal Broker"><figcaption><p>Illustration of steps in implementing the Universal Broker</p></figcaption></figure>
 
 ## Configuration using the `snyk-broker-config` command (recommended) <a href="#using-snyk-broker-config-cli" id="using-snyk-broker-config-cli"></a>
 

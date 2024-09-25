@@ -17,7 +17,7 @@ This page explains the configuration flow for the client. These pages guide you 
 
 The Universal Broker separates deployment and container concerns from connection concerns. It allows for a smaller or a single deployment to support numerous connections of varied types.
 
-<figure><img src="../../../.gitbook/assets/image (548).png" alt="Universal Broker Model" width="437"><figcaption><p>Universal Broker Model</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image 5.png" alt="Universal Broker Model"><figcaption><p>Universal Broker Model</p></figcaption></figure>
 
 In contrast to the existing Broker model, where each deployment and container supports only one connection type, Snyk is providing Broker deployments configured to support many connections in a set-and-forget approach.
 
@@ -43,10 +43,9 @@ The high-level steps in implementing the Unversal Broker follow.
 2. **One time:** Define a deployment for your tenant ID and install ID.
 3. **One time:** Define credentials references needed for your connections.
 4. **One time:** Define your desired connection or connections.
-5. **One time for each Organization integration:** Configure the Organizations and integrations that should use the connection.\
+5. **One time for each Organization integration:** Configure the Organizations and integrations that should use the connection.
 
-
-<figure><img src="../../../.gitbook/assets/image (550).png" alt="Deployment, connections, and organizations"><figcaption><p>Deployment, connections, and organizations</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image 6.png" alt="Deployment, connections, and organizations"><figcaption><p>Deployment, connections, and organizations</p></figcaption></figure>
 
 After defining the desired connections, run the Broker Client. The integration between connections and Organizations and integrations is then done independently from the Universal Broker deployment, reducing the required activities on the running containers or Kubernetes deployment.&#x20;
 
