@@ -361,6 +361,7 @@
         * [GitHub actions migration](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/github-actions-migration.md)
     * [User-defined custom images for CLI](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/user-defined-custom-images-for-cli.md)
     * [AWS CodePipeline integration by adding a Snyk scan stage](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/README.md)
+      * [Migrating to AWS CodeBuild](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/migrating-to-aws-codebuild.md)
       * [Language support for AWS CodePipeline](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/language-support-for-aws-codepipeline.md)
       * [Setup requirements for AWS CodePipeline](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/setup-requirements-for-aws-codepipeline.md)
       * [AWS CodePipeline CodeBuild step example](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/aws-code-pipeline-codebuild-step-example.md)
