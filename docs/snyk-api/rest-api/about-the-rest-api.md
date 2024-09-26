@@ -4,7 +4,7 @@ The Snyk REST API is based on the [JSON:API standard](https://jsonapi.org/), def
 
 ## API URL
 
-Snyk is hosted in the following regions. Each region has its own base URL.
+Snyk is hosted in the following regions. Each region has its own base URL. Use the URL for your region when calling an API.
 
 <table><thead><tr><th width="189">Region</th><th>Base URL</th></tr></thead><tbody><tr><td>SNYK-US-01</td><td><code>https://api.snyk.io/rest</code></td></tr><tr><td>SNYK-US-02</td><td><code>https://api.us.snyk.io/rest</code></td></tr><tr><td>SNYK-EU-01 </td><td><code>https://api.eu.snyk.io/rest</code></td></tr><tr><td>SNYK-AU-01</td><td><code>https://api.au.snyk.io/rest</code></td></tr></tbody></table>
 
