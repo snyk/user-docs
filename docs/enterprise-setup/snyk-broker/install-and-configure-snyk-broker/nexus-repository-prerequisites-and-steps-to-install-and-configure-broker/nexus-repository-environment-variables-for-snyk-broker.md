@@ -43,12 +43,15 @@ The following environment variables are needed to customize the Broker client fo
 Example:\
 `BASE_NEXUS_URL=https://[username_or_token:password_or_token]@acme.com`\
 Must not end with a forward slash.\
-The following field is optional:\
+The following fields are optional:\
 `Auth`: Omit if no auth required.\
 Can be either plain text or a two-part token (`Nexus Pro`).\
 URL encode username, password, and tokens to avoid errors that may prevent authentication.\
 Minimal example: `https://acme.com`\
 Complex example: `https://alice:mypassword@acme.com:`
+
+`NEXUS_URL`: Used as an override if your repositories do not live under /nexus/content\
+The URL that points to the base of your repositories within Nexus. By default, the broker assumes `BASE_NEXUS_URL`/nexus/content/ as the value.
 
 `RES_BODY_URL_SUB`\
 The URL of the Nexus instance, including `https://` and `/nexus/content` without basic auth credentials. **Required for npm/Yarn integrations only.** Must not end with a forward slash.
