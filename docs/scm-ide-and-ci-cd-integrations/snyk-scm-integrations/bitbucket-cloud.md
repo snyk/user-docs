@@ -238,7 +238,7 @@ Create a BitBucket app password by following these steps:
 {% endhint %}
 
 6. Service type (`mandatory`): Select the service type, Cloud, or On-premises.
-7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
+7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
 
 #### API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
 

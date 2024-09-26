@@ -76,7 +76,7 @@ You can filter the information for all the inventory layouts and can use the fol
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.
 
-**\***All filters marked with `*` are visible only to the users who configured the [application context](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations.md) catalog for their SCM integrations.
+**\***All filters marked with `*` are visible only to the users who configured the [application context](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) catalog for their SCM integrations.
 
 After applying the filters, the asset list will display only the assets that match the specified conditions, without a hierarchical structure.
 

@@ -1,13 +1,19 @@
 # Application context for SCM Integrations
 
+{% hint style="warning" %}
+Release status
+
+All the Application context integrations listed on this page are in Early Access and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro.
+{% endhint %}
+
 These are the available integrations that you can set up for the application context:
 
-* [Backstage file](application-context-for-scm-integrations.md#backstage-file-for-scm-integrations)&#x20;
-* [ServiceNow CMDB](application-context-for-scm-integrations.md#servicenow-cmdb-for-scm-integrations)
-* [Atlassian Compass](application-context-for-scm-integrations.md#atlassian-compass)
-* [Harness](application-context-for-scm-integrations.md#harness)
-* [OpsLevel](application-context-for-scm-integrations.md#opslevel)
-* [Datadog Service Catalog](application-context-for-scm-integrations.md#datadog-service-catalog) &#x20;
+* [Backstage file](./#backstage-file-for-scm-integrations)&#x20;
+* [ServiceNow CMDB](./#servicenow-cmdb-for-scm-integrations)
+* [Atlassian Compass](./#atlassian-compass)
+* [Harness](./#harness)
+* [OpsLevel](./#opslevel)
+* [Datadog Service Catalog](./#datadog-service-catalog) &#x20;
 
 {% hint style="info" %}
 The Application Context integrations on this page work in conjunction with assets found through AppRisk SCM integrations. If there is no Snyk AppRisk SCM integration configured at the Group level on the Integrations page, then data will not populate from these integrations.
@@ -15,14 +21,15 @@ The Application Context integrations on this page work in conjunction with asset
 
 ## Backstage file for SCM integrations
 
+{% hint style="warning" %}
+**Release status**
+
+The Backstage file integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
+{% endhint %}
+
 Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk AppRisk.
 
 You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
-
-### Prerequisites for Backstage file
-
-* Configured SCM integration for Snyk AppRisk.
-* The `catalog-info.yaml` file is available in the root folder or your Project.&#x20;
 
 ### Required Parameters for Backstage file
 
@@ -44,83 +51,11 @@ Snyk AppRisk parses the fields of the detected file using the default field name
 
 7. Click the **Done** button.
 
-<figure><img src="../../.gitbook/assets/image (1) (12) (1).png" alt="Integration Hub - Backstage setup"><figcaption><p>Integration Hub - Backstage setup</p></figcaption></figure>
-
 After you finish configuring the Backstage catalog, Snyk AppRisk starts enriching your repository assets with the data found in the backstage catalog .yaml file.
 
-### Backstage catalog in Asset Inventory
-
-Use the Backstage catalog to enrich the repository assets and to define the component entity. For this type of situation, a component is defined as a software component, like a service, repository, a website, library, and so on.&#x20;
-
-Components have several attributes and most of them are optional:
-
-* `spec.type` (mandatory) - represents the classification of the repository.&#x20;
-* `spec.owner` (mandatory) - represents the team owning the repository.
-* `spec.lifecycle` - represents the lifecycle state of the component, for example `production`, `experimental`, `deprecated`.
-* `spec.system` (optional) - represents a group of components that serve the same purpose. This concept is referred to as “Application”.
-* `Metadata.name` (mandatory) - represents the name of the component.
-* `Metadata.title` (optional) - represents the name of the component.
-
-The Backstage data is dynamic and may change over time:
-
-* If new commits or updates are made on the `catalog-info.yaml` file, then Snyk AppRisk updates the asset attribute for that specific repository asset.
-* If the`catalog-info.yaml` file is removed from the repository, then Snyk AppRisk deletes the asset attribute from that specific repository assets.
-
-#### Inventory menu
-
-Depending on the selection you made on the Integration Hub configuration menu, only those selections are displayed in filters from the Inventory menu. For example, if you selected the Category attribute, then it will also be displayed in the filters list.
-
-<figure><img src="../../.gitbook/assets/image (448).png" alt="Backstage selections in the Integration Hub menu"><figcaption><p>Backstage selections in the Integration Hub menu</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (367).png" alt="Backstage selections in the Snyk AppRisk Inventory menu" width="375"><figcaption><p>Backstage selections in the Snyk AppRisk Inventory menu</p></figcaption></figure>
-
-#### Asset Summary Tab
-
-The Asset Summary tab shows the six Backstage attributes that are configured in the Integration Hub only if you choose to integrate with Backstage.
-
-<figure><img src="../../.gitbook/assets/image (368).png" alt="Backstage selections in the Asset Summary menu"><figcaption><p>Backstage selections in the Asset Summary menu</p></figcaption></figure>
-
-#### Asset Attributes Tab
-
-In the Asset Attributes tab only the selected attributes should be added as metadata to the repository asset.
-
-```
-{
-    name:"spring.goof",
-    repositoryURL:"https://github.com/snyk/spring.goof.git",
-    context:[
-             {
-              name: "super-duper-component",
-              title: "Super Duper Component",
-	      application: "super-duper-app",
-	      lifecycle: "production",
-	      owner: "super-duper-team",
-	      category: "service",
-              source: "Backstage"
-              }]
-}
-```
-
-#### Policies Filter
-
-In the policy builder you can find only the attributes you have previously selected when configuring the backstage catalog file.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (369).png" alt="Backstage selections in the Policies menu" width="375"><figcaption><p>Backstage selections in the Policies menu</p></figcaption></figure>
-
-The following list describes all possible backstage attributes that you can choose from when you configure the backstage catalog file.&#x20;
-
-* **Application** - represents a group of components that serve the same purpose.&#x20;
-* **Owner** - specifies the team owning the repository.
-* **Catalog name** - the metadata name.
-* **Title** - a name to display for the entity instead of the property. It is an alternative to the metadata name, when the catalog name is too hard to read.
-* **Category** - represents the classification of the repository. The Organization can choose any name or text.
-* **Lifecycle** - specifies the lifecycle state of the component, for example production, experimental, deprecated.
-
-The following video provides an overview of the Backstage file option from the Integration Hub and a quick explanation of the available attributes:
-
-{% embed url="https://www.youtube.com/watch?v=gfOUSE0UhHA" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
-{% endembed %}
+{% hint style="warning" %}
+When you set up the catalog attributes, you must use the specific service-level attributes, for example `attribute.name.`
+{% endhint %}
 
 ## ServiceNow CMDB for SCM integrations
 
@@ -159,8 +94,8 @@ The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/gettin
 * Click the **Done** button.
 * When the connection is established, the status of the ServiceNow CMDB integration is changed to **Connected**.
 
-{% hint style="info" %}
-The ServiceNow CMDB integration is available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
+{% hint style="warning" %}
+When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration Hub setup.
 {% endhint %}
 
 The following video provides an overview of the ServiceNow CMDB option from the Integration Hub and a quick explanation of the available attributes:
@@ -170,6 +105,12 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 {% endembed %}
 
 ## Atlassian Compass
+
+{% hint style="warning" %}
+**Release status**
+
+The Atlassian Compass integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
+{% endhint %}
 
 ### Required Parameters for Atlassian Compass
 
@@ -181,7 +122,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 {% hint style="info" %}
 The gathered data from Atlassian Compass will be correlated with the Repository Assets.
 
-This feature is availabale only for the integration with Atlassian Compass.
+This feature is available only for the integration with Atlassian Compass.
 {% endhint %}
 
 ### Integration Hub setup for Atlassian Compass
@@ -202,7 +143,17 @@ This feature is availabale only for the integration with Atlassian Compass.
 9. Click the **Done** button.
 10. When the connection is established, the status of the Atlassian Compass integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in Atlassian Compass.
 
+{% hint style="warning" %}
+When you set up the catalog attributes, you must use the specific service-level attributes, for example `attribute.name.`
+{% endhint %}
+
 ## Harness
+
+{% hint style="warning" %}
+**Release status**
+
+The Harness integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
+{% endhint %}
 
 ### Required Parameters for Harness
 
@@ -232,7 +183,17 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 8. Click the **Done** button.
 9. When the connection is established, the status of the Harness integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in Harness.
 
+{% hint style="warning" %}
+When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration Hub setup.
+{% endhint %}
+
 ## OpsLevel
+
+{% hint style="warning" %}
+**Release status**
+
+The OpsLevel integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
+{% endhint %}
 
 ### Required Parameters for OpsLevel
 
@@ -257,7 +218,17 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 8. Click the **Done** button.
 9. When the connection is established, the status of the OpsLevel integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets with the data found in OpsLevel.
 
+{% hint style="warning" %}
+When you set up the catalog attributes, you must use the specific service-level attributes, for example `attribute.name.`
+{% endhint %}
+
 ## Datadog Service Catalog
+
+{% hint style="warning" %}
+**Release status**
+
+The Datadog Service Catalog integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
+{% endhint %}
 
 ### Required Parameters for Datadog Service Catalog
 
@@ -283,5 +254,9 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
    * Application - If you select this metadata, it is mandatory to add the **Application key**.
 9. Click the **Done** button.
 10. When the connection is established, the status of the Datadog Service Catalog integration is changed to **Connected**, and Snyk AppRisk will start enriching repository assets collected by a Snyk AppRisk SCM Integration with the data found in Datadog Service Catalog.
+
+{% hint style="warning" %}
+When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration Hub setup.
+{% endhint %}
 
 \

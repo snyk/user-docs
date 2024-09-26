@@ -227,7 +227,7 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 
 4. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
 5. Pull personal repositories (`optional`): Enable the option if you only want to pull the repositories you own.
-6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations.md) page.
+6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
 
 {% hint style="warning" %}
 If you enabled the **Pull personal repositories** option, only your personal repositories are pulled, not the public ones.&#x20;
