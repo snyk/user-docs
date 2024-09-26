@@ -6,9 +6,9 @@
 The Snyk Runtime Sensor is available in a Closed Beta state and applies only to Snyk AppRisk Pro. &#x20;
 {% endhint %}
 
-The Snyk Runtime Sensor monitors your deployments on a Kubernetes cluster and sends the collected data to Snyk. It collects data only from application packages, such as Node, Go, and others, and not from open-source packages.
+The Snyk Runtime Sensor watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
 
-The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
+The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package) (only for application packages).
 
 On this page, you can find the following information:
 
