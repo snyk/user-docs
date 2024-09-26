@@ -6,9 +6,7 @@
 
 Snyk Preview lets you enable new features that may not be available to all customers by default.
 
-Users with Admin permissions can use Snyk Preview at the Organization and Group level.
-
-## Enable or disable a feature
+Users with Admin permissions can use Snyk Preview at the Organization and Group levels.
 
 To enable a feature using Snyk Preview:
 
