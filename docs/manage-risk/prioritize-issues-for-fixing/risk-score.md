@@ -68,13 +68,11 @@ Objective likelihood factors are taken into account:
 * Malicious Package
 * Provider Urgency (Snyk Container)
 * Package popularity (Snyk Open Source)&#x20;
-* (Forthcoming) Disputed vulnerability
 
 Contextual likelihood factors then increase or decrease the likelihood subscore: &#x20;
 
 * Reachability (Snyk Open Source Java, JavaScript)&#x20;
 * Transitive depth
-* (Forthcoming) Insights such as `Deployed` , `OS condition` and `Public Facing`
 
 {% hint style="info" %}
 Fixability is no longer considered part of the Score Calculation, as the effort needed to mitigate a security issue does not affect the risk it imposes. To focus on actionable issues, use Fixability filters and then use the Risk Score to start with the riskiest issues.&#x20;
@@ -239,15 +237,6 @@ If a package is relatively more popular for its ecosystem, it is more likely to 
 | `Medium`              | Likelihood subscore does not change.   |
 | `Low`                 | Likelihood subscore decreases.         |
 
-#### CVE disputed (forthcoming)&#x20;
-
-These are CVEs that have been acknowledged as being disputed by their Project maintainer or the community at large. Snyk research shows that none of the disputed CVEs in the Snyk Vulnerability DB have been exploited in the wild.
-
-| Possible input values | Score impact                                 |
-| --------------------- | -------------------------------------------- |
-| `True`                | Likelihood subscore decreases significantly. |
-| `False`               | Likelihood subscore does not change.         |
-
 #### Provider urgency (Snyk Container)&#x20;
 
 Importance rating as provided by the relevant operating system distribution security team. For more information, see [External information sources for relative importance](../../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance) in severity levels of detected Linux vulnerabilities.
@@ -269,11 +258,10 @@ When neither CVSS nor Importance rating is provided, Provider Urgency is set to`
 
 Building on [past studies](https://arxiv.org/pdf/2301.07972.pdf), Snyk research has shown that if a vulnerability is introduced to a Project transitively rather than directly, it is less likely that an exploitable function path will exist.
 
-| Possible input values                   | Score impact                                               |
-| --------------------------------------- | ---------------------------------------------------------- |
-| `Direct dependency`                     | Likelihood subscore does not change.                       |
-| `Indirect dependency`                   | Likelihood subscore decreases.                             |
-| `Great transitive depth`_(forthcoming)_ | Likelihood subscore decreases significantly (coming soon). |
+| Possible input values | Score impact                         |
+| --------------------- | ------------------------------------ |
+| `Direct dependency`   | Likelihood subscore does not change. |
+| `Indirect dependency` | Likelihood subscore decreases.       |
 
 #### Reachability&#x20;
 
@@ -284,40 +272,6 @@ When Reachability is not enabled, the Likelihood subscore will not change, and t
 | --------------------- | ----------------------------------------------------------------------- |
 | `Reachable`           | Likelihood subscore increases, and transitive depth is not considered.  |
 | `No path found`       | Likelihood subscore does not change.                                    |
-
-#### OS condition (forthcoming)&#x20;
-
-Whether or not the operating system and architecture of a given resource are relevant to this specific issue &#x20;
-
-| Possible input values | Score impact                                 |
-| --------------------- | -------------------------------------------- |
-| `Condition met`       | Likelihood subscore does not change.         |
-| `Condition not met`   | Likelihood subscore decreases significantly. |
-| `No data`             | Likelihood subscore does not change.         |
-
-#### Deployed (forthcoming)&#x20;
-
-Whether or not the container image introducing this issue is deployed.&#x20;
-
-| Possible input values | Score impact                         |
-| --------------------- | ------------------------------------ |
-| `Deployed`            | Likelihood subscore increases.       |
-| `Not Deployed`        | Likelihood subscore decreases.       |
-| `No data`             | Likelihood subscore does not change. |
-
-#### Public facing (forthcoming)&#x20;
-
-Whether or not the asset introducing this issue is exposed to the Internet.&#x20;
-
-| Possible input values | Score impact                         |
-| --------------------- | ------------------------------------ |
-| `Public Facing`       | Likelihood subscore increases.       |
-| `Not Public Facing`   | Likelihood subscore decreases.       |
-| `No data`             | Likelihood subscore does not change. |
-
-{% hint style="info" %}
-All factor names and their effect on the score are subject to change during the early access period.&#x20;
-{% endhint %}
 
 \
 \
