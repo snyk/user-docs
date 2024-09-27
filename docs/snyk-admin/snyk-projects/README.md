@@ -1,6 +1,6 @@
 # Snyk Projects
 
-&#x20;Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters you can add depend on the **Group by** option you choose from the pulldown on the right. To filter by Origin or source, use an Integrations filter.
+Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters you can add depend on the **Group by** option you choose from the pulldown on the right. To filter by Origin or source, use an Integrations filter.
 
 Progress and error information on the state of your repository and container registry image imports are shown in the [Import Log](import-log.md).
 
@@ -20,9 +20,11 @@ Snyk Projects concepts include the following:
 
 ## Target
 
-Projects are held in a Target. A Target represents an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resource external to Snyk. Snyk creates a Target when you request to import a Project or scan using the CLI. If the import fails or finds nothing, the Target will be empty.
+Projects are held in a Target. A Target represents an external resource Snyk has scanned: a code repository, a Kubernetes workload, or another scannable resource external to Snyk.
 
-When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the endpoint [List all Projects for an Org with the given Org ID.](../../snyk-api/reference/projects.md#orgs-org\_id-projects)
+Snyk creates a Target when you request to import a Project or scan using the CLI. If the import fails or finds nothing, the Target will be empty.
+
+When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the endpoints [Get targets by org ID](../../snyk-api/reference/targets.md#orgs-org\_id-targets) and [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects.md#orgs-org\_id-projects).
 
 Click the **dots** at the far right of each Target on the list to see the **available actions**; these include **deleting** a target.
 
