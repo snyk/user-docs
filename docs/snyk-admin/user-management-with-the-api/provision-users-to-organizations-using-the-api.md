@@ -2,7 +2,7 @@
 
 The Provision user endpoints allow you to organize and grant permissions to your single sign-on users before the users log in to the Snyk platform. The endpoints are [Provision a user to the organizaton](../../snyk-api/reference/organizations-v1.md#org-orgid-provision), [List pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-1), and [Delete pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-2).
 
-Provisioned users do not need to accept invites. When provisioned users first log in to Snyk, they will have all their permissions. You can use the [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization) endpoint to add users to Organizations at scale before their first login.
+Provisioned users do not need to accept invites. When provisioned users first log in to Snyk, they will have all their permissions. You can use the endpoint [Provision a user to the organization](../../snyk-api/reference/organizations-v1.md#org-orgid-provision) to add users to Organizations at scale before their first login.
 
 ## Prerequisites for provisioning users using the API
 
@@ -20,7 +20,7 @@ The API does not support using service accounts as the inviting user or provisio
 
 ## How to use the Provision user API
 
-The following explains how to use the Provision user endpoints. For more information, see the API documentation: [Provision a user to the organizaton](../../snyk-api/reference/organizations-v1.md#org-orgid-provision), [List pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-1), and [Delete pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-2).
+The following explains how to use the Provision user endpoints. For more information, see the API documentation for the endpoints: [Provision a user to the organizaton](../../snyk-api/reference/organizations-v1.md#org-orgid-provision), [List pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-1), and [Delete pending user provisions](../../snyk-api/reference/organizations-v1.md#org-orgid-provision-2).
 
 ### Provision a user to the Organization
 
