@@ -14,7 +14,7 @@ Snyk provides plugins for repository gatekeepers and integrations to connect wit
 There are integrations that support Snyk Container and Snyk Iac:
 
 * [Snyk Container integrations](../scan-with-snyk/snyk-container/container-registry-integrations/)
-* [Cloud platforms integrations](../scan-with-snyk/snyk-iac/cloud-platforms-integrations/)
+* [Cloud platforms integrations](cloud-platforms-integrations/)
 
 Integrations for [event forwarding](event-forwarding/) allow you to push Snyk platform events directly to certain products on other platforms, enabling you to set up custom alerting, build your own reporting, trigger automation, and more.
 

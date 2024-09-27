@@ -694,7 +694,7 @@
         * [Ignore resources for drift](scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/detect-drift-and-manually-created-resources/ignore-resources-for-drift.md)
         * [IAC sources usage](scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/detect-drift-and-manually-created-resources/iac-sources-usage.md)
     * [View IaC+ and cloud compliance reporting](scan-with-snyk/snyk-iac/view-iac+-and-cloud-compliance-reporting.md)
-    * [Cloud platforms integrations](scan-with-snyk/snyk-iac/cloud-platforms-integrations/README.md)
+    * [Cloud platforms integrations](integrate-with-snyk/cloud-platforms-integrations/README.md)
       * [AWS Integration](scan-with-snyk/snyk-iac/cloud-platforms-integrations/aws-integration/README.md)
         * [AWS Integration: Web UI](scan-with-snyk/snyk-iac/cloud-platforms-integrations/aws-integration/aws-integration-web-ui/README.md)
           * [Step 1: Download IAM role IaC template (Web UI)](scan-with-snyk/snyk-iac/cloud-platforms-integrations/aws-integration/aws-integration-web-ui/step-1-download-iam-role-iac-template-web-ui.md)

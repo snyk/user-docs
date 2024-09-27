@@ -3,272 +3,210 @@
 {% hint style="info" %}
 **Feature availability**
 
-Regional hosting and data residency are available only for Enterprise plans.
-
-For more information, see [Plans and pricing](https://snyk.io/plans).
+Regional hosting and data residency are available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Snyk can host your data in a number of regions. During initial onboarding of your system, you can work with your account team to select a multi-tenant region. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of onboarding.
+Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For information about GDPR, see  [How Snyk maintains GDPR compliance](how-snyk-handles-your-data.md#how-snyk-maintains-gdpr-compliance).
 
-{% hint style="info" %}
-By default, customers are hosted in the US region.
-{% endhint %}
+Data residency is available for [Snyk Open Source](../scan-with-snyk/snyk-open-source/), [Snyk Code](../scan-with-snyk/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/), and [Snyk IaC](../scan-with-snyk/snyk-iac/). Snyk can host your data in a number of regions.
 
-## **What is data residency?**
+This page provides information on:
 
-Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For more information, see [Regional and global data](regional-hosting-and-data-residency.md#regional-and-global-data).
+* [Regionally stored data types](regional-hosting-and-data-residency.md#regionally-stored-data-types)
+* [Globally stored data types](regional-hosting-and-data-residency.md#globally-stored-data-types)
+* [Available Snyk Regions](regional-hosting-and-data-residency.md#available-snyk-regions)
+* [Regional multi- and single-tenant hosting](regional-hosting-and-data-residency.md#regional-multi-and-single-tenant-hosting)
 
-Data residency is available for [Snyk Open Source](../scan-with-snyk/snyk-open-source/), [Snyk Code](../scan-with-snyk/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/), and [Snyk IaC](../scan-with-snyk/snyk-iac/).
-
-## **How does data residency work?**
-
-During your system onboarding, you can work with your account team to select a hosting region. When using Snyk features, you will use specific URLs that differ from the default US region URLs.
-
-{% hint style="warning" %}
-After you select a region, the data in that region cannot be migrated to another region. Moving to a new region requires a complete re-onboarding.
-{% endhint %}
-
-## **What regions are available?**
-
-Snyk offers data residency for the following regions:
-
-|          Region         |           URL          |
-| :---------------------: | :--------------------: |
-|      USA (default)      |   https://app.snyk.io  |
-| EU (Germany, Frankfurt) | https://app.eu.snyk.io |
-|     AUS (Australia)     | https://app.au.snyk.io |
-
-Single-tenant deployments may support more regions than the ones listed here, subject to validation of architectural service supportability by Snyk engineering.
+A list of [regional URLs](regional-hosting-and-data-residency.md#regional-urls) is also provided.
 
 ## Regional and global data
 
-Snyk leverages a number of sub-processors to provide you with a high-quality service. Thus not all data types can be stored within your region of choice. The list of sub-processors is available [on the Snyk website](https://snyk.io/policies/subprocessors/).
+Snyk uses subprocessors to provide a high-quality service. Thus, not all data types can be stored within your region of choice. The list of subprocessors is available [on the Snyk website](https://snyk.io/policies/subprocessors/).
 
-See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-specific examples of how this data is handled.
+See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-specific examples of how data is handled.
 
-{% tabs %}
-{% tab title="Product" %}
-* Snyk Open Source
-* Snyk Code
-* Snyk Container
-* Snyk Infrastructure as Code (IaC)
-{% endtab %}
+### Regionally stored data types
 
-{% tab title="Regionally stored data" %}
 * Vulnerability data
 * Vulnerability source
 * Audit logs
 * Integration-related data
 * Customer source code
-{% endtab %}
 
-{% tab title="Globally stored data" %}
+### Globally stored data types
+
 * Billing data
 * Customer relationship management data
 * Operational logs and metrics
 * Product analytics
 * Support Tickets
 * User authentication data
-{% endtab %}
-{% endtabs %}
 
-## US region URLs
+## Available Snyk Regions
 
-The following are the default URLs for Snyk features in the US region. No configuration is required to use these URLs. For hosting in non-default regions, configuration is required. See [Login and Web UI URLs](regional-hosting-and-data-residency.md#login-and-web-ui-urls).
+{% hint style="warning" %}
+After you select a region, the data in that region cannot be migrated to another region. Moving to a new region requires a complete re-onboarding.
+{% endhint %}
 
-US login and Web UI\
-https://app.snyk.io
+During the initial onboarding of your system, you can work with your account team to select a multi-tenant hosting region. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of onboarding. When using Snyk features, you will use specific URLs that differ from the SNYK-US-01 URL. See [Regional URLs](regional-hosting-and-data-residency.md#regional-urls) for the list of URLs.
 
-US Support portal tickets\
-[US Tenant Support Portal](https://support.snyk.io)
+You must configure your environment to set your region before you authenticate. This does not apply when you are using the SNYK-US-01 URL. For details, see the [snyk config environment CLI help](../snyk-cli/commands/config-environment.md).
 
-US API v1 URL\
-https://api.snyk.io/v1/\
-US REST API URL\
-https://api.snyk.io/rest/
+Snyk offers data residency for the following regions:
 
-US CLI and CI pipelines URL\
-https://api.snyk.io
+|                 Region                 |           URL           |
+| :------------------------------------: | :---------------------: |
+|             SNYK-US-01 (US)            |   https://app.snyk.io   |
+|             SNYK-US-02 (US)            |  https://app.us.snyk.io |
+|     SNYK-EU-01 (Germany, Frankfurt)    |  https://app.eu.snyk.io |
+|         SNYK-AU-01 (Australia)         |  https://app.au.snyk.io |
+| SNYK-GOV-01 (Snyk for Government (US)) |  https://app.snykgov.io |
 
-US IDEs URL\
-https://api.snyk.io
+Single-tenant deployments may support more regions than the ones listed here, subject to validation of architectural service supportability by Snyk engineering.
 
-US Broker server URL\
-https://broker.snyk.io
+## Regional multi- and single-tenant hosting
 
-## Regional multi- and single-tenant hosting notes
+{% hint style="warning" %}
+The SNYK-US-01 region is available to customers who joined before September 2024 and to Free plan users.
+{% endhint %}
 
-Snyk offers almost all the same features, support, and performance in the regional multi- and single-tenant regions as in the US region. For an up-to-date overview of feature parity across regions, reach out to your account team.
+For Free or Team plan users in the SNYK-US-01 region, no configuration is required for URLs. For hosting in other regions, you must configure your environment for that region.
 
-### EU and AU data center account creation
+SNYK-US-02, EU, and AU data center Snyk accounts are available only with the purchase of an [Enterprise plan](https://snyk.io/plans/).
 
-EU and AU data center Snyk accounts are available only with the purchase of an [Enterprise plan](https://snyk.io/plans/). The resources and URLs are as follows.
+Snyk offers almost all the same features, support, and performance in the regional multi- and single-tenant regions as in SNYK-US-01. For an up-to-date overview of feature parity across regions, contact your account team.
+
+## Regional URLs
 
 ### Login and Web UI URLs
 
-#### **EU**
+**SNYK-US-01** - [https://app.snyk.io/](https://app.snyk.io/)
 
-[https://app.eu.snyk.io/](https://app.eu.snyk.io/)
+**SNYK-US-02 -** [https://app.us.snyk.io/](https://app.us.snyk.io/)
 
-#### **AU**
+**SNYK-EU-01 -** [https://app.eu.snyk.io/](https://app.eu.snyk.io/)
 
-[https://app.au.snyk.io/](https://app.au.snyk.io/)
+**SNYK-AU-01 -** [https://app.au.snyk.io/](https://app.au.snyk.io/)
 
-{% hint style="warning" %}
-Using Snyk.io or app.snyk.io will not redirect you to these URLs.
-{% endhint %}
+### Support portal links
 
-### Support Portal Tickets
+To view and submit tickets, use the link for your regoin.
 
-#### **EU**
+**SNYK-US-01** - [https://support.snyk.io/](https://support.snyk.io/)
 
-[EU Tenant Support Portal](https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw)
+**SNYK-US-02** - To be provided
 
-#### **AU**
+**SNYK-EU -01** - [https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw](https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw)
 
-[AU Tenant Support Portal](https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ)
+**SNYK-AU-01 -** [https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ](https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ)
 
 ### API URLs
 
-Follow the docs as usual, but base URLs are:
+Use the reference documentation with the following base URLs:
 
-#### **EU**
+**SNYK-US-01** - **API v1** : https://api.snyk.io/v1/ and **REST** API: https://api.snyk.io/rest/
 
-API v1: https://api.eu.snyk.io/v1/\
-REST API: https://api.eu.snyk.io/rest/
+**SNYK-US-02**- **API v1:** https://api.us.snyk.io/v1/ and **REST** API: https://api.us.snyk.io/rest/&#x20;
 
-#### **AU**
+**SNYK-EU-01 - API v1**: https://api.eu.snyk.io/v1/ and **REST** API: https://api.eu.snyk.io/rest/
 
-API v1: https://api.au.snyk.io/v1/\
-REST API: https://api.au.snyk.io/rest/
+**SNYK-AU-01 - API v1**: https://api.au.snyk.io/v1/ and **REST** API: https://api.au.snyk.io/rest/
 
-### CLI and CI pipelines URLs
+### CLI and CI pipeline URLs
 
-Both CLI and CI running CLI need to be configured to run against your instance. To do this, run the following:
+Both the CLI and CI running CLI must be configured to run against your instance.&#x20;
 
-#### **EU**
+To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the  [snyk config environment command](../snyk-cli/commands/config-environment.md), for example:
 
-`snyk config set endpoint=https://api.eu.snyk.io`
+[`snyk config environment SNYK-US-02`](#user-content-fn-1)[^1]
 
-#### **AU**
-
-`snyk config set endpoint=https://api.au.snyk.io`
-
-Alternatively, have an environment variable on your machine or CI tool:
-
-#### **EU**
-
-`SNYK_API=https://api.eu.snyk.io`
-
-#### **AU**
-
-`SNYK_API=https://api.au.snyk.io`
-
-When running Jenkins, use the additional argument:
-
-#### **EU**
-
-`--API=https://api.eu.snyk.io`
-
-#### **AU**
-
-`--API=https://api.au.snyk.io`
+The [Supported environment URL mappings](../snyk-cli/commands/config-environment.md#supported-environment-urls-mappings) are listed in the `snyk config environment` help.
 
 ### IDEs URLs
 
-Snyk IDE extensions have modifiable options similar to the CLI and need to be configured to use the appropriate endpoint. In the extensions settings for Snyk in your IDE, set the **Custom Endpoint** parameter to the appropriate value for EU and AU as follows.
-
 {% hint style="warning" %}
-Ensure you are using the latest version of IDE plugins. The following specifies the minimum version required:\
+Ensure you are using the latest version of the IDE plugins. The following specifies the minimum versions required:\
 VSCode - 1.2.18\
 Visual Studio - 1.1.21\
 IntelliJ - 2.4.32
 {% endhint %}
 
-#### EU
+Snyk IDE extensions have modifiable options similar to the CLI and must be configured to use the appropriate endpoint. In the extension settings for Snyk in your IDE, set **Custom Endpoint** to the appropriate value for SNYK-US-02,  SNYK-EU-01, and SNYK-AU-01 as follows.
 
-`https://api.eu.snyk.io`
+**SNYK-US-01** - `https://api.snyk.io` (no configuration required)
 
-#### **AU**
+**SNYK-US-02** - `https://api.us.snyk.io`
 
-`https://api.au.snyk.io`
+**SNYK-EU-01** - `https://api.eu.snyk.io`
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-05-02 at 10.42.52.png" alt="Configure the AU endpoint in Visual Studio Code"><figcaption><p>Configure the AU endpoint in Visual Studio Code</p></figcaption></figure>
+**SNYK-AU-01 -** `https://api.au.snyk.io`
 
 ### Broker URLs
 
-Follow [github.com/snyk/broker](https://github.com/snyk/broker) docs as usual BUT add an extra environment variable in the container:
+Use [github.com/snyk/broker](https://github.com/snyk/broker) and add an extra environment variable in the container:
 
-#### **EU**
+**SNYK-US-01** - `https://broker.snyk.io` (no configuration required)
 
-`-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
+**SNYK-US-02** - `-e BROKER_SERVER_URL=https://broker.us.snyk.io`
 
-#### **AU**
+**SNYK-EU-01** - `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
 
-`-e BROKER_SERVER_URL=https://broker.au.snyk.io`
+**SNYK-AU-01 -** `-e BROKER_SERVER_URL=https://broker.au.snyk.io`
 
-For Broker deployed by Helm chart, follow [https://github.com/snyk/snyk-broker-helm](https://github.com/snyk/snyk-broker-helm) docs, and add the following variable:
+For Broker deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm](https://github.com/snyk/snyk-broker-helm) and add the following variable:
 
-#### **EU**
+**SNYK-US-02** - `--set brokerServerUrl-https://broker.us.snyk.io`
 
-`--set brokerServerUrl=https://broker.eu.snyk.io`
+**SNYK-EU-01 -** `--set brokerServerUrl=https://broker.eu.snyk.io`
 
-#### **AU**
+**SNYK-AU-01 -** `--set brokerServerUrl=https://broker.au.snyk.io`
 
-`--set brokerServerUrl=https://broker.au.snyk.io`
-
-### Broker with high availability (HA) mode URLs.
+### Broker with high availability (HA) mode URLs
 
 Follow the [High availability mode](../enterprise-setup/snyk-broker/high-availability-mode.md) instructions BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
 
-#### **EU**
+**SNYK-US-02** - `-e BROKER_DISPATCHER_BASE_URL=https://api.us.snyk.io`
 
-`-e BROKER_DISPATCHER_BASE_URL=https://api.eu.snyk.io`
+**SNYK-EU-01 -** `-e BROKER_DISPATCHER_BASE_URL=https://api.eu.snyk.io`
 
-#### **AU**
+**SNYK-AU-01 -** `-e BROKER_DISPATCHER_BASE_URL=https://api.au.snyk.io`
 
-`-e BROKER_DISPATCHER_BASE_URL=https://api.au.snyk.io`
-
-For Broker deployed by Helm chart, edit the values.yaml file to include the relevant details in brokerDispatcherUrl.
+For Broker deployed by Helm chart, edit the `values.yaml` file to include the relevant details in brokerDispatcherUrl.
 
 ### Broker with Code Agent URLs
 
-Follow the [Snyk Broker - Code Agent](https://docs.snyk.io/integrations/snyk-broker/snyk-broker-code-agent) instructions BUT add an extra environment variable in the Code Agent container:
+Follow the [Snyk Broker - Code Agent](../enterprise-setup/snyk-broker/snyk-broker-code-agent/) instructions BUT add an extra environment variable in the Code Agent container:
 
-#### **EU**
+**SNYK-US-02** - `-e UPSTREAM_URL=https://deeproxy.us.snyk.io`
 
-`-e UPSTREAM_URL=https://deeproxy.eu.snyk.io`
+**SNYK-EU-01 -** `-e UPSTREAM_URL=https://deeproxy.eu.snyk.io`
 
-#### **AU**
+**SNYK-AU-01 -** `-e UPSTREAM_URL=https://deeproxy.au.snyk.io`
 
-`-e UPSTREAM_URL=https://deeproxy.au.snyk.io`
+For Broker with Code Agent deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm](https://github.com/snyk/snyk-broker-helm) and add the following variable in the Code Agent chart:
 
-For Broker with Code Agent deployed by Helm chart, follow the [https://github.com/snyk/snyk-broker-helm](https://github.com/snyk/snyk-broker-helm) instructions, and add the following variable in the Code Agent chart:
+**SNYK-US-02** - `--set upstreamUrlCodeAgent=https://deeproxy.us.snyk.io`
 
-#### **EU**
+**SNYK-EU-01 -** `--set upstreamUrlCodeAgent=https://deeproxy.eu.snyk.io`
 
-`--set upstreamUrlCodeAgent=https://deeproxy.eu.snyk.io`
+**SNYK-AU-01 -** `--set upstreamUrlCodeAgent=https://deeproxy.au.snyk.io`
 
-#### **AU**
+### Broker with Snyk Code Local Engine (SCLE)
 
-`--set upstreamUrlCodeAgent=https://deeproxy.au.snyk.io`
+Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-urls) section.
 
-### Snyk Code Local Engine (SCLE)
+Then add an extra variable to the `values-customer-settings.yml`:
 
-Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region, based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-urls) instructions.
+**SNYK-US-02**\
+`deeproxy:`\
+`verificationEndpoint: "https://api.us.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
 
-Then add an extra variable in the `values-customer-settings.yml`:
-
-#### **EU**
-
+**SNYK-EU-01**\
 `deeproxy:`\
 `verificationEndpoint: "https://api.eu.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
 
-#### **AU**
-
+**SNYK-AU-01**\
 `deeproxy:`\
 `verificationEndpoint: "https://api.au.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
 
-{% hint style="info" %}
-For information on GDPR compliance, see [How Snyk maintains GDPR compliance](how-snyk-handles-your-data.md#how-snyk-maintains-gdpr-compliance).
-{% endhint %}
+[^1]: 

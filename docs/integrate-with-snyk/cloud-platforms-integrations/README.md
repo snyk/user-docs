@@ -8,6 +8,6 @@ These integrations are available for IaC+.&#x20;
 
 The following pages provide information and instructions for cloud platforms integrations:
 
-* [AWS Integration](aws-integration/)
-* [Azure Integration](azure-integration-for-cloud-configurations/)
-* [Google Cloud Integration](google-cloud-integration/)
+* [AWS Integration](../../scan-with-snyk/snyk-iac/cloud-platforms-integrations/aws-integration/)
+* [Azure Integration](../../scan-with-snyk/snyk-iac/cloud-platforms-integrations/azure-integration-for-cloud-configurations/)
+* [Google Cloud Integration](../../scan-with-snyk/snyk-iac/cloud-platforms-integrations/google-cloud-integration/)
