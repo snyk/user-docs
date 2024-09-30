@@ -1,14 +1,13 @@
 # API endpoints index and notes
 
 {% hint style="info" %}
-In addition to this index, this section provides [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md) and pages with detailed information about using Snyk API endpoints.
+This section of the documentation provides, in addition to this index, [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md) and pages with detailed information about using Snyk API endpoints.
 
 For more information about using the Snyk API, see the following:
 
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
 * [Audit logs](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 * [Bazel](../../supported-languages-package-managers-and-frameworks/bazel/)
-* [Rust](../../supported-languages-package-managers-and-frameworks/rust.md): [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md)
 * [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 {% endhint %}
 
@@ -330,7 +329,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 ### [List issues for a package](../reference/issues.md#orgs-org\_id-packages-purl-issues)
 
-**More information:** [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md), [Rust](../../supported-languages-package-managers-and-frameworks/rust.md)
+**More information:** [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md), [Rust](../../supported-languages-package-managers-and-frameworks/rust.md), [List issues for a package](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
 
 ### [List issues for a given set of packages](../reference/issues.md#orgs-org\_id-packages-issues) (Currently not available to all customers)
 
@@ -525,6 +524,8 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 ### [Get latest issue counts](../reference/reporting-api-v1.md#reporting-counts-issues-latest)
 
 ## SBOM (GA and beta)
+
+**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md), [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md)
 
 ### [Get a project’s SBOM document](../reference/sbom.md)
 
