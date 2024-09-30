@@ -25,6 +25,14 @@ Now that Snyk no longer supports scanning of govendor Projects, a warning is iss
 * License scanning
 * Reports
 
+{% hint style="info" %}
+Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;
+
+In the case of projects that have a package manager, this means a release to the package manager.&#x20;
+
+In the case of Go and Unmanaged scans (C/C++) this requires an official release or tag on the Github repo.
+{% endhint %}
+
 ## Go Modules and dep support
 
 {% hint style="info" %}

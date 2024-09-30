@@ -21,6 +21,14 @@
 
 **Package manager versions**: NA
 
+{% hint style="info" %}
+Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;
+
+In the case of projects that have a package manager, this means a release to the package manager.&#x20;
+
+In the case of Go and Unmanaged scans (C/C++) this requires an official release or tag on the Github repo.
+{% endhint %}
+
 ## Open source dependency management
 
 Snyk features that support the management of open-source dependencies include the following:
