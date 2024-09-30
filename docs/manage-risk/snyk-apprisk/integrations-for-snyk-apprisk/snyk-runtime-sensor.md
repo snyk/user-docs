@@ -30,6 +30,7 @@ Ensure that your environment meets the following technical prerequisites to prop
 Managed Kubernetes services such as EKS Fargate or GKE Autopilot, are not supported, as the cluster nodes are managed by the cloud provider.
 {% endhint %}
 
+* Linux kernel - version 5.8 or higher.
 * Privileged access - you need either root or the following Linux capabilities: `BPF`, `PERFMON`, `SYS_RESOURCES`, `DAC_READ_SEARCH`, `SYS_PTRACE`, `NET_ADMIN`
 * Cluster nodes must support BTF.
 * Language support - Go, Java v8 or higher, .NET v2.0.9 or higher, Node.js v10 or higher, Python 3.6 or higher.
