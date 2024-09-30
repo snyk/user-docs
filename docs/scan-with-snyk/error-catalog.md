@@ -814,7 +814,7 @@ We encountered a fatal error from Git while trying to clone your code using your
 
 * Your provided credentials are correct or not scoped too narrowly.
 * The branch you've asked us to clone exists.
-* The repository you've provided is accessible from the internet is you are not connected through a broker.
+* The repository you've provided is accessible from the internet and you are not connected through a broker.
 
 And try the operation again.
 
@@ -2428,4 +2428,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-09-24T11:53:59.938Z
+--- Generated at 2024-09-30T09:29:03.644Z
