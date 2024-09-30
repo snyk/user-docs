@@ -40,6 +40,7 @@ Refer to the repositories for instructions on how to use the following additiona
 * [snyk-bulk](https://github.com/snyk-tech-services/snyk-bulk): Recursively scan source repositories for open-source vulnerabilities with the Snyk CLI outside of a build environment.
 * [snyk-bulk-action-scripts](https://github.com/snyk-tech-services/snyk-bulk-action-scripts): A collection of scripts to edit integration settings for every Organization in a Group in Snyk.
 * [snyk-deps-to-csv](https://github.com/snyk-tech-services/snyk-deps-to-csv): Collect all dependencies from all Organizations in a Group and output to a CSV file.
+* [add-ignore-reason-to-csv-report](https://github.com/snyk-labs/add-ignore-reason-to-csv-report)**:** Add ignore reason and user data to CSV ignore report from the UI.
 
 ## Tool ideas
 
