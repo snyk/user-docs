@@ -8,8 +8,7 @@ For more information about using the Snyk API, see the following:
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
 * [Audit logs](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 * [Bazel](../../supported-languages-package-managers-and-frameworks/bazel/)
-* [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md): [List issues for a package](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
-* [Rust](../../supported-languages-package-managers-and-frameworks/rust.md): [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md), [List issues for a package](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
+* [Rust](../../supported-languages-package-managers-and-frameworks/rust.md): [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md)
 * [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 {% endhint %}
 
