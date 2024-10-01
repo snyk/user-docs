@@ -91,8 +91,8 @@ If you are on the Enterprise plan and thus have access to the Snyk API, can use 
 To test for vulnerabilities, you can use the following API endpoints:
 
 * [Test for issues in a public package by name and version](../../snyk-api/reference/test-v1.md#test-npm-packagename-version)
-* [Test Dep Graph](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues)
-* [List issues for a package](../../snyk-api/reference/test-v1.md#test-dep-graph)
+* [Test Dep Graph](../../snyk-api/reference/test-v1.md#test-dep-graph)
+* [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues)
 
 ### Out of sync lockfiles
 

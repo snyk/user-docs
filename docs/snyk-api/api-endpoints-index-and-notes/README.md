@@ -338,7 +338,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 ### [List issues for a package](../reference/issues.md#orgs-org\_id-packages-purl-issues)
 
-**More information:** [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md), [Rust](../../supported-languages-package-managers-and-frameworks/rust.md), [List issues for a package](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
+**More information:** [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md), [Rust](../../supported-languages-package-managers-and-frameworks/rust.md), [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript), [List issues for a package page](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
 
 ### [List issues for a given set of packages](../reference/issues.md#orgs-org\_id-packages-issues) (Currently not available to all customers)
 
@@ -634,6 +634,8 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Test for issues in a public (npm) package by name and version](../reference/test-v1.md#test-npm-packagename-version)
 
+**More information:** [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript)
+
 ### [Test maven file](../reference/test-v1.md#test-maven)
 
 ### [Test  for issues in a (maven) public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version)
@@ -648,7 +650,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md).
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md), [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript)
 
 ### [Test composer.json & composer.lock file](../reference/test-v1.md#test-composer)
 
