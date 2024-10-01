@@ -103,7 +103,7 @@ Common Weakness Enumeration. An online glossary that categorizes software and ha
 
 ### DAST
 
-Dynamic Application Security Testing. A security analysis technique that interacts with a running application to examine its behavior and determine if there are security vulnerabilities. Compare [SAST](glossary.md#sast).
+Dynamic Application Security Testing. A security analysis technique that tests a running application from the outside to find security issues. Compare[ IAST](glossary.md#iast) and [SAST](glossary.md#sast).
 
 ### Dependency
 
