@@ -103,7 +103,7 @@ Common Weakness Enumeration. An online glossary that categorizes software and ha
 
 ### DAST
 
-Dynamic Application Security Testing. A security analysis technique that tests a running application from the outside to find security issues. Compare[ IAST](glossary.md#iast) and [SAST](glossary.md#sast).
+Dynamic Application Security Testing. A security analysis technique that tests a running application from the outside to find security issues. See also[ IAST](glossary.md#iast) and [SAST](glossary.md#sast).
 
 ### Dependency
 
@@ -170,7 +170,7 @@ Infrastructure as Code. See [Snyk Infrastructure as Code.](glossary.md#snyk-infr
 
 ### IAST
 
-Interactive Application Security Testing. A runtime analysis tool that focuses on code behavior during execution to determine behaviors of interest to you, for example, what packages are loaded, where data flows in the running application, or how end users interact with the application. Capabilities vary between vendors and products. IAST works with a running application to analyze it internally by using sensors or agents placed within the application's runtime environment. IAST offers more detailed insights than [DAST](glossary.md#dast), for example, by tracing the source of vulnerabilities in the code. Compare [SAST](glossary.md#sast).
+Interactive Application Security Testing. A runtime analysis tool that focuses on code behavior during execution to determine behaviors of interest to you, for example, what packages are loaded, where data flows in the running application, or how end users interact with the application. Capabilities vary between vendors and products. IAST works with a running application to analyze it internally by using sensors or agents placed within the application's runtime environment. IAST offers more detailed insights than [DAST](glossary.md#dast), for example, by tracing the source of vulnerabilities in the code. See also [SAST](glossary.md#sast).
 
 ### IDE
 
@@ -330,7 +330,7 @@ Static Analysis Results Interchange Format. A standard, JSON-based format for th
 
 ### SAST
 
-Static Application Security Testing. A security analysis technique that involves reviewing the source code of your software and identifying security vulnerabilities. Compare [DAST](glossary.md#dast). See also [Snyk Code](glossary.md#snyk-code) and [Snyk Infrastructure as Code](glossary.md#snyk-infrastructure-as-code).
+Static Application Security Testing. A security analysis technique that examines static source code to identify potential vulnerabilities without running the application. See also [IAST](glossary.md#iast), [DAST](glossary.md#dast), [Snyk Code](glossary.md#snyk-code), and [Snyk Infrastructure as Code](glossary.md#snyk-infrastructure-as-code).
 
 ### SBOM
 
