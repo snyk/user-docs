@@ -74,7 +74,7 @@ To delete an integration, scroll to the bottom of the page and click the **Remov
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-delete.png" alt="Remove integration"><figcaption><p>Remove integration</p></figcaption></figure>
 
-This deletes the integration configuration on the Snyk side and also deletes the **Partner Event Source** associated with this integration in AWS. You can verify that the event source has been deleted in the EventBridge console.
+This deletes the integration configuration on the Snyk side and the **Partner Event Source** associated with this integration in AWS. You can verify that the event source has been deleted in the EventBridge console.
 
 ## Understanding event data
 
@@ -94,8 +94,4 @@ Not all Snyk issue data is included in these events, though Snyk is continually 
 
 ### Snyk audit events
 
-{% hint style="info" %}
-This event type is available with Snyk Enterprise plans. See [Pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) for details.
-{% endhint %}
-
-This event type forwards Snyk platform audit logs with the same schema defined as part of the Snyk [v1 Audit Log API](https://snyk.docs.apiary.io/#reference/audit-logs). &#x20;
+This event type is available with Snyk Enterprise plans. See [Plans and pricing](https://snyk.io/plans/) for details.
