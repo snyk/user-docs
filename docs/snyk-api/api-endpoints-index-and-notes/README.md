@@ -3,7 +3,7 @@
 
 
 {% hint style="info" %}
-This index and notes section of the documentation provides, in addition to this index, [Solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
+This index and notes section of the documentation provides, in addition to this index, [solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
 
 * [Organization and Group identification for Projects using the API](undefined.md)
 * [Project issue paths V1 API endpoints](project-issue-paths-v1-api-endpoints.md)
@@ -13,12 +13,12 @@ See also the following sections on specific APIs:
 
 * [How to use Snyk Apps APIs](../how-to-use-snyk-apps-apis/)
 * [How to use Snyk SBOM and List issues APIs](../how-to-use-snyk-sbom-and-list-issues-apis/)
-* [How to use Snyk webooks APIs](../how-to-use-snyk-webhooks-apis/)
+* [How to use Snyk webhooks APIs](../how-to-use-snyk-webhooks-apis/)
 
 For more information about using the Snyk API, see the [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API).
 {% endhint %}
 
-This list includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This listing is a work in progress; additional information is being added continually. For additional information, see [Solutions for specific use cases](solutions-for-specific-use-cases.md) and [Scenarios for using Snyk API](scenarios-for-using-snyk-api.md).
+This index includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This index is a work in progress; additional information is being added continually.
 
 ## AccessRequests (beta)
 
