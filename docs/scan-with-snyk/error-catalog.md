@@ -2082,6 +2082,20 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 
 
 ---
+# Policies
+### [SNYK-POLICY-0001](#snyk-policy-0001)
+
+#### Unable to apply a policy with an invalid configuration
+
+Snyk could not apply a policy whilst executing a test because the configuration for the policy was invalid.
+You may be able to fix the policy and try again.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/manage-risk/policies](https://docs.snyk.io/manage-risk/policies)
+
+---
 # PRChecks
 ### [SNYK-PR-CHECK-0001](#snyk-pr-check-0001)
 
@@ -2428,4 +2442,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-09-30T09:29:03.644Z
+--- Generated at 2024-10-01T08:54:40.028Z
