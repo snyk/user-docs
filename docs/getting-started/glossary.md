@@ -170,7 +170,7 @@ Infrastructure as Code. See [Snyk Infrastructure as Code.](glossary.md#snyk-infr
 
 ### IAST
 
-Interactive Application Security Testing. Observing a running application to determine behaviors of interest to you, for example, what packages are loaded, where data flows in the running application, or how end users interact with the application. Capabilities vary between vendors and products. Compare [DAST](glossary.md#dast) and [SAST](glossary.md#sast).
+Interactive Application Security Testing. A runtime analysis tool that focuses on code behavior during execution to determine behaviors of interest to you, for example, what packages are loaded, where data flows in the running application, or how end users interact with the application. Capabilities vary between vendors and products. IAST works with a running application to analyze it internally by using sensors or agents placed within the application's runtime environment. IAST offers more detailed insights than [DAST](glossary.md#dast), for example, by tracing the source of vulnerabilities in the code. Compare [SAST](glossary.md#sast).
 
 ### IDE
 
