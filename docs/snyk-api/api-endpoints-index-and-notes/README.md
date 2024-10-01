@@ -3,11 +3,14 @@
 
 
 {% hint style="info" %}
-This section of the documentation provides, in addition to this index, [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md) and pages with detailed information about using Snyk API endpoints:
+This index and notes section of the documentation provides, in addition to this index, [Solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
 
-* [Organization and Group identification for Projects using the API](../undefined.md)
-* [Project issue paths V1 API endpoints](../project-issue-paths-v1-api-endpoints.md)
-* [Project type responses from the API](../project-type-responses-from-api.md)
+* [Organization and Group identification for Projects using the API](undefined.md)
+* [Project issue paths V1 API endpoints](project-issue-paths-v1-api-endpoints.md)
+* [Project type responses from the API](project-type-responses-from-api.md)
+
+See also the following sections on specific APIs:
+
 * [How to use Snyk Apps APIs](../how-to-use-snyk-apps-apis/)
 * [How to use Snyk SBOM and List issues APIs](../how-to-use-snyk-sbom-and-list-issues-apis/)
 * [How to use Snyk webooks APIs](../how-to-use-snyk-webhooks-apis/)
@@ -229,7 +232,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Get a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-)
 
-**More information:** [Org and group identification for Projects](../undefined.md)
+**More information:** [Org and group identification for Projects](undefined.md)
 
 ### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-/sso\_connections)
 
@@ -257,7 +260,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
 **More information:**\
-[Org and group identification for Projects](../undefined.md)
+[Org and group identification for Projects](undefined.md)
 
 ### [Add a member to an organization within a group](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
@@ -365,7 +368,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List all the organizations a user belongs to](../reference/organizations-v1.md#orgs)
 
-**More information:** [Org and group identification for Projects](../undefined.md)
+**More information:** [Org and group identification for Projects](undefined.md)
 
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
@@ -415,11 +418,11 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Get an ORG](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-) (beta)
 
-**More information:** [Org and group identification for Projects](../undefined.md)
+**More information:** [Org and group identification for Projects](undefined.md)
 
 ## Projects (v1)
 
-**More information:** [Project type responses from API](../project-type-responses-from-api.md)
+**More information:** [Project type responses from API](project-type-responses-from-api.md)
 
 ### [Update a project](../reference/projects-v1.md#org-orgid-project-projectid)
 
@@ -443,7 +446,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List all project issue paths](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-paths)
 
-**More information:** [V1 API Project issue paths endpoints](../project-issue-paths-v1-api-endpoints.md)
+**More information:** [V1 API Project issue paths endpoints](project-issue-paths-v1-api-endpoints.md)
 
 ### [Create jira issue](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue)
 
