@@ -117,7 +117,7 @@ The following shows the license policy text example at the bottom of the screen,
 
 #### **Alternate testing options**
 
-If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the OS packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues) to do the analysis.
+If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the open-source packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues) to do the analysis.
 
 ### **Options and plugins**
 
