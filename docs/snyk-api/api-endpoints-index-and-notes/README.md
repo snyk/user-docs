@@ -260,7 +260,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
 **More information:**\
-[Org and group identification for Projects](undefined.md)
+[Org and group identification for Projects](undefined.md), [Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
 
 ### [Add a member to an organization within a group](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
