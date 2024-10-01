@@ -8,17 +8,18 @@ The Loaded package risk factor is not supported by Snyk for operating system pac
 
 You can customize your AppRisk integrations from the **Integrations Hub** where the following integrations are available:
 
-* [Veracode SAST](third-party-integrations-for-snyk-apprisk.md#veracode-setup-guide)
-* [Checkmarx SAST ](third-party-integrations-for-snyk-apprisk.md#checkmarx-setup-guide)
-* [SonarQube](third-party-integrations-for-snyk-apprisk.md#sonarqube-setup-guide)
-* [Nightfall](third-party-integrations-for-snyk-apprisk.md#nightfall-setup-guide)
-* [GitGuardian](third-party-integrations-for-snyk-apprisk.md#gitguardian-setup-guide)
-* [Jira](third-party-integrations-for-snyk-apprisk.md#jira-setup-guide)
-* [Dynatrace](third-party-integrations-for-snyk-apprisk.md#dynatrace-setup-guide)
-* [Sysdig](third-party-integrations-for-snyk-apprisk.md#sysdig-setup-guide)
-* [Orca Security](third-party-integrations-for-snyk-apprisk.md#orca-security-setup-guide)
-* [CrowdStrike](third-party-integrations-for-snyk-apprisk.md#crowdstrike-setup-guide)
-* [SentinelOne](third-party-integrations-for-snyk-apprisk.md#sentinelone-setup-guide)
+* [Veracode SAST](connect-a-third-party-integration.md#veracode-setup-guide)
+* [Checkmarx SAST ](connect-a-third-party-integration.md#checkmarx-setup-guide)
+* [SonarQube](connect-a-third-party-integration.md#sonarqube-setup-guide)
+* [Nightfall](connect-a-third-party-integration.md#nightfall-setup-guide)
+* [GitGuardian](connect-a-third-party-integration.md#gitguardian-setup-guide)
+* [Jira](connect-a-third-party-integration.md#jira-setup-guide)
+* [Dynatrace](connect-a-third-party-integration.md#dynatrace-setup-guide)
+* [Sysdig](connect-a-third-party-integration.md#sysdig-setup-guide)
+* [Orca Security](connect-a-third-party-integration.md#orca-security-setup-guide)
+* [CrowdStrike](connect-a-third-party-integration.md#crowdstrike-setup-guide)
+* [SentinelOne](connect-a-third-party-integration.md#sentinelone-setup-guide)
+* [Datadog](connect-a-third-party-integration.md#datadog-setup-guide)
 
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
@@ -236,7 +237,7 @@ Multiple Jira integrations are available when using Snyk, each designed to suppo
 * Jira - Manually create a ticket for issues from Snyk.
 * [Jira Script](jira-and-slack-integrations/jira-integration.md) - Automatically create tickets for new vulnerabilities.
 * [Security in Jira](jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) - View vulnerability information in Jira and create a ticket from Jira. The ticket is not visible in Snyk.
-* [Jira for Snyk AppRisk](third-party-integrations-for-snyk-apprisk.md#jira-setup-guide) - As part of the policy action, you can automatically create Jira tickets from Snyk AppRisk Assets.
+* [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide) - As part of the policy action, you can automatically create Jira tickets from Snyk AppRisk Assets.
 
 The following table presents the functionality of all types of Jira integrations available in Snyk, specifies the supported Jira platform, the expected outcome, the authentication type, and the level of availability in Snyk.
 
@@ -245,7 +246,7 @@ The following table presents the functionality of all types of Jira integrations
 | Jira                                                                                       | <p>Create a manual ticket for issues from Snyk.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                                       | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
 | [Jira Script](jira-and-slack-integrations/jira-integration.md)                             | <p>Automatically create tickets for new vulnerabilities.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                              | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
 | [Security in Jira](jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) | <p>View vulnerability information in Jira and create a ticket from Jira. <br>* Jira ticket is not visible in Snyk.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                           | <p><strong>Authentication type</strong>:  JWT(JSON Web Token) as part of the Connect App framework.</p><p><br><strong>Availability level</strong>: Snyk Organization</p> |
-| [Jira for Snyk AppRisk](third-party-integrations-for-snyk-apprisk.md#jira-setup-guide)     | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
+| [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide)             | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
 
 ## Dynatrace setup guide
 
@@ -499,3 +500,37 @@ Alternatively, you can use an existing **API Token**.
 * Add the **API token**.
 * Click the **Done** button.
 * When the connection is established, the status of the SentinelOne integration is changed to **Connected**.
+
+## Datadog setup guide
+
+{% hint style="warning" %}
+**Release status**
+
+The Datadog integration is in Closed Beta and available with Snyk AppRisk Pro.
+
+If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
+The following risk factor is reported from the Datadog runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
+
+### Prerequisites <a href="#datadog-prerequisites" id="datadog-prerequisites"></a>
+
+You must set the **Datadog Container Monitoring** for the desired cluster.
+
+### Required parameters <a href="#datadog-required-parameters" id="datadog-required-parameters"></a>
+
+* **API key** - Navigate to the [Datadog API and Application key](https://docs.datadoghq.com/account\_management/api-app-keys/#add-an-api-key-or-client-token) page for all the steps you need to follow to create a new API key in Datadog. You can also use an existing API key by selecting it and clicking the Copy button.
+* **Application key** - Navigate to the [Datadog Add application keys](https://docs.datadoghq.com/account\_management/api-app-keys/#add-application-keys) page for all the steps you need to follow to create an Application key in Datadog.
+* **Site** - If you are using a non-default Datadog site, you need to select it from the list.
+
+### Integration Hub setup <a href="#datadog-integration-hub-setup" id="datadog-integration-hub-setup"></a>
+
+* Open the **Integration Hub** menu.
+* Select the **Observability** tag and search for Datadog.
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Add the **API key**.
+* Add the **Application key**.
+* Optional, select the Datadog **Site**.
+* Click the **Done** button.
+* When the connection is established, the status of the Datadog integration is changed to **Connected**.

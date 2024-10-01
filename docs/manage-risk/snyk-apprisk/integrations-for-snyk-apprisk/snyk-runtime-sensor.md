@@ -3,10 +3,10 @@
 {% hint style="warning" %}
 **Release status**
 
-The Snyk Runtime Sensor is available in a Closed Beta state and applies only to Snyk AppRisk Pro. &#x20;
+The Snyk Runtime Sensor is available in a Closed Beta state and applies only to Snyk AppRisk Pro.
 {% endhint %}
 
-The Snyk Runtime Sensor watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
+The Snyk Runtime Sensor is a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) that watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
 
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed), and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package) (only for application packages).
 
@@ -50,11 +50,8 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
 
 ## Install Snyk Runtime Sensor
 
-Ensure the following requirements are met, before installing the Snyk Runtime Sensor:
-
-* The Snyk Runtime Sensor is a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/).
-* The minimum requirements are met:&#x20;
-  * `CPU: 100m`&#x20;
+* The Snyk Runtime Sensor DaemonSet must meet the following minimum requirements:
+  * `CPU: 100m`
   * `Memory: 512Mi`
 * Choose one of the following methods to deploy the Snyk Runtime Sensor:&#x20;
   * [Install the Snyk Runtime Sensor using a Helm chart ](snyk-runtime-sensor.md#using-a-helm-chart)
