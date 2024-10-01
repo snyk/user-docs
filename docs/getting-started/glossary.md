@@ -439,7 +439,7 @@ Software Package Data Exchange. A file format used to document information on th
 
 ### Static Code Analysis
 
-A technique for looking at source code to find issues of interest to you. For example, you may trace through source code to determine reachability. In contrast, Static Application Security Testing focuses on security analysis. See [SAST](glossary.md#sast).
+A technique for examining source code to identify issues related to code quality, structure, or performance, such as determining code reachability or spotting potential inefficiencies. While this technique may touch on security concerns, its primary focus is often broader, covering various aspects of code health. In contrast, Static Application Security Testing ([SAST](glossary.md#sast)) specifically targets the identification of security vulnerabilities within the code, such as coding flaws that could lead to security risks.
 
 ## T
 
