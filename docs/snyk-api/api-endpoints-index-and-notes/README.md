@@ -556,6 +556,8 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Enable/Disable the Snyk Code settings for an org](../reference/sastsettings.md#orgs-org\_id-settings-sast)
 
+**More information:** [Enable Snyk Code](../../implement-snyk/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md) (Enterprise implementation guide, Phase 2)
+
 ### [Retrieves the SAST settings for an org](../reference/sastsettings.md#orgs-org\_id-settings-sast-1)
 
 ## ServiceAccounts
