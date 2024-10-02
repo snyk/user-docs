@@ -138,7 +138,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ### [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-audit\_logs-search)
 
-**More information:** [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
+**More information:** [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md), [AWS CloudTrail Lake](../../integrate-with-snyk/event-forwarding/aws-cloudtrail-lake.md)
 
 ### [Search Group audit logs](../reference/audit-logs.md#groups-group\_id-audit\_logs-search)
 
@@ -150,7 +150,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ### Group level audit logs
 
-Use [Search Group audit log](../reference/audit-logs.md#groups-group\_id-audit\_logs-search)s
+Use [Search Group audit logs](../reference/audit-logs.md#groups-group\_id-audit\_logs-search)
 
 ### Organization level audit logs
 
