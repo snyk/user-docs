@@ -464,7 +464,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List all jira issues](../reference/projects-v1.md#org-orgid-project-projectid-jira-issues)
 
-**More information:** [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [List all project issue paths](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-paths)
 
@@ -472,7 +472,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Create jira issue](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue)
 
-**More information:** [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [List all (project) ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignores)
 
