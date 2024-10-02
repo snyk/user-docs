@@ -254,13 +254,11 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
-**More information :**\
-[Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md), [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md), [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
-**More information:**\
-[Org and group identification for Projects](undefined.md), [Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
+**More information:** [Org and group identification for Projects](undefined.md), [Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
 
 ### [Add a member to an organization within a group](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
@@ -281,6 +279,20 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 **More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md), [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ### [Get the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group\_id-settings-iac-1)
+
+## Ignores (v1)
+
+**More information:** [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+
+### [List all ignores](../reference/ignores-v1.md#org-orgid-project-projectid-ignores)
+
+### [Replace ignores](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid)
+
+### [Add ignore](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-1)
+
+### [Retrieve ignore](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-1)
+
+### [Delete ignores](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-3)
 
 ## Import Projects (v1)
 
@@ -452,11 +464,15 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List all jira issues](../reference/projects-v1.md#org-orgid-project-projectid-jira-issues)
 
+**More information:** [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+
 ### [List all project issue paths](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-paths)
 
 **More information:** [V1 API Project issue paths endpoints](project-issue-paths-v1-api-endpoints.md)
 
 ### [Create jira issue](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue)
+
+**More information:** [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [List all (project) ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignores)
 
