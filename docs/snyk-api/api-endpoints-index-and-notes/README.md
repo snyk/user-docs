@@ -255,7 +255,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
 **More information :**\
-[Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md).
+[Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md), [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
@@ -556,29 +556,47 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Create a service account for an organization](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md)
+**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md), [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get a list of organization service accounts](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-1)
 
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+
 ### [Update an organization service account](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id)
+
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get an organization service account](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id-1)
 
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+
 ### [Delete a service account in an organization](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id-2)
+
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Manage an organization service account’s client secret](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-serviceaccount\_id-secrets)
 
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+
 ### [Create a service account for a group](../reference/serviceaccounts.md#groups-group\_id-service\_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md)
+**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md), [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get a list of group service accounts](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-1)
 
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+
 ### [Update a group service account](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id)
+
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get a group service account](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id-1)
 
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+
 ### [Delete a group service account](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id)
+
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Manage a group service account’s client secret](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id-secrets)
 
