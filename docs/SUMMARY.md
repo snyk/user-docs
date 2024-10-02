@@ -329,7 +329,7 @@
       * [Troubleshooting for Visual Studio Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/troubleshooting-for-visual-studio-code-extension.md)
     * [Snyk Language Server](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/README.md)
       * [IDE and CLI usage telemetry](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/ide-and-cli-usage-telemetry.md)
-      * [Example configurations for Snyk Language Server](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/example-configurations-for-snyk-lanugage-server.md)
+      * [Example configurations for Snyk Language Server](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/example-configurations-for-snyk-language-server.md)
     * [Troubleshooting IDEs](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/README.md)
       * [How to set environment variables by operating system OS for IDEs and CLI](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli.md)
       * [OAuth 2.0 authentication does not work](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md)
