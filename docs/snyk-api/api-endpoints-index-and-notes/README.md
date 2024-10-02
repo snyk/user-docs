@@ -304,7 +304,7 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)
 
-## Integrations (v1)
+## [Integrations (v1)](../reference/integrations-v1.md)
 
 ### [Add new integration](../reference/integrations-v1.md#org-orgid-integrations)
 
@@ -314,11 +314,15 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid)
 
+**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md) (Snyk Broker Code Agent)
+
 ### [Update](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings)
 
 ### [Retrieve](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings-1)
 
 ### [Clone an integration (with settings and credentials)](../reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)
+
+**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md) (Snyk Broker Code Agent)
 
 ### [Delete credentials](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication)
 
@@ -374,6 +378,8 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
+**More information:** [Set visibility and configure an Organization template](../../implement-snyk/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/) (Enterprise implementation guide Phase 2)
+
 ### [Remove organization](../reference/organizations-v1.md#org-orgid)
 
 ### [Update organization settings](../reference/organizations-v1.md#org-orgid-settings)
@@ -382,7 +388,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
 
-**More information:** [Provision users to Organizations using the V1 API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md).
+**More information:** [Provision users to Organizations using the API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md), [Configure SSO](../../implement-snyk/enterprise-implementation-guide/phase-2-configure-account/configure-sso.md)
 
 ### [List pending user provisions](../reference/organizations-v1.md#org-orgid-provision-1)
 
