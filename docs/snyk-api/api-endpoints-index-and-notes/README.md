@@ -74,6 +74,8 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 **Replaces:** DEPRECATED Get a list of app bots authorized to an organization
 
+**More information:** [Slack app](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Find the Slack App Bot ID)
+
 ### [Revoke app authorization for a Snyk organization](../reference/apps.md#orgs-org\_id-apps-installs-install\_id)
 
 **See also:** Revoke app authorization for a Snyk Group with install ID
@@ -516,6 +518,8 @@ The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.i
 
 The query-string parameter types is optional. The endpoint does not enforce specific project types and will return no matching projects if you enter a string that does not match a project type.
 
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Find your Project ID)
+
 ### [Updates project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id)
 
 ### [Get project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id-1)
@@ -636,11 +640,19 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Slack notification settings override for projects](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects)
 
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (List all Slack notification customizations for a project)
+
 ### [Create a new Slack settings override for a given project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id)
+
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Create a Slack notification customization for a Project)
 
 ### [Update Slack notification settings for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-1)
 
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Update a Slack notification customization for a Project)
+
 ### [Remove Slack settings override for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-2)
+
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Delete a Slack notification customization for a Project)
 
 ## Slack
 
