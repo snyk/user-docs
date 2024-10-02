@@ -300,6 +300,8 @@ If this fails, use [Get import job details](https://snyk.docs.apiary.io/#referen
 
 The poll results return a message per manifest processed, either `success: true` or `success: false.`
 
+**More information:** [Snyk Broker Code Agent ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/)
+
 ### [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)
 
 ## Integrations (v1)
