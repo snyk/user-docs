@@ -59,7 +59,7 @@ By default if issues are not ignored, or if you are not using [snyk-delta](https
 
 * [Ignore issues using a .snyk policy file](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
 * [Ignore issues from the Snyk UI](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/#ignore-issues-in-the-snyk-web-ui)
-* [Ignore issues using the API](../../../snyk-api/reference/ignores-v1.md)
+* [Ignore issues using the Ignores API](../../../snyk-api/reference/ignores-v1.md)
 * Use the Snyk Python API for bulk ignores: see [pysnyk](https://github.com/snyk-labs/pysnyk) and the demo [bulk-ignore-vulns-by-issueIdList](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py).
 
 ## Creating custom build artifacts
