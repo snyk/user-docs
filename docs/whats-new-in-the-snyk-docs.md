@@ -19,17 +19,21 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * A prerequisites section has been added to the Group level of [GitHub integration](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md#prerequisites), and more details about the [Pull personal repositories](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md#github-integrate-using-snyk-apprisk) option have been added to the same documentation page.&#x20;
 * The [Set up Insights for Snyk AppRisk ](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/)section was updated to emphasize the risk factors availability for each integration option.
-* The [Snyk Runtime Sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.  &#x20;
+* The [Snyk Runtime Sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.&#x20;
 
-### **Snyk  Integrations**
+### Snyk Broker
 
-* The Snowflake Data Share section has been updated to include a [Data Share Dictionary](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md), designed to help you navigate and build your dataset.
+The Universal Broker feature is now available in Early access. The Universal Broker separates deployment and container concerns from connection concerns. It allows for a smaller or a single deployment to support numerous connections of varied types.
 
 ### **Snyk CLI**
 
 * The [CLI commands and options summary](snyk-cli/cli-commands-and-options-summary.md) was updated.
 * [Authentication](snyk-cli/authenticate-to-use-the-cli.md) has been updated.
 * Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](snyk-cli/commands/config.md) help, [`snyk config environment`](snyk-cli/commands/config-environment.md) help.
+
+### **Snyk  Integrations**
+
+The Snowflake Data Share section has been updated to include a [Data Share Dictionary](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md), designed to help you navigate and build your dataset.
 
 ### **Other updates**
 
