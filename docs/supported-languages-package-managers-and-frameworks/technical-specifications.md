@@ -40,10 +40,6 @@ Snyk scans your codebase following this sequence:
 
 For more information, see [Snyk Code AI Engine](../scan-with-snyk/snyk-code/#ai-engine). For more information about Snyk Code language support, see [Supported languages, package managers, and frameworks (Snyk Code)](./#code-analysis-snyk-code).
 
-### Code Quality
-
-Code Quality is an experimental feature. If you are interested in using the feature, contact your Snyk team.
-
 ## Snyk Open Source
 
 Snyk for Open Source and licensing works as follows.
