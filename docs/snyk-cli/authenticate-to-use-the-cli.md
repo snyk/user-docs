@@ -10,7 +10,7 @@ If you are not in the system default environment, `SNYK-US-01`, use the [`snyk c
 
 ### Steps to authenticate using OAuth 2.0 protocol
 
-When you are using the CLI locally, **Snyk recommends tha tyou use the OAuth 2.0 protocol.**  Follow these steps:
+When you are using the CLI locally, **Snyk recommends that you use the OAuth 2.0 protocol.**  Follow these steps:
 
 1. Run the `snyk auth` CLI command.
 2. Log in if you are prompted to do so.
