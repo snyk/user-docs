@@ -176,6 +176,8 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Collection
 
+**More information:** [Project collections groupings](../../snyk-admin/snyk-projects/project-collections-groupings/)
+
 ### [Create a collection](../reference/collection.md#orgs-org\_id-collections)
 
 ### [Get collections](../reference/collection.md#orgs-org\_id-collections-1)
@@ -246,7 +248,11 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List all tags in a group](../reference/groups-v1.md#group-groupid-tags)
 
+**More information**: [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)
+
 ### [Delete tag from group](../reference/groups-v1.md#group-groupid-tags-delete)
+
+**More information:** [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)
 
 ### [Update group settings](../reference/groups-v1.md#group-groupid-settings)
 
@@ -460,7 +466,11 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Add a tag to a project](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
+**More information:** [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)
+
 ### [Remove a tag from a project](../reference/projects-v1.md#org-orgid-project-projectid-tags-remove)
+
+**More information:** [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)
 
 ### [Update project settings](../reference/projects-v1.md#org-orgid-project-projectid-settings)
 
@@ -504,13 +514,15 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Applying (project) attributes](../reference/projects-v1.md#org-orgid-project-projectid-attributes)
 
-By using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) you can set attributes for Snyk Projects including business criticality, lifecycle stage, and environment once the project has been created . To do so:
+By using the API endpoint Applying attributes, you can set attributes for Snyk Projects including business criticality, lifecycle stage, and environment once the project has been created . To do so:
 
-* Import the project using the Snyk API v1 endpoint [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets).
-* Get the status API ID from Import targets.
-* Poll using [Import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details) until all imports have completed.
-* Parse the project IDs from the projectURL field.
-* Use the [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes) endpoint to set the project attributes.
+* Import the project using the  API endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
+* Get the status API ID from [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
+* Poll using the endpoint [Import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) until all imports have completed.
+* Parse the project IDs from the `projectURL` field.
+* Use the endpoint [Applying attributes](../reference/projects-v1.md#org-orgid-project-projectid-attributes) to set the project attributes.
+
+**More information:** [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md)
 
 ### [List all Aggregated (Project) issues](../reference/projects-v1.md#org-orgid-project-projectid-aggregated-issues)
 
@@ -524,9 +536,11 @@ The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.i
 
 The query-string parameter types is optional. The endpoint does not enforce specific project types and will return no matching projects if you enter a string that does not match a project type.
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Find your Project ID)
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Find your Project ID); [Snyk Projects](../../snyk-admin/snyk-projects/); [Project information](../../snyk-admin/snyk-projects/project-information.md)
 
 ### [Updates project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id)
+
+**More information:** [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md)
 
 ### [Get project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id-1)
 
@@ -543,6 +557,8 @@ The query-string parameter types is optional. The endpoint does not enforce spec
 ### [Delete pull request template for group](../reference/pull-request-templates.md#groups-group\_id-settings-pull\_request\_template-2)
 
 ## Reporting API (v1)
+
+**More information:** [Legacy reports](../../manage-issues/reporting/legacy-reports/); [Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/)
 
 ### [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest)
 
@@ -668,7 +684,7 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Get targets by org ID](../reference/targets.md#orgs-org\_id-targets)&#x20;
 
-**More information:** [Target definition on the Projects page](../../snyk-admin/snyk-projects/#target)
+**More information:** [Target definition on the Snyk Projects page](../../snyk-admin/snyk-projects/#target)
 
 ### [Get target by target ID](../reference/targets.md#orgs-org\_id-targets-target\_id)
 
