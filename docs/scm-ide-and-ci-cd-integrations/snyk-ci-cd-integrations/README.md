@@ -1,5 +1,13 @@
 # Snyk CI/CD integrations
 
+{% hint style="info" %}
+Snyk recommends using the [Snyk CLI ](https://github.com/snyk/cli)for CI/CD integrations for the following reasons:
+
+* You have the flexibility to test in-progress features of the CLI by using the [preview channel](../../snyk-cli/releases-and-channels-for-the-snyk-cli.md#preview).
+* The CLI provides feature-rich [stable releases](../../snyk-cli/releases-and-channels-for-the-snyk-cli.md#stable) at a regular cadence.
+* With the CLI, you have options to [extend use cases](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/) as you deploy Snyk at scale
+{% endhint %}
+
 When you [decide to use a CI/CD Integration,](../git-repository-and-ci-cd-integrations-comparisons.md) you typically adopt the integration in stages. You will select a deployment method and implement strategies for the code you are scanning. See [Snyk CI/CD Integration deployment and strategies](snyk-ci-cd-integration-deployment-and-strategies/).
 
 For detailed information, you can refer to the pages for the integration you are using:
