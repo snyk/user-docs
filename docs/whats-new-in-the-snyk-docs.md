@@ -40,7 +40,6 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * The updated [Regional hosting and data residency](working-with-snyk/regional-hosting-and-data-residency.md) page was published.
 * [Glossary](getting-started/glossary.md) terms were updated for SCA, SAST, DAST, and IAST as well as Software Composition Analysis.
 * [Early Access](getting-started/snyk-release-process.md#early-access) release status notices were updated.
-* The [Universal Broker ](enterprise-setup/snyk-broker/universal-broker/)feature is now available in Early Access. The Universal Broker uses OAuth2 with the Snyk Platform through Snyk Apps to reduce risks and address operational challenges.
 
 ## August 2024
 
