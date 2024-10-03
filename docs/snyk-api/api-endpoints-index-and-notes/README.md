@@ -402,11 +402,15 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
 
-**More information:** [Provision users to Organizations using the API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md), [Configure SSO](../../implement-snyk/enterprise-implementation-guide/phase-2-configure-account/configure-sso.md)
+**More information:** [Provision users to Organizations using the API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md); [Configure SSO](../../implement-snyk/enterprise-implementation-guide/phase-2-configure-account/configure-sso.md)
 
 ### [List pending user provisions](../reference/organizations-v1.md#org-orgid-provision-1)
 
+**More information:** [Provision users to Organizations using the API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md)
+
 ### [Delete pending user provision](../reference/organizations-v1.md#org-orgid-provision-2)
+
+**More information:** [Provision users to Organizations using the API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md)
 
 ### [Set notification settings](../reference/organizations-v1.md#org-orgid-notification-settings)
 
