@@ -6,7 +6,7 @@
 This index and notes section of the documentation provides, in addition to this index, [solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
 
 * [Organization and Group identification for Projects using the API](undefined.md)
-* [Project issue paths V1 API endpoints](project-issue-paths-v1-api-endpoints.md)
+* [Project issue paths V1 API endpoints](project-issue-paths-api-endpoints.md)
 * [Project type responses from the API](project-type-responses-from-api.md)
 
 See also the following sections on specific APIs:
@@ -142,9 +142,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ### [Search Group audit logs](../reference/audit-logs.md#groups-group\_id-audit\_logs-search)
 
-**More information:** [Filter through your audit logs more efficiently with the new GA REST version of the audit logs API, and api.access is now opt-in](https://updates.snyk.io/filter-through-your-audit-logs-more-efficiently-with-the-new-ga-rest-version-of-the-audit-logs-api-and-api-access-is-now-opt-in-291850)
-
-[Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
+**More information:** [Filter through your audit logs more efficiently with the new GA REST version of the audit logs API](https://updates.snyk.io/filter-through-your-audit-logs-more-efficiently-with-the-new-ga-rest-version-of-the-audit-logs-api-and-api-access-is-now-opt-in-291850) (product update); [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 
 ## Audit logs (v1)
 
@@ -208,7 +206,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Create a Custom Base Image from an existing container project](../reference/custom-base-images.md#custom\_base\_images)
 
-**More information:** [Use Custom Base Image Recommendations: Mark the created Project as a custom base image](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations#mark-the-created-project-as-a-custom-base-image)
+**More information:** [Mark the created Project as a custom base image](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/#mark-the-created-project-as-a-custom-base-image) (Use Custom Base Image Recommendations)
 
 ### [Get a custom base image collection](../reference/custom-base-images.md#custom\_base\_images-1)
 
@@ -242,7 +240,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Delete a user from a Group SSO connection](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md) and [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md).
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md); [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 
 ## Groups (v1)
 
@@ -256,11 +254,11 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md), [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Update member roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md); [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
-**More information:** [Org and group identification for Projects](undefined.md), [Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
+**More information:** [Org and group identification for Projects](undefined.md); [Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
 
 ### [Add a member to an organization within a group](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
@@ -272,13 +270,13 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Update the Infrastructure as Code Settings for an org](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
-**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
+**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md); [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ### [Get the Infrastructure as Code Settings for a group](../reference/iacsettings.md#orgs-org\_id-settings-iac-1)
 
 ### [Update the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group\_id-settings-iac)
 
-**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md), [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
+**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md);[Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ### [Get the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group\_id-settings-iac-1)
 
@@ -418,7 +416,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List members](../reference/organizations-v1.md#org-orgid-members)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md) and [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)
+**More information:** [Update member roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md); [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)
 
 ### [Update a member in the organization](../reference/organizations-v1.md#org-orgid-members-userid)
 
@@ -430,11 +428,11 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Update a member's role in the organization](../reference/organizations-v1.md#org-orgid-members-update-userid)
 
-**More information:** [User role management](../../snyk-admin/user-roles/user-role-management.md)
+**More information:** [User role management](../../snyk-admin/user-roles/user-role-management.md); [Update member roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md)
 
 ### [Invite users](../reference/organizations-v1.md#org-orgid-invite)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md)
+**More information:** [Update member roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md)
 
 ## Orgs (GA and beta)
 
@@ -478,7 +476,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List all project issue paths](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-paths)
 
-**More information:** [V1 API Project issue paths endpoints](project-issue-paths-v1-api-endpoints.md)
+**More information:** [Project issue paths API endpoints](project-issue-paths-api-endpoints.md)
 
 ### [Create jira issue](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue)
 
@@ -538,7 +536,7 @@ The query-string parameter types is optional. The endpoint does not enforce spec
 
 ### [Create or update pull request template for group](../reference/pull-request-templates.md#groups-group\_id-settings-pull\_request\_template)
 
-**More information:** [Create and manage a custom PR template using the API](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api).
+**More information:** [Create and manage a custom PR template using the API](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api)
 
 ### [Get pull request template for group](../reference/pull-request-templates.md#groups-group\_id-settings-pull\_request\_template-1)
 
@@ -548,15 +546,13 @@ The query-string parameter types is optional. The endpoint does not enforce spec
 
 ### [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest)
 
-To list all projects that have a vulnerability linked to a CVE use the capability to filter on strings with the [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) and [Get List of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues) reporting endpoints. Filter by the identifier attribute.
+To list all Projects that have a vulnerability linked to a CVE, use the capability to filter on strings with the reporting endpoints [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest) and [Get List of issues](../reference/reporting-api-v1.md#reporting-issues). Filter by the identifier attribute.
 
-To get a list of issues that have been fixed: Use [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) and filter by `“isFixed”: true` in the request body. This endpoint also provides a [list of all IaC issues](../../scan-with-snyk/snyk-iac/view-snyk-iac-issue-reports.md#api-access-to-iac-issues).
-
-[Migrated Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues)
+To get a list of issues that have been fixed, use the endpoint [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest) and filter by `“isFixed”: true` in the request body. This endpoint also provides a [list of all IaC issues](../../scan-with-snyk/snyk-iac/view-snyk-iac-issue-reports.md#api-access-to-iac-issues).
 
 ### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
 
-To list all projects that have a vulnerability linked to a CVE use the capability to filter on strings with the [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) and [Get List of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues) (reporting) endpoints. Filter by the identifier attribute.
+See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Get test counts](../reference/reporting-api-v1.md#reporting-counts-tests)
 
@@ -718,7 +714,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md), [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript)
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md);[ Unmanaged JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript) (Guidance for JavaScript and Node.js)
 
 ### [Test composer.json & composer.lock file](../reference/test-v1.md#test-composer)
 
@@ -744,7 +740,7 @@ To list all projects that have a vulnerability linked to a CVE use the capabilit
 
 Note: Use this endpoint to remove users from a group.
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md).
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)
 
 ### [Get user by ID](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
 

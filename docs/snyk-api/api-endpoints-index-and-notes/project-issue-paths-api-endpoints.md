@@ -1,6 +1,6 @@
-# Snyk API v1 Project issue paths endpoints
+# Project issue paths API endpoints
 
-The following provides information in addition to the information in the [Migrated API v1 reference docs](https://snyk.docs.apiary.io/reference/projects/project-issue-paths/list-all-project-issue-paths).
+The following provides information in addition to the information in the API [Reference](../reference/).
 
 The `paths` endpoints provide details of the paths through which an issue has been introduced.
 
