@@ -1,11 +1,11 @@
 # Group Projects by branch or version for monitoring
 
-{% hint style="warning" %}
-**Release status and feature availability**
+{% hint style="info" %}
+**Feature availability**
 
-Grouping Projects by branch or version is in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
+Grouping Projects by branch or version is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 
-The feature is supported for Open Source. In some areas, the feature is not fully supported.
+The feature is supported for areas of Open Source.
 {% endhint %}
 
 Your Project may have multiple states that you want to monitor separately, for example, branches, releases, or deployments. You can use the `--target-reference` option to separate Projects into these specific groupings.

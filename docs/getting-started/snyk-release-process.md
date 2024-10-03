@@ -31,15 +31,15 @@ Not all features follow all these stages, and timelines for each feature to move
 **Snyk features in Early Access**
 
 * [Snyk GitHub Cloud App](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md)
-* Projects
-  * [Group Projects by branch or version for monitoring](../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
-  * [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
+*   Projects
+
+    [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
 * Snyk Code
   * [Snyk Code custom rules](../scan-with-snyk/snyk-code/snyk-code-custom-rules/)
   * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
 * Risk Management
   * [Risk Score](../manage-risk/prioritize-issues-for-fixing/risk-score.md)
-  * [Reachabilty analysis](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
+  * Reachability[ analysis](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
 * Snyk Broker
   * [Snyk Broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
   * [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
