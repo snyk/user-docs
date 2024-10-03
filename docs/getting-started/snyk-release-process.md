@@ -19,10 +19,10 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 * [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
 * Third-party integrations for Snyk AppRisk:
-  * [Nightfall](../integrate-with-snyk/connect-a-third-party-integration.md#nightfall-setup-guide)
-  * [Dynatrace](../integrate-with-snyk/connect-a-third-party-integration.md#dynatrace-setup-guide)
-  * [Sysdig](../integrate-with-snyk/connect-a-third-party-integration.md#sysdig-setup-guide)
-  * [Orca Security](../integrate-with-snyk/connect-a-third-party-integration.md#orca-security-setup-guide)
+  * [Nightfall](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#nightfall-setup-guide)
+  * [Dynatrace](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#dynatrace-setup-guide)
+  * [Sysdig](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sysdig-setup-guide)
+  * [Orca Security](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#orca-security-setup-guide)
 
 ## Early Access
 
@@ -49,11 +49,11 @@ Not all features follow all these stages, and timelines for each feature to move
   * [Snyk CLI pnpm support](../supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm)
   * [Improved Gradle SCM scanning](../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access)
 * Third-party integrations for Snyk AppRisk:&#x20;
-  * [Veracode](../integrate-with-snyk/connect-a-third-party-integration.md#veracode-setup-guide)
-  * [Checkmarx](../integrate-with-snyk/connect-a-third-party-integration.md#checkmarx-setup-guide)
-  * [SonarQube](../integrate-with-snyk/connect-a-third-party-integration.md#sonarqube-setup-guide)
-  * [GitGuardian](../integrate-with-snyk/connect-a-third-party-integration.md#gitguardian-setup-guide)
-  * [Jira](../integrate-with-snyk/connect-a-third-party-integration.md#jira-setup-guide)
+  * [Veracode](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#veracode-setup-guide)
+  * [Checkmarx](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#checkmarx-setup-guide)
+  * [SonarQube](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sonarqube-setup-guide)
+  * [GitGuardian](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#gitguardian-setup-guide)
+  * [Jira](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#jira-setup-guide)
 
 ## General Availability
 

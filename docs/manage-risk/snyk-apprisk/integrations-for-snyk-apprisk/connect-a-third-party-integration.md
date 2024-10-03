@@ -78,7 +78,7 @@ Snyk AppRisk Pro does not support the Checkmarx One integration.
 
 ### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>
 
-* Install and configure your [Snyk Broker](../enterprise-setup/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
+* Install and configure your [Snyk Broker](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
 * Ensure you have properly used Git Setting for your Checkmarx Project. Access the Checkmarx [Set project's remote source settings as GIT](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git) documentation page for more details.&#x20;
 
 ### Required parameters <a href="#checkmarx-required-parameters" id="checkmarx-required-parameters"></a>
@@ -235,18 +235,18 @@ You can add only one Jira profile to the Jira integration.
 Multiple Jira integrations are available when using Snyk, each designed to support specific needs.
 
 * Jira - Manually create a ticket for issues from Snyk.
-* [Jira Script](jira-and-slack-integrations/jira-integration.md) - Automatically create tickets for new vulnerabilities.
-* [Security in Jira](jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) - View vulnerability information in Jira and create a ticket from Jira. The ticket is not visible in Snyk.
+* [Jira Script](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md) - Automatically create tickets for new vulnerabilities.
+* [Security in Jira](../../../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) - View vulnerability information in Jira and create a ticket from Jira. The ticket is not visible in Snyk.
 * [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide) - As part of the policy action, you can automatically create Jira tickets from Snyk AppRisk Assets.
 
 The following table presents the functionality of all types of Jira integrations available in Snyk, specifies the supported Jira platform, the expected outcome, the authentication type, and the level of availability in Snyk.
 
-| Jira integration type                                                                      | Functionality                                                                                                                                                                                                                                                                          | Authentication                                                                                                                                                           |
-| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Jira                                                                                       | <p>Create a manual ticket for issues from Snyk.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                                       | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
-| [Jira Script](jira-and-slack-integrations/jira-integration.md)                             | <p>Automatically create tickets for new vulnerabilities.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                              | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
-| [Security in Jira](jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) | <p>View vulnerability information in Jira and create a ticket from Jira. <br>* Jira ticket is not visible in Snyk.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                           | <p><strong>Authentication type</strong>:  JWT(JSON Web Token) as part of the Connect App framework.</p><p><br><strong>Availability level</strong>: Snyk Organization</p> |
-| [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide)             | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
+| Jira integration type                                                                                                   | Functionality                                                                                                                                                                                                                                                                          | Authentication                                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Jira                                                                                                                    | <p>Create a manual ticket for issues from Snyk.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                                       | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
+| [Jira Script](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md)                             | <p>Automatically create tickets for new vulnerabilities.<br><br><strong>Supported for</strong>: <br>- Jira On-Cloud<br>- Jira Data Centre<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                                                              | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Organization</p>                                     |
+| [Security in Jira](../../../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) | <p>View vulnerability information in Jira and create a ticket from Jira. <br>* Jira ticket is not visible in Snyk.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br><br><strong>Outcome</strong>:<br>- Create Issue tickets </p>                                           | <p><strong>Authentication type</strong>:  JWT(JSON Web Token) as part of the Connect App framework.</p><p><br><strong>Availability level</strong>: Snyk Organization</p> |
+| [Jira for Snyk AppRisk](connect-a-third-party-integration.md#jira-setup-guide)                                          | <p>Use the "Create Jira ticket" action from a Snyk policy to create Jira tickets from Snyk AppRisk Assets automatically.<br><br><strong>Supported for</strong>:<br>- Jira On-Cloud<br>- Jira Data Centre (coming soon)<br><br><strong>Outcome</strong>:<br>- Create Asset tickets </p> | <p><strong>Authentication type</strong>:  Personal Access Token</p><p><br><strong>Availability level</strong>: Snyk Group</p>                                            |
 
 ## Dynatrace setup guide
 
@@ -258,7 +258,7 @@ The Dynatrace integration is in Closed Beta and available with Snyk AppRisk Pro.
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
+The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
 
 ### Prerequisites <a href="#dynatrace-prerequisites" id="dynatrace-prerequisites"></a>
 
@@ -312,7 +312,7 @@ The Sysdig integration is in Closed Beta and available with Snyk AppRisk Pro.
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
+The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
 
 ### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
 
@@ -359,7 +359,7 @@ The Orca Security integration is in Closed Beta and available with Snyk AppRisk 
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following[ risk factors](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Orca runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
+The following[ risk factors](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Orca runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
 
 ### Prerequisites <a href="#orca-prerequisites" id="orca-prerequisites"></a>
 
@@ -401,7 +401,7 @@ The CrowdStrike integration is in Closed Beta and available with Snyk AppRisk Pr
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factor is reported from the CrowdStrike runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
+The following risk factor is reported from the CrowdStrike runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
 
 ### Prerequisites <a href="#crowdstrike-prerequisites" id="crowdstrike-prerequisites"></a>
 
@@ -452,7 +452,7 @@ The SentinelOne integration is in Closed Beta and available with Snyk AppRisk Pr
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factor is reported from the SentinelOne runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
+The following risk factor is reported from the SentinelOne runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
 
 ### Prerequisites <a href="#sentinelone-prerequisites" id="sentinelone-prerequisites"></a>
 
@@ -511,7 +511,7 @@ The Datadog integration is in Closed Beta and available with Snyk AppRisk Pro.
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factor is reported from the Datadog runtime integration: [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
+The following risk factor is reported from the Datadog runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
 
 ### Prerequisites <a href="#datadog-prerequisites" id="datadog-prerequisites"></a>
 

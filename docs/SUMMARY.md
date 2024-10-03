@@ -428,7 +428,7 @@
     * [Terraform Enterprise integration for Snyk IaC](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/terraform-enterprise-integration-for-snyk-iac.md)
   * [Git repositories and CI/CD comparisons](scm-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md)
 * [Integrate with Snyk](integrate-with-snyk/README.md)
-  * [Third-party integrations for Snyk AppRisk](integrate-with-snyk/connect-a-third-party-integration.md)
+  * [Third-party integrations for Snyk AppRisk](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
   * [Snyk runtime sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
   * [Jira and Slack Integrations](integrate-with-snyk/jira-and-slack-integrations/README.md)
     * [Snyk Security in Jira Cloud Integration](integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md)

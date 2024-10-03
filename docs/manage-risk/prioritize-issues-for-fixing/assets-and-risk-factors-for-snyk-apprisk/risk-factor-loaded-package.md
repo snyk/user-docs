@@ -28,7 +28,7 @@ Third-party integrations make the Loaded package risk factor even stronger by pr
 
 ## Technical details for the Loaded package risk factor
 
-The [runtime integrations ](../../../integrate-with-snyk/connect-a-third-party-integration.md)must provide a list of packages loaded in a container running within Kubernetes. The container is identified by:
+The [runtime integrations ](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)must provide a list of packages loaded in a container running within Kubernetes. The container is identified by:
 
 * the Kubernetes cluster name
 * the Kubernetes namespace
