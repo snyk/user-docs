@@ -414,19 +414,23 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List members](../reference/organizations-v1.md#org-orgid-members)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md) and [Remove members from Groups and Orgs using the API.](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md) and [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)
 
 ### [Update a member in the organization](../reference/organizations-v1.md#org-orgid-members-userid)
 
+**More information:** [User role management](../../snyk-admin/user-roles/user-role-management.md)
+
 ### [Remove a member from the organization](../reference/organizations-v1.md#org-orgid-members-userid-1)
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md).
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md); [User role management](../../snyk-admin/user-roles/user-role-management.md)
 
-### [Update a member's roles in your organization](../reference/organizations-v1.md#org-orgid-members-update-userid)
+### [Update a member's role in the organization](../reference/organizations-v1.md#org-orgid-members-update-userid)
+
+**More information:** [User role management](../../snyk-admin/user-roles/user-role-management.md)
 
 ### [Invite users](../reference/organizations-v1.md#org-orgid-invite)
 
-**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md).
+**More information:** [Update member roles using the V1 API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md)
 
 ## Orgs (GA and beta)
 
