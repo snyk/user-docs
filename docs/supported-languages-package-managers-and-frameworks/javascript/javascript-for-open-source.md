@@ -31,7 +31,7 @@ Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
 {% hint style="info" %}
 Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;
 
-In the case of javascript packages this means a release to the npmjs package registry.&#x20;
+In the case of JavaScript packages this means a release to the npmjs package registry.&#x20;
 {% endhint %}
 
 ## Open source and licensing

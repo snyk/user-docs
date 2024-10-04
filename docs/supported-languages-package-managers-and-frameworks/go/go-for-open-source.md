@@ -1,9 +1,9 @@
 # Go for open source
 
 {% hint style="warning" %}
-Beginning on January 1 2023 Snyk no longer supports govendor Projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.
+Since January 1, 2023, Snyk has not supported govendor Projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.
 
-Now that Snyk no longer supports scanning of govendor Projects, a warning is issued and no results are provided.
+Since Snyk no longer supports scanning of govendor Projects, a warning is issued and no results are provided.
 {% endhint %}
 
 ## Go for open source support
@@ -30,7 +30,7 @@ Only official releases are tracked. Commits, including into the default branch, 
 
 In the case of projects that have a package manager, this means a release to the package manager.&#x20;
 
-In the case of Go and Unmanaged scans (C/C++) this requires an official release or tag on the Github repo.
+In the case of Go and Unmanaged scans (C/C++) this requires an official release or tag on the GitHub repo.
 {% endhint %}
 
 ## Go Modules and dep support
