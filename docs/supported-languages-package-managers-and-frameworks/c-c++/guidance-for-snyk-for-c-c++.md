@@ -1,6 +1,6 @@
 # Guidance for Snyk for C/C++
 
-This page reviews considerations about languages and package managers; to help you apply Snyk effectively in your technology stack.
+This page reviews considerations about languages and package managers, to help you apply Snyk effectively in your technology stack.
 
 ## Code analysis
 
@@ -10,7 +10,7 @@ This page reviews considerations about languages and package managers; to help y
 
 ## Open source and licensing
 
-In the case of package managers like npm or maven, it traditionally uses the managed open source capabilities of `snyk test` and `snyk monitor`. In the case of C/C++, Snyk supports unmanaged dependencies by adding `--unmanaged`.
+In the case of package managers like npm or Maven, Snyk traditionally uses the managed open source capabilities of `snyk test` and `snyk monitor`. In the case of C/C++, Snyk supports unmanaged dependencies by adding `--unmanaged`.
 
 {% hint style="info" %}
 Snyk does not hook into a build nor rely on a build to perform scanning. Snyk performs analysis from source code.
@@ -39,14 +39,6 @@ Under **Additional Parameters** in the IDE settings, enter the `--unmanaged` opt
 
 ### CLI Tips and tricks
 
-:link: [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/)
-
-#### What to test
-
-Use the `--help` option in the CLI for details of Snyk CLI commands.
-
-:link: [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
-
 #### Codebase
 
 Snyk does not rely on a build to perform analysis. Only the source code is required.
@@ -61,50 +53,54 @@ snyk code test
 If you precompile components, the source code should still be present to get the best results and coverage.
 {% endhint %}
 
-For reporting, you can generate reports using the [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using **--json** and **--sarif**, respectively. See [Exporting the test results to a JSON or SARIF file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results).
+For reporting, you can generate reports using the [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts. Additionally, there are JSON and SARIF export capabilities for programmatic access to results, using the options `--json` and `--sarif`, respectively. For more information, see [Exporting the test results to a JSON or SARIF file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results).
 
 #### **Open Source libraries**
 
-For C/C++ open source, use the **--unmanaged** option to analyze license compliance issues and known security issues associated with open source. See [Snyk for C/C++](./) for details.
-
-* To test, make sure the open source source code is present, and it may be placed in a vendor folder.&#x20;
-* If you precompile open source, the open source code must still be present. For Snyk to make an accurate comparison with its existing knowledge base, the open source code must remain present.
+For C/C++ open source, use the `--unmanaged` option to analyze license compliance issues and known security issues associated with open source.
 
 ```
 snyk test --unmanaged
 ```
 
-Similarly, for monitoring and sharing reporting:
+See [Snyk for C/C++](./) for details.
+
+* To test, ensure the open source source code is present; it may be placed in a vendor folder.&#x20;
+* If you precompile open source, the open source code must still be present. For Snyk to make an accurate comparison with its existing knowledge base, the open source code must remain present.
+
+Similarly, for monitoring and sharing reporting, use the following command:
 
 ```
 snyk monitor --unmanaged --org=<org-id>
 ```
 
-Where **org-id** is found under your Organization settings in the Snyk web interface, although the Organization id is not required, it's strongly suggested. Like Snyk Code, you can generate reports using the [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts.&#x20;
+where `org-id` is found under your Organization settings in the Snyk web interface, Although the Organization ID is not required, it is strongly recommended that you use it. As with Snyk Code, you can generate reports using the [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts.&#x20;
 
-* For individual or personal scans, use the CLI or IDE and use the **snyk monitor --unmanaged** command to upload results, but the recommendation is you send these results to your personal folder and disable the scheduled scanning in the Project settings to ensure an individual scan does not cause noise. This provides license/policy information in a viewable state.
-* For automated scans, such as CI/CD, use **snyk monitor --unmanaged** and send results to the Organization of your choice. This provides license/policy information in a viewable state.
+* For individual or personal scans, use the CLI or IDE, and use the `snyk monitor --unmanaged` command to upload results.
+  * However, Snyk recommends that you send these results to your personal folder and disable the scheduled scanning in the Project settings to ensure an individual scan does not cause noise.&#x20;
+  * This provides license and policy information in a viewable state.
+* For automated scans, such as CI/CD, use `snyk monitor --unmanaged` and send results to the Organization of your choice. This provides license and policy information in a viewable state.
 
 #### **Dependency lists**
 
-Use **--print-deps** when performing open source scans to obtain a detailed list of discovered dependencies in your codebase and their origin source.
+Use `--print-deps` when performing open source scans to obtain a detailed list of discovered dependencies in your codebase and their origin source.
 
-In C/C++, this has the additional benefit of identifying the confidence level of a given match. If there is a significant drop (< 90% confidence), it's likely the file has been modified and may not be the original source. Consider investigating if that's the case.
+In C/C++, this has the additional benefit of identifying the confidence level of a given match. If there is a significant drop (< 90% confidence), it is likely the file has been modified and may not be the original source. Consider investigating if that is the case.
 
 ```
 snyk test --unmanaged --print-deps
 ```
 
-The list is printed before the issues list, as shown below:
+The list is printed before the issues list, as shown in the following image:
 
 <figure><img src="https://lh5.googleusercontent.com/x4y1uIQ2fCFX956f1eP4664i6VKEgK6eOOddlAZ4p4WnQWJu1t_ugSOpL394KEnuzSIPRs08gNAsmjvPa-GAV0C-975esRdy0EPDY7WImG1-SXSOFO0TIAVfh_Jp2DLYc6bm7iZu55UbE3Boh4TNk_I" alt="View dependency lists"><figcaption><p>View dependency lists</p></figcaption></figure>
 
 #### **License policy text during the Beta phase**
 
 {% hint style="info" %}
-[License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) allows a company to create a license policy for your Open Source, indicating what licenses are not approved for use. To access [License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md), you must be on a Snyk Team or Enterprise [plan](https://snyk.io/plans). Snyk detects and alerts when a match is found. The alert contains the name of the license and license policy text.&#x20;
+[License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) allows a company to create a license policy for your Open Source, applications, indicating what licenses are not approved for use. To access [License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md), you must be on a Snyk Team or Enterprise [plan](https://snyk.io/plans). Snyk detects and alerts when a match is found. The alert contains the name of the license and license policy text.&#x20;
 
-**License policy text** is the text associated with the issue by your administrators that provides custom direction on what to do or why it's contrary to the policy, if it's found in your application.
+**License policy text** is the text associated by your administrators with the issue to provide custom direction on what to do or why the issue, if found in your application, is contrary to the policy.
 {% endhint %}
 
 The following shows the license policy text example at the bottom of the screen, giving you directions on what to do if the license is found.
@@ -117,7 +113,7 @@ The following shows the license policy text example at the bottom of the screen,
 
 #### **Alternate testing options**
 
-If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the open-source packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues) to do the analysis.
+If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the open source packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues) to do the analysis.
 
 ### **Options and plugins**
 
