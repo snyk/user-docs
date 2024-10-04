@@ -62,7 +62,7 @@ See the [Java and Kotlin](./#open-source-and-licensing) page for more details ab
 
 Sometimes customers develop advanced dependency management strategies and may not necessarily use the standard and frequently used package managers. For that reason, Snyk has provided test APIs.
 
-For on-time testing using the Snyk API, you can use the [Test](../../snyk-api/reference/test-v1.md) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) and [Purl for Maven](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues).
+For on-time testing using the Snyk API, you can use the [Test](../../snyk-api/reference/test-v1.md) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) and [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues).
 
 ## Snyk Integrations and common usage patterns
 
@@ -74,11 +74,11 @@ Typically you can instrument testing as part of a build system or adopt a lockfi
 
 * It is quite common for large organizations to monitor applications via Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
 * As developers become familiar with Snyk capabilities, they widen the scope of applications with PR checks for gating.
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commands](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 
 ### Gradle Projects without a lock file
 
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commandsd](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [`snyk [product] test` and `monitor` commands](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 * Gating and failing the build typically will be turned on one Project to start so that everyone can become familiar with the process and use passive monitoring for the remainder of the portfolio.
 
 ## Snyk CLI Tips and Tricks
