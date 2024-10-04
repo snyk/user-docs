@@ -466,7 +466,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Add a tag to a project](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
-**More information:** [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)
+**More information:** [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md); [Set up Insights: Associating Snyk Open Source, Code, and Container Projects](../../manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-associating-snyk-open-source-code-and-container-projects.md)
 
 ### [Remove a tag from a project](../reference/projects-v1.md#org-orgid-project-projectid-tags-remove)
 
@@ -566,6 +566,8 @@ To list all Projects that have a vulnerability linked to a CVE, use the capabili
 
 To get a list of issues that have been fixed, use the endpoint [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest) and filter by `“isFixed”: true` in the request body. This endpoint also provides a [list of all IaC issues](../../scan-with-snyk/snyk-iac/view-snyk-iac-issue-reports.md#api-access-to-iac-issues).
 
+**More information:** [Priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md)
+
 ### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
 
 See notes for [Get list of latest issues](./#get-list-of-latest-issues).
@@ -582,7 +584,7 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ## SBOM (GA and beta)
 
-**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md), [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md)
+**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md); [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md)
 
 ### [Get a project’s SBOM document](../reference/sbom.md)
 
