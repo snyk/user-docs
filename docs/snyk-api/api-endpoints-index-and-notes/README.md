@@ -168,6 +168,8 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List Resources](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/resources)
 
+[Snyk IaC](../../scan-with-snyk/snyk-iac/) (Use: View an inventory of IaC and cloud resources generated from your IaC files)
+
 ### [List Scans](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/scans)
 
 ### [Create Scan](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/cloud/scans)
@@ -208,7 +210,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Create a Custom Base Image from an existing container project](../reference/custom-base-images.md#custom\_base\_images)
 
-**More information:** [Mark the created Project as a custom base image](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/#mark-the-created-project-as-a-custom-base-image) (Use Custom Base Image Recommendations)
+**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/); note the section  [Mark the created Project as a custom base image](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/#mark-the-created-project-as-a-custom-base-image); [Versioning schema for custom base images](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images.md)
 
 ### [Get a custom base image collection](../reference/custom-base-images.md#custom\_base\_images-1)
 
@@ -318,7 +320,7 @@ If this fails, use [Get import job details](https://snyk.docs.apiary.io/#referen
 
 The poll results return a message per manifest processed, either `success: true` or `success: false.`
 
-**More information:** [Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/), [Configure integrations](../../implement-snyk/team-implementation-guide/phase-2-configure-your-organization/configure-integrations.md) (Enterprise implementation guide, Phase 2), [Import Projects](../../implement-snyk/team-implementation-guide/phase-3-gain-visibility/import-projects.md) (Enterprise implementation guide, Phase 3)
+**More information:** [Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/), [Configure integrations](../../implement-snyk/team-implementation-guide/phase-2-configure-your-organization/configure-integrations.md) (Enterprise implementation guide, Phase 2), [Import Projects](../../implement-snyk/team-implementation-guide/phase-3-gain-visibility/import-projects.md) (Enterprise implementation guide, Phase 3); [Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)
 
 ### [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)
 
@@ -464,6 +466,8 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Delete a project](../reference/projects-v1.md#org-orgid-project-projectid-2)
 
+More information: [Annotated import](../../scan-with-snyk/snyk-container/kubernetes-integration/annotated-import.md) (Kubernetes integration section)
+
 ### [Add a tag to a project](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
 **More information:** [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md); [Set up Insights: Associating Snyk Open Source, Code, and Container Projects](../../manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-associating-snyk-open-source-code-and-container-projects.md)
@@ -536,11 +540,11 @@ The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.i
 
 The query-string parameter types is optional. The endpoint does not enforce specific project types and will return no matching projects if you enter a string that does not match a project type.
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Find your Project ID); [Snyk Projects](../../snyk-admin/snyk-projects/); [Project information](../../snyk-admin/snyk-projects/project-information.md)
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Find your Project ID); [Snyk Projects](../../snyk-admin/snyk-projects/); [Project information](../../snyk-admin/snyk-projects/project-information.md)
 
 ### [Updates project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id)
 
-**More information:** [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md)
+**More information:** [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md); [Start scanning](../../scan-with-snyk/start-scanning.md) (Use: Set test frequency)
 
 ### [Get project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id-1)
 
@@ -662,19 +666,19 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Slack notification settings override for projects](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects)
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (List all Slack notification customizations for a project)
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: List all Slack notification customizations for a project)
 
 ### [Create a new Slack settings override for a given project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id)
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Create a Slack notification customization for a Project)
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Create a Slack notification customization for a Project)
 
 ### [Update Slack notification settings for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-1)
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Update a Slack notification customization for a Project)
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Update a Slack notification customization for a Project)
 
 ### [Remove Slack settings override for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-2)
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Delete a Slack notification customization for a Project)
+**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Delete a Slack notification customization for a Project)
 
 ## Slack
 
@@ -694,7 +698,7 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ## Test (v1)
 
-**More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md)
+**More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md); [Start scanning](../../scan-with-snyk/start-scanning.md); [Scan open-source libraries and licenses](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/)
 
 ### [Test package.json & yarn-lock file](../reference/test-v1.md#test-yarn)
 
