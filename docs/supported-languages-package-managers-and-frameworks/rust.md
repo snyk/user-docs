@@ -17,3 +17,5 @@ The following summarizes support for Rust:
 Snyk supports the testing of Rust applications through the API. For details, see [Test an SBOM document for vulnerabilities](../snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md).
 
 Snyk also supports the testing of individual Rust packages from the Cargo package manager. For details, see [List issues for a package](../snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md).
+
+If you need help, contact [Snyk Support](https://support.snyk.io/hc/en-us).

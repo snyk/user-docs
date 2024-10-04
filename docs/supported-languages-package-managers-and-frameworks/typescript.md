@@ -1,6 +1,6 @@
 # TypeScript
 
-The following summarizes Snyk support for TypeScript for code analysis.
+The following summarizes Snyk support for TypeScript:
 
 Snyk for Typescript is supported **only for Snyk Code**.
 

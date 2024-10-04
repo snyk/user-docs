@@ -1,7 +1,5 @@
 # Python
 
-## Snyk for Python support
-
 Snyk supports [Python for code analysis](python-for-code-analysis.md) and [Python for open source](python-for-open-source.md). For specific information about the use of versions and package managers, See [Snyk CLI for Python](snyk-cli-for-python.md) and [Git repositories and Python](git-repositories-and-python.md).
 
 ## Python version support

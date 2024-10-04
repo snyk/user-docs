@@ -1,6 +1,6 @@
 # VB.NET
 
-The following summarizes Snyk support for VB.NET for code analysis.
+The following summarizes Snyk support for VB.NET:
 
 Snyk for VB.NET is supported **only for Snyk Code**.
 

@@ -1,6 +1,6 @@
 # Elixir
 
-## Elixir support
+The following summarizes Snyk support for Elixir.
 
 **Package manager**: [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm)
 

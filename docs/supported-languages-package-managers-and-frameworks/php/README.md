@@ -1,9 +1,5 @@
 # PHP
 
-
-
-## Snyk for PHP support
-
 Snyk supports [PHP for code analysis](php-for-code-analysis.md) and [PHP for open source](php-for-open-source.md).
 
 ## Snyk CLI for PHP
