@@ -81,5 +81,5 @@ In the Java language settings, you can integrate Snyk with your private package 
 
 This enables Snyk to build a complete dependency tree when scanning Maven or Gradle (Early Access) projects that reference private packages.
 
-For more information, see [Package repository integrations](git-repositories-with-maven-and-gradle.md#package-repository-integrations).
+For more information, see [Artifactory Registry for Maven](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md) in the [Package repository integrations](../../scan-with-snyk/snyk-open-source/package-repository-integrations/).
 
