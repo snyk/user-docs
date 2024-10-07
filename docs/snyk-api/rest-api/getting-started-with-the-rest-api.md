@@ -1,8 +1,4 @@
----
-description: Learn how to make calls to the REST API.
----
-
-# Getting started with REST API
+# Getting started with the REST API
 
 Follow these steps to make a simple call to the REST API using `curl` in the command line.
 
@@ -21,12 +17,12 @@ curl --request GET \
 ```
 
 {% hint style="info" %}
-Note that the API URL to use when calling an API is different for different regions. For a complete list, see [API URLs](about-the-rest-api.md#api-url).
+Note that the API URL to use when calling an API is different for different regions. For a complete list, see [API URLs](about-the-rest-api.md#api-urls).
 
 As an example, the`SNYK-US-02`region API URLs will be the following:
 
-* **API v1:** https://api.us.snyk.io/v1/&#x20;
-* **REST** API: https://api.us.snyk.io/rest/&#x20;
+* **API V1:** https://api.us.snyk.io/v1/&#x20;
+* **REST API:** https://api.us.snyk.io/rest/&#x20;
 {% endhint %}
 
 Note that if you use the parameter `target-reference`, you must URL-encode it. If you have any problems or questions, contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
