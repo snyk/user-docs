@@ -8,7 +8,7 @@ For more information, see [Plans and pricing](https://snyk.io/plans).
 
 The Snyk API allows Enterprise customers to integrate programmatically with Snyk.
 
-Snyk [extensibility and the Snyk API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk security automation to their specific workflows, ensuring consistency in both developer experience and platform governance. The [Snyk REST API ](rest-api/about-the-rest-api.md) and the [V1 API](v1-api.md) are available for you to use when you decide to use an API rather than the CLI or an integration.
+The Snyk API enables developers developers to automate Snyk processes to accomplish their specific workflows, ensuring consistency in both developer experience and platform governance. The [Snyk REST API ](rest-api/about-the-rest-api.md) and the [V1 API](v1-api.md) are available for you to use when you decide to use an API rather than the CLI or an integration.
 
 Use the API when you want to **customize, integrate, and automate** Snyk security as part of your specific workflows.
 
