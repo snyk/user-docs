@@ -80,3 +80,14 @@ You can filter the information for all the inventory layouts and can use the fol
 
 After applying the filters, the asset list will display only the assets that match the specified conditions, without a hierarchical structure.
 
+{% hint style="info" %}
+**Coverage** and **Coverage gap**  filter differences
+
+* Use the Coverage filter to identify the assets scanned by the products at least once.
+* Use the Coverage gap filter for assets that do not meet the requirements defined in the Set coverage control policy.&#x20;
+
+The Coverage gap filter identifies assets that fall 'out of policy' and do not satisfy the coverage criteria you have specified, due to infrequent scanning or no scanning at all. On the other hand, the Coverage filter allows you to locate assets that have or have not been scanned, irrespective of any coverage requirements.
+{% endhint %}
+
+
+

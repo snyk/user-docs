@@ -42,47 +42,7 @@ You can customize the filters and actions or use the template as is. After finis
 **Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only with Snyk AppRisk Pro.
 {% endhint %}
 
-Each filter component requires you to specify an asset property. Available properties for asset policies include:
-
-* **Application\*** - the list of the applications for which you have configured the application context (Backstage catalog or ServiceNow CMDB) in Snyk AppRisk.
-* **Asset ID** - the unique identifier of the asset.
-* **Asset name** - the name of the asset.
-* **Asset type** - repository, package or scanned artifact.
-* **Attribute** - asset attributes retrieved from the data source.
-* **Catalog name\*** - the name of your application context.
-* **Category\*** - the category of a repository asset. For example, service or library.
-* **Class** - specify the class of the asset.
-* **Coverage** - specify the product or products used to scan the asset. The Coverage filter identifies if at least one scan has been run by the specified product.
-* **Coverage gap** - specify the products for which the asset has not been scanned and do not meet the Set Coverage Control Policy requirements. The coverage gap applies only if you previously defined the coverage requirements of an asset and the asset has never been scanned, or the last scan is older than the default scanning frequency.
-* **Developers** - specify the developer or developers who contributed to the asset.
-* **Discovered** - specify the period when the asset was discovered.
-* **Issue severity** - specify the severity of the issue: critical, high, medium, low.
-* **Issue source** - specify where the issue was identified: SCM or third-party integrations. A source category will only be visible if there is at least one source present.
-* **Last seen** - specify the repository freshness status.
-* **Lifecycle\*** - represents the lifecycle state of the application context component, for example `production`, `experimental`, `deprecated`.
-* **Locked attributes** - specify if the attribute value is locked.
-* **Owner\*** - represents the team owning the repository for which the application context was configured.
-* **Risk factors** - specify the risk factors from Insights that indicate potential elevated risk, based on data from runtime. This is only available for Snyk AppRisk Pro customers.&#x20;
-* **Runtime discovered** - specify the period when the runtime image asset was discovered.
-* **Runtime last seen** - specify the freshness status for the runtime image asset.
-* **SCM Repository freshness** - the status of the repository and the date of the last commit.
-  * **Active**: Had commits in the last 3 months.
-  * **Inactive**: The last commits were made in the last 3 - 6 months.
-  * **Dormant**: No commits in the last 6 months.
-* **Source** - specify the asset source.
-* **Tags** - information about the detected languages and repository update status.
-* **Title\*** - represents the name of the component for which the application context was configured.
-
-**\***All filters marked with `*` are visible only to the users who configured the application context for their SCM integrations.
-
-{% hint style="info" %}
-**Coverage** and **Coverage gap**  filter differences
-
-* Use the Coverage filter to identify the assets scanned by the products at least once.
-* Use the Coverage gap filter for assets that do not meet the requirements defined in the Set coverage control policy.&#x20;
-
-The Coverage gap filter identifies assets that fall 'out of policy' and do not satisfy the coverage criteria you have specified, due to infrequent scanning or no scanning at all. On the other hand, the Coverage filter allows you to locate assets that have or have not been scanned, irrespective of any coverage requirements.
-{% endhint %}
+Each filter component requires you to specify an asset property. Navigate to the [Filters capabilities](../../../manage-assets/assets-inventory-features.md#filters-capabilities) page to view all available properties for asset policies.
 
 The following video explains how to create a new policy:
 
