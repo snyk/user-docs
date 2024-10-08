@@ -12,7 +12,7 @@ Snyk [extensibility and the Snyk API](https://snyk.io/blog/extensibility-and-the
 
 Use the API when you want to **customize, integrate, and automate** Snyk security as part of your specific workflows.
 
-Note that there **may be differences in the output of the API, the CLI, and integrations**.
+There **may be differences in the output of the API, the CLI, and integrations**.
 
 For example, for many package managers, using the API will be less accurate than running the Snyk CLI as part of your build pipe or locally on your package. More than one version of a package may fit the requirements in manifest files. Running the CLI locally tests the actual deployed code and creates an accurate snapshot of the dependency versions in use. The API infers a snapshot, with inferior accuracy. Note that the Snyk CLI can output machine-readable JSON (`snyk test --json`).
 
