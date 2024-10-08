@@ -20,11 +20,11 @@ The following instructions explain how to set up and use reachability analysis a
 
 Follow these steps to enable Reachability analysis and begin analyzing Projects for reachable vulnerabilities:&#x20;
 
-* In the Organization **Settings**, navigate to the **Languages** section.
+* In the Organization **Settings**, navigate to the **Snyk Open Source** section.
 * In the **General** section, find **Reachable vulnerabilities**.
 * Activate **Enable reachable vulnerabilities analysis**.
 
-<figure><img src="../../.gitbook/assets/image (2) (9).png" alt="Enabling reachability setting"><figcaption><p>Enabling Reachability setting</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (570).png" alt="Enabling Reachability setting"><figcaption><p>Enabling Reachability setting</p></figcaption></figure>
 
 After Reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
 
