@@ -1100,7 +1100,7 @@ Verify your authentication configuration with your Git cloud provider and try ag
 
 Reason: This error has been moved to a more generalized namespace to avoid repetition.
 
-Going forward, [SNYK-OS-8004](#SNYK-OS-8004) will be used instead.
+Going forward, [SNYK-OS-8004](#snyk-os-8004) will be used instead.
 {% endhint %}
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
@@ -2466,4 +2466,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-10-08T13:25:22.940Z
+--- Generated at 2024-10-08T13:38:51.851Z
