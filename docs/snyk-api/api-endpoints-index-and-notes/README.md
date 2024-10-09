@@ -3,7 +3,7 @@
 
 
 {% hint style="info" %}
-This index and notes section of the documentation provides, in addition to this index, [solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
+This index and notes section of the documentation provides, in addition to this index, [solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-the-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
 
 * [Organization and Group identification for Projects using the API](undefined.md)
 * [Project issue paths V1 API endpoints](project-issue-paths-api-endpoints.md)

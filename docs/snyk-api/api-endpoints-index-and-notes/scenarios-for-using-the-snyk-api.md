@@ -1,8 +1,8 @@
-# Scenarios for using Snyk API
+# Scenarios for using the Snyk API
 
-The Snyk API scenarios identify procedures you can use to accomplish tasks with Snyk applications using the APIs.
+The Snyk API scenarios identify procedures you can use to accomplish tasks with Snyk applications using the API.
 
-The scenarios are listed on this page under the endpoints they use. They are provided in a [repository](https://github.com/snyk-playground/cx-tools/tree/main/scripts) or on the user docs site (links included).
+The scenarios are listed on this page under the endpoints they use. They are provided in a [repository](https://github.com/snyk-playground/cx-tools/tree/main/scripts) or on the user docs site. LInks are included.
 
 If you have issues when using these procedures, contact your Technical Success Manager or Solutions Engineer, or [submit a ticket](https://support.snyk.io/hc/en-us/requests/new) to Snyk support.
 
@@ -21,8 +21,8 @@ API v1 (Reporting API) [Get list of latest issues](https://snyk.docs.apiary.io/#
 
 SEE also:
 
-* API v1 Organizations: [Assign all users in a given list to all the organizations a company has (all organizations in a group)](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#assign-all-users-in-a-given-list-to-all-the-organizations-a-company-has-all-organization-in-a-group)
-* API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
+* API v1 Organizations: [Assign all users in a given list to all the organizations a company has (all organizations in a group)](scenarios-for-using-the-snyk-api.md#assign-all-users-in-a-given-list-to-all-the-organizations-a-company-has-all-organization-in-a-group)
+* API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability)
 
 ## API v1 Import projects
 
@@ -38,11 +38,11 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/i
 ### More uses of API v1 Import projects
 
 SEE also:\
-API v1 Projects: [Import fresh Container images](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#import-fresh-container-images)
+API v1 Projects: [Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)
 
-API v1 Projects: [Detect and import new projects in a repository into a target](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#detect-and-import-new-projects-in-a-repository-into-a-target)
+API v1 Projects: [Detect and import new projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-and-import-new-projects-in-a-repository-into-a-target)
 
-API v1 REST API Targets (beta): [Detect new projects (files) in repositories and import them into a target in Snyk on a regular basis](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)
+API v1 REST API Targets (beta): [Detect new projects (files) in repositories and import them into a target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)
 
 ## API v1 Integrations
 
@@ -78,9 +78,9 @@ API v1 [Create a webhook](https://snyk.docs.apiary.io/#reference/webhooks/webhoo
 ### More uses of API v1 integrations
 
 SEE also:\
-API v1 Organizations: [Create multiple new organizations that all have the same settings in a given group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
+API v1 Organizations: [Create multiple new organizations that all have the same settings in a given group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
-API v1 Projects: [Detect and import new projects in a repository into a target](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#detect-and-import-new-projects-in-a-repository-into-a-target)
+API v1 Projects: [Detect and import new projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-and-import-new-projects-in-a-repository-into-a-target)
 
 ## API v1 Issues (Reporting API)
 
@@ -88,7 +88,7 @@ API v1 Projects: [Detect and import new projects in a repository into a target](
 
 Scenario: [find-all-projects-affected-by-a-vuln.md](https://github.com/snyk-playground/cx-tools/blob/main/scripts/find-all-projects-affected-by-a-vuln.md) (complete procedure)
 
-\*\*Endpoints used:\*\*API v1 Issues (Reporting API) [Get list of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues)
+**Endpoints used:** API v1 Issues (Reporting API) [Get list of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues)
 
 API v1 Issues (Reporting API) [List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
 
@@ -108,14 +108,14 @@ REST experimental [Get a summary of issues within an org](https://apidocs.snyk.i
 ### REST API Issues (experimental)
 
 SEE:\
-API v1 Issues: [Bulk ignore issues](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#bulk-ignore-issues)
+API v1 Issues: [Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues)
 
-API v1 Projects: [List all issues including Snyk Code issues in all the projects in a group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
+API v1 Projects: [List all issues including Snyk Code issues in all the projects in a group](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
 
 ### More uses of API v1 Issues (Reporting API)
 
 SEE also:\
-API v1 Groups: [Retrieve a project snapshot for every project in a given group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#retrieve-a-project-snapshot-for-every-project-in-a-given-group)
+API v1 Groups: [Retrieve a project snapshot for every project in a given group](scenarios-for-using-the-snyk-api.md#retrieve-a-project-snapshot-for-every-project-in-a-given-group)
 
 ## API v1 Organizations
 
@@ -151,7 +151,7 @@ API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#refer
 ### More uses of API v1 Organizations
 
 SEE also:\
-API v1 Integrations: [Rotate or change your broker token for any reason](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
+API v1 Integrations: [Rotate or change your broker token for any reason](scenarios-for-using-the-snyk-api.md#rotate-or-change-your-broker-token-for-any-reason)
 
 ## API v1 Projects
 
@@ -205,7 +205,7 @@ Scenario: [Move projects between organisations](https://github.com/snyk-playgrou
 
 {% hint style="info" %}
 API token used must have Group Admin access. \
-If moving between orgs in different groups, a personal API token with Group Admin in both groups must be used - Service Accounts are not able to move projects between orgs in different groups.&#x20;
+If you are moving between orgs in different groups, you must use a personal API token with Group Admin permissions in both groups. Service Accounts cannot move projects between orgs in different groups.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -218,11 +218,11 @@ API v1 [Move Projects](https://snyk.docs.apiary.io/#reference/projects/move-proj
 ### More uses of API v1 Projects
 
 SEE also:\
-API v1 Import projects: [Identify and import new repositories only](scenarios-for-using-snyk-api.md#identify-and-import-new-repositories-only)
+API v1 Import projects: [Identify and import new repositories only](scenarios-for-using-the-snyk-api.md#identify-and-import-new-repositories-only)
 
-API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
+API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability)
 
-API v1 Issues (Reporting API): [Bulk ignore issues](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#bulk-ignore-issues)
+API v1 Issues (Reporting API): [Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues)
 
 ## REST API Targets (Beta)
 
@@ -238,13 +238,13 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 ## API v1 Users and Roles
 
 SEE:\
-[Provision users to Orgs via API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md)\
-[Remove members from Groups and Orgs via API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)\
-[Update Member Roles via API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md) (also Snyk REST API Users endpoint `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta)`
+[Provision users to Organizations using the API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md)\
+[Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)\
+[Update Member Roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md) (also Snyk REST API Users endpoint `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta)`
 
 ## API v1 Webhooks
 
 SEE:\
-API v1 Integrations: [Rotate or change your broker token for any reason](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
+API v1 Integrations: [Rotate or change your broker token for any reason](scenarios-for-using-the-snyk-api.md#rotate-or-change-your-broker-token-for-any-reason)
 
-[Snyk Webhooks](../how-to-use-snyk-webhooks-apis/)
+[How to use Snyk webhooks APIs](../how-to-use-snyk-webhooks-apis/)

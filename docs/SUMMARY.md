@@ -1045,7 +1045,7 @@
     * [Postman and Snyk API v1](snyk-api/make-calls-to-the-snyk-api/postman-and-snyk-api-v1.md)
   * [API endpoints index and notes](snyk-api/api-endpoints-index-and-notes/README.md)
     * [Solutions for specific use cases](snyk-api/api-endpoints-index-and-notes/solutions-for-specific-use-cases.md)
-    * [Scenarios for using Snyk API](snyk-api/api-endpoints-index-and-notes/scenarios-for-using-snyk-api.md)
+    * [Scenarios for using the Snyk API](snyk-api/api-endpoints-index-and-notes/scenarios-for-using-the-snyk-api.md)
     * [Org and group identification for Projects using the API](snyk-api/api-endpoints-index-and-notes/undefined.md)
     * [Project issue paths API endpoints](snyk-api/api-endpoints-index-and-notes/project-issue-paths-api-endpoints.md)
     * [Project type responses from API](snyk-api/api-endpoints-index-and-notes/project-type-responses-from-api.md)
