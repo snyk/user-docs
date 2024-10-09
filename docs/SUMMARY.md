@@ -1094,7 +1094,7 @@
             * [AWS API Gateway: deploy the POST method](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-connect-snyk-to-slack-with-aws-lambda/aws-lambda-setup-set-up-the-trigger/with-api-gateway/aws-api-gateway-deploy-the-post-method.md)
           * [With a Lambda Function URL](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-connect-snyk-to-slack-with-aws-lambda/aws-lambda-setup-set-up-the-trigger/with-a-lambda-function-url/README.md)
             * [Modify the Lambda function](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-connect-snyk-to-slack-with-aws-lambda/aws-lambda-setup-set-up-the-trigger/with-a-lambda-function-url/modify-the-lambda-function.md)
-        * [Set up the Snyk Webhook](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-connect-snyk-to-slack-with-aws-lambda/set-up-the-snyk-webhook.md)
+        * [Set up the Snyk webhook](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-connect-snyk-to-slack-with-aws-lambda/set-up-the-snyk-webhook.md)
         * [Test the Snyk webhook connection](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-connect-snyk-to-slack-with-aws-lambda/test-the-snyk-webhook-connection.md)
         * [Configure the AWS Lambda script](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-connect-snyk-to-slack-with-aws-lambda/configure-the-aws-lambda-script.md)
 * [API End of Life (EOL) process and migration guides](api-end-of-life-eol-process-and-migration-guides/README.md)
