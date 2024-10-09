@@ -1043,7 +1043,6 @@
   * [Make calls to the Snyk API](snyk-api/make-calls-to-the-snyk-api/README.md)
     * [Find the differences between versions in the REST API](snyk-api/make-calls-to-the-snyk-api/find-the-differences-between-versions-in-the-rest-api.md)
     * [How to use Postman for Snyk REST API](snyk-api/make-calls-to-the-snyk-api/how-to-use-postman-for-snyk-rest-api.md)
-    * [Postman and Snyk API v1](snyk-api/make-calls-to-the-snyk-api/postman-and-snyk-api-v1.md)
   * [API endpoints index and notes](snyk-api/api-endpoints-index-and-notes/README.md)
     * [Solutions for specific use cases](snyk-api/api-endpoints-index-and-notes/solutions-for-specific-use-cases.md)
     * [Scenarios for using the Snyk API](snyk-api/api-endpoints-index-and-notes/scenarios-for-using-the-snyk-api.md)
