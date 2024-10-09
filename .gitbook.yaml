@@ -109,3 +109,7 @@ redirects:
   scm-ide-and-ci-cd-workflow-and-integrations: scm-ide-and-ci-cd-workflow-and-integrations/README.md
   scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-vs-bitbucket-cloud-app: scm-ide-and-ci-cd-integrations/README.md
   scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/git-repository-cloning-for-scm-integrations: snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations/README.md
+  snyk-api/make-calls-to-the-snyk-api: snyk-api/rest-api/getting-started-with-the-rest-api.md
+  snyk-api/make-calls-to-the-snyk-api/find-the-differences-between-versions-in-the-rest-api: snyk-api/rest-api/about-the-rest-api.md
+  snyk-api/make-calls-to-the-snyk-api/how-to-use-postman-for-snyk-rest-api: snyk-api/rest-api/getting-started-with-the-rest-api.md
+  snyk-api/make-calls-to-the-snyk-api/postman-and-snyk-api-v1: snyk-api/v1-api.md
