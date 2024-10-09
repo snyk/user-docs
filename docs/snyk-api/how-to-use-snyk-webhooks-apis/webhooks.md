@@ -8,15 +8,11 @@ Webhooks are delivered with a `Content-Type` of `application/json`, with the eve
 * `X-Hub-Signature` - the HMAC hex digest of the request body, used to secure your webhooks and ensure the request did indeed come from Snyk
 * `User-Agent` - identifies the origin of the request, for example: `Snyk-Webhooks/XXX`
 
-***
-
 After your server is configured to receive payloads, it listens for any payload sent to the endpoint you configured. For security reasons, you should limit requests to those coming from Snyk.
 
-### Event types
+While consuming a webhook event, `X-Snyk-Event` header must be checked, as an end-point may receive multiple event types as described.
 
-While consuming a webhook event, `X-Snyk-Event` header must be checked, as an end-point may receive multiple event types.
-
-#### **ping**
+## **ping**
 
 The ping event happens after a new webhook is created, and can also be manually triggered using the ping webhook API. This is useful to test that your webhook receives data from Snyk correctly.
 
@@ -36,7 +32,7 @@ Content-Type: application/json
 }
 ```
 
-#### **project\_snapshot**
+## **project\_snapshot**
 
 This event is triggered every time an existing project is tested and a new snapshot is created. It is triggered on every test of a project, whether or not there are new issues. This event is not triggered when a new project is created or imported. Currently supported targets/scan types are Open Source and container.
 
@@ -58,9 +54,9 @@ Content-Type: application/json
 }
 ```
 
-**Detailed example of a payload**
+## **Detailed example of a payload**
 
-**project**
+### **project**
 
 see: [Projects (v1)](../reference/projects-v1.md)
 
@@ -123,7 +119,7 @@ see: [Projects (v1)](../reference/projects-v1.md)
 }
 ```
 
-**org**
+### **org**
 
 see: [Organizations (v1)](../reference/organizations-v1.md)
 
@@ -137,9 +133,9 @@ see: [Organizations (v1)](../reference/organizations-v1.md)
 }
 ```
 
-**group**
+### **group**
 
-see: [Groups (v1)](../reference/groups-v1.md)&#x20;
+see: [Groups (v1)](../reference/groups-v1.md)
 
 ```json
 "group": {
@@ -148,7 +144,7 @@ see: [Groups (v1)](../reference/groups-v1.md)&#x20;
 }
 ```
 
-**issue**
+### **issue**
 
 ```json
 {
