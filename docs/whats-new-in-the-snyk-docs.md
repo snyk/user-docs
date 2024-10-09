@@ -43,23 +43,17 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 ## August 2024
 
-### &#x20;**Snyk AppRisk**&#x20;
+### **Snyk API**&#x20;
+
+* Links in the API reference docs have been updated.
+* The [API endpoints index and notes](snyk-api/api-endpoints-index-and-notes/) have been updated.
+
+### **Snyk AppRisk**&#x20;
 
 * The **Manage Risk > Analytics** pages have been consolidated to better reflect the two Snyk offerings:
   * [Issues Analytics](manage-risk/enterprise-analytics/issues-analytics.md) - now in Early Access for Snyk Enterprise customers.
   * [Application Analytics](manage-risk/enterprise-analytics/application-analytics.md) - available only for Snyk AppRisk Pro customers.
 * The [Manage Assets](manage-assets/) documentation has been updated to reflect the addition of Quick filters. Users are only shown quick filters relevant to their entitlement: AppRisk Essentials or AppRisk Pro.
-
-### **Snyk Integrations**
-
-* Git repository cloning has been renamed [Workspaces for SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md) to better reflect its functionality. Additional detail on [enablement](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md#manage-workspaces) has been added.
-* The [relationship](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
-* The [deployment stages table](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/deployment-recommendations-for-scm-integrations.md#recommended-deployment-order) for implementing SCM integrations has been updated to reflect AppRisk functionality.
-
-### **Snyk API**&#x20;
-
-* Links in the API reference docs have been updated.
-* The [API endpoints index and notes](snyk-api/api-endpoints-index-and-notes/) have been updated.
 
 ### **Snyk CLI**
 
@@ -71,9 +65,20 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 ### Snyk IDE
 
 * &#x20;[CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
-* IDE authentication instructions updated: [Eclipse](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md), [Jetbrains](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/authentication-for-the-jetbrains-plugins.md), [VS extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-authentication.md), [VS Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication.md).
+* IDE authentication instructions updated: [Eclipse](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md), [Jetbrains](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/authentication-for-the-jetbrains-plugins.md), [VS extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-authentication.md), [VS Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication.md)
+
+### **Snyk Integrations**
+
+* Git repository cloning has been renamed [Workspaces for SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md) to better reflect its functionality. Additional detail on [enablement](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md#manage-workspaces) has been added.
+* The [relationship](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
+* The [deployment stages table](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/deployment-recommendations-for-scm-integrations.md#recommended-deployment-order) for implementing SCM integrations has been updated to reflect AppRisk functionality.
 
 ## July 2024
+
+### **Snyk API**
+
+* The API documentation now provides the API Reference and explanatory documentation in the [API section](snyk-api/).
+* The [API End of Life (EOL) process and migration guides](api-end-of-life-eol-process-and-migration-guides/) are now published and updated to support the process, which began in July.
 
 ### Snyk AppRisk
 
@@ -102,11 +107,6 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
   * [Deployment recommendations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#deployment-order-recommendations) for Enterprise customers
   * [User permissions and access scope requirements](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#user-permissions-and-access-scope-requirements) for each SCM integration
   * Instructions on how to generate [integrated SCM tokens for Snyk Broker](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#integrated-scm-tokens-for-snyk-broker)
-
-### **Snyk API**
-
-* The API documentation now provides the API Reference and explanatory documentation in the [API section](snyk-api/).
-* The [API End of Life (EOL) process and migration guides](api-end-of-life-eol-process-and-migration-guides/) are now published and updated to support the process, which began in July.
 
 ### **Other updates**
 
