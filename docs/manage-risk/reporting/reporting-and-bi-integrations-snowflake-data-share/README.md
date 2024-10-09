@@ -18,7 +18,7 @@ Having Snyk datasets directly in your Snowflake account opens doors for combinin
 
 ## What is Snowflake Data Share? <a href="#what-is-snowflake-data-share" id="what-is-snowflake-data-share"></a>
 
-[Snowflake Data Share](https://docs.snowflake.com/en/user-guide/data-sharing-intro.html) allows companies to provide data to their customers in a secure, simple, and quick manner. With Snowflake data shares, the data is not exchanged between the accounts; instead, the data consumer is granted with read-only access to the shared database through their own Snowflake account.
+[Snowflake Data Share](https://docs.snowflake.com/en/user-guide/data-sharing-intro.html) allows companies to provide data to their customers in a secure, simple, and quick manner. With Snowflake data shares, the data is not exchanged between the accounts; instead, the data consumer is granted read-only access to the shared database through their own Snowflake account.
 
 ### Snowflake Cost Impact  <a href="#main-use-cases" id="main-use-cases"></a>
 
@@ -66,6 +66,16 @@ To get access and be able to query the data share, follow the steps below to cre
 2. [Create a database from Snyk data share](https://docs.snowflake.com/en/user-guide/data-share-consumers#creating-a-database-from-a-share).\
    **Note:** it can take about ten minutes for the data to be provisioned and ready to use, depending on your cloud region
 3. [Grant privileges to the shared database](https://docs.snowflake.com/en/user-guide/data-share-consumers#granting-privileges-on-a-shared-database).
+
+### Create a Dashboard using Snyk Data
+
+To start populating your dashboard with Snyk data, Snyk has provided [use cases and example queries](build-your-first-dashboard.md), enabling visualisation of key performance metrics relevant to AppSec goals.
+
+Once you are familiar with building queries, Snyk encourages you to create custom queries to suit your specific requirements.
+
+{% hint style="info" %}
+For more information on how to use queries in Snowflake Data Share, see [Query Data in Snowflake](https://docs.snowflake.com/en/guides-overview-queries).
+{% endhint %}
 
 ## Data policy <a href="#data-policy" id="data-policy"></a>
 

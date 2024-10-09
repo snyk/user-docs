@@ -49,5 +49,5 @@ The last resort is to disable Certificate checks. Add `--insecure` to additional
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="Proxy settings"><figcaption><p>Proxy settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (9).png" alt="Proxy settings"><figcaption><p>Proxy settings</p></figcaption></figure>
 

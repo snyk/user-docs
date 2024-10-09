@@ -30,7 +30,7 @@ Next, you need to define two actions, one for Snyk Open Source, and one for Snyk
 
     For Snyk Code, scans happen by default once a week, or when changes have been pushed to the monitored branch. The Coverage Control Policy needs to check that a Snyk Code scan occurred for that repository in the last week.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (6).png" alt="Filter configuration for coverage control" width="350"><figcaption><p>Filter configuration for coverage control</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (6) (1).png" alt="Filter configuration for coverage control" width="350"><figcaption><p>Filter configuration for coverage control</p></figcaption></figure>
 
 In the Inventory view, any coverage gap is indicated with strikes through the control coverage icon. See more details about each icon on the [Inventory capabilities](../../../../manage-assets/assets-inventory-components.md) page.
 

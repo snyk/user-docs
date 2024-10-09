@@ -111,7 +111,7 @@ To configure the automatic fix PR settings for all Projects in an Organization, 
 
 <div align="center">
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
 
 </div>
 

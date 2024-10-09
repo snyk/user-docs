@@ -804,6 +804,7 @@
     * [Troubleshooting Snyk Reports](manage-issues/reporting/troubleshooting-snyk-reports.md)
     * [Reporting and BI Integrations: Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/README.md)
       * [Data Share Data Dictionary](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md)
+      * [Build your first dashboard](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/build-your-first-dashboard.md)
     * [Legacy reports](manage-issues/reporting/legacy-reports/README.md)
       * [Legacy reports overview](manage-issues/reporting/legacy-reports/legacy-reports-overview.md)
       * [Legacy reports general actions](manage-issues/reporting/legacy-reports/legacy-reports-general-actions.md)
