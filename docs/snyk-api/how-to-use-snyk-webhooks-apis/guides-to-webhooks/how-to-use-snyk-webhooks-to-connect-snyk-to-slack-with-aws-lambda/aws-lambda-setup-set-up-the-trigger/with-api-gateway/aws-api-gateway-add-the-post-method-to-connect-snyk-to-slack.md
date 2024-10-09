@@ -4,9 +4,9 @@ The payload Slack will receive will have a message, so create a POST method that
 
 Follow these steps to add the POST Method:
 
-1. Navigate to the AWS API Gateway you have created
+1. Navigate to the AWS API Gateway you have created.
 2. Click **Resources**.
-3. To create the method, go to **Actions** -> **Create Method** -> **Post**.
+3. To create the method, navigate to **Actions** -> **Create Method** -> **Post**.
 4.  Configure the AWS API Gateway to work with the Lambda function you created by adding the Gateway in the adjacent Lambda function box:\
     Choose the **Lambda Function Integration type**.\
     Select **Default Timeout**.\\
@@ -26,6 +26,6 @@ Follow these steps to add the POST Method:
    `#if($foreach.hasNext),#end #end`\
    `}`\
    `}`
-8.  Verify the resulting display reflects these entries.\\
+8.  Verify the resulting display reflects these entries.
 
     <figure><img src="https://lh6.googleusercontent.com/d0AynUJWVROWc0ff2EnY_NAT7kqkrvBThXMw8d9D0StX1KKoig7ol2uDqLoMOCt7UBP7C3RYiSUrcZlg9yglP08fVXf8WBxOvGHtV25hw5PsfQC_lWfoDJkl38kIaqBNxIdg_k7W4Qg5jvQ-faPp4ySOF5j15vWRxCEjxzvAIhsHpl3s3dE2lolJdg" alt="AWS API Gateway POST request Mapping Template with code"><figcaption><p>AWS API Gateway POST request Mapping Template with code</p></figcaption></figure>
