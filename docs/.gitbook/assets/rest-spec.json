@@ -2440,13 +2440,97 @@
         ],
         "type": "object"
       },
-      "CommonIssueModelVThree": {
+      "CommonIssueModel": {
         "properties": {
           "attributes": {
             "properties": {
               "coordinates": {
                 "items": {
                   "$ref": "#/components/schemas/Coordinate"
+                },
+                "type": "array"
+              },
+              "created_at": {
+                "example": "2022-06-16T13:51:13Z",
+                "format": "date-time",
+                "type": "string"
+              },
+              "description": {
+                "description": "A description of the issue in Markdown format",
+                "example": "## Overview\\n\\n\\nAffected versions of this package are vulnerable to XML External Entity (XXE) Injection.",
+                "type": "string"
+              },
+              "effective_severity_level": {
+                "description": "The type from enumeration of the issue’s severity level. This is usually set from the issue’s producer, but can be overridden by policies.",
+                "enum": [
+                  "info",
+                  "low",
+                  "medium",
+                  "high",
+                  "critical"
+                ],
+                "type": "string"
+              },
+              "key": {
+                "description": "The Snyk vulnerability ID.",
+                "example": "SNYK-JAVA-COMFASTERXMLWOODSTOX-2928754",
+                "type": "string"
+              },
+              "problems": {
+                "items": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "type": "array"
+              },
+              "severities": {
+                "description": "The severity level of the vulnerability: ‘low’, ‘medium’, ‘high’ or ‘critical’.",
+                "items": {
+                  "$ref": "#/components/schemas/Severity"
+                },
+                "type": "array"
+              },
+              "slots": {
+                "$ref": "#/components/schemas/Slots"
+              },
+              "title": {
+                "description": "A human-readable title for this issue.",
+                "example": "XML External Entity (XXE) Injection",
+                "type": "string"
+              },
+              "type": {
+                "description": "The issue type",
+                "example": "package_vulnerability",
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "When the vulnerability information was last modified.",
+                "example": "2022-06-16T14:00:24.315507Z",
+                "format": "date-time",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "id": {
+            "description": "The Snyk ID of the vulnerability.",
+            "example": "SNYK-JAVA-COMFASTERXMLWOODSTOX-2928754",
+            "type": "string"
+          },
+          "type": {
+            "description": "The type of the REST resource. Always ‘issue’.",
+            "example": "issue",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "CommonIssueModelVTwo": {
+        "properties": {
+          "attributes": {
+            "properties": {
+              "coordinates": {
+                "items": {
+                  "$ref": "#/components/schemas/CoordinateVTwo"
                 },
                 "type": "array"
               },
@@ -2478,7 +2562,7 @@
                 "type": "array"
               },
               "severities": {
-                "description": "An array of dictionaries containing all known data related to the vulnerability",
+                "description": "The severity level of the vulnerability: ‘low’, ‘medium’, ‘high’ or ‘critical’.",
                 "items": {
                   "$ref": "#/components/schemas/Severity"
                 },
@@ -2540,6 +2624,25 @@
         "type": "string"
       },
       "Coordinate": {
+        "properties": {
+          "remedies": {
+            "items": {
+              "$ref": "#/components/schemas/Remedy"
+            },
+            "type": "array"
+          },
+          "representation": {
+            "description": "The affected versions of this vulnerability.",
+            "items": {
+              "example": "5.3.0",
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "CoordinateVTwo": {
         "properties": {
           "remedies": {
             "items": {
@@ -3249,26 +3352,6 @@
         "properties": {
           "about": {
             "$ref": "#/components/schemas/LinkProperty"
-          }
-        },
-        "type": "object"
-      },
-      "ExploitDetails": {
-        "description": "Details about the exploits",
-        "properties": {
-          "maturity_levels": {
-            "description": "List of maturity levels",
-            "items": {
-              "$ref": "#/components/schemas/MaturityLevel"
-            },
-            "type": "array"
-          },
-          "sources": {
-            "description": "Sources for determining exploit maturity level, e.g., CISA, ExploitDB, Snyk.",
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
           }
         },
         "type": "object"
@@ -4733,7 +4816,7 @@
         "properties": {
           "data": {
             "items": {
-              "$ref": "#/components/schemas/CommonIssueModelVThree"
+              "$ref": "#/components/schemas/CommonIssueModel"
             },
             "type": "array"
           },
@@ -4753,7 +4836,7 @@
         "properties": {
           "data": {
             "items": {
-              "$ref": "#/components/schemas/CommonIssueModelVThree"
+              "$ref": "#/components/schemas/CommonIssueModelVTwo"
             },
             "type": "array"
           },
@@ -4892,27 +4975,6 @@
             "description": "Include vulnerability patches in manual pull requests.",
             "example": true,
             "type": "boolean"
-          }
-        },
-        "type": "object"
-      },
-      "MaturityLevel": {
-        "description": "Details about the maturity level",
-        "properties": {
-          "format": {
-            "description": "The standard by which the “maturity” value is shown.",
-            "example": "CVSSv4",
-            "type": "string"
-          },
-          "level": {
-            "description": "Exploit maturity of the vulnerability. For CVSSv3: Proof of Concept, Functional, High. For CVSSv4: Unreported, Proof of Concept, Attacked.",
-            "example": "Attacked",
-            "type": "string"
-          },
-          "type": {
-            "description": "Indicates if the CVSS item is primary or secondary. Clients should prefer the primary CVSS vector.",
-            "example": "primary",
-            "type": "string"
           }
         },
         "type": "object"
@@ -5674,12 +5736,12 @@
         "properties": {
           "name": {
             "description": "The package’s name",
-            "example": "spring-core",
+            "example": "woodstox-core",
             "type": "string"
           },
           "namespace": {
             "description": "A name prefix, such as a maven group id or docker image owner",
-            "example": "org.springframework",
+            "example": "com.fasterxml.woodstox",
             "type": "string"
           },
           "type": {
@@ -5694,7 +5756,7 @@
           },
           "version": {
             "description": "The version of the package",
-            "example": "1.0.0",
+            "example": "5.0.0",
             "type": "string"
           }
         },
@@ -7511,12 +7573,11 @@
       "Severity": {
         "properties": {
           "level": {
-            "description": "Level of severity calculated via vector",
             "example": "medium",
             "type": "string"
           },
           "score": {
-            "description": "The CVSS score calculated from the vector, representing the severity of the vulnerability on a scale from 0 to 10.",
+            "description": "The CVSSv3 value of the vulnerability.",
             "example": 5.3,
             "nullable": true,
             "type": "number"
@@ -7526,20 +7587,10 @@
             "example": "Snyk",
             "type": "string"
           },
-          "type": {
-            "description": "Indicates if the CVSS item is primary or secondary. Clients should prefer the primary CVSS vector.",
-            "example": "primary",
-            "type": "string"
-          },
           "vector": {
-            "description": "CVSS vector string detailing the metrics of a vulnerability.",
+            "description": "The CVSSv3 value of the vulnerability.",
             "example": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
             "nullable": true,
-            "type": "string"
-          },
-          "version": {
-            "description": "CVSS version being described.",
-            "example": "4.0",
             "type": "string"
           }
         },
@@ -7630,8 +7681,10 @@
             "format": "date-time",
             "type": "string"
           },
-          "exploit_details": {
-            "$ref": "#/components/schemas/ExploitDetails"
+          "exploit": {
+            "description": "The exploit maturity. Value of ‘No Data’, ‘Not Defined’, ‘Unproven’, ‘Proof of Concept’, ‘Functional’ or ‘High’.",
+            "example": "Not Defined",
+            "type": "string"
           },
           "publication_time": {
             "description": "The time at which this vulnerability was published.",
@@ -44847,9 +44900,9 @@
           "2023-03-29~beta",
           "2023-04-17",
           "2023-08-21",
-          "2024-06-26"
+          "2024-06-26~beta"
         ],
-        "x-snyk-api-version": "2024-06-26"
+        "x-snyk-api-version": "2023-08-21"
       },
       "x-snyk-api-resource": "issues"
     },
@@ -44948,9 +45001,9 @@
         "x-snyk-api-releases": [
           "2022-06-29~beta",
           "2022-09-15",
-          "2024-06-26"
+          "2024-06-26~beta"
         ],
-        "x-snyk-api-version": "2024-06-26"
+        "x-snyk-api-version": "2022-09-15"
       },
       "x-snyk-api-resource": "issues"
     },
