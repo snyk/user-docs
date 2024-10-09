@@ -1040,7 +1040,6 @@
     * [Users (v1)](snyk-api/reference/users-v1.md)
     * [Users](snyk-api/reference/users.md)
     * [Webhooks (v1)](snyk-api/reference/webhooks-v1.md)
-  * [Make calls to the Snyk API](snyk-api/make-calls-to-the-snyk-api.md)
   * [API endpoints index and notes](snyk-api/api-endpoints-index-and-notes/README.md)
     * [Solutions for specific use cases](snyk-api/api-endpoints-index-and-notes/solutions-for-specific-use-cases.md)
     * [Scenarios for using the Snyk API](snyk-api/api-endpoints-index-and-notes/scenarios-for-using-the-snyk-api.md)
