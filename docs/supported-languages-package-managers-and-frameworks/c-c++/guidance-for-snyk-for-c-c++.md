@@ -95,10 +95,10 @@ The list is printed before the issues list, as shown in the following image:
 
 <figure><img src="https://lh5.googleusercontent.com/x4y1uIQ2fCFX956f1eP4664i6VKEgK6eOOddlAZ4p4WnQWJu1t_ugSOpL394KEnuzSIPRs08gNAsmjvPa-GAV0C-975esRdy0EPDY7WImG1-SXSOFO0TIAVfh_Jp2DLYc6bm7iZu55UbE3Boh4TNk_I" alt="View dependency lists"><figcaption><p>View dependency lists</p></figcaption></figure>
 
-#### **License policy text during the Beta phase**
+#### **License policy**
 
 {% hint style="info" %}
-[License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) allows a company to create a license policy for your Open Source, applications, indicating what licenses are not approved for use. To access [License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md), you must be on a Snyk Team or Enterprise [plan](https://snyk.io/plans). Snyk detects and alerts when a match is found. The alert contains the name of the license and license policy text.&#x20;
+[License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) allows a company to create a license policy for Open Source, applications, indicating what licenses are not approved for use. To access [License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md), you must be on a Snyk Team or Enterprise [plan](https://snyk.io/plans). Snyk detects and alerts when a match is found. The alert contains the name of the license and license policy text.&#x20;
 
 **License policy text** is the text associated by your administrators with the issue to provide custom direction on what to do or why the issue, if found in your application, is contrary to the policy.
 {% endhint %}
