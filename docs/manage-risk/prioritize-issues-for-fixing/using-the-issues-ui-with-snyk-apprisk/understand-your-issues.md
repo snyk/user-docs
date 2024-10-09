@@ -13,9 +13,14 @@ The Risk Factor and evidence graph information is available only to Snyk AppRisk
 * Asset and source code where the issue is present, together with an access link.
 * The Target and Project where the issue is together with an access link.
 * The Organization where the issue is present.
-* How the scan was performed in order to identify the issue.
+* How the scan was performed to identify the issue.
 * Which Snyk product was used to perform the scan.
 
 <figure><img src="../../../.gitbook/assets/image (467).png" alt="Snyk AppRisk Pro - Issues page, Table view of issues"><figcaption><p>Snyk AppRisk Pro - Issues page, Table view of issues</p></figcaption></figure>
 
 You can also sort the table of issues by these details.
+
+{% hint style="warning" %}
+In the Issues UI, the IaC issues are supported, but not IaC+, due to IaC+ being available in a Closed Beta state.
+{% endhint %}
+
