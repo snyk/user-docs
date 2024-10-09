@@ -64,6 +64,10 @@ Snyk offers data residency for the following regions:
 
 Single-tenant deployments may support more regions than the ones listed here, subject to validation of architectural service supportability by Snyk engineering.
 
+{% hint style="info" %}
+Snyk AppRisk works across all regions. There is no need to set your region and use a specific URL.
+{% endhint %}
+
 ## Regional multi- and single-tenant hosting
 
 {% hint style="warning" %}
@@ -75,6 +79,15 @@ For Free or Team plan users in the SNYK-US-01 region, no configuration is requir
 SNYK-US-02, EU, and AU data center Snyk accounts are available only with the purchase of an [Enterprise plan](https://snyk.io/plans/).
 
 Snyk offers almost all the same features, support, and performance in the regional multi- and single-tenant regions as in SNYK-US-01. For an up-to-date overview of feature parity across regions, contact your account team.
+
+All Snyk AppRisk features are supported in all multi-tenant environments, while for the single-tenant environment you need to check the availability with your account team.&#x20;
+
+## Integration considerations
+
+There are special considerations when you set up specific integrations in your Snyk ecosystem.
+
+* If you choose to install the Snyk Runtime Sensor using a Helm chart, you must provide the Snyk API base URL. You can find all the necessary details under step 5 of the [Using a Helm chart](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md#using-a-helm-chart) section of the Snyk Runtime Sensor documentation page.&#x20;
+* If you choose to set up third-party integrations, verify whether you need to specify the base API URL of the third-party&#x20;
 
 ## Regional URLs
 
