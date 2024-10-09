@@ -90,41 +90,95 @@ func clearDir(dirName string) error {
 }
 
 func aggregateSpecs(cfg *config.Config, docsBasePath string) (map[string][]operationPath, error) {
-	aggregatedDocs := map[string][]operationPath{}
+	aggregatedDocs := make(map[string][]operationPath)
 
 	for _, spec := range cfg.Specs {
-		loader := openapi3.NewLoader()
-		doc, err := loader.LoadFromFile(path.Join(docsBasePath, spec.Path))
+		specDocs, err := processSpec(spec, docsBasePath)
 		if err != nil {
 			return nil, err
 		}
-		for pathURL, pathItem := range doc.Paths.Map() {
-			for method, operation := range pathItem.Operations() {
-				for _, tag := range operation.Tags {
-					if tag == "OpenAPI" {
-						continue
-					}
-					snykDocsExtension := operation.Extensions["x-snyk-documentation"]
-					if snykDocsExtension != nil {
-						tag, err = extractCategoryNameFromExtension(snykDocsExtension)
-						if err != nil {
-							return nil, err
-						}
-					}
-					tag += spec.Suffix
-					aggregatedDocs[tag] = append(aggregatedDocs[tag], operationPath{
-						operation: operation,
-						pathItem:  pathItem,
-						pathURL:   pathURL,
-						specPath:  spec.Path,
-						method:    method,
-						docsHint:  spec.DocsHint,
-					})
-				}
-			}
+
+		for tag, ops := range specDocs {
+			aggregatedDocs[tag] = append(aggregatedDocs[tag], ops...)
 		}
 	}
+
 	return aggregatedDocs, nil
+}
+
+func processSpec(spec config.Spec, docsBasePath string) (map[string][]operationPath, error) {
+	loader := openapi3.NewLoader()
+	doc, err := loader.LoadFromFile(path.Join(docsBasePath, spec.Path))
+	if err != nil {
+		return nil, err
+	}
+
+	specDocs := make(map[string][]operationPath)
+	for pathURL, pathItem := range doc.Paths.Map() {
+		err := processPathItem(pathURL, pathItem, spec, specDocs)
+		if err != nil {
+			return nil, err
+		}
+	}
+	return specDocs, nil
+}
+
+func processPathItem(pathURL string, pathItem *openapi3.PathItem, spec config.Spec, specDocs map[string][]operationPath) error {
+	for method, operation := range pathItem.Operations() {
+		err := processOperation(pathURL, pathItem, method, operation, spec, specDocs)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func processOperation(pathURL string,
+	pathItem *openapi3.PathItem,
+	method string,
+	operation *openapi3.Operation,
+	spec config.Spec,
+	specDocs map[string][]operationPath) error {
+	for _, tag := range operation.Tags {
+		if tag == "OpenAPI" {
+			continue
+		}
+
+		if snykDocsExtension, ok := operation.Extensions["x-snyk-documentation"]; ok && snykDocsExtension != nil {
+			var err error
+			tag, err = extractCategoryNameFromExtension(snykDocsExtension)
+			if err != nil {
+				return err
+			}
+		}
+
+		if !isGAOperation(operation) {
+			continue
+		}
+
+		tag += spec.Suffix
+		specDocs[tag] = append(specDocs[tag], operationPath{
+			operation: operation,
+			pathItem:  pathItem,
+			pathURL:   pathURL,
+			specPath:  spec.Path,
+			method:    method,
+			docsHint:  spec.DocsHint,
+		})
+	}
+	return nil
+}
+
+func isGAOperation(operation *openapi3.Operation) bool {
+	apiStabilityExtension, ok := operation.Extensions["x-snyk-api-stability"]
+	if !ok || apiStabilityExtension == nil {
+		return false
+	}
+	stabilityStr, ok := apiStabilityExtension.(string)
+	if !ok {
+		return false
+	}
+	return stabilityStr == "ga"
 }
 
 func extractCategoryNameFromExtension(extension interface{}) (string, error) {
