@@ -10,23 +10,23 @@ For more information, see [Plans and pricing](https://snyk.io/plans).
 The V1 API will be sunset eventually, as further Snyk developments are now focused on the REST API.
 {% endhint %}
 
-The V1 API has the ability to test a package for issues as they are defined by Snyk, and to provide Snyk security automation according to your own workflows, unconstrained by security processes in Snyk products. Customers and partners can perform functions including:
+The V1 API enables you to test a package for issues as they are defined by Snyk, and to automate Snyk processes to accomplish your specific workflows  Customers and partners can perform functions including:
 
 * Accessing vulnerability data
 * Scanning Projects and applications
 * Receiving remediation advice
 * Viewing user data to build custom security solutions
 
-The V1 API endpoints are available in the [Reference](reference/) in the Snyk user docs. Updates are made in the user docs. The endpoints migrated to the user docs remain [online](https://snyk.docs.apiary.io) also.
+The V1 API endpoints are available in the [Reference](reference/) in the Snyk user docs. Updates are made in the user docs. Endpoints migrated to the user docs remain [online](https://snyk.docs.apiary.io) also.
 
-## API URL
+## API URLs
 
 Snyk is hosted in the following regions. Each region has its own base URL.
 
 <table><thead><tr><th width="189">Region</th><th>Base URL</th></tr></thead><tbody><tr><td>SNYK-US-01</td><td><code>https://api.snyk.io/v1/</code></td></tr><tr><td>SNYK-US-02</td><td><code>https://api.us.snyk.io/v1/</code></td></tr><tr><td>SNYK-EU-01 </td><td><code>https://api.eu.snyk.io/v1/</code> </td></tr><tr><td>SNYK-AU-01</td><td><code>https://api.au.snyk.io/v1/</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-This API is available only over HTTPS. Accessing over HTTP will yield a 404 for all requests.
+This API is available only over HTTPS. Calling the API over HTTP will yield a 404 for all requests.
 {% endhint %}
 
 ## Rate limiting
