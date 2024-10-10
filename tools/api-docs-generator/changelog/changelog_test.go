@@ -44,6 +44,14 @@ var tests = []*testConfig{
 		lastSyncVersion: "2024-05-23",
 		want:            fmt.Sprintf("## %s - Updated %s", "2024-05-23", time.Now().Format("2006-01-02")),
 	},
+	{
+		name:            "04_non_ga_changes_not_added",
+		baseURL:         "../testdata/changelog/04_non_ga_changes_not_added/2024-04-25.yaml",
+		nextURL:         "../testdata/changelog/04_non_ga_changes_not_added/2024-05-23.yaml",
+		latestGAVersion: "2024-05-23",
+		lastSyncVersion: "2024-04-25",
+		want:            "",
+	},
 }
 
 func testFn(config *testConfig) (string, error) {
@@ -83,8 +91,14 @@ func Test_delta(t *testing.T) {
 			if gotErr != nil {
 				t.Errorf("Expected not to fail %v", gotErr)
 			}
-			if !strings.Contains(gotRes, tt.want) {
-				t.Errorf("Expected markdown to contain %v", tt.want)
+			if tt.want == "" {
+				if gotRes != "" {
+					t.Errorf("Expected output to be empty, but got: %v", gotRes)
+				}
+			} else {
+				if !strings.Contains(gotRes, tt.want) {
+					t.Errorf("Expected markdown to contain: %v, but got: %v", tt.want, gotRes)
+				}
 			}
 		})
 	}
