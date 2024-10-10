@@ -2,15 +2,47 @@
 
 The following summarizes Snyk support for Python for code analysis.
 
-**Frameworks**:
+**Frameworks and libraries supported**:
 
-* Django
-* FastAPI
-* Flask
-* Jinja2
-* PyYAML
-* Requests
-* urllib3
+* AioHTTP - Comprehensive
+* aiopg - Comprehensive
+* argparse - Comprehensive
+* anthropic - Comprehensive
+* bottle - Comprehensive
+* CherryPy - Comprehensive
+* Django - Comprehensive
+* defusedxml - Comprehensive
+* fastapi - Partial
+* flask - Comprehensive
+* flask\_pymongo - Comprehensive
+* google.cloud.bigquery - Comprehensive
+* google\_generativeai - Comprehensive
+* huggingface\_hub - Comprehensive
+* httpx - Comprehensive
+* ldap3 - Comprehensive
+* libxml - Comprehensive
+* lxml - Comprehensive
+* mistralai - Comprehensive
+* mongoengine - Comprehensive
+* openai - Comprehensive
+* pandas - Partial
+* paramiko - Comprehensive
+* peewee - Comprehensive
+* pickle - Comprehensive
+* pilyaml - Comprehensive
+* pyca/cryptography - Comprehensive
+* pymongo - Comprehensive
+* pymssql - Comprehensive
+* pyramid - Comprehensive
+* psycopg - Comprehensive
+* python-ldap - Comprehensive
+* Python Standard Library - Comprehensive
+* requests - Comprehensive
+* sqlite3 (or pysqlite2) - Comprehensive
+* sqlalchemy - Comprehensive
+* turboGears - Comprehensive
+* urllib - Comprehensive
+* werkzeug - Comprehensive
 
 **Import your app through SCM**: Available
 

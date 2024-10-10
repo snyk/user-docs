@@ -1,8 +1,32 @@
-# C++ for code analysis
+# C/C++ for code analysis
 
 The following summarizes Snyk support for C++ for code analysis.
 
-**Frameworks**: C++ Standard Library, GUI Framework&#x20;
+**Frameworks and libraries supported**:&#x20;
+
+* argparse parser - Comprehensive
+* Asio Library - Comprehensive
+* Boost Library - Partial
+* Botan LIbrary - Comprehensive
+* C Standard Library - Comprehensive
+* C++ Standard Library - Comprehensive
+* Curl library - Comprehensive
+* fstream framework - Comprehensive
+* HTTPlib framework - Comprehensive
+* JsonCpp liblrary - Comprehensive
+* liboai framework - Comprehensive
+* libpq library - Comprehensive
+* libpqxx framework - Comprehensive
+* libsodium library - Comprehensive
+* LibTomCrypt framework - Comprehensive
+* libxml2 framework - Comprehensive
+* MySQL framework - Comprehensive
+* OpenSSL framework- Comprehensive
+* POSIX LIbrary  - Comprehensive
+* pugixml library - Comprehensive
+* SQLite library - Comprehensive
+* WinHTTP framework - Comprehensive
+* Xerces libraries - Comprehensive
 
 **Import your app through SCM**: Available
 
@@ -13,8 +37,6 @@ The following summarizes Snyk support for C++ for code analysis.
 **Operating systems:** Linux, Windows (limited)
 
 **Embedded systems:** Linux
-
-**Libraries:** POSIX, C++ Standard Library, Boost, Qt (limited)
 
 **IDE:** No additional options are required. The Snyk plugin has views within the IDE for displaying results.
 

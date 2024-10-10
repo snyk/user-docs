@@ -4,7 +4,14 @@ The following summarizes Snyk support for VB.NET:
 
 Snyk for VB.NET is supported **only for Snyk Code**.
 
-**Framework supported**: NuGet
+**Frameworks and libraries supported**:
+
+* .NET Core - Comprehensive
+* .NET Framework 4.6-4.8.x - Comprehensive
+* Anthropic.SDK - Comprehensive
+* Azure.AI.OpenAI - Comprehensive
+* Google\_GenerativeAI - Comprehensive
+* Mistral.SDK - Comprehensive
 
 **Import your app through SCM**: Available
 

@@ -24,7 +24,7 @@
     * [Dep Graph API](supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
     * [Examples of Snyk for Bazel](supported-languages-package-managers-and-frameworks/bazel/examples-of-snyk-for-bazel.md)
   * [C/C++](supported-languages-package-managers-and-frameworks/c-c++/README.md)
-    * [C++ for code analysis](supported-languages-package-managers-and-frameworks/c-c++/c++-for-code-analysis.md)
+    * [C/C++ for code analysis](supported-languages-package-managers-and-frameworks/c-c++/c++-for-code-analysis.md)
     * [C/C++ for open source](supported-languages-package-managers-and-frameworks/c-c++/c-c++-for-open-source.md)
     * [Snyk CLI for open-source C++ scans](supported-languages-package-managers-and-frameworks/c-c++/snyk-cli-for-open-source-c++-scans.md)
     * [Guidance for Snyk for C/C++](supported-languages-package-managers-and-frameworks/c-c++/guidance-for-snyk-for-c-c++.md)

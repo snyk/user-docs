@@ -2,7 +2,9 @@
 
 Snyk for Apex is supported **only for Snyk Code**.
 
-**Framework supported**: APEX&#x20;
+**Frameworks and libraries supported**: &#x20;
+
+Apex Standard Library - Comprehensive
 
 **Import your app through SCM**: Available
 
@@ -11,7 +13,7 @@ Snyk for Apex is supported **only for Snyk Code**.
 **Features**:
 
 * Support for Interfile analysis
-* Support for `.trigger` and `.cls` files
+* Support for `.trigger, .tgr` and `.cls` files
 * Custom rules
 * Reports
 * Interfile analysis

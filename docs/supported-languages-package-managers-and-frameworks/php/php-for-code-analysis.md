@@ -2,13 +2,17 @@
 
 The following summarizes Snyk support for PHP for code analysis:
 
-**Frameworks**:&#x20;
+**Frameworks and libraries supported**:&#x20;
 
-* Symfony
-* Laravel
-* PHP Standards
+* Laravel - Partial
+* llphant - Comprehensive
+* openai-php/client - Comprehensive
+* orhanerday/open-ai - Comprehensive
+* Pclzip - Comprehensive
+* Symfony - Partial
+* theodo-group/llphant - Comprehensive
 
-**Framework versions**: Versions 5.2 up to 8.0
+**PHP versions**: Versions 5.2 up to 8.0
 
 **Import your app through SCM**: Available
 

@@ -2,7 +2,20 @@
 
 The following summarizes Snyk support for Ruby for code analysis
 
-**Frameworks**: Ruby On Rails
+**Frameworks and libraries supported**:&#x20;
+
+* ActiveRecord - Partial
+* Connection - Comprehensive
+* LibXML - Comprehensive
+* mysql2 - Comprehensive
+* Nokogiri - Comprehensive
+* OpenSSL - Comprehensive
+* openai ruby client - Comprehensive
+* ruby-openai - Comprehensive
+* rexml - Comprehensive
+* Ruby On Rails - Comprehensive
+* sinatra - Comprehensive
+* sqlite3-ruby - Comprehensive
 
 **Import your app through SCM**: Available
 

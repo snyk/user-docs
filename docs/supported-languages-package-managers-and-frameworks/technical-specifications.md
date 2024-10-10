@@ -26,9 +26,31 @@ Snyk Code only accepts source code files in UTF-8 encoding. Consider converting 
 
 To support a specific framework, Snyk Code must both support the relevant language and be trained on Projects using the framework. The found patterns are then annotated by the security team and extended by curated content.
 
-Most frameworks are supported out of the box, as Snyk Code needs only to parse the code to analyze it. In some cases, they might require specific rules, or it might require specific program analysis engine updates or both.
+Most frameworks are partially supported out of the box, as Snyk Code needs only to parse the code to analyze it. In some cases, frameworks may require specific rules, or require specific program analysis engine updates, or both.
 
 If you notice any gaps in support for a specific framework, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+
+### Framework support levels
+
+To provide clarity on the extent of coverage, Snyk has categorized framework support into two levels: Comprehensive and Partial.
+
+Comprehensive Support indicates the following:
+
+* Sources and Sinks: Snyk has thoroughly identified and included all relevant sources and sinks.
+* Data Flow Testing: Extensive testing has been conducted to ensure comprehensive data flow coverage.
+* Engine Support: The Snyk Code engine is fully optimized for this framework.
+* Limitations: Snyk is unaware of any limitations. If you encounter a false negative, please report it to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+
+Partial Support indicates the following:
+
+* Sources and Sinks: Snyk coverage is limited, and some sources, sanitizers, or sinks may be missing.
+* Data Flow Testing:  Snyk has conducted some testing.
+* Engine Support: Compatibility of the engine with this framework is limited, potentially affecting analysis accuracy.
+* Limitations: False negatives in taint analysis or source and sink identification may still occur.
+
+Partial support for a framework typically involves a mix of these factors. For instance, some sources or sinks may be missing, and while the engine might offer better support, further data flow testing has not been conducted to ensure the analysis is fully reliable.
+
+Snyk is continually working to expand framework coverage and improve the accuracy of analysis.
 
 ### How Snyk Code analysis works
 

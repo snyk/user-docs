@@ -2,9 +2,19 @@
 
 The following summarizes Snyk support for Go for code analysis.
 
-**Frameworks**: GORM
+**Frameworks and libraries supported**:&#x20;
 
-**Framework versions**: Versions up to go1.16
+* Azure/azure-sdk-for-go/sdk/ai/azopenai - Comprehensive
+* gage-technologies/mistral-go - Comprehensive
+* Gin - Partial
+* Go Standard Library - Comprehensive
+* google/generative-ai-go/genai - Comprehensive
+* GORM library - Partial
+* labstack/echo - Partial
+* sashabaranov/go-openai - Comprehensive
+* spf13/pflag - Comprehensive
+
+**Go versions**: Versions up to go1.16
 
 **Import your app through SCM**: Available
 

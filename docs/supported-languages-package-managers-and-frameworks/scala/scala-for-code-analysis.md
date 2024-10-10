@@ -2,13 +2,17 @@
 
 The following summarizes Snyk support for Scala for code analysis.
 
-**Frameworks**:&#x20;
+**Frameworks and libraries supported**:&#x20;
 
-* Play Framework
-* Akka
-* HTTP4S
+Note: Scala is fully interoperable with Java, as such the Java frameworks mentioned for Snyk Code are supported for Scala where applicable.&#x20;
 
-**Framework versions**: Version 2.x
+* Akka - Comprehensive
+* HTTP4S - Comprehensive
+* io.cequence.openaiscala - Comprehensive
+* Play Framework - Comprehensive
+* Scala standard library - Comprehensive
+
+**Scala versions**: Version 2.x
 
 **Import your app through SCM**: Available
 
