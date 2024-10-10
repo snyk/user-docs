@@ -1,6 +1,6 @@
 # Guidance for Snyk for C/C++
 
-This page reviews considerations about languages and package managers, to help you apply Snyk effectively in your technology stack.
+open-sourceThis page reviews considerations about languages and package managers, to help you apply Snyk effectively in your technology stack.
 
 ## Code analysis
 
@@ -10,7 +10,7 @@ This page reviews considerations about languages and package managers, to help y
 
 ## Open source and licensing
 
-In the case of package managers like npm or Maven, Snyk traditionally uses the managed open source capabilities of `snyk test` and `snyk monitor`. In the case of C/C++, Snyk supports unmanaged dependencies by adding `--unmanaged`.
+In the case of package managers like npm or Maven, Snyk traditionally uses the managed open-source capabilities of `snyk test` and `snyk monitor`. In the case of C/C++, Snyk supports unmanaged dependencies by adding `--unmanaged`.
 
 {% hint style="info" %}
 Snyk does not hook into a build nor rely on a build to perform scanning. Snyk performs analysis from source code.
@@ -98,12 +98,15 @@ The list is printed before the issues list, as shown in the following image:
 #### **License policy**
 
 {% hint style="info" %}
-[License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) allows a company to create a license policy for Open Source, applications, indicating what licenses are not approved for use. To access [License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md), you must be on a Snyk Team or Enterprise [plan](https://snyk.io/plans). Snyk detects and alerts when a match is found. The alert contains the name of the license and license policy text.&#x20;
-
-**License policy text** is the text associated by your administrators with the issue to provide custom direction on what to do or why the issue, if found in your application, is contrary to the policy.
+**Feature availability**\
+The [License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) feature is available on the Snyk Team or Enterprise [plan](https://snyk.io/plans).
 {% endhint %}
 
-The following shows the license policy text example at the bottom of the screen, giving you directions on what to do if the license is found.
+This feature allows a company to create a license policy for Open Source applications, indicating what licenses are not approved for use. When Snyk detects a match for a license that is not approved, Snyk sends an alert. This alert contains the name of the license and license policy text.&#x20;
+
+License policy text is associated with the license issue by your administrators.  This text provides custom direction on what to do or why the license issue is contrary to the policy.
+
+The following shows a license policy text example at the bottom of the screen, giving you directions on what to do if the license is found.
 
 <div align="left">
 
@@ -113,7 +116,7 @@ The following shows the license policy text example at the bottom of the screen,
 
 #### **Alternate testing options**
 
-If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the open source packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues) to do the analysis.
+If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the open-source packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues) to do the analysis.
 
 ### **Options and plugins**
 
