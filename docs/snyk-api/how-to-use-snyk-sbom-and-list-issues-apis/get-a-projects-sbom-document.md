@@ -1,20 +1,20 @@
-# Get a project’s SBOM document
+# Get a Project’s SBOM document
 
 {% hint style="info" %}
 **Feature availability**\
 This feature is available to customers on Snyk Enterprise plans.
 {% endhint %}
 
-Snyk offers the endpoint [Get a project's SBOM document](../reference/sbom.md) to generate SBOM documents for Open Source and Container Projects that are continuously being monitored for issues.&#x20;
+Snyk offers the endpoint [Get a project's SBOM document](../reference/sbom.md) to generate SBOM documents for Open Source and Container Projects that are continuously monitored for issues.&#x20;
 
 The SBOM document represents the latest state of a Project’s dependencies and their relationships.
 
 SBOM documents can be generated in [CycloneDX](https://cyclonedx.org/) v1.4 (JSON, XML) and [SPDX](https://spdx.dev/) v2.3 (JSON) formats.
 
-## How to generate the SBOM for a project
+## How to generate the SBOM for a Project
 
 1. Log in to the Snyk Web UI and retrieve your Organization ID (UUID format), Project ID (UUID), and API key.\
-   IIf you need help in finding these values, see [Organization general settings](../../snyk-admin/groups-and-organizations/organizations/organization-general-settings.md), [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md), and [Authenticate for the API](../rest-api/authentication-for-api/authenticate-for-the-api.md).
+   If you need help in finding these values, see [Organization general settings](../../snyk-admin/groups-and-organizations/organizations/organization-general-settings.md), [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md), and [Authenticate for the API](../rest-api/authentication-for-api/authenticate-for-the-api.md).
 2. Determine the format you want for the SBOM you will generate.\
    Available options are CycloneDX 1.4 JSON (`cyclonedx1.4+json`), CycloneDX 1.4 XML (`cyclonedx1.4+xml`), or SPDX v2.3 JSON (`spdx2.3+json`).
 3. Using any HTTP client, for example, Postman or `curl`, make a request to the endpoint.\
@@ -40,7 +40,7 @@ The following response code indicates success.
 
 The SBOM document was successfully generated. The response body contains the document in the requested format.
 
-The following are **error states** that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+The following are **error states** that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager or submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 **401 Unauthorized**
 

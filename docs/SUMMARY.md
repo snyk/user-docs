@@ -1065,7 +1065,7 @@
       * [Register the App and configure user authorization](snyk-api/how-to-use-snyk-apps-apis/tutorial-create-a-snyk-app/register-the-app-and-configure-user-authorization.md)
       * [Render content for users](snyk-api/how-to-use-snyk-apps-apis/tutorial-create-a-snyk-app/render-content-for-users.md)
   * [How to use Snyk SBOM and List issues APIs](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/README.md)
-    * [Get a project’s SBOM document](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/get-a-projects-sbom-document.md)
+    * [Get a Project’s SBOM document](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/get-a-projects-sbom-document.md)
     * [Test an SBOM document for vulnerabilities](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md)
     * [List issues for a package](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
   * [How to use Snyk webhooks APIs](snyk-api/how-to-use-snyk-webhooks-apis/README.md)
