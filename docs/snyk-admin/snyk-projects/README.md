@@ -16,7 +16,7 @@ Snyk Projects concepts include the following:
 * [Origin](./#origin)
 * [Project](./#project)
 * [Targetfile](./#targetfile)
-* [Type](./#type)Or
+* [Type](./#type)
 
 ## Target
 
