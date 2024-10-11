@@ -1043,7 +1043,7 @@
   * [API endpoints index and notes](snyk-api/api-endpoints-index-and-notes/README.md)
     * [Solutions for specific use cases](snyk-api/api-endpoints-index-and-notes/solutions-for-specific-use-cases.md)
     * [Scenarios for using the Snyk API](snyk-api/api-endpoints-index-and-notes/scenarios-for-using-the-snyk-api.md)
-    * [Org and group identification for Projects using the API](snyk-api/api-endpoints-index-and-notes/undefined.md)
+    * [Organizaton and Group identification for Projects using the API](snyk-api/api-endpoints-index-and-notes/organizaton-and-group-identification-for-projects-using-the-api.md)
     * [Project issue paths API endpoints](snyk-api/api-endpoints-index-and-notes/project-issue-paths-api-endpoints.md)
     * [Project type responses from API](snyk-api/api-endpoints-index-and-notes/project-type-responses-from-api.md)
   * [How to use Snyk Apps APIs](snyk-api/how-to-use-snyk-apps-apis/README.md)

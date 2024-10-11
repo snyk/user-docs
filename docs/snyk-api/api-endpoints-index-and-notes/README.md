@@ -5,7 +5,7 @@
 {% hint style="info" %}
 This index and notes section of the documentation provides, in addition to this index, [solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-the-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
 
-* [Organization and Group identification for Projects using the API](undefined.md)
+* [Organization and Group identification for Projects using the API](organizaton-and-group-identification-for-projects-using-the-api.md)
 * [Project issue paths V1 API endpoints](project-issue-paths-api-endpoints.md)
 * [Project type responses from the API](project-type-responses-from-api.md)
 
@@ -236,7 +236,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Get a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-)
 
-**More information:** [Org and group identification for Projects](undefined.md)
+**More information:** [Org and group identification for Projects](organizaton-and-group-identification-for-projects-using-the-api.md)
 
 ### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-/sso\_connections)
 
@@ -266,7 +266,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
-**More information:** [Org and group identification for Projects](undefined.md); [Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
+**More information:** [Org and group identification for Projects](organizaton-and-group-identification-for-projects-using-the-api.md); [Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
 
 ### [Add a member to an organization within a group](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
@@ -394,7 +394,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [List all the organizations a user belongs to](../reference/organizations-v1.md#orgs)
 
-**More information:** [Org and group identification for Projects](undefined.md)
+**More information:** [Org and group identification for Projects](organizaton-and-group-identification-for-projects-using-the-api.md)
 
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
@@ -454,7 +454,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ### [Get an ORG](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-) (beta)
 
-**More information:** [Org and group identification for Projects](undefined.md)
+**More information:** [Org and group identification for Projects](organizaton-and-group-identification-for-projects-using-the-api.md)
 
 ## Projects (v1)
 
