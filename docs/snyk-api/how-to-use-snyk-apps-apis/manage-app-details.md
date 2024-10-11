@@ -6,7 +6,7 @@ To view a list of Snyk Apps owned by your Snyk Organization, send a `GET` reques
 
 `https://api.snyk.io/rest/orgs/{orgId}/apps/creations?version={version}`
 
-For details, refer to the documentation: [Get a list of apps created by an Organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/creations).
+For details, see the endpoint [Get a list of apps created by an Organization](../reference/apps.md#orgs-org\_id-apps-1).
 
 ## Update App details
 
@@ -18,7 +18,7 @@ To update an App, send a `PATCH` request to the `apps/creations{app_id}` endpoin
 
 The `app_id` path parameter is the `id` in the response to a [`GET` request to the `apps/creations` endpoint](manage-app-details.md#list-apps-created-by-an-organization).
 
-For details, refer to the documentation: [Update app creation attributes such as name, redirect URLs, and access token time to live using the App ID](https://apidocs.snyk.io/#patch-/orgs/-org\_id-/apps/creations/-app\_id-).
+For details, see the endpoint[Update app creation attributes such as name, redirect URLs, and access token time to live using the App ID](../reference/apps.md#orgs-org\_id-apps-creations-app\_id).
 
 ## Delete an App
 
@@ -28,7 +28,7 @@ To delete an App from your Snyk Organization, send a DELETE request to the endpo
 
 The `app_id` path parameter is the `id` in the response to a [`GET` request to the `apps/creations` endpoint](manage-app-details.md#list-apps-created-by-an-organization).
 
-For details, refer to the documentation: [Delete an app by its App ID](https://apidocs.snyk.io/?#delete-/orgs/-org\_id-/apps/creations/-app\_id-).
+For details, see the endpoint [Delete an app by its App ID](../reference/apps.md#orgs-org\_id-apps-client\_id-2).
 
 Deleting an App revokes your App credentials and removes all of your App's installations. If you have active users, they will no longer be able to connect to Snyk through the App.
 
@@ -42,10 +42,10 @@ Perform secret management requests for apps you have created by sending a `POST`
 
 The `app_id` path parameter is the `id` in the response to a [`GET` request to the `apps/creations` endpoint](manage-app-details.md#list-apps-created-by-an-organization).
 
-For details, refer to the documentation: [Manage client secret for the Snyk App](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps/creations/-app\_id-/secrets).
+For details, see the endpoint [Manage client secret for the Snyk App](../reference/apps.md#orgs-org\_id-apps-creations-app\_id-secrets).
 
 {% hint style="info" %}
-For client credentials apps that you have installed, see [Manage client secret for non-interactive Snyk App installations](https://apidocs.snyk.io/?version=2024-03-12#post-/orgs/-org\_id-/apps/installs/-install\_id-/secrets).
+For client credentials apps that you have installed, see the endpoint [Manage client secret for non-interactive Snyk App installations](../reference/apps.md#groups-group\_id-apps-installs-install\_id-secrets).
 {% endhint %}
 
 You can perform three operations that are indicated by the body of your POST request:
