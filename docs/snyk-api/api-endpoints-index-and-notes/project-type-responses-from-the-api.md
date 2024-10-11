@@ -1,9 +1,9 @@
-# Snyk API responses: Project type
+# Project type responses from the API
 
-The Snyk Project type is returned from [Snyk API v1 Projects endpoints](https://snyk.docs.apiary.io/#reference/projects):\
+The Snyk Project type is returned from the [API v1 Projects endpoints](../reference/projects-v1.md):\
 `type - The package manager of the project`
 
-The following is a list of the package managers supported by Snyk. This is all of the possible `type` values that may be returned:
+The following is a list of the possible `type` values that may be returned, representing the package managers supported by Snyk:
 
 `apk`\
 `armconfig`\

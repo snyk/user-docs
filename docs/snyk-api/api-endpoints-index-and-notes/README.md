@@ -7,7 +7,7 @@ This index and notes section of the documentation provides, in addition to this 
 
 * [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
 * [Project issue paths V1 API endpoints](project-issue-paths-api-endpoints.md)
-* [Project type responses from the API](project-type-responses-from-api.md)
+* [Project type responses from the API](project-type-responses-from-the-api.md)
 
 See also the following sections on specific APIs:
 
@@ -458,7 +458,7 @@ More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing
 
 ## Projects (v1)
 
-**More information:** [Project type responses from API](project-type-responses-from-api.md)
+**More information:** [Project type responses from API](project-type-responses-from-the-api.md)
 
 ### [Update a project](../reference/projects-v1.md#org-orgid-project-projectid)
 

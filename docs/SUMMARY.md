@@ -1045,7 +1045,7 @@
     * [Scenarios for using the Snyk API](snyk-api/api-endpoints-index-and-notes/scenarios-for-using-the-snyk-api.md)
     * [Organization and Group identification for Projects using the API](snyk-api/api-endpoints-index-and-notes/organization-and-group-identification-for-projects-using-the-api.md)
     * [Project issue paths API endpoints](snyk-api/api-endpoints-index-and-notes/project-issue-paths-api-endpoints.md)
-    * [Project type responses from API](snyk-api/api-endpoints-index-and-notes/project-type-responses-from-api.md)
+    * [Project type responses from the API](snyk-api/api-endpoints-index-and-notes/project-type-responses-from-the-api.md)
   * [How to use Snyk Apps APIs](snyk-api/how-to-use-snyk-apps-apis/README.md)
     * [About Snyk Apps](snyk-api/how-to-use-snyk-apps-apis/about-snyk-apps.md)
     * [Prerequisites for Snyk Apps](snyk-api/how-to-use-snyk-apps-apis/prerequisites-for-snyk-apps.md)
