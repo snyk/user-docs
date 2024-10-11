@@ -91,11 +91,12 @@ For DigitalOcean Container Registry, Google Cloud Container Registry, Google Art
 {% endhint %}
 
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration provided by Snyk support.
-* `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example: [http://my.broker.client:8000](http://my.broker.client:8000).&#x20;
+* `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example: \
+  "[http://my.broker.client:8000](http://my.broker.client:8000)".&#x20;
   * This must have `http://` and the port number.&#x20;
   * [Additional settings](../install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker.md) are required to configure the client with HTTPS.
 * `CR_AGENT_URL` - The URL of your Container Registry Agent, including scheme and port, to which the Broker Client will route the requests, for example: "[http://my.container-registry-agent](http://my.container-registry-agent):8081".
-* `CR_TYPE` - The container registry type as listed in [Supported container registries](./#supported-container-registries) on this page, for example, `docker-hub`, `gcr`, `artifactory-cr`.
+* `CR_TYPE` - The container registry type as listed in [Supported container registries](./#supported-container-registries) on this page, for example: "docker-hub", "gcr," "artifactory-cr".
 * `CR_BASE` - The hostname of the container registry api to connect to, for example: "cr.host.com".
 * `CR_USERNAME` - The username for authenticating to the container registry API.
 * `CR_PASSWORD` - The password for authenticating to the container registry API.
@@ -145,7 +146,7 @@ The following container registries require specific environment variables, setup
 
 ### **DigitalOcean Container Registry**
 
-`CR_USERNAME` and `CR_PASSWORD` are not required to set up Broker Client for DigitalOcean Container Registry. Instead, specify `CR_TOKEN`, the Digital Ocean authentication token.
+`CR_USERNAME` and `CR_PASSWORD` are not required to set up the Broker Client for DigitalOcean Container Registry. Instead, specify `CR_TOKEN`, the Digital Ocean authentication token.
 
 ### **GCR and Google Artifact Registry**
 
