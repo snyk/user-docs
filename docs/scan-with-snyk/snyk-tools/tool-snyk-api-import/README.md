@@ -61,14 +61,14 @@ The logs can be explored using [Bunyan CLI](http://trentm.com/node-bunyan/bunyan
 ## Contents of the snyk-api-import instructions
 
 * Utilities
-  * [Creating orgs in Snyk](creating-orgs-in-snyk.md)
+  * [Creating orgs in Snyk](creating-organizations-in-snyk.md)
   * [Generating import data](creating-import-targets-data-for-import.md)
-  * [Mirroring GitHub.com and GitHub Enterprise organizations and repos in Snyk](mirroring-github.com-github-enterprise-organizations-and-repos-in-snyk.md)
+  * [Mirroring GitHub.com and GitHub Enterprise organizations and repos in Snyk](mirroring-github.com-and-github-enterprise-organizations-and-repos-in-snyk.md)
   * [Mirroring GitLab organizations and repos in Snyk](mirroring-gitlab-organizations-and-repos-in-snyk.md)
   * [Mirroring Bitbucket Server organizations and repos in Snyk](mirroring-bitbucket-server-organizations-and-repos-in-snyk.md)
   * [Mirroring Bitbucket Cloud organizations and repos in Snyk](mirroring-bitbucket-cloud-organizations-and-repos-in-snyk.md)
 * [Kicking off an import](kicking-off-an-import.md)
-* [Contributing](contributing.md)
+* [Contributing](contributing-to-snyk-api-import.md)
 * [Sync: detecting changes in monitored repos and updating Snyk projects](https://github.com/snyk/snyk-api-import/blob/master/docs/sync.md)
 * Example workflow: [AWS automation](https://github.com/snyk/snyk-api-import/blob/master/docs/example-workflows/aws-automation-example.md)
 

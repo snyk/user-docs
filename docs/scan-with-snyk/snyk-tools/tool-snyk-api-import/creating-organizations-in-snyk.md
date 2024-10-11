@@ -3,15 +3,15 @@
 This page has instructions for creating organizations (Orgs) in Snyk:
 
 * Generating the data to create organizations in Snyk
-  * [GitHub](creating-orgs-in-snyk.md#github.com-github-enterprise)
-  * [GitLab](creating-orgs-in-snyk.md#gitlab.com-hosted-gitlab)
-  * [Bitbucket Server](creating-orgs-in-snyk.md#bitbucket-server)
-  * [Bitbucket Cloud](creating-orgs-in-snyk.md#bitbucket-cloud)
-  * [Azure](creating-orgs-in-snyk.md#azure)
-* [Methods of creating Orgs](creating-orgs-in-snyk.md#methods-of-creating-orgs)
-  * [via the API](creating-orgs-in-snyk.md#via-api)
-  * [via the `orgs:create` util](creating-orgs-in-snyk.md#via-orgs-create-util)
-* [Recommendations](creating-orgs-in-snyk.md#recommendations)
+  * [GitHub](creating-organizations-in-snyk.md#github.com-github-enterprise)
+  * [GitLab](creating-organizations-in-snyk.md#gitlab.com-hosted-gitlab)
+  * [Bitbucket Server](creating-organizations-in-snyk.md#bitbucket-server)
+  * [Bitbucket Cloud](creating-organizations-in-snyk.md#bitbucket-cloud)
+  * [Azure](creating-organizations-in-snyk.md#azure)
+* [Methods of creating Orgs](creating-organizations-in-snyk.md#methods-of-creating-orgs)
+  * [via the API](creating-organizations-in-snyk.md#via-api)
+  * [via the `orgs:create` util](creating-organizations-in-snyk.md#via-orgs-create-util)
+* [Recommendations](creating-organizations-in-snyk.md#recommendations)
 
 Before an import can begin you must set up Snyk with the organizations you will populate with projects.
 
