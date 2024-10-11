@@ -42,7 +42,7 @@ Snyk provides a user-friendly interface for managing your authorized Snyk Apps. 
 
 Navigate to your personal **Account Settings** and select the **Authorized Snyk Apps** option.
 
-You can also navigate directly to the [Authorized Snyk Apps page](https://app.snyk.io/account/manage/authorized-apps).&#x20;
+You can also navigate directly to the [Authorized Snyk Apps page](https://app.snyk.io/account/manage/authorized-apps) or open the page from your Organization **Settings**.
 
 <figure><img src="../../.gitbook/assets/image (472) (1).png" alt="Snyk Apps management UI"><figcaption><p>Snyk Apps management UI</p></figcaption></figure>
 
