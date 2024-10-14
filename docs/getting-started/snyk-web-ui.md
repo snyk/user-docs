@@ -6,7 +6,7 @@ If you have not done so already, [create an account](quickstart/create-or-log-in
 
 Use the Snyk Web UI to run Snyk from any [supported browser](quickstart/#supported-browsers).
 
-In the Snyk Web UI, you can visualize information at the [Group](explore-the-snyk-web-ui.md#group-level) or [Organization](explore-the-snyk-web-ui.md#organization-level) level by clicking the name of the Group or Organization. [General information](explore-the-snyk-web-ui.md#general-settings-available-for-all-level-types), like the Reports, Issues, Dependencies, Members, Settings, Help, and Settings, is available for all level types.
+In the Snyk Web UI, you can visualize information at the [Group](snyk-web-ui.md#group-level) or [Organization](snyk-web-ui.md#organization-level) level by clicking the name of the Group or Organization. [General information](snyk-web-ui.md#general-settings-available-for-all-level-types), like the Reports, Issues, Dependencies, Members, Settings, Help, and Settings, is available for all level types.
 
 {% hint style="info" %}
 Snyk AppRisk Essentials is available with Snyk Enterprise.&#x20;
@@ -16,11 +16,11 @@ Snyk AppRisk Essentials is available with Snyk Enterprise.&#x20;
 
 The following Snyk functions are available with the Web UI:
 
-* [Organizations available for the selected Group](explore-the-snyk-web-ui.md#organizations-available-for-the-selected-group)
-* [View the assets dashboard](explore-the-snyk-web-ui.md#view-the-assets-dashboard)
-* [View and manage your assets inventory](explore-the-snyk-web-ui.md#view-and-manage-your-assets-inventory)
-* [Manage and customize your policies](explore-the-snyk-web-ui.md#manage-and-customize-your-policies)
-* [Manage integrations for asset discovery, asset coverage, and issues from third-party vendors](explore-the-snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors)
+* [Organizations available for the selected Group](snyk-web-ui.md#organizations-available-for-the-selected-group)
+* [View the assets dashboard](snyk-web-ui.md#view-the-assets-dashboard)
+* [View and manage your assets inventory](snyk-web-ui.md#view-and-manage-your-assets-inventory)
+* [Manage and customize your policies](snyk-web-ui.md#manage-and-customize-your-policies)
+* [Manage integrations for asset discovery, asset coverage, and issues from third-party vendors](snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors)
 
 ### Organizations available for the selected Group
 
@@ -120,22 +120,22 @@ For security reasons, all credentials are anonymized when you open the Settings 
 
 Select an existing integration and click **Delete** to remove it from your environment.
 
-You cannot restore an integration that was already deleted. To add it again, you need to follow the steps from the [Using the Integration Hub](explore-the-snyk-web-ui.md#using-the-integration-hub) section.
+You cannot restore an integration that was already deleted. To add it again, you need to follow the steps from the [Using the Integration Hub](snyk-web-ui.md#using-the-integration-hub) section.
 
 ## Organization level
 
 The following Snyk functions are available with the Web UI:
 
-* [Explore the Dashboard](explore-the-snyk-web-ui.md#explore-the-dashboard)
-* [Manage your Projects](explore-the-snyk-web-ui.md#manage-your-projects)
-* [View reports](explore-the-snyk-web-ui.md#view-reports)
-* [View dependencies and licenses](explore-the-snyk-web-ui.md#view-dependencies-and-licenses)
-* [Manage your integrations](explore-the-snyk-web-ui.md#manage-your-integrations)
-* [View and prioritize issues](explore-the-snyk-web-ui.md#view-and-prioritize-issues)
-* [Manage Organization or Group members](explore-the-snyk-web-ui.md#manage-organization-or-group-members)
-* [Set Snyk Organization and Group settings](explore-the-snyk-web-ui.md#snyk-organization-or-group-settings)
-* [View helpful resources](explore-the-snyk-web-ui.md#view-helpful-resources)
-* [Manage account preferences and settings](explore-the-snyk-web-ui.md#manage-account-preferences-and-settings)
+* [Explore the Dashboard](snyk-web-ui.md#explore-the-dashboard)
+* [Manage your Projects](snyk-web-ui.md#manage-your-projects)
+* [View reports](snyk-web-ui.md#view-reports)
+* [View dependencies and licenses](snyk-web-ui.md#view-dependencies-and-licenses)
+* [Manage your integrations](snyk-web-ui.md#manage-your-integrations)
+* [View and prioritize issues](snyk-web-ui.md#view-and-prioritize-issues)
+* [Manage Organization or Group members](snyk-web-ui.md#manage-organization-or-group-members)
+* [Set Snyk Organization and Group settings](snyk-web-ui.md#snyk-organization-or-group-settings)
+* [View helpful resources](snyk-web-ui.md#view-helpful-resources)
+* [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings)
 
 {% hint style="info" %}
 You can also use Snyk functions from the [Snyk CLI](../snyk-cli/), [in your IDE](../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), and with the [Snyk API](../snyk-api/).
@@ -202,13 +202,13 @@ Select **Integrations** from the navigation on the Dashboard to open the [Integr
 
 The following Snyk functions are available with the Web UI:
 
-* [View reports ](explore-the-snyk-web-ui.md#view-reports)
-* [View and prioritize issues ](explore-the-snyk-web-ui.md#view-and-prioritize-issues)
-* [View dependencies and licenses  ](explore-the-snyk-web-ui.md#view-dependencies-and-licenses)
-* [Manage Organization or Group members](explore-the-snyk-web-ui.md#manage-organization-or-group-members) &#x20;
-* [View and manage Snyk Organization or Group settings ](explore-the-snyk-web-ui.md#snyk-organization-or-group-settings)
-* [View helpful resources  ](explore-the-snyk-web-ui.md#view-helpful-resources)
-* [Manage account preferences and settings](explore-the-snyk-web-ui.md#manage-account-preferences-and-settings)
+* [View reports ](snyk-web-ui.md#view-reports)
+* [View and prioritize issues ](snyk-web-ui.md#view-and-prioritize-issues)
+* [View dependencies and licenses  ](snyk-web-ui.md#view-dependencies-and-licenses)
+* [Manage Organization or Group members](snyk-web-ui.md#manage-organization-or-group-members) &#x20;
+* [View and manage Snyk Organization or Group settings ](snyk-web-ui.md#snyk-organization-or-group-settings)
+* [View helpful resources  ](snyk-web-ui.md#view-helpful-resources)
+* [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings)
 
 ### **View reports**
 

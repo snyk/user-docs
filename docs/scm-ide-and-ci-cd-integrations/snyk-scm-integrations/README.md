@@ -83,7 +83,7 @@ You can refer to the table below to verify the availability and compatibility of
 
 Use the Integration Hub page to onboard integrations and populate Snyk AppRisk with data from SCM tools.
 
-See the [Snyk Web UI](../../getting-started/explore-the-snyk-web-ui.md#manage-your-integrations) page for step-by-step instructions on how to set up an integration.
+See the [Snyk Web UI](../../getting-started/snyk-web-ui.md#manage-your-integrations) page for step-by-step instructions on how to set up an integration.
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 

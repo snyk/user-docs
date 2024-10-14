@@ -21,4 +21,4 @@ On the sidebar menu, select **Reports** to open reporting. For instructions on u
 
 This concludes this walkthrough.
 
-Refer to the [Snyk documentation](<../../README (1).md>) for more information.
+Refer to the [Snyk documentation](../../) for more information.

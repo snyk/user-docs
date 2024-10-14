@@ -7,7 +7,7 @@ The Snyk Runtime Sensor and the third-party integrations providing the Deployed 
 
 Snyk AppRisk uses holistic application intelligence to help you better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. Users can also prioritize their issues based on asset classification as defined in Snyk AppRisk policies.&#x20;
 
-If you use Snyk AppRisk, you can access the Issues page from the [Snyk Web UI](../../getting-started/explore-the-snyk-web-ui.md#view-and-prioritize-issues).
+If you use Snyk AppRisk, you can access the Issues page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
 
 ## Insights for Snyk AppRisk
 

@@ -98,7 +98,7 @@ All these settings can be found in the Snyk Web UI, under Group Settings, the Se
 
 You can enable or disable the available risk factors: [Deployed](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), [Loaded package](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md), [OS condition](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md), [Public facing](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
 
-You can enable or disable the risk factors from [Snyk Web UI](../../../getting-started/explore-the-snyk-web-ui.md), Group Settings, Settings option, Risk factors.
+You can enable or disable the risk factors from [Snyk Web UI](../../../getting-started/snyk-web-ui.md), Group Settings, Settings option, Risk factors.
 
 ### Provider Selection
 
@@ -122,7 +122,7 @@ Ensure each source name is assigned to only one cluster mapping.
 
 When prioritizing issues, it is important to understand the available integration options and associated risk factors.&#x20;
 
-Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level [Snyk Web UI](../../../getting-started/explore-the-snyk-web-ui.md), the Setting menu, and then the Insights option.&#x20;
+Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the Setting menu, and then the Insights option.&#x20;
 
 * [**Snyk Runtime Sensor**](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md): Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
 * **Kubernetes Connector**: Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.

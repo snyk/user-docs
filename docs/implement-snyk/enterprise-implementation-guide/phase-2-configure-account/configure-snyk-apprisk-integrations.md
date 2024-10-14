@@ -18,7 +18,7 @@ Start onboarding AppRisk by identifying all inventory code-based assets and dete
 
 ## Access Snyk AppRisk
 
-You can access Snyk AppRisk from the [Snyk Web UI.](../../../getting-started/explore-the-snyk-web-ui.md)
+You can access Snyk AppRisk from the [Snyk Web UI.](../../../getting-started/snyk-web-ui.md)
 
 * Access Snyk AppRisk from the Group level of your Snyk Group.
 * Ensure you have Group Admin access.
@@ -36,7 +36,7 @@ You can access and configure the integrations from the Integrations view. Select
 
 The default display in the Integrations view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../../../getting-started/explore-the-snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem).
+The integrations view can be configured to apply to your needs, meaning that you can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem).
 
 <figure><img src="../../../.gitbook/assets/image (357) (1).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk AppRisk - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
 
@@ -84,7 +84,7 @@ Navigate to the [Snyk Broker - AppRisk](../../../enterprise-setup/snyk-broker/sn
 The third-party integrations are mostly available only for Snyk AppRisk Pro. As a Snyk AppRisk Essentials user, you can use the third-party integrations marked as available for Snyk AppRisk Essentials, too.
 {% endhint %}
 
-To set up your third-party integrations, you can use the [Snyk AppRisk Integrations Hub](../../../getting-started/explore-the-snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors). \
+To set up your third-party integrations, you can use the [Snyk AppRisk Integrations Hub](../../../getting-started/snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors). \
 \
 In each Snyk Organization, administrators can give out tokens that provide restricted access to the applications utilized by developers. \
 \
@@ -113,7 +113,7 @@ After setting up all the Snyk AppRisk integrations, depending on the number of r
 
 The Snyk AppRisk functionality is split across several menu options from the Group level.&#x20;
 
-* [Dashboard](../../../getting-started/explore-the-snyk-web-ui.md#view-the-assets-dashboard)
+* [Dashboard](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard)
 * [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/policies/assets-policies/)
 * [Integrations for SCM](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and for [third-party](../../../integrate-with-snyk/#integrations-for-snyk-apprisk)
@@ -153,7 +153,7 @@ BitBucket cannot automatically detect the language used in the source code from 
 
 #### Dashboard
 
-You can use the dashboard for a quick overview of your application and security controls. Use the default widgets and customize the displayed information as needed, or add new widgets that meet your needs. See the [Assets dashboard ](../../../getting-started/explore-the-snyk-web-ui.md#view-the-assets-dashboard)page for more details.
+You can use the dashboard for a quick overview of your application and security controls. Use the default widgets and customize the displayed information as needed, or add new widgets that meet your needs. See the [Assets dashboard ](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard)page for more details.
 
 Here are the available dashboard widgets:
 

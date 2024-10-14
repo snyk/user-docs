@@ -423,7 +423,7 @@ Incorporates the Snyk Intel Vulnerability DB: the Snyk database of vulnerabiliti
 
 ### Snyk Web UI
 
-The browser-based environment that provides users access to Snyk functions. See [Snyk Web UI](explore-the-snyk-web-ui.md).
+The browser-based environment that provides users access to Snyk functions. See [Snyk Web UI](snyk-web-ui.md).
 
 ### Social Trends
 
