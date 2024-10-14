@@ -41,7 +41,7 @@ When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organiza
 
 ## **Set up a Snyk integration**
 
-For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk) or [Group](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk-apprisk). For information about available integrators, see [Snyk SCM integrations](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) or [Integrate with Snyk](https://docs.snyk.io/integrate-with-snyk) .
+For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk) or [Group](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk-apprisk). For information about available integrators, see [Snyk SCM integrations](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) and [Integrate with Snyk](https://docs.snyk.io/integrate-with-snyk) .
 
 To scan your code, you must first integrate Snyk with the repository holding that code.
 
@@ -62,14 +62,14 @@ If an integration is already configured for your Organization, it is marked as *
 ## Obtain and use your Snyk API token
 
 {% hint style="warning" %}
-Before authenticating, be sure you have set your region correctly so that you will call the correct endpoints. For details, see [Regional hosting and data residency](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency).
+Before authenticating, be sure you have set your region correctly so that you will call the correct endpoints. For details, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md), which has the [list of regional URLs](../working-with-snyk/regional-hosting-and-data-residency.md#regional-urls).
 {% endhint %}
 
 ### Find your API token
 
 Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
 
-Free and Team plan and trial users have access only to this personal token under the user profile. The personal token can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE, when you are setting a token manually. Use a personal token with caution if you are authenticating with the API or for CI/CD.
+Free and Team plan and trial users have access only to this personal token under the user profile. The personal token can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE when you are setting a token manually. Use a personal token with caution if you are authenticating with the API or for CI/CD.
 
 To obtain your personal Snyk API token:
 
@@ -81,9 +81,9 @@ If you want a new API token, select **Revoke & Regenerate**, but be aware that t
 
 ### When to use a personal token and a service account
 
-Enterprise users have access to a personal token under their profile and to service account tokens. For details, see [Service accounts](https://docs.snyk.io/enterprise-setup/service-accounts).
+Enterprise users have access to a personal token under their profile and to service account tokens. For details, see [Service accounts](../enterprise-setup/service-accounts/).
 
-* **Enterprise users should use a service account** to authenticate for any kind of automation. This includes, but is not limited to, CI/CD scanning with the CLI or build system plugins and anyu automation, including automation with the API.
+* **Enterprise users should use a service account** to authenticate for any kind of automation. This includes, but is not limited to, CI/CD scanning with the CLI or build system plugins and any automation, including automation with the API.
 * **Enterprise users should use the personal token** under their user profile for:
   * Running the CLI locally on their machine
   * Authenticating with the IDE manually
@@ -99,7 +99,7 @@ When you import a Project, Snyk scans that imported Project, and displays the re
 
 Importing a Project also does the following:
 
-* Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md#test-frequency-settings).
+* Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md).
 * Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
 ## Set up Snyk AppRisk&#x20;
@@ -121,4 +121,4 @@ The scan results and available actions depend on the type of Project you scan:
 * Open-source libraries: see [Snyk Open Source](../scan-with-snyk/snyk-open-source/).
 * Application code: see [Snyk Code](../scan-with-snyk/snyk-code/).
 * Container images: see [Snyk Container](../scan-with-snyk/snyk-container/scan-container-images.md).
-* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files and cloud misconfigurations: see [Scan infrastructure](../scan-with-snyk/snyk-iac/).
+* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files and cloud misconfigurations: see [Snyk IaC](../scan-with-snyk/snyk-iac/).

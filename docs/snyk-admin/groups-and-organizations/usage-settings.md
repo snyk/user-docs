@@ -53,5 +53,3 @@ An example of the count of contributing developers follows:
 * **Breakdown by integration**: the number of contributors, Organizations, and repos in that integration.
 
 Each contributor is **counted by** the **author** email field, which is set within the local Git configuration in the developer’s machine.
-
-###
