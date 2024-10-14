@@ -113,7 +113,7 @@ redirects:
   snyk-api/make-calls-to-the-snyk-api/find-the-differences-between-versions-in-the-rest-api: snyk-api/rest-api/about-the-rest-api.md
   snyk-api/make-calls-to-the-snyk-api/how-to-use-postman-for-snyk-rest-api: snyk-api/rest-api/getting-started-with-the-rest-api.md
   snyk-api/make-calls-to-the-snyk-api/postman-and-snyk-api-v1: snyk-api/v1-api.md
-    getting-started/quickstart/create-or-log-in-to-a-snyk-account: getting-started/README.md
-    getting-started/quickstart/set-up-an-integration: getting-started/README.md
-    getting-started/quickstart/import-a-project: getting-started/README.md
-    getting-started/quickstart/view-snyk-scan-results: getting-started/README.md
+  getting-started/quickstart/create-or-log-in-to-a-snyk-account: getting-started/README.md
+  getting-started/quickstart/set-up-an-integration: getting-started/README.md
+  getting-started/quickstart/import-a-project: getting-started/README.md
+  getting-started/quickstart/view-snyk-scan-results: getting-started/README.md
