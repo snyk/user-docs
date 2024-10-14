@@ -62,7 +62,7 @@ If an integration is already configured for your Organization, it is marked as *
 ## Obtain and use your Snyk API token
 
 {% hint style="warning" %}
-Before authenticating, be sure you have set your region correctly so that you will call the correct endpoints. For details, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md), which has the [list of regional URLs](../working-with-snyk/regional-hosting-and-data-residency.md#regional-urls).
+Before authenticating, be sure you have set your region properly. For details, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md), which has the [list of regional URLs](../working-with-snyk/regional-hosting-and-data-residency.md#regional-urls).
 {% endhint %}
 
 ### Find your API token
