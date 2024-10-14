@@ -62,33 +62,34 @@ If an integration is already configured for your Organization, it is marked as *
 ## Obtain and use your Snyk API token
 
 {% hint style="warning" %}
-If you are using Snyk on the EU and AU tenants, you must set your endpoints accordingly before authenticating. For more information, see [Regional hosting and data residency](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency).
+Before authenticating, be sure you have set your region correctly so that you will call the correct endpoints. For details, see [Regional hosting and data residency](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency).
 {% endhint %}
+
+### Find your API token
 
 Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
 
-Free, Team, and Trial plan users have access only to this personal token under the user profile. The personal token can be used to authenticate with:
+Free and Team plan and trial users have access only to this personal token under the user profile. The personal token can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE, when you are setting a token manually. Use a personal token with caution if you are authenticating with the API or for CI/CD.
 
-* The Snyk CLI running on a local or a build machine
-* An IDE, when setting a token manually
-* A CI/CD integration.
+To obtain your personal Snyk API token:
+
+1. Log in to Snyk and navigate to your personal **account settings**.&#x20;
+2. In your **General** settings, under API Token, select **click to show**.
+3. Highlight and copy your API key.
+
+If you want a new API token, select **Revoke & Regenerate**, but be aware that this will make the previous API token invalid.
+
+### When to use a personal token and a service account
 
 Enterprise users have access to a personal token under their profile and to service account tokens. For details, see [Service accounts](https://docs.snyk.io/enterprise-setup/service-accounts).
 
-* **Enterprise users should use a service account** to authenticate for any kind of automation. This includes, but is not limited to, CI/CD scanning with the CLI or build system plugins and automations, including the API.
+* **Enterprise users should use a service account** to authenticate for any kind of automation. This includes, but is not limited to, CI/CD scanning with the CLI or build system plugins and anyu automation, including automation with the API.
 * **Enterprise users should use the personal token** under their user profile for:
   * Running the CLI locally on their machine
   * Authenticating with the IDE manually
   * Running API calls one time, for example, to test something.
 
-For more information on the personal Snyk API token, see [Authenticate to use the CLI](https://docs.snyk.io/snyk-cli/authenticate-to-use-the-cli) and [Authentication for API](https://docs.snyk.io/snyk-api/rest-api/authentication-for-api).
-
-To obtain your personal Organization Snyk API token:
-
-1. Log in to Snyk and from the left-hand menu under your username
-2. Navigate to **Settings > General**.
-3. Under section **Organization API key,** select the linked text **personal API token**. This will take you to general **Account** **Settings**.
-4. In the **API Token** section, select **click to show**. You will then be able to highlight and copy the API key. If you want a new API token, select **Revoke & Regenerate**, but be aware that this will make the previous API token invalid.
+For more information on the personal Snyk API token, see [Authenticate to use the CLI](../snyk-cli/authenticate-to-use-the-cli.md) and [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
 
 ## Import a Project to scan and identify issues
 
