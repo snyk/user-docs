@@ -64,7 +64,7 @@ All subsequent test calls will be authenticated automatically.  For more informa
 
 ## How to authenticate to use the CLI in CI/CD pipelines
 
-**Free and Team plan users** are more likely to **use this method in a CI/CD pipeline** than to use OAuth 2.0. **Enterprise plan customers** are advised to use a [**service account**](../enterprise-setup/service-accounts/) in a CI/CD pipeline. For details, see [How to use personal and service account tokens](broken-reference).
+**Free and Team plan users** are more likely to **use this method in a CI/CD pipeline** than to use OAuth 2.0. **Enterprise plan customers** are advised to use a [**service account**](../enterprise-setup/service-accounts/) in a CI/CD pipeline. For details, see [When to use a personal token and a service account](../getting-started/#when-to-use-a-personal-token-and-a-service-account).
 
 All CLI `test` commands can automatically recognize the environment variable `SNYK_TOKEN` and use it for authentication. For details, see [Environment variables for Snyk CLI](configure-the-snyk-cli/environment-variables-for-snyk-cli.md).
 
