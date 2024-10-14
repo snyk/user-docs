@@ -8,8 +8,8 @@ See queries for the following use cases:
 * [Aging](build-your-first-dashboard.md#aging) - track the exposure window of open issues.
 * [Mean Time To Resolve (MTTR)](build-your-first-dashboard.md#mttr) - analyze the remediation velocity of engineering teams.
 * [Service Level Agreement (SLA) ](build-your-first-dashboard.md#sla) - verify that issue remediation meets with your compliance requirements.
-* [IDE & CLI test rates](build-your-first-dashboard.md#developers-ide-and-cli-tests) - measure the developer adoption of AppSec testing in the development stage.
-* [CI/CD Pipelines test rates](build-your-first-dashboard.md#ci-cd-pipelines-tests) - measure the adoption of AppSec testing in CI/CD pipelines.
+* [IDE & CLI test rates](build-your-first-dashboard.md#developers-ide-and-cli-test-usage-and-adoption) - measure the developer adoption of AppSec testing in the development stage.
+* [CI/CD Pipelines test rates](build-your-first-dashboard.md#ci-cd-pipelines-test-usage-and-adoption) - measure the adoption of AppSec testing in CI/CD pipelines.
 
 {% hint style="warning" %}
 You **must** update the database and schema names in the example queries provided before execution.
