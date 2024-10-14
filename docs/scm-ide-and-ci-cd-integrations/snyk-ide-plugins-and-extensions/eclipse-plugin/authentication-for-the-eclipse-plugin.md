@@ -36,7 +36,7 @@ After the extension is installed, to authenticate follow these steps:
 The analysis starts automatically. If you have problems, see [OAuth 2.0 authentication does not work](../troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md).
 
 {% hint style="info" %}
-OAuth 2.0 tokens are not static and cannot be copied from Snyk account page.
+OAuth 2.0 tokens are not static and cannot be copied from the Snyk account page.
 {% endhint %}
 
 ## Steps to authenticate using your Snyk API token
@@ -49,8 +49,8 @@ To authenticate using the API token, follow these steps:
 
 1. Navigate to **Preferences** > **Snyk**.
 2. Set the flag **Use token authentication**.
-3. Copy your API token. For details, see [How to obtain your Snyk API token](broken-reference).
-4. Be sure to use your personal token.  Paste or enter the token in the **Token** field.
+3. Copy your API token. For details, see [Obtain and use your Snyk API token](../../../getting-started/#obtain-and-use-your-snyk-api-token).
+4. Be sure to use your personal token. Paste or enter the token in the **Token** field.
 5. Click **Apply and Close.** The analysis starts automatically.
 
 ## How to switch accounts
