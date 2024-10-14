@@ -43,7 +43,8 @@ To check compliance for open source licenses, see [Snyk License Compliance Manag
 
 ### Steps to start using the CLI
 
-* [Create a Snyk account](broken-reference)
+You must have a Snyk account to use the Snyk CLI.
+
 * [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 * [Set the default Organization for the `snyk test` or `snyk code test` commands ](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md)
 
