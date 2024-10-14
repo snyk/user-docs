@@ -43,7 +43,7 @@ To check compliance for open source licenses, see [Snyk License Compliance Manag
 
 ### Steps to start using the CLI
 
-* [Create a Snyk account](../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md)
+* [Create a Snyk account](broken-reference)
 * [Install Snyk CLI and authenticate your machine](../snyk-cli/getting-started-with-the-snyk-cli.md#install-the-snyk-cli-and-authenticate-your-machine)
 * [Set the default Organization for the `snyk test` or `snyk code test` commands ](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md)
 
@@ -72,6 +72,6 @@ To test your Open Source Project for vulnerabilities, run the `snyk test` comman
 
 ### Steps to start using SCM integrations
 
-* [Set up an integration](../getting-started/quickstart/set-up-an-integration.md).
+* [Set up an integration](broken-reference).
 * For details, see [Snyk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 * For language-specific information, see [Git repositories with Maven and Gradle](java-and-kotlin/git-repositories-with-maven-and-gradle.md), [Git repositories and JavaScript](javascript/git-repositories-and-javascript.md), and [Git repositories and Python](python/git-repositories-and-python.md).

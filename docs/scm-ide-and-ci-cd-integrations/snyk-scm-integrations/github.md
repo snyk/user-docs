@@ -48,7 +48,7 @@ When you import a Snyk Project using your GitHub integration with the Snyk PR fu
 
 To connect your GitHub repositories to Snyk for scanning, you need to set up the integration and then import Projects.&#x20;
 
-See [Set up an integration](../../getting-started/quickstart/set-up-an-integration.md) and [Import a Project](../../getting-started/quickstart/import-a-project.md) for details of this process.
+See [Set up an integration](broken-reference) and [Import a Project](broken-reference) for details of this process.
 
 ### GitHub integration settings
 

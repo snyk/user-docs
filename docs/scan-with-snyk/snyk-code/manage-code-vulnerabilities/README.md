@@ -4,7 +4,7 @@
 
 Before managing vulnerabilities with Snyk Code, ensure the following:
 
-* You have completed the [Quickstart](../../../getting-started/quickstart/).
+* You have completed the [Quickstart](broken-reference).
 * Your repositories contain code in a [supported language and platform](../../../supported-languages-package-managers-and-frameworks/).&#x20;
 * You have [configured Snyk Code](../configure-snyk-code.md).
 

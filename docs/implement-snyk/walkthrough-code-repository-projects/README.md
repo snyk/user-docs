@@ -6,7 +6,7 @@ This walkthrough shows importing Projects from a GitHub repository. Snyk also su
 
 ## Prerequisites for completing this walkthrough
 
-This walkthrough assumes that you have followed the initial setup steps as described in the [Quickstart](../../getting-started/quickstart/) documentation: [create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md), [set up an integration](../../getting-started/quickstart/set-up-an-integration.md) with a Git repo, and [import a Project](../../getting-started/quickstart/import-a-project.md) containing items for scanning.
+This walkthrough assumes that you have followed the initial setup steps as described in the [Quickstart](broken-reference) documentation: [create a Snyk account](broken-reference), [set up an integration](broken-reference) with a Git repo, and [import a Project](broken-reference) containing items for scanning.
 
 ## First step: view your Projects
 

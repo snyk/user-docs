@@ -14,7 +14,7 @@ Snyk Code only scans and tests new repositories that are imported to Snyk. If a 
 
 Before scanning your code with Snyk Code, ensure the following:
 
-* You have completed the [Quickstart](../../getting-started/quickstart/).
+* You have completed the [Quickstart](broken-reference).
 * Your repositories contain code in a [supported language and platform](../../supported-languages-package-managers-and-frameworks/).
 
 ## Enable Snyk Code in Snyk Web UI
@@ -25,7 +25,7 @@ To enable Snyk Code in your Organization, you need to be an [Org Admin](../../sn
 
 ### Enable Snyk Code&#x20;
 
-If you've already [set up an integration for the first time](../../getting-started/quickstart/set-up-an-integration.md) and enabled Snyk Code, you can check if the setting is still valid before importing repositories.
+If you've already [set up an integration for the first time](broken-reference) and enabled Snyk Code, you can check if the setting is still valid before importing repositories.
 
 1. Log in to the Snyk Web UI and select your [Group and Organization](../../snyk-admin/groups-and-organizations/).
 2. Navigate to **Settings** > **Snyk Code**.
@@ -85,7 +85,7 @@ After you enable Snyk Code and integrate your Git repository with Snyk, you must
 
 Depending on your existing Snyk account and what you want to do:
 
-* If you do not have any repositories in your Snyk account, [import your first repository to Snyk](../../getting-started/quickstart/import-a-project.md)**.**
+* If you do not have any repositories in your Snyk account, [import your first repository to Snyk](broken-reference)**.**
 * If you already have repositories in your Snyk account and do not want to import additional ones but want to scan your existing repositories with Snyk Code, you must [re-import these repositories](import-project-with-snyk-code.md#re-import-repository-to-snyk).
 * If you already have repositories in your Snyk account and want to import more repositories to scan with Snyk Code, [import additional repositories to Snyk](import-project-with-snyk-code.md).
 

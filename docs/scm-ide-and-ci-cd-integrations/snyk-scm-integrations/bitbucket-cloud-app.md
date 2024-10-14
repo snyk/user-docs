@@ -54,7 +54,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
     After you allow access to the Snyk Organization, the Snyk **Organization Settings** page opens and confirms that the Bitbucket Cloud App is connected.\
 
 
-After Snyk is integrated with Bitbucket Cloud, you can see the new Snyk security tab on the repository page and [import and explore the issues and vulnerabilities for your repository Projects](../../getting-started/quickstart/import-a-project.md) directly in Bitbucket.
+After Snyk is integrated with Bitbucket Cloud, you can see the new Snyk security tab on the repository page and [import and explore the issues and vulnerabilities for your repository Projects](broken-reference) directly in Bitbucket.
 
 <figure><img src="../../.gitbook/assets/bbcloud-app_snyk-security_6oct2022.png" alt="Bitbucket security insights with Snyk Bitbucket Cloud App"><figcaption><p>Bitbucket security insights with Snyk Bitbucket Cloud App</p></figcaption></figure>
 

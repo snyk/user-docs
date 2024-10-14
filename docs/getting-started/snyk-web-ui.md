@@ -170,7 +170,7 @@ Similarly, the **top vulnerable projects** section shows the Snyk Projects asses
 
 #### Add Project
 
-To add a Snyk Project, use the **Add project** link on the Dashboard. Select how to add the Project from the dropdown. See [Import a Project](quickstart/import-a-project.md) for more details.
+To add a Snyk Project, use the **Add project** link on the Dashboard. Select how to add the Project from the dropdown. See [Import a Project](broken-reference) for more details.
 
 ### **Manage your** **Projects**
 
@@ -251,7 +251,7 @@ Select the **Help** > **Product updates** menu option to visit [snyk.io updates]
 
 Select your **name** in the navigation on the Dashboard and then **Account settings** to open your [account settings](https://app.snyk.io/account) page, where you can view and configure your user account settings, including:
 
-* View and manage your API token or the Auth Token for free accounts. For details, see [How to obtain and authenticate with your Snyk API token](how-to-obtain-and-use-your-snyk-api-token.md).
+* View and manage your API token or the Auth Token for free accounts. For details, see [How to obtain and authenticate with your Snyk API token](broken-reference).
 * View the list of your **Authorized Applications**.
 * Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#set-your-preferred-organization).
 * **Delete** your account.

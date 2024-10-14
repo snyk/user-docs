@@ -12,10 +12,10 @@ You can scan your container images using Snyk Container:&#x20;
 
 Before scanning your container images with Snyk Container, ensure you:
 
-* [Create a Snyk account](../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+* [Create a Snyk account](broken-reference).
 * Set up an integration with a supported container registry, such as Docker Hub. See [Container security integrations](container-registry-integrations/).
 
-The [Quickstart](../../getting-started/quickstart/) may help guide you through these tasks.
+The [Quickstart](broken-reference) may help guide you through these tasks.
 
 ## View vulnerabilities in your container images
 

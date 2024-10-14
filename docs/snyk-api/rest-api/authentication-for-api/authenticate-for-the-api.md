@@ -1,4 +1,4 @@
-# Authenticating for the API
+# Authenticate for the API
 
 To use the Snyk API, you must get your API token from Snyk. You can find your token in your personal [General Account Settings](https://app.snyk.io/account) after you register with Snyk and log in. In the **key** field, **Click to show**. Then Highlight and copy the API key.
 
@@ -30,4 +30,4 @@ HTTP/1.1 401 Unauthorized
 }
 ```
 
-For information about using personal tokens versus service account tokens, see [How to obtain and authenticate with your Snyk API token](../../../getting-started/how-to-obtain-and-use-your-snyk-api-token.md).
+For information about using personal tokens versus service account tokens, see [How to obtain and authenticate with your Snyk API token](broken-reference).

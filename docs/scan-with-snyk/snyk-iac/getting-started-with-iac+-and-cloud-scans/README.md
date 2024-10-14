@@ -16,7 +16,7 @@ This page explains using IaC+ and cloud scans in the Snyk Web UI. For informatio
 
 To start using IaC+ you must have the following:
 
-* A Snyk account. For details, see [Create a Snyk account](../../../getting-started/quickstart/create-or-log-in-to-a-snyk-account.md).
+* A Snyk account. For details, see [Create a Snyk account](broken-reference).
 * Belong to an Organization that has Snyk IaC on the enterprise plan.
 * An existing Terraform, CloudFormation, or Azure Resource Manager environment to work in, or deployed AWS, Azure, or Google Cloud account to onboard.
 * Integration with your Git repository as for other Snyk products. For details, see [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
