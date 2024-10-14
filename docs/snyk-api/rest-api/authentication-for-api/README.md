@@ -4,4 +4,4 @@ This section provides information about how to [Authenticate for the API](authen
 
 For instructions on obtaining a new API token, see [Revoke and regenerate a Snyk API token](revoke-and-regenerate-a-snyk-api-token.md).
 
-For information about when to use a personal token and a service account token, see [How to use personal and service account tokens](broken-reference).
+For information about when to use a personal token and a service account token, see [When to use a personal token and a service account](../../../getting-started/#when-to-use-a-personal-token-and-a-service-account).
