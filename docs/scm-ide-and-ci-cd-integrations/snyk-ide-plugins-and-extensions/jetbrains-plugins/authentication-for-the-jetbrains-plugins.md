@@ -2,8 +2,8 @@
 
 To scan your Projects you must authenticate with Snyk.&#x20;
 
-{% hint style="info" %}
-Before authenticating ensure you configure your Snyk region properly if you use Snyk on the EU and AU tenants. For more information, see [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md#cli-and-ci-pipelines-urls).
+{% hint style="warning" %}
+Before authenticating, be sure you have set your region properly. For details, see [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md), which has the [list of regional URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#regional-urls).
 {% endhint %}
 
 Snyk supports the following protocols for authentication:
@@ -49,7 +49,7 @@ To authenticate follow these steps:
 
 1. In the JetBrains plugin navigate to **Preferences** > **Tools** > **Snyk**.
 2. Find the **Authentication Method** and change it to **Token authentication**
-3. Copy your API token. For details, see [How to obtain your Snyk API token](broken-reference).
+3. Copy your API token. For details, see [Obtain and use your Snyk API token](../../../getting-started/#obtain-and-use-your-snyk-api-token).
 4. Paste or enter the token in the **Token** field.
 5. Click **Apply** or **OK**. The analysis starts automatically.
 
