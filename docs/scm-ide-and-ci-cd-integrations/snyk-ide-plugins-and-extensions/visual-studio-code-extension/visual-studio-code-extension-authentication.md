@@ -2,8 +2,8 @@
 
 To scan your Projects you must authenticate with Snyk.&#x20;
 
-{% hint style="info" %}
-Before authenticating ensure you configure your Snyk region properly if you use Snyk on the EU and AU tenants. For more information, see [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md#cli-and-ci-pipelines-urls).
+{% hint style="warning" %}
+Before authenticating, be sure you have set your region properly. For details, see [Regional hosting and data residency](../../../working-with-snyk/regional-hosting-and-data-residency.md), which has the [list of regional URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#regional-urls).
 {% endhint %}
 
 Snyk supports the following protocols for authentication:
@@ -56,7 +56,7 @@ To authenticate follow these steps:
 
 <figure><img src="../../../.gitbook/assets/SCR-20240821-tarb.png" alt="Change authentication method " width="563"><figcaption><p>Change authentication method </p></figcaption></figure>
 
-2. Copy your API token. For details, see [How to obtain your Snyk API token](broken-reference).
+2. Copy your API token. For details, see [Obtain and use your Snyk API token](../../../getting-started/#obtain-and-use-your-snyk-api-token).
 3. Then run the`Snyk: Set Token command` and paste the token in the text field.
 
 <figure><img src="../../../.gitbook/assets/image (224) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Set token manually" width="563"><figcaption><p>Set token manually</p></figcaption></figure>
