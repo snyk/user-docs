@@ -15,7 +15,7 @@ Application Analytics enables you to review and explore your AppSec program stat
 You can enhance the security of your application by identifying areas for improvement, recognizing developing risks, and addressing blind spots. The Application Analytics retrieves the data from all the Groups available for the tenant.
 
 {% hint style="info" %}
-If you are using Snyk AppRisk Essentials, navigate to the [asset dashboard](../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) page to learn more about your assets or remain on the  [Analytics](issues-analytics.md) page to explore the detected issues.
+If you are using Snyk AppRisk Essentials, navigate to the [asset dashboard](../../getting-started/explore-the-snyk-web-ui.md#view-the-assets-dashboard) page to learn more about your assets or remain on the  [Analytics](issues-analytics.md) page to explore the detected issues.
 {% endhint %}
 
 Harnessing Application Analytics provides answers to questions such as:

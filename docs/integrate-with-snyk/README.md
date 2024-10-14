@@ -44,7 +44,7 @@ You can refer to the table below to verify the availability and compatibility of
 
 ### Using the Integration Hub
 
-Use the [Integration Hub](../getting-started/snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors) page to onboard integrations and populate Snyk AppRisk with data from SCM tools.
+Use the [Integration Hub](../getting-started/explore-the-snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors) page to onboard integrations and populate Snyk AppRisk with data from SCM tools.
 
 You can add an integration by following these steps:
 
