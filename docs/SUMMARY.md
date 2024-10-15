@@ -166,7 +166,7 @@
         * [Service accounts for Helm Chart installation](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/service-accounts-for-helm-chart-installation.md)
         * [Insecure Downstream Mode](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/insecure-downstream-mode.md)
     * [Snyk Broker - Code Agent](enterprise-setup/snyk-broker/snyk-broker-code-agent/README.md)
-      * [Install Snyk Broker - Code Agent using Helm](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-helm.md)
+      * [Install Snyk Broker - Code Agent using Helm](enterprise-setup/snyk-broker/snyk-broker-code-agent/i.md)
       * [Install Snyk Broker - Code Agent using Docker](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/README.md)
         * [Obtain the required tokens for setup](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md)
         * [Remove an existing Broker Client](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/remove-an-existing-broker-client.md)
