@@ -6,7 +6,7 @@ Using the information on this page is not required to set up Broker Client integ
 
 ## Derived Docker image for Azure Repos Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/azure-repos-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:azure-repos
@@ -21,7 +21,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Bitbucket Server/Data Center Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:bitbucket-server
@@ -65,7 +65,7 @@ ENV BROKER_CLIENT_URL http://my.broker.client:8000
 
 ## Derived Docker image for GitLab Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](gitlab-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-gitlab.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](gitlab-prerequisites-and-steps-to-install-and-configure-broker/gitlab-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:gitlab
