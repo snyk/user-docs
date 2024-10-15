@@ -29,7 +29,7 @@ To display the code snippets of the Snyk Code results in the Web UI, first downl
    * [GitHub](../../../install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md)
    * [GitHub Enterprise](../../../install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md)
    * [Gitlab](../../../install-and-configure-snyk-broker/gitlab-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-gitlab.md)
-   * [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md)
+   * [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md)
    * [Azure Repos](../../../install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md)
 2. Verify that the downloaded file is called `accept.json`. If during the download process, the file name has changed, rename the file to its original name.
 3. Save the file in a secure and separate folder such as `./private/accept.json`.
@@ -69,7 +69,7 @@ where:
     For [Azure Repos](../../../install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md) add the following parameter also:\
     `-e AZURE_REPOS_ORG=<azure_repo_org_name> \`
   * **Bitbucket Server/Data Center**: `-e BITBUCKET`\
-    For [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md) add the following parameter also:\
+    For [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md) add the following parameter also:\
     `-e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0_(without http/s)> \`
   * **GitLab**: `-e GITLAB`
 * \[Optional] `-e BROKER_CLIENT_URL=` is the URL to the host machine of the Broker client. The URL can include an IP address or a DNS with the port number of the host machine, for example, `http://localhost:8001`.\

@@ -21,7 +21,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Bitbucket Server/Data Center Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:bitbucket-server

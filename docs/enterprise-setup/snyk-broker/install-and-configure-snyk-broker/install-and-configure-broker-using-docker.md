@@ -12,7 +12,7 @@ The following pages explain how to install these special integrations.
 
 * [GitHub](github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md)
 * [GitHub Enterprise](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md)
-* [Bitbucket Server/Data Centre](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md)
+* [Bitbucket Server/Data Centre](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md)
 * [Gitlab](gitlab-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-gitlab.md)
 * [Azure Repos](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md)
 * [JFrog Artifactory Repository](artifactory-repository-install-and-configure-broker/set-up-snyk-broker-with-artifactory-repository.md)
