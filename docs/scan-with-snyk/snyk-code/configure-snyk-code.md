@@ -2,7 +2,7 @@
 
 ## Conditions
 
-To use Snyk Code in an [IDE](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](../../snyk-api/), you must perform the following actions
+To use Snyk Code in an [IDE](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](../../snyk-api/), you must perform the following actions:
 
 1. [Enable Snyk Code in Snyk Web UI](configure-snyk-code.md#enable-snyk-code-in-snyk-web-ui)
 2. [Integrate Git repository with Snyk](configure-snyk-code.md#integrate-git-repository-with-snyk)
@@ -14,7 +14,7 @@ Snyk Code only scans and tests new repositories that are imported to Snyk. If a 
 
 Before scanning your code with Snyk Code, ensure the following:
 
-* You have completed the [Quickstart](broken-reference).
+* You have completed the steps to [Getting started](../../getting-started/).
 * Your repositories contain code in a [supported language and platform](../../supported-languages-package-managers-and-frameworks/).
 
 ## Enable Snyk Code in Snyk Web UI
@@ -38,7 +38,7 @@ The next step is to [integrate your Git repositories with Snyk](configure-snyk-c
 
 ## Integrate Git repository with Snyk
 
-After you have activated Snyk Code and imported repositories to Snyk for testing, you can view and work with the Snyk Code test results, which include vulnerabilities and fixes. See [Manage code vulnerabiiites.](manage-code-vulnerabilities/)
+After you have activated Snyk Code and imported repositories to Snyk for testing, you can view and work with the Snyk Code test results, which include vulnerabilities and fixes. See [Manage code vulnerabilities.](manage-code-vulnerabilities/)
 
 {% hint style="info" %}
 If your SCM is already integrated with your Snyk Account, and you do not want to add additional SCMs, you can skip this step and move to [Import repository to Snyk](import-project-with-snyk-code.md).
@@ -85,7 +85,7 @@ After you enable Snyk Code and integrate your Git repository with Snyk, you must
 
 Depending on your existing Snyk account and what you want to do:
 
-* If you do not have any repositories in your Snyk account, [import your first repository to Snyk](broken-reference)**.**
+* If you do not have any repositories in your Snyk account, import your first repository to Snyk**.**
 * If you already have repositories in your Snyk account and do not want to import additional ones but want to scan your existing repositories with Snyk Code, you must [re-import these repositories](import-project-with-snyk-code.md#re-import-repository-to-snyk).
 * If you already have repositories in your Snyk account and want to import more repositories to scan with Snyk Code, [import additional repositories to Snyk](import-project-with-snyk-code.md).
 
