@@ -17,7 +17,7 @@ The following pages explain how to install these special integrations.
 * [Azure Repos](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md)
 * [JFrog Artifactory Repository](artifactory-repository-install-and-configure-broker/set-up-snyk-broker-with-artifactory-repository.md)
 * [Nexus Repository Manager](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
-* [Jira](jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker.md)
+* [Jira](jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md)
 * [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
 * [Derived Docker images for Broker Client integrations and Container Registry Agent](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)
 

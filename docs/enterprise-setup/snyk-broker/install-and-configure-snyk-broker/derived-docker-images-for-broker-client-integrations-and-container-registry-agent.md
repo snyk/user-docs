@@ -79,7 +79,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Jira Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:jira
