@@ -30,4 +30,4 @@ HTTP/1.1 401 Unauthorized
 }
 ```
 
-For information about using personal tokens versus service account tokens, see [How to obtain and authenticate with your Snyk API token](broken-reference).
+For information about using personal tokens versus service account tokens, see [Obtain and use your Snyk API token](../../../getting-started/#obtain-and-use-your-snyk-api-token).
