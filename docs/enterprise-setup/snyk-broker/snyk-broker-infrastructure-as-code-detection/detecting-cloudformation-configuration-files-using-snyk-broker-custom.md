@@ -27,7 +27,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 
 1. Find the appropriate accept.json sample file for the correct source control system and download [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename the file `accept.json` and add to the **private** array in the JSON file, add the rules that follow as appropriate to your SCM .
-3. Follow the instructions for [Configuring Broker](detecting-cloudformation-configuration-files-using-a-broker.md#configuring-broker).
+3. Follow the instructions for [Configuring Broker](detecting-cloudformation-configuration-files-using-snyk-broker-custom.md#configuring-broker).
 
 ### GitHub and GitHub Enterprise rules
 

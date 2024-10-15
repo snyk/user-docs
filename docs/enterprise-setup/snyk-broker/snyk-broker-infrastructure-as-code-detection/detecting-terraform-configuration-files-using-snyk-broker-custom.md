@@ -27,7 +27,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 
 1. Find the appropriate accept.json sample file for your source control system and download it [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename the file to `accept.json` and to the **private** array in the JSON file, add the rules that follow as appropriate to your SCM.
-3. Follow the instructions for [Configuring Broker](detecting-terraform-configuration-files-using-a-broker.md#configuring-broker).
+3. Follow the instructions for [Configuring Broker](detecting-terraform-configuration-files-using-snyk-broker-custom.md#configuring-broker).
 
 ### GitHub rules
 

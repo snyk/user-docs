@@ -27,7 +27,7 @@ You must grant the Broker access to particular files in the repository. This req
 
 1. Find the appropriate `accept.json` sample file for your source control system and download it [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename the file to `accept.json` and to the **private** array in the JSON file, add the following rules as appropriate to your SCM.
-3. Follow the instructions for [Configuring Broker](detecting-kubernetes-configuration-files-using-a-broker.md#configuring-broker).
+3. Follow the instructions for [Configuring Broker](detecting-kubernetes-configuration-files-using-snyk-broker-custom.md#configuring-broker).
 
 ### GitHub and GitHub Enterprise rules
 

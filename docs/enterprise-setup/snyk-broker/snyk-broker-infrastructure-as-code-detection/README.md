@@ -23,6 +23,6 @@ Otherwise, you can edit your `accept.json`, add the relevant IaC specific rules,
 
 See the following pages for instructions for information about detecting Infrastructure as Code files using Snyk Broker using the `ACCEPT` environment variable:
 
-* [Detecting Terraform configuration files using a broker](detecting-terraform-configuration-files-using-a-broker.md)
-* [Detecting CloudFormation configuration files using a broker](detecting-cloudformation-configuration-files-using-a-broker.md)
-* [Detecting Kubernetes files using a broker](detecting-kubernetes-configuration-files-using-a-broker.md)
+* [Detecting Terraform configuration files using a broker](detecting-terraform-configuration-files-using-snyk-broker-custom.md)
+* [Detecting CloudFormation configuration files using a broker](detecting-cloudformation-configuration-files-using-snyk-broker-custom.md)
+* [Detecting Kubernetes files using a broker](detecting-kubernetes-configuration-files-using-snyk-broker-custom.md)
