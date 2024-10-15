@@ -12,4 +12,4 @@ Ensure that the GitLab permissions are correct for integration with Snyk. For de
 
 You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
-**Continue** with the steps to install using [Docker](gitlab-install-and-configure-using-docker.md) or [Helm](gitlab-install-and-configure-using-helm.md).
+**Continue** with the steps to install using [Docker](setup-broker-with-gitlab.md) or [Helm](gitlab-install-and-configure-using-helm.md).
