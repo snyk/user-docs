@@ -8,4 +8,4 @@ Before installing the Snyk GitHub Broker, you must configure a GitHub service ac
 
 You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
-**Continue** with the steps to install using [Docker](broker-example-set-up-snyk-broker-with-github.md) or [Helm](github-install-and-configure-using-helm.md).
+**Continue** with the steps to install using [Docker](github-install-and-configure-using-docker.md) or [Helm](github-install-and-configure-using-helm.md).

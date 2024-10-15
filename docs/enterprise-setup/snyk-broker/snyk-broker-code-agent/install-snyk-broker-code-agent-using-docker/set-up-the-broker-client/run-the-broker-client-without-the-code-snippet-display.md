@@ -35,7 +35,7 @@ where:
 * `-e <SCM_domain>=` is your SCM domain name without `http/https`, for example, `snyk.git.com`. For each SCM, use the parameter for your SCM:
   * **GitHub** - the `-e <SCM_domain>` parameter is NOT required.
   * **GitHub Enterprise**: `-e GITHUB`\
-    For [GitHub Enterprise](../../../install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md), add the following parameters also:\
+    For [GitHub Enterprise](../../../install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md), add the following parameters also:\
     `-e GITHUB_API=<your.ghe.domain.com/api/v3_(without_http/s)> \`\
     `-e GITHUB_GRAPHQL=<your.ghe.domain.com/api_(without_http/s)> \`
   * **Azure Repos**: `-e AZURE_REPOS_HOST`\

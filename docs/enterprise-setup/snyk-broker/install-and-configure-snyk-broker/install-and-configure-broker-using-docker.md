@@ -10,8 +10,8 @@ For **all other environments**, you can install Snyk Broker using the [Docker im
 
 The following pages explain how to install these special integrations.
 
-* [GitHub](github-prerequisites-and-steps-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md)
-* [GitHub Enterprise](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md)
+* [GitHub](github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md)
+* [GitHub Enterprise](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md)
 * [Bitbucket Server/Data Centre](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md)
 * [Gitlab](gitlab-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-gitlab.md)
 * [Azure Repos](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md)

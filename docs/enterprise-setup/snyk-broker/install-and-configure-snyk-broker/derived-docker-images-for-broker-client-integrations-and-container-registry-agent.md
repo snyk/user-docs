@@ -36,7 +36,7 @@ ENV PORT                8000
 
 ## Derived Docker image for GitHub Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](github-prerequisites-and-steps-to-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:github-com
@@ -49,7 +49,7 @@ ENV BROKER_CLIENT_URL http://my.broker.client:8000
 
 ## Derived Docker image for GitHub Enterprise Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-github-enterprise.md), you can build you own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md), you can build you own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:github-enterprise

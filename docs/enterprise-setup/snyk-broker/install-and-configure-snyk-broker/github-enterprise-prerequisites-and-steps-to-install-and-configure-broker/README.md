@@ -9,4 +9,4 @@ Before installing the Snyk GitHub Enterprise Broker, ask your Snyk account team 
 
 You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
-**Continue** with the steps to install using [Docker](setup-broker-with-github-enterprise.md) or [Helm](github-enterprise-install-and-configure-using-helm.md).
+**Continue** with the steps to install using [Docker](github-enterprise-install-and-configure-using-docker.md) or [Helm](github-enterprise-install-and-configure-using-helm.md).
