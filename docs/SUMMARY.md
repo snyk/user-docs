@@ -171,7 +171,7 @@
         * [Obtain the required tokens for setup](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md)
         * [Remove an existing Broker Client](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/remove-an-existing-broker-client.md)
         * [Create network for Broker client and Code Agent communication](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/create-network-for-broker-client-and-code-agent-communication.md)
-        * [Set up the Code Agent](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/step-4-setting-up-the-code-agent.md)
+        * [Set up the Code Agent](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-code-agent.md)
         * [Set up the Broker client](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/README.md)
           * [Download or update the Snyk Broker client Docker image](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/download-or-update-the-snyk-broker-client-docker-image.md)
           * [Run the Broker client without the code snippet display](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-without-the-code-snippet-display.md)

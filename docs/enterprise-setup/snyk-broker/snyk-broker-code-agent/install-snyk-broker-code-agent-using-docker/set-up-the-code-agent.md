@@ -2,9 +2,9 @@
 
 To set up the Code Agent using Docker:
 
-* [Download or update the Code Agent Docker image](step-4-setting-up-the-code-agent.md#download-or-update-the-code-agent-docker-image).
-* [Run the Code Agent container](step-4-setting-up-the-code-agent.md#run-the-code-agent-container).
-* If you are using a proxy server, [set up the Code Agent to work with a proxy server](step-4-setting-up-the-code-agent.md#set-up-the-code-agent-to-work-with-a-proxy-server).
+* [Download or update the Code Agent Docker image](set-up-the-code-agent.md#download-or-update-the-code-agent-docker-image).
+* [Run the Code Agent container](set-up-the-code-agent.md#run-the-code-agent-container).
+* If you are using a proxy server, [set up the Code Agent to work with a proxy server](set-up-the-code-agent.md#set-up-the-code-agent-to-work-with-a-proxy-server).
 
 ## Download or update the Code Agent Docker image
 
@@ -12,7 +12,7 @@ To set up the Code Agent using Docker:
 
 Pull the Code Agent Docker image from [Docker Hub](https://hub.docker.com/r/snyk/code-agent/). It is highly recommended to pull and use the latest Docker image version. Download the Snyk Code Agent Docker image to each machine that will run the Code Agent. Docker images are usually cached on the host machine.
 
-**T**o pull the Code Agent Docker image, in the terminal, enter:
+To pull the Code Agent Docker image, in the terminal, enter:
 
 ```
 docker pull snyk/code-agent
@@ -52,7 +52,7 @@ where:
   Example: `3001:3000`.\
   The port number of the host machine must be unique.
 * `-e PORT` is the port of the Code Agent container, where it accepts external connections. The default is `3000`. This port number must be the same as the `<Code_Agent_container_port_ no.>` in the `-p` preceding parameter.
-* `-e SNYK_TOKEN` is your [Snyk API token](broken-reference) as appears in your **Account Settings** page on the Snyk Web UI.
+* `-e SNYK_TOKEN` is your Snyk API token as it appears in your **Account Settings** page on the Snyk Web UI.
 * `--network` is the name of the [Docker bridge network](create-network-for-broker-client-and-code-agent-communication.md) that was previously created, for example, `mySnykBrokerNetwork`.
 * `snyk/code-agent:<image_tag>` is the Docker image of the Code Agent container. Specify a tag if not using `latest`.
 

@@ -22,6 +22,6 @@ If your proxy requires username and password authentication, also the following 
 -e PROXY_AUTH=userID:userPass
 ```
 
-In addition, add these environment variables to the Code Agent components. See [Set up the Code Agent to work with a proxy server](../step-4-setting-up-the-code-agent.md#set-up-the-code-agent-to-work-with-a-proxy-server).
+In addition, add these environment variables to the Code Agent components. See [Set up the Code Agent to work with a proxy server](../set-up-the-code-agent.md#set-up-the-code-agent-to-work-with-a-proxy-server).
 
 For more information on using Docker containers with a proxy, see [Configure Docker to use a proxy server](https://docs.docker.com/network/proxy/).
