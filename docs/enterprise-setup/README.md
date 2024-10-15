@@ -27,7 +27,7 @@ The tool that best serves your tech stack, environment, and workflow depends on 
 
 To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see [Integrating Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/).
 
-To see what Snyk can do for you, **try out a Project**
+To see what Snyk can do for you, try out a Project.
 
 The rest of this page explains how to connect a Git repository to Snyk and how to show results from scanning Snyk Projects that are in that repository. The focus is on helping you understand how Snyk works before you start the process of implementing Snyk with your team or teams.
 
@@ -37,7 +37,7 @@ Snyk provides limited free tests per month for each type of scan, Snyk Open Sour
 
 ## Create or log in to your Snyk account
 
-You must have a Snyk account to use Snyk functionality, even within your local environment. [Create a free account](broken-reference) to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Log in to an existing account](broken-reference).
+You must have a Snyk account to use Snyk functionality, even within your local environment. Create a free account to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Create or log in to an existing account](../getting-started/#create-or-log-in-to-a-snyk-account).&#x20;
 
 ## **Enable Snyk Code**
 

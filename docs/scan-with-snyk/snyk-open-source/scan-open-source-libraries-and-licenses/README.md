@@ -10,7 +10,7 @@ You can scan your open-source libraries using Snyk Open Source:&#x20;
 
 ## Prerequisites for using Snyk Open Source in the Web UI
 
-Before scanning your open-source libraries with Snyk Open Source, ensure you have completed the [quickstart](broken-reference) steps.
+Before scanning your open-source libraries with Snyk Open Source, ensure you have completed the steps in [Getting started](../../../getting-started/).
 
 ## View vulnerabilities in your open-source libraries
 

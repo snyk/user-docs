@@ -73,6 +73,6 @@ To test your Open Source Project for vulnerabilities, run the `snyk test` comman
 
 ### Steps to start using SCM integrations
 
-* [Set up an integration](broken-reference).
+* [Set up an integration](../getting-started/#set-up-a-snyk-integration).
 * For details, see [Snyk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 * For language-specific information, see [Git repositories with Maven and Gradle](java-and-kotlin/git-repositories-with-maven-and-gradle.md), [Git repositories and JavaScript](javascript/git-repositories-and-javascript.md), and [Git repositories and Python](python/git-repositories-and-python.md).

@@ -40,7 +40,7 @@ Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketpl
 
 1. Go to **Apps** > **Manage apps.**
 2. In the left menu, select **Snyk Security in Jira**.
-3. [Log in to your Snyk account, or sign up for a new Snyk account](broken-reference).
+3. Log in to your Snyk account, or sign up for a new Snyk account.
 4. In Snyk, select **Grant access** to allow Snyk to read your Jira Software account information.
 5. Select the specific Snyk Organizations to connect to your Jira site, and select **Grant app access**.
 

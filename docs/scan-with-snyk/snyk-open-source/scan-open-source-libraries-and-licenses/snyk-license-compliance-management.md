@@ -17,7 +17,7 @@ The Snyk Default License Policy defines how Snyk identifies potential license is
 Before checking license compliance with Snyk License Compliance Management, ensure you:
 
 * Are part of a Snyk [paid plan](https://snyk.io/plans/).
-* Have integrated and imported your Projects. See [Quickstart](broken-reference).
+* Have integrated and imported your Projects. See [Getting started](../../../getting-started/).
 
 ## **Define license policies**
 

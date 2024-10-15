@@ -1,6 +1,6 @@
 # Import Project with Snyk Code
 
-Imported Projects are organized under Target folders on the Projects page, named after the Git repository account and specific repository. See [Import a Project](broken-reference).
+Imported Projects are organized under Target folders on the Projects page, named after the Git repository account and specific repository. See [Import a Project to scan and identify issues](../../getting-started/#import-a-project-to-scan-and-identify-issues).
 
 Configure the test frequency by navigating to your **Code Analysis Project** > **Settings**. See [Snyk Code Analysis test frequency settings](../../snyk-admin/snyk-projects/#test-frequency-settings).
 

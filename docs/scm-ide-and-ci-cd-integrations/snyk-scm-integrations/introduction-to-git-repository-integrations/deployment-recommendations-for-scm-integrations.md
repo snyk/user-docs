@@ -17,7 +17,7 @@ A smooth deployment of Snyk in your company structure requires a planned rollout
 
 Snyk has Organization-level SCM integrations available, including GitHub, GitHub Enterprise, Bitbucket Cloud, and more.
 
-See [Set up an integration](broken-reference) for details.
+For details, see [Set up a Snyk integration](../../../getting-started/#set-up-a-snyk-integration).
 
 Snyk has Group-level SCM integrations available for Snyk AppRisk, including GitHub, GitLab, Azure DevOps, and Bitbucket.
 
@@ -51,7 +51,7 @@ Navigate to the **Projects** page in the Snyk UI, select **Add projects**, selec
 To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a ✔ next to the repository name.
 {% endhint %}
 
-See [Import a Project](broken-reference) for more details.
+For details, see [Import a Project](../../../getting-started/#import-a-project-to-scan-and-identify-issues).
 
 ## Stage 3: Enable Snyk test on PRs
 

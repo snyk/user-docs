@@ -1,8 +1,8 @@
 # Explore the Snyk Web UI
 
-In the Snyk Web UI, you can manage your Projects, view and address security vulnerabilities, monitor dependencies, and review the health of your code. You can also configure account settings, manage API and Auth tokens, authorize applications, set organizational preferences, and customize email notifications.&#x20;
+In the Snyk Web UI, you can manage your Projects, view and address security vulnerabilities, monitor dependencies, and review the health of your code. You can also configure account settings, manage API and Auth tokens, authorize applications, set organizational preferences, and customize email notifications.
 
-You can visualize information at the Group or Organization level by clicking the name of the Group or Organization. General information, like Reports, Issues, Dependencies, Members, Settings, Help, and Settings, is available for all level types. For more information, see [Groups and Organizations](../snyk-admin/groups-and-organizations/).&#x20;
+You can visualize information at the Group or Organization level by clicking the name of the Group or Organization. General information, like Reports, Issues, Dependencies, Members, Settings, Help, and Settings, is available for all level types. For more information, see [Groups and Organizations](../snyk-admin/groups-and-organizations/).
 
 ## Group level
 
@@ -21,7 +21,7 @@ If you navigate to the Group level and select the Organizations page, you will s
 ### View the assets dashboard
 
 {% hint style="warning" %}
-The **Asset Dashboard** menu option is available only for Snyk AppRisk Essentials users.&#x20;
+The **Asset Dashboard** menu option is available only for Snyk AppRisk Essentials users.
 
 If you use Snyk AppRisk Pro, navigate to [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md).
 {% endhint %}
@@ -41,12 +41,12 @@ For details on archived or deleted repositories and the information presented in
 You can make several changes to a widget. All widgets allow you to change the name. Other particular settings are available for each widget. To access the **Settings** menu:
 
 1. Select a widget and click the **Setting** menu.
-2. Customize the widget by changing its name or other specific details.&#x20;
+2. Customize the widget by changing its name or other specific details.
 3. Click **Apply**.
 
 #### Widget menu
 
-You can access the full list of general options from the widget menu. To do this:&#x20;
+You can access the full list of general options from the widget menu. To do this:
 
 1. Select a widget and click the menu available in the top right corner of the widget.
 2. Select one of the following actions:
@@ -59,7 +59,7 @@ You can access the full list of general options from the widget menu. To do this
 ### View and manage your assets inventory
 
 {% hint style="warning" %}
-The **Inventory** menu option is available only for Snyk AppRisk users.&#x20;
+The **Inventory** menu option is available only for Snyk AppRisk users.
 {% endhint %}
 
 The [Inventory](../manage-assets/) is available only if you are using Snyk AppRisk. You can use the **Inventory** page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
@@ -69,7 +69,7 @@ Each line in the inventory represents either a repository asset or a scanned art
 ### Manage and customize your policies
 
 {% hint style="warning" %}
-The **Policies** menu option is available only for Snyk AppRisk users.&#x20;
+The **Policies** menu option is available only for Snyk AppRisk users.
 {% endhint %}
 
 For information on how to automate the process of adding business context and receiving notifications, see [Policies](../manage-risk/policies/assets-policies/).
@@ -77,10 +77,10 @@ For information on how to automate the process of adding business context and re
 ### Manage integrations for asset discovery, asset coverage, and issues from third-party vendors
 
 {% hint style="warning" %}
-The **Integrations** menu option for the Group level is available only for Snyk AppRisk users.&#x20;
+The **Integrations** menu option for the Group level is available only for Snyk AppRisk users.
 {% endhint %}
 
-The **Integrations** page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.&#x20;
+The **Integrations** page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
 
 ou can find an overview of all your integrations on the Snyk Web UI **Integrations** page. You can enable or disable your integrations, edit them, or remove them from your configuration.
 
@@ -92,7 +92,7 @@ You can have an integration connected or paused. Click play or pause to enable o
 
 #### Add a new profile for an integration
 
-Each integration can be configured to run on more than one profile. This is helpful when retrieving data from multiple instances within the same source.&#x20;
+Each integration can be configured to run on more than one profile. This is helpful when retrieving data from multiple instances within the same source.
 
 To add a new profile:
 
@@ -143,7 +143,7 @@ When you log in to an existing account and select an Organization, the Web UI op
 
 #### Top pending tasks
 
-The **Pending tasks** section shows the next chores to be handled for the Projects in a Snyk Organization.&#x20;
+The **Pending tasks** section shows the next chores to be handled for the Projects in a Snyk Organization.
 
 #### View Projects
 
@@ -166,11 +166,11 @@ Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud only
 
 #### Top vulnerable projects
 
-Similarly, the **top vulnerable projects** section shows the Snyk Projects assessed as the most vulnerable, with similar functions available as the **Pending tasks** section.&#x20;
+Similarly, the **top vulnerable projects** section shows the Snyk Projects assessed as the most vulnerable, with similar functions available as the **Pending tasks** section.
 
 #### Add Project
 
-To add a Snyk Project, use the **Add project** link on the Dashboard. Select how to add the Project from the dropdown. See [Import a Project](/getting-started#import-a-project-to-scan-and-identify-issues) for more details.
+To add a Snyk Project, use the **Add project** link on the Dashboard. Select how to add the Project from the dropdown. See [Import a Project](./#import-a-project-to-scan-and-identify-issues) for more details.
 
 ### **Manage your** **Projects**
 
@@ -186,18 +186,18 @@ To open the **Projects** listing page, select the **Projects** link in the side 
 
 ### **Manage your** **Integrations**
 
-You can set up a range of integrations with Snyk from the  [Integrations](../integrate-with-snyk/) page available on the Dashboard.
+You can set up a range of integrations with Snyk from the [Integrations](../integrate-with-snyk/) page available on the Dashboard.
 
 ## General settings available for all level types
 
 The following Snyk functions are available with the Web UI, for all level types:
 
-* [View reports ](snyk-web-ui.md#view-reports)
-* [View and prioritize issues ](snyk-web-ui.md#view-and-prioritize-issues)
-* [View dependencies and licenses  ](snyk-web-ui.md#view-dependencies-and-licenses)
-* [Manage Organization or Group members](snyk-web-ui.md#manage-organization-or-group-members) &#x20;
-* [View and manage Snyk Organization or Group settings ](snyk-web-ui.md#snyk-organization-or-group-settings)
-* [View helpful resources  ](snyk-web-ui.md#view-helpful-resources)
+* [View reports](snyk-web-ui.md#view-reports)
+* [View and prioritize issues](snyk-web-ui.md#view-and-prioritize-issues)
+* [View dependencies and licenses](snyk-web-ui.md#view-dependencies-and-licenses)
+* [Manage Organization or Group members](snyk-web-ui.md#manage-organization-or-group-members)
+* [View and manage Snyk Organization or Group settings](snyk-web-ui.md#snyk-organization-or-group-settings)
+* [View helpful resources](snyk-web-ui.md#view-helpful-resources)
 * [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings)
 
 ### **View reports**
@@ -214,7 +214,7 @@ The Reports page is available at both the Group and Organization levels.
 ### View and prioritize issues
 
 {% hint style="warning" %}
-The **Issues** menu is available only for Snyk AppRisk Pro users.&#x20;
+The **Issues** menu is available only for Snyk AppRisk Pro users.
 {% endhint %}
 
 The [Issues page](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) provides a centralized view of all the issues identified by Snyk with additional asset context. This helps you and your team to better triage and remediate issues in Snyk.
@@ -227,7 +227,7 @@ You can [view dependencies](https://docs.snyk.io/manage-risk/reporting/dependenc
 
 ### Manage Organization or Group members
 
-Select **Members** from the dashboard's navigation to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations.md) or [Group](../snyk-admin/groups-and-organizations/groups/manage-users-in-a-group.md).&#x20;
+Select **Members** from the dashboard's navigation to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations.md) or [Group](../snyk-admin/groups-and-organizations/groups/manage-users-in-a-group.md).
 
 The Members page is available at both the Group and Organization levels.
 
@@ -251,7 +251,7 @@ Select the **Help** > **Product updates** menu option to visit [snyk.io updates]
 
 Select your **name** in the navigation on the Dashboard and then **Account settings** to open your [account settings](https://app.snyk.io/account) page, where you can view and configure your user account settings, including:
 
-* View and manage your API token or the Auth Token for free accounts. For details, see [How to obtain and authenticate with your Snyk API token](broken-reference).
+* View and manage your API token or the Auth Token for free accounts. For details, see [How to obtain and authenticate with your Snyk API token](./#obtain-and-use-your-snyk-api-token).
 * View the list of your **Authorized Applications**.
 * Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#set-your-preferred-organization).
 * **Delete** your account.
