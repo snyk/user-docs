@@ -79,7 +79,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Jira Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:jira
@@ -93,7 +93,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Artifactory Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](artifactory-repository-prerequisites-and-steps-to-install-and-configure-broker/artifactory-repository-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](artifactory-repository-install-and-configure-broker/set-up-snyk-broker-with-artifactory-repository.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:artifactory
@@ -104,7 +104,7 @@ ENV ARTIFACTORY_URL   <yourdomain>.artifactory.com
 
 ## Derived Docker image for Nexus 3 Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/nexus-repository-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:nexus
@@ -122,7 +122,7 @@ By default for Nexus 3, the X-Forwarded-For headers are stripped off by the Brok
 
 ## Derived Docker image for Nexus 2 Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/nexus-repository-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:nexus2

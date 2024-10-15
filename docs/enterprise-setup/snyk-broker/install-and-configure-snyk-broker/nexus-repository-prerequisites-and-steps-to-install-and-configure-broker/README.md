@@ -17,7 +17,7 @@ Before installing the Snyk Nexus Repository Broker, ask your Snyk account team t
 You must have Docker or a way to run Docker Linux containers.\
 Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
-For convenience, instructions to obtain or generate the Broker token follow. When you are done, **continue** with the steps to install using [Docker](nexus-repository-install-and-configure-using-docker.md) or [Helm](nexus-repository-install-and-configure-using-helm.md).
+For convenience, instructions to obtain or generate the Broker token follow. When you are done, **continue** with the steps to install using [Docker](set-up-snyk-broker-with-nexus-repository-manager.md) or [Helm](nexus-repository-install-and-configure-using-helm.md).
 
 ## Obtain Broker token for Nexus integration
 

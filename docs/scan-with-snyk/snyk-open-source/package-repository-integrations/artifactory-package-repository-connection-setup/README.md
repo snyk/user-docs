@@ -17,7 +17,7 @@ You can configure these types of Artifactory Package Repository:
 * Publicly accessible instances protected by basic authentication
 * Instances on a private network by using Snyk Broker (with or without basic authentication).
 
-These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance, see the [setup instructions for Snyk Broker with Artifactory Repository](../../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/artifactory-repository-prerequisites-and-steps-to-install-and-configure-broker/).
+These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance, see the [setup instructions for Snyk Broker with Artifactory Repository](../../../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/artifactory-repository-install-and-configure-broker/).
 
 The steps to set up Artifactory Repository Manager follow.
 

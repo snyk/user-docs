@@ -16,7 +16,7 @@ Before installing the Snyk Artifactory Repository Broker, ask your Snyk account 
 
 You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
-For convenience, instructions to obtain or generate the Broker token follow. When you are done, **continue** with the steps to install using [Docker](artifactory-repository-install-and-configure-using-docker.md) or [Helm](artifactory-repository-install-and-configure-using-helm.md).
+For convenience, instructions to obtain or generate the Broker token follow. When you are done, **continue** with the steps to install using [Docker](set-up-snyk-broker-with-artifactory-repository.md) or [Helm](artifactory-repository-install-and-configure-using-helm.md).
 
 ## Obtain Broker token for Artifactory Repository setup
 
