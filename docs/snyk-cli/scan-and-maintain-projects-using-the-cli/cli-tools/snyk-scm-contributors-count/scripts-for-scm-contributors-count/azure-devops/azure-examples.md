@@ -84,7 +84,7 @@ Consider the following levels of usage and options:
     snyk-scm-contributors-count azure-devops --token AZURE-TOKEN --org AZURE-ORG --importConfDir ValidPathToWritableFolder --importFileRepoType private/public/all
     ```
 
-    For more details about these flags, refer to the [Creating and using the import page](../../creating-and-using-the-import-files.md).
+    For more details about these flags, refer to the [Creating and using the import page](../../creating-and-using-the-import-file.md).
 *   To run in debug mode for verbose output, prefix the command with`DEBUG=snyk*`:
 
     ```

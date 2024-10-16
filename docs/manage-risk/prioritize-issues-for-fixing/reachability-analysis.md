@@ -43,15 +43,15 @@ Reachability analysis is supported for the following languages and package manag
 
 Reachability analysis is supported in the following integrations:
 
-| Integration                                                                                                                                       | Release status       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| [GitHub](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)                                                                    | General Availability |
-| [GitHub Enterprise](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/the-scripts/github-enterprise/) | General Availability |
-| [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)                                              | Early Access         |
-| [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                    | Early Access         |
-| [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)                                                                    | Early Access         |
-| [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                               | Early Access         |
-| [Brokered connections](../../enterprise-setup/snyk-broker/connections-with-snyk-broker.md)                                                        | Early Access         |
+| Integration                                                                                                                                                              | Release status       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
+| [GitHub](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)                                                                                           | General Availability |
+| [GitHub Enterprise](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/github-enterprise/) | General Availability |
+| [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)                                                                     | Early Access         |
+| [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                                           | Early Access         |
+| [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)                                                                                           | Early Access         |
+| [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                                                      | Early Access         |
+| [Brokered connections](../../enterprise-setup/snyk-broker/connections-with-snyk-broker.md)                                                                               | Early Access         |
 
 {% hint style="info" %}
 Reachability analysis using the Snyk CLI, IDE, or other integrations is not supported.

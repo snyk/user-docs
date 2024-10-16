@@ -82,7 +82,7 @@ Consider the following levels of usage and options:
     snyk-scm-contributors-count bitbucket-server --token BITBUCKET-TOKEN --url BITBUCKET-URL --importConfDir ValidPathToFolder --importFileRepoType private/public/all
     ```
 
-    For more information about these flag, refer to [Creating and using the import file](../../creating-and-using-the-import-files.md).
+    For more information about these flag, refer to [Creating and using the import file](../../creating-and-using-the-import-file.md).
 *   To run in debug mode for verbose output, add `DEBUG=snyk*` to the beginning of the command:
 
     ```

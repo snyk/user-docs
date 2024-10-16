@@ -26,5 +26,5 @@ The `"fetchAllOrgs"` flag is unique to GitHub Enterprise and distinguishes betwe
 {% endhint %}
 
 {% hint style="info" %}
-For further details on how to use the generated import file with the snyk-api-import tool, see [Creating and using the import files](creating-and-using-the-import-files.md).
+For further details on how to use the generated import file with the snyk-api-import tool, see [Creating and using the import files](creating-and-using-the-import-file.md).
 {% endhint %}

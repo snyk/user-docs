@@ -20,7 +20,7 @@ snyk-scm-contributors-count <command> <command-options>
 * `gitlab`
 * `consolidateResults`
 
-**`<command-options>`**: see SCM-specific pages (example pages) in the [scripts](the-scripts/) section.
+**`<command-options>`**: see SCM-specific pages (example pages) in the [scripts](scripts-for-scm-contributors-count/) section.
 
 ## Modes
 

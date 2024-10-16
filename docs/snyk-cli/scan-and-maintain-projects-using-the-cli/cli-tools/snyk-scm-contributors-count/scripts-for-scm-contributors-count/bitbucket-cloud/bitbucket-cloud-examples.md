@@ -80,7 +80,7 @@ Consider the following levels of usage and options:
     snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --importConfDir ValidPathToFolder --importFileRepoType private/public/all
     ```
 
-    For more information about these flags, refer to this [Creating and using the import page](../../creating-and-using-the-import-files.md).
+    For more information about these flags, refer to this [Creating and using the import page](../../creating-and-using-the-import-file.md).
 *   To run in debug mode for verbose output, prefix with `DEBUG=snyk*`:
 
     ```
