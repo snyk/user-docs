@@ -1,5 +1,7 @@
 # CLI commands and options summary
 
+
+
 {% hint style="info" %}
 This page **only summarizes** the CLI commands and the options for each command. **For details, use the links in this summary to open the help** docs page for the command you are using. The help docs pages are the same as the help in the CLI.
 {% endhint %}
@@ -104,7 +106,7 @@ Find Log4Shell vulnerability.
 
 ### [`snyk policy`](https://docs.snyk.io/snyk-cli/commands/policy)
 
-Generate a mapping artifact that contains the minimum amount of information needed to generate, from Terraform state files, resource mappings from code to cloud, such as resource IDs and names, and send the mapping artifact to Snyk. Display the `.snyk` policy for a package.
+Display the `.snyk` policy for a package.
 
 ### [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
