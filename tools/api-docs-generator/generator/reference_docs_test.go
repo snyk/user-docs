@@ -294,6 +294,29 @@ func Test_aggregateSpecs(t *testing.T) {
 			},
 			wantErr: assert.NoError,
 		},
+		{
+			name: "filters out non-stable paths",
+			args: args{
+				cfg: &config.Config{
+					Specs: []config.Spec{
+						{
+							Path: "spec_with_stability.yaml",
+						},
+					},
+				},
+				docsBasePath: "../testdata/reference_docs/",
+			},
+			want: map[string][]operationPath{
+				"stable": {
+					{
+						method:   "GET",
+						specPath: "spec_with_stability.yaml",
+						pathURL:  "/stable-path",
+					},
+				},
+			},
+			wantErr: assert.NoError,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -302,6 +325,12 @@ func Test_aggregateSpecs(t *testing.T) {
 				return
 			}
 			compareForTest(t, tt.want, got)
+			for tag := range got {
+				for _, op := range got[tag] {
+					assert.NotEqual(t, "/unstable-path", op.pathURL)
+					assert.NotEqual(t, "/no-stability-path", op.pathURL)
+				}
+			}
 		})
 	}
 }
