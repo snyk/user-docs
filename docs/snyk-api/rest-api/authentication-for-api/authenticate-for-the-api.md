@@ -19,7 +19,7 @@ If you are using the API through [Snyk Apps](../../how-to-use-snyk-apps-apis/), 
 Authorization: bearer ACCESS_TOKEN
 ```
 
-Otherwise, a `401 Unauthorized` the response will be returned:
+Otherwise, a `401 Unauthorized` response will be returned:
 
 ```http
 HTTP/1.1 401 Unauthorized
