@@ -65,8 +65,6 @@ If an integration is already configured for your Organization, it is marked as *
 Before authenticating, be sure you have set your region properly. For details, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md), which has the [list of regional URLs](../working-with-snyk/regional-hosting-and-data-residency.md#regional-urls).
 {% endhint %}
 
-### Find your API token
-
 Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
 
 Free and Team plan and trial users have access only to this personal token under the user profile. The personal token can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE when you are setting a token manually. Use a personal token with caution if you are authenticating with the API or for CI/CD.
@@ -79,17 +77,7 @@ To obtain your personal Snyk API token:
 
 If you want a new API token, select **Revoke & Regenerate**, but be aware that this will make the previous API token invalid.
 
-### When to use a personal token and a service account
-
-Enterprise users have access to a personal token under their profile and to service account tokens. For details, see [Service accounts](../enterprise-setup/service-accounts/).
-
-* **Enterprise users should use a service account** to authenticate for any kind of automation. This includes, but is not limited to, CI/CD scanning with the CLI or build system plugins and any automation, including automation with the API.
-* **Enterprise users should use the personal token** under their user profile for:
-  * Running the CLI locally on their machine
-  * Authenticating with the IDE manually
-  * Running API calls one time, for example, to test something.
-
-For more information on the personal Snyk API token, see [Authenticate to use the CLI](../snyk-cli/authenticate-to-use-the-cli.md) and [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
+For information on when to use an API token and when to use a service account token, avialble to Enterprise plan users only, see [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
 
 ## Import a Project to scan and identify issues
 
