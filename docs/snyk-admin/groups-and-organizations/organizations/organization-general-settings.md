@@ -1,10 +1,10 @@
 # Organization general settings
 
-To view and modify settings for your Organzation, be sure you are in your Organization and navigate to **Settings** and **General**:
+To view and modify settings for your Organization, be sure you are in your Organization and navigate to **Settings** and **General**:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-02 at 15.39.28.png" alt="Organization geneal settings"><figcaption><p>Organization geneal settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/org_settings.png" alt="Organization general settings"><figcaption><p>Organization general settings</p></figcaption></figure>
 
 </div>
 

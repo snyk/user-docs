@@ -126,9 +126,9 @@ Any user that is granted a role in an Organization within the SSO without an exp
 
 For a valid role assertion, the Organization or Group slug may be required, where a wildcard is not used. The slug is the canonical name for the Organization or Group within Snyk.
 
-To find an Organization slug, navigate to the settings page for the Organization, and under General settings, the Organization slug value is visible. This can then be copied and used in role assertions in custom mapping.&#x20;
+To find an Organization slug, navigate to the **Settings** page for the Organization, and under **General** settings, the Organization slug value is visible. This can then be copied and used in role assertions in custom mapping.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (375).png" alt="Organization general settings page, showing the Organization slug"><figcaption><p>Organization general settings page, showing the Organization slug</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings_org_slug.png" alt="Organization general settings page, showing the Organization slug"><figcaption><p>Organization general settings page, showing the Organization slug</p></figcaption></figure>
 
 To find the slug of a Group, navigate to the Group Settings, and find the Group slug under General Settings, which you can copy.
 

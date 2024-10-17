@@ -10,7 +10,7 @@ For more information, see [Plans and pricing](https://snyk.io/plans).
 The V1 API will be sunset eventually, as further Snyk developments are now focused on the REST API.
 {% endhint %}
 
-The V1 API enables you to test a package for issues as they are defined by Snyk, and to automate Snyk processes to accomplish your specific workflows  Customers and partners can perform functions including:
+The V1 API enables you to test a package for issues as they are defined by Snyk, and to automate Snyk processes to accomplish your specific workflows. Customers and partners can perform functions including:
 
 * Accessing vulnerability data
 * Scanning Projects and applications
@@ -28,6 +28,28 @@ Snyk is hosted in the following regions. Each region has its own base URL.
 {% hint style="info" %}
 This API is available only over HTTPS. Calling the API over HTTP will yield a 404 for all requests.
 {% endhint %}
+
+## Authorization
+
+To use this API, you must get your token from Snyk. You can find the token in your [personal account settings](https://snyk.io/account/) after you register with Snyk and log in. For details, see [Authentication for API](rest-api/authentication-for-api/).&#x20;
+
+Provide the token in an `Authorization` header with the token, preceded by `token`:
+
+```
+Authorization: token API_KEY
+```
+
+Otherwise, a 401 "Unauthorized" response will be returned.
+
+```
+HTTP/1.1 401 Unauthorized
+
+{
+    "code": 401,
+    "error": "Not authorised",
+    "message": "Not authorised"
+}
+```
 
 ## Rate limiting
 

@@ -31,7 +31,7 @@ At the Organization level, select **Settings** to manage Organization settings:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-26 at 12.59.45.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/org_settings.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 
 </div>
 
@@ -40,7 +40,7 @@ From the Organization setting menu, select **Settings** and then select one of t
 * **General**: See [Organization general settings](organizations/organization-general-settings.md) for details.
 * **Service Accounts**: See [Service accounts](../../enterprise-setup/service-accounts/) for details.
 * **Integrations**: Set up integrations and see a list of those configured for your Organization; click the name of the configured integration to see the details. See [Integrate with Snyk](https://docs.snyk.io/integrations) for information about available Snyk integrations.
-* &#x20;**Languages**: Enable Reachable vulnerabilities analysis and edit language settings; see [Snyk Open Source - supported languages and package managers](../../supported-languages-package-managers-and-frameworks/) for details.
+* **Open Source**: Enable Reachable vulnerabilities analysis and edit language settings; see [Snyk Open Source - supported languages and package managers](../../supported-languages-package-managers-and-frameworks/) for details.
 * **Snyk Code**: Enable Snyk Code; see the [Snyk Code](../../scan-with-snyk/snyk-code/) documentation for details.
 * **Snyk Iac:** Enable Snyk Iac, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/)documentation for details.
 * **Usage**: See the [Usage settings](usage-settings.md) page for details.
