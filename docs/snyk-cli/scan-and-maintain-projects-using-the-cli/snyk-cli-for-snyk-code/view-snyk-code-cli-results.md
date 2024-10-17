@@ -5,7 +5,7 @@ The Snyk CLI enables you to perform the following actions on the results of the 
 * [Analyze Snyk Code CLI results](view-snyk-code-cli-results.md#analyze-snyk-code-cli-results): View test results and analyze vulnerabilities.
 * [Filter results by severity level](view-snyk-code-cli-results.md#filter-results-by-severity-level): Filter the `snyk code test` results shown in the terminal to display only issues with a specific severity level and higher.
 * [Output test results](view-snyk-code-cli-results.md#output-test-results): Output the `snyk code test` results to a JSON or SARIF format in the terminal instead of displaying the results in the standard CLI format.
-* [Export test results](view-snyk-code-cli-results.md#export-test-results): Export the CLI Code results to a JSON or SARIF format file.
+* [Export test results](view-snyk-code-cli-results.md#export-test-results): Export the CLI Code results to a JSON or SARIF format file. For `snyk code test`, the JSON and SARIF formats are the same; thus, examples are shown in only one format.
 
 You can also [display the CLI results in HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html.md).
 
@@ -115,7 +115,7 @@ The severity levels of the issues discovered by running `snyk code test` are dis
 The designation Critical is not used in Snyk Code.
 {% endhint %}
 
-An example of medium level severity follows:
+An example of medium-level severity follows:
 
 <figure><img src="../../../.gitbook/assets/snyk Code - CLI - JSON and SARIF - Severity Level Results - in the Terminal.png" alt="Medium severity in JSON or SARIF output"><figcaption><p>Medium severity in JSON or SARIF output</p></figcaption></figure>
 
@@ -165,43 +165,29 @@ You can export the `snyk code test` results to a JSON or SARIF format file. When
 
 You can also [output the test results to JSON or SARIF format in the terminal](view-snyk-code-cli-results.md#output-test-results).
 
-The severity levels of the issues discovered by running `snyk code test` are displayed differently in JSON and SARIF files.  For more information, see [Severity levels in the JSON and SARIF files](view-snyk-code-cli-results.md#severity-levels-in-json-and-sarif-files).
+The severity levels of the issues discovered by running `snyk code test` and reported in JSON and SARIF files are displayed differently from the results in the terminal.  For more information, see [Severity levels in the JSON and SARIF files](view-snyk-code-cli-results.md#severity-levels-in-json-and-sarif-files).
 
-### Export methods
+You can use two methods to export the results to either a JSON or SARIF file. The following instructions show a JSON file, but you can also export a SARIF file.
 
-You can use two methods to export the results, either to a JSON or SARIF file. The following instructions show a JSON file, but you can also export a SARIF file.
+### Export test results to a new file with a standard display of results in the terminal
 
-* Export the results to a new file, without a result display in the terminal:
+The `snyk code test --json-file-output=<path/to/new_file>` command is available in the Snyk CLI v. 1.910.0 and higher. To update your Snyk CLI version, see [Install or update the Snyk CLI](../../install-or-update-the-snyk-cli/).
 
-```
-snyk code test --json > <path/to/new_file>
-```
-
-* Export the results to a new file, with a standard result display in the terminal:
-
-```
-snyk code test --json-file-output=<path/to/new_file>
-```
-
-The `snyk code test --json-file-output=<path/to/new_file>` command is available in Snyk CLI v. 1.910.0 and higher. To update your Snyk CLI version, see [Install or update the Snyk CLI](../../install-or-update-the-snyk-cli/).
-
-### Export test results to a JSON file
-
-To export the test results to a JSON file, enter the following:
+To export the results to a new JSON file, with a standard  display of results in the terminal, use the following command:
 
 ```
 snyk code test --json-file-output=<path/to/new_json_file>
 ```
 
-The test results appear in the terminal in the standard format, and a JSON file is created in the path you specified.
-
-If you want to export the results to a JSON file without displaying the results in the terminal, enter:
+To export the test results to a new SARIF file, use the following command:
 
 ```
-snyk code test --json > <path/to/new_json_file>
+snyk code test --sarif-file-output=<path/to/new_sarif_file>
 ```
 
-For example, to export the test results of the `snyk-goof-master` folder to a JSON file called `json`, change the directory to the root folder of the repository, and enter the following:
+The test results appear in the terminal in the standard format, and a JSON or SARIF file is created in the path you specified.
+
+Because JSON and SARIF are the same for snyk code test, only a JSON example is shown here. To export the test results of the `snyk-goof-master` folder to a JSON file called `json`, change the directory to the root folder of the repository, and enter the following:
 
 ```
 snyk code test --json-file-output=json
@@ -215,34 +201,16 @@ In the repository folder, a JSON file is created:
 
 <figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - JSON file.png" alt="JSON file in repository"><figcaption><p>JSON file in repository</p></figcaption></figure>
 
-### Export test results to a SARIF file
+### Export the results to a new file without a display of results in the terminal
 
-**T**o export the test results to a SARIF file, enter the following:
+To export the results to a new JSON file without displaying the results in the terminal, use the following command:
 
 ```
-snyk code test --sarif-file-output=<path/to/new_sarif_file>
+snyk code test --json > <path/to/new_json_file>
 ```
 
-The test results appear in the terminal in the standard format, and a SARIF file is created in the path you specified.
-
-If you want to export the results to a SARIF file without displaying the results in the terminal, enter:
+To export the results to a SARIF file without displaying the results in the terminal, use the following command:
 
 ```
 snyk code test --sarif > <path/to/new_sarif_file>
 ```
-
-For example, to export the test results of the `snyk-goof-master` folder to a SARIF file called `sarif`, change the directory to the root folder of the repository, and  enter the following:
-
-```
-snyk code test --sarif-file-output=sarif
-```
-
-In the terminal, the test results appear in the standard format:
-
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results - 2.png" alt="snyk code test results in the terminal"><figcaption><p><code>snyk code tes</code>t results in the terminal</p></figcaption></figure>
-
-In the repository folder, a SARIF file is created:
-
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results - SARIF file.png" alt="SARIF file in repository"><figcaption><p>SARIF file in repository</p></figcaption></figure>
-
-###
