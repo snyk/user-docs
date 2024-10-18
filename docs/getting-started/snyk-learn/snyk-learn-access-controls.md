@@ -9,7 +9,7 @@ description: >-
 {% hint style="warning" %}
 **Release status**
 
-Snyk Learn Assignments is available in Closed Beta. For more information, contact your Snyk account representative.
+The [Snyk Learn Assignments](snyk-learn-reports-and-assignments.md#assignments) feature is available in [Early Access](../snyk-release-process.md#early-access). For more information, contact your Snyk account representative.
 
 Snyk Learn access controls are available only for Enterprise plans. For more information, see [Plans and Pricing](https://snyk.io/plans).
 {% endhint %}
