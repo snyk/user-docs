@@ -315,7 +315,7 @@ If you want to override this global configuration for individual runs of snyk mo
 
 ### [SNYK-9999](#snyk-9999)
 
-#### Request not fulfilled due to server error 
+#### Request not fulfilled due to server error
 
 The server cannot process the request due to an unexpected error. Check Snyk status, then try again.
 
@@ -629,6 +629,63 @@ Snyk was unable to find supported files.
 
 **Help Links:**
 - [https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code](https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code)
+
+### [SNYK-CODE-0007](#snyk-code-0007)
+
+#### Rule extension already exists for the Group
+
+A Rule extension with the same type and attributes already exists
+for the given Group.
+
+Either modify the existing Rule extension or create a new
+Rule extension with a different type or attributes.
+
+**HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
+
+
+### [SNYK-CODE-0008](#snyk-code-0008)
+
+#### Organization relationships must be unique
+
+Each Org relationship to a Snyk Code Rule extention must be unique.
+
+Make sure each Org in relationships has a different ID.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CODE-0009](#snyk-code-0009)
+
+#### Group relationship must match the Group in the requested URL
+
+You cannot associate a Snyk Code Rule extension to any other Group.
+
+Make sure the Group ID under relationships matches the Group ID in the request path.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CODE-0010](#snyk-code-0010)
+
+#### Organization outside of the administrating Group
+
+You cannot associate a Snyk Code Rule extension to an Org outside of the administrating Group.
+
+Make sure each Org under relationships is within the Group in the requested URL.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
+### [SNYK-CODE-0011](#snyk-code-0011)
+
+#### Rule extension limit reached
+
+You have hit the maximum number of published Snyk Code Rule extensions allowed for a Group.
+
+To create a new Rule extension you will have to remove an existing one.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
 
 ---
 # Integration
@@ -2466,4 +2523,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-10-16T14:35:47.842Z
+--- Generated at 2024-10-18T08:27:22.026Z
