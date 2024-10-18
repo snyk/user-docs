@@ -8,11 +8,7 @@ Snyk values the security community and believes that responsible disclosure of s
 
 If you believe you have found a security vulnerability in any Snyk services, please let Snyk know right away. Snyk will investigate all legitimate reports and strive to fix the problem quickly. Before reporting, though, please review the [Snyk Responsible Disclosure Policy](reporting-security-issues.md#snyk-responsible-disclosure-policy).
 
-Use the following form to submit your report to Snyk (one issue per report).
-
-{% embed url="https://hackerone.com/cd114cde-db28-47fc-9b80-01da9713b6a5/embedded_submissions/new" %}
-
-If you are unable to navigate to the form, submit your report to [security@snyk.io](mailto:security@snyk.io) (one issue per report) and respond to the report with any updates. Please do not contact Snyk employees directly or through other channels about a security report.&#x20;
+Send your report to [security@snyk.io](mailto:security@snyk.io) (one issue per report) and respond to the report with any updates. Please do not contact Snyk employees directly or through other channels about a security report.&#x20;
 
 ## Snyk Responsible Disclosure Policy
 
