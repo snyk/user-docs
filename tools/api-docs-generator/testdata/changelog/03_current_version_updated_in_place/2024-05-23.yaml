@@ -13,6 +13,7 @@ tags:
 paths:
   /test:
     post:
+      x-snyk-api-stability: ga
       description: test
       operationId: test
       tags:

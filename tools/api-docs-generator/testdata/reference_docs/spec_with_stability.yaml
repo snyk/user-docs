@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Test
+  contact: {}
+  version: 3.0.0
+  description: Sample API
+paths:
+  /stable-path:
+    get:
+      tags:
+        - stable
+      x-snyk-api-stability: ga
+      responses:
+        '200':
+          description: OK
+      summary: Stable path
+  /unstable-path:
+    get:
+      tags:
+        - unstable
+      x-snyk-api-stability: beta
+      responses:
+        '200':
+          description: OK
+      summary: Unstable path
+  /no-stability-path:
+    get:
+      tags:
+        - no-stability
+      responses:
+        '200':
+          description: OK
+      summary: No stability path
