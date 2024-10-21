@@ -62,7 +62,7 @@ Click on the name of the event source, and then click **Associate with event bus
 
 Navigate to the [EventBridge integration settings page](https://app.snyk.io/manage/integrations/aws-eventbridge) in the Snyk dashboard and click on the name of the integration you want to manage.
 
-<figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-snyksettings.png" alt="Select Amazon EventBridge integration"><figcaption><p>Select Amazon EventBridge integration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integrations_amazon_eventbridge.png" alt="Select Amazon EventBridge integration"><figcaption><p>Select Amazon EventBridge integration</p></figcaption></figure>
 
 Clicking on the name of the integration opens the integration settings page, which displays configuration information for the integration.
 

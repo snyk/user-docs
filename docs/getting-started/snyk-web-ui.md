@@ -239,7 +239,7 @@ You must be assigned the [required Admin roles and permissions](../snyk-admin/us
 
 Use the **Settings** option to view and manage your Organization or Group settings. For details, see[Group and Organization settings](../snyk-admin/groups-and-organizations/group-and-organization-settings.md).
 
-<figure><img src="../.gitbook/assets/image (507).png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/org_settings.png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
 
 ### View helpful resources
 

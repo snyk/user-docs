@@ -32,8 +32,6 @@ If you've already set up an integration for the first time and enabled Snyk Code
 3. In the **Enable Snyk Code** section, change the setting to **Enabled**.
 4. Click **Save changes**.
 
-<figure><img src="../../.gitbook/assets/Enable Snyk Code.png" alt="Enable Snyk Code setting"><figcaption><p>Enable Snyk Code setting</p></figcaption></figure>
-
 The next step is to [integrate your Git repositories with Snyk](configure-snyk-code.md#integrate-git-repository-with-snyk).
 
 ## Integrate Git repository with Snyk
@@ -69,7 +67,7 @@ If you already have an integrated SCM, it is marked as **Configured**. If you wa
 
 The **Source control** integrations display only SCMs that are supported by Snyk Code.
 
-<figure><img src="../../.gitbook/assets/code_source_control_options.png" alt=""><figcaption><p>Source control options for Snyk Code</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/org_settings_integrations_source_control.png" alt="Source control options for Snyk Code"><figcaption><p>Source control options for Snyk Code</p></figcaption></figure>
 
 3\. On the integration page, enter your account credentials and save your details.
 

@@ -57,7 +57,7 @@ After completing the authorization flow you will be redirected to the settings p
 
 Navigate to the [Security Hub integration settings page](https://app.snyk.io/manage/integrations/aws-securityhub) in the Snyk dashboard and click on the name of the integration you want to manage.
 
-<figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-snyksettings.png" alt="Select integration to manage"><figcaption><p>Select integration to manage</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integrations_awb_security_hub.png" alt="Select integration to manage"><figcaption><p>Select integration to manage</p></figcaption></figure>
 
 Clicking on the name of an integration opens the settings page for that integration, where you can view and update configuration information for the integration.
 
