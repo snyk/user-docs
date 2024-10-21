@@ -17,14 +17,14 @@ This page explains using IaC+ and cloud scans in the Snyk Web UI. For informatio
 To start using IaC+ you must have the following:
 
 * A Snyk account. For details, see [Getting started](../../../getting-started/).
-* Belong to an Organization that has Snyk IaC on the enterprise plan.
+* Snyk IaC on the enterprise plan.
 * An existing Terraform, CloudFormation, or Azure Resource Manager environment to work in, or deployed AWS, Azure, or Google Cloud account to onboard.
-* Integration with your Git repository as for other Snyk products. For details, see [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
+* Integration with your Git repository. For details, see [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
 ## Import IaC+ SCM repositories
 
-{% hint style="warning" %}
-IaC+ SCM integrations use the new [Snyk Workspaces](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md) capability to support multi-file analysis. This capability is available through [Snyk Preview](../../../snyk-admin/snyk-preview.md) and must be turned on for IaC+ SCM scans to work properly.
+{% hint style="info" %}
+IaC+ SCM integrations use the [Snyk Workspaces](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md) capability to support multi-file analysis. Use the **Integration Settings** for your Group and Organization to enable Snyk Workspaces.
 
 If you want to scan a new SCM repository with IaC+ and you have already imported that repository, you must re-import the repository. This will not affect any of your existing Projects.
 {% endhint %}
