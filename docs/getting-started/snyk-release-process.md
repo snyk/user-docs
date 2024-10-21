@@ -53,7 +53,8 @@ Not all features follow all these stages, and timelines for each feature to move
   * [Checkmarx](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#checkmarx-setup-guide)
   * [SonarQube](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sonarqube-setup-guide)
   * [GitGuardian](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#gitguardian-setup-guide)
-  * [Jira](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#jira-setup-guide)
+* [Issues Analytics](../manage-risk/enterprise-analytics/issues-analytics.md)
+* [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md)
 
 ## General Availability
 

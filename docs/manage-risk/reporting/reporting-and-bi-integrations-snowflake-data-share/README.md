@@ -1,15 +1,5 @@
 # Reporting and BI Integrations: Snowflake Data Share
 
-{% hint style="warning" %}
-**Release status** \
-Snowflake Data Share is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for customers:
-
-* Under the Enterprise plan. For more information, see [Plans and pricing](https://snyk.io/plans).
-* With an active Snowflake account.
-
-For more information, contact your Snyk Account Executive.
-{% endhint %}
-
 With the new Snowflake Data Share integration, your data science, BI and AppSec teams can securely access the same underlying data available in Snyk Reporting, but within your own Snowflake account, unlocking powerful new analytical tools to better understand and visualize Snyk data.
 
 Use this integration to enable teams to rapidly build exploratory and custom analytics using the ecosystem of tools that Snowflake supports. Customers can connect Snyk data to BI tools like PowerBI, Tableau, and Looker Data Studio or build custom Streamlit apps.
@@ -29,7 +19,7 @@ Having Snyk datasets directly in your Snowflake account opens doors for combinin
 
 ## Main use cases <a href="#main-use-cases" id="main-use-cases"></a>
 
-Snyk Snowflake Data Share can be used for various use cases and can answer countless security and business-related questions. Some of these use cases include:
+The Snowflake Data Share can be used for various use cases and can answer countless security and business-related questions. Some of these use cases include:
 
 * **Enhance the AppSec posture visibility for the CISO and management team.**\
   Streamline Snyk data to your BI platforms and existing security dashboards and reflect performance metrics and KPI's, for example, MTTR, SLA compliance, remediation trends, and so on.&#x20;
@@ -40,9 +30,9 @@ Snyk Snowflake Data Share can be used for various use cases and can answer count
 
 ## Getting started <a href="#getting-started" id="getting-started"></a>
 
-### Request a Snowflake Data Share access <a href="#request-a-snowflake-data-share-access" id="request-a-snowflake-data-share-access"></a>
+### Request Snowflake Data Share access <a href="#request-a-snowflake-data-share-access" id="request-a-snowflake-data-share-access"></a>
 
-Follow the steps below to request a Snowflake Data Share access:
+Follow the steps below to request Snowflake Data Share access:
 
 1. Contact your Snyk Account Executive to request access
 2. Provide your Snyk contact person with the following Snowflake account details (find [here](https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account) guidelines to trace your credentials):
@@ -51,9 +41,9 @@ Follow the steps below to request a Snowflake Data Share access:
    * If you prefer to limit the data share to a specific set of Snyk Groups, mention the relevant Group IDs (the ID is available in the Snyk Group Settings).
 3. &#x20;After Snyk receives the Snowflake account details, the team will prepare the Data Share. You should expect to see your data within 24 hours.
 
-### Prepare to consume Snowflake Data Shares <a href="#prepare-to-consume-snowflake-data-shares" id="prepare-to-consume-snowflake-data-shares"></a>
+### Prepare to consume Snowflake Data Share <a href="#prepare-to-consume-snowflake-data-shares" id="prepare-to-consume-snowflake-data-shares"></a>
 
-The data share will be provided as a **Privately Shared Listing**. If it is the first time that you consume Snowflake data shares, proceed with the steps below; otherwise, proceed to [Create a database from Snyk Data Share](https://docs.snowflake.com/en/user-guide/data-share-consumers#creating-a-database-from-a-share):
+The data share will be provided as a **Privately Shared Listing**. If it is the first time that you consume Snowflake data share, proceed with the steps below; otherwise, proceed to [Create a database from Snyk Data Share](https://docs.snowflake.com/en/user-guide/data-share-consumers#creating-a-database-from-a-share):
 
 1. Your Snowflake Organization admin (requires ORGADMIN role) should [accept Snowflake Provider and Consumer Terms of Service](https://other-docs.snowflake.com/en/collaboration/consumer-becoming#accept-the-snowflake-provider-and-consumer-terms-of-service).
 2. [Set up the required privileges](https://other-docs.snowflake.com/en/collaboration/consumer-becoming#set-up-required-privileges) (requires ACCOUNTADMIN role or another role with CREATE DATABASE and IMPORT SHARE privileges).
@@ -81,7 +71,7 @@ For more information on how to use queries in Snowflake Data Share, see [Query D
 
 ### Data scope and accessibility <a href="#data-freshness" id="data-freshness"></a>
 
-* Snyk Snowflake Data Share is scoped to the data of a requested set of Snyk Groups. A customer can request access to all Snyk groups or to specific ones.&#x20;
+* The Snowflake Data Share is scoped to the data of a requested set of Snyk Groups. A customer can request access to all Snyk groups or to specific ones.&#x20;
 * Snyk shares all the data that is available for the requested Snyk Groups as exists in the Snyk database, with no additional limitations in the data share itself.
 * The data share itself is provided as a read-only database and is accessible according to Snowflake standard role-based access control.
 
