@@ -22,6 +22,10 @@ The Loaded package risk factor works with the Snyk Runtime Sensor and third-part
 
 The Snyk Runtime Sensor improves the identification and management of loaded package risks by providing real-time data on packages loaded into memory within Kubernetes containers. It closely integrates with your runtime environment to continuously monitor active packages and cross-reference this information with known vulnerabilities. This dynamic approach ensures accurate application of the loaded package risk factor, using up-to-date data to prioritize and mitigate risks based on actual runtime conditions.
 
+{% hint style="info" %}
+Navigate to the [Snyk Runtime Sensor documentation](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) to learn more about the supported ecosystems from which the Loaded package risk factor is reported.
+{% endhint %}
+
 ### Third-party integrations
 
 Third-party integrations make the Loaded package risk factor even stronger by providing extra data sources and analysis capabilities. Snyk integrates with various security tools and platforms to gather comprehensive information about loaded packages from different environments. These integrations allow for cross-referencing loaded packages against extensive vulnerability databases, resulting in a more robust identification and prioritization of risks. Third-party integrations help ensure a comprehensive and up-to-date vulnerability management process by leveraging the strengths and specialized knowledge of various security ecosystems.
