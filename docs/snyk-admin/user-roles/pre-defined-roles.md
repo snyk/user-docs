@@ -8,7 +8,7 @@ The pre-defined roles Snyk provides are as follows:
 * **Organization Collaborator:** the standard role equivalent for Developers. This role is ideal for small teams or a developer-first organizational approach.
 * **Group Admin:** the standard role equivalent for the person in your company who oversees Snyk use at a high level, providing a full set of permissions at the Group and Organization level. This also means that a Group Admin is automatically an Organization Admin to all Organizations that sit under the Group, although they will not be visible in an Organization level list.
 * **Group Viewer:** a user who can access the Group level but requires Organization-level permissions to take actions in Snyk. This is normally used as a starting point during onboarding with Snyk to understand functions tied to Group permissions and design a custom Group role for post-deployment use.
-* **Group Member:** a non-functional user role added to your environment as a transition from Group Viewer if you do not yet wish to create a custom role after onboarding with Snyk. This means the permissions granted can vary depending on your requirements, as discussed with your Snyk contacts. Select the named role from the list under Manage Members in the Snyk Web UI to check the permissions assigned to your Group Member role.
+* **Group Member:** a non-functional default Group level role. The member has access to the Group but requires Organization-level permissions to use Snyk effectively. This role is ideal for limiting access to the Group, and granting access to specific Organizations by applying Organization specific roles.
 
 {% hint style="info" %}
 **Feature availability**
