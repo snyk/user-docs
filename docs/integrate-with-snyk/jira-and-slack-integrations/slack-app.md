@@ -1,3 +1,7 @@
+---
+description: Get a list of apps installed for an organization
+---
+
 # Slack app
 
 {% hint style="warning" %}
@@ -116,9 +120,9 @@ Before attempting to use these endpoints, ensure that you have retrieved your au
 
 #### Find the Slack App Bot ID
 
-To interact with the Project-level notification customization endpoints, you must have a `bot_id`. You can obtain it with a request to the endpoint [Get a list of apps installed for an organization](../../snyk-api/reference/apps.md#orgs-org\_id-apps-installs-1).
+To interact with the Project-level notification customization endpoints, you must have a `bot_id`. You can obtain it with a request to the endpoint [Get a list of bots authorized to an organization](../../snyk-api/reference/apps.md#orgs-org\_id-app\_bots).
 
-`GET /orgs/{org_id}/apps/installs`
+`GET /orgs/{org_id}/app_bots`
 
 {% hint style="info" %}
 Ensure you apply the `expand=app` query string on your request. This enables you to find the Bot for the related Snyk App named **Slack App**.
