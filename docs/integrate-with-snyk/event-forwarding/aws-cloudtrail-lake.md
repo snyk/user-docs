@@ -61,11 +61,11 @@ During the setup, you must supply an **External ID** for the integration. The va
 
 ### External ID for a Single Snyk Organization
 
-If you are creating this integration for a single Snyk Organization, you will use your Snyk **Organization ID** as the **External ID.** You can find your Organization ID by going to the Snyk Organization [settings page](https://app.snyk.io/manage/settings).
+If you are creating this integration for a single Snyk Organization, you will use your Snyk **Organization ID** as the **External ID.** You can find your Organization ID under Snyk **Organization Settings**.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/aws-ctl-2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Organization ID on Snyk settings page"><figcaption><p>Organization ID on Snyk settings page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/org_settings_org_ID.png" alt="Organization ID on Snyk Organization Settings page"><figcaption><p>Organization ID on Snyk Organization Settings page</p></figcaption></figure>
 
 </div>
 

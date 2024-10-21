@@ -67,7 +67,7 @@ If you already have an integrated SCM, it is marked as **Configured**. If you wa
 
 The **Source control** integrations display only SCMs that are supported by Snyk Code.
 
-<figure><img src="../../.gitbook/assets/org_settings_integrations_source_control.png" alt="Source control options for Snyk Code"><figcaption><p>Source control options for Snyk Code</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk_code_source_control_options.png" alt="Source control options for Snyk Code"><figcaption><p>Source control options for Snyk Code</p></figcaption></figure>
 
 3\. On the integration page, enter your account credentials and save your details.
 
