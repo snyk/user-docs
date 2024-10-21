@@ -111,7 +111,7 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     --set secretName=<<YOUR_SECRET_NAME>> \
     --set clusterName=<<CLUSTER_NAME>> \
     --set snykGroupId=<<YOUR_GROUP_ID>> \
-    --set snykAPIBaseURL=<<YOUR_REGIONS_API_URL>> \ # Optional
+    --set snykAPIBaseURL=api.<<REGION>>.snyk.io:443 \ # Optional
     -n snyk-runtime-sensor \
     runtime-sensor/runtime-sensor
     ```
@@ -206,7 +206,7 @@ Prerequisite: Install AWS Provider and CSI Secrets Store in your cluster, as ins
     --set secretName=snyk-runtime-sensor-secret \
     --set clusterName=<<CLUSTER_NAME>> \
     --set snykGroupId=<<YOUR_GROUP_ID>> \
-    --set snykAPIBaseURL=<<YOUR_REGIONS_API_URL>> \ # Optional
+    --set snykAPIBaseURL=api.<<REGION>>.snyk.io:443 \ # Optional
     -n snyk-runtime-sensor \
     runtime-sensor/runtime-sensor
     ```
