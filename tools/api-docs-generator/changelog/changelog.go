@@ -209,16 +209,19 @@ func writeOperationChangeDetails(markdown *md.Markdown, changeGroup ChangesByEnd
 	}
 }
 
-func groupChanges(changes checker.Changes) []ChangesByEndpoint {
+func groupChanges(changes checker.Changes, gaEndpoints map[Endpoint]bool) []ChangesByEndpoint {
 	apiChanges := map[Endpoint]checker.Changes{}
 
 	for _, change := range changes {
-		if change, ok := change.(checker.ApiChange); ok {
-			ep := Endpoint{Path: change.GetPath(), Operation: change.GetOperation()}
-			if changesForEndpoint, ok := apiChanges[ep]; ok {
-				apiChanges[ep] = append(changesForEndpoint, change)
-			} else {
-				apiChanges[ep] = checker.Changes{change}
+		if apiChange, ok := change.(checker.ApiChange); ok {
+			ep := Endpoint{Path: apiChange.GetPath(), Operation: apiChange.GetOperation()}
+			// Only include changes for GA endpoints
+			if gaEndpoints[ep] {
+				if changesForEndpoint, ok := apiChanges[ep]; ok {
+					apiChanges[ep] = append(changesForEndpoint, apiChange)
+				} else {
+					apiChanges[ep] = checker.Changes{apiChange}
+				}
 			}
 		}
 	}
@@ -229,6 +232,25 @@ func groupChanges(changes checker.Changes) []ChangesByEndpoint {
 	}
 
 	return apiChangesSlice
+}
+
+func getGAEndpoints(spec *openapi3.T) map[Endpoint]bool {
+	gaEndpoints := make(map[Endpoint]bool)
+	for currentPath, pathItem := range spec.Paths.Map() {
+		for operationName, operation := range pathItem.Operations() {
+			if ext, ok := operation.Extensions["x-snyk-api-stability"]; ok {
+				if stabilityStr, ok := ext.(string); ok {
+					if stabilityStr == "ga" {
+						ep := Endpoint{Path: currentPath, Operation: operationName}
+						gaEndpoints[ep] = true
+					}
+				} else {
+					fmt.Printf("Extension 'x-snyk-api-stability' for %s %s is not a string\n", operationName, currentPath)
+				}
+			}
+		}
+	}
+	return gaEndpoints
 }
 
 func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader) ([]ChangesByEndpoint, error) {
@@ -255,13 +277,18 @@ func getChangeLog(nextVersionURI, baseVersionURI string, loader *openapi3.Loader
 		return nil, err
 	}
 
-	diffReport, sourcesMap, err := diff.GetWithOperationsSourcesMap(diff.NewConfig(), s1, s2)
-	changes := checker.CheckBackwardCompatibilityUntilLevel(checker.GetDefaultChecks(), diffReport, sourcesMap, checker.INFO)
+	// Collect GA endpoints from the next version spec
+	gaEndpoints := getGAEndpoints(s2.Spec)
 
-	groupedChanges := groupChanges(changes)
+	diffReport, sourcesMap, err := diff.GetWithOperationsSourcesMap(diff.NewConfig(), s1, s2)
 	if err != nil {
 		return nil, err
 	}
+
+	changes := checker.CheckBackwardCompatibilityUntilLevel(checker.GetDefaultChecks(), diffReport, sourcesMap, checker.INFO)
+
+	// Group and filter changes based on GA endpoints
+	groupedChanges := groupChanges(changes, gaEndpoints)
 
 	return groupedChanges, nil
 }

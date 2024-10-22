@@ -25,6 +25,7 @@ paths:
               properties:
                 prop1:
                   type: string
+      x-snyk-api-stability: ga
       responses:
         "201":
           description: success

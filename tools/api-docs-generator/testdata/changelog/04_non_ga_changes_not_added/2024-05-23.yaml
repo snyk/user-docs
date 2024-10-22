@@ -8,16 +8,16 @@ servers:
   - url: /test
     description: Test
 tags:
-  - name: another
-    description: another
+  - name: Test
+    description: test
 paths:
-  /another_test:
+  /test:
     post:
-      x-snyk-api-stability: ga
+      x-snyk-api-stability: beta
       description: test
       operationId: test
       tags:
-        - another
+        - Test
       requestBody:
         content:
           application/vnd.api+json:
@@ -25,6 +25,8 @@ paths:
               type: object
               properties:
                 prop1:
+                  type: string
+                prop2:
                   type: string
       responses:
         "201":
