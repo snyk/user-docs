@@ -588,7 +588,7 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ## SBOM (GA and beta)
 
-**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md); [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/test-an-sbom-document-for-vulnerabilities.md)
+**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md); [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
 ### [Get a project’s SBOM document](../reference/sbom.md)
 

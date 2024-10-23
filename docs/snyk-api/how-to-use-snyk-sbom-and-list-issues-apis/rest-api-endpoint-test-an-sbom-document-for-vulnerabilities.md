@@ -11,7 +11,7 @@ These endpoints are beta API versions. Some of the functionality may change. For
 Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) to asynchronously test a software bill of materials (SBOM) document. You can use these endpoints to learn more about the vulnerabilities impacting your SBOM and its packages.
 
 {% hint style="info" %}
-Supported SBOM formats are [CycloneDX](https://cyclonedx.org/) 1.4 JSON and [SPDX](https://spdx.dev/) 2.3 JSON.
+Supported SBOM formats are [CycloneDX](https://cyclonedx.org/) 1.4/1.5/1.6 JSON and [SPDX](https://spdx.dev/) 2.3 JSON.
 {% endhint %}
 
 Snyk identifies components within the SBOM by their [package URL](https://github.com/package-url/purl-spec) (purl). If a component does not contain a purl or the purl type is not supported, Snyk skips vulnerability analysis for that component. Supported purl types are: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `golang`, `hex`, `maven`, `npm`, `nuget`, `pypi`, `rpm`, `swift`, and `generic` for unmanaged C/C++ dependencies.
@@ -20,9 +20,9 @@ Snyk identifies components within the SBOM by their [package URL](https://github
 
 Use [the SBOM endpoints](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) to create an SBOM test, check the status, and view the results. Follow these steps:
 
-1. [Create the test by sending an SBOM to Snyk.](test-an-sbom-document-for-vulnerabilities.md#create-a-test-by-sending-an-sbom-to-snyk)
-2. [Check the status of the test](test-an-sbom-document-for-vulnerabilities.md#check-the-status-of-the-test-optional).
-3. [View the test results when the test is complete.](test-an-sbom-document-for-vulnerabilities.md#view-results-of-the-test)
+1. [Create the test by sending an SBOM to Snyk.](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#create-a-test-by-sending-an-sbom-to-snyk)
+2. [Check the status of the test](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#check-the-status-of-the-test-optional).
+3. [View the test results when the test is complete.](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#view-results-of-the-test)
 
 ### Create a test by sending an SBOM to Snyk&#x20;
 
