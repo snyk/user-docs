@@ -27,9 +27,5 @@ To start using the Snyk task as part of your pipeline build, from the [Visual St
 
 
 {% hint style="info" %}
-If you are using the Snyk EU or AU data center, you must add another line above the -task lines as follows.
-
-For EU: `- script: snyk config set endpoint=https://api.eu.snyk.io`
-
-For AU: `- script: snyk config set endpoint=https://api.au.snyk.io`
+If you are using ta data center other than the system default, see the section [Custom API endpoints](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/azure-pipelines-integration/custom-api-endpoints)
 {% endhint %}
