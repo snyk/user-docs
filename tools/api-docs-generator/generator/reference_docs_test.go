@@ -295,7 +295,7 @@ func Test_aggregateSpecs(t *testing.T) {
 			wantErr: assert.NoError,
 		},
 		{
-			name: "filters out non-stable paths",
+			name: "filters out beta paths",
 			args: args{
 				cfg: &config.Config{
 					Specs: []config.Spec{
@@ -314,6 +314,13 @@ func Test_aggregateSpecs(t *testing.T) {
 						pathURL:  "/stable-path",
 					},
 				},
+				"no-stability": {
+					{
+						method:   "GET",
+						specPath: "spec_with_stability.yaml",
+						pathURL:  "/no-stability-path",
+					},
+				},
 			},
 			wantErr: assert.NoError,
 		},
@@ -328,7 +335,6 @@ func Test_aggregateSpecs(t *testing.T) {
 			for tag := range got {
 				for _, op := range got[tag] {
 					assert.NotEqual(t, "/unstable-path", op.pathURL)
-					assert.NotEqual(t, "/no-stability-path", op.pathURL)
 				}
 			}
 		})

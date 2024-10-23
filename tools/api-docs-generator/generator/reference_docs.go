@@ -152,7 +152,7 @@ func processOperation(pathURL string,
 			}
 		}
 
-		if !isGAOperation(operation) {
+		if isBeta(operation) {
 			continue
 		}
 
@@ -169,7 +169,7 @@ func processOperation(pathURL string,
 	return nil
 }
 
-func isGAOperation(operation *openapi3.Operation) bool {
+func isBeta(operation *openapi3.Operation) bool {
 	apiStabilityExtension, ok := operation.Extensions["x-snyk-api-stability"]
 	if !ok || apiStabilityExtension == nil {
 		return false
@@ -178,7 +178,7 @@ func isGAOperation(operation *openapi3.Operation) bool {
 	if !ok {
 		return false
 	}
-	return stabilityStr == "ga"
+	return stabilityStr == "beta"
 }
 
 func extractCategoryNameFromExtension(extension interface{}) (string, error) {
