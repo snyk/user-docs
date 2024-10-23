@@ -1,3 +1,10 @@
+## 2024-10-15
+
+### Simplified API Versioning
+
+Going forward, Snyk will expose one API specification per version-date, rather than one for each stability. New versions of the Snyk API will only be published when necessitated by breaking changes. For newer versions, you should only specify the date for beta versions, i.e `2024-10-15` rather than `2024-10-15~beta`. It's important to note that existing versions won't be affected by these changes; this new approach only applies to upcoming new versions.
+
+
 ## 2024-08-25 - Updated 2024-10-10
 
 ### GET - `/self` - Updated
