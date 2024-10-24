@@ -6,7 +6,7 @@ The scenarios listed on this page are provided in a [repository](https://github.
 
 If you have issues when using these procedures, contact your Technical Success Manager or Solutions Engineer, or [submit a ticket](https://support.snyk.io/hc/en-us/requests/new) to Snyk support.
 
-## Retrieve a Project snapshot for every Project in a given Group
+### Retrieve a Project snapshot for every Project in a given Group
 
 Scenario: [Retrieve-project-snapshots](https://github.com/snyk-playground/cx-tools/blob/main/scripts/retrieve-projects-snapshots.md) (complete procedure)
 
@@ -14,7 +14,7 @@ Scenario: [Retrieve-project-snapshots](https://github.com/snyk-playground/cx-too
 [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)\
 [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues)
 
-## Identify and import new repositories only
+### Identify and import new repositories only
 
 Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-tools/blob/main/scripts/Identify-and-import-new-repos.md) (complete procedure)
 
@@ -31,7 +31,7 @@ Scenario: [Broker-token-rotation](https://github.com/snyk-playground/cx-tools/bl
 [Add new integration](../reference/integrations-v1.md#org-orgid-integrations)\
 [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-type) (to enable Broker)
 
-## For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management repository)
+### For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management repository)
 
 Scenario: [disable-all-interaction-from-snyk](https://github.com/snyk-playground/cx-tools/blob/main/scripts/disable-all-interaction-from-snyk.md) (complete procedure)
 
@@ -45,7 +45,7 @@ Scenario: [disable-all-interaction-from-snyk](https://github.com/snyk-playground
 [Delete a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-1)\
 [Create a webhook](../reference/webhooks-v1.md#org-orgid-webhooks)
 
-## Find all Projects affected by a vulnerability
+### Find all Projects affected by a vulnerability
 
 Scenario: [find-all-projects-affected-by-a-vuln.md](https://github.com/snyk-playground/cx-tools/blob/main/scripts/find-all-projects-affected-by-a-vuln.md) (complete procedure)
 
@@ -54,7 +54,7 @@ Scenario: [find-all-projects-affected-by-a-vuln.md](https://github.com/snyk-play
 [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)\
 [List all projects](../reference/projects.md#orgs-org\_id-projects)
 
-## Bulk ignore issues
+### Bulk ignore issues
 
 Scenario: [bulk-ignore-issues](https://github.com/snyk-playground/cx-tools/blob/main/scripts/bulk-ignore-issues.md) (complete procedure)
 
@@ -63,7 +63,7 @@ Scenario: [bulk-ignore-issues](https://github.com/snyk-playground/cx-tools/blob/
 [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest) (To get all issues but Code)\
 [Get issues  by org ID](../reference/issues.md#orgs-org\_id-issues) (To get all Code issues)
 
-## Create multiple new Organizations that all have the same settings in a given Group
+### Create multiple new Organizations that all have the same settings in a given Group
 
 Scenario: [create-multiple-orgs-and-copy-settings](https://github.com/snyk-playground/cx-tools/blob/main/scripts/create-multiple-orgs-and-copy-settings.md) (complete procedure)
 
@@ -73,7 +73,7 @@ Scenario: [create-multiple-orgs-and-copy-settings](https://github.com/snyk-playg
 [Update organization settings](../reference/organizations-v1.md#org-orgid-settings)\
 [Clone an integration with settings and credentials](../reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)
 
-## Assign all users in a given list to all the Organizations a company has (all Organizations in a Group)
+### Assign all users in a given list to all the Organizations a company has (all Organizations in a Group)
 
 Scenario: [assign-users-to-all-orgs](https://github.com/snyk-playground/cx-tools/blob/main/scripts/assign-users-to-all-orgs.md) (complete procedure)
 
@@ -81,14 +81,14 @@ Scenario: [assign-users-to-all-orgs](https://github.com/snyk-playground/cx-tools
 [List all members in a group](../reference/groups-v1.md#group-groupid-members)\
 [Invite users](../reference/organizations-v1.md#org-orgid-invite)
 
-## Add users to organizations at scale ahead of the first login
+### Add users to organizations at scale ahead of the first login
 
 Scenario: [Provision users to Orgs via API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md)
 
 **Endpoint used:**\
 [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
 
-## List all issues including Snyk Code issues in all the Projects in an Organization
+### List all issues including Snyk Code issues in all the Projects in an Organization
 
 Scenario: [list-all-issues-for-a-snyk-org](https://github.com/snyk-playground/cx-tools/blob/main/scripts/list-all-issues-for-a-snyk-org.md) (complete procedure)
 
@@ -99,14 +99,14 @@ Scenario: [list-all-issues-for-a-snyk-org](https://github.com/snyk-playground/cx
 REST experimental [Get a Snyk Code issue by its ID](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org\_id-/issues/detail/code/-issue\_id-)\
 [Retrieve ignore](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-1)
 
-## Tag all Projects in Snyk
+### Tag all Projects in Snyk
 
 Scenario: [Tag projects in Snyk](https://github.com/snyk-playground/cx-tools/blob/main/scripts/tag-snyk-projects.md) (complete procedure)
 
 **Endpoints used:**\
 [List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)
 
-## Import fresh container images
+### Import fresh container images
 
 Scenario: [import-new-container-images](https://github.com/snyk-playground/cx-tools/blob/main/scripts/import-new-container-images.md) (complete procedure)
 
@@ -116,7 +116,7 @@ Scenario: [import-new-container-images](https://github.com/snyk-playground/cx-to
 [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)\
 [Delete a project](../reference/projects-v1.md#org-orgid-project-projectid-2)
 
-## Detect and import new Projects in a repository into a target
+### Detect and import new Projects in a repository into a target
 
 Scenario: [detect-and-import-new-projects](https://github.com/snyk-playground/cx-tools/blob/main/scripts/detect-and-import-new-projects.md) (complete procedure)
 
@@ -124,7 +124,7 @@ Scenario: [detect-and-import-new-projects](https://github.com/snyk-playground/cx
 [List all projects](../reference/projects.md#orgs-org\_id-projects)\
 [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)
 
-## Move Projects from one Organization to another
+### Move Projects from one Organization to another
 
 Scenario: [Move projects between organisations](https://github.com/snyk-playground/cx-tools/blob/main/scripts/move-projects.md) (complete procedure)
 
@@ -138,7 +138,7 @@ Historical data for reporting will be lost.
 **Endpoints used:**\
 [Move project to a different organization](../reference/projects-v1.md#org-orgid-project-projectid-move)
 
-## Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis
+### Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis
 
 Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-tools/blob/main/scripts/Identify-and-import-new-repos.md) (complete procedure)
 
