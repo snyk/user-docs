@@ -18,7 +18,7 @@ When you use this method, you must keep the Snyk CLI up to date manually.
 
 Use [GitHub Releases](https://github.com/snyk/snyk/releases) to download a standalone executable (macOS, Linux, Windows) of Snyk CLI for your platform.
 
-Snyk also provides these standalone executables on the Snyk Content Delivery Network (CDN). See the latest `release.json` [file](https://static.snyk.io/cli/latest/release.json) for the download links. Examples for a specific version or platform follow:
+Snyk also provides these standalone executables on the Snyk Content Delivery Network (CDN). See the latest `release.json` [file](https://downloads.snyk.io/cli/stable/release.json) for the download links. Examples for a specific version or platform follow:
 
 * [https://downloads.snyk.io/cli/v1.666.0/release.json](https://downloads.snyk.io/cli/v1.666.0/release.json)
 * [https://downloads.snyk.io/cli/stable/snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)
@@ -33,19 +33,19 @@ mv ./snyk /usr/local/bin/
 
 You can also use these direct links to download the executables:
 
-* **macOS**: [https://downloads.snyk.io/cli/stable/snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)
-* **Windows**: [https://downloads.snyk.io/cli/stable/snyk-win.exe](https://downloads.snyk.io/cli/stable/snyk-win.exe)\
-  You can rename the file to snyk.exe so you can run snyk commands as documented, for example, `snyk test`.
-* **Linux**: [https://downloads.snyk.io/cli/stable/snyk-linux](https://downloads.snyk.io/cli/stable/snyk-linux)
-* **Linux/arm64**: [https://downloads.snyk.io/cli/stable/snyk-linux-arm64](https://downloads.snyk.io/cli/stable/snyk-linux-arm64)
-* **Alpine**: [https://downloads.snyk.io/cli/stable/snyk-alpine](https://downloads.snyk.io/cli/stable/snyk-alpine)
+| OS\Architecture | amd64                                                                | arm64                                                                       |
+| --------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| macOS           | [snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)        | [snyk-macos-arm64](https://downloads.snyk.io/cli/stable/snyk-macos-arm64)   |
+| Linux           | [snyk-linux](https://downloads.snyk.io/cli/stable/snyk-linux)        | [snyk-linux-arm64](https://downloads.snyk.io/cli/stable/snyk-linux-arm64)   |
+| Alpine          | [snyk-alpine](https://downloads.snyk.io/cli/stable/snyk-alpine)      | [snyk-alpine-arm64](https://downloads.snyk.io/cli/stable/snyk-alpine-arm64) |
+| Windows         | [snyk-win.exe](https://downloads.snyk.io/cli/v1.1294.0/snyk-win.exe) | -                                                                           |
+
+You can rename the files for example snyk-win.exe to snyk.exe so you can run snyk commands as documented, for example, `snyk test`.
 
 {% hint style="info" %}
 To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine, (darwin/arm64), see [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md).
 
 To use the CLI with Alpine Linux, see [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md).
-
-Note that the CLI does not have an Alpine/ARM64 binary.
 
 For more information see [verify CLI standalone binaries](verifying-cli-standalone-binaries.md).
 {% endhint %}
