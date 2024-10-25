@@ -1,6 +1,6 @@
-# Folder trust
+# Folder trust for the JetBrains plugins
 
-As part of examining the codebase for vulnerabilities, Snyk may automatically execute code on your computer to obtain additional data for analysis. This includes invoking the package manager (for example, pip, Gradle, Maven, Yarn, npm, and so on) to get dependency information for Snyk Open Source. Invoking these programs on untrusted code that has malicious configurations may expose your system to malicious code execution and exploits.
+Snyk Open Source may automatically execute code on your computer to obtain additional data for analysis. This includes invoking the package manager (for example, pip, Gradle, Maven, Yarn, npm, and so on) to get dependency information. Invoking these programs on untrusted code that has malicious configurations may expose your system to malicious code execution and exploits.
 
 To safeguard against using the extension on untrusted projects, the Snyk extension asks for project trust before allowing you to run any scans against your code. When in doubt, do not proceed with a scan.
 

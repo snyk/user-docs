@@ -5,7 +5,7 @@ Follow these steps to force the use of the latest Snyk Language Server:
 * Update the Snyk plugin or extension to the latest version. Using the latest version of the plugin ensures that you can update to the most recent version of the language server. The plugin update alone does NOT update the language server.
 * Look up the Snyk Language Server binary path (`snyk-ls*`) or the Snyk CLI binary path in the Snyk Settings of the plugin. You must know the path of the binary file in order to delete it. Follow these instructions depending on IDE:
   * [VS Code](../visual-studio-code-extension/visual-studio-code-extension-configuration.md)
-  * [JetBrains](../jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins.md)
+  * [JetBrains](../jetbrains-plugins/configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md)
   * [Visual Studio](../visual-studio-extension/visual-studio-extension-configuration.md)
   * [Eclipse](../eclipse-plugin/configuration-of-the-eclipse-plugin.md)
 * Delete the binary from that path.
