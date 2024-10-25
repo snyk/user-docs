@@ -1,27 +1,9 @@
-# Snyk Learn Reports and Assignments
-
-## Reports
-
-Snyk Learn Reports allow you to gain insights into which lessons and lesson categories users view for each Organization.
-
-Snyk Learn also provides reports for learning path completion where you can see the users current progress for each available learning path and when they last completed it.
-
-Reporting is available on a per-org basis, showing the Learning Path and Lesson progress for users within that Organization.&#x20;
-
-Lesson progress is associated with the individual user, meaning that if they are members of multiple Organizations, their lesson progress will be the same across all Organizations.
-
-All reports can be downloaded to a CSV file. The Lesson Overview report CSV contains the historical completions and current progress. The Learning Path overview report CSV contains the current learning path progress and the last completion date.
+# Snyk Learn Assignments
 
 {% hint style="info" %}
-Snyk Learn Reports support Organizations with up to 5000 members.
-{% endhint %}
-
-## Assignments
-
-{% hint style="warning" %}
 **Release status**
 
-The Assignments feature is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) as part of the Snyk Learning Management Add-On offering. For more information, contact your Snyk Account Executive.
+The Snyk Leanr Assignments feature is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access), as part of the Snyk Learning Management add-on offering. For more information, contact your Snyk account representative.
 {% endhint %}
 
 Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by allowing customers to set due dates for completion and seamlessly integrate with organizational goals, for example, compliance timelines, ensuring alignment across training initiatives.
@@ -38,35 +20,35 @@ Using Assignments, your company can gain:&#x20;
 Snyk Learn Assignments support Organizations with up to 5000 members.
 {% endhint %}
 
-### Use cases for assignments
+## Use cases for assignments
 
-#### Onboarding new employees
+### Onboarding new employees
 
 Ensure new employees complete their onboarding training within a designated timeframe. Assignments can include mandatory onboarding training content. The progress reset feature allows re-onboarding by clearing previous progress.
 
-#### Annual security awareness training
+### Annual security awareness training
 
 Mandate annual security awareness training for all employees. Assignments can span a specific year period and include relevant security education content. The admin can use the progress reset feature to reset last year’s progress for the new cycle.
 
-#### Product update training for the development team
+### Product update training for the development team
 
 Ensure developers are trained on new product features. Admins can create assignments that include product training content on new features. If significant updates require retraining, the admin can use the progress reset feature.
 
-#### Compliance training for new regulations
+### Compliance training for new regulations
 
 Ensure employees complete training on new regulatory requirements. Admins can create assignments that cover the effective period of new regulations, including content required by compliance. The admin can use the progress reset feature to reset previous progress and mandate updated training.
 
-### Who can be assigned Snyk Learn lessons?
+## Who can be assigned Snyk Learn lessons?
 
 Snyk Learn requires users to have a Snyk Account. After a user has joined Snyk, they are available in the Snyk Learn UI for assignments.
 
 Assignments are linked to the individual user.
 
-### Who can create assignments?&#x20;
+## Who can create assignments?&#x20;
 
 By default, only Snyk Org or Group admins can create assignments. Group admins can create custom roles by using the standard Snyk workflow. Learn more about the access controls for assignments at [Snyk Learn Access Controls](snyk-learn-access-controls.md).&#x20;
 
-### Creating new assignments
+## Creating new assignments
 
 1. Log in to Snyk Learn and click **Assignments** in the account panel dropdown.
 

@@ -16,7 +16,3 @@ There are many lessons covering many languages: JavaScript, Java, C#, Python, PH
 
 Snyk Learn offers [learning paths](https://learn.snyk.io/catalog/?format=learning\_path\&type=security-education) as a way for learners to take a predefined set of lessons. Snyk offers multiple learning paths, including OWASP Top 10, Snyk Top 10, and Security for Developers, built in partnership with [NYU](https://engineering.nyu.edu/academics/programs/cybersecurity-ms-online/nyu-cyber-fellows/badges/snyk).
 
-## Admin features
-
-Snyk Learn offers various [admin features](snyk-learn-reports-and-assignments.md). These features allow an Organization to stay in compliance with developer training.&#x20;
-
