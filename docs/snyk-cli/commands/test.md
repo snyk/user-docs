@@ -57,7 +57,7 @@ To perform the scan, resolve the error and scan again.
 
 Use with `--all-projects` or `--yarn-workspaces` to indicate how many subdirectories to search. `DEPTH` must be a number, 1 or greater; zero (0) is the current directory.
 
-Default: 4 , the current working directory (0) and 4 subdirectories.
+Default: no limit.
 
 Example: `--detection-depth=3` limits search to the specified directory (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories; zero (0) is the current directory.
 
