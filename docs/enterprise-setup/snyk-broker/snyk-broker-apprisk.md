@@ -32,12 +32,12 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 ## Third-party integrations
 
 {% hint style="warning" %}
-The third-party integrations are available in a Closed Beta state and are applicable only to the Snyk AppRisk Pro version. Contact your salesperson if you are interested in Snyk AppRisk Pro.
+The third-party integrations are available only to the Snyk AppRisk Pro version. Contact your salesperson if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
-## Checkmarx SAST integration
+### Prerequisites
 
-Use the following steps to install and run Snyk Broker for the Snyk AppRisk and Checkmarx SAST integration.
+Use the following steps to install and run Snyk Broker for the Snyk AppRisk third-party integrations.
 
 1. Ensure you have the Snyk Broker token for the Snyk AppRisk integration. The Snyk support team can provide the needed token.&#x20;
 2. Pull the latest Broker image by running this command:
@@ -46,9 +46,13 @@ Use the following steps to install and run Snyk Broker for the Snyk AppRisk and 
 docker pull snyk/broker:universal
 ```
 
-3. Configure your Snyk AppRisk connection type using the `snyk-broker-config` command, as explained on the page [Initial configuration of the Universal Broker](universal-broker/initial-configuration-of-the-universal-broker.md).\
-   The example that follows uses `CHECKMARX_PASSWORD` as the value for the credentials reference.
-4. Run the following commands with your password.&#x20;
+3. Configure your Snyk AppRisk connection type using the `snyk-broker-config` command, as explained on the page [Initial configuration of the Universal Broker](universal-broker/initial-configuration-of-the-universal-broker.md).
+
+### Checkmarx SAST integration
+
+After you implement all the general steps applicable to third-party integrations, you can configure the integration with unique credentials.&#x20;
+
+The following example uses `CHECKMARX_PASSWORD` as the value for the credentials reference. Run the following commands with your password:
 
 ```docker
 docker run --restart=always \
@@ -62,11 +66,32 @@ docker run --restart=always \
     snyk/broker:universal
 ```
 
-5. After the connection is established, the following message is displayed in the logs: `successfully established a websocket connection to the broker server`
+### SonarQube SAST integration
+
+After you implement all the general steps applicable to third-party integrations, you can configure the integration with unique credentials.&#x20;
+
+The following example uses `SONARQUBE_HOST_URL` and `SONARQUBE API_TOKEN` as the values for the credentials reference. Run the following commands:
+
+```docker
+docker run --restart=always \
+-p 8001:8001 -e PORT=8001 \
+-e BROKER_CLIENT_URL=http://broker.url.example:8000 \
+-e BROKER_TOKEN=<YOUR BROKER TOKEN> \
+-e UNIVERSAL_BROKER_ENABLED=true \
+-e SONARQUBE_HOST_URL=<YOUR HOST URL> \
+-e SONARQUBE_API_TOKEN=<YOUR API TOKEN> \
+-e BROKER_SERVER_URL=https://broker.snyk.io \
+-v $(pwd)/config.universal.json:/home/node/config.universal.json \
+snyk/broker:universal
+```
+
+### Configuration complete
+
+After the Universal Broker connection with a third-party integration is established, the following message is displayed in the logs: `successfully established a websocket connection to the broker server`.
 
 {% code overflow="wrap" %}
 ```docker
 {"id":"broker-client-url-validation","name":"Broker Client URL Validation Check","status":"passing","output":"config check: ok"},{"id":"universal-broker-connections-config-validation","name":"Universal Broker Client Connections Configuration Check","status":"passing","output":"connections config check: ok"}],"version":"4.179.5","supportedIntegrationType":"apprisk"},"msg":"successfully established a websocket connection to the broker server","time":"2024-03-11T11:43:26.014Z","v":0}
-
 ```
 {% endcode %}
+
