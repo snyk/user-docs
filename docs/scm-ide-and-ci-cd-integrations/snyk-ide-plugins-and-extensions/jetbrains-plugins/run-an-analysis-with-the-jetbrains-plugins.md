@@ -83,7 +83,7 @@ For newly created feature branches, there will be no reported issues. That is an
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-ngbm.png" alt="Successful state. No Net New issues found"><figcaption><p>Successful state. No Net New issues found</p></figcaption></figure>
 
-The base branch is usually automatically determined for each Git repository. In advanced cases, developers may change their base branch by clicking on the top level; see the screen image that follows).
+The base branch is usually automatically determined for each Git repository. In advanced cases, developers may change their base branch by clicking on the top level; see the screen image that follows.
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-nfhj.png" alt="Change base branch for calculation Net New issues"><figcaption><p>Change base branch for calculation Net New issues</p></figcaption></figure>
 
