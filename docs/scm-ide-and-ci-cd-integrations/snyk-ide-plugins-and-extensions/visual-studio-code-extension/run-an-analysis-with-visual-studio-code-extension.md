@@ -13,11 +13,14 @@ Snyk Code and Iac (configuration) scans are triggered automatically when your Pr
 
 Snyk Open Source does not automatically run on save by default, but you can enable auto-scan in settings.
 
-To manually trigger `snyk test`, click  the **Rescan** (play) button at the top of the plugin's panels.
-
 {% hint style="info" %}
 Ensure your files are saved before manually running an analysis.
 {% endhint %}
+
+To manually trigger snyk test (see the screen image that follows):
+
+1. Click the Snyk icon in the sidebar to open the Snyk panel.
+2. Click the **Rescan** (play) button at the top of the plugin panel.
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-qqsi.png" alt="How to manually trigger a Snyk analysis" width="355"><figcaption><p>How to manually trigger a Snyk analysis</p></figcaption></figure>
 

@@ -15,7 +15,10 @@ A Snyk scan is triggered automatically when your Project is opened and when any 
 Ensure your files are saved before manually running an analysis.
 {% endhint %}
 
-To manually trigger `snyk test`, click the run (play) button at the top of the plugin's sidebar.
+To manually trigger `snyk test` (see the screen image that follows):
+
+1. Click the Snyk icon in the sidebar to open the Snyk panel.
+2. Click the Run (play) button at the top of the plugin sidebar.
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-lqcw.png" alt="How to manually trigger a Snyk analysis"><figcaption><p>How to manually trigger a Snyk analysis</p></figcaption></figure>
 
@@ -83,7 +86,13 @@ For newly created feature branches, there will be no reported issues. That is an
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-ngbm.png" alt="Successful state. No Net New issues found"><figcaption><p>Successful state. No Net New issues found</p></figcaption></figure>
 
-The base branch is usually automatically determined for each Git repository. In advanced cases, developers may change their base branch by clicking on the top level; see the screen image that follows.
+The base branch is usually automatically determined for each Git repository.&#x20;
+
+In advanced cases, developers may change their base branch by following these steps (see the screen image that follows):&#x20;
+
+1. Click on the top-level node in the Issues tree
+2. Use dropdown selection to choose any branch&#x20;
+3. Click OK to save the selection
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-nfhj.png" alt="Change base branch for calculation Net New issues"><figcaption><p>Change base branch for calculation Net New issues</p></figcaption></figure>
 
