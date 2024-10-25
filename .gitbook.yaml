@@ -117,3 +117,4 @@ redirects:
   getting-started/quickstart/set-up-an-integration: getting-started/README.md
   getting-started/quickstart/import-a-project: getting-started/README.md
   getting-started/quickstart/view-snyk-scan-results: getting-started/README.md
+  getting-started/quickstart: getting-started/README.md
