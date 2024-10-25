@@ -18,18 +18,18 @@ When you want to add new integrations to your Snyk account you must first decide
 * [Group level ](./#group-level-snyk-apprisk-integrations)- Group level integrations only support Snyk AppRisk Essentials or Snyk AppRisk Pro.
 * [Organization level](./#organization-level-snyk-integrations) - Organization level integrations support all other Snyk products. Snyk does not support Snyk AppRisk Essentials or Snyk AppRisk Pro integrations at the Organization level.
 
+{% hint style="warning" %}
+If you added the GitHub integration at Organizational and/or Group levels and you have configured SAML SSO for it, then you must authorize your GitHub PAT. Navigate to the [How to authorize your Personal Access Token and enable SSO](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
+{% endhint %}
+
 ## Group level - Snyk AppRisk SCM integrations
 
-You can customize your Snyk AppRisk integrations from the **Integrations Hub** where the following SCMs are available:
+At the Group level, you can set up and customize your Snyk AppRisk integrations from the **Integrations Hub** where the following SCMs are available:
 
 * [GitHub](github-enterprise.md#github-setup-guide-for-snyk-apprisk)
 * [GitLab](gitlab.md#gitlab-setup-guide)
 * [Azure DevOps](azure-repositories-tfs.md#azure-devops-setup-guide)
 * [BitBucket](bitbucket-cloud.md#bitbucket-setup-guide)
-
-{% hint style="info" %}
-To set up integrations for Snyk AppRisk, use the **Integrations** menu at the Group level.
-{% endhint %}
 
 Snyk AppRisk Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
 
@@ -38,6 +38,10 @@ If your SCM instance is not publicly accessible, you must connect using Snyk Bro
 {% endhint %}
 
 The Integrations page at the Group level shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
+
+{% hint style="warning" %}
+The SCM integrations use an incremental approach to retrieve repositories. This means that when a sync is initiated, it checks the last update time of the repository and only transfers the repositories that have been modified since then.
+{% endhint %}
 
 The following supported Snyk data are automatically synced:
 
@@ -86,6 +90,10 @@ Use the Integration Hub page to onboard integrations and populate Snyk AppRisk w
 See the [Snyk Web UI](../../getting-started/snyk-web-ui.md#manage-your-integrations) page for step-by-step instructions on how to set up an integration.
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
+
+{% hint style="info" %}
+If you modify the permissions and scopes after the initial configuration, it is essential to either initiate an import or implement a change within the repository. This action allows Snyk to acknowledge and incorporate the updates effectively.
+{% endhint %}
 
 ### Using Snyk Broker
 
