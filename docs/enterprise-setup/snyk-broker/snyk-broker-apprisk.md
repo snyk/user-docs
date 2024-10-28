@@ -32,7 +32,7 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 ## Third-party integrations
 
 {% hint style="warning" %}
-The third-party integrations are available only to the Snyk AppRisk Pro version. Contact your salesperson if you are interested in Snyk AppRisk Pro.
+The third-party integrations are available only for the Snyk AppRisk Pro version. Contact your salesperson if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
 ### Prerequisites
