@@ -3,8 +3,6 @@
 {% hint style="warning" %}
 **Release status**
 
-
-
 The GitHub Cloud App is in [Early Access](../../getting-started/snyk-release-process.md). \
 This feature is not supported for Snyk Broker.
 
@@ -29,6 +27,7 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 * Snyk Organization Admin user role.
 * GitHub Organization Admin user role.
 * A public or private GitHub repository.
+* The required app permissions. For more information, see [GitHub Cloud App permission requirements](./#github-cloud-app-permission-requirements).
 
 {% hint style="info" %}
 Users can install the app on GitHub Organizations they are Repository Admins on through the GitHub UI.
