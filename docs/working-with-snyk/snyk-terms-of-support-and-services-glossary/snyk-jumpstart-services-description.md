@@ -2,7 +2,7 @@
 
 ## Overview of Snyk Jumpstart
 
-A Snyk Consultant will provide services to help the Customer accelerate the setup of Snyk products through assisted account configuration (the “Jumpstart Services”). The engagement will consist of knowledge transfer, paired with configuration guidance for your team.
+A Snyk Consultant will provide services to help the  Customer accelerate its setup of Snyk products through assisted account configuration (the “Jumpstart Services”). The engagement will consist of knowledge transfer, paired with configuration guidance for your team.&#x20;
 
 The objective is a working setup of Snyk and a Customer team that is well-prepared to continue its application security efforts.
 
@@ -26,6 +26,7 @@ The Snyk Consultant will deliver the following services related to the setup of 
 5. [Snyk Container configuration](snyk-jumpstart-services-description.md#snyk-container-configuration)
 6. [Snyk IaC configuration](snyk-jumpstart-services-description.md#snyk-iac-configuration)
 7. [Snyk AppRisk Essentials configuration](snyk-jumpstart-services-description.md#snyk-apprisk-essentials-prioritization-configuration)
+8. [Snyk AppRisk Pro configuration](snyk-jumpstart-services-description.md#snyk-apprisk-pro-configuration)
 
 ## Pre-engagement planning and preparation
 
@@ -95,7 +96,7 @@ The Snyk Consultant will work with the Customer to install the Snyk Broker in a 
 
 The Consultant will review the Snyk API Import script to ensure the Customer understands how to import additional Projects into Snyk and keep their SCM integration in sync with incoming changes to manifests.
 
-#### Single pipeline configuration (dIrect Integration or CLI)
+#### Single pipeline configuration (direct Integration or CLI)
 
 The Snyk Consultant will work with the Customer to configure a single pipeline to run the `snyk test` and `snyk monitor` commands to provide the Customer with an understanding of how to configure additional pipeline scans.
 
@@ -185,7 +186,7 @@ The Customer will be provided with a document that provides a comprehensive over
 
 ## Snyk IaC Configuration
 
-### Delivery approach - Snyk IAC configuration
+### Delivery approach - Snyk IaC configuration
 
 #### Repository import
 
@@ -243,47 +244,84 @@ The Snyk Consultant will work with Customer to configure Snyk AppRisk as follows
 
 The Snyk Consultant will educate the Customer on how to identify assets not currently being scanned by Snyk and how to group assets and issues based on asset classification.
 
-#### **Walkthrough of Prioritized Issues in AppRisk Dashboard**
+#### **Walkthrough of prioritized issues in AppRisk dashboard**
 
-The Snyk Consultant will educate Customer on how to filter and prioritize issues in the AppRisk Dashboard.
+The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the AppRisk Dashboard.
 
 #### Documentation close-out
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, it offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document is an essential guide for customers to realize the full potential of their investment in Snyk.
 
-### Target initiatives - Snyk AppRisk prioritization
+### Target initiatives - Snyk AppRisk Essentials configuration
 
-<table><thead><tr><th width="382">Snyk AppRisk Prioritization Configuration</th><th width="299">Outcome</th></tr></thead><tbody><tr><td>Coverage and visibility configuration</td><td>SCM integration is configured in AppRisk and two starter policies are created to show coverage gaps and asset classifications respectively.</td></tr><tr><td>Walk-through of coverage and visibility use cases in AppRisk</td><td>Gain an understanding of how to identify assets that are not currently being scanned by one more Snyk controls, as well as how to group assets and issues based on asset classification.</td></tr><tr><td>Walk-through of prioritized issues in AppRisk</td><td>Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard using deployed and public-facing risk factors.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed.</td></tr></tbody></table>
+<table><thead><tr><th width="382">Snyk AppRisk Prioritization Configuration</th><th width="299">Outcome</th></tr></thead><tbody><tr><td>Coverage and visibility configuration</td><td>SCM integration is configured in AppRisk and two starter policies are created to show coverage gaps and asset classifications respectively.</td></tr><tr><td>Walkthrough of coverage and visibility use cases in AppRisk</td><td>Gain an understanding of how to identify assets that are not currently being scanned by one more Snyk controls, as well as how to group assets and issues based on asset classification.</td></tr><tr><td>Walkthrough of prioritized issues in AppRisk</td><td>Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed.</td></tr></tbody></table>
+
+## Snyk AppRisk Pro configuration
+
+### Delivery approach - Snyk AppRisk Pro configuration
+
+**Third-party coverage and visibility configuration**
+
+The Snyk Consultant will work with the Customer to configure Snyk AppRisk Pro as follows:
+
+* Configure one third-party integration (for example, Secrets)
+* Configure an asset policy leveraging newly configured integration
+
+**Snyk Runtime Sensor installation**&#x20;
+
+The Snyk Consultant will work with the Customer to install the Snyk Runtime Sensor in a predetermined environment that follows the [Snyk Runtime Sensor system requirements](../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md). The Snyk Runtime Sensor allows the Customer to prioritize issues based on risk factors of **Deployed** and **Loaded** **Package**.
+
+#### Tagging of Projects for the issues prioritization feature (up to 50 Targets)
+
+The Snyk consultant will provide guidance on how the Customer can add Project tags to Targets so Open Source, Code, and Container Projects are linked for the AppRisk Issues prioritization feature. This will include using a script for tagging SCM-monitored Projects (Open Source and Code) and the CLI for tagging Container Projects.
+
+**Walkthrough of prioritized issues in AppRisk Pro**
+
+The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the AppRisk Pro dashboard, using the new risk factors detected by the Snyk Runtime Sensor.
+
+**Documentation close-out**&#x20;
+
+The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document sets out practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document is an essential guide for the Customer to realize the full potential of their investment in Snyk.
+
+### Target Initiatives - Snyk AppRisk Pro configuration
+
+| Snyk AppRisk Pro Configuration                                               | Outcome                                                                                                                              |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Third-party coverage and visibility configuration                            | Third-Party integration is configured in AppRisk and a policy is created to show how the new data can be processed by AppRisk Pro.   |
+| <p>Snyk Runtime Sensor installation</p><p><br></p>                           | Install Snyk Runtime Sensor on a predetermined customer environment based on Snyk System Requirements.                               |
+| Tagging of Projects for the issues prioritization feature (up to 50 targets) | Targets imported through an SCM integration must be tagged with tags that match the CLI-imported Container Projects.                 |
+| Walkthrough of prioritized issues in AppRisk Pro                             | Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard using deployed and loaded package risk factors |
+| Documentation close-out                                                      | Gain an understanding of work completed                                                                                              |
 
 ## Timeline for Snyk Jumpstart delivery
 
-Snyk Jumpstart delivery is an approximately 60-day engagement that begins with the first platform configuration session, in week one in the example timeline that follows.&#x20;
+Snyk Jumpstart delivery is an eight-week engagement that begins with the Pre-engagement call.&#x20;
 
-The engagement will include initial platform configuration and deployment of each product module that has been purchased. Modules have been designed to be delivered consecutively during the implementation stage, as shown in the example timeline. Progress check-ins are included and the engagement ends with the closeout.
+This engagement will include initial Platform Configuration and each product module that has been purchased. Modules have been designed to be delivered consecutively during the Product Deployment stage, as shown below:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 12.41.01.png" alt="Example timeline"><figcaption><p>Example timeline</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-10-23 at 5.42.41 PM.png" alt="Snyk Jumpstart timeline"><figcaption><p>Snyk Jumpstart timeline</p></figcaption></figure>
 
 ## Additional terms
 
-The fees for this project will be a fixed price. Services will be invoiced in full at the time of purchase and are non-refundable.
+The fees for this project will be a fixed price. Services will be invoiced in full at the time of purchase and are non-refundable.&#x20;
 
-The Customer will engage Snyk for a kickoff call within 30 days of the contract start date, at a time that is mutually agreed upon by the parties. Snyk Jumpstart will not be delivered more than 120 days after the execution of the applicable Order Form regardless of when or if the Customer engages with Snyk for the kickoff call.
+The customer will engage Snyk for a kickoff call within 30 days of the contract start date, at a time that is mutually agreed upon by the parties. Snyk Jumpstart will not be delivered more than 120 days after the execution of the applicable Order Form regardless of when or if the Customer engages with Snyk for the kickoff call. All Snyk Jumpstart Services will be considered complete upon the earlier of these two dates:  completion and eight (8) weeks following the kickoff call.
 
-Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the pre-engagement call; b) product modules will be delivered consecutively; and c) services must be scheduled during normal business hours.&#x20;
+Unless otherwise agreed to by the parties in writing, Services must be scheduled a) as agreed during the pre-engagement call; b) product modules will be delivered consecutively; and c) during normal business hours.&#x20;
 
-All services will be performed remotely. Any onsite time requires Snyk’s prior consent and will be subject to additional fees and expenses to be paid in accordance with the Snyk Travel and Expense Policy.
+All services will be performed remotely. Any onsite time requires Snyk’s prior consent and will be subject to additional fees and expenses to be agreed in advance.&#x20;
 
 ## Key assumptions
 
 The following assumptions are reflected in the services outlined in this Jumpstart Services description:
 
-1. All services will be performed remotely using video conferencing software such as Zoom.
+1. All services will be performed remotely using video conferencing software such as Zoom.&#x20;
 2. The Customer must provide prompt feedback on all deliverables.
-3. The Customer’s Snyk subject matter expert must be available to work remotely with the Snyk consultant for the entirety of the engagement.
+3. &#x20;The Customer will appoint one subject matter expert who will be the point of contact for the Jumpstart Services. This subject matter expert must be available to work remotely with the Snyk Consultant for the entirety of the engagement.
 4. The Customer will provide Snyk with documentation and access to subject matter experts for non-Snyk systems and software if required within the scope of the engagement.
 5. The Customer will have identified key personnel prior to the beginning of the engagement.
-6. Services will be scheduled and delivered during Snyk’s normal business hours, 8 am to 5 pm local time (Sunday through Thursday where applicable based on region of the assigned Snyk Consultant).
-7. The Customer will provide prompt access to all systems and resources that Snyk will need in order to complete the work.
-8. Snyk does not provide support for third-party software that is used as part of the Snyk solution, such as version control systems, repository management, trouble ticketing systems, packaging, and other software that is not part of the Snyk stack.
+6. Services will be scheduled and delivered during Snyk’s normal business hours: 8 am to 5 pm local time zone Monday through Friday (Sunday through Thursday where applicable based on region of the assigned Snyk Consultant).
+7. The Customer will provide prompt access to all systems and resources that Snyk will need in order to complete the work.&#x20;
+8. Snyk does not provide support for third-party software that is used as part of the Snyk solution, such as version control systems, repository management, trouble ticketing systems, packaging, and other software that is not part of the Snyk stack.&#x20;
 9. If a Broker is required, the Customer will have all system requirements before services start.
-10. All services and communications will be conducted in English language.
+10. All services and communications will be conducted in English.
