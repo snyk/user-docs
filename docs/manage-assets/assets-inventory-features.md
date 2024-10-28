@@ -2,7 +2,9 @@
 
 {% hint style="warning" %}
 **Release status** \
-**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only with Snyk AppRisk Pro.&#x20;
+**Risk factors** on assets are in Early Access and available only for Snyk AppRisk Pro.
+
+**Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk Pro.
 {% endhint %}
 
 Snyk AppRisk provides powerful search and filtering capabilities to help you narrow in on assets for investigation and mitigation.
@@ -30,7 +32,7 @@ If you had a quick filter selected and then added an advanced filter, the quick 
 
 ### Advanced filters
 
-With this feature, you can [define filters](../manage-risk/policies/assets-policies/create-policies.md#define-filters) and filter assets based on highly specific criteria. For example, repository assets that have `AWS` in the name, are classified as either **A** or **B**, and do not have Snyk IaC as a control executed. This can be useful for finding repositories that have infrastructure as code that Snyk IaC is not currently scanning.
+With this feature, you can [define filters](../manage-risk/policies/assets-policies/create-policies.md#define-filters) and filter assets based on highly specific criteria. For example, repository assets that have `AWS` in the name, are classified as either **A** or **B**, and do not have Snyk IaC as a control executed. This can be useful for finding repositories that have infrastructure as code that Snyk IaC does not scan.
 
 Click Filters from the top left side of the screen. A pop-up is displayed allowing you to add quick filters or advanced filters.  If you select the Advanced filters, you can specify one or more sets of criteria as follows:
 
@@ -41,7 +43,7 @@ Click Filters from the top left side of the screen. A pop-up is displayed allowi
 You can add as many filters as needed. To add another filter click **Add Filter,** set the condition as **And** or **Or** and customize the **Property**, **Condition**, and **Value** fields.&#x20;
 
 {% hint style="info" %}
-If you use Snyk AppRisk for the first time, start with the **Coverage** filter to determine where you currently have Snyk Implemented.
+If you use Snyk AppRisk for the first time, start with the **Coverage** filter to determine where you have Snyk Implemented.
 {% endhint %}
 
 You can filter the information for all the inventory layouts and can use the following filters available under the **Advanced filters** section:
@@ -54,6 +56,7 @@ You can filter the information for all the inventory layouts and can use the fol
 * **Catalog name\*** - the name of your application context catalog.
 * **Category**\* - the category of a repository asset. For example, service or library.
 * **Class** - specify the class of the asset.
+* **Clusters** - specify the cluster names where the asset is deployed (an asset can be deployed in more than one cluster).
 * **Coverage** - specify the product or products used to scan the asset. The Coverage filter identifies if at least one scan has been run by the specified product.
 * **Coverage gap** - specify the products for which the asset has not been scanned and do not meet the Set Coverage Control Policy requirements. The coverage gap applies only if you previously defined the coverage requirements of an asset and the asset has never been scanned, or the last scan is older than the default scanning frequency.
 * **Developers** - specify the developer or developers who contributed to the asset.
@@ -72,6 +75,9 @@ You can filter the information for all the inventory layouts and can use the fol
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
   * **N/A**: There are no commits detected by Snyk AppRisk.
+* **Source** - specify the asset source.
+* **Tags** - information about the detected languages and repository update status.
+* **Title\*** - represents the name of the component for which the application context catalog was configured.
 
 {% hint style="info" %}
 N/A indicates that the repository was detected through a Snyk scan but not directly from the SCM. To detect SCM repositories, you must set up SCM integration at the Group level.

@@ -82,10 +82,6 @@ You can see the details of a related asset by clicking on one of them. Usually, 
 
 ## Issues
 
-{% hint style="warning" %}
-The Issues column is available in a Closed Beta state and applies only to Snyk AppRisk Pro.&#x20;
-{% endhint %}
-
 The Issues column is designed to present a comprehensive list of issues that have been identified within your assets. These findings are the result of scans performed by Snyk as well as internal tools you may have deployed. This detailed list not only helps in understanding the security posture of your assets but also in prioritizing remediation efforts based on the severity and impact of each issue. By having visibility into these issues, you can take proactive steps toward improving the overall security of your applications and infrastructure.
 
 Most of the issues are mapped to an asset. However, some of the issues are associated with an asset but not directly linked to it. This is the case with image assets.&#x20;
@@ -131,7 +127,7 @@ BitBucket cannot automatically detect the language used in the source code from 
 A system-generated tag includes the following information:
 
 * **Technology** - the languages detected by Snyk AppRisk in the source code within a repository asset.
-* **SCM Topic** - the topics found in the integrated SCM repositories. Snyk AppRisk currently supports topics from GitHub and GitLab.
+* **SCM Topic** - the topics found in the integrated SCM repositories. Snyk AppRisk supports topics from GitHub and GitLab.
 * **Asset type tag** - the tag explaining the type of the asset. For example, the container assets will be assigned an image asset tag.&#x20;
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
@@ -211,10 +207,18 @@ The synchronization between Asset Class and the Insights UI can take up to 3 hou
 
 The class value can be auto-generated with policies. You just need to create a policy that has as an action **Set Asset Class**.
 
+## Risk factors
+
+The Risk Factors column lists the potential vulnerabilities and security threats associated with each asset. These risk factors help users identify specific risks, enabling them to prioritize and address issues more effectively. By understanding the particular risks tied to their assets, users can take more informed remedial actions.
+
 ## Source
 
 The Source column in Snyk AppRisk helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
 
 ## SCM Repository freshness
 
-The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation.\
+The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation.
+
+## Clusters
+
+The Clusters column lists all cluster names where an image is deployed and is using the runtime integrations as the source of the information. When an image is removed from a cluster, the cluster name is also deleted from the collection. Clusters are also available under Filters and allow you to filter assets in the Inventory view or to create policies in the Policies view.

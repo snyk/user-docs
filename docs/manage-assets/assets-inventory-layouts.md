@@ -8,7 +8,9 @@ Snyk AppRisk inventory layouts are organizing your repository assets in meaningf
 * Track controls coverage for Snyk products.
 * Prioritize coverage mitigation efforts according to business impact.
 
+{% hint style="info" %}
 Each line in the inventory represents an asset.
+{% endhint %}
 
 ## Inventory Layouts <a href="#inventory-layouts" id="inventory-layouts"></a>
 
@@ -29,7 +31,9 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 {% hint style="warning" %}
 **Release status** \
-**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are in Closed Beta and available only for Snyk AppRisk Pro.
+**Risk factors** on assets are in Early Access and available only for Snyk AppRisk Pro.
+
+**Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk Pro.
 {% endhint %}
 
 You can filter the information for all the inventory layouts and use any of the available filters listed on the [Assets inventory features](assets-inventory-features.md#available-filters) page.
@@ -37,10 +41,6 @@ You can filter the information for all the inventory layouts and use any of the 
 ## Assets and their attributes
 
 Every item listed in the inventory is considered an individual asset. Most assets are actual components of the application (code repositories, domains, endpoints, and so on), but an asset can also represent a Group, such as the asset type (repository), a group (certain business unit), or even a product.&#x20;
-
-{% hint style="warning" %}
-The Issues column is available in a Closed Beta state and applies only to Snyk AppRisk Pro. &#x20;
-{% endhint %}
 
 Assets in the inventory are presented with key attributes in the following columns:
 
@@ -52,6 +52,11 @@ Assets in the inventory are presented with key attributes in the following colum
 * **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. You can manually change the class or automatically change it by applying a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
 * **Source** - Reflects the source of the asset, which can come from Snyk, an SCM, or a third-party integration.
 * **SCM Repository freshness** - Reflects the status of the repository and the date of the last commit.
+* **Clusters** - Provides a list of all the cluster names where the image asset is deployed.&#x20;
+
+{% hint style="warning" %}
+The Clusters column is hidden by default. To enable it, click Columns, select Clusters from the dropdown list, then click Apply to save the changes.&#x20;
+{% endhint %}
 
 ### **Asset Sources, Types, and Scanned Artifacts**
 

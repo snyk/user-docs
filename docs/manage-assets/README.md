@@ -21,7 +21,9 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 {% hint style="warning" %}
 **Release status** \
-**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are in Closed Beta and available only for Snyk AppRisk Pro.&#x20;
+**Risk factors** on assets are in Early Access and available only for Snyk AppRisk Pro.
+
+**Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk Pro.
 {% endhint %}
 
 ## Assets overview
