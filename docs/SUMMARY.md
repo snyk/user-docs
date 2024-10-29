@@ -717,7 +717,7 @@
   * [Snyk Tools](scan-with-snyk/snyk-tools/README.md)
     * [Tool: snyk-api-import](scan-with-snyk/snyk-tools/tool-snyk-api-import/README.md)
       * [Creating Organizations in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md)
-      * [Creating import targets data for import](scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import.md)
+      * [Creating import targets data for import command](scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md)
       * [Mirroring GitHub.com and GitHub Enterprise organizations and repos in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/mirroring-github.com-and-github-enterprise-organizations-and-repos-in-snyk.md)
       * [Mirroring GitLab organizations and repos in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/mirroring-gitlab-organizations-and-repos-in-snyk.md)
       * [Mirroring Bitbucket Server organizations and repos in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/mirroring-bitbucket-server-organizations-and-repos-in-snyk.md)
