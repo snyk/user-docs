@@ -7,8 +7,6 @@
   * [Explore the Snyk Web UI](getting-started/snyk-web-ui.md)
   * [Snyk Release Process](getting-started/snyk-release-process.md)
   * [Snyk Learn](getting-started/snyk-learn/README.md)
-    * [Security education on Snyk Learn](getting-started/snyk-learn/security-education-on-snyk-learn.md)
-    * [Product training on Snyk Learn](getting-started/snyk-learn/product-training-on-snyk-learn.md)
     * [Snyk Learn Reports](getting-started/snyk-learn/snyk-learn-reports.md)
     * [Snyk Learn Assignments](getting-started/snyk-learn/snyk-learn-assignments.md)
     * [Snyk Learn Access Controls](getting-started/snyk-learn/snyk-learn-access-controls.md)
