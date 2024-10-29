@@ -19,7 +19,7 @@ Snyk recommends that you have as many Organizations in Snyk as you have in the s
 
 ## Generating the data required to create Organizations in Snyk with the `orgs:data` utility
 
-This utility helps generate data needed to mirror the GitHub.com, GitHub Enterprise, GitLab, Bitbucket Server, or Bitbucket Cloud organization structure in Snyk. This iopinionated utility will assume every organization in GitHub.com, GitHub Enterprise, GitLab, Bitbucket Server, or Bitbucket Cloud should become an Organization in Snyk. If this is not what you are looking for, consider using the [Organizations API](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) directly to create the structure you need.
+This utility helps generate data needed to mirror the GitHub.com, GitHub Enterprise, GitLab, Bitbucket Server, or Bitbucket Cloud organization structure in Snyk. This opinionated utility will assume every organization in GitHub.com, GitHub Enterprise, GitLab, Bitbucket Server, or Bitbucket Cloud should become an Organization in Snyk. If this is not what you are looking for, consider using the API endpoint [Create a new organization](../../../snyk-api/reference/organizations-v1.md#org) directly to create the structure you need.
 
 ### Options
 
@@ -60,12 +60,11 @@ This creates the organization data in a file `group-<snyk_group_id>-gitlab-orgs.
 
 ### Bitbucket Server
 
-**Note that Bitbucket Server is a hosted environment and you must provide the custom URL for your Bitbucket Server instance in the command.**
+**Note that Bitbucket Server is a hosted environment, and you must provide the custom URL for your Bitbucket Server instance in the command.**
 
 1. Set the [Bitbucket Server access token](https://www.jetbrains.com/help/youtrack/standalone/integration-with-bitbucket-server.html#enable-youtrack-integration-bbserver) as an environment variable: `export BITBUCKET_SERVER_TOKEN=your_personal_access_token`
-2. Run the command to generate organization data:
-
-* `snyk-api-import orgs:data --source=bitbucket-server --groupId=<snyk_group_id> --sourceUrl=https://bitbucket-server.custom.com`
+2. Run the command to generate organization data:\
+   `snyk-api-import orgs:data --source=bitbucket-server --groupId=<snyk_group_id> --sourceUrl=https://bitbucket-server.custom.com`
 
 This creates the organization data in a file `group-<snyk_group_id>-bitbucket-server-orgs.json`
 
@@ -74,17 +73,14 @@ This creates the organization data in a file `group-<snyk_group_id>-bitbucket-se
 **Note that the URL for Bitbucket Cloud is https://bitbucket.org/.**
 
 1. Set the Bitbucket Cloud Username and Password as environment variables: `export BITBUCKET_CLOUD_USERNAME=your_bitbucket_cloud_username` and `export BITBUCKET_CLOUD_PASSWORD=your_bitbucket_cloud_password`
-2. Run the command to generate organization data:
-
-* `snyk-api-import orgs:data --source=bitbucket-cloud --groupId=<snyk_group_id>`
+2. Run the command to generate organization data:\
+   `snyk-api-import orgs:data --source=bitbucket-cloud --groupId=<snyk_group_id>`
 
 This creates the organization data in a file `group-<snyk_group_id>-bitbucket-cloud-orgs.json`
 
 ### Azure
 
-**Note that for Azure, this step needs to be done manually** Since Azure has no API call for getting the Azure Organizations, the Orgs file must be created manually for the next commands to run:
-
-The file should be formatted this way:
+**Note that for Azure, this step must be done manually.** Since Azure has no API call for getting the Azure Organizations, the Orgs file must be created manually for the next commands to run. The file should be formatted this way:
 
 ```
 {
@@ -103,22 +99,22 @@ The file should be formatted this way:
 }
 ```
 
-After the file is created, you can feed it to the [orgs:create command](https://github.com/snyk/snyk-api-import/blob/0e5162d29dec7f1d5acde247cc8da0553871db3f/docs/orgs.md#creating-organizations-in-snyk-1)
+After the file is created, you can feed it to the [`orgs:create` command](https://github.com/snyk/snyk-api-import/blob/0e5162d29dec7f1d5acde247cc8da0553871db3f/docs/orgs.md#creating-organizations-in-snyk-1).
 
 ## Methods of creating Organizations
 
-Use the generated data file to help create the organizations using the API or use the provided utility.
+Use the generated data file to help create the organizations using the API endpoint [Create a new organization](../../../snyk-api/reference/organizations-v1.md#org) or use the provided utility.
 
 ### Using the API
 
-Use the generated data to feed into the Snyk [Orgs API](https://snyk.docs.apiary.io/#reference/groups/organizations-in-a-group/create-a-new-organization-in-a-group) to generate the Organizations within a Group.
+Use the generated data to feed into the endpoint [Create a new organization](../../../snyk-api/reference/organizations-v1.md#org) to generate the Organizations within a Group.
 
 ### Using the `orgs:create` utility
 
-1. Set the `SNYK_TOKEN` environment variable, your [Snyk api token](https://app.snyk.io/account)
-2. Run the command to create Organizations: `snyk-api-import orgs:create --noDuplicateNames --includeExistingOrgsInOutput --file=group-<snyk_group_id>-github-<com|enterprise>-orgs.json`
+1. Set the `SNYK_TOKEN` environment variable, your [Snyk API token](https://app.snyk.io/account).
+2. Run the command to create Organizations: `snyk-api-import orgs:create --noDuplicateNames --includeExistingOrgsInOutput --file=group-<snyk_group_id>-github-<com|enterprise>-orgs.json`.
 3. Use the `noDuplicateNames` flag (optional) to skip creating an Organization if the given name is already taken within the Group.
-4. Use the `includeExistingOrgsInOutput` flag (optional, default is "true") to log information for existing organizations as well as newly created Organizations. To set this flag as false, use "--no-includeExistingOrgsInOutput" in the command as follows: `snyk-api-import orgs:create --no-includeExistingOrgsInOutput --file=group-<snyk_group_id>-github-<com|enterprise>-orgs.json`
+4. Use the `includeExistingOrgsInOutput` flag (optional, default is `true`) to log information for existing Organizations as well as newly created Organizations. To set this flag as `false`, use --no-includeExistingOrgsInOutput in the command as follows: `snyk-api-import orgs:create --no-includeExistingOrgsInOutput --file=group-<snyk_group_id>-github-<com|enterprise>-orgs.json`
 
 The file format required for this command is as follows:
 
@@ -138,5 +134,5 @@ The file format required for this command is as follows:
 
 ### Recommendations
 
-* Have [notifications disabled](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/set-notification-settings) for emails and so on to avoid receiving import notifications.
-* Have the [fix PRs and PR checks disabled](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/update) until import is complete to avoid sending extra requests to SCMs (GitHub, GitLab, Bitbucket, other).
+* Use the endpoint [Set notification settings](../../../snyk-api/reference/organizations-v1.md#org-orgid-notification-settings) to disable notifications for emails and so on to avoid receiving import notifications.
+* Use the [Update](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-integrationid-settings) (integration settings) endpoint to disable the fix PRs and PR checks until import is complete to avoid sending extra requests to SCMs (GitHub, GitLab, Bitbucket, and so on).
