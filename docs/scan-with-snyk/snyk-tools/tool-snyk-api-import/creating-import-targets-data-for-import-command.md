@@ -36,13 +36,13 @@ You need the organizations data in JSON as an input to this command to help map 
 
 Note: the `"name`" of the GitHub or GitHub Enterprise organization is required in order to list all repos belonging to that organization using the GitHub API. The Snyk-specific data accompanying that organization name will be used as the information to generate import data, assuming all repos in that organization will be imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
 
-* You can list GitHub and GitHub Enterprise organizations using the GitHub [/orgs API](https://docs.github.com/en/free-pro-team@latest/rest/reference/orgs)
+* You can list GitHub and GitHub Enterprise organizations using the GitHub [/orgs API](https://docs.github.com/en/free-pro-team@latest/rest/reference/orgs).
 * You can list integrations using the Snyk API endpoint [List](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-1) (integrations).
 * You can find all Organization IDs by listing all Organizations a Group admin belongs to using the Snyk API endpoint [List all organizatons in a group](../../../snyk-api/reference/orgs.md#groups-group\_id-orgs).
 
 The steps to use this utility follow:
 
-1. Set the [GitHub.com personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) as an environment variable: `export GITHUB_TOKEN=your_personal_access_token`
+1. Set the [GitHub.com personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) as an environment variable: `export GITHUB_TOKEN=your_personal_access_token`.
 2. Create the organization's data in JSON as described in the opening paragraphs.
 3. Run the command to generate import data:\
    **GitHub.com:** `DEBUG=snyk* GITHUB_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=github --integrationType=github`\
@@ -76,7 +76,7 @@ Note: the "name" of the GitLab Group is required in order to list all projects b
 
 The steps to use this utility follow:
 
-1. Set the [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal\_access\_tokens.html) as an environment variable: `export GITLAB_TOKEN=your_personal_access_token`
+1. Set the [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal\_access\_tokens.html) as an environment variable: `export GITLAB_TOKEN=your_personal_access_token`.
 2. Create the organizations data in JSON as described in the opening paragraphs.
 3. Run the command to generate import data:\
    **Gitlab.com:** `DEBUG=snyk* GITLAB_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=gitlab --integrationType=gitlab`\
@@ -112,7 +112,7 @@ Note: the "name" of the Azure organization is required in order to list all proj
 
 The steps to use this utility follow:
 
-1. Set the [Azure personal access token](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=preview-page) as an environment variable: `export AZURE_TOKEN=your_personal_access_token`
+1. Set the [Azure personal access token](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=preview-page) as an environment variable: `export AZURE_TOKEN=your_personal_access_token`.
 2. Create the organizations data in JSON as described in the opening paragraphs.
 3. Run the command to generate import data:\
    **dev.azure.com:** `DEBUG=snyk* AZURE_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=azure-repos --integrationType=azure-repos`\
@@ -142,13 +142,13 @@ You need the organizations data in JSON as an input to this command to help map 
 
 Note: the "name" of the Bitbucket server project is required in order to list all repos belonging to that project using the Bitbucket server API. The Snyk-specific data accompanying that project name will be used as the information to generate import data, assuming all repos in that project will be imported into a given Snyk Organization. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
 
-* Bitbucket Server Projects can be listed using the BitBucket [/projects API](https://docs.atlassian.com/bitbucket-server/rest/7.19.2/bitbucket-rest.html)
+* Bitbucket Server Projects can be listed using the BitBucket [/projects API](https://docs.atlassian.com/bitbucket-server/rest/7.19.2/bitbucket-rest.html).
 * You can list integrations using the Snyk API endpoint [List](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-1) (integrations).
 * You can find all Organization IDs by listing all Organizations a Group admin belongs to using the Snyk API endpoint [List all organizatons in a group](../../../snyk-api/reference/orgs.md#groups-group\_id-orgs).
 
 The steps to use this utility follow:
 
-1. Set the [Bitbucket Server personal access token](https://www.jetbrains.com/help/youtrack/standalone/integration-with-bitbucket-server.html#enable-youtrack-integration-bbserver) as an environment variable: `export BITBUCKET_SERVER_TOKEN=your_personal_access_token`
+1. Set the [Bitbucket Server personal access token](https://www.jetbrains.com/help/youtrack/standalone/integration-with-bitbucket-server.html#enable-youtrack-integration-bbserver) as an environment variable: `export BITBUCKET_SERVER_TOKEN=your_personal_access_token`.
 2. Create the organizations data in JSON as described in the opening paragraphs.
 3. Run the command to generate import data:\
    **Bitbucket Server:** `DEBUG=snyk* BITBUCKET_SERVER_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=bitbucket-server --integrationType=bitbucket-server --sourceUrl=https://bitbucket-server.dev.example.com`
@@ -177,7 +177,7 @@ You need the organizations data in JSON as an input to this command to help map 
 
 Note: the "name" of the Bitbucket Cloud workspace is required in order to list all repositories belonging to that workspace using the Bitbucket Cloud API. The Snyk-specific data accompanying that workspace name will be used as the information to generate import data assuming all repositories in that workspace will be imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
 
-* Bitbucket Cloud workspaces can be listed using the BItBucket [/workspaces API](https://bitbucket.org/api/2.0/workspaces)
+* Bitbucket Cloud workspaces can be listed using the BItBucket [/workspaces API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-workspaces/#api-group-workspaces).
 * You can list integrations using the Snyk API endpoint [List](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-1) (integrations).
 * You can find all Organization IDs by listing all Organizations a Group admin belongs to using the Snyk API endpoint [List all organizatons in a group](../../../snyk-api/reference/orgs.md#groups-group\_id-orgs).
 
