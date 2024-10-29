@@ -1,13 +1,5 @@
 # Fix code vulnerabilities automatically
 
-{% hint style="warning" %}
-**Release status  and feature availability**
-
-DeepCode AI Fix is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) for anyone to try in the IDE.
-
-To enable the feature, see [Enable DeepCode AI Fix](fix-code-vulnerabilities-automatically.md#enable-deepcode-ai-fix).
-{% endhint %}
-
 Fix the security issues and quality flaws in the source code through an automated flow. DeepCode AI Fix calculates the most suitable solution for your issues and applies it automatically.
 
 ## Why use DeepCode AI Fix?
@@ -22,20 +14,17 @@ You can address various issues detected by the Snyk Code engine in terms of qual
 
 ## DeepCode AI Fix language support
 
-DeepCode AI Fix supports the following languages:
-
-* Javascript and Typescript
-* Java
-* Python
-* C/C++
-* Go (Limited support)
-* C# (Limited support)
-* APEX (Limited support)
+| Supported  | Limited support |
+| ---------- | --------------- |
+| Java       | APEX            |
+| JavaScript | C/C++           |
+| Python     | C#              |
+| TypeScript | Go              |
 
 What is the difference between supported and limited support?&#x20;
 
-* Supported languages provide remediation for 10 or more rules covering the OWASP Top 10,&#x20;
-* Limited support languages provide remediation for less than 10 rules.
+* Supported: AI Fix consistently generates fixes for the majority of Snyk Code rules.
+* Limited support: AI Fix may not generate fixes as consistently, covering fewer Snyk Code rules.&#x20;
 
 ## What data does DeepCode AI Fix collect?
 
@@ -70,9 +59,9 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Enable DeepCode AI Fix
 
-Enable DeepCode AI Fix for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** > **Snyk Preview**.
+Enable DeepCode AI Fix for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** > **DeepCode AI Fix**.
 
-<figure><img src="../../../.gitbook/assets/enable_fix_suggestions_snyk_preview.png" alt="DeepCodeAI Fix Suggestions settings in Snyk Preview"><figcaption><p>DeepCodeAI Fix Suggestions settings in Snyk Preview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2024-10-25_15-34-58.png" alt="DeepCodeAI Fix Suggestions settings in Snyk Preview"><figcaption><p>DeepCodeAI Fix Suggestions settings in Snyk Preview</p></figcaption></figure>
 
 ## Fix code issues automatically
 
@@ -106,9 +95,9 @@ When you apply the fix, you will be guided to where the new code has been introd
 
 <figure><img src="../../../.gitbook/assets/image (447).png" alt=""><figcaption><p>Vulnerability has been fixed</p></figcaption></figure>
 
-## Known limitations&#x20;
+## Limitations&#x20;
 
-DeepCode AI Fix is at the forefront of AI but there are still limitations based on the AI engine. Users must always review AI Fix suggestions to ensure that the resulting implementation of the fix does not break their application&#x20;
+DeepCode AI Fix is at the forefront of AI, but there are still limitations based on the AI engine. Users must always review AI Fix suggestions to ensure that the resulting implementation of the fix does not break their application&#x20;
 
 * DeepCode AI Fix suggestions might generate code that results in the application's not working properly&#x20;
 * DeepCode AI Fix suggestions might generate code that is not syntactically correct&#x20;
