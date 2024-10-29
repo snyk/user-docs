@@ -3,9 +3,7 @@
 {% hint style="warning" %}
 **Release status**&#x20;
 
-Automatically importing and deleting Kubernetes workload Projects is in [Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta) and available only for Enterprise plans. If you want to set it up in your Organization, contact your Snyk account team.
-
-See [Pricing plans](https://snyk.io/plans).
+Automatically importing and deleting Kubernetes workload Projects is in Closed Beta and available only for Enterprise plans. If you want to set it up in your Group or Organization, contact your Snyk account team.
 {% endhint %}
 
 Using the same integration ID, you can import multiple clusters to one Snyk Organization by giving clusters a unique cluster name during installation.
