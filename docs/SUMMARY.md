@@ -718,7 +718,7 @@
     * [Using Snyk AppRisk](scan-with-snyk/snyk-apprisk/using-snyk-apprisk.md)
   * [Snyk Tools](scan-with-snyk/snyk-tools/README.md)
     * [Tool: snyk-api-import](scan-with-snyk/snyk-tools/tool-snyk-api-import/README.md)
-      * [Creating organizations in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md)
+      * [Creating Organizations in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md)
       * [Creating import targets data for import](scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import.md)
       * [Mirroring GitHub.com and GitHub Enterprise organizations and repos in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/mirroring-github.com-and-github-enterprise-organizations-and-repos-in-snyk.md)
       * [Mirroring GitLab organizations and repos in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/mirroring-gitlab-organizations-and-repos-in-snyk.md)

@@ -1,16 +1,16 @@
-# Creating organizations in Snyk
+# Creating Organizations in Snyk
 
-This page has instructions for creating organizations (Orgs) in Snyk:
+This page has instructions for creating Organizations (Orgs) in Snyk:
 
 * Generating the data to create organizations in Snyk
-  * [GitHub](creating-organizations-in-snyk.md#github.com-github-enterprise)
-  * [GitLab](creating-organizations-in-snyk.md#gitlab.com-hosted-gitlab)
+  * [GitHub](creating-organizations-in-snyk.md#github.com-and-github-enterprise)
+  * [GitLab](creating-organizations-in-snyk.md#gitlab.com-and-hosted-gitlab)
   * [Bitbucket Server](creating-organizations-in-snyk.md#bitbucket-server)
   * [Bitbucket Cloud](creating-organizations-in-snyk.md#bitbucket-cloud)
   * [Azure](creating-organizations-in-snyk.md#azure)
-* [Methods of creating Orgs](creating-organizations-in-snyk.md#methods-of-creating-orgs)
-  * [via the API](creating-organizations-in-snyk.md#via-api)
-  * [via the `orgs:create` util](creating-organizations-in-snyk.md#via-orgs-create-util)
+* [Methods of creating Organizations](creating-organizations-in-snyk.md#methods-of-creating-organizations)
+  * [Using the AP](creating-organizations-in-snyk.md#using-the-api)I
+  * [Using the `orgs:create` utility](creating-organizations-in-snyk.md#using-the-orgs-create-utility)
 * [Recommendations](creating-organizations-in-snyk.md#recommendations)
 
 Before an import can begin you must set up Snyk with the organizations you will populate with projects.
@@ -105,15 +105,15 @@ The file should be formatted this way:
 
 Once the file is created, you can feed it to the [orgs:create command](https://github.com/snyk/snyk-api-import/blob/0e5162d29dec7f1d5acde247cc8da0553871db3f/docs/orgs.md#creating-organizations-in-snyk-1)
 
-## Methods of creating Orgs
+## Methods of creating Organizations
 
 Use the generated data file to help create the organizations via API or use the provided util.
 
-### via API
+### Using the API
 
 Use the generated data to feed into the Snyk [Orgs API](https://snyk.docs.apiary.io/#reference/groups/organizations-in-a-group/create-a-new-organization-in-a-group) to generate the organizations within a group.
 
-### via `orgs:create` util
+### Using the `orgs:create` utility
 
 1. set the `SNYK_TOKEN` environment variable - your [Snyk api token](https://app.snyk.io/account)
 2. Run the command to create Orgs: `snyk-api-import orgs:create --noDuplicateNames --includeExistingOrgsInOutput --file=group-<snyk_group_id>-github-<com|enterprise>-orgs.json`
