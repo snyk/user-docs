@@ -118,3 +118,5 @@ redirects:
   getting-started/quickstart/import-a-project: getting-started/README.md
   getting-started/quickstart/view-snyk-scan-results: getting-started/README.md
   getting-started/quickstart: getting-started/README.md
+  getting-started/snyk-learn/security-education-on-snyk-learn: getting-started/snyk-learn/README.md
+  getting-started/snyk-learn/product-training-on-snyk-learn: getting-started/snyk-learn/README.md
