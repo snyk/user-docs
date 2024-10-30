@@ -25,7 +25,7 @@ This guide outlines the steps for migrating your [Snyk Open Source](https://snyk
 ## Prerequisites
 
 * An active AWS account with CodeBuild and CodePipeline services enabled
-* Snyk account with the Snyk CLI configured
+* A Snyk account with the Snyk CLI configured
 * Familiarity with CodeBuild project configuration and environment variables
 * Understanding of your existing CodePipeline stages and their interaction with Snyk
 
@@ -38,6 +38,11 @@ Follow the steps in these sections to migrate your [Snyk Open Source](https://sn
 * Create a new CodeBuild project in your AWS account.
 * Choose a compatible [base image](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html) for your project based on your programming language and dependencies.
 * Review how to [authenticate the Snyk CLI with your account](../../../snyk-cli/authenticate-to-use-the-cli.md) and consider using an environment variable to store sensitive information such as your Snyk CLI token.
+
+{% hint style="info" %}
+**Tip**: The default **Service role** in AWS CodeBuild includes an IAM permission that allows the CodeBuild project to pull any secret from AWS Secrets Manager that starts with `/CodeBuild/` in the name. Refer to the [Troubleshooting](migrating-to-aws-codebuild.md#troubleshooting) section at the end of this guide for more information.
+{% endhint %}
+
 * Configure build commands:
   * [Install the Snyk CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) using the commands appropriate for your operating system.
   * Define a build command that executes the Snyk scan using the CLI.
@@ -69,23 +74,23 @@ phases:
 
 ### Set up CodePipeline
 
-For some [Open Source](https://snyk.io/product/open-source-security-management/) projects, you must build the Project before testing it with the Snyk CLI. Review the Snyk [documentation](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md) to determine whether Snyk requires your Project to be built before running an Open Source scan; then follow the instructions in the corresponding section below:
+For some [Open Source](https://snyk.io/product/open-source-security-management/) Projects, you must build the Project before testing it with the Snyk CLI. Review the Snyk [documentation](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md) to determine whether Snyk requires your Project to be built before running an Open Source scan; then follow the instructions in the corresponding section below:
 
-#### Snyk requires a built project
+#### Snyk requires a built Project
 
 * Edit your existing CodePipeline or create a new one.
-* Create a new stage to build your project, or edit the existing build stage.
-* Add the commands from the example `buildspec.yaml` to your build stage so that the Snyk scan occurs immediately after the project is built.
+* Create a new stage to build your Project, or edit the existing build stage.
+* Add the commands from the example `buildspec.yaml` to your build stage so that the Snyk scan occurs immediately after the Project is built.
 
 {% hint style="info" %}
 **Important:** the Snyk Open Source scan must be in the same CodeBuild action as the build process to ensure that Snyk has access to the full build workspace.
 {% endhint %}
 
-#### Snyk does not require a built project
+#### Snyk does not require a built Project
 
 * Edit your existing CodePipeline or create a new one.
 * Add a new build stage after your source code acquisition stage.
-* Select your newly created CodeBuild project for this stage.
+* Select your newly created CodeBuild Project for this stage.
 * Select SourceArtifact under Input artifacts to allow Snyk to scan the source code directly.
 
 ### Result handling
@@ -97,8 +102,8 @@ The Snyk integration for CodePipeline only supports a limited set of [Snyk CLI](
 * Use the following [CLI options](https://docs.snyk.io/snyk-cli/commands) to reproduce behaviors you had configured in the AWS CodePipeline integration:
   * [--org=\<ORG\_ID>](https://docs.snyk.io/snyk-cli/commands/test#org-less-than-org\_id-greater-than) - Specify the \<ORG\_ID> to run Snyk commands tied to a specific Snyk Organization.
   * [--severity-threshold=\<low|medium|high|critical>](https://docs.snyk.io/snyk-cli/commands/test#severity-threshold-less-than-low-or-medium-or-high-or-critical-greater-than) - Report only vulnerabilities at the specified level or higher.
-  * [--all-projects](https://docs.snyk.io/snyk-cli/commands/test#all-projects) - Auto-detect all projects in the working directory.
-  * [--project-name=\<PROJECT\_NAME>](https://docs.snyk.io/snyk-cli/commands/monitor#project-name-less-than-project\_name-greater-than) - Specify a custom Snyk project name to the `snyk monitor` command.
+  * [--all-projects](https://docs.snyk.io/snyk-cli/commands/test#all-projects) - Auto-detect all Projects in the working directory.
+  * [--project-name=\<PROJECT\_NAME>](https://docs.snyk.io/snyk-cli/commands/monitor#project-name-less-than-project\_name-greater-than) - Specify a custom Snyk Project name to the `snyk monitor` command.
 
 ### Test and validate
 
@@ -110,6 +115,10 @@ The Snyk integration for CodePipeline only supports a limited set of [Snyk CLI](
 
 * When testing is complete, consider deploying the updated CodePipeline.
 * Monitor your pipeline for successful Snyk scan execution and address any integration issues.
+
+### Next Steps
+
+Refer to the [Snyk CLI](https://docs.snyk.io/snyk-cli) documentation to incorporate additional security scans into your CI/CD pipeline.
 
 ## Conclusion
 
