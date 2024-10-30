@@ -1,3 +1,48 @@
+## 2024-10-15 - Updated 2024-10-30
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the new `function` enum value to the `data/items/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `no-info` enum value to the `data/items/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `not-applicable` enum value to the `data/items/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `package` enum value to the `data/items/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the new `function` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `no-info` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `not-applicable` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `package` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the new `function` enum value to the `data/items/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `no-info` enum value to the `data/items/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `not-applicable` enum value to the `data/items/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `package` enum value to the `data/items/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the new `function` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `no-info` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `not-applicable` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `package` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2024-10-15
 
 ### Simplified API Versioning
