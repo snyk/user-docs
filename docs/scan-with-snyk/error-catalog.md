@@ -687,6 +687,17 @@ To create a new Rule extension you will have to remove an existing one.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
+### [SNYK-CODE-0012](#snyk-code-0012)
+
+#### Unsupported rule names in request
+
+One or more rule names provided are not supported by Snyk Code Rule extensions.
+
+Remove the unsupported rule name(s) and then try again.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
 ---
 # Integration
 ### [SNYK-INTEGRATION-0001](#snyk-integration-0001)
@@ -2523,4 +2534,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-10-30T13:24:37.323Z
+--- Generated at 2024-10-30T16:04:57.263Z
