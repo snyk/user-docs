@@ -1,8 +1,8 @@
 # snyk-delta
 
-This tool provides the means to get the delta between two Snyk snapshots. This is especially useful when you are running CLI-based scans, such as in your local environment, git hooks, and so on.
+This tool provides the means to get the delta between two Snyk snapshots. This is especially useful when you are running CLI-based scans, such as in your local environment, githooks, and so on.
 
-`snyk-delta` compares snapshots to give details about:
+`snyk-delta` compares snapshots to provide details about:
 
 * New vulnerabilities not found in the baseline snapshot
 * New license issues not found in the baseline snapshot
@@ -13,8 +13,8 @@ This tool provides the means to get the delta between two Snyk snapshots. This i
 
 ## Prerequisites
 
-* Snyk Enterprise plan (requires API)
-* Your project to be monitored
+* Snyk Enterprise plan (requires  the Snyk API)
+* Your Project to be monitored
 
 ## Installation
 
@@ -22,25 +22,25 @@ This tool provides the means to get the delta between two Snyk snapshots. This i
 
 or
 
-Grab a binary of your choice from [the release page](https://github.com/snyk-tech-services/snyk-delta/releases)
+Download a binary of your choice from [the release page](https://github.com/snyk-tech-services/snyk-delta/releases)
 
 ## Usage
 
-You can use this tool inline, or as a standalone command.
+You can use this tool inline or as a standalone command.
 
 ### Inline operations
 
 Use `snyk test --json --print-deps | snyk-delta`
 
-* Possibly point to a specific snapshot by specifying org+project coordinates:\
+* You may point to a specific snapshot by specifying org+project coordinates:\
   `snyk test --json --print-deps | snyk-delta --baselineOrg xxx --baselineProject xxx`
-* Use `--setPassIfNoBaseline` if used with `snyk-prevent_commit_status` and the project is not monitored. This prevents`snyk-prevent_commit_status` from failing:\
+* Use `--setPassIfNoBaseline` if used with `snyk-prevent_commit_status` and the Project is not monitored. This prevents`snyk-prevent_commit_status` from failing:\
   `setPassIfNoBaseline` default to false\
   `snyk test --json --print-deps | snyk-delta --baselineOrg xxx --baselineProject xxx --setPassIfNoBaseline true`
 
 {% hint style="info" %}
-The **BaselineProject** value is expected to be a UUID, not simply a name\
-Check your Snyk Web UI or API to retrieve those UUIDs.
+The **BaselineProject** value is expected to be a UUID, not a name.\
+Check the Snyk Web UI or API to retrieve those UUIDs.
 {% endhint %}
 
 ### Standalone operations
@@ -57,28 +57,38 @@ const jsonResultsFromSnykTest = Read from file or pipe snyk test command
 const result = await getDelta(jsonResultsFromSnykTest);
 ```
 
-**Result** is a number:
+**The result** is a number:
 
 * 0: no new issue
-* 1: new issue(s) or when using strictMode and the unmonitored project has issues (see more details in [StrictMode](snyk-delta.md#strictmode))
+* 1: new issue(s) or when using StrictMode and the unmonitored Project has issues (See more details in [StrictMode](snyk-delta.md#strictmode).)
 * 2: for errors like invalid auth
 
-Actual issue(s) details will be listed on stdout.
+Details for issues will be listed on stdout.
 
-## Help
+## Help for snyk-delta
 
-`-h` to list help
+Use `-h` to display help.
 
 ### StrictMode
 
-When `snyk-delta` compares test results, it tries to find the same project, monitored on the Snyk platform. If no monitored project is found, `snyk-delta` returns all the issues found by the CLI scan, essentially acting as pass through.
+When `snyk-delta` compares test results, it tries to find the same Project monitored on the Snyk platform. If no monitored Project is found, `snyk-delta` returns all the issues found by the CLI scan, essentially acting as a pass-through.
 
-The return code is 0 if no issue, 1 if issues.
+The return code is 0 if no issue, 1 if issues are found.
 
 ### Caution
 
-Usage as a module requires list of issues coming from Snyk CLI. Currently `snyk-delta` is not compatible with data coming straight from Snyk APIs.
+Usage as a module requires a list of issues coming from the Snyk CLI. `snyk-delta` is not compatible with data coming straight from Snyk APIs.
 
 ### all-projects
 
-`snyk-delta` does not currently support the `--all-projects` option, but you can try using `snyk_delta_all_projects.sh` as a workaround until it does.
+`snyk-delta` does not support the `--all-projects` option, but you can try using `snyk_delta_all_projects.sh` as a workaround until it does.
+
+## Troubleshooting for snyk-delta
+
+If you have trouble, you can try the following:
+
+* Run the Snyk `test -d` step first and ensure it works.
+* If you are using the `delta allprojects` script, try removing that and test the Projects individually
+* If no baseline is found, ensure there is an existing monitored Project first, and check the `.git` metadata if you are trying to match against an SCM-monitored Project.
+
+If you need help, contact [Snyk Support](https://support.snyk.io/hc/en-us).
