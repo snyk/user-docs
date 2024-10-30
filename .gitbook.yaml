@@ -120,3 +120,4 @@ redirects:
   getting-started/quickstart: getting-started/README.md
   getting-started/snyk-learn/security-education-on-snyk-learn: getting-started/snyk-learn/README.md
   getting-started/snyk-learn/product-training-on-snyk-learn: getting-started/snyk-learn/README.md
+  features/snyk-broker/broker-introduction: enterprise-setup/snyk-broker/README.md
