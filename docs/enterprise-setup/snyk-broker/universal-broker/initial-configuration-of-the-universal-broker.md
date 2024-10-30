@@ -34,7 +34,11 @@ To use this command, you must install Node 18 or higher.
 7. Create and configure your connection or connections.
    * Run `snyk-broker-config workflows connections create` to create a connection.
    * In response to the prompt **Which Deployment do you want to use?,** select your deployment from the list presented.
-   * In response to the prompt **Which Connection type do you want to create?**, select the type of connection you want to create from the list pesented. Options include `artifactory-cr`, `docker-hub`, `gcr`, `github-cr`, `gitlab-cr` and so on.
+   * In response to the prompt **Which Connection type do you want to create?**,
+     * Select the type of connection you want to create from the list presented.\
+       Options include SCM connection typs like `github` and variants, `bitbucket` and variants, `gitlab` and `azure`, as well as container registry connections (see the next step), package manager connections, Iira, and more.
+     * For container registry-type Broker connections, specify a CR\_AGENT\_URL, which will point to a Container Registry Agent.\
+       You must configure and run both the Universal Broker and a separate Container Registry Agent. Follow the instructions for [configuring and running a Container Registry Agent](../snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent).
    * Provide the configuration for each required field in response to the prompts:
      * Enter a human-friendly name for your connection. Note that no spaces are allowed.
      * Enter the **broker\_client-url**.
