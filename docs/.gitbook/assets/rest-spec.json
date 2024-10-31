@@ -854,7 +854,7 @@
         "style": "form"
       },
       "OrgId": {
-        "description": "Unique identifier for an organization",
+        "description": "The unique identifier of the organization.",
         "in": "path",
         "name": "org_id",
         "required": true,
@@ -19347,6 +19347,7 @@
             "name": "version",
             "required": true,
             "schema": {
+              "default": "2023-08-31~beta",
               "type": "string"
             }
           }
@@ -42225,14 +42226,7 @@
         "operationId": "deleteOrgAssignments",
         "parameters": [
           {
-            "description": "The unique identifier of the organization.",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42304,14 +42298,7 @@
         "operationId": "listOrgAssignments",
         "parameters": [
           {
-            "description": "The unique identifier of the organization.",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42408,14 +42395,7 @@
         "operationId": "createOrgAssignments",
         "parameters": [
           {
-            "description": "The unique identifier of the organization.",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42470,7 +42450,7 @@
         },
         "summary": "Bulk creation of assignments for users in an organization.",
         "tags": [
-          "Assignment"
+          "Learn assignment"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -42877,7 +42857,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "Unique identifier for an organization",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -42973,7 +42960,14 @@
             "$ref": "#/components/parameters/PackageUrl"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "Unique identifier for an organization",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "description": "Specify the number of results to skip before returning results. Must be greater than or equal to 0. Default is 0.",
@@ -43939,7 +43933,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "Unique identifier for an organization",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ProjectId"
@@ -53787,8 +53788,7 @@
           "InternalJWT": {}
         }
       ]
-    },
-    "enableAccessAudit": true
+    }
   },
   "x-snyk-api-version": "2024-10-15"
 }
