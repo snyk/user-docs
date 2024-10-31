@@ -854,11 +854,12 @@
         "style": "form"
       },
       "OrgId": {
-        "description": "The ID of the org",
+        "description": "Org ID",
         "in": "path",
         "name": "org_id",
         "required": true,
         "schema": {
+          "example": "f59045b3-f093-40c3-871d-a334ae30c568",
           "format": "uuid",
           "type": "string"
         }
@@ -951,15 +952,13 @@
         }
       },
       "Platform": {
-        "description": "Filter resources by platform (multi-value, comma-separated): aws",
-        "example": "aws",
-        "explode": false,
+        "description": "The image Operating System and processor architecture",
+        "example": "linux/amd64",
         "in": "query",
         "name": "platform",
         "schema": {
-          "type": "string"
-        },
-        "style": "form"
+          "$ref": "#/components/schemas/Platform"
+        }
       },
       "ProjectId": {
         "description": "Unique identifier for a project",
@@ -18962,7 +18961,6 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -19018,7 +19016,6 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -39030,7 +39027,15 @@
             "$ref": "#/components/parameters/Id"
           },
           {
-            "$ref": "#/components/parameters/Platform"
+            "description": "Filter resources by platform (multi-value, comma-separated): aws",
+            "example": "aws",
+            "explode": false,
+            "in": "query",
+            "name": "platform",
+            "schema": {
+              "type": "string"
+            },
+            "style": "form"
           },
           {
             "$ref": "#/components/parameters/Name"
@@ -40542,104 +40547,13 @@
         "operationId": "listContainerImage",
         "parameters": [
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "example": "f59045b3-f093-40c3-871d-a334ae30c568",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/ImageIds"
           },
           {
-            "description": "The image Operating System and processor architecture",
-            "example": "linux/amd64",
-            "in": "query",
-            "name": "platform",
-            "schema": {
-              "enum": [
-                "aix/ppc64",
-                "android/386",
-                "android/amd64",
-                "android/arm",
-                "android/arm/v5",
-                "android/arm/v6",
-                "android/arm/v7",
-                "android/arm64",
-                "android/arm64/v8",
-                "darwin/amd64",
-                "darwin/arm",
-                "darwin/arm/v5",
-                "darwin/arm/v6",
-                "darwin/arm/v7",
-                "darwin/arm64",
-                "darwin/arm64/v8",
-                "dragonfly/amd64",
-                "freebsd/386",
-                "freebsd/amd64",
-                "freebsd/arm",
-                "freebsd/arm/v5",
-                "freebsd/arm/v6",
-                "freebsd/arm/v7",
-                "illumos/amd64",
-                "ios/arm64",
-                "ios/arm64/v8",
-                "js/wasm",
-                "linux/386",
-                "linux/amd64",
-                "linux/arm",
-                "linux/arm/v5",
-                "linux/arm/v6",
-                "linux/arm/v7",
-                "linux/arm64",
-                "linux/arm64/v8",
-                "linux/loong64",
-                "linux/mips",
-                "linux/mipsle",
-                "linux/mips64",
-                "linux/mips64le",
-                "linux/ppc64",
-                "linux/ppc64le",
-                "linux/riscv64",
-                "linux/s390x",
-                "linux/x86_64",
-                "netbsd/386",
-                "netbsd/amd64",
-                "netbsd/arm",
-                "netbsd/arm/v5",
-                "netbsd/arm/v6",
-                "netbsd/arm/v7",
-                "openbsd/386",
-                "openbsd/amd64",
-                "openbsd/arm",
-                "openbsd/arm/v5",
-                "openbsd/arm/v6",
-                "openbsd/arm/v7",
-                "openbsd/arm64",
-                "openbsd/arm64/v8",
-                "plan9/386",
-                "plan9/amd64",
-                "plan9/arm",
-                "plan9/arm/v5",
-                "plan9/arm/v6",
-                "plan9/arm/v7",
-                "solaris/amd64",
-                "windows/386",
-                "windows/amd64",
-                "windows/arm",
-                "windows/arm/v5",
-                "windows/arm/v6",
-                "windows/arm/v7",
-                "windows/arm64",
-                "windows/arm64/v8"
-              ],
-              "example": "linux/amd64",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/Platform"
           },
           {
             "$ref": "#/components/parameters/Names"
@@ -40725,14 +40639,17 @@
         "tags": [
           "ContainerImage"
         ],
+        "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
           "2023-03-08~beta",
           "2023-08-18~beta",
           "2023-11-02"
         ],
-        "x-snyk-api-version": "2023-11-02"
-      },
-      "x-snyk-api-resource": "container_images"
+        "x-snyk-api-resource": "container_images",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2023-11-02",
+        "x-stability-level": "stable"
+      }
     },
     "/orgs/{org_id}/container_images/{image_id}": {
       "get": {
@@ -40743,15 +40660,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "example": "f59045b3-f093-40c3-871d-a334ae30c568",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/ImageId20231102"
@@ -40822,13 +40731,16 @@
         "tags": [
           "ContainerImage"
         ],
+        "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
           "2023-03-08~beta",
           "2023-11-02"
         ],
-        "x-snyk-api-version": "2023-11-02"
-      },
-      "x-snyk-api-resource": "container_images"
+        "x-snyk-api-resource": "container_images",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2023-11-02",
+        "x-stability-level": "stable"
+      }
     },
     "/orgs/{org_id}/container_images/{image_id}/relationships/image_target_refs": {
       "get": {
@@ -40836,15 +40748,7 @@
         "operationId": "listImageTargetRefs",
         "parameters": [
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "example": "f59045b3-f093-40c3-871d-a334ae30c568",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/ImageId20231102"
@@ -40930,13 +40834,16 @@
         "tags": [
           "ContainerImage"
         ],
+        "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
           "2023-08-18~beta",
           "2023-11-02"
         ],
-        "x-snyk-api-version": "2023-11-02"
-      },
-      "x-snyk-api-resource": "container_images"
+        "x-snyk-api-resource": "container_images",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2023-11-02",
+        "x-stability-level": "stable"
+      }
     },
     "/orgs/{org_id}/invites": {
       "get": {
@@ -42189,7 +42096,14 @@
         "operationId": "listOrgMemberships",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The ID of the org",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -42304,7 +42218,14 @@
         "operationId": "createOrgMembership",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The ID of the org",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -53476,15 +53397,11 @@
   ],
   "tags": [
     {
-      "description": "Container Image resource",
-      "name": "ContainerImage"
-    },
-    {
       "description": "Issues relevant to a particular package",
       "name": "Issues"
     },
     {
-      "description": "The OpenAPI specification for container-image-service.",
+      "description": "The OpenAPI specification for this service.",
       "name": "OpenAPI"
     }
   ],
