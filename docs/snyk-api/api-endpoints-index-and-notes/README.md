@@ -376,7 +376,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 **Note:** Remedies are not included in the response.
 
-More information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
+Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
 
 ### [Get an issue](../reference/issues.md#groups-group\_id-issues-issue\_id) (Group)
 
