@@ -1,4 +1,4 @@
-# API endpoints index and notes
+# API endpoints index and tips
 
 
 
@@ -304,11 +304,15 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Import Projects (v1)
 
-### [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)
+Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](../../snyk-admin/snyk-projects/); the page includes the [Targets definition](../../snyk-admin/snyk-projects/#target).
 
-For information on when and how you can use this endpoint, see this page on i[mporting targets](../../implement-snyk/enterprise-implementation-guide/phase-3-gain-visibility/import-projects.md#git-integration).
+A typical import starts with using the endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to request a target to be processed. Then, use the endpoint [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) to poll the Import Job AP I for further details on completion and resulting Snyk Projects.&#x20;
 
-If this fails, use [Get import job details](https://snyk.docs.apiary.io/#reference/import-projects/import-job/get-import-job-details) to help determine why. There are two types of failures:
+### [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) and [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)
+
+For information on when and how you can use Import targets, see [Git integration on the Import Projects](../../implement-snyk/enterprise-implementation-guide/phase-3-gain-visibility/import-projects.md#git-integration) page in the Enterprise implementation guide.
+
+If a call to the Import targets endpoint fails, use [Get import job detail](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)s to help determine why. There are two types of failures:
 
 * The repository was rejected for processing, that is, HTTP status code 201 was not returned. This happens if there is an issue Snyk can see quickly for example:
   * The repository does not exist.
@@ -320,9 +324,10 @@ If this fails, use [Get import job details](https://snyk.docs.apiary.io/#referen
 
 The poll results return a message per manifest processed, either `success: true` or `success: false.`
 
-**More information:** [Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/), [Configure integrations](../../implement-snyk/team-implementation-guide/phase-2-configure-your-organization/configure-integrations.md) (Enterprise implementation guide, Phase 2), [Import Projects](../../implement-snyk/team-implementation-guide/phase-3-gain-visibility/import-projects.md) (Enterprise implementation guide, Phase 3); [Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)
-
-### [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)
+**More information:**\
+[Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/)\
+[Configure integrations](../../implement-snyk/team-implementation-guide/phase-2-configure-your-organization/configure-integrations.md) (Enterprise implementation guide, Phase 2), [Import Projects](../../implement-snyk/team-implementation-guide/phase-3-gain-visibility/import-projects.md) (Enterprise implementation guide, Phase 3)\
+[Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)
 
 ## Integrations (v1)
 

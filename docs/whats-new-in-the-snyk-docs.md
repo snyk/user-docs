@@ -12,7 +12,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk API**&#x20;
 
 * Most links to APIs have been updated on the docs site.
-* Additional entries were made on the [API docs index page](snyk-api/api-endpoints-index-and-notes/).
+* Additional entries were made on the [API docs index page](snyk-api/api-endpoints-index-and-tips/).
 * [Regional URLs for APIs](snyk-api/rest-api/about-the-rest-api.md#api-url) were updated.
 
 ### &#x20;**Snyk AppRisk**&#x20;
@@ -46,7 +46,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 ### **Snyk API**&#x20;
 
 * Links in the API reference docs have been updated.
-* The [API endpoints index and notes](snyk-api/api-endpoints-index-and-notes/) have been updated.
+* The [API endpoints index and notes](snyk-api/api-endpoints-index-and-tips/) have been updated.
 
 ### **Snyk AppRisk**&#x20;
 
