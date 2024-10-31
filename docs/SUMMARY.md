@@ -1042,7 +1042,7 @@
     * [Create a Snyk App using the Snyk API](snyk-api/how-to-use-snyk-apps-apis/create-a-snyk-app-using-the-snyk-api.md)
     * [Create a Snyk App using the Snyk CLI](snyk-api/how-to-use-snyk-apps-apis/create-a-snyk-app-using-the-snyk-cli.md)
     * [Set up a Snyk App using the OAuth2 API](snyk-api/how-to-use-snyk-apps-apis/set-up-a-snyk-app-using-the-oauth2-api/README.md)
-      * [Quick Setup](snyk-api/how-to-use-snyk-apps-apis/set-up-a-snyk-app-using-the-oauth2-api/quick-setup.md)
+      * [Quick setup](snyk-api/how-to-use-snyk-apps-apis/set-up-a-snyk-app-using-the-oauth2-api/quick-setup.md)
       * [Set up to authorize users](snyk-api/how-to-use-snyk-apps-apis/set-up-a-snyk-app-using-the-oauth2-api/set-up-to-authorize-users.md)
       * [Set up the authorization code exchange](snyk-api/how-to-use-snyk-apps-apis/set-up-a-snyk-app-using-the-oauth2-api/set-up-the-authorization-code-exchange.md)
       * [Set up the refresh token exchange](snyk-api/how-to-use-snyk-apps-apis/set-up-a-snyk-app-using-the-oauth2-api/set-up-the-refresh-token-exchange.md)
