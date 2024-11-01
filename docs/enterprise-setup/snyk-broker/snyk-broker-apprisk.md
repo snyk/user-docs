@@ -4,6 +4,10 @@ If your SCM or third-party instance is not publicly accessible, you need Snyk Br
 
 Enable Broker for Snyk AppRisk by setting the `APPRISK` environment variable to `true` in the installation command: `ACCEPT_APPRISK=true`  for Docker and `--set enableAppRisk=true` for Helm.
 
+Typically, for any brokered integration you want to add to Snyk Apprisk, you need the Broker token following a completed Broker setup. You can find the Broker token in your Organization integration general settings for your integration type, for example, GitHub, GitLab, and so on, as shown in the following image:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-11-01 at 1.05.55 PM.png" alt="Broker token location in the integration settings"><figcaption><p>Broker token location</p></figcaption></figure>
+
 ## SCM integrations
 
 * GitHub - install and configure Snyk Broker&#x20;
