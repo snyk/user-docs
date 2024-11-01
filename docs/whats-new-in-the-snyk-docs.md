@@ -7,6 +7,46 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## October 2024
+
+### **Snyk API**&#x20;
+
+* Links to APIs have been updated throughout the Snyk User Docs site.
+* The [API](snyk-api/) pages were extensively updated to reflect changes in how APIs are published.
+* The [API Authentication](snyk-api/rest-api/authentication-for-api/) pages were updated to include when to use a personal token and when to use a service account, and to improve the flow of information.
+
+### &#x20;**Snyk AppRisk**&#x20;
+
+* [Risk factors on assets](manage-assets/#inventory-overview) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk Pro customers.
+* [Asset inventory components](manage-assets/assets-inventory-components.md#clusters) has been updated to include details on clusters.
+* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#sonarqube-sast-integration).
+
+### **Snyk Broker**
+
+Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#sonarqube-sast-integration).
+
+### **Snyk CLI and IDEs**
+
+* The [CLI authentication page](snyk-cli/authenticate-to-use-the-cli.md) was updated for the OAuth 2.0 protocol.
+* The page [Debugging the Snyk CLI](snyk-cli/debugging-the-snyk-cli.md) was added.
+* [CLI standalone executables](snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables) were updated to include Alpine Arm64.
+* IDE Eclipse[ plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin ](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/)documentation pages were updated.
+* [Authentication information](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) was updated for all IDEs.
+
+### **Snyk  Integrations**
+
+* [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](getting-started/snyk-release-process.md#general-availability).
+* [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
+* The **GitHub and GitHub Enterprise permission requirements** section title has been changed to [Personal Access Token (PAT) scopes and repository permission requirements for SCMs](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#personal-access-token-pat-scopes-and-repository-permission-requirements-for-scms) to capture PAT and repository permissions for multiple SCM integrations, including the GitHub Cloud App.
+* GitHub Cloud App has been added to feature support notices for Fix, Backlog, and Upgrade PRs.
+* Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
+
+### **Other updates**
+
+* [Getting started](getting-started/) has been updated to centralize content related to everything you need to know before using Snyk.&#x20;
+* The [Snyk Jumpstart Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md) and [Customer Prerequisite](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)s were updated for AppRisk Pro.
+* Scanning methods were added for the [Dart and Flutter](supported-languages-package-managers-and-frameworks/dart-and-flutter.md) languages.
+
 ## September 2024
 
 ### **Snyk API**&#x20;
@@ -23,7 +63,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Broker
 
-The Universal Broker feature is now available in Early access. The Universal Broker separates deployment and container concerns from connection concerns. It allows for a smaller or a single deployment to support numerous connections of varied types.
+The Universal Broker feature is now available in Early Access. The Universal Broker separates deployment and container concerns from connection concerns. It allows for a smaller or a single deployment to support numerous connections of varied types.
 
 ### **Snyk CLI**
 
