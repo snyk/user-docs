@@ -23,7 +23,7 @@ To use `snyk-api-import` you must do the following in advance:
 
 Use the [GitHub Releases](https://github.com/snyk/snyk-api-import/releases) to download a standalone executable of `snyk-api-import` CLI for your platform.
 
-### Install with npm or Yard
+### Install with npm or Yarn
 
 [snyk-api-import CLI is available as an npm package](https://www.npmjs.com/package/snyk-api-import). If you have Node.js installed locally, you can install it by running:
 
@@ -31,7 +31,7 @@ Use the [GitHub Releases](https://github.com/snyk/snyk-api-import/releases) to d
 npm install snyk-api-import@latest -g
 ```
 
-If you are using Yarn< run:
+If you are using Yarn, run:
 
 ```
 yarn global add snyk-api-import
