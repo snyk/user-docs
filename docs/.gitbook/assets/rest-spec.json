@@ -42281,7 +42281,7 @@
         },
         "summary": "Bulk deletion of assignments in an organization",
         "tags": [
-          "Assignment"
+          "Learn assignment"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -42378,7 +42378,7 @@
         },
         "summary": "Retrieve a list of assignments for an organization",
         "tags": [
-          "Assignment"
+          "Learn assignment"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
