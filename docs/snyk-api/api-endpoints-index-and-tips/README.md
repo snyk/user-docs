@@ -389,6 +389,9 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 ### [Get issues by org ID](../reference/issues.md#orgs-org\_id-issues)
 
+**More information:** [Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues);\
+[List all issues including Snyk Code issues in all the Projects in an Organization](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
+
 ### [Get an issue](../reference/issues.md#orgs-org\_id-issues-issue\_id) (Org)
 
 ### [Get issues by group ID](../reference/issues.md#orgs-org\_id-issues-issue\_id)
@@ -593,11 +596,16 @@ To list all Projects that have a vulnerability linked to a CVE, use the capabili
 
 To get a list of issues that have been fixed, use the endpoint [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest) and filter by `“isFixed”: true` in the request body. This endpoint also provides a [list of all IaC issues](../../scan-with-snyk/snyk-iac/view-snyk-iac-issue-reports.md#api-access-to-iac-issues).
 
-**More information:** [Priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md); [View Snyk IaC issue reports](../../scan-with-snyk/snyk-iac/view-snyk-iac-issue-reports.md)
+**More information:** [Priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md);\
+[View Snyk IaC issue reports](../../scan-with-snyk/snyk-iac/view-snyk-iac-issue-reports.md);\
+[Scenario: Retrieve a Project snapshot for every Project in a given Group](scenarios-for-using-the-snyk-api.md#retrieve-a-project-snapshot-for-every-project-in-a-given-group);\
+[Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues)
 
 ### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
 
 See notes for [Get list of latest issues](./#get-list-of-latest-issues).
+
+**More information:** [Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability)
 
 ### [Get test counts](../reference/reporting-api-v1.md#reporting-counts-tests)
 
