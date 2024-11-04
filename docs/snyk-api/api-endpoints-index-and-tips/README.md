@@ -474,6 +474,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Get organization](../reference/orgs.md#orgs-org\_id-1)
 
+**More information:** [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
+
 ### [List all organizations in a group](../reference/orgs.md#groups-group\_id-orgs)
 
 ### [Get an ORG](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-) (beta)
@@ -633,6 +635,8 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results) (beta)
 
+**More information:** [Test an SBOM document for vulnerabilities](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
+
 ## SastSettings
 
 ### [Enable/Disable the Snyk Code settings for an org](../reference/sastsettings.md#orgs-org\_id-settings-sast)
@@ -727,7 +731,9 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Get targets by org ID](../reference/targets.md#orgs-org\_id-targets)&#x20;
 
-**More information:** [Target definition on the Snyk Projects page](../../snyk-admin/snyk-projects/#target)
+**More information:** [Target definition on the Snyk Projects page](../../snyk-admin/snyk-projects/#target);\
+[Scenario: Identify and import new repositories only](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis);\
+[Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#identify-and-import-new-repositories-only)
 
 ### [Get target by target ID](../reference/targets.md#orgs-org\_id-targets-target\_id)
 
