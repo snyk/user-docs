@@ -62,7 +62,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ### DEPRECATED [Delete an app](../reference/apps.md#orgs-org\_id-apps-client\_id-2)
 
-**Replaced by:** Delete an app by its App ID
+**Replaced by:** Delete a Snyk App by its App ID
 
 ### DEPRECATED [Manage client secrets for an app](../reference/apps.md#orgs-org\_id-apps-client\_id-secrets)
 
@@ -797,6 +797,8 @@ Note: Use this endpoint to remove users from a group.
 ### [Retrieve a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid)
 
 ### [Delete a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-1)
+
+**More information:** [Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base)
 
 ### [Ping a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-ping)
 
