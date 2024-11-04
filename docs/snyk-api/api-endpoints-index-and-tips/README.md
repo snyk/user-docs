@@ -86,6 +86,8 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 **Replaces:** DEPRECATED Create a new app for an organization
 
+**More information:** [Create a Snyk App using the Snyk API](../how-to-use-snyk-apps-apis/create-a-snyk-app-using-the-snyk-api.md)
+
 ### DEPRECATED [Get a list of apps created by an organization](../reference/apps.md#orgs-org\_id-apps-creations-1)
 
 **Replaced by:** Get a list of apps created by an organization
@@ -478,7 +480,7 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Delete a project](../reference/projects-v1.md#org-orgid-project-projectid-2)
 
-More information: [Annotated import](../../scan-with-snyk/snyk-container/kubernetes-integration/annotated-import.md) (Kubernetes integration section)
+More information: [Annotated import](../../scan-with-snyk/snyk-container/kubernetes-integration/annotated-import.md) (Kubernetes integration section); [Project type responses from the API](project-type-responses-from-the-api.md); [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)
 
 ### [Add a tag to a project](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
@@ -507,7 +509,8 @@ More information: [Annotated import](../../scan-with-snyk/snyk-container/kuberne
 
 ### [Create jira issue](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue)
 
-**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md);\
+[Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [List all (project) ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignores)
 
@@ -607,6 +610,8 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) (beta)
 
+**More information:** [Test an SBOM document for vulnerabilities](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
+
 ### [Gets an SBOM test run status](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-) (beta)
 
 ### [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results) (beta)
@@ -625,7 +630,8 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Create a service account for an organization](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md), [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md);\
+[Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get a list of organization service accounts](../reference/serviceaccounts.md#orgs-org\_id-service\_accounts-1)
 
@@ -649,7 +655,8 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Create a service account for a group](../reference/serviceaccounts.md#groups-group\_id-service\_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md), [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Service accounts using OAuth 2.0](../../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md);\
+[Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get a list of group service accounts](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-1)
 
@@ -683,7 +690,7 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Create a new Slack settings override for a given project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id)
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Create a Slack notification customization for a Project)
+**More information:** [Slack app(for Jira integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Create a Slack notification customization for a Project)
 
 ### [Update Slack notification settings for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-1)
 
@@ -782,6 +789,8 @@ Note: Use this endpoint to remove users from a group.
 ## Webhooks (v1)
 
 ### [Create a webhook](../reference/webhooks-v1.md#org-orgid-webhooks)
+
+**More information:** [Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management)](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base)
 
 ### [List webhooks](../reference/webhooks-v1.md#org-orgid-webhooks-1)
 
