@@ -52,6 +52,8 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 **Replaces:** DEPRECATED Get a list of apps created by an organization
 
+**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
+
 ### DEPRECATED [Update app attributes that are name, redirect URIs, and access token time to live](../reference/apps.md#orgs-org\_id-apps-client\_id)
 
 **Replaced by:** Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID
@@ -74,7 +76,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 **Replaces:** DEPRECATED Get a list of app bots authorized to an organization
 
-**More information:** [Slack app](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Find the Slack App Bot ID)
+**More information:** [Slack app (Jira integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Find the Slack App Bot ID)
 
 ### [Revoke app authorization for a Snyk organization](../reference/apps.md#orgs-org\_id-apps-installs-install\_id)
 
@@ -91,8 +93,6 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 ### DEPRECATED [Get a list of apps created by an organization](../reference/apps.md#orgs-org\_id-apps-creations-1)
 
 **Replaced by:** Get a list of apps created by an organization
-
-**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
 
 ### [Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID](../reference/apps.md#orgs-org\_id-apps-creations-app\_id)
 
@@ -117,6 +117,8 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 ### DEPRECATED [Get a list of app bots authorized to an organization](../reference/apps.md#orgs-org\_id-app\_bots)
 
 **Replaced by:** [Get a list of apps installed for an organization](https://apidocs.snyk.io/?#get-/orgs/-org\_id-/apps/installs)
+
+**More information:** [Slack app](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (for Jira integration)
 
 ### DEPRECATED [Revoke app bot authorization](../reference/apps.md#orgs-org\_id-app\_bots-bot\_id)
 
@@ -239,7 +241,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Get a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-)
 
-**More information:** [Org and group identification for Projects](organization-and-group-identification-for-projects-using-the-api.md)
+**More information:** [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
 
 ### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-/sso\_connections)
 
@@ -327,10 +329,15 @@ If a call to the Import targets endpoint fails, use [Get import job detail](../r
 
 The poll results return a message per manifest processed, either `success: true` or `success: false.`
 
-**More information:** [Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/);\
+**More information Import targets:** [Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/);\
 [Configure integrations](../../implement-snyk/team-implementation-guide/phase-2-configure-your-organization/configure-integrations.md) (Enterprise implementation guide, Phase 2);\
 [Import Projects](../../implement-snyk/team-implementation-guide/phase-3-gain-visibility/import-projects.md) (Enterprise implementation guide, Phase 3);\
 [Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)
+
+**More information Get import job details:** [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images);\
+[Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)\
+[api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md)\
+[api-import Kicking off an import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/kicking-off-an-import.md)
 
 ## Integrations (v1)
 
@@ -607,6 +614,8 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 **More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md); [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
 ### [Get a project’s SBOM document](../reference/sbom.md)
+
+**More information:** [Get a project’s SBOM document](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-get-a-projects-sbom-document.md)
 
 ### [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) (beta)
 
