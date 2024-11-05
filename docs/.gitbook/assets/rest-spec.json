@@ -19347,7 +19347,6 @@
             "name": "version",
             "required": true,
             "schema": {
-              "default": "2023-08-31~beta",
               "type": "string"
             }
           }
@@ -53786,6 +53785,11 @@
       "strategies": [
         {
           "InternalJWT": {}
+        },
+        {
+          "SharedSecret": {
+            "env": "PACKAGE_POLICY_SERVICE_SHARED_SECRET"
+          }
         }
       ]
     }
