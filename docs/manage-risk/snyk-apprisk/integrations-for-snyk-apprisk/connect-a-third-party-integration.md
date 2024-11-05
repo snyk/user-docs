@@ -258,7 +258,7 @@ The Dynatrace integration is in Closed Beta and available with Snyk AppRisk Pro.
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md) (for supported languages, please refer to the official Dynatrace [documentation](https://docs.dynatrace.com/docs/platform-modules/application-security/getting-started/get-started-with-application-security#tech)).
+The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md). For more details about the supported languages, navigate to the [Dynatrace Supported technologies](https://docs.dynatrace.com/docs/platform-modules/application-security/getting-started/get-started-with-application-security#tech) page.&#x20;
 
 ### Prerequisites <a href="#dynatrace-prerequisites" id="dynatrace-prerequisites"></a>
 
@@ -323,7 +323,7 @@ The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-
 
 * **Service Account API Token** - Navigate to the [Service Account setup instructions page](https://docs.sysdig.com/en/docs/administration/administration-settings/access-and-secrets/user-and-team-administration/manage-teams-and-roles/#service-accounts) for details on how to create a Sysdig Service Account in order to obtain an API Token.
   * Set **View Only** as the Role for this Service Account.
-  * Set an **Expiration Date** for the Service Account. Note that once expired the Sysdig integration will no longer be able to pull information until updated with a new Service Account.
+  * Set an **Expiration Date** for the Service Account. After the Service Account expires, the Sysdig integration will no longer be able to pull information until updated with a new Service Account.
 
 {% hint style="info" %}
 The created **Service Account** must be under **Sysdig Secure**, not **Sysdig Monitor**.
