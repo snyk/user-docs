@@ -258,7 +258,7 @@ The Dynatrace integration is in Closed Beta and available with Snyk AppRisk Pro.
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
+The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md) (for supported languages, please refer to the official Dynatrace [documentation](https://docs.dynatrace.com/docs/platform-modules/application-security/getting-started/get-started-with-application-security#tech)).
 
 ### Prerequisites <a href="#dynatrace-prerequisites" id="dynatrace-prerequisites"></a>
 
@@ -321,10 +321,12 @@ The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-
 
 ### Required parameters <a href="#sysdig-required-parameters" id="sysdig-required-parameters"></a>
 
-* **Account API Token** - Navigate to the [Retrieve the Sysdig API token](https://docs.sysdig.com/en/docs/administration/administration-settings/user-profile-and-password/retrieve-the-sysdig-api-token/) page for details on how to retrieve your Sysdig API Token.
+* **Service Account API Token** - Navigate to the [Service Account setup instructions page](https://docs.sysdig.com/en/docs/administration/administration-settings/access-and-secrets/user-and-team-administration/manage-teams-and-roles/#service-accounts) for details on how to create a Sysdig Service Account in order to obtain an API Token.
+  * Set **View Only** as the Role for this Service Account.
+  * Set an **Expiration Date** for the Service Account. Note that once expired the Sysdig integration will no longer be able to pull information until updated with a new Service Account.
 
 {% hint style="info" %}
-The **Account API Token** must be a **Sysdig Secure API token** and not a **Sysdig Monitor API Token**.&#x20;
+The created **Service Account** must be under **Sysdig Secure**, not **Sysdig Monitor**.
 {% endhint %}
 
 * **Region -** Navigate to the Sysdig [SAAS regions and IP ranges](https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges) page for details about the Sysdig region URLs.

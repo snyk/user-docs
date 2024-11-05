@@ -61,9 +61,14 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
 
 ## Install Snyk Runtime Sensor
 
+{% hint style="info" %}
+* The Snyk Runtime Sensor is deployed as a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), which means there's a single [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) of the sensor, per [Node](https://kubernetes.io/docs/concepts/architecture/nodes/) in the cluster.
+* The Snyk Runtime Sensor doesn't use any persistent storage, and its disk usage footprint is negligible.
+{% endhint %}
+
 * The Snyk Runtime Sensor DaemonSet must meet the following minimum requirements:
-  * `CPU: 100m`
-  * `Memory: 512Mi`
+  * `CPU: 100m` (can be increased using Helm)
+  * `Memory: 512Mi` (can be increased using Helm)
 * Choose one of the following methods to deploy the Snyk Runtime Sensor:&#x20;
   * [Install the Snyk Runtime Sensor using a Helm chart ](snyk-runtime-sensor.md#using-a-helm-chart)
   * [Install the Snyk Runtime Sensor using a Helm chart and the AWS Secrets Manager ](snyk-runtime-sensor.md#using-a-helm-chart-and-the-aws-secrets-manager)
