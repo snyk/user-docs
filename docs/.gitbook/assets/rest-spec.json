@@ -19347,6 +19347,7 @@
             "name": "version",
             "required": true,
             "schema": {
+              "default": "2023-08-31~beta",
               "type": "string"
             }
           }
@@ -42284,7 +42285,6 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-05-13~experimental",
           "2024-10-13~beta"
         ],
         "x-snyk-api-resource": "assignments",
@@ -42381,7 +42381,6 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-05-13~experimental",
           "2024-10-13~beta"
         ],
         "x-snyk-api-resource": "assignments",
@@ -42453,7 +42452,6 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-05-13~experimental",
           "2024-10-14~experimental",
           "2024-10-15~beta"
         ],
@@ -53785,11 +53783,6 @@
       "strategies": [
         {
           "InternalJWT": {}
-        },
-        {
-          "SharedSecret": {
-            "env": "PACKAGE_POLICY_SERVICE_SHARED_SECRET"
-          }
         }
       ]
     }
