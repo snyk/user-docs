@@ -80,7 +80,7 @@ If the GitHub Cloud App is already installed in a GitHub organization, you can s
 
 Specify whether you wish to install the app in all of the repositories belonging to the selected GitHub organization, or you want to install the app in a select number of repositories belonging to a GitHub organization; then click **Install & Authorize**.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.09.37.png" alt="Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into" width="375"><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/permissions-install-authorize-github-cloud-app.png" alt="Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into" width="375"><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
 
 {% hint style="warning" %}
 The GitHub Cloud App will lose access to Snyk if it is uninstalled from the GitHub organization or if the repositories to which the app instance has access are edited.
