@@ -277,7 +277,8 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List all members in a group](../reference/groups-v1.md#group-groupid-members)
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md).
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md);\
+[Scenario: Assign all users in a given list to all the Organizations a company has (all Organizations in a Group)](scenarios-for-using-the-snyk-api.md#assign-all-users-in-a-given-list-to-all-the-organizations-a-company-has-all-organizations-in-a-group)
 
 ## IacSettings
 
@@ -357,6 +358,9 @@ The poll results return a message per manifest processed, either `success: true`
 **More information:** [Scenario: Rotate or change your Broker token for any reason](scenarios-for-using-the-snyk-api.md#rotate-or-change-your-broker-token-for-any-reason)
 
 ### [List](../reference/integrations-v1.md#org-orgid-integrations-1)
+
+**More information:** [Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management)](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base);\
+[api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);
 
 ### [Get existing integration by type](../reference/integrations-v1.md#org-orgid-integrations-type)
 
@@ -482,6 +486,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [List accessible organizations](../reference/orgs.md#orgs)
 
+**More information:** [Prerequisites for Snyk Apps](../how-to-use-snyk-apps-apis/prerequisites-for-snyk-apps.md)
+
 ### [Update organization](../reference/orgs.md#orgs-org\_id)
 
 ### [Get organization](../reference/orgs.md#orgs-org\_id-1)
@@ -571,6 +577,8 @@ By using the API endpoint Applying attributes, you can set attributes for Snyk P
 ### [List all Aggregated (Project) issues](../reference/projects-v1.md#org-orgid-project-projectid-aggregated-issues)
 
 The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues) returns an array of `ignoreReasons` for each vulnerability. This happens because ignores implemented using the CLI and API are path-based and thus potentially could have different `ignoreReasons` for different paths. Because List all aggregated issues returns only one issue for all paths, the entire set of reasons is returned. Snyk groups issues together by their identifier, so one response for the List all aggregated issues endpoint could correspond to the same issue across multiple paths. Thus the `ignoredReason` is across all issues that are aggregated and applies to that single grouped issue.
+
+**More information:** [Scenario: List all issues including Snyk Code issues in all the Projects in an Organization](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
 
 ### [Activate](../reference/projects-v1.md#org-orgid-project-projectid-activate) (a project)
 
