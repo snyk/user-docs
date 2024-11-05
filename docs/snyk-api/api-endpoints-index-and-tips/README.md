@@ -329,10 +329,21 @@ If a call to the Import targets endpoint fails, use [Get import job detail](../r
 
 The poll results return a message per manifest processed, either `success: true` or `success: false.`
 
-**More information Import targets:** [Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/);\
+**More information:** [api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
+[api-import Kicking off an import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/kicking-off-an-import.md)
+
+**More information Import targets:**\
 [Configure integrations](../../implement-snyk/team-implementation-guide/phase-2-configure-your-organization/configure-integrations.md) (Enterprise implementation guide, Phase 2);\
 [Import Projects](../../implement-snyk/team-implementation-guide/phase-3-gain-visibility/import-projects.md) (Enterprise implementation guide, Phase 3);\
-[Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)
+[Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)\
+[api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md)\
+[api-import Kicking off an import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/kicking-off-an-import.md)\
+[Scenario:: Identify and import new repositories only](scenarios-for-using-the-snyk-api.md#identify-and-import-new-repositories-only)\
+[Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-and-import-new-projects-in-a-repository-into-a-target)\
+[Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
+[Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)\
+[Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)\
+[Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/)
 
 **More information Get import job details:** [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images);\
 [Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)\
@@ -464,7 +475,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Invite users](../reference/organizations-v1.md#org-orgid-invite)
 
-**More information:** [Update member roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md)
+**More information:** [Update member roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md);\
+[Scenario: Assign all users in a given list to all the Organizations a company has (all Organizations in a Group)](scenarios-for-using-the-snyk-api.md#assign-all-users-in-a-given-list-to-all-the-organizations-a-company-has-all-organizations-in-a-group)
 
 ## Orgs (GA and beta)
 
