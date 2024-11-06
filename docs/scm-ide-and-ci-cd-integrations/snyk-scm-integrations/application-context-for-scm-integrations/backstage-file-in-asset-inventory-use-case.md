@@ -18,6 +18,10 @@ The Backstage data is dynamic and may change over time:
 * If new commits or updates are made on the `catalog-info.yaml` file, then Snyk AppRisk updates the asset attribute for that specific repository asset.
 * If the`catalog-info.yaml` file is removed from the repository, then Snyk AppRisk deletes the asset attribute from that specific repository assets.
 
+{% hint style="info" %}
+You can use quotes (`""`) to escape keys that contain periods (`.`), for example`"`[`example.com`](http://example.com/)`".owner`.
+{% endhint %}
+
 ## Inventory menu and the Backstage file&#x20;
 
 Depending on the selection you made on the Integration Hub configuration menu, only those selections are displayed in filters from the Inventory menu. For example, if you selected the Category attribute, then it will also be displayed in the filters list.
