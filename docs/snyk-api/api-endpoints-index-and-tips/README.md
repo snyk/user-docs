@@ -267,7 +267,8 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
-**More information:** [Update member roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md); [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Update member roles using the API](../../snyk-admin/user-management-with-the-api/update-member-roles-using-the-api.md);\
+[Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
@@ -402,7 +403,12 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 ### [List issues for a package](../reference/issues.md#orgs-org\_id-packages-purl-issues)
 
-**More information:** [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md), [Rust](../../supported-languages-package-managers-and-frameworks/rust.md), [Guidance for Snyk for C++ page, Alternate testing options section](../../supported-languages-package-managers-and-frameworks/c-c++/guidance-for-snyk-for-c-c++.md#alternate-testing-options), [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md), [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript), [List issues for a package page](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
+**More information:** [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md);\
+[Rust](../../supported-languages-package-managers-and-frameworks/rust.md):\
+[Guidance for Snyk for C++ page, Alternate testing options section](../../supported-languages-package-managers-and-frameworks/c-c++/guidance-for-snyk-for-c-c++.md#alternate-testing-options);\
+[Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md);\
+[Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript);\
+[List issues for a package page](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
 
 ### [List issues for a given set of packages](../reference/issues.md#orgs-org\_id-packages-issues) (Currently not available to all customers)
 
@@ -435,7 +441,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [List all the organizations a user belongs to](../reference/organizations-v1.md#orgs)
 
-**More information:** [Org and group identification for Projects](organization-and-group-identification-for-projects-using-the-api.md)
+**More information:** [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md);\
+[Scenario: Rotate or change your Broker token for any reason](scenarios-for-using-the-snyk-api.md#rotate-or-change-your-broker-token-for-any-reason)
 
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
@@ -592,9 +599,18 @@ The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.i
 
 ### [List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)
 
-The query-string parameter types is optional. The endpoint does not enforce specific project types and will return no matching projects if you enter a string that does not match a project type.
+The query-string parameter for types is optional. The endpoint does not enforce specific project types and will return `no matching projects` if you enter a string that does not match a project type.
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Find your Project ID); [Snyk Projects](../../snyk-admin/snyk-projects/); [Project information](../../snyk-admin/snyk-projects/project-information.md)
+**More information:** [Slack app (for Jira integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Find your Project ID);\
+[Snyk Projects](../../snyk-admin/snyk-projects/);\
+[Project information](../../snyk-admin/snyk-projects/project-information.md);\
+[Project attributes](../../snyk-admin/snyk-projects/project-attributes.md);\
+[Scenario: Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability);\
+[Scenario: List all issues including Snyk Code issues in all the Projects in an Organization](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization);\
+[Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues);\
+[Scenario: Tag all Projects in Snyk](scenarios-for-using-the-snyk-api.md#tag-all-projects-in-snyk);\
+[Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images);\
+[Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-and-import-new-projects-in-a-repository-into-a-target)
 
 ### [Updates project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id)
 
@@ -842,6 +858,8 @@ Note: Use this endpoint to remove users from a group.
 **More information:** [Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management)](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base)
 
 ### [List webhooks](../reference/webhooks-v1.md#org-orgid-webhooks-1)
+
+**More information:**&#x20;
 
 ### [Retrieve a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid)
 
