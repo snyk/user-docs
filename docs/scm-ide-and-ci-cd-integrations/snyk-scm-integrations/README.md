@@ -202,16 +202,7 @@ To set up the GitHub Cloud app integration you must be a:
 
 The following table states the required GitHub App permissions and scopes:
 
-| Action and scope                                                                                                      | Scope                                  | Permission     |
-| --------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | -------------- |
-| Determine if the GitHub user has admin role on the GitHub org, to restrict app installation reuse to only admin users | Members (Organisation level)           | Read           |
-| Search repositories, and access repository metadata.                                                                  | Metadata (repository level)            | Read           |
-| Interact with the GitHub Checks tab                                                                                   | Checks (repository level)              | Read and write |
-| Create commits and branches                                                                                           | Contents (repository level)            | Read and write |
-| Send PR check results as commit statuses                                                                              | Commit status (repository level)       | Read and write |
-| Get pull requests details, post related comments (next gen PR experience)                                             | Pull request (repository level)        | Read and write |
-| Manage webhooks which trigger the PR checks                                                                           | Repository hooks (repository level)    | Read and write |
-| Grouping pull requests                                                                                                | Repository projects (repository level) | Read and write |
+<table><thead><tr><th width="191">Action and scope</th><th width="254">Scope</th><th>Level</th><th>Permission</th></tr></thead><tbody><tr><td>Determine if the GitHub user has admin role on the GitHub org, to restrict app installation reuse to only admin users</td><td>Members</td><td>Organization</td><td>Read</td></tr><tr><td>Search repositories, and access repository metadata.</td><td>Metadata</td><td>Repository</td><td>Read</td></tr><tr><td>Interact with the GitHub Checks tab</td><td>Checks</td><td>Repository</td><td>Read and write</td></tr><tr><td>Create commits and branches</td><td>Contents</td><td>Repository</td><td>Read and write</td></tr><tr><td>Send PR check results as commit statuses</td><td>Commit status</td><td>Repository</td><td>Read and write</td></tr><tr><td>Get pull requests details, post related comments (next gen PR experience)</td><td>Pull request</td><td>Repository</td><td>Read and write</td></tr><tr><td>Manage webhooks which trigger the PR checks</td><td>Repository hooks</td><td>Repository</td><td>Read and write</td></tr></tbody></table>
 
 ### GitHub Server App permission requirements
 
