@@ -271,7 +271,11 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
-**More information:** [Org and group identification for Projects](organization-and-group-identification-for-projects-using-the-api.md); [Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
+**More information:** [Org and group identification for Projects](organization-and-group-identification-for-projects-using-the-api.md);\
+[Legacy custom mapping](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md);\
+[api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
+[Scenario: Retrieve a Project snapshot for every Project in a given Group](scenarios-for-using-the-snyk-api.md#retrieve-a-project-snapshot-for-every-project-in-a-given-group);\
+[Scenario: Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability)
 
 ### [Add a member to an organization within a group](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
@@ -555,6 +559,8 @@ More information: [Annotated import](../../scan-with-snyk/snyk-container/kuberne
 ### [List all project snapshots](../reference/projects-v1.md#org-orgid-project-projectid-history)
 
 ### [List all project snapshot issue paths](../reference/projects-v1.md#org-orgid-project-projectid-history-snapshotid-issue-issueid-paths)
+
+**More information:** [Project issue paths API endpoints](project-issue-paths-api-endpoints.md)
 
 ### [List all project snapshot aggregated issues](../reference/projects-v1.md#org-orgid-project-projectid-history-snapshotid-aggregated-issues)
 
