@@ -15,7 +15,6 @@ This document collects questions the support team receives frequenty and provide
 
 * To ignore a code vulnerability, import the Project into the Snyk UI, and use the ignore button.&#x20;
 * You cannot use the `.snyk` file to ignore issues in Code scans.
-* If you use the Early Access CLI option `code test --report`, issues ignored in the Web UI are suppressed in linked CLI scans. See [Ignore CLI results](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md#ignore-cli-results) when publishing Snyk Code results.
 * This is not currently shown in the results from the `snyk-to-html` tool for code scans with ignored issues; these will still show as issues.
 
 ### Q: How do I avoid scanning certain files for Open Source scans?

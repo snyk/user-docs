@@ -145,8 +145,6 @@ var generalLogFileName = req.query.file || 'standard_log.log';
 var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data) {...
 ```
 
-For more information, see [Ignore CLI results for Snyk Code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md#ignore-cli-results-for-snyk-code).
-
 ## Ignore issues in Snyk Container
 
 When you scan container images using `snyk container test`, you can ignore issues that are not relevant to you by setting an ignore in [The .snyk file](../../policies/the-.snyk-file.md).

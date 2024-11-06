@@ -17,7 +17,6 @@ Not all features follow all these stages, and timelines for each feature to move
 **Snyk features in Closed Beta**
 
 * [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
-* [Publish Snyk Code CLI results](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues.md)
 * Third-party integrations for Snyk AppRisk:
   * [Orca Security](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#orca-security-setup-guide)
   * [Jira](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#jira-setup-guide)
