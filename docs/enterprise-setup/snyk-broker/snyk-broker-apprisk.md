@@ -4,10 +4,6 @@ If your SCM or third-party instance is not publicly accessible, you need Snyk Br
 
 Enable Broker for Snyk AppRisk by setting the `APPRISK` environment variable to `true` in the installation command: `ACCEPT_APPRISK=true`  for Docker and `--set enableAppRisk=true` for Helm.
 
-Typically, for any brokered integration you want to add to Snyk Apprisk, you need the Broker token following a completed Broker setup. You can find the Broker token in your Organization integration general settings for your integration type, for example, GitHub, GitLab, and so on, as shown in the following image:
-
-<figure><img src="../../.gitbook/assets/Screenshot 2024-11-01 at 1.05.55 PM.png" alt="Broker token location in the integration settings"><figcaption><p>Broker token location</p></figcaption></figure>
-
 ## SCM integrations
 
 * GitHub - install and configure Snyk Broker&#x20;
@@ -33,17 +29,22 @@ Typically, for any brokered integration you want to add to Snyk Apprisk, you nee
 
 You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445489dd96cc68c8386ede38/defaultFilters/apprisk) all the updated `.json` files that include the allowed list of accessible endpoints for the integrations.
 
+As the final step following a completed Broker setup, for any brokered integration you want to add to Snyk Apprisk, you must obtain the Broker token. You can find the Broker token in your Organization integration general settings for your integration type, for example, GitHub, GitLab, and so on, as shown in the following image. For third-party integrations, see the next section.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-11-01 at 1.05.55 PM.png" alt="&#x22;&#x22;"><figcaption><p>Broker token in GitLab integration general settings</p></figcaption></figure>
+
 ## Third-party integrations
 
 {% hint style="warning" %}
-The third-party integrations are available only for the Snyk AppRisk Pro version. Contact your salesperson if you are interested in Snyk AppRisk Pro.
+The third-party integrations are available only for the Snyk AppRisk Pro version. Contact your sales representative if you are interested in Snyk AppRisk Pro.
 {% endhint %}
 
 ### Prerequisites
 
-Use the following steps to install and run Snyk Broker for the Snyk AppRisk third-party integrations.
+Follow these steps to install and run Snyk Broker for the Snyk AppRisk third-party integrations.
 
-1. Ensure you have the Snyk Broker token for the Snyk AppRisk integration. The Snyk support team can provide the needed token.&#x20;
+1. Ensure you have a Snyk Broker token for the Snyk AppRisk integration.\
+   The Snyk support team can provide the needed token.&#x20;
 2. Pull the latest Broker image by running this command:
 
 ```docker
@@ -56,7 +57,7 @@ docker pull snyk/broker:universal
 
 After you implement all the general steps applicable to third-party integrations, you can configure the integration with unique credentials.&#x20;
 
-The following example uses `CHECKMARX_PASSWORD` as the value for the credentials reference. Run the following commands with your password:
+The following example has `CHECKMARX_PASSWORD` as the value for the credentials reference. Run the following commands with your password:
 
 ```docker
 docker run --restart=always \
