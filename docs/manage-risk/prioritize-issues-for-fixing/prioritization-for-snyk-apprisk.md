@@ -1,8 +1,8 @@
 # Prioritization for Snyk AppRisk
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status** \
-The Snyk Runtime Sensor and the third-party integrations providing the Deployed and Loaded Package risk factors are in Closed Beta and available only for Snyk AppRisk Pro.&#x20;
+The Snyk Runtime Sensor and the third-party integrations providing the Deployed and Loaded Package risk factors are in Closed Beta and available only Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 Snyk AppRisk uses holistic application intelligence to help you better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. Users can also prioritize their issues based on asset classification as defined in Snyk AppRisk policies.&#x20;

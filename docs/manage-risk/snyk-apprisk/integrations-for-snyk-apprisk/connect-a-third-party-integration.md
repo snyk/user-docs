@@ -27,10 +27,10 @@ Data synchronization may take up to two hours after receiving the **Connected** 
 
 ## Veracode setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-Veracode is in Early Access and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Veracode for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Prerequisites <a href="#verocode-prerequisites" id="verocode-prerequisites"></a>
@@ -64,10 +64,10 @@ Ensure you are adding a custom field called repoURL:
 
 ## Checkmarx setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-Checkmarx is in Early Access and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Checkmarx for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 Use the following instructions to set up your Checkmarx SAST integration. Checkmarx SAST integration is only working for the Checkmarx SAST, we are not yet supporting Checkmarx One.
@@ -101,10 +101,10 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 
 ## SonarQube setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-SonarQube is in Early Access and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+SonarQube for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#sonarqube-required-parameters" id="sonarqube-required-parameters"></a>
@@ -124,10 +124,10 @@ SonarQube is in Early Access and available with Snyk AppRisk Pro. If you want to
 
 ## Nightfall setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-Nightfall is in Closed beta and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Nightfall for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
@@ -159,10 +159,10 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## GitGuardian setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-GitGuardian is in Early Access and available with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+GitGuardian for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#gitguardian-required-parameters" id="gitguardian-required-parameters"></a>
@@ -200,10 +200,10 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## Jira setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-Jira is in Closed Beta and available with Snyk AppRisk Essentials and Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Jira for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#jira-required-parameters" id="jira-required-parameters"></a>
@@ -250,12 +250,10 @@ The following table presents the functionality of all types of Jira integrations
 
 ## Dynatrace setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-The Dynatrace integration is in Closed Beta and available with Snyk AppRisk Pro.
-
-If you want to set it up in your Group, contact your Snyk account team.
+Dynatrace for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
@@ -308,12 +306,10 @@ After the Dynatrace runtime data becomes available from the runtime integration,
 
 ## Sysdig setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-The Sysdig integration is in Closed Beta and available with Snyk AppRisk Pro.
-
-If you want to set it up in your Group, contact your Snyk account team.
+Sysdig for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
@@ -361,12 +357,10 @@ After the Sysdig runtime data becomes available from the runtime integration, it
 
 ## Orca Security setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-The Orca Security integration is in Closed Beta and available with Snyk AppRisk Pro.
-
-If you want to set it up in your Group, contact your Snyk account team.
+Orca Security for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following[ risk factors](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Orca runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
@@ -403,12 +397,10 @@ Create the Orca API Token by following these steps:
 
 ## CrowdStrike setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-The CrowdStrike integration is in Closed Beta and available with Snyk AppRisk Pro.
-
-If you want to set it up in your Group, contact your Snyk account team.
+CrowdStrike for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factor is reported from the CrowdStrike runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
@@ -454,12 +446,10 @@ After the CrowdStrike runtime data becomes available from the runtime integratio
 
 ## SentinelOne setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-The SentinelOne integration is in Closed Beta and available with Snyk AppRisk Pro.
-
-If you want to set it up in your Group, contact your Snyk account team.
+SentinelOne for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factor is reported from the SentinelOne runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
@@ -513,12 +503,10 @@ Alternatively, you can use an existing **API Token**.
 
 ## Datadog setup guide
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-The Datadog integration is in Closed Beta and available with Snyk AppRisk Pro.
-
-If you want to set it up in your Group, contact your Snyk account team.
+Datadog for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factor is reported from the Datadog runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.

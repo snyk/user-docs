@@ -1,14 +1,14 @@
 # Risk Score
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
-Risk Score is currently in [Early Access](../../getting-started/snyk-release-process.md) for Snyk Open Source and Snyk Container.
+Risk Score is in Early Access and available for Snyk Open Source and Snyk Container for Snyk Enterprise and Snyk Free plans. If you want to set it up in your Group, contact your Snyk account team.
 
 Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
 
-The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not currently supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
+The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
 
 Risk score remains the same over time if the contributing factors do not change. However, some contributing factors,  such as Exploit Prediction Scoring System (EPSS), potentially can change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change once, when the number of days becomes more than one year and the likelihood subscore decreases.&#x20;
 
@@ -27,7 +27,7 @@ You can wait for the Projects to be automatically re-tested (daily for Snyk Open
 {% endhint %}
 
 {% hint style="warning" %}
-Note that in the API, the relevant fields are still named with `priority.`When Risk Score is enabled, the scores and factors populated in these fields are based on the Risk Score model as part of the early access stage.
+In the API, the relevant fields are still named with `priority.`When Risk Score is enabled, the scores and factors populated in these fields are based on the Risk Score model as part of the early access stage.
 {% endhint %}
 
 ## Explore the Risk Score by issue&#x20;

@@ -37,9 +37,12 @@ You can customize the filters and actions or use the template as is. After finis
 
 ## **Define Filters**
 
-{% hint style="warning" %}
-**Release status** \
-**Risk factors** on assets, **Runtime discovered** and **Runtime last seen** filters are currently in Closed Beta and available only with Snyk AppRisk Pro.
+{% hint style="info" %}
+**Release status**
+
+The risk factors on assets are taking the release status of the applied [risk factor](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
+
+The Runtime discovered and Runtime last seen filters are taking the release status of the used runtime [integration](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md).
 {% endhint %}
 
 Each filter component requires you to specify an asset property. Navigate to the [Filters capabilities](../../../manage-assets/assets-inventory-features.md#filters-capabilities) page to view all available properties for asset policies.

@@ -1,8 +1,9 @@
 # Application - Analytics
 
-{% hint style="warning" %}
-**Release status** \
-Application Analytics is in Early Access and available only for Snyk AppRisk Pro.
+{% hint style="info" %}
+**Release status**&#x20;
+
+Application Analytics for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The Analytics menu, available at the tenant level, under the Application Analytics tab (available only for Snyk AppRisk Pro). Application Analytics is designed to provide an in-depth analysis of your AppSec program, highlighting areas for improvement, emerging risks, and previously overlooked vulnerabilities to support AppSec managers and engineering teams.&#x20;
