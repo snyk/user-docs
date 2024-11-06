@@ -258,7 +258,11 @@ The Dynatrace integration is in Closed Beta and available with Snyk AppRisk Pro.
 If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md). For more details about the supported languages, navigate to the [Dynatrace Supported technologies](https://docs.dynatrace.com/docs/platform-modules/application-security/getting-started/get-started-with-application-security#tech) page.&#x20;
+The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
+
+{% hint style="info" %}
+The supported languages for the Loaded package risk factor reported from the Dynatrace integration are detailed on the Dynatrace [Supported technologies](https://docs.dynatrace.com/docs/platform-modules/application-security/getting-started/get-started-with-application-security#tech) page.
+{% endhint %}
 
 ### Prerequisites <a href="#dynatrace-prerequisites" id="dynatrace-prerequisites"></a>
 
@@ -313,6 +317,10 @@ If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
+
+{% hint style="info" %}
+The supported languages for the Loaded package risk factor are: Go, Java, JavaScript/TypeScript and Python.
+{% endhint %}
 
 ### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
 
