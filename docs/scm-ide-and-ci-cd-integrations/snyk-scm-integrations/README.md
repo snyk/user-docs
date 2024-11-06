@@ -41,6 +41,8 @@ The Integrations page at the Group level shows all active integrations, includin
 
 {% hint style="warning" %}
 The SCM integrations use an incremental approach to retrieve repositories. This means that when a sync is initiated, it checks the last update time of the repository and only transfers the repositories that have been modified since then.
+
+If there have been changes to the scope of the user or PAT used for the integration, any repositories that are newly within scope will only be identified after either a change to trigger the incremental collection or a change to the integration configuration itself.
 {% endhint %}
 
 The following supported Snyk data are automatically synced:
