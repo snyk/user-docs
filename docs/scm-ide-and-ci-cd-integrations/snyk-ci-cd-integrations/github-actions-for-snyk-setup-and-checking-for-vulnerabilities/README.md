@@ -132,7 +132,7 @@ Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-
 The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) option as shown in the example that follows.
 
 {% hint style="info" %}
-To use this option for private repos you must have GitHub Advanced Security. &#x20;
+To use this option for private repos you must have GitHub Advanced Security.
 
 If you see the error `Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Advanced Security is enabled. For more information, see "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)."
 {% endhint %}
@@ -195,7 +195,7 @@ env:
   SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-Every Snyk account has this token. Once you [create an account](https://docs.snyk.io/getting-started/create-a-snyk-account) you can find the API token in one of two ways:
+Every Snyk account has this token. After you have created an account with Snyk you can find the API token in one of two ways:
 
 1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained in [Revoking and regenerating Snyk API tokens](https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens).
 2. If you're using the [Snyk CLI](https://docs.snyk.io/snyk-cli/getting-started-with-the-cli) locally you can retrieve the API token by running `snyk config get api`.
