@@ -1,16 +1,15 @@
 # Prepare Snyk Broker for deployment
 
-{% hint style="warning" %}
-Before authenticating, be sure you have set your region properly. For details, see [Regional hosting and data residency](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency), which has the [list of regional URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#regional-urls).\
-Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
+{% hint style="info" %}
+Using Snyk Broker on Windows is not supported. Snyk recommends that Windows users deploy Broker using Linux.
 {% endhint %}
 
 ## Prerequisites for Snyk Broker
 
-The use of Snyk Broker on Windows is not supported. Snyk recommends that Windows users deploy Broker using Linux.
-
-When you set up Broker, Code Agent, or both for an environment other than the system default, additional environment variables with specific [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls) are required.\
+When you set up Broker, Code Agent, or both for an environment (region) other than the system default, before you can authenticate, you must set environment variables with specific [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
+
+For details, see [Regional hosting and data residency](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency).
 
 The following are prerequisites for using Snyk Broker in any environment:
 
