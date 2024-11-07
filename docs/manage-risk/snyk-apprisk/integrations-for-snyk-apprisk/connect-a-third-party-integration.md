@@ -20,6 +20,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [CrowdStrike](connect-a-third-party-integration.md#crowdstrike-setup-guide)
 * [SentinelOne](connect-a-third-party-integration.md#sentinelone-setup-guide)
 * [Datadog](connect-a-third-party-integration.md#datadog-setup-guide)
+* [GCP](connect-a-third-party-integration.md#gcp-setup-guide)
 
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
@@ -532,3 +533,40 @@ You must set the **Datadog Container Monitoring** for the desired cluster.
 * Optional, select the Datadog **Site**.
 * Click the **Done** button.
 * When the connection is established, the status of the Datadog integration is changed to **Connected**.
+
+## GCP setup guide
+
+{% hint style="info" %}
+**Release status**
+
+The GCP integration for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
+### Prerequisites <a href="#datadog-prerequisites" id="datadog-prerequisites"></a>
+
+Set up a service account for your GCP project to use with the integration:
+
+1. Navigate to your GCP project from the Google Cloud Console.
+2. Navigate to **IAM & Admin** -> **Service Accounts**.
+3. Click on **+ CREATE SERVICE ACCOUNT**.
+4. Choose a name (for example `snyk-service-account`), add an optional description and click **CREATE AND CONTINUE**.
+5. Under **Grant this service account access to project**, choose the following role to allow read-only access to all Kubernetes resources: `Cloud Asset Viewer`.
+6. Click **Done**.
+7. In the list of service accounts, click the service account you have just created.
+8. Click the **KEYS** tab, click **ADD KEY** -> **Create new key** -> **JSON** and then **CREATE**. The JSON file will be downloaded to your computer, remember its location.
+
+### Required parameters <a href="#datadog-required-parameters" id="datadog-required-parameters"></a>
+
+* **Project ID** - The ID of the GCP project you want to integrate with.
+* **JSON Key File** - The content of the JSON file you created and downloaded as part of the prerequisites.
+
+### Integration Hub setup <a href="#datadog-integration-hub-setup" id="datadog-integration-hub-setup"></a>
+
+* Open the **Integration Hub** menu.
+* Select the **Cloud Providers** tag and search for **GCP**.
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Add the **Project ID**.
+* Add the **JSON Key File** - The content of the JSON file created in the prerequisites section.
+* Click the **Done** button.
+* When the connection is established, the status of the GCP integration is changed to **Connected**.
