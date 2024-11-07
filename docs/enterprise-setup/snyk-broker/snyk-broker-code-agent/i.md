@@ -19,4 +19,4 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 The `brokerClientUrl` is is the address of the Broker Container. The default port for the Broker container is `8000`. See the values file for more information.
 
-The `accept.json` must be in the same directory as the Helm Chart. For definitions of the environment variables see [Run the Code Agent container](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-4-setting-up-the-code-agent/step-4.2-running-the-code-agent-container#running-the-code-agent-container).
+The `accept.json` must be in the same directory as the Helm Chart.
