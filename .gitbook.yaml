@@ -121,3 +121,4 @@ redirects:
   getting-started/snyk-learn/security-education-on-snyk-learn: getting-started/snyk-learn/README.md
   getting-started/snyk-learn/product-training-on-snyk-learn: getting-started/snyk-learn/README.md
   features/snyk-broker/broker-introduction: enterprise-setup/snyk-broker/README.md
+  scan-using-snyk/supported-languages-and-frameworks: supported-languages-package-managers-and-frameworks/README.md
