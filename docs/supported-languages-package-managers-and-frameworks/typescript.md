@@ -2,7 +2,9 @@
 
 The following summarizes Snyk support for TypeScript:
 
-Snyk for Typescript is supported **only for Snyk Code**.
+TypeScript is supported in exactly the same way as [JavaScript](javascript/javascript-for-open-source.md) in Snyk Open Source.
+
+Snyk for Typescript is supported for Snyk Code as follows:
 
 **Frameworks and libraries supported**:&#x20;
 
