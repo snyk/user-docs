@@ -84,6 +84,8 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ### [Manage client secret for non-interactive Snyk App installations](../reference/apps.md#orgs-org\_id-apps-installs-install\_id-secrets)
 
+**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
+
 ### [Create a new Snyk App for an organization](../reference/apps.md#orgs-org\_id-apps-creations)
 
 **Replaces:** DEPRECATED Create a new app for an organization
@@ -389,6 +391,8 @@ Scenario: [Create multiple new Organizations that all have the same settings in 
 
 ### [Provision new broker token](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication-provision-token)
 
+**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md) (Snyk Broker Code Agent)
+
 ## Invites
 
 See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
@@ -410,7 +414,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript);\
 [List issues for a package page](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
 
-### [List issues for a given set of packages](../reference/issues.md#orgs-org\_id-packages-issues) (Currently not available to all customers)
+### [List issues for a given set of packages](../reference/issues.md#orgs-org\_id-packages-issues) (not available to all customers)
 
 ### [Get issues by org ID](../reference/issues.md#orgs-org\_id-issues)
 
@@ -435,9 +439,11 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Dep Graph](../reference/monitor-v1.md)
 
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
+**More information:** [Dep Graph API (Bazel)](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
 
 ## Organizations (v1)
+
+**More information:** [Webhook events and payloads](../how-to-use-snyk-webhooks-apis/webhooks.md)
 
 ### [List all the organizations a user belongs to](../reference/organizations-v1.md#orgs)
 
@@ -447,7 +453,7 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
 **More information:** [Set visibility and configure an Organization template](../../implement-snyk/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/) (Enterprise implementation guide Phase 2, Configure accounts);\
-[api-import: Creating orgnizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
+[api-import: Creating organizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
 [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
 ### [Remove organization](../reference/organizations-v1.md#org-orgid)
@@ -458,7 +464,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
 
-**More information:** [Provision users to Organizations using the API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md); [Configure SSO](../../implement-snyk/enterprise-implementation-guide/phase-2-configure-account/configure-sso.md)
+**More information:** [Provision users to Organizations using the AP](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md):\
+[Scenario: Add users to organizations at scale ahead of the first login](scenarios-for-using-the-snyk-api.md#add-users-to-organizations-at-scale-ahead-of-the-first-login)
 
 ### [List pending user provisions](../reference/organizations-v1.md#org-orgid-provision-1)
 
@@ -513,7 +520,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ## Projects (v1)
 
-**More information:** [Project type responses from API](project-type-responses-from-the-api.md)
+**More information:** [Project type responses from API](project-type-responses-from-the-api.md);\
+[Webhook events and payloads](../how-to-use-snyk-webhooks-apis/webhooks.md)
 
 ### [Update a project](../reference/projects-v1.md#org-orgid-project-projectid)
 
@@ -539,6 +547,8 @@ More information: [Annotated import](../../scan-with-snyk/snyk-container/kuberne
 ### [Delete project settings](../reference/projects-v1.md#org-orgid-project-projectid-settings-2)
 
 ### [Move project to a different organization](../reference/projects-v1.md#org-orgid-project-projectid-move)
+
+**More informatiion:** [Scenario: Move projects from one organization to another](scenarios-for-using-the-snyk-api.md#move-projects-from-one-organization-to-another)
 
 ### [List all jira issues](../reference/projects-v1.md#org-orgid-project-projectid-jira-issues)
 
@@ -738,6 +748,8 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 **More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Manage a group service account’s client secret](../reference/serviceaccounts.md#groups-group\_id-service\_accounts-serviceaccount\_id-secrets)
+
+**More information:** [Manage service accounts using the Snyk API](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ## SlackSettings
 
