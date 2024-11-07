@@ -4,10 +4,6 @@
 Snyk Code rules are updated continuously. The list expands continually, and the rules may change to provide the best protection and security solutions for your code.
 {% endhint %}
 
-{% hint style="info" %}
-If you have followed a link for code quality from an IDE, see the [language documentation for that information](../../../supported-languages-package-managers-and-frameworks/technical-specifications.md#code-quality).
-{% endhint %}
-
 This page lists all security rules used by Snyk Code when scanning your source code for vulnerabilities.
 
 Each rule includes the following information.
