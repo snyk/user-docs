@@ -244,7 +244,6 @@ If you want to pull data from both organization and personal repositories, then 
 5. Add a description for your token in the Note field.
 6. Select the required permissions:&#x20;
    * `repo`
-   * `read:packages`
    * `read:org`
    * `read:user`
    * `user:email`.
