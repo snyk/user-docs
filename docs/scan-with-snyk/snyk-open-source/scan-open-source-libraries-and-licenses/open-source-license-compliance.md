@@ -65,8 +65,6 @@ In both of these cases, Snyk displays the severity of the license with the **hig
 Licenses on the vulnerability card are sorted with the lowest severity license first, even when the vulnerability card is labeled with the highest severity.&#x20;
 
 If any of the multiple licenses on the package at the scanned version are set to `severity:none`, then the current behavior is that no license vulnerability is shown.&#x20;
-
-The behavior of multiple license vulnerabilities is being changed as advised in [this Update](https://updates.snyk.io/multi-licensing-severity-logic-update-299259). &#x20;
 {% endhint %}
 
 ## **Supported package types**
