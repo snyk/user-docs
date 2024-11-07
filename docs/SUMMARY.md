@@ -14,6 +14,7 @@
 * [Supported languages, package managers, and frameworks](supported-languages-package-managers-and-frameworks/README.md)
   * [Snyk Code language support technical specifications and guidance](supported-languages-package-managers-and-frameworks/snyk-code-language-support-technical-specifications-and-guidance.md)
   * [Snyk Open Source language support technical specifications and guidance](supported-languages-package-managers-and-frameworks/snyk-open-source-language-support-technical-specifications-and-guidance.md)
+  * [Language support and CLI, CI/CD, and SCM integrations](supported-languages-package-managers-and-frameworks/language-support-and-cli-ci-cd-and-scm-integrations.md)
   * [Apex](supported-languages-package-managers-and-frameworks/apex.md)
   * [Bazel](supported-languages-package-managers-and-frameworks/bazel/README.md)
     * [Dep Graph API](supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
