@@ -241,10 +241,6 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--include-ignores`: [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test)
 
-## `snyk code test` and `snyk iac test` command option
-
-`--report`: [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test),  [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
-
 ## `snyk config environment command option`
 
 `--no-check` [snyk config environment](https://docs.snyk.io/snyk-cli/commands/config-environment)
@@ -274,6 +270,8 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
 `--var-file=<PATH_TO_VARIABLE_FILE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+
+`--report`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
 ## `snyk iac capture` command options
 
