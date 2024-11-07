@@ -12,6 +12,7 @@
     * [Snyk Learn Access Controls](getting-started/snyk-learn/snyk-learn-access-controls.md)
   * [Glossary](getting-started/glossary.md)
 * [Supported languages, package managers, and frameworks](supported-languages-package-managers-and-frameworks/README.md)
+  * [Snyk language support details](supported-languages-package-managers-and-frameworks/snyk-language-support-details.md)
   * [Snyk Code language support technical specifications and guidance](supported-languages-package-managers-and-frameworks/snyk-code-language-support-technical-specifications-and-guidance.md)
   * [Snyk Open Source language support technical specifications and guidance](supported-languages-package-managers-and-frameworks/snyk-open-source-language-support-technical-specifications-and-guidance.md)
   * [Language support and CLI, CI/CD, and SCM integrations](supported-languages-package-managers-and-frameworks/language-support-and-cli-ci-cd-and-scm-integrations.md)
