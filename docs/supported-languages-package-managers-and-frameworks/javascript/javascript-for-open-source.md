@@ -2,31 +2,7 @@
 
 ## Snyk for JavaScript support
 
-**Package managers**: npm, pnpm, Yarn
-
-**Package manager versions**:&#x20;
-
-npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3, 7.*`
-
-pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`
-
-Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
-
-**Package registry**: [npmjs.org](https://www.npmjs.org)
-
-**Import your app through SCM**: Available
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:npm`
-
-**Test your app's packages**: Available, `pkg:npm`
-
-**Features**:&#x20;
-
-* Fix PRs&#x20;
-* License scanning
-* Reports
+See the [JavaScript details](../snyk-language-support-details.md#javascript) for supported package managers and features.
 
 {% hint style="info" %}
 Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;
@@ -92,7 +68,7 @@ npm install --lockfile-version=2
 
 ### **pnpm**
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 Snyk CLI pnpm support is in Early Access.
