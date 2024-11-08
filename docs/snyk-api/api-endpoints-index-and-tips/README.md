@@ -298,7 +298,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Update the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group\_id-settings-iac)
 
-**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md);[Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md);&#x20;
+**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md);[Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ### [Get the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group\_id-settings-iac-1)
 
@@ -376,7 +376,8 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid)
 
-**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md) (Snyk Broker Code Agent)
+**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md) (Snyk Broker Code Agent);\
+[Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base)
 
 ### [Update](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings)
 
@@ -463,7 +464,11 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Update organization settings](../reference/organizations-v1.md#org-orgid-settings)
 
+**More information:** [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
+
 ### [View organization settings](../reference/organizations-v1.md#org-orgid-settings-1)
+
+**More information:** [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
 ### [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
 
@@ -633,7 +638,8 @@ The query-string parameter for types is optional. The endpoint does not enforce 
 
 ### [Updates project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id)
 
-**More information:** [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md); [Start scanning](../../scan-with-snyk/start-scanning.md) (Use: Set test frequency)
+**More information:** [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md);\
+[Start scanning](../../scan-with-snyk/start-scanning.md) (Use: Set test frequency)
 
 ### [Get project by project ID](../reference/projects.md#orgs-org\_id-projects-project\_id-1)
 
@@ -783,7 +789,7 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Update Slack notification settings for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-1)
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Update a Slack notification customization for a Project)
+**More information:** [Slack app (Jira integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Update a Slack notification customization for a Project)
 
 ### [Remove Slack settings override for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-2)
 
