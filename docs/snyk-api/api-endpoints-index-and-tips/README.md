@@ -140,7 +140,8 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ## Audit Logs
 
-**More information**: [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
+**More information**: [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md);\
+[AWS CloudTrail Lake](../../integrate-with-snyk/event-forwarding/aws-cloudtrail-lake.md)
 
 ### [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-audit\_logs-search)
 
@@ -479,6 +480,9 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Set notification settings](../reference/organizations-v1.md#org-orgid-notification-settings)
 
+**More information:** [api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
+[Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/);
+
 ### [Get organization notification settings](../reference/organizations-v1.md#org-orgid-notification-settings-1)
 
 ### [List members](../reference/organizations-v1.md#org-orgid-members)
@@ -759,6 +763,8 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ## SlackSettings
 
+**More information:** [Slack app (for Jira integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md)
+
 ### [Create new Slack notification default settings](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id)
 
 ### [Get Slack integration default notification settings](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-1)
@@ -767,7 +773,9 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Slack notification settings override for projects](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects)
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: List all Slack notification customizations for a project)
+**More information:** [Slack app (JIra integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: List all Slack notification customizations for a project);\
+[api-import Creating orgnizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
+
 
 ### [Create a new Slack settings override for a given project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id)
 
