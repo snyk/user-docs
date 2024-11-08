@@ -18,3 +18,7 @@ You can use these templates to create your own custom roles that fit into and re
 * [CLI Tester](cli-tester-role-template.md)
 * [Read-only CLI Tester](read-only-cli-tester-role-template.md)
 * [Snyk Learn - Learning Admin](snyk-learn-learning-admin.md)
+
+{% hint style="warning" %}
+If you create a Group level custom role that enables creation of new Organizations, you must include the **Add Organizations** and **View Groups** permissions. When enabled, the user with that custom role will be able to see the **Create organization** button when switching Organizations in the Web UI.
+{% endhint %}
