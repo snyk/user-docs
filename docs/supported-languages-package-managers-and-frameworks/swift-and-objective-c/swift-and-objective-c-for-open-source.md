@@ -2,28 +2,13 @@
 
 ## Swift and Objective-C for open source support
 
-**Package manager**: CocoaPods, Swift Package Manager
+Refer to the[ Swift and Objective-C detail](../snyk-language-support-details.md#swift-and-objective-c) for supported package managers and features.
 
-**Package manager versions**: CocoaPods, Swift Package Manager, Swift v3.0 or higher.
-
-**Package registry**: No single registry, multiple sources including [cocoapods.org](https://cocoapods.org)
-
-**Import your app through SCM**: Available for CocoaPods
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:swift`, `pkg:cocoapods`
-
-**Test your app's packages**: Available, `pkg:swift`, `pkg:cocoapods`
-
-**Features**:&#x20;
-
-* License scanning (CocoaPods)
-* Reports
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
 
 ## Open source and licensing
 
-Snyk Open Source supports the following package managers.
+Snyk Open Source features support the following package managers.
 
 <table><thead><tr><th>Package managers / Features</th><th width="151">CLI support</th><th>Git support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td>Cocoapods</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td></td></tr><tr><td>Swift Package Manager</td><td>✔︎</td><td></td><td></td><td></td></tr></tbody></table>
 

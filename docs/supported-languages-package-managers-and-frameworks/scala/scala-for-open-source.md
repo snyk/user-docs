@@ -2,22 +2,9 @@
 
 ## Snyk support for Scala for open source
 
-**Package manager**: sbt
+Refer to the [Scala detail](../snyk-language-support-details.md#scala)s for supported package managers and features.
 
-**Package registry**: [maven.org](https://maven.org/)
-
-**Import your app through SCM**: Available&#x20;
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:maven`
-
-**Test your app's packages**: Available, `pkg:maven`
-
-**Features**:&#x20;
-
-* License scanning
-* Reports
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
 
 ## Open source and licensing
 
