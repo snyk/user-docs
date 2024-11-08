@@ -6,24 +6,9 @@ Since January 1, 2023, Snyk has not supported govendor Projects. As a general se
 Since Snyk no longer supports scanning of govendor Projects, a warning is issued and no results are provided.
 {% endhint %}
 
-## Go for open source support
+## Go for Snyk Open Source support
 
-**Package managers**: Go Modules, dep
-
-**Package registry**: No single registry, multiple sources&#x20;
-
-**Import your app through SCM**: Available
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:golang`
-
-**Test your app's packages**: Available, `pkg:golang`
-
-**Features**:&#x20;
-
-* License scanning
-* Reports
+Refer to the [Go details](../snyk-language-support-details.md#go) for supported package manager and features.
 
 {% hint style="info" %}
 Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;

@@ -48,7 +48,7 @@ Refer to the [Bazel pages](bazel/) for complete information on Snyk for Bazel.\
 
 ## Go
 
-<table><thead><tr><th>Snyk Code support for Go</th><th>Snyk Open Source support for Go</th><th data-hidden></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Snyk Code support for Go</th><th>Snyk Open Source support for Go</th><th data-hidden></th></tr></thead><tbody><tr><td><strong>Frameworks and libraries supported</strong>: <br>Azure/azure-sdk-for-go/sdk/ai/azopenai - Comprehensive<br>gage-technologies/mistral-go - Comprehensive<br>Gin - Partial<br>Go Standard Library - Comprehensive<br>google/generative-ai-go/genai - Comprehensive<br>GORM library - Partial<br>labstack/echo - Partial<br>sashabaranov/go-openai - Comprehensive<br>spf13/pflag - Comprehensive</td><td><strong>Package managers</strong>: Go Modules, dep<br><strong>Package registry</strong>: No single registry, multiple sources<br><strong>Import your app through SCM</strong>: Available<br><strong>Test or monitor your app through CLI and IDE</strong>: Available<br><strong>Test your app's SBOM</strong>: Available, <code>pkg:golang</code><br><strong>Test your app's packages</strong>: Available, <code>pkg:golang</code><br><strong>Features</strong>:<br>License scanning<br>Reports</td><td></td></tr><tr><td><strong>Go versions</strong>: Versions up to go1.16<br><strong>Import your app through SCM</strong>: Available<br><strong>Test or monitor your app through CLI and IDE</strong>: Available<br><strong>Features</strong>:<br>Reports<br>Custom rules<br>Interfile analysis</td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
 ## Java and Kotlin
 
