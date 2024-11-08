@@ -1,14 +1,6 @@
 # Dart and Flutter
 
-Snyk for Dart and Flutter is supported **only for Open Source**. The following summarizes support for Dart and Flutter:
-
-**Package manager**: Pub
-
-**Package registry**: [pub.dev](https://pub.dev/)
-
-**Test your app's SBOM**: Available, `pkg:pub`
-
-**Test your app's packages**: Available, `pkg:pub`
+Snyk for Dart and Flutter is supported **only for Open Source**. Refer to the [Dart and Flutter details](snyk-language-support-details.md#dart-and-flutter) for supported package managers and features.
 
 ## Testing pub packages using the API
 

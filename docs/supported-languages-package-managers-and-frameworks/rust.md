@@ -4,15 +4,7 @@
 The Snyk API is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-The following summarizes support for Rust:
-
-**Package manager**: Cargo
-
-**Package registry**: [crates.io](https://crates.io/)
-
-**Test your app's SBOM**: Available, `pkg:cargo`
-
-**Test your app's packages**: Available, `pkg:cargo`
+See the [Rust details](snyk-language-support-details.md#rust) for supported package managers and features.
 
 Snyk supports the testing of Rust applications through the API. For details, see [Test an SBOM document for vulnerabilities](../snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
 

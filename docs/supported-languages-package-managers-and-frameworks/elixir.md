@@ -1,20 +1,6 @@
 # Elixir
 
-The following summarizes Snyk support for Elixir.
-
-**Package manager**: [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm)
-
-**Package registry:**  [hex.pm](https://hex.pm/)
-
-**Import your app through SCM**: NA
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:hex`
-
-**Test your app's packages**: Available, `pkg:hex`
-
-**Feature:** Reports
+Refer to the [Elixir details](snyk-language-support-details.md#elixir) for supported package managers and features.
 
 ## Snyk CLI for Elixir
 

@@ -1,10 +1,10 @@
 # Snyk language support details
 
-&#x20;is being built. See the pages on each language for the details of what is supported.
+&#x20;This page is being built. See the pages on each language for the details of what is supported.
 
 ## Apex
 
-**Snyk Code support for Apex**
+**Snyk Code support for Apex:**
 
 **Frameworks and libraries supported**:  Apex Standard Library - Comprehensive\
 **Import your app through SCM**: Available\
@@ -27,11 +27,24 @@ Refer to the [Bazel pages](bazel/) for complete information on Snyk for Bazel.\
 
 ## Dart and Flutter
 
-Snyk Open Source Support for Dart and Flutter
+**Snyk Open Source Support for Dart and Flutter:**
+
+**Package manager**: Pub\
+**Package registry**: [pub.dev](https://pub.dev/)\
+**Test your app's SBOM**: Available, `pkg:pub`\
+**Test your app's packages**: Available, `pkg:pub`
 
 ## Elixir
 
-Snyk Open Source Support for Elixir
+**Snyk Open Source Support for Elixir:**
+
+**Package manager**: [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm)\
+**Package registry:**  [hex.pm](https://hex.pm/)\
+**Import your app through SCM**: NA\
+**Test or monitor your app through CLI and IDE**: Available\
+**Test your app's SBOM**: Available, `pkg:hex`\
+**Test your app's packages**: Available, `pkg:hex`\
+**Feature:** Reports
 
 ## Go
 
@@ -57,6 +70,16 @@ Snyk Open Source Support for Elixir
 
 <table><thead><tr><th>Snyk Code support for Python</th><th>Snyk Open Source support for Python</th><th data-hidden></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
+## Rust
+
+**Snyk Open Source support for Rust:**
+
+**Package manager**: Cargo\
+**Package registry**: [crates.io](https://crates.io/)\
+**Test your app's SBOM**: Available, `pkg:cargo`\
+**Test your app's packages**: Available, `pkg:cargo`\
+See the Rust page for information about using the API to test Rust applications.
+
 ## Scala
 
 <table><thead><tr><th>Snyk Code support for Scala</th><th>Snyk Open Source support for Sca;a</th><th data-hidden></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
@@ -71,4 +94,18 @@ Snyk Open Source Support for Elixir
 
 ## VB.NET
 
-Snyk Code support for VB NET
+**Snyk Code support for VB NET:**
+
+**Frameworks and libraries supported**:\
+.NET Core - Comprehensive\
+.NET Framework 4.6-4.8.x - Comprehensive\
+Anthropic.SDK - Comprehensive\
+Azure.AI.OpenAI - Comprehensive\
+Google\_GenerativeAI - Comprehensive\
+Mistral.SDK - Comprehensive
+
+**Import your app through SCM**: Available\
+**Test or monitor your app through CLI and IDE**: Available\
+**Feature**: Reports\
+**Framework version**: Version 7\
+**Feature:** Interfile analysis
