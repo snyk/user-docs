@@ -809,7 +809,9 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ## Test (v1)
 
-**More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md); [Start scanning](../../scan-with-snyk/start-scanning.md); [Scan open-source libraries and licenses](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/)
+**More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md);\
+[Start scanning](../../scan-with-snyk/start-scanning.md);\
+[Scan open-source libraries and licenses](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/)
 
 ### [Test package.json & yarn-lock file](../reference/test-v1.md#test-yarn)
 
@@ -847,7 +849,9 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
-**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md);[ Unmanaged JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript) (Guidance for JavaScript and Node.js)
+**More information:** [Dep Graph API](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md) (Bazel);\
+[Unmanaged JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript) (Guidance for JavaScript and Node.js);\
+[Start scanning](../../scan-with-snyk/start-scanning.md)
 
 ### [Test composer.json & composer.lock file](../reference/test-v1.md#test-composer)
 
