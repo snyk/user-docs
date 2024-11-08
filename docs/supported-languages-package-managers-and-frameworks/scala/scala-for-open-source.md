@@ -2,7 +2,7 @@
 
 ## Snyk support for Scala for open source
 
-Refer to the [Scala detail](../snyk-language-support-details.md#scala)s for supported package managers and features.
+Refer to the [Scala detail](broken-reference)s for supported package managers and features.
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
 

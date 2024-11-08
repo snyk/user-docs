@@ -2,7 +2,7 @@
 
 ## Python for open source support
 
-Refer to the [Python detail](../snyk-language-support-details.md#python) for supported package managers and features.
+Refer to the [Python detail](broken-reference) for supported package managers and features.
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
 

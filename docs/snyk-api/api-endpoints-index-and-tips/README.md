@@ -313,6 +313,8 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ### [Retrieve ignore](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-1)
 
+**More information:** [Scenario: List all issues including Snyk Code issues in all the Projects in an Organization](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
+
 ### [Delete ignores](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-3)
 
 ## Import Projects (v1)
@@ -489,7 +491,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Remove a member from the organization](../reference/organizations-v1.md#org-orgid-members-userid-1)
 
-**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md); [User role management](../../snyk-admin/user-roles/user-role-management.md)
+**More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md);\
+[User role management](../../snyk-admin/user-roles/user-role-management.md)
 
 ### [Update a member's role in the organization](../reference/organizations-v1.md#org-orgid-members-update-userid)
 
@@ -526,6 +529,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 ### [Update a project](../reference/projects-v1.md#org-orgid-project-projectid)
 
 ### [Retrieve a single project](../reference/projects-v1.md#org-orgid-project-projectid-1)
+
+**More information:** [Project type responses from the API](project-type-responses-from-the-api.md)
 
 ### [Delete a project](../reference/projects-v1.md#org-orgid-project-projectid-2)
 
@@ -642,7 +647,8 @@ The query-string parameter for types is optional. The endpoint does not enforce 
 
 ## Reporting API (v1)
 
-**More information:** [Legacy reports](../../manage-issues/reporting/legacy-reports/); [Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/)
+**More information:** [Legacy reports](../../manage-issues/reporting/legacy-reports/);\
+[Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/)
 
 ### [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest)
 
@@ -773,7 +779,7 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Remove Slack settings override for a project](../reference/slacksettings.md#orgs-org\_id-slack\_app-bot\_id-projects-project\_id-2)
 
-**More information:** [Slack apps](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Delete a Slack notification customization for a Project)
+**More information:** [Slack app (for Jira integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Delete a Slack notification customization for a Project)
 
 ## Slack
 

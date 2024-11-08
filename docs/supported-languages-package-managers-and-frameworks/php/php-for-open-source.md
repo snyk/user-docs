@@ -1,6 +1,6 @@
 # PHP for open source
 
-Refer to the [PHP details](../snyk-language-support-details.md#php) for supported package managers and features.
+Refer to the [PHP details](broken-reference) for supported package managers and features.
 
 The following summarizes Snyk support for the Composer package manager:
 

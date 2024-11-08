@@ -1,6 +1,79 @@
 # Python
 
-Snyk supports [Python for code analysis](python-for-code-analysis.md) and [Python for open source](python-for-open-source.md). For specific information about the use of versions and package managers, See [Snyk CLI for Python](snyk-cli-for-python.md) and [Git repositories and Python](git-repositories-and-python.md).
+## Applicability
+
+Snyk supports [Python for code analysis](python-for-code-analysis.md) and [Python for open source](python-for-open-source.md).&#x20;
+
+For specific information about the use of versions and package managers, See [Snyk CLI for Python](snyk-cli-for-python.md) and [Git repositories and Python](git-repositories-and-python.md).
+
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+
+Available functions:
+
+* SCM import. For Python used with Snyk Open Source, the SCM import is available for Pip, pipenv, and Poetry.
+* Test or monitor your app through CLI and IDE.
+* Test your app's SBOM using pkg:pypi
+* Test your app's packages using pkg:pypi
+
+## Package managers
+
+This language supports Pip, Poetry, pipenv, setup.py as package managers, suitable with the following Python versions: `Python 2 -> 2.7.16`, and `Python 3 -> 3.7.4`.
+
+As a package registry, [pypi.org](https://pypi.org/) is supported.
+
+## Frameworks and libraries
+
+The following frameworks and libraries are supported in Snyk for Python:&#x20;
+
+* AioHTTP - Comprehensive a
+* iopg - Comprehensive&#x20;
+* argparse - Comprehensive&#x20;
+* anthropic - Comprehensive&#x20;
+* bottle - Comprehensive&#x20;
+* CherryPy - Comprehensive&#x20;
+* Django - Comprehensive&#x20;
+* defusedxml - Comprehensive&#x20;
+* fastapi - Partial&#x20;
+* flask - Comprehensive&#x20;
+* flask\_pymongo - Comprehensive&#x20;
+* google.cloud.bigquery - Comprehensive&#x20;
+* google\_generativeai - Comprehensive&#x20;
+* huggingface\_hub - Comprehensive&#x20;
+* httpx - Comprehensive&#x20;
+* ldap3 - Comprehensive&#x20;
+* libxml - Comprehensive&#x20;
+* lxml - Comprehensive&#x20;
+* mistralai - Comprehensive&#x20;
+* mongoengine - Comprehensive&#x20;
+* openai - Comprehensive&#x20;
+* pandas - Partial&#x20;
+* paramiko - Comprehensive&#x20;
+* peewee - Comprehensive&#x20;
+* pickle - Comprehensive&#x20;
+* pilyaml - Comprehensive&#x20;
+* pyca/cryptography - Comprehensive&#x20;
+* pymongo - Comprehensive&#x20;
+* pymssql - Comprehensive&#x20;
+* pyramid - Comprehensive&#x20;
+* psycopg - Comprehensive&#x20;
+* python-ldap - Comprehensive&#x20;
+* Python Standard Library - Comprehensive&#x20;
+* requests - Comprehensive&#x20;
+* sqlite3 (or pysqlite2) - Comprehensive&#x20;
+* sqlalchemy - Comprehensive&#x20;
+* turboGears - Comprehensive&#x20;
+* urllib - Comprehensive&#x20;
+* werkzeug - Comprehensive
+
+## Features
+
+The following features are supported in Snyk for Python:
+
+* Fix PRs&#x20;
+* License scanning&#x20;
+* Reports
+* Custom rules
+* Interfile analysis
 
 ## Python version support
 

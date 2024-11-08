@@ -1,11 +1,31 @@
 # VB.NET
 
+## Applicability
+
 Snyk for VB.NET is supported **only for Snyk Code**.
 
-Refer to the [VB.NET details](snyk-language-support-details.md#vb.net) for supported frameworks, libraries, and features.
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
 
+Available functions:
 
+* SCM import.&#x20;
+* Test or monitor your app through CLI and IDE.
 
-For instructions on using the Snyk CLI, IDE, and CI/CD for code analysis, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+## Package managers
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
+This language does not support any package manager.
+
+## Frameworks and libraries
+
+This language supports the following frameworks and libraries:
+
+* .NET Core - Comprehensive&#x20;
+* .NET Framework 4.6-4.8.x - Comprehensive&#x20;
+* Anthropic.SDK - Comprehensive&#x20;
+* Azure.AI.OpenAI - Comprehensive&#x20;
+* Google\_GenerativeAI - Comprehensive&#x20;
+* Mistral.SDK - Comprehensive
+
+## Features
+
+The Reports feature is available for Snyk for VB.NET.

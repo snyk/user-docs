@@ -1,9 +1,114 @@
 # TypeScript
 
-In Snyk Open Source, TypeScript is supported in exactly the same way as [JavaScript](javascript/javascript-for-open-source.md).
+## Applicability
 
-Refer to the [TypeScript details](snyk-language-support-details.md#typescript) for supported frameworks, libraries, and features.
+Snyk supports TypeScript for Snyk Open Source and Snyk Code. In Snyk Open Source, TypeScript is supported in exactly the same way as [JavaScript](javascript/javascript-for-open-source.md).
 
-For information on using the Snyk CLI and IDE and CI/CD for code analysis, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
+{% hint style="info" %}
+**TypeScript supported versions**
+
+You can use versions up to 4.2.
+{% endhint %}
+
+Available functions:
+
+* SCM import
+* Test or monitor your app through CLI and IDE
+* Test your app's SBOM: using `pkg:npm`&#x20;
+* Test your app's packages using `pkg:npm`
+
+## Package managers
+
+This language supports npm, pnpm, Yarn as package managers with the following versions for them:&#x20;
+
+* npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3, 7.*`&#x20;
+* pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`&#x20;
+* Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
+
+As a package registry, it supports [npmjs.org](https://www.npmjs.org/).
+
+## Frameworks and libraries
+
+The following frameworks and libraries are supported in Snyk for TypeScript:&#x20;
+
+* All [JavaScript frameworks and libraries](javascript/#frameworks-and-libraries)
+* @Google Drive/generative-ai - Comprehensive&#x20;
+* @anthropic-ai/sdk - Comprehensive&#x20;
+* @huggingface/inference - Comprehensive&#x20;
+* @mistralai/mistralai - Comprehensive&#x20;
+* axios - Comprehensive&#x20;
+* Angular - Partial&#x20;
+* apollo-server - Partial&#x20;
+* bcrypt-nodejs - Comprehensive&#x20;
+* cross-spawn - Comprehensive&#x20;
+* crypto-js - Comprehensive&#x20;
+* date-fns - Comprehensive&#x20;
+* dayjs - Comprehensive&#x20;
+* dompurify - Comprehensive&#x20;
+* electron - Partial&#x20;
+* ejs - Partial&#x20;
+* execa - Comprehensive&#x20;
+* express - Comprehensive&#x20;
+* express-graphql - Partial&#x20;
+* express-jwt - Partial&#x20;
+* fs - Comprehensive&#x20;
+* fs-extra - Comprehensive&#x20;
+* fs-plus - Comprehensive&#x20;
+* graceful-fs - Comprehensive&#x20;
+* graphql-js - Partial&#x20;
+* jQuery - Comprehensive&#x20;
+* js-yaml - Comprehensive&#x20;
+* jzip - Comprehensive&#x20;
+* koa - Comprehensive&#x20;
+* koa-graphql - Comprehensive&#x20;
+* libxml - Comprehensive&#x20;
+* libxmljs - Comprehensive&#x20;
+* lodash - Comprehensive&#x20;
+* luxon - Comprehensive&#x20;
+* minimongo - Comprehensive&#x20;
+* minimist - Comprehensive&#x20;
+* mongodb - Comprehensive&#x20;
+* Mongoose - Comprehensive&#x20;
+* mercurius - Partial&#x20;
+* Nestjs - Partial&#x20;
+* Node Crypto - Comprehensive&#x20;
+* node-buffer - Partial&#x20;
+* node-cmd - Comprehensive&#x20;
+* Node Crypto - Comprehensive&#x20;
+* node-dir - Comprehensive&#x20;
+* node-forge - Comprehensive&#x20;
+* node-pty - Comprehensive&#x20;
+* node-serialize - Comprehensive&#x20;
+* octokit - Comprehensive&#x20;
+* openai - Comprehensive&#x20;
+* pg - Comprehensive&#x20;
+* pg-promise - Comprehensive&#x20;
+* React - Partial&#x20;
+* request-promise - Comprehensive&#x20;
+* restler - Partial&#x20;
+* rimraf - Comprehensive&#x20;
+* sanitize-html - Comprehensive&#x20;
+* shelljs - Comprehensive&#x20;
+* Stanford JS Crypto - Comprehensive&#x20;
+* superagent - Comprehensive&#x20;
+* tar-stream - Comprehensive&#x20;
+* unirest - Comprehensive&#x20;
+* unzip - Comprehensive&#x20;
+* underscore - Comprehensive&#x20;
+* url - Comprehensive&#x20;
+* vm - Comprehensive&#x20;
+* webstomp-client - Partial&#x20;
+* WebCryptoAPI - Comprehensive&#x20;
+* xpath - Comprehensive&#x20;
+* yargs - Comprehensive
+
+## Features
+
+The following features are supported in Snyk for TypeScript:
+
+* License scanning&#x20;
+* Reports
+* Custom rules
+* Interfile analysis

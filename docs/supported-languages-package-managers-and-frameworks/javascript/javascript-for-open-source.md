@@ -2,7 +2,7 @@
 
 ## Snyk for JavaScript support
 
-Refer to the [JavaScript details](../snyk-language-support-details.md#javascript) for supported package managers and features.
+Refer to the [JavaScript details](broken-reference) for supported package managers and features.
 
 {% hint style="info" %}
 Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;

@@ -1,6 +1,30 @@
 # Elixir
 
-Refer to the [Elixir details](snyk-language-support-details.md#elixir) for supported package managers and features.
+## Applicability
+
+Snyk for Elixir is supported **only for Snyk Open Source**.
+
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+
+Available functions:
+
+* Test or monitor your app through CLI and IDE &#x20;
+* Test your app's SBOM using `pkg:hex`&#x20;
+* Test your app's packages using `pkg:hex`
+
+For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+
+## Package managers
+
+This language supports [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) as a package manager and [hex.pm](https://hex.pm/) as a package registry.&#x20;
+
+## Frameworks and libraries
+
+This language does not have any available frameworks and libraries.&#x20;
+
+## Features
+
+The Reports feature is supported by Elixir for Snyk.&#x20;
 
 ## Snyk CLI for Elixir
 

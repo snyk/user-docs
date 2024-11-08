@@ -6,7 +6,7 @@
 Improved Gradle SCM scanning is in Early Access. For more information, see [Git repositories with Maven and Gradle](git-repositories-with-maven-and-gradle.md).
 {% endhint %}
 
-Refer to the [Java and Kotlin details](../snyk-language-support-details.md#java-and-kotlin) for supported build tools, package registry, and features.
+Refer to the [Java and Kotlin details](broken-reference) for supported build tools, package registry, and features.
 
 The following summarizes additional Snyk features support for Java and Kotlin.
 

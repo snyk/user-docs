@@ -2,7 +2,7 @@
 
 ## Ruby for open source support
 
-Refer to the [Ruby details](../snyk-language-support-details.md#ruby) for supported package managers and features.
+Refer to the [Ruby details](broken-reference) for supported package managers and features.
 
 ## Open source and licensing
 

@@ -1,5 +1,63 @@
 # Swift and Objective-C
 
+## Applicability
+
 Snyk supports [Swift for code analysis](swift-for-code-analysis.md) and [Swift and Objective-C for open source](swift-and-objective-c-for-open-source.md). This includes support for CocoaPods.
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+
+{% hint style="info" %}
+**Supported Swift version**
+
+You can use versions up to 5.7.x.
+{% endhint %}
+
+Available functions:
+
+* SCM import. If used with Snyk Open Source, then the SCM import is available for CocoaPods.
+* Test or monitor your app through CLI and IDE.
+* Test your app's SBOM using `pkg:swift`, `pkg:cocoapods`
+* Test your app's packages using `pkg:swift`, `pkg:cocoapods`
+
+## Package managers
+
+This language supports CocoaPods, Swift Package Manager v3.0 or higher as package managers and it uses multiple sources including [cocoapods.org](https://cocoapods.org/) [maven.org](https://maven.org/) for package registry.
+
+## Frameworks and libraries
+
+The following frameworks and libraries are supported in Snyk for Swift and Objective-C:&#x20;
+
+* Swift standard library - Comprehensive&#x20;
+* Foundation- Comprehensive&#x20;
+* Appkit - Comprehensive&#x20;
+* Swift UI - Comprehensive&#x20;
+* UI Kit - Comprehensive&#x20;
+* Asynchttpclient - Comprehensive&#x20;
+* Commoncrypt - Comprehensive&#x20;
+* Commoncrypto - Comprehensive&#x20;
+* Cryptokit - Comprehensive&#x20;
+* Cryptoswift - Comprehensive&#x20;
+* Cryptor - Comprehensive&#x20;
+* AlamoFire - Comprehensive&#x20;
+* Filekit - Comprehensive&#x20;
+* google-gemini/generative-ai-swift - Comprehensive&#x20;
+* MacPaw/OpenAI - Comprehensive&#x20;
+* dylanshine/openai-kit - Comprehensive&#x20;
+* Pathos - Comprehensive&#x20;
+* SQLite3 - Comprehensive&#x20;
+* Webkit - Comprehensive&#x20;
+* SwiftCLI - Comprehensive&#x20;
+* ShellOut - Comprehensive&#x20;
+* SwiftShell - Comprehensive&#x20;
+* Subprocess - Comprehensive&#x20;
+* Shout - Comprehensive
+* Swiftline - Comprehensive&#x20;
+* RNCryptor - Comprehensive
+
+## Features
+
+The following features are supported in Snyk for Swift and Objective-C:
+
+* License scanning (CocoaPods)&#x20;
+* Reports
+* Interfile analysis
