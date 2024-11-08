@@ -2,25 +2,9 @@
 
 ## Ruby for open source support
 
-**Package manager**: Bundler
+Refer to the [Ruby details](../snyk-language-support-details.md#ruby) for supported package managers and features.
 
-**Package manager versions**: All Gemfile and Gemfile.lock are compatible with the [Snyk supported Ruby versions](./#supported-ruby-versions)
 
-**Package registry**: [rubygems.org](https://rubygems.org/)
-
-**Import your app through SCM**: Available&#x20;
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:gem`
-
-**Test your app's packages**: Available, `pkg:gem`
-
-**Features**:&#x20;
-
-* Fix PRs&#x20;
-* License scanning
-* Reports
 
 ## Open source and licensing
 
