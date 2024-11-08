@@ -64,7 +64,7 @@ Refer to the [Bazel pages](bazel/) for complete information on Snyk for Bazel.\
 
 ## PHP
 
-<table><thead><tr><th>Snyk Code support for PHP</th><th>Snyk Open Source support for PHP</th><th data-hidden></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Snyk Code support for PHP</th><th>Snyk Open Source support for PHP</th><th data-hidden></th></tr></thead><tbody><tr><td><strong>Frameworks and libraries supported</strong>: <br>Laravel - Partial<br>llphant - Comprehensive<br>openai-php/client - Comprehensive<br>orhanerday/open-ai - Comprehensive<br>Pclzip - Comprehensive<br>Symfony - Partial<br>theodo-group/llphant - Comprehensive</td><td><strong>Package manager</strong>: Composer<br><strong>Package registry</strong>: <a href="https://packagist.org/">packagist.org</a><br><strong>Import your app through SCM</strong>: Available<br><strong>Test or monitor your app through CLI and IDE</strong>: Available<br><strong>Test your app's SBOM</strong>: Available, <code>pkg:composer</code><br><strong>Test your app's packages</strong>: Available, <code>pkg:composer</code><br><strong>Features</strong>:<br>License scanning<br>Reports</td><td></td></tr><tr><td><strong>PHP versions</strong>: Versions 5.2 up to 8.0<br><strong>Import your app through SCM</strong>: Available<br><strong>Test or monitor your app through CLI and IDE</strong>: Available<br><strong>Features</strong>:<br>Reports<br>Custom rules<br>Interfile analysis</td><td></td><td></td></tr></tbody></table>
 
 ## Python
 
