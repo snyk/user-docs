@@ -202,6 +202,10 @@ To set up the GitHub Cloud app integration you must be a:
 * GitHub Organization Admin.
 * GitHub Repository Admin (if installing through the GitHub UI).
 
+{% hint style="info" %}
+While some permissions may be optional from GitHub’s perspective, they are necessary to support Snyk functions. These permissions **cannot be customized** for your individual needs because the app is registered under the Snyk Organization.&#x20;
+{% endhint %}
+
 The following table states the required GitHub App permissions and scopes:
 
 <table><thead><tr><th width="191">Action and scope</th><th width="254">Scope</th><th>Level</th><th>Permission</th></tr></thead><tbody><tr><td>Determine if the GitHub user has admin role on the GitHub org, to restrict app installation reuse to only admin users</td><td>Members</td><td>Organization</td><td>Read</td></tr><tr><td>Search repositories, and access repository metadata.</td><td>Metadata</td><td>Repository</td><td>Read</td></tr><tr><td>Interact with the GitHub Checks tab</td><td>Checks</td><td>Repository</td><td>Read and write</td></tr><tr><td>Create commits and branches</td><td>Contents</td><td>Repository</td><td>Read and write</td></tr><tr><td>Send PR check results as commit statuses</td><td>Commit status</td><td>Repository</td><td>Read and write</td></tr><tr><td>Get pull requests details, post related comments (next gen PR experience)</td><td>Pull request</td><td>Repository</td><td>Read and write</td></tr><tr><td>Manage webhooks which trigger the PR checks</td><td>Repository hooks</td><td>Repository</td><td>Read and write</td></tr></tbody></table>
