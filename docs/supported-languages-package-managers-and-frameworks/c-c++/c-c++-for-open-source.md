@@ -1,33 +1,6 @@
 # C/C++ for open source
 
-## C/C++ for open source support
-
-**Package manager**: NA
-
-**Package registry**: No single registry, multiple sources&#x20;
-
-**Import your app through SCM**: NA
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:generic`
-
-**Test your app's packages**: Available, `pkg:generic`
-
-**Features**:
-
-* License scanning
-* Reports
-
-**Package manager versions**: NA
-
-{% hint style="info" %}
-Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;
-
-In the case of projects that have a package manager, this means a release to the package manager.&#x20;
-
-In the case of Go and Unmanaged scans (C/C++) this requires an official release or tag on the GitHub repo.
-{% endhint %}
+Refer to the [C/C++ details ](../snyk-language-support-details.md#c-c)for supported package managers and features.
 
 ## Open source dependency management
 
