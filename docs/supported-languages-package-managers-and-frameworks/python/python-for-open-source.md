@@ -2,25 +2,9 @@
 
 ## Python for open source support
 
-**Package manager**: Pip, Poetry, pipenv, setup.py
+Refer to the [Python detail](../snyk-language-support-details.md#python) for supported package managers and features.
 
-**Package manager versions**: Suitable with `Python 2 -> 2.7.16`, and `Python 3 -> 3.7.4`.
-
-**Package registry**: [pypi.org](https://pypi.org)
-
-**Import your app through SCM**: Available for Pip, pipenv, and Poetry
-
-**Test or monitor your app through CLI and IDE**: Available
-
-**Test your app's SBOM**: Available, `pkg:pypi`
-
-**Test your app's packages**: Available, `pkg:pypi`
-
-**Features**:&#x20;
-
-* Fix PRs&#x20;
-* License scanning
-* Reports
+If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
 
 ## Open source and licensing
 

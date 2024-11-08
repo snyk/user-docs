@@ -68,7 +68,7 @@ Refer to the [Bazel pages](bazel/) for complete information on Snyk for Bazel.\
 
 ## Python
 
-<table><thead><tr><th>Snyk Code support for Python</th><th>Snyk Open Source support for Python</th><th data-hidden></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Snyk Code support for Python</th><th>Snyk Open Source support for Python</th><th data-hidden></th></tr></thead><tbody><tr><td><strong>Frameworks and libraries supported</strong>:<br>AioHTTP - Comprehensive<br>aiopg - Comprehensive<br>argparse - Comprehensive<br>anthropic - Comprehensive<br>bottle - Comprehensive<br>CherryPy - Comprehensive<br>Django - Comprehensive<br>defusedxml - Comprehensive<br>fastapi - Partial<br>flask - Comprehensive<br>flask_pymongo - Comprehensive<br>google.cloud.bigquery - Comprehensive<br>google_generativeai - Comprehensive<br>huggingface_hub - Comprehensive<br>httpx - Comprehensive<br>ldap3 - Comprehensive<br>libxml - Comprehensive<br>lxml - Comprehensive<br>mistralai - Comprehensive<br>mongoengine - Comprehensive<br>openai - Comprehensive<br>pandas - Partial<br>paramiko - Comprehensive<br>peewee - Comprehensive<br>pickle - Comprehensive<br>pilyaml - Comprehensive<br>pyca/cryptography - Comprehensive<br>pymongo - Comprehensive<br>pymssql - Comprehensive<br>pyramid - Comprehensive<br>psycopg - Comprehensive<br>python-ldap - Comprehensive<br>Python Standard Library - Comprehensive<br>requests - Comprehensive<br>sqlite3 (or pysqlite2) - Comprehensive<br>sqlalchemy - Comprehensive<br>turboGears - Comprehensive<br>urllib - Comprehensive<br>werkzeug - Comprehensive</td><td><strong>Package manager</strong>: Pip, Poetry, pipenv, setup.py<br><strong>Package manager versions</strong>: Suitable with <code>Python 2 -> 2.7.16</code>, and <code>Python 3 -> 3.7.4</code>.<br><strong>Package registry</strong>: <a href="https://pypi.org">pypi.org</a><br><strong>Import your app through SCM</strong>: Available for Pip, pipenv, and Poetry<br><strong>Test or monitor your app through CLI and IDE</strong>: Available<br><strong>Test your app's SBOM</strong>: Available, <code>pkg:pypi</code><br><strong>Test your app's packages</strong>: Available, <code>pkg:pypi</code><br><strong>Features</strong>: <br>Fix PRs <br>License scanning<br>Reports</td><td></td></tr><tr><td><strong>Import your app through SCM</strong>: Available<br><strong>Test or monitor your app through CLI and IDE</strong>: Available<br><strong>Features</strong>:<br>Reports<br>Customer rules<br>Interfile analysis</td><td></td><td></td></tr></tbody></table>
 
 ## Rust
 
@@ -86,7 +86,7 @@ See the Rust page for information about using the API to test Rust applications.
 
 ## Swift and Objective-C
 
-<table><thead><tr><th>Snyk Code support for Swift</th><th>Snyk Open Source support for Swift and Objective-C</th><th data-hidden></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="353">Snyk Code support for Swift</th><th>Snyk Open Source support for Swift and Objective-C</th><th data-hidden></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
 ## TypeScript
 
