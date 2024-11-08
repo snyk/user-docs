@@ -77,7 +77,7 @@ To obtain your personal Snyk API token:
 
 If you want a new API token, select **Revoke & Regenerate**, but be aware that this will make the previous API token invalid.
 
-For information on when to use an API token and when to use a service account token, avialble to Enterprise plan users only, see [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
+For information on when to use an API token and when to use a service account token, avialable to Enterprise plan users only, see [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
 
 ## Import a Project to scan and identify issues
 
@@ -93,7 +93,7 @@ Importing a Project also does the following:
 ## Set up Snyk AppRisk&#x20;
 
 {% hint style="info" %}
-Snyk AppRisk is available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+Snyk AppRisk is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk AppRisk enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).&#x20;

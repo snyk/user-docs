@@ -6,10 +6,8 @@ Refer to the [Python detail](../snyk-language-support-details.md#python) for sup
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
 
-## Open source and licensing
-
 {% hint style="info" %}
-Some features may not be available, depending on your plan. For more information, see  [Plans and pricing.](https://snyk.io/plans/)
+Depending on your plan, some features may not be available. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 The following summarizes the package managers supported by Snyk for Python for open source.

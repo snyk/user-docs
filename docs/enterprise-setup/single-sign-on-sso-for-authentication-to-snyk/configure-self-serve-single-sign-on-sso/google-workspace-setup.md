@@ -2,9 +2,7 @@
 
 This example shows setting up an Google Workspace SAML application and connecting it to Snyk to facilitate SSO.
 
-{% hint style="info" %}
-For details in addition to the information provided on this page, see the [Google documentation](https://support.google.com/a/answer/6087519).
-{% endhint %}
+For details in addition to the information provided on this page, see  [Set up your own custom SAML app](https://support.google.com/a/answer/6087519).
 
 Start by logging into the Google Workspace [admin area](https://admin.google.com).
 

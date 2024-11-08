@@ -1,8 +1,8 @@
 # Universal Broker
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**\
-Universal Broker is in Early Access. If you would like to use this feature, contact your Snyk team.
+Universal Broker is in Early Access and is available only with Enterprise plans. If you want to set it up, contact your Snyk account team.
 {% endhint %}
 
 The Universal Broker provides improvements to facilitate the management of Snyk Broker deployments and connections.&#x20;

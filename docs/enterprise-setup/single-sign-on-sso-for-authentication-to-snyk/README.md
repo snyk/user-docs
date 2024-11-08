@@ -2,9 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-SSO is available only for Enterprise plans.
-
-For more information, see [Plans and pricing](https://snyk.io/plans).
+SSO is available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 ## Overview of SSO

@@ -3,9 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-Integration with Nexus Repository Manager is available only for Enterprise plans.
-
-For more information, see [Plans and pricing](https://snyk.io/plans).
+Integration with Nexus Repository Manager is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/). For information about brokered integration with Artifactory or Nexus Container Registry see [Snyk Broker -Container Registry Agent](../../snyk-broker-container-registry-agent/).

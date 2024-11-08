@@ -3,9 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-Integration with Artifactory Repository is available only for Enterprise plans.
-
-For more information, see [Plans and pricing](https://snyk.io/plans).
+Integration with Artifactory Repository is available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).&#x20;
 {% endhint %}
 
 Before installing, **review the general instructions** for the installation method you plan to use, [Helm](../install-and-configure-broker-using-helm.md) or [Docker](../install-and-configure-broker-using-docker.md).

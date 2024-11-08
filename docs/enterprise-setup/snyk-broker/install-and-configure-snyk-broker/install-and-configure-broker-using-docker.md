@@ -29,5 +29,5 @@ You can verify that the Broker is running by looking at the settings for your br
 
 When you install using Docker, follow the instructions in the pages on [Advanced configuration for Snyk Broker Docker installation](advanced-configuration-for-snyk-broker-docker-installation/) as needed.
 
-##
+
 

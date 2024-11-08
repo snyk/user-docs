@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Snyk for Bazel is supported for Snyk Open Source. The instructions in this documentation apply to Bazel v 7 only.
+Bazel is supported for Snyk Open Source. The instructions in this documentation apply to Bazel v 7 only.
 {% endhint %}
 
 Snyk supports testing Projects that have their dependencies managed by Bazel. The recommended approach is to test and monitor using the [Dep Graph API](dep-graph-api.md). While you can use Bazel for many languages including C++, **the Dep Graph endpoints do not support C++**.

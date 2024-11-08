@@ -1,9 +1,9 @@
 # Java and Kotlin for open source
 
-{% hint style="warning" %}
-**Release status: Improved Gradle SCM scanning - Early Access**
+{% hint style="info" %}
+**Release status**
 
-You can now obtain more accurate results for your Gradle Projects imported through Git integrations by using Improved Gradle SCM scanning. this Early Access feature. For more information, see [Git repositories with Maven and Gradle](git-repositories-with-maven-and-gradle.md).
+Improved Gradle SCM scanning is in Early Access. For more information, see [Git repositories with Maven and Gradle](git-repositories-with-maven-and-gradle.md).
 {% endhint %}
 
 Refer to the [Java and Kotlin details](../snyk-language-support-details.md#java-and-kotlin) for supported build tools, package registry, and features.

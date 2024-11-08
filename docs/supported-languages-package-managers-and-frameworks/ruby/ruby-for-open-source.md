@@ -4,16 +4,16 @@
 
 Refer to the [Ruby details](../snyk-language-support-details.md#ruby) for supported package managers and features.
 
-
-
 ## Open source and licensing
 
 {% hint style="info" %}
 **Feature availability**\
-Some features may not be available, depending on your plan. For more informatiiion, see  [Plans and pricing](https://snyk.io/plans/).
+Depending on your plan, some features may not be available. For more information, see  [plans and pricing](https://snyk.io/plans/).
 
-**Platform-specific packages are not supported**. If these are present in your `Gemfile.lock`, this can cause an invalid Fix PR to be created. If possible, use the non-platform-specific variant of a package.
+Platform-specific packages are not supported. If these are present in your `Gemfile.lock`, this can cause an invalid Fix PR to be created. If possible, use the non-platform-specific variant of a package.
 {% endhint %}
+
+
 
 ## Bundler support
 

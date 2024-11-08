@@ -5,7 +5,7 @@ When you work with Snyk from within any third-party tool, Snyk requires authenti
 Snyk offers API tokens to enable integrations with third-party developer tools. You can authenticate through your personal account using your personal token or through a [service account](service-accounts/) using the token associated with that account. When you authenticate through a service account, you do not use any personal token.
 
 {% hint style="info" %}
-For authentication purposes, the third-party identity providers **do not require access to your repositories**, only your email address.
+For authentication purposes, the third-party identity providers do not require access to your repositories, only your email address.
 {% endhint %}
 
 ## Supported identity providers
@@ -20,11 +20,9 @@ You can use one of the following identity providers for authentication with Snyk
 * Single Sign-On (SSO): available with Enterprise plans.\
   See [Setting up Single Sign-On (SSO) for authentication](single-sign-on-sso-for-authentication-to-snyk/).
 
-{% hint style="info" %}
 For additional instructions, see the integrations pages for [Git repositories (SCMs)](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
-{% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Logging in with a different provider from the one you registered with when you first created your Snyk account will create a separate new Snyk account.
 {% endhint %}
 

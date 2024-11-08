@@ -20,10 +20,8 @@ If you navigate to the Group level and select the Organizations page, you will s
 
 ### View the assets dashboard
 
-{% hint style="warning" %}
-The **Asset Dashboard** menu option is available only for Snyk AppRisk Essentials users.
-
-If you use Snyk AppRisk Pro, navigate to [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md).
+{% hint style="info" %}
+Asset Dashboard is available only for Snyk AppRisk Essentials users. If you use Snyk AppRisk Pro, see [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md).
 {% endhint %}
 
 On the Snyk AppRisk dashboard page, you can add widgets that display an overview of your application and security controls.
@@ -58,8 +56,8 @@ You can access the full list of general options from the widget menu. To do this
 
 ### View and manage your assets inventory
 
-{% hint style="warning" %}
-The **Inventory** menu option is available only for Snyk AppRisk users.
+{% hint style="info" %}
+Inventory is available only for Snyk AppRisk users.
 {% endhint %}
 
 The [Inventory](../manage-assets/) is available only if you are using Snyk AppRisk. You can use the **Inventory** page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
@@ -68,16 +66,16 @@ Each line in the inventory represents either a repository asset or a scanned art
 
 ### Manage and customize your policies
 
-{% hint style="warning" %}
-The **Policies** menu option is available only for Snyk AppRisk users.
+{% hint style="info" %}
+Policies are available only for Snyk AppRisk users.
 {% endhint %}
 
 For information on how to automate the process of adding business context and receiving notifications, see [Policies](../manage-risk/policies/assets-policies/).
 
 ### Manage integrations for asset discovery, asset coverage, and issues from third-party vendors
 
-{% hint style="warning" %}
-The **Integrations** menu option for the Group level is available only for Snyk AppRisk users.
+{% hint style="info" %}
+Integrations for the Group level are available only for Snyk AppRisk users.
 {% endhint %}
 
 The **Integrations** page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
@@ -160,7 +158,7 @@ Snyk tracks and flags Pull Requests (PRs) in the top-most vulnerable Projects, i
 
 For Projects with the **Fix vulnerabilities** link, use this link to view Project details with an option to open a fix PR. For details, see [Snyk Fix Pull or Merge Requests](../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/).
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud only, and only for the top-most vulnerable Projects. If you use another SCM, the **Pending tasks** section shows PRs that can be raised but not PRs that have already been raised.
 {% endhint %}
 
@@ -204,7 +202,7 @@ The following Snyk functions are available with the Web UI, for all level types:
 
 {% hint style="info" %}
 **Feature availability**\
-Reporting is available for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+Reporting is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 You can view [reports](../manage-issues/reporting/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues. You will find detailed definitions for information on the reports in the tooltips in the Reporting user interface.
@@ -213,8 +211,8 @@ The Reports page is available at both the Group and Organization levels.
 
 ### View and prioritize issues
 
-{% hint style="warning" %}
-The **Issues** menu is available only for Snyk AppRisk Pro users.
+{% hint style="info" %}
+Issues are available only for Snyk AppRisk Pro users.
 {% endhint %}
 
 The [Issues page](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) provides a centralized view of all the issues identified by Snyk with additional asset context. This helps you and your team to better triage and remediate issues in Snyk.
@@ -231,7 +229,7 @@ Select **Members** from the dashboard's navigation to view and manage users, rol
 
 The Members page is available at both the Group and Organization levels.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 You must be assigned the [required Admin roles and permissions](../snyk-admin/user-roles/pre-defined-roles.md) to make changes to the **Members** tab.
 {% endhint %}
 

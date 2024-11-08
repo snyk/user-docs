@@ -1,9 +1,9 @@
 # Snyk Learn Reports
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
-Snyk Learn Reports are available only for Enterprise plans. For more information, see [Plans and Pricing](https://snyk.io/plans).
+Snyk Learn Reports are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk Learn Reports allow you to gain insights into which lessons and lesson categories users view for each Organization.

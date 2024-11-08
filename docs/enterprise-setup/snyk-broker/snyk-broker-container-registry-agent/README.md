@@ -3,9 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-Snyk Broker Container Registry Agent is available only for Enterprise plans.
-
-For more information, see [Plans and pricing](https://snyk.io/plans).
+Snyk Broker Container Registry Agent is available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 The Snyk Broker Container Registry Agent enables you to establish connection with network-restricted container registries so you can scan these registries using the Snyk service.

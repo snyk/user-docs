@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-The Snyk Leanr Assignments feature is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access), as part of the Snyk Learning Management add-on offering. For more information, contact your Snyk account representative.
+Snyk Learn Assignments is in Early Access, as part of the Snyk Learning Management add-on offering. For more information, contact your Snyk account team.
 {% endhint %}
 
 Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by allowing customers to set due dates for completion and seamlessly integrate with organizational goals, for example, compliance timelines, ensuring alignment across training initiatives.
