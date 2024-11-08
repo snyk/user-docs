@@ -1,6 +1,6 @@
 # C/C++ for code analysis
 
-Refer to the [C/C++ details ](broken-reference)for supported frameworks, libraries, and features.
+Refer to the [C/C++ details ](./)for supported frameworks, libraries, and features.
 
 **Import your app through SCM**: Available\
 **Test or monitor your app through CLI and IDE**: Available\

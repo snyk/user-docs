@@ -8,7 +8,7 @@ Since Snyk no longer supports scanning of govendor Projects, a warning is issued
 
 ## Go for Snyk Open Source support
 
-Refer to the [Go details](broken-reference) for supported package manager and features.
+Refer to the [Go details](./) for supported package manager and features.
 
 {% hint style="info" %}
 Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;

@@ -1,6 +1,6 @@
 # PHP for code analysis
 
-Refer to the [PHP details](broken-reference) for supported frameworks, libraries, and features.
+Refer to the [PHP details](./) for supported frameworks, libraries, and features.
 
 
 

@@ -1,6 +1,6 @@
 # C/C++ for open source
 
-Refer to the [C/C++ details ](broken-reference)for supported package managers and features.
+Refer to the [C/C++ details ](./)for supported package managers and features.
 
 ## Open source dependency management
 
