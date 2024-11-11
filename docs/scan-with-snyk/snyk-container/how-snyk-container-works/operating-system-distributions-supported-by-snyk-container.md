@@ -1,4 +1,4 @@
-# Snyk Container - Supported operating system distributions
+# Operating system distributions supported by Snyk Container
 
 Snyk detects vulnerabilities in images based on operating systems listed on this page along with the specific versions that are supported. For the latest updates, see [Snyk updates](https://updates.snyk.io).
 
@@ -97,6 +97,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Ubuntu](https://ubuntu.com/)
 
+* Ubuntu 24.10 - Oracular Oriole
 * Ubuntu 24.04 - Noble Numbat
 * Ubuntu 23.10 - Mantic Minotaur
 * Ubuntu 23.04 - Lunar Lobster
