@@ -1,11 +1,5 @@
 # Application context for SCM Integrations
 
-{% hint style="warning" %}
-Release status
-
-All the Application context integrations listed on this page are in Early Access and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro.
-{% endhint %}
-
 These are the available integrations that you can set up for the application context:
 
 * [Backstage file](./#backstage-file-for-scm-integrations)&#x20;
@@ -21,7 +15,7 @@ The Application Context integrations on this page work in conjunction with asset
 
 ## Backstage file for SCM integrations
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 The Backstage file integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
@@ -59,7 +53,7 @@ When you set up the catalog attributes, you must use the specific service-level 
 
 ## ServiceNow CMDB for SCM integrations
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 The ServiceNow CMDB integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
@@ -106,7 +100,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 ## Atlassian Compass
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 The Atlassian Compass integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
@@ -149,7 +143,7 @@ When you set up the catalog attributes, you must use the specific service-level 
 
 ## Harness
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 The Harness integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
@@ -189,7 +183,7 @@ When you set up the catalog attributes, you can customize the name of the attrib
 
 ## OpsLevel
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 The OpsLevel integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.
@@ -224,7 +218,7 @@ When you set up the catalog attributes, you must use the specific service-level 
 
 ## Datadog Service Catalog
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 The Datadog Service Catalog integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available for both Snyk AppRisk Essentials and Snyk AppRisk Pro plans.

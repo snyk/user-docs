@@ -2,20 +2,17 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](gitlab.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Group level ](gitlab.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](gitlab.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
-
-{% hint style="info" %}
-If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-{% endhint %}
 
 ## Organization level - Snyk integrations
 
 {% hint style="info" %}
-**Feature availability**\
-The GitLab integration is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).&#x20;
+&#x20;**Feature availability**
 
-If you integrate from a private network, [Snyk Broker](../../enterprise-setup/snyk-broker/) is required.
+The GitLab integration is available only for Enterprise plans. For more information, see [Plans and Pricing](https://snyk.io/plans/).
+
+[Snyk Broker](../../enterprise-setup/snyk-broker/) is required if you are integrating from a private network.
 {% endhint %}
 
 ### Prerequisites for GitLab integration

@@ -2,12 +2,8 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](bitbucket-cloud.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Group level ](bitbucket-cloud.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](bitbucket-cloud.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
-
-{% hint style="info" %}
-If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-{% endhint %}
 
 ## Organization level - Snyk integrations
 

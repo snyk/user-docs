@@ -1,24 +1,21 @@
 # GitHub Server App
 
 {% hint style="info" %}
-**Release status and feature availability**
+**Feature availability**
 
-The GitHub Server App is in [Closed Beta](../../getting-started/snyk-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact your account team if you are interested in getting access.
+The GitHub Server App is in [Closed Beta](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. This feature must be enabled using a feature flag on the Group or Organization level. Contact your account team if you are interested in getting access.
 
-The GitHub Server App is available only with Enterprise plans. If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. For more information, see [plans and pricing](https://snyk.io/plans/).
+If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. See the [Plans and pricing](https://snyk.io/plans/) page for details.
 
-This feature is not yet supported for Snyk Broker.\
+This feature is not supported for Snyk Broker.
+
 As Snyk does not have static IP addresses, this integration will not work with IP Whitelisting in GitHub.
 {% endhint %}
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](github-server-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Group level ](github-server-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](github-server-app.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
-
-{% hint style="info" %}
-If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-{% endhint %}
 
 ## Organization level - Snyk integrations
 

@@ -2,12 +2,8 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](github.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
+* [Group level ](github.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. To set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](github.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
-
-{% hint style="info" %}
-If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-{% endhint %}
 
 ## Organization level - Snyk integrations
 
@@ -87,8 +83,9 @@ After you have connected GitHub to Snyk, you can use:
 #### **Project-level security reports**
 
 {% hint style="info" %}
-**Feature availability**\
-Reports are available only with Enterprise plans.  For more information, see [plans and pricing](https://snyk.io/plans/).
+**Feature availability**
+
+Reports are available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them right away by opening a fix pull request directly in your repository, with the required upgrades or patches.
@@ -118,7 +115,8 @@ Scroll down to the **Automatic fix PRs** section and set the options. For defini
 #### Commit signing
 
 {% hint style="info" %}
-**Feature availability**\
+**Feature availability**
+
 For availability with Snyk Broker, see the [Commit signing](../../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md) page in the Broker docs.
 {% endhint %}
 

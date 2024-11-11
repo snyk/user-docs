@@ -33,7 +33,7 @@ At the Group level, you can set up and customize your Snyk AppRisk integrations 
 
 Snyk AppRisk Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - AppRisk](../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).
 {% endhint %}
 
