@@ -1,7 +1,7 @@
 # Workspaces for SCM integrations
 
-{% hint style="warning" %}
-Workspaces **significantly** improves the accuracy and reliability of Snyk’s SCM integration results, especially for large-scale enterprise environments. This capability also supports additional functionality and improvements we have planned in the future. For these reasons, Snyk **strongly recommends** [enabling this option](workspaces-for-scm-integrations.md#manage-workspaces) by default at your Group level.
+{% hint style="info" %}
+Workspaces improve the accuracy and reliability of Snyk’s SCM integration results, especially for large-scale enterprise environments. This capability also supports additional functionality and improvements we have planned in the future. For these reasons, Snyk strongly recommends [enabling this option](workspaces-for-scm-integrations.md#manage-workspaces) by default at your Group level.
 {% endhint %}
 
 ## The importance of Workspaces: Improved reliability and accuracy

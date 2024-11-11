@@ -6,7 +6,7 @@ High availability mode allows several Broker Clients to have separate connection
 
 <figure><img src="../../.gitbook/assets/snyk-broker-ha-mode.png" alt="Operation of multiple Broker clients in high availability"><figcaption><p>Operation of multiple Broker clients in high availability</p></figcaption></figure>
 
-To use high availability mode, deploy **more than one replica**, either by running more than one container or by increasing the replica count in your Kubernetes deployment. Each container must have the **exact same parameters**.
+To use high availability mode, deploy more than one replica, either by running more than one container or by increasing the replica count in your Kubernetes deployment. Each container must have the exact same parameters.
 
 A maximum of four Broker Clients running concurrently in high availability mode is allowed. A fifth tunnel will attempt to connect indefinitely.
 
@@ -18,7 +18,7 @@ High availability mode is disabled by default. To activate it, set the following
 BROKER_HA_MODE_ENABLED=true
 ```
 
-**Helm chart deployments** can set these values by enabling the mode using set arguments. Helm chart version 1.7.0 or later is required.
+Helm chart deployments can set these values by enabling the mode using set arguments. Helm chart version 1.7.0 or later is required.
 
 ```
 --set highAvailabilityMode.enabled=true
@@ -38,7 +38,7 @@ BROKER_DISPATCHER_BASE_URL=https://api.snyk.io
 
 Outbound connection to api.snyk.io or the corresponding api hostname must be allowed. Otherwise, preflight checks will indicate failure upon Broker client startup.
 
-**`BROKER_CLIENT_URL` value must remain the same across all the Broker clients in the high availability set. The same BROKER\_TOKEN must also be used**.  \
+`BROKER_CLIENT_URL` value must remain the same across all the Broker clients in the high availability set. The same BROKER\_TOKEN must also be used.  \
 It is acceptable for this URL to resolve to a particular client.
 
 The multiple tunnels are primarily supporting Snyk=>You flow. The webhooks going You=>Snyk can take any tunnel as well.

@@ -12,12 +12,10 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 ## Organization level - Snyk integrations
 
 {% hint style="info" %}
-If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the GitHub Enterprise integration.
-{% endhint %}
-
-{% hint style="warning" %}
 **Feature availability**\
-GitHub Enterprise integration is available to Snyk Enterprise plan customers. If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. See the [Plans and pricing](https://snyk.io/plans/) page for details.
+GitHub Enterprise integration is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/). If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access.&#x20;
+
+If you are a Snyk Enterprise plan customer, Snyk recommends that you use the GitHub Enterprise integration. If you use the self-hosted GitHub Enterprise product, you must use the GitHub Enterprise integration.
 {% endhint %}
 
 ### Prerequisites for GitHub Enterprise integration

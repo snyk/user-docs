@@ -1,11 +1,5 @@
 # GitHub
 
-{% hint style="warning" %}
-**Feature availability**
-
-The GitHub integration is available for all Snyk customers regardless of plan level. See the [Plans and pricing page](https://snyk.io/plans/) for more details.
-{% endhint %}
-
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
 * [Group level ](github.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro.&#x20;
@@ -94,7 +88,7 @@ After you have connected GitHub to Snyk, you can use:
 
 {% hint style="info" %}
 **Feature availability**\
-Reports are available with Enterprise plans. See the [plans and pricing](https://snyk.io/plans/) page for details.
+Reports are available only with Enterprise plans.  For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them right away by opening a fix pull request directly in your repository, with the required upgrades or patches.

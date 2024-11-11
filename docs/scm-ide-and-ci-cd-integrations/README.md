@@ -4,8 +4,10 @@ This section of the documentation provides information about [Snyk SCM](snyk-scm
 
 Snyk supports SCM, IDE, and CI/CD integration methods that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment.
 
-{% hint style="warning" %}
-Enterprise plan users have access to all of the functionality. The API and Snyk AppRisk are not available to Free and Team plan users. See [Plans and pricing](https://snyk.io/plans/) for more information.
+{% hint style="info" %}
+**Feature availability**
+
+The API and Snyk AppRisk are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 There are two ways of implementing SCM integrations in a Snyk environment:
@@ -13,7 +15,7 @@ There are two ways of implementing SCM integrations in a Snyk environment:
 * **Group level** - At the Group level, you can set up the SCM integrations for Snyk AppRisk.&#x20;
 * **Organization level** - At the Organization level, you can set up the SCM integrations for all other Snyk products and all Snyk plans. See the [Manage your Integrations](../getting-started/snyk-web-ui.md) at the Organizational level page for more details.&#x20;
 
-{% hint style="warning" %}
+{% hint style="info" %}
 If you want to use the same SCM integration at both Group and Organization levels, then you must set up that integration for both levels.
 {% endhint %}
 

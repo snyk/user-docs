@@ -11,9 +11,11 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 
 ## Organization level - Snyk integrations
 
-{% hint style="warning" %}
-&#x20;**Feature availability**\
-The GitLab integration is available for [Snyk Enterprise plan](https://snyk.io/plans/) customers. [Snyk Broker](../../enterprise-setup/snyk-broker/) is required if you integrate from a private network.
+{% hint style="info" %}
+**Feature availability**\
+The GitLab integration is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).&#x20;
+
+If you integrate from a private network, [Snyk Broker](../../enterprise-setup/snyk-broker/) is required.
 {% endhint %}
 
 ### Prerequisites for GitLab integration
@@ -89,7 +91,7 @@ When viewing a Snyk test report for a Snyk Project that you own or when looking 
 You can review the vulnerabilities that will be fixed, change your selection with the checkboxes, and choose to ignore any vulnerabilities that cannot be fixed now before opening the merge request on the **Open a Fix Merge Request** page.
 
 {% hint style="info" %}
-**GitLab webhooks** send out an event to Snyk when merge requests occur. This starts a series of other events, such as pulling GitLab project files, running the test process, and posting the results to GitLab, all of which occur on the Snyk side.
+GitLab webhooks send out an event to Snyk when merge requests occur. This starts a series of other events, such as pulling GitLab project files, running the test process, and posting the results to GitLab, all of which occur on the Snyk side.
 {% endhint %}
 
 #### Receive email alerts for new vulnerabilities

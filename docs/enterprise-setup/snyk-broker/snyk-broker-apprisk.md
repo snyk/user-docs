@@ -35,8 +35,10 @@ As the final step following a completed Broker setup, for any brokered integrati
 
 ## Third-party integrations
 
-{% hint style="warning" %}
-The third-party integrations are available only for the Snyk AppRisk Pro version. Contact your sales representative if you are interested in Snyk AppRisk Pro.
+{% hint style="info" %}
+Feature availability
+
+The third-party integrations are available only for the Snyk AppRisk Pro version, on Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 ### Prerequisites

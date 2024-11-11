@@ -1,11 +1,13 @@
 # Integrate with self-hosted container registries
 
-{% hint style="warning" %}
-**Release status**&#x20;
 
-Self-hosted container registries with Snyk Broker) are available only for Enterprise plans.
 
-For more information, see [Plans and pricing](https://snyk.io/plans).
+{% hint style="info" %}
+**Feature availability**
+
+Self-hosted container registries with Snyk Broker are available only with Enterprise plans.
+
+For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk can integrate with self-hosted private container registries that are not internet-accessible and can help you to better secure container images in those registries.

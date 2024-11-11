@@ -1,11 +1,11 @@
 # GitHub Server App
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status and feature availability**
 
 The GitHub Server App is in [Closed Beta](../../getting-started/snyk-release-process.md). This feature must be enabled using a feature flag on the Group or Organization level. Contact your account team if you are interested in getting access.
 
-The GitHub Server App is available to Snyk Enterprise plan customers. If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. See the [Plans and pricing](https://snyk.io/plans/) page for details.
+The GitHub Server App is available only with Enterprise plans. If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 This feature is not yet supported for Snyk Broker.\
 As Snyk does not have static IP addresses, this integration will not work with IP Whitelisting in GitHub.

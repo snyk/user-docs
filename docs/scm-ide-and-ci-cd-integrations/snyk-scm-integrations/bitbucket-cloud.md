@@ -12,9 +12,6 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 ## Organization level - Snyk integrations
 
 {% hint style="info" %}
-**Feature availability**\
-This feature is available for all plans. See [pricing plans](https://snyk.io/plans/) for more details.
-
 Snyk recommends installing or migrating to the [Bitbucket Cloud Application](bitbucket-cloud-app.md) for smoother integration and to ensure long-term support.
 {% endhint %}
 
