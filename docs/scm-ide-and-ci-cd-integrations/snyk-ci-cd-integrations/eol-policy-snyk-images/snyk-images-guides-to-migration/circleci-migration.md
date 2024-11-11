@@ -1,6 +1,6 @@
 # CircleCI migration
 
-This page explains how to **transition away from affected jobs**.
+This page explains how to transition away from affected jobs.
 
 ## Updating snyk orb and using `iac test`
 

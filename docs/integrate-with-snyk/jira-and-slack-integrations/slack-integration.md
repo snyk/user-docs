@@ -27,5 +27,5 @@ Once you have generated your Slack Webhook URL, go to your **Manage Organization
 <figure><img src="../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
 
 {% hint style="info" %}
-Currently, only webhooks created with Slack Apps are supported; webhooks created with Slack Workflows are not currently supported.
+Only webhooks created with Slack Apps are supported; webhooks created with Slack Workflows are not supported.
 {% endhint %}

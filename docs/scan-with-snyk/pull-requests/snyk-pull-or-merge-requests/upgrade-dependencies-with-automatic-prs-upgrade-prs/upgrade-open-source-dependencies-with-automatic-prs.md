@@ -31,7 +31,6 @@ You can configure Snyk to check your dependency health regularly, recommend depe
 By default, the Project Settings inherit the Organization Settings. However, when the Settings on the Organization and Project levels are different, the Project Settings override the Organization Settings.
 
 {% hint style="info" %}
-**Reminder**\
 Automatic dependency upgrade PRs are available only for the following SCM integrations: GitHub, GitHub Enterprise, and Bitbucket Cloud.
 {% endhint %}
 

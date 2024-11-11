@@ -2,9 +2,9 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Package repository integrations are available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+Package repository integrations are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
-Note that this guide is relevant for Snyk UI integrations only. The CLI supports Yarn and npm Projects with private Artifactory registries.
+This guide is relevant for Snyk UI integrations only. The CLI supports Yarn and npm Projects with private Artifactory registries.
 {% endhint %}
 
 Snyk can use Artifactory Package Repositories with npm and Yarn Projects. This enables Snyk to regenerate lockfiles with the correct URLs when creating Pull/Merge Requests.

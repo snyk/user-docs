@@ -68,7 +68,7 @@ Ensure you are adding a custom field called repoURL:
 {% hint style="info" %}
 **Release status**
 
-Checkmarx for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Checkmarx for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 Use the following instructions to set up your Checkmarx SAST integration. Checkmarx SAST integration is only working for the Checkmarx SAST, we are not yet supporting Checkmarx One.
@@ -105,7 +105,7 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 {% hint style="info" %}
 **Release status**
 
-SonarQube for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+SonarQube for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#sonarqube-required-parameters" id="sonarqube-required-parameters"></a>
@@ -128,7 +128,7 @@ SonarQube for Snyk AppRisk Pro is in Early Access and available only for Snyk En
 {% hint style="info" %}
 **Release status**
 
-Nightfall for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Nightfall for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
@@ -163,7 +163,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 {% hint style="info" %}
 **Release status**
 
-GitGuardian for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+GitGuardian for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#gitguardian-required-parameters" id="gitguardian-required-parameters"></a>
@@ -254,7 +254,7 @@ The following table presents the functionality of all types of Jira integrations
 {% hint style="info" %}
 **Release status**
 
-Dynatrace for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Dynatrace for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
@@ -310,7 +310,7 @@ After the Dynatrace runtime data becomes available from the runtime integration,
 {% hint style="info" %}
 **Release status**
 
-Sysdig for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Sysdig for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
@@ -361,7 +361,7 @@ After the Sysdig runtime data becomes available from the runtime integration, it
 {% hint style="info" %}
 **Release status**
 
-Orca Security for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Orca Security for Snyk AppRisk Pro is in Closed Beta and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following[ risk factors](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Orca runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
@@ -401,7 +401,7 @@ Create the Orca API Token by following these steps:
 {% hint style="info" %}
 **Release status**
 
-CrowdStrike for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+CrowdStrike for Snyk AppRisk Pro is in Closed Beta and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factor is reported from the CrowdStrike runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
@@ -450,7 +450,7 @@ After the CrowdStrike runtime data becomes available from the runtime integratio
 {% hint style="info" %}
 **Release status**
 
-SentinelOne for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+SentinelOne for Snyk AppRisk Pro is in Closed Beta and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factor is reported from the SentinelOne runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
@@ -507,7 +507,7 @@ Alternatively, you can use an existing **API Token**.
 {% hint style="info" %}
 **Release status**
 
-Datadog for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Datadog for Snyk AppRisk Pro is in Closed Beta and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factor is reported from the Datadog runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) risk factor.
@@ -539,7 +539,7 @@ You must set the **Datadog Container Monitoring** for the desired cluster.
 {% hint style="info" %}
 **Release status**
 
-The GCP integration for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+The GCP integration for Snyk AppRisk Pro is in Closed Beta and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Prerequisites <a href="#datadog-prerequisites" id="datadog-prerequisites"></a>

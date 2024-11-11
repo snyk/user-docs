@@ -1,11 +1,9 @@
 # Snyk License Compliance Management
 
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
-Snyk License Compliance Management is available only for Enterprise plans.
-
-See [Pricing plans](https://snyk.io/plans).
+Snyk License Compliance Management is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 You can check compliance for open-source licenses in your code using Snyk License Compliance Management.

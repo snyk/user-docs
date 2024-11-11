@@ -1,6 +1,8 @@
 # Create automatic PRs for new fixes (Fix PRs)
 
 {% hint style="info" %}
+**Feature availability**
+
 * The **Automatic Fix PRs** feature is supported for the following SCM integrations: GitHub, GitHub Enterprise, GitHub Cloud App, Bitbucket Server, Bitbucket Cloud, Bitbucket Connect, GitLab, and Azure Repos.
 * The **Automatic Fix PR** settings may vary depending on the integration.
 {% endhint %}

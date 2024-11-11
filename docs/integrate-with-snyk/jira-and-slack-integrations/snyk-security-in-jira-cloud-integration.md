@@ -1,9 +1,6 @@
 # Snyk Security in Jira Cloud Integration
 
-{% hint style="warning" %}
-**Release status** \
-Snyk Security in Jira Cloud is available for all Snyk and Jira plans, including Free versions.&#x20;
-
+{% hint style="info" %}
 Jira Server and Jira Data Center are not supported.
 {% endhint %}
 

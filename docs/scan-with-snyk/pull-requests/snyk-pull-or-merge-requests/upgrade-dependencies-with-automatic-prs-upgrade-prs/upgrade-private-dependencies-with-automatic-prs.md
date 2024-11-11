@@ -1,9 +1,9 @@
 # Upgrade private dependencies with automatic PRs
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**&#x20;
 
-Upgrade private dependencies with automatic PRs is currently in [Closed Beta](https://docs.snyk.io/getting-started/snyk-release-process).&#x20;
+Upgrade private dependencies with automatic PRs is currently in Closed Beta.&#x20;
 
 Contact your account manager to get access to this feature. After your account manager turns on the feature flag, you can activate this feature in the [Snyk Preview](https://docs.snyk.io/snyk-admin/snyk-preview).
 {% endhint %}

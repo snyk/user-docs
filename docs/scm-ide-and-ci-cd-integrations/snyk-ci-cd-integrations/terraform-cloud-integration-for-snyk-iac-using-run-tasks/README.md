@@ -1,9 +1,7 @@
-# Terraform Cloud for IaC
+# Terraform Cloud integration for Snyk IaC using Run Tasks
 
 {% hint style="info" %}
-This feature is available for all Snyk plans.
-
-Note that Terraform Cloud run tasks are available in the Terraform Cloud Team & Governance tier. The Terraform Cloud Free tier does not support run tasks.
+Terraform Cloud run tasks are available in the Terraform Cloud Team & Governance tier. The Terraform Cloud Free tier does not support run tasks.
 {% endhint %}
 
 ## Terraform Cloud overview

@@ -21,7 +21,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 
 {% hint style="info" %}
 **Release status** \
-**Risk factors** for Snyk AppRisk Pro are in Early Access and are available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Risk factors for Snyk AppRisk Pro are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 
 **Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk Pro.
 {% endhint %}

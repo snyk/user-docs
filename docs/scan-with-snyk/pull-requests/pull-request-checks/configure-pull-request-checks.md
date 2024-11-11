@@ -1,9 +1,9 @@
 # Configure Pull Request Checks
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**&#x20;
 
-PR Checks for Snyk Code are in [Closed Beta](../../../getting-started/snyk-release-process.md) and available only for Enterprise plan users. If you want to set it up in your Organization, contact your Snyk account team. For more information, see [Plans and Pricing](https://snyk.io/plans/).
+PR Checks for Snyk Code are in Closed Beta and available only with Enterprise plans. If you want to set it up in your Organization, contact your Snyk account team.&#x20;
 {% endhint %}
 
 ## Prerequisites for automated PR Checks

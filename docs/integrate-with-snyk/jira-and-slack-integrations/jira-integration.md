@@ -1,10 +1,6 @@
 # Jira integration
 
 {% hint style="info" %}
-**Feature availability**
-
-Jira integration is available with all paid plans. For more information, see [Plans and pricing](https://snyk.io/plans).
-
 For Snyk Infrastructure as Code, see [Jira Integration for IaC](../../scan-with-snyk/snyk-iac/snyk-iac-integrations/jira-integration-for-iac.md).
 {% endhint %}
 

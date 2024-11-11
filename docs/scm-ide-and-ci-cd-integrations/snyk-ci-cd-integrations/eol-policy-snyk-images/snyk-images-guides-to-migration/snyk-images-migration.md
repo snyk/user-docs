@@ -9,7 +9,7 @@ You can [create your own custom images](../../user-defined-custom-images-for-cli
 Creating a custom image is the preferred solution, as it should guarantee compatibility with your system. However, if you cannot create a custom image, you can use an available alternative image.
 
 {% hint style="info" %}
-Generally, Snyk recommends using a pinned version of a software package unless stated otherwise.
+Snyk recommends using a pinned version of a software package unless stated otherwise.
 {% endhint %}
 
 ## snyk/snyk:docker-\* <a href="#snyk-snyk-docker" id="snyk-snyk-docker"></a>

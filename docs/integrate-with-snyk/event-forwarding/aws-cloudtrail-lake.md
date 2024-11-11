@@ -16,7 +16,7 @@ At the end of the transition window, **integrations that have not been authorize
 
 {% hint style="info" %}
 **Feature availability**\
-The AWS CloudTrail Lake integration is available with Snyk Enterprise plans. See [Plans and pricing](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) for details.
+The AWS CloudTrail Lake integration is available only with Snyk Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 The AWS CloudTrail Lake integration allows you to forward [Snyk audit logs](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md) to AWS CloudTrail Lake, which lets you run SQL-based queries on your logs and retain them for up to seven (7) years.

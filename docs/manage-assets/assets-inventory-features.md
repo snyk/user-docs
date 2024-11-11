@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Release status** \
-**Risk factors** for Snyk AppRisk Pro are in Early Access and are available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Risk factors for Snyk AppRisk Pro are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 
 **Runtime discovered** and **Runtime last seen** filters take their release status from the&#x20;
 {% endhint %}

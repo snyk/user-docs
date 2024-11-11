@@ -1,11 +1,5 @@
 # Open-source license compliance
 
-{% hint style="info" %}
-**Availability**\
-Open-source license compliance is available for all paid plans.\
-For more information, see [Plans and pricing](https://snyk.io/plans).
-{% endhint %}
-
 ## Overview of licenses
 
 Every time you test your code in the [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or using [PR Checks](../../pull-requests/pull-request-checks/), your repositories are scanned for vulnerabilities and license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and checks for license issues against Snyk known licenses.
