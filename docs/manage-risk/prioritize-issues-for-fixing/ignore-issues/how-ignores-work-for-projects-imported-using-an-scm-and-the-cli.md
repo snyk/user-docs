@@ -38,8 +38,8 @@ The following table summarizes how an ignore will be respected for testing depen
 
 The following table summarizes how an ignore will be respected for testing depending on the way you set the ignore for Projects imported through the CLI.
 
-{% hint style="warning" %}
-Only a limited number of customers can Import through the CLI for Snyk Code, because this feature is in [closed beta](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/using-snyk-code-from-the-cli/publishing-cli-results-to-a-snyk-project-and-ignoring-cli-results#publish-cli-results-to-a-snyk-code-project).
+{% hint style="info" %}
+Only a limited number of customers can Import through the CLI for Snyk Code, because this feature is in Closed Beta.
 {% endhint %}
 
 | **Import through the CLI and set ignore by available methods**                                                                                                                                                       | **Ignore respected in UI for testing**                  | **Ignore respected in CLI and IDE tests**                        |
