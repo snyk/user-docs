@@ -215,11 +215,9 @@ If you want to use the Broker Token follow the instructions from the [Snyk Broke
 3. API URL (`mandatory`) - Input the API URL.
 4. Username (`mandatory`): Input the BitBucket username of your organization.
 5. App password (`mandatory`): Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
-   * **Workspace membership** - Read
    * **Account** - Read
    * **Projects** - Read
    * **Repositories** - Read
-   * **Issues** - Read
 
 {% hint style="info" %}
 Create a BitBucket app password by following these steps:
