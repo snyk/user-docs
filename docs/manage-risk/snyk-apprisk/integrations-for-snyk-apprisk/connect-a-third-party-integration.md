@@ -31,7 +31,7 @@ Data synchronization may take up to two hours after receiving the **Connected** 
 {% hint style="info" %}
 **Release status**
 
-Veracode for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Veracode for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Prerequisites <a href="#verocode-prerequisites" id="verocode-prerequisites"></a>
@@ -204,7 +204,7 @@ Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.s
 {% hint style="info" %}
 **Release status**
 
-Jira for Snyk AppRisk Pro is in Closed Beta and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Jira for Snyk AppRisk Pro is in Closed Beta and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#jira-required-parameters" id="jira-required-parameters"></a>
