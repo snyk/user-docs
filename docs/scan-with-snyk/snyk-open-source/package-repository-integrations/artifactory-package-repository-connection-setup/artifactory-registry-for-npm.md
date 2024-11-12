@@ -1,7 +1,8 @@
 # Artifactory Registry for npm
 
 {% hint style="info" %}
-**Feature availability**\
+**Feature availability**
+
 Package repository integrations are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 This guide is relevant for Snyk UI integrations only. The CLI supports Yarn and npm Projects with private Artifactory registries.
@@ -18,7 +19,7 @@ You can add configuration to tell Snyk where your private Artifactory Node.js pa
 3. Select **Add registry configuration**.
    1. Select **Artifactory** as the Package source.
    2. If you want to configure this registry as the **default registry url**, leave the **scope** blank.
-   3. If you want to configure **only scoped packages** to use this registry, add a **scope**.
+   3. If you want to configure **only scoped packages** to use this registry, add a **scope**. For example, `@snyk` which would use the configured registry for all deps prefixed or scoped with `@snyk.`
    4. If you want to add a mix of **default registry url** and **scoped packages**, add multiple configurations, one for the default and one per scope.
 4. When you have added all the registries and scopes you want, click **Update settings**.
 
