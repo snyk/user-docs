@@ -24,7 +24,7 @@ Follow these steps to enable Reachability analysis and begin analyzing Projects 
 * In the **General** section, find **Reachable vulnerabilities**.
 * Activate **Enable reachable vulnerabilities analysis**.
 
-<figure><img src="../../.gitbook/assets/image (570).png" alt="Enabling Reachability setting"><figcaption><p>Enabling Reachability setting</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (573).png" alt=""><figcaption><p>Enabling Reachability setting</p></figcaption></figure>
 
 After Reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
 
@@ -47,11 +47,11 @@ Reachability analysis is supported in the following integrations:
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
 | [GitHub](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)                                                                                           | General Availability |
 | [GitHub Enterprise](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/github-enterprise/) | General Availability |
-| [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)                                                                     | Early Access         |
-| [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                                           | Early Access         |
-| [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)                                                                                           | Early Access         |
-| [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                                                      | Early Access         |
-| [Brokered connections](../../enterprise-setup/snyk-broker/connections-with-snyk-broker.md)                                                                               | Early Access         |
+| [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)                                                                     | General Availability |
+| [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                                           | General Availability |
+| [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)                                                                                           | General Availability |
+| [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                                                      | General Availability |
+| [Brokered connections](../../enterprise-setup/snyk-broker/connections-with-snyk-broker.md)                                                                               | General Availability |
 
 {% hint style="info" %}
 Reachability analysis using the Snyk CLI, IDE, or other integrations is not supported.
