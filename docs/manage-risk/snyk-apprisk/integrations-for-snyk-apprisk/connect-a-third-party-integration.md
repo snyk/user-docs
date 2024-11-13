@@ -381,7 +381,7 @@ Create the Orca API Token by following these steps:
 2. Click **Add API Token**.
 3. Fill in the fields **Name** and **Description** for the API Token.
 4. Select an **Expiration** date for the API Token.
-5. Select **Integration Configuration** as a Role.
+5. Select **Viewer** as a Role.
 6. Check **Scope access to specific resources** and **Accounts**.
 7. Select the account you want to integrate.
 
