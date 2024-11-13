@@ -18,10 +18,9 @@ Kubernetes integration follows this process:&#x20;
    * [Install the Snyk Controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../install-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
    * [Install the Snyk Controller with OpenShift and OperatorHub](../install-the-snyk-controller/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
 3. The Controller communicates with the Kubernetes API to determine which workloads are running on the cluster (for example, the Deployment, ReplicationController, CronJob, and so on), find their associated images, and scan them for vulnerabilities directly on the cluster.
-4. On the Snyk side, collaborators select which workloads to import or which workloads can be imported automatically using annotations. See [Automatically import and delete Kubernetes workload Projects](../automatically-import-and-delete-kubernetes-workload-projects.md).
-5. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image, as well as a summary of the configuration issues that have been identified with the workload.
-6. Snyk continuously monitors your imported workloads and reports new vulnerabilities it identifies whenever they affect your Projects.
-7. Based on your configurations, if vulnerabilities are found, Snyk notifies you through email or Slack so that you can take immediate action.
+4. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image, as well as a summary of the configuration issues that have been identified with the workload.
+5. Snyk continuously monitors your imported workloads and reports new vulnerabilities it identifies whenever they affect your Projects.
+6. Based on your configurations, if vulnerabilities are found, Snyk notifies you through email or Slack so that you can take immediate action.
 
 {% hint style="info" %}
 To maintain the health of the database, Snyk removes any information relating to a workload that has not been changed or updated for eight days. This can lead to failure when rescanning the workload.

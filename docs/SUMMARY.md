@@ -583,7 +583,6 @@
         * [Install the Snyk Controller on Amazon Elastic Kubernetes Service (Amazon EKS)](scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
         * [Install the Snyk Controller with OpenShift 4 and OperatorHub](scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
       * [Manually import Kubernetes workload Projects](scan-with-snyk/snyk-container/kubernetes-integration/manually-import-kubernetes-workload-projects.md)
-      * [Automatically import and delete Kubernetes workload Projects](scan-with-snyk/snyk-container/kubernetes-integration/automatically-import-and-delete-kubernetes-workload-projects.md)
       * [Integrate with Sysdig](scan-with-snyk/snyk-container/kubernetes-integration/integrate-with-sysdig.md)
       * [Annotated import](scan-with-snyk/snyk-container/kubernetes-integration/annotated-import.md)
       * [Navigate the Kubernetes integration UI](scan-with-snyk/snyk-container/kubernetes-integration/kubernetes-integration-ui-explained/README.md)
