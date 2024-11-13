@@ -18,4 +18,4 @@ The Snyk IDE plugins and extensions also rely on the [Snyk Vulnerability Databas
 
 If Snyk is hosting your data in a region other than the default, you must set the `Custom endpoint` in the IDE. For more information, see [IDEs URLS](../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls) on the [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md) page.
 
-**Training** is available: [**Introduction to using Snyk in an IDE**](https://learn.snyk.io/lesson/snyk-in-an-ide/)\
+Training is available: [Introduction to using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/)\
