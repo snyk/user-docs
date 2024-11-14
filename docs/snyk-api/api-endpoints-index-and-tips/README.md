@@ -447,6 +447,17 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Get an issue](../reference/issues.md#groups-group\_id-issues-issue\_id) (Group)
 
+## Jira (v1)
+
+### [List all jira issues](../reference/jira-v1.md#org-orgid-project-projectid-jira-issues)
+
+**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+
+### [Create jira issue](../reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issuev)
+
+**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md);\
+[Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+
 ## Licenses (v1)
 
 ### [List all licenses](../reference/licenses-v1.md)
@@ -578,36 +589,9 @@ More information: [Annotated import](../../scan-with-snyk/snyk-container/kuberne
 
 **More informatiion:** [Scenario: Move projects from one organization to another](scenarios-for-using-the-snyk-api.md#move-projects-from-one-organization-to-another)
 
-### [List all jira issues](../reference/projects-v1.md#org-orgid-project-projectid-jira-issues)
-
-**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
-
 ### [List all project issue paths](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-paths)
 
 **More information:** [Project issue paths API endpoints](project-issue-paths-api-endpoints.md)
-
-### [Create jira issue](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue)
-
-**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md);\
-[Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
-
-### [List all (project) ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignores)
-
-### [Replace ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignore-issueid)
-
-### [Add ignore](../reference/projects-v1.md#org-orgid-project-projectid-ignore-issueid-1)
-
-### [Retrieve ignore](../reference/projects-v1.md#org-orgid-project-projectid-ignore-issueid-2)
-
-### [Delete ignores](../reference/projects-v1.md#org-orgid-project-projectid-ignore-issueid-2)
-
-### [List all project snapshots](../reference/projects-v1.md#org-orgid-project-projectid-history)
-
-### [List all project snapshot issue paths](../reference/projects-v1.md#org-orgid-project-projectid-history-snapshotid-issue-issueid-paths)
-
-**More information:** [Project issue paths API endpoints](project-issue-paths-api-endpoints.md)
-
-### [List all project snapshot aggregated issues](../reference/projects-v1.md#org-orgid-project-projectid-history-snapshotid-aggregated-issues)
 
 ### [Get Project dependency graph](../reference/projects-v1.md#org-orgid-project-projectid-dep-graph)
 
