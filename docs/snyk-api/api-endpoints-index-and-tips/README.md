@@ -22,7 +22,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ## AccessRequests (beta)
 
-### [Get access requests](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/self/access\_requests)
+### [Get access requests](https://apidocs.snyk.io/?beta=\&version=2024-10-15#get-/self/access\_requests)
 
 ## Apps
 
@@ -106,7 +106,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 **Replaces:** DEPRECATED Get an app by client id
 
-### [Delete a Snyk App by its App ID](../reference/apps.md#orgs-org\_id-apps-creations-app\_id-2)
+### [Delete an app by its App ID](../reference/apps.md#orgs-org\_id-apps-creations-app\_id-2)
 
 **Replaces:** DEPRECATED Delete an app
 
@@ -163,25 +163,25 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Cloud (beta)
 
-### [List Environments](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/environments)
+### [List Environments](https://apidocs.snyk.io/?beta=\&version=2024-10-15#get-/orgs/-org\_id-/cloud/environments)
 
-### [Create New Environment](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/cloud/environments)
+### [Create New Environment](https://apidocs.snyk.io/?beta=\&version=2024-10-15#post-/orgs/-org\_id-/cloud/environments)
 
-### [Delete Environment](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#delete-/orgs/-org\_id-/cloud/environments/-environment\_id-)
+### [Delete Environment](https://apidocs.snyk.io/?beta=\&version=2024-10-15#delete-/orgs/-org\_id-/cloud/environments/-environment\_id-)
 
-### [Update Environment](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#patch-/orgs/-org\_id-/cloud/environments/-environment\_id-)
+### [Update Environment](https://apidocs.snyk.io/?beta=\&version=2024-10-15#patch-/orgs/-org\_id-/cloud/environments/-environment\_id-)
 
-### [Generate Cloud Provider Permissions](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/cloud/permissions)
+### [Generate Cloud Provider Permissions](https://apidocs.snyk.io/?beta=\&version=2024-10-15#post-/orgs/-org\_id-/cloud/permissions)
 
-### [List Resources](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/resources)
+### [List Resources](https://apidocs.snyk.io/?beta=\&version=2024-10-15#get-/orgs/-org\_id-/cloud/resources)
 
 [Snyk IaC](../../scan-with-snyk/snyk-iac/) (Use: View an inventory of IaC and cloud resources generated from your IaC files)
 
-### [List Scans](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/scans)
+### [List Scans](https://apidocs.snyk.io/?beta=\&version=2024-10-15#get-/orgs/-org\_id-/cloud/scans)
 
-### [Create Scan](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/cloud/scans)
+### [Create Scan](https://apidocs.snyk.io/?beta=\&version=2024-10-15#post-/orgs/-org\_id-/cloud/scans)
 
-### [Get scan](https://apidocs.snyk.io/?beta=\&version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/cloud/scans/-scan\_id-)
+### [Get scan](https://apidocs.snyk.io/?beta=\&version=2024-10-15#get-/orgs/-org\_id-/cloud/scans/-scan\_id-)
 
 ## Collection
 
