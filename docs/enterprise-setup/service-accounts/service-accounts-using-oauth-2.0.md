@@ -13,7 +13,7 @@ You can create an `oauth_client_secret` service account at either the Group or O
 
 The response returns the `client_secret` and the `client_id`.  You cannot view the `client_secret` again after the service account is created. If you have misplaced it, you can [rotate](manage-service-accounts-using-the-snyk-api.md#manage-a-service-account-client-secret-for-your-group) your `client_secret` and receive a new one.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Never share the `client_secret` publicly, as this is used to authenticate your service account. Keep it secure and private.
 {% endhint %}
 

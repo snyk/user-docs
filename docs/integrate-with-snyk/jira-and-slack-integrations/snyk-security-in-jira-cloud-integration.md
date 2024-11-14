@@ -125,7 +125,7 @@ Now, according to your schedule, Jira will search for any issues for which the v
 
 ## Uninstall Snyk Security in Jira Cloud
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Uninstalling Snyk Security in Jira Cloud will disconnect Snyk vulnerabilities from their associated Jira issues.\
 \
 To uninstall a Jira app, you must be an administrator in the site-admins, administrators, or jira-administrators groups.

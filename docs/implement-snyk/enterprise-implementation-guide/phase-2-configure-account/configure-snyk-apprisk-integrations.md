@@ -46,7 +46,7 @@ After you click on the Integration Hub, a list of the available integrations is 
 
 Use the Snyk AppRisk Integrations Hub to configure your SCM integrations.&#x20;
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Integration Hub is a distinct integration interface dedicated to Snyk AppRisk, separate from the Organization integrations interface.
 {% endhint %}
 

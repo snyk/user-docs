@@ -20,6 +20,6 @@ After you install the Snyk Controller in your Kubernetes cluster, it pulls image
    * The size of scanning queues
    * The network speed.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Snyk highly recommends NOT storing sensitive data in plain text as an environment variable in the container, for example, password, authentication token, and SSH key. Alternatively, you can store the sensitive data in a Secret, mount it as a Volume, and access the information from there.
 {% endhint %}
