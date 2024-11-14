@@ -54,7 +54,7 @@ By default, only Snyk Org or Group admins can create assignments. Group admins c
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (527).png" alt="Clicking on the Assignments link in the Home page"><figcaption><p>Clicking on the Assignments link in the Home page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (527).png" alt=""><figcaption><p>Assignments section on Snyk Learn home page</p></figcaption></figure>
 
 </div>
 
@@ -62,7 +62,7 @@ By default, only Snyk Org or Group admins can create assignments. Group admins c
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (528).png" alt="Selecting an Organization in the Assignments Dashboard page"><figcaption><p>Selecting an Organization in the Assignments Dashboard page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (528).png" alt=""><figcaption><p>Select an Organization in the Assignments Dashboard page</p></figcaption></figure>
 
 </div>
 
@@ -70,7 +70,7 @@ By default, only Snyk Org or Group admins can create assignments. Group admins c
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (515).png" alt="Clicking on the &#x27;Create new assignments&#x27; button in the Assignments Dashboard page"><figcaption><p>Clicking on the 'Create new assignments' button in the Assignments Dashboard page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (515).png" alt="Clicking on the &#x27;Create new assignments&#x27; button in the Assignments Dashboard page"><figcaption><p>Creating new assignments button on the Assignments Dashboard page</p></figcaption></figure>
 
 </div>
 
@@ -79,7 +79,7 @@ The **New Assignments** page opens, which allows you to create assignments for S
 1.  Select an Organization.\
 
 
-    <figure><img src="../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (516).png" alt=""><figcaption><p>Select an Organization to create assignments</p></figcaption></figure>
 2.  Select users.\
 
 
@@ -87,17 +87,15 @@ The **New Assignments** page opens, which allows you to create assignments for S
 3.  Select the content to assign.\
 
 
-    <figure><img src="../../.gitbook/assets/image (519).png" alt=""><figcaption><p>Select content to assign</p></figcaption></figure>
-4.  Optionally set the assignment due date. This date defines the date by which the assignment needs to be completed.\
-
-
-    <figure><img src="../../.gitbook/assets/image (533).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (519).png" alt=""><figcaption><p>Select content to assign assignments</p></figcaption></figure>
+4. Optionally set the assignment due date. This date defines the date by which the assignment needs to be completed.
 5.  Optionally reset user learning progress. If selected this forces users to retake lessons that have already been completed.\
 
 
-    <figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption><p>Select if you want to reset progress</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption><p>Reset user learning progress</p></figcaption></figure>
 6.  Review the assignment details and click **Submit**. \
-    Users are notified of their assignment details through their registered email address.\
 
 
-    <figure><img src="../../.gitbook/assets/image (535).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (535).png" alt=""><figcaption><p>Submit assigment</p></figcaption></figure>
+
+Users are notified of their assignment details through their registered email address.

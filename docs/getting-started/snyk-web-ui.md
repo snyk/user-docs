@@ -102,7 +102,7 @@ To add a new profile:
 
 You can edit an existing integration by clicking **Settings** on the integrations card and then clicking **Settings** again on the added Organization for that integration.
 
-<figure><img src="../.gitbook/assets/image (472).png" alt="Edit an existing integration from the Integration Hub"><figcaption><p>Edit an existing integration from the Integration Hub</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (472).png" alt=""><figcaption><p>Edit an existing integration from the Integration Hub</p></figcaption></figure>
 
 {% hint style="info" %}
 For security reasons, all credentials are anonymized when you open the Settings of an already existing integration.
@@ -237,7 +237,7 @@ You must be assigned the [required Admin roles and permissions](../snyk-admin/us
 
 Use the **Settings** option to view and manage your Organization or Group settings. For details, see[Group and Organization settings](../snyk-admin/groups-and-organizations/group-and-organization-settings.md).
 
-<figure><img src="../.gitbook/assets/org_settings.png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/org_settings.png" alt=""><figcaption><p>Group and Organization settings</p></figcaption></figure>
 
 ### View helpful resources
 
