@@ -306,7 +306,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 **More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
-### [Get the Infrastructure as Code Settings for a group](../reference/iacsettings.md#orgs-org\_id-settings-iac-1)
+### [Get the Infrastructure as Code Settings for an org](../reference/iacsettings.md#orgs-org\_id-settings-iac-1)
 
 ### [Update the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group\_id-settings-iac)
 
@@ -453,7 +453,7 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ## Monitor (v1)
 
-### [Dep Graph](../reference/monitor-v1.md)
+### [Monitor Dep Graph](../reference/monitor-v1.md)
 
 **More information:** [Dep Graph API (Bazel)](../../supported-languages-package-managers-and-frameworks/bazel/dep-graph-api.md)
 
