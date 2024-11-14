@@ -8,7 +8,7 @@
 
 ## Improved Gradle SCM scanning
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 Improved Gradle SCM scanning is in Early Access. You can enable the feature by using [Snyk Preview](../../snyk-admin/snyk-preview.md).
@@ -67,7 +67,7 @@ Configure language settings for your open source and licensing at the Organizati
 
 ## Package repository integrations
 
-{% hint style="success" %}
+{% hint style="info" %}
 If your application build uses private package repositories, you must configure the relevant Snyk integration to get the most accurate results.&#x20;
 {% endhint %}
 

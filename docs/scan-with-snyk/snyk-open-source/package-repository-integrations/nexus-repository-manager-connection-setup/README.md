@@ -59,7 +59,7 @@ Example: for Nexus 3, if `http://nexus.company.io/repository` is mapped to `http
 
 Example: for Nexus 2, if `http://nexus.company.io/nexus/content` is mapped to `http://nexus.company.io/my-nexus-content`, use `http://nexus.company.io/my-nexus-content`.
 
-{% hint style="success" %}
+{% hint style="info" %}
 A green success message appears if Snyk can contact your repository.
 
 If you see a yellow warning message, check your URL and credentials and try again.
