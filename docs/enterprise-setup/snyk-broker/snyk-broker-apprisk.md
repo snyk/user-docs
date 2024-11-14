@@ -4,6 +4,11 @@ If your SCM or third-party instance is not publicly accessible, you need Snyk Br
 
 Enable Broker for Snyk AppRisk by setting the `APPRISK` environment variable to `true` in the installation command: `ACCEPT_APPRISK=true`  for Docker and `--set enableAppRisk=true` for Helm.
 
+Ensure you have the Snyk Broker token for the Snyk AppRisk integration. The Snyk support team can provide the needed token, or you can generate it yourself by following these instructions:
+
+* Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
+* Copy and paste the Broker token on the integration setup menu from the Integration Hub.
+
 ## SCM integrations
 
 * GitHub - install and configure Snyk Broker&#x20;
@@ -45,8 +50,9 @@ The third-party integrations are available only for the Snyk AppRisk Pro version
 
 Follow these steps to install and run Snyk Broker for the Snyk AppRisk third-party integrations.
 
-1. Ensure you have a Snyk Broker token for the Snyk AppRisk integration.\
-   The Snyk support team can provide the needed token.&#x20;
+1. Ensure you have the Snyk Broker token for the Snyk AppRisk integration. The Snyk support team can provide the needed token.&#x20;
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
+   * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 2. Pull the latest Broker image by running this command:
 
 ```docker

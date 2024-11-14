@@ -207,28 +207,42 @@ After manually setting up the languages in your Bitbucket project, Snyk can auto
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. Access Token (`mandatory`): Create your BitBucket PAT from your BitBucket organization.
+   * API URL (`mandatory`) - Input the API URL.
+   * Username (`mandatory`): Input the BitBucket username of your organization.
+   * App password (`mandatory`): Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
+     *   **Workspace membership** - Read
 
-{% hint style="info" %}
-If you want to use the Broker Token follow the instructions from the [Snyk Broker AppRisk](../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md) page.
-{% endhint %}
+         * **Account** - Read
+         * **Projects** - Read
+         * **Repositories** - Read
+         * **Issues** - Read
 
-3. API URL (`mandatory`) - Input the API URL.
-4. Username (`mandatory`): Input the BitBucket username of your organization.
-5. App password (`mandatory`): Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
+
+
+         Create a BitBucket app password by following these steps:
+
+         1. Open your BitBucket account&#x20;
+         2. Click the Settings option
+         3. Click the Personal BitBucket settings option&#x20;
+         4. Navigate to the App passwords sub-section from the ACCESS MANAGEMENT section.
+3. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk broker for AppRisk.
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
+   * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
+4. Service type (`mandatory`): Select the service type, Cloud, or On-premises.
+5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
+6. API URL (`mandatory`) - Input the API URL.
+7. Username (`mandatory`): Input the BitBucket username of your organization.
+8. App password (`mandatory`): Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
    * **Account** - Read
    * **Projects** - Read
-
-{% hint style="info" %}
-Create a BitBucket app password by following these steps:
-
-1. Open your BitBucket account&#x20;
-2. Click the Settings option
-3. Click the Personal BitBucket settings option&#x20;
-4. Navigate to the App passwords sub-section from the ACCESS MANAGEMENT section.
-{% endhint %}
-
-6. Service type (`mandatory`): Select the service type, Cloud, or On-premises.
-7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
+9. API URL (`mandatory`) - Input the API URL.
+10. Username (`mandatory`): Input the BitBucket username of your organization.
+11. App password (`mandatory`): Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
+    * **Workspace membership** - Read
+    * **Account** - Read
+    * **Projects** - Read
+    * **Repositories** - Read
+    * **Issues** - Read
 
 #### API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
 
