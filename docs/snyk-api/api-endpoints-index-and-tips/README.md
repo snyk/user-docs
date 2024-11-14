@@ -532,13 +532,15 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [Update organization](../reference/orgs.md#orgs-org\_id)
 
-### [Get organization](../reference/orgs.md#orgs-org\_id-1)
+### [Create a org membership for a user with role](../reference/orgs.md#orgs-org\_id-memberships)
 
-**More information:** [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
+### [Get all memberships of the org](../reference/orgs.md#orgs-org\_id-memberships-1)
+
+### [Update a org membership for user with role](../reference/orgs.md#orgs-org\_id-memberships-membership\_id)
 
 ### [List all organizations in a group](../reference/orgs.md#groups-group\_id-orgs)
 
-### [Get an ORG](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-) (beta)
+### [Get an ORG](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org\_id-) (beta)
 
 **More information:** [Org and group identification for Projects](organization-and-group-identification-for-projects-using-the-api.md)
 
