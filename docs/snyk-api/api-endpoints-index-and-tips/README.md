@@ -658,6 +658,10 @@ The query-string parameter for types is optional. The endpoint does not enforce 
 **More information:** [Legacy reports](../../manage-issues/reporting/legacy-reports/);\
 [Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/)
 
+### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
+
+See notes for [Get list of latest issues](./#get-list-of-latest-issues).
+
 ### [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest)
 
 To list all Projects that have a vulnerability linked to a CVE, use the capability to filter on strings with the reporting endpoints [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest) and [Get List of issues](../reference/reporting-api-v1.md#reporting-issues). Filter by the identifier attribute.
@@ -667,13 +671,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 **More information:** [Priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md);\
 [View Snyk IaC issue reports](../../scan-with-snyk/snyk-iac/view-snyk-iac-issue-reports.md);\
 [Scenario: Retrieve a Project snapshot for every Project in a given Group](scenarios-for-using-the-snyk-api.md#retrieve-a-project-snapshot-for-every-project-in-a-given-group);\
-[Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues)
-
-### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
-
-See notes for [Get list of latest issues](./#get-list-of-latest-issues).
-
-**More information:** [Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability)
+[Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues)**More information:** [Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability)
 
 ### [Get test counts](../reference/reporting-api-v1.md#reporting-counts-tests)
 
@@ -693,13 +691,13 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 **More information:** [Get a project’s SBOM document](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-get-a-projects-sbom-document.md)
 
-### [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#post-/orgs/-org\_id-/sbom\_tests) (beta)
+### [Create an SBOM test run](ttps://apidocs.snyk.io/?version=2024-10-15#post-/orgs/-org\_id-/sbom\_tests) (beta)
 
 **More information:** [Test an SBOM document for vulnerabilities](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
-### [Gets an SBOM test run status](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-) (beta)
+### [Gets an SBOM test run status](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org\_id-/sbom\_tests/-job\_id-) (beta)
 
-### [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results) (beta)
+### [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results) (beta)
 
 **More information:** [Test an SBOM document for vulnerabilities](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
@@ -827,25 +825,25 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [Test for issues in a public gem by name and version](../reference/test-v1.md#test-rubygems-gemname-version)
 
-### [Test (pip) requirements.txt file](../reference/test-v1.md#test-pip)
+### [Test requirements.txt file](../reference/test-v1.md#test-pip) (pip)
 
 ### [Pip\_Test for issues in a public (pip) package by name and version](../reference/test-v1.md#test-pip-packagename-version)
 
 ### [Test package.json & package-lock.json file](../reference/test-v1.md#test-npm)
 
-### [Test for issues in a public (npm) package by name and version](../reference/test-v1.md#test-npm-packagename-version)
+### [Test for issues in a public package by name and version](../reference/test-v1.md#test-npm-packagename-version) (npm)
 
 **More information:** [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript)
 
 ### [Test maven file](../reference/test-v1.md#test-maven)
 
-### [Test  for issues in a (maven) public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version)
+### [Test  for issues in a public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version) (Maven)
 
 **More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md)
 
 ### [Test gradle file](../reference/test-v1.md#test-gradle)
 
-### [Test for issues in a public (Gradle) package by group, name and version](../reference/test-v1.md#test-gradle-group-name-version)
+### [Test for issues in a public package by group, name and version](../reference/test-v1.md#test-gradle-group-name-version) (Gradle)
 
 ### [Test vendor.json file](../reference/test-v1.md#test-govendor)
 
@@ -877,13 +875,13 @@ See notes for [Get list of latest issues](./#get-list-of-latest-issues).
 
 ### [My User Details](../reference/users.md)
 
-### [Update a user’s role in a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#patch-/groups/-group\_id-/users/-id-) (beta)
+### [Update a user’s role in a group](https://apidocs.snyk.io/?version=2024-10-15#patch-/groups/-group\_id-/users/-id-) (beta)
 
 Note: Use this endpoint to remove users from a group.
 
 **More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)
 
-### [Get user by ID](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/orgs/-org\_id-/users/-id-) (beta)
+### [Get user by ID](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org\_id-/users/-id-) (beta)
 
 ## Webhooks (v1)
 
