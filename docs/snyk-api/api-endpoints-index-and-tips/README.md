@@ -240,17 +240,17 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 ## Groups (beta)
 
-### [Get all groups](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups)
+### [Get all groups](https://apidocs.snyk.io/?version=2024-10-15#get-/groups)
 
-### [Get a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-)
+### [Get a group](https://apidocs.snyk.io/?version=2024-10-15#get-/groups/-group\_id-)
 
 **More information:** [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
 
-### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-/sso\_connections)
+### [Get all SSO connections for a group](https://apidocs.snyk.io/?version=2024-10-15#get-/groups/-group\_id-/sso\_connections)
 
-### [Get all users using a given SSO connection](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users)
+### [Get all users using a given SSO connection](https://apidocs.snyk.io/?version=2024-10-15#get-/groups/-group\_id-/sso\_connections/-sso\_id-/users)
 
-### [Delete a user from a Group SSO connection](https://apidocs.snyk.io/?version=2024-07-10%7Ebeta#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
+### [Delete a user from a Group SSO connection](https://apidocs.snyk.io/?version=2024-10-15#delete-/groups/-group\_id-/sso\_connections/-sso\_id-/users/-user\_id-)
 
 **More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md); [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)
 
@@ -287,6 +287,18 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org\_id-aud
 
 **More information:** [Remove members from Groups and Orgs using the API](../../snyk-admin/user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md);\
 [Scenario: Assign all users in a given list to all the Organizations a company has (all Organizations in a Group)](scenarios-for-using-the-snyk-api.md#assign-all-users-in-a-given-list-to-all-the-organizations-a-company-has-all-organizations-in-a-group)
+
+## Groups
+
+### [Get a list of org memberships of a group user](../reference/groups.md#groups-group\_id-org\_memberships)
+
+### [Create a group membership for a user with role](../reference/groups.md#groups-group\_id-memberships)
+
+### [Get all memberships of the group](../reference/groups.md#groups-group\_id-memberships-1)
+
+### [Update a role from a group membership](../reference/groups.md#groups-group\_id-memberships-membership\_id)
+
+### [Delete a membership from a group](../reference/groups.md#groups-group\_id-memberships-membership\_id-1)
 
 ## IacSettings
 
