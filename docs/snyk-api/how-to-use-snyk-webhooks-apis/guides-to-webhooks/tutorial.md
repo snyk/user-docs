@@ -6,7 +6,7 @@ Snyk API v1 docs are at [https://snyk.docs.apiary.io/#](https://snyk.docs.apiary
 
 ## ​Integration example
 
-First of all, we need to create a new Zap in [Zapier](https://zapier.com)
+First of all, we need to create a new Zap in [Zapier](https://zapier.com).
 
 ### Trigger
 

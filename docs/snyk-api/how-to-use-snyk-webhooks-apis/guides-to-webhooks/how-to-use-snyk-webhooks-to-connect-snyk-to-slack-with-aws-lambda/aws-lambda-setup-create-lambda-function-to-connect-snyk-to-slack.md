@@ -200,12 +200,12 @@ To create an AWS Lambda function, follow these steps:
 4. Choose **Node.js 16.x** for the **Runtime**.
 5. Choose **X86\_64** for the **Architecture**.
 6. If publishing the Lambda function through API Gateway, add or create a role with the default policy **AmazonAPIGatewayInvokeFullAccess** to interact with the AWS API Gateway.
-7.  Verify that the AWS Console screen shows these entries:\\
+7.  Verify that the AWS Console screen shows these entries:
 
-    <figure><img src="https://lh6.googleusercontent.com/xzJzGjfuzj0U27-pxcaIcrU-wBj8DTuEiQpivJZAnqRAO3rEPccx48l8KSZ5AE01BYJDwjJwkiFMR-Oj3ozWyG-CI20bwFtK_yjY9HKEoY0-4V4pa8l351JqrYdkK29va1x7BdlPoQ7N12SROjDQy3CmUQsDTtQ5lYOw3QvwoG1c1nDms-EFiQSElA" alt="AWS Console with entries to create a Lambda function"><figcaption><p>AWS Console with entries to create a Lambda function</p></figcaption></figure>
+    <figure><img src="https://lh6.googleusercontent.com/xzJzGjfuzj0U27-pxcaIcrU-wBj8DTuEiQpivJZAnqRAO3rEPccx48l8KSZ5AE01BYJDwjJwkiFMR-Oj3ozWyG-CI20bwFtK_yjY9HKEoY0-4V4pa8l351JqrYdkK29va1x7BdlPoQ7N12SROjDQy3CmUQsDTtQ5lYOw3QvwoG1c1nDms-EFiQSElA" alt=""><figcaption><p>AWS Console with entries to create a Lambda function</p></figcaption></figure>
 8. Click **Create Function** and when the function is ready click **Upload from .zip file** and
-9.  Verify that the code you entered is displayed in the Code Source.\\
+9.  Verify that the code you entered is displayed in the Code Source.
 
-    <figure><img src="https://lh3.googleusercontent.com/97qnO6V9xBXaf6dyO0hg41Y2vmeB1-0aPK-qskqTI-L2WII3d75zb4XsK6Mg5ljJUEdS7AGYJ5sQ5IoDHvzofkfK_gPId9e-XuBqEGkuWNxlIyL4IHu7-S8hrbGKnuyOehU2fjScDi0jazvuhWkADyFDGkkdAdzQGSEfWO30YGPJ9x4ocfwFXS5LfQ" alt="AWS code source display"><figcaption><p>AWS code source display</p></figcaption></figure>
+    <figure><img src="https://lh3.googleusercontent.com/97qnO6V9xBXaf6dyO0hg41Y2vmeB1-0aPK-qskqTI-L2WII3d75zb4XsK6Mg5ljJUEdS7AGYJ5sQ5IoDHvzofkfK_gPId9e-XuBqEGkuWNxlIyL4IHu7-S8hrbGKnuyOehU2fjScDi0jazvuhWkADyFDGkkdAdzQGSEfWO30YGPJ9x4ocfwFXS5LfQ" alt=""><figcaption><p>AWS code source display</p></figcaption></figure>
 10. In the code, modify the `slackWebhookUrl` to match your Slack webhook URL.
 11. For more information on the script you have pasted, go to [Configure the AWS Lambda Script](configure-the-aws-lambda-script.md).

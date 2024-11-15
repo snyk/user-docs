@@ -101,7 +101,7 @@ You can check the status of the test at any time after the initial request. &#x2
 
 When the test is complete, you can view the results for the tested SBOM.
 
-1. When the status of the test returned is`finished`, make a request to the endpoint [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results).
+1. When the status of the test returned is `finished`, make a request to the endpoint [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#get-/orgs/-org\_id-/sbom\_tests/-job\_id-/results).
 2. View the information returned, which includes summary-level information about the SBOM that was tested and the detailed results.
 
 ```bash

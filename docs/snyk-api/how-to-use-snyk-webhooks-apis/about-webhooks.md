@@ -16,7 +16,7 @@ Respond to critical issues before they impact your business. Embrace modern inci
 
 ### Security Information and Event Management (SIEM)
 
-Get real-time security alerts aggregated across various sources into a single platform. read more about Snyk's partnership with Rapid7 and how together we help organizations mitigate security risks.
+Get real-time security alerts aggregated across various sources into a single platform. Read more about Snyk's partnership with Rapid7 and how together we help organizations mitigate security risks.
 
 ### Vulnerability Management and Aggregation
 
@@ -37,5 +37,5 @@ When creating a webhook, you must provide a ​secret​ - this is a string that
 All transports sent to your webhooks will have a ​`X-Hub-Signature` ​header, which contains the hash signature for the transport. The signature is a HMAC hexdigest of the request body, generated using sha256 and your secret as the HMAC key.
 
 {% hint style="info" %}
-`X-Hub-Signature​`always starts with​ `sha256=`
+`X-Hub-Signature​` always starts with​ `sha256=`
 {% endhint %}
