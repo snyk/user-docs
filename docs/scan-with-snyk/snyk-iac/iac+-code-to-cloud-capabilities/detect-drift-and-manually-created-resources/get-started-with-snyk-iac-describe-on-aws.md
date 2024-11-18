@@ -2,7 +2,7 @@
 
 ## **Step 1: Configure AWS authentication for your environment**
 
-The [`snyk iac describe`](../../../../snyk-cli/commands/iac-describe.md) command requires authentication to your cloud provider in order to run properly. It requires only the lowest read-only access rights possible. You can use use the built-in AWS `ReadOnlyAccess` IAM policy for an IAM user as a the default to get started.
+The [`snyk iac describe`](../../../../snyk-cli/commands/iac-describe.md) command requires authentication to your cloud provider in order to run properly. It requires only the lowest read-only access rights possible. You can use use the built-in AWS `ReadOnlyAccess` IAM policy for an IAM user as the default to get started.
 
 `snyk iac describe` can reuse standard authentication methods for AWS, such as the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` [environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list). When those are set, the Snyk CLI will automatically pick them up to authenticate on AWS.
 
@@ -12,13 +12,15 @@ Alternatively, you can configure the [AWS profile](https://docs.aws.amazon.com/c
 
 ### **Unmanaged resources**
 
-Snyk IaC can report drift of unmanaged resources, that is, resources present on your cloud provider but not on your Terraform state. You probably will want to import those resources into Terraform or delete them from your IaaS account.
+Snyk IaC can report drift of unmanaged resources. Unmanaged resources are resources that are present on your cloud provider but not on your Terraform state. You can import these resources into Terraform or delete them from your IaaS account.
+
+For information about detecting drift of managed resources, see [Command: plan](https://developer.hashicorp.com/terraform/cli/commands/plan) in the Terraform CLI documentation.&#x20;
 
 ### Select Terraform state files
 
-To understand the drift that happens in your cloud environment, compare the state of your environment to one or multiple Terraform state file(s) (`.tfstate`).
+To understand the drift that happens in your cloud environment, compare the state of your environment to one or multiple Terraform state files (`.tfstate`).
 
-The state file can be located locally or in an S3 bucket. Terraform Cloud is also available, but out of scope for this getting started document.
+The state file can be located locally or in an S3 bucket. Terraform Cloud is also available, but it is outside the scope of this getting started document.
 
 The `--from` option helps Snyk determine the path of the `.tfstate` file.
 

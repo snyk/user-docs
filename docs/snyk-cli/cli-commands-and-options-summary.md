@@ -287,12 +287,6 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--service=<SERVICE>[,<SERVICE]...>`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-`--all`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
-
-`--only-managed` or `--drift`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
-
-`--only-unmanaged`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
-
 `--quiet`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 `--filter`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
