@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-The Snyk Runtime Sensor for Snyk AppRisk Pro is in Closed Beta and is available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+The Snyk Runtime Sensor for Snyk AppRisk Pro is in Early Access, and is available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The Snyk Runtime Sensor is a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) that watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
@@ -276,16 +276,16 @@ Snyk provides a straightforward process for installing the Snyk Runtime Sensor o
 
 To deploy the Snyk Runtime Sensor on Amazon EKS with EKS Add-on, you need to meet the following prerequisites:
 
-1. Subscribe to Snyk Runtime Sensor on AWS Marketplace [here](https://aws.amazon.com/marketplace/pp/prodview-i23vvrxuamcya).
-2. Install the following tools: `kubectl`, `AWS CLI`, and optionally `eksctl`.&#x20;
-3. Ensure you have access to the Amazon EKS cluster where you want to install the sensor.&#x20;
+1. Subscribe to Snyk Runtime Sensor on AWS Marketplace [here](https://aws.amazon.com/marketplace/pp/prodview-i23vvrxuamcya). This should be done in each account that has clusters you want to integrate the sensor with.
+2. Install the following tools: `kubectl`, `AWS CLI`, and optionally `eksctl`.
+3. Ensure you have access to the Amazon EKS clusters where you want to install the sensor.
 4. Ensure you have a Snyk service account token ready with the right permissions, as described in the [prerequisites](snyk-runtime-sensor.md#prerequisites).
 
 #### **Enable the Snyk Runtime Sensor add-on from AWS console**
 
-After you have successfully set up a subscription to Snyk Runtime Sensor on AWS Marketplace and followed the on-screen instructions, you will be redirected to Amazon EKS console.&#x20;
+After you have successfully set up a subscription to Snyk Runtime Sensor on AWS Marketplace and followed the on-screen instructions, you will be redirected to Amazon EKS console.
 
-To enable the Snyk Runtime Sensor for your Amazon EKS cluster, select your cluster on the Amazon EKS console. Then, navigate to the Add-ons tab and choose "Get more add-ons". Use the search bar to find "runtime" and follow the on-screen instructions to enable the add-on for your cluster.
+To enable the Snyk Runtime Sensor for your Amazon EKS cluster, select your cluster on the Amazon EKS console. Then, navigate to the Add-ons tab and choose "Get more add-ons". Use the search bar to find "runtime" and follow the on-screen instructions to enable the add-on for your cluster. This process should be done for each cluster you want to integrate the sensor with (i.e. for each cluster you want to collect data from).
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.53.23.png" alt="Select the Snyk Runtime Sensor add-on"><figcaption><p>Select the Snyk Runtime Sensor add-on</p></figcaption></figure>
 
