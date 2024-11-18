@@ -17,12 +17,6 @@ Not all features follow all these stages, and timelines for each feature to move
 **Snyk features in Closed Beta**
 
 * [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
-* Third-party integrations for Snyk AppRisk:
-  * [Orca Security](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#orca-security-setup-guide)
-  * [Jira](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#jira-setup-guide)
-  * [CrowdStrike](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#crowdstrike-setup-guide)
-  * [SentinelOne](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sentinelone-setup-guide)
-  * [Datadog](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#datadog-setup-guide)
 
 ## Early Access
 
