@@ -24,35 +24,9 @@ If you navigate to the Group level and select the Organizations page, you will s
 Asset Dashboard is available only for Snyk AppRisk Essentials users. If you use Snyk AppRisk Pro, see [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md).
 {% endhint %}
 
-On the Snyk AppRisk dashboard page, you can add widgets that display an overview of your application and security controls.
+The Snyk AppRisk Asset Dashboard reporting page provides a comprehensive overview of the security controls associated with your application. It presents critical metrics and data regarding your assets, such as scan coverage and a detailed breakdown of your inventory categorized by asset class, source, and other relevant information. Furthermore, the dashboard includes an extensive global filtering option, enabling users to filter results based on specific applications and owners, using the context data related to the application.
 
-You can customize the dashboard widgets as desired. Choose to rename or modify display configurations, or add multiple widget instances.
-
-#### Configure a widget
-
-You can customize your dashboard with the available widgets. You can change the settings of an existing widget or the way it is displayed. You have the ability to move a widget around the dashboard, rename it, display or hide the legend, view it in full screen, export or download it.
-
-For details on archived or deleted repositories and the information presented in the dashboard widgets, see [Repositories assets](../manage-assets/assets-inventory-layouts.md#repository-assets).
-
-#### Settings menu
-
-You can make several changes to a widget. All widgets allow you to change the name. Other particular settings are available for each widget. To access the **Settings** menu:
-
-1. Select a widget and click the **Setting** menu.
-2. Customize the widget by changing its name or other specific details.
-3. Click **Apply**.
-
-#### Widget menu
-
-You can access the full list of general options from the widget menu. To do this:
-
-1. Select a widget and click the menu available in the top right corner of the widget.
-2. Select one of the following actions:
-   * **View in full-screen**
-   * **CSV export**
-   * **XLS export**
-   * **Download PNG**
-   * **Download PD**
+Navigate to the [Asset Dashboard](../manage-issues/reporting/available-snyk-reports.md#asset-dashboard) documentation section for more details.
 
 ### View and manage your assets inventory
 
@@ -207,7 +181,7 @@ Reporting is available only with Enterprise plans. For more information, see [pl
 
 You can view [reports](../manage-issues/reporting/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues. You will find detailed definitions for information on the reports in the tooltips in the Reporting user interface.
 
-The Reports page is available at both the Group and Organization levels.
+The Reports page has all report types available at both the Group and Organization levels. The exception to the rule is the Asset Dashboard report, which is available only at the Group level.
 
 ### View and prioritize issues
 
