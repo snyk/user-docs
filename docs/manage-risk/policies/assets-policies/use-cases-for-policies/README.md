@@ -7,6 +7,5 @@ Gain a better understanding of the policies you can use by going through the fol
 * [Classification](classification-policy-use-case.md)
 * [Tagging](tagging-policy-use-case.md)
 * [Notifications](notification-policy-use-case.md)
-* [Jira ticket creation](jira-policy-use-case.md)
 
 Each type of policy is accompanied by a use case, explaining a practical way of using the policy. The use cases provide a clear example of one of the possible ways of using the policy and offer details about the conditions needed for the filters and actions when building your policy.

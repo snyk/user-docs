@@ -105,7 +105,6 @@ After defining filter components, you need to define the actions that the policy
 * **Set Asset Class** - Sets the class on the matched assets. Removing the policy or turning in off does not retroactively change the asset class back to default.
 * **Set Asset Tag** - Sets a tag on the matched assets. Removing the policy or turning in off will remove the tags of this policy from the relevant assets.
 * **Set Coverage Control Policy** - Sets a control on filtered assets that checks whether selected security products are scanning assets, optionally within a given timeframe. Assets that fail this control will be marked accordingly on inventory pages. This control applies the OR logic across products.
-* **Set Jira policy -** Automate the creation and management of Jira tickets based on specific conditions related to your assets. You can create new Jira tickets for new matches that meet the policy criteria, modify existing Jira tickets if the policy conditions change, set classifications and tags on assets using the policy, or notify users using Slack or email when a condition is met.
 
 <figure><img src="../../../.gitbook/assets/Policy - Nwe UI.png" alt="AppRisk - Set a policy action"><figcaption><p>Snyk AppRisk - Set a policy action </p></figcaption></figure>
 
