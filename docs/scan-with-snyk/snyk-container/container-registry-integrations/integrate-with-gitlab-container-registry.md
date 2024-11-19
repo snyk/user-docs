@@ -22,8 +22,6 @@ This page explains how to set up GitLab Container Registry integration in Snyk a
 3. In the **Container registry name** fill in the full URL to the registry you want to integrate with.
 4. To finish, click **Save**.
 
-<figure><img src="../../../.gitbook/assets/mceclip1-6-.png" alt="GitLab Container Registry Account credentials"><figcaption><p>GitLab Container Registry Account credentials</p></figcaption></figure>
-
 If you are using a self-hosted GitLab Container Registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
 Snyk tests the connection values, and the page reloads, now displaying GitLab Container Registry integration information. The **Add your GitLab container registry images to Snyk** button becomes available.&#x20;
@@ -58,11 +56,11 @@ The steps follow for adding images from GitLab Container Registry to Snyk.
 7. When the import ends:
    * You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    * An **import log** becomes available; you can reach it at the top of the Projects list.
-   * To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see[ Adding your Dockerfile and testing your base image.](../../../scan-with-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md)
+   * To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see[ Adding your Dockerfile and testing your base image.](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md)
 
 GitLab Container Registry imports are designated with a unique icon. You can filter the integration in the **Projects** view to see GitLab Container Registry Projects only.
 
-<figure><img src="../../../.gitbook/assets/mceclip0-14-.png" alt="GitLab Container Registry Project in Projects listing"><figcaption><p>GitLab Container Registry Project in Projects listing</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mceclip0-14-.png" alt=""><figcaption><p>GitLab Container Registry Project in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
 For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).

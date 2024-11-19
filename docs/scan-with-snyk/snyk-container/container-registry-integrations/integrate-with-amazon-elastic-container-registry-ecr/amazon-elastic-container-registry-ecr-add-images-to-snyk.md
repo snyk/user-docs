@@ -23,11 +23,11 @@ Log in to your account and navigate to the relevant Group and Organization you w
 5. When the import ends, a notification of success or failure appears at the top of the page. Click **Refresh Page** to view the **Projects** page with the newly imported images.\
    Images are grouped by repository and linked individually to a detailed **Projects** page.
 6. You can now connect your Git repo to this Project to use your Dockerfile for enriched fix advice.\
-   For more information, see [Detect vulnerable base images from your Dockerfile](../../../../scan-with-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
+   For more information, see [Detect vulnerable base images from your Dockerfile](../../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 You can filter to view only ECR Projects, which are marked with a unique icon.
 
-<figure><img src="../../../../.gitbook/assets/List_of_ECR_Projects (4).png" alt="ECR Project" width="375"><figcaption><p>ECR Project</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/projects_filter_integrations_ecr.png" alt="" width="284"><figcaption><p>Filtering by ECR Project</p></figcaption></figure>
 
 Amazon ECR integration works like other Snyk integration. To continue to monitor, fix, and manage your Projects, see the relevant pages in the Snyk user documentation.
 

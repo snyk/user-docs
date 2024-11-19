@@ -8,14 +8,14 @@ This page explains how to enable and configure the integration between Docker Hu
 2. Click **Docker Hub**.
 3. Enter your Docker Hub username and Access Token. For details, see [Generate Docker Hub Access Token](configure-the-integration-with-docker-hub.md#generate-docker-hub-access-token).
 4. Click **Save**.\
-   The page reloads with new options. The Access Token field is blank.\
+   The page reloads with new options. The **Access Token** field is blank.\
    A confirmation message that the details were saved also appears in green at the top of the screen.
 
-<figure><img src="../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.27 AM.png" alt="Successful connection with Docker Hub"><figcaption><p>Successful connection with Docker Hub</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/confirmation_message_connected_docker_hub.png" alt=""><figcaption><p>Confirmation message for successful connection to Docker Hub</p></figcaption></figure>
 
 If the connection to Docker Hub fails, an error notification appears:
 
-<figure><img src="../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.50 AM.png" alt="Failed connection, Could not connect to Docker Hub"><figcaption><p>Failed connection, Could not connect to Docker Hub</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.50 AM.png" alt=""><figcaption><p>Error notification that the connection to Docker Hub has failed</p></figcaption></figure>
 
 ## Troubleshooting with the Docker Hub integration
 

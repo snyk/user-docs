@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+This feature is available only with Enterprise plans. For more information, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk integrates with Harbor Container Registry to enable you to import your container images and monitor them for vulnerabilities.
@@ -27,18 +27,15 @@ Follow these instructions to set up Harbor integration in Snyk and start managin
 
 If you are using a self-hosted Harbor registry, contact Snyk to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
-<figure><img src="../../../.gitbook/assets/mceclip2-1-.png" alt="Harbor Account credentials and Container registry name"><figcaption><p>Harbor Account credentials and Container registry name</p></figcaption></figure>
-
 {% hint style="info" %}
-**Note:** To set up the integration, the Harbor user should be an admin user. The integration currently uses /v2/\_catalog endpoint for listing repositories.
+To set up the integration, the Harbor user should be an admin user. The integration uses /v2/\_catalog endpoint for listing repositories.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/mceclip1-8-.png" alt="Harbor Account credentials with Broker token"><figcaption><p>Harbor Account credentials with Broker token</p></figcaption></figure>
 
-Snyk tests the connection values, and the page reloads, now displaying Harbor integration information. The **Add your Harbor images to Snyk** button becomes available. If the connection to Harbor fails, a notification appears under the **Connected to Harbor** section.\
+Snyk tests the connection values, and the page reloads, now displaying Harbor integration information. The **Add your Harbor images to Snyk** button becomes available. If the connection to Harbor fails, a notification appears under the **Connected to Harbor** section.
 
-
-When the connection is successful, you can use Snyk to scan your images from Harbor.
+Once the connection is successful, you can use Snyk to scan your images from Harbor.
 
 ## Scan container images from Harbor in Snyk
 
@@ -64,13 +61,13 @@ Follow these instructions to add images from Harbor to Snyk.
 7. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed Projects page.
    2. An **import log** becomes available; you can reach it from the top of the Projects list.
-   3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../../scan-with-snyk/snyk-container/scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
+   3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 Harbor imports are indicated with a unique icon. You can also filter to view only the Harbor Projects:
 
 <figure><img src="../../../.gitbook/assets/mceclip1-9-.png" alt="Harbor Projects in Projects listing"><figcaption><p>Harbor Projects in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
-For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}
 

@@ -9,7 +9,7 @@ To install and run the Snyk Docker Desktop Extension:
 1.  On the Docker Desktop home screen, click the three dots next to **Extensions**, and select **Marketplace**.\
 
 
-    <figure><img src="../../../.gitbook/assets/Docker_Desktop_Marketplace.png" alt="Marketplace on Docker Desktop"><figcaption><p>Marketplace on Docker Desktop</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/Docker_Desktop_Marketplace.png" alt=""><figcaption><p>Marketplace on Docker Desktop</p></figcaption></figure>
 2.  In the **Marketplace** window, navigate to the Snyk Extension and click **Install**.\
 
 
@@ -19,11 +19,11 @@ To install and run the Snyk Docker Desktop Extension:
 
 3.  After installation, launch the Snyk Extension and click **Settings**.
 
-    <figure><img src="../../../.gitbook/assets/Snyk_Ext_page_Docker_Deskop.png" alt=""><figcaption><p>Snyk Extension page on Docker Desktop</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/Snyk_Ext_page_Docker_Deskop.png" alt="Settings button on Docker Desktop"><figcaption><p>Snyk Extension page on Docker Desktop</p></figcaption></figure>
 4.  In the **Settings** window, add your API token or service account token and click **Save**.\
 
 
-    <figure><img src="../../../.gitbook/assets/Add_token_Docker_Desktop.png" alt="Add authorization token in the Settings window"><figcaption><p>Add authorization token in the Settings window</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/Add_token_Docker_Desktop.png" alt="Save button on the Docker Desktop settings page"><figcaption><p>Add authorization token in the Settings window</p></figcaption></figure>
 
 You can now select the local image you want to scan with Snyk by clicking **Test image**.
 
