@@ -474,7 +474,6 @@
       * [Create automatic PRs for backlog issues and known vulnerabilities (Backlog PRs)](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)
       * [Upgrade dependencies with automatic PRs (Upgrade PRs)](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/README.md)
         * [Upgrade open source dependencies with automatic PRs](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/upgrade-open-source-dependencies-with-automatic-prs.md)
-        * [Upgrade private dependencies with automatic PRs](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/upgrade-private-dependencies-with-automatic-prs.md)
       * [Customize PR templates](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/README.md)
         * [Apply a custom PR template](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md)
         * [Variables list and description](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/variables-list-and-description.md)
