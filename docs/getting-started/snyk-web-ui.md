@@ -14,6 +14,12 @@ The following Snyk functions are available with the Web UI, at Group level:
 * [Manage and customize your policies](snyk-web-ui.md#manage-and-customize-your-policies)
 * [Manage integrations for asset discovery, asset coverage, and issues from third-party vendors](snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors)
 
+The following video presents an overview of Snyk AppRisk Essentials from the Snyk Web UI.
+
+{% embed url="https://youtu.be/zlR0YqtqDbo" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% endembed %}
+
 ### Organizations available for the selected Group
 
 If you navigate to the Group level and select the Organizations page, you will see a list with all the Organizations that you have access to from that Group and the Organization role for each available Organization.
