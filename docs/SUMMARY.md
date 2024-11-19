@@ -33,7 +33,7 @@
   * [Java and Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/README.md)
     * [Java and Kotlin for code analysis](supported-languages-package-managers-and-frameworks/java-and-kotlin/java-and-kotlin-for-code-analysis.md)
     * [Java and Kotlin for open source](supported-languages-package-managers-and-frameworks/java-and-kotlin/java-and-kotlin-for-open-source.md)
-    * [Snyk CLI with Maven and Gradle](supported-languages-package-managers-and-frameworks/java-and-kotlin/snyk-cli-with-maven-and-gradle.md)
+    * [Snyk CLI for Java and Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/snyk-cli-for-java-and-kotlin.md)
     * [SCM integrations with Maven and Gradle](supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md)
     * [Snyk workflow with Java and Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/snyk-workflow-with-java-and-kotlin.md)
     * [Guidance for Java and Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md)
