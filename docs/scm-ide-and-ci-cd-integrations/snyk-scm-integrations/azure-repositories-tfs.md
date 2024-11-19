@@ -145,9 +145,7 @@ The following PAT token permissions requirements are for Snyk AppRisk integratio
    * Permissions
      * **Code** - read
      * **Project and Team** - read
-     * **Graph** - read
      * **Analytics** - read
-     * **Release** - read
      * **Member Entitlement Management** - read
    * Organization - Select **All accessible organizations** or a specific organization.
 4. Set the expiration to 12 months.
