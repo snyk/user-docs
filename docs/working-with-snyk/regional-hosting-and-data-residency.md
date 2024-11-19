@@ -168,7 +168,7 @@ Use [github.com/snyk/broker](https://github.com/snyk/broker) and add an extra en
 
 For Broker deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm](https://github.com/snyk/snyk-broker-helm) and add the following variable:
 
-**SNYK-US-02:** `--set brokerServerUrl-https://broker.us.snyk.io`
+**SNYK-US-02:** `--set brokerServerUrl=https://broker.us.snyk.io`
 
 **SNYK-EU-01:** `--set brokerServerUrl=https://broker.eu.snyk.io`
 
