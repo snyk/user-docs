@@ -6,7 +6,7 @@
 Regional hosting and data residency are available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For information about GDPR, see  [How Snyk maintains GDPR compliance](how-snyk-handles-your-data.md#how-snyk-maintains-gdpr-compliance).
+Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For information about GDPR, see [How Snyk maintains GDPR compliance](how-snyk-handles-your-data.md#how-snyk-maintains-gdpr-compliance).
 
 Data residency is available for [Snyk Open Source](../scan-with-snyk/snyk-open-source/), [Snyk Code](../scan-with-snyk/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/), and [Snyk IaC](../scan-with-snyk/snyk-iac/). Snyk can host your data in a number of regions.
 
@@ -93,43 +93,43 @@ There are special considerations when you set up specific integrations in your S
 
 ### Login and Web UI URLs
 
-**SNYK-US-01** - [https://app.snyk.io/](https://app.snyk.io/)
+**SNYK-US-01:** [https://app.snyk.io/](https://app.snyk.io/)
 
-**SNYK-US-02 -** [https://app.us.snyk.io/](https://app.us.snyk.io/)
+**SNYK-US-02:** [https://app.us.snyk.io/](https://app.us.snyk.io/)
 
-**SNYK-EU-01 -** [https://app.eu.snyk.io/](https://app.eu.snyk.io/)
+**SNYK-EU-01:** [https://app.eu.snyk.io/](https://app.eu.snyk.io/)
 
-**SNYK-AU-01 -** [https://app.au.snyk.io/](https://app.au.snyk.io/)
+**SNYK-AU-01:** [https://app.au.snyk.io/](https://app.au.snyk.io/)
 
 ### Support portal links
 
 To view and submit tickets, use the link for your regoin.
 
-**SNYK-US-01** - [https://support.snyk.io/](https://support.snyk.io/)
+**SNYK-US-01**: [https://support.snyk.io/](https://support.snyk.io/)
 
-**SNYK-US-02** - To be provided
+**SNYK-US-02**: To be provided
 
-**SNYK-EU -01** - [https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw](https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw)
+**SNYK-EU -01:**[https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw](https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw)
 
-**SNYK-AU-01 -** [https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ](https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ)
+**SNYK-AU-01:**[https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ](https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ)
 
 ### API URLs
 
 Use the reference documentation with the following base URLs:
 
-**SNYK-US-01** - **API v1** : https://api.snyk.io/v1/ and **REST** API: https://api.snyk.io/rest/
+**SNYK-US-01:** **API v1** : https://api.snyk.io/v1/ and **REST** API: https://api.snyk.io/rest/
 
-**SNYK-US-02**- **API v1:** https://api.us.snyk.io/v1/ and **REST** API: https://api.us.snyk.io/rest/&#x20;
+**SNYK-US-02**: **API v1:** https://api.us.snyk.io/v1/ and **REST** API: https://api.us.snyk.io/rest/&#x20;
 
-**SNYK-EU-01 - API v1**: https://api.eu.snyk.io/v1/ and **REST** API: https://api.eu.snyk.io/rest/
+**SNYK-EU-01: API v1**: https://api.eu.snyk.io/v1/ and **REST** API: https://api.eu.snyk.io/rest/
 
-**SNYK-AU-01 - API v1**: https://api.au.snyk.io/v1/ and **REST** API: https://api.au.snyk.io/rest/
+**SNYK-AU-01: API v1**: https://api.au.snyk.io/v1/ and **REST** API: https://api.au.snyk.io/rest/
 
 ### CLI and CI pipeline URLs
 
 Both the CLI and CI running CLI must be configured to run against your instance.&#x20;
 
-To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the  [snyk config environment command](../snyk-cli/commands/config-environment.md), for example:
+To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the [snyk config environment command](../snyk-cli/commands/config-environment.md), for example:
 
 [`snyk config environment SNYK-US-02`](#user-content-fn-1)[^1]
 
@@ -144,45 +144,45 @@ Visual Studio - 1.1.21\
 IntelliJ - 2.4.32
 {% endhint %}
 
-Snyk IDE extensions have modifiable options similar to the CLI and must be configured to use the appropriate endpoint. In the extension settings for Snyk in your IDE, set **Custom Endpoint** to the appropriate value for SNYK-US-02,  SNYK-EU-01, and SNYK-AU-01 as follows.
+Snyk IDE extensions have modifiable options similar to the CLI and must be configured to use the appropriate endpoint. In the extension settings for Snyk in your IDE, set **Custom Endpoint** to the appropriate value for SNYK-US-02, SNYK-EU-01, and SNYK-AU-01 as follows.
 
-**SNYK-US-01** - `https://api.snyk.io` (no configuration required)
+**SNYK-US-01:** `https://api.snyk.io` (no configuration required)
 
-**SNYK-US-02** - `https://api.us.snyk.io`
+**SNYK-US-02:** `https://api.us.snyk.io`
 
-**SNYK-EU-01** - `https://api.eu.snyk.io`
+**SNYK-EU-01:** `https://api.eu.snyk.io`
 
-**SNYK-AU-01 -** `https://api.au.snyk.io`
+**SNYK-AU-01 :** `https://api.au.snyk.io`
 
 ### Broker URLs
 
 Use [github.com/snyk/broker](https://github.com/snyk/broker) and add an extra environment variable in the container:
 
-**SNYK-US-01** - `https://broker.snyk.io` (no configuration required)
+**SNYK-US-01**: `https://broker.snyk.io` (no configuration required)
 
-**SNYK-US-02** - `-e BROKER_SERVER_URL=https://broker.us.snyk.io`
+**SNYK-US-02**: `-e BROKER_SERVER_URL=https://broker.us.snyk.io`
 
-**SNYK-EU-01** - `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
+**SNYK-EU-01:** `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
 
-**SNYK-AU-01 -** `-e BROKER_SERVER_URL=https://broker.au.snyk.io`
+**SNYK-AU-01:** `-e BROKER_SERVER_URL=https://broker.au.snyk.io`
 
 For Broker deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm](https://github.com/snyk/snyk-broker-helm) and add the following variable:
 
-**SNYK-US-02** - `--set brokerServerUrl-https://broker.us.snyk.io`
+**SNYK-US-02:** `--set brokerServerUrl-https://broker.us.snyk.io`
 
-**SNYK-EU-01 -** `--set brokerServerUrl=https://broker.eu.snyk.io`
+**SNYK-EU-01:** `--set brokerServerUrl=https://broker.eu.snyk.io`
 
-**SNYK-AU-01 -** `--set brokerServerUrl=https://broker.au.snyk.io`
+**SNYK-AU-01:** `--set brokerServerUrl=https://broker.au.snyk.io`
 
 ### Broker with high availability (HA) mode URLs
 
 Follow the [High availability mode](../enterprise-setup/snyk-broker/high-availability-mode.md) instructions BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
 
-**SNYK-US-02** - `-e BROKER_DISPATCHER_BASE_URL=https://api.us.snyk.io`
+**SNYK-US-02**: `-e BROKER_DISPATCHER_BASE_URL=https://api.us.snyk.io`
 
-**SNYK-EU-01 -** `-e BROKER_DISPATCHER_BASE_URL=https://api.eu.snyk.io`
+**SNYK-EU-01:** `-e BROKER_DISPATCHER_BASE_URL=https://api.eu.snyk.io`
 
-**SNYK-AU-01 -** `-e BROKER_DISPATCHER_BASE_URL=https://api.au.snyk.io`
+**SNYK-AU-01 :** `-e BROKER_DISPATCHER_BASE_URL=https://api.au.snyk.io`
 
 For Broker deployed by Helm chart, edit the `values.yaml` file to include the relevant details in brokerDispatcherUrl.
 
@@ -190,19 +190,19 @@ For Broker deployed by Helm chart, edit the `values.yaml` file to include the re
 
 Follow the [Snyk Broker - Code Agent](../enterprise-setup/snyk-broker/snyk-broker-code-agent/) instructions BUT add an extra environment variable in the Code Agent container:
 
-**SNYK-US-02** - `-e UPSTREAM_URL=https://deeproxy.us.snyk.io`
+**SNYK-US-02** :`-e UPSTREAM_URL=https://deeproxy.us.snyk.io`
 
-**SNYK-EU-01 -** `-e UPSTREAM_URL=https://deeproxy.eu.snyk.io`
+**SNYK-EU-01 :**`-e UPSTREAM_URL=https://deeproxy.eu.snyk.io`
 
-**SNYK-AU-01 -** `-e UPSTREAM_URL=https://deeproxy.au.snyk.io`
+**SNYK-AU-01 :**`-e UPSTREAM_URL=https://deeproxy.au.snyk.io`
 
 For Broker with Code Agent deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm](https://github.com/snyk/snyk-broker-helm) and add the following variable in the Code Agent chart:
 
-**SNYK-US-02** - `--set upstreamUrlCodeAgent=https://deeproxy.us.snyk.io`
+**SNYK-US-02**: `--set upstreamUrlCodeAgent=https://deeproxy.us.snyk.io`
 
-**SNYK-EU-01 -** `--set upstreamUrlCodeAgent=https://deeproxy.eu.snyk.io`
+**SNYK-EU-01:** `--set upstreamUrlCodeAgent=https://deeproxy.eu.snyk.io`
 
-**SNYK-AU-01 -** `--set upstreamUrlCodeAgent=https://deeproxy.au.snyk.io`
+**SNYK-AU-01:**`--set upstreamUrlCodeAgent=https://deeproxy.au.snyk.io`
 
 ### Broker with Snyk Code Local Engine (SCLE)
 
