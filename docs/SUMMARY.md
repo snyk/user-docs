@@ -272,7 +272,6 @@
     * [GitHub Enterprise](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md)
     * [GitHub](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)
     * [GitHub Cloud App](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md)
-    * [GitHub Server App](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-server-app.md)
     * [GitHub Read-only Projects](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-read-only-projects.md)
     * [GitLab](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)
     * [Bitbucket Cloud](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud.md)

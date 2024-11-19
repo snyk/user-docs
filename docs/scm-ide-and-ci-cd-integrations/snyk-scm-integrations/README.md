@@ -120,7 +120,6 @@ Snyk Source Control Manager (SCM) integrations allow you to:
 Snyk can integrate with the following SCMs to help you track, monitor, and fix the issues and vulnerabilities in your code:
 
 * [GitHub Cloud App](github-cloud-app.md)
-* [GitHub Server App](github-server-app.md)
 * [GitHub Enterprise](github-enterprise.md)
 * [GitHub](github.md)
 * [GitHub Read-only Projects](github-read-only-projects.md)
@@ -156,7 +155,6 @@ See the following for detailed permission requirements:
 
 * [GitHub and GitHub Enterprise](./#github-and-github-enterprise-permissions-requirements)
 * [GitHub Cloud App](./#github-cloud-app-permission-requirements)
-* [GitHub Server App](./#github-server-app-permission-requirements)
 * [GitLab](./#gitlab-permission-requirements)
 * [Bitbucket](./#bitbucket-permission-requirements)
 * [Azure Repositories (TFS)](./#azure-repositories-tfs-permission-requirements)
@@ -209,20 +207,6 @@ While some permissions may be optional from GitHub’s perspective, they are nec
 The following table states the required GitHub App permissions and scopes:
 
 <table><thead><tr><th width="191">Action and scope</th><th width="254">Scope</th><th>Level</th><th>Permission</th></tr></thead><tbody><tr><td>Determine if the GitHub user has admin role on the GitHub org, to restrict app installation reuse to only admin users</td><td>Members</td><td>Organization</td><td>Read</td></tr><tr><td>Search repositories, and access repository metadata.</td><td>Metadata</td><td>Repository</td><td>Read</td></tr><tr><td>Interact with the GitHub Checks tab</td><td>Checks</td><td>Repository</td><td>Read and write</td></tr><tr><td>Create commits and branches</td><td>Contents</td><td>Repository</td><td>Read and write</td></tr><tr><td>Send PR check results as commit statuses</td><td>Commit status</td><td>Repository</td><td>Read and write</td></tr><tr><td>Get pull requests details, post related comments (next gen PR experience)</td><td>Pull request</td><td>Repository</td><td>Read and write</td></tr><tr><td>Manage webhooks which trigger the PR checks</td><td>Repository hooks</td><td>Repository</td><td>Read and write</td></tr></tbody></table>
-
-### GitHub Server App permission requirements
-
-{% hint style="warning" %}
-To utilize the Snyk GitHub Server App you must be using a self-hosted instance of GitHub.
-{% endhint %}
-
-The [Snyk GitHub Server App](github-server-app.md) uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
-
-To set up the GitHub Server app integration you must be a:
-
-* Snyk Organization Admin.
-* GitHub Organization Admin.
-* GitHub Repository Admin (if installing through the GitHub UI).
 
 ### GitLab permission requirements
 

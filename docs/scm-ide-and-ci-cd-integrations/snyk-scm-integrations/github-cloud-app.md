@@ -3,9 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-The GitHub Cloud App is in Early Access.  This feature is not supported for Snyk Broker.
-
-If you are using a self-hosted instance of GitHub, you must use the [GitHub Server App](github-server-app.md).
+The GitHub Cloud App is in Early Access. This feature is not supported for Snyk Broker or self-hosted instances of GitHub.
 
 As Snyk does not have static IP addresses, this integration will not work with IP allowlisting in GitHub.
 {% endhint %}
