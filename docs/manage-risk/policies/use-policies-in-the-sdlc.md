@@ -64,10 +64,5 @@ This example shows a pull request to add the `fullpage.js` package to a JavaScri
 
 ## Apply policies in CI/CD
 
-Assigned policies take effect in CI/CD, ensuring builds comply with security and compliance boundaries.
+When you assign policies to your CI/CD processes, they take effect immediately. This ensures that your builds comply with the security and compliance standards you've established, helping you maintain integrity and minimize risks throughout the development lifecycle.
 
-An example follows of a workflow high-severity vulnerability
-
-This example shows a GitHub Action build workflow failing because of a high-severity vulnerability identified by Snyk testing:
-
-<figure><img src="../../.gitbook/assets/image (6) (4).png" alt="CI/CD check fails on security policy breach"><figcaption><p>CI/CD check fails on security policy breach</p></figcaption></figure>
