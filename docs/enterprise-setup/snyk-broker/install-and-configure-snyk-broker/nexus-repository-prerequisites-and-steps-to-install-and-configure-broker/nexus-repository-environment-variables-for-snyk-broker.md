@@ -20,11 +20,11 @@ Minimal example: `acme.com`\
 Complex example: `https://alice:mypassword@acme.com`
 
 `BROKER_CLIENT_VALIDATION_URL`\
-Nexus validation url, checked by Broker Client `systemcheck` endpoint.\
+Nexus validation URL, checked by Broker Client `systemcheck` endpoint.\
 If Nexus user requires `auth`, use `$BASE_NEXUS_URL/service/rest/v1/status/check`\
 Example:\
 `https://<user>:<pass>@<your.nexus.hostname>/service/rest/v1/status/check`)\
-Otherwise use `$BASE_NEXUS_URL/service/rest/v1/status`\
+Otherwise, use `$BASE_NEXUS_URL/service/rest/v1/status`\
 Example:\
 `https://<your.nexus.hostname>/service/rest/v1/status`).
 
@@ -48,7 +48,7 @@ The following fields are optional:\
 Can be either plain text or a two-part token (`Nexus Pro`).\
 URL encode username, password, and tokens to avoid errors that may prevent authentication.\
 Minimal example: `https://acme.com`\
-Complex example: `https://alice:mypassword@acme.com:`
+Complex example: `https://alice:mypassword@acme.com: 8000`
 
 `NEXUS_URL`: Used as an override if your repositories do not live under /nexus/content\
 The URL that points to the base of your repositories within Nexus. By default, the broker assumes `BASE_NEXUS_URL`/nexus/content/ as the value.
