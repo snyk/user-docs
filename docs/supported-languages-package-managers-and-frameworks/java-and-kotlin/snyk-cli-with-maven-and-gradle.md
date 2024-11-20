@@ -1,11 +1,13 @@
-# Snyk CLI for Java and Kotlin
+# Snyk CLI with Maven and Gradle
 
 The Snyk CLI tests Maven and Gradle Projects as follows:
 
-* **Snyk CLI with Gradle**: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies returned by the build. The following manifest files are supported: `build.gradle` (Groovy DSL) and `build.gradle.kts` (Kotlin DSL).
-* **Snyk CLI with Maven**: To build the dependency tree, Snyk integrates with Gradle and inspects the dependencies returned by the build. The following manifest files are supported: `pom.xml`.
+* **Snyk CLI with Gradle**: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies reported by the tool. The following manifest files are supported: `build.gradle` (Groovy DSL) and `build.gradle.kts` (Kotlin DSL).
+* **Snyk CLI with Maven**: To build the dependency tree, Snyk integrates with Maven and inspects the dependencies reported by the tool. The following manifest files are supported: `pom.xml`.
 
-The following lists steps to start scanning your dependencies. It covers basic commands, such as `snyk test` and `snyk monitor`. To check the full list, see [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).&#x20;
+This page provides details and also provides a [workaround for `ant` and `ivy`](snyk-cli-with-maven-and-gradle.md#workaround-for-ant-and-ivy).
+
+The following table lists options to start scanning your dependencies. It covers the `snyk test` and `snyk monitor` commands. For a list of all the options for these commands, see the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).&#x20;
 
 
 
