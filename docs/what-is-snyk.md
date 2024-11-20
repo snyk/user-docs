@@ -38,7 +38,7 @@ You can run Snyk in the following ways:
 
 Snyk integrations for your software development process allow you to integrate Snyk into your development and security processes, including source control, IDE, CI/CD, and many others.
 
-For details, see [Integrate with Snyk](integrate-with-snyk/).
+For details, see [Integrate with Snyk](https://docs.snyk.io/integratewithsnyk).
 
 ## **What does Snyk cost?**
 
