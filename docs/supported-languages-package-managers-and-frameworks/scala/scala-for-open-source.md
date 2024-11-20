@@ -33,7 +33,7 @@ Do not use the`addDependencyTreePlugin` command which the`sbt-dependency-graph`p
 Use the`addSbtPlugin()` command as given above.
 {% endhint %}
 
-For more information on installing `sbt-dependency-graph` for use with the Snyk CLI, see the article [How to install the SBT dependency graph plugin to test Scala projects with Snyk CLI.](https://support.snyk.io/hc/en-us/articles/360004167317)
+For more information on installing `sbt-dependency-graph` for use with the Snyk CLI, see the article [How to install the SBT dependency graph plugin to test Scala projects with Snyk CLI](https://support.snyk.io/s/article/How-to-install-the-SBT-dependency-graph-plugin-to-test-Scala-projects-with-Snyk-CLI-1730254476935).
 
 ### Git repository integration support for Scala for open source
 
