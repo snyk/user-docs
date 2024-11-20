@@ -64,5 +64,5 @@ This example shows a pull request to add the `fullpage.js` package to a JavaScri
 
 ## Apply policies in CI/CD
 
-When you assign policies to your CI/CD processes, they take effect immediately. This ensures that your builds comply with the security and compliance standards you've established, helping you maintain integrity and minimize risks throughout the development lifecycle.
+Assigned policies take effect in CI/CD, ensuring builds comply with security and compliance boundaries.
 
