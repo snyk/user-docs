@@ -15,8 +15,6 @@ From the relevant project in Google, ensure you have created a service account f
    * **Service account ID** - leave empty
    * **Key type** - JSON
 3. Click **Create** to generate the key for your Project.
-4. Copy the entire contents of the JSON file, which is similar to the following:
-
-<figure><img src="../../../../.gitbook/assets/uuid-c4e3b781-e575-5ab8-6cea-b0a8654068c4-en.png" alt=""><figcaption><p>GCR_key_file_contents</p></figcaption></figure>
+4. Copy the entire contents of the JSON file.
 
 Save the data you copied to paste it when [configuring integration for GCR](configure-integration-for-gcr.md).
