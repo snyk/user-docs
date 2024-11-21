@@ -40,7 +40,7 @@ The `GROUPS` table contains the main attributes of Snyk Groups. This data can be
 | Column name    | Data type      | Description                                                                          |
 | -------------- | -------------- | ------------------------------------------------------------------------------------ |
 | `public_id`    | varchar        | A universally unique identifier for a Group, assigned i the records source database. |
-| `display_name` | varchar        | The name of this group.                                                              |
+| `display_name` | varchar        | The display name set for this group.                                                 |
 | `slug`         | varchar        | The name of the Group within Snyk.                                                   |
 | `created`      | timestamp\_ntz | When this record was created in Snyk.                                                |
 | `deleted`      | timestamp\_ntz | When this record was deleted from Snyk.                                              |
@@ -120,16 +120,11 @@ Querying the issues table allows:
 * Visualizing trends of identified, ignored, resolved issues over time
 * Prioritize issues based on multiple factors and considerations
 
-{% hint style="warning" %}
-If you would like to match your results with Snyk Reports, filter your query with `DELETE IS NULL`, as Snyk Reports don't present deleted issues.
-{% endhint %}
-
 {% hint style="info" %}
-`computed_fixability` indicates whether the issue can be fixed based on the vulnerability remediation paths, for example:
+If you would like to match your results with Snyk Reports:&#x20;
 
-* **Fixable**: There is a fix for all the identified issues, meaning that all detailed paths have remediation.
-* **Partially fixable:** The issue has upgradable paths, but not all detailed paths have remediation.
-* **No supported fix**: The issue has no upgradable paths.
+* filter your query with `DELETED_AT IS NULL`, as Snyk Reports don't present deleted issues.
+* Join the Issues table with the Projects table and filter by `IS_MONITORED = TRUE`, as Snyk Reports doesn't present issues of deactivated projects
 {% endhint %}
 
 | Column name                      | Data type      | Description                                                                                                                                                                                   |
@@ -169,7 +164,7 @@ If you would like to match your results with Snyk Reports, filter your query wit
 | `last_resolved`                  | timestamp\_ntz | The most recent instance of an issue having been resolved.                                                                                                                                    |
 | `reachability`                   | varchar        | Indicates whether the issue is related to functions that are being called by the application and thus has a greater risk of exploitability.                                                   |
 | `package_name_and_version`       | varchar        | The vulnerability's associated package name and version.                                                                                                                                      |
-| `deleted`                        | timestamp\_ntz | When this record was deleted from Snyk.                                                                                                                                                       |
+| `deleted_at`                     | timestamp\_ntz | When this record was deleted from Snyk.                                                                                                                                                       |
 | `__updated_at`                   | timestamp\_ntz | When the data share data transformation last updated this record.                                                                                                                             |
 
 ### Usage Events
