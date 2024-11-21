@@ -481,6 +481,7 @@
       * [Opening fix and upgrade pull requests from a fixed GitHub account](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
     * [Pull Request Checks](scan-with-snyk/pull-requests/pull-request-checks/README.md)
       * [Configure Pull Request Checks](scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
+      * [Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md)
       * [Analyze PR Checks results](scan-with-snyk/pull-requests/pull-request-checks/analyze-pr-checks-results.md)
       * [Troubleshoot PR Checks](scan-with-snyk/pull-requests/pull-request-checks/troubleshoot-pr-checks.md)
   * [Snyk Open Source](scan-with-snyk/snyk-open-source/README.md)
