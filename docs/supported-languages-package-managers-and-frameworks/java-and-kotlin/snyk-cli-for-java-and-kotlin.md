@@ -1,11 +1,11 @@
-# Snyk CLI with Maven and Gradle
+# Snyk CLI for Java and Kotlin
 
-The Snyk CLI tests Maven and Gradle Projects as follows:
+Use the Snyk CLI for Java and Kotlin to test Maven and Gradle Projects as follows:
 
 * **Snyk CLI with Gradle**: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies reported by the tool. The following manifest files are supported: `build.gradle` (Groovy DSL) and `build.gradle.kts` (Kotlin DSL).
 * **Snyk CLI with Maven**: To build the dependency tree, Snyk integrates with Maven and inspects the dependencies reported by the tool. The following manifest files are supported: `pom.xml`.
 
-This page provides details and also provides a [workaround for `ant` and `ivy`](snyk-cli-with-maven-and-gradle.md#workaround-for-ant-and-ivy).
+This page provides details about how to use the Snyk CLI help for Maven and Gradle Projects and also provides a [workaround for `ant` and `ivy`](snyk-cli-for-java-and-kotlin.md#workaround-for-ant-and-ivy).
 
 The following table lists options to start scanning your dependencies. It covers the `snyk test` and `snyk monitor` commands. For a list of all the options for these commands, see the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).&#x20;
 
@@ -41,25 +41,21 @@ Be sure to execute the options in the same directory as the root pom.xml file.
 
 Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
 
-### **Examples of how to use Maven-specific options with the Snyk CLI**
+Use the following example to understand how maven-specific options are used with the Snyk CLI.
 
-Test a specific Maven profile called “prod”.
+1. Test a specific Maven profile called “prod”.
 
 ```
 snyk test -- -prod
 ```
 
-Add a system property from your pom.xml file.
-
-Example:
-
-The package version appears in your pom.xml
+2. Add a system property from your pom.xml file, for example, the package version that appears in your pom.xml:
 
 ```
 ${pkg_version}
 ```
 
-Define the system property like this:
+3. Define the system property like this:
 
 ```
 snyk test -- -Dpkg_version=1.4
