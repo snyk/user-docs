@@ -4,7 +4,7 @@ All workloads that you have imported for monitoring appear on the **Projects** p
 
 To view and manage the workload scan results, navigate to the **Projects** page and filter Kubernetes Projects.
 
-![Kubernetes Projects](../../../../.gitbook/assets/filter\_kubernetes\_projects.png)
+<figure><img src="../../../../.gitbook/assets/filter_kubernetes_projects.png" alt="Examples of Kubernetes Projects"><figcaption><p>Kubernetes Projects</p></figcaption></figure>
 
 Expand any Project to view:
 
@@ -13,15 +13,15 @@ Expand any Project to view:
 
 To view vulnerabilities in detail for any image, including its history, click the image name. The Project details page loads for the selected image:
 
-![](<../../../../.gitbook/assets/image (59) (2) (3) (3) (3) (3) (4) (5) (5) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (2).png>)
+![Project details for a selected image](../../../../.gitbook/assets/project\_details\_for\_container\_image.png)
 
 To view an aggregate list of the vulnerabilities in all of the images in the workload, including details about the security posture of the workload configuration, click the workload.
 
 The Project details page loads for the selected image.
 
-![](../../../../.gitbook/assets/uuid-79e06589-b59c-4bad-30e4-56c0e15607e0-en.png)
+![Aggregated list of vulnerabilities in images in Kubernetes workload](../../../../.gitbook/assets/uuid-79e06589-b59c-4bad-30e4-56c0e15607e0-en.png)
 
-Currently, Snyk scans the workload configuration for the following properties:
+Snyk scans the workload configuration for the following properties:
 
 | **Snyk parameter**     | **Associated Kubernetes parameters**         | **Description**                                                                                                                                                                                                                                                                                               |
 | ---------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

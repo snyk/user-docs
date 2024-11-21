@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**\
 The Custom Base Image Recommendation feature is available only for Enterprise plans.\
-For more information, see [Plans and pricing](https://snyk.io/plans)
+For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 ## **Overview of Custom Base Image Recommendations (CBIR)**
@@ -55,7 +55,7 @@ The following steps explain how to configure custom base images. The team that i
 You can also do this using the API endpoint [Create a Custom Base Image from an existing container Project](../../../../snyk-api/reference/custom-base-images.md#custom\_base\_images).
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt="Enable Custom Base Image"><figcaption><p>Enable Custom Base Image</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt="Custom Base Image toggle enabled"><figcaption><p>Enable Custom Base Image</p></figcaption></figure>
 
 5. Click **Save changes**.
 
@@ -95,7 +95,7 @@ On the Project page for the application image, navigate to **Settings** and conf
 
 Choose the Dockerfile repository and add the path to your Dockerfile. Click **Update Dockerfile**.
 
-<figure><img src="https://lh5.googleusercontent.com/4cyspvfpv1ZA-4rmhU7DzngLigf8c6rgEu5d7wHiiy7QMbIHy8Qw6qqS0VLEAEYpAfBADISvvQAyCkGqeoBgKxexDxzVPBJvNzB44MSvBzGlPd0NNuWrZyv_73NggOYlSjZCER0z" alt="Configure the path to your Dockerfile"><figcaption><p>Configure the path to your Dockerfile</p></figcaption></figure>
+<figure><img src="https://lh5.googleusercontent.com/4cyspvfpv1ZA-4rmhU7DzngLigf8c6rgEu5d7wHiiy7QMbIHy8Qw6qqS0VLEAEYpAfBADISvvQAyCkGqeoBgKxexDxzVPBJvNzB44MSvBzGlPd0NNuWrZyv_73NggOYlSjZCER0z" alt=""><figcaption><p>Configure the path to your Dockerfile</p></figcaption></figure>
 
 ### View Custom Base Image Recommendations
 
@@ -105,7 +105,7 @@ Next, navigate to the **Project** page to see the recommendations for the image.
 You may need to retest a Project when you set the Dockerfile for an existing project.
 {% endhint %}
 
-<figure><img src="https://lh5.googleusercontent.com/G--7GkeQ6i0bwTWE1tdC_Gg5d727JdQQfclEQ1n2opt5vtRDjT2FBChFpSZBD9V1TleoLigSzhtEERg4tfVI6yIua5Q5nGeNycmR93BYCG1DsiREvhNWKtFdZ4imJZvC1ypmDKOI" alt="Custom Base Image Recommendations example"><figcaption><p>Example of Custom Base Image Recommendations</p></figcaption></figure>
+<figure><img src="https://lh5.googleusercontent.com/G--7GkeQ6i0bwTWE1tdC_Gg5d727JdQQfclEQ1n2opt5vtRDjT2FBChFpSZBD9V1TleoLigSzhtEERg4tfVI6yIua5Q5nGeNycmR93BYCG1DsiREvhNWKtFdZ4imJZvC1ypmDKOI" alt="Snyk custom base image recommendations displayed on a container Project page"><figcaption><p>Example of Custom Base Image Recommendations</p></figcaption></figure>
 
 ## Known limitations of CBIR
 

@@ -20,10 +20,10 @@ For applications found in images imported from the Kubernetes integration, exist
 
 To enable the application vulnerability scan from container registries:
 
-1. Navigate to your container registry integration settings.
+1. Navigate to **Integrations**, and then to your container registry integration settings.
 2. Enable **Detect application vulnerabilities** and save the changes.
 
-<figure><img src="../../../.gitbook/assets/enable_detect_app_vuln (1).png" alt=""><figcaption><p>Enable Detect application vulnerabilties</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/integration_settings_enable_detect_app_vulns.png" alt="Toggle Enable "><figcaption><p>Enable Detect application vulnerabilties</p></figcaption></figure>
 
 When you are scanning an image using a container registry or Kubernetes integration, the scan also uses the `--app-vulns` flag by default. You can opt out of the flag in the container registry only. To do this, disable the **Detect application vulnerabilities** feature.
 

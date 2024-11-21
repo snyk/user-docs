@@ -26,12 +26,12 @@ The view **Which images do you want to test?** opens, displaying all of the avai
 4. You can now connect your Git repository to this Project in order to use your Dockerfile for enriched fix advice.\
    For more information, see [Adding your Dockerfile and testing your base image](../../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
-ACR files are indicated with a unique icon ![ACR](../../../../.gitbook/assets/uuid-5d10608d-d674-d4ee-d6c2-6faadd6fc8ea-en.png) . You can filter to view only those Projects:
+ACR files are indicated with a unique icon. You can filter to view only ACR Projects.
 
 ![List of ACR projects](<../../../../.gitbook/assets/image (4) (3) (3) (3) (3) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png>)
 
 ACR integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk user documentation.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../use-snyk-container/detect-application-vulnerabilities-in-container-images.md)for more information.&#x20;
+For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../use-snyk-container/detect-application-vulnerabilities-in-container-images.md)for more information.&#x20;
 {% endhint %}

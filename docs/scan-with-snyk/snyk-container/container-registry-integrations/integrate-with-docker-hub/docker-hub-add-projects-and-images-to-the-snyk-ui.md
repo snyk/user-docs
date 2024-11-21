@@ -25,9 +25,11 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
    Images are grouped by repository and are each linked individually to a detailed **Projects** page.
 7. You can now connect your Git repository to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Detect vulnerable base images from your Dockerfile](../../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
+When repositories and images are imported, a confirmation appears in green at the top of the screen. Docker Hub files are indicated with a unique icon.
+
 You can also filter to view only Docker Hub Projects.
 
-When repositories and images are imported, a confirmation appears in green at the top of the screen. Docker Hub files are indicated with a unique icon .
+<figure><img src="../../../../.gitbook/assets/projects_docker_hub_project.png" alt=""><figcaption><p>Example of a Docker Hub Project</p></figcaption></figure>
 
 Docker Hub integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk documentation.
 

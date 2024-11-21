@@ -23,8 +23,6 @@ To view and manage the Organization integration settings:
 2. On the **ORGANIZATION SETTINGS** page, navigate to **Integrations**.
 3. From the list of integrations, navigate to **Kubernetes** and click **Edit** **settings**. The Kubernetes settings page appears.
 
-![Kubernetes integration settings page](../../../../.gitbook/assets/uuid-03a03790-d87e-6260-4ffc-dc474ce014fa-en.gif)
-
 In this window, the following sections are available:
 
 | Section                        | Description                                                                                                                                                                                                                                                                                                                                                                                                               |

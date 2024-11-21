@@ -54,7 +54,7 @@ Snyk tests and monitors your Quay container images by evaluating the tags in you
       An **import log** becomes available; you can reach it at the top of the Projects list.
    2. To enrich the data and get recommendations regarding your base image, from the **Settings** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
-Quay imports are designated with a unique icon, and you can filter the integration in the **Projects** view to see Quay Projects only as shown:
+Quay imports are designated with a unique icon. You can filter to view only Quay Projects.
 
 <figure><img src="../../../.gitbook/assets/mceclip1-11-.png" alt="Quay Project in Projects listing"><figcaption><p>Quay Project in Projects listing</p></figcaption></figure>
 

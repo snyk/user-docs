@@ -15,14 +15,12 @@ Go to **Projects** and click **Add projects**. The list of integrations already 
 
 Decide which images you want to test. The view displays all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-31 at 17.50.25.png" alt="" width="375"><figcaption><p>Available images for the registry to which you connected</p></figcaption></figure>
-
 Continue with the following steps:
 
 1. Select single or multiple images by using any or all of the following methods:
-   * Type the name of a single image for import in the **Image Name** field at number one (1), the Image Name field in the preceding image.
-   * Select any of the repositories for which you want to import all of the associated images at number two (2), the first item in the list in the preceding image.
-   * Expand and collapse repositories to select multiple images across multiple repositories at number three (3), the third item in the list in the preceding image.
+   * Type the name of a single image for import in the **Image Name** field.
+   * Select any of the repositories for which you want to import all of the associated images.
+   * Expand and collapse repositories to select multiple images across multiple repositories.
 2.  Click **Add selected repositories**.
 
     A status bar appears at the top of the page as the images are imported; you can continue working while the images are being imported.
@@ -36,5 +34,5 @@ GCR files are indicated with a unique icon. You can now filter to view only thos
 GCR integration works similarly to other Snyk integrations. To continue to monitor, fix, and manage your Projects, see the relevant pages in the Snyk docs.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. See [Detecting application vulnerabilities in container images ](../../use-snyk-container/detect-application-vulnerabilities-in-container-images.md)for more information.
+For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. See [Detecting application vulnerabilities in container images ](../../use-snyk-container/detect-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}

@@ -23,7 +23,7 @@ Snyk opens an automatic fix PR when there is a change in the Dockerfile or when 
 
 The feature is available for all Snyk users. It is on by default for all users with free accounts and off by default for existing integrations of Snyk customers.
 
-You can enable automatic update PRs from the integration or Project settings page, under  **Dockerfiles:**
+To enable automatic update PRs, navigate to **Settings > Integrations** and select your connected source code manager. On the settings configuration page, under **Dockerfiles**, toggle **Enable automatic update PRs**.
 
 <div align="left">
 
@@ -44,7 +44,3 @@ Ensure your application works properly before merging the change.
 {% endhint %}
 
 When the PR is opened and ready, you can safely merge it and instantly reduce the number of vulnerabilities in your container image.
-
-<figure><img src="../../../.gitbook/assets/mceclip1-1-.png" alt="Fix PR showing changes included"><figcaption><p>Fix PR showing changes included</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/mceclip2.png" alt="Changed content in fix PR"><figcaption><p>Changed content in fix PR</p></figcaption></figure>

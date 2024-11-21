@@ -32,15 +32,11 @@ If you import images into Snyk using the Kubernetes integration, the top clickab
 
 ## View image vulnerabilities
 
-If the Project is imported from a registry integration, on the **Projects** page, it is marked with the relevant registry icon. If the Project is imported from the CLI, it is marked with a CLI icon.
+If the Project is imported from a registry integration, on the **Projects** page, it is marked with the relevant registry icon. If the Project is imported from the CLI, it is marked with a CLI icon. You can also filter to display all container Projects.
 
-You can filter for all container Projects, as shown in the following example:
+When you open a container Project, the analysis and fix advice appear for that Project.
 
-<figure><img src="../../../.gitbook/assets/Analysis of container.png" alt="Snyk Projects list with filters"><figcaption><p>Filtering Snyk Projects</p></figcaption></figure>
-
-When you open a container Project, the analysis and fix advice appear for that Project:
-
-<figure><img src="../../../.gitbook/assets/image (315) (1) (1).png" alt="Analysis and fix advice for a Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (315) (1) (1).png" alt="Project page displaying analysis and fix advice for a container Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
 
 The following information is displayed:
 
@@ -58,7 +54,7 @@ In the issues list, you can use the filters available for all supported Project 
 * **OS BINARIES** - to see specific binary or OS packages for binaries and packages containing issues.
 * **IMAGE LAYER** - to see Dockerfile instructions. If you attach a Dockerfile, you can filter to view issues associated only with the base image, view Dockerfile-related advice (user instruction), or both.
 
-<figure><img src="../../../.gitbook/assets/image (195) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Filters for binaries and images"><figcaption><p>Filters for OS binaries and image layers</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/container_project_page_os_image_layer_filter.png" alt="Filters for binaries and images"><figcaption><p>Filters for OS binaries and image layers</p></figcaption></figure>
 
 {% hint style="info" %}
 The **OS BINARIES** filter does not appear if there is only one category of issues in your container, for example, Node binary vulnerabilities or OS packages.\

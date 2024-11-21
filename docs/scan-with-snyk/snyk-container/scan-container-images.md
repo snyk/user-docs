@@ -27,11 +27,7 @@ You can see the history of all the repositories and container registry images im
 
 To see vulnerability information for that Project, select an imported Project from the target list.
 
-<figure><img src="../../.gitbook/assets/vuln_info_project.png" alt=""><figcaption><p>Vulnerability information for an imported Snyk Project</p></figcaption></figure>
-
 Click on a Project entry to see details of the vulnerabilities found, including where it was introduced, how to fix it, and other details about the vulnerability.
-
-<figure><img src="../../.gitbook/assets/vuln_details.png" alt=""><figcaption><p>Vulnerability information</p></figcaption></figure>
 
 ## Fix vulnerabilities in your container images
 

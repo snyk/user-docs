@@ -17,7 +17,7 @@ If these conditions apply, Snyk automatically creates a link between the image a
 
 You can see the linked images on the Project page, under **LINKED IMAGES.**&#x20;
 
-<figure><img src="../../../.gitbook/assets/mceclip3.png" alt="Project showing linked images"><figcaption><p>Project showing linked images</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/container_project_dockerfile_linked_images.png" alt=""><figcaption><p>Project showing linked images</p></figcaption></figure>
 
 Using container registry integration, you can get automatic links between imported images to existing Dockerfile Projects. To do this, ensure the OCI label in the image matches the path of a Dockerfile in the Organization in Snyk.
 

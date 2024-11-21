@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+This feature is available only with Enterprise plans. For more information, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk integrates with Nexus Container Registry to enable you to import your container images and monitor them for vulnerabilities.
@@ -20,8 +20,8 @@ This page explains how to set up Nexus Container Registry integration in Snyk an
 
 ### **Configure Nexus integration**
 
-* In your Snyk account, navigate to **Integrations** from the menu bar at the top. Under the **Container registries** section**, find the Nexus** option and click it.
-* In the **Account credentials** section, enter your Nexus username and password login credentials. In the **container registry name,** fill in the full URL to the registry you want to integrate with.
+* In your Snyk account, navigate to **Integrations** from the menu bar at the top. Under the **Container registries** section**,** find the **Nexus** option and click it.
+* In the **Account credentials** section, enter your Nexus username and password login credentials. In the **container registry name** field**,** fill in the full URL to the registry you want to integrate with.
 * To finish, click **Save**.
 
 If you are using a self-hosted Nexus registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
@@ -59,10 +59,10 @@ Follow these steps to add images from Nexus to Snyk.
    2. An **import log** becomes available; you can reach it at the top of the Projects list.
    3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
-Nexus imports are indicated with a unique icon, and you can also filter to view only Nexus Projects:
+Nexus imports are indicated with a unique icon. You can also filter to view only Nexus Projects.
 
-<figure><img src="../../../.gitbook/assets/mceclip0-18-.png" alt="Nexus Project in Projets listing"><figcaption><p>Nexus Project in Projets listing</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mceclip0-18-.png" alt="Nexus Project in Projets listing"><figcaption><p>Nexus Project in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
-For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}

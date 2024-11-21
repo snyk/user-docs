@@ -21,7 +21,7 @@ To add a Dockerfile for additional fix advice:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/configure_dockerfile.png" alt="Configure your Dockerfile by selecting the relevant repository."><figcaption><p>Configure your Dockerfile by selecting the relevant repository</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/configure_dockerfile.png" alt="Configure your Dockerfile by selecting the relevant repository."><figcaption><p>Configure Dockerfile</p></figcaption></figure>
 
 </div>
 

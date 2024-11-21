@@ -5,7 +5,7 @@ Detecting vulnerable base images allows you to identify the source of your vulne
 You can detect your base image after you configure a [container integration](https://docs.snyk.io/snyk-container) (such as the CLI or a container registry integration).
 
 {% hint style="info" %}
-For a list of supported container registries, see [Container security integrations.](../container-registry-integrations/)
+For details about supported container registries, see [Container security integrations.](../container-registry-integrations/)
 {% endhint %}
 
 ## How Snyk Container identifies base images
@@ -20,14 +20,14 @@ To identify vulnerable base images, you can use one of the following methods:
 For either method, a Project in the Snyk UI is created.
 
 {% hint style="info" %}
-Snyk currently only supports a subset of official Docker images. If you need help, contact [Snyk Support](https://support.snyk.io/hc/en-us).
+Snyk supports only a subset of official Docker images. If you need help, contact [Snyk Support](https://support.snyk.io/hc/en-us).
 {% endhint %}
 
 ## Image layer
 
 When you scan a Docker image in Snyk, you can see the instruction in the image layer that introduces the vulnerability. You don't need to perform any action at this point.
 
-<figure><img src="../../../.gitbook/assets/screenshot_2021-02-12_at_15.55.03.png" alt="Image layer information for Docker images"><figcaption><p>Image layer information for Docker images</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docker_image_details_image_layer.png" alt=""><figcaption><p>Image layer information for a Docker image</p></figcaption></figure>
 
 ## Snyk Container recommendations for upgrading base images
 
@@ -37,7 +37,7 @@ This allows you to see vulnerability counts in minor and major upgrades and in a
 
 You can see the base image vulnerabilities in your Project among the vulnerabilities added by your instructions, sorted by their priority score.
 
-<figure><img src="../../../.gitbook/assets/base-image2.png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/base-image2.png" alt=""><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
 
 You can also filter only the base image vulnerabilities using the **Base image** option under the **Image Layer** filter.
 

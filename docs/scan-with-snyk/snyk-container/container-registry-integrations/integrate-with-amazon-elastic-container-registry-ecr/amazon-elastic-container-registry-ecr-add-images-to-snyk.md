@@ -27,7 +27,7 @@ Log in to your account and navigate to the relevant Group and Organization you w
 
 You can filter to view only ECR Projects, which are marked with a unique icon.
 
-<figure><img src="../../../../.gitbook/assets/projects_filter_integrations_ecr.png" alt="" width="284"><figcaption><p>Filtering by ECR Project</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/projects_amazon_ecr_projects.png" alt="Projects list displaying an ECR Project"><figcaption><p>Example of an ECR Project</p></figcaption></figure>
 
 Amazon ECR integration works like other Snyk integration. To continue to monitor, fix, and manage your Projects, see the relevant pages in the Snyk user documentation.
 
