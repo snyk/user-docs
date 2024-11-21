@@ -17,7 +17,7 @@ Available functions:
 
 ## Package managers
 
-This language supports Pip, Poetry, pipenv, setup.py as package managers, suitable with the following Python versions: `Python 2 -> 2.7.16`, and `Python 3 -> 3.7.4`.
+This language supports Pip, Poetry, pipenv, setup.py as package managers, suitable with the following Python versions: `Python 2 equal or greater than 2.7.16`, and `Python 3 equal to or greater than 3.7.4`.
 
 As a package registry, [pypi.org](https://pypi.org/) is supported.
 
