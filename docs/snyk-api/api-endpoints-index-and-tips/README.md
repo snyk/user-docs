@@ -437,7 +437,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 **More information:** [Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues);\
 [List all issues including Snyk Code issues in all the Projects in an Organization](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
 
-### [Get an issue](../reference/issues.md#orgs-org\_id-issues-issue\_id) (Org)
+### [Get an issue](../reference/issues.md#orgs-org\_id-issues-issue\_id) (for an Organization)
 
 ### [Get issues by group ID](../reference/issues.md#orgs-org\_id-issues-issue\_id)
 
@@ -445,7 +445,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
 
-### [Get an issue](../reference/issues.md#groups-group\_id-issues-issue\_id) (Group)
+### [Get an issue](../reference/issues.md#groups-group\_id-issues-issue\_id) (for a Group)
 
 ## Jira (v1)
 
