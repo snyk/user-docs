@@ -1,6 +1,6 @@
 # snyk-delta
 
-This tool provides the means to get the delta between two Snyk snapshots. This is especially useful when you are running CLI-based scans, such as in your local environment, githooks, and so on.
+This tool provides the means to get the delta between two Snyk Open Source snapshots. This is especially useful when you are running CLI-based scans, such as in your local environment, githooks, and so on.
 
 `snyk-delta` compares snapshots to provide details about:
 
