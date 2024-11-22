@@ -377,6 +377,8 @@ The poll results return a message per manifest processed, either `success: true`
 
 ## Integrations (v1)
 
+**More information:** [Initial configuration of the Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/initial-configuration-of-the-universal-broker.md)
+
 ### [Add new integration](../reference/integrations-v1.md#org-orgid-integrations)
 
 **More information:** [Scenario: Rotate or change your Broker token for any reason](scenarios-for-using-the-snyk-api.md#rotate-or-change-your-broker-token-for-any-reason)

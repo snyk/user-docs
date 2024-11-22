@@ -37,6 +37,10 @@ For example, deployments run a connection (type `github`) using the environment 
 
 ## Steps in implementing the Universal Broker
 
+{% hint style="warning" %}
+Prerequisite: You must be tenant admin to be able to create deployments, credentials reference(s) and connection(s).
+{% endhint %}
+
 The high-level steps in implementing the Unversal Broker follow.
 
 1. **One time:** Install the Snyk Broker App in your Organization. This returns an install ID, a client ID, and a client secret, all needed to interact with the Snyk platform. The Organization ID is required to create the deployment.

@@ -2,6 +2,10 @@
 
 The high-level steps in implementing the Universal Broker are the same regardless of the configuration method you use. Using the Snyk Broker `snyk-broker-config` command walks you through these steps, easing the onboarding, while direct API calls require a better understanding of the overall Universal Broker models. The steps follow:
 
+{% hint style="warning" %}
+Prerequisite: You must be a Tenant admin to be able to create deployments, credentials references, and connections.
+{% endhint %}
+
 * **One time:** Install the Snyk Broker App in your Organization. This returns an install ID, a client ID, and a client secret, all needed to interact with the Snyk platform. The Organization ID is required to create the deployment.
 * **One time:** Define a deployment for your tenant ID and install ID.
 * **One time:** Define credentials references needed for your connections.
@@ -45,7 +49,9 @@ To use this command, you must install Node 18 or higher.
      * Enter the **broker\_client-url** (the hostname and port of your Broker client, for example, https://my.broker.company.com:8000).
      * Enter the credential reference or choose the option **CreateNew** in response to a prompt like **github-token (Sensitive): Which Credential Reference do you want to use? Or create New?**
    * When you see the messages **Connection created** and **Ready to configure integrations to use this connection**, you can run the Broker client.
-8. After the connection is created, use `snyk-broker-config workflows connections integrate` to configure an integration to use the newly created connection. In response to the prompts, enter the **deployment** you want to use, the **connection** you want to use, the **OrgID** of the Organization you want to integrate, and the `integration ID` of the type `github`. You can find your `integration ID` in your Organization **Integrations** settings or retrieve it using the [Integrations](../../../snyk-api/reference/integrations-v1.md) API.
+8. After the connection is created, use `snyk-broker-config workflows connections integrate` to configure an integration to use the newly created connection.\
+   In response to the prompts, enter the `deployment` you want to use, the **connection** you want to use, the `OrgID` of the Organization you want to integrate, and the `integration ID` of the type `github`.\
+   You can find your `integration ID` in your Organization **Integrations** settings or retrieve it using the [Integrations](../../../snyk-api/reference/integrations-v1.md) API.
 
 ## Example: first-time configuration of a new connection <a href="#quick-examples-below" id="quick-examples-below"></a>
 
