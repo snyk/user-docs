@@ -171,6 +171,4 @@ Disconnecting the integration from the Snyk side does not uninstall the app from
 
 ## Group level - Snyk AppRisk integrations
 
-The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
-
-Navigate to the [BitBucket setup guide for Snyk AppRisk ](bitbucket-cloud.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk AppRisk.
+The Bitbucket Cloud App is not supported at the Group level. The available options at the Group level are BitBucket Cloud and BitBucket Server. See the [BitBucket setup guide](bitbucket-cloud.md#bitbucket-setup-guide) for installation instruction on both of them.
