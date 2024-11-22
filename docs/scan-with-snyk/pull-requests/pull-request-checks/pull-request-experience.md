@@ -1,12 +1,12 @@
 # Pull Request Experience
 
-The Snyk Pull Request Experience reduces context switching by displaying additional information about the PR Check scan results in the pull request.
-
 {% hint style="info" %}
 **Feature availability**
 
 Pull Request Experience supports the following SCM integrations: GitHub, GitHub Enterprise, GitHub Cloud App, GitHub Server App, Bitbucket Cloud, and Bitbucket Cloud App.
 {% endhint %}
+
+The Snyk Pull Request Experience reduces context switching by displaying additional information about the PR Check scan results in the pull request.
 
 ## Prerequisites for the Snyk Pull Request Experience
 
