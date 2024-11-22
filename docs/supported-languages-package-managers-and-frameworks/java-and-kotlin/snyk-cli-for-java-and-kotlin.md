@@ -1,6 +1,6 @@
 # Snyk CLI for Java and Kotlin
 
-Use the Snyk CLI for Java and Kotlin to test Maven and Gradle Projects as follows:
+Use the `snyk test` command to test Maven and Gradle Projects as follows:
 
 * **Snyk CLI with Gradle**: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies reported by the tool. The following manifest files are supported: `build.gradle` (Groovy DSL) and `build.gradle.kts` (Kotlin DSL).
 * **Snyk CLI with Maven**: To build the dependency tree, Snyk integrates with Maven and inspects the dependencies reported by the tool. The following manifest files are supported: `pom.xml`.
@@ -41,7 +41,7 @@ Be sure to execute the options in the same directory as the root pom.xml file.
 
 Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
 
-Use the following example to understand how maven-specific options are used with the Snyk CLI.
+Refer to the following example to see how Maven-specific options are used with the Snyk CLI.
 
 1. Test a specific Maven profile called “prod”.
 
@@ -83,7 +83,7 @@ Each of the individual sub-projects appears as a separate Snyk Project in the We
 
 ### Gradle configurations
 
-Gradle dependencies are declared for a particular scope; each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring\_dependencies.html#sec:what-are-dependency-configurations). For example:
+Gradle dependencies are declared for a particular scope; each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:what-are-dependency-configurations). For example:
 
 * **implementation**: configuration for dependencies required at compile time and runtime, but not exposed to consumers.&#x20;
 * **api**: configuration for dependencies required at compile time and runtime, and exposed to consumers.&#x20;
@@ -147,7 +147,7 @@ By default, Snyk passes `gradle build --no-daemon` in the background when runnin
 
 If you see `snyk test` or `snyk monitor` fail on other operating systems because of daemon-related issues, try adding the `--no-daemon` flag to the Snyk command or set `GRADLE_OPTS: '-Dorg.gradle.daemon=false'`.&#x20;
 
-See the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle\_daemon.html#sec:disabling\_the\_daemon) for tips on disabling the daemon.
+See the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:disabling_the_daemon) for tips on disabling the daemon.
 
 ### Lockfiles
 
@@ -161,7 +161,7 @@ Gradle Error (short): > Could not resolve all dependencies for configuration ':c
 
 The **compileOnly configuration** **has been deprecated,** and even if your Project successfully generates a lockfile, the `compileOnly` state is not included because this configuration cannot be resolved.&#x20;
 
-Only resolvable configurations compute a dependency graph. To solve this issue, Snyk suggests you update your `build.gradle` containing `dependencyLocking` logic with the following instruction**:**
+Only resolvable configurations compute a dependency graph. To solve this issue, Snyk suggests you update your `build.gradle` containing `dependencyLocking` logic with the following instructio&#x6E;**:**
 
 ```
 compileOnly {resolutionStrategy.deactivateDependencyLocking() }
