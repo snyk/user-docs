@@ -1,4 +1,4 @@
-# Custom Versioning Schema for custom base images
+# Custom versioning schema for custom base images
 
 The Custom Versioning Schema (CVS) is a way for Snyk to understand your company’s container image tag versioning schema. It enables Snyk to give more accurate base image upgrade recommendations.
 
@@ -177,10 +177,10 @@ Since `1.3` and `1.3.5` have the same issue as `1.2` and `1.2.4`, the recommenda
 
 ### Regular expression syntax flavor
 
-* CVS uses a subset of the ECMAScript regex. See the [guide on ECMAScript regex syntax by MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular\_Expressions).
+* CVS uses a subset of the ECMAScript regex. See the [guide on ECMAScript regex syntax by MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 * Backreferences and lookahead assertions are not supported. Internally, Snyk uses the RE2 library. For a full list of unsupported features, see [Syntax on re2 GitHub](https://github.com/google/re2/wiki/Syntax).
 * Note that the regular expression string is parsed as an ECMAScript regex and then internally converted to RE2 syntax. For example, use the `(?<name>re)` syntax for grouping. `(?P<name>re)` will not parse correctly.
-* In the list of [supported features](https://github.com/google/re2/wiki/Syntax), take into consideration only the feature**,** not the syntax.
+* In the list of [supported features](https://github.com/google/re2/wiki/Syntax), take into consideration only the featur&#x65;**,** not the syntax.
 
 ### Size limitations
 
@@ -306,7 +306,7 @@ If your expression string is longer than 1,000 characters, Snyk is not able to p
 
 #### How to fix it
 
-Shorten the string by using [character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular\_Expressions/Character\_Classes) and [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular\_Expressions/Quantifiers) instead of specific characters.
+Shorten the string by using [character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes) and [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers) instead of specific characters.
 
 If you still require more than 1,000 characters to describe your tags, CVS might not be a great fit.&#x20;
 

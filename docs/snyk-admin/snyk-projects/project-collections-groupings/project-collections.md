@@ -57,7 +57,7 @@ If you move a Project between Organizations, the Project will also be removed fr
 
 ## Manage a Project collection&#x20;
 
-1. On your Projects page, select the **Collections** tab**.**
+1. On your Projects page, select the **Collections** ta&#x62;**.**
 2. For the collection you want to manage, select the three dots next to the collection.
 3.  Choose the option to rename or delete the collection.&#x20;
 
@@ -85,7 +85,7 @@ This example shows what happens when you click **Remove selected projects from a
 
 If you have created a collection or multiple collections, you can view them on the collection listing page.&#x20;
 
-1. On your Projects page, select the **Collections** tab**.**
+1. On your Projects page, select the **Collections** ta&#x62;**.**
 2.  You can view all of your collections on the Collections listing page and sort by name, number of Projects, and issue count.&#x20;
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 12.15.53.png" alt="View and sort your collections"><figcaption><p>View and sort your collections</p></figcaption></figure>

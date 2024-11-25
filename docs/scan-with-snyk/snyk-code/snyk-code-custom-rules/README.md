@@ -82,9 +82,9 @@ Given a `.snyk` file has custom rules within it; whenever a scan is run, these r
 
 ### Custom rules behavior&#x20;
 
-Snyk Code custom rules work as any other rule. Snyk Code parses your code to create an Abstract Syntax Tree (AST), which is analyzed to create an Event Graph_._&#x20;
+Snyk Code custom rules work as any other rule. Snyk Code parses your code to create an Abstract Syntax Tree (AST), which is analyzed to create an Event Grap&#x68;_._&#x20;
 
-_A_ll Snyk Code rules, including custom rules, run against the Event Graph, where any match is considered a vulnerability and identified for your developers or security teams.
+_&#x41;_&#x6C;l Snyk Code rules, including custom rules, run against the Event Graph, where any match is considered a vulnerability and identified for your developers or security teams.
 
 A vulnerability is removed and added to the resolved issues section within the reporting tab when it has been addressed. See [The .snyk file](../../../manage-risk/policies/the-.snyk-file.md).
 

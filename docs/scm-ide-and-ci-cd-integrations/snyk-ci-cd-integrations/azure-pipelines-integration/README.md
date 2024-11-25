@@ -18,7 +18,7 @@ For setup and use details, see the following pages:
 * [Install the Snyk extension for your Azure pipelines](install-the-snyk-extension-for-your-azure-pipelines.md)
 * [Add the Snyk Security Task to your pipelines](add-the-snyk-security-task-to-your-pipelines.md)
 * [Snyk Security Scan task parameters and values](snyk-security-scan-task-parameters-and-values.md)
-* [Custom API endpoints](custom-api-endpoints.md)
+* [Custom API endpoints](regional-api-endpoints.md)
 * [Example of a Snyk task to test a node.js (npm)-based application](example-of-a-snyk-task-to-test-a-node.js-npm-based-application.md)
 * [Simple example of a Snyk task to test an application](simple-example-of-a-snyk-task-to-test-an-application.md)
 * [Example of a Snyk task for a container image pipeline](example-of-a-snyk-task-for-a-container-image-pipeline.md)

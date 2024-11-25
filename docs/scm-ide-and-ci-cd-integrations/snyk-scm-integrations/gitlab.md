@@ -41,7 +41,7 @@ Typically, the first user in a Snyk Organization, a [Snyk admin](../../snyk-admi
 To trigger the creation of fix pull requests manually, all users in a Snyk Organization can add and work with any related Snyk Projects, while the merge requests themselves will appear in GitLab as having been opened by the Snyk admin who set up the configuration.
 
 {% hint style="warning" %}
-Group Access Tokens can only be created by a GitLab Owner using a GitLab Premium or Ultimate [account tier](https://about.gitlab.com/pricing/). This can be done in [GitLab's web UI](https://docs.gitlab.com/ee/user/group/settings/group\_access\_tokens.html), their Rails console, or through the GitLab API.
+Group Access Tokens can only be created by a GitLab Owner using a GitLab Premium or Ultimate [account tier](https://about.gitlab.com/pricing/). This can be done in [GitLab's web UI](https://docs.gitlab.com/ee/user/group/settings/group_access_tokens.html), their Rails console, or through the GitLab API.
 {% endhint %}
 
 ### How to set up the GitLab integration
@@ -68,7 +68,7 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 #### Create a GitLab Group Access Token
 
 1. Locate the GitLab Group and select **Settings** > **Access Tokens**.
-2. Enter a descriptive token name such as `SnykToken`, select the **Maintainer** role, and check the **api** scope**.**
+2. Enter a descriptive token name such as `SnykToken`, select the **Maintainer** role, and check the **api** scop&#x65;**.**
 
 #### Add a GitLab Group Access Token to Snyk
 

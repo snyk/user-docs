@@ -235,7 +235,7 @@ To set up any Snyk Bitbucket integration, you must be a Bitbucket Workspace Admi
 
 #### Bitbucket Cloud and Bitbucket Data Center/Server scopes
 
-The following table details the required permission scopes in Bitbucket Cloud and Bitbucket Data Center/Server**:**
+The following table details the required permission scopes in Bitbucket Cloud and Bitbucket Data Center/Serve&#x72;**:**
 
 | Action and purpose                                                                                                                                      |                                                                       App password requirements                                                                      | Bitbucket permissions |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
