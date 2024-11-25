@@ -96,5 +96,3 @@ Search for Snyk in the **Show View** dialog window.
 You should now be able to see the Snyk Results panel:
 
 ![Snyk Results panel](<../../../.gitbook/assets/Screenshot 2022-05-13 at 12.02.18.png>)
-
-##

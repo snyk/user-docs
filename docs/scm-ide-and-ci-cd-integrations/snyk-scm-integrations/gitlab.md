@@ -8,9 +8,9 @@ When you want to add new integrations to your Snyk account you need to first dec
 ## Organization level - Snyk integrations
 
 {% hint style="info" %}
-&#x20;**Feature availability**
+**Feature availability**
 
-The GitLab integration is available only for Enterprise plans. For more information, see [Plans and Pricing](https://snyk.io/plans/).
+The GitLab integration is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 [Snyk Broker](../../enterprise-setup/snyk-broker/) is required if you are integrating from a private network.
 {% endhint %}

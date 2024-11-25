@@ -15,5 +15,5 @@ Setting these variables only in a shell environment (for example, using `~/.bash
 * On **Linux**, you can update the file `/etc/environment` to propagate the environment variables to the windows manager and UI.
 
 {% hint style="info" %}
-Summary: Snyk's Eclipse plugin uses the proxy settings from Eclipse, but also picks up the proxy settings from the environment variables.
+Snyk's Eclipse plugin uses the proxy settings from Eclipse, but also picks up the proxy settings from the environment variables.
 {% endhint %}

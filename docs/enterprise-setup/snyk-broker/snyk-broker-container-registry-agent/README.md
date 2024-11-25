@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-Snyk Broker Container Registry Agent is available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
+Snyk Broker Container Registry Agent is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 The Snyk Broker Container Registry Agent enables you to establish connection with network-restricted container registries so you can scan these registries using the Snyk service.
@@ -67,8 +67,8 @@ The system and software requirements to set up and run the Snyk Broker Container
 * Container registry credentials that have list and pull images permissions
 * Connection between Broker and Agent
 * HTTPS connection between the Agent and the registry. For HTTP-only registries, deploy a reverse proxy between the Agent and the container registry.
-* [Download for the Broker Client image on Docker](https://hub.docker.com/r/snyk/broker/tags?page=1\&ordering=last\_updated\&name=container-registry-agent) : snyk/broker:container-registry-agent (if using Docker)
-* [Download for the Container Registry Agent image on Docker](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last\_updated) :  snyk/container-registry-agent:latest If using Docker)
+* [Download for the Broker Client image on Docker](https://hub.docker.com/r/snyk/broker/tags?page=1\&ordering=last_updated\&name=container-registry-agent) : snyk/broker:container-registry-agent (if using Docker)
+* [Download for the Container Registry Agent image on Docker](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last_updated) :  snyk/container-registry-agent:latest If using Docker)
 
 {% hint style="info" %}
 **Scaling to adjust scan capacity**

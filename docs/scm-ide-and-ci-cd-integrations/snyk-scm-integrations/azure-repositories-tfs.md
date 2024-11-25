@@ -11,9 +11,9 @@ If you want to set up integrations for Snyk AppRisk, use the Integrations menu a
 
 ## Organization level - Snyk integrations
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Feature availability**\
-Integration with Azure Repos Cloud is available with all Snyk pricing plans. Integration with Azure DevOps Server 2020 and above, also known as TFS, is available for Snyk Enterprise plan customers. For details, see [Plans and pricing](https://snyk.io/plans/).
+Integration with Azure DevOps Server 2020 and above, also known as TFS, is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 Snyk supports only Git. Snyk does not currently support integration with Team Foundation Version Control (TFVC).
 {% endhint %}

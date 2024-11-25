@@ -7,7 +7,7 @@ Snyk supports SCM, IDE, and CI/CD integration methods that allow you to implemen
 {% hint style="info" %}
 **Feature availability**
 
-The API and Snyk AppRisk are available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
+The API and Snyk AppRisk are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 There are two ways of implementing SCM integrations in a Snyk environment:
