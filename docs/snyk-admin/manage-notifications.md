@@ -72,6 +72,10 @@ To set the defaults for weekly report emails:
 * Check the **Enabled by default** box when users of new Organizations in this Group should receive a weekly summary email.
 * To change the defaults for individual Organizations, clear or check the box next to the Organization name. The defaults will apply for new Organizations created in this Group.
 
+{% hint style="info" %}
+Individual Projects cannot be excluded from Weekly reports. They can be excluded only from Issue Alert emails, and new vulnerabilities or remediations.&#x20;
+{% endhint %}
+
 #### Group defaults for usage alerts
 
 Usage alert emails are notifications Snyk sends to warn you when you are approaching usage limits.
