@@ -67,6 +67,8 @@ The **Dependencies** tab provides a tree view of the package hierarchy inside th
 
 ## Fix image vulnerabilities
 
+When providing public base image recommendations, Snyk bases its logic on the origin repo, flavor, and version of the base image it detects.
+
 The Snyk recommendations for upgrading the base image refer to:
 
 * **Minor upgrades**: the safest and best minor upgrade available

@@ -29,6 +29,8 @@ After Snyk has the list of installed software, Snyk looks that up in the Snyk Vu
 Snyk supports testing OCI-compliant and Docker v2-compliant images but does not support images that combine both OCI and Docker v2 standards into a single archive.
 {% endhint %}
 
+When providing public base image recommendations, Snyk's logic considers the origin repository, flavor, and version of the base image it detects. This means that Snyk's upgrade recommendations aim to reduce the number or severity of found vulnerabilities, with minor version upgrades typically maintaining compatibility with the currently used base image.
+
 ## Official advisory resources used by Snyk Container
 
 Snyk works directly with the security teams of the supported Linux distributions to provide the most accurate and reliable information on the affected packages (including fix availability). The specific package versions listed are those distributed by the official container source and may differ from the upstream package versions.
