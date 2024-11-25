@@ -60,7 +60,7 @@ ORDER BY fixable_critical_issues DESC, fixable_high_issues DESC,
 
 #### **Output format:**
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="Output of SQL query for SCA issues backlog counters"><figcaption><p>Output of SQL query for SCA issues backlog counters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt="Output of SQL query for SCA issues backlog counters"><figcaption><p>Output of SQL query for SCA issues backlog counters</p></figcaption></figure>
 
 ### Example query - Code
 
@@ -93,7 +93,7 @@ ORDER BY high_issues DESC,
 
 #### **Output format:**
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="Output format of SQL query for open Snyk Code issues backlog counters"><figcaption><p>Output format of SQL query for open Snyk Code issues backlog counters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (18).png" alt="Output format of SQL query for open Snyk Code issues backlog counters"><figcaption><p>Output format of SQL query for open Snyk Code issues backlog counters</p></figcaption></figure>
 
 ## Aging
 
@@ -137,7 +137,7 @@ ORDER BY open_issues_aging DESC;          -- Update based on the desired order
 
 #### **Output format:**
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt="Output format of SQL query for average aging of critical issues"><figcaption><p>Output format of SQL query for average aging of critical issues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (19).png" alt="Output format of SQL query for average aging of critical issues"><figcaption><p>Output format of SQL query for average aging of critical issues</p></figcaption></figure>
 
 ## MTTR
 
