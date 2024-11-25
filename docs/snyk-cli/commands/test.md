@@ -274,7 +274,7 @@ For Gradle monorepos Snyk looks only for root level **build.gradle / build.gradl
 
 This option is designed to be run in the root of your monorepo.
 
-For more details, see the following support article: [Scanning Gradle projects in CLI with `--exclude` option does not exclude sub-projects](https://support.snyk.io/hc/en-us/articles/22275760293661-Scanning-Gradle-projects-in-CLI-with-exclude-option-does-not-exclude-sub-projects)
+For more details, see the following support article: [Scanning Gradle projects in CLI with `--exclude` option does not exclude sub-projects](https://support.snyk.io/s/article/Scanning-Gradle-projects-in-CLI-with---exclude-option-does-not-exclude-sub-projects)
 
 ### `--configuration-matching=<CONFIGURATION_REGEX>`
 
@@ -466,7 +466,7 @@ Add`--package-manager=pip` to your command if the file name is not `requirements
 
 This option is mandatory if you specify a value for the `--file` parameter that is not to a `requirements.txt` file. The test fails without this parameter. Specify this parameter with the value `pip`.
 
-For complete information about the command see [`--package-manager=<PACKAGE_MANAGER_NAME>`](https://docs.snyk.io/snyk-cli/commands/test#package-manager-less-than-package\_manager\_name-greater-than)
+For complete information about the command see [`--package-manager=<PACKAGE_MANAGER_NAME>`](https://docs.snyk.io/snyk-cli/commands/test#package-manager-less-than-package_manager_name-greater-than)
 
 ## Options for Go projects
 
