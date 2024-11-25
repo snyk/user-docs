@@ -1,9 +1,5 @@
 # Terraform Enterprise integration for Snyk IaC
 
-{% hint style="info" %}
-This feature is available for all Snyk plans.
-{% endhint %}
-
 ## Terraform Enterprise overview
 
 [Terraform Enterprise](https://www.terraform.io/enterprise) (TFE) by HashiCorp is an offering that provides a private instance of the [Terraform Cloud](https://cloud.hashicorp.com/products/terraform) application, with no resource limits and with additional enterprise-grade architectural features like audit logging and SAML single sign-on.

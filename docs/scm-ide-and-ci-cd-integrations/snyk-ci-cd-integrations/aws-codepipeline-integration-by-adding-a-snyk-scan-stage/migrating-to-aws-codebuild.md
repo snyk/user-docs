@@ -40,7 +40,7 @@ Follow the steps in these sections to migrate your [Snyk Open Source](https://sn
 * Review how to [authenticate the Snyk CLI with your account](../../../snyk-cli/authenticate-to-use-the-cli.md) and consider using an environment variable to store sensitive information such as your Snyk CLI token.
 
 {% hint style="info" %}
-**Tip**: The default **Service role** in AWS CodeBuild includes an IAM permission that allows the CodeBuild project to pull any secret from AWS Secrets Manager that starts with `/CodeBuild/` in the name. Refer to the [Troubleshooting](migrating-to-aws-codebuild.md#troubleshooting) section at the end of this guide for more information.
+The default **Service role** in AWS CodeBuild includes an IAM permission that allows the CodeBuild project to pull any secret from AWS Secrets Manager that starts with `/CodeBuild/` in the name. Refer to the [Troubleshooting](migrating-to-aws-codebuild.md#troubleshooting) section at the end of this guide for more information.
 {% endhint %}
 
 * Configure build commands:
@@ -83,7 +83,7 @@ For some [Open Source](https://snyk.io/product/open-source-security-management/)
 * Add the commands from the example `buildspec.yaml` to your build stage so that the Snyk scan occurs immediately after the Project is built.
 
 {% hint style="info" %}
-**Important:** the Snyk Open Source scan must be in the same CodeBuild action as the build process to ensure that Snyk has access to the full build workspace.
+The Snyk Open Source scan must be in the same CodeBuild action as the build process to ensure that Snyk has access to the full build workspace.
 {% endhint %}
 
 #### Snyk does not require a built Project
@@ -100,10 +100,10 @@ The Snyk integration for CodePipeline only supports a limited set of [Snyk CLI](
 * The `snyk test` command produces a non-zero exit code when vulnerabilities are found. Consider adding `|| true` to the end of the command to circumvent this behavior.
 * The [snyk-to-html](https://github.com/snyk/snyk-to-html) tool can be used to produce an HTML report of scan results by running a command similar to `snyk test --json | snyk-to-html -o snyk-results.html`
 * Use the following [CLI options](https://docs.snyk.io/snyk-cli/commands) to reproduce behaviors you had configured in the AWS CodePipeline integration:
-  * [--org=\<ORG\_ID>](https://docs.snyk.io/snyk-cli/commands/test#org-less-than-org\_id-greater-than) - Specify the \<ORG\_ID> to run Snyk commands tied to a specific Snyk Organization.
+  * [--org=\<ORG\_ID>](https://docs.snyk.io/snyk-cli/commands/test#org-less-than-org_id-greater-than) - Specify the \<ORG\_ID> to run Snyk commands tied to a specific Snyk Organization.
   * [--severity-threshold=\<low|medium|high|critical>](https://docs.snyk.io/snyk-cli/commands/test#severity-threshold-less-than-low-or-medium-or-high-or-critical-greater-than) - Report only vulnerabilities at the specified level or higher.
   * [--all-projects](https://docs.snyk.io/snyk-cli/commands/test#all-projects) - Auto-detect all Projects in the working directory.
-  * [--project-name=\<PROJECT\_NAME>](https://docs.snyk.io/snyk-cli/commands/monitor#project-name-less-than-project\_name-greater-than) - Specify a custom Snyk Project name to the `snyk monitor` command.
+  * [--project-name=\<PROJECT\_NAME>](https://docs.snyk.io/snyk-cli/commands/monitor#project-name-less-than-project_name-greater-than) - Specify a custom Snyk Project name to the `snyk monitor` command.
 
 ### Test and validate
 

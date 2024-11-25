@@ -83,8 +83,8 @@ Users affected by the removal of these images can update to the following images
 * `snyk/snyk:gradle-jdk8`
 
 {% hint style="info" %}
-* `snyk/snyk:gradle` uses the latest stable version of Gradle and Java,  8.8 and JDK 21 at the time of publication.
-* The Gradle images use Gradle 8.8 unless otherwise specified, along with the specified JDK.
+- `snyk/snyk:gradle` uses the latest stable version of Gradle and Java,  8.8 and JDK 21 at the time of publication.
+- The Gradle images use Gradle 8.8 unless otherwise specified, along with the specified JDK.
 {% endhint %}
 
 ## snyk/snyk:maven-3-jdk-19 <a href="#snyk-snyk-maven-3-jdk-19" id="snyk-snyk-maven-3-jdk-19"></a>
@@ -168,7 +168,7 @@ Users affected by the removal of these images can update to the following images
 * `snyk/snyk:python-3.11`
 
 {% hint style="info" %}
-,It is recommend to use a pinned version such as `snyk/snyk:python-3.11`, which uses LTS version 3.11.
+It is recommend to use a pinned version such as `snyk/snyk:python-3.11`, which uses LTS version 3.11.
 {% endhint %}
 
 ## snyk/snyk:ruby-\* <a href="#snyk-snyk-ruby" id="snyk-snyk-ruby"></a>

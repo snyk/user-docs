@@ -1,9 +1,5 @@
 # GitHub Actions for Snyk setup and checking for vulnerabilities
 
-{% hint style="info" %}
-As of December 15, 2022, the GitHub Actions integration pages are being moved from the repository to the Snyk docs site. During this process the explanations will provide the same basic information but vary in presentation. If you need help contact [Snyk support](https://support.snyk.io/hc/en-us).
-{% endhint %}
-
 ## Overview of GitHub Actions Integration
 
 Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using [Snyk](https://snyk.io/) to check for vulnerabilities in your GitHub projects. These actions are based on the [Snyk CLI ](https://docs.snyk.io/snyk-cli)and you can use [all of its options and capabilities](https://docs.snyk.io/snyk-cli/cli-reference) with the `args` in the [properties](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
@@ -129,7 +125,7 @@ Snyk GitHub Actions support integration with GitHub Code Scanning to show vulner
 
 Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-reference) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to the GitHub Code Scanning as shown in the example that follows.
 
-The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) option as shown in the example that follows.
+The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) option as shown in the example that follows.
 
 {% hint style="info" %}
 To use this option for private repos you must have GitHub Advanced Security.
