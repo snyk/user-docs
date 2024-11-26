@@ -471,7 +471,7 @@
         }
       },
       "CompletionInterval": {
-        "description": "Time interval in ISO 8601 format (e.g. 2024-01-01/2024-02-01)",
+        "description": "Filter by date interval in ISO 8601 format (e.g. 2024-01-01/2024-02-01)",
         "in": "query",
         "name": "completion_interval",
         "schema": {
@@ -535,6 +535,34 @@
           "type": "string"
         }
       },
+      "Cves": {
+        "description": "Filter by CVE rules",
+        "in": "query",
+        "name": "cves",
+        "schema": {
+          "items": {
+            "maxItems": 50,
+            "pattern": "^CVE-\\d+$",
+            "type": "string",
+            "uniqueItems": true
+          },
+          "type": "array"
+        }
+      },
+      "Cwes": {
+        "description": "Filter by CWE rules",
+        "in": "query",
+        "name": "cwes",
+        "schema": {
+          "items": {
+            "maxItems": 50,
+            "pattern": "^CWE-\\d+$",
+            "type": "string",
+            "uniqueItems": true
+          },
+          "type": "array"
+        }
+      },
       "EffectiveSeverityLevel": {
         "description": "One or more effective severity levels to filter issues.",
         "explode": false,
@@ -564,7 +592,7 @@
         }
       },
       "Emails": {
-        "description": "Filter users by email addresses",
+        "description": "Filter by user email addresses",
         "example": [
           "john.doe@example.com",
           "jane.smith@example.com"
@@ -1198,7 +1226,7 @@
         }
       },
       "Status": {
-        "description": "Progress status of the resources",
+        "description": "Filter by progress status of the resources",
         "in": "query",
         "name": "status",
         "schema": {
@@ -1244,7 +1272,7 @@
         }
       },
       "Title": {
-        "description": "The title of the learning path or lesson resource",
+        "description": "Filter by the title of the learning path or lesson resource",
         "in": "query",
         "name": "title",
         "schema": {
@@ -1261,7 +1289,7 @@
         }
       },
       "Type": {
-        "description": "The learn catalog resource type",
+        "description": "Filter by the learn catalog resource type",
         "in": "query",
         "name": "type",
         "schema": {
@@ -3193,6 +3221,82 @@
         ],
         "type": "object"
       },
+      "CatalogProgress": {
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/CatalogProgressAttributes"
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "relationships": {
+            "properties": {
+              "catalog": {
+                "$ref": "#/components/schemas/CatalogRelationship"
+              }
+            },
+            "required": [
+              "catalog"
+            ],
+            "type": "object"
+          },
+          "type": {
+            "enum": [
+              "progress"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "attributes",
+          "relationships"
+        ],
+        "type": "object"
+      },
+      "CatalogProgressAttributes": {
+        "properties": {
+          "completed_count": {
+            "type": "number"
+          },
+          "in_progress_count": {
+            "type": "number"
+          },
+          "todo_count": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "todo_count",
+          "in_progress_count",
+          "completed_count"
+        ],
+        "type": "object"
+      },
+      "CatalogProgressResponse": {
+        "properties": {
+          "data": {
+            "items": {
+              "$ref": "#/components/schemas/CatalogProgress"
+            },
+            "type": "array"
+          },
+          "jsonapi": {
+            "$ref": "#/components/schemas/JsonApi"
+          },
+          "links": {
+            "$ref": "#/components/schemas/PaginatedLinks"
+          }
+        },
+        "required": [
+          "jsonapi",
+          "links",
+          "data"
+        ],
+        "type": "object"
+      },
       "CatalogRelationship": {
         "properties": {
           "data": {
@@ -3220,7 +3324,9 @@
                 },
                 "required": [
                   "title",
-                  "slug"
+                  "slug",
+                  "cwes",
+                  "cves"
                 ],
                 "type": "object"
               },
@@ -42536,6 +42642,97 @@
           "2024-10-15~beta"
         ],
         "x-snyk-api-resource": "assignments",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/learn/progress/catalog": {
+      "get": {
+        "description": "Shows which users have completed, started or not started a lesson within Snyk Learn, even if they don't have a Snyk Learn account.",
+        "operationId": "getCatalogProgress",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/OrgId"
+          },
+          {
+            "$ref": "#/components/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfter"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBefore"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "$ref": "#/components/parameters/Type"
+          },
+          {
+            "$ref": "#/components/parameters/Title"
+          },
+          {
+            "$ref": "#/components/parameters/Cwes"
+          },
+          {
+            "$ref": "#/components/parameters/Cves"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatalogProgressResponse"
+                }
+              }
+            },
+            "description": "Organization reporting users overview",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get learning progress for an organisation",
+        "tags": [
+          "Catalog Progress"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "progress",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
