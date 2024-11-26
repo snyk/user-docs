@@ -6,7 +6,7 @@ Using Snyk Broker on Windows is not supported. Snyk recommends that Windows user
 
 ## Prerequisites for Snyk Broker
 
-When you set up Broker, Code Agent, or both for an environment (region) other than the system default, before you can authenticate, you must set environment variables with specific [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).\
+When you set up Broker for an environment (region) other than the system default, before you can authenticate, you must set environment variables with specific [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
 
 For details, see [Regional hosting and data residency](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency).
@@ -45,15 +45,15 @@ Consider the following to understand what the required components are for your d
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
-  * Add the [Code Agent](snyk-broker-code-agent/) component to enable Snyk Code analysis of repositories in SCMs that are integrated through Snyk Broker.
-  * You can also grant Broker access to perform a [Git clone of your repository](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md) by adding an environment variable: `ACCEPT_CODE=true.`
+  * Grant Broker access to perform a [Git clone of your repository](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md).
+  * To do this, add an environment variable: `ACCEPT_CODE=true.`
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with the Broker, the Snyk Broker Container Registry Agent.
   * See [Snyk Broker Container Registry agent](snyk-broker-container-registry-agent/).
 
 Every integration has a specific Broker token assigned to it. An integration to analyze Snyk Code vulnerabilities and connect to a Container Registry has the following:
 
-* One Broker for the SCM with the additional environment variable `-e ACCEPT_CODE` or the custom allowlist `accept.json` and one Broker Code Agent
+* One Broker for the SCM with the additional environment variable `-e ACCEPT_CODE`.
 * One Broker for the Container Registry and one Broker Container Registry agent
 
 ## Generate credentials in the target application for Snyk Broker

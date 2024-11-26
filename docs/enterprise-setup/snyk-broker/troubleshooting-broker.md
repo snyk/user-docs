@@ -115,6 +115,18 @@ Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big mani
 
 ## Troubleshooting Broker with Code Agent
 
+{% hint style="warning" %}
+**Deprecated**
+
+The Code Agent is deprecated and is no longer maintained.
+
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io/hc/en-us).
+
+The automatic [PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks) feature is not supported for Snyk Broker - Code Agent.
+{% endhint %}
+
+
+
 <figure><img src="https://lh3.googleusercontent.com/r_qtONpOOEW35gdyoBcWDAiC6j04M76q8mh922SHor4bdNZdt83sj2kP7d5hbzYcWVXp4Q2hZEiCeAVOmcj4Bu1yFPdnyp3rK7kKeBK8DZEd9S133Xn3YdjddclVf5maEbP23Jor" alt="&#x22;&#x22;"><figcaption><p>Snyk Code Analysis workflow with Broker</p></figcaption></figure>
 
 The best way to troubleshoot the Broker with the Code Agent is to understand the communication flow. Traffic travels from Snyk > Broker Client > Code Agent > On-premise Git > Code Agent > Snyk.

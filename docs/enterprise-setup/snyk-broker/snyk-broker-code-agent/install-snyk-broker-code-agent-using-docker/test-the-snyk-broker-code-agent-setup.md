@@ -1,5 +1,15 @@
 # Test the Snyk Broker Code Agent setup
 
+{% hint style="warning" %}
+**Deprecated**
+
+The Code Agent is deprecated and is no longer maintained.
+
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io/hc/en-us).
+
+The automatic [PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks) feature is not supported for Snyk Broker - Code Agent.
+{% endhint %}
+
 To test the Code Agent with Snyk Broker setup, import a repository to Snyk and verify that you receive the Code Analysis Project and results. When the selected repositories are imported to Snyk, and the Snyk Code results are displayed, the Code Agent with Snyk Broker setup is operating successfully.
 
 To test the setup, follow these steps:

@@ -188,6 +188,18 @@ For Broker deployed by Helm chart, edit the `values.yaml` file to include the re
 
 ### Broker with Code Agent URLs
 
+{% hint style="warning" %}
+**Deprecated**
+
+The Code Agent is deprecated and is no longer maintained.
+
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io/hc/en-us).
+
+The automatic [PR Checks ](../scan-with-snyk/pull-requests/pull-request-checks/)feature is not supported for Snyk Broker - Code Agent.
+{% endhint %}
+
+
+
 Follow the [Snyk Broker - Code Agent](../enterprise-setup/snyk-broker/snyk-broker-code-agent/) instructions BUT add an extra environment variable in the Code Agent container:
 
 **SNYK-US-02** :`-e UPSTREAM_URL=https://deeproxy.us.snyk.io`

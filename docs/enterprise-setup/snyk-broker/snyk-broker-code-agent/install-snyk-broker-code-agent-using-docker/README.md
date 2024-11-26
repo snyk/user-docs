@@ -1,5 +1,15 @@
 # Install Snyk Broker - Code Agent using Docker
 
+{% hint style="warning" %}
+**Deprecated**
+
+The Code Agent is deprecated and is no longer maintained.
+
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](../../install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io/hc/en-us).
+
+The automatic [PR Checks](../../../../scan-with-snyk/pull-requests/pull-request-checks/) feature is not supported for Snyk Broker - Code Agent.
+{% endhint %}
+
 {% hint style="info" %}
 For the initial deployment of the Broker Client – Code Agent, collaborating with your Snyk account team is required.
 {% endhint %}
