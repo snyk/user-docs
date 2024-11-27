@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+This feature is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Install the Snyk Nexus Repository Manager Gatekeeper Plugin directly on the Nexus instance to track open-source vulnerabilities and license details in your artifacts based on your configurations.

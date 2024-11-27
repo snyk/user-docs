@@ -18,7 +18,7 @@ The Snyk Pull Request Experience reduces context switching by displaying additio
 {% hint style="info" %}
 **Release status**
 
-Issue Summary Comment for Snyk PR Checks is in [Early Access](../../../getting-started/snyk-release-process.md).
+Issue Summary Comment for Snyk PR Checks is in Early Access.
 {% endhint %}
 
 The Issue Summary Comment feature adds a comment to each pull request, summarizing the latest PR Check results. The summary includes the type of checks performed and a breakdown of the findings by severity. Select **View Details** to access the PR Check details in the Snyk Web UI.

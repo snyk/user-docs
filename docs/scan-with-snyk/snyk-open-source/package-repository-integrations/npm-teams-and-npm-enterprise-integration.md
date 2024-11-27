@@ -1,8 +1,8 @@
 # npm Teams and npm Enterprise integration
 
 {% hint style="info" %}
-**Availability**\
-This feature is available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+**Feature availability**\
+This feature is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 This guide is relevant for Snyk Web UI integrations only. The Snyk CLI already supports Yarn and npm projects with private npm Teams and npm Enterprise registries.
 {% endhint %}

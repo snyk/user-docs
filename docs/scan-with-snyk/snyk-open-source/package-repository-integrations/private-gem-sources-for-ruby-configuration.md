@@ -1,7 +1,7 @@
 # Private gem sources for Ruby configuration
 
 {% hint style="info" %}
-**Availability**\
+**Feature availability**\
 This functionality is in beta. [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to have it enabled for your Organization.
 
 This guide is relevant for Snyk UI integrations only. The CLI supports Ruby Projects with private registries without extra configuration.
@@ -31,4 +31,4 @@ A list of requirements follows:
   Example: **Supported:** `gem "privvy", git: "https://github.com/testexample/ruby-gem-for-private-source"`\
   **Not supported:** `gem "privvy", git: "git@github.com:testexample/ruby-gem-for-private-source"`
 * Gem sources must be publicly resolvable, that is, not behind a firewall.
-* Variables must be configured according to the [Bundler Credentials for Gem Sources documentation](https://bundler.io/v1.16/bundle\_config.html#CREDENTIALS-FOR-GEM-SOURCES).
+* Variables must be configured according to the [Bundler Credentials for Gem Sources documentation](https://bundler.io/v1.16/bundle_config.html#CREDENTIALS-FOR-GEM-SOURCES).

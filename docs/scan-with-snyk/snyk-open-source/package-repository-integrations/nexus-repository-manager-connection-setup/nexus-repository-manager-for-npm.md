@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Package repository integrations are available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+Package repository integrations are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 This guide is relevant for Snyk Web UI integrations only; the Snyk CLI  supports Yarn and npm Projects with private Nexus Repository Manager registries.
 {% endhint %}

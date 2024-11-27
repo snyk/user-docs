@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+This feature is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 With the Snyk plugin for Artifactory, you can scan your artifacts for open-source vulnerabilities and license issues.
@@ -15,7 +15,6 @@ After the plugin is installed, it runs in the background and can do the followin
 By scanning artifacts as part of your workflow and then displaying those test results directly from the Artifactory UI, the Snyk Artifactory Gatekeeper Plugin enables you to track and identify issues that are risks to your application security more quickly and to avoid using those artifacts in your Projects.
 
 {% hint style="info" %}
-**Note**\
 This page refers to the Artifactory Plugin, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance.
 
 This plugin is separate from the [Artifactory Registry for Maven](../../package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md), a Snyk integration that allows configuring SCM scans to use custom package registries.
