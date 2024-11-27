@@ -10869,9 +10869,13 @@
         "properties": {
           "data": {
             "$ref": "#/components/schemas/User"
+          },
+          "links": {
+            "$ref": "#/components/schemas/PaginatedLinks"
           }
         },
         "required": [
+          "links",
           "data"
         ],
         "type": "object"
