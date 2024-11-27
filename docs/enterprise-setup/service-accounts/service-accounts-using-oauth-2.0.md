@@ -39,16 +39,16 @@ Note: you cannot modify the lifetime of an OAuth service account through the UI,
 
 1. In the Group settings section, select **Service Accounts**.&#x20;
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXekwhrlX33fAN5pqMmrCLln1l0hzfbDxD-TP63SpSV-vXnBGzr_cEFdaADG5eJFE4h3yNziB0s6FkPf_S1-oXFrUnPQiHlHOrZaI3PMey7UvwuefW7EzU221ebnPzpXOWSJf_RsTn8hQS9Lmpwko4I8FR8?key=XaMemscf75LsEA_JKsjaB2iV" alt=""><figcaption><p>Service accounts settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/service-accounts-settings.png" alt=""><figcaption><p>Service accounts settings</p></figcaption></figure>
 
 2. In the **Service accounts** settings, enter the name for your service account in the **Name** field, and then select a **Role** for your service account from the **Role** dropdown.&#x20;
 3.  Select the **OAuth 2.0 client credentials** radio button and click the **Create service account** button.&#x20;
 
-    <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoA0HIxACwjS4XaTqSFlEWtEM4nVBQjBEeM2e22NNnAHW-Ck53M6UW-2L1nDE-INjccojzF3giw70z_PwIapBolLdV70bEnbddUm56AwhatIY44UUVV05Hj_81FBWa3MBEBugiP_Qi3G1FcTFg0tbU4Y4j?key=XaMemscf75LsEA_JKsjaB2iV" alt=""><figcaption><p>OAuth 2.0 client credentials</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/oath2-client-credentials.png" alt=""><figcaption><p>OAuth 2.0 client credentials</p></figcaption></figure>
 4. A window opens, showing your **Client ID** and **Client secret**. Note these credentials and copy them, as you will not be able to retrieve them in the future. After you have copied the credentials to a safe location, click **Close window**.
 5.  Your service account will be listed in the service accounts in your Group.&#x20;
 
-    <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfIlGdc2oX-QP0invMMJygxabOgLavirJrRVcsoiybbw6mMPSViMrXc4zgNnOhaLK1lcNQ5miVEdCDQedOaJykEfdMkV1azcnnVZsfLsbkBjq0fblGup5WY5ChquLhrQHW95jk_Qvfu1p-VcSpk7J12aly_?key=XaMemscf75LsEA_JKsjaB2iV" alt=""><figcaption><p>Service account listed for your Gorup</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/service-accounts-for-group.jpg" alt=""><figcaption><p>Service account listed for your Gorup</p></figcaption></figure>
 
 ## Delete an OAuth-based service account through the UI
 
@@ -57,17 +57,17 @@ Note: you cannot modify the lifetime of an OAuth service account through the UI,
 
 &#x20;
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeEnJBck-pMSGCAkOUbUEBMofyA_Wzjue4H6eBKBp5umO3LhruyphQapTqcJn2_i5SuaEQVdDyh1-dOy5SG-NpR597fskFaQcx5DKLSRw9ad5Ki2XfjLLR7xmtw_gr8H3w7J8v8JhfRQzw_QyJKnaJNRo7N?key=XaMemscf75LsEA_JKsjaB2iV" alt=""><figcaption><p>Delete button to delete service account</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/delete.png" alt=""><figcaption><p>Delete button to delete service account</p></figcaption></figure>
 
-3.  A window opens with the prompt **Are you sure you want to delete this service account?** To delete the service account, click the **Delete service account button**.&#x20;
+3.  A window opens with the prompt **Are you sure you want to delete this service account?** To delete the service account, click the **Delete service account** button.&#x20;
 
-    <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe1y-CHmts1vYMC8p72P97F2njR6hula3ZQyeGE68TPHJcQER1mc8R1xg76hWKAvV37Lqa5zIzHAQm23i4Hz0AVbz6ws27BgjpDMhc-X1oqkc_NT1CuenwFyR9UNrFGCIF_cN6ZGO4edEWKF_s-ZSlWW16B?key=XaMemscf75LsEA_JKsjaB2iV" alt=""><figcaption><p>Confirmation screento Keep service account or Delete sevice account</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/delete-service-account-confirmation.png" alt=""><figcaption><p>Confirmation screen to keep service account or delete sevice account</p></figcaption></figure>
 
 Your service account has been deleted.
 
 ## OAuth 2.0 with Private Key JWT &#x20;
 
-Service accounts can also use the `private_key_jwt` form of `client_assertion` for authentication, as defined in the [OIDC Core 1.0 spec](https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication)) rather than the more traditional `client_secret`.
+Service accounts can also use the `private_key_jwt` form of `client_assertion` for authentication, as defined in the [OIDC Core 1.0 spec](https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication), rather than the more traditional `client_secret`.
 
 This is an advanced feature for customers who have the infrastructure to host a publicly accessible [JWKS](https://datatracker.ietf.org/doc/html/rfc7517) endpoint and manage public and private signing keys. It creates an added layer of security for OAuth service accounts by requiring access token requests to be sent in the form of signed JWTs rather than with a simple `client_id` and `client_secret` pair in a request body.
 
