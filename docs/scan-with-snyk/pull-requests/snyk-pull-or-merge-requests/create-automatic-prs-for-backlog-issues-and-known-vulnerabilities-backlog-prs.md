@@ -5,7 +5,6 @@
 
 * The **Automatic Fix PRs for known vulnerabilities (Backlog PRs)** feature is supported for the following SCM integrations: GitHub, GitHub Enterprise, GitHub Cloud App, Bitbucket Server, Bitbucket Cloud, Bitbucket Connect, GitLab, and Azure Repos.
 * The **Automatic Fix PR** settings may vary depending on the integration.
-* The fix strategy feature for getting dependency-oriented fixes is in [beta](../../../getting-started/snyk-release-process.md).&#x20;
 {% endhint %}
 
 When Snyk creates automatic PRs for vulnerabilities, the following rules are applied:

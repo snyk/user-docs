@@ -29,7 +29,7 @@ See the [Git repository SCM integrations](../../../scm-ide-and-ci-cd-integration
 
 Follow these steps to enable pull requests at the global integration level:
 
-1. Navigate to settings ![](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.
+1. Navigate to **Settings >** **Integrations**.
 2. Select an SCM integration, for example, GitHub.
 3. Enable **New vulnerabilities** and **Save.**
 

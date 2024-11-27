@@ -1,6 +1,6 @@
 # Exclude directories and files from Project import
 
-files are excluded from the retest and, therefore, are not tested by Snyk Code and do not appear in the Code Analysis results.If you import a Project through an SCM integration, add the exclusions, folders only, to the bottom of the import window.
+Files are excluded from the retest and, therefore, are not tested by Snyk Code and do not appear in the Code Analysis results.If you import a Project through an SCM integration, add the exclusions, folders only, to the bottom of the import window.
 
 <figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt=""><figcaption><p>Exclude folders</p></figcaption></figure>
 
@@ -56,8 +56,8 @@ You can use `global` or `code`. Either will exclude the specified directories an
   * Do NOT use tabs for indentation. Use only spaces for indentation.
   * To verify that you are using the syntax correctly, you can use a YAML Validator, like [YAML Lint](http://www.yamllint.com/). Be aware that some YAML Validators do not differentiate between the use of tabs and spaces for indentation. If you use tabs, a Validator may approve the syntax, but the exclude specifications will not be executed.
 * For more information on the syntax of shell matching patterns, see, for example. the following:
-  * GNU Org - [Shell Pattern Matching](https://www.gnu.org/software/findutils/manual/html\_node/find\_html/Shell-Pattern-Matching.html)
-  * Docstore - [Pattern Matching Quick Reference with Examples](https://docstore.mik.ua/orelly/unix/upt/ch26\_10.htm)
+  * GNU Org - [Shell Pattern Matching](https://www.gnu.org/software/findutils/manual/html_node/find_html/Shell-Pattern-Matching.html)
+  * Docstore - [Pattern Matching Quick Reference with Examples](https://docstore.mik.ua/orelly/unix/upt/ch26_10.htm)
 
 ## **Use the `.snyk` file to exclude directories and files from import**
 
