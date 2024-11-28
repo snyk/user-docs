@@ -1,3 +1,9 @@
+## 2024-10-15 - Updated 2024-11-28
+
+### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
+- added the new optional `query` request parameter `exclude`
+
+
 ## 2024-10-15 - Updated 2024-11-06
 
 ### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
