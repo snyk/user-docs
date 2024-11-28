@@ -91,7 +91,7 @@ Scenario: [Broker-token-rotation](https://github.com/snyk-playground/cx-tools/bl
 **Endpoints used:**\
 [List all the organizations a user belongs to](../reference/organizations-v1.md#orgs) (group admin only)\
 [Add new integration](../reference/integrations-v1.md#org-orgid-integrations)\
-[Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-type) (to enable Broker)
+[Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid) (to enable Broker)
 
 ### For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management repository)
 
@@ -100,7 +100,7 @@ Scenario: [disable-all-interaction-from-snyk](https://github.com/snyk-playground
 **Endpoints used alternative 1: Get integrations from different organizations and then update the settings for each integration**\
 [List](../reference/integrations-v1.md#org-orgid-integrations-1) (integrations)\
 [Update](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings) (integration settings)\
-[Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-type)
+[Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid)
 
 **Endpoints used alternative 2:** **Webhooks approach: remove the Snyk webhook by getting the Webhook Id and using it to delete the webhook**\
 [List webhooks](../reference/webhooks-v1.md#org-orgid-webhooks-1)\
@@ -115,7 +115,7 @@ Scenario: [Retrieve-project-snapshots](https://github.com/snyk-playground/cx-too
 
 **Endpoints used:**\
 [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)\
-[Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues)
+[Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest)
 
 ### Find all Projects affected by a vulnerability
 
@@ -144,4 +144,4 @@ Scenario: [list-all-issues-for-a-snyk-org](https://github.com/snyk-playground/cx
 [List all aggregated issues](../reference/projects-v1.md#org-orgid-project-projectid-aggregated-issues) (no Code)\
 [Get issues by org iID](../reference/issues.md#orgs-org_id-issues)\
 REST experimental [Get a Snyk Code issue by its ID](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org_id-/issues/detail/code/-issue_id-)\
-[Retrieve ignore](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-1)
+[Retrieve ignore](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-2)
