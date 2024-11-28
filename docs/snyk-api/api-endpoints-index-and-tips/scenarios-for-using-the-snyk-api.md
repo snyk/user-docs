@@ -38,7 +38,7 @@ Scenario: [Provision users to Orgs via API](../../snyk-admin/user-management-wit
 Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-tools/blob/main/scripts/Identify-and-import-new-repos.md) (complete procedure)
 
 **Endpoints used:**\
-[Get targets by org ID](../reference/targets.md#orgs-org\_id-targets)\
+[Get targets by org ID](../reference/targets.md#orgs-org_id-targets)\
 [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)
 
 ### Import fresh container images
@@ -46,25 +46,17 @@ Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-
 Scenario: [import-new-container-images](https://github.com/snyk-playground/cx-tools/blob/main/scripts/import-new-container-images.md) (complete procedure)
 
 **Endpoints used:**\
-[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)\
+[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)\
 [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)\
 [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)\
 [Delete a project](../reference/projects-v1.md#org-orgid-project-projectid-2)
-
-### Detect and import new Projects in a repository into a target
-
-Scenario: [detect-and-import-new-projects](https://github.com/snyk-playground/cx-tools/blob/main/scripts/detect-and-import-new-projects.md) (complete procedure)
-
-**Endpoints used:**\
-[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)\
-[Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)
 
 ### Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis
 
 Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-tools/blob/main/scripts/Identify-and-import-new-repos.md) (complete procedure)
 
 **Endpoint used:**\
-[Get targets by org ID](../reference/targets.md#orgs-org\_id-targets)\
+[Get targets by org ID](../reference/targets.md#orgs-org_id-targets)\
 [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import)
 
 ## Manage Snyk Projects
@@ -74,7 +66,7 @@ Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-
 Scenario: [Tag projects in Snyk](https://github.com/snyk-playground/cx-tools/blob/main/scripts/tag-snyk-projects.md) (complete procedure)
 
 **Endpoints used:**\
-[List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)
+[List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)
 
 ### Move Projects from one Organization to another
 
@@ -132,24 +124,24 @@ Scenario: [find-all-projects-affected-by-a-vuln.md](https://github.com/snyk-play
 **Endpoints used:**\
 [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)\
 [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)\
-[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)
+[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)
 
 ### Bulk ignore issues
 
 Scenario: [bulk-ignore-issues](https://github.com/snyk-playground/cx-tools/blob/main/scripts/bulk-ignore-issues.md) (complete procedure)
 
 **Endpoints used:**\
-[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)\
+[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)\
 [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest) (To get all issues but Code)\
-[Get issues  by org ID](../reference/issues.md#orgs-org\_id-issues) (To get all Code issues)
+[Get issues  by org ID](../reference/issues.md#orgs-org_id-issues) (To get all Code issues)
 
 ### List all issues including Snyk Code issues in all the Projects in an Organization
 
 Scenario: [list-all-issues-for-a-snyk-org](https://github.com/snyk-playground/cx-tools/blob/main/scripts/list-all-issues-for-a-snyk-org.md) (complete procedure)
 
 **Endpoints used:**\
-[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org\_id-projects)\
+[List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)\
 [List all aggregated issues](../reference/projects-v1.md#org-orgid-project-projectid-aggregated-issues) (no Code)\
-[Get issues by org iID](../reference/issues.md#orgs-org\_id-issues)\
-REST experimental [Get a Snyk Code issue by its ID](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org\_id-/issues/detail/code/-issue\_id-)\
+[Get issues by org iID](../reference/issues.md#orgs-org_id-issues)\
+REST experimental [Get a Snyk Code issue by its ID](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org_id-/issues/detail/code/-issue_id-)\
 [Retrieve ignore](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-1)
