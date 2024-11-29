@@ -18816,7 +18816,7 @@ components:
           description: Whether requesting access to the organization is enabled.
           example: true
       description: Will only be returned if `API_KEY` has read access to request access settings.
-    ignores:
+    orgIgnoreSettings:
       title: orgIgnoreSettings
       type: object
       properties:
