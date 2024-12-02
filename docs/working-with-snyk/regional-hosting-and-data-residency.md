@@ -103,11 +103,11 @@ There are special considerations when you set up specific integrations in your S
 
 ### Support portal links
 
-To view and submit tickets, use the link for your regoin.
+To view and submit tickets, use the link for your region.
 
 **SNYK-US-01**: [https://support.snyk.io/](https://support.snyk.io/)
 
-**SNYK-US-02**: To be provided
+**SNYK-US-02**: [https://support.snyk.io/services/auth/sso/MT\_US ](https://support.snyk.io/services/auth/sso/MT_US)
 
 **SNYK-EU -01:**[https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw](https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw)
 
@@ -176,7 +176,7 @@ For Broker deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm
 
 ### Broker with high availability (HA) mode URLs
 
-Follow the [High availability mode](../enterprise-setup/snyk-broker/high-availability-mode.md) instructions BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
+Follow the [High availability mode](../enterprise-setup/snyk-broker/high-availability-mode.md) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
 
 **SNYK-US-02**: `-e BROKER_DISPATCHER_BASE_URL=https://api.us.snyk.io`
 
@@ -197,8 +197,6 @@ The preferred method of running Snyk Code analysis using Snyk Broker is through 
 
 The automatic [PR Checks ](../scan-with-snyk/pull-requests/pull-request-checks/)feature is not supported for Snyk Broker - Code Agent.
 {% endhint %}
-
-
 
 Follow the [Snyk Broker - Code Agent](../enterprise-setup/snyk-broker/snyk-broker-code-agent/) instructions BUT add an extra environment variable in the Code Agent container:
 
