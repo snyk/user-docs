@@ -156,7 +156,7 @@ The Integrations page shows all active integrations, including data from your ex
 5. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.
 6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
 
-#### Generate a Personal access token from your GitLab settings
+#### Generate a [Personal access token](gitlab.md#gitlab-access-tokens) from your GitLab settings
 
 1. Navigate to your GitLab profile.
 2. Select Edit Profile.
