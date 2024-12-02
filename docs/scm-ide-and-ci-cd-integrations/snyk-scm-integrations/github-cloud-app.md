@@ -5,7 +5,7 @@
 
 The GitHub Cloud App is in Early Access. This feature is not supported for Snyk Broker or self-hosted instances of GitHub.
 
-As Snyk does not have static IP addresses, this integration will not work with IP allowlisting in GitHub.
+The GitHub Cloud App does not have pre-configured IP addresses that can be automatically added to your allowlist. However, you can reach out to your Snyk account team to obtain the Snyk IPs for manual addition.
 {% endhint %}
 
 When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
