@@ -24,6 +24,13 @@ For definitions of the environment variables, see [Nexus Repository - environmen
 
 ### Docker run commands to set up Broker Client for Nexus 3 and Nexus 2 integrations
 
+{% hint style="info" %}
+**Multi-tenant settings for EU and AU**\
+When you set up Snyk Broker for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [Regional hosting and data residency](../../../../working-with-snyk/regional-hosting-and-data-residency.md).
+{% endhint %}
+
 **Copy the following command** to set up a fully configured Broker Client to use with Nexus 3. You can run the Docker container by providing the relevant configuration:
 
 ```console

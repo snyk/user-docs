@@ -14,6 +14,13 @@ To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run*
 
 **Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk AppRisk information. Enable [Snyk AppRis](../../../../scan-with-snyk/snyk-apprisk/)k to identify your application assets, monitor them, and prioritize the risks.
 
+{% hint style="info" %}
+**Multi-tenant settings for EU and AU**\
+When you set up Snyk Broker for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [Regional hosting and data residency](../../../../working-with-snyk/regional-hosting-and-data-residency.md).
+{% endhint %}
+
 ```bash
 docker run --restart=always \
            -p 8000:8000 \
@@ -32,7 +39,7 @@ Use the environment variable `REMOVE_X_FORWARDED_HEADERS=true` to remove the `XF
 
 Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
 
-As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitLab integration.
+As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitLab integration.
 
 ## Start the Broker Client container and verify the connection with GitLab
 

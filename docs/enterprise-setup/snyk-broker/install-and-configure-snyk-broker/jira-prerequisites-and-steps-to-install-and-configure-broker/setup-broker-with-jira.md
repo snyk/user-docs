@@ -10,6 +10,13 @@ To use the Broker Client with a Jira deployment, run `docker pull snyk/broker:ji
 
 ## Docker run command to set up a Broker Client for Jira
 
+{% hint style="info" %}
+**Multi-tenant settings for EU and AU**\
+When you set up Snyk Broker for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [Regional hosting and data residency](../../../../working-with-snyk/regional-hosting-and-data-residency.md).
+{% endhint %}
+
 **Copy the following command** to set up a fully configured Broker Client to use with Jira. You can run the Docker container by providing the relevant configuration:
 
 ```console
@@ -26,7 +33,7 @@ docker run --restart=always \
 
 If necessary, navigate to [Advanced configuration for Snyk Broker Docker installation](../advanced-configuration-for-snyk-broker-docker-installation/) and make any configuration changes needed, for example, providing the CA (Certificate Authority) to the Broker Client configuration when the Jira instance is using a private certificate.
 
-As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Jira integration.
+As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Jira integration.
 
 ## Jira PAT authentication for SSO-enabled JIRA
 

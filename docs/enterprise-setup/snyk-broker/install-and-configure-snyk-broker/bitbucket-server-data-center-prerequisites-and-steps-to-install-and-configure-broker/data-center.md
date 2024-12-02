@@ -18,6 +18,13 @@ To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:b
 
 **Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk AppRisk information. Enable [Snyk AppRisk](../../../../scan-with-snyk/snyk-apprisk/) to identify your application assets, monitor them, and prioritize the risks.
 
+{% hint style="info" %}
+**Multi-tenant settings for EU and AU**\
+When you set up Snyk Broker for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [Regional hosting and data residency](../../../../working-with-snyk/regional-hosting-and-data-residency.md).
+{% endhint %}
+
 ```bash
 docker run --restart=always \
            -p 8000:8000 \
@@ -38,7 +45,7 @@ docker run --restart=always \
 Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 {% endhint %}
 
-As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
+As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
 
 ## Configure Broker to be used with Bitbucket using a Personal Access Token (PAT)
 

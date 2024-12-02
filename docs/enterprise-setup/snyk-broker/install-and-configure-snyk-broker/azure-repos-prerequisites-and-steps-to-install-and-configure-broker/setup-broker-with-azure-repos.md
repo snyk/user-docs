@@ -20,6 +20,13 @@ To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services
 
 **Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk AppRisk information **for one Azure organiztion**. **Enable** [Snyk AppRisk](../../../../scan-with-snyk/snyk-apprisk/) to identify your application assets, monitor them, and prioritize the risks.
 
+{% hint style="info" %}
+**Multi-tenant settings for EU and AU**\
+When you set up Snyk Broker for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [Regional hosting and data residency](../../../../working-with-snyk/regional-hosting-and-data-residency.md).
+{% endhint %}
+
 Note that if you have more than one Azure organization, you must deploy a Broker for each one. Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 
 ```bash
@@ -37,11 +44,7 @@ docker run --restart=always \
        snyk/broker:azure-repos
 ```
 
-{% hint style="info" %}
-
-{% endhint %}
-
-As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Azure Repos integration.
+As an **alternative to using the Docker run command,** you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Azure Repos integration.
 
 ## Start the Broker Client container and verify the connection with Azure Repos
 
