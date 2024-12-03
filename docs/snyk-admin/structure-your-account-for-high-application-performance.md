@@ -25,7 +25,7 @@ Specifically, **each Group is a standalone entity. This has the following conseq
 * Service accounts cannot span multiple Groups.
 * Getting data for multiple Groups through the API requires multiple calls.
 
-If you believe your business case requires multiple Groups, consult with your Snyk account team. for assistance.
+If you believe your business case requires multiple Groups, consult with your Snyk account team for assistance.
 
 ## Structure of Organizations
 
@@ -33,8 +33,8 @@ Using either the Snyk Web UI or the Snyk API, you can create a large number of O
 
 **When Snyk loads a large number of Organizations, these consequences follow**:
 
-* Performance is slowed for Group administrators and Group-level notifications,
-* Group-level service account creation may fail,
+* Performance is slowed for Group administrators and Group-level notifications.
+* Group-level service account creation may fail.
 
 ## Structure of Projects
 
