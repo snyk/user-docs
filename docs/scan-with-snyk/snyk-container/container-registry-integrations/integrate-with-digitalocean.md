@@ -26,7 +26,7 @@ This page explains how to set up DigitalOcean integration in Snyk and start mana
 If you are using self-hosted DigitalOcean, contact [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
 {% hint style="info" %}
-**Note:** For the connection to succeed, make sure you have a repository in DigitalOcean.
+For a successful connection, ensure you have a repository in DigitalOcean repository.
 {% endhint %}
 
 Snyk tests the connection values, and the page reloads, now displaying DigitalOcean integration information. The **Add your DigitalOcean images to Snyk** button becomes available.If the connection to DigitalOcean fails, a notification appears under the **Connected to DigitalOcean** section.

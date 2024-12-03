@@ -6,4 +6,4 @@ By using the **Modify Columns** dropdown, you can customize the data you see in 
 
 You can also export the data from your table view in CSV format, but note that your choice of visible columns within the product will not affect the exported data.
 
-Filters applied to the issue data will affect the exported data.\
+Filters applied to the issue data will affect the exported data.

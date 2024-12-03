@@ -17,4 +17,4 @@ Snyk checks the credentials, and when the check is successful, the page reloads 
 
 <figure><img src="../../../../.gitbook/assets/uuid-47cf04cb-248e-5d0f-d35a-f36fbb624614-en.png" alt="GCR account credentials"><figcaption><p>GCR account credentials</p></figcaption></figure>
 
-You can now [add images to Snyk from GCR](add-images-to-snyk-from-acr.md).
+You can now add images to Snyk from GCR.

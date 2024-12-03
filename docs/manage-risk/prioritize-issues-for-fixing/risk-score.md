@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-Risk Score is in Early Access and available for Snyk Open Source and Snyk Container for Snyk Enterprise and Snyk Free plans. If you want to set it up in your Group, contact your Snyk account team.
+Risk Score is in Early Access and available for Snyk Open Source and Snyk Container, with Snyk Enterprise and Snyk Free plans. If you want to set it up in your Group, contact your Snyk account team.
 
 Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
@@ -34,11 +34,7 @@ In the API, the relevant fields are still named with `priority.`When Risk Score 
 
 When looking at Issue card information, hover over the score to see the type of score (Priority or Risk Score) that is being displayed. The Risk Score tooltip provides information about the subscore and the Risk Factors contributing to the score.
 
-<div data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/image (118) (2).png" alt="Risk Score tooltip" width="563"><figcaption><p>Risk Score tooltip showing Impact and Likelihood</p></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (118) (2).png" alt="Risk Score tooltip" width="563"><figcaption><p>Risk Score tooltip showing Impact and Likelihood</p></figcaption></figure></div>
 
 ## About the Risk Score model&#x20;
 
@@ -155,7 +151,7 @@ Represents the existence and maturity of any public exploit retrieved and valida
 #### EPSS score&#x20;
 
 Exploit Prediction Scoring System (EPSS), predicting whether a CVE will be exploited in the wild, based on an elaborated model created and owned by the FIRST Organization. \
-The probability is the direct output of the EPSS model and conveys an overall sense of the threat of exploitation in the wild. This data is updated daily, relying on the latest available EPSS model version. See the EPSS [documentation](https://www.first.org/epss/articles/prob\_percentile\_bins) for more details.\
+The probability is the direct output of the EPSS model and conveys an overall sense of the threat of exploitation in the wild. This data is updated daily, relying on the latest available EPSS model version. See the EPSS [documentation](https://www.first.org/epss/articles/prob_percentile_bins) for more details.\
 **Possible input values:** `EPSS score [0.00-1.00]`
 
 {% hint style="info" %}
@@ -272,6 +268,3 @@ When Reachability is not enabled, the Likelihood subscore will not change, and t
 | --------------------- | ----------------------------------------------------------------------- |
 | `Reachable`           | Likelihood subscore increases, and transitive depth is not considered.  |
 | `No path found`       | Likelihood subscore does not change.                                    |
-
-\
-\

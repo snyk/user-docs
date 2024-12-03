@@ -47,4 +47,3 @@ Only a limited number of customers can Import through the CLI for Snyk Code, bec
 | Ignore by `.snyk` file (add the issue to a `.snyk` file in the repostory; for Open Source; the `.snyk` file must be in the same folder as the manifest file; applies to the `snyk test` and `snyk monitor` commands) | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ❌</p>                | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ❌</p>                              |
 
 \
-\

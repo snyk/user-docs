@@ -11,11 +11,7 @@ This page explains how to enable and configure the integration between Docker Hu
    The page reloads with new options. The **Access Token** field is blank.\
    A confirmation message that the details were saved also appears in green at the top of the screen.
 
-<figure><img src="../../../../.gitbook/assets/confirmation_message_connected_docker_hub.png" alt=""><figcaption><p>Confirmation message for successful connection to Docker Hub</p></figcaption></figure>
-
-If the connection to Docker Hub fails, an error notification appears:
-
-<figure><img src="../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.50 AM.png" alt=""><figcaption><p>Error notification that the connection to Docker Hub has failed</p></figcaption></figure>
+If the connection to Docker Hub fails, an error notification appears.
 
 ## Troubleshooting with the Docker Hub integration
 

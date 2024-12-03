@@ -81,7 +81,7 @@ The Kubernetes Connector is different from the Kubernetes Controller, Snyk-Monit
    You can also filter relevant sections by Organization for a granular view of your progress.
 
 {% hint style="info" %}
-The Insights page, from the Set up Insights tab, is available only to Snyk AppRisk Pro users.
+The Insights page, from the Set up Insights tab, is available only for Snyk AppRisk Pro users.
 {% endhint %}
 
 ## Set up Insights UI settings
@@ -141,4 +141,3 @@ By leveraging these integration options, you can ensure comprehensive coverage a
 The **Deployed** and **Loaded Package** risk factors offer more specific and actionable insights into the actual state and behavior of your applications, enabling better prioritization and remediation efforts.
 
 The **Public facing** risk factor is less commonly used in all available integration options because it covers broader, more external threats that are harder to quantify and track within an internal monitoring system.&#x20;
-

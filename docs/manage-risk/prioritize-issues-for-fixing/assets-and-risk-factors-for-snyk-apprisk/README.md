@@ -1,6 +1,6 @@
 # Assets and risk factors for Snyk AppRisk
 
-The capabilities of the Snyk AppRisk Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk AppRisk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) information for the Snyk AppRisk Pro plan.
+The capabilities of the Snyk AppRisk Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk AppRisk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) information for the Snyk AppRisk Pro plan.&#x20;
 
 * [Assets](./#assets) are analyzed using Snyk insights, focusing on images, Kubernetes resources, and packages to understand how they all interact with each other.
 * [Risk factors](./#risk-factors) are analyzed using Snyk insights and grouped into four main categories:&#x20;
@@ -48,7 +48,7 @@ By understanding your images, packages, and Kubernetes resources as "application
 * [OS condition](risk-factor-os-condition.md)
 * [Public facing](risk-factor-public-facing.md)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status** \
 The **Loaded package** risk factor is in Closed Beta and is available only for Snyk AppRisk Pro.&#x20;
 {% endhint %}

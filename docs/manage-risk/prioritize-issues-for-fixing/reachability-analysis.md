@@ -1,9 +1,9 @@
 # Reachability analysis
 
-{% hint style="success" %}
+{% hint style="info" %}
 **Release status**
 
-Reachability analysis is available in [Early Access](../../getting-started/snyk-release-process.md#early-access) for some integrations and languages.
+Reachability analysis is in Early Access for some integrations and languages.
 
 For information on how to enable the feature for supported integrations and languages, see [Snyk Preview](../../snyk-admin/snyk-preview.md).
 {% endhint %}
@@ -74,7 +74,7 @@ After a vulnerability is identified, it has one of the following reachability st
 If a `NO PATH FOUND` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
 {% endhint %}
 
-Reachability analysis status is available [on the Project page](reachability-analysis.md#on-the-project-page), [as part of the Risk Score](reachability-analysis.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the API endpoint  [Get issues by Group ID](../../snyk-api/reference/issues.md#groups-group\_id-issues).&#x20;
+Reachability analysis status is available [on the Project page](reachability-analysis.md#on-the-project-page), [as part of the Risk Score](reachability-analysis.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the API endpoint  [Get issues by Group ID](../../snyk-api/reference/issues.md#groups-group_id-issues).&#x20;
 
 ### Reachability analysis as shown on the Project page
 
@@ -92,11 +92,7 @@ After you import  or test a Project using the Snyk UI, the Project is monitored 
 
 Risk Score is available on the Projects page and through the API and Reports.&#x20;
 
-<div data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/image (1) (7).png" alt="Reachability as part of the Risk Score"><figcaption><p>Reachability as part of the Risk Score</p></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (1) (7).png" alt="Reachability as part of the Risk Score"><figcaption><p>Reachability as part of the Risk Score</p></figcaption></figure></div>
 
 {% hint style="info" %}
 [Priority score](priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;
@@ -118,4 +114,4 @@ Program analysis requires a trade-off between accurate results, minimizing false
 
 To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment. &#x20;
 
-For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. Snyk Deep Code analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure. \
+For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. Snyk Deep Code analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.&#x20;

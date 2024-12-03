@@ -70,7 +70,7 @@ Enable DeepCode AI Fix for your Group or Organization in the Snyk Web UI by navi
 
 * Ensure you have automated fixes enabled in Snyk Preview to work with your [Snyk IDE plugin or extension](../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/).
 * Save the files and [scan your code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md) to generate a fresh set of results.
-* You should see a zap icon :zap: next to all Snyk Code issues that can be automatically fixed.
+* You should see a zap icon next to all Snyk Code issues that can be automatically fixed.
 {% endhint %}
 
 1. Open your code base.
@@ -79,7 +79,7 @@ Enable DeepCode AI Fix for your Group or Organization in the Snyk Web UI by navi
 
 ## Example: Fix a code issue automatically
 
-DeepCode AI Fix highlights all identified vulnerabilities that can be automatically fixed. These are highlighted with a zap icon :zap:. For example, in this scenario, we have identified a Cross-Site Request Forgery (CSRF).
+DeepCode AI Fix highlights all identified vulnerabilities that can be automatically fixed. These are highlighted with a zap icon. For example, in this scenario, we have identified a Cross-Site Request Forgery (CSRF).
 
 Opening the vulnerability gives us details on where the issue is and allows us to generate a fix using DeepCode AI Fix.
 

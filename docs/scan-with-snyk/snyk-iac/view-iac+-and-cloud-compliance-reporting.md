@@ -1,8 +1,8 @@
 # View IaC+ and cloud compliance reporting
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**\
-Snyk IaC+ is now in closed beta and is no longer accepting new customers for participation.\
+Snyk IaC+ is in closed beta and is no longer accepting new customers for participation.\
 See [Getting started with current IaC](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac) for details about the functionality available.
 {% endhint %}
 

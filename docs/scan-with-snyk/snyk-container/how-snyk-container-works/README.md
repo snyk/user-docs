@@ -55,5 +55,3 @@ Recurring scans do not detect updates to the dependencies of your applications. 
 \
 To detect changes in your application, such as updated dependencies, you must re-import your container image in Snyk.
 {% endhint %}
-
-To learn more about container security, see [container security](https://snyk.io/learn/container-security/).

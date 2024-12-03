@@ -21,7 +21,7 @@ Integration with Quay is available for all Snyk users.
 If you are using a self-hosted Quay registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
 {% hint style="info" %}
-[Quay.io](http://quay.io) [deprecated](https://access.redhat.com/articles/5925591) use of Quay login in June 2021. The credentials can no longer be Quay username and password, but must be Quay robot account credentials (username and token) that have at least 'read' permissions to the desired repository.
+[Quay.io](https://quay.io/) deprecated the use of Quay login in June 2021. The credentials can no longer be Quay username and password, but must be Quay robot account credentials (username and token) that have at least 'read' permissions to the desired repository.
 {% endhint %}
 
 Snyk tests the connection values, and the page reloads, displaying Quay integration information, and the **Add your Quay images to Snyk** button becomes available. If the connection to Quay fails, a notification appears under the **Connected to Quay** section.

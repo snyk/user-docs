@@ -1,9 +1,9 @@
 # Fix cloud issues in IaC
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release** **status**
 
-The fix cloud issues in IaC feature is available for [IaC+](./) only and supports AWS, Azure, and Google Cloud.
+The fix cloud issues in IaC feature is available only for [IaC+](./) and supports AWS, Azure, and Google Cloud.
 
 Snyk IaC+ is now in closed beta and is no longer accepting new customers for participation.\
 See [Getting started with current IaC](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac) for details about the functionality available.

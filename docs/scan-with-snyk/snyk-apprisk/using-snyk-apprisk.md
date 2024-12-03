@@ -92,6 +92,5 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
 {% hint style="info" %}
 The Asset Dashboard menu option is available only for Snyk AppRisk Essentials users.&#x20;
 
-If you are using Snyk AppRisk Pro, navigate to the [Application Analytics ](../../manage-risk/enterprise-analytics/application-analytics.md)page.\
-
+If you are using Snyk AppRisk Pro, navigate to the [Application Analytics ](../../manage-risk/enterprise-analytics/application-analytics.md)page.
 {% endhint %}

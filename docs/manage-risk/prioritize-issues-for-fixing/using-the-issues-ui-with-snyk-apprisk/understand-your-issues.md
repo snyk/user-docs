@@ -6,7 +6,7 @@ Snyk AppRisk Insights works by understanding your vulnerabilities within the con
 * Identified risk factors together with the [evidence graph](evidence-graph.md).
 
 {% hint style="info" %}
-The Risk Factor and evidence graph information is available only to Snyk AppRisk Pro users.
+The Risk Factor and evidence graph information is available only for Snyk AppRisk Pro users.
 {% endhint %}
 
 * Exploit maturity
@@ -20,7 +20,6 @@ The Risk Factor and evidence graph information is available only to Snyk AppRisk
 
 You can also sort the table of issues by these details.
 
-{% hint style="warning" %}
-In the Issues UI, the IaC issues are supported, but not IaC+, due to IaC+ being available in a Closed Beta state.
+{% hint style="info" %}
+In the Issues UI, only IaC issues are supported. IaC+ issues are not supported, as IaC+ is  Closed Beta.
 {% endhint %}
-

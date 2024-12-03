@@ -485,5 +485,3 @@ deny[msg] {
 ```
 
 Any key containing the substrings "pass", "secret", "key", and "token" can be considered sensitive and so should not be included in the ConfigMap.
-
-##

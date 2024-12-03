@@ -1,7 +1,7 @@
 # Risk factor: Deployed
 
 {% hint style="info" %}
-The Deployed risk factor is available only to Snyk AppRisk Pro users.
+The Deployed risk factor is available only for Snyk AppRisk Pro users.
 {% endhint %}
 
 Any deployed code increases the risk of exploitation of your application and business.
@@ -46,7 +46,7 @@ Consider the examples that follow.
 
 Result: Image successfully matched, and risk factor applied
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-07-12 at 02.04.31.png" alt="Image matecjed"><figcaption><p>Image matecjed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-07-12 at 02.04.31.png" alt="Image matecjed"><figcaption><p>Image matched</p></figcaption></figure>
 
 The container image is scanned using the Snyk Container CLI only, referencing the full name of the image, including the registry. Snyk recommends doing this after the image is built and before it is deployed to your cluster.
 

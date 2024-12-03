@@ -57,7 +57,7 @@ To explore in-depth details about the specific vulnerability identified, you can
 
 Some vulnerabilities contain links to interactive lessons on understanding, fixing, and preventing vulnerability. See [Snyk Learn](https://learn.snyk.io/).
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - 2.png" alt="Fis analysis page for Path Traversal vulnerability"><figcaption><p>Fis analysis page for Path Traversal vulnerability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - 2.png" alt="Fis analysis page for Path Traversal vulnerability"><figcaption><p>Fix analysis page for Path Traversal vulnerability</p></figcaption></figure>
 
 ### View Fix analysis&#x20;
 
@@ -129,7 +129,3 @@ For CWE-22 Path Traversal, if the vulnerability occurs in a test, it is Low seve
 For CWE-2601 Open Redirect, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is Medium severity.
 
 <figure><img src="../../../.gitbook/assets/image (5) (8).png" alt="Decision flow chart for Priority Score CWE-601 Open Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Open Redirect</p></figcaption></figure>
-
-## What's next?
-
-[Fix code vulnerabilities automatically](fix-code-vulnerabilities-automatically.md)

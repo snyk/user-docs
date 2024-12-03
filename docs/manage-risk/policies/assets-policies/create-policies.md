@@ -83,7 +83,7 @@ Each property contains different options for conditions and values:
 | Tags                         | <ul><li>containing one or more of</li><li>containing all of</li><li>not containing one or more of</li><li>not containing all of</li></ul> | all available tags you previously created                                                                             |
 | Title\*                      | <ul><li>is one of</li><li>is not one of</li></ul>                                                                                         | the list with all the names of the component for which the application context was configured                         |
 
-**\***All filters marked with `*` are visible only to the users who configured the application context for their SCM integrations.
+**\***&#x41;ll filters marked with `*` are visible only to the users who configured the application context for their SCM integrations.
 
 You can specify more than one filter component with an **And** or **Or** operator.\
 
@@ -111,5 +111,3 @@ After defining filter components, you need to define the actions that the policy
 The editor supports multiple flows for the same policy. The flows can be independent or intersect.
 
 <figure><img src="../../../.gitbook/assets/Multiple actions - New UI.png" alt="AppRisk - Set multiple policy actions "><figcaption><p>Snyk AppRisk - Set multiple policy actions </p></figcaption></figure>
-
-\

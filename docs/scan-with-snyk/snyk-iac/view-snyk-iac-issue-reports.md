@@ -2,12 +2,6 @@
 
 Use [Snyk reports](../../manage-issues/reporting/legacy-reports/) to view issues in your IaC configuration files.
 
-{% hint style="info" %}
-**Feature availability**
-
-IaC issue reports are available for all paid plans. For more information, see [Plans and pricing](https://snyk.io/plans).
-{% endhint %}
-
 ## Summary page
 
 Infrastructure as Code configuration issues appear in the summary statistics and graphs by default, showing all of the open issues across your Projects and issue types:
@@ -16,7 +10,7 @@ Infrastructure as Code configuration issues appear in the summary statistics and
 
 To view IaC issues only, select **Configuration** from the **Summary filters** drop down:
 
-![](../../.gitbook/assets/screenshot\_2021-02-17\_at\_14.22.50.png)
+![](../../.gitbook/assets/screenshot_2021-02-17_at_14.22.50.png)
 
 For more details on the summary tab, see the [Reports Summary tab](../../manage-issues/reporting/legacy-reports/legacy-reports-summary-tab.md) documentation.
 
