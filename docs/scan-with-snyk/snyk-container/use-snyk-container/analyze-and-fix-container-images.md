@@ -22,7 +22,7 @@ Snyk groups images and the applications found in the image. However, Snyk CLI do
 
 If you import images into Snyk with container registry integration, in the **Projects** list Snyk performs sub-grouping per image tag for each image name.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 15.13.18.png" alt="Images with different image tags in sub-groups"><figcaption><p>Images with different image tags grouped in sub-groups</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/container_images_tags_sub-groups.png" alt="Images with different image tags i sub-groups"><figcaption><p>Images with different image tags grouped in sub-groups</p></figcaption></figure>
 
 ### Project grouping when importing images with the Kubernetes integration
 
