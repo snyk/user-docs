@@ -7,6 +7,31 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## November 2024
+
+&#x20;**Snyk AppRisk**&#x20;
+
+* The [Asset Dashboard](manage-issues/reporting/available-snyk-reports.md#asset-dashboard) has been redesigned and is included in the Reports section. It now features several enhancements, including a Global filter bar, new data widgets, and the option to export the dashboard as a PDF.
+* The [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#scm-integrations) documentation has been updated to outline the specific steps necessary to configure each SCM integration with a Snyk Broker token.
+
+**Snyk Container**
+
+* The list of [operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated to include Ubuntu 24.10 - Oracular Oriole and Ubuntu 24.04 - Noble Numbat 04.
+* [How Snyk Container works](scan-with-snyk/snyk-container/how-snyk-container-works/) has been updated with details on the logic Snyk applies when providing public base image recommendations.
+
+**Snyk Integrations**
+
+* The GitLab page has been updated to state that for the Snyk AppRisk level integration [PAT creation](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab#gitlab-access-tokens), the user generating the GitLab group requires a minimum GitLab permission level of Guest.
+
+**Other updates**
+
+* The Pull Request Checks section has been updated to include the new [Pull Request Experience for PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience).
+* The [Supported Languages](supported-languages-package-managers-and-frameworks/) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
+* A service account using OAuth 2.0 can now be [created through the Snyk Web UI](enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md#create-oauth-service-accounts-through-the-ui).
+* The [API index ](snyk-api/api-endpoints-index-and-tips/)now includes entries for each endpoint mentioned in the Snyk user docs.
+* The[ Developer IDE and CLI usage](manage-issues/reporting/available-snyk-reports.md#developer-ide-and-cli-usage) report has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
+* The [Vulnerabilities Detail](manage-issues/reporting/available-snyk-reports.md#vulnerabilities-detail-report) report has been enhanced with additional functionalities, such as **Target indication** and **Column picker**.
+
 ## October 2024
 
 ### **Snyk API**&#x20;
