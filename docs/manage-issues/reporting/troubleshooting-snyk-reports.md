@@ -22,10 +22,6 @@ Changes in the Snyk code **resolved** column between snapshots may occur for any
 * The code changed in a way that caused the issue to be defined differently, thus changing the issue ID.\
   In this situation, the original issue ID is marked as **resolved,** and a new issue ID is created.
 
-{% hint style="info" %}
-Historical data for Snyk Code issue reports entered General Availability (GA) in November 2022.
-{% endhint %}
-
 ## Data freshness
 
 Data is available in reporting approximately one hour after a scan occurs. Data refreshes hourly and should, therefore, always be updated within two hours. Note the exception for ignores that follows.

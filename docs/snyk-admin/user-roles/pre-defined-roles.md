@@ -13,7 +13,7 @@ The pre-defined roles Snyk provides are as follows:
 {% hint style="info" %}
 **Feature availability**
 
-Group-level roles are available only to Enterprise customers. See the [Plans and pricing](https://snyk.io/plans/) page for details.
+Group-level roles are available only with Enterprise Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 ## Role types

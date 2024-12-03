@@ -1,11 +1,9 @@
 # Manage users in a Group
 
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
-Groups available only for Enterprise plans.
-
-See [Pricing plans](https://snyk.io/plans).
+Groups are available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Select the **Group** where you want to manage users and the **Members** menu option to manage your Group members:
@@ -80,7 +78,3 @@ You can sort by name, authentication method, role, and date joined.
 You can sort user views by clicking on the column heading:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-03-11 at 09.01.07.png" alt="Group members column headings"><figcaption><p>Group members column headings</p></figcaption></figure>
-
-##
-
-##

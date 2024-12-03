@@ -11,8 +11,10 @@ The Analytics view is structured as follows:
 * [Issues Analytics](issues-analytics.md) - provides the exposure and performance details of Snyk issues in Groups and Organizations while focusing on the issue introduction method (baseline, preventable, or non-preventable).
 * [Application Analytics](application-analytics.md) - provides data analytics for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
-{% hint style="warning" %}
-Application Analytics is available only to Snyk AppRisk Pro users. &#x20;
+{% hint style="info" %}
+**Feature availability**
+
+Application Analytics is available only for Snyk AppRisk Pro users. &#x20;
 {% endhint %}
 
 The following table presents an overview of the features available for both Issues Analytics and Application Analytics.

@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-The Snyk API is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
+The Snyk API is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 You can manage users through the Snyk Web UI and Snyk API. You can also [manage service accounts](../../enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md) using the API.

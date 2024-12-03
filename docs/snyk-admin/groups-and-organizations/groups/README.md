@@ -1,8 +1,8 @@
 # Groups
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise Plans. See [Plans and pricing](https://snyk.io/plans/) for details.
+This feature is available only with Enterprise Plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk Groups make it easier for you to work in teams. Groups can contain many Organizations, and each Organization can contain many collaborators and Projects.
@@ -31,11 +31,7 @@ For a detailed breakdown of user roles and their associated access permissions, 
 
 Select **Reports** to view the vulnerability status of the Organizations in your Group in one place as a report:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/Reports.png" alt="Group report filtered to show open issues"><figcaption><p>Group report filtered to show open issues</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Reports.png" alt="Group report filtered to show open issues"><figcaption><p>Group report filtered to show open issues</p></figcaption></figure></div>
 
 {% hint style="info" %}
 See [Reporting](../../../manage-issues/reporting/) for more details.
@@ -69,11 +65,7 @@ Select **Issues** to better identify and prioritize your Container, Code, and Op
 
 Select **Dependencies** to view the dependencies and license issues for your Groups:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/dependencies (2).png" alt="View Group dependencies"><figcaption><p>View Group dependencies</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/dependencies (2).png" alt="View Group dependencies"><figcaption><p>View Group dependencies</p></figcaption></figure></div>
 
 {% hint style="info" %}
 See [Dependencies and licenses](../../../manage-risk/reporting/dependencies-and-licenses/) for more details.
@@ -83,11 +75,7 @@ See [Dependencies and licenses](../../../manage-risk/reporting/dependencies-and-
 
 Select **Policies** to view the license and security policies for your Group:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/policies.png" alt="View Group policies"><figcaption><p>View Group policies</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/policies.png" alt="View Group policies"><figcaption><p>View Group policies</p></figcaption></figure></div>
 
 {% hint style="info" %}
 See [Policies](../../../manage-risk/policies/) for details.

@@ -2,9 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Snyk Reporting is available only for Enterprise plans.
-
-For more information, see [Plans and pricing](https://snyk.io/plans).
+Snyk Reporting is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk reports provide the visibility and analytics needed to drive data-based conversations between development and security.

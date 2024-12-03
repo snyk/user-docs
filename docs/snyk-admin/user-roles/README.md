@@ -7,7 +7,7 @@ The Snyk free subscription plan allows you to send up to 200 pending invitations
 
 Enterprise plans have administrators, viewers, collaborators, and custom roles.
 
-For more information, see [Plans and pricing](https://snyk.io/plans).
+For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Permissions are granted to users according to their role.

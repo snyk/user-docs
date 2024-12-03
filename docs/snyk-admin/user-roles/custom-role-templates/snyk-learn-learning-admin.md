@@ -1,7 +1,9 @@
 # Snyk Learn - Learning Admin
 
 {% hint style="info" %}
-These permissions are for the [Snyk Learn Assignments](../../../getting-started/snyk-learn/snyk-learn-assignments.md) feature, which is in [Early Access](../../../getting-started/snyk-release-process.md#early-access). Please contact your Snyk representative or support@snyk.io for more information.&#x20;
+**Feature availability**
+
+This role is for the [Snyk Learn Assignments](../../../getting-started/snyk-learn/snyk-learn-assignments.md) feature, which is in Early Access. If you want to set it up in your Group or Organization, contact your Snyk account team.
 {% endhint %}
 
 To use [Snyk Learn Access Controls](../../../getting-started/snyk-learn/snyk-learn-access-controls.md) beyond the default Snyk Group and Organization Admin roles, a Snyk Group Admin must create a custom role.

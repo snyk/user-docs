@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise Plans. See [Plans and pricing](https://snyk.io/plans) for details.
+This feature is available only with Enterprise Plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 There are two ways to group your Projects: **Project views** and **Project collections**.&#x20;
@@ -18,7 +18,7 @@ In the Snyk Web UI, you can:
 {% hint style="info" %}
 Any Organization-level role can create and share Project views.
 
-**Note:** You can create and configure a Project view only when you apply the **Group by none** grouping in the Project listing page.
+You can create and configure a Project view only when you apply the **Group by none** grouping in the Project listing page.
 
 In addition, more filter options are available when you apply **Group by none**.
 

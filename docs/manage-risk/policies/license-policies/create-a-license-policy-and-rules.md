@@ -1,11 +1,9 @@
 # Create a license policy and rules
 
-{% hint style="warning" %}
-**Release status**&#x20;
+{% hint style="info" %}
+**Feature availability**
 
-License policies are available for Enterprise plans and apply only to Snyk Open Source scans.&#x20;
-
-See [Pricing plans](https://snyk.io/plans).
+License policies are available only with Enterprise plans and apply only to Snyk Open Source scans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Group administrators can configure the following settings for each license:
@@ -54,11 +52,7 @@ The `Unknown` license type indicates Snyk has not recognized a license for a giv
 
 Scroll down the licenses list on the right of the policy you are editing, then select the Severity dropdown for the **Unknown** license type:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-12 at 10.42.12.png" alt="Set severity for Unknown license type"><figcaption><p>Set severity for Unknown license type</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2023-05-12 at 10.42.12.png" alt="Set severity for Unknown license type"><figcaption><p>Set severity for Unknown license type</p></figcaption></figure></div>
 
 {% hint style="info" %}
 Snyk applies the severity level set for **Unknown** to new licenses when Snyk adds them to your license policy.

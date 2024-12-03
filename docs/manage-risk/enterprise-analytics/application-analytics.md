@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**&#x20;
 
-Application Analytics for Snyk AppRisk Pro is in Early Access and available only for Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Application Analytics for Snyk AppRisk Pro is in Early Access and available only with Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The Analytics menu, available at the tenant level, under the Application Analytics tab (available only for Snyk AppRisk Pro). Application Analytics is designed to provide an in-depth analysis of your AppSec program, highlighting areas for improvement, emerging risks, and previously overlooked vulnerabilities to support AppSec managers and engineering teams.&#x20;
@@ -179,4 +179,3 @@ The following video presents the Metadata completeness panel within Application 
 {% embed url="https://youtu.be/a7s7ed2SEZI" %}
 Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
 {% endembed %}
-

@@ -89,5 +89,3 @@ If you have created a collection or multiple collections, you can view them on t
 2.  You can view all of your collections on the Collections listing page and sort by name, number of Projects, and issue count.&#x20;
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 12.15.53.png" alt="View and sort your collections"><figcaption><p>View and sort your collections</p></figcaption></figure>
-
-\

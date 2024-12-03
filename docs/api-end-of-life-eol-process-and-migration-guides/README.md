@@ -33,5 +33,3 @@ The following types of EOL will take place during each cycle:
 2. Experimental and beta: When Snyk upgrades a REST endpoint to GA that has earlier experimental or beta endpoints or both, Snyk will aim to include them in the EOL cycle as soon as possible. Users will have a 3-month window to migrate off the endpoint (starting from the public announcement in January and July).&#x20;
 
 In exceptional circumstances, Snyk may have to announce an EOL for an endpoint outside of the two announcements each year in January and July. Users will receive a one-month notice of the EOL cycle. The time window to migrate off the endpoint will follow the same windows identified for each type of EOL: a V1 API or an experimental or beta endpoint.
-
-\

@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**&#x20;
 
-Managing user roles is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
+Managing user roles is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk **Manage roles** functionality enables you to manage pre-defined and custom roles, allowing you to create and enforce set permissions for roles that reflect the users and functions in your Organization.
@@ -135,9 +135,9 @@ Snyk prevents users from assigning roles to others with more privileges than tho
 
 {% hint style="info" %}
 **Feature availability**\
-Service accounts are available only to Snyk Enterprise customers. Free and Team users have access to [personal tokens](../../snyk-cli/authenticate-to-use-the-cli.md#methods-of-authenticating-with-snyk) only. Personal tokens are recommended for use with IDEs and the local CLI.
+Service accounts are available only with Enterprise plans. Free and Team users have access to [personal tokens](../../snyk-cli/authenticate-to-use-the-cli.md#methods-of-authenticating-with-snyk) only. Personal tokens are recommended for use with IDEs and the local CLI.
 
-For more information, see [Plans and pricing](https://snyk.io/plans).
+For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Users with the Group-level View, Create, and Edit service account permissions can change the assigned role and related permissions of a service account. For detailed steps, see [Assign roles and permissions to a service account](../../enterprise-setup/service-accounts/#assign-roles-and-permissions-to-a-service-account).

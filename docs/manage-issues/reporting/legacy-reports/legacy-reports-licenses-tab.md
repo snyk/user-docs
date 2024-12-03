@@ -8,5 +8,3 @@ License information is available from the **Dependencies** menu option - see [Vi
 For systems using legacy reporting, this information is available from the **Reports** menu option.
 {% endhint %}
 
-##
-

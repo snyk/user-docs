@@ -12,7 +12,7 @@ See queries for the following use cases:
 * [CI/CD Pipelines test rates](build-your-first-dashboard.md#ci-cd-pipelines-test-usage-and-adoption) - measure the adoption of AppSec testing in CI/CD pipelines.
 
 {% hint style="warning" %}
-You **must** update the database and schema names in the example queries provided before execution.
+You must update the database and schema names in the example queries provided before execution.
 {% endhint %}
 
 ## Open issues backlog

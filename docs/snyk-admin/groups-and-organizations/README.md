@@ -1,8 +1,8 @@
 # Groups and Organizations
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Feature availability**\
-Snyk Groups are only available on certain [pricing plans](https://snyk.io/plans/).
+Snyk Groups are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 ## Groups, Organizations, and Projects

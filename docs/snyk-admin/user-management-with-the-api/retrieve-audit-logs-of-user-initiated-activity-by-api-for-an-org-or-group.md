@@ -2,10 +2,10 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Audit logs are available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
+Audit logs are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk has [audit logs](../../snyk-api/reference/audit-logs.md) endpoints that enable you to retrieve your audit logs of user-initiated activity that took place in the past 90 days. Use the endpoints [Search Group audit logs](../../snyk-api/reference/audit-logs.md#groups-group\_id-audit\_logs-search) to get information about your Snyk Group and [Search Organization audit logs](../../snyk-api/reference/audit-logs.md#orgs-org\_id-audit\_logs-search) to get information about your Snyk Organization.
+Snyk has [audit logs](../../snyk-api/reference/audit-logs.md) endpoints that enable you to retrieve your audit logs of user-initiated activity that took place in the past 90 days. Use the endpoints [Search Group audit logs](../../snyk-api/reference/audit-logs.md#groups-group_id-audit_logs-search) to get information about your Snyk Group and [Search Organization audit logs](../../snyk-api/reference/audit-logs.md#orgs-org_id-audit_logs-search) to get information about your Snyk Organization.
 
 You may want to retrieve audit logs for purposes such as finding out when a new user was added, analyzing unexpected activity and retroactively triaging the issues to address, or monitoring changes in a user's role to see any unusual behavior.
 

@@ -1,12 +1,12 @@
 # Automatically created Project collections
 
-{% hint style="warning" %}
-**Release status and feature availability**
+{% hint style="info" %}
+**Release status**
 
-Automated Collections are in [Early Access](../../getting-started/snyk-release-process.md) and available only for Enterprise plans. See [Plans and pricing](https://snyk.io/plans) for more details.
-
-For more information, see [Limitations of Automated Collections](automatically-created-project-collections.md#limitations-of-automated-collections). You can enable Automated Collections in your Organization settings.
+Automated Collections are in Early Access and available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
+
+See also [Limitations of Automated Collections](automatically-created-project-collections.md#limitations-of-automated-collections). You can enable Automated Collections in your Organization settings.
 
 Scanning a repository through an SCM integration and rescanning it using the Snyk CLI creates duplicate Targets within the Snyk Web UI with duplicate Projects and issues. These may not be exact duplicates.&#x20;
 

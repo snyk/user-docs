@@ -15,7 +15,7 @@ Click **Export** to export or print these results.
 <figure><img src="../../../.gitbook/assets/mceclip0-31-.png" alt="Issues tab results"><figcaption><p>Issues tab results</p></figcaption></figure>
 
 {% hint style="info" %}
-The number of issues that you’re currently viewing, based on the filters and searches you used, appear on the Issues tab label. <img src="../../../.gitbook/assets/Screenshot 2022-08-11 at 10.13.06.png" alt="" data-size="original">
+The number of issues that you’re currently viewing, based on the filters and searches you used, appear on the Issues tab label.&#x20;
 {% endhint %}
 
 #### Grouped and ungrouped views
@@ -24,9 +24,7 @@ Use the default grouped view to get an overview of the general health of your or
 
 Alternatively, click **View issues ungrouped** to ungroup data, viewing a separate line for each project in which the issue occurs; meaning the same issue can appear multiple times if it affects multiple projects. This ungrouped view provide more details about each affected project, and the recommended fix.
 
-{% hint style="info" %}
-Click the **View issues ungrouped** or **View issues grouped** link to toggle between views.
-{% endhint %}
+To toggle between views, click the **View issues ungrouped** or **View issues grouped** link.
 
 ### Issues tab elements
 
