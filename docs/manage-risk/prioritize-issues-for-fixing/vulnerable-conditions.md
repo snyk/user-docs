@@ -1,4 +1,4 @@
-# Triage for issues
+# Vulnerable conditions
 
 Vulnerabilities that are not exploitable are unlikely to pose a security threat to your application and can therefore be de-prioritized for fixing.
 
@@ -45,10 +45,6 @@ Jackson Vulnerable Conditions must meet all of the following conditions for the 
     * `enableDefaultTypingAsProperty()` is used to enable Polymorphic Typing.
 * User interactivity: The application needs to accept JSON input from the user.
 * Specific gadget: A “gadget,” which is a class or function, must be available within the executing scope of the application.
-
-{% hint style="info" %}
-This feature is currently in preview and might be changed.
-{% endhint %}
 
 ## When is a vulnerability with Exploit Maturity not exploitable?
 

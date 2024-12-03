@@ -36,10 +36,6 @@ The following table summarizes how an ignore will be respected for testing depen
 
 The following table summarizes how an ignore will be respected for testing depending on the way you set the ignore for Projects imported through the CLI.
 
-{% hint style="info" %}
-Only a limited number of customers can Import through the CLI for Snyk Code, because this feature is in Closed Beta.
-{% endhint %}
-
 | **Import through the CLI and set ignore by available methods**                                                                                                                                                       | **Ignore respected in UI for testing**                                | **Ignore respected in CLI and IDE tests**                                           |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | Ignore by policy (add ignore commands to your security policies) For an IDE and the CLI the testing must be done in the relevant Organization in order for the policies to be used.                                  | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ❌</p>                | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ❌</p>                              |
