@@ -9,21 +9,21 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ## November 2024
 
-&#x20;**Snyk AppRisk**&#x20;
+### &#x20;**Snyk AppRisk**&#x20;
 
 * The [Asset Dashboard](manage-issues/reporting/available-snyk-reports.md#asset-dashboard) has been redesigned and is included in the Reports section. It now features several enhancements, including a Global filter bar, new data widgets, and the option to export the dashboard as a PDF.
 * The [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#scm-integrations) documentation has been updated to outline the specific steps necessary to configure each SCM integration with a Snyk Broker token.
 
-**Snyk Container**
+### **Snyk Container**
 
 * The list of [operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated to include Ubuntu 24.10 - Oracular Oriole and Ubuntu 24.04 - Noble Numbat 04.
 * [How Snyk Container works](scan-with-snyk/snyk-container/how-snyk-container-works/) has been updated with details on the logic Snyk applies when providing public base image recommendations.
 
-**Snyk Integrations**
+### **Snyk Integrations**
 
 * The GitLab page has been updated to state that for the Snyk AppRisk level integration [PAT creation](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab#gitlab-access-tokens), the user generating the GitLab group requires a minimum GitLab permission level of Guest.
 
-**Other updates**
+### **Other updates**
 
 * The Pull Request Checks section has been updated to include the new [Pull Request Experience for PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience).
 * The [Supported Languages](supported-languages-package-managers-and-frameworks/) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
