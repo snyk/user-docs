@@ -11,13 +11,13 @@ Bazel is defined on [bazel.build](https://docs.bazel.build/versions/master/bazel
 
 ## Applicability
 
-Snyk for Bazel is supported **only for Snyk Code**.
+Snyk for Bazel is supported **only for Snyk Open Source**.
 
 Snyk supports testing Projects that have their dependencies managed by Bazel. The recommended approach is to test and monitor using the [Dep Graph API](dep-graph-api.md). While you can use Bazel for many languages including C++, **the Dep Graph endpoints do not support C++**.
 
 ## Package managers
 
-Bazel does not have dependency manifest files or lock files that package managers such as npm have. Instead, build configuration is managed in [BUILD](https://docs.bazel.build/versions/master/build-ref.html#BUILD\_files) files, using [Starlark](https://docs.bazel.build/versions/master/skylark/language.html), a domain-specific language based on Python3.
+Bazel does not have dependency manifest files or lock files that package managers such as npm have. Instead, build configuration is managed in [BUILD](https://docs.bazel.build/versions/master/build-ref.html#BUILD_files) files, using [Starlark](https://docs.bazel.build/versions/master/skylark/language.html), a domain-specific language based on Python3.
 
 You must often manually specify all dependencies (package name, location, and version), including transitive dependencies, which can then be fetched by Bazel during builds.
 
