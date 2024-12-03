@@ -545,7 +545,8 @@ Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-
 
 ### [List accessible organizations](../reference/orgs.md#orgs)
 
-**More information:** [Prerequisites for Snyk Apps](../how-to-use-snyk-apps-apis/prerequisites-for-snyk-apps.md)
+**More information:** [Prerequisites for Snyk Apps](../how-to-use-snyk-apps-apis/prerequisites-for-snyk-apps.md);\
+[Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
 
 ### [Update organization](../reference/orgs.md#orgs-org_id)
 
