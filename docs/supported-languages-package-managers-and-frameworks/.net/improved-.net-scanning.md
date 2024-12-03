@@ -26,7 +26,7 @@ Snyk improved the .NET scanning process to ensure that dependency results are co
 
 The improved .NET scanning also provides the capability of scanning any Project that can be successfully built by the `dotnet` SDK itself, removing the previous limitations of not being able to scan Projects using certain .NET features, such as `.props` files, `global.json`, or Central Package Management.
 
-## .NET scanning improvements for Git repository integrations
+## .NET scanning improvements for SCM integrations
 
 {% hint style="info" %}
 Snyk Broker is not supported.
@@ -49,11 +49,13 @@ The recommended approach is to use [`nuget.config`](https://learn.microsoft.com/
 
 If you are not using `nuget.config`, but another way of informing the .NET ecosystem of where to look for private packages, Snyk will attempt to add all private NuGet repository credentials defined in the private package repository integration as a `dotnet nuget` source before restoring the Project.
 
-### Limitations on improved .NET scanning for Git repositories
+### Limitations on improved .NET scanning for SCM integrations
 
 * `Directory.Build.props` , `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).&#x20;
 * For `global.json`, Snyk does not support all `major.minor.patch` versions that are currently supported by Microsoft, only a subset thereof. For more information, see this [error code](https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-os-dotnet-0008).
 * The operations are performed on a **case-sensitive** file system, meaning manifest definitions like your `<ProjectReference>`s strings must match files and folders with the same case.
+* Snyk does not support Projects that use Visual Studio Build Tools.&#x20;
+* Snyk does not support Windows-specific frameworks (WPF, WCF) for .NET Projects.
 
 ## .NET scanning improvements for the Snyk CLI
 
@@ -74,6 +76,18 @@ The Improved .NET scanning for the CLI **supports multiple target frameworks** i
 By default, the solution scans all target frameworks. If you want to scan individual target frameworks, you must add the `--dotnet-target-framework=<targetFramework>` option to your CLI command.
 
 Example: `snyk test --dotnet-runtime-resolution --dotnet-target-framework=net8.0`
+
+## .Net scanning methods for CLI and SCM
+
+When Snyk scans your Project with Improved .NET, an environment variable named `SnykTest` becomes available. You can use this environment variable to create conditionals to avoid executing tools that might break the scan. The following example uses the `SnykTest` variable to avoid running the swagger command:
+
+{% code overflow="wrap" %}
+```
+<Target Name="GenerateSwaggerFiles" AfterTargets="Build" Condition="'$(SnykTest)' != 'true'">
+    <Exec Command="<dotnet-swagger-command>" />
+</Target>
+```
+{% endcode %}
 
 ## Supported .NET versions
 
