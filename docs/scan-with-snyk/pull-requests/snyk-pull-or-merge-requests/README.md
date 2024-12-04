@@ -32,8 +32,6 @@ Follow these steps to generate a PR or MR directly from your Project in the Snyk
 3. Select **Open a Fix PR/MR** or **Fix this vulnerability.** A preview screen appears, showing you what fixes will be applied.
 4. Click **Open a Fix PR** on this screen to generate the pull request.
 
-<figure><img src="../../../.gitbook/assets/open-a-fix-pr.png" alt="Open Fix PR to fix Open Source Project vulnerabilities"><figcaption><p>Open Fix PR to fix Open Source Project vulnerabilities</p></figcaption></figure>
-
 {% hint style="info" %}
 PRs use a branch naming convention based on the issues that they fix. When a PR already exists for a specific change, Snyk does not create a new one, even if the original PR is closed. If you try to create a fix PR that duplicates an existing one, an error may be displayed. If this happens, check to see if the branch already exists and re-open it.
 {% endhint %}

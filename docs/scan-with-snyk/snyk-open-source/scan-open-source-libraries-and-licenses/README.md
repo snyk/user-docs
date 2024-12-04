@@ -18,11 +18,7 @@ You can view vulnerability results for imported Projects. The **Projects** page 
 
 You can expand a **Target** to see vulnerability information for Projects, including the number of issues found, grouped by severity level:
 
-<figure><img src="../../../.gitbook/assets/Getting started with open source.png" alt="Projects page"><figcaption><p>Projects page</p></figcaption></figure>
-
 Click a Project to open the issues page for that Project, where you will see the issue cards, showing the module where each issue was introduced, how to fix it, and more details about the vulnerability itself.
-
-<figure><img src="../../../.gitbook/assets/project-details.png" alt="Open Source Project issues page"><figcaption><p>Open Source Project issues page</p></figcaption></figure>
 
 For more details, see [View Project information](../../../snyk-admin/snyk-projects/project-information.md).
 
@@ -30,13 +26,13 @@ For more details, see [View Project information](../../../snyk-admin/snyk-projec
 
 For some languages, Snyk can fix vulnerabilities using fix pull/merge requests. For more information, see [Automatic and manual PRs with Snyk Open Source](../../pull-requests/snyk-pull-or-merge-requests/).
 
-Navigate to the **Issues** card for a Project:
+Navigate to the **Issues** card for a Project.
 
-<figure><img src="../../../.gitbook/assets/Issues-view.png" alt="Issues tab in Open Source Project"><figcaption><p>Issues tab in Open Source Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/os_project_issues_fix_vuln.png" alt=""><figcaption><p>Issues tab in an Open Source Project</p></figcaption></figure>
 
 To fix vulnerabilities:
 
-1. Click **Fix this vulnerability** to open a fix PR for this issue; click **Fix these vulnerabilities** to fix multiple issues.
+1. Click **Fix this vulnerability** to open a fix PR for this issue. Click **Fix these vulnerabilities** to fix multiple issues.
 2. The **Open a Fix PR** screen opens, displaying the selected vulnerabilities.
 3. Check or uncheck the issues you want to fix or remove from this fix.
 4. Scroll to the bottom of the screen and click **Open a Fix PR**.

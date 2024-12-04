@@ -21,13 +21,7 @@ Before checking license compliance with Snyk License Compliance Management, ensu
 
 To take effective action based on license issues, you need to define policies defining these actions based on license types. Policies provide a way to capture different requirements within an Organization based on factors such as line of business. Work with your legal team to create policies that are specific to your company.
 
-To open your Snyk Group default license policy, select the **Policies** menu option in your Group:
-
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-15 at 12.34.36.png" alt="Access Group policies"><figcaption><p>Access Group policies</p></figcaption></figure>
-
-</div>
+To open your Snyk Group default license policy, navigate to the **Policies** menu option in your Group.
 
 ### Create policy rules
 
@@ -37,15 +31,11 @@ You can create and edit multiple license policies for Organizations. For details
 
 ## View compliance issues
 
-Snyk’s [Git-based integrations ](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
+Snyk’s [Git-based integrations ](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
 
-<div align="left">
+<div align="left"><figure><img src="../../../.gitbook/assets/os_project_license_issues.png" alt=""><figcaption><p>Issues overview within a dependency project</p></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-15 at 13.12.16.png" alt="Issues overview within a dependency project."><figcaption><p>Issues overview within a dependency project</p></figcaption></figure>
-
-</div>
-
-This example shows a high-severity issue for a GPL-2.0 license, with accompanying instructions as defined in the policies for that license.
+The below example shows a high-severity issue for a GPL-2.0 license, with accompanying instructions as defined in the policies for that license.
 
 You can also view license issues using the Snyk CLI tool after running `snyk test`:
 
@@ -59,17 +49,11 @@ You can view and share detailed lists of licenses being used by all Projects in 
 
 Snyk shows license issues in both your direct and transitive dependencies in the **Dependencies** tab:
 
-![Dependencies overview within a dependency project](<../../../.gitbook/assets/Screenshot 2023-05-15 at 13.14.32.png>)
+![Dependencies overview within a dependency project](<../../../.gitbook/assets/project_dependencies_licenses (1).png>)
 
 Click the tree icon to view a full dependency tree. This shows the dependency that introduced the license issue:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-15 at 13.18.51.png" alt="Dependencies overview - tree view"><figcaption><p>Dependencies overview - tree view</p></figcaption></figure>
-
-</div>
-
-
+<div align="left"><figure><img src="../../../.gitbook/assets/project_dependencies_dependency_tree.png" alt="Dependencies overview - tree view"><figcaption><p>Dependencies overview - tree view</p></figcaption></figure></div>
 
 ## **Resolve license issues**
 
