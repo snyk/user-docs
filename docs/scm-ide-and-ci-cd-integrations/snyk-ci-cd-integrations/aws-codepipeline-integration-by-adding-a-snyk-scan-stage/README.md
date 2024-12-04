@@ -1,6 +1,6 @@
 # AWS CodePipeline integration by adding a Snyk scan stage
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **The Snyk integration for AWS CodePipeline will be discontinued.**
 
 **Action required**

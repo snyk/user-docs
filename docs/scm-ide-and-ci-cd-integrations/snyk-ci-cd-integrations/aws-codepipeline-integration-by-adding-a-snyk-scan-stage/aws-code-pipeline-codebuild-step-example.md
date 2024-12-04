@@ -1,6 +1,6 @@
 # AWS CodePipeline CodeBuild step example
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **The Snyk integration for AWS CodePipeline will be discontinued**
 
 \

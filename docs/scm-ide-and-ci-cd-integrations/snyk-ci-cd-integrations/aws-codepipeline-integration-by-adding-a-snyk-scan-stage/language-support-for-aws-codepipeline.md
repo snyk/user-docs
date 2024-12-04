@@ -1,6 +1,6 @@
 # Language support for AWS CodePipeline
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **The Snyk integration for AWS CodePipeline will be discontinued**
 
 \

@@ -1,6 +1,6 @@
 # Migrating to AWS CodeBuild
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **The Snyk integration for AWS CodePipeline will be discontinued**
 
 \

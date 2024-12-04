@@ -1,6 +1,6 @@
 # Setup steps for AWS CodePipeline integration
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **The Snyk integration for AWS CodePipeline will be discontinued**
 
 \
@@ -17,8 +17,6 @@ Effective **Oct 30th, 2024**, you will no longer be able to add or modify the Sn
 
 We are confident that AWS CodeBuild and the Snyk CLI will meet your requirements.&#x20;
 {% endhint %}
-
-
 
 You can initiate Snyk AWS CodePipeline integration directly from the AWS CodePipeline console.
 
@@ -56,7 +54,7 @@ Select how you would like to authenticate with Snyk to give AWS CodePipeline per
 
 The following options are available for configuration:
 
-![Snyk AWS CodePipeline configuration options](../../../.gitbook/assets/Snyk\_AWS\_CodePipeline\_Config\_y\_CodePipeline\_-\_AWS\_Developer\_Tools\_png.png)
+![Snyk AWS CodePipeline configuration options](../../../.gitbook/assets/Snyk_AWS_CodePipeline_Config_y_CodePipeline_-_AWS_Developer_Tools_png.png)
 
 * **Snyk organization:** Select the Snyk organization where reports of findings are saved.
 * **Vulnerability handling**: Define the pipeline behavior if a vulnerability is found. If the **Block deployment when Snyk finds an error** checkbox is checked, the pipeline fails and does not proceed to the next stage in the CodePipeline.
