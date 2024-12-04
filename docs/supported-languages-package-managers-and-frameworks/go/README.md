@@ -4,12 +4,6 @@
 
 Snyk for Go is supported for Snyk Open Source and Snyk Code.
 
-{% hint style="info" %}
-**Supported Go versions**
-
-You can use any version up to go1.16.
-{% endhint %}
-
 Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
 
 Available functions:

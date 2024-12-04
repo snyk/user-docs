@@ -8,6 +8,12 @@ Since Snyk no longer supports scanning of govendor Projects, a warning is issued
 
 ## Go for Snyk Open Source support
 
+{% hint style="info" %}
+**Supported Go versions**
+
+Snyk supports all versions of Go, including the latest stable version listed on the Go [All releases](https://go.dev/dl/) page.
+{% endhint %}
+
 Refer to the [Go details](./) for supported package manager and features.
 
 {% hint style="info" %}
