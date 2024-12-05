@@ -16,7 +16,7 @@ If users have a **large number of memberships in a given Group**, all requests--
 
 A small number of Snyk customers have more than one Group, for example, to keep different business units completely separate. However, anyone considering multiple Groups must understand the limitations of setting up their account with multiple groups.
 
-Specifically, **each Group is a standalone entity. This has the following consequences**:
+Specifically, each Group is a standalone entity. This has the following consequences:
 
 * The functionality for Groups is not tied together.
 * There is no cross-Group reporting.

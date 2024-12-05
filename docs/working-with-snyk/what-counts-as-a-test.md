@@ -6,7 +6,7 @@ Capitalized terms used but not defined herein shall have the meaning as set fort
 
 Snyk keeps separate test counts and sets limits for each Snyk product: Snyk Open Source, Snyk Code, Snyk Container, and Snyk IaC.
 
-If you are on the Free Snyk plan, you may run unlimited tests for public repositories, and limited tests on private repositories. Recurring tests may only be run on a weekly basis. See [Plans and pricing](https://snyk.io/plans?\_gl=1\*1d4rb1a\*\_ga\*NzI0Mjg1NDM2LjE2OTAzNzU5NDk.\*\_ga\_X9SH3KP7B4\*MTY5MzYxOTc2NC4xMzIuMS4xNjkzNjE5ODA1LjAuMC4w) for more details about Snyk plans. For information about unlimited tests against public repositories, see [Running out of tests](../snyk-cli/getting-started-with-the-snyk-cli.md#running-out-of-tests). If you reach your limit or would like to increase your recurring test frequency, you can [upgrade your plan](https://snyk.io/plans?\_gl=1\*1d4rb1a\*\_ga\*NzI0Mjg1NDM2LjE2OTAzNzU5NDk.\*\_ga\_X9SH3KP7B4\*MTY5MzYxOTc2NC4xMzIuMS4xNjkzNjE5ODA1LjAuMC4w).
+If you are on the Free Snyk plan, you may run unlimited tests for public repositories, and limited tests on private repositories. Recurring tests may only be run on a weekly basis. See [Plans and pricing](https://snyk.io/plans?_gl=1*1d4rb1a*_ga*NzI0Mjg1NDM2LjE2OTAzNzU5NDk.*_ga_X9SH3KP7B4*MTY5MzYxOTc2NC4xMzIuMS4xNjkzNjE5ODA1LjAuMC4w) for more details about Snyk plans. For information about unlimited tests against public repositories, see [Running out of tests](../snyk-cli/getting-started-with-the-snyk-cli.md#running-out-of-tests). If you reach your limit or would like to increase your recurring test frequency, you can [upgrade your plan](https://snyk.io/plans?_gl=1*1d4rb1a*_ga*NzI0Mjg1NDM2LjE2OTAzNzU5NDk.*_ga_X9SH3KP7B4*MTY5MzYxOTc2NC4xMzIuMS4xNjkzNjE5ODA1LjAuMC4w).
 
 The Snyk Open Source, Snyk Code, Snyk IaC, and Snyk Container applications allow customers to scan and run tests on their code-based assets as applicable based on the functionality of the application. The Customer’s Order Form indicates a plan type that comes with a certain number of tests as part of the Customer’s Subscription Allocation (Tests).
 
@@ -62,7 +62,7 @@ For container scans from a registry or your Kubernetes cluster, Snyk counts the 
 
 Snyk periodically checks whether your code is affected by newly disclosed vulnerabilities.
 
-The test frequency is set to a default for each product. For information about changing the frequency, see [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md), [View and edit Project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md), and [Test frequency settings](../snyk-admin/snyk-projects/#test-frequency-settings) on the Snyk Projects page.
+The test frequency is set to a default for each product. For information about changing the frequency, see [Usage settings](../admin/groups-and-organizations/usage-settings.md), [View and edit Project settings](../admin/snyk-projects/view-and-edit-project-settings.md), and [Test frequency settings](../admin/snyk-projects/#test-frequency-settings) on the Snyk Projects page.
 
 ## Counting CLI tests
 

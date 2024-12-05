@@ -20,7 +20,7 @@ Snyk supports only Git. Snyk does not currently support integration with Team Fo
 
 ### Prerequisites for Azure Repositories (TFS) integration
 
-* [Snyk Organization Admin](../../snyk-admin/user-roles/pre-defined-roles.md) user role.
+* [Snyk Organization Admin](../../admin/user-roles/pre-defined-roles.md) user role.
 * An Azure project. If you do not have a project yet, create one in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) or set one up in an [on-premise Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops) instance.
 * The required Personal Access Token (PAT) access scopes. For details on the permissions required, see [Azure Repositories (TFS) permission requirements](./#azure-repositories-tfs-permission-requirements).
 
@@ -108,7 +108,7 @@ The optional **Exclude folders** field is case-sensitive. The pattern you enter 
 After repositories are imported, a confirmation appears in green at the top of the screen. The selected files are marked with a unique icon and named by Organization and repository. You can filter to view only those Projects by selecting the Azure Repos filter option.
 
 {% hint style="info" %}
-The Azure Repository integration works like the other [Snyk SCM integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../snyk-admin/snyk-projects/) documentation.
+The Azure Repository integration works like the other [Snyk SCM integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../admin/snyk-projects/) documentation.
 {% endhint %}
 
 ## Group level - Snyk AppRisk integrations

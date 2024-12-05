@@ -5,7 +5,7 @@
 
 Reachability analysis is in Early Access for some integrations and languages.
 
-For information on how to enable the feature for supported integrations and languages, see [Snyk Preview](../../snyk-admin/snyk-preview.md).
+For information on how to enable the feature for supported integrations and languages, see [Snyk Preview](../../admin/snyk-preview.md).
 {% endhint %}
 
 Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (e.g. functions, classes, modules, annotations, etc.) related to the vulnerability, thus raising the chances of that vulnerability being exploitable in the context of your application.

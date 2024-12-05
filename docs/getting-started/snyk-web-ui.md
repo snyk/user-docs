@@ -2,7 +2,7 @@
 
 In the Snyk Web UI, you can manage your Projects, view and address security vulnerabilities, monitor dependencies, and review the health of your code. You can also configure account settings, manage API and Auth tokens, authorize applications, set organizational preferences, and customize email notifications.
 
-You can visualize information at the Group or Organization level by clicking the name of the Group or Organization. General information, like Reports, Issues, Dependencies, Members, Settings, Help, and Settings, is available for all level types. For more information, see [Groups and Organizations](../snyk-admin/groups-and-organizations/).
+You can visualize information at the Group or Organization level by clicking the name of the Group or Organization. General information, like Reports, Issues, Dependencies, Members, Settings, Help, and Settings, is available for all level types. For more information, see [Groups and Organizations](../admin/groups-and-organizations/).
 
 ## Group level
 
@@ -127,7 +127,7 @@ The **Pending tasks** section shows the next chores to be handled for the Projec
 
 Use the links for Projects on the Dashboard to explore and manage the metadata, retest, and fix options for the Target files in your Projects. Each link opens a Project details page where you can view the Project **Overview**, or switch to the **History** and **Settings** tabs.
 
-For more information, see [Snyk Projects](../snyk-admin/snyk-projects/).
+For more information, see [Snyk Projects](../admin/snyk-projects/).
 
 #### Fix vulnerabilities
 
@@ -205,17 +205,17 @@ You can [view dependencies](https://docs.snyk.io/manage-risk/reporting/dependenc
 
 ### Manage Organization or Group members
 
-Select **Members** from the dashboard's navigation to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations.md) or [Group](../snyk-admin/groups-and-organizations/groups/manage-users-in-a-group.md).
+Select **Members** from the dashboard's navigation to view and manage users, roles, and how users authenticate in your Snyk [Organization](../admin/groups-and-organizations/organizations/manage-users-in-organizations.md) or [Group](../admin/groups-and-organizations/groups/manage-users-in-a-group.md).
 
 The Members page is available at both the Group and Organization levels.
 
 {% hint style="info" %}
-You must be assigned the [required Admin roles and permissions](../snyk-admin/user-roles/pre-defined-roles.md) to make changes to the **Members** tab.
+You must be assigned the [required Admin roles and permissions](../admin/user-roles/pre-defined-roles.md) to make changes to the **Members** tab.
 {% endhint %}
 
 ### Snyk Organization or Group Settings
 
-Use the **Settings** option to view and manage your Organization or Group settings. For details, see[Group and Organization settings](../snyk-admin/groups-and-organizations/group-and-organization-settings.md).
+Use the **Settings** option to view and manage your Organization or Group settings. For details, see[Group and Organization settings](../admin/groups-and-organizations/group-and-organization-settings.md).
 
 <figure><img src="../.gitbook/assets/org_settings.png" alt=""><figcaption><p>Group and Organization settings</p></figcaption></figure>
 
@@ -231,7 +231,7 @@ Select your **name** in the navigation on the Dashboard and then **Account setti
 
 * View and manage your API token or the Auth Token for free accounts. For details, see [How to obtain and authenticate with your Snyk API token](./#obtain-and-use-your-snyk-api-token).
 * View the list of your **Authorized Applications**.
-* Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#set-your-preferred-organization).
+* Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../admin/groups-and-organizations/organizations/create-and-delete-organizations.md#set-your-preferred-organization).
 * **Delete** your account.
-* Manage your Account Settings for email **Notifications** (link in the left navigation), including Issue email alerts, Weekly report emails, and Usage alerts, as well as email notifications when reports are available and preferences for sales and marketing communications.  For details, see [Manage notifications](../snyk-admin/manage-notifications.md).
+* Manage your Account Settings for email **Notifications** (link in the left navigation), including Issue email alerts, Weekly report emails, and Usage alerts, as well as email notifications when reports are available and preferences for sales and marketing communications.  For details, see [Manage notifications](../admin/manage-notifications.md).
 * Get a referral link to **Share with a Friend**. The link is in the left navigation of your Account Settings.

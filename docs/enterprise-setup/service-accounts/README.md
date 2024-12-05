@@ -66,7 +66,7 @@ Note that while creating a **Group service account**, you can choose a Group-lev
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
-In contrast, while creating an **Organization service account,** you can choose Organization-level roles, including [custom roles](../../snyk-admin/user-roles/user-role-management.md#create-a-custom-role) that you have set up for your Organizations.
+In contrast, while creating an **Organization service account,** you can choose Organization-level roles, including [custom roles](../../admin/user-roles/user-role-management.md#create-a-custom-role) that you have set up for your Organizations.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-06 at 12.06.35.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 
@@ -88,7 +88,7 @@ For Group service accounts, choose from the following list of roles to configure
 * **Group Admin** enables full administrator access.
 * **Group Member** associates a service account with a group but does not grant any specific access.
 
-For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Pre-defined](../../snyk-admin/user-roles/pre-defined-roles.md) roles for the scope of the Org Admin and Org Collaborator roles.
+For **Organization service accounts**, choose from the standard roles, **Org Admin** or **Org** **Collaborator**, or a custom role if you have set up any custom roles. See [Pre-defined](../../admin/user-roles/pre-defined-roles.md) roles for the scope of the Org Admin and Org Collaborator roles.
 
 ### Create the service account
 

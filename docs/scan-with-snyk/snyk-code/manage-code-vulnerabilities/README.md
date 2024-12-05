@@ -22,7 +22,7 @@ Automate importing multiple repositories using the API endpoint [Import targets]
 
 The following provides an overview of the testing process in Snyk Code based on the testing phases.
 
-<table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../import-project-with-snyk-code.md">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
+<table><thead><tr><th width="250">Phase</th><th>Description</th></tr></thead><tbody><tr><td><a href="../import-project-with-snyk-code.md">Import repository</a></td><td>Performed when you import a repository.</td></tr><tr><td><a href="../../../admin/snyk-projects/view-and-edit-project-settings.md">Schedule recurring tests</a></td><td>Automatically performed when you schedule them.</td></tr><tr><td><a href="./#retesting-code-repository">On demand testing (retesting code repository)</a></td><td>Performed on demand when you select <strong>Retest now</strong>.</td></tr></tbody></table>
 
 ### Retesting code repository
 
@@ -34,7 +34,7 @@ You can also use the **Retest now** option to apply the exclusion rules of the `
 
 ## Project filters
 
-The Projects page on Snyk Web UI has a filter pane that categorizes Snyk Projects and shows the number of matching Projects for each criterion. See [Project information](../../../snyk-admin/snyk-projects/project-information.md).
+The Projects page on Snyk Web UI has a filter pane that categorizes Snyk Projects and shows the number of matching Projects for each criterion. See [Project information](../../../admin/snyk-projects/project-information.md).
 
 The **Grouping by File or Vulnerability Type** feature offers the following additional options:
 
@@ -69,7 +69,7 @@ To scan your repositories and manage code vulnerabilities, you can check the fol
 
 ### View vulnerabilities in a repository
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../../admin/groups-and-organizations/).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project to see all vulnerability issues detected by Snyk Code.
 
@@ -103,7 +103,7 @@ On the **History** page, only two distinct snapshots are displayed. A snapshot i
 
 To view Project history:
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../../admin/groups-and-organizations/).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project and navigate to **History**.
 4. Select a test from the list to view the Project historical snapshot.
@@ -115,10 +115,10 @@ To view Project history:
 
 Manage Project settings as follows:
 
-* Schedule recurring tests: [Configure Test & Automated Pull Request Frequency](../../../snyk-admin/snyk-projects/#test-frequency-settings).
-* Retrieve the Project ID: [Retrieve the unique identifier for the Project](../../../snyk-admin/snyk-projects/#project).
-* Deactivate Project: [Temporarily disable the Project without deleting any data](../../../snyk-admin/snyk-projects/#delete-activate-or-deactivate).
-* Delete the Project: [Permanently remove the Project and all associated data](../../../snyk-admin/snyk-projects/#delete-activate-or-deactivate).
+* Schedule recurring tests: [Configure Test & Automated Pull Request Frequency](../../../admin/snyk-projects/#test-frequency-settings).
+* Retrieve the Project ID: [Retrieve the unique identifier for the Project](../../../admin/snyk-projects/#project).
+* Deactivate Project: [Temporarily disable the Project without deleting any data](../../../admin/snyk-projects/#delete-activate-or-deactivate).
+* Delete the Project: [Permanently remove the Project and all associated data](../../../admin/snyk-projects/#delete-activate-or-deactivate).
 
 ## What's next?
 

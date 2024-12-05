@@ -29,7 +29,7 @@ IaC+ SCM integrations use the [Snyk Workspaces](../../../scm-ide-and-ci-cd-integ
 If you want to scan a new SCM repository with IaC+ and you have already imported that repository, you must re-import the repository. This will not affect any of your existing Projects.
 {% endhint %}
 
-You will start by importing SCM repositories as [Projects](../../../snyk-admin/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
+You will start by importing SCM repositories as [Projects](../../../admin/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
 
 1. Log in to Snyk and on your dashboard, select **Projects** from the navigation.
 2. On the Projects page, from the **Add projects** dropdown, select the SCM from which to add the Projects; for example, select GitHub.
@@ -39,7 +39,7 @@ You will start by importing SCM repositories as [Projects](../../../snyk-admin/s
 
 ## View IaC+ SCM projects
 
-On the [Projects](../../../snyk-admin/snyk-projects/) page, ensure **Group by targets** is selected and navigate to the Target (Git repository) that contains the files for IaC+ to test.
+On the [Projects](../../../admin/snyk-projects/) page, ensure **Group by targets** is selected and navigate to the Target (Git repository) that contains the files for IaC+ to test.
 
 You will see a single **Infrastructure as Code issues** Project. IaC+ generates only one Project in each repository, unlike current IaC, which generates one Project for each configuration file.
 

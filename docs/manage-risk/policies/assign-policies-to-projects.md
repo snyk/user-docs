@@ -1,6 +1,6 @@
 # Assign policies to Projects
 
-After you apply [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md) to your Projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes that have the policy applied.
+After you apply [Project attributes](../../admin/snyk-projects/project-attributes.md) to your Projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes that have the policy applied.
 
 {% hint style="info" %}
 Policies applied to Project attributes always take precedence over policies applied to Organizations.
@@ -44,19 +44,11 @@ An example policy follows. It is applied to an attribute in the **Business Criti
 
 The following Project has the attributes `Frontend`, `External`, and `Critical`, and has at least one matching tag, `PCI:Compliant`. Thus the Project will inherit the policy, that is, the policy is assigned to this Project.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.26.02_pm.png" alt="Project inheriting a policy"><figcaption><p>Project inheriting a policy</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.26.02_pm.png" alt="Project inheriting a policy"><figcaption><p>Project inheriting a policy</p></figcaption></figure></div>
 
 The following Project will not inherit the policy, because the Project lacks the `External` environment attribute.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.29.03_pm.png" alt="Project not inheriting a policy"><figcaption><p>Project not inheriting a policy</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.29.03_pm.png" alt="Project not inheriting a policy"><figcaption><p>Project not inheriting a policy</p></figcaption></figure></div>
 
 ## Assign multiple policies to a Project
 
@@ -64,8 +56,4 @@ Multiple policies can be assigned to a Project. For example, you may have a poli
 
 When multiple policies are assigned to a Project, the order of the policies on the policy manager page determines precedence. The policy closest to the top of the list takes precedence over other assigned policies after it. To change the order of policies, either drag and drop the policies into the order you want or use the three dots on the right-hand side to move the policy up or down in the list.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.51.25_pm.png" alt="Change policy order"><figcaption><p>Change policy order</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.51.25_pm.png" alt="Change policy order"><figcaption><p>Change policy order</p></figcaption></figure></div>

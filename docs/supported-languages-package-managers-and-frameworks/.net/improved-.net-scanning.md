@@ -5,7 +5,7 @@
 
 Improved Snyk Open Source scanning for NuGet .NET applications is in [Early Access](../../getting-started/snyk-release-process.md#early-access) and available only to Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
-You can enable the feature by using [Snyk Preview](../../snyk-admin/snyk-preview.md).
+You can enable the feature by using [Snyk Preview](../../admin/snyk-preview.md).
 {% endhint %}
 
 {% hint style="info" %}
@@ -36,7 +36,7 @@ The .NET scanning improvements are available when importing Projects using Git r
 
 **Follow these steps to enable the improvements:**
 
-1. Activate improved .NET scanning for your Organization or Group through the [Snyk Preview](../../snyk-admin/snyk-preview.md) menu.
+1. Activate improved .NET scanning for your Organization or Group through the [Snyk Preview](../../admin/snyk-preview.md) menu.
 2. Re-import any repositories with .NET applications; **re-testing existing Projects is not sufficient.**
 
 ### Private package repository integration

@@ -3,7 +3,7 @@
 Analytics provides executives, as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment. Analytics is available at the tenant level.&#x20;
 
 {% hint style="info" %}
-To access Analytics, you need to have one of the following [Group roles](../../snyk-admin/user-roles/pre-defined-roles.md#group-level-permissions): Group Admin, Group Viewer, or a [Custom role](../../snyk-admin/user-roles/user-role-management.md#create-a-custom-role) with`report.read` permissions.
+To access Analytics, you need to have one of the following [Group roles](../../admin/user-roles/pre-defined-roles.md#group-level-permissions): Group Admin, Group Viewer, or a [Custom role](../../admin/user-roles/user-role-management.md#create-a-custom-role) with`report.read` permissions.
 {% endhint %}
 
 The Analytics view is structured as follows:

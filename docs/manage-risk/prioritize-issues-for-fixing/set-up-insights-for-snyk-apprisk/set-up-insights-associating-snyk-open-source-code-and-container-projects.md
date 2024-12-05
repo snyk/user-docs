@@ -32,7 +32,7 @@ The container image is the build artifact that is deployed and running on your K
 
 ## Use Project tags to link Projects
 
-Add Snyk [Project tags](../../../snyk-admin/introduction-to-snyk-projects/project-tags.md) to all the Projects used by your application to link these Projects together and allow Snyk to represent the whole application that you are testing.&#x20;
+Add Snyk [Project tags](../../../admin/snyk-projects/project-tags.md) to all the Projects used by your application to link these Projects together and allow Snyk to represent the whole application that you are testing.&#x20;
 
 To associate two Projects together, add the exact same tag to both Projects. For example, add the same tag to your Snyk Open Source Projects and Snyk Container Project if they are related to each other.&#x20;
 
@@ -97,11 +97,7 @@ Snyk recommends applying the tags through the API in order to automate the proce
 
 ## UI example for Project tags
 
-<div align="center">
-
-<figure><img src="../../../.gitbook/assets/uiExample.png" alt="UI example for Project tags"><figcaption><p>UI example for Project tags</p></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../../../.gitbook/assets/uiExample.png" alt="UI example for Project tags"><figcaption><p>UI example for Project tags</p></figcaption></figure></div>
 
 ### CLI Example
 

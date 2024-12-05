@@ -24,7 +24,7 @@ Projects are held in a Target. A Target represents an external resource Snyk has
 
 Snyk creates a Target when you request to import a Project or scan using the CLI. If the import fails or finds nothing, the Target will be empty.
 
-When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the endpoints [Get targets by org ID](../../snyk-api/reference/targets.md#orgs-org\_id-targets) and [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects.md#orgs-org\_id-projects).
+When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the endpoints [Get targets by org ID](../../snyk-api/reference/targets.md#orgs-org_id-targets) and [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects.md#orgs-org_id-projects).
 
 Click the **dots** at the far right of each Target on the list to see the **available actions**; these include **deleting** a target.
 
@@ -32,7 +32,7 @@ Click the **dots** at the far right of each Target on the list to see the **avai
 
 Each Snyk Project is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the Origin.
 
-The grouping option controls whether the filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](../introduction-to-snyk-projects/project-tags.md) and [filtering attributes at the Project level](project-attributes.md) to the individual Projects.
+The grouping option controls whether the filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](project-tags.md) and [filtering attributes at the Project level](project-attributes.md) to the individual Projects.
 
 Snyk provides both pagination to improve the page loading time for Projects page requests and filtering, which is particularly helpful if you have hundreds of thousands of Projects to scan.
 
@@ -82,7 +82,7 @@ Possible Origin values are:
 
 A Snyk Project defines the items, such as manifest files, that Snyk scans for a given Target, with configuration information defining how to run that scan.
 
-Projects appear in the **Projects** listing. You can also find Projects using the endpoint [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects.md#orgs-org\_id-projects).
+Projects appear in the **Projects** listing. You can also find Projects using the endpoint [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects.md#orgs-org_id-projects).
 
 Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](project-attributes.md).
 
@@ -114,11 +114,7 @@ You can set the frequency of testing for each Project.&#x20;
 
 For each entry, you can select the frequency of testing for that Project (`never`, `daily`, or `weekly`) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.46.png" alt="Select test frequency"><figcaption><p>Select test frequency</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.46.png" alt="Select test frequency"><figcaption><p>Select test frequency</p></figcaption></figure></div>
 
 {% hint style="info" %}
 The default test frequency and limitations are as follows:

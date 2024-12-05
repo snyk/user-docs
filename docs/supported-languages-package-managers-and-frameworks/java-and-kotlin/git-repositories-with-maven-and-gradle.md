@@ -11,7 +11,7 @@
 {% hint style="info" %}
 **Release status**
 
-Improved Gradle SCM scanning is in Early Access. You can enable the feature by using [Snyk Preview](../../snyk-admin/snyk-preview.md).
+Improved Gradle SCM scanning is in Early Access. You can enable the feature by using [Snyk Preview](../../admin/snyk-preview.md).
 {% endhint %}
 
 You can now obtain more accurate results for your Gradle Projects imported through Git integrations by using Improved Gradle SCM scanning.
@@ -20,21 +20,21 @@ You can now obtain more accurate results for your Gradle Projects imported throu
 
 The following lists some of the main supported Gradle features:
 
-* [Groovy](https://docs.gradle.org/current/userguide/groovy\_build\_script\_primer.html) and [Kotlin](https://docs.gradle.org/current/userguide/kotlin\_dsl.html) DSLs - `build.gradle(.kts)` and `settings.gradle(.kts)`
-* [Built-in](https://docs.gradle.org/current/userguide/declaring\_repositories.html#sec:declaring\_public\_repository) and [custom](https://docs.gradle.org/current/userguide/declaring\_repositories.html#sec:declaring\_custom\_repository) package repositories, or example, Artifactory, Nexus
+* [Groovy](https://docs.gradle.org/current/userguide/groovy_build_script_primer.html) and [Kotlin](https://docs.gradle.org/current/userguide/kotlin_dsl.html) DSLs - `build.gradle(.kts)` and `settings.gradle(.kts)`
+* [Built-in](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_public_repository) and [custom](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_custom_repository) package repositories, or example, Artifactory, Nexus
 * Built-in objects [`ext`](https://docs.gradle.org/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html), [`project`](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html), `rootProject`, and [`settings`](https://docs.gradle.org/current/dsl/org.gradle.api.initialization.Settings.html)
 * Local and global variables, maps, and string interpolation
-* Gradle [lockfiles](https://docs.gradle.org/current/userguide/dependency\_locking.html)
-* [Gradle properties and system properties](https://docs.gradle.org/current/userguide/build\_environment.html#sec:gradle\_system\_properties) - `gradle.properties`
-* [Dependency exclusions](https://docs.gradle.org/current/userguide/dependency\_downgrade\_and\_exclude.html#sec:excluding-transitive-deps)
+* Gradle [lockfiles](https://docs.gradle.org/current/userguide/dependency_locking.html)
+* [Gradle properties and system properties](https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_system_properties) - `gradle.properties`
+* [Dependency exclusions](https://docs.gradle.org/current/userguide/dependency_downgrade_and_exclude.html#sec:excluding-transitive-deps)
 * Version catalogs declared in [Gradle](https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog-declaration) and [TOML](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) files - `gradle/libs.versions.toml`
-* [Multi-project builds](https://docs.gradle.org/current/userguide/declaring\_dependencies\_between\_subprojects.html), project names, project references
+* [Multi-project builds](https://docs.gradle.org/current/userguide/declaring_dependencies_between_subprojects.html), project names, project references
 * [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import)
 * Maven BOMs as [`platform`](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps) dependencies
 
 Some Gradle features are not supported, and this may influence the scan results. These Gradle features include:
 
-* Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing\_gradle\_projects.html#sec:build\_sources) directories
+* Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources) directories
 * Dependencies introduced via [plugins](https://docs.gradle.org/current/userguide/plugins.html).
 
 If you see unexpected results from this Early Access feature, contact [Snyk support](https://support.snyk.io/hc/en-us).

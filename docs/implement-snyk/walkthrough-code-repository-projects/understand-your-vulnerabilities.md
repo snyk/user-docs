@@ -17,7 +17,7 @@ For example, for a **Code analysis** project scanned by Snyk Code:
 
 <figure><img src="../../.gitbook/assets/image (149) (1) (1) (2).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
 
-See [View project information](../../snyk-admin/snyk-projects/project-information.md) for more details.
+See [View project information](../../admin/snyk-projects/project-information.md) for more details.
 
 ## View Issue Cards
 
@@ -27,7 +27,7 @@ Now, look at the vulnerability information for each Snyk Project, provided in Is
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 
-For details, see [Issue card information](../../snyk-admin/snyk-projects/issue-card-information.md).
+For details, see [Issue card information](../../admin/snyk-projects/issue-card-information.md).
 
 ## Access more vulnerability information
 

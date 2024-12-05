@@ -20,7 +20,7 @@ You can expand a **Target** to see vulnerability information for Projects, inclu
 
 Click a Project to open the issues page for that Project, where you will see the issue cards, showing the module where each issue was introduced, how to fix it, and more details about the vulnerability itself.
 
-For more details, see [View Project information](../../../snyk-admin/snyk-projects/project-information.md).
+For more details, see [View Project information](../../../admin/snyk-projects/project-information.md).
 
 ## Fix vulnerabilities in your open-source libraries
 

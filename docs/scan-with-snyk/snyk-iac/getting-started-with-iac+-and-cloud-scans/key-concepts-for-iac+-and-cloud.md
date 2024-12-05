@@ -16,11 +16,11 @@ A Snyk **environment** is an organizing concept that equates to the following:
 * For IaC+ environments: an SCM repository, CLI test report, or Terraform Cloud/Enterprise run task report
 * For cloud environments: an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../../snyk-admin/snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-for-iac+-and-cloud.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
+Unlike a Snyk [Project](../../../admin/snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-for-iac+-and-cloud.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
 
 A Snyk environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 
-Use the [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) Snyk REST API endpoint to retrieve a list of all environments and optionally filter by attribute, such as name and scan status.
+Use the [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org_id-/cloud/environments) Snyk REST API endpoint to retrieve a list of all environments and optionally filter by attribute, such as name and scan status.
 
 The following cloud providers are supported:
 
@@ -34,7 +34,7 @@ A **resource** is a cloud infrastructure entity such as an AWS S3 bucket; Identi
 
 On each scan, Snyk records the configuration attributes of each resource in an environment.
 
-You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2023-05-29%7Ebeta#get-/orgs/-org\_id-/cloud/resources) Snyk REST API endpoint to retrieve a list of all resources for an Organization and optionally filter by an attribute such as environment ID, resource ID, or resource type.
+You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2023-05-29%7Ebeta#get-/orgs/-org_id-/cloud/resources) Snyk REST API endpoint to retrieve a list of all resources for an Organization and optionally filter by an attribute such as environment ID, resource ID, or resource type.
 
 For a list of supported resource types for cloud environments, see the following:
 

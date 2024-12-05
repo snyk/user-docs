@@ -136,7 +136,7 @@ A text file format used to build container images using Docker. The Dockerfile c
 
 ### Environment
 
-Can refer to a cloud environment, a [Project attribute](../snyk-admin/snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
+Can refer to a cloud environment, a [Project attribute](../admin/snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
 
 ### Exploit
 
@@ -232,11 +232,11 @@ Open Container Initiative. An independent body set up to facilitate collaboratio
 
 ### Organization
 
-An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](../snyk-admin/groups-and-organizations/).
+An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](../admin/groups-and-organizations/).
 
 ### Origin or source
 
-The identifier for the ecosystem that a Target exists in. Snyk can scan Projects from multiple integrations, including CLI, API, GitHub, Kubernetes, and others. See [Snyk Projects](../snyk-admin/snyk-projects/).
+The identifier for the ecosystem that a Target exists in. Snyk can scan Projects from multiple integrations, including CLI, API, GitHub, Kubernetes, and others. See [Snyk Projects](../admin/snyk-projects/).
 
 ## P
 
@@ -282,7 +282,7 @@ Snyk scores issues, including vulnerabilities and licenses for Open Source, to h
 
 ### Project
 
-An external item scanned by Snyk with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See also [Target](glossary.md#target). For details, see [Snyk Projects](../snyk-admin/snyk-projects/).
+An external item scanned by Snyk with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See also [Target](glossary.md#target). For details, see [Snyk Projects](../admin/snyk-projects/).
 
 ## R
 

@@ -30,13 +30,13 @@ Before you can deploy the Kubernetes connector in your Kubernetes clusters, be s
 
 ### Step 1: Create a Snyk Organization
 
-If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.&#x20;
+If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](../../../admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.&#x20;
 
 If you are not creating a separate Snyk Organization, continue with the next step.
 
 ### Step 2: Create a new role
 
-Follow the steps in this documentation to [create a new role](../../../snyk-admin/user-roles/user-role-management.md#create-a-role).
+Follow the steps in this documentation to [create a new role](../../../admin/user-roles/user-role-management.md#create-a-role).
 
 This example illustrates creating a new role called **Kubernetes connector**
 
@@ -44,7 +44,7 @@ This example illustrates creating a new role called **Kubernetes connector**
 
 ### Step 3: Assign permissions to this role
 
-Navigate to the newly created role and [select edit](../../../snyk-admin/user-roles/user-role-management.md#edit-a-role); you will also be taken to this page immediately after creating the role.&#x20;
+Navigate to the newly created role and [select edit](../../../admin/user-roles/user-role-management.md#edit-a-role); you will also be taken to this page immediately after creating the role.&#x20;
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.&#x20;
 

@@ -35,7 +35,7 @@ By default, Snyk emails every Org user when a new issue or fix in a Project’s 
 
 To customize the emails your Org users receive, go to **Settings** > **Notifications > Notification Setting**. The changes you make here will affect all of your Organization’s members, although Org users can override these default settings in their user-level account settings.
 
-To disable notifications for all the users in an Org ahead of your import, deselect the appropriate notification boxes. See [Manage notifications](../../../snyk-admin/manage-notifications.md) for more details.
+To disable notifications for all the users in an Org ahead of your import, deselect the appropriate notification boxes. See [Manage notifications](../../../admin/manage-notifications.md) for more details.
 
 ## Stage 2: Import Projects
 
@@ -109,11 +109,7 @@ Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabi
 
 To configure the automatic fix PR settings for all Projects in an Organization, select the relevant Organization and navigate to Organization **Settings** > **Integrations > Edit Settings.**
 
-<div align="center">
-
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure></div>
 
 {% hint style="info" %}
 Settings can also be configured per Project by selecting the specific Project in your Organization and navigating to the **Settings** tab. For more information, see [View and edit Project settings](https://docs.snyk.io/snyk-admin/snyk-projects/view-and-edit-project-settings).

@@ -13,11 +13,7 @@ The first step is to set the name of your Organization to be used by Snyk and ot
 
 ## Introduction to structure
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/determine-account-structure.png" alt="Determine your account structure" width="563"><figcaption><p>Determine your account structure</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/determine-account-structure.png" alt="Determine your account structure" width="563"><figcaption><p>Determine your account structure</p></figcaption></figure></div>
 
 Snyk uses a hierarchical approach to managing assets, access, and rollup reporting.
 
@@ -32,7 +28,7 @@ Snyk uses a hierarchical approach to managing assets, access, and rollup reporti
     In the context of Snyk Team or Free plans,  you are entitled to a single Organization. The expectation is usually to use a company name, or if there are several different teams with team plans in your company, use the company name with your team name or line of business as the name. For example, "Company - Team Name"
 * **Snyk Projects:** The targets you have tested/monitored with Snyk, such as a CLI scan, a container being monitored in registry, or open source files identified.
 
-For more details, see [Manage Groups and Organizations](../../../snyk-admin/groups-and-organizations/).
+For more details, see [Manage Groups and Organizations](../../../admin/groups-and-organizations/).
 
 {% hint style="info" %}
 If you have hundreds or thousands of repositories, consider the Snyk Enterprise plan for access to multiple organizations to restrict access, separate reporting, and manageable lists to interact with.

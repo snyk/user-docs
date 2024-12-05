@@ -9,7 +9,7 @@ coverY: 0
 Stay up to date with the [latest updates in Snyk documentation](whats-new-in-the-snyk-docs.md).
 {% endhint %}
 
-## Start using Snyk
+## Start using Snyk&#x20;
 
 <table data-header-hidden><thead><tr><th></th><th width="164.33333333333331"></th><th width="188"></th><th></th></tr></thead><tbody><tr><td>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</td><td><a href="enterprise-setup/">Enterprise configuration</a><br>Use Snyk in an enterprise system</td><td><a href="implement-snyk/">Implement Snyk</a><br>Set up Snyk to run in your business</td><td><a href="supported-languages-package-managers-and-frameworks/">Supported languages</a><br>Match your language and framework to Snyk</td></tr></tbody></table>
 
@@ -28,7 +28,7 @@ Stay up to date with the [latest updates in Snyk documentation](whats-new-in-the
 
 ## Configuration and administration <a href="#use-other-resources" id="use-other-resources"></a>
 
-<table data-header-hidden><thead><tr><th width="259"></th><th></th></tr></thead><tbody><tr><td><a href="snyk-api/">Snyk API</a><br>Extend Snyk functions with the Snyk API</td><td><a href="snyk-admin/">Snyk Admin</a><br>Manage your Snyk system</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="259"></th><th></th></tr></thead><tbody><tr><td><a href="snyk-api/">Snyk API</a><br>Extend Snyk functions with the Snyk API</td><td><a href="admin/">Snyk Admin</a><br>Manage your Snyk system</td></tr></tbody></table>
 
 ## Learning and information
 
@@ -37,5 +37,5 @@ Stay up to date with the [latest updates in Snyk documentation](whats-new-in-the
 | <p>​<a href="https://updates.snyk.io/">Snyk product updates</a><br>See the latest Snyk product information</p>                                             | <p>​<a href="https://security.snyk.io/">Snyk vulnerability DB</a><br>Our database for open source vulnerabilities</p> | <p><a href="https://status.snyk.io/">Snyk Status</a><br>Shows operational status and history for Snyk systems.</p> |
 
 {% hint style="success" %}
-[Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
+[Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support_docs_page)
 {% endhint %}

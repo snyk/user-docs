@@ -87,7 +87,7 @@ When you import a Project, Snyk scans that imported Project, and displays the re
 
 Importing a Project also does the following:
 
-* Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md).
+* Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](../admin/groups-and-organizations/usage-settings.md).
 * Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
 ## Set up Snyk AppRisk&#x20;

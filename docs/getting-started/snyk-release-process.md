@@ -27,7 +27,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Snyk GitHub Cloud App](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md)
 *   Projects
 
-    [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
+    [Automatically created Project collections](../admin/snyk-projects/automatically-created-project-collections.md)
 * Snyk Code
   * [Snyk Code custom rules](../scan-with-snyk/snyk-code/snyk-code-custom-rules/)
   * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)

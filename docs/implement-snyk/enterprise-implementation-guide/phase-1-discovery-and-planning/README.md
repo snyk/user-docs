@@ -42,7 +42,7 @@ How will you provision users and integrate Snyk with your platforms?
   * By product?&#x20;
   * By business unit?
 * If by developer teams, are there some teams that would need access to the same Projects? If yes, think about a different structure to avoid confusion.
-* How many [Snyk Organizations](../../../snyk-admin/groups-and-organizations/organizations/) do you need?&#x20;
+* How many [Snyk Organizations](../../../admin/groups-and-organizations/organizations/) do you need?&#x20;
 
 ### How will you measure success?&#x20;
 
