@@ -2,7 +2,7 @@
 
 ## Snyk support for Scala for open source
 
-Refer to the [Scala detail](./)s for supported package managers and features.
+Refer to the [Scala details](./) for supported package managers and features.
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
 
@@ -29,11 +29,11 @@ Regardless of which `sbt` version you are using, you must use the following comm
 `addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.10.0-RC1")`
 
 {% hint style="warning" %}
-Do not use the`addDependencyTreePlugin` command which the`sbt-dependency-graph`plugin docs recommend for`sbt` 1.4+. This is incompatible with the Snyk CLI. \
-Use the`addSbtPlugin()` command as given above.
+Do not use the `addDependencyTreePlugin` command which the `sbt-dependency-graph` plugin docs recommend for `sbt` 1.4+. This is incompatible with the Snyk CLI. \
+Use the `addSbtPlugin()` command as given above.
 {% endhint %}
 
-For more information on installing `sbt-dependency-graph` for use with the Snyk CLI, see the article [How to install the SBT dependency graph plugin to test Scala projects with Snyk CLI](https://support.snyk.io/s/article/How-to-install-the-SBT-dependency-graph-plugin-to-test-Scala-projects-with-Snyk-CLI-1730254476935).
+For more information on installing `sbt-dependency-graph` for use with the Snyk CLI, see the article [How to install the SBT dependency graph plugin to test Scala projects with Snyk CLI](https://support.snyk.io/s/article/How-to-install-the-SBT-dependency-graph-plugin-to-test-Scala-projects-with-Snyk-CLI).
 
 ### Git repository integration support for Scala for open source
 
