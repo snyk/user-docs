@@ -52,8 +52,8 @@ Snyk severity icons have the following meaning:
 Snyk reports the following types of issues:
 
 * **Open Source** issues: found in open source dependencies. see details in [the section below](run-an-analysis-with-the-jetbrains-plugins.md#snyk-open-source-issues).
-* **Code Security** issues: found in your application’s source code; see details in [the section below](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-issues).
-* **Code Quality** issues: found in your application source code; see details in [the section below](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-issues).
+* **Code Security** issues: found in your application’s source code; see details in [the section below](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-security-vulnerabilities-and-quality-issues).
+* **Code Quality** issues: found in your application source code; see details in [the section below](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-security-vulnerabilities-and-quality-issues).
 * **Infrastructure as Code** issues: found in infrastructure as code files; see details in [the section below](run-an-analysis-with-the-jetbrains-plugins.md#snyk-infrastructure-as-code-issues).
 * **Container** issues: found in images sourced from Kubernetes workload files; see details in [the section below](run-an-analysis-with-the-jetbrains-plugins.md#snyk-container-issues).
 
@@ -96,13 +96,19 @@ In advanced cases, developers may change their base branch by following these st
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-nfhj.png" alt="Change base branch for calculation Net New issues"><figcaption><p>Change base branch for calculation Net New issues</p></figcaption></figure>
 
-## Available Snyk issues types
+## Available Snyk issue types
 
-### Snyk Code issues
+### Snyk Code security vulnerabilities and quality issues
 
-Snyk Code analysis shows a list of security vulnerabilities and code issues found in your application code. For more details and examples of fixes others used to fix the issue, select the security vulnerability or the code security issue.
+Snyk Code analysis shows a list of security vulnerabilities and code quality issues found in your application code.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-npba.png" alt="Snyk Code issue details"><figcaption><p>Snyk Code issue details</p></figcaption></figure>
+{% hint style="info" %}
+Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be provided.
+{% endhint %}
+
+For more details and examples of fixes others used to fix the issue, select the security vulnerability or the code security issue.
+
+<figure><img src="../../../.gitbook/assets/SCR-20241024-npba.png" alt=""><figcaption><p>Snyk Code issue details</p></figcaption></figure>
 
 ### Snyk Open Source issues
 
@@ -119,7 +125,7 @@ With every scan, Snyk IaC analysis shows issues in your Terraform, Kubernetes, A
 ### Snyk Container issues
 
 {% hint style="info" %}
-This is an experimental feature, that is likely to change.
+The Snyk JetBrains IDE plugin will no longer detect container images specified in Kubernetes YAML files in versions released after June 24, 2025.
 {% endhint %}
 
 The JetBrains plugin scans Kubernetes configuration files and searches for container images. Vulnerabilities are found quickly using the extracted container images and comparative analysis against the latest information from the [Snyk Vulnerability Database](https://security.snyk.io).

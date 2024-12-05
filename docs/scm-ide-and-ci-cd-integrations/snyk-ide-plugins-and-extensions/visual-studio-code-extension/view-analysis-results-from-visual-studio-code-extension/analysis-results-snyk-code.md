@@ -1,8 +1,12 @@
 # Analysis results: Snyk Code
 
-Snyk Code analysis shows Security and Quality issues in your code with every scan. The scan runs in the background and is enabled by default.
+Snyk Code analysis shows security vulnerabilities and quality issues in your code with every scan.
 
-On the **Problems** tab of the Visual Studio Code results screen, you can see all Code issues found in your project.
+{% hint style="info" %}
+Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be provided.
+{% endhint %}
+
+On the **Problems** tab of the Visual Studio Code results screen, you can see all Code issues found in your Project.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-17 at 13.41.55.png" alt="Visual Studio Code Problems tab"><figcaption><p>Visual Studio Code Problems tab</p></figcaption></figure>
 

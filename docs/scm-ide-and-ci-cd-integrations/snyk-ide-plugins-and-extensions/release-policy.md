@@ -4,7 +4,7 @@ description: >-
   maturity.
 ---
 
-# Snyk IDE plugins release policy
+# Release and Support policy for Snyk IDE plugins
 
 This page details the release policy for Snyk IDE plugins.
 
@@ -27,6 +27,20 @@ Examples of **breaking** changes include the following:
 * Deprecating features that produced findings before, which means users will get fewer findings after the release.
 * Introducing new features that might introduce new findings.
 * Introducing mandatory configuration changes that might affect the number of findings.
+
+## Support policy
+
+{% hint style="info" %}
+This policy will be effective beginning on June 24, 2025.
+{% endhint %}
+
+Snyk supports the latest 12 months of plugin versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.&#x20;
+
+Snyk only provides fixes in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.&#x20;
+
+This policy fosters innovation while optimizing resources.
+
+If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
 
 ## Preview builds
 

@@ -1,6 +1,6 @@
 # Releases and channels for the Snyk CLI
 
-This page describes Snyk CLI releases and channels, and also explains how to opt-in to a channel from the IDE.
+This page describes Snyk CLI releases and support policy, and also explains how to opt-in to different channels and the purpose of each channel.
 
 ## Releases
 
@@ -76,6 +76,20 @@ However, customers who would like to receive code changes as soon they are merge
 {% hint style="info" %}
 Existing Snyk customers who are opted in to the previously known latest channel will be automatically opted in to the stable channel. Snyk is mirroring the latest channel and the stable channel to avoid disruption to existing customers. However, Snyk encourages you to switch to the new channels as shown above.
 {% endhint %}
+
+## Support policy
+
+{% hint style="info" %}
+This policy will be effective beginning on June 24, 2025.
+{% endhint %}
+
+Snyk supports the latest 12 months of CLI versions in the stable channel, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or support for troubleshooting.&#x20;
+
+Snyk provides fixes only in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.&#x20;
+
+This policy fosters innovation while optimizing resources.
+
+If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
 
 ## Install standalone executables from a channel
 

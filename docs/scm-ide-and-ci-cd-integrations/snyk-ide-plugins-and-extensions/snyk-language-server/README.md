@@ -174,6 +174,16 @@ An initial set of trusted folders can be provided by setting `trustedFolders` to
 
 Snyk collects telemetry from IDE plugins and CLI. For details, see [IDE and CLI usage telemetry](ide-and-cli-usage-telemetry.md).
 
-## Support for Snyk Language Server
+## Support policy for Snyk Language Server
+
+{% hint style="info" %}
+This policy will be effective beginning on June 24, 2025.
+{% endhint %}
+
+Snyk supports the latest 12 months of LS versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.&#x20;
+
+Snyk only provides fixes in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.&#x20;
+
+This policy fosters innovation while optimizing resources.
 
 If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
