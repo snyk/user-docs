@@ -1317,9 +1317,15 @@ paths:
                   - example:
                       requestAccess:
                         enabled: true
+                      ignores:
+                        reasonRequired: false
+                        autoApproveIgnores: false
               example:
                 requestAccess:
                   enabled: true
+                ignores:
+                  reasonRequired: false
+                  autoApproveIgnores: false
       deprecated: false
     put:
       tags:
@@ -13855,6 +13861,7 @@ components:
         requestAccess:
           allOf:
             - $ref: '#/components/schemas/requestAccess1'
+            - $ref: '#/components/schemas/orgIgnoreSettings'
             - description: Will only be returned if `API_KEY` has read access to request access settings.
     Orgsettingsrequest:
       title: Orgsettingsrequest
@@ -18809,6 +18816,19 @@ components:
           description: Whether requesting access to the organization is enabled.
           example: true
       description: Will only be returned if `API_KEY` has read access to request access settings.
+    orgIgnoreSettings:
+      title: orgIgnoreSettings
+      type: object
+      properties:
+        autoApproveIgnores:
+          type: boolean
+          description: Whether pending ignores can be auto-approved.
+          example: false
+        reasonRequired:
+          type: boolean
+          description: Whether a reason is required for creating ignores.
+          example: false
+      description: Will only be returned if `API_KEY` has read access to ignore settings.
     requestAccess2:
       title: requestAccess2
       required:
