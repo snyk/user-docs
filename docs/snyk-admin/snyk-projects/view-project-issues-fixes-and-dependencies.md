@@ -24,30 +24,18 @@ Snyk provides features to fix issues identified during scanning. See [Fix your v
 
 Click on an issue to view details, including its [priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md).
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.43.14.png" alt="View issue details"><figcaption><p>View issue details</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.43.14.png" alt="View issue details"><figcaption><p>View issue details</p></figcaption></figure></div>
 
 * Click **Learn about this type of vulnerability** for [Snyk Learn](../../getting-started/snyk-learn/) training.
 * Click **Show more detail** to view detailed information about the vulnerability from the [Snyk Vulnerability database](https://snyk.io/product/vulnerability-database/):
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.47.54.png" alt="More information from Snyk Vulnerability Database"><figcaption><p>More information from the Snyk Vulnerability Database</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.47.54.png" alt="More information from Snyk Vulnerability Database"><figcaption><p>More information from the Snyk Vulnerability Database</p></figcaption></figure></div>
 
 ## View fixes
 
 Snyk knowledge of the transitive dependencies in your Project makes it possible for Snyk to provide fix advice on the **Fixes** tab:
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Project details Fixes tab</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Project details Fixes tab</p></figcaption></figure></div>
 
 See [Fix your vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
@@ -57,8 +45,4 @@ Snyk uses the package manager for your application to build the dependency tree 
 
 An example follows:
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.57.23.png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.57.23.png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure></div>

@@ -15,13 +15,13 @@ Available functions:
 * Test your app's SBOM using`pkg:cargo`&#x20;
 * Test your app's packages using`pkg:cargo`
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports Cargo as a package manager and [crates.io](https://crates.io/) as a package registry.
+Snyk for Rust supports Cargo as a package manager and [crates.io](https://crates.io/) as a package registry and does not support any file formats.
 
 ## Frameworks and libraries
 
-This language does not have any frameworks and libraries supported.
+Snyk for Rust does not have any frameworks and libraries supported.
 
 ## Features
 

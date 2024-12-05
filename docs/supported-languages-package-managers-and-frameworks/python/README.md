@@ -10,22 +10,31 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
-* SCM import. For Python used with Snyk Open Source, the SCM import is available for Pip, pipenv, and Poetry.
-* Test or monitor your app through CLI and IDE.
+* SCM import, available for Snyk Open Source and Snyk Code. For Python used with Snyk Open Source, the SCM import is available for Pip, pipenv, and Poetry.
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM using pkg:pypi
 * Test your app's packages using pkg:pypi
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports Pip, Poetry, pipenv, and setup.py as package managers. For the list of supported Python versions, check the [Git repositories and Python](git-repositories-and-python.md) page.
+Snyk for Python supports Pip, Poetry, pipenv, and setup.py as package managers. For the list of supported Python versions, check the [Git repositories and Python](git-repositories-and-python.md) page.
 
 As a package registry, [pypi.org](https://pypi.org/) is supported.
+
+Snyk for Python supports the following file formats:
+
+* Snyk Open Source:
+  * For poetry: `pyproject.toml`, `poetry.lock`
+  * For pip: `requirements.txt`
+  * For pipenv: `pipfile`, `pipfile.lock`
+  * For setup.py: `setup.py`
+* Snyk Code: `.py`
 
 ## Frameworks and libraries
 
 The following frameworks and libraries are supported in Snyk for Python:&#x20;
 
-* AioHTTP - Comprehensive a
+* AioHTTP - Comprehensive
 * iopg - Comprehensive&#x20;
 * argparse - Comprehensive&#x20;
 * anthropic - Comprehensive&#x20;
@@ -69,11 +78,9 @@ The following frameworks and libraries are supported in Snyk for Python:&#x20;
 
 The following features are supported in Snyk for Python:
 
-* Fix PRs&#x20;
-* License scanning&#x20;
-* Reports
-* Custom rules
-* Interfile analysis
+| Snyk Open Source                                                     | Snyk Code                                                                 |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <ul><li>Fix PRs </li><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
 
 ## Python version support
 

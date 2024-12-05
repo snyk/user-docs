@@ -10,18 +10,22 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
-* SCM import. If you use .NET for Snyk Open Source, then the SMC import is only available when used with NuGet.
-* Test or monitor your app through CLI and IDE.
-* Test your app's SBOM using `pkg:nuget`&#x20;
-* Test your app's packages using`pkg:nuget`
+* SCM import available for Snyk Open Source and Snyk Code. If you use .NET for Snyk Open Source, then the SCM import is only available when used with NuGet.
+* Test or monitor your app through CLI and IDE, available for both Snyk Open Source and Snyk Code.
+* Test your app's SBOM using `pkg:nuget`
+* Test your app's packages using `pkg:nuget`
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports NuGet and Paket as package managers and [nuget.org](https://www.nuget.org/) as a package registry.
+Snyk for .NET supports NuGet and Paket as package managers and [nuget.org](https://www.nuget.org/) as a package registry and supports the following file formats:
+
+* Snyk Open Source:
+  * For NuGet: `project.assets.json`, `*.sln`, `packages.config,` `project.json`
+  * For Paket: `paket.dependencies`, `paket.lock`
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for .NET:&#x20;
+The following frameworks and libraries are supported in Snyk for .NET: (only code)
 
 * .NET 6 - Comprehensive&#x20;
 * .NET Core - Comprehensive&#x20;
@@ -41,9 +45,6 @@ The following frameworks and libraries are supported in Snyk for .NET:&#x20;
 
 The following features are supported in Snyk for .NET:
 
-* Fix PRs (NuGet)&#x20;
-* License scanning&#x20;
-* Reports
-* Custom rules&#x20;
-* Interfile analysis
-
+| Snyk Open Source                                                             | Snyk Code                                                                  |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| <ul><li>Fix PRs (NuGet) </li><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules </li><li>Interfile analysis</li></ul> |

@@ -14,14 +14,17 @@ You can use versions 2.x.
 
 Available functions:
 
-* SCM import.&#x20;
-* Test or monitor your app through CLI and IDE.
+* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM using `pkg:maven`
 * Test your app's packages using `pkg:maven`
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports sbt as package manager and [maven.org](https://maven.org/) as a package registry.
+Snyk for Scala supports sbt as a package manager and [maven.org](https://maven.org/) as a package registry and supports the following file formats:
+
+* Snyk Open Source: `build.sbt`
+* Snyk Code: `.scala`
 
 ## Frameworks and libraries
 
@@ -38,6 +41,6 @@ The following frameworks and libraries are supported in Snyk for Scala:&#x20;
 
 The following features are supported in Snyk for Scala:
 
-* License scanning&#x20;
-* Reports
-* Interfile analysis
+| Snyk Open Source                                    | Snyk Code                                            |
+| --------------------------------------------------- | ---------------------------------------------------- |
+| <ul><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Interfile analysis</li></ul> |

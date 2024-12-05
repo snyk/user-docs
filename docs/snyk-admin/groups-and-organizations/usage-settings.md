@@ -13,11 +13,7 @@ For more information about test frequency settings, see [Project actions](../sny
 
 The **Test Usage** section shows how many tests you are using over the current billing period:
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/test-usage.png" alt="Test usage data" width="563"><figcaption><p>Test usage data</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/test-usage.png" alt="Test usage data" width="563"><figcaption><p>Test usage data</p></figcaption></figure></div>
 
 {% hint style="info" %}
 Test limits vary for Snyk products and plans.

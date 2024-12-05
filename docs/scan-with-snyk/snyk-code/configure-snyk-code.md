@@ -21,13 +21,13 @@ Before scanning your code with Snyk Code, ensure the following:
 
 ### Prerequisites
 
-To enable Snyk Code in your Organization, you need to be an [Org Admin](../../admin/user-roles/pre-defined-roles.md).
+To enable Snyk Code in your Organization, you need to be an [Org Admin](../../snyk-admin/user-roles/pre-defined-roles.md).
 
 ### Enable Snyk Code&#x20;
 
 If you've already set up an integration for the first time and enabled Snyk Code, you can check if the setting is still valid before importing repositories.
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../snyk-admin/groups-and-organizations/).
 2. Navigate to **Settings** > **Snyk Code**.
 3. In the **Enable Snyk Code** section, change the setting to **Enabled**.
 4. Click **Save changes**.

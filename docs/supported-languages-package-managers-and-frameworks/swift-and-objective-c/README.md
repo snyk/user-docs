@@ -14,14 +14,21 @@ You can use versions up to 5.7.x.
 
 Available functions:
 
-* SCM import. If used with Snyk Open Source, then the SCM import is available for CocoaPods.
-* Test or monitor your app through CLI and IDE.
+* SCM import, available for Snyk Open Source and Snyk Code. If used with Snyk Open Source, then the SCM import is available for CocoaPods.
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM using `pkg:swift`, `pkg:cocoapods`
 * Test your app's packages using `pkg:swift`, `pkg:cocoapods`
 
-## Package managers
+## Package managers and Supported files
 
-This language supports CocoaPods, Swift Package Manager v3.0 or higher as package managers and it uses multiple sources including [cocoapods.org](https://cocoapods.org/) [maven.org](https://maven.org/) for package registry.
+Snyk for Swift and Objective-C supports CocoaPods, Swift Package Manager v3.0 or higher as package managers and it uses multiple sources including [cocoapods.org](https://cocoapods.org/) [maven.org](https://maven.org/) for package registry.
+
+Snyk for Swift and Objective-C supports the following file formats:
+
+* Snyk Open Source:&#x20;
+  * For CocoaPods: `podfile`, `podfile.lock`,&#x20;
+  * For Swift: `package.swift`
+* Snyk Code: .`swift`
 
 ## Frameworks and libraries
 
@@ -58,6 +65,6 @@ The following frameworks and libraries are supported in Snyk for Swift and Objec
 
 The following features are supported in Snyk for Swift and Objective-C:
 
-* License scanning (CocoaPods)&#x20;
-* Reports
-* Interfile analysis
+| Snyk Open Source                                                | Snyk Code                                            |
+| --------------------------------------------------------------- | ---------------------------------------------------- |
+| <ul><li>License scanning (CocoaPods) </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Interfile analysis</li></ul> |

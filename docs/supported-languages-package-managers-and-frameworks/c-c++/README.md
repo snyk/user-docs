@@ -11,15 +11,18 @@ Check the language availability to be imported as an application, tested, or mon
 Available functions:
 
 * SCM import is available only for Snyk Code.&#x20;
-* Test or monitor your app through CLI and IDE.&#x20;
+* Test or monitor your app through CLI and IDE for both Snyk Open Source and Snyk Code.  &#x20;
 * Test your app's SBOM using `pkg:generic.`&#x20;
 * Test your app's packages using `pkg:generic.`
 
 For Snyk IDE, no additional options are required. The Snyk plugin has views within the IDE for displaying results.
 
-## Package managers
+## Package managers and supported file extensions
 
-This language does not support any pack managers.
+Snyk for C/C++ does not support any package managers but supports the following file formats:
+
+* Snyk Open Source: N/A
+* Snyk Code: `.c`, `.cc`, `.cpp`, `.cxx`, `.`h, `.hpp`, `.hxx`
 
 ## Frameworks and libraries
 
@@ -53,8 +56,8 @@ The following frameworks and libraries are supported in Snyk for C/C++:
 
 The following features are supported in Snyk for C/C++:
 
-* License scanning (Snyk Open Source)
-* Reports (Snyk Open Source)
-* Interfile analysis (Snyk Code)
+| Snyk Open Source                                   | Snyk Code          |
+| -------------------------------------------------- | ------------------ |
+| <ul><li>License scanning</li><li>Reports</li></ul> | Interfile analysis |
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;

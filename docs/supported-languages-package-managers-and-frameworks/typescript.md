@@ -14,20 +14,28 @@ You can use versions up to 4.2.
 
 Available functions:
 
-* SCM import
-* Test or monitor your app through CLI and IDE
+* SCM import, available for Snyk Open Source and Snyk Code.
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM: using `pkg:npm`&#x20;
 * Test your app's packages using `pkg:npm`
 
-## Package managers
+## Package managers and Supported files
 
-This language supports npm, pnpm, Yarn as package managers with the following versions for them:&#x20;
+Snyk for TypeScript supports npm, pnpm, Yarn as package managers with the following versions for them:&#x20;
 
 * npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3, 7.*`&#x20;
 * pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`&#x20;
 * Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
 
 As a package registry, it supports [npmjs.org](https://www.npmjs.org/).
+
+Snyk for TypeScript supports the following file formats:
+
+* Snyk Open Source:&#x20;
+  * For npm: `package.json`, `package-lock.json`
+  * For pnpm: `pnpm-lock.yaml`,&#x20;
+  * For yarn: `yarn.lock`
+* Snyk Code: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`
 
 ## Frameworks and libraries
 
@@ -108,7 +116,6 @@ The following frameworks and libraries are supported in Snyk for TypeScript:&#x2
 
 The following features are supported in Snyk for TypeScript:
 
-* License scanning&#x20;
-* Reports
-* Custom rules
-* Interfile analysis
+| Snyk Open Source                                    | Snyk Code                                                                 |
+| --------------------------------------------------- | ------------------------------------------------------------------------- |
+| <ul><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |

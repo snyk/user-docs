@@ -16,7 +16,7 @@ Using this option requires paid professional services and cannot be completed us
 
 ## How to provision users through the API
 
-The [Provision user endpoints in the Snyk API](../../../admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md) allow you to grant Organization-level access and permissions to users before they log in to the Snyk platform.&#x20;
+The [Provision user endpoints in the Snyk API](../../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md) allow you to grant Organization-level access and permissions to users before they log in to the Snyk platform.&#x20;
 
 API provisioning also allows you to limit Organization access and assign custom member roles. This allows you to control:
 

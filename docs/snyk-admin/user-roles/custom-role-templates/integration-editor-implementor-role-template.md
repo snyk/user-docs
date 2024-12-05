@@ -84,4 +84,3 @@ The remaining categories of permissions listed below should have all permissions
 * Snyk Cloud management
 * Snyk Preview management
 * User management
-

@@ -13,9 +13,12 @@ Available functions:
 
 For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
-## Package managers
+## Package managers and supported file extensions
 
-This language does not support any pack managers.
+Snyk for Apex does not support any package managers but supports the following file formats:
+
+* Snyk Open Source: N/A
+* Snyk Code: `.cls`, `.trigger`, `.tgr`
 
 ## Frameworks and libraries
 
@@ -26,7 +29,6 @@ The following frameworks and libraries are supported in Snyk for Apex: Apex Stan
 The following features are supported in Snyk for Apex:
 
 * Support for Interfile analysis
-* Support for `.trigger, .tgr` and `.cls` files
 * Custom rules
 * Reports
 * Interfile analysis

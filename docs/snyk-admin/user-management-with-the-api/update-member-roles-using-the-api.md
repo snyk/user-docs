@@ -1,4 +1,4 @@
-# Update member roles using the Snyk API
+# Update member roles using the API
 
 To migrate members of existing organizations to new roles, you must use the API. Follow the steps in each section of this document.
 

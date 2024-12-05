@@ -8,14 +8,21 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
-* SCM import.&#x20;
-* Test or monitor your app through CLI and IDE.
+* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM using `pkg:golang`&#x20;
 * Test your app's packages using `pkg:golang`
 
-## Package managers
+## Package managers and supported file extensions
 
-Go for Snyk supports Go Modules and dep as package managers, and the package registry uses multiple sources.
+Snyk for Go supports Go Modules and dep as package managers, and the package registry uses multiple sources.
+
+Snyk for Go supports the following file formats:
+
+* Snyk Open:
+  * For Go Modules: `go.mod`
+  * For dep: `gopkg.lock`
+* Snyk Code: `.go`
 
 ## Frameworks and libraries
 
@@ -34,6 +41,14 @@ The following frameworks and libraries are supported in Snyk for Go:&#x20;
 ## Features
 
 The following features are supported in Snyk for Go:
+
+| Snyk Open Source                                   | Snyk Code                                                                 |
+| -------------------------------------------------- | ------------------------------------------------------------------------- |
+| <ul><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
+|                                                    |                                                                           |
+|                                                    |                                                                           |
+
+
 
 * License scanning&#x20;
 * Custom rules

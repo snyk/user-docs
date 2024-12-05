@@ -8,23 +8,24 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
-* Test or monitor your app through CLI and IDE &#x20;
+* Import your app through SCM: N/A
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source.&#x20;
 * Test your app's SBOM using `pkg:hex`&#x20;
 * Test your app's packages using `pkg:hex`
 
 For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) as a package manager and [hex.pm](https://hex.pm/) as a package registry.&#x20;
+Snyk for Elixir supports [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) as a package manager and [hex.pm](https://hex.pm/) as a package registry and does not support any file formats.
 
 ## Frameworks and libraries
 
-This language does not have any available frameworks and libraries.&#x20;
+Snyk for Elixir does not have any available frameworks and libraries.&#x20;
 
 ## Features
 
-The Reports feature is supported by Elixir for Snyk.&#x20;
+The Reports feature is supported by Snyk for Elixir.&#x20;
 
 ## Snyk CLI for Elixir
 

@@ -2,7 +2,7 @@
 
 ## Use default or custom roles?
 
-A key consideration when setting up Snyk is determining if the [pre-defined user roles](../../../admin/user-roles/pre-defined-roles.md) align with your needs or if you need to customize roles for your business requirements.
+A key consideration when setting up Snyk is determining if the [pre-defined user roles](../../../snyk-admin/user-roles/pre-defined-roles.md) align with your needs or if you need to customize roles for your business requirements.
 
 {% hint style="info" %}
 The pre-defined user roles in Snyk have a fixed set of permissions that cannot be changed. One of the biggest advantages of customizing roles is that you can adjust the role permissions to align with your desired level of control.&#x20;
@@ -10,7 +10,7 @@ The pre-defined user roles in Snyk have a fixed set of permissions that cannot b
 
 ## Pre-defined roles
 
-The following are the standard pre-defined user roles. See [Pre-defined roles](../../../admin/user-roles/pre-defined-roles.md) for more details.
+The following are the standard pre-defined user roles. See [Pre-defined roles](../../../snyk-admin/user-roles/pre-defined-roles.md) for more details.
 
 * **Group Member**: a non-functional role in Snyk. The user can access the Group but requires Organization-level permissions to use Snyk.
 * **Group Viewer**: a user that can access the Group level but requires Organization-level permissions to take actions in Snyk. This is normally used as a starting point during onboarding with Snyk to understand functions tied to Group permissions and design a custom Group role for post-deployment use.
@@ -24,8 +24,8 @@ Large enterprises typically limit access to actions such as who can add or delet
 
 ## Custom roles
 
-The [User role management](../../../admin/user-roles/user-role-management.md) feature provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce customized access by assigning a set of permissions to a role that will be granted to users. The permissions within these roles can be updated and changed even after assigning them to users.
+The [User role management](../../../snyk-admin/user-roles/user-role-management.md) feature provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce customized access by assigning a set of permissions to a role that will be granted to users. The permissions within these roles can be updated and changed even after assigning them to users.
 
 As with all pre-defined roles, the permissions within the **Organization Collaborator** role cannot be changed, so you cannot grant the developers the ability to **Mark SCM Check as Successful**. This pre-defined role can be helpful when introducing developers to Snyk PR Checks but cannot be expanded when a developer is fully functioning in a Snyk environment. This is where Custom Roles are useful.
 
-The most common types of custom roles include [Team Lead](../../../admin/user-roles/custom-role-templates/team-lead-role-template.md) and [Developer](../../../admin/user-roles/custom-role-templates/developer-role-template.md), but your company can have custom roles that suit your business structure. Snyk has provided multiple templates for you to use in structuring your Enterprise in Snyk; for more custom role suggestions and the listed permissions, see [Custom role templates](../../../admin/user-roles/custom-role-templates/).
+The most common types of custom roles include [Team Lead](../../../snyk-admin/user-roles/custom-role-templates/team-lead-role-template.md) and [Developer](../../../snyk-admin/user-roles/custom-role-templates/developer-role-template.md), but your company can have custom roles that suit your business structure. Snyk has provided multiple templates for you to use in structuring your Enterprise in Snyk; for more custom role suggestions and the listed permissions, see [Custom role templates](../../../snyk-admin/user-roles/custom-role-templates/).

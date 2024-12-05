@@ -10,11 +10,7 @@ You must have the permissions required to perform these tasks. For details, see 
 
 To add new users to your Organization, click **Add members**:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-02-24 at 12.51.45 PM.png" alt="Add members to your Organization"><figcaption><p>Add members to your Organization</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Screen Shot 2022-02-24 at 12.51.45 PM.png" alt="Add members to your Organization"><figcaption><p>Add members to your Organization</p></figcaption></figure></div>
 
 You can do the following on the **Add members** screen:
 
@@ -66,11 +62,7 @@ Follow these steps to delete a member from the Organization:
 
 Click the filter icon to expand the filter sidebar and then choose to filter the members displayed by role or authentication method:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-08-23 at 10.11.33.png" alt="Filter members by role or by authentication method" width="186"><figcaption><p>Filter members by role or by authentication method</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2023-08-23 at 10.11.33.png" alt="Filter members by role or by authentication method" width="186"><figcaption><p>Filter members by role or by authentication method</p></figcaption></figure></div>
 
 ### Sort views
 

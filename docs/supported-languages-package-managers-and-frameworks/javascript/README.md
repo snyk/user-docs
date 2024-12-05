@@ -16,22 +16,30 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
-* SCM import
-* Test or monitor your app through CLI and IDE
+* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM: using `pkg:npm`&#x20;
 * Test your app's packages using `pkg:npm`
 
 For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports npm, pnpm, Yarn as package managers with the following versions for them:&#x20;
+Snyk for JavaScript supports npm, pnpm, and Yarn as package managers with the following versions for them:&#x20;
 
 * npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3, 7.*`&#x20;
 * pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`&#x20;
 * Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
 
 As a package registry, it supports [npmjs.org](https://www.npmjs.org/).
+
+Snyk for JavaScript supports the following file formats:
+
+* Snyk Open Source:&#x20;
+  * For npm package manager: `package.json`, `package-lock.json`
+  * For pnpm package manager: `pnpm-lock.yaml`,&#x20;
+  * For yarn package manager: `yarn.lock`
+* Snyk Code: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`
 
 ## Frameworks and libraries
 
@@ -111,10 +119,8 @@ The following frameworks and libraries are supported in Snyk for JavaScript:&#x2
 
 The following features are supported in Snyk for JavaScript:
 
-* Fix PRs&#x20;
-* License scanning&#x20;
-* Reports
-* Custom rules&#x20;
-* Interfile analysis
+| Snyk Open Source                                                     | Snyk Code                                                                  |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| <ul><li>Fix PRs </li><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules </li><li>Interfile analysis</li></ul> |
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;

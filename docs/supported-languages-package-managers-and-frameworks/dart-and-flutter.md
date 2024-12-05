@@ -8,20 +8,22 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
+* Import your app through SCM: N/A
+* Test or monitor your app through CLI and IDE: N/A
 * Test your app's SBOM using `pkg:pub`&#x20;
 * Test your app's packages using `pkg:pub`
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports Pub as a package manager and [pub.dev](https://pub.dev/) as a package registry.
+Snyk for Dart and Flutter supports Pub as a package manager and [pub.dev](https://pub.dev/) as a package registry and does not support any file formats.
 
 ## Frameworks and libraries
 
-There are no supported frameworks and libraries for this language.&#x20;
+Snyk for Dart and Flutter does not support frameworks and libraries.&#x20;
 
 ## Features
 
-There are no supported features for this language.&#x20;
+Snyk for Dart and Flutter does not support any Snyk features.&#x20;
 
 ## Testing pub packages using the API
 
@@ -29,7 +31,7 @@ There are no supported features for this language.&#x20;
 The Snyk API is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Snyk supports the testing of open-source packages from the Pub package manager using the API endpoint [List issues for a package](../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues):  &#x20;
+Snyk supports the testing of open-source packages from the Pub package manager using the API endpoint [List issues for a package](../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues):  &#x20;
 
 ```
 GET /orgs/{org_id}/packages/{purl}/issues endpoint

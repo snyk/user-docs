@@ -18,19 +18,28 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
-* SCM import.&#x20;
-* Test or monitor your app through CLI and IDE.
+* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM using `pkg:maven`&#x20;
 * Test your app's packages using `pkg:maven`
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports Maven and Gradle as package managers and [maven.org](https://maven.org/) as a package registry.&#x20;
+Snyk for Java and Kotlin supports Maven and Gradle as package managers and [maven.org](https://maven.org/) as a package registry.&#x20;
 
 Use any of the following versions:
 
 * Maven: `3.*.` For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).&#x20;
 * Gradle: `4.*`, `5.*`, `6.*`, `7.*, 8.*.` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+
+Snyk for Java and Kotlin supports the following file formats:
+
+* Snyk Open:&#x20;
+  * Maven: `pom.xml`
+  * Gradle: `build.gradle`, `build.gradle.kts`
+* Snyk Code:
+  * Java: `.java`, `.jsp`, `.jspx`
+  * Kotlin: `.kt`
 
 ## Frameworks and libraries
 
@@ -98,12 +107,10 @@ Kotlin only:
 
 ## Features
 
-The following features are supported in Snyk for Apex:
+The following features are supported in Snyk for Java and Kotlin:
 
-* Fix PRs (Maven)&#x20;
-* License scanning&#x20;
-* Reports
-* Custom rules&#x20;
-* Interfile analysis
+| Snyk Open Source                                                             | Snyk Code                                                                                                                                                    |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <ul><li>Reports</li><li>Fix PRs (Maven) </li><li>License scanning </li></ul> | <ul><li>Reports</li><li>Custom rules </li><li>Interfile analysis - Kotlin fully supported</li><li>Interfile analysis - Android partially supported</li></ul> |
 
 If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;

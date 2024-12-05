@@ -62,13 +62,13 @@ The context columns help to understand the wider meaning of the issue’s impact
 
 * **ORG NAME** - The Snyk Organization name.
 * **PROJECT COLLECTION** - Project collections are static collections of Projects.
-* **PROJECT CRITICALITY** - Business criticality of the Project. For details, see  [Project attributes](../../admin/snyk-projects/project-attributes.md).
-* **PROJECT ENVIRONMENT** - The environment of the Project. For details, see  [Project attributes](../../admin/snyk-projects/project-attributes.md).
-* **PROJECT LIFECYCLE** - Project’s lifecycle. For details, see  [Project attributes](../../admin/snyk-projects/project-attributes.md).
+* **PROJECT CRITICALITY** - Business criticality of the Project. For details, see  [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md).
+* **PROJECT ENVIRONMENT** - The environment of the Project. For details, see  [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md).
+* **PROJECT LIFECYCLE** - Project’s lifecycle. For details, see  [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md).
 * **PROJECT NAME** - The Project name.
 * **PROJECT ORIGIN** - The Project’s source of integration; can be the name of the originating SCM, Container registry, and so on.
 * **PROJECT OWNER** - A user that is defined as the Project’s owner.
-* **PROJECT TAGS** - Tags that are associated with the Project. For details, see [Project tags](../../admin/snyk-projects/project-tags.md).
+* **PROJECT TAGS** - Tags that are associated with the Project. For details, see [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md).
 * **PROJECT TARGET** - The Target name.
 * **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](../../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md).
 * **PROJECT TYPE** - The package manager of the Project.

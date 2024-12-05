@@ -73,7 +73,7 @@ npm install --lockfile-version=2
 
 Snyk CLI pnpm support is in Early Access.
 
-Enable it using [Snyk Preview](../../admin/snyk-preview.md) and install CLI v1.1293.0 or later.
+Enable it using [Snyk Preview](../../snyk-admin/snyk-preview.md) and install CLI v1.1293.0 or later.
 {% endhint %}
 
 The following table shows a matrix of pnpm versions and Snyk features availability.

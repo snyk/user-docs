@@ -28,7 +28,7 @@ Stay up to date with the [latest updates in Snyk documentation](whats-new-in-the
 
 ## Configuration and administration <a href="#use-other-resources" id="use-other-resources"></a>
 
-<table data-header-hidden><thead><tr><th width="259"></th><th></th></tr></thead><tbody><tr><td><a href="snyk-api/">Snyk API</a><br>Extend Snyk functions with the Snyk API</td><td><a href="admin/">Snyk Admin</a><br>Manage your Snyk system</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="259"></th><th></th></tr></thead><tbody><tr><td><a href="snyk-api/">Snyk API</a><br>Extend Snyk functions with the Snyk API</td><td><a href="snyk-admin/">Snyk Admin</a><br>Manage your Snyk system</td></tr></tbody></table>
 
 ## Learning and information
 

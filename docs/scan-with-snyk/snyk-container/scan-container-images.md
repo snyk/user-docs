@@ -22,7 +22,7 @@ For more information, see [Getting started](../../getting-started/).
 In the **Projects** tab, you can see vulnerability results for Snyk Projects that you have imported. The imported Projects are grouped into **Targets**.
 
 {% hint style="info" %}
-You can see the history of all the repositories and container registry images imported into an Organization. For details, see [Import Log](../../admin/snyk-projects/import-log.md).
+You can see the history of all the repositories and container registry images imported into an Organization. For details, see [Import Log](../../snyk-admin/snyk-projects/import-log.md).
 {% endhint %}
 
 To see vulnerability information for that Project, select an imported Project from the target list.

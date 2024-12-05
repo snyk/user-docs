@@ -50,7 +50,7 @@ The Risk model results from extensive research conducted by the Snyk Security Da
 
 Objective impact factors are the CVSS impact metrics, Availability, Confidentiality, Integrity, and Scope, calculated based on the CVSS impact subscore. For Container issues, Provider Urgency is also taken into account.&#x20;
 
-The business criticality Project attribute will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore. For more information, see [Project attributes](../../admin/snyk-projects/project-attributes.md).
+The business criticality Project attribute will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore. For more information, see [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md).
 
 ### Likelihood subscore&#x20;
 
@@ -122,7 +122,7 @@ Provider Urgency affects the Likelihood subscore.&#x20;
 
 **Business criticality**&#x20;
 
-User-defined Project attribute representing the subjective business impact of the respective application. For more information, see [Project attributes](../../admin/snyk-projects/project-attributes.md).
+User-defined Project attribute representing the subjective business impact of the respective application. For more information, see [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md).
 
 | Possible input value | Score impact                             |
 | -------------------- | ---------------------------------------- |

@@ -8,16 +8,19 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
-* SCM import.&#x20;
-* Test or monitor your app through CLI and IDE.
+* SCM import, available for Snyk Code.&#x20;
+* Test or monitor your app through CLI and IDE, available for Snyk Code.&#x20;
 
-## Package managers
+## Package managers and Supported files
 
-This language does not support any package manager.
+Snyk for VB.NET does not support any package manager but supports the following file formats:
+
+* Snyk Open Source: N/A
+* Snyk Code: `.vb`
 
 ## Frameworks and libraries
 
-This language supports the following frameworks and libraries:
+Snyk for VB.NET supports the following frameworks and libraries:
 
 * .NET Core - Comprehensive&#x20;
 * .NET Framework 4.6-4.8.x - Comprehensive&#x20;

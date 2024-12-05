@@ -16,7 +16,7 @@ A Snyk **environment** is an organizing concept that equates to the following:
 * For IaC+ environments: an SCM repository, CLI test report, or Terraform Cloud/Enterprise run task report
 * For cloud environments: an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../../admin/snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-for-iac+-and-cloud.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
+Unlike a Snyk [Project](../../../snyk-admin/snyk-projects/#project), an environment contains scannable entities known as [resources](key-concepts-for-iac+-and-cloud.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Issues. This makes environments and their resources different from Projects.
 
 A Snyk environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 

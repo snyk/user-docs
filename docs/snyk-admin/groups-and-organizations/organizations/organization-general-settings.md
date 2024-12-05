@@ -2,11 +2,7 @@
 
 To view and modify settings for your Organization, be sure you are in your Organization and navigate to **Settings** and **General**:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/org_settings.png" alt="Organization general settings"><figcaption><p>Organization general settings</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/org_settings.png" alt="Organization general settings"><figcaption><p>Organization general settings</p></figcaption></figure></div>
 
 In the Organization general settings, you can view and modify the following:
 

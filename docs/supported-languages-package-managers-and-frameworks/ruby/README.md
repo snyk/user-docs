@@ -8,14 +8,14 @@ Check the language availability to be imported as an application, tested, or mon
 
 Available functions:
 
-* SCM import.&#x20;
-* Test or monitor your app through CLI and IDE.
+* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM using `pkg:gem`
 * Test your app's packages using `pkg:gem`
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports Bundler as a package manager and all Gemfile and Gemfile.lock are compatible with the Snyk supported Ruby versions.
+Snyk for Ruby supports Bundler as a package manager and all Gemfile and Gemfile.lock are compatible with the Snyk supported Ruby versions.
 
 As a package registry, [rubygems.org](https://rubygems.org/) is supported.
 
@@ -31,6 +31,11 @@ As a package registry, [rubygems.org](https://rubygems.org/) is supported.
 | <h4><code>3.0.X</code></h4> | `3.0.0`                                                       |
 | <h4><code>3.1.X</code></h4> | `3.1.0`, `3.1.1`, `3.1.2`, `3.1.3`                            |
 | <h4><code>3.2.X</code></h4> | `3.2.0`, `3.2.1`                                              |
+
+Snyk for Ruby supports the following file formats:
+
+* Snyk Open Source: `gemfile`, `gemfile.lock`
+* Snyk Code: `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
 
 ## Frameworks and libraries
 
@@ -53,10 +58,9 @@ The following frameworks and libraries are supported in Snyk for Ruby:&#x20;
 
 The following features are supported in Snyk for Ruby:
 
-* Fix PRs&#x20;
-* License scanning&#x20;
-* Reports
-* Custom rules
+| Snyk Open Source                                                     | Snyk Code                                      |
+| -------------------------------------------------------------------- | ---------------------------------------------- |
+| <ul><li>Fix PRs </li><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li></ul> |
 
 ## Troubleshooting Snyk for Ruby
 

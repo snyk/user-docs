@@ -268,7 +268,7 @@ The [Snyk Azure Repositories (TFS) integration](azure-repositories-tfs.md) uses 
 
 To set up the Snyk Azure Repositories (TFS) integration you must be:
 
-* A [Snyk Organization Admin](../../admin/user-roles/pre-defined-roles.md).
+* A [Snyk Organization Admin](../../snyk-admin/user-roles/pre-defined-roles.md).
 * A member of the [Project Administrators group](https://learn.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?view=azure-devops\&tabs=preview-page) in Azure. This ensures the PAT has the `edit subscriptions permissions` required to enable webhooks.
 
 In Azure, the PAT requires the following permissions for Snyk access:

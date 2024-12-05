@@ -14,14 +14,17 @@ You can use PHP versions 5.2 up to 8.0.
 
 Available functions:
 
-* SCM import.&#x20;
-* Test or monitor your app through CLI and IDE.
+* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM using `pkg:composer`&#x20;
 * Test your app's packages using `pkg:composer`
 
-## Package managers
+## Package managers and supported file extensions
 
-This language supports Composer as a package manager and [packagist.org](https://packagist.org/) as a package registry.
+Snyk for PHP supports Composer as a package manager and [packagist.org](https://packagist.org/) as a package registry and supports the following file formats:
+
+* Snyk Open Source: `composer.json`, `composer.lock`
+* Snyk Code: `.php`, `.phtml`, `.module`, `.inc`, `.install`,
 
 ## Frameworks and libraries
 
@@ -39,10 +42,9 @@ The following frameworks and libraries are supported in Snyk for PHP:&#x20;
 
 The following features are supported in Snyk for PHP:
 
-* License scanning&#x20;
-* Reports
-* Custom rules&#x20;
-* Interfile analysis
+| Snyk Open Source                                    | Snyk Code                                                                  |
+| --------------------------------------------------- | -------------------------------------------------------------------------- |
+| <ul><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules </li><li>Interfile analysis</li></ul> |
 
 ## Snyk CLI for PHP
 

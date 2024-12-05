@@ -8,11 +8,7 @@ If your company has multiple Groups, you must be aware of the Group you are view
 
 To navigate to a different Group, click the Group switcher (![Switcher](<../../.gitbook/assets/image (4) (3) (2).png>) icon) and select a Group:
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-25 at 10.06.46.png" alt="Switch Group"><figcaption><p>Switch Group</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-04-25 at 10.06.46.png" alt="Switch Group"><figcaption><p>Switch Group</p></figcaption></figure></div>
 
 To view or add to your personal Organizations, select **Ungrouped**.
 
@@ -28,11 +24,7 @@ If you add Projects through GitHub integration, these Projects are added to the 
 
 To navigate to a different Organization, click the Organization switcher and select an Organization:
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-13 at 10.31.14.png" alt="Switch Organization"><figcaption><p>Switch Organization</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-03-13 at 10.31.14.png" alt="Switch Organization"><figcaption><p>Switch Organization</p></figcaption></figure></div>
 
 ## **Switch Organization in the CLI**
 

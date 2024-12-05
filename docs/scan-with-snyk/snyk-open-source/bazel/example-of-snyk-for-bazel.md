@@ -1,4 +1,4 @@
-# Examples of Snyk for Bazel
+# Example of Snyk for Bazel
 
 {% hint style="info" %}
 See [Manually creating a Dep Graph from Bazel Java project](https://github.com/snyk/bazel-simple-app) for a full example of a Bazel Java project and the corresponding Snyk Dep Graph object.

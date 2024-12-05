@@ -24,7 +24,7 @@ Users such as Administrators can opt-in to email notifications in their personal
 
 When you are ready to enable notifications more widely, you can see the overview for your Organizations and enable notifications in bulk on the **Group Settings** page.
 
-To view demonstrations of choosing settings for Organization and individual notifications, see [Configure notifications](../phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-notifications.md). See [Manage notifications](../../../admin/manage-notifications.md) for detailed steps.
+To view demonstrations of choosing settings for Organization and individual notifications, see [Configure notifications](../phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-notifications.md). See [Manage notifications](../../../snyk-admin/manage-notifications.md) for detailed steps.
 
 ## Announce Snyk to your teams
 
