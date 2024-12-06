@@ -48,4 +48,4 @@ Continue by following the instructions in the other Visual Studio extension docs
 
 For troubleshooting and known issues, see [Troubleshooting and known issues with Visual Studio extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/troubleshooting-and-known-issues-with-visual-studio-extension).
 
-If you need help, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If you need help, submit a request to [Snyk Support](https://support.snyk.io).

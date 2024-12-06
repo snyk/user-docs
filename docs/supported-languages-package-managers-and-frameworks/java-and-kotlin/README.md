@@ -14,27 +14,27 @@ There are special considerations for [Snyk CLI for Java and Kotlin](snyk-cli-for
 
 [Guidance for Java and Kotlin](guidance-for-java-and-kotlin.md) is available, along with information about the [Snyk workflow with Java and Kotlin](snyk-workflow-with-java-and-kotlin.md) and [More information about Java support](more-information-about-java-support.md).
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 
 Available functions:
 
-* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* SCM import, available for Snyk Open Source and Snyk Code.
 * Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
-* Test your app's SBOM using `pkg:maven`&#x20;
+* Test your app's SBOM using `pkg:maven`
 * Test your app's packages using `pkg:maven`
 
 ## Package managers and supported file extensions
 
-Snyk for Java and Kotlin supports Maven and Gradle as package managers and [maven.org](https://maven.org/) as a package registry.&#x20;
+Snyk for Java and Kotlin supports Maven and Gradle as package managers and [maven.org](https://maven.org/) as a package registry.
 
 Use any of the following versions:
 
-* Maven: `3.*.` For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).&#x20;
+* Maven: `3.*.` For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
 * Gradle: `4.*`, `5.*`, `6.*`, `7.*, 8.*.` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 
 Snyk for Java and Kotlin supports the following file formats:
 
-* Snyk Open:&#x20;
+* Snyk Open:
   * Maven: `pom.xml`
   * Gradle: `build.gradle`, `build.gradle.kts`
 * Snyk Code:
@@ -43,66 +43,66 @@ Snyk for Java and Kotlin supports the following file formats:
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for Java and Kotlin:&#x20;
+The following frameworks and libraries are supported in Snyk for Java and Kotlin:
 
-* Amazon AWS SDK - Comprehensive&#x20;
-* Android Standard Library - Partial&#x20;
-* Apache Commons - Comprehensive&#x20;
-* Apache Tomcat - Partial&#x20;
-* Apache XML - Comprehensive&#x20;
-* apache.mahou - Comprehensive&#x20;
-* bouncycastle - Comprehensive&#x20;
-* com.azure.ai.openai - Comprehensive&#x20;
-* com.google.ai.client.generativeai - Comprehensive&#x20;
-* com.google.cloud.vertexai.generativeai - Comprehensive&#x20;
-* com.google.re2j - Comprehensive&#x20;
-* com.google.gwt - Partial&#x20;
-* Dropwizard - Comprehensive&#x20;
-* elasticsearch - Partial&#x20;
-* FasterXML Jackson - Comprehensive&#x20;
-* Google Guava - Comprehensive&#x20;
-* hibernate - Comprehensive&#x20;
-* http4k - Comprehensive&#x20;
-* io.jsonwebtoken - Comprehensive&#x20;
-* Jakarta EE - Partial&#x20;
-* Jakarta XML Services - Partial&#x20;
-* Java EE - Partial&#x20;
-* Java Servlet - Comprehensive&#x20;
-* Java Servlet (javax) - Comprehensive&#x20;
-* Java Server Pages - Partial&#x20;
-* Java Standard Edition - Comprehensive&#x20;
-* javalin - Partial&#x20;
-* jooq - Comprehensive&#x20;
-* Kyro - Comprehensive&#x20;
-* Micronaut - Comprehensive&#x20;
-* mongo-java-driver - Comprehensive&#x20;
-* Netty - Comprehensive&#x20;
-* okhttp3 - Comprehensive&#x20;
-* org.apache.hc.client5 - Comprehensive&#x20;
-* org.apache.http.client - Comprehensive&#x20;
-* org.apache.sling - Partial&#x20;
-* org.apache.tools.zip - Comprehensive&#x20;
-* org.codehaus.plexus - Comprehensive&#x20;
-* org.dom4j.io - Comprehensive&#x20;
-* Playframework - Comprehensive&#x20;
-* rxhttp - Comprehensive&#x20;
-* Seam logger - Comprehensive&#x20;
-* SnakeYaml - Comprehensive&#x20;
-* Spongycastle - Comprehensive&#x20;
-* Spring boot - Partial&#x20;
-* Spring Web, MVC and JDBC - Comprehensive&#x20;
-* Struts - Partial&#x20;
-* Vaadin - Comprehensive&#x20;
+* Amazon AWS SDK - Comprehensive
+* Android Standard Library - Partial
+* Apache Commons - Comprehensive
+* Apache Tomcat - Partial
+* Apache XML - Comprehensive
+* apache.mahou - Comprehensive
+* bouncycastle - Comprehensive
+* com.azure.ai.openai - Comprehensive
+* com.google.ai.client.generativeai - Comprehensive
+* com.google.cloud.vertexai.generativeai - Comprehensive
+* com.google.re2j - Comprehensive
+* com.google.gwt - Partial
+* Dropwizard - Comprehensive
+* elasticsearch - Partial
+* FasterXML Jackson - Comprehensive
+* Google Guava - Comprehensive
+* hibernate - Comprehensive
+* http4k - Comprehensive
+* io.jsonwebtoken - Comprehensive
+* Jakarta EE - Partial
+* Jakarta XML Services - Partial
+* Java EE - Partial
+* Java Servlet - Comprehensive
+* Java Servlet (javax) - Comprehensive
+* Java Server Pages - Partial
+* Java Standard Edition - Comprehensive
+* javalin - Partial
+* jooq - Comprehensive
+* Kyro - Comprehensive
+* Micronaut - Comprehensive
+* mongo-java-driver - Comprehensive
+* Netty - Comprehensive
+* okhttp3 - Comprehensive
+* org.apache.hc.client5 - Comprehensive
+* org.apache.http.client - Comprehensive
+* org.apache.sling - Partial
+* org.apache.tools.zip - Comprehensive
+* org.codehaus.plexus - Comprehensive
+* org.dom4j.io - Comprehensive
+* Playframework - Comprehensive
+* rxhttp - Comprehensive
+* Seam logger - Comprehensive
+* SnakeYaml - Comprehensive
+* Spongycastle - Comprehensive
+* Spring boot - Partial
+* Spring Web, MVC and JDBC - Comprehensive
+* Struts - Partial
+* Vaadin - Comprehensive
 * XStream - Comprehensive
 
 Kotlin only:
 
-* Android Standard Library - Partial&#x20;
-* com.aallam.openai - Comprehensive&#x20;
-* com.expediagroup.graphql.server - Comprehensive&#x20;
-* Javalin - Partial&#x20;
-* Ktor - Comprehensive&#x20;
-* Kotlin Standard Library - Comprehensive&#x20;
+* Android Standard Library - Partial
+* com.aallam.openai - Comprehensive
+* com.expediagroup.graphql.server - Comprehensive
+* Javalin - Partial
+* Ktor - Comprehensive
+* Kotlin Standard Library - Comprehensive
 * khttp - Comprehensive
 
 ## Features
@@ -113,4 +113,4 @@ The following features are supported in Snyk for Java and Kotlin:
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <ul><li>Reports</li><li>Fix PRs (Maven) </li><li>License scanning </li></ul> | <ul><li>Reports</li><li>Custom rules </li><li>Interfile analysis - Kotlin fully supported</li><li>Interfile analysis - Android partially supported</li></ul> |
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io).

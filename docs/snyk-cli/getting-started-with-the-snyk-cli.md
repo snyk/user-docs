@@ -113,7 +113,7 @@ For detailed information about the CLI, see the [CLI docs](https://docs.snyk.io/
 
 ## Getting support for the Snyk CLI
 
-[Submit a ticket](https://support.snyk.io/hc/en-us/requests/new) to Snyk support whenever you need help with the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk development project](https://github.com/snyk).
+[Submit a ticket](https://support.snyk.io) to Snyk support whenever you need help with the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk development project](https://github.com/snyk).
 
 ## Snyk CLI is closed to contributions
 

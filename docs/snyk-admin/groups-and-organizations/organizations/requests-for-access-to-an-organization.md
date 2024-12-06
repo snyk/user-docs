@@ -21,7 +21,7 @@ Additional common routes for users to request this access include the following:
 When **Requesting access** is enabled for an Organization and a non-member reaches a valid URL for a Project or status check result, the user can request access once per Organization in 48 hours.
 
 {% hint style="info" %}
-If you need to request access to an Organization you have access to, you may have logged in using an authentication method different from the one you usually use. For more information, see the [support article](https://support.snyk.io/hc/en-us/articles/360001649558-Unable-to-display-this-organization) that explains the error and how to proceed.
+If you need to request access to an Organization you have access to, you may have logged in using an authentication method different from the one you usually use. For more information, see the [support article](https://support.snyk.io/s/article/Unable-to-display-this-organization-The-organization-does-not-exist-or-you-do-not-have-permission-to-access-it) that explains the error and how to proceed.
 {% endhint %}
 
 {% hint style="info" %}

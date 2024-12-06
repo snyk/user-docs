@@ -6,14 +6,14 @@
 * `<ProjectReference>`elements are not supported.
 * Private dependency scanning is supported for SCM integrations by enabling improved .NET scanning for your Organization or Group through the [Snyk Preview](https://docs.snyk.io/snyk-admin/snyk-preview) menu. Navigate to the  [Improved .NET scanning](improved-.net-scanning.md) page for more details. You can also scan private dependencies using the Snyk CLI
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io).
 
 ## Snyk technical support for .NET
 
 The following support articles are available:
 
-* [Project import errors](https://support.snyk.io/hc/en-us/articles/360001373118-Project-import-errors)
-* [Changing .NET Target Framework not reflected in Snyk Portal](https://support.snyk.io/hc/en-us/articles/360001421457-Changing-NET-Target-Framework-not-reflected-in-Snyk-Portal)
-* [How does Snyk aggregate .NET Projects?](https://support.snyk.io/hc/en-us/articles/360002941078-How-does-Snyk-aggregate-NET-Projects-)
+* [Project import errors](https://support.snyk.io/s/article/Project-import-errors)
+* [Changing .NET Target Framework not reflected in Snyk Portal](https://support.snyk.io/s/article/Changing-NET-Target-Framework-not-reflected-in-Snyk-Portal)
+* [How does Snyk aggregate .NET Projects?](https://support.snyk.io/s/article/How-does-Snyk-aggregate-NET-Projects)
 
-If you need more help, [contact Snyk support](https://support.snyk.io/hc/en-us).
+If you need more help, [contact Snyk support](https://support.snyk.io).

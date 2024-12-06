@@ -4,11 +4,11 @@
 
 Snyk for Apex is supported **only for Snyk Code**.
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 
 Available functions:
 
-* SCM import.&#x20;
+* SCM import.
 * Test or monitor your app through CLI and IDE.
 
 For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
@@ -33,4 +33,4 @@ The following features are supported in Snyk for Apex:
 * Reports
 * Interfile analysis
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io).

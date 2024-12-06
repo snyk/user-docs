@@ -26,4 +26,4 @@ As an example, the`SNYK-US-02`region API URLs are the following:
 
 Note that if you use the parameter `target-reference`, you must URL-encode it.
 
-If you have any problems or questions, contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+If you have any problems or questions, contact [Snyk support](https://support.snyk.io).

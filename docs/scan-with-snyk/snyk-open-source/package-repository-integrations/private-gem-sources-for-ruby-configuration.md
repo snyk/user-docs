@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This functionality is in beta. [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to have it enabled for your Organization.
+This functionality is in beta. [Contact Snyk Support](https://support.snyk.io) to have it enabled for your Organization.
 
 This guide is relevant for Snyk UI integrations only. The CLI supports Ruby Projects with private registries without extra configuration.
 {% endhint %}

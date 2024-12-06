@@ -291,4 +291,4 @@ There was an authentication error. Incorrect credentials provided.
     Please ensure access to the remote Registry and validate you have provided all the right parameters.
 ```
 
-If you have found a discrepancy that you cannot explain, contact [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If you have found a discrepancy that you cannot explain, contact [Snyk Support](https://support.snyk.io).

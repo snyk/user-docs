@@ -45,4 +45,4 @@ Continue by following the instructions in the other Visual Studio Code extension
 
 For troubleshooting and known issues, see [Troubleshooting for Visual Studio Code extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/troubleshooting-for-visual-studio-code-extension).
 
-If you need help, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If you need help, submit a request to [Snyk Support](https://support.snyk.io).

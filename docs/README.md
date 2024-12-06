@@ -32,7 +32,7 @@ Stay up to date with the [latest updates in Snyk documentation](whats-new-in-the
 
 ## Learning and information
 
-| <p><a href="https://learn.snyk.io/catalog/product-training/?type=product-training">Snyk product training</a><br>Courses to help you use Snyk functions</p> | <p>​<a href="https://support.snyk.io/hc/en-us">Snyk support</a><br>Access Support tickets and knowledgebase</p>       | <p>​<a href="https://snyk.io/advisor/">Snyk Advisor</a><br>Find the best package for your next project</p>         |
+| <p><a href="https://learn.snyk.io/catalog/product-training/?type=product-training">Snyk product training</a><br>Courses to help you use Snyk functions</p> | <p>​<a href="https://support.snyk.io">Snyk support</a><br>Access Support tickets and knowledgebase</p>       | <p>​<a href="https://snyk.io/advisor/">Snyk Advisor</a><br>Find the best package for your next project</p>         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | <p>​<a href="https://updates.snyk.io/">Snyk product updates</a><br>See the latest Snyk product information</p>                                             | <p>​<a href="https://security.snyk.io/">Snyk vulnerability DB</a><br>Our database for open source vulnerabilities</p> | <p><a href="https://status.snyk.io/">Snyk Status</a><br>Shows operational status and history for Snyk systems.</p> |
 

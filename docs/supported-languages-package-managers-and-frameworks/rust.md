@@ -8,11 +8,11 @@ Snyk supports the testing of Rust applications through the API. For details, see
 
 Snyk also supports the testing of individual Rust packages from the Cargo package manager. For details, see [List issues for a package](../snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md).
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 
 Available functions:
 
-* Test your app's SBOM using`pkg:cargo`&#x20;
+* Test your app's SBOM using`pkg:cargo`
 * Test your app's packages using`pkg:cargo`
 
 ## Package managers and supported file extensions
@@ -27,4 +27,4 @@ Snyk for Rust does not have any frameworks and libraries supported.
 
 There are no features available for Snyk for Rust.
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io).

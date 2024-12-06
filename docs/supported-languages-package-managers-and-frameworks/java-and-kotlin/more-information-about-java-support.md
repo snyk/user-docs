@@ -92,12 +92,12 @@ The following explains how Snyk analyzes and treats each of the previous example
 * Project POM - Snyk creates a Project with a single dependency of `log4j,` with `v1.2.12.` Snyk applies the rules from the parent BOM to identify the correct version for `log4j`. The dependency `commons-logging` is not included, as it is not directly declared in the Project POM.
 
 {% hint style="info" %}
-If a BOM has direct dependencies outside`dependencyManagement`, then Snyk creates a Project for that BOM.&#x20;
+If a BOM has direct dependencies outside`dependencyManagement`, then Snyk creates a Project for that BOM.
 {% endhint %}
 
 ### Fix PRs
 
-Snyk offers fix advice, including recommendations for upgrading vulnerable packages with the Fix PR feature.&#x20;
+Snyk offers fix advice, including recommendations for upgrading vulnerable packages with the Fix PR feature.
 
 Fix PRs can only be created for dependencies whose versions are managed in the POM file where the issue is reported.
 
@@ -117,4 +117,4 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 
 ## Troubleshooting
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io).

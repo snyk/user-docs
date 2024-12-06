@@ -14,7 +14,7 @@ This page has information and instructions for the following:
 * [Troubleshooting Broker with Code Agent](troubleshooting-broker.md#troubleshooting-broker-with-code-agent)
 * [Ensuring your containers stay online when you log out of the host](troubleshooting-broker.md#containers-go-down-when-you-log-out-of-the-host)
 
-For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/hc/en-us/articles/4404288846353-Broker-Troubleshooting).
+For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/s/article/Broker-Troubleshooting).
 
 ## Logging with the Broker Client
 
@@ -120,7 +120,7 @@ Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big mani
 
 The Code Agent is deprecated and is no longer maintained.
 
-The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io/hc/en-us).
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io).
 
 The automatic [PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks) feature is not supported for Snyk Broker - Code Agent.
 {% endhint %}
@@ -146,7 +146,7 @@ As for Standalone Broker, in order to troubleshoot the code agent, you must gene
 ### Common problems with the Code Agent
 
 * Communication with the on-premise Git is not functioning. There will be a 404 error on the attempt to clone the code If there is any reference to SSL This can be caused by a self-signed certificate. Ensure you have mounted the correct certificate or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED=0`
-* If you see the message: `“Uploaded Repo”`, the Code Agent and Broker are configured correctly. If there are still errors on the import log, contact [Snyk Support](https://support.snyk.io/hc/en-us).
+* If you see the message: `“Uploaded Repo”`, the Code Agent and Broker are configured correctly. If there are still errors on the import log, contact [Snyk Support](https://support.snyk.io).
 
 ## Containers go down when you log out of the host
 

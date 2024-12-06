@@ -4,7 +4,7 @@
 
 Refer to the [Scala details](./) for supported package managers and features.
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
+If you need help, [contact Snyk Support](https://support.snyk.io).
 
 ## Open source and licensing
 

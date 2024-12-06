@@ -92,7 +92,7 @@ The following explains the Snyk properties from Nexus.
 
 ### Troubleshooting for the Nexus Repository Manager Gatekeeper Plugin
 
-If connecting to Snyk is unsuccessful, try checking the following points or [submit a request to Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If connecting to Snyk is unsuccessful, try checking the following points or [submit a request to Snyk Support](https://support.snyk.io).
 
 * Check the Nexus logs for any related errors.
 * Ensure you have entered the API URL correctly for the configuration of the capability.

@@ -16,7 +16,7 @@ The following are prerequisites for using Snyk Broker in any environment:
 * Client machine system requirements: one CPU, 256MB of RAM
 * Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) AND [https://api.snyk.io](https://api.snyk.io) (or regional equivalent) that is also allowed by any firewalls installed on your network
 * A Snyk account
-* Self-enabled Broker integration using the Snyk API or enabled by contacting [Snyk Support](https://support.snyk.io/hc/en-us)
+* Self-enabled Broker integration using the Snyk API or enabled by contacting [Snyk Support](https://support.snyk.io)
 * A unique UUID token called a Broker token. See [Generate credentials in the target application for Snyk Broker](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker).
 * An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token. Snyk Broker does not support authentication with the mTLS method. &#x20;
 * Docker configured to pull images from Docker Hub to install with Docker.
@@ -68,12 +68,12 @@ After generating the credentials for the Broker's target application, configure 
 
 The Broker token is required and must be generated in order for you to use Snyk Broker.
 
-For code repository (SCM) integrations, a Broker token can be generated using the API or by contacting [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+For code repository (SCM) integrations, a Broker token can be generated using the API or by contacting [Snyk support](https://support.snyk.io).
 
-1. Follow the example under "Set up a broker for an existing integration" in the endpoint [Update existing integration](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+1. Follow the example under "Set up a broker for an existing integration" in the endpoint [Update existing integration](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact [Snyk support](https://support.snyk.io).
 2. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration. by selecting **Settings** > **Integrations** for that specific integration to see the Broker token.
 
-For [Artifactory Repository](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) brokered instances or [Jira](install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+For [Artifactory Repository](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) brokered instances or [Jira](install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io).
 
 1. Select **Settings** > **Integrations** for that specific integration to generate the Broker token.
 2. After the Broker token is generated, under the integration, the notification from this screen correctly displays **Could not connect to…**, as you have not yet installed and configured the client.

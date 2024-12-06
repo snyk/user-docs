@@ -59,7 +59,7 @@ To support a specific framework, Snyk Code must both support the relevant langua
 
 Most frameworks are partially supported out of the box, as Snyk Code needs only to parse the code to analyze it. In some cases, frameworks may require specific rules, or require specific program analysis engine updates, or both.
 
-If you notice any gaps in support for a specific framework, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If you notice any gaps in support for a specific framework, [contact Snyk Support](https://support.snyk.io).
 
 ### Framework support levels
 
@@ -70,7 +70,7 @@ Comprehensive support indicates the following:
 * Sources and sinks: Snyk has thoroughly identified and included all relevant sources and sinks.
 * Data flow testing: Extensive testing has been conducted to ensure comprehensive data flow coverage.
 * Engine support: The Snyk Code engine is fully optimized for this framework.
-* Limitations: Snyk is unaware of any limitations. If you encounter a false negative, please report it to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+* Limitations: Snyk is unaware of any limitations. If you encounter a false negative, please report it to [Snyk Support](https://support.snyk.io).
 
 Partial support indicates the following:
 

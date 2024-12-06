@@ -16,8 +16,8 @@ From the Group settings menu, select **Settings** and then select one of the Gro
 * **Service Accounts**: See [Service accounts](../../enterprise-setup/service-accounts/) for details.
 * **Notifications**: See [Manage notifications](../manage-notifications.md) for details.
 * **Usage**: See [Usage setting](usage-settings.md)s for details.
-* **Your Plan and Billing**: Billing is through a contract and cannot be changed by using this option. Contact your sales representative or [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you have billing-related requests or issues.
-* **Plans and Pricing**: Billing is through a contract and cannot be changed by using this option. Contact your sales representative or [Snyk support](https://support.snyk.io/hc/en-us/requests/new) if you have billing-related requests or issues. For more information, see the [Plans and pricing](https://snyk.io/plans/) page on the Snyk website.
+* **Your Plan and Billing**: Billing is through a contract and cannot be changed by using this option. Contact your sales representative or [Snyk support](https://support.snyk.io) if you have billing-related requests or issues.
+* **Plans and Pricing**: Billing is through a contract and cannot be changed by using this option. Contact your sales representative or [Snyk support](https://support.snyk.io) if you have billing-related requests or issues. For more information, see the [Plans and pricing](https://snyk.io/plans/) page on the Snyk website.
 * **Snyk Preview**: Preview upcoming and experimental features before they are released. See the [Snyk Preview](../snyk-preview.md) documentation for details.
 * **Infrastructure as Code**: Enable rules to add checks to Snyk rules when you are scanning configuration files with the Snyk CLI. See the [IaC documentation](../../scan-with-snyk/snyk-iac/) for details.
 

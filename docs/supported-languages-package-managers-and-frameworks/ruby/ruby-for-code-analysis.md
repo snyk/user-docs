@@ -2,4 +2,4 @@
 
 Refer to the [Ruby details](./) for supported frameworks, libraries, and features.
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
+If you need help, [contact Snyk Support](https://support.snyk.io).

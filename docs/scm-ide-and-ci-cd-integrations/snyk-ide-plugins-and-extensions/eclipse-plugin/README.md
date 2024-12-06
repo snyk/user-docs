@@ -46,4 +46,4 @@ Continue by following the instructions in the other Eclipse extension docs:
 
 For troubleshooting and known issues, see [Troubleshooting for the Eclipse plugin](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/troubleshooting-for-the-eclipse-plugin).
 
-If you need help, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If you need help, submit a request to [Snyk Support](https://support.snyk.io).

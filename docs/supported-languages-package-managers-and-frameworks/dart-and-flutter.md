@@ -2,15 +2,15 @@
 
 ## Applicability
 
-Snyk for Dart and Flutter is supported **only for Open Source**.&#x20;
+Snyk for Dart and Flutter is supported **only for Open Source**.
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 
 Available functions:
 
 * Import your app through SCM: N/A
 * Test or monitor your app through CLI and IDE: N/A
-* Test your app's SBOM using `pkg:pub`&#x20;
+* Test your app's SBOM using `pkg:pub`
 * Test your app's packages using `pkg:pub`
 
 ## Package managers and supported file extensions
@@ -19,11 +19,11 @@ Snyk for Dart and Flutter supports Pub as a package manager and [pub.dev](https:
 
 ## Frameworks and libraries
 
-Snyk for Dart and Flutter does not support frameworks and libraries.&#x20;
+Snyk for Dart and Flutter does not support frameworks and libraries.
 
 ## Features
 
-Snyk for Dart and Flutter does not support any Snyk features.&#x20;
+Snyk for Dart and Flutter does not support any Snyk features.
 
 ## Testing pub packages using the API
 
@@ -31,7 +31,7 @@ Snyk for Dart and Flutter does not support any Snyk features.&#x20;
 The Snyk API is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Snyk supports the testing of open-source packages from the Pub package manager using the API endpoint [List issues for a package](../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues):  &#x20;
+Snyk supports the testing of open-source packages from the Pub package manager using the API endpoint [List issues for a package](../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues):
 
 ```
 GET /orgs/{org_id}/packages/{purl}/issues endpoint
@@ -72,9 +72,9 @@ The `--exclude` parameter removes duplicates and ignores example applications, w
 
 Now you will be able to view all native dependencies, including those introduced by third-party plugins, in the Snyk Web UI.
 
-<figure><img src="../.gitbook/assets/image (571).png" alt="Snyk Project page showing dependencies in Flutter apps"><figcaption><p>Snyk Project page showing dependencies in Flutter apps</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (571).png" alt=""><figcaption><p>Snyk Project page showing dependencies in Flutter apps</p></figcaption></figure>
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io).
 
 
 

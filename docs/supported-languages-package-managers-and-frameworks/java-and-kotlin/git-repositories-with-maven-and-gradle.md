@@ -37,7 +37,7 @@ Some Gradle features are not supported, and this may influence the scan results.
 * Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources) directories
 * Dependencies introduced via [plugins](https://docs.gradle.org/current/userguide/plugins.html).
 
-If you see unexpected results from this Early Access feature, contact [Snyk support](https://support.snyk.io/hc/en-us).
+If you see unexpected results from this Early Access feature, contact [Snyk support](https://support.snyk.io).
 
 ### How to enable improved Gradle SCM scanning
 

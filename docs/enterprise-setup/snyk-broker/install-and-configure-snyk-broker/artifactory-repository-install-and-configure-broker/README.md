@@ -28,7 +28,7 @@ For convenience, instructions to obtain or generate the Broker token follow. Whe
 {% hint style="info" %}
 If you do not see the **Snyk Broker** on/off switch, you do not have the necessary permissions and can only add a publicly accessible instance.
 
-Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
+Submit a request to [Snyk Support](https://support.snyk.io) if you want to add a private registry.
 {% endhint %}
 
 When you have the permissions needed to add a private registry, continue with the instructions to [generate a Broker token from the Web UI](./#generate-a-broker-token-from-the-web-ui).

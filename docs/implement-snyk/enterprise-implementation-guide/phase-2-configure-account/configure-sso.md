@@ -8,11 +8,11 @@ In most cases, Snyk recommends using the [Self-Serve Single Sign-On option](../.
 
 ## How to get assistance
 
-Depending on your license with Snyk, you may not see the SSO option on your Group Settings page. If it is not displayed, [submit a request to Support](https://support.snyk.io/hc/en-us) to enable it. This option lets you configure SSO with SAML, but if you want to use a different SSO configuration option, for example, OIDC,  [submit a request to Snyk Support](https://support.snyk.io/hc/en-us), and a member of the Snyk support team will assist.
+Depending on your license with Snyk, you may not see the SSO option on your Group Settings page. If it is not displayed, [submit a request to Support](https://support.snyk.io) to enable it. This option lets you configure SSO with SAML, but if you want to use a different SSO configuration option, for example, OIDC,  [submit a request to Snyk Support](https://support.snyk.io/hc/en-us), and a member of the Snyk support team will assist.
 
 ## Assistance with SSO Custom Mapping
 
-Using this option requires paid professional services and cannot be completed using the Self-Serve SSO option. [Contact the Snyk support team](https://support.snyk.io/hc/en-us) or your Snyk account team to purchase the required services.
+Using this option requires paid professional services and cannot be completed using the Self-Serve SSO option. [Contact the Snyk support team](https://support.snyk.io) or your Snyk account team to purchase the required services.
 
 ## How to provision users through the API
 
