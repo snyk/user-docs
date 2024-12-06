@@ -30,11 +30,13 @@ To enable the debug log level, start VS Code from the terminal like this:
 
 Alternatively, you can add `-d` to additional parameters in the Snyk settings.
 
-You can obtain additional logs by navigating to **Help** > **Toggle Developer Tools** and selecting the **Output** tab to see additional output. From the list displayed, select the **Snyk Language Server** channel and then the **Snyk Security** channel to see the debugging information.
+You can obtain additional logs by navigating to **Help, Toggle Developer Tools,** and selecting the **Output** tab to see additional output. From the list displayed, select the **Snyk Security** channel and then the **Snyk Language Server** channel to see the debugging information.
 
 The Snyk Security channel has information on the extension itself. The Snyk Language Language Server channel receives the Language Server logs, displaying everything that is going on inside the Language Server and the CLI when you are using the extension.
 
-<figure><img src="../../../.gitbook/assets/IDE_VS-Code-logs-additional-information.png" alt=""><figcaption><p>Obtain additional output</p></figcaption></figure>
+
+
+<figure><img src="../../../.gitbook/assets/2024-12-06-Ts-VS-Code-ext-obt-more-fin-.png" alt="" width="375"><figcaption><p>Obtain more information</p></figcaption></figure>
 
 ## Command not found (getActiveUser, LoginCommand, and so on)
 
