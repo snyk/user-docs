@@ -40,7 +40,7 @@ The following response code indicates success.
 
 The SBOM document was successfully generated. The response body contains the document in the requested format.
 
-The following are **error states** that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager or submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+The following are **error states** that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager or submit a request to [Snyk Support](https://support.snyk.io).
 
 **401 Unauthorized**
 

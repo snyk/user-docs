@@ -20,7 +20,7 @@ To identify vulnerable base images, you can use one of the following methods:
 For either method, a Project in the Snyk UI is created.
 
 {% hint style="info" %}
-Snyk supports only a subset of official Docker images. If you need help, contact [Snyk Support](https://support.snyk.io/hc/en-us).
+Snyk supports only a subset of official Docker images. If you need help, contact [Snyk Support](https://support.snyk.io).
 {% endhint %}
 
 ## Image layer

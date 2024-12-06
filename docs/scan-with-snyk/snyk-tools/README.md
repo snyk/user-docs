@@ -44,4 +44,4 @@ Refer to the repositories for instructions on how to use the following additiona
 
 ## Tool ideas
 
-Do you have an idea for a tool? If so, check out [Snyk Apps](../../snyk-api/how-to-use-snyk-apps-apis/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io/hc/en-us/) with questions.
+Do you have an idea for a tool? If so, check out [Snyk Apps](../../snyk-api/how-to-use-snyk-apps-apis/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io) with questions.

@@ -20,9 +20,8 @@ To check compliance for open source licenses, see [Snyk License Compliance Manag
 ## IDE for C++ for open-source dependencies
 
 IDE Under **Additional Parameters** in the IDE settings, enter the **--unmanaged** option to scan for C/C++ open source dependencies.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 12.18.01.png" alt="Scan for dependencies"><figcaption><p>Scan for dependencies</p></figcaption></figure>
+Scan for dependencies"><figcaption><p>Scan for dependencies</p></figcaption></figure>
 
 ## Troubleshooting C++ for open source
 
-See Troubleshooting C++ for open source. If you need additional help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
+See Troubleshooting C++ for open source. If you need additional help, [contact Snyk Support](https://support.snyk.io).

@@ -6,7 +6,7 @@ No. The files are converted to a list of hashes before they are sent for scannin
 
 ## **Why did Snyk not find any dependencies?**
 
-Snyk stores the official releases of many open-source components in the Snyk database but it is possible that the source code you scanned is not there or is not found. If your scan does not find any dependencies [submit a request to support](https://support.snyk.io/hc/en-us/requests/new).
+Snyk stores the official releases of many open-source components in the Snyk database but it is possible that the source code you scanned is not there or is not found. If your scan does not find any dependencies [submit a request to support](https://support.snyk.io).
 
 Here are a few things that you can check on your own:
 

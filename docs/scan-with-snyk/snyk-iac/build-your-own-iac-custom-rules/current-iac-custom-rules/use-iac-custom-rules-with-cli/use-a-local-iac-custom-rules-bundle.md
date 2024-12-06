@@ -32,4 +32,4 @@ We were unable to extract the rules provided at: ./invalid/location/bundle.tar.g
 We were unable run the test. Please run the command again with the `-d` flag and contact support@snyk.io with the contents of the output.
 ```
 
-If you have found a discrepancy that you cannot explain, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If you have found a discrepancy that you cannot explain, [contact Snyk Support](https://support.snyk.io).

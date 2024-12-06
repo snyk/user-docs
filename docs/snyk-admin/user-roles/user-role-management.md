@@ -144,7 +144,7 @@ Users with the Group-level View, Create, and Edit service account permissions ca
 
 ## Change the role of a user
 
-**Group Admins** or a user with the **Manage Users** Organization-level permission can assign roles to other users. If you want to add a Group Admin, and your company currently does not have any Group Admins, ask Snyk [support](https://support.snyk.io/hc/en-us/requests/new) to promote at least one user.
+**Group Admins** or a user with the **Manage Users** Organization-level permission can assign roles to other users. If you want to add a Group Admin, and your company currently does not have any Group Admins, ask Snyk [support](https://support.snyk.io) to promote at least one user.
 
 Follow these steps to change the role of a Group or Organization user:
 

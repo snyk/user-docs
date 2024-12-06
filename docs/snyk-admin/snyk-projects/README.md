@@ -120,7 +120,7 @@ For each entry, you can select the frequency of testing for that Project (`never
 The default test frequency and limitations are as follows:
 
 * Open Source: The default is daily.
-* Code analysis Projects: The default is weekly; daily is not available. To test your code daily, submit a request to [Snyk Support.](https://support.snyk.io/hc/en-us/requests)
+* Code analysis Projects: The default is weekly; daily is not available. To test your code daily, submit a request to [Snyk Support.](https://support.snyk.io)
 * Container: The default is daily.
 * IaC: The default is weekly.
 {% endhint %}

@@ -5,7 +5,7 @@ Ensure you have reviewed the [prerequisites for installing the Snyk Controller](
 {% endhint %}
 
 {% hint style="info" %}
-The installation steps work best for EKS and ECR with the same AWS account. If you have a different setup, contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+The installation steps work best for EKS and ECR with the same AWS account. If you have a different setup, contact [Snyk support](https://support.snyk.io).
 {% endhint %}
 
 Installing the Snyk Controller enables you to import and test your running EKS workloads and identify vulnerabilities in their associated images and configurations that can make the workloads less secure. After the workload is imported, Snyk continues to monitor the workload, identifying additional security issues, as new images are deployed and the workload configuration changes.

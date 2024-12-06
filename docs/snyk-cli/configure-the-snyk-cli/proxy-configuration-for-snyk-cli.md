@@ -12,7 +12,7 @@ When you use the Snyk CLI behind a proxy, you must provide the proxy configurati
 
 The `https` in the `HTTPS_PROXY` means that requests using `https` protocol use this proxy. The proxy itself does not need to use `https`.
 
-For more information, see [Configure the Snyk CLI to connect to the Snyk API](configure-snyk-cli-to-connect-to-snyk-api.md) and [How can I use Snyk behind a proxy?](https://support.snyk.io/hc/en-us/articles/360000925358-How-can-I-use-Snyk-behind-a-proxy-)
+For more information, see [Configure the Snyk CLI to connect to the Snyk API](configure-snyk-cli-to-connect-to-snyk-api.md) and [How can I use Snyk behind a proxy?](https://support.snyk.io/s/article/How-can-I-use-Snyk-behind-a-proxy)
 
 ## Proxy authentication
 

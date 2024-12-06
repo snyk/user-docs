@@ -118,7 +118,7 @@ The following response code indicates success.
 
 The SBOM test run was successfully created. The response body contains the job ID of the test run.
 
-The following are error states that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solutions Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+The following are error states that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solutions Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io).
 
 **400 Bad Request**
 

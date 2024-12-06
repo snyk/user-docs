@@ -2,11 +2,11 @@
 
 ## Applicability
 
-Snyk supports [Python for code analysis](python-for-code-analysis.md) and [Python for open source](python-for-open-source.md).&#x20;
+Snyk supports [Python for code analysis](python-for-code-analysis.md) and [Python for open source](python-for-open-source.md).
 
 For specific information about the use of versions and package managers, See [Snyk CLI for Python](snyk-cli-for-python.md) and [Git repositories and Python](git-repositories-and-python.md).
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 
 Available functions:
 
@@ -32,46 +32,46 @@ Snyk for Python supports the following file formats:
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for Python:&#x20;
+The following frameworks and libraries are supported in Snyk for Python:
 
 * AioHTTP - Comprehensive
-* iopg - Comprehensive&#x20;
-* argparse - Comprehensive&#x20;
-* anthropic - Comprehensive&#x20;
-* bottle - Comprehensive&#x20;
-* CherryPy - Comprehensive&#x20;
-* Django - Comprehensive&#x20;
-* defusedxml - Comprehensive&#x20;
-* fastapi - Partial&#x20;
-* flask - Comprehensive&#x20;
-* flask\_pymongo - Comprehensive&#x20;
-* google.cloud.bigquery - Comprehensive&#x20;
-* google\_generativeai - Comprehensive&#x20;
-* huggingface\_hub - Comprehensive&#x20;
-* httpx - Comprehensive&#x20;
-* ldap3 - Comprehensive&#x20;
-* libxml - Comprehensive&#x20;
-* lxml - Comprehensive&#x20;
-* mistralai - Comprehensive&#x20;
-* mongoengine - Comprehensive&#x20;
-* openai - Comprehensive&#x20;
-* pandas - Partial&#x20;
-* paramiko - Comprehensive&#x20;
-* peewee - Comprehensive&#x20;
-* pickle - Comprehensive&#x20;
-* pilyaml - Comprehensive&#x20;
-* pyca/cryptography - Comprehensive&#x20;
-* pymongo - Comprehensive&#x20;
-* pymssql - Comprehensive&#x20;
-* pyramid - Comprehensive&#x20;
-* psycopg - Comprehensive&#x20;
-* python-ldap - Comprehensive&#x20;
-* Python Standard Library - Comprehensive&#x20;
-* requests - Comprehensive&#x20;
-* sqlite3 (or pysqlite2) - Comprehensive&#x20;
-* sqlalchemy - Comprehensive&#x20;
-* turboGears - Comprehensive&#x20;
-* urllib - Comprehensive&#x20;
+* iopg - Comprehensive
+* argparse - Comprehensive
+* anthropic - Comprehensive
+* bottle - Comprehensive
+* CherryPy - Comprehensive
+* Django - Comprehensive
+* defusedxml - Comprehensive
+* fastapi - Partial
+* flask - Comprehensive
+* flask\_pymongo - Comprehensive
+* google.cloud.bigquery - Comprehensive
+* google\_generativeai - Comprehensive
+* huggingface\_hub - Comprehensive
+* httpx - Comprehensive
+* ldap3 - Comprehensive
+* libxml - Comprehensive
+* lxml - Comprehensive
+* mistralai - Comprehensive
+* mongoengine - Comprehensive
+* openai - Comprehensive
+* pandas - Partial
+* paramiko - Comprehensive
+* peewee - Comprehensive
+* pickle - Comprehensive
+* pilyaml - Comprehensive
+* pyca/cryptography - Comprehensive
+* pymongo - Comprehensive
+* pymssql - Comprehensive
+* pyramid - Comprehensive
+* psycopg - Comprehensive
+* python-ldap - Comprehensive
+* Python Standard Library - Comprehensive
+* requests - Comprehensive
+* sqlite3 (or pysqlite2) - Comprehensive
+* sqlalchemy - Comprehensive
+* turboGears - Comprehensive
+* urllib - Comprehensive
 * werkzeug - Comprehensive
 
 ## Features
@@ -129,4 +129,4 @@ If those directories each require a different virtual environment to run, the Sn
 
 ## Troubleshooting Snyk for Python
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
+If you need help, [contact Snyk Support](https://support.snyk.io).

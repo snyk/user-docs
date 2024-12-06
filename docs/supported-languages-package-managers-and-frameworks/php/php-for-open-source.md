@@ -8,4 +8,4 @@ The following summarizes Snyk support for the Composer package manager:
 | ----------------------------------- | ------------------------ | ------------------------ | ---------------- | ------- |
 | [Composer](https://getcomposer.org) | ✔︎                       | ✔︎                       | ✔︎               |         |
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).
+If you need help, [contact Snyk Support](https://support.snyk.io).

@@ -24,5 +24,5 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Snyk AppRisk Issue page**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.
 
 {% hint style="info" %}
-Need more help? [Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+Need more help? [Contact Snyk Support](https://support.snyk.io).
 {% endhint %}

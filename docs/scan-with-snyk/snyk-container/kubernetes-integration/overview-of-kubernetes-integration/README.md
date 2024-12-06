@@ -50,5 +50,5 @@ If you have an existing Red Hat Enterprise Agreement (or other negotiated agreem
 
 ## Kubernetes integration troubleshooting
 
-For troubleshooting information on the Kubernetes integration or the Snyk Controller, as well as for common onboarding errors, see the [Kubernetes integration troubleshooting](https://support.snyk.io/hc/en-us/articles/10342802571805-Kubernetes-Integration-troubleshooting) support page.
+For troubleshooting information on the Kubernetes integration or the Snyk Controller, as well as for common onboarding errors, see the [Kubernetes integration troubleshooting](https://support.snyk.io/s/article/Kubernetes-Integration-troubleshooting) support page.
 

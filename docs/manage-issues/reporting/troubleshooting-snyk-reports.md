@@ -8,7 +8,7 @@ If reporting is not loading in the Snyk UI, follow these troubleshooting steps t
 Allowlisting may be necessary due to some firewall settings. If allowlisting snyk.io was required for the initial implementation, additional allowlisting may be needed for new reporting access. Contact your account team for more information.
 {% endhint %}
 
-If you still have issues accessing the new reporting after using these troubleshooting tips, [submit a ticket](https://support.snyk.io/hc/en-us/requests/new) to Snyk support.
+If you still have issues accessing the new reporting after using these troubleshooting tips, [submit a ticket](https://support.snyk.io) to Snyk support.
 
 ## Snyk Code
 

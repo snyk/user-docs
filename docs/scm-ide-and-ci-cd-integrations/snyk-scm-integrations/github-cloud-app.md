@@ -85,7 +85,7 @@ If you are an Enterprise plan customer, you can migrate Snyk Targets to the GitH
 
 ### Feedback on the GitHub Cloud App
 
-Because this feature is in  [Early Access](../../getting-started/snyk-release-process.md), the functionality will likely evolve based on your feedback. If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+Because this feature is in  [Early Access](../../getting-started/snyk-release-process.md), the functionality will likely evolve based on your feedback. If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io).
 
 ## Group level - Snyk AppRisk integrations
 

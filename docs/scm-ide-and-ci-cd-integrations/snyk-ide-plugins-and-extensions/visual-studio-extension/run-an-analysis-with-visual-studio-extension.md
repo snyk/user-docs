@@ -11,7 +11,7 @@ The extension provides two kinds of results:
 
 Note that your solution must be built successfully in order to allow the CLI to pick up the dependencies and find the vulnerabilities.
 
-If you see only npm vulnerabilities or vulnerabilities that are not related to your C#/.NET projects, that can mean your project was not built successfully and was not detected by the CLI. If you have difficulty or questions, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If you see only npm vulnerabilities or vulnerabilities that are not related to your C#/.NET projects, that can mean your project was not built successfully and was not detected by the CLI. If you have difficulty or questions, submit a request to [Snyk Support](https://support.snyk.io).
 
 <figure><img src="../../../.gitbook/assets/readme_image_3_1_1.png" alt="Run scan"><figcaption><p>Run scan</p></figcaption></figure>
 

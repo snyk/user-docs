@@ -14,7 +14,7 @@ The examples on this page use [HTTPie](https://httpie.io/), but you can use any 
 
 The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `rpm`, `swift` and `maven`.
 
-If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io).
 
 ## Request for List issues for a package endpoint
 
@@ -245,7 +245,7 @@ Where applicable, **pagination links for the results** are included as follows:
 
 ## Troubleshooting for the List issues for a package endpoint
 
-The following are **error states** that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+The following are **error states** that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io).
 
 **Invalid PURL**\
 400\
@@ -282,19 +282,19 @@ The default parameters for this request are limit = 1000, and offset >= 0.
 
 **Authorization request failure**\
 500\
-This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io).
 
 **Internal server error**\
 500\
-This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io).
 
 **Vulnerability service unavailable**\
 503\
-This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io).
 
 **Vulnerability service error**\
 500\
-This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io).
 
 An example of this error response follows:
 

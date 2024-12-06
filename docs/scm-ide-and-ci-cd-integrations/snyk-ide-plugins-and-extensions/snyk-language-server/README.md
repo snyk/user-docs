@@ -186,4 +186,4 @@ Snyk only provides fixes in new versions and cannot fix older versions. Customer
 
 This policy fosters innovation while optimizing resources.
 
-If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
+If you need help, submit a [request](https://support.snyk.io) to Snyk Support.

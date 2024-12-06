@@ -4,11 +4,11 @@
 
 Snyk supports [Ruby for code analysis](ruby-for-code-analysis.md) and [Ruby for open source](ruby-for-open-source.md).
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 
 Available functions:
 
-* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* SCM import, available for Snyk Open Source and Snyk Code.
 * Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
 * Test your app's SBOM using `pkg:gem`
 * Test your app's packages using `pkg:gem`
@@ -39,19 +39,19 @@ Snyk for Ruby supports the following file formats:
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for Ruby:&#x20;
+The following frameworks and libraries are supported in Snyk for Ruby:
 
-* ActiveRecord - Partial&#x20;
-* Connection - Comprehensive&#x20;
-* LibXML - Comprehensive&#x20;
-* mysql2 - Comprehensive&#x20;
-* Nokogiri - Comprehensive&#x20;
-* OpenSSL - Comprehensive&#x20;
-* openai ruby client - Comprehensive&#x20;
-* ruby-openai - Comprehensive&#x20;
-* rexml - Comprehensive&#x20;
-* Ruby On Rails - Comprehensive&#x20;
-* sinatra - Comprehensive&#x20;
+* ActiveRecord - Partial
+* Connection - Comprehensive
+* LibXML - Comprehensive
+* mysql2 - Comprehensive
+* Nokogiri - Comprehensive
+* OpenSSL - Comprehensive
+* openai ruby client - Comprehensive
+* ruby-openai - Comprehensive
+* rexml - Comprehensive
+* Ruby On Rails - Comprehensive
+* sinatra - Comprehensive
 * sqlite3-ruby - Comprehensive
 
 ## Features
@@ -64,4 +64,4 @@ The following features are supported in Snyk for Ruby:
 
 ## Troubleshooting Snyk for Ruby
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io).

@@ -14,9 +14,9 @@ You can use PHP versions 5.2 up to 8.0.
 
 Available functions:
 
-* SCM import, available for Snyk Open Source and Snyk Code.&#x20;
+* SCM import, available for Snyk Open Source and Snyk Code.
 * Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
-* Test your app's SBOM using `pkg:composer`&#x20;
+* Test your app's SBOM using `pkg:composer`
 * Test your app's packages using `pkg:composer`
 
 ## Package managers and supported file extensions
@@ -28,14 +28,14 @@ Snyk for PHP supports Composer as a package manager and [packagist.org](https://
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for PHP:&#x20;
+The following frameworks and libraries are supported in Snyk for PHP:
 
-* Laravel - Partial&#x20;
-* llphant - Comprehensive&#x20;
-* openai-php/client - Comprehensive&#x20;
-* orhanerday/open-ai - Comprehensive&#x20;
-* Pclzip - Comprehensive&#x20;
-* Symfony - Partial&#x20;
+* Laravel - Partial
+* llphant - Comprehensive
+* openai-php/client - Comprehensive
+* orhanerday/open-ai - Comprehensive
+* Pclzip - Comprehensive
+* Symfony - Partial
 * theodo-group/llphant - Comprehensive
 
 ## Features
@@ -74,5 +74,5 @@ These settings are applied to all newly imported Projects and to all existing Pr
 
 ## Troubleshooting Snyk for PHP
 
-If you need help, [contact Snyk Support](https://support.snyk.io/hc/en-us).&#x20;
+If you need help, [contact Snyk Support](https://support.snyk.io).
 

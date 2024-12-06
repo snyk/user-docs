@@ -310,7 +310,7 @@ Shorten the string by using [character classes](https://developer.mozilla.org/en
 
 If you still require more than 1,000 characters to describe your tags, CVS might not be a great fit.&#x20;
 
-For information on other options, contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+For information on other options, contact [Snyk support](https://support.snyk.io).
 
 [^1]: MOST\_SIGNIFICANT
 

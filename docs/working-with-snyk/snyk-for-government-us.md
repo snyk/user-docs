@@ -23,7 +23,7 @@ This list identifies all the areas with differences in functionality in the Snyk
 
 API keys are not available.
 
-This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See[ Service accounts using OAuth 2.0](https://docs.snyk.io/enterprise-configuration/service-accounts/service-accounts-using-oauth-2.0) for details. If you need help, contact [Snyk Support](https://support.snyk.io/hc/en-us).
+This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See[ Service accounts using OAuth 2.0](https://docs.snyk.io/enterprise-configuration/service-accounts/service-accounts-using-oauth-2.0) for details. If you need help, contact [Snyk Support](https://support.snyk.io).
 
 In addition, the CLI must be used in OAuth mode, not with token-driven authentication.
 
@@ -55,10 +55,10 @@ See [Single Sign-On (SSO) for authentication to Snyk](../enterprise-setup/single
 * [Snyk Advisor](https://snyk.io/advisor/)
 * [Snyk Learn](https://learn.snyk.io/?)
 * Social logins: Google, GitHub, and so on as identity provider
-* SSO into [Snyk Support](https://support.snyk.io/hc/en-us)
+* SSO into [Snyk Support](https://support.snyk.io)
 * [Status Page](https://status.snyk.io)
 * Outbound webhooks
 * Session Concurrency is limited to three (3) sessions per user.
 * Session lockout: After sessions expire, the signed-in user loses access to all data present in existing session windows.
-* Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](../snyk-admin/groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md) for details.&#x20;
+* Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](../snyk-admin/groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md) for details.
 * [Snyk CLI docker images](../snyk-cli/install-or-update-the-snyk-cli/#snyk-cli-in-a-docker-image). These do not support FIPS-validated cryptography and should only be used when this can be accepted.

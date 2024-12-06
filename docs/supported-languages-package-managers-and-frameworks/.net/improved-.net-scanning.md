@@ -11,7 +11,7 @@ You can enable the feature by using [Snyk Preview](../../snyk-admin/snyk-preview
 {% hint style="info" %}
 While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations. For more information, see [Enterprise setup](https://docs.snyk.io/enterprise-configuration).
 
-You can report issues by submitting a [support ticket](https://support.snyk.io/hc/en-us/requests/new).
+You can report issues by submitting a [support ticket](https://support.snyk.io).
 {% endhint %}
 
 ## Limitations of existing solution
