@@ -1,9 +1,6 @@
 # API endpoints index and tips
 
-
-
-{% hint style="info" %}
-This index and notes section of the documentation provides, in addition to this index, [solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-the-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
+This index and notes section of the documentation provides, in addition to this index, \[solutions for specific use cases]\(solutions-for-specific-use-cases.md), \[scenarios for using Snyk APIs]\(scenarios-for-using-the-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
 
 * [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
 * [Project issue paths V1 API endpoints](project-issue-paths-api-endpoints.md)
@@ -14,6 +11,8 @@ See also the following sections on specific APIs:
 * [How to use Snyk Apps APIs](../how-to-use-snyk-apps-apis/)
 * [How to use Snyk SBOM and List issues APIs](../how-to-use-snyk-sbom-and-list-issues-apis/)
 * [How to use Snyk webhooks APIs](../how-to-use-snyk-webhooks-apis/)
+
+For additional information, see the [API support articles](https://support.snyk.io/s/topic/0TOPU00000BgWMv4AN/snyk-api).
 
 This index includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This index is a work in progress; additional information is being added continually.
 
@@ -216,7 +215,7 @@ The View Project History permission is needed to use this API.
 
 ### [Create a Custom Base Image from an existing container project](../reference/custom-base-images.md#custom_base_images)
 
-**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/), section  [Mark the created Project as a custom base image](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/#mark-the-created-project-as-a-custom-base-image); \
+**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/), section [Mark the created Project as a custom base image](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/#mark-the-created-project-as-a-custom-base-image);\
 [Versioning schema for custom base images](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images.md)
 
 ### [Get a custom base image collection](../reference/custom-base-images.md#custom_base_images-1)
@@ -333,7 +332,7 @@ The View Project History permission is needed to use this API.
 
 Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](../../snyk-admin/snyk-projects/); the page includes the [Targets definition](../../snyk-admin/snyk-projects/#target).
 
-A typical import starts with using the endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to request a target to be processed. Then, use the endpoint [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) to poll the Import Job AP I for further details on completion and resulting Snyk Projects.&#x20;
+A typical import starts with using the endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to request a target to be processed. Then, use the endpoint [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) to poll the Import Job AP I for further details on completion and resulting Snyk Projects.
 
 ### [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) and [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)
 
@@ -446,7 +445,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 **Note:** Remedies are not included in the response.
 
-Additional information: [ Reachability](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
+Additional information: [Reachability](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
 
 ### [Get an issue](../reference/issues.md#groups-group_id-issues-issue_id) (for a Group)
 
@@ -605,7 +604,7 @@ More information: [Annotated import](../../scan-with-snyk/snyk-container/kuberne
 
 By using the API endpoint Applying attributes, you can set attributes for Snyk Projects including business criticality, lifecycle stage, and environment once the project has been created . To do so:
 
-* Import the project using the  API endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
+* Import the project using the API endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
 * Get the status API ID from [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
 * Poll using the endpoint [Import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) until all imports have completed.
 * Parse the project IDs from the `projectURL` field.
@@ -780,8 +779,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 ### [Slack notification settings override for projects](../reference/slacksettings.md#orgs-org_id-slack_app-bot_id-projects)
 
 **More information:** [Slack app (JIra integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: List all Slack notification customizations for a project);\
-[api-import Creating orgnizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
-
+[api-import Creating orgnizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\\
 
 ### [Create a new Slack settings override for a given project](../reference/slacksettings.md#orgs-org_id-slack_app-bot_id-projects-project_id)
 
@@ -803,7 +801,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ## Targets
 
-### [Get targets by org ID](../reference/targets.md#orgs-org_id-targets)&#x20;
+### [Get targets by org ID](../reference/targets.md#orgs-org_id-targets)
 
 **More information:** [Target definition on the Snyk Projects page](../../snyk-admin/snyk-projects/#target);\
 [Scenario: Identify and import new repositories only](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis);\
@@ -841,7 +839,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Test maven file](../reference/test-v1.md#test-maven)
 
-### [Test  for issues in a public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version) (Maven)
+### [Test for issues in a public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version) (Maven)
 
 **More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md)
 
@@ -895,7 +893,7 @@ Note: Use this endpoint to remove users from a group.
 
 ### [List webhooks](../reference/webhooks-v1.md#org-orgid-webhooks-1)
 
-**More information:**&#x20;
+**More information:**
 
 ### [Retrieve a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid)
 
@@ -905,6 +903,4 @@ Note: Use this endpoint to remove users from a group.
 
 ### [Ping a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-ping)
 
-
-
-\
+\\
