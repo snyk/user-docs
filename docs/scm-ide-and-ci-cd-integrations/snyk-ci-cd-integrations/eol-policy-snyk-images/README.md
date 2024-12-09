@@ -4,7 +4,7 @@ This page outlines the Snyk end-of-life policy for images provided by the [Snyk 
 
 ## Purpose of policy
 
-As a continued commitment to helping customers ship secure code, Snyk will provide images that contain software supported by its upstream vendor. Snyk will not build, maintain, or ship images based on EOL software. For example, Snyk has stopped building images based on Python 3.7, which is not actively supported does not receive security updates from Python.&#x20;
+As a continued commitment to helping customers ship secure code, Snyk will provide images that contain software supported by its upstream vendor. Snyk will not build, maintain, or ship images based on EOL software. For example, Snyk has stopped building images based on Python 3.7, which is not actively supported and does not receive security updates from Python.&#x20;
 
 ## Snyk Images life cycle
 
