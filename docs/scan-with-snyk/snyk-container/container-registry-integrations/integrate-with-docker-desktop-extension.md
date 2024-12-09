@@ -1,5 +1,13 @@
 # Integrate with Docker Desktop Extension
 
+{% hint style="warning" %}
+**End of support for Snyk Docker Desktop extension**
+
+Effective June 20, 2025, the integration with Docker Desktop will no longer be supported. After this date, the extension will no longer receive updates or technical support. Until June 20, updates for this integration will only address known high-severity security vulnerabilities.
+
+To avoid disruption, Snyk encourages you to transition to scanning your container images using the [Snyk CLI](../../../snyk-cli/). This provides enhanced functionality, flexibility, and performance.
+{% endhint %}
+
 Docker Desktop is a GUI that simplifies the management of containers and containerized applications. You can use it with Mac, Windows, or Linux.
 
 Snyk has a Docker Desktop extension that allows developers and platform teams to scan container images for vulnerabilities within the Docker Desktop interface.
