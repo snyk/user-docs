@@ -3,12 +3,12 @@
 {% hint style="info" %}
 **Release status**
 
-The GitHub Cloud App is in Early Access. This feature is not supported for Snyk Broker or self-hosted instances of GitHub.
+If you are using Broker, see the [Universal Broker documentation](https://docs.snyk.io/enterprise-setup/snyk-broker/universal-broker).
 
 The GitHub Cloud App does not have pre-configured IP addresses that can be automatically added to your allowlist. However, you can reach out to your Snyk account team to obtain the Snyk IPs for manual addition.
 {% endhint %}
 
-When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
+When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
 * [Group level ](github-cloud-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](github-cloud-app.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
@@ -31,7 +31,7 @@ Users can install the app on GitHub Organizations they are Repository Admins on 
 The GitHub Cloud App improves on many features as compared to the current GitHub integration, including role-based, granular access control, increased API rate limits, and creation of an entry point for expanded and enhanced developer experiences.
 
 * **RBAC (Role-Based Access Control) Compliance**: With the GitHub Cloud App, the access control mechanism is decoupled from individual user accounts. Instead, it is associated with the app entity itself. This separation allows for better management and enforcement of RBAC policies, as access control is handled at the application level rather than being tied to individual user accounts.
-* **Granular access control**: The GitHub Cloud App allows for fine-grained control over access permissions at the repository level.&#x20;
+* **Granular access control**: The GitHub Cloud App allows for fine-grained control over access permissions at the repository level.
 * **Increased API rate limit**: The GitHub Cloud App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit will assist in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
 * **Enabler for an enhanced developer experience:**
   * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of potential future PR check workflow improvements.
@@ -52,8 +52,7 @@ Select the **GitHub Cloud App** tile.
 
 <figure><img src="../../.gitbook/assets/github-cloud-app-tile.png" alt="GitHub Cloud App tile on the Integrations page" width="230"><figcaption><p>GitHub Cloud App tile on the Integrations page</p></figcaption></figure>
 
-In the confirmation modal, select **Configure GitHub Cloud App.**\
-
+In the confirmation modal, select **Configure GitHub Cloud App.**\\
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.03.50.png" alt="Configuration notice for the GitHub Cloud App" width="375"><figcaption><p>Configuration notice for the GitHub Cloud App</p></figcaption></figure>
 
@@ -61,13 +60,11 @@ You are then asked to authorize the app to act on your user’s behalf. The app 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.05.37.png" alt="" width="375"><figcaption><p>User authorization for the app</p></figcaption></figure>
 
-When the install screen in GitHub opens, you can select the GitHub organization where you wish to install the app.\
-
+When the install screen in GitHub opens, you can select the GitHub organization where you wish to install the app.\\
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.06.25.png" alt="Selection of the GitHub organization to install the app into" width="375"><figcaption><p>Selection of the GitHub organization to install the app into</p></figcaption></figure>
 
-If the GitHub Cloud App is already installed in a GitHub organization, you can select that same GitHub organization during the integration process for a different Snyk Organization.\
-
+If the GitHub Cloud App is already installed in a GitHub organization, you can select that same GitHub organization during the integration process for a different Snyk Organization.\\
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.13.54.png" alt="Connect another GitHub organization into a Snyk Organization" width="563"><figcaption><p>Connect another GitHub organization into a Snyk Organization</p></figcaption></figure>
 
@@ -85,9 +82,8 @@ If you are an Enterprise plan customer, you can migrate Snyk Targets to the GitH
 
 ### Feedback on the GitHub Cloud App
 
-Because this feature is in  [Early Access](../../getting-started/snyk-release-process.md), the functionality will likely evolve based on your feedback. If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io).
+If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io).
 
 ## Group level - Snyk AppRisk integrations
 
 Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
-

@@ -132,7 +132,7 @@ Snyk can integrate with the following SCMs to help you track, monitor, and fix t
 ## Workspaces for SCM integrations
 
 {% hint style="info" %}
-This feature is available for GitHub, GitHub Enterprise, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos (TFS) integrations.
+This feature is available for GitHub, GitHub Enterprise, GitHub Cloud App, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos (TFS) integrations.
 {% endhint %}
 
 The Workspaces feature enables Snyk to ingest a temporary snapshot of repository contents, and all commit metadata through your configured SCM integrations.
