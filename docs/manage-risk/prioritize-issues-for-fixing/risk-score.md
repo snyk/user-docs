@@ -135,6 +135,8 @@ User-defined Project attribute representing the subjective business impact of th
 When you apply a business criticality attribute to a Project, a retest is required for the Risk Scores to incorporate the new data. When no Business Criticality is assigned, the Impact subscore will not be affected.&#x20;
 {% endhint %}
 
+When the business criticality for a Project is not configured, the `high` default value is used so that the subscore remains unaffected.
+
 ### Objective likelihood risk factors
 
 #### Exploit maturity&#x20;
@@ -150,13 +152,15 @@ Represents the existence and maturity of any public exploit retrieved and valida
 
 #### EPSS score&#x20;
 
-Exploit Prediction Scoring System (EPSS), predicting whether a CVE will be exploited in the wild, based on an elaborated model created and owned by the FIRST Organization. \
+Exploit Prediction Scoring System (EPSS) predicts whether a CVE will be exploited in the wild based on an elaborate model created and owned by the FIRST Organization. \
 The probability is the direct output of the EPSS model and conveys an overall sense of the threat of exploitation in the wild. This data is updated daily, relying on the latest available EPSS model version. See the EPSS [documentation](https://www.first.org/epss/articles/prob_percentile_bins) for more details.\
 **Possible input values:** `EPSS score [0.00-1.00]`
 
 {% hint style="info" %}
 The likelihood subscore increases significantly according to the EPSS score.
 {% endhint %}
+
+If the vulnerability is found to be malicious, the EPSS value is set to `1`. If no information regarding the EPSS is available, then the default value is `0.01055`.
 
 #### Attack vector&#x20;
 
