@@ -1,11 +1,13 @@
 # GitHub Cloud App
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
 If you are using Broker, see the [Universal Broker documentation](https://docs.snyk.io/enterprise-setup/snyk-broker/universal-broker).
 
-The GitHub Cloud App does not have pre-configured IP addresses that can be automatically added to your allowlist. However, you can reach out to your Snyk account team to obtain the Snyk IPs for manual addition.
+If you want to use your own GitHub App, reach out to your Snyk account team.
+
+The GitHub Cloud App does not have pre-configured IP addresses that can be automatically added to your allowlist. Contact your Snyk account team to obtain the Snyk IPs for manual addition.
 {% endhint %}
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
@@ -50,9 +52,9 @@ Log in to your Snyk account and navigate to the Integrations section in the Snyk
 
 Select the **GitHub Cloud App** tile.
 
-<figure><img src="../../.gitbook/assets/github-cloud-app-tile.png" alt="GitHub Cloud App tile on the Integrations page" width="230"><figcaption><p>GitHub Cloud App tile on the Integrations page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (588).png" alt=""><figcaption><p>GitHub Cloud App tile on the Integrations page</p></figcaption></figure>
 
-In the confirmation modal, select **Configure GitHub Cloud App.**\\
+In the confirmation modal, select **Configure GitHub Cloud App.**
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.03.50.png" alt="Configuration notice for the GitHub Cloud App" width="375"><figcaption><p>Configuration notice for the GitHub Cloud App</p></figcaption></figure>
 
@@ -60,11 +62,11 @@ You are then asked to authorize the app to act on your user’s behalf. The app 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.05.37.png" alt="" width="375"><figcaption><p>User authorization for the app</p></figcaption></figure>
 
-When the install screen in GitHub opens, you can select the GitHub organization where you wish to install the app.\\
+When the install screen in GitHub opens, you can select the GitHub organization where you wish to install the app.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.06.25.png" alt="Selection of the GitHub organization to install the app into" width="375"><figcaption><p>Selection of the GitHub organization to install the app into</p></figcaption></figure>
 
-If the GitHub Cloud App is already installed in a GitHub organization, you can select that same GitHub organization during the integration process for a different Snyk Organization.\\
+If the GitHub Cloud App is already installed in a GitHub organization, you can select that same GitHub organization during the integration process for a different Snyk Organization.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-26 at 10.13.54.png" alt="Connect another GitHub organization into a Snyk Organization" width="563"><figcaption><p>Connect another GitHub organization into a Snyk Organization</p></figcaption></figure>
 
