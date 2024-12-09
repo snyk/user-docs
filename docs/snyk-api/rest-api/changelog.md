@@ -1,3 +1,33 @@
+## 2024-10-15 - Updated 2024-12-09
+
+### GET - `/orgs/{org_id}` - Updated
+- the response property `data` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `jsonapi` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the response property `links` became optional for the status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `links/first` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `links/last` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `links/next` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `links/prev` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the optional property `links/related` from the response with the `200` status
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the non-success response with the status `409`
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+- added the optional property `data/attributes/updated_at` to the response with the `200` status
+
+- the response property `data/attributes` became required for the status `200`
+
+- the `data/type` response`s property pattern `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$` was added for the status `200`
+
+
 ## 2024-10-15 - Updated 2024-11-28
 
 ### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
