@@ -53,7 +53,7 @@ To opt out of any scans you feel are unnecessary, use `--nested-jar-depth=0` .
 
 ### Maven packages suffixed with a version of @unknown
 
-&#x20;Snyk Container CLI could report Maven packages suffixed with a version of @unknown when `pom.properties`manifest file is not included in the scanned JARs. For details of other reasons why the package version is reported as @unknown, see  [Why-does-my-Maven-package-show-Unknown-through-the-SCM](https://support.snyk.io/hc/en-us/articles/4934749708829-Why-does-my-Maven-package-show-Unknown-through-the-SCM).&#x20;
+Snyk Container CLI could report Maven packages suffixed with a version of @unknown when `pom.properties` manifest file is not included in the scanned JARs. For details of other reasons why the package version is reported as @unknown, see  [Why-does-my-Maven-package-show-Unknown-through-the-SCM](https://support.snyk.io/s/article/Why-does-my-Maven-package-show-unknown).
 
 ## View application vulnerabilities and licensing issues
 
@@ -76,7 +76,7 @@ You can set the scan frequency for each Project. The default is daily testing. T
 
 <figure><img src="../../../.gitbook/assets/scan_frequency.png" alt=""><figcaption><p>Update scan frequency</p></figcaption></figure>
 
-## **Supported container registries**
+## Supported container registries
 
 The following container registries are supported:&#x20;
 
@@ -92,7 +92,7 @@ The following container registries are supported:&#x20;
 * DigitalOcean
 * GitLab
 
-## **Supported integrations**
+## Supported integrations
 
 The supported languages work with the following integrations:
 

@@ -58,10 +58,6 @@ Each Project detail page has a **snapshot** showing when the Project was last te
 
 <figure><img src="../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
-{% hint style="info" %}
-If you encounter any errors during import, see the [Importing Projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information in the support articles.
-{% endhint %}
-
 ## Issue card details for Snyk IaC
 
 &#x20;Each issue card shows information about the resource and the path by which it was introduced.&#x20;
