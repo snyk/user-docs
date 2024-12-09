@@ -15,9 +15,6 @@ See also the following sections on specific APIs:
 * [How to use Snyk SBOM and List issues APIs](../how-to-use-snyk-sbom-and-list-issues-apis/)
 * [How to use Snyk webhooks APIs](../how-to-use-snyk-webhooks-apis/)
 
-For more information about using the Snyk API, see the [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API).
-{% endhint %}
-
 This index includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This index is a work in progress; additional information is being added continually.
 
 ## AccessRequests (beta)
