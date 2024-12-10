@@ -30,7 +30,7 @@ Veracode for Snyk AppRisk Pro is in Early Access and available only with Snyk En
 
 ### Prerequisites <a href="#verocode-prerequisites" id="verocode-prerequisites"></a>
 
-The Veracode application concept is matched into the Snyk AppRisk repository assets. You need to create and utilize the Veracode custom field by using the [Veracode API](https://app.swaggerhub.com/apis/Veracode/veracode-applications\_api\_specification/1.0#/Application%20information%20API/updateApplicationUsingPUT). Access the [Veracode custom metadata field](https://docs.veracode.com/r/t\_create\_custom\_metadata) for more details.
+The Veracode application concept is matched into the Snyk AppRisk repository assets. You need to create and utilize the Veracode custom field by using the [Veracode API](https://app.swaggerhub.com/apis/Veracode/veracode-applications_api_specification/1.0#/Application%20information%20API/updateApplicationUsingPUT). Access the [Veracode custom metadata field](https://docs.veracode.com/r/t_create_custom_metadata) for more details.
 
 Ensure you are adding a custom field called repoURL:
 
@@ -44,7 +44,7 @@ Ensure you are adding a custom field called repoURL:
 
 ### Required parameters <a href="#veracode-required-parameters" id="veracode-required-parameters"></a>
 
-* API ID and API Key - API credentials associated with a user account. For more information, access the [Veracode API credentials](https://help.veracode.com/r/c\_api\_credentials3) link.
+* API ID and API Key - API credentials associated with a user account. For more information, access the [Veracode API credentials](https://help.veracode.com/r/c_api_credentials3) link.
 
 ### Integration Hub setup <a href="#veracode-integration-hub-setup" id="veracode-integration-hub-setup"></a>
 
@@ -56,6 +56,8 @@ Ensure you are adding a custom field called repoURL:
 6. Add the **API key** from your Veracode account.
 7. Click the **Done** button.
 8. When the connection is established, the status of the Veracode integration is changed to **Connected**.
+
+<figure><img src="../../../.gitbook/assets/image (589).png" alt=""><figcaption><p>Veracode - Setup screen</p></figcaption></figure>
 
 ## Checkmarx setup guide
 
@@ -94,6 +96,8 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 7. Click the **Done** button.
 8. When the connection is established, the status of the Checkmarx integration is changed to **Connected**.
 
+<figure><img src="../../../.gitbook/assets/image (590).png" alt=""><figcaption><p>Checkmarx - Setup screen</p></figcaption></figure>
+
 ## SonarQube setup guide
 
 {% hint style="info" %}
@@ -116,6 +120,8 @@ SonarQube for Snyk AppRisk Pro is in Early Access and available only with Snyk E
 * Add the **API token**. Navigate to your SonarQube account, select User, select My Account, select Security, and then User Token. Access the SonarQube [generating and using tokens](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/) documentation page for more details about the SonarQube API Key.
 * Click the **Done** button.
 * When the connection is established, the status of the SonarQube integration is changed to **Connected**.
+
+<figure><img src="../../../.gitbook/assets/image (591).png" alt=""><figcaption><p>SonarQube - Setup screen</p></figcaption></figure>
 
 ## Nightfall setup guide
 
@@ -249,6 +255,8 @@ Comply with the following steps before integrating Dynatrace with Snyk AppRisk:
 After the Dynatrace runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
 {% endhint %}
 
+<figure><img src="../../../.gitbook/assets/image (592).png" alt=""><figcaption><p>Dynatrace - Setup screen</p></figcaption></figure>
+
 ## Sysdig setup guide
 
 {% hint style="info" %}
@@ -299,3 +307,5 @@ The created **Service Account** must be under **Sysdig Secure**, not **Sysdig Mo
 {% hint style="info" %}
 After the Sysdig runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
 {% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (593).png" alt=""><figcaption><p>Sysdig - Setup screen</p></figcaption></figure>
