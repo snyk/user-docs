@@ -11222,11 +11222,6 @@ paths:
                         - docker
                         - linux
                         - dockerfile
-                        - terraform
-                        - kubernetes
-                        - helm
-                        - cloudformation
-                        - arm
                       projects: []
                       issues: []
                       identifier: ''
@@ -11272,11 +11267,6 @@ paths:
                   - docker
                   - linux
                   - dockerfile
-                  - terraform
-                  - kubernetes
-                  - helm
-                  - cloudformation
-                  - arm
                 projects: []
                 issues: []
                 identifier: ''
@@ -11443,11 +11433,6 @@ paths:
                         - docker
                         - linux
                         - dockerfile
-                        - terraform
-                        - kubernetes
-                        - helm
-                        - cloudformation
-                        - arm
                       projects: []
                       issues: []
                       identifier: ''
@@ -11493,11 +11478,6 @@ paths:
                   - docker
                   - linux
                   - dockerfile
-                  - terraform
-                  - kubernetes
-                  - helm
-                  - cloudformation
-                  - arm
                 projects: []
                 issues: []
                 identifier: ''
@@ -11604,10 +11584,6 @@ paths:
                         - docker
                         - linux
                         - dockerfile
-                        - terraform
-                        - kubernetes
-                        - helm
-                        - cloudformation
                       projects: []
                       ignored: false
                       patched: false
@@ -11645,10 +11621,6 @@ paths:
                   - docker
                   - linux
                   - dockerfile
-                  - terraform
-                  - kubernetes
-                  - helm
-                  - cloudformation
                 projects: []
                 ignored: false
                 patched: false
@@ -11789,10 +11761,6 @@ paths:
                         - docker
                         - linux
                         - dockerfile
-                        - terraform
-                        - kubernetes
-                        - helm
-                        - cloudformation
                       projects: []
                       ignored: false
                       patched: false
@@ -11830,10 +11798,6 @@ paths:
                   - docker
                   - linux
                   - dockerfile
-                  - terraform
-                  - kubernetes
-                  - helm
-                  - cloudformation
                 projects: []
                 ignored: false
                 patched: false
@@ -11966,10 +11930,6 @@ paths:
                         - docker
                         - linux
                         - dockerfile
-                        - terraform
-                        - kubernetes
-                        - helm
-                        - cloudformation
                       projects: []
             example:
               filters:
@@ -11989,10 +11949,6 @@ paths:
                   - docker
                   - linux
                   - dockerfile
-                  - terraform
-                  - kubernetes
-                  - helm
-                  - cloudformation
                 projects: []
         required: true
       responses:
@@ -12095,10 +12051,6 @@ paths:
                         - docker
                         - linux
                         - dockerfile
-                        - terraform
-                        - kubernetes
-                        - helm
-                        - cloudformation
                       projects: []
             example:
               filters:
@@ -12118,10 +12070,6 @@ paths:
                   - docker
                   - linux
                   - dockerfile
-                  - terraform
-                  - kubernetes
-                  - helm
-                  - cloudformation
                 projects: []
         required: true
       responses:
