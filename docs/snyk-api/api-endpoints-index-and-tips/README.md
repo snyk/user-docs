@@ -799,7 +799,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Get Slack Channel name by Slack Channel ID](../reference/slack.md#orgs-org_id-slack_app-tenant_id-channels-channel_id)
 
-## [Snapshots (v1)](./#snapshots-v1)
+## Snapshots (v1)
 
 ### [List all project snapshots](../reference/snapshots-v1.md#org-orgid-project-projectid-history)
 
