@@ -799,6 +799,16 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Get Slack Channel name by Slack Channel ID](../reference/slack.md#orgs-org_id-slack_app-tenant_id-channels-channel_id)
 
+## [Snapshots (v1)](./#snapshots-v1)
+
+### [List all project snapshots](../reference/snapshots-v1.md#org-orgid-project-projectid-history)
+
+### [List all project snapshot issue paths](../reference/snapshots-v1.md#org-orgid-project-projectid-history-snapshotid-issue-issueid-paths)
+
+**More information:** [Project issue paths API endpoints](project-issue-paths-api-endpoints.md)
+
+### [List all project snapshot aggregated issues](../reference/snapshots-v1.md#org-orgid-project-projectid-history-snapshotid-aggregated-issues)
+
 ## Targets
 
 ### [Get targets by org ID](../reference/targets.md#orgs-org_id-targets)
