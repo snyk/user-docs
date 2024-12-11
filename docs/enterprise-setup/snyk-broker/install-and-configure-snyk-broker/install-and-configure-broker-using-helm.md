@@ -6,6 +6,11 @@ Before starting installation, review the [Prerequisites](../prepare-snyk-broker-
 
 For **all other environments**, you can install Snyk Broker using the [Docker images](https://github.com/snyk/broker) provided by Snyk. For details, see [Install and configure Broker using Docker](install-and-configure-broker-using-docker.md).
 
+{% hint style="info" %}
+**Multi-tenant settings for regions other than the default**\
+When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Regional hosting and data residency, Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+{% endhint %}
+
 ## Install using the Snyk Broker Helm Chart
 
 The Helm chart does not manage connectivity, and thus you will be responsible for managing [ingress](advanced-configuration-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.

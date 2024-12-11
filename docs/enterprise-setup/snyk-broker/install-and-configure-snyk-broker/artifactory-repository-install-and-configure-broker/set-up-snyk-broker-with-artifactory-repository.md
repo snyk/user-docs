@@ -19,10 +19,8 @@ To use the Broker client with an Artifactory Registry deployment, **run** `docke
 ## Docker run commands to set up a Broker Client for Artifactory Repository
 
 {% hint style="info" %}
-**Multi-tenant settings for EU and AU**\
-When you set up Snyk Broker for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
-Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
-For the URLs, see [Regional hosting and data residency](../../../../working-with-snyk/regional-hosting-and-data-residency.md).
+**Multi-tenant settings for regions other than the default**\
+When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Regional hosting and data residency, Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
 {% endhint %}
 
 **Copy the following command** to set up a fully configured Broker Client to use with Artifactory Registry. You can run the Docker container by providing the relevant configuration:

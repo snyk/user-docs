@@ -18,6 +18,11 @@ Then, run the following commands to install the Broker and customize the environ
 
 For `artifactoryUrl` value do not include `https://`
 
+{% hint style="info" %}
+**Multi-tenant settings for regions other than the default**\
+When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Regional hosting and data residency, Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+{% endhint %}
+
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=artifactory \
