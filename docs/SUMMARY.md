@@ -1033,6 +1033,7 @@
     * [Organization and Group identification for Projects using the API](snyk-api/api-endpoints-index-and-tips/organization-and-group-identification-for-projects-using-the-api.md)
     * [Project issue paths API endpoints](snyk-api/api-endpoints-index-and-tips/project-issue-paths-api-endpoints.md)
     * [Project type responses from the API](snyk-api/api-endpoints-index-and-tips/project-type-responses-from-the-api.md)
+    * [Examples for the Update existing integration endpoint](snyk-api/api-endpoints-index-and-tips/examples-for-the-update-existing-integration-endpoint.md)
   * [How to use Snyk Apps APIs](snyk-api/how-to-use-snyk-apps-apis/README.md)
     * [About Snyk Apps](snyk-api/how-to-use-snyk-apps-apis/about-snyk-apps.md)
     * [Prerequisites for Snyk Apps](snyk-api/how-to-use-snyk-apps-apis/prerequisites-for-snyk-apps.md)

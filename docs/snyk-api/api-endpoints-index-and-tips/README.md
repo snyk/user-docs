@@ -391,7 +391,7 @@ The poll results return a message per manifest processed, either `success: true`
 ### [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid)
 
 **More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md) (Snyk Broker Code Agent);\
-[Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base)
+[Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base); [Examples for the Update existing integration endpoint](examples-for-the-update-existing-integration-endpoint.md)
 
 ### [Update](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings)
 
