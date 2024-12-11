@@ -65,7 +65,7 @@ password: required, string, Access Token
 
 OR EcrCredentials: object\
 region: required, string, for example, eu-west-3\
-roleArn: required, string, for example, arn:aws:iam:::role/
+roleArn: required, string, for example, arn:aws:iam::\<account-id>:role/\<newRole>
 
 OR GcrCredentials: object\
 password: required, string, JSON key file\
@@ -140,6 +140,20 @@ curl --include \
   "id": "9a3e5d90-b782-468a-a042-9a2073736f0b"
 }
 ```
+
+### Possible values for Type (integration type, enum)
+
+Same as [values for Set up Broker for an existing integration](examples-for-the-update-existing-integration-endpoint.md#possible-values-for-type-integration-type-enum).
+
+### Credentials needed for the integration you are updating
+
+Same as [credentials for Set up Broker for an existing integration](examples-for-the-update-existing-integration-endpoint.md#credentials-needed-for-the-integration-you-are-updating).
+
+### Snyk permissions needed
+
+View Organization\
+View Integrations\
+Edit Integrations
 
 ## Disable broker for an existing integration
 
