@@ -1,5 +1,12 @@
 # GitHub Server App
 
+When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
+
+* [Group level ](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+* [Organization level](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+
+## Organization level - Snyk integrations
+
 {% hint style="info" %}
 **Release status**
 
@@ -8,27 +15,20 @@ The GitHub Server App is in Early Access and available only for Enterprise plans
 This feature supports self-hosted instances of GitHub and Snyk's [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/).
 {% endhint %}
 
-When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
-
-* [Group level ](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-* [Organization level](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
-
-## Organization level - Snyk integrations
-
 This page covers the following features:
 
 * [GitHub Server App](github-server-app.md#prerequisites-for-github-server-app).
 * [Migrate from an existing GitHub Enterprise integration](github-server-app.md#migrate-from-an-existing-github-enterprise-integration).
 * [GitHub Server App for Universal Broker](github-server-app.md#set-up-the-github-server-app-for-universal-broker).
 
-## Prerequisites for GitHub Server App
+### Prerequisites for GitHub Server App
 
 * A self-hosted instance of GitHub.
 * Snyk Organization Admin user role.
 * GitHub Organization Admin user role.
 * A public or private GitHub repository.
 
-## GitHub Server App benefits <a href="#github-server-app-benefits" id="github-server-app-benefits"></a>
+### GitHub Server App benefits <a href="#github-server-app-benefits" id="github-server-app-benefits"></a>
 
 The Snyk GitHub Server App improves on many features compared to the Snyk GitHub Enterprise integration, including role-based granular access control, increased API rate limits, and the creation of an entry point for expanded and enhanced developer experiences.
 
@@ -39,7 +39,7 @@ The Snyk GitHub Server App improves on many features compared to the Snyk GitHub
   * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of potential future PR check workflow improvements.
   * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed directly by the GitHub App rather than a service account.
 
-## Set up the GitHub Server App
+### Set up the GitHub Server App
 
 {% hint style="warning" %}
 When setting up the GitHub Server App, you can only implement one of the following scenarios:
@@ -78,18 +78,18 @@ Specify whether you wish to install the app in all or a select number of the rep
 The GitHub Server App will lose access to Snyk if it is uninstalled from the GitHub organization. Should this happen you will be required to raise a support ticket before re-integrating with Snyk's GitHub Server App.&#x20;
 {% endhint %}
 
-## Migrate from an existing GitHub Enterprise integration
+### Migrate from an existing GitHub Enterprise integration
 
 If you are an Enterprise plan customer, you can migrate Snyk Targets to the GitHub Server App using the [snyk-migrate-to-github-app](https://github.com/snyk-labs/snyk-migrate-to-github-app) tool in the [tool repository](https://github.com/snyk-labs/snyk-migrate-to-github-app).
 
-## Set up the GitHub Server App for Universal Broker
+### Set up the GitHub Server App for Universal Broker
 
 The setup process for Universal Broker involves:
 
 1. [Creating a GitHub App on your GitHub Server instance](github-server-app.md#create-a-github-app-for-universal-broker).
 2. [Creating a base integration for the broker to use, created using the API](github-server-app.md#create-the-github-server-app-scm-integration).
 
-### Create a GitHub App for Universal Broker
+#### Create a GitHub App for Universal Broker
 
 To use the GitHub Server App with Universal Broker you need to create your own GitHub App on your GitHub Server instance. You can do this by using the `GITHUB-SERVER-URL` that pre-defines all the required permissions for Snyk services:
 
@@ -134,7 +134,7 @@ If you select to install the app on a subset of repositories in your GitHub orga
 
 On installation of the app you will receive an `InstallationID`. These are the final numbers in the URL of the page. Make a note of that number, as you will need it to setup a broker connection.
 
-### Create the GitHub Server App SCM integration
+#### Create the GitHub Server App SCM integration
 
 Before the GitHub Server App can be used the integration must be setup within Snyk. In order to setup a brokered integration for the GitHub Server App the API must be used.&#x20;
 
