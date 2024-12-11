@@ -10,7 +10,6 @@ For the URLs, see [Regional hosting and data residency](../../../../working-with
 When you set up Snyk Broker using Helm, you can set advanced parameters as explained on the following pages:
 
 * [Custom additional options for Broker Helm Chart installation](custom-additional-options-for-broker-helm-chart-installation.md)
-* [Adding custom accept.json for Helm installation](adding-custom-accept.json-for-helm-installation.md)
 * [Ingress options with Snyk Broker Helm installation](ingress-options-with-snyk-broker-helm-installation.md)
 * [Deploying multiple Brokers in the same namespace](deploying-multiple-brokers-in-the-same-namespace.md)
 * [Service accounts for Helm Chart installation](service-accounts-for-helm-chart-installation.md)

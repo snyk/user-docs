@@ -50,7 +50,5 @@ Webhook notifications are delivered to Snyk through the Broker Client only for e
 
 On occasion, you may need to [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection/) file in your Broker deployment. Doing this will remove the ability to apply ACCEPT rules when starting the Broker.
 
-For more information about the approved data list and the `accept.json` file, see [Custom approved listing filter with Docker](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/custom-approved-listing-filter-with-docker.md) and [Adding custom accept.json for Helm installation](install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/adding-custom-accept.json-for-helm-installation.md).
-
 \
 .
