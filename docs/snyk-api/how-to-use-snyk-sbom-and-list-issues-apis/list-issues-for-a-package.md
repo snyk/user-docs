@@ -1,6 +1,6 @@
 # List issues for a package
 
-The Snyk REST API endpoint [List issues for a package](../reference/issues.md#orgs-org\_id-packages-purl-issues) can be used to get all direct (non-transitive) vulnerabilities for a package using its `purl`, which is a uniform way of identifying software packages across ecosystems as defined in the [package URL specification](https://github.com/package-url/purl-spec).
+The Snyk REST API endpoint [List issues for a package](../reference/issues.md#orgs-org_id-packages-purl-issues) can be used to get all direct (non-transitive) vulnerabilities for a package using its `purl`, which is a uniform way of identifying software packages across ecosystems as defined in the [package URL specification](https://github.com/package-url/purl-spec).
 
 When you pass a `purl` to the endpoint, Snyk will find any known vulnerabilities for that package and return them as part of the response body.
 
@@ -38,7 +38,7 @@ $ http \
   version==2024-06-26
 ```
 
-For operating system packages, a vendor must be specified in the namespace portion, and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.&#x20;
+For operating system packages, a vendor must be specified in the namespace portion, and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.
 
 An example using a valid url-encoded operating system purl follows:
 
@@ -49,7 +49,7 @@ $ http \
   version==2024-06-26
 ```
 
-The Snyk REST API supports pagination. This has a default page limit of **1000**, with a default offset of **0.** Current, next, and previous pages are returned as links in the response. The following  parameters can be supplied as query parameters: `offset`, `limit`.
+The Snyk REST API supports pagination. This has a default page limit of **1000**, with a default offset of **0.** Current, next, and previous pages are returned as links in the response. The following parameters can be supplied as query parameters: `offset`, `limit`.
 
 An example paginated request follows:
 
@@ -72,7 +72,7 @@ The response provides a list of the vulnerabilities found for the package identi
 
 ### **Overview of package**
 
-Affected versions of this package are vulnerable to Denial of Service (DoS) through very large inputs with a specific sequence of characters in the `urlize()` and `urlizetrunc()` template filters.&#x20;
+Affected versions of this package are vulnerable to Denial of Service (DoS) through very large inputs with a specific sequence of characters in the `urlize()` and `urlizetrunc()` template filters.
 
 ### **Remediation**
 
@@ -86,15 +86,13 @@ The response is continuous, divided here to allow for explanations.
 
 **For each vulnerability**, the response provides the following:
 
-*   The Snyk issue ID and issue types\
-
+*   The Snyk issue ID and issue types:
 
     ```json
     "id": "SNYK-PYTHON-DJANGO-7642790",
     "type": "issue",
     ```
-*   General metadata about the vulnerability, including title, timestamps relevant to the vulnerability such as publication and disclosure time, and description\
-
+*   General metadata about the vulnerability, including title, timestamps relevant to the vulnerability such as publication and disclosure time, and description:
 
     ```json
     "title": "Denial of Service (DoS)",
@@ -103,8 +101,7 @@ The response is continuous, divided here to allow for explanations.
     "updated_at": "2024-08-08T13:36:35.964359Z",
     "description": ...
     ```
-*   The CVE and CWE identifiers\
-
+*   The CVE and CWE identifiers:
 
     ```json
     "problems": [
@@ -118,8 +115,7 @@ The response is continuous, divided here to allow for explanations.
         }
     ],
     ```
-*   The severity or severities of the vulnerability \
-
+*   The severity or severities of the vulnerability:
 
     ```json
     "severities": [
@@ -170,8 +166,7 @@ The response is continuous, divided here to allow for explanations.
 Starting in June 2024, all new advisories identified by Snyk Open Source are provided with both CVSS v4.0 and CVSS v3.1 severities. For the most accurate severity assessments, Snyk recommends using CVSS v4.0 when it is available.
 {% endhint %}
 
-*   Any fixes available for that vulnerability and the representation for vulnerable versions\
-
+*   Any fixes available for that vulnerability and the representation for vulnerable versions:
 
     ```json
     "coordinates": [
@@ -201,7 +196,7 @@ Starting in June 2024, all new advisories identified by Snyk Open Source are pro
         }
     ],
     ```
-* Links to any external resources with further information on the vulnerability
+* Links to any external resources with further information on the vulnerability:
 
 ```json
 "references": [
