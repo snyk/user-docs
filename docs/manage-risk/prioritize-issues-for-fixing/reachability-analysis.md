@@ -21,8 +21,8 @@ The following instructions explain how to set up and use reachability analysis a
 Follow these steps to enable Reachability analysis and begin analyzing Projects for reachable vulnerabilities:&#x20;
 
 * In the Organization **Settings**, navigate to the **Snyk Open Source** section.
-* In the **General** section, find **Reachable vulnerabilities**.
-* Activate **Enable reachable vulnerabilities analysis**.
+* In the **General** section, find **Reachability analysis**.
+* Activate **Enable reachability analysis**.
 
 <figure><img src="../../.gitbook/assets/image (573).png" alt=""><figcaption><p>Enabling Reachability setting</p></figcaption></figure>
 
@@ -36,10 +36,11 @@ You can apply the reachability analysis to existing Projects by triggering a [ma
 
 Reachability analysis is supported for the following languages and package managers:
 
-| Language                                                                                                                                                                   | Package manager | Release status       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------- |
-| [Java](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)                                                                                         | Maven, Gradle   | General Availability |
-| [JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/), [TypeScript](../../supported-languages-package-managers-and-frameworks/typescript.md) | npm, Yarn       | Early Access         |
+| Language                                                                                                                                                                   | Package manager     | Release status       |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | -------------------- |
+| [Java](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)                                                                                         | Maven, Gradle       | General Availability |
+| [JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/), [TypeScript](../../supported-languages-package-managers-and-frameworks/typescript.md) | npm, Yarn           | Early Access         |
+| [Python](../../supported-languages-package-managers-and-frameworks/python/)                                                                                                | pip, poetry, pipenv | Early Access         |
 
 Reachability analysis is supported in the following integrations:
 

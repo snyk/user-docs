@@ -33,7 +33,7 @@ Not all features follow all these stages, and timelines for each feature to move
   * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
 * Risk Management
   * [Risk Score](../manage-risk/prioritize-issues-for-fixing/risk-score.md)
-  * Reachability[ analysis](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
+  * [Reachability analysis](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
 * Snyk Broker
   * [Snyk Broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
   * [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
