@@ -146,7 +146,7 @@
         * [Disable certificate verification with Docker](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/disable-certificate-verification-with-docker.md)
         * [Custom approved-listing filter with Docker](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/custom-approved-listing-filter-with-docker.md)
         * [Mounting secrets with Docker](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/mounting-secrets-with-docker.md)
-        * [Snyk Code - Clone capability with Broker for Docker](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
+        * [Git Clone through Broker](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/git-clone-through-broker.md)
         * [Snyk Open Source Scans (SCA) of large manifest files, Docker setup](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md)
         * [Insecure downstream mode](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/insecure-downstream-mode.md)
       * [Advanced configuration for Helm Chart installation](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/README.md)

@@ -18,7 +18,7 @@ The following are prerequisites for using Snyk Broker in any environment:
 * A Snyk account
 * Self-enabled Broker integration using the Snyk API or enabled by contacting [Snyk Support](https://support.snyk.io)
 * A unique UUID token called a Broker token. See [Generate credentials in the target application for Snyk Broker](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker).
-* An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token. Snyk Broker does not support authentication with the mTLS method. &#x20;
+* An SCM token or password. See the [integrations documentation](../../integrate-with-snyk/) for each SCM for information on how to obtain the token. Snyk Broker does not support authentication with the mTLS method.
 * Docker configured to pull images from Docker Hub to install with Docker.
 
 ## Prepare hosts for installation of Snyk Broker
@@ -45,7 +45,7 @@ Consider the following to understand what the required components are for your d
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
-  * Grant Broker access to perform a [Git clone of your repository](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md).
+  * Grant Broker access to perform a [Git clone of your repository](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/git-clone-through-broker.md).
   * To do this, add an environment variable: `ACCEPT_CODE=true.`
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with the Broker, the Snyk Broker Container Registry Agent.

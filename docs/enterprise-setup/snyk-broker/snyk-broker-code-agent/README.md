@@ -5,14 +5,18 @@
 
 The Code Agent is deprecated and is no longer maintained.
 
-The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](../install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md).  The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io).
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Git Clone through Broker](../install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/git-clone-through-broker.md) (Brokered Code).  The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk support](https://support.snyk.io/hc/en-us).
 
-The automatic [PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) feature is not supported for Snyk Broker - Code Agent.
+The automatic [PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) feature is not supported for the Code Agent.
+
+To disable the Code Agent, follow the instructions on the page [Git Clone through Broker](../install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/git-clone-through-broker.md).
 {% endhint %}
 
 To connect Snyk Code to your self-hosted Git server using Snyk Broker, you can add the Code Agent after installing Snyk Broker for your SCM.&#x20;
 
 ## How the Code Agent works
+
+Adding the Code Agent after installing Snyk Broker for your SCM connects Snyk Code to your self-hosted Git server through Snyk Broker
 
 The Code Agent is available as a [Docker image](https://hub.docker.com/r/snyk/code-agent/). The Code Agent is supported only for Snyk Broker version 4.108.0 and later versions. If you already have a running Broker Client, you must update it by pulling the latest Docker image.
 
@@ -51,7 +55,7 @@ The minimum requirements for running the **Code Agent** component are:
   The available disk space determines the maximum size of repositories that are imported simultaneously. To import repositories that exceed this size, you must increase the available disk space. However, it is highly recommended to consult with your Snyk team before importing repositories that are larger than 2Gb.
 * **Network:**
   * SCM connection - HTTPS communication to the SCM that stores the repositories you want to analyze. Support for HTTP-only SCM-deployments can be resolved by deploying a reverse proxy between the Code Agent and the SCM.
-  * If you are using the same Broker Client for other Snyk products, and you want to enable  Automatic PR Checks on that Client, you must also configure the following:\
+  * If you are using the same Broker Client for other Snyk products, and you want to enable Automatic PR Checks on that Client, you must also configure the following:\
     An internal connection that allows inbound access from the integration (SCM) to the Broker Client at the BROKER\_CLIENT\_URL on the port you have configured (typically 8000). This is not inbound from the internet. See [Running the Broker Client](install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-without-the-code-snippet-display.md).
   * Snyk Code Analysis Engine connection - outbound communication to the Code Analysis Engine at [https://deeproxy.snyk.io/](https://deeproxy.snyk.io/).
 * Internet bandwidth and connection - the upload speed of the source code to the Broker Server will be affected by low bandwidth and a slow Internet connection.

@@ -25,8 +25,7 @@ By default, the log level of the Broker is set to INFO. All SCM responses, regar
 | LOG\_LEVEL        | info    | Set to "debug" for all logs.                                   |
 | LOG\_ENABLE\_BODY | false   | Set to "true" to include the response body in the Client logs. |
 
-To keep the logs concise in normal operation, Snyk produces minimal information on the INFO level, tracking the requests coming from Snyk into the client as well as the downstream request made to the targeted system, Github, Gitlab, JIRA, and so on, and logging the url hit and the response code received.\
-
+To keep the logs concise in normal operation, Snyk produces minimal information on the INFO level, tracking the requests coming from Snyk into the client as well as the downstream request made to the targeted system, Github, Gitlab, JIRA, and so on, and logging the url hit and the response code received.\\
 
 When you set `LOG_INFO_VERBOSE="true"`, the environment variable will add the headers in these log lines without requiring that you use debug.
 
@@ -63,8 +62,8 @@ This endpoint responds with status code `200 OK` when the internal request is su
 This status can be tested by connecting to the Broker and running [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) with the default settings.
 
 Example that enables the `/systemcheck` capability to verify connectivity between broker and Nexus:\
-`-e BROKER_CLIENT_VALIDATION_URL=https://[username:password]@acme.com/service/rest/v1/status[/check] /` \
-&#x20;  `snyk/broker:nexus`
+`-e BROKER_CLIENT_VALIDATION_URL=https://[username:password]@acme.com/service/rest/v1/status[/check] /`\
+`snyk/broker:nexus`
 
 To change the location of the systemcheck endpoint, you can specify an alternative path in an environment variable:
 
@@ -73,7 +72,7 @@ ENV BROKER_SYSTEMCHECK_PATH /path/to/systemcheck
 ```
 
 {% hint style="info" %}
-Snyk Broker does not support authentication with mTLS method. &#x20;
+Snyk Broker does not support authentication with mTLS method.
 {% endhint %}
 
 ## Troubleshooting Standalone Broker
@@ -120,12 +119,10 @@ Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big mani
 
 The Code Agent is deprecated and is no longer maintained.
 
-The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io).
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/git-clone-through-broker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io).
 
 The automatic [PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks) feature is not supported for Snyk Broker - Code Agent.
 {% endhint %}
-
-
 
 <figure><img src="https://lh3.googleusercontent.com/r_qtONpOOEW35gdyoBcWDAiC6j04M76q8mh922SHor4bdNZdt83sj2kP7d5hbzYcWVXp4Q2hZEiCeAVOmcj4Bu1yFPdnyp3rK7kKeBK8DZEd9S133Xn3YdjddclVf5maEbP23Jor" alt="&#x22;&#x22;"><figcaption><p>Snyk Code Analysis workflow with Broker</p></figcaption></figure>
 

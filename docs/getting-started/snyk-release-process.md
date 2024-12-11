@@ -36,7 +36,7 @@ Not all features follow all these stages, and timelines for each feature to move
   * [Reachability analysis](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
 * Snyk Broker
   * [Snyk Broker commit signing](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
-  * [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
+  * [Snyk Code - Clone capability with Broker for Docker](../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/git-clone-through-broker.md)
   * [Universal Broker](../enterprise-setup/snyk-broker/universal-broker/)
 * Language support
   * [Improved .NET scanning](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
