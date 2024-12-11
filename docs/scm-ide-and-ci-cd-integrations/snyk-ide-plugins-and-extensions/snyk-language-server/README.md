@@ -1,7 +1,3 @@
----
-description: Use this documentation to get started with the Language Server
----
-
 # Snyk Language Server
 
 Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and their use, see [Snyk for IDEs](https://docs.snyk.io/ide-tools) in the docs.
@@ -180,9 +176,9 @@ Snyk collects telemetry from IDE plugins and CLI. For details, see [IDE and CLI 
 This policy will be effective beginning on June 24, 2025.
 {% endhint %}
 
-Snyk supports the latest 12 months of LS versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.&#x20;
+Snyk supports the latest 12 months of LS versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.
 
-Snyk only provides fixes in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.&#x20;
+Snyk only provides fixes in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.
 
 This policy fosters innovation while optimizing resources.
 

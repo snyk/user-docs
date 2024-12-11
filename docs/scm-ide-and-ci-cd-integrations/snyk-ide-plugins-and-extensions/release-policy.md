@@ -1,9 +1,3 @@
----
-description: >-
-  This page describes Snyk IDE plugin releases, focusing on their frequency and
-  maturity.
----
-
 # Release and Support policy for Snyk IDE plugins
 
 This page details the release policy for Snyk IDE plugins.
