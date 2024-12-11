@@ -44,21 +44,15 @@ To enable the Snyk app for Slack, you must do the following:
 
 Ensure the user performing this installation has the permission **Snyk Apps Management - Install Apps** before continuing. See [documentation for member roles](../../snyk-admin/user-roles/user-role-management.md).
 
-Open the [Snyk integrations page](https://app.snyk.io/integrations), navigate to **Notifications**, and click the **Slack App** tile:
+1. Open the [Snyk integrations page](https://app.snyk.io/integrations), navigate to **Notifications**, and click the **Slack App** tile.
+2. You must give authorization for Snyk to access data from Slack by selecting **Authorize with Snyk**.
+3. Additional authorization is requested for Snyk to access the Snyk Slack workspace. This involves content and info about channels and conversations, as well as enabling Snyk to perform action in those channels and conversations. To proceed, select **Allow**.
 
-<figure><img src="../../.gitbook/assets/slack-app1.png" alt="Snyk integrations Slack App tile"><figcaption><p>Snyk integrations Slack App tile</p></figcaption></figure>
-
-This launches the authorization flow, allowing Snyk access to your Snyk app for Slack:
-
-<figure><img src="../../.gitbook/assets/slack-app2.png" alt="Add Slack to Snyk"><figcaption><p>Add Slack to Snyk</p></figcaption></figure>
-
-After Snyk has been authorized, you will be asked to authorize Slack to connect to Snyk for Slack. Click **Allow.**
-
-<figure><img src="../../.gitbook/assets/slack-app3.png" alt="Authorize Slack to connect to Snyk"><figcaption><p>Authorize Slack to connect to Snyk</p></figcaption></figure>
-
+{% hint style="info" %}
 If multiple Slack workspaces are available, a dropdown will be visible at the top right of the page. Select the desired Slack workspace.
+{% endhint %}
 
-After this step is complete, you can configure the integration to provide a Slack channel ID for the channel where issue notifications for the Organization are sent, and also filter by severity level.
+You can configure the integration to provide a Slack channel ID for the channel where issue notifications for the Organization are sent, and also filter by severity level.
 
 <figure><img src="../../.gitbook/assets/slack-app-settings.png" alt="Choose Slack channel and severity level for the notifications for the Organization"><figcaption><p>Choose Slack channel and severity level for the notifications for the Organization</p></figcaption></figure>
 
@@ -77,9 +71,24 @@ New issue notifications may take up to an hour to start propagating to your Slac
 
 ## Manage Project-level notification overrides
 
-To override Slack notification settings for a Project, use the customizations table.
+To override Slack notification settings for a Project, use the **Customize per project** table.
+
+Customization options include:
+
+* Project ID
+* Severity level
+* Slack channel ID
 
 <figure><img src="../../.gitbook/assets/image (118) (3).png" alt="Empty Project notification customizations table"><figcaption><p>Empty Project notification customizations table</p></figcaption></figure>
+
+### Add notification customizations
+
+1. Select `Add customization` to open the creation dialog from the Slack App integration page.&#x20;
+2. Paste your previously copied Project ID value.&#x20;
+3. Select the desired issue severity level and the Slack channel to target.&#x20;
+4. Save the customization.
+
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/slack-app-project-override.png" alt="Project notification customization creation dialog" width="563"><figcaption><p>Project notification customization creation dialog</p></figcaption></figure></div>
 
 ### Find your Project ID
 
@@ -90,15 +99,6 @@ To set a Project level override, find the ID of the Project for which you want t
 3. Copy the UUID value that follows the `project/` path in the URL bar.
 
 <figure><img src="../../.gitbook/assets/image (315).png" alt="Location of the Project ID in the Project page URL"><figcaption><p>Location of the Project ID in the Project page URL</p></figcaption></figure>
-
-### Add notification customizations
-
-1. Select `Add customization` to open the creation dialog from the Slack App integration page.&#x20;
-2. Paste your previously copied Project ID value.&#x20;
-3. Select the desired issue severity level and the Slack channel to target.&#x20;
-4. Save the customization.
-
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/slack-app-project-override.png" alt="Project notification customization creation dialog" width="563"><figcaption><p>Project notification customization creation dialog</p></figcaption></figure></div>
 
 ### Edit or delete notification customizations
 
