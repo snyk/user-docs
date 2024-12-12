@@ -180,7 +180,7 @@
     * [Snyk Broker - Infrastructure as Code detection](enterprise-setup/snyk-broker/snyk-broker-infrastructure-as-code-detection/README.md)
       * [Detecting Terraform configuration files using Snyk Broker (Custom)](enterprise-setup/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-snyk-broker-custom.md)
       * [Detecting CloudFormation configuration files using Snyk Broker (Custom)](enterprise-setup/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-cloudformation-configuration-files-using-snyk-broker-custom.md)
-      * [Detecting Kubernetes configuration files using Snyk Broker (Custom)](enterprise-setup/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-snyk-broker-custom.md)
+      * [Detecting Kubernetes configuration files using Snyk Broker (Custom)](enterprise-setup/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-a-broker.md)
     * [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-apprisk.md)
     * [High availability mode](enterprise-setup/snyk-broker/high-availability-mode.md)
     * [Snyk Broker - commit signing](enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)

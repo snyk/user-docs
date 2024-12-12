@@ -25,4 +25,4 @@ See the following pages for instructions for information about detecting Infrast
 
 * [Detecting Terraform configuration files using a broker](detecting-terraform-configuration-files-using-snyk-broker-custom.md)
 * [Detecting CloudFormation configuration files using a broker](detecting-cloudformation-configuration-files-using-snyk-broker-custom.md)
-* [Detecting Kubernetes files using a broker](detecting-kubernetes-configuration-files-using-snyk-broker-custom.md)
+* [Detecting Kubernetes files using a broker](detecting-kubernetes-configuration-files-using-a-broker.md)
