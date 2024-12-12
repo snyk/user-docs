@@ -13,7 +13,6 @@ When you set up Snyk Broker using Helm, you can set advanced parameters as expla
 * [Service accounts for Helm Chart installation](service-accounts-for-helm-chart-installation.md)
 * [Multi-tenant settings for Helm chart installation](multi-tenant-settings-for-helm-chart-installation.md)
 * [Snyk Open Source scans (SCA) of large manifest files, Helm setup](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup)
-* [Broker rules for Snyk Code](broker-rules-for-snyk-code.md)
 * [Kubernetes secrets and Helm Chart installation](kubernetes-secrets-and-helm-chart-installation.md)
 * [Image repository, tab, and image Pull Secret](image-repository-tab-and-image-pull-secret.md)
 * [Insecure Downstream Mode](insecure-downstream-mode.md)
