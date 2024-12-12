@@ -159,7 +159,7 @@ See the following for detailed permission requirements:
 * [Bitbucket](./#bitbucket-permission-requirements)
 * [Azure Repositories (TFS)](./#azure-repositories-tfs-permission-requirements)
 
-### Personal Access Token (PAT) scopes and repository permission requirements for SCMs
+### GitHub and GitHub Enterprise permissions requirements&#x20;
 
 {% hint style="info" %}
 For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](https://docs.snyk.io/enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker) and [Integrated SCM tokens for Snyk Broker](./#integrated-scm-tokens-for-snyk-broker).
