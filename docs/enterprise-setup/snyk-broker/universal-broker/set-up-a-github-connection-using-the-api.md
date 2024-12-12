@@ -16,9 +16,10 @@ Install the Universal Broker App at the Organization level. Group-level installa
 
 ## Create your deployment <a href="#id-2-create-your-deployment" id="id-2-create-your-deployment"></a>
 
-| Example call to create your deployment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments?version=2024-02-08~experimental' \
+Use the following call to create your deployment.
+
+```
+curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{
@@ -33,7 +34,7 @@ Install the Universal Broker App at the Organization level. Group-level installa
         }
     }
 }'
-</code></pre> |
+```
 
 This returns the DEPLOYMENT\_ID (data.id), for example:
 
