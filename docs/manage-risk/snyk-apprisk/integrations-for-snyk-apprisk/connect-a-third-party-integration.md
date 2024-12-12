@@ -20,6 +20,10 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup.
 {% endhint %}
 
+After you finish setting up an integration, you can see it listed with a Connected status.
+
+<figure><img src="../../../.gitbook/assets/image (633).png" alt=""><figcaption><p>Third-party integration - Connected status</p></figcaption></figure>
+
 ## Veracode setup guide
 
 {% hint style="info" %}
