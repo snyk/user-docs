@@ -15,7 +15,7 @@ curl --include \
     \"type\": \"github\",
     \"broker\": { \"enabled\": true }
 }" \
-''
+'https://api.snyk.io/v1/org/{orgId}/integrations/{integrationId}'
 ```
 
 ### Response
