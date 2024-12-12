@@ -155,6 +155,8 @@ See the following for detailed permission requirements:
 
 * [GitHub and GitHub Enterprise](./#github-and-github-enterprise-permissions-requirements)
 * [GitHub Cloud App](./#github-cloud-app-permission-requirements)
+* [GitHub Server App](./#github-server-app-permission-requirements)
+* [GitHub Server App for Universal Broker](./#github-server-app-for-universal-broker-permission-requirements)
 * [GitLab](./#gitlab-permission-requirements)
 * [Bitbucket](./#bitbucket-permission-requirements)
 * [Azure Repositories (TFS)](./#azure-repositories-tfs-permission-requirements)
@@ -207,6 +209,24 @@ While some permissions may be optional from GitHub’s perspective, they are nec
 The following table states the required GitHub App permissions and scopes:
 
 <table><thead><tr><th width="191">Action and scope</th><th width="254">Scope</th><th>Level</th><th>Permission</th></tr></thead><tbody><tr><td>Determine if the GitHub user has admin role on the GitHub org, to restrict app installation reuse to only admin users</td><td>Members</td><td>Organization</td><td>Read</td></tr><tr><td>Search repositories, and access repository metadata.</td><td>Metadata</td><td>Repository</td><td>Read</td></tr><tr><td>Interact with the GitHub Checks tab</td><td>Checks</td><td>Repository</td><td>Read and write</td></tr><tr><td>Create commits and branches</td><td>Contents</td><td>Repository</td><td>Read and write</td></tr><tr><td>Send PR check results as commit statuses</td><td>Commit status</td><td>Repository</td><td>Read and write</td></tr><tr><td>Get pull requests details, post related comments (next gen PR experience)</td><td>Pull request</td><td>Repository</td><td>Read and write</td></tr><tr><td>Manage webhooks which trigger the PR checks</td><td>Repository hooks</td><td>Repository</td><td>Read and write</td></tr></tbody></table>
+
+### GitHub Server App permission requirements
+
+To set up the GitHub Server App you must be a:
+
+* Snyk Organization Admin.
+* GitHub Organization Admin.
+
+You must have a public or private GitHub repository.
+
+### GitHub Server App for Universal Broker permission requirements
+
+To set up the GitHub Server App for Universal Broker you must be a:
+
+* Snyk Organization Admin.
+* GitHub Organization Admin.
+
+You must have a self-hosted instance of GitHub.
 
 ### GitLab permission requirements
 
