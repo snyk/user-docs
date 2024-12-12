@@ -37,7 +37,7 @@ To use Snyk Open Source with Snyk Broker, you need only the Broker Server and Br
 
 To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
 
-* **Snyk Code** – Grant Broker access to perform a [Git clone of your repository](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/git-clone-through-broker.md) by adding an environment variable: `ACCEPT_CODE=true.`
+* **Snyk Code** – Grant Broker access to perform a [Git clone of your repository](git-clone-through-broker.md) by adding an environment variable: `ACCEPT_CODE=true.`
 * **Snyk Container** – add the [Container Registry Agent](snyk-broker-container-registry-agent/) to enable the connection to network-restricted container registries and the analysis of container images. There are instructions for [installing with Docker](snyk-broker-container-registry-agent/) and [installing with Helm](snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md).
 * **Snyk Infrastructure as Code** – configure the [`accept.json` file with additional parameters](snyk-broker-infrastructure-as-code-detection/) to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through Snyk Broker.
 

@@ -45,7 +45,7 @@ Consider the following to understand what the required components are for your d
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
-  * Grant Broker access to perform a [Git clone of your repository](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/git-clone-through-broker.md).
+  * Grant Broker access to perform a [Git clone of your repository](git-clone-through-broker.md).
   * To do this, add an environment variable: `ACCEPT_CODE=true.`
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with the Broker, the Snyk Broker Container Registry Agent.

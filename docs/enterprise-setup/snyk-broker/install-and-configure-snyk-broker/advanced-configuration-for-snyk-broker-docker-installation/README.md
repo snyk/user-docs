@@ -16,6 +16,6 @@ When you install using Docker, follow these instructions to configure Broker as 
 * [Proxy support with Docker](proxy-support-with-docker.md)
 * [Disable certificate verification with Docker](disable-certificate-verification-with-docker.md)
 * [Mounting secrets with Docker](mounting-secrets-with-docker.md)
-* [Snyk Code - Clone capability with Broker for Docker](git-clone-through-broker.md)
+* [Snyk Code - Clone capability with Broker for Docker](../../git-clone-through-broker.md)
 * [Snyk Open Source Scans (SCA) of large manifest files for Docker](snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md)
 * [Insecure Downstream Mode](insecure-downstream-mode.md)

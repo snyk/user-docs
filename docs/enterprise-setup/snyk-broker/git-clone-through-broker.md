@@ -8,11 +8,9 @@ When **you have completed the migration steps**, you can enable GIt Clone throug
 
 Brokered Snyk Code enables the Broker to accept code files. The Broker then scans between the SCM system and Snyk.
 
-By default, the Git clone capabilities required by Snyk Code are disabled.
+To grant Broker access to perform a Git clone of your repository when you are installing with Docker, add the environment variable: `ACCEPT_CODE=true`. The Broker Helm Chart sets `ACCEPT_CODE=true` by default.
 
-To grant Broker access to perform a Git clone of your repository, add the environment variable: `ACCEPT_CODE=true`
-
-Example:
+Example for installation with Docker:
 
 ```
 docker run --restart=always \
@@ -27,4 +25,4 @@ docker run --restart=always \
 
 This adds the necessary `accept` rules for your Git server.&#x20;
 
-After this is done, you can follow the Broker instructions for your SCM system. For details, see [Install and configure Snyk Broker](../).
+After this is done, you can follow the Broker instructions for your SCM system. For details, see [Install and configure Snyk Broker](install-and-configure-snyk-broker/).
