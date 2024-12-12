@@ -29,7 +29,6 @@ The remaining pages address [Scanning Projects](./#scanning-projects), [Monitori
 
 ## Maintaining Projects
 
-* [Automatic **fixing** with Snyk Fix](automatic-fixing-with-snyk-fix.md)
 * [**Log4shell** command use](log4shell-command-use.md)
 * [@**snyk/protect** package](snyk-protect-package.md)
 * [Fix **vulnerabilities** using the Snyk CLI](fix-vulnerabilities-using-the-snyk-cli.md)
