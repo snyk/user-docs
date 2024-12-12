@@ -130,7 +130,7 @@ curl --include \
     \"type\": \"gitlab\",
     \"credentials\": { \"token\": \"GITLAB_TOKEN\" }
 }" \
-''
+'https://api.snyk.io/v1/org/{orgId}/integrations/{integrationId}'
 ```
 
 ### Response
@@ -169,7 +169,7 @@ curl --include \
     \"broker\": { \"enabled\": false },
     \"credentials\": { \"token\": \"GITHUB_TOKEN\" }
 }" \
-''
+'https://api.snyk.io/v1/org/{orgId}/integrations/{integrationId}'
 ```
 
 ### Response
