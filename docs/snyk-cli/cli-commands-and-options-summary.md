@@ -116,8 +116,6 @@ Generate an SBOM for a local software project in an ecosystem supported by Snyk.
 
 Check an SBOM for vulnerabilities in o pen-source packages.
 
-## New CLI commands
-
 ### [`snyk apps`](https://docs.snyk.io/snyk-cli/create-a-snyk-app-using-the-snyk-cli)
 
 Create a Snyk App using the Snyk CLI. For more information, see [Snyk Apps](../snyk-api/how-to-use-snyk-apps-apis/).
