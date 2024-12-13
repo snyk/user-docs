@@ -6,7 +6,7 @@ Snyk notifies you automatically when new issues are found in the Projects you ar
 
 Snyk can send notifications in the following ways:
 
-* By email, if you have not disabled [email notifications in your account settings](https://app.snyk.io/account/notifications).
+* By email, if you have configured [email notifications in your account settings](https://app.snyk.io/account/notifications).
 * By Slack, if you have set up [Slack integration](../integrate-with-snyk/jira-and-slack-integrations/slack-integration.md).
 
 Snyk also sends you a weekly update summarizing the security status across all of your Organizations.
@@ -52,6 +52,8 @@ To navigate to the Group level notification settings:
 2. Select **Settings**.
 3. Select **Notifications**.
 
+<figure><img src="../.gitbook/assets/notifications-group-settings.png" alt=""><figcaption><p>Notification settings at the Group level</p></figcaption></figure>
+
 #### Group defaults for issue alert emails
 
 Issue alert emails are notifications Snyk sends the same day as it finds a new vulnerability, license issue, or remediation.
@@ -69,7 +71,7 @@ Weekly report emails are notifications Snyk sends to provide a summary of the vu
 
 To set the defaults for weekly report emails:
 
-* Check the **Enabled by default** box when users of new Organizations in this Group should receive a weekly summary email.
+* Check the **Email notifications** box when users of new Organizations in this Group should receive a weekly summary email.
 * To change the defaults for individual Organizations, clear or check the box next to the Organization name. The defaults will apply for new Organizations created in this Group.
 
 {% hint style="info" %}
@@ -82,7 +84,7 @@ Usage alert emails are notifications Snyk sends to warn you when you are approac
 
 To set the defaults for usage alerts:
 
-* Check the Enabled by default box when users of new Organizations in this Group should receive usage alert emails.
+* Check the **Email notifications** box when users of new Organizations in this Group should receive usage alert emails.
 * To change the defaults for individual Organizations, clear or check the box next to the Organization name. The defaults will apply for new Organizations created in this Group.
 
 ### Define Organization notification defaults
@@ -99,6 +101,8 @@ To navigate to the Organization-level notification settings:
 2. Select **Settings**.
 3. Select **Notifications**.
 
+<figure><img src="../.gitbook/assets/notifications_organization-settings.png" alt=""><figcaption><p>Notification settings at the Organization level</p></figcaption></figure>
+
 #### Organization defaults for issue alert emails
 
 Issue alert emails are notifications Snyk sends the day it finds a new vulnerability, license issue, or remediation.
@@ -114,7 +118,7 @@ To set the defaults for issue alert emails:
 
 Weekly report emails are notifications Snyk sends to provide a summary of the vulnerability status across all Projects and Organizations to which a user belongs.
 
-To set the defaults for weekly report emails, check the **Weekly report** box when members of this Organization should receive a weekly summary email by default.
+To set the defaults for weekly report emails, check the **Email notifications** box under **Weekly report** when members of this Organization should receive a weekly summary email by default.
 
 #### Organization defaults for usage alerts
 
@@ -130,6 +134,8 @@ To override these settings, change your notification preferences:
 
 1. Select the dropdown next to your name.
 2. Select **Notification preferences**.
+
+<figure><img src="../.gitbook/assets/notifications_account-settings.png" alt=""><figcaption><p>Notification settings at the Account level</p></figcaption></figure>
 
 The Account Settings page allows you to change the types of notifications for each Organization to which you belong. You can also customize the notifications for individual Projects.
 
