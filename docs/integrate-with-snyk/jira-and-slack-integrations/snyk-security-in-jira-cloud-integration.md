@@ -67,6 +67,27 @@ To delete a target or repository from Snyk that you have connected to Jira, you 
 
 <figure><img src="../../.gitbook/assets/2024-08-27_14-05-04.png" alt="Remove connected security containers in the Jira Security panel" width="335"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
 
+## Automate ticket creation in Jira
+
+The following steps describe how to use Jira automation to automatically create tickets for Snyk Vulnerabilities:
+
+1. In Jira, in your project, navigate to **Project Settings** and then **Automation**.
+2. Click **Create Rule**.
+3.  Set **Vulnerability Found** as the Trigger. Choose a minimum ticket severity.\
+
+
+    <figure><img src="../../.gitbook/assets/jira-ticket-creation-automation-one.png" alt=""><figcaption><p>Select vulnerability severity for the new rule</p></figcaption></figure>
+4.  Click **Add Component**, **Then,** and select **Create Issue**. Select a project and issue type.\
+
+
+    <figure><img src="../../.gitbook/assets/2024-12-13_10-19-14.png" alt=""><figcaption><p>Add an action and create issue for the new rule</p></figcaption></figure>
+5.  In the summary field add “Fix \{{vulnerability.displayName\}}”. In the **Description** put \{{vulnerability.description.wiki\}}.\
+
+
+    <figure><img src="../../.gitbook/assets/2024-12-13_10-19-31.png" alt=""><figcaption><p>Add summary field and description for the new rule</p></figcaption></figure>
+6. Click **Add Component**, **Then**, and select **Link vulnerability to issue** under Security.
+7. Select **Turn on rule**.
+
 ## Manage security vulnerabilities in Jira
 
 After installing and configuring the Snyk Security in Jira Cloud app, you can view vulnerabilities on the security tab on the Jira project page.
