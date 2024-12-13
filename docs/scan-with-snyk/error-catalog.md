@@ -292,9 +292,9 @@ You have reached the maximum number of tests in your Snyk plan. This causes Snyk
 **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/4409805538833-Rate-limit-hit-while-testing-the-project](https://support.snyk.io/hc/en-us/articles/4409805538833-Rate-limit-hit-while-testing-the-project)
+- [https://support.snyk.io/s/article/Rate-limit-hit-while-testing-the-project](https://support.snyk.io/s/article/Rate-limit-hit-while-testing-the-project)
 - [https://docs.snyk.io/scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test](https://docs.snyk.io/scan-using-snyk/working-with-snyk-in-your-environment/what-counts-as-a-test)
-- [https://support.snyk.io/hc/en-us/articles/360001945297-Snyk-Test-of-PR-failing-due-to-test-limit](https://support.snyk.io/hc/en-us/articles/360001945297-Snyk-Test-of-PR-failing-due-to-test-limit)
+- [https://support.snyk.io/s/article/Snyk-Test-of-PR-failing-due-to-test-limit](https://support.snyk.io/s/article/Snyk-Test-of-PR-failing-due-to-test-limit)
 
 ### [SNYK-0007](#snyk-0007)
 
@@ -818,7 +818,7 @@ Dependency version could not be resolved.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies](https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies)
+- [https://support.snyk.io/s/article/Could-not-determine-version-for-dependencies](https://support.snyk.io/s/article/Could-not-determine-version-for-dependencies)
 
 ### [SNYK-OS-0004](#snyk-os-0004)
 
@@ -1575,7 +1575,7 @@ In some cases, it may be necessary to delete the node_modules folder and the pnp
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360000912457-Out-of-sync-manifest-lockfile-in-the-project](https://support.snyk.io/hc/en-us/articles/360000912457-Out-of-sync-manifest-lockfile-in-the-project)
+- [https://support.snyk.io/s/article/Out-of-sync-manifest--lockfile-in-the-project](https://support.snyk.io/s/article/Out-of-sync-manifest--lockfile-in-the-project)
 
 ### [SNYK-OS-NODEJS-0017](#snyk-os-nodejs-0017)
 
@@ -2206,7 +2206,7 @@ Ultimately, you should contact support@snyk.io if the issue persists
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360000910517-Failed-to-read-manifest-file](https://support.snyk.io/hc/en-us/articles/360000910517-Failed-to-read-manifest-file)
+- [https://support.snyk.io/s/article/Failed-to-read-manifest-file---Commit-Status](https://support.snyk.io/s/article/Failed-to-read-manifest-file---Commit-Status)
 
 ### [SNYK-PR-CHECK-0002](#snyk-pr-check-0002)
 
@@ -2224,7 +2224,7 @@ As during the original import, Snyk scans the project and locates the manifest f
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360000910537-Manifest-not-found](https://support.snyk.io/hc/en-us/articles/360000910537-Manifest-not-found)
+- [https://support.snyk.io/s/article/Manifest-not-found](https://support.snyk.io/s/article/Manifest-not-found)
 
 ### [SNYK-PR-CHECK-0003](#snyk-pr-check-0003)
 
@@ -2250,7 +2250,7 @@ In some cases, it may be necessary to delete the node_modules folder and the pac
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360000912457-Out-of-sync-manifest-lockfile-in-the-project](https://support.snyk.io/hc/en-us/articles/360000912457-Out-of-sync-manifest-lockfile-in-the-project)
+- [https://support.snyk.io/s/article/Out-of-sync-manifest--lockfile-in-the-project](https://support.snyk.io/s/article/Out-of-sync-manifest--lockfile-in-the-project)
 
 ### [SNYK-PR-CHECK-0005](#snyk-pr-check-0005)
 
@@ -2278,7 +2278,7 @@ Ultimately, you should contact support@snyk.io if the issue persists.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360004358517-Unknown-PR-test-error](https://support.snyk.io/hc/en-us/articles/360004358517-Unknown-PR-test-error)
+- [https://support.snyk.io/s/article/Unknown-PR-test-error](https://support.snyk.io/s/article/Unknown-PR-test-error)
 
 ### [SNYK-PR-CHECK-0007](#snyk-pr-check-0007)
 
@@ -2290,8 +2290,6 @@ Try closing and then reopening the pull request, or you can Skip the Pull Reques
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360005281837](https://support.snyk.io/hc/en-us/articles/360005281837)
 
 ### [SNYK-PR-CHECK-0008](#snyk-pr-check-0008)
 
@@ -2304,7 +2302,7 @@ To resolve this, you might need to figure out all the merge conflicts on your SC
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360005281098](https://support.snyk.io/hc/en-us/articles/360005281098)
+- [https://support.snyk.io/s/article/Merge-conflict-error](https://support.snyk.io/s/article/Merge-conflict-error)
 
 ### [SNYK-PR-CHECK-0009](#snyk-pr-check-0009)
 
@@ -2317,7 +2315,7 @@ Occasionally you might see a "Failed to detect issues" commit status which may b
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360000920678-Failed-to-detect-issues](https://support.snyk.io/hc/en-us/articles/360000920678-Failed-to-detect-issues)
+- [https://support.snyk.io/s/article/Failed-to-detect-issues](https://support.snyk.io/s/article/Failed-to-detect-issues)
 
 ### [SNYK-PR-CHECK-0010](#snyk-pr-check-0010)
 
@@ -2534,4 +2532,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-12-12T08:45:40.989Z
+--- Generated at 2024-12-13T12:45:15.738Z
