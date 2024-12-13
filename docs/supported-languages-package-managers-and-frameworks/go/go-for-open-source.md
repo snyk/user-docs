@@ -33,7 +33,7 @@ Some features may not be available, depending on your plan. For more information
 
 Snyk supports testing and monitoring of Go Projects with dependencies managed by [Go Modules](https://golang.org/ref/mod) and [dep](https://github.com/golang/dep).
 
-<table><thead><tr><th>Package managers / Features</th><th width="40">CLI support</th><th>Git support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td><a href="https://golang.org/ref/mod">Go Modules</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td></td></tr><tr><td><a href="https://github.com/golang/dep">dep</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="167">Package managers / Features</th><th width="126">CLI support</th><th width="147">SCM support</th><th width="160">License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td><a href="https://golang.org/ref/mod">Go Modules</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td></td></tr><tr><td><a href="https://github.com/golang/dep">dep</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td></td></tr></tbody></table>
 
 ### **Go Modules and the CLI**
 

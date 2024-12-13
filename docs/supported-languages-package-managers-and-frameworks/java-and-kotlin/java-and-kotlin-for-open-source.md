@@ -12,17 +12,8 @@ The following summarizes additional Snyk features support for Java and Kotlin.
 
 ## **Java**
 
-| Package managers / Features       | CLI support | Git support | License scanning | Fix PRs         |
-| --------------------------------- | ----------- | ----------- | ---------------- | --------------- |
-| [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎              |
-| [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | Fix advice only |
+<table><thead><tr><th width="176">Package managers / Features</th><th width="124">CLI support</th><th width="134">SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td><a href="https://maven.apache.org">Maven</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td><a href="https://gradle.org">Gradle</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>Fix advice only</td></tr></tbody></table>
 
 ## **Kotlin**
 
-| Package managers / Features       | CLI support | Git support  | License scanning | Fix PRs         |
-| --------------------------------- | ----------- | ------------ | ---------------- | --------------- |
-| [Maven](https://maven.apache.org) | ✔︎          | ✔︎           | ✔︎               | ✔︎              |
-| [Gradle](https://gradle.org)      | ✔︎          | Early Access | ✔︎               | Fix advice only |
-
-
-
+<table><thead><tr><th>Package managers / Features</th><th width="151">CLI support</th><th>SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td><a href="https://maven.apache.org">Maven</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td><a href="https://gradle.org">Gradle</a></td><td>✔︎</td><td>Early Access</td><td>✔︎</td><td>Fix advice only</td></tr></tbody></table>

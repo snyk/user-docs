@@ -19,7 +19,7 @@ For further information on .NET automated fixes, see the [Snyk blog](https://sny
 ## Build-time versus runtime dependencies
 
 * **Build-time dependency**: Snyk understands build-time dependency to be resolved during build time and not susceptible to change at runtime.
-* **Runtime dependency**: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc\_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
+* **Runtime dependency**: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
 
 You can choose one of the following actions to address **vulnerabilities from runtime dependencies**. These vary between the SCM and the CLI.
 
@@ -55,36 +55,51 @@ For framework support, see [Snyk Code - Supported languages and frameworks](../)
 
 ## Nuget
 
-* **Target Frameworks**: Snyk identifies the target frameworks and presents results against each identified version using the git integration.
-* **Development dependencies**: Snyk generally does not scan developer dependencies, as they are not usually pushed to production and are seen as "noise." \
-  Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](./#git-settings-for-.net)). \
-  Snyk scans and fixes the build and `development Dependency` sections of your [`*.proj`](#user-content-fn-1)[^1], `packages.config` and `project.json` files
-* **Lock files**: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
-* **PackageReference:** Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
-*   **Git analysis**
+**Target Frameworks**: Snyk identifies the target frameworks and presents results against each identified version using the git integration.
 
-    How dependency trees are created:
+**Development dependencies**: Snyk generally does not scan developer dependencies, as they are not usually pushed to production and are seen as "noise." \
+Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](./#git-settings-for-.net)). \
+Snyk scans and fixes the build and `development Dependency` sections of your [`*.proj`](#user-content-fn-1)[^1], `packages.config` and `project.json` files
 
-    * For .NET Core, using the \*.proj files&#x20;
-    * For .NET Framework, using the \*.proj file, and packages.config
+**Lock files**: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
 
-    Git integrations support the following:&#x20;
+**PackageReference:** Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
 
-    * \*.csproj&#x20;
-    * \*.fsproj
-    * \*.vbproj
-    * packages.config
+**Git analysis**
 
-    Fix Pull Requests
+How dependency trees are created:
 
-    * If you currently manage your Project dependencies with NuGet and leverage [`PackageReference`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) or [`packages.config`](https://docs.microsoft.com/en-us/nuget/reference/packages-config) Snyk can automatically update the dependency version in your manifest file, provided there is an actual fix for it. You can then review and merge your fixes.
-*   **CLI Analysis**
+* For .NET Core, using the \*.proj files&#x20;
+* For .NET Framework, using the \*.proj file, and packages.config
 
-    The CLI supports the following config files:
+SCM integrations support the following:&#x20;
 
-| project.assets.json                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | packages.config                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| <p></p><p>Snyk can scan project.assets.json to determine dependencies, but the file must be generated. Similarly, if you point to the solution file (.sln), you must generate the file first.</p><p></p><p>Run "<strong>dotnet restore"</strong> to generate the necessary <code>project.assets.json</code> before running the "<strong>snyk test</strong>" command.</p><p></p><p>The solution file contains pointers to the files necessary to perform the analysis. Note that the projects themselves must have <code>project.assets.json</code> files to be scanned. If you want Snyk to use the solution file as an entry point for scanning, you can point the Snyk CLI to the solution file by using <code>--file=&#x3C;filename>.sln</code>.</p><p></p><p>Where multiple target frameworks are used in the same Project, the CLI scan returns results for the first target framework declared in the Project.</p> | Run "**nuget install -OutputDirectory packages**" before running the **snyk test** command. |
+* \*.csproj&#x20;
+* \*.fsproj
+* \*.vbproj
+* packages.config
+
+Fix Pull Requests
+
+* If you currently manage your Project dependencies with NuGet and leverage [`PackageReference`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) or [`packages.config`](https://docs.microsoft.com/en-us/nuget/reference/packages-config) Snyk can automatically update the dependency version in your manifest file, provided there is an actual fix for it. You can then review and merge your fixes.
+
+**CLI Analysis**
+
+The CLI supports the following config files:
+
+**project.assets.json**
+
+Snyk can scan project.assets.json to determine dependencies, but the file must be generated. Similarly, if you point to the solution file (.sln), you must generate the file first.
+
+Run "**dotnet restore"** to generate the necessary `project.assets.json` before running the "**snyk test**" command.
+
+The solution file contains pointers to the files necessary to perform the analysis. Note that the projects themselves must have `project.assets.json` files to be scanned. If you want Snyk to use the solution file as an entry point for scanning, you can point the Snyk CLI to the solution file by using `--file=<filename>.sln`.
+
+Where multiple target frameworks are used in the same Project, the CLI scan returns results for the first target framework declared in the Project.
+
+**packages.config**
+
+Run "**nuget install -OutputDirectory packages**" before running the **snyk test** command.
 
 {% hint style="info" %}
 Runtime dependencies (provided by the runtime environment known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
@@ -98,23 +113,19 @@ For more information on Paket support, see [Snyk for .NET](./).
 
 ## Other
 
-Snyk provides custom test APIs for your unique dependency management strategies.
-
-:link: [List issues for a package](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org\_id-/packages/-purl-/issues)&#x20;
+Snyk provides custom test APIs for your unique dependency management strategies. navigate to the [List issues for a package](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org_id-/packages/-purl-/issues) page for more details.
 
 ## Build-time versus runtime dependencies
 
-See [.NET](./) for more information
+Navigate to the [.NET](./) page for more information.
 
 ## Snyk CLI tips and tricks
 
-[CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/)​
+Navigate to the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/)​ page for more details.
 
 ## What to test&#x20;
 
-Use the `--help` option in the CLI for details of Snyk CLI commands.
-
-[CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
+Use the `--help` option in the CLI for details of Snyk CLI commands. Navigate to the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) page for more details.
 
 ### **Open Source libraries**
 
@@ -135,7 +146,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 ### Infrastructure as Code
 
-[Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/)
+Navigate to the [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/) page for more details.
 
 ### **Helpful options and plugins**
 

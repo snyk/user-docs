@@ -18,11 +18,7 @@ The following summarizes Snyk Open Source support for npm, pnpm and Yarn, and pa
 
 The following table provides a matrix for npm lockfile versions and Snyk features availability.
 
-| Lockfile version | CLI support | Git support | License scanning | Fix PRs |
-| ---------------- | ----------- | ----------- | ---------------- | ------- |
-| Lockfile v1      | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
-| Lockfile v2      | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
-| Lockfile v3      | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
+<table><thead><tr><th>Lockfile version</th><th width="144">CLI support</th><th>SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td>Lockfile v1</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td>Lockfile v2</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td>Lockfile v3</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr></tbody></table>
 
 #### **Peer dependencies**
 
@@ -78,11 +74,7 @@ Enable it using [Snyk Preview](../../snyk-admin/snyk-preview.md) and install CLI
 
 The following table shows a matrix of pnpm versions and Snyk features availability.
 
-| pnpm version | CLI support        | Git support | License scanning   | Fix PRs |
-| ------------ | ------------------ | ----------- | ------------------ | ------- |
-| pnpm 7       | ✔︎ (Early Access)  |             | ✔︎ (Early Access)  |         |
-| pnpm 8       | ✔︎ (Early Access)  |             | ✔︎ (Early Access)︎ |         |
-| pnpm 9       | ✔︎ (Early Access)︎ |             | ✔︎ (Early Access)︎ |         |
+<table><thead><tr><th>pnpm version</th><th>CLI support</th><th width="151">SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td>pnpm 7</td><td>✔︎ (Early Access)</td><td></td><td>✔︎ (Early Access)</td><td></td></tr><tr><td>pnpm 8</td><td>✔︎ (Early Access)</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr><tr><td>pnpm 9</td><td>✔︎ (Early Access)︎</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr></tbody></table>
 
 **Lockfile versions**
 
@@ -102,11 +94,7 @@ If you are using a newer version of Yarn than is listed on this page, you may fi
 
 The following table shows the Yarn versions and Snyk features availability matrix.
 
-| Yarn Version | CLI support | Git support | License scanning | Fix PRs |
-| ------------ | ----------- | ----------- | ---------------- | ------- |
-| Yarn 1       | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
-| Yarn 2       | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
-| Yarn 3       | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
+<table><thead><tr><th>Yarn Version</th><th width="148">CLI support</th><th>SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td>Yarn 1</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td>Yarn 2</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td>Yarn 3</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr></tbody></table>
 
 {% hint style="info" %}
 Because different versions of Yarn have different feature sets, there are differences in Snyk support in order to match how the package manager works.

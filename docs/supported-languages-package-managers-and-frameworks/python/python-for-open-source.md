@@ -12,7 +12,7 @@ Depending on your plan, some features may not be available. For more information
 
 The following summarizes the package managers supported by Snyk for Python for open source.
 
-| Package managers Features                                                                                                        | CLI support                                                                                                                                 | Git support | License scanning | Fix PRs |
+| Package managers Features                                                                                                        | CLI support                                                                                                                                 | SCM support | License scanning | Fix PRs |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------------- | ------- |
 | [Pip](https://pypi.org/project/pip/)                                                                                             | ✔︎                                                                                                                                          | ✔︎          | ✔︎               | ✔︎      |
 | [Poetry](https://python-poetry.org)                                                                                              | ✔︎                                                                                                                                          | ✔︎          | ✔︎               |         |

@@ -11,7 +11,7 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 * Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)
 
 {% hint style="info" %}
-If you are not a Snyk Enterprise user using Artifactory or Nexus, analysis is best performed via CLI, as the build system will retrieve the dependencies and be present locally.
+If you are not a Snyk Enterprise user using Artifactory or Nexus, analysis is best performed using CLI, as the build system will retrieve the dependencies and be present locally.
 {% endhint %}
 
 For more information on package registry integrations, including Maven, see the following:
@@ -62,7 +62,7 @@ See the [Java and Kotlin](./#open-source-and-licensing) page for more details ab
 
 Sometimes customers develop advanced dependency management strategies and may not necessarily use the standard and frequently used package managers. For that reason, Snyk has provided test APIs.
 
-For on-time testing using the Snyk API, you can use the [Test](../../snyk-api/reference/test-v1.md) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) and [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues).
+For on-time testing using the Snyk API, you can use the [Test](../../snyk-api/reference/test-v1.md) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) and [List issues for a package](../../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues).
 
 ## Snyk Integrations and common usage patterns
 
@@ -99,7 +99,37 @@ Use the `--help` option in the CLI for details of Snyk CLI commands.
 
 #### Open Source libraries
 
-<table data-full-width="true"><thead><tr><th>Maven</th><th>Gradle</th><th>Unmanaged</th></tr></thead><tbody><tr><td><ul><li><p>The <strong>snyk test</strong> command tests the first manifest it can find, and scans that singular entry point. To scan all manifests:</p><ul><li>To scan aggregate projects, use the <strong>--maven-aggregate-project</strong> option<br>(for example, <strong>snyk test --maven-aggregate-project</strong>)</li><li>To scan for all projects use <strong>--all-projects</strong> option:<br>(that is, <strong>snyk test --all-projects</strong>)</li></ul></li></ul><ul><li><p>Snyk scans active profiles activated by default.</p><ul><li>Any additional Maven args can be passed, a common one is a non-standard settings.xml location. For example, <strong>snyk test -- -s path/to/settings.xml</strong></li></ul></li></ul><ul><li>To scan a specific configuration, test a specific Maven profile using <strong>-P [name]</strong>. For example, use <strong>snyk test -- -P prod</strong> to scan the <strong>prod</strong> configuration.</li></ul></td><td><p></p><ul><li>By default, Snyk CLI scans only the current project (the project in the root of the current folder), or the project that is specified by <strong>--file=path/to/build.gradle</strong>.</li></ul><ul><li><p>As above, <strong>--all-projects</strong> can be used across all package managers, which also includes the behaviors of <strong>--all-sub-projects</strong>, mentioned below.</p><ul><li>To scan all projects at once (recommended), use the <strong>--all-sub-projects</strong> option:<br>(that is, <strong>snyk test --all-sub-projects</strong>). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.</li><li>To scan a specific project (for example, myapp), use <strong>--sub-project=</strong> (that is, <strong>snyk test --sub-project=myapp</strong>).</li></ul></li></ul><ul><li>To test specific configurations, see detailed examples here <a href="./">Snyk for Java and Kotlin</a>.</li></ul><ul><li>For Android Build variants, see <a href="./">Snyk for Java and Kotlin</a>.</li></ul></td><td>Unmanaged Jars - see <a href="../../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md">Scan all unmanaged JAR files</a>.</td></tr></tbody></table>
+**Maven**
+
+The **snyk test** command tests the first manifest it can find, and scans that singular entry point. To scan all manifests, follow these instructions:
+
+* To scan aggregate projects, use the **--maven-aggregate-project** option\
+  (for example, **snyk test --maven-aggregate-project**)
+* To scan for all projects use **--all-projects** option:\
+  (that is, **snyk test --all-projects**)
+
+Snyk scans active profiles activated by default.
+
+* Any additional Maven arguments can be passed, a common one is a non-standard settings.xml location. For example, **snyk test -- -s path/to/settings.xml**
+* To scan a specific configuration, test a specific Maven profile using **-P \[name]**. For example, use **snyk test -- -P prod** to scan the **prod** configuration.
+
+**Gradle**
+
+By default, Snyk CLI scans only the current project (the project in the root of the current folder), or the project that is specified by **--file=path/to/build.gradle**.
+
+Note that **--all-projects** can be used across all package managers, which also includes the behaviors of **--all-sub-projects**, mentioned below.
+
+* To scan all projects at once (recommended), use the **--all-sub-projects** option:\
+  (that is, **snyk test --all-sub-projects**). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
+* To scan a specific project (for example, myapp), use **--sub-project=** (that is, **snyk test --sub-project=myapp**).
+
+To test specific configurations, see detailed examples here [Snyk for Java and Kotlin](./).
+
+For Android Build variants, see [Snyk for Java and Kotlin](./).
+
+**Unmanaged**
+
+For more details on unmanaged Jars, navigate to the [Scan all unmanaged JAR files](../../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md) page.
 
 #### Testing containers
 
@@ -109,11 +139,11 @@ See [Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-
 
 #### Infrastructure as code
 
-:link: [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/)
+For more details, navigate to the [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/) page.
 
 ### Fixing vulnerabilities
 
-:link: [Fixing vulnerabilities on Maven projects](https://snyk.io/blog/fixing-vulnerabilities-in-maven-projects/)
+For more details, navigate to the [Fixing vulnerabilities on Maven projects](https://snyk.io/blog/fixing-vulnerabilities-in-maven-projects/) page.
 
 ### Options and plugins
 
