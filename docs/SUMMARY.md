@@ -967,7 +967,7 @@
   * [Install or update the Snyk CLI](snyk-cli/install-or-update-the-snyk-cli/README.md)
     * [Verifying CLI standalone binaries](snyk-cli/install-or-update-the-snyk-cli/verifying-cli-standalone-binaries.md)
     * [Installing Snyk CLI as a binary via npm](snyk-cli/install-or-update-the-snyk-cli/installing-snyk-cli-as-a-binary-via-npm.md)
-    * [Install or upgrade to version of Node required for Snyk CLI](snyk-cli/install-or-update-the-snyk-cli/install-or-upgrade-to-version-of-node-required-for-snyk-cli.md)
+    * [Install or upgrade to version of Node.js required for Snyk CLI](snyk-cli/install-or-update-the-snyk-cli/install-or-upgrade-to-version-of-node.js-required-for-snyk-cli.md)
     * [Most recent version of the CLI that supports Node.js 4](snyk-cli/install-or-update-the-snyk-cli/most-recent-version-of-the-cli-that-supports-node.js-4.md)
     * [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](snyk-cli/install-or-update-the-snyk-cli/prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md)
     * [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](snyk-cli/install-or-update-the-snyk-cli/using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md)
