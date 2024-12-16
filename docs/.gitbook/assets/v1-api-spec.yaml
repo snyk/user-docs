@@ -1857,16 +1857,16 @@ paths:
         + Enable or disable brokered integration for given organization. *Credentials required for disabling brokered integration*
 
 
-        Examples in right section:
+        Examples:
 
 
-        1. Set up a broker for an existing integration
+        - [Set up a broker for an existing integration](https://docs.snyk.io/snyk-api/api-endpoints-index-and-tips/examples-for-the-update-existing-integration-endpoint#set-up-broker-for-an-existing-integration)
 
 
-        2. Update credentials for an existing non-brokered integration
+        - [Update credentials for an existing non-brokered integration](https://docs.snyk.io/snyk-api/api-endpoints-index-and-tips/examples-for-the-update-existing-integration-endpoint#update-credentials-for-an-existing-non-brokered-integration)
 
 
-        3. Disable broker for an existing integration
+        - [Disable broker for an existing integration](https://docs.snyk.io/snyk-api/api-endpoints-index-and-tips/examples-for-the-update-existing-integration-endpoint#disable-broker-for-an-existing-integration)
 
 
         #### Required permissions
