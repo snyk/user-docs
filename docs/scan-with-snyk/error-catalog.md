@@ -1732,6 +1732,18 @@ Make sure to use the correct python version in the requires section of the Pipfi
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-PYTHON-0012](#snyk-os-python-0012)
+
+#### The 10 GB space limit for downloaded Python dependencies has been exceeded
+
+The total size of the downloaded Python dependencies in the manifest file exceeds the 10GB limit.
+This often happens due to the large size of some of the Python dependencies and is usually the case for Python packages that require NVIDIA drivers like PyTorch. 
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/supported-languages-package-managers-and-frameworks/python/git-repositories-and-python#pip-and-git-repositories](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/python/git-repositories-and-python#pip-and-git-repositories)
+
 ---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001)
@@ -2532,4 +2544,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2024-12-13T12:45:15.738Z
+--- Generated at 2024-12-16T02:48:58.747Z
