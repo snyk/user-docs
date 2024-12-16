@@ -1,7 +1,7 @@
 # Git Clone through Broker
 
 {% hint style="warning" %}
-Enabling Git Clone through Broker for Snyk Code will result in an interruption in any Code Agent deployments associated with the Organization. Imports and recurring tests will be interrupted, but PR checks continue because they were not supported for the Code Agent. You must **follow the migration steps** for a smooth transition.  Communications on how to migrate to Git Clone through Broker (Brokered Code)  have been sent to customers. If you have not received the instructions for migration or need help, contact contact [Snyk support](https://support.snyk.io/hc/en-us).&#x20;
+Enabling Git Clone through Broker for Snyk Code will result in an interruption in any Code Agent deployments associated with the Organization. Imports and recurring tests will be interrupted, but PR checks continue because they were not supported for the Code Agent. You must **follow the migration steps** for a smooth transition.  Communications on how to migrate to Git Clone through Broker (Brokered Code)  have been sent to customers. If you have not received the instructions for migration or need help, contact contact [Snyk support](https://support.snyk.io).
 
 When **you have completed the migration steps**, you can enable GIt Clone through Broker for Code as follows: navigate to **Settings**, **Organization** settings, **Snyk Broker**, and toggle **Enable Snyk Broker Git Clone Through Broker** on. After you enable the feature, the toggle turns blue with a check mark.
 {% endhint %}
