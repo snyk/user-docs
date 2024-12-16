@@ -5,7 +5,7 @@
 
 The Code Agent is deprecated and is no longer maintained.
 
-The preferred method of running Snyk Code analysis using Snyk Broker is through [Git Clone through Broker](../git-clone-through-broker.md) (Brokered Code).  The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk support](https://support.snyk.io/hc/en-us).
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Git Clone through Broker](../git-clone-through-broker.md) (Brokered Code).  The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk support](https://support.snyk.io).
 
 The automatic [PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) feature is not supported for the Code Agent.
 
