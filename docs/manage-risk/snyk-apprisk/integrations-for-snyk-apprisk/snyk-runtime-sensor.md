@@ -11,13 +11,13 @@ The Snyk Runtime Sensor is a [Kubernetes DaemonSet](https://kubernetes.io/docs/c
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed) and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
 
 {% hint style="info" %}
-The Snyk Runtime Sensor reports the Loaded package risk factor only for application packages. The following ecosystems are supported:
-
-* Node.js
-* Java
-* Python
-* Go
-* .NET
+* The Snyk Runtime Sensor reports the Loaded package risk factor only for application packages. The following ecosystems are supported:
+  * Node.js
+  * Java
+  * Python
+  * Go
+  * .NET
+* Most packages are loaded into memory upon application startup, therefore they will be reported only when the Pod is initialized.
 {% endhint %}
 
 On this page, you can find the following information:
