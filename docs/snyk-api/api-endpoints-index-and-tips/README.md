@@ -489,6 +489,8 @@ Additional information: [Reachability](../../manage-risk/prioritize-issues-for-f
 
 ### [Update organization settings](../reference/organizations-v1.md#org-orgid-settings)
 
+The only editable attribute of Update organization settings is `requestAccess`.
+
 **More information:** [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
 ### [View organization settings](../reference/organizations-v1.md#org-orgid-settings-1)
