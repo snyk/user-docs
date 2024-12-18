@@ -109,9 +109,9 @@ To view and submit tickets, use the link for your region.
 
 **SNYK-US-02**: [https://support.snyk.io/services/auth/sso/MT\_US](https://support.snyk.io/services/auth/sso/MT_US)
 
-**SNYK-EU -01:**[https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw](https://snyk-mt-eu-prod-1.eu.auth0.com/samlp/xU6rUSC7zvEco2ndKemfJNT6oKtc13Qw)
+**SNYK-EU-01:**[https://support.snyk.io/services/auth/sso/MT\_EU](https://support.snyk.io/services/auth/sso/MT_EU)
 
-**SNYK-AU-01:**[https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ](https://snyk-mt-au-prod-1.au.auth0.com/samlp/HnGYPWKxM9JegYL2aq0OAdBAwGJDz0vQ)
+**SNYK-AU-01:**[https://support.snyk.io/services/auth/sso/MT\_AU](https://support.snyk.io/services/auth/sso/MT_AU)
 
 ### API URLs
 
