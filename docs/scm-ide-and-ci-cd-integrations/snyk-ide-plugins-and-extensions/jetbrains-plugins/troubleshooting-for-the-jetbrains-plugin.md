@@ -1,7 +1,7 @@
 # Troubleshooting for the JetBrains plugin
 
 {% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.
 {% endhint %}
 
 ## Get detailed logs: debug logs
@@ -36,14 +36,14 @@ Refer to the [JetBrains documentation](https://www.jetbrains.com/help/idea/ssl-c
 
 Sometimes the checkboxes for Snyk Code in the JetBrains IntelliJ plugin are disabled. Some possible reasons follow:
 
-* **Network or proxy settings:** If the network or proxy settings are not configured correctly, the checkboxes may be disabled. Check to see if there is an MITM proxy with certificate substitution. Also, verify whether connections to the endpoint API and deeproxy can be established using other tools, for example, the CLI or cURL.&#x20;
+* **Network or proxy settings:** If the network or proxy settings are not configured correctly, the checkboxes may be disabled. Check to see if there is an MITM proxy with certificate substitution. Also, verify whether connections to the endpoint API and deeproxy can be established using other tools, for example, the CLI or cURL.
 * **Incorrect endpoint address:** If the endpoint address in the Snyk Code plugin configuration is incorrect, the checkboxes will be disabled. To fix this, check that the endpoint address is correct by following the instructions. Restart IntelliJ afterwards.
 * **Snyk Code is disabled server-side:** If Snyk Code is disabled in the Snyk Organisation's settings, the checkboxes will be disabled. To fix this, follow the instructions shown in the IntelliJ settings. Restart your IDE.
-* **Have a look at the JetBrains logs:** For additional information, see  [Locating IDE log files](https://intellij-support.jetbrains.com/hc/en-us/articles/207241085-Locating-IDE-log-files).
+* **Have a look at the JetBrains logs:** For additional information, see [Locating IDE log files](https://intellij-support.jetbrains.com/hc/en-us/articles/207241085-Locating-IDE-log-files).
 
 ## Undefined Python version
 
-Snyk uses Python in order to scan and find your dependencies.&#x20;
+Snyk uses Python in order to scan and find your dependencies.
 
 If you are using multiple Python versions, use the -`-command` option to specify the correct Python command for execution. The plugin does not detect the Python version associated with the Project.
 
@@ -54,7 +54,7 @@ The JetBrains plugin scans your Kubernetes workload files and collects the image
 * Whether the image definition is in the Kubernetes YAML file in the Project. Ensure you have the image specified with an image name mapped in the format `imageValue:imageKey` for the image yaml attribute, for example, `image:nginx:1.17.1`.
 * Whether the container image has been successfully built locally or pushed to a container registry or both. It is also a good practice to verify this before referring to the container image in the Kubernetes YAML file.
 
-If you encounter an error [contact support](https://snyk.zendesk.com/agent/dashboard).
+If you encounter an error [contact support](https://support.snyk.io).
 
 For each image found, perform a test with the Snyk CLI.
 
