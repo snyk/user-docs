@@ -38,7 +38,7 @@ Before you begin, check the [Prerequisites for automated PR Checks](configure-pu
 4. Click a Project name to open it and select **package.json** to check for open-source and licensing issues.
 5. In the **Issues** tab, find an individual issue card and select **Fix this vulnerability**. For this example, an Uninitialized Memory Exposure is selected.
 
-<figure><img src="../../../.gitbook/assets/fix_individual_vulnerability.png" alt="Fixing individual issue in dependencies project."><figcaption><p>Fixing an individual issue in the dependencies project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-issues-overview.png" alt="Fixing individual issue in dependencies project."><figcaption><p>Fixing an individual issue in the dependencies project</p></figcaption></figure>
 
 6. (Optional) Select **Fix these vulnerabilities** at the top of the page to fix all dependency vulnerabilities with one pull request.
 
@@ -46,7 +46,7 @@ Before you begin, check the [Prerequisites for automated PR Checks](configure-pu
 
 Confirm your selected issue and click **Open a Fix PR** to open a pull request in the GitHub integration.
 
-<figure><img src="../../../.gitbook/assets/open_fix_PR.png" alt="Triggering a Fix PR for an individual issue in dependencies project."><figcaption><p>Triggering a Fix PR for an individual issue in the dependencies project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/trigger-open-fix-pr.png" alt="Triggering a Fix PR for an individual issue in dependencies project." width="375"><figcaption><p>Triggering a Fix PR for an individual issue in the dependencies project</p></figcaption></figure>
 
 ### Analyze PR Checks result and set status
 
@@ -57,28 +57,26 @@ Confirm your selected issue and click **Open a Fix PR** to open a pull request i
 Issues that have previously been ignored via the Snyk Web UI in the associated Open Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) across feature branch PRs.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/PR_checks_in_GitHub_integration.png" alt="PR Checks card in the Conversations tab, GitHub."><figcaption><p>PR Checks card in the Conversations tab, GitHub</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/github-pr-checks-card (1).png" alt="PR Checks card in the Conversations tab, GitHub."><figcaption><p>PR Checks card in the Conversations tab, GitHub</p></figcaption></figure>
 
-3. Click **Details** to open the list of files that have been checked for this issue.
+3. Expand list of files that have been checked for this issue.
 4. (Optional) Click **View test page** to examine the issue details.\
    \
    You can get a complete picture of the vulnerability by clicking **Show more detail**, with technical security information and remediation options.\
    \
    To return to the main issue page, click **Project**.
 
-<figure><img src="../../../.gitbook/assets/result_page_PR_Checks.png" alt="Overview of PR Checks result."><figcaption><p>Overview of PR Checks result</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/result_page_PR_Checks (1).png" alt="Overview of PR Checks result."><figcaption><p>Overview of PR Checks result</p></figcaption></figure>
 
 5. **Mark as successful in SCM** to change the result status and merge the pull request with failed security issues.
 
-<figure><img src="../../../.gitbook/assets/mark_issue_as_successful_snyk_web_ui.png" alt="Marking PR Checks result as successful."><figcaption><p>Marking PR Checks result as successful</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/github-mark-result-successful.png" alt="Marking PR Checks result as successful."><figcaption><p>Marking PR Checks result as successful</p></figcaption></figure>
 
 {% hint style="warning" %}
 Marking a vulnerability as successful does not ignore the issue but only allows the security checks for the PR to pass in this current branch. If the issue is not fixed, it shows up in future commits and PR Checks after you merge it with the target branch.
 {% endhint %}
 
 The issue is marked as **Passed** and shows up as **Skipped** in the PR Checks card in GitHub.
-
-<figure><img src="../../../.gitbook/assets/issue_marked_as_successful_PR_checks.png" alt="PR Checks information in GitHub with issue marked as Skipped."><figcaption><p>PR Checks information in GitHub with issues marked as Skipped</p></figcaption></figure>
 
 ## Troubleshooting PR Checks
 

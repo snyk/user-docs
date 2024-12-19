@@ -15,11 +15,11 @@ When Snyk creates automatic PRs for vulnerabilities, the following rules are app
   * To update the **Test & Automated Pull Request Frequency**, navigate to **Projects** and select your Open Source Project.
   * Navigate to **Settings** and select an option from the pulldown list.
 
-<figure><img src="../../../.gitbook/assets/Project testing and PR Checks frequency (1).png" alt="Project test and automated PR Checks frequency setting"><figcaption><p>Project test and automated PR Checks frequency setting</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-settings-test-pull-request-frequency.png" alt="Project test and automated PR Checks frequency setting"><figcaption><p>Project test and automated PR Checks frequency setting</p></figcaption></figure>
 
 To determine when your last 24-hour window began, check the Project issue card for **Snapshot taken by recurring test**.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Test information with a focus on the latest snapshot taken.png" alt="Snapshot taken by recurrint test 13 hours ago"><figcaption><p>Snapshot taken by recurrint test 13 hours ago</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-snapshot-taken.png" alt="Snapshot taken by recurrint test 13 hours ago"><figcaption><p>Snapshot taken by recurring test 13 hours ago</p></figcaption></figure>
 
 For specific scan results, you can also check your inbox for an email titled **\[snyk] Vulnerability alert**.
 
@@ -38,7 +38,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 3. Under **Automatic Fix PRs,** enable **Known vulnerabilities (backlog)**.\
    This retrieves previously declared vulnerabilities from the Project's backlog.
 
-<figure><img src="../../../.gitbook/assets/Automatic fix PRs settings for Git integration.png" alt="Automatic fix PRs settings for Git integration."><figcaption><p>Automatic Fix PRs settings for Git integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-settings-github-automatic-fix-prs.png" alt="Automatic fix PRs settings for Git integration."><figcaption><p>Automatic Fix PRs settings for Git integration</p></figcaption></figure>
 
 4. Select the **Fix Strategy** for your Backlog PRs.
 
@@ -48,8 +48,6 @@ The configuration settings apply to all Projects in that Organization. You can a
 5. Click **Save**.
 6. (Optional) Select **Save changes and apply to all overridden Projects** to extend the current configuration to Projects with custom settings.\
    Use this option to apply the same configuration to all Projects. Selecting this option updates all of the individual Project settings for **Automatic fix PRs**. For Projects that previously had their own settings for automatic fix full requests, selecting this option overrides the Project setting with the global setting.
-
-<figure><img src="../../../.gitbook/assets/Fix all vulnerabilities for the same dependency in a single PR.png" alt="Fix all vulnerabilities for the same dependency in a single PR."><figcaption><p>Fix all vulnerabilities for the same dependency in a single PR</p></figcaption></figure>
 
 ## Configure Automatic Fix PRs at the Project level
 
@@ -63,5 +61,5 @@ You can configure Automatic fix PRs to work only for specific Projects rather th
 4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md#configure-automatic-fix-prs-at-the-integration-level).
 5. Click **Save changes**.
 
-<figure><img src="../../../.gitbook/assets/Automatic fix PRs settings at the Project level.png" alt="Automatic fix PRs settings at the Project level."><figcaption><p>Automatic Fix PRs settings at the Project level</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-settings-github-integration-automatic-fix-pull-requests.png" alt="Automatic fix PRs settings at the Project level."><figcaption><p>Automatic Fix PRs settings at the Project level</p></figcaption></figure>
 

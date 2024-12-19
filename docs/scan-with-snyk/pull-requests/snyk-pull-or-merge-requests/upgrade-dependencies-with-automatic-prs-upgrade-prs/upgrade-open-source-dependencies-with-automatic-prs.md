@@ -2,7 +2,7 @@
 
 After you import Git repositories, Snyk continuously monitors these repositories by scanning them for vulnerabilities, license, and dependency health issues. In addition to providing fix advice, Snyk creates pull requests (PRs) according to your configuration settings.
 
-<figure><img src="../../../../.gitbook/assets/image (435).png" alt="Snyk Bot conversation card in GitHub reporting PR raised"><figcaption><p>Snyk Bot conversation card in GitHub reporting PR raised</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/github-fix-pr-snyk.png" alt="Snyk conversation card in GitHub reporting PR raised"><figcaption><p>Snyk conversation card in GitHub reporting PR raised</p></figcaption></figure>
 
 ## Supported languages and SCMs
 
@@ -41,7 +41,7 @@ Follow these steps to configure automatic upgrade PRs for an entire Organization
 1. On the Snyk Web UI, open the required Organization.
 2. Navigate to **Settings > Organization Settings > Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.
 
-<figure><img src="../../../../.gitbook/assets/image (436).png" alt="Editing integration settings"><figcaption><p>Editing integration settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-integrations-source-control-github.png" alt="Editing integration settings"><figcaption><p>Editing integration settings</p></figcaption></figure>
 
 3. On the **Settings** page of the selected integration, navigate to the **Automatic dependency upgrade PRs** section.
 4. In this section, perform the following actions:
@@ -69,12 +69,9 @@ Follow these steps to configure automatic upgrade PRs for a specific Project:
 1. From the Snyk Web UI, open the Organization that includes the Project you want to configure.
 2. In the list of Projects, locate and expand the **Project** for which you want to enable automatic upgrade PRs.
 3. Click the **Project settings** at the end of the Project row.
-
-<figure><img src="../../../../.gitbook/assets/image (438).png" alt="Project settings on the Project jow"><figcaption><p>Project settings on the Project jow</p></figcaption></figure>
-
 4. On the **Project** **Settings** page, select the integration you are using.
 
-<figure><img src="../../../../.gitbook/assets/image (439).png" alt="Project Settings - Select the integration you are using"><figcaption><p>Project Settings - Select the integration you are using</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/projects-settings-github-integration.png" alt="Project Settings - Select the integration you are using"><figcaption><p>Project Settings - Select the integration you are using</p></figcaption></figure>
 
 5. On the **Integration** page, scroll to the **Automatic dependency upgrade pull requests** section and choose one of the following:
    * **Inherit from Integration settings** – apply the Integration Settings of the Organization to the selected Project.\
@@ -90,6 +87,6 @@ Follow these steps to configure automatic upgrade PRs for a specific Project:
        You can only enter lowercase letters.
      * Click **Update dependency upgrade settings** to save your changes.
 
-<figure><img src="../../../../.gitbook/assets/image (440).png" alt="Automatic dependency upgrade pull requests settings at the Project level"><figcaption><p>Automatic dependency upgrade pull requests settings at the Project level</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/github-settings-automatic-dependecny-upgrade-pull-requests (1).png" alt="Automatic dependency upgrade pull requests settings at the Project level"><figcaption><p>Automatic dependency upgrade pull requests settings at the Project level</p></figcaption></figure>
 
 After you have completed these steps, Snyk scans the Project and automatically submits Upgrade PRs if the scan discovers that an upgrade is available. If a newer version is released for an existing Snyk Upgrade PR or an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.

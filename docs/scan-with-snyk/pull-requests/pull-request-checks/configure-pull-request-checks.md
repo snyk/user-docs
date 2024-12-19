@@ -81,7 +81,7 @@ You can configure PR Checks to work only for specific Projects:
 * **package.json** to check for open-source and licensing issues.
 * **Code analysis** to check for security issues in your code.
 
-<figure><img src="../../../.gitbook/assets/configure_pr_checks_project_level.png" alt="Project overview"><figcaption><p>Project overview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-overview.png" alt="Project overview"><figcaption><p>Project overview</p></figcaption></figure>
 
 6. Navigate to **Settings.**
 7. On the left side, select your integration. For this example, GitHub has been integrated with Snyk.
