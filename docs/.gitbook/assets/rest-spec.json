@@ -688,12 +688,13 @@
         }
       },
       "GroupId": {
-        "description": "Unique identifier of the group.",
+        "description": "The ID of the group",
         "in": "path",
         "name": "group_id",
         "required": true,
         "schema": {
-          "$ref": "#/components/schemas/GroupId"
+          "format": "uuid",
+          "type": "string"
         }
       },
       "Id": {
@@ -839,12 +840,13 @@
         "style": "form"
       },
       "MembershipId": {
-        "description": "Unique identifier of the tenant membership.",
+        "description": "The ID of the Group Membership",
         "in": "path",
         "name": "membership_id",
         "required": true,
         "schema": {
-          "$ref": "#/components/schemas/TenantMembershipId"
+          "format": "uuid",
+          "type": "string"
         }
       },
       "Name": {
@@ -904,7 +906,7 @@
         "style": "form"
       },
       "OrgId": {
-        "description": "The unique identifier of the organization.",
+        "description": "The ID of the org",
         "in": "path",
         "name": "org_id",
         "required": true,
@@ -1139,7 +1141,7 @@
             "user_display_name",
             "email",
             "login_method",
-            "role_name"
+            "role"
           ],
           "type": "string"
         }
@@ -1220,12 +1222,21 @@
         }
       },
       "Status": {
-        "description": "Filter by progress status of the resources",
+        "description": "An issue's status",
+        "explode": false,
         "in": "query",
         "name": "status",
         "schema": {
-          "$ref": "#/components/schemas/ProgressStatus"
-        }
+          "items": {
+            "enum": [
+              "open",
+              "resolved"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "style": "form"
       },
       "StatusInQuery": {
         "description": "Filter environments by latest scan status (multi-value, comma-separated)",
@@ -1278,12 +1289,13 @@
         }
       },
       "Type": {
-        "description": "Filter by the learn catalog resource type",
+        "description": "An issue type to filter issues.",
         "in": "query",
         "name": "type",
         "schema": {
-          "$ref": "#/components/schemas/ResourceType"
-        }
+          "$ref": "#/components/schemas/TypeDef"
+        },
+        "style": "form"
       },
       "UpdatedAfter": {
         "description": "A filter to select issues updated after this date.",
@@ -5329,18 +5341,7 @@
         "additionalProperties": true,
         "properties": {
           "attributes": {
-            "additionalProperties": true,
-            "properties": {
-              "name": {
-                "description": "The name of the group.",
-                "example": "My Group",
-                "type": "string"
-              }
-            },
-            "required": [
-              "name"
-            ],
-            "type": "object"
+            "$ref": "#/components/schemas/GroupAttributes"
           },
           "id": {
             "example": "331ede0a-de94-456f-b788-166caeca58bf",
@@ -5361,11 +5362,11 @@
         "type": "object"
       },
       "GroupAttributes": {
-        "example": {
-          "name": "My Group"
-        },
+        "additionalProperties": true,
         "properties": {
           "name": {
+            "description": "The name of the group.",
+            "example": "My Group",
             "type": "string"
           }
         },
@@ -5899,7 +5900,18 @@
             "additionalProperties": false,
             "properties": {
               "attributes": {
-                "$ref": "#/components/schemas/GroupAttributes"
+                "example": {
+                  "name": "My Group"
+                },
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
               },
               "id": {
                 "$ref": "#/components/schemas/GroupId"
@@ -6837,22 +6849,52 @@
         "additionalProperties": false,
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/OrgAttributes"
+            "additionalProperties": false,
+            "properties": {
+              "group_id": {
+                "description": "The ID of a Group.",
+                "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                "format": "uuid",
+                "type": "string"
+              },
+              "is_personal": {
+                "description": "Whether this organization belongs to an individual, rather than a Group.",
+                "example": true,
+                "type": "boolean"
+              },
+              "name": {
+                "description": "Friendly name of the organization.",
+                "example": "My Org",
+                "type": "string"
+              },
+              "slug": {
+                "description": "Unique URL sanitized name of the organization for accessing it in Snyk.",
+                "example": "my-org",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "slug",
+              "is_personal"
+            ],
+            "type": "object"
           },
           "id": {
-            "description": "The Snyk ID of the organization.",
+            "description": "The Snyk ID corresponding to this org",
             "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
             "format": "uuid",
             "type": "string"
           },
           "type": {
-            "$ref": "#/components/schemas/Types"
+            "description": "Content type.",
+            "example": "org",
+            "type": "string"
           }
         },
         "required": [
           "type",
-          "id",
-          "attributes"
+          "id"
         ],
         "type": "object"
       },
@@ -10727,17 +10769,63 @@
         "type": "string"
       },
       "User": {
+        "additionalProperties": false,
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/UserAttributes"
+            "additionalProperties": false,
+            "properties": {
+              "active": {
+                "description": "Whether the user status is enabled or not",
+                "example": true,
+                "type": "boolean"
+              },
+              "email": {
+                "description": "The email of the user.",
+                "example": "user@someorg.com",
+                "type": "string"
+              },
+              "membership": {
+                "properties": {
+                  "created_at": {
+                    "description": "The date the membership was established.",
+                    "example": "2022-09-14T09:19:29.206Z",
+                    "format": "date-time",
+                    "type": "string"
+                  },
+                  "strategy": {
+                    "description": "Whether the membership is a direct, or indirect membership.",
+                    "enum": [
+                      "direct",
+                      "indirect"
+                    ],
+                    "example": "direct",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "name": {
+                "description": "The name of the user.",
+                "example": "user",
+                "type": "string"
+              },
+              "username": {
+                "description": "The username of the user.",
+                "example": "username",
+                "type": "string"
+              }
+            },
+            "type": "object"
           },
           "id": {
+            "description": "The Snyk ID corresponding to this user",
+            "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
+            "format": "uuid",
             "type": "string"
           },
           "type": {
-            "enum": [
-              "user"
-            ],
+            "description": "Content type.",
+            "example": "user",
             "type": "string"
           }
         },
@@ -10875,7 +10963,38 @@
       "UserRelationship": {
         "properties": {
           "data": {
-            "$ref": "#/components/schemas/User"
+            "properties": {
+              "attributes": {
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "email",
+                  "username"
+                ],
+                "type": "object"
+              },
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "user"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "attributes"
+            ],
+            "type": "object"
           },
           "links": {
             "$ref": "#/components/schemas/PaginatedLinks"
@@ -11656,14 +11775,14 @@
     },
     "/groups/{group_id}": {
       "get": {
-        "description": "Get a group\n",
+        "description": "Returns a group by its ID",
         "operationId": "getGroup",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
+            "$ref": "#/components/parameters/GroupId"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "$ref": "#/components/parameters/Version"
           }
         ],
         "responses": {
@@ -11671,19 +11790,30 @@
             "content": {
               "application/vnd.api+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GroupResponse"
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Group"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
+                  "type": "object"
                 }
               }
             },
-            "description": "Returns an instance of a Group",
+            "description": "Group is returned",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "location": {
-                "schema": {
-                  "type": "string"
-                }
               },
               "snyk-request-id": {
                 "$ref": "#/components/headers/RequestIdResponseHeader"
@@ -11714,22 +11844,18 @@
           "404": {
             "$ref": "#/components/responses/404"
           },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
           "500": {
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get Group",
+        "summary": "Get a group",
         "tags": [
-          "Group"
+          "Groups"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
           "2022-01-31~experimental",
-          "2023-01-30~beta",
-          "2024-04-25~experimental"
+          "2023-01-30~beta"
         ],
         "x-snyk-api-resource": "groups",
         "x-snyk-api-stability": "beta",
@@ -16169,23 +16295,7 @@
             "$ref": "#/components/parameters/ScanItemType"
           },
           {
-            "description": "An issue type to filter issues.",
-            "in": "query",
-            "name": "type",
-            "schema": {
-              "description": "The type of an issue.",
-              "enum": [
-                "package_vulnerability",
-                "license",
-                "cloud",
-                "code",
-                "custom",
-                "config"
-              ],
-              "example": "cloud",
-              "type": "string"
-            },
-            "style": "form"
+            "$ref": "#/components/parameters/Type"
           },
           {
             "$ref": "#/components/parameters/UpdatedBefore"
@@ -16203,21 +16313,7 @@
             "$ref": "#/components/parameters/EffectiveSeverityLevel"
           },
           {
-            "description": "An issue's status",
-            "explode": false,
-            "in": "query",
-            "name": "status",
-            "schema": {
-              "items": {
-                "enum": [
-                  "open",
-                  "resolved"
-                ],
-                "type": "string"
-              },
-              "type": "array"
-            },
-            "style": "form"
+            "$ref": "#/components/parameters/Status"
           },
           {
             "$ref": "#/components/parameters/Ignored"
@@ -16859,14 +16955,7 @@
         "operationId": "listGroupMemberships",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -16984,14 +17073,7 @@
         "operationId": "createGroupMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -17091,24 +17173,10 @@
         "operationId": "deleteGroupMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
-            "description": "The ID of the Group Membership",
-            "in": "path",
-            "name": "membership_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/MembershipId"
           },
           {
             "$ref": "#/components/parameters/Cascade"
@@ -17179,24 +17247,10 @@
         "operationId": "updateGroupUserMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
-            "description": "The ID of the Group Membership",
-            "in": "path",
-            "name": "membership_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/MembershipId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -17257,14 +17311,7 @@
         "operationId": "listGroupUserOrgMemberships",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/UserId"
@@ -17417,7 +17464,75 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "$ref": "#/components/schemas/Org"
+                        "additionalProperties": false,
+                        "properties": {
+                          "attributes": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "access_requests_enabled": {
+                                "description": "Whether the organization permits access requests from users who are not members of the organization.",
+                                "example": false,
+                                "type": "boolean"
+                              },
+                              "created_at": {
+                                "description": "The time the organization was created.",
+                                "example": "2022-03-16T00:00:00Z",
+                                "format": "date-time",
+                                "type": "string"
+                              },
+                              "group_id": {
+                                "description": "The Snyk ID of the group to which the organization belongs.",
+                                "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                                "format": "uuid",
+                                "type": "string"
+                              },
+                              "is_personal": {
+                                "description": "Whether the organization is independent (that is, not part of a group).",
+                                "example": true,
+                                "type": "boolean"
+                              },
+                              "name": {
+                                "description": "The display name of the organization.",
+                                "example": "My Org",
+                                "type": "string"
+                              },
+                              "slug": {
+                                "description": "The canonical (unique and URL-friendly) name of the organization.",
+                                "example": "my-org",
+                                "type": "string"
+                              },
+                              "updated_at": {
+                                "description": "The time the organization was last modified.",
+                                "example": "2022-03-16T00:00:00Z",
+                                "format": "date-time",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "name",
+                              "slug",
+                              "is_personal"
+                            ],
+                            "type": "object"
+                          },
+                          "id": {
+                            "description": "The Snyk ID of the organization.",
+                            "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "type": {
+                            "example": "resource",
+                            "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "id",
+                          "attributes"
+                        ],
+                        "type": "object"
                       },
                       "type": "array"
                     },
@@ -18818,14 +18933,7 @@
         "operationId": "listGroupSsoConnections",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -18927,14 +19035,7 @@
         "operationId": "listGroupSsoConnectionUsers",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/SsoId"
@@ -18960,72 +19061,7 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "additionalProperties": false,
-                        "properties": {
-                          "attributes": {
-                            "additionalProperties": false,
-                            "properties": {
-                              "active": {
-                                "description": "Whether the user status is enabled or not",
-                                "example": true,
-                                "type": "boolean"
-                              },
-                              "email": {
-                                "description": "The email of the user.",
-                                "example": "user@someorg.com",
-                                "type": "string"
-                              },
-                              "membership": {
-                                "properties": {
-                                  "created_at": {
-                                    "description": "The date the membership was established.",
-                                    "example": "2022-09-14T09:19:29.206Z",
-                                    "format": "date-time",
-                                    "type": "string"
-                                  },
-                                  "strategy": {
-                                    "description": "Whether the membership is a direct, or indirect membership.",
-                                    "enum": [
-                                      "direct",
-                                      "indirect"
-                                    ],
-                                    "example": "direct",
-                                    "type": "string"
-                                  }
-                                },
-                                "type": "object"
-                              },
-                              "name": {
-                                "description": "The name of the user.",
-                                "example": "user",
-                                "type": "string"
-                              },
-                              "username": {
-                                "description": "The username of the user.",
-                                "example": "username",
-                                "type": "string"
-                              }
-                            },
-                            "type": "object"
-                          },
-                          "id": {
-                            "description": "The Snyk ID corresponding to this user",
-                            "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
-                            "format": "uuid",
-                            "type": "string"
-                          },
-                          "type": {
-                            "description": "Content type.",
-                            "example": "user",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "id",
-                          "attributes"
-                        ],
-                        "type": "object"
+                        "$ref": "#/components/schemas/User"
                       },
                       "type": "array"
                     },
@@ -19104,14 +19140,7 @@
         "operationId": "deleteUser",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/SsoId"
@@ -19393,6 +19422,7 @@
             "$ref": "#/components/responses/500"
           }
         },
+        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -19409,7 +19439,6 @@
             "name": "version",
             "required": true,
             "schema": {
-              "default": "2023-08-31~beta",
               "type": "string"
             }
           }
@@ -19449,6 +19478,7 @@
             "$ref": "#/components/responses/500"
           }
         },
+        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -19608,22 +19638,21 @@
     },
     "/orgs/{org_id}": {
       "get": {
-        "description": "Get the full details of an organization.",
+        "description": "Returns an org by its ID",
         "operationId": "getOrg",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "description": "Unique identifier for org",
+            "description": "The ID of the org",
             "in": "path",
             "name": "org_id",
             "required": true,
             "schema": {
-              "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
               "format": "uuid",
               "type": "string"
             }
+          },
+          {
+            "$ref": "#/components/parameters/Version"
           }
         ],
         "responses": {
@@ -19633,20 +19662,25 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/Org20230529"
+                      "$ref": "#/components/schemas/Org"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
                     },
                     "links": {
-                      "$ref": "#/components/schemas/SelfLink"
+                      "$ref": "#/components/schemas/Links"
                     }
                   },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
                   "type": "object"
                 }
               }
             },
-            "description": "Returns an instance of an organization",
+            "description": "Org is returned",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
@@ -19680,27 +19714,24 @@
           "404": {
             "$ref": "#/components/responses/404"
           },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
           "500": {
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get organization",
+        "summary": "Get an org",
         "tags": [
           "Orgs"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
+          "2022-02-16~experimental",
           "2022-04-06~experimental",
-          "2022-12-15~beta",
-          "2023-05-29"
+          "2022-12-15~beta"
         ],
         "x-snyk-api-resource": "orgs",
-        "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2023-05-29",
-        "x-stability-level": "stable"
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2022-12-15~beta",
+        "x-stability-level": "beta"
       },
       "patch": {
         "description": "Update the details of an organization",
@@ -41627,23 +41658,7 @@
             "$ref": "#/components/parameters/ScanItemType"
           },
           {
-            "description": "An issue type to filter issues.",
-            "in": "query",
-            "name": "type",
-            "schema": {
-              "description": "The type of an issue.",
-              "enum": [
-                "package_vulnerability",
-                "license",
-                "cloud",
-                "code",
-                "custom",
-                "config"
-              ],
-              "example": "cloud",
-              "type": "string"
-            },
-            "style": "form"
+            "$ref": "#/components/parameters/Type"
           },
           {
             "$ref": "#/components/parameters/UpdatedBefore"
@@ -41661,21 +41676,7 @@
             "$ref": "#/components/parameters/EffectiveSeverityLevel"
           },
           {
-            "description": "An issue's status",
-            "explode": false,
-            "in": "query",
-            "name": "status",
-            "schema": {
-              "items": {
-                "enum": [
-                  "open",
-                  "resolved"
-                ],
-                "type": "string"
-              },
-              "type": "array"
-            },
-            "style": "form"
+            "$ref": "#/components/parameters/Status"
           },
           {
             "$ref": "#/components/parameters/Ignored"
@@ -42317,7 +42318,14 @@
         "operationId": "deleteOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42388,7 +42396,14 @@
         "operationId": "listOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42484,7 +42499,14 @@
         "operationId": "updateOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42584,7 +42606,14 @@
         "operationId": "createOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42658,7 +42687,14 @@
         "operationId": "getCatalogProgress",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42673,7 +42709,16 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "$ref": "#/components/parameters/Type"
+            "description": "Filter by the learn catalog resource type",
+            "in": "query",
+            "name": "type",
+            "schema": {
+              "enum": [
+                "learning_path",
+                "lesson"
+              ],
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Title"
@@ -42749,7 +42794,14 @@
         "operationId": "getUsersProgress",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -42764,13 +42816,32 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "$ref": "#/components/parameters/Type"
+            "description": "Filter by the learn catalog resource type",
+            "in": "query",
+            "name": "type",
+            "schema": {
+              "enum": [
+                "learning_path",
+                "lesson"
+              ],
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Title"
           },
           {
-            "$ref": "#/components/parameters/Status"
+            "description": "Filter by progress status of the resources",
+            "in": "query",
+            "name": "status",
+            "schema": {
+              "enum": [
+                "completed",
+                "inProgress",
+                "todo"
+              ],
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Emails"
@@ -42843,14 +42914,7 @@
         "operationId": "listOrgMemberships",
         "parameters": [
           {
-            "description": "The ID of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -42865,19 +42929,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Which column to sort by.",
-            "in": "query",
-            "name": "sort_by",
-            "schema": {
-              "enum": [
-                "username",
-                "user_display_name",
-                "email",
-                "login_method",
-                "role"
-              ],
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/SortBy"
           },
           {
             "$ref": "#/components/parameters/SortOrder"
@@ -42977,14 +43029,7 @@
         "operationId": "createOrgMembership",
         "parameters": [
           {
-            "description": "The ID of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -47468,72 +47513,7 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "additionalProperties": false,
-                      "properties": {
-                        "attributes": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "active": {
-                              "description": "Whether the user status is enabled or not",
-                              "example": true,
-                              "type": "boolean"
-                            },
-                            "email": {
-                              "description": "The email of the user.",
-                              "example": "user@someorg.com",
-                              "type": "string"
-                            },
-                            "membership": {
-                              "properties": {
-                                "created_at": {
-                                  "description": "The date the membership was established.",
-                                  "example": "2022-09-14T09:19:29.206Z",
-                                  "format": "date-time",
-                                  "type": "string"
-                                },
-                                "strategy": {
-                                  "description": "Whether the membership is a direct, or indirect membership.",
-                                  "enum": [
-                                    "direct",
-                                    "indirect"
-                                  ],
-                                  "example": "direct",
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "name": {
-                              "description": "The name of the user.",
-                              "example": "user",
-                              "type": "string"
-                            },
-                            "username": {
-                              "description": "The username of the user.",
-                              "example": "username",
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "id": {
-                          "description": "The Snyk ID corresponding to this user",
-                          "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
-                          "format": "uuid",
-                          "type": "string"
-                        },
-                        "type": {
-                          "description": "Content type.",
-                          "example": "user",
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "id",
-                        "attributes"
-                      ],
-                      "type": "object"
+                      "$ref": "#/components/schemas/User"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
@@ -53917,7 +53897,19 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "$ref": "#/components/parameters/SortBy"
+            "description": "Which column to sort by.",
+            "in": "query",
+            "name": "sort_by",
+            "schema": {
+              "enum": [
+                "username",
+                "user_display_name",
+                "email",
+                "login_method",
+                "role_name"
+              ],
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/SortOrder"
@@ -54023,7 +54015,16 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/MembershipId"
+            "description": "Unique identifier of the tenant membership.",
+            "in": "path",
+            "name": "membership_id",
+            "required": true,
+            "schema": {
+              "description": "Unique identifier for a tenant membership.",
+              "example": "00000000-0000-0000-0000-000000000000",
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/TenantId"
@@ -54100,7 +54101,16 @@
             "$ref": "#/components/parameters/TenantId"
           },
           {
-            "$ref": "#/components/parameters/MembershipId"
+            "description": "Unique identifier of the tenant membership.",
+            "in": "path",
+            "name": "membership_id",
+            "required": true,
+            "schema": {
+              "description": "Unique identifier for a tenant membership.",
+              "example": "00000000-0000-0000-0000-000000000000",
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
