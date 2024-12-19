@@ -30,7 +30,7 @@ If you want to check for the most recent vulnerabilities in your repository, you
 
 You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Exclude directories and files from Project import](../../import-project-repository/exclude-directories-and-files-from-project-import.md).
 
-<figure><img src="../../../.gitbook/assets/Retest Code.png" alt="Retesting a repository."><figcaption><p>Retesting repository </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-retest-now.png" alt="Retesting a repository."><figcaption><p>Retesting repository </p></figcaption></figure>
 
 ## Project filters
 
@@ -61,7 +61,7 @@ Filter discovered vulnerability issues according to different criteria shown in 
 
 <table><thead><tr><th width="232">Vulnerability issue filter</th><th>Description</th></tr></thead><tbody><tr><td><a href="../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md">Severity level</a></td><td>Show issues with a certain severity level. Snyk Code uses only <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> severity levels, without <strong>Critical</strong>. </td></tr><tr><td><a href="../../../manage-risk/prioritize-issues-for-fixing/priority-score.md#calculation-of-priority-score">Priority score</a></td><td>Show issues in a certain priority score range.</td></tr><tr><td>Status</td><td>Show <strong>Open</strong> issues or issues that were <strong>Ignored</strong>.</td></tr><tr><td><a href="../../../supported-languages-package-managers-and-frameworks/">Languages</a></td><td>Show issues that were discovered in code files that were written in a specific language. Only programming languages discovered in the analyzed repository are displayed in the Filter pane.</td></tr><tr><td><a href="../snyk-code-security-rules/">Vulnerability types</a></td><td>Show issues with a certain Vulnerability Type. See <a href="../snyk-code-security-rules/">Snyk Code security rules</a>.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/Vulnerability issues.png" alt="Overview of vulnerability issue filtering, sorting, and grouping."><figcaption><p>Vulnerability issue filtering, sorting, and grouping</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-vulnerability-filters.png" alt="Overview of vulnerability issue filtering, sorting, and grouping."><figcaption><p>Vulnerability issue filtering, sorting, and grouping</p></figcaption></figure>
 
 ## **Scan for code vulnerabilities**
 
@@ -93,7 +93,7 @@ You can specify directories to exclude from the import process using the Exclude
 
 To access the repository on the integrated Git repository platform, navigate to the Code analysis Project and select the name of the repository.
 
-<figure><img src="../../../.gitbook/assets/Open repository external link.png" alt="Overview of the external repository link."><figcaption><p>External repository link</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-open-github-repository.png" alt="Overview of the external repository link."><figcaption><p>External repository link</p></figcaption></figure>
 
 ### View Project history
 
@@ -109,7 +109,7 @@ To view Project history:
 4. Select a test from the list to view the Project historical snapshot.
 5. (Optional) Select **View most recent snapshot**. This option is not available when the most recent snapshot is open.
 
-<figure><img src="../../../.gitbook/assets/Project history.png" alt="Overview of Snyk Code Project history"><figcaption><p>Snyk Code Project history</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-code-analysis-history.png" alt="Overview of Snyk Code Project history"><figcaption><p>Snyk Code Project history</p></figcaption></figure>
 
 ### Manage Project settings
 

@@ -41,7 +41,7 @@ This query does not select the Body with a capital B. The query language is case
    ``~"[a-z0-9!#$%&'*+/=?^_{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"``\
    It matches the hardcoded email address.
 
-<figure><img src="../../../.gitbook/assets/simple syntactical query.png" alt="Syntactical query example"><figcaption><p>Syntactical query example</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/simple syntactical query (1).png" alt="Syntactical query example"><figcaption><p>Syntactical query example</p></figcaption></figure>
 
 ### Try it yourself
 

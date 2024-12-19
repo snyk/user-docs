@@ -19,7 +19,7 @@ If you want to test repositories already imported to Snyk before the [Snyk Code 
 
 Your selected repositories are re-imported to Snyk. During the re-import process, Snyk Code analyzes these repositories, and a Code analysis Project is added to each repository, containing the results of the Snyk Code test.
 
-<figure><img src="../../.gitbook/assets/Re-test repository.png" alt="Re-test repositories."><figcaption><p>Re-test repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-import-repository.png" alt="Re-test repositories." width="563"><figcaption><p>Re-test repositories</p></figcaption></figure>
 
 ## What's next?
 

@@ -50,7 +50,7 @@ The goal is to create useful queries that will provide valuable and actionable r
 
 The templates are abstract, pre-built constructs created to provide a quicker and easier way to build queries. See [Templates and predicates](templates-and-predicates.md).
 
-<figure><img src="../../../.gitbook/assets/query templates.png" alt="Query Templates"><figcaption><p>Query Templates</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom-rules-query-templates.png" alt="Query Templates"><figcaption><p>Query Templates</p></figcaption></figure>
 
 #### Query predicates
 
@@ -58,7 +58,7 @@ The predicate is a symbolic representation of a relationship between objects or 
 
 For example, all cross-site scripting (XSS) sinks as `PRED:XssSink`. You can extend these or define your own.  See [Query language](./#the-query-language).
 
-<figure><img src="../../../.gitbook/assets/query predicates.png" alt="Overview of Query Predicates."><figcaption><p>Query Predicates</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom-templates-query-predicates.png" alt="Overview of Query Predicates."><figcaption><p>Query Predicates</p></figcaption></figure>
 
 #### Source
 

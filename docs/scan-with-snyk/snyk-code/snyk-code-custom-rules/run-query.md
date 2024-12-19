@@ -41,7 +41,7 @@ Run queries against code snippets to detect vulnerabilities, review and audit co
 You can run queries only on certain languages in the code snippet area. See the dropdown menu for the full list of available languages.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/run_query_on_a_code_snippet.png" alt="Running a query on a code snippet."><figcaption><p>Running a query on a code snippet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom-rules-run-query-on-a-code-snippet.png" alt="Running a query on a code snippet."><figcaption><p>Running a query on a code snippet</p></figcaption></figure>
 
 5. [Analyze the query results](run-query.md#analyze-query-results).
 6. (Optional) [Save the custom rule you created](run-query.md#save-custom-rule).

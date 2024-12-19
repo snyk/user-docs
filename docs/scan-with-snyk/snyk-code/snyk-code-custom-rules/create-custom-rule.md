@@ -21,10 +21,10 @@ You can save custom rules from useful queries and add metadata. The metadata is 
    * **CWE**: Link relevant CWEs.
    * **Fix Analysis**: Describe how the developers should address the vulnerability. You could structure the fix as general guidance or based on your Organization's best practices.
 
-<figure><img src="../../../.gitbook/assets/custom_rule.png" alt="Adding metadata to a saved custom rule"><figcaption><p>Adding metadata to a saved custom rule</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom-rules-create-rule (1).png" alt="Adding metadata to a saved custom rule"><figcaption><p>Adding metadata to a saved custom rule</p></figcaption></figure>
 
 6. Click **Generate custom rule** to create YAML-formatted code.&#x20;
 7. Export the query as a rule by copying the YAML content to the [.snyk file](../../../manage-risk/policies/the-.snyk-file.md) in the relevant repository.&#x20;
 
-<figure><img src="../../../.gitbook/assets/custom_rule_export.png" alt="Exporting the query as a rule in the .snyk file"><figcaption><p>Exporting the query as a rule in the .snyk file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom-rules-create-rule (2).png" alt="Exporting the query as a rule in the .snyk file"><figcaption><p>Exporting the query as a rule in the .snyk file</p></figcaption></figure>
 

@@ -2,7 +2,7 @@
 
 When you import repositories, Snyk Code automatically tests for vulnerabilities within the imported code. The vulnerabilities detected across all files in a single repository are compiled into a Snyk Project, labeled as Code Analysis. Code Analysis presents the test outcome for a specific repository, listing all discovered vulnerabilities in the repository's source code.
 
-<figure><img src="../../../.gitbook/assets/Code analysis .png" alt="Overview of the Code Analysis page."><figcaption><p>The Code Analysis page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-code-analysis-overview.png" alt="Overview of the Code Analysis page."><figcaption><p>The Code Analysis page</p></figcaption></figure>
 
 ## Code analysis components
 
@@ -37,17 +37,15 @@ Every issue discovered by Snyk Code has a data flow. If an issue has only one st
 
 In the following Path Traversal issue, the developer has not sanitized the input. This allows an attacker to perform a pass traversal attack to access any file in the file system, including sensitive data such as password files.
 
-<figure><img src="../../../.gitbook/assets/Path Traversal vulnerability issues.png" alt="Overview of a Path Traversal vulnerability issue."><figcaption><p>Data flow of a Path Traversal vulnerability issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-code-analysis-vulnerability-full-details-data-flow.png" alt="Overview of a Path Traversal vulnerability issue."><figcaption><p>Data flow of a Path Traversal vulnerability issue</p></figcaption></figure>
 
 ### **Open Data flow external link**
 
 To open the displayed source code on the Git repository, select the file name above the right panel. In this example, the file name is **routes/profileImageUrlUpload.ts**.
 
-<figure><img src="../../../.gitbook/assets/Open source code in data flow (1).png" alt="Source code external link in Data Flow."><figcaption><p>Source code external link in Data Flow</p></figcaption></figure>
-
 The source code appears in the integrated Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability in your code.
 
-<figure><img src="../../../.gitbook/assets/Fix vulnerability in Git repository from data flow.png" alt="Vulnerability shown in the external source code."><figcaption><p>Vulnerability shown in the external source code</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-vulnerability-data-flow-external-link.png" alt="Vulnerability shown in the external source code."><figcaption><p>Vulnerability shown in the external source code</p></figcaption></figure>
 
 ## Fix analysis
 
@@ -57,7 +55,7 @@ To explore in-depth details about the specific vulnerability identified, you can
 
 Some vulnerabilities contain links to interactive lessons on understanding, fixing, and preventing vulnerability. See [Snyk Learn](https://learn.snyk.io/).
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - Results - Issues - Fix analysis page - 2.png" alt="Fis analysis page for Path Traversal vulnerability"><figcaption><p>Fix analysis page for Path Traversal vulnerability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis.png" alt="Fis analysis page for Path Traversal vulnerability"><figcaption><p>Fix analysis page for Path Traversal vulnerability</p></figcaption></figure>
 
 ### View Fix analysis&#x20;
 
@@ -77,13 +75,13 @@ The **Fix analysis** page enables you to do the following:
 
 ### **Open Fix analysis external link**
 
-To open the code fix for the vulnerability on the Git repository, select the git repository above the right panel. This will show you the differences in the Git repository code that address the issue. In this example, the Git repository name is **NodeBB**.
+To open the code fix for the vulnerability on the Git repository, select the Git repository above the right panel. This will show you the differences in the Git repository code that address the issue. In this example, the Git repository name is **eclipse-vertx/vert.x**.
 
-<figure><img src="../../../.gitbook/assets/Open source code in fix analysis.png" alt="Data flow of a Path Traversal vulnerability issue."><figcaption><p>Fix analysis of a Path Traversal vulnerability issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis-example (1).png" alt="Data flow of a Path Traversal vulnerability issue."><figcaption><p>Fix analysis of a Path Traversal vulnerability issue</p></figcaption></figure>
 
 The fix appears in the Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability.
 
-<figure><img src="../../../.gitbook/assets/Fix vulnerability in Git repository from fix analysis.png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github.png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
 
 ## Severity score factors
 
