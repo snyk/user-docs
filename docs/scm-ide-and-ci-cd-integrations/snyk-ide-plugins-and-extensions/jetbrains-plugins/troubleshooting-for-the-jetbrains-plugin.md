@@ -6,6 +6,10 @@ Snyk plugins are not supported on any operating system that has reached End Of L
 
 ## Get detailed logs: debug logs
 
+{% hint style="warning" %}
+When you enable `debug`, your code may be logged in the IDE log files, for example, the `idea.log` file.
+{% endhint %}
+
 Each JetBrains IDE provides easy access to the logs.
 
 Follow these steps to set logging to the debug level.

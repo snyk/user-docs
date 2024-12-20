@@ -10,6 +10,10 @@ For general troubleshooting, see the [IDE troubleshooting pages](../troubleshoot
 
 ## Logs
 
+{% hint style="warning" %}
+When you enable `debug`, your code may be logged in the IDE log files, for example, the `idea.log` file.
+{% endhint %}
+
 To determine where plugin logs are stored, navigate to **Preferences** > **Language Servers** > **Logs** and find the **Snyk Language Server** row in Eclipse. As the Language Server can be disabled, you may need to enable it to retrieve the logs. You will find the logs either in the console or in the file based on the preference set.
 
 To see additional plugin error logs:

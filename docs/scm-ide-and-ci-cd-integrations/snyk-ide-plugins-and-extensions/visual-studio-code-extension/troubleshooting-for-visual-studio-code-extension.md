@@ -22,6 +22,10 @@ Follow these steps to resolve the issue:
 
 ## Logs
 
+{% hint style="warning" %}
+When you enable `debug`, your code may be logged in the IDE log files, for example, the `idea.log` file.
+{% endhint %}
+
 You can find the logs for VS Code in the output channels for the Snyk extension and Snyk Language Server. Both are needed for troubleshooting.
 
 To enable the debug log level, start VS Code from the terminal like this:
