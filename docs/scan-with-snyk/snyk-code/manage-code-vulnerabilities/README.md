@@ -30,7 +30,7 @@ If you want to check for the most recent vulnerabilities in your repository, you
 
 You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Exclude directories and files from Project import](../../import-project-repository/exclude-directories-and-files-from-project-import.md).
 
-<figure><img src="../../../.gitbook/assets/projects-retest-now.png" alt="Retesting a repository."><figcaption><p>Retesting repository </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-code-analysis-retest.png" alt="Retesting a repository."><figcaption><p>Retesting repository </p></figcaption></figure>
 
 ## Project filters
 

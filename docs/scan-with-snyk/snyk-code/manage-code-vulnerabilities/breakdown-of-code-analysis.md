@@ -77,11 +77,11 @@ The **Fix analysis** page enables you to do the following:
 
 To open the code fix for the vulnerability on the Git repository, select the Git repository above the right panel. This will show you the differences in the Git repository code that address the issue. In this example, the Git repository name is **eclipse-vertx/vert.x**.
 
-<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis-example (1).png" alt="Data flow of a Path Traversal vulnerability issue."><figcaption><p>Fix analysis of a Path Traversal vulnerability issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis-example.png" alt="Data flow of a Path Traversal vulnerability issue."><figcaption><p>Fix analysis of a Path Traversal vulnerability issue</p></figcaption></figure>
 
 The fix appears in the Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability.
 
-<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github.png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github (1).png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
 
 ## Severity score factors
 
