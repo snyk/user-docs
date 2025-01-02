@@ -4,35 +4,44 @@ The `.snyk` file is a capability of Snyk that all users can employ locally or as
 
 How the `.snyk` file works varies among Snyk products. When you deploy the `.snyk` file, start by reviewing how the file is created, where it can be used, and what it is used for. For details, see [Use the `.snyk` file with Snyk Open Source](the-.snyk-file.md#use-the-.snyk-file-with-snyk-open-source), [Use the `.snyk` file with Snyk Code](the-.snyk-file.md#use-the-.snyk-file-with-snyk-code) and [Use the `.snyk` file with Snyk IaC](the-.snyk-file.md#use-the-.snyk-file-with-snyk-iac).
 
-You can create the `.snyk` file by using the `snyk ignore` command. This generates the file and an ignore rule. You can also create the file using a text or code editor. The format is YAML. For details, see [How to create the `.snyk` file](the-.snyk-file.md#how-to-create-the-.snyk-file).
+You can create the `.snyk` file by using the `snyk ignore` CLI command. This generates the file and an ignore rule. You can also create the file using a text or code editor. The format is YAML. For details, see [How to create the `.snyk` file](the-.snyk-file.md#how-to-create-the-.snyk-file).
 
-Key considerations regarding how the `.snyk` file is used:
+Key considerations regarding how the `.snyk` file is used are as follows:
 
 * The CLI automatically uses the `.snyk` file if it is present, along with the ignore rules in the database created in the Snyk Web UI, if the product supports using ignores in the database or Snyk rules.
-* CI/CD plugins or the CLI used as part of a build system use the `.snyk` file during scanning if the file is present.
-* If you merge the `.snyk` file with the rest of your code, when you import an SCM to Snyk, the rules in the `.snyk` file are applied on top of the database rules created in the Snyk Web UI.&#x20;
+* The CLI used as part of a build system and the CI/CD plugins use the `.snyk` file during scanning if the file is present.
+* If you merge the `.snyk` file with the rest of your code, when you import an SCM to Snyk, the rules in the `.snyk` file are applied on top of the database rules created in the Snyk Web UI.
 * If you use the `.snyk` file to specify ignores, you avoid having to specify them in the Snyk Web UI, which you can do only after an issue is detected and monitored. You can use the `.snyk` file to override the ignore rules in the Snyk database. For details, see [How to override the ignore rules in the database](the-.snyk-file.md#how-to-override-the-ignore-rules-in-the-database).
+* For more information, see [Exclude files and ignore issues FAQs](../prioritize-issues-for-fixing/ignore-issues/exclude-files-and-ignore-issues-faqs.md).
 
 ## How to create the `.snyk` file
 
 You can create the `.snyk` file by using the `snyk ignore` command. For details, see the [Ignore](../../snyk-cli/commands/ignore.md) command CLI help.
 
 If you do not have an existing `.snyk` file, you can create one and populate it with the following code:\
-&#x20;`# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
+`# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
 `version: v1.25.0`
 
-* You must set the `version` to `v1.25.0` as this is the current policy schema version.&#x20;
+* You must set the `version` to `v1.25.0` as this is the current policy schema version.
 * The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](../../snyk-cli/commands/ignore.md#description) or the examples on this page.
 
 For more information, see [Syntax of the `.snyk` file](the-.snyk-file.md#syntax-of-the-.snyk-file).
+
+{% hint style="info" %}
+Snyk also provides the [snyk-policy package](https://www.npmjs.com/package/snyk-policy) to create a policy file, typically named `.snyk`. The version of the package is not the same as the policy schema version to be entered in the `.snyk` file.
+{% endhint %}
+
+### Where to create the `.snyk` file
 
 Generally, you must ensure the `.snyk` file is created in the code repository, the same as other applications and build resources.
 
 The `.snyk` file is generally located at the root of your Project. However, for SCM imports, the `.snyk` file must be in the same directory as any file needed for scanning to which it relates, for example, a manifest file. See [Use the `.snyk` file with monorepos and complex Projects](the-.snyk-file.md#use-the-.snyk-file-with-monorepos-and-complex-projects).
 
+### Create a `.snyk` file for a patch
+
 When you select the **Fix a vulnerability** button on a Git repository Open Source scan, and a Snyk patch is available, and an upgrade is not possible, a `.snyk` file is added to the pull request to specify a patch. Creating Snyk patches is supported for npm and Yarn only.
 
-The following example shows how to create a  `.snyk` file to generate a patch rule using a vulnerability fix PR:
+The following example shows how to create a `.snyk` file to generate a patch rule using a vulnerability fix PR:
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
@@ -44,12 +53,6 @@ patch:
     - tap > codecov.io > request > hawk:
         patched: '2020-01-20T14:26:34.404Z'
 ```
-
-Snyk also provides the [snyk-policy package](https://www.npmjs.com/package/snyk-policy) to create a policy file, typically named `.snyk`.
-
-{% hint style="info" %}
-The version of the package is not the same as the policy schema version to be entered in the `.snyk` file.
-{% endhint %}
 
 ## Use the `.snyk` file with Snyk Code
 
@@ -81,7 +84,7 @@ When you include the `.snyk` file in your code repository and the `language-sett
 * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options.
 
 {% hint style="info" %}
-&#x20;if the `.snyk` file was not present at the initial import of the Project into Snyk., you must re-import the Project.
+if the `.snyk` file was not present at the initial import of the Project into Snyk., you must re-import the Project.
 {% endhint %}
 
 For more information about Python version support, see [Python version support](../../supported-languages-package-managers-and-frameworks/python/#python-version-support).
@@ -152,6 +155,8 @@ The license ID is part of the license issue URL, for example, in this URL: [http
 
 ## Use the Snyk CLI and the `.snyk` file for Snyk Open Source
 
+### CLI commands to use
+
 The Snyk CLI has commands to create and view a `.snyk` file.
 
 The `snyk policy` command displays the `.snyk` policy for a package.
@@ -167,6 +172,14 @@ The following example shows using the `snyk ignore` command to generate a rule f
 ```
 snyk ignore --id='SNYK-JS-BSON-561052' --expiry='2018-04-01' --reason='testing'
 ```
+
+### Use the `.snyk` file with monorepos and complex Projects
+
+The Snyk CLI expects the `.snyk` file to apply to the manifest being analyzed. In the case of a complex Project or monorepo, there may be many manifests in subfolders, and you may wish to use a centralized ignore policy. The `.snyk` file is expected to be the root of your Project, with your manifest file. If the `.snyk` file is not in the root of your Project, for example, in the case of a centralized policy, you must specify the path explicitly using the `--policy-path` option.
+
+If you create a `.snyk` ignore policy using the CLI and Snyk does not successfully ignore the vulnerability, use the option `--policy-path=/path/path/file.`
+
+Your complete statement should be `snyk ignore --id=IssueID [--expiry=expiry] [--reason='reason for ignoring'] [--policy-path=/path/path/file].`
 
 ## How to override the ignore rules in the database
 
@@ -184,14 +197,6 @@ To set these ignore preferences for use by the Snyk Web UI and API:
    * **Admin users only** - only admins can customize the ignore settings.
    * **All users in any environment** - all users can customize the ignore settings.
 
-## Use the `.snyk` file with monorepos and complex Projects
-
-The Snyk CLI expects the `.snyk` file to apply to the manifest being analyzed. In the case of a complex Project or monorepo, there may be many manifests in subfolders, and you may wish to use a centralized ignore policy. The `.snyk` file is expected to be the root of your Project, with your manifest file. If the `.snyk` file is not in the root of your Project, for example, in the case of a centralized policy, you must specify the path explicitly using the `--policy-path` option.
-
-If you create a `.snyk` ignore policy using the CLI and Snyk does not successfully ignore the vulnerability, use the option `--policy-path=/path/path/file.`
-
-Your complete statement should be `snyk ignore --id=IssueID [--expiry=expiry] [--reason='reason for ignoring'] [--policy-path=/path/path/file].`
-
 ## Syntax of the `.snyk` file
 
 The `.snyk` file has the following top-level keys:
@@ -200,7 +205,7 @@ The `.snyk` file has the following top-level keys:
 * `ignore:`
 * `patch:`
 
-The `language-settings:` value is the Python version you are currently using. See the examples in the section [Set the language version for Python](the-.snyk-file.md#set-the-language-version-for-python) on this page.&#x20;
+The `language-settings:` value is the Python version you are currently using. See the examples in the section [Set the language version for Python](the-.snyk-file.md#set-the-language-version-for-python) on this page.
 
 The `ignore:` is an ignore rule in the form of:
 
@@ -230,4 +235,3 @@ The `patch`: is in the form of:
   - path to library using > separator > to > another > path:
     patched: 'YYYY-MM-DDThh:mm:ss.fffZ'
 ```
-
