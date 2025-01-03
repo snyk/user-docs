@@ -60,7 +60,7 @@ Integrations for the Group level are available only for Snyk AppRisk users.
 
 The **Integrations** page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
 
-ou can find an overview of all your integrations on the Snyk Web UI **Integrations** page. You can enable or disable your integrations, edit them, or remove them from your configuration.
+You can find an overview of all your integrations on the Snyk Web UI **Integrations** page. You can enable or disable your integrations, edit them, or remove them from your configuration.
 
 For more details about available integrations, see [Snyk AppRisk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Integrate with Snyk](../integrate-with-snyk/#integrations-for-snyk-apprisk).
 
