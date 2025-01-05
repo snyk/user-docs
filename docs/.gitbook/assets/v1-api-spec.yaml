@@ -11318,7 +11318,7 @@ paths:
         - Reporting API
       summary: Get list of issues
       description: >-
-        Returns any issues that are present during the specified timeframe. For example, if an issue from 2018 is still considered a vulnerable today, it will show up in all reports from its inception to the current day. This data updates once per hour.**Note:** A vulnerability that was introduced and then resolved on the same day will not show up in the response.
+        Returns any issues that are present during the specified timeframe. For example, if an issue from 2018 is still considered a vulnerable today, it will show up in all reports from its inception to the current day. This data can take up to 9 hours to refresh.**Note:** A vulnerability that was introduced and then resolved on the same day will not show up in the response.
 
 
         #### Required permissions
