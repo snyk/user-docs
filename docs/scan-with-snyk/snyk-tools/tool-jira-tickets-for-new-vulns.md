@@ -12,9 +12,9 @@ Use the binaries from [the release page](https://github.com/snyk-tech-services/j
 
 ```
 ./snyk-jira-sync-<yourplatform> 
-    -orgID=<SNYK_ORG_ID>                    // Can find it under settings
-    -token=<API Token>                      // Snyk API Token. Service accounts work.
-    -jiraProjectKey=<Key>                  // Jira project Key the tickets will be opened against
+    --orgID=<SNYK_ORG_ID>                    // Can find it under settings
+    --token=<API Token>                      // Snyk API Token. Service accounts work.
+    --jiraProjectKey=<Key>                  // Jira project Key the tickets will be opened against
 ```
 
 **Extended options**
@@ -132,7 +132,7 @@ jira:
     assigneeId: 123abc456def789
     assigneeName: AccountName
     priorityIsSeverity: true # <true|false>
-    label: label1 # <IssueLabel1>,<IssueLabel2>
+    labels: label1 # <IssueLabel1>,<IssueLabel2>
     jiraProjectKey: testProject
     priorityIsSeverity: false # <true|false> (defaults: Low|Medium|High|Critical=>Low|Medium|High|Highest)
     customMandatoryFields:
@@ -143,6 +143,6 @@ jira:
 **Notes:**
 
 * The token is not expected to be present in the config file.
-* Command line arguments override the config file. Example: Using the config file above, running `./snyk-jira-sync-macOs -Org=1234 -configFile=true -token=123` the org ID used by the tool will be 1234 and not a1b2c3de-99b1-4f3f-bfdb-6ee4b4990513.
+* Command line arguments override the config file. Example: Using the config file above, running `./snyk-jira-sync-macOs --Org=1234 --configFile=./path/to/folder --token=123` the org ID used by the tool will be 1234 and not a1b2c3de-99b1-4f3f-bfdb-6ee4b4990513.
 * See 'Extended options' for default values.
 * Ensure you use the same issue type that is configured in your Jira. Default is Bug. Verify the type is use (or default) exists in your Jira configuration.
