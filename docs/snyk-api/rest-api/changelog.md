@@ -1,3 +1,32 @@
+## 2024-10-15 - Updated 2025-01-07
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added `loaded_package` discriminator mapping keys to the `data/items/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/items/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added `loaded_package` discriminator mapping keys to the `data/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added `loaded_package` discriminator mapping keys to the `data/items/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/items/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added `loaded_package` discriminator mapping keys to the `data/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
 ## 2024-10-15 - Updated 2024-12-09
 
 ### GET - `/orgs/{org_id}` - Updated
