@@ -175,6 +175,12 @@ components:
           example: some_opaque_refresh_token_string
       required: [grant_type, client_secret, refresh_token]
     ClientCredentials:
+      oneOf:
+        - $ref: "#/components/schemas/ClientCredentialsSecret"
+        - $ref: "#/components/schemas/ClientCredentialsJWT"
+      discriminator:
+        propertyName: client_assertion_type
+    ClientCredentialsBase:
       type: object
       properties:
         grant_type:
@@ -185,36 +191,57 @@ components:
           type: string
           enum: [client_credentials]
           example: client_credentials
-        client_secret:
-          description:
-            The client secret of the client application if not using `private_key_jwt`
-            auth.
-          type: string
-          example: super_secret_client_secret
-        client_assertion:
-          description:
-            "Required for the client_credentials grant type if using `private_key_jwt`\
-            \ auth. A compact signed JWT containing claims detailed in OIDC Connect\
-            \ Core 1.0, section 9.\n\nRequired header claims:\n- kid: KeyID which\
-            \ matches a public key in the registered JWKS endpoint.\n\nRequired payload\
-            \ claims:\n- sub: client_id of your Service Account.\n- iss: client_id\
-            \ of your Service Account.\n- jti: A cryptographically unique value (nonce)\
-            \ to prevent replay attacks.\n- aud: Full URL for this token endpoint\
-            \ - \"https://api.snyk.io/oauth2/token\".\n- exp: Unix timestamp of when\
-            \ the token shouldn't be accepted for processing. We suggest now() + 5\
-            \ minutes.\n\nThe JWT must be signed using a private key with RSA256 (RSASSA-PKCS-v1.5\
-            \ using SHA-256), and its public key must be exposed on the previously\
-            \ registered JWKS endpoint"
-          type: string
-        client_assertion_type:
-          description:
-            Required for `private_key_jwt` auth, the method of client_assertion
-            being sent. Only "urn:ietf:params:oauth:client-assertion-type:jwt-bearer"
-            is supported.
-          type: string
-          enum: [urn:ietf:params:oauth:client-assertion-type:jwt-bearer]
-          example: urn:ietf:params:oauth:client-assertion-type:jwt-bearer
       required: [grant_type]
+    ClientCredentialsSecret:
+      allOf:
+        - $ref: "#/components/schemas/ClientCredentialsBase"
+        - type: object
+          properties:
+            client_id:
+              description: The client ID of the client application.
+              type: string
+              example: 64ae3415-5ccd-49e5-91f0-9101a6793ec2
+            client_secret:
+              description:
+                The client secret of the client application.
+              type: string
+              example: super_secret_client_secret
+          required: [client_id, client_secret]
+    ClientCredentialsJWT:
+      allOf:
+        - $ref: "#/components/schemas/ClientCredentialsBase"
+        - type: object
+          properties:
+            # client_id is optional on this assertion but required with the
+            # client secret. Can't express in openapi that without duplicating
+            # the field.
+            client_id:
+              description: The client ID of the client application.
+              type: string
+              example: 64ae3415-5ccd-49e5-91f0-9101a6793ec2
+            client_assertion:
+              description:
+                "A compact signed JWT containing claims detailed in OIDC Connect\
+                \ Core 1.0, section 9.\n\nRequired header claims:\n- kid: KeyID which\
+                \ matches a public key in the registered JWKS endpoint.\n\nRequired payload\
+                \ claims:\n- sub: client_id of your Service Account.\n- iss: client_id\
+                \ of your Service Account.\n- jti: A cryptographically unique value (nonce)\
+                \ to prevent replay attacks.\n- aud: Full URL for this token endpoint\
+                \ - \"https://api.snyk.io/oauth2/token\".\n- exp: Unix timestamp of when\
+                \ the token shouldn't be accepted for processing. We suggest now() + 5\
+                \ minutes.\n\nThe JWT must be signed using a private key with RSA256 (RSASSA-PKCS-v1.5\
+                \ using SHA-256), and its public key must be exposed on the previously\
+                \ registered JWKS endpoint"
+              type: string
+            client_assertion_type:
+              description:
+                The method of client_assertion being sent. Only
+                "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" is
+                supported.
+              type: string
+              enum: [urn:ietf:params:oauth:client-assertion-type:jwt-bearer]
+              example: urn:ietf:params:oauth:client-assertion-type:jwt-bearer
+          required: [client_assertion, client_assertion_type]
     OAuthError:
       type: object
       properties:
