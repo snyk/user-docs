@@ -10,10 +10,10 @@ To check that a downloaded file matches the checksum, use a `sha256sum` command,
 grep snyk-macos sha256sums.txt.asc | sha256sum -c -
 ```
 
-If you want to verify Snyk CLI standalone binaries against [Snyk CLI GPG key](https://github.com/snyk/cli/blob/master/help/\_about-this-project/snyk-code-signing-public.pgp), first import the CPG key:
+If you want to verify Snyk CLI standalone binaries against the [Snyk CLI GPG key](https://github.com/snyk/cli/blob/master/help/_about-this-project/snyk-code-signing-public.pgp), first import the GPG key:
 
 ```
-# A22665FB96CAB0E0973604C83676C4B8289C296E is the key belonging to code-signing@snyk.io
+# 467717A30B2B4658415975629691DA64D0025194 is the key belonging to code-signing@snyk.io
 # Copy of this public key is also in this repository /help/_about-this-project/snyk-code-signing-public.pgp
 gpg --keyserver hkps://keys.openpgp.org --recv-keys A22665FB96CAB0E0973604C83676C4B8289C296E
 ```
@@ -27,10 +27,10 @@ gpg --verify sha256sums.txt.asc
 The command output should look like the following:
 
 ```
-gpg: Signature made So  8 Jan 14:11:44 2023 CET
-gpg:                using EDDSA key A22665FB96CAB0E0973604C83676C4B8289C296E
+gpg: Signature made So  8 Jan 14:11:44 2025 CET
+gpg:                using EDDSA key 467717A30B2B4658415975629691DA64D0025194
 gpg: Good signature from "Snyk Limited <code-signing@snyk.io>" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: A226 65FB 96CA B0E0 9736  04C8 3676 C4B8 289C 296E
+Primary key fingerprint: 4677 17A3 0B2B 4658 4159  7562 9691 DA64 D002 5194
 ```
