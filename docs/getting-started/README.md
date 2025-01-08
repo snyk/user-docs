@@ -67,7 +67,7 @@ Before authenticating, be sure you have set your region properly. For details, s
 
 Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
 
-Free and Team plan and trial users have access only to this personal token under the user profile. The personal token can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE when you are setting a token manually. Use a personal token with caution if you are authenticating with the API or for CI/CD.
+Free and Team plan and trial users have access only to this personal token under the user profile. The personal token can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE when you are setting a token manually. Use a personal token with caution if you are authenticating for CI/CD or with the API, which is available for Enterprise plan users only.
 
 To obtain your personal Snyk API token:
 
