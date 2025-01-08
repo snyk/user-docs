@@ -1,7 +1,7 @@
 # Choose a provisioning option
 
-{% hint style="info" %}
-Work with your Snyk account team to prepare for implementing this SSO option.
+{% hint style="warning" %}
+Contact your Snyk account team or Snyk Support to turn on custom mapping once you have completed the setup steps.
 {% endhint %}
 
 Determine how new users in your company will get access to Snyk:
