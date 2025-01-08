@@ -22,7 +22,7 @@ To define which Python minor version Snyk uses to test your Git-imported Pip Pro
 To define the Python version for all Projects in an Organization:
 
 1. Log in to your Snyk account and navigate to the relevant Group and Organization.
-2. Select **Settings**, then **Languages**.
+2. Select **Settings**, then **Snyk Open Source**.
 3. Select **Edit settings** for **Python**.
 4. From the **Python version** dropdown, select the Python version to use when testing Projects for this Organization.
 
