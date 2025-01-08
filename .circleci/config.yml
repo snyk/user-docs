@@ -12,3 +12,4 @@ workflows:
           context:
             - snyk-bot-slack
           channel: ask-content
+          trusted-branch: main
