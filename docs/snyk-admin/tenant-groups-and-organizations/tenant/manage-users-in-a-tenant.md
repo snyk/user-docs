@@ -14,7 +14,7 @@ Select the name of your Tenant and the **Members** menu option to manage members
 
 <figure><img src="../../../.gitbook/assets/Tenant-member-list.png" alt="Tenant member management list with assigned roles"><figcaption><p>Tenant member management list with assigned roles</p></figcaption></figure>
 
-On the Tenant **Members** page, you can see all the users associated with your Tenant, their authentication type, and their Tenant role. The pre-defined Tenant roles are:
+On the Tenant **Members** page, you can see all the users associated with your Tenant, their authentication type, and their Tenant role. The [pre-defined](../../user-roles/pre-defined-roles.md#role-types) Tenant roles are:
 
 * **Tenant Admin**: can access all Tenant products and settings. Reserved for Snyk Admins only.&#x20;
 * **Tenant Viewer:** can see the list of all Tenant users, all the Groups, and all the Organizations of the Tenant.

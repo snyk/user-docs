@@ -453,7 +453,7 @@ A way to categorize assets. Helps you recognize or handle assets differently acc
 
 ### Tenant
 
-The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see Tenants, Groups, and Organizations.
+The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see [Tenants, Groups, and Organizations](../snyk-admin/groups-and-organizations/).
 
 
 

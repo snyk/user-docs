@@ -42,7 +42,7 @@ For Enterprise plan users, this includes:
 * Targets
 * Projects
 
-For a detailed view of how Snyk encompasses all your work items in the Snyk workspace, see The Snyk hierarchy.&#x20;
+For a detailed view of how Snyk encompasses all your work items in the Snyk workspace, see [The Snyk hierarchy](groups-and-organizations/#the-snyk-hierarchy).&#x20;
 
 ## User types
 
@@ -77,7 +77,7 @@ You can manage users and permissions in your Groups. For details, see [Manage us
 
 ### Manage Tenant, Groups, and Organizations
 
-Snyk groups and organizations help to maintain collaboration across teams. For details, see Tenant, Groups, and Organizations.
+Snyk groups and organizations help to maintain collaboration across teams. For details, see [Tenant, Groups, and Organizations](groups-and-organizations/).
 
 ### Define notifications
 

@@ -14,7 +14,7 @@ Tenant-level roles include **Tenant Admin**, **Tenant Viewer**, and **Tenant Mem
 
 ## Tenant-level options
 
-You can manage users of a Tenant through the **Members** page on the Tenant level.
+You can [manage users of a Tenant](manage-users-in-a-tenant.md) through the **Members** page on the Tenant level.
 
 <div align="center"><figure><img src="../../../.gitbook/assets/tenant-nav.png" alt="Tenant view in the Snyk navigation menu" width="199"><figcaption><p>Tenant view in the Snyk navigation menu</p></figcaption></figure></div>
 
