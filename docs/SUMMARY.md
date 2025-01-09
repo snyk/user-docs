@@ -982,7 +982,6 @@
     * [About the REST API](snyk-api/rest-api/about-the-rest-api.md)
     * [Getting started with the REST API](snyk-api/rest-api/getting-started-with-the-rest-api.md)
     * [Authentication for API](snyk-api/rest-api/authentication-for-api/README.md)
-      * [Authenticate for the API](snyk-api/rest-api/authentication-for-api/authenticate-for-the-api.md)
       * [Snyk API token permissions users can control](snyk-api/rest-api/authentication-for-api/snyk-api-token-permissions-users-can-control.md)
       * [Revoke and regenerate a Snyk API token](snyk-api/rest-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md)
     * [Changelog](snyk-api/rest-api/changelog.md)

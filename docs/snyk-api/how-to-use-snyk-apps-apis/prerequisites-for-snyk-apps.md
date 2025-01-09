@@ -1,6 +1,6 @@
 # Prerequisites for Snyk Apps
 
-To create a Snyk App, you must have access to the Snyk API. To get started, follow the steps to [authenticate for the API](../rest-api/authentication-for-api/authenticate-for-the-api.md).
+To create a Snyk App, you must have access to the Snyk API. To get started, follow the instructions to [authenticate for the API](../rest-api/authentication-for-api/).
 
 You must also retrieve the ID of the Snyk Organization you intend the App to be owned by (your `orgId`). You can get the Organization ID from the Organization settings in the Snyk Web UI or by using the endpoint [List accessible organizations](../reference/orgs.md#orgs): \
 `https://api.snyk.io/rest/orgs` with the Snyk API token in the Authorization header.
