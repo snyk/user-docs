@@ -49,6 +49,8 @@ The recommended approach is to use [`nuget.config`](https://learn.microsoft.com/
 
 If you are not using `nuget.config`, but another way of informing the .NET ecosystem of where to look for private packages, Snyk will attempt to add all private NuGet repository credentials defined in the private package repository integration as a `dotnet nuget` source before restoring the Project.
 
+Fill in the **Your tokens** fields by adding a **Username**, the **Personal access token**, and the repository **URL** (supports only HTTPS sources).&#x20;
+
 ### Limitations on improved .NET scanning for SCM integrations
 
 * `Directory.Build.props` , `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).
@@ -56,6 +58,7 @@ If you are not using `nuget.config`, but another way of informing the .NET ecosy
 * The operations are performed on a **case-sensitive** file system, meaning manifest definitions like your `<ProjectReference>`s strings must match files and folders with the same case.
 * Snyk does not support Projects that use Visual Studio Build Tools.
 * Snyk does not support Windows-specific frameworks (WPF, WCF) for .NET Projects.
+* Projects with downloaded dependencies totaling more than 10GB are not supported.
 
 ## .NET scanning improvements for the Snyk CLI
 
