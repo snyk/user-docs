@@ -48,17 +48,17 @@ By understanding your images, packages, and Kubernetes resources as "application
 * [OS condition](risk-factor-os-condition.md)
 * [Public facing](risk-factor-public-facing.md)
 
-You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Insights** UI tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.&#x20;
+You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Issues** UI tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.&#x20;
 
 {% hint style="info" %}
 The Risk Factors are available only for Snyk AppRisk Pro.
 
-In the Snyk Web UI, the Insights tab in the Group Settings is available only for Snyk AppRisk Pro.&#x20;
+In the Snyk Web UI, the Issues tab in the Group Settings is available only for Snyk AppRisk Pro.&#x20;
 {% endhint %}
 
 Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](../set-up-insights-for-snyk-apprisk/#prioritize-your-integrations) by customizing the available Insights options from the Group settings.
 
-<figure><img src="../../../.gitbook/assets/image (457).png" alt="Snyk AppRisk Pro - Insights tab in the Group settings"><figcaption><p>Snyk AppRisk Pro - Insights tab in the Group settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (640).png" alt=""><figcaption><p>Snyk AppRisk - Insights tab in the Group settings</p></figcaption></figure>
 
 {% hint style="info" %}
 Risk factor settings may take up to four hours to take effect.

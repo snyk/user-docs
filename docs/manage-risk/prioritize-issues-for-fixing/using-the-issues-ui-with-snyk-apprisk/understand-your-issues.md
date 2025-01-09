@@ -1,12 +1,12 @@
 # Understand your issues
 
-Snyk AppRisk Insights works by understanding your vulnerabilities within the context of your application. You can see all the gathered context in the list view of your issues. In the table view, you can see the following details:
+Snyk AppRisk Issues works by understanding your vulnerabilities within the context of your application. You can see all the gathered context in the list view of your issues. In the table view, you can see the following details:
 
 * Issue name, which redirects to the Projects page within that issue's Organization.
 * Identified risk factors together with the [evidence graph](evidence-graph.md).
 
 {% hint style="info" %}
-The Risk Factor and evidence graph information is available only for Snyk AppRisk Pro users.
+The Risk Factor and evidence graph information is available only to Snyk AppRisk Pro users.
 {% endhint %}
 
 * Exploit maturity
@@ -19,7 +19,3 @@ The Risk Factor and evidence graph information is available only for Snyk AppRis
 <figure><img src="../../../.gitbook/assets/image (467).png" alt="Snyk AppRisk Pro - Issues page, Table view of issues"><figcaption><p>Snyk AppRisk Pro - Issues page, Table view of issues</p></figcaption></figure>
 
 You can also sort the table of issues by these details.
-
-{% hint style="info" %}
-In the Issues UI, only IaC issues are supported. IaC+ issues are not supported, as IaC+ is  Closed Beta.
-{% endhint %}

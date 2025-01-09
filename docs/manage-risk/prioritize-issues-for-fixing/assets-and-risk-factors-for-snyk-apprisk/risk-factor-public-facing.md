@@ -15,7 +15,7 @@ The Snyk platform analyzes various data sources to compute the network connectiv
 Cloud-native solutions are deterministic in how network connectivity is configured. Snyk uses that knowledge to compute the answers based on the available information. For example,  to understand how the network connectivity can be configured, see Kubernetes [Services](https://kubernetes.io/docs/concepts/services-networking/service/) and [Ingresses](https://kubernetes.io/docs/concepts/services-networking/ingress/) documentation.&#x20;
 
 {% hint style="info" %}
-Snyk AppRisk Insights currently supports the following configurations: Kubernetes services and ingress, and Gloo.
+Snyk AppRisk Issues supports the following configurations: Kubernetes services and ingress, and Gloo.
 {% endhint %}
 
 Kubernetes Connector checks the images for ingress configuration. If not detected, the image is considered public facing.
@@ -32,7 +32,7 @@ The Kubernetes Connector continuously monitors the Kubernetes events. These even
 
 Every hour, the data pipeline performs a reconciliation of the state of the cluster to create a snapshot. This snapshot is used to compute the network relationship between various resources, such as services to pods and ingresses to services. The same snapshot is used to extrapolate which images are running at that time.
 
-The analysis is currently performed only based on the connectivity specification. The granularity of the analysis is performed on `port` and `http path` levels. Various constraints may be applied to configured paths, such as network policies, security groups, and firewalls. Snyk currently does not include the constraints in the computation.&#x20;
+The analysis is performed only based on the connectivity specification. The granularity of the analysis is performed on `port` and `http path` levels. Various constraints may be applied to configured paths, such as network policies, security groups, and firewalls. Snyk does not include the constraints in the computation.&#x20;
 
 At the same interval, the data pipeline takes a snapshot of all Snyk Projects and data sources and extrapolates packages and images. This snapshot is used to determine which images and packages are known to Snyk for any given customer.&#x20;
 

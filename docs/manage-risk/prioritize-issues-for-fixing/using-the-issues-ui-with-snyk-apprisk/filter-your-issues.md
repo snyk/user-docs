@@ -14,9 +14,11 @@ Snyk AppRisk operates at the Group level and provides a holistic view of all the
 The Funnel view is available only for Snyk AppRisk Pro users.
 {% endhint %}
 
-The funnel view is a visual representation of your application's issues and risk factors. It allows you to filter the list of issues by specific risk factors or a combination of them. The risk factors OS condition, Deployed, and Public facing are clickable filters.
+The funnel view is a visual representation of your application's issues and risk factors. It allows you to filter the list of issues by specific risk factors or a combination of them. The **Deployed** and **Public facing** risk factors are clickable filters.
 
-<figure><img src="../../../.gitbook/assets/image (468).png" alt="Snyk AppRisk Pro - Issues page, Funnel view"><figcaption><p>Snyk AppRisk Pro - Issues page, Funnel view</p></figcaption></figure>
+{% hint style="info" %}
+The OS Condition risk factor is now available only in the table view of the Issues UI.
+{% endhint %}
 
 ## Table view filters
 
@@ -39,7 +41,7 @@ The Risk Factor filter is available only for Snyk AppRisk Pro users.
 
 You can also add a variety of filters that you consider relevant for any particular scenario.
 
-Note that in an initial triage, you want to look at OS condition, Deployed, and Public facing, and choose both critical and high severity. Snyk Open Source finds critical vulnerabilities, while Snyk Code finds vulnerabilities up to high severity only. When you filter on the issues of greatest concern, filter for both critical and high severity.
+In an initial triage, you want to look at OS condition, Deployed, and Public facing, and choose both critical and high severity. Snyk Open Source finds critical vulnerabilities, while Snyk Code finds vulnerabilities up to high severity only. When you filter on the issues of greatest concern, filter for both critical and high severity.
 
 When you filter based on the Asset class and an issue is found in two different repositories with two different classes assigned, the class with the highest priority is displayed in Snyk AppRisk.
 
