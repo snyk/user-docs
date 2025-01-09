@@ -42,7 +42,7 @@ The language or package manager is not supported. Please refer to the supported 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-open-source-dependencies-with-automatic-prs#supported-languages-and-scms](https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-open-source-dependencies-with-automatic-prs#supported-languages-and-scms)
+- [https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/upgrade-open-source-dependencies-with-automatic-prs#supported-languages-and-scms](https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/upgrade-open-source-dependencies-with-automatic-prs#supported-languages-and-scms)
 
 ### [SNYK-PACKAGES-0003](#snyk-packages-0003)
 
@@ -2544,4 +2544,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-01-06T09:11:58.830Z
+--- Generated at 2025-01-09T10:27:38.758Z
