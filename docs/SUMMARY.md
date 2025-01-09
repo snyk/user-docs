@@ -277,7 +277,7 @@
       * [Backstage file in Asset Inventory - Use case](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/backstage-file-in-asset-inventory-use-case.md)
   * [Snyk IDE plugins and extensions](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/README.md)
     * [Eclipse plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/README.md)
-      * [Download the CLI and language server with the Eclipse plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/download-the-cli-and-language-server-with-the-eclipse-plugin.md)
+      * [Download the CLI with the Eclipse plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/download-the-cli-and-language-server-with-the-eclipse-plugin.md)
       * [Authentication for the Eclipse plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md)
       * [Eclipse plugin folder trust](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/eclipse-plugin-folder-trust.md)
       * [Configuration of the Eclipse plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/configuration-of-the-eclipse-plugin.md)

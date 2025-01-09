@@ -8,6 +8,33 @@ All of the issues found by Snyk are now integrated natively with Eclipse flows. 
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-05-13 at 12.20.26.png" alt="Eclipse Problems tab"><figcaption><p>Eclipse Problems tab</p></figcaption></figure>
 
+Additionally, starting with version 3+, we provide a custom UI in the Snyk Tab, that displays issue details:
+
+<figure><img src="../../../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
+
+### Net new issue scanning (delta scanning)
+
+#### General
+
+
+
+<figure><img src="../../../.gitbook/assets/image (647).png" alt=""><figcaption><p>Net new issues can be activated in the dot menu of the Snyk View</p></figcaption></figure>
+
+To filter the displayed issues to only display the issues introduced in the working directory, net new issues scan can be activated. This requires a git repository to work:
+
+1. First, we scan the git `master` or `main` branch, or any reference branch selected in the Snyk View.
+2. Second, we scan the working directory
+3. We calculate the difference between both and only display the difference
+
+#### Choosing the reference branch
+
+1. Click on the project node, to open the branch chooser dialog.
+2. Choose the branch that is the reference against which new issues shall be calculated
+
+<figure><img src="../../../.gitbook/assets/image (653).png" alt=""><figcaption><p>After clicking on the project branch, the reference branch can be chosen</p></figcaption></figure>
+
+
+
 Continue by following the instructions on the page for the type of scan you are doing:
 
 * [SAST scanning results (SAST, Snyk Code)](https://docs.snyk.io/ide-tools/eclipse-plugin/sast-scanning-results-sast-snyk-code)

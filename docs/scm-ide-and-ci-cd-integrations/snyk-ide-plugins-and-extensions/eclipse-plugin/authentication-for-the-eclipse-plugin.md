@@ -11,7 +11,9 @@ Snyk supports the following protocols for authentication:
 
 After the extension is installed, to authenticate follow these steps:
 
-1. In the dialog that opens, set the Snyk API endpoint for custom multi-tenant or single-tenant setup, The default is `https://api.snyk.io`. For details, see [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
+1. In the dialog that opens, set the Snyk API endpoint for custom multi-tenant or single-tenant setup, The default is `https://api.snyk.io`. For details, see [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls). \
+   \
+   Multi-tenant users who do not belong to the default region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 
 <figure><img src="../../../.gitbook/assets/SCR-20240822-mgxw (1).png" alt="Snyk tenant configuration" width="563"><figcaption><p>Snyk endpoint configuration</p></figcaption></figure>
 
