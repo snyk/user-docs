@@ -803,6 +803,8 @@
 * [Admin](snyk-admin/README.md)
   * [Structure your account for high application performance](snyk-admin/structure-your-account-for-high-application-performance.md)
   * [Groups and Organizations](snyk-admin/groups-and-organizations/README.md)
+    * [Tenant](snyk-admin/groups-and-organizations/tenant/README.md)
+      * [Manage users in a Tenant](snyk-admin/groups-and-organizations/tenant/manage-users-in-a-tenant.md)
     * [Groups](snyk-admin/groups-and-organizations/groups/README.md)
       * [Manage users in a Group](snyk-admin/groups-and-organizations/groups/manage-users-in-a-group.md)
       * [Configure session length for a Snyk Group](snyk-admin/groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md)
