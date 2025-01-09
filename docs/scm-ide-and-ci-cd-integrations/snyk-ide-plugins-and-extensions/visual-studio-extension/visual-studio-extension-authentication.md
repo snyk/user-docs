@@ -15,7 +15,7 @@ Snyk supports the following protocols for authentication:
 
 To authenticate follow these steps:
 
-1. After the extension is installed, navigate to **Extensions > Snyk > Windows > Snyk** and then locate an open panel.&#x20;
+1. After the extension is installed, navigate to **Extensions** , **Snyk**, **Windows**, and then **Snyk** to open the Snyk panel.&#x20;
 
 <figure><img src="../../../.gitbook/assets/SCR-20240822-llxy.png" alt="Snyk extension navigation" width="563"><figcaption><p>Snyk extension navigation</p></figcaption></figure>
 
@@ -51,7 +51,7 @@ This method is inferior to the OAuth method.
 
 To authenticate follow these steps:
 
-1. After the extension is installed, navigate to **Extensions > Snyk > Settings**:
+1. After the extension is installed, navigate to **Extensions,** **Snyk**, and then **Settings**:
 
 <figure><img src="../../../.gitbook/assets/SCR-20240822-lyzs.png" alt="Snyk Settings navigation" width="375"><figcaption><p>Snyk Settings navigation</p></figcaption></figure>
 
