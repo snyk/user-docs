@@ -1,40 +1,48 @@
 # Admin
 
-Administration encompasses the following functions:
-
-* [Manage Groups and Organizations](tenant-groups-and-organizations/)
-* [Manage and use Snyk Projects](snyk-projects/)
-* [Manage users in Organizations](tenant-groups-and-organizations/organizations/manage-users-in-organizations.md) and [Groups](tenant-groups-and-organizations/groups/manage-users-in-a-group.md)
-* [Manage user roles](user-roles/)
-* [Manage notifications](manage-notifications.md)
-* [Manage settings](tenant-groups-and-organizations/group-and-organization-settings.md)
-
-This page covers the following topics:
-
-* [Accounts, Groups, Organizations, Targets, and Projects](./#accounts-groups-organizations-targets-and-projects)
-* [User types](./#user-types)
-* [Admin tools](./#snyk-admin-tools)
-
 {% hint style="info" %}
 **Feature availability**
 
 Some functions, such as Groups, are available only on certain plans. For more information, see [plans and pricing](https://snyk.io/plans/).\
 
 
-For details on Enterprise setup,  see [Enterprise setup](../enterprise-setup/).
+For details on Enterprise setup, see [Enterprise setup](../enterprise-setup/).
 {% endhint %}
 
-## Accounts, Groups, Organizations, Targets, and Projects
+Administration encompasses the following functions:
 
-Snyk has a hierarchy that controls access to scanning and other Snyk features.
+* [Manage Tenants, Groups and Organizations](./#manage-tenant-groups-and-organizations)
+* [Manage and use Snyk Projects](snyk-projects/)
+* [Manage users in Organizations](groups-and-organizations/organizations/manage-users-in-organizations.md) and [Groups](groups-and-organizations/groups/manage-users-in-a-group.md)
+* [Manage user roles](user-roles/)
+* [Manage notifications](manage-notifications.md)
+* [Manage settings](groups-and-organizations/group-and-organization-settings.md)
 
-* **Account:** Users must log in to their Snyk account to scan and view or modify any settings and scan output.
-* [**Groups**](tenant-groups-and-organizations/groups/)**:** Customers have at least one Snyk Group. The Group may correspond to the entire company. Large companies may have multiple Groups, corresponding to divisions, departments, or other parts of the company. Groups can contain multiple Organizations.
-* [**Organizations**](tenant-groups-and-organizations/organizations/)**:** Snyk Groups encompass one or more Snyk Organizations. Organizations represent specific business areas, such as teams. Organizations can contain multiple Projects.
-* [**Targets**](snyk-projects/#target)**:** Each Target represents a repository imported into Snyk for scanning and re-testing.
-* [**Projects**](snyk-projects/)**:** A Project is established based on the items that Snyk scans for issues, such as manifest files, and shows the results of scans. You can configure your Projects to define how to scan for issues in that Project. See [Getting started](getting-started/).
+This page covers the following topics:
 
-Snyk Admins set up Groups and Organizations. See [Manage Groups and Organizations](tenant-groups-and-organizations/) for details. Targets and [Projects](snyk-projects/) are created when Snyk users import development Projects into Snyk for scanning.
+* [The Snyk workspace](./#the-snyk-workspace)
+* [User types](./#user-types)
+* [Snyk Admin tools](./#snyk-admin-tools)
+
+## The Snyk workspace
+
+Snyk has a hierarchy that controls access to scanning and other Snyk features in the Snyk workspace. This hierarchy changes depending on your Snyk plan level.
+
+For Free and Team plan users, this includes:
+
+* Organizations
+* Targets
+* Projects
+
+For Enterprise plan users, this includes:
+
+* Tenant
+* Groups
+* Organizations
+* Targets
+* Projects
+
+For a detailed view of how Snyk encompasses all your work items in the Snyk workspace, see The Snyk hierarchy.&#x20;
 
 ## User types
 
@@ -45,6 +53,9 @@ Snyk has the following types of pre-defined users:
 * Group Admin
 * Group Viewer
 * Group Member
+* Tenant Admin
+* Tenant Viewer
+* Tenant Member
 
 See [Pre-defined roles](user-roles/pre-defined-roles.md) for more details, including the permissions associated with each role.
 
@@ -64,9 +75,9 @@ You can manage users and permissions in your Groups. For details, see [Manage us
 
 <figure><img src="../.gitbook/assets/image (245) (1) (1) (1).png" alt="Manage members interface"><figcaption><p>Manage members interface</p></figcaption></figure>
 
-### Manage Groups and Organizations
+### Manage Tenant, Groups, and Organizations
 
-Snyk groups and organizations help to maintain collaboration across teams. For details, see [Manage Groups and Organizations](tenant-groups-and-organizations/).
+Snyk groups and organizations help to maintain collaboration across teams. For details, see Tenant, Groups, and Organizations.
 
 ### Define notifications
 
@@ -76,4 +87,4 @@ You can manage email notifications for yourself and your Organization. For detai
 
 ### Manage settings
 
-You can customize your Snyk account to suit your work process. For details, see [Manage settings](tenant-groups-and-organizations/group-and-organization-settings.md).
+You can customize your Snyk account to suit your work process. For details, see [Manage settings](groups-and-organizations/group-and-organization-settings.md).

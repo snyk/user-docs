@@ -14,7 +14,7 @@ Snyk has a hierarchy that allows you to control access to Snyk scanning and feat
 <figure><img src="../../.gitbook/assets/2024-12-13_10-54-22.png" alt=""><figcaption><p>The Snyk hierarchy for Free and Team plans.</p></figcaption></figure>
 
 * **Account:** Users must log in to their Snyk account to scan and view or modify any settings and scan
-* [**Tenants**](tenant/): A Tenant encompasses the entire Snyk workspace of your company, team, and individual users. You have one Tenant that encompasses all your Snyk work items: Groups, Organizations, Targets, Projects, and all their adjacent entities, for example, Snyk features, Tags, Collections, and so on.
+* [**Tenants**](../tenant-groups-and-organizations/tenant/): A Tenant encompasses the entire Snyk workspace of your company, team, and individual users. You have one Tenant that encompasses all your Snyk work items: Groups, Organizations, Targets, Projects, and all their adjacent entities, for example, Snyk features, Tags, Collections, and so on.
 * [**Groups**](groups/): A Group encompasses your entire base of Snyk users. Large companies may have multiple Groups with multiple Organizations. Enterprise customers have at least one Snyk Group.
 * [**Organizations**](organizations/): An Organization represents a specific area, such as a team, in your business. Organizations can contain multiple Projects.
 * [**Targets**:](../../getting-started/glossary.md#target) A Target represents the external resource that Snyk scans, like a repository. One Target can relate to multiple Projects. For example, a Target `https://github.com/examplesnyk/example` contains the Projects `package.json` and `Dockerfile.`

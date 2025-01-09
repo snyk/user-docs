@@ -232,7 +232,7 @@ Open Container Initiative. An independent body set up to facilitate collaboratio
 
 ### Organization
 
-An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](../snyk-admin/tenant-groups-and-organizations/).
+An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](../snyk-admin/groups-and-organizations/).
 
 ### Origin or source
 
@@ -450,6 +450,12 @@ Representation of an external resource Snyk has scanned. All [Snyk Projects](glo
 ### **Tags (Snyk AppRisk)**
 
 A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags and you can use them for creating policies.
+
+### Tenant
+
+The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see Tenants, Groups, and Organizations.
+
+
 
 ## U
 

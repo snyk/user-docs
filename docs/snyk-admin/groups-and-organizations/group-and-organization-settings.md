@@ -11,7 +11,7 @@ At the Group level, select **Settings** to manage Group settings:
 From the Group settings menu, select **Settings** and then select one of the Group settings options:
 
 * **General**: See [Group general settings](groups/group-general-settings.md) for details.
-* &#x20;**SSO**: See [Self-Serve Single Sign-On (SSO)](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/) for details.
+* **SSO**: See [Self-Serve Single Sign-On (SSO)](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/) for details.
 * **Member Roles**: See [Manage Member Roles](../user-roles/user-role-management.md) for details.
 * **Service Accounts**: See [Service accounts](../../enterprise-setup/service-accounts/) for details.
 * **Notifications**: See [Manage notifications](../manage-notifications.md) for details.
