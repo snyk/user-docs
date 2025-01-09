@@ -1,6 +1,6 @@
 # Configure Self-Serve Single Sign-On (SSO)
 
-Group Admins on a Snyk Enterprise plan who use SAML for SSO can configure Snyk Single Sign-on themselves. Ensure you have at least one Group and Organization where you can assign new users. See [Manage Groups and Organizations](../../../snyk-admin/groups-and-organizations/).
+Group Admins on a Snyk Enterprise plan who use SAML for SSO can configure Snyk Single Sign-on themselves. Ensure you have at least one Group and Organization where you can assign new users. See [Manage Groups and Organizations](../../../snyk-admin/tenant-groups-and-organizations/).
 
 {% hint style="info" %}
 To enable the self-serve SSO option, contact your Snyk account team or [Snyk support](https://support.snyk.io).\
@@ -42,8 +42,8 @@ Users are [provisioned ](../choose-a-provisioning-option.md)to Snyk when they lo
 
 ### **Configuring Snyk**
 
-1. In **Step 2** of the SSO settings page in the Snyk web UI, enter the details collected from the IdP by providing the **sign in URL**, **sign out URL** if available and desired, the **IdP signing certificate** and **domains and subdomains** that will be served over the SSO connection.&#x20;
-2. In case the connection requires HTTP-Redirect protocol binding, change that option from the default HTTP-POST.&#x20;
+1. In **Step 2** of the SSO settings page in the Snyk web UI, enter the details collected from the IdP by providing the **sign in URL**, **sign out URL** if available and desired, the **IdP signing certificate** and **domains and subdomains** that will be served over the SSO connection.
+2. In case the connection requires HTTP-Redirect protocol binding, change that option from the default HTTP-POST.
 3. Finally, verify if an IdP-initiated workflow should be enabled and then select **Create Connection** or **Save changes** if you are modifying an existing connectio&#x6E;**.**
 
 ### **Setting up user provisioning**

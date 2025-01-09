@@ -22,7 +22,7 @@ Every issue discovered by Snyk Code has a data flow. If an issue has only one st
 
 ### View Data flow
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/tenant-groups-and-organizations/).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project.
 4. (Optional) [Search or filter for a specific vulnerability issue](./#vulnerability-issues).
@@ -59,7 +59,7 @@ Some vulnerabilities contain links to interactive lessons on understanding, fixi
 
 ### View Fix analysis&#x20;
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/tenant-groups-and-organizations/).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project.
 4. (Optional) [Search or filter for a specific vulnerability issue](./#vulnerability-issues).

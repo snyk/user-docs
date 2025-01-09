@@ -10,7 +10,7 @@ To do a manual test on your repository, you can use the [Retest now option](mana
 
 If you want to test repositories already imported to Snyk before the [Snyk Code option was enabled](configure-snyk-code.md#enable-snyk-code-in-snyk-web-ui), you need to re-import them (see [Snyk Code conditions](configure-snyk-code.md#conditions)).
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../snyk-admin/tenant-groups-and-organizations/).
 2. Navigate to **Projects** > **Add projects**.
 3. In the **Enable Snyk Code** section, change the setting to **Enabled**.
 4. Select the Git repository containing the repositories you want to re-import.

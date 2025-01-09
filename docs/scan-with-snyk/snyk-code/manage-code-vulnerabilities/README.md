@@ -69,7 +69,7 @@ To scan your repositories and manage code vulnerabilities, you can check the fol
 
 ### View vulnerabilities in a repository
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/tenant-groups-and-organizations/).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project to see all vulnerability issues detected by Snyk Code.
 
@@ -103,7 +103,7 @@ On the **History** page, only two distinct snapshots are displayed. A snapshot i
 
 To view Project history:
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/tenant-groups-and-organizations/).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project and navigate to **History**.
 4. Select a test from the list to view the Project historical snapshot.

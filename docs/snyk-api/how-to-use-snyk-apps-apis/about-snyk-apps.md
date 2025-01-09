@@ -26,7 +26,7 @@ Authorizing a Snyk App that has the `user` context grants the Snyk App access to
 
 ### Tenant context
 
-When a user authorizes a Snyk App that has the `tenant` context, the user selects the way to connect to either a Snyk Organization or a Group, with access to either all or one of the Organizations in the Group. The resulting connection is no longer tied to that specific user, so it is not bound by the user’s access or lifecycle but is linked to the lifecycle of the Organization. For more information, see [Organizations](../../snyk-admin/groups-and-organizations/organizations/) and  [Groups](../../snyk-admin/groups-and-organizations/groups/).
+When a user authorizes a Snyk App that has the `tenant` context, the user selects the way to connect to either a Snyk Organization or a Group, with access to either all or one of the Organizations in the Group. The resulting connection is no longer tied to that specific user, so it is not bound by the user’s access or lifecycle but is linked to the lifecycle of the Organization. For more information, see [Organizations](../../snyk-admin/tenant-groups-and-organizations/organizations/) and  [Groups](../../snyk-admin/tenant-groups-and-organizations/groups/).
 
 The `scopes` of an App determine which actions an App can perform while connected to a Snyk account. The`scopes` are related to actions performed through Snyk Organizations, which determine the API endpoints that can be used in an App. Endpoints authorized through a Snyk Group are not supported. For more information about scopes, see [Scopes to request](scopes-to-request.md).
 

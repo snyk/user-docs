@@ -1,7 +1,7 @@
 # User role management
 
 {% hint style="info" %}
-**Feature availability**&#x20;
+**Feature availability**
 
 Managing user roles is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
@@ -42,7 +42,7 @@ Role management for Groups takes place in **Settings** > **Member roles**. This 
 
 Click the **Create new role** button and enter the **New role name**, **Role Type**, and **Description**. Role names should be unique, reflecting the user's purpose in Snyk and can contain alphanumeric characters plus spaces. The **Role Type** reflects the permission sets the user can have, Organization-level only or Group and Organization-level.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="Create a custom Organization-level role" width="375"><figcaption><p>Create  a custom Organization-level role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="Create a custom Organization-level role" width="375"><figcaption><p>Create a custom Organization-level role</p></figcaption></figure>
 
 If you would like to continue, you can click the **Create role** button. Basic details about the role are visible in the top section of the **Role details** screen.
 
@@ -82,7 +82,7 @@ To copy a role, use the **Duplicate** button next to each role in the Member Rol
 
 <figure><img src="../../.gitbook/assets/2024-02-13_10-44-43.png" alt="Duplicate a role using the copy icon on the Member Roles page"><figcaption><p>Duplicate a role using the copy icon on the Member Roles page</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-46-59.png" alt="Duplicate a role using the Duplicate role button  under Role Details"><figcaption><p>Duplicate a role using the Duplicate role button  under Role Details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-13_10-46-59.png" alt="Duplicate a role using the Duplicate role button  under Role Details"><figcaption><p>Duplicate a role using the Duplicate role button under Role Details</p></figcaption></figure>
 
 A Duplicate role pop-up will appear, prompting you to enter a unique name and description. You can select the option to use the description from the role you copied from, but this can be edited later. Click the **Duplicate Role** button to proceed with creation. A **Group Admin** or a custom role with **Role management** permissions can edit this role to assign new permissions to it or remove any permissions already assigned.
 
@@ -155,7 +155,7 @@ Follow these steps to change the role of a Group or Organization user:
 
 Alternatively, use the endpoints [Update a member in the organization](../../snyk-api/reference/organizations-v1.md#org-orgid-members-userid) and [Remove a member from the organization](../../snyk-api/reference/organizations-v1.md#org-orgid-members-userid-1) to update the role of members in your Organization. This API call does not support updating the role of Group Members.
 
-If the user is not already a part of your Group, you must first add that user as a member of at least one Organization; see [Add members on the Manage users in Organizations page](../groups-and-organizations/organizations/manage-users-in-organizations.md#add-members). The user then appears on the **Group > Members** page with the role **Group Member**, allowing you to change the role to Group Admin or Group Viewer.
+If the user is not already a part of your Group, you must first add that user as a member of at least one Organization; see [Add members on the Manage users in Organizations page](../tenant-groups-and-organizations/organizations/manage-users-in-organizations.md#add-members). The user then appears on the **Group > Members** page with the role **Group Member**, allowing you to change the role to Group Admin or Group Viewer.
 
 ## Use roles in custom SSO
 

@@ -2,8 +2,6 @@
 
 ## Introduction to structure
 
-<div align="left"><figure><img src="../../../.gitbook/assets/determine-account-structure.png" alt="Determine your account structure" width="563"><figcaption><p>Determine your account structure</p></figcaption></figure></div>
-
 Snyk uses a hierarchical approach to managing assets, access, and rollup reporting.
 
 * **A Snyk Group**: the top level
@@ -18,7 +16,7 @@ Snyk uses a hierarchical approach to managing assets, access, and rollup reporti
   * The import you have tested and monitored with Snyk.
   * A CLI scan that is being monitored, a container that is being monitored in a registry or Kubernetes, or an asset detected during a Git import, such as an open-source manifest, a code analysis scan, or an infrastructure as code file detected.
 
-For more details, see [Manage Groups and Organizations](../../../snyk-admin/groups-and-organizations/).
+For more details, see [Manage Groups and Organizations](../../../snyk-admin/tenant-groups-and-organizations/).
 
 ## Decide the structure
 
@@ -40,4 +38,4 @@ By exploring these options and grasping your company's requirements, you can est
 
 ## Additional information
 
-See [Manage Organizations](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md) for more details.&#x20;
+See [Manage Organizations](../../../snyk-admin/tenant-groups-and-organizations/organizations/create-and-delete-organizations.md) for more details.&#x20;

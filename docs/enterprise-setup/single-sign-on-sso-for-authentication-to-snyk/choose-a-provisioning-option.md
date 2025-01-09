@@ -23,9 +23,9 @@ Let Snyk Support know whether new users will have the **administrator** role or 
 
 With the invitation required or **Group Member** option, admins can invite users or users can request access to an Organization.
 
-There are two ways to invite users to Organizations. Invite members (see [Manage users in Organizations](../../snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations.md)) or automate the process using the Snyk [API Invite users endpoint.](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
+There are two ways to invite users to Organizations. Invite members (see [Manage users in Organizations](../../snyk-admin/tenant-groups-and-organizations/organizations/manage-users-in-organizations.md)) or automate the process using the Snyk [API Invite users endpoint.](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
 
-If users who have not been invited use SSO to log in, they will gain access to Snyk, but they will not see any Projects until an admin invites them or manually adds them to the applicable Organizations. You can provide a list of Organizations with the appropriate contact person so that new users can [request access.](../../snyk-admin/groups-and-organizations/organizations/requests-for-access-to-an-organization.md)
+If users who have not been invited use SSO to log in, they will gain access to Snyk, but they will not see any Projects until an admin invites them or manually adds them to the applicable Organizations. You can provide a list of Organizations with the appropriate contact person so that new users can [request access.](../../snyk-admin/tenant-groups-and-organizations/organizations/requests-for-access-to-an-organization.md)
 
 ## Custom mapping
 

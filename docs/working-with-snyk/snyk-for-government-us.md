@@ -1,12 +1,12 @@
 # Snyk for Government (US)
 
-[Snyk for Government (US)](https://snyk.io/government-security-solution/) enables US federal agencies to develop fast and securely. By integrating with tools and workflows that developers already use, Snyk for Government (US) allows these agencies to shift left in their Software Development Lifecycle, enabling secure development from the start.&#x20;
+[Snyk for Government (US)](https://snyk.io/government-security-solution/) enables US federal agencies to develop fast and securely. By integrating with tools and workflows that developers already use, Snyk for Government (US) allows these agencies to shift left in their Software Development Lifecycle, enabling secure development from the start.
 
 Because Snyk for Government (US) adheres to the [FedRAMP](https://www.fedramp.gov/) and [NIST](https://www.nist.gov/) security control requirements, federal agencies can be assured that the product complies with the security standards set forth by the US Government.
 
 Snyk for Government (US) has differences from standard Snyk products that allow Snyk to be deployed to the US federal government. Adhering to FedRAMP and NIST control requirements means that some aspects of standard Snyk products are not supported in the FedRAMP environment.
 
-This list identifies all the areas with differences in functionality in the Snyk for Government (US) product.&#x20;
+This list identifies all the areas with differences in functionality in the Snyk for Government (US) product.
 
 ## Core products limitations on availability
 
@@ -27,7 +27,7 @@ This means that attempts to create Service Accounts either through the UI or usi
 
 In addition, the CLI must be used in OAuth mode, not with token-driven authentication.
 
-## Single Sign-On limitations on availability&#x20;
+## Single Sign-On limitations on availability
 
 [Single Sign-On (SSO)](../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/) is available except for [Self-Serve Single Sign-On (SSO)](../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
 
@@ -60,5 +60,5 @@ See [Single Sign-On (SSO) for authentication to Snyk](../enterprise-setup/single
 * Outbound webhooks
 * Session Concurrency is limited to three (3) sessions per user.
 * Session lockout: After sessions expire, the signed-in user loses access to all data present in existing session windows.
-* Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](../snyk-admin/groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md) for details.
+* Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](../snyk-admin/tenant-groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md) for details.
 * [Snyk CLI docker images](../snyk-cli/install-or-update-the-snyk-cli/#snyk-cli-in-a-docker-image). These do not support FIPS-validated cryptography and should only be used when this can be accepted.

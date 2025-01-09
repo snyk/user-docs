@@ -2,12 +2,12 @@
 
 Administration encompasses the following functions:
 
-* [Manage Groups and Organizations](groups-and-organizations/)
+* [Manage Groups and Organizations](tenant-groups-and-organizations/)
 * [Manage and use Snyk Projects](snyk-projects/)
-* [Manage users in Organizations](groups-and-organizations/organizations/manage-users-in-organizations.md) and [Groups](groups-and-organizations/groups/manage-users-in-a-group.md)
+* [Manage users in Organizations](tenant-groups-and-organizations/organizations/manage-users-in-organizations.md) and [Groups](tenant-groups-and-organizations/groups/manage-users-in-a-group.md)
 * [Manage user roles](user-roles/)
 * [Manage notifications](manage-notifications.md)
-* [Manage settings](groups-and-organizations/group-and-organization-settings.md)
+* [Manage settings](tenant-groups-and-organizations/group-and-organization-settings.md)
 
 This page covers the following topics:
 
@@ -29,12 +29,12 @@ For details on Enterprise setup,  see [Enterprise setup](../enterprise-setup/).
 Snyk has a hierarchy that controls access to scanning and other Snyk features.
 
 * **Account:** Users must log in to their Snyk account to scan and view or modify any settings and scan output.
-* [**Groups**](groups-and-organizations/groups/)**:** Customers have at least one Snyk Group. The Group may correspond to the entire company. Large companies may have multiple Groups, corresponding to divisions, departments, or other parts of the company. Groups can contain multiple Organizations.
-* [**Organizations**](groups-and-organizations/organizations/)**:** Snyk Groups encompass one or more Snyk Organizations. Organizations represent specific business areas, such as teams. Organizations can contain multiple Projects.
+* [**Groups**](tenant-groups-and-organizations/groups/)**:** Customers have at least one Snyk Group. The Group may correspond to the entire company. Large companies may have multiple Groups, corresponding to divisions, departments, or other parts of the company. Groups can contain multiple Organizations.
+* [**Organizations**](tenant-groups-and-organizations/organizations/)**:** Snyk Groups encompass one or more Snyk Organizations. Organizations represent specific business areas, such as teams. Organizations can contain multiple Projects.
 * [**Targets**](snyk-projects/#target)**:** Each Target represents a repository imported into Snyk for scanning and re-testing.
 * [**Projects**](snyk-projects/)**:** A Project is established based on the items that Snyk scans for issues, such as manifest files, and shows the results of scans. You can configure your Projects to define how to scan for issues in that Project. See [Getting started](getting-started/).
 
-Snyk Admins set up Groups and Organizations. See [Manage Groups and Organizations](groups-and-organizations/) for details. Targets and [Projects](snyk-projects/) are created when Snyk users import development Projects into Snyk for scanning.
+Snyk Admins set up Groups and Organizations. See [Manage Groups and Organizations](tenant-groups-and-organizations/) for details. Targets and [Projects](snyk-projects/) are created when Snyk users import development Projects into Snyk for scanning.
 
 ## User types
 
@@ -66,7 +66,7 @@ You can manage users and permissions in your Groups. For details, see [Manage us
 
 ### Manage Groups and Organizations
 
-Snyk groups and organizations help to maintain collaboration across teams. For details, see [Manage Groups and Organizations](groups-and-organizations/).
+Snyk groups and organizations help to maintain collaboration across teams. For details, see [Manage Groups and Organizations](tenant-groups-and-organizations/).
 
 ### Define notifications
 
@@ -76,4 +76,4 @@ You can manage email notifications for yourself and your Organization. For detai
 
 ### Manage settings
 
-You can customize your Snyk account to suit your work process. For details, see [Manage settings](groups-and-organizations/group-and-organization-settings.md).
+You can customize your Snyk account to suit your work process. For details, see [Manage settings](tenant-groups-and-organizations/group-and-organization-settings.md).
