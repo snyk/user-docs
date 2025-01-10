@@ -18,4 +18,4 @@ tools/api-docs-generator/* @snyk/api
 .github/workflows/* @snyk/api @snyk/docs
 docs/.gitbook/assets/v1-api-spec.yaml @snyk/api @snyk/docs
 docs/.gitbook/assets/rest-spec.json @snyk/api @snyk/docs
-
+docs/.gitbook/assets/oauth-api-spec.yaml @snyk/api @snyk/docs
