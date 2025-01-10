@@ -78,9 +78,9 @@ The following frameworks and libraries are supported in Snyk for Python:
 
 The following features are supported in Snyk for Python:
 
-| Snyk Open Source                                                     | Snyk Code                                                                 |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| <ul><li>Fix PRs </li><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
+| Snyk Open Source                                                   | Snyk Code                                                                 |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| <ul><li>Fix PRs</li><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
 
 ## Python version support
 
@@ -113,7 +113,7 @@ Snyk defaults to Python `3.10` if the `Pipfile` contains:
 
 ### Poetry and Python versions supported
 
-There is no need to tell Snyk the Python version for Poetry Projects.
+Snyk supports Poetry 1.0. There is no need to tell Snyk the Python version for Poetry Projects.
 
 Poetry files contain sufficient information to build a full dependency tree without running native tooling.
 
