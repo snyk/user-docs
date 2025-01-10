@@ -1130,6 +1130,18 @@ This can present itself as a problem for customers that are using Mac or Windows
 **Help Links:**
 - [https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/assembly-references#missing-references](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/assembly-references#missing-references)
 
+### [SNYK-OS-DOTNET-0010](#snyk-os-dotnet-0010)
+
+#### The 10 GB space limit for downloaded Nuget dependencies has been exceeded
+
+The total size of the downloaded Nuget dependencies in the manifest files exceeds the 10GB limit.
+This often happens due to the large number or the large size of Nuget dependencies. 
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning#limitations-on-improved-.net-scanning-for-scm-integrations](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning#limitations-on-improved-.net-scanning-for-scm-integrations)
+
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 
 #### Failed to access private module
@@ -2544,4 +2556,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-01-09T10:27:38.758Z
+--- Generated at 2025-01-10T09:21:48.904Z
