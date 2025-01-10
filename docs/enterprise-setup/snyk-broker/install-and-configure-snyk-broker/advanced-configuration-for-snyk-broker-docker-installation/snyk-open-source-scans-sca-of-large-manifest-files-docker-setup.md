@@ -12,7 +12,7 @@ To add this rule easily, allowing the Broker client to retrieve the larger manif
 -e ACCEPT_LARGE_MANIFESTS=true
 ```
 
-If you are using a [custom accept.json](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/custom-approved-listing-filter-with-docker) instead of the ACCEPT environment variables, please add this to your accept.json in the private section
+If you are using a custom accept.json instead of the ACCEPT environment variables, add this to your accept.json in the private section
 
 ```
 {

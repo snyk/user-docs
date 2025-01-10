@@ -17,7 +17,7 @@ To add this rule easily, allowing the Broker client to retrieve the larger manif
 If you are using other custom environment variables, you may need to adjust the 0 index in this code to avoid having any of the environment variables overwrite each other.
 {% endhint %}
 
-If you are using a [custom accept.json](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/adding-custom-accept.json-for-helm-installation) instead of the ACCEPT environment variables, please add this to your accept.json in the private section
+If you are using a custom `accept.json` instead of the ACCEPT environment variables, add this to your accept.json in the private section
 
 ```
 {
