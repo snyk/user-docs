@@ -1,3 +1,32 @@
+## 2024-10-15 - Updated 2025-01-13
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the optional property `data/items/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/items/attributes/severities` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the optional property `data/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/attributes/severities` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the optional property `data/items/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/items/attributes/severities` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the optional property `data/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/attributes/severities` to the response with the `200` status
+
+
 ## 2024-10-15 - Updated 2025-01-07
 
 ### GET - `/orgs/{org_id}/issues` - Updated
