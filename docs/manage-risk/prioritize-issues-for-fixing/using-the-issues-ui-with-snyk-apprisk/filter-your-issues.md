@@ -20,6 +20,8 @@ The funnel view is a visual representation of your application's issues and risk
 The OS Condition risk factor is now available only in the table view of the Issues UI.
 {% endhint %}
 
+<figure><img src="../../../.gitbook/assets/image (654).png" alt=""><figcaption><p>Issues - Funnel view</p></figcaption></figure>
+
 ## Table view filters
 
 By using the filters above the table view, you can filter your issues by the following criteria or any combination of them.
