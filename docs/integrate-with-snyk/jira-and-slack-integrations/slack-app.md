@@ -79,16 +79,13 @@ Customization options include:
 * Severity level
 * Slack channel ID
 
-<figure><img src="../../.gitbook/assets/image (118) (3).png" alt="Empty Project notification customizations table"><figcaption><p>Empty Project notification customizations table</p></figcaption></figure>
-
 ### Add notification customizations
 
 1. Select `Add customization` to open the creation dialog from the Slack App integration page.&#x20;
-2. Paste your previously copied Project ID value.&#x20;
-3. Select the desired issue severity level and the Slack channel to target.&#x20;
-4. Save the customization.
-
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/slack-app-project-override.png" alt="Project notification customization creation dialog" width="563"><figcaption><p>Project notification customization creation dialog</p></figcaption></figure></div>
+2. Paste your previously copied **Project ID** value.&#x20;
+3. Select the desired issue **Severity level**.
+4. Enter the **Slack channel ID** to target.&#x20;
+5. Click **Save customization**.
 
 ### Find your Project ID
 
@@ -98,7 +95,7 @@ To set a Project level override, find the ID of the Project for which you want t
 2. Select the desired Project.
 3. Copy the UUID value that follows the `project/` path in the URL bar.
 
-<figure><img src="../../.gitbook/assets/image (315).png" alt="Location of the Project ID in the Project page URL"><figcaption><p>Location of the Project ID in the Project page URL</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-id-url-slack-app.png" alt="UUID value for your Project ID"><figcaption><p>UUID value for your Project ID</p></figcaption></figure>
 
 ### Edit or delete notification customizations
 
