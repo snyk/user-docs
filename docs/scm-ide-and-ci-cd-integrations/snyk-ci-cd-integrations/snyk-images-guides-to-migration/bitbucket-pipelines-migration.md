@@ -4,13 +4,13 @@
 
 `snyk/snyk-scan` \<v1.0.0 uses Snyk CLI Images. As all Snyk CLI Images will be removed, `snyk/snyk-scan` < v1.0.0 will stop working also.
 
-See the [upgrade guide in Snyk Docs](../../bitbucket-pipelines-integration-using-a-snyk-pipe/migrating-to-bitbucket-pipelines-v1.0.0.md) to upgrade to `snyk/snyk-scan` >= v1.0.0
+See the [upgrade guide in Snyk Docs](../bitbucket-pipelines-integration-using-a-snyk-pipe/migrating-to-bitbucket-pipelines-v1.0.0.md) to upgrade to `snyk/snyk-scan` >= v1.0.0
 
 ## For users of `snyk/snyk-scan` >= v1.0.0 <a href="#users-using-snyk-snyk-scan-greater-than-v1.0.0" id="users-using-snyk-snyk-scan-greater-than-v1.0.0"></a>
 
 ### Create your own custom image <a href="#create-your-own-custom-image" id="create-your-own-custom-image"></a>
 
-Users can create their own custom images to use. This option is available for `snyk/snyk-scan` >= v1.0.0 only. For details, see [User-defined custom images for CLI.](../../user-defined-custom-images-for-cli.md)
+Users can create their own custom images to use. This option is available for `snyk/snyk-scan` >= v1.0.0 only. For details, see [User-defined custom images for CLI.](../user-defined-custom-images-for-cli.md)
 
 Creating a custom image should guarantee compatibility with your system. However, there are alternative images to which you can upgrade if creating a custom image is not possible.
 
