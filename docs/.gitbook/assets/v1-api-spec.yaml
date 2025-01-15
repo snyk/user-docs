@@ -14490,21 +14490,13 @@ components:
             $ref: '#/components/schemas/ComposerLock'
           description: a lockfile encoded according the the "encoding" field.
       description: 'The manifest files:'
-    files10:
-      title: files10
+    ImportFiles:
+      title: ImportFiles
       type: object
       properties:
         path:
           type: string
           description: relative path to the file
-          example: example/package.json
-    files12:
-      title: files12
-      type: object
-      properties:
-        path:
-          type: string
-          description: path to the file
           example: example/package.json
     filters:
       title: filters
@@ -15555,11 +15547,11 @@ components:
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target7'
+          $ref: '#/components/schemas/GithubAndGithubEnterpriseRepoTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files10'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
@@ -15569,11 +15561,11 @@ components:
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target8'
+          $ref: '#/components/schemas/AzureReposTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files10'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
@@ -15583,11 +15575,11 @@ components:
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target9'
+          $ref: '#/components/schemas/GitLabRepoTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
@@ -15597,11 +15589,11 @@ components:
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target10'
+          $ref: '#/components/schemas/BitbucketCloudTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files10'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
@@ -15611,11 +15603,11 @@ components:
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target11'
+          $ref: '#/components/schemas/BitbucketServerTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
@@ -15625,52 +15617,52 @@ components:
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target12'
+          $ref: '#/components/schemas/HerokuTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
     Importtargetsrequest6:
       title: Importtargetsrequest6
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target13'
+          $ref: '#/components/schemas/AWSLambdaTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
     Importtargetsrequest7:
       title: Importtargetsrequest7
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target14'
+          $ref: '#/components/schemas/CloudFoundryPivotalIBMCloudTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
     Importtargetsrequest8:
       title: Importtargetsrequest8
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target15'
+          $ref: '#/components/schemas/DockerHubTarget'
     Importtargetsrequest9:
       title: Importtargetsrequest9
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target16'
+          $ref: '#/components/schemas/AzureContainerRegistryElasticContainerRegistryArifactoryContainerRegistryNexusTarget'
     Importtargetsrequest10:
       title: Importtargetsrequest10
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target17'
+          $ref: '#/components/schemas/GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCR'
     importingUser:
       title: importingUser
       type: object
@@ -19390,8 +19382,8 @@ components:
           type: string
           example: ''
       description: the `composer.json` file, encoded according the the "encoding" field.
-    target7:
-      title: target7
+    GithubAndGithubEnterpriseRepoTarget:
+      title: GithubAndGithubEnterpriseRepoTarget
       required:
         - owner
         - name
@@ -19410,8 +19402,8 @@ components:
           type: string
           description: default branch of the repo (Please contact support if you want to import a non default repo branch)
           example: main
-    target8:
-      title: target8
+    AzureReposTarget:
+      title: AzureReposTarget
       required:
         - owner
         - name
@@ -19430,8 +19422,8 @@ components:
           type: string
           description: default branch of the repo (Please contact support if you want to import a non default repo branch)
           example: main
-    target9:
-      title: target9
+    GitLabRepoTarget:
+      title: GitLabRepoTarget
       required:
         - id
         - branch
@@ -19445,8 +19437,8 @@ components:
           type: string
           description: repo branch
           example: develop
-    target10:
-      title: target10
+    BitbucketCloudTarget:
+      title: BitbucketCloudTarget
       required:
         - owner
         - name
@@ -19460,8 +19452,8 @@ components:
           type: string
           description: name of the repo
           example: goof
-    target11:
-      title: target11
+    BitbucketServerTarget:
+      title: BitbucketServerTarget
       required:
         - projectKey
         - repoSlug
@@ -19481,8 +19473,8 @@ components:
         branch:
           type: string
           description: target branch name
-    target12:
-      title: target12
+    HerokuTarget:
+      title: HerokuTarget
       required:
         - appId
         - slugId
@@ -19494,8 +19486,8 @@ components:
         slugId:
           type: string
           description: ID of the slug
-    target13:
-      title: target13
+    AWSLambdaTarget:
+      title: AWSLambdaTarget
       required:
         - functionId
       type: object
@@ -19503,8 +19495,8 @@ components:
         functionId:
           type: string
           description: ID of the app
-    target14:
-      title: target14
+    CloudFoundryPivotalIBMCloudTarget:
+      title: CloudFoundryPivotalIBMCloudTarget
       required:
         - appId
       type: object
@@ -19512,8 +19504,8 @@ components:
         appId:
           type: string
           description: ID of the app
-    target15:
-      title: target15
+    DockerHubTarget:
+      title: DockerHubTarget
       required:
         - name
       type: object
@@ -19522,8 +19514,8 @@ components:
           type: string
           description: image name including tag prefixed by organization name
           example: organization/repository:tag
-    target16:
-      title: target16
+    AzureContainerRegistryElasticContainerRegistryArifactoryContainerRegistryNexusTarget:
+      title: AzureContainerRegistryElasticContainerRegistryArifactoryContainerRegistryNexusTarget
       required:
         - name
       type: object
@@ -19532,8 +19524,8 @@ components:
           type: string
           description: image name including tag
           example: repository:tag
-    target17:
-      title: target17
+    GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCR:
+      title: GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCR
       required:
         - name
       type: object
