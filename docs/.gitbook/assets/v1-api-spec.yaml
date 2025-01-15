@@ -2439,8 +2439,18 @@ paths:
         content:
           application/json; charset=utf-8:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/Importtargetsrequest'
+              oneOf:
+                - $ref: '#/components/schemas/GithubAndGithubEnterpriseImportRequest'
+                - $ref: '#/components/schemas/AzureReposImportRequest'
+                - $ref: '#/components/schemas/GitLabImportRequest'
+                - $ref: '#/components/schemas/BitbucketCloudImportRequest'
+                - $ref: '#/components/schemas/BitbucketServerImportRequest'
+                - $ref: '#/components/schemas/HerokoImportRequest'
+                - $ref: '#/components/schemas/AWSLambdaImportRequest'
+                - $ref: '#/components/schemas/CloudFoundryPivotalIBMCloudImportRequest'
+                - $ref: '#/components/schemas/DockerHubImportRequest'
+                - $ref: '#/components/schemas/AzureCRElasticCRArtifactoryCRNexusImportRequest'
+                - $ref: '#/components/schemas/GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCRImportRequest'
                 - description: 'Note: Importing targets through a Github (Cloud) integration requires the use of a [Snyk personal access/api token](https://app.snyk.io/account).'
                   example:
                     target:
@@ -15542,8 +15552,8 @@ components:
           allOf:
             - $ref: '#/components/schemas/source'
             - description: The place where the ignore rule was applied from
-    Importtargetsrequest:
-      title: Importtargetsrequest
+    GithubAndGithubEnterpriseImportRequest:
+      title: Github and Github Enterprise Import Request
       type: object
       properties:
         target:
@@ -15556,8 +15566,8 @@ components:
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning (each folder name must not exceed 100 characters). If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest1:
-      title: Importtargetsrequest1
+    AzureReposImportRequest:
+      title: Azure Repos Target Import Request
       type: object
       properties:
         target:
@@ -15570,8 +15580,8 @@ components:
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning (each folder name must not exceed 100 characters). If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest2:
-      title: Importtargetsrequest2
+    GitLabImportRequest:
+      title: GitLab Import Request
       type: object
       properties:
         target:
@@ -15584,8 +15594,8 @@ components:
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning. If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest3:
-      title: Importtargetsrequest3
+    BitbucketCloudImportRequest:
+      title: Bitbucket Cloud and Bitbucket Cloud App Import Request
       type: object
       properties:
         target:
@@ -15598,8 +15608,8 @@ components:
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning (each folder name must not exceed 100 characters). If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest4:
-      title: Importtargetsrequest4
+    BitbucketServerImportRequest:
+      title: Bitbucket Server Import Request
       type: object
       properties:
         target:
@@ -15612,8 +15622,8 @@ components:
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning. If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest5:
-      title: Importtargetsrequest5
+    HerokoImportRequest:
+      title: Heroku Import Request
       type: object
       properties:
         target:
@@ -15623,8 +15633,8 @@ components:
           items:
             $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
-    Importtargetsrequest6:
-      title: Importtargetsrequest6
+    AWSLambdaImportRequest:
+      title: AWS Lambda Import Request
       type: object
       properties:
         target:
@@ -15634,8 +15644,8 @@ components:
           items:
             $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
-    Importtargetsrequest7:
-      title: Importtargetsrequest7
+    CloudFoundryPivotalIBMCloudImportRequest:
+      title: CloudFoundry, Pivotal & IBM Cloud Import Request
       type: object
       properties:
         target:
@@ -15645,20 +15655,20 @@ components:
           items:
             $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
-    Importtargetsrequest8:
-      title: Importtargetsrequest8
+    DockerHubImportRequest:
+      title: DockerHub Import Request
       type: object
       properties:
         target:
           $ref: '#/components/schemas/DockerHubTarget'
-    Importtargetsrequest9:
-      title: Importtargetsrequest9
+    AzureCRElasticCRArtifactoryCRNexusImportRequest:
+      title: Azure Container Registry, Elastic Container Registry, Artifactory Container Registry, Nexus Import Request
       type: object
       properties:
         target:
           $ref: '#/components/schemas/AzureContainerRegistryElasticContainerRegistryArifactoryContainerRegistryNexusTarget'
-    Importtargetsrequest10:
-      title: Importtargetsrequest10
+    GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCRImportRequest:
+      title: Google Container Registry, Google Artifact Registry, Harbor, DigitalOcean Container Registry, Quay, GitLab Container Registry, GitHub Container Registry Import Request
       type: object
       properties:
         target:
