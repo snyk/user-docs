@@ -2439,8 +2439,18 @@ paths:
         content:
           application/json; charset=utf-8:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/Importtargetsrequest'
+              oneOf:
+                - $ref: '#/components/schemas/GithubAndGithubEnterpriseImportRequest'
+                - $ref: '#/components/schemas/AzureReposImportRequest'
+                - $ref: '#/components/schemas/GitLabImportRequest'
+                - $ref: '#/components/schemas/BitbucketCloudImportRequest'
+                - $ref: '#/components/schemas/BitbucketServerImportRequest'
+                - $ref: '#/components/schemas/HerokoImportRequest'
+                - $ref: '#/components/schemas/AWSLambdaImportRequest'
+                - $ref: '#/components/schemas/CloudFoundryPivotalIBMCloudImportRequest'
+                - $ref: '#/components/schemas/DockerHubImportRequest'
+                - $ref: '#/components/schemas/AzureCRElasticCRArtifactoryCRNexusImportRequest'
+                - $ref: '#/components/schemas/GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCRImportRequest'
                 - description: 'Note: Importing targets through a Github (Cloud) integration requires the use of a [Snyk personal access/api token](https://app.snyk.io/account).'
                   example:
                     target:
@@ -14490,21 +14500,13 @@ components:
             $ref: '#/components/schemas/ComposerLock'
           description: a lockfile encoded according the the "encoding" field.
       description: 'The manifest files:'
-    files10:
-      title: files10
+    ImportFiles:
+      title: ImportFiles
       type: object
       properties:
         path:
           type: string
           description: relative path to the file
-          example: example/package.json
-    files12:
-      title: files12
-      type: object
-      properties:
-        path:
-          type: string
-          description: path to the file
           example: example/package.json
     filters:
       title: filters
@@ -15550,127 +15552,127 @@ components:
           allOf:
             - $ref: '#/components/schemas/source'
             - description: The place where the ignore rule was applied from
-    Importtargetsrequest:
-      title: Importtargetsrequest
+    GithubAndGithubEnterpriseImportRequest:
+      title: Github and Github Enterprise Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target7'
+          $ref: '#/components/schemas/GithubAndGithubEnterpriseRepoTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files10'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning (each folder name must not exceed 100 characters). If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest1:
-      title: Importtargetsrequest1
+    AzureReposImportRequest:
+      title: Azure Repos Target Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target8'
+          $ref: '#/components/schemas/AzureReposTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files10'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning (each folder name must not exceed 100 characters). If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest2:
-      title: Importtargetsrequest2
+    GitLabImportRequest:
+      title: GitLab Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target9'
+          $ref: '#/components/schemas/GitLabRepoTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning. If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest3:
-      title: Importtargetsrequest3
+    BitbucketCloudImportRequest:
+      title: Bitbucket Cloud and Bitbucket Cloud App Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target10'
+          $ref: '#/components/schemas/BitbucketCloudTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files10'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning (each folder name must not exceed 100 characters). If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest4:
-      title: Importtargetsrequest4
+    BitbucketServerImportRequest:
+      title: Bitbucket Server Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target11'
+          $ref: '#/components/schemas/BitbucketServerTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning. If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
-    Importtargetsrequest5:
-      title: Importtargetsrequest5
+    HerokoImportRequest:
+      title: Heroku Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target12'
+          $ref: '#/components/schemas/HerokuTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
-    Importtargetsrequest6:
-      title: Importtargetsrequest6
+    AWSLambdaImportRequest:
+      title: AWS Lambda Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target13'
+          $ref: '#/components/schemas/AWSLambdaTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
-    Importtargetsrequest7:
-      title: Importtargetsrequest7
+    CloudFoundryPivotalIBMCloudImportRequest:
+      title: CloudFoundry, Pivotal & IBM Cloud Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target14'
+          $ref: '#/components/schemas/CloudFoundryPivotalIBMCloudTarget'
         files:
           type: array
           items:
-            $ref: '#/components/schemas/files12'
+            $ref: '#/components/schemas/ImportFiles'
           description: an array of file objects
-    Importtargetsrequest8:
-      title: Importtargetsrequest8
+    DockerHubImportRequest:
+      title: DockerHub Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target15'
-    Importtargetsrequest9:
-      title: Importtargetsrequest9
+          $ref: '#/components/schemas/DockerHubTarget'
+    AzureCRElasticCRArtifactoryCRNexusImportRequest:
+      title: Azure Container Registry, Elastic Container Registry, Artifactory Container Registry, Nexus Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target16'
-    Importtargetsrequest10:
-      title: Importtargetsrequest10
+          $ref: '#/components/schemas/AzureContainerRegistryElasticContainerRegistryArifactoryContainerRegistryNexusTarget'
+    GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCRImportRequest:
+      title: Google Container Registry, Google Artifact Registry, Harbor, DigitalOcean Container Registry, Quay, GitLab Container Registry, GitHub Container Registry Import Request
       type: object
       properties:
         target:
-          $ref: '#/components/schemas/target17'
+          $ref: '#/components/schemas/GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCR'
     importingUser:
       title: importingUser
       type: object
@@ -19390,8 +19392,8 @@ components:
           type: string
           example: ''
       description: the `composer.json` file, encoded according the the "encoding" field.
-    target7:
-      title: target7
+    GithubAndGithubEnterpriseRepoTarget:
+      title: GithubAndGithubEnterpriseRepoTarget
       required:
         - owner
         - name
@@ -19410,8 +19412,8 @@ components:
           type: string
           description: default branch of the repo (Please contact support if you want to import a non default repo branch)
           example: main
-    target8:
-      title: target8
+    AzureReposTarget:
+      title: AzureReposTarget
       required:
         - owner
         - name
@@ -19430,8 +19432,8 @@ components:
           type: string
           description: default branch of the repo (Please contact support if you want to import a non default repo branch)
           example: main
-    target9:
-      title: target9
+    GitLabRepoTarget:
+      title: GitLabRepoTarget
       required:
         - id
         - branch
@@ -19445,8 +19447,8 @@ components:
           type: string
           description: repo branch
           example: develop
-    target10:
-      title: target10
+    BitbucketCloudTarget:
+      title: BitbucketCloudTarget
       required:
         - owner
         - name
@@ -19460,8 +19462,8 @@ components:
           type: string
           description: name of the repo
           example: goof
-    target11:
-      title: target11
+    BitbucketServerTarget:
+      title: BitbucketServerTarget
       required:
         - projectKey
         - repoSlug
@@ -19481,8 +19483,8 @@ components:
         branch:
           type: string
           description: target branch name
-    target12:
-      title: target12
+    HerokuTarget:
+      title: HerokuTarget
       required:
         - appId
         - slugId
@@ -19494,8 +19496,8 @@ components:
         slugId:
           type: string
           description: ID of the slug
-    target13:
-      title: target13
+    AWSLambdaTarget:
+      title: AWSLambdaTarget
       required:
         - functionId
       type: object
@@ -19503,8 +19505,8 @@ components:
         functionId:
           type: string
           description: ID of the app
-    target14:
-      title: target14
+    CloudFoundryPivotalIBMCloudTarget:
+      title: CloudFoundryPivotalIBMCloudTarget
       required:
         - appId
       type: object
@@ -19512,8 +19514,8 @@ components:
         appId:
           type: string
           description: ID of the app
-    target15:
-      title: target15
+    DockerHubTarget:
+      title: DockerHubTarget
       required:
         - name
       type: object
@@ -19522,8 +19524,8 @@ components:
           type: string
           description: image name including tag prefixed by organization name
           example: organization/repository:tag
-    target16:
-      title: target16
+    AzureContainerRegistryElasticContainerRegistryArifactoryContainerRegistryNexusTarget:
+      title: AzureContainerRegistryElasticContainerRegistryArifactoryContainerRegistryNexusTarget
       required:
         - name
       type: object
@@ -19532,8 +19534,8 @@ components:
           type: string
           description: image name including tag
           example: repository:tag
-    target17:
-      title: target17
+    GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCR:
+      title: GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCR
       required:
         - name
       type: object
