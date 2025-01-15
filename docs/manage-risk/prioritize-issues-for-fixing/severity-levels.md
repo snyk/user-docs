@@ -74,6 +74,7 @@ There are multiple CVSS Scores for the same vulnerability for several reasons:
 * Having some differences in CVSS vectors is normal and expected. The likelihood of certain attack vectors will involve discrepancies and judgments made about them that make sense for the application and use cases of open source software users.
 * The severity of a vulnerability is influenced by a variety of factors, including whether it comes from a "red team" angle or a "blue team" angle. To arrive at an objective and actionable rating, Snyk analysts examine the full range of data, from vendors to reporters to attackers.
 * There are times when a vendor discovers additional information about a vulnerability that can affect its severity. Users can find all the relevant information used to determine the severity that Snyk curated in the description and references of the advisory.
+* Different vendors may utilize various versions of the CVSS, resulting in differing scores and severity levels. For instance, Snyk adopted CVSS version 4.0 as its primary framework in 2024. When comparing a vulnerability published by Snyk using CVSS v4.0 with one published by the NVD using CVSS v3.1, the scores and severity ratings may differ significantly.
 
 ### Severity levels and CCSS
 
