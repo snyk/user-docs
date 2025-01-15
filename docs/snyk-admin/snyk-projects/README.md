@@ -8,8 +8,6 @@ Progress and error information on the state of your repository and container reg
 After filters have been applied to the Project listing page, you can bookmark the URL and share it with other users in the Organization. This allows all users to see the same view of the page.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 09.09.25.png" alt="Snyk Projects listing grouped by Target"><figcaption><p>Snyk Projects listing grouped by Target</p></figcaption></figure>
-
 Snyk Projects concepts include the following:
 
 * [Target](./#target)
@@ -28,7 +26,7 @@ When you select **Group by target**, Snyk Targets appear in the **Projects** lis
 
 Click the **dots** at the far right of each Target on the list to see the **available actions**; these include **deleting** a target.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 08.59.20.png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-page-overview-projects.png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
 
 Each Snyk Project is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the Origin.
 
@@ -44,7 +42,7 @@ Use **Sort by** (pull down on the far right) to sort the **Projects** listing by
 
 The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of Targets (see preceding section) and appear in the **Projects** listing as an icon next to the Target name.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 08.59.07.png" alt="Origin icon next to the Target name"><figcaption><p>Origin icon next to the Target name</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/origin-icons-projects.png" alt="Origin icon next to the Target name" width="563"><figcaption><p>Origin icon next to the Target name</p></figcaption></figure>
 
 Possible Origin values are:
 
@@ -104,17 +102,17 @@ The Type is the scanning method to use for a particular Project, such as Static 
 
 ### Delete, Activate, or Deactivate
 
-To perform an action at bulk on your Projects, first select the Projects and then choose to **Delete**, **Activate,** or **Deactivate** the Projects.&#x20;
+To perform an action at bulk on your Projects, first select the Projects and then choose to **Delete**, **Activate,** or **Deactivate** the Projects.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.37.png" alt=""><figcaption><p>Deleting Projects in bulk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/delete-selected-projects.png" alt="" width="352"><figcaption><p>Deleting Projects in bulk</p></figcaption></figure>
 
 ### Test frequency settings
 
-You can set the frequency of testing for each Project.&#x20;
+You can set the frequency of testing for each Project.
 
 For each entry, you can select the frequency of testing for that Project (`never`, `daily`, or `weekly`) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
 
-<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.46.png" alt="Select test frequency"><figcaption><p>Select test frequency</p></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.46.png" alt="Select test frequency" width="310"><figcaption><p>Select test frequency</p></figcaption></figure></div>
 
 {% hint style="info" %}
 The default test frequency and limitations are as follows:
