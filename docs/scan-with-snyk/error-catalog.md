@@ -2556,4 +2556,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-01-10T09:21:48.904Z
+--- Generated at 2025-01-15T14:04:44.619Z
