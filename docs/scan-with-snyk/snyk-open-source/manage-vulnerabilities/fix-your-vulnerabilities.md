@@ -17,7 +17,7 @@ From Snyk Open Source, for each tab, both upgrade and patch, in the fix advice a
 * Packages are listed and can be expanded to show the full list of vulnerabilities affecting the package.
 * All the vulnerabilities found in your dependencies are displayed further down the page, together with contextual information that can help you prioritize the issues and start fixing them if required.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-15 at 12.14.06.png" alt="Scan results on the Web UI"><figcaption><p>Scan results on the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects_issues_scan_results.png" alt=""><figcaption><p>Example of project issues</p></figcaption></figure>
 
 ## View Fix Advice
 
@@ -30,11 +30,9 @@ The Fix Advice area appears on the Project details page. Snyk offers you one of 
 The summary area groups advice by package, and is displayed based on the best available fix. Advice in these summary lists includes these details for each package:
 
 * All vulnerability names and severity details affecting that package
-* The recommended fix, a link to the recommended fix for this package and its listed vulnerabilities: either the specific version to which to upgrade or the name of the patch
+* The recommended fix, a link to the recommended fix for this package and its listed vulnerabilities: either the specific version to which to upgrade or the name of the patch.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png" alt="Upgrade issues tabs"><figcaption><p>Upgrade issues tabs</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png" alt="Upgradable and patchable issues tabs"><figcaption><p>Upgradable and patchable issues tabs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project_details_fixes.png" alt=""><figcaption><p>Upgradable issues tab</p></figcaption></figure>
 
 You can also find additional advice and details further down on the Project details page:
 
