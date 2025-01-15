@@ -41,19 +41,13 @@ To create a new tag for a Snyk Project:
 
 1.  On the Project details page, under **TAGS,** click **Add a key/value...**
 
-    ***
-
-    <figure><img src="../../.gitbook/assets/projects-tags_20sept2022.png" alt="Choose the option to create a Project tag"><figcaption><p>Choose the option to create a Project tag</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/add-tags-projects.png" alt="Choose the option to create a Project tag" width="213"><figcaption><p>Choose the option to create a Project tag</p></figcaption></figure>
 2. Add the new key and click **Enter**.
 3. Add a new value and click **Enter**.
 
 You have created a new tag. When a new tag is created, it is automatically applied to the Project it was created in. The tag can also be used for any other Project in the Group.
 
-<figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_17.58.47.png" alt="Project details page showing tag applied"><figcaption><p>Project details page showing tag applied</p></figcaption></figure>
-
 You can apply multiple Project tag values to the same Project tag key.
-
-<figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_18.04.30.png" alt="Multiple Project tag values applied to the same key"><figcaption><p>Multiple Project tag values applied to the same key</p></figcaption></figure>
 
 After you create a tag, it can be applied to other Projects in the Snyk Group.
 
@@ -79,8 +73,6 @@ If a tag exists in your Group, you can apply it to any Snyk Project.
 4. After you select the value, the tag is applied to your Project.
 5. To remove a tag from a Project, click the **x** for the tag.\
    If you remove a tag and it has not been assigned to any other Project, the tag will no longer exist.
-
-<figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png" alt="Select a key value for a tag"><figcaption><p>Select a key value for a tag</p></figcaption></figure>
 
 ## How to filter the Projects listing by tags
 
