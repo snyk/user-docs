@@ -13,8 +13,6 @@ On the **Projects** page, you can filter your Projects by whether or not they co
 
 To reset all filter criteria, click **Reset**.
 
-<figure><img src="../../.gitbook/assets/Project filtering.png" alt="Filter pane on Projects page"><figcaption><p>Filter pane on the Projects page</p></figcaption></figure>
-
 {% hint style="info" %}
 Only active Projects with discovered issues are displayed on the Projects page by default.
 {% endhint %}
@@ -22,8 +20,6 @@ Only active Projects with discovered issues are displayed on the Projects page b
 ## View Project details
 
 To view detailed information for a Project, click a Project entry. The page that opens displays the detailed Project information.
-
-<figure><img src="../../.gitbook/assets/Detailed Project_info.png" alt="Detailed information for the package.json Project"><figcaption><p>Detailed information for the <strong><code>package.json</code></strong> Project</p></figcaption></figure>
 
 The following information is available:
 
@@ -35,8 +31,6 @@ The following information is available:
   * **Settings**: displays [Project settings](view-and-edit-project-settings.md).
 
 ## View Project summary
-
-<figure><img src="../../.gitbook/assets/Header_Project_details.png" alt="Project summary for the package.json Project"><figcaption><p>Project summary for the <code>package.json</code> Project</p></figcaption></figure>
 
 In the header of each Project overview, you can view information about:
 
