@@ -30,10 +30,8 @@ Roles with the **edit project attributes** permission can add an attribute to a 
 
 ## **Apply an attribute value to Project**
 
-1. On the Project detail page, click the **+** icon below the attribute for which you want to apply a value to the Project.
+1. On the Project detail page, click **+ Add a value** below the attribute for which you want to apply a value to the Project.
 2. Select a value from the list.
-
-<figure><img src="../../.gitbook/assets/gs1.png" alt="Select an attribute value to apply to the Project"><figcaption><p>Select an attribute value to apply to the Project</p></figcaption></figure>
 
 After you have selected a value for the attribute, it appears on the Project detail page. You can apply multiple values for an attribute and multiple attributes to a Project.
 
@@ -43,12 +41,6 @@ After you have selected a value for the attribute, it appears on the Project det
 
 1. Select the attribute with an applied value that you want to remove from the Project.
 2. Click the **x** icon for the value you want to remove.
-
-<figure><img src="../../.gitbook/assets/gs3.png" alt="Removing Frontend attribute value"><figcaption><p>Removing Frontend attribute value</p></figcaption></figure>
-
-The attribute value is removed from the Project.
-
-<figure><img src="../../.gitbook/assets/gs4.png" alt="Project detail showing only Mobile attribute value"><figcaption><p>Project detail showing only Mobile attribute value</p></figcaption></figure>
 
 ## **Filter by attribute values on the Projects listing page**
 
