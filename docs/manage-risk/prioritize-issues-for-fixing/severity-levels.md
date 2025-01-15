@@ -56,7 +56,7 @@ Snyk supports the [CVSS framework version 4.0](https://www.first.org/cvss/v4-0/)
 | Medium    | 4.0 - 6.9      |
 | Low       | 0.0 - 3.9      |
 
-The severity level and score are determined based on the [CVSS Base Score](https://www.first.org/cvss/specification-document) calculations using the Base Metrics. The Temporal Score, based on the Temporal Metrics, affects the Priority Score.
+The severity level and score are determined based on the CVSS Base Score calculations using the [Base Metrics](https://www.first.org/cvss/v4.0/specification-document#Base-Metrics). The Temporal Score, based on the Temporal Metrics, affects the Priority Score.
 
 See [Scoring security vulnerabilities 101: Introducing CVSS for CVEs](https://snyk.io/blog/scoring-security-vulnerabilities-101-introducing-cvss-for-cve/).
 
