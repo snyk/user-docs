@@ -16,7 +16,7 @@ You will know you have reached the limit when you see the following warnings.
 
 In the Snyk Web UI, this warning banner appears:
 
-<figure><img src="../../.gitbook/assets/Maximum number of projects.png" alt=".Banner at top of Projects listing showing how many Projects you have over the limit"><figcaption><p>Banner at top of Projects listing showing how many Projects you have over the limit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/proj-limit-exceeded-notification-projects.png" alt=".Banner at top of Projects listing showing how many Projects you have over the limit"><figcaption><p>Banner at top of Projects listing showing how many Projects you have over the limit</p></figcaption></figure>
 
 In the Snyk CLI, the `snyk monitor` command returns the following error:
 
