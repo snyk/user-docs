@@ -10,7 +10,7 @@ The following Project information is available on the Snyk Web UI:
 
 The Project details page displays Issue cards on the **Issues** tab. The information provided includes vulnerabilities and Open Source license issues.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.49.30.png" alt="Project details Issues tab and filters"><figcaption><p>Project details Issues tab and filters</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/issues-page-projects.png" alt="Project details Issues tab and filters"><figcaption><p>Project details Issues tab and filters</p></figcaption></figure>
 
 Use the filters in the panel to the left to narrow the search for issues. Select the checkboxes to filter issues by **Issue type**, **Severity**, **Fixability**, **Exploit Maturity**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed; the default is 0 to 1000.
 
@@ -22,7 +22,7 @@ Snyk provides features to fix issues identified during scanning. See [Fix your v
 
 ## View issue details
 
-Click on an issue to view details, including its [priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md).
+Scroll to an issue to view details, including its [priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md).
 
 <div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.43.14.png" alt="View issue details"><figcaption><p>View issue details</p></figcaption></figure></div>
 
@@ -35,7 +35,7 @@ Click on an issue to view details, including its [priority score](../../manage-r
 
 Snyk knowledge of the transitive dependencies in your Project makes it possible for Snyk to provide fix advice on the **Fixes** tab:
 
-<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Project details Fixes tab</p></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Project details Fixes tab</p></figcaption></figure></div>
 
 See [Fix your vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
