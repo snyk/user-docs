@@ -42,11 +42,11 @@ Role management for Groups takes place in **Settings** > **Member roles**. This 
 
 Click the **Create new role** button and enter the **New role name**, **Role Type**, and **Description**. Role names should be unique, reflecting the user's purpose in Snyk and can contain alphanumeric characters plus spaces. The **Role Type** reflects the permission sets the user can have, Organization-level only or Group and Organization-level.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="Create a custom Organization-level role" width="375"><figcaption><p>Create a custom Organization-level role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="" width="375"><figcaption><p>Create a custom Organization-level role</p></figcaption></figure>
 
 If you would like to continue, you can click the **Create role** button. Basic details about the role are visible in the top section of the **Role details** screen.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-25-17.png" alt="Role Details for a custom role" width="563"><figcaption><p>Role Details for a custom role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-13_10-25-17.png" alt="" width="563"><figcaption><p>Role Details for a custom role</p></figcaption></figure>
 
 The bottom section lists all the permissions available at the level you specified under **Role Type**, at the Organization or Group level. For more information about the available permissions, see [Pre-defined roles](pre-defined-roles.md).
 
@@ -64,7 +64,7 @@ Permissions are grouped under categories. This is done so you can understand wha
 
 When the process of creating a role is completed, a confirmation message appears.
 
-<figure><img src="../../.gitbook/assets/image (196).png" alt="Role update confirmation message"><figcaption><p>Role update confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (196).png" alt=""><figcaption><p>Role update confirmation message</p></figcaption></figure>
 
 ### Edit a custom role
 
@@ -80,13 +80,13 @@ When the process of updating a role completes, a confirmation message appears.
 
 To copy a role, use the **Duplicate** button next to each role in the Member Roles list, or select a role from the Member Roles list page, and when the Role details page opens, click the **Duplicate Role** button.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-44-43.png" alt="Duplicate a role using the copy icon on the Member Roles page"><figcaption><p>Duplicate a role using the copy icon on the Member Roles page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-13_10-44-43.png" alt=""><figcaption><p>Duplicate a role using the copy icon on the Member Roles page</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-46-59.png" alt="Duplicate a role using the Duplicate role button  under Role Details"><figcaption><p>Duplicate a role using the Duplicate role button under Role Details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-13_10-46-59.png" alt=""><figcaption><p>Duplicate a role using the Duplicate role button under Role Details</p></figcaption></figure>
 
 A Duplicate role pop-up will appear, prompting you to enter a unique name and description. You can select the option to use the description from the role you copied from, but this can be edited later. Click the **Duplicate Role** button to proceed with creation. A **Group Admin** or a custom role with **Role management** permissions can edit this role to assign new permissions to it or remove any permissions already assigned.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-50-04.png" alt="Duplicate role creation" width="375"><figcaption><p>Duplicate role creation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-13_10-50-04.png" alt="" width="375"><figcaption><p>Duplicate role creation</p></figcaption></figure>
 
 ### Delete a custom role
 
@@ -98,7 +98,7 @@ When the current role is deleted, all its existing members, including service ac
 
 Pre-defined roles cannot be deleted from your Group.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-17 at 09.59.27.png" alt="Prompt to delete a role and reassign members"><figcaption><p>Prompt to delete a role and reassign members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-17 at 09.59.27.png" alt=""><figcaption><p>Prompt to delete a role and reassign members</p></figcaption></figure>
 
 ## Assign roles
 
@@ -114,22 +114,20 @@ Select an Organization and then select the **Members** option.
 
 For any member Name except a Group Admin, you can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/org-member-change-role.png" alt=""><figcaption><p>Select member role</p></figcaption></figure>
 
 \
 You can invite new members to the Organization with an assigned role.
 
 Click **Add members** > **Invite new members** and select the role to assign from the **New Members join as** dropdown.
 
-<figure><img src="../../.gitbook/assets/image (531).png" alt="Invite new members with an assigned role"><figcaption><p>Invite new members with an assigned role</p></figcaption></figure>
+<div align="left"><figure><img src="../../.gitbook/assets/Screen Shot 2022-02-24 at 12.51.45 PM.png" alt=""><figcaption><p>Add members to your Organization</p></figcaption></figure></div>
 
 Click the **Add members** button > **Add existing members** to promote current Group Members to an Organization-specific role.
 
 {% hint style="warning" %}
 Snyk prevents users from assigning roles to others with more privileges than those the user who is assigning roles already has. If you try to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than you have, you will see the error **Cannot assign higher privilege role**.
 {% endhint %}
-
-<figure><img src="../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png" alt="User cannot assign a more privileged role to another user"><figcaption><p>User cannot assign a more privileged role to another user</p></figcaption></figure>
 
 ### Assign roles to service accounts
 
