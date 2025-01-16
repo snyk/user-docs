@@ -1831,9 +1831,7 @@ paths:
         content:
           application/json; charset=utf-8:
             schema:
-              oneOf:
-                - $ref: '#/components/schemas/AddNewIntegrationWithCredentialsRequest'
-                - $ref: '#/components/schemas/AddNewIntegrationWithBrokerRequest'
+              $ref: '#/components/schemas/Addnewintegrationrequest'
         required: true
       responses:
         '200':
@@ -14009,8 +14007,8 @@ components:
           items:
             $ref: '#/components/schemas/Tag'
           description: Tags now applied to the project
-    AddNewIntegrationWithCredentialsRequest:
-      title: Add New Integration With Credentials Request
+    Addnewintegrationrequest:
+      title: Addnewintegrationrequest
       required:
         - type
         - credentials
@@ -14020,8 +14018,8 @@ components:
           $ref: '#/components/schemas/IntegrationType'
         credentials:
           $ref: '#/components/schemas/IntegrationCredentials'
-    AddNewIntegrationWithBrokerRequest:
-      title: Add New Integration With Broker Request
+    Addnewintegrationrequest1:
+      title: Addnewintegrationrequest1
       required:
         - type
         - broker

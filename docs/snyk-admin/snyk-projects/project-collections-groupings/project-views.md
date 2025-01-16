@@ -14,11 +14,11 @@ A Project view is visible to all users in the same Organization they were create
 1. On the right side of the Project listing page, beneath the View Import Log button, select **Group by none** from the drop-down list.
 2. Click the drop-down next to the FILTERS drop-down, and click **Create new view**. If you already have filters selected, click **Save Changes** next to the drop-down and follow the next step.
 
-<figure><img src="https://lh5.googleusercontent.com/WAgWCCmG0lXNYA3hLCEmtdVTlcnHu7pppLVl-aczgFNO0trEylmX4d-TpQIvxxMnfSxCUgyrFu3seGqgFWdT-w0TNndiT4TjVzI2kd97E6tkpIs1MzGa7Zs64P2myYC7Wg2gHGxb49_eM1JO3c3W_wE" alt="Create a Project view"><figcaption><p>Create a Project view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/create-view-projects.png" alt="Create a Project view" width="339"><figcaption><p>Create a Project view</p></figcaption></figure>
 
 3. Enter a name for your Project view in the available field, then click **Create view**.
 
-<figure><img src="https://lh5.googleusercontent.com/Ub5XHWllS-vPUpcO6jc1EAUxk-1U8WkTOp7hlaym8ObMPOT80aVZ1A8fQFSrAJ--gJ0FJRSewfnBApylp9Y91Q2TIE4_1c6OitD9LB3ev6gIYk1-PiZ3CX_rGDx_Sx_Tv3XJQnBelANrhlRdsQr6U0Y" alt="Name your Project view"><figcaption><p>Name your Project view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/name-new-view-projects.png" alt="Name your Project view" width="375"><figcaption><p>Name your Project view</p></figcaption></figure>
 
 Your new view is created and automatically selected. Click the icon next to your Project view to duplicate, rename, or delete it.
 
@@ -32,11 +32,11 @@ Your new view is created and automatically selected. Click the icon next to your
 ## View reports on your Projects
 
 1. From the Project view drop-down, select the Project view for which you would like to view the report.
-2. Next to the FILTERS drop-down, click the **See report for these projects button**.
+2. Next to the FILTERS drop-down, click **See report for these projects**.
 
-<figure><img src="https://lh4.googleusercontent.com/jkOU4T3WWI_U2px24loqeZXQuO7nROckc7UVOwow4QwXid2emUoh3pAlXaSvDrURHdtnT5f1FbDInqfwOFiZbmzyuKopGX_5rplkaXHpcN6DqA7rSnW82u1EFQyPh_kjEjICkIdaGWx-r_hsBsVNHpo" alt="View report on your Project view"><figcaption><p>View report on your Project view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/see-report-view-projects.png" alt="View report on your Project view" width="563"><figcaption><p>View report on your Project view</p></figcaption></figure>
 
-The Reports page loads and shows a report of the Projects in your Project view based on the filters you selected.
+The Reports page loads and displays a report of the Projects in your Project view based on the filters you selected.
 
 <figure><img src="https://lh4.googleusercontent.com/i-g6q10m39M-Ni72GBu3pwFDIjoI9B7YVgPDDpFlqlxOfiW8T721tLXTrxnsHI2hDAE9W93U12PytvTLqF4O9OkQVzuXOr_lIM2CY_JWwdTpS4GrM3GQiZmaElDryxoXquhyh1cXfbt72PGI0WSoShg" alt="Automatically scoped report for your Project view"><figcaption><p>Automatically scoped report for your Project view</p></figcaption></figure>
 
