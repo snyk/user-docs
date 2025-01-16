@@ -10,8 +10,6 @@ After the requester accepts the invitation, the requester has access to the Orga
 
 Users who want to join an Organization in a specific Group can select the **Organizations** option on the Group menu and the **All Organizations** tab. Find the name of the Organization on the list displayed, click **Request**, and respond to the prompts to request access. This notifies the Organization Admins or users with the Organization-level **Invite Users** permission, who can respond to the request.
 
-<figure><img src="../../../.gitbook/assets/2024-02-07_13-52-16.jpeg" alt="All Organizations page showing all Organizations in a Group" width="563"><figcaption><p>All Organizations page showing all Organizations in a Group</p></figcaption></figure>
-
 Additional common routes for users to request this access include the following:
 
 * Using a link shared by someone
@@ -32,4 +30,4 @@ Only a valid URL for a Project or status check allows users to request access. U
 
 In your Organization, navigate to the **Settings** > **General** option and then to the **Requesting Access** section. Select **Enabled** to allow access requests or **Disabled** to stop allowing access requests.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-27 at 09.44.52.png" alt="Request Access setting"><figcaption><p>Request Access setting</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-27 at 09.44.52.png" alt=""><figcaption><p>Request Access setting</p></figcaption></figure>

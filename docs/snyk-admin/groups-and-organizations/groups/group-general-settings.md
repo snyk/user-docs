@@ -1,8 +1,8 @@
 # Group general settings
 
-To view and modify settings for your Group, navigate to **Settings** and **General**:
+To view and modify settings for your Group, navigate to **Settings** and **General**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (3) (1) (1).png" alt="Group general settings"><figcaption><p>Group general settings</p></figcaption></figure>
+<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2023-04-26 at 12.57.49.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure></div>
 
 In the Group general settings, you can view and modify the following:
 

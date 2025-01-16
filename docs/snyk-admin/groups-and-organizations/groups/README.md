@@ -13,13 +13,13 @@ As part of your onboarding, Snyk will set you up with a Group for your company. 
 
 You can use Group-level options to view [Organizations](./#group-organizations), [reports](./#group-reports), [dependencies](./#group-dependencies), and [policies](./#group-policies) across all of the Organizations in your Group, configure your [Group settings](./#group-settings), and view all the [users](./#group-members) in a Group.
 
-<figure><img src="../../../.gitbook/assets/2024-04-02_09-27-55.png" alt="Group-level options for Enterprise plan users" width="210"><figcaption><p>Group-level options for Enterprise plan users</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/group-level-options.png" alt=""><figcaption><p>Group-level options for Enterprise plan users</p></figcaption></figure>
 
 ### Group Organizations
 
 Select **Organizations** to view all the Organizations you have access to and your assigned role inside each one:
 
-<figure><img src="../../../.gitbook/assets/my organizations.png" alt="A list of all the Organizations a user has access to"><figcaption><p>A list of all the Organizations a user has access to</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/group-orgs-list.png" alt=""><figcaption><p>A list of all the Organizations a user has access to</p></figcaption></figure>
 
 If your Group is set up to let its users join Organizations, you also see a list of all the Organizations in the Group and options to join the Organizations where you are not currently a member.
 
@@ -31,7 +31,7 @@ For a detailed breakdown of user roles and their associated access permissions, 
 
 Select **Reports** to view the vulnerability status of the Organizations in your Group in one place as a report:
 
-<div align="left"><figure><img src="../../../.gitbook/assets/Reports.png" alt="Group report filtered to show open issues"><figcaption><p>Group report filtered to show open issues</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Reports.png" alt=""><figcaption><p>Group report filtered to show open issues</p></figcaption></figure></div>
 
 {% hint style="info" %}
 See [Reporting](../../../manage-issues/reporting/) for more details.
@@ -65,7 +65,7 @@ Select **Issues** to better identify and prioritize your Container, Code, and Op
 
 Select **Dependencies** to view the dependencies and license issues for your Groups:
 
-<div align="left"><figure><img src="../../../.gitbook/assets/dependencies (2).png" alt="View Group dependencies"><figcaption><p>View Group dependencies</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/dependencies (2).png" alt=""><figcaption><p>View Group dependencies</p></figcaption></figure></div>
 
 {% hint style="info" %}
 See [Dependencies and licenses](../../../manage-risk/reporting/dependencies-and-licenses/) for more details.
@@ -75,7 +75,7 @@ See [Dependencies and licenses](../../../manage-risk/reporting/dependencies-and-
 
 Select **Policies** to view the license and security policies for your Group:
 
-<div align="left"><figure><img src="../../../.gitbook/assets/policies.png" alt="View Group policies"><figcaption><p>View Group policies</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/policies.png" alt=""><figcaption><p>View Group policies</p></figcaption></figure></div>
 
 {% hint style="info" %}
 See [Policies](../../../manage-risk/policies/) for details.
@@ -95,7 +95,7 @@ Select **Members** to view users in the Group.
 
 Group members are users who have access to all Organizations in the Group. Users of the Organizations are managed in the Settings of each Organization.
 
-<figure><img src="../../../.gitbook/assets/2024-04-02_09-41-48.png" alt="Members view for Group users"><figcaption><p>Members view for Group users</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2024-04-02_09-41-48.png" alt=""><figcaption><p>Members view for Group users</p></figcaption></figure>
 
 {% hint style="info" %}
 See [Manage users in a Group](manage-users-in-a-group.md) for details.
@@ -105,7 +105,7 @@ See [Manage users in a Group](manage-users-in-a-group.md) for details.
 
 Select **Settings** to view and manage Group settings.
 
-<figure><img src="../../../.gitbook/assets/2024-04-02_09-40-33.png" alt="Listed Group Settings for Enterprise plan users" width="202"><figcaption><p>Listed Group Settings for Enterprise plan users</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/group-settings.png" alt=""><figcaption><p>Listed Group Settings for Enterprise plan users</p></figcaption></figure>
 
 {% hint style="info" %}
 See [Manage settings](../group-and-organization-settings.md) for details.
