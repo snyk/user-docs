@@ -14,11 +14,11 @@ A Project view is visible to all users in the same Organization they were create
 1. On the right side of the Project listing page, beneath the View Import Log button, select **Group by none** from the drop-down list.
 2. Click the drop-down next to the FILTERS drop-down, and click **Create new view**. If you already have filters selected, click **Save Changes** next to the drop-down and follow the next step.
 
-<figure><img src="../../../.gitbook/assets/create-view-projects.png" alt="Create a Project view" width="339"><figcaption><p>Create a Project view</p></figcaption></figure>
+<figure><img src="broken-reference" alt="Create a Project view" width="339"><figcaption><p>Create a Project view</p></figcaption></figure>
 
 3. Enter a name for your Project view in the available field, then click **Create view**.
 
-<figure><img src="../../../.gitbook/assets/name-new-view-projects.png" alt="Name your Project view" width="375"><figcaption><p>Name your Project view</p></figcaption></figure>
+<figure><img src="broken-reference" alt="Name your Project view" width="375"><figcaption><p>Name your Project view</p></figcaption></figure>
 
 Your new view is created and automatically selected. Click the icon next to your Project view to duplicate, rename, or delete it.
 
@@ -34,7 +34,7 @@ Your new view is created and automatically selected. Click the icon next to your
 1. From the Project view drop-down, select the Project view for which you would like to view the report.
 2. Next to the FILTERS drop-down, click **See report for these projects**.
 
-<figure><img src="../../../.gitbook/assets/see-report-view-projects.png" alt="View report on your Project view" width="563"><figcaption><p>View report on your Project view</p></figcaption></figure>
+<figure><img src="broken-reference" alt="View report on your Project view" width="563"><figcaption><p>View report on your Project view</p></figcaption></figure>
 
 The Reports page loads and displays a report of the Projects in your Project view based on the filters you selected.
 
