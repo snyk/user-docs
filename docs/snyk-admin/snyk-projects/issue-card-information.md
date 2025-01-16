@@ -11,7 +11,7 @@ Issue cards appear on the details page for a Project. You can use available opti
 
 Issue cards show details for a specific vulnerability or license issue and actions you can take.
 
-<figure><img src="../../.gitbook/assets/image (289) (1).png" alt="Issue card for the npmconf vulnerability"><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/copy-issue-link-projects.png" alt="Issue card for the npmconf vulnerability"><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
 
 The issue card provides a [Header section](issue-card-information.md#header-section) and [Body section](issue-card-information.md#body-section) with information as explained in the next sections of this documentation.
 
