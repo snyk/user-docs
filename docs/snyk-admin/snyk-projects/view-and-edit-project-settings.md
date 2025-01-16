@@ -2,7 +2,7 @@
 
 Select the **Settings** tab on the Project listing or details page to view and edit Project settings:
 
-<figure><img src="../../.gitbook/assets/screenshot_2021-04-14_at_09.23.38.png" alt="Project settings"><figcaption><p>Project settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-projects (2).png" alt="Project settings"><figcaption><p>Project settings</p></figcaption></figure>
 
 Click **GitHub integration** to edit SCM-specific settings. This also applies to other SCMs.
 
