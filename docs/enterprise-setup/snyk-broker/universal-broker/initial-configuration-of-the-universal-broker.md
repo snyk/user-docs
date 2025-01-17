@@ -6,7 +6,7 @@ The high-level steps in implementing the Universal Broker are the same regardles
 Prerequisite: You must be a Tenant admin to be able to create deployments, credential references, and connections.
 {% endhint %}
 
-* **One time:** Install the Snyk Broker App in your Organization. This returns an install ID, a client ID, and a client secret, all needed to interact with the Snyk platform. The Organization ID is required to create the deployment.
+* **One time:** Install the Snyk Broker App in any Organization: you only have to install the app once regardless of which Organizations you want to use Universal Broker for.. This returns an install ID, a client ID, and a client secret, all needed to interact with the Snyk platform. The Organization ID is required to create the deployment.
 * **One time:** Create a Universal Broker deployment for your tenant ID and install ID.
 * **One time:** Create credential references needed for your connections.
 * **One time:** Create your desired connection or connections.
@@ -26,17 +26,15 @@ To use this command, you must install Node 18 or higher.
 2. Set the necessary environment variables:
    * `SNYK_TOKEN` if not already set. This must be your personal API key.
    * `SNYK_API_HOSTNAME` if you are not targeting https://api.snyk.io, for example,`export SNYK_API_HOSTNAME=https://api.eu.snyk.io`. See [Broker URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
-3. Ensure that as you follow the remaining steps, you set more environment variables as needed to ensure the experience proceeds smoothly, for example:
-   * `TENANT_ID` so you do not have to enter it on every command.
-   * `INSTALL_ID` if you have one; otherwise, the tool will walk you through the installation process.
-4. Run `snyk-broker-config commands` to list the available commands.
-5. Run `snyk-broker-config workflows` to list the available interactive workflows.
-6. Create a deployment.
+   * (optional) `INSTALL_ID` if you have one; otherwise, the tool will walk you through the installation process
+3. Run `snyk-broker-config commands` to list the available commands.
+4. Run `snyk-broker-config workflows` to list the available interactive workflows.
+5. Create a deployment.
    * Run `snyk-broker-config workflows deployments create`.
    * Add any metadata key-value pair or pairs that are needed.
-   * **Note**: This workflow will ask you to install a Snyk App if it is not already installed. Ensure that you note the installation ID (also export it as an environment variable) and credentials output for use in the succeeding steps. If you lose the credentials, you must install the App again and recreate or update the deployment.
+   * **Note**: This workflow will walk you through a Snyk App installation if the App is not already installed. Ensure that you note the credentials (client ID+client Secret) and the installation ID (also export it as an environment variable) for use in the succeeding steps. If you lose the credentials, you must install the App again and recreate or update the deployment.
    * **Optional**:  When the workflow deployment has been created, view your deployment using `snyk-broker-config workflows deployments get`.
-7. Create and configure your connection or connections.
+6. Create and configure your connection or connections.
    * Run `snyk-broker-config workflows connections create` to create a connection.
    * In response to the prompt **Which Deployment do you want to use?**: select your deployment from the list presented.
    * In response to the prompt **Which Connection type do you want to create?**:
@@ -49,7 +47,7 @@ To use this command, you must install Node 18 or higher.
      * Enter the **broker\_client-url** (the hostname and port of your Broker client, for example, https://my.broker.company.com:8000).
      * Enter the credential reference or choose the option **CreateNew** in response to a prompt like **github-token (Sensitive): Which Credential Reference do you want to use? Or create New?**
    * When you see the messages **Connection created** and **Ready to configure integrations to use this connection**, you can run the Broker client.
-8. After the connection is created, use `snyk-broker-config workflows connections integrate` to configure an integration to use the newly created connection.\
+7. After the connection is created, use `snyk-broker-config workflows connections integrate` to configure an integration to use the newly created connection.\
    In response to the prompts, enter the `deployment` you want to use, the **connection** you want to use, the `OrgID` of the Organization you want to integrate, and the `integration ID` of the type `github`.\
    You can find your `integration ID` in your **Organization** **Integrations** settings or retrieve it using the [Integrations](../../../snyk-api/reference/integrations-v1.md) API.
 
