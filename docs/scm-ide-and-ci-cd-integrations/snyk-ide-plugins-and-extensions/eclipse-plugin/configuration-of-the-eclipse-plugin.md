@@ -1,6 +1,6 @@
 # Configuration of the Eclipse plugin
 
-You can configure both [Global settings](configuration-of-the-eclipse-plugin.md#global-settings) and [Project-specific propertie](configuration-of-the-eclipse-plugin.md#project-specific-properties).
+You can configure both [Global settings](configuration-of-the-eclipse-plugin.md#global-settings) and [Project-specific properties](configuration-of-the-eclipse-plugin.md#project-specific-properties).
 
 ## Global settings
 
@@ -42,9 +42,7 @@ You can set the following global configuration settings in the Snyk preferences.
 
 ## Project-specific properties
 
-When you select Project **Properties**, you can specify project-specific scan settings on the Snyk properties page.
-
-<figure><img src="../../../.gitbook/assets/image (652).png" alt=""><figcaption><p>Project properties can be opened e.g. via the context menu of the project</p></figcaption></figure>
+You can specify project-specific scan settings on the **Snyk** page in the **Project Properties**. To access the **Project Properties**, right click on the root folder of your project in either the **Package Explorer** or **Project Explorer** view, then select **Properties** from the context menu.
 
 <figure><img src="../../../.gitbook/assets/image (651).png" alt=""><figcaption><p>The Snyk Project-specific properties page allows entering scan parameters for the Project.</p></figcaption></figure>
 
