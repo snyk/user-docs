@@ -1,24 +1,18 @@
 # Third-party dependency scanning (SCA, Snyk Open Source)
 
-In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integration with the native flows of Eclipse, inline highlights, problems integrations, and information about the issue on hover. The following shows all of these for a security vulnerability found in a third party dependency:
+In the Eclipse plugin version 2.0.0 and later, Snyk has enhanced integrations with the native flows of Eclipse: inline code highlights with displays of information about the issue on hover, and Eclipse Problems integrations. The following shows all of these for a high-severity security vulnerability found in a `js` file:
 
-1. The vulnerable package is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this package. You have all the information on hover; you can scroll, read, or click the links for even more information. Advice on what action to take and how is presented right where the vulnerability is.
-2. You see the integration in the **Problems** view, where you can filter and group issues. Snyk also indicates the line where the issue is, and you can click the issue to navigate to it.
-3. You can see the gutter icons on the left, as well as the file map highlights (with colors matching the priorities) on the right.
-4. In addition to this, the **Snyk view** offers detailed issue descriptions, including the dataflow and fix examples together with possibilities to filter issues using the toolbar of the view.
+* The security vulnerability is highlighted in your code, with the underline color and icon adjacent to the line number indicating the severity of the issue. You can see the vulnerability ID and detailed information by hovering over the highlighted code. The hover information is limited to JavaEditor and GenericEditor, the latter being the default editor for plugins like Wild Web Developer.
+* Vulnerabilities are displayed in the **Problems** view, which allows for filtering and grouping issues. The line containing the issue is shown in the **Location** column. You can navigate to the issue in the code by clicking the issue in the list of problems.
 
-{% hint style="info" %}
-The hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer.
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image (267) (1) (1) (1).png" alt=""><figcaption><p>Snyk Open Source issue displayed in Eclipse</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (267) (1) (1) (1).png" alt=""><figcaption><p>Snyk Eclipse displaying a Snyk Open Source issue</p></figcaption></figure>
+In addition to this, the **Snyk Results** view offers detailed issue descriptions, including any available fixes. In this view, you can start and stop scans, filter issues, and more.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (649).png" alt=""><figcaption><p>Snyk View displaying issue details for a Snyk Open Source issue</p></figcaption></figure>
+To filter issues in the **Snyk** view, click the three vertical dots menu at the top right of the view, then select any combination of options from the **Severity**, **Snyk Product**, **Issues Status**, and **Fixability** submenus to customize your filter.
 
-In the Snyk View, in the panel on the left, right-click the issue to use the context menu options, I**gnore issue in Snyk** and **Monitor project**.
+To ignore an issue for 30 days, right-click the issue in the left panel of the **Snyk** view and select **Ignore issue**.
 
-<figure><img src="../../../.gitbook/assets/image (648).png" alt=""><figcaption><p>Context menu for Snyk Open Source issue</p></figcaption></figure>
+You can enable monitoring for a Project to help spot new issues as they are reported. To do this, right-click a folder in the left panel of the **Snyk** view and select **Monitor project**.&#x20;
 
-**Ignore issue**—Hover over the specific issue that you want to ignore for the next 30 days and then select the context options you want to use.
-
-**Snyk monitor** —Run `snyk test` for the entire workspace.
+<figure><img src="../../../.gitbook/assets/image (649).png" alt=""><figcaption><p>Details for a Snyk Open Source issue dispilayed in the Snyk view</p></figcaption></figure>

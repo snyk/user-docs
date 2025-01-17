@@ -1,16 +1,14 @@
 # Misconfiguration scanning results (Snyk Infrastructure as Code)
 
-In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integration with the native flows of Eclipse: inline highlights, problems integrations, and information about the issue on hover. The following shows all of these for a high severity misconfiguration found in a Terraform file:
+In the Eclipse plugin version 2.0.0 and later, Snyk has enhanced integrations with the native flows of Eclipse: inline code highlights with displays of information about the issue on hover, and Eclipse Problems integrations. The following illustrates all of these for a high-severity security vulnerability found in a `js` file:
 
-1. The misconfiguration is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this file and the line number. You have all the information on hover; you can scroll, read, or click the links (when available) for even more information. Advice on how to resolve the misconfiguration is right there where the misconfiguration is.
-2. You see the integration with the **Problems** view, which is useful if you use the **Problems** view to filter and group issues. Snyk also indicates the line where the issue is, and clicking the issue in the problem view navigates to it.
-3. You can see the gutter icons on the left and file map highlights (with colors matching the priorities) on the right.
-4. In addition to this, the **Snyk** view offers the detailed issue descriptions and possibilities to start/stop scans, filter issues using the tool bar of the view and more.![](<../../../.gitbook/assets/image (647).png>)
-
-{% hint style="info" %}
-Currently the hover information is limited to JavaEditor and GenericEditor, the latter being the default editor for plugins like Wild Web Developer.
-{% endhint %}
+* The misconfiguration is highlighted in your code, with the underline color and icon adjacent to the line number indicating the severity of the issue. You can see detailed information and advice on how to resolve the misconfiguration by hovering over the highlighted code. The hover information is limited to JavaEditor and GenericEditor, the latter being the default editor for plugins like Wild Web Developer.
+* Misconfigurations are displayed in the **Problems** view, which allows for filtering and grouping of issues. The line containing the issue is shown in the **Location** column. You can navigate to the issue in the code by clicking the issue in the list of problems.
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Snyk IaC findings displayed in Eclipse</p></figcaption></figure>
+
+In addition to this, the **Snyk** view offers detailed issue descriptions, including **Remediation** suggestions. In this view you can start and stop scans, filter issues, and more.&#x20;
+
+To filter issues in the **Snyk** view, click the three vertical dots menu at the top right of the view, and then select any combination of options from the **Severity**, **Snyk Product**, **Issues Status**, and **Fixability** submenus to customize your filter.
 
 <figure><img src="../../../.gitbook/assets/image (646).png" alt=""><figcaption><p>Snyk IaC findings displayed in Snyk View</p></figcaption></figure>
