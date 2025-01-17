@@ -17,7 +17,9 @@ When you are using the CLI locally, **Snyk recommends that you use the OAuth 2.0
 3. The next page asks for your authorization for the CLI to act on your behalf. Click **Grant app access**.
 4. After you authenticate successfully, view the confirmation message; then close the browser window and return to the CLI in the terminal.&#x20;
 
-After authentication is granted, a pair of access and refresh tokens is stored locally for future use.&#x20;
+After authentication is granted, a pair of access and refresh tokens is stored locally for future use. \
+\
+Multi-tenant users who do not belong to the default region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 
 If you have problems, see [OAuth 2.0 authentication does not work](../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md).
 
