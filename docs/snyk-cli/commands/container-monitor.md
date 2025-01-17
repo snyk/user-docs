@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk container monitor` command captures the container image layers and dependencies in a project and monitors that snapshot for vulnerabilities, sending the results to  [snyk.io](https://snyk.io)
+The `snyk container monitor` command captures the container image layers and dependencies in a project and monitors that snapshot for vulnerabilities, sending the results to [snyk.io](https://snyk.io)
 
 Use the `container monitor` command before integrating your code into production, to take a snapshot of the code to be monitored in order to avoid pushing vulnerabilities into production. Choose a test frequency in your Settings if you want to change the frequency from the default, which is daily.
 
@@ -74,7 +74,7 @@ Example: `$ snyk container test --json`
 
 ### `--target-reference=<TARGET_REFERENCE>`
 
-Specify a reference that differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.&#x20;
+Specify a reference that differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.
 
 For more information see [Group projects by branch or version for monitoring](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring)
 
@@ -134,13 +134,21 @@ In earlier releases, cannot be used with `--app-vulns`.
 
 For more information see [Detecting application vulnerabilities in container images](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images)
 
+### `--exclude-node-modules`
+
+Allow disabling the scan of `node_modules` directories inside node.js container images.
+
+In CLI versions v1.1292.0 and higher, `node_modules` scanning is enabled by default.
+
+&#x20;When `node_modules` scanning is disabled, Snyk reports vulnerabilities for npm Projects sourced from application file pairs: `[package.json, package-lock.json], [package.json, yarn.lock]`.
+
 ### `--nested-jars-depth`
 
 When `app-vulns` is enabled, use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack. Depth must be a number.
 
 ### `--exclude-base-image-vulns`
 
-Do not show vulnerabilities introduced only by the base image. Works for operating system packages only. Available when using `snyk container test` only.  Provided for compatibility with `snyk container test`. Using this option with `snyk container monitor` will not have any effect
+Do not show vulnerabilities introduced only by the base image. Works for operating system packages only. Available when using `snyk container test` only. Provided for compatibility with `snyk container test`. Using this option with `snyk container monitor` will not have any effect
 
 ### `--platform=<PLATFORM>`
 
