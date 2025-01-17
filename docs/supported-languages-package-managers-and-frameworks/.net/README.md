@@ -27,7 +27,7 @@ Snyk for .NET supports NuGet and Paket as package managers and [nuget.org](https
 
 The following frameworks and libraries are supported in Snyk for .NET: (only code)
 
-* .NET 6.0-8.0 - Comprehensive&#x20;
+* .NET 6 - Comprehensive&#x20;
 * .NET Core - Comprehensive&#x20;
 * .NET Framework 4.6-4.8.x - Comprehensive&#x20;
 * Anthropic.SDK - Comprehensive&#x20;

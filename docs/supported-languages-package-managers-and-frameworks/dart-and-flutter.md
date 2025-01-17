@@ -25,6 +25,8 @@ Snyk for Dart and Flutter does not support frameworks and libraries.
 
 Snyk for Dart and Flutter does not support any Snyk features.
 
+PR Checks configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and will not alert for Dart and Flutter or other languages that do not support FixPRs.
+
 ## Testing pub packages using the API
 
 {% hint style="info" %}
@@ -75,8 +77,3 @@ Now you will be able to view all native dependencies, including those introduced
 <figure><img src="../.gitbook/assets/image (571).png" alt=""><figcaption><p>Snyk Project page showing dependencies in Flutter apps</p></figcaption></figure>
 
 If you need help, [contact Snyk Support](https://support.snyk.io).
-
-
-
-
-

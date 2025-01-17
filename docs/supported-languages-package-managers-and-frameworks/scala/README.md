@@ -44,3 +44,5 @@ The following features are supported in Snyk for Scala:
 | Snyk Open Source                                    | Snyk Code                                            |
 | --------------------------------------------------- | ---------------------------------------------------- |
 | <ul><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Interfile analysis</li></ul> |
+
+PR Checks configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and will not alert for Scala or other languages that do not support FixPRs.

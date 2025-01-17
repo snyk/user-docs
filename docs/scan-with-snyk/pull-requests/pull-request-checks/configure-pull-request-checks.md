@@ -50,6 +50,8 @@ The configuration settings apply to all Projects in that Organization. You can a
 * [ ] **Code Analysis**: Enable this option to fail the PR on new vulnerabilities detected in your Git repository. If the severity is higher than your threshold, the PR is not merged into the main branch.
 * [ ] **Fail conditions**: Select the severity threshold at which the PR fails. For example, if you select **Medium**, the PR fails on issues found at this level or higher, while it is merged for **Low** severity issues.
 
+PR Checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and, therefore, will not alert for projects in languages that do not support FixPR Checks.
+
 <figure><img src="../../../.gitbook/assets/enable analyze code.png" alt="PR check settings to analyze code issues."><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>
 
 {% hint style="info" %}
@@ -81,7 +83,7 @@ You can configure PR Checks to work only for specific Projects:
 * **package.json** to check for open-source and licensing issues.
 * **Code analysis** to check for security issues in your code.
 
-<figure><img src="../../../.gitbook/assets/project-overview.png" alt="Project overview"><figcaption><p>Project overview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-overview (1).png" alt="Project overview"><figcaption><p>Project overview</p></figcaption></figure>
 
 6. Navigate to **Settings.**
 7. On the left side, select your integration. For this example, GitHub has been integrated with Snyk.
@@ -118,5 +120,3 @@ You can configure PR Checks to work only for specific Projects:
 4. **Update Snyk pull request settings** to save changes.
 
 </details>
-
-###

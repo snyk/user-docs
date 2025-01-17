@@ -113,7 +113,7 @@ Snyk defaults to Python `3.10` if the `Pipfile` contains:
 
 ### Poetry and Python versions supported
 
-Snyk supports Poetry 1.0. There is no need to tell Snyk the Python version for Poetry Projects.
+There is no need to tell Snyk the Python version for Poetry Projects.
 
 Poetry files contain sufficient information to build a full dependency tree without running native tooling.
 

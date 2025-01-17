@@ -23,6 +23,8 @@ Snyk for Rust supports Cargo as a package manager and [crates.io](https://crates
 
 Snyk for Rust does not have any frameworks and libraries supported.
 
+If you want to use PR checks in Rust projects, for which the Fix PRs feature is not supported, then vulnerable dependencies may be introduced without being flagged.
+
 ## Features
 
 There are no features available for Snyk for Rust.

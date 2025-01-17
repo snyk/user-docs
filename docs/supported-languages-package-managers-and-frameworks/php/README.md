@@ -4,7 +4,7 @@
 
 Snyk supports [PHP for code analysis](php-for-code-analysis.md) and [PHP for open source](php-for-open-source.md).
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
+Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 
 {% hint style="info" %}
 **Supported PHP versions**
@@ -42,9 +42,11 @@ The following frameworks and libraries are supported in Snyk for PHP:
 
 The following features are supported in Snyk for PHP:
 
-| Snyk Open Source                                    | Snyk Code                                                                  |
-| --------------------------------------------------- | -------------------------------------------------------------------------- |
-| <ul><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules </li><li>Interfile analysis</li></ul> |
+| Snyk Open Source                                   | Snyk Code                                                                 |
+| -------------------------------------------------- | ------------------------------------------------------------------------- |
+| <ul><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
+
+PR Checks that are configured to "Only fail when the issues found have a fix available" rely on Snyk FixPR support and, therefore, will not alert for PHP and other languages that do not support FixPRs.
 
 ## Snyk CLI for PHP
 
@@ -75,4 +77,3 @@ These settings are applied to all newly imported Projects and to all existing Pr
 ## Troubleshooting Snyk for PHP
 
 If you need help, [contact Snyk Support](https://support.snyk.io).
-
