@@ -516,6 +516,18 @@ The provided versioning schema is invalid and image could therefor not be create
 
 ---
 # CLI
+### [SNYK-CLI-0000](#snyk-cli-0000)
+
+#### Unspecified Error
+
+The encountered error only provides basic information, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/commands](https://docs.snyk.io/snyk-cli/commands)
+- [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
 ### [SNYK-CLI-0001](#snyk-cli-0001)
 
 #### Unable to set environment
@@ -2556,4 +2568,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-01-21T09:06:46.518Z
+--- Generated at 2025-01-21T10:11:39.399Z
