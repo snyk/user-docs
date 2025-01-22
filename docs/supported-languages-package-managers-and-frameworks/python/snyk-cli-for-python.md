@@ -24,6 +24,8 @@ Pip `requirements.txt` files specify only top-level dependencies, not nested or 
 
 ## Poetry and CLI
 
+Poetry v1 is supported.
+
 To build the dependency tree for a Poetry application, Snyk uses `pyproject.toml` and `poetry.lock` files. Both files must be present for Snyk to scan Poetry dependencies and identify issues.
 
 If no `poetry.lock` file is present; you should run `poetry lock` to generate one before scanning.

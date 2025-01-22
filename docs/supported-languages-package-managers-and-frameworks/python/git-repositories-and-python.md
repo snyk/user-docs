@@ -44,7 +44,7 @@ Snyk will select which Python version to use according to the `major`, `minor` a
 * `Major`, `minor` and `patch` version (or example, 3.8.x, 3.9.x, 3.10.x, 3.11.x, 3.12.x): the specific `patch` version is ignored, the Project is scanned with default versions of 3.8, 3.9, 3.10, 3.11 or 3.12
 * Any versions specified with an unsupported `minor` version: defaults to 2.7 or 3.7
 
-### Git repository integration and Snyk for Python
+## Git repository integration and Snyk for Python
 
 To scan your Projects, you must ensure your repository contains the supported manifest files
 
@@ -81,6 +81,8 @@ dephell deps convert --from=conda --to=requirements.txt
 ```
 
 ### Poetry and Git repositories
+
+Poetry v1 is supported.
 
 To scan Poetry Projects, Snyk inspects your `pyproject.toml` and `poetry.lock` files.
 
