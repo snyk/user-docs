@@ -17,12 +17,12 @@ SBOM documents can be generated in [CycloneDX](https://cyclonedx.org/) v1.4, v1.
    If you need help in finding these values, see [Switch between Groups and Organizations](../../snyk-admin/groups-and-organizations/switch-between-groups-and-organizations.md), [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../rest-api/authentication-for-api/).
 2. Determine the format you want for the SBOM you will generate.\
    Available options are CycloneDX 1.4 JSON (`cyclonedx1.4+json`), CycloneDX 1.4 XML (`cyclonedx1.4+xml`), CycloneDX 1.5 JSON (`cyclonedx1.5+json`), CycloneDX 1.5 XML (`cyclonedx1.5+xml`), CycloneDX 1.6 JSON (`cyclonedx1.6+json`), CycloneDX 1.6 XML (`cyclonedx1.6+xml`) or SPDX v2.3 JSON (`spdx2.3+json`).
-3. Using any HTTP client, for example, Postman or `curl`, make a request to the endpoint.\
+3. Using any HTTP client, for example, Postman or `curl`, make a request to the endpoint, specifying the latest stable version.\
    Note that the `format` parameter must be URL-encoded.\
    Example: To retrieve a CycloneDX 1.4 JSON document, set `format=cyclonedx1.4%2Bjson` on the query.
 
 ```bash
-$ curl --location 'https://api.snyk.io/rest/orgs/<ORG_ID>/projects/<PROJECT_ID>/sbom?version=2024-03-12&format=<SBOM_FORMAT>' \
+$ curl --location 'https://api.snyk.io/rest/orgs/<ORG_ID>/projects/<PROJECT_ID>/sbom?version=2024-10-15&format=<SBOM_FORMAT>' \
 --header 'Authorization: token <SNYK_API_TOKEN>'
 ```
 
