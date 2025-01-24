@@ -1,32 +1,32 @@
 # Configure Snyk AppRisk Integrations
 
 {% hint style="info" %}
-Snyk AppRisk Essentials is included in Snyk Enterprise.&#x20;
+Snyk Essentials is included in Snyk Enterprise.&#x20;
 {% endhint %}
 
-## Prerequisites for Snyk AppRisk Essentials
+## Prerequisites for Snyk AppRisk
 
-Ensure that you meet the following prerequisites before setting up Snyk AppRisk Essentials:
+Ensure that you meet the following prerequisites before setting up Snyk Essentials:
 
-* You are a Group Administrator for the Group associated with Snyk AppRisk, or you are assigned a Group level role with permissions to View Group and Edit AppRisk.
-* The Group associated with Snyk AppRisk includes organizations that have onboarded Snyk application security products.
-* You have the necessary permissions and authority to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk AppRisk for repository asset discovery.
+* You are a Group Administrator for the Group associated with Snyk Essentials, or you are assigned a Group level role with permissions to View Group and Edit Essentials.
+* The Group associated with Snyk Essentials includes organizations that have onboarded Snyk application security products.
+* You have the necessary permissions and authority to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk Essentials for repository asset discovery.
 
-## Configure Snyk AppRisk and setup SCM integrations
+## Configure Snyk Essentials and setup SCM integrations
 
-Start onboarding AppRisk by identifying all inventory code-based assets and detecting which assets have security controls set up.
+Start onboarding Snyk Essentials by identifying all inventory code-based assets and detecting which assets have security controls set up.
 
-## Access Snyk AppRisk
+## Access Snyk Essentials
 
-You can access Snyk AppRisk from the [Snyk Web UI.](../../../getting-started/snyk-web-ui.md)
+You can access Snyk Essentials from the [Snyk Web UI.](../../../getting-started/snyk-web-ui.md)
 
-* Access Snyk AppRisk from the Group level of your Snyk Group.
+* Access Snyk Essentials from the Group level of your Snyk Group.
 * Ensure you have Group Admin access.
-* Access Group that has Snyk AppRisk enabled.
+* Access Group that has Snyk Essentials enabled.
 
 ## Setup integrations <a href="#setup-integrations" id="setup-integrations"></a>
 
-After you ensure you can correctly access Snyk AppRisk, you can start to build your asset inventory by setting up the integrations.
+After you ensure you can correctly access Snyk Essentials, you can start to build your asset inventory by setting up the integrations.
 
 {% hint style="info" %}
 The scanned information is automatically imported within two hours after enabling all features.&#x20;
@@ -42,12 +42,18 @@ The integrations view can be configured to apply to your needs, meaning that you
 
 After you click on the Integration Hub, a list of the available integrations is displayed. For each integration, you can add one or multiple profiles.&#x20;
 
+The following video shows how to configure integrations for asset management and discovery.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737657000/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-3_-_v1_-_Snyk_Essentials_and_Snyk_AppRisk_Integrations.mp4" %}
+Configure integrations for asset management and discovery (Snyk Essentials and Snyk AppRisk)
+{% endembed %}
+
 ### SCM integrations
 
-Use the Snyk AppRisk Integrations Hub to configure your SCM integrations.&#x20;
+Use the Snyk Essentials Integrations Hub to configure your SCM integrations.&#x20;
 
 {% hint style="warning" %}
-Integration Hub is a distinct integration interface dedicated to Snyk AppRisk, separate from the Organization integrations interface.
+Integration Hub is a distinct integration interface dedicated to Snyk Essentials, separate from the Organization integrations interface.
 {% endhint %}
 
 The integrations at the organization level that facilitate Snyk Code, Snyk Open Source, Snyk Container, and Snyk IaC scanning are typicallly maintained or restricted by or for development. When you set a token at the group level integrations screen, it is intended for security to have a comprehensive view. This token provides broad access to all repositories that developers may not have access to. In a way, you are checking if the security perspective on assets aligns with that of the development teams.
@@ -69,10 +75,10 @@ When setting up a Snyk Broker, there are some questions you need to ask regardin
 * Do you need to update the SCM token to a user that has access to all relevant SCM repositories?
 * Do you have more than 1000 repos?
 
-If you answered Yes to any of the above questions, then you need to deploy a new Snyk Broker to accommodate the Snyk AppRisk SCM connection.&#x20;
+If you answered Yes to any of the above questions, then you need to deploy a new Snyk Broker to accommodate the Snyk Essentials SCM connection.&#x20;
 
 {% hint style="info" %}
-Snyk recommends creating a new Organization in Snyk specifically for the Snyk AppRisk Broker.
+Snyk recommends creating a new Organization in Snyk specifically for the Snyk Essentials Broker.
 {% endhint %}
 
 Navigate to the [Snyk Broker - AppRisk](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.\
@@ -81,7 +87,7 @@ Navigate to the [Snyk Broker - AppRisk](../../../enterprise-setup/snyk-broker/sn
 ### Third-party integrations
 
 {% hint style="info" %}
-The third-party integrations are mostly available only for Snyk AppRisk Pro. As a Snyk AppRisk Essentials user, you can use the third-party integrations marked as available for Snyk AppRisk Essentials, too.
+The third-party integrations are mostly available only for Snyk AppRisk. As a Snyk Essentials user, you can use the third-party integrations marked as available for Snyk Essentials, too.
 {% endhint %}
 
 To set up your third-party integrations, you can use the [Snyk AppRisk Integrations Hub](../../../getting-started/snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors). \

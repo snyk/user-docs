@@ -3,7 +3,7 @@ cover: .gitbook/assets/Snyk General Banner.webp
 coverY: 0
 ---
 
-# What's new in the Snyk docs?
+# What's new in docs?
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
@@ -42,7 +42,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### &#x20;**Snyk AppRisk**&#x20;
 
-* [Risk factors on assets](manage-assets/#inventory-overview) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk Pro customers.
+* [Risk factors on assets](manage-assets/#inventory-overview) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk customers.
 * [Asset inventory components](manage-assets/assets-inventory-components.md#clusters) has been updated to include details on clusters.
 * Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#sonarqube-sast-integration).
 
@@ -113,8 +113,8 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * The **Manage Risk > Analytics** pages have been consolidated to better reflect the two Snyk offerings:
   * [Issues Analytics](manage-risk/enterprise-analytics/issues-analytics.md) - now in Early Access for Snyk Enterprise customers.
-  * [Application Analytics](manage-risk/enterprise-analytics/application-analytics.md) - available only for Snyk AppRisk Pro customers.
-* The [Manage Assets](manage-assets/) documentation has been updated to reflect the addition of Quick filters. Users are only shown quick filters relevant to their entitlement: AppRisk Essentials or AppRisk Pro.
+  * [Application Analytics](manage-risk/enterprise-analytics/application-analytics.md) - available only for Snyk AppRisk customers.
+* The [Manage Assets](manage-assets/) documentation has been updated to reflect the addition of Quick filters. Users are only shown quick filters relevant to their entitlement.
 
 ### **Snyk CLI**
 

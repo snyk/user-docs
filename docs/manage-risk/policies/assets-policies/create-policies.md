@@ -27,8 +27,8 @@ Each policy template has a name, a description, and displays the graphic connect
 
 The following video explains how to use a policy template from the Policies view:
 
-{% embed url="https://youtu.be/-4qux-bsRK4" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737656948/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-5e_-_v1_-_Policy_Editor_Templates.mp4" %}
+Overview of asset policy editor
 {% endembed %}
 
 You can customize the filters and actions or use the template as is. After finishing all the template changes, click the **Save** button to create the new policy.
@@ -49,8 +49,8 @@ Each filter component requires you to specify an asset property. Navigate to the
 
 The following video explains how to create a new policy:
 
-{% embed url="https://youtu.be/OMuyzAM1Omo" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737656963/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-5b_-_v1_-_Policy_Editor.mp4" %}
+Overview of asset policy editor
 {% endembed %}
 
 Each property contains different options for conditions and values:
@@ -92,8 +92,8 @@ You can specify more than one filter component with an **And** or **Or** operato
 
 The following video explains the use of filters and the use of the **And**, **Or** operator.&#x20;
 
-{% embed url="https://youtu.be/W-GDCZVxLIo" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737656952/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-5c_-_v1_-_Policy_and_or_filters.mp4" %}
+Using and/or operators in the asset policy editor
 {% endembed %}
 
 ## **Set actions**

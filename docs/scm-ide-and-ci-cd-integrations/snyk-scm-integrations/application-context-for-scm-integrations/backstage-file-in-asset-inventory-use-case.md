@@ -63,9 +63,3 @@ The following list describes all possible backstage attributes that you can choo
 * **Title** - a name to display for the entity instead of the property. It is an alternative to the metadata name, when the catalog name is too hard to read.
 * **Category** - represents the classification of the repository. The Organization can choose any name or text.
 * **Lifecycle** - specifies the lifecycle state of the component, for example production, experimental, deprecated.
-
-The following video provides an overview of the Backstage file option from the Integration Hub and a quick explanation of the available attributes:
-
-{% embed url="https://www.youtube.com/watch?v=gfOUSE0UhHA" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
-{% endembed %}

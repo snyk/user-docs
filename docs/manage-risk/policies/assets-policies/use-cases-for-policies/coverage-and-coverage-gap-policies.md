@@ -10,8 +10,8 @@ An asset can be covered (if it was scanned a month ago) but, at the same time, c
 
 The following video presents an overview of the coverage and coverage gap filters from the Snyk Web UI.
 
-{% embed url="https://youtu.be/ozdmnb2cXVY" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737656987/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-4b_-_v1_-_Coverage_vs_Coverage_Gap.mp4" %}
+Coverage and coverage gap when filtering or creating asset policies
 {% endembed %}
 
 ## Coverage

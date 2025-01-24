@@ -36,6 +36,6 @@ In the Inventory view, any coverage gap is indicated with strikes through the co
 
 The following video explains how to configure a Coverage policy:
 
-{% embed url="https://youtu.be/Tmoc_qQ8qA8" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737656949/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-5d_-_v1_-_Policy_editor_-_Coverage_policy_example.mp4" %}
+Asset coverage policy example
 {% endembed %}

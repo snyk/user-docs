@@ -14,8 +14,8 @@ Access the Snyk AppRisk policies by positioning yourself at the Group level, sel
 
 The following video presents an overview of the types of policies you can create from the Policies view.
 
-{% embed url="https://youtu.be/79oz_hgMrCE" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737656954/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-5a_-_v1_-_Policy_Overview.mp4" %}
+Overview of asset policies
 {% endembed %}
 
 {% hint style="info" %}

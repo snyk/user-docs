@@ -29,7 +29,7 @@ After you finish setting up an integration, you can see it listed with a Connect
 {% hint style="info" %}
 **Release status**
 
-Veracode for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Veracode for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Prerequisites <a href="#verocode-prerequisites" id="verocode-prerequisites"></a>
@@ -68,13 +68,13 @@ Ensure you are adding a custom field called repoURL:
 {% hint style="info" %}
 **Release status**
 
-Checkmarx for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Checkmarx for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 Use the following instructions to set up your Checkmarx SAST integration. Checkmarx SAST integration is only working for the Checkmarx SAST, we are not yet supporting Checkmarx One.
 
 {% hint style="warning" %}
-Snyk AppRisk Pro does not support the Checkmarx One integration.
+Snyk AppRisk does not support the Checkmarx One integration.
 {% endhint %}
 
 ### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>
@@ -107,7 +107,7 @@ After you have installed and configured Snyk Broker for AppRisk and you successf
 {% hint style="info" %}
 **Release status**
 
-SonarQube for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+SonarQube for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#sonarqube-required-parameters" id="sonarqube-required-parameters"></a>
@@ -132,7 +132,7 @@ SonarQube for Snyk AppRisk Pro is in Early Access and available only with Snyk E
 {% hint style="info" %}
 **Release status**
 
-Nightfall for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Nightfall for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
@@ -150,24 +150,14 @@ Nightfall for Snyk AppRisk Pro is in Early Access and available only with Snyk E
 7. Click the **Done** button.
 8. When the connection is established, the status of the Nightfall integration is changed to **Connected**.
 
-The following video provides an overview of the Nightfall configuration from the Integration Hub:
-
-{% embed url="https://www.youtube.com/watch?v=FJ5fAyMYSUs" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
-{% endembed %}
-
 After you set up your Nightfall integration using the Integration Hub, you can see the secrets detection coverage.
-
-{% embed url="https://www.youtube.com/watch?v=o6TqPMSq1rk" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
-{% endembed %}
 
 ## GitGuardian setup guide
 
 {% hint style="info" %}
 **Release status**
 
-GitGuardian for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+GitGuardian for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 ### Required parameters <a href="#gitguardian-required-parameters" id="gitguardian-required-parameters"></a>
@@ -191,24 +181,14 @@ Ensure that the following permissions are set as READ:
 6. Click the **Done** button.
 7. When the connection is established, the status of the GitGuardian integration is changed to **Connected**.
 
-The following video provides an overview of the GitGuardian configuration from the Integration Hub:
-
-{% embed url="https://www.youtube.com/watch?v=4u4QrJBZTkI" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
-{% endembed %}
-
-After you set up your GitGuardian integration using the Integration Hub, you can see the secrets detection coverage:
-
-{% embed url="https://www.youtube.com/watch?v=zh4c5f_vv1k" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
-{% endembed %}
+After you set up your GitGuardian integration using the Integration Hub, you can see the secrets detection coverage.
 
 ## Dynatrace setup guide
 
 {% hint style="info" %}
 **Release status**
 
-Dynatrace for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Dynatrace for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
@@ -269,7 +249,7 @@ After the Dynatrace runtime data becomes available from the runtime integration,
 {% hint style="info" %}
 **Release status**
 
-Sysdig for Snyk AppRisk Pro is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Sysdig for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).

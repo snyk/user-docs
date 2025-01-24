@@ -14,12 +14,6 @@ The following Snyk functions are available with the Web UI, at Group level:
 * [Manage and customize your policies](snyk-web-ui.md#manage-and-customize-your-policies)
 * [Manage integrations for asset discovery, asset coverage, and issues from third-party vendors](snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors)
 
-The following video presents an overview of Snyk AppRisk Essentials from the Snyk Web UI.
-
-{% embed url="https://youtu.be/zlR0YqtqDbo" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
-
 ### Organizations available for the selected Group
 
 If you navigate to the Group level and select the Organizations page, you will see a list with all the Organizations that you have access to from that Group and the Organization role for each available Organization.
@@ -27,7 +21,7 @@ If you navigate to the Group level and select the Organizations page, you will s
 ### View the assets dashboard
 
 {% hint style="info" %}
-Asset Dashboard is available only for Snyk AppRisk Essentials users. If you use Snyk AppRisk Pro, see [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md).
+Asset Dashboard is available only for Snyk Essentials users. If you use Snyk AppRisk, see [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md).
 {% endhint %}
 
 The Snyk AppRisk Asset Dashboard reporting page provides a comprehensive overview of the security controls associated with your application. It presents critical metrics and data regarding your assets, such as scan coverage and a detailed breakdown of your inventory categorized by asset class, source, and other relevant information. Furthermore, the dashboard includes an extensive global filtering option, enabling users to filter results based on specific applications and owners, using the context data related to the application.
@@ -192,7 +186,7 @@ The Reports page has all report types available at both the Group and Organizati
 ### View and prioritize issues
 
 {% hint style="info" %}
-Issues are available only for Snyk AppRisk Pro users.
+Issues are available only for Snyk Essentials and Snyk AppRisk users.
 {% endhint %}
 
 The [Issues page](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) provides a centralized view of all the issues identified by Snyk with additional asset context. This helps you and your team to better triage and remediate issues in Snyk.

@@ -15,7 +15,7 @@ If your business is small and nimble, Snyk implementation can be achieved in day
 However, for larger, more process-oriented enterprises, the implementation process may take weeks or months and it requires more detailed planning to succeed.&#x20;
 {% endhint %}
 
-The Snyk AppRisk Essentials plan is included in the Snyk Enterprise plan, meaning that you will gain access to the following features:
+The Snyk Essentials plan is included in the Snyk Enterprise plan, meaning that you will gain access to the following features:
 
 * [Coverage control](../../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md) for SCM.
 * [Policy](../../manage-risk/policies/assets-policies/) creation to automatically trigger specific actions.
@@ -24,7 +24,7 @@ The Snyk AppRisk Essentials plan is included in the Snyk Enterprise plan, meanin
 
 {% hint style="info" %}
 If you want to upgrade your plan to Snyk AppRisk Pro, please contact your salesperson. \
-On the [Snyk AppRisk Essentials vs Snyk AppRisk Pro ](../../scan-with-snyk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md)page, you can find more details about the features available for both offerings.
+On the [Snyk Essentials vs Snyk AppRisk ](../../scan-with-snyk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md)page, you can find more details about the features available for both offerings.
 {% endhint %}
 
 ## Implementation strategy overview

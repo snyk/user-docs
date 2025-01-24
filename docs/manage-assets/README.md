@@ -15,13 +15,13 @@ Each inventory layout may include different counts of assets and scanned artifac
 
 The following video presents an overview of the Inventory view from the Snyk Web UI.
 
-{% embed url="https://youtu.be/BIvGd_TCwHw" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737657015/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-4a_-_v1_-_Inventory.mp4" %}
+Reviewing asset inventory
 {% endembed %}
 
 {% hint style="info" %}
 **Release status** \
-Risk factors for Snyk AppRisk Pro are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Risk factors for Snyk AppRisk are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 
 **Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk Pro.
 {% endhint %}

@@ -12,7 +12,7 @@ The GitHub Cloud App does not have pre-configured IP addresses that can be autom
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](github-cloud-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+* [Group level ](github-cloud-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](github-cloud-app.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 ## Organization level - Snyk integrations

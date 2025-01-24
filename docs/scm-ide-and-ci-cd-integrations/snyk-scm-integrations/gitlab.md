@@ -2,7 +2,7 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](gitlab.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk Essentials or Snyk AppRisk Pro. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+* [Group level ](gitlab.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](gitlab.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
 
 ## Organization level - Snyk integrations
@@ -24,7 +24,7 @@ The GitLab integration is available only with Enterprise plans. For more informa
 
 The GitLab integration allows you to:
 
-1. Check for vulnerabilities in your pull requests.&#x20;
+1. Check for vulnerabilities in your pull requests.
 2. From the **Report** page or the **Project** page on the Snyk Web UI, [trigger a Snyk pull request](gitlab.md#fix-vulnerabilities-with-snyk-merge-requests) for the fixes listed.
 3. Receive [email alerts](gitlab.md#receive-email-alerts-for-new-vulnerabilities) when new vulnerabilities that affect your repository arise and fixes for those vulnerabilities are shown.
 4. Receive [email alerts](gitlab.md#receive-email-alerts-for-new-upgrades-or-patches) containing a new pull request if a new upgrade or patch is available for a vulnerability.
@@ -82,7 +82,7 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 
 When viewing a Snyk test report for a Snyk Project that you own or when looking at a GitLab Project that you are watching with Snyk, you see two options for fixing a vulnerability:
 
-* **Fix these vulnerabilities:** generate a Snyk merge request with the minimal changes needed to fix all the Snyk Project's detected vulnerabilities.&#x20;
+* **Fix these vulnerabilities:** generate a Snyk merge request with the minimal changes needed to fix all the Snyk Project's detected vulnerabilities.
 * **Fix this vulnerability:** generate a Snyk merge request on an individual issue that fixes the vulnerability.
 
 You can review the vulnerabilities that will be fixed, change your selection with the checkboxes, and choose to ignore any vulnerabilities that cannot be fixed now before opening the merge request on the **Open a Fix Merge Request** page.
@@ -113,8 +113,7 @@ The Projects will be set to inactive, and you will no longer get alerts, pull re
 
 1. Navigate to the Snyk GitLab integration **Settings**.
 2. At the bottom of the page, select **Remove GitLab**.
-3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.\
-
+3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.\\
 
     <figure><img src="../../.gitbook/assets/2023-08-15_16-36-28.png" alt="Confirm diconnecting from GitLab" width="375"><figcaption><p>Confirm disconnecting from GitLab</p></figcaption></figure>
 
@@ -141,16 +140,16 @@ The Integrations page shows all active integrations, including data from your ex
 #### Pulled entities <a href="#gitlab-pulled-entities" id="gitlab-pulled-entities"></a>
 
 * Users
-* Repositories&#x20;
+* Repositories
 
 #### Integrate using Snyk AppRisk <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
 
-1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+1. Profile name (`mandatory`): Input your integration profile name.
 2. Access Token (`mandatory`):
    * API Token (`mandatory`): Create your GitLab PAT from your GitLab organization. Follow the instructions in [Generate a Personal access token from your GitLab settings section](gitlab.md#generate-a-personal-access-token-from-your-gitlab-settings). Authorize your personal access token if you have configured SAML SSO.
    * Host URL (`mandatory`): The IP/URL of the GitLab server. The default URL is [`https://gitlab.com`](https://gitlab.com)
 3. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk broker for AppRisk.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 4. Verify SSL (`optional`): Enable the option if you want to verify the SSL.
 5. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.

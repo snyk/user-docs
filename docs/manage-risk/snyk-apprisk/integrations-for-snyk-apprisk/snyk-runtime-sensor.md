@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-The Snyk Runtime Sensor for Snyk AppRisk Pro is in Early Access, and is available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+The Snyk Runtime Sensor for Snyk AppRisk is in Early Access, and is available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
 The Snyk Runtime Sensor is a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) that watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.

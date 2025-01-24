@@ -12,9 +12,9 @@ Snyk AppRisk provides:
 * **Tailored security controls**: Define and manage appropriate security and compliance requirements, and verify the correct controls are in place.
 * **Risk-based prioritization**: Assess risk for each app based on application context and best-in-class security analysis and fix guidance to focus developer remediation efforts on issues that matter most to the business.
 
-## Enterprise Analytics
+## Analytics
 
-[Enterprise Analytics](enterprise-analytics/) shows the performance of a company's Application Security program.&#x20;
+[Analytics](enterprise-analytics/) shows the performance of a company's Application Security program.&#x20;
 
 Metrics are reported for the pillars: Exposure, Manage, Prevention, and Coverage. The breakdown of open issues over time is shown in these categories: Baseline, Preventable, Non-preventable, and Other new.&#x20;
 

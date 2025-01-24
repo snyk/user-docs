@@ -25,8 +25,8 @@ The Snyk Consultant will deliver the following services related to the setup of 
 4. [Snyk Code configuration](snyk-jumpstart-services-description.md#snyk-code-configuration)
 5. [Snyk Container configuration](snyk-jumpstart-services-description.md#snyk-container-configuration)
 6. [Snyk IaC configuration](snyk-jumpstart-services-description.md#snyk-iac-configuration)
-7. [Snyk AppRisk Essentials configuration](snyk-jumpstart-services-description.md#snyk-apprisk-essentials-prioritization-configuration)
-8. [Snyk AppRisk Pro configuration](snyk-jumpstart-services-description.md#snyk-apprisk-pro-configuration)
+7. [Snyk Essentials configuration](snyk-jumpstart-services-description.md#snyk-apprisk-essentials-prioritization-configuration)
+8. [Snyk AppRisk configuration](snyk-jumpstart-services-description.md#snyk-apprisk-pro-configuration)
 
 ## Pre-engagement planning and preparation
 
@@ -223,11 +223,11 @@ The customer will be provided with a document that provides a comprehensive over
 | Single Pipeline CI/CD CLI configuration | Configure a single pipeline to test and provide a report for Snyk IaC.                                              |
 | Documentation close-out                 | Gain an understanding of work completed along with a runbook for onboarding additional projects.                    |
 
-## Snyk AppRisk Essentials configuration
+## Snyk Essentials configuration
 
 This portion of the Jumpstart service is part of the platform configuration, and prepares Customers to better operationalize and scale usage of Snyk with broad application visibility and security coverage management.
 
-### Delivery approach - Snyk AppRisk Essentials configuration
+### Delivery approach - Sny Essentials configuration
 
 #### Coverage and visibility configuration
 
@@ -252,17 +252,17 @@ The Snyk Consultant will educate the Customer on how to filter and prioritize is
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, it offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document is an essential guide for customers to realize the full potential of their investment in Snyk.
 
-### Target initiatives - Snyk AppRisk Essentials configuration
+### Target initiatives - Snyk Essentials configuration
 
 <table><thead><tr><th width="382">Snyk AppRisk Prioritization Configuration</th><th width="299">Outcome</th></tr></thead><tbody><tr><td>Coverage and visibility configuration</td><td>SCM integration is configured in AppRisk and two starter policies are created to show coverage gaps and asset classifications respectively.</td></tr><tr><td>Walkthrough of coverage and visibility use cases in AppRisk</td><td>Gain an understanding of how to identify assets that are not currently being scanned by one more Snyk controls, as well as how to group assets and issues based on asset classification.</td></tr><tr><td>Walkthrough of prioritized issues in AppRisk</td><td>Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed.</td></tr></tbody></table>
 
-## Snyk AppRisk Pro configuration
+## Snyk AppRisk configuration
 
-### Delivery approach - Snyk AppRisk Pro configuration
+### Delivery approach - Snyk AppRisk configuration
 
 **Third-party coverage and visibility configuration**
 
-The Snyk Consultant will work with the Customer to configure Snyk AppRisk Pro as follows:
+The Snyk Consultant will work with the Customer to configure Snyk AppRisk as follows:
 
 * Configure one third-party integration (for example, Secrets)
 * Configure an asset policy leveraging newly configured integration
@@ -275,22 +275,22 @@ The Snyk Consultant will work with the Customer to install the Snyk Runtime Sens
 
 The Snyk consultant will provide guidance on how the Customer can add Project tags to Targets so Open Source, Code, and Container Projects are linked for the AppRisk Issues prioritization feature. This will include using a script for tagging SCM-monitored Projects (Open Source and Code) and the CLI for tagging Container Projects.
 
-**Walkthrough of prioritized issues in AppRisk Pro**
+**Walkthrough of prioritized issues in AppRisk**
 
-The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the AppRisk Pro dashboard, using the new risk factors detected by the Snyk Runtime Sensor.
+The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the AppRisk dashboard, using the new risk factors detected by the Snyk Runtime Sensor.
 
 **Documentation close-out**&#x20;
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document sets out practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document is an essential guide for the Customer to realize the full potential of their investment in Snyk.
 
-### Target Initiatives - Snyk AppRisk Pro configuration
+### Target Initiatives - Snyk AppRisk configuration
 
-| Snyk AppRisk Pro Configuration                                               | Outcome                                                                                                                              |
+| Snyk AppRisk Configuration                                                   | Outcome                                                                                                                              |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Third-party coverage and visibility configuration                            | Third-Party integration is configured in AppRisk and a policy is created to show how the new data can be processed by AppRisk Pro.   |
+| Third-party coverage and visibility configuration                            | Third-Party integration is configured in AppRisk and a policy is created to show how the new data can be processed by AppRisk.       |
 | <p>Snyk Runtime Sensor installation</p><p><br></p>                           | Install Snyk Runtime Sensor on a predetermined customer environment based on Snyk System Requirements.                               |
 | Tagging of Projects for the issues prioritization feature (up to 50 targets) | Targets imported through an SCM integration must be tagged with tags that match the CLI-imported Container Projects.                 |
-| Walkthrough of prioritized issues in AppRisk Pro                             | Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard using deployed and loaded package risk factors |
+| Walkthrough of prioritized issues in AppRisk                                 | Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard using deployed and loaded package risk factors |
 | Documentation close-out                                                      | Gain an understanding of work completed                                                                                              |
 
 ## Timeline for Snyk Jumpstart delivery

@@ -52,7 +52,7 @@ How will you provision users and integrate Snyk with your platforms?
 
 ## Snyk AppRisk considerations
 
-Snyk AppRisk Essentials is part of the Snyk Enterprise offering, and it provides discovery and visibility for your application assets and security tool coverage.&#x20;
+Snyk Essentials is part of the Snyk Enterprise offering, and it provides discovery and visibility for your application assets and security tool coverage.&#x20;
 
 When or before you use Snyk AppRisk, you should consider the following items:
 

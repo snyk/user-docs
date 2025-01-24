@@ -5,7 +5,7 @@
 Before you get started, ensure that you meet the following prerequisites:&#x20;
 
 * You are a Snyk Enterprise customer.
-* Your account is entitled with access for Snyk AppRisk Essentials or Snyk AppRisk Pro.
+* Your account is entitled with access for Snyk Essentials or Snyk AppRisk.
 * You are a Group Administrator for the Group associated with Snyk AppRisk, or you are assigned a Group level role with permissions to View Group and Edit AppRisk.&#x20;
 * The Group associated with Snyk AppRisk includes organizations that have onboarded Snyk application security products.
 * You have the necessary permissions and authority to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk AppRisk for repository asset discovery.
@@ -16,10 +16,6 @@ Use a secondary token to have a counterview of everything onboarded using Snyk. 
 Using the secondary token reduces the likelihood of introducing a blindspot from a limited token at the Organization level configuration. \
 The first import, synchronization, can take up to 24 hours to complete.
 {% endhint %}
-
-The following video is an overview of what Snyk AppRisk can offer:
-
-{% embed url="https://www.youtube.com/embed/23y6pEnTfqQ" %}
 
 ## Permissions
 
@@ -41,12 +37,6 @@ Login and authenticate to Snyk using existing mechanisms (SSO, Google SAML, and 
 ## Accessing Snyk AppRisk
 
 Ensure you are at the Group level to access the Snyk AppRisk options. From the Group level you have a centralized security management that enhances security and simplifies security procedures for projects.
-
-The following video presents an overview of the Snyk AppRisk interfaces:
-
-{% embed url="https://www.youtube.com/watch?v=OUoukT5518c" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
 
 Here are the Snyk AppRisk features available from the Snyk Web UI:&#x20;
 
@@ -90,7 +80,7 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
    * `snyk code test` - momentarily, no options are available.
 
 {% hint style="info" %}
-The Asset Dashboard menu option is available only for Snyk AppRisk Essentials users.&#x20;
+The Asset Dashboard menu option is available only for Snyk Essentials users.&#x20;
 
-If you are using Snyk AppRisk Pro, navigate to the [Application Analytics ](../../manage-risk/enterprise-analytics/application-analytics.md)page.
+If you are using Snyk AppRisk, navigate to the [Application Analytics ](../../manage-risk/enterprise-analytics/application-analytics.md)page.
 {% endhint %}

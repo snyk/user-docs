@@ -1,6 +1,6 @@
 # Assets and risk factors for Snyk AppRisk
 
-The capabilities of the Snyk AppRisk Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk AppRisk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) information for the Snyk AppRisk Pro plan.&#x20;
+The capabilities of the Snyk AppRisk Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) information for the Snyk AppRisk plan.&#x20;
 
 * [Assets](./#assets) are analyzed using Snyk insights, focusing on images, Kubernetes resources, and packages to understand how they all interact with each other.
 * [Risk factors](./#risk-factors) are analyzed using Snyk insights and grouped into four main categories:&#x20;
@@ -8,12 +8,6 @@ The capabilities of the Snyk AppRisk Issues menu rely on understanding your appl
   * [Loaded package ](risk-factor-loaded-package.md)
   * [OS conditions](risk-factor-os-condition.md)&#x20;
   * [Public facing](risk-factor-public-facing.md)
-
-The following video presents the main functionalities that you can find in the Snyk AppRisk Issues UI:
-
-{% embed url="https://www.youtube.com/watch?v=MZZINnVmGL0" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)!
-{% endembed %}
 
 ## Assets
 
@@ -51,9 +45,9 @@ By understanding your images, packages, and Kubernetes resources as "application
 You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Issues** UI tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.&#x20;
 
 {% hint style="info" %}
-The Risk Factors are available only for Snyk AppRisk Pro.
+The Risk Factors are available only for Snyk AppRisk.
 
-In the Snyk Web UI, the Issues tab in the Group Settings is available only for Snyk AppRisk Pro.&#x20;
+In the Snyk Web UI, the Issues tab in the Group Settings is available only for Snyk AppRisk.&#x20;
 {% endhint %}
 
 Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](../set-up-insights-for-snyk-apprisk/#prioritize-your-integrations) by customizing the available Insights options from the Group settings.

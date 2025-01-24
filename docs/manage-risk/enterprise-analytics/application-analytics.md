@@ -3,10 +3,10 @@
 {% hint style="info" %}
 **Release status**&#x20;
 
-Application Analytics for Snyk AppRisk Pro is in Early Access and available only with Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Application Analytics for Snyk AppRisk is in Early Access and available only with Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The Analytics menu, available at the tenant level, under the Application Analytics tab (available only for Snyk AppRisk Pro). Application Analytics is designed to provide an in-depth analysis of your AppSec program, highlighting areas for improvement, emerging risks, and previously overlooked vulnerabilities to support AppSec managers and engineering teams.&#x20;
+The Analytics menu, available at the tenant level, under the Application Analytics tab (available only for Snyk AppRisk). Application Analytics is designed to provide an in-depth analysis of your AppSec program, highlighting areas for improvement, emerging risks, and previously overlooked vulnerabilities to support AppSec managers and engineering teams.&#x20;
 
 The dashboard displays essential data such as the status and trends of open issues, control coverage, and repository metadata. It also shows the state of imported assets. It provides a comprehensive and at-a-glance review of information from different viewpoints, such as asset class, application, or team, with a global filter bar to enhance your experience.
 
@@ -16,7 +16,7 @@ Application Analytics enables you to review and explore your AppSec program stat
 You can enhance the security of your application by identifying areas for improvement, recognizing developing risks, and addressing blind spots. The Application Analytics retrieves the data from all the Groups available for the tenant.
 
 {% hint style="info" %}
-If you are using Snyk AppRisk Essentials, navigate to the [asset dashboard](../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) page to learn more about your assets or remain on the  [Analytics](issues-analytics.md) page to explore the detected issues.
+If you are using Snyk Essentials, navigate to the [asset dashboard](../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) page to learn more about your assets or remain on the  [Analytics](issues-analytics.md) page to explore the detected issues.
 {% endhint %}
 
 Harnessing Application Analytics provides answers to questions such as:
@@ -100,12 +100,6 @@ You can select a specific date range for the assets analyzed data by adding the 
 The data in Application Analytics is updated on an hourly basis.
 {% endhint %}
 
-The following video presents the main functionalities of Application Analytics:
-
-{% embed url="https://youtu.be/YQtX2a5vnMA" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
-
 ## Data categories <a href="#data-categories" id="data-categories"></a>
 
 The Application Analytics dashboard focuses on three main data categories:
@@ -127,12 +121,6 @@ The Coverage section is based on the scan category and is not impacted by the se
 
 <figure><img src="../../.gitbook/assets/image (542).png" alt=""><figcaption><p>The Coverage Section</p></figcaption></figure>
 
-The following video presents the Coverage panel within Application Analytics:
-
-{% embed url="https://youtu.be/j6mjL8fYZS0" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
-
 ### Issues
 
 In the Issues section, you have information about the analyzed open issues.
@@ -143,12 +131,6 @@ In the Issues section, you have information about the analyzed open issues.
 You can choose to view the issues based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection. When viewing by application or owner, only the top 5 applications or owners with most issues are displayed.
 
 You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to download it as an image.
-
-The following video presents the Issues panel within Application Analytics:
-
-{% embed url="https://youtu.be/9BXlGXHSaxA" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
 
 ### Assets
 
@@ -161,21 +143,9 @@ You can choose to view the Assets section based on Asset Class, Application, or 
 
 You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to download it as an image.
 
-The following video presents the Assets panel within Application Analytics:
-
-{% embed url="https://youtu.be/SJ1nVsVv9TI" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
-
 ### Metadata completeness
 
 The metadata completeness section provides information on the completeness of metadata from application context sources for your repositories.
 
 * **Repo metadata completeness** - displays the availability of application context metadata across code repositories (learn more about application context metadata [here](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations)).
 * **Repository source distribution** - provides information about the repositories distributed by the type of integration (SCM integrations, third-party integrations). When viewing by application or owner, only the top 5 applications/owners with the most assets will be displayed.
-
-The following video presents the Metadata completeness panel within Application Analytics:
-
-{% embed url="https://youtu.be/a7s7ed2SEZI" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
