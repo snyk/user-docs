@@ -1,10 +1,10 @@
 # Risk factor: OS condition
 
 {% hint style="info" %}
-The OS condition risk factor is available only for Snyk AppRisk Pro users.
+The OS condition risk factor is available only for Snyk AppRisk users.
 {% endhint %}
 
-Some vulnerabilities have specific constraints that must be met for the problem to be exploitable. One such constraint is the operating system. Some vulnerabilities are exploitable only when the affected package is executing on a specific operating system, for example, Windows. Snyk is able to compare the vulnerability condition specified in the package with the operating system used by the runtime environment executing the package.
+Some vulnerabilities have specific constraints that must be met for the problem to be exploitable. One such constraint is the operating system. Some vulnerabilities are exploitable only when the affected package is executing on a specific operating system, for example, Windows. Snyk can compare the vulnerability condition specified in the package with the operating system used by the runtime environment executing the package.
 
 ## Vulnerability OS conditions and risk factors
 
@@ -22,7 +22,7 @@ If the vulnerability condition matches the operating system used by the runtime 
 | Linux              | Windows         | No risk factor         |
 | Windows            | Windows         | Risk factor identified |
 
-When an image is scanned by Snyk Container, the information about which operating system the base of the image is running on is exposed. Therefore, whenever Snyk AppRisk Insights is able to determine that a package is a dependency of the image or that the package has been included in the image, it compares the vulnerability information with the image specification. The same applies to problems identified directly in the image entity.
+When an image is scanned by Snyk Container, the information about which operating system the base of the image is running on is exposed. Therefore, whenever Snyk Issues can determine that a package is a dependency of the image or that the package has been included in the image, it compares the vulnerability information with the image specification. The same applies to problems identified directly in the image entity.
 
 ## Kubernetes Connector integration
 

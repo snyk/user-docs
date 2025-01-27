@@ -2,7 +2,7 @@
 
 Snyk uses holistic application intelligence to help you better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. Users can also prioritize their issues based on asset classification as defined in asset-related policies.&#x20;
 
-If you use Snyk AppRisk, you can access the Issues page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
+If you use Snyk Essentials or Snyk AppRisk, you can access the Issues page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
 
 The Issues page provides a centralized view of all the issues identified by Snyk with additional asset context. This will help empower AppSec teams to better triage and remediate issues in Snyk.
 
@@ -29,7 +29,7 @@ The Snyk approach looks holistically at your application to understand the follo
 
 ## Issues page: Snyk Essentials vs Snyk AppRisk&#x20;
 
-Issues is nested in the main left menu and provides information about the identified issues. Use the available filters to customize and prioritize the issues list.
+**Issues** is nested in the main left menu and provides information about the identified issues. Use the available filters to customize and prioritize the issues list.
 
 {% hint style="info" %}
 The Risk Factor column and filter, and with it, the evidence graph information, are available only for Snyk AppRisk users.&#x20;
@@ -37,11 +37,11 @@ The Risk Factor column and filter, and with it, the evidence graph information, 
 
 **Issues - Snyk Essentials**
 
-<figure><img src="../../.gitbook/assets/issues-apprisk-essentials.png" alt="Issues page - Snyk AppRisk Essentials"><figcaption><p>Issues page - Snyk Essentials</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/issues-apprisk-essentials.png" alt="Issues page - Snyk AppRisk"><figcaption><p>Issues page - Snyk Essentials</p></figcaption></figure>
 
 **Issues - Snyk AppRisk**&#x20;
 
-<figure><img src="../../.gitbook/assets/image (451).png" alt="Issues page - Snyk AppRisk Pro"><figcaption><p>Issues page - Snyk AppRisk </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (451).png" alt="Issues page - Snyk AppRisk"><figcaption><p>Issues page - Snyk AppRisk </p></figcaption></figure>
 
 The insights presented under the Issues menu for Snyk AppRisk work as illustrated in the following example.&#x20;
 

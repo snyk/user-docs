@@ -1,4 +1,4 @@
-# Using Snyk AppRisk
+# Using Snyk Essentials or Snyk AppRisk
 
 ## Prerequisites
 
@@ -8,11 +8,11 @@ Before you get started, ensure that you meet the following prerequisites:&#x20;
 * Your account is entitled with access for Snyk Essentials or Snyk AppRisk.
 * You are a Group Administrator for the Group associated with Snyk AppRisk, or you are assigned a Group level role with permissions to View Group and Edit AppRisk.&#x20;
 * The Group associated with Snyk AppRisk includes organizations that have onboarded Snyk application security products.
-* You have the necessary permissions and authority to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk AppRisk for repository asset discovery.
+* You have the necessary permissions and authority to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk Essentials or Snyk AppRisk for repository asset discovery.
 
 {% hint style="info" %}
-When you integrate a Git code repository with Snyk AppRisk, you should use a secondary token with a broad, complete view of the code repository, not only of what you imported into Snyk. \
-Use a secondary token to have a counterview of everything onboarded using Snyk. \
+When you integrate a Git code repository with Snyk Essentials or Snyk AppRisk, you should use a secondary token with a broad, complete view of the code repository, not only of what you imported into Snyk. \
+Use a secondary token to counterview everything onboarded using Snyk. \
 Using the secondary token reduces the likelihood of introducing a blindspot from a limited token at the Organization level configuration. \
 The first import, synchronization, can take up to 24 hours to complete.
 {% endhint %}

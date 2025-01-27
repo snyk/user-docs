@@ -2,8 +2,8 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](bitbucket-cloud-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-* [Organization level](bitbucket-cloud-app.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](bitbucket-cloud-app.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
+* [Organization level](bitbucket-cloud-app.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integrations
 
@@ -164,6 +164,6 @@ To disable this integration, in **Organization settings** > **Integrations > Sou
 Disconnecting the integration from the Snyk side does not uninstall the app from your workspace in Bitbucket Cloud. To uninstall the Bitbucket app, navigate to your workspace settings in Bitbucket.org --> Installed Apps and remove the **Snyk Security for Bitbucket Cloud** app.
 {% endhint %}
 
-## Group level - Snyk AppRisk integrations
+## Group level - Snyk Essentials integrations
 
 The Bitbucket Cloud App is not supported at the Group level. The available options at the Group level are BitBucket Cloud and BitBucket Server. See the [BitBucket setup guide](bitbucket-cloud.md#bitbucket-setup-guide) for installation instruction on both of them.

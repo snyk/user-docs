@@ -1,7 +1,7 @@
 # Set up Insights: Kubernetes connector
 
 {% hint style="info" %}
-The Insights feature is available only with Snyk AppRisk Pro.
+The Set up Insights option is available only with Snyk AppRisk.
 
 Snyk recommends installing the [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) to achieve the most effective integration and access its continuously expanded set of features.
 {% endhint %}

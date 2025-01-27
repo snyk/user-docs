@@ -11,7 +11,7 @@ Snyk AppRisk operates at the Group level and provides a holistic view of all the
 ## Funnel View
 
 {% hint style="info" %}
-The Funnel view is available only for Snyk AppRisk users.
+The Funnel view is available only to Snyk AppRisk users.
 {% endhint %}
 
 The funnel view is a visual representation of your application's issues and risk factors. It allows you to filter the list of issues by specific risk factors or a combination of them. The **Deployed** and **Public facing** risk factors are clickable filters.
@@ -38,7 +38,7 @@ By using the filters above the table view, you can filter your issues by the fol
 * **Add filter** - filter issues based on additional options. Click the **Show all project filters** option to view all available filters, organized by General, Assets, Issues, Projects.
 
 {% hint style="info" %}
-The Risk Factor filter is available only for Snyk AppRisk users.
+The Risk Factor filter is available only to Snyk AppRisk users.
 {% endhint %}
 
 You can also add a variety of filters that you consider relevant for any particular scenario.

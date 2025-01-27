@@ -23,7 +23,7 @@ The Snyk Essentials plan is included in the Snyk Enterprise plan, meaning that y
 * [Customized analytics](../../manage-risk/enterprise-analytics/) and reports about the application.&#x20;
 
 {% hint style="info" %}
-If you want to upgrade your plan to Snyk AppRisk Pro, please contact your salesperson. \
+If you want to upgrade your plan to Snyk AppRisk, please contact your salesperson. \
 On the [Snyk Essentials vs Snyk AppRisk ](../../scan-with-snyk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md)page, you can find more details about the features available for both offerings.
 {% endhint %}
 

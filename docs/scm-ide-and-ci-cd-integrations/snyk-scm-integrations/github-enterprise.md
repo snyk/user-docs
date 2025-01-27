@@ -2,8 +2,8 @@
 
 When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](github-enterprise.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. To set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-* [Organization level](github-enterprise.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](github-enterprise.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. To set up integrations for Snyk Essentials, use the Integrations menu at the Group level.
+* [Organization level](github-enterprise.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials and Snyk AppRisk.
 
 ## Organization level - Snyk integrations
 
@@ -174,17 +174,17 @@ After GitHub Enterprise is disconnected, imported Snyk Projects will be set to i
 
 You can re-connect anytime; however, re-initiating GitHub Enterprise projects for monitoring requires setting up the integration again.
 
-## Group level  - Snyk AppRisk integrations
+## Group level  - Snyk Essentials integrations
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the [Integration Hub](../../getting-started/snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors).
 
-### GitHub setup guide for Snyk AppRisk
+### GitHub setup guide for Snyk Essentials
 
 {% hint style="info" %}
-If you used GitHub Apps for your SCM integrations at the Snyk Organization level, Snyk AppRisk requires an overview of your GitHub Organization. This means that the GitHub integration in Snyk AppRisk uses an API token as an authentication method to onboard your GitHub Organization.&#x20;
+If you used GitHub Apps for your SCM integrations at the Snyk Organization level, Snyk Essentials requires an overview of your GitHub Organization. This means that the GitHub integration in Snyk Essentials uses an API token as an authentication method to onboard your GitHub Organization.&#x20;
 {% endhint %}
 
-#### Pulled entities by Snyk AppRisk from GitHub <a href="#github-pulled-entities" id="github-pulled-entities"></a>
+#### Pulled entities by Snyk Essentials from GitHub <a href="#github-pulled-entities" id="github-pulled-entities"></a>
 
 * Repositories
 * Builds - only when using GitHub Actions.
@@ -194,13 +194,13 @@ If you used GitHub Apps for your SCM integrations at the Snyk Organization level
 
 Ensure you meet all prerequisites listed on the [GitHub and GitHub Enterprise permission requirements](./#github-and-github-enterprise-permission-requirements) page.
 
-#### Integrate GitHub using Snyk AppRisk <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
+#### Integrate GitHub using Snyk Essentials <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. Organizations (`mandatory`): Input the names of all the relevant GitHub organizations.
 
 {% hint style="info" %}
-If you have changed the name of your GitHub organization, copy the new name from the GitHub URL and paste it into the **GitHub Organizations** field in the Snyk AppRisk Integration Hub.
+If you have changed the name of your GitHub organization, copy the new name from the GitHub URL and paste it into the **GitHub Organizations** field in the Snyk Essentials Integration Hub.
 {% endhint %}
 
 3. Access Token (`mandatory`): Create your GitHub PAT from your GitHub Organization.&#x20;
@@ -208,7 +208,7 @@ If you have changed the name of your GitHub organization, copy the new name from
 * Generate your GitHub PAT by following the instructions in the [Generate a Personal access token from your GitHub settings](github-enterprise.md#generate-a-personal-access-token-from-your-github-settings) section.&#x20;
 * Authorize your GitHub PAT if you have configured SAML SSO. See the [How to authorize your Personal Access Token and enable SSO](github-enterprise.md#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
 
-4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk broker for AppRisk.
+4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
    * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.

@@ -1,7 +1,7 @@
 # Set up Insights for Snyk AppRisk
 
 {% hint style="info" %}
-The Insights feature is available only with Snyk AppRisk Pro.
+The Insights feature is available only with Snyk AppRisk.
 {% endhint %}
 
 ## Prerequisites for prioritization with Snyk AppRisk
@@ -11,7 +11,7 @@ Customize the Snyk AppRisk prioritization using the Set up Insights option and a
 ### What risk factors do I need?
 
 {% hint style="info" %}
-The Risk Factors are available only with Snyk AppRisk Pro.
+The Risk Factors are available only with Snyk AppRisk.
 {% endhint %}
 
 Snyk AppRisk Insights product operates by providing you with the following risk factors for your vulnerabilities:&#x20;

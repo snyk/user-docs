@@ -44,11 +44,11 @@ You can refer to the table below to verify the availability and compatibility of
 
 ### Using the Integration Hub
 
-Use the [Integration Hub](../getting-started/snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors) page to onboard integrations and populate Snyk AppRisk with data from SCM tools.
+Use the [Integration Hub](../getting-started/snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors) page to onboard integrations and populate Snyk Essentials with data from SCM tools.
 
 You can add an integration by following these steps:
 
-1. Open AppRisk and navigate to the Integrations page.
+1. Navigate to the **Integrations** page at the Group level.
 2. Click **Integration Hub**.
 3. Click **Add** on the integration you want to connect.
 4. Configure your connection and click **Done**.

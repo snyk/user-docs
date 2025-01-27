@@ -3,7 +3,7 @@
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
 * [Group level ](github.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. To set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-* [Organization level](github.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Organization level](github.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integrations
 
@@ -259,6 +259,6 @@ If you already have multiple Snyk Organizations with Projects imported using the
 
 You may want to [disconnect your GitHub integration](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github#disconnecting-the-github-integration) to avoid unintentionally importing Projects using the GitHub integration in the future. Because the GitHub integration is configured per user account, rather than per Organization, each user who has set up the GitHub integration must complete this disconnection process individually.
 
-## Group level - Snyk AppRisk integrations
+## Group level - Snyk Essentials integrations
 
-Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
+Navigate to the [GitHub setup guide for Snyk Essentials ](github-enterprise.md#group-level-snyk-essentials-integrations)for all details on how to set up the GitHub integration for Snyk Essentials.

@@ -6,7 +6,7 @@ Identifying and setting coverage policies allows your team to define where certa
 
 The following example filters out assets that should have Snyk Open Source and Snyk Code security controls in place and then sets the coverage policies.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (10).png" alt="AppRisk - Setting up a Coverage Control policy"><figcaption><p>Snyk AppRisk - Setting up a Coverage Control policy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (10).png" alt="AppRisk - Setting up a Coverage Control policy"><figcaption><p>Snyk Essentials or Snyk AppRisk - Setting up a Coverage Control policy</p></figcaption></figure>
 
 To follow the example, these are the filters you need to apply:
 

@@ -2,8 +2,8 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](bitbucket-cloud.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-* [Organization level](bitbucket-cloud.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](bitbucket-cloud.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
+* [Organization level](bitbucket-cloud.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integrations
 
@@ -187,7 +187,7 @@ _Go to timestamp 2:34 to jump right into the demo._
 How to migrate to the new Snyk Bitbucket Cloud App integration
 {% endembed %}
 
-## Group level - Snyk AppRisk integrations
+## Group level - Snyk Essentials integrations
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
@@ -195,7 +195,7 @@ The Integrations page shows all active integrations, including data from your ex
 
 {% hint style="info" %}
 Bitbucket Server and Bitbucket Cloud do not support automatic language detection. You can manually add language tags to a Bitbucket Cloud repository.\
-After manually setting up the languages in your Bitbucket project, Snyk can automatically detect and ingest all those languages in your Snyk AppRisk application.
+After manually setting up the languages in your Bitbucket project, Snyk can automatically detect and ingest all those languages in your Snyk Essentials application.
 {% endhint %}
 
 #### Pulled entities <a href="#bitbucket-pulled-entities" id="bitbucket-pulled-entities"></a>
@@ -232,7 +232,7 @@ Create a BitBucket app password by following these steps:
 
 **Use a Broker Token**
 
-Use a Broker Token (`mandatory`) to create and add your Broker token if you use Snyk broker for AppRisk.
+Use a Broker Token (`mandatory`) to create and add your Broker token if you use Snyk Broker.
 
 * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
 * Copy and paste the Broker token on the integration setup menu from the Integration Hub.

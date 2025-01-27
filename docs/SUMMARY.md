@@ -709,7 +709,7 @@
           * [Step 3: Create and scan a Cloud Environment for Google (API)](scan-with-snyk/snyk-iac/cloud-platforms-integrations/google-cloud-integration/google-cloud-integration-api/step-3-create-and-scan-a-snyk-cloud-environment-for-google-api.md)
   * [Snyk Essentials and Snyk AppRisk](scan-with-snyk/snyk-apprisk/README.md)
     * [Snyk Essentials vs Snyk AppRisk](scan-with-snyk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md)
-    * [Using Snyk AppRisk](scan-with-snyk/snyk-apprisk/using-snyk-apprisk.md)
+    * [Using Snyk Essentials or Snyk AppRisk](scan-with-snyk/snyk-apprisk/using-snyk-apprisk.md)
   * [Snyk Tools](scan-with-snyk/snyk-tools/README.md)
     * [Tool: snyk-api-import](scan-with-snyk/snyk-tools/tool-snyk-api-import/README.md)
       * [Creating Organizations in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md)

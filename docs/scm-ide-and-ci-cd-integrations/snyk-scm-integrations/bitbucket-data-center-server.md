@@ -2,8 +2,8 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](bitbucket-data-center-server.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-* [Organization level](bitbucket-data-center-server.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](bitbucket-data-center-server.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
+* [Organization level](bitbucket-data-center-server.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integrations
 
@@ -124,8 +124,8 @@ Usually, migrating from Bitbucket Server to Bitbucket Data Center requires no fu
 
 Action is required only when the new Bitbucket Data Center instance URL differs from the Bitbucket Server instance URL. In this case, you must reconnect the integration from the Bitbucket Server-Bitbucket Data Center integration page in Snyk.io. To reconnect, follow the steps in [How to set up a Bitbucket DC/Server Integration](bitbucket-data-center-server.md#how-to-set-up-a-bitbucket-dc-server-integration).
 
-## Group level - Snyk AppRisk integrations
+## Group level - Snyk Essentials integrations
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
-Navigate to the [BitBucket setup guide for Snyk AppRisk ](bitbucket-cloud.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk AppRisk.
+Navigate to the [BitBucket setup guide for Snyk Essentials ](bitbucket-cloud.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk Essentials or Snyk AppRisk.

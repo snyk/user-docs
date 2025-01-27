@@ -2,11 +2,11 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk AppRisk or Snyk AppRisk.&#x20;
-* [Organization level](azure-repositories-tfs.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk.&#x20;
+* [Organization level](azure-repositories-tfs.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 {% hint style="info" %}
-If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
 {% endhint %}
 
 ## Organization level - Snyk integrations
@@ -111,7 +111,7 @@ After repositories are imported, a confirmation appears in green at the top of t
 The Azure Repository integration works like the other [Snyk SCM integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../snyk-admin/snyk-projects/) documentation.
 {% endhint %}
 
-## Group level - Snyk AppRisk integrations
+## Group level - Snyk Essentials integrations
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
@@ -119,22 +119,22 @@ The Integrations page shows all active integrations, including data from your ex
 
 #### Pulled entities <a href="#azure-devops-pulled-entities" id="azure-devops-pulled-entities"></a>
 
-* Repository - the pulled entity retrieved by Snyk AppRisk.
+* Repository - the pulled entity retrieved by Snyk Essentials.
 
-#### Integrate using Snyk AppRisk <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
+#### Integrate using Snyk Essentials <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
 3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings.&#x20;
    * Access Token (`mandatory`): Create and add your Access token by following the instructions from the  [Generate a Personal access token from your Azure DevOps settings](azure-repositories-tfs.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
    * API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
-4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk broker for AppRisk.
+4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
    * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
 
 {% hint style="warning" %}
-The following PAT token permissions requirements are for Snyk AppRisk integrations. For SCM integration, see the [Azure Respositories (TFS) permissions requirements](./#azure-repositories-tfs-permission-requirements) on the Snyk SCM integrations pages.
+The following PAT token permissions requirements are for Snyk Essentials integrations. For SCM integration, see the [Azure Respositories (TFS) permissions requirements](./#azure-repositories-tfs-permission-requirements) on the Snyk SCM integrations pages.
 {% endhint %}
 
 #### Generate a Personal access token from your Azure DevOps settings

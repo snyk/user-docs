@@ -1,6 +1,6 @@
 # Create policies
 
-Snyk AppRisk includes a powerful policy editor for creating and modifying policies.
+Snyk Essentials or Snyk AppRisk includes a powerful policy editor for creating and modifying policies.
 
 There are two steps to building policies:
 
@@ -57,7 +57,7 @@ Each property contains different options for conditions and values:
 
 | Property                     | Conditions Values                                                                                                                         | Values                                                                                                                |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Application\*                | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | all available applications for which you have configured the application context in Snyk AppRisk.                     |
+| Application\*                | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | all available applications for which you have configured the application context in Snyk Essentials or Snyk AppRisk.  |
 | Asset ID                     | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
 | Asset name                   | <ul><li>is</li><li>is not</li><li>contains</li><li>does not contain</li><li>starts with</li><li>ends with</li></ul>                       | \[string]                                                                                                             |
 | Asset type                   | <ul><li>Is one of</li><li>Is not one of</li></ul>                                                                                         | <ul><li>Package</li><li>Repository</li><li>Scanned artifact</li></ul>                                                 |
@@ -88,7 +88,7 @@ Each property contains different options for conditions and values:
 You can specify more than one filter component with an **And** or **Or** operator.\
 
 
-<figure><img src="../../../.gitbook/assets/Create policy New UI.png" alt="AppRisk - Create new policy"><figcaption><p>Snyk AppRisk - Create new policy</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Create policy New UI.png" alt="AppRisk - Create new policy"><figcaption><p>Snyk Essentials or Snyk AppRisk - Create new policy</p></figcaption></figure>
 
 The following video explains the use of filters and the use of the **And**, **Or** operator.&#x20;
 
@@ -106,8 +106,8 @@ After defining filter components, you need to define the actions that the policy
 * **Set Asset Tag** - Sets a tag on the matched assets. Removing the policy or turning in off will remove the tags of this policy from the relevant assets.
 * **Set Coverage Control Policy** - Sets a control on filtered assets that checks whether selected security products are scanning assets, optionally within a given timeframe. Assets that fail this control will be marked accordingly on inventory pages. This control applies the OR logic across products.
 
-<figure><img src="../../../.gitbook/assets/Policy - Nwe UI.png" alt="AppRisk - Set a policy action"><figcaption><p>Snyk AppRisk - Set a policy action </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Policy - Nwe UI.png" alt="AppRisk - Set a policy action"><figcaption><p>Snyk Essentials or Snyk AppRisk - Set a policy action </p></figcaption></figure>
 
 The editor supports multiple flows for the same policy. The flows can be independent or intersect.
 
-<figure><img src="../../../.gitbook/assets/Multiple actions - New UI.png" alt="AppRisk - Set multiple policy actions "><figcaption><p>Snyk AppRisk - Set multiple policy actions </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Multiple actions - New UI.png" alt="AppRisk - Set multiple policy actions "><figcaption><p>Snyk Essentials or Snyk AppRisk - Set multiple policy actions </p></figcaption></figure>

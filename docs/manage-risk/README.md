@@ -2,15 +2,17 @@
 
 Snyk has several features to help you manage Application Security (AppSec) risk.
 
-## Snyk AppRisk
+## Snyk Essentials and Snyk AppRisk
 
-[Snyk AppRisk](../scan-with-snyk/snyk-apprisk/) enables Application Security teams to run a full developer security program, covering use cases under Application Security Posture Management (ASPM).&#x20;
+Snyk Essentials or Snyk AppRisk enables Application Security teams to run a full developer security program, covering use cases under Application Security Posture Management (ASPM).&#x20;
 
 Snyk AppRisk provides:
 
 * **Automated app asset discovery**: Continually discover application assets and classify them by business context, ensuring security is in sync with development.
 * **Tailored security controls**: Define and manage appropriate security and compliance requirements, and verify the correct controls are in place.
 * **Risk-based prioritization**: Assess risk for each app based on application context and best-in-class security analysis and fix guidance to focus developer remediation efforts on issues that matter most to the business.
+
+See the [Snyk Essentials vs Snyk AppRisk](../scan-with-snyk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md) page for more details about the differences between the two offerings.
 
 ## Analytics
 

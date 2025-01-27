@@ -1,6 +1,6 @@
 # Backstage file in Asset Inventory - Use case
 
-After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk AppRisk starts enriching your repository assets (the [All Assets](../../../manage-assets/#inventory-overview) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
+After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](../../../manage-assets/#inventory-overview) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
 
 Use the Backstage catalog to enrich the repository assets and to define the component entity. For this type of situation, a component is defined as a software component, like a service, repository, website, library, and so on.&#x20;
 
@@ -15,8 +15,8 @@ Components have several attributes and most of them are optional:
 
 The Backstage data is dynamic and may change over time:
 
-* If new commits or updates are made on the `catalog-info.yaml` file, then Snyk AppRisk updates the asset attribute for that specific repository asset.
-* If the`catalog-info.yaml` file is removed from the repository, then Snyk AppRisk deletes the asset attribute from that specific repository assets.
+* If new commits or updates are made on the `catalog-info.yaml` file, then Snyk Essentials updates the asset attribute for that specific repository asset.
+* If the`catalog-info.yaml` file is removed from the repository, then Snyk Essentials deletes the asset attribute from that specific repository assets.
 
 {% hint style="info" %}
 You can use quotes (`""`) to escape keys that contain periods (`.`), for example`"`[`example.com`](http://example.com/)`".owner`.

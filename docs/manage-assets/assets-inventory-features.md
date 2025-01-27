@@ -2,12 +2,12 @@
 
 {% hint style="info" %}
 **Release status** \
-Risk factors for Snyk AppRisk Pro are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk Pro. If you want to set it up in your Group, contact your Snyk account team.
+Risk factors for Snyk AppRisk are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 
 **Runtime discovered** and **Runtime last seen** filters take their release status from the&#x20;
 {% endhint %}
 
-Snyk AppRisk provides powerful search and filtering capabilities to help you narrow in on assets for investigation and mitigation.
+Snyk Essentials and Snyk AppRisk provide powerful search and filtering capabilities to help you narrow down assets for investigation and mitigation.
 
 ## Search capabilities
 
@@ -19,8 +19,8 @@ Use the search bar to search for specific keywords across various asset properti
 
 Quick filters are pre-defined filters to help you quickly focus on important assets. Here are the available quick filters:
 
-* Assets with risk factors `Deployed` and `Public facing` and `No Coverage`: displays only the assets that have both the `Deployed` and `Public facing` risk factors available, and with a coverage gap on any of the selected Snyk products (available in Snyk AppRisk Pro only).
-* Assets with risk factor `Deployed` and `No Coverage`: displays only the assets that have both the `Deployed` risk factor available, and with a coverage gap on any of the selected Snyk products  (available in Snyk AppRisk Pro only).
+* Assets with risk factors `Deployed` and `Public facing` and `No Coverage`: displays only the assets that have both the `Deployed` and `Public facing` risk factors available, and with a coverage gap on any of the selected Snyk products (available only with Snyk AppRisk).
+* Assets with risk factor `Deployed` and `No Coverage`: displays only the assets that have both the `Deployed` risk factor available, and with a coverage gap on any of the selected Snyk products  (available only with Snyk AppRisk).
 * Assets with Repository freshness Active and No Coverage: displays only the assets from active repositories and with a coverage gap on any of the selected Snyk products.
 * Assets with `Asset Class A` and `No Coverage:`displays only the assets that are Class A and with a coverage gap on any of the selected Snyk products.
 
@@ -43,12 +43,12 @@ Click Filters from the top left side of the screen. A pop-up is displayed allowi
 You can add as many filters as needed. To add another filter click **Add Filter,** set the condition as **And** or **Or** and customize the **Property**, **Condition**, and **Value** fields.&#x20;
 
 {% hint style="info" %}
-If you use Snyk AppRisk for the first time, start with the **Coverage** filter to determine where you have Snyk Implemented.
+If you use Snyk Essentials or Snyk AppRisk for the first time, start with the **Coverage** filter to determine where you have Snyk implemented.
 {% endhint %}
 
 You can filter the information for all the inventory layouts and can use the following filters available under the **Advanced filters** section:
 
-* **Application\*** - the list of the applications for which you have configured the application context catalog in Snyk AppRisk.
+* **Application\*** - the list of the applications for which you have configured the application context catalog in Snyk Essentials.
 * **Asset ID** - the unique identifier of the asset.
 * **Asset name** - the name of the asset.
 * **Asset type** - repository, package, or scanned artifact.
@@ -74,7 +74,7 @@ You can filter the information for all the inventory layouts and can use the fol
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
-  * **N/A**: There are no commits detected by Snyk AppRisk.
+  * **N/A**: There are no commits detected by Snyk Essentials.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.
@@ -87,7 +87,7 @@ N/A indicates that the repository was detected through a Snyk scan but not direc
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.
 
-**\***All filters marked with `*` are visible only to the users who configured the [application context](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) catalog for their SCM integrations.
+**\***&#x41;ll filters marked with `*` are visible only to the users who configured the [application context](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) catalog for their SCM integrations.
 
 After applying the filters, the asset list will display only the assets that match the specified conditions, without a hierarchical structure.
 

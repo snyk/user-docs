@@ -1,12 +1,12 @@
 # Risk factor: Deployed
 
 {% hint style="info" %}
-The Deployed risk factor is available only for Snyk AppRisk Pro users.
+The Deployed risk factor is available only for Snyk AppRisk users.
 {% endhint %}
 
 Any deployed code increases the risk of exploitation of your application and business.
 
-Understanding what code is deployed and where enables you to adopt a remediation strategy focused on reducing your risk surface area from running code.
+Understanding what code is deployed and where enables you to adopt a remediation strategy that reduces your risk surface area from running code.
 
 ## Types of integration
 
@@ -16,7 +16,7 @@ The Deployed risk factor works with the Kubernetes Connector, the Snyk Runtime S
 
 Snyk AppRisk determines that a container image is deployed by looking for a match between the running images on the Kubernetes cluster and the created Snyk Container Projects.
 
-Snyk AppRisk uses Kubernetes state information to extract Docker image identifiers that are currently being executed. The status of a Kubernetes container has image names that are being run by the Kubernetes runtime. A search is performed on the database of known Docker images to find matching names. When the image names are matched, Snyk can display this information in a graph. The graph shows the relationship between the image and the container. \
+Snyk AppRisk uses Kubernetes state information to extract Docker image identifiers that are being executed. The status of a Kubernetes container has image names that are being run by the Kubernetes runtime. A search is performed on the database of known Docker images to find matching names. When the image names are matched, Snyk can display this information in a graph. The graph shows the relationship between the image and the container. \
 
 
 <figure><img src="https://lh6.googleusercontent.com/BoYMeFGbzjUmNmXbmtrklBcl9LLm9S94mwJWkrFA_5E5WIO07BsS3Zv-fbGBlXkNAx4oGnbBtzFijWTxUQbsnlzJI2QqprUJWPevpwBybhmwtzQayYnmW6_Qvhddgz1_vdy-NDZgQKUQhmxnY54xkrI" alt="A vulnerability in a deployed image"><figcaption><p>A vulnerability in a deployed image</p></figcaption></figure>

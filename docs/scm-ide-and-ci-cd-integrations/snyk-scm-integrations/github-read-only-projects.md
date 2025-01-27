@@ -2,8 +2,8 @@
 
 When you want to add new integrations to your  Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](github-read-only-projects.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
-* [Organization level](github-read-only-projects.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk AppRisk.
+* [Group level ](github-read-only-projects.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk Essentials, use the Integrations menu at the Group level.
+* [Organization level](github-read-only-projects.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 Snyk offers GitHub Read-only Projects, providing the ability to monitor a public GitHub repository that is not owned by your Organization.
 
@@ -34,6 +34,6 @@ Import a read-only Project using the **Add project** **> Monitor public GitHub r
 
 <figure><img src="../../.gitbook/assets/github_readonly_steps 2 &#x26; 3_18july2022.png" alt="Add repo and Import repository or repositories"><figcaption><p>Add repo and Import repository or repositories</p></figcaption></figure>
 
-## Group level - Snyk AppRisk integrations
+## Group level - Snyk Essentials integrations
 
-Navigate to the [GitHub setup guide for Snyk AppRisk ](github-enterprise.md#github-setup-guide-for-snyk-apprisk)for all details on how to set up the GitHub integration for Snyk AppRisk.
+Navigate to the [GitHub setup guide for Snyk Essentials ](github-enterprise.md#group-level-snyk-essentials-integrations)for all details on how to set up the GitHub integration for Snyk Essentials.

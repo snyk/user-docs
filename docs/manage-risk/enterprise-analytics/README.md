@@ -14,7 +14,7 @@ The Analytics view is structured as follows:
 {% hint style="info" %}
 **Feature availability**
 
-Application Analytics is available only for Snyk AppRisk Pro users. &#x20;
+Application Analytics is available only to Snyk AppRisk users. &#x20;
 {% endhint %}
 
 The following table presents an overview of the features available for both Issues Analytics and Application Analytics.
