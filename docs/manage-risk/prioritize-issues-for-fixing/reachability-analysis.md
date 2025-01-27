@@ -3,12 +3,12 @@
 {% hint style="info" %}
 **Release status**
 
-Reachability analysis is in Early Access for some integrations and languages.
+Reachability is now in General Availability (GA) status for certain [integrations and programming languages](reachability-analysis.md#supported-languages-and-integrations).
 
-For information on how to enable the feature for supported integrations and languages, see [Snyk Preview](../../snyk-admin/snyk-preview.md).
+&#x20;Snyk is expanding its reachability capabilities by adding more integrations and languages, which are available in Early Access and can be enabled through [Snyk Preview](../../snyk-admin/snyk-preview.md).
 {% endhint %}
 
-Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (e.g. functions, classes, modules, annotations, etc.) related to the vulnerability, thus raising the chances of that vulnerability being exploitable in the context of your application.
+Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (e.g. functions, classes, modules, annotations, etc.) related to the vulnerability, thus raising the chances of that vulnerability being exploited in the context of your application.
 
 Reachability analysis can be used as a standalone signal to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.&#x20;
 
@@ -104,8 +104,8 @@ Risk Score is available on the Projects page and through the API and Reports.&#x
 Snyk uses a combination of security expert analysis, program analysis, and various AI techniques to determine the reachability of a vulnerability, including these steps of analysis:&#x20;
 
 1. **Enriching vulnerabilities with the patches applied to fix them** - as part of the Snyk vulnerability curation process, Snyk references the fix commit that the maintainer applied.&#x20;
-2. **Related elements analysis**- Based on the commit fix, Snyk uses DeepCode AI program analysis to analyze the code elements and other parameters related to the vulnerability.&#x20;
-3. **Root Cause analysis** - Snyk uses DeepCode AI and NLP techniques to automatically rank the related code elements by their chances of being the root cause of the vulnerability.  &#x20;
+2. **Related elements analysis** - Based on the commit fix, Snyk uses DeepCode AI program analysis to analyze the code elements and other parameters related to the vulnerability.&#x20;
+3. **Root Cause analysis** - Snyk uses DeepCode AI and Natural language processing (NLP) techniques to automatically rank the related code elements by their chances of being the root cause of the vulnerability.  &#x20;
 4. **Reachability analysis** -  As issues are found in your application by a Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.&#x20;
 5. **Security experts supervision** - Snyk security experts will manually verify and mark elements as root causes in order to make the entire analysis more accurate over time
 
