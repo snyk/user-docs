@@ -644,13 +644,13 @@ Snyk was unable to find supported files.
 
 ### [SNYK-CODE-0007](#snyk-code-0007)
 
-#### Rule extension already exists for the Group
+#### Sast Rule extension already exists for the Group
 
-A Rule extension with the same type and attributes already exists
+A Sast Rule extension with the same type and attributes already exists
 for the given Group.
 
-Either modify the existing Rule extension or create a new
-Rule extension with a different type or attributes.
+Either modify the existing Sast Rule extension or create a new
+Sast Rule extension with a different type or attributes.
 
 **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
@@ -659,7 +659,7 @@ Rule extension with a different type or attributes.
 
 #### Organization relationships must be unique
 
-Each Org relationship to a Snyk Code Rule extention must be unique.
+Each Org relationship to a Snyk Sast Rule extension must be unique.
 
 Make sure each Org in relationships has a different ID.
 
@@ -670,7 +670,7 @@ Make sure each Org in relationships has a different ID.
 
 #### Group relationship must match the Group in the requested URL
 
-You cannot associate a Snyk Code Rule extension to any other Group.
+You cannot associate a Snyk Sast Rule extension to any other Group.
 
 Make sure the Group ID under relationships matches the Group ID in the request path.
 
@@ -681,7 +681,7 @@ Make sure the Group ID under relationships matches the Group ID in the request p
 
 #### Organization outside of the administrating Group
 
-You cannot associate a Snyk Code Rule extension to an Org outside of the administrating Group.
+You cannot associate a Snyk Sast Rule extension to an Org outside of the administrating Group.
 
 Make sure each Org under relationships is within the Group in the requested URL.
 
@@ -690,24 +690,24 @@ Make sure each Org under relationships is within the Group in the requested URL.
 
 ### [SNYK-CODE-0011](#snyk-code-0011)
 
-#### Rule extension limit reached
+#### Sast Rule extension limit reached
 
-You have hit the maximum number of published Snyk Code Rule extensions allowed for a Group.
+You have hit the maximum number of published Snyk Sast Rule extensions allowed for a Group.
 
-To create a new Rule extension you will have to remove an existing one.
+To create a new Sast Rule extension you will have to remove an existing one.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
 ### [SNYK-CODE-0012](#snyk-code-0012)
 
-#### Unsupported rule names in request
+#### The Snyk Sast Rule extensions feature is not enabled for this OrgID
 
-One or more rule names provided are not supported by Snyk Code Rule extensions.
+The Snyk Sast Rule extensions feature is not enabled for this organization ID.
 
-Remove the unsupported rule name(s) and then try again.
+Please reach out to the account team to get access.
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+**HTTP Status:** [421](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/421)
 
 
 ---
@@ -2568,4 +2568,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-01-21T10:11:39.399Z
+--- Generated at 2025-01-27T21:00:15.163Z
