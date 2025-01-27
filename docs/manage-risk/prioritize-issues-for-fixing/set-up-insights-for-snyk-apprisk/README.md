@@ -81,7 +81,7 @@ The Kubernetes Connector is different from the Kubernetes Controller, Snyk-Monit
    You can also filter relevant sections by Organization for a granular view of your progress.
 
 {% hint style="info" %}
-The Insights page, from the Set up Insights tab, is available only for Snyk AppRisk Pro users.
+The Insights page, from the Set up Insights tab, is available only for Snyk AppRisk users.
 {% endhint %}
 
 ## Set up Insights UI settings

@@ -65,7 +65,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Other updates**
 
 * [Getting started](getting-started/) has been updated to centralize content related to everything you need to know before using Snyk.&#x20;
-* The [Snyk Jumpstart Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md) and [Customer Prerequisite](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)s have been updated for AppRisk Pro.
+* The [Snyk Jumpstart Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md) and [Customer Prerequisites](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md) have been updated for Snyk AppRisk.
 * Scanning methods have been added for the [Dart and Flutter](supported-languages-package-managers-and-frameworks/dart-and-flutter.md) languages.
 
 ## September 2024
