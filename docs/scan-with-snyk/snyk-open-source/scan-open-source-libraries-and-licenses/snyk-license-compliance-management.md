@@ -43,7 +43,7 @@ You can also view license issues using the Snyk CLI tool after running `snyk tes
 
 ### **View all license information**
 
-You can view and share detailed lists of licenses being used by all Projects in your Organization and see a report that lists all the open-source components and licenses. along with copyright information. After January 8, 2024, copyright information will no longer be reported.
+You can view and share detailed lists of licenses being used by all Projects in your Organization and see a report that lists all the open-source components and licenses.&#x20;
 
 ### **View license dependencies**
 

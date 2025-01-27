@@ -35,6 +35,10 @@ New licenses added by Snyk will inherit the **Unknown** license type severity. I
 
 If you notice a license with the wrong license type assigned to it, you can contact Snyk support. Snyk will investigate the request and update the license type if needed.
 
+## License Updates
+
+Snyk regularly updates the license definitions according to the [SPDX License List](https://spdx.org/licenses/), which is an integral part of the System Package Data Exchange (SPDX) Specification.
+
 ## Multiple licenses
 
 For some packages, a version contains two or even more licenses that apply simultaneously. Snyk calls these dual-licenses or multi-licenses.
@@ -69,8 +73,8 @@ Snyk does not support scanning for license issues for packages whose version has
 * Go
 * Maven
 * npm
-* Nuget
-* Pypi
+* NuGet
+* PyPi
 * RubyGems
 
 ## Licenses data sources
