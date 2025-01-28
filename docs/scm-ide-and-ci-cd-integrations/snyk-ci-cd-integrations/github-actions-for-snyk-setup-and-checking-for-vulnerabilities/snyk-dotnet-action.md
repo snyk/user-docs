@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Setup .NET
-        uses: actions/setup-dotnet@3.0.3
+        uses: actions/setup-dotnet@4
       - name: Restore dependencies
         run: dotnet restore ./path/to/your.sln
       - name: Run Snyk to check for vulnerabilities
@@ -36,7 +36,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
       - name: Setup .NET
-        uses: actions/setup-dotnet@3.0.3
+        uses: actions/setup-dotnet@4
       - name: Restore dependencies
         run: dotnet restore ./path/to/your.sln
         uses: snyk/actions/dotnet@master
@@ -69,7 +69,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Setup .NET
-        uses: actions/setup-dotnet@3.0.3
+        uses: actions/setup-dotnet@4
       - name: Restore dependencies
         run: dotnet restore ./path/to/your.sln
       - name: Run Snyk to check for vulnerabilities
@@ -80,7 +80,7 @@ jobs:
         with:
           args: --sarif-file-output=snyk.sarif
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: snyk.sarif
 ```
