@@ -99,7 +99,7 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
 5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
-6.  (Optional) The sensor runs as a DaemonSet by default. If you prefer running the sensor as a Deployment set, then you must set up the `workloadType` parameter as `deployment.`
+6.  (Optional) The sensor runs as a DaemonSet by default in order to support eBPF. If you prefer running the sensor as a Deployment, then you must set up the `workloadType` parameter as `deployment.`
 
     {% hint style="warning" %}
     The Loaded package risk factor will be unavailable when running the sensor as a Deployment.
@@ -112,7 +112,7 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     --set workloadType=deployment
     ...
     ```
-7.  (Optional) You can apply filters for the pods monitored by the sensor by adding specific workload types, namespaces, and pod labels to the allow list. The sensor will then monitor only the selected pods.
+7.  (Optional) You can apply filters for the pods monitored by the sensor by adding specific workload types, namespaces, and pod labels to the allow list. The sensor will then monitor only the selected pods. By default if no filters are provided to a certain category, no filters will be applied to this category.
 
     {% hint style="warning" %}
     All filters must match the pod for it to be monitored (AND logic).
