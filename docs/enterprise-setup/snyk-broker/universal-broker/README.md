@@ -5,9 +5,9 @@
 Universal Broker is in Early Access and is available only with Enterprise plans. If you want to set it up, contact your Snyk account team.
 {% endhint %}
 
-The Universal Broker provides improvements to facilitate the management of Snyk Broker deployments and connections.&#x20;
+The Universal Broker provides improvements to facilitate the management of Snyk Broker deployments and connections. This page explains the configuration flow for the client.&#x20;
 
-This page explains the configuration flow for the client. These pages guide you through a Broker deployment setup using the Universal Broker:
+The following pages guide you through a Broker deployment setup using the Universal Broker:
 
 * [Initial configuration of the Universal Broker](initial-configuration-of-the-universal-broker.md)
 * [Set up a GitHub connection using the API](set-up-a-github-connection-using-the-api.md)
