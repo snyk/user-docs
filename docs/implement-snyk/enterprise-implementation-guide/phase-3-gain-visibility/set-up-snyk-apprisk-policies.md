@@ -1,6 +1,6 @@
-# Set up Snyk AppRisk Policies
+# Set up Asset Policies
 
-The [Snyk AppRisk policies](../../../manage-risk/policies/assets-policies/) help you automate the process of adding business context and receiving notifications. You can set up policies to automatically identify the coverage control gaps. &#x20;
+The [asset policies](../../../manage-risk/policies/assets-policies/), which come with Snyk Essentials and Snyk AppRisk, help you automate the process of adding business context and receiving notifications. You can set up policies to automatically identify the coverage control gaps. &#x20;
 
 ## Understand a policy
 
@@ -50,7 +50,7 @@ All policies are automatically run in a maximum of 3 hours after creation, then 
 
 ### Use cases for policies
 
-Familiarize yourself with the Snyk AppRisk policies by going through these use cases:
+Familiarize yourself with the asset policies by going through these use cases:
 
 * [Coverage control](../../../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-control-policy-use-case.md) policy - identify and set coverage policies to allow your team to define where certain security controls need to be in place.
 * [Classification](../../../manage-risk/policies/assets-policies/use-cases-for-policies/classification-policy-use-case.md) policy - classify assets based on importance.

@@ -36,7 +36,7 @@ Filters are available to help prioritize what issues need to be fixed urgently. 
   * By choosing the Fixable filter, you can find issues where there is a fix available by upgrading a package. This makes fixing faster than without an upgrade.  &#x20;
   * You can choose CVSS Score for Open Source Vulnerabilities.
 * When you filter by [Priority Score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md), CVSS Score is included in the calculation. One strategy is to eliminate the vulnerabilities with a score of 900-1000, and then move to vulnerabilities with a score of 800-900, and so on.
-* If you are using AppRisk and you have instrumented AppRisk Insights, it may also be beneficial to use Classification and filters like Public IP/OS Condition to further refine and find applications of High Importance or exposed publicly in the first round of triage.
+* If you are using Snyk Essentials or Snyk AppRisk , it may also be beneficial to use Classification and, for Snyk AppRisk, use filters like Public IP/Deployed to further refine and find applications of High Importance or exposed publicly in the first round of triage.
 
 When planning your fix strategy, decide which metrics will be used on a specific timeline. If you choose to fix by severity, for example, estimate the time it will take to resolve vulnerability per severity. It is recommended to be specific with your fix strategy.&#x20;
 

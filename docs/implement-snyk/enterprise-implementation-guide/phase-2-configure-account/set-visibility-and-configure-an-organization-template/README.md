@@ -16,7 +16,7 @@ There is no specific template functionality in Snyk. The recommended process is 
 
 {% hint style="info" %}
 **Creating a template using the API**\
-Templating functionality is also available if you are creating your Organizations using the API, whether you are using the [snyk-api-import](../../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool to mirror an Organization from an existing source, such as GitHub Organizations, or using the endpoint [Cerate a new organization](../../../../snyk-api/reference/organizations-v1.md#org) and providing a `sourceOrgId`.
+Templating functionality is also available if you are creating your Organizations using the API, whether you are using the [snyk-api-import](../../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool to mirror an Organization from an existing source, such as GitHub Organizations, or using the endpoint [Create a new organization](../../../../snyk-api/reference/organizations-v1.md#org) and providing a `sourceOrgId`.
 {% endhint %}
 
 ## Configure template Organization settings

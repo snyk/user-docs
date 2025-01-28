@@ -6,7 +6,7 @@ You can visualize information at the Group or Organization level by clicking the
 
 ## Group level
 
-The following Snyk functions are available with the Web UI, at Group level:
+The following Snyk functions are available with the Web UI, at Group level, with Snyk Essentials and Snyk AppRisk:
 
 * [Organizations available for the selected Group](snyk-web-ui.md#organizations-available-for-the-selected-group)
 * [View the assets dashboard](snyk-web-ui.md#view-the-assets-dashboard)
@@ -20,36 +20,24 @@ If you navigate to the Group level and select the Organizations page, you will s
 
 ### View the assets dashboard
 
-{% hint style="info" %}
-Asset Dashboard is available only for Snyk Essentials users. If you use Snyk AppRisk, see [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md).
-{% endhint %}
-
-The Snyk AppRisk Asset Dashboard reporting page provides a comprehensive overview of the security controls associated with your application. It presents critical metrics and data regarding your assets, such as scan coverage and a detailed breakdown of your inventory categorized by asset class, source, and other relevant information. Furthermore, the dashboard includes an extensive global filtering option, enabling users to filter results based on specific applications and owners, using the context data related to the application.
+The Snyk Essentials Asset Dashboard reporting page provides a comprehensive overview of the security controls associated with your application. It presents critical metrics and data regarding your assets, such as scan coverage and a detailed breakdown of your inventory categorized by asset class, source, and other relevant information. Furthermore, the dashboard includes an extensive global filtering option, enabling users to filter results based on specific applications and owners, using the context data related to the application.
 
 Navigate to the [Asset Dashboard](../manage-issues/reporting/available-snyk-reports.md#asset-dashboard) documentation section for more details.
 
 ### View and manage your assets inventory
 
-{% hint style="info" %}
-Inventory is available only for Snyk AppRisk users.
-{% endhint %}
-
-The [Inventory](../manage-assets/) is available only if you are using Snyk AppRisk. You can use the **Inventory** page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
+You can use the [Inventory](../manage-assets/) page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
 
 Each line in the inventory represents either a repository asset or a scanned artifact from Snyk that is likely a repository but lacks some identifying information. Scanned artifacts are not supported through Policies.
 
 ### Manage and customize your policies
-
-{% hint style="info" %}
-Policies are available only for Snyk AppRisk users.
-{% endhint %}
 
 For information on how to automate the process of adding business context and receiving notifications, see [Policies](../manage-risk/policies/assets-policies/).
 
 ### Manage integrations for asset discovery, asset coverage, and issues from third-party vendors
 
 {% hint style="info" %}
-Integrations for the Group level are available only for Snyk AppRisk users.
+The Group-level Integrations view focuses on asset management and discovery and is available with Snyk Essentials and Snyk AppRisk.
 {% endhint %}
 
 The **Integrations** page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
@@ -190,8 +178,6 @@ Issues are available only for Snyk Essentials and Snyk AppRisk users.
 {% endhint %}
 
 The [Issues page](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) provides a centralized view of all the issues identified by Snyk with additional asset context. This helps you and your team to better triage and remediate issues in Snyk.
-
-The Reports page is available at both the Group and Organization levels.
 
 ### View dependencies and licenses
 
