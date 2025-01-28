@@ -4371,7 +4371,7 @@
       },
       "Cves": {
         "items": {
-          "pattern": "^CVE-\\d+$",
+          "pattern": "^(CVE)-\\d+-\\d+(,(CVE)-\\d+-\\d+)*$",
           "type": "string"
         },
         "maxItems": 50,
@@ -43294,7 +43294,7 @@
         },
         "summary": "Get collective learning progress",
         "tags": [
-          "Progress"
+          "Learn progress"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -43388,7 +43388,7 @@
         },
         "summary": "Get individual user learning progress",
         "tags": [
-          "Progress"
+          "Learn progress"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
