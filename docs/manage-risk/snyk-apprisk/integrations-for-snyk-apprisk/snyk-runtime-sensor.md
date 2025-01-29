@@ -24,7 +24,8 @@ On this page, you can find the following information:
 
 * [Prerequisites for Snyk Runtime Sensor](snyk-runtime-sensor.md#prerequisites-for-snyk-runtime-sensor)
 * [Install Snyk Runtime Sensor](snyk-runtime-sensor.md#install-snyk-runtime-sensor)
-  * [Using a Helm chart](snyk-runtime-sensor.md#using-a-helm-chart)
+  * [As a Kubernetes DaemonSet, using a Helm chart](snyk-runtime-sensor.md#as-a-kubernetes-daemonset-using-a-helm-chart)
+  * [As a Kubernetes Deployment, using a Helm chart](snyk-runtime-sensor.md#as-a-kubernetes-deployment-using-a-helm-chart)
   * [Using a Helm chart and the AWS Secrets Manager](snyk-runtime-sensor.md#using-a-helm-chart-and-the-aws-secrets-manager)
   * [On OpenShift](snyk-runtime-sensor.md#on-openshift)
   * [Through the AWS Marketplace as an EKS add-on](snyk-runtime-sensor.md#aws-eks-deployment)
@@ -62,8 +63,8 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
 ## Install Snyk Runtime Sensor
 
 {% hint style="info" %}
-* The Snyk Runtime Sensor is deployed as a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), which means there's a single [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) of the sensor, per [Node](https://kubernetes.io/docs/concepts/architecture/nodes/) in the cluster.
-* The Snyk Runtime Sensor doesn't use any persistent storage, and its disk usage footprint is negligible.
+* The Snyk Runtime Sensor is deployed as a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), meaning that there is a single [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) of the sensor for each [Node](https://kubernetes.io/docs/concepts/architecture/nodes/) available in the cluster.
+* The Snyk Runtime Sensor does not utilize any persistent storage, and its disk usage is minimal.
 {% endhint %}
 
 * The Snyk Runtime Sensor DaemonSet must meet the following minimum requirements:
@@ -75,50 +76,35 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
   * [Install the Snyk Runtime Sensor on OpenShift ](snyk-runtime-sensor.md#on-openshift)
   * [Install the Snyk Runtime Sensor through the AWS Marketplace as an EKS add-on](snyk-runtime-sensor.md#through-the-aws-marketplace-as-an-eks-add-on)
 
-### Using a Helm chart
+### As a Kubernetes DaemonSet, using a Helm chart
 
-There is a [Helm chart](https://helm.sh) within this repo in [helm/runtime-sensor](https://github.com/snyk/runtime-sensor), that is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
+{% hint style="info" %}
+When deployed as a Kubernetes DaemonSet, the Snyk runtime sensor capabilities are activated, allowing the sensor to report both the risk factors of Deployed and Loaded packages.
+{% endhint %}
 
-To install the Snyk runtime sensor using Helm Charts, you can follow these steps:
+You can use as guidance the [Helm chart](https://helm.sh) from the [helm/runtime-sensor](https://github.com/snyk/runtime-sensor) repository, which is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
+
+To install the Snyk runtime sensor as a Kubernetes DaemonSet using Helm Charts, you can follow these steps:
 
 1. Ensure Helm is installed.
 2.  Create the `snyk-runtime-sensor` namespace:
 
     <pre><code><strong>kubectl create namespace snyk-runtime-sensor
     </strong></code></pre>
-3.  Create a secret with your service account token, which has the appropriate permissions (as instructed in the prerequisites section) under the created namespace:
+3.  Create a secret with your service account token, which has the appropriate permissions (as instructed in the [prerequisites](snyk-runtime-sensor.md#prerequisites-for-snyk-runtime-sensor) section) under the created namespace:
 
     {% code overflow="wrap" %}
     ```
     kubectl create secret generic <<YOUR_SECRET_NAME>> --from-literal=snykToken=<<YOUR_TOKEN>> -n snyk-runtime-sensor
     ```
     {% endcode %}
-4.  Add the Helm repo:
+4.  Add the Helm repository:
 
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
 5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
-6.  (Optional) The sensor runs as a DaemonSet by default in order to support eBPF. If you prefer running the sensor as a Deployment, then you must set up the `workloadType` parameter as `deployment.`
-
-    {% hint style="warning" %}
-    The Loaded package risk factor will be unavailable when running the sensor as a Deployment.
-    {% endhint %}
-
-
-
-    ```
-    ...
-    --set workloadType=deployment
-    ...
-    ```
-7.  (Optional) You can apply filters for the pods monitored by the sensor by adding specific workload types, namespaces, and pod labels to the allow list. The sensor will then monitor only the selected pods. By default if no filters are provided to a certain category, no filters will be applied to this category.
-
-    {% hint style="warning" %}
-    All filters must match the pod for it to be monitored (AND logic).
-    {% endhint %}
-
-
+6.  (Optional) You can apply filters for the pods monitored by the sensor by adding specific workload types, namespaces, and pod labels to the allow list. The sensor will then monitor only the pods that meet all the provided filters. By default, all pods are monitored.
 
     ```
     ...
@@ -140,7 +126,7 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     job
     cronjob
     ```
-8.  (Optional) If you want to configure custom resources (CPU/memory) for the runtime sensor image, the following values must be set (default values are used here):
+7.  (Optional) If you want to configure custom resources (CPU/memory) for the runtime sensor image, the following values must be set (default values are used here):
 
     ```
     ...
@@ -150,10 +136,84 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     --set sensor.resources.limits.cpu=500m
     ...
     ```
-9.  Install the Helm chart:
+8.  Install the Helm chart:
 
     ```
     helm install my-runtime-sensor \
+    --set workloadType=daemonset \ # Can be ommited, as 'daemonset' is the default
+    --set secretName=<<YOUR_SECRET_NAME>> \
+    --set clusterName=<<CLUSTER_NAME>> \
+    --set snykGroupId=<<YOUR_GROUP_ID>> \
+    --set snykAPIBaseURL=api.<<REGION>>.snyk.io:443 \ # Optional
+    -n snyk-runtime-sensor \
+    runtime-sensor/runtime-sensor
+    ```
+
+### As a Kubernetes Deployment, using a Helm chart
+
+{% hint style="warning" %}
+In a Kubernetes Deployment, the Snyk runtime sensor capabilities are disabled, so the sensor only reports the Deployed risk factor.
+{% endhint %}
+
+You can use as guidance the [Helm chart](https://helm.sh) from the [helm/runtime-sensor](https://github.com/snyk/runtime-sensor) repository, which is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
+
+To install the Snyk runtime sensor as a Kubernetes Deployment using Helm Charts, you can follow these steps:
+
+1. Ensure Helm is installed.
+2.  Create the `snyk-runtime-sensor` namespace:
+
+    <pre><code><strong>kubectl create namespace snyk-runtime-sensor
+    </strong></code></pre>
+3.  Create a secret with your service account token, which has the appropriate permissions (as instructed in the [prerequisites](snyk-runtime-sensor.md#prerequisites-for-snyk-runtime-sensor) section) under the created namespace:
+
+    {% code overflow="wrap" %}
+    ```
+    kubectl create secret generic <<YOUR_SECRET_NAME>> --from-literal=snykToken=<<YOUR_TOKEN>> -n snyk-runtime-sensor
+    ```
+    {% endcode %}
+4.  Add the Helm repository:
+
+    ```
+    helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
+    ```
+5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
+6.  (Optional) You can apply filters for the pods monitored by the sensor by adding specific workload types, namespaces, and pod labels to the allow list. The sensor will then monitor only the pods that meet all the provided filters. By default, all pods are monitored.
+
+    ```
+    ...
+    --set 'sensor.filters.workloadTypes={deployment,cronjob}'
+    --set 'sensor.filters.namespaces={ns1,ns2}'
+    --set sensor.filters.podLabels.label_key1='label_value1'
+    --set sensor.filters.podLabels.label_key2='label_value2'
+    ...
+    ```
+
+    \
+    Available workload types:&#x20;
+
+    ```json
+    deployment
+    daemonset
+    statefulset
+    replicaset
+    job
+    cronjob
+    ```
+7.  (Optional) If you want to configure custom resources (CPU/memory) for the runtime sensor image, the following values must be set (default values are used here):
+
+    ```
+    ...
+    --set sensor.resources.requests.memory=512Mi
+    --set sensor.resources.requests.cpu=100m
+    --set sensor.resources.limits.memory=1024Mi
+    --set sensor.resources.limits.cpu=500m
+    ...
+    ```
+8.  Install the Helm chart:
+
+    ```
+    helm install my-runtime-sensor \
+    --set workloadType=deployment \
     --set secretName=<<YOUR_SECRET_NAME>> \
     --set clusterName=<<CLUSTER_NAME>> \
     --set snykGroupId=<<YOUR_GROUP_ID>> \
@@ -171,7 +231,7 @@ To install the Snyk runtime sensor using Helm Charts, you can follow these steps
     helm repo list
     ```
     {% endcode %}
-2.  Update the repo (with the name from (1)):
+2.  Update the repository (with the name from (1)):
 
     {% code overflow="wrap" %}
     ```
