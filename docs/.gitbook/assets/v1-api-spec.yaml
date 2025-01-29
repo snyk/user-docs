@@ -14097,11 +14097,11 @@ components:
     AzureReposCredentials:
       title: AzureReposCredentials
       required:
-        - username
+        - token
         - url
       type: object
       properties:
-        username:
+        token:
           type: string
         url:
           type: string
