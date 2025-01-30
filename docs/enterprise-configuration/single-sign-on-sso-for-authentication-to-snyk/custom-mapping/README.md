@@ -10,7 +10,7 @@ To understand more about roles and permissions within Snyk, see [Pre-defined rol
 
 ## Requirements for custom mapping
 
-* Complete the SSO information worksheet for the appropriate IdP (identity provider) found in [Resources for SSO setup](../set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup).
+* Complete the SSO information worksheet for the appropriate IdP (identity provider) found in [Resources for SSO setup](../../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup).
 * Properly configure the custom attributes in your IdP to populate the `roles` array mapping. See [Example: roles array mapping](./#example-roles-array-mapping).
 
 ## Custom Mapping options
@@ -21,7 +21,7 @@ The Snyk [Legacy custom mapping](legacy-custom-mapping.md) option is still suppo
 
 ## Roles array mapping with Snyk
 
-In the IdP, you must first pass a custom mapping called `roles` as a string array. [Examples](examples-setting-up-custom-mapping-for-idps/) of how to set this up for different IdPs are provided.
+In the IdP, you must first pass a custom mapping called `roles` as a string array. [Examples](../../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/) of how to set this up for different IdPs are provided.
 
 Refer to your identity provider documentation for further information on how to configure custom mappings.
 
@@ -39,12 +39,17 @@ Where:
 
 `snyk` is a fixed prefix for role mapping. **Required**.
 
-`scope` can be one of `org` or `group.`**Required**; if a role mapping does not contain a valid scope, it will be ignored.
+* Required.
 
-`target` must be a **slug** of either `org` or `group` where the role will be granted, or a **wildcard**.
+`scope` can be one of `org`, `group`, or `tenant`. **Required**; if a role mapping does not contain a valid scope, it will be ignored.
+
+* Required; if a role mapping does not contain a valid scope, it will be ignored.
+
+`target` can be a slug of an `org`, `group`, or `tenant` where the role will be granted. See [slugs](./#slugs) to find this information.
 
 * See the [Slugs](./#slugs) section for details on how to find this information.
 * **Optional**; may be an asterisk `*` or empty string `::`to apply as a [wildcard](./#wildcards) for all resources within the defined `scope` that are associated with the SSO connection.
+* Optional; an asterisk ( `*`) or an empty string can be used to apply to all resources **t**hat are associated with the SSO connection.
 
 `role` is the normalized name of the required role. See [Role normalized name](./#role-normalized-name) to find this information.
 
@@ -53,8 +58,10 @@ Where:
 * Built-in roles do not have the `custom:` prefix, so values like `org_admin`, `org_collaborator`, `group_viewer` will refer to the Snyk pre-defined roles, which are shown with a padlock symbol in the Member Roles page.
 
 {% hint style="warning" %}
-Users must only have one role mapped per Organization or Group. Mapping multiple roles except when using wildcards is not supported and can lead to unexpected behavior.
+Users must only have one role mapped per Organization, Group or Tenant. Mapping multiple roles except when using wildcards is not supported and can lead to unexpected behavior.
 {% endhint %}
+
+### Tenant Role assertions
 
 {% hint style="info" %}
 Any user that is granted a role in an Organization within the SSO without an explicit Group-level role in the role assertion, will also be implicitly assigned the **Group Member** Group-level role for that Group. This is the pre-defined Group-level role with the fewest permissions and ensures that the user becomes a member of the Group.
@@ -62,12 +69,20 @@ Any user that is granted a role in an Organization within the SSO without an exp
 
 ### Example role assertions
 
-* `snyk:group:*:group_admin` Assign the user the pre-defined **Group Admin** role for all groups associated with the SSO connection.
-* `snyk:group::custom:sys_admin` Assign the user the custom Group-level role `Sys Admin` for all groups associated with the SSO connection.
+An SSO connection may only be associated with one Tenant, and all users with any memberships within a tenant must also have a Tenant Membership.&#x20;
+
+Therefore, it may be easier to assign Tenant-level roles by using the wildcard syntax, since the SSO is only linked to the one Tenant.
+
+If no Tenant-level role assertions are provided, but the user does have other valid roles assigned,  Snyk will automatically assign users the **Tenant Member** role.
+
+### Example role assertions
+
+* `snyk:group:*:group_admin` Assigns the user the Group admin role for all groups associated with the SSO connection.
+* `snyk:group::custom:sysadmin` Assigns the user the custom Group-level role `Sys Admin` for all groups associated with the SSO connection.
   * Note that `::` here indicates an empty string for the target, and so is treated as a wildcard in the preceding example.
   * Note that this Group-level custom role must be created manually before it can be assigned.
-* `snyk:org:my-default-org:org_admin` Assign the user the pre-defined **Organization Admin** Organization-level role for the Organization `my-default-org`.
-* `snyk:org:my-default-org:custom:code_editor`   Assign the user the custom Org-level role `Code Editor` for the Organization `my-default-org` .
+* `snyk:org:my-default-org:org_admin` Assigns the user the **Organization Admin** Organization-level role for the Organization `my-default-org`.
+* `snyk:tenant::tenant_admin` Assigns the user the Tenant Admin Tenant-level role for the Tenant associated with the SSO connection.
 
 ### Example role assertions array
 
@@ -155,3 +170,6 @@ Snyk has a set of [pre-defined roles](../../../snyk-admin/user-roles/pre-defined
 | Group        | Group Admin      | `group_admin`      |
 | Group        | Group Viewer     | `group_viewer`     |
 | Group        | Group Member     | `group_member`     |
+| Tenant       | Tenant Admin     | `tenant_admin`     |
+| Tenant       | Tenant Viewer    | `tenant_viewer`    |
+| Tenant       | Tenant Member    | `tenant_member`    |

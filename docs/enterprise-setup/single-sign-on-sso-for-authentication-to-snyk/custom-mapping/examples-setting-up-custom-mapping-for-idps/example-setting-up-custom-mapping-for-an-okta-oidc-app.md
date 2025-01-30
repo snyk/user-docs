@@ -19,7 +19,7 @@ If you wish to set up custom mapping, move on to the next section of this guide.
 
 ## Add custom mapping
 
-[Custom mapping](../) for an OIDC application in Okta is easily managed through custom attributes on group level.
+[Custom mapping](../../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/) for an OIDC application in Okta is easily managed through custom attributes on group level.
 
 ### Create a custom app user attribute to contain both the Snyk Organization name and role
 
@@ -41,7 +41,7 @@ If you wish to set up custom mapping, move on to the next section of this guide.
 2.  Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk OIDC app,. Then click on the **pencil** next to the displayed Snyk OIDC app.
 
     <figure><img src="../../../../.gitbook/assets/5 (1) (1) (1) (1) (1) (1) (1).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
-3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [custom mapping](../) (or [legacy custom mapping](../legacy-custom-mapping.md) if using the legacy mapping option). Example, `snyk:org:*:org_admin`.\
+3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [custom mapping](../../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/) (or [legacy custom mapping](../../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md) if using the legacy mapping option). Example, `snyk:org:*:org_admin`.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (385).png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>
