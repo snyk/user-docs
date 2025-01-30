@@ -1,16 +1,10 @@
 # Terraform files
 
-{% hint style="info" %}
-Unlike the CLI for current IaC, the CLI for IaC+ can also scan Terraform variables and modules, regardless of whether they are public or private. Run `terraform init` before running the `snyk iac test` command, and the CLI will read the generated `.terraform files.`
-{% endhint %}
-
 With Snyk Infrastructure as Code, you can scan both your static configuration files and Terraform plan output using the CLI.
 
 ## Terraform configuration files
 
-With current IaC and IaC+, you can scan the configuration files, for example `main.tf`, using the CLI.
-
-With current IaC, external modules are currently not supported. For more information about variable processing, see [Terraform variables support](../../../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/scan-terraform-files/terraform-variables-support-current-iac.md).
+With Snyk IaC you can scan the configuration files, for example `main.tf`, using the CLI. External modules are not supported. For more information about variable processing, see [Terraform variables support](../../../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/scan-terraform-files/terraform-variables-support-current-iac.md).
 
 ## Scan configuration files
 

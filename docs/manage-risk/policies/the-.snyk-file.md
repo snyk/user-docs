@@ -64,7 +64,7 @@ For details, see [Excluding directories and files from the import process](../..
 
 ## Use the `.snyk` file with Snyk IaC
 
-For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md). For more information, see [Ignore resources for drift](../../scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/detect-drift-and-manually-created-resources/ignore-resources-for-drift.md).
+For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md). For more information, see [Ignore resources for drift](../../scan-with-snyk/snyk-iac/detect-drift-and-manually-created-resources/ignore-resources-for-drift.md).
 
 ## Use the `.snyk` file with Snyk Open Source
 

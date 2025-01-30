@@ -1,8 +1,4 @@
-# Scan and fix security issues in your CloudFormation files (current IaC)
-
-{% hint style="info" %}
-This page applies to current IaC only.
-{% endhint %}
+# Scan and fix security issues in your CloudFormation files
 
 Snyk scans CloudFormation code for misconfigurations and security issues. After configuration files are scanned, Snyk reports on any misconfigurations based on the settings that administrators implement and makes recommendations for fixes accordingly.
 

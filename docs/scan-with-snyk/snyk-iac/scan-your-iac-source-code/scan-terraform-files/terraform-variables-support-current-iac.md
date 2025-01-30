@@ -1,10 +1,6 @@
-# Terraform variables support (current IaC)
+# Terraform variables support
 
-{% hint style="info" %}
-This page applies to current IaC only.
-{% endhint %}
-
-Support for Terraform (TF) variables is currently available only in the CLI. Snyk currently supports:
+Support for Terraform (TF) variables is currently available only in the CLI. Snyk supports:
 
 * [Input Variables](https://www.terraform.io/language/values/variables)
 * [Local Values](https://www.terraform.io/language/values/locals)
@@ -13,7 +9,7 @@ At this time Snyk does not support [Output Values](https://www.terraform.io/lang
 
 The CLI scans all directories and handles each directory that includes supported TF files as its own module. Each module that includes variables is dereferenced appropriately.
 
-Supported TF file formats are `.tf`, `.tfvars`, `.auto.tfvars`. Snyk currently does not support variables that were set and defined using environment variables or the `--var` CLI option.
+Supported TF file formats are `.tf`, `.tfvars`, `.auto.tfvars`. Snyk does not support variables that were set and defined using environment variables or the `--var` CLI option.
 
 The scan handles [variable definition precedence](https://www.terraform.io/language/values/variables#variable-definition-precedence) in the same way that TF handles the precedence.
 
@@ -27,7 +23,7 @@ For more information, see the `IAC test` [help](../../../../snyk-cli/commands/ia
 
 ## Supported Terraform expressions
 
-The following expressions are currently supported:
+The following expressions are supported:
 
 * [Arithmetic and Logical Operators](https://www.terraform.io/language/expressions/operators)
 * [Strings and Templates](https://www.terraform.io/language/expressions/strings#strings-and-templates)
@@ -37,7 +33,7 @@ The following expressions are currently supported:
 
 ## Supported Terraform functions
 
-The following functions are currently supported:
+The following functions are supported:
 
 * Numeric functions - all functions
 * String functions - all functions except `lower`, `regex`, `regexall`, `replace`, `substr`, `title`, `upper`

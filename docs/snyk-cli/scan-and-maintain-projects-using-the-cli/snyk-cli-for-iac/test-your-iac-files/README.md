@@ -4,10 +4,6 @@
 Beginning with CLI version 1.594.0, all configuration files are processed locally, ensuring that they do not leave your machine. Earlier versions by default send the configuration files to Snyk to be processed. Snyk recommends that you upgrade to the latest version of the CLI.
 {% endhint %}
 
-{% hint style="info" %}
-To use the [IaC+](../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
-{% endhint %}
-
 ## Overview
 
 With Snyk Infrastructure as Code, you can test your configuration files with the CLI. This page provides detailed information on how to use certain options for the `snyk iac test` command.  For information about all of the options see the `snyk iac test` command [help](../../../commands/iac-test.md). For details about testing the various configuration files, see the following pages:

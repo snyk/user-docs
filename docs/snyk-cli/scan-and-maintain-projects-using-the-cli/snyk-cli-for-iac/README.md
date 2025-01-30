@@ -1,9 +1,5 @@
 # Snyk CLI for IaC
 
-{% hint style="info" %}
-To use the [IaC+](../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/) version of the Snyk CLI, install Snyk CLI v1.1022.0 or later.
-{% endhint %}
-
 ## Overview
 
 To use the CLI, you must first [install](../../install-or-update-the-snyk-cli/) it and then [authenticate](../../commands/auth.md).

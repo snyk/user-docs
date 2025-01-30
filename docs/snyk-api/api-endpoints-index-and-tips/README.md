@@ -302,13 +302,13 @@ The View Project History permission is needed to use this API.
 
 ### [Update the Infrastructure as Code Settings for an org](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
-**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
+**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ### [Get the Infrastructure as Code Settings for an org](../reference/iacsettings.md#orgs-org_id-settings-iac-1)
 
 ### [Update the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group_id-settings-iac)
 
-**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md);[Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
+**More information:** [Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [IaC custom rules within a pipeline](../../scan-with-snyk/snyk-iac/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md);[Use a remote IaC custom rules bundle](../../scan-with-snyk/snyk-iac/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
 ### [Get the Infrastructure as Code Settings for a group](../reference/iacsettings.md#groups-group_id-settings-iac-1)
 

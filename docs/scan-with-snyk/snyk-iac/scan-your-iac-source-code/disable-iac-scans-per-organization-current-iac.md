@@ -1,8 +1,4 @@
-# Disable IaC scans per Organization (current IaC)
-
-{% hint style="info" %}
-This page applies to current IaC only.
-{% endhint %}
+# Disable IaC scans per Organization
 
 {% hint style="info" %}
 Disabling IaC scans is possible only at the Organization level. To disable scans for a Group, disable scans for each Organization in the Group.

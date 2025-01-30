@@ -316,7 +316,7 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 
 ### Rule
 
-A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../scan-with-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/).
+A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../scan-with-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../scan-with-snyk/snyk-iac/current-iac-custom-rules/).
 
 ### Runtime context (Snyk AppRisk)
 

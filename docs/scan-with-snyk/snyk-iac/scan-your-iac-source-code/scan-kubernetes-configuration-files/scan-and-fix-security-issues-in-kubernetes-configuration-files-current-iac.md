@@ -1,8 +1,4 @@
-# Scan and fix security issues in Kubernetes configuration files (current IaC)
-
-{% hint style="info" %}
-This page applies to current IaC only.
-{% endhint %}
+# Scan and fix security issues in Kubernetes configuration files
 
 Snyk Infrastructure as Code scans your manifest files for security vulnerabilities and scans your Kubernetes configuration files for misconfigurations and security issues as well. After configuration files are scanned, Snyk reports on any misconfigurations based on the settings your administrator has implemented and makes recommendations for fixing accordingly.
 
@@ -18,7 +14,7 @@ Snyk Infrastructure as Code supports:
 
 ## Scan and fix your Kubernetes configuration files
 
-* Log in to your account and navigate to the relevant group and Organization that you want to manage.
+* Log in to your account and navigate to the relevant Group and Organization that you want to manage.
 * If you imported your repositories for testing before cloud configuration file detection was enabled by your administrator, re-import that repository to import the relevant JSON or YAML configuration files.
 
 Every time a repository is scanned, every supported manifest file and every supported configuration file is imported as a separate Project, grouped together per repository.

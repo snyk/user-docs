@@ -1,12 +1,8 @@
-# Getting started with current IaC
-
-{% hint style="info" %}
-The information on this page applies to current IaC. If you are using IaC+, see [Getting started with IaC+ and cloud scans](getting-started-with-iac+-and-cloud-scans/) .
-{% endhint %}
+# Getting started with Snyk IaC
 
 You can use Snyk IaC (Infrastructure as Code) in the Snyk Web UI to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/).
 
-On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md). These steps are specific to the current IaC. See also [Getting started with IaC and cloud scans](getting-started-with-iac+-and-cloud-scans/).
+On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md). These steps are specific to the current IaC. See also [Getting started with IaC and cloud scans](broken-reference).
 
 ## **Prerequisites for Snyk IaC**
 
@@ -60,14 +56,14 @@ Each Project detail page has a **snapshot** showing when the Project was last te
 
 ## Issue card details for Snyk IaC
 
-&#x20;Each issue card shows information about the resource and the path by which it was introduced.&#x20;
+Each issue card shows information about the resource and the path by which it was introduced.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.14.png" alt="Issue card details"><figcaption><p>Issue card details</p></figcaption></figure>
 
 The information on the issue cards includes the following:
 
 * The severity level, for example, **H** for high, and the name of the issue, for example, **Non-encrypted S3 Bucket**
-* The **ID** of the security rule, for example, [SNYK-CC-00172](https://security.snyk.io/rules/cloud/SNYK-CC-00172).\
+* The **ID** of the security rule, for example, [SNYK-CC-TF-99](https://security.snyk.io/rules/cloud/SNYK-CC-TF-99).\
   Click the link to view more information on the [Snyk Security Rules](https://security.snyk.io/rules/cloud/).
 * A **snippet** of your code showing the exact area that is vulnerable
 * The exact **path** of the issue
@@ -88,7 +84,7 @@ The steps to act on recommendations produced by Snyk IaC follow.
 
 1. On a Project detail page, select an issue to see the details for that issue and specific recommendations from Snyk IaC.
 2. Based on the recommendations, edit the configuration file to fix the issue identified and then commit the change.\
-   Snyk automatically rescans the changed file.&#x20;
+   Snyk automatically rescans the changed file.
 3. View the change reflected in the issue display.
 
 <figure><img src="../../.gitbook/assets/snyk-iac-getting-started-issue-card.png" alt="Example of an IaC issues that has been fixed"><figcaption><p>Example of an IaC issues that has been fixed</p></figcaption></figure>

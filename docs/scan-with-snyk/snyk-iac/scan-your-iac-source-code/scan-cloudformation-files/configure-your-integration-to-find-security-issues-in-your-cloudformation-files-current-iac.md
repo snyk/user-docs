@@ -1,8 +1,4 @@
-# Configure your integration to find security issues in your CloudFormation files (current IaC)
-
-{% hint style="info" %}
-This page applies to current IaC only.
-{% endhint %}
+# Configure your integration to find security issues in your CloudFormation files
 
 Snyk tests and monitors CloudFormation files from source code repositories. It gives advice on how to better secure cloud environments by catching misconfigurations before they are pushed to production, along with assistance on how best to fix them.
 

@@ -23,7 +23,7 @@ A robust security process secures each component where they are built and mainta
 
 * **Secure your code**: use [Snyk Open Source](https://docs.snyk.io/scan-using-snyk/snyk-open-source) to fix vulnerabilities in your open source dependencies and [Snyk Code](https://docs.snyk.io/scan-using-snyk/snyk-code) to fix vulnerabilities in your source code.
 * **Secure your containers**: use [Snyk Container](https://docs.snyk.io/scan-using-snyk/snyk-container) to fix vulnerabilities in container images and Kubernetes applications.
-* **Secure your infrastructure**: use [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/scan-using-snyk/snyk-iac/scan-your-iac-source-code) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [IaC+](https://docs.snyk.io/scan-using-snyk/snyk-iac/iac+-code-to-cloud-capabilities) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud Projects.
+* **Secure your infrastructure**: use [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/scan-using-snyk/snyk-iac/scan-your-iac-source-code) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
 ## Choose how to run Snyk
 

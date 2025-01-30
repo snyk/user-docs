@@ -1,8 +1,4 @@
-# Scan and fix security issues in Terraform files (current IaC)
-
-{% hint style="info" %}
-This page applies to current IaC only.
-{% endhint %}
+# Scan and fix security issues in Terraform files
 
 Snyk scans your Terraform code for misconfigurations and security issues as well. After scanning configuration files, Snyk reports on any misconfigurations based on the settings your administrator implemented, and makes recommendations for fixing accordingly.
 
@@ -10,12 +6,12 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 
 * An administrator should integrate your Organization with your preferred Git repository and enable detection of configuration files as described on [Configure your integration to find security issues in your Terraform files](configure-your-integration-to-find-security-issues-in-your-terraform-files-current-iac.md)
 * You must have a Snyk account, and your Terraform files should be in `.tf` format.
-* We currently detect AWS, Azure, and Google Cloud-related security issues.
+* Snyk detects AWS, Azure, and Google Cloud-related security issues.
 
 ## Scan and fix your Terraform configuration files
 
 * Log in to your account and navigate to the relevant Group and Organization that you want to manage.
-* If you  imported your repositories for testing before the infrastructure as code feature was enabled by your administrator, from the Add project screen, re-import that repository in order to detect the Terraform code:
+* If you  imported your repositories for testing before the infrastructure as code feature was enabled by your administrator, from the **Add project** screen, re-import that repository in order to detect the Terraform code:
 
 <figure><img src="../../../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03 (1) (1) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (28).png" alt="Add project screen"><figcaption><p>Add project screen</p></figcaption></figure>
 

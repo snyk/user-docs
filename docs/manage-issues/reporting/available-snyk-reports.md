@@ -10,7 +10,6 @@ The following reports are available:
 * [OWASP TOP 10 report](available-snyk-reports.md#owasp-top-10-report)
 * [CWE TOP 25 report](available-snyk-reports.md#cwe-top-25-report)
 * [CWE TOP 10 KEV report](available-snyk-reports.md#cwe-top-10-kev-report)
-* [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
 * [Developer IDE and CLI usage report](available-snyk-reports.md#developer-ide-and-cli-usage)
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
 
@@ -152,20 +151,6 @@ The report is based on the latest version released in 2023 by Mitre. The support
 The [CWE Top 10 KEV Weaknesses](https://cwe.mitre.org/top25/archive/2023/2023_kev_list.html) list identifies the top ten CWEs in the Cybersecurity and Infrastructure Security Agency’s (CISA) [Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (KEV) Catalog, a database of security flaws in software applications and weaknesses that have been exposed and leveraged by attackers.&#x20;
 
 The report is based on the version released in 2023 by Mitre. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
-
-## Cloud Compliance Issues report
-
-{% hint style="info" %}
-This report is available only if you have [Snyk IaC+](../../scan-with-snyk/snyk-iac/iac+-code-to-cloud-capabilities/) or the legacy Snyk Cloud enabled.
-{% endhint %}
-
-The Cloud Compliance Issues report shows cloud and IaC+ issues for an entire Organization, organized by [compliance standard](../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
-
-You can view a report for a single version of a compliance standard at a time, for example, CIS AWS Foundations Benchmark v1.4.0, by selecting the desired standard from the drop-down menu. Each report includes a list of compliance controls organized by control category, with corresponding issue counts.
-
-Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/view-iac+-and-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
-
-Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.
 
 ## Developer IDE and CLI usage
 

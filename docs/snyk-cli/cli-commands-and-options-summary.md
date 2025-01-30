@@ -72,25 +72,9 @@ Print a list of the `snyk iac` commands: `snyk iac describe`, `snyk iac update-e
 
 Test for any known security issue.
 
-### [`snyk iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture)
-
-Generate a mapping artifact that contains the minimum amount of information needed to generate resource mappings from code to Cloud from Terraform state files, such as resource IDs and names, and send the mapping artifact to Snyk.
-
 ### [`snyk iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 Detect, track, and alert on infrastructure drift and unmanaged resources.
-
-### [`snyk iac rules init`](https://docs.snyk.io/snyk-cli/commands/iac-rules-init)
-
-Initialize custom rules project structure, relation, rule, or spec
-
-### [`snyk iac rules test`](https://docs.snyk.io/snyk-cli/commands/iac-rules-test)
-
-Run tests for all custom rules.
-
-### [`snyk iac rules push`](https://docs.snyk.io/snyk-cli/commands/iac-rules-push)
-
-Bundle and upload custom rule bundles to Snyk Cloud API.
 
 ### [`snyk iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
 
@@ -267,12 +251,6 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--report`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-## `snyk iac capture` command options
-
-`--stdin`: [`iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture)
-
-`PATH`: [`iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture)
-
 ## `snyk iac describe` command options
 
 `--from=<STATE>[,<STATE>...]`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
@@ -312,14 +290,6 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--exclude-missing`: [`iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
 
 `--exclude-unmanaged`: [`iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
-
-## `snyk iac rules push` command option
-
-`--delete`: [`iac rules push`](commands/iac-rules-push.md)
-
-## `snyk iac rules test` command option
-
-`--update-expected`: [`iac rules test`](commands/iac-rules-test.md)
 
 ## `snyk ignore` command options
 
