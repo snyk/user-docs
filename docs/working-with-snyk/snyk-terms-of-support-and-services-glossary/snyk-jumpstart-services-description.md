@@ -231,7 +231,7 @@ This portion of the Jumpstart service is part of the platform configuration, and
 
 #### Coverage and visibility configuration
 
-The Snyk Consultant will work with Customer to configure Snyk AppRisk as follows:
+The Snyk Consultant will work with Customer to configure Snyk Essentials as follows:
 
 * Configure one Source Code Management (SCM) integration, and if necessary, Snyk Broker for this integration
 * Configure one application context provider integration
@@ -240,13 +240,13 @@ The Snyk Consultant will work with Customer to configure Snyk AppRisk as follows
   * Identify coverage gaps based on purchased Snyk products
   * Notify by email (or similar) when a criteria (for example, coverage gap) is met
 
-#### **Walkthrough of coverage and visibility use cases in AppRisk**
+#### **Walkthrough of coverage and visibility use cases in Snyk Essentials**
 
-The Snyk Consultant will educate the Customer on how to identify assets not currently being scanned by Snyk and how to group assets and issues based on asset classification.
+The Snyk Consultant will educate the Customer on how to identify assets not being scanned by Snyk and how to group assets and issues based on asset classification.
 
-#### **Walkthrough of prioritized issues in AppRisk dashboard**
+#### **Walkthrough of prioritized issues in Snyk Essentials dashboard**
 
-The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the AppRisk Dashboard.
+The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the Asset Dashboard.
 
 #### Documentation close-out
 
@@ -254,7 +254,7 @@ The Customer will be provided with a document that provides a comprehensive over
 
 ### Target initiatives - Snyk Essentials configuration
 
-<table><thead><tr><th width="382">Snyk AppRisk Prioritization Configuration</th><th width="299">Outcome</th></tr></thead><tbody><tr><td>Coverage and visibility configuration</td><td>SCM integration is configured in AppRisk and two starter policies are created to show coverage gaps and asset classifications respectively.</td></tr><tr><td>Walkthrough of coverage and visibility use cases in AppRisk</td><td>Gain an understanding of how to identify assets that are not currently being scanned by one more Snyk controls, as well as how to group assets and issues based on asset classification.</td></tr><tr><td>Walkthrough of prioritized issues in AppRisk</td><td>Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed.</td></tr></tbody></table>
+<table><thead><tr><th width="382">Snyk Essentials Prioritization Configuration</th><th width="299">Outcome</th></tr></thead><tbody><tr><td>Coverage and visibility configuration</td><td>SCM integration is configured in AppRisk and two starter policies are created to show coverage gaps and asset classifications respectively.</td></tr><tr><td>Walkthrough of coverage and visibility use cases in AppRisk</td><td>Gain an understanding of how to identify assets that are not currently being scanned by one more Snyk controls, as well as how to group assets and issues based on asset classification.</td></tr><tr><td>Walkthrough of prioritized issues in AppRisk</td><td>Gain an understanding of how to filter and prioritize issues in the Asset Dashboard.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed.</td></tr></tbody></table>
 
 ## Snyk AppRisk configuration
 
@@ -273,11 +273,11 @@ The Snyk Consultant will work with the Customer to install the Snyk Runtime Sens
 
 #### Tagging of Projects for the issues prioritization feature (up to 50 Targets)
 
-The Snyk consultant will provide guidance on how the Customer can add Project tags to Targets so Open Source, Code, and Container Projects are linked for the AppRisk Issues prioritization feature. This will include using a script for tagging SCM-monitored Projects (Open Source and Code) and the CLI for tagging Container Projects.
+The Snyk consultant will provide guidance on how the Customer can add Project tags to Targets so Open Source, Code, and Container Projects are linked for the Snyk AppRisk Issues prioritization feature. This will include using a script for tagging SCM-monitored Projects (Open Source and Code) and the CLI for tagging Container Projects.
 
 **Walkthrough of prioritized issues in AppRisk**
 
-The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the AppRisk dashboard, using the new risk factors detected by the Snyk Runtime Sensor.
+The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the Asset Dashboard, using the new risk factors detected by the Snyk Runtime Sensor.
 
 **Documentation close-out**&#x20;
 
