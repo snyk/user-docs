@@ -37,25 +37,14 @@ Role assertions should be provided to Snyk in the following format:
 
 Where:
 
-`snyk` is a fixed prefix for role mapping. **Required**.
-
-* Required.
-
-`scope` can be one of `org`, `group`, or `tenant`. **Required**; if a role mapping does not contain a valid scope, it will be ignored.
-
-* Required; if a role mapping does not contain a valid scope, it will be ignored.
-
-`target` can be a slug of an `org`, `group`, or `tenant` where the role will be granted. See [slugs](./#slugs) to find this information.
-
-* See the [Slugs](./#slugs) section for details on how to find this information.
-* **Optional**; may be an asterisk `*` or empty string `::`to apply as a [wildcard](./#wildcards) for all resources within the defined `scope` that are associated with the SSO connection.
-* Optional; an asterisk ( `*`) or an empty string can be used to apply to all resources **t**hat are associated with the SSO connection.
-
-`role` is the normalized name of the required role. See [Role normalized name](./#role-normalized-name) to find this information.
-
-* **Required**; if no role is present, the role mapping is ignored.
-* If the role is a custom role, that is, a role created in the Group Member Roles admin panel that can be of either `Org` or `Group` type,  then it must have a `custom:` prefix. See the [example role assertions](./#example-role-assertions).
-* Built-in roles do not have the `custom:` prefix, so values like `org_admin`, `org_collaborator`, `group_viewer` will refer to the Snyk pre-defined roles, which are shown with a padlock symbol in the Member Roles page.
+* `snyk` is a fixed prefix for role mapping. **Required**.
+* `scope` can be one of `org`, `group`, or `tenant`. **Required**; if a role mapping does not contain a valid scope, it will be ignored.
+* `target` can be a slug of an `org`, `group`, or `tenant` where the role will be granted. See [slugs](./#slugs) for more information.
+  * **Optional**; may be an asterisk `*` or empty string `::`to apply as a [wildcard](./#wildcards) for all resources within the defined `scope` that are associated with the SSO connection.
+  * **Optional**; an asterisk ( `*`) or an empty string can be used to apply to all resources **t**hat are associated with the SSO connection.
+* `role` is the normalized name of the required role. **Required**; if no role is present, the role mapping is ignored. See [Role normalized name](./#role-normalized-name) to find this information.
+  * If the role is a custom role, that is, a role created in the Group Member Roles admin panel that can be of either `Org` or `Group` type,  then it must have a `custom:` prefix. See the [example role assertions](./#example-role-assertions).
+  * Built-in roles do not have the `custom:` prefix, so values like `org_admin`, `org_collaborator`, `group_viewer` will refer to the Snyk pre-defined roles, which are shown with a padlock symbol in the Member Roles page.
 
 {% hint style="warning" %}
 Users must only have one role mapped per Organization, Group or Tenant. Mapping multiple roles except when using wildcards is not supported and can lead to unexpected behavior.
