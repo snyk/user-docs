@@ -56,6 +56,8 @@ Users must only have one role mapped per Organization, Group or Tenant. Mapping 
 Any user that is granted a role in an Organization within the SSO without an explicit Group-level role in the role assertion, will also be implicitly assigned the **Group Member** Group-level role for that Group. This is the pre-defined Group-level role with the fewest permissions and ensures that the user becomes a member of the Group.
 {% endhint %}
 
+If custom mapping is enabled you will receive a Tenant Member role on log in. Snyk recommends you amend this where appropriate to ensure any Tenant level roles are added where needed. For example, if a user is a Tenant Admin they should be included in the mapping to ensure they are assigned the correct role on log in.
+
 ### Example role assertions
 
 An SSO connection may only be associated with one Tenant, and all users with any memberships within a tenant must also have a Tenant Membership.&#x20;
