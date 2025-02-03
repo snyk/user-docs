@@ -62,11 +62,6 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
 
 ## Install Snyk Runtime Sensor
 
-{% hint style="info" %}
-* The Snyk Runtime Sensor is deployed as a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), meaning that there is a single [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) of the sensor for each [Node](https://kubernetes.io/docs/concepts/architecture/nodes/) available in the cluster.
-* The Snyk Runtime Sensor does not utilize any persistent storage, and its disk usage is minimal.
-{% endhint %}
-
 * The Snyk Runtime Sensor DaemonSet must meet the following minimum requirements:
   * `CPU: 100m` (can be increased using Helm)
   * `Memory: 512Mi` (can be increased using Helm)
@@ -79,7 +74,9 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
 ### As a Kubernetes DaemonSet, using a Helm chart
 
 {% hint style="info" %}
-When deployed as a Kubernetes DaemonSet, the Snyk runtime sensor capabilities are activated, allowing the sensor to report both the risk factors of Deployed and Loaded packages.
+* The Snyk runtime sensor is installed as a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), meaning that there is a single [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) of the sensor for each [Node](https://kubernetes.io/docs/concepts/architecture/nodes/) available in the cluster.
+* The Snyk runtime sensor does not utilize any persistent storage, and its disk usage is minimal.
+* When installed as a Kubernetes DaemonSet, the eBPF capabilities are activated, allowing the Snyk runtime sensor to report both the risk factors of Deployed and Loaded package.
 {% endhint %}
 
 You can use as guidance the [Helm chart](https://helm.sh) from the [helm/runtime-sensor](https://github.com/snyk/runtime-sensor) repository, which is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
@@ -103,7 +100,8 @@ To install the Snyk runtime sensor as a Kubernetes DaemonSet using Helm Charts, 
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
-5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
+5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format:\
+   `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`&#x20;
 6.  (Optional) You can apply filters for the pods monitored by the sensor by adding specific workload types, namespaces, and pod labels to the allow list. The sensor will then monitor only the pods that meet all the provided filters. By default, all pods are monitored.
 
     ```
@@ -115,8 +113,7 @@ To install the Snyk runtime sensor as a Kubernetes DaemonSet using Helm Charts, 
     ...
     ```
 
-    \
-    Available workload types:&#x20;
+    Available workload types:
 
     ```json
     deployment
@@ -151,8 +148,13 @@ To install the Snyk runtime sensor as a Kubernetes DaemonSet using Helm Charts, 
 
 ### As a Kubernetes Deployment, using a Helm chart
 
+{% hint style="info" %}
+* The Snyk runtime sensor is installed as a [Kubernetes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/), meaning that there is a single [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) of the sensor available in the entire cluster.
+* The Snyk runtime sensor does not utilize any persistent storage, and its disk usage is minimal.
+{% endhint %}
+
 {% hint style="warning" %}
-In a Kubernetes Deployment, the Snyk runtime sensor capabilities are disabled, so the sensor only reports the Deployed risk factor.
+In a Kubernetes Deployment, the eBPF capabilities are disabled, so the Snyk runtime sensor only reports the Deployed risk factor.
 {% endhint %}
 
 You can use as guidance the [Helm chart](https://helm.sh) from the [helm/runtime-sensor](https://github.com/snyk/runtime-sensor) repository, which is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
@@ -176,7 +178,8 @@ To install the Snyk runtime sensor as a Kubernetes Deployment using Helm Charts,
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
-5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format: `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`
+5. If your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default region (USA), you need to set the `snykAPIBaseURL` while installing the Helm chart in the following format:\
+   `api.<<REGION>>.snyk.io:443`, for example `api.eu.snyk.io:443`&#x20;
 6.  (Optional) You can apply filters for the pods monitored by the sensor by adding specific workload types, namespaces, and pod labels to the allow list. The sensor will then monitor only the pods that meet all the provided filters. By default, all pods are monitored.
 
     ```
@@ -188,8 +191,7 @@ To install the Snyk runtime sensor as a Kubernetes Deployment using Helm Charts,
     ...
     ```
 
-    \
-    Available workload types:&#x20;
+    Available workload types:
 
     ```json
     deployment
