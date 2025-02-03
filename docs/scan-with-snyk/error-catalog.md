@@ -313,9 +313,31 @@ If you want to override this global configuration for individual runs of snyk mo
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects/project-tags](https://docs.snyk.io/snyk-admin/snyk-projects/project-tags)
 
+### [SNYK-0008](#snyk-0008)
+
+#### Unable to fulfill the request
+
+Due to a server gateway error, the server cannot process the request. Check Snyk status and try again.
+
+**HTTP Status:** [502](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502)
+
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
+
+### [SNYK-0009](#snyk-0009)
+
+#### Unable to fulfill the request
+
+Due to service availability issues, Snyk cannot process the request. This issue is unexpected, and the service will recover shortly. If the error still occurs, contact Snyk Support.
+
+**HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
+
+**Help Links:**
+- [https://status.snyk.io/](https://status.snyk.io/)
+
 ### [SNYK-9999](#snyk-9999)
 
-#### Request not fulfilled due to server error
+#### Unable to process request
 
 The server cannot process the request due to an unexpected error. Check Snyk status, then try again.
 
@@ -551,6 +573,94 @@ Review configured environment variables and ensure that everything is intentiona
 
 **Help Links:**
 - [https://docs.snyk.io/snyk-cli/commands/config-environment](https://docs.snyk.io/snyk-cli/commands/config-environment)
+
+### [SNYK-CLI-0003](#snyk-cli-0003)
+
+#### Empty flag option
+
+A specified flag is missing an option value. Provide a correct option value and try again.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary)
+
+### [SNYK-CLI-0004](#snyk-cli-0004)
+
+#### Invalid flag option
+
+A specified flag option or combination is invalid. Provide a valid flag option or combination and try again.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary)
+
+### [SNYK-CLI-0005](#snyk-cli-0005)
+
+#### Unable to get vulnerabilities from resource
+
+If you are testing an npm package, check the version and package name and try running `snyk test` again. If you are testing a repository, try testing it at https://snyk.io/test/.For further assistance, run `snyk help` or see the Snyk docs.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+
+### [SNYK-CLI-0006](#snyk-cli-0006)
+
+#### Missing AUTH token
+
+When running your command, Snyk requires an authenticated account. You must include your API token as an environment value, or use `snyk auth` to authenticate.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/authenticate-to-use-the-cli](https://docs.snyk.io/snyk-cli/authenticate-to-use-the-cli)
+- [https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli)
+
+### [SNYK-CLI-0007](#snyk-cli-0007)
+
+#### Incomplete command arguments
+
+The specified CLI command includes missing or misconfigured arguments. Provide the correct arguments and try again.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary)
+
+### [SNYK-CLI-0008](#snyk-cli-0008)
+
+#### No supported files found
+
+Snyk could not detect any supported target files. Ensure the files you are importing are supported, that you are in the right directory, and try again.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/supported-languages-package-managers-and-frameworks](https://docs.snyk.io/supported-languages-package-managers-and-frameworks)
+
+### [SNYK-CLI-0009](#snyk-cli-0009)
+
+#### Too many vulnerable paths to Project
+
+There are too many vulnerable paths to process the project. If your command supports it, consider the following:pruning repeated subdependencies (`snyk test -p`); excluding directories (`snyk test --all-projects --exclude=dir1,file2`); setting a detection depth (`snyk test --all-projects --detection-depth=3`). If the error still occurs, consider debugging or contact Snyk Support.
+
+**HTTP Status:** [413](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#options-for-multiple-commands](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary#options-for-multiple-commands)
+- [https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
+- [https://docs.snyk.io/snyk-cli/commands/test#detection-depth-less-than-depth-greater-than](https://docs.snyk.io/snyk-cli/commands/test#detection-depth-less-than-depth-greater-than)
+- [https://docs.snyk.io/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than](https://docs.snyk.io/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than)
+
+### [SNYK-CLI-0010](#snyk-cli-0010)
+
+#### CLI validation failure
+
+CLI was unable to validate the required parameter. Provide the correct parameter and try again. If the error still occurs, consider debugging or contact Snyk Support.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
 
 ### [SNYK-OS-7001](#snyk-os-7001)
 
@@ -2581,4 +2691,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-01-30T09:00:55.383Z
+--- Generated at 2025-02-03T16:13:44.215Z
