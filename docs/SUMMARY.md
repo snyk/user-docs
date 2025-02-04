@@ -951,7 +951,7 @@
     * [Monitor (v1)](snyk-api/reference/monitor-v1.md)
     * [Organizations (v1)](snyk-api/reference/organizations-v1.md)
     * [Orgs](snyk-api/reference/orgs.md)
-    * [Policies](docs/snyk-api/reference/policies.md)
+    * [Policies](snyk-api/reference/policies.md)
     * [Projects (v1)](snyk-api/reference/projects-v1.md)
     * [Projects](snyk-api/reference/projects.md)
     * [Pull Request Templates](snyk-api/reference/pull-request-templates.md)
