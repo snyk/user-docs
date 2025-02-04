@@ -51,6 +51,12 @@ After you finish configuring the Backstage catalog, Snyk Essentials starts enric
 When you set up the catalog attributes, you must use the specific service-level attributes, for example `attribute.name.`
 {% endhint %}
 
+The following video presents an overview of the Backstage file from the Snyk Web UI.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609432/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-9a_-_v1_-_Application_Context_with_Backstage.mp4" %}
+Application Context with Backstage Catalog for Snyk Essentials and Snyk AppRisk
+{% endembed %}
+
 ## ServiceNow CMDB for SCM integrations
 
 {% hint style="info" %}
@@ -91,6 +97,16 @@ The ServiceNow CMDB integration is in Early Access and available with both Snyk 
 {% hint style="warning" %}
 When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration Hub setup.
 {% endhint %}
+
+The following videos present an overview of the ServiceNow CMDB from the Snyk Web UI.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609416/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-8a_-_v1_-_ServiceNow-CMDB_-_Part_1.mp4" %}
+Application Context with ServiceNow CMDB for Snyk Essentials and Snyk AppRisk - Part 1
+{% endembed %}
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609417/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-8b_-_v2_-_ServiceNow-CMDB_-_Part_2.mp4" %}
+Application Context with ServiceNow CMDB for Snyk Essentials and Snyk AppRisk - Part 2
+{% endembed %}
 
 ## Atlassian Compass
 
