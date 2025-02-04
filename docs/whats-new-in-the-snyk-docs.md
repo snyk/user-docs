@@ -7,6 +7,24 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## December 2024 and January 2025
+
+### **Snyk Container**
+
+* [Integrate with Docker Desktop Extension](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-docker-desktop-extension.md) has been updated to include an end-of-support notice. Effective June 20, 2025, the integration with Docker Desktop will no longer receive updates or technical support.
+
+### **Snyk CLI and IDEs**
+
+* [Eclipse IDE](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) major update
+* [Visual Studio IDE](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/) major update
+* Region configuration update for [IDEs](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/)
+* [Snyk images EOL policy updated](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-images-and-eol-image-policy.md)
+* [`snyk container test`](snyk-cli/commands/container-test.md) and [`snyk container monitor`](snyk-cli/commands/container-monitor.md) option `--exclude-node-modules` added
+
+### **Other updates**
+
+* [Snyk Admin](https://docs.snyk.io/snyk-admin) pages have been updated to reflect the addition of [Tenants](https://docs.snyk.io/snyk-admin/groups-and-organizations/tenant) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](https://docs.snyk.io/snyk-admin/groups-and-organizations#the-snyk-hierarchy).
+
 ## November 2024
 
 ### &#x20;**Snyk AppRisk**&#x20;
