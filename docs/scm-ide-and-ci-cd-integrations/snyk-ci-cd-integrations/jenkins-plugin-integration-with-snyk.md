@@ -141,9 +141,9 @@ Whether the step should fail if Snyk fails to scan the project due to an error. 
 
 Whether to monitor the Project on every build by taking a snapshot of its current dependencies on Snyk.io. Selecting this option will keep you notified about newly disclosed vulnerabilities and remediation options in the Project.
 
-**`organization` (optional, default: \_automatic**\_**)**
+**`organisation` (optional, default: \_automatic**\_**)**
 
-The Snyk Organization in which this Project should be tested and monitored. See `--org` in the [Snyk CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for the default behavior.
+The Snyk `organisation` in which this Project should be tested and monitored. See `--org` in the [Snyk CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for the default behavior.
 
 **`projectName` (optional, default: \_automatic**\_**)**
 
