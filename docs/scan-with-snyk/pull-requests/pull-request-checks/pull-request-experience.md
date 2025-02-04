@@ -73,4 +73,4 @@ Configure the Pull Request Experience for one or more integrations in your Snyk 
 
 For the **GitHub integration**, configure opening fix and upgrade pull requests from a fixed **GitHub account**, by providing a Personal Access Token (PAT), which has `write` permissions or above to the repos monitored by Snyk. See[  ](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)[Opening fix and upgrade pull requests from a fixed GitHub account](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for more information.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Configuration details for the GitHub integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Configuration details for the GitHub integration</p></figcaption></figure>

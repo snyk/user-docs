@@ -422,6 +422,7 @@
     * [Amazon EventBridge](integrate-with-snyk/event-forwarding/amazon-eventbridge.md)
     * [AWS CloudTrail Lake](integrate-with-snyk/event-forwarding/aws-cloudtrail-lake.md)
     * [AWS Security Hub](integrate-with-snyk/event-forwarding/aws-security-hub.md)
+    * [Google Security Command Center](integrate-with-snyk/event-forwarding/google-security-command-center.md)
   * [Vulnerability management tools](integrate-with-snyk/vulnerability-management-tools/README.md)
     * [appNovi Integration](integrate-with-snyk/vulnerability-management-tools/appnovi-integration.md)
     * [Atlassian Compass integration](integrate-with-snyk/vulnerability-management-tools/atlassian-compass-integration.md)
