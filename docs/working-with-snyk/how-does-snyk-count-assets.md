@@ -2,7 +2,7 @@
 
 ## Billable assets <a href="#billable-assets" id="billable-assets"></a>
 
-Managed Billable Assets are the resources, assets, and configuration files accessed through or managed by the customer in Snyk AppRisk.
+Managed Billable Assets are the resources, assets, and configuration files accessed through or managed by the customer in Snyk Essentials and Snyk AppRisk.
 
 According to Snyk, the following are considered Managed Billable Assets against the Customer's Subscription Allocation:
 

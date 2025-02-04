@@ -65,7 +65,7 @@ Snyk offers data residency for the following regions:
 Single-tenant deployments may support more regions than the ones listed here, subject to validation of architectural service supportability by Snyk engineering.
 
 {% hint style="info" %}
-Snyk AppRisk works across all regions. There is no need to set your region and use a specific URL.
+Snyk Essentials and Snyk AppRisk work across all regions. There is no need to set your region and use a specific URL.
 {% endhint %}
 
 ## Regional multi- and single-tenant hosting
@@ -80,7 +80,7 @@ SNYK-US-02, EU, and AU data center Snyk accounts are available only with the pur
 
 Snyk offers almost all the same features, support, and performance in the regional multi- and single-tenant regions as in SNYK-US-01. For an up-to-date overview of feature parity across regions, contact your account team.
 
-All Snyk AppRisk features are supported in all multi-tenant environments, while for the single-tenant environment you need to check the availability with your account team.
+All Snyk Essentials and Snyk AppRisk features are supported in all multi-tenant environments, while for the single-tenant environment you need to check the availability with your account team.
 
 ## Integration considerations
 

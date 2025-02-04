@@ -254,7 +254,7 @@ The Customer will be provided with a document that provides a comprehensive over
 
 ### Target initiatives - Snyk Essentials configuration
 
-<table><thead><tr><th width="382">Snyk Essentials Prioritization Configuration</th><th width="299">Outcome</th></tr></thead><tbody><tr><td>Coverage and visibility configuration</td><td>SCM integration is configured in AppRisk and two starter policies are created to show coverage gaps and asset classifications respectively.</td></tr><tr><td>Walkthrough of coverage and visibility use cases in AppRisk</td><td>Gain an understanding of how to identify assets that are not currently being scanned by one more Snyk controls, as well as how to group assets and issues based on asset classification.</td></tr><tr><td>Walkthrough of prioritized issues in AppRisk</td><td>Gain an understanding of how to filter and prioritize issues in the Asset Dashboard.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed.</td></tr></tbody></table>
+<table><thead><tr><th width="382">Snyk Essentials Prioritization Configuration</th><th width="299">Outcome</th></tr></thead><tbody><tr><td>Coverage and visibility configuration</td><td>SCM integration is configured in Snyk Essentials and two starter policies are created to show coverage gaps and asset classifications respectively.</td></tr><tr><td>Walkthrough of coverage and visibility use cases in Snyk Essentials</td><td>Gain an understanding of how to identify assets that are not currently being scanned by one more Snyk controls, as well as how to group assets and issues based on asset classification.</td></tr><tr><td>Walkthrough of prioritized issues in Snyk Essentials</td><td>Gain an understanding of how to filter and prioritize issues in the Asset Dashboard.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed.</td></tr></tbody></table>
 
 ## Snyk AppRisk configuration
 
@@ -285,13 +285,13 @@ The Customer will be provided with a document that provides a comprehensive over
 
 ### Target Initiatives - Snyk AppRisk configuration
 
-| Snyk AppRisk Configuration                                                   | Outcome                                                                                                                              |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Third-party coverage and visibility configuration                            | Third-Party integration is configured in AppRisk and a policy is created to show how the new data can be processed by AppRisk.       |
-| <p>Snyk Runtime Sensor installation</p><p><br></p>                           | Install Snyk Runtime Sensor on a predetermined customer environment based on Snyk System Requirements.                               |
-| Tagging of Projects for the issues prioritization feature (up to 50 targets) | Targets imported through an SCM integration must be tagged with tags that match the CLI-imported Container Projects.                 |
-| Walkthrough of prioritized issues in AppRisk                                 | Gain an understanding of how to filter and prioritize issues in the AppRisk Dashboard using deployed and loaded package risk factors |
-| Documentation close-out                                                      | Gain an understanding of work completed                                                                                              |
+| Snyk AppRisk Configuration                                                   | Outcome                                                                                                                            |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Third-party coverage and visibility configuration                            | Third-Party integration is configured in AppRisk and a policy is created to show how the new data can be processed by AppRisk.     |
+| <p>Snyk Runtime Sensor installation</p><p><br></p>                           | Install Snyk Runtime Sensor on a predetermined customer environment based on Snyk System Requirements.                             |
+| Tagging of Projects for the issues prioritization feature (up to 50 targets) | Targets imported through an SCM integration must be tagged with tags that match the CLI-imported Container Projects.               |
+| Walkthrough of prioritized issues in AppRisk                                 | Gain an understanding of how to filter and prioritize issues in the Asset Dashboard using deployed and loaded package risk factors |
+| Documentation close-out                                                      | Gain an understanding of work completed                                                                                            |
 
 ## Timeline for Snyk Jumpstart delivery
 
