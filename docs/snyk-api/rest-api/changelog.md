@@ -1,3 +1,54 @@
+## 2024-10-15 - Updated 2025-02-04
+
+### POST - `/orgs/{org_id}/policies` - Added
+- Create a new org-level policy.
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### GET - `/orgs/{org_id}/policies` - Added
+- Get all policies for the requested organisation.
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Update the org-level policy. 
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### GET - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Get a specific org-level policy based on its ID.
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### DELETE - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Delete an existing org-level policy.
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
 ## 2024-10-15 - Updated 2025-01-22
 
 ### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
