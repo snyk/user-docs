@@ -48,7 +48,7 @@ If you use Snyk Essentials or Snyk AppRisk for the first time, start with the **
 
 You can filter the information for all the inventory layouts and can use the following filters available under the **Advanced filters** section:
 
-* **Application\*** - the list of the applications for which you have configured the application context catalog in Snyk Essentials.
+* **Application\*** - the list of the applications for which you have configured the application context catalog in Snyk Essentials or Snyk AppRisk.
 * **Asset ID** - the unique identifier of the asset.
 * **Asset name** - the name of the asset.
 * **Asset type** - repository, package, or scanned artifact.
@@ -66,6 +66,7 @@ You can filter the information for all the inventory layouts and can use the fol
 * **Last seen** - specifies the most recent time this asset was detected by Snyk in any of the sources (for example, Snyk, SCM, and so on).
 * **Lifecycle\*** - represents the lifecycle state of the application context catalog component, for example `production`, `experimental`, `deprecated`.
 * **Locked attributes** - specify if the attribute value is locked.
+* **Organizations** - lists all the Snyk Organizations that are mapped to an asset.
 * **Owner\*** - represents the team owning the repository for which the application context catalog was configured.
 * **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **Runtime discovered** - specify the period when the runtime image asset was discovered.
@@ -74,7 +75,7 @@ You can filter the information for all the inventory layouts and can use the fol
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
-  * **N/A**: There are no commits detected by Snyk Essentials.
+  * **N/A**: There are no commits detected by Snyk Essentials or Snyk AppRisk.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.

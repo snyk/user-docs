@@ -1,5 +1,10 @@
 # Assets inventory components
 
+{% hint style="info" %}
+**Release status** \
+The **Related Projects** tab from the assets view, as well as the **Organizations** column and filter are in Early Access and available for Snyk AppRisk users with the Snyk Enterprise plan.
+{% endhint %}
+
 Each inventory layout is presented in a table format, detailing the available key attributes:
 
 * [Assets](assets-inventory-components.md#asset)
@@ -8,8 +13,11 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Tags](assets-inventory-components.md#tags)
 * [Developers](assets-inventory-components.md#developers)
 * [Class](assets-inventory-components.md#class)
+* [Risk factors](assets-inventory-components.md#risk-factors)
 * [Source](assets-inventory-components.md#source)
 * [SCM Repository freshness](assets-inventory-components.md#repository-freshness)
+* [Clusters](assets-inventory-components.md#clusters)
+* Organizations
 
 ## **Asset**
 
@@ -57,28 +65,44 @@ You can find scanned artifacts in the Inventory Type view, but they are not supp
 The asset information is divided into the following tabs:
 
 * **Summary** - a concentrated view of the asset properties. The Summary screen presents you with the following information:
-  * Asset Info
+  * Info
     * Class - specifies the business criticality of the asset.
     * Source - specifies the origin of the asset.
     * Risk factors - provides the list of active risk factors.
     * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
-  * Issues Info - categorizes the identified types of open issues.&#x20;
-  * App Context - asset metadata from App Context integrations, such as Backstage catalog or ServiceNow CMDB, can include the following attributes: catalog name, category, application, owner, and so on.
+  * Tags - provides the list of all tags available for that asset
+  * Issues  - categorizes the identified types of open issues.&#x20;
+  * App Context\* - asset metadata from App Context integrations, such as Backstage catalog or ServiceNow CMDB, can include the following attributes: catalog name, category, application, owner, and so on.
   * Related assets - a list of assets related to the selected one.
+
+\*App Context information is visible only when the asset is part of a Project for which the application context was configured.
 
 {% hint style="info" %}
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (493).png" alt="Snyk AppRisk Inventory - Assets Summary view"><figcaption><p>Snyk Essentials or Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (660).png" alt=""><figcaption><p>Snyk Essentials or Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
 
-You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Package Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
+You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Related Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
 
 <figure><img src="../.gitbook/assets/image (494).png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Snyk Essentials or Snyk AppRisk Inventory - Assets Summary view of a children asset</p></figcaption></figure>
 
+*   **Related Projects -** provides a collection of Snyk Projects that are associated with a specific asset within the platform. These projects are arranged in a table format, enabling you to view relevant information that assists in managing and assessing vulnerabilities related to the asset. Each Project is displayed with the following details:
+
+    * **Projects by Target**: A list of Projects grouped by targets. You can see both the Project name and the target name under which the Project is grouped.
+    * **Target Reference**: An optional identifier that may not always be available.
+    * **Scan Source**: indicates the source of the Project scan, specifying whether it originated from SCM or the CLI.
+    * **Issues**: Provides insight into the number and severity of identified issues within the Project.
+    * **Organization**: Displays the Organization to which the Project belongs.
+    * **Last Scan**: Shows the relative time since the last scan (for example, "3 hours ago") along with a tooltip that reveals the full date and time upon hovering.
+
+    The Projects are systematically sorted first by Target, followed by Target Reference, and finally by Last Scan date, ensuring that related Projects are easily identifiable and accessible for effective monitoring and remediation.
+
+<figure><img src="../.gitbook/assets/image (661).png" alt=""><figcaption><p>Snyk AppRisk - Assets Related Projects view</p></figcaption></figure>
+
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-<figure><img src="../.gitbook/assets/image (498).png" alt="Snyk AppRisk - Assets Attributes window"><figcaption><p>Snyk Essentials or Snyk AppRisk - Assets Attributes window</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (662).png" alt=""><figcaption><p>Snyk AppRisk - Assets Attributes view</p></figcaption></figure>
 
 ## Issues
 
@@ -229,3 +253,6 @@ The Clusters column lists all cluster names where an image is deployed and is us
 The Cluster column is populated only when the Snyk Runtime Sensor is utilized.
 {% endhint %}
 
+## Organizations
+
+The Organizations column lists all Snyk Organizations associated with each asset. This includes the names of Organizations that contain Projects linked to the asset, enabling users to filter and organize their asset inventory based on their organizational structures. Organizations are also available under Filters and allow you to filter assets in the Inventory view or to create policies in the Policies view.&#x20;

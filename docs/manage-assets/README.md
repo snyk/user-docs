@@ -4,7 +4,15 @@ Snyk defines an asset as an identifiable entity that is part of an application a
 
 ## Inventory overview
 
-The Inventory page in the Snyk Web UI is structured into Inventory layouts and provides information about your assets. Here is a list of all the available inventory layouts:
+Use the **Inventory** to organize your repository assets, visualize SCM tool assets, track Snyk coverage, and prioritize mitigation based on business impact.
+
+The **Inventory** page in the Snyk Web UI is structured into multiple tabs, called Inventory layouts, and provides information about your assets.
+
+{% hint style="info" %}
+The Inventory menu is available in the Snyk Web UI only for the Snyk AppRisk users.
+{% endhint %}
+
+Here is a list of all the available inventory layouts:
 
 * **All Assets**: All the discovered assets, grouped by their type.&#x20;
 * **Asset Hierarchy**: All the assets in a hierarchical structure. The list of assets is sorted by issue counts, and where applicable, the package assets are listed underneath the repositories where they are located. The Asset hierarchy is visible only when there are no filters applied.
@@ -17,6 +25,10 @@ The following video presents an overview of the Inventory view from the Snyk Web
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1737657015/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-4a_-_v1_-_Inventory.mp4" %}
 Reviewing asset inventory
+{% endembed %}
+
+{% embed url="https://www.youtube.com/watch?v=NwF1a08dwjk" %}
+Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
 {% endembed %}
 
 {% hint style="info" %}
