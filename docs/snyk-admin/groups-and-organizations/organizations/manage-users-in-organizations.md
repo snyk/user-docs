@@ -28,7 +28,7 @@ Inviting members to an Organization
 
 ## Revoke pending invites
 
-Follow these steps to cancel pending invites:
+Note that an invite expires after 48 hours. Follow these steps to cancel pending invites:
 
 1.  On the **Members** page, click the **Revoke pending invites link**, which appears when there is at least one pending invite.\
 
