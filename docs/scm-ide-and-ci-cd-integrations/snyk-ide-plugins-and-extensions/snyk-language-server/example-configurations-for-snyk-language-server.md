@@ -1,4 +1,4 @@
-# Example configurations for Snyk Lanugage Server
+# Example configurations for Snyk Language Server
 
 ## Example configuration for Sublime Text
 
@@ -130,6 +130,7 @@ _G.load_config = function()
                 end,
                 init_options = {
                     activateSnykCode = "true",
+                    token = "xxx"
                 }
             };
         }
