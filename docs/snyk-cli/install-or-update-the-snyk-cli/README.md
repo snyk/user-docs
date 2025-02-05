@@ -33,12 +33,12 @@ mv ./snyk /usr/local/bin/
 
 You can also use these direct links to download the executables:
 
-| OS\Architecture | amd64                                                                | arm64                                                                       |
-| --------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| macOS           | [snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)        | [snyk-macos-arm64](https://downloads.snyk.io/cli/stable/snyk-macos-arm64)   |
-| Linux           | [snyk-linux](https://downloads.snyk.io/cli/stable/snyk-linux)        | [snyk-linux-arm64](https://downloads.snyk.io/cli/stable/snyk-linux-arm64)   |
-| Alpine          | [snyk-alpine](https://downloads.snyk.io/cli/stable/snyk-alpine)      | [snyk-alpine-arm64](https://downloads.snyk.io/cli/stable/snyk-alpine-arm64) |
-| Windows         | [snyk-win.exe](https://downloads.snyk.io/cli/v1.1294.0/snyk-win.exe) | -                                                                           |
+| OS\Architecture | amd64                                                             | arm64                                                                       |
+| --------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| macOS           | [snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)     | [snyk-macos-arm64](https://downloads.snyk.io/cli/stable/snyk-macos-arm64)   |
+| Linux           | [snyk-linux](https://downloads.snyk.io/cli/stable/snyk-linux)     | [snyk-linux-arm64](https://downloads.snyk.io/cli/stable/snyk-linux-arm64)   |
+| Alpine          | [snyk-alpine](https://downloads.snyk.io/cli/stable/snyk-alpine)   | [snyk-alpine-arm64](https://downloads.snyk.io/cli/stable/snyk-alpine-arm64) |
+| Windows         | [snyk-win.exe](https://downloads.snyk.io/cli/stable/snyk-win.exe) | -                                                                           |
 
 You can rename the files for example snyk-win.exe to snyk.exe so you can run snyk commands as documented, for example, `snyk test`.
 
