@@ -33,6 +33,31 @@ Navigate to the [Third-party integrations for Snyk AppRisk](../manage-risk/snyk-
 
 Each connected integration enables you to pause data syncing, modify integration profiles and configurations, delete the integration, or check when the integration was last synced and when the next sync is scheduled.
 
+### Integrations syncing time
+
+Depending on the type of action, the syncing times might differ:
+
+* Commits - 6 hours
+* Get repository list - 6 hours
+* Enrich repository - daily
+* Sync repository (archive old or deleted repositories) - weekly
+* Get organization chart - weekly
+
+### Integration connection statuses
+
+After you finish setting up an integration, you can see the following connection statuses:
+
+* Setup in progress
+* Connected&#x20;
+* Connection failed&#x20;
+* x profile(s) connected
+* &#x20;x/y profile(s) connected
+* x profile(s) failed
+
+If you encounter any of the failed statuses, check the Connection failure details list available on the integration card.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Integration card - Connection failure details list</p></figcaption></figure>
+
 ### Snyk AppRisk integrations ecosystem
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk AppRisk. The integrations are categorized by type, listed by name, and indicated as available or not for both Snyk Essentials and Snyk AppRisk.

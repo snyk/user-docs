@@ -59,6 +59,8 @@ Each connected integration enables you to:
 * Delete the integration
 * Check when the integration was last synced and when the next sync is scheduled.
 
+See the [Integration syncing time](../../integrate-with-snyk/#integrations-syncing-time) for more details about the time required to sync for each action.
+
 ### Wildcard SCM integration
 
 The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;
