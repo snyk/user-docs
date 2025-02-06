@@ -43,6 +43,8 @@ Inline Comments for Snyk PR Checks is in [Early Access](../../../getting-started
 
 The Inline Comments feature adds a detailed comment for each issue identified by the Snyk Code Pull Request Check. Each comment includes the severity level, the name and a short description of the issue, helpful links for further information, and, if applicable, the data flow.&#x20;
 
+This feature is limited to 10 inline comments at Pull Request level. The Summary Comment will display a message if the cap is surpassed.
+
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 14.03.12.png" alt=""><figcaption><p>Inline Comment feature for Pull Request Experience</p></figcaption></figure>
 
 ### Inline Comment Creation: Support Matrix
