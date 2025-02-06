@@ -1412,6 +1412,20 @@ Could not download Go toolchain.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
+### [SNYK-OS-GO-0010](#snyk-os-go-0010)
+
+#### The 10 GB space limit for downloaded Golang dependencies has been exceeded
+
+The total size of the downloaded Golang dependencies in the manifest file exceeds the 10GB limit.
+This often happens due to the large size or large number of Golang dependencies.
+
+Currently this is a product limitation for SCM. As a workaround, use the 'snyk monitor' command via Snyk CLI.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/commands/monitor](https://docs.snyk.io/snyk-cli/commands/monitor)
+
 ### [SNYK-OS-MAVEN-0001](#snyk-os-maven-0001)
 
 #### Missing property
@@ -2691,4 +2705,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-02-03T16:13:44.215Z
+--- Generated at 2025-02-06T07:47:55.503Z
