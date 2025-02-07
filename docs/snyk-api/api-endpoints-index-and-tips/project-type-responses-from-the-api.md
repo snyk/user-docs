@@ -1,6 +1,6 @@
 # Project type responses from the API
 
-The Snyk Project type, defined as the package manager of the project, is returned from the [API v1 Projects endpoints](../reference/projects-v1.md): and from the endpoint [List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects).
+The Snyk Project type, defined as `the package manager of the project`, is returned from the [API v1 Projects endpoints](../reference/projects-v1.md): and from the endpoint [List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects).
 
 The following is a list of the possible `type` values that may be returned, representing the package managers supported by Snyk:
 
