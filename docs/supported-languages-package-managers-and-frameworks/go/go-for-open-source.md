@@ -103,7 +103,7 @@ Private module support in different SCMs varies depending on whether [full sourc
 ### **Snyk Broker support for GO**
 
 {% hint style="warning" %}
-Snyk Broker is supported only  when [full source code analysis](go-for-open-source.md#enable-full-source-code-analysis) is disabled
+To use Snyk Broker with Go, you must disable [full source code analysis](go-for-open-source.md#enable-full-source-code-analysis).
 {% endhint %}
 
 Go Modules Projects imported using new [Snyk Broker](../../enterprise-setup/snyk-broker/) clients should work as expected.
