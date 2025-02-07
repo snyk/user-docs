@@ -626,7 +626,7 @@ The Snyk V1 API endpoint [List all aggregated issues](https://snyk.docs.apiary.i
 
 ### [List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)
 
-The query-string parameter for types is optional. The endpoint does not enforce specific project types and will return `no matching projects` if you enter a string that does not match a project type.
+The query-string parameter for types is optional. The endpoint does not enforce specific project types and will return `no matching projects` if you enter a string that does not match a requested project type. See [Project type responses from the AP](project-type-responses-from-the-api.md)I for a list of project types.
 
 **More information:** [Slack app (for Jira integration)](../../integrate-with-snyk/jira-and-slack-integrations/slack-app.md) (Use: Find your Project ID);\
 [Snyk Projects](../../snyk-admin/snyk-projects/);\
