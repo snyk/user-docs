@@ -970,6 +970,7 @@
   * [API endpoints index and tips](snyk-api/api-endpoints-index-and-tips/README.md)
     * [Solutions for specific use cases](snyk-api/api-endpoints-index-and-tips/solutions-for-specific-use-cases.md)
     * [Scenarios for using the Snyk API](snyk-api/api-endpoints-index-and-tips/scenarios-for-using-the-snyk-api.md)
+    * [Issue IDs in Snyk APIs](snyk-api/api-endpoints-index-and-tips/issue-ids-in-snyk-apis.md)
     * [Organization and Group identification for Projects using the API](snyk-api/api-endpoints-index-and-tips/organization-and-group-identification-for-projects-using-the-api.md)
     * [Project issue paths API endpoints](snyk-api/api-endpoints-index-and-tips/project-issue-paths-api-endpoints.md)
     * [Project type responses from the API](snyk-api/api-endpoints-index-and-tips/project-type-responses-from-the-api.md)
