@@ -2,13 +2,14 @@
 
 ## Scan archives
 
-In addition to scanning images from a local Docker daemon or remote registry, Snyk can directly scan or monitor a Docker or OCI archive by running `snyk container test docker-archive:<filename>.tar` or `snyk container test oci-archive:<filename>.tar.`&#x20;
+In addition to scanning images from a local Docker daemon or remote registry, Snyk can directly scan or monitor a Docker or OCI or Kaniko archive by running `snyk container test docker-archive:<filename>.tar` or `snyk container test oci-archive:<filename>.tar.` or `snyk container test kaniko-archive:<filename>.tar.`
 
 For example:
 
 ```
 snyk container test docker-archive:archive.tar
 snyk container test oci-archive:archive.tar
+snyk container test kaniko-archive:archive.tar
 ```
 
 {% hint style="info" %}
@@ -56,8 +57,8 @@ When both are passed, the options take precedence over the environment variables
 Frequently used CLI options include:
 
 * `--json` - useful for integrating with other tools
-* `--sarif` - useful for integrating with other tools. The option is only available with `container test`. See also [OASIS Static Analysis Results Interchange Format (SARIF)](https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=sarif).
-* `--exclude-base-image-vulns`  - only available with `container test`&#x20;
+* `--sarif` - useful for integrating with other tools. The option is only available with `container test`. See also [OASIS Static Analysis Results Interchange Format (SARIF)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=sarif).
+* `--exclude-base-image-vulns` - only available with `container test`
 * `--severity-threshold` - only available with `container test`
 * `--exclude-app-vulns`
 * `--nested-jars-depth`
