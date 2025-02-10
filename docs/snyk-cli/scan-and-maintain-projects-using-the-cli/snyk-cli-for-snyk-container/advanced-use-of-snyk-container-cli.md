@@ -9,7 +9,6 @@ For example:
 ```
 snyk container test docker-archive:archive.tar
 snyk container test oci-archive:archive.tar
-(coming soon) snyk container test kaniko-archive:archive.tar
 ```
 
 {% hint style="info" %}
