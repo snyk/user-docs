@@ -27,7 +27,7 @@ Click any available policies to view them on the full screen and access all thei
 
 You can run a simulation to get an overview of how the policy is working. A number is displayed above the policy, indicating the total of assets found matching the criteria you added to the policy.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Simulate Policies -New UI.png" alt="AppRisk - Policy simulation"><figcaption><p>Snyk Essentials or Snyk AppRisk - Policy simulation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Simulate Policies -New UI.png" alt="AppRisk - Policy simulation"><figcaption><p>Snyk Essentials - Policy simulation</p></figcaption></figure>
 
 ### Run the policy
 

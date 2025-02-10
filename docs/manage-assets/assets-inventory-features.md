@@ -7,7 +7,7 @@ Risk factors for Snyk AppRisk are in Early Access and are available only with Sn
 **Runtime discovered** and **Runtime last seen** filters take their release status from the&#x20;
 {% endhint %}
 
-Snyk Essentials and Snyk AppRisk provide powerful search and filtering capabilities to help you narrow down assets for investigation and mitigation.
+Snyk Essentials provides powerful search and filtering capabilities to help you narrow down assets for investigation and mitigation.
 
 ## Search capabilities
 
@@ -43,12 +43,12 @@ Click Filters from the top left side of the screen. A pop-up is displayed allowi
 You can add as many filters as needed. To add another filter click **Add Filter,** set the condition as **And** or **Or** and customize the **Property**, **Condition**, and **Value** fields.&#x20;
 
 {% hint style="info" %}
-If you use Snyk Essentials or Snyk AppRisk for the first time, start with the **Coverage** filter to determine where you have Snyk implemented.
+If you use Snyk Essentials for the first time, start with the **Coverage** filter to determine where you have Snyk implemented.
 {% endhint %}
 
 You can filter the information for all the inventory layouts and can use the following filters available under the **Advanced filters** section:
 
-* **Application\*** - the list of the applications for which you have configured the application context catalog in Snyk Essentials or Snyk AppRisk.
+* **Application\*** - the list of the applications for which you have configured the application context catalog in Snyk Essentials.
 * **Asset ID** - the unique identifier of the asset.
 * **Asset name** - the name of the asset.
 * **Asset type** - repository, package, or scanned artifact.
@@ -75,7 +75,7 @@ You can filter the information for all the inventory layouts and can use the fol
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
-  * **N/A**: There are no commits detected by Snyk Essentials or Snyk AppRisk.
+  * **N/A**: There are no commits detected by Snyk Essentials.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.

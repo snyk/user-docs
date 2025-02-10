@@ -12,4 +12,4 @@ The following use case demonstrates how to apply the custom-defined `backend` ta
 
 This is how the policy should look after you finish setting up all filters and actions.
 
-<figure><img src="../../../../.gitbook/assets/Set tag.png" alt="AppRisk - Setting up a Set Asset Tag policy"><figcaption><p>Snyk Essentials or Snyk AppRisk - Setting up a Set Asset Tag policy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Set tag.png" alt="AppRisk - Setting up a Set Asset Tag policy"><figcaption><p>Snyk Essentials - Setting up a Set Asset Tag policy</p></figcaption></figure>

@@ -2,7 +2,7 @@
 
 ## Overview
 
-With Snyk Essentials or Snyk AppRisk policies, you can easily automate the process of adding business context and receiving notifications.&#x20;
+With Policies, you can easily automate the process of adding business context and receiving notifications.&#x20;
 
 {% hint style="info" %}
 After a policy is created, it is run in a maximum of 3 hours after creation, then once every 3 hours.&#x20;
@@ -10,7 +10,7 @@ After a policy is created, it is run in a maximum of 3 hours after creation, the
 If your policy is set to run daily, then the policy is run 3 hours after the 24-hour period ends. You can always manually run a policy by using the Run button.
 {% endhint %}
 
-Access the Snyk Essentials or Snyk AppRisk policies by positioning yourself at the Group level, selecting **Policies**, then **Assets**.
+Access the Snyk Essentials policies by positioning yourself at the Group level, selecting **Policies**, then **Assets**.
 
 The following video presents an overview of the types of policies you can create from the Policies view.
 
@@ -34,7 +34,7 @@ Common use cases for policies include:
 
 ### New asset notifications
 
-&#x20;Notify members of the AppSec team when new assets meeting certain criteria are discovered. For example, you may send a Slack message to the infra team if new repository assets that leverage Terraform as a technology are detected by Snyk Essentials or Snyk AppRisk.
+&#x20;Notify members of the AppSec team when new assets meeting certain criteria are discovered. For example, you may send a Slack message to the infra team if new repository assets that leverage Terraform as a technology are detected by Snyk Essentials.
 
 When setting up a notification action (email or Slack) for a policy, you can include a link to the relevant assets. Each notification will list all the assets impacted by the policy. You can view the assets individually, or you can see a summary of all the assets by clicking the **Click Here** option in the notification. The list of assets displayed in the email notification is automatically generated.
 

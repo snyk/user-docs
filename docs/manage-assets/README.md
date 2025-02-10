@@ -8,10 +8,6 @@ Use the **Inventory** to organize your repository assets, visualize SCM tool ass
 
 The **Inventory** page in the Snyk Web UI is structured into multiple tabs, called Inventory layouts, and provides information about your assets.
 
-{% hint style="info" %}
-The Inventory menu is available in the Snyk Web UI only for the Snyk AppRisk users.
-{% endhint %}
-
 Here is a list of all the available inventory layouts:
 
 * **All Assets**: All the discovered assets, grouped by their type.&#x20;
@@ -27,10 +23,6 @@ The following video presents an overview of the Inventory view from the Snyk Web
 Reviewing asset inventory
 {% endembed %}
 
-{% embed url="https://www.youtube.com/watch?v=NwF1a08dwjk" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
-
 {% hint style="info" %}
 **Release status** \
 Risk factors for Snyk AppRisk are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
@@ -40,7 +32,7 @@ Risk factors for Snyk AppRisk are in Early Access and are available only with Sn
 
 ## Assets overview
 
-In the Snyk Essentials or Snyk AppRisk context, you can find information about assets under the following menus: [Inventory](./), [Policies](../manage-risk/policies/assets-policies/), [Insights for Snyk AppRisk](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md), and [Analytics](../manage-risk/enterprise-analytics/application-analytics.md).&#x20;
+In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](./), [Policies](../manage-risk/policies/assets-policies/), [Insights for Snyk AppRisk](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md), and [Analytics](../manage-risk/enterprise-analytics/application-analytics.md).&#x20;
 
 The main source of information is the **Inventory** menu. Here, you can view, filter, and manage your assets.&#x20;
 

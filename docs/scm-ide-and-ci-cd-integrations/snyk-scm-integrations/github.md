@@ -2,7 +2,7 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](github.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. To set up integrations for Snyk AppRisk, use the Integrations menu at the Group level.
+* [Group level ](github.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials. To set up integrations for Snyk Essentials, use the Integrations menu at the Group level.
 * [Organization level](github.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integrations

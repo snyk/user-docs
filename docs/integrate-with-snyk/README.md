@@ -79,14 +79,14 @@ See the [Snyk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integ
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 
-<figure><img src="../.gitbook/assets/image (11) (4).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Snyk AppRisk - Integration status</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (4).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Snyk Web UI - Integration status</p></figcaption></figure>
 
 ### Using Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker - AppRisk](../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker](../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).
 
 {% hint style="info" %}
-Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before running the commands.
+Enable the Snyk Essentials flag in your Snyk Broker deployment environment before running the commands.
 {% endhint %}
 
 * GitHub - install and configure Snyk Broker

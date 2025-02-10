@@ -3,11 +3,11 @@
 {% hint style="info" %}
 **Feature availability**
 
-Policies are available only with Enterprise plans and apply only to Snyk Open Source scans.&#x20;
+Policies are available only with Snyk Enterprise plans and apply only to Snyk Open Source scans.&#x20;
 
 For more information, see [plans and pricing](https://snyk.io/plans/).
 
-Note that the`.snyk` file is a policy file that Snyk uses to define specific analysis behaviors for Open Source, Snyk Code, and Snyk IaC. and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](the-.snyk-file.md) for details.
+The`.snyk` file is a policy file that Snyk uses to define specific analysis behaviors for Open Source, Snyk Code, and Snyk IaC. and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](the-.snyk-file.md) for details.
 {% endhint %}
 
 Snyk policies contain rules to define how Snyk behaves when encountering specific types of Open Source issues. With policies, you can identify types of issues based on conditions, such as `no exploit available`, and then apply actions to these issues, such as changing the severity. Thus by using customizable Snyk policies, you can define actions for specific types of issues encountered in scanning.

@@ -9,7 +9,7 @@ You can find prioritization within Snyk under several names and with different c
 
 You can focus solely on one type of prioritization, or you can combine them for a more complex and targeted focus on the issues that require your immediate attention. You can use prioritization for your vulnerabilities, your security program, and your coverage (from a security perspective), or you can use it in the Reporting section of your Projects.\
 \
-For example, if you only prioritize the Projects from your repositories, then the list of issues is more general. However, if you choose to use Prioritization with Insights, available for Snyk Essentials or Snyk AppRisk, the analyzed issues are filtered through several other factors (risk factors, assets) all contributing to the creation of an issues priority list based on more complex and targeted filters, allowing you to customize the prioritization based on your needs.&#x20;
+For example, if you only prioritize the Projects from your repositories, then the list of issues is more general. However, if you choose to use Prioritization with Issues, available for Snyk AppRisk, the analyzed issues are filtered through several other factors (risk factors, assets) all contributing to the creation of an issues priority list based on more complex and targeted filters, allowing you to customize the prioritization based on your needs.&#x20;
 
 ## Prioritization at the Project level
 

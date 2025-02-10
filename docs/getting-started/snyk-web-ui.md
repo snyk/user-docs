@@ -37,14 +37,14 @@ For information on how to automate the process of adding business context and re
 ### Manage integrations for asset discovery, asset coverage, and issues from third-party vendors
 
 {% hint style="info" %}
-The Group-level Integrations view focuses on asset management and discovery and is available with Snyk Essentials and Snyk AppRisk.
+The Group-level Integrations view focuses on asset management and discovery and is available with Snyk Enterprise.
 {% endhint %}
 
 The **Integrations** page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
 
 You can find an overview of all your integrations on the Snyk Web UI **Integrations** page. You can enable or disable your integrations, edit them, or remove them from your configuration.
 
-For more details about available integrations, see [Snyk AppRisk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Integrate with Snyk](../integrate-with-snyk/#integrations-for-snyk-apprisk).
+For more details about available integrations, see [Snyk Essentials SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Integrate with Snyk](../integrate-with-snyk/#integrations-for-snyk-apprisk).
 
 #### Enable or disable an integration
 
@@ -174,7 +174,7 @@ The Reports page has all report types available at both the Group and Organizati
 ### View and prioritize issues
 
 {% hint style="info" %}
-Issues are available only for Snyk Essentials and Snyk AppRisk users.
+Issues are available only for Snyk Enterprise users.
 {% endhint %}
 
 The [Issues page](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) provides a centralized view of all the issues identified by Snyk with additional asset context. This helps you and your team to better triage and remediate issues in Snyk.

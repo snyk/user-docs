@@ -2,7 +2,7 @@
 
 Snyk defines an asset as a meaningful, real-world component in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages), and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term). In most cases, assets carry a risk or aggregate risk of other components, for example, repositories that contain packages.
 
-Snyk Essentials or Snyk AppRisk inventory layouts are organizing your repository assets in meaningful ways, enabling you to:
+Snyk Essentials inventory layouts are organizing your repository assets in meaningful ways, enabling you to:
 
 * Gain full repository asset visibility from your SCM tools, including details about configured teams and repository code committers.
 * Track controls coverage for Snyk products.
@@ -14,7 +14,7 @@ Each line in the inventory represents an asset.
 
 ## Inventory Layouts <a href="#inventory-layouts" id="inventory-layouts"></a>
 
-To get better context and clarity over your asset inventory, Snyk Essentials and Snyk AppRisk allow flexible structuring with inventory layouts. Snyk Essentials and Snyk AppRisk include four inventory layouts and group assets by different contexts. You can find all inventory layouts under the Inventory menu option at the Group level:&#x20;
+To get better context and clarity over your asset inventory, Snyk Essentials allows flexible structuring with inventory layouts. Snyk Essentials includes four inventory layouts and groups assets by different contexts. You can find all inventory layouts under the Inventory menu option at the Group level:&#x20;
 
 * **All Assets**: All the discovered assets, grouped by their type.&#x20;
 * **Asset Hierarchy**: Asset Hierarchy layout shows assets in a hierarchical structure. The list of assets is sorted by issue counts, and, where applicable, the package assets are listed underneath the repositories where they are located. Assets hierarchy is visible only when there are no filters applied.
@@ -22,12 +22,6 @@ To get better context and clarity over your asset inventory, Snyk Essentials and
 * **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk Essentials.
 
 Each inventory layout may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
-
-The following video presents an overview of the Inventory view from the Snyk Web UI.
-
-{% embed url="https://www.youtube.com/watch?v=NwF1a08dwjk" %}
-Liked the video? Checkout the rest of the course on [Snyk Learn](https://learn.snyk.io/lesson/snyk-apprisk-essentials/)!
-{% endembed %}
 
 {% hint style="info" %}
 **Release status** \
@@ -46,8 +40,8 @@ Assets in the inventory are presented with key attributes in the following colum
 
 * **Asset** - The name of the repository asset, scanned artifact, and the Git remote URL, if available. Scanned artifacts are missing Git remote URLs.
 * **Issue** - The number of issue counts on open assets aggregated across all relevant tools of the same severity of the asset itself and its child assets or packages. The severity level is classified into **C** (critical), **H** (high), **M** (medium), and **L** (low).
-* **Controls** - A report detailing all products detected by the Snyk Essentials or Snyk AppRisk on a specific repository asset and all products that should be but are not covered by Snyk Essentials or Snyk AppRisk.
-* **Tags** -  Snyk Essentials or Snyk AppRisk automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository, and repository latest updates. You can also use policies to tag repository assets.
+* **Controls** - A report detailing all products detected by the Snyk Essentials on a specific repository asset and all products that should be but are not covered by Snyk Essentials.
+* **Tags** -  Snyk Essentials automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository, and repository latest updates. You can also use policies to tag repository assets.
 * **Developers** - Includes the SCM profile details for code committers to the repository asset.
 * **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. You can manually change the class or automatically change it by applying a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
 * **Risk factors** - Lists the potential vulnerabilities and security threats associated with each asset and helps users identify specific risks, enabling them to prioritize and address issues more effectively.&#x20;
@@ -62,13 +56,13 @@ The Clusters column is hidden by default. To enable it, click Columns, select Cl
 
 ### **Asset Sources, Types, and Scanned Artifacts**
 
-Snyk Essentials and Snyk AppRisk derive assets from Snyk automatically, and also from any SCM tools that are onboarded using the Snyk Essentials Integration Hub. SCM tools from Snyk Essentials Integration Hub may add additional repositories that are not scanned by Snyk, as well as additional contexts, such as teams and code committers.
+Snyk Essentials automatically derives assets from Snyk and any SCM tools that are onboarded using the Snyk Essentials Integration Hub. SCM tools from the Snyk Essentials Integration Hub may add additional repositories that are not scanned by Snyk and additional contexts, such as teams and code committers.
 
 ### Repository assets, scanned artifacts and packages
 
 #### Repository assets
 
-Snyk Essentials and Snyk AppRisk support repository assets (from main branches) as an asset type. Repository assets are visible in all inventory layouts and are supported by Policies. To avoid duplication, assets are identified using a unique identifier, which is the git remote URL for repository assets.
+Snyk Essentials supports repository assets (from main branches) as an asset type. Repository assets are visible in all inventory layouts and are supported by Policies. To avoid duplication, assets are identified using a unique identifier, which is the git remote URL for repository assets.
 
 {% hint style="info" %}
 For Snyk Essentials SCM imported repositories, archived or deleted repositories will not be displayed in the asset inventory and will not be shown in the dashboard widgets.
@@ -76,9 +70,9 @@ For Snyk Essentials SCM imported repositories, archived or deleted repositories 
 
 #### Scanned artifacts
 
-Snyk Essentials and Snyk AppRisk also include the concept of scanned artifacts. A scanned artifact is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.&#x20;
+Snyk Essentials also includes the concept of scanned artifacts. A scanned artifact is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.&#x20;
 
-Scanned artifacts provide users with visibility into what Snyk Essentials or Snyk AppRisk detects from scans but require additional troubleshooting.&#x20;
+Scanned artifacts provide users with visibility into what Snyk Essentials detects from scans but require additional troubleshooting.&#x20;
 
 You can see the scanned artifacts in the Inventory Type view. The scanned artifacts are not supported by Policies. Furthermore, scanned artifacts may include duplicates, as identifying information is missing.
 
@@ -86,5 +80,5 @@ You can see the scanned artifacts in the Inventory Type view. The scanned artifa
 
 Packages are defined as software or libraries that are managed by package management systems.
 
-Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk Essentials and Snyk AppRisk to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
+Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk Essentials to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
 

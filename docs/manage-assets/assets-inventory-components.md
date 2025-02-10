@@ -21,7 +21,7 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 ## **Asset**
 
-An asset in Snyk Essentials and Snyk AppRisk represents a component in the software development lifecycle that may pose a risk. The following asset types are available:
+An asset in Snyk Essentials represents a component in the software development lifecycle that may pose a risk. The following asset types are available:
 
 * Repository assets [**`Billable`**](../working-with-snyk/how-does-snyk-count-assets.md#billable-assets)
 * Container images [**`Billable`**](../working-with-snyk/how-does-snyk-count-assets.md#billable-assets)
@@ -44,19 +44,19 @@ If you scan the code locally using CLI, with no association to a repository, the
 
 You can identify a container image based on the Image ID. If multiple container images have the same Image ID, then only one image asset is generated for that Image ID, enriched with information from all the identified container images for that ID.
 
-Snyk Essentials and Snyk AppRisk retrieve all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) page for more details.
+Snyk Essentials retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) page for more details.
 
 ### Packages
 
-Packages in Snyk Essentials and Snyk AppRisk are defined as software or libraries that are managed by package management systems.&#x20;
+Packages in Snyk Essentials are defined as software or libraries that are managed by package management systems.&#x20;
 
-Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk Essentials and Snyk AppRisk to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
+Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk Essentials to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
 
 ### Scanned artifacts
 
-A scanned artifact in Snyk Essentials or Snyk AppRisk is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.&#x20;
+A scanned artifact in Snyk Essentials is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.&#x20;
 
-Scanned artifacts provide users with visibility into what Snyk Essentials or Snyk AppRisk detects from scans but require additional troubleshooting.&#x20;
+Scanned artifacts provide users with visibility into what Snyk Essentials detects from scans but require additional troubleshooting.&#x20;
 
 You can find scanned artifacts in the Inventory Type view, but they are not supported by Policies. Scanned artifacts may include duplicates due to missing identifying information.
 
@@ -81,11 +81,11 @@ The asset information is divided into the following tabs:
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (660) (1).png" alt=""><figcaption><p>Snyk Essentials or Snyk AppRisk Inventory - Assets Summary view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (660) (1).png" alt=""><figcaption><p>Snyk Web UI Inventory - Assets Summary view</p></figcaption></figure>
 
 You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Related Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
 
-<figure><img src="../.gitbook/assets/image (494).png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Snyk Essentials or Snyk AppRisk Inventory - Assets Summary view of a children asset</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (494).png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Snyk Web UI Inventory - Assets Summary view of a children asset</p></figcaption></figure>
 
 *   **Related Projects -** provides a collection of Snyk Projects that are associated with a specific asset within the platform. These projects are arranged in a table format, enabling you to view relevant information that assists in managing and assessing vulnerabilities related to the asset. Each Project is displayed with the following details:
 
@@ -98,11 +98,11 @@ You can see the details of a related asset by clicking on one of them. Usually, 
 
     The Projects are systematically sorted first by Target, followed by Target Reference, and finally by Last Scan date, ensuring that related Projects are easily identifiable and accessible for effective monitoring and remediation.
 
-<figure><img src="../.gitbook/assets/image (661).png" alt=""><figcaption><p>Snyk AppRisk - Assets Related Projects view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (661).png" alt=""><figcaption><p>Snyk Web UI Inventory - Assets Related Projects view</p></figcaption></figure>
 
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-<figure><img src="../.gitbook/assets/image (662).png" alt=""><figcaption><p>Snyk AppRisk - Assets Attributes view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (662).png" alt=""><figcaption><p>Snyk Web UI Inventory - Assets Attributes view</p></figcaption></figure>
 
 ## Issues
 
@@ -138,21 +138,21 @@ The Controls logos can have one of the following states:
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
-<figure><img src="../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Snyk Essentials or Snyk AppRisk - Controls</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Snyk Web UI Inventory - Controls</p></figcaption></figure>
 
 ## **Tags**
 
-A repository asset tag can be added through Policies or be system-generated by Snyk Essentials or Snyk AppRisk to provide more context. Click on a tags field to view all tags.
+A repository asset tag can be added through Policies or be system-generated by Snyk Essentials to provide more context. Click on a tags field to view all tags.
 
 {% hint style="info" %}
-BitBucket Cloud cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials or Snyk AppRisk, you can only see the language tags that have been manually added for BitBucket Cloud. \
+BitBucket Cloud cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials, you can only see the language tags that have been manually added for BitBucket Cloud. \
 Language data is not available for BitBucket Server. \
 For more information, you can refer to the official documentation provided by BitBucket.
 {% endhint %}
 
 A system-generated tag includes the following information:
 
-* **Technology** - the languages detected by Snyk Essentials or Snyk AppRisk in the source code within a repository asset.
+* **Technology** - the languages detected by Snyk Essentials in the source code within a repository asset.
 * **SCM Topic** - the topics found in the integrated SCM repositories. Snyk Essentials supports topics from GitHub and GitLab.
 * **Asset type tag** - the tag explaining the type of the asset. For example, the container assets will be assigned an image asset tag.&#x20;
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
@@ -160,7 +160,7 @@ A system-generated tag includes the following information:
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
 
-<figure><img src="../.gitbook/assets/image (500).png" alt="Snyk AppRisk - Tags"><figcaption><p>Snyk AppRisk - Tags</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (500).png" alt="Snyk AppRisk - Tags"><figcaption><p>Snyk Web UI Inventory - Tags</p></figcaption></figure>
 
 ### Tag rules overview
 
@@ -185,31 +185,31 @@ System tags are automatically generated from the SCM repositories. System tags c
 
 ### Tag rules related to repository and code project
 
-| Rule                                                                                                                | Tag                              |
-| ------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
-| The word `payment` or `checkout` is found in the repository and code project.                                       | `payment`                        |
-| Snyk Essentials or Snyk AppRisk found the code project with the code owner.                                         | `codeowners`                     |
-| Snyk Essentials or Snyk AppRisk found the word `infrastructure` in the repository and code project.                 | `infrastructure`                 |
-| Snyk Essentials or Snyk AppRisk found the word `store` or `cart` in the repository and code project.                | `ecommerce`                      |
-| For scanned artifact code project.                                                                                  | `scanned artifact: packages`     |
-| For scanned artifact repositories.                                                                                  | `scanned artifact: repositories` |
-| Snyk Essentials or Snyk AppRisk found the word `upload` in the repository or code project.                          | `upload`                         |
-| Snyk Essentials or Snyk AppRisk found the word `demo` in the repository and code project.                           | `demo`                           |
-| Snyk Essentials or Snyk AppRisk found the word `billing`, `charges` or `invoice` in the repository or code project. | `billing`                        |
-| Snyk Essentials or Snyk AppRisk found the word `account` in the repository or code project.                         | `account`                        |
-| Snyk Essentials or Snyk AppRisk found the word `download` or `attachement` in the repository or code project.       | `attachment`                     |
+| Rule                                                                                                | Tag                              |
+| --------------------------------------------------------------------------------------------------- | -------------------------------- |
+| The word `payment` or `checkout` is found in the repository and code project.                       | `payment`                        |
+| Snyk Essentials found the code project with the code owner.                                         | `codeowners`                     |
+| Snyk Essentials found the word `infrastructure` in the repository and code project.                 | `infrastructure`                 |
+| Snyk Essentials found the word `store` or `cart` in the repository and code project.                | `ecommerce`                      |
+| For scanned artifact code project.                                                                  | `scanned artifact: packages`     |
+| For scanned artifact repositories.                                                                  | `scanned artifact: repositories` |
+| Snyk Essentials found the word `upload` in the repository or code project.                          | `upload`                         |
+| Snyk Essentials found the word `demo` in the repository and code project.                           | `demo`                           |
+| Snyk Essentials found the word `billing`, `charges` or `invoice` in the repository or code project. | `billing`                        |
+| Snyk Essentials found the word `account` in the repository or code project.                         | `account`                        |
+| Snyk Essentials found the word `download` or `attachement` in the repository or code project.       | `attachment`                     |
 
 ### Tag rules related to metadata
 
-| Rule                                                                                   | Tag                 |
-| -------------------------------------------------------------------------------------- | ------------------- |
-| Snyk Essentials or Snyk AppRisk found pip metadata.                                    | `python module`     |
-| Snyk Essentials or Snyk AppRisk found a browser extension.                             | `browser extension` |
-| Snyk Essentials or Snyk AppRisk found technologies in use.                             | `< technologies>`   |
-| Snyk Essentials or Snyk AppRisk found ruby metadata.                                   | `ruby module`       |
-| Snyk Essentials or Snyk AppRisk found languages from the SCM.                          | `<languages>`       |
-| Snyk Essentials or Snyk AppRisk detected a new repository, created in the last 7 days. | `new repository`    |
-| Snyk Essentials or Snyk AppRisk found nodejs metadata.                                 | `nodejs module`     |
+| Rule                                                                  | Tag                 |
+| --------------------------------------------------------------------- | ------------------- |
+| Snyk Essentials found pip metadata.                                   | `python module`     |
+| Snyk Essentials found a browser extension.                            | `browser extension` |
+| Snyk Essentials found technologies in use.                            | `< technologies>`   |
+| Snyk Essentials found ruby metadata.                                  | `ruby module`       |
+| Snyk Essentials found languages from the SCM.                         | `<languages>`       |
+| Snyk Essentials detected a new repository created in the last 7 days. | `new repository`    |
+| Snyk Essentials found nodejs metadata.                                | `nodejs module`     |
 
 ## **Developers**
 
@@ -223,7 +223,7 @@ You can manually change the business criticality of an asset. Click the critical
 
 After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A popup is displayed, asking you for confirmation about unlocking the value.
 
-<figure><img src="../.gitbook/assets/image (501).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk Essentials or Snyk AppRisk - Lock the value of a class</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (501).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk Web UI Inventory - Lock the value of a class</p></figcaption></figure>
 
 The Asset Class column is also available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 
@@ -239,7 +239,7 @@ The Risk Factors column lists the potential vulnerabilities and security threats
 
 ## Source
 
-The Source column in Snyk Essentials or Snyk AppRisk helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
+The Source column in Snyk Essentials helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
 
 ## SCM Repository freshness
 

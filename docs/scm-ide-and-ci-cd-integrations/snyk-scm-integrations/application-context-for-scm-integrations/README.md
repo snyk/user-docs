@@ -18,10 +18,10 @@ The Application Context integrations on this page work in conjunction with asset
 {% hint style="info" %}
 **Release status**
 
-The Backstage file integration is in Early Access and available with both Snyk Essentials and Snyk AppRisk plans.
+The Backstage file integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
-Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk Essentials or Snyk AppRisk.
+Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk Essentials.
 
 You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
 
@@ -54,7 +54,7 @@ When you set up the catalog attributes, you must use the specific service-level 
 The following video presents an overview of the Backstage file from the Snyk Web UI.
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609432/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-9a_-_v1_-_Application_Context_with_Backstage.mp4" %}
-Application Context with Backstage Catalog for Snyk Essentials and Snyk AppRisk
+Application Context with Backstage Catalog for Snyk Essentials
 {% endembed %}
 
 ## ServiceNow CMDB for SCM integrations
@@ -62,7 +62,7 @@ Application Context with Backstage Catalog for Snyk Essentials and Snyk AppRisk
 {% hint style="info" %}
 **Release status**
 
-The ServiceNow CMDB integration is in Early Access and available with both Snyk Essentials and Snyk AppRisk plans.
+The ServiceNow CMDB integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
 ### Required Parameters for ServiceNow CMDB <a href="#servicenow-cmdb-required-parameters" id="servicenow-cmdb-required-parameters"></a>
@@ -101,11 +101,11 @@ When you set up the catalog attributes, you can customize the name of the attrib
 The following videos present an overview of the ServiceNow CMDB from the Snyk Web UI.
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609416/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-8a_-_v1_-_ServiceNow-CMDB_-_Part_1.mp4" %}
-Application Context with ServiceNow CMDB for Snyk Essentials and Snyk AppRisk - Part 1
+Application Context with ServiceNow CMDB for Snyk Essentials - Part 1
 {% endembed %}
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609417/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-8b_-_v2_-_ServiceNow-CMDB_-_Part_2.mp4" %}
-Application Context with ServiceNow CMDB for Snyk Essentials and Snyk AppRisk - Part 2
+Application Context with ServiceNow CMDB for Snyk Essentials - Part 2
 {% endembed %}
 
 ## Atlassian Compass
@@ -113,7 +113,7 @@ Application Context with ServiceNow CMDB for Snyk Essentials and Snyk AppRisk - 
 {% hint style="info" %}
 **Release status**
 
-The Atlassian Compass integration is in Early Access and available with both Snyk Essentials and Snyk AppRisk plans.
+The Atlassian Compass integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
 ### Required Parameters for Atlassian Compass
@@ -156,7 +156,7 @@ When you set up the catalog attributes, you must use the specific service-level 
 {% hint style="info" %}
 **Release status**
 
-The Harness integration is in Early Access and available with both Snyk Essentials and Snyk AppRisk plans.
+The Harness integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
 ### Required Parameters for Harness
@@ -196,7 +196,7 @@ When you set up the catalog attributes, you can customize the name of the attrib
 {% hint style="info" %}
 **Release status**
 
-The OpsLevel integration is in Early Access and available with both Snyk Essentials and Snyk AppRisk plans.
+The OpsLevel integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
 ### Required Parameters for OpsLevel
@@ -231,7 +231,7 @@ When you set up the catalog attributes, you must use the specific service-level 
 {% hint style="info" %}
 **Release status**
 
-The Datadog Service Catalog integration is in Early Access and available with both Snyk Essentials and Snyk AppRisk plans.
+The Datadog Service Catalog integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
 ### Required Parameters for Datadog Service Catalog
