@@ -177,16 +177,6 @@ Go to your **Workspace settings** page in **Bitbucket.org > Manage installed app
 
 See the [Bitbucket Cloud App integration](bitbucket-cloud-app.md) topic for instructions.
 
-#### Migration demo
-
-In less than five minutes, Marco Morales, a Partner Solutions Architect at Snyk, talks about the Snyk Bitbucket Cloud App and goes through the process of migrating an existing Bitbucket Cloud integration to the Snyk Bitbucket Cloud App.
-
-_Go to timestamp 2:34 to jump right into the demo._
-
-{% embed url="https://thoughtindustries-1.wistia.com/medias/32rgw3hkdk" %}
-How to migrate to the new Snyk Bitbucket Cloud App integration
-{% endembed %}
-
 ## Group level - Snyk Essentials integrations
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
