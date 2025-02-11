@@ -1,3 +1,14 @@
+## 2024-10-15 - Updated 2025-02-11
+
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+- removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+
+
+### POST - `/orgs/{org_id}/packages/issues` - Updated
+- removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+
 ## 2024-10-15 - Updated 2025-02-04
 
 ### POST - `/orgs/{org_id}/policies` - Added
