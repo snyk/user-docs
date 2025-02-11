@@ -18,9 +18,15 @@ Malicious packages are published as legitimate packages on popular package regis
 
 ### Malicious package curation process
 
-The Snyk security research team looks into dozens of data sources daily and triages and verifies vulnerabilities, including malicious packages.&#x20;
+Snyk Security Research team monitors multiple sources daily to identify, triage, and verify vulnerabilities, including malicious packages. This includes insights from blogs, social media, official package registry announcements, and in-house investigations using our internal research tools.
 
-This process is continually improved, adding new tools and sources to identify potential threats in a timely manner.
+\
+Snyk continuously refines the approach by integrating new detection techniques and data sources, ensuring a comprehensive understanding of emerging threats in the software ecosystem.\
+Here are some examples of the research conducted by Snyk on malicious packages:
+
+* [Snyk found 200+ malicious npm packages, including Cobalt Strike dependency confusion attacks](https://snyk.io/blog/snyk-200-malicious-npm-packages-cobalt-strike-dependency-confusion-attacks/)
+* [Snyk identified malicious code in 8 npm packages](https://snyk.io/blog/npm-security-malicious-code-in-oss-npm-packages/)
+* [Snyk uncovered a dependency confusion attack in npm](https://snyk.io/blog/npm-dependency-confusion-attack-gxm-reference/)
 
 ### No CVE ID for malicious packages
 
