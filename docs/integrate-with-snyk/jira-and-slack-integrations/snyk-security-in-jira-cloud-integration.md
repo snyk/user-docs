@@ -46,7 +46,7 @@ Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketpl
 When you have completed the following steps to connect Snyk to Jira, you can start triaging security issues in Jira.
 
 {% hint style="info" %}
-Typically research and development engineering managers do his task because they own the Jira projects and know their team's code repositories.
+Typically research and development engineering managers do this task because they own the Jira projects and know their team's code repositories.
 {% endhint %}
 
 1. In Jira, navigate to **Project settings** > **Toolchain** and find Snyk in the list of tools.\
