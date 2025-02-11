@@ -664,6 +664,17 @@ CLI was unable to validate the required parameter. Provide the correct parameter
 
 ### [SNYK-CLI-0011](#snyk-cli-0011)
 
+#### SCA failure
+
+CLI was unable to execute your SCA command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli/commands/test](https://docs.snyk.io/snyk-cli/commands/test)
+
+### [SNYK-CLI-0012](#snyk-cli-0012)
+
 #### IAC failue
 
 CLI was unable to execute your IAC command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
@@ -673,7 +684,7 @@ CLI was unable to execute your IAC command, please take a look at the given deta
 **Help Links:**
 - [https://docs.snyk.io/snyk-cli/commands/iac](https://docs.snyk.io/snyk-cli/commands/iac)
 
-### [SNYK-CLI-0012](#snyk-cli-0012)
+### [SNYK-CLI-0013](#snyk-cli-0013)
 
 #### SAST failure
 
@@ -683,17 +694,6 @@ CLI was unable to execute your SAST command, please take a look at the given det
 
 **Help Links:**
 - [https://docs.snyk.io/snyk-cli/commands/code](https://docs.snyk.io/snyk-cli/commands/code)
-
-### [SNYK-CLI-0013](#snyk-cli-0013)
-
-#### SCA failure
-
-CLI was unable to execute your SCA command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
-
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
-
-**Help Links:**
-- [https://docs.snyk.io/snyk-cli/commands/test](https://docs.snyk.io/snyk-cli/commands/test)
 
 ### [SNYK-OS-7001](#snyk-os-7001)
 
@@ -2738,4 +2738,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-02-11T09:36:24.574Z
+--- Generated at 2025-02-11T14:49:25.224Z
