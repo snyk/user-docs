@@ -1,5 +1,13 @@
 # Install and configure Broker using Docker
 
+
+
+{% hint style="info" %}
+[Broker version 4.205.1](https://github.com/snyk/broker/blob/cb4f89e05eb42605f076321b952cdb7e57bf4111/config.default.json#L8) has been [released](https://updates.snyk.io). In this version, all `ACCEPT` rule flags will be enabled by default. This reduces needed configuration. If you do not want a specific `ACCEPT` rule flag to be enabled, you can opt out of the default `ACCEPT` all behavior by adding `ACCEPT_=false` to your Broker client configuration.
+{% endhint %}
+
+
+
 Before starting installation, review the [Prerequisites](../prepare-snyk-broker-for-deployment.md#prerequisites-for-snyk-broker) and other information on the page [Prepare Snyk Broker for deployment](../prepare-snyk-broker-for-deployment.md).
 
 **If you are using Kubernetes**, Snyk recommends that you **install Snyk Broker with the** [**Broker Helm Chart**](https://github.com/snyk/snyk-broker-helm). For details, see[ Install and configure Broker using Helm.](install-and-configure-broker-using-helm.md)

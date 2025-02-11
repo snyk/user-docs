@@ -6,6 +6,10 @@ Snyk Broker is an open-source tool that acts as a proxy between Snyk and special
 
 For comprehensive information about Snyk Broker, including how it works, how to deploy it, commit signing, upgrading, and troubleshooting, see the full [Snyk Broker user documentation](../).
 
+{% hint style="info" %}
+[Broker version 4.205.1](https://github.com/snyk/broker/blob/cb4f89e05eb42605f076321b952cdb7e57bf4111/config.default.json#L8) has been [released](https://updates.snyk.io). In this version, all `ACCEPT` rule flags will be enabled by default. This reduces needed configuration. If you do not want a specific `ACCEPT` rule flag to be enabled, you can opt out of the default `ACCEPT` all behavior by adding `ACCEPT_=false` to your Broker client configuration.
+{% endhint %}
+
 ## **Deployment options**
 
 <table data-card-size="large" data-view="cards" data-full-width="false"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Install Snyk Broker with the</strong> <a href="https://github.com/snyk/snyk-broker-helm"><strong>Broker Helm Chart</strong></a>. For details, see <a href="install-and-configure-broker-using-helm.md">Install and configure Broker using Helm</a>.</td><td></td><td></td><td><a href="../../../.gitbook/assets/helmkube.png">helmkube.png</a></td><td><a href="install-and-configure-broker-using-helm.md">install-and-configure-broker-using-helm.md</a></td></tr><tr><td><strong>Install Snyk Broker</strong> <strong>using the</strong> <a href="https://github.com/snyk/broker"><strong>Docker images</strong></a> provided by Snyk. For details, see <a href="install-and-configure-broker-using-docker.md">Install and configure Broker using Docker</a>.</td><td></td><td></td><td><a href="../../../.gitbook/assets/Docker-Logo (1).jpg">Docker-Logo (1).jpg</a></td><td><a href="install-and-configure-broker-using-docker.md">install-and-configure-broker-using-docker.md</a></td></tr></tbody></table>
