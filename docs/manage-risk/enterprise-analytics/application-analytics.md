@@ -100,6 +100,12 @@ You can select a specific date range for the assets analyzed data by adding the 
 The data in Application Analytics is updated on an hourly basis.
 {% endhint %}
 
+The following video presents an overview of the Application Analytics filters and views from the Snyk Web UI.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1739216878/snyk-learn/product-training-videos/Snyk_AppRisk_-10a_-_v3_-_App_Analytics_Navigation_and_filters.mp4" %}
+Application Analytics - filters and views
+{% endembed %}
+
 ## Data categories <a href="#data-categories" id="data-categories"></a>
 
 The Application Analytics dashboard focuses on three main data categories:
@@ -121,6 +127,12 @@ The Coverage section is based on the scan category and is not impacted by the se
 
 <figure><img src="../../.gitbook/assets/image (542).png" alt=""><figcaption><p>The Coverage Section</p></figcaption></figure>
 
+The following video presents an overview of the Application Analytics Coverage view from the Snyk Web UI.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1739216985/snyk-learn/product-training-videos/Snyk_AppRisk_-10b_-_v1_-_App_Analytics_Coverage.mp4" %}
+Application Analytics Coverage view
+{% endembed %}
+
 ### Issues
 
 In the Issues section, you have information about the analyzed open issues.
@@ -131,6 +143,12 @@ In the Issues section, you have information about the analyzed open issues.
 You can choose to view the issues based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection. When viewing by application or owner, only the top 5 applications or owners with most issues are displayed.
 
 You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to download it as an image.
+
+The following video presents an overview of the Application Analytics Issues view from the Snyk Web UI.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1739217894/snyk-learn/product-training-videos/Snyk_AppRisk_-10c_-_v1_-_App_Analytics_Issues.mp4" %}
+Application Analytics Issues view
+{% endembed %}
 
 ### Assets
 
@@ -143,9 +161,22 @@ You can choose to view the Assets section based on Asset Class, Application, or 
 
 You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to download it as an image.
 
+The following video presents an overview of the Application Analytics Assets view from the Snyk Web UI.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1739218078/snyk-learn/product-training-videos/Snyk_AppRisk_-10d_-_v1_-_App_Analytics_Assets.mp4" %}
+Application Analytics Assets view
+{% endembed %}
+
 ### Metadata completeness
 
 The metadata completeness section provides information on the completeness of metadata from application context sources for your repositories.
 
 * **Repo metadata completeness** - displays the availability of application context metadata across code repositories (learn more about application context metadata [here](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations)).
 * **Repository source distribution** - provides information about the repositories distributed by the type of integration (SCM integrations, third-party integrations). When viewing by application or owner, only the top 5 applications/owners with the most assets will be displayed.
+
+The following video presents an overview of the Application Analytics Repository metadata completeness and source distribution view from the Snyk Web UI.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1739219742/snyk-learn/product-training-videos/Snyk_AppRisk_-10e_-_v1_-_App_Analytics_Repo_Metadata_Completeness_and_Source_Distribution.mp4" %}
+Analytics Repository metadata completeness and source distribution view
+{% endembed %}
+
