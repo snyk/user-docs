@@ -126,4 +126,4 @@ redirects:
   snyk-api/rest-api/authentication-for-api/authenticate-for-the-api: snyk-api/rest-api/authentication-for-api/README.md
   scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/step-1-download-iam-role-iac-template-web-ui: docs/scan-with-snyk/snyk-iac/cloud-platform-integrations/aws-integration/README.md
   scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-azure: scan-with-snyk/snyk-iac/cloud-platform-integrations/azure-integration-for-cloud-configurations/README.md
-  scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/step-1-download-service-account-iac-template-web-ui: docs/scan-with-snyk/snyk-iac/cloud-platform-integrations/README.md
+  scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/step-1-download-service-account-iac-template-web-ui: docs/scan-with-snyk/snyk-iac/cloud-platform-integrations/google-cloud-integration/README.md
