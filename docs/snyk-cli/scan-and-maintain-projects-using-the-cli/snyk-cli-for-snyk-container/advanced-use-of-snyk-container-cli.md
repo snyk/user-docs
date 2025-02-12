@@ -2,9 +2,9 @@
 
 ## Scan archives
 
-In addition to scanning images from a local Docker daemon or remote registry, Snyk can directly scan or monitor a Docker or OCI or Kaniko archive by running `snyk container test docker-archive:<filename>.tar` or `snyk container test oci-archive:<filename>.tar.` (coming soon `snyk container test kaniko-archive:<filename>.tar.)`
+In addition to scanning images from a local Docker daemon or remote registry, Snyk can directly scan or monitor a Docker or OCI archive by running the following commands: `snyk container test docker-archive:<filename>.tar` or `snyk container test oci-archive:<filename>.tar.`&#x20;
 
-For example:
+Examples:
 
 ```
 snyk container test docker-archive:archive.tar
