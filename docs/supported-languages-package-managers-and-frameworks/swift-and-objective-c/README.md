@@ -9,7 +9,7 @@ Check the language availability to be imported as an application, tested, or mon
 {% hint style="info" %}
 **Supported Swift version**
 
-You can use versions up to 5.7.x.
+Supports only Projects using Swift 3.0 or higher.
 {% endhint %}
 
 Available functions:
@@ -19,7 +19,7 @@ Available functions:
 * Test your app's SBOM using `pkg:swift`, `pkg:cocoapods`
 * Test your app's packages using `pkg:swift`, `pkg:cocoapods`
 
-## Package managers and Supported files
+## Package managers and supported files
 
 Snyk for Swift and Objective-C supports CocoaPods, Swift Package Manager v3.0 or higher as package managers and it uses multiple sources including [cocoapods.org](https://cocoapods.org/) [maven.org](https://maven.org/) for package registry.
 
