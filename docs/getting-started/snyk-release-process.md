@@ -14,10 +14,6 @@ Not all features follow all these stages, and timelines for each feature to move
 
 <table><thead><tr><th width="243">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>The first customer-facing rollout of a feature.</td><td>A preselected group of users.</td><td>On invitation by Snyk.</td><td>Provided but may not be public.</td></tr></tbody></table>
 
-**Snyk features in Closed Beta**
-
-* [Configure PR Checks](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
-
 ## Early Access
 
 <table><thead><tr><th width="246">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Feature is tested and ready for use, but not available by default</td><td>All users on an opt-in basis. This may include some additional purchase costs.</td><td>Opt-in: on request via Snyk account team, or via Snyk Preview</td><td>Public docs.</td></tr></tbody></table>
