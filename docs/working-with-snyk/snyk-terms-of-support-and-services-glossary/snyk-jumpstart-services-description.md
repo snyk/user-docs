@@ -27,6 +27,7 @@ The Snyk Consultant will deliver the following services related to the setup of 
 6. [Snyk IaC configuration](snyk-jumpstart-services-description.md#snyk-iac-configuration)
 7. [Snyk Essentials configuration](snyk-jumpstart-services-description.md#snyk-apprisk-essentials-prioritization-configuration)
 8. [Snyk AppRisk configuration](snyk-jumpstart-services-description.md#snyk-apprisk-pro-configuration)
+9. [Probely configuration](snyk-jumpstart-services-description.md#probely-configuration)
 
 ## Pre-engagement planning and preparation
 
@@ -293,13 +294,37 @@ The Customer will be provided with a document that provides a comprehensive over
 | Walkthrough of prioritized issues in AppRisk                                 | Gain an understanding of how to filter and prioritize issues in the Asset Dashboard using deployed and loaded package risk factors |
 | Documentation close-out                                                      | Gain an understanding of work completed                                                                                            |
 
+## Probely configuration
+
+The following describes the delivery approach for Probely configuraton.
+
+### **Web Target configuration, including authenticated scans**
+
+The Snyk Consultant will work with the Customer to configure Web Targets (up to three web applications) to be scanned by Probely. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
+
+### **API Target configuration**
+
+The Snyk Consultant will work with the Customer to configure API collections (maximum of one collection) to be scanned by Probely, using a Postman Collection or OpenAPI definition.
+
+### **Domain Ownership Verification**
+
+The Snyk Consultant will work with the Customer to complete Domain Ownership Verification for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
+
+### **Scanning Agent configuration**
+
+The Snyk Consultant will work with the Customer to configure the Scanning Agent using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
+
+### **Review of Target Scan Results**
+
+The Snyk Consultant will educate the Customer on understanding a DAST scan for Web and API Targets in the Probely UI, including the different reporting functionality that is available in the tool.
+
 ## Timeline for Snyk Jumpstart delivery
 
 Snyk Jumpstart delivery is an eight-week engagement that begins with the Pre-engagement call.&#x20;
 
 This engagement will include initial Platform Configuration and each product module that has been purchased. Modules have been designed to be delivered consecutively during the Product Deployment stage, as shown below:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-10-23 at 5.42.41 PM.png" alt="Snyk Jumpstart timeline"><figcaption><p>Snyk Jumpstart timeline</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-11 at 3.52.59 PM.png" alt=""><figcaption><p>Snyk Jumpstart timeline</p></figcaption></figure>
 
 ## Additional terms
 
