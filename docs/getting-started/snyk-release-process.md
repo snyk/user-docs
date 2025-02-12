@@ -46,7 +46,6 @@ Not all features follow all these stages, and timelines for each feature to move
   * [Nightfall](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#nightfall-setup-guide)
   * [Dynatrace](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#dynatrace-setup-guide)
   * [Sysdig](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sysdig-setup-guide)
-* [Issues Analytics](../manage-risk/enterprise-analytics/issues-analytics.md)
 * [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md)
 * [Snyk Runtime Sensor](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
 
