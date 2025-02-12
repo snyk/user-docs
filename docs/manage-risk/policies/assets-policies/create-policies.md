@@ -88,7 +88,7 @@ Each property contains different options for conditions and values:
 You can specify more than one filter component with an **And** or **Or** operator.\
 
 
-<figure><img src="../../../.gitbook/assets/Create policy New UI.png" alt="AppRisk - Create new policy"><figcaption><p>Snyk Essentials - Create new policy</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Create policy New UI.png" alt="AppRisk - Create new policy"><figcaption><p>Snyk Web UI Policies - Create new policy</p></figcaption></figure>
 
 The following video explains the use of filters and the use of the **And**, **Or** operator.&#x20;
 
@@ -106,8 +106,8 @@ After defining filter components, you need to define the actions that the policy
 * **Set Asset Tag** - Sets a tag on the matched assets. Removing the policy or turning in off will remove the tags of this policy from the relevant assets.
 * **Set Coverage Control Policy** - Sets a control on filtered assets that checks whether selected security products are scanning assets, optionally within a given timeframe. Assets that fail this control will be marked accordingly on inventory pages. This control applies the OR logic across products.
 
-<figure><img src="../../../.gitbook/assets/Policy - Nwe UI.png" alt="AppRisk - Set a policy action"><figcaption><p>Snyk Essentials - Set a policy action </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Policy - Nwe UI.png" alt="AppRisk - Set a policy action"><figcaption><p>Snyk Web UI Policies - Set a policy action </p></figcaption></figure>
 
 The editor supports multiple flows for the same policy. The flows can be independent or intersect.
 
-<figure><img src="../../../.gitbook/assets/Multiple actions - New UI.png" alt="AppRisk - Set multiple policy actions "><figcaption><p>Snyk Essentials- Set multiple policy actions </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Multiple actions - New UI.png" alt="AppRisk - Set multiple policy actions "><figcaption><p>Snyk Web UI Policies- Set multiple policy actions </p></figcaption></figure>
