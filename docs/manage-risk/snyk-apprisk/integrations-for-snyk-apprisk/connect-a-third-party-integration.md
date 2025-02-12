@@ -22,7 +22,7 @@ Data synchronization may take up to two hours after receiving the **Connected** 
 
 After you finish setting up an integration, you can see it listed with a Connected status.
 
-<figure><img src="../../../.gitbook/assets/image (633).png" alt=""><figcaption><p>Third-party integration - Connected status</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (633).png" alt=""><figcaption><p>Third-party integration card - Connected status</p></figcaption></figure>
 
 ## Veracode setup guide
 

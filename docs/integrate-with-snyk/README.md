@@ -79,7 +79,7 @@ See the [Snyk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integ
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 
-<figure><img src="../.gitbook/assets/image (11) (4).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Snyk Web UI - Integration status</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (4).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Integration card - Integration status</p></figcaption></figure>
 
 ### Using Snyk Broker
 

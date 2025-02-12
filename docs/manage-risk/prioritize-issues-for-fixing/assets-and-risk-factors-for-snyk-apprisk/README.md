@@ -50,7 +50,7 @@ The Risk Factors are available only for Snyk AppRisk.
 
 Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](../set-up-insights-for-snyk-apprisk/#prioritize-your-integrations) by customizing the available Insights options from the Group settings.
 
-<figure><img src="../../../.gitbook/assets/image (640).png" alt=""><figcaption><p>Snyk AppRisk - Insights tab in the Group settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (640).png" alt=""><figcaption><p>Group settings - Insights tab in the Group settings</p></figcaption></figure>
 
 {% hint style="info" %}
 Risk factor settings may take up to four hours to take effect.

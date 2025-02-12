@@ -176,8 +176,7 @@ This report shows the test usage in the IDE and CLI by developers:
 * Charts and summary tables breaking down this data by different dimensions, including IDE plugin
 * List of organizations and developers adopting Snyk locally
 
-Teams can filter by date and Organization.\
-
+Teams can filter by date and Organization.
 
 ## Asset Dashboard
 

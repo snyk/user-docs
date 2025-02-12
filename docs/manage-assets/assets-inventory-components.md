@@ -81,11 +81,11 @@ The asset information is divided into the following tabs:
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (660) (1).png" alt=""><figcaption><p>Snyk Web UI Inventory - Assets Summary view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (660) (1).png" alt=""><figcaption><p>Asset card - Assets Summary view</p></figcaption></figure>
 
 You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Related Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
 
-<figure><img src="../.gitbook/assets/image (494).png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Snyk Web UI Inventory - Assets Summary view of a children asset</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (494).png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Asset card - Assets Summary view of a children asset</p></figcaption></figure>
 
 *   **Related Projects -** provides a collection of Snyk Projects that are associated with a specific asset within the platform. These projects are arranged in a table format, enabling you to view relevant information that assists in managing and assessing vulnerabilities related to the asset. Each Project is displayed with the following details:
 
@@ -98,11 +98,11 @@ You can see the details of a related asset by clicking on one of them. Usually, 
 
     The Projects are systematically sorted first by Target, followed by Target Reference, and finally by Last Scan date, ensuring that related Projects are easily identifiable and accessible for effective monitoring and remediation.
 
-<figure><img src="../.gitbook/assets/image (661).png" alt=""><figcaption><p>Snyk Web UI Inventory - Assets Related Projects view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (661).png" alt=""><figcaption><p>Asset card - Assets Related Projects view</p></figcaption></figure>
 
 * **Attributes** - miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-<figure><img src="../.gitbook/assets/image (662).png" alt=""><figcaption><p>Snyk Web UI Inventory - Assets Attributes view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (662).png" alt=""><figcaption><p>Asset card - Assets Attributes view</p></figcaption></figure>
 
 ## Issues
 
@@ -138,7 +138,7 @@ The Controls logos can have one of the following states:
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
-<figure><img src="../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Snyk Web UI Inventory - Controls</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
 
 ## **Tags**
 
@@ -160,7 +160,7 @@ A system-generated tag includes the following information:
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
 
-<figure><img src="../.gitbook/assets/image (500).png" alt="Snyk AppRisk - Tags"><figcaption><p>Snyk Web UI Inventory - Tags</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (500).png" alt="Snyk AppRisk - Tags"><figcaption><p>Inventory menu - Tags column</p></figcaption></figure>
 
 ### Tag rules overview
 
@@ -223,7 +223,7 @@ You can manually change the business criticality of an asset. Click the critical
 
 After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A popup is displayed, asking you for confirmation about unlocking the value.
 
-<figure><img src="../.gitbook/assets/image (501).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Snyk Web UI Inventory - Lock the value of a class</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (501).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Inventory menu - Lock the value of a class</p></figcaption></figure>
 
 The Asset Class column is also available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 
