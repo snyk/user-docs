@@ -45,13 +45,13 @@ The risk factors on assets are taking the release status of the applied [risk fa
 The Runtime discovered and Runtime last seen filters are taking the release status of the used runtime [integration](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md).
 {% endhint %}
 
-Each filter component requires you to specify an asset property. Navigate to the [Filters capabilities](../../../manage-assets/assets-inventory-features.md#filters-capabilities) page to view all available properties for asset policies.
-
 The following video explains how to create a new policy:
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1737656963/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-5b_-_v1_-_Policy_Editor.mp4" %}
 Overview of asset policy editor
 {% endembed %}
+
+You must specify an asset property for each filter component. Navigate to the [Filters capabilities](../../../manage-assets/assets-inventory-features.md#filters-capabilities) page to view all available properties for asset policies.&#x20;
 
 Each property contains different options for conditions and values:
 
