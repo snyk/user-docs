@@ -1081,7 +1081,7 @@
     * [Snyk Jumpstart Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
     * [Snyk Jumpstart Customer Prerequisites](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)
     * [Snyk Residency Services](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-residency-services.md)
-    * [Statement of Work](working-with-snyk/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
+    * [Snyk Declining Balance of Hours Service Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
   * [How does Snyk count assets](working-with-snyk/how-does-snyk-count-assets.md)
   * [What counts as a test?](working-with-snyk/what-counts-as-a-test.md)
   * [Snyk for Government (US)](working-with-snyk/snyk-for-government-us.md)

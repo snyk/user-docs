@@ -1,6 +1,8 @@
 # Snyk Residency Services
 
-Snyk Residency Services (hereinafter Residency Services) are remote consulting services that provide Snyk Customers with access to a Snyk expert to assist with the Customer’s configuration and adoption of the Snyk Applications to achieve success long term. Residency Services allow Snyk experts to get to know the Customer’s business and processes to help deliver tailored recommendations for the Customer’s DevSecOps and other key internal stakeholders. The designated Snyk Services Engineer (the “Snyk Consultant”) will work with the customer two (2) days per week for twelve (12) consecutive weeks. Residency Services may be used for a variety of tasks to meet the Customer’s business needs.
+Snyk Residency Services (hereinafter Residency Services) are remote consulting services that provide Snyk Customers with access to a Snyk expert to assist with the Customer’s configuration and adoption of the Snyk Applications to achieve success long term. Residency Services allow Snyk experts to get to know the Customer’s business and processes to help deliver tailored recommendations for the Customer’s DevSecOps and other key internal stakeholders. The designated Snyk Services Engineer (the “Snyk Consultant”) will work with the customer directly using hours from a pre-purchased declining balance of hours. Residency Services may be used for a variety of tasks to meet the Customer’s business needs.
+
+
 
 ## Benefits of a dedicated Snyk expert
 
@@ -23,7 +25,7 @@ The benefits of a dedicated Snyk expert may include the following:
 
 ## Residency Services description
 
-Snyk will provide two (2) days per week of remote Residency Services for twelve (12) weeks to assist the Customer with its existing Snyk technology implementation as directed by the Customer.  Weeks will usually be consecutive, except where otherwise agreed to by Snyk and the Customer or to accommodate holidays.
+Snyk will provide Residency Services using hours from a pre-purchased declining balance of hours based on the Customer’s specific needs and requirements.
 
 Residency Services are designed for Customers who have complex business structures or complex technical requirements. Residency Services activities may include but not be limited to:
 
@@ -36,11 +38,9 @@ Residency Services are designed for Customers who have complex business structur
 
 ## Fees
 
-| Product Description     | Hours                    | Cost        |
-| ----------------------- | ------------------------ | ----------- |
-| Snyk Residency Services | 2 days/week for 12 weeks | USD $60,000 |
-
-The fees for this project will be as set forth on the Order Form, and are a fixed price that will be invoiced in full at the time of purchase and are non-refundable.  Hours cannot be rolled over between days and weeks. Snyk Residency Services are pre-scheduled days at the beginning of the engagement and provide an opportunity for up to eight (8) hours of Snyk Residency Services per day.
+| Product Description     | Hours                                  | Cost                             |
+| ----------------------- | -------------------------------------- | -------------------------------- |
+| Snyk Residency Services | Scoped accord to Customer requirements | Contact your Snyk AE for pricing |
 
 All Residency Services will be performed remotely. Any onsite time requires prior written consent of both parties, and will be subject to additional fees and expenses to be paid in accordance with Snyk’s Travel and Expense Policy. Residency Services are non-refundable and will expire unless they are scheduled and delivered within twelve (12) months of purchase.&#x20;
 
@@ -49,13 +49,13 @@ All Residency Services will be performed remotely. Any onsite time requires prio
 The following assumptions are reflected in the services outlined in this Residency Services Description:
 
 1. All Residency Services will be performed remotely using video conferencing software such as Zoom.
-2. The Customer’s Snyk subject matter expert must be available to work remotely with the Snyk expert for the entirety of the engagement.
-3. Residency Services will be scheduled and delivered two (2) days/week for twelve (12) consecutive weeks unless otherwise agreed to by the parties or to accommodate holidays. At the time of scheduling, Snyk and the Customer will mutually agree on the start date of the Residency Service. All scheduling is subject to Snyk’s resource availability at the time of scheduling.
+2. The Customer’s Snyk subject matter expert must be available to work remotely with the Snyk expert.
+3. At the time of scheduling, Snyk and the Customer will mutually agree on the start date of the Residency Service. All scheduling is subject to Snyk’s resource availability at the time of scheduling.
 4. Residency Services will be scheduled and delivered during Snyk’s normal business hours 8 am to 5 pm, local time zone, Monday through Friday.
-5. A Residency “day” is defined as up to a maximum of 8 hours of remote Residency Services. Any unused hours or days do not roll over to the next day and expire at the end of the scheduled day of delivery.
+5. A Residency “day” is defined as up to a maximum of 8 hours of remote Residency Services.&#x20;
 6. The Customer acknowledges that the Residency Services depend on collaboration with the Customer’s resources, and, therefore, will provide prompt access to its knowledgeable resources, relevant information, and systems, as mutually agreed upon to complete the work.
 7. The Residency Services will be performed in a professional and workmanlike manner, with knowledgeable Snyk consultants.  Except for the foregoing, the Residency Services are offered “AS IS” without warranty of any kind.
-8. Residency Services are confined to work that can be reasonably completed within the engagement’s allocated hours. Such work may be incomplete and/or require further effort from the Customer to complete post-engagement.   Additional consulting services may be purchased on a subsequent Order Form if the Customer wishes to continue to engage with Snyk consultants after the term of the Residency Services.
+8. Residency Services are confined to work that can be reasonably completed within the engagement’s allocated hours. Such work may be incomplete and/or require further effort from the Customer to complete post-engagement.   Additional hours may be purchased on a subsequent Order Form if the Customer wishes to continue to engage with Snyk consultants after the term of the Residency Services.
 9. All services and communications will be conducted in English language.
 
 \
