@@ -67,6 +67,7 @@
   * [TypeScript](supported-languages-package-managers-and-frameworks/typescript.md)
   * [VB.NET](supported-languages-package-managers-and-frameworks/vb.net.md)
 * [Enterprise setup](enterprise-setup/README.md)
+  * [Auto-provisioning guide](enterprise-setup/auto-provisioning-guide.md)
   * [Authentication for third-party tools](enterprise-setup/authentication-for-third-party-tools.md)
   * [Single Sign-On (SSO) for authentication to Snyk](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/README.md)
     * [Choose a provisioning option](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/choose-a-provisioning-option.md)

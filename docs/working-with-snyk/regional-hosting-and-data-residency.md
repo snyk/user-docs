@@ -82,6 +82,8 @@ Snyk offers almost all the same features, support, and performance in the region
 
 All Snyk Essentials and Snyk AppRisk features are supported in all multi-tenant environments, while for the single-tenant environment you need to check the availability with your account team.
 
+[Automated provisioning](../enterprise-setup/auto-provisioning-guide.md) is only possible for multi-tenant environments and Pilot or Enterprise plan users.
+
 ## Integration considerations
 
 There are special considerations when you set up specific integrations in your Snyk ecosystem.
