@@ -7,7 +7,7 @@ Snyk supports [Swift for code analysis](swift-for-code-analysis.md) and [Swift a
 Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
 
 {% hint style="info" %}
-**Supported Swift version**
+**Supported Swift version for Snyk Code**
 
 Supports only Projects using Swift 3.0 or higher.
 {% endhint %}
