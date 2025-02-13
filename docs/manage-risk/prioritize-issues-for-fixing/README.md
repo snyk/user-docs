@@ -126,18 +126,18 @@ You can use the Prioritization with Insights at the Snyk Group or Snyk Organizat
 
 ## Prioritization based on coverage and security program
 
-Snyk Enterprise Analytics provides a comprehensive overview of your entire application security program, offering insights into strengths, weaknesses, and opportunities at the tenant level. On the other hand, Snyk Application Analytics focuses specifically on the security and performance of individual applications. This narrower analysis helps pinpoint specific app vulnerabilities and inefficiencies, enabling targeted improvements and more detailed insights at the Snyk Group or Organization level.
+Snyk Issues Analytics provides a comprehensive overview of your entire application security program, offering insights into strengths, weaknesses, and opportunities at the tenant level. On the other hand, Snyk Application Analytics focuses specifically on the security and performance of individual applications. This narrower analysis helps pinpoint specific app vulnerabilities and inefficiencies, enabling targeted improvements and more detailed insights at the Snyk Group or Organization level.
 
 ### Issue Analytics
 
-[Issue Analytics](../enterprise-analytics/issues-analytics.md) provides a view into the performance of your AppSec program. You can use Enterprise Analytics to better understand the strengths and weaknesses of your program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
+[Issue Analytics](../enterprise-analytics/issues-analytics.md) provides a view into the performance of your AppSec program. You can use Issues Analytics to better understand the strengths and weaknesses of your program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
 
 You can use this type of prioritization with the following Snyk Plan:&#x20;
 
 * Snyk Enterprise
 * Snyk AppRisk&#x20;
 
-You can use Enterprise Analytics at the Snyk tenant level, including both the Snyk Group and Snyk Organization levels.
+You can use Issues Analytics at the Snyk tenant level, including both the Snyk Group and Snyk Organization levels.
 
 {% hint style="info" %}
 If you have both Snyk Enterprise and Snyk AppRisk plans, then Analytics is found under the Analytics option in the [Issues](../enterprise-analytics/issues-analytics.md) tab.
@@ -164,8 +164,6 @@ View by:
 You can use this type of prioritization with the following Snyk Plan:&#x20;
 
 * Snyk AppRisk&#x20;
-
-You can use Enterprise Analytics at the Snyk tenant level, including both the Snyk Group and Snyk Organization levels.
 
 ## Prioritization strategies
 
