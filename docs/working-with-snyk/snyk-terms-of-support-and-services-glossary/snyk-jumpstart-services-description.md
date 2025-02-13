@@ -113,7 +113,7 @@ The Snyk Consultant will educate the Customer on understanding Snyk Open Source 
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document provides an essential guide for Customers to realize the full potential of their investment in Snyk.
 
-### Target initiatives - Snyk Open Source
+### Target initiatives - Snyk Open Source configuration
 
 <table><thead><tr><th width="300">Snyk Open Source configuration</th><th width="306">Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/">supported SCM integration</a> (GitHub, Azure Repos, Bitbucket, GitLab).</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Snyk Tools - API Import and SCM Sync</td><td>Gain an understanding of how to use the Snyk API Import script to import additional targets and keep repos in Sync (GHE only).</td></tr><tr><td>Single pipeline configuration (direct integration OR CLI)</td><td>Configure a pipeline to run <code>snyk test</code> and <code>snyk monitor</code>.</td></tr><tr><td>SBOM Walkthrough (CLI and API)</td><td>Gain an understanding of generating an SBOM through Snyk using the CLI and API.</td></tr><tr><td>Interpreting and actioning Open Source results</td><td>Gain an understanding of how to view Open Source results in Snyk Reporting along with managing issues.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td></tr></tbody></table>
 
@@ -147,7 +147,7 @@ The Snyk Consultant will educate the Customer on understanding Snyk Code results
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document provides an essential guide for customers to realize the full potential of their investment in Snyk.
 
-### Target initiatives - Snyk Code
+### Target initiatives - Snyk Code configuration
 
 <table><thead><tr><th width="250">Snyk Code Configuration</th><th>Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/">supported SCM Integration</a>.</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Snyk Tools - API Import and SCM Sync</td><td>Gain an understanding of how to use the Snyk API Import script to import additional targets and keep their repos in sync (GHE only).</td></tr><tr><td>Interpreting and actioning Code results</td><td>Gain an understanding of how to view Code results in Snyk Reporting along with managing issues.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td></tr></tbody></table>
 
@@ -181,7 +181,7 @@ The Snyk Consultant will educate the Customer on how to use the Snyk Custom Base
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document provides an essential guide for customers to realize the full potential of their investment in Snyk.
 
-### Target initiatives - Snyk Container
+### Target initiatives - Snyk Container configuration
 
 <table><thead><tr><th width="269">Snyk Container Configuration</th><th>Outcome</th></tr></thead><tbody><tr><td>Single Broker Container Registry installation and configuration</td><td>Single Broker installed and configured for a <a href="https://snyk.io/integrations/?type=container-registries">Supported Container Registry</a>.</td></tr><tr><td>Container Registry import (up to 50 targets)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://snyk.io/integrations/?type=container-registries">Supported Container Registry</a>.</td></tr><tr><td>Interpreting and actioning Container results</td><td>Gain an understanding of how to view Container results in Snyk Reporting along with managing issues.</td></tr><tr><td>Single CI/CD CLI rntegration</td><td>Configure a single pipeline to <code>test</code> and <code>monitor</code> for Snyk Container.</td></tr><tr><td>Custom Base Images walkthrough (UI and CLI)</td><td>Gain an understanding of how to use the Custom Base Image Recommendations functionality through the UI and CLI.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td></tr></tbody></table>
 
@@ -226,9 +226,9 @@ The customer will be provided with a document that provides a comprehensive over
 
 ## Snyk Essentials configuration
 
-This portion of the Jumpstart service is part of the platform configuration, and prepares Customers to better operationalize and scale usage of Snyk with broad application visibility and security coverage management.
+This portion of the Jumpstart service is part of the Platform Configuration, and prepares Customers to better operationalize and scale usage of Snyk with broad application visibility and security coverage management.
 
-### Delivery approach - Sny Essentials configuration
+### Delivery approach - Snyk Essentials configuration
 
 #### Coverage and visibility configuration
 
@@ -296,27 +296,42 @@ The Customer will be provided with a document that provides a comprehensive over
 
 ## Probely configuration
 
-The following describes the delivery approach for Probely configuraton.
+### Delivery approach - Probely configuration
 
-### **Web Target configuration, including authenticated scans**
+#### **Web Target configuration, including authenticated scans**
 
 The Snyk Consultant will work with the Customer to configure Web Targets (up to three web applications) to be scanned by Probely. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
 
-### **API Target configuration**
+#### **API Target configuration**
 
 The Snyk Consultant will work with the Customer to configure API collections (maximum of one collection) to be scanned by Probely, using a Postman Collection or OpenAPI definition.
 
-### **Domain Ownership Verification**
+#### **Domain Ownership Verification**
 
 The Snyk Consultant will work with the Customer to complete Domain Ownership Verification for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
 
-### **Scanning Agent configuration**
+#### **Scanning Agent configuration**
 
 The Snyk Consultant will work with the Customer to configure the Scanning Agent using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
 
-### **Review of Target Scan Results**
+#### **Review of Target Scan Results**
 
 The Snyk Consultant will educate the Customer on understanding a DAST scan for Web and API Targets in the Probely UI, including the different reporting functionality that is available in the tool.
+
+#### Documentation close-out
+
+The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document provides an essential guide for customers to realize the full potential of their investment in Snyk.
+
+### Target Initiatives - Probely configuration
+
+| Probely configuration                                                                  | Outcome                                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Web Target configuration, including Authenticated Scans (up to three web applications) | A maximum of three web applications are configured in Probely for scanning, including Authentication. For each application there is a maximum of one login sequence and one navigation sequence). |
+| API Target configuration (up to one API collection)                                    | One API collection is configured in Probely for scanning.                                                                                                                                         |
+| Domain Ownership Verification                                                          | Domain Ownership Verification is completed for one domain.                                                                                                                                        |
+| Scanning Agent Configuration (one agent)                                               | A maximum of one Scanning Agent is configured to enable Probely to scan internal applications without internet access.                                                                            |
+| Review of Target Scan Results                                                          | Target Scan Results are reviewed to ensure the Customer understands how to process the DAST findings and prioritize fixing the issues.                                                            |
+| Documentation close-out                                                                | Gain an understanding of work completed.                                                                                                                                                          |
 
 ## Timeline for Snyk Jumpstart delivery
 
