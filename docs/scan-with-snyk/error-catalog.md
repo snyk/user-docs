@@ -53,7 +53,7 @@ Package metadata not or found or missing.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 **Help Links:**
-- [https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-private-dependencies-with-automatic-prs#private-packages-api](https://docs.snyk.io/scan-using-snyk/pull-requests/snyk-fix-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs/upgrade-private-dependencies-with-automatic-prs#private-packages-api)
+- [https://docs.snyk.io/supported-languages-package-managers-and-frameworks#package-managers-and-frameworks](https://docs.snyk.io/supported-languages-package-managers-and-frameworks#package-managers-and-frameworks)
 
 ### [SNYK-PACKAGES-0005](#snyk-packages-0005)
 
@@ -2738,4 +2738,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-02-11T14:49:25.224Z
+--- Generated at 2025-02-13T11:50:37.517Z
