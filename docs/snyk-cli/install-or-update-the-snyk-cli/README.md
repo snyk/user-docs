@@ -20,7 +20,8 @@ Use [GitHub Releases](https://github.com/snyk/snyk/releases) to download a stand
 
 Snyk also provides these standalone executables on the Snyk Content Delivery Network (CDN). See the latest `release.json` [file](https://downloads.snyk.io/cli/stable/release.json) for the download links. Examples for a specific version or platform follow:
 
-* [https://downloads.snyk.io/cli/v1.666.0/release.json](https://downloads.snyk.io/cli/v1.666.0/release.json)
+* https://downloads.snyk.io/cli/v\<Version>/release.json
+* [https://downloads.snyk.io/cli/stable/release.json](https://downloads.snyk.io/cli/stable/release.json)
 * [https://downloads.snyk.io/cli/stable/snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)
 
 For example, to download and run the latest Snyk CLI on macOS, you could run:
