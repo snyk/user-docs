@@ -5,7 +5,7 @@ Group Admins on a Snyk Enterprise plan who use SAML for SSO can configure Snyk S
 {% hint style="info" %}
 To enable the self-serve SSO option, contact your Snyk account team or [Snyk support](https://support.snyk.io).\
 \
-This option does not accommodate [custom role mapping](../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/). To set up custom role mapping with SSO for your Snyk Group, contact your Snyk account team.
+This option does not accommodate [custom role mapping](../custom-mapping/). To set up custom role mapping with SSO for your Snyk Group, contact your Snyk account team.
 {% endhint %}
 
 The following video demonstrates the process and steps for setting up single sign-on when using SAML.

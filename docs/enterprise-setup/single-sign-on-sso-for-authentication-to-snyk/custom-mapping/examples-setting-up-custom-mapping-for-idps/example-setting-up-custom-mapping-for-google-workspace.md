@@ -1,6 +1,6 @@
 # Example: Setting up custom mapping for Google Workspace
 
-The following shows how to use [custom mapping](../../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/) to map roles for a Google Workspace custom SAML connection.
+The following shows how to use [custom mapping](../) to map roles for a Google Workspace custom SAML connection.
 
 For additional details and guidance, see the [Google documentation, Manage Custom User Fields](https://developers.google.com/admin-sdk/directory/v1/guides/manage-schemas).
 

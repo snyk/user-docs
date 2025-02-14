@@ -6,7 +6,7 @@ OneLogin has the concept of **groups** and **roles**. However, OneLogin does not
 
 Therefore, roles will be assigned to users directly instead of indirectly through groups.
 
-1. In OneLogin, go to the **Users** and then to the **Roles** section and create the roles following the naming convention outlined for [custom mapping](../../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/). Each role should have the Snyk SAML app enabled as the role app.\
+1. In OneLogin, go to the **Users** and then to the **Roles** section and create the roles following the naming convention outlined for [custom mapping](../). Each role should have the Snyk SAML app enabled as the role app.\
    Assign the users to their roles as needed.
 
 <figure><img src="../../../../.gitbook/assets/image (379).png" alt="OneLogin Roles section"><figcaption><p>OneLogin Roles section</p></figcaption></figure>

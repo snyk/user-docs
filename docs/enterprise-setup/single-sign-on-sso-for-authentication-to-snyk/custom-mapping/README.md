@@ -10,18 +10,18 @@ To understand more about roles and permissions within Snyk, see [Pre-defined rol
 
 ## Requirements for custom mapping
 
-* Complete the SSO information worksheet for the appropriate IdP (identity provider) found in [Resources for SSO setup](../../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup).
+* Complete the SSO information worksheet for the appropriate IdP (identity provider) found in [Resources for SSO setup](../set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup).
 * Properly configure the custom attributes in your IdP to populate the `roles` array mapping. See [Example: roles array mapping](./#example-roles-array-mapping).
 
 ## Custom Mapping options
 
 Snyk offers an updated custom mapping option explained on this page, with increased flexibility, including the ability to grant users Group-level custom roles as well as pre-defined roles.&#x20;
 
-The Snyk [Legacy custom mapping](legacy-custom-mapping.md) option is still supported.
+The Snyk [Legacy custom mapping](../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md) option is still supported.
 
 ## Roles array mapping with Snyk
 
-In the IdP, you must first pass a custom mapping called `roles` as a string array. [Examples](../../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/) of how to set this up for different IdPs are provided.
+In the IdP, you must first pass a custom mapping called `roles` as a string array. [Examples](examples-setting-up-custom-mapping-for-idps/) of how to set this up for different IdPs are provided.
 
 Refer to your identity provider documentation for further information on how to configure custom mappings.
 
@@ -134,7 +134,7 @@ For a valid role assertion, the Organization or Group slug may be required, wher
 
 To find an Organization slug, navigate to the **Settings** page for the Organization, and under **General** settings, the Organization slug value is visible. This can then be copied and used in role assertions in custom mapping.&#x20;
 
-<figure><img src="../../../.gitbook/assets/settings_org_slug.png" alt="Organization general settings page, showing the Organization slug"><figcaption><p>Organization general settings page, showing the Organization slug</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/organization-settings-general-slugs.png" alt="Organization general settings page, showing the Organization slug"><figcaption><p>Organization general settings page, showing the Organization slug</p></figcaption></figure>
 
 To find the slug of a Group, navigate to the Group Settings, and find the Group slug under General Settings, which you can copy.
 

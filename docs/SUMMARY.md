@@ -78,7 +78,7 @@
       * [Ping Identity setup](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/ping-identity-setup.md)
       * [Google Workspace setup](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/google-workspace-setup.md)
       * [OneLogin SAML Application setup](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/onelogin-saml-application-setup.md)
-    * [Custom mapping](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/README.md)
+    * [Custom mapping](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/README.md)
       * [Legacy custom mapping](enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md)
       * [Examples: Setting up custom mapping for IdPs](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/README.md)
         * [Example: Setting up custom mapping for Okta](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-okta.md)
