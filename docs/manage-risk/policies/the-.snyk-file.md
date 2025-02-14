@@ -113,7 +113,7 @@ For more information, see [Setting Python version in Git Projects](../../support
 #### Set vulnerability ignore rules
 
 {% hint style="warning" %}
-The `expires` field is optional. If you need a permanent ignore please omit the field.
+The `expires` field is optional. If you need a permanent ignore, omit the field.
 {% endhint %}
 
 Ignore a specific vulnerability for a given path:
@@ -205,7 +205,7 @@ The `.snyk` file has the following top-level keys:
 * `ignore:`
 * `patch:`
 
-The `language-settings:` value is the Python version you are currently using. See the examples in the section [Set the language version for Python](the-.snyk-file.md#set-the-language-version-for-python) on this page.
+The `language-settings:` value is the Python version you are using. See the examples in the section [Set the language version for Python](the-.snyk-file.md#set-the-language-version-for-python) on this page.
 
 The `ignore:` is an ignore rule in the form of:
 
@@ -217,7 +217,11 @@ ignore:
         expires: 'YYYY-MM-DDThh:mm:ss.fffZ'
 ```
 
-Field `expires` is optional. If you need a permanent ignore please omit this field like below:
+{% hint style="info" %}
+Note that a double indent is required for the `reason` and `expires` fields.
+{% endhint %}
+
+The`expires` field is optional. If you need a permanent ignore, omit this field as shown in the following example:
 
 ```
 ignore:
