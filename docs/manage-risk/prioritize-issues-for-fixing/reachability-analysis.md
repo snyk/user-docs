@@ -114,6 +114,16 @@ The following considerations related to **false positives and false negatives** 
 
 Program analysis requires a trade-off between accurate results, minimizing false positives, and recall rates, by avoiding potentially exploitable vulnerabilities.&#x20;
 
-To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment. &#x20;
+To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment.&#x20;
 
 For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. Snyk Deep Code analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.&#x20;
+
+### Understanding the Limits of Reachability in Static Analysis
+
+Snyk aims to identify and demonstrate when a code element is reachable, while also addressing the challenges of indicating that a code element cannot be reached.  &#x20;
+
+Static analysis techniques can show that a vulnerability or code element can be reached through at least one execution path. However, just because there is no evidence of this does not mean that the element cannot be reached.&#x20;
+
+A code element that is not marked as reachable may still be accessible under conditions that were not considered during analysis. This can occur due to incomplete information, control flow issues, potential dynamic behaviors, or overlooked edge cases.
+
+Reachability is an important factor in assessing security risks. When evaluating these risks, consider both reachable issues and those that are not reachable. This helps you evaluate security risks as a whole, making sure you do not overlook any potential threats.
