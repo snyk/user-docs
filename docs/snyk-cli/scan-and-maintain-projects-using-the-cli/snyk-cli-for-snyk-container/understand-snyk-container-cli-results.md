@@ -31,7 +31,9 @@ Snyk groups together vulnerabilities that are found in multiple packages. This h
 
 ## Base image recommendations
 
-If Snyk identifies the base image, and the image uses an [Official Docker image](https://docs.docker.com/docker-hub/official\_images/), the output includes recommendations for upgrades, in order to fix some of the discovered vulnerabilities.
+Snyk SCM scanning supports a subset of Docker Hub images. Other registries are not supported.
+
+If Snyk identifies the base image, and the image uses an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the output includes recommendations for upgrades, in order to fix some of the discovered vulnerabilities.
 
 <figure><img src="../../../.gitbook/assets/clirecommendations.png" alt="Recommendations for base image upgrade"><figcaption><p>Example of recommendations to upgrade the base image</p></figcaption></figure>
 
