@@ -1,6 +1,6 @@
 # Understand your issues
 
-Snyk Essentials and Snyk AppRisk Issues works by understanding your vulnerabilities within the context of your application. You can see all the gathered context in the list view of your issues. In the table view, you can see the following details:
+Snyk AppRisk Issues works by understanding your vulnerabilities within the context of your application. You can see all the gathered context in the list view of your issues. In the table view, you can see the following details:
 
 * Issue name, which redirects to the Projects page within that issue's Organization.
 * Identified risk factors together with the [evidence graph](evidence-graph.md).

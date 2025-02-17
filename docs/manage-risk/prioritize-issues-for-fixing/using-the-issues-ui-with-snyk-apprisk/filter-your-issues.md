@@ -1,7 +1,5 @@
 # Filter your issues
 
-The Filters view differs between the Snyk Essentials and Snyk AppRisk versions.&#x20;
-
 {% hint style="info" %}
 On the Issues page, the Set up Insights option, the Funnel view, the Risk Factor filter, and column are available only to Snyk AppRisk users.
 {% endhint %}
