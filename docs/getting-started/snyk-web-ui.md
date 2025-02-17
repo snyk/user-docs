@@ -177,7 +177,7 @@ The Reports page has all report types available at both the Group and Organizati
 Issues are available only for Snyk Enterprise users.
 {% endhint %}
 
-The [Issues page](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) provides a centralized view of all the issues identified by Snyk with additional asset context. This helps you and your team to better triage and remediate issues in Snyk.
+The [Issues page](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md) provides a centralized view of all the issues identified by Snyk with additional asset context. This helps you and your team to better triage and remediate issues in Snyk.
 
 ### View dependencies and licenses
 

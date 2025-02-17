@@ -12,7 +12,7 @@ To use the Snyk Broker Client with GitHub, **run** `docker pull snyk/broker:gith
 
 ## Docker run command to set up a Broker Client for GitHub
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk AppRisk information. Enable [Snyk AppRisk](../../../../scan-with-snyk/snyk-apprisk/) to identify your application assets, monitor them, and prioritize the risks.
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk AppRisk information. Enable [Snyk AppRisk](../../../../scan-with-snyk/snyk-apprisk.md) to identify your application assets, monitor them, and prioritize the risks.
 
 {% hint style="info" %}
 **Multi-tenant settings for regions other than the default**\

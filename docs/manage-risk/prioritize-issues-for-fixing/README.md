@@ -109,7 +109,7 @@ You can use the Risk Score at the Snyk Group or Snyk Organization level.
 
 ## Prioritization based on risk
 
-[Prioritization with Insights](prioritization-for-snyk-apprisk.md) for Snyk AppRisk - Snyk AppRisk uses holistic application intelligence to help you identify and prioritize container, code, and open source issues based on the risk they pose to your application. You can prioritize issues based on asset classification as defined in Snyk AppRisk policies.&#x20;
+[Prioritization with Insights](prioritization-for-snyk-essentials.md) for Snyk AppRisk - Snyk AppRisk uses holistic application intelligence to help you identify and prioritize container, code, and open source issues based on the risk they pose to your application. You can prioritize issues based on asset classification as defined in Snyk AppRisk policies.&#x20;
 
 You can use Prioritization with Insights to identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. These are the risk factors that you can use:
 

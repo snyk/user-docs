@@ -41,7 +41,7 @@ The [runtime integrations ](../../snyk-apprisk/integrations-for-snyk-apprisk/con
 * the Kubernetes container name
 * the Kubernetes image name
 
-When you run the [risk-based prioritization](../prioritization-for-snyk-apprisk.md) for Snyk AppRisk pipelines, a snapshot of this information is used to attach lists of loaded packages to the deployed images and facts Snyk knows about.
+When you run the [risk-based prioritization](../prioritization-for-snyk-essentials.md) for Snyk AppRisk pipelines, a snapshot of this information is used to attach lists of loaded packages to the deployed images and facts Snyk knows about.
 
 The packages are identified by:
 

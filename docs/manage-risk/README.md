@@ -12,7 +12,7 @@ Snyk AppRisk provides:
 * **Tailored security controls**: Define and manage appropriate security and compliance requirements, and verify the correct controls are in place.
 * **Risk-based prioritization**: Assess risk for each app based on application context and best-in-class security analysis and fix guidance to focus developer remediation efforts on issues that matter most to the business.
 
-See the [Snyk Essentials vs Snyk AppRisk](../scan-with-snyk/snyk-apprisk/snyk-apprisk-essentials-vs-snyk-apprisk-pro.md) page for more details about the differences between the two offerings.
+See the [Snyk Essentials vs Snyk AppRisk](broken-reference) page for more details about the differences between the two offerings.
 
 ## Analytics
 

@@ -1,20 +1,12 @@
-# Prioritization for Snyk Essentials and Snyk AppRisk
+# Prioritization for Snyk AppRisk
 
 Snyk uses holistic application intelligence to help you better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. Users can also prioritize their issues based on asset classification as defined in asset-related policies.&#x20;
 
-If you use Snyk Essentials or Snyk AppRisk, you can access the Issues page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
+You can access the [Issues](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
 
 The Issues page provides a centralized view of all the issues identified by Snyk with additional asset context. This will help empower AppSec teams to better triage and remediate issues in Snyk.
 
 **Issues** is available at the Group level or at the Organization level.&#x20;
-
-## Prioritizing issues using Snyk Essentials
-
-The following video explains how to prioritize issues using Snyk Essentials:
-
-{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737735579/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-_7a_-_v2_-_Issue_Prioritization_with_Snyk_Essentials.mp4" %}
-Prioritizing issues with Snyk Essentials
-{% endembed %}
 
 ## Insights for Snyk AppRisk
 
@@ -27,17 +19,13 @@ The Snyk approach looks holistically at your application to understand the follo
 * Where the image was deployed
 * How the supporting Kubernetes and cloud infrastructure is configured
 
-## Issues page: Snyk Essentials vs Snyk AppRisk&#x20;
+## Issues page for Snyk AppRisk&#x20;
 
 **Issues** is nested in the main left menu and provides information about the identified issues. Use the available filters to customize and prioritize the issues list.
 
 {% hint style="info" %}
 The Risk Factor column and filter, and with it, the evidence graph information, are available only for Snyk AppRisk users.&#x20;
 {% endhint %}
-
-**Issues - Snyk Essentials**
-
-<figure><img src="../../.gitbook/assets/issues-apprisk-essentials.png" alt="Issues page - Snyk AppRisk"><figcaption><p>Issues menu - Snyk Essentials</p></figcaption></figure>
 
 **Issues - Snyk AppRisk**&#x20;
 

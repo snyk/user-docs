@@ -173,7 +173,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
   * Issues - [Prioritize issues for fixing](manage-risk/prioritize-issues-for-fixing/#prioritization-based-on-risk) section
   * Policies - [Assets policies](manage-risk/policies/assets-policies/) section
   * Integrations - [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Integrate with Snyk](integrate-with-snyk/#integrations-for-snyk-apprisk) sections
-  * Snyk AppRisk - [Scan with Snyk](scan-with-snyk/snyk-apprisk/) section
+  * Snyk AppRisk - [Scan with Snyk](scan-with-snyk/snyk-apprisk.md) section
   * Analytics - [Manage risk](manage-risk/enterprise-analytics/application-analytics.md) section
 
 ### Snyk Integrations

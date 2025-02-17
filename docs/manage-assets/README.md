@@ -32,7 +32,7 @@ Risk factors for Snyk AppRisk are in Early Access and are available only with Sn
 
 ## Assets overview
 
-In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](./), [Policies](../manage-risk/policies/assets-policies/), [Insights for Snyk AppRisk](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md), and [Analytics](../manage-risk/enterprise-analytics/application-analytics.md).&#x20;
+In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](./), [Policies](../manage-risk/policies/assets-policies/), [Insights for Snyk AppRisk](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md), and [Analytics](../manage-risk/enterprise-analytics/application-analytics.md).&#x20;
 
 The main source of information is the **Inventory** menu. Here, you can view, filter, and manage your assets.&#x20;
 
@@ -42,7 +42,7 @@ In the [**Policies**](../manage-risk/policies/assets-policies/) menu, you can cr
 
 In the [**Analytics**](../manage-risk/enterprise-analytics/application-analytics.md) menu, you can review and explore your application status and results, from a top-down approach. The Analytics page then uses this data to provide detailed insights into the performance and security metrics for the assets. This page helps identify trends, detect anomalies, and pinpoint potential vulnerabilities, providing a data-driven approach to asset management.
 
-The [**Issues**](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md) menu uses information from both the Inventory and Policies menus to prioritize issues based on their severity and impact. This prioritization assists organizations in concentrating on addressing the most critical risks first, streamlining risk management, and enhancing overall security posture.
+The [**Issues**](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md) menu uses information from both the Inventory and Policies menus to prioritize issues based on their severity and impact. This prioritization assists organizations in concentrating on addressing the most critical risks first, streamlining risk management, and enhancing overall security posture.
 
 Through this interconnected framework, Snyk ensures robust asset protection and optimized performance, integrating inventory management, policy enforcement, analytical insights, and risk prioritization into a cohesive, efficient system.
 
