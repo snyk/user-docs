@@ -957,6 +957,15 @@ The media format of the request is not supported. Change media format, then try 
 **HTTP Status:** [415](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)
 
 
+### [SNYK-OPENAPI-0009](#snyk-openapi-0009)
+
+#### Conflict
+
+The request could not be completed due to a conflict with the current state of the target resource. Review the request, then try again.
+
+**HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
+
+
 ---
 # Open Source Languages & Package Managers
 ### [SNYK-OS-0001](#snyk-os-0001)
@@ -2738,4 +2747,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-02-13T11:50:37.517Z
+--- Generated at 2025-02-18T07:42:48.677Z
