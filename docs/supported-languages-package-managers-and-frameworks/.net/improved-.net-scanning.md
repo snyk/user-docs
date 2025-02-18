@@ -51,6 +51,8 @@ If you are not using `nuget.config`, but another way of informing the .NET ecosy
 
 Fill in the **Your tokens** fields by adding a **Username**, the **Personal access token**, and the repository **URL** (supports only HTTPS sources).&#x20;
 
+For more information, see [Package repository integrations](../../scan-with-snyk/snyk-open-source/package-repository-integrations/).
+
 ### Limitations on improved .NET scanning for SCM integrations
 
 * `Directory.Build.props` , `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).
