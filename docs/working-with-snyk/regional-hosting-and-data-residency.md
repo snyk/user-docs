@@ -235,3 +235,15 @@ Then add an extra variable to the `values-customer-settings.yml`:
 **SNYK-AU-01**\
 `deeproxy:`\
 `verificationEndpoint: "https://api.au.snyk.io/v1/validate/token/snyk-to-deepcode-proxy-validation"`
+
+### Kubernetes Integration URLs
+
+Follow the instructions to install the [Snyk Controller with Helm](https://docs.snyk.io/scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-with-helm-azure-and-google-cloud-platform) with an extra variable added to the `helm upgrade`command:
+
+**SNYK-US-01**: (no configuration required)
+
+**SNYK-US-02**: `--set integrationApi=https://api.us.snyk.io/v2/kubernetes-upstream`
+
+**SNYK-EU-01:** `--set integrationApi=https://api.eu.snyk.io/v2/kubernetes-upstream`
+
+**SNYK-AU-01:** `--set integrationApi=https://api.au.snyk.io/v2/kubernetes-upstream`
