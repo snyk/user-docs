@@ -10,7 +10,7 @@ Enterprise plans have administrators, viewers, collaborators, and custom roles.
 For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Permissions are granted to users according to their role.
+Snyk supports role-based access control (RBAC). Permissions are granted to users according to their role.
 
 Snyk Enterprise plan customers can [manage user roles](user-role-management.md), [change the role of a user](user-role-management.md#change-the-role-of-a-user) in the Snyk Web UI, or [update member roles using the Snyk API](../user-management-with-the-api/update-member-roles-using-the-api.md).
 

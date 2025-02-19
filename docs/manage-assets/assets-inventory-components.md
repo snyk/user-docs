@@ -183,22 +183,6 @@ System tags are automatically generated from the SCM repositories. System tags c
 | The user commit is newer than 3 months.  | `Active user`   |
 | A new user is detected.                  | `New user`      |
 
-### Tag rules related to repository and code project
-
-| Rule                                                                                                | Tag                              |
-| --------------------------------------------------------------------------------------------------- | -------------------------------- |
-| The word `payment` or `checkout` is found in the repository and code project.                       | `payment`                        |
-| Snyk Essentials found the code project with the code owner.                                         | `codeowners`                     |
-| Snyk Essentials found the word `infrastructure` in the repository and code project.                 | `infrastructure`                 |
-| Snyk Essentials found the word `store` or `cart` in the repository and code project.                | `ecommerce`                      |
-| For scanned artifact code project.                                                                  | `scanned artifact: packages`     |
-| For scanned artifact repositories.                                                                  | `scanned artifact: repositories` |
-| Snyk Essentials found the word `upload` in the repository or code project.                          | `upload`                         |
-| Snyk Essentials found the word `demo` in the repository and code project.                           | `demo`                           |
-| Snyk Essentials found the word `billing`, `charges` or `invoice` in the repository or code project. | `billing`                        |
-| Snyk Essentials found the word `account` in the repository or code project.                         | `account`                        |
-| Snyk Essentials found the word `download` or `attachement` in the repository or code project.       | `attachment`                     |
-
 ### Tag rules related to metadata
 
 | Rule                                                                  | Tag                 |
@@ -210,6 +194,7 @@ System tags are automatically generated from the SCM repositories. System tags c
 | Snyk Essentials found languages from the SCM.                         | `<languages>`       |
 | Snyk Essentials detected a new repository created in the last 7 days. | `new repository`    |
 | Snyk Essentials found nodejs metadata.                                | `nodejs module`     |
+| Snyk Essentials found the code project with the code owner.           | `codeowners`        |
 
 ## **Developers**
 

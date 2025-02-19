@@ -4,7 +4,9 @@ When you find a vulnerability, you have the opportunity to report that vulnerabi
 
 ## Unable to open a pull request or merge request for issues found by Snyk
 
-When you import a Project, either through an integration or by using the CLI, Snyk provides the Fix PR button for direct dependencies only. Snyk does not open PRs for transitive dependencies. For more information, see [Fixing transitive dependencies](vulnerability-fix-types.md#fixing-transitive-dependencies).
+When you import a Project, either through integration or by using the CLI, both CLI and SCM projects receive fix advice, while SCM projects additionally offer the option to open a Fix PR.&#x20;
+
+Snyk does not open PRs for transitive dependencies. For more information, see [Fixing transitive dependencies](vulnerability-fix-types.md#fixing-transitive-dependencies).
 
 ## Languages supported for Fix Pull Requests or Merge Requests
 
@@ -18,4 +20,3 @@ Snyk supports creating Fix PRs or MRs for the following languages:
 * [Python](../../../supported-languages-package-managers-and-frameworks/python/)
 * [Ruby](../../../supported-languages-package-managers-and-frameworks/ruby/)
 * [Yarn](../../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#yarn)
-

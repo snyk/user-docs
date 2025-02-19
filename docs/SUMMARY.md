@@ -214,7 +214,7 @@
     * [Phase 6: triages, ignores and fixes](implement-snyk/team-implementation-guide/phase-6-triages-ignores-and-fixes.md)
   * [Enterprise implementation guide](implement-snyk/enterprise-implementation-guide/README.md)
     * [Trial limitations](implement-snyk/enterprise-implementation-guide/trial-limitations.md)
-    * [Prerequisites: project plan templates](implement-snyk/enterprise-implementation-guide/prerequisites-project-plan-templates.md)
+    * [Prerequisites](implement-snyk/enterprise-implementation-guide/prerequisites.md)
     * [Phase 1: Discovery and planning](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/README.md)
       * [Connect with Snyk](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/connect-with-snyk.md)
       * [Conduct discovery](implement-snyk/enterprise-implementation-guide/phase-1-discovery-and-planning/conduct-discovery.md)
