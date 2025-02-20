@@ -128,3 +128,4 @@ redirects:
   scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-azure: scan-with-snyk/snyk-iac/cloud-platform-integrations/azure-integration-for-cloud-configurations/README.md
   scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/step-1-download-service-account-iac-template-web-ui: scan-with-snyk/snyk-iac/cloud-platform-integrations/google-cloud-integration/README.md
   implement-snyk/enterprise-implementation-guide/prerequisites-project-plan-templates: /implement-snyk/enterprise-implementation-guide/prerequisites/README.md
+  snyk-api/rest-api/authentication-for-api/authenticating: snyk-api/rest-api/authentication-for-api/README.md
