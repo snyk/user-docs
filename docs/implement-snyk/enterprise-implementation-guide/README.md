@@ -24,7 +24,7 @@ The Snyk Essentials plan is included in the Snyk Enterprise plan, meaning that y
 
 {% hint style="info" %}
 If you want to upgrade your plan to Snyk AppRisk, please contact your salesperson. \
-On the [Snyk Essentials vs Snyk AppRisk ](broken-reference)page, you can find more details about the features available for both offerings.
+On the [Snyk AppRisk ](../../scan-with-snyk/snyk-apprisk.md#features)page, you can find more details about the available features.
 {% endhint %}
 
 ## Implementation strategy overview

@@ -6,11 +6,11 @@
 
 See [Snyk Advisor](https://snyk.io/advisor/).
 
-### **Asset (Snyk AppRisk)**
+### **Asset (Snyk Essentials)**
 
-A Snyk AppRisk asset is an identifiable entity that is part of an application, and relevant for security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
+A Snyk Essentials asset is an identifiable entity that is part of an application, and relevant for security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
 
-### Application (Snyk AppRisk)
+### Application (Snyk **Essentials**)
 
 An application is software that serves a business purpose and consists of assets that form the app. Organizations often define the scope of an application differently.
 
@@ -42,7 +42,7 @@ Information related to the organization's objectives, priorities, and regulatory
 
 Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
 
-### **Class (Snyk AppRisk)**
+### **Class (Snyk Essentials)**
 
 A way to assign business context to assets and categorize an asset based on the business criticality. Assets can be assigned Classes A, B, C, or D, where Class A (assets that are business critical, deal with sensitive data, are subject to compliance, and so on) is the most important, and Class D (test apps, sandbox environments, and so on) the least important. Assets are assigned Class C by default. A class can be used in policies as well as defined in a policy.
 
@@ -55,7 +55,7 @@ Command Line Interface. See [Snyk CLI](glossary.md#snyk-cli).
 Implementing security throughout the CI/CD pipeline, automating security embedding in microservices, and maximizing repetition to reduce the introduction of vulnerabilities. Snyk provides a comprehensive [CNAS platform](https://snyk.io/product/cloud-native-application-security/).\
 See the article [Cloud-native security guide for building secure applications](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/).
 
-### Code assets (Snyk AppRisk)
+### Code assets (Snyk **Essentials**)
 
 A hierarchical list of all assets retrieved from the scanned repositories.
 
@@ -75,15 +75,15 @@ One or more files that, when instantiated by a container engine or runtime, prov
 
 A server that provides a mechanism to store and retrieve container images.
 
-### **Controls (Snyk AppRisk)**
+### **Controls (Snyk Essentials)**
 
-The security controls associated with the asset. Navigate to the Snyk AppRisk Controls section to see all available statuses for security controls.
+The security controls associated with the asset. Navigate to the Snyk Essentials Controls section to see all available statuses for security controls.
 
-### **Coverage (Snyk AppRisk)**
+### **Coverage (Snyk Essentials)**
 
 An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program. A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
 
-### Coverage gap (Snyk AppRisk)
+### Coverage gap (Snyk **Essentials**)
 
 An assessment of all assets that fall "out of policy" and do not satisfy the coverage criteria you have specified, due to infrequent scanning or no scanning at all.
 
@@ -192,15 +192,15 @@ Third-party products, applications, and platforms that Snyk works with, for exam
 
 A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Find and manage priority issues](../manage-risk/prioritize-issues-for-fixing/).
 
-### Issue (Snyk AppRisk)
+### Issue (Snyk **Essentials**)
 
 An issue is a security problem identified by a Snyk security product when testing an asset, that AppSec teams need to remediate.
 
-### Issues prioritization (Snyk AppRisk)
+### Issues prioritization (Snyk **Essentials**)
 
 Provides a centralized view of all the issues identified by Snyk with additional asset context. This empowers AppSec teams to better triage and remediate issues in Snyk.
 
-### Issue context (Snyk AppRisk)
+### Issue context (Snyk **Essentials**)
 
 Information surrounding a particular security issue that serves as objective risk factors such as issue severity level, availability of a fix, exploit maturity.
 
@@ -244,9 +244,9 @@ The identifier for the ecosystem that a Target exists in. Snyk can scan Projects
 
 A group of files and additional metadata about those files, used by package managers.
 
-### Package assets (Snyk AppRisk)
+### Package assets (Snyk **Essentials**)
 
-Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk AppRisk to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
+Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk Essentials to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
 
 ### Package manager
 
@@ -264,7 +264,7 @@ A fix type. Define and "pin" a specific version of an indirect dependency, to av
 
 See [license policy](glossary.md#license-policy), [security policy](glossary.md#security-policy), and [`.snyk` policy](glossary.md#snyk-policy).
 
-### **Policy (Snyk AppRisk)**
+### **Policy (Snyk Essentials)**
 
 A way to automate actions in certain conditions, like classifying and tagging assets with business context. You can also use a policy to configure actions like sending a message or setting the coverage gap control using a Policy builder UI.
 
@@ -298,7 +298,7 @@ See [Container registry](glossary.md#container-registry) or [Package registry](g
 
 A storage area that contains all elements necessary for the distribution of an application.
 
-### Repository assets (Snyk AppRisk)
+### Repository assets (Snyk **Essentials**)
 
 A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository.
 
@@ -340,15 +340,15 @@ Software Bill Of Materials. A list of components in a piece of software.
 
 Software Composition Analysis. A security analysis technique that is used to identify open-source and third-party components in use in an application, their known security vulnerabilities, and typically also adversarial license restrictions. Not to be confused with [Static Code Analysis](glossary.md#static-code-analysis). See also [Snyk Open Source](glossary.md#snyk-open-source).
 
-### Scanned artifacts (Snyk AppRisk)
+### Scanned artifacts (Snyk **Essentials**)
 
-A scanned artifact in Snyk AppRisk is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.
+A scanned artifact in Snyk Essentials is an entity detected by Snyk that cannot be identified as a repository asset because it does not include identifying information, such as a Git remote URL.
 
 ### SCM
 
 Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
-### SCM Repository freshness (Snyk AppRisk)
+### SCM Repository freshness (Snyk **Essentials**)
 
 The SCM Repository freshness provides an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation. Reflects the status of the repository and the date of the last commit.
 
@@ -447,7 +447,7 @@ A technique for examining source code to identify issues related to code quality
 
 Representation of an external resource Snyk has scanned. All [Snyk Projects](glossary.md#project) are associated with a parent Target. One Target may relate to many Projects. The structure of the Target depends on the [origin](glossary.md#origin-or-source).
 
-### **Tags (Snyk AppRisk)**
+### **Tags (Snyk Essentials)**
 
 A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags and you can use them for creating policies.
 

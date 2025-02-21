@@ -10,7 +10,7 @@ Then, run the following commands to install the Broker and customize the environ
 
 `ACCEPT_CODE` is [set to true by default](https://github.com/snyk/snyk-broker-helm/blob/465d4ef279755fa5c9507975a88348bab04c2264/charts/snyk-broker/templates/broker_deployment.yaml#L383) in the chart, as is [ACCEPT\_IAC](https://github.com/snyk/snyk-broker-helm/blob/465d4ef279755fa5c9507975a88348bab04c2264/charts/snyk-broker/templates/broker_deployment.yaml#L386C23-L386C43). You can disable them if needed using `disableAutoAcceptRules=true`, but otherwise, these are enabled.
 
-Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
+Snyk Essentials is set by default to `false`. Enable it by setting the flag to `true`.
 
 For `github`, `githubApi` and `githubGraphQl` values do not include `https://`
 
@@ -27,7 +27,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set github=<ENTER_GHE_ADDRESS> \
              --set githubApi=<ENTER_GHE_API_ADDRESS> \
              --set githubGraphQl=<ENTER_GRAPHQL_ADDRESS> \
-             --set enableAppRisk=true \
+             --set enableEssentials=true \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
              -n snyk-broker --create-namespace
 ```

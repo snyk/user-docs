@@ -50,15 +50,15 @@ How will you provision users and integrate Snyk with your platforms?
 * How will you know that you are making progress?
 * Are there key development projects that progress tracking should be aligned with, or at least included in the tracking, to measure progress against?
 
-## Snyk AppRisk considerations
+## Snyk Essentials considerations
 
 Snyk Essentials is part of the Snyk Enterprise offering, and it provides discovery and visibility for your application assets and security tool coverage.&#x20;
 
-When or before you use Snyk AppRisk, you should consider the following items:
+When or before you use Snyk Essentials, you should consider the following items:
 
 * Who would want coverage visibility or is accountable if an important application is not being monitored by security tools?
 * Who would you notify, using automated policies, if a repository were missing coverage by a security tool?
-* Are you using [Application context](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/), and are there fields that might be valuable in automating policies with Snyk AppRisk?
+* Are you using [Application context](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/), and are there fields that might be valuable in automating policies with Snyk Essentials?
   * Is it possible to categorize important applications in Git or CMDB (ServiceNow) using topics or fields, such as a PCI topic or tag?
   * Would this also reduce noise about test applications and internal applications by implementing an internal tag, topic, or naming convention?&#x20;
-* Read the available examples of [common policies](../../../manage-risk/policies/assets-policies/#use-cases) that can be created using Snyk AppRisk.&#x20;
+* Read the available examples of [common policies](../../../manage-risk/policies/assets-policies/#use-cases) that can be created using Snyk Essentials.&#x20;

@@ -2,7 +2,7 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](bitbucket-data-center-server.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials or Snyk AppRisk. If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
+* [Group level ](bitbucket-data-center-server.md#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials. If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](bitbucket-data-center-server.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integrations
@@ -128,4 +128,4 @@ Action is required only when the new Bitbucket Data Center instance URL differs 
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
-Navigate to the [BitBucket setup guide for Snyk Essentials ](bitbucket-cloud.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk Essentials or Snyk AppRisk.
+Navigate to the [BitBucket setup guide for Snyk Essentials ](bitbucket-cloud.md#bitbucket-setup-guide)for all details on how to set up the BitBucket integration for Snyk Essentials.

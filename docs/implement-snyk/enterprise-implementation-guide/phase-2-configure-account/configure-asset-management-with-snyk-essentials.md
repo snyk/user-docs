@@ -101,7 +101,7 @@ The Inventory feature is structured in four sections, each focused on a specific
 * **All Assets**: All the discovered assets, grouped by their type.
 * **Asset Hierarchy**: Asset Hierarchy layout shows assets in a hierarchical structure. The list of assets is sorted by issue counts, and, where applicable, the package assets are listed underneath the repositories where they are located. Assets hierarchy is visible only when there are no filters applied. Navigate to the [Assets inventory components](../../../manage-assets/assets-inventory-components.md) page for a detailed overview of all options available in the Assets Hierarchy view and to the [Filters capabilities](../../../manage-assets/assets-inventory-features.md#filters-capabilities) page for more details about the filtering options and how to use them.
 * **Teams**: SCM repository assets grouped by teams. Note that only SCM organizations with teams, and repositories assigned to a team, appear on this layout.
-* **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk AppRisk.
+* **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk Essentials.
 
 If you are using Snyk Essentials for the first time, Snyk recommends you first use the Coverage filter to determine where you have Snyk implemented. Then, you can use the Coverage Gap filter to identify the assets that do not meet the coverage requirements set in a **Set coverage control** policy.
 
@@ -118,10 +118,10 @@ You can use the Coverage Gap filter to:
 
 Use tags to categorize the assets. You can use tags in multiple ways:
 
-* Automatic tags: Snyk AppRisk automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository and repository latest updates. You can also use policies to tag repository and package assets. GitHub and GitLab topics can also be pulled from the repository and applied as Asset Tags in Snyk Essentials or Snyk AppRisk.
+* Automatic tags: Snyk Essentials automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository and repository latest updates. You can also use policies to tag repository and package assets. GitHub and GitLab topics can also be pulled from the repository and applied as Asset Tags in Snyk Essentials or Snyk AppRisk.
 
 {% hint style="info" %}
-BitBucket cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials or Snyk AppRisk, you can only see the language tags that have been manually added for BitBucket. For more information, see the official documentation provided by BitBucket.
+BitBucket cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials or Snyk Essentials, you can only see the language tags that have been manually added for BitBucket. For more information, see the official documentation provided by BitBucket.
 {% endhint %}
 
 * User-defined tags: set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies ](../../../manage-risk/policies/assets-policies/create-policies.md)page for more details.&#x20;

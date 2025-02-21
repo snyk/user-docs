@@ -90,15 +90,15 @@ Importing a Project also does the following:
 * Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md).
 * Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
-## Set up Snyk AppRisk&#x20;
+## Set up Snyk Essentials&#x20;
 
 {% hint style="info" %}
-Snyk AppRisk is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
+Snyk Essentials is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk AppRisk enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).&#x20;
+Snyk Essentials enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).&#x20;
 
-For more information, see [Snyk AppRisk](../scan-with-snyk/snyk-apprisk.md).
+For more information, see [Snyk Essentials](../scan-with-snyk/snyk-essentials.md).
 
 ## Review results and fix your issues
 

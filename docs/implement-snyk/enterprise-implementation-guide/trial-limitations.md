@@ -3,7 +3,7 @@
 The Snyk 14-day trial offers a sample of the features available in the paid Enterprise plan. However, certain features will have limited functionality or be entirely unavailable in order to provide a seamless experience when the trial concludes.
 
 {% hint style="info" %}
-After implementing Snyk AppRisk, you must access the Inventory page to ensure it is populated with all the necessary information. Depending on the number of repositories you have imported, the update may take up to several hours.
+After implementing Snyk Essentials, you must access the Inventory page to ensure it is populated with all the necessary information. Depending on the number of repositories you have imported, the update may take up to several hours.
 {% endhint %}
 
 If you consider purchasing the Team plan, remember that the trial offers features beyond those included in the Team plan.
@@ -20,8 +20,8 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Broker**](../../enterprise-setup/snyk-broker/): Not available.
 * [**Self-hosted Git**](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md): Not available.
 * [**Private Registry Integrations**](../../scan-with-snyk/snyk-open-source/package-repository-integrations/): Not available.
-* [**Snyk AppRisk Inventory**](../../manage-assets/): Not available
-* [**Snyk AppRisk Issue page**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.
+* [**Snyk Essentials Inventory**](../../manage-assets/): Not available
+* [**Snyk Essentials Issue page**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.
 
 {% hint style="info" %}
 Need more help? [Contact Snyk Support](https://support.snyk.io).

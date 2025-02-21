@@ -6,7 +6,7 @@ You can visualize information at the Group or Organization level by clicking the
 
 ## Group level
 
-The following Snyk functions are available with the Web UI, at Group level, with Snyk Essentials and Snyk AppRisk:
+The following Snyk functions are available with the Web UI, at Group level, with Snyk Essentials:
 
 * [Organizations available for the selected Group](snyk-web-ui.md#organizations-available-for-the-selected-group)
 * [View the assets dashboard](snyk-web-ui.md#view-the-assets-dashboard)

@@ -18,14 +18,14 @@ To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services
 
 ## Docker run command to set up a Broker Client for Azure Repos
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk AppRisk information **for one Azure organization**. **Enable** [Snyk AppRisk](../../../../scan-with-snyk/snyk-apprisk.md) to identify your application assets, monitor them, and prioritize the risks.
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk Essentials information **for one Azure organization**. **Enable** [Snyk Essentials](../../../../scan-with-snyk/snyk-apprisk.md) to identify your application assets, monitor them, and prioritize the risks.
 
 {% hint style="info" %}
 **Multi-tenant settings for regions other than the default**\
 When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Regional hosting and data residency, Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
 {% endhint %}
 
-Note that if you have more than one Azure organization, you must deploy a Broker for each one. Snyk AppRisk is set by default to **`false`**. Enable it by setting the flag to **`true`**.
+Note that if you have more than one Azure organization, you must deploy a Broker for each one. Snyk Essentials is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 
 ```bash
 docker run --restart=always \
@@ -38,7 +38,7 @@ docker run --restart=always \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
            -e ACCEPT_IAC=tf,yaml,yml,json,tpl \
            -e ACCEPT_CODE=true \
-           -e ACCEPT_APPRISK=true \
+           -e ACCEPT_ESSENTIALS=true \
        snyk/broker:azure-repos
 ```
 

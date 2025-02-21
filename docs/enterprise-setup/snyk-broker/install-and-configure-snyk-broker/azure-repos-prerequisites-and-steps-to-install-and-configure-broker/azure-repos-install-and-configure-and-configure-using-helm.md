@@ -16,7 +16,7 @@ Then, run the following commands to install the Broker and customize the environ
 
 For the variable `azureReposHost` the value does not include `https://`. If you have more than one Azure organization, you must deploy a Broker for each one.
 
-Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
+Snyk Essentials is set by default to `false`. Enable it by setting the flag to `true`.
 
 {% hint style="info" %}
 **Multi-tenant settings for regions other than the default**\
@@ -31,7 +31,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set azureReposOrg=<ENTER_REPO_ORG> \
              --set azureReposHost=<ENTER_REPO_HOST> \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
-             --set enableAppRisk=true \
+             --set enableEssentials=true \
              -n snyk-broker --create-namespace
 ```
 

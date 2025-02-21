@@ -16,7 +16,7 @@ For the `gitlab` value, do not include `https://.`
 
 Use the environment variable `REMOVE_X_FORWARDED_HEADERS=true` to remove the `XFF` headers from the requests made by the Broker client to GitLab. This allows the Broker to work properly.
 
-Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
+Snyk Essentials is set by default to `false`. Enable it by setting the flag to `true`.
 
 {% hint style="info" %}
 **Multi-tenant settings for regions other than the default**\
@@ -30,7 +30,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set gitlab=<ENTER_GITLAB_URL> \
              --set scmToken=<ENTER_GITLAB_TOKEN> \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
-             --set enableAppRisk=true \
+             --set enableESSENTIALS=true \
              -n snyk-broker --create-namespace
 ```
 

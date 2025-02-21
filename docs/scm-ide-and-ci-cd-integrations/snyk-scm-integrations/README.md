@@ -101,10 +101,10 @@ If you modify the permissions and scopes after the initial configuration, it is 
 
 ### Using Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker - Snyk Essentials and Snyk AppRisk](../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker](../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md).
 
 {% hint style="warning" %}
-Enable the Snyk AppRisk flag in your Snyk Broker deployment environment before running the commands.
+Enable the Snyk Essentials flag in your Snyk Broker deployment environment before running the commands.
 {% endhint %}
 
 You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445489dd96cc68c8386ede38/defaultFilters/apprisk) all the updated `.json` files that include the allowed list of accessible endpoints for the integrations.
@@ -239,7 +239,7 @@ To set up the Snyk GitLab integration you must be a:
 * Snyk Group or Organization Admin.
 * GitLab Owner or Maintainer
 
-A PAT is used for managing personal GitLab projects and requires the `api` scope. For Snyk Essentials and Snyk AppRisk to show all repositories from GitLab, the user generating the PAT should be part of the GitLab group where their GitLab permissions can be a minimum of Guest.
+A PAT is used for managing personal GitLab projects and requires the `api` scope. For Snyk Essentials to show all repositories from GitLab, the user generating the PAT should be part of the GitLab group where their GitLab permissions can be a minimum of Guest.
 
 A GAT is used for managing multiple GitLab projects in a GitLab group and requires the `api` scope and maintainer role selected from the dropdown. You must be a GitLab Premium or Ultimate account tier holder to create a GAT.
 

@@ -8,7 +8,7 @@ Snyk Essentials provides a powerful set of tools to enhance application security
 
 ## Snyk AppRisk
 
-Snyk Essentials or Snyk AppRisk enables Application Security teams to run a full developer security program, covering use cases under Application Security Posture Management (ASPM). See the [Snyk AppRisk](../scan-with-snyk/snyk-apprisk.md#capabilities-and-features) page for more details about Snyk AppRisk and the differences between the two offerings.
+Snyk AppRisk enables Application Security teams to run a full developer security program, covering use cases under Application Security Posture Management (ASPM). See the [Snyk AppRisk](../scan-with-snyk/snyk-apprisk.md#capabilities-and-features) page for more details about Snyk AppRisk and the differences between the two offerings.
 
 ## Analytics
 

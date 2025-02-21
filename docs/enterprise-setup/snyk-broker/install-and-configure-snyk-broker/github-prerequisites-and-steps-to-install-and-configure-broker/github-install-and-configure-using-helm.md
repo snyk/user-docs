@@ -8,7 +8,7 @@ To use this chart, you must first add the Snyk Broker Helm Chart by adding the r
 
 Then, run the following commands to install the Broker and customize the environment variables. Refer to [GitHub - environment variables for Snyk Broker](github-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
-Snyk AppRisk is set by default to `false`. Enable it by setting the flag to `true`.
+Snyk Essentials is set by default to `false`. Enable it by setting the flag to `true`.
 
 {% hint style="info" %}
 **Multi-tenant settings for regions other than the default**\
@@ -20,7 +20,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=github-com \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
              --set scmToken=<ENTER_REPO_TOKEN> \
-             --set enableAppRisk=true \
+             --set enableEssentials=true \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \
              -n snyk-broker --create-namespace
 ```
