@@ -10,15 +10,11 @@ Ensure that you meet the following prerequisites before setting up Snyk AppRisk:
 
 ## Configure Snyk AppRisk and setup SCM integrations
 
-Start onboarding Snyk AppRisk by identifying all inventory code-based assets and detecting which assets have security controls set up.
+Start onboarding Snyk AppRisk by identifying all inventory code-based assets and detecting which assets have security controls set up. See the [Configure Asset Management with Snyk Essentials](configure-asset-management-with-snyk-essentials.md#configure-snyk-essentials-and-setup-scm-integrations) page for more details on configuring and setting up SCM integrations.
 
 ## Access Snyk AppRisk
 
-Verify you can access Inventory from the [Snyk Web UI.](../../../getting-started/snyk-web-ui.md)
-
-* Access the **Inventory** menu from the Group level of your Snyk Group.
-* Ensure you have Group Admin access.
-* Access a Group that has Snyk AppRisk enabled.
+See the [Configure Asset Management with Snyk Essentials](configure-snyk-apprisk-integrations.md#access-snyk-apprisk) page for more details on accessing Snyk AppRisk.
 
 ## Setup integrations <a href="#setup-integrations" id="setup-integrations"></a>
 
