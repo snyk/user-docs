@@ -22,7 +22,7 @@ When a Snyk App is created, it is set up to use `a specific context`, either `te
 
 ### User context
 
-Authorizing a Snyk App that has the `user` context grants the Snyk App access to perform actions on behalf of the user. The Snyk App will have access to the same set of Organizations and Groups as the installing user, as well as access to any new Snyk Organizations and Groups the user is added to. If the installing user deactivates their account, any installed apps having the `user` context that user has installed will not be able to access Snyk.
+Authorizing a Snyk App that has the `user` context grants the Snyk App access to perform actions on behalf of the user. The Snyk App will have access to the same set of Organizations and Groups as the installing user, as well as access to any new Snyk Organizations and Groups the user is added to. If the installing user deactivates their account, any installed apps having the `user` context that user has installed will lose access to Snyk.
 
 ### Tenant context
 
