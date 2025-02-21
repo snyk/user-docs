@@ -1,8 +1,8 @@
-# Maven Scans with Private Repositories
+# Maven scans with private repositories
 
 ## Problem <a href="#problem" id="problem"></a>
 
-Maven fails due to dependencies that reference private repositories in Ithe DE plugin or CI/CD pipeline.
+Maven fails due to dependencies that reference private repositories in Ithe IDE plugin or CI/CD pipeline.
 
 ## Investigation <a href="#investigation" id="investigation"></a>
 

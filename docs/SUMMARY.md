@@ -326,7 +326,7 @@
       * [Snyk Code appears disabled](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/snyk-code-appears-disabled.md)
       * [Missing or differing results in Snyk Code](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/missing-or-differing-results-in-snyk-code.md)
       * [Server returned HTTP response code 403 for URL](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/server-returned-http-response-code-403-for-url.md)
-      * [Maven Scans with Private Repositories](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/maven-scans-with-private-repositories.md)
+      * [Maven scans with private repositories](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/maven-scans-with-private-repositories.md)
       * [Error executing binary because of corporate policy (Windows)](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/error-executing-binary-because-of-corporate-policy-windows.md)
       * [IDE plugin fails with "Scan failed" on windows systems with .exe download blocking](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/ide-plugin-fails-with-scan-failed-on-windows-systems-with-.exe-download-blocking.md)
   * [Snyk CI/CD integrations](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/README.md)
