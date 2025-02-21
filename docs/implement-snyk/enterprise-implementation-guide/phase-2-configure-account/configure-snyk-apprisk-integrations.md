@@ -28,53 +28,15 @@ Access and configure the integrations from the **Integrations** view. Select the
 
 The default display in the **Integrations** view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem).
-
-<figure><img src="../../../.gitbook/assets/image (357) (1).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk AppRisk - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
-
-After you click on the **Integration Hub**, a list of the available integrations is displayed. For each integration, you can add one or multiple profiles.&#x20;
-
-The following video shows how to configure integrations for asset management and discovery.
-
-{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737657000/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-3_-_v1_-_Snyk_Essentials_and_Snyk_AppRisk_Integrations.mp4" %}
-Configure integrations for asset management and discovery&#x20;
-{% endembed %}
+You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations).
 
 ### SCM integrations
 
-Use the Integrations Hub to configure your SCM integrations.&#x20;
-
-{% hint style="warning" %}
-**Integration Hub** is a distinct integration interface dedicated to asset management. It is available with Snyk AppRisk, separate from the Organization integrations interface which is used for security and license scanning.
-{% endhint %}
-
-When you set a token on the Group Level Integrations screen, it enhances security by providing a comprehensive view of access. This token allows broad access to all repositories, even those not permitted for individual developers, ensuring alignment between security and development teams.
-
-The supported SCM integrations are:
-
-* [GitHub](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md#group-level-snyk-apprisk-integrations)
-* [GitLab](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-apprisk-integrations)
-* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)
-* [BitBucket](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations)
-
-Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
+Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) page for more details about the supported SCM integrations.
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
-When setting up or [Snyk broker connection](https://docs.snyk.io/enterprise-setup/snyk-broker), consider the following questions:
-
-* Are you hitting any API Rate Limit issues?
-* Do you need to update the SCM token to a user that has access to all relevant SCM repositories?
-* Do you have more than 1000 repos?
-
-If you answered Yes to any of the above questions, then you need to deploy a new Snyk Broker to accommodate the Snyk AppRisk SCM connection.&#x20;
-
-{% hint style="info" %}
-Snyk recommends creating a new Organization in Snyk specifically for the Snyk AppRisk Broker.
-{% endhint %}
-
-Navigate to the [Snyk Broker - AppRisk](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.\
-
+Navigate to the [Snyk Broker - SCM integrations](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md#scm-integrations) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.
 
 ### Third-party integrations
 
@@ -86,9 +48,7 @@ For Group-level integrations in Snyk AppRisk, a token provides an overview of cu
 
 ### Application context for SCM Integrations
 
-The application context refers to the information surrounding a particular application, which includes the assets that form the application and how these assets are related. Understanding this context is essential for assessing the impact and risk of security issues, as it provides a comprehensive view of the application's structure and its components. This understanding is crucial for effectively evaluating and managing application security risks.
-
-Access the [Application context for SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) docs for more details about how to use this feature.
+See the [Application context for SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) docs for more details about how to use this feature.
 
 ## Features
 
@@ -110,29 +70,3 @@ The Inventory feature is structured in four sections, each focused on a specific
 * **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk AppRisk.
 
 If you are using Snyk AppRisk for the first time, Snyk recommends you to first use the Coverage filter to determine where you have Snyk implemented. Then, you can use the Coverage Gap filter to identify the assets that do not meet the coverage requirements set in a **Set coverage control** policy.
-
-You can use the Coverage Gap filter to:
-
-*   &#x20;Find any asset that does not comply with the Set coverage control policy requirements:&#x20;
-
-    <figure><img src="../../../.gitbook/assets/image (1) (10).png" alt="Use the Coverage gap filter to Find any asset that is out of policy"><figcaption><p>Coverage gap - Use case 1</p></figcaption></figure>
-*   Find any assets that do not meet the coverage requirements for Snyk Open Source or Snyk Code, or both of them simultaneously:&#x20;
-
-    <figure><img src="../../../.gitbook/assets/image (1) (10) (1).png" alt="Use the Coverage gap filter to Find any asset that is out of policy for Snyk Open Source OR Snyk Code"><figcaption><p>Coverage gap - Use case 2</p></figcaption></figure>
-
-#### Tags <a href="#hardbreak-tags" id="hardbreak-tags"></a>
-
-Use tags to categorize the assets. You can use tags in multiple ways:
-
-* Automatic tags: Snyk AppRisk automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository and repository latest updates. You can also use policies to tag repository and package assets. GitHub and GitLab topics can also be pulled from the repository and applied as Asset Tags in Snyk AppRisk.
-
-{% hint style="info" %}
-BitBucket cannot automatically detect the language used in the source code from the repositories. In Snyk AppRisk, you can only see the language tags that have been manually added for BitBucket. For more information, see the official documentation provided by BitBucket.
-{% endhint %}
-
-* User-defined tags: set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies ](../../../manage-risk/policies/assets-policies/create-policies.md)page for more details.&#x20;
-
-
-
-
-
