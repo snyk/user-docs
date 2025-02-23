@@ -12,4 +12,4 @@ To create this role, enable the following permissions in the relevant categories
 
 ## Organization-level permissions
 
-<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled</th></tr></thead><tbody><tr><td>View Organization assignments</td><td>true</td></tr><tr><td>Edit Organization assignments</td><td>true</td></tr><tr><td>Create Organization assignments</td><td>true</td></tr><tr><td>Delete Organization assignments</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th>Permission Group</th><th>Permission</th><th data-type="checkbox">Enabled</th></tr></thead><tbody><tr><td>Snyk Learn Assignments management</td><td>View Organization assignments</td><td>true</td></tr><tr><td>Snyk Learn Assignments management</td><td>Edit assignments</td><td>true</td></tr><tr><td>Snyk Learn Assignments management</td><td>Create assignments</td><td>true</td></tr><tr><td>Snyk Learn Assignments management</td><td>Delete assignments</td><td>true</td></tr><tr><td>Snyk Learn Reports management</td><td>View Organization reports</td><td>true</td></tr></tbody></table>

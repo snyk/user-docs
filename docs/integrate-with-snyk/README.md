@@ -56,7 +56,7 @@ After you finish setting up an integration, you can see the following connection
 
 If you encounter any of the failed statuses, check the Connection failure details list available on the integration card.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Integration card - Connection failure details list</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (663).png" alt=""><figcaption><p>Integration card - Connection failure details list</p></figcaption></figure>
 
 ### Snyk AppRisk integrations ecosystem
 
