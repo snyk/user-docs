@@ -47,12 +47,6 @@ This feature is limited to 10 inline comments at Pull Request level. The Summary
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 14.03.12.png" alt=""><figcaption><p>Inline Comment feature for Pull Request Experience</p></figcaption></figure>
 
-### Inline Comment Creation: Support Matrix
-
-Inline comments are added directly to the specific file and line of code where the issue is found. Depending on the issue's position within the code and the SCM platform's capabilities, the ability to create an inline comment may be restricted. The table below outlines these limitations for different SCMs and issue locations:
-
-<table data-full-width="false"><thead><tr><th width="458">Issue Location</th><th width="143">GitHub</th><th>Bitbucket</th></tr></thead><tbody><tr><td><strong>Within the pull request diff:</strong> <br>Add inline comments for issues found on specific lines of code that have been changed.</td><td>Supported <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td>Supported <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><p><strong>In a modified file, but outside the pull request diff:</strong></p><p>Add inline comments for issues found on parts of a modified file that aren't part of the highlighted changes.</p></td><td><p>Not</p><p>Supported <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></p></td><td>Supported <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><p><strong>Outside modified files in the pull request:</strong></p><p>Add inline comments for issues found on files that haven't been modified in the pull request.</p></td><td><p>Not</p><p>Supported <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></p></td><td><p>Not</p><p>Supported <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></p></td></tr></tbody></table>
-
 ## Configure Pull Request Experience
 
 You can configure the Pull Request Experience [at the Integration level](pull-request-experience.md#configure-pr-checks-at-the-integration-level) for your Snyk Organization.
