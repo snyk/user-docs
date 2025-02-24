@@ -4543,35 +4543,35 @@
       "CatalogProgressAttributes": {
         "properties": {
           "completed_count": {
-            "description": "Percentage of users in the organization who have completed (0-100)",
+            "description": "Percentage of users in the organization who have completed the resource.",
             "maximum": 100,
             "minimum": 0,
             "type": "number"
           },
           "in_progress_count": {
-            "description": "Percentage of users in the organization who are in-progress (0-100)",
+            "description": "Percentage of users in the organization who have started progress on the resource.",
             "maximum": 100,
             "minimum": 0,
             "type": "number"
           },
           "todo_count": {
-            "description": "Percentage of users in the organization who have not started (0-100)",
+            "description": "Percentage of users in the organization who have not started progress on the resource.",
             "maximum": 100,
             "minimum": 0,
             "type": "number"
           },
           "users_completed_count": {
-            "description": "Number of users in the organization who have completed",
+            "description": "Number of users in the organization who have completed the resource.",
             "minimum": 0,
             "type": "integer"
           },
           "users_in_progress_count": {
-            "description": "Number of users in the organization who are in-progress",
+            "description": "Number of users in the organization who are in-progress who have started progress on the resource.",
             "minimum": 0,
             "type": "integer"
           },
           "users_todo_count": {
-            "description": "Number of users in the organization who have not started",
+            "description": "Number of users in the organization who have not started not started progress on the resource.",
             "minimum": 0,
             "type": "integer"
           }
