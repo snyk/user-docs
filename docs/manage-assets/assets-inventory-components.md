@@ -222,13 +222,27 @@ The class value can be auto-generated with policies. You just need to create a p
 
 The Risk Factors column lists the potential vulnerabilities and security threats associated with each asset. These risk factors help users identify specific risks, enabling them to prioritize and address issues more effectively. By understanding the particular risks tied to their assets, users can take more informed remedial actions.
 
+Here is a list of the available risk factors:
+
+* [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md)
+* [Loaded package](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md)
+* [OS Condition](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md)
+* [Public facing](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md)
+
 ## Source
 
 The Source column in Snyk Essentials helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
 
 ## SCM Repository freshness
 
-The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you with the decision-making regarding maintenance, security patching, and resource allocation.
+The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you make decisions regarding maintenance, security patching, and resource allocation.
+
+The repository freshness displays the repository status according to the last commit date:
+
+* **Active**: Had commits in the last 3 months.
+* **Inactive**: The last commits were made in the last 3 - 6 months.
+* **Dormant**: No commits in the last 6 months.
+* **N/A**: Commits data is unavailable.
 
 ## Clusters
 
