@@ -566,7 +566,7 @@ The specified environment cannot be used. As a result, the configuration remains
 #### Possible inconsistent configuration
 
 You can configure the CLI in different ways, for example via Environment Variables or configuration file.
-If one parameter is configured multiple times, it is probably unintentional and might cause unexpected behaviour.
+If one parameter is configured multiple times, it is probably unintentional and might cause unexpected behavior.
 Review configured environment variables and ensure that everything is intentional. If so, you can skip this check by using --no-check.
 
 **HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
@@ -643,7 +643,7 @@ Snyk could not detect any supported target files. Ensure the files you are impor
 
 #### Too many vulnerable paths to Project
 
-There are too many vulnerable paths to process the project. If your command supports it, consider the following:pruning repeated subdependencies (`snyk test -p`); excluding directories (`snyk test --all-projects --exclude=dir1,file2`); setting a detection depth (`snyk test --all-projects --detection-depth=3`). If the error still occurs, consider debugging or contact Snyk Support.
+There are too many vulnerable paths to process the project. If your command supports it, consider the following:pruning repeated sub-dependencies (`snyk test -p`); excluding directories (`snyk test --all-projects --exclude=dir1,file2`); setting a detection depth (`snyk test --all-projects --detection-depth=3`). If the error still occurs, consider debugging or contact Snyk Support.
 
 **HTTP Status:** [413](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
 
@@ -675,7 +675,7 @@ CLI was unable to execute your SCA command, please take a look at the given deta
 
 ### [SNYK-CLI-0012](#snyk-cli-0012)
 
-#### IAC failue
+#### IAC failure
 
 CLI was unable to execute your IAC command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
 
@@ -2747,4 +2747,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-02-21T10:35:41.439Z
+--- Generated at 2025-02-24T11:22:29.546Z
