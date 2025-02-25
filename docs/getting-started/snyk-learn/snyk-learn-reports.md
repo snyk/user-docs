@@ -28,7 +28,7 @@ The Detailed report provides individual user-level progress tracking within your
 * when the lesson or learning path was completed
 * when the lesson was previously completed, if lesson progress was reset after the user completed it&#x20;
 
-<figure><img src="../../.gitbook/assets/image (659).png" alt=""><figcaption><p>Snyk Learn Detailed report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (659) (2).png" alt=""><figcaption><p>Snyk Learn Detailed report</p></figcaption></figure>
 
 ## Exporting reports&#x20;
 

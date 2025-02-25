@@ -24,7 +24,7 @@ You can choose whether to use Artifactory as a mirror or as an additional reposi
 
 ## **Mirrors**
 
-<figure><img src="../../../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png" alt="Maven settings, choose Type"><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
 
 Choose a value for the Type, either **Direct** or, if you are using authentication, **Integration.**
 
