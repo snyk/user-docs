@@ -14134,7 +14134,8 @@
         },
         "required": [
           "status",
-          "resource"
+          "resource",
+          "completion_history"
         ],
         "type": "object"
       },
