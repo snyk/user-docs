@@ -8089,6 +8089,9 @@
               "assigning_user_email": {
                 "type": "string"
               },
+              "lesson_slug": {
+                "type": "string"
+              },
               "lesson_title": {
                 "type": "string"
               },
@@ -8099,7 +8102,8 @@
             },
             "required": [
               "user_email",
-              "lesson_title"
+              "lesson_title",
+              "lesson_slug"
             ],
             "type": "object"
           }
