@@ -11,7 +11,7 @@
 
 [Learn more about what Snyk can do and sign up for a free account](https://snyk.io/).
 
-The **Snyk CLI brings the functionality of Snyk into your development workflow**. You can run the CLI locally from the command line or in an IDE. You can also run the CLI in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.&#x20;
+The **Snyk CLI brings the functionality of Snyk into your development workflow**. You can run the CLI locally from the command line or in an IDE. You can also run the CLI in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.
 
 <figure><img src="../.gitbook/assets/snyk-cli-screenshot.png" alt="Snyk CLI test command output example"><figcaption><p>Snyk CLI test command output</p></figcaption></figure>
 
@@ -19,7 +19,7 @@ Snyk CLI scanning **supports many languages and tools.** For detailed informatio
 
 * [Supported languages, package managers, and frameworks](https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview) for Open Source and Snyk Code
 * [Supported operating system distributions for Container](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions)
-* [Supported IaC Lanuages and cloud providers](https://docs.snyk.io/scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources)
+* [Supported IaC Languages and cloud providers](https://docs.snyk.io/scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources)
 
 This page explains how to install, authenticate, and start scanning using the CLI. Snyk also has an onboarding wizard to guide you through these steps. For a demonstration, view [Starting with Snyk: an overview of the CLI onboarding flow](https://www.youtube.com/watch?v=adj3VF82-v8).
 
@@ -101,7 +101,7 @@ Run `snyk help` or see the [CLI commands and options summary](https://docs.snyk.
 
 See the course [Introduction to the Snyk CLI](https://learn.snyk.io/lesson/snyk-cli/https://learn.snyk.io/lesson/snyk-cli/) for a quick video training session.
 
-Snyk also provides a [cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1664236143/cheat-sheets/cheat-sheet-snyk-cli-v3.pdf) ([blog post](https://snyk.io/blog/snyk-cli-cheat-sheet/)) and a [video tutorial](https://www.youtube.com/watch?v=xp\_LtchEkT8).
+Snyk also provides a [cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1664236143/cheat-sheets/cheat-sheet-snyk-cli-v3.pdf) ([blog post](https://snyk.io/blog/snyk-cli-cheat-sheet/)) and a [video tutorial](https://www.youtube.com/watch?v=xp_LtchEkT8).
 
 In particular, see the information about the following options that you may find useful:
 
@@ -121,7 +121,7 @@ Effective July 22, 2024, Snyk CLI no longer accepts external contributions.
 
 Due to the CLI's extensive usage and intricate nature, even minor modifications can have unforeseen consequences. Since introducing [release channels](https://docs.snyk.io/snyk-cli/releases-and-channels-for-the-snyk-cli) to the CLI code in April 2024, Snyk's focus has been on stabilizing releases. Snyk believes this open-source, closed-contribution model best serves this goal.
 
-In the spirit of transparency to Snyk customers and CLI users, Snyk will continue working in public. However, going forward,  Snyk CLI is closed to contributions.
+In the spirit of transparency to Snyk customers and CLI users, Snyk will continue working in public. However, going forward, Snyk CLI is closed to contributions.
 
 Snyk appreciates and extends gratitude to the Snyk community.
 
