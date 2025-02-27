@@ -12,6 +12,7 @@
     * [Snyk Learn Reports](getting-started/snyk-learn/snyk-learn-reports.md)
     * [Snyk Learn Assignments](getting-started/snyk-learn/snyk-learn-assignments.md)
     * [Snyk Learn Access Controls](getting-started/snyk-learn/snyk-learn-access-controls.md)
+    * [Snyk Learn API](getting-started/snyk-learn/snyk-learn-api.md)
   * [Glossary](getting-started/glossary.md)
 * [Supported languages, package managers, and frameworks](supported-languages-package-managers-and-frameworks/README.md)
   * [Technical specifications and guidance](supported-languages-package-managers-and-frameworks/technical-specifications-and-guidance.md)
