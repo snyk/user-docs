@@ -23,7 +23,7 @@ If you have not previously connected to Nexus Repository Manager you will be ask
 
 Follow the steps on the tabs below, according to your version of Nexus.
 
-![Configure Nexus registry](<../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.18.43.png>)
+<figure><img src="../../../../.gitbook/assets/image (669).png" alt=""><figcaption><p>Configure Nexus registry</p></figcaption></figure>
 
 {% tabs %}
 {% tab title="Nexus 3" %}
