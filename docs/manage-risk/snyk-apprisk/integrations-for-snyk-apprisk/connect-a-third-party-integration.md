@@ -152,6 +152,18 @@ Nightfall for Snyk AppRisk is in Early Access and available only with Snyk Enter
 
 After you set up your Nightfall integration using the Integration Hub, you can see the secrets detection coverage.
 
+The following video explains how to configure Nightfall.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1740510692/snyk-learn/product-training-videos/Snyk_AppRisk_-11a_-_v1_-_Secrets_detection_coverage_with_Nightfall_AI.mp4" %}
+Configure Nightfall
+{% endembed %}
+
+The following video explains how Nightfall uses data in Snyk.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1740510717/snyk-learn/product-training-videos/Snyk_AppRisk_-11b_-_v1_-_Secrets_detection_coverage_with_Nightfall_AI_-_Snyk_Interface.mp4" %}
+How Nightfall uses data in Snyk
+{% endembed %}
+
 ## GitGuardian setup guide
 
 {% hint style="info" %}
@@ -182,6 +194,18 @@ Ensure that the following permissions are set as READ:
 7. When the connection is established, the status of the GitGuardian integration is changed to **Connected**.
 
 After you set up your GitGuardian integration using the Integration Hub, you can see the secrets detection coverage.
+
+The following video explains how to configure GitGuardian.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1740510716/snyk-learn/product-training-videos/Snyk_AppRisk_-12a_-_v1_-_Secrets_detection_coverage_with_GitGuardian.mp4" %}
+Configure GitGuardian
+{% endembed %}
+
+The following video explains how GitGuardian uses data in Snyk.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1740510727/snyk-learn/product-training-videos/Snyk_AppRisk_-12b_-_v1_-_Secrets_detection_coverage_with_GitGuardian_Part_2.mp4" %}
+How GitGuardian uses data in Snyk
+{% endembed %}
 
 ## Dynatrace setup guide
 
