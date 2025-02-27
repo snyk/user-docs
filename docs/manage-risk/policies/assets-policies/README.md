@@ -44,7 +44,10 @@ Classify repository assets according to their business criticality from A (most 
 
 ### Asset tagging
 
-&#x20;Categorize and label repository assets with flexible tags, which can be used to filter the asset inventory.
+Categorize and label repository assets with [asset tags](../../../manage-assets/assets-inventory-components.md#asset-tags) to filter the asset inventory.&#x20;
+
+* **System tags** - are automatically assigned by Snyk according to recognized keywords.&#x20;
+* **User-defined tags** - are customizable, as you can define the logic governing them through [Assets Policies](./).&#x20;
 
 ### Security coverage
 
