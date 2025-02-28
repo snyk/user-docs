@@ -101,7 +101,7 @@ Run `snyk help` or see the [CLI commands and options summary](https://docs.snyk.
 
 See the course [Introduction to the Snyk CLI](https://learn.snyk.io/lesson/snyk-cli/https://learn.snyk.io/lesson/snyk-cli/) for a quick video training session.
 
-Snyk also provides a [cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1664236143/cheat-sheets/cheat-sheet-snyk-cli-v3.pdf) ([blog post](https://snyk.io/blog/snyk-cli-cheat-sheet/)) and a [video tutorial](https://www.youtube.com/watch?v=xp_LtchEkT8).
+Snyk also provides a [cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1664236143/cheat-sheets/cheat-sheet-snyk-cli-v3.pdf) ([blog post](https://snyk.io/blog/snyk-cli-cheat-sheet/)).
 
 In particular, see the information about the following options that you may find useful:
 
@@ -113,7 +113,7 @@ For detailed information about the CLI, see the [CLI docs](https://docs.snyk.io/
 
 ## Getting support for the Snyk CLI
 
-[Submit a ticket](https://support.snyk.io) to Snyk support whenever you need help with the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk development project](https://github.com/snyk).
+Use the resources on the [Snyk support page ](https://support.snyk.io)to find help for using the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk development project](https://github.com/snyk).
 
 ## Snyk CLI is closed to contributions
 
