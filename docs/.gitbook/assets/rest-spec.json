@@ -92807,14 +92807,5 @@
       "name": "OpenAPI"
     }
   ],
-  "x-cerberus": {
-    "authentication": {
-      "strategies": [
-        {
-          "InternalJWT": {}
-        }
-      ]
-    }
-  },
   "x-snyk-api-version": "2024-10-15"
 }
