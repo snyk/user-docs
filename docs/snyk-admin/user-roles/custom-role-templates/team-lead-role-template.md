@@ -1,6 +1,6 @@
 # Team Lead role template
 
-A Team Lead is equivalent to the default [**Organization Admin**](../pre-defined-roles.md) rol&#x65;**,** providing additional capabilities to customize or change user permissions for other users. Snyk suggests duplicating the Organization Admin role as a starting point for creating this custom role.\
+A Team Lead is equivalent to the default [**Organization Admin**](../pre-defined-roles.md) rol&#x65;**,** providing additional capabilities to customize or change user permissions for other users.\
 \
 Sample permissions include the ability to **Mark as Successful** in Git repositories for pull request and merge request checks, with the ignore capability disabled.
 
