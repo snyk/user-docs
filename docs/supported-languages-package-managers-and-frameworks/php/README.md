@@ -9,7 +9,7 @@ Check the language availability to be imported as an application, tested, or mon
 {% hint style="info" %}
 **Supported PHP versions**
 
-You can use PHP versions 5.2 up to 8.0.
+Snyk has tested support for PHP versions 5.2 through 8.0. You can use later versions as well.
 {% endhint %}
 
 Available functions:
