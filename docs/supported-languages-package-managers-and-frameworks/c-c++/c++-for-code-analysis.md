@@ -10,4 +10,8 @@ Refer to the [C/C++ details ](./)for supported frameworks, libraries, and featur
 **IDE:** No additional options are required. The Snyk plugin has views within the IDE for displaying results.\
 **Feature:** Interfile analysis
 
-If you need help, [contact Snyk Support](https://support.snyk.io).
+{% hint style="warning" %}
+If you use macros, your results may include false positives and false negatives.
+{% endhint %}
+
+If you need help, rasie a case with[ Snyk Support](https://support.snyk.io). Free plan users can create a discussion post.
