@@ -7,6 +7,25 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## February 2025
+
+### Snyk AppRisk
+
+* A new third-party integration, the [Google Cloud Security Command Center](integrate-with-snyk/event-forwarding/google-security-command-center.md) (SCC) integration, is now available in Early Access. This integration sends Snyk issues to SCC, enabling you to view and manage Snyk issues alongside cloud security findings from Google Cloud in a single pane of glass.
+* [Snyk Runtime Sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) has been updated and now clearly separates the DaemonSet and Deployment helm installation steps.
+
+### Snyk Essentials
+
+* The Integrations UI at the Group level has been enhanced to improve readability and actionability and provide inline instructions and inline profile helpers.
+* Group-level [Integrations documentation](integrate-with-snyk/#integrations-syncing-time) has been updated with new, more accurate sync times.
+* The [asset filter](manage-risk/policies/assets-policies/create-policies.md) documentation has been consolidated into one section, and it now links to all relevant areas, such as Inventory and Asset Policy filters.
+* [Issues Analytics](manage-risk/enterprise-analytics/issues-analytics.md) is now available with a General Availability release status.
+
+### Other updates
+
+* A new [Automated Provisioning guide](enterprise-setup/auto-provisioning-guide.md) has been created for **Pilot** and **Enterprise** **users**, detailing the steps of the auto-provisioning process for new and existing user accounts.
+* [Snyk Code PR Checks](scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md#configure-for-code-analysis-click-to-expand) are in General Availability.
+
 ## December 2024 and January 2025
 
 ### **Snyk Container**
