@@ -52,50 +52,47 @@ By default, only Snyk Org or Group admins can create assignments. Group admins c
 
 1. Log in to Snyk Learn and click **Assignments** in the account panel dropdown.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/image (527).png" alt=""><figcaption><p>Assignments section on Snyk Learn home page</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (527).png" alt=""><figcaption><p>Assignments section on Snyk Learn home page</p></figcaption></figure></div>
 
 2. Select an Organization.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/image (528).png" alt=""><figcaption><p>Select an Organization in the Assignments Dashboard page</p></figcaption></figure>
-
-</div>
+<figure><img src="../../.gitbook/assets/image (672).png" alt=""><figcaption><p>Select an Organization in the Assignments Dashboard page</p></figcaption></figure>
 
 3. Click **Create new assignments**.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/image (515).png" alt="Clicking on the &#x27;Create new assignments&#x27; button in the Assignments Dashboard page"><figcaption><p>Creating new assignments button on the Assignments Dashboard page</p></figcaption></figure>
-
-</div>
+<figure><img src="../../.gitbook/assets/image (674).png" alt=""><figcaption><p>Creating new assignments button on the Assignments Dashboard page</p></figcaption></figure>
 
 The **New Assignments** page opens, which allows you to create assignments for Snyk Organization users. On the **New Assignments** page:
 
-1.  Select an Organization.\
+1. &#x20;Verify that the selected Organization is correct.
 
+<figure><img src="../../.gitbook/assets/image (671).png" alt=""><figcaption><p>Select an Organization</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (516).png" alt=""><figcaption><p>Select an Organization to create assignments</p></figcaption></figure>
-2.  Select users.\
+2. Select users
 
+<figure><img src="../../.gitbook/assets/image (676).png" alt=""><figcaption><p>Select users to create assignments for</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (518).png" alt=""><figcaption><p>Select users to create assignments for</p></figcaption></figure>
-3.  Select the content to assign.\
+3. Select assignment type.
 
+<figure><img src="../../.gitbook/assets/image (677).png" alt=""><figcaption><p>Select the assignment type</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (519).png" alt=""><figcaption><p>Select content to assign assignments</p></figcaption></figure>
-4. Optionally set the assignment due date. This date defines the date by which the assignment needs to be completed.
-5.  Optionally reset user learning progress. If selected this forces users to retake lessons that have already been completed.\
+4. Select the content to assign.
 
+<figure><img src="../../.gitbook/assets/image (680).png" alt=""><figcaption><p>Select content to assign</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption><p>Reset user learning progress</p></figcaption></figure>
-6.  Review the assignment details and click **Submit**. \
+5. Optionally set the assignment due date. This date defines the date by which the assignment needs to be completed.
 
+<figure><img src="../../.gitbook/assets/image (681).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (535).png" alt=""><figcaption><p>Submit assigment</p></figcaption></figure>
+6. Optionally reset user learning progress. If selected this forces users to retake lessons that have already been completed.
 
-Users are notified of their assignment details through their registered email address.
+<figure><img src="../../.gitbook/assets/image (682).png" alt=""><figcaption><p>Optionally reset user learning progress</p></figcaption></figure>
+
+7. Optionally send customizable email notifications to assignees. The assigned users are notified of their assignment details through their registered email address.
+
+<figure><img src="../../.gitbook/assets/image (683).png" alt=""><figcaption><p>Send custom notification emails</p></figcaption></figure>
+
+8. Review the assignment details and click **Submit**.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (685).png" alt=""><figcaption><p>Review and submit assignments</p></figcaption></figure>
+
