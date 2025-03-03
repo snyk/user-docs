@@ -28,6 +28,7 @@
   * [Go](supported-languages-package-managers-and-frameworks/go/README.md)
     * [Go for code analysis](supported-languages-package-managers-and-frameworks/go/go-for-code-analysis.md)
     * [Go for open source](supported-languages-package-managers-and-frameworks/go/go-for-open-source.md)
+  * [Groovy](supported-languages-package-managers-and-frameworks/groovy.md)
   * [Java and Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/README.md)
     * [Java and Kotlin for code analysis](supported-languages-package-managers-and-frameworks/java-and-kotlin/java-and-kotlin-for-code-analysis.md)
     * [Java and Kotlin for open source](supported-languages-package-managers-and-frameworks/java-and-kotlin/java-and-kotlin-for-open-source.md)

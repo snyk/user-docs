@@ -2,6 +2,8 @@
 
 ## Snyk Open Source
 
+Snyk analyzes and builds the dependencies tree depending on the language and package manager for the Project, as well as the location of the Project.
+
 ### How Snyk for Open Source and licensing works
 
 {% hint style="info" %}
@@ -9,8 +11,6 @@ Before testing your Open Source Project for vulnerabilities, with limited except
 {% endhint %}
 
 Snyk builds a dependency graph and (dependencies tree) and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
-
-Snyk analyzes and builds the dependencies tree depending on the language and package manager for the Project, as well as the location of the Project.
 
 {% hint style="info" %}
 Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.
@@ -35,7 +35,7 @@ To check compliance for open source licenses, see [Snyk License Compliance Manag
 
 ### Supported file extensions for Snyk Code
 
-<table><thead><tr><th>Language</th><th width="215">Interfile Support</th><th>Supported Extension</th></tr></thead><tbody><tr><td>Apex</td><td>Yes</td><td>.cls, .trigger, .tgr</td></tr><tr><td>C/C++</td><td>Yes</td><td>.c, .cc, .cpp, .cxx, .h, .hpp, .hxx</td></tr><tr><td>CSharp</td><td>Yes</td><td>.aspx, .cs</td></tr><tr><td>Go</td><td>Yes</td><td>.go</td></tr><tr><td>Java</td><td>Yes</td><td>.java, .jsp, jspx</td></tr><tr><td>JavaScript/TypeScript</td><td>Yes</td><td>.ejs, .es, .es6, .htm, .html, .js, .jsx, .ts, .cts, .mts, .tsx, .vue, .mjs, .cjs</td></tr><tr><td>Kotlin</td><td>Yes</td><td>.kt</td></tr><tr><td>PHP</td><td>Yes</td><td>.php, .phtml, .module, .inc, .install, .theme, .profile</td></tr><tr><td>Python</td><td>Yes</td><td>.py</td></tr><tr><td>Ruby</td><td>No</td><td>.erb, .haml, .rb, .rhtml, .slim</td></tr><tr><td>Rust</td><td>Yes</td><td>.rs</td></tr><tr><td>Scala</td><td>Yes</td><td>.scala</td></tr><tr><td>Swift</td><td>Yes</td><td>.swift</td></tr><tr><td>Visual Basic</td><td>Yes</td><td>.vb</td></tr></tbody></table>
+<table><thead><tr><th>Language</th><th width="215">Interfile Support</th><th>Supported Extension</th></tr></thead><tbody><tr><td>Apex</td><td>Yes</td><td>.cls, .trigger, .tgr</td></tr><tr><td>C/C++</td><td>Yes</td><td>.c, .cc, .cpp, .cxx, .h, .hpp, .hxx</td></tr><tr><td>CSharp</td><td>Yes</td><td>.aspx, .cs</td></tr><tr><td>Go</td><td>Yes</td><td>.go</td></tr><tr><td>Groovy</td><td>Yes</td><td>.groovy</td></tr><tr><td>Java</td><td>Yes</td><td>.java, .jsp, jspx</td></tr><tr><td>JavaScript/TypeScript</td><td>Yes</td><td>.ejs, .es, .es6, .htm, .html, .js, .jsx, .ts, .cts, .mts, .tsx, .vue, .mjs, .cjs</td></tr><tr><td>Kotlin</td><td>Yes</td><td>.kt</td></tr><tr><td>PHP</td><td>Yes</td><td>.php, .phtml, .module, .inc, .install, .theme, .profile</td></tr><tr><td>Python</td><td>Yes</td><td>.py</td></tr><tr><td>Ruby</td><td>No</td><td>.erb, .haml, .rb, .rhtml, .slim</td></tr><tr><td>Scala</td><td>Yes</td><td>.scala</td></tr><tr><td>Swift</td><td>Yes</td><td>.swift</td></tr><tr><td>Visual Basic</td><td>Yes</td><td>.vb</td></tr></tbody></table>
 
 ### File size limit for Snyk Code analysis
 
