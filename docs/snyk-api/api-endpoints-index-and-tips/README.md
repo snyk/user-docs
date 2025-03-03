@@ -426,7 +426,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 ### [List issues for a package](../reference/issues.md#orgs-org_id-packages-purl-issues)
 
 **More information:** [Dart and Flutter](../../supported-languages-package-managers-and-frameworks/dart-and-flutter.md);\
-[Rust](../../supported-languages-package-managers-and-frameworks/rust.md):\
+[Rust](../../supported-languages-package-managers-and-frameworks/rust/):\
 [Guidance for Snyk for C++ page, Alternate testing options section](../../supported-languages-package-managers-and-frameworks/c-c++/guidance-for-snyk-for-c-c++.md#alternate-testing-options);\
 [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md);\
 [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript);\
@@ -696,7 +696,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ## SBOM (GA and beta)
 
-**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md); [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
+**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust/); [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
 ### [Get a project’s SBOM document](../reference/sbom.md)
 
