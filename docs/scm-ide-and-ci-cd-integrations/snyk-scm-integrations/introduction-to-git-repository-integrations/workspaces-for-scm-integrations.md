@@ -44,9 +44,7 @@ This will override restrictions from `accept.json`. For more information, see [C
 
 The Workspaces feature is managed through the **Integrations settings** page on the Group or Organization level. To do so, you must be a Snyk Group Admin or Snyk Organization Admin.
 
-When enabled at the Group level, all Organizations within that Group will have Workspaces enabled.
-
-The Workspaces feature can be enabled for individual organizations within a Group, even if disabled at the Group level.
+When enabled at the Group level, all Organizations within that Group will have Workspaces enabled. This Group level setting can be overridden by the individual Organization level setting.
 
 While you can choose to disable the Workspaces feature, it is important to understand doing so will hinder Snyk’s ability to scan repositories in two specific ways:
 
