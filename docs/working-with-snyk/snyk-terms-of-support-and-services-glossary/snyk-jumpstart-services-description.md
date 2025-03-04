@@ -294,35 +294,35 @@ The Customer will be provided with a document that provides a comprehensive over
 | Walkthrough of prioritized issues in AppRisk                                 | Gain an understanding of how to filter and prioritize issues in the Asset Dashboard using deployed and loaded package risk factors |
 | Documentation close-out                                                      | Gain an understanding of work completed                                                                                            |
 
-## Probely configuration
+## Probely (a Snyk business) configuration details
 
-### Delivery approach - Probely configuration
+### Delivery approach - Probely (a Snyk business) configuration
 
 #### **Web Target configuration, including authenticated scans**
 
-The Snyk Consultant will work with the Customer to configure Web Targets (up to three web applications) to be scanned by Probely. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
+The Snyk Consultant will work with the Customer to configure [Web Targets](https://help.probely.com/en/articles/3292779-how-to-set-up-target-authentication-with-a-login-form?q=Web+Target+configuration) (up to three web applications) to be scanned by Probely (a Snyk business). This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
 
 #### **API Target configuration**
 
-The Snyk Consultant will work with the Customer to configure API collections (maximum of one collection) to be scanned by Probely, using a Postman Collection or OpenAPI definition.
+The Snyk Consultant will work with the Customer to [configure API collections](https://help.probely.com/en/articles/8178059-how-to-configure-an-api-target-postman-collection) (maximum of one collection) to be scanned by Probely (a Snyk business), using a Postman Collection or OpenAPI definition.
 
 #### **Domain Ownership Verification**
 
-The Snyk Consultant will work with the Customer to complete Domain Ownership Verification for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
+The Snyk Consultant will work with the Customer to complete [Domain Ownership Verification](https://help.probely.com/en/articles/3289281-how-to-verify-the-ownership-of-a-domain-using-a-txt-file) for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
 
 #### **Scanning Agent configuration**
 
-The Snyk Consultant will work with the Customer to configure the Scanning Agent using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
+The Snyk Consultant will work with the Customer to configure the [Scanning Agent](https://help.probely.com/en/articles/4615595-how-to-scan-internal-applications-with-a-scanning-agent) using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
 
 #### **Review of Target Scan Results**
 
-The Snyk Consultant will educate the Customer on understanding a DAST scan for Web and API Targets in the Probely UI, including the different reporting functionality that is available in the tool.
+The Snyk Consultant will educate the Customer on understanding a [DAST scan](https://help.probely.com/en/articles/6843262-how-to-interpret-target-scan-results) for Web and API Targets in the Probely UI, including the different reporting functionality that is available in the tool.
 
 #### Documentation close-out
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document provides an essential guide for customers to realize the full potential of their investment in Snyk.
 
-### Target Initiatives - Probely configuration
+### Target Initiatives - Probely (a Snyk business) configuration
 
 | Probely configuration                                                                  | Outcome                                                                                                                                                                                           |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
