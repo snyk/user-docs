@@ -18,7 +18,7 @@ Snyk Learn Reports support Organizations with up to 5000 members.
 
 The Overview report provides a high-level view of progress across your Organization. This report shows how many users in your Organization have started and completed each lesson or learning path.
 
-<figure><img src="../../.gitbook/assets/image (660).png" alt=""><figcaption><p>Snyk Learn Overview report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (686).png" alt=""><figcaption><p>Snyk Learn Overview report</p></figcaption></figure>
 
 ## Detailed report
 
@@ -28,7 +28,7 @@ The Detailed report provides individual user-level progress tracking within your
 * when the lesson or learning path was completed
 * when the lesson was previously completed, if lesson progress was reset after the user completed it&#x20;
 
-<figure><img src="../../.gitbook/assets/image (659) (2).png" alt=""><figcaption><p>Snyk Learn Detailed report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (687).png" alt=""><figcaption><p>Snyk Learn Detailed report</p></figcaption></figure>
 
 ## Exporting reports&#x20;
 
