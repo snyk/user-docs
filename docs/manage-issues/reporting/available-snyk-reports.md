@@ -12,6 +12,7 @@ The following reports are available:
 * [CWE TOP 10 KEV report](available-snyk-reports.md#cwe-top-10-kev-report)
 * [Developer IDE and CLI usage report](available-snyk-reports.md#developer-ide-and-cli-usage)
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
+* [Snyk Generated Pull Requests](available-snyk-reports.md#snyk-generated-pull-requests)
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
 
 Select **Change Report** to change the report displayed:
@@ -192,6 +193,60 @@ You can view a report for a single version of a compliance standard at a time, f
 Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../scan-with-snyk/snyk-iac/getting-started-with-cloud-scans/manage-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
 Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.
+
+## Snyk Generated Pull Requests
+
+{% hint style="info" %}
+**Feature availability**
+
+Snyk Generated Pull Requests report is available only for Enterprise plan customers on the following SCM integrations: GitHub, GitHub Enterprise, and GitHub Cloud App. For more information, see [Plans and pricing](https://snyk.io/plans/).
+{% endhint %}
+
+### Access the report
+
+The Generated Pull Requests report can be accessed at both Group and Organization level from the **Change Report** drop down in the Reports menu.
+
+<figure><img src="../../.gitbook/assets/2025-03-05_11-19-35.png" alt="Snyk generated pull requests report"><figcaption><p>Snyk generated pull requests report</p></figcaption></figure>
+
+This report type provides an overview of how [Fix](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md), [Backlog](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md), and [Upgrade PRs](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/) are used and highlights the efficiency of PR merges.
+
+The analytics report covers the following:
+
+* Overview of PRs status by type and the PR merge ratio.
+* Visibility of issues.
+* Breakdown by repository for PR status.
+
+The report summary enables you to check the total number of Snyk PRs created, the total pull requests merged, and the mean time to merge for those pull requests.
+
+### Report features
+
+Use the date filter in the upper right corner of the report to display data based on a specific interval.
+
+Add various filters to narrow down results to specific configurations. The filter options are Organization, SCM, Project, and Repository.
+
+#### Snyk Generated Pull Requests usage
+
+<figure><img src="../../.gitbook/assets/2025-03-05_11-20-10.png" alt="Pull Request usage graph and table"><figcaption><p>Pull Request usage graph and table</p></figcaption></figure>
+
+Pull Request usage is visualized in a **Pull requests by type** graph and a **Pull requests by status** table, displaying the same data in different formats. These distinguish the number of PRs into Fix, Backlog, and Dependency upgrade categories, segmented by Open, Merged, and Closed status types. Merge rate is presented as a percentage for each row.
+
+#### Open vs Fixed issues
+
+<figure><img src="../../.gitbook/assets/open-vs-fixed-issues-pr-report.png" alt="Open vs Fixed issues graph and table"><figcaption><p>Open vs Fixed issues graph and table </p></figcaption></figure>
+
+The Open vs Fixed issues in Snyk PRs graph and table displays the number of open and fixed issues based on severity.
+
+#### Snyk Generated Pull Requests by repository
+
+<figure><img src="../../.gitbook/assets/2025-03-05_10-02-13.png" alt="Projects/Orgs/Repository table for PRs of different status"><figcaption><p>Projects/Orgs/Repository table for PRs of different status</p></figcaption></figure>
+
+The **Projects/Org/Repository** table displays the number of Total, Open, Merged, and Closed PRs for each Organization and repository relationship. Merge rate is presented as a percentage for each row.
+
+Select a repository name to open a modal containing additional metrics for that specific repository.
+
+<figure><img src="../../.gitbook/assets/repo-breakdown-report-blur.png" alt="Repository breakdown by PR type and PR status"><figcaption><p>Repository breakdown by PR type and PR status</p></figcaption></figure>
+
+The repository breakdown details the number of PRs segmented by PR type and PR status. Merge rate is presented as a percentage for each row. It also lists the Projects within that repository, with the number of issues categorised by severity.
 
 ## Asset Dashboard
 

@@ -52,6 +52,10 @@ Click the Issue link from the table to view all details for the specified vulner
 
 After you have reviewed the pull request, you can approve the merge.
 
+## Generated Pull Requests report
+
+Snyk provides a report which for Enterprise plan customers that gives an overview of how [Fix](create-automatic-prs-for-new-fixes-fix-prs.md), [Backlog](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md), and [Upgrade PRs](upgrade-dependencies-with-automatic-prs-upgrade-prs/) are used and highlights the efficiency of PR merges. For more information, see [Snyk Generated Pull Requests report](../../../manage-issues/reporting/available-snyk-reports.md#snyk-generated-pull-requests).
+
 ## Snyk SCM webhooks
 
 To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
