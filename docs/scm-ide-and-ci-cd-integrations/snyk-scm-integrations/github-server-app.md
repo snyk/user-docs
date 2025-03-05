@@ -8,9 +8,9 @@ When you want to add new integrations to your Snyk account you need to first dec
 ## Organization level - Snyk integrations
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
-The GitHub Server App is in Early Access and available only for Enterprise plans.
+The GitHub Server App is available only for Enterprise plans.
 
 This feature supports self-hosted instances of GitHub and Snyk's [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/).
 {% endhint %}
@@ -75,7 +75,7 @@ Specify whether you wish to install the app in all or a select number of the rep
 <figure><img src="../../.gitbook/assets/image (656).png" alt=""><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
 
 {% hint style="danger" %}
-The GitHub Server App will lose access to Snyk if it is uninstalled from the GitHub organization. Should this happen you will be required to raise a support ticket before re-integrating with Snyk's GitHub Server App.&#x20;
+The GitHub Server App will lose access to Snyk if it is uninstalled from the GitHub organization. Should this happen you can create a fresh integration in Snyk to regain access.
 {% endhint %}
 
 ### Migrate from an existing GitHub Enterprise integration
@@ -169,3 +169,21 @@ Visiting the integrations page in Snyk will show that the integration has been c
 <figure><img src="../../.gitbook/assets/image (630).png" alt=""><figcaption><p>A successful GitHub Server App integration</p></figcaption></figure>
 
 Upon finishing the setup and installation of your GitHub Server App, you will have all of the necessary credentials to setup a brokered connection. See the official documentation on Snyk's [Universal Broker](https://docs.snyk.io/enterprise-setup/snyk-broker/universal-broker) for details on how to setup a GitHub Server App connection with Broker.
+
+### How to disconnect the GitHub Server App integration
+
+{% hint style="warning" %}
+Disconnecting the Snyk GitHub Server App integration halts all scans for imported repositories, PR checks cannot be executed, and Projects are deactivated in the Snyk Web UI.
+
+Note that the GitHub App will remain listed on your GitHub organization until removed manually.
+{% endhint %}
+
+1. Navigate to the Snyk GitHub Server App integration **Settings**.
+2. At the bottom of the page, select **Remove GitHub Server App.**
+3. A confirmation modal opens. To proceed, select **Disconnect GitHub Server App**.
+
+<figure><img src="../../.gitbook/assets/image (689).png" alt="" width="375"><figcaption><p>Confirm disconnecting from GitHub Server App</p></figcaption></figure>
+
+After the integration is disconnected, imported Snyk Projects will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests.
+
+You can re-connect anytime; however, re-initiating the Snyk projects for monitoring requires setting up the integration again.
