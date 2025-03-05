@@ -151,9 +151,8 @@ The Integrations page shows all active integrations, including data from your ex
 3. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
    * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
-4. Verify SSL (`optional`): Enable the option if you want to verify the SSL.
-5. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.
-6. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
+4. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.
+5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
 
 #### Generate a [Personal access token](gitlab.md#gitlab-access-tokens) from your GitLab settings
 
