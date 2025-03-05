@@ -44,7 +44,7 @@ curl --request POST \
     -H "Authorization: token <SNYK_TOKEN>" \
     -H "Content-Type: application/vnd.api+json" \
     --data-binary '@request_body.json' \
-    'https://api.snyk.io/rest/orgs/<ORG_ID>/sbom_tests?version=2023-089-03~beta'
+    'https://api.snyk.io/rest/orgs/<ORG_ID>/sbom_tests?version=2023-08-31~beta'
 ```
 {% endcode %}
 
