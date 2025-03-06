@@ -11,6 +11,9 @@ categoryContext:
 - name: licenses-v1
   hint: |
     **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
+- name: projects-v1
+  hint: |
+    **Note:** For a list of Project types, see [Project type responses from the API](../snyk-api/api-endpoints-index-and-tips/project-type-responses-from-the-api).
 output:
     summaryPath: docs/SUMMARY.md
     apiReferencePath: docs/snyk-api/reference
