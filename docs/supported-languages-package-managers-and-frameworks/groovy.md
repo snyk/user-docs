@@ -1,7 +1,7 @@
 # Groovy
 
 {% hint style="warning" %}
-Groovy is currently in Early Access and can be enabled via Snyk Preview
+Groovy is currently in Early Access and can be enabled using Snyk Preview
 {% endhint %}
 
 ## **Applicability**&#x20;
@@ -27,6 +27,13 @@ The following features are supported in Snyk for Groovy:
 
 * Support for Interfile analysis
 * Reports
+
+The following extensions are supported in Snyk for Groovy:
+
+* .groovy
+* .grt
+* .gtpl
+* .gvy
 
 ## Troubleshooting Snyk for Groovy
 

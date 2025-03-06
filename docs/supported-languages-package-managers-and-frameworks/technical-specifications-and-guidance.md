@@ -25,6 +25,8 @@ To check compliance for open source licenses, see [Snyk License Compliance Manag
 
 ## Snyk Code
 
+<table><thead><tr><th>Language</th><th width="215">Interfile Support</th><th>Supported Extension</th></tr></thead><tbody><tr><td>Apex</td><td>Yes</td><td>.cls, .trigger, .tgr</td></tr><tr><td>C/C++</td><td>Yes</td><td>.c, .cc, .cpp, .cxx, .h, .hpp, .hxx</td></tr><tr><td>CSharp</td><td>Yes</td><td>.aspx, .cs</td></tr><tr><td>Go</td><td>Yes</td><td>.go</td></tr><tr><td>Groovy</td><td>Yes</td><td>.groovy, .grt, .gtpl, .gvy</td></tr><tr><td>Java</td><td>Yes</td><td>.java, .jsp, jspx</td></tr><tr><td>JavaScript/TypeScript</td><td>Yes</td><td>.ejs, .es, .es6, .htm, .html, .js, .jsx, .ts, .cts, .mts, .tsx, .vue, .mjs, .cjs</td></tr><tr><td>Kotlin</td><td>Yes</td><td>.kt</td></tr><tr><td>PHP</td><td>Yes</td><td>.php, .phtml, .module, .inc, .install, .theme, .profile</td></tr><tr><td>Python</td><td>Yes</td><td>.py</td></tr><tr><td>Ruby</td><td>No</td><td>.erb, .haml, .rb, .rhtml, .slim</td></tr><tr><td>Scala</td><td>Yes</td><td>.scala</td></tr><tr><td>Swift</td><td>Yes</td><td>.swift</td></tr><tr><td>Visual Basic</td><td>Yes</td><td>.vb</td></tr></tbody></table>
+
 ### File size limit for Snyk Code analysis
 
 Snyk Code automatically excludes the following files from analysis:
