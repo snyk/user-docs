@@ -14,6 +14,11 @@ categoryContext:
 - name: projects-v1
   hint: |
     **Note:** For a list of Project types, see [Project type responses from the API](../snyk-api/api-endpoints-index-and-tips/project-type-responses-from-the-api).
+- name: webhooks-v1
+  hint: |
+    {% hint style="warning" %}
+    The Webhooks API is in beta. While the API is in beta, Snyk may change the API and the structure of webhook payloads at any time, without notice. During this beta, Webhooks are available only in the Snyk US-01, US-02, EU-01, and AU-01 regions.
+    {% endhint %}
 output:
     summaryPath: docs/SUMMARY.md
     apiReferencePath: docs/snyk-api/reference
