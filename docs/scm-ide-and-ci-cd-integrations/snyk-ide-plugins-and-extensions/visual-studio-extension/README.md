@@ -16,9 +16,11 @@ The Snyk Visual Studio extension allows you to analyze your code and open-source
 ## How to install and set up the extension
 
 {% hint style="info" %}
-The latest version of the Snyk Visual Studio extension is supported by Visual Studio 2022 (version 17.5 and above).
+The latest version of the Snyk Visual Studio extension supports use with Visual Studio 2022 (version 17.5 and above).
 
-An older plugin version is supported by Visual Studio 2015, 2017, and 2019
+Older plugin versions support use with Visual Studio 2015, 2017, and 2019.
+
+Snyk recommends always using the latest version of the Visual Studio extension.
 {% endhint %}
 
 You can use the Snyk Visual Studio extension in the following environments:
@@ -26,7 +28,7 @@ You can use the Snyk Visual Studio extension in the following environments:
 * Windows: 386, AMD64, and ARM64
 * MacOS: Visual Studio Windows plugin in a Windows virtual machine inside a Mac with an ARM64 processor
 
-Install the plugin at any time free of charge from the  [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022) and use it with any Snyk account, including the Free plan. For more information, see the [VS extension installation guide](https://learn.microsoft.com/en-us/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2022#find-and-install-extensions).
+Install the plugin at any time free of charge from the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022) and use it with any Snyk account, including the Free plan. For more information, see the [VS extension installation guide](https://learn.microsoft.com/en-us/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2022#find-and-install-extensions).
 
 After the extension is installed installed, use Snyk through the **Extensions > Snyk** menu.
 
@@ -34,7 +36,7 @@ After the extension is installed installed, use Snyk through the **Extensions > 
 
 You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
 
-After the tool window opens, wait while the Snyk extension downloads the  [Snyk CLI,](https://docs.snyk.io/snyk-cli) which includes the [Language Server](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
+After the tool window opens, wait while the Snyk extension downloads the [Snyk CLI,](https://docs.snyk.io/snyk-cli) which includes the [Language Server](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
 
 Continue by following the instructions in the other Visual Studio extension docs:
 

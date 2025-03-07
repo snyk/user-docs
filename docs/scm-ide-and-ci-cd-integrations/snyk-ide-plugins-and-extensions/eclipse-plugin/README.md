@@ -18,9 +18,11 @@ The Snyk Eclipse extension allows you to analyze your code, open-source dependen
 ## How to install and set up the extension
 
 {% hint style="info" %}
-The latest Snyk Eclipse plugin is supported by Eclipse 2024-03 or newer.&#x20;
+The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.
 
-An older plugin version is supported by Eclipse 2023-03 or newer.
+Older plugin versions may support use with Eclipse 2023-03 or newer.
+
+Snyk recommends always using the latest version of the Eclipse plugin.
 {% endhint %}
 
 You can use the Eclipse plugin in the following environments:
@@ -29,7 +31,7 @@ You can use the Eclipse plugin in the following environments:
 * Windows: 386, AMD64, and ARM64
 * MacOS: AMD64 and ARM64
 
-Install the plugin at any time free of charge from the  [Eclipse marketplace](https://marketplace.eclipse.org/content/snyk-security) and use it with any Snyk account, including the Free plan.&#x20;
+Install the plugin at any time free of charge from the [Eclipse marketplace](https://marketplace.eclipse.org/content/snyk-security) and use it with any Snyk account, including the Free plan.
 
 When you are prompted, accept the license agreement and add the **Snyk Security** certificate to complete the installation (this happens only once).
 
