@@ -1,6 +1,6 @@
 # Snyk Learn
 
-[Snyk Learn](https://learn.snyk.io) is dedicated to [security education](./#security-education) and [product training](./#product-training). Snyk Learn also offers[ learning paths](https://learn.snyk.io/catalog/?format=learning\_path\&type=security-education) as a way for learners to take a predefined set of lessons.
+[Snyk Learn](https://learn.snyk.io) is dedicated to [security education](./#security-education) and [product training](./#product-training). Snyk Learn also offers[ learning paths](https://learn.snyk.io/catalog/?format=learning_path\&type=security-education) as a way for learners to take a predefined set of lessons.
 
 Snyk Learn is one component of learning available for users and customers. The Snyk [customer resource page](https://snyk.io/customer-resources/) will help you learn the best practices for implementing Snyk in your Organization.
 
@@ -12,7 +12,7 @@ Snyk customers have access to Snyk Learn resources according to their region in 
 
 The following table shows the features available for each plan. For more information about plans, see [Plans and pricing](https://snyk.io/plans/).
 
-<table><thead><tr><th width="294">Plan</th><th>Features</th></tr></thead><tbody><tr><td>Free and Team</td><td><ul><li>Lessons and learning paths</li><li>Individual progress tracking</li></ul></td></tr><tr><td>Enterprise</td><td><ul><li><a href="snyk-learn-reports.md">Reports</a></li><li><a href="snyk-learn-access-controls.md">Access Controls</a></li></ul></td></tr><tr><td>Learning Management add-on</td><td><ul><li><a href="snyk-learn-assignments.md">Assignments</a></li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="294">Plan</th><th>Features</th></tr></thead><tbody><tr><td>Free and Team</td><td><ul><li><a href="your-learning/">Lessons and learning paths</a></li><li><a href="your-learning/">Individual progress tracking</a></li></ul></td></tr><tr><td>Enterprise</td><td><ul><li><a href="snyk-learn-reports.md">Reports</a></li><li><a href="snyk-learn-access-controls.md">Access Controls</a></li><li><a href="snyk-learn-api.md">API Access (Beta)</a></li></ul></td></tr><tr><td>Learning Management add-on</td><td><ul><li><a href="snyk-learn-assignments.md">Assignments</a></li><li><a href="snyk-learn-api.md">Extended API Access (Beta)</a></li></ul></td></tr></tbody></table>
 
 ## Security education
 
@@ -36,4 +36,4 @@ Snyk[ product training](https://learn.snyk.io/catalog/?type=product-training) pr
 
 The platform provides an easy way for teams to get an introduction to Snyk tools and user best practices. Most courses take between three and ten minutes.
 
-Snyk offers product training[ learning paths](https://learn.snyk.io/catalog/?type=product-training\&format=learning\_path), including Implementing Snyk, Managing application security with Snyk, and Developing using Snyk.
+Snyk offers product training[ learning paths](https://learn.snyk.io/catalog/?type=product-training\&format=learning_path), including Implementing Snyk, Managing application security with Snyk, and Developing using Snyk.
