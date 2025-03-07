@@ -1,12 +1,12 @@
 # Snyk API
 
 {% hint style="info" %}
-The Snyk API is available only for Enterprise plans.&#x20;
+The majority of Snyk APIs are restricted to use by Enterprise plan customers only.
 
 For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-The Snyk API allows Enterprise customers to integrate programmatically with Snyk.
+The Snyk API allows customers to integrate programmatically with Snyk.
 
 The Snyk API enables developers to automate Snyk processes to accomplish their specific workflows, ensuring consistency in both developer experience and platform governance. The [Snyk REST API ](rest-api/about-the-rest-api.md) and the [V1 API](v1-api.md) are available for you to use when you decide to use an API rather than the CLI or an integration. Both are available in the Snyk API [Reference](reference/). Additional endpoints are available in the [OAuth2 API reference](oauth2-api.md).
 
