@@ -1,12 +1,10 @@
 # Groovy
 
 {% hint style="warning" %}
-Groovy is currently in Early Access and can be enabled using Snyk Preview
+**Release status**
+
+Groovy for Snyk Code is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
 {% endhint %}
-
-## **Applicability**&#x20;
-
-Snyk for Groovy is supported only for Snyk Code.
 
 ## Frameworks and libraries
 
@@ -34,7 +32,5 @@ The following extensions are supported in Snyk for Groovy:
 * .grt
 * .gtpl
 * .gvy
-
-## Troubleshooting Snyk for Groovy
 
 If you need help, [contact Snyk Support](https://support.snyk.io).
