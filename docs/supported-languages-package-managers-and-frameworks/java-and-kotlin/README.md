@@ -25,7 +25,7 @@ Available functions:
 
 ## Package managers and supported file extensions
 
-Snyk for Java and Kotlin supports Maven and Gradle as package managers and [maven.org](https://maven.org/) as a package registry.
+Snyk for Java and Kotlin supports Maven and Gradle as package managers and [maven.org](https://maven.org/) (Maven Central Repository) as a package registry.
 
 Use any of the following versions:
 
@@ -109,8 +109,8 @@ Kotlin only:
 
 The following features are supported in Snyk for Java and Kotlin:
 
-| Snyk Open Source                                                             | Snyk Code                                                                                                                                                    |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <ul><li>Reports</li><li>Fix PRs (Maven) </li><li>License scanning </li></ul> | <ul><li>Reports</li><li>Custom rules </li><li>Interfile analysis - Kotlin fully supported</li><li>Interfile analysis - Android partially supported</li></ul> |
+| Snyk Open Source                                                           | Snyk Code                                                                                                                                                   |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ul><li>Reports</li><li>Fix PRs (Maven)</li><li>License scanning</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis - Kotlin fully supported</li><li>Interfile analysis - Android partially supported</li></ul> |
 
 If you need help, [contact Snyk Support](https://support.snyk.io).
