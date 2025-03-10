@@ -1996,6 +1996,18 @@ Verify your authentication configuration with your Git cloud provider and try ag
 **Help Links:**
 - [https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso)
 
+### [SNYK-OS-8005](#snyk-os-8005)
+
+#### Project too large to be processed
+
+The project cannot be built or processed due to requiring more memory than available. 
+For node projects, please try again after removing requirement to generate a lockfile when opening a fix PR.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#howtonotrequestalockfiletobegenerated](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#howtonotrequestalockfiletobegenerated)
+
 ---
 # SBOM Export
 ### [SNYK-OS-9000](#snyk-os-9000)
@@ -2747,4 +2759,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-03-07T14:17:36.941Z
+--- Generated at 2025-03-10T08:39:10.772Z
