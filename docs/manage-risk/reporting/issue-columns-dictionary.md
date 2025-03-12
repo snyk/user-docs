@@ -14,7 +14,7 @@ Describes the main attributes of the issue.
   * **Fixable:** There is a fix for all the identified issues, meaning that all detailed paths have remediation.
   * **Partially fixable:** The issue has upgradable paths, but not all detailed paths have remediation.
   * **No supported fix**: The issue has no upgradable paths.
-* **HAS JIRA ISSUE(S) ASSIGNED** - Displays `true`when at least one Jira issue is assigned, otherwise displays f`alse`.
+* **HAS JIRA ISSUE(S) ASSIGNED** - Displays `true`when at least one Jira issue is assigned, otherwise displays `false`.
 * **INTRODUCTION CATEGORY** - Categorizes how an issue was introduced:
   * **Baseline Issue** - issues identified right after the Project began to be monitored.
   * **Preventable Issue** - issues for which Snyk published the related problem at least seven days before detection.
