@@ -34,7 +34,7 @@ Use any of the following versions:
 
 Snyk for Java and Kotlin supports the following file formats:
 
-* Snyk Open:
+* Snyk Open Source:
   * Maven: `pom.xml`
   * Gradle: `build.gradle`, `build.gradle.kts`
 * Snyk Code:
