@@ -22,6 +22,10 @@ Ensure you have the following permission scopes in Jira, which are required for 
 
 <table><thead><tr><th width="344.5">Required scope in Jira</th><th>Purpose</th></tr></thead><tbody><tr><td>Write data to the host application</td><td>Synchronize vulnerabilities in Snyk with Jira so they appear in the Security tab in Jira.</td></tr><tr><td>Read data from the host application</td><td>Read vulnerabilities from Jira to optimize the issues synchronization process.</td></tr><tr><td>Delete data from the host application</td><td>Remove vulnerabilities from Jira when a Snyk Organization is removed from Jira. </td></tr></tbody></table>
 
+{% hint style="warning" %}
+To add containers, you must have the **project admin** Jira permissions.
+{% endhint %}
+
 ## Install Snyk Security in Jira Cloud
 
 Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketplace.atlassian.com/apps/1230482/snyk-security-in-jira-cloud) from the Atlassian Marketplace.
@@ -52,7 +56,7 @@ Typically research and development engineering managers do this task because the
 1. In Jira, navigate to **Project settings** > **Toolchain** and find Snyk in the list of tools.\
    See [What is the project toolchain in Jira Software?](https://support.atlassian.com/jira-software-cloud/docs/what-is-the-project-toolchain-in-jira/)
 2. Select the **Add connection** plus sign button for Snyk.
-3. Choose the container code repository from the list and select **Add container**. This is a Snyk Target.\
+3. Choose the container code repository from the list and select **Connect security containers**. This is a Snyk Target.\
    You can connect more than one code repository to Jira.
 
 Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-integration.md#create-a-jira-issue-from-a-vulnerability) from those vulnerabilities or [linking them to existing Jira issues](snyk-security-in-jira-cloud-integration.md#link-an-existing-jira-issue-to-a-vulnerability).
