@@ -65,6 +65,10 @@ Objective likelihood factors are taken into account:
 * Provider Urgency (Snyk Container)
 * Package popularity (Snyk Open Source)&#x20;
 
+{% hint style="warning" %}
+The Exploit Prediction Scoring System (EPSS)  is updated arbitrarily.
+{% endhint %}
+
 Contextual likelihood factors then increase or decrease the likelihood subscore: &#x20;
 
 * Reachability (Snyk Open Source Java, JavaScript)&#x20;
