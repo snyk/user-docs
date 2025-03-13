@@ -46,8 +46,9 @@ Classify repository assets according to their business criticality from A (most 
 
 Categorize and label repository assets with [asset tags](../../../manage-assets/assets-inventory-components.md#asset-tags) to filter the asset inventory.&#x20;
 
-* **System tags** - are automatically assigned by Snyk according to recognized keywords.&#x20;
-* **User-defined tags** - are customizable, as you can define the logic governing them through [Assets Policies](./).&#x20;
+* **GitHub custom properties** - lists the GitHub custom properties associated with your GitHub repository as a tag
+* **User-defined tags** are customizable, as you can define their logic through [Assets Policies](./). For example, you can set tags to label a repository that comes from a specific source, such as GitHub. Tags associated with assets are identified in the UI with the **Asset policy tags** name.
+* **System tags** are automatically assigned by Snyk based on asset names or detected keywords (for example, `codeowners`).
 
 ### Security coverage
 

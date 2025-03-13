@@ -13,7 +13,7 @@ Access the main view of the Policy function to see a list of all your policies a
 You can hover over a policy to gain access to extra details:
 
 * **Go to flow** - Opens the policy.
-* **Details** - Provides details on policy creation and modifications, including dates and creators.
+* **Edit name and description** - Allows you to edit the name and description of the policy.
 * **Clone** - Duplicates the policy.
 * **Delete** - Removes the policy.
 
