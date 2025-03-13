@@ -28,21 +28,21 @@ What is the difference between supported and limited support?&#x20;
 
 ## What data does DeepCode AI Fix collect?
 
-### Customer data
-
-DeepCode AI Fix does not collect customer data for training purposes nor send customer data to third parties.
-
 ### Training data
 
-The Large Language Model (LLM) is trained exclusively on public repositories with **permissive licenses**. If a license for a repository changes after the initial scrape, the repository is immediately excluded from the training data. DeepCode AI Fix does not use customer data for training purposes.
+Snyk trains its Large Language Model (LLM) using permissively-licensed public repositories. Snyk does not use code input by customers to train its LLM.
 
 The data collection process is thorough and includes the following:
 
-* Static analysis of permissive public repositories
-* Automated assessment of the suggested fix qualities
-* Partial in-house labeling by humans
+* Static analysis of permissive public repositories.
+* Automated assessment of the suggested fix qualities.
+* Partial in-house labeling by humans.
 
-The training data is ensured to be of the highest quality to optimize the performance of the LLM.
+The training data is regularly checked for quality to optimize the performance of the LLM.
+
+### Customer data
+
+Snyk does not use customer code submitted to DeepCode AI Fix for training purposes.
 
 For more information on how Snyk manages data, see [How Snyk handles your data](../../../working-with-snyk/how-snyk-handles-your-data.md).
 
@@ -73,27 +73,27 @@ Enable DeepCode AI Fix for your Group or Organization in the Snyk Web UI by navi
 * You should see a zap icon next to all Snyk Code issues that can be automatically fixed.
 {% endhint %}
 
-1. Open your code base.
+1. Open your codebase.
 2. Find and fix issues **through the panel** or by clicking **Fix this issue** in Code Lens.
 3. After a fix has been applied,  save and rescan.
 
 ## Example: Fix a code issue automatically
 
-DeepCode AI Fix highlights all identified vulnerabilities that can be automatically fixed. These are highlighted with a zap icon. For example, in this scenario, we have identified a Cross-Site Request Forgery (CSRF).
+DeepCode AI Fix highlights all identified vulnerabilities that can be automatically fixed. These are highlighted with a zap icon. For example, in this scenario, we have identified an Information Exposure vulnerability.
 
 Opening the vulnerability gives us details on where the issue is and allows us to generate a fix using DeepCode AI Fix.
 
-<figure><img src="../../../.gitbook/assets/image (444).png" alt=""><figcaption><p>Opening the Snyk Code vulnerability panel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption><p>Opening the Snyk Code vulnerability panel</p></figcaption></figure>
 
-Once you click on Generate fix using Snyk DeepCode AI, the machines will start turning and up to 5 fixes will be generated. To ensure we have fixed the vulnerability and DeepCode AI has not hallucinated and added a new vulnerability, we automatically retest all fixes with Snyk Code's engine.
+After you select Generate Fix using Snyk DeepCode AI, the system will analyze your code and generate up to five potential fixes. After you apply a fix, DeepCode AI Fix automatically retests the fix for quality using Snyk Code's engine.
 
-The result, in this case, is 5 fixes, which you can navigate through to decide which one is best for you. The first one is importing and using `csrf`, should solve this issue.
+The result, in this case, is five fixes, which you can navigate through to decide which one is best for you. The first fix is adding Helmet middleware package that disables the `X-Powered-By` header by default, preventing attackers from knowing that the app is running Express.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (443).png" alt=""><figcaption><p>5 fixes have been generated</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption><p>5 fixes have been generated</p></figcaption></figure>
 
 When you apply the fix, you will be guided to where the new code has been introduced. After you save and rescan, the vulnerability will disappear.
 
-<figure><img src="../../../.gitbook/assets/image (447).png" alt=""><figcaption><p>Vulnerability has been fixed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (2).png" alt=""><figcaption><p>Vulnerability has been fixed</p></figcaption></figure>
 
 ## Limitations&#x20;
 
