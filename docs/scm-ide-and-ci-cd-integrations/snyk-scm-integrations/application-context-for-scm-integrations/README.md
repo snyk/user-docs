@@ -1,5 +1,19 @@
 # Application context for SCM Integrations
 
+## What is Application Context?
+
+The application context for SCM integrations provides a comprehensive and interconnected overview of application assets. This context is crucial for assessing security risks and their potential implications, as it outlines the entire structure and components of the applications involved.
+
+Use Application Context to integrate with Internal Developer Portals (IDPs) and service catalogs such as ServiceNow CMDB, Atlassian Compass, and others. These platforms allow Snyk to automate the collection of essential context, including asset type, ownership, and lifecycle.
+
+The application context provides broader access to resources and services in an application. You can use it to:
+
+* Prepare a comprehensive inventory of your application environment, ensuring it includes crucial metadata. This should encompass elements such as SCM topics and the associated developers.
+* Gather relevant information to effectively assess and manage application security vulnerabilities and identify potential risks.
+* Create a streamlined data flow by working cohesively with assets identified through Snyk Essentials SCM integrations
+
+By leveraging Application context, you can achieve a deeper understanding of your application's security posture. After the integration is set, use the application context that can be leveraged across Snyk to classify repositories, set Asset policier, or filter reports.&#x20;
+
 These are the available integrations that you can set up for the application context:
 
 * [Backstage file](./#backstage-file-for-scm-integrations)&#x20;
