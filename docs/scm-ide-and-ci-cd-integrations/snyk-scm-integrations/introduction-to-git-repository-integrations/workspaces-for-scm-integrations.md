@@ -46,6 +46,10 @@ The Workspaces feature is managed through the **Integrations settings** page on 
 
 When Workspaces is enabled at the Group level, all Organizations within that Group have Workspaces enabled. This Group level setting can be overridden by the individual Organization level setting.
 
+{% hint style="warning" %}
+When a Group level setting is overridden by an Organization level setting, the Organization level setting cannot be modified by any future changes made to the Group level setting.
+{% endhint %}
+
 While you can choose to disable the Workspaces feature, it is important to understand doing so will hinder Snyk’s ability to scan repositories in two specific ways:
 
 1. **Frequency of scanning**: With Workspaces disabled, Snyk will analyze repository content through SCM APIs, which typically impose primary and secondary rate limits, and content limits. For example, the GitHub.com APIs are rate-limited to allow only a certain number of requests per hour, which hinders Snyk’s ability to analyze a large number of repositories in any one hour.
