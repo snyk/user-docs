@@ -1,42 +1,53 @@
 # Use the Snyk plugin to secure your Eclipse projects
 
-Once the language server is downloaded and the authentication is completed, the plugin starts the workspace scan. You might notice a confirmation that a workspace scan is starting. Alternatively, you can trigger a workspace scan from your project's context menu, or from the Snyk View.
+After the Eclipse plugin is downloaded and authentication is complete, the plugin starts the workspace scan. You may notice a confirmation that a workspace scan is starting. Alternatively, you can trigger a workspace scan from the context menu of your Project, or from the Snyk View.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-10-19 at 09.02.25 (1).png" alt="Starting workspace scan"><figcaption><p>Starting workspace scan</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-10-19 at 09.02.25 (1).png" alt=""><figcaption><p>Starting workspace scan</p></figcaption></figure>
 
-All of the issues found by Snyk are now integrated natively with Eclipse flows. Issues are shown in the **Problems** tab as shown in the following screenshot. There is a squiggly line indicating the issue while you code plus gutter icons to indicate where the issue is.
+## Issues are displayed in the Eclipse plugin
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-13 at 12.20.26.png" alt="Eclipse Problems tab"><figcaption><p>Eclipse Problems tab</p></figcaption></figure>
+All of the issues found by Snyk are now integrated natively with Eclipse flows. Issues are shown in the **Problems** tab, as illustrated in the following screen image. There is a squiggly line indicating the issue while you code, along with gutter icons to indicate where the issue is.
 
-Additionally, starting with version 3+, we provide a custom UI in the Snyk Tab, that displays issue details:
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-13 at 12.20.26.png" alt=""><figcaption><p>Eclipse Problems tab</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
+In addition, starting with version 3+, Snyk provides a custom UI in the Snyk Tab, that displays issue details:
 
-### Net new issue scanning (delta scanning)
+<figure><img src="../../../.gitbook/assets/image (641).png" alt=""><figcaption><p>Issue details in Eclipse plugin</p></figcaption></figure>
 
-#### General
+## Net new issues versus all issues
 
+Starting with **version 3.1.0**, it is possible to see only newly introduced issues.
 
+This functionality _**reduces noise**_ and allows you to _**focus only on current changes**_. This helps prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
 
-<figure><img src="../../../.gitbook/assets/image (647).png" alt=""><figcaption><p>Net new issues can be activated in the dot menu of the Snyk View</p></figcaption></figure>
+The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
-To filter the displayed issues to only display the issues introduced in the working directory, net new issues scan can be activated. This requires a git repository to work:
+{% include "../../../.gitbook/includes/some-package-managers-like....md" %}
 
-1. First, we scan the git `master` or `main` branch, or any reference branch selected in the Snyk View.
-2. Second, we scan the working directory
-3. We calculate the difference between both and only display the difference
-
-#### Choosing the reference branch
-
-1. Click on the project node, to open the branch chooser dialog.
-2. Choose the branch that is the reference against which new issues shall be calculated
-
-<figure><img src="../../../.gitbook/assets/image (653).png" alt=""><figcaption><p>After clicking on the project branch, the reference branch can be chosen</p></figcaption></figure>
+To apply the filter and see only the new issues, use the **total**/**new** toggle in the summary panel, or apply the **Show only Net New Issues filter** from the **View** menu (under **Issues Status**).\
 
 
+<figure><img src="../../../.gitbook/assets/image (702).png" alt=""><figcaption><p>Net new issues filter enabled after clicking on the total/new issues toggle.</p></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/image (647).png" alt=""><figcaption><p>Activea Net new issues n the dot menu of the Snyk View.</p></figcaption></figure>
+
+For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
+
+<figure><img src="../../../.gitbook/assets/image (705).png" alt=""><figcaption><p>No new issues introduced in a newly created branch</p></figcaption></figure>
+
+The base branch is usually automatically determined for each Git repository.&#x20;
+
+You may change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
+
+1. Toggle the **total**/**new** filter in the summary panel.
+2. Click on the top-level node in the Issues tree to change the branch or directory.
+3. Use the dropdown selection to choose any branch or reference folder.
+
+<figure><img src="../../../.gitbook/assets/image (706).png" alt=""><figcaption><p>Change reference branch or reference directory for calculation net new issues.</p></figcaption></figure>
+
+\
 Continue by following the instructions on the page for the type of scan you are doing:
 
-* [SAST scanning results (SAST, Snyk Code)](https://docs.snyk.io/ide-tools/eclipse-plugin/sast-scanning-results-sast-snyk-code)
-* [Misconfiguration scanning results (Snyk Infrastructure as Code)](https://docs.snyk.io/ide-tools/eclipse-plugin/misconfiguration-scanning-results-snyk-infrastructure-as-code)
-* [Third party dependency scanning (SCA, Snyk Open Source)](https://docs.snyk.io/ide-tools/eclipse-plugin/third-party-dependency-scanning-sca-snyk-open-source)
+* [SAST scanning results (SAST, Snyk Code)](sast-scanning-results-sast-snyk-code.md)
+* [Misconfiguration scanning results (Snyk Infrastructure as Code)](misconfiguration-scanning-results-snyk-infrastructure-as-code.md)
+* [Third-party dependency scanning (SCA, Snyk Open Source)](third-party-dependency-scanning-sca-snyk-open-source.md)

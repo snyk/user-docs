@@ -91,5 +91,3 @@ Snyk Code allows developers to ignore files in their codebase. This is done thro
 * Additional settings are stored in a config file which is located at `settings.json` in the extension directory. This is a path starting with `%LocalAppData%\\Microsoft\\VisualStudio\\`, for example, `C:\\Users\\user\\AppData\\Local\\Microsoft\\VisualStudio\\17.0_b97950dd\\Extensions\\dnzygpqo.juy`
 
 The Snyk Plugin for Visual Studio stores settings in **two** locations.
-
-### &#x20;

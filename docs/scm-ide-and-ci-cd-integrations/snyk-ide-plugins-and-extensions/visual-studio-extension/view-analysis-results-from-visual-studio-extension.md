@@ -1,17 +1,51 @@
 # View analysis results from Visual Studio extension
 
+## Issues display in the Visual Studio extension
+
 You can filter vulnerabilities by name or by severity.
 
 Filter by name by typing the name of the vulnerability in the search bar.
 
-![Filter by name](../../../.gitbook/assets/readme\_image\_3\_2\_1.png)
+![Filter by name](../../../.gitbook/assets/readme_image_3_2_1.png)
 
 Filter by severity by selecting one or more of the severities when you open the search bar filter.
 
-![Filter by severity](../../../.gitbook/assets/readme\_image\_3\_2\_2.png)
+![Filter by severity](../../../.gitbook/assets/readme_image_3_2_2.png)
 
-Users can configure the Snyk extension by **Project settings**.
+Users can configure the Snyk extension using the **Project settings**.
 
-Note that the “Scan all projects” option is enabled by default. It adds the `--all-projects` option for Snyk CLI to scan all projects by default.
+Note that the **Scan all projects** option is enabled by default. It adds the `--all-projects` option for Snyk CLI to scan all Projects by default.
 
-![Scan all projects enabled](../../../.gitbook/assets/readme\_image\_3\_3.png)
+![Scan all projects enabled](../../../.gitbook/assets/readme_image_3_3.png)
+
+## Net new Issues versus all issues
+
+For Projects using Git repositories or when you specify a reference folder, Snyk can filter the displayed issues to show only issues introduced in the working branch.&#x20;
+
+This functionality _**reduces noise**_ and allows you to _**focus only on current changes**_. This helps prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
+
+The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
+
+{% include "../../../.gitbook/includes/some-package-managers-like....md" %}
+
+In **version 2.1.0** and later, you can choose **any folder** as your base for scanning.&#x20;
+
+To apply the filter and only see the new issues, use the **total/new** toggle in the summary panel.
+
+<div align="center" data-full-width="false"><figure><img src="../../../.gitbook/assets/image (696).png" alt="" width="375"><figcaption><p>Toggle in summary panel to show the total number of issues <br> and the number of issues in the checked out branch or current folder</p></figcaption></figure></div>
+
+The net new issues feature can also be enabled in the [scan settings](visual-studio-extension-configuration.md#scan-configuration) for the Visual Studio extension.&#x20;
+
+For newly created feature branches, there will be no reported issues. That is an intended state, that developers would aim for, as shown in the screen image that follows:
+
+<figure><img src="../../../.gitbook/assets/image (697).png" alt="" width="481"><figcaption><p>Successful state, no net new issiues found</p></figcaption></figure>
+
+The base branch is usually automatically determined for each Git repository.&#x20;
+
+You may change the base branch or base folder by following these steps, as illustrated in the screen imaget that follows:
+
+1. Toggle the total/new filter in the summary panel
+2. Click on the top-level node in the Issues tree to change the branch or directory.
+3. Use the dropdown selection to choose any branch or reference folder.
+
+<figure><img src="../../../.gitbook/assets/image (698).png" alt=""><figcaption><p>Change the reference branch or reference directory for calculation of new new issues.</p></figcaption></figure>

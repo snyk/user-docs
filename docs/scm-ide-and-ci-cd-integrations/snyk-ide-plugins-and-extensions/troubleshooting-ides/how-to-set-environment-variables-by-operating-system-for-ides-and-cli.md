@@ -1,4 +1,4 @@
-# How to set environment variables by operating system OS for IDEs and CLI
+# How to set environment variables by operating system for IDEs and CLI
 
 ## Windows <a href="#windows" id="windows"></a>
 
@@ -27,7 +27,7 @@ You can verify if IntelliJ runs using this environment variable using `ps eww -o
 
 ## Linux <a href="#linux" id="linux"></a>
 
-* For details, see [EnvironmentVariables - Community Help Wiki](https://help.ubuntu.com/community/EnvironmentVariables#System-wide\_environment\_variables).
+* For details, see [EnvironmentVariables - Community Help Wiki](https://help.ubuntu.com/community/EnvironmentVariables#System-wide_environment_variables).
 * Setting `.profile / .bashrc` is not enough for UI apps, as the system does not launch them from the terminal. The relevant variables need to be available to the process that is launching the apps, for example, the window manager.
 
 ## Important environment variables for IDEs and CLI <a href="#important-environment-variables-for-ides-cli" id="important-environment-variables-for-ides-cli"></a>
@@ -59,7 +59,7 @@ You can verify if IntelliJ runs using this environment variable using `ps eww -o
 
 ## Proxy <a href="#proxy" id="proxy"></a>
 
-### Proxy in Java <a href="#proxy-in-java" id="proxy-in-java"></a>
+### Set proxy in Java <a href="#proxy-in-java" id="proxy-in-java"></a>
 
 See [Configure HTTP/HTTPS Proxy Settings Java](https://memorynotfound.com/configure-http-proxy-settings-java/).
 
@@ -71,4 +71,4 @@ See [JohannesHoppe/settings.json](https://gist.github.com/JohannesHoppe/23105342
 
 See [HTTP Proxy | IntelliJ IDEA](https://www.jetbrains.com/help/idea/settings-http-proxy.html).
 
-The Snyk Jetbrains plugin **does not read the proxy settings from this configuration.** **You must set** both JAVA Proxy environment variables, as well as the CLI environment variables.
+The Snyk Jetbrains plugin **does not read the proxy settings from this configuration.** **You must set** **both** JAVA Proxy environment variables and the CLI environment variables.

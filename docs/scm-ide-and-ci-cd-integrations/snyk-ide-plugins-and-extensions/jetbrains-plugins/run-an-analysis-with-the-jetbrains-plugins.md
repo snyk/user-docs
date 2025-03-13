@@ -70,31 +70,39 @@ By default, all issue types shown are selected.
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-miah.png" alt="Show or hide specific issue types"><figcaption><p>Show or hide specific issue types</p></figcaption></figure>
 
-### Net New Issues versus All Issues
+### Net new issues versus all issues
 
-Starting with version [2.10.0](https://plugins.jetbrains.com/plugin/10972-snyk-security/versions/stable/623034), it is possible to see **only newly introduced issues**.
+Beginning with plugin version [2.10.0](https://plugins.jetbrains.com/plugin/10972-snyk-security/versions/stable/623034), it is possible to see **only newly introduced issues**.
 
-This functionality _**reduces noise**_ and allows developers to _**focus on current changes**_ only. Developers can prevent issues early, thus unlocking their CI/CD pipeline and speeding up delivery.
+This functionality _**reduces noise**_ and allows you to _**focus only on current changes**_. This will prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
 
-The logic uses a local Git repository and shows the difference between current findings minus those in a base branch.
+The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
-This can be [configured using scan configuration settings](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#scan-configuration). Net New Issues is turned off by default, so you must take manual action to turn it on.
+In plugin **version 2.12.0** and later, you can choose **any folder** as your base for scanning.&#x20;
 
-After this feature is enabled, Snyk only reports the delta findings.&#x20;
+{% include "../../../.gitbook/includes/some-package-managers-like....md" %}
 
-For newly created feature branches, there will be no reported issues. That is an intended state, that developers would aim for; see the screen image that follows:
+To apply the filter and see only the new issues, use the toggle in the summary panel.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-ngbm.png" alt="Successful state. No Net New issues found"><figcaption><p>Successful state. No Net New issues found</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (699).png" alt=""><figcaption><p>The summary panel has a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder.</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (700).png" alt=""><figcaption><p>Net new issues filter enabled after clicking on the total/new issues toggle</p></figcaption></figure>
+
+The net new issues feature can also be enabled in the [scan configuration](run-an-analysis-with-the-jetbrains-plugins.md#scan-configuration) settings. \
+\
+For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
+
+<figure><img src="../../../.gitbook/assets/SCR-20241024-ngbm.png" alt="Successful state. No Net New issues found"><figcaption><p>Successful state, no net new issues found</p></figcaption></figure>
 
 The base branch is usually automatically determined for each Git repository.&#x20;
 
-In advanced cases, developers may change their base branch by following these steps (see the screen image that follows):&#x20;
+You may change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
 
-1. Click on the top-level node in the Issues tree
-2. Use dropdown selection to choose any branch&#x20;
-3. Click OK to save the selection
+1. Click on the top-level node in the issues tree.
+2. Use the dropdown selection to choose any branch.
+3. Click OK to save the selection.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-nfhj.png" alt="Change base branch for calculation Net New issues"><figcaption><p>Change base branch for calculation Net New issues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20241024-nfhj.png" alt="Change base branch for calculation Net New issues"><figcaption><p>After clicking on the Project branch, you can choose the reference branch or folder.</p></figcaption></figure>
 
 ## Available Snyk issue types
 

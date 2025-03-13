@@ -38,10 +38,10 @@ These settings are not part of the stable functionality and are not officially s
 * **Snyk Code Quality**: Enable a scanner for code quality issues in your application code; disabled by default.
 
 {% hint style="info" %}
-Effective from June 24 2025, Snyk Code Quality issues will no longer be provided.
+Effective beginning June 24, 2025, Snyk Code Quality issues will no longer be provided.
 {% endhint %}
 
-* **All Issues vs Net New Issues**: Specify whether to see all issues or only net new issues. The latter requires a Git repository, where the extension compares findings with those in the base branch.
+* **All issues versus net new issues**: Specify whether to see all issues or only net new issues. The latter requires a Git repository, where the extension compares findings with those in the base branch.
 
 ### Solution settings
 
