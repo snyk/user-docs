@@ -30,8 +30,14 @@ Snyk plugins are not supported on any operating system that has reached End Of L
 ### Logs
 
 {% hint style="warning" %}
-When you enable `debug`, your code may be logged in the IDE log files, for example, the `idea.log` file.
+When you enable `debug`, your code may be logged in the IDE log files, for example, the `snyk-extension.log` file.
 {% endhint %}
+
+To enable the debug log level,  you can add `-d` parameter through the **Extension Settings**, **Solution Settings**, **Additional Parameters**.
+
+<figure><img src="../../../.gitbook/assets/debug_logs.png" alt=""><figcaption></figcaption></figure>
+
+You must restart the IDE after you add this parameter and click **OK**.
 
 You can find logs in the user AppData directory:
 
@@ -82,7 +88,7 @@ Snyk Code allows developers to ignore files in their codebase. This is done thro
 * `%HOME%/.config/configstore/snyk.json` contains the CLI settings. The Visual Studio plugin uses the following parameters from the CLI configuration
   * API Token
   * API endpoint
-* Additional settings are stored in a config file which is located at `settings.json` in the extension directory. This is a path starting with `%LocalAppData%\\Microsoft\\VisualStudio\\`, e.g. `C:\\Users\\bdoetsch\\AppData\\Local\\Microsoft\\VisualStudio\\17.0_b97950dd\\Extensions\\dnzygpqo.juy`
+* Additional settings are stored in a config file which is located at `settings.json` in the extension directory. This is a path starting with `%LocalAppData%\\Microsoft\\VisualStudio\\`, for example, `C:\\Users\\user\\AppData\\Local\\Microsoft\\VisualStudio\\17.0_b97950dd\\Extensions\\dnzygpqo.juy`
 
 The Snyk Plugin for Visual Studio stores settings in **two** locations.
 
