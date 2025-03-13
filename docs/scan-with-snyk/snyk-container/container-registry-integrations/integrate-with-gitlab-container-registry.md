@@ -13,18 +13,18 @@ This page explains how to set up GitLab Container Registry integration in Snyk a
 ### **Prerequisites for GitLab Container Registry integration**
 
 * You must be an administrator for the Organization you are configuring in Snyk.
-* Snyk needs a [personal access token](https://docs.gitlab.com/ee/user/profile/personal\_access\_tokens.html) to integrate with GitLab Container Registry. Snyk does not support integration when GitLab SSO is in use for access to the GitLab Container Registry.
+* Snyk needs a [personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) to integrate with GitLab Container Registry. Snyk does not support integration when GitLab SSO is in use for access to the GitLab Container Registry.
 
 ## **Configure GitLab Container Registry integration**
 
 1. In your Snyk account, navigate to **Integrations**. Under the Container Registries section, find the GitLab Container Registry option and click it.
-2. In the **Account credentials** section, enter your GitLab Container Registry username and [personal access token](https://docs.gitlab.com/ee/user/profile/personal\_access\_tokens.html).
+2. In the **Account credentials** section, enter your GitLab Container Registry username and [personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).
 3. In the **Container registry name** fill in the full URL to the registry you want to integrate with.
 4. To finish, click **Save**.
 
 If you are using a self-hosted GitLab Container Registry, [contact Snyk Support](https://support.snyk.io/) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
-Snyk tests the connection values, and the page reloads, now displaying GitLab Container Registry integration information. The **Add your GitLab container registry images to Snyk** button becomes available.&#x20;
+Snyk tests the connection values, and the page reloads, now displaying GitLab Container Registry integration information. The **Add your GitLab container registry images to Snyk** button becomes available.
 
 If the connection to GitLab Container Registry fails, a notification appears under the **Connected to GitLab container registry** section.
 
@@ -60,7 +60,7 @@ The steps follow for adding images from GitLab Container Registry to Snyk.
 
 GitLab Container Registry imports are designated with a unique icon. You can filter the integration in the **Projects** view to see GitLab Container Registry Projects only.
 
-<figure><img src="../../../.gitbook/assets/mceclip0-14-.png" alt=""><figcaption><p>Example of a GitLab Container Registry Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/container_registry_integrations_gitlab.png" alt=""><figcaption><p>Example of a GitLab Project</p></figcaption></figure>
 
 {% hint style="info" %}
 For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).

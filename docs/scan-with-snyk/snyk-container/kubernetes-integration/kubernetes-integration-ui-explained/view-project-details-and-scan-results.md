@@ -13,13 +13,13 @@ Expand any Project to view:
 
 To view vulnerabilities in detail for any image, including its history, click the image name. The Project details page loads for the selected image:
 
-![Project details for a selected image](../../../../.gitbook/assets/project\_details\_for\_container\_image.png)
+![Project details for a selected image](../../../../.gitbook/assets/project_details_for_container_image.png)
 
 To view an aggregate list of the vulnerabilities in all of the images in the workload, including details about the security posture of the workload configuration, click the workload.
 
 The Project details page loads for the selected image.
 
-![Aggregated list of vulnerabilities in images in Kubernetes workload](../../../../.gitbook/assets/uuid-79e06589-b59c-4bad-30e4-56c0e15607e0-en.png)
+![Aggregated list of vulnerabilities in images in Kubernetes workload](../../../../.gitbook/assets/aggregate_list_vuln_Kubernetes_workload.png)
 
 Snyk scans the workload configuration for the following properties:
 
