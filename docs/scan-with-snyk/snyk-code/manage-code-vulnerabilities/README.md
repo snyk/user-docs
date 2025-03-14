@@ -120,6 +120,33 @@ Manage Project settings as follows:
 * Deactivate Project: [Temporarily disable the Project without deleting any data](../../../snyk-admin/snyk-projects/#delete-activate-or-deactivate).
 * Delete the Project: [Permanently remove the Project and all associated data](../../../snyk-admin/snyk-projects/#delete-activate-or-deactivate).
 
+## Tracking vulnerabilities across code changes
+
+Snyk Code goes beyond simple static analysis by tracking vulnerabilities across multiple scans, even as your codebase evolves. This ensures consistent and accurate vulnerability management, regardless of code refactoring, file renaming, or positional changes.\
+\
+Consider a scenario where a vulnerability exists in `file1.js` on line 45. After a code refactor, the vulnerability persists but is now located in a different file and line. To effectively address such scenarios, Snyk Code employs a sophisticated issue-tracking system. To tracks vulnerabilities\
+Snyk Code performs the following:
+
+1. Fingerprint matching:
+   * Generates a min-hash of the code's syntax tree for each vulnerability.
+   * Calculates nearest neighbors from these hashes to identify similar vulnerabilities across scans.
+2. File position comparison:
+   * Analyzes file paths and line numbers to account for code movement.
+   * Calculates similarity based on directory, filename, and line/column changes.
+
+### Final confidence scoring
+
+Snyk Code combines the results of fingerprint matching, file position comparison, and historical weighting to generate a final confidence score. This score indicates the likelihood that two vulnerabilities from different scans are the same.
+
+For example, if a vulnerability in `utils/auth_utils.js` is moved to `utils/auth_helpers.js` and the line number changes. Snyk Code's algorithms would perform the following:
+
+* Identify a new vulnerability in `utils/auth_helpers.js` and generate a fingerprint from its AST.
+* Compare the new vulnerability's fingerprint with issues found in the previous scan.
+* Identify a high fingerprint similarity despite minor AST changes.
+* Recognize the high file path similarity due to the shared directory and similar file names.
+* Account for the line number change while maintaining a high overall confidence score.
+* Match the new vulnerability with the vulnerability with highest confidence score from the previous scan.
+
 ## What's next?
 
 * [See the breakdown of Code analysis](breakdown-of-code-analysis.md)
