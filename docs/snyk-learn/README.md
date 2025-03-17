@@ -1,12 +1,12 @@
-# Snyk Learn
+# Developer security education and Snyk product training
 
-[Snyk Learn](https://learn.snyk.io) is dedicated to [security education](./#security-education) and [product training](./#product-training). Snyk Learn also offers[ learning paths](https://learn.snyk.io/catalog/?format=learning_path\&type=security-education) as a way for learners to take a predefined set of lessons.
+[Snyk Learn](https://learn.snyk.io) offers lessons for developer [security education](./#security-education) and Snyk [product training](./#product-training). Snyk Learn also offers[ learning paths](https://learn.snyk.io/catalog/?format=learning_path\&type=security-education) as a way for learners to take a predefined set of lessons. These lessons and learning plans are designed to help you start using Snyk, implement a [DevSecOps](../getting-started/glossary.md#devsecops) framework, and also to help you implement an ongoing security education and training program.
 
 Snyk Learn is one component of learning available for users and customers. The Snyk [customer resource page](https://snyk.io/customer-resources/) will help you learn the best practices for implementing Snyk in your Organization.
 
 Snyk Learn also allows for regional hosting and data residency. Multi-tenant support enables seamless operation across multiple deployment environments, specifically tailored to meet the needs of Snyk users in the US, AU, and EU.
 
-Snyk customers have access to Snyk Learn resources according to their region in the Snyk application. There is no need to create an additional user. For more information, see [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md).
+Snyk customers have access to Snyk Learn resources according to their region in the Snyk application. There is no need to create an additional user. For more information, see [Regional hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md).
 
 ## Feature availability
 
@@ -24,7 +24,7 @@ The lessons on Snyk Learn are aligned with the[ NIST NICE Framework](https://www
 
 Security education lessons cover many languages, including JavaScript, Java, C#, Python, PHP, Go, and C++. Snyk Learn also has lessons in general security, Kubernetes, artificial intelligence, and LLMs.
 
-Snyk offers multiple security education learning paths, including OWASP Top 10, Snyk Top 10, and Security for Developers, built in partnership with[ NYU](https://engineering.nyu.edu/academics/programs/cybersecurity-ms-online/nyu-cyber-fellows/badges/snyk).
+Snyk offers multiple security education learning paths, including OWASP Top 10, Snyk Top 10, and Security for Developers, built in partnership with [NYU](https://engineering.nyu.edu/academics/programs/cybersecurity-ms-online/nyu-cyber-fellows/badges/snyk).
 
 ## Product training
 

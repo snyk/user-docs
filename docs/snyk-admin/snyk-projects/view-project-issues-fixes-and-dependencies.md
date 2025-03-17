@@ -26,7 +26,7 @@ Scroll to an issue to view details, including its [priority score](../../manage-
 
 <div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.43.14.png" alt="View issue details"><figcaption><p>View issue details</p></figcaption></figure></div>
 
-* Click **Learn about this type of vulnerability** for [Snyk Learn](../../getting-started/snyk-learn/) training.
+* Click **Learn about this type of vulnerability** for [Snyk Learn](../../snyk-learn/) training.
 * Click **Show more detail** to view detailed information about the vulnerability from the [Snyk Vulnerability database](https://snyk.io/product/vulnerability-database/):
 
 <div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.47.54.png" alt="More information from Snyk Vulnerability Database"><figcaption><p>More information from the Snyk Vulnerability Database</p></figcaption></figure></div>

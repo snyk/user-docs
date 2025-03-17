@@ -26,8 +26,6 @@ This functionality _**reduces noise**_ and allows you to _**focus only on curren
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
-{% include "../../../.gitbook/includes/some-package-managers-like....md" %}
-
 In **version 2.1.0** and later, you can choose **any folder** as your base for scanning.&#x20;
 
 To apply the filter and only see the new issues, use the **total/new** toggle in the summary panel.

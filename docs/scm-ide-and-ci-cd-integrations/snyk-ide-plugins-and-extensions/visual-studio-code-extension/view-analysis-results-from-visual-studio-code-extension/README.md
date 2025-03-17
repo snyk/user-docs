@@ -51,8 +51,6 @@ The logic uses your local Git repository or any folder to compare the current fi
 
 In Visual Studio Code **version 2.21.0 and later**, you can choose **any folder** as your base for scanning.&#x20;
 
-{% include "../../../../.gitbook/includes/some-package-managers-like....md" %}
-
 To apply the filter and see only the new issues, use the **total** or **new** toggle in the summary panel.
 
 <figure><img src="../../../../.gitbook/assets/image (708).png" alt=""><figcaption><p>Summary panel with a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder</p></figcaption></figure>

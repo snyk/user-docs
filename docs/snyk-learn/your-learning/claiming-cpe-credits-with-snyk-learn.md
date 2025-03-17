@@ -31,11 +31,11 @@ The specific process for claiming CPE credits may vary depending on your certify
 
 Navigate to the page for the Learning Path that you completed and click the **Download certificate** button.
 
-<figure><img src="../../../.gitbook/assets/learning-path-completion.png" alt=""><figcaption><p>A completed Learning Path with certificate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/learning-path-completion.png" alt=""><figcaption><p>A completed Learning Path with certificate</p></figcaption></figure>
 
 #### Lesson completion example
 
-<figure><img src="../../../.gitbook/assets/lesson-completion-example (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/lesson-completion-example (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Need Help?
 

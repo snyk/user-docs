@@ -16,7 +16,7 @@ You can specify categories of learning on your profile to improve learning recom
 
 In your profile, you can set your learning preferences, including the preferred language.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-11-26 at 11.23.36.png" alt=""><figcaption><p>Snyk Learn My Profile</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-11-26 at 11.23.36.png" alt=""><figcaption><p>Snyk Learn My Profile</p></figcaption></figure>
 
 ## In Progress Learning
 

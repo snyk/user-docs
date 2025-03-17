@@ -80,8 +80,6 @@ The logic uses your local Git repository or any folder to compare the current fi
 
 In plugin **version 2.12.0** and later, you can choose **any folder** as your base for scanning.&#x20;
 
-{% include "../../../.gitbook/includes/some-package-managers-like....md" %}
-
 To apply the filter and see only the new issues, use the toggle in the summary panel.
 
 <figure><img src="../../../.gitbook/assets/image (699).png" alt=""><figcaption><p>The summary panel has a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder.</p></figcaption></figure>
