@@ -11196,7 +11196,7 @@ paths:
               - description: Set to issue to group the same issue in multiple projects
                 example: issue
       requestBody:
-        description: '**Please check required filters**'
+        description: Expand to see required filters
         content:
           application/json:
             schema:
@@ -11407,7 +11407,7 @@ paths:
               - description: Set to issue to group the same issue in multiple projects
                 example: issue
       requestBody:
-        description: '**Please check required filters**'
+        description: Expand to see required filters
         content:
           application/json:
             schema:
@@ -11563,7 +11563,7 @@ paths:
               - description: The field to group results by
                 example: severity
       requestBody:
-        description: '**Please check required filters**'
+        description: Expand to see required filters
         content:
           application/json:
             schema:
@@ -11740,7 +11740,7 @@ paths:
               - description: The field to group results by
                 example: severity
       requestBody:
-        description: '**Please check required filters**'
+        description: Expand to see required filters
         content:
           application/json:
             schema:
@@ -11918,7 +11918,7 @@ paths:
       operationId: Getlatestprojectcounts
       parameters: []
       requestBody:
-        description: '**Please check required filters**'
+        description: Expand to see required filters
         content:
           application/json:
             schema:
@@ -12039,7 +12039,7 @@ paths:
             type: string
             example: 2017-07-03
       requestBody:
-        description: '**Please check required filters**'
+        description: Expand to see required filters
         content:
           application/json:
             schema:
@@ -12178,7 +12178,7 @@ paths:
               - description: The field to group results by
                 example: isPrivate
       requestBody:
-        description: '**Please check required filters**'
+        description: Expand to see required filters
         content:
           application/json:
             schema:
