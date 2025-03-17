@@ -1571,6 +1571,7 @@ paths:
           headers: {}
           content: {}
       deprecated: false
+
   /org/{orgId}/provision:
     post:
       tags:
@@ -1580,7 +1581,6 @@ paths:
         This endpoint allows Snyk Admins to provision user access to Snyk Orgs prior to the user login to the Snyk platform, and does not send out invitation emails to the Snyk platform. When the provisioned user logs into Snyk for the first time, the user will automatically be granted the appropriate Snyk org access and role permissions specified in the API call. This endpoint can be called multiple times to provision a user to multiple Snyk orgs. The API token used requires Org Admin permisisons, and must be part of a Snyk group with a valid SSO connection.  Service accounts are restricted from invoking this API. As this endpoint can only be used to provision new users, if a user has already logged into Snyk, this endpoint will not work to provision user access
 
         #### Required permissions
-
 
         - `Provision User`
       operationId: Provisionausertotheorganization
@@ -1594,41 +1594,52 @@ paths:
             type: string
             example: 25065eb1-109c-4c3e-9503-68fc56ef6f44
       requestBody:
-        description: ''
+        description: 'Details for user to be provisioned'
         content:
-          application/json; charset=utf-8:
+          application/json:
             schema:
-              type: string
-              example: >-
-                + Attributes (object)
-                    + email (string, required) - The email of the user.
-                    + rolePublicId (string) - ID of the role to grant this user.
-                    + role (string) - Deprecated. Name of the role to grant this user. Must be one of `ADMIN`, `COLLABORATOR`, or `RESTRICTED_COLLABORATOR`. This field is invalid if `rolePublicId` is supplied with the request.
-            example: >-
-              + Attributes (object)
-                  + email (string, required) - The email of the user.
-                  + rolePublicId (string) - ID of the role to grant this user.
-                  + role (string) - Deprecated. Name of the role to grant this user. Must be one of `ADMIN`, `COLLABORATOR`, or `RESTRICTED_COLLABORATOR`. This field is invalid if `rolePublicId` is supplied with the request.
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: The email of the user.
+                  example: 'example@snyk.io'
+                rolePublicId:
+                  type: string
+                  description: ID of the role to grant this user.
+                  example: ''
+                role: 
+                  type: string
+                  description: Deprecated. Name of the role to grant this user. Must be one of `ADMIN`, `COLLABORATOR`, or `RESTRICTED_COLLABORATOR`. This field is invalid if `rolePublicId` is supplied with the request.
+                  example: ''
+              required: 
+                - email
         required: true
       responses:
         '200':
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
-                allOf:
-                  - $ref: '#/components/schemas/Provisionausertotheorganizationresponse'
-                  - example:
-                      email: ''
-                      role: ''
-                      rolePublicId: ''
-                      created: ''
-              example:
-                email: ''
-                role: ''
-                rolePublicId: ''
-                created: ''
+                type: object
+                properties:
+                  email:
+                    type: string
+                    description: The email of the user.
+                    example: ''
+                  role:
+                    type: string
+                    description: Name of the role granted for this user.
+                    example: ''
+                  rolePublicId:
+                    type: string
+                    description: ID of the role to granted for this user.
+                    example: ''
+                  created:
+                    type: string
+                    description: Timestamp of when this provision record was created.
+                    example: ''
         '403':
           description: Provided `API_KEY` has no user provision permission or does not have permissions in role being provisioned.
           headers: {}
@@ -1647,7 +1658,6 @@ paths:
 
         #### Required permissions
 
-
         - `Provision User`
       operationId: Listpendinguserprovisions
       parameters:
@@ -1659,42 +1669,22 @@ paths:
           schema:
             type: string
             example: 25065eb1-109c-4c3e-9503-68fc56ef6f44
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json; charset=utf-8
-            type: string
-            example: application/json; charset=utf-8
       responses:
         '200':
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
                 type: array
                 items:
                   $ref: '#/components/schemas/Listpendinguserprovisionsresponse'
                 description: ''
-                example:
-                  - email: ''
-                    role: ''
-                    rolePublicId: ''
-                    created: ''
-              example:
-                - email: ''
-                  role: ''
-                  rolePublicId: ''
-                  created: ''
         '403':
           description: Provided `API_KEY` has no user provision permission or does not have permissions in role being provisioned.
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
                 type: object
                 description: Provided `API_KEY` has no user provision permission or does not have permissions in role being provisioned.
@@ -1708,7 +1698,6 @@ paths:
 
         #### Required permissions
 
-
         - `Provision User`
       operationId: Deletependinguserprovision
       parameters:
@@ -1720,29 +1709,19 @@ paths:
           schema:
             type: string
             example: 25065eb1-109c-4c3e-9503-68fc56ef6f44
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json; charset=utf-8
-            type: string
-            example: application/json; charset=utf-8
       responses:
         '200':
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
-                allOf:
-                  - $ref: '#/components/schemas/Deletependinguserprovisionresponse'
-                  - example:
-                      ok: false
-              example:
-                ok: false
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    description: Deletion succeeded.
+                    example: false
         '403':
           description: Provided `API_KEY` has no user provision permission or does not have permissions in role being provisioned.
           headers: {}
@@ -14220,13 +14199,6 @@ components:
         - medium
         - low
       type: string
-    Deletependinguserprovisionresponse:
-      title: Deletependinguserprovisionresponse
-      type: object
-      properties:
-        ok:
-          type: boolean
-          description: Deletion succeeded.
     dependencies1:
       title: dependencies1
       required:
@@ -18633,22 +18605,6 @@ components:
         projectId:
           type: string
           description: the Snyk project publicId
-    Provisionausertotheorganizationresponse:
-      title: Provisionausertotheorganizationresponse
-      type: object
-      properties:
-        email:
-          type: string
-          description: The email of the user.
-        role:
-          type: string
-          description: Name of the role granted for this user.
-        rolePublicId:
-          type: string
-          description: ID of the role to granted for this user.
-        created:
-          type: string
-          description: Timestamp of when this provision record was created.
     Provisionnewbrokertokenresponse:
       title: Provisionnewbrokertokenresponse
       required:
