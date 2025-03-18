@@ -1735,10 +1735,7 @@ paths:
       description: >-
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
       operationId: List
       parameters:
@@ -1750,28 +1747,21 @@ paths:
           schema:
             type: string
             example: 4a18d42f-0706-4ad0-b127-24078731fbed
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json; charset=utf-8
-            type: string
-            example: application/json; charset=utf-8
       responses:
         '200':
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
                 type: object
-                example:
-                  github: 9a3e5d90-b782-468a-a042-9a2073736f0b
-                  gitlab: 1b3e3d90-c678-347a-n232-6a3453738h1e
-                  bitbucket-cloud: 6jje4c92-e7rn-t59a-f456-8n5675432fe9
+                properties:
+                  github:
+                    type: string
+                  gitlab:
+                    type: string
+                  bitbucket-cloud:
+                    type: string
               example:
                 github: 9a3e5d90-b782-468a-a042-9a2073736f0b
                 gitlab: 1b3e3d90-c678-347a-n232-6a3453738h1e
@@ -1784,16 +1774,10 @@ paths:
       description: >-
         Add new integration for given organization.
 
-
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
-
-
         - `Edit Integrations`
       operationId: Addnewintegration
       parameters:
@@ -1806,9 +1790,8 @@ paths:
             type: string
             example: 4a18d42f-0706-4ad0-b127-24078731fbed
       requestBody:
-        description: ''
         content:
-          application/json; charset=utf-8:
+          application/json:
             schema:
               oneOf:
                 - $ref: '#/components/schemas/AddNewIntegrationWithCredentialsRequest'
@@ -1819,12 +1802,11 @@ paths:
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
-                allOf:
-                  - $ref: '#/components/schemas/Addnewintegrationresponse'
-                  - example:
-                      id: 9a3e5d90-b782-468a-a042-9a2073736f0b
+                $ref: '#/components/schemas/Addnewintegrationresponse'
+              example:
+                id: 9a3e5d90-b782-468a-a042-9a2073736f0b
       deprecated: false
   /org/{orgId}/integrations/{integrationId}:
     put:
@@ -1832,33 +1814,19 @@ paths:
         - Integrations
       summary: Update existing integration
       description: >-
-        + Update integration's credentials for given organization. Integration must be **not brokered**
-
-
-        + Enable or disable brokered integration for given organization. *Credentials required for disabling brokered integration*
-
+        - Update integration’s credentials for given organization. Integration must be **not brokered**
+        - Enable or disable brokered integration for given organization. *Credentials required for disabling brokered integration*
 
         Examples:
 
-
         - [Set up a broker for an existing integration](https://docs.snyk.io/snyk-api/api-endpoints-index-and-tips/examples-for-the-update-existing-integration-endpoint#set-up-broker-for-an-existing-integration)
-
-
         - [Update credentials for an existing non-brokered integration](https://docs.snyk.io/snyk-api/api-endpoints-index-and-tips/examples-for-the-update-existing-integration-endpoint#update-credentials-for-an-existing-non-brokered-integration)
-
-
         - [Disable broker for an existing integration](https://docs.snyk.io/snyk-api/api-endpoints-index-and-tips/examples-for-the-update-existing-integration-endpoint#disable-broker-for-an-existing-integration)
-
 
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
-
-
         - `Edit Integrations`
       operationId: Updateexistingintegration
       parameters:
@@ -1881,14 +1849,12 @@ paths:
       requestBody:
         description: ''
         content:
-          application/json; charset=utf-8:
+          application/json:
             schema:
-              allOf:
+              oneOf:
                 - $ref: '#/components/schemas/Updateexistingintegrationrequest'
-                - example:
-                    type: github
-                    broker:
-                      enabled: true
+                - $ref: '#/components/schemas/Updateexistingintegrationrequest1'
+                - $ref: '#/components/schemas/Updateexistingintegrationrequest2'
             examples:
               setupExistingIntegration:
                 summary: Set up a broker for an existing integration
@@ -1916,7 +1882,7 @@ paths:
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/Updateexistingintegrationresponse'
@@ -1932,15 +1898,9 @@ paths:
       description: >-
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
-
-
         - `Edit Integrations`
-
 
         Removes any credentials set for this integration. If this is a brokered connection the operation will have no effect.
       operationId: Deletecredentials
@@ -1961,16 +1921,6 @@ paths:
           schema:
             type: string
             example: 4a18d42f-0706-4ad0-b127-24078731fbed
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json
-            type: string
-            example: application/json
       responses:
         '200':
           description: ''
@@ -1985,22 +1935,14 @@ paths:
       description: >-
         Issue a new and unique provisional broker token for the brokered integration.
 
-
         Used for zero down-time token rotation with the Snyk Broker. Once provisioned, the token can be used to initialize a new broker client before using the switch API to update the token in use by the integration.
-
 
         The new provisional token will fail to be created if the integration, or any other integration in the same group, already has one provisioned.
 
-
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
-
-
         - `Edit Integrations`
       operationId: Provisionnewbrokertoken
       parameters:
@@ -2020,28 +1962,17 @@ paths:
           schema:
             type: string
             example: 4a18d42f-0706-4ad0-b127-24078731fbed
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json
-            type: string
-            example: application/json
       responses:
         '200':
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
-                allOf:
-                  - $ref: '#/components/schemas/Provisionnewbrokertokenresponse'
-                  - example:
-                      id: 9a3e5d90-b782-468a-a042-9a2073736f0b
-                      provisionalBrokerToken: 4a18d42f-0706-4ad0-b127-24078731fbed
+                $ref: '#/components/schemas/Provisionnewbrokertokenresponse'
+              example:
+                id: 9a3e5d90-b782-468a-a042-9a2073736f0b
+                provisionalBrokerToken: 4a18d42f-0706-4ad0-b127-24078731fbed
       deprecated: false
   /org/{orgId}/integrations/{integrationId}/authentication/switch-token:
     post:
@@ -2055,16 +1986,10 @@ paths:
 
         This action will fail if there is no token provisioned for this integration or any integration in the same group.
 
-
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
-
-
         - `Edit Integrations`
       operationId: Switchbetweenbrokertokens
       parameters:
@@ -2084,16 +2009,6 @@ paths:
           schema:
             type: string
             example: 4a18d42f-0706-4ad0-b127-24078731fbed
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json
-            type: string
-            example: application/json
       responses:
         '200':
           description: ''
@@ -2110,19 +2025,12 @@ paths:
 
         This API supports both brokered and non-brokered integrations.
 
-
         Use this API for when you want to share a Broker token between several Snyk organizations (integrations).
-
 
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
-
-
         - `Edit Integrations`
       operationId: Cloneanintegration(withsettingsandcredentials)
       parameters:
@@ -2147,10 +2055,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/Cloneanintegrationwithsettingsandcredentialsrequest'
-                - example:
-                    destinationOrgPublicId: 9a3e5d90-b782-468a-a042-9a2073736f0b1
+              $ref: '#/components/schemas/Cloneanintegrationwithsettingsandcredentialsrequest'
             example:
               destinationOrgPublicId: 9a3e5d90-b782-468a-a042-9a2073736f0b1
         required: true
@@ -2159,12 +2064,9 @@ paths:
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
-                allOf:
-                  - $ref: '#/components/schemas/Cloneanintegrationwithsettingsandcredentialsresponse'
-                  - example:
-                      newIntegrationId: 9a3e5d90-b782-468a-a042-9a2073736f0b
+                $ref: '#/components/schemas/Cloneanintegrationwithsettingsandcredentialsresponse'
               example:
                 newIntegrationId: 9a3e5d90-b782-468a-a042-9a2073736f0b
       deprecated: false
@@ -2194,31 +2096,16 @@ paths:
           required: true
           style: simple
           schema:
-            allOf:
-              - $ref: '#/components/schemas/IntegrationType'
-              - description: Integration type.
-                example: github
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json; charset=utf-8
-            type: string
-            example: application/json; charset=utf-8
+            $ref: '#/components/schemas/IntegrationType'
+          example: github
       responses:
         '200':
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
-                allOf:
-                  - $ref: '#/components/schemas/Getexistingintegrationbytyperesponse'
-                  - example:
-                      id: 9a3e5d90-b782-468a-a042-9a2073736f0b
+                $ref: '#/components/schemas/Getexistingintegrationbytyperesponse'
               example:
                 id: 9a3e5d90-b782-468a-a042-9a2073736f0b
       deprecated: false
@@ -2226,14 +2113,11 @@ paths:
     get:
       tags:
         - Integrations
-      summary: Retrieve
+      summary: Get Integration Settings
       description: >-
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
       operationId: Retrieve
       parameters:
@@ -2253,39 +2137,24 @@ paths:
           schema:
             type: string
             example: 9a3e5d90-b782-468a-a042-9a2073736f0b
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json; charset=utf-8
-            type: string
-            example: application/json; charset=utf-8
       responses:
         '200':
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
                 $ref: '#/components/schemas/Integrationsettings'
       deprecated: false
     put:
       tags:
         - Integrations
-      summary: Update
+      summary: Update Integration Settings
       description: >-
         #### Required permissions
 
-
         - `View Organization`
-
-
         - `View Integrations`
-
-
         - `Edit Integrations`
       operationId: Update
       parameters:
@@ -2310,25 +2179,7 @@ paths:
         content:
           application/json; charset=utf-8:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/Integrationsettings'
-                - example:
-                    autoDepUpgradeLimit: 2
-                    autoDepUpgradeIgnoredDependencies: []
-                    autoDepUpgradeEnabled: false
-                    autoDepUpgradeMinAge: 21
-                    pullRequestTestEnabled: true
-                    pullRequestFailOnAnyVulns: false
-                    pullRequestFailOnlyForHighSeverity: true
-                    pullRequestAssignment: '{"enabled":true,"type":"manual","assignees":["username"]}'
-                    autoRemediationPrs:
-                      backlogPrsEnabled: false
-                      backlogPrStrategy: vuln
-                      freshPrsEnabled: true
-                      usePatchRemediation: false
-                    manualRemediationPrs:
-                      useManualPatchRemediation: false
-                    dockerfileSCMEnabled: true
+              $ref: '#/components/schemas/Integrationsettings'
             example:
               autoDepUpgradeLimit: 2
               autoDepUpgradeIgnoredDependencies: []
@@ -2352,27 +2203,9 @@ paths:
           description: ''
           headers: {}
           content:
-            application/json; charset=utf-8:
+            application/json:
               schema:
-                allOf:
-                  - $ref: '#/components/schemas/Integrationsettings'
-                  - example:
-                      autoDepUpgradeLimit: 2
-                      autoDepUpgradeIgnoredDependencies: []
-                      autoDepUpgradeEnabled: false
-                      autoDepUpgradeMinAge: 21
-                      pullRequestTestEnabled: true
-                      pullRequestFailOnAnyVulns: false
-                      pullRequestFailOnlyForHighSeverity: true
-                      pullRequestAssignment: '{"enabled":true,"type":"manual","assignees":["username"]}'
-                      autoRemediationPrs:
-                        backlogPrsEnabled: false
-                        backlogPrStrategy: vuln
-                        freshPrsEnabled: true
-                        usePatchRemediation: false
-                      manualRemediationPrs:
-                        useManualPatchRemediation: false
-                      dockerfileSCMEnabled: true
+                $ref: '#/components/schemas/Integrationsettings'
               example:
                 autoDepUpgradeLimit: 2
                 autoDepUpgradeIgnoredDependencies: []
@@ -2418,7 +2251,7 @@ paths:
       requestBody:
         description: 'Note: Importing targets through a Github (Cloud) integration requires the use of a [Snyk personal access/api token](https://app.snyk.io/account).'
         content:
-          application/json; charset=utf-8:
+          application/json:
             schema:
               oneOf:
                 - $ref: '#/components/schemas/GithubAndGithubEnterpriseImportRequest'
@@ -2433,20 +2266,6 @@ paths:
                 - $ref: '#/components/schemas/AzureCRElasticCRArtifactoryCRNexusImportRequest'
                 - $ref: '#/components/schemas/GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCRImportRequest'
                 - description: 'Note: Importing targets through a Github (Cloud) integration requires the use of a [Snyk personal access/api token](https://app.snyk.io/account).'
-                  example:
-                    target:
-                      owner: org-security
-                      name: goof
-                      branch: main
-                    files:
-                      - path: example/package.json
-            example:
-              target:
-                owner: org-security
-                name: goof
-                branch: main
-              files:
-                - path: example/package.json
         required: true
       responses:
         '201':
@@ -2465,7 +2284,7 @@ paths:
       tags:
         - Import Projects
       summary: Get import job details
-      description: ''
+      description: 'Get import job details'
       operationId: Getimportjobdetails
       parameters:
         - name: orgId
@@ -2492,16 +2311,6 @@ paths:
           schema:
             type: string
             example: 1a325d9d-b782-468a-a242-9a2073734f0b
-        - name: Content-Type
-          in: header
-          description: ''
-          required: true
-          style: simple
-          schema:
-            enum:
-              - application/json; charset=utf-8
-            type: string
-            example: application/json; charset=utf-8
       responses:
         '200':
           description: ''
@@ -2509,31 +2318,7 @@ paths:
           content:
             application/json; charset=utf-8:
               schema:
-                allOf:
-                  - $ref: '#/components/schemas/Getimportjobdetailsresponse'
-                  - example:
-                      id: dce061f7-ce0f-4ccf-b49b-4335d1205bd9
-                      status: pending
-                      created: 2018-07-23T15:21:10.611Z
-                      logs:
-                        - name: org1/repo1
-                          created: 2018-07-23T15:21:10.643Z
-                          status: failed
-                          projects: []
-                        - name: org2/repo2
-                          created: 2018-07-23T15:21:10.644Z
-                          status: complete
-                          projects:
-                            - targetFile: package.json
-                              success: true
-                              projectUrl: https://api.snyk.io/v1/org/org-name/project/7eeaee25-5f9b-4d05-8818-4cca2c9d9adc
-                        - name: org3/repo3
-                          created: 2018-07-23T15:21:10.643Z
-                          status: pending
-                          projects:
-                            - targetFile: package.json
-                              success: true
-                              projectUrl: https://api.snyk.io/v1/org/org-name/project/0382897c-0617-4429-86df-51187dfd42f6
+                $ref: '#/components/schemas/Getimportjobdetailsresponse'
               example:
                 id: dce061f7-ce0f-4ccf-b49b-4335d1205bd9
                 status: pending
@@ -2558,6 +2343,7 @@ paths:
                         success: true
                         projectUrl: https://api.snyk.io/v1/org/org-name/project/0382897c-0617-4429-86df-51187dfd42f6
       deprecated: false
+
   /org/{orgId}/project/{projectId}:
     get:
       tags:
@@ -15540,6 +15326,13 @@ components:
         exclusionGlobs:
           type: string
           description: a comma-separated list of up to 10 folder names to exclude from scanning (each folder name must not exceed 100 characters). If not specified, it will default to "fixtures, tests, \_\_tests\_\_, node_modules". If an empty string is provided - no folders will be excluded. This attribute is only respected with Open Source and Container scan targets.
+      example:
+        target:
+          owner: org-security
+          name: goof
+          branch: main
+        files:
+          - path: example/package.json
     AzureReposImportRequest:
       title: Azure Repos Target Import Request
       type: object
@@ -23512,10 +23305,9 @@ components:
           description: The branch that this project should be monitoring
           example: main
     Updateexistingintegrationrequest:
-      title: Updateexistingintegrationrequest
+      title: Setup Broker for Existing Integration
       required:
         - type
-        - broker
       type: object
       properties:
         type:
@@ -23523,7 +23315,7 @@ components:
         broker:
           $ref: '#/components/schemas/BrokerSettings'
     Updateexistingintegrationrequest1:
-      title: Updateexistingintegrationrequest1
+      title: Update credentials for an existing non-brokered integration
       required:
         - type
         - credentials
@@ -23534,7 +23326,7 @@ components:
         credentials:
           $ref: '#/components/schemas/IntegrationCredentials'
     Updateexistingintegrationrequest2:
-      title: Updateexistingintegrationrequest2
+      title: Disable broker for an existing integration
       required:
         - type
         - broker
