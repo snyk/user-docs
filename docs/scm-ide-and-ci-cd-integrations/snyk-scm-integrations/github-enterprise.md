@@ -209,7 +209,7 @@ If you have changed the name of your GitHub organization, copy the new name from
 * Authorize your GitHub PAT if you have configured SAML SSO. See the [How to authorize your Personal Access Token and enable SSO](github-enterprise.md#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
 
 4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
 6. Pull personal repositories (`optional`): Enable the option if you only want to pull the repositories you own.

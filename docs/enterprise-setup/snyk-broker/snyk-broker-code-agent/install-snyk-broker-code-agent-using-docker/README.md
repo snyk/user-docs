@@ -16,7 +16,7 @@ For the initial deployment of the Broker Client – Code Agent, collaborating wi
 
 The workflow for setting Snyk Broker - Code Agent is as follows:
 
-1. [Obtain the required tokens for setup](obtain-the-required-tokens-for-setup.md).
+1. [Obtain the required tokens for setup](../../prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md).
 2. If you already have a running Broker client for the same Organization and the same Integration, [Remove the existing Broker Client](remove-an-existing-broker-client.md).
 3. [Create an internal network for the Code Agent – Broker client communication](create-network-for-broker-client-and-code-agent-communication.md).
 4. [Set up the Code Agent](set-up-the-code-agent.md).

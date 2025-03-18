@@ -4,7 +4,7 @@ The Broker client and server act together as a tunnel to your code, sending requ
 
 The Broker client runs within your internal network, keeping sensitive data such as Git tokens within the network perimeter. The tunnel allows for scanning using only requests on an approved data list. This narrows the access permissions to the absolute minimum required for Snyk to monitor a repository. For more information, see [Approved data list for Snyk Broker](connections-with-snyk-broker.md#approved-data-list-for-snyk-broker).
 
-For information about components required for using Snyk Code Agent, Snyk Container Registry Agent, and Snyk Broker for Infrastructure as Code, see [Define your Broker deployment components](prepare-snyk-broker-for-deployment.md#define-your-broker-deployment-components).
+For information about components required for using Snyk Code Agent, Snyk Container Registry Agent, and Snyk Broker for Infrastructure as Code, see [Define your Broker deployment components](prepare-snyk-broker-for-deployment/#define-your-broker-deployment-components).
 
 The diagram that follows illustrates how the basic components operate.
 

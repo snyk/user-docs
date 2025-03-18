@@ -13,7 +13,7 @@ The third-party integrations are available only for Snyk AppRisk, with Enterpris
 Follow these steps to install and run Snyk Broker for the Snyk AppRisk third-party integrations.
 
 1. Ensure you have the Snyk Broker token for the Snyk AppRisk integration. The Snyk support team can provide the needed token.&#x20;
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-from-the-web-ui)page.&#x20;
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-from-the-web-ui)page.&#x20;
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 2. Pull the latest Broker image by running this command:
 
