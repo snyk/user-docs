@@ -7,7 +7,7 @@ The Snyk API is available only for Enterprise plans.
 
 For more information, see [Plans and pricing](https://snyk.io/plans).
 
-The V1 API will be sunset eventually, as further Snyk developments are now focused on the REST API.
+The V1 API will be deprecated eventually, as further Snyk developments are now focused on the REST API.
 {% endhint %}
 
 The V1 API enables you to test a package for issues as they are defined by Snyk, and to automate Snyk processes to accomplish your specific workflows. Customers and partners can perform functions including:
