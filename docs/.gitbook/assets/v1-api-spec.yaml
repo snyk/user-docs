@@ -1851,7 +1851,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Updateexistingintegrationrequest'
+              oneOf:
+                - $ref: '#/components/schemas/Updateexistingintegrationrequest'
+                - $ref: '#/components/schemas/Updateexistingintegrationrequest1'
+                - $ref: '#/components/schemas/Updateexistingintegrationrequest2'
             examples:
               setupExistingIntegration:
                 summary: Set up a broker for an existing integration
@@ -2094,7 +2097,7 @@ paths:
           style: simple
           schema:
             $ref: '#/components/schemas/IntegrationType'
-            example: github
+          example: github
       responses:
         '200':
           description: ''
@@ -2110,7 +2113,7 @@ paths:
     get:
       tags:
         - Integrations
-      summary: Retrieve
+      summary: Get Integration Settings
       description: >-
         #### Required permissions
 
@@ -2146,7 +2149,7 @@ paths:
     put:
       tags:
         - Integrations
-      summary: Update
+      summary: Update Integration Settings
       description: >-
         #### Required permissions
 
@@ -23302,10 +23305,9 @@ components:
           description: The branch that this project should be monitoring
           example: main
     Updateexistingintegrationrequest:
-      title: Updateexistingintegrationrequest
+      title: Setup Broker for Existing Integration
       required:
         - type
-        - broker
       type: object
       properties:
         type:
@@ -23313,7 +23315,7 @@ components:
         broker:
           $ref: '#/components/schemas/BrokerSettings'
     Updateexistingintegrationrequest1:
-      title: Updateexistingintegrationrequest1
+      title: Update credentials for an existing non-brokered integration
       required:
         - type
         - credentials
@@ -23324,7 +23326,7 @@ components:
         credentials:
           $ref: '#/components/schemas/IntegrationCredentials'
     Updateexistingintegrationrequest2:
-      title: Updateexistingintegrationrequest2
+      title: Disable broker for an existing integration
       required:
         - type
         - broker
