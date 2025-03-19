@@ -50,6 +50,7 @@ Not all features follow all these stages, and timelines for each feature to move
 * [Snyk Runtime Sensor](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
 * Reports
   * [Repositories Tested in CI/CD report](../manage-issues/reporting/available-snyk-reports.md#repositories-tested-in-ci-cd-report)
+  * [PCI-DSS v4.0.1 report](../manage-issues/reporting/available-snyk-reports.md#pci-dss-v4.0.1-report)
 
 ## General Availability
 
