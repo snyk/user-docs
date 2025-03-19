@@ -1,7 +1,7 @@
 # Projects (v1)
 
 {% hint style="info" %}
-This document uses the v1 API. For more details, see the [v1 API](../v1-api.md).
+This document uses the v1 API, which will eventually be deprecated, as further Snyk developments are now focused on the REST API. For more details, see the [v1 API](../v1-api.md).
 {% endhint %}
 
 **Note:** For a list of Project types, see [Project type responses from the API](../snyk-api/api-endpoints-index-and-tips/project-type-responses-from-the-api).
