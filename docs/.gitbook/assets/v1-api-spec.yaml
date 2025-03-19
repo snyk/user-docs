@@ -12177,8 +12177,7 @@ paths:
         content:
           application/json:
             schema:
-              items:
-                $ref: '#/components/schemas/TestsFilters'
+              $ref: '#/components/schemas/TestsFilters'
               example:
                 filters:
                   orgs: []
