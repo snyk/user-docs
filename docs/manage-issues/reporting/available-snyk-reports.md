@@ -10,7 +10,8 @@ The following reports are available:
 * [OWASP TOP 10 report](available-snyk-reports.md#owasp-top-10-report)
 * [CWE TOP 25 report](available-snyk-reports.md#cwe-top-25-report)
 * [CWE TOP 10 KEV report](available-snyk-reports.md#cwe-top-10-kev-report)
-* [Developer IDE and CLI usage report](available-snyk-reports.md#developer-ide-and-cli-usage)
+* [Developer IDE and CLI usage report](available-snyk-reports.md#developer-ide-and-cli-usage-report)
+* [Repositories Tested in CI/CD report](available-snyk-reports.md#repositories-tested-in-ci-cd-report)
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
 * [Snyk Generated Pull Requests](available-snyk-reports.md#snyk-generated-pull-requests)
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
@@ -154,7 +155,7 @@ The [CWE Top 10 KEV Weaknesses](https://cwe.mitre.org/top25/archive/2023/2023_ke
 
 The report is based on the version released in 2023 by Mitre. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
 
-## Developer IDE and CLI usage
+## Developer IDE and CLI usage report
 
 To use this report, you must ensure you have installed the following prerequisites:&#x20;
 
@@ -167,10 +168,10 @@ To use this report, you must ensure you have installed the following prerequisit
 This report shows the adoption of Snyk testing in local development through the IDE plugins and using the CLI locally. The report is available under the Change Report dropdown at the Group and Organization levels.
 
 {% hint style="info" %}
-This report focuses on the local developer experience and thus does not include the use of CI/CD. In addition, the report does not show organizations or developers that have never used the CLI or IDE.
+This report focuses on the local developer experience and does not include the use of CI/CD. In addition, it does not show organizations or developers that have never used the CLI or IDE.
 {% endhint %}
 
-Security teams can use this report to demonstrate strong shift left behavior as model behavior to bring to other teams. This report also shows where teams or individual developers are not adopting Snyk locally. Companies can use this report to encourage more shift left behavior.
+Security teams can use this report to demonstrate strong shift-left behavior as a model behavior to bring to other teams. This report also shows where teams or individual developers are not adopting Snyk locally. Companies can use this report to encourage more shift-left behavior.
 
 This report shows the test usage in the IDE and CLI by developers:
 
@@ -180,15 +181,99 @@ This report shows the test usage in the IDE and CLI by developers:
 
 Teams can filter by date and Organization.
 
+## Repositories Tested in CI/CD report
+
+{% hint style="info" %}
+**Release status**
+
+The Repositories Tested in CI/CD report is in Early Access and available only with Enterprise plans. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
+To use this report, you must ensure you have installed Snyk CLI version 1.1292.1 or newer.
+
+This report analyzes Snyk tests performed as part of CI/CD pipelines executed using Snyk CLI. It will inform you about the usage of your company and adoption of testing in CI/CD, ensuring repositories are tested as expected and preventing critical vulnerabilities and misconfigurations from being deployed and reaching the production environment.
+
+{% hint style="info" %}
+The report results are scoped by a date range filter that you can use to review specific periods. The filter is defaulted to the last 30 days.
+{% endhint %}
+
+The numbers displayed on the main view of the report represent the number of repositories tested in the selected date range per Snyk product.&#x20;
+
+In addition, you can learn about the change in the number of tested repositories compared to the previous sequential period, so you can conclude whether the adoption of CI/CD tests across repositories improved.&#x20;
+
+A green upward arrow indicates that more repositories were tested compared to the previous sequential period, while a red downward arrow indicates the opposite. The absolute change value appears next to the arrow, and the perception of change appears right underneath to measure the degree of change.
+
+<figure><img src="../../.gitbook/assets/image (715).png" alt=""><figcaption><p>Repositories tested during date range</p></figcaption></figure>
+
+{% hint style="info" %}
+A sequential period refers to a date range covering the last seven days. In this case, the period starts seven days ago and ends today. The previous sequential period spans from 14 days ago to seven days ago. As a result, both sequential periods are of the same duration.
+{% endhint %}
+
+#### Repository Test Adoption <a href="#repository-test-adoption" id="repository-test-adoption"></a>
+
+Review the Repository Test Adoption trend to learn more about the adoption over time.\
+Represented by the green line, you can see the weekly number of repositories that have been tested compared to the repositories that had commits in the last 30 days, represented by the purple line.&#x20;
+
+This comparison helps determine whether Snyk tests in CI/CD are being increasingly adopted over time and highlights the number of repositories that have received commits but have not been tested in CI/CD.
+
+{% hint style="info" %}
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) page.&#x20;
+{% endhint %}
+
+You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
+
+<figure><img src="../../.gitbook/assets/image (716).png" alt=""><figcaption><p>Repository Test Adoption</p></figcaption></figure>
+
+#### Test Success Rate Trend <a href="#test-success-rate-trend" id="test-success-rate-trend"></a>
+
+The test success rate serves as an indicator of how well the engineering department or specific Snyk Organizations can adopt a "shift left" approach, which aims to identify and resolve issues before the code reaches the build process. This success rate is calculated by dividing the number of tests that passed by the total number of relevant tests conducted.
+
+{% hint style="info" %}
+An applicable test is a test that did not fail due to technical issues or a non-supported Project.
+{% endhint %}
+
+Having a low success rate can indicate that:
+
+* Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](https://docs.snyk.io/getting-started/snyk-learn) program.
+* The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (717).png" alt=""><figcaption><p>Test Success Rate Trend</p></figcaption></figure>
+
+#### Adoption by Organizations <a href="#adoption-by-organizations" id="adoption-by-organizations"></a>
+
+Launching an Application Security program to boost testing adoption in CI/CD pipelines can be challenging. This initiative requires collaboration between the AppSec and R\&D teams and will be implemented gradually, with regular progress monitoring.
+
+The Adoption by Organization table facilitates tracking and comparing the adoption rates of Snyk Organizations, helping you identify the organizations that are struggling or lagging behind.
+
+In addition, you can examine the success rate column to surface organizations that have lower success rates.
+
+#### Repository Test Summary <a href="#repository-test-summary" id="repository-test-summary"></a>
+
+The repository test summary table shows the performed tests during the selected date range.
+
+The default sorting in the table surfaces repositories according to their last commit, allowing you to identify repositories that were expected to be tested in CI/CD pipelines and verify they were tested. Clicking the column names to sort the table according to the selected column. You can sort the table by multiple columns at a time.&#x20;
+
+{% hint style="info" %}
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) page.&#x20;
+{% endhint %}
+
+You can execute the test on a specific repository branch in the table. The `tested` indicator means that any branch of this repository was tested during the selected date range.
+
+{% hint style="info" %}
+Hovering over the TESTED tag reveals the last test performed during the selected date range
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (718).png" alt=""><figcaption><p>Repository Test Summary</p></figcaption></figure>
+
 ## Cloud Compliance Issues report
 
 {% hint style="info" %}
-This report is available only if you have the legacy Snyk Cloud enabled.
+This report is available only if you have enabled legacy Snyk Cloud.
 {% endhint %}
 
 The Cloud Compliance Issues report shows cloud issues for an entire Organization, organized by [compliance standard](../../scan-with-snyk/snyk-iac/getting-started-with-cloud-scans/key-concepts-for-cloud-scans.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
 
-You can view a report for a single version of a compliance standard at a time, for example, CIS AWS Foundations Benchmark v1.4.0, by selecting the desired standard from the drop-down menu. Each report includes a list of compliance controls organized by control category, with corresponding issue counts.
+You can view a report for a single version of a compliance standard at a time, for example, CIS AWS Foundations Benchmark v1.4.0, by selecting the desired standard from the dropdown menu. Each report includes a list of compliance controls organized by control category, with corresponding issue counts.
 
 Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../scan-with-snyk/snyk-iac/getting-started-with-cloud-scans/manage-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
