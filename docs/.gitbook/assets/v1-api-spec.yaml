@@ -2144,18 +2144,15 @@ paths:
                 - $ref: '#/components/schemas/DockerHubImportRequest'
                 - $ref: '#/components/schemas/AzureCRElasticCRArtifactoryCRNexusImportRequest'
                 - $ref: '#/components/schemas/GoogleCRGoogleARHarborDigitalOceanCRQuayGitlabCRGithubCRImportRequest'
-                - description: 'Note: Importing targets through a Github (Cloud) integration requires the use of a [Snyk personal access/api token](https://app.snyk.io/account).'
         required: true
       responses:
         '201':
           description: ''
           headers:
             Location:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: URL for the status API call of the import
+              schema:
+                type: string
+              example: URL for the status API call of the import
           content: {}
       deprecated: false
   /org/{orgId}/integrations/{integrationId}/import/{jobId}:
@@ -2353,7 +2350,7 @@ paths:
     post:
       tags:
         - Projects
-      summary: Deactivate
+      summary: Deactivate a project
       description: >-
         Deactivating a project will:
 
@@ -2400,7 +2397,7 @@ paths:
     post:
       tags:
         - Projects
-      summary: Activate
+      summary: Activate a project
       description: >-
         Activating a project will:
 
@@ -2828,11 +2825,9 @@ paths:
           description: ''
           headers:
             Link:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: <https://api.snyk.io/v1/org/4a18d42f-0706-4ad0-b127-24078731fbed/project/6d5813be-7e6d-4ab8-80c2-1e3e2a454545/history/6d5813be-7e6d-4ab8-80c2-1e3e2a454553/issue/SNYK-JS-LODASH-590103?page=1&perPage=3>; rel=prev, <https://api.snyk.io/v1/org/4a18d42f-0706-4ad0-b127-24078731fbed/project/6d5813be-7e6d-4ab8-80c2-1e3e2a454545/history/6d5813be-7e6d-4ab8-80c2-1e3e2a454553/issue/SNYK-JS-LODASH-590103?page=3&perPage=3>; rel=next, <https://api.snyk.io/v1/org/4a18d42f-0706-4ad0-b127-24078731fbed/project/6d5813be-7e6d-4ab8-80c2-1e3e2a454545/history/6d5813be-7e6d-4ab8-80c2-1e3e2a454553/issue/SNYK-JS-LODASH-590103?page=4&perPage=3>; rel=last
+              schema:
+                type: string
+              example: <https://api.snyk.io/v1/org/4a18d42f-0706-4ad0-b127-24078731fbed/project/6d5813be-7e6d-4ab8-80c2-1e3e2a454545/history/6d5813be-7e6d-4ab8-80c2-1e3e2a454553/issue/SNYK-JS-LODASH-590103?page=1&perPage=3>; rel=prev, <https://api.snyk.io/v1/org/4a18d42f-0706-4ad0-b127-24078731fbed/project/6d5813be-7e6d-4ab8-80c2-1e3e2a454545/history/6d5813be-7e6d-4ab8-80c2-1e3e2a454553/issue/SNYK-JS-LODASH-590103?page=3&perPage=3>; rel=next, <https://api.snyk.io/v1/org/4a18d42f-0706-4ad0-b127-24078731fbed/project/6d5813be-7e6d-4ab8-80c2-1e3e2a454545/history/6d5813be-7e6d-4ab8-80c2-1e3e2a454553/issue/SNYK-JS-LODASH-590103?page=4&perPage=3>; rel=last
           content:
             application/json:
               schema:
@@ -2952,7 +2947,9 @@ paths:
       description: >-
         Ignores from `.snyk` files are not included here.
 
-        Ignores from Policies are not included here.Temporary ignores include an `expires` attribute, while permanent ignores do not.
+        Ignores from Policies are not included here.
+
+        Temporary ignores include an `expires` attribute, while permanent ignores do not.
 
         #### Required permissions
 
@@ -2979,7 +2976,6 @@ paths:
           schema:
             type: string
             example: 463c1ee5-31bc-428c-b451-b79a3270db08
-
       responses:
         '200':
           description: ''
@@ -3159,12 +3155,6 @@ paths:
               type: array
               items:
                 $ref: '#/components/schemas/Ignorerules'
-              example:
-                - ignorePath: ''
-                  reason: ''
-                  reasonType: not-vulnerable
-                  disregardIfFixable: false
-                  expires: ''
             example:
               - ignorePath: ''
                 reason: ''
@@ -3689,7 +3679,9 @@ paths:
 
         |                      |    hosted   |                 |
 
-        |                      | distributed |                 |Applies an attribute to the provided project.
+        |                      | distributed |                 |
+
+        Applies an attribute to the provided project.
 
         It is possible to assign multiple values to each attribute, but you can only assign values to one of the predefined attribute categories, using the predefined options for this category.
 
@@ -3765,6 +3757,10 @@ paths:
         - Dependencies
       summary: List all dependencies
       description: >-
+        Dependencies are packages/modules that your projects depend on.
+
+        Current rate limit is up to 150 requests per minute, per user.
+
         #### Required permissions
 
         - `View Organization`
@@ -3853,11 +3849,9 @@ paths:
           description: ''
           headers:
             Link:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: <https://api.snyk.io/v1/org/4a18d42f-0706-4ad0-b127-24078731fbed/dependencies?order=asc&page=1&perPage=20&sortBy=dependency>; rel=last
+              schema:
+                type: string
+              example: <https://api.snyk.io/v1/org/4a18d42f-0706-4ad0-b127-24078731fbed/dependencies?order=asc&page=1&perPage=20&sortBy=dependency>; rel=last
           content:
             application/json:
               schema:
@@ -11409,6 +11403,12 @@ paths:
           content: {}
       deprecated: false
 components:
+  securitySchemes:
+    APIToken:
+      description: API key value must be prefixed with "Token ".
+      in: header
+      name: 'Authorization'
+      type: apiKey
   schemas:
     Groupsettings:
       title: Groupsettings
@@ -11857,9 +11857,7 @@ components:
           type: number
           description: The total number of results
         links:
-          allOf:
-            - $ref: '#/components/schemas/issuePathsLinks'
-            - description: Onward links from this record
+          $ref: '#/components/schemas/issuePathsLinks'
     Projectsnapshots:
       title: Projectsnapshots
       type: object
@@ -11885,9 +11883,7 @@ components:
       type: object
       properties:
         depGraph:
-          allOf:
-            - $ref: '#/components/schemas/depGraph'
-            - description: The dependency-graph object
+          $ref: '#/components/schemas/depGraph'
     Projectissuesfilters:
       title: Projectissuesfilters
       type: object
@@ -11912,9 +11908,7 @@ components:
       type: object
       properties:
         ignorePath:
-          allOf:
-            - $ref: '#/components/schemas/ignorePath'
-            - description: The path that should be ignored. Wildcards can be specified with a `*`.
+          $ref: '#/components/schemas/ignorePath'
     Ignorerule:
       title: Ignorerule
       required:
@@ -11954,9 +11948,7 @@ components:
       type: object
       properties:
         jiraIssue:
-          allOf:
-            - $ref: '#/components/schemas/jiraIssue1'
-            - description: The details about the jira issue.
+          $ref: '#/components/schemas/jiraIssue1'
     Jiraissuerequest:
       title: Jiraissuerequest
       type: object
@@ -13164,18 +13156,14 @@ components:
           type: string
           description: The scheme version of the depGraph object
         pkgManager:
-          allOf:
-            - $ref: '#/components/schemas/pkgManager2'
-            - description: The package manager of the project
+          $ref: '#/components/schemas/pkgManager2'
         pkgs:
           type: array
           items:
             $ref: '#/components/schemas/pkgs'
           description: A list of dependencies in the project
         graph:
-          allOf:
-            - $ref: '#/components/schemas/graph2'
-            - description: A directional graph of the packages in the project
+          $ref: '#/components/schemas/graph2'
       description: The dependency-graph object
     deps:
       title: deps
@@ -13467,9 +13455,7 @@ components:
           type: boolean
           description: If set to `true`, only include issues which are patched, if set to `false`, only include issues which are not patched (Non-IaC projects only)
         priority:
-          allOf:
-            - $ref: '#/components/schemas/priority1'
-            - description: The priority to filter the issues by (Non-IaC projects only)
+          $ref: '#/components/schemas/priority1'
     filters2:
       title: filters2
       type: object
@@ -14426,13 +14412,9 @@ components:
           type: string
           description: The reason that the issue was ignored.
         reasonType:
-          allOf:
-            - $ref: '#/components/schemas/reasonType'
-            - description: The classification of the ignore.
+          $ref: '#/components/schemas/reasonType'
         ignoredBy:
-          allOf:
-            - $ref: '#/components/schemas/ignoredBy'
-            - description: The person who ignored the issue.
+          $ref: '#/components/schemas/ignoredBy'
         disregardIfFixable:
           type: boolean
           description: Only ignore the issue if no upgrade or patch is available.
@@ -17442,9 +17424,7 @@ components:
       type: object
       properties:
         score:
-          allOf:
-            - $ref: '#/components/schemas/score'
-            - description: Include issues where the priority score is between min and max
+          $ref: '#/components/schemas/score'
       description: The priority to filter the issues by (Non-IaC projects only)
     priorityScore2:
       title: priorityScore2
@@ -17589,7 +17569,6 @@ components:
           description: >-
             Recommended upgrades to apply to the project
 
-
             (object)
                 + upgradeTo (string, required) - `package@version` to upgrade to
                 + upgrades (array[string], required) -  List of `package@version` that will be upgraded as part of this upgrade
@@ -17598,7 +17577,6 @@ components:
           type: object
           description: >-
             Recommended patches to apply to the project
-
 
             (object)
                paths (array) - List of paths to the vulnerable dependency that can be patched
@@ -22442,9 +22420,7 @@ components:
       type: object
       properties:
         owner:
-          allOf:
-            - $ref: '#/components/schemas/owner'
-            - description: Set to `null` to remove all ownership. User must be a member of the same organization as the project.
+          $ref: '#/components/schemas/owner'
         branch:
           type: string
           description: The branch that this project should be monitoring
