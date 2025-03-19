@@ -11196,57 +11196,56 @@ paths:
               - description: Set to issue to group the same issue in multiple projects
                 example: issue
       requestBody:
-        description: Expand to see required filters
+        description: ''
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/IssuesFilters'
-                - example:
-                    filters:
-                      orgs: []
-                      severity:
-                        - critical
-                        - high
-                        - medium
-                        - low
-                      exploitMaturity:
-                        - mature
-                        - proof-of-concept
-                        - no-known-exploit
-                        - no-data
-                      types:
-                        - vuln
-                        - license
-                        - configuration
-                      languages:
-                        - node
-                        - javascript
-                        - ruby
-                        - java
-                        - scala
-                        - python
-                        - golang
-                        - php
-                        - dotnet
-                        - swift-objective-c
-                        - elixir
-                        - docker
-                        - linux
-                        - dockerfile
-                      projects: []
-                      issues: []
-                      identifier: ''
-                      ignored: false
-                      patched: false
-                      fixable: false
-                      isFixed: false
-                      isUpgradable: false
-                      isPatchable: false
-                      isPinnable: false
-                      priorityScore:
-                        min: 0
-                        max: 1000
+              - $ref: '#/components/schemas/IssuesFilters'
+              - example:
+                  filters:
+                    orgs: []
+                    severity:
+                      - critical
+                      - high
+                      - medium
+                      - low
+                    exploitMaturity:
+                      - mature
+                      - proof-of-concept
+                      - no-known-exploit
+                      - no-data
+                    types:
+                      - vuln
+                      - license
+                      - configuration
+                    languages:
+                      - node
+                      - javascript
+                      - ruby
+                      - java
+                      - scala
+                      - python
+                      - golang
+                      - php
+                      - dotnet
+                      - swift-objective-c
+                      - elixir
+                      - docker
+                      - linux
+                      - dockerfile
+                    projects: []
+                    issues: []
+                    identifier: ''
+                    ignored: false
+                    patched: false
+                    fixable: false
+                    isFixed: false
+                    isUpgradable: false
+                    isPatchable: false
+                    isPinnable: false
+                    priorityScore:
+                      min: 0
+                      max: 1000
             example:
               filters:
                 orgs: []
@@ -11407,57 +11406,56 @@ paths:
               - description: Set to issue to group the same issue in multiple projects
                 example: issue
       requestBody:
-        description: Expand to see required filters
+        description: ''
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/IssuesFilters'
-                - example:
-                    filters:
-                      orgs: []
-                      severity:
-                        - critical
-                        - high
-                        - medium
-                        - low
-                      exploitMaturity:
-                        - mature
-                        - proof-of-concept
-                        - no-known-exploit
-                        - no-data
-                      types:
-                        - vuln
-                        - license
-                        - configuration
-                      languages:
-                        - node
-                        - javascript
-                        - ruby
-                        - java
-                        - scala
-                        - python
-                        - golang
-                        - php
-                        - dotnet
-                        - swift-objective-c
-                        - elixir
-                        - docker
-                        - linux
-                        - dockerfile
-                      projects: []
-                      issues: []
-                      identifier: ''
-                      ignored: false
-                      patched: false
-                      fixable: false
-                      isFixed: false
-                      isUpgradable: false
-                      isPatchable: false
-                      isPinnable: false
-                      priorityScore:
-                        min: 0
-                        max: 1000
+              - $ref: '#/components/schemas/IssuesFilters'
+              - example:
+                  filters:
+                    orgs: []
+                    severity:
+                      - critical
+                      - high
+                      - medium
+                      - low
+                    exploitMaturity:
+                      - mature
+                      - proof-of-concept
+                      - no-known-exploit
+                      - no-data
+                    types:
+                      - vuln
+                      - license
+                      - configuration
+                    languages:
+                      - node
+                      - javascript
+                      - ruby
+                      - java
+                      - scala
+                      - python
+                      - golang
+                      - php
+                      - dotnet
+                      - swift-objective-c
+                      - elixir
+                      - docker
+                      - linux
+                      - dockerfile
+                    projects: []
+                    issues: []
+                    identifier: ''
+                    ignored: false
+                    patched: false
+                    fixable: false
+                    isFixed: false
+                    isUpgradable: false
+                    isPatchable: false
+                    isPinnable: false
+                    priorityScore:
+                      min: 0
+                      max: 1000
             example:
               filters:
                 orgs: []
@@ -11563,49 +11561,48 @@ paths:
               - description: The field to group results by
                 example: severity
       requestBody:
-        description: Expand to see required filters
+        description: ''
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/IssueCountsFilters'
-                - example:
-                    filters:
-                      orgs: []
-                      severity:
-                        - critical
-                        - high
-                        - medium
-                        - low
-                      types:
-                        - vuln
-                        - license
-                        - configuration
-                      languages:
-                        - node
-                        - javascript
-                        - ruby
-                        - java
-                        - scala
-                        - python
-                        - golang
-                        - php
-                        - dotnet
-                        - swift-objective-c
-                        - elixir
-                        - docker
-                        - linux
-                        - dockerfile
-                      projects: []
-                      ignored: false
-                      patched: false
-                      fixable: false
-                      isUpgradable: false
-                      isPatchable: false
-                      isPinnable: false
-                      priorityScore:
-                        min: 0
-                        max: 1000
+              - $ref: '#/components/schemas/IssueCountsFilters'
+              - example:
+                  filters:
+                    orgs: []
+                    severity:
+                      - critical
+                      - high
+                      - medium
+                      - low
+                    types:
+                      - vuln
+                      - license
+                      - configuration
+                    languages:
+                      - node
+                      - javascript
+                      - ruby
+                      - java
+                      - scala
+                      - python
+                      - golang
+                      - php
+                      - dotnet
+                      - swift-objective-c
+                      - elixir
+                      - docker
+                      - linux
+                      - dockerfile
+                    projects: []
+                    ignored: false
+                    patched: false
+                    fixable: false
+                    isUpgradable: false
+                    isPatchable: false
+                    isPinnable: false
+                    priorityScore:
+                      min: 0
+                      max: 1000
             example:
               filters:
                 orgs: []
@@ -11740,7 +11737,7 @@ paths:
               - description: The field to group results by
                 example: severity
       requestBody:
-        description: Expand to see required filters
+        description: ''
         content:
           application/json:
             schema:
@@ -11918,31 +11915,30 @@ paths:
       operationId: Getlatestprojectcounts
       parameters: []
       requestBody:
-        description: Expand to see required filters
+        description: ''
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/ProjectCountsFilters'
-                - example:
-                    filters:
-                      orgs: []
-                      languages:
-                        - node
-                        - javascript
-                        - ruby
-                        - java
-                        - scala
-                        - python
-                        - golang
-                        - php
-                        - dotnet
-                        - swift-objective-c
-                        - elixir
-                        - docker
-                        - linux
-                        - dockerfile
-                      projects: []
+              - $ref: '#/components/schemas/ProjectCountsFilters'
+              - example:
+                  filters:
+                    orgs: []
+                    languages:
+                      - node
+                      - javascript
+                      - ruby
+                      - java
+                      - scala
+                      - python
+                      - golang
+                      - php
+                      - dotnet
+                      - swift-objective-c
+                      - elixir
+                      - docker
+                      - linux
+                      - dockerfile
+                    projects: []
             example:
               filters:
                 orgs: []
@@ -12039,31 +12035,30 @@ paths:
             type: string
             example: 2017-07-03
       requestBody:
-        description: Expand to see required filters
+        description: ''
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/ProjectCountsFilters'
-                - example:
-                    filters:
-                      orgs: []
-                      languages:
-                        - node
-                        - javascript
-                        - ruby
-                        - java
-                        - scala
-                        - python
-                        - golang
-                        - php
-                        - dotnet
-                        - swift-objective-c
-                        - elixir
-                        - docker
-                        - linux
-                        - dockerfile
-                      projects: []
+              - $ref: '#/components/schemas/ProjectCountsFilters'
+              - example:
+                  filters:
+                    orgs: []
+                    languages:
+                      - node
+                      - javascript
+                      - ruby
+                      - java
+                      - scala
+                      - python
+                      - golang
+                      - php
+                      - dotnet
+                      - swift-objective-c
+                      - elixir
+                      - docker
+                      - linux
+                      - dockerfile
+                    projects: []
             example:
               filters:
                 orgs: []
@@ -12178,18 +12173,17 @@ paths:
               - description: The field to group results by
                 example: isPrivate
       requestBody:
-        description: Expand to see required filters
+        description: ''
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/TestsFilters'
-                - example:
-                    filters:
-                      orgs: []
-                      isPrivate: false
-                      issuesPrevented: false
-                      projects: []
+              - $ref: '#/components/schemas/TestsFilters'
+              - example:
+                  filters:
+                    orgs: []
+                    isPrivate: false
+                    issuesPrevented: false
+                    projects: []
             example:
               filters:
                 orgs: []
